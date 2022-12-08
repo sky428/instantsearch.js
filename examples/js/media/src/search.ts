@@ -27,7 +27,8 @@ const search = instantsearch({
   //indexName: 'PROD_algolia_blog',
   indexName: 'foods',
   routing: {
-    stateMapping: singleIndex('PROD_algolia_blog'),
+    //stateMapping: singleIndex('PROD_algolia_blog'),
+    stateMapping: singleIndex('foods'),
   },
 });
 
