@@ -16,13 +16,16 @@ import {
 } from './widgets';
 
 const searchClient = algoliasearch(
-  '1QDAWL72TQ',
-  '47700f55d95d23f5a57744b9a027ea83'
+  //'1QDAWL72TQ',
+  //'47700f55d95d23f5a57744b9a027ea83'
+  'NRWBOX9G85'
+  '128612de13314a6321a606b55479cca8'
 );
 
 const search = instantsearch({
   searchClient,
-  indexName: 'PROD_algolia_blog',
+  //indexName: 'PROD_algolia_blog',
+  indexName: 'food',
   routing: {
     stateMapping: singleIndex('PROD_algolia_blog'),
   },
