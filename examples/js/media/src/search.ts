@@ -25,7 +25,7 @@ const searchClient = algoliasearch(
 const search = instantsearch({
   searchClient,
   //indexName: 'PROD_algolia_blog',
-  indexName: 'food',
+  indexName: 'foods',
   routing: {
     stateMapping: singleIndex('PROD_algolia_blog'),
   },
