@@ -3,11 +3,14 @@ import { highlight, snippet } from 'instantsearch.js/es/helpers';
 import { formatDistanceToNow } from 'date-fns';
 
 type Hit = {
-  slug: string;
-  primary_category: {
-    slug: string;
-    title: string;
-  };
+  //slug: string;
+  objectID: string;
+  //primary_category: {
+    //slug: string;
+    playlist_title: string
+    //title: string;
+    playlist_id: string
+  //};
   coauthors?: Array<{
     avatar_url: string;
     nickname: string;
@@ -21,7 +24,7 @@ type Hit = {
 };
 
 const getBlogPostUrl = (hit: Hit) =>
-  `https://algolia.com/blog/${hit.primary_category.slug}/${hit.slug}`;
+  `https://algolia.com/blog/${hit.playlist_index}/${hit.objectID}`;
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
   const author = hit.coauthors && hit.coauthors[0];
