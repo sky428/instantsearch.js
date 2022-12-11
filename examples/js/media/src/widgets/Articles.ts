@@ -14,7 +14,8 @@ type Hit = {
     job_title: string;
   }>;
   created_at_timestamp: number;
-  cloudinary_url: string;
+  //cloudinary_url: string;
+  thumbnail: string;
   title: string;
 };
 
@@ -35,7 +36,7 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
       <a class="card-link" href="${getBlogPostUrl(hit)}">
         <article class="card">
           <div class="card-image">
-            <img src="${hit.cloudinary_url}" alt="${hit.title}" />
+            <img src="${hit.thumbnail}" alt="${hit.title}" />            
           </div>
 
           <div class="card-content" data-layout="desktop">
