@@ -13,7 +13,8 @@ type Hit = {
     nickname: string;
     job_title: string;
   }>;
-  created_at_timestamp: number;
+  //created_at_timestamp: number;
+  upload_date: number;
   //cloudinary_url: string;
   thumbnail: string;
   title: string;
@@ -24,7 +25,7 @@ const getBlogPostUrl = (hit: Hit) =>
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
   const author = hit.coauthors && hit.coauthors[0];
-  const date = formatDistanceToNow(hit.created_at_timestamp * 1000, {
+  const date = formatDistanceToNow(hit.upload_date * 1000, {
     addSuffix: true,
   }).replace('about ', '');
   return `
