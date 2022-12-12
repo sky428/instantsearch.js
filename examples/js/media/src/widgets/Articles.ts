@@ -28,7 +28,8 @@ const getBlogPostUrl = (hit: Hit) =>
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
   const author = hit.coauthors && hit.coauthors[0];
-  const date = formatDistanceToNow(hit.upload_date * 1000, {
+  //const date = formatDistanceToNow(hit.created_at_timestamp * 1000, {
+  const date = formatDistanceToNow(hit.upload_date, {
     addSuffix: true,
   }).replace('about ', '');
   return `
