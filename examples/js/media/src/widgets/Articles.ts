@@ -17,7 +17,7 @@ type Hit = {
     job_title: string;
   }>;
   //created_at_timestamp: number;
-  upload_date: number;
+  upload_date: string;
   //cloudinary_url: string;
   thumbnail: string;
   title: string;
