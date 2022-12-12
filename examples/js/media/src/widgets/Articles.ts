@@ -64,7 +64,8 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
 
             <p class="card-description">
               ${snippet({
-                attribute: 'content',
+                //attribute: 'content',
+                attribute: 'full_text',
                 hit,
               })}
             </p>
