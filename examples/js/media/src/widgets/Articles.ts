@@ -11,11 +11,14 @@ type Hit = {
     //title: string;
     playlist_id: string
   //};
-  coauthors?: Array<{
-    avatar_url: string;
-    nickname: string;
-    job_title: string;
-  }>;
+  //coauthors?: Array<{
+    //avatar_url: string;
+    channel_url: string;
+    //nickname: string;
+    channel: string;
+    //job_title: string;
+    playlist_title: string;
+  //}>;
   //created_at_timestamp: number;
   upload_date: string;
   //cloudinary_url: string;
@@ -73,8 +76,9 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
 
             <footer>
               ${
-                author
-                  ? `<div class="card-author"><img class="card-author-avatar" src="${author.avatar_url}" alt="${author.nickname}" /><span class="card-author-name">${author.nickname}<span class="card-author-job">${author.job_title}</span></span></div>`
+                //author
+                channel
+                  ? `<div class="card-author"><img class="card-author-avatar" src="${channel_url}" alt="${channel}" /><span class="card-author-name">${channel}<span class="card-author-job">${playlist_title}</span></span></div>`
                   : ''
               }
             </footer>
@@ -89,6 +93,14 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
                 })}
               </h1>
             </header>
+
+            <p class="card-description">
+              ${snippet({
+                //attribute: 'content',
+                attribute: 'full_text',
+                hit,
+              })}
+            </p>
 
             <p class="card-mobile-footer">
               ${
