@@ -30,7 +30,8 @@ const getBlogPostUrl = (hit: Hit) =>
   `https://algolia.com/blog/${hit.playlist_index}/${hit.objectID}`;
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
-  const author = hit.coauthors && hit.coauthors[0];
+  //const author = hit.coauthors && hit.coauthors[0];
+  const channel = hit.channel;
   //const date = formatDistanceToNow(hit.created_at_timestamp * 1000, {
   const date = formatDistanceToNow(new Date(hit.upload_date.substr(0, 4), hit.upload_date.substr(4, 2), hit.upload_date.substr(6, 2)), {
     addSuffix: true,
