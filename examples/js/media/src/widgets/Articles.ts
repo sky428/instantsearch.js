@@ -81,7 +81,8 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
               ${
                 //author
                 channel
-                  ? `<div class="card-author"><img class="card-author-avatar" src="${channel_url}" alt="${channel}" /><span class="card-author-name">${channel}<span class="card-author-job">${playlist_title}</span></span></div>`
+                //? `<div class="card-author"><img class="card-author-avatar" src="${author.avatar_url}" alt="${author.nickname}" /><span class="card-author-name">${author.nickname}<span class="card-author-job">${author.job_title}</span></span></div>`
+                  ? `<div class="card-author"><a class="card-author-avatar" href="${channel_url}"><span class="card-author-name">${channel}<span class="card-author-job">${playlist_title}</span></span></a></div>`
                   : ''
               }
             </footer>
