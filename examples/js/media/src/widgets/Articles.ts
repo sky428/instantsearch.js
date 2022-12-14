@@ -82,7 +82,7 @@ function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
                 //author
                 channel
                 //? `<div class="card-author"><img class="card-author-avatar" src="${author.avatar_url}" alt="${author.nickname}" /><span class="card-author-name">${author.nickname}<span class="card-author-job">${author.job_title}</span></span></div>`
-                  ? `<div class="card-author"><a href="${channel_url}"><span class="card-author-name">${channel}<span class="card-author-job">${playlist_title}</span></span></a></div>`
+                  ? `<div class="card-author"><img class="card-author-avatar" src="https://cdn.iconscout.com/icon/free/png-256/youtube-268-721990.png" /><a href="${channel_url}"><span class="card-author-name">${channel}<span class="card-author-job">${playlist_title}</span></span></a></div>`
                   : ''
               }
             </footer>
