@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[家常西餐] 美國南部辣蝦 Shrimp Creole</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ko-ALMeokO8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[家常西餐] 美國南部辣蝦 Shrimp Creole</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.63" id="00:00:1.63" class="lt" onclick="jumptoTime(1, this.id)"><p>好好味，歡迎大家來到泰山自煮，近來天氣十分之冷，有時出街，就算你穿好多件衫，都好似好鬼凍，尤其手手腳腳，我發現如果真係想好暖，一定要由心那裏暖出來，一定要由內裏有團火，咁爆出來先得，於是乎最簡單的方法，就是怎樣呢，就是煮暖胃的食物，今日就想同大家，又煮一些家常西餐，今次就教大家，煮一個。</p></a>
+				<a href="#00:00:39.63" id="00:00:39.63" class="lt" onclick="jumptoTime(39, this.id)"><p>南方辣蝦，在哪裏的南方呢，就是美國的南方，一個叫 Louisiana 的州份，而在這個州份就有一種好特別的菜式，源自於他們這個州，就叫做 Creole，Creole 其實是集合了三款，不同地方的菜式，混合在一起而演變出來，包括有歐洲，大部分是法國的菜，跟住還有，非洲，跟住還有美國本土，這三款的。</p></a>
+				<a href="#00:01:11.63" id="00:01:11.63" class="lt" onclick="jumptoTime(71, this.id)"><p>不同的飲食文化，混合在一起，變成 Creole 這個菜式，Creole 其實，好著重用，香料，同時是會偏辣，所以今日我們做這個，南方辣蝦，好適合冬天食，即刻開始，其實這個南方菜式，是好著重香料，於是乎我們一定要，混合一個 Creole，特製的香料，不然就不像，不過不用擔心，這個 Creole 特製香料，在香港你自己都可以做到。</p></a>
+				<a href="#00:01:51.63" id="00:01:51.63" class="lt" onclick="jumptoTime(111, this.id)"><p>有什麼我們一齊看看，蒜粉，洋蔥粉，紅燈籠椒粉，紫天椒粉，普通辣椒粉，鹽，新鮮黑胡椒，我們做這個，粉可以一早，做好，我們就將它，混合在一起，其實不用太多，於是乎我喜歡用一個玻璃瓶，將粉裝好，為免它漏出來，用漏斗，然後加一些新鮮的黑胡椒碎，關上瓶蓋，然後真的好像shake shake，其實你自己買回薯條之後用這個粉去食都可以，好了shake了之後我們就可以隨時拿來用。</p></a>
+				<a href="#00:02:58.99" id="00:02:58.99" class="lt" onclick="jumptoTime(178, this.id)"><p>然後一會兒才會用的我們不會用完的，我們先放一旁，美國的南方菜有三種材料是一定要加的，包括什麼呢?</p></a>
+				<a href="#00:03:9.99" id="00:03:9.99" class="lt" onclick="jumptoTime(189, this.id)"><p>包括燈籠椒、洋蔥和西芹，這三個如果你想做美國南方菜，不能夠少的一定要用的，在這個時候我們就要將這些蔬菜切一切，洋蔥同樣地切粒，然後就切西芹，其實我真的很討厭吃西芹，不過我很喜歡西芹的味道，但是怎樣可以令到我吃西芹呢?</p></a>
+				<a href="#00:03:52.99" id="00:03:52.99" class="lt" onclick="jumptoTime(232, this.id)"><p>就是令到我吃的時候是吃不到西芹的，那我要怎樣做呢?</p></a>
+				<a href="#00:03:57.99" id="00:03:57.99" class="lt" onclick="jumptoTime(237, this.id)"><p>我就要將這個西芹最討厭的東西弄走，就是它的纖維，怎樣弄走它的纖維呢?</p></a>
+				<a href="#00:04:5.99" id="00:04:5.99" class="lt" onclick="jumptoTime(245, this.id)"><p>我們就要用刨，就刨走它表面的皮，刨走它的皮之後我們就要將西芹切細條，一會兒煮出來就會不見了西芹，然後我們要將這些蒜頭切碎，切成絲狀，蒜頭切碎後就可以放一旁，切好蒜頭之後就要醃蝦，用什麼醃呢?</p></a>
+				<a href="#00:04:53.56" id="00:04:53.56" class="lt" onclick="jumptoTime(293, this.id)"><p>就用剛才混合好的南方醃粉，這次用了虎蝦，然後用醃粉，用一小匙醃一下，可以用匙子或手，醃好蝦後就可以放一旁慢慢醃，接著我們要做一件南方菜的重要材料，就是做一個麵糊，這個醃粉其實是法國菜中其中一個煮食的方法，先開抽氣扇，免得被老婆罵，接著我們要開中慢火，麵糊最重要的材料就是牛油和麵粉，不過我們要等牛油融化之後起泡。</p></a>
+				<a href="#00:05:55.56" id="00:05:55.56" class="lt" onclick="jumptoTime(355, this.id)"><p>我們才放麵粉，牛油開始起泡了，我們就可以放麵粉，但記得麵粉放了之後，眼睛也不能離開碗裡一會，因為如果不停攪拌的話，麵粉一定會很快燒焦，加完之後一定要攪拌均勻，煮多久才算OK呢，我們要煮到它好像花生醬的顏色就可以了，我們可以看到麵糊已經變成花生醬的顏色，非常香的，如果你在這裡和我一起的話，你會聞到牛油的味道。</p></a>
+				<a href="#00:06:44.83" id="00:06:44.83" class="lt" onclick="jumptoTime(404, this.id)"><p>會出現變成一種榛子的味道，這個就叫做Brown Roux，接著就要加南方三寶，洋蔥，西芹，最後加燈籠椒，保持中慢火，然後攪拌均勻，嗯，好香好香，我們要慢慢煮，煮到它變得軟身，攪拌均勻之後就可以讓它煮一會，不要讓它燒焦就可以了，我這裡已經煮了八分鐘，接著就放剛才切好的蒜頭進去，哇。</p></a>
+				<a href="#00:07:37.31" id="00:07:37.31" class="lt" onclick="jumptoTime(457, this.id)"><p>蒜蓉加進去之後很香，正啊，不要煮太久，聞到香味之後就要加另一種材料，加一罐罐頭番茄進去，接著加少許水，先不要加太多，為什麼先不要加太多，因為我們想看水分需要多少，對了，如果水分不夠就要繼續加，接著我們還要放其他調味，有時蔥，黑胡椒，白砂糖，兩塊月桂葉，鹽，黑胡椒，最後當然少不了南方醃料，先攪拌一下。</p></a>
+				<a href="#00:08:51.98" id="00:08:51.98" class="lt" onclick="jumptoTime(531, this.id)"><p>其實在美國南方有兩個都幾出名的南方菜，包括我們今天做的Creole菜式，還有就是Cajun，Cajun永遠都不會加番茄，而Creole就是我們今天做的多數都會加番茄煮，所以如果你真的有幸，不知道什麼時候，有機會去到美國，去到Louisiana去試一下的話，記住要試一下這兩款菜，是很不同的。</p></a>
+				<a href="#00:09:26.98" id="00:09:26.98" class="lt" onclick="jumptoTime(566, this.id)"><p>還有Creole的菜式比Cajun的菜式高級一點，攪拌到差不多，你已經聞到香料的味道，超正，然後蓋上蓋子，我們煮它小火，大約8-10分鐘，等它開始再稠稠的時候就差不多了，不過記住，偶爾都要揭開它攪一攪，讓它不要黏底，我這個就蓋上蓋子煮了8分鐘，我們先開來看看，好香，我已經聞到辣椒的味道湧出來。</p></a>
+				<a href="#00:10:10.98" id="00:10:10.98" class="lt" onclick="jumptoTime(610, this.id)"><p>好喜歡這個，它的稠度你已經看到，正確了，因為其實這個南方辣蝦，拌飯吃是最正的，我們放蝦了，蓋上蓋子，讓蝦變成橙色就可以了，我們先看看蝦熟了沒有，嘩，完成了，可以上碟了，這樣就完成了這個南方辣蝦，立刻試一下，好好味，非常方便的家常西餐，而且最適合冬天吃，很暖胃，還要，你吃這個拌飯的話，不得了。</p></a>
+				<a href="#00:11:25.75" id="00:11:25.75" class="lt" onclick="jumptoTime(685, this.id)"><p>喜歡吃辣的朋友一定要吃，不喜歡吃辣的朋友更加要試試，因為實在太容易煮了，很好味的辣蝦，記得訂閱我的YouTube頻道，和追蹤我的Facebook專頁，OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:42.59" id="00:11:42.59" class="lt" onclick="jumptoTime(702, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[汁撈飯] 醋烹雞 Chicken Adobo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'byFjcx5j38g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[汁撈飯] 醋烹雞 Chicken Adobo</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮，今日我要同大家做一個菲律賓嘅家常名菜，就係chicken adobo，呢一個chicken adobo，係每一個菲律賓嘅屋企，都會有自己嘅recipe，自己嘅食譜，今日教呢一個，我覺得係差唔多係最基本，有啲唔同，我諗係我自己加返自己嘅元素落去，究竟係點樣做呢?</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>即刻開始啦!</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>我預備咗四隻雞腿，呢隻雞腿已經洗乾洗淨，洗完之後記住用廚房紙抹乾佢，因為一陣如果煎有水就唔好，然後呢我哋就要斬一斬佢，我想斬呢一度同埋呢個分開，我哋搵個位就係呢一度，咁樣啦，咁就容易煮啲，跟住我哋就用啲鹽醃一醃佢，少少黑胡椒，好!</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>搓下佢就ok㗎啦，小心啲啦，真係唔好似亂咁嚟，因為搓甩晒啲皮，好啦!咁我哋有隻雞呢，喺度at least醃佢20分鐘，咁等佢醃嘅時候呢，我哋不如講少少呢一個，chicken adobo嘅歷史畀大家，可以認識多啲，其實呢adobo呢一個字呢，係源自一個西班牙文，就係adobar adobar，adobar喺西班牙文係點解呢。</p></a>
+				<a href="#00:01:41.00" id="00:01:41.00" class="lt" onclick="jumptoTime(101, this.id)"><p>就係代表marinated即係醃過嘅，或者係pickled即係醃酸咗，類似都係咁嘅意思，咁如果你知道少少歷史嘅話呢，西班牙人呢，係好耐之前都係去過菲律賓，於是乎有好多西班牙嘅文化，係喺菲律賓出現，咁但係呢，呢一個chicken adobo，究竟係咪西班牙菜呢，其實睇呢一個歷史又唔係，原來喺菲律賓本土。</p></a>
+				<a href="#00:02:13.00" id="00:02:13.00" class="lt" onclick="jumptoTime(133, this.id)"><p>呢一個chicken adobo呢，呢一樣煮法一早已經係存在，只不過呢，佢哋一向都冇名嘅，即係個個屋企都有做，但係冇名，咁於是乎啲西班牙嚟到之後，見到幾好食，不如畀個名佢，我只識西班牙文，於是就擺咗Adobo呢個名落去，就係咁解，其實菲律賓人點解會有呢個餸，個個屋企都會做呢，就係因為喺熱帶嘅地方。</p></a>
+				<a href="#00:02:46.30" id="00:02:46.30" class="lt" onclick="jumptoTime(166, this.id)"><p>食物好容易壞，佢哋要保存食物耐啲，唯一嘅方法就係將佢醃咗佢，有鹹醃、甜醃同埋酸，佢哋就揀咗鹹同埋酸去做呢一個餸，其實豬肉或者係雞肉都可以用嚟做呢一個Adobo，最主要用嚟醃嘅材料就包括有呢一個鹽，蒜頭同埋呢一個醋，呢一個就係最傳統嘅一個，菲律賓整Chicken Adobo嘅方法，但係好奇怪。</p></a>
+				<a href="#00:03:23.14" id="00:03:23.14" class="lt" onclick="jumptoTime(203, this.id)"><p>Chicken Adobo呢一個餸同我哋中國人都有關，因為中國人去咗菲律賓之後，就將豉油呢一樣嘢帶咗去菲律賓，於是乎菲律賓人認識咗豉油之後，佢就覺得幾好，不如用豉油落呢一個，個味道又正好多，於是乎Chicken Adobo，就會突然間有時會用鹽，但係而家普遍都係會用豉油去做，所以我覺得呢一個餸菜。</p></a>
+				<a href="#00:03:55.10" id="00:03:55.10" class="lt" onclick="jumptoTime(235, this.id)"><p>包含咗好多歷史喺度，最正嘅就係原來同我哋中國人係有關，歷史就講完啦，我哋繼續煮嘢啦，好喇不如講下啲材料先，其他材料就包括有，月桂葉、辣椒碎，辣椒碎其實我自己加落去，因為我覺得好似會香口啲，傳統嘅Adobo係冇嘅，跟住有Coconut Sugar，椰糖，呢啲椰糖喺邊度買呢，你可以喺一啲印尼嘅雜貨店買到。</p></a>
+				<a href="#00:04:30.18" id="00:04:30.18" class="lt" onclick="jumptoTime(270, this.id)"><p>大量蒜頭，成個蒜頭喺呢度，跟住當然就有生抽，老抽，蘋果醋，最傳統嘅Adobo唔係用蘋果醋，用椰子醋，但Coconut Vinegar喺香港難買，於是乎我哋就用蘋果醋代替，但係嘩...</p></a>
+				<a href="#00:04:57.42" id="00:04:57.42" class="lt" onclick="jumptoTime(297, this.id)"><p>Coconut Vinegar 即是椰子醋是甚麼來的呢?</p></a>
+				<a href="#00:05:0.78" id="00:05:0.78" class="lt" onclick="jumptoTime(300, this.id)"><p>其實呢，它就是用椰子樹的花的液體，然後呢，就將它發酵8至12個月，就變成呢一個椰子醋啦，就係咁囉，嘩...</p></a>
+				<a href="#00:05:14.50" id="00:05:14.50" class="lt" onclick="jumptoTime(314, this.id)"><p>如果邊個喺香港可以搵到椰子醋嘅呢，不妨話畀我聽，因為我都好想知道喺邊度買到，因為我都想試下，好啦，我哋搞一搞呢啲香料先啦，嗱，我哋呢預備咗一個茶包喺度嘅，咁我哋呢就會將呢一個胡椒粒啦，我係用咗啲紅胡椒粒嘅，冇乜所謂嘅，你自己鍾意就得嘅，黑胡椒、紅胡椒、白胡椒都ok嘅，不過最方便就係梗係黑胡椒啦，係咪?</p></a>
+				<a href="#00:05:39.54" id="00:05:39.54" class="lt" onclick="jumptoTime(339, this.id)"><p>好，跟住呢，呢啲辣椒碎啦，然後呢，一啲月桂葉啦，咁我呢就用咗5塊嘅，咁你將佢呢，放晒入去，成個包包咁啦，ok?</p></a>
+				<a href="#00:05:52.02" id="00:05:52.02" class="lt" onclick="jumptoTime(352, this.id)"><p>咁點解我將佢放落茶包度呢?</p></a>
+				<a href="#00:05:53.90" id="00:05:53.90" class="lt" onclick="jumptoTime(353, this.id)"><p>因為你去煮呢一個雞嗰陣時呢，你就咁放落去係得，不過呢，到你食嗰陣時呢，你會就好似好多垃圾嘢喺度，突然間食到個雞，咬到個胡椒，食到個月桂葉，咬到少少月桂葉嘅碎喺度，我就麻麻地嘅，ok?</p></a>
+				<a href="#00:06:12.38" id="00:06:12.38" class="lt" onclick="jumptoTime(372, this.id)"><p>咁於是乎呢，我鍾意放喺一個茶包度呢，乾乾淨淨嘅味道呢，都仍然出到嘅，ok?</p></a>
+				<a href="#00:06:19.54" id="00:06:19.54" class="lt" onclick="jumptoTime(379, this.id)"><p>有啲朋友，我亦都做過呢，就係你想個味道再濃啲嘅話呢，就將呢啲胡椒呀，月桂葉呀等等呢，喺個鑊仔度白烘佢一陣，ok?</p></a>
+				<a href="#00:06:29.86" id="00:06:29.86" class="lt" onclick="jumptoTime(389, this.id)"><p>咁然後香味出咗嚟啦，先至攤凍佢，放返落去個茶包度，更加正㗎，好啦，咁而家呢我哋就搵咗一個，鑄鐵鍋去做呢一個餸嘅，咁但係唔係一定要用呢個鑄鐵鍋嘅，你可以用一個平底鑊煎pan呢，都可以做嘅，甚至乎你鍾意用中式鑊做都得嘅，冇問題嘅，不過你煎雞嗰陣時就記住，要均勻啲個顏色，平底鑊就易控制啲，好啦，咁我哋就將呢一個鑊已經燒熱咗。</p></a>
+				<a href="#00:07:3.74" id="00:07:3.74" class="lt" onclick="jumptoTime(423, this.id)"><p>然後呢為求增加呢一個風味呢，我係選用咗椰子油，跟住呢我哋就將啲雞放落去，皮落先，咁我哋就用中火就有佢喺度，煎大概五分鐘到，唔好郁佢啦，先煎五分鐘到，然後再翻炒，等雞肉變成啡色，就可以加其他材料，雞肉已經上色，可以加調味料，可以加蒜頭，你可能會問，是不是要爆香蒜頭，不需要的，因為我們想蒜頭的味道，不需要一定爆香。</p></a>
+				<a href="#00:07:52.54" id="00:07:52.54" class="lt" onclick="jumptoTime(472, this.id)"><p>但如果你想的話，可以把雞肉拿走，爆香蒜頭也可以，我們這個方法是最簡單的，然後有雞湯和水的混合物，然後加蘋果醋、生抽、老抽，攪拌一下，倒進去，然後就加椰糖，如果太大塊的話，可以先弄一弄，很容易碎掉，撒一撒，然後把調味料包放進去，然後蓋上蓋子，蓋上蓋子，然後煮沸，轉小火，煮大約45分鐘，或者等醬汁收到稠一點。</p></a>
+				<a href="#00:08:46.30" id="00:08:46.30" class="lt" onclick="jumptoTime(526, this.id)"><p>這樣就可以了，現在等待吃，經過45分鐘之後，我已經聞到非常香，關火，大家看看，哇!</p></a>
+				<a href="#00:09:2.82" id="00:09:2.82" class="lt" onclick="jumptoTime(542, this.id)"><p>我的天啊!</p></a>
+				<a href="#00:09:4.82" id="00:09:4.82" class="lt" onclick="jumptoTime(544, this.id)"><p>盛碟飯吃吧!</p></a>
+				<a href="#00:09:15.51" id="00:09:15.51" class="lt" onclick="jumptoTime(555, this.id)"><p>急不及待要試了，嘩 好正，好香，我的天 一定要吃雞腿，連蒜頭一起吃，酸酸甜甜，我自己加了辣椒，味道突然提升了，非常簡單的食譜，記得跟著來做，做了之後，如果你家中有一位菲律賓姐姐，在這裡幫你，你都不妨可以讓她試一下，看她覺得是否夠家鄉味道，記得訂閱我的YouTube頻道，和追蹤我的Facebook專頁，謝謝，吃東西。</p></a>
+</div>
+	</body>
+</html>

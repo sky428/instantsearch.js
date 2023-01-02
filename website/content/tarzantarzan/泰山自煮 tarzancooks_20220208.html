@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[一個鍋搞掂] 蕃茄咖喱魚 Tomato Curry Fish</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1qDxsv4UuBI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[一個鍋搞掂] 蕃茄咖喱魚 Tomato Curry Fish</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮呀，點呀，過年食嘢食到係咪好牛呀，食年糕係咪食到已經夠啦，定係仲有一底年糕未清晒呢，不過我哋今日就唔好食年糕住啦，既然大家咁濟，不如食返啲健康啲，醒胃少少，但又唔使煮咁耐嘅嘢好唔好，今日就教大家整一個蕃茄咖喱魚，好快搞掂啫我哋即刻開始啦，我哋今日呢一個蕃茄咖喱魚呢就選用咗，Beramundi。</p></a>
+				<a href="#00:00:39.56" id="00:00:39.56" class="lt" onclick="jumptoTime(39, this.id)"><p>定Beramundi呢，應該係Beramundi嘅，中文呢就應該叫做盲糟魚，呢啲魚呢個肉呢就較為實淨，咁幾啱我哋今日攞嚟煎㗎，ok 好嚟啦，呢一個Beramundi呢其實呢就係個雪藏魚啦，最好如果真係要食嘅話呢，係之前嗰日放喺個凝脂車度嘅雪櫃，等佢慢慢解凍，之後先至攞出嚟呢，沖一沖洗佢。</p></a>
+				<a href="#00:01:8.06" id="00:01:8.06" class="lt" onclick="jumptoTime(68, this.id)"><p>咁然後呢，你就要索乾曬啲水，因為呢我哋一陣要攞去煎，咁如果濕得滯呢，咁就唔係太好啦，ok 好，跟住我哋有啲唔同嘅調味料，搞一搞條魚嘅，咖喱粉啦，煙燻嘅甜椒粉啦，勁呀，粉紅岩鹽呀，黑胡椒，ok，攞個兜攞個叉，然後呢我哋就將啲粉呢，攞埋佢囉，好正呀 呢啲電視節目都係咁樣㗎，分開曬呀，大家睇得到我落咗啲乜嘢吖嘛。</p></a>
+				<a href="#00:01:38.56" id="00:01:38.56" class="lt" onclick="jumptoTime(98, this.id)"><p>yeah，好啦 跟住，攞個大兜，然後呢喺個兜上面呢，就係搞一搞嗰啲粉㗎，咁點解我要叫大家咁做呢，因為呢我驚你一陣呢，倒寫咗啲粉落啲地方度呢就唔係太好啦，因為呢嗰啲咖喱粉呢係好容易呢，就將你啲砧板呢，尤其木砧板呀或者啲枱面呀，染色㗎，另外一個好犀利嘅就係，薑黃粉呀，嗰啲一掂到個廚具呢，就染色㗎。</p></a>
+				<a href="#00:02:8.56" id="00:02:8.56" class="lt" onclick="jumptoTime(128, this.id)"><p>點洗都洗唔到㗎真係，好 攞勻咗啦，跟住呢我哋就，灑少少喺嗰個兜度先，然後呢，我哋就鋪啲魚喺度，跟住再灑啲上去，你將啲粉塗喺條魚上面，尤其皮嗰啲就唔好咁大力，我就唔想你刮爛啲皮，ok 第二邊都要攪一攪，側邊係野整一整，盡量成塊魚，都要沾滿啲粉，好咁我哋就將個魚，醃大概五至到八分鐘，咁呢段時間呢我哋就攪下第二啲嘢啦。</p></a>
+				<a href="#00:02:43.21" id="00:02:43.21" class="lt" onclick="jumptoTime(163, this.id)"><p>跟住我哋要預備一個刨，呢啲咁樣嘅薄刨呢有好多家居舖都買到嘅，咁佢個刀片就冇得較厚薄，咁但係呢呢啲咁樣嘅日本式嘅刨呢，你刨出嚟都係好薄嘅，跟住呢我哋要刨乜嘢呢，我要刨一個radish，咁radish呢呢一個基本上我都係用嚟整色整水嘅啫，因為呢我成日都覺得呢，一個radish呢嗰個滾咗個紅色邊係好靚嘅，好咁你呢已經洗咗㗎啦呢個咁我哋就喺佢上面度刨啦。</p></a>
+				<a href="#00:03:13.21" id="00:03:13.21" class="lt" onclick="jumptoTime(193, this.id)"><p>小心手呀我係提我自己嘅啫，好啦基本上呢我就係想要少少呢啲圓形嘅啫ok，跟住我哋要做啲乜嘢呢，我哋要醃一醃呢一個radish喇喎，嗱我哋準備咗少少水啦同埋少少糖嘅，我哋將個白砂糖呢倒落個水度呀，攪勻佢，跟住呢將佢哋呢就放喺入面，嗱呢啲爛嗰啲唔緊要啦醃埋佢啦，咁呢一個呢一個非常之簡單嘅醃法啦，咁通常呢都係用嚟畀佢做沙律呀咁樣即係點綴下。</p></a>
+				<a href="#00:03:45.21" id="00:03:45.21" class="lt" onclick="jumptoTime(225, this.id)"><p>咁但係又唔想嗰個radish呢冇味，咁於是乎呢你可以落啲糖加啲水，有啲人鍾意加啲醋添咁就更加似一個醃咗個radish，非常之好用嘅大家可以試下呢個方法啦，好咁我哋呢醃好之後呢就放埋佢一一熱過啦，好啦仲有兩個材料呢你係要預備嘅，不過呢兩個材料呢非常之簡單嘅，就係車厘茄同埋羽衣甘藍啦。</p></a>
+				<a href="#00:04:10.21" id="00:04:10.21" class="lt" onclick="jumptoTime(250, this.id)"><p>嗱呢啲羽衣甘藍呢我就係超級市場買嘅，有啲大嘅超級市場呢佢哋而家呢就好輕㗎啦，大家都想食啲superfood嘛，咁你買一包佢仲要已經係處理曬，撕埋嘅咁就perfect for呢一個餸啦，跟住呢仲有啲車厘茄啦，車厘茄呢我就揀咗啲呢有橙色有黃色嘅，咁而家呢啲超市呢都係一杯杯咁樣賣嘅，即係有啲人鍾意當係snack咁食小食咁樣食嘅。</p></a>
+				<a href="#00:04:39.21" id="00:04:39.21" class="lt" onclick="jumptoTime(279, this.id)"><p>咁係非常之健康啦咁你可以買呢啲，咁一杯杯咁樣就好多顏色嘅非常之方便呀，好啦番茄呢我哋要輕微處理一下嘅，我哋就將佢切開半得㗎啦，搞掂，好啦你要預備嘅材料呢，搞掂㗎喇喎我哋可以開始煮㗎啦，好咁我哋呢就搵一個平底鑊啦，咁呀然後燒熱佢落啲油，多少少啦因為呢我哋想煎個魚皮呀，好咁之後呢我哋就攞啲魚啦。</p></a>
+				<a href="#00:05:14.21" id="00:05:14.21" class="lt" onclick="jumptoTime(314, this.id)"><p>鋪落去啦中火呀用咁多位，咁我哋大概要煎幾耐呢我哋大概呢煎佢，兩至到三分鐘啦下等到呢嗰個皮呢可以，自己離開到呀唔係你夾硬撬呢佢都唔得㗎，ok，好啦咁呀個皮ok喇喎我哋反轉個魚啦，嘩正呀very nice，woo，望住都興奮呀真係好啦跟住落嚟做啲乜嘢呢，然後我哋就要灑啲番茄落去喇喎，跟住再要放啲魚甘藍落去啦。</p></a>
+				<a href="#00:05:49.21" id="00:05:49.21" class="lt" onclick="jumptoTime(349, this.id)"><p>然後落啲咁多雞湯，跟住攞番頭先嗰啲葉粉呢灑多羹喺上面，冚蓋繼續用中火呢我哋就煮佢呢都係三分鐘，到ok唔好煮太耐呀魚煮太耐呢就會太熟太，韌就唔好食㗎喇ok搞掂㗎喇，好夠鐘熄火望一望，嘩正呀番茄已經煮好咗啦，撈埋佢一齊啦perfect好呢個時候，整色整衰嘢又嚟啦，鋪好喇。</p></a>
+				<a href="#00:06:26.08" id="00:06:26.08" class="lt" onclick="jumptoTime(386, this.id)"><p>然後用檸檬切一半，上碟時再擠一下，放上檸檬，嘩!好靚仔哂，哈哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.72" id="00:06:36.72" class="lt" onclick="jumptoTime(396, this.id)"><p>食得，嘩!咁快就搞掂，我哋試食下先，整啲魚呀，嘩!正</p></a>
+				<a href="#00:06:48.96" id="00:06:48.96" class="lt" onclick="jumptoTime(408, this.id)"><p>食塊皮撕咗，嘩!咁醜樣食得，咖哩味喺度，跟住有啲番茄酸味，就令到我突然間上直咗，當然就淋埋檸檬上去，仲更加perfect，嘩!考考味，嘩!有機會跟住嚟整下，Subscribe我嘅Youtube Channel，同埋Follow我嘅Facebook Page，多謝哂!下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>
