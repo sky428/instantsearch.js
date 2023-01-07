@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》疫情特餐系列——蝦米辣炒牛肉豬腸粉，大家別再獨孤一味吃蒸腸粉了，來試試炒腸粉吧，其實並不複雜，齋炒腸粉已經美味非常，這次還加入牛肉同炒，更加可以比美上大酒樓的味道了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'akuVXBf9qk0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》疫情特餐系列——蝦米辣炒牛肉豬腸粉，大家別再獨孤一味吃蒸腸粉了，來試試炒腸粉吧，其實並不複雜，齋炒腸粉已經美味非常，這次還加入牛肉同炒，更加可以比美上大酒樓的味道了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，下午我現在起床找食物。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>吃什麼好呢?</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>做一個牛肉炒豬腸粉好嗎?</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>再惹味一點，加些蝦米辣椒醬炒，辣辣的，OK?</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>好惹味的，現在我正在燒鑊，材料有什麼呢?</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>雞蛋一隻，發好的，然後有牛肉，OK?</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>然後豬腸粉十條，然後有大量的芽菜，因為大家都知道我喜歡吃菜。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>然後有切好的蔥，然後有蠔油，生抽，老抽，鹽，糖，味道，OK?</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>現在開始了，首先，為什麼我會有雞蛋呢?</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>本來我不會加雞蛋，但我兒子經常投訴，老爸，為什麼你炒河粉沒有蛋絲呢?</p></a>
+				<a href="#00:01:27.00" id="00:01:27.00" class="lt" onclick="jumptoTime(87, this.id)"><p>所以沒辦法，唯有一定要加蛋，不然又被食家投訴。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>蛋絲，即是要煎蛋，發好的蛋，我會加多一點油，油溫要夠高，OK?</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>為什麼呢?因為我會要把它弄得這麼薄，切蛋絲出來才會挺直，OK?</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>不然就會軟身，首先繼續燒鑊，燒到差不多，然後…，雞蛋不用調味，OK?</p></a>
+				<a href="#00:02:11.00" id="00:02:11.00" class="lt" onclick="jumptoTime(131, this.id)"><p>然後拿起鑊，降溫，然後搖晃一下。</p></a>
+				<a href="#00:02:23.64" id="00:02:23.64" class="lt" onclick="jumptoTime(143, this.id)"><p>如果想要切得直，蛋要煎得老一點，不可以像煎滑蛋那樣。</p></a>
+				<a href="#00:02:40.64" id="00:02:40.64" class="lt" onclick="jumptoTime(160, this.id)"><p>你當它炸蛋也好，什麼都好。</p></a>
+				<a href="#00:02:43.64" id="00:02:43.64" class="lt" onclick="jumptoTime(163, this.id)"><p>然後放入油，要煎得夠薄身。</p></a>
+				<a href="#00:02:56.64" id="00:02:56.64" class="lt" onclick="jumptoTime(176, this.id)"><p>差不多了，先拿起蛋。</p></a>
+				<a href="#00:03:0.64" id="00:03:0.64" class="lt" onclick="jumptoTime(180, this.id)"><p>還有些油在，然後要繼續燒一燒，讓它夠高溫，然後就煎牛肉。</p></a>
+				<a href="#00:03:18.11" id="00:03:18.11" class="lt" onclick="jumptoTime(198, this.id)"><p>先把鑊燒一燒 因為鑊的溫度不夠，這個時候煎的牛肉就當它是手油的形式，一放下去的時候就不用理它，跟我之前煎東西的技巧是一模一樣的，先不要理它 給點耐心 讓它固定了形態，煎到一邊金黃色才翻另一邊，如果牛肉醃得好，就不會黏鍋，這個就不關意鍋事，可以嗎?</p></a>
+				<a href="#00:04:11.46" id="00:04:11.46" class="lt" onclick="jumptoTime(251, this.id)"><p>好了，現在差不多了，一邊金香，可以另一邊了，再說一次，酒油和煎的分別在哪裏呢?</p></a>
+				<a href="#00:04:28.46" id="00:04:28.46" class="lt" onclick="jumptoTime(268, this.id)"><p>一個是用慢火，一個是用大火，為何要用大火呢?</p></a>
+				<a href="#00:04:38.46" id="00:04:38.46" class="lt" onclick="jumptoTime(278, this.id)"><p>因為要產生煤鈉反應，令表面焦香，但裏面仍然是嫩，好了，牛肉煎至七、八成熟就可以了，因為一炒就很快熟，這樣才會嫩滑，因為牛肉留了些汁出來，所以鑊有水，所以會彈，我現在晾一晾，讓它快點蒸發，好了，都是用原本的油，然後我們就放腸粉進去，有兩個重點要注意，第一個就是要看你買的時候是否新鮮，如果放進雪櫃，腸粉隔一晚就會很容易散、斷。</p></a>
+				<a href="#00:05:54.23" id="00:05:54.23" class="lt" onclick="jumptoTime(354, this.id)"><p>如果是新鮮的話，炒出來就會好看一點，腸粉的身體就會完整一點，現在我放了腸粉進去，我就不理它，也千萬不要在這個階段翻它，其實道理和家廚炒河粉是一模一樣的，先煎一煎它，煎香它一面，煎香它一面，再翻第二面，最多就是這樣晾它，有些隔了一面的，大家可以動一動它，我先說買的時候盡量不要買隔夜腸粉，怎樣去判斷呢?</p></a>
+				<a href="#00:06:47.23" id="00:06:47.23" class="lt" onclick="jumptoTime(407, this.id)"><p>你買之前，用手指摸這個位置，摸一摸它，不是冰凍的話，即是它沒有放進雪櫃，即是都是當日的，腸粉現在可以了，然後這個時候我們要辣炒腸粉，這個時候我們就放黑麥辣椒醬，視乎大家的辣度，半茶匙至兩茶匙之間，炒腸粉不要貪心，因為我試過炒十多條腸粉，這些鍋子三十吋的，炒不成，炒到糊了。</p></a>
+				<a href="#00:07:38.67" id="00:07:38.67" class="lt" onclick="jumptoTime(458, this.id)"><p>不是說炒得越多越好，為什麼我這麼喜歡用蝦米辣椒醬呢，大家可以用XO醬代替，因為我直接放進鍋子裡，然後煎一下蝦米辣椒醬，現在馬上出來了，現在放牛肉進去，接著放芽菜，小心不要連水一起放下去，芽菜不用炒太熟，有些影片會教大家，把蔥和芽菜都炒過，其實這樣有好有壞，但我個人覺得這樣是不需要的，現在這樣的程序和炒法。</p></a>
+				<a href="#00:08:44.55" id="00:08:44.55" class="lt" onclick="jumptoTime(524, this.id)"><p>其實我出去做生意，和別人炒都是這樣炒，當然不是專業餐廳，可以加些小攤檔，這個時候我們就隨意了，讓鍋持續加溫，讓芽菜辣一辣，然後這個時候就調味了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:26.07" id="00:09:26.07" class="lt" onclick="jumptoTime(566, this.id)"><p>字幕by索兰娅。，家廚炒腸粉或者炒河粉和職業廚房最大的分別就是爐不夠高溫，所以大家盡量在下鍋之前盡量要保持高溫，盡量提升溫度，這樣就可以令到溫度長一些，即是高一些，當你下了材料的時候，它維持的溫度就高一些 長一些時間，這樣就可以炒得河粉或者腸粉更加好味，蔥不用太快放，怎樣呢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:21.35" id="00:10:21.35" class="lt" onclick="jumptoTime(621, this.id)"><p>就是等它一炒 炒到有蔥香，這樣就可以了，不用炒熟蔥 千萬不要炒熟蔥，OK 這樣就完成了，一個辣炒牛肉豬腸粉就完成了，OK 好，這個時候我們就上碟了，因為我加的芽菜比較多，所以會有少少濕濕的，但如果大家正常的比例就這樣拿住，就不會那麼濕的，ok?</p></a>
+				<a href="#00:11:6.37" id="00:11:6.37" class="lt" onclick="jumptoTime(666, this.id)"><p>大家要知道分別了，好，一碟辣炒牛肉豬腸粉就完成了，大家覺得如何呢?可不可以呢?</p></a>
+				<a href="#00:11:34.37" id="00:11:34.37" class="lt" onclick="jumptoTime(694, this.id)"><p>我聞到就覺得很香，我吃過很多次了，我兒子都讚不絕口，原來腸粉可以這樣做，我說是呀，可以這樣做的，就不會說只用豬腸粉和麻醬，即是用混醬就這樣吃，可以試一下這個炒的方法，ok?</p></a>
+				<a href="#00:11:55.37" id="00:11:55.37" class="lt" onclick="jumptoTime(715, this.id)"><p>加雞蛋我就不給大家看了，ok?</p></a>
+				<a href="#00:11:59.37" id="00:11:59.37" class="lt" onclick="jumptoTime(719, this.id)"><p>免得浪費大家的時間，喜歡的話就像我剛才那樣，先煎雞蛋，然後切蛋絲，炒好之後放在上面，再撒上一些炒過的白芝麻在上面，這樣就變成高級酒樓的一道菜了，就是這麼簡單，ok?</p></a>
+				<a href="#00:12:20.37" id="00:12:20.37" class="lt" onclick="jumptoTime(740, this.id)"><p>好了，不跟大家說了，吃東西了，肚子餓了，睡醒了，沒多久。</p></a>
+				<a href="#00:12:25.37" id="00:12:25.37" class="lt" onclick="jumptoTime(745, this.id)"><p>拜拜!</p></a>
+</div>
+	</body>
+</html>

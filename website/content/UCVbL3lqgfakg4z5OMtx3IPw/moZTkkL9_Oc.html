@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣話影片》疫情特餐系列——混醬辛辣麵，吃即食麵也可以吃出美味，吃即食麵不代表就不能專業，快來看看我如何製作出比茶記好吃的辛辣麵吧。。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'moZTkkL9_Oc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣話影片》疫情特餐系列——混醬辛辣麵，吃即食麵也可以吃出美味，吃即食麵不代表就不能專業，快來看看我如何製作出比茶記好吃的辛辣麵吧。。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，大家晚上好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日係剛剛過左節日飯嘅第二日。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>其實應該係由節日飯數起第一第二第三日。</p></a>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>大家睇到個畫面，辛辣麵兩包，咁就唔係淨係我一個人食嘅，咁就有我仔啦。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>我知道香港人好鍾意食辛辣麵，近年茶餐廳ABC早餐都有辛辣麵，好多都有辛辣麵選項。</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>咁有咩好處我就唔多講，反正大家鍾意食，我都幾鍾意食，我覺得佢好食過出前一丁，因為夠煙韌。</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>大家有無諗過食辛辣麵呢?都。。。</p></a>
+				<a href="#00:00:59.22" id="00:00:59.22" class="lt" onclick="jumptoTime(59, this.id)"><p>我到底落啲咩料呢?</p></a>
+				<a href="#00:01:1.22" id="00:01:1.22" class="lt" onclick="jumptoTime(61, this.id)"><p>落午餐肉?落煎蛋?都ok喎!</p></a>
+				<a href="#00:01:8.22" id="00:01:8.22" class="lt" onclick="jumptoTime(68, this.id)"><p>即係落咩料都好，落咩罐頭都好，其實都仲有其他選擇嘅。</p></a>
+				<a href="#00:01:14.22" id="00:01:14.22" class="lt" onclick="jumptoTime(74, this.id)"><p>咁由先頭我一開始就提，節後第幾日?</p></a>
+				<a href="#00:01:20.22" id="00:01:20.22" class="lt" onclick="jumptoTime(80, this.id)"><p>係呀，無錯呀!</p></a>
+				<a href="#00:01:21.22" id="00:01:21.22" class="lt" onclick="jumptoTime(81, this.id)"><p>節日就好開心嘅，十幾個人上嚟屋企食飯，我啲兄弟姐妹幾個家庭呀。</p></a>
+				<a href="#00:01:29.22" id="00:01:29.22" class="lt" onclick="jumptoTime(89, this.id)"><p>咁呀，但係對我嚟講節後就係一個煩惱，點解呀?</p></a>
+				<a href="#00:01:35.22" id="00:01:35.22" class="lt" onclick="jumptoTime(95, this.id)"><p>因為通常節後我都要食三日餸味，餸頭餸味。</p></a>
+				<a href="#00:01:41.22" id="00:01:41.22" class="lt" onclick="jumptoTime(101, this.id)"><p>咁我唔知道大家有無呢個煩惱呀?</p></a>
+				<a href="#00:01:44.22" id="00:01:44.22" class="lt" onclick="jumptoTime(104, this.id)"><p>所以呢，我成日都因為呢啲餸頭餸味，我都會諗出好多新嘅食法出嚟嘅。</p></a>
+				<a href="#00:01:54.22" id="00:01:54.22" class="lt" onclick="jumptoTime(114, this.id)"><p>今日就用辛辣麵再加埋餸頭餸味去煮一個色香味俱全嘅即食麵，得唔得呀?</p></a>
+				<a href="#00:02:2.22" id="00:02:2.22" class="lt" onclick="jumptoTime(122, this.id)"><p>正唔正呀?</p></a>
+				<a href="#00:02:4.22" id="00:02:4.22" class="lt" onclick="jumptoTime(124, this.id)"><p>好啦，咁大家睇下我有啲咩料囉。</p></a>
+				<a href="#00:02:7.22" id="00:02:7.22" class="lt" onclick="jumptoTime(127, this.id)"><p>兩包辛辣麵啦，跟住然之後呢，嘩!切咗一大兜蟲。</p></a>
+				<a href="#00:02:12.22" id="00:02:12.22" class="lt" onclick="jumptoTime(132, this.id)"><p>呢個食麵呢，真係我冇衝唔掂呀。</p></a>
+				<a href="#00:02:16.22" id="00:02:16.22" class="lt" onclick="jumptoTime(136, this.id)"><p>去到食牛雜麵啦，雲吞麵我一定叫多衝嘅，ok?</p></a>
+				<a href="#00:02:21.22" id="00:02:21.22" class="lt" onclick="jumptoTime(141, this.id)"><p>跟住然之後，今日有啲咩食呢?正餸呢，今日就消滅咗呢一碟滷水料。</p></a>
+				<a href="#00:02:31.22" id="00:02:31.22" class="lt" onclick="jumptoTime(151, this.id)"><p>咁有乜嘢呢?滷水紅腸啦，滷水豬腸啦，滷水豬肚啦，攞咗啲芽菜啦。</p></a>
+				<a href="#00:02:39.22" id="00:02:39.22" class="lt" onclick="jumptoTime(159, this.id)"><p>咁呀，因為我攞落去叮過阿肥菠蘿啱啱，所以呢就黑咗少少，但係正常就冇咁黑嘅。</p></a>
+				<a href="#00:02:46.22" id="00:02:46.22" class="lt" onclick="jumptoTime(166, this.id)"><p>賣相就好似唔好睇，但係大家都知道應該好食嘅，呢啲嘢。</p></a>
+				<a href="#00:02:50.22" id="00:02:50.22" class="lt" onclick="jumptoTime(170, this.id)"><p>咁呀，如果你話呢啲咁嘅滷水料，你就咁攞嚟送飯，好似乜乜咁樣，係咪呀?</p></a>
+				<a href="#00:02:59.22" id="00:02:59.22" class="lt" onclick="jumptoTime(179, this.id)"><p>咁就攞嚟扣麵食就正哂，fit哂啦，係咪呀?</p></a>
+				<a href="#00:03:2.22" id="00:03:2.22" class="lt" onclick="jumptoTime(182, this.id)"><p>咁呀，當然，我成日都講㗎啦，食麵點可以冇菜呢?</p></a>
+				<a href="#00:03:7.22" id="00:03:7.22" class="lt" onclick="jumptoTime(187, this.id)"><p>我成日都講我屋企好多菜，呢度有兩大棵生菜，咁我同我仔兩個人食，呢度應該有成十兩生菜喺度㗎啦。</p></a>
+				<a href="#00:03:16.22" id="00:03:16.22" class="lt" onclick="jumptoTime(196, this.id)"><p>所以我哋屋企食菜都幾犀利，尤其是我個女呀，食菜好犀利㗎。</p></a>
+				<a href="#00:03:20.22" id="00:03:20.22" class="lt" onclick="jumptoTime(200, this.id)"><p>佢夜晚刻呢，佢話on diet唔食飯，咁就食咩呀?就食我煮嘅菜，就即係淨係齋食菜囉，好多時候都係咁樣。</p></a>
+				<a href="#00:03:29.22" id="00:03:29.22" class="lt" onclick="jumptoTime(209, this.id)"><p>ok，嗱，咁呀，好啦，嗱，呢個時候呢，我哋，呢個辛辣麵呢，好多人呢就落哂啲粉落去咩嘅，即係落哂啲粉呢就落去一齊煮嘅，我就唔係嘅。</p></a>
+				<a href="#00:03:46.22" id="00:03:46.22" class="lt" onclick="jumptoTime(226, this.id)"><p>大家就睇下我點整呀，攞兩隻大碗先啦。</p></a>
+				<a href="#00:03:51.22" id="00:03:51.22" class="lt" onclick="jumptoTime(231, this.id)"><p>等等啦，地方錢就唔可以擺埋一齊呀啲嘢。</p></a>
+				<a href="#00:04:1.89" id="00:04:1.89" class="lt" onclick="jumptoTime(241, this.id)"><p>我拿兩隻大碗，因為我們有很多材料，所以通常都要拿這麼大碗，煮呢，我當然不需要拍片給大家看，但拌粉這東西，我就要拍片給大家看，為什麼呢?因為我們要，那個粉，拌得好不好呢?</p></a>
+				<a href="#00:04:32.89" id="00:04:32.89" class="lt" onclick="jumptoTime(272, this.id)"><p>其實是和麵直接好不好吃是有關係的，通常我就學了日本人的招式，就不是直接拌進去的，直接拌進去煮的，我是在碗裡面先混好，我不知道大家有沒有去吃日本拉麵，日本那些都是這樣的，他們麵有麵，湯粉有湯粉，就是那些蒜粉，那些料，然後就麵和麵，湯和湯，然後撞在一起，我之所以這一鏡給大家看，當然不是普通，就這樣放完粉就算了。</p></a>
+				<a href="#00:05:18.89" id="00:05:18.89" class="lt" onclick="jumptoTime(318, this.id)"><p>不然我用什麼方法拍這樣的片給大家看，你等一下，我先把鏡頭調高一點，先調高這部機，等等，夠高了，這樣大家就看得清楚一點，OK?</p></a>
+				<a href="#00:05:43.89" id="00:05:43.89" class="lt" onclick="jumptoTime(343, this.id)"><p>好，看得到嗎?</p></a>
+				<a href="#00:05:46.89" id="00:05:46.89" class="lt" onclick="jumptoTime(346, this.id)"><p>這個時候我就把蔥頭放進去，放一點進去，有時候就是這樣，吃麵，吃公仔麵看似很簡單，但其實你想好吃，是要有很多方法的，我覺得，如果純粹說湯底來說，我覺得辛辣麵的湯底，它太過寡了，就跟出前一丁的，譬如說，九州豬骨湯拉麵，就差一點的，我不知道大家有沒有同感，好 放多一點進去，留下青的部分，留下青的部分用來做什麼呢。</p></a>
+				<a href="#00:06:34.69" id="00:06:34.69" class="lt" onclick="jumptoTime(394, this.id)"><p>等一會煮好麵再放，OK 行不行，好 接著然後呢，又是我的秘密武器出場了，豬油，大概放一湯匙左右，嘩 近日凍的，你看豬油都是晶的，一湯匙左右就夠了，不用多的，接著然後呢，我們放什麼呢，放豉油，一 二 三，三個圈，大概是一湯匙，不是不是不是 鹹死了，一茶匙多一點點 OK，那這個作用是什麼呢，就是增加辛辣麵的味道。</p></a>
+				<a href="#00:07:20.69" id="00:07:20.69" class="lt" onclick="jumptoTime(440, this.id)"><p>OK 好了，接著然後就這樣，放下去不夠的，攪勻它，我叫這個混醬，我不知道大家有沒有聽過一個傳說，就是以前香港電台，裡面有一間餐廳，很出名的，吃混醬出錢一丁的，當然，它怎麼混我不知道，但是我估計它的流程跟我差不多，就是說，那些粉就不放在湯麵上一起煮的，而是預先拌勻，放了一些材料 拌勻，那我這裡有什麼呢。</p></a>
+				<a href="#00:07:58.92" id="00:07:58.92" class="lt" onclick="jumptoTime(478, this.id)"><p>除了那包湯粉之外，就有蔥，有豬油，有生抽，那大家可能會問，那我沒有豬油怎麼辦，不是每家都有，不是每個人都懂得做豬油，不要緊，放熟油一樣，家裡有任何的熟油，或者再退而求其次，就放麻油，OK，反正就是蔥，醬油，再混合豬油或者芝麻油，然後混合湯粉，濕的情況下拌勻，OK，行不行，那醬油就視乎大家，就是那個口味的多寡。</p></a>
+				<a href="#00:08:36.60" id="00:08:36.60" class="lt" onclick="jumptoTime(516, this.id)"><p>還有你想吃少湯還是多湯，OK，那我現在呢，按照我自己的習慣，就放三個圈，就是大概一茶匙多一點，OK，行不行，那其他的配料就現在不放，行不行，那等下我煮好麵再開機，好了，那麵就煮好了，按照基本煮法，那我現在煮好了之後，我就下料了，煮兩個麵 兩仔爺 宵夜，OK，大家看看我煮一碗麵也有很多菜，起碼有一棵生菜。</p></a>
+				<a href="#00:09:39.16" id="00:09:39.16" class="lt" onclick="jumptoTime(579, this.id)"><p>這個時候我們就拌勻它，先拌勻醬汁，OK，先拌勻它，然後呢，就將這個滷水料，有少少黑，我剛才也解釋過了，因為我用微波爐叮過，所以就黑色了少少，當然你說，我自己沒有滷水豬腸，即是沒有滷水的料，那怎麼辦，你可以買些回來，去超級市場，其實是一樣的，我之前就做過一個，豬耳絲，豬耳絲酸辣麵，好，然後就倒湯下去。</p></a>
+				<a href="#00:10:41.63" id="00:10:41.63" class="lt" onclick="jumptoTime(641, this.id)"><p>好，跟住呢，呢個時候呢，我地就畀啲蔥花上去啦，咁就又一餐啦，咁又一個，利用呢個，節日嘅，食剩嘅餸，咁我地就煮咗個，嘗算可以嘅，比大家睇下嘗算可以嘅一個，生硬麵，咁就多啲花款啦，整個close shot比大家睇下先，ok唔ok呀，呢個賣相ok唔ok呀，ok掛，咁大家可以嘗試下嘅，即係有陣時食嘢我地就係咁架啦，唔需要話。</p></a>
+				<a href="#00:11:39.63" id="00:11:39.63" class="lt" onclick="jumptoTime(699, this.id)"><p>一定，即係一成不變，其實到你雪櫃裏面有乜嘢，你煎雞蛋又好，或者係攞返啲舊餸都好，咁其實呢，我雪櫃裏面啲雞都食剩三分一隻，咁呢，其實都係一個攞埋，攞嚟呢係一個煮，麵嘅一個，即係一個非常之好嘅，配料，同雞嘅話呢有煮法就唔一樣，咁呀，睇下我，會唔會再整個，生硬麵嚟食啦，如果有嘅話呢我再同大家，睇下如果煮雞麵嘅話係點樣。</p></a>
+				<a href="#00:12:19.63" id="00:12:19.63" class="lt" onclick="jumptoTime(739, this.id)"><p>煮呀ok，咁呀今晚到此為止啦，咁我去食嘢啦ok，就唔好大家唔好嫌棄，嘩乜你，啲料咁差嘅或者咩呀，其實我拍呢啲片呢主要，係表達嘅目的呢就希望，大家呢盡量利用我哋手頭上，有嘅材料其實，都好多組合組合咗出嚟，之後呢係好好食嘅ok，得唔得呀咁呀。</p></a>
+				<a href="#00:12:45.63" id="00:12:45.63" class="lt" onclick="jumptoTime(765, this.id)"><p>好啦去食嘢啦拜拜。</p></a>
+</div>
+	</body>
+</html>

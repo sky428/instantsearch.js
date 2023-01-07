@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——雞蛋炒米粉，既然有靚粥自然就要炒粉啦，這次我做了一個最簡單的炒粉配海鮮粥，簡直是人生最高享受！(內有快連煮綿滑粥底的秘訣。)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OoyNApORKqU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——雞蛋炒米粉，既然有靚粥自然就要炒粉啦，這次我做了一個最簡單的炒粉配海鮮粥，簡直是人生最高享受！(內有快連煮綿滑粥底的秘訣。)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.52" id="00:00:0.52" class="lt" onclick="jumptoTime(0, this.id)"><p>好喇大家!</p></a>
+				<a href="#00:00:1.32" id="00:00:1.32" class="lt" onclick="jumptoTime(1, this.id)"><p>咁呢粥就熬到而家呢就淨返十分鐘，咁呢，我開伙整緊第二樣嘢啦，咩呢?就係炒粉呀喂!</p></a>
+				<a href="#00:00:15.44" id="00:00:15.44" class="lt" onclick="jumptoTime(15, this.id)"><p>呢個炒粉其實就好簡單嘅，首先係落鹽、糖味，咁就要煮熟啲粉先啦，一匙鹽、一匙糖、一匙雞粉，然後加少許油，然後將要用的米粉全部放進去，我這個是河源的滿衣米粉，我很喜歡用的，記住不要買那個什麼花，那個什麼花我就中招了，完全不行，但是這個滿衣的粉很有韌勁，現在開始香港有些粉麵店都會用這個牌子，它是結合了排粉的那種耐煮。</p></a>
+				<a href="#00:01:15.80" id="00:01:15.80" class="lt" onclick="jumptoTime(75, this.id)"><p>和東莞米粉那種柔軟、堅韌的感覺，又不容易斷，所以我現在很喜歡用這種米粉來炒粉也好，煮食也好，通常我家一定是放十隻八隻在這裡，但是這個米粉不是包裝的，只有散賣，你一定要去街市的糧油店買的，在超級市場是不能買的，如果大家看到我炒粉的效果好的話，大家可以試一下用這種米粉，現在其實我順便說一下。</p></a>
+				<a href="#00:02:2.80" id="00:02:2.80" class="lt" onclick="jumptoTime(122, this.id)"><p>這個煲粥30分鐘計時不是什麼都不做的，大家看到我煲了這麼久，剩下10分鐘就這麼多水，為什麼?我加過水嘛，還有因為我放了鹹豬骨，那些粥是煮不起來的，所以我們要久久的攪一攪，讓它不粘鍋底，煮開米粉才會爆開，差不多了，等一會兒米粉好了，我再開機跟大家分享怎樣炒米粉，炒雞蛋家鄉炒米粉。</p></a>
+				<a href="#00:02:48.20" id="00:02:48.20" class="lt" onclick="jumptoTime(168, this.id)"><p>先頭我忘記說，米粉不要煮太久，大約三分鐘左右，大家看看，它一開始散就可以拿起，如果不是的話，我先關火，如果不是的話，米粉炒的時候很容易爛，變成糊狀，我現在直接倒水，不給大家看了，我一拿起，現在炒米粉很簡單，大家經常聽到人家說，煮米粉要過冷河，其他的湯粉，有時候我都會過冷河，但記住，炒粉千萬不要過冷河。</p></a>
+				<a href="#00:03:37.50" id="00:03:37.50" class="lt" onclick="jumptoTime(217, this.id)"><p>我現在給大家看看，很熱，就這樣，隨便它，為什麼呢?</p></a>
+				<a href="#00:03:42.50" id="00:03:42.50" class="lt" onclick="jumptoTime(222, this.id)"><p>這個是有原理的，有科學根據的，因為其實米粉，如果我們這個時候，我先開火，不要浪費大家時間，一邊燒一邊說，因為如果你過冷河的話，米粉會急速降溫，你過一刻，真的會很彈牙，但是它有一個問題，因為它不能夠自熱，所以米粉表面的水是不會乾的，但是如果我們要來炒粉的時候，我們一定是不可以過冷河的，怎樣呢?讓它自熱，將水慢慢吸收。</p></a>
+				<a href="#00:04:23.50" id="00:04:23.50" class="lt" onclick="jumptoTime(263, this.id)"><p>這樣，你自然炒出來的米粉就乾身了，這個就是家廚的一個技巧，當然，如果職業廚房的話，它都不會過冷河，它就在桌面上，攤開米粉，任由它自己冷，這些是職業廚房的做法，因為它要準備很多個例牌，但是我們家裡來說，我們就不需要這樣做的，OK?</p></a>
+				<a href="#00:04:55.61" id="00:04:55.61" class="lt" onclick="jumptoTime(295, this.id)"><p>現在燒黃了，一如以往，先燒黃，攪拌一下粥，粥開始因為米爆起，所以開始有些黏底，所以這個時候我們要攪拌它，現在還有幾分鐘時間，米已經散了，因為時間關係，所以我沒辦法，我給大家看看，現在的粥給大家看看，看到嗎?已經很綿了，現在還不夠30分鐘，好了 現在燒夠了，那我就放油，炒米粉真的很簡單，現在我放油會相對比較多。</p></a>
+				<a href="#00:05:49.43" id="00:05:49.43" class="lt" onclick="jumptoTime(349, this.id)"><p>因為米粉會吸油，第二就是我預先放蔬菜，它會吸油，所以我多放一點油，然後這個時候，我就打蛋，上面嗰隻蛋呢就和咗少少呀，好啦呢個時候呢我哋就快速咁樣搞勻佢，即係喺嗰個呢個其中一個炒法嚟㗎ok，咁就好似係，白蛋咁㗎喇ok，咁你稍為炒熟少少先，就唔好炒到佢咁生呀，好啦而家我畀大家睇下，好熱呀。</p></a>
+				<a href="#00:06:50.06" id="00:06:50.06" class="lt" onclick="jumptoTime(410, this.id)"><p>我畀大家睇下，咁呢，時間關係呀咁我唔知道睇唔睇到呀因為，太光呀，咁呢個時候呢，你蛋炒熟咗之後呢我哋就可以將個米粉呢就擺落去啦，咁呢就不斷啦唔好返佢，點解呢因為呢我要佢煎一煎佢個底先，等佢嗰個，米粉呢香啲，同埋呢，因為先頭嗰啲油呢就已經係吸咗，咁咪等大家睇得清楚啲個texture變化，而家呢我哋就可以了散佢啦因為先頭我炒蛋呀。</p></a>
+				<a href="#00:07:44.58" id="00:07:44.58" class="lt" onclick="jumptoTime(464, this.id)"><p>即係嗰啲蛋呀我點解要咁樣炒呢，而唔係發咗啲蛋先炒呢，因為咁樣啲蛋呢，佢嗰啲蛋呢發唔勻嘅時候呢佢會甩嗰啲，即係嗰啲嗰啲蛋粉出嚟嘅咁呢個時候呢我繼續去加熱呢同埋係加咗米粉落去呢嗰啲，米粉就吸咗啲蛋香呀同你純粹嘅即係發文啲蛋呢反而，有好處㗎，大家有見到我炒好大兜米粉係咪係呀我呢度捉咗八隻如果平時大家兩個人食，炒兩隻就食到飽飽肚呀。</p></a>
+				<a href="#00:08:24.26" id="00:08:24.26" class="lt" onclick="jumptoTime(504, this.id)"><p>因為點解呢我係預明日呢即係早早到埋早餐啦，這個時候我們就可以開始放菜心下去了，曾經有觀眾挑戰過我，就說你炒粉炒一炒才炒菜心，而不是炒熟菜心才放粉，你都不是奴的 你懂不懂炒粉，我想跟大家說 煮食的東西千變萬化，粥可以了 我給大家看看，順便給大家看看 我先關小火，現在粥可以了 粥已經夠了。</p></a>
+				<a href="#00:09:21.64" id="00:09:21.64" class="lt" onclick="jumptoTime(561, this.id)"><p>我給大家看看粥，所以我經常說粥不要想著甚麼都不用做，要攪拌它 中途要攪拌它，否則粥會黏底，尤其是我現在鹹豬骨 我給大家看看，粥 綿綿的，30分鐘 猜不猜得到，這個就是明火白粥的由來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:55.24" id="00:09:55.24" class="lt" onclick="jumptoTime(595, this.id)"><p>CBS emotions，Jason，希望大家明白 不要意外傳播，OK 我先開大火 繼續炒，先頭說 各位朋友問我懂不懂炒粉，這個時候才下，首先第一 我說過很多次，那位朋友應該沒看過我炒菜的影片，所以他不知道我炒菜的要求在哪裡，所以他認為這樣是不對的，但其實不是的，我炒到菜跟粉是剛剛好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:45.51" id="00:10:45.51" class="lt" onclick="jumptoTime(645, this.id)"><p>就不可以有過熟的現象，所以這個時候我一定是跟粉一起炒，如果控制得好 粉怎會爛，這個時候我們就開始調味，一匙鹽 因為我有八隻粉，如果四隻粉就半匙鹽，一匙糖，然後雞粉適量 喜歡加多少隨意，不加都可以，等一等 我先洗手，然後快速拌勻，大家看到嗎 菜是不是剛剛好熟，那位觀眾不明白，其實我還是那句說話。</p></a>
+				<a href="#00:11:43.51" id="00:11:43.51" class="lt" onclick="jumptoTime(703, this.id)"><p>你跟著一起做 你就知道有沒有了，我又不是做Deadmaul，我自己吃的 我沒理由煮垃圾給自己吃的，這個時候就混合好，然後就加蠔油，大概加三至四茶匙，因為我加了八隻粉，如果是四隻粉的話 兩茶匙都多，老抽，然後加少許生抽，然後炒勻，拌勻，炒米粉也好，炒粉也好，最好用筷子，不過因為我熟能生巧和習慣的問題。</p></a>
+				<a href="#00:12:42.98" id="00:12:42.98" class="lt" onclick="jumptoTime(762, this.id)"><p>我就用了鉗，我用鉗的原因已經說過很多次了，因為我這個是西式炒鑊，就是韓式炒鑊，拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:58.42" id="00:12:58.42" class="lt" onclick="jumptoTime(778, this.id)"><p>已經很香了，好，然後這個時候最後放蔥，嘩!大量的蔥，怕你不夠吃，這個時候最後炒出蔥香，這樣就完事了，這個蔥就不用炒得太過厲害，只要炒出你聞到有蔥香就可以了，好，搞定，吃碗麵</p></a>
+				<a href="#00:13:28.22" id="00:13:28.22" class="lt" onclick="jumptoTime(808, this.id)"><p>嘩!好香啊，一個雞蛋加香炒米粉是不是很快脆啊，是不是啊，希望大家明白好吃的東西有時候不需要很多，技巧也不需要太多顧慮，為什麼我經常要一拍過給大家看呢，原因就是因為，這樣大家才看到有沒有的，大家可以留意一下，那個質感是不是很乾身，我炒到很討厭那個麵粉的質感，所以我不喜歡吃什麼，豉椒排骨炒河啊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:14.02" id="00:14:14.02" class="lt" onclick="jumptoTime(854, this.id)"><p>菜園排骨炒河兜亂啊那些，因為濕濕的嘛，OK，因為太大隻了，不是那麼好看，所以我就，弱弱的，我現在就把這個放在一旁，弱弱的，然後其他的就放在一旁，好，那我就開始總結了，我先關掉抽氣扇，你說家廚是不是要有一個很好的時間管理的觀念，大家都看到的，我的粥已經煲好了，煲的期間我就去炒粉，最後就剩下海鮮放進去再煲。</p></a>
+				<a href="#00:15:18.98" id="00:15:18.98" class="lt" onclick="jumptoTime(918, this.id)"><p>就完事了，ok?</p></a>
+				<a href="#00:15:20.98" id="00:15:20.98" class="lt" onclick="jumptoTime(920, this.id)"><p>我現在介紹一下，其實這個炒粉就很簡單，有幾個要點一定要注意，第一，我們要煮粉的時候不能煮太久，通常三分鐘左右，但其實沒有固定時間，因為你用不同品牌的米粉，譬如你用江門牌粉，跟東莞米粉的時間是不一樣的，我今天就用了一種河源米粉，那種品牌我認為是最好的，我講壞也不怕，叫做滿衣，每種粉都不一樣。</p></a>
+				<a href="#00:15:52.98" id="00:15:52.98" class="lt" onclick="jumptoTime(952, this.id)"><p>但有一個效果是共通的，當你的麵餅或者粉餅開始熟的時候，它就會散開，它散開的時候你稍微再搓一搓，這樣就可以了，可以嗎?</p></a>
+				<a href="#00:16:5.98" id="00:16:5.98" class="lt" onclick="jumptoTime(965, this.id)"><p>這個就是煮粉的時候要注意的地方，然後大家會看到我經常先放蛋，而且我還要是整隻蛋放的，為什麼呢?</p></a>
+				<a href="#00:16:19.98" id="00:16:19.98" class="lt" onclick="jumptoTime(979, this.id)"><p>原因就是因為這樣，我沒有完全攪拌好，有部分蛋黃會流出來，它就會變成粉狀，我就要這個效果，再煎，大家才會看到，我不是一攪拌好就放東西，炒飯就是這樣，但炒粉我就不是這樣，要等到它全熟，然後才放米粉，為什麼呢?</p></a>
+				<a href="#00:16:43.98" id="00:16:43.98" class="lt" onclick="jumptoTime(1003, this.id)"><p>這樣蛋香就被米粉吸收了，可以嗎?</p></a>
+				<a href="#00:16:48.98" id="00:16:48.98" class="lt" onclick="jumptoTime(1008, this.id)"><p>第二件事就是，大家會看到的，我經常把菜心放在後面，才炒的，我不是學別人這樣先炒好，大家其實很多時候不明白，為什麼要先炒好和後炒好，如果是先炒好才放在後面，其實就很難炒，理論上成品的控制會更好，但程序上我覺得是繁複了，如果大家對自己控制溫度時間更有信心的話，其實如果加菜心炒粉，炒到半小時加菜心是最好的。</p></a>
+				<a href="#00:17:32.66" id="00:17:32.66" class="lt" onclick="jumptoTime(1052, this.id)"><p>因為炒到差不多的時候，就會剛剛好跟米粉同熟，處於一個最佳口感的狀態，所以大家看到我經常炒粉都會用菜心在後面，但有一個要注意，不是每樣炒粉都是這樣做的，因為有些粉特別亂，譬如上一次我炒粉就做錯了，一下不想起，就是炒河粉，河粉因為很容易斷和很亂，所以我們放生菜心同炒的話，就有機會因為這樣要炒熟菜心。</p></a>
+				<a href="#00:18:11.66" id="00:18:11.66" class="lt" onclick="jumptoTime(1091, this.id)"><p>你經常要翻它，結果令到河粉就會斷，所以在這樣的情況下炒河粉的話，大家可以先炒熟菜心，但是記住炒熟了之後，最後是最後加蔥一起加，否則菜心就會過老，菜心過腍絕對不好吃，我之所以喜歡用菜心炒粉，是因為菜心脆有口感，我現在這個算是齋，三隻雞蛋八隻粉半斤菜心，我這隻菜心選用菜苗，即是小一點的。</p></a>
+				<a href="#00:18:58.66" id="00:18:58.66" class="lt" onclick="jumptoTime(1138, this.id)"><p>如果是大一點的怎麼辦，大一點的話就切大概一手指位，或者半手指位，粗的菜心來計這樣炒都一樣可以，炒的時間分別都不大，至於煮河粉的時候要先上味，這是我的習慣，這樣可以令到米粉更加順和，味道更加好味，第二就是調味的時候要注意，因為之前上了味，所以放味的時候要輕手一點，我炒的，一匙糖、一匙鹽、一匙雞粉，但我用了八隻米粉。</p></a>
+				<a href="#00:19:47.94" id="00:19:47.94" class="lt" onclick="jumptoTime(1187, this.id)"><p>如果大家是用四隻米粉，或者甚至兩隻米粉，四隻米粉就減一半，半匙鹽、半匙糖、半匙雞粉，如果用兩個米粉，一個米粉的份量，就四分之一匙鹽、四分之一匙糖、四分之一匙雞粉，可以嗎?</p></a>
+				<a href="#00:20:4.74" id="00:20:4.74" class="lt" onclick="jumptoTime(1204, this.id)"><p>至於老抽，主要是用來上色，隨意吧，你可以憑感覺去做，但我先前放了兩茶匙，蠔油就放了三、四茶匙，生抽就略略少少，其實主要是蠔油有味，老抽就上色，生抽反而放少一點，沒所謂，主要是令到最後提香，基本上一個炒粉是不是很簡單呢?</p></a>
+				<a href="#00:20:35.34" id="00:20:35.34" class="lt" onclick="jumptoTime(1235, this.id)"><p>是呀!</p></a>
+				<a href="#00:20:38.34" id="00:20:38.34" class="lt" onclick="jumptoTime(1238, this.id)"><p>我又不說那麼多了，今天其實都是一小時十五分鐘有粥有炒粉吃，頂多都不會去到八十分鐘，但如果長了時間的話，主要是因為我要拍片，我要說話，那裡起碼都說了十分鐘，可以嗎?</p></a>
+				<a href="#00:20:54.34" id="00:20:54.34" class="lt" onclick="jumptoTime(1254, this.id)"><p>不阻礙大家了，看了粥沒有?</p></a>
+				<a href="#00:21:0.34" id="00:21:0.34" class="lt" onclick="jumptoTime(1260, this.id)"><p>粥很棒!</p></a>
+				<a href="#00:21:1.34" id="00:21:1.34" class="lt" onclick="jumptoTime(1261, this.id)"><p>各位，就這樣了，拜拜!</p></a>
+</div>
+	</body>
+</html>

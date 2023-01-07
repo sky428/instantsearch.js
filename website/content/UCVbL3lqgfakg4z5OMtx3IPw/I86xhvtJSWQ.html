@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》疫情特餐系列——辣炒牛肉米粉，這是一道『乾炒牛肉米粉』的變奏版，不旦快速而且極度美味，只需要15分鐘就能完成一道專業餐廳級作品，疫情當中也不能虧待自己哦。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'I86xhvtJSWQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》疫情特餐系列——辣炒牛肉米粉，這是一道『乾炒牛肉米粉』的變奏版，不旦快速而且極度美味，只需要15分鐘就能完成一道專業餐廳級作品，疫情當中也不能虧待自己哦。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.06" id="00:00:0.06" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，我是阿火，大家午安，剛剛睡醒不久，肚子餓了，吃什麼好呢，吃個炒米粉好不好，今天呢，我想做個辣炒牛肉，米粉，現在呢，我已經放了一些，米粉下去煮了，還沒到時間，給大家看一下，這個米粉是什麼樣子，這個，大家看到嗎，這個米粉，一餅餅的，我覺得很爽，那煮米粉呢，怎樣煮呢，基本上就是，煮沸了水，然後加鹽糖味，加些味道。</p></a>
+				<a href="#00:00:54.06" id="00:00:54.06" class="lt" onclick="jumptoTime(54, this.id)"><p>然後加少少油，煮出，有大味的米粉，河原米粉，三分鐘就好了，現在差不多了，攪一攪，趁著現在，味道是，中響了，關火，這個呢，我打算一刀不剪，那，看下用多久時間，炒好一夜米粉，就拿些米粉去過一過冷河先，1989EEEE</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:51.20" id="00:01:51.20" class="lt" onclick="jumptoTime(111, this.id)"><p>усл，adays，愛</p></a>
+				<a href="#00:01:45.04" id="00:01:45.04" class="lt" onclick="jumptoTime(105, this.id)"><p>Patreon，ごlicht，Life，Zak，nope，� HERE，ened，ander，scans，gosh，rão，mł</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:47.28" id="00:01:47.28" class="lt" onclick="jumptoTime(107, this.id)"><p>away，asil，Par paradise，trabaj其实 wob lá，arithmetic，effort，米粉稍微過冷河，然後燉乾，盡量水不要有，如果有水的話炒的時候會炒得不好看，倒出水後，現在繼續燒鑊，今日講的是辣炒牛肉米粉，有甚麼呢?已經拌好牛肉，大家都知，我雪櫃內有十磅八磅牛肉，我喜歡何時開都可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:38.07" id="00:02:38.07" class="lt" onclick="jumptoTime(158, this.id)"><p>通常我一開，大概一斤多，分兩盤，分兩次食，這裡炒米粉不用用很多，除了牛肉外，還有蔥，還有我最喜愛經常講的均衡飲食椰菜，就是這麼多，沒有了，至於調味方面，就是生抽老抽少許蠔油，辣炒當然要用辣醬，我就用辣椒蝦米，現在鑊燒得差不多了，我先放牛肉煎，這個時候我當是走油，可以嗎?當走油，所以全程大火。</p></a>
+				<a href="#00:03:45.31" id="00:03:45.31" class="lt" onclick="jumptoTime(225, this.id)"><p>牛肉不用太多，少許便可以，牛肉最重要是煎至表面有金黃色，不用全熟，可以嗎?</p></a>
+				<a href="#00:04:9.38" id="00:04:9.38" class="lt" onclick="jumptoTime(249, this.id)"><p>所以很快，一分鐘都不用，一會兒便可以，現在要起鑊了，否則牛肉會過腦，我不關小火，我給大家看看牛肉，現在這邊是否有些生的，背面是否有些金黃色，這樣便夠了，我先前介紹過程中，少說了一種材料，就是雞蛋，你說我這個炒米粉營養夠不夠豐富，照用原先的鑊，我先把雞蛋放進去，想更好味，便放豬油，你看看豬油，七度之下瀝成這樣。</p></a>
+				<a href="#00:05:9.38" id="00:05:9.38" class="lt" onclick="jumptoTime(309, this.id)"><p>現在七度，可以放多一點，為甚麼呢?</p></a>
+				<a href="#00:05:18.38" id="00:05:18.38" class="lt" onclick="jumptoTime(318, this.id)"><p>因為雞蛋會吸油，稍為燒一下鑊，好，這個時候差不多了，見煙了，然後打兩隻雞蛋下去，我用了四隻米粉，這個其實已經是兩個人的份量，打好蛋之後，攪勻雞蛋，煎至八、九成熟就可以了，接著可以放米粉進去，因為這次我的米粉比較少，上次用了6隻，這次我只用了4隻，所以比較容易攪拌，我就不需要用筷子了，好，這個時候我們就放少許辣椒醬或者辣椒油進去。</p></a>
+				<a href="#00:06:55.29" id="00:06:55.29" class="lt" onclick="jumptoTime(415, this.id)"><p>放多少就視乎大家喜歡了，OK，好了，一匙就很辣了，辣炒其實不需要放很多，最重要是有那種味道，明白嗎，在炒的過程當中，大家要養它，養散粉，不然一會兒就會黏在一起，這個時候就將炒好的牛肉放進去，然後將菜放進去，這個時候大家看到我還未調味嗎，調味不用急，太早調味，大多數炒菜太早調味，就會令整體的味道。</p></a>
+				<a href="#00:07:51.29" id="00:07:51.29" class="lt" onclick="jumptoTime(471, this.id)"><p>和因為肉和菜會更加出水，令炒粉不夠乾爽，明白嗎，現在看到我這樣放牛肉下去炒，再放菜進去，剛剛好兩樣東西同時熟，OK，所以為什麼我先前走油的時候，最重要是辣香了牛肉的表面，但我不是要煮熟它，這個過程，辣香牛肉表面的過程，那個動作就叫做煤辣反應，OK，亦都是令到炒粉麵炒菜更加香口的原因，現在可以了。</p></a>
+				<a href="#00:08:34.29" id="00:08:34.29" class="lt" onclick="jumptoTime(514, this.id)"><p>可以調味了，調味方面不用多，因為煎頭我已經加了味，所以是半茶匙的鹽，一茶匙糖，加少少雞粉，快炒，好，跟住完之後生抽啦，跟住完之後老抽，生抽就大概放一茶匙到啦，ok，老抽上色就大概半茶匙到啦，跟住完之後少少蠔油啦，蠔油大概一茶匙到，ok</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:8.03" id="00:10:8.03" class="lt" onclick="jumptoTime(608, this.id)"><p>好，跟住完之後生抽啦，好了，這個時候差不多可以了，跟完之後放蔥下去，蔥怎樣去判斷它是否煮好呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:27.43" id="00:10:27.43" class="lt" onclick="jumptoTime(627, this.id)"><p>有蔥香，即是你炒到有蔥香出來就可以了，不用全熟的，OK，嗯，好了，可以了，搞定，這個辣炒牛肉米粉就完成了，類似乾炒牛肉米粉，這次我先上碟，等我上碟擺好陣再同大家做一個總結，是不是炒得很乾淨?</p></a>
+				<a href="#00:11:27.67" id="00:11:27.67" class="lt" onclick="jumptoTime(687, this.id)"><p>好，搞掂，好啦，而家用咗幾多分鐘呀話事話，用咗11分鐘，差唔多，OK，而家呢就做一個總結啦，咁呢就，先頭呢，即係而家呢我其實呢個咁嘅炒粉呢就類似係乾炒牛肉米粉嘅形式，呢個第一點啦，咁第二點呢就係呢啲米粉呢，其實呢如果係大量製作嗰啲職業廚房呢佢用滾水浸五分鐘就唔係煮嘅，咁但係我哋屋企呢廚房呢係可以用煮嘅方式。</p></a>
+				<a href="#00:12:9.67" id="00:12:9.67" class="lt" onclick="jumptoTime(729, this.id)"><p>不過呢個時間就降為係三分鐘啦，OK呢個係第一啦，咁第二樣嘢呢就牛肉呢記住喎，你走友即係煎嘅時候呢煎到佢八九成熟得喇喎，唔使煎到全熟喎OK，咁最主要呢就令佢有個回落反應呢就香口啲啦，跟住然之後呢，咁呀調味嗰方面就好簡單嘅啫，鹽糖味豉油老抽蠔油搞掂，咁大家見到我呢就好香好輕手嘅，咁同埋呢大家冇發覺點解我唔係落洋蔥芽菜而係落椰菜呢。</p></a>
+				<a href="#00:12:45.67" id="00:12:45.67" class="lt" onclick="jumptoTime(765, this.id)"><p>因為而家疫情當中呀嘛，我屋企嘅雪櫃有大量嘅椰菜呀嘛OK，咁同埋呢我加雞蛋落去炒呢，咁亦都會令到整體嗰個香氣呢就會提升嘅得唔得，咁呢個我總共其實呢如果我唔係拍片嘅話都係十分鐘到就有得食喇，快唔快手呀快手呢快過你煮一個早餐啦係咪呀，OK跟住加杯橙汁，咁咪一個早餐啦咁我呢個呢就我第一餐嚟嘅OK。</p></a>
+				<a href="#00:13:14.67" id="00:13:14.67" class="lt" onclick="jumptoTime(794, this.id)"><p>咁我食嘢啦炒完就多謝大家拜拜。</p></a>
+</div>
+	</body>
+</html>

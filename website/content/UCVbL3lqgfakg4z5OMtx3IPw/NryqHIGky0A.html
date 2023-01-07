@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜乾撈刀削麵｜高能量早午晚餐，吃著就是舒服｜香港人愛吃粉麵，其實可以有更多選擇，試一下簡單的外省麵食吧。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NryqHIGky0A',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜乾撈刀削麵｜高能量早午晚餐，吃著就是舒服｜香港人愛吃粉麵，其實可以有更多選擇，試一下簡單的外省麵食吧。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.06" id="00:00:0.06" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello， 大家晚上好，煮了很多餐煲仔飯，大家有點悶， 是不是?</p></a>
+				<a href="#00:00:7.06" id="00:00:7.06" class="lt" onclick="jumptoTime(7, this.id)"><p>那…，吃點其他東西吧，煮飯呢， 天氣又冷了，又不想動了，那有什麼好吃呢?</p></a>
+				<a href="#00:00:18.06" id="00:00:18.06" class="lt" onclick="jumptoTime(18, this.id)"><p>今天我跟大家分享吃麵，吃麵?吃什麼麵?</p></a>
+				<a href="#00:00:23.06" id="00:00:23.06" class="lt" onclick="jumptoTime(23, this.id)"><p>那…，出爐一定是做過的，其他我們香港經常做的粉麵，我也經常做的， 是不是?</p></a>
+				<a href="#00:00:30.06" id="00:00:30.06" class="lt" onclick="jumptoTime(30, this.id)"><p>今天我跟大家分享一個簡單快捷，但不是屬於廣東菜、粵菜，即是我們吃慣的麵食，那是什麼呢?</p></a>
+				<a href="#00:00:40.06" id="00:00:40.06" class="lt" onclick="jumptoTime(40, this.id)"><p>跟大家介紹一下，這個是台灣的刀削麵，刀削麵…其實刀削麵，大家都明白， 最出名的當然是山西，因為本來是源自山西的，但為什麼會是台灣出的刀削麵呢?</p></a>
+				<a href="#00:00:59.06" id="00:00:59.06" class="lt" onclick="jumptoTime(59, this.id)"><p>因為歷史的原因，當年有幾百萬的內地的中國人，就跑去台灣， 跑遍台灣，結果就什麼人都有，所以其實台灣的川菜，又自成一格，山西菜自然也不少，京菜也自然不少， 是不是?</p></a>
+				<a href="#00:01:20.06" id="00:01:20.06" class="lt" onclick="jumptoTime(80, this.id)"><p>所以刀削麵也是台灣人的，即是即食的刀削麵，這些一包包的，不是很貴的，我忘記了這包是二十多元還是十九元，那現在已經煲滾了， 是不是?</p></a>
+				<a href="#00:01:39.06" id="00:01:39.06" class="lt" onclick="jumptoTime(99, this.id)"><p>水煲滾了，除了刀削麵之外，今天就很簡單的，首先切蔥絲、薑絲，半料就這麼多， 沒了，然後這個叫做麵條紅油，其實是麻辣油，等一下就拿來拌勻，然後這個是醬油、生抽，這牌子的醬油是深色一點，味道真的值那個價錢，它的價錢就和日本的萬字醬油是一樣的，然後我想拿甚麼呢?</p></a>
+				<a href="#00:02:30.54" id="00:02:30.54" class="lt" onclick="jumptoTime(150, this.id)"><p>原來差不多沒有陳醋了，吃山西菜當然要用陳醋，少許就可以了，如果大家不喜歡吃陳醋的話，可以完全不加，我覺得都沒有問題，當然你吃當地的菜，就像當地的味道，然後我們就開始煮了，水已經煮沸了，首先煮沸，又不見了剪刀，真是豈有此理，地方細，東西放到處都是，煮沸時要記得大阪麵一定要煮沸，不然會黏底。</p></a>
+				<a href="#00:03:23.54" id="00:03:23.54" class="lt" onclick="jumptoTime(203, this.id)"><p>這個時候我們就先和水加少許味，少許鹽，油，基本上加完這個都夠了，但如果大家習慣了城市的味道，就加少許雞粉，一行，好了，三隻，四隻，五隻，六隻，總是吃勁少少，不過都沒有辦法了，家中有時未必計得那麼準，這個時候我們就攪勻了，這個麵條真的很簡單，我介紹給大家，不要只吃廣東的東西，其他省份的傳統食物都幾好味，這個時候我們就蓋上蓋子。</p></a>
+				<a href="#00:04:48.54" id="00:04:48.54" class="lt" onclick="jumptoTime(288, this.id)"><p>最少要煮七分鐘，我們等七分鐘看看煲的效果如何，好，不理它那麼多了，等一會兒，七分鐘後我們再看看結果如何，基本上後面都很簡單，這個麵條很簡單，也很快速，好了，七分鐘響了，我們看看效果如何，因為煮麵，我忘記了，它一翻滾，我們就要揭起蓋子，否則水會流到四周，檢查一下，還差一點點，真的還差一點點。</p></a>
+				<a href="#00:05:37.32" id="00:05:37.32" class="lt" onclick="jumptoTime(337, this.id)"><p>可以看到，十分鐘，通常這些十分鐘都比較保險，我再煮多三分鐘，三分鐘後我們再看看結果，好了，大家，已經響了，這個時候我們就放薑絲和蔥絲，這個時候還未熄火，好了，這樣就完成了，薑絲和蔥絲放下去後，略略攪拌一下，讓它出味就OK了，這個時候我們就將這個麵，先關掉抽氣，不要吵著大家，用一個撈皮，將水瀝乾。</p></a>
+				<a href="#00:06:52.32" id="00:06:52.32" class="lt" onclick="jumptoTime(412, this.id)"><p>這隻碟子比那邊大，怕會掉下來，大家會發覺，我剛才就這樣檢查了一下，我認為麵不夠新，為什麼呢?其實很簡單，如果是夠新的麵，它接近半透明狀態，中間比較大面積，有些啞色，即是未夠新，因為西北的麵吃，它是有少少焦頭才好吃的，如果就這樣的話，太軟也不行，但鮮頭的狀況就太硬了，即是說，就算沒有指示。</p></a>
+				<a href="#00:07:52.76" id="00:07:52.76" class="lt" onclick="jumptoTime(472, this.id)"><p>我們都要煮十分鐘，這個時候弄好了，然後怎樣呢?</p></a>
+				<a href="#00:08:5.76" id="00:08:5.76" class="lt" onclick="jumptoTime(485, this.id)"><p>這個時候我們就要開始放材料，這個麵條紅油，我自己覺得辣度是不足的，如果喜歡吃辣的，就覺得不夠過癮，所以就要放多一點，連油帶渣，放兩湯匙，這樣就不要浪費了，然後呢，我們就放少許的豬油，這麼多油的嗎?</p></a>
+				<a href="#00:08:57.76" id="00:08:57.76" class="lt" onclick="jumptoTime(537, this.id)"><p>它本身很吸油的，然後我們就可以放生抽，生抽大概是兩湯匙，然後陳醋，陳醋大概是一湯匙，然後拌勻，這個麵本身帶少少酸味，雖然我加了很多麵條紅油，但其實它是不辣的，大家放心吧，油量必需要足夠，我這裏加起來有四五茶匙，因為我份量比較多，攪拌均勻後便完成，我已經流口水了，我看看夠不夠鹹，等著呢。</p></a>
+				<a href="#00:10:25.43" id="00:10:25.43" class="lt" onclick="jumptoTime(625, this.id)"><p>不客氣了，我好想吃意大利粉，很難夾，我想夾少一點也不行，因為它們是很軟的，不容易斷，對了，如果大家想它鹹一點，就多放一點生抽，如果想它不太鹹，就少放生抽，我大概放兩至三茶匙，然後陳醋就放一茶匙就夠了，記住不用多，這個麵食是不是很簡單，希望大家喜歡，不要經常吃死，出錢一點，其實大家看到的，我那個時間。</p></a>
+				<a href="#00:11:22.43" id="00:11:22.43" class="lt" onclick="jumptoTime(682, this.id)"><p>那個十分鐘，加上這個撈的，多久呢?對不對?</p></a>
+				<a href="#00:11:28.43" id="00:11:28.43" class="lt" onclick="jumptoTime(688, this.id)"><p>十一、二分鐘夠了嗎?</p></a>
+				<a href="#00:11:30.43" id="00:11:30.43" class="lt" onclick="jumptoTime(690, this.id)"><p>我給你盡力，你的手腳會比較慢，十五分鐘好不好?</p></a>
+				<a href="#00:11:36.43" id="00:11:36.43" class="lt" onclick="jumptoTime(696, this.id)"><p>十五分鐘就可以吃了，這個很飽肚的，這些麵，北方是主食來的，所以是很頂肚的，所以大家放心，不用怕吃不飽，至於你說有什麼菜，隨便煎隻蛋，煮些菜，就能吃一餐了，是不是很簡單?</p></a>
+				<a href="#00:11:57.43" id="00:11:57.43" class="lt" onclick="jumptoTime(717, this.id)"><p>對了，我希望大家可以放開懷抱，不要有地域的成見，放開懷抱的話，你會試到更多好吃的東西，這個真的很好吃，這個撈麵絕對不會比我做過的，加辣撈米粉，或者我前幾天做過的桂林撈米粉，這些絕對不會比我做的差，大家可以試一下，好不好?</p></a>
+				<a href="#00:12:26.43" id="00:12:26.43" class="lt" onclick="jumptoTime(746, this.id)"><p>多謝大家收看，希望有多一個新口味，不要整天吃香港的東西，或者吃廣東的東西，好不好?</p></a>
+				<a href="#00:12:38.43" id="00:12:38.43" class="lt" onclick="jumptoTime(758, this.id)"><p>這個我再說一次，我現在在回金，回金呢，我雖然下了一層醋，但是我可以告訴你，我現在口裡一點都不酸，是很香的麵粉味，還有我現在呢，是一點都不辣的，是真的一點都不辣的，誠意推薦給大家，簡單、快捷、易做，還有支持一下台灣產業，好，多謝大家收看，拜拜，去吃東西了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豉油皇炒麵，以前電視的早餐總是這道炒麵，學生時也總愛吃這種炒麵，做法非常簡單，雖然自認這次炒得不太好，但竟然也非常美味，究竟我做了甚麼才這麼好味的呢？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '80HkMRY6YIw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豉油皇炒麵，以前電視的早餐總是這道炒麵，學生時也總愛吃這種炒麵，做法非常簡單，雖然自認這次炒得不太好，但竟然也非常美味，究竟我做了甚麼才這麼好味的呢？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天下午，下暴雨，現在三時，好像七時就要天黑了。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>今日又對著鑊，想和大家分享甚麼菜式呢，早前我炒了很多炒粉麵，有觀眾想問，Liu，不如你分享豉油皇炒麵怎樣炒吧，今日想和大家分享豉油皇炒麵，先煲滾水，然後要加味，這個程序和很多專業廚房不一樣，先加鹽，再加味，再加雞粉，這樣炒粉麵就會做得比較好，大家應該見識過我很多炒粉都是這樣過沸水的，現在我煮生麵餅，在街市，豆腐店或有賣豆腐的地方，通常都有賣麵的，。</p></a>
+				<a href="#00:01:29.00" id="00:01:29.00" class="lt" onclick="jumptoTime(89, this.id)"><p>我講過想要炒麵，一餅就夠一個人食，有餘的，現在我三個人食，兩餅，煮麵很簡單，煮熟，然後拿起，煮散，煮一煮就可以了，其他不需要太大動作，隨便他吧，然後介紹材料，豉油黃炒麵很簡單，最重要有蔥，芽菜或銀芽，這裡很便宜，五元一隻，蔥三元一隻，基本上就是這樣，豉油黃炒麵不需要太複雜的材料，有些人喜歡加薑，一般都可以，洋蔥，我這個炒法沒有加洋蔥，不過依然很好味，視乎大家喜歡。</p></a>
+				<a href="#00:02:40.47" id="00:02:40.47" class="lt" onclick="jumptoTime(160, this.id)"><p>其實洋蔥含有豐富的植物蛋白和維生素，加洋蔥也很好味，我建議大家，我懶惰而已，建議大家也可以加洋蔥，不過正式在外面賣的豉油黃炒麵，通常都是蔥和芽菜，其實都足夠了，現在水滾了，我們把麵炒散，大家都知道我盡量一剔過，現在麵已經散了，正常就可以拿起，但我想它入味一點，不要太乾，所以這個時候我會稍為煮一煮。</p></a>
+				<a href="#00:03:33.47" id="00:03:33.47" class="lt" onclick="jumptoTime(213, this.id)"><p>這個時候我們首先，然後可以熄火了，我們要炒個篩，我就不給大家看，我過冷河，其實炒麵都不需要怎樣過冷河，這個時候是一個重要的程序，通常職業廚房有一個很大的打火台，這個時候就會把所有麵攤開，讓它涼快，最主要就是讓它乾，但是我們家廚來說，哪裡有這麼多地方讓我們攤開，難道在飯桌上攤到處都是嗎。</p></a>
+				<a href="#00:04:27.47" id="00:04:27.47" class="lt" onclick="jumptoTime(267, this.id)"><p>我們通常是要吃的時候才煮的，不會像職業廚房一樣，每天都知道要有豉油黃炒麵，它就先做好，變成它會乾身很多，但是如果我們家廚的話，我們怎樣做呢，這個時候，又是我們這個，這個廚子出場的時候，我們稍微這樣翻一翻它，讓水流下來，這個時候大家看到我的不鏽鋼，這個篩子比較幼細一點，隔水的效果會比較好。</p></a>
+				<a href="#00:05:15.80" id="00:05:15.80" class="lt" onclick="jumptoTime(315, this.id)"><p>稍微晃一晃它，抹一抹它，這個程序我們就代替了職業廚房，把它散開，然後讓它自然乾，隨便它，這個時候我們就差不多了，這個時候就，等一下因為地方少，我現在在量度，擺些東西，就這樣，不要理它，這個時候這個水，我們要抹乾它，OK，抹乾之後我們開火了，所有的程序，我們家廚炒東西的程序，記得燒鍋是一個很重要的過程，因為我不斷強調。</p></a>
+				<a href="#00:06:11.80" id="00:06:11.80" class="lt" onclick="jumptoTime(371, this.id)"><p>我們之所以能夠追得到，職業廚房的味道，其中一個重要的條件，就是溫度，因為職業廚房的爐頭的溫度，是很高的，比我們家廚的爐頭高一倍，所以在這樣的情況下，我們燒鍋是一個很重要的過程，大家看到了，我大火燒鍋，大火燒鍋，見煙落油，然後再見煙，好了，豉油和炒麵調味都很簡單，我這裡有兩隻麵，所以有兩茶匙的蠔油。</p></a>
+				<a href="#00:06:51.80" id="00:06:51.80" class="lt" onclick="jumptoTime(411, this.id)"><p>兩茶匙的生抽，一茶匙的老抽，然後再放少許糖，調味，這個時候，大家想惹味一點，可以加雞粉，但大家的選擇也可以不加，OK，這個時候燒鍋，炒麵，記住，為什麼我經常自己做豬油，因為其實炒菜炒麵，我們廣東人之所以炒菜炒麵那麼好吃，其中一個主要的原因是什麼，因為我們會放豬油，同樣道理 大家都知道我做過撈麵的 是不是，所以在這個時候大家也知道。</p></a>
+				<a href="#00:07:38.25" id="00:07:38.25" class="lt" onclick="jumptoTime(458, this.id)"><p>我撈麵是放豬油，廣東的粉麵之所以好吃就是因為有豬油，這個時候我們就放一放油，這個時候我們關小火 為什麼，接下來就是豉油王炒麵一個很重要的程序，煎麵，不用理它，隨它 我們將麵放勻就可以了，這個時候不要理它 千萬不要手多，OK 記住，隨它吧 隨它煎一下，讓它煎到其中一面是脆脆的，這個時候我們再開大火。</p></a>
+				<a href="#00:08:57.74" id="00:08:57.74" class="lt" onclick="jumptoTime(537, this.id)"><p>然後我們就可以加普通的油，大家記住，會看到一樣東西，就是說 Leo你這樣加都會有多少油，我幾時都說的，每一樣菜式都會有，現在開大火了，加多少油下去，每一樣菜式都會有它適當的油份，你不可以一句說話，不過要少油少鹽，其實少油少鹽是對的，不過要相對來說，可以盡量的話，用得少油就少油，但是你不可以因為覺得它是。</p></a>
+				<a href="#00:09:37.74" id="00:09:37.74" class="lt" onclick="jumptoTime(577, this.id)"><p>現在開始底部有少許脆了，所以我就很容易，比先頭就把它弄得方便很多，這個程序就是，豉油王炒麵炒得好不好吃，一個很重要的過程，大家看到嗎，這面有部分已經是金黃色，這個過程我們不可以什麼呢，我們不可以馬虎的，一定要用時間去燉出來，因為我們的鍋不夠，廚房的爐頭這麼猛火這麼高溫，所以這個時候我們必須要。</p></a>
+				<a href="#00:10:25.94" id="00:10:25.94" class="lt" onclick="jumptoTime(625, this.id)"><p>要慢慢去燉它出來，大家看到的，我近鏡給大家看一下，看到部分有些面已經是金黃色，是呀，我們就要做到這個效果，即是有少許焦焦的，這樣就最好了，這個時候我們再加多少油，這個時候就應該夠油了，就不要再加油了，這個時候我們就可以，可以加芽菜了，大家可能有個疑問，你炒到面這麼乾，吃下去就很難吃，芽菜會出水的。</p></a>
+				<a href="#00:11:15.94" id="00:11:15.94" class="lt" onclick="jumptoTime(675, this.id)"><p>要拌勻它嘛，芽菜會出水，等一會兒我調味那些醬汁都是水來的嘛，OK，好，這個時候我們就把醬汁倒進去，現在醬汁開始有焦香感，有應有的焦糖化氣味出來，這個麵等一下就很好吃了，如果大家覺得麵不夠深色的話，可以加多一點老抽，繼續炒，好，這個時候我們就可以放蔥了，最後階段，這個時候我們可以熄火了，然後就放最後的蔥。</p></a>
+				<a href="#00:13:31.67" id="00:13:31.67" class="lt" onclick="jumptoTime(811, this.id)"><p>稍微等它片刻可以繼續撈的，即是當它撈麵那樣，好，整個豉油王炒麵就炒完了，其實很簡單很快就煮好了，稍等一會兒，我等會兒做個總結，好，搞掂，其實這個豉油皇炒麵就不需要很長的時間，先close up，然後我再慢慢解釋，豉油皇炒麵就沒有大家想像中那麼困難，但如果你想它炒得好吃的話，就有幾個要點要注意，第一，我們一定要先和麵煮熟，對不對。</p></a>
+				<a href="#00:14:59.43" id="00:14:59.43" class="lt" onclick="jumptoTime(899, this.id)"><p>第二，當我們要和麵煮熟的時候，我們就要上味，為什麼呢?因為炒麵的時候除了醬汁之外，就沒有調味，這樣就可以令到麵上味均勻一點，對不對，要炒的時候，一定要煎過麵才開始加料去炒，為什麼要這樣做呢?其實豉油皇炒麵之所以好吃和吸引人，就是因為它碰到鑊氣的焦香感，如果沒有那種焦香感的話，那就浪費了，對不對，所以在這樣的情況下，我們要做什麼呢?</p></a>
+				<a href="#00:15:49.43" id="00:15:49.43" class="lt" onclick="jumptoTime(949, this.id)"><p>燒紅鑊，記住，大火燒鑊，見煙落油，然後再見煙，我們才放麵進去煎，煎到差不多的時候，大家會見到麵是有點焦香，然後就反轉麵，再煎一煎，然後我們才開始放芽菜，醬汁下去炒，這樣炒起來的豉油皇炒麵就會香口很多，就會吃到與眾不同的那種香味，對不對，最後調好味道後，調味很簡單，蠔油、老抽、生抽、加糖就沒有了。</p></a>
+				<a href="#00:16:40.43" id="00:16:40.43" class="lt" onclick="jumptoTime(1000, this.id)"><p>如果大家想更惹味，就加少少雞粉，炒好後，最後加蔥，加蔥的部份只需要炒出蔥香就可以，不需要炒到它很熟，記住，醬油王炒麵就完成了，是不是很簡單?</p></a>
+				<a href="#00:17:5.96" id="00:17:5.96" class="lt" onclick="jumptoTime(1025, this.id)"><p>是的，記住要用麵煎一煎它，如果大家看過我以前炒粉，無論是炒腸粉、炒河粉、炒麵，即是現在炒麵，之前炒過公仔麵，炒米粉也好，我都一定煎一煎它，為甚麼呢?</p></a>
+				<a href="#00:17:26.80" id="00:17:26.80" class="lt" onclick="jumptoTime(1046, this.id)"><p>我就是要用高溫燒一燒它，讓它有些焦香感，這就是梅納反應加焦糖化，你告訴我，這粉好不好吃?</p></a>
+				<a href="#00:17:38.64" id="00:17:38.64" class="lt" onclick="jumptoTime(1058, this.id)"><p>或者這個醬油王炒麵好不好吃?</p></a>
+				<a href="#00:17:40.76" id="00:17:40.76" class="lt" onclick="jumptoTime(1060, this.id)"><p>大家不用擔心麵會否乾，當然不會，因為芽菜會出水，醬汁是有水的，最後再炒它就可以了，好嗎?</p></a>
+				<a href="#00:17:57.40" id="00:17:57.40" class="lt" onclick="jumptoTime(1077, this.id)"><p>基本上就是這樣，這就是我的下午茶，很餓嗎?</p></a>
+				<a href="#00:18:3.68" id="00:18:3.68" class="lt" onclick="jumptoTime(1083, this.id)"><p>不說了，希望大家喜歡這個炒法，多謝大家!</p></a>
+				<a href="#00:18:8.08" id="00:18:8.08" class="lt" onclick="jumptoTime(1088, this.id)"><p>拜拜!</p></a>
+</div>
+	</body>
+</html>

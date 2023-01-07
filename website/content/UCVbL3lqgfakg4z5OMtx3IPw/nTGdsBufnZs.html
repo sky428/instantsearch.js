@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——生炒牛肉飯(家廚版)，只要適當組合，味道不輸專業餐廳，當中一些炒飯小技巧不要錯過哦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nTGdsBufnZs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——生炒牛肉飯(家廚版)，只要適當組合，味道不輸專業餐廳，當中一些炒飯小技巧不要錯過哦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.22" id="00:00:0.22" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，我是阿五，今天我想和大家分享一個餐廳常常有的炒飯，生炒牛肉飯，為什麼今天會想起做這個呢?</p></a>
+				<a href="#00:00:14.22" id="00:00:14.22" class="lt" onclick="jumptoTime(14, this.id)"><p>第一是因為是下午，第二是因為之前我醃了一個炸菜牛肉碎，吃不完，所以這次就留著吃，除了牛肉碎之外，三隻雞蛋，然後，嘩!好光，兩至三碗白飯，然後一樣，我最喜歡，家廚最多是菜心，拿菜心來炒飯，其實可以的，不要局限自己的創意，以家廚來說，有些菜是跟不上餐廳的，另外有很多蔥，就是這麼簡單，我們要怎樣做呢?</p></a>
+				<a href="#00:01:9.97" id="00:01:9.97" class="lt" onclick="jumptoTime(69, this.id)"><p>其實我想先說一下，現在先燒鑊，然後我再說一下關於牛肉的問題，牛肉呢，其實生炒牛肉飯呢，現在我已經用了，我已經拌好肉碎了，是不是?</p></a>
+				<a href="#00:01:24.07" id="00:01:24.07" class="lt" onclick="jumptoTime(84, this.id)"><p>如果大家想，不是吃到肉碎那麼碎的話，其實就可以拌牛肉片，然後再切牛肉粒，小小粒的出來，跟餐廳的差不多，OK，今天我依然是，依然是用這個，懶人大法，我們家廚最簡單的，不要弄得那麼複雜，那個炒飯，OK，先煎蛋，然後我們再放飯炒，但是呢，因為生炒牛肉飯，我們必須要先把牛肉煮熟，所以是先煎牛肉，但是也不要緊的。</p></a>
+				<a href="#00:02:12.67" id="00:02:12.67" class="lt" onclick="jumptoTime(132, this.id)"><p>先煎牛肉，我們也是照樣一切，不用洗鑊，放少許油，看到煙，燒了鑊之後看到煙，然後放少許油，然後等一等，不要那麼快放牛肉，記住，如果少了這個步驟的話，你炒甚麼煎甚麼，你都會燒焦的，即是都會黏底的，OK，看到它出煙了，出煙的時候，我們就把牛肉放下去煎，一樣，永遠都是我說的那樣東西，一放下去，不要那麼手多。</p></a>
+				<a href="#00:02:54.03" id="00:02:54.03" class="lt" onclick="jumptoTime(174, this.id)"><p>不要鏟起它，讓它表面已經煎香了一會兒，才會動它，現在我全程是大火的，就不單單只是煎那麼簡單，我現在就當是走油，為甚麼要用這個方法呢，因為這樣就可以令它表面金香，然後內裡依然是嫩滑的，這是甚麼呢，梅納反應，OK，好，這樣就行了，大家看，我不動它，跟大家說話一會兒，是不是很快就脆了，沒有黏底的。</p></a>
+				<a href="#00:03:34.67" id="00:03:34.67" class="lt" onclick="jumptoTime(214, this.id)"><p>OK，大家行不行，記住，再反轉底，等一等，先不要動它，然後就可以攪散它，記住，無論走油也好，無論煎也好，一落鍋那一刻，不要手動動它，這個時候，我們就可以動它，而且還有一樣東西，大家有沒有發覺，我們很多時候，家廚說的，很多時候煎豬肉、牛肉、肉碎，有沒有發覺特別多水，很容易出水，為什麼?因為你太快動它。</p></a>
+				<a href="#00:04:18.64" id="00:04:18.64" class="lt" onclick="jumptoTime(258, this.id)"><p>生粉未凝結、未焦香之前，你動它，它變成怎樣?你一攪它，它就甩掉，一甩掉，我講過很多次，一甩掉生粉，肉就沒有生粉保護，很容易出水，一出水，肉怎可能會滑，大家明不明白?所以千萬不要怕煎焦，不要經常想著，糟了，我要快點動，怕著焦，千萬不要這樣想，你這樣想，越煮越糊，OK?</p></a>
+				<a href="#00:04:50.64" id="00:04:50.64" class="lt" onclick="jumptoTime(290, this.id)"><p>大家看到的，我是不是很瀟灑?</p></a>
+				<a href="#00:04:53.64" id="00:04:53.64" class="lt" onclick="jumptoTime(293, this.id)"><p>我現在和大家講話的過程中，我不是很理會它，大家看不看到鍋子沒有出水，為什麼?因為我這樣的方式，可以令到那些生粉在高溫的情況下，有效凝結，即是變成焦香的表面，然後反而這樣還可以鎖住肉汁，但如果你太快攪它，生粉一甩掉，肉汁就逼出來，然後你越炒越濕，炒多久都是這樣，OK?</p></a>
+				<a href="#00:05:22.64" id="00:05:22.64" class="lt" onclick="jumptoTime(322, this.id)"><p>記住不要手多，好，說明生炒是肉飯，這個時候炒到大約八成熟，我們就要離鑊了，我給大家看看，我炒完牛肉有沒有水，記住，不要手多，一定要等一等，稍為給一點耐性，等一等，然後才去攪散它，這樣肉汁就會鎖住，就不會出水，但如果你越快攪它，你越是手多的話，水就會缺乏生粉的保護層，就會出水，一出水，肉汁就會老，炒出來的東西就會水汪汪。</p></a>
+				<a href="#00:06:18.57" id="00:06:18.57" class="lt" onclick="jumptoTime(378, this.id)"><p>鎖不住肉汁的話，你怎可能做到外脆內嫩呢，又惹味又嫩滑呢，OK?</p></a>
+				<a href="#00:06:26.57" id="00:06:26.57" class="lt" onclick="jumptoTime(386, this.id)"><p>大家記住，現在燒鑊了，加一點豬油，炒飯加一點豬油，當然好，這個時候，我們就炒蛋了，有時候做的東西不需要做得太複雜，但該複雜的都要複雜，這個時候快速攪散蛋，在鑊裡拌蛋，等它半生熟的時候，馬上加飯，將雞蛋翻面，令有部份雞蛋黏著蛋漿，下油的標準是甚麼呢?</p></a>
+				<a href="#00:07:22.00" id="00:07:22.00" class="lt" onclick="jumptoTime(442, this.id)"><p>其實要看份量，就說沒有標準，但下油時要預計菜會吸油，記住，所以當下油要考慮，不只是炒飯到底行不行，而是要考慮接下來有甚麼材料會吸油，就下多少油，標準食材的食用油量，然後下鹽，調味和飯，大約三分二茶匙，糖可以多加一點，一茶匙都可以，因為香港人口味偏甜，然後加少許雞粉，多與少就適隨大家口味，不加都可以，個人喜好。</p></a>
+				<a href="#00:08:35.00" id="00:08:35.00" class="lt" onclick="jumptoTime(515, this.id)"><p>炒勻，雖然我用夾，但我都要做一個動作，要搓飯，令飯打碎，大家看到大概有一半的飯是黏著蛋漿的，所以有一半是黃金飯，這個就是我們家廚的懶人方法，OK，好，現在放牛肉了，然後再放菜，再放一些菜，再說一下，牛肉就沒有一定要用肉碎、肉片、肉粒，大家適隨尊便，通常都是我自己醃多了牛肉的時候，我就會用來炒生炒牛肉飯。</p></a>
+				<a href="#00:09:46.25" id="00:09:46.25" class="lt" onclick="jumptoTime(586, this.id)"><p>OK，至於放多少菜，放什麼，放什麼菜就大家喜歡，還有當時雪櫃有什麼，這個時候要注意，大家看到我很早放菜嗎，是的，因為菜心嘛，但如果大家是放生菜的話，千萬不要這個時候放，是最後才放，為什麼，生菜快熟會出水，會出更多的水，OK，菜粒就不可以切得太大粒，OK，等一下我給大家看一個近鏡，為什麼要不要切太大粒。</p></a>
+				<a href="#00:10:24.25" id="00:10:24.25" class="lt" onclick="jumptoTime(624, this.id)"><p>因為要讓它快點熟，這個時候我們要放蔥，很快的，不要想著菜心難熟，不是的，很快熟的，這個時候，很香的蔥香，然後，最後，大概放兩茶匙生抽，哇!好香啊!</p></a>
+				<a href="#00:10:50.37" id="00:10:50.37" class="lt" onclick="jumptoTime(650, this.id)"><p>豉油香味和蔥香都出來了，這樣就完成了，關火，用了多久?</p></a>
+				<a href="#00:11:3.01" id="00:11:3.01" class="lt" onclick="jumptoTime(663, this.id)"><p>這個包括了18分鐘，包括了講解和煎牛肉，實際上這個應該12分鐘就完成了，好!</p></a>
+				<a href="#00:11:16.45" id="00:11:16.45" class="lt" onclick="jumptoTime(676, this.id)"><p>這個時候我們就把它上碟，這個就是家廚版的生炒牛肉飯，都是一隻鍋的，又不用洗鍋，這裡就夠我三仔爺吃一餐了，這裡大概是一個半到兩個的泥排，我用了三至四碗白飯，還是那句，因為我地方淺宅，現在是被中式鍋頂著的，所以我要很小心，不是很瀟灑地上碟，這個是家廚的局限，大家都知道的，我又要拍一個效果給大家看。</p></a>
+				<a href="#00:12:3.01" id="00:12:3.01" class="lt" onclick="jumptoTime(723, this.id)"><p>所以就這樣焗著，好!</p></a>
+				<a href="#00:12:10.37" id="00:12:10.37" class="lt" onclick="jumptoTime(730, this.id)"><p>這樣一個漂亮的生炒牛肉飯就完成了，是不是很脆呢?</p></a>
+				<a href="#00:12:18.85" id="00:12:18.85" class="lt" onclick="jumptoTime(738, this.id)"><p>給大家看一下我的鍋子，有沒有黏底?</p></a>
+				<a href="#00:12:23.17" id="00:12:23.17" class="lt" onclick="jumptoTime(743, this.id)"><p>沒有，有沒有多餘的油份?</p></a>
+				<a href="#00:12:24.77" id="00:12:24.77" class="lt" onclick="jumptoTime(744, this.id)"><p>沒有，這樣就可以了，這個炒飯就很漂亮了，好!</p></a>
+				<a href="#00:12:28.45" id="00:12:28.45" class="lt" onclick="jumptoTime(748, this.id)"><p>接著就給大家看一個近鏡，給個近鏡，OK，我這裏的肉的份量是偏多的，因為我沒有標準份量的，最主要是因為我在家裏剩下的東西，我通常都是拿來炒飯的，這個也不例外，因為我前幾天做了一個榨菜蒸牛肉，牛肉餅，多了一塊出來，所以剩下的，我就拿來炒飯，你說家廚是不是很多廢物利用，很多贈送利用，是的。</p></a>
+				<a href="#00:13:8.34" id="00:13:8.34" class="lt" onclick="jumptoTime(788, this.id)"><p>很多時候我們就可以組合不同的菜式出來，今天這個榨菜牛肉飯有幾個重點，第一個依然是炒飯那裏，這個我用的是懶人大法，直接打原隻蛋下去鑊煎，其實炒飯的蛋有幾種方法，最近我知道網上很流行，打了蛋之後，然後拌飯，然後拌勻飯，然後才下鑊煎，這個我不去否定別人的做法，但我心裏有個疑問，因為你這麼早包著蛋漿。</p></a>
+				<a href="#00:13:47.94" id="00:13:47.94" class="lt" onclick="jumptoTime(827, this.id)"><p>飯就碰不到油氣，飯是不是真的那麼甘香呢，就是兩回事，當然你說我喜歡吃白飯，白飯夠香的，那我不介意，另一種就是高級一點的，就是炒飯先下飯炒，然後打蛋，蛋漿就逐一下，這個就要很高的技巧，因為你稍為懶一點，不好意思，先關掉抽氣扇，你稍為懶一點，即是說心急一點，你將所有蛋漿都倒在飯裏，我可以保證，百分之一百保證。</p></a>
+				<a href="#00:14:26.54" id="00:14:26.54" class="lt" onclick="jumptoTime(866, this.id)"><p>你炒出來的飯是變成飯糊，而不可以炒到粒粒分明，為什麼說需要高技巧呢，是因為你要判斷，逐一逐一的蛋漿下，然後你要判斷，第一轉的蛋漿炒好了，即是說已經完全炒到甘香了，你才可以下第二轉蛋漿，然後逐一逐一下，這樣炒出來的就叫做黃金炒飯，這個黃金炒飯，就可以每一粒的蛋漿都沾得很均勻，這個就要你控制火候。</p></a>
+				<a href="#00:15:0.74" id="00:15:0.74" class="lt" onclick="jumptoTime(900, this.id)"><p>和不可以心急，還有那個份量，即是每一次下蛋漿要下多少呢，你真的要練習的，不是說一下就成功的，ok，行不行，這個就大家進階版，如果想做的話，所以我們家廚為了要，我們無非都是填飽肚子，不要弄得那麼複雜了，直接打蛋下去，直接攪拌好蛋，然後等蛋在半生熟的狀態，立刻倒飯下去，這樣就有個結果，就是有部分的飯會被蛋漿包住的。</p></a>
+				<a href="#00:15:29.14" id="00:15:29.14" class="lt" onclick="jumptoTime(929, this.id)"><p>行不行，ok，好了，除了這個之外，說到下菜了，這個牛肉先炒熟，下菜的時候，大家看到我是不是很早下，和牛肉一起下，是的，為什麼，因為這個是菜心，ok，菜心，它是比較沒有那麼容易快熟的，所以就早下一點，但是如果大家用的是生菜，或者是椰菜那些就要晚一點下，為什麼，因為它們快熟的，還有尤其是生菜都會出水的，所以通常外面餐廳。</p></a>
+				<a href="#00:16:4.54" id="00:16:4.54" class="lt" onclick="jumptoTime(964, this.id)"><p>無論它是鹹魚雞粒炒飯，生炒牛肉飯，還是揚州炒飯，它們都會下生菜的，是不是，大家有沒有發覺它們沒有出水的，是的，因為其實它是要和蔥差不多時間下的，ok，甚至有些是直接蔥和生菜一起下的，這樣就可以保證生菜熟之餘，就不會出水，ok，大家要記住，特別是生菜，如果生菜你太早下，一出水，你的炒飯又會失火的。</p></a>
+				<a href="#00:16:34.94" id="00:16:34.94" class="lt" onclick="jumptoTime(994, this.id)"><p>ok，行不行，簡單來說就是，你下不同的菜譜，我們通常家廚很多時候，譬如下小糖菜粒，即是當炒菜飯那樣，下菜心粒，或者甚至高級一點的芥蘭粒，蘆筍粒這些，這些比較難熟的菜類，即是廣的，就變了我們可以早點下，ok，行不行，記住，其他的基本上沒有什麼，先頭和最後，是不是下了幾滴豉油，下豉油炒飯和沒有下豉油炒飯是天淵之別，如果。</p></a>
+				<a href="#00:17:11.74" id="00:17:11.74" class="lt" onclick="jumptoTime(1031, this.id)"><p>如果你去餐廳吃，有一天你點了什麼炒飯都好，為什麼差這麼遠，這麼難吃，原因就是最後沒有下豉油，ok，行不行，他不下豉油也可以的，如果他炒得好的話，ok，但是，其實真正好吃的炒飯是什麼，是豉油炒飯，豉油蔥炒飯，是不是，大家說是不是，所以我們家裡不要想那麼多，不要學別人，我們自己有自己的方法，最後下幾滴豉油下去。</p></a>
+				<a href="#00:17:41.94" id="00:17:41.94" class="lt" onclick="jumptoTime(1061, this.id)"><p>提香，搞定，ok，行不行，那我就先留下Close Shot，哎呀，都軟了頭，大家可以看一下，菜心粒是很小的，我用的是剩下的菜苗，ok，所以切得很小，其他都沒什麼特別的，希望大家這個生炒牛肉飯，又多一個菜單，ok，好不好，那就不跟大家說那麼多了，炒完飯當然要吃飯了，拜拜。</p></a>
+				<a href="#00:18:10.54" id="00:18:10.54" class="lt" onclick="jumptoTime(1090, this.id)"><p>再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜醬油肥牛湯烏冬｜簡單的麵食，只需十來分鐘就有得食，早午晚宵夜都可以食用，簡單又快捷，大家快來試下啦。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'foo-ddrDi2M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜醬油肥牛湯烏冬｜簡單的麵食，只需十來分鐘就有得食，早午晚宵夜都可以食用，簡單又快捷，大家快來試下啦。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，我答應大家，和大家分享一個很簡單的湯麵，一個麵食。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>個個人在家都很快捷做到。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>呢個係醬油肥牛湯烏冬﹗點做呢?</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>我先開火燒鑊，跟住再慢慢介紹材料。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>因為呢個好快捷。</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>材料有咩?話明係肥牛，肥牛一包，大約半磅，夠兩個人食。</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>今日我整兩個人份量，除咗肥牛之外，當然係大家見到呢一牌子。</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>點解我會突然之間整呢個湯麵呢?呢個湯烏冬呢?因為平。</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>大家估唔估到呢個，而家呢一包湯烏冬幾多錢?</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>28蚊，百佳賣緊49個幾，有陣時52蚊添，抵唔抵呀?梗係抵啦。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>咁但係呢啲烏冬呢，佢有一個特色嘅，就係呢，即係比較容易係變壞嘅。</p></a>
+				<a href="#00:01:19.00" id="00:01:19.00" class="lt" onclick="jumptoTime(79, this.id)"><p>所以呢，大部分嘅時間，如果大家唔食用嘅話，就一定要急凍。</p></a>
+				<a href="#00:01:24.00" id="00:01:24.00" class="lt" onclick="jumptoTime(84, this.id)"><p>好，咁呀，燒鑊啦，基本嘅，係咪呀?然之後啦，落油啦。</p></a>
+				<a href="#00:01:32.00" id="00:01:32.00" class="lt" onclick="jumptoTime(92, this.id)"><p>呢個你搞咩呀?咁我而家呢就起一個好野味，好簡單嘅一個湯底呀。</p></a>
+				<a href="#00:01:38.00" id="00:01:38.00" class="lt" onclick="jumptoTime(98, this.id)"><p>咁唔需要搞好多好複雜嘅，咩煲豬骨湯呀諸如此類嘅。</p></a>
+				<a href="#00:01:44.00" id="00:01:44.00" class="lt" onclick="jumptoTime(104, this.id)"><p>攞勻啲油啦，跟住然之後呢，見佢出煙喇喎，收細火。</p></a>
+				<a href="#00:01:50.00" id="00:01:50.00" class="lt" onclick="jumptoTime(110, this.id)"><p>做乜嘢呀?煎蛋呀喂!</p></a>
+				<a href="#00:02:4.09" id="00:02:4.09" class="lt" onclick="jumptoTime(124, this.id)"><p>好，我做兩隻，一人一隻，一碗一隻，然後加少少鹽，接着我一開始煎蛋要做什麼呢?</p></a>
+				<a href="#00:02:28.80" id="00:02:28.80" class="lt" onclick="jumptoTime(148, this.id)"><p>我要做湯底，煎蛋的湯底非常惹味，接着加少許胡椒，煎蛋不用緊張不用急，煎焦一點點也不怕的，所以大家看到，來吧，燒鑊，燒夠鑊的好處就在這裡，看不看到那隻蛋，是不是很容易離鑊，哎呀，不要緊，總有意外的，現在呢，因為我是用來做這個，即是做這個，湯底，所以煎穿了就算了，煎穿咗呢其實呢佢嗰個蛋黃呀其實出嚟嗰個食味呢仲更加正啲嘅，唔係我要為自己嘅失手辯駁呀係經過試驗係真係咁樣嘅。</p></a>
+				<a href="#00:04:2.46" id="00:04:2.46" class="lt" onclick="jumptoTime(242, this.id)"><p>呢個時候呢就畀水啦，開返大火佢啦用貼呢個好處我完全唔需要驚嘅，直接畀冷水，意見我就唔一樣啦，好跟住然之後呢我哋呢個時候呢就落調味啦，一斤半鹽，兩斤糖，一斤雞蛋，這個已經足夠鹹了 兩個份量來說，如果大家用一個份量的話，就大概放700ml水，700-800ml水，然後鹽就減半 糖就減半 雞粉就減半，這個調味 等一會這個就可以連蛋一起煮。</p></a>
+				<a href="#00:05:4.11" id="00:05:4.11" class="lt" onclick="jumptoTime(304, this.id)"><p>就有一個很惹味的湯底出來了，除了這些之外 材料很簡單，一定要有菜 大家說是不是，用生菜最簡單了 快靚正，然後蔥 用一隻好一點的醬油，除了這一隻之外，其實可以用日本自己的萬字醬油，這一隻月華和萬字醬油是一樣貴的，貴得有道理，我讚不絕口 我兒子也讚不絕口，現在我們等水滾了，然後我們再放烏冬。</p></a>
+				<a href="#00:05:47.61" id="00:05:47.61" class="lt" onclick="jumptoTime(347, this.id)"><p>一會兒見，好了 大家 現在蛋已經滾了一分多兩分鐘，這個時候 連著油 大家看到奶白色的湯嗎，什麼蛋都可以做到奶白色的湯出來嗎，當然可以 如果大家有用心一點聽我的講解的話，這些叫什麼 乳化現象，乳化現象的原理就是，經過高溫處理的動物油脂，然後再混合水一起煮 它就會變成奶白色，因為本身蛋都是屬於動物的蛋白質。</p></a>
+				<a href="#00:06:28.61" id="00:06:28.61" class="lt" onclick="jumptoTime(388, this.id)"><p>所以它有油脂 它擠出來的時候，我們再用高溫處理完之後，加水就可以煮到奶白色出來，這個時候 因為是兩個人的份量，所以我就放，這個珍打烏冬有一個好處，這個叫杜庭峰珍打，這些是專門放湯的，它有一個好處就是，它是那個大小，它那個大小是有分的，它剛剛一刀切 你可以兩餅一起放，就一個人的份量 或者可能宵夜放少少。</p></a>
+				<a href="#00:07:8.61" id="00:07:8.61" class="lt" onclick="jumptoTime(428, this.id)"><p>這個煮法就不單止是，我們吃早餐有用 吃宵夜都有用，不好意思 我開口太小 我又不想開太大，放兩大片 或者四小片，然後我們就可以，煮它，這些烏冬大家不用怕急凍出來解凍，它完全不需要解凍的，現在因為我已經放在保鮮盒裏，等它慢慢天然解凍，所以我就不用理它了，這個時候我們要煮它大概多久呢，不好意思。</p></a>
+				<a href="#00:08:0.84" id="00:08:0.84" class="lt" onclick="jumptoTime(480, this.id)"><p>三分鐘，煮它三分鐘，三分鐘之後就可以開始放材料了，三分鐘之後見，好了 三分鐘過了，看看，麵已經煮得不錯了，這個時候我們就放肥牛，半磅肥牛就兩份，然後我們再放生菜，生菜多與少就視乎大家喜歡了，多少都無所謂的，我家人喜歡食菜，所以我就放多少生菜進去，牛肉略略灼熟就可以了，不用全熟的 因為慢慢的自熱會令到牛肉熟透，現在菜都差不多了 可以關火了。</p></a>
+				<a href="#00:09:23.28" id="00:09:23.28" class="lt" onclick="jumptoTime(563, this.id)"><p>關火之前我們要加醬油，大概加兩至三湯匙，這樣做就已經很好味了，現在我關火了，然後我等一會慢慢收汁的時候再和大家解說，大家等我一會，因為我多了這個程序 因為我拍片，져</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:27.25" id="00:10:27.25" class="lt" onclick="jumptoTime(627, this.id)"><p>idis，Say，rebel，ùng，Verd，gh，smelling，uo，ogens，texts，ask，bidding，compress，restaurants，plays，ppers，uding，children，inst 판，NFT，bucket，udo，wię，pray，оче，새。</p></a>
+				<a href="#00:10:8.77" id="00:10:8.77" class="lt" onclick="jumptoTime(608, this.id)"><p>retra twitch，deles，في，Ci，figures，finns，figura，adjusting，dealt，δ，Friends，條 τι，querer，có，Fo Spy，Теперь SUNész，enan，Pale vedere，anarchible，ились남，айте。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:22.35" id="00:10:22.35" class="lt" onclick="jumptoTime(622, this.id)"><p>Civ Repeat，overwhelmed ninth，Oak Spotify，interven implementation，Evan，łych，poque，modelo，huis，allo，naz Additional，oga，mies，effective Crunch，turkey。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:8.33" id="00:10:8.33" class="lt" onclick="jumptoTime(608, this.id)"><p>éd，РЕ την，benz，gentleλο，crimes，因為要拍好照片，所以我稍為整理好一點，然後把蛋分一半放進去</p></a>
+				<a href="#00:11:21.08" id="00:11:21.08" class="lt" onclick="jumptoTime(681, this.id)"><p>然後再把蛋黃和蛋黃粉混合，接着我們要用一隻這樣的篩子，因為要去除那些渣滓，不要去除那些渣滓，純粹是因為我要拍片，拍照而已，如果大家在家的話就不需要那麼麻煩，길 dri Hel soaking，pier Ouais，samo</p></a>
+				<a href="#00:12:40.73" id="00:12:40.73" class="lt" onclick="jumptoTime(760, this.id)"><p>ой，ANC，ogle，brand</p></a>
+				<a href="#00:12:38.61" id="00:12:38.61" class="lt" onclick="jumptoTime(758, this.id)"><p>mir Vac，cust previous，chapel，aha，bauen</p></a>
+				<a href="#00:12:38.29" id="00:12:38.29" class="lt" onclick="jumptoTime(758, this.id)"><p>ilar，atre，dicen</p></a>
+				<a href="#00:12:36.99" id="00:12:36.99" class="lt" onclick="jumptoTime(756, this.id)"><p>zess，еров</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:32.51" id="00:12:32.51" class="lt" onclick="jumptoTime(752, this.id)"><p>lar，bres，Nice</p></a>
+				<a href="#00:12:38.11" id="00:12:38.11" class="lt" onclick="jumptoTime(758, this.id)"><p>침，sings，말� afar，으</p></a>
+				<a href="#00:12:39.19" id="00:12:39.19" class="lt" onclick="jumptoTime(759, this.id)"><p>Mes，hem，Kolleg，亲 сн，parece，好 最後撒些芝麻，這樣一個很惹味的家常醬油肥牛烏冬就完成了，給大家看看，OK嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:1.65" id="00:13:1.65" class="lt" onclick="jumptoTime(781, this.id)"><p>這個其實已經很惹味了，有幾樣東西要注意的，第一就是，這個湯底的主要食味來源就是煎蛋，所以我們一開始工作的時候就先煎蛋，煎蛋後，煎香它 煎脆它的皮，然後我們才下水煮這個湯底，湯底很簡單，如果是一個人的份量，這個是珍達的稻庭蜂，烏冬 這些是放湯的，一大餅的話，我們放大概700-800ml水左右，煮滾了之後 煮蛋就煮一會兒。</p></a>
+				<a href="#00:13:47.65" id="00:13:47.65" class="lt" onclick="jumptoTime(827, this.id)"><p>然後就放烏冬下去，放了烏冬下去之後，其實是有時間上的分別的，剛才我已經特別說了，因為我已經解凍了，所以我三分鐘就足夠了，但是如果大家是剛剛在急凍拿出來，它還是很硬的狀態，就要四分鐘，OK 行不行，好了 煮完三分鐘至四分鐘，就是那個烏冬就行了，然後我們就下肥，逐樣東西下肥牛 下生菜，然後煮好了之後。</p></a>
+				<a href="#00:14:23.25" id="00:14:23.25" class="lt" onclick="jumptoTime(863, this.id)"><p>那些牛肉就不要全熟，大概八九成熟我們就可以拿起，它的自熱可以令到那些牛肉，就是你上到桌子吃的時候，就剛剛好的，記住肥牛就很活該的，它剛剛熟就很軟滑的，但是如果你是過了火的話，它就很粗糙的，就不好吃的，當然你說你怕它不夠熟肚子，這個是另當別論，但是正常來說，我們煮肥牛的時候，最多都是八九成熟。</p></a>
+				<a href="#00:14:57.45" id="00:14:57.45" class="lt" onclick="jumptoTime(897, this.id)"><p>即是煮麵來算，那六當然最好就六熟它，OK 行不行，然後最後我們就將所有東西，鋪在上面 舀上去，就是這麼簡單的了，是不是很簡單呢，十分鐘就可以吃了，煎蛋我當年燒鑊三分鐘左右，煮個湯我當一兩分鐘，然後烏冬三分鐘，然後你放其他東西，十分鐘左右，這是一個不錯的選擇，早餐的選擇，午餐也可以，宵夜也可以。</p></a>
+				<a href="#00:15:39.02" id="00:15:39.02" class="lt" onclick="jumptoTime(939, this.id)"><p>宵夜就不用太重，現在的烏冬很貼心，通常會把一個大餅的烏冬切開兩半，如果晚上肚餓又不想吃，可以試試煎蛋，加水調味，然後放烏冬下去煮，又是一餐很美味的宵夜，可以嗎，近期做的東西都比較複雜，但是這個湯烏冬非常簡單，既有東洋風，同時也有加上中廚的技巧，希望大家喜歡，多謝大家，拜拜。</p></a>
+				<a href="#00:16:23.46" id="00:16:23.46" class="lt" onclick="jumptoTime(983, this.id)"><p>可以吃東西了。</p></a>
+</div>
+	</body>
+</html>

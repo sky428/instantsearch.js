@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——沙嗲牛肉炒河粉，我承認這次失敗了，失敗並不是因為味道不好廚藝不佳，大家來看看我如何失敗吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Uu0LFdl5YWk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——沙嗲牛肉炒河粉，我承認這次失敗了，失敗並不是因為味道不好廚藝不佳，大家來看看我如何失敗吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好!</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>今日下午睡醒了，不要介意我睡到這麼晚。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>大家都知道我為什麼睡到這麼晚。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>沒辦法，因為病人作息時間。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>下午睡醒找食物找雪糕，嘩!還有這麼多剩餸，怎麼辦?</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>問兒子，我說煮的食物不好吃嗎?</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>他說，不是，很好吃。</p></a>
+				<a href="#00:00:29.00" id="00:00:29.00" class="lt" onclick="jumptoTime(29, this.id)"><p>為什麼你不吃?</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>我說我不想吃飯。</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>兒子寧願吃杯麵，也不吃飯。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>看見雪櫃的剩餸，就在發愁。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>發愁怎麼辦?</p></a>
+				<a href="#00:00:45.00" id="00:00:45.00" class="lt" onclick="jumptoTime(45, this.id)"><p>一想，不是，昨晚沙嗲牛肉炒河粉，剛好可以做蟹的餸。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>做什麼餸?</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>他吃剩一半，牛肉不是沒吃過，昨天大家都看到我炒得很多牛肉，菜，其實他已經吃了一半，本身他不太吃菜，我打算讓他吃牛肉很多，誰知他不吃，主要是第二餐他不吃。</p></a>
+				<a href="#00:01:20.00" id="00:01:20.00" class="lt" onclick="jumptoTime(80, this.id)"><p>他說，沙嗲牛肉配蔥，大家想不想到我想做什麼?</p></a>
+				<a href="#00:01:31.00" id="00:01:31.00" class="lt" onclick="jumptoTime(91, this.id)"><p>先拿走，今晚的主角出場了。</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>什麼?河粉?</p></a>
+				<a href="#00:01:45.91" id="00:01:45.91" class="lt" onclick="jumptoTime(105, this.id)"><p>昨晚我做的沙嗲牛肉炒芥蘭，其實現身還有一個潮州名菜，就是沙嗲牛肉炒河粉，這個菜我去到牛肉專門店也是必點的，但我又想不明白，這個絕對比濕炒牛河好吃，絕對可以跟濕炒牛河比拼，我就是想不明白，為什麼茶餐廳不會做炒河粉呢?</p></a>
+				<a href="#00:02:22.91" id="00:02:22.91" class="lt" onclick="jumptoTime(142, this.id)"><p>我又覺得奇怪，我想會不會因為成本重呢?</p></a>
+				<a href="#00:02:26.87" id="00:02:26.87" class="lt" onclick="jumptoTime(146, this.id)"><p>為什麼呢?</p></a>
+				<a href="#00:02:27.95" id="00:02:27.95" class="lt" onclick="jumptoTime(147, this.id)"><p>因為沙嗲牛肉炒河粉是很黑人炒的，第一就是，拌牛肉的拌法不一樣，昨晚沙嗲牛肉炒芥蘭，大家都看到我怎樣拌的，跟一般的拌牛肉不一樣，我唯一就是考慮到成本，但我覺得好吃的東西貴一點，可能沒有人吃，所以今天我跟大家介紹，雖然是用廚餘，用正餸來炒，但是這個和新鮮炒的沙嗲牛肉炒河粉是一模一樣的，為什麼呢?</p></a>
+				<a href="#00:03:9.30" id="00:03:9.30" class="lt" onclick="jumptoTime(189, this.id)"><p>這個沙嗲牛肉炒芥蘭，其實本身分這些出來，那個炒法加在炒粉上，就會和原版的沙嗲牛肉炒河粉是一模一樣的，OK，行不行?</p></a>
+				<a href="#00:03:26.38" id="00:03:26.38" class="lt" onclick="jumptoTime(206, this.id)"><p>如果大家說，你只是用正餸，如果我想用新鮮炒，那怎麼辦?</p></a>
+				<a href="#00:03:31.82" id="00:03:31.82" class="lt" onclick="jumptoTime(211, this.id)"><p>那你就可以參考沙嗲牛肉炒芥蘭的方法，然後記住，用的菜一定是芥蘭，那你可以買一些芥蘭苗回來，OK，就不用一棵大的芥蘭，芥蘭苗不時都可以買的，大家如果想到沒有什麼好吃的時候，我強烈推介大家做這個，為什麼會強烈推介呢?</p></a>
+				<a href="#00:03:55.78" id="00:03:55.78" class="lt" onclick="jumptoTime(235, this.id)"><p>我知道很多人喜歡吃乾炒河粉，包括我自己，但是我自己在家裡炒的乾炒河粉，我是自己不是很滿意的，主要的原因不是因為我不懂炒，主要的原因是因為，家廚的爐具的火力真的不行，乾炒河粉要炒得好吃，那個火力是很重要的，那個瞬間的均度是很重要的，這個已經不是說你燒多久鍋就可以做到的，OK。</p></a>
+				<a href="#00:04:24.54" id="00:04:24.54" class="lt" onclick="jumptoTime(264, this.id)"><p>這個我炒這麼多東西，我唯一承認做得不比餐廳好吃的，唯一的就是乾炒河粉，原因就是因為溫度不夠高，還有時間不夠長，好了，說了這麼多其他的東西，我現在就看看，大家其實很有疑問的，炒河粉這裡你見得多，為什麼你不是經常炒河粉呢?</p></a>
+				<a href="#00:04:48.22" id="00:04:48.22" class="lt" onclick="jumptoTime(288, this.id)"><p>因為炒河粉就比較黑人炒，為什麼呢?</p></a>
+				<a href="#00:04:51.46" id="00:04:51.46" class="lt" onclick="jumptoTime(291, this.id)"><p>黑人炒的第一個就是河粉，一定是新鮮買回來炒才是最好的，隔了夜就不漂亮了，為什麼呢?</p></a>
+				<a href="#00:05:1.10" id="00:05:1.10" class="lt" onclick="jumptoTime(301, this.id)"><p>現在還好好的，我特意不放進冰箱的，雖然是下午買回來的，大家還見到很完整的河粉，我調暗一點，看不到那個質感，現在的河粉都還相對地好，其實說真的，已經放進冰箱了，不是我放的，是店舖放的，因為最近大家都知道了，應該是賣不完的，好了，所以河粉不是我的首選，主要原因是因為，撞到新鮮做的河粉，甚至誇張一點說。</p></a>
+				<a href="#00:05:35.06" id="00:05:35.06" class="lt" onclick="jumptoTime(335, this.id)"><p>我買的時候還暖暖的，很少見，OK，行不行?</p></a>
+				<a href="#00:05:39.30" id="00:05:39.30" class="lt" onclick="jumptoTime(339, this.id)"><p>所以河粉黑人炒的第一步，就是你必須要買最新鮮的河粉，因為河粉一放進冰箱就會斷的，不同於豬腸粉，豬腸粉放了一晚或兩三天，它碎的部分都是表面，它的芯還好好的，但是河粉一斷，大家都知道發生什麼事了，OK，好了，那通常河粉黑人炒的第二步，就是很多人都做錯的，就是直接放回來，就將河粉放在哪裡，就直接放進鍋裡炒。</p></a>
+				<a href="#00:06:11.42" id="00:06:11.42" class="lt" onclick="jumptoTime(371, this.id)"><p>不是這樣的，河粉必須要加一點油回來，加少少油，然之後整散佢先，記住唔係加熟油，係加生油，你想炒河粉炒得靚呢，就先係加左油落去，跟住就攞勻佢，拆散佢，咁樣嘅河粉炒出嚟先靚，成日啲人話，乾炒河粉少油先係最靚，其實你打散河粉嘅時候，其實係加左油落去，你見到師傅加油落去，佢滑鑊，係呀好少油，不過其實打散河粉嘅時候，唔多唔少都會有啲油落去。</p></a>
+				<a href="#00:07:9.85" id="00:07:9.85" class="lt" onclick="jumptoTime(429, this.id)"><p>同普通嘅炒粉唔會少得去邊，就係嗰啲油份，同埋河粉之所以，蝦仁炒嘅另外一樣嘢呢，就係你唔夠油水呢，佢唔同米粉，米粉最多行，但河粉會斷，即係你唔夠油水，只不過就話因為而家呢，我哋用油先打散佢之後，等佢充分表面有油份，佢吸收左油份，咁變咗你炒完之後，自然你覺得佢冇油滴返出嚟，其實同炒粉，炒米粉，我哋落多油，但炒到最後係唔見油。</p></a>
+				<a href="#00:07:50.85" id="00:07:50.85" class="lt" onclick="jumptoTime(470, this.id)"><p>個道理係一樣，因為佢吸晒啲油，我而家盡量拆散佢，點解我話佢隔咗嘢呢，正路如果新鮮河粉我一落油落去，咁樣搓佢，佢會散，唔係斷，係散開，但而家嚟，我要逐條逐條拆佢，證明佢係擺過落雪櫃，但係冇計，因為而家疫情，唔係咁多人買新鮮河粉去食，大家明唔明，即係去炒，所以佢賣唔晒，擺過架嘢都冇計，大家都知，其實除咗啲老人家之外，好多都唔願意去街市。</p></a>
+				<a href="#00:08:33.85" id="00:08:33.85" class="lt" onclick="jumptoTime(513, this.id)"><p>因為疫情，盡量少接觸，而家基本上我都炒散晒，炒散晒，我俾大家睇下，先頭返黎嗰陣時都仲有一坨坨嘅，我一揚佢，散晒啦，炒河粉有咩佐料呢?</p></a>
+				<a href="#00:08:56.65" id="00:08:56.65" class="lt" onclick="jumptoTime(536, this.id)"><p>其實嗰陣時我就有其他多嘅佐料，但係潮州炒河粉一樣，沖，跟住就係沙爹牛肉同埋芥蘭，個做法係點呢?</p></a>
+				<a href="#00:09:10.65" id="00:09:10.65" class="lt" onclick="jumptoTime(550, this.id)"><p>而家呢，呢個係咪加嘢餸嘅，咁其實呢個做法就同我琴日呢嗰個沙爹牛肉炒芥蘭一樣，先炒咗芥蘭啦，跟住放埋牛肉餸一齊炒啦，咁炒好晒之後起鑊，跟住另外再炒粉，跟住然之後就輪到跟住落嚟我呢個合成嘅過程啦，ok，嗱，咁我呢個呢就一刀不剪㗎啦，嗱，大家睇下，我呢個係咪真係好簡陋呢?</p></a>
+				<a href="#00:09:34.65" id="00:09:34.65" class="lt" onclick="jumptoTime(574, this.id)"><p>好窄嘅，我連展示我都要擺，擺塊板上去，擺塊板上去嗰個鑊嗰度，你睇下，我邊度學得似人哋，即係，有所謂叫咩?</p></a>
+				<a href="#00:09:50.65" id="00:09:50.65" class="lt" onclick="jumptoTime(590, this.id)"><p>人靠，咩呀?</p></a>
+				<a href="#00:09:54.65" id="00:09:54.65" class="lt" onclick="jumptoTime(594, this.id)"><p>咩人靠衣裝呀?定乜鬼嘢呀?</p></a>
+				<a href="#00:09:56.65" id="00:09:56.65" class="lt" onclick="jumptoTime(596, this.id)"><p>下一句，講得好順口，突然間我有老人痴呆，唔識講，咁呢，即係我明白嘅，好多真係去搵食嘅，即係KOL呢，佢哋都會係特登租個廚房啦，去拍片啦，ok，咁自然地方就大好多啦，自然環境優美好多啦，咁大個廚房任佢冇，係咪呀?</p></a>
+				<a href="#00:10:20.65" id="00:10:20.65" class="lt" onclick="jumptoTime(620, this.id)"><p>鍾意點擺鏡頭就點擺鏡頭，自然就拍得靚靚仔仔，咁我，即係作為呢個家廚呢，咁大家都知道呢香港環境有幾咁逼劫，講真啦，我一家四口住到三百幾呎，其實我覺得已經好感恩㗎啦，喺香港嚟講啦，咁一家四口都係住三百幾呎，我想然知個廚房會有幾大呀，係咪呀?</p></a>
+				<a href="#00:10:43.65" id="00:10:43.65" class="lt" onclick="jumptoTime(643, this.id)"><p>咁我而家就燒緊鑊，ok，其實呢個炒河粉基本上前期就同乾炒河粉差唔多，跟住我講炒河粉嘅前期，我先頭都講咗炒牛肉就要另外炒開嘅炒菜，咁呢個係，而家出煙啦，我落油啦，咁呢個係潮州炒河粉呢，佢介乎於係濕炒牛河同同乾炒牛河之間，你可以理解佢成為一個濕炒牛河嘅兜亂，係要兜亂先好食㗎喎，你就咁鋪佢上面就唔好食㗎喎，呢個時候呢我就放河粉。</p></a>
+				<a href="#00:11:32.19" id="00:11:32.19" class="lt" onclick="jumptoTime(692, this.id)"><p>放河粉你睇下幾散，剩返落嚟嗰啲，咁好明顯佢擺過落雪櫃，但係都冇計啦，因為我有材料在先，而家呢個時候呢，啲河粉呢，因為我哋家廚就唔同為，呢個係精緻廚房，我先頭講啦，炒河粉呢，要炒得靚呢，係嗰個高溫係好緊要嘅，咁所以呢，喺咁嘅情況之下，我冇辦法啦，就唯有呢就用半煎半炒嘅形式，ok，咁而家呢我就先係。</p></a>
+				<a href="#00:12:4.19" id="00:12:4.19" class="lt" onclick="jumptoTime(724, this.id)"><p>先落去炒，煎咗先，跟住然之後先炒起，我較暗少少，俾大家睇下個，變化，煎了一遍之後就反過第二遍再煎，盡量煎到每一面的河粉都有煎過的效果，這樣大家才會吃到炒河粉的鑊氣和香氣，跟炒米粉的技巧有少少分別，炒米粉不需要太高溫，只要油份夠，慢慢吸收也很美味，河粉如果彈開是會吸收油份的，我看到河粉的油份已經一滴都不見了。</p></a>
+				<a href="#00:13:10.64" id="00:13:10.64" class="lt" onclick="jumptoTime(790, this.id)"><p>我都不敢大力地動它，因為放進冰箱會很散，這時候按照正常的調味，放少少鹽，少少糖，少少雞粉，好了，這個時候我們就可以…，開始散開了，但也沒辦法，一斤似乎不夠吃，然後豉油，放幾滴，然後老抽，這個步驟直至現在為止就當乾炒牛油那樣炒，開始有香氣出來了，即是乾炒河粉的香氣，這個時候，你看，真的沒辦法。</p></a>
+				<a href="#00:14:34.57" id="00:14:34.57" class="lt" onclick="jumptoTime(874, this.id)"><p>然後將牛肉，現在粉又少，我走轉杯，想再買多的時候，沒有了，放回那些沙爹牛肉進去，今日因為用廚餘嘅關係呢，所以賣相就會爭少少嘅，希望大家唔好介意，但係呢個炒法你用新鮮炒，係更加好食嘅，咁呢個炒河粉佢嘅特色係邊度呢，當然係沙嗲牛肉啦，大家有冇諗過沙嗲牛肉原來可以炒河粉，好了，現在差不多可以了。</p></a>
+				<a href="#00:15:36.43" id="00:15:36.43" class="lt" onclick="jumptoTime(936, this.id)"><p>然後再放蔥刀下去，好，一個野味沙爹牛肉炒河粉就完成了，現在我就講一講大家的要點在哪裏，炒河粉，首先第一件事就是你買的時候，一定要新鮮，你想知道新不新鮮，第一件事先看一下，看一下有沒有斷開，如果有的話，即是放進冰箱隔夜，這些就不新鮮，這是第一點，第二點就是我們要炒河粉的時候，炒之前我們要先放少許油，先打散河粉。</p></a>
+				<a href="#00:16:42.59" id="00:16:42.59" class="lt" onclick="jumptoTime(1002, this.id)"><p>而不是直接就這樣放進鍋裡，才打散，放進鍋裡打散的話，你是沒有辦法完全打散的，結果就是河粉最好吃的就是每一條河粉都沾有鍋氣，沾有油份，因為你放進鍋裡打散的時間太短，一來可能你動作太大會打爛，二來就是會導致它會斷開和不入味，就沒有那麼好鍋氣，ok，行不行，沙嗲牛肉炒河粉的重點就是炒沙嗲牛肉，在炒河粉之前，我們需要先炒牛肉再加菜。</p></a>
+				<a href="#00:17:30.59" id="00:17:30.59" class="lt" onclick="jumptoTime(1050, this.id)"><p>大家參照我昨天那條沙嗲牛肉炒芥蘭的炒法，第四，沙嗲牛肉炒河粉是要用芥蘭才好吃，菜心不好吃的，是要用芥蘭那種脆口的感覺，你才能吃出那種多變的口感，ok，行不行，調味方面，炒河粉的時候大家可以…，當它是乾炒牛河或者炒米粉調味，即是鹽糖味、生抽、老抽就OK了，行不行，然後一個重中之重是甚麼呢。</p></a>
+				<a href="#00:18:24.48" id="00:18:24.48" class="lt" onclick="jumptoTime(1104, this.id)"><p>我們在家炒，大家會否發覺，我先炒粉再炒牛肉會否有洗鑊的過程呢，會很麻煩，即是先炒牛肉再炒粉，是嗎，為免我們會那麼麻煩，又要洗鑊又要花時間去做清潔的東西，我們就要將程序調轉來做，先做甚麼呢，先炒粉，炒好粉之後拿隻碟裝起它，然後才炒牛肉，這樣我們就不用怎樣洗鑊，免得洗鑊的麻煩，用廚紙抹一抹乾淨就可以馬上再炒。</p></a>
+				<a href="#00:19:6.48" id="00:19:6.48" class="lt" onclick="jumptoTime(1146, this.id)"><p>記住這是家廚的技巧，我經常說，就算你具備專業的水準，你去到家廚未必一定可以做到，和專業廚房一樣的味道，為甚麼呢，家廚有家廚的限制，家廚有家廚的規矩，給大家看看，這一碟沙嗲牛肉炒河粉，不好意思，因為這是隔夜河粉，所以炒斷了，與我無關，如果大家真的想吃無可食，想試試新口味，強烈建議大家沙嗲牛肉炒河粉。</p></a>
+				<a href="#00:19:46.48" id="00:19:46.48" class="lt" onclick="jumptoTime(1186, this.id)"><p>真的很好吃，我覺得比濕炒牛河兜嫩好吃，真的，它又不辣，但它很香口，希望大家喜歡，就不說了，拜拜，一take過，今晚我就可以很快發片，不需要剪片。</p></a>
+				<a href="#00:20:5.48" id="00:20:5.48" class="lt" onclick="jumptoTime(1205, this.id)"><p>拜拜，去吃東西了。</p></a>
+</div>
+	</body>
+</html>

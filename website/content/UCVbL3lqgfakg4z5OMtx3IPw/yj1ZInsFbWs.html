@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜上海粗炒(有辣有唔辣兩個版本)｜原來加一種材料就能有天和地的分別｜現醃現煮現賣｜想食好野要耐心｜家廚可以做專業味道｜悅和醬油</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yj1ZInsFbWs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜上海粗炒(有辣有唔辣兩個版本)｜原來加一種材料就能有天和地的分別｜現醃現煮現賣｜想食好野要耐心｜家廚可以做專業味道｜悅和醬油</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>廣東話字幕組，嘩!這是什麼東西?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.96" id="00:00:6.96" class="lt" onclick="jumptoTime(6, this.id)"><p>上海粗炒!咦!為什麼會有辣椒?</p></a>
+				<a href="#00:00:9.96" id="00:00:9.96" class="lt" onclick="jumptoTime(9, this.id)"><p>因為我炒了兩個版本出來!</p></a>
+				<a href="#00:00:12.96" id="00:00:12.96" class="lt" onclick="jumptoTime(12, this.id)"><p>大家想知道怎麼做?</p></a>
+				<a href="#00:00:14.96" id="00:00:14.96" class="lt" onclick="jumptoTime(14, this.id)"><p>接下來大家就耐心看看我怎麼做由無變有，肉絲就現切現賣現煮，大家看看我怎樣三十分鐘，三十多分鐘就做好一個由無變有的上海粗炒，還有兩個版本，好!去片!</p></a>
+				<a href="#00:00:37.96" id="00:00:37.96" class="lt" onclick="jumptoTime(37, this.id)"><p>Hello!大家下午好!</p></a>
+				<a href="#00:00:39.96" id="00:00:39.96" class="lt" onclick="jumptoTime(39, this.id)"><p>下午是找吃的時間，今天想跟大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:48.96" id="00:00:48.96" class="lt" onclick="jumptoTime(48, this.id)"><p>上海粗炒好不好?</p></a>
+				<a href="#00:00:50.96" id="00:00:50.96" class="lt" onclick="jumptoTime(50, this.id)"><p>接下來大家就看看我怎樣從無變有，就要介紹一下材料，很多人說上海粗炒，當然最重要的是買到好吃的粗麵，上海粗麵，我告訴大家是錯的，首先給大家看一件東西，這是什麼東西呢?</p></a>
+				<a href="#00:01:22.96" id="00:01:22.96" class="lt" onclick="jumptoTime(82, this.id)"><p>這些叫做舟山蝦皮，舟山?哪裡來的?</p></a>
+				<a href="#00:01:26.96" id="00:01:26.96" class="lt" onclick="jumptoTime(86, this.id)"><p>舟山是杭州灣對出的一個島，現在它之所以出名，其實它是中國東海艦隊的基地，為什麼要提這件事呢?</p></a>
+				<a href="#00:01:43.96" id="00:01:43.96" class="lt" onclick="jumptoTime(103, this.id)"><p>因為我最近去挖掘舟山的歷史的時候，我發覺原來那裡有很多軍艦，漁業非常發達，舟山蝦皮很有名，也成為了淮揚菜的湯頭原材料之一，記得是舟山蝦皮，如果大家去街市買的話，其實有日本的櫻花蝦皮，和舟山蝦皮，都是這麼小的，日本的比較紅，這個是周生蝦皮的話，現在這樣偏白一點，不貴呀，現在我這麼大包一隻手拿著，20元而已。</p></a>
+				<a href="#00:02:39.90" id="00:02:39.90" class="lt" onclick="jumptoTime(159, this.id)"><p>這20元可以花得值呀，可以吃很久，那，我希望大家明白，很多時候好吃的東西，有一些名不見經傳，或者是很便宜的食材，原來，是要因為它，當然啦，那，我本來買了這個蝦皮回來，我想自己炒蝦油，這個蝦皮做的蝦油，好吃的，大家炒菜呀，炒這個，炒這個粉麵呀，放下去，很棒的，本來買這麼大包回來，我就想做蝦油，但自己一直都想不起來。</p></a>
+				<a href="#00:03:25.90" id="00:03:25.90" class="lt" onclick="jumptoTime(205, this.id)"><p>想吃上海粗炒，放一點，一小撮，那，然後我們，就拿這個，是水，那，拿普通暖水，或者是普通水就行了，稍微洗一洗，那我現在呢，因為我不想浸得太軟，那所以呢，就用水浸一浸，先浸開水，然後呢，正如大家所說，粗炒呀，上海粗炒當然要上海粗麵，這裏三隻麵餅，夠我兩仔爺吃一餐，都不貴，十五元，然後，額外介紹，因為今晚呢，我又想做泰國菜。</p></a>
+				<a href="#00:04:21.90" id="00:04:21.90" class="lt" onclick="jumptoTime(261, this.id)"><p>所以我用眼睛，肥美正，這個額外提我話不講，跟住呢，我現成，買這個，豬肉，買這個瘦肉，我喜歡買這個，豬肉的時候，我叫他不要開皮，連帶著皮肥肉，大家知不知道，因為我可以拿回來炸豬油，大家說是不是，我又省一點，是不是，怎不知呢，現在的豬肉便宜了，這個便宜了11兩，大家猜我買了多少錢?</p></a>
+				<a href="#00:05:2.31" id="00:05:2.31" class="lt" onclick="jumptoTime(302, this.id)"><p>40元，等一會我來開肉絲，然後上海粗炒當然是，咦?</p></a>
+				<a href="#00:05:13.01" id="00:05:13.01" class="lt" onclick="jumptoTime(313, this.id)"><p>什麼?椰菜啦，好，介紹完原材料，然後呢，現在進入現實模式，這個現實模式，大家看看我怎樣由無變成有，下午茶時間，不過通常因為我們晚起，所以這個時候才找食物，好，開始計時，看看我用多久時間由無變成有，首先要先煮麵，好，嘩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:51.37" id="00:05:51.37" class="lt" onclick="jumptoTime(351, this.id)"><p>nit Luck，開火，現在還未煮沸的時候，就不理會它了，先放好材料，首先第一件事就是要做豬肉，好，首先，我們拿一塊豬肉出來，要把肥肉切走，肥肉我會留起來做豬油，這樣可以省一點，通常做豬油很簡單，用刀尖盡量貼著瘦肉切，這樣就出來了，這個，拿一隻碟，今晚我炒菜的時候就順手攪拌一下，即時這塊肥豬肉就可以用到幾天。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:58.01" id="00:06:58.01" class="lt" onclick="jumptoTime(418, this.id)"><p>然後我介紹一下這個叫什麼肉，這個叫豬肚，肚的位置，排骨以下至到豬下胯的位置，這些肉通常都會軟一點，而且會便宜一點，不過有些人吃不慣，這個味道會比較重，肚的肉，味道會比較重，我現在首先把它切成條，不然很難去切肉絲，我盡量跟肉紋，很多人肥豬肉不要，為什麼呢?因為這些是肉味的來源，然後我把它切薄。</p></a>
+				<a href="#00:08:1.21" id="00:08:1.21" class="lt" onclick="jumptoTime(481, this.id)"><p>刀要夠鋒利，即是切肉絲，大概切3-4mm，如果是薄的就要切片，為什麼我喜歡用片刀呢?</p></a>
+				<a href="#00:08:23.15" id="00:08:23.15" class="lt" onclick="jumptoTime(503, this.id)"><p>因為我經常片東西，這樣我們就可以做些幼細的功夫，這個時候一樣，我用片的方式，因為這塊豬肉薄，盡量片大概3至4mm為準，這樣肉絲就會做得很幼細，左手按住位置，不可以用最大力，右手只用手指用力，先剪掉，大家看到我的刀是不是很鋒利?</p></a>
+				<a href="#00:09:31.80" id="00:09:31.80" class="lt" onclick="jumptoTime(571, this.id)"><p>為什麼我經常要維持刀這麼鋒利的原因就在這裡，因為我可以做一些很幼細的工作，如果是用普通的菜刀，通常刀身會比較厚一點，因為菜刀屬於文武刀的一種，它會斬雞那些都沒有問題，所以它通常會厚一點，因為它不夠薄就沒有像我現在做得那麼仔細，雖然我想要肥肉，但邊邊有帶血水的肥肉就不要了，我現在這裡是兩塊。</p></a>
+				<a href="#00:10:14.80" id="00:10:14.80" class="lt" onclick="jumptoTime(614, this.id)"><p>我沿著雞肉的紋理先切出來，咁呀呢度嘅肉絲梗係多啦係咪呀，咁呀食兩餐囉，炒兩餐粉囉唔一定淨係炒呢個上海粗炒嘅，大家要小心下我哋隻左手呢因為，好接近個刀鋒呀咁所以呢大家要小心啲呀，咁呀所以點解我話，左手唔可以出全力右手都唔可以出出全力就係咁解啦，盡量呢就係用刀嘅前半身如果大家冇信心去片佢出嚟呢就用，大。</p></a>
+				<a href="#00:11:21.61" id="00:11:21.61" class="lt" onclick="jumptoTime(681, this.id)"><p>咁呀淨返呢個少少咁就算啦，我哋就而家水滾喇喎水滾喇喎，咁我哋就要放面放面之前呢，放少少油，跟住之後將個面餅呢就放落去，呢個時候呢，我哋就要計時啦，8分鐘，不用理會它了，繼續打開它，然後大火，然後切肉絲，切肉絲時要留意直紋或橫紋，如果想肉絲軟滑些，容易咀嚼，沒那麼難咀嚼，我給大家看看要怎樣選擇。</p></a>
+				<a href="#00:12:59.63" id="00:12:59.63" class="lt" onclick="jumptoTime(779, this.id)"><p>現在這裡是直紋，這個是橫紋，切的時候要在橫紋切，大家看看直紋是這樣的，切的時候要在橫紋切，這樣肉絲就會軟一些，沒那麼容易咀嚼，切好了，大家看到我現在用時間管理，大家看到我一邊煮麵，另一邊處理肉絲，因為肉的厚薄和粗幼不一，我們不一定要每次都要90度角橫紋，斜斜地切就可以了，只要不是直紋的話。</p></a>
+				<a href="#00:14:8.87" id="00:14:8.87" class="lt" onclick="jumptoTime(848, this.id)"><p>效果都可以是一樣的，這些直紋這麼完整的話，就90度角切橫紋，這些這麼幼長的，我們就斜斜地切，讓肉絲不用太難看，有絲的形狀出來，有時我們切肉都不是盲目切，我們都要看形勢，看橫紋直紋，很多時候有朋友問為何我整肉絲或肉片不夠滑，原因是他們沒有注意橫紋直紋問題，切的時候全部都是切直紋，所以肉就一條條，像肉絲般撕出來。</p></a>
+				<a href="#00:15:18.35" id="00:15:18.35" class="lt" onclick="jumptoTime(918, this.id)"><p>大家煲湯後撕出來的肉絲是否一條條，是否很柴，就是這樣，大家看到我的刀通常都是用前半段切的，不是用後半段，大家看到我下刀的時候經常轉肉，因為它隨著肉的肌肉組成，每條肌肉與肌肉之間不是順著的，有些肌肉會有些角度，所以我每下刀的時候就要檢查，肉紋是否切得對，每一次停刀我都要檢查它的肉紋，所以我經常說我們入廚要用盡五官六感。</p></a>
+				<a href="#00:16:41.75" id="00:16:41.75" class="lt" onclick="jumptoTime(1001, this.id)"><p>我就是要用眼睛去檢查肉絲是怎樣的一回事，我給大家看看我切的肉絲，看到嗎?</p></a>
+				<a href="#00:17:1.15" id="00:17:1.15" class="lt" onclick="jumptoTime(1021, this.id)"><p>大概都是每條3-4mm，當然還可以切得幼一點，但是最切得好肉絲的應該是沙泥到那個位置，因為整塊肉是完整的，這個時候我們就要下去沖水，肉絲要沖水的，還要用大水沖，我現在就利用其他時間去沖肉絲這個動作，我不是第一時間醃的，一個椰菜，這個要放下，炒麵就不需要用太多，這個椰菜很漂亮，既然是這樣的話。</p></a>
+				<a href="#00:18:4.15" id="00:18:4.15" class="lt" onclick="jumptoTime(1084, this.id)"><p>我就稍微撇走一些，表面的一塊塊就留著，大家看看那些麵，我眼尾就要攪拌一下，有時候會黏底的，大阪煮餃子也好，煮麵也好，有時候會黏底的，當然大家都知道是要用熱水沖的，冷水沖就一定黏的，熱水沖也不保證你不會黏，但是會好一點，所以我們偶爾還沒時間就要看一下，繼續煮，不管它，直到中響為止，然後我們就切椰菜。</p></a>
+				<a href="#00:18:57.15" id="00:18:57.15" class="lt" onclick="jumptoTime(1137, this.id)"><p>大概切4-5毫米，大家看到我轉了菜身，這樣椰菜會比較方便切，切到差不多，不是對等的長度，就轉一下椰菜身，這樣切起來又沒那麼危險，同時間又會切得好一點，這個時候，我將椰菜淋在豬肉面，我下面的豬肉，給大家看看，我用洗手盤蓋著它，上面就淋些菜，同時間做兩樣東西，這個時候蝦皮就可以了，不要浸得太軟，少少而已 夠我們煮一餐。</p></a>
+				<a href="#00:20:8.23" id="00:20:8.23" class="lt" onclick="jumptoTime(1208, this.id)"><p>輪到這面就可以了，好了，這面就可以了，我們先關火，然後稍為洗一洗菜，拿起所有東西，然後把肉絲撈起，為何我用篩蓋住肉絲呢?</p></a>
+				<a href="#00:20:52.99" id="00:20:52.99" class="lt" onclick="jumptoTime(1252, this.id)"><p>因為啤水的肉絲很細小，水會沖到四周，會滲入洗衣機的盤子，掉到晶盤上，這樣就不好了，對不起，讓大家看看，原來我說話沒有看到，為何我用篩蓋住肉絲呢?</p></a>
+				<a href="#00:21:15.99" id="00:21:15.99" class="lt" onclick="jumptoTime(1275, this.id)"><p>因為洗衣機的肉絲會走來走去，所以我用晶盤，這個時候我用篩蓋，倒掉水後，輪到這個，倒掉所有水，大家看看，如果我在煮的時候不理會它的話，它有一點黏底的，上海麵，是這樣的，如果大家不想它黏底的話，我們就要時不時攪動它，上海麵炒麵不應該過冷河的，我手多，倒了下去不醒起，我現在放了一點點，還很熱的，但我現在的溫度可以讓我自己的手放下去。</p></a>
+				<a href="#00:22:23.50" id="00:22:23.50" class="lt" onclick="jumptoTime(1343, this.id)"><p>這個時候，既然我過了冷河的話，我就要想方法弄乾它，不要讓它濕身，現在它還很熱的，然後我就不理它了，我就先放一邊，基本上就完了，然後我先洗一洗手，用了17分鐘，然後我便拌入肉絲，肉絲很簡單，我現在這裡有11兩，我約你一半茶匙鹽，不用多，一茶匙，我先關掉抽氣，吵著大家，一茶匙熱糖，一茶匙生粉。</p></a>
+				<a href="#00:23:41.67" id="00:23:41.67" class="lt" onclick="jumptoTime(1421, this.id)"><p>然後，少許雞粉，然後，胡椒碎，然後麻油，然後，我用的是普通生抽，一茶匙就足夠了，然後就攪拌均勻，我先頭沒有完全榨乾水份，所以肉絲本身還有水份，大家看到我沒有完全榨乾水份，有水份在裏面，我就保留它，這個時候就攪拌均勻，大家看到嗎，攪拌均勻，因為我沒有加水，它很快會黏住，很快會出膠起膠，這個時候我們就加油。</p></a>
+				<a href="#00:25:3.56" id="00:25:3.56" class="lt" onclick="jumptoTime(1503, this.id)"><p>加多一點點都不怕，因為它本身不是肥豬肉，是瘦肉，絕大部分，95%以上，99%，這樣豬肉絲就不會再黏在一起，然後我們就將所有的東西，拌到油和肉混為一體為止，這樣豬肉就會變得很滑，大家記不記得我做的醉雞鍋，大家有沒有跟著我做，醉雞鍋的雞件是不是很滑，我現在這個就是新鮮豬肉現撈現埋，大家記住，如果你想滑的話。</p></a>
+				<a href="#00:25:58.56" id="00:25:58.56" class="lt" onclick="jumptoTime(1558, this.id)"><p>不好意思，樓上今天是星期六，都在吵，不好意思，這些是我們真正的現實環境，真正生活的環境，大家不要介意，我現在就洗一洗鍋，因為它黏在底下，這些過程我都會給大家看，為什麼呢，我希望大家明白，我們煮一餐飯，無論想多快，我們當然有各種限制，和需要時間去做，如果大家早早計劃，今天我突然間想吃上海粗炒。</p></a>
+				<a href="#00:26:49.56" id="00:26:49.56" class="lt" onclick="jumptoTime(1609, this.id)"><p>如果不是的話，大家可以預先醃豬肉，買菜，浸蝦，十多分鐘就可以了，現實環境就是，星盤經常都濕，因為我們煮東西的時候，很多菜蝕、肉蝕都會流下去，同埋我哋洗鑊嘅時候就盡量唔好用咁多洗潔精，尤其是鑊即係餸與餸之間，因為點解呢，你洗走曬啲油呢，嗰隻鑊就好容易黐底㗎，原來有呢回事 梗係啦，好啦 呢個時候我洗完囉。</p></a>
+				<a href="#00:27:36.79" id="00:27:36.79" class="lt" onclick="jumptoTime(1656, this.id)"><p>我哋可以炒啦，咁既然做完曬所有嘢呢，做一件事未做 氣死我，我呢啲蔥呢就琴晚用淨嘅，咁我已經洗好曬㗎啦，我主要就係撕一撕佢，想撕一撕佢呀，因為有啲蔥已經係老黃咗呀，大家見到嘅家廚就係咁樣㗎啦，即係你要求呢，專業餐廳嗰種咁嘅清潔程度呢，就絕對冇可能㗎我同大家講，但係會唔會食親人呢，食親人嘅話我煮咗幾十年餸。</p></a>
+				<a href="#00:28:21.51" id="00:28:21.51" class="lt" onclick="jumptoTime(1701, this.id)"><p>我估計入醫院仲多過坐車啦大佬，係咪，我哋好多時候呢，我哋就撕走嗰啲腐爛嗰啲，或者乾嗰啲，點解呢，因為蔬菜呢，大家好多時候成日都話，哎呀 交叉感染呀嗰啲咩呀，咁其實呢，蔬菜呢，腐爛嘅蔬菜先係肚痛嘅最大來源呀，咁你煮唔熟呀當然都係啦，咁呢就係盡量呢就揀呢，就係佢開始腐爛嗰啲部位呢，我哋要撕走佢。</p></a>
+				<a href="#00:28:56.59" id="00:28:56.59" class="lt" onclick="jumptoTime(1736, this.id)"><p>咁我今一次呢，大家都知道鍾意食蔥呢，我就用曬佢啦，咁就檢查，邊啲位就快腐爛嘅，咁我哋呢，就將佢撕走佢呀，咁呢就可以防止呢，有效防止肚痛㗎啦，你知唔知到如果係腐爛嘅蔬菜大家食咗落肚呢，最嚴重係乜嘢會發生瘟疫㗎，會有傳染病㗎，大家要記住呀所以呢，其實與其呢係，即係所謂嘅口頭上，注意衛生。</p></a>
+				<a href="#00:29:32.39" id="00:29:32.39" class="lt" onclick="jumptoTime(1772, this.id)"><p>但係點不知原來實際上呢，根本就連最基本嘅即係嗰啲病理學呀，最基本嘅嗰啲衛生都唔知，咁結果就係乜嘢呀，喂大佬，口口聲聲，就好像現在香港一樣，口口聲聲說你做了那些東西你就不會生病，誰不知做完之後，更嚴重的不做，是不是，為什麼，因為根本就做錯方向，那些不要說那麼多，我只是拍煮食，只不過介紹一下我們應該有的衛生常識。</p></a>
+				<a href="#00:30:10.47" id="00:30:10.47" class="lt" onclick="jumptoTime(1810, this.id)"><p>OK 行了，就這麼多了，蝦皮，椰菜，這個蝦皮、椰菜、麵，煮好的麵、肉絲、蔥，上海粗炒就是這樣了，好 這個時候我先把刀放回去，一邊做事就一邊清潔，這個就是家廚的好習慣，也是長久以來我老婆訓練我，雖然我長住幾十年在家，但是我老婆每次都在後面，說你這麼骯髒，這裡骯髒那裡骯髒，沒有啊，與其發脾氣。</p></a>
+				<a href="#00:30:50.87" id="00:30:50.87" class="lt" onclick="jumptoTime(1850, this.id)"><p>不如大家遷就一下，養成了我現在一邊炒菜一邊清潔的習慣，好了 現在可以開始了，燒鑊，手碰到鑊，好，然後 現在我已經用了25分鐘了，炒很快，首先一件事，就是我們先加少許油，做什麼呢，先爆蝦皮，爆到出香味就可以了，咁呢如果你嫌佢太高溫呢就可以抽一抽呢隻鑊嘅，而家呢呢個蝦皮，可以爆爆得㗎喇等佢出一出味就得㗎喇即係其實就好似爆蝦咁嘩而家，好香嗰啲蝦皮嗰啲味道出咗嚟啦。</p></a>
+				<a href="#00:32:17.50" id="00:32:17.50" class="lt" onclick="jumptoTime(1937, this.id)"><p>好，跟住我而家繼續有火，係咪?</p></a>
+				<a href="#00:32:22.10" id="00:32:22.10" class="lt" onclick="jumptoTime(1942, this.id)"><p>我倒返啲油落去，隔返啲油落去，做咩呢?呢個時候梗係炒肉絲啦，同啲肉絲走油，咁我可以俾多少少落去嘅，呢個時候就開始用豬油，嘩!豬油?梗係啦!</p></a>
+				<a href="#00:32:51.67" id="00:32:51.67" class="lt" onclick="jumptoTime(1971, this.id)"><p>一樣放肉絲時鋪平一點，енное</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:17.69" id="00:33:17.69" class="lt" onclick="jumptoTime(1997, this.id)"><p>хар，外，twenties，aaS，asil，extent，Kay，jest，wanting，pools，zooming，swag，unfold，includ，towers，fixes</p></a>
+				<a href="#00:33:15.03" id="00:33:15.03" class="lt" onclick="jumptoTime(1995, this.id)"><p>atic，construction，physicist，UH，relie señor，Daniel，LAUGHS，стро，Kurt，analyses，BOB，Resident unc trays，protagon icons，跳 tung，orders，Communications，plantation。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:17.29" id="00:33:17.29" class="lt" onclick="jumptoTime(1997, this.id)"><p>Officejekt，ved，ilton，вся</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:24.73" id="00:33:24.73" class="lt" onclick="jumptoTime(2004, this.id)"><p>film，يع，imir，一樣，tecnología，acted，ス，алась，cetera，sheerّ，ού заб，vaccine，ris，aphrag calm，screws，permaraidel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:12.11" id="00:33:12.11" class="lt" onclick="jumptoTime(1992, this.id)"><p>stitched，apped urge，現在可以反轉，大家看，我燒得夠，不要手多，是否不會黏鍋，大家要記住，想不黏鍋，要戒手多，大家看到嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:52.67" id="00:33:52.67" class="lt" onclick="jumptoTime(2032, this.id)"><p>想降溫，抽起鍋就可以了，不用開大火和關小火，開大火和關小火，多了動作，反而容易忘記，反而控制溫度不好，基本上炒到豬肉九成熟，現在又要用大火，又要製造煤蠟反應，可以了，現在九成熟了，想豬肉滑，最好不要太熟，我現在用鉗子將油留在鑊底，燒一燒它，為何要燒這麼久?</p></a>
+				<a href="#00:35:24.32" id="00:35:24.32" class="lt" onclick="jumptoTime(2124, this.id)"><p>如果不想它黏底，一定要燒久一點，ican acontece，כל</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:35:36.36" id="00:35:36.36" class="lt" onclick="jumptoTime(2136, this.id)"><p>vill queda，sucking，sau Father，humid，omat，refr，przek，çek，arkadaşlar，ち FCC，ankles，McM extraordinary</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:35:38.92" id="00:35:38.92" class="lt" onclick="jumptoTime(2138, this.id)"><p>cot，ahahaha，training</p></a>
+				<a href="#00:35:38.60" id="00:35:38.60" class="lt" onclick="jumptoTime(2138, this.id)"><p>命atl，UP，大家見到好乾身呀因為我先頭呢一下唔小心呢就畀咗冷水落去呀記住唔好過冷喔，咁佢自然呢就會係，就會係能夠呢就將嗰個嗰啲，繼續呢，炒乾水㗎喇呢個時候呢，我而家先炒咗一個禮拜先呀，呢個時候呢，落椰菜啦，蝦油去哪了?等一會兒，不用急，好，這時候我們把肉絲，肉絲不用多，現在放一半下去，然後加入一半的蝦皮。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:37:22.97" id="00:37:22.97" class="lt" onclick="jumptoTime(2242, this.id)"><p>然後開始調味，少許鹽，少許糖，加少許雞粉，好，這時候我們就放蔥下去，這樣就加少許蠔油，大概半茶匙就可以了，然後就加這個我新買回來的生抽，因為它不鹹的，所以大概放一茶匙半，如果嫌它不夠黑的話，就加少許老抽，這個完全是上海粗炒，好 這樣就完成了，其實不太久 全部33分鐘油沒有變油，好 這個時候我就。</p></a>
+				<a href="#00:39:24.72" id="00:39:24.72" class="lt" onclick="jumptoTime(2364, this.id)"><p>哎呀 大家等等，拿一隻傳統一點的碟子，基本上一個上菜粗炒的例牌就完成了，其實就不是很困難的，大家要記住 上菜粗炒最主要是你想食味好，不要當它是廣式炒粉麵，其實都是差不多技術的，但關鍵就是要懂得放蝦油，如果大家喜歡食上菜粗炒的話，建議大家去街市買一包舟山蝦皮，舟山蝦皮20元，一瓶有300ml。</p></a>
+				<a href="#00:40:58.73" id="00:40:58.73" class="lt" onclick="jumptoTime(2458, this.id)"><p>已經夠大家食半年有特，炒的時候很簡單，大家看到我用的時間是30分鐘，由豬肉未切 麵未煮 到我現在炒完為止，大家可以看到我有一個時間管理，大家又看到我先煮麵，煮麵煲水的期間我就做其他事，首先切肉絲 沖水 煲水，現在這些肉絲是很滑的，不是粗糙的，可以嗎，即煮即賣都可以做到這個效果嗎，當然可以。</p></a>
+				<a href="#00:41:59.73" id="00:41:59.73" class="lt" onclick="jumptoTime(2519, this.id)"><p>做足我先頭的功夫 煲水，關鍵有兩個步驟，第一是煲水 令到豬肉不好的味道出來，第二是放油要多一點，為何要多一點呢，如果大家有跟著我做醉雞鍋的話，大家就知道為何我這麼簡單，就是鹽、油、麵粉、水、油、麵粉、水，生粉也可以令雞肉更滑，因為我加了很多油，這是秘技，如果大家不想，有些人很抗拒蘇打粉。</p></a>
+				<a href="#00:42:47.38" id="00:42:47.38" class="lt" onclick="jumptoTime(2567, this.id)"><p>又說有毒，簡單點醃飯就多加點油，但多加點油又有人非議，簡單點來說，其實我們人類的一生，無論你想不想吃東西，其實都在吃毒藥，只不過那個毒是終期一生，終你的一生都不會令你病發，大家放心，大家這麼多病痛，其實有時候是天生的，沒辦法的，但相對於與其大家擔心有什麼疾病的問題，不如你擔心自己是否營養足夠，是不是。</p></a>
+				<a href="#00:43:30.04" id="00:43:30.04" class="lt" onclick="jumptoTime(2610, this.id)"><p>所以，經過這個程序去處理肉絲的時候，就算我原子原麥，從沒有變成有，肉絲還是很滑的，放心，好了，其他的大家跟著程序做就可以了，這個上海粗炒，正，OK，好不好，不說這麼多了，不耽誤大家時間了，大家這次又可以見識到，怎麼又煮又斬又切，有些朋友，他就，經常非要說我，有一個觀眾留言更搞笑，他說，你煮蝦。</p></a>
+				<a href="#00:44:11.40" id="00:44:11.40" class="lt" onclick="jumptoTime(2651, this.id)"><p>那個粉絲蝦煲，他說你煮蝦要煮一個小時，那些蝦還好吃的，我說你有沒有常識，煮就十幾二十分鐘的事，是不是，你不用斬不用切不用洗的，我給你看整個過程是怎麼樣，那你可以選擇來看的，大家說是不是，有時候就是這樣一回事，今天，其實大家看到的，我最後十分鐘都不用炒很多這個，這個上海粗炒，但是我前期用了多少。</p></a>
+				<a href="#00:44:39.02" id="00:44:39.02" class="lt" onclick="jumptoTime(2679, this.id)"><p>用了二十，三十分鐘，大家說是不是，二十八分多，OK，行不行，這個是現實，想吃好東西你一定要用時間的，OK，好了，不說這麼多了，我又不是生氣，不過拿這些case來恥笑一下而已，就是，古代漢獻帝，rồi，door，Trans，RNA，disad，highs indigenous，何不食肉味 嘩 大佬，已經是 通街都是災民了。</p></a>
+				<a href="#00:45:5.18" id="00:45:5.18" class="lt" onclick="jumptoTime(2705, this.id)"><p>周圍都是饑民了 你還要問他，何不食肉味 肉味大家知不知道是什麼，就是肉粥 肉羹，喂 大佬 沒東西吃了 吃薯皮都沒得吃了，你叫人吃肉羹 你是不是有病啊你，你十指不踮陽春水 你都不要說這些，這麼 咩咩的說話 大家說是不是，OK 現實點 想，食好嘢 一定要花點時間，雖然呢 這個時間就。</p></a>
+				<a href="#00:45:31.74" id="00:45:31.74" class="lt" onclick="jumptoTime(2731, this.id)"><p>即係成半個鐘頭有多 但係，其實大家如果入慣廚都知 想煮個好嘢食，你唔係煮公仔麵 煮公仔麵你煎隻蛋，煎啲午餐肉落去 你都要十幾分鐘 大家說是不是，是不是 所以，現在用多一倍時間 全部新鮮 由無變到有，何樂而不為呢 好食嘅嘢就要花時間，大家說是不是 好啦 不阻大家時間啦，拜拜 去食嘢啦 其實我仲有一碟炒嘅。</p></a>
+				<a href="#00:45:59.42" id="00:45:59.42" class="lt" onclick="jumptoTime(2759, this.id)"><p>呢碟我俾個仔食先，我自己炒一碟仲正嘅 拜拜，好啦 我諗下諗下 又話特別版，有咩咁特別啦 我都係俾埋大家睇下，依家燒夠鑊啦，都係嗰啲材料啦 不過呢，呢個特別版 我諗大家唔，我唔講呀 大家都知道架啦 係咩嘢呢，梗係食辣啦，OK 咁呢，我哋首先呢 就，落呢個，呢隻辣椒蝦米，辣椒醬啦 OK。</p></a>
+				<a href="#00:46:38.26" id="00:46:38.26" class="lt" onclick="jumptoTime(2798, this.id)"><p>等一等等呀 燒到好熱，做唔切呀，其實呢個都係好快嘅啫 OK，咁呢 就落少少落去啦，因為本身佢都有蝦米㗎嘛，咁所以呢 就好咩嘅，好 跟住 嘩 咁多辣椒，我都要食辣 咁呢個時候嗱，嗰個程序又有少少分別啦 呢個時候呢 我哋就爆香咗，嗰啲辣椒先，跟住之後呢 就落麵啦，咁就試半煎半炒啦，好 先炒香它。</p></a>
+				<a href="#00:47:29.47" id="00:47:29.47" class="lt" onclick="jumptoTime(2849, this.id)"><p>嘩 這個特別版夠勁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:47:36.47" id="00:47:36.47" class="lt" onclick="jumptoTime(2856, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:47:40.47" id="00:47:40.47" class="lt" onclick="jumptoTime(2860, this.id)"><p>然後我們就要加這個菜，好 大家有很多時候呢，有些觀眾不是很明白，因為我又和外面那些就不一樣，經常都質疑一樣東西，喂 你炒到半個小時才下菜熟不熟，大家一會兒都看到了，先炒熟它，其實上海粥炒是不辣的，不過我自己多嘴，喜歡吃辣的意思，我估計我兒子一定會搶我這碟來吃，因為他也喜歡吃辣，這個時候我們就要調味。</p></a>
+				<a href="#00:48:37.45" id="00:48:37.45" class="lt" onclick="jumptoTime(2917, this.id)"><p>一樣輕輕一點鹽，不用多，接著少許糖，然後輕輕一點雞粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:49:14.59" id="00:49:14.59" class="lt" onclick="jumptoTime(2954, this.id)"><p>ures blue，大家知道炒了這麼久，為什麼菜不熟呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:49:18.63" id="00:49:18.63" class="lt" onclick="jumptoTime(2958, this.id)"><p>我嫌它過熟了，這個時候調味炒勻了之後，我們就將肉絲倒回去，現在這個時候差不多可以了，好，接著將蔥頭全部放下去，接著少許蠔油，半茶匙左右，因為是一個泥排，一隻半的上海麵，接著就是加這個月和的豉油，大概一茶匙半，接著就加老抽，這樣顏色就會好看一點，嘩 這個顏色多漂亮，這個階段主要就是我們炒勻了調味料，炒出蔥香。</p></a>
+				<a href="#00:50:27.63" id="00:50:27.63" class="lt" onclick="jumptoTime(3027, this.id)"><p>我們就完成了，一個漂亮的上海粗炒，另外一個辣的版本就完成了，花多大家幾分鐘的時間，花多幾分鐘可以有另一個版本的靈感，我相信大家不會介意的，大家看到一個正常的炒麵的鑊是很乾淨的，但是大家眼尖的觀眾應該看到鑊是黏底的，為什麼呢?</p></a>
+				<a href="#00:51:0.63" id="00:51:0.63" class="lt" onclick="jumptoTime(3060, this.id)"><p>我就是懶不洗鑊，這隻鑊我洗過之後再炒，所以為什麼有時候是不懶的，可以這麼說 如果你想玩的話，我們作為家廚我們要做什麼呢?</p></a>
+				<a href="#00:51:13.63" id="00:51:13.63" class="lt" onclick="jumptoTime(3073, this.id)"><p>當然要想方法去走精扁了，大家說是不是呢?</p></a>
+				<a href="#00:51:22.63" id="00:51:22.63" class="lt" onclick="jumptoTime(3082, this.id)"><p>很多時候我經常都說的，這個世界是沒有難事的，關鍵是你有沒有心去解決，你沒有心去解決自然就沒有方法了，大家說是不是呢?</p></a>
+				<a href="#00:51:33.63" id="00:51:33.63" class="lt" onclick="jumptoTime(3093, this.id)"><p>如果你有心去解決的話，自然就有很多方法，是不是呢?</p></a>
+				<a href="#00:51:39.63" id="00:51:39.63" class="lt" onclick="jumptoTime(3099, this.id)"><p>又一碟炒完，我們兩仔爺一人一碟，一辣一不辣，不過我估計他一定會搶我的，不要緊 和他混在一起吃，一人吃一半，那碟我一人吃一半，那碟也很好吃 我試了味，只不過這碟辣，這碟連辣椒醬都不需要放了，好不好，不妨礙大家了，真的耽誤大家時間了，如果我準備好東西，炒一個粉 幾分鐘而已，好不好，如果大家喜歡上海粗炒。</p></a>
+				<a href="#00:52:9.63" id="00:52:9.63" class="lt" onclick="jumptoTime(3129, this.id)"><p>記住 上海粗炒的靈魂是蝦皮油，沒有了蝦皮油，味道差很遠，我不敢說難吃，但總是差點東西，有了蝦皮油之後，自然 我現在都已經流口水了，因為我之前吃過 好吃，那，如果大家，是沒有，不想搞那麼麻煩，弄一大罐去儲，買了舟山蝦皮回來，我們就逐次放，少許就可以了 不用多，那，當然 因為這樣炒 其實我覺得不夠香，但總比一些蝦的味道都好。</p></a>
+				<a href="#00:52:48.90" id="00:52:48.90" class="lt" onclick="jumptoTime(3168, this.id)"><p>可以嗎?可以，如果大家想製作蝦皮油 其實蝦皮油很簡單，我看看我需要不要拍一條專門的片，其實蝦皮油就是將一些滾油，你放一些蝦皮下去炒到乾身，即是好像炒蝦米那樣，炒到它差不多乾身 我們就可以處理它，就拿來用了 OK 好嗎，有機會我再拍那段片，和大家分享怎樣製作蝦皮油，其實蝦皮油不單止是炒上海粗炒要放的。</p></a>
+				<a href="#00:53:21.58" id="00:53:21.58" class="lt" onclick="jumptoTime(3201, this.id)"><p>好吃的，炒腸粉，嘩 一樣，即是有些人吃不到辣，經常都想試XO醬那種味道 是嗎，那放蝦皮油，放蝦皮油就不行了 不辣的 是嗎，至於怎樣製作蝦皮油 你想一想，看來我也要拍一條片和大家分享，怎樣製作蝦皮油，這些是江浙上海一帶，即是安徽一帶炒粉麵經常會用到的調味料，好了 不阻礙大家了，加起來都40多分鐘了。</p></a>
+				<a href="#00:53:55.26" id="00:53:55.26" class="lt" onclick="jumptoTime(3235, this.id)"><p>嘩 又會被人說，你炒一碟粉都要40多分鐘，喂 大哥 我從沒有到有，我還要炒兩個版本出來，值不值得40多分鐘 大家說是不是，好了 拜拜，去吃東西了 真的流口水，拜拜 再來 拜拜。</p></a>
+</div>
+	</body>
+</html>

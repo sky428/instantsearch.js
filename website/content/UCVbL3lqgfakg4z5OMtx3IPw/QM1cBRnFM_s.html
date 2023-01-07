@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》疫情特餐系列——鬼馬家鄉炒米粉，本來就是中式炒米粉，加入韓式薯粉絲之後，馬上變成特式炒米粉，簡單易做，宅在家恩物哦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QM1cBRnFM_s',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》疫情特餐系列——鬼馬家鄉炒米粉，本來就是中式炒米粉，加入韓式薯粉絲之後，馬上變成特式炒米粉，簡單易做，宅在家恩物哦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，大家看到畫面，猜不猜到我想做什麼?</p></a>
+				<a href="#00:00:8.48" id="00:00:8.48" class="lt" onclick="jumptoTime(8, this.id)"><p>看畫面是猜不到的，其實我在說廢話，開場白而已，這樣，就是這樣，大家都知道現在香港，疫情水深火熱，就是，隨時都會封城，封樓不在話下，大家在家一定會有很多雜糧，是不是?</p></a>
+				<a href="#00:00:34.98" id="00:00:34.98" class="lt" onclick="jumptoTime(34, this.id)"><p>除了米飯、肉類、蔬菜之外，一定有粉麵之類的，今晚我突然間不知道扯起哪條筋，突然間想吃炒米粉，哦!</p></a>
+				<a href="#00:00:47.98" id="00:00:47.98" class="lt" onclick="jumptoTime(47, this.id)"><p>怎知一看，哎呀!原來米粉不夠，只有四隻，不夠一屋三仔食的，那怎麼辦?</p></a>
+				<a href="#00:00:56.98" id="00:00:56.98" class="lt" onclick="jumptoTime(56, this.id)"><p>就去百佳買，怎知去百佳買，全部米粉被人一掃而空，幾乎連公仔麵都沒得買，唉!想想想，沒辦法，有什麼方法呢?</p></a>
+				<a href="#00:01:14.98" id="00:01:14.98" class="lt" onclick="jumptoTime(74, this.id)"><p>於是乎，我就買了什麼呢?</p></a>
+				<a href="#00:01:18.98" id="00:01:18.98" class="lt" onclick="jumptoTime(78, this.id)"><p>就買了一些，韓國的薯粉，就混合米粉一起炒，我叫這東西叫什麼呢?</p></a>
+				<a href="#00:01:29.98" id="00:01:29.98" class="lt" onclick="jumptoTime(89, this.id)"><p>就叫做，鬼馬家鄉炒米粉。</p></a>
+				<a href="#00:01:34.98" id="00:01:34.98" class="lt" onclick="jumptoTime(94, this.id)"><p>我現在放剛剛中響，因為薯粉和米粉是不同時間的，所以我先放薯粉，大家看到我已經煮了三分鐘，薯粉五到六分鐘就OK了，現在我放什麼呢?</p></a>
+				<a href="#00:01:50.98" id="00:01:50.98" class="lt" onclick="jumptoTime(110, this.id)"><p>我就放米粉，米粉之前我都說過，我喜歡吃這個，現在近年轉態，就轉了吃這個河原米粉，河原米粉呢，用來炒很好吃的，現在我多教三分鐘，河原米粉就這樣，煮三分鐘就炒就對了，五分鐘用來吃就對了，用來放湯吃就對了，OK，我現在先計時，然後再慢慢介紹材料，鬼馬，為什麼叫做鬼馬炒家鄉炒米粉呢?</p></a>
+				<a href="#00:02:30.15" id="00:02:30.15" class="lt" onclick="jumptoTime(150, this.id)"><p>第一，就是這個米粉混合這個什麼?</p></a>
+				<a href="#00:02:35.15" id="00:02:35.15" class="lt" onclick="jumptoTime(155, this.id)"><p>廣東河原米粉混合這個韓國薯粉，這樣炒是可以的，大家都知道鴛鴦粉，炒鴛鴦粉，鴛鴦粉，就是粉絲，粉絲是綠豆，現在我改用的是薯粉，OK?</p></a>
+				<a href="#00:02:51.15" id="00:02:51.15" class="lt" onclick="jumptoTime(171, this.id)"><p>為什麼會叫做鬼馬呢?</p></a>
+				<a href="#00:02:53.15" id="00:02:53.15" class="lt" onclick="jumptoTime(173, this.id)"><p>因為是這一盤東西，這一盤東西是什麼呢?</p></a>
+				<a href="#00:02:57.15" id="00:02:57.15" class="lt" onclick="jumptoTime(177, this.id)"><p>又是剩下的東西，所以說家廚一定要想辦法把廚餘都燒好，剩下的東西是什麼呢?</p></a>
+				<a href="#00:03:3.15" id="00:03:3.15" class="lt" onclick="jumptoTime(183, this.id)"><p>前晚我做了一個蘿蔔，煮油鵝蘿蔔牛腩煲，這個用來蘸牛腩用的，有什麼呢?有廣東辣椒醬，有這個豉油，熟油，OK?</p></a>
+				<a href="#00:03:20.15" id="00:03:20.15" class="lt" onclick="jumptoTime(200, this.id)"><p>我現在就加一點糖，加一點老抽，其實廣東辣椒醬配合韓式的年糕或者薯粉是非常合適的，因為韓國的辣椒醬都是酸酸甜甜的，除了這個之外，沒有肉是不行的，我又開了兩罐183克的火腿豬肉，OK?兩罐，因為一家人吃嘛，有這個椰菜絲，有蔥，還有三隻雞蛋，這個整體上就構成了鬼馬家鄉炒米粉的基本材料，現在差不多可以了，我攪一攪它。</p></a>
+				<a href="#00:04:32.03" id="00:04:32.03" class="lt" onclick="jumptoTime(272, this.id)"><p>這個我就一刀不剪了，OK?</p></a>
+				<a href="#00:04:36.03" id="00:04:36.03" class="lt" onclick="jumptoTime(276, this.id)"><p>大家看看我如何快速地，可以由煮到炒，炒好米粉到底是什麼樣子，我有個朋友，他說他老婆很喜歡吃家鄉炒米粉，想問我可不可以拍一條片教一下，學一下，我說可以，沒問題，雖然今晚是鬼馬炒米粉，不過其實是由家鄉炒米粉變出來的。</p></a>
+				<a href="#00:05:8.03" id="00:05:8.03" class="lt" onclick="jumptoTime(308, this.id)"><p>OK?，好了，現在可以了，關火了，然後我們要做什麼呢?</p></a>
+				<a href="#00:05:14.03" id="00:05:14.03" class="lt" onclick="jumptoTime(314, this.id)"><p>我這個動作就不給大家看了，OK?</p></a>
+				<a href="#00:05:17.03" id="00:05:17.03" class="lt" onclick="jumptoTime(317, this.id)"><p>因為單人操機，我先過冷河，等我一會兒。</p></a>
+				<a href="#00:05:39.61" id="00:05:39.61" class="lt" onclick="jumptoTime(339, this.id)"><p>我繼續開火，煎午餐肉，我剛才不是說要用火腿豬肉，為甚麼呢?</p></a>
+				<a href="#00:05:59.61" id="00:05:59.61" class="lt" onclick="jumptoTime(359, this.id)"><p>因為近年除非你買很貴的三花肉或日本五餐肉，他們做得非常好，一般的梅林牌五餐肉和內地產的，我覺得跟以前差很遠，加少許油，為甚麼呢?我等一會先燒一燒鑊，煎午餐肉。</p></a>
+				<a href="#00:06:48.61" id="00:06:48.61" class="lt" onclick="jumptoTime(408, this.id)"><p>所以近年我比較喜歡用火腿午餐肉，火腿午餐肉我喜歡口感比較實，我都不打算剪，照樣給大家看看，給大家看看質感的變化，如何煎得好，我現在不收火，先煎一煎才收火，這樣可以快速地令到五餐肉表面金黃，稍微煎一煎之後，就可以反轉它，攪亂它，煎午餐肉其實由頭到尾都可以不用收細火，不過大家要留心它的質感變化。</p></a>
+				<a href="#00:08:25.26" id="00:08:25.26" class="lt" onclick="jumptoTime(505, this.id)"><p>即是盡量不要讓它煎焦，因為通常煎午餐肉我們都是要快速為主，即是吃得這些午餐肉，當然如果你想煎得更好效果更好，收細火慢慢煎，但如果你要這樣煎的話，煎午餐肉起碼要煎十分鐘，我現在可能說兩三分鐘就可以了，在這個過程我經常都跟大家說，煎東西千萬不要心急，不過如果大火煎午餐肉，除了第一次落鑊可以慢慢等之外。</p></a>
+				<a href="#00:09:4.26" id="00:09:4.26" class="lt" onclick="jumptoTime(544, this.id)"><p>其他要快手些勤力些攪拌，否則其中一邊燒焦，另一邊完全不行，大家可以留心鏡頭入面，午餐肉的分別，有些已經煎得很金香，為何我經常攪拌它呢，除了不要令到午餐肉過分焦之外，我還有這樣攪拌是為了和鑊降溫，因為不斷大火燒，易潔鑊很容易壞，相對地短命些，現在有部份已經煎得很金香，大家也知道午餐肉越煎得越金香，表皮越金香就越好吃。</p></a>
+				<a href="#00:10:2.26" id="00:10:2.26" class="lt" onclick="jumptoTime(602, this.id)"><p>越香口，一粒粒我無法逐粒翻，所以我唯有勤力些攪動，令到它翻動，大家看到嗎，和之前的不一樣，開始變成金黃色，這樣還未可以。</p></a>
+				<a href="#00:10:36.54" id="00:10:36.54" class="lt" onclick="jumptoTime(636, this.id)"><p>煎午餐肉是不用太多油的，不要說近年很多午餐肉越來越少鹽少油，另一方面其實午餐肉本身都會出油，就算現在少鹽少油都會出油，所以少少油就可以了，等它能夠煎得起就可以了，它本身的油會卸出來，這樣就能夠煎得很香，給大家看看，現在大概是七八成熟，再煎香一點，因為我兒子喜歡吃這麼香的午餐肉，一般來說煎到現在這樣就已經夠乾身了。</p></a>
+				<a href="#00:11:36.38" id="00:11:36.38" class="lt" onclick="jumptoTime(696, this.id)"><p>好了，可以了，我不會關火，因為我會持續燒它，準備要炒粉了。</p></a>
+				<a href="#00:12:0.35" id="00:12:0.35" class="lt" onclick="jumptoTime(720, this.id)"><p>因為現在要炒粉，所以油要多一點，否則粉炒不起來，仲要落多少少呀 因為有五隻粉咁多，唔好睇佢而家落咁多油喎，因為米粉呢 粉類呢係好吸油嘅，再加上等陣間我會放菜落去呢 即係亦都會吸，部分嘅油嘅 所以大家唔使擔心話放得多油 反而你放得少油呢。</p></a>
+				<a href="#00:12:51.26" id="00:12:51.26" class="lt" onclick="jumptoTime(771, this.id)"><p>就炒唔起 如果大家炒過粉都知㗎啦，呢個時候第一個 家鄉炒米粉就要落蛋先，五隻粉 六隻粉就放三隻蛋啦，呢個時候即刻攪勻啲蛋佢。</p></a>
+				<a href="#00:13:25.53" id="00:13:25.53" class="lt" onclick="jumptoTime(805, this.id)"><p>炒至八、九成熟，然後放粉，這個時候我要用筷子，一邊用筷子一邊用夾子，否則粉末是撐不開的，大家看到嗎?我要雙手才可以炒得起，因為我現在炒的米粉已經有三個瀝牌那麼多，蛋炒碎了就隨它。</p></a>
+				<a href="#00:14:22.33" id="00:14:22.33" class="lt" onclick="jumptoTime(862, this.id)"><p>這個時候我們就放午餐肉進去，這個時候是不用調味的，主要調味的來源在哪裏呢?</p></a>
+				<a href="#00:14:40.16" id="00:14:40.16" class="lt" onclick="jumptoTime(880, this.id)"><p>主要調味的來源就在這盤東西那裏，這盤東西我先前都介紹了，有生抽、有辣椒醬、有老抽、有糖、有蠔油，還有少許雞粉，大家看不看到?</p></a>
+				<a href="#00:15:13.13" id="00:15:13.13" class="lt" onclick="jumptoTime(913, this.id)"><p>有油，它碰到油之後就開始散開了，這個時候我們就要下菜了，先不要下菜，因為我怕大家誤會，椰菜可以早下，但生菜就不要太早下，要炒好才下，否則很快熟過濃，這個時候我們調味了，放了一盤東西進去，嘩，好熱呀，大家看不看到顏色開始變乾炒鵝的顏色，因為我放了老抽，放了廣東辣椒醬，可能大家還嫌不夠過癮，可以放麻辣醬。</p></a>
+				<a href="#00:16:17.13" id="00:16:17.13" class="lt" onclick="jumptoTime(977, this.id)"><p>其實我們在家中家廚炒粉是完全可以自由式的，你喜歡放什麼都可以，最重要是鹹度適中就可以了，可以嗎?</p></a>
+				<a href="#00:16:31.13" id="00:16:31.13" class="lt" onclick="jumptoTime(991, this.id)"><p>因為麻辣醬是不辣的，所以我就放了幾匙進去，對我來說不辣，有些人就覺得很辣，好，這個時候我們就開始放菜了，如果大家掌握火候可以比較準的話，就學我先頭這樣，可以放完菜才調味，OK，行不行?</p></a>
+				<a href="#00:17:2.29" id="00:17:2.29" class="lt" onclick="jumptoTime(1022, this.id)"><p>但是我現在這個視頻，這個影片為了遷就大家，我就調完味才放菜，因為怕大家掌握不好，菜炒得過熟，OK，拿個夾，手不是很遷就，拿個鏟子，大家可以看到，到現在我都未落蔥，好香的麻辣味。</p></a>
+				<a href="#00:17:56.62" id="00:17:56.62" class="lt" onclick="jumptoTime(1076, this.id)"><p>我先頭介紹廣東辣椒醬，我就用這隻半億華記，我買一斤裝即是七百克裝，為甚麼呢，因為我們家裏吃得好辣，我家裏只辣椒醬都有五六款，中式辣椒醬東南西北都有，還有泰式辣醬，韓式就不得了。</p></a>
+				<a href="#00:18:29.62" id="00:18:29.62" class="lt" onclick="jumptoTime(1109, this.id)"><p>現在這時菜差不多了，我們可以放蔥，最後放蔥，這時放蔥不要太快熄火，要炒到蔥香聞到為止，即是炒到蔥香聞到為止，聞到蔥香代表炒米粉，就OK了，蔥香出來了可以熄火了，真的很熱，我應該用一雙專門炒麵的長筷子，這個桂馬家鄉炒米粉就完成了，有韓式薯粉，再加上廣東河原米粉，有雞蛋，有午餐肉，給大家看近鏡。</p></a>
+				<a href="#00:19:45.62" id="00:19:45.62" class="lt" onclick="jumptoTime(1185, this.id)"><p>炒得如何。</p></a>
+				<a href="#00:19:48.62" id="00:19:48.62" class="lt" onclick="jumptoTime(1188, this.id)"><p>大家看看柔軟度，給大家看，不好意思，大家看到嗎，柔軟度剛剛好，韓式薯粉會變成怎樣呢，韓式薯粉是這樣的，大家看看，OK 行不行，看到嗎，這樣不同的口感 幾過癮，OK 這樣一個鬼馬家鄉炒米粉就完成了，OK 多謝大家收看，等一下 我給大家看一個近鏡，我先關機，OK，大家看看，這個鬼馬家鄉炒米粉的樣子，OK嗎?</p></a>
+				<a href="#00:20:50.68" id="00:20:50.68" class="lt" onclick="jumptoTime(1250, this.id)"><p>接受嗎?</p></a>
+				<a href="#00:20:53.30" id="00:20:53.30" class="lt" onclick="jumptoTime(1253, this.id)"><p>因為現在疫情的關係，隨時都會封區，大家應該家中各種罐頭、蔬菜、粉麵都有，我今晚特意，雖然我考慮了很久拍這條片，我覺得大家都在投行，吃米粉不只是放湯，炒米粉不只是一樣，可以嗎?</p></a>
+				<a href="#00:21:20.00" id="00:21:20.00" class="lt" onclick="jumptoTime(1280, this.id)"><p>這個賣相OK嗎?有吃肉嗎?</p></a>
+				<a href="#00:21:23.00" id="00:21:23.00" class="lt" onclick="jumptoTime(1283, this.id)"><p>我再總結一下，第一，米粉大概煮三分鐘，然後過冷河，然後要瀝乾水，炒粉之前，先煎好午餐肉，大家猜不到，我先放雞蛋，炒雞蛋，炒到雞蛋八、九成熟，我才放米粉，如果你對自己的技巧有信心，放完菜才調味，但如果對自己的時間掌握不準確，我建議大家，像我之前的影片，先調味再放菜，我特意給大家看，證明我自己要先放菜。</p></a>
+				<a href="#00:22:21.00" id="00:22:21.00" class="lt" onclick="jumptoTime(1341, this.id)"><p>最後炒均勻，放蔥，炒一會，一聞到蔥香便可以收火，可以吃了，可以嗎?</p></a>
+				<a href="#00:22:32.00" id="00:22:32.00" class="lt" onclick="jumptoTime(1352, this.id)"><p>我不說話了，去吃東西了，再見，在疫症期間，大家可以在家裡炒米粉，不一定要很豪華，不一定要像學至酒樓般正式，我們只要發揮創意，什麼都可以煮一餐，對吧?</p></a>
+				<a href="#00:22:52.00" id="00:22:52.00" class="lt" onclick="jumptoTime(1372, this.id)"><p>謝謝大家收看，再見。</p></a>
+</div>
+	</body>
+</html>

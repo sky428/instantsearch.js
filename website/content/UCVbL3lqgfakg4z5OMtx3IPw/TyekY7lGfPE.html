@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豬手撈麵，簡單，直接、快速但不粗暴，別以為專業的味道就很複雜，其實可以很簡單，大家快來試做吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TyekY7lGfPE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豬手撈麵，簡單，直接、快速但不粗暴，別以為專業的味道就很複雜，其實可以很簡單，大家快來試做吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，晚上好!</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>咁呢，呢度又搞乜鬼呢?</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>又對住隻鑊，喂，大佬，半夜三更，肚餓呀，宵夜呀!</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>咁呀之前咪同大家介紹咗，分享咗一個，呢個南乳炆豬手呀嘛?</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>咩有豬手?梗係，大佬，呢個雲吞麵店最正嘅係牛腩撈麵，一日就豬手撈麵㗎啦，係咪呀?</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>咁呀，一日就整個豬手撈麵，煲滾咗嘢水，唔使調味，乜都唔使㗎!</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>咁呢，咁啱過年就有人送呢啲嘢，OK?</p></a>
+				<a href="#00:00:38.00" id="00:00:38.00" class="lt" onclick="jumptoTime(38, this.id)"><p>四隻，兩隻嘢食，宵夜，OK?</p></a>
+				<a href="#00:00:42.00" id="00:00:42.00" class="lt" onclick="jumptoTime(42, this.id)"><p>跟住煲滾咗水，掟落去，煮啦，呢度一cut過，一take過我啦，我唔打算cut㗎啦，OK?</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>咁呢啲麵點為之煮得好呢?即係點為之滷得好呢?</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>就係滷散咗佢就得㗎啦，OK?得唔得?</p></a>
+				<a href="#00:01:0.00" id="00:01:0.00" class="lt" onclick="jumptoTime(60, this.id)"><p>咁呀，介紹下材料先啦，梗係，嬰嬰，嫌呢個撈麵唔夠味呢，整啲薑蔥落去，好正㗎!</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>大家等間睇下我點樣整㗎喎!</p></a>
+				<a href="#00:01:14.00" id="00:01:14.00" class="lt" onclick="jumptoTime(74, this.id)"><p>咁呢，跟住完之後，喂!梗係要有豬油呀，大佬呀!撈麵點可以無豬油㗎?</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>雲吞麵當個靈魂嚟㗎，OK?得唔得?</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>佢哋嘅撈麵點解咁好食㗎?因為落咗豬油呀嘛!</p></a>
+				<a href="#00:01:31.00" id="00:01:31.00" class="lt" onclick="jumptoTime(91, this.id)"><p>咁除咗呢樣嘢之外呢，咁呀梗係蠔油啦!</p></a>
+				<a href="#00:01:36.00" id="00:01:36.00" class="lt" onclick="jumptoTime(96, this.id)"><p>你鍾意用你X記又好，冠億X記都好，陶大都好，whatever啦，OK?</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>有咩蠔油用咩蠔油?</p></a>
+				<a href="#00:01:44.00" id="00:01:44.00" class="lt" onclick="jumptoTime(104, this.id)"><p>好啦!咁呀，我終於出動我對撈麵筷子啦!</p></a>
+				<a href="#00:01:48.00" id="00:01:48.00" class="lt" onclick="jumptoTime(108, this.id)"><p>普通筷子兩倍長嘅，OK?</p></a>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>咁呀可以撈麵嘅時候唔使碌親手呀嘛!</p></a>
+				<a href="#00:01:59.13" id="00:01:59.13" class="lt" onclick="jumptoTime(119, this.id)"><p>咁呢邊呢唔使理佢嘅，就大概分零兩分鐘呢佢就會散㗎喇ok，喺呢個時候呢我哋就唔好落薑蔥先喎薑蔥係點呢，臨上，臨上，要撈嘅時候先至好落薑蔥熄咗火之後先撈薑蔥，因為薑蔥係唔使好熟嘅就咁焯一焯就得㗎喇ok，如果唔係嘅話呢，過分地熟呢，薑蔥過分熟嘅話呢咁就會走曬啲味嘅，呢個時候呢大家見到我係攞筷子唔係撈佢喎，係夾佢喎點解呢咁樣可以幫助啲面呢更快去散嘅。</p></a>
+				<a href="#00:02:41.87" id="00:02:41.87" class="lt" onclick="jumptoTime(161, this.id)"><p>但係如果呢個時候你走去撈佢嘅話佢會斷嘅ok因為佢未夠軟身，慢慢呀，係咪到，我咁樣撳一撳佢喇而家開始散喇，佢開始散嘅時候呢先撩佢，而家好興㗎啦咩蝦子麵呀鮑魚麵呀嗰啲ok，都幾方便嘅但係如果冇配料我又覺得唔好食喎我寧願食出前一丁算，雖然佢都有配嗰啲湯包ok，咁呢佢打散咗之後呢稍為再錄一錄佢啦，四個。</p></a>
+				<a href="#00:03:23.61" id="00:03:23.61" class="lt" onclick="jumptoTime(203, this.id)"><p>唔睇唔睇唔覺佢人仔細細原來咁多喎死啦多咗啲，食宵夜唔使食到咁heavy呀當食飯咁樣真係，呢個時候呢稍為再滾一滾佢就ok㗎喇打散咗之後呀，如果驚住佢唔知熟唔熟呢，你可以夾少少去試試呀都幾堅韌呀，幾好喎第一次食，打蛋漿之後，再大概30秒至50秒左右，一分鐘內，這個時候可以熄火，這個時候才撥點薑蔥下去。</p></a>
+				<a href="#00:04:20.82" id="00:04:20.82" class="lt" onclick="jumptoTime(260, this.id)"><p>搓一搓它，好，這個時候我們就出動我們的大鶴，大罩尼，我家裡什麼都有的，雖然廚房很小，好，不要浪費薑蔥，這個時候，這個篩子就不和綠面檔師傅的大罩尼一樣，所以可能我的動作會笨拙一點，這個時候稍微搖一搖它，搖一搖水，這個時候我們就不要動它，原地放豬油，多少隨意，但是一定要保證它所有面都要有為止，然後直接在這個罩尼搖一搖。</p></a>
+				<a href="#00:05:25.98" id="00:05:25.98" class="lt" onclick="jumptoTime(325, this.id)"><p>如果是面檔的話，它的罩尼夠大我就燒了，這樣，搓一搓它之後，然後翻一翻它，這樣就OK了，行不行，然後還沒行的，我們要放什麼呢?放蠔油，直接在篩子那裡，蠔油不用多，適量就可以了，因為等下豬手本身就會有味道，好，然後攪拌均勻，本來面檔用篩子直接攪拌，它就燒了一些很大隻的，不知道大家有沒有見過，但是我這隻篩子就小一點。</p></a>
+				<a href="#00:06:21.98" id="00:06:21.98" class="lt" onclick="jumptoTime(381, this.id)"><p>這個罩尼小一點，所以我就拙劣一點動作，拌勻後，好了，等一下，給一塊板去展示一下，然後就放上去，然後把蔥、薑撥上去，大家有無食肉呀?</p></a>
+				<a href="#00:07:13.78" id="00:07:13.78" class="lt" onclick="jumptoTime(433, this.id)"><p>跟住之後呢，我哋就整熱返啲豬手啦，跟住之後我哋就可以咩啦，我哋就可以呢，係，舀上面好冇?</p></a>
+				<a href="#00:07:32.78" id="00:07:32.78" class="lt" onclick="jumptoTime(452, this.id)"><p>其實麵檔呢，嗰啲咩呢就好簡單嘅啫，擀好啲麵，跟住喺個熱鍋嗰度就，舀啲豬手落去OK，我這個比麵檔更好，為甚麼呢?</p></a>
+				<a href="#00:07:59.65" id="00:07:59.65" class="lt" onclick="jumptoTime(479, this.id)"><p>因為有花生嘛，是吧?</p></a>
+				<a href="#00:08:7.65" id="00:08:7.65" class="lt" onclick="jumptoTime(487, this.id)"><p>擺好一點，待會要拍個好照片，好，先把汁滲上去，搞掂，食碗麵，呢塊薑，我最鍾意食炆完嘢嗰啲薑㗎啦，一個豐富嘅宵夜咁就完成啦，抹一抹佢先，抹一抹隻碟邊先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:58.68" id="00:08:58.68" class="lt" onclick="jumptoTime(538, this.id)"><p>好唔好嘅呀，接唔接受到呀?，呢個份量比麵檔嘅大好多呀，抵食好多呀，豬手撈麵咁就完成啦，咁當然前提就係我哋喺屋企要炆咗隻豬手先啦，如果冇炆到豬手嘅話呢，咁就比較窄細啲，如果炆好咗之後呢，咁我哋就可以咁樣食啦，呢個宵夜風格，我哋就食咗呢個豬手啦，呢個宵夜豐富豐富呀，兩仔嘢食嘅，OK，去食嘢啦，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

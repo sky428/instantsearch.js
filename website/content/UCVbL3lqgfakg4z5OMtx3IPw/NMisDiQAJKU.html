@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》疫情特餐系列——蠔油薑蔥撈麵，簡單快捷不煩複，但卻美味非常，不用10分鐘就有得吃，最適合新手製作！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NMisDiQAJKU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》疫情特餐系列——蠔油薑蔥撈麵，簡單快捷不煩複，但卻美味非常，不用10分鐘就有得吃，最適合新手製作！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.03" id="00:00:0.03" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，先前煲了粥，有粥吃怎可不吃麵，炒麵或撈麵呢?</p></a>
+				<a href="#00:00:14.03" id="00:00:14.03" class="lt" onclick="jumptoTime(14, this.id)"><p>豉油王炒麵大家見得多，網上很多人介紹，我又不多費唇舌，我今晚想跟大家分享一個家鄉撈麵，我先煲了水，其實撈麵，我之前已跟大家分享過豬手撈麵，標準麵檔做法，但我可以跟大家說，是否這世界上只有一種方法撈麵呢?當然不是，這是另一種方法撈麵，看大家喜歡那一種，都是齋撈麵，先放味，原來可以這樣，放少許味。</p></a>
+				<a href="#00:01:3.03" id="00:01:3.03" class="lt" onclick="jumptoTime(63, this.id)"><p>如果齋撈麵甚麼都不放，味道會變得很寡，鹽糖味，一人一匙，我用的是炒麵餅，用兩隻，其實這個撈麵又叫家鄉撈麵，有沒有根據呢?</p></a>
+				<a href="#00:01:34.03" id="00:01:34.03" class="lt" onclick="jumptoTime(94, this.id)"><p>有些人會問你哪裏是家鄉，我不知哪裏是家鄉，但家鄉撈麵不是我家鄉，我在小時候在調景嶺讀書，讀寄宿學校，自報家門，在武德小學讀書三四年，在武德小學走下去有條大街，大家應該知道，如果曾經去過調景嶺，在武德小學走下去大街路口前有間士多，那時我記憶非常深，不是因為它有很多食物和飲品，而是因為撈麵，到今時今日，即使是很高級的麵家，都吃不完。</p></a>
+				<a href="#00:02:29.10" id="00:02:29.10" class="lt" onclick="jumptoTime(149, this.id)"><p>他只賣兩種撈麵，一種是齋撈麵，另一種是牛腩撈麵，碎腩，那時大家窮，碎腩又便宜，現在碎腩都吃得很貴，所以他只做這個撈麵，他每天都會門庭若市，通常買一隻手拿起，用白色膠袋拿起包一包，那包我忘了是兩元雞還是五元雞，那時都很貴，好像是兩元雞還是一元雞，808、120元左右，我記得那時的味道到現在。</p></a>
+				<a href="#00:03:15.10" id="00:03:15.10" class="lt" onclick="jumptoTime(195, this.id)"><p>其實很多時候我們做食物不需要太複雜，豉油王炒麵，又說要加芽菜、韭菜、豬鰻柱，很多配料，但其實齋撈麵都很好吃，今日我跟大家分享一個齋撈麵，現在麵散了，再煮一會便可以，怕它變乾的話，一樣放薑蔥，跟薑蔥撈麵一樣，我們煮的時候不用放，等到收火了，稍微攪拌一下便可以，大概煮滾了，麵散了之後再煮一會。</p></a>
+				<a href="#00:04:2.42" id="00:04:2.42" class="lt" onclick="jumptoTime(242, this.id)"><p>因為我們現在是撈麵，不是放湯，所以我們再煮一會，大概一分鐘多一點，這個時候關火，然後把薑蔥放下去，留一點點待會裝飾拍照用，這樣就可以令到麵入味，今日我不是想學麵檔那種，烧鸡上面，就去拌面，因为太多了，比昨天还要多，因为是炸面，我沥干水之后，沥干水之后，然后就倒到碟子上，那就。</p></a>
+				<a href="#00:05:10.07" id="00:05:10.07" class="lt" onclick="jumptoTime(310, this.id)"><p>撈出姜葱，我都係一刀不剪，其實就好快手，幾分鐘，十分八分鐘嘅時間，跟住之後呢我就要利用返嗰隻鑊去撈，因為太多面啦，你一隻碟係撈唔起嘅，大家等等先，好啦，跟住倒落去啦，咁撈面呢其實最緊要嘅partner係乜嘢呀，我係豬手撈面嗰度已經講過，你想做到面檔嘅專業嘅味道呢一定係要落豬油嘅，ok，豬油，豬油瓊，咁我搖一搖佢先。</p></a>
+				<a href="#00:06:4.35" id="00:06:4.35" class="lt" onclick="jumptoTime(364, this.id)"><p>豬油多與少就憑大家，基本上就一定要足夠每一條面都要掂到豬油為止，ok，鍋夠大，所以我可以動作大一點，那天豬手撈麵，我就勁手勁腳，好了，跟著之後，只撈麵，沒有肉，所以我們要怎樣呢?</p></a>
+				<a href="#00:06:43.99" id="00:06:43.99" class="lt" onclick="jumptoTime(403, this.id)"><p>我們要先放點豉油，大概一茶匙半，先放點底味，再攪拌均勻，然後就放蠔油，哎呀!新鮮蠔油還沒開蓋，等我一會兒，放蠔油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:15.99" id="00:07:15.99" class="lt" onclick="jumptoTime(435, this.id)"><p>新蠔油比較難攪拌，因為這個麵餅很大，其實是兩個例牌，所以我要放蠔油，因為是單撈，所以要放四匙左右，四茶匙</p></a>
+				<a href="#00:07:39.99" id="00:07:39.99" class="lt" onclick="jumptoTime(459, this.id)"><p>然後就攪拌均勻，四茶匙，好了，大家看到，我就算攪拌均勻，都不夠顏色，不夠好看，所以這個時候要放什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:59.99" id="00:07:59.99" class="lt" onclick="jumptoTime(479, this.id)"><p>放老抽，這個老抽原來可以這樣用，不一定要煮東西才用，單撈也可以用，我們就攪拌均勻，這樣的方法，會比炒豉油王炒麵簡單，但一樣好吃，這個有兒時記憶，在調景嶺大街上的士多，專門賣撈麵，先攪拌均勻，這個不是炒麵，沒有開火，攪拌均勻後就可以完成了，一個薑蔥撈麵就完成了，幾分鐘就完成了，很香蠔油味，很香豬油味。</p></a>
+				<a href="#00:09:16.00" id="00:09:16.00" class="lt" onclick="jumptoTime(556, this.id)"><p>因為不是炒，其實送粥也很適合的，因為可以不用那麼熱氣，好，完成了，放蔥，我給大家看看，等一下，慢慢抹碟邊，賣相還算可以，大家可以試下一個簡單的做法，先講一下要點，因為我不是炒，也沒有其他配料，只是撈麵，所以我們要撈麵的時候要放少少味，這是第一，第二，都是一樣，薑蔥想好味的話，不是要煮的，是關火後，輕輕搓一搓就已經好出味。</p></a>
+				<a href="#00:10:31.00" id="00:10:31.00" class="lt" onclick="jumptoTime(631, this.id)"><p>如果用來煮，反而會弄走，分薄它的氣味，第三，撈麵其中一個最主要的材料，想好味一定是豬油，就算推熱球，也要用熟油，這個很快，幾分鐘就完成了，十分八分鐘，七八分鐘就完成了，很好味，不是開玩笑的，能量也夠，因為有足油水，希望大家喜歡，可以跟著一起做，幾分鐘就完成了，比吃出前一丁好，比做一場大龍鳳去炒麵好。</p></a>
+				<a href="#00:11:12.00" id="00:11:12.00" class="lt" onclick="jumptoTime(672, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>
