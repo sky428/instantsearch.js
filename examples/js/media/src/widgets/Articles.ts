@@ -27,7 +27,7 @@ type Hit = {
 };
 
 const getBlogPostUrl = (hit: Hit) =>
-  `https://charming-malabi-744fc4.netlify.app/content/${hit.channel_id}/${hit.objectID}`;
+  `https://charming-malabi-744fc4.netlify.app/content/${hit.channel_id}/${hit.objectID}.html`;
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
   //const author = hit.coauthors && hit.coauthors[0];
