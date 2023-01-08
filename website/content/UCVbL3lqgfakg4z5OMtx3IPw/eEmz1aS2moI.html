@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——咸魚雞粒豆腐煲，只要程序做對了，不管是喜歡多加水還是煮乾水，都是讓人回味無窮的送飯神器！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'eEmz1aS2moI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——咸魚雞粒豆腐煲，只要程序做對了，不管是喜歡多加水還是煮乾水，都是讓人回味無窮的送飯神器！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚好。</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>先頭已經預告了，今日會做咸魚雞粒豆腐煲。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>咸魚雞粒豆腐煲，其實先頭就話係咸魚雞粒豆腐煲，但係我諗下，無豆腐好似唔多店，無油，唯有用罐大油。</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>一樣是配口訣，燒鑊，落油，燒鑊，見煙，落油，跟住再見煙。</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>而家我要煎咸魚先，所以就要收細個火。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>等佢燒一燒，跟住再見煙，跟住之後，介紹下先，咸魚雞粒豆腐煲，就有咸魚，一定要啦，跟住之後少少蒜蓉加辣椒啦，OK?</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>而家我放咗啲咸魚落去煎先。</p></a>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>我地家廚永遠我都係嗰句，家廚你想做到職業廚房個效果，其實唔難嘅，但係工序上面我地必須要改良，OK?</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>咁如果係職業廚房，佢地預先就炸咗好多咸魚喺度，咁我地就係即場炸，唔可能炸咁多，都唔知幾時食，係咪?</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>咸魚可以擺喺度啫，係咪?即係新鮮嘅咸魚。</p></a>
+				<a href="#00:01:40.00" id="00:01:40.00" class="lt" onclick="jumptoTime(100, this.id)"><p>咁所以呢，我地呢，就要改良個工序啦，咁每一次就切少少嘅咸魚，煎，煎香佢。</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>點解一定要煎香佢?因為咁樣可以除腥嘅，OK?</p></a>
+				<a href="#00:01:57.00" id="00:01:57.00" class="lt" onclick="jumptoTime(117, this.id)"><p>咁先頭我就話啦，喂，我本來夏天唔應該整個咸魚粒豆腐煲㗎，但係點解最後尾改成個煲呢?</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>因為呢，如果有咸魚你唔燉一燉佢嘅話呢，嗱，呢一句說話呢，如果大家曾經係水面人，或者係曾經食過水面人煮嘅豆腐，咁呢，就一定係知道我呢個說話嘅意思啦，要燉一燉佢呢，先至係可以正個煲。</p></a>
+				<a href="#00:02:29.55" id="00:02:29.55" class="lt" onclick="jumptoTime(149, this.id)"><p>嗰種風味呀真係無人能及呀。</p></a>
+				<a href="#00:02:32.55" id="00:02:32.55" class="lt" onclick="jumptoTime(152, this.id)"><p>呢個時候呢，我先頭已經撈咗啲雞絲嘅，本來係另外一個就係雞絲炒西芹，西芹炒雞絲，所以我就唔打算將佢就切粒啦，我就直接好撈呀嘛，懶呀嘛。</p></a>
+				<a href="#00:02:52.55" id="00:02:52.55" class="lt" onclick="jumptoTime(172, this.id)"><p>其實冇乜所謂嘅，你唔好切得太大嚿就得㗎啦。</p></a>
+				<a href="#00:02:56.55" id="00:02:56.55" class="lt" onclick="jumptoTime(176, this.id)"><p>呢個時候呢，我哋就放乜嘢呀?</p></a>
+				<a href="#00:03:0.55" id="00:03:0.55" class="lt" onclick="jumptoTime(180, this.id)"><p>放呢個雞絲落去煎，同啲咸魚一齊煎。</p></a>
+				<a href="#00:03:8.55" id="00:03:8.55" class="lt" onclick="jumptoTime(188, this.id)"><p>你學呢個方法特別唔特別呀?</p></a>
+				<a href="#00:03:11.55" id="00:03:11.55" class="lt" onclick="jumptoTime(191, this.id)"><p>其實主要就係要改良，我哋又唔使洗鑊，同埋可以令到所有嘅材料都可以處於一個最佳嘅組合嘅狀態。</p></a>
+				<a href="#00:03:24.55" id="00:03:24.55" class="lt" onclick="jumptoTime(204, this.id)"><p>呢個時候呢，我就連埋啲咸魚一齊煎啦，咁呢啲咸魚煎到一半呢，就好撈，呢個咁嘅方法呢，就係咸魚煎到一半嘅話呢，就好撈呢個雞絲一齊煎囉，如果唔係啲咸魚就煎到過窿㗎啦。</p></a>
+				<a href="#00:03:38.55" id="00:03:38.55" class="lt" onclick="jumptoTime(218, this.id)"><p>記住呀，啲咸魚一定要係煎到佢金香，呢個時候食嘅咸魚係脆口嘅呢，咁就啱啦，咁呢就一啲聲你都冇嘅，如果大家有跟我做過幾次嘅魚香茄子，大家就知道我咁嘅方法就一啲聲你都冇，但係好重嘅咸魚香味嘅。</p></a>
+				<a href="#00:03:58.55" id="00:03:58.55" class="lt" onclick="jumptoTime(238, this.id)"><p>同埋呢，亦都同大家講啦，大家咪見到我次次撈親肉呢，都好乾身嘅，但係我有加水嗰個，記住啦，而家我哋咁樣煎呢，我一路講嘢，大家如果有睇過我嘅片嘅話，都記得㗎啦，千祈唔好手多呀，你一手多呢，就會點呀，嗰啲生粉就會甩，跟住之後呢嗰啲肉就會出水嘅，但係大家亦都見過好多次煎肉，牛肉又好，走油又好，或者係even係豬肉呀，雞肉呀，。</p></a>
+				<a href="#00:04:32.55" id="00:04:32.55" class="lt" onclick="jumptoTime(272, this.id)"><p>而家又輪到雞肉啦，都係唔會出水嘅，大家睇下，係咪呀，點解呀，因為我唔手多，點解呀，因為我醃得靚囉，吸得佢夠乾水囉，OK?</p></a>
+				<a href="#00:04:43.55" id="00:04:43.55" class="lt" onclick="jumptoTime(283, this.id)"><p>OK，字幕由Amara.org社区提供，大家經常會否有一個疑難，就是為何我每次煎肉都會水汪汪，經常出水，難看之餘又不好吃，為甚麼呢，關鍵是在醃的時候一定要吸乾水分，然後煎的時候不要手多，記住這兩件事是最為單件的，大家看到我一邊說話一邊煎，不是因為我喜歡說話，是因為我讓大家看著質感的變化，紋理的變化。</p></a>
+				<a href="#00:05:29.74" id="00:05:29.74" class="lt" onclick="jumptoTime(329, this.id)"><p>效果的變化，我沒理由就這樣看著，讓大家悶場，所以就說說其他東西，或者介紹一下這個方法有甚麼特別之處，這個雞絲開始煎到有少少金黃色，這個時候我放的東西又和其他人不一樣，這個時候就放蒜蓉、辣椒，這個時候就爆炒，然後開始調味，是呀，放少少蠔油一茶匙，這個調味的時候就以豆腐為依歸，我給大家看。</p></a>
+				<a href="#00:06:27.62" id="00:06:27.62" class="lt" onclick="jumptoTime(387, this.id)"><p>我豆腐切粒了，切了一粒粒的四方，切成九宮格，開兩邊就可以了，至於切豆腐怎樣切呢，我前面有一條片就是魚香茄子豆腐，大家可以參考一下我怎樣切豆腐，這個時候我就放半匙鹽，然後兩匙糖，好香的鹹魚味，好正，混合少許雞粉，雞粉我不加就隨大家，然後輕輕加少許胡椒碎或胡椒粉，我這個做法，鹹魚粒雞粒豆腐這樣的程序的做法。</p></a>
+				<a href="#00:07:32.90" id="00:07:32.90" class="lt" onclick="jumptoTime(452, this.id)"><p>是非常惹味、非常有風味的，我亦都說過一句，如果做得不好的餐廳，我為何自己那麼辛苦，這個時候最後加些生抽，哎呀 溶了，沒有了，大概加一茶匙左右，好，這個時候我們就加水了，我一直因為要炒六條味，所以我用中小火，可以嗎?不是用很大火，好，這個時候我們就加水了，加水大概是300ml左右，大家是否看到我放了很少的雞肉。</p></a>
+				<a href="#00:08:38.58" id="00:08:38.58" class="lt" onclick="jumptoTime(518, this.id)"><p>是的，為甚麼呢，因為鹹魚雞粒豆腐煲的主角其實是豆腐，OK，其實是豆腐，這個豆腐呢，這個時候，加了水之後就開大火煮滾它，這個豆腐呢，我要令它完全吸收所有醬油味，加上鹹魚味，OK，所以呢，我放的雞肉很少，這個菜式其實呢，如果大家是更加偏於吃素，即是不要吃太多肉的話，其實這個菜式是非常適合大家的，我之前都解釋了，為甚麼今天連煮兩個雞柳的菜式呢。</p></a>
+				<a href="#00:09:24.58" id="00:09:24.58" class="lt" onclick="jumptoTime(564, this.id)"><p>原因就是因為呢，我一塊雞扒，我又嫌少，兩塊雞扒又嫌多，所以我就想不如做兩個菜式出來，剛好我自己的鹹魚雞粒豆腐呢，我放的雞肉是很少的，不會很多的，現在呢，稍為煮一煮滾它，我現在不是在浪費時間，因為這個時間呢，接下來我要做第二樣東西呢，大家又意外，又和外面的做法不一樣，當然啦，我的目的是甚麼呢，要做得比外面好。</p></a>
+				<a href="#00:10:4.58" id="00:10:4.58" class="lt" onclick="jumptoTime(604, this.id)"><p>要做得比餐廳好吃，所以呢，我有些古靈精怪，大家想都想不到的方法出來的，這件事就是我將職業的技巧改良成為家廚，可以做到的，OK，這個時候呢，如果大家覺得它是淺色的話，可以加少少的老抽調味，不是調味，是上色的，少少啦，不用多的，好，現在是不是滾了呢，滾了呢，我們就熄火了，熄火做甚麼呢。</p></a>
+				<a href="#00:10:35.58" id="00:10:35.58" class="lt" onclick="jumptoTime(635, this.id)"><p>做下一個程序，這個呢，我又是古靈精怪的方法來的，有個小鍋，升高那個相機先，在上面拍下來，這樣就清楚一點，開火，上次煲仔飯時，我解釋過，對煲仔來說，真正的大火不是開石油氣最大火，而是剛好火洩碰到煲邊，包住煲底，對煲仔來說就是大火，大家希望理解這個概念上的分別，這個時候，我落薑片，如果大家已經看過我的。</p></a>
+				<a href="#00:11:48.62" id="00:11:48.62" class="lt" onclick="jumptoTime(708, this.id)"><p>粉絲蟹煲和鮮蝦粉絲煲，我估計大家已經猜到我想做什麼了，沒錯，落薑片，然後落蔥，墊底有什麼作用，第一件事就是令豆腐不會黏底，記住，想豆腐不黏底，粉絲不黏底，在底下落少少，落完後，落少少油，周圍都是油污，這個沒有，就是蝦油，所以是另一個香味，這個時候，我把豆腐放進去，大家看看，我的豆腐全部切成一塊塊，然後豆腐就放平。</p></a>
+				<a href="#00:13:7.21" id="00:13:7.21" class="lt" onclick="jumptoTime(787, this.id)"><p>然後我就將所有的汁料放下去，一樣我這麼硬手是因為有隻中式鑊在我前面頂住，因為香港的家廚廚房實在太小了，當初爐頭的設計也只能夠這樣，大家看到嗎?水是不是剛剛好?</p></a>
+				<a href="#00:13:44.21" id="00:13:44.21" class="lt" onclick="jumptoTime(824, this.id)"><p>這個時候我們就再放一點酒下去，讓它揮發香味，可以放多一點酒，大家都知道為什麼了，我之前說過，我不是放在煲裏面，不是像師傅那樣放在煲裏面，而是放在煲裏面，這樣更能夠直接吸收酒香味，好了，這個我們要煮多久呢?</p></a>
+				<a href="#00:14:30.34" id="00:14:30.34" class="lt" onclick="jumptoTime(870, this.id)"><p>煮五分鐘，等它大滾的時候就五分鐘，OK?</p></a>
+				<a href="#00:14:35.34" id="00:14:35.34" class="lt" onclick="jumptoTime(875, this.id)"><p>大滾先，這個時候我們因為待會可能會很多水，所以大家要準備，如果待會很多水的時候，我們就要打個芡，煲仔打芡，就可以剛剛好把水吸乾，把水收乾，然後豆腐就全部吸了鹹魚味和醬油味，大家可不可以想像得到這個鹹魚，這個豆腐是多麼的惹味，是不是?OK，現在開始滾了，我不理它了，我先關火，不是，先蓋鍋蓋。</p></a>
+				<a href="#00:15:17.34" id="00:15:17.34" class="lt" onclick="jumptoTime(917, this.id)"><p>好了，這個時候等它大滾我們才五分鐘，記住是大滾才五分鐘，好了，看到火是不是很大?我再收細一點，收細一點，剛剛好碰到鍋邊，為免大家誤會，我等它大滾我再計時才關火，OK?</p></a>
+				<a href="#00:15:41.34" id="00:15:41.34" class="lt" onclick="jumptoTime(941, this.id)"><p>現在開始滾了，但還未大滾，再等一會兒，大家會有個疑問，為什麼你做粉絲煲又是這樣做，做鹹魚雞粒豆腐又是這樣做，為什麼要這樣做呢?</p></a>
+				<a href="#00:16:6.09" id="00:16:6.09" class="lt" onclick="jumptoTime(966, this.id)"><p>這個我的靈感是來自於哪裡呢?</p></a>
+				<a href="#00:16:8.09" id="00:16:8.09" class="lt" onclick="jumptoTime(968, this.id)"><p>來自於香港水面人的一個傳統的做法，我不知道大家知不知道水面人一個很出色，很出名的菜式是什麼呢?</p></a>
+				<a href="#00:16:20.09" id="00:16:20.09" class="lt" onclick="jumptoTime(980, this.id)"><p>當然是做鹹鮮魚，譬如做鹹鮮九棍、鹹鮮青筋、鹹鮮紅衫仔，全部都是用我這個方法，蒸熟後再用一個砵頭，我真的有一個砵頭，不過砵頭不夠大，用來燉鹹鮮魚，要燉一燉它就正了，現在全部大滾了，我不和大家吹水了，五分鐘開始計時，我現在關機了，等一會兒時間到我再開機給大家看看效果，記住我這個靈感是由水面人的燉鹹鮮，一個概念出來的做法。</p></a>
+				<a href="#00:17:15.09" id="00:17:15.09" class="lt" onclick="jumptoTime(1035, this.id)"><p>好了，現在已經過了五分鐘了，響鐘，看看結果如何，先頭滾死了，所以我放多水的那一邊，但不能不放多水，看看效果如何，先看看，大家可能會覺得我放多了水，其實很抵死的，如果你不把水浸過豆腐，豆腐就吸不到味，所以這個時候我們要打個勾，收回水，有多少呢?</p></a>
+				<a href="#00:17:57.09" id="00:17:57.09" class="lt" onclick="jumptoTime(1077, this.id)"><p>大概五匙的生粉，大家看見這個啵啵啵啵，是否很吸引?</p></a>
+				<a href="#00:18:8.04" id="00:18:8.04" class="lt" onclick="jumptoTime(1088, this.id)"><p>真是正呀!</p></a>
+				<a href="#00:18:12.04" id="00:18:12.04" class="lt" onclick="jumptoTime(1092, this.id)"><p>這個時候我們把生粉片倒進去，然後攪拌一下，不過要用筷子，因為豆腐很矜貴，很新鮮，肉質又貴，因為我把薑和蔥煎在底部，所以沒有黏底，OK，稍為，嘩!這個豆腐很棒，可以用來配飯，稍為收一收水就可以了，大家說這個鹹魚雞粒豆腐煲，我調暗一點，因為看不到質感，可以嗎?</p></a>
+				<a href="#00:19:19.95" id="00:19:19.95" class="lt" onclick="jumptoTime(1159, this.id)"><p>然後我們熄火，然後灑上蔥花，一道野味、有地道香港味、水上人風味的鹹魚雞粒豆腐煲就完成了，這個菜是很好配飯的，現在我這個是不是很多汁?</p></a>
+				<a href="#00:19:51.85" id="00:19:51.85" class="lt" onclick="jumptoTime(1191, this.id)"><p>是呀，是很多汁的，因為我兒女喜歡用來拌飯吃，經常投訴我少汁那一頭，所以我就多放點水，如果大家想乾身一點，剛才我就說了大概放了300cc左右的水，大家可以減一半，去到150cc，100cc至150cc左右，ok?行不行?</p></a>
+				<a href="#00:20:13.85" id="00:20:13.85" class="lt" onclick="jumptoTime(1213, this.id)"><p>這個是水的一個用法，不過我現在的總結大家要留意一下，我這個特別的方法，整套程序的了，我現在是由頭煎鹹魚到煎雞柳到豆腐，我用一刀不剪的，大家看得清清楚楚，整個過程是怎樣，OK，我這道菜的靈感，來源於水面人做鹹鮮菜的獨特做法，他們通常蒸完之後，再用砵頭燉，燉十分鐘至八分鐘左右，把水燉乾就很好吃了。</p></a>
+				<a href="#00:21:2.82" id="00:21:2.82" class="lt" onclick="jumptoTime(1262, this.id)"><p>但為何要五分鐘，因為燉十分鐘後，豆腐可能會變老，它不夠滑，所以如果大家不想太多水和汁，其實這裡不是很多汁，因為材料都沉底了，不想太多汁的話，就把水減一半，大約150cc，可以嗎?</p></a>
+				<a href="#00:21:24.34" id="00:21:24.34" class="lt" onclick="jumptoTime(1284, this.id)"><p>好了，整個過程大家要記住，重中之重就是煎鹹魚，這道菜會否腥，就在於煎鹹魚，OK，所以整個過程，第一件事就是要先煎鹹魚，然後煎到鹹魚有一半，再放雞柳下去煎，和鹹魚一起煎，最後才放蒜蓉，這些佐料爆香，OK，可以嗎?</p></a>
+				<a href="#00:21:51.54" id="00:21:51.54" class="lt" onclick="jumptoTime(1311, this.id)"><p>然後在沒有加水的情況下，我們就把醬料，鹽、糖、味、蠔油、生抽、老抽，一起放下去炒一炒，OK，但這個時候還是中小火，不要大火，然後才加水，加完水就開大火，煮滾之後，然後怎樣?</p></a>
+				<a href="#00:22:12.74" id="00:22:12.74" class="lt" onclick="jumptoTime(1332, this.id)"><p>放薑蔥墊底，在鍋子那裡，然後把豆腐鋪上去，然後最上面才放鹹魚和雞柳，OK，雞柳先後大家看到的，因為我貪方便，因為要做兩個菜，所以我沒有切粒，所以如果你要挑剔的話，可以說我這個不是名副其實的，鹹魚雞粒豆腐煲，是的，OK，但不要緊的，你切什麼形狀，No problem，But，記住我的程序，不要弄錯。</p></a>
+				<a href="#00:22:43.94" id="00:22:43.94" class="lt" onclick="jumptoTime(1363, this.id)"><p>好了，煮到這個時候，嘩，出來的那種香味，不得了，好好送飯，又有鹹魚味，又有豆腐的，軟滑的口感，OK，又有雞肉的營養，雞肉是爽的，為什麼我這麼喜歡用雞扒，雞扒其實是雞腿扒，不是雞胸肉，雞胸肉會粗糙，但雞腿扒，我這樣做是會爽的，OK，行不行，基本上就是這樣，希望大家喜歡這個菜式，這個是傳統地道，香港水面人的做法。</p></a>
+				<a href="#00:23:21.94" id="00:23:21.94" class="lt" onclick="jumptoTime(1401, this.id)"><p>整個程序，我就加入專業廚房的做法，然後再改良到適合我們家廚的做法，OK，行不行，希望大家喜歡這個菜式，我現在越說就越，越什麼，越說就越流口水，這個真的是送飯神器，沒得輸，OK，多謝大家收看，我不是在浪費時間，我希望給大家看看，現在還在噗噗噗噗，我已經說了兩三分鐘了，好，多謝大家收看，唉。</p></a>
+				<a href="#00:23:54.54" id="00:23:54.54" class="lt" onclick="jumptoTime(1434, this.id)"><p>好餓，不過還要炒橫碟菜，才吃得飽。</p></a>
+				<a href="#00:23:58.14" id="00:23:58.14" class="lt" onclick="jumptoTime(1438, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

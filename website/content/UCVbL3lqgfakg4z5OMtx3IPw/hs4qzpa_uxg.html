@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片〡製作豬油｜為新一輪過冬煲仔飯做準備｜豬油用途多多｜豬油渣不要浪費，可製作香港經典街頭小食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hs4qzpa_uxg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片〡製作豬油｜為新一輪過冬煲仔飯做準備｜豬油用途多多｜豬油渣不要浪費，可製作香港經典街頭小食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.15" id="00:00:0.15" class="lt" onclick="jumptoTime(0, this.id)"><p>大家看看這是什麼?</p></a>
+				<a href="#00:00:3.15" id="00:00:3.15" class="lt" onclick="jumptoTime(3, this.id)"><p>嘩!</p></a>
+				<a href="#00:00:5.15" id="00:00:5.15" class="lt" onclick="jumptoTime(5, this.id)"><p>嘩!</p></a>
+				<a href="#00:00:7.15" id="00:00:7.15" class="lt" onclick="jumptoTime(7, this.id)"><p>好靚的豬油渣!</p></a>
+				<a href="#00:00:10.15" id="00:00:10.15" class="lt" onclick="jumptoTime(10, this.id)"><p>還在炸!</p></a>
+				<a href="#00:00:13.15" id="00:00:13.15" class="lt" onclick="jumptoTime(13, this.id)"><p>現在我已經關火了，炸了這麼多，為什麼?</p></a>
+				<a href="#00:00:17.15" id="00:00:17.15" class="lt" onclick="jumptoTime(17, this.id)"><p>這裡有1500ml的豬油!</p></a>
+				<a href="#00:00:22.15" id="00:00:22.15" class="lt" onclick="jumptoTime(22, this.id)"><p>新鮮炸的豬油!</p></a>
+				<a href="#00:00:24.15" id="00:00:24.15" class="lt" onclick="jumptoTime(24, this.id)"><p>大家記住，想吃靚的煲仔飯，現在就要做豬油的時間了，這裡我做這麼多，就是因為我要冬天煮煲仔飯，至於整個過程是怎麼做呢?</p></a>
+				<a href="#00:00:43.15" id="00:00:43.15" class="lt" onclick="jumptoTime(43, this.id)"><p>麻煩大家參考我今年初，有一條片就是做豬油的，希望大家可以跟著一起做，就可以自己做到靚靚豬油，我現在用的是豬的復康油，即是所謂的內臟油，是最上等的豬油，不用炸太多，只有50%左右，即是有50%的豬油在裡面會凝結，其餘的不凝結也沒所謂，我不囉嗦了，大家想知道怎麼做呢?</p></a>
+				<a href="#00:01:19.15" id="00:01:19.15" class="lt" onclick="jumptoTime(79, this.id)"><p>看我另一條片，豬油怎麼做吧，我會在說明欄寫下連結，大家可以去看看，這麼多豬油渣，有觀眾說想看我做豬油渣麵，大家想不想看?</p></a>
+				<a href="#00:01:44.15" id="00:01:44.15" class="lt" onclick="jumptoTime(104, this.id)"><p>想看就快點回覆，如果多人想看的話，我就會很快做豬油渣麵，豬油渣麵不困難的，這是不是廢物利用?</p></a>
+				<a href="#00:01:57.15" id="00:01:57.15" class="lt" onclick="jumptoTime(117, this.id)"><p>炸完豬油，又可以有豬油渣麵吃，好啦，多謝大家，快點去做豬油吧，今年看到我做的煲仔飯是不是很靚呢?</p></a>
+				<a href="#00:02:12.15" id="00:02:12.15" class="lt" onclick="jumptoTime(132, this.id)"><p>靚過外面餐廳吃的，你一邊說一邊流口水，大家快點去做豬油吧，做煲仔飯，上等煲仔飯必需的原材料，豬油，OK?</p></a>
+				<a href="#00:02:28.15" id="00:02:28.15" class="lt" onclick="jumptoTime(148, this.id)"><p>五祥熙，Krsnaathers kam würden</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:35.88" id="00:02:35.88" class="lt" onclick="jumptoTime(155, this.id)"><p>Brus，cumin，statistic，semiconductor，adordu，Zucker bättre。</p></a>
+</div>
+	</body>
+</html>

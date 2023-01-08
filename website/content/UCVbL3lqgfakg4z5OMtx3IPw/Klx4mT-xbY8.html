@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豉汁蒸雪臘，又是『死馬當活馬醫』，同時是一條科普影片，解釋魚腥味的由來，並且分享一勞永逸除腥的方法(嚴重有雷警告，有潔癖者請馬上迴避！)。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Klx4mT-xbY8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豉汁蒸雪臘，又是『死馬當活馬醫』，同時是一條科普影片，解釋魚腥味的由來，並且分享一勞永逸除腥的方法(嚴重有雷警告，有潔癖者請馬上迴避！)。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，今晚想同大家介紹下，一個家常的蒸魚，是甚麼呢?</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>就是豉汁蒸雪臘，這個雪臘給大家看看，比較大條的，我聞到冰鮮枱，比較大味，我借此機會正式和大家介紹一下，除腥和死馬當活馬醫的原理，第一，見到有雪臘，大條的雪臘很少見，我以前父親很喜歡吃魚，因為他是漁民，他通常吃小的雪臘，一條手指尾的長度，一兩多一點，今日我食的是大雪臘，或者叫大油臘，比較少見。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>因為常見的都是小的，再加上我有自製豆豉醬，所以我嘗試和大家分享這道菜，我之前曾經和大家說過，魚的除腥的原因，它的腥味來源是甚麼呢?</p></a>
+				<a href="#00:01:56.00" id="00:01:56.00" class="lt" onclick="jumptoTime(116, this.id)"><p>它的腥味來源是放腺菌，放腺菌的細菌的種類，放腺菌是甚麼呢?</p></a>
+				<a href="#00:02:9.00" id="00:02:9.00" class="lt" onclick="jumptoTime(129, this.id)"><p>大家不要嫌我囉嗦，我解釋了之後，大家蒸魚一定不會腥，放線菌是甚麼來的呢?</p></a>
+				<a href="#00:02:18.51" id="00:02:18.51" class="lt" onclick="jumptoTime(138, this.id)"><p>其實放線菌是存在於我們地球上所有的陸地，和淡水和樹木當中的，而會因為材質的不同，就會發出不同的臭味，包括我們的腋下，大家不要說我噁心，因為有些科學原理一定要解釋的，我們人體都有放線體的，不是放線體，是放線菌，我們平時活人的話，是比較貿密的地方，是非常適合放線菌的生長的，所以為甚麼我們夏天特別大的體味。</p></a>
+				<a href="#00:03:0.03" id="00:03:0.03" class="lt" onclick="jumptoTime(180, this.id)"><p>除了流汗之外，就是因為放線菌在作怪，放線菌除了在我們活體上的效果之外，在土壤，每逢春天下雨的時候，那些黑黑的霉霉，大家就籠統為發霉，但黑黑的霉霉的味道，其實也是放線菌在作用的，同樣地，說得不好聽的話，我們人類其實是在吃屍體，大家都明白的，不要說我噁心，我是要解釋原理的，而放線菌在屍體上，即是已經死去的肉身上。</p></a>
+				<a href="#00:03:48.87" id="00:03:48.87" class="lt" onclick="jumptoTime(228, this.id)"><p>它產生的作用就是有腐臭味，而在魚身上就會有腥味，特別是淡水魚，大家有沒有發覺淡水魚比鹹水魚腥，為甚麼會這樣呢?</p></a>
+				<a href="#00:04:9.67" id="00:04:9.67" class="lt" onclick="jumptoTime(249, this.id)"><p>因為放線菌在淡水是特別活躍的，而在淡水是沒那麼活躍的，但鹹水魚上水後，死了之後，就會因為放線菌的原因，就會越來越腥，所以大家走過冰鮮魚桌，為甚麼會有那麼大股味道?</p></a>
+				<a href="#00:04:33.07" id="00:04:33.07" class="lt" onclick="jumptoTime(273, this.id)"><p>就是那些東西作怪了，但這種味道是否會令人覺得很奇怪呢?</p></a>
+				<a href="#00:04:39.50" id="00:04:39.50" class="lt" onclick="jumptoTime(279, this.id)"><p>當然不是啦，順德人吃淡水魚就很厲害，順德人的放線體，先前也說過，除了在死屍上出現之外，泥土上出現之外，其實在活體上也會出現，而淡水魚之所以這麼腥，原因就是因為淡水魚的輪胛，附著大量的放線菌在裡面，所以為什麼淡水魚不處理的話，就會這麼腥，順德人吃魚很厲害，釀魚更厲害，他如何減少放線菌對魚味的影響呢?</p></a>
+				<a href="#00:05:21.50" id="00:05:21.50" class="lt" onclick="jumptoTime(321, this.id)"><p>他們在上市前，即是養好魚，魚夠肥大，養魚前15天放在一個特備的池裡，而這個池裡不會放任何飼料，任由魚在這裡活動，然後魚因為15天沒東西吃，放線菌也因為沒有營養，大部分都減少了，所以如果是順德人，他們吃的順德魚生，為什麼不腥呢?</p></a>
+				<a href="#00:06:0.50" id="00:06:0.50" class="lt" onclick="jumptoTime(360, this.id)"><p>就是因為這個原因，說了這麼久，和今晚煮的菜有什麼關係?</p></a>
+				<a href="#00:06:5.50" id="00:06:5.50" class="lt" onclick="jumptoTime(365, this.id)"><p>當然有關係，這些魚，雪甩或任何的海魚，上水之後就會碰到空氣，碰到空氣就會附著放線菌，這些魚的血水，也是放線菌生存的環境之一，所以我們要處理的時候，我們要怎樣處理呢?</p></a>
+				<a href="#00:06:35.50" id="00:06:35.50" class="lt" onclick="jumptoTime(395, this.id)"><p>首先，很多人說，吃海鮮啊，為什麼要不斷用水沖洗，洗走魚的原味，其實我想說，大家從來沒吃過，真正剛上水的魚的鮮味，所以大家誤認為，正常魚的腥味就覺得是鮮味，其實不是的，我們要除了這些放線體，即是放線菌，除了要用水沖之外，用手搓它，盡量將魚的表面附著的放線菌沖走，這是第一步，這個過程不能少，盡量將魚的內臟、肚腔的位置全部沖洗乾淨。</p></a>
+				<a href="#00:07:51.03" id="00:07:51.03" class="lt" onclick="jumptoTime(471, this.id)"><p>魚的表面也要沖洗乾淨，我重覆說一下，因為有四條這麼多，這四條有一斤，我都忘記了多少錢了，很貴，用手搓洗乾淨，直至沒有滑的感覺，放線菌便會清除得差不多，然後便要做第二個工序，雪臘，即是雪臘，臘，一個魚字變成一個臘字的臘，雪臘最主要是吃它的身體部分，如果是小的，便一條一口，然後把肉都切掉。</p></a>
+				<a href="#00:09:9.42" id="00:09:9.42" class="lt" onclick="jumptoTime(549, this.id)"><p>其實雪臘的肉是很滑的，所以我這麼喜歡吃就是這個原因，現在洗得乾乾淨淨，水多麼的污糟，然後，真是不好意思，因為鏡頭的原因，沒辦法好好反映我的動作，基本上都是，就是搓在上面，現在我已經洗第二次了，這次過水的時候，沒有那麼濁，這樣擦身體，身體也會爽快得多，希望大家明白，我們能夠在大部份接觸到的活魚，即使是在街市宰魚、釋油水的魚。</p></a>
+				<a href="#00:10:39.55" id="00:10:39.55" class="lt" onclick="jumptoTime(639, this.id)"><p>回來都要這樣處理，為甚麼呢?</p></a>
+				<a href="#00:10:42.55" id="00:10:42.55" class="lt" onclick="jumptoTime(642, this.id)"><p>因為我們不是在水邊，一上水就馬上煮，我真的嘗試過一上水就馬上煮的滋味是甚麼，因為以前我在船上做火頭軍，這個火頭軍，我自然有積聚了大量處理活魚即時食用的經驗，所以可以這樣說，其實大家的觀念上是錯誤的，即是說，海鮮不斷沖洗，鮮味就沒有了，我只能夠說，你們未試過馬上上水馬上吃的鮮味，所以基於這個原因，放鱔菌的原因。</p></a>
+				<a href="#00:11:36.55" id="00:11:36.55" class="lt" onclick="jumptoTime(696, this.id)"><p>大家有沒有發覺，為甚麼日本人吃魚生這麼美味，但我們中國人做不到魚生呢?</p></a>
+				<a href="#00:11:43.55" id="00:11:43.55" class="lt" onclick="jumptoTime(703, this.id)"><p>同樣是魚，我可以跟大家說，我們以前出海打魚，以香港為例，主要出產的是紅衫魚，大家知不知道紅衫魚可以用來做刺身，是需要經過特別的處理，而我們因為在香港生產紅衫魚，所以日本人大量在香港收購，大家以為見到香港紅衫魚很美，其實最美的紅衫魚已經去了日本，這個時候我們繼續進一步處理魚身，一樣道理，和我之前說的一樣。</p></a>
+				<a href="#00:12:22.55" id="00:12:22.55" class="lt" onclick="jumptoTime(742, this.id)"><p>用鹽巴去刺身，我都說過，我這個做法不是要先做鹹的，而是要將表面的魚腥去除，而鹽巴是有效對付放鱔菌的，大家記住呀!</p></a>
+				<a href="#00:12:53.16" id="00:12:53.16" class="lt" onclick="jumptoTime(773, this.id)"><p>跟住之後我哋抹啦，我哋下集再見啦!</p></a>
+				<a href="#00:13:7.19" id="00:13:7.19" class="lt" onclick="jumptoTime(787, this.id)"><p>現在我聞到的味道，沒有我打開袋的味道，先說說，日本人有獨特的處理放線體，放線菌的方式，尤其是一些軟羊的金鯧魚，通常他們拍賣的時候會變成急凍狀態，在急凍狀態下，放線菌是無法生長的，所以為何日本人可以隨便吃魚生，跟我們香港的做法很不一樣，或者中國漁民的做法很不一樣，現在解開為何日本人可以隨便吃魚生。</p></a>
+				<a href="#00:13:54.19" id="00:13:54.19" class="lt" onclick="jumptoTime(834, this.id)"><p>也解開為何順德人的魚生可以吃進口，不再生長，就是因為他們獨特的處理方式，現在我會把這些會產生臭味的內臟清理一下，好，然後呢，這個過程呢，我們大概都是，說過很多次了，就要大概做這個5分鐘左右，千萬不要過10分鐘，不然就變成鹹魚了，這個時候我們就做什麼呢?</p></a>
+				<a href="#00:14:46.59" id="00:14:46.59" class="lt" onclick="jumptoTime(886, this.id)"><p>就做這個調味，這個辣椒我已經洗了，不要再說我不用了，那就切絲吧，ambul пло blueberry，살 düşünStill analysis</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:20.70" id="00:15:20.70" class="lt" onclick="jumptoTime(920, this.id)"><p>Hee влад，ty，vaccinated，иров</p></a>
+				<a href="#00:15:18.92" id="00:15:18.92" class="lt" onclick="jumptoTime(918, this.id)"><p>Govern，женщ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:20.66" id="00:15:20.66" class="lt" onclick="jumptoTime(920, this.id)"><p>к，stew 23，이야기，sample</p></a>
+				<a href="#00:15:16.44" id="00:15:16.44" class="lt" onclick="jumptoTime(916, this.id)"><p>billion，உ</p></a>
+				<a href="#00:15:20.22" id="00:15:20.22" class="lt" onclick="jumptoTime(920, this.id)"><p>Anyway，Nicholas</p></a>
+				<a href="#00:15:16.70" id="00:15:16.70" class="lt" onclick="jumptoTime(916, this.id)"><p>SCH ​​，�，prescription，RPur</p></a>
+				<a href="#00:15:18.48" id="00:15:18.48" class="lt" onclick="jumptoTime(918, this.id)"><p>озя Youtube，active，ogie</p></a>
+				<a href="#00:15:17.24" id="00:15:17.24" class="lt" onclick="jumptoTime(917, this.id)"><p>우리가żen，zo，noisy，開這個豆豉醬，之前有朋友在我的豆豉醬問過我，他說，Leo，為何我做完放進冰箱會變硬，我這個比正常餐廳炒得比較乾，為何要炒得那麼乾，因為我要以備長期儲存，最少儲存三個月之用，越炒得乾身，水份蒸發得多，就越不容易變，如果大家有入廚經驗，大家都知道，問題是，用的時候沒理由那麼硬。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:8.02" id="00:16:8.02" class="lt" onclick="jumptoTime(968, this.id)"><p>我之前跟大家說過，用油開它，如果不用油開，我可以用甚麼，可以加少許熟的水，加少許就可以了，只要能夠開，我這次用水開，給大家看看一次，OK，好，這些豆豉就算用水開都很香，就攪開它，加少少水，大家會問，我平時媽媽，以前媽媽那一代，都是用豉油糖來攪開，原理是一樣的嗎?</p></a>
+				<a href="#00:16:56.67" id="00:16:56.67" class="lt" onclick="jumptoTime(1016, this.id)"><p>是一樣的，但因為我的豆豉醬已經調味了，OK，調味之後，我自然就不可以再加豉油，否則會太鹹，又要淋豉油，大家看看，我現在開了，OK，以後大家要記住，炒豆豉醬要炒得乾，因為可以長期儲存，因為我們不同於餐廳，可以大量用，餐廳為了方便自己，通常沒有打得那麼乾，但我們自己用的話，因為很多時候，我現在已經做了幾盒。</p></a>
+				<a href="#00:17:38.67" id="00:17:38.67" class="lt" onclick="jumptoTime(1058, this.id)"><p>我有時候，不是每天都吃豆豉醬，所以有時候，放兩三個月也不奇怪，但如果你想它不變，就必須要炒得夠乾，如果要用，就要用少少熟的水，煮過的水，大家看看，和媽媽用豉油糖攪開的，是一模一樣，不要太硬，這個時候，大家看看，看到嗎，水，這個時候兩三分鐘就夠了，我都說，很多時候我們家廚，我們需要的是什麼，時間管理。</p></a>
+				<a href="#00:18:26.67" id="00:18:26.67" class="lt" onclick="jumptoTime(1106, this.id)"><p>不要說，即是，要跟足程序，可能我們有時候，Step 1 跳到 Step 3，然後，Step 2 可能同時間，在進行中，這個時候，我們再用水，沖一沖，聞一聞，現在真的，剩下魚味，不是那些腥味，大家要區分魚味，魚味和腥味，是兩回事，很多人不懂區分，包括漁民，真的，我認真的，有多少人會去研究，原來魚臭是因為細菌。</p></a>
+				<a href="#00:19:15.46" id="00:19:15.46" class="lt" onclick="jumptoTime(1155, this.id)"><p>我現在要這樣沖水，要這樣去處理，原來是因為要趕走那些細菌，那些細菌是不會吃人的，除非你的肉質變了，ok，除了洗乾淨之外，我們就一定要擦，為什麼呢?很多的影片，都會跟大家說，一定要擦乾魚身，但他不會說原因，最多說沒那麼腥，但科學原理是什麼呢?</p></a>
+				<a href="#00:19:45.46" id="00:19:45.46" class="lt" onclick="jumptoTime(1185, this.id)"><p>這一集，這條影片應該就解決，大家心中的疑問，為什麼要，搞這麼多程序，這樣說吧，你要說吃東西，你要好吃的話，第一件事是什麼?</p></a>
+				<a href="#00:20:3.46" id="00:20:3.46" class="lt" onclick="jumptoTime(1203, this.id)"><p>魚腥味不是每個人都受得起，但魚味那種鮮味，就每個人都想吃，很多人就搞錯了一個概念，就是魚的腥味，和魚的鮮味，經常都以為，哎呀，他是這樣的，不腥就不好吃，其實不是那回事，ok，那也都，大家都看到，很多魚的腥味，大家都看到，很多影片都會跟大家說，你把水吸乾吧，大家看到我都很勤力，去吸乾水，吸乾水就是將魚下的。</p></a>
+				<a href="#00:20:43.46" id="00:20:43.46" class="lt" onclick="jumptoTime(1243, this.id)"><p>放線菌，全部，尤其是肚子裏面，魚下的放線菌，盡量抹走，到入口，大家吃到的魚，就真的剩下魚味，因為這麼短時間，用酒和鹽去醃，它不會滲入肉裏，但它就會令到，即是那些，魚身的表面，放線菌，就會死掉或是走掉，ok，大家明不明白，所以，以後大家一想到，怎樣處理魚腥，為什麼要這樣做，大家就知道了，為什麼要這麼煩。</p></a>
+				<a href="#00:21:29.46" id="00:21:29.46" class="lt" onclick="jumptoTime(1289, this.id)"><p>吃一碟魚，好吃的東西，真的要講規矩，講時間和內心，ok，基本上，我絕大部分的，都已經處理好了，然後我排好它，好，這個時候我先切一些薑絲，我刮一些薑，我希望大家不要嫌我煩，說這麼多話，其實很多時候，我覺得有些事不能不煩，要說清楚，我和大家說過，其實你用豆豉醬，不用薑絲也可以，但是有些魚，你不用薑絲也不行。</p></a>
+				<a href="#00:23:0.80" id="00:23:0.80" class="lt" onclick="jumptoTime(1380, this.id)"><p>更何況，我都和大家說過，其實薑絲浸過豆豉汁，是特別惹味的，好，希望大家不要嫌我開場白，說得那麼噁心，但是有些科學原理，大家是需要知道的，ok，我切的薑絲很幼的，這個時候我們將薑絲平均地放在魚面，拆開薑絲，平均地放，好，這時候我們就可以，有時候切得太快和太薄，我又未必每條都切斷，都會有失題的。</p></a>
+				<a href="#00:24:28.20" id="00:24:28.20" class="lt" onclick="jumptoTime(1468, this.id)"><p>好，然後我們再將這個豆豉汁鋪在表面，將這個豆豉汁鋪在表面，我常常都說，自己吃有個好處，自己做有個好處，就是我喜歡放多少豆豉醬，即是多少豆豉醬就多少豆豉醬，就不需要去介意，到底放多還是放少，喜歡就放多些，不喜歡就放少些，OK?</p></a>
+				<a href="#00:25:12.16" id="00:25:12.16" class="lt" onclick="jumptoTime(1512, this.id)"><p>盡量鋪平它，好，完成，好，然後放進去蒸，處理好了，放進去蒸就很簡單，七八分鐘就可以吃了，為什麼是七八分鐘呢?</p></a>
+				<a href="#00:25:38.44" id="00:25:38.44" class="lt" onclick="jumptoTime(1538, this.id)"><p>因為魚很薄，可以嗎?</p></a>
+				<a href="#00:25:40.44" id="00:25:40.44" class="lt" onclick="jumptoTime(1540, this.id)"><p>等一下我放進去蒸的時候再和大家介紹，OK，等一下見，好了，大家，水滾了，要放魚進去，其實蒸魚最麻煩、最不簡單的，就是剛剛開始洗魚的時候，但只要大家洗好那部分，基本上後面就不需要太過技術，調到七分鐘，七分鐘就可以了，看看七分鐘之後蒸成怎樣，好了，鐘響了，七分鐘就夠了，看看結果如何。</p></a>
+				<a href="#00:26:25.44" id="00:26:25.44" class="lt" onclick="jumptoTime(1585, this.id)"><p>看看，我們撥開一點，看看魚眼，好，魚眼已經凸出來了，看到反白了，所以可以了，這個時候，大家看到蒸魚是不是會淋熟油，淋灒滾油，是嗎?</p></a>
+				<a href="#00:26:46.44" id="00:26:46.44" class="lt" onclick="jumptoTime(1606, this.id)"><p>可能大家會覺得我很多油，是嗎?</p></a>
+				<a href="#00:26:50.44" id="00:26:50.44" class="lt" onclick="jumptoTime(1610, this.id)"><p>其實可以少一點油的，有什麼辦法呢?</p></a>
+				<a href="#00:26:56.44" id="00:26:56.44" class="lt" onclick="jumptoTime(1616, this.id)"><p>辦法就是，大家看著了，好，我下去焗一焗，十秒八秒，OK，搞掂啦，咁就熄得火啦喎，跟住落咩呀?落我一早已經整好咗嘅熟油，咁呢個時候呢，我就可以即係多少熟油呢都係隨我意啦，得唔得?跟住然之後呢，再淋呢個豉油上面，呢個咁嘅雪立呢就好好味㗎啦，就唔使話即係會好多油，OK?得唔得?</p></a>
+				<a href="#00:27:42.20" id="00:27:42.20" class="lt" onclick="jumptoTime(1662, this.id)"><p>咁呀，希望咁嘅方法呢，就可以幫到大家啦，咁另外呢，即係我再重覆返呢，就係，點解我一開始嘅時候講到咁核突呢?</p></a>
+				<a href="#00:27:57.20" id="00:27:57.20" class="lt" onclick="jumptoTime(1677, this.id)"><p>其實我要解釋個科學原理畀大家聽，只要大家聽得入耳嘅話，以後其實我哋處理所有嘅魚類呢，蒸魚呢，我哋都唔需要驚佢聲嘅，我哋都有辦法去除嘅，記住，引起魚聲嘅係乜嘢呀?係一種叫做係放線菌嘅細菌，咁呢個係存在於所有大自然空氣同埋淡水泥土樹木當中嘅，咁會因應唔同嘅材質呢，會有唔同嘅臭味出嚟嘅，而魚聲味呢，就係咁樣嚟㗎啦。</p></a>
+				<a href="#00:28:32.20" id="00:28:32.20" class="lt" onclick="jumptoTime(1712, this.id)"><p>咁大家見到呢，我用咁多水洗，然之後再攞鹽同埋酒去醃，個原因就係要清除呢啲咁嘅放線菌，只要大家能夠清除咗呢個放線菌嘅話呢，以後一勞永逸，你蒸咩魚都唔會聲，係唔係冰鮮，係唔係新鮮，係唔係呢個係急凍，全部都冇問題，ok，得唔得，今日呢道餸除咗係因應我，即係嗰個豆豉醬點樣煮之外呢，點樣重新開分，今日呢就有兩個朋友仔就問過我嘅。</p></a>
+				<a href="#00:29:14.20" id="00:29:14.20" class="lt" onclick="jumptoTime(1754, this.id)"><p>就話點解我啲豆豉醬咁硬嘅，係咪正常嘅，係正常嘅，因為我要抽乾水份，準備長期儲存，但係如果大家要食嘅時候點算呀，攞水或者攞豉油溝返開佢，唔係攞豉油鹹死呀，攞水或者油溝返開佢，就正如我先頭演示嘅一樣，咁就做返一個正常㗎啦，ok，得唔得，咁呀，我又唔同大家講咁多啦，唔阻住大家啦。</p></a>
+				<a href="#00:29:42.20" id="00:29:42.20" class="lt" onclick="jumptoTime(1782, this.id)"><p>我去食嘢啦，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

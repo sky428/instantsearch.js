@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜涼瓜燜雞｜香港經典家常菜｜簡單易做｜送飯神器｜餐廳水準｜疫情隔離餐單</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '5jcacir9GUM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜涼瓜燜雞｜香港經典家常菜｜簡單易做｜送飯神器｜餐廳水準｜疫情隔離餐單</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.12" id="00:00:0.12" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好呀，今日繼續家居隔離，都是食雪櫃餸，今晚同大家分享什麼菜式呢，就是一個好簡單，亦都可以長期儲存的，就是涼瓜炆雞，涼瓜炆雞今次我用雞腿，我已經切好，我先介紹一下材料，涼瓜炆雞一定有蒜蓉，辣椒，有我的萬用豆豉醬，如果沒有自己做的萬用豆豉醬的話，就可以用蒜頭即時切了，佐料就沖到。</p></a>
+				<a href="#00:00:50.12" id="00:00:50.12" class="lt" onclick="jumptoTime(50, this.id)"><p>今日我用的就是雷公鑿或大釘，如果炆苦瓜的話，切法會有些不一樣，大家看看，切條狀，這個苦瓜已經放了很久，大家可以看到表皮都有點皺皺的，但苦瓜都可以放一個星期，如果收藏得好的話，雞腿我已經切好了，我現在開始醃，醃雞腿其實都很簡單，如果大家跟開我的話，都是醃法，醃雞柳就醃法，填雞就醃法，兩隻雞腿一樣，18元，抵食。</p></a>
+				<a href="#00:01:43.12" id="00:01:43.12" class="lt" onclick="jumptoTime(103, this.id)"><p>這裡是磅半，我現在就放一匙鹽，當它是一匙，這個糖可以放多一點，大家可以看到，我有些血水留著，我就當它加水，等一下我解釋為什麼，然後，輕輕一點雞粉，然後，胡椒碎，然後，生粉，生粉放兩到三匙，然後，麻油，麻油多或少視乎大家喜歡，如果想更香更重味就放麻油，然後就是廣東米酒，然後加生抽，大約2-3茶匙，然後加少許蠔油，蠔油不用多，一茶匙就足夠。</p></a>
+				<a href="#00:02:59.54" id="00:02:59.54" class="lt" onclick="jumptoTime(179, this.id)"><p>輕輕調味，基本上醃雞，即是炒雞，醃田雞，都是這樣醃的，我加了薑片，大家如果有跟蹤我的話都知道，我經常強調，醃肉如果大家想醃得夠滑，一定要加水，大家看到我沒有加水，因為要滲出血水，再加酒和生抽就差不多了，大家聽到，其實我今天計錯數，原來我7號才開始計，即是計它上手環的時間，所以實際上我應該還有兩天時間。</p></a>
+				<a href="#00:03:50.54" id="00:03:50.54" class="lt" onclick="jumptoTime(230, this.id)"><p>即是星期一才去做快測，希望可以順利過關，連續兩天，然後星期二放監，我就可以和大家分享其他菜式，不用那麼乾，大家現在聽我的聲音應該都OK，昨天和大家分享完疫情煮飯仔，晚上又有幾口咳嗽，不是很舒服，吃了藥睡覺，今天就舒服很多，都是有些反覆，其實整個過程都好像感冒，相對於我以往的感冒，我一是沒有感冒。</p></a>
+				<a href="#00:04:35.54" id="00:04:35.54" class="lt" onclick="jumptoTime(275, this.id)"><p>一是感冒就重感冒，很辛苦，但如果給我比較的話，我覺得感冒是比這個疫症辛苦，有人經常恐嚇我們，說有重症，不過說實話，我覺得生死有命，我都講過，我家族有很大群人，其實試過兩宗個案是感冒死了，一個是莊年，40歲，一個是感冒菌上腦，一個是感冒菌入心，三天就搞定了，所以其實我想講的是甚麼呢?</p></a>
+				<a href="#00:05:19.73" id="00:05:19.73" class="lt" onclick="jumptoTime(319, this.id)"><p>我不是想非人家的想法，我只是想跟大家講，生死有命，任何這個世界上，你只要接觸到的東西都是有風險的，包括我們吃東西都會啃死，所以就無需太過擔心，可能有朋友又會有個疑問，Leo你照顧老婆，照理說你應該很少接觸的，外面的，為甚麼你都會感染到?</p></a>
+				<a href="#00:05:44.73" id="00:05:44.73" class="lt" onclick="jumptoTime(344, this.id)"><p>其實我感染到是我兒女感染到的，在外面，接著這個菌都算快了，以前我們一家人如果有感冒的話，可能都是一兩個，不會整家人一起的，這一次就整家人一起，我跟我老婆說笑，我們有福同享，有難同當，大家看到我是不是在發瘋，其實不是，因為我在混，如果大家是真心想學東西的話，就會看著這個質感的變化，我就講過很多次了。</p></a>
+				<a href="#00:06:22.73" id="00:06:22.73" class="lt" onclick="jumptoTime(382, this.id)"><p>我不是在燈時間，我是想給大家看到質感的變化，和一些細節的變化，煮東西吃不是說你拿到食譜，即是你拿到那個菜譜，那個食譜你就天下無敵，不是的，其實真真正正影響到你那個菜式的成敗，其實就現在我發瘋的時候，這些細節，大家先前看到是有水的，現在攪拌一下，攪拌一下，攪拌一下，水就不見了。</p></a>
+				<a href="#00:06:56.23" id="00:06:56.23" class="lt" onclick="jumptoTime(416, this.id)"><p>但是我會繼續攪拌，為甚麼?</p></a>
+				<a href="#00:06:58.23" id="00:06:58.23" class="lt" onclick="jumptoTime(418, this.id)"><p>因為如果我現在停手的話，我一停了，待會它會把水卸出來，我現在繼續攪拌，主要的原因就是想讓它可以繼續吸水，然後吸到最後那些生粉就縫合，黏著雞肉，它就可以防止水倒流出來，如果我們這個部分攪拌得好的話，待會我們煎雞就煎得很漂亮，煎雞煎得好，炆雞自然會好，所以其實是環環相扣的，我現在也攪拌了一會兒。</p></a>
+				<a href="#00:07:38.73" id="00:07:38.73" class="lt" onclick="jumptoTime(458, this.id)"><p>給大家看看，是不是?</p></a>
+				<a href="#00:07:42.73" id="00:07:42.73" class="lt" onclick="jumptoTime(462, this.id)"><p>字幕由Amara.org社區提供，沒有水了，倒出來後就要封油，少許就可以了，繼續攪拌，可以了，現在等半小時後就可以用了，其實煮食的樂趣很多，用的時間也不長，不過你要學懂所有東西，其實你要花時間去練習，可以嗎?</p></a>
+				<a href="#00:08:18.02" id="00:08:18.02" class="lt" onclick="jumptoTime(498, this.id)"><p>等一會開鑊後再和大家分享，好了，大家現在就燒鑊，一樣要配口訣，首先當然要煎雞，要和雞走油，油不用多，大概一茶匙多就可以了，因為雞皮本身會有油分，記住，口訣是甚麼?</p></a>
+				<a href="#00:08:49.02" id="00:08:49.02" class="lt" onclick="jumptoTime(529, this.id)"><p>大火燒鑊，放油再放煙，然後才放食材下去煎，讓大家看看雞，是否沒有水分，這就是我們煮食成功的第一步，大家看到，是不是一滴水都沒有?</p></a>
+				<a href="#00:09:20.52" id="00:09:20.52" class="lt" onclick="jumptoTime(560, this.id)"><p>是的，這樣拌雞和肉煎出來才會好看，還有，起鍋煎得好看的話，肉也很快會離鍋，不用弄這個弄那個，要記住，想煎得好，還有一個要訣是什麼?</p></a>
+				<a href="#00:09:47.92" id="00:09:47.92" class="lt" onclick="jumptoTime(587, this.id)"><p>一放下去，不要太多手，隨便它，現在這樣，我翻轉它，把鍋閘的邊邊有些油可以碰到，我只要不弄它，稍微煎一會兒，很快就會離鍋，今天我看到有觀眾留言說，這些塑膠夾子塗油漆不是吧，會有毒物質釋出之類，其實我想解釋一下，為什麼會出現這些膠夾，主要原因是因為易潔鑊流行，所以出現了這些塑膠用具，膠鑊鏟、膠夾。</p></a>
+				<a href="#00:10:59.13" id="00:10:59.13" class="lt" onclick="jumptoTime(659, this.id)"><p>如果膠夾不可以炒菜的話，膠鑊鏟用來煎蛋都會出事，是不是啊 大家說是不是啊，當大家現在現代這個社會不乏資訊，大家經常都聽到很多很多的資訊，但是那樣東西資訊對不對呢，我想跟大家說要自己去篩選一下，如果不行的話，為什麼那些家品段現在超過六成，廚具都是塑膠的呢，那些夾子、鑊鏟很多都是塑膠的，給大家看看。</p></a>
+				<a href="#00:11:43.13" id="00:11:43.13" class="lt" onclick="jumptoTime(703, this.id)"><p>煎得漂亮嗎，是不是很金黃，這個雞煎得漂亮了，炆雞就很棒了，這些膠其實是嚴格規定的，一般來說200度是沒辦法溶掉的，不過這些鑊鏟我試過很多次，這些塑膠的，譬如這些塑膠夾，這些塑膠的鑊鏟，我試過幾次連在一起燒，這樣就出事了，你直接碰到火，直接持續加溫超過200度的情況下，它才有機會溶掉，如果你這樣的話。</p></a>
+				<a href="#00:12:27.13" id="00:12:27.13" class="lt" onclick="jumptoTime(747, this.id)"><p>是會沒事的，所以大家可以放心，如果這樣用法是這麼危險的話，消委會早就出了聲，就不用等到大家覺得搖圓滿天飛，各有各的說法，這個時候翻轉了之後就差不多了，大家看看，是不是全部都很金黃，是啊，這樣煎過雞之後，你想它不好吃也很難，所以為什麼，其實我經常跟人說，其實我們家廚，炆雞其實是比餐廳好吃，為什麼。</p></a>
+				<a href="#00:13:19.13" id="00:13:19.13" class="lt" onclick="jumptoTime(799, this.id)"><p>因為他們限於工具製作流程的關係，現在加水，加大約是一湯匙的水，400至500ml左右，然後這個時候我們甚麼都不用弄了，任由它炆雞，大概是多久呢?</p></a>
+				<a href="#00:13:45.65" id="00:13:45.65" class="lt" onclick="jumptoTime(825, this.id)"><p>炆它5分鐘，大滾之後5分鐘，先講回剛才的話題，我希望大家要明白一件事，就是現代的資訊太過發達，以至於很多時候我們接收的資訊，未必一定是最準確的，很多時候要靠我們自己去篩選，其中一個謬誤就是說，這個膠夾不可以拿來炒東西，不可以拿來炸東西，一般來說炒東西，我講過很多次，150至200度之間，大家說是不是?</p></a>
+				<a href="#00:14:27.83" id="00:14:27.83" class="lt" onclick="jumptoTime(867, this.id)"><p>怎麼可能膠夾一般來說，超過250度持續加熱才有機會燒融，融了才會釋出毒氣，這是第一，第二就是，如果這些真的這麼有問題的話，為甚麼會塑膠獲產，這麼大行其道呢?</p></a>
+				<a href="#00:14:52.83" id="00:14:52.83" class="lt" onclick="jumptoTime(892, this.id)"><p>不過大家在這方面來說，都要小心使用，因為我也試過幾次，我不小心放在一起燒鍋，結果它真的會融化，這是使用上的小心，但純粹是用來夾東西、炒菜，是絕對沒有問題的，可以嗎?</p></a>
+				<a href="#00:15:13.33" id="00:15:13.33" class="lt" onclick="jumptoTime(913, this.id)"><p>現在它開始滾了，我計時5分鐘，5分鐘之後我們看看結果如何，好了 5分鐘過了，鐘響了，我們看看結果，差不多了，剛剛好，這些汁我待會就拿回來，用來做苦瓜，首先把火調小，我這個單人操作，不讓大家看了，我先洗一下鍋，大家看到我把火調小，為什麼我要這樣做呢，原因就是這樣可以保持爐頭的溫度，等下燒鑊的時候我就不需要太長時間。</p></a>
+				<a href="#00:16:2.35" id="00:16:2.35" class="lt" onclick="jumptoTime(962, this.id)"><p>通常這個就是我們為了要保持溫度和加快時間的必要之惡，有些少浪費也沒辦法，然後用廚紙抹乾，繼續燒鑊，一定要見煙，這個過程很重要，我很多時和大家分享時會黏鑊底，多數是這個程序出了問題，不是鑊，大家要記住，現在出煙，我放少許油，兩茶匙左右，可能有些人覺得我放的油多，兩、三茶匙，但你要記住，我炒每樣菜，不是炒一個星期。</p></a>
+				<a href="#00:17:34.25" id="00:17:34.25" class="lt" onclick="jumptoTime(1054, this.id)"><p>肉加菜起碼兩斤起跳，所以聰明的大家，自己炒的時候炒少了，份量少的時候，就減少油量，現在出煙了，我們先放蒜蓉爆香，然後這個自製的萬用豆豉醬，之前有些朋友問我，可否用這個來炒，當然可以，不過我平時懶，我炒了一次之後，打算用久一點，通常我蒸的時候用的，所以炒的時候就比較少用，通常即時用。</p></a>
+				<a href="#00:18:34.71" id="00:18:34.71" class="lt" onclick="jumptoTime(1114, this.id)"><p>嗯 很香，很多時候，有些朋友可能有個疑問，Leo 為什麼你經常放那麼多油，你說那個什麼，經常說那個是適當的油量，每一種食材，什麼是適當呢，當我們一下鑊 炒第一次，之後 馬上吸收油，沒有多餘油份的 就是適當的油份，同時間，你會看到，它是，會比較亮的，亮身的 OK，這樣就OK了，現在這個時候炒苦瓜。</p></a>
+				<a href="#00:19:14.71" id="00:19:14.71" class="lt" onclick="jumptoTime(1154, this.id)"><p>有很多種方法隨你喜歡，其中一個方法就是我現在這個，就是先放糖下去炒，我放了多少呢，我放了四匙，好，這個時候我加少許水，不用多，少許就可以了，然後我們上鑊蓋，上鑊蓋幾十秒，等糖完全融化就可以了，我經常說可以用這個方法，用手去試，這個鑊蓋這個位置夠溫度燙手的話，即是鑊底的溫度都很高，這樣就足夠了。</p></a>
+				<a href="#00:20:14.55" id="00:20:14.55" class="lt" onclick="jumptoTime(1214, this.id)"><p>這個時候我們就放回雞肉進去，然後再上鍋蓋，這次就少一點，給它兩分鐘左右就夠了，好 等一會兒響鐘我們再看看結果如何，好了 兩分鐘又過去了，這個時候 嘩 看，這個時候其實很多人有個疑問，或者有個疑難，就是每次我炆苦瓜炆多久都不夠翠綠，這個夠不夠翠綠，記住用我這個方法先炆雞，苦瓜不用炆很久的。</p></a>
+				<a href="#00:21:12.87" id="00:21:12.87" class="lt" onclick="jumptoTime(1272, this.id)"><p>OK 行不行，這個時候就差不多可以了，我們就要調味了，首先我們就要放鹽，鹽大概是放一茶匙左右，用苦瓜的重量去計算，因為本身雞就已經有味了，OK，然後就放少許的雞粉，放鹽就放個人的 不用咬，然後就放生抽，大概兩茶匙左右，然後想它的顏色更好看，深一點就放少許的老抽，大概一茶匙左右，大家看一下。</p></a>
+				<a href="#00:22:1.87" id="00:22:1.87" class="lt" onclick="jumptoTime(1321, this.id)"><p>我的水的份量控制得很好，OK，大家不需要擔心，最後會不會很乾水或者什麼，記住，我們如果煮菜的時候，炒菜的時候放水，我們控制不了份量，因為它會出水，大家會看到我這個炆雞，我主要是在炆雞那裡去控制水的份量，OK 嘩，我自己私伙的，大量的蔥刀，OK，跟完之後炒一炒它，等它出個蔥香，基本上這個菜就完成了，OK，搞定。</p></a>
+				<a href="#00:22:53.20" id="00:22:53.20" class="lt" onclick="jumptoTime(1373, this.id)"><p>快不快點?給大家看看，這苦瓜還是很翠綠的，很青綠的，所以其實我們要做的時候，想做到效果最好，很多時候我們是要分幾個程序去做的，記住，等我裝好它之後，我再跟大家做一個總結，你看看，這個大碟也裝不完，所以我每一次煮的份量都很多，所以大家不要經常以為我放很多油，大哥，我不是示範，我不會做精緻的東西給大家看。</p></a>
+				<a href="#00:23:33.20" id="00:23:33.20" class="lt" onclick="jumptoTime(1413, this.id)"><p>我現在真的是吃飯，我當然是以我家人的食量和份量為標準，我怎麼可能每次都炒一個例牌出來，這裡起碼有三個例牌，我多放三倍油有什麼問題?</p></a>
+				<a href="#00:23:50.20" id="00:23:50.20" class="lt" onclick="jumptoTime(1430, this.id)"><p>大家說是不是?</p></a>
+				<a href="#00:23:51.20" id="00:23:51.20" class="lt" onclick="jumptoTime(1431, this.id)"><p>但是很多人不明白，就經常說多油多油多油，大家看到那些汁，哪裡有油出來，還是那隻中式鍋頂住，我稍微整理一下，大家看到我的苦瓜炆完之後，是不是還是很翠綠?</p></a>
+				<a href="#00:24:16.20" id="00:24:16.20" class="lt" onclick="jumptoTime(1456, this.id)"><p>大家要記住，其實我們炆苦瓜不需要炆很久，記住，好，搞定，現在做一個總結，其實我可以跟大家說，大阪這些炆煮菜，大家要記住肉一定要先炆，千萬不要和蔬菜一起炆，尤其是瓜類，為什麼呢?</p></a>
+				<a href="#00:24:50.20" id="00:24:50.20" class="lt" onclick="jumptoTime(1490, this.id)"><p>那些肉本身是有鹽的，這是第一，它會令到瓜果變酸，所以大家看到我炒生瓜果，我一定是和大家說，提醒大家一定要最後才放調味，好嗎?</p></a>
+				<a href="#00:25:7.26" id="00:25:7.26" class="lt" onclick="jumptoTime(1507, this.id)"><p>但苦瓜會有一個例外，因為要除苦，很多時候會加多些糖，所以先加糖，ok?行不行?</p></a>
+				<a href="#00:25:16.26" id="00:25:16.26" class="lt" onclick="jumptoTime(1516, this.id)"><p>這是第一個重點，第二個重點就是，大阪的炆煮，除非是炆芋頭那些，比較難煮軟，可以和肉一起炆，但是一起炆，時間也會比肉短，所以大阪炆肉連瓜果一起炆，記得一定要先炆肉，後放瓜果，這樣大家才可以做出一個最佳的食用效果，那些瓜果就不會過熟，也不會變成啞色，不會變成乳色，記住，所以這次我這個涼瓜炆雞。</p></a>
+				<a href="#00:26:1.26" id="00:26:1.26" class="lt" onclick="jumptoTime(1561, this.id)"><p>大家看到我是不是先炆雞，是呀，然後我才炆好雞，才炒苦瓜，除了這個之外，這次這個影片有一個特別的地方，就是先炒苦瓜，我有沒有加水，基本上是加水，讓它降溫，不要黏底，唯一的做法，但是就算我上鑊蓋，焗那些瓜的時候，我都沒有加水，因為加水的水蒸氣，會令到那些瓜果加速老化，變啞色，記住。</p></a>
+				<a href="#00:26:45.26" id="00:26:45.26" class="lt" onclick="jumptoTime(1605, this.id)"><p>所以為什麼我先前焗那些瓜的時候，我都很少放水，就是這個原因，最後那些瓜炒透了，然後再加水，兩分鐘，加雞下去炆，兩分鐘就完事了，前前後後，我都是三分鐘，我怎麼會變啞色呢?</p></a>
+				<a href="#00:27:4.26" id="00:27:4.26" class="lt" onclick="jumptoTime(1624, this.id)"><p>是不是?</p></a>
+				<a href="#00:27:5.26" id="00:27:5.26" class="lt" onclick="jumptoTime(1625, this.id)"><p>大家再看看茶餐廳，餐廳出來的那些涼瓜炆排骨，那些涼瓜是不是很翠綠，除了因為它加了特別的baking soda，或者是鹼水，令到它翠綠一點之外，其實主要的原因，就是因為他們炆煮的時候，那個過程很短速，但是大家會吃到，這些排骨很軟，為什麼?因為它分開炆的，因為餐廳的排骨是預先炆好的，然後再炆煮。</p></a>
+				<a href="#00:27:34.29" id="00:27:34.29" class="lt" onclick="jumptoTime(1654, this.id)"><p>你點餐點餐，他才在炆好的排骨裡面，掃一掃排骨出來，然後就和這些涼瓜一起炆，都是兩三分鐘的事，所以他們就脆綠，OK 行不行，記住，想有口，照頭有口感，又有食味，記住，涼瓜不要炆那麼久，OK 行不行，基本上是這麼多，今天過了中秋節，中秋節快樂，這條片應該是盈月的時候才發的，多謝大家，小弟其實現在都已經很精神了。</p></a>
+				<a href="#00:28:15.41" id="00:28:15.41" class="lt" onclick="jumptoTime(1695, this.id)"><p>所以大家不需要擔心，現在唯一就是等放監，放監之後我就可以去買菜，就有新菜做了，OK 好不好，多謝大家，拜拜，吃飯了。</p></a>
+				<a href="#00:28:27.13" id="00:28:27.13" class="lt" onclick="jumptoTime(1707, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

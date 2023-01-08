@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蒜頭豆豉炒韭菜花肉碎，AKA『炒烏蠅頭』，一道近年在台灣流行的網紅潮食，實際是一道既簡單又直接的家常菜，新手也能做得好，只要跟著步聚做就可以了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'rY1Ii4fBM_k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蒜頭豆豉炒韭菜花肉碎，AKA『炒烏蠅頭』，一道近年在台灣流行的網紅潮食，實際是一道既簡單又直接的家常菜，新手也能做得好，只要跟著步聚做就可以了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚跟大家分享什麼呢?</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>先開火﹗，今晚跟大家分享一個非常簡單﹗，近期在台灣非常流行的一個川菜﹗，是台灣人發明的川菜﹗，可辣可不辣的，你可以當是潮州人的玩法﹗，也可以當是川菜的玩法﹗，因為這個菜實在太簡單了﹗，所以我就推薦給大家﹗，我現在開火﹗，先開抽氣扇﹗，好﹗，真的很簡單﹗，有什麼材料呢?</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>有這個沒有醃過的冰鮮肉碎﹗，我現在用梅頭的肉碎﹗，也是偷我老婆的﹗，然後有什麼呢﹗，有這個韭菜花﹗，現在經常看到，所以我心思思想找找看怎樣吃﹗，終於被我找到﹗，想到台灣近期很流行這個東西﹗，所以我就用這個韭菜花﹗，然後大家猜都猜不到，韭菜花用什麼炒﹗，蒜頭、豆豉、辣椒﹗，要用原粒豆豉，稍微浸一浸就可以了﹗。</p></a>
+				<a href="#00:01:27.00" id="00:01:27.00" class="lt" onclick="jumptoTime(87, this.id)"><p>現在一樣，我燒鍋先出煙﹗，然後現在就放油﹗，然後就放朗油﹗，這個朗油的動作叫什麼﹗，滑鍋﹗，好﹗，然後降一降溫，再繼續燒一燒﹗，然後我第一時間做什麼呢﹗，第一時間就做這個炒肉碎﹗，這個菜炒肉碎完全不需要醃的﹗，現在很大火﹗，關小火，不要那麼大﹗，OK﹗，起煙就可以了﹗，現在是生煎肉，完全沒有醃過。</p></a>
+				<a href="#00:02:23.15" id="00:02:23.15" class="lt" onclick="jumptoTime(143, this.id)"><p>大家看到，燒完鑊後，那隻鑊…看到嗎?我煎的豬肉不黏底，記住，燒鑊是我們家廚的法寶，你想煎魚不破皮，炒菜不黏底，一定要燒到起煙為止，現在我開大火，繼續炒，在炒的過程當中，我才加調味，首先，加一匙鹽，加一茶匙糖，然後輕輕加少許雞粉，有些人不吃豬肉完全沒有醃過的酥味，這時候可以放少許胡椒碎，少許就可以了，隨便加少許。</p></a>
+				<a href="#00:03:38.46" id="00:03:38.46" class="lt" onclick="jumptoTime(218, this.id)"><p>只是來提味，好，這時候我們繼續炒，先頭大家有沒有看到調味的時候，我刻意地沒有攪拌豬肉，令其中一邊產生煤蠟反應，鎖住肉汁，有少許焦香感，肉基本上有味道了，所以大家不需要擔心，大約炒到豬肉九成熟為止，不要過熟，看到表面有一兩粒未熟的就差不多了，等一會兒我拿碟子盛起肉碎，現在的豬肉大約九成半熟。</p></a>
+				<a href="#00:04:49.13" id="00:04:49.13" class="lt" onclick="jumptoTime(289, this.id)"><p>一炒就全熟了，炒完之後，豬肉會有自熱，蓋上蓋子後，自熱慢慢熟，所以一炒就很棒了，大家看到豬肉有肉汁，除了油外還有肉汁，萬一豬肉出很多水，就需要打薄芡，現在繼續燒鑊，這是一個很重要的過程，由得它燒的肉有少少焦更好，因為它黏了肉在這，我現在準備薄芡，好了，可以了，接著下油，其實說了這麼久這個菜是甚麼呢，近期台灣很出名的。</p></a>
+				<a href="#00:06:14.69" id="00:06:14.69" class="lt" onclick="jumptoTime(374, this.id)"><p>我們廣東人叫它做甚麼呢，叫它做是…，好，煙都出來了，所以下去爆一爆，辣椒、蒜頭、豆豉一起下去爆，叫做是炒烏鷹頭，改名字也比人家差，現在這個是在台灣非常流行的一個吃法，好，稍微炒一炒之後，接著我們就可以…，因為那些…，突然間說到出口，那些甚麼呀，韭菜花很快熟的，所以稍微炒一炒就可以了，好，這個時候我們再加些鹽。</p></a>
+				<a href="#00:07:9.69" id="00:07:9.69" class="lt" onclick="jumptoTime(429, this.id)"><p>為甚麼呢?因為韭菜花是沒有味道的，大約加三分二茶匙左右，韭菜花那裡差不多一斤，好，接著放少許雞粉，好，接著放少許糖，好，咁就搞掂啦喎，咁而家開始出水啦，咁所以呢，呢個時候首先呢，就要讚啲酒先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:3.37" id="00:08:3.37" class="lt" onclick="jumptoTime(483, this.id)"><p>輕輕得㗎啦，幾滴就得㗎啦，有啲酒香呀，然之後呢，就將嗰啲，生粉水呢，就倒咗落去，咁呢就倒咗落去，最後加上我最喜歡的生抽，這個叫做滑龍點睛，好，搞定，一個野味的蒜頭豆豉，炒這個韭菜花肉碎就完成了，台灣有個特別的名字叫做烏蠅頭，為什麼會是烏蠅頭呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:13.45" id="00:09:13.45" class="lt" onclick="jumptoTime(553, this.id)"><p>因為放了豆豉下去炒的，話說這個故事是怎樣得來的呢?</p></a>
+				<a href="#00:09:20.45" id="00:09:20.45" class="lt" onclick="jumptoTime(560, this.id)"><p>有個台灣人就去了四川學藝，回到台灣之後就開了一間川菜館，他在炒福食的時候，誰不知就弄了這個韭菜花做福食，炒著炒著就很受歡迎，員工很喜歡吃，誰不知這個菜就成為他們這間川菜館的頭牌，改個名字也有點不好，叫做炒烏蠅頭，因為那些豆豉看上去，一個不小心就看上去了，就當成烏蠅，廣東人的習慣就是叫做。</p></a>
+				<a href="#00:10:3.45" id="00:10:3.45" class="lt" onclick="jumptoTime(603, this.id)"><p>蒜頭豆豉炒韭菜花肉碎，我自己試過很好送飯的，不知道大家知不知道我們粵菜有個炒蜆的，有個炒蜆，炒蜆肉，辣椒炒蜆肉，豆豉辣椒炒蜆肉，跟這個差不多，是很好送飯的，今天就跟大家分享這個最簡單的，不用醃肉，純粹炒的時候調味，最後你可以打蜆也可以，不打蜆也可以，然後就放幾滴生抽，放幾滴酒，這樣爆一爆。</p></a>
+				<a href="#00:10:54.45" id="00:10:54.45" class="lt" onclick="jumptoTime(654, this.id)"><p>這樣就很香口，這樣就很送飯，還有這個菜是可以做得鹹一點的，為什麼呢，因為用來送飯的，ok 行不行，這個是不是很快，用了多久，用了十一分鐘，我就是咳一咳這樣，大家試一下，ok，記住我總結一下，第一就是肉是不用醃的，ok，直接炒熟，然後炒熟的過程當中就調味，然後爆香蒜頭豆豉，然後一放韭菜花，再放肉碎。</p></a>
+				<a href="#00:11:31.45" id="00:11:31.45" class="lt" onclick="jumptoTime(691, this.id)"><p>再翻炒再調味，加幾滴酒，加幾滴生抽，這樣就完事了，ok 行不行，這個我自己又流口水了，真的很活該，喜歡吃東西沒辦法，大家試一下這個台灣菜，雖然說是川菜的派別，但始終是台灣人發明的，我就覺得這個不像川菜了，又沒有麻又沒有辣，因為這個菜可辣可不辣的，如果大家受不了這麼辣的話，可以不放辣椒都可以。</p></a>
+				<a href="#00:12:5.45" id="00:12:5.45" class="lt" onclick="jumptoTime(725, this.id)"><p>記住我們廣東人叫什麼，蒜頭豆豉炒韭菜花肉碎，ok，台灣人就叫烏鷹頭，ok 行不行，就這樣了，不說了。</p></a>
+				<a href="#00:12:19.45" id="00:12:19.45" class="lt" onclick="jumptoTime(739, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

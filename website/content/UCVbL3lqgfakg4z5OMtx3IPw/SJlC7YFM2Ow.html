@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜椒鹽大魚頭｜簡單易做｜一流下酒小菜｜只要跟足程序，一定不會失敗，而且惹味非常！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'SJlC7YFM2Ow',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜椒鹽大魚頭｜簡單易做｜一流下酒小菜｜只要跟足程序，一定不會失敗，而且惹味非常！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.59" id="00:00:2.59" class="lt" onclick="jumptoTime(2, this.id)"><p>嘩!這是什麼?</p></a>
+				<a href="#00:00:6.23" id="00:00:6.23" class="lt" onclick="jumptoTime(6, this.id)"><p>嗯哼!</p></a>
+				<a href="#00:00:8.33" id="00:00:8.33" class="lt" onclick="jumptoTime(8, this.id)"><p>這個椒鹽魚頭，大家看看，大家想知道怎麼做嗎?</p></a>
+				<a href="#00:00:16.63" id="00:00:16.63" class="lt" onclick="jumptoTime(16, this.id)"><p>接下來看看我，怎麼處理這個椒鹽魚頭，其實它比薑蔥魚頭還簡單，OK?</p></a>
+				<a href="#00:00:28.69" id="00:00:28.69" class="lt" onclick="jumptoTime(28, this.id)"><p>好!播放影片，大家看看我怎麼做，大家晚上好，我現在伸懶腰，自己家嘛，我又不是上studio拍示範片，今晚我想跟大家分享一個菜式，其實都是很大陸課，早前有觀眾問我，我吃過別人做的椒鹽魚頭，很好吃，你懂不懂?</p></a>
+				<a href="#00:00:57.67" id="00:00:57.67" class="lt" onclick="jumptoTime(57, this.id)"><p>我說懂，為什麼不懂?</p></a>
+				<a href="#00:00:59.07" id="00:00:59.07" class="lt" onclick="jumptoTime(59, this.id)"><p>很簡單，但是我還是那句，我家人要吃，我才會做，今晚我就買了魚頭回來，然後就投票，我就問小朋友，你們想吃椒鹽魚頭還是薑蔥魚頭?</p></a>
+				<a href="#00:01:19.15" id="00:01:19.15" class="lt" onclick="jumptoTime(79, this.id)"><p>然後想了很久，最後投票，都是椒鹽魚頭，各位觀眾就有口福和眼福了，學會了，自己做，不用去別人家吃，不用付錢吃，先介紹材料，首先椒鹽魚頭有多少的，比薑蔥魚頭多些料，不過都不算太複雜，我先介紹，有薑片，有蔥刀，蔥白的部分，有芫茜卦，我只要芫茜卦，剩下的就是用來裝飾的，不是用來炒的，辣椒，蒜蓉，然後就要有黑椒碎。</p></a>
+				<a href="#00:02:13.71" id="00:02:13.71" class="lt" onclick="jumptoTime(133, this.id)"><p>黑椒碎，就這樣，基本上就是這些材料，調味的時候會加少許醬汁，大家看看怎樣，首先看到有...</p></a>
+				<a href="#00:02:29.65" id="00:02:29.65" class="lt" onclick="jumptoTime(149, this.id)"><p>當然要有魚頭啦，我買了新鮮的魚頭，我不是買很大個，因為我純粹過口癮，送啤酒很正的，我們首先把它倒進盆裡，沖洗一下，沖洗一下，大家看看，我其實是在煮另一道菜，這裡正在開爐，不過我看它煙不大，所以我就先關掉抽氣，免得吵到大家，不過現在都很熱，所以都要關掉，好，沖到差不多了，然後我們…，記住，魚頭。</p></a>
+				<a href="#00:03:15.74" id="00:03:15.74" class="lt" onclick="jumptoTime(195, this.id)"><p>你想它不腥，好吃的話，一定要預先處理一下，這個魚頭，跟魚檔老闆說，因為我們炒魚，一定要…，不要太小，一來美觀，二來就不容易散，我叫魚頭一開四，兩邊，分開魚腦和魚尾，然後我們開始處理最基本的東西，記不記得…，我很久沒做過魚了，我問問大家，記不記得我的隨聲大法，記不記得，就是放鹽，鹽多一點都不怕，然後胡椒粉或者胡椒碎。</p></a>
+				<a href="#00:04:6.74" id="00:04:6.74" class="lt" onclick="jumptoTime(246, this.id)"><p>然後就放酒，經過這個程序去處理，魚頭就一點都不會腥的 大家放心，把鹽和酒都抹勻，大家可以看到我放了鹽之後，它有些白色的東西 不用怕，一洗乾淨就乾淨，證明表面有些散的東西黏著，給大家看看，我的手現在濕了就不方便給大家看了，有白色的東西，這個就是原色來的，黑色的，通常用鹽和酒去抓魚都會有這樣的情況發生，然後把魚骨抹勻。</p></a>
+				<a href="#00:05:6.93" id="00:05:6.93" class="lt" onclick="jumptoTime(306, this.id)"><p>然後我們就把它反轉，因為魚骨的位置有些凹陷，我們就把酒和其他東西撥一下，然後等它幾分鐘，記住這個過程不要超過五分鐘，沒有其他事情要做了，所以我關機了，下一個我再開機進入處理程序，五分鐘過去了，給大家看一個近鏡，吃得震的，即是這個魚頭夠新鮮了，所以大家不用怕，我這個魚頭已經放在雪櫃四五個小時了，都這麼新鮮。</p></a>
+				<a href="#00:06:4.93" id="00:06:4.93" class="lt" onclick="jumptoTime(364, this.id)"><p>現在已經做好了，這個魚頭很簡單，大家不要想得太複雜，現在我馬上就拿下去沖洗，否則等一下就很鹹了，其實很簡單，甚至可能還簡單過你去做薑蔥魚頭，因為調味是非常簡單的，要沖洗乾淨，我這裡略略給大家看看，因為表面的漬會變白，如果有些不乾淨的細菌等等，所以我們要把它擦乾淨，把它擦乾淨變回原色，就不是一塊白色了。</p></a>
+				<a href="#00:07:5.08" id="00:07:5.08" class="lt" onclick="jumptoTime(425, this.id)"><p>好，洗乾淨了，等一等，我先洗一洗布，給大家看看，現在我擦乾淨它之後，它就變回魚頭原本的顏色，就沒有一塊黑一塊白的，證明是乾淨了，然後我們就要多點廚子，做什麼呢?當然是吸乾水，現在就吸乾水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:42.42" id="00:07:42.42" class="lt" onclick="jumptoTime(462, this.id)"><p>吸乾水，咁呀呢啲都係簡單眼見功夫，不過呢就大家可以睇下個畫面嘅變化，即係有啲嘢我未必會講出嚟嘅，即係唔記得講啦唔係我唔願意講呀，咁呢就大家可以睇到畫面嘅變化呢，同埋我啲動作手勢呢就可以大約理解到，呢味餸有咩竅妙呀要整下，好跟住然之後呢，我哋係做乜嘢呢，落呢個生粉都係熄咗個抽氣扇呀嘈住大家，未整之前咁就落生粉啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:26.54" id="00:08:26.54" class="lt" onclick="jumptoTime(506, this.id)"><p>我而家係冇完全抹乾水㗎ok，跟住然之後大家睇住呀我呢，落少少水，咁呢等佢呢處於一個係即係少少濕潤嘅狀態啦咁等陣間呢，煎完之後呢佢就會好香同埋咁樣整呢有個好處呢就係即係落少少水呢，個有個好處呢就係會等陣間呢我哋煎嘅時候呢佢嗰啲粉呢就唔會跌返出嚟呀，咁呢經過我呢個隨聲大發嘅處理之後呢咁大家呢呢個魚魚頭呀，呢個魚後尾枕呀最聲嗰個位都唔會聲嘅大家放心呀即係呢。</p></a>
+				<a href="#00:09:18.54" id="00:09:18.54" class="lt" onclick="jumptoTime(558, this.id)"><p>而家呢就變成呢就成個整個呢就都處一個係非常之香口等陣間呢一煎起佢呢，佢就非常之香口呀咁咪大家見到，呢個動作如果係職業廚房嘅話呢就咁殺咗粉就算數唔會咁樣咁樣同你捉㗎ok，亦都唔會加水咁呀而家咁樣呢因為佢係黏著喺嗰個魚嘅即係嗰個魚嘅嗰啲表面呀咁變咗呢，等陣間呢煎完之後呢佢就會好香口同埋呢就最主要呢就嗰啲粉唔會跌返出嚟ok，咁呀畀大家睇下而家係沒完呀記住係沒粉唔係審粉呀。</p></a>
+				<a href="#00:10:2.30" id="00:10:2.30" class="lt" onclick="jumptoTime(602, this.id)"><p>畀大家睇下而家咩texture先ok唔好睇佢一打一打啦等陣間啲粉唔會跌返出嚟㗎等陣間啲油都好乾淨嘅好啦而家呢個時候呢，我哋就可以正式開喎啦咁呢上去煎嘅時候唔唔唔得呀，唔黐鑊底呢記住呀，乜嘢呀，梗係背口訣啦而家我開大火，開大火跟住然之後呢，就呢個係，等呀，突然間唔知講乜嘢，個口訣係乜嘢呀。</p></a>
+				<a href="#00:10:38.12" id="00:10:38.12" class="lt" onclick="jumptoTime(638, this.id)"><p>大火燒鑊，見煙落油再見煙，如果係走油嘅話呢就，繼續大火如果煎嘅話呢就收細火嚟煎ok咁而家呢就要背口，嘅時候啦，咁呢再講一次呢個送，簡單過你整薑蔥魚頭呀，因為薑蔥魚頭呢，嗰個調味呢嗰個醬汁都好蝦人呀但係呢個唔使點樣，即係醬汁唔使呀落少少蠔油就搞掂㗎喇ok，大火燒鑊見煙未呀大家鏡頭面前見唔見到煙呀見到煙啦跟住，落油啦。</p></a>
+				<a href="#00:11:17.02" id="00:11:17.02" class="lt" onclick="jumptoTime(677, this.id)"><p>咁跟住然之後呢就攞勻啲油啦，等嗰啲油呢就掛喺個鑊邊啦等陣我隻手有啲肥呀，我洗洗隻手先，即係我係無法忍受呀，呢種咁嘅，肥淫淫嗰種感覺嘅，燒鑊，燒油呢就燒到佢都有煙喎係咪呀，跟住然之後呢我哋就收返細火啦睇住啦，向左手邊收平均細火，咁呢就稍為係，降一降溫之後先至落呢個魚頭呀，大家會看到我這樣抹粉法，令到它有輕輕少少濕，少少粉，就會發覺煎完之後油都好清。</p></a>
+				<a href="#00:12:20.43" id="00:12:20.43" class="lt" onclick="jumptoTime(740, this.id)"><p>然後閘閘隻鑊，等油碰到先頭浪起身的部位，因為我見它小火的頭，所以開大一點，好了 這個時候我們就上鑊蓋，煎東西就不用很誇張的，上鑊蓋 然後這個邊位，留一隻筷子位給它透氣，這個效果就形成一個很天然的焗爐效果，OK，然後我們就給它三分鐘，我煎魚都是喜歡三分鐘有三分鐘，給大家看著那個碼錶，好了 這個沒東西做的了。</p></a>
+				<a href="#00:13:13.19" id="00:13:13.19" class="lt" onclick="jumptoTime(793, this.id)"><p>等，所以先關機，我再開機，三分鐘之後再開機，跟大家看看效果如何，好了 現在中響了，那我就看看結果如何，等一等，這樣，我們就要先去汆燙它，不要太多手不要太快，不然魚頭就會散，先看看它，現在還未可以，所以我開大火，補火，現在開大火補火，如果大家看慣我的影片的話，我煎魚經常都強調，煎東西經常都強調補火，那一下。</p></a>
+				<a href="#00:14:5.77" id="00:14:5.77" class="lt" onclick="jumptoTime(845, this.id)"><p>還有想煎得好看的話，記住一定不要太多手，大家看到，我由開機到現在，我都沒有動過，大家也看到那些油，沒有什麼粉跌出來，OK，小心啊大哥，我怕你會打爛東西，我就是在後面，找食物找工具，這樣，記住我們補火的階段，每一邊十幾二十秒就好了，不要太多時間，不然就很容易，很容易就會，煎焦了，謝謝觀看 下期再見，搞掂，好似油咁。</p></a>
+				<a href="#00:14:56.61" id="00:14:56.61" class="lt" onclick="jumptoTime(896, this.id)"><p>係油嗰度暢榮，跟住之後第二邊，大家看到嗎?漂亮嗎?</p></a>
+				<a href="#00:15:18.35" id="00:15:18.35" class="lt" onclick="jumptoTime(918, this.id)"><p>好，這個時候就關小火，那又是了，先把油弄勻，讓油被碰到鍋邊撐起的肉和骨，這樣就會煎得很漂亮，ok?</p></a>
+				<a href="#00:15:38.35" id="00:15:38.35" class="lt" onclick="jumptoTime(938, this.id)"><p>是不是?魚頭是不是現在很漂亮?</p></a>
+				<a href="#00:15:40.35" id="00:15:40.35" class="lt" onclick="jumptoTime(940, this.id)"><p>好了，然後我們又上鍋蓋了，又是了，留一隻筷子的位置給它，然後我們又計時三分鐘，好，三分鐘之後我們再開蓋，看看效果如何，好了，大家又中兩三分鐘過去了，這邊因為相對地比較容易熟，所以我就不大火，不過一樣是補火，咁咪集七隻鑊啦，等啲油呢就掂到佢先頭頂起咗個位置呀，咁呀大家見到我而家呢就翹起隻腳，單腳咁企好輕鬆咁同大家講緊嘢。</p></a>
+				<a href="#00:16:35.90" id="00:16:35.90" class="lt" onclick="jumptoTime(995, this.id)"><p>如果大家呢想煎魚煎得靚呢就係咁樣㗎啦，輕鬆兩個字，米多手三個字ok，咁呢而家呢因為我驚佢窿呀所以呢，因為其實呢用粉呢上粉呢係好容易窿㗎大家知唔知㗎，咁所以呢我而家呢個時候呢我就唔開大火啦，慢慢每一邊都煎一煎它，基本上呢而家咁樣六分鐘之後呢個魚搵已經全熟㗎喇所以大家放心呀，繼續煎佢係因為我想佢更加香口㗎啫。</p></a>
+				<a href="#00:17:38.99" id="00:17:38.99" class="lt" onclick="jumptoTime(1058, this.id)"><p>Ok，記住呀，魚搵呢本身呢就大概係，七分鐘到就熟曬㗎喇尤其是我而家咁開揚呀即係隻鑊唔係咁逼嘅，情況之下佢就更加容易熟透呀，咁而家呢，差唔多啦，咁大家呢就可以睇住個時間碼嘅，係咪呀嚟曬鑊呀跟住之後呢個時候呢我就真係開大火啦，咁點呢，攞佢，大家有冇見到啲油係咪好乾淨呀仲，咪就係我抹粉嘅功勞囉。</p></a>
+				<a href="#00:18:16.39" id="00:18:16.39" class="lt" onclick="jumptoTime(1096, this.id)"><p>濕一濕佢嚟抹粉嘅功勞啦ok，好，這個時候呢，這個魚骨要很小心處理的，嘩，好靚呀，那我就頂起它，令到它全部都要是有金黃色，所以這個時候我就要出動到鉗子就這樣了，我關小火，不然燒焦了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:0.26" id="00:19:0.26" class="lt" onclick="jumptoTime(1140, this.id)"><p>唉，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:8.26" id="00:19:8.26" class="lt" onclick="jumptoTime(1148, this.id)"><p>那我這樣煎它，就會是全部，盡量每一邊都煎到它靚一靚，有金黃色，ok，大家見到現在的畫面，那些魚應該賣相都ok的，這個時候我們就拿起它，輕輕煎一煎，讓它有些金黃色就可以了，因為基本上是全熟的，唉，還是要用鉗子，因為這些鑊的深度有些深度，所以相對地就比較難用鑊鏟，讓大家看看煎到是這樣的效果。</p></a>
+				<a href="#00:20:15.71" id="00:20:15.71" class="lt" onclick="jumptoTime(1215, this.id)"><p>這個時候看看多不多油，油都OK了，不管它了，不算太多油，算了 還是少一點油，不要太多油，不然等一下會被投訴，我指食家投訴，倒些油進去，然後開火，連洗鍋都不用洗，不用用那個鐘了，好 出大煙了，然後先將薑片放進去，大家還記不記得我們要炒這個，即是落薑蒜蔥的時候的次序，一定是落薑先啦，跟著然後就落蒜蓉啦。</p></a>
+				<a href="#00:21:14.64" id="00:21:14.64" class="lt" onclick="jumptoTime(1274, this.id)"><p>有辣椒啦，炒一炒它，炒乾身先，炒乾身啲呢等陣間我哋上即係落魚嘅時候呢佢就唔使咁咩啦即係就唔使咁濕呀，好，咁咪見到有金黃色喎然之後將啲蔥頭呀芫茜頭呀放曬落去，炒香佢，好，這個時候差不多了，然後就放一些胡椒碎進去，好，跟著就拿魚頭丟下去，然後將蔥拿出來，將薑蔥的香味吸收在魚頭上，大家猜猜魚頭做甚麼呢。</p></a>
+				<a href="#00:22:47.43" id="00:22:47.43" class="lt" onclick="jumptoTime(1367, this.id)"><p>魚頭當然最重要是，當然是酒香，現在開始調味，加少許鹽，少許已經足夠，可能只要三分一茶匙，然後加糖，然後加少許蠔油，少許已經足夠，一茶匙都不夠，拿錯東西了，然後炒乾，直至大家聞到蔥香為止，完成，吃碗麵，就是這樣，這個椒鹽魚頭是不是很簡單呢，當然簡單，大家等我一會，我現在關火，大家都聽到聲音，隨便它。</p></a>
+				<a href="#00:24:9.43" id="00:24:9.43" class="lt" onclick="jumptoTime(1449, this.id)"><p>我現在先拌一拌碟，用餘下的芫茜味拌一拌碟，這個時候加入蔥，不好意思，拿回機器，等一會拍好照片，因為魚頭熟了之後很容易散開，所以這個時候一定要放得輕手一點，嘩!真的拿劍不成功，因為魚頭會散開，將剩餘的放回鍋內，大家看不看到鑊很乾，等我一下，我都說家廚最弱的這一環就是擺盤，好 搞掂。</p></a>
+				<a href="#00:25:55.12" id="00:25:55.12" class="lt" onclick="jumptoTime(1555, this.id)"><p>然後再灑些蔥花上面，是不是弄得很簡單呢?</p></a>
+				<a href="#00:26:19.29" id="00:26:19.29" class="lt" onclick="jumptoTime(1579, this.id)"><p>好，搞掂，食碗麵，一個好簡單嘅椒鹽魚頭就完成，其實我呢個係唔夠乾身，點解呢?</p></a>
+				<a href="#00:26:38.29" id="00:26:38.29" class="lt" onclick="jumptoTime(1598, this.id)"><p>因為我唔係炸，我係煎嘅形式，如果大家想乾身啲嘅話，就畀多啲油落去半油炸嘅形式，呢個魚頭就會好乾身，呢個就係我同出面嘅做法嘅分別，因為我哋屋企通常唔好咁多油，如果大家想好似出面咁乾身嘅話，就一定要用油炸，大家就要準備定，攞返啲油嚟用，第二，其實整體上呢個椒鹽魚頭相對地係比較簡單，大家睇到啦，最緊要係除腥大法。</p></a>
+				<a href="#00:27:25.29" id="00:27:25.29" class="lt" onclick="jumptoTime(1645, this.id)"><p>做咗呢個之後，就算你唔落薑佢都唔會腥，點解呢個餸我會落薑呢?</p></a>
+				<a href="#00:27:32.29" id="00:27:32.29" class="lt" onclick="jumptoTime(1652, this.id)"><p>因為我鍾意食薑味，呢個係其一，跟住大家煎嘅時候就按照一般煎魚嘅步驟就得㗎啦，三分鐘又三分鐘，三分鐘之後就可以反轉另一邊，不過大家見到我又用鑊鏟又用鉗，原因就係因為呢個鑊個深度比較高，唔同我哋嗰啲藍鑊，大家用慣嗰啲藍鑊，大家要小心，因為點解呢?</p></a>
+				<a href="#00:28:9.29" id="00:28:9.29" class="lt" onclick="jumptoTime(1689, this.id)"><p>如果我唔用油炸嘅話呢，其實佢就好容易爛嘅，我主要就驚住爛，所以就咁啫，如果唔驚住爛嘅話呢，唔使顧及賣相嘅話呢，咁其實我用咩工具都冇乜所謂嘅，至於調味嗰度，煎嗰個部分呢，前面三分鐘後面三分鐘，跟住之後再補一補火，咁其實基本上成舊魚頭都熟曬㗎啦，大家完全唔需要擔心佢生嘅問題嘅，過生嘅問題嘅。</p></a>
+				<a href="#00:28:39.29" id="00:28:39.29" class="lt" onclick="jumptoTime(1719, this.id)"><p>好啦，喺咁嘅情況之下，我哋調味好簡單嘅啫，淨係鹽、糖、少少蠔油，咁就夠㗎啦，唔需要好複雜㗎，OK，得唔得?得嘞!</p></a>
+				<a href="#00:28:49.06" id="00:28:49.06" class="lt" onclick="jumptoTime(1729, this.id)"><p>基本上就是這麼多，但是大家要記住，我們下鑊的時候一定要先下薑，記住永遠都是的，排的字是甚麼?</p></a>
+				<a href="#00:28:59.46" id="00:28:59.46" class="lt" onclick="jumptoTime(1739, this.id)"><p>薑、蒜、蔥三樣東西，蔥永遠是排最後的，為甚麼?</p></a>
+				<a href="#00:29:4.86" id="00:29:4.86" class="lt" onclick="jumptoTime(1744, this.id)"><p>因為蔥是很容易燒焦的，行不行?</p></a>
+				<a href="#00:29:8.66" id="00:29:8.66" class="lt" onclick="jumptoTime(1748, this.id)"><p>OK?</p></a>
+				<a href="#00:29:9.26" id="00:29:9.26" class="lt" onclick="jumptoTime(1749, this.id)"><p>希望大家明白了這個道理之後，這個椒鹽魚卵是不是很簡單?</p></a>
+				<a href="#00:29:15.30" id="00:29:15.30" class="lt" onclick="jumptoTime(1755, this.id)"><p>是很簡單的，那你說我是不是正宗呢?</p></a>
+				<a href="#00:29:18.38" id="00:29:18.38" class="lt" onclick="jumptoTime(1758, this.id)"><p>我絕對不是正宗，但是你說好不好吃呢?</p></a>
+				<a href="#00:29:21.54" id="00:29:21.54" class="lt" onclick="jumptoTime(1761, this.id)"><p>絕對好好吃，我們追求的是美味不是正宗，OK?</p></a>
+				<a href="#00:29:26.38" id="00:29:26.38" class="lt" onclick="jumptoTime(1766, this.id)"><p>行不行?</p></a>
+				<a href="#00:29:26.98" id="00:29:26.98" class="lt" onclick="jumptoTime(1766, this.id)"><p>好了，多謝大家收看，希望大家喜歡，拜拜。</p></a>
+</div>
+	</body>
+</html>

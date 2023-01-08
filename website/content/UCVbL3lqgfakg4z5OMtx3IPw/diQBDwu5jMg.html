@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——香煎芙蓉蛋，到餐廳常點的經典菜式，在家也能做得好啦，跟著影片過程去做就沒錯了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'diQBDwu5jMg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——香煎芙蓉蛋，到餐廳常點的經典菜式，在家也能做得好啦，跟著影片過程去做就沒錯了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好， 今晚就做了幾場大龍鳳之後， 回歸一些簡單的東西。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>相信很多人去餐廳都喜歡吃芙蓉蛋， 其實在家裡做可能更加好味， 因為材料足夠。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>今晚就和大家分享一道茶餐廳另一道經典名菜， 芙蓉煎蛋。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>早陣子有觀眾問我， 炒蛋和煎蛋有什麼分別?</p></a>
+				<a href="#00:00:45.00" id="00:00:45.00" class="lt" onclick="jumptoTime(45, this.id)"><p>當然分別在於， 炒蛋和煎蛋的過程要動， 但煎蛋是不能動的， 而且一定要煎到表面金黃色。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>炒蛋是不能燒焦的， 這是炒蛋和煎蛋的最大分別。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>我先介紹一下材料， 首先芙蓉蛋當然要有煎蛋， 雞蛋， 發蛋， 發蛋很簡單，四隻雞蛋， 半茶匙鹽， 少許胡椒碎， 胡椒粉也可以， 但我喜歡用胡椒碎， 兩茶匙油， 拌勻。</p></a>
+				<a href="#00:01:43.00" id="00:01:43.00" class="lt" onclick="jumptoTime(103, this.id)"><p>如果大家覺得雞蛋味道不夠， 想更惹味， 可以加少許雞粉， 加不加雞粉就個人的，我這隻雞蛋很便宜， 所以我加少許雞粉， 四隻雞蛋就好了。</p></a>
+				<a href="#00:01:57.00" id="00:01:57.00" class="lt" onclick="jumptoTime(117, this.id)"><p>大家會問， 平時你煮的鍋很大， 為什麼今天四隻雞蛋這麼少?</p></a>
+				<a href="#00:02:2.00" id="00:02:2.00" class="lt" onclick="jumptoTime(122, this.id)"><p>因為我們要遷就這隻鍋， 一般家廚的鍋， 即使是中式鍋， 也只是13吋， 也就是30厘米， 而我這隻鐵鍋是32厘米， 這是比較普遍的， 再大隻一點就沒有了。</p></a>
+				<a href="#00:02:23.00" id="00:02:23.00" class="lt" onclick="jumptoTime(143, this.id)"><p>即是這些西式炒鍋， 韓式炒鍋， 32厘米很大隻， 不過其實呢...</p></a>
+				<a href="#00:02:29.82" id="00:02:29.82" class="lt" onclick="jumptoTime(149, this.id)"><p>煎腐龍蛋呢， 是煎不起來的， 因為它太窄，變了中間比較厚， 相對難煎一點，所以這個呢， 如果一家人吃的話， 你最多就分兩次煎，就不要一次過煎完， OK?</p></a>
+				<a href="#00:02:45.32" id="00:02:45.32" class="lt" onclick="jumptoTime(165, this.id)"><p>那好了， 蛋之外， 當然主要的主角當然有叉燒絲，大家看到， 切的叉燒絲， 我就切到大概3厘米乘3厘米，啊不是不是， 3厘米太厚了， 3厘米乘3厘米左右，那為什麼呢? 其實可以再切薄一點的， 再切薄一點就沒什麼爭拗了，那怎麼可以切到這麼薄呢?</p></a>
+				<a href="#00:03:9.02" id="00:03:9.02" class="lt" onclick="jumptoTime(189, this.id)"><p>因為呢， 我整條叉燒， 我原條買回來，然後就拿廚紙， 把表面所有的物質， 所有的油都吸乾，吸乾之後呢， 就用片的方式，先片了， 一片片下來， 然後再切絲，這樣就可以切得很薄， 和很穩定的， 大家看到，基本上每條都差不多的， OK?</p></a>
+				<a href="#00:03:30.52" id="00:03:30.52" class="lt" onclick="jumptoTime(210, this.id)"><p>那就不是橫切， 是怎樣呢?</p></a>
+				<a href="#00:03:33.52" id="00:03:33.52" class="lt" onclick="jumptoTime(213, this.id)"><p>片它出來， 這樣切叉燒絲呢， 就最穩定的， OK?</p></a>
+				<a href="#00:03:38.02" id="00:03:38.02" class="lt" onclick="jumptoTime(218, this.id)"><p>好了， 然後呢， 當然有蝦啦，蝦呢， 我這裡用了半斤，那半斤， 主要是， 這個是冰鮮蝦來的，那怎樣拆殼， 怎樣醃蝦呢?</p></a>
+				<a href="#00:03:50.52" id="00:03:50.52" class="lt" onclick="jumptoTime(230, this.id)"><p>那我會在連結的下面， 我就會給大家參考一下，即是怎樣拆蝦， 怎樣拌蝦，這個呢， 拌蝦呢， 記住， 最簡單，鹽， 胡椒， 麻油， 生粉，千萬不要放酒， 放酒呢， 蝦就完全不會清甜的了，就會有其他的味道走進去，就不是大家想吃的那種味道來的，當然不是說不好吃， 不過是大家不想吃的那種味道而已，OK? 行不行? 記住， 醃蝦不可以複雜的。</p></a>
+				<a href="#00:04:23.52" id="00:04:23.52" class="lt" onclick="jumptoTime(263, this.id)"><p>好了， 接著， 然後呢， 當然有芽菜啦，那我給個， 這裡五元一斤半， 好多，那因為這麼多， 我上一次炒的時候，我兒子投訴我， 我問他好不好吃，他說， 猶豫了很久， 我說不好吃嗎?</p></a>
+				<a href="#00:04:44.52" id="00:04:44.52" class="lt" onclick="jumptoTime(284, this.id)"><p>他說不是不好吃， 那我說什麼問題?</p></a>
+				<a href="#00:04:46.52" id="00:04:46.52" class="lt" onclick="jumptoTime(286, this.id)"><p>他說蔬菜太多， 那記住， 又是了，寧願浪費， 都不要放太多進去，OK? 行不行? 那大家等一下看看我，放多少份量， 我一撿就行了， OK?</p></a>
+				<a href="#00:04:58.52" id="00:04:58.52" class="lt" onclick="jumptoTime(298, this.id)"><p>好了，附用煎蛋， 當然要有什麼?</p></a>
+				<a href="#00:05:5.36" id="00:05:5.36" class="lt" onclick="jumptoTime(305, this.id)"><p>韭菜， 一樣， 韭菜， 我這裡是八隻蛋的份量，不用多， 大概三兩分兩次放， 即是分做兩份，即是每次一兩兩兩就好了，蔬菜不要多， 否則會干擾到口感，還有食味， 這個蛋我發了它的時候，我加了些蔥花， 基本上配料就是這麼多，我現在開鑊， 大家看到鏡頭有什麼嗎?</p></a>
+				<a href="#00:05:42.36" id="00:05:42.36" class="lt" onclick="jumptoTime(342, this.id)"><p>我還未介紹， 是呀， 這是什麼?</p></a>
+				<a href="#00:05:47.36" id="00:05:47.36" class="lt" onclick="jumptoTime(347, this.id)"><p>生粉， 生粉水為什麼不是放蛋?</p></a>
+				<a href="#00:05:56.36" id="00:05:56.36" class="lt" onclick="jumptoTime(356, this.id)"><p>很多師傅說放蛋會脆些，其實在我的角度， 放生粉水不是想令蛋脆些，其實是因為我炒芽菜和韭菜會出水，如果我不放生粉水， 水會干擾到蛋的凝結，所以最佳的辦法， 我炒好菜後先打芡，令出水凝結， 我才放蛋，我個人認為這個效果是最好的，現在燒鑊，我先煎蝦，不是煎蝦， 是和蝦走油，大家看看， 其實這裡有幾個技巧。</p></a>
+				<a href="#00:06:54.36" id="00:06:54.36" class="lt" onclick="jumptoTime(414, this.id)"><p>我希望大家可以學到一些，炒菜技巧， 走油和蝦走油的技巧，還有叉燒怎樣令到翻煲的時候可口些，現在一樣， 為什麼要燒這麼久?</p></a>
+				<a href="#00:07:9.36" id="00:07:9.36" class="lt" onclick="jumptoTime(429, this.id)"><p>因為要見煙， 背口訣， 拜託，想煎蛋靚而不黏底， 當然要背口訣，這時候我加少許油和蝦走油，走油當然不用煮太久，關小火，現在就放蝦，如果你想蝦走油走得好，盡量撈乾一點，不要讓它太…，那麼…，燒鑊燒得好，蝦撈得好，你看，大家看到嗎，好，一邊可以了，然後一邊可以了，然後到第二邊，現在為什麼要和蝦走油呢。</p></a>
+				<a href="#00:07:59.94" id="00:07:59.94" class="lt" onclick="jumptoTime(479, this.id)"><p>一來要把它煮熟，二來就是要令蝦身表面產生煤蠟反應，煤蠟反應是什麼呢，就是表面金黃，然後內裡軟軟的，多汁的，好嗎，撈得好，粉不會掉出來，也不會漏水，大家明白嗎，如果你煮完之後油變濁的話，就是走完油之後油變濁的話，就是說你撈得不好，燒鑊燒得不好，好嗎，好了，這個時候蝦就可以了，我拿起它。</p></a>
+				<a href="#00:08:41.53" id="00:08:41.53" class="lt" onclick="jumptoTime(521, this.id)"><p>蝦最多只需九成熟，為何要這樣做呢?</p></a>
+				<a href="#00:08:47.69" id="00:08:47.69" class="lt" onclick="jumptoTime(527, this.id)"><p>因為待會拿回鍋裡，炒至一合成便即刻全熟，這蝦九成熟了，這時候我們就放叉燒，因為是四隻蛋，所以我不打算放太多肉，大約三兩叉燒，二兩至三兩左右，這時候不夠油，現在放多一點油也不怕，因為可以令叉燒更香口，第二，我主要的原因是，預備待會放菜時吸油和炒蛋，現在香口了，這時候就要放韭菜，一撮便好，不要太多。</p></a>
+				<a href="#00:09:57.49" id="00:09:57.49" class="lt" onclick="jumptoTime(597, this.id)"><p>這時候的油份已經加進去煎蛋，炒香叉燒後就放菜，這時候就把蝦拌進去，我減少了半份，因為只有四隻蛋，留下的肉可以用來煎，炒至差不多了，這時候就要放生粉水，一份蛋大概兩茶匙生粉，加大約三十毫升的水，這樣就可以了，大家看到嗎?</p></a>
+				<a href="#00:10:49.89" id="00:10:49.89" class="lt" onclick="jumptoTime(649, this.id)"><p>本來已經開始出水，但現在生粉水已經消失了，這很重要，然後就要放蛋了，這個過程我就要用鑊鏟了，要它煎得金香，我們首先不要動它，先等底部凝結，但是我現在由頭到尾都是大火，所以適當時候我們就要起底，即是抽一抽起鑊，讓蛋平均分佈，大家看看，蛋可以在鑊內游水，很自由地暢泳，這個時候大家要耐心一點，不要急。</p></a>
+				<a href="#00:12:6.46" id="00:12:6.46" class="lt" onclick="jumptoTime(726, this.id)"><p>繼續煎，不要理它，我先放一些韭菜，不要浪費，這個時候差不多了，然後關小火，等蛋凝結多一會兒，因為如果我繼續大火的話，底部會比較焦，大家看看，記住，我背的口訣的重要性就在這裡，煎蛋原來可以不黏鍋底的，為什麼?因為我有足夠的時間燒鍋，我背足夠的口訣，給足夠時間燒鍋，這個時候我們就可以…。</p></a>
+				<a href="#00:12:53.46" id="00:12:53.46" class="lt" onclick="jumptoTime(773, this.id)"><p>行了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:57.46" id="00:12:57.46" class="lt" onclick="jumptoTime(777, this.id)"><p>漂亮嗎?，可以了嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:11.35" id="00:13:11.35" class="lt" onclick="jumptoTime(791, this.id)"><p>有些韭菜混和不到蛋就隨它吧，焦了就不要了，這樣蛋就保證表面金香，內裡多汁，這個時候我們這樣壓一壓就可以測試到蛋芯到底硬不硬，有沒有凝結 差不多了 這個時候我們開最大火，做什麼呢 補火 讓它那個位置好看一點，這個就有一定的臂力，如果大家沒有那麼大臂力的話 唯有用中小火慢慢煎蛋，當然這樣沒有凹陷 這樣做到那麼好看。</p></a>
+				<a href="#00:14:24.53" id="00:14:24.53" class="lt" onclick="jumptoTime(864, this.id)"><p>好了 我現在再翻底 我檢查一下，先看看 等等 先頂好位置，嘩 看到嗎 行了 這個可以了 馬上收火，因為已經OK了，好 接著就將它 大家看看我的鑊 漂亮嗎，乾不乾淨 乾淨了，我之前都說過 因為有一些 它是黏不到那些蛋，那些韭菜是會有一點點燶的 所以我們要將它拿出來，其實這個是影響賣相 吃就大家沒所謂。</p></a>
+				<a href="#00:15:25.53" id="00:15:25.53" class="lt" onclick="jumptoTime(925, this.id)"><p>我搞定之後 我收拾好之後 我就再做總結，這個就是為什麼我要用四隻蛋的原因，其實這裡就不夠我一屋人吃，我是需要再煎多一次的 但是這一次，因為我放了四隻蛋 煎得很漂亮，剛剛好我的鑊 32cm的鑊，我知道有很多人的鑊更小 26cm 28cm，大家看著做吧，我就先做一個，拍一張好照片。</p></a>
+				<a href="#00:16:9.50" id="00:16:9.50" class="lt" onclick="jumptoTime(969, this.id)"><p>我切給大家看蛋芯是怎樣，我關機，拍完照片，現在切開給大家看，到底效果如何，煎芙蓉蛋，聽到聲音嗎?</p></a>
+				<a href="#00:16:28.44" id="00:16:28.44" class="lt" onclick="jumptoTime(988, this.id)"><p>因為蛋邊夠脆，我給大家看看，蛋芯剛剛好熟，我再切開給大家看，看到嗎，濕的，但不會出水，因為我先打了個芡，OK，現在總結，其實煎芙蓉蛋，你當做煎蛋餅，唯一分別，就是材料不一樣，材料比較豐富，有韭菜、銀芽、蝦仁，有叉燒，四樣材料，問題是，材料太豐富，煎蛋的分別，就是因為材料，銀芽和韭菜會出水，煎芙蓉蛋。</p></a>
+				<a href="#00:17:38.84" id="00:17:38.84" class="lt" onclick="jumptoTime(1058, this.id)"><p>大家都需要留意的地方，大家應該知道，不少人都應該知道，煎芙蓉蛋要加生粉水，很多人不知道為什麼，我現在，確切地解釋給大家聽，就是因為韭菜和芽菜會出水，所以呢，我再給大家看看，全部煎得均勻，當然你會說，為什麼這麼黑?</p></a>
+				<a href="#00:18:12.88" id="00:18:12.88" class="lt" onclick="jumptoTime(1092, this.id)"><p>不喜歡這麼深色，先頭的部分可以再，調小火慢慢煎，慢慢煎，問題是裡面的蛋，全熟，水分都會收乾，這個要留意，很多人都知道要加生粉水，我先頭說是，因為韭菜和韭菜芽會出水，而且很厲害，所以我們才要加生粉水，但是加生粉水不是加蛋漿，而是炒韭菜和韭菜芽的時候，最後在加蛋漿之前，加到韭菜和韭菜那裡。</p></a>
+				<a href="#00:19:3.46" id="00:19:3.46" class="lt" onclick="jumptoTime(1143, this.id)"><p>這個很重要，為什麼呢?</p></a>
+				<a href="#00:19:6.66" id="00:19:6.66" class="lt" onclick="jumptoTime(1146, this.id)"><p>唯有這樣打芡汁，打芡汁才有機會，有機會而已，如果手慢或者比例不對的話，可能會繼續出水，有機會封死水在韭菜和韭菜芽之間，所以我現在煎這個就很漂亮了，煎得蛋裡面不是水，就算流出來都是蛋漿，行不行?</p></a>
+				<a href="#00:19:37.18" id="00:19:37.18" class="lt" onclick="jumptoTime(1177, this.id)"><p>這個就是加生粉水在煎腐龍蛋的技巧，記住了，加生粉水不是因為要令蛋更脆，而是要封死會出水的材料，行不行?</p></a>
+				<a href="#00:19:54.38" id="00:19:54.38" class="lt" onclick="jumptoTime(1194, this.id)"><p>所以我們加生粉水，就要在炒好韭菜和韭菜芽的時候，直接加到韭菜和韭菜的芽，然後再炒幾下，大家用眼睛目視檢測一下，到底韭菜和韭菜芽有沒有被生粉水封死，讓它不要出水，如果繼續出水，即是生粉水不夠，那就再加多一點，行不行?</p></a>
+				<a href="#00:20:24.78" id="00:20:24.78" class="lt" onclick="jumptoTime(1224, this.id)"><p>通常四隻蛋，一小撮的韭菜和韭菜，大概是三兩韭菜和韭菜芽，加四隻蛋，兩勺生粉，加三十毫升的水調開，行不行?</p></a>
+				<a href="#00:20:46.78" id="00:20:46.78" class="lt" onclick="jumptoTime(1246, this.id)"><p>在這樣的情況下，我們煎這個芙蓉蛋才是乾爽，有焦香和有好味，煎蛋的時候，當我們打好生粉水，確認了韭菜和韭菜芽的分別，韭菜和芽已經封死水份，不會再流水，然後再倒蛋漿，大家看見我先後炒了一下叉燒，多放了油，為甚麼呢，因為我要預先下去煎蛋，現在給大家看一隻鍋，是不會漏油的，OK，全部留在表面，即是說油剛剛好。</p></a>
+				<a href="#00:21:31.28" id="00:21:31.28" class="lt" onclick="jumptoTime(1291, this.id)"><p>現在我再給大家看一個近鏡，看到嗎?沒有油漏出來，沒有油漏出來，這樣才是一個滿意的腐龍炒蛋，可以嗎?不黏鍋底，沒有多餘油份漏出來，所以大家下油的時候，你可以在煎蝦的時候下油，也可以在炒叉燒的時候下油，為什麼我在炒叉燒的時候才下油呢?</p></a>
+				<a href="#00:22:5.24" id="00:22:5.24" class="lt" onclick="jumptoTime(1325, this.id)"><p>因為前面的蝦也會吸油，它吸了油的話，我未必下得準，但是我在炒叉燒的時候，因為最後才加油，變成了我可以預準四隻蛋有這麼多油，可以嗎?</p></a>
+				<a href="#00:22:16.12" id="00:22:16.12" class="lt" onclick="jumptoTime(1336, this.id)"><p>OK，然後繼續大火煎一遍，煎到差不多，不要動它，最多就搖一搖，讓它平均受熱，然後，如果大家怕太快焦，蛋不夠熟，可以用小火慢慢煎，OK，好了，等表面的蛋漿凝結超過六成，我們才反轉它，反轉它來炒，大家看到我剛才是拋鍋的，如果是中式鍋就不用拋了，用鍋鏟鏟起它，一翻轉就是了，OK，但是西式鍋就要拋一拋鍋，大家多看幾次我的動作。</p></a>
+				<a href="#00:23:2.28" id="00:23:2.28" class="lt" onclick="jumptoTime(1382, this.id)"><p>怎樣利用鍋鏟向前向後，產生慣性，然後，右手的鍋鏟怎樣配合，OK，最後我拋的時候，鍋鏟是向前推的，這樣就可以令蛋完美地反轉，又不會爛，可以嗎，然後再用中小火煎，最後用大火補火，這樣就完成了，雖然我這個就深色了一點，但真的很香脆，如果大家不想太深色的話，就用小火煎它，慢慢煎，就不會出錯，如果想學煎得很金香。</p></a>
+				<a href="#00:23:55.01" id="00:23:55.01" class="lt" onclick="jumptoTime(1435, this.id)"><p>就可以持續大火，如果大家有手力的話，就時不時抽起鍋子降溫，這樣就煎得很平均，OK?</p></a>
+				<a href="#00:24:7.01" id="00:24:7.01" class="lt" onclick="jumptoTime(1447, this.id)"><p>好不好?</p></a>
+				<a href="#00:24:9.01" id="00:24:9.01" class="lt" onclick="jumptoTime(1449, this.id)"><p>這個賣相可以嗎?</p></a>
+				<a href="#00:24:11.01" id="00:24:11.01" class="lt" onclick="jumptoTime(1451, this.id)"><p>我告訴你一定好吃，不是說笑，當然，這個是，見仁見智</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:27.01" id="00:24:27.01" class="lt" onclick="jumptoTime(1467, this.id)"><p>夠大香，我吃了一口才說味道，因為我兒子投訴</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:37.01" id="00:24:37.01" class="lt" onclick="jumptoTime(1477, this.id)"><p>經常煮淡食物，所以我多加了一點鹽，四隻蛋，我加了半茶匙，然後加了三分一茶匙雞粉，這樣就夠鹹不用加醬油，但如果大家吃慣口味的話，可以將調味，即是發蛋的調味，鹽就降到去，大概是三分一茶匙鹽，然後加少許雞粉，如果不加雞粉的話，鹽可以多加一點，然後煎好之後，再試味，如果不夠鹹的話，可以加醬油，通常茶餐廳會加甜醬油。</p></a>
+				<a href="#00:25:34.01" id="00:25:34.01" class="lt" onclick="jumptoTime(1534, this.id)"><p>家裡沒所謂，如果有精子醬油就用，如果沒有的話，隨便加幾滴，幾滴的生抽，就很棒了，好不好?</p></a>
+				<a href="#00:25:48.01" id="00:25:48.01" class="lt" onclick="jumptoTime(1548, this.id)"><p>不耽誤大家時間，今天真的講多過做，因為要解釋清楚，大家要想吃好的芙蓉蛋，其實不是這樣，你將蛋放好就好，中間有技巧的，可以嗎? 好了!</p></a>
+				<a href="#00:26:3.81" id="00:26:3.81" class="lt" onclick="jumptoTime(1563, this.id)"><p>不跟大家說了， 去吃東西了!</p></a>
+				<a href="#00:26:6.61" id="00:26:6.61" class="lt" onclick="jumptoTime(1566, this.id)"><p>拜拜!希望大家喜歡這個菜!拜拜!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——土魷蒸肉餅，兒時記憶，化成灰塵也不會忘記的味道！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CokFn6VdnwM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——土魷蒸肉餅，兒時記憶，化成灰塵也不會忘記的味道！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.44" id="00:00:0.44" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今天我又要幫我老婆做營養餐，拌肉碎，所以我順便做一個三仔夜食的菜，大家看到材料應該猜到是什麼，大家猜到嗎，就是這個土魷蒸肉餅，首先介紹一下材料，有這個免治牛肉，不不不，免治肉碎，我喜歡用梅頭肉，為什麼會選擇梅頭肉而不選碎肉呢，其實蒸肉餅，我又說說違反現代健康飲食之道，大凡懂得烹飪的都知道。</p></a>
+				<a href="#00:01:3.44" id="00:01:3.44" class="lt" onclick="jumptoTime(63, this.id)"><p>傳統來說，三分瘦肉一分肥肉，會令口感軟滑很多，如果沒有肥肉的加持，第一肉味相差很遠，第二口感亦相差很遠，所以為什麼叉燒這麼多人喜歡吃半肥瘦，就是這個原因，我現在用的是澳洲冰鮮梅頭肉，已經絞碎了，很便宜，22元半斤，本來是40多元，但我一次過買很多，所以大約33元一斤，跟新鮮的梅頭肉相差大約4倍，港產窮嘛。</p></a>
+				<a href="#00:01:57.44" id="00:01:57.44" class="lt" onclick="jumptoTime(117, this.id)"><p>所以還是用冰鮮肉，我自己覺得冰鮮肉跟新鮮豬肉相差不遠，尤其是近代，我都說過，近代的特色就是，內地公港的豬肉的肉味是差很遠的，這次我一次過拌兩斤，一半是我三姐吃的，另一半是我老婆吃的，除了要用好的梅頭肉，因為它有半肥瘦之外，還要用馬蹄，馬蹄這些我用包裝的，她已經幫我批好了，16元就10兩。</p></a>
+				<a href="#00:02:44.10" id="00:02:44.10" class="lt" onclick="jumptoTime(164, this.id)"><p>通常不要以為你喜歡吃馬蹄，就多用點馬蹄就好事，其實大概一斤左右放，不要超過3兩，3兩即是多少呢?</p></a>
+				<a href="#00:02:58.06" id="00:02:58.06" class="lt" onclick="jumptoTime(178, this.id)"><p>大概100克左右，如果600克肉配100克的，馬蹄的肉，如果放太多的話，我自己試過的，我一放多的話，嘩!差很遠，不好吃，為什麼呢?</p></a>
+				<a href="#00:03:19.06" id="00:03:19.06" class="lt" onclick="jumptoTime(199, this.id)"><p>因為太多的馬蹄會有比例問題，令到豬肉鬆散，和沒那麼滑，OK?</p></a>
+				<a href="#00:03:28.38" id="00:03:28.38" class="lt" onclick="jumptoTime(208, this.id)"><p>好了，肚油蒸肉餅當然要有肚油，這個肚油，我買的是平時，不知道大家有沒有以前吃過，去醫院，去戲院看戲，有那些烏魷魚，我就是用那些，為什麼我用這些呢?</p></a>
+				<a href="#00:03:48.22" id="00:03:48.22" class="lt" onclick="jumptoTime(228, this.id)"><p>便宜嘛，現在我這裡3隻，先說不用10元，3隻，放一斤就夠了，還是那句說話，配料不要多，多就不好吃，OK?</p></a>
+				<a href="#00:04:2.10" id="00:04:2.10" class="lt" onclick="jumptoTime(242, this.id)"><p>然後，有兩種方法浸開，一是用冷水浸半天，一是緊急的話，用滾水浸半小時，基本上OK的，記住，這裡的配方的比例就是，1斤回頭肉碎，加3兩馬蹄，我這裡切碎了 特意給你看，有些沒有切碎的，給大家看看原形是怎樣，全年都可以買的，你去那些賣蔬菜、賣豆芽的地方，就會有的，通常是真空包裝，一包大概是10兩左右，10兩來說。</p></a>
+				<a href="#00:04:50.46" id="00:04:50.46" class="lt" onclick="jumptoTime(290, this.id)"><p>你就用3次，如果你一次過用不完，基本上如果放一個星期左右，都會變的，所以大家要著量，這些消耗沒辦法，然後1斤肉碎配3隻桃油，當然大家可以買那些，一斤100多元的大隻桃油，如果是大隻桃油的話，就大概用這個，一隻大隻的土魷，不好意思，因為沒有寫稿，所以有時候會吃螺絲，材料介紹到這裡，很簡單，大家看看我接下來要怎樣做。</p></a>
+				<a href="#00:05:43.80" id="00:05:43.80" class="lt" onclick="jumptoTime(343, this.id)"><p>其實滷肉碎的部分，我之前已經拍過視頻，這裡我簡短再重覆一次，我就不說滷肉的部分是怎樣滷了，大家如果有興趣的話，可以看我以前的視頻，主要是滷好肉碎之後，怎樣混合土魷，我會給大家看一下，記不記得比例，一斤梅頭碎肉，再加三兩馬蹄，再加三隻小的土魷，或者一隻大的土魷，這裡是600克，加100克。</p></a>
+				<a href="#00:06:19.80" id="00:06:19.80" class="lt" onclick="jumptoTime(379, this.id)"><p>再加這個，我估計可能是10克左右，10克至15克的魷魚，等一下我再給大家看一下怎樣混合，好了，現在浸到魷魚差不多了，通常緊急來說，就用滾水浸，不用浸得太過透，當然有些人喜歡吃軟一點，我就不予置評，但我覺得土魷之所以好吃，除了它的味道之外，還有它的口感，所以土魷不需要發得太過正，現在發好的土魷，其實不用半小時。</p></a>
+				<a href="#00:07:10.80" id="00:07:10.80" class="lt" onclick="jumptoTime(430, this.id)"><p>用滾水浸，現在就起了，先拆掉頭，然後拆掉背部的脊骨，然後魷魚的口，拆掉口，給大家看一下鏡頭，拆掉口，因為口是比較硬的，其實很簡單，拆掉頭，然後拆掉脊骨，現在給大家看看如何處理魷魚，魷魚的口部很容易認，通常有一點點黑色，所以用手指一按就知道，因為現在魷魚還未完全浸泡，所以比較難去清除，這個魷魚的嘴巴也不見了。</p></a>
+				<a href="#00:08:37.94" id="00:08:37.94" class="lt" onclick="jumptoTime(517, this.id)"><p>給大家看看，先拆掉魷魚的骨，然後把魷魚的骨拆掉，然後把魷魚的骨放進去，等我把垃圾丟掉，然後把三條魷魚放在一起，把魷魚的骨放在一起，大概切成2mm的大小，不要切太幼或太粗，然後將它的頭切成一條條，其實香港人工作繁忙，土有蒸肉餅其實算是幾快速但又幾好食，如果這麼快，它未必入味，其實蒸肉餅有個好處。</p></a>
+				<a href="#00:09:56.67" id="00:09:56.67" class="lt" onclick="jumptoTime(596, this.id)"><p>就是可以一次過拌兩餐或三餐，然後儲起它，第二天回來，馬上電飯煲，洗糯米，煉脆，放進去蒸，加上六碟油菜就食得，我好鍾意這個組合，通常如果我蒸肉餅，我一定是用六油菜食，大家見到我現在切得比較困難，因為我臨時臨急做，魷魚發得不太好，但我又好鍾意食這種口感的魷魚，反而浸到它軟身，好似新鮮魷魚，我反而更不鍾意。</p></a>
+				<a href="#00:10:50.67" id="00:10:50.67" class="lt" onclick="jumptoTime(650, this.id)"><p>走掉那種土有，魷魚乾的味道，即是等於甚麼呢?</p></a>
+				<a href="#00:10:57.67" id="00:10:57.67" class="lt" onclick="jumptoTime(657, this.id)"><p>簡單來說，你煨好魷魚好香，好正，你突然拿水浸它，就糟了，對不起，說了句粗口，不好意思，你突然拿水浸魷魚，大家覺得如何呢?</p></a>
+				<a href="#00:11:12.67" id="00:11:12.67" class="lt" onclick="jumptoTime(672, this.id)"><p>好，就切成這樣，不用太細緻，切完之後，這個習慣，好習慣，就是要刮砧板，如果不是，時間一久了，你又有水滲下去，那些魷魚就滲到砧板的木紋上，就變了，就會內生細菌，還有那股味就不好聞，那個砧板就臭，所以習慣每一次切完肉類，我都會刮砧板，好了，等我一會兒，然後用廚紙抹乾它，因為我都講過很多次了。</p></a>
+				<a href="#00:12:4.00" id="00:12:4.00" class="lt" onclick="jumptoTime(724, this.id)"><p>這個既是我的砧板，也是我的工作台，我就不學大廚房職業廚師那樣的，喂，大哥，東西搬來搬去，大把地方，我又沒有什麼地方，我的廚房，OK，好了，然後呢，大家看到，這個魷魚切好了就是這樣了，然後我們稍微調一調味，這個步驟呢，就未必是這麼多人會做的，但是我自己覺得呢，這個步驟是會令到魷魚香發揮到極致的，而我這個方法呢，我相信做過水面人的。</p></a>
+				<a href="#00:12:49.00" id="00:12:49.00" class="lt" onclick="jumptoTime(769, this.id)"><p>應該懂得我這個方法，就是我不立刻加進肉裡，我自己先是什麼呢，放一湯匙半糖，然後呢，輕輕一點點麻油，然後呢，我猜到，懂得做的朋友，猜到我接下來要放什麼了，沒錯了，就是生抽，不用多的，大概是一茶匙半，一茶匙半，然後呢，然後呢，我們就，放進去，放進去一茶匙半之後呢，然後拌勻，不好意思，我的咪掉了，很煩，小聲了。</p></a>
+				<a href="#00:13:51.00" id="00:13:51.00" class="lt" onclick="jumptoTime(831, this.id)"><p>大家看一下，先拌勻，這個做法其實是什麼呢，就是原隻蒸吊筒乾，這個魷魚乾的做法，大家可以想像到這個魷魚是多麼好吃，然後呢，弄完它之後呢，不好意思，我關一下機，咪髒了，不好意思，證明我是拍片的初哥，和我是真實的，所以沒辦法，掉了咪髒到玉碎上，氣死我了，這些魷魚，這樣拌勻後，蒸都已經很好吃，大家應該清楚的，吃過的應該知道的，現在說都流口水。</p></a>
+				<a href="#00:14:56.75" id="00:14:56.75" class="lt" onclick="jumptoTime(896, this.id)"><p>拌勻後，魷魚要獨立拌勻，如果是和玉碎一起拌勻，就不夠原味，倒下去，將它們全部撥到玉碎上，太斯文了，拿手撥吧，然後，加入馬蹄，我這裡只放一半，千萬不要貪心，無論大家想健康飲食，做事，在烹飪上貪心，就不是那回事，然後，我現在拿手拌勻，大家應該要習慣拿手拌勻，不要嫌骯髒，正如我上次拌肉餅的時候說，如果大家覺得調味料忍受不住。</p></a>
+				<a href="#00:16:11.75" id="00:16:11.75" class="lt" onclick="jumptoTime(971, this.id)"><p>例如我，我都忍受不住，整隻手幾天都是那股豉油味，所以就要戴手套，拿手，大家看到已經起膠了，豬肉我之前已經拌勻了，拌勻到均勻為止，在這個過程，大家看到，我翻過來，再用陰力壓下去，這個過程可以令到豬肉起膠，大家看到，我的肉碎已經起膠了，不是開玩笑的，好，然後…，不斷搓揉，然後做一個什麼動作呢?</p></a>
+				<a href="#00:17:1.29" id="00:17:1.29" class="lt" onclick="jumptoTime(1021, this.id)"><p>打它，打它不用多，聽到嗎?</p></a>
+				<a href="#00:17:8.29" id="00:17:8.29" class="lt" onclick="jumptoTime(1028, this.id)"><p>那個聲音，打它大概三四下，當它是魚蛋那樣打，記住，其實魚蛋…我懂得做魚蛋的，遲些有機會介紹大家可以在家裡自己怎樣做那個…，打魚蛋，ok?</p></a>
+				<a href="#00:17:29.29" id="00:17:29.29" class="lt" onclick="jumptoTime(1049, this.id)"><p>其實打魚蛋之所以這麼好吃呢?</p></a>
+				<a href="#00:17:33.29" id="00:17:33.29" class="lt" onclick="jumptoTime(1053, this.id)"><p>之所以這麼爽口呢?</p></a>
+				<a href="#00:17:35.29" id="00:17:35.29" class="lt" onclick="jumptoTime(1055, this.id)"><p>原因就是這個…要打這個過程了，還有打的過程可以令到那些肉…那些空氣跑了出來，然後讓那些肉黏著的狀態更加緊緻，這樣可以令到那些肉類…那些肉碎可以更加爽滑，ok?</p></a>
+				<a href="#00:18:0.29" id="00:18:0.29" class="lt" onclick="jumptoTime(1080, this.id)"><p>好了，基本上就是這麼多了，一個土魷蒸肉餅的混合過程就完成了，大家記住，我再說一次，秘訣在哪裏呢?</p></a>
+				<a href="#00:18:19.78" id="00:18:19.78" class="lt" onclick="jumptoTime(1099, this.id)"><p>很多影片都不會教的，就是將魷魚和肉餅分開處理，最後才合在一起，為何要這樣做呢?</p></a>
+				<a href="#00:18:32.78" id="00:18:32.78" class="lt" onclick="jumptoTime(1112, this.id)"><p>其實我這個方法是學了水面人的做法，水面人通常會說快速煮飯，蒸魷魚乾和六碟菜就可以吃飯，蒸魷魚乾時要怎樣處理呢?</p></a>
+				<a href="#00:18:44.78" id="00:18:44.78" class="lt" onclick="jumptoTime(1124, this.id)"><p>就像我剛才所說，加少許油，我這次就加了油，通常是加少許生油、糖和豉油，拌勻後一起蒸，蒸完後就這樣吃，送飯吃，我現在說到自己都流口水，這是水面人的做法，所以我這個土魷蒸肉餅，不是因為我要拍片，所以我要與別人語別不同，而我這個做法十多歲已經懂得了，十一、二歲，跟漁船出海的時候，已經學會了這個。</p></a>
+				<a href="#00:19:26.78" id="00:19:26.78" class="lt" onclick="jumptoTime(1166, this.id)"><p>我上一個視頻也說過，其實一理通百理明，烹飪上，你可以將自己所學會的東西，學過的東西，加在一起，其實可以變化萬千，也變成一些新的吃法，基本上這個土魷蒸肉餅的拌勻過程已經完成，大家可能會說，你拌肉餅的部分沒有的，麻煩大家回到以前的視頻，叫做入門ABC，就是拌肉餅，其實做法是一樣的，這一次我拍的視頻主要是想。</p></a>
+				<a href="#00:20:10.78" id="00:20:10.78" class="lt" onclick="jumptoTime(1210, this.id)"><p>跟大家分享一下，處理土魷的時候，我們有什麼特別的方法可以令到它更加惹味，更加好吃，ok?</p></a>
+				<a href="#00:20:19.78" id="00:20:19.78" class="lt" onclick="jumptoTime(1219, this.id)"><p>等一會蒸好之後給大家看看賣相是怎樣，暫時就這樣，多謝大家，大家先看完怎樣拌，現在已經差不多蒸好了，我又開機，給大家看看效果如何，一般來說，蒸肉餅以一斤計，關火了，以一斤計，大概蒸15分鐘，千萬不要用淺色碟，要用深色一點，因為大家看到我的方法有很多水，而且我在拌魷魚的時候，我放了豉油，所以現在我們不需要再添加任何調味料。</p></a>
+				<a href="#00:21:28.88" id="00:21:28.88" class="lt" onclick="jumptoTime(1288, this.id)"><p>一般茶餐廳在這個時候，放蔥，點綴一下，然後淋少許豉油，上桌給客人吃，我們在家廚來說，不需要做這個步驟，我現在可以不放蔥，一般都不放蔥，不過好看點和香口點，所以要放蔥，一般來說，不要弄得太厚，用深色一點的碟，加一些汁，這些汁很好拌飯，然後用匙羹抹平一點，一般來說，12-15分鐘就足夠了，給大家zoom近鏡，讓大家看看成品如何。</p></a>
+				<a href="#00:22:30.88" id="00:22:30.88" class="lt" onclick="jumptoTime(1350, this.id)"><p>大家有沒有留意到，我切的蔥很薄，一般來說，蒸肉餅或蒸餅，我喜歡吃麵，就學日本人的做法，就切薄一點蔥，好看點，大家看到了，基本上一道土魷蒸肉餅就完成了，在這個時候，當然要趕著去吃飯，不跟大家說那麼多了，希望大家跟著我這個方法做，做得比我更加好吃。</p></a>
+				<a href="#00:23:5.88" id="00:23:5.88" class="lt" onclick="jumptoTime(1385, this.id)"><p>多謝大家收看，我去吃飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蘿蔔絲鯽魚湯，既是孕婦生產前後的必備之物，更是營養丰富的送飯神器，可以做湯飯，也可以用加工後的湯渣送飯！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'y6u_tru8VAk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蘿蔔絲鯽魚湯，既是孕婦生產前後的必備之物，更是營養丰富的送飯神器，可以做湯飯，也可以用加工後的湯渣送飯！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.06" id="00:00:0.06" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今晚我會和大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:5.06" id="00:00:5.06" class="lt" onclick="jumptoTime(5, this.id)"><p>之前有做過，但不是用鰂魚，是蘿蔔絲魚腩湯，今天正式和大家分享蘿蔔絲鰂魚湯，材料方面，我買了兩條新鮮鰂魚，大約50元，我不解封了，給大家看看，新鮮的，買回來時還會跳，不過晚上就死死地，這個通常是家廚的現實，不可能做到湯完後馬上煮，通常都是隔幾個小時，所以我們都要處理一下，薑片，然後有一塊陳皮。</p></a>
+				<a href="#00:01:1.06" id="00:01:1.06" class="lt" onclick="jumptoTime(61, this.id)"><p>我不知道大家會不會用陳皮，我通常鰂魚湯或魚湯一定會用陳皮，為什麼呢?因為這樣，健脾開胃之餘還可以辟腥，等等會很好味，然後材料還有什麼呢?</p></a>
+				<a href="#00:01:22.06" id="00:01:22.06" class="lt" onclick="jumptoTime(82, this.id)"><p>大量的芫茜和蔥，我已經切了，這些不需要和大家分享，我今天開這個short主要和大家分享如何切蘿蔔絲，蘿蔔一條都超過一斤，今晚我就用一條，一條蘿蔔，兩條鰂魚，保證很鮮，一條就差一點，兩條就很正，然後我們怎樣切呢?大概切0.8cm左右，有些人喜歡切得很薄，我覺得太薄就沒什麼好看，所以我就會切0.8cm左右。</p></a>
+				<a href="#00:02:20.68" id="00:02:20.68" class="lt" onclick="jumptoTime(140, this.id)"><p>我覺得這個可以兼顧口感和快熟的效果，切到最後要小心，它很容易滑掉，一滑的話，大家就知道結果會是怎樣，這個蘿蔔很甜，我們切的時候都感覺到它甜不甜，因為越甜的話，它就越爽脆，這些味道就不要浪費，照樣要，然後呢，大概呢，給大家看一下，大概就切到差不多粗幼度就對了，我們不需要學至職業廚房切到這麼幼，但同時也不應該切得太粗。</p></a>
+				<a href="#00:03:28.73" id="00:03:28.73" class="lt" onclick="jumptoTime(208, this.id)"><p>大家其實下刀都不算太複雜，通常刀已經被我磨到彎的，本來它是直的，通常我們下刀的時候，就這樣斜斜的，然後這樣切上去，就保證那些東西切得很快，還有切得很乾淨，就不會切不斷，當然了，現在其實我已經說完了，我就越切越快，不然等一下又說我做事做得慢，不過切得快還快，不要因為快而不顧安全，千萬不要親手切。</p></a>
+				<a href="#00:04:43.32" id="00:04:43.32" class="lt" onclick="jumptoTime(283, this.id)"><p>切完後，我們來處理魚，等我把刀放好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:55.32" id="00:04:55.32" class="lt" onclick="jumptoTime(295, this.id)"><p>砧板濕了水就變成黑色，如果想知道砧板原色的話，可以看另一條片，很多片都有白色變黑色，這個魚要怎樣處理呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:8.32" id="00:05:8.32" class="lt" onclick="jumptoTime(308, this.id)"><p>首先要放進水裡沖洗，遮住，給大家看近鏡，魚要盡量用手搓，有鱘魚，不錯，然後把魚腔遮住，用手搓一搓，可以搓掉魚腔內的黑膜，令到魚腔沒那麼腥，這樣魚腔就沒那麼腥，我動一動鏡頭，大家看不到我怎樣擦，大家看看這個魚腔裏面是黑色的，等一等，先對焦一下，魚的肚裏面是黑色的，我會盡量把黑色的膜搓走，這樣魚的聲音就不會那麼大。</p></a>
+				<a href="#00:07:7.72" id="00:07:7.72" class="lt" onclick="jumptoTime(427, this.id)"><p>因為是鮮魚的關係，大家都知道我之前說過是異線菌，因為這條魚是新鮮的，是湯的時候才上水的，還是生的，所以異線菌的影響就沒有那麼大，所以大家看到我把魚一直搓，還有用水沖洗掉表面的滑滑的東西，那些就是異線菌，這樣魚的聲音就不會那麼大，這個時候我們要抹乾，等一等，我先把碟子轉一轉，咁咪要抹乾佢啦。</p></a>
+				<a href="#00:08:20.49" id="00:08:20.49" class="lt" onclick="jumptoTime(500, this.id)"><p>點解要索乾佢水呀，因為呢，嗰啲水呢其實有好多嘅，二線菌喺入面嘅，咁同埋呢，站喺呢個處理呢個，即係煎魚呀，即係煎魚呀，煎魚個角度嚟講呢，就係如果我能夠呢，係越係抹得佢乾嘅話呢，等陣煎起身呢，就會越靚嘅，越冇咁容易黐鑊嘅，同埋呢，係越唔會，甩皮甩骨嘅ok，咁同埋啲油，唔會彈到周圍都係啦，現在主要給大家看看怎樣在煎之前去處理。</p></a>
+				<a href="#00:09:16.15" id="00:09:16.15" class="lt" onclick="jumptoTime(556, this.id)"><p>大家看看，我把它放進肚子裡，去吸那些水的，大家會看到，你經常都是這樣做，那你就要用很多廚紙了，對的，不過廚紙不是很貴，6卷也要二十多元，我當作一個星期用一卷的話，我一個月也用不了二十多元，其實沒所謂的，對吧，但最重要的是什麼呢，處理好那條魚，煎得好，然後呢，又不會有腥味，那你說，這樣是不是值得我去浪費呢。</p></a>
+				<a href="#00:10:6.86" id="00:10:6.86" class="lt" onclick="jumptoTime(606, this.id)"><p>紙張，ok?</p></a>
+				<a href="#00:10:9.52" id="00:10:9.52" class="lt" onclick="jumptoTime(609, this.id)"><p>那當然，大家說你這樣也是不行的，也很浪費，很不環保而已，那其實職業廚房呢，他們有一條專用的毛巾，專門用來處理，海鮮，肉類，可以抹乾身，但我們家裡，我也說過，你買一條毛巾回來，到底是想乾淨還是不乾淨呢，為什麼呢，我們家裡不可能像專業廚房那樣，經常去洗那條毛巾，變成了，它經常不乾的情況下，那條毛巾反而還是細菌的溫床。</p></a>
+				<a href="#00:10:56.04" id="00:10:56.04" class="lt" onclick="jumptoTime(656, this.id)"><p>ok?</p></a>
+				<a href="#00:10:57.04" id="00:10:57.04" class="lt" onclick="jumptoTime(657, this.id)"><p>但職業廚房的話，它就會每天都去洗，每天都去消毒，當然你說，這樣你懶而已，其實你做過，你就知道有多麻煩，就是為了那條毛巾，你就要做很多事，ok?</p></a>
+				<a href="#00:11:13.44" id="00:11:13.44" class="lt" onclick="jumptoTime(673, this.id)"><p>大家都看到了，基本上乾淨了，那等下我直接開鑊，跟大家開機去分享，我怎樣煎魚，怎樣煲湯，又漂亮又滑又白，ok?</p></a>
+				<a href="#00:11:30.16" id="00:11:30.16" class="lt" onclick="jumptoTime(690, this.id)"><p>那大家先頭就跟大家分享了，怎樣切蘿蔔絲，怎樣洗魚，ok?</p></a>
+				<a href="#00:11:37.96" id="00:11:37.96" class="lt" onclick="jumptoTime(697, this.id)"><p>那現在我們就開始燒鑊了，有網友就說，看到我拿開所有東西，這樣就好看一點，但其實我們香港人家的廚房是很小的，我的工作台也是很小的，不要看畫面，其實你拿我的手掌去比，你就知道，我的工作台只有兩個手掌多一點的深度，三隻手掌的長度，那大家可以想像一下我的工作台有多小，我的爐台有多小，好了。</p></a>
+				<a href="#00:12:15.96" id="00:12:15.96" class="lt" onclick="jumptoTime(735, this.id)"><p>煎魚標準程序，燒鑊，大火燒鑊，然後呢，出煙了，鑊就要熟了，今次我用鐵鑊，之前我講過，易潔鑊很難掛油，在鑊邊，我現在掛油的時候，大家可以細心去看，我掛完油之後，馬上，這個有油，這個沒有油，可以看到油掛在鐵鑊邊，亦是為什麼我喜歡用鐵鑊，再出煙，可以向左邊收細火，這個時候我們就可以，放條魚下去煎，好，這個時候，不要動它。</p></a>
+				<a href="#00:13:14.25" id="00:13:14.25" class="lt" onclick="jumptoTime(794, this.id)"><p>然後稍微晃一晃，讓油都沾到鑊邊的魚身，然後就可以上鑊，上鑊後留一點空隙，然後三分鐘，三分鐘又三分鐘，好，我們三分鐘後看看結果，看看效果如何，我經常煎魚，除了有一次煎鯧魚，因為我最後過火，煎焦了一點，基本上是不會黏底的，看清楚一點，我怎樣煎魚，現在就是背口訣，大火燒鑊，下煙，下油，再煙，小火向左邊收。</p></a>
+				<a href="#00:14:11.23" id="00:14:11.23" class="lt" onclick="jumptoTime(851, this.id)"><p>收到差不多熄為止，即是它不能夠熄的，然後就放魚下去，然後讓魚身沾滿油份，然後上鑊蓋三分鐘，稍後再去機台分享，好了，三分鐘響鐘了，我們看看結果如何，先動一動它，看來它還未離鑊，所以我們再動一動它，讓它沾一沾鑊，讓邊邊煎一煎，記得煎魚不能心急，如果火力足夠的話，三分鐘後起鍋，它就可以離鑊，但有些魚又不行。</p></a>
+				<a href="#00:15:17.23" id="00:15:17.23" class="lt" onclick="jumptoTime(917, this.id)"><p>大家要懂得變通，可以動一動它，然後我們可以稍為感覺一下，用陰力，似乎還有一點黏底，這個時候我們就需要開大一點火，大一點就可以了，再煎一煎，讓我提高溫度，所以很多時候中廚最要活該的地方就是永遠沒有一條方法是行得通的，你必須要現場就著爐具的爐頭和你用的鑊具，即是不同的，它有不同的表現，即是不同的，即是我有隻生鐵鑊，那生鐵鑊的煎的程度又不一樣。</p></a>
+				<a href="#00:16:33.49" id="00:16:33.49" class="lt" onclick="jumptoTime(993, this.id)"><p>現在這隻屬於熟鐵的韓式炒鑊，煎的程度又不一樣，我用易潔鑊，煎的程度不一樣，但基本上口訣是一樣的，只不過時間上就要靠你自己去調整一下，現在溫度夠高了，好，我再用鑊鏈去看看它，這個差不多可以了，OK，這個時候呢，我們就想它快點離鑊呢，這個老人家就教我們，就是什麼呢?</p></a>
+				<a href="#00:17:15.12" id="00:17:15.12" class="lt" onclick="jumptoTime(1035, this.id)"><p>放一點生油進去，讓油降溫，然後我們就可以起了，是，可以了，因為韓式炒鑊就不和中式炒鑊不同，中式炒鑊的弧度比較夠，好了，來了，弧度比較夠，所以我們鯷魚，煎魚，其實我應該要用中式鑊，大家看到嗎?</p></a>
+				<a href="#00:17:47.12" id="00:17:47.12" class="lt" onclick="jumptoTime(1067, this.id)"><p>魚又可以在鑊裡游水了，OK，這個時候我們就翻轉它，這個時候就可以暴力一點了，好，大家看看我煎得好不好，除了這裡有自然的冷縮熱脹，自然的少少爛皮之外，即是冷縮熱脹的問題，其他基本上是否很金黃，煎條魚，好，再將油攪拌均勻，等魚邊和魚頭碰不到油的部分，碰不到鍋的部分，先沾一沾油，這個時候我們又是三分鐘了。</p></a>
+				<a href="#00:18:50.45" id="00:18:50.45" class="lt" onclick="jumptoTime(1130, this.id)"><p>記住留少少鍋蓋空隙，為什麼?讓它透氣，讓水蒸氣排出來，等於我講過的，等於好像焗爐一樣，好，然後三分鐘，繼續計時，等三分鐘之後再看看結果如何，又中響了，看看，三分鐘又夠了，看看如何，用少少陰力去搓一搓，還是差少少，這個時候我們開大少少火，繼續煎它，這個時候我準備了薑片，這個陳皮我已經刮乾淨了，讓它沒那麼澀。</p></a>
+				<a href="#00:19:41.45" id="00:19:41.45" class="lt" onclick="jumptoTime(1181, this.id)"><p>現在我放薑片，爆一爆佢，薑片亦都等佢呢，條魚呢已經，差唔多可以離鑊啦，即係你用音力，佢搓一搓佢呢就可以估到呢，即係大概可以，判斷得到呢，到底佢係唔係，即係可以離鑊呀，咁而家呢我就開到最大火，點解呢呢個時候我就開始爆薑啦，大家睇唔睇到，睇唔睇到條魚，已經係可以離鑊啦，咁呢呢個時候呢，如果大家想啲魚呢。</p></a>
+				<a href="#00:20:38.84" id="00:20:38.84" class="lt" onclick="jumptoTime(1238, this.id)"><p>係進一步野味啲同埋無咁聲呢，落啲胡椒碎落去，又一樽胡椒碎用哂啦，我用呢啲胡椒碎都用得幾犀利，好，睇唔睇到呀，條魚已經可以，離鑊啦喎，咁而家呢係用最大火去煎，點解呢因為我要燒返紅，隻鑊跟住之後，撈走，經過呢個程序之後呢，嗰啲魚，你想佢聲都難啦，係咪，呢個時候呢我哋就加水啦喎，咁呀唔需要再爭拗到底滾水，定係冷水嘅。</p></a>
+				<a href="#00:21:26.84" id="00:21:26.84" class="lt" onclick="jumptoTime(1286, this.id)"><p>我而家呢就落冷水呀，咁我慢慢等我加埋水呢，我就解釋俾大家聽，點解，現在大概加兩千cc左右，兩條魚一斤多些蘿蔔，兩千cc左右就夠一家四口，一人一碗湯，這個時候我們就煮它，煮到它滾就加蘿蔔，我解釋一下，為什麼我說不需要爭論到底是滾水還是熱水，還是冷水下鍋魚湯才會奶白色，看我影片的朋友應該很清楚原因，我亦都講得很清楚。</p></a>
+				<a href="#00:22:20.11" id="00:22:20.11" class="lt" onclick="jumptoTime(1340, this.id)"><p>我現在重複一次，講給新入來，不知頭不知路不識的朋友聽，其實你想魚湯能夠出到奶白色，當中一個最關鍵的作用，科學原理叫做乳化現象，而要做到乳化現象，就是動物油脂經過高溫處理後，再用水煮滾，油和水混合就會變成自然奶白色，這個叫乳化現象，換言之，魚越煎得金香，奶白色的效果就會明顯，所以為什麼我最後才。</p></a>
+				<a href="#00:23:9.11" id="00:23:9.11" class="lt" onclick="jumptoTime(1389, this.id)"><p>最後煎魚煎到後期，我開大火煎它，原因就在這裡，因為我令到那邊更加金香，當然要看著會燶，在這個情況下，無論加熱水還是冷水，結果都是一樣，都會出奶白色，冷水和熱水都有少少分別，分別在哪裏呢，熱水滾水會是白色，但偏向純白，但如果是冷水，會帶有少少輕微的黃油，這個分別在這裏，但不要緊味道是一樣，大家記住。</p></a>
+				<a href="#00:23:54.11" id="00:23:54.11" class="lt" onclick="jumptoTime(1434, this.id)"><p>這個叫乳化現象，只要處理好煎魚，煲奶白魚湯，根本不是困難，等一會煮滾後，分享一下如何了，魚湯已經煮沸了，很快，是否奶白色，我忘了放陳皮，放進去，這個時候就可以把蘿蔔放在上面，這個時候，我們煮蘿蔔大概五分鐘就可以了，再蓋上蓋子，然後計時五分鐘，Sorry，五分鐘，OK，五分鐘之後，蘿蔔基本上就軟軟的，但如果你要確保它軟的話，可以再煮久一點。</p></a>
+				<a href="#00:25:4.88" id="00:25:4.88" class="lt" onclick="jumptoTime(1504, this.id)"><p>OK，行不行，記住，乳化現象就可以令乳湯變成奶白色，是不需要再增加滾水還是冷水的，OK，好了，五分鐘又過了，可以了，看看結果如何，這個湯夠不夠白，按了個鐘，這個時候，這個蘿蔔都好像，可能因為我切粗了一點，還差了一點點，還不夠白，那好吧，我又給多它三分鐘的時間，OK，再看看三分鐘如何。</p></a>
+				<a href="#00:25:52.88" id="00:25:52.88" class="lt" onclick="jumptoTime(1552, this.id)"><p>這裡我必須要講明，不一定是我出錯，不過大家要明白，不同的份量，切法不一樣，都會影響到它生熟的程度所需要的時間，這個必須要注意，這個也是中菜最抵死的地方，沒有一條固定的方程式，大家希望明白，要懂得現場要走陣，OK，等一下再看看效果如何，再跟大家分享，好了，又三分鐘了，總共計時加了蘿蔔八分鐘，看看如何。</p></a>
+				<a href="#00:26:32.88" id="00:26:32.88" class="lt" onclick="jumptoTime(1592, this.id)"><p>蘿蔔可以了，大家如何判斷蘿蔔是否夠軟呢，就要看它有沒有出現半透明的狀態，現在差不多了，開始有半透明的狀態，我們就開始調味了，な Fan Spain hine，trag，โнул，onter，legitimately</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:56.56" id="00:26:56.56" class="lt" onclick="jumptoTime(1616, this.id)"><p>overhe minimize，sunflower，落呢個係一斤半鹽啦，呢個時候呢就兩千cc，大概去到呢淨返，大概一千五百至到一千四百cc到，跟住然之後呢就係糖呢就落多少少啦，跟住因為呢咁樣可以鮮味啲啦，就落兩斤一斤半鹽，兩斤糖跟住然之後雞粉呢就適量啦，咁呀落多落少就靠大家啦，每個人嘅接受程度唔一樣呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:27.67" id="00:27:27.67" class="lt" onclick="jumptoTime(1647, this.id)"><p>跟住然之後呢我哋就可以呢，呢個時候大家睇咩到係好，好，雪白係咪呀，呢個時候我就可以熄火啦，跟住然之後呢我就落乜嘢呢，落蔥啦，呢湯大家睇唔睇到係好雪白㗎，咁呢我就鍾意落大量嘅蔥嘅，跟住然之後呢，落呢個芫茜啦，又係大量呀，跟住畀曬落去，好，記住，落蔥同落芫茜就要等到佢收左火，熄左火之後先放，唔好咁快放，好，令到佢更加香口一啲，呢個時候我地就落少少麻油落去。</p></a>
+				<a href="#00:28:38.92" id="00:28:38.92" class="lt" onclick="jumptoTime(1718, this.id)"><p>咁就點一點個香味，成個呢個係奶白嘅蘿蔔絲汁魚湯咁就完成啦，呢個蘿蔔絲汁魚湯對於女人又係一個寶物黎嘅，點解呢?</p></a>
+				<a href="#00:28:55.92" id="00:28:55.92" class="lt" onclick="jumptoTime(1735, this.id)"><p>尤其是係生產完之後，生產前後，點解呢?</p></a>
+				<a href="#00:29:0.92" id="00:29:0.92" class="lt" onclick="jumptoTime(1740, this.id)"><p>因為佢含有豐富嘅蛋白質，豐富嘅脂肪，跟住之後佢可以谷奶水，有好多人就會係，即係話以形補形咁樣，木瓜啦，其實木瓜都係做唔足夠，最緊要係乜嘢呢?孕婦生產前後，最緊要食兩樣嘢，三樣嘢，第一個就係魚湯，就好似我而家咁樣整，魚湯，你煮配菜落木瓜又好，落蘿蔔都好，都個功效係一樣嘅，因為你要飲嗰啲湯同食嗰啲肉，咁可以谷奶水嘅。</p></a>
+				<a href="#00:29:40.92" id="00:29:40.92" class="lt" onclick="jumptoTime(1780, this.id)"><p>第二個就係食呢個係肉餅，第三個就係要食豬肝，呢三樣嘢就係女人生產前後嘅寶物黎嘅，得唔得?</p></a>
+				<a href="#00:29:50.92" id="00:29:50.92" class="lt" onclick="jumptoTime(1790, this.id)"><p>我而家就總結一下，基本上就冇咩特別嘅，切蘿蔔絲大家都見到，最主要就係處理魚，點樣去處理?記住係煎佢越金香，佢出嚟嗰個乳化效果就會越明顯，嗰啲湯水就會越奶白嘅，得唔得?OK?</p></a>
+				<a href="#00:30:13.92" id="00:30:13.92" class="lt" onclick="jumptoTime(1813, this.id)"><p>咁所以呢，大家一定要記熟呢個口訣係乜嘢呀?大火燒鑊，見煙落油，再見煙，生細火，等佢降一降溫之後，就放條魚落去，然之後三分鐘煎一邊，再試下佢得唔得?唔得，再煎多一陣，跟住然之後落生油，冷嘅生油，然之後呢就可以好到完整咁起咗個魚身出嚟㗎啦，然之後反轉面，再三分鐘，跟住然之後呢，最後尾要隨聲呢，就落薑片啦，落胡椒碎啦，跟住然之後呢，就係落呢個係燒酒炸鑊啦，OK?</p></a>
+				<a href="#00:30:54.92" id="00:30:54.92" class="lt" onclick="jumptoTime(1854, this.id)"><p>燒酒炸鑊，你想做到我先頭起火嘅效果呢，要開大火去燒一燒隻鑊先，OK?得唔得?</p></a>
+				<a href="#00:31:0.92" id="00:31:0.92" class="lt" onclick="jumptoTime(1860, this.id)"><p>好啦，跟住最後尾啦，咁就加埋陳皮，撞水呢，就唔好理佢係冷水定係熱水啦，個效果係一樣嘅，一樣可以出到奶白色嘅，因為點解呀?因為係一個乳化現象，而呢個乳化現象只需要係高溫處理過動物油脂之後，再用水去煮滾佢呢，水同油就可以溝埋一齊，水同油溝埋一齊呢，就會出現呢個乳化現象㗎啦，OK?得唔得?</p></a>
+				<a href="#00:31:31.82" id="00:31:31.82" class="lt" onclick="jumptoTime(1891, this.id)"><p>呢個湯吸唔吸引呀?可唔可以呀?</p></a>
+				<a href="#00:31:33.82" id="00:31:33.82" class="lt" onclick="jumptoTime(1893, this.id)"><p>咁大家可以跟住我一齊做啦，咁希望大家有一個好好嘅湯水飲啦，仲有喎，仲有一個秘訣喎，呢個其實係送飯神器嚟㗎喎，送飯神器，點呀?大家仲記唔記得呀?</p></a>
+				<a href="#00:31:47.82" id="00:31:47.82" class="lt" onclick="jumptoTime(1907, this.id)"><p>做多一個步驟係乜嘢呀?我喺海鮮豆腐湯嗰度係咪做過呀?</p></a>
+				<a href="#00:31:51.82" id="00:31:51.82" class="lt" onclick="jumptoTime(1911, this.id)"><p>撈起湯渣，然之後點呀?</p></a>
+				<a href="#00:31:55.82" id="00:31:55.82" class="lt" onclick="jumptoTime(1915, this.id)"><p>加熟油、豉油，嘩!我而家講到自己都撈口水呀，OK?</p></a>
+				<a href="#00:31:59.82" id="00:31:59.82" class="lt" onclick="jumptoTime(1919, this.id)"><p>唔講啦，去食飯啦，Bye Bye。</p></a>
+				<a href="#00:32:2.82" id="00:32:2.82" class="lt" onclick="jumptoTime(1922, this.id)"><p>希望大家越食越好啦，越食越和味啦，OK?Bye Bye。</p></a>
+</div>
+	</body>
+</html>

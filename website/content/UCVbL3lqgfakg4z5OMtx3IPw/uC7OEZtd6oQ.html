@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——泰式生菜包，只要有了自製泰醬，就可以完全零難度完成這道菜式，而且還是專業味道，只要喜愛食泰菜的朋友，無論新手老手都可以做出專業味道！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'uC7OEZtd6oQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——泰式生菜包，只要有了自製泰醬，就可以完全零難度完成這道菜式，而且還是專業味道，只要喜愛食泰菜的朋友，無論新手老手都可以做出專業味道！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.15" id="00:00:0.15" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，先頭我已經介紹了，如何開泰醬的醬底，這個泰醬為何叫萬用泰醬呢，因為可以用來炒生菜包，到底怎樣炒呢?</p></a>
+				<a href="#00:00:25.15" id="00:00:25.15" class="lt" onclick="jumptoTime(25, this.id)"><p>現在正在燒鑊，要開抽油機，先介紹材料，很簡單，只要開泰醬，炒生菜包，馬上變成專業廚房，首先有新鮮的香茅、蒜蓉，香茅大概一支，然後有冰酸豬肉、新鮮豬肉，我這裏用了一斤，新鮮的九層塔，我現在鹽倍少，如果喜歡食可以買多些，然後有什麼醬料呢，當然是我們預先打好的泰醬，現在鑊燒到夠紅，我們開始放油。</p></a>
+				<a href="#00:01:40.15" id="00:01:40.15" class="lt" onclick="jumptoTime(100, this.id)"><p>這個生菜包是不需要拌的，豬肉是不用拌的，簡單嗎?當然簡單，要食的馬上開包，然後我們將蒜蓉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:2.15" id="00:02:2.15" class="lt" onclick="jumptoTime(122, this.id)"><p>燒鑊燒夠</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:4.15" id="00:02:4.15" class="lt" onclick="jumptoTime(124, this.id)"><p>將蒜蓉和香茅放下去，先爆鑊，OK，嘩!好香!</p></a>
+				<a href="#00:02:14.06" id="00:02:14.06" class="lt" onclick="jumptoTime(134, this.id)"><p>好!跟住之後我哋呢，就可以呢，直接倒啲生豬肉落去炒啦，直接倒生豬肉啦，唔使撈㗎，OK，記住呀，所以呢呢個，生菜包呢係比大家想像中呢係，即係簡單好多㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:38.02" id="00:02:38.02" class="lt" onclick="jumptoTime(158, this.id)"><p>好!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:39.02" id="00:02:39.02" class="lt" onclick="jumptoTime(159, this.id)"><p>好!，跟住之後直接炒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:49.02" id="00:02:49.02" class="lt" onclick="jumptoTime(169, this.id)"><p>咁呢就炒熟佢為止啦，喇!</p></a>
+				<a href="#00:02:51.52" id="00:02:51.52" class="lt" onclick="jumptoTime(171, this.id)"><p>喺呢個時候呢我哋係唔需要調味嘅，總言之炒香佢先，炒到佢香口先啦!</p></a>
+				<a href="#00:03:2.68" id="00:03:2.68" class="lt" onclick="jumptoTime(182, this.id)"><p>我這些是甚麼肉碎呢?</p></a>
+				<a href="#00:03:6.08" id="00:03:6.08" class="lt" onclick="jumptoTime(186, this.id)"><p>就是我老婆的梅頭肉碎，所以這些肉都很滑，做泰式生菜包，最好是半肥瘦豬肉，最好，豬腩肉或梅頭肉都可以攪碎，帶少少肥肉就最好，現在炒到豬肉大約七成熟，大家可能在鏡頭裏已經看到有些豬肉是有點焦，這樣就對了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:52.08" id="00:03:52.08" class="lt" onclick="jumptoTime(232, this.id)"><p>炒到差不多就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:55.08" id="00:03:55.08" class="lt" onclick="jumptoTime(235, this.id)"><p>等它產生焦糖化，現在我不是要焦糖化反應</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:3.08" id="00:04:3.08" class="lt" onclick="jumptoTime(243, this.id)"><p>因為我放的是一斤豬肉，所以就一斤鹽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:15.08" id="00:04:15.08" class="lt" onclick="jumptoTime(255, this.id)"><p>然後一斤糖，然後輕輕少少雞粉，純粹個人習慣，可以不放，這個時候，我們可以有豬肉加香茅的味道，這個時候我們就加魚露，大概加三茶匙，好，接着...</p></a>
+				<a href="#00:05:14.25" id="00:05:14.25" class="lt" onclick="jumptoTime(314, this.id)"><p>哎呀!沒有酒了，算了，不要緊，這個時候我們就開始加什麼呢?</p></a>
+				<a href="#00:05:25.25" id="00:05:25.25" class="lt" onclick="jumptoTime(325, this.id)"><p>加這個醬，加這個，加這個，OK，一匙，兩大湯匙，三大湯匙，嘩!</p></a>
+				<a href="#00:05:50.68" id="00:05:50.68" class="lt" onclick="jumptoTime(350, this.id)"><p>豬肉現在已經差不多可以了，我看看，沒有廣東米酒唯有高級一點，放清酒 差一點點，放一點酒下去，好，肉碎已完成，可以熄火，熄火後，全部九層塔放下去，是熄火才放下去，不要炒的時候放下去，可以熄火，然後，拌勻和九層塔，這個完完整整的泰式生菜包便完成了，大家等我一下，這個泰式生菜包，大家看到我放了九層塔，大家要記住不要煮到全熟。</p></a>
+				<a href="#00:07:27.49" id="00:07:27.49" class="lt" onclick="jumptoTime(447, this.id)"><p>現在這樣，有少少熱度便對了，這樣味道咬下去是最純的，口感和味道是最好的，可以嗎，又是那隻中式鍋擋住，不好意思，我做完後，擺好盤便跟大家做個總結</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:54.49" id="00:07:54.49" class="lt" onclick="jumptoTime(474, this.id)"><p>好，哎呀当当心，生菜出來了，這個生菜包就完成了，肉汁又豐富，我這個生菜包就很簡單的，先打了泰式的底醬，泰式的底醬可以有很多種吃法，可以沾雞來吃，燒烤豬頸肉，泰式鹹肉，泰式魚，我和大家說，我這個醬吃海鮮很配合，又可以吃什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:9.53" id="00:09:9.53" class="lt" onclick="jumptoTime(549, this.id)"><p>又可以像剛才那樣吃泰蝦刺身，不過就要，因為那個是醬底，你要吃不同的東西就要調整比例，這個泰式生菜包，我就直接用醬底下去炒，什麼都不用，最主要調味就調合豬肉的重量，鹽糖味就這樣，然後放三湯匙泰式底醬，最後，要炒好豬肉，關火才放九層塔，不然太早放下去，香味就會跑掉，可以嗎?</p></a>
+				<a href="#00:09:59.53" id="00:09:59.53" class="lt" onclick="jumptoTime(599, this.id)"><p>基本上就是這樣，我打了泰式底醬，是不是有很多種吃法，吃雞飯也可以，吃泰式魚也可以，吃泰式蝦刺身也可以，可以嗎?</p></a>
+				<a href="#00:10:15.53" id="00:10:15.53" class="lt" onclick="jumptoTime(615, this.id)"><p>之前做了泰式蝦刺身，有另一種調製的方法，用泰式底醬來調製，現在就直接用泰式底醬來炒，生炒豬肉，是不是很簡單呢?</p></a>
+				<a href="#00:10:29.53" id="00:10:29.53" class="lt" onclick="jumptoTime(629, this.id)"><p>又不用醃，又不用調味，最多就炒的時候鹽糖味，注意一下九層塔放下去的時間就完成了，生菜怎樣呢?</p></a>
+				<a href="#00:10:38.53" id="00:10:38.53" class="lt" onclick="jumptoTime(638, this.id)"><p>浸泡半小時就完成了，就是這樣，OK?</p></a>
+				<a href="#00:10:43.53" id="00:10:43.53" class="lt" onclick="jumptoTime(643, this.id)"><p>吃東西了，不說了，再見了，我口水都在流了。</p></a>
+				<a href="#00:10:48.53" id="00:10:48.53" class="lt" onclick="jumptoTime(648, this.id)"><p>就這樣吧。</p></a>
+</div>
+	</body>
+</html>

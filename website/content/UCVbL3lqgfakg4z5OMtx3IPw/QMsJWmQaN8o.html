@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——薑蔥香煎小馬友(片中口誤說成是盲曹)，加入了豬油渣同煎，香脆甘滋！加入了我自製的『鮮沙薑豉油汁』，馬上又變成了送飯神器，我家兩位食家讚不絕口！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QMsJWmQaN8o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——薑蔥香煎小馬友(片中口誤說成是盲曹)，加入了豬油渣同煎，香脆甘滋！加入了我自製的『鮮沙薑豉油汁』，馬上又變成了送飯神器，我家兩位食家讚不絕口！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天我會和大家分享一個香港人常聽到的名字，亦會偶爾吃到的，就是盲曹。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>我買了兩條盲曹，如果夠大條，其實很好食，不過近期很多盲曹仔在街市認市，我都試下了。</p></a>
+				<a href="#00:00:45.00" id="00:00:45.00" class="lt" onclick="jumptoTime(45, this.id)"><p>今晚我會和大家分享一個盲曹菜式，就是薑蔥香煎盲曹。</p></a>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>大家可以看到盲曹的魚身，盲曹大條的肉大約有8-10斤重，通常用來煎排。</p></a>
+				<a href="#00:01:17.00" id="00:01:17.00" class="lt" onclick="jumptoTime(77, this.id)"><p>如果用原條的盲曹仔，做的菜式好像又不多見。</p></a>
+				<a href="#00:01:24.00" id="00:01:24.00" class="lt" onclick="jumptoTime(84, this.id)"><p>我現在洗乾淨，大家可以剁魚尾，但我怕鑊不夠大，所以我還是剁魚尾。</p></a>
+				<a href="#00:01:46.00" id="00:01:46.00" class="lt" onclick="jumptoTime(106, this.id)"><p>盲曹處理很簡單，如果想它快點熟，一邊切三刀。</p></a>
+				<a href="#00:02:3.86" id="00:02:3.86" class="lt" onclick="jumptoTime(123, this.id)"><p>大家可能會不喜歡吃魚，或者聽過一些魚比較腥，冰鮮，其實我也介紹過很多處理冰鮮魚，或者鮮魚的方式，大家很快的幾天前，我已經做過蒸黃花，那要怎樣做呢?</p></a>
+				<a href="#00:02:34.28" id="00:02:34.28" class="lt" onclick="jumptoTime(154, this.id)"><p>很簡單，用鹽，用鹽舀一舀，這個作用可以令到，這樣抹它，然後抹勻它，然後反轉面又一樣，這個的目的不是先醃鹹，這個的目的就是要令到它出水，出水有兩個目的，一個就是令到它的腥味都走掉，另一個方面就是令到它的肉緊緻一些，稍微醃一醃，不是很久，大概五分鐘左右，千萬不要過十分鐘，我已經講過很多次了，然後就完事了。</p></a>
+				<a href="#00:03:33.56" id="00:03:33.56" class="lt" onclick="jumptoTime(213, this.id)"><p>材料很簡單，青蔥，然後薑就幾件，這樣就可以了，這個薑蔥就拿去煎，我這次不是用煎封，我會用我平時用的鮮沙薑豉油，鮮沙薑豉油還在 幾個月前的，還在，我已經拌好了，用來煎魚是很好味的，不妨礙大家了，等我開鑊煎魚的時候再跟大家分享，大家看到我怎樣處理魚，現在已經燒鑊了，燒到差不多的時候，我們就起煙。</p></a>
+				<a href="#00:04:32.25" id="00:04:32.25" class="lt" onclick="jumptoTime(272, this.id)"><p>然後放油，這裡我會加一點點豬油，為什麼呢?</p></a>
+				<a href="#00:04:44.21" id="00:04:44.21" class="lt" onclick="jumptoTime(284, this.id)"><p>因為，又是那個道理，可以是，隨聲，好，我做錯了一件事，忘記關小火，關小火，OK，向左邊關，然後，等油都被鑊煎到金黃色，所以就要把鑊壓緊，讓油都沾到魚頭，讓它煎得香一點，OK，這個時候我們就可以，蓋上蓋子，三分鐘，OK，三分鐘又三分鐘，那等一下就看看結果如何，好了，又響鐘了，那就看看，怎樣呢?</p></a>
+				<a href="#00:05:48.17" id="00:05:48.17" class="lt" onclick="jumptoTime(348, this.id)"><p>字幕 by 蘋桃，好像還未可以，差一點點，繼續煎一煎，好，先看看，真的差一點點，繼續，可能我厚身那一邊，所以多給它幾分鐘，OK，多給三分鐘，等一下再開機再看看，好了，大家從中響三分鐘過去，三分鐘過去了，看看結果如何，還差一點點，可能魚比較厚身，所以要慢慢煎，這個時候可以開大一點火，煎一下魚頭和魚尾。</p></a>
+				<a href="#00:07:14.73" id="00:07:14.73" class="lt" onclick="jumptoTime(434, this.id)"><p>不需要煎得太透，現在就要把鍋集齊，很多時候煎東西煮東西，要懂得變通，不是一本通書看到老，但是我們要檢查魚是否可以，其實有很多種方法，如果發現它不行，我們馬上就要變通，要想想它為什麼，因為這條韓式鍋的問題，和這條魚比較長身，所以煎出來的效果就不太好，所以這個時候我們就要把鍋集齊，讓它慢慢煎。</p></a>
+				<a href="#00:08:4.73" id="00:08:4.73" class="lt" onclick="jumptoTime(484, this.id)"><p>檢查一下，看看行不行，因為那些芒草的肉是很嫩的，其實這個是盲肚BB，所以我們要慢慢，不要心急，蒸盲槽BB就經常有人食，但蒸盲槽BB就比較少人食，因為有時候我們為了好吃，真的需要一點耐性，現在我已經煎了8-9分鐘，通常魚，我經常都試它，其實它能否離鑊和煎得夠不夠透很有關係，所以很多時候我們要用陰力去試那條魚到底行不行。</p></a>
+				<a href="#00:10:35.00" id="00:10:35.00" class="lt" onclick="jumptoTime(635, this.id)"><p>如果它行的話，其實它很快離鑊，現在很明顯魚尾離鑊了，但魚頭就不行，為什麼呢?因為這隻鑊的弧度問題，所以它的魚頭煎得不夠好，所以需要用少許時間，這些是鑊具有關係的，如果我用的是中式鑊就沒有這個問題了，我都說過，我現在不用中式鑊就行了，是不是要很有心機，大家一心急就不行了，這次算是意外，意外可以讓大家知道原來真的不用心急就行。</p></a>
+				<a href="#00:11:30.00" id="00:11:30.00" class="lt" onclick="jumptoTime(690, this.id)"><p>還有，我們用西式煎鑊或者韓式煎鑊有一個不好處，就是我們沒有中式鑊煎魚那麼瀟灑，這個時候，這個是我私人的寶貝，這個時候可以加少許豬油去煎魚，咁就可以令到呢條魚呢就更加香啦ok，嗱咁我畀大家睇下，個texture，係咪煎得好平均呀，嗱但係呢我為咗要煎香嗰個頭呢，好明顯見到呢邊呢條呢，就有少少過火啦。</p></a>
+				<a href="#00:12:29.38" id="00:12:29.38" class="lt" onclick="jumptoTime(749, this.id)"><p>嗱呢一條呢，呢邊呢一條呢就ok囉，嗱咁大家記住呀，即係我哋即係作為，家廚又好或者咩廚師都好，我哋要識得走盞嘅，咁呢次呢我煎魚呢就冇係落撲粉嘅，咁通常呢如果就咁齋煎嘅話呢我就唔需要撲粉嘅點解呢，我直接食佢個魚皮香呀嘛明唔明呀，但係如果係紅燒嘅話呢，為免紅燒嘅過程當中呢，係我哋會係點呀會係。</p></a>
+				<a href="#00:13:5.78" id="00:13:5.78" class="lt" onclick="jumptoTime(785, this.id)"><p>出現呢個爛魚皮嘅情況我哋就要撲粉呀，咁呢個係完全兩個唔同嘅，即係處理嘅方法嚟嘅，好啦嗱呢個時候呢我又三分鐘又計佢時呀，跟住之後上鑊蓋留返少少個空間畀佢，留返少少空隙ok，好等陣間呢我哋睇下個，效果如何囉，好啦又鐘響啦三分鐘睇下佢如何囉，首先呢，呢次好快就可以游水啦睇唔睇到呀大家，ok。</p></a>
+				<a href="#00:13:38.38" id="00:13:38.38" class="lt" onclick="jumptoTime(818, this.id)"><p>好啦呢個時候呢我哋就開返大火佢啦，跟住完之後呢就放啲薑片落去放喺兩邊，跟住完之後呢就將啲蔥白呢就掟落去，咁呢個時候呢我哋就再灑一啲係，胡椒啦，等我一陣啦要開新嘅胡椒呀，我而家呢因為要放開胡椒呢，臨急臨忙呀咁所以呢我就生細咗個火嘅，生嘅最細，咁呢啲就係今晚好多意外呀咁呀大家可以，睇到呢我係點樣應付呢個意外㗎喇我。</p></a>
+				<a href="#00:14:30.78" id="00:14:30.78" class="lt" onclick="jumptoTime(870, this.id)"><p>生到最細啦，好開返大佢，跟住就沈啲胡椒落去，好多人說我的影片很長，現在我把這幾隻鑊放涼了，一邊可以令薑蔥出味，另一邊可以令魚不太燶，有些人說我的影片太長，要睡覺了，如果我不是先頭拍攝過，大家看不到我怎樣去救那條魚，也看不到標準時間不一定是對的，有機會是錯的，有部份魚是不行的，好像現在這個盲曹。</p></a>
+				<a href="#00:15:29.51" id="00:15:29.51" class="lt" onclick="jumptoTime(929, this.id)"><p>那怎麼辦呢?大家先頭就可以看到我怎樣救了，包括救那條魚，怎樣去離鑊，然後沒了胡椒粉，馬上要怎樣做呢?要關小火，最後這個時候我們要放什麼?放酒，好，關火，這個薑蔥香煎盲曹，這個豬油膏，這個時候我把魚，怎樣處理好呢?</p></a>
+				<a href="#00:16:25.51" id="00:16:25.51" class="lt" onclick="jumptoTime(985, this.id)"><p>因為我怕它太矜貴，怕弄壞，然後把蔥撈起來，底部是否有些油?</p></a>
+				<a href="#00:17:4.25" id="00:17:4.25" class="lt" onclick="jumptoTime(1024, this.id)"><p>其實是有用途的，不要浪費，怎樣呢?等我整好之後給大家看看，再開火，燒熱它，在這個時候，我們就要是，等等，OK，看到了，我們就要灑在蔥花上面，這個步驟好像重覆了，大家可能會覺得，你有沒有弄得這麼麻煩?</p></a>
+				<a href="#00:17:43.25" id="00:17:43.25" class="lt" onclick="jumptoTime(1063, this.id)"><p>好吃的東西真的有少少麻煩，少少巧妙的，這個時候，倒所有進去，好了，這個油燒熱了，關火，大家看著，灑在蔥上，OK，等等，我再做一個演示，因為還有一個步驟沒做，做完這個步驟才OK的，做一個什麼步驟呢?</p></a>
+				<a href="#00:18:25.25" id="00:18:25.25" class="lt" onclick="jumptoTime(1105, this.id)"><p>就是，哈哈，我買了一個月的，特製的醬油，之前上一次，做這個香煎櫻蔥的時候，是不是香煎蔥，香煎黃花魚的時候，我已經是加了辣椒進去，夠味的，OK，OK，加上這個，有鯊薑，鮮鯊薑味的醬油，煎魚醬油，今晚這個，夠豐富了，再加上豬油渣，這個豬油渣是bonus的，bonus的，如果大家有跟我做豬油的話，剩下的豬油渣不知道怎麼辦呢?</p></a>
+				<a href="#00:19:17.25" id="00:19:17.25" class="lt" onclick="jumptoTime(1157, this.id)"><p>可以跟我這個方法了，OK，好，搞掂!</p></a>
+				<a href="#00:19:25.40" id="00:19:25.40" class="lt" onclick="jumptoTime(1165, this.id)"><p>有冇四個話呀，大家見到呢個薑蔥香煎芒草呀，fit，呢個豬油渣，我突然間諗起嘅，所以呢個又係咩嘢呢，你只要學識咗呢啲基本功之後呢，其實你要變化呢就好容易嘅，係咪呀，大家都知道豬油係可以劈聲㗎嘛，咁你再落啲豬油香落去會變成點呀，大家都知道嘅，老食家好鍾意食豬網油蒸魚㗎嘛，即係豬油蒸魚係好好味嘅。</p></a>
+				<a href="#00:20:3.72" id="00:20:3.72" class="lt" onclick="jumptoTime(1203, this.id)"><p>我而家呢，因為有材料喺度，我稍為變化一下，我攞啲豬油渣，逼啲豬油返出嚟，然之後滲落呢條魚嗰度，呢條煎魚嗰度，咪掂晒囉，正晒囉，ok，得唔得，咁呀，大家希望可以從中得到啟發，其實呢，我可以話畀大家聽呢，真係可以烹飪呢家嘢呢，係好多變化嘅，就唔好淨係一本空書睇到老，ok，咁而家總結一下啦。</p></a>
+				<a href="#00:20:37.88" id="00:20:37.88" class="lt" onclick="jumptoTime(1237, this.id)"><p>咁呢，煎黃花魚呢，即係唔好，唔係唔係唔係，呢個煎芒草呀，香煎芒草呢係好難煎嘅，因為佢好亂呀，即係唔係芒草扒喎，唔係十幾廿斤嗰啲大芒草喎，而家講緊嘅係一條得十兩百兩嘅芒草仔，BB仔，佢係好矜貴嘅，咁大家先頭都見到我點樣去執生㗎啦，ok，記住呀，佢好矜貴㗎，咁所以呢，佢呢就即係冇咁容易離獲嘅時候呢，大家要畀啲耐性，慢慢用陰力，用鑊鏟去試。</p></a>
+				<a href="#00:21:8.84" id="00:21:8.84" class="lt" onclick="jumptoTime(1268, this.id)"><p>ok，最後尾成功咗啦，係咪，第二樣嘢呢，就係我哋處理大帆都係嘅，處理呢個冰鮮魚呢，你想佢好味啲，你想佢係冇咁腥，首先第一件事做咩呀，攞啲鹽，幼鹽去省一省佢，五分鐘，醃佢五分鐘至到十分鐘，咁就逼走佢嗰啲腥嘅血水，ok，咁如果大家再唔咩嘅話呢，可以用酒嘅，ok，即係好似我對上一條咁呀，呢個係黃花魚死馬當木，我依改咗條片啦。</p></a>
+				<a href="#00:21:43.32" id="00:21:43.32" class="lt" onclick="jumptoTime(1303, this.id)"><p>ok，得唔得，好啦，跟住煎嘅時候，基本程序啦，燒鑊，起煙，落油，再起煙，收細火，先頭我做錯少少嘅，就冇收細火，就即刻興奮嗰頭，掟條魚落去，做錯咗嘅，ok，大家記住唔好學我呀，係點呀，再落咗油之後，再起煙就收細火，等佢降一降溫，然之後放條魚落去，可能先頭就係因為咁樣我就做錯咗呢，變咗就黐底，有少少黐底啦，ok。</p></a>
+				<a href="#00:22:12.20" id="00:22:12.20" class="lt" onclick="jumptoTime(1332, this.id)"><p>好彩我都仲救得返，呢個經驗嚟嘅啫，ok，得唔得，跟住然之後，大家即係成日都話，喂，煎魚豉油，蒸魚豉油，上一次呢，我就嗰個豉汁呢，就同大家去演示過點樣去撞咗個蒸魚豉油出嚟啦，唔使特別要開蒸魚豉油㗎，但如果大家堅持要開嘅話，可以學我嗰個雞汁咁樣，攞咩呀，爆啲鮮沙薑，然之後攞啲蔥，攞啲辣椒落去浸。</p></a>
+				<a href="#00:22:38.36" id="00:22:38.36" class="lt" onclick="jumptoTime(1358, this.id)"><p>浸到佢一頭半個月呢，嘩，加糖落去調味，咁就變咗一個，咩呀? 蒸魚豉油自家製嘅，就出咗嚟啦，因為沙薑可以劈聲嘅，所以呢我哋食魚都好夾嘅，食海鮮都好夾嘅，尤其是食蝦更加夾添，OK 得唔得?</p></a>
+				<a href="#00:22:58.01" id="00:22:58.01" class="lt" onclick="jumptoTime(1378, this.id)"><p>好啦 總結完啦，今日有少少意外 唔好意思呀，煎完魚，整完嘢 梗係要食飯啦，唔同大家講啦。</p></a>
+				<a href="#00:23:7.49" id="00:23:7.49" class="lt" onclick="jumptoTime(1387, this.id)"><p>Bye Bye。</p></a>
+</div>
+	</body>
+</html>

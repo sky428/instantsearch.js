@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜荔芋臘味煲｜香糯惹味｜製作簡單的煲仔菜｜最適合今天這么冷的天氣。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Bl7CQ0Kzfn8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜荔芋臘味煲｜香糯惹味｜製作簡單的煲仔菜｜最適合今天這么冷的天氣。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:5.31" id="00:00:5.31" class="lt" onclick="jumptoTime(5, this.id)"><p>咦，這是什麼?</p></a>
+				<a href="#00:00:8.31" id="00:00:8.31" class="lt" onclick="jumptoTime(8, this.id)"><p>像一灘水似的，這是麗湖臘味煲，今天很冷，所以我們吃煲仔菜，這個很簡單，大家可以看看我怎樣做，一個簡單的臘味菜，不要只吃臘味煲仔飯、臘味炒芥蘭，這個麗湖臘味煲在冬天的茶餐廳很著名，希望大家喜歡，大家想知道怎樣做就跟著看我怎樣做，很簡單，不用很複雜，好，去片，Hello，大家晚上好，今天天氣很冷。</p></a>
+				<a href="#00:00:57.31" id="00:00:57.31" class="lt" onclick="jumptoTime(57, this.id)"><p>大家有沒有做煲仔飯吃?</p></a>
+				<a href="#00:01:0.31" id="00:01:0.31" class="lt" onclick="jumptoTime(60, this.id)"><p>有沒有做煲仔?</p></a>
+				<a href="#00:01:2.31" id="00:01:2.31" class="lt" onclick="jumptoTime(62, this.id)"><p>這個時候當然是做煲仔飯、煲仔菜的時候，今天我想和大家分享一個麗湖臘味煲，簡單快捷，因為我不想阻大家時間，所以我已經切好了，先介紹材料，首先，麗湖臘味當然有臘味，有臘肉、潤腸、臘腸，如果大家不喜歡吃潤腸，可以不用，臘腸也可以，可以放多點，現在我這些是超瘦臘腸，如果大家不喜歡，其實我也不太喜歡，不過有存貨，所以繼續吃。</p></a>
+				<a href="#00:01:52.31" id="00:01:52.31" class="lt" onclick="jumptoTime(112, this.id)"><p>可以買普通的，臘腸一定是大於七分瘦，三分肥，大概六比四，其實是最好吃的，太瘦的臘腸就不太好，除了臘腸，另一個主角當然是麗湖、芋頭，芋頭上次也簡介過怎樣選擇，大家看到這個芋頭的頭部和尾部，基本上已經會起粉，不過我們還要處理一下，然後切成小塊，一片片的大片 因為這樣會好吃些，OK。</p></a>
+				<a href="#00:02:40.98" id="00:02:40.98" class="lt" onclick="jumptoTime(160, this.id)"><p>那好了，材料方面就很簡單，有薑、蒜、紅蔥頭 這幾樣東西，OK，然後配菜，其實我們煲仔菜很多時候都會有蒜和唐芹，這東西提香，基本上就是這些，然後一個關鍵的禮物，例如是芋頭的話，關鍵的一個原材料就是椰漿，OK，我買這個 大家記住這個，這個椰漿是165ml的，最小罐的 在市面上可以買到的，買這個就可以了 一罐一餐。</p></a>
+				<a href="#00:03:22.74" id="00:03:22.74" class="lt" onclick="jumptoTime(202, this.id)"><p>買大罐的 雖然這些貴一點，但是給大罐的節省，你不會說用完之後你迫著盡快用完，不然就變了 是不是這樣說，很多時候我們放進冰箱都忘記了，是不是，好 這個時候說明真煲仔菜，我們就由煲仔開始起鑊，那，先開火，煲仔不適宜用正常情況下的最大火，大家記得我煲仔飯時說過，它的大火是甚麼，就是剛剛好。</p></a>
+				<a href="#00:04:13.99" id="00:04:13.99" class="lt" onclick="jumptoTime(253, this.id)"><p>我們收細火，剛剛好火苗頂著煲底，然後有少少火苗走出來，這樣就為之煲仔的大火，OK 行不行，記住，之前我做的煲仔菜，我沒有特別提醒這件事，所以大家如果因為我這個做法，而燒壞了煲仔，那就真是不好意思，是我不對，因為我沒有提醒大家，好了，我們要先燒一燒鍋，燒一燒鍋始終都要，其實煲仔菜有很多種，很多材料。</p></a>
+				<a href="#00:05:3.79" id="00:05:3.79" class="lt" onclick="jumptoTime(303, this.id)"><p>不過相對地，我覺得例如這個臘味煲，它比較上簡單和容易，對大家來說就容易些，這個時候等它燒到鍋，因為煲仔的特性是甚麼，它的升溫很慢，但是它的全溫性，即是說儲存的溫度相對高，相對長時間，所以很多時候，為何煲仔菜那麼多人冬天喜歡吃，就是因為它的全溫性比較高，就算我關火後半小時，相對溫度來說吃完。</p></a>
+				<a href="#00:05:47.19" id="00:05:47.19" class="lt" onclick="jumptoTime(347, this.id)"><p>都還有餘溫，所以冬天那麼多人吃煲仔就是這個原因，當然這個我解釋過很多次，其實大家看到我還有第二樣菜，等一下跟大家分享，做魚扣，大家知不知道魚扣是甚麼，好，差不多了，然後我們加少許油，這個時候我們就放薑片，薑片我個人放得比較多，但如果大家不喜歡的話，其實放少一半都可以，有幾片薑片起鑊就可以了，現在一開始先炒臘味。</p></a>
+				<a href="#00:06:53.05" id="00:06:53.05" class="lt" onclick="jumptoTime(413, this.id)"><p>要遷就鏡頭對焦區，否則會令大家看不到焦點，雖然是煲仔，但薑、蒜、蔥依然要按程序下，因為三種受熱程度不一樣，我現在只加薑片，爆香薑片，讓薑味先出，然後加蒜頭，不要太快放蔥， 因為蔥很快燶， 爆一下就燶了，所以我一定要強調順著次序，因為不順著次序的話， 最後三樣東西都燶了，蔥燶了， 但薑蒜就沒有味道。</p></a>
+				<a href="#00:08:13.11" id="00:08:13.11" class="lt" onclick="jumptoTime(493, this.id)"><p>現在開始聞到薑蒜味，這個時候我們就放蔥頭下去，大家經常問有幾樣東西，有個疑問，Leo你每次煮肉都煮這麼久，你每次起鍋都起這麼久，這麼浪費時間，煮肉那方面我就不用說了，我經常都說你煮肉煮得好，那樣的菜就已經成功了一半，同樣地我們拉長時間起鍋，亦都是成功了很大的比例，為什麼呢，因為我們起鍋起得好。</p></a>
+				<a href="#00:08:54.51" id="00:08:54.51" class="lt" onclick="jumptoTime(534, this.id)"><p>其實那道菜就會更惹味，等於我經常說的那句，老師傅說，你炒那個料頭炒得越乾，它就會越香口，記住，在不焦的情況之下，我們盡量炒得香口一點，煲仔菜都一樣，煲仔菜沒有鑊氣的，那我怎麼辦，就在起鍋那裡，我們要花一點點功夫，好了現在差不多了，這個時候我們就把臘味倒下去炒，炒腊味炒到腊味油開始出泥為止，腊味炒得好。</p></a>
+				<a href="#00:10:6.87" id="00:10:6.87" class="lt" onclick="jumptoTime(606, this.id)"><p>如果這個過程你炒臘味油出得越多的話，整體上這個菜會越香口的，不好意思 又習慣了我要站歪一點，如果不是的話大家看不到鏡頭，即是這隻手經常都碰到對焦區，阻礙了大家的觀感，這樣就對不到焦，被手吸引了，這個時候開始聞到韌腸味 臘腸味開始出來了，這裡有一個技巧就是，切臘肉那裡，麻煩大家去我做臘味煲仔飯那裡怎樣切臘肉。</p></a>
+				<a href="#00:10:58.87" id="00:10:58.87" class="lt" onclick="jumptoTime(658, this.id)"><p>因為切臘肉不是就這樣，你切成片就可以了，原來要有技巧的，不然煮出來的臘肉就會散掉，不好看之餘又難吃，好了 現在差不多可以了，然後我們就放水，看得見，大概落500ml的水，然後我們蓋上蓋子 關火，關火 什麼事?</p></a>
+				<a href="#00:11:41.79" id="00:11:41.79" class="lt" onclick="jumptoTime(701, this.id)"><p>轉鑊，因為我們要處理一下芋頭，要這樣就可以令到它起沙，即是吃下去更加粉，好 我現在這邊先用小火煮，不是小火 即是開大火繼續煮，現在開始處理芋頭，今天繼續拍攝4K影片，不過改了格數，看看會不會像之前那樣死機，因為資料流量會產生廢熱，因為需要利用電壓去處理，所以拍攝4K影片很高熱，相機很容易過熱。</p></a>
+				<a href="#00:12:51.64" id="00:12:51.64" class="lt" onclick="jumptoTime(771, this.id)"><p>現在減低了數據流量，希望可以持久一點，始終現在時代不同，每個人都4K電視，我拍片都要4K，好，見煙了，一樣的程序，大火燒鍋，見煙落油，然後再燒一燒它，這裡就油，看份量，現在大家看到我，放的油比較多 為什麼呢?</p></a>
+				<a href="#00:13:29.10" id="00:13:29.10" class="lt" onclick="jumptoTime(809, this.id)"><p>因為我的芋頭這裡，差不多有兩斤，就是看那個，那個什麼，看那個狀況，大家OK?</p></a>
+				<a href="#00:13:49.10" id="00:13:49.10" class="lt" onclick="jumptoTime(829, this.id)"><p>我經常都強調一件事，就是時間管理，大家看一下，我現在，這邊的鍋子在煮，這個現在，和這個，芋頭走油，大火，如果不夠力，拿起鍋子就用小火，稍微要，燒一燒它，稍微這樣，讓它煎一煎就行了，就反轉它，這樣，它走一走油，芋頭的粉就很容易出來，我在做薯仔，那裡和上一次，芋頭粉那裡，其實我都簡介過，其他的芋頭，希望大家。</p></a>
+				<a href="#00:14:43.10" id="00:14:43.10" class="lt" onclick="jumptoTime(883, this.id)"><p>另外有一個芋頭煲，大火很快，不要浪費時間，它很容易就會燒焦，大家看看邊邊，有些受火的都開始有些輕微的洞洞地了，如果大家不夠手力的話，不像我那麼好力拿起它來拿的話，麻煩大家國產勤力一點。</p></a>
+				<a href="#00:15:40.60" id="00:15:40.60" class="lt" onclick="jumptoTime(940, this.id)"><p>好快嘅咋唔好唔好諗住好耐呀咁咪檢查下啦佢開始有表面有少少黃黃地啦金黃色嘅話呢咁其實就ok㗎啦，呢個過程唔係叫佢吸油呀咁呢其實呢我呢種嘅方法呢就對付呢個係處理呢個係即係澱粉質嘅食材呢係好有效嘅，即係澱粉質嘅食材呀譬如薯仔呀番薯呀芋頭呀呢啲即係你攞油呢高溫呢佢煎過佢呢佢就煎得佢透嘅話佢起粉係起得好靚㗎ok</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:21.50" id="00:16:21.50" class="lt" onclick="jumptoTime(981, this.id)"><p>lace，егод，했는데，من，Sig Rule，CO，Previously，к，dogs，ateurs，Как，lying，essas，跑问，Leaf，phem，буду，experi 2022，Э，600，некотор，五ksam，imaging，blas，MON immedi，OK，邊邊都已經是香口了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:41.15" id="00:16:41.15" class="lt" onclick="jumptoTime(1001, this.id)"><p>所以要收起它，因為我的手不夠快，所以只好抽起它，否則過洞也不行，我再處理另一部分，那邊的煲仔已經煮滾了，現在我先攪拌一下，好，然後我們轉過來這邊，我調小火，因為我要處理煲仔，怕它燒焦，盡量放入去時，拍勻它，這樣可以食的時候好看一點，不過沒辦法做到最好的狀態，拍得最好，但都盡量拍好，排到差不多了，這邊又可以了。</p></a>
+				<a href="#00:18:53.57" id="00:18:53.57" class="lt" onclick="jumptoTime(1133, this.id)"><p>等等，攪拌一下，為什麼要關小火呢?大家看看，真的剛剛好，開始有一點焦邊，一點焦邊也不怕的，這個時候我們差不多了，我們開大火，繼續煎另外一部分，這邊繼續煮，隨它煮，再煎久一點 差不多了，好 這邊可以了，然後我們就放到這邊，繼續把它拼好，厚的就放在旁邊，現在有些已經融化了，即是煎到它脫落了。</p></a>
+				<a href="#00:21:32.78" id="00:21:32.78" class="lt" onclick="jumptoTime(1292, this.id)"><p>保證起粉，好 搞定了，然後蓋上蓋子，然後給它多少呢，給它10分鐘，很快的，等一會兒10分鐘後我們就看看結果，哎呀 又忘記了，忘記了什麼呢，忘記了這罐椰漿，這個時候就要放進去，否則它就不夠香，165ml 全部倒進去，其實香港人這個荔芋臘味煲，或者是荔芋排骨煲，或者是荔芋臘鴨煲，就很普遍在茶餐廳很famous的一個煲仔菜。</p></a>
+				<a href="#00:22:39.78" id="00:22:39.78" class="lt" onclick="jumptoTime(1359, this.id)"><p>最低限度我就經常點，所以大家學會了之後，可以有這個簡單的食譜，但是吃這個臘味就不用每次都那麼dry，這個就很好送飯，還有很夠濕潤，還有用煲仔做，當然可以保溫，這麼冷的天氣，然後送一碗白飯 正到不得了，好了 大家10分鐘過去了，看看結果如何，嘩 現在就煲成這樣，我們現在就檢查一下，那些芋頭粉不粉。</p></a>
+				<a href="#00:23:23.78" id="00:23:23.78" class="lt" onclick="jumptoTime(1403, this.id)"><p>粉了 搞定，然後我們就開始放這個，放這個芹蒜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:36.78" id="00:23:36.78" class="lt" onclick="jumptoTime(1416, this.id)"><p>好 放完之後我們就要調味，大概一茶匙的鹽</p></a>
+				<a href="#00:23:56.78" id="00:23:56.78" class="lt" onclick="jumptoTime(1436, this.id)"><p>然後就放入這個，一茶匙糖和少許雞粉，這個時候很熱，所以我調小火，否則我扶著煲邊很快就熱了，如果不夠水的話就加少少熟水，因為這粉一攪開它就會很快吸收水份，變成像打芡一樣，然後再煮滾，調味的時候可以加少少老抽，然後加少許生抽，大家看看那些芋頭已經變粉了，這個時候的汁很棒的，我告訴大家。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:50.81" id="00:25:50.81" class="lt" onclick="jumptoTime(1550, this.id)"><p>好，然後這個煮滾就可以吃了，然後我們放少許芫茜上面，放少許蔥花點綴一下，現在開始大滾了，一個惹味的麗湖臘尾煲便完成了，如果大家看過我做的芋頭粉，我很喜歡它變成粉狀去拌汁和拌飯，是非常方便的，但是如果大家想吃完整的芋頭，可以減少一至兩分鐘的時間，大家看到我加了豉油和老抽，其實大家可以不用加老抽。</p></a>
+				<a href="#00:27:8.89" id="00:27:8.89" class="lt" onclick="jumptoTime(1628, this.id)"><p>不喜歡太深色，這就是大家的選擇問題，調味基本上就是這樣，因為本身臘味是鹹的，但鹹的因為有湯的，所以我們就略調味，讓芋頭有一點鹹味，這樣就夠好吃了，可以關火，其實這個是不是很簡單，是呀，很簡單的，我重覆一次重點，總結一下重點，重點是什麼呢，第一，用的火候，我們的煲仔用的火候，所謂的大火。</p></a>
+				<a href="#00:27:52.89" id="00:27:52.89" class="lt" onclick="jumptoTime(1672, this.id)"><p>我全程是用大火的，不過聽清楚，我所謂的大火，如果大家跟過我做煲仔飯的都知道，對煲仔來說，所謂的大火不是我們理解的爐頭最大火，而是對煲仔的最大火，即是說煲仔的大小大小，大火是不一樣的，大火的意義和程度是不一樣的，以什麼為標準呢，所謂的大火就是，剛剛好火苗頂著煲底，然後突了，走了一點火苗出來。</p></a>
+				<a href="#00:28:25.89" id="00:28:25.89" class="lt" onclick="jumptoTime(1705, this.id)"><p>你看到一點火苗飄了出來，對煲仔來說就是大火，記住這是重中之重控制火候，煲仔菜的控制火候，第二件事就是，其實煲仔菜基本上來來去去的佐料，差不多就是薑、蔥、蒜，但記住，先放薑爆香，再放蒜頭爆香，最後才放乾蔥頭，因為這樣的次序才可以令這三種佐料，當地揮發香味出來，否則大家會發現經常炒焦，為什麼?因為蔥很快焦。</p></a>
+				<a href="#00:29:4.91" id="00:29:4.91" class="lt" onclick="jumptoTime(1744, this.id)"><p>但薑也還沒出味，這是第二點，第三點，基本上大家喜歡配什麼辣味都可以，當然大家可能融合貫通，如果用這個方法做瀨尿鴨髀，也可以的，是不是同樣的做法?</p></a>
+				<a href="#00:29:31.03" id="00:29:31.03" class="lt" onclick="jumptoTime(1771, this.id)"><p>差一點點，到時我再介紹另一個，另外介紹這個瀨尿鴨髀，OK，基本上就是這麼簡單，加了佐料之後，然後炒辣味，然後加大約500-600ml的水，然後一邊煮，換爐頭，另一邊做什麼?</p></a>
+				<a href="#00:29:57.81" id="00:29:57.81" class="lt" onclick="jumptoTime(1797, this.id)"><p>另一邊要記住，如果大家想芋頭粉的話，原來要跟它走油，或者要煎一下，煎得越香，芋頭就會越容易起粉，這個方法對付澱粉質特別有用，澱粉質的食物，例如薯仔、番薯、芋頭，都是這樣處理，煎得它香一點，或者跟它走油，就可以令它更加起粉、起得好看，記住，無論你蒸還是燜都是一樣，但如果大家想吃完整的芋頭，不要像我這樣弄爛了。</p></a>
+				<a href="#00:30:41.09" id="00:30:41.09" class="lt" onclick="jumptoTime(1841, this.id)"><p>大家要記住，不要煮太久，這次我用了10分鐘，因為我喜歡吃爛的，如果大家看我做過芋頭粉就知道，因為我喜歡弄爛了，然後連汁一起拌飯吃，但如果大家想吃完整的芋頭，就不要用10分鐘，適當地減1-2分鐘，最後加上香芹，加上蒜苗，完美，OK?</p></a>
+				<a href="#00:31:13.39" id="00:31:13.39" class="lt" onclick="jumptoTime(1873, this.id)"><p>就這樣，多謝大家收看，希望這個影片不會太長，終於拍這個四季片，沒有四季，沒有過熱，Days twitch cabin，Ш oct char，starred，kä игр。</p></a>
+				<a href="#00:31:23.84" id="00:31:23.84" class="lt" onclick="jumptoTime(1883, this.id)"><p>多謝大家收看 起食飯啦 拜拜。</p></a>
+</div>
+	</body>
+</html>

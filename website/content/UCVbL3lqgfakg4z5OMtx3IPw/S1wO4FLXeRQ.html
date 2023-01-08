@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——咖喱牛舌，本影片會分享專業餐廳的味道，只要跟足程序，你就可以在家煮出專業餐廳的水準！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'S1wO4FLXeRQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——咖喱牛舌，本影片會分享專業餐廳的味道，只要跟足程序，你就可以在家煮出專業餐廳的水準！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>昨晚我和兒子朋友開了一個燒烤派對，吃剩的食物用剩餘的食物做菜式。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>咁係乜嘢呢?咁大家見到個畫面應該知道一定係咖哩㗎啦，咁咪咖哩乜嘢呢?</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>就係咖哩牛舌，琴馬克就攞嚟燒牛舌，OK咁呢啲牛舌呢我自己原條買返嚟自己開嘅，自己整嘅，不過今日呢我就唔打算去介紹點樣去開牛舌，點樣去即係將佢嗰啲，韌過鞋底墊嗰啲牛舌呢點樣剝下點樣處理，我就唔打算介紹啦咁呢個處理過嘅已經係炆咗炆煮咗40分鐘，不過都仲唔夠嘅等陣間仲要炆一下，咁呢今晚係整乜嘢呢?就係咖哩牛舌OK咁呀。</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>做咖哩香港人好鍾意食咖哩嘅咁呢就茶餐廳一定有咖哩嘅菜色，咖哩牛腩就梗㗎啦，咖哩雞啦係咪咁呀橋口啲杉口啲嘅咖哩豬頸肉呀諸如此類，係咪OK咁個問題就係我鍾意食咖哩，但係呢硬係呢係即係屋企呢做唔返出面嗰種味道出嚟，咁到底我哋應該要點整呢咁樣，今日呢一個事呢個影片呢最主要嘅部分就係同大家分享下點樣打一個咖哩蛋，咩叫打咖哩蛋呀?</p></a>
+				<a href="#00:01:49.00" id="00:01:49.00" class="lt" onclick="jumptoTime(109, this.id)"><p>餐廳佢嗰啲咖哩之所以好食就係因為佢打咗咖哩蛋然之後再炆返出嚟，所以佢嗰種味道呢就同我同家廚大家呢平時喺屋企做嘅係完全唔一樣嘅味道，當然係更加好味啦，咁好啦咁我介紹下材料先長話短說啦盡量呀因為好多料，咁呢呢個呢就係咖哩粉嚟嘅，咁我用嘅呢就係半億麻華記嘅辣嘅咖哩粉，其實你唔好睇餐廳嗰啲咖哩咁好食呀其實佢哋全部都係訂呢啲類似。</p></a>
+				<a href="#00:02:25.00" id="00:02:25.00" class="lt" onclick="jumptoTime(145, this.id)"><p>即係唔同牌子姐姐係類似呢啲咁嘅咖哩粉返嚟，但係有咗咖哩粉都唔夠㗎喎，我哋要處理一下嗰個過程呢就叫咖哩蛋得唔得因為呢啲純咖哩呢佢係完全係唔夠香，唔夠辣ok但係佢有咖哩嘅味道嘅因為佢有回鄉粉喺度ok得唔得咁我哋就你大家睇下跟住落我點整呀，咁介紹下其他材料先咁呢就有，蒜頭啦蒜蓉一啄咗佢咁就求其啄細粒就得㗎喇。</p></a>
+				<a href="#00:03:1.33" id="00:03:1.33" class="lt" onclick="jumptoTime(181, this.id)"><p>跟住之後辣椒乾啦ok，我啲辣椒乾終於有用，呢啲辣椒乾唔係買返嚟㗎，係我自己買嗰啲辣椒指天椒泰國鳳眼椒呢，因為用唔曬擺得耐喺風喺雪櫃自然風乾嘅辣椒乾ok，跟住之後洋蔥啦，洋蔥呢我就呢度呢就用一個，咁一個呢一半就主要係外面嗰個表面嗰一嗰嗰啲呢，我就攞嚟切絲切呢個洋蔥條，我哋做咩呢我哋最後尾點未用嘅。</p></a>
+				<a href="#00:03:33.29" id="00:03:33.29" class="lt" onclick="jumptoTime(213, this.id)"><p>咁最主要呢我就將個心就切粒，我哋做咩呢打咖喱膽嘅時候用嘅，好啦咁你話喂打咖喱膽咁到底要用啲咩嘢嘅材料呀咁樣，咁咪首先呢我呢一兜呢就自己打嘅香料粉，呢一兜咁入面有乜嘢呢就係花椒八角，咁同埋係貴葉咁就用自己嘅攪拌機乾即係乾，搞個幹搞嗰個嗰個嗰個嗰個嗰個部件呀咁咪，搞打出嚟嘅打到好碎㗎啦已經ok入面有咩。</p></a>
+				<a href="#00:04:9.69" id="00:04:9.69" class="lt" onclick="jumptoTime(249, this.id)"><p>花椒八角桂皮不過呢我呢度呢就比較特別啲，我係唔係用紅花椒嘅我係用青花椒因為，青花椒佢個新味呢係更加重香氣更加重，所以我用青花椒，如果大家想要更多的話，可以用大小茴香，大小茴香，咖哩味就一定重，可以嗎?</p></a>
+				<a href="#00:04:34.73" id="00:04:34.73" class="lt" onclick="jumptoTime(274, this.id)"><p>除了這個粉不夠，還有什麼?</p></a>
+				<a href="#00:04:39.69" id="00:04:39.69" class="lt" onclick="jumptoTime(279, this.id)"><p>肉桂粉，肉桂粉，因為肉桂粉有售，我就不打算打了，因為我平時做其他東西都會用肉桂粉，可以嗎?</p></a>
+				<a href="#00:04:53.17" id="00:04:53.17" class="lt" onclick="jumptoTime(293, this.id)"><p>然後半個檸檬，這個也是廢物，你用也可以，或者你平時買回來也可以，一人一塊，咖哩加檸檬，你有沒有搞錯?</p></a>
+				<a href="#00:05:6.57" id="00:05:6.57" class="lt" onclick="jumptoTime(306, this.id)"><p>是呀，沒有搞錯，因為它含有很豐富的檸檬酸和果酸，有什麼作用呢?</p></a>
+				<a href="#00:05:12.57" id="00:05:12.57" class="lt" onclick="jumptoTime(312, this.id)"><p>可以中和咖哩的辛辣味，即是你又有咖哩味，很香噴噴，但是吃上去又不算太辣，但是辣得過癮那種，你可以加一點檸檬汁，可以嗎?</p></a>
+				<a href="#00:05:29.37" id="00:05:29.37" class="lt" onclick="jumptoTime(329, this.id)"><p>你嫌不夠辣，一般辣椒粉是不夠辣的，用什麼呢?蝦，我最喜歡用蝦味辣椒醬，不過這次不能買半億華幣那種，我就用了這款，這款更貴，我儘管試試吧，是時候給我介紹，儘管試試，接著，咖哩當然有一個很主要的成份，是什麼呢?</p></a>
+				<a href="#00:05:55.37" id="00:05:55.37" class="lt" onclick="jumptoTime(355, this.id)"><p>薯仔，對不對?</p></a>
+				<a href="#00:05:57.37" id="00:05:57.37" class="lt" onclick="jumptoTime(357, this.id)"><p>OK，行不行?</p></a>
+				<a href="#00:05:59.37" id="00:05:59.37" class="lt" onclick="jumptoTime(359, this.id)"><p>基本上材料已經介紹完畢，接下來就看看我怎樣做了。</p></a>
+				<a href="#00:06:6.37" id="00:06:6.37" class="lt" onclick="jumptoTime(366, this.id)"><p>OK，大家猜到我首先要處理什麼嗎?</p></a>
+				<a href="#00:06:17.24" id="00:06:17.24" class="lt" onclick="jumptoTime(377, this.id)"><p>大家猜到嗎?</p></a>
+				<a href="#00:06:19.24" id="00:06:19.24" class="lt" onclick="jumptoTime(379, this.id)"><p>因為我們是家廚的關係，所以我們的製作流程跟職業廚房有少許分別，但一樣好吃，我現在首先要炒薯仔，不要看輕，如果用高溫處理過薯仔表面，完成品會香口和好吃很多，情況類似職業廚房的拉油，首先拉到薯仔表面有焦焦的，現在我炒薯仔也是一樣，因為家廚每次做，我們不會像職業廚房那樣打咖喱蛋，所以我們的步驟不一樣，因為我炒完薯仔後不用洗鍋，然後可以馬上打咖喱蛋。</p></a>
+				<a href="#00:07:24.24" id="00:07:24.24" class="lt" onclick="jumptoTime(444, this.id)"><p>這樣是不是省了很多功夫?</p></a>
+				<a href="#00:07:26.24" id="00:07:26.24" class="lt" onclick="jumptoTime(446, this.id)"><p>所以第一件事先炒薯仔，這個步驟跟一般家廚不一樣，我希望大家明白我的口頭禪是什麼，如果我家煮得不好吃，不如去餐廳吃，所以我既有專業的概念，也有專業的想法，但同時因為遷就家廚，我會有跟其他人做事不一樣的程序，始終我都說過很多次，這是少許的心思，你可以做出一個完全不一樣的味道，大家看到薯仔邊是否有點焦?這樣就對了。</p></a>
+				<a href="#00:08:12.24" id="00:08:12.24" class="lt" onclick="jumptoTime(492, this.id)"><p>還有我現在由頭到尾都是大火炒，因為現在是炒薯仔，不是煎薯仔，ok?</p></a>
+				<a href="#00:08:21.91" id="00:08:21.91" class="lt" onclick="jumptoTime(501, this.id)"><p>炒過薯仔後，薯仔便會很粉，大家會問，如果不炒過薯仔會有甚麼結果，薯仔便不會起粉，你食下去總是會差一點的感覺，可以嗎?</p></a>
+				<a href="#00:08:37.15" id="00:08:37.15" class="lt" onclick="jumptoTime(517, this.id)"><p>現在差不多可以了，我先收小火，準備起薯仔，我左手在炒東西，不是，是右手在炒東西，左手在做甚麼，大家聽到，我在洗碗，所以人想做事快，一定是兩隻手一起用，大家應該經常看到我左右手一起開工，好，可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:9.55" id="00:09:9.55" class="lt" onclick="jumptoTime(549, this.id)"><p>等等</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:11.55" id="00:09:11.55" class="lt" onclick="jumptoTime(551, this.id)"><p>炒薯仔，炒薯仔，邊邊有少少焦便可以了，不用太大力，可以嗎?</p></a>
+				<a href="#00:09:25.55" id="00:09:25.55" class="lt" onclick="jumptoTime(565, this.id)"><p>接下來，我不剪，一刀不剪，希望大家可以看到我的流程是怎樣做，我經常說，一個家廚其實做得好，是可以控制時間管理的，一個好的時間管理訓練。</p></a>
+				<a href="#00:09:46.55" id="00:09:46.55" class="lt" onclick="jumptoTime(586, this.id)"><p>現在繼續開火，用原先的油，薯仔會吸油，所以我現在加少少油，現在這樣放鍋，就叫冷鑊放油，未等鍋燒紅後，便立即放油，因為之前我已經燒紅了鍋，所以接下來，不用再介意何時放油，都不會黏底，可以嗎?</p></a>
+				<a href="#00:10:16.55" id="00:10:16.55" class="lt" onclick="jumptoTime(616, this.id)"><p>放油有兩種方法，一種是熱鍋放油，一種是冷鑊放油，通常熱鍋放油，就是用新鍋放油，冷鑊放油，就是用舊鍋，即本來有油的鍋，可以嗎?</p></a>
+				<a href="#00:10:30.55" id="00:10:30.55" class="lt" onclick="jumptoTime(630, this.id)"><p>兩種放油的方式，都可以不用黏鍋，這個時候我炒咖喱蛋了，大家看看，首先加蒜蓉，炒一炒先，蒜蓉比洋葱，即是比葱类，受火些，所以先落蒜蓉，炒一炒佢，好跟住然之後，落埋啲洋葱粒，咁洋葱用咩洋葱好呢，一般洋葱都得嘅，咁我自己個人鍾意呢就紫洋葱，因為紫洋葱香啲甜啲，ok得唔得，呢個時候炒唔好咁心急，好跟住然之後呢就收返細火。</p></a>
+				<a href="#00:11:16.10" id="00:11:16.10" class="lt" onclick="jumptoTime(676, this.id)"><p>就慢慢炒，都係嗰句說話，我成日講嘅老師傅話呢，如果係你要炆嘢呢，打醬，即係打嗰啲醬汁醬料，你嗰啲料頭呢，越炒得佢乾身呢，佢就係越係，點呀越係好味野味嘅，所以呢個過程好緊要，唔好心急呀慢慢炒，炒到呢啲洋葱蒜蓉都乾，盡量乾身為止ok，你越係炒得佢乾身呢個咖喱呢就越香越好味，可能呢度要用十幾分鐘嘅時間，咁而家已經用咗五分鐘。</p></a>
+				<a href="#00:11:59.10" id="00:11:59.10" class="lt" onclick="jumptoTime(719, this.id)"><p>可能分分鐘呢呢一個，係要用咗成二十分鐘嘅時間嘅，咁又有口人有講呀你太多廢話太長呀，我冇興趣睇大佬，我而家呢個目標呢即係拍一段影片出嚟呢，其實我嘅目標就係希望係等於你現場上課一樣，你現場上課你係可以睇到嗰啲材料嘅變化㗎嘛係咪呀，其實我之所以成日都咁長氣，係因為我希望就話唔好斷咗個視頻，唔好斷咗個影片。</p></a>
+				<a href="#00:12:31.10" id="00:12:31.10" class="lt" onclick="jumptoTime(751, this.id)"><p>然之後大家睇咩呀除咗聽我講嘢之外呢，其實就係要睇嗰啲材料嘅嗰個效果材質嘅變化，OK咁到其時你都唔使我多講你都學識㗎啦，咁我而家慢慢炒見到呢啲蒜蓉有啲金金地啦咁但係呢啲洋蔥仲未得嘅，咁我而家繼續炒，如果覺得稍為慢了火，可以開大一點，但都不要開大火，大家看到這個時候我還未落香料，是呀。</p></a>
+				<a href="#00:13:10.63" id="00:13:10.63" class="lt" onclick="jumptoTime(790, this.id)"><p>因為如果這些炒不乾的話，你落香料是會令到咖哩汁整夜是糊了，不是說不好吃，但總是欠些東西，不知道欠些什麼，OK，先頭我忘記介紹，香葉、桂皮，香港人香港廚師叫做香葉，八角，OK 八角，這兩樣我原粒買回來的，很便宜的，5元，這一次我都用不完，5元一包即是10元，我用了三分一左右，好了，現在這個時候我繼續炒。</p></a>
+				<a href="#00:13:51.19" id="00:13:51.19" class="lt" onclick="jumptoTime(831, this.id)"><p>開始了，現在覺得洋蔥有少少乾了，這樣就對了，但都還未夠新的，OK 行不行，不好意思，鏡頭遲鈍了，整天都對不到焦，不過幸好現在新相機有touch mon，我喜歡對哪裡就對哪裡，不用像以前那樣，左按右按才按到浮標去到那裡對焦，好了，現在開始蒜頭完全金黃色，但都未脆身，OK，最好接近脆身，洋蔥都開始乾身了。</p></a>
+				<a href="#00:14:31.79" id="00:14:31.79" class="lt" onclick="jumptoTime(871, this.id)"><p>這個部分，我相信很多的影片，包括Gordon Ramsay，那些專業、升級的廚師，都不會給你看這個過程，為什麼我這麼嘮叨，因為很多的魔鬼細節，他做得很漂亮，環境很漂亮，那個都不是你真實生活的環境，對不對，他也不會將整個過程公開，我現在基本上跟整個過程公開沒有分別</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:3.73" id="00:15:3.73" class="lt" onclick="jumptoTime(903, this.id)"><p>amino，Tampa，łat</p></a>
+				<a href="#00:15:4.09" id="00:15:4.09" class="lt" onclick="jumptoTime(904, this.id)"><p>소� Qatar，希望大家能夠理解為什麼我要這樣做，不是因為我想說話 是因為我想給大家看 一路看，如果我不出聲 大家就悶了，我就講一下歷史 講一下那樣菜的由來，講一下怎樣才算好吃 這樣的題外話，好 現在真的乾了，接近 因為接近乾的時候 蒜蓉會黏鍋底，但是不要緊 那些黏鍋底不是燒焦那種黏鍋底。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:32.45" id="00:15:32.45" class="lt" onclick="jumptoTime(932, this.id)"><p>OK 現在乾了，這個時候我就開始放香料了，桂面炒椒我就放到最小，然後我就放辣椒油，等等，再加辣椒油，落兩大匙油，現在是最小火，焦的話就抽一抽起，繼續炒，現在是否沒有油，可以加些油，因為炒咖喱如果不加油，炒不開的那些粉，順便加油可以降溫，我給大家看看火的控制，現在是向左手邊轉動，轉到快熄火。</p></a>
+				<a href="#00:17:0.51" id="00:17:0.51" class="lt" onclick="jumptoTime(1020, this.id)"><p>不是用燈芯火，不是向左手邊燈芯火，大家可以看到，醬料是否在滾，這個時候就對了，可以嗎，炒到連洋蔥，大家可以看到，很明顯看到畫面，洋蔥、蒜蓉是否炒到乾了，這樣就對了，OK，好香，現在差不多可以了，這個時候就可以落咖喱粉，大家看到職業廚房，這個時候是落很多油，因為我剛才說過，不夠油的話，是炒不開粉的。</p></a>
+				<a href="#00:17:51.51" id="00:17:51.51" class="lt" onclick="jumptoTime(1071, this.id)"><p>現在落咖喱粉，記住大家不要跟我爭，這麼多油，大家吃過咖喱都知道，表面是否一層油，是從哪裡來的，就是咖喱膽那裡來的，我現在已經炒得比較乾了，叫做是鏡食 因為始終都是自己食，我落油不算落得多，這個時候繼續炒，為什麼經常那些咖哩汁底，為什麼那麼多那些一粒粒的，或者那些粉 那些汁，那麼多不是很清的。</p></a>
+				<a href="#00:18:41.30" id="00:18:41.30" class="lt" onclick="jumptoTime(1121, this.id)"><p>原因就是這些炒過的咖哩蛋，嘩 好香啊，真是好香 現在可以了。</p></a>
+				<a href="#00:18:49.30" id="00:18:49.30" class="lt" onclick="jumptoTime(1129, this.id)"><p>這個時候我們要做什麼呢，加水了 可以，我這個咖哩不是很紅的，因為我沒有加黃薑粉，純粹是香料，所以就會啞色一點，啞色一點大家都知道，很多餐廳的咖哩都，真正的咖哩其實不是靠色的，如果你去過印度，你就知道其實你食過印度的東西，真正的印度咖哩，其實印度的咖哩有分白咖哩和黑咖哩，還有黃咖哩。</p></a>
+				<a href="#00:19:31.30" id="00:19:31.30" class="lt" onclick="jumptoTime(1171, this.id)"><p>黑咖哩大家是沒有食過，我都食過了，真是黑色的，但是你一食下去就見到，即是食到有咖哩味，這個時候就開火了，我先頭不是講的，那些牛舌我之前我整的時候，開的時候就已經是有這個，即是炆了它四十分鐘，其實四十分鐘的牛舌是不會完全軟的，都會有焦頭和有少少爽口的，所以這個時候我又要是怎樣呢，首先第一件事就加了牛舌下去。</p></a>
+				<a href="#00:20:8.30" id="00:20:8.30" class="lt" onclick="jumptoTime(1208, this.id)"><p>炆它多久呢，大概二十分鐘左右，以那個，煮開了才算，可以嗎?</p></a>
+				<a href="#00:20:21.22" id="00:20:21.22" class="lt" onclick="jumptoTime(1221, this.id)"><p>這個時候，酸柳的檸檬出場了，這個檸檬切開之後，不要理它，切開之後不要理它，整個放進去，整個放進去，放進去之後，待會吃的時候拿出來就可以了，純粹是作為調味用，這個檸檬不是吃的，你會說，檸檬很酸，我不喜歡，可以放什麼?</p></a>
+				<a href="#00:20:54.22" id="00:20:54.22" class="lt" onclick="jumptoTime(1254, this.id)"><p>放蘋果，效果也是一樣的，放蘋果，而且可以煮爛，當然要挑走一些核，可以嗎?</p></a>
+				<a href="#00:21:3.22" id="00:21:3.22" class="lt" onclick="jumptoTime(1263, this.id)"><p>去皮，純粹用蘋果肉，現在還未完全煮開，很香，這個味道絕對是專業餐廳的味道，可以嗎?</p></a>
+				<a href="#00:21:19.22" id="00:21:19.22" class="lt" onclick="jumptoTime(1279, this.id)"><p>為什麼我會先放蝦米辣椒醬呢?</p></a>
+				<a href="#00:21:25.22" id="00:21:25.22" class="lt" onclick="jumptoTime(1285, this.id)"><p>原因是我喜歡蝦米味，有一點蝦米味，又是另一種層次，可以嗎?</p></a>
+				<a href="#00:21:34.22" id="00:21:34.22" class="lt" onclick="jumptoTime(1294, this.id)"><p>這個時候，我等它滾了，浪費幾分鐘，但我不想浪費大家的時間，現在我預計這個份量的水大概是，大概是煮多三、四分鐘就滾了，所以我本來說要炆牛舌，就炆它20分鐘，現在我變成25分鐘，炆煮25分鐘，炆軟牛舌，等一會兒，大家不會明白的，本來要炆煮25分鐘，但薯仔也要炆煮，所以就加薯仔，所以先頭是25分鐘。</p></a>
+				<a href="#00:22:23.65" id="00:22:23.65" class="lt" onclick="jumptoTime(1343, this.id)"><p>所以最後我多給他6分鐘，炆煮薯仔，可以嗎?</p></a>
+				<a href="#00:22:32.65" id="00:22:32.65" class="lt" onclick="jumptoTime(1352, this.id)"><p>加水，加滾，大家會不會誤會呢?</p></a>
+				<a href="#00:22:41.65" id="00:22:41.65" class="lt" onclick="jumptoTime(1361, this.id)"><p>我先關機，等滾了再開機，再調時間，大家就會清晰很多，現在滾了，我先頭忘記加少了肉桂粉，我現在剛剛倒了下去，可以嗎?</p></a>
+				<a href="#00:22:58.65" id="00:22:58.65" class="lt" onclick="jumptoTime(1378, this.id)"><p>辣椒乾也忘記了，所以現在加下去，這個匙羹不要浪費，先蘸一蘸，這個時候我們要計時，這樣大家準確很多，概念清晰很多，先頭的方法我自己的經驗，怕大家誤會，20分鐘，這個時候就炆煮20分鐘，調時間了，先調一調，讓它均勻一點，好，搞掂，跟住然後炆佢20分鐘啦，咁呢，呢個時候呢個火就唔好咁大呀，稍為收細少少火。</p></a>
+				<a href="#00:23:54.68" id="00:23:54.68" class="lt" onclick="jumptoTime(1434, this.id)"><p>如果唔係等陣間呢，嗰20分鐘呢，大概收中火到啦，畀大家睇下，而家呢就完全大火係咪，收中火，向左手邊收，大家睇唔睇到嗰個火嘅變化，OK，得唔得，咁好啦，等陣間炆好咗落薯仔我再開機，其他嗰啲唔緊要啦，因為最重要打粉，打咖哩蛋嗰個部分已經完咗啦，OK，好，等陣間見，好啦，20分鐘終於完啦，咁呀，睇下個效果如何啦。</p></a>
+				<a href="#00:24:27.68" id="00:24:27.68" class="lt" onclick="jumptoTime(1467, this.id)"><p>大家睇唔睇到，呢個咁嘅效果係咪同餐廳嗰啲個色一樣，冇校過色㗎，OK，佢係調味未調色嘅，咁呢，呢隻咁嘅檸檬呢，就功成身退啦，咁就拎起佢先，呀，有少少黐底啦，呢個時候呢，大家要記住喎，雖然話20分鐘就唔使理佢咋喎，但係呢，我哋都要搞搞佢，如果唔係會黐底嘅，OK，得唔得，因為好多粉喺度，所以唔使。</p></a>
+				<a href="#00:25:5.68" id="00:25:5.68" class="lt" onclick="jumptoTime(1505, this.id)"><p>咖喱呢，係唔使打芡嘅，OK，而家呢個時候就放薯仔，放埋薯仔落去，咁呢，就唔使照樣係中火下，就唔使係即係特登要較大個火嘅，OK，得唔得，因為先頭嗰啲薯仔呢，如果我炒得佢夠熟嘅話呢，其實等陣間炆一炆，約一炆一炆佢就好淋㗎啦，OK，得唔得，呢個時候唔夠水㗎，係咪，咁呢，我就加返啲水落去，大概加，嗯。</p></a>
+				<a href="#00:25:37.68" id="00:25:37.68" class="lt" onclick="jumptoTime(1537, this.id)"><p>睇下先，呢度50cc，係啦，50cc水到啦，因為佢有粉喺度呀，先頭我打咗嗰啲香料粉呀，咁所以其實佢都可以好吸水嘅，咁呢個時候呢，好啦，咁唔使理佢，咁就較幾多分鐘呢。</p></a>
+				<a href="#00:26:4.38" id="00:26:4.38" class="lt" onclick="jumptoTime(1564, this.id)"><p>1 2 3 4 5 6 7 8 加8分鐘，跟住上埋鑊過去 等佢慢慢滾，咁就得架啦 跟住落嚟呢 我哋就等佢係，即係8分鐘之後 大家再睇下個效果係點樣，呢個時候 大家係咪見到我仲未調味係咪呀，係呀 最後尾先調味 咁呢啲汁呢就好好味，但係呢嗰啲肉呢或者嗰啲薯仔就唔會好鹹嘅，ok 得唔得 最後先調味呀。</p></a>
+				<a href="#00:26:37.38" id="00:26:37.38" class="lt" onclick="jumptoTime(1597, this.id)"><p>咁仲有呢我洋蔥都未放嘅 我就等最後尾先放 ok</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:43.38" id="00:26:43.38" class="lt" onclick="jumptoTime(1603, this.id)"><p>好啦 又響鐘啦 差唔多啦喎 睇下先</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:51.38" id="00:26:51.38" class="lt" onclick="jumptoTime(1611, this.id)"><p>呢個時候就開始調味啦，好 咁呢個時候呢 都係有少少黐鑊嘅，咁所以呢 就即係唔好話完全唔理佢呀，好 呢個時候就調味呀，咁調味要加啲乜嘢呢，咁呀 鹽啦 咁因為先頭呢就即係呢個，有差唔多斤半啦 兩磅重嘅牛尾 ok，咁加埋呢個薯仔都有成斤幾㗎啦，咁所以呢落兩茶匙嘅鹽啦，跟住然之後糖呢可以落多少少。</p></a>
+				<a href="#00:27:35.38" id="00:27:35.38" class="lt" onclick="jumptoTime(1655, this.id)"><p>就三茶匙啦 ok，跟住然之後呢 我哋就落少少雞粉啦，雞粉大概一茶匙到啦 ok，咁咖喱呢就要多汁先好食嘅，咁而家呢個時候呢就少汁呀，咁所以呢我就加返多少水落去，咁而家可以開大火啦，咁呀加返多少水，大概係100cc到啦 ok，100cc都不夠，大家要看著現場觀感，多加50cc左右，好，差不多了。</p></a>
+				<a href="#00:28:36.88" id="00:28:36.88" class="lt" onclick="jumptoTime(1716, this.id)"><p>先加了鹽、糖和味，其實這個時候還不夠，我喜歡加幾滴豉油，我覺得比較適合我們香港人或華人的口味，少許就可以了，接著，都還不夠，通常這個時候我就加兩滴、幾滴的味極，我叫這個做signature，我炆東西很喜歡加味極，幾滴就可以了，只是提香而已，就變成整個味道跟外面的餐廳是吃不到的，現在調完味了，很多汁，正呀。</p></a>
+				<a href="#00:29:26.88" id="00:29:26.88" class="lt" onclick="jumptoTime(1766, this.id)"><p>很多汁呀，這個時候我們就再炆多三分鐘，大火，轉成大火，三分鐘，三分鐘之後就可以吃了，整個過程大概三十多分鐘左右，這個牛舌比較特別，如果純粹是開一個咖喱蛋，即是薯仔咖喱來計，連炆薯仔大概十多分鐘就可以了，接著可以加牛肉，快速牛肉，來煮，肥牛都可以的，先打好咖喱蛋，然後加肥牛，正呀，等一會炆好，完全看，我再開機給大家看。</p></a>
+				<a href="#00:30:28.88" id="00:30:28.88" class="lt" onclick="jumptoTime(1828, this.id)"><p>好了，終於成品炆好了，看看怎樣，這個才是真正咖喱的效果，我們平時不要說我笑老人家，像我媽媽那些，就很旺，那些咖喱笑一下就算了，不過她都很好吃，嘗試很多種方法，加椰奶諸如此類，我這個就沒有加椰奶，可以嗎，現在就完了，大家還留了些甚麼，是否好像留了些甚麼。</p></a>
+				<a href="#00:31:12.52" id="00:31:12.52" class="lt" onclick="jumptoTime(1872, this.id)"><p>是呀，留了些甚麼，當然是洋蔥，這個時候我已經關火了，關火才放洋蔥，可以嗎，為何要這樣做呢，因為洋蔥很快熟，所以要先關火，關火後才放洋蔥，其實洋蔥好吃，要不然就完全煮到熔化，變成糊，就吃洋蔥味，但如果你想吃洋蔥的口感，最好不要太熟，可以嗎，我給大家看個Close up，這個賣相，是否可以呢。</p></a>
+				<a href="#00:32:5.52" id="00:32:5.52" class="lt" onclick="jumptoTime(1925, this.id)"><p>這個就是，嗯!</p></a>
+				<a href="#00:32:9.55" id="00:32:9.55" class="lt" onclick="jumptoTime(1929, this.id)"><p>我們家廚都可以做到這個專業餐廳的咖喱，就是這樣做了。</p></a>
+				<a href="#00:32:14.59" id="00:32:14.59" class="lt" onclick="jumptoTime(1934, this.id)"><p>那現在做總結吧，OK?，那第一，咖喱最重要的是什麼呢?</p></a>
+				<a href="#00:32:20.75" id="00:32:20.75" class="lt" onclick="jumptoTime(1940, this.id)"><p>最重要的就是炒咖喱蛋，那大家看到的了，我開始炒咖喱蛋，是怎樣炒的，那炒咖喱蛋就不要省油，要多點油的，那其實我現在已經比餐廳少很多油了，如果是餐廳的那些，簡直是一壺油，說真的，五公升油，然後開咖喱蛋，就開足一個星期用的，OK，行不行?</p></a>
+				<a href="#00:32:47.67" id="00:32:47.67" class="lt" onclick="jumptoTime(1967, this.id)"><p>但是我們家廚呢，喂大哥!</p></a>
+				<a href="#00:32:50.03" id="00:32:50.03" class="lt" onclick="jumptoTime(1970, this.id)"><p>給兩三湯匙，最主要就是令到那些材料的粉，要炒得起就OK的了，它炒不起的，你就加油，它炒得起的，你就不要再加了，行不行?</p></a>
+				<a href="#00:33:1.47" id="00:33:1.47" class="lt" onclick="jumptoTime(1981, this.id)"><p>那第二件事就是，咖喱呢，其實呢，你是放馬鈴薯下去炆，然後呢，就是加蘋果也好，加檸檬也好，OK，行不行?第二件事，那為什麼要加蘋果或者檸檬呢?</p></a>
+				<a href="#00:33:16.95" id="00:33:16.95" class="lt" onclick="jumptoTime(1996, this.id)"><p>就因為它那些天然的果酸呢，是可以有效的去抑制它的辣度，但是保留它的香氣的，行不行?</p></a>
+				<a href="#00:33:26.55" id="00:33:26.55" class="lt" onclick="jumptoTime(2006, this.id)"><p>OK，還有令到肉更加快軟的，行不行?</p></a>
+				<a href="#00:33:29.47" id="00:33:29.47" class="lt" onclick="jumptoTime(2009, this.id)"><p>OK，第二件事，那第三件事，大家看到我的調味是很簡單的，從頭到尾都沒有調味，是不是?</p></a>
+				<a href="#00:33:36.95" id="00:33:36.95" class="lt" onclick="jumptoTime(2016, this.id)"><p>最後三分鐘才調味，那可以確保什麼呢?</p></a>
+				<a href="#00:33:40.91" id="00:33:40.91" class="lt" onclick="jumptoTime(2020, this.id)"><p>汁，好好拌飯，但是那些肉、馬鈴薯不會過鹹，因為炆東西通常呢，你一早下定材料的話，它就吸收了味道，那就糟糕了，汁就不夠味道，但是那些肉就鹹到死，行不行?三件事，那第四件事了，如果大家喜歡吃洋蔥的話，吃洋蔥的話，第四件事，不要炆的中途下，是怎樣的?關火才下，然後最後攪拌均勻，行不行?</p></a>
+				<a href="#00:34:12.03" id="00:34:12.03" class="lt" onclick="jumptoTime(2052, this.id)"><p>讓那些熱度令到洋蔥八九成熟，那時候的洋蔥是最好吃的，行不行?</p></a>
+				<a href="#00:34:18.47" id="00:34:18.47" class="lt" onclick="jumptoTime(2058, this.id)"><p>OK，基本上就是這樣，我去吃飯了，真的好餓，我兒子已經進來幾次了，吃得快嗎?我說等一下，真的好好吃，整個廳都是咖喱味，真的變成了南亞人，不過不要緊，如果大家喜歡吃咖喱的話，跟著我這條方法做，絕對是專業餐廳的味道，甚至乎，你先看到我調味的，有你自己風格的可以，行不行?</p></a>
+				<a href="#00:34:46.67" id="00:34:46.67" class="lt" onclick="jumptoTime(2086, this.id)"><p>如果你有一天開了竅，你就知道自己怎樣做自己的風格出來，但是現在我給大家看的這條影片的做法，基本上就是專業餐廳的做法，可能香料還差一點點，但是尤其是打咖喱蛋這個概念，就是專業餐廳才會做的，行不行?OK，我去吃飯了，拜拜，希望大家看到現在，真的學到，做到一道好的咖喱菜出來，你只要打好咖喱蛋。</p></a>
+				<a href="#00:35:17.55" id="00:35:17.55" class="lt" onclick="jumptoTime(2117, this.id)"><p>炆好咖喱，接下來你喜歡加魚也可以，加什麼都可以，沒問題，行不行?很多種變化出來的，所以說，我兩年要拍四百條片，就是四百個菜，咖喱，牛有一道，豬有一道，魚有一道，蝦有一道，然後稍微變化，蔬菜也可以，是不是?很多東西可以做，很多東西可以玩，入廚就是這麼開心的，OK，雖然也是辛苦的。</p></a>
+				<a href="#00:35:43.43" id="00:35:43.43" class="lt" onclick="jumptoTime(2143, this.id)"><p>好了，不說了，去吃飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

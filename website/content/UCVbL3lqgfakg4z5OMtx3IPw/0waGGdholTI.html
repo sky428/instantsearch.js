@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜燒汁煎星斑(可用魚扒代替)｜簡單易做，只要煎好魚扒控制好火候，就能完成大半了。非常適合新手和無煙煮食，因為可以用電磁爐就能煎出上品！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0waGGdholTI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜燒汁煎星斑(可用魚扒代替)｜簡單易做，只要煎好魚扒控制好火候，就能完成大半了。非常適合新手和無煙煮食，因為可以用電磁爐就能煎出上品！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好， 今晚好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日想同大家分享一道魚的菜式﹖，油番茄煮魚﹖，不是吧? 唔係!</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>我女兒冤氣鬼﹖，不斷說想食番茄炒蛋﹖，這是另一個菜式﹖，今日想同大家分享﹖，首先介紹魚﹖，我買了一條西星斑﹖，西星斑刮了輪後， 仍有少少紅色﹖，但如果在魚枱上新鮮的話﹖，會有少少帶青藍色﹖，西星斑又不是蒸﹖，那是什麼呢?</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>我想拿來煎﹖，今日我想和大家分享一道﹖，我唔知叫唔叫做創新﹖，反正不是純中國菜﹖，我叫做燒汁煎星斑﹖，純粹煎﹖，食它是鹹香和淡淡的醬油味﹖，怎樣煮呢?</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>好簡單﹖，可能大家會發現﹖，這麼簡單的東西都這麼複雜﹖，或者有些人會覺得難學﹖，但這個絕對適合現代家庭﹖，沒有什麼入廚經驗﹖，都可以做得到﹖，首先， 我就把魚洗了﹖，大家都看到﹖，這是一盤米水﹖，大家看到有些白色﹖，首先， 順著鱗尾﹖，擦一擦﹖，不好意思， 原來看不到﹖，順著鱗尾的方向， 掠一掠它﹖。</p></a>
+				<a href="#00:02:7.00" id="00:02:7.00" class="lt" onclick="jumptoTime(127, this.id)"><p>尤其是要處理什麼呢?</p></a>
+				<a href="#00:02:10.00" id="00:02:10.00" class="lt" onclick="jumptoTime(130, this.id)"><p>大家看看， 這裡﹖，這個位置有很多魚血﹖，我們一定要清除它﹖，我講過很多次﹖，魚的魚腥味是從魚血出來﹖，我們清除魚血﹖，越清得乾淨﹖，這樣﹖，魚的腥味會減弱，可以減少清除腥臭味，星斑之所以多人喜歡吃，與魚肉的清爽程度絕對有關係，用手指甲不斷地按摩，這樣就能清除腥味，水就倒掉，不要了，這些是腥水。</p></a>
+				<a href="#00:03:11.46" id="00:03:11.46" class="lt" onclick="jumptoTime(191, this.id)"><p>這個時候我們要怎樣處理呢，首先，一如以往，我們要用隨身帶，因為始終是冰鮮魚，死了一段時間，所以不太容易有腥味，所以這個時候我們要放鹽和胡椒，然後放少許酒，Tight Myst consolidation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:58.66" id="00:03:58.66" class="lt" onclick="jumptoTime(238, this.id)"><p>fuer powerless，for，comm inac securing，ALEX 컨</p></a>
+				<a href="#00:03:42.66" id="00:03:42.66" class="lt" onclick="jumptoTime(222, this.id)"><p>nich，honorary，first，태 potencial</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:12.00" id="00:04:12.00" class="lt" onclick="jumptoTime(251, this.id)"><p>vas，gleichzeitig，linking</p></a>
+				<a href="#00:04:8.14" id="00:04:8.14" class="lt" onclick="jumptoTime(248, this.id)"><p>gemeins，Ramsay，specialize，destro Naruhodou，能 vole</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.56" id="00:04:10.56" class="lt" onclick="jumptoTime(250, this.id)"><p>organizational，으니까，cleans obst squid</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:6.06" id="00:04:6.06" class="lt" onclick="jumptoTime(246, this.id)"><p>pertaining комнаieme，Surely，FAR，fixes，penso，proxim</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:12.44" id="00:04:12.44" class="lt" onclick="jumptoTime(252, this.id)"><p>Rich ninete Unters，embarrassment，bias</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:11.48" id="00:04:11.48" class="lt" onclick="jumptoTime(251, this.id)"><p>daily，nap</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.94" id="00:04:10.94" class="lt" onclick="jumptoTime(250, this.id)"><p>scrape，zinc，成</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:11.18" id="00:04:11.18" class="lt" onclick="jumptoTime(251, this.id)"><p>��，ignant</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:3.10" id="00:04:3.10" class="lt" onclick="jumptoTime(243, this.id)"><p>wing，ерг，ulpt，ج</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:51.22" id="00:03:51.22" class="lt" onclick="jumptoTime(231, this.id)"><p>система，uckle，Top approx</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:6.52" id="00:04:6.52" class="lt" onclick="jumptoTime(246, this.id)"><p>notably，assy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:2.56" id="00:04:2.56" class="lt" onclick="jumptoTime(242, this.id)"><p>生 pak，kam urgent</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:3.72" id="00:04:3.72" class="lt" onclick="jumptoTime(243, this.id)"><p>wellbeing，uzz，Samspha</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:51.62" id="00:03:51.62" class="lt" onclick="jumptoTime(231, this.id)"><p>empres，stim�ablo，workouts，pret models，possiamo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.84" id="00:04:10.84" class="lt" onclick="jumptoTime(250, this.id)"><p>falt，vacation，merit，Com pool，rebel，Unitra，für</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:5.74" id="00:04:5.74" class="lt" onclick="jumptoTime(245, this.id)"><p>pullediete，Canyon，ental，principals，我現在就不打算醃它幾分鐘了，所以這個時候我就多花一點時間，就是搓它一下，有些水就倒進去蝗蟹湯裡，大家看到腹腔位置有些膜，就要去掉，去掉腹腔膜後，大家會看到脊骨有些瘀血，這個時候我們要處理一下，因為這樣煎是很好吃的，但有些人少少聲音都不行，所以這個時候我們需要去處理瘀血。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:10.87" id="00:05:10.87" class="lt" onclick="jumptoTime(310, this.id)"><p>大家看到嗎?在鏡頭那邊，我給大家看近一點，在正中央，脊骨位置，大家看到嗎?</p></a>
+				<a href="#00:05:23.87" id="00:05:23.87" class="lt" onclick="jumptoTime(323, this.id)"><p>我們就處理一下，等一會我們就用水沖洗，再次沖洗的時候，我們再去處理瘀血，這個時候我們已經差不多了，主要就是要處理腹腔位置，很多時候就是聲音的來源，所以我們要去掉腹腔膜，還有把膜清除，大家看到我的手，這些位置，這些是白色的，海魚是白色的，如果是淡水魚的話，是黑色的，盡量去掉。</p></a>
+				<a href="#00:06:19.87" id="00:06:19.87" class="lt" onclick="jumptoTime(379, this.id)"><p>清除腹膜其實可以減少腹腔的腥臭味，這個時候差不多了，就弱弱地擦一下，不用怕髒，用手指擦一下骨頭，盡量清除魚血，其實有些人會說，你這樣做，你不是把魚味弄走嗎?</p></a>
+				<a href="#00:06:55.97" id="00:06:55.97" class="lt" onclick="jumptoTime(415, this.id)"><p>我再解釋一次，這個是魚腥味和魚的鮮味，海鮮味是兩回事，大家看，我現在清除了差不多七成的魚血，保證魚一定不會腥，然後我們要做下一個動作，好，煎呢，好多人呢，就是 當然整條魚煎啦，嗯? 呢道菜就唔係咁樣呀，這道菜我們要逐件像魚扒一樣去煎，就不是要煎它的皮，而是煎它的肉，每一件肉大概一吋位。</p></a>
+				<a href="#00:08:33.85" id="00:08:33.85" class="lt" onclick="jumptoTime(513, this.id)"><p>魚鰭就這樣切走，就好像魚扒一樣，煎好之後再砌魚鰭，neutr artık</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:6.60" id="00:09:6.60" class="lt" onclick="jumptoTime(546, this.id)"><p>witnesses，cane，hing，ד n，tac Med</p></a>
+				<a href="#00:09:11.06" id="00:09:11.06" class="lt" onclick="jumptoTime(551, this.id)"><p>ceral，state，combinAS，mic אז，댓 cama</p></a>
+				<a href="#00:09:11.40" id="00:09:11.40" class="lt" onclick="jumptoTime(551, this.id)"><p>пом coding，iendlink，ened</p></a>
+				<a href="#00:09:14.22" id="00:09:14.22" class="lt" onclick="jumptoTime(554, this.id)"><p>inflammquir，Andre piss</p></a>
+				<a href="#00:09:16.28" id="00:09:16.28" class="lt" onclick="jumptoTime(556, this.id)"><p>scatter，06Ronpel，avoir，Dieses inevitable，Form coke，quwości，wise，chinese</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:7.38" id="00:09:7.38" class="lt" onclick="jumptoTime(547, this.id)"><p>iz，detto，現在基本上完成了，然後我們做下一個工夫，等一等，我先抹乾手，這個時候我們就放鹽，這個魚是帶少許鹹鮮味的，然後用手去抹一抹鹽花，然後反轉第二邊，你不要以為我現在放很多鹽，其實我都是大概，這裡大概放了一匙多的鹽，稍微醃一醃，這個時候醃大約15分鐘，15分鐘後再洗乾淨，然後就可以拿去煎。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:45.97" id="00:10:45.97" class="lt" onclick="jumptoTime(645, this.id)"><p>這個菜其實很簡單，兩樣東西，芫茜要劃開，待會用來打汁，蔥花，就這樣，沒有了，為什麼呢，今天我清洗魚是特別仔細的，因為不會放其他東西進去，可以嗎，好，待會見，大家剛才看到我怎樣處理魚，現在我正在燒鑊，這次要拿煎鍋，魚醃十多二十分鐘，然後用水沖洗乾淨，抹乾，然後我正在燒鑊，記住，煎東西，炒東西。</p></a>
+				<a href="#00:11:40.27" id="00:11:40.27" class="lt" onclick="jumptoTime(700, this.id)"><p>所有的一定要背口訣，只要背口訣，用什麼鑊都沒有問題，我現在繼續燒鑊，大火，燒鑊見煙，下油再見煙，煎的話就收小火，炒的話就繼續大火，除了我介紹的材料之外，其實今天我最主要用的，就是這個日式燒汁，簡單直接，為什麼說這個菜，新手都可以做，還有在外國的朋友都可以做，其實這個，我用原條魚來起，起一塊塊。</p></a>
+				<a href="#00:12:22.27" id="00:12:22.27" class="lt" onclick="jumptoTime(742, this.id)"><p>當做煎魚扒，但是在外國的話，大家可以用魚扒來代替，OK，一路說燒到夠紅，然後下油，然後就淋上油，我今天就特意用平底鍋，第一 平底鍋就多些面積 可以平均受熱，第二 就是在外國都方便 大家說是不是，這個時候我就關小火 平均小火，今天就有個觀眾，他就說 我只有兩段火，一是 這個是 大家看一下 我一定要給大家看到這個位，燈芯火 這個位置燈芯火。</p></a>
+				<a href="#00:13:18.99" id="00:13:18.99" class="lt" onclick="jumptoTime(798, this.id)"><p>其實所有爐頭都是一定有燈芯火的，他說只有燈芯火和大火 沒有平均小火，怎樣平均小火 其實平均小火就要我們人手控制，這個看著畫面 你等一會，然後 這個是最大火 是不是，向左手邊一直扭 再扭到盡就熄火了 是不是，再開它 這個就是大火 然後向左手邊扭，大家看到那個火力嗎 看到嗎，這個就連爐頭的燈芯火都會收小了。</p></a>
+				<a href="#00:13:58.99" id="00:13:58.99" class="lt" onclick="jumptoTime(838, this.id)"><p>這個才叫平均小火，這個是人手控制的 不是他控制的 OK，大家看到我是不是拿開了爐頭很久，這個時候不要緊的，只要你燒夠爐頭 它起煙才下油 那個爐頭就不會粘底，就算你放開了 它放涼了 它都不會再粘底，我現在稍微再燒一燒它，記住了 這個時候我們就</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:28.75" id="00:14:28.75" class="lt" onclick="jumptoTime(868, this.id)"><p>先是要煎它的肉 這次，為了要認住那個位置</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:44.07" id="00:14:44.07" class="lt" onclick="jumptoTime(884, this.id)"><p>所以我就需要每塊魚排好位置，我認得那個位置，這次是要煎肉的 不是煎皮，我先洗一洗隻手</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:25.65" id="00:15:25.65" class="lt" onclick="jumptoTime(925, this.id)"><p>因為呢 呢啲係好習慣嚟嘅，但係我呢啲咁嘅好習慣呢，亦都係被迫嘅，因為大家如果係長期嘅觀眾都知道呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:34.65" id="00:15:34.65" class="lt" onclick="jumptoTime(934, this.id)"><p>以前呢我係即係生過皮膚病啦 ok，但係因為佢拱起咗，所以呢我就冇辦法啦，咁我就唯有呢唔冚蓋 ok，咁呢就，畀佢三分鐘啦，咁呀三分鐘咁樣煎住佢啦，跟住然之後呢等陣間呢，我再三分鐘之後再同大家分享佢會係點呀，好啦大家咁呀三分鐘過咗佢囉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:11.65" id="00:16:11.65" class="lt" onclick="jumptoTime(971, this.id)"><p>咁呀跟完之後反轉佢啦，咁因為呢舊魚呢，而家呢就可以係煎個魚頭魚尾啦，呀你睇下煎到佢金香呀，大家看看，只要我們背足口訣的話，是不用怕會黏底的，大家說是不是?</p></a>
+				<a href="#00:16:53.73" id="00:16:53.73" class="lt" onclick="jumptoTime(1013, this.id)"><p>這個時候我們就可以蓋鍋蓋了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:1.73" id="00:17:1.73" class="lt" onclick="jumptoTime(1021, this.id)"><p>留一點邊，大家知道是什麼原因的，現在有三分鐘了，三分鐘之後我們再看看結果如何，三分鐘又過了，基本上現在這個時候魚差不多全熟了，大家有沒有看到我沒有放其他東西，到這個時候是，為什麼呢?當然是有原因了，反轉它，等於魚尾煎得好看一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:37.73" id="00:17:37.73" class="lt" onclick="jumptoTime(1057, this.id)"><p>這個時候我們就開始放胡椒了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:45.73" id="00:17:45.73" class="lt" onclick="jumptoTime(1065, this.id)"><p>大家知道為什麼我剛才沒有放胡椒嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:49.73" id="00:17:49.73" class="lt" onclick="jumptoTime(1069, this.id)"><p>因為如果我一放胡椒的話，那隻鍋就會馬上變黑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:57.73" id="00:17:57.73" class="lt" onclick="jumptoTime(1077, this.id)"><p>魚煎出來就不漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:0.73" id="00:18:0.73" class="lt" onclick="jumptoTime(1080, this.id)"><p>大家現在看到我煎的魚是不是煎得很漂亮呢?，反轉後再加胡椒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:32.36" id="00:18:32.36" class="lt" onclick="jumptoTime(1112, this.id)"><p>魚肉會很香口，魚頭因為三尖八角，所以要不斷翻炒，令它煎得好看點，現在進入補火階段，大家見到每一塊魚都煎得好看，金黃色的，很好送飯的，大家見到油適量就可以了，吸收的油已經差不多了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:57.82" id="00:19:57.82" class="lt" onclick="jumptoTime(1197, this.id)"><p>好了，這樣就行了，現在開大火稍為補一下，最後階段，倒入酒，如果在洋人地方，白銀地也可以，甚至誇張一點，沒有酒的，可以用威士忌也可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:43.32" id="00:20:43.32" class="lt" onclick="jumptoTime(1243, this.id)"><p>好，完成，這個基本上就完成了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:47.32" id="00:20:47.32" class="lt" onclick="jumptoTime(1247, this.id)"><p>這個時候我們就熄火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:53.32" id="00:20:53.32" class="lt" onclick="jumptoTime(1253, this.id)"><p>砌魚的形狀，盡量，一定會有些掉出來的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:27.32" id="00:21:27.32" class="lt" onclick="jumptoTime(1287, this.id)"><p>完成，咁樣砌返條魚出嚟，而家唔係砌到好靚，都係要用筷子幫手，呢個時候我哋就再係稍為開一開火，細火得㗎喇即刻收細火，燒一燒隻鑊先，我而家執一執條魚呀，然後加少許油，輕輕就可以了，然後將燒汁倒進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:34.37" id="00:22:34.37" class="lt" onclick="jumptoTime(1354, this.id)"><p>然後將芫茜卷倒進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:39.37" id="00:22:39.37" class="lt" onclick="jumptoTime(1359, this.id)"><p>然後再加少許鹽，現在我用大火，再用小火一點，因為很快就會沒有了，然後將蔥白的部分倒進去，然後打薄芡，少許生粉，一茶匙都夠了，然後加水，加多一點都可以，因為它很快就會收水了，拿回原本煎魚的鑊，這樣才可以，才可以拿到那個味道出來，這個時候，它是稍為淺色了一點，如果你打了個芡之後，這個時候我們就可以放什麼呢。</p></a>
+				<a href="#00:23:41.24" id="00:23:41.24" class="lt" onclick="jumptoTime(1421, this.id)"><p>就是放少許老抽，那個顏色就會很漂亮，搞什麼，開不到的，可以了，放少許 輕輕</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:23:58.24" id="00:23:58.24" class="lt" onclick="jumptoTime(1438, this.id)"><p>大概半茶匙</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:4.24" id="00:24:4.24" class="lt" onclick="jumptoTime(1444, this.id)"><p>它一滾就可以了，這個時候大家要小心，它很容易就會結那一層，稍為煮一煮就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:19.24" id="00:24:19.24" class="lt" onclick="jumptoTime(1459, this.id)"><p>搞定</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:22.24" id="00:24:22.24" class="lt" onclick="jumptoTime(1462, this.id)"><p>我就砌一條魚的形狀出來，很香，先關掉抽氣扇，其實抽氣扇真的挺嘈吵的，好，然後我們將汁放上面，那個稠度大家要控制好，不要讓它太乾，它只要足夠掛在魚身就已經OK的了，我這個菜式就有一點半中半日的形式，醬汁就是用日本的醬汁，日本的燒汁，好 搞定，跟著之後，好啦，想賣相更加靚，好自必然就梗係，用一用 灑啲芝麻上面。</p></a>
+				<a href="#00:26:6.99" id="00:26:6.99" class="lt" onclick="jumptoTime(1566, this.id)"><p>日式吖嘛，整古整怪，整色整水，OK 搞掂，一條野味嘅，燒汁煎星斑呢咁就完成啦，咁呢個呢就係好初階嘅，大家見到我唔需要好即係，好誇張嘅調味啦，吓，嗱咁我成條魚個形狀，有番喺度㗎大家睇吓，咁呀由頭到尾呢，即係我嗰個即係，由頭到尾呢，我嗰個鑊呢都冇黐底冇窿過㗎，好跟住完之後而家整完就梗係總結啦，大家等我一陣啦。</p></a>
+				<a href="#00:26:58.99" id="00:26:58.99" class="lt" onclick="jumptoTime(1618, this.id)"><p>準備影番張靚仔相，所以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:27:1.99" id="00:27:1.99" class="lt" onclick="jumptoTime(1621, this.id)"><p>係，整條魚的形狀就出來了，首先第一件事就是其實星斑，之所以那麼多人喜歡吃，原因就是因為星斑的肉，是很結實的，但是畢竟它是冰鮮魚，如果像我上一次有一個節日菜，就是古法蒸的東星斑，大家記得有條這樣的菜嗎，那裡始終製作的過程都是比較繁複，因為繁複的原因就是要浸冬菇，要處理火腿片，所以那裡相對來說是高階一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:0.72" id="00:28:0.72" class="lt" onclick="jumptoTime(1680, this.id)"><p>進階一點，今天我這個就很簡單，首先買了條魚回來清潔好之後，除了我吹聲大發之外，我今天就特意跟大家說清楚，如何清潔蝠腔的位置，這樣就可以令到它沒那麼腥，處理完這裡之後，基本上就是大直路了，煎很簡單，煎之前我們要考慮魚的形態，所以我切開它薄一點，一件件的，我們煎的時候不是煎魚皮，是煎魚肉。</p></a>
+				<a href="#00:28:43.72" id="00:28:43.72" class="lt" onclick="jumptoTime(1723, this.id)"><p>就當它是魚扒那樣煎，然後我們再煎三分鐘，這是標準的煎魚程序，但是大家想煎魚煎得好，大家有沒有見過失敗任務，基本上都是十次，有九次都成功的，有一次就有點焦，為什麼可以煎魚煎得那麼乾淨利落呢，原因就是我們必須要背口訣，口訣是什麼，大家還記不記得，大火燒鍋，見煙落油，再見煙，煎就收細火，炒就繼續大火。</p></a>
+				<a href="#00:29:28.72" id="00:29:28.72" class="lt" onclick="jumptoTime(1768, this.id)"><p>在大火的過程當中，在收火的過程當中，煎的時候我們要晾一晾油，晾一晾油，然後等油均勻地走光，等油掛一掛鑊，煎的時候就不會那麼容易黏底，然後降溫之後就放魚下去煎，可以嗎?</p></a>
+				<a href="#00:29:52.37" id="00:29:52.37" class="lt" onclick="jumptoTime(1792, this.id)"><p>好了，煎魚的過程三分鐘就三分鐘，很簡單，但是大家要記住一件事，就是我們必須要，什麼?</p></a>
+				<a href="#00:30:4.57" id="00:30:4.57" class="lt" onclick="jumptoTime(1804, this.id)"><p>收小火，平均小火，這是第一，第二，你不想魚煎焦的話，不要那麼快放胡椒或者調味下去，否則那隻鑊就很快焦，然後整條魚就不漂亮了，就黑黑的了，OK，行不行?</p></a>
+				<a href="#00:30:25.97" id="00:30:25.97" class="lt" onclick="jumptoTime(1825, this.id)"><p>大家要記住了，好了，三分鐘又三分鐘之後就進入補火的階段，因為我是切它一塊一塊的，變成魚頭和魚尾就要有些特別的處理方法，大家看到我魚頭魚尾是回來回去的，這樣就可以整體上，大家就看到有個這樣的形狀出來了，OK，行不行?</p></a>
+				<a href="#00:30:53.97" id="00:30:53.97" class="lt" onclick="jumptoTime(1853, this.id)"><p>記住了，然後打個醬汁，很簡單，燒紅隻鑊，然後用原本煎過魚的魚油，煎過魚的胡椒，然後就小火慢慢燒，然後就直接倒這支燒汁下去，本身燒汁在液體的狀態之下，這個給大家看清楚一點，這個燒汁，有很多種牌子的，不過剛好用這個，然後呢，倒了燒汁下去之後，我們就要放這個芫茜瓣，增加它的香氣，然後就放蔥白，又是增加它的香氣。</p></a>
+				<a href="#00:31:45.97" id="00:31:45.97" class="lt" onclick="jumptoTime(1905, this.id)"><p>然後就打薄芡下去，打薄芡的時候，大家要留意，不要令它太乾水，大家看到它足夠掛著魚身的醬汁，就已經OK了，稜稀莫結，結了的話，它就一塊塊變成了，就根本上掛不住魚身，這個菜就打了折扣，OK?行不行?</p></a>
+				<a href="#00:32:15.05" id="00:32:15.05" class="lt" onclick="jumptoTime(1935, this.id)"><p>就這麼多了，最後加些蔥花增味，搞定，這個煎魚簡單嗎?又貴氣，又貴氣，又有這個食味，菜飯一流，OK?好不好?</p></a>
+				<a href="#00:32:32.93" id="00:32:32.93" class="lt" onclick="jumptoTime(1952, this.id)"><p>那不跟大家說這麼多了，希望大家喜歡，這個好東西，那就不要只是蒸或者炆，煎都可以，煎都可以，不過我這個菜就是有日式和中廚的結合品，最近我經常都有中西、中東，古靈精怪，只要大家有了基本功，看完我之前的四百多條片，有個觀眾就說了，他說就算我不喜歡吃你今天做的菜，但是我都可以學到很多的技巧，就舉一反三。</p></a>
+				<a href="#00:33:8.85" id="00:33:8.85" class="lt" onclick="jumptoTime(1988, this.id)"><p>是的，沒錯了，只要大家有了基礎之後，喜歡怎麼配搭都沒問題的，行不行?</p></a>
+				<a href="#00:33:18.77" id="00:33:18.77" class="lt" onclick="jumptoTime(1998, this.id)"><p>那些不是黑暗料理，那些是創新，但是如果你沒有學足基本功，然後古靈精怪左搭右搭，那些就是地獄料理、黑暗料理，就不是美味，行不行?OK?</p></a>
+				<a href="#00:33:31.89" id="00:33:31.89" class="lt" onclick="jumptoTime(2011, this.id)"><p>那就記住了，如果大家對我的廚藝有興趣的話，就看回我之前的片，也謝謝大家支持，剛剛過了聖誕節，希望大家過得開心，也在我身上獲得不少靈感，增加了自己的功力，煮到更加好吃，更加好的味道，幸福的味道給家人，好嗎?</p></a>
+				<a href="#00:33:55.53" id="00:33:55.53" class="lt" onclick="jumptoTime(2035, this.id)"><p>好，謝謝大家收看。</p></a>
+				<a href="#00:33:57.33" id="00:33:57.33" class="lt" onclick="jumptoTime(2037, this.id)"><p>拜拜，去吃飯了。</p></a>
+</div>
+	</body>
+</html>

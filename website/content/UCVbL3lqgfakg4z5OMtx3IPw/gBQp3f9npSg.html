@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——古早味花生炒蛋，這是一道走難時期的經典家常菜，現在已經消失了，什至很多人忘記了，名廚也不悄製作了，但卻是孩子長高、大人下酒的恩物哦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'gBQp3f9npSg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——古早味花生炒蛋，這是一道走難時期的經典家常菜，現在已經消失了，什至很多人忘記了，名廚也不悄製作了，但卻是孩子長高、大人下酒的恩物哦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>我剛剛先頭就爭完油，所以我照用舊鑊就不理了。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>今日我想同大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>先關一下抽氣，等下再開。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>我今日就同大家分享一個已經消失了好耐好耐，連提都沒有什麼人提的，一個我們60年前香港人走難下來的時候，一窮二白的時候，一個很惹味又簡單的菜式是什麼呢?</p></a>
+				<a href="#00:00:38.00" id="00:00:38.00" class="lt" onclick="jumptoTime(38, this.id)"><p>就是花生炒蛋。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>花生炒蛋厲害了，它有很多功能的，作為一個小朋友來說，當然是送飯神器啦，，但作為大人來說，是什麼呢?</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>送酒神器，，OK?</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>大家看看我怎樣做，首先介紹材料。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>花生，花生我們不用多，拿隻手拿兩束，兩束就夠了。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>這裡大概我估計一兩至二兩左右，OK?</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>然後加少少菜脯，這個菜脯我買回來的時候，我不是就這樣切碎的，我是用滾水滾一滾。</p></a>
+				<a href="#00:01:18.00" id="00:01:18.00" class="lt" onclick="jumptoTime(78, this.id)"><p>我不是要去除它的鹹味，是去除它的臭味。</p></a>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>大家都知道菜脯一買回來有種臭味，我用滾水滾一滾，再榨水，然後再切粒，這樣就可以消除它的臭味，就很好吃了，OK?</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>少少就可以了，炒蛋，營養豐富，當然是多一點啦。</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>這裡我用了八隻蛋，四個人吃的，一餐而已，OK?</p></a>
+				<a href="#00:01:48.00" id="00:01:48.00" class="lt" onclick="jumptoTime(108, this.id)"><p>這個是切些蔥花，OK?</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>加些鹽，如果喜歡的話可以加少少雞粉去調味，留少少蔥，青蔥的部分用來做什麼呢?</p></a>
+				<a href="#00:02:2.00" id="00:02:2.00" class="lt" onclick="jumptoTime(122, this.id)"><p>等一下用來點綴，如果你不需要拍照，也不需要賣相，即是很漂亮的賣相，這些部分，這些蔥可以倒進去一起炒的，OK?</p></a>
+				<a href="#00:02:10.00" id="00:02:10.00" class="lt" onclick="jumptoTime(130, this.id)"><p>燒了一會兒鍋，好，接下來，我這裡是一take過的，大家看著我怎樣，那些由生花生炒到它變成熟花生，然後再炒蛋，OK?</p></a>
+				<a href="#00:02:27.00" id="00:02:27.00" class="lt" onclick="jumptoTime(147, this.id)"><p>這個就真的是古早味的香港家常菜，也是下酒的神器。</p></a>
+				<a href="#00:02:33.00" id="00:02:33.00" class="lt" onclick="jumptoTime(153, this.id)"><p>好，這次因為要用這個鑊鏟，因為剛才我已經燒過鑊，和我用過油，所以這個時候我就不一定要背口訣了，OK?</p></a>
+				<a href="#00:02:50.00" id="00:02:50.00" class="lt" onclick="jumptoTime(170, this.id)"><p>這個就叫冷鑊落油法，冷鑊落油法我之前也說過的，就是當你用過鑊，你沒有洗過鑊，本身有油的時候，你就不需要再背那個口訣了，就直接落油，直接炒就可以了，OK?</p></a>
+				<a href="#00:03:5.00" id="00:03:5.00" class="lt" onclick="jumptoTime(185, this.id)"><p>好了，這個時候，油就很滾了，燒到它出煙，我再調小火降一降溫，不然一下去，花生就會燒焦了。</p></a>
+				<a href="#00:03:16.00" id="00:03:16.00" class="lt" onclick="jumptoTime(196, this.id)"><p>我燒紅鑊，主要的目的就是想它更加確保它不會黏底，OK?</p></a>
+				<a href="#00:03:24.00" id="00:03:24.00" class="lt" onclick="jumptoTime(204, this.id)"><p>但是其實如果大家明白，經常用鑊的話，又沒有洗鑊的話，本身鑊是有油的，直接冷鑊落油，都不會黏底的，但是為免意外，我還是先燒一燒鑊，OK?</p></a>
+				<a href="#00:03:37.00" id="00:03:37.00" class="lt" onclick="jumptoTime(217, this.id)"><p>大家記住，落油有兩種方法，但落油有兩種方法，都有不同的condition的，大家要記住，even是易潔鑊都是一樣的，今天我講個笑話給大家聽，我易潔鑊煎蛋煎到黏底。</p></a>
+				<a href="#00:03:54.98" id="00:03:54.98" class="lt" onclick="jumptoTime(234, this.id)"><p>我呀!搞唔搞笑呀?因為點解呀?</p></a>
+				<a href="#00:03:57.90" id="00:03:57.90" class="lt" onclick="jumptoTime(237, this.id)"><p>因為我急果頭，我冇背口訣，一時間大懵，結果就係煎隻蛋都煎到黐底，ok?</p></a>
+				<a href="#00:04:6.50" id="00:04:6.50" class="lt" onclick="jumptoTime(246, this.id)"><p>你唔好以為易潔鑊就唔會黐底呀，你唔肯去背個口訣，一樣會煎碎嘅，ok?</p></a>
+				<a href="#00:04:11.98" id="00:04:11.98" class="lt" onclick="jumptoTime(251, this.id)"><p>嗱，而家降左溫啦，好，好啦，呢個時候我哋落花生啦，嗱，花生，炒花生唔好洗花生呀，唔好手多呀，唔好又話唔乾淨呀呢樣嗰樣，咁高溫嘅油，乜嘢都熟啦，ok?</p></a>
+				<a href="#00:04:26.98" id="00:04:26.98" class="lt" onclick="jumptoTime(266, this.id)"><p>嗱，咁呢，我哋呢就收到好細火嘅，大家睇下，咁我就去炒花生啦，嗱，好似啲花生我覺得好似唔多救呀，再落啲花生先，記住呀，炒花生唔好手多手去浸佢手去洗佢呀，你有水洗佢呢，嗰啲花生就唔係炒花生嚟㗎喇，ok，嗱，咁我呢個時候呢，我落油呢，其實呢，我已經係預咗乜嘢呢，我預咗佢呢，就係等陣間我嚟炒蛋嘅，ok，差唔多喇。</p></a>
+				<a href="#00:05:4.48" id="00:05:4.48" class="lt" onclick="jumptoTime(304, this.id)"><p>大家因住啦，覺得多與少啦，通常就兩隻手，兩渣就夠㗎喇，咁但係有陣時有多與少啦，咁大家自己現場衡量呀，咁呀，今日又有個網友喎，有個觀眾話，嘻，嘩落咁多隻蛋㗎咩，咁，喂大佬，我喺影片入面講到明，我要開飯，要炒兩餐餸，咁我落多啲有咩問題呀，即係，嗱，我呢度呢，我又唔係話怒氣嘅，我想解釋一下，我都話喇，我成日都要。</p></a>
+				<a href="#00:05:34.30" id="00:05:34.30" class="lt" onclick="jumptoTime(334, this.id)"><p>即係，其實就係，想解釋呢，就係話，想宣揚我嘅，即係人生哲學啦，或者係一啲諗法啦，咁樣，咁其實呢，好多人呢，好著重呢，就係數字上面，量化上面嘅一個，即係一個，嗱，大家聽我講嘢之餘呢，都要睇下我隻手喺度做緊嘢㗎喎，咁呀，好多人呢就話，即係佢係習慣咗去量化，嗰個食材呀，其實呢個咁嘅觀感係唔啱嘅。</p></a>
+				<a href="#00:06:6.30" id="00:06:6.30" class="lt" onclick="jumptoTime(366, this.id)"><p>因為點解呢，中菜嚟講，佢最抵死係乜嘢呢，最抵死就係，個個廚師，都可以炒出唔同嘅味道出嚟嘅，咁所以點解呢，我咁著重嗰個長片，咁長氣，去俾大家睇下嗰個影片，嗰個畫面裏面，嗰個texture，食材texture嘅變化，嗱，呢個時候，大家睇留心呀，花生嗰啲色喎，嗱，唔好炒到佢真係見到炸花生嗰啲色，你先好收火喎。</p></a>
+				<a href="#00:06:33.30" id="00:06:33.30" class="lt" onclick="jumptoTime(393, this.id)"><p>係差唔多你就要收火，點解呀，因為呢，佢個餘溫呢，令到佢會炸窿嘅，ok，所以呢點解我話，Sinter話，點解我咁著重，咁長氣去講嘢，同埋俾大家睇下嗰個texture嘅變化，因為其實呢個先至係中菜嘅靈魂，因為其實你多一啲少一啲呢，你就已經係唔同咗時間，但係呢嗰啲食物嗰啲食材嘅，Texture嘅變化係唔會改變嘅大家ok得唔得。</p></a>
+				<a href="#00:07:3.57" id="00:07:3.57" class="lt" onclick="jumptoTime(423, this.id)"><p>咁所以我就咁長氣，好多時候炒嘅時候一定係畀曬成個過程畀大家睇，就係咁解啦ok，即係除咗蒸嘢啦蒸嘢冇乜技巧，最緊要計時，大家要明白我哋要即係作為一個中廚，我哋唔係做麥當勞，我哋唔係話嗰塊漢堡扒要幾多gram，嗰個包要幾多gram，落醬嘅時候，一輪到落醬都有多與少啦，大家食過漢堡包都知啦。</p></a>
+				<a href="#00:07:32.07" id="00:07:32.07" class="lt" onclick="jumptoTime(452, this.id)"><p>有啲手勢好嘅就剛剛好，有啲手勢唔好嘅又多或者係少果頭，係咪呀大家話係咪先，即係你一輪到 嗱你而家得啦，好嗱呢個時候呢我開返大火，嗱咁呢度呢大概呢有成兩湯匙嘅油嘅，因為啲番生本身出油嘅先頭我唔係落好多油嘅啫，好嗱呢個時候呢，我就要落蛋啦，啊唔係sorry，唉嗱你話呢落咗啲菜脯先，稍為炒一炒啲菜脯先等佢甘香啲。</p></a>
+				<a href="#00:08:8.07" id="00:08:8.07" class="lt" onclick="jumptoTime(488, this.id)"><p>嗱呢個呢就係我哋古早味嘅炒蛋啦，嗱呢個時候呢我哋就落曬落去啦，咁就唔好郁佢先，等佢呢個底呢煎一煎香佢先，好跟完之後大家睇清楚下，我哋炒蛋呢，唔係要翻係要咩呀推，推嘅作用係乜嘢呀，推嘅作用呢就係可以呢，令到嗰啲蛋呢個蛋個底有焦香嗰部分呢就卷起，然之後呢就將嗰啲咩呀，嗱而家呢要抽一抽鑊啦。</p></a>
+				<a href="#00:08:45.59" id="00:08:45.59" class="lt" onclick="jumptoTime(525, this.id)"><p>咁呢就將呢嗰個，呃，蛋漿嗱大家見到起皺紋係咪，咁呢就將嗰個底嗰啲蛋漿呢，呃唔係，我再講一次係講到亂曬籠，就我咁樣搞呢就令到嗰啲底焦香嘅就翻起，跟住然之後呢佢喺起皺紋嘅期間呢，嗱而家又可以落返去啦，起皺紋嘅期間呢就將嗰啲蛋漿就夾住變咗呢我哋嘅口感就會好豐富嘅，一層蛋漿就一層焦香，ok得唔得。</p></a>
+				<a href="#00:09:16.79" id="00:09:16.79" class="lt" onclick="jumptoTime(556, this.id)"><p>啊咁呀之前呢有個觀眾就同我拗，就話炒蛋要翻起嘅點點點，係要翻起，不過呢，你要視乎你點樣炒法ok嗱，大家睇下，而家咪起曬，畀大家睇下，起曬皺紋，呢皺紋嘅入面其實包咗啲蛋漿喺度嘅ok，而家呢，啲蛋呢開始凝固啦就冇張啦，咁呢個時候呢我哋就攞，呢個時候呢我哋就可以翻一翻佢，好了，這個時候可以了，關火，蛋這個時候大概最多九成熟。</p></a>
+				<a href="#00:10:12.26" id="00:10:12.26" class="lt" onclick="jumptoTime(612, this.id)"><p>大家看不看到?我給大家看一下那個質感，好了，這個時候我們又開始上碟了，我先把碟子放大一點，唉，這個時候要快手，我因為要拍影片就慢了一點，好，這個蛋很棒，花生炒蛋可以炒老啲，但都唔應該100%等佢熟先至熄火，我哋就大概九成就熄火，如果係蝦仁炒蛋嗰啲呢，差唔多九成就要熄火，即係未過九成就熄火。</p></a>
+				<a href="#00:11:13.52" id="00:11:13.52" class="lt" onclick="jumptoTime(673, this.id)"><p>大家要記住，呢個係冇得去斟酌嘅，上次就話網友同我拗就一定要翻炒，其實先頭我都有翻炒，但係整個過程裏面絕大部分嘅時間我係唔會翻炒，呢個就係我哋要炒滑蛋嘅一個技巧，其實如果講到炒滑蛋，麥當勞嘅早餐，大家樂嘅早餐，澳牛嘅炒蛋，用嘅就係同我同一個方法，佢哋冇翻炒嘅過程，只有搞嘅過程，佢係個扒爐嗰度煎炒蛋。</p></a>
+				<a href="#00:11:55.52" id="00:11:55.52" class="lt" onclick="jumptoTime(715, this.id)"><p>或者攞隻平底鑊去炒蛋，所以有啲大家即係你想食嗰種口感呢，大家必須要明白，我又熄咗個抽氣扇先，要記得唔係嘈住大家，我希望大家明白，有啲質感你真係要有啲技巧先做到出嚟嘅，唔係話食古不化，即係一本通書就睇到老，人哋話係咁炒，佢教學係咁炒，咁我想問，大家見過炒過咁多次蛋，我總共出過四個炒蛋應該。</p></a>
+				<a href="#00:12:29.52" id="00:12:29.52" class="lt" onclick="jumptoTime(749, this.id)"><p>一個係滑蛋蝦仁，一個係午餐肉炒蛋，一個係苦瓜炒蛋，呢個古早味，呢個係古法花生炒蛋，第四個，如果大家有留意過，這四個炒蛋幾乎是一模一樣的炒法，我想問問大家，我有沒有炒到蛋呢?</p></a>
+				<a href="#00:12:53.35" id="00:12:53.35" class="lt" onclick="jumptoTime(773, this.id)"><p>我知道有些人說少油，不喜歡放太多油，但我看到炒蛋，近鏡看到蛋是一粒粒的，炒蛋炒到一粒粒，我想問一下，什麼是炒蛋?</p></a>
+				<a href="#00:13:6.95" id="00:13:6.95" class="lt" onclick="jumptoTime(786, this.id)"><p>我不是想取笑人，是真的，從技術角度來說，炒蛋炒到一粒粒，好像奶粉狀的那些一粒粒，什麼叫炒蛋?根本那些蛋是不熟的，比我還要生的，你們都說炒得好，大家看看，我再近鏡給大家看，讓大家看清楚一點，這些是一層一層的，好像是接布一樣，有些像廣州式的拉腸，接布一樣，一層一層之間，就會夾了生的蛋漿。</p></a>
+				<a href="#00:13:50.40" id="00:13:50.40" class="lt" onclick="jumptoTime(830, this.id)"><p>OK，變成了我剛才做的動作，就起到這個作用，這個作用最後的結果是什麼呢，看到的是一層一層的，你吃的時候是一口香，一口滑滑的蛋漿，蛋汁，OK，大家要記住，這些不是誇張，我出蛋，我已經出了第四條，這個我相信，真的YouTube上沒有人做過的，這個我叫古早味古法花生炒蛋，這個怎麼來的呢，我先講一下歷史。</p></a>
+				<a href="#00:14:29.32" id="00:14:29.32" class="lt" onclick="jumptoTime(869, this.id)"><p>然後也講得不夠詳盡，其實呢，在我們華南地區，甚至是華中地區，我們以前剛剛打完仗，又打二次大戰，又打內戰，那些不要講那麼多了，不然又會被人黃標，那麼，就，那時候大家都是百廢待興，一窮二白的，那麼，後來很多的難民跑來香港，喂，跑來香港，哪有時間找到工作，又為了要增加蛋白質，增加營養，唯一最便宜，最地道的。</p></a>
+				<a href="#00:15:5.86" id="00:15:5.86" class="lt" onclick="jumptoTime(905, this.id)"><p>一定是吃雞蛋，於是乎那時候就發展了很多的，雞蛋菜式出來，這個花生炒雞蛋，就是其中一個菜式了，OK，就是窮人那時候用的，那麼，後來，就是六七十年代香港經濟起飛之後，慢慢這個菜式就式微了，那麼輪到什麼呢，就傳了回去，上面大陸那些，就是內地的農民，都是這麼做的，那麼以前窮呢，就是吃這些的了，又可以小孩子送飯。</p></a>
+				<a href="#00:15:37.32" id="00:15:37.32" class="lt" onclick="jumptoTime(937, this.id)"><p>大人可以送米酒，真的，為什麼呢，我以前小時候，我回到鄉下，我經常看到我姑丈，下午，就自己炒一碟花生炒蛋出來，幹什麼呢，喝酒?</p></a>
+				<a href="#00:15:51.10" id="00:15:51.10" class="lt" onclick="jumptoTime(951, this.id)"><p>喝米酒，我看到他吃得津津有味的，所以我記憶很深的，那麼這個就是窮人炒蛋的方式，OK，行不行?</p></a>
+				<a href="#00:16:2.68" id="00:16:2.68" class="lt" onclick="jumptoTime(962, this.id)"><p>那麼這個後面就講一下歷史了，那麼大家不喜歡聽就算了，那麼我就講到這裡了，菜已經搞定了，最重要記住什麼?</p></a>
+				<a href="#00:16:12.08" id="00:16:12.08" class="lt" onclick="jumptoTime(972, this.id)"><p>由生花生炒到熟花生的階段，千萬不要，大家看到現在的花生是不是很深色?</p></a>
+				<a href="#00:16:19.54" id="00:16:19.54" class="lt" onclick="jumptoTime(979, this.id)"><p>但是我剛才放蛋的時候其實不是很深色，為什麼呢?</p></a>
+				<a href="#00:16:23.04" id="00:16:23.04" class="lt" onclick="jumptoTime(983, this.id)"><p>這就是炒花生的巧妙之處，很多人以為我一定要炒到像現在這麼深色，這樣才會熟，我告訴你，這不是熟，這叫做閉家火，為什麼呢?</p></a>
+				<a href="#00:16:36.28" id="00:16:36.28" class="lt" onclick="jumptoTime(996, this.id)"><p>油溫、餘溫會令花生焦，我以前學炒花生的時候，已經中招過很多次了，所以，你說現在有YouTube拍片多好呢?</p></a>
+				<a href="#00:16:47.06" id="00:16:47.06" class="lt" onclick="jumptoTime(1007, this.id)"><p>提醒你了，炒花生要怎樣做呢?</p></a>
+				<a href="#00:16:49.28" id="00:16:49.28" class="lt" onclick="jumptoTime(1009, this.id)"><p>炒到一半就熄火了，不要炒到看到顏色很漂亮才熄火，這樣就叫做閉家火了，OK?</p></a>
+				<a href="#00:16:57.60" id="00:16:57.60" class="lt" onclick="jumptoTime(1017, this.id)"><p>第二件事就是，我們放蛋的時候，我們之前放油的時候，要預計炒蛋要用的份量，這個8隻蛋，大約2湯匙，OK?</p></a>
+				<a href="#00:17:10.52" id="00:17:10.52" class="lt" onclick="jumptoTime(1030, this.id)"><p>行不行?</p></a>
+				<a href="#00:17:11.12" id="00:17:11.12" class="lt" onclick="jumptoTime(1031, this.id)"><p>又有人說我，用這麼多油，算了吧，這裡不是健康頻道，這裡我是用傳統的方法做，我過去半年，這是第四次吃炒蛋，半年吃四次炒蛋都說多油的，那我沒辦法了，我都說了，你嫌多油的話，這個菜式你可以不吃，真的，因為你…，我解釋一下，為什麼我剛才說有些影片拍出來，那些蛋炒到他說熟了，但是我看到的近鏡，是那些蛋好像有奶粉粒那些粉狀出來。</p></a>
+				<a href="#00:17:46.56" id="00:17:46.56" class="lt" onclick="jumptoTime(1066, this.id)"><p>就是因為不夠油，OK?</p></a>
+				<a href="#00:17:50.52" id="00:17:50.52" class="lt" onclick="jumptoTime(1070, this.id)"><p>還有，你說餐廳那些炒得很滑，為什麼?</p></a>
+				<a href="#00:17:53.32" id="00:17:53.32" class="lt" onclick="jumptoTime(1073, this.id)"><p>你知道餐廳放多少油去炒蛋嗎?</p></a>
+				<a href="#00:17:57.08" id="00:17:57.08" class="lt" onclick="jumptoTime(1077, this.id)"><p>喂，我也做過水吧的，如果我用得多油，我不讓廚房老大插袋找?</p></a>
+				<a href="#00:18:5.08" id="00:18:5.08" class="lt" onclick="jumptoTime(1085, this.id)"><p>是不是?</p></a>
+				<a href="#00:18:6.00" id="00:18:6.00" class="lt" onclick="jumptoTime(1086, this.id)"><p>對嗎?</p></a>
+				<a href="#00:18:6.60" id="00:18:6.60" class="lt" onclick="jumptoTime(1086, this.id)"><p>就算我自己健康，喂，有些東西大家看不到的，你不要以為那樣東西就不是，本身我都說了，每一樣食材都有它適當的油份的，OK?</p></a>
+				<a href="#00:18:17.88" id="00:18:17.88" class="lt" onclick="jumptoTime(1097, this.id)"><p>這裡後面就說得長了多了一點，那我就不再說了，那…，我主要就總結，炒蛋記住，九成好起鑊，大家看看，這一碟炒蛋是我這麼多碟炒蛋裡面最熟的，為什麼呢?</p></a>
+				<a href="#00:18:37.00" id="00:18:37.00" class="lt" onclick="jumptoTime(1117, this.id)"><p>因為花生炒蛋要熟一點才好吃的，OK?</p></a>
+				<a href="#00:18:41.52" id="00:18:41.52" class="lt" onclick="jumptoTime(1121, this.id)"><p>明白嗎?</p></a>
+				<a href="#00:18:42.16" id="00:18:42.16" class="lt" onclick="jumptoTime(1122, this.id)"><p>那其他就不說了，那想看我其他的炒蛋技巧的話，我覺得最詳盡的，應該就是碟蝦仁炒蛋，雖然拍出來很噁心，很多人說很噁心，算了，不說了，去吃飯了。</p></a>
+				<a href="#00:18:55.24" id="00:18:55.24" class="lt" onclick="jumptoTime(1135, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

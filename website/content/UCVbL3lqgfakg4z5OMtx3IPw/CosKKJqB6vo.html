@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蕃茄煮煎蛋，比蕃茄炒蛋更好味，一道看似簡單的菜式，卻原來含有各種讓菜餚好味的基本功！更透過這道菜式去示範改變調味程序就能達到神奇味覺的科學原理！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CosKKJqB6vo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蕃茄煮煎蛋，比蕃茄炒蛋更好味，一道看似簡單的菜式，卻原來含有各種讓菜餚好味的基本功！更透過這道菜式去示範改變調味程序就能達到神奇味覺的科學原理！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好， 大家晚安。</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>先頭我和大家分享了炒蒜苗， 利用蒜苗去炒菜炒得好食的原理。</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>這條片很簡單， 我先開火燒鑊。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:01:15.00" id="00:01:15.00" class="lt" onclick="jumptoTime(75, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:01:56.00" id="00:01:56.00" class="lt" onclick="jumptoTime(116, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:02:4.00" id="00:02:4.00" class="lt" onclick="jumptoTime(124, this.id)"><p>我會和大家分享如何利用不同調味的方法去調味。</p></a>
+				<a href="#00:02:6.62" id="00:02:6.62" class="lt" onclick="jumptoTime(126, this.id)"><p>因為我們用番茄煮蛋，所以可以放多點油，而不是單純的煎荷包蛋。</p></a>
+				<a href="#00:02:12.64" id="00:02:12.64" class="lt" onclick="jumptoTime(132, this.id)"><p>有人說我放太多油，其實煮蛋就要放多點油，煎蛋就要放少點。</p></a>
+				<a href="#00:02:21.64" id="00:02:21.64" class="lt" onclick="jumptoTime(141, this.id)"><p>現在我們調小火，調到差不多熄火，然後把油弄一下鍋，讓油降溫。</p></a>
+				<a href="#00:02:31.64" id="00:02:31.64" class="lt" onclick="jumptoTime(151, this.id)"><p>現在我們放蛋。</p></a>
+				<a href="#00:02:45.43" id="00:02:45.43" class="lt" onclick="jumptoTime(165, this.id)"><p>很多人煎荷包蛋就這樣放就算了，我不是的，我學韓式煎蛋的時候就放少許鹽，如果是這樣的話，蛋就很好吃的，不用醬油也可以，就這樣空口吃也可以，不用醬油，拿錯東西了，不好意思，一瞬間順手了，大家看看我煎蛋是不是也是放些胡椒碎，是不是很優哉優哉的?</p></a>
+				<a href="#00:03:19.47" id="00:03:19.47" class="lt" onclick="jumptoTime(199, this.id)"><p>是的，不用這麼緊張的，好，這個時候先看看蛋，現在蛋有少許黏底，所以不要理它，大家看到嗎?我是用鉗子來煎蛋的，我真的拿起筷子也可以煎蛋的，不是開玩笑的，我覺得一個合格的家廚，其實什麼工具都要懂得用，不要一定要指著，現在蛋是不是可以在這裡游水，這個時候我們就把蛋反轉，拿起鉗子也反轉蛋?大家看看我怎樣反。</p></a>
+				<a href="#00:04:16.47" id="00:04:16.47" class="lt" onclick="jumptoTime(256, this.id)"><p>你有沒有慣性……，看到嗎?</p></a>
+				<a href="#00:04:22.75" id="00:04:22.75" class="lt" onclick="jumptoTime(262, this.id)"><p>這樣就不沾底，是不是?</p></a>
+				<a href="#00:04:26.75" id="00:04:26.75" class="lt" onclick="jumptoTime(266, this.id)"><p>反蛋反得很漂亮，因為我要用來煮蛋，所以我做全熟，如果不是用來煮蛋的話，這個時候稍微煎一煎，就可以反過來拿起來吃，即是煎荷包蛋，生熟的荷包蛋，即是蛋清還是生的，蛋白是熟的，OK?</p></a>
+				<a href="#00:04:52.75" id="00:04:52.75" class="lt" onclick="jumptoTime(292, this.id)"><p>這個時候，所以說，背口訣是不是很重要?</p></a>
+				<a href="#00:04:58.75" id="00:04:58.75" class="lt" onclick="jumptoTime(298, this.id)"><p>當你背口訣是對的時候，跟著我一起背口訣的時候，你要不沾底，很簡單，你用什麼鍋都可以，OK?</p></a>
+				<a href="#00:05:10.75" id="00:05:10.75" class="lt" onclick="jumptoTime(310, this.id)"><p>這個時候就可以了，因為……，這個就分開，大家可以看一下，如果我這個蛋，早點上蛋，這個蛋黃還是生的，現在已經是九成熟了，OK?</p></a>
+				<a href="#00:05:38.75" id="00:05:38.75" class="lt" onclick="jumptoTime(338, this.id)"><p>不用理它了，繼續打蛋，OK?</p></a>
+				<a href="#00:05:42.75" id="00:05:42.75" class="lt" onclick="jumptoTime(342, this.id)"><p>煎第二隻，其實西式的炒鍋，煎蛋其實不太好，為什麼呢?</p></a>
+				<a href="#00:05:52.75" id="00:05:52.75" class="lt" onclick="jumptoTime(352, this.id)"><p>因為有弧度的問題，變成你的蛋，兩隻一起打就黏在一起了，一樣，下完蛋之後，跟著加一點鹽，一點點就可以了，多一點就有不同的口味了，我這裡隨便一小撮，OK?</p></a>
+				<a href="#00:06:10.75" id="00:06:10.75" class="lt" onclick="jumptoTime(370, this.id)"><p>然後再放一點胡椒，這個叫韓式煎蛋，韓國人早上吃早餐，煎蛋就是這樣煎的了，一樣了，記住煎蛋，第一隻蛋，沒有煎穿黃的話，接下來所有蛋都不會煎穿黃，就是有這麼有趣的效果，但是當你是第一隻煎穿黃，接下來每隻都會煎穿黃，這個時候我們就攪拌一下，現在第二隻蛋就瀟灑很多了，就不用先頭這麼謹慎，OK。</p></a>
+				<a href="#00:06:52.50" id="00:06:52.50" class="lt" onclick="jumptoTime(412, this.id)"><p>煎蛋也有技巧的，這個時候我們就分開它，雖然說兩隻蛋黏在一起，但是因為它不同時間下，變成了，都會是容易分得開的，這個時候我們就反轉它，用鉗子或者筷子去反轉，大家看著，先推一推，拉，利用慣性，反轉它，這樣是不是很方便，所以說我用筷子就煎到蛋，用鉗子就煎到蛋，就是這個意思，這個時候我們就可以稍微煎一煎它，大家要記住，因為我待會要用來做煮蛋。</p></a>
+				<a href="#00:07:55.44" id="00:07:55.44" class="lt" onclick="jumptoTime(475, this.id)"><p>所以荷包蛋是可以全熟的，但如果你想吃太陽蛋，就先不用翻面，如果想吃荷包蛋，就翻面煎多十多二十秒就OK了，這個時候就拿起，大家說是不是很方便?</p></a>
+				<a href="#00:08:15.44" id="00:08:15.44" class="lt" onclick="jumptoTime(495, this.id)"><p>OK?</p></a>
+				<a href="#00:08:17.44" id="00:08:17.44" class="lt" onclick="jumptoTime(497, this.id)"><p>這個時候我加一點油，煎最後兩隻，跟大家介紹一下，我這隻鍋買了兩個星期，之前開鍋的影片是這隻新鍋，他說是生鐵鍋，我就姑且信他一信，但我覺得應該是熟鐵鍋，但最重要是不黏底，最重要好用，但不黏底不是因為這隻鍋，是因為我背口缺，記住，這條影片主要有兩個目的，給大家看看背口缺，第二就是跟大家分享一個很簡單，初哥都可以做到的菜式。</p></a>
+				<a href="#00:09:11.44" id="00:09:11.44" class="lt" onclick="jumptoTime(551, this.id)"><p>第三就是想跟大家演示一下，怎樣改變調味的比例和先後次序，就令到它可以產生天然的果酸出來，煎蛋的時候，有時候會覺得高溫的會快熟，我們就拿起它，大家經常看到有這個擋鑊的動作，其實就是在降溫，讓它煎得更加均勻，這個時候我們就反轉，一樣，利用慣性，一樣，首先推上來，拉它，再這樣，另一個相反方向，這樣煎蛋就不會黏底了。</p></a>
+				<a href="#00:10:9.18" id="00:10:9.18" class="lt" onclick="jumptoTime(609, this.id)"><p>煎蛋很簡單嗎?</p></a>
+				<a href="#00:10:11.18" id="00:10:11.18" class="lt" onclick="jumptoTime(611, this.id)"><p>是的，如果你懂得這樣煎，這樣煎蛋，每隻都不穿底，基本上你煎魚煎的，不可能會黏底，這個和鑊沒有什麼關係，不過我告訴你，的確這個市場上，有些鑊是你怎樣煎都穿的，我試過有一次因為貪它輕，買了所謂的鈦金屬鑊，不知是否塗層的問題，我這些這麼富經驗的，都是煎到它焦底，所以大家小心買鑊，不是貴鑊就好。</p></a>
+				<a href="#00:10:49.18" id="00:10:49.18" class="lt" onclick="jumptoTime(649, this.id)"><p>OK，好了，在這個時候，繼續，這個時候，我們照用的鑊，加少許油，我們做什麼呢?炒番茄，接下來炒番茄這個動作，是很重要的，很多人炒番茄，或者教，就是放茄膏，放茄汁，其實如果站在中廚的角度，這樣是不對的，放醋，其實都是不對的，OK，大家看看我接下來怎麼做，首先爆一爆，我眼尾只是稍稍，大家看到畫面，起煙了。</p></a>
+				<a href="#00:11:30.18" id="00:11:30.18" class="lt" onclick="jumptoTime(690, this.id)"><p>所以我才放料，爆了蒜頭之後，大家看到嗎?</p></a>
+				<a href="#00:11:39.18" id="00:11:39.18" class="lt" onclick="jumptoTime(699, this.id)"><p>好，接下來這個動作就很重要，先放糖，放多少糖呢?</p></a>
+				<a href="#00:11:45.18" id="00:11:45.18" class="lt" onclick="jumptoTime(705, this.id)"><p>一隻番茄放一匙糖，二、三、四，如果想它甜一點酸一點，放五匙，OK，就是再放多一點，這個如果去到外國，就很討厭，因為外國的火候很大，夠煙，OK，好了，這個時候，我們就可以了，糖已經融化了，就放水了，然後煮滾，煮滾後，我這裏就簡單些，因為炒番茄，所以煮滾後，約兩分鐘，如果大家怕不知道，怕不知道的話，自己心裡無數。</p></a>
+				<a href="#00:12:39.40" id="00:12:39.40" class="lt" onclick="jumptoTime(759, this.id)"><p>因為新手，用馬錶，記住馬錶是我們家廚，或者廚師的最佳幫手，當你不肯定，或者你是，Multitask，業務模式，即是用幾隻爐頭的話，馬錶是一個好幫手，等滾後按兩分鐘，兩分鐘後我再開它，跟大家分享，兩分鐘，大滾後兩分鐘，響鐘了我們看看，這個時候，番茄還未散，這個時候我們再，加蛋，蛋盡量碰到番茄汁，OK。</p></a>
+				<a href="#00:13:35.00" id="00:13:35.00" class="lt" onclick="jumptoTime(815, this.id)"><p>這樣煮番茄煮蛋很好吃的，比炒番茄炒蛋好吃，因為煎得夠金香，蛋煎得夠金香，散發出來的香味是零碎不同，現在差一點點水，我就稍微放一點點，十多二十毫升，讓它降溫，然後蓋上鍋蓋，到這個時候我還未調味，再煮兩分鐘，兩分鐘後再和大家分享，兩分鐘又過了，看看結果如何，現在蛋都出味了，這個時候我們就開始調味，先放了糖。</p></a>
+				<a href="#00:14:27.00" id="00:14:27.00" class="lt" onclick="jumptoTime(867, this.id)"><p>現在按照正常的份量，大概是放三分二至一匙的鹽，然後放少許雞粉，多少就隨意，這個時候我們攪拌均勻，這個時候我們打薄芡，這些真的要打薄芡，因為多水，大家看看我的番茄沒有完全煮爛，因為我們中式炒番茄，其實要保持一定程度的形狀，這個時候我們就放蔥，我留少少作為裝飾，最後在鑊邊放一茶匙生抽，這樣就可以完全勾引番茄的天然酸味出來。</p></a>
+				<a href="#00:15:58.97" id="00:15:58.97" class="lt" onclick="jumptoTime(958, this.id)"><p>可以關火了，我跟大家總結一下，其實這個我相信是入廚初階版的菜式，叫番茄煮蛋，這個不要小看，我這個調味很簡單但很夠酸甜，哎呀 等一等，因為蛋煮過後很容易爛，要擺得好看一點，沒辦法，家廚最差的是甚麼?</p></a>
+				<a href="#00:16:50.97" id="00:16:50.97" class="lt" onclick="jumptoTime(1010, this.id)"><p>最差的就是擺盤，然後放些蔥上去，這樣就很帥了，有食慾了，接著我就總結一下，其實這個菜式是非常簡單的，是入門當中的入門，大家可能在廣東粵菜裏面很少有這個做法的番茄煮蛋，番茄煮煎蛋，是煎蛋，番茄炒蛋大家都吃得多，但番茄煮煎蛋，我相信大家很少會試的，因為這個不是粵菜的做法，而是北方的做法，但我可以告訴大家。</p></a>
+				<a href="#00:17:36.93" id="00:17:36.93" class="lt" onclick="jumptoTime(1056, this.id)"><p>其實這個番茄煮煎蛋，我個人覺得，比單純的番茄炒蛋更加惹味，因為蛋煎得焦了，煎得金香，但炒蛋是不可以這樣做的，今天為什麼我要和大家分享這個這麼簡單的菜式呢?</p></a>
+				<a href="#00:18:0.93" id="00:18:0.93" class="lt" onclick="jumptoTime(1080, this.id)"><p>其實最重要的原因就是透過這個這麼簡單的菜式，我帶出兩個訊息，第一個就是，都是啦，簡單的菜式不要緊的，但是你要明白掌握這個中廚的技巧，必須要什麼?是高溫，大家會說，我的爐頭不夠溫度，那你就燒長一點時間，我們用眼睛去看的時候，唯一的結果就是出煙，有人說，我用的是電磁爐，沒有你用明火煮得這麼高溫。</p></a>
+				<a href="#00:18:36.93" id="00:18:36.93" class="lt" onclick="jumptoTime(1116, this.id)"><p>不是的，記住呢，溫度是火力乘時間的積乘，所以在這樣的情況之下，我們家廚不論是用明火爐也好，或者是用電磁爐也好，記住燒鑊，這是一個非常重要的步驟，唯一確認溫度的標準就是見煙，ok，行不行?</p></a>
+				<a href="#00:19:2.93" id="00:19:2.93" class="lt" onclick="jumptoTime(1142, this.id)"><p>第二件事就是，我這個雖然是簡單的菜式，但是大家看到我沒有放茄汁，也沒有放茄膏，更加沒有放醋，但是我可以告訴大家，我這道菜依然是什麼呢?</p></a>
+				<a href="#00:19:16.93" id="00:19:16.93" class="lt" onclick="jumptoTime(1156, this.id)"><p>依然是酸甜度十足的，而且是All Nature，All Neutral，全部純天然，那有什麼方法做到呢?</p></a>
+				<a href="#00:19:31.93" id="00:19:31.93" class="lt" onclick="jumptoTime(1171, this.id)"><p>就是我這條影片最主要帶出的訊息，就是加糖，先勾出果酸，其實這是一個很簡單的化學原理，同性是會雙級的，大家中學的時候，上過Immigrated Science，第一個要做的是鹽水的實驗，你想它減鹹，原來脫水的原理是怎樣呢?</p></a>
+				<a href="#00:20:1.93" id="00:20:1.93" class="lt" onclick="jumptoTime(1201, this.id)"><p>就是因為本身所有的植物肉類，它們天然的水分裡面帶有鹽，所以你放鹽比植物的鹽更加重的時候，植物的鹽分就會向著鹽水滲出，這就是脫水的基本化學作用，同樣道理，我們要勾引果酸出來的時候，揮發果酸出來的時候，我比它更加酸更加甜，但醋太過過分了，我們改用糖，用糖勾出果酸，很多人炒番茄不夠酸，然後起了落醋，為什麼呢?</p></a>
+				<a href="#00:20:48.93" id="00:20:48.93" class="lt" onclick="jumptoTime(1248, this.id)"><p>因為它落不夠糖，變成勾引不了果酸，即是番茄自帶的天然果酸出來，所以它的汁就不夠酸，我現在先利用糖，大量的糖分，勾引了番茄的果酸出來，然後呢，因為糖太多，所以吃到的是甜味，那我怎樣去再利用這個計算的方式，去勾引真真正正我們感受到的酸度出來呢?</p></a>
+				<a href="#00:21:21.93" id="00:21:21.93" class="lt" onclick="jumptoTime(1281, this.id)"><p>最後放鹽，最重要的一個步驟就是放豉油，經過這個兩重的功夫之後，它完全全番茄的天然酸味就會全部跑出來，當然，番茄本身都有酸、很酸和不太酸的分別，那就要看你怎樣去買了，基本上，每一隻你摸上手夠硬，紅色素是夠通膿的話，通常它的果酸都不會低，可以了，ok?</p></a>
+				<a href="#00:21:55.93" id="00:21:55.93" class="lt" onclick="jumptoTime(1315, this.id)"><p>所以，我現在說到自己都流口水，所以，大家記住了，不需要放茄汁，也不需要放醋，我們只需要利用這個調味的，我以前經常說的，鹽糖味鹽糖味，你不要倒轉了，現在我就示範一次，倒轉了之後就出到完全不同的效果了，ok?行不行?</p></a>
+				<a href="#00:22:16.93" id="00:22:16.93" class="lt" onclick="jumptoTime(1336, this.id)"><p>所以，記住鹽糖味放的次序是很嚴謹的，不是隨便說，不是順口流來的，ok?行不行?</p></a>
+				<a href="#00:22:25.93" id="00:22:25.93" class="lt" onclick="jumptoTime(1345, this.id)"><p>因為我一早就放了大量的糖，先勾引了果酸滲出來，然後再利用鹽去調整酸甜度，然後最後提酸，這一次，我經常說生抽可以是畫龍點睛，是嗎?</p></a>
+				<a href="#00:22:45.93" id="00:22:45.93" class="lt" onclick="jumptoTime(1365, this.id)"><p>是華人醬料的偉大發明，是嗎?</p></a>
+				<a href="#00:22:48.93" id="00:22:48.93" class="lt" onclick="jumptoTime(1368, this.id)"><p>但原來最後，炒番茄的時候放幾滴生抽，它不單止有畫龍點睛的效果，還有提酸的作用，所以我這碟蕃茄煎蛋，是非常非常之惹味，要香口有香口，因為煎到夠焦，夠甘香，要酸有酸，要鹹有鹹，是不是很均勻，整個效果，可以嗎，雖然這條很簡單，但也是一條入門片，同時也和大家演示了兩個，我們在煮食的時候的技巧，一個是怎樣炒出鑊氣的技巧。</p></a>
+				<a href="#00:23:40.51" id="00:23:40.51" class="lt" onclick="jumptoTime(1420, this.id)"><p>一個是怎樣調出，勾引出天然果酸的調味方式，可以嗎，不說了，很餓，然後，流口水了，再見，多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜港式燒雞脾｜凈食香口脆皮｜配蔥油變成送飯神器｜香港街頭美食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'AUn7UfO6yMo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜港式燒雞脾｜凈食香口脆皮｜配蔥油變成送飯神器｜香港街頭美食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.12" id="00:00:0.12" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天我想和大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:7.12" id="00:00:7.12" class="lt" onclick="jumptoTime(7, this.id)"><p>大家看到很多醬料，是的!</p></a>
+				<a href="#00:00:11.12" id="00:00:11.12" class="lt" onclick="jumptoTime(11, this.id)"><p>我新焗爐回來了，我已經試過這個燒肉，非常完美，我可以完全熟用這個焗爐，所以當然有新焗爐用，我急不及待，當然要和大家分享一些焗燒焗的菜式，之前不好意思，我做了一個叉燒，不過叉燒因為拍攝上的意外，其實是一年前的，拍攝上的意外，沒有拍下醃製的過程，所以有觀眾要求我，Leo你什麼時候可以再拍一條叉燒片，可以看到醃製的過程。</p></a>
+				<a href="#00:01:4.12" id="00:01:4.12" class="lt" onclick="jumptoTime(64, this.id)"><p>今天我和大家分享兩個菜式，不過我同時間醃製，為什麼呢?</p></a>
+				<a href="#00:01:10.12" id="00:01:10.12" class="lt" onclick="jumptoTime(70, this.id)"><p>因為大家的性質一樣，今天有兩個菜式，一個是燒雞腿，另一個是燒豬仔骨，這兩個菜式和叉燒的做法可以是一模一樣，所以今天我順便拍這條片的時候，順便可以說一下，怎樣可以醃製好叉燒，首先介紹材料，兩隻雞腿，很便宜，18元，你還想怎樣?兩隻雞腿18元，夠一家人吃，另外，這個豬仔骨買了大概一斤，純粹是掛口印，沒有什麼肉吃。</p></a>
+				<a href="#00:02:4.12" id="00:02:4.12" class="lt" onclick="jumptoTime(124, this.id)"><p>介紹完這兩個主要的材料之後，我當然要介紹這個醬料，很多人做叉燒的時候都會買叉燒醬，個人來說，我個人覺得自己做比較重味，不是鹹，是香，其實這個叉燒醬是不難做的，只要有幾樣東西，第一 叉燒醬一定要有的是什麼，當然是南乳，然後呢，海鮮醬，有這兩樣其實就已經可以做到叉燒醬出來，但是呢。</p></a>
+				<a href="#00:02:49.06" id="00:02:49.06" class="lt" onclick="jumptoTime(169, this.id)"><p>通常呢，我就喜歡做這個試味叉燒，叉燒有分很多流派的，有蜜汁叉燒 有試味叉燒，那我呢，就喜歡做試味叉燒的，所以呢，就一定會加磨豉醬或者是甜麵豉進去，磨豉醬呢，今天呢 我買不到黑色那種，但是都是磨豉醬，大家看到那個牌子了，都是本港的一些大牌子，那就，會加一點點進去，然後如果想叉燒更加香的話，就加一點點的沙茶醬進去。</p></a>
+				<a href="#00:03:31.66" id="00:03:31.66" class="lt" onclick="jumptoTime(211, this.id)"><p>輕輕就可以了 少許就可以了，好了，這個醃料方面很簡單，蒜頭幾粒，紅蔥頭幾粒，基本上就完成了，那其實呢，除了叉燒醬之外，其實很多的教學，家庭式的教學，那就會跟大家說，就這樣茶蜜糖的，但是呢，大家都知道，看完那條叉燒片之後，大家應該都猜到我，對於燒臘這件事有多少認識的，所以呢，我是接下來做的手法，有很多方面。</p></a>
+				<a href="#00:04:14.38" id="00:04:14.38" class="lt" onclick="jumptoTime(254, this.id)"><p>是跟一般的，就是坊間的做叉燒的教學很不一樣，相對地繁複一點，但是呢，我可以跟大家說，我這個製作叉燒的過程，其實就已經是非常貼近，專業的燒臘店的做法，OK，好了，既然說的是貼近專業的，我當然不只是茶蜜糖，麥芽糖，這個兩罐，那我就先開了罐，如果不夠就再開多一罐，那每一罐就500克，用來做什麼呢。</p></a>
+				<a href="#00:04:53.62" id="00:04:53.62" class="lt" onclick="jumptoTime(293, this.id)"><p>當然是浸叉燒用，豬仔骨其實呢，ожeston Beaut Mash，eliminating，ล，講白啲呢 只不過係叉燒嘅變種嚟嘅啫，ok 得唔得，只不過佢嗰個食材唔一樣 但係醃法係一樣嘅，ok 好唔好，嗱 咁呀，我首先收返埋啲嘢先啦，跟住然之後呢，炸炸臨開工啦喂，嗱 咁呀 哎 嗱 你呢，我浸咗啲蔥呀 芫茜呀嗰啲就整其他餸用嘅。</p></a>
+				<a href="#00:05:22.05" id="00:05:22.05" class="lt" onclick="jumptoTime(322, this.id)"><p>咁我唔理佢啦 擺埋先，跟住然之後我馬上處理呢個 呀，呢個雞同埋豬仔骨呀，咁因為呢 兩個呢 個性質係一樣嘅，所以呢 我可以醃埋一齊都得，咁當然 如果大家要求高嘅話 會話，喂 唔係喎 雞味同呢個係豬肉味係唔一樣喎，咁大家就分開啦，咁我即係家廚嚟講 我為免即係，我正哥咁講呀 我懶啦，咁所以呢 我就兩樣嘢整埋一齊啦 ok。</p></a>
+				<a href="#00:05:57.05" id="00:05:57.05" class="lt" onclick="jumptoTime(357, this.id)"><p>好唔好 嗱 咁呀 通常我都係㗎啦，呀 即係買嘢完送嗰啲膠袋就當係垃圾袋 臨時垃圾袋，咁就煎好個砧板先，嗱 咁我而家 我盡量做快啲呀，即係唔希望噸到 噸大家嘅時間嘅，咁我喺呢個醃料之前呢 咁我呢 就要係呢一次呢 我一定要用電子磅啦，因為點解呢 因為呢 雞嘅雞骨呢 係有重量㗎嘛，跟住然之後呢 嗰個係呢個係 即係。</p></a>
+				<a href="#00:06:41.05" id="00:06:41.05" class="lt" onclick="jumptoTime(401, this.id)"><p>豬仔骨呢 佢個骨嘅比重都比較大嘅，咁所以我一定要好準確地量度呀 如果唔係就會過限㗎啦，咁呀首先 電子磅啦 開咗佢之後，跟住然之後 嗱 我呢個呢 個面頭呢個係有重量嘅 所以我歸咗零先，咁呀應該電子磅我估計呢 大家都會識用嘅，嗱咁然之後 我掟上去啦 歸咗零之後，加兩隻雞腿。</p></a>
+				<a href="#00:07:12.05" id="00:07:12.05" class="lt" onclick="jumptoTime(432, this.id)"><p>總重量呢就係1200克咁呢 1200克即係剛剛2斤呀，即係所有嘅材料 咁呢因為雞腿呢係有雞骨嘅 個比重都好大嘅，咁所以我呢 會用電子磅呀 同埋電子磅呢，就係用電子磅 同埋電子磅呢 同埋雞腿呢，同埋豬仔骨呢 個比重呢 有骨呢個比重都好大嘅，所以呢 我而家實際量到嘅重量就係1200克，但係我會按照600克 即係兩斤變一斤嘅重量去調味嘅。</p></a>
+				<a href="#00:07:43.38" id="00:07:43.38" class="lt" onclick="jumptoTime(463, this.id)"><p>ok 得唔得 呢個好重要呀，如果大家係做唔到呢個咁嘅動作嘅話呢，咁我好相信呢 大家整出嚟嘅排骨呢 就會好鹹嘅，ok 好啦 咁呢 我做完呢個之後我就開始處理啦，大家等我一陣先 我擺返好啲嘢先，好 咁再過一轉水啦 洗一洗佢啦，好啦 咁我喺洗嘅過程當中呢 我就開始調味啦喎，開始整呢個係醃料喇喎 ok。</p></a>
+				<a href="#00:08:23.98" id="00:08:23.98" class="lt" onclick="jumptoTime(503, this.id)"><p>咁呢啲呢 全部嘅過程呢 都會係同時間進行嘅 ok，咁我而家 即係講下講下 我都已經用咗成8分鐘啦，咁所以我要快啲呀 如果唔係等陣間又撈撈下嘢就要停機呀，hade，signing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:56.97" id="00:08:56.97" class="lt" onclick="jumptoTime(536, this.id)"><p>яют，kidney</p></a>
+				<a href="#00:08:55.19" id="00:08:55.19" class="lt" onclick="jumptoTime(535, this.id)"><p>sec chances，bling，früher</p></a>
+				<a href="#00:08:52.35" id="00:08:52.35" class="lt" onclick="jumptoTime(532, this.id)"><p>Lond，photo，tower，ming，kach</p></a>
+				<a href="#00:08:54.05" id="00:08:54.05" class="lt" onclick="jumptoTime(534, this.id)"><p>nosso，PRI Pret，gearbox</p></a>
+				<a href="#00:08:55.17" id="00:08:55.17" class="lt" onclick="jumptoTime(535, this.id)"><p>algun recre，wiel，Shophaft</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:57.43" id="00:08:57.43" class="lt" onclick="jumptoTime(537, this.id)"><p>WAY equations，outing，大家看到我經常用單手去剝蒜頭，如果蒜頭黏著硬的位置就切一切，如果沒有黏硬的位置就不用切，大家看看我單手剝蒜頭都很快，其實這些都是工多藝熟，有時會用刀幫忙，因為我個人很懶，我不想用刀的右手碰到食材，不然會黏黏的，反而不利用刀的手勢，水分差不多了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:4.27" id="00:10:4.27" class="lt" onclick="jumptoTime(604, this.id)"><p>關掉水分，只要留下活水，切蒜蓉前切片，切得越薄，蒜蓉切得越好，因為用來醃肉，所以不太介意，隨便用刀，順手就可以了，然後用手壓，不是剁，蒜頭不會四處彈，起碼不會彈到四處都是，這樣可以乾淨一點，然後一邊壓，一邊剁，這樣剁蒜頭才不乾淨，最後就可以剁了，大家可以學我這個方法，蒜頭可以剁得很幼，同時又可以剁得很細。</p></a>
+				<a href="#00:11:12.27" id="00:11:12.27" class="lt" onclick="jumptoTime(672, this.id)"><p>然後就蓬鬆頭，因為現在只有一斤兩斤，所以紅蔥頭不需要放太多，兩粒就夠了，咁呀都真係唔好意思啦咁呀希望嗰啲口人，手下留情呀咁咪大家都知道嘅，我係一刀不剪一剔直落咁嘅盡量呢就畀大家睇到好多細節，唔鍾意睇我咩衝㗎呢咁就可以，Skip咗佢啦ok或者學至今日有個觀眾話真係，可以快進呀。</p></a>
+				<a href="#00:12:23.71" id="00:12:23.71" class="lt" onclick="jumptoTime(743, this.id)"><p>但係呢快進我都會睇曬所有嘅步驟呢變咗呢，我起碼我明白到個過程呀嘛，有個觀眾就咁講啦，咁呀，紅蔥頭呢就約略切碎佢就得㗎啦盡量即係切到佢，幼少少啦細粒少少啦咁就ok㗎啦就唔使剁碎佢㗎ok，大家見到我都會習一習因為咁樣可以確保佢呢就相對細粒呀，其實呢啲大嘅紅蔥頭呢，一粒都夠曬。</p></a>
+				<a href="#00:13:2.61" id="00:13:2.61" class="lt" onclick="jumptoTime(782, this.id)"><p>留返佢，呢個時候呢，我哋就開始，落調味料囉喎，收返埋把刀先呀，咁我先頭都講咗啦，呢個係，當佢一斤計啦，咁呢就三分二，燈炎呀點解因為我有嗰啲，即係南乳嗰啲鹹㗎嘛，糖可以落多少少呀落兩更，跟住然之後呢生粉，落兩更啦，先頭呢我就講漏咗嘅咁我梗係要落少少食粉啦即係呢個，Baking soda啦ok，咁呢就落幾多呢我當佢一斤計呢。</p></a>
+				<a href="#00:13:57.15" id="00:13:57.15" class="lt" onclick="jumptoTime(837, this.id)"><p>三分一茶匙啦ok，夠㗎啦唔使多，即係梳打粉呢，不過呢，我亦都好多次都提醒我大家唔可以落多呀，多嘅話呢就會變咗呢，你有機會呢就係蓋過咗啲肉味嘅，跟完之後差唔多喇喎，鹽糖跟住味啦，鹽糖味啦，咁呀雞粉，一茶匙啦，胡椒一茶匙，生抽兩茶匙，老抽半茶匙，可以不加，但這樣會深色一點，肉看上去不會太乾，可以再加多一點。</p></a>
+				<a href="#00:15:6.55" id="00:15:6.55" class="lt" onclick="jumptoTime(906, this.id)"><p>然後加廣東燒臘，必備的寶貝是甚麼?</p></a>
+				<a href="#00:15:14.55" id="00:15:14.55" class="lt" onclick="jumptoTime(914, this.id)"><p>乾海鱉的口感，大概放一茶匙到一茶匙半，有了這個回櫃露酒之後，這個叉燒的靈魂就出來了，然後就開始放醬了，首先就放南乳，這個南乳就一斤，三分一磚，小南乳來計算，因為我們只有一斤，其實很少，三分一茶匙，不是不是，三分一磚，然後就放海鮮醬，落兩茶匙，跟住面磨豉醬，落一茶匙，大家睇到係咪好鹹呀呢啲，係呀所以唔好落咁多鹽。</p></a>
+				<a href="#00:16:27.71" id="00:16:27.71" class="lt" onclick="jumptoTime(987, this.id)"><p>記住，跟住之後上佢，更加惹味嘅嘩呢一個咁嘅沙茶醬，梗係一定要畀啦，沙茶醬少少得㗎啦，大概三分一茶匙到呢個半茶匙之間，即係唔使畀多嘅你一畀多呢佢嗰個沙茶醬嘅味道就蓋過咗佢叉燒嘅味道㗎啦，大家明唔明白，Ok嗱咁好喇喎落齊哂囉，所有醬料落齊哂囉係咪好多呀梗係多啦，好嗱呢個時候呢落大概呢就係，50到100ml水點解呀。</p></a>
+				<a href="#00:17:7.71" id="00:17:7.71" class="lt" onclick="jumptoTime(1027, this.id)"><p>我嚟開醬嘅咁同埋等陣間撈呀撈下呢佢就會係即係佢就會係咩㗎啦，吸曬啲水嘅嗰啲肉ok，水唔使多可以開到啲醬得㗎啦咁先係揸好曬啲醬，嘩叉燒味出曬嚟啦喂，咁呢個叉燒醬就開好喇，好嗱呢個時候呢我哋就開始要，要去處理囉喎嗱咁呢啲豬仔肉呢其實呢除咗係佢表面嗰啲肥膏之外呢基本上唔使點處理嘅，咁我哋呢就要。</p></a>
+				<a href="#00:17:49.71" id="00:17:49.71" class="lt" onclick="jumptoTime(1069, this.id)"><p>24680，咁呀開佢三份啦點解要開佢三份呢因為呢咁樣呢就可以係即係燒食嘅時候容易啲啦燒嘅時候亦都容易啲啦ok，好跟住之後呢個精彩過程嚟啦開雞髀大家記唔記得我點開雞髀㗎大家睇清楚呀咁開雞髀之前呢我就要係磨一磨刀先，因為要夠利呀本身呢其實雞髀呢就有正式嘅叫有一把叫雞髀刀嘅就開雞髀嘅ok咁但係我哋屋企呢家住嚟講呢未必有啲咁專業嘅用具嘅時候呢其實呢磨你把刀嘅前面嗰個尖呢都可以解決一定程度上解決呢個問題呀，好。</p></a>
+				<a href="#00:18:59.35" id="00:18:59.35" class="lt" onclick="jumptoTime(1139, this.id)"><p>先摸骨，摸到骨的位置，然後沿著骨的位置，千萬不要開到尾，要留一點骨黏著肉，沿著骨的位置，然後慢慢開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:49.35" id="00:19:49.35" class="lt" onclick="jumptoTime(1189, this.id)"><p>這樣才會有骨黏著肉的感覺，然後慢慢切，一刀一刀地切下去，大家看到，雞腿切好了就是這樣，很多時候大家在外面買的雞腿很大隻，就是因為這樣，原本我未切開的時候，雞腿大概是這樣的，我切開之後，一攤開它，又是至少大了三分一，為甚麼要這樣做呢，因為這樣可以令雞腿肉沒那麼厚，可以快點熟，我再來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:29.99" id="00:20:29.99" class="lt" onclick="jumptoTime(1229, this.id)"><p>先關掉水，摸骨，首先沿著骨先劏一刀，然後沿著骨繼續切下去，但千萬不要切到最深，沿著下腿的位置再劏一刀，然後沿著骨，我們可以將雞腿，雞腿肉切開一半，令它沒那麼厚，一邊開好了，然後到第二邊，如果大家擔心拿大刀不安全，或者不袖手，大家可以去家品店或專業刀具店買一把雞腿刀的小刀，雞腿開好了，攤開是這樣的。</p></a>
+				<a href="#00:21:34.93" id="00:21:34.93" class="lt" onclick="jumptoTime(1294, this.id)"><p>這個位置比較厚，我再切多一刀，為什麼我會知道厚呢?因為我先有摸了它，雞腿開好了是這樣的，原本未開好時就這麼大，開好了，我攤開它，雞腿就很大了，給大家看看，燒出來就很漂亮，這個時候就完成了，先清潔砧板，看看用了多久，剩下七分鐘，沒辦法，我唯有先關機再開機，不然會跳掣，大家等等。</p></a>
+				<a href="#00:22:23.93" id="00:22:23.93" class="lt" onclick="jumptoTime(1343, this.id)"><p>我現在再開機，給大家看看怎樣拌，我帶了手套，這次要左右手，拌這些因為它多骨，我一定要左右手，筷子是做不到的，好，然後拌勻，大家看到的，我現在的顏色不是很深，因為我現在有這麼多骨，所以我們需要像做按摩一樣，讓肌肉做到收縮的動作，我都會強調，不時要把肉和雞肉都吸收水份，但唯獨是燒臘，例如叉燒、雞腿等。</p></a>
+				<a href="#00:23:29.38" id="00:23:29.38" class="lt" onclick="jumptoTime(1409, this.id)"><p>我們就不用把水份都吸收，因為我們可以在燒之前把水份都抹乾，只要有足夠的調味就OK，和一般煎的時候的肉的感覺是很不一樣的，在攪拌的過程中，要和肉做按摩，為甚麼呢?</p></a>
+				<a href="#00:23:58.38" id="00:23:58.38" class="lt" onclick="jumptoTime(1438, this.id)"><p>可以令到肉產生收縮和彈開的動作，這樣就可以令到肉吸收更多味道，要有翻起的動作，雖然說它多骨多肉，但大家看看它的質感變化，其實它也是在吸水，就會越撈越少水，但是再說一次，燒臘我們醃的過程當中，我們是不需要它完全吸乾水的，按摩一下，讓味道更快入味，大家可以看一下，大家看到嗎?</p></a>
+				<a href="#00:25:33.95" id="00:25:33.95" class="lt" onclick="jumptoTime(1533, this.id)"><p>現在相對都是深色的，因為我加了老抽，還有大家有沒有看到，我加了很多南乳汁，南乳汁我們一定要的，為什麼呢?</p></a>
+				<a href="#00:25:53.95" id="00:25:53.95" class="lt" onclick="jumptoTime(1553, this.id)"><p>因為它裡面有一種紅曲素，紅曲素是什麼呢?</p></a>
+				<a href="#00:26:0.95" id="00:26:0.95" class="lt" onclick="jumptoTime(1560, this.id)"><p>就是一種叫做紅曲米，紅曲米就是南乳色素的來源，如果大家說我不想做叉燒，我不想用花紅粉這些工業用的食用色素，那我可以用什麼呢?</p></a>
+				<a href="#00:26:20.95" id="00:26:20.95" class="lt" onclick="jumptoTime(1580, this.id)"><p>大家可以去糧油店買一些紅曲米，回來就煮水，煮大概十幾二十分鐘，等它出了顏色，然後拿水來，就當現在這樣水加進去，這樣大家就可以令到叉燒，或者燒臘就很紅，如果好像我們家廚，哪裡得來的，特意去買的時候忘記了，那怎麼辦呢?</p></a>
+				<a href="#00:26:48.95" id="00:26:48.95" class="lt" onclick="jumptoTime(1608, this.id)"><p>就加那個南乳的汁，它本身就有紅曲素的，那等一下我浸蜜糖，是可以增加它的紅潤色素的，然後我加酒，也可以增加它的紅潤色素，大家等一下看一下，我第一次燒的時候是不紅的，但是浸完蜜糖之後再回爐，嘩!當場整個好像真叉燒那樣紅色的，而我這個紅色呢，紅得來是啞色的，就好像外面燒臘那些，但是又不會很紅紅到很假的。</p></a>
+				<a href="#00:27:25.95" id="00:27:25.95" class="lt" onclick="jumptoTime(1645, this.id)"><p>OK?</p></a>
+				<a href="#00:27:26.95" id="00:27:26.95" class="lt" onclick="jumptoTime(1646, this.id)"><p>那等一下大家看一下，就是說要令到叉燒或者燒排骨紅，其實是很自然的，不需要特意去加紅曲素的，OK?</p></a>
+				<a href="#00:27:41.95" id="00:27:41.95" class="lt" onclick="jumptoTime(1661, this.id)"><p>這個純粹是用蜜糖是做不到這個效果的，要浸蜜糖才做到，好，現在這些水已經是吸了至少三分二的了，差不多可以了，那我就，因為雞腿呢，因為雞腿比較薄，比較吸味，所以我就把它放在上面，這個時候就完成了，拌勻後放入雪櫃大約一個小時，一個小時後就可以用了，我先洗手，再拍個近鏡給大家看，我拌勻成怎樣。</p></a>
+				<a href="#00:28:17.25" id="00:28:17.25" class="lt" onclick="jumptoTime(1697, this.id)"><p>記住我現在這個方式，已經是用專業燒臘檔的技巧，可以嗎?</p></a>
+				<a href="#00:28:27.21" id="00:28:27.21" class="lt" onclick="jumptoTime(1707, this.id)"><p>拌勻後，我先前已經加了水，現在已經差不多了，但是燒臘或者燒食的時候，那個醃法吸水的程度，跟我們煎的時候是不一樣的，所以我們可以放鬆一點標準，就不一定要吸水，但都要吸水的，大家看到我先前加水的時候還是水汪汪，但現在拌勻到最後其實都差不多了，所以不用介意水流出來，這個不重要的，因為等下燒的時候，水份就會自然蒸發。</p></a>
+				<a href="#00:29:2.21" id="00:29:2.21" class="lt" onclick="jumptoTime(1742, this.id)"><p>跟煎的不一樣，可以嗎?</p></a>
+				<a href="#00:29:5.21" id="00:29:5.21" class="lt" onclick="jumptoTime(1745, this.id)"><p>這裡已經花了三十多分鐘，我希望這條片不會超過一個小時，等下見，等下整爐的時候，燒的時候，跟大家再分享，大家看到我先前已經燒了豬仔骨，應該大家也看過這條片，覺得效果如何，接下來我們就燒雞腿，一樣是用燒臘檔的方法去燒，首先我們已經熱了，先把爐熱好，因為先前燒過豬仔骨，所以我就不去清理它了，然後我們首先。</p></a>
+				<a href="#00:30:4.21" id="00:30:4.21" class="lt" onclick="jumptoTime(1804, this.id)"><p>把雞腿鋪平，雞腿皮向上，雞腿肉向下，好了，哇!很香!蒜蓉的味道都掉進去了，然後我們就，等一下，那個爐很熱，所以我要，好，然後第一個，第一個時間，就是第一爐</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:52.95" id="00:30:52.95" class="lt" onclick="jumptoTime(1852, this.id)"><p>20分鐘，這個20分鐘就是用最高火，OK，不好意思，因為地方真的很窄，首先我介紹一下，燒雞腿都是一樣的，調到最高溫度，然後上下排火，開風扇，這個恆溫，然後時間，第一爐就是20分鐘，然後用最高火，20分鐘，OK，然後20分鐘之後，我們就開始一樣，就浸蜜糖，不過，雞腿就有另一種燒法，就是時間上是差一點點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:33.43" id="00:31:33.43" class="lt" onclick="jumptoTime(1893, this.id)"><p>等一下大家看一下，怎樣燒法，怎樣改法，其實都是差不多的，大家如果是，這個燒叉燒，燒過叉燒了，也都燒過燒肉了，也都跟著我的方法燒過豬仔骨了，其實大家燒雞腿就不難的，只是有稍微少許的改變，好，等一下時間到了，我們就看一下效果如何，好了，大家，就第一個20分鐘，響了，那我現在就先拿它出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:32:12.07" id="00:32:12.07" class="lt" onclick="jumptoTime(1932, this.id)"><p>哇，我現在繼續用爐燒著，因為要保持溫度，我現在進行第二步，上蜜糖，待會我上蜜糖再給大家看，我現在上蜜糖，這些蜜糖我已經煮過，大家看到了，會比較深色，這個時候我們一樣，因為先前煮過的關係，蜜糖越來越少，所以這個時候雞腿就不需要煮著，好像普通上蜜糖一樣，大家看到我和豬仔骨一起攪拌，大家看到第一水是不會很上色。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:28.72" id="00:33:28.72" class="lt" onclick="jumptoTime(2008, this.id)"><p>要第二水才會上色，即是第二爐，翻爐，這個雞腿上完蜜糖，為何我要整隻雞腿放在蜜糖上蜜糖呢?</p></a>
+				<a href="#00:33:48.72" id="00:33:48.72" class="lt" onclick="jumptoTime(2028, this.id)"><p>原因是這樣蜜糖才會上得最好，之前有觀眾問我，燒叉燒時要不要撥走蒜蓉?</p></a>
+				<a href="#00:34:7.72" id="00:34:7.72" class="lt" onclick="jumptoTime(2047, this.id)"><p>不用的，因為蒜蓉會自己掉落，所以大家會看到，蜜糖是專業燒臘檔的麻辣燒，麻辣燒是越做越好味，因為蒜蓉會掉落，但蒜蓉已經脫水，所以蒜蓉不會變，大家可以放心，fluct scar，esi，damage，eyebrow，vapor，兩隻雞腿都上完蜜糖喇喎大家睇下喇呢個時候呢啲色都仲係好似，豉油雞腿咁嘅色呀嘛。</p></a>
+				<a href="#00:34:59.74" id="00:34:59.74" class="lt" onclick="jumptoTime(2099, this.id)"><p>但間呢再燒呢，佢就會唔同色㗎喇ok，好啦跟住之後我就回路第一次喇喎大家睇下喇喎，唔記得開機呀，咁呢，就而家就放返放返佢落去啦咁呀已經係較咗時間㗎喇就係15分鐘，大家要留意，我呢就將嗰個爐呢，就教返佢落去220度，左近，Ok即係較低少少溫點解要咁做呢，主要個原因呢就係因為呢雞皮呢會更加容易窿嘅，咁所以呢我哋要小心啲處理。</p></a>
+				<a href="#00:35:38.66" id="00:35:38.66" class="lt" onclick="jumptoTime(2138, this.id)"><p>呢個時候呢我就教返低少少溫度低少少得㗎喇，ok今日15分鐘，咁呢15分鐘之後我哋再睇下開機睇下個效果如何喇喎，咁其實呢，燒雞髀呢就同超叉燒都係差唔多嘅，唯一要注意嘅呢就係個溫度嘅差距ok，等間我哋，呢個15分鐘之後再，睇下個結果如何呀，咁呢而家都有鐘兩啦15分鐘呀，咁我哋睇下個結果如何先呀。</p></a>
+				<a href="#00:36:19.76" id="00:36:19.76" class="lt" onclick="jumptoTime(2179, this.id)"><p>기다�rique Wald refine，Tails</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:36:24.86" id="00:36:24.86" class="lt" onclick="jumptoTime(2184, this.id)"><p>� maravil Duo，іл，Rib Entertainнос</p></a>
+				<a href="#00:36:24.70" id="00:36:24.70" class="lt" onclick="jumptoTime(2184, this.id)"><p>érience，Hel Dir，athlon</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:36:24.48" id="00:36:24.48" class="lt" onclick="jumptoTime(2184, this.id)"><p>deven，��니</p></a>
+				<a href="#00:36:22.70" id="00:36:22.70" class="lt" onclick="jumptoTime(2182, this.id)"><p>tumb abs，еро，angular</p></a>
+				<a href="#00:36:25.76" id="00:36:25.76" class="lt" onclick="jumptoTime(2185, this.id)"><p>bullet，embarrassed automatic，Events，gelatin，嘩!燒得好靚喎!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:36:35.21" id="00:36:35.21" class="lt" onclick="jumptoTime(2195, this.id)"><p>跟住我再回爐，我而家再上多次蜜糖，跟住回爐，俾大家睇下，呢個咁樣又係因為白平衡問題，睇唔到紅色嘅，OK?好!等陣間我上蜜糖再俾大家睇下，好啦!咁而家呢，呢個白平衡就好少少嘅，咁大家睇下啦，咁就冇係燒臘檔嗰個咁紅嘅，因為始終我冇上過色素落去呀，咁同埋用焗爐去燒佢嘅話呢，係同呢個燒臘檔佢會有少少分別。</p></a>
+				<a href="#00:37:23.21" id="00:37:23.21" class="lt" onclick="jumptoTime(2243, this.id)"><p>個分別係邊度呢?</p></a>
+				<a href="#00:37:25.21" id="00:37:25.21" class="lt" onclick="jumptoTime(2245, this.id)"><p>就係因為燒臘檔佢係一串串咁調住嚟燒嘅，咁變咗呢，佢燒起上身呢，佢嗰個上色就更加均勻嘅，OK?咁而家呢，我就將呢個蜜糖再上一上啦，咁基本上嚟到呢個呢下moment呢，啲雞腿呢就已經係全熟㗎啦OK?</p></a>
+				<a href="#00:37:54.21" id="00:37:54.21" class="lt" onclick="jumptoTime(2274, this.id)"><p>咁跟住然之後我哋再回爐呢，我哋只要係燒到佢嗰啲雞皮脆，即係相對地呀，咁呀窿啲OK?咁呢就已經足夠㗎啦，咁我唔小心呢，整爛咗個雞皮呀，咁呢樣嘢呢，大家要注意一下，好啦，咁大家會發覺，嘩Leo你落咁多蜜糖，會唔會甜嗰頭㗎?</p></a>
+				<a href="#00:38:28.21" id="00:38:28.21" class="lt" onclick="jumptoTime(2308, this.id)"><p>我再講一次，麻辣糖呢個甜度呢，係唔同蜜糖嘅，佢低好多嘅，所以呢，大家可以放心下，係唔會好甜嘅OK?</p></a>
+				<a href="#00:38:38.21" id="00:38:38.21" class="lt" onclick="jumptoTime(2318, this.id)"><p>好啦，咁呢個時候呢，我又將佢呢，就擺返落去啦，咁呢次呢，就最後尾一次就上爐啦，回爐啦OK?</p></a>
+				<a href="#00:38:52.21" id="00:38:52.21" class="lt" onclick="jumptoTime(2332, this.id)"><p>咁上完蜜糖之後呢，就咁佢色嘅，咁呢呢個呢佢同叉燒呢就爭少少嘅冇叉燒咁紅嘅ok，好咁呀最後一次回路，再開機同大家分享，好啦咁呢準備呢次就著一次回路呀，咁呢我哋呢就先將個火數呢就較到佢最大，就去到呢即係有240 240啦230 230啦ok，咁樣點解呢呢個時候呢我哋要整到佢啲皮相對地係脆啲嘅，OK。</p></a>
+				<a href="#00:39:35.49" id="00:39:35.49" class="lt" onclick="jumptoTime(2375, this.id)"><p>ants cosmic</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:39:39.97" id="00:39:39.97" class="lt" onclick="jumptoTime(2379, this.id)"><p>third，rose，모두，toler，vos，circus</p></a>
+				<a href="#00:39:40.67" id="00:39:40.67" class="lt" onclick="jumptoTime(2380, this.id)"><p>мар，Alo ub</p></a>
+				<a href="#00:39:38.55" id="00:39:38.55" class="lt" onclick="jumptoTime(2378, this.id)"><p>ANK，playing</p></a>
+				<a href="#00:39:40.99" id="00:39:40.99" class="lt" onclick="jumptoTime(2380, this.id)"><p>self，ING，放入雞腿，然後開始計時，這個時候是多少分鐘呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:39:50.14" id="00:39:50.14" class="lt" onclick="jumptoTime(2390, this.id)"><p>我先前都說過，雞腿已經熟了，所以我們要的是10分鐘，最大火10分鐘，好，等著看看10分鐘的結果如何，要抹乾淨周圍，因為蜜糖滴到周圍，等一會再開機和大家分享，好了，最後響鐘，大家都看到，雞腿和燒排骨不一樣，你看，燒到好像炸雞腿一樣，我就是想要這個效果，給大家看看，大家看到嗎?</p></a>
+				<a href="#00:40:42.14" id="00:40:42.14" class="lt" onclick="jumptoTime(2442, this.id)"><p>好像炸雞腿一樣的效果，外皮是脆的，如果大家不喜歡，就不要調大火，最後10分鐘還是220度左右，接著我會灒些蔥油，然後斬好雞腿，我再和大家總結，大家辛苦了一輪之後，終於要放涼才可以斬，但也不算斬得好，希望大家不要見怪，因為始終是家廚，不過我知道，做得不好，就不可以用家廚去掩飾，大家看到我這個比較焦。</p></a>
+				<a href="#00:41:41.14" id="00:41:41.14" class="lt" onclick="jumptoTime(2501, this.id)"><p>有沒有似曾相識的感覺，像不像燒鵝一樣，對呀，我就是喜歡這種香脆感，大家看到，我摸上去是脆的，當然沒有原隻燒鵝，因為它吹過氣，所以外皮就更加漂亮，而且因為我沒有吹過氣，myth shirt explosives，akra，knocked，佢呢啲位呢就淺色啲嘅ok即係呢個位唔受火呀，咁呢。</p></a>
+				<a href="#00:42:17.64" id="00:42:17.64" class="lt" onclick="jumptoTime(2537, this.id)"><p>但係呢，呢一個我自己覺得呀，因為我就平時都係咁整嘅咁呢就係好食過燒臘檔賣嗰啲燒雞，畀嘅因為佢哋嗰啲呢就雖然有味個顏色好睇，但係呢佢係唔夠香口嘅，咁所以呢，我就萌生咗呢我係自己整講真我好少喺出面，即係間唔中會買啦，就買咗出面嘅，燒雞髀呀燒雞翼返嚟食嘅咁佢哋都係好味嘅，咁但係呢佢喺皮嗰方面呢嗰個脆口感呢就。</p></a>
+				<a href="#00:42:53.48" id="00:42:53.48" class="lt" onclick="jumptoTime(2573, this.id)"><p>唔符合我要求，咁我而家呢我整呢個呢就整到好似係，叉燒咁啦因為大家都見到啦先頭我同叉燒一路咁樣，去，即係一路係咁一齊係咁嘢㗎嘛ok，咁所以呢，先至會係有呢個咁嘅效果啦咁咪大家會話，你有冇搞錯呀我唔鍾意食咁窿喎咁有咩辦法呢大家都見到嘅我臨尾係咪，用呢個250度火要燒佢十分鐘係咪呀，咁呢大家如果唔想。</p></a>
+				<a href="#00:43:27.00" id="00:43:27.00" class="lt" onclick="jumptoTime(2606, this.id)"><p>咁窿嘅話呢，咁咪可以呢，係將佢降到去200度火度，Ok即係最後嗰十分鐘呀，咁呢，佢就，唔會，係咁窿㗎啦，咁但係呢，相對地當然係冇咁脆口啦呢個有有有缺窄嘅ok，咁呀我最鍾意嘅食法呢就係嗰個，燒雞腿呢，我例牌嘅，譬如話即係以前啦去做嘢啦咁我，食到冇嘢好食咁就食燒雞腿飯啦，我一定叫佢加蔥油，Ok咁當然。</p></a>
+				<a href="#00:43:59.76" id="00:43:59.76" class="lt" onclick="jumptoTime(2639, this.id)"><p>如果呢個燒雞腿飯燒雞腿再加埋呢個鹹蛋加埋呢個係叉燒，加埋呢個，老紅腸，咁咪變成四寶飯㗎喇，係喎，又得㗎喎咁當然屋企呢就唔需要講整到整到咁犀利嘅，我可以同大家講單單淨係呢一隻燒雞腿加呢個蔥油，絕對已經係送飯神器嚟㗎喇大家同唔同意，最多唔同意就係呢度我唔想咁窿，咁喺燒嘅最後階段嗰十分鐘呢就唔好用240度火或者230度火，降到落去200度火度燒十分鐘。</p></a>
+				<a href="#00:44:40.78" id="00:44:40.78" class="lt" onclick="jumptoTime(2680, this.id)"><p>這樣就沒那麼焦了，為什麼我用這麼高火呢?</p></a>
+				<a href="#00:44:45.46" id="00:44:45.46" class="lt" onclick="jumptoTime(2685, this.id)"><p>因為我現在要...</p></a>
+				<a href="#00:44:48.46" id="00:44:48.46" class="lt" onclick="jumptoTime(2688, this.id)"><p>我不知道大家聽不聽到，我把麥克風放上去，讓大家感受一下，不要說我焦了，聽不聽到聲音?</p></a>
+				<a href="#00:45:2.26" id="00:45:2.26" class="lt" onclick="jumptoTime(2702, this.id)"><p>是脆的，OK?</p></a>
+				<a href="#00:45:5.26" id="00:45:5.26" class="lt" onclick="jumptoTime(2705, this.id)"><p>希望大家喜歡，其實醃料跟叉燒是一模一樣的，只不過在燒的過程當中，大家看到時間短了一點，溫度就低了一點，所以我先前也說過，這樣燒和醃的話，雞皮是特別容易焦的，所以大家要注意一下，雖然大家看到賣相是焦了一點，但我就是要這樣的效果，當然，先前也有觀眾說，我不喜歡焦叉燒，我說焦叉燒好吃啊，他說我就是不喜歡。</p></a>
+				<a href="#00:45:46.26" id="00:45:46.26" class="lt" onclick="jumptoTime(2746, this.id)"><p>這樣就是個人選擇的問題，OK?行不行?</p></a>
+				<a href="#00:45:49.26" id="00:45:49.26" class="lt" onclick="jumptoTime(2749, this.id)"><p>好了，不跟大家說那麼多了，希望大家喜歡這個菜，多些新選擇，OK?好不好?</p></a>
+				<a href="#00:45:56.26" id="00:45:56.26" class="lt" onclick="jumptoTime(2756, this.id)"><p>好了，多謝大家收看。</p></a>
+				<a href="#00:45:58.26" id="00:45:58.26" class="lt" onclick="jumptoTime(2758, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

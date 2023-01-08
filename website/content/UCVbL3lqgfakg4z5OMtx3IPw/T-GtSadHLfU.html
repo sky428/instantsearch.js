@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港的味道回憶——馬拉盞炒鬼豆秋葵，香港家常菜吃得多了，來點異地風情吧，先由簡單開始，這道馬來菜式，讓我家小子原來不吃秋葵也大讚好味，其理何在？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'T-GtSadHLfU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港的味道回憶——馬拉盞炒鬼豆秋葵，香港家常菜吃得多了，來點異地風情吧，先由簡單開始，這道馬來菜式，讓我家小子原來不吃秋葵也大讚好味，其理何在？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚我介紹了兩道菜式，現在就介紹第三道菜式。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>我每晚都會有肉有菜，這是軍行飲食。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>今日我會和大家分享一道香港人比較少吃的菜式，據聞是馬來西亞的名菜。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>我看過一些旅遊節目，看到有一個馬來西亞的街頭小菜式，我嘗試做出來，覺得很好吃。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>我兒子不喜歡吃秋葵，但我煮的秋葵他就說，雖然我不是很習慣，但你炒得很好吃，大家看看我怎樣做吧。</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>秋葵大約一厘米，我已經浸了很久，大家不用擔心。</p></a>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>通常我會在炒米時放洗米水，浸15分鐘就可以了，可以解除農藥和表面的污漬。</p></a>
+				<a href="#00:01:29.00" id="00:01:29.00" class="lt" onclick="jumptoTime(89, this.id)"><p>這個菜式很簡單，我本來不想給大家看我怎樣切，但這個有特別的切法。</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>秋葵不用切得太幼，因為秋葵很快熟，所以大約一厘米。</p></a>
+				<a href="#00:02:4.25" id="00:02:4.25" class="lt" onclick="jumptoTime(124, this.id)"><p>跟住呢個豆角，賣相好噁心，本身賣的時候，但呢啲係東南亞種，叫鬼豆，鬼豆唔係成日有得賣，都要睇時節，但係四季豆可以，如果大家鍾意食呢道菜風味，可以用呢個四季豆代替，切的時候斜切，一樣大約1cm，我主要呢，呢啲係好簡單，斬瓜切菜，但我想俾大家睇下我到底點切，有時不同菜式，不同做法，會有不同切法，大家要記住呢個概念。</p></a>
+				<a href="#00:03:4.73" id="00:03:4.73" class="lt" onclick="jumptoTime(184, this.id)"><p>有時切方形，有時切菱形，諸如此類，呢啲都係不同菜式，不同炒法，大家見到，我係咪將豆角同秋葵放埋一齊，因為兩樣野係同質嘅嘢，同性嘅嘢，所以熟嘅時間係差唔多，就可以擺埋一齊炒，咁呢個咁嘅菜式係咪好簡單呢，大家如果鍾意食呢個東南亞菜嘅話，呢個都係一個唔錯嘅選擇，咁馬拉盞到底係乜嘢嚟嘅呢，其實就係加咗鹹魚仔嘅四川豆瓣醬。</p></a>
+				<a href="#00:03:57.93" id="00:03:57.93" class="lt" onclick="jumptoTime(237, this.id)"><p>但係佢哋相對透明啲嘅，一樣豆角就切到斜切，切到係1cm嘅長度，如果大家買唔到呢啲鬼豆呢，咁可以普通豆角代替啦，有白豆角青豆角得嘅，又或者係四季豆都得嘅ok，所以一年四季都食到嘅，我可以話畀你聽大家聽呢個炒鬼豆呢好好，即係馬來西亞炒鬼豆秋葵呢係好好食嘅，少少蒜蓉加埋落去搞掂，就咁簡單啦跟完之後馬拉盞。</p></a>
+				<a href="#00:04:49.81" id="00:04:49.81" class="lt" onclick="jumptoTime(289, this.id)"><p>香港有得賣嘅我唔記得咗我攞畀大家睇下，畀大家睇下咩樣嘅先，馬拉盞呢唔好以為係東南亞嘢香港就冇得賣喎其實係有嘅香港嘅醬油廠係出嘅，大家睇到邊一間啦，係呢一間廠出嘅啫，其他廠就冇出嘅，去超市場就一定有得賣嘅反而去凍肉舖呢就未必有得賣，因為呢好少人諗到到底用馬拉盞炒咩好呀咁樣，咁其實我用馬拉盞呢大家都應該見過四五道菜式㗎啦。</p></a>
+				<a href="#00:05:26.46" id="00:05:26.46" class="lt" onclick="jumptoTime(326, this.id)"><p>ok咁所以呢其實，有時候煮餸啦唔好成日咁悶啦點解我細個一定即係我啲仔女細個嘅，一定會係，即係訓練強迫佢哋食一啲，手仔通常唔敢食嘅嘢或者唔肯食嘅嘢呢，個原因就係當你開咗，胃口即係等於開咗個天眼嘅時候，你就享受世界各國嘅美味就唔使日日都食，肉餅呀食炒菜心呀大家係咪，蒸魚呀。</p></a>
+				<a href="#00:05:54.10" id="00:05:54.10" class="lt" onclick="jumptoTime(354, this.id)"><p>有其他選擇㗎嘛咁啦而家，原來我連馬來西亞菜都識，少少啦，不過呢，我知道呢我啲觀眾呢就有馬來西亞朋友嘅，咁呢，大家唔好見笑呀小弟呢係睇電視睇返嚟隻知道個名，知道材料，大致於我炒出嚟係咪嗰種味道呢唔知㗎真係唔知不過就，我炒出嚟好好食，真嘅我仔唔鍾意食秋葵佢都，食咗幾嚿都覺得好食嘅ok，好唔好好啦咁咪等陣間開鑊再同大家分享下。</p></a>
+				<a href="#00:06:29.44" id="00:06:29.44" class="lt" onclick="jumptoTime(389, this.id)"><p>介紹咗之後呢咁而家呢就燒緊喎咁咪一樣呀背口缺啦，燒到佢見煙啦手等一等都燒咗一陣㗎啦其實</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:42.90" id="00:06:42.90" class="lt" onclick="jumptoTime(402, this.id)"><p>cessors，ligasaki，聽，ché，tenho，Sommer，� проц，shirts，Infinity，大家等等，今日主角是這個，馬拉盞，好了，見煙了，一如以往，當然要用熟油，這是蝦油，今日用蝦油配馬拉盞，我告訴你，一定正，好，煎完後，一見煙就放蒜蓉，想惹味一點，放少許辣椒，好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:30.85" id="00:07:30.85" class="lt" onclick="jumptoTime(450, this.id)"><p>嘩，好香蝦味，通常豆和秋葵會比較乾身，所以可以放幾滴水，幫它濕潤，這樣炒得好靚，好，這時兒炒好了，然後放馬拉盞，馬拉盞放兩茶匙</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:3.31" id="00:08:3.31" class="lt" onclick="jumptoTime(483, this.id)"><p>好，現在放蝦油，蝦油放兩茶匙，哎呀，不好意思，弄到手上有油，好</p></a>
+				<a href="#00:08:20.31" id="00:08:20.31" class="lt" onclick="jumptoTime(500, this.id)"><p>然後，字幕by索兰娅，呢個餸呢其實炒嘅時候呢好快脆嘅就ok，咁本身呢秋葵亦都唔需要太熟，大家見到呢燒烤嘅時候呢我都試過係用，呢個係燒秋葵嘅ok燒秋葵好好食㗎，咁佢又話咬落去黏黏地嘅咁就唔係咁好喎咁樣囉，咁所以佢又唔係咁鍾意食但係好好味我個人覺得好好味我個女都覺得好好味，調味啦開始咁因為呢個份量比較少呀所以約略呢落。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:14.90" id="00:09:14.90" class="lt" onclick="jumptoTime(554, this.id)"><p>半茶匙鹽就好足夠㗎啦少少糖啦都係半茶匙啦，跟住然之後呢雞粉啦，落唔落呀個人啦ok，其實炒秋葵和炒頭角的過程是一樣的，因為它們兩個都是同質的，同質的意思是性質差不多，生熟的過程和程度都是差不多的，所以不需要炒得太熟，只要炒到它轉色就可以了，大家看到嗎?炒豆炒秋葵就是一個好處，沒有水分的。</p></a>
+				<a href="#00:10:23.80" id="00:10:23.80" class="lt" onclick="jumptoTime(623, this.id)"><p>咁就搞掂啦，炒到佢轉色呢咁就差唔多啦咁如果大家呢驚住佢仲唔熟話可以，十零秒OK，等我做個總結啦，這個菜式很簡單，很快捷，今天這個影片有點長，原因是想給大家看看我怎樣切，其他方面，基本上不需要特別技巧，這個剛剛好是餐廳的例牌，所以今天也能炒得精緻，總結一下，首先，不知道大家有沒有吃過齋炒豆角，其實齋炒豆角也很好吃。</p></a>
+				<a href="#00:11:37.10" id="00:11:37.10" class="lt" onclick="jumptoTime(697, this.id)"><p>今天我加多一點變化，豆角加上秋葵，原來可以這樣組合，大家也看到，這是我今晚的第三道菜，大家可以看到，我很強調均衡營養，有肉有菜，有豆腐，所以大家在家製作菜式的時候，希望大家也參考一下這個概念，均衡飲食，我不斷強調，只有這樣，大家才能吸收更多營養，更多的微量元素，今天這個豆角是不是很醜，不是炒完之後，是買回來的時候。</p></a>
+				<a href="#00:12:27.10" id="00:12:27.10" class="lt" onclick="jumptoTime(747, this.id)"><p>這個應該是鬼豆，東南亞馬來西亞叫鬼豆，這個菜式之所以我懂得這樣炒，是因為我看過旅遊節目，馬來西亞的名菜，我看到這麼簡單，我也懂得這樣做，我也可以這樣做，試炒過，很好吃，也很營養，也含有豐富的微量元素，大家可以試試，辣辣的，甜甜的，脆脆的，因為豆角剛剛熟，秋葵也差不多剛剛熟，所以不會過熟。</p></a>
+				<a href="#00:13:10.10" id="00:13:10.10" class="lt" onclick="jumptoTime(790, this.id)"><p>口感方面，比較爽脆，如果炒的時候，大家怕它不夠熟，炒到差不多了，看到它這麼乾身，就灑幾滴水下去，然後蓋鍋蓋十多秒左右，這樣就可以令它全熟，這個菜式很惹味，不要只吃炒菜心，其實街市裡面這麼多的原材料，可以有很多組合，例如這個，大家可能想都沒想過，原來豆角炒秋葵是可以炒的，還要是馬來名菜。</p></a>
+				<a href="#00:13:46.10" id="00:13:46.10" class="lt" onclick="jumptoTime(826, this.id)"><p>是的，簡單直接，大家試試，OK。</p></a>
+				<a href="#00:13:50.10" id="00:13:50.10" class="lt" onclick="jumptoTime(830, this.id)"><p>真的炒完菜就吃飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

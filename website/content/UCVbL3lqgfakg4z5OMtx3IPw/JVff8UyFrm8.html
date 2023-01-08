@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——麵豉蒸排骨，這是一道流行於南番順的家常菜，自然香港也流行一時，只是近年大家好像忘記了這個味道了，其惹味程度可能比豉汁蒸更強，更能勝任送飯神器之職！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'JVff8UyFrm8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——麵豉蒸排骨，這是一道流行於南番順的家常菜，自然香港也流行一時，只是近年大家好像忘記了這個味道了，其惹味程度可能比豉汁蒸更強，更能勝任送飯神器之職！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，又擺到，成枱都係，冇辦法，話說今日我仔突然間返黎食飯，我本來冇打算食煮餸架，街市就關左檔，點算呢?唯有食夠餸，即刻落去超級市場睇下有咩賣啦，今晚我又整三個餸，有啲特別嘅，睇到大家有個，豆腐，呢啲豆腐呢，大家見到係預先包裝架啦，今晚我打算做嘅餸其中一個，豆腐紅燒，紅燒豆腐三文魚頭，都ok架。</p></a>
+				<a href="#00:00:51.24" id="00:00:51.24" class="lt" onclick="jumptoTime(51, this.id)"><p>魚頭買左兩日架啦，擺保鮮架，檢查下，都ok架，都算係新鮮架，點樣買三文魚頭嘅時候呢?</p></a>
+				<a href="#00:01:5.16" id="00:01:5.16" class="lt" onclick="jumptoTime(65, this.id)"><p>通常我地睇呢，一係就百佳有啲急凍嘅三文魚頭啦，我呢個就係前兩日，喺街市度買嘅，咁睇下呢個三文魚頭點樣為之相對地新鮮呢?</p></a>
+				<a href="#00:01:18.16" id="00:01:18.16" class="lt" onclick="jumptoTime(78, this.id)"><p>就睇下佢呢啲顏色呢有冇發白，呢啲點點呢，有冇好清晰嘅，即係呢啲本來黑色嘅呢，就有發白嘅效果，三文魚頭就擺左好耐架啦ok，當然我買左返嚟呢就最好即刻整啦，因為佢即刻解凍就即刻切畀我地架嘛，咁但係如果你話為一時食唔到嘅，擺一兩日係ok嘅，咁都唔會生嘅因為點解呀?我有方法除聲架嘛ok，好唔好?咁介紹完呢個啦。</p></a>
+				<a href="#00:01:54.16" id="00:01:54.16" class="lt" onclick="jumptoTime(114, this.id)"><p>其實呢就今日呢我點解話有個特別呢?</p></a>
+				<a href="#00:01:57.16" id="00:01:57.16" class="lt" onclick="jumptoTime(117, this.id)"><p>就因為今日呢我會整個馬來西亞餸，係乜嘢呢?就係呢個係，呢個馬拉盞炒骨，鬼斗秋葵，吓 咩嚟㗎，馬來西亞居民，馬來西亞當地嘅名菜嚟嘅，鬼斗係乜嘢呢，其實就係豆角，不過佢啲豆角呢，就比較短嘅，好似呢啲咁，同埋呢比較飽滿嘅，OK，咁呢啲豆角咁嘅少少啦，跟住一包秋葵啦咁樣，咁其實呢，呢一shot呢，我最主要要介紹嘅呢。</p></a>
+				<a href="#00:02:30.38" id="00:02:30.38" class="lt" onclick="jumptoTime(150, this.id)"><p>就係乜嘢呢，醃排骨，唉 我咪醃過啦咩，我咪講過啦咩，係呀，不過呢，蒸排骨其實有好多種嘅，咁呀，呢一個shot呢，我就介紹呢個係，另一種醃排骨嘅方法，咁同埋另一種蒸排骨嘅風味呀，就叫乜嘢呢，麵豉醬蒸排骨，嗱 大家呢，蒸排骨食呢，一係就豉汁排骨啦，一係就酸梅排骨啦，係咪呀，有冇聽過，麵豉醬蒸排骨呀，冇呢。</p></a>
+				<a href="#00:03:7.26" id="00:03:7.26" class="lt" onclick="jumptoTime(187, this.id)"><p>或者，就算有，都唔知點整係咪，今日我就同大家分享，呢個，呢一個咁嘅菜式啦，咁我先呢，我就戴手套先，哎呀，啲手套就快已經，已經咩喇喎，用哂喇喎，要賣身喇，為何要戴手套呢?因為我等下要馬上醃，我都說了，今天是臨時臨急煮飯的，因為我沒有預約兒子回來吃飯，自己一碗，跟老婆求鬼奇就算了，這個排骨，既然我沒有預約兒子回來吃飯。</p></a>
+				<a href="#00:03:47.35" id="00:03:47.35" class="lt" onclick="jumptoTime(227, this.id)"><p>我自然就沒有買定，這個排骨我在百佳買的，嘩!好貴，現在的鮮肉真是好貴，如果這裡兩包合起來都不夠一磅，已經買了八十多元了，即是大概四分三左右，即是大概十二安士，即是十兩，這裡只有十兩那麼多，已經是八十多元，你說現在吃肉多貴，如果我去急凍舖買急凍排骨的話，都是二十八元一磅，二十八元跟一百二十元差多遠。</p></a>
+				<a href="#00:04:27.35" id="00:04:27.35" class="lt" onclick="jumptoTime(267, this.id)"><p>大家自己計算一下，四倍就超過了，好了，但是新鮮排骨我喜歡用腩排，其實排骨有分很多種，有一字排，有腩排，有糖排，糖排大家有沒有聽過?</p></a>
+				<a href="#00:04:50.35" id="00:04:50.35" class="lt" onclick="jumptoTime(290, this.id)"><p>我先講一講，我喜歡用一字排，不是一字排，是腩排，也就是所謂的肉排，我喜歡它夠肥，肉夠多，蒸出來是很嫩的，我現在買了一包腩排之外，我還買了一包糖排，糖排是什麼呢?</p></a>
+				<a href="#00:05:19.35" id="00:05:19.35" class="lt" onclick="jumptoTime(319, this.id)"><p>如果大家講一下位置，腩排位於我們現在的胃部，即是人體的胃部，有一半是骨，一半是肉的地方，就叫做腩排，一字排再上一點，我們心臟的位置對上去鎖骨的位置，那些就叫做一字排，什麼叫做糖排呢?</p></a>
+				<a href="#00:05:50.35" id="00:05:50.35" class="lt" onclick="jumptoTime(350, this.id)"><p>糖排就是每一個排骨，接近尾龍骨的部分，就叫做糖排，相對地，最少骨和最軟的一定是腩排，接下來就是一字排，一字排就比較多，但通常大骨的比例也比較高，鞋厚一點，通常一字排用來煲湯就對了，或者用來煮鹹豬骨粥，一字排是最多骨的，因為它接近尾龍骨的位置，所以現在香港人很少人願意用，也很少人懂得用。</p></a>
+				<a href="#00:06:43.35" id="00:06:43.35" class="lt" onclick="jumptoTime(403, this.id)"><p>但我們以前，香港始終是城市，在廣東省內地那些，他們很喜歡用糖排做蒸排骨，為什麼呢?</p></a>
+				<a href="#00:07:1.35" id="00:07:1.35" class="lt" onclick="jumptoTime(421, this.id)"><p>炆排骨就用一字排，紅燒就用腩排，蒸的話，他們很喜歡用糖排，尤其是點心的蒸排骨，我解釋給大家聽為什麼，因為以前窮嘛，多肉的當然買好的地方，如果小肉的糖排，因為很多骨，只吃它的味道，但糖排對於喜歡骨的朋友來說，這個才是上等貨色，肉味濃郁，咬下去的骨水，骨的汁出來，正啊，所以我自己個人，我喜歡腩排混合糖排。</p></a>
+				<a href="#00:07:57.35" id="00:07:57.35" class="lt" onclick="jumptoTime(477, this.id)"><p>一邊是肉嫩滑，另一邊有肉味，豬骨滾骨就正啊，我介紹材料的原本，首先，我現在，80元，以前可以吃三個菜，今天一個菜就搞定了，沒辦法，臨時不急，所以我覺得香港其實都很幸福，夜收工無所謂，去超級市場一定有些東西對，我現在就拿水沖它，我現在打開紗布，大家稍等，這邊我開大水沖，一開始就大水沖，滿了之後就細水，平時如果要浸洗的話就關小水。</p></a>
+				<a href="#00:08:56.48" id="00:08:56.48" class="lt" onclick="jumptoTime(536, this.id)"><p>我現在就先弄些材料，大家等等啊，不好意思，這地方稍為鬱就了一點，也不要嫌我慢，家裡就是這樣，我現在不是做Deadmaul，我是做實戰，OK?</p></a>
+				<a href="#00:09:26.91" id="00:09:26.91" class="lt" onclick="jumptoTime(566, this.id)"><p>因為百佳預先…都說了名字出來，超級市場預先包裝的通常都相對乾淨，所以沖一沖就行了，我現在首先就先刮薑，弄好材料，大家看到我隨便拿一把刀，平時用慣的刀就可以馬上切，即是馬上削薑皮，刮薑皮，我現在就切薑皮，我不知道大家小時候有沒有做過麻的麵豉蒸排骨，其實很好吃，我覺得相對來說，麵豉蒸排骨比豉汁蒸排骨好吃，因為重味，汁又好送飯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:26.91" id="00:10:26.91" class="lt" onclick="jumptoTime(626, this.id)"><p>好，那麽稍微…，我喜歡吃薑，大家看到我放了很多薑，排骨…嘩，這裡不是吧，蒸排骨用這麼多薑，不是的，但是我喜歡吃薑，我說過很多次了，那就切小塊，尤其是麵豉和麻豉蒸過的薑就很好吃，所以大家會看到我吃薑的時候，我做蝦醬的時候，我放了特別多薑，因為經過醬料醃過、蒸過的薑是特別好吃的，送飯的時候，這裡已經可以用這個份量的薑片。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:8.91" id="00:11:8.91" class="lt" onclick="jumptoTime(668, this.id)"><p>送一碗白飯有餘，除了薑片之外，就放幾粒蒜頭，夢zil具，isso，에요</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:25.95" id="00:11:25.95" class="lt" onclick="jumptoTime(685, this.id)"><p>meillä，shirt</p></a>
+				<a href="#00:11:25.25" id="00:11:25.25" class="lt" onclick="jumptoTime(685, this.id)"><p>ve，овой，constitutional，много，Burke，usando，another，sangat，我又想起最近網上很熱的某某子，拍斷了刀，真是搞笑，我不知道用家的力氣有多大，也不知道某某子的質素到哪，不過我走過街市，有時他們擺的專賣檔我不敢買，為甚麼呢?我鬥過很多次他們的刀，我覺得鋼水各樣好像還差一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:2.94" id="00:12:2.94" class="lt" onclick="jumptoTime(722, this.id)"><p>我現在手上這把是陳之記，用了15年，陳之記這把是片刀，3號片刀，本來很大把的，有這麼闊的，然後用著用著，現在縮到這麼多，因為我平時一個星期都會磨一次刀，很多人說要買甚麼好刀，買些名牌子，其實不一定的，但是要保持那把刀的鋒利，其實我們平時要有好習慣一樣，OK，哎呀，我又忘記了，Kingsway，幫我在雪櫃拿保鮮紙包好一包辣椒給我。</p></a>
+				<a href="#00:12:57.66" id="00:12:57.66" class="lt" onclick="jumptoTime(777, this.id)"><p>不好意思，家儲就是這樣，實戰環境，不是像別人這樣排著所有東西排得整整齊齊，然後拍片，全部在鏡頭看，不是的，家裡就是這樣，先說一下，大概是一安士，平時就這樣說了，這些辣椒我買了兩個星期，為了要保持它本身的水份，不要那麼快乾，我就用保鮮紙包著它，可以用很久的，超過一個月放，現在其實有一點乾了，我們喜歡吃辣的。</p></a>
+				<a href="#00:13:44.94" id="00:13:44.94" class="lt" onclick="jumptoTime(824, this.id)"><p>所以辣椒放多一點，這樣包著它，打一個裂，可以保存得比較長時間，好，剛才說了這個是有12安士，所以就三分二匙鹽，糖就一樣，可以多放一點，兩匙，然後呢，生粉，不是生粉，雞粉，少許，是調味的，然後呢，就胡椒碎，好，然後呢，就真的放生粉了，生粉就兩茶匙，然後呢，就放大概一茶匙左右的生抽，然後就放少許蠔油。</p></a>
+				<a href="#00:15:9.02" id="00:15:9.02" class="lt" onclick="jumptoTime(909, this.id)"><p>不用一茶匙，我這裡已經多放了，因為我經常都是這樣，就這樣放下去，好，然後呢，就這樣將排骨浸著，是不是，如果你有經驗，就好像我這樣，直接用手將排骨放下去，因為這個時候，我拌排骨的時候一定會加水，這個動作我就可以偷懶了，少加一點，好，然後呢，我呢，就因為家廚，所以經常都亂來，就是次序會有少許掉轉的。</p></a>
+				<a href="#00:15:58.02" id="00:15:58.02" class="lt" onclick="jumptoTime(958, this.id)"><p>但不要緊，好，然後就放少許麻油，然後呢，我們就要，拿個甜麵豉醬出來，等一等我，這個甜麵豉醬，我放了一點點，亦有部份牌子寫著黃豆醬，但我覺得作為香港人食慣的粵菜，我們只會聽到甜麵豉，很少聽到黃豆醬，黃豆醬是北方的說法，大概兩茶匙，用光了，差不多要賣了，然後想它更加惹味嗎，我們還要加多一樣東西，是甚麼?沙茶醬。</p></a>
+				<a href="#00:17:7.34" id="00:17:7.34" class="lt" onclick="jumptoTime(1027, this.id)"><p>一茶匙，不好意思，還未睡醒，醃料就齊了，齊了嗎?</p></a>
+				<a href="#00:17:21.84" id="00:17:21.84" class="lt" onclick="jumptoTime(1041, this.id)"><p>原來還有一樣東西，要加甚麼?梳打粉，這個梳打粉要很小心，因為多了就會奪走肉味，但放少許就可以幫助鬆肉，我再說一次，鬆肉不是因為它的化學作用，它之所以能夠做到鬆肉，是因為可以幫助肉類吸收更多水份，要加多少呢?</p></a>
+				<a href="#00:17:51.84" id="00:17:51.84" class="lt" onclick="jumptoTime(1071, this.id)"><p>加少許就好了，大概四分一茶匙，不要加太多，如果加多了就像吃洗衣粉，這個時候我們要加水，這裡有12安士，即是大約12度，即是60兩，很難計算，10兩即是375克，我們加水要加多少呢?</p></a>
+				<a href="#00:18:27.84" id="00:18:27.84" class="lt" onclick="jumptoTime(1107, this.id)"><p>加四分一的話就大概加80克左右，90克左右，90cc左右，現在我們看看夠不夠水，夠了，不用加足90cc，因為我剛才這樣拿是有水的，最後要加甚麼呢?</p></a>
+				<a href="#00:18:51.84" id="00:18:51.84" class="lt" onclick="jumptoTime(1131, this.id)"><p>醃排骨當然要有酒，為什麼不加粥呢?</p></a>
+				<a href="#00:18:57.55" id="00:18:57.55" class="lt" onclick="jumptoTime(1137, this.id)"><p>因為有酒、生抽那些都是水來的，OK?</p></a>
+				<a href="#00:19:1.35" id="00:19:1.35" class="lt" onclick="jumptoTime(1141, this.id)"><p>好!</p></a>
+				<a href="#00:19:2.05" id="00:19:2.05" class="lt" onclick="jumptoTime(1142, this.id)"><p>然後我們就切...</p></a>
+				<a href="#00:19:5.25" id="00:19:5.25" class="lt" onclick="jumptoTime(1145, this.id)"><p>即是浸夠了這個辣椒，那麼...</p></a>
+				<a href="#00:19:12.65" id="00:19:12.65" class="lt" onclick="jumptoTime(1152, this.id)"><p>切一些辣椒絲，斜切，OK?</p></a>
+				<a href="#00:19:14.85" id="00:19:14.85" class="lt" onclick="jumptoTime(1154, this.id)"><p>切一切，切一切...</p></a>
+				<a href="#00:19:20.57" id="00:19:20.57" class="lt" onclick="jumptoTime(1160, this.id)"><p>這樣就帶少少辣味，惹味些，先放一把刀，好了，然後我們就開始醃，大家看一下，我一樣的，是不是很多水?</p></a>
+				<a href="#00:19:38.57" id="00:19:38.57" class="lt" onclick="jumptoTime(1178, this.id)"><p>稍後水就不見了，大家在看畫面時，我順便說一下，我經常說的家廚進廚房是一個很好的時間訓練，我先前介紹了有三樣菜式，大家有沒有想到為何我先醃排骨，想不想到?有答案了嗎?</p></a>
+				<a href="#00:20:10.98" id="00:20:10.98" class="lt" onclick="jumptoTime(1210, this.id)"><p>為甚麼?因為排骨醃是需要時間入味的，所以我現在未洗米，未做其他菜的處理程序時，我先醃排骨，醃了排骨後，我可以讓它慢慢入味，大概醃半小時後便可以用，當然，我亦都說過，想它處於最佳口感，即是夠滑夠軟，最好是隔一晚，但我先前說過，我緊急開飯，而買這個排骨，都是在百佳買的，是由百佳，真是百佳是我。</p></a>
+				<a href="#00:20:56.98" id="00:20:56.98" class="lt" onclick="jumptoTime(1256, this.id)"><p>不應該說名字出來，都說了，大家明白嗎?</p></a>
+				<a href="#00:21:2.98" id="00:21:2.98" class="lt" onclick="jumptoTime(1262, this.id)"><p>大家看著質感的變化，是嗎?</p></a>
+				<a href="#00:21:5.98" id="00:21:5.98" class="lt" onclick="jumptoTime(1265, this.id)"><p>大家看到現在水都吸得七七八八，是否很快?</p></a>
+				<a href="#00:21:8.98" id="00:21:8.98" class="lt" onclick="jumptoTime(1268, this.id)"><p>是呀，OK，但大家要記住，無論我們拌肉，炒，蒸或放湯，記住，基本原則是一定要令水完全吸收，水完全吸收，不流出來，便可以再加生粉，蒸的時候，可以保留最多的肉汁，從而令排骨，因為它有肥膏，所以經常黏在一起，我們要將它拔開，因為我先前說過，可以令水吸收，不倒流，當你預熱，表面的生粉會先熟，可以保護肉身最多的水分。</p></a>
+				<a href="#00:22:2.98" id="00:22:2.98" class="lt" onclick="jumptoTime(1322, this.id)"><p>這樣就可以令肉質滑，記住，令肉質滑，是因為像美女一樣，她的肌膚一旦即破，經常說水濕濕的，其實我們煮菜都是一樣，肉之所以要拌，之所以要放水，就是要令它水濕濕的，大家都知道，水濕濕的，肉質自然就會好，膚質就會好，其實和女士化妝，皮膚保養的原理是一模一樣的，其實，是不是一理通白，你明白嗎?</p></a>
+				<a href="#00:22:46.98" id="00:22:46.98" class="lt" onclick="jumptoTime(1366, this.id)"><p>現在已經吸收了水分，沒有水了，但我們依然要拌勻，因為接下來的動作，要防止已經吸收的水倒流，這樣拌勻，為何可以防止水倒流呢?</p></a>
+				<a href="#00:23:7.98" id="00:23:7.98" class="lt" onclick="jumptoTime(1387, this.id)"><p>因為這樣拌勻，就會越來越起膠，生粉和肉的汁液，就會令它表面起膠，表面起膠的話，就可以發揮鎖住肉汁，鎖住水分的功能，這個和女士皮膚保養是一模一樣的，好了，差不多了，然後就放入蜂油，蜂油隨便放就好，不用放太多，除非你有特別用途，拌一拌，讓它繼續吸收肉汁，吸收肉汁，好，攪掂啦，攪完啦，跟住我就去做其他菜嘅準備工作。</p></a>
+				<a href="#00:24:15.44" id="00:24:15.44" class="lt" onclick="jumptoTime(1455, this.id)"><p>咁就由得佢自由發揮呀，醃一醃佢先，ok，得唔得，咁等陣間呢，基本上呢個排骨就攪好㗎啦，咁等陣間蒸嘅時候我先再同大家開機呀，同大家分享，ok，好啦，咁呢，而家水滾啦，咁先頭已經同大家分享咗點樣攪呢個排骨啦，咁而家擺落去蒸啦，ok，蒸排骨呢，就攞隻深少少嘅碟，咁同埋呢，盡量就鋪平佢，唔好畀佢排骨疊排骨呀。</p></a>
+				<a href="#00:24:52.44" id="00:24:52.44" class="lt" onclick="jumptoTime(1492, this.id)"><p>咁樣嘅情況之下呢，我哋就可以更加快去蒸熟佢，咁呀，唔使多時間嘅，大概係二十分鐘到啦，咁呀，計時20分鐘，這樣就可以了，其實蒸排骨很簡單的，蒸好之後，我再跟大家分享一下效果如何，OK，好了，20分鐘過去了，關火了，看看結果，看看質感和顏色的，帥不帥，這個菜就是這麼簡單，最主要是拌的部分，拌的部分，拌得好看的話。</p></a>
+				<a href="#00:25:49.64" id="00:25:49.64" class="lt" onclick="jumptoTime(1549, this.id)"><p>怎樣也不會猜到它是哪一邊的，OK，現在我先放一些蔥去剪綴一下，如果自己吃，就不一定要放蔥，第一，我喜歡吃蔥，放蔥會香很多，第二，要拍一張好看的照片，基本上，蒸排骨很簡單，但是，這個菜式最主要是，跟大家分享，怎樣配搭食材和調味料，我相信，相當大比例的觀眾，如果我不告訴大家，原來這個麵豉可以蒸食材，大家未必會猜到可以這樣做。</p></a>
+				<a href="#00:26:42.64" id="00:26:42.64" class="lt" onclick="jumptoTime(1602, this.id)"><p>因為通常麵豉醬拿來炆雞，譬如這個啫啫雞煲，通常都會用到，譬如炆東西，有時候可以拿來做打醬用，即是打醬汁用，但是蒸就很少人會想到，通常蒸食材，都會想到這個麵豉醬蒸腩片，我相信相當多人都吃過了，但其實變一變食材又可以有其他菜式，我之前有一條片介紹過用來蒸什麼，麵豉醬蒸魚卵，嘩!正到不得了。</p></a>
+				<a href="#00:27:20.51" id="00:27:20.51" class="lt" onclick="jumptoTime(1640, this.id)"><p>大家有沒有跟著做?</p></a>
+				<a href="#00:27:22.51" id="00:27:22.51" class="lt" onclick="jumptoTime(1642, this.id)"><p>如果有的話我告訴你，保證有驚喜，除非你好像我兒子那樣，他不習慣吃這種味道，因為他從小到大都是城市人，他總覺得這些醬料有些怪味，我說其實不是怪味，只是你不習慣，他說撇除了我不習慣的味道，其實很好吃，真的很好吃，而且很適合配飯，OK?行不行?</p></a>
+				<a href="#00:27:44.71" id="00:27:44.71" class="lt" onclick="jumptoTime(1664, this.id)"><p>我重複一下，我剛才醃料的時候都醃得很混亂，不要介意，因為我們這個是真實的環境，我們是實證的環境，而不是在工作室擺得很漂亮，去拍一條片，特意拍一條片跟大家分享，不是這樣，我的宗旨就是，我不開飯我就不會拍片，只有我開飯才會拍片，因為食材是不可以浪費的，我之所以經常都做這麼大份量，是因為我家人要吃飯。</p></a>
+				<a href="#00:28:18.31" id="00:28:18.31" class="lt" onclick="jumptoTime(1698, this.id)"><p>拌的那裡，鹽、糖、味，然後蠔油、生抽、胡椒粉，或者胡椒碎、酒，然後生粉，然後加一點點的梳打粉，記住梳打粉不要加太多，一加太多就變得不好吃，因為我講過很多次，梳打粉其實你直接吃，吃下去好像吃洗衣粉的味道，OK?行不行?</p></a>
+				<a href="#00:28:46.31" id="00:28:46.31" class="lt" onclick="jumptoTime(1726, this.id)"><p>譬如說，很多時候，外面大家吃到的茶餐廳的味道，其實就是因為加了太多的梳打粉，所以梳打粉的味道就蓋過了原有的味道，其中，這個是椒鹽骨，還有是乾炒牛河的牛肉，是最容易出事的，大家同不同意嗎?</p></a>
+				<a href="#00:29:10.91" id="00:29:10.91" class="lt" onclick="jumptoTime(1750, this.id)"><p>不是說他們偷懶，不是說他們技藝不精，而是很多時候不自覺，加多了都不知道，所以這一部分，加梳打粉大家要記住，先前我加了很少而已，如果按照一般的醃肉的方程式的話，是一比一百六十，即是平均每公斤放六克，六克大概是一茶匙半多一點，OK?</p></a>
+				<a href="#00:29:40.51" id="00:29:40.51" class="lt" onclick="jumptoTime(1780, this.id)"><p>但先前你看到，以十兩來計算，我只放四分一茶匙，四分一茶匙左右，要很小心的，你既要加梳打粉，令到它吸收更多水，另外，你又要控制它的份量，不可以超過，令到它喧賓奪主，吃下去一點肉味都沒有，OK?</p></a>
+				<a href="#00:30:8.31" id="00:30:8.31" class="lt" onclick="jumptoTime(1808, this.id)"><p>行不行?</p></a>
+				<a href="#00:30:8.91" id="00:30:8.91" class="lt" onclick="jumptoTime(1808, this.id)"><p>大家記住了，還有今天我用這個新鮮排骨，即醃即撈的，即醃即撈，即煮即食的，前後都不超過一個小時，大家要記住，很多時候，有些食材是可以這樣做的，但都是一樣，如果你真的想要求一個相對極致，即更加好的食味和口感的時候，醃肉其實最好是隔一晚的，行不行?</p></a>
+				<a href="#00:30:37.91" id="00:30:37.91" class="lt" onclick="jumptoTime(1837, this.id)"><p>OK?</p></a>
+				<a href="#00:30:38.51" id="00:30:38.51" class="lt" onclick="jumptoTime(1838, this.id)"><p>但你不要看現在我這個菜，好像很隨便，其實都很滑的，我先試一下，最重要我自己試了，我才知道行不行，formedängen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:55.87" id="00:30:55.87" class="lt" onclick="jumptoTime(1855, this.id)"><p>naz counseling，adle</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:55.75" id="00:30:55.75" class="lt" onclick="jumptoTime(1855, this.id)"><p>receives，damaged，Trump，led suspended</p></a>
+				<a href="#00:30:54.49" id="00:30:54.49" class="lt" onclick="jumptoTime(1854, this.id)"><p>ell，cedes，有一件事，就是，最重要的一件事就是，我先後說排骨的配搭，那，我就很少用一字排的，一字排，其實它相對粗糙很多，用來煲湯，用來炆，用來做鹹豬骨粥就ok，但是，蒸呢，我建議大家一定要用腩排，還要是帶半肥瘦的腩排，為什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:22.43" id="00:31:22.43" class="lt" onclick="jumptoTime(1882, this.id)"><p>因為半肥瘦的肥肉可以提升肉味，更加重的豬肉味，另外，可以令到肉更加滑，為什麼我要混一些糖進去?</p></a>
+				<a href="#00:31:39.43" id="00:31:39.43" class="lt" onclick="jumptoTime(1899, this.id)"><p>糖是因為我喜歡卵骨，變成整體上的配搭，這個蒸排骨，你想卵骨就有骨，你想吃肉就有肉，一家人滿足了，每個人都有不同的要求，大家說是不是?</p></a>
+				<a href="#00:31:56.43" id="00:31:56.43" class="lt" onclick="jumptoTime(1916, this.id)"><p>至於蒸，很簡單，蒸肉永遠都是15分鐘起，20分鐘止，ok，一定熟，但是不要超過20分鐘，不然有機會過腦就粗糙了，ok，行不行?</p></a>
+				<a href="#00:32:10.43" id="00:32:10.43" class="lt" onclick="jumptoTime(1930, this.id)"><p>記住，沒有什麼特別技巧，但是拌的部分，對了，拌的部分，大家特別留意，我經常強調，你想醃肉醃得好吃，想醃得滑溜，記住一定要吸水，讓它不要有水浸著，行不行?</p></a>
+				<a href="#00:32:27.43" id="00:32:27.43" class="lt" onclick="jumptoTime(1947, this.id)"><p>因為有水浸著，我講一個簡單的科學原理，大家就會明白，如果我的菜太多水的時候，大家都知道，我們要放生粉去拌，可以令到它滑，生粉之所以令到它滑，是為什麼?</p></a>
+				<a href="#00:32:42.43" id="00:32:42.43" class="lt" onclick="jumptoTime(1962, this.id)"><p>因為生粉形成了一層保護膜，令到肉蒸的過程中，不會有水滲出來，這樣就可以令到水一直留在肉身，肉身裡面是悶熱地煮熟肉，所以肉就會變嫩，大家明白嗎?</p></a>
+				<a href="#00:33:4.43" id="00:33:4.43" class="lt" onclick="jumptoTime(1984, this.id)"><p>而我放梳打粉的原因，就是要令到它吸得更多水，好，我問大家一個問題，當你無法將所有水都吸收在肉身，而是拌到差不多，還是有水的話，結果會怎樣?</p></a>
+				<a href="#00:33:20.43" id="00:33:20.43" class="lt" onclick="jumptoTime(2000, this.id)"><p>生粉會否稀釋了?</p></a>
+				<a href="#00:33:22.43" id="00:33:22.43" class="lt" onclick="jumptoTime(2002, this.id)"><p>生粉稀釋了的時候，是否更加難凝結?</p></a>
+				<a href="#00:33:26.43" id="00:33:26.43" class="lt" onclick="jumptoTime(2006, this.id)"><p>它更加難凝結的時候，我問大家，它又如何保護肉身，水不會倒流出來?</p></a>
+				<a href="#00:33:33.43" id="00:33:33.43" class="lt" onclick="jumptoTime(2013, this.id)"><p>很多時候，大家經常，不知為何，無論如何都不能拌到爽滑的肉類，肉片、排骨、牛肉，為什麼?</p></a>
+				<a href="#00:33:44.43" id="00:33:44.43" class="lt" onclick="jumptoTime(2024, this.id)"><p>因為煮的過程中，水都流出來了，一流出來，結果會怎樣?</p></a>
+				<a href="#00:33:49.43" id="00:33:49.43" class="lt" onclick="jumptoTime(2029, this.id)"><p>因為水沒有流到肉身裡面，變成肉是直接在後面的高溫，令到它熟，我想問問大家，你想它不粘鍋也不行，但是，如果你能夠拌到沒有水，代表生粉更加容易熟，更加不會脫落的時候，它就有效地保護肉身裡面的水分，留在肉身裡面，然後，因為你持續加熱，在加熱的過程中，水都會升溫，肉裡面的水升溫，會悶熟，不是悶，是悶。</p></a>
+				<a href="#00:34:37.43" id="00:34:37.43" class="lt" onclick="jumptoTime(2077, this.id)"><p>悶熟了那些，即是苦悶過悶，悶熟了那些肉，那些肉因為有多汁，還有溫度的變化，因為有水在裡面，溫度的變化就平穩很多，所以可以令到肉變滑，這是令到肉變滑的科學原理，所以，大家看到我次次強調，人家拌的時候，通常給你幾個鏡頭，這樣拌，那樣拌，加了什麼材料，但是，我一定給大家看整個過程，而且特別次次強調。</p></a>
+				<a href="#00:35:12.43" id="00:35:12.43" class="lt" onclick="jumptoTime(2112, this.id)"><p>看著質感的變化，看著有沒有水滲出來倒流，要拌到最後，一滴水都沒有，這樣就完美了，ok，行不行?</p></a>
+				<a href="#00:35:23.43" id="00:35:23.43" class="lt" onclick="jumptoTime(2123, this.id)"><p>不要嫌我沉氣，我每一次都有這些提醒，希望大家越煮越好，家人越吃越幸福，好嗎?</p></a>
+				<a href="#00:35:33.43" id="00:35:33.43" class="lt" onclick="jumptoTime(2133, this.id)"><p>那就不跟大家說這麼多了。</p></a>
+				<a href="#00:35:35.43" id="00:35:35.43" class="lt" onclick="jumptoTime(2135, this.id)"><p>我煮下一道菜了，拜拜。</p></a>
+</div>
+	</body>
+</html>

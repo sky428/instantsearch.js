@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——手打魚蛋，新年超長影片，目的是記錄香港傳統食物的製作過程，不管有沒有人看，我也要為香港出一分力！但其實製作很簡單調味也很簡單啦，只是需要點時間者，新手也可以成功製作！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZnPl7bqJrh0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——手打魚蛋，新年超長影片，目的是記錄香港傳統食物的製作過程，不管有沒有人看，我也要為香港出一分力！但其實製作很簡單調味也很簡單啦，只是需要點時間者，新手也可以成功製作！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.25" id="00:00:0.25" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，啊不是，下午好，因為現在五點鐘都未夠，為什麼我這麼早就開工呢?煮飯呢?</p></a>
+				<a href="#00:00:11.25" id="00:00:11.25" class="lt" onclick="jumptoTime(11, this.id)"><p>原因就是因為今天我想和大家分享一個香港的傳統，是什麼呢?就是打魚蛋，以前我算是沾過邊，也是一點點水面人，因為以前我跟過人出海去下雨，所以認識了一點點，再加上家母很喜歡打魚蛋，在她身上學到不少東西，所以今天剛好有個壞人約了朋友上來打火鍋，我說，這樣就對了，不如我做個打魚蛋給你們吃，大家都說好啊。</p></a>
+				<a href="#00:01:5.25" id="00:01:5.25" class="lt" onclick="jumptoTime(65, this.id)"><p>所以今天我就準備和大家分享這個打魚蛋，到底是怎樣打魚蛋呢?</p></a>
+				<a href="#00:01:12.25" id="00:01:12.25" class="lt" onclick="jumptoTime(72, this.id)"><p>首先就要介紹一下材料。</p></a>
+				<a href="#00:01:18.25" id="00:01:18.25" class="lt" onclick="jumptoTime(78, this.id)"><p>今天我買了兩種魚，一種是鮫魚，鮫魚，等等，給大家看看，這是鮫魚尾，鮫魚，這裡有三斤多，然後我再買了門鱔，其實香港的魚蛋主要的材料就是門鱔，當然，門鱔比較貴，大家在街上吃到的魚蛋，多數都是雜魚，打魚蛋的魚肉有很多種，主要有門鱔，門鱔一定是主打的，然後就是鮫魚，鮫魚在香港的魚蛋，最多只能買到兩種，市面上大家吃到的魚蛋比較少見。</p></a>
+				<a href="#00:02:23.33" id="00:02:23.33" class="lt" onclick="jumptoTime(143, this.id)"><p>但其實鮫魚是很好打魚蛋，單單是鮫魚都可以直接打魚蛋，不用混合其他雜魚，OK，一般來說，市面上大家吃到的魚蛋，多數是門扇混合九棍，再混合鰻魚，或者是類似鰻魚的魚質，肉質的雜魚，OK，可以嗎?</p></a>
+				<a href="#00:02:52.49" id="00:02:52.49" class="lt" onclick="jumptoTime(172, this.id)"><p>九棍亦是另一種香港常見打魚蛋的材料，為什麼?</p></a>
+				<a href="#00:02:59.57" id="00:02:59.57" class="lt" onclick="jumptoTime(179, this.id)"><p>我不知道大家有沒有吃過九棍，九棍來說有很多骨，而且很腥，多數，如果一般來說吃的話，九棍多數會做成鹹鮮，多數會做成鹹鮮，一般食用，另一個作用就是打魚蛋，主要是因為九棍便宜，九棍現在都只是十多二十元一斤，但現在我講的這條鮫魚，這塊魚尾我買了兩百多元，當然，因為今天人多吃東西，所以其實不算很貴。</p></a>
+				<a href="#00:03:35.17" id="00:03:35.17" class="lt" onclick="jumptoTime(215, this.id)"><p>如果平時我們自己吃的話，當然是肉痛，兩百多元，加上這裡的門鱔，我買了三百多元，可以嗎?</p></a>
+				<a href="#00:03:48.41" id="00:03:48.41" class="lt" onclick="jumptoTime(228, this.id)"><p>其實想好吃，打魚蛋好吃。</p></a>
+				<a href="#00:03:53.45" id="00:03:53.45" class="lt" onclick="jumptoTime(233, this.id)"><p>單單是魚肉是不夠的，今天我買了一樣很邪惡的食物，我估計大家都想到是什麼，就是肥豬肉，OK，肥豬肉，其實打魚蛋的材料有很多，但其實很簡單，如果按照一般街上食物，即是大家吃到的手打魚蛋，其實材料很簡單，醃的時候材料很簡單，主要是甚麼?</p></a>
+				<a href="#00:04:24.41" id="00:04:24.41" class="lt" onclick="jumptoTime(264, this.id)"><p>胡椒，OK，胡椒碎，然後，醃，鹽，然後就是生粉，就這樣，沒有了，不過我們加進去的話，我們自己很用心的話，我們通常會加些什麼呢，加這個糖芹，然後芫茜，然後蔥，加了這些就很好吃了。</p></a>
+				<a href="#00:04:54.45" id="00:04:54.45" class="lt" onclick="jumptoTime(294, this.id)"><p>其實打魚蛋也可以很純粹，你不需要調味搞得很複雜，OK，可以嗎，另外打魚蛋來說，其實是要加冰的，為什麼要加冰呢，是因為利用溫差，其實應該這樣說，我們開生粉是要開生粉水的，不是就這樣加生粉進去，不然的話，那些魚肉的生粉就不均勻了，變成有些有生粉就滑一點，有些沒有生粉就粗糙一點，OK。</p></a>
+				<a href="#00:05:29.41" id="00:05:29.41" class="lt" onclick="jumptoTime(329, this.id)"><p>通常我們會怎樣做呢，我們就是會將生粉開水，OK，但是我這一次，我就會加冰進去開生粉水，可以嗎，我相信傳說中大家都聽聞過，想魚蛋爽，想魚蛋好吃，就是加冰進去搞的，沒錯，這個傳說是真的，OK，可以嗎，現在我慢慢去做，這裡就家儲來說，就是我們家用來說，打魚蛋就加了這些料，其實還可以加其他的，譬如加蝦米。</p></a>
+				<a href="#00:06:7.21" id="00:06:7.21" class="lt" onclick="jumptoTime(367, this.id)"><p>我媽媽最喜歡加蝦米，她最喜歡加蝦米，還有大家看到肥豬肉是不是很邪惡，那可不可以不要只加肥豬肉，加其他肉進去，可以的，我媽媽打魚蛋會加半肥瘦，肥肉的比例會減低一點，OK，可以嗎，但是在這樣的情況下，我亦都跟大家說，你不是加肥肉進去，是加瘦肉進去的話，那個口感是有分別的，我不敢說好不好吃，因為我從小吃到大。</p></a>
+				<a href="#00:06:41.61" id="00:06:41.61" class="lt" onclick="jumptoTime(401, this.id)"><p>我媽媽做的那些魚蛋，我不敢說它好不好吃，但是和大家心目中那個，理想的魚蛋的口感，是有一點點差距，不過站在健康的角度來說，少吃肥肉是沒有所謂的，OK，可以嗎，剛才你看到我為4斤魚加1斤肥肉，其實這個比例是正確的，4比1，或者可以去到3比1，OK，可以嗎，就算是你打魚滑，即是那些鯪魚滑，其實都是要加肥肉進去。</p></a>
+				<a href="#00:07:17.01" id="00:07:17.01" class="lt" onclick="jumptoTime(437, this.id)"><p>才是最完美的，不過當然也是基於健康理由，就減低一點比例，OK，可以嗎，那就...</p></a>
+				<a href="#00:07:27.81" id="00:07:27.81" class="lt" onclick="jumptoTime(447, this.id)"><p>等一下我會是...</p></a>
+				<a href="#00:07:29.81" id="00:07:29.81" class="lt" onclick="jumptoTime(449, this.id)"><p>你看到我是不是買了，原條的鮫魚回來，原條的門扇回來，那我會有很多下欄東西走出來，譬如魚皮，譬如魚骨，那我打算是怎樣做呢，既然今天是吃火鍋的話，那些魚骨就打算用來做魚湯，做個湯底，用來做火鍋的，那另外呢，就是那些魚皮，那當然是用來炸的，嘩，真的說到還沒吃還沒弄，我已經在流口水，OK，可以嗎。</p></a>
+				<a href="#00:08:2.01" id="00:08:2.01" class="lt" onclick="jumptoTime(482, this.id)"><p>那這個就是基本的材料介紹，那等一下呢，我會演示一下，怎樣去起魚肉，怎樣去炸魚皮，怎樣去利用這個廚餘，就是這個下欄東西，去製造一些更加美味的食物，可以嗎，OK，因為我們家廚，說真的，是不可以浪費的，喂，這裡買了三百多塊，雖然說是七、八個人吃而已，但是我們家廚有個傳統是什麼呢，當然是利用所有。</p></a>
+				<a href="#00:08:35.61" id="00:08:35.61" class="lt" onclick="jumptoTime(515, this.id)"><p>你眼見的買回來的材料，除非真的認真做不到，如果不是一定是可以拿回來用的，是不是，OK，可以嗎，那等一下我開，這裡簡介就說到這裡為止，等一下我開魚的時候，我再給大家看，我今天會全程演示，刮骨，刮肉，這個是打魚蛋，OK，可以嗎。</p></a>
+				<a href="#00:09:2.62" id="00:09:2.62" class="lt" onclick="jumptoTime(542, this.id)"><p>大家好，我已經沖洗了魚約15分鐘，我們現在要做甚麼呢?</p></a>
+				<a href="#00:09:12.62" id="00:09:12.62" class="lt" onclick="jumptoTime(552, this.id)"><p>打魚蛋之前當然要起魚肉，怎樣起呢?</p></a>
+				<a href="#00:09:15.62" id="00:09:15.62" class="lt" onclick="jumptoTime(555, this.id)"><p>很大塊，約3斤，在邊緣先切一刀，然後另一邊，再切一刀，然後可以慢慢沿著魚骨起，這樣可以避免魚肉沾到魚骨，為何要用膠魚和門鱔呢?</p></a>
+				<a href="#00:09:56.62" id="00:09:56.62" class="lt" onclick="jumptoTime(596, this.id)"><p>因為魚骨較小，其實要切開魚骨是很簡單的，現在我用片刀，很快速，如果家裡沒有片刀，菜刀當然可以，如果用西式廚刀，因為它是尖口的，更加好，這樣片，大家看到嗎?</p></a>
+				<a href="#00:10:21.62" id="00:10:21.62" class="lt" onclick="jumptoTime(621, this.id)"><p>我是不是片得很順?</p></a>
+				<a href="#00:10:23.62" id="00:10:23.62" class="lt" onclick="jumptoTime(623, this.id)"><p>我現在已經是因為遷就鏡頭而慢手了，可以嗎?</p></a>
+				<a href="#00:10:31.62" id="00:10:31.62" class="lt" onclick="jumptoTime(631, this.id)"><p>一路是這樣，左手拉住，右手貼住魚骨片，最後到魚尾的部分，其實是魚骨，所以魚鰭的部分，我整條魚肉給大家看看，等等，因為要洗手，給大家看看，整條魚肉，魚肉的部分，魚骨在這裡，這樣就起了一條了，這些魚肉不要浪費，留著，然後另一邊也是，用刀尖沿著魚骨切一刀，另一邊也是沿著魚骨切一刀，然後用右手用陰力輕輕沿著魚骨。</p></a>
+				<a href="#00:11:37.23" id="00:11:37.23" class="lt" onclick="jumptoTime(697, this.id)"><p>然後用陰力慢慢，就可以起到魚肉了，一樣，左手用陰力拉著魚骨，右手，現在不要介意魚肉還會黏在魚骨上，因為等一下我會刮它，現在主要是把魚肉起出來，因為我們不是炒球，所以不用介意魚肉還會黏在魚骨上，這個很棒，起肉出來，全部加起來，起碼有三斤，加上肥豬肉，四斤，吃很久了，幸好今晚人多。</p></a>
+				<a href="#00:12:40.23" id="00:12:40.23" class="lt" onclick="jumptoTime(760, this.id)"><p>這樣就起出來了，然後我起出來了，這些有魚肉的，就用刀尖刮它，刮它出來，先放一邊，等一下我來剁，咁呢而家呢淨返呢條魚骨呢，今晚黑呢就可以攞嚟做呢個火鍋嘅湯底啦，咁如果話平時呢啲魚骨呢如果平時嘅話你唔整火鍋嘅話咁有咩可以做呀，我話畀你聽煎香佢攞鹽胡椒煎香佢，我哋炒番茄嘩真係我而家都仲留緊口水我哋以前就係最鍾意咁樣㗎啦，即係你攞啲魚肉呢攞返嚟呢就係打魚蛋啦ok跟住然之後呢嗰啲魚骨我哋做咩預備我哋做咩我哋炒番茄。</p></a>
+				<a href="#00:13:50.46" id="00:13:50.46" class="lt" onclick="jumptoTime(830, this.id)"><p>真係嗰啲番茄魚骨呢好食到不得了呀或者我哋炒酸菜都得嘅，咁我而家起門扇呢個門扇細好多係咪咁其實個原理都係一樣嘅先係沿住佢嗰個鰭位嗰啲骨ok，咁呢你咁樣起嘅話呢就一定係最少骨㗎啦嗰啲肉，然之後呢咁呢因為嗰個門扇呢就細好多呀咁所以呢我哋呢就要落刀嘅時候就仔細啲，全部都係鰭骨嗰個位就切一刀。</p></a>
+				<a href="#00:14:32.92" id="00:14:32.92" class="lt" onclick="jumptoTime(872, this.id)"><p>跟住慢慢片佢出嚟，大家看到嗎?</p></a>
+				<a href="#00:14:49.00" id="00:14:49.00" class="lt" onclick="jumptoTime(889, this.id)"><p>去到另一邊的鰭位，就變成這樣，剩下的骨頭，可以嗎?</p></a>
+				<a href="#00:14:57.00" id="00:14:57.00" class="lt" onclick="jumptoTime(897, this.id)"><p>好，然後繼續，起鴨，這個大一點，就好切一點，一樣，在鰭位，劏一高，然後，有感覺的，去到骨位，就好停，不要切斷骨，否則，我們打魚蛋時，會有很多骨，第二邊也是，在旗位劏一刀，上下旗位，然後用刀尖慢慢劏</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:1.71" id="00:16:1.71" class="lt" onclick="jumptoTime(961, this.id)"><p>第二邊也是，在旗位劏一刀，上下旗位，然後用刀尖慢慢劏，剩下很多肉，真棒!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:16.28" id="00:16:16.28" class="lt" onclick="jumptoTime(976, this.id)"><p>好，這樣就出來了，剩下的就刮它，這些也不要浪費，ok，因為黏著的骨頭有很多肉，好，又第一個了，都是很習慣，每一次弄完一件就刮一刮它，這些不是多餘動作，而是慢慢養成自己一個衛生的習慣，就說不會經常有些不乾淨的東西，這個肚位，首先開了肚，其實你做魚蛋的話，就不需要介意它是用哪個部位的，ok?</p></a>
+				<a href="#00:17:23.59" id="00:17:23.59" class="lt" onclick="jumptoTime(1043, this.id)"><p>但如果拿來炆呢，譬如蘿蔔炆門扇呢，我就喜歡食肚位了，因為那個魚肚呢，那個魚腩，那個扇腩的位置呢，好正，好肥美，好滑，將來有機會就和大家分享到蘿蔔炆門扇，這個就是潮州人和香港水上人一個著名的美食，就算你現在去到打冷舖，都會有這道菜吃的，清潔乾淨，中間會留一些血痕，即是那些血型血塊在那裏，拿個刀尖去解一解，然後用水沖洗，這樣就可以很乾淨了，最起碼要先沖乾淨條魚。</p></a>
+				<a href="#00:18:23.74" id="00:18:23.74" class="lt" onclick="jumptoTime(1103, this.id)"><p>好，洗乾淨了，刀不夠鋒利，通常這個時候不夠鋒利，我們拿什麼?</p></a>
+				<a href="#00:18:33.74" id="00:18:33.74" class="lt" onclick="jumptoTime(1113, this.id)"><p>拿個磨刀石，先磨一磨它，然後先沖乾淨刀，然後在旗位切一刀，慢慢切入去，因為是肚邊的位置，所以另一邊就不用切了，直接沿著骨頭，左手用陰力，看著，這時候你的手指會被線遮住，所以你開始切的時候，小心點不要用太重的手，不然一切開的線，連手都會被切到，好，接著，這個時候，小心點，這個就是肚的骨頭，這個時候我們就輕手一點，不要連肚的骨頭都切掉。</p></a>
+				<a href="#00:20:2.62" id="00:20:2.62" class="lt" onclick="jumptoTime(1202, this.id)"><p>因為肚的骨頭比較粗，就算到時你切碎了，看見嗎?肚的骨頭，然後另一邊，不然連肚的骨頭都切掉的話，就算到時你切碎了，因為骨頭比較粗，你都很容易吃到有骨頭的，我們繼續，用右手拿刀的手，用陰力去感覺肚的骨頭在哪裏，因為如果片肉和片骨，手感是不一樣的，如果大家進過廚房都知道的，OK，繼續音力，我現在可能因為要遷就視頻，有點心急，怕用時間太久。</p></a>
+				<a href="#00:21:14.96" id="00:21:14.96" class="lt" onclick="jumptoTime(1274, this.id)"><p>但我想給大家看看開是怎樣，過程是怎樣，不希望你做到，我又做不到，我最討厭就是這件事，所以大家不要嫌我長氣，這裡我就由得它，因為我怕割到肚子的骨，剩下這些就用刀尖刮它，剩下的肉用刀尖刮它，你看看這骨多粗，所以我們片肉出來時就要小心，呢嚿咁好肉真係想炸咗佢嚟食呀，咁呀起咗喇呢個呢睇咩都。</p></a>
+				<a href="#00:22:18.53" id="00:22:18.53" class="lt" onclick="jumptoTime(1338, this.id)"><p>呢個呢我淨返個肚腩出嚟嘅都幾大份下嘅，ok得唔得，魚肉基本上呢就已經係，切好咗啦即係起好咗啦，我睇下仲有冇先，係咁多舊呀，跟住然之後呢我就開始呢就係，刮嗰啲肉出嚟，我等下一個視頻開始嘅時候刮肉嘅時候我再開機，先頭呢就同大家介紹咗點樣去起嗰啲魚，咁而家呢就同大家分享呢就係點樣去，刮嗰啲魚肉出嚟。</p></a>
+				<a href="#00:23:12.27" id="00:23:12.27" class="lt" onclick="jumptoTime(1392, this.id)"><p>一刀一刀攞個刀尖，慢慢刮，咁咪唔好心急呀因為呢，佢當中呢雖然話就話我已經係盡量，即係將嗰啲骨呢就起咗個出嚟㗎喇咁但係呢佢中間都，仲有少少骨連住嘅ok咁所以呢同埋佢啲肉嗰啲紋理呀，都會，會有骨嘅啦睇唔睇到，呢度，ok都有骨嘅，咁我唔知道個鏡頭呢啲骨嚟㗎ok，咁呢一樣我哋係慢慢刮，咁呢就盡量刮多啲啦ok。</p></a>
+				<a href="#00:24:9.62" id="00:24:9.62" class="lt" onclick="jumptoTime(1449, this.id)"><p>就刮曬佢啲骨出嚟啦攞個刀尖刮呢就容易啲，咁但係有一樣嘢喎，大家千祈唔好刮破皮喎因為等間呢啲落嚟做咩呀炸魚皮呀，所以我哋呢就一物多用嘅，我畀大家睇下，睇唔睇到呀雖然話我起咗啲肉出嚟盡量冇乜骨，但係都係其實肉裏面都有少少骨嘅ok，咁呢個時候呢我哋刮呢就乘機呢就可以將佢清除化清除埋啦，即係嗰啲等間我哋打魚蛋嘅時候就冇咁多骨嘅ok。</p></a>
+				<a href="#00:24:57.63" id="00:24:57.63" class="lt" onclick="jumptoTime(1497, this.id)"><p>盡量每一層肉都刮乾淨，刮清它，最後剩下的一定是魚皮，看見嗎?已經很薄了，但是大家用肉眼看吧，用肉眼看吧，有些骨是黏著的，ok?</p></a>
+				<a href="#00:25:17.63" id="00:25:17.63" class="lt" onclick="jumptoTime(1517, this.id)"><p>我們就小心一點，不要放進去待會我們打魚蛋的魚肉那裡，現在這個位置也有些骨，所以我們要重新檢查一次，它不乾淨的，我們就繼續，因為我們是家裡吃的，所以檢查有沒有骨的方面就可以仔細一點，就不同工業那些，隨便你吧，你剩下多少就多少，明白嗎?</p></a>
+				<a href="#00:25:50.63" id="00:25:50.63" class="lt" onclick="jumptoTime(1550, this.id)"><p>看見嗎?大家看見嗎?</p></a>
+				<a href="#00:25:54.63" id="00:25:54.63" class="lt" onclick="jumptoTime(1554, this.id)"><p>我在魚肉那裡找到這麼大的骨，ok?</p></a>
+				<a href="#00:25:59.63" id="00:25:59.63" class="lt" onclick="jumptoTime(1559, this.id)"><p>這些骨就不要了，這個魚皮待會留下來做什麼呢?</p></a>
+				<a href="#00:26:10.63" id="00:26:10.63" class="lt" onclick="jumptoTime(1570, this.id)"><p>留下來就是炸魚皮用的，你想刮得靚呢，首先一刀輕輕切開肉先，跟住由切開個位，一路係咁陰力推個把刀出去，嘩，呢個剩返個魚皮就好靚，冇乜魚肉，呢個魚肉就咁大舊嘅，ok，咁我哋再刮一刮佢，睇下檢查下有冇骨，嘩，有喎，好多骨喎，一樣，我哋作為家廚就可以檢查得仔細啲，ok，到其時呢，嗰啲魚蛋就會好純淨，嗰啲肉就唔會話兼夾會有骨嘅嘢黐埋喺度，你看我抽呀抽呀呢度都呢一塊都有五六條出嚟。</p></a>
+				<a href="#00:27:17.15" id="00:27:17.15" class="lt" onclick="jumptoTime(1637, this.id)"><p>咁當然等陣間呢因為我會仲會剁魚肉嘅咁所以呢其實實際上呢嗰啲骨都會剁到碎曬嘅咁但係始終你喂你食食食下魚蛋有有粒骨雖然話唔慘口啫但係始終嗰個感受都感覺都唔係咁好呀嘛，OK好我哋繼續呢邊掛完到第二邊呀咁呢落刀輕輕解一解就千祈唔好解解穿個魚皮喎ok得唔得，咁等陣間呢個魚皮就好正呀。</p></a>
+				<a href="#00:27:55.15" id="00:27:55.15" class="lt" onclick="jumptoTime(1675, this.id)"><p>睇下嘛睇咩到睇下睇咩到，我現在全部用這個位置的刀尖來刮，等等，摸一摸，有骨嗎?</p></a>
+				<a href="#00:28:21.44" id="00:28:21.44" class="lt" onclick="jumptoTime(1701, this.id)"><p>感覺到有骨，為什麼我經常說入廚要用盡五官六感就是這個原因，不一定是你看到的，有時候你的手感覺到有骨，又感覺到另外一條了，感覺到有骨就盡量，一條，還有兩條，明白嗎?</p></a>
+				<a href="#00:28:42.44" id="00:28:42.44" class="lt" onclick="jumptoTime(1722, this.id)"><p>打魚蛋，其實前期功夫很多，大家都知道魚蛋好吃，打魚蛋都不是太困難，但是前期功夫很多，其實都頗繁複的，一樣，大家看到我每一次重新開始一塊新的時候，我就會刮一刮砧板，這是好習慣，現在我將剩下的魚肉刮出來，這塊這麼大的部分，我等等就拿來做湯底，用來做打火鍋的湯底，門線就多骨，但是這個鮫魚就少很多骨。</p></a>
+				<a href="#00:29:41.44" id="00:29:41.44" class="lt" onclick="jumptoTime(1781, this.id)"><p>一樣，輕輕地刮，這個時候就類似片刀的形式，輕輕地一刀刮，一刀這樣斜斜地切下去，鮫魚的肉是比門線更結實的，看到有些白膜嗎?</p></a>
+				<a href="#00:30:6.64" id="00:30:6.64" class="lt" onclick="jumptoTime(1806, this.id)"><p>大家看不看得到?</p></a>
+				<a href="#00:30:8.64" id="00:30:8.64" class="lt" onclick="jumptoTime(1808, this.id)"><p>這些白膜其實已經是魚皮的一部分，所以這部分我們已經刮清了，看不看得到?</p></a>
+				<a href="#00:30:18.64" id="00:30:18.64" class="lt" onclick="jumptoTime(1818, this.id)"><p>這個時候用刀子切下去，定了位置就扯魚身、魚皮，這樣扯肉就出來了，看到白膜已經刮乾了魚皮的肉，鮮頭門線有很多骨頭，這條鮫魚已經沒有骨頭了，起鮫魚，一刀輕輕切下去，不要切穿皮，然後把魚皮扯出來，把刀向前推，這樣魚肉便會出來，把刀斜斜地，然後拉魚皮，鮑魚特別好膠，今晚好多魚皮食，看到嗎?</p></a>
+				<a href="#00:31:38.89" id="00:31:38.89" class="lt" onclick="jumptoTime(1898, this.id)"><p>魚皮剩下這麼多，再用刀尖輕輕撩一下，不是用刀尖，是用扯的，用刀斜斜地繼續重覆動作，將剩下的魚肉都刮出來，為何我們家廚喜歡用膠魚而不是用鱲魚，因為這麼大塊，沒有一條骨，不像門扇或其他魚骨，九棍更不用說，九棍有兩種名字，第一是聲，第二是破骨，如果不喜歡破骨的千萬不要食九棍，第二塊，正呀!</p></a>
+				<a href="#00:32:40.41" id="00:32:40.41" class="lt" onclick="jumptoTime(1960, this.id)"><p>大家看著做，重覆先前的動作</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:10.41" id="00:33:10.41" class="lt" onclick="jumptoTime(1990, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，鮫魚的鱗皮比較結實，所以大家需要用陰力多一點，基本上大部份的骨肉都出來了，大家怎樣判斷出肉的呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:32.16" id="00:33:32.16" class="lt" onclick="jumptoTime(2012, this.id)"><p>就是看到那些白膜，其實是皮的一部份，類似牛肉的筋位，為什麼鮫魚這麼堅韌呢?</p></a>
+				<a href="#00:33:47.16" id="00:33:47.16" class="lt" onclick="jumptoTime(2027, this.id)"><p>原因就在這裡，因為皮下的膠膜很厲害，所以肉質很結實，這樣就出來了，再刮清一點，不要小看，這裡刮一刮就出一些肉，看到嗎?</p></a>
+				<a href="#00:34:13.16" id="00:34:13.16" class="lt" onclick="jumptoTime(2053, this.id)"><p>接著又輪到門扇了，門扇刮肉的方式又不一樣，不用斜刀，也不用太用力，不過有很多骨頭，等一下我又要處理一下，現在主要的肉都出來了，我現在就用刀尖繼續刮去皮和肉，這個時候我的手都感覺到有很多骨，這個部分沒有骨的，這個部分是有骨的，為什麼我會知道有骨呢，都是那句話，我們做廚房要用盡五感六感，所以手一拿上手就知道有沒有骨。</p></a>
+				<a href="#00:35:35.38" id="00:35:35.38" class="lt" onclick="jumptoTime(2135, this.id)"><p>這個時候就仔細一點，我都是那句話，我們家廚不同職業，職業做魚蛋的魚蛋廠就不會檢查得那麼仔細，但是我們家廚始終都是有老有亂，那就檢查清楚，你看門線是不是很多骨，剛才我做的鮫魚是不是沒有骨，但是這樣，魚蛋怎麼可以沒有門線呢，是不是，真正的魚蛋門線是一個膽，就算你加一些平價鲫魚門線都要加上去的，specialist。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:36:23.51" id="00:36:23.51" class="lt" onclick="jumptoTime(2183, this.id)"><p>Wednesday，día，various，kinds Sony，verted，Ou，nity</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:36:30.11" id="00:36:30.11" class="lt" onclick="jumptoTime(2190, this.id)"><p>� Lös，cope</p></a>
+				<a href="#00:36:30.01" id="00:36:30.01" class="lt" onclick="jumptoTime(2190, this.id)"><p>Another，życia，Dow</p></a>
+				<a href="#00:36:25.89" id="00:36:25.89" class="lt" onclick="jumptoTime(2185, this.id)"><p>Türkiye，further，RF，없는</p></a>
+				<a href="#00:36:24.41" id="00:36:24.41" class="lt" onclick="jumptoTime(2184, this.id)"><p>어떻，ony healed，populations，Tenn git</p></a>
+				<a href="#00:36:25.27" id="00:36:25.27" class="lt" onclick="jumptoTime(2185, this.id)"><p>retrie dob mism，awaken，issiox，習🤣</p></a>
+				<a href="#00:36:24.03" id="00:36:24.03" class="lt" onclick="jumptoTime(2184, this.id)"><p>unexpected，상황，多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:36:30.81" id="00:36:30.81" class="lt" onclick="jumptoTime(2190, this.id)"><p>呢個時候我哋要做得仔細啲啦，扯返啲骨出嚟啦，順便呢刨乾淨啲肉啦，好炸佢先係冇啦，好啦仲有幾多舊呢，仲有一舊，呢啲魚尾呢我就攞嚟做湯底㗎啦，好最後一舊，所以外面的魚蛋無論多好看，因為成本問題，很多時候會加雜魚，特別是九棍，所以大家在吃魚蛋粉的時候，間中魚蛋都會吃到有些骨的原因</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:37:58.81" id="00:37:58.81" class="lt" onclick="jumptoTime(2278, this.id)"><p>謝謝觀看，好，現在再繼續清骨，這個視頻在我處理魚肉的時候，就是這段片，時間比較長，但大家不要介意，因為有些細節位，你真的要看著才知道，原來是這樣的，會有魚骨的，要這樣檢查的，OK，好吃的東西就要做得仔細一點，大家同不同意?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:38:35.77" id="00:38:35.77" class="lt" onclick="jumptoTime(2315, this.id)"><p>雖然我已經檢查得很仔細，但間中都會有漏網之魚，但起碼我們減低了風險，和減低了令口感變差的機會，所以家廚值錢在哪裏呢?</p></a>
+				<a href="#00:38:54.77" id="00:38:54.77" class="lt" onclick="jumptoTime(2334, this.id)"><p>仔細，因為我們不是工業生產，所以我們花更多時間去做檢查，有時好吃，有些家廚做得很好吃，原因就在這裏，因為做得仔細，好，沒骨了，好，起肉了，OK，這個時候就很重要了。</p></a>
+				<a href="#00:39:18.77" id="00:39:18.77" class="lt" onclick="jumptoTime(2358, this.id)"><p>很重要的是甚麼呢?我要磅重，終於輪到我的電子磅出場了，大家沒見過，我拍了這麼多段片都沒用過磅這個東西，其實一個正式有要求的廚師是一定有個磅在的，磅在這裏，等等，我為求要那個重量，即是那個組合要準確無誤，所以我就要用到磅，好，我的磅出來了，家廚的家是否很窄?</p></a>
+				<a href="#00:40:9.36" id="00:40:9.36" class="lt" onclick="jumptoTime(2409, this.id)"><p>工作台在那裡，砧板位在那裡，我們怎及得上職業廚房那麼多空間?</p></a>
+				<a href="#00:40:19.36" id="00:40:19.36" class="lt" onclick="jumptoTime(2419, this.id)"><p>我們家廚通常見縫插針，首先用磅最重要是歸零，現在拿一個相同體積的，先歸零，然後磅它，1347克，即是324克，3 4 1 12，480克即是3磅多，現在1347克，我要放多少肥豬肉呢?</p></a>
+				<a href="#00:41:12.36" id="00:41:12.36" class="lt" onclick="jumptoTime(2472, this.id)"><p>就要放三份，放一份肥豬肉，這個已經是最低限度，如果想更好吃就要放高一點，現在我稍為切一些肥豬肉，我的影片有個特色，就是一刀不剪，一鏡直落，300克，差不多了，因為地方淺雜，所以要馬上抹乾淨，不然膀就黏著油，三百克，嘩!準呀!346克!算係咁啦掛!</p></a>
+				<a href="#00:42:37.09" id="00:42:37.09" class="lt" onclick="jumptoTime(2557, this.id)"><p>呢個時候呢，我哋做乜嘢呢?我收返埋個磅先啦!</p></a>
+				<a href="#00:42:46.09" id="00:42:46.09" class="lt" onclick="jumptoTime(2566, this.id)"><p>收返埋個磅先!</p></a>
+				<a href="#00:42:49.09" id="00:42:49.09" class="lt" onclick="jumptoTime(2569, this.id)"><p>呢個時候呢，我哋就要剁魚肉嘅!</p></a>
+				<a href="#00:42:53.09" id="00:42:53.09" class="lt" onclick="jumptoTime(2573, this.id)"><p>所以呢，呢啲豬肉就切粒!</p></a>
+				<a href="#00:42:56.09" id="00:42:56.09" class="lt" onclick="jumptoTime(2576, this.id)"><p>呢部相機成日都要手動對焦呀!</p></a>
+				<a href="#00:43:3.09" id="00:43:3.09" class="lt" onclick="jumptoTime(2583, this.id)"><p>輔助對焦!OK!</p></a>
+				<a href="#00:43:5.09" id="00:43:5.09" class="lt" onclick="jumptoTime(2585, this.id)"><p>切咗粒佢點解要切粒呢?</p></a>
+				<a href="#00:43:7.09" id="00:43:7.09" class="lt" onclick="jumptoTime(2587, this.id)"><p>因為呢，我切咗粒之後呢，我等陣間剁魚肉嘅時候佢就更加好去融入嗰啲魚肉嗰度啦!</p></a>
+				<a href="#00:43:12.09" id="00:43:12.09" class="lt" onclick="jumptoTime(2592, this.id)"><p>咁呀，你可以嘅話就越細粒就越好啦!OK!</p></a>
+				<a href="#00:43:17.09" id="00:43:17.09" class="lt" onclick="jumptoTime(2597, this.id)"><p>得唔得?</p></a>
+				<a href="#00:43:18.09" id="00:43:18.09" class="lt" onclick="jumptoTime(2598, this.id)"><p>咁啦，先頭都講啦，喂!有啲人話，喂!我落肥豬肉唔鍾意!太唔健康!咁點算呀?</p></a>
+				<a href="#00:43:24.09" id="00:43:24.09" class="lt" onclick="jumptoTime(2604, this.id)"><p>你可以呢，呢300克就用半肥瘦嘅豬肉代替!</p></a>
+				<a href="#00:43:28.09" id="00:43:28.09" class="lt" onclick="jumptoTime(2608, this.id)"><p>不過我事先警告呀!</p></a>
+				<a href="#00:43:31.09" id="00:43:31.09" class="lt" onclick="jumptoTime(2611, this.id)"><p>你落咗半肥瘦豬肉呢，呢個魚蛋個食味就唔一樣㗎啦!</p></a>
+				<a href="#00:43:37.09" id="00:43:37.09" class="lt" onclick="jumptoTime(2617, this.id)"><p>但係當然唔係話唔好味嘅，一樣好味!</p></a>
+				<a href="#00:43:41.09" id="00:43:41.09" class="lt" onclick="jumptoTime(2621, this.id)"><p>不過你話想食到嗰種魚蛋嗰種特有嗰種爽滑嗰種口感呢，就比較難啲囉!</p></a>
+				<a href="#00:43:49.09" id="00:43:49.09" class="lt" onclick="jumptoTime(2629, this.id)"><p>即係都係嗰句啦，健康係有代價嘅!</p></a>
+				<a href="#00:43:53.09" id="00:43:53.09" class="lt" onclick="jumptoTime(2633, this.id)"><p>如果你覺得，都係嗰句呀!</p></a>
+				<a href="#00:43:56.09" id="00:43:56.09" class="lt" onclick="jumptoTime(2636, this.id)"><p>我成日講嘅少食多滋味，你覺得咁樣唔健康咪食少啲囉!係咪呀?</p></a>
+				<a href="#00:44:1.09" id="00:44:1.09" class="lt" onclick="jumptoTime(2641, this.id)"><p>但係大家又知唔知，其實大家去食呢個魚蛋粉食得咁過癮，其實佢嘅肥豬肉嘅比例重重呀!</p></a>
+				<a href="#00:44:11.09" id="00:44:11.09" class="lt" onclick="jumptoTime(2651, this.id)"><p>可以去到差唔多一半㗎!</p></a>
+				<a href="#00:44:14.09" id="00:44:14.09" class="lt" onclick="jumptoTime(2654, this.id)"><p>咁呀，跟住就掟埋落魚肉嗰度，等陣間呢我就一齊剁下!</p></a>
+				<a href="#00:44:38.49" id="00:44:38.49" class="lt" onclick="jumptoTime(2678, this.id)"><p>這裡加滿材料，足足有5斤，嘩!5斤呀!我賣多少錢好呢?</p></a>
+				<a href="#00:44:47.65" id="00:44:47.65" class="lt" onclick="jumptoTime(2687, this.id)"><p>或者我要食多少餐呢?真係...</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:44:56.41" id="00:44:56.41" class="lt" onclick="jumptoTime(2696, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:45:2.41" id="00:45:2.41" class="lt" onclick="jumptoTime(2702, this.id)"><p>好，好啦，呢個部份就到此為止啦，跟住，然之後呢，我呢個係再剁呢個魚肉既時候，我先再開機啦，我用左幾多時間啦，我都睇唔到呀，冇戴眼鏡，OK，咁呀，等陣間再見啦，好啦，大家先頭呢，就見到我點樣係開呢個魚肉啦，跟住，之後點樣去磅重啦，計嗰個比例啦，OK，點樣刮魚肉啦，OK，咁而家，跟住落嚟做咩呢，剁魚肉。</p></a>
+				<a href="#00:45:39.41" id="00:45:39.41" class="lt" onclick="jumptoTime(2739, this.id)"><p>咁我要換刀啦，因為今日要用雙刀啦，好，等等呀，等我清潔咗嗰把刀先，擺返落去砧板左，已經洗咗㗎啦，而家要抹返乾佢，呢啲係好習慣嚟嘅。</p></a>
+				<a href="#00:45:58.41" id="00:45:58.41" class="lt" onclick="jumptoTime(2758, this.id)"><p>好，跟住，然之後出動我嘅雙刀，喂，按例洗一洗佢啦，我呢個砧板唔夠大嘅，OK，呢度有成四斤嘢，咁我點算呢，我就要分批嚟剁，我先剁咗有肥豬肉嗰部分先，OK，然之後先至剁呢個係魚肉嗰部分，呢個位呢，呢個份量呢，已經係即係差唔多係我砧板嘅即係最重嘅，呢度有兩斤嚟㗎啦，即係最大嘅份量呀，OK。</p></a>
+				<a href="#00:46:50.41" id="00:46:50.41" class="lt" onclick="jumptoTime(2810, this.id)"><p>你睇多到即刻稍為用力已經，等等呀，我攞定塊布抹手先，好，因為呢個有豬肉嘅部分呀咁所以呢我就嗰陣時就比較係，即係比較係用力嘅大家聽聲都聽到咁其實可能你會大家會有人問，我打魚蛋姐使唔使咁麻煩呀要自己整緊唔使咁麻煩呀點解呀，你可以叫豬肉檔幫你搞水啲肥肉呀你可以叫個魚檔幫你搞水啲魚肉呀，即係豬肉檔就搞水肥豬肉呀魚檔就搞水啲魚肉咁咪慳功夫好多囉。</p></a>
+				<a href="#00:47:43.42" id="00:47:43.42" class="lt" onclick="jumptoTime(2863, this.id)"><p>不過因為我呢個係同大家分享個視頻呢即係呢個影片呢大家分享香港嘅傳統，所以我由頭做到落尾畀大家睇雖然有人會話我笨雖然有人會話我長氣，但係大家都知道我唔希望大家睇到嘅決斷決和重變咗自己腦洞大開，即係想像得出點不知原來錯嘅做嗰個方法咁咪出事囉係咪呀，我係既然分享得嘅我就希望大家跟住我一齊做就做返嗰樣嘢出嚟係咪咁講呀，所以有啲位真係要長氣嘅有啲位真係要畀大家睇嘅ok。</p></a>
+				<a href="#00:48:28.42" id="00:48:28.42" class="lt" onclick="jumptoTime(2908, this.id)"><p>我知停咗都呢唔係因為我要講嘢我停咗都係唔希望嗰啲聲呀影響到我收音，咁我而家跟住落嚟就少講嘢啦集中精神，多謝大家，大家看到我的雙刀是一大一小的，一把骨刀一把菜刀，家廚就是這樣，怎會有兩把重刀在這裡，是不是這樣說，不過十幾二十年都習慣了，所以我左右手是保持得很好，還有，下刀的時候我是有個角度的，為什麼呢?</p></a>
+				<a href="#00:49:14.20" id="00:49:14.20" class="lt" onclick="jumptoTime(2954, this.id)"><p>我上次剁牛肉還是剁肉餅，已經說過了，原因就是這樣剁蒜蓉，大角度的話就省水省力很多，因為那把刀左右移動，就可以從不同的方向去剁，這樣剁的效果會好一點，ok?</p></a>
+				<a href="#00:49:51.19" id="00:49:51.19" class="lt" onclick="jumptoTime(2991, this.id)"><p>大家看到我左右移動，所以刀大角度的話，可以省水省力，效果會好很多，咁呢段影片呢我因為睇即係有有啲複雜，OK咁所以我都唔預期呢好多人睇，不過呢，我嘅心態係乜嘢呢雖然呢個係繁複雖然我長氣，但我都希望將香港嘅傳統呢，就承傳落去，即係等以後因為而家呢水上人越嚟越少呀，因為已經係色微呀咁變咗呢好多一啲香港嘅傳統嘢呢就已經，已經為忙咗啦畀人。</p></a>
+				<a href="#00:50:39.39" id="00:50:39.39" class="lt" onclick="jumptoTime(3039, this.id)"><p>咁我希望，數十年之後有人唔知點解搵返我呢條片出嚟原來都係魚蛋係咁嘅魚蛋係咁嘅，咁我就已經好開心，OK就唔講話即係而家到底有幾多人睇呀，成百歲啦，唔死呀嗰邊都聞到棺材香呀係咪咁講呀，雖然我唔講嘢，但係大家希望唔好skip咗佢，因為我中間會突然之間有啲小動作，其實係橋條嘢嚟嘅，希望大家能夠堅持落去，為咗傳承香港嘅文化、傳統。</p></a>
+				<a href="#00:51:39.67" id="00:51:39.67" class="lt" onclick="jumptoTime(3099, this.id)"><p>因為打魚蛋呢間嘢的而且確係香港一個特色嚟嘅，以至於有啲色情事業都叫做打魚蛋，大家有無聽過?80年代好興，70年代年80年代初叫做打魚蛋，嗰陣時小弟都仲讀緊小學，所以無緣參與，我淨係知道有呢啲嘢，記唔記得香港有套好電影好出名嘅叫做靚妹仔，靚妹仔咪就係講打魚蛋嘅從業員，即係嗰個行業有講過嘅。</p></a>
+				<a href="#00:52:20.67" id="00:52:20.67" class="lt" onclick="jumptoTime(3140, this.id)"><p>今日啲魚蛋肯定好正，我啄落去起刀嗰下膠好夠膠</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:53:50.67" id="00:53:50.67" class="lt" onclick="jumptoTime(3230, this.id)"><p>字幕由 Amara.org 社群提供，現在差不多可以了，看到那些肥豬肉已經剁得很碎了，如果肥豬肉都這麼碎，魚肉就更加不用說了，接下來我就剁另外一個，我就不浪費大家時間了，待會到我撈魚蛋的時候再開機，真的帶魚蛋的時候再開機，OK 行不行，好 待會見，好 待會見。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:54:24.94" id="00:54:24.94" class="lt" onclick="jumptoTime(3264, this.id)"><p>好了 大家終於來到最精彩的部分，打魚蛋了，魚蛋已經剁好了，我先放一旁 因為我要做配料，大家看到我放了一盤冰的，用冰來打魚蛋，現在首先放鹽，鹽放多少呢，剛才這裡有1700克左右，1700克即是大約3斤，所以我們可以放多少鹽呢，放3匙鹽，即是3.75克乘3，多少呢 3721，即是12克左右。</p></a>
+				<a href="#00:55:5.94" id="00:55:5.94" class="lt" onclick="jumptoTime(3305, this.id)"><p>OK 糟了，第二匙了，希望不要鹹 第三匙，OK 好，然後就放胡椒碎，嘩 不行 因為要大量，等等，要比較多的胡椒碎 OK，因為多東西，OK 好了，鹽和胡椒碎基本上OK了，那就要加水了，加多少呢，就加大約100克左右，100cc左右 OK，用量杯準確一點，夠了，因為冰沒那麼快溶，所以我現在將冰混水一起，OK 行不行。</p></a>
+				<a href="#00:56:1.94" id="00:56:1.94" class="lt" onclick="jumptoTime(3361, this.id)"><p>然後生粉，生粉大概是5茶匙，大概是重量一斤就落一斤的雙倍，三斤的話就是落六斤，明白嗎?</p></a>
+				<a href="#00:56:23.55" id="00:56:23.55" class="lt" onclick="jumptoTime(3383, this.id)"><p>為何要混合水呢?</p></a>
+				<a href="#00:56:25.55" id="00:56:25.55" class="lt" onclick="jumptoTime(3385, this.id)"><p>因為生粉在魚上沒那麼均勻，如果連水一起放就會均勻些，現在攪拌生粉之餘，就將冰塊攪拌得容易些，讓它快些溶化，冰塊快溶的時候，放入魚肉會比較好一點，因為這樣一攪拌，就會很快溶掉，為什麼要加冰塊加水一起呢?</p></a>
+				<a href="#00:57:5.27" id="00:57:5.27" class="lt" onclick="jumptoTime(3425, this.id)"><p>就是要等它降溫，然後靠攪拌時的熱力，再改變它的肌肉紋理，改變它的口感，原理就是這樣，嘩!好冷啊!冷得手都發麻，好!</p></a>
+				<a href="#00:57:23.27" id="00:57:23.27" class="lt" onclick="jumptoTime(3443, this.id)"><p>這個冰水開完了，然後我帶了兩隻手套，大家第一次見，好!這是什麼?</p></a>
+				<a href="#00:57:32.27" id="00:57:32.27" class="lt" onclick="jumptoTime(3452, this.id)"><p>這個糖梗，全部放進去，然後，這是什麼?</p></a>
+				<a href="#00:57:44.27" id="00:57:44.27" class="lt" onclick="jumptoTime(3464, this.id)"><p>芫茜，全部放進去，如果你不喜歡吃，可以不要，不過我喜歡吃，如果你說不加這些，可以嗎?</p></a>
+				<a href="#00:57:54.27" id="00:57:54.27" class="lt" onclick="jumptoTime(3474, this.id)"><p>你不加這些，就像街邊吃魚蛋粉的魚蛋，OK?</p></a>
+				<a href="#00:58:1.27" id="00:58:1.27" class="lt" onclick="jumptoTime(3481, this.id)"><p>還有什麼?</p></a>
+				<a href="#00:58:3.27" id="00:58:3.27" class="lt" onclick="jumptoTime(3483, this.id)"><p>當然是本人最喜歡的蔥啦!</p></a>
+				<a href="#00:58:6.27" id="00:58:6.27" class="lt" onclick="jumptoTime(3486, this.id)"><p>嘩!這裡說了這麼多東西，多不多東西?多東西啊!</p></a>
+				<a href="#00:58:12.27" id="00:58:12.27" class="lt" onclick="jumptoTime(3492, this.id)"><p>嘩!這麼多東西，分分鐘水都不夠，不過等下見機行事，好了!這個時候，我們把東西攪拌均勻，倒進去，還有一點鹽在底，加一點水，沖勻它，OK?這樣就完了，然後我們開始攪拌了，我們開始攪拌了，嘩!又是我慣常的手勢了，在最開邊，翻到中間，檢查一下，這是什麼?</p></a>
+				<a href="#00:58:48.27" id="00:58:48.27" class="lt" onclick="jumptoTime(3528, this.id)"><p>哦!只是筋，就是從最開邊，攪拌它，撈它到中間，然後按它下去，這個動作呢，就可以令它吸水的，OK?</p></a>
+				<a href="#00:59:15.87" id="00:59:15.87" class="lt" onclick="jumptoTime(3555, this.id)"><p>冰塊大塊的，不要了，等下攪拌好都未溶，大家看到嗎?攪拌一會兒，材料溶在一起便起膠，因為我用的不是雜魚，我用的是膠魚，所以它的顏色不是純白色的，ok?</p></a>
+				<a href="#00:59:49.89" id="00:59:49.89" class="lt" onclick="jumptoTime(3589, this.id)"><p>就不是像外面的魚蛋那樣純白色，為什麼外面的魚蛋是純白色呢?</p></a>
+				<a href="#00:59:55.89" id="00:59:55.89" class="lt" onclick="jumptoTime(3595, this.id)"><p>原因是因為它混了雜魚進去，那些九棍和鰻魚是白色魚肉的，ok?</p></a>
+				<a href="#01:00:11.51" id="01:00:11.51" class="lt" onclick="jumptoTime(3611, this.id)"><p>大家記得要找一隻夠大嘅兜，你先至撈得開嘅，如果唔夠大嘅話，佢嘅兜係撈唔開，好黏喇已經，好快嘅就其實撈魚蛋ok，反而等陣間要答嘅時候呢，就可能會係即係爭少少囉，大家睇下係咪黏到兜都郁黎郁去，盡量呢個過程呢，由軟嗰度撈返去中間，盡量令到佢呢，所有嘅魚肉都係均勻係被撈過嘅，而家嗰個隻手嘅感受嗰個黏力好勁。</p></a>
+				<a href="#01:01:23.87" id="01:01:23.87" class="lt" onclick="jumptoTime(3683, this.id)"><p>今晚就正啊，其實我呢個時候呢即係都係嗰句啦，其實搞係最好嘅，大家唔知鏡頭有冇睇到我仲有啲肥豬肉呢都仲係一粒粒嘅，即係啄呢有陣時有隻眼呢就睇唔到，但係如果係搞嘅話呢就一定係即係係搞得碎囉ok，等陣間邊個中頭獎食到肥豬肉就正啦，好得啦係咪好快呀。</p></a>
+				<a href="#01:02:12.05" id="01:02:12.05" class="lt" onclick="jumptoTime(3732, this.id)"><p>跟住呢個時候呢，因為咁樣呢就好難起嘅所以我要加少少油喺邊，準備做咩呀當然打魚蛋啦，我要用雙手啦初初呢就細力啲，ourcing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#01:02:39.47" id="01:02:39.47" class="lt" onclick="jumptoTime(3759, this.id)"><p>能，donn，noticing，ış，� providing，� gels，mamy</p></a>
+				<a href="#01:02:38.53" id="01:02:38.53" class="lt" onclick="jumptoTime(3758, this.id)"><p>avaient，artment</p></a>
+				<a href="#01:02:35.15" id="01:02:35.15" class="lt" onclick="jumptoTime(3755, this.id)"><p>puntos，聽到聲音嗎?聽到聲音就知道我的力度在哪了，其實魚蛋是不用加油的，先頭我之所以要加油，是因為要令邊邊來得好些，今日我貪心些，做到這麼大盤，平時大家可以買一斤鬆些的鮮魚，一斤鬆些的門鱔或是鮫魚便夠，然後買幾兩的肥豬肉，自己食自己整，餐餐整，嘩，幾正呀，現在真是好膠，這樣就差不多了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#01:03:42.68" id="01:03:42.68" class="lt" onclick="jumptoTime(3822, this.id)"><p>大家知道我今日破例要帶雙手套，因為這樣才可以做到想要的效果，大家看不看到，再給大家看，看不看到那個質感，現在我不方便對焦，我都不知道對不對焦，現在已經是好膠，但好膠都要再打幾下，因為要盡量將空氣打出來，同時令它更加黏，這樣便會變成我們街市見到的那些，這些不要浪費，這樣一個鮪魚蛋便完成了，其實我今天是否說得不瀟灑呢?</p></a>
+				<a href="#01:05:5.74" id="01:05:5.74" class="lt" onclick="jumptoTime(3905, this.id)"><p>有些亂了，原因是要遷就視頻，還有地方太小，如果不是拍視頻，地方大一點，便可以說得瀟灑一點，給大家看看質感，完成了的質感，我調暗一點，大家看不看到?</p></a>
+				<a href="#01:05:23.82" id="01:05:23.82" class="lt" onclick="jumptoTime(3923, this.id)"><p>OK?</p></a>
+				<a href="#01:05:25.30" id="01:05:25.30" class="lt" onclick="jumptoTime(3925, this.id)"><p>行不行?</p></a>
+				<a href="#01:05:26.46" id="01:05:26.46" class="lt" onclick="jumptoTime(3926, this.id)"><p>吸不吸引?</p></a>
+				<a href="#01:05:28.22" id="01:05:28.22" class="lt" onclick="jumptoTime(3928, this.id)"><p>這個便是我們香港的傳統鮪魚蛋了，OK?</p></a>
+				<a href="#01:05:33.46" id="01:05:33.46" class="lt" onclick="jumptoTime(3933, this.id)"><p>然後我再給大家看看我弄好後的樣子是怎樣的，然後再總結一下鮪魚蛋應該怎樣做，OK?</p></a>
+				<a href="#01:05:46.35" id="01:05:46.35" class="lt" onclick="jumptoTime(3946, this.id)"><p>給大家看看成品如何，賣相OK嗎?</p></a>
+				<a href="#01:05:52.67" id="01:05:52.67" class="lt" onclick="jumptoTime(3952, this.id)"><p>這個當然是未熟的狀態，這個只用了三分二，這一碟只有三分二，用來今晚七個人吃火鍋，打魚蛋，我不知道大家會否嫌煩，或者有沒有興趣，但我都想說一下我的感受，其實這條片的主要目的，當然是和大家分享一下，我可以做到什麼，其實我更大的目的，就是希望能夠有一條片，完全展示香港的傳統美食，魚蛋是如何製作的。</p></a>
+				<a href="#01:06:34.35" id="01:06:34.35" class="lt" onclick="jumptoTime(3994, this.id)"><p>當然是家廚，工業化是另一回事，我不知道有多少人有興趣，會去做，會去學，但我希望能夠有條片，我不敢說我很偉大，但我發覺網上沒有人教人打魚蛋，我覺得好像欠缺一些東西，香港的傳統有很多東西，講食的有很多東西，魚蛋夠有代表性，除了菠蘿包，雖然我長氣，雖然片長可能都比較長，因為我希望將整個打魚蛋的過程，由一條魚買回來。</p></a>
+				<a href="#01:07:18.35" id="01:07:18.35" class="lt" onclick="jumptoTime(4038, this.id)"><p>到起肉，到刮肉，到剁肉，到打，到成品，都希望能夠讓大家看到，原來香港的魚蛋是這樣製作的，當然，這不是純粹的打魚蛋，因為我混了很多材料，但基本上大同小異，如果是正統的魚蛋，白魚蛋的話，不加蔥，不加芹菜，不加芫茜就行了，就是那種魚蛋，大家吃魚蛋魚肉就是這樣，總結一下，主要注意的方面是甚麼呢?</p></a>
+				<a href="#01:07:58.35" id="01:07:58.35" class="lt" onclick="jumptoTime(4078, this.id)"><p>第一，起肉的時候要注意骨位，第二，剁肉的時候，要注意有沒有殘留的骨，盡量有的話就要去掉，第三，調味其實很簡單，就是鹽、胡椒粉，沒有其他東西的了，然後就可以直接攪拌，但當中如果魚蛋要爽滑，就要加冰、加生粉，主要就是這幾樣，如果大家想，我也不知道還要說多久，所以大家要留意我的小動作，看看有甚麼可以改善。</p></a>
+				<a href="#01:08:49.35" id="01:08:49.35" class="lt" onclick="jumptoTime(4129, this.id)"><p>或者可以做得更好的地方，今天就說到這裡，一碟打魚蛋就完成了，拜拜。</p></a>
+				<a href="#01:09:4.40" id="01:09:4.40" class="lt" onclick="jumptoTime(4144, this.id)"><p>大家看看我今天做的魚蛋，手打魚蛋，是香港的傳統，今晚有一班壞蛋上來打火鍋，現在其中一種吃法就是打火鍋，這樣，其實有自己自家的手打魚蛋，真的很棒，大家可以試一下，真的是香港傳統，拜拜，吃東西了，起筷了，拜拜。</p></a>
+				<a href="#01:09:46.40" id="01:09:46.40" class="lt" onclick="jumptoTime(4186, this.id)"><p>拜拜，吃東西了。</p></a>
+</div>
+	</body>
+</html>

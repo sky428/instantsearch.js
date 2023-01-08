@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——打邊爐，香港人真係好鬼鐘意打邊爐，除了現成即用湯底，其實我們可以有自製更多變化的湯底！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8rZcrpOmndk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——打邊爐，香港人真係好鬼鐘意打邊爐，除了現成即用湯底，其實我們可以有自製更多變化的湯底！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:17.79" id="00:00:17.79" class="lt" onclick="jumptoTime(17, this.id)"><p>大家晚上好呀，大家看不看到我這個地方是不是很窄呢?</p></a>
+				<a href="#00:00:27.79" id="00:00:27.79" class="lt" onclick="jumptoTime(27, this.id)"><p>大家又猜不猜到我今晚想吃什麼呢?</p></a>
+				<a href="#00:00:31.79" id="00:00:31.79" class="lt" onclick="jumptoTime(31, this.id)"><p>看到這個海底撈這個火鍋料的湯底，應該猜到是火鍋，沒錯了，如果是現代的火鍋就很簡單得多，喜歡清湯的又可以，喜歡麻辣的又可以，喜歡海底撈這些雜味又可以，鮮味的又可以，香港人真是很愛火鍋的，難得我兒女的朋友上來吃飯，湊夠人數，當然可以吃火鍋，香港這幾天都比較清涼，我不想只這麼寡。</p></a>
+				<a href="#00:01:27.79" id="00:01:27.79" class="lt" onclick="jumptoTime(87, this.id)"><p>說真的，這些湯底始終化學成分太多，雖然都幾好味，我想做一個有自己特色又可以鮮味的湯底，大家看到我買了兩條鯇魚尾，然後有薑、蔥頭、紅蔥頭、陳皮，大家猜到我想做什麼嗎?</p></a>
+				<a href="#00:02:4.79" id="00:02:4.79" class="lt" onclick="jumptoTime(124, this.id)"><p>沒錯了，我想做一個魚湯底，可能有朋友會問，你做一個魚湯底配海底撈行不行?</p></a>
+				<a href="#00:02:15.79" id="00:02:15.79" class="lt" onclick="jumptoTime(135, this.id)"><p>當然可以，海底撈其實是一個清湯的特色，羊肉火鍋，即是小肥羊的麻辣火鍋，那種形式變化出來的，它本身有很多動物的脂肪油在裡面，有羊、豬等等，所以其實它都很鮮味，我就想令到我這個火鍋湯底更加鮮味，所以我就買了兩條鯇魚尾回來，然後當然要做一個我最拿手的魚湯，然後因為今晚我的火鍋料是有羊肉的，大家都知道中文的仙字是怎樣來的。</p></a>
+				<a href="#00:03:2.99" id="00:03:2.99" class="lt" onclick="jumptoTime(182, this.id)"><p>是魚加羊，所以我做一個魚湯就最配的了，廢話不多說，給大家看看我洗完魚尾，現在我用廚紙吸水，待會我再抹乾它，待會我就給大家看看我怎樣去製作湯底，OK?廢話不多說，大家都看到的，我這個視頻，我家裡是不是很小呢?</p></a>
+				<a href="#00:03:37.63" id="00:03:37.63" class="lt" onclick="jumptoTime(217, this.id)"><p>我今天都是六個人吃東西，六個人的材料已經放到地上了，香港人就是這樣了，但不要緊，我們在合縫當中，局限當中我們依然都可以活得很精彩的，大家說是不是?</p></a>
+				<a href="#00:03:53.55" id="00:03:53.55" class="lt" onclick="jumptoTime(233, this.id)"><p>好了，待會煎魚尾的時候我再開機了。</p></a>
+				<a href="#00:03:59.15" id="00:03:59.15" class="lt" onclick="jumptoTime(239, this.id)"><p>好了，大家看完我這個狹窄的廚房之後，我現在又燒好鍋了，開始出煙了，然後我再放昨天的小歡油，即是萬年油，放少許，不用多的，大家看到鍋已經出煙了，先把火調小，然後我已經把魚尾抹乾淨了，先煎魚尾，魚尾的油份沒有四處流動，因為我抹得很乾淨，很用心抹，如果平時比較懶就不要抹得那麼乾淨，因為要拍片嘛。</p></a>
+				<a href="#00:04:58.28" id="00:04:58.28" class="lt" onclick="jumptoTime(298, this.id)"><p>多不少都要注意一下，抹得乾淨之後，油就不會四處流動，以往我燒紅鍋，放油，等煙見，再收細火慢慢煎，煎的時候不要太心急地動它，你看我放了幾十秒，差不多一分鐘，我都不動它，只是在說話，這是煎魚不破皮的第一步，我上一次做蘿蔔絲魚腩湯，我都教過大家怎樣做出奶白色的湯，今天因為我純粹做湯底，所以我會做得更加奶白。</p></a>
+				<a href="#00:05:48.28" id="00:05:48.28" class="lt" onclick="jumptoTime(348, this.id)"><p>我會煎得更加香，記住，如果做魚湯，你想它更加奶白，是煎得更加金黃色，更加香，它的奶白色就會更加厲害，更加濃郁，OK?</p></a>
+				<a href="#00:06:10.28" id="00:06:10.28" class="lt" onclick="jumptoTime(370, this.id)"><p>現在我不動它，現在差不多一分鐘多了，我才來弄，是不是很簡單?</p></a>
+				<a href="#00:06:21.28" id="00:06:21.28" class="lt" onclick="jumptoTime(381, this.id)"><p>你看，它沒有黏鍋，你不要以為容易見鍋就不會黏鍋，不好意思，大家不要以為容易見鍋就不會黏鍋，處理它不好，一樣會黏鍋，一樣會破皮，大家見到，我剛才放很少油，但已經足夠逼出它的魚油，大家都知道，魚湯之所以成為奶白色，是有個乳化的現象，而這個乳化的現象，它的程度去到那裡，是和你煎的魚，煎得夠不夠金香，是絕對有關係。</p></a>
+				<a href="#00:07:1.28" id="00:07:1.28" class="lt" onclick="jumptoTime(421, this.id)"><p>即是你越煎得它金香，越煎得它透，它的動物油逼出來的比例就會越高，當它的動物油經過高溫處理的比例越高的時候，它就越容易奶白色，OK，不說那麼多了，我經常都是，很懶的，煎東西都想上鑊，我先頭已經煎了很久，頭一轉我照較三分鐘，因為我先頭很早就熄小火，OK，三分鐘，我這裡就說完了。</p></a>
+				<a href="#00:07:33.28" id="00:07:33.28" class="lt" onclick="jumptoTime(453, this.id)"><p>然後等一會煎好魚，我開始落水，撞水的時候，開始加料的時候，我先再開機，OK，好了，大家差不多時間了，我們現在翻轉魚看看效果如何，時間到了，拿起鍋蓋，這次我用木鑊鏟，為甚麼呢?</p></a>
+				<a href="#00:08:6.38" id="00:08:6.38" class="lt" onclick="jumptoTime(486, this.id)"><p>因為待會我要將魚焗爛，嘩，這次煎得夠金香了，大家看到嗎?</p></a>
+				<a href="#00:08:19.38" id="00:08:19.38" class="lt" onclick="jumptoTime(499, this.id)"><p>基本上，這些是自然破皮的肉的收縮，這個位置，鏡頭看到嗎?</p></a>
+				<a href="#00:08:29.38" id="00:08:29.38" class="lt" onclick="jumptoTime(509, this.id)"><p>然後，大家看到的，很金黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:34.38" id="00:08:34.38" class="lt" onclick="jumptoTime(514, this.id)"><p>繼續煎另一邊，按壓一下，因為收縮時會有彎曲</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:46.38" id="00:08:46.38" class="lt" onclick="jumptoTime(526, this.id)"><p>所以，可以這樣說，我們入慣廚房煎東西，真的很他條，計準時間就可以了，基本上，效果不會離很遠，現在另一邊，上鍋蓋，不用理它，然後按時間，另一邊，三分鐘快到了，然後，進入下一個處理程序，差不多，OK，然後響鐘。</p></a>
+				<a href="#00:09:26.38" id="00:09:26.38" class="lt" onclick="jumptoTime(566, this.id)"><p>然後，放薑片，這時可以加少許油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:39.38" id="00:09:39.38" class="lt" onclick="jumptoTime(579, this.id)"><p>因為薑片要碰到油，然後，蔥頭，兩片蔥頭，然後就要撒上胡椒碎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:4.39" id="00:10:4.39" class="lt" onclick="jumptoTime(604, this.id)"><p>我很喜歡用胡椒碎的，尤其是我喜歡撒在油裏面爆炒，讓胡椒香散發出來，這個時候我們就開大火，因為其實單純三分鐘一煎一煎其實是不夠的，不夠香的，這個時候我就加升高溫，同時也要等蔥頭和薑有更加充分的吸收熱力，讓它出來更加均勻，現在差不多了，接下來又是我的必然步驟，就是玩火，這個時候溫度不高，然後關掉火。</p></a>
+				<a href="#00:11:7.71" id="00:11:7.71" class="lt" onclick="jumptoTime(667, this.id)"><p>為什麼呢?因為要加水了，記得我怎樣保養二結鑊嗎?</p></a>
+				<a href="#00:11:13.71" id="00:11:13.71" class="lt" onclick="jumptoTime(673, this.id)"><p>之前的影片都說過，就是不要讓溫差太高，二結鑊表面的塗層就不容易脫落，因為現在我做湯底，所以放水可以放很多都可以，這個份量已經超過2000cc，然後開大火，然後上鑊蓋，如果大家有看過蘿蔔絲魚腩湯，大家都知道接下來會發生什麼事，我先關掉火，等我煮好之後，做一個步驟，上次都說過，要把魚肉中硬再煮。</p></a>
+				<a href="#00:12:8.71" id="00:12:8.71" class="lt" onclick="jumptoTime(728, this.id)"><p>讓它變成更加純粹的奶白魚湯，等我做這個過程再開機。</p></a>
+				<a href="#00:12:18.71" id="00:12:18.71" class="lt" onclick="jumptoTime(738, this.id)"><p>謝謝觀看，大家看，這時候已經煮了大概三分鐘了，大家看，是不是比上一次更白呢?</p></a>
+				<a href="#00:12:35.77" id="00:12:35.77" class="lt" onclick="jumptoTime(755, this.id)"><p>因為我煎得更金黃、更透，魚的份量也多了，上次是一個魚腩，這次是兩條魚尾，先前有一個很重要的步驟，為什麼我煮的魚湯是不腥的呢?</p></a>
+				<a href="#00:12:56.77" id="00:12:56.77" class="lt" onclick="jumptoTime(776, this.id)"><p>除了有蔥頭、薑、胡椒碎之外，還有一個很重要的，就是陳皮，我不是單純的果皮，是真陳皮，很貴的，30元一兩，雖然是貴，但其實只是放陳皮，一兩就有十多塊了。</p></a>
+				<a href="#00:13:22.77" id="00:13:22.77" class="lt" onclick="jumptoTime(802, this.id)"><p>這時候是不是已經很白了?，但魚味還不夠，那我怎樣做呢?</p></a>
+				<a href="#00:13:30.77" id="00:13:30.77" class="lt" onclick="jumptoTime(810, this.id)"><p>就用鑊鏟，將魚肉切碎，這個菜式很多職業廚房都會做，為何餐廳的魚湯特別濃郁、特別白呢?</p></a>
+				<a href="#00:13:48.07" id="00:13:48.07" class="lt" onclick="jumptoTime(828, this.id)"><p>原因是除了正常的魚湯之外，還要把魚肉切碎，我現在切碎，因為我只用湯底做火鍋，所以我不介意將魚肉切碎，如果平常的話，我兒子一定會罵我，因為他很喜歡吃煮完魚湯的魚肉，因為很甘香、很棒的，一流的飯，就這樣熟的豉油，現在已經切碎了，然後再煮大約三分鐘就OK了，這個湯底可以做很多種變化，如果你不怕吃辣的話，可以放薑片、芫茜、皮蛋。</p></a>
+				<a href="#00:14:52.07" id="00:14:52.07" class="lt" onclick="jumptoTime(892, this.id)"><p>做一個清湯、芫茜皮蛋湯，另外，如果你是吃辣的話，我會加海底撈的湯底料，有很多種方法，除了這些，不辣的芫茜皮蛋湯，而且沒有那麼熱的，可以選擇海底撈、麻辣火鍋，或者北京的薩酸羊肉，也可以這樣做，因為有魚加上羊肉，鮮味真的不得了，有很多種變化，我經常說的，大家看到，我不是用滾水，我只是用水流水。</p></a>
+				<a href="#00:15:45.07" id="00:15:45.07" class="lt" onclick="jumptoTime(945, this.id)"><p>大家可以看到，滾水或者冷水，其實不是變成奶白色的關鍵，我再說一次，它變成奶白色是因為有乳化現象，而這個乳化現象，其實所有肉類、所有動物油脂，經過高溫處理之後再煮開，都會出現這個效果，即是煎雞、炸雞、煎豬骨、煎豬肉，同樣都可以做到這個效果，煎牛骨都可以做到這個效果，OK。</p></a>
+				<a href="#00:16:19.07" id="00:16:19.07" class="lt" onclick="jumptoTime(979, this.id)"><p>記住了，這個叫乳化現象，而這個乳化現象，是因為動物油經過高溫處理之後，再撞水去煮開的一種效果，在烹調上，其實我們要知道有這樣的東西，一如我們怎樣可以知道我們炒菜好不好吃呢，其實就是因為酶納現象，和焦糖化的現象，你只要學會了這三樣東西，你就無往而不利的，OK，現在我再煮，然後再開機，煮了三分鐘，大家看看。</p></a>
+				<a href="#00:17:3.17" id="00:17:3.17" class="lt" onclick="jumptoTime(1023, this.id)"><p>湯是否很奶白很creamy呢，比上次我煮的蘿蔔絲魚腩湯更加奶白色，更加濃郁，因為今天是用來做湯底，基本上調味不用太誇張，也不用放其他東西，因為海底撈本身已經有味道，所以我都會加一個，對到招，來囉，我會加一個濃湯寶，一塊就夠了，要加的是豬味，不是雞味，為甚麼呢?上次我已經解釋過了，因為豬油脂壯脹。</p></a>
+				<a href="#00:18:1.17" id="00:18:1.17" class="lt" onclick="jumptoTime(1081, this.id)"><p>魚湯非常鮮味，OK，好，這樣放一塊就夠了，紅湯煲，大家看看，對不到焦，對不到焦，對不到焦，對到了，大家看看是這樣的樣子，OK，不好意思浪費了一點時間，因為這個相機，對焦，不過算了，接著，直接，放進去，好，然後攪拌均勻，調好味，那就，太瀟灑了，又弄死了，等那個濃湯煲，煮開了就行了，你看我多realistic，是吧。</p></a>
+				<a href="#00:19:16.76" id="00:19:16.76" class="lt" onclick="jumptoTime(1156, this.id)"><p>真實的，不是學別人的，只有美觀，我之所以這麼嘮叨，就是不希望大家跟著我一起做，就做不到，現在我真的要開餐，好，夠濃了。</p></a>
+				<a href="#00:19:34.76" id="00:19:34.76" class="lt" onclick="jumptoTime(1174, this.id)"><p>大家可能會有個疑問，這麼多骨頭，做火鍋怎麼行，那不就，很多骨頭就很難吃，當然不是，既然我們對飲食有要求，有追求的話，現在我關火了，當然要，做一個步驟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:56.76" id="00:19:56.76" class="lt" onclick="jumptoTime(1196, this.id)"><p>好，接著，做什麼呢，沒錯，就要把魚渣隔起，哪個隔好呢，這個都可以，然後，倒湯進去</p></a>
+				<a href="#00:20:16.76" id="00:20:16.76" class="lt" onclick="jumptoTime(1216, this.id)"><p>咦，不好意思地方淺窄，那隻中式鑊頂住，鑊，大家看不看到，好，然後，壓一壓它，壓一壓它</p></a>
+				<a href="#00:20:42.76" id="00:20:42.76" class="lt" onclick="jumptoTime(1242, this.id)"><p>讓它那些汁，剩下的汁都出來，大家看到的，魚湯就是這樣了，大家等一等，這個時候，為防腎房還有多餘的魚骨，所以我就要拿一隻更密封的鯡魚，然後再隔一次，看剩下多少骨，這個時候就完全純粹是一個湯底。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:33.27" id="00:21:33.27" class="lt" onclick="jumptoTime(1293, this.id)"><p>做完這個之後，我們就可以加其他材料，先頭都說過，你可以用芫茜皮蛋湯，加薑片、芫茜皮蛋，搞定，馬上可以開餐，另外一個就是，現在我就要加海底撈湯料，等等，不想剪片，單人是差不多，所以呢，這個海底撈，給大家看看，好，然後拿湯料出來，一包而已 這麼貴，好，然後，那，現在我大概，這裡剩下的大概是，1500cc。</p></a>
+				<a href="#00:22:34.54" id="00:22:34.54" class="lt" onclick="jumptoTime(1354, this.id)"><p>1500cc，那今天我就，多少人吃呢?六個人吃，可能有七個，有好東西，大家一起欣賞，一起分享，然後倒進去，哇!這料真棒!</p></a>
+				<a href="#00:23:17.01" id="00:23:17.01" class="lt" onclick="jumptoTime(1397, this.id)"><p>好!接著第二包，接著第二包，有時候真的不難得，越想它快就越是...</p></a>
+				<a href="#00:23:33.01" id="00:23:33.01" class="lt" onclick="jumptoTime(1413, this.id)"><p>手忙腳亂，好!把這些湯料也倒進去，基本上，你這樣放兩包1500cc，然後再用水煮開，其實這裡標準的說法是，1000cc水加一包，但是因為我已經有魚湯底，有味道的底，對不對?</p></a>
+				<a href="#00:24:2.33" id="00:24:2.33" class="lt" onclick="jumptoTime(1442, this.id)"><p>所以我們可以加2500cc至3000cc左右，總之你的鍋有多大就加多少，這樣就夠味了，OK?現在開火煮滾，這個湯底就可以用了，那麼，到這裡，基本上，我的魚湯底加海底撈的湯底就完成了，那麼，接下來呢，這條片又是很長，很重要的，我經常覺得，那個，怎麼說呢，火鍋除了湯底重要之外，那麼重要的另外一個是什麼呢?</p></a>
+				<a href="#00:24:48.33" id="00:24:48.33" class="lt" onclick="jumptoTime(1488, this.id)"><p>當然是醬油底了，是不是?醬油底了，我給大家看一下，我家裡真的有很多法寶，等等，鏡頭比較動，是什麼呢?</p></a>
+				<a href="#00:25:0.33" id="00:25:0.33" class="lt" onclick="jumptoTime(1500, this.id)"><p>嘩!有這個，嘩!有這個什麼呢?</p></a>
+				<a href="#00:25:7.33" id="00:25:7.33" class="lt" onclick="jumptoTime(1507, this.id)"><p>我的長年都有一鍋東西在這裡，這鍋是什麼呢?</p></a>
+				<a href="#00:25:12.33" id="00:25:12.33" class="lt" onclick="jumptoTime(1512, this.id)"><p>就是我的萬年老水汁了，等等拿來開甜豉油，那麼，這個老水汁，很多人開甜豉油就說教導很複雜，但是其實我們一般來說，我們一般來說，甜豉油其實很容易很簡單，那麼我和大家分享一個很簡單的甜豉油，我自己有一個萬年的，所謂萬年呢，其實我都是用了一年多，因為之前那個處理得不好就倒了，這個呢。</p></a>
+				<a href="#00:25:47.33" id="00:25:47.33" class="lt" onclick="jumptoTime(1547, this.id)"><p>就有一年歷史了，超過一年歷史的老水，放在這裡，如果處理得好的話，就全家之寶，那麼，其實呢，大家要開一個甜豉油，不需要搞得很複雜的，如果你家裡本身有其他的材料在這裡的話，加在一起，就是的了，好了，不說那麼多了，那麼我等一會處理這個醬汁的時候，我再和大家再說。</p></a>
+				<a href="#00:26:15.33" id="00:26:15.33" class="lt" onclick="jumptoTime(1575, this.id)"><p>OK，終於等到開餐的時候了，給大家看看，真的看到都想吃，我剛才偷吃了，嘩 行啊，好吃過外面，我經常說的，一定要好吃過餐廳，自己做的才值得，是不是，這個就是辣椒，有人特別喜歡吃，這個醬我已經拌好了，這個，就是先頭很簡單，拿些滷水，生抽、糖、辣椒、蒜就搞定了，今晚，這些肥牛就不太好，不過窮嘛，還有黑白。</p></a>
+				<a href="#00:27:6.19" id="00:27:6.19" class="lt" onclick="jumptoTime(1626, this.id)"><p>黑白這個牛柏葉，好，我們要開餐了，正啊正啊正啊，吃飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

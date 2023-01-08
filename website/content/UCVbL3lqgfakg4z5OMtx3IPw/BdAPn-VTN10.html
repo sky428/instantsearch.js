@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——咖喱燜魚，雖然是隔夜咖喱汁，但味道更香濃，味美更比重慶大慶的原產更勝一籌！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'BdAPn-VTN10',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——咖喱燜魚，雖然是隔夜咖喱汁，但味道更香濃，味美更比重慶大慶的原產更勝一籌！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，今晚我想同大家分享，可能好多中傳未玩過嘅嘢，大家都知道我上一條影片就整咗個咖喱雞，咁大家見到好大兜，咁呢其實呢，我整咁大兜呢，就，係有預謀嘅，因為點解呢，通常咁好執呢我嗰啲咖喱雞我自己就好有信心嘅通常呢，食到舔舔嘴係咁送飯好好送飯嘅，咁所以最後尾呢食兩餐都一定係淨嘅，咁所以我就吩咐我啲仔女就話你哋食呢就炒曬啲雞出嚟食啦。</p></a>
+				<a href="#00:00:49.55" id="00:00:49.55" class="lt" onclick="jumptoTime(49, this.id)"><p>剩返啲汁畀我，我哋整咩呢，整咖喱魚，咁而我呢個整嘅咖喱魚呢我個仔嘅評價呢就係比重慶大廈嘅正宗嘅，印度人呢，整嘅，咖喱魚呢仲更加好食，冇腥味，ok，咁呀喺介紹呢個點樣整之前呢即係我想講嘅呢，就係其實我哋作為一個家廚或者，Evan係，作為一個廚師啦ok，即係無論佢係專業廚房又好或者家廚都好，其實我哋要有放開啲個心懷。</p></a>
+				<a href="#00:01:26.41" id="00:01:26.41" class="lt" onclick="jumptoTime(86, this.id)"><p>即係學習，世界其他地方嘅，廚藝，或者食製，然之後呢再融會貫通呢其實可以製作出好多美味嘅菜餚出嚟嘅，唔一定要強調正宗，講真啦我坦白講我就好唔欣賞呢，日本人嘅某一啲嘅即係，菜色嘅，咁但係，我就學咗佢好多嘅概念嘅，即係我盡量呢就學咗食過之後，我覺得ok喎，咁然之後呢我就會係學咗佢係點樣整，跟住然之後再用返喺我中廚上面。</p></a>
+				<a href="#00:02:4.79" id="00:02:4.79" class="lt" onclick="jumptoTime(124, this.id)"><p>ok，咁所以呢其實就係我哋學無止境嘅，講真，即係唔好成日話我係香港人，或者我食慣粵菜嘅，所以呢我永遠都係整粵菜㗎啦，我講求粵菜嘅正宗，我唔講求味道嘅咁其實，就等於係我成日，話我老婆一樣即係當年嗰陣時佢健康嗰陣時，我成日笑鬼佢，你呢樣又唔食嗰樣又唔咁，咁其實你食少咗好多世界美味㗎喎，係咪尤其是你唔肯食辣。</p></a>
+				<a href="#00:02:39.85" id="00:02:39.85" class="lt" onclick="jumptoTime(159, this.id)"><p>咁變咗呢，你係少咗好多嘅，即係口福之慾㗎喎，咁其實係咪應該做人係無論食又好或者煮都好應該要放鬆一啲，放開自己嘅心懷，該學就學，見到人哋整得好，或者係想嘗試下人哋嘅菜係應該點樣整嘅，咁你咪學習下囉或者調返轉頭會係，增進咗你本身，嘅廚藝，嘅功力呢係咪，嗱嗱嗱呢啲概念廢話就講完啦咁我介紹材料啦咁咪梗係最主要就係，琴馬克嗰個咖哩汁啦ok夠味㗎啦已經。</p></a>
+				<a href="#00:03:20.29" id="00:03:20.29" class="lt" onclick="jumptoTime(200, this.id)"><p>今日呢我就好啲，呢個呢就係我好鍾意買龍躉嘅，龍躉咁本來呢就兩嚿扒就夠㗎啦，但係我見到佢買剩嗰個尾呀，咁我同老闆呢就好熟嘅，咁所以呢我同佢講，哎你畀曬我啦咁樣，結果嘩大佬成兩嚿水，不過呢度可以食兩餐真，咁啊，喇咁其實呢，大家見到呢嚿魚係咪魚扒係咪，咁大家唔使驚啊，其實我哋好pure好簡單嘅啫製作，係簡單過我哋中廚嘅ok。</p></a>
+				<a href="#00:03:55.38" id="00:03:55.38" class="lt" onclick="jumptoTime(235, this.id)"><p>咁大家睇下我點做囉喎，我首先呢放落去洗一洗佢先啦，嗱咁啊見到白色嗰嘢水唔好嘈啊，嗰啲洗米水嚟嘅我哋家廚嘅，絕技嚟嘅係咪啊，可以清潔消毒嘅ok，嗱咁我呢就攞水沖一沖佢啦，好嗱咁呢呢度呢我就介紹一下材料，今晚嘅材料其實好簡單嘅啫，因為大部分嘅材料，已經喺嗰個咖喱汁嗰度已經有齊㗎喇ok，咁所以呢基本上今晚呢就唔使點樣。</p></a>
+				<a href="#00:04:27.98" id="00:04:27.98" class="lt" onclick="jumptoTime(267, this.id)"><p>處理啲材料嘅主要就有，蔥啦，蔥到啦，咁呢啲係中式嘢嚟嘅印度係唔會有嘅，咁啊少少個蔥花就用嚟點綴嘅ok，即係影靚相啦，好嗱咁呢呢個時候呢我哋，呃稍為洗乾淨佢啦，嗱咁我哋洗嘅時候呢洗魚呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:49.18" id="00:04:49.18" class="lt" onclick="jumptoTime(289, this.id)"><p>因為啲斑類呢就好多殘嘅，咁有兩個方法，一個方法呢就用牙刷，嗱我有個專用嘅洗魚洗海鮮嘅牙刷嘅，另外一個呢就係要攞鹽去攪佢，ok兩個方法都得㗎哈，咁因為呢呢舊魚呢好揸手呀</p></a>
+				<a href="#00:05:9.88" id="00:05:9.88" class="lt" onclick="jumptoTime(309, this.id)"><p>咁我唔需要攞鹽啦，咁我哋呢就用呢個，魚呢好揸手呀咁我唔需要攞鹽啦，我只需要係擦乾淨嗰個魚嘅表面，咁會有少少殘呢我哋由得佢啦，咁因為單人操機呀所以呢大家唔好介意，我就即係唔畀大家睇啦，因為我隻手濕呢，郁唔到部相機呀，咁啊嗱咁樣擦啦ok，好似擦鮑魚咁擦啦，將佢嗰啲窿窿嗱嗱擦乾淨佢啦，好三萬關鍵性。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:47.29" id="00:05:47.29" class="lt" onclick="jumptoTime(347, this.id)"><p>然後呢，等一會，先放好刀，好，然後呢，我們呢，就將，洗好魚，拿個鐵盤，然後呢，就拿什麼呢，放重鹽，一匙、兩匙、三匙、四匙，OK，然後呢，放些胡椒碎，放多少少都不怕，然後呢，就將魚肉散開，如果大家有大盤的話，那就大家，不好意思，我拿開白膠袋，影響白平衡，不知道大家會不會拍照，白色影響白平衡，可以設定白平衡，所以先前比較黃。</p></a>
+				<a href="#00:07:13.29" id="00:07:13.29" class="lt" onclick="jumptoTime(433, this.id)"><p>現在就比較白，正常就是，我們現在，我眼見現場的白平衡，好了，就，繼續灑水，大家記不記得，我曾經說過，為什麼要用鹽醃魚，原因是，因為這樣可以，幫魚脫水，脫水之後，會出現什麼結果呢，會出現魚肉脫水後，它的紋理會更加緊緻，可以改變魚的口感，本來爽口的會更爽，本來是霉的，就會變成實肉，本來不是很受熱的，變成很受熱。</p></a>
+				<a href="#00:08:19.27" id="00:08:19.27" class="lt" onclick="jumptoTime(499, this.id)"><p>所以如果大家想吃魚肉的時候，吃魚肉的時候，吃得更加過癮，更加有好兆頭的話，記住要用鹽醃，我之前在蒸鯇魚那裡也說過，做其他的菜式那裡也說過，關於魚類的，我現在稍微繼續，因為這塊魚太大塊了，所以我要做久一點，現在可以了，然後略略醃它，因為我用了很重的鹽，這裡大概一斤左右，不夠兩斤，當然它是連骨的。</p></a>
+				<a href="#00:09:8.27" id="00:09:8.27" class="lt" onclick="jumptoTime(548, this.id)"><p>所以肉其實很少，一斤左右，我用了四斤鹽，屬於重鹽的，記住五至十分鐘就要拿起來，清洗一下，否則魚肉會過鹹，可以嗎?</p></a>
+				<a href="#00:09:23.27" id="00:09:23.27" class="lt" onclick="jumptoTime(563, this.id)"><p>等我弄好之後，開始開鍋煎魚的時候，我再跟大家說，這個其實混合了中廚和西廚，或者外國廚藝的特色，大家以後可以試一下，這個方法，我兒子的評價，是比重慶大雅正宗的印度咖哩魚，更好吃，OK?</p></a>
+				<a href="#00:09:55.07" id="00:09:55.07" class="lt" onclick="jumptoTime(595, this.id)"><p>等一會兒見，好了，大家，那些魚已經醃好了，我現在就開火，先燒鑊，在這個醃完之後，洗乾淨之後，我們要用大量的廚子幫它吸乾身體水，這個過程是很重要的，等一會兒下鑊的時候，就會好煎一點，OK?</p></a>
+				<a href="#00:10:30.07" id="00:10:30.07" class="lt" onclick="jumptoTime(630, this.id)"><p>那些廚子抹乾身體，抹到它乾乾淨淨，等一會兒就好煎一點，OK?</p></a>
+				<a href="#00:10:44.07" id="00:10:44.07" class="lt" onclick="jumptoTime(644, this.id)"><p>其實這個咖喱魚是很純粹的，不需要很大功夫，用我們中廚的做法去醃，好，四大塊，正，好了，現在就開始，鑊出煙了，這個時候我們就下油，如果有豬油的就下豬油，如果沒有的話，就下普通的生油都可以，為什麼我會下豬油呢?</p></a>
+				<a href="#00:11:19.07" id="00:11:19.07" class="lt" onclick="jumptoTime(679, this.id)"><p>原因就是我講過很多次，豬油是可以辟腥的，OK?</p></a>
+				<a href="#00:11:27.07" id="00:11:27.07" class="lt" onclick="jumptoTime(687, this.id)"><p>所以為什麼我的魚是不腥，好了，現在燒到很紅了，是不是?</p></a>
+				<a href="#00:11:31.07" id="00:11:31.07" class="lt" onclick="jumptoTime(691, this.id)"><p>向左邊，關掉平均小火，這個煎魚是基本的技巧，一定要燒紅鑊，見煙，下油，再見煙，然後關掉小火，向左邊扭，就是一個平均小火，OK?</p></a>
+				<a href="#00:11:51.07" id="00:11:51.07" class="lt" onclick="jumptoTime(711, this.id)"><p>這個時候我們就可以先放魚進去，記住煎魚要有耐心，其實這段影片更加需要大家注意，如何煎魚煎得好，不黏鍋底，兩個字，耐心，大家看到我放了鑊後，我完全不理會它，然後移動鑊，不動一動鑊，為甚麼呢?</p></a>
+				<a href="#00:12:44.33" id="00:12:44.33" class="lt" onclick="jumptoTime(764, this.id)"><p>因為油不足以浸泡所有魚，我動一動鑊，讓油可以觸碰到邊緣部分的魚肉，這樣就會煎得漂亮，這個過程需要很長時間，大家聽到嗎?</p></a>
+				<a href="#00:13:9.61" id="00:13:9.61" class="lt" onclick="jumptoTime(789, this.id)"><p>我煎魚是否很少有油彈出來?</p></a>
+				<a href="#00:13:13.81" id="00:13:13.81" class="lt" onclick="jumptoTime(793, this.id)"><p>為甚麼呢?</p></a>
+				<a href="#00:13:14.81" id="00:13:14.81" class="lt" onclick="jumptoTime(794, this.id)"><p>因為我用廚紙抹乾淨，這段時間有約十分鐘，這個時候，我把油弄勻，然後上鍋蓋，小火，上鍋蓋，然後多少分鐘呢?</p></a>
+				<a href="#00:13:44.31" id="00:13:44.31" class="lt" onclick="jumptoTime(824, this.id)"><p>1、2、3，3分鐘，好，然後我就不理它了，我等一下再開機，再看看怎樣，記住，由下雨到現在，我有沒有動過魚，有沒有動過魚?沒有，OK，記住，這個是很重要的煎魚的操手，OK，忍住，不要動它，OK，好了，現在3分鐘過了，中響了，先拿起它，把蓋子拿起來，現在，魚是有一點黏底的，這個時候，我們加一點油進去。</p></a>
+				<a href="#00:14:33.08" id="00:14:33.08" class="lt" onclick="jumptoTime(873, this.id)"><p>걱 Exhale</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:41.90" id="00:14:41.90" class="lt" onclick="jumptoTime(881, this.id)"><p>zen，chin，perspective</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:39.28" id="00:14:39.28" class="lt" onclick="jumptoTime(879, this.id)"><p>encourages，Type，jaką wrists，PT，Patrol，ambassadors，들고，homelessness，Pl히ceans，Lunchлох，increasingly，munition，謝謝觀看，魚皮煎得很漂亮，因為鑊的弧度不夠，所以魚皮不太黏底，所以魚肉的部分煎得不好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:2.55" id="00:15:2.55" class="lt" onclick="jumptoTime(902, this.id)"><p>但還可以，這時候不用上鑊蓋，繼續煎，反轉後煎多久，鑊始終不夠大，煎多久? 煎三分鐘，我喜歡煎魚三分鐘又三分鐘，我再放多點油，因為魚皮不能浸浸到魚面，煎得不夠香，這時候不用上鑊，繼續煎三分鐘，煎完再反轉給大家看，三分鐘了，反轉，煎魚扒需要長時間，這個時候我們就開始調味，再加少許鹽，然後再加一點蔥。</p></a>
+				<a href="#00:16:45.07" id="00:16:45.07" class="lt" onclick="jumptoTime(1005, this.id)"><p>像普通煎扒那樣，然後，胡椒碎，然後我們就開大火，最大火，繼續煎，其實做咖喱魚最主要是煎的部分，比較花時間，煮得很快，幾分鐘就完成，然後反轉它，魚皮已經煎得很金香，現在這塊魚其實很嫩滑，反轉它，加少許鹽，現在火力很大，開始冒煙了，然後加些胡椒碎，為了減低高溫，可以抽離它，因為煎到差不多，它就不會黏鍋，因為魚扒大，所以它不會動。</p></a>
+				<a href="#00:18:22.97" id="00:18:22.97" class="lt" onclick="jumptoTime(1102, this.id)"><p>這個時候，我們要加入中廚的手藝，大家看到嗎?</p></a>
+				<a href="#00:18:36.97" id="00:18:36.97" class="lt" onclick="jumptoTime(1116, this.id)"><p>這塊魚想生都難，然後我把昨晚的咖喱炒雞翅，我先加些水，不然不夠手快，怕燒焦，先加些水，其實這個煎法有點像順德的煎魚，然後加入咖喱，等一等，我加些水再煮，拌勻，我兒子問了我一個很好的問題，他說:「喂，老爸，你用咖喱雞的咖喱煮魚可以嗎?」，我說:「你上次不是覺得我煮得比重慶大廈正宗的印度咖喱魚好吃嗎?」，我回答:「知道，因為有雞肉在裡面，雞肉混合魚肉可以脆身的，再加上咖喱雞聽到名字已經舔舔嘴，怎可能不好吃呢?」。</p></a>
+				<a href="#00:20:35.15" id="00:20:35.15" class="lt" onclick="jumptoTime(1235, this.id)"><p>現在開始滾了，大概滾5分鐘左右，現在開始大滾了，然後上鑊蓋，然後我們計5分鐘，等一會兒煮好再給大家看看，咖喱這東西大家不要說有多好看，大家都知道煮起來咖喱沒有什麼賣相，不過吃起來就非常非常好吃，好了，又中響了，5分鐘就完成了，看看，OK了，視乎大家的口味，我這個有很多汁，為什麼呢?因為我兒子喜歡用汁來拌飯，大家有沒有發覺我還沒有完全調味，以為才調味完，這個時候我們中廚的手藝就出場了。</p></a>
+				<a href="#00:21:47.15" id="00:21:47.15" class="lt" onclick="jumptoTime(1307, this.id)"><p>加蠔油，大概2茶匙左右，這些印度人是不會用的，然後加生抽，1，2，3，4，又是2茶匙，因為多汁，先前不是加了鹽，沒有加糖，所以，對不起，差點連糖鹽也分不開，又老步閉塞，然後加糖，不要讓它只剩下鹹味，然後輕輕地，加少許雞粉調味，好，這樣就完成了，咁呢就會變咗呢嗰種味呢就同呢個係印度咖哩呢就有咗分別啦，就有邊向我哋在地化咗邊向我哋香港人嘅口味。</p></a>
+				<a href="#00:23:1.32" id="00:23:1.32" class="lt" onclick="jumptoTime(1381, this.id)"><p>咁呀嗱咁咪完成㗎啦咁呀畀大家睇下ok咁就係咁多，好呀而家熄得火啦，等一會兒我再去舀起，再和大家做一個簡介總結，好，大家這樣我就已經舀好了，大家可以看到的，這個，等等我，好，基本上這個咖哩魚就完成了，有幾個要點要注意，咖哩魚來說，隔夜咖哩，用隔夜咖哩是比用新鮮開的咖哩好，因為隔夜咖哩有其他肉的味道。</p></a>
+				<a href="#00:23:59.18" id="00:23:59.18" class="lt" onclick="jumptoTime(1439, this.id)"><p>反而這個好，當然出於宗教理由，隔夜咖哩應該沒問題，牛肉沒問題，豬肉就麻煩一點，但是有雞味的咖哩，煮魚是非常非常野味的，非常美味的，這個就是第一，第二，醃的部分不用太複雜，就當魚扒一樣，用鹽醃一醃，重鹽，大概醃五分鐘左右，然後沖洗乾淨，抹乾淨，然後拿下去煎，行不行?</p></a>
+				<a href="#00:24:35.18" id="00:24:35.18" class="lt" onclick="jumptoTime(1475, this.id)"><p>第三，調味方面都不需要太複雜，你當煎牛扒就可以了，基本上就是這樣，這一鍋咖哩魚，我可以告訴大家，又是送飯神器，我兒子的評價就是比重慶大廈的印度咖哩魚好吃，有一件很重要的事，我必須要說的，就是大家不要經常用正宗拐嘴邊，你問我這個像什麼咖哩，雖然基本上咖哩蛋都可以是印度咖哩的味道，不過，我就加入了很多中廚的技巧。</p></a>
+				<a href="#00:25:21.18" id="00:25:21.18" class="lt" onclick="jumptoTime(1521, this.id)"><p>例如說，印度人是不會用蠔油，我用蠔油來調味，第二，印度人是不會用青蔥的，他們會用洋蔥，印度人未必會加酒去煎魚，但是我又加了，諸如此類，所以不要限制自己的創作能力，也不要限制隔夜的東西不好吃，其實有什麼隔夜才好吃，你只要是食家就知道，好像我兒子一樣，有很多東西他故意，我問他不好吃嗎?</p></a>
+				<a href="#00:25:59.18" id="00:25:59.18" class="lt" onclick="jumptoTime(1559, this.id)"><p>他說不是，不過隔夜會更加好吃，所以他故意留到隔夜才吃，OK?行不行?</p></a>
+				<a href="#00:26:5.18" id="00:26:5.18" class="lt" onclick="jumptoTime(1565, this.id)"><p>基本上一個咖哩炆魚就完成了，我只不過是利用昨晚剩下的咖哩汁，OK?行不行?</p></a>
+				<a href="#00:26:15.18" id="00:26:15.18" class="lt" onclick="jumptoTime(1575, this.id)"><p>做完東西當然要吃飯了。</p></a>
+				<a href="#00:26:17.18" id="00:26:17.18" class="lt" onclick="jumptoTime(1577, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

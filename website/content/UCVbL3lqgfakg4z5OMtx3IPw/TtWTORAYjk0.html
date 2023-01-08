@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——魚香茄子</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TtWTORAYjk0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——魚香茄子</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.76" id="00:00:0.76" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天想和大家分享一下，這個是魚香茄子，我相信大家看到有茄子、辣椒、鹹魚都知道，今晚我想做魚香茄子，先介紹一下材料，當然有一塊鹹魚，這是梅香鹹魚，一般酒樓會用這隻鹹魚，這隻鹹魚可以用來做鹹魚雞粒炒飯，可以做鹹魚蒸肉餅，但通常不會用到這麼貴，而且用爽身的鹹魚，蒸的鹹魚肉餅會比較好吃，梅香鹹魚主要是魚香茄子。</p></a>
+				<a href="#00:00:55.76" id="00:00:55.76" class="lt" onclick="jumptoTime(55, this.id)"><p>鹹魚雞粒炒飯、鹹魚雞粒豆腐煲，這一類需要做鹹魚配菜的菜式，然後我們來看看，當然有幾隻辣椒乾，或者新鮮的辣椒，還有蒜頭，其實也可以加一些薑，剁一些薑末，會比較惹味，大家看看，主角茄子，為何今天我會做魚香茄子呢，因為我看到街市的茄子非常便宜，這裡有兩斤，大家猜猜多少錢?十元，抵食。</p></a>
+				<a href="#00:01:39.34" id="00:01:39.34" class="lt" onclick="jumptoTime(99, this.id)"><p>然後呢，很多人會在正式的酒樓，食肆就會用四川豆瓣醬，但我喜歡用老乾媽，我貪它更惹味一點，但有老乾媽不夠，我再加些黃豆醬，這個黃豆醬其實就是豆瓣醬，或者廣東豆瓣醬，或者叫做甜麵豉，當然，又怎可以沒有肉碎呢，肉碎已經拌好了，大家看看，然後呢，我介紹完材料之後呢，然後我們就去下一步，等一下再看怎樣做。</p></a>
+				<a href="#00:02:33.89" id="00:02:33.89" class="lt" onclick="jumptoTime(153, this.id)"><p>好了，我把所有材料都切好了，給大家看看我切好材料的狀態，大家看看這個，馬膠鹹魚，梅香鹹魚，不是馬膠，是膠魚，梅香的膠魚，切成小粒備用，然後，我已經說過了，我會用薑，薑末在這裡不是隨意的，完全不是隨意的，主要是因為我的胃不舒服，加一點點薑末就可以對胃好，還有，其實我都很喜歡吃茄子，原因就是這幾十年以來，我一直都胃不舒服。</p></a>
+				<a href="#00:03:23.41" id="00:03:23.41" class="lt" onclick="jumptoTime(203, this.id)"><p>以前因為應酬太多，所以我喜歡吃茄子，胃不舒服的時候吃茄子就OK了，除了薑末之外，還有蒜蓉，還有辣椒乾切好了，然後，我忘記介紹了，這個蔥花已經切好了，然後，當然是茄子，茄子大家看到的，我通常會刨3條茄子皮，留一點點紫色的皮，其餘的都是肉，這是我習慣我奶奶教我的，我都幾十歲了，你想想我奶奶已經過百歲了。</p></a>
+				<a href="#00:04:6.21" id="00:04:6.21" class="lt" onclick="jumptoTime(246, this.id)"><p>已經八年歸老了，這是傳統的做法，然後，肉碎，好，接下來我介紹完材料就看看怎樣做了，一個魚香茄子最重要處理茄子的程序，之前我已經炸了一些 留一些給大家示範一下，怎樣去炸茄子，為何要炸茄子呢?其實茄子很吸油，很多家庭主婦 即是家廚，為何做茄子都要乳色?</p></a>
+				<a href="#00:04:48.93" id="00:04:48.93" class="lt" onclick="jumptoTime(288, this.id)"><p>為何酒樓餐廳的茄子會那麼鮮色?</p></a>
+				<a href="#00:04:53.93" id="00:04:53.93" class="lt" onclick="jumptoTime(293, this.id)"><p>保持原本紫色的狀態，原因是油炸過，油炸 吸油當然需要特別處理，炸完後 放在吸油紙上，讓它吸收油份，茄子吃下去舒服 跟吸油份有關係，即是對胃，一般家庭主婦 用那麼多油，油炸完怎麼辦?</p></a>
+				<a href="#00:05:29.93" id="00:05:29.93" class="lt" onclick="jumptoTime(329, this.id)"><p>我通常不是用很多油，我之前都跟大家說過 用半油炸的方式，但炸茄子 我喜歡用全油的方式，我通常預了很多不銹鋼鍋，有一個大尺寸的，通常炸完後 拿來儲起來，通常大約一兩個星期就可以用完，當然是每餐煮飯，通常炸茄子 油溫大約150至160度，炸的時候 不可以炸很久，大約十多二十秒就好拿起，因為太久的話 它吸太多油就不好。</p></a>
+				<a href="#00:06:14.93" id="00:06:14.93" class="lt" onclick="jumptoTime(374, this.id)"><p>太熟的話 煮起來就更加不好控制，現在油溫夠高了，然後就全部放進去，大家數了，十多二十秒，現在這樣就可以了，基本上這樣就可以了，不用特意炸很久，輕輕十多二十秒，OK，我們可以關火了，讓它慢慢，炸完之後，大家看看紫色還在，待會這個紫色還可以保持，只要你是即晚食，不翻熱的話，茄子皮的紫色依然保持得非常鮮色。</p></a>
+				<a href="#00:07:4.86" id="00:07:4.86" class="lt" onclick="jumptoTime(424, this.id)"><p>這個就是餐廳和家廚的分別，OK，其實魚香茄子的重中之重，我覺得就是要炸鹹魚，當然一般餐廳是不會讓你看到怎樣炸鹹魚，如果是家廚的話，炸也不現實，因為炸完鹹魚的油是不能用的，所以大家看到我放一點油，好像煎肉餅、煎魚那樣的油份，然後把鹹魚粒放下去煎，把鹹魚粒放下去煎，煎到它透為止，即是脆脆的，這樣就可以了。</p></a>
+				<a href="#00:08:4.38" id="00:08:4.38" class="lt" onclick="jumptoTime(484, this.id)"><p>用細火煎了一會兒，鹹魚也變成金黃色，家廚在落材料的比例和時間上，先後次序是一個很好的時間管理訓練，現在鹹魚差不多了，煎到金黃色之後，鹹魚就不會再腥，現在放薑末下去炒，然後放蒜蓉和辣椒，放薑和蒜蓉後，基本上那些是水而不是油，自己家廚可以用這個方法，就是先煎鹹魚，煎完鹹魚後連鎚，連鹹魚油一起放下去。</p></a>
+				<a href="#00:09:19.02" id="00:09:19.02" class="lt" onclick="jumptoTime(559, this.id)"><p>爆香蒜蓉、薑末和辣椒，這樣就可以節省油，而且因為油是沾有鹹魚的香味，反而你在家裏做的魚香茄子，會比餐廳做的更加強烈的魚香味，當然這是港式魚香茄子的做法，其實真正的魚香茄子是沒有鹹魚的，我想大家都聽過，不過我當然喜歡吃港式的魚香茄子，好了，現在連蒜蓉都已經變成金黃色，記得這個時候要控制油溫。</p></a>
+				<a href="#00:10:9.94" id="00:10:9.94" class="lt" onclick="jumptoTime(609, this.id)"><p>鍋的溫度是很重要的，所以大家盡量在這個時候要收細火慢慢煎，這樣比較容易控制，不會容易煎到焦了，現在這個時候就放老乾媽，放少許就夠了，2匙不需要多，然後就放黃豆醬，要習慣ZFC的自動對焦，雖然它很棒，比蝴蝶飯更棒，9條街19條街，好了，現在就放所有醬料，放原子醬，放老乾媽，現在就爆香它，你看到我的薑、薑蓉、蒜蓉炒到金黃色。</p></a>
+				<a href="#00:11:18.62" id="00:11:18.62" class="lt" onclick="jumptoTime(678, this.id)"><p>好像黃金蒜一樣，我就喜歡這樣，因為這樣會香口很多，這個時候我們要放什麼呢，放蠔油，記住這個時候不要放水，放蠔油，落老抽，落生抽，生抽我鍾意，生抽即係豉油呢間嘢，係華人飲食嘅偉大發明，呢個時候我當佢像醬料咁炒，我仲係用最細火，慢慢炒，點解要咁做呢，因為咁樣係會令到醬料，喺混合過程當中更加好，同埋其實好多時候風味係邊度嚟。</p></a>
+				<a href="#00:12:23.08" id="00:12:23.08" class="lt" onclick="jumptoTime(743, this.id)"><p>就係炒窿少少，輕輕少少炒窿，嗰種焦香感，呢一種有科學根據，呢種叫焦糖化，同埋係梅納反應，有少少焦糖化嘅呢個係菜餚，係會香口好多，所以呢個時候我打醬就要打得好靚，即係要好畀心機，而家大概都打咗一分鐘，好香，慢火，跟住開返大火，住咩呢，放呢個肉碎，大家睇到啲肉碎我已經煎到佢有少少焦香，呢個肉碎煎到有焦焦地。</p></a>
+				<a href="#00:13:22.08" id="00:13:22.08" class="lt" onclick="jumptoTime(802, this.id)"><p>窿窿地輕輕，金黃色有少少，咁係令到佢更加惹味，detalutz� Awças SEC Hospital</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:37.76" id="00:13:37.76" class="lt" onclick="jumptoTime(817, this.id)"><p>thrive，потому Nikki，ré confidential，Пом Carilli，Ollie，yells，quotes，achten，Ride，Grill，irler，Caf pony，pouring，应あ�장，ethnicity，Até，loot Cam estás，ambjour。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:32.38" id="00:13:32.38" class="lt" onclick="jumptoTime(812, this.id)"><p>download</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:45.46" id="00:13:45.46" class="lt" onclick="jumptoTime(825, this.id)"><p>anges，imagin，MSorman</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:34.04" id="00:13:34.04" class="lt" onclick="jumptoTime(814, this.id)"><p>있거든요，as incr Petersburg，ответ，Dar，pissed，ninguém америк，謝謝觀看，然後就要加水，水不需要太多，大概我加了300cc左右，大家看到的，剛剛好過面就可以了，可以了，當然，其實魚香茄子在我來說是一個很簡單的香港菜，是非常惹味，很適合配飯，不用調味，隨便它。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:31.48" id="00:14:31.48" class="lt" onclick="jumptoTime(871, this.id)"><p>大概煮它兩分鐘左右，現在煮了兩三分鐘左右，大家看到的，顏色是不是很漂亮呢，這個時候我們就要調味了，這個時候還未加茄子，大家先頭看到我加了很多醬料，所以這個調味不用太多，大概半匙鹽就可以了，因為除了醬料有味之外，還有肉也要拌過，糖可以放多一點，三匙，這裡有半匙糖，雞粉，大家看到，雞粉大概放一茶匙左右。</p></a>
+				<a href="#00:15:30.48" id="00:15:30.48" class="lt" onclick="jumptoTime(930, this.id)"><p>這個時候我們就拌勻，茄子也會吸水，如果大家想拌飯的話，這個時候水就少了一點，可以放多一點，再加先頭鑊的水，總共有六百克肉，一千二百克，大概一千克左右的茄子，然後加水大概六五百cc左右，這個時候我們就加茄子，大家看看茄子顏色漂亮不漂亮，這個時候，這個呢，就有少少熟那一頭變色了，明不明。</p></a>
+				<a href="#00:16:19.72" id="00:16:19.72" class="lt" onclick="jumptoTime(979, this.id)"><p>所以為什麼我先頭說十多二十秒就好了，有時候手感的東西，很多時候會有錯誤的，因為我不是計足那個碼錶，大家看到的，我底部有張吸油紙在那裏，很多油，其實先頭還有另外一張的，中間那一層，不過我已經拔掉了，茄子就要這樣了，不可以省的，用具是不可以省的，這個時候，我們稍微拌勻之後，拌勻它就可以了。</p></a>
+				<a href="#00:17:8.32" id="00:17:8.32" class="lt" onclick="jumptoTime(1028, this.id)"><p>大家有沒有看到，我不是用鑊鏟，我是用這個夾，我學了西廚的方法，因為這隻鑊是南韓的炒鑊，即是韓國的炒鑊，不是我們正宗的中國炒鑊，正宗的中國炒鑊，我當然用鑊鏟，這個時候，如果大家想多些汁送飯的話，還可以加多些水，因為茄子都會吸水，當然，茄子吸了水就很棒，口感很滑，大家看到了，我煮的時候顏色是不是很漂亮，就是茄子一定要油炸的原因。</p></a>
+				<a href="#00:18:5.32" id="00:18:5.32" class="lt" onclick="jumptoTime(1085, this.id)"><p>好了，現在其實可以了，因為我已經把茄子炸熟了，茄子是不需要熟得太厲害的，好，關火了，差點忘記了，關火之前，我們當然要放些蔥花，這樣就行了，OK，好了，給大家看看完成品，是不是顏色很漂亮呢，我再給大家看看，好，謝謝大家，再見，是不是很少油?</p></a>
+				<a href="#00:18:47.16" id="00:18:47.16" class="lt" onclick="jumptoTime(1127, this.id)"><p>是不是很少油?比餐廳少很多油，這就是吸油紙，為什麼我強調要用吸油紙的原因，還有，你看到我炒的過程當中，也是沒有放很多油，就算是爆材料，即是爆佐料的時候，大家可以參考一下，多謝收看，今天用一部新機，20fc拍攝，多了一些視覺，希望大家喜歡，拜拜。</p></a>
+</div>
+	</body>
+</html>

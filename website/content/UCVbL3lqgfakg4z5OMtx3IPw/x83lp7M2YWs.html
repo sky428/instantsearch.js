@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——泰醬雞絲魚腐米線，夏天太熱，吃湯粉就對了，其實不一定要吃地道粵菜哦，東南亞風味的湯粉可能更適合夏天酷熱天氣，大家快來試下吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'x83lp7M2YWs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——泰醬雞絲魚腐米線，夏天太熱，吃湯粉就對了，其實不一定要吃地道粵菜哦，東南亞風味的湯粉可能更適合夏天酷熱天氣，大家快來試下吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，我已經炸了魚腐，為什麼要炸魚腐呢?</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>因為我想食粉，所以要炸魚腐。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>大家都知，近來太熱，開著冷氣都很熱，，我現在廚房竟然可以流汗，已經有冷氣了，，所以沒什麼胃口，想食湯粉，，今天要做什麼湯粉呢?</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>今天我想做一個泰式的湯粉，，泰式的湯粉其實很簡單，，跟我們平時食的醬汁湯粉，難易程度差不多，，不過用的材料多一些，，我現在快要煮沸了，先介紹材料吧，，今天我想做什麼呢?</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>就是泰醬，雞絲魚腐米粉，，泰醬就是平時用的泰國萬用醬，，這個我已經去皮了，，因為這個雞肉不好看，所以去皮也沒辦法，，如果我走遠一點，去新都城街市，就有好賣的雞肉，，然後當然有，嘩，我先來炸的魚腐吧，，本來我想配泰式魚餅的，但泰式魚餅又不是很多地方有，，難找，不如自己做個魚腐吧，，魚腐配泰國粉，酸酸的，又滑，很棒，，。</p></a>
+				<a href="#00:01:47.00" id="00:01:47.00" class="lt" onclick="jumptoTime(107, this.id)"><p>現在水滾了，這個泰國湯粉其實湯底很簡單，，我先拆雞的，大家看看，雞的雞骨，我全部放進去，，全部放進去，，然後我之前有些白切雞，將雞腳，雞骨，全部放進去作為湯底，，然後放了這些之後，我將這些放進去，將這些放進去，將這些放進去，，我們就放幾片的帶皮薑，然後泰國粉，香茅是少不了的，一支香茅拍碎它，大家看看，拍碎了的，然後剪開它，即是切短，然後這些是甚麼，唐芹，連葉帶卦，全部放進去，連葉帶卦，全部放進去，然後就這樣煮，煮到十分鐘左右，十至十五分鐘左右，它就出味了，然後我們才慢慢調味，如果大家想惹味一點，再惹味一點，可以放一點胡椒碎，一點就可以了，。</p></a>
+				<a href="#00:03:14.11" id="00:03:14.11" class="lt" onclick="jumptoTime(194, this.id)"><p>好了，是不是這個湯底很清，是啊，其實湯底有很多種的，這個就是泰式的湯底，OK，然後我們就計時，十分鐘，十分鐘，十分鐘之後我們再調味，我才開機，好了，那麽，粉呢，我本來想用金邊粉的，不過想了想，咦，我家裡還有很多米線，所以我就用米線了，那這些米線呢，要事前大概煮它八至十分鐘，那就可以軟身，八分鐘就爽口一點，硬身一點，十分鐘保證每個人都喜歡吃很滑的，OK，那基本上就是這些了，那等一下大家就看看我怎樣做這個湯粉了，其實真的很簡單的，材料就多一點點，OK，等一下見，好了，十分鐘過了，看一下結果怎樣，那個效果，那麽就已經，關小火，就變成現在，就是這樣的樣子，都是看不到，對焦不到，太多煙了，OK，。</p></a>
+				<a href="#00:04:38.11" id="00:04:38.11" class="lt" onclick="jumptoTime(278, this.id)"><p>好了，然後我再調暗一點，真的沒辦法，好，然後我們就要將，這些菜我們就不要的，骨頭都不要了 只要湯底，我先撈起它，如果大家怕味道不夠，其實可以將它熬湯的時間加一倍，變成20分鐘，因為我覺得這樣的味道已經夠了，所以我不管了，10分鐘就完成了，翻一下，翻一下，這個時候其實味道不夠，主要是有芹菜味。</p></a>
+				<a href="#00:05:41.22" id="00:05:41.22" class="lt" onclick="jumptoTime(341, this.id)"><p>現在調大一點，等我一會兒再調光，這個時候有香茅味，芹菜味都有雞的，但是味道還是不夠的，所以這個時候我們要加一粒濃湯寶，代替雞骨不夠的情況，大家等等，現在這個新的濃湯寶很難開，以前一撕就開了，都不知道是不是過濾了，所以弄成這樣，好 加一粒濃湯寶，然後我們要繼續調味，一匙鹽，然後兩匙糖。</p></a>
+				<a href="#00:06:33.78" id="00:06:33.78" class="lt" onclick="jumptoTime(393, this.id)"><p>這個份量大概是2000cc左右的調味，我試下夠唔夠鹹先，呢個時候呢就唔夠鹹嘅，咁所以呢我哋可以再加多一匙鹽，即係有陣時大家嘅份量唔一樣呀，即係嗰個人數唔一樣呀，咁所以呢就可能會爭少少嘅咁唔緊要嘅，好嗱咁呢個時候就肯定夠味㗎啦，咁呢個時候呢我哋就開始鹿粉啦，稍為煮一煮便可以了，不用煮很久。</p></a>
+				<a href="#00:07:54.52" id="00:07:54.52" class="lt" onclick="jumptoTime(474, this.id)"><p>跟住之後我攞個篩仔先啦，好 大家看到的 我要關火了，大家看到的 那些湯都還沒滾，我就已經是立刻撈起那些米線了，米線如果之前已經是煮夠的話，你是不需要煮得那麼久的，如果不是的話 那些米線就過軟了，OK 現在開始 我就很簡單的，然後就砌東西下去，魚腹三塊，rig Card amateur merc��들이 retailer，uns。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:29.16" id="00:09:29.16" class="lt" onclick="jumptoTime(569, this.id)"><p>Alo unfor follows，millones snipp últimos，argument Sora</p></a>
+				<a href="#00:09:31.36" id="00:09:31.36" class="lt" onclick="jumptoTime(571, this.id)"><p>™，你想 senate，所以</p></a>
+				<a href="#00:09:31.66" id="00:09:31.66" class="lt" onclick="jumptoTime(571, this.id)"><p>senior，字幕由Amara.org社区提供，這個雞夠了材料 夠了豐富，然後我將生菜放進去，好，完成了，讓大家看看材料是否充足，等我拉高鏡頭讓大家看清楚，基本上就可以完成了，是不是很簡單?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:32.68" id="00:10:32.68" class="lt" onclick="jumptoTime(632, this.id)"><p>我現在先關掉抽氣扇，因為沒有開火，然後我淋湯上面，我這個泰式湯是很清的，大家不需要顧慮會不會很heavy，這個是第一，第二就是，說明泰式的，當然有，我剛剛給大家看看，剛剛新鮮打的，今天打的，之前有個短片，新鮮打的，又打三個月的泰醬，然後我們就放進去，這樣就將這個整體上，這個汁變成酸酸甜甜的。</p></a>
+				<a href="#00:11:41.79" id="00:11:41.79" class="lt" onclick="jumptoTime(701, this.id)"><p>我這個不單止有蔥，我還切了些唐芹，這樣做就會很香，整個粉麵，如果大家想更加香的話，怎麼辦呢?</p></a>
+				<a href="#00:12:0.79" id="00:12:0.79" class="lt" onclick="jumptoTime(720, this.id)"><p>加兩滴麻油，然後再加魚露，整體上呢一個咁嘅泰式粉呢就會係好鹹香嘅，酸酸味味又鹹香嘅ok，咁呀畀大家睇下呢個咁嘅賣相ok呀有冇食肉呀大家，咁呀希望即係大家有個好好嘅一個，燒薯嘅麵食啦就唔好淨係齋話食公仔麵呀或者食其他即係中式麵呀咁樣咁其實我覺得呀，一啲泰式嗰啲嗰啲嗰啲粉麵呢其實更加適合下天食嘅點解呀佢通常有魚露啦有個咸香啦，同埋呢最主要就係因為佢有個太像嘅酸酸味味呀即係酸辣魚露咁樣咁呢其實我呢個咁嘅太像呢比係即係你出去太菜館食嗰個食嗰個即係食嗰個太粉呀湯粉呢。</p></a>
+				<a href="#00:13:14.64" id="00:13:14.64" class="lt" onclick="jumptoTime(794, this.id)"><p>係更加重味即係重嗰個酸甜味嘅點解因為我落咗我落嘅係直頭係成羹太長先有大家都睇到成羹太長落落去㗎嘛係咪呀，咁呀呢個份呢其實就唔難嘅咁呀呢個即係影片呢就好似搞到好似好複雜咁其實呢通常嚟講半個鐘頭至到45分鐘點都有得食㗎啦因為呢點解呢，我喺呢一個影片入面呢咁其實有啲嘢呢我係即係做得複雜咗少少同埋呢係重複咗嘅重複嘅意思就話本來可以疊住一齊做嘅但係我分開咗嚟做，咁變咗就話個時間拖長咗ok得唔得好簡單個湯底呀係乜嘢呀香茅糖芹跟住薑片冇㗎啦咁你最多係落少少胡椒好似我先頭咁樣跟住之後熬咗啲雞骨佢跟住。</p></a>
+				<a href="#00:14:7.64" id="00:14:7.64" class="lt" onclick="jumptoTime(847, this.id)"><p>咁我哋邊度嚟㗎就係我買呢個係即係白切雞咁我買啦買半邊返嚟咁咪足夠呢三個人嘅份量㗎啦ok擦咗骨之後跟住然之後呢就將嗰啲雞骨呢就攞嚟熬湯，咁咪加先頭嗰啲啦香茅細糖芹啦ok咁呢然之後再加一個濃湯補咁就保證呢個湯呢又清又夠味嘅得唔得好喇咁呀至於你加嗰啲嘢呢你可以呢一次呢我就加呢個魚腐呀係咪咁呀，其實呢大家可以去呢個豆腐煲呢買好多現成佢哋好多時候現炸嘅。</p></a>
+				<a href="#00:14:51.98" id="00:14:51.98" class="lt" onclick="jumptoTime(891, this.id)"><p>八爪魚丸呀呢個係墨魚丸呀嗰啲現成炸嘅，好多嗰啲都啱喺呢個太粉上面嘅，咁唯一呢，大家可能會係比較上係麻煩少少嘅呢就要識得打嗰個太醬，呢個太色蕨萬用醬呢我之前已經喺影片裏面發表過㗎喇，咁我希望，大家再去睇返啦咁我亦都喺說明嗰度會係畀條link畀大家呢個太色醬係點樣做嘅，咁只要有呢個太星萬用醬嘅話呢個湯粉呢。</p></a>
+				<a href="#00:15:25.00" id="00:15:25.00" class="lt" onclick="jumptoTime(925, this.id)"><p>就保證你，食到靚靚嘴嘅，咁當然你話我冇太色醬點算呀咁你現成呢就可以，攞呢個係香茅啦，芫茜啦呢個係，蒜頭啦醋啦，咁咪加青檸啦咁呀，中蘭佢跟住然之後你可以開返個汁出嚟嘅，Ok得唔得，咁呀，希望大家鍾意啦呢一個咁嘅湯粉係夏天呢酸酸味味又有鹹香呢係最好食嘅，咁呀希望大家鍾意啦，咁。</p></a>
+				<a href="#00:15:55.46" id="00:15:55.46" class="lt" onclick="jumptoTime(955, this.id)"><p>可能有少少講得亂嘅咁如果大家有興趣嘅話，可以喺留言嗰度發問，喂到底呢個湯粉呢，中間有啲咩特別嘢要注意呀咁樣，咁我可能講漏咗嘅，咁呀不過當然啦前提就係大家要睇曬條影片先啦係咪，咁咪唔阻大家啦希望，大家鍾意我呢個咁嘅做法啦多謝大家，其實呢，我哋香港人最幸福嘅，乜嘢國家乜嘢地區嘅菜色呢都可以整到出嚟嘅，點解因為有材料呀嘛。</p></a>
+				<a href="#00:16:29.78" id="00:16:29.78" class="lt" onclick="jumptoTime(989, this.id)"><p>烹飪呢萬變不離其宗，只要你學識一樣就一哩通就百里明立唔使驚，我呢個粉，絕對係可以出去做生意㗎，咁當然，你好叻咩，你都唔夠專業，好味嘅嘢唔一定要專業嘅，專業嘅未必一定好味嘅我成日都咁講，係咪呀，OK好，咁我希望，其實呢我所有嘅影片做盡量都係希望做到呢就家廚，係可以做到嘅，我點解咁堅持喺個爛廚房裏面。</p></a>
+				<a href="#00:17:0.24" id="00:17:0.24" class="lt" onclick="jumptoTime(1020, this.id)"><p>整，呢個係菜色出嚟呢，最主要個樣就係因為，我哋香港人嘅家廚，即係中式家廚就係咁樣㗎嘛，咁變咗喺用具上呀，喺程序上呀，我盡量，貼近大家現實上的生活，就不用搞到另外我要煮這個菜我就要買這個煎pan，我要煮那個菜我就要買那個鐵鑊，不是這樣的，我家裏，有一個中式鐵鑊三個西式炒鑊一個煎pan，我已經算多了。</p></a>
+				<a href="#00:17:34.46" id="00:17:34.46" class="lt" onclick="jumptoTime(1054, this.id)"><p>很多時候大家都是一個煎pan一個中式鑊，所以我盡量，大家都應該有發覺我盡量用最簡單的器具，大家都現在現成已經有的器具去製作出不同國家風味的不同地域風味的菜式出來，因為我有時候我都笑女兒你又買東西回來，我這次煮什麼蛋糕，你買一次蛋糕煮一個蛋糕不同款式的你又買一個用具回來，我廚櫃。</p></a>
+				<a href="#00:18:7.22" id="00:18:7.22" class="lt" onclick="jumptoTime(1087, this.id)"><p>我下面擺廚具的抽屜，基本上超過一半的用具，不是一半三分二的用具都是他的，他買一次煮一次，新的菜式他又去買一些新的用具出來，這件事我就不是很認同的，希望大家，喜歡啦我又講了這麼多廢話，當然，聽得明或者想聽的想學的自然覺得我這些不是廢話，有些覺得我是娛樂我應該要做娛樂的，最好呢就穿著三點式炒菜就最正啦。</p></a>
+				<a href="#00:18:41.54" id="00:18:41.54" class="lt" onclick="jumptoTime(1121, this.id)"><p>不好意思啦我和這些我不適合大家看，不適合你，大家說是不是，好啦不阻大家，希望這個菜式大家有，新的想法。</p></a>
+				<a href="#00:18:52.30" id="00:18:52.30" class="lt" onclick="jumptoTime(1132, this.id)"><p>多謝大家收看拜拜。</p></a>
+</div>
+	</body>
+</html>

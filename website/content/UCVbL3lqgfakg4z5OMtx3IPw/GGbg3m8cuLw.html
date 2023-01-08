@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——黃魚波菜羹，一道老少咸宜營養菜式，可以作飯前湯食和滑胃，亦可以製成湯飯，由於魚味充足，其鮮無比又滑口！這可是一道健康營養菜式哦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GGbg3m8cuLw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——黃魚波菜羹，一道老少咸宜營養菜式，可以作飯前湯食和滑胃，亦可以製成湯飯，由於魚味充足，其鮮無比又滑口！這可是一道健康營養菜式哦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好! 今次分享的菜式是...</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>是否太亂?</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>因為份量多， 食材不算太複雜，我今天分享的是...</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>現在天氣很熱，我今天分享的是...</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>叫做...</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>波菜魚蓉羹，我本來想過， 女兒喜歡吃粟米，但我本身不太喜歡吃粟米，所以今天我用了波菜，買了波菜苗，波菜苗比較容易煮爛，而且比較滑，我選擇了新鮮的波菜，波菜一斤至半斤，視乎大家喜歡的菜式有多少，說明是魚蓉羹，當然要有魚，我買了一條相對較大的黃花，黃花魚最適合...</p></a>
+				<a href="#00:01:18.00" id="00:01:18.00" class="lt" onclick="jumptoTime(78, this.id)"><p>因為肉質比較軟，所以較適合用來做魚蓉羹，我相信大家吃過華洋菜，應該有印象，不過是不是要做波菜魚蓉羹，各處鑽鑽各處泥，而且我現在這個魚蓉羹，其實是用廣東家廚的認知去做的，我不知道是否正宗，不過好吃就行了，現在我沖洗條魚，除了魚﹐波菜之外，芫茜就少不了，華洋菜很少會用這麼重的芫茜，另外就加兩隻雞蛋﹐。</p></a>
+				<a href="#00:02:14.00" id="00:02:14.00" class="lt" onclick="jumptoTime(134, this.id)"><p>大家等一下看我怎樣做吧，現在我首先就…，洗條魚，我將它移過少少，大家不要介意，看到我洗和蒸都是這樣，因為香港地方狹窄，魚板很細心，幫我留魚竿，但是因為我做魚蓉羹，這些用不著，這個我會怎樣做呢，首先我就蒸了那條魚，然後拆骨，只用它的肉，做這個魚蓉羹，和我們所理解的魚滑，即是靚魚肉，去煮菠菜湯。</p></a>
+				<a href="#00:03:5.24" id="00:03:5.24" class="lt" onclick="jumptoTime(185, this.id)"><p>雖然都有異曲同工之妙，但是做的方式就不一樣，好了，那條魚大家看到，我一直說，其實主要是想給大家看看，我怎樣洗條魚，大家看到我經常用搓動作，搓它就可以…，拿一隻長型碟，這個圓形的碟放不完，大家等我一下，好，大家都好清楚，我都知道我常常強調一樣東西，就是強調魚腥味，如何去魚腥，為何我不敢說自己是正宗呢。</p></a>
+				<a href="#00:04:4.47" id="00:04:4.47" class="lt" onclick="jumptoTime(244, this.id)"><p>因為我現在這個除腥法，其實就是，牛肉差不多可以了，讓我檢查一下，等一等我，差不多了，還可以浸久一點，好，隨便它，我現在這個除腥的方法，其實就是順德人的一個做法，所以我不敢說自己是否正宗，但其實一如家家有本南念的經，其實每個家族都有自己的一套方法，如果大家試過我這個除腥的方法是可以的話，那就繼續用。</p></a>
+				<a href="#00:04:52.47" id="00:04:52.47" class="lt" onclick="jumptoTime(292, this.id)"><p>鹽，然後胡椒粉或者胡椒碎，胡椒粉或者胡椒碎，然後我們就倒少少酒，好，這個就是除去魚腥的法寶，這些就是順德人的做法，然後搓勻它，我經常洗魚就有個搓這個動作，因為其實它和你的魚腥是一模一樣的，可以搓勻它，最大限度讓鹽吸進魚皮，看不到的位置，就可以有效地去除它的異腺菌，同時間，因為等一等我要去拆肉，這個我也說過。</p></a>
+				<a href="#00:05:53.47" id="00:05:53.47" class="lt" onclick="jumptoTime(353, this.id)"><p>這個過程就可以令到魚肉，有輕微出水的現象，這樣就可以令到魚肉更加一梳梳，等一等吃魚肉，我拆骨出來的時候，它就更加實淨，這樣就洗完了，然後就放置5分鐘，5分鐘後我們再看看結果如何，好了大家 現在水已經沸騰了，這條魚我放了在雪櫃冷藏了一會兒，因為我太早做了，怕它會臭，所以我放了一會兒，等一會兒地方狹窄就找位置放。</p></a>
+				<a href="#00:06:53.21" id="00:06:53.21" class="lt" onclick="jumptoTime(413, this.id)"><p>然後將碟子裏面有的，大家都看到很乾身的，有的血水各樣全部吸乾，然後我們放幾片帶皮薑，這樣就可以了，先蒸熟這個魚，蒸熟這個魚用來做什麼呢，等一會兒用來拆骨，拆骨用來做魚羹，不好意思地方狹窄，所以沒辦法，這條魚剛剛好，只是鑊的長度，今天買的魚剛剛好，然後蒸魚照樣計8分鐘，8分鐘，等一會兒蒸好魚之後。</p></a>
+				<a href="#00:07:53.73" id="00:07:53.73" class="lt" onclick="jumptoTime(473, this.id)"><p>我才拆肉應該不需要給大家看了吧，因為蒸熟魚之後，你照吃魚的過程拆肉，盡量把骨頭挑出來，我們只要肉，待會兒用來做魚羹，等一會兒我炒菜，做魚羹的時候再開機，大家先看到我怎樣處理這條魚，現在燒鑊，給大家看看，一條差不多一斤重的黃魚，拆成半碟的肉，因為我怕有骨頭，所以剩下的，我先頭已經試了味道，一點腥味都沒有，所以接下來我們要做的事就不需要顧慮太多。</p></a>
+				<a href="#00:08:49.07" id="00:08:49.07" class="lt" onclick="jumptoTime(529, this.id)"><p>怕著它會腥，記住，只要大家跟著我先頭處理魚的動作，那個過程一起去做的話，就一定不會腥的，也有朋友已經回覆了，不少一個，說我處理魚的除腥的方式，是甚麼魚都有效的，鹹淡水魚都有效的，現在先燒一隻鑊，佐料很簡單，有薑米、蒜頭、原粒，為甚麼要用原粒而不是用蒜子呢，因為原粒炒就香一點，炒過菠菜，現在先燒紅了鑊，先炒菠菜。</p></a>
+				<a href="#00:09:31.43" id="00:09:31.43" class="lt" onclick="jumptoTime(571, this.id)"><p>大概是兩茶匙左右的油，先把它攪拌均勻，因為要炒東西，所以不用關小火，一見煙，燒到見煙就可以放佐料，炒香它，大家見到鑊溫夠高的話，蒜頭就會很快香，這個時候可以了，然後我們就放菠菜，這個菠菜我大概切兩三分鐘長，為甚麼呢?因為我要增加菠菜煮到很軟，如果太長的話，跟魚羹是否很不配呢?</p></a>
+				<a href="#00:10:28.43" id="00:10:28.43" class="lt" onclick="jumptoTime(628, this.id)"><p>大家也見到，我煎鑊是否燒得夠，溫度夠的話，它就會有少少搶火，其實搶火不是我想要的，最主要是高溫可以令菠菜，葉、菠菜、菠菜瓣吸收油，菠菜才會滑，記住，現在要炒到它軟身，先把它軟身，如果純粹炒菠菜，先頭的油是不夠的，不過我還是那句說話，免得被人說我用了多油，現在這時候菠菜炒到軟身了，我們就加水。</p></a>
+				<a href="#00:11:35.74" id="00:11:35.74" class="lt" onclick="jumptoTime(695, this.id)"><p>大概是1800cc左右，2000cc以下，加多少水呢?隨大家，我習慣一斤大概是，通常都是加兩勺水，大概是1600至1800cc之間，這個時候我們要做什麼呢?</p></a>
+				<a href="#00:11:56.74" id="00:11:56.74" class="lt" onclick="jumptoTime(716, this.id)"><p>我們要給一磚的濃湯煲，一盒，大家等一下，行了，撕到了，濃湯煲為什麼我這麼喜歡用呢?</p></a>
+				<a href="#00:12:16.74" id="00:12:16.74" class="lt" onclick="jumptoTime(736, this.id)"><p>其實就代替了專業廚房的豬骨上湯，豬骨高湯，OK，這個時候我們就，繼續煮它，不用其他調味，隨它，記住，想它保持這個青綠的話，不要上鍋，隨它，現在煲滾它，煮它大概三分鐘左右，即滾了之後大概兩三分鐘左右，然後我們才放其他的材料下去，等一下見，我關一下電話，記住不要上鍋蓋，好了，現在已經滾了超過三分鐘。</p></a>
+				<a href="#00:12:59.74" id="00:12:59.74" class="lt" onclick="jumptoTime(779, this.id)"><p>我一邊看YouTube回覆大家，不是一邊煮飯，這個時候我們就將魚肉放下去，然後放了魚肉下去，不用等它滾，我們馬上要加什麼下去呢?</p></a>
+				<a href="#00:13:21.74" id="00:13:21.74" class="lt" onclick="jumptoTime(801, this.id)"><p>我們就要加蛋，蛋是做羹經常用到的一個食材，蛋我們一放下去，我們不要動它，不要理它，大概等十多二十秒鐘，我們才攪它，為什麼呢?</p></a>
+				<a href="#00:13:38.74" id="00:13:38.74" class="lt" onclick="jumptoTime(818, this.id)"><p>這樣才會起蛋花，如果不是你一攪，蛋就會變粉狀，這個時候我不理它，然後我做什麼呢?</p></a>
+				<a href="#00:13:49.74" id="00:13:49.74" class="lt" onclick="jumptoTime(829, this.id)"><p>說明羹，羹我們就需要打芡，大概放五六匙甚至十匙生粉，視乎水份量，多放一點生粉也不怕，這個時候攪拌的蛋就會有蛋絲、蛋花出來，然後攪拌好生粉，這個時候我們應該先調味，大概一匙半鹽就夠了，因為我先前放了豬骨濃湯補，我現在看到了，為什麼我先插了這麼多魚出來呢?</p></a>
+				<a href="#00:15:15.51" id="00:15:15.51" class="lt" onclick="jumptoTime(915, this.id)"><p>就是要小心魚骨，ok?</p></a>
+				<a href="#00:15:18.51" id="00:15:18.51" class="lt" onclick="jumptoTime(918, this.id)"><p>然後這個時候就可以將芫茜放進去了，將芫茜放入去，攪勻，這時候可以熄火，一個菠菜魚肉羹完成，有些人喜歡吃稠一點的，可以加多一點生粉，如果大家不想吃太稠，可以加少一點生粉，因為我要拍照的關係，我先關機，等一會再做總結，我拍完照了，所以現在開始做總結，其實這個黃魚菠菜羹不是很難，而且黃魚在香港很容易買到。</p></a>
+				<a href="#00:16:37.55" id="00:16:37.55" class="lt" onclick="jumptoTime(997, this.id)"><p>可能大家會問，我不用黃魚可以嗎?</p></a>
+				<a href="#00:16:43.55" id="00:16:43.55" class="lt" onclick="jumptoTime(1003, this.id)"><p>可以，黃魚其實是屬於石手魚科，石手魚科的品種非常豐富，包括香港水域經常有的牙挖，即是做鹹魚的牙挖，或是鱈斑魚，原來鱈斑魚也屬於石手魚科，是的，只要是石手魚科，做魚羹就非常配合，石手魚科本身魚腥味不重，所以在這方面，我們不需要太介意，會否腥，我先頭都和大家說，我做法已經試了魚，剩下這些魚骨。</p></a>
+				<a href="#00:17:38.55" id="00:17:38.55" class="lt" onclick="jumptoTime(1058, this.id)"><p>就算是現在的魚骨也不會腥，可以嗎?</p></a>
+				<a href="#00:17:43.55" id="00:17:43.55" class="lt" onclick="jumptoTime(1063, this.id)"><p>所以大家做魚羹的時候，不一定要用黃花魚，用石斑也可以，用鱈斑魚也可以，我個人覺得鱈魚的口感跟黃花魚非常接近，而且鱈魚本身的魚味也很足，因為鱈魚本身是魚蛋的其中一個成份，即是香港式的魚蛋，所以我會建議如果大家不喜歡用黃花魚的話，可以用鱈魚 而且鱈魚在香港的水域更加常見，至於用石斑魚的話 石斑魚的口感會比較粗糙。</p></a>
+				<a href="#00:18:31.86" id="00:18:31.86" class="lt" onclick="jumptoTime(1111, this.id)"><p>會比較結實 變相我們做這個魚羹的時候，為什麼我會用菠菜呢?</p></a>
+				<a href="#00:18:40.06" id="00:18:40.06" class="lt" onclick="jumptoTime(1120, this.id)"><p>因為菠菜本身是滑的，再加上配上滑的魚肉的時候，自然就相得益彰了，除了我處理的魚一定要留意之外，其他的部份其實很簡單，做這個魚羹 第一件事一定要有雞蛋的配合，第二件事就是要打芡，先前我打了大概10匙生粉，但可能有些人會覺得很稠，稀的，如果想它更加稠一點好看一點的話，就可以再加多一倍生粉。</p></a>
+				<a href="#00:19:29.98" id="00:19:29.98" class="lt" onclick="jumptoTime(1169, this.id)"><p>我現在給大家看一下，那個，效果是怎樣，我現在的做法，看上去就有點稠 不只是水，不是很稠，大家看到的 我倒出來很容易的，但很明顯大家會看到是，跟這個湯，是，有些分別，這個是做魚羹的做法，好了，大家看到我剛剛開機的時候加了些麻油，為什麼?因為其實可以用這個麻油最後提香，另外，有些人就說少少的，什麼?</p></a>
+				<a href="#00:20:17.34" id="00:20:17.34" class="lt" onclick="jumptoTime(1217, this.id)"><p>即是，味道都不行的 吃的時候我們就加些胡椒粉，OK，這次一定要加胡椒粉 不是胡椒水 為什麼?</p></a>
+				<a href="#00:20:28.16" id="00:20:28.16" class="lt" onclick="jumptoTime(1228, this.id)"><p>因為胡椒水吃下去的口感是配合不到的，胡椒粉可以馬上溶掉 大家明白嗎?</p></a>
+				<a href="#00:20:33.84" id="00:20:33.84" class="lt" onclick="jumptoTime(1233, this.id)"><p>OK 基本上就是這麼多了，是不是很方便呢?</p></a>
+				<a href="#00:20:41.56" id="00:20:41.56" class="lt" onclick="jumptoTime(1241, this.id)"><p>是不是很簡單呢?</p></a>
+				<a href="#00:20:44.04" id="00:20:44.04" class="lt" onclick="jumptoTime(1244, this.id)"><p>是的 不過要花點心機，雖然簡單 大家也比較容易做得好，但是大家依然是什麼?</p></a>
+				<a href="#00:20:54.16" id="00:20:54.16" class="lt" onclick="jumptoTime(1254, this.id)"><p>要花點心機，大家知道我每條影片都這麼長，如果是入慣廚房的人都知道，不可能省時間，我要做的不是那些快餐式的菜餚，我希望大家明白，即使是我這個黃魚菠菜羹，其實這個本身是江浙一帶經常有得吃的，但是這次我就用了我們廣東人的感覺，用了香港人的感覺 吃慣的感覺做出來，我告訴大家 我先前試了味道 很棒，這個除了當湯喝之外。</p></a>
+				<a href="#00:21:32.36" id="00:21:32.36" class="lt" onclick="jumptoTime(1292, this.id)"><p>拌飯也很棒的，那我廢話不多說了，煮完飯了 去吃飯了。</p></a>
+				<a href="#00:21:38.36" id="00:21:38.36" class="lt" onclick="jumptoTime(1298, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——香煎紅衫魚，加上快速自製豉油汁，真的無得輸，又如何能忍得住口啊？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3FG8-fJpQ20',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——香煎紅衫魚，加上快速自製豉油汁，真的無得輸，又如何能忍得住口啊？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚大家晚上好。</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>之前的影片已經提及過，今晚有第二道菜，就是香煎紅衫魚。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>首先，為什麼我今次會買紅衫魚呢?</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>因為我見到紅衫仔，一隻手掌很細條，大概一條三兩左右。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>所以我覺得它適合做香煎紅衫，可以煎到跟外面餐廳一模一樣的香脆。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>大家經常喜歡吃兩餸飯，通常都喜歡吃香煎紅衫魚。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>到底需要用什麼技巧呢?大家就不要錯過了。</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>今次我可以保證，香煎紅衫魚可以煎到跟外面餐廳一模一樣。</p></a>
+				<a href="#00:01:7.00" id="00:01:7.00" class="lt" onclick="jumptoTime(67, this.id)"><p>而且我亦可以保證，比他們好吃。</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>因為我有特別的醬油，特別的做醬油的方法。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>醬油很簡單，雖然特別。</p></a>
+				<a href="#00:01:19.00" id="00:01:19.00" class="lt" onclick="jumptoTime(79, this.id)"><p>我經常說，做人要比別人多走一步。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>如果你想煮菜比別人好吃，你就要做多一個步驟。</p></a>
+				<a href="#00:01:39.00" id="00:01:39.00" class="lt" onclick="jumptoTime(99, this.id)"><p>但你不要以為做多一個步驟就等於很困難或很麻煩。</p></a>
+				<a href="#00:01:46.00" id="00:01:46.00" class="lt" onclick="jumptoTime(106, this.id)"><p>其實做多一個步驟只是舉手之勞，我都不會阻你多兩三分鐘。</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>為何你不去為了口福之慾?</p></a>
+				<a href="#00:01:58.34" id="00:01:58.34" class="lt" onclick="jumptoTime(118, this.id)"><p>行多一步呢，之前有提過，大家有沒有發覺香港很少有一斤以上的紅衫賣，通常都是半斤左右，大家知不知道紅衫其實可以做刺身的，大家知不知道，紅衫羽這東西幾乎是香港的特產，因為紅衫羽需要用一個特別的工具，用一個特別的捕撈方法，我一邊工作，大家一邊看著畫面，一邊聽我說故事，他用什麼特別捕撈的方法呢?</p></a>
+				<a href="#00:02:43.76" id="00:02:43.76" class="lt" onclick="jumptoTime(163, this.id)"><p>他需要用這個所謂的蝦釣，不知道大家有沒有聽過，那，蝦釣有專門的，有所謂的蝦艇，不是蝦艇，是蝦艇，那，就因為他這個，有一個獨特的所謂的，用蝦釣的方式，什麼是蝦釣的方式呢?</p></a>
+				<a href="#00:03:8.84" id="00:03:8.84" class="lt" onclick="jumptoTime(188, this.id)"><p>不是蝦門的蝦，是蝦繩的蝦，那些是蝦繩，那些蝦繩，可以綁在一起，全部綁在一起，兩三公里遠，然後每條細的蝦繩，就大概，一米左右，半米至一米左右，就會綁住魚鉤，綁住魚絲，然後呢，兩個浮泡，一頭一尾，然後呢，這些蝦艇是專門用來做什麼呢?</p></a>
+				<a href="#00:03:40.84" id="00:03:40.84" class="lt" onclick="jumptoTime(220, this.id)"><p>專門釣紅衫，而我以前做的魚船呢，就是蝦艇，所以我對紅衫的歷史，相對熟悉，因為每天都見到，那，大家會問，既然紅衫魚是香港的特產，為什麼我們香港，總是見到紅衫魚仔，見不到大條的魚呢?</p></a>
+				<a href="#00:04:6.84" id="00:04:6.84" class="lt" onclick="jumptoTime(246, this.id)"><p>原來呢，其實呢，我們香港的特產，現在要割走那些尾巴，那些鰭，香港的紅衫魚，因為有香港這個獨特的，捕撈的方式，所以呢，基本上紅衫魚就是香港的特產，但是呢，為什麼有特產，但是為什麼不見那些大的紅衫魚呢?</p></a>
+				<a href="#00:04:33.84" id="00:04:33.84" class="lt" onclick="jumptoTime(273, this.id)"><p>去哪了呢?</p></a>
+				<a href="#00:04:35.84" id="00:04:35.84" class="lt" onclick="jumptoTime(275, this.id)"><p>原來呢，那些紅衫魚消費得最多，大家猜都猜不到，是日本人，日本人在香港呢，是有專門採購的公司，採購那些大條的紅衫，那些紅衫大條到怎樣呢?</p></a>
+				<a href="#00:04:51.84" id="00:04:51.84" class="lt" onclick="jumptoTime(291, this.id)"><p>最小那條，都像我手臂那麼長，那你想一下，手臂那麼長的紅衫，有多大呢?多重呢?</p></a>
+				<a href="#00:05:1.84" id="00:05:1.84" class="lt" onclick="jumptoTime(301, this.id)"><p>大家可以想像一下，那他們全部都去了日本，吃紅衫刺身，當然，我們香港，聽說紅衫刺身，我去日本都沒得吃，因為他們當地的，你要去到當地的社區，才有機會吃到，那，日本人，喜歡吃紅衫刺身，所以就要，大條的魚，所以在香港大條的紅衫是很難得，可以見到的，而且我可以和大家說，大家覺得麻油，鹹魚是不是很好吃，鮫魚鹹魚。</p></a>
+				<a href="#00:05:43.84" id="00:05:43.84" class="lt" onclick="jumptoTime(343, this.id)"><p>是不是很好吃?</p></a>
+				<a href="#00:05:45.84" id="00:05:45.84" class="lt" onclick="jumptoTime(345, this.id)"><p>但是原來呢，我覺得鹹魚中的極品，應該是紅衫，為什麼呢?</p></a>
+				<a href="#00:05:53.84" id="00:05:53.84" class="lt" onclick="jumptoTime(353, this.id)"><p>我以前跟別人出海，吃過紅衫的鹹魚，嘩!我真的受不了，不說髒話都不行，好像吃雞肉一樣，甘甜有嚼頭，有嚼頭之餘，那種鹹香，真的零碎不同，這些是小小的歷史，所以最後在香港買到的紅衫，通常就是像我現在這種紅衫，就算大的都是七八兩，已經很大了，很少會有一斤，但是這些紅衫仔，又發展出我們很獨特的食譜，香煎紅衫魚。</p></a>
+				<a href="#00:06:41.46" id="00:06:41.46" class="lt" onclick="jumptoTime(401, this.id)"><p>番茄紅衫魚，冬菜蒸紅衫魚，諸如此類，大家覺得紅衫魚是下架菜，真的下架菜，因為它便宜，所以通常那些兩餸飯，就一定有的，一定有得選擇，是其中一個選擇，OK，好了，我們清洗乾淨了，剁乾淨了，大家等等，我又洗把刀，抹乾它，這個時候，紅衫魚你想它好吃，就不是就這樣做完就算，我們都要基本上處理，大家知不知道怎樣處理。</p></a>
+				<a href="#00:07:36.34" id="00:07:36.34" class="lt" onclick="jumptoTime(456, this.id)"><p>記不記得我經常說的方法，就是那個方法，因為紅衫魚始終有時候會有泥味，所以我們要加鹽，加胡椒，然後加些酒，紅衫本身不需要做得那麼複雜，但我依然要做，因為紅衫沒有那麼腥，所以特別受歡迎，但我依然要這樣做，因為紅衫魚有機會有泥味，一旦在海藏比較淺的地方捉到，所以有機會紅衫，尤其是紅衫仔，很容易會有泥味。</p></a>
+				<a href="#00:08:33.10" id="00:08:33.10" class="lt" onclick="jumptoTime(513, this.id)"><p>我們除了要清除腥味外，還要清除泥味，稍為撥勻，醃一醃，讓它浸一浸，其實這樣的方法，可以讓你在煎的過程中，更加令魚肉更加甘香，而且沒有那麼腥，記住，有時候大家看到我煮魚，未必是煎的過程下酒，煮的過程下酒，不要緊的，你不下，但這個過程一定要，這不是我第一次煮魚，大家等一下看看我又怎樣，可以令這個魚做到。</p></a>
+				<a href="#00:09:23.94" id="00:09:23.94" class="lt" onclick="jumptoTime(563, this.id)"><p>做到跟餐廳一模一樣，連骨都可以吃，但我不會撲粉的 為什麼呢，因為我想吃原味的魚皮香味，好嗎，不跟大家說了，等一會開火煎魚我再跟大家分享，現在抹乾手就關機，等一會見，我先跟大家講解如何清理紅衫魚，清洗完魚片，通常我都講過很多次，清洗魚片的腥味，用鹽、胡椒和酒不要超過五分鐘，否則魚就會咸。</p></a>
+				<a href="#00:10:14.94" id="00:10:14.94" class="lt" onclick="jumptoTime(614, this.id)"><p>現在我開火燒鑊，燒鑊期間我介紹一下，我現在聞一聞魚就沒有腥味，還有少許泥味，為什麼要做這個工序呢，因為通常紅衫魚，即是三兩左右，很多時候都會有泥味，所以我們要用這個工序去處理，現在在燒鑊期間，我介紹一下，我會有一個很特別的醬汁，這個也是我常常說的，讓人多走一步，自然你的菜式就會比別人更好吃，做人也是一樣。</p></a>
+				<a href="#00:10:56.94" id="00:10:56.94" class="lt" onclick="jumptoTime(656, this.id)"><p>你讓人多走一步，自然就會獲得比別人更多的成果，這裡我基本上切了蔥花，加了指甸椒絲，現在我在燒鑊，現在看到煙了，然後我就加油，落油燒一燒佢先啦，跟住見到佢起煙呢我哋就攞一攞佢先啦，跟完之後向左手邊扭，扭到佢差唔多熄火慢慢嚟，咁就繼續降溫啦ok，好等一等佢先降一降溫啦，嗱咁呢我啲魚呢洗完之後呢，我係需要點呢我係需要呢將佢呢係。</p></a>
+				<a href="#00:11:52.44" id="00:11:52.44" class="lt" onclick="jumptoTime(712, this.id)"><p>抹返乾佢抹到乾乾淨淨嘅點解呢，因為咁樣呢嗰啲魚呢煎起身呢先夠靚嘅ok，嗱咁我擺得唔係幾好啦，好嗱一樣啦，即係我哋煎魚呢落咗鑊之後呢我哋就唔好理佢，咁然之後做乜嘢呢第一個動作呢，我哋就要將嗰啲油滾油，就倒勻佢全身，即係流勻佢全身，所以大家見到我成日喺呢個步驟嘅時候，就攞鑊嘅。</p></a>
+				<a href="#00:12:38.22" id="00:12:38.22" class="lt" onclick="jumptoTime(758, this.id)"><p>大家見唔見到呢啲魚已經喐緊，即係證明第一我起呢隻鑊起得靚，第二就係我抹啲魚抹得夠乾身，所以佢咁快就離鑊啦，睇唔睇到呢個時候就已經喐嚟喐去啦，OK，嗱咁呢，好啦，當呢我哋將所有嘅油呢都攞勻，所有嘅魚身呢，接住鑊嗰邊呢都見到油份嘅話呢，我呢個時候就可以上鑊蓋啦，咁上鑊蓋嘅時候呢，記住呢個位係留返一隻筷子位畀佢通氣嘅。</p></a>
+				<a href="#00:13:16.54" id="00:13:16.54" class="lt" onclick="jumptoTime(796, this.id)"><p>點解呀，我係製造一個人工嘅一個焗爐嘅效果，呢個呢就畀佢係嗰啲蒸氣走出嚟嘅，然之後呢，咁樣上鑊蓋可以俾佢保持溫度呀，咁咪幾多分鐘呢，一樣啦，標準時間三分鐘，咁，嗱，我喺煎緊魚嘅時候呢，我唔係乜都唔做㗎嘛，咁我要做乜嘢呢，我就係要呢，同呢個調味啦，OK，呢個期間就可以調味啦，所以話呢，家廚呢。</p></a>
+				<a href="#00:13:48.10" id="00:13:48.10" class="lt" onclick="jumptoTime(828, this.id)"><p>我成日都講就係一個好好嘅，時間管理嘅訓練嚟嘅，所以，我解釋嘅時候，因為要逐樣解釋，可能呢就畀實際操作會長咗，但係當，大家去實際操作嘅時候呢，係可以同時間做幾樣嘢㗎嘛，所以呢，係會慳咗時間嘅，OK，好，嗱，呢個時候呢，我哋就，落少少熟油啦，輕輕得㗎啦，跟住然之後呢，我哋就落呢個生抽啦，生抽落多少呢。</p></a>
+				<a href="#00:14:21.42" id="00:14:21.42" class="lt" onclick="jumptoTime(861, this.id)"><p>就隨大家嘅口味啦，跟住然之後呢，我就將呢個，拌勻佢，因為要加進去的魚，我們不是全部加進去的，OK?</p></a>
+				<a href="#00:14:39.55" id="00:14:39.55" class="lt" onclick="jumptoTime(879, this.id)"><p>到時候要看實際情況，所以最重要是甚麼呢?</p></a>
+				<a href="#00:14:43.55" id="00:14:43.55" class="lt" onclick="jumptoTime(883, this.id)"><p>加這些醬汁的時候，最重要是能夠拌勻，記住，多或少都不要緊，拌勻就可以了，OK?</p></a>
+				<a href="#00:14:50.55" id="00:14:50.55" class="lt" onclick="jumptoTime(890, this.id)"><p>好，大家有沒有發現，我先前加這個調味料不是很簡單嗎?</p></a>
+				<a href="#00:14:57.55" id="00:14:57.55" class="lt" onclick="jumptoTime(897, this.id)"><p>生抽和熟油，是不是?</p></a>
+				<a href="#00:14:59.55" id="00:14:59.55" class="lt" onclick="jumptoTime(899, this.id)"><p>我先前那瓶我自己私伙的豬油，但是一般家廚如果沒有豬油的話，用熟油也可以的，大家有沒有發現，我先加了甚麼呢?</p></a>
+				<a href="#00:15:11.55" id="00:15:11.55" class="lt" onclick="jumptoTime(911, this.id)"><p>先加了熟油，加了熟油，然後才加生抽，這個步驟不要弄錯，如果你是先加生抽，然後加熟油的話，因為油是比較輕的，所以它是比較容易煮熟的，如果你是先加熟油的話，因為油是比較輕的，所以它是碰不到蔥和辣椒的，那就不會令到蔥身有種特別的香氣，所以我們一定是先加了熟油，然後再加生抽，永遠都不會弄錯。</p></a>
+				<a href="#00:15:42.55" id="00:15:42.55" class="lt" onclick="jumptoTime(942, this.id)"><p>你就算加魚，大家都看到是先加油再加蔥，不是，先加油再加醬油的，原理都是一樣的，如果你先加了醬油，那些油會膨脹起來，碰不到蔥身，那就沒有了那種香口，但如果現在我先加油再加生抽的話，自然這個醬汁就會很好吃，好，我現在拌好之後就放進去，先看一下時間，嘩，剛剛好，我真的很嘮叨，為甚麼呢?因為我怕大家不懂。</p></a>
+				<a href="#00:16:18.55" id="00:16:18.55" class="lt" onclick="jumptoTime(978, this.id)"><p>做不到嘛，ok，我現在聞不到那些紅衫仔為甚麼這麼便宜，因為有泥味，聞到，煎的時候都聞到的，但不要緊的，不會阻礙我們吃味的，ok，這個時候我們繼續等它…鐘響了，現在揭開蓋子繼續…，先晃一晃，讓油溫均勻全身，因為這隻鑊底比較平，實際上受火時溫度有少許偏差，即是邊邊和中間，所以這個時候我們要先繼續攪拌它，即是煎一煎它。</p></a>
+				<a href="#00:17:18.16" id="00:17:18.16" class="lt" onclick="jumptoTime(1038, this.id)"><p>現在很明顯我聞到有泥味，那怎樣解決呢?</p></a>
+				<a href="#00:17:25.16" id="00:17:25.16" class="lt" onclick="jumptoTime(1045, this.id)"><p>放豬油，豬油我曾經說過可以用來做甚麼?去除腥味，但同時亦可以解決一些魚類不好味的氣味，這個時候它還未煎得夠生、夠金黃色，所以我繼續…，這個時候我開大火，讓它再香一點，這個時候我不可以直接燒鑊心，這樣我便要雜質它，為甚麼呢?</p></a>
+				<a href="#00:18:8.16" id="00:18:8.16" class="lt" onclick="jumptoTime(1088, this.id)"><p>因為這樣可以令所有煎的表面均勻一點，每一邊不用多，十多二十秒、二三十秒就足夠了，因為我現在是開大火，如果我同一邊超過二十秒的話，就有機會很快燒焦，但是另一邊未碰到火、油的那邊就不夠燒焦，我現在的動作是甚麼呢，我要令它更加甘香、更加脆身，好了，這個時候差不多了，我調小火，OK。</p></a>
+				<a href="#00:18:47.77" id="00:18:47.77" class="lt" onclick="jumptoTime(1127, this.id)"><p>這個時候，我加了豬油後，當時整個味道都不同了，雖然還帶一點點泥味，因為我聞不到，我經常都說，我們煮食物，不只是用手、眼、耳都要，還要用鼻子去聞它，現在我翻魚了，小心一點，這個時候，魚還未完全夠新，所以這個時候，他們有機會弄壞的，用西式平底鍋有一個不好處，就是你的鑊鏟很難用，不要不小心弄破魚。</p></a>
+				<a href="#00:19:42.99" id="00:19:42.99" class="lt" onclick="jumptoTime(1182, this.id)"><p>弄破了一點點，不過不要緊，好，給大家看看初步效果，這邊漂亮嗎，是不是，其實要煎魚，我這隻鑊一樣不黏底，當然鑊也是重要的，但我再強調一次，最重要是背後要有鑊鑽，好，這時候我…，還未得字，首先我又是一樣，等油先煎勻，煎勻所有魚身，為什麼要這樣做呢?</p></a>
+				<a href="#00:20:31.53" id="00:20:31.53" class="lt" onclick="jumptoTime(1231, this.id)"><p>對於煎魚來說，這個動作很重要的，因為那些鑊現在開始蓋上蓋子了，我再做說明，一樣留著邊邊，讓它好像一個焗爐的效果，邊邊這個口就是讓水蒸氣出來的，整個鑊蓋就讓它裡面就好像焗爐一樣，只要做到這件事，每次煎魚都一樣是這麼甘香、香口、脆的，OK?</p></a>
+				<a href="#00:21:2.53" id="00:21:2.53" class="lt" onclick="jumptoTime(1262, this.id)"><p>我現在開始計時，等它計時後，我們再看看效果如何，我就不浪費大家的時間了，OK?</p></a>
+				<a href="#00:21:15.53" id="00:21:15.53" class="lt" onclick="jumptoTime(1275, this.id)"><p>好了，三分鐘又夠了，看看結果如何，先看看，現在這邊，因為第一次煎的時候，它開始在背面出水，所以這個時候它又有一點黏底，所以我就不理它了，OK?</p></a>
+				<a href="#00:21:36.53" id="00:21:36.53" class="lt" onclick="jumptoTime(1296, this.id)"><p>再繼續，我就開大火，關火了，開大火，稍微試一試它，先動一動它，讓它慢慢…，我輕輕地這樣篩那個鑊，然後…現在可以了，這個時候我們就抽起那個鑊，擰那個鑊，為甚麼呢?</p></a>
+				<a href="#00:22:8.53" id="00:22:8.53" class="lt" onclick="jumptoTime(1328, this.id)"><p>讓它的背面更加平均受熱，如果大家力氣不夠的話，就像我這樣拿起那個鑊，擰那個鑊，就…，關小一點火，然後慢慢地像我這樣摘一隻鑊，就像我剛才摘一隻鑊一樣，每邊就擺它十多二十秒，OK?</p></a>
+				<a href="#00:22:30.53" id="00:22:30.53" class="lt" onclick="jumptoTime(1350, this.id)"><p>行不行?</p></a>
+				<a href="#00:22:31.53" id="00:22:31.53" class="lt" onclick="jumptoTime(1351, this.id)"><p>那我剛才放了豬油之後，哈哈，少了很多甚麼呢?</p></a>
+				<a href="#00:22:37.53" id="00:22:37.53" class="lt" onclick="jumptoTime(1357, this.id)"><p>少了很多這個…泥味，OK?</p></a>
+				<a href="#00:22:42.53" id="00:22:42.53" class="lt" onclick="jumptoTime(1362, this.id)"><p>大家知道以後怎樣去減少煎魚的時候，如果發覺它有泥味的話，怎樣去減少泥味呢?</p></a>
+				<a href="#00:22:48.53" id="00:22:48.53" class="lt" onclick="jumptoTime(1368, this.id)"><p>好了，這個時候差不多了，加一點胡椒，胡椒碎，這進一步令魚腥和泥味減少，這時要關小火，因為開始起煙，證明鑊很熱，這時要拿起鑊，因為熱的位置有洞，等我呀，這條魚，我用力改頭，另外一邊，大家看見嗎?</p></a>
+				<a href="#00:23:52.54" id="00:23:52.54" class="lt" onclick="jumptoTime(1432, this.id)"><p>煎到很金黃色，現在我再煎一煎背面，等到它和這個顏色是一模一樣的，因為剛才雖然是金黃色，但還是淺色，很累，不斷地攪拌，我要換手，老人家，沒辦法，這個時候可以關火，然後我們就放它，雖然魚本身已經脫骨了，大家都看到，我再煮多兩次，它還真的脫骨了，但大家看我這樣煎起來的賣相應該不錯，好，現在拿起它。</p></a>
+				<a href="#00:24:51.54" id="00:24:51.54" class="lt" onclick="jumptoTime(1491, this.id)"><p>等我一會兒，嘩，好漂亮，翻轉它，好，大家看看，看到嗎?</p></a>
+				<a href="#00:25:19.98" id="00:25:19.98" class="lt" onclick="jumptoTime(1519, this.id)"><p>是不是很金黃?</p></a>
+				<a href="#00:25:20.98" id="00:25:20.98" class="lt" onclick="jumptoTime(1520, this.id)"><p>這些我現在沒辦法給你看，但是這些位置已經是，這些邊位、這些旗位，這些旗位已經是很脆了，芋頭直接咬下去吃，年頭吃都可以，OK，那你說大家，夠不夠金香?</p></a>
+				<a href="#00:25:40.98" id="00:25:40.98" class="lt" onclick="jumptoTime(1540, this.id)"><p>好了，這個時候，我們要做什麼呢?</p></a>
+				<a href="#00:25:44.98" id="00:25:44.98" class="lt" onclick="jumptoTime(1544, this.id)"><p>當然是要淋醬汁上面，大家看到魚是完全沒有調味的，不好意思，先關掉抽氣扇，不然會吵到頭，然後全部的醬汁，吃得多鹹就視乎大家了，這個階段你可以控制它的鹹度，不一定要將你淋的所有醬油都放下去，大家不要關機，因為還有一些很重要的總結，大家如果有看我的都知道我的習慣，而且我的總結很多時候都有點彩蛋，大家可能看到有疑問。</p></a>
+				<a href="#00:26:39.98" id="00:26:39.98" class="lt" onclick="jumptoTime(1599, this.id)"><p>但是因為我的總結就解決了，那你告訴我，我這樣淋醬汁上去，那些魚怎麼會不好吃呢?</p></a>
+				<a href="#00:26:50.98" id="00:26:50.98" class="lt" onclick="jumptoTime(1610, this.id)"><p>好，然後呢，我再灑些蔥花上面，嘩!這碟魚如果我上到枱不吃的，只看有沒有吃肉，有沒有，好了，現在我做完了，放完了，放齊所有東西了，我和大家說，其實大家有沒有發覺，大家還記不記得我三月份的時候做過一條香煎黃花魚的影片，那裡我放的醬汁又不一樣，那裡我用的是廚餘，隔晚剩下的醬油我拿回來用，那些什麼...那些...</p></a>
+				<a href="#00:27:35.16" id="00:27:35.16" class="lt" onclick="jumptoTime(1655, this.id)"><p>打火鍋的醬油，其實這次我重新開過一次，其實道理一樣，因為那裡也有些蔥、辣椒，如果大家不喜歡吃辣椒的，不要緊的，改用胡椒，這樣就不會辣，但一樣有種野味、香口的感覺，可以嗎?</p></a>
+				<a href="#00:27:57.16" id="00:27:57.16" class="lt" onclick="jumptoTime(1677, this.id)"><p>總結吧，其實煎魚是絕對不難的，紅衫魚絕對是香港的特產，先前我也說過，因為我們香港有一個獨特的，一個叫做下釣的形式，或者叫做乾釣的形式，為什麼呢?大家都是南中國海，你出到南中國海，一定有，通常我們那些漁船出到大約距離，香港大概200公里範圍內，通常那些船都是...</p></a>
+				<a href="#00:28:32.80" id="00:28:32.80" class="lt" onclick="jumptoTime(1712, this.id)"><p>以下釣紅衫魚為主的，好了，為什麼，大家同樣地是南中國海，為什麼內地不是紅衫魚生產呢?</p></a>
+				<a href="#00:28:45.40" id="00:28:45.40" class="lt" onclick="jumptoTime(1725, this.id)"><p>反而香港是因為香港有一個特別的下釣形式，內地呢，他們大多數呢，他們捕魚的形式沒有那麼複雜的，他們大多數都是拖網為主，拖網呢，絕對是釣不到紅衫的，OK?</p></a>
+				<a href="#00:29:2.60" id="00:29:2.60" class="lt" onclick="jumptoTime(1742, this.id)"><p>那麼好了，在這樣的情況下，紅衫魚就成為了我們香港的特產，所以我們香港人對於紅衫魚是很熟悉的，我們去吃飯的時候，就一定會看到有香煎紅衫魚這道菜式的，但是為什麼只有香煎紅衫魚，沒有見過這個...</p></a>
+				<a href="#00:29:20.08" id="00:29:20.08" class="lt" onclick="jumptoTime(1760, this.id)"><p>大紅衫魚，因為全部賣給日本，好了，那，我們要處理這個紅衫魚的時候，其實跟我以前呢，一直跟大家分享處理魚生的形式是一樣的，大家先前都看到了，我們放鹽、胡椒、酒，就舀一舀大概五分鐘左右，記住是五分鐘好了，多過五分鐘就開始變成鹹鮮的了，因為它開始入味了，好，但是在這個過程裡面，為什麼要這麼做呢?</p></a>
+				<a href="#00:29:51.08" id="00:29:51.08" class="lt" onclick="jumptoTime(1791, this.id)"><p>就是因為要除了魚生之外，還有紅衫魚經常性會有泥味的，那些肚子，我們就要處理一下泥味，但是大家在這條影片裡面都發覺，我都說過了，煎的時候已經發覺還是很重泥味，那有什麼辦法解決呢?</p></a>
+				<a href="#00:30:9.56" id="00:30:9.56" class="lt" onclick="jumptoTime(1809, this.id)"><p>放豬油，一放豬油之後，馬上那個泥味就減輕了，沒有完全消失，但是不會難吃，馬上減輕了，OK，這個是小小技巧，好了，煎魚的時候呢，都是要背那條口訣，什麼口訣呢?</p></a>
+				<a href="#00:30:28.28" id="00:30:28.28" class="lt" onclick="jumptoTime(1828, this.id)"><p>大火燒鑊，見煙落油，再見煙，煎魚嘛，小火，OK，好了，基本上我是不是正反兩邊，都是各三分鐘是不是?</p></a>
+				<a href="#00:30:41.48" id="00:30:41.48" class="lt" onclick="jumptoTime(1841, this.id)"><p>但是中間有什麼小技巧呢?</p></a>
+				<a href="#00:30:45.68" id="00:30:45.68" class="lt" onclick="jumptoTime(1845, this.id)"><p>我開大火，小火燒鑊，煎它，為甚麼?</p></a>
+				<a href="#00:30:51.47" id="00:30:51.47" class="lt" onclick="jumptoTime(1851, this.id)"><p>因為這樣可以令到它的顏色很平均，大家看看，這個鑊邊和這個鑊邊的顏色幾乎是一樣的，和鑊中間，是不是?</p></a>
+				<a href="#00:31:3.47" id="00:31:3.47" class="lt" onclick="jumptoTime(1863, this.id)"><p>顏色不是很均勻嗎?</p></a>
+				<a href="#00:31:5.47" id="00:31:5.47" class="lt" onclick="jumptoTime(1865, this.id)"><p>這個就是我三分鐘後開大火烙鑊的功勞，可以令到它更加平均的受熱，如果大家不夠手力去烙鑊的話，可以學我這樣，集則一邊十多秒，集則第二邊十多秒，再集則第三面十多秒，再集則第四面十多秒，每次重覆兩次，基本上就可以做到我這個效果，OK?可以嗎?</p></a>
+				<a href="#00:31:33.47" id="00:31:33.47" class="lt" onclick="jumptoTime(1893, this.id)"><p>好了，最後煎到七七八八了，我們才放胡椒，記住，不要一開始放胡椒，煎牛扒、豬扒都是一樣的，大家知不知道為甚麼?</p></a>
+				<a href="#00:31:45.47" id="00:31:45.47" class="lt" onclick="jumptoTime(1905, this.id)"><p>如果你一開始放胡椒的話，煎出來的魚就不是金黃色的，是黑黑的，但它不是焦的，是黑黑的，為甚麼呢?</p></a>
+				<a href="#00:31:57.47" id="00:31:57.47" class="lt" onclick="jumptoTime(1917, this.id)"><p>胡椒是會掉色的，胡椒是會令到食物更提早焦香，令到表面煎焦，OK?</p></a>
+				<a href="#00:32:8.47" id="00:32:8.47" class="lt" onclick="jumptoTime(1928, this.id)"><p>所以，你一開始放胡椒的話，你的魚還未熟、未脆口、未香口，它就已經變黑了，那我問你，你還敢不敢再煎下去?</p></a>
+				<a href="#00:32:18.47" id="00:32:18.47" class="lt" onclick="jumptoTime(1938, this.id)"><p>賣相不好看之餘，食味也不好看，本來為甚麼要加胡椒呢?</p></a>
+				<a href="#00:32:24.47" id="00:32:24.47" class="lt" onclick="jumptoTime(1944, this.id)"><p>要有聲音，令到它更加惹味，大家都知道胡椒是吧?</p></a>
+				<a href="#00:32:29.47" id="00:32:29.47" class="lt" onclick="jumptoTime(1949, this.id)"><p>但原來早放和遲放的效果有很大分別，早放會令到它焦，還未煎好，就已經焦了，OK?記住，一定要煎到七七八八，最後才放胡椒，你看我先前放了胡椒一分鐘左右，我都不敢放太久，因為很快會焦，但你放了胡椒，就令到整道菜式更加生色，更加惹味，不喜歡吃聲音的人，都可以吃到這條魚，可以嗎?</p></a>
+				<a href="#00:33:0.47" id="00:33:0.47" class="lt" onclick="jumptoTime(1980, this.id)"><p>好了，最後，醬汁那一步，我一開始已經說了，很簡單，眼睫毛，將醬汁放入骨頭，大家說單看賣相是否已經很有食慾，更何況我都說這些骨位，我和大家說，我這個香煎紅心除了是中間那條脊骨之外，所有骨你放心食落肚，效果是怎樣呢，就好像大家食罐頭的豆豉鯪魚，一模一樣，你根本不需要驚它的骨，除了是它的脊骨之外。</p></a>
+				<a href="#00:33:38.51" id="00:33:38.51" class="lt" onclick="jumptoTime(2018, this.id)"><p>所以你食的時候只要撩出脊骨，基本上你整條魚就食落肚就得，當然要食得清楚，否則都會有啞啞地的感覺，ok 得唔得，唉 好啦 講多咁耐，唔講啦 煮第二道餸啦。</p></a>
+				<a href="#00:33:56.51" id="00:33:56.51" class="lt" onclick="jumptoTime(2036, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

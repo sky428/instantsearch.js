@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——涼瓜炒豬腩片，又一道送飯神器，而且製作還算簡單，保証製作時間能夠在半小時內有飯開。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vN7Df274agA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——涼瓜炒豬腩片，又一道送飯神器，而且製作還算簡單，保証製作時間能夠在半小時內有飯開。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚我會分享一道普通家常菜，就是涼瓜炒豬腩片。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>涼瓜炒豬腩片和涼瓜炒牛肉和涼瓜炒肥牛差不多。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>涼瓜炒肥牛和涼瓜炒牛肉我都上一年出過片。</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>今次我想同大家分享涼瓜炒豬腩片。</p></a>
+				<a href="#00:00:38.00" id="00:00:38.00" class="lt" onclick="jumptoTime(38, this.id)"><p>材料有豬腩片，我已經切好，豬腩片當然要汆水，汆水時的片段我就不給大家看了。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>我先將豬腩片放入油中，我擋一擋這邊的位置，因為我怕會弄到相機。</p></a>
+				<a href="#00:01:16.90" id="00:01:16.90" class="lt" onclick="jumptoTime(76, this.id)"><p>為何我會調校時間呢?</p></a>
+				<a href="#00:01:19.14" id="00:01:19.14" class="lt" onclick="jumptoTime(79, this.id)"><p>大家看到我揭開鍋蓋的油有幾塊肥肉，我很喜歡，因為大家都知道我很喜歡買急凍豬肉餡片，很多時候急凍豬肉餡片，一開始一尾通常都很肥，我就當成肥膏來做豬油，為何我家有這麼多豬油呢?</p></a>
+				<a href="#00:01:47.66" id="00:01:47.66" class="lt" onclick="jumptoTime(107, this.id)"><p>其中一個原因是，我用了豬腩的一頭一尾，不要浪費，先用小火炸豬油，現在開大火，將豬腩片的油逼出來，豬腩片是用來炒的，過程是怎樣飛水呢?</p></a>
+				<a href="#00:02:16.86" id="00:02:16.86" class="lt" onclick="jumptoTime(136, this.id)"><p>麻煩大家去四季豆炒豬腩片，豬腩肉炒四季豆的片有詳細介紹，那裡看過的人我不想再重覆，如果未看過的話，我會在說明加連結，飛水的時候用冷水，因為要炒，炒要滑，大家看到豬腩片是否沒有醃過，豬腩片只要切薄一點，是很容易入味，所以大家不用擔心豬腩片不夠味，通常要炒的豬腩片我都不會醃，其實不需要醃。</p></a>
+				<a href="#00:03:2.94" id="00:03:2.94" class="lt" onclick="jumptoTime(182, this.id)"><p>只要炒的時候加足夠的鹽糖味和調味料，其實就已經夠了，這個時候豬腩片可以了，不要太熟，OK，我先關火，給大家看看炒的豬腩片，我們要怎樣的質感，給大家看看，我習慣了，因為我想讓大家看看質感的變化，和手勢的過程有什麼不一樣，有些東西我未必能說出來，但如果大家有多少經驗或有心學的話，看我的手勢其實都學到些東西，這個時候我給大家看看，先頭大家是否看到未落鑊前的質感，現在對比一下。</p></a>
+				<a href="#00:04:21.15" id="00:04:21.15" class="lt" onclick="jumptoTime(261, this.id)"><p>現在煎完出油之後，質感的變化，為什麼要有走油的過程呢?主要原因是要用大火，走油要用大火，煎就要用小火，大家清楚分別嗎?煎和走油是兩回事，大家看到我這個有少少焦香，這個有少少焦香，但效果更好，很明顯看到是煎過的，走過油的，但它不是焦的，至於這個就不要浪費，當它是豬油膏，現在我關火一會，降溫，然後我要將油儲起，大家經常問我豬油是怎樣來的，除非用完，否則我不會買豬油膏回來炸。</p></a>
+				<a href="#00:05:15.15" id="00:05:15.15" class="lt" onclick="jumptoTime(315, this.id)"><p>我拿起，拿個滷油，然後倒下去，因為我經常用熟油，所以其實不會浪費，我不是只放一隻油壺，這個過程我都給大家看完，我不想cut，然後我又想給大家看我平時煮菜是怎樣做，這個時候我又開火，等一會兒，燒一燒鑊，我沒有準備很多東西，連苦瓜也未撈起，等我一會兒，大家可能會有口人說，你不要浪費我的時間，我家廚就是這樣，我都講明了，我不是要表演甚麼。</p></a>
+				<a href="#00:06:47.97" id="00:06:47.97" class="lt" onclick="jumptoTime(407, this.id)"><p>要表演的話，我就不給大家看破廚房，外面有很多工作室，可以租用來用，鑊燒得差不多了，大家可以看到我的時間管理，很多東西不用預備，每一個過程都有空調，空調之間，你就可以做你想做的事，現在夠油了，夠熱了，出煙了，放少許油，手有油，這鑊經常比較滑手，等我一會兒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:30.97" id="00:07:30.97" class="lt" onclick="jumptoTime(450, this.id)"><p>先把油燒光，現在油水很足夠了，第一時間，炒苦瓜的蒜頭豆豉，然後先爆一下鑊，等蒜頭豆豉爆香，這個要有少許耐心，油水不夠，多放少許油，然後我們就放苦瓜，這個苦瓜我已經出水了，出水的片段，我可以剪在開頭給大家看嗎，舊的應該知道怎樣做了，看，幾塊鑊皮，這個時候，我們就放蒜頭豆豉，加少少糖，即是我們家廚炒苦瓜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:48.12" id="00:08:48.12" class="lt" onclick="jumptoTime(528, this.id)"><p>落三匙，我呢個苦瓜呢，因為係做咗脫水大法，所以其實已經係唔苦㗎啦，OK，但唔苦當中呢，我哋都要俾啲糖落去炒嘅，咁就好食啲，然後將豬腩片放入去，剛才我說豬腩片沒有醃過，這時我們加調味料，我們開始計肉的份量，肉大概一斤 苦瓜一斤多一點，即是當它兩斤，所以加鹽一斤半，為何要加一斤半這麼少呢，主要原因是因為我還要有其他材料。</p></a>
+				<a href="#00:09:51.75" id="00:09:51.75" class="lt" onclick="jumptoTime(591, this.id)"><p>有甚麼呢，鹽加完後就加少許雞粉調味，雞粉在這裏的作用就當是上湯，這個高湯的作用，然後加少許鹽，這個高湯的作用，然後加一茶匙 兩茶匙蠔油，OK，然後加生抽，這裡加一茶匙半，這裡就足夠讓腩片上味，之前我和大家說過，如果是肉炒菜加菜一起炒，就一定要調味才放肉，為何呢，這樣可以令到菜和肉的味道均衡一點，但是這裏因為我的豬腩片沒有醃過。</p></a>
+				<a href="#00:10:58.75" id="00:10:58.75" class="lt" onclick="jumptoTime(658, this.id)"><p>完全不需要醃，所以這道菜很簡單，鹹味是從哪裏來的，就是一起調味，所以炒苦瓜炒腩片，特別之處是不是分開調味，是加肉才調味，為何呢，因為肉是沒有味道的，和菜是一模一樣的，這時候我們加少許老抽上色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:24.75" id="00:11:24.75" class="lt" onclick="jumptoTime(684, this.id)"><p>少許，大概半茶匙左右，很多人喜歡打芡，我這個菜我都不會打芡的，但大家看到，都是很亮身，主要是油水足，而我剛剛好炒到剛剛好收水，明白嗎?所以一個炒得好的菜是不需要打芡的，然後放幾滴柱酒，幾滴就可以了，少許就可以了，在這個過程中，其實這個支撈片都會吸收這個鹹味，大家看看，我都是沒有水的，我炒菜都是沒有水的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:28.99" id="00:12:28.99" class="lt" onclick="jumptoTime(748, this.id)"><p>然後放蔥，炒幾下，一樣放蔥後炒幾下，等蔥香一出來，我們就可以收火了，OK，搞定，吃碗麵了，要炒一個涼瓜炒豬腩片，很簡單的，又不用醃，不用預先醃，大家看到的，等下我給大家看看，基本上是沒有水的，因為我是油水足，所以炒出來的肉片也好，苦瓜也好，是很亮身的，是根本不需要打芡的，也很靚仔的，OK。</p></a>
+				<a href="#00:13:28.99" id="00:13:28.99" class="lt" onclick="jumptoTime(808, this.id)"><p>我做完之後給大家一個總結，因為這個炒大家先看到影像，因為在步驟上，我沒有給大家看到很多步驟，所以我就靠說明，因為其他的我已經在其他影片做過了，OK嗎?</p></a>
+				<a href="#00:14:0.19" id="00:14:0.19" class="lt" onclick="jumptoTime(840, this.id)"><p>是嗎?</p></a>
+				<a href="#00:14:1.19" id="00:14:1.19" class="lt" onclick="jumptoTime(841, this.id)"><p>靚唔靚身呀?</p></a>
+				<a href="#00:14:3.19" id="00:14:3.19" class="lt" onclick="jumptoTime(843, this.id)"><p>有冇食肉呀?</p></a>
+				<a href="#00:14:5.19" id="00:14:5.19" class="lt" onclick="jumptoTime(845, this.id)"><p>其實呢，大家唔需要太過介意邊個做啱，邊個唔做啱，最緊要嘅一件事，食家話事，係咪呀?</p></a>
+				<a href="#00:14:14.19" id="00:14:14.19" class="lt" onclick="jumptoTime(854, this.id)"><p>自己都覺得好食嘅，就唔會差得去邊㗎啦，好啦，咁呢我就做一下個總結啦，OK?</p></a>
+				<a href="#00:14:20.19" id="00:14:20.19" class="lt" onclick="jumptoTime(860, this.id)"><p>咁就，炒苦瓜呢，想炒得好食，炒到其實我鍾意乾炒多過係打芡濕炒嗰啲嘅，我覺得唔係路嘅，即係唔係路嘅意思係唔合我嘅口味呀，OK，得唔得?</p></a>
+				<a href="#00:14:35.19" id="00:14:35.19" class="lt" onclick="jumptoTime(875, this.id)"><p>咁呢，我自己炒嘅苦瓜呢，我全部都係乾炒㗎啦，大家睇返以前嘅片，我出咗唔止一個炒苦瓜嘅影片㗎啦，咁炒苦瓜呢，小弟唔夠十歲就識咗炒㗎啦，咁呢，我呢，本身食苦瓜就食咗幾十年，咁我就唔鍾意呢，即係出面好多汁好多芡嗰種苦瓜嘅炒法，咁我係鍾意乾炒嘅，呢個乾炒呢，有啲高級食肆都會做嘅，咁呀，因為乾炒呢，佢需要嘅工序比較多呀。</p></a>
+				<a href="#00:15:8.19" id="00:15:8.19" class="lt" onclick="jumptoTime(908, this.id)"><p>OK，尤其是主要就係嗰個脫水大法嗰度，咁呀，脫水大法我睇下可唔可以將嗰個，即係將嗰個，片頭就接落去呢度啦，ok，咁如果唔得嘅話呢，咁我就將嗰個脫水大法呢，我將條link呢就寫喺個說明嗰度啦，ok，得唔得，想苦瓜炒得靚，首先呢就要脫水，咁脫水嘅功效係乜嘢呢，脫水嘅功效就係第一除苦，除咗苦味。</p></a>
+				<a href="#00:15:39.81" id="00:15:39.81" class="lt" onclick="jumptoTime(939, this.id)"><p>我呢個苦瓜呢，炒苦瓜唔食得苦瓜嘅人都鍾意食，係真係嘅，因為我仔女嘅朋友都試過，講到明話唔食苦瓜，但係嚟到之後係咁食，我問佢點解，佢話我都食唔出有苦味嘅，但係好好味喎，ok，咁，脫水大法第一個功用就係脫去苦啦，第二個功用呢，就係改變呢個苦瓜嘅紋理啦，咁可以令到佢更加緊緻一啲啦，所以呢。</p></a>
+				<a href="#00:16:7.81" id="00:16:7.81" class="lt" onclick="jumptoTime(967, this.id)"><p>我呢碟咁嘅炒苦瓜呢，係好有咬口嘅，好有口感嘅，ok，咁啊，嗰個腩片嘅處理呢，咁嗱我就係用急凍腩片嘅ok，咁啊急凍腩片嗰度呢，我會一樣啦，咁我就將處理急凍腩片，點樣飛水，嗰條link呢，我就寫，擺喺說明嗰度，咁啊大家如果有興趣嘅呢，就去睇下啦，咁如果睇過嘅話呢，咁我就唔需要多講啦，係咪啊。</p></a>
+				<a href="#00:16:37.21" id="00:16:37.21" class="lt" onclick="jumptoTime(997, this.id)"><p>ok，但係記住啦，拜煩炒餸炒菜，水係鑊氣嘅天敵，所以大家見到我全部炒菜，都係炒到差唔多剛剛好，唔需要打芡都冇水出嘅，ok，得唔得，記住啦，幫，炒完餸，我梗係去食飯啦，係咪啊，唔講啦，我真係我流緊口水，因為我好鍾意食苦瓜嘅，又炒咗幾十年，所以呢，我對我自己嘅苦瓜係好有信心嘅，大家可以跟住一齊做下，咁記住啦。</p></a>
+				<a href="#00:17:8.01" id="00:17:8.01" class="lt" onclick="jumptoTime(1028, this.id)"><p>幫，處理腩肉，急凍腩肉點樣處理呢，咁啊，同埋呢，點樣做呢個，為呢個苦瓜做呢個脫水大法呢，咁啊，我喺說明嗰度會加兩條拎落去嘅，咁啊，麻煩大家去睇下啦，啊，多謝大家收看啦，拜拜。</p></a>
+				<a href="#00:17:26.51" id="00:17:26.51" class="lt" onclick="jumptoTime(1046, this.id)"><p>食飯啦喂。</p></a>
+</div>
+	</body>
+</html>

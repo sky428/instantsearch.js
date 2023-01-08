@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蕃茄肉碎炒蛋，兒時記憶，如何不加醋不加茄膏都可以做到酸甜好味。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'F96w14K5Crw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蕃茄肉碎炒蛋，兒時記憶，如何不加醋不加茄膏都可以做到酸甜好味。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚我會做一個蕃茄肉碎炒蛋，先介紹材料，大大隻蕃茄，蔥，蒜，雞蛋，肉碎，肉碎視乎個人喜好，可以放多放少，我已經有600克肉碎，大家之前有看過我片都知道，因為我老婆病人餐需要食用大量肉碎，所以我通常醃兩斤，雞蛋視乎個人喜好，我這裡有6隻，蕃茄有6隻，大約一斤多，因為我每次買都是買我一屋四個人食，所以我買的份量相對多。</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>如果你們家人少，可以買少些，介紹一下如何選蕃茄，選蕃茄有兩個，第一時間看蒂，現在蔬菜商很識做生意，通常會放蕃茄蒂給你，而蒂有花蕾的爪，第一時間看它夠不夠青，如果夠青和剪口新鮮，當然新鮮剛落地不久，如果爪和蒂膚黃，當然要再蒸，因為已經摘了很久，但只用這個也不夠，我們還要輕輕用音力。</p></a>
+				<a href="#00:02:26.58" id="00:02:26.58" class="lt" onclick="jumptoTime(146, this.id)"><p>用手指捏一下，當然不要太大力，否則捏瘀了，就不得了，這樣就可以感受番茄的軟和硬的比例，通常顏色均勻，紅色、紅潤、番茄蒂綠色，按下去沒有軟的感覺，番茄一定是新鮮，放了沒多久，除了這些，我想說一下蒜頭，我通常炒番茄，一定會放蒜頭，但我知道有些人會放薑，據說番茄比較含量，所以會放薑，但我自己覺得加了薑的番茄味好像不太配。</p></a>
+				<a href="#00:03:29.18" id="00:03:29.18" class="lt" onclick="jumptoTime(209, this.id)"><p>所以我不喜歡放薑，我一般都會放蒜頭，蒜頭大家都知道很香，材料介紹完畢，等我下鑊再開機，對了，我要提一提，其實炒番茄有很多種方法，正所謂國師入國法，我也吃過各地的番茄菜式，中式廚師，即香港茶餐廳或酒樓的廚師，他們喜歡放白醋，西廚則喜歡放茄膏，各有各好，各有各原因，我不會評別人的好壞，但我總覺得中廚放醋不夠天然。</p></a>
+				<a href="#00:04:27.66" id="00:04:27.66" class="lt" onclick="jumptoTime(267, this.id)"><p>一吃下去就知道，因為我每次放醋都會搶，搶到喉嚨，我也不知道為什麼，反正我不喜歡放醋，也有西廚放茄膏，例如焗豬扒飯，都會放茄膏，我覺得茄膏始終有添加劑，而且如果大家有吃過新鮮番茄的話，一定感覺到茄膏和新鮮番茄的酸味，味道和果香的分別，即是你放了茄膏，果香就沒有了，即是番茄應該有的果香就沒有了。</p></a>
+				<a href="#00:05:11.66" id="00:05:11.66" class="lt" onclick="jumptoTime(311, this.id)"><p>我的番茄肉碎炒蛋，其實不夠十歲，我已經學會了，當然教我的就是我祖母和我媽，私成他們兩個，也經過自己慢慢研究，你當是古法也好，什麼都好，總之就是一個方法，我就不會放醋，也不會放茄膏，但是我的做法是可以有效地保持到果香，同時間可以提升酸甜度，等一下大家就看看我怎樣做了，如果大家喜歡的話，可以跟著一起做。</p></a>
+				<a href="#00:05:55.66" id="00:05:55.66" class="lt" onclick="jumptoTime(355, this.id)"><p>反正我吃了幾十年，超過四十年番茄肉碎炒蛋，其中的四十多年是我自己炒的，OK，材料介紹完了，方法也介紹完了，等一下下鍋的時候，大家看看我怎樣做了，先介紹完材料之後，現在就看看怎樣處理，通常切番茄，其實這些都是ABC來的，不過我也想給大家看一下，番茄先開邊，一般來說一個番茄就開四邊的，然後斜斜地在釘上切走釘。</p></a>
+				<a href="#00:06:43.12" id="00:06:43.12" class="lt" onclick="jumptoTime(403, this.id)"><p>通常我自己的習慣就是每次買菜回來，我喜歡用膠袋裝垃圾，每一次是獨立包裝，然後就裝好，這樣相對地就可以衛生一點，還有處理垃圾也容易一點，每一次，你知道家裡的垃圾桶，不可能所有廚餘都放進去，這樣就很臭，容易生細菌，所以通常我這樣廢物利用，很簡單，我給大家看一下，其實切番茄就是Easy job，你只要有個概念就可以了。</p></a>
+				<a href="#00:07:26.12" id="00:07:26.12" class="lt" onclick="jumptoTime(446, this.id)"><p>不過我也想給大家看一下怎樣去做，番茄已經浸泡了十多分鐘，浸菜這道菜，相信大家已耳熟能詳，基於殘餘的農藥，所以就浸菜，基本上很快手，之前有個視頻，有些人不斷說我的砧板和廚房髒，我的工作台和灶台差不多，我的工作台是兩把刀的長度乘兩把刀的闊度，所以很窄，但我最高紀錄是在這麼窄的工作台可以煮出20人份量的菜，香港地少人多，寸金尺土，所以沒辦法。</p></a>
+				<a href="#00:08:54.66" id="00:08:54.66" class="lt" onclick="jumptoTime(534, this.id)"><p>大家見諒見諒，之前的視頻，雖然我拍了三十多年，但拍視頻始終是初哥，初初的影像不如意，給各位誤會就不好意思，入廚幾十年，怎可能不知道衛生狀況，但大家要體諒香港人的居住環境，切完番茄就打蛋，為何我又要打蛋呢，我想給大家看看基本步驟，我家廚是中廚，所以我的做法跟職業廚房有少少分別，基本上是我們中國中廚的習慣。</p></a>
+				<a href="#00:09:59.66" id="00:09:59.66" class="lt" onclick="jumptoTime(599, this.id)"><p>調味，現在有六隻蛋，我大概加三分一匙鹽，然後三分一匙雞粉，然後蛋一定要用油來打發，可以滑一點，如果是西式的話會用花奶之類的，其實道理都是一樣的，你用花奶是沒有油的，全脂花奶，脫脂花奶是沒有用的，你打蛋的話一定是用全脂花奶，全脂其實就是有油的，所以有時候，不吃最健康，一般人加完就算了，我自己就喜歡加點胡椒碎。</p></a>
+				<a href="#00:10:50.92" id="00:10:50.92" class="lt" onclick="jumptoTime(650, this.id)"><p>因為香一點，加了熱之後就會香一點，一樣，打發好，我比較習慣用筷子，現在新一代，譬如我女兒，她喜歡用打蛋器，我經常笑她，說你買了這麼多東西回來，其實一隻筷子可以做很多東西，一張雙筷子，她說我做甜品，買了這些東西回來，習慣都是用的，不用又浪費，反正入廚其實，我覺得八仙過海，過境神通，最重要是什麼?</p></a>
+				<a href="#00:11:36.92" id="00:11:36.92" class="lt" onclick="jumptoTime(696, this.id)"><p>都是我經常說的一句，一道好吃的菜，你吃完第一口之後，就會有吃第二口的衝動，是馬上的，如果是這樣的話，你那道菜就成功了，你不要去追究到底他怎麼做，他怎麼做，譬如我這樣，我最多給你示範一次，或者參考一下，但是每個人手勢不同，都可能會有味道上有出入的，OK，切好番茄，打好蛋，這兩個最重要的程序給大家看一下，演示一下。</p></a>
+				<a href="#00:12:13.92" id="00:12:13.92" class="lt" onclick="jumptoTime(733, this.id)"><p>其他的東西我就關機了，等到下鑊我才開機，好了，處理完材料了，然後我們就開火，字幕由Amara.org社區提供，大家知道家廚不能像職業廚房般經常洗鑊，經常有地方可以特意清潔，所以我經常說一個好的家廚，其實他應該懂得時間的分配和管理，今天我們做的是番茄肉碎炒蛋，大家猜猜我第一個要處理的東西是什麼呢?</p></a>
+				<a href="#00:13:9.86" id="00:13:9.86" class="lt" onclick="jumptoTime(789, this.id)"><p>給我三秒鐘，1，2，3，你們有答案了，我就公佈一下，我第一個要處理的東西是炒蛋，然後第二樣就是煎肉碎，最後才要埋鑊，為什麼呢?因為這樣做就可以不用洗鑊，在這個時候我們先加點油，通常我習慣和大家聊天的時候，其實我是在燒鑊的，因為炒蛋所以可以加多一點油，通常煎東西，我講過無數次了，怎樣可以不沾鑊呢?</p></a>
+				<a href="#00:14:4.86" id="00:14:4.86" class="lt" onclick="jumptoTime(844, this.id)"><p>就是用大火，這個是最大火，然後收到谷花火，小小火，然後我們就放蛋，咁呢呢個時候呢就搞下佢啦點解要搞下佢呢個原因就係等佢呢嗰啲蛋呀起皺紋，嗱我知道呢有啲人就唔鍾意搞嘅唔緊要各思各法啦咁咪大家，我都係嘅即係期間即係學習廚師入廚房期間好多姨媽姑姐都會入嚟下，即係抽七嘴八舌㗎啦大家加把嘴下咁呀各人有各人嘅即係手法，我都試咗好多次先有搵到一個適合自己嘅方法係啦冇錯啦其實烹調烹飲呢家嘢呢。</p></a>
+				<a href="#00:15:7.40" id="00:15:7.40" class="lt" onclick="jumptoTime(907, this.id)"><p>最緊要係適合自己嘅手法然之後又烹調出呢適合自己食嘅口味然之後我哋先至可以係推廣畀人㗎嘛啱啱呀，先至可以為我哋屋企人呢就煮一餐好飯㗎嘛大家睇到嘅我啲蛋係咪起曬皺紋個原因呢就係因為咁樣呢就可以透過，唔均勻即唔均勻嘅熱度呀簡單啲嚟講呢就係有啲係熟咗有啲未熟有啲熟咗有啲未熟到到佢全熟嘅時候佢就有唔同嘅層次啦即係口感上係，有分別嘅嗱而家呢我開始攞啦咁我之前講過呢炒蛋係唔可以反㗎嘛但係呢啲咁嘅炒蛋就可以返啦。</p></a>
+				<a href="#00:15:54.30" id="00:15:54.30" class="lt" onclick="jumptoTime(954, this.id)"><p>因為這些炒蛋待會加入番茄就可以熟一點，基本上這樣就可以了，你不想蛋太老就可以了，因為待會真正落鑊一起煮還剩一段時間，所以就可以起鑊了，關火 起鑊，我們就儲起備用，為什麼番茄肉碎炒蛋要先炒蛋呢?</p></a>
+				<a href="#00:16:30.30" id="00:16:30.30" class="lt" onclick="jumptoTime(990, this.id)"><p>大家看到嗎?</p></a>
+				<a href="#00:16:31.30" id="00:16:31.30" class="lt" onclick="jumptoTime(991, this.id)"><p>那隻鑊是不是很乾淨呢?</p></a>
+				<a href="#00:16:36.30" id="00:16:36.30" class="lt" onclick="jumptoTime(996, this.id)"><p>然後第二樣東西起火，我們要炒的是什麼呢?</p></a>
+				<a href="#00:16:42.30" id="00:16:42.30" class="lt" onclick="jumptoTime(1002, this.id)"><p>炒的是肉碎，肉碎因為本身有油就不用多油，我不是說要先燒紅鑊才落鑊，這是一種方法，而這種方法是由冷鑊開始，即是從一隻完全乾淨的鑊開始，當你燒開鑊後就不用等它燒紅了，不用等它燒紅了，直接落油就可以了，廚房小有一個好處，我新手就可以拿走所有的東西，我這個新舊肉碎加起來，我大概放了500克左右，多與少就視乎個人的習慣和喜好。</p></a>
+				<a href="#00:17:54.30" id="00:17:54.30" class="lt" onclick="jumptoTime(1074, this.id)"><p>現在我剛剛落肉碎的時候，我還是很大火，為什麼呢?</p></a>
+				<a href="#00:18:2.30" id="00:18:2.30" class="lt" onclick="jumptoTime(1082, this.id)"><p>因為可以產生煤焫反應，令到部分底部的肉碎先煎焦，看到嗎?沒有黏鑊的，可以很自由地拿，但如果你是新鑊的話，即是乾淨的鑊的話，起火就不可以有這樣的效果，就必須要先熱鑊，OK，好了，現在呢，差不多了，我們就要關小火，那就慢慢煎，大家看到嗎?</p></a>
+				<a href="#00:18:44.60" id="00:18:44.60" class="lt" onclick="jumptoTime(1124, this.id)"><p>看到表面有些焦焦的嗎?</p></a>
+				<a href="#00:18:47.60" id="00:18:47.60" class="lt" onclick="jumptoTime(1127, this.id)"><p>這樣就對了，我兒子很喜歡這樣的煎法，他每次都要求老爸，你煎肉碎可不可以煎焦一點，那種香口感，當然也有人說煎到這麼焦，會容易生癌 諸如此類，我總覺得人類的生命總有天意，我們今時今日的人類生存不成疑問，為什麼不可以在自己有生之年，盡量保持健康的情況下，多吃自己喜歡吃的東西，多做自己喜歡吃的東西。</p></a>
+				<a href="#00:19:40.20" id="00:19:40.20" class="lt" onclick="jumptoTime(1180, this.id)"><p>為什麼為了怕死，然後去限制自己的口福之慾，是不是這樣說，這個時候會很慢，通常煎一邊大概三分鐘，然後煎另一邊又三分鐘，我很喜歡三分鐘就三分鐘，其實是有道理的，當你在特定溫度的情況下，其實這個時間是固定的，即是加熱到熟或是到標準效果的時候，其實是有定量的，所以我要配合這個火力，三分又三分 剛剛好。</p></a>
+				<a href="#00:20:27.20" id="00:20:27.20" class="lt" onclick="jumptoTime(1227, this.id)"><p>我先關掉機器，我已經煎完肉碎，可以給大家看看，肉碎有少少焦 剛剛好熟，這裏大概用了六分鐘，然後用煎肉碎的油，這樣我們就可以做到整個過程，不需要洗鍋，一踢過就直落，然後我們攪一攪，現在我燒鍋主要是等水份蒸發，等水份蒸發後就剩下油，差不多了，然後加入蒜蓉，通常落蒜蓉不要急 落了蒜蓉爆一爆，然後加入番茄。</p></a>
+				<a href="#00:21:51.96" id="00:21:51.96" class="lt" onclick="jumptoTime(1311, this.id)"><p>這個時候我們就要加調味了，這個就是我的秘方，就是加糖，通常我加糖的標準，煮番茄就是一匙就加四匙，然後隨著重量就加減，炒一炒，然後我們大概加水100cc左右，不用多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:39.96" id="00:22:39.96" class="lt" onclick="jumptoTime(1359, this.id)"><p>然後就加調味料，然後就可以上鑊蓋了，要煮多久呢?煮三分鐘左右，讓果香和甜度提升，這個時候番茄會偏甜，這個時候我放完糖炒之後，番茄會偏甜，但等一會我再加多一道程序，番茄的酸味就會完全抽出來，這個過程煮大概三分鐘就可以了，由滾到煮到好，就是三分鐘，現在過了三分鐘，大滾了，給大家看看，基本上的效果是怎樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:37.75" id="00:23:37.75" class="lt" onclick="jumptoTime(1417, this.id)"><p>現在保持形狀，可以有點結實，不要緊，因為我喜歡吃一塊塊的番茄，夠鐘了，這個時候就加炒好的材料，弄爛蛋，蛋還未全熟，但我放了這麼久，自己的溫度會令蛋自己熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:6.75" id="00:24:6.75" class="lt" onclick="jumptoTime(1446, this.id)"><p>好了，這個時候，大家是否覺得水分少了?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:13.75" id="00:24:13.75" class="lt" onclick="jumptoTime(1453, this.id)"><p>是呀，如果加100克水分會少了，可以加多一點，因為我煮的時候不會加這麼多，因為加了這麼多就很難補救，我始終覺得多水分不是太好，但我兒子說多點汁，可以送飯，所以我通常是煮好了，效果好了，我寧願不夠水，後面再加水，這個時候還未調味，稍為煮一煮，加了水之後，稍為煮一煮，煮滾，稍為煮一煮煮滾，雖然蕃茄已經脫皮，但仍然保持完整的形狀。</p></a>
+				<a href="#00:25:8.07" id="00:25:8.07" class="lt" onclick="jumptoTime(1508, this.id)"><p>給大家看看，已經脫皮了，但我現在用力，用夾子用力，仍然可以保持形狀，這個效果我覺得是最好的，這個時候差不多了，滾了，然後我們調味，按照份量，加一匙鹽，雞粉半茶匙，基本上這樣就調好味道了，但還未足夠，我現在先將調味攪勻，讓它均勻受熱，均勻受熱對調味料都很重要，除了鹹淡度比較統一之外，調味料不同溫度會表現出不同口感和味蕾的感覺。</p></a>
+				<a href="#00:26:7.07" id="00:26:7.07" class="lt" onclick="jumptoTime(1567, this.id)"><p>然後這個，我很喜歡用，我不知道其他廚師會不會用，我姑且叫它獨門地方，用豉油，在鍋子打三個圈，這樣經過這個程序之後，番茄的酸甜度就會大大提升，然後它仍然保留到果香，不會被醋影響到天然果香味，也不會被番茄糕影響到天然果香味，我最喜歡這樣做，我不知道為什麼外面做不到，我曾經吃過在北方，北方他們不加醋。</p></a>
+				<a href="#00:27:5.07" id="00:27:5.07" class="lt" onclick="jumptoTime(1625, this.id)"><p>但我覺得它的酸甜度不足夠，現在差不多了，可以關火了，關火後就放最重要的，放蔥，一道好好餸飯好好味，食到不停得口，兒時的記憶返返哂嚟啦，阿媽煮嘅，一道番茄肉碎炒蛋就完成啦，我先頭講，我食過北方嘅都食過好多次，因為我成日都要周圍去公幹嘅以前，北方嘅番茄炒蛋亦都非常之出名和普遍，家常菜，但係北方就唔落醋，但我覺得酸甜度唔夠。</p></a>
+				<a href="#00:27:58.26" id="00:27:58.26" class="lt" onclick="jumptoTime(1678, this.id)"><p>但係都好好味，我嘅方式就係，記住啦，係點做呀，唔好落錯方式，唔好落錯程序，次序就係一起鑊一炒嘅時候，落糖，落幾多糖呢?一斤落四斤，如果你想鹽佢唔夠酸，可以再落多少少，好奇怪呢，落糖多原來會酸嘅，其實係一種化學作用，如果食開泰菜，識得整泰菜嘅各位，應該好體會到落糖同落鹽同檸檬酸，天然果酸之間嘅關係。</p></a>
+				<a href="#00:28:38.26" id="00:28:38.26" class="lt" onclick="jumptoTime(1718, this.id)"><p>真係要落好多糖，先落糖，跟住由得佢煮，煮到臨上碟去調味就落鹽，最後尾就落豉油，我覺得係呢道蕃茄肉碎炒蛋嘅畫龍點睛嘅效果，記住唔好搞錯方式，今日就係咁多，多謝大家支持，如果大家依個時候都仲睇緊嘅話，證明你真係想學煮餸嘅，多謝大家支持，我去開餐啦，拜拜，好喇，臨尾比大家睇下一個完成品上碟，係咩樣?係咪好吸引呢?</p></a>
+				<a href="#00:29:32.26" id="00:29:32.26" class="lt" onclick="jumptoTime(1772, this.id)"><p>其實呢，我先頭好似好多油，其實唔係好多油嘅啫，薄薄一層啦，實有嘅。</p></a>
+				<a href="#00:29:39.26" id="00:29:39.26" class="lt" onclick="jumptoTime(1779, this.id)"><p>OK，咁我真係去開飯啦，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——五花腩炒四季豆，這是一道香港人家家戶戶都會做而且經常吃的家常菜，但就是那麼一點點炒得不夠好吃，大家來看看我如何炒出餐廳專業級的出品吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '5PUAM6TAiXk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——五花腩炒四季豆，這是一道香港人家家戶戶都會做而且經常吃的家常菜，但就是那麼一點點炒得不夠好吃，大家來看看我如何炒出餐廳專業級的出品吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天我想和大家分享一個家常菜，五花腩炒四季豆。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>一般食肆不會做這個菜，我和大家分享怎樣炒得比茶餐廳的食味更好。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>因為我覺得無論是高級食肆或茶餐廳，他們炒的四季豆不合我口味。</p></a>
+				<a href="#00:00:37.00" id="00:00:37.00" class="lt" onclick="jumptoTime(37, this.id)"><p>大家看看我可以怎樣做。</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>首先，我們通常會用的材料是五花肉，五花肉和五花肉。</p></a>
+				<a href="#00:00:49.70" id="00:00:49.70" class="lt" onclick="jumptoTime(49, this.id)"><p>五花腩通常是急凍的，很少會買新鮮的，因為貪它容易處理。</p></a>
+				<a href="#00:00:58.70" id="00:00:58.70" class="lt" onclick="jumptoTime(58, this.id)"><p>不過，急凍的五花腩有一個弊病，就是通常來說，雪氣比較重。</p></a>
+				<a href="#00:01:9.70" id="00:01:9.70" class="lt" onclick="jumptoTime(69, this.id)"><p>我們要怎樣處理雪氣呢?如果有看我影片的，大家應該知道我處理雪氣的神物是什麼。</p></a>
+				<a href="#00:01:21.70" id="00:01:21.70" class="lt" onclick="jumptoTime(81, this.id)"><p>就是青花椒，因為青花椒的麻味和香氣是很霸道的，這是一個非常有效的除雪氣的神物，我稱之為神物。</p></a>
+				<a href="#00:01:40.70" id="00:01:40.70" class="lt" onclick="jumptoTime(100, this.id)"><p>但大家可能會說，如果沒有青花椒怎麼辦?其實你用原粒的白胡椒粒，或者買普通的花椒也可以。</p></a>
+				<a href="#00:01:52.70" id="00:01:52.70" class="lt" onclick="jumptoTime(112, this.id)"><p>不過，我認為最好的效果都是用青花椒，因為它的香氣是最霸道的。</p></a>
+				<a href="#00:01:58.70" id="00:01:58.70" class="lt" onclick="jumptoTime(118, this.id)"><p>大家可以放心，處理完之後，你的豬腩肉是不會有麻味的，放心吧!怕吃辣的人也不用擔心。</p></a>
+				<a href="#00:02:11.70" id="00:02:11.70" class="lt" onclick="jumptoTime(131, this.id)"><p>在這個過程中，純粹是想有效地去除雪氣。</p></a>
+				<a href="#00:02:17.70" id="00:02:17.70" class="lt" onclick="jumptoTime(137, this.id)"><p>除了一般的青花椒之外，我們還要加薑片。</p></a>
+				<a href="#00:02:36.11" id="00:02:36.11" class="lt" onclick="jumptoTime(156, this.id)"><p>放薑片，然後呢，現在滾了一會兒，大家都看到了，然後我們要做什麼呢?</p></a>
+				<a href="#00:02:46.11" id="00:02:46.11" class="lt" onclick="jumptoTime(166, this.id)"><p>我們就要拿一塊五花腩，拿一塊五花腩，放進去，煮，大家看看，這個五花腩漂亮嗎?</p></a>
+				<a href="#00:02:58.11" id="00:02:58.11" class="lt" onclick="jumptoTime(178, this.id)"><p>這個五花腩，真的一層一層的，當然大家都知道，如果叫做五花腩，當然是一層肥肉一層瘦肉，這樣的五花腩是最好的，也可以這樣說，為什麼我這麼喜歡用這個急凍肉呢?</p></a>
+				<a href="#00:03:14.11" id="00:03:14.11" class="lt" onclick="jumptoTime(194, this.id)"><p>因為大家看到的，這條五花腩，是很完整的一條，切口也很完整，比新鮮的容易處理，當然，新鮮的，也不是很難處理，只不過，最重要的原因是，它便宜，這條五花腩，是28元一磅，我這裡買了30多元一磅，比較鬆，如果，大概一斤左右，換新鮮的話，這裡厲害了，差不多要100元，所以價錢相差三倍，窮港產就是這樣，ok。</p></a>
+				<a href="#00:04:0.11" id="00:04:0.11" class="lt" onclick="jumptoTime(240, this.id)"><p>我們放進去，豬皮，盡量，向上，為什麼要豬皮向上呢?</p></a>
+				<a href="#00:04:10.11" id="00:04:10.11" class="lt" onclick="jumptoTime(250, this.id)"><p>因為鍋子有弧度，現在這樣可以幫助定型，如果，豬皮，向底的話，有一個很嚴重的問題，煮開後，形狀會收縮，變了，五花腩，會彎曲，很難，切得不夠好，所以，豬皮要向上，而且瘦肉難熟，比肥肉熟，現在，關火，蓋上蓋，要多久呢?</p></a>
+				<a href="#00:04:52.11" id="00:04:52.11" class="lt" onclick="jumptoTime(292, this.id)"><p>給大家看看，幸好，我的爐有計時，15分鐘，15分鐘，給大家看看，計時器，在下面，左下角，紅色那個，不介意給大家看看爛爐，不過爛爐，還可以用，用到爛爐完全爆玻璃，窮港產就是這樣，ok，等一下，煮好後，再開視頻，跟大家介紹，豬腩片，平均又好看，說起切豬腩片，某位明星，我不說名字，有一晚他做那個，不知道什麼，五花腩。</p></a>
+				<a href="#00:05:48.11" id="00:05:48.11" class="lt" onclick="jumptoTime(348, this.id)"><p>我看到他切的豬皮，一癌一蠶，不過他純粹搞笑，我相信不是有心，如果，我們這些入關廚，做這些出來，真是該會，是不是，我就不說那麼多，等大家，等一下煮好後，我再切豬腩片的時候，再分享給大家。</p></a>
+				<a href="#00:06:17.37" id="00:06:17.37" class="lt" onclick="jumptoTime(377, this.id)"><p>我已經把豆子去掉，豬腩肉也已經煮好了，接下來我們進一步處理，首先，先把豬腩肉浸涼，讓它不要太熱，然後用廚紙抹乾，為什麼要這樣做呢?因為待會切出來，還要煎一煎，拉一拉油，所以，多餘的水分，大家都知道會發生什麼事，就是令到鍋子白白的，所以，為了更好地處理，不會令到它處理得不好的話，我們要先把它抹乾，可以嗎?</p></a>
+				<a href="#00:07:16.37" id="00:07:16.37" class="lt" onclick="jumptoTime(436, this.id)"><p>砧板就繼續抹乾，大家看到，這塊是濕了的砧板，今天又被人說我嘔心，那些人，十指不踮，楊春水，試一下，把這句說話跟你媽媽說，我估計她不會剷到你天花，十居其九，不要說十居其九那麼誇張，十個有七個，七八個，一定剷到你上天花板，喂，有什麼問題呀，這塊砧板，中式砧板就是這樣，我女兒也會說，中式砧板買回來已經是深色的，濕了就更加黑。</p></a>
+				<a href="#00:07:56.37" id="00:07:56.37" class="lt" onclick="jumptoTime(476, this.id)"><p>是嗎?算了，我又純粹說說而已，其實我除了想跟大家分享我入廚的心得之外，其實我也想給大家一些正確的入廚觀念，有些東西不是說你講衛生，那些東西就會變漂亮，首先你要知道入廚房有什麼可以做，有什麼是不可以做，我標準的衛生動作，我全部做了，當然你說我做得不好，那我可以再改善，但是砧板這東西，我真的不是很明白有多麼好心。</p></a>
+				<a href="#00:08:37.37" id="00:08:37.37" class="lt" onclick="jumptoTime(517, this.id)"><p>有誰家中式砧板不是這樣的，說真的，我買塊新砧板出來，買塊新砧板回來，給大家觀摩一下，我多久時間那個砧板會變黑，我可以跟大家說，一個月內它一定會變黑，就變到好像我現在這塊砧板那樣，所以，因為它的顏色，你覺得嘔心，無謂啊，還有，中式砧板為什麼要用這種木，和它這麼厚呢，我都看到一些西廚，他用的都是圓形的砧板。</p></a>
+				<a href="#00:09:13.37" id="00:09:13.37" class="lt" onclick="jumptoTime(553, this.id)"><p>很漂亮，顏色很漂亮，不過它很薄，為什麼中式砧板要用這種木，和切得這麼厚，原因就是，中式砧板是一塊砧板做到尾，切、斬、劈，全部都是用這塊砧板，所以這塊砧板，為什麼要用那種容易變黑的木，就是因為這樣，我都不懂得說那種叫什麼木，不知道榛木還是什麼木，反正就是一碰水就會黑，好了，不要說這麼多廢話了。</p></a>
+				<a href="#00:09:45.37" id="00:09:45.37" class="lt" onclick="jumptoTime(585, this.id)"><p>我現在這個視頻，主要我想簡單點介紹一下，怎樣去切豬腩肉，大家看到的，豬腩肉有皮一邊，有肉一邊，我們切的時候，要怎樣做呢，皮要向外面，肉向我們自己，OK，這樣，對不起，我搞錯了方向，皮要向我們自己，肉要向外面，這樣切出來的豬腩肉，連肉帶皮才會切得漂亮，通常豬腩肉，五花腩，拿來炒的話，就不適宜切得太厚。</p></a>
+				<a href="#00:10:39.37" id="00:10:39.37" class="lt" onclick="jumptoTime(639, this.id)"><p>不同的炆就可以切方塊，但是如果是炒或者蒸的話，你就要切片，切的肉片越薄越好，所以為什麼，也要汆水，因為生切的肉就比較難定型，也比較難切，所以一定要先汆水，OK，行不行，現在它又繼續出水了，不行，我要再抹一抹，等等啊，這些廚子是不能省的，我認為這些是廚房中一個消耗性的用品，好，現在已經抹乾了，砧板也乾了。</p></a>
+				<a href="#00:11:30.08" id="00:11:30.08" class="lt" onclick="jumptoTime(690, this.id)"><p>我再說一下為什麼要抹乾它，因為待會拿來酒釀或者煎，如果有水的話，大家都知道結果了，切的時候，斜斜地打斜，由這邊接近刀尖開始，一直壓下去，向前推，就會切得很漂亮，刀尖提起，接近刀尖這個位置，開始切下去，一直放平，然後向前推，切的肉片就會很漂亮，大家看著，我現在已經放慢速度，為了讓大家看到效果，我現在先切成碟。</p></a>
+				<a href="#00:12:44.06" id="00:12:44.06" class="lt" onclick="jumptoTime(764, this.id)"><p>大家看看，豬皮那邊，我不會切到一癌一癌的，大家以這個為標準，這個大小的厚度，其實我都不是切得很平均的，不要緊的，這個大家可以因著來做的，大家要記住了，大概切的2-3mm左右，大家看看，我切完之後，我都還可以排得很正的，好，簡單了，好，繼續切，現在我切快一點，大家看不看到我每一次切完之後。</p></a>
+				<a href="#00:13:49.52" id="00:13:49.52" class="lt" onclick="jumptoTime(829, this.id)"><p>都會撥一撥刀，這樣就可以撥開切好的肉，這樣就不會阻礙你繼續切下去，大家看到我第一刀是稍微定位後才開始第二刀，為什麼呢?主要是定位用，第一刀壓下去，這樣就有位置了，然後再拉一把刀壓下去，這樣就好好定位了，這樣就不會切到肉的形狀古靈精怪，切口又不齊，當然最後這部分，最尾的瘦肉，因為經過處理後，它會比較散。</p></a>
+				<a href="#00:15:1.51" id="00:15:1.51" class="lt" onclick="jumptoTime(901, this.id)"><p>不是很帥，但不要緊，看到嗎?我第一刀是定位的，第二刀拉回頭才開始切，好，給大家看看，大家看看，我切開了，很整齊，尾部，因為那裡有瘦肉，通常都會因為散，所以會掉下來，不要緊，但基本上肉片的形狀就出來了，這段視頻主要是給大家感受一下，如何切豬腩肉才算是好的，而且很炒的，可以嗎?</p></a>
+				<a href="#00:15:56.68" id="00:15:56.68" class="lt" onclick="jumptoTime(956, this.id)"><p>到這個步驟，大家有沒有發現我完全沒有醃過肉?</p></a>
+				<a href="#00:16:0.68" id="00:16:0.68" class="lt" onclick="jumptoTime(960, this.id)"><p>是呀，因為豬腩肉切得這麼薄，調味時，肉自然會入味，很快入味，所以不需要擔心五花腩會否有味，有味的，放心，待會留心我如何調味就行了，這部份到此為止。</p></a>
+				<a href="#00:16:23.98" id="00:16:23.98" class="lt" onclick="jumptoTime(983, this.id)"><p>在正式炒豆之前，有個插播，這個bonus，今晚因為我兒子突然有朋友上來吃飯，窮等人家，沒有菜，我加什麼菜呢?</p></a>
+				<a href="#00:16:37.98" id="00:16:37.98" class="lt" onclick="jumptoTime(997, this.id)"><p>最簡單當然是蒸水蛋，不過這個就加了肉碎，肉碎蒸蛋，大家看到表面是不是很平滑?</p></a>
+				<a href="#00:16:48.98" id="00:16:48.98" class="lt" onclick="jumptoTime(1008, this.id)"><p>其實我都是用傳統的方法，就不用做到很複雜，如果大家有興趣的話，我以後會拍多條片，肉碎蒸蛋，順便再重複再講蒸蛋的要訣在哪裏，蒸水蛋，不會令到它變成核爆蛋，其實核爆蒸蛋這東西，為什麼會出現呢?</p></a>
+				<a href="#00:17:12.98" id="00:17:12.98" class="lt" onclick="jumptoTime(1032, this.id)"><p>最主要是因為有兩個原因，第一個，蛋本身是有酵素的，第二個，蛋之所以變成核蛋，原因就是因為發蛋的時候有空氣在裏面，你只要想方法令到空氣全部走出來，它就不會變成核蛋，另外，蛋對溫度的變化是很敏感的，當它過熟的時候，就會好像梳乎厘那樣，核蛋爆炸，所以其實有很多種傳統方法，做好這幾樣東西的話。</p></a>
+				<a href="#00:17:48.98" id="00:17:48.98" class="lt" onclick="jumptoTime(1068, this.id)"><p>你想蒸一個又嫩滑又靚仔的隔水蒸蛋，是絕對不困難的，日後有機會再介紹和分享，今天主要是炒豆，我開始炒豆了，大家看著了。</p></a>
+				<a href="#00:18:3.98" id="00:18:3.98" class="lt" onclick="jumptoTime(1083, this.id)"><p>各位，就...，我們做完切豬肉，處理完五花腩之後，解凍和除雪氣之後，現在要做的就是五花腩要走油，我用的就是原先做好的豬油，為什麼我會用豬油再做呢?</p></a>
+				<a href="#00:18:32.79" id="00:18:32.79" class="lt" onclick="jumptoTime(1112, this.id)"><p>因為我逼出油的時候，豬油會再濃縮一點，本來我只有50%豬油，但經過這次再做，豬油會再濃縮一點，家廚就是這樣，要上方切法，盡量令自己的材料更加好味，職業廚房就不同了，因為職業廚房通常是走油，拉油的動作，走油就變成拉油，因為拉油什麼都要用炸爐去炸，所以油質會變得很雜，不像家廚說，我做豬油就是豬油。</p></a>
+				<a href="#00:19:12.79" id="00:19:12.79" class="lt" onclick="jumptoTime(1152, this.id)"><p>我做蝦油就是蝦油，這個過程要多放一點油，因為我之前也說了，目的是什麼呢?</p></a>
+				<a href="#00:19:20.79" id="00:19:20.79" class="lt" onclick="jumptoTime(1160, this.id)"><p>目的是要走油，和豬腩肉走油，另外就是...</p></a>
+				<a href="#00:19:26.79" id="00:19:26.79" class="lt" onclick="jumptoTime(1166, this.id)"><p>我先放進去，首先放均勻，現在還有少許水，所以都很白白的，很厲害，如果我不是先抹乾它。</p></a>
+				<a href="#00:19:42.23" id="00:19:42.23" class="lt" onclick="jumptoTime(1182, this.id)"><p>它那白白的效應會更加厲害，現在這個時候，我們先蓋上蓋子，第一，可以防止油分，第二，可以用小火慢慢把油逼出來，這個過程我要把火調到中火，不要太大，這個過程跟職業廚房是不一樣的，職業廚房會拉油，用大火、猛火盡快把油拉出來，但是家廚來說，我們有很多種方法，家廚來說，清潔廚房是一個很重要的課題，如果油逼出來，我又要抹很久。</p></a>
+				<a href="#00:20:32.19" id="00:20:32.19" class="lt" onclick="jumptoTime(1232, this.id)"><p>為了防止這件事，我最喜歡煎東西時，我會先蓋上蓋子，但蓋上蓋子，用的火力是不一樣的，所以我現在要把火調小一點，雖然我不是用大火，但是我用蓋上蓋子的這招，會令到它加速升溫，所以所有東西都是相輔相成，即是加加減減之間，不是一本通書讀到腦，我現在先煎它，煎到差不多，我再開機。</p></a>
+				<a href="#00:21:8.67" id="00:21:8.67" class="lt" onclick="jumptoTime(1268, this.id)"><p>現在煎了大概一分多鐘，現在看到的，有些沾鍋底的就焦了一點，盡量不要煎到太乾，因為如果煎到太乾，炒起來口感不好吃，現在我調整一下，讓它均勻受熱，令到每一塊的豬腩肉都受過油溫，其實可以上碟了，可以停了，我現在就關火，我給大家看看，現在我指著的那塊已經過熟了，OK，現在還有少許白色的那些是正常的，少許碰過油和火。</p></a>
+				<a href="#00:22:1.12" id="00:22:1.12" class="lt" onclick="jumptoTime(1321, this.id)"><p>這樣就保持到炒的時候還有口感，就不會吃到柴皮的感覺，OK，我現在就全部上碟，記得，為什麼我們處理豬腩肉後，不是馬上炒，要先拉油，或者先煎一煎，因為這個過程是要把油逼出來的，到時吃起來就不會那麼油膩，好了，現在我給大家看看，這一塊呢，這一塊就是錯誤的示範，要保持肉的顏色和口感和質感，但同時邊邊是有少少辣過的。</p></a>
+				<a href="#00:23:7.31" id="00:23:7.31" class="lt" onclick="jumptoTime(1387, this.id)"><p>這個待會吃起來就最好吃，當然，我經常都說，我拍視頻，現在先開火，開火做什麼呢，就是把油濃縮一下，通常來說，我經常都說，我拍視頻，即是我拍片，不是最高的水準，因為我要遷就視頻的速度，所以不是最高的水準，記住，在家裡的話，當然你不用拍視頻，不拍片的話，可以把鍋蓋一直攪，慢慢攪到自己眼睛看到，差不多可以了。</p></a>
+				<a href="#00:23:45.31" id="00:23:45.31" class="lt" onclick="jumptoTime(1425, this.id)"><p>這樣就可以關火了，明白嗎，這樣就不用像我視頻那樣，鍋蓋中斷了，還有鍋底有些肉塊，碰了太久，火就燒焦了，其實也不是燒焦的，也很好吃的，不過配合炒豆，口感就不配合，OK，行不行。</p></a>
+				<a href="#00:24:5.31" id="00:24:5.31" class="lt" onclick="jumptoTime(1445, this.id)"><p>等我開火炒的時候，我再開機，好了，大家，我已經燒了一會兒了，一如以往，建煙，起煙，然後下油，然後我們再建煙，然後我們開始下料，一樣，這些料不要一放蒜頭或者薑蒜就馬上放料，我們要先爆一爆它，讓蒜頭、薑蒜出一出味，同時間可以保持高溫。</p></a>
+				<a href="#00:24:48.66" id="00:24:48.66" class="lt" onclick="jumptoTime(1488, this.id)"><p>OK，然後見它金黃色就爆了，下豆了，看到嗎?</p></a>
+				<a href="#00:25:2.03" id="00:25:2.03" class="lt" onclick="jumptoTime(1502, this.id)"><p>這是鑊氣的來源，其實這個動作已經代替了職業廚房拉油的動作，高溫拉油的動作，令豆的表面經過高溫的燙過，在這個情況下，豆會更好食，大家看到我馬上放五花腩。</p></a>
+				<a href="#00:25:38.03" id="00:25:38.03" class="lt" onclick="jumptoTime(1538, this.id)"><p>這裏有超過兩斤，但放鹽也不要放太多，最多放一斤半，因為待會還要有其他醬料，糖可以放多一點，糖可以放三斤，糖和鹽的比例是一比二，一份鹽兩份糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:16.45" id="00:26:16.45" class="lt" onclick="jumptoTime(1576, this.id)"><p>ogaexhales，proph，Sven，absol imbalance，Belgian，ии，peaks，систем，amar cé，tz，ourse，esten，大家看看，我這個炒一個竹竹是三個泥棒那麼多，好了，這個時候我們就開始放少許雞粉，雞粉不用多，半茶匙就夠了，主要是調味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:46.65" id="00:26:46.65" class="lt" onclick="jumptoTime(1606, this.id)"><p>在這個時候，我們就開始加其他的醬料了，蠔油，大概是2茶匙，因為這裡多，2斤豆加1斤肉，蠔油可以多一點，繼續炒勻，在這個過程，我一滴水都沒有加，然後豉油，1，2，3，4，大概3茶匙，然後加老抽，大概1茶匙，這個時候，開始上色了，其實我沒有醃過豬腩肉，但這樣下去就已經很足味了，上鍋蓋大概30秒。</p></a>
+				<a href="#00:27:56.65" id="00:27:56.65" class="lt" onclick="jumptoTime(1676, this.id)"><p>我現在先關掉電腦。</p></a>
+				<a href="#00:27:59.65" id="00:27:59.65" class="lt" onclick="jumptoTime(1679, this.id)"><p>大家，已經30秒了，這個時候，豆身表面最多只有7-8成熟，我經常說，炒蔬菜是不可以太過熟，一旦熟透就不好吃了，這個時候，調味料還有些汁，那怎樣算呢?這個時候就打個薄芡，打薄芡就是加1匙生粉，不要太多，少許就夠了，然後用水把它煮開，然後繼續炒，讓醬汁掛在豆上，我可以話畀你聽一千幾即係唔使擔心嗰啲肉係唔夠味嘅，而家我呢個過程呢反而會令到因為嗰啲收水呀咁就令到呢。</p></a>
+				<a href="#00:29:28.06" id="00:29:28.06" class="lt" onclick="jumptoTime(1768, this.id)"><p>嗰啲醬汁呢就順便都掛埋上去嗰啲肉嗰度呢變咗反而啲肉係好鹹，即係夠鹹啦總之就係咸嗰啲豆嘅。</p></a>
+				<a href="#00:29:40.60" id="00:29:40.60" class="lt" onclick="jumptoTime(1780, this.id)"><p>基本上得㗎啦而家啲豆呢最多都係九成熟㗎啫，咁就得㗎啦點解我成日呢就話我唔鍾意去，酒樓食嗰啲咩冷菜四季豆呀或者係，乾燒乾煸四季豆呀因為呢佢哋做得太熟，大家可以睇下嘅，大家要注意喎我由頭到尾一滴水都冇落㗎喎你唔使擔心㗎，佢都會出少少水嘅因為我呢個呢係屬於生炒OK咁家，就唔需要話好似即係專業廚房咁講究就話要拉個友呀。</p></a>
+				<a href="#00:30:31.28" id="00:30:31.28" class="lt" onclick="jumptoTime(1831, this.id)"><p>要出個虎皮呀咁樣先至為之靚呀為之好食呀其實唔係嘅，我可以同大家講呢我呢個咁嘅生炒四季豆呢其實呢個食味呢，仲要畀酒樓餐廳嘅專業廚房仲要好食，我都講㗎喇簡單第一句說話你講到天花龍鳳都冇用嘅，你食完第一口有第二口食嘅衝動嘅話嗰樣送呢，就係最正㗎喇咁我而家我畀大家睇下呢就係嗰個即係嗰個，相如何呀。</p></a>
+				<a href="#00:31:10.10" id="00:31:10.10" class="lt" onclick="jumptoTime(1870, this.id)"><p>因為一家人食，所以就大碟，給大家看看，賣相如何呀?</p></a>
+				<a href="#00:31:22.10" id="00:31:22.10" class="lt" onclick="jumptoTime(1882, this.id)"><p>因為這個火已經產生了苦皮苦斑的現象，這就是我炒出來要起火的原因，這個我可以保證，跟著程序做，每餐三大碗白飯是絕對沒問題的，我先不跟大家說了，我要開飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

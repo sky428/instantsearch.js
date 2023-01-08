@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——芹蒜炒牛柏葉，香港人的家常做法，除了打邊爐，還可以炒的啦，而且惹味非常！吃膩了打邊爐，馬上跟著改用炒吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hZMHVy9QfpQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——芹蒜炒牛柏葉，香港人的家常做法，除了打邊爐，還可以炒的啦，而且惹味非常！吃膩了打邊爐，馬上跟著改用炒吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.09" id="00:00:0.09" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好呀你又對住隻鑊，有新意思搞啦有好嘢搞啦咁呢今日呢我就想同大家分享呢一個，好特別嘅菜式，好少人敢做，但係好多人想食，乜嘢菜式咁巴閉呀，去畀大家睇下先，牛柏葉呀大家個教授少少畀大家睇下先，牛柏葉呢，即係大家呢一想起就街邊嘅，打邊爐卓牛柏葉，好少會有人呢攞嚟炒嘅，因為佢哋係唔敢。</p></a>
+				<a href="#00:00:43.87" id="00:00:43.87" class="lt" onclick="jumptoTime(43, this.id)"><p>做呢個菜式嘅點解呢個菜式好難做，難做嘅原因呢就係因為，唔係因為佢難，過程複雜，因為乜嘢呢，係因為佢成日出水，我首先介紹下材料先啦有得佢滾下先，咁呢，就，蒜頭啦，兩三條啦跟住之後，兩三條嘅糖芹啦，跟住一啲嘅紅椒絲，咁如果大家唔鍾意食辣其實呢啲唔係好辣㗎咋，如果唔鍾意食辣嘅就可以呢個部分呢，即係除咗係食辣之外呢佢本身係即係有少少點綴嘅。</p></a>
+				<a href="#00:01:19.45" id="00:01:19.45" class="lt" onclick="jumptoTime(79, this.id)"><p>作用嘅，咁如果唔想嘅呢就，用少啲紅椒啦，一隻紅椒啦ok，咁就唔係好辣㗎啫食落去下，咁呀，做料有乜嘢呀其實好簡單嘅蒜頭同豆豉，算啦，可以係，剁爛嘅蒜蓉，亦都可以係用好似我而家咁樣算片，跟住然之後呢，原粒嘅豆豉呀，咁，就係咁多啦冇㗎啦，咁呀，水滾呢咁我首先第一件事要做㗎呢係乜嘢呢，咁就梗係要搽呢個。</p></a>
+				<a href="#00:01:53.25" id="00:01:53.25" class="lt" onclick="jumptoTime(113, this.id)"><p>牛扒葉啦，出牛扒葉呢，大家都知嘅唔需要係著得好犀利呀，稍為輕輕著一著佢，呢啲，開始亂呀咁咪差唔多啦，好啦呢個時候呢就要拎起喇喎因為點解呢，我呢個咁嘅作用嘅主要係畀佢出水嘅啫，唔係要整熟佢嘅本身牛扒葉都熟熟地㗎喇ok，我生細火先如果唔係繼續加熱呀出事呀，這樣就可以令到牛柏葉預先出水，等下炒的時候它就沒那麼容易出水。</p></a>
+				<a href="#00:02:35.40" id="00:02:35.40" class="lt" onclick="jumptoTime(155, this.id)"><p>這個菜之所以難欺負到人，就是因為它出水很厲害的，所以我們就要預先做了，然後我不給大家看了 馬上過冷河，為什麼呢 這樣可以令到它不會再熟，還有可以令到它脆口一些，好 我現在就開大火燒鍋，那邊就過冷河，拿隻手下去試一下水溫，要完全差不多是室溫，這樣我們就OK了，然後我們要做一個動作，拿它 讓水都出來了。</p></a>
+				<a href="#00:03:25.10" id="00:03:25.10" class="lt" onclick="jumptoTime(205, this.id)"><p>OK 行不行，等下我們炒的時候就沒那麼多水了，好 給大家看，嘩 我弄了一碗水出來，有沒有搞錯，是呀 你弄完這個之後，然後再抹一抹它，如果你嫌它不夠乾身，再抹一抹它 OK，再抹一抹它，那就保證一定是乾身的了，那怎樣抹呢，當然要出動到我們的什麼，偉大的廚子，那我現在繼續燒鍋，我不理它了。</p></a>
+				<a href="#00:04:2.30" id="00:04:2.30" class="lt" onclick="jumptoTime(242, this.id)"><p>燒鍋的 大火燒鍋 記住，大火燒鍋 見煙落油，再見煙就可以炒了，大家看看，都乾得七七八八了，經過這個工序之後，我可以告訴大家，牛排葉就不會 就算它出水都出很少，OK 記住，還有牛排葉一定不可以過火，一過火它就韌了，如果不過火，之所以大家那麼喜歡吃牛排葉，主要原因就是因為它爽口，OK 記住。</p></a>
+				<a href="#00:04:38.70" id="00:04:38.70" class="lt" onclick="jumptoTime(278, this.id)"><p>好了 現在，現在差不多了 等一下，好了 現在差不多出煙了，這個時候我們就要注意了，真係熱呀，因為對著鏡頭呀所以呢我就比較緊張少少，記住一定要係要見佢出煙呀咁我哋呢先至可以係落油嘅好，落油啦兩茶匙到啦一至兩茶匙啦咁跟住然之後呢，我哋攞油啦攞勻佢啦，等一陣呀等佢再再熱啲因為呢，我哋呢個餸呢係。</p></a>
+				<a href="#00:05:30.37" id="00:05:30.37" class="lt" onclick="jumptoTime(330, this.id)"><p>需要係爆炒嘅好呢個時候，落蒜頭豆豉啦，稍為爆一爆佢先呀，好，跟住然之後，落呢個，辣椒呀，這個時候我們先調味，因為那些牛扒葉吸味很厲害，所以我們先調味，讓蔬菜先上味，鹽大概是三分二匙，糖一茶匙，然後放雞粉，好了，這個時候我們繼續攪拌，嘩!好香，好，這個時候我們就可以放牛扒葉了，放完牛扒葉後我們準備打芡，好，這個時候我們可以繼續。</p></a>
+				<a href="#00:07:9.74" id="00:07:9.74" class="lt" onclick="jumptoTime(429, this.id)"><p>嘩，開始很香了，這個時候我們要灒酒，因為隻手先呀所以我動作唔係幾好呀請大家見諒呀，如果我好似平時咁瀟灑嘅話呢我肯定呢，嗰支酒樽唔知飛咗去邊㗎呢個時候我哋擺現呀，打個薄嘅女，因為牛髮熱出水了，所以要打芡，因為出水，所以溫度降得很緊要，差不多可以了，這個時候加少許豉油，畫龍點睛。</p></a>
+				<a href="#00:08:11.41" id="00:08:11.41" class="lt" onclick="jumptoTime(491, this.id)"><p>然後再加蔥朵，搞掂 炒到蔥香 見蔥香搞掂，一個芹蒜炒牛扒葉就完成了，大家見到都出水出得好犀利，所以為何這道菜這麼欺負人炒就是這個原因，然後將它放上碟，放上碟後我再和大家做總結，不要關機，有幾個重點大家需要注意，否則這牛扒葉就炒得不好看，你睇下出幾多水，但係呢經過先頭咁樣去炒呢因為，夠鑊氣呀所以呢。</p></a>
+				<a href="#00:09:16.83" id="00:09:16.83" class="lt" onclick="jumptoTime(556, this.id)"><p>呢個出水都唔係一個大問題嚟嘅，等我擺一擺碟先呀，等佢好睇啲呀唔好咁核突，熄掉抽氣扇，總結一下鬆的重點，大家炒牛柏葉切忌不能過火，先頭炒的時間很短，中間停了的時間不太好，但家廚也是這樣，每樣東西都準備十足，記得飛水時稍微搓一搓，像平時街邊搓牛柏葉一樣，最主要目的是讓它出水，然後要立即過冷河。</p></a>
+				<a href="#00:10:47.07" id="00:10:47.07" class="lt" onclick="jumptoTime(647, this.id)"><p>不要讓熱繼續發揮，這樣會令到牛柏葉老，牛柏葉難炒的原因，一是出水很厲害，二是很容易老，老了牛柏葉就不好食，所以大家要做的時候，先頭的飛水十多二十秒，頂多不過三十秒，然後立即過冷河，防止繼續加熱，熱到它心都熟了，這樣可以令到牛柏葉，處於最佳爽口的程度，炒的時候調味，記得先調味，因為牛柏葉吸味很厲害。</p></a>
+				<a href="#00:11:39.07" id="00:11:39.07" class="lt" onclick="jumptoTime(699, this.id)"><p>如果先調味，第一調味不及，大家看到了，先頭幾快出水，炒的東西不夠香口，不夠鑊氣，所以調味後再加牛柏葉，其實牛柏葉的食味，主要是因為我炒了蔬菜、芹蒜、豆豉，調味後有鹹味，它倒轉頭回味到牛柏葉，所以牛柏葉現在有味，大家不用蘸豉油，最後畫龍點睛，讚酒畫龍點睛加蔥炒兩炒，可以嗎，記得打薄芡，因為出水很厲害，否則味道會吃不住在牛柏葉。</p></a>
+				<a href="#00:12:33.15" id="00:12:33.15" class="lt" onclick="jumptoTime(753, this.id)"><p>基本上就是這樣，這碟，可以說不是送飯菜，但大家一定很想吃，希望大家喜歡這道菜，跟著一起做，沒問題的，多謝大家收看，拜拜。</p></a>
+</div>
+	</body>
+</html>

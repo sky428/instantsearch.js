@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——泰式萬用醬底，有了這個泰汁底，我們就能完全的複製很多泰個小吃，泰式海南雞飯、生菜包、泰式烤魚、泰式蝦刺身、泰式燒豬頸肉都沒有難度，附上泰式海鮮醬的演示，大家不能錯過！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'G2cBTOBbZnM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——泰式萬用醬底，有了這個泰汁底，我們就能完全的複製很多泰個小吃，泰式海南雞飯、生菜包、泰式烤魚、泰式蝦刺身、泰式燒豬頸肉都沒有難度，附上泰式海鮮醬的演示，大家不能錯過！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，看看畫面是否很凌亂，很多東西，為甚麼?因為今天我要正式打一個泰式萬用章，答應了大家很久，很多人都問我方法如何，文字版我已經貼出來了，不過到底如何做呢?</p></a>
+				<a href="#00:00:24.58" id="00:00:24.58" class="lt" onclick="jumptoTime(24, this.id)"><p>要看影像，我這裏一次過打大約800cc至1L，為甚麼我會打這麼多呢?因為我家人吃泰菜都頗喜歡，每個月一定有一兩餐吃泰菜，所以我一次過打多些，為甚麼我會叫它做萬用醬呢?因為我現在要做的醬可以開成雞醬、海鮮醬，可以直接炒生菜包，所以我叫它做萬用醬，先打醬底，然後食不同的東西，再加不同的材料，我和大家介紹一下，首先要有攪拌機，家裏應該每個人都有。</p></a>
+				<a href="#00:01:26.58" id="00:01:26.58" class="lt" onclick="jumptoTime(86, this.id)"><p>材料有甚麼呢?這是泰國鳳眼椒，這是大隻的，大約有十多隻，我當它是三十隻去計算，有蒜頭，我用了三個蒜頭包，然後有青檸、香茅，一般來說，有些比較便宜的檔口，它會這樣剝開給你，有些就要你自己剝開，有便宜有貴，大家可以看看，青檸就要買這些，這些青檸百家有得買，這些泰國鳳眼椒，我這些比較大隻，是在街市買的，細隻的，其實百家或維康都有得買。</p></a>
+				<a href="#00:02:13.58" id="00:02:13.58" class="lt" onclick="jumptoTime(133, this.id)"><p>那隻牌子叫CP，我買椰青也是買它的，除了青檸、香茅、辣椒、蒜頭之外，這個醬很重要的，另外一樣東西就是原西瓜，我只要瓣，大家看到我把葉都撕掉，因為只有瓣才可以長期儲存，加上葉，就會變色，我不敢說它會變壞，但會變色就不要看，因為我要長期儲存，除了這些之外，我還有其他醬料，泰式醬沒有魚露，這個就隨便買的。</p></a>
+				<a href="#00:03:2.58" id="00:03:2.58" class="lt" onclick="jumptoTime(182, this.id)"><p>在百家，因為我原先用這隻，這隻餐廳通常用這隻，加了蠔汁，當然好吃一點，但魚露其實都有很多種，有不同的魚類，大家要留意，如果你想吃餐廳的味道，記得這隻去糧油店買，有大有細，通常家用買細枝就夠了，除了這些之外，米醋，這次我這個醬是比較特別的，其他的泰醬，其他的泰醬是沒有的，只有普寧豆醬。</p></a>
+				<a href="#00:03:54.08" id="00:03:54.08" class="lt" onclick="jumptoTime(234, this.id)"><p>其他沒有的，我這條配方是有的，除了這些之外，鹽、糖，這些都是基本的，大家看看我怎樣做，大家可以自己在家裡做也可以，我拿一個瓶子，我有一個專用的裝泰醬的瓶子，給大家看看，這裡差不多有一L，打好之後，我就長期放在冰箱，泰醬因為有檸檬酸和醋酸，所以可以放很久，首先，我先裝好攪拌機，因為真的太窄了，沒辦法。</p></a>
+				<a href="#00:04:51.02" id="00:04:51.02" class="lt" onclick="jumptoTime(291, this.id)"><p>看不到，我現在移動一下鏡頭，因為我們家實在太小，我現在用到16mm的焦距，但也不夠廣角，可想而知，大家看看我的廚房有多小，這裡有家用的普通攪拌機，然後，我們把蒜頭放進去，然後，等一下，我看看能不能拉高一點給大家看看，等等，大家會否看得舒服一點呢?</p></a>
+				<a href="#00:05:47.44" id="00:05:47.44" class="lt" onclick="jumptoTime(347, this.id)"><p>Disney HIV tyle</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:52.92" id="00:05:52.92" class="lt" onclick="jumptoTime(352, this.id)"><p>Take acompañ，fest，prest，pin</p></a>
+				<a href="#00:05:54.02" id="00:05:54.02" class="lt" onclick="jumptoTime(354, this.id)"><p>белonas，hemos，�hare，gamma，Greg자가，iegSTR，turn</p></a>
+				<a href="#00:05:54.74" id="00:05:54.74" class="lt" onclick="jumptoTime(354, this.id)"><p>���，multiples</p></a>
+				<a href="#00:05:52.04" id="00:05:52.04" class="lt" onclick="jumptoTime(352, this.id)"><p>Кстати，02，シルク，大家會看得舒服些</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:50.72" id="00:05:50.72" class="lt" onclick="jumptoTime(350, this.id)"><p>tactic，stressed</p></a>
+				<a href="#00:05:54.26" id="00:05:54.26" class="lt" onclick="jumptoTime(354, this.id)"><p>amos，ointed，udding，провер，� datos，astrology，kry precursyd，peracao，HTML submarines，studio，tick hug，adam，Agr complexes，sam，咁呀 算頭啦 辣椒啦呢度辣椒呢大隻嘅呢就畀20隻，細隻嘅呢就畀30隻 咁呢一度呢 如果 如果呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:8.57" id="00:06:8.57" class="lt" onclick="jumptoTime(368, this.id)"><p>大家即係唔好似我食泰菜食得咁犀利嘅話呢，就做三分一就得啦 咁三分一係點呢，十粒蒜頭加十隻辣椒 ok，咁細嘅辣椒就十隻啦 大嘅辣椒就五隻啦 ok，得唔得 咁就減三分一啦 好啦 跟住完之後呢，青檸呢就放六粒 等等下，我都 因為地方太細啦 好啦 嗱 咁呢，記住呢就係呢個青檸呀 要攞個棘篩隔起佢，點解呢 因為我試過舔過嘢㗎啦 你打埋啲核落去呢。</p></a>
+				<a href="#00:06:50.77" id="00:06:50.77" class="lt" onclick="jumptoTime(410, this.id)"><p>嗰啲醬就會苦嘅 ok，咁就放幾多呢 如果你一次用嘅就放兩隻，咁如果你係打夠 即係打夠大量嘅呢，好似我而家咁呢 就放六隻，等等呀，咁呢啲檸檬呢就 百家有得賣啦，一般嘅呢個係喺街市嘅山藥舖都有得賣嘅，記住係青檸呀 泰國青檸呀 呢圓噸嘅，你就唔好話貪方便呢 就買嗰隻新歧視檸檬嗰啲呢，咁就唔啱嘅 ok。</p></a>
+				<a href="#00:07:39.85" id="00:07:39.85" class="lt" onclick="jumptoTime(459, this.id)"><p>咁同埋記住啦 咁同埋呢，大家會話 嘩 你淨係bid啲汁落去咁樣，會唔會浪費多啲呀 就掟埋呢個檸檬落去，跟住之後呢 諗住唔好浪費啦，又係會出事嘅 點解呢，因為你連皮打呢 會苦嘅，即係嗰度成個醬汁會苦嘅 大家記住呀，好 而家呢就放咗三粒啦，咁咪要總共呢就放六粒啦，因為我要打一Litre嘅醬呀。</p></a>
+				<a href="#00:08:26.23" id="00:08:26.23" class="lt" onclick="jumptoTime(506, this.id)"><p>大家不要嫌我慢，也不要嫌我煩，或者不需要看，就跳過吧，最主要我給大家看看，我實際上是怎樣操作的，記住，拿這個這樣的隔篩，現在我把核隔起，因為我不是經常做，所以我也是三個月才做一次，自從上一次，大家要求我距離現在我發表的泰式鹹肉雞飯已經超過四個月了，變了這四個月，我就吃了四個月，那些醬，好。</p></a>
+				<a href="#00:09:33.59" id="00:09:33.59" class="lt" onclick="jumptoTime(573, this.id)"><p>喂喂喂，不要啊不要啊，因為家裏有人在，所以背景聲音，我們的真實生活，不是甚麼studio，好了，現在就弄好些甚麼，然後我們就要放白醋，白醋要放多少呢?</p></a>
+				<a href="#00:10:14.59" id="00:10:14.59" class="lt" onclick="jumptoTime(614, this.id)"><p>用茶匙計，放15茶匙，等等，我找一隻像樣的，因為我家裏是這樣，所以就放15茶匙，1、2、3、4、5、6、7、8、9、10、11、12、13、14、15，15茶匙，然後魚露，也是放15茶匙，現在大家會見到是1、2、3、4、5、6、7、8、9、10、11、12、13、14、15，OK。</p></a>
+				<a href="#00:11:35.59" id="00:11:35.59" class="lt" onclick="jumptoTime(695, this.id)"><p>然後放甚麼呢?</p></a>
+				<a href="#00:11:48.94" id="00:11:48.94" class="lt" onclick="jumptoTime(708, this.id)"><p>就是這個普寧豆醬，OK，大家應該感覺到我有點遲疑，因為我怕我做錯了，因為我已經寫了食譜的成份，放在我的Facebook和上次的泰式雞飯那裡，因為我這次要重做，還有我放大了份量，所以我要看著食譜來做，普寧豆醬放多少呢?</p></a>
+				<a href="#00:12:28.08" id="00:12:28.08" class="lt" onclick="jumptoTime(748, this.id)"><p>1匙，2匙，3匙，4匙，5匙，6匙，7匙，8匙，9匙，OK 9匙，全部都是3的倍數，因為我原本的食譜是做一餐，即是少量，但其實也可以吃兩三餐，然後呢，我們就放那個什麼呢?</p></a>
+				<a href="#00:13:2.90" id="00:13:2.90" class="lt" onclick="jumptoTime(782, this.id)"><p>等等，然後呢，就放這個芫茜餃，地方小沒辦法，經常要找東西，就用剪刀，剪斷它，大家不要介意我動作比較慢，原因是我怕這個槍是很重要的，最主要是因為鏡頭不遷就，所以會是，這樣說吧，我做錯事的時候教錯大家就麻煩了，我現在這個方法主要是根據西貢行仔老字號的一間泰菜，兩夫妻，一個是香港人，另一個是泰國華僑，那些廚師全部都是泰國那邊請回來的。</p></a>
+				<a href="#00:14:25.04" id="00:14:25.04" class="lt" onclick="jumptoTime(865, this.id)"><p>他做了40年了，老字號，其他的開完又關，關完又開，只有他在西貢行仔壓力不倒40年，所以味道有一定程度，我吃慣他的味道，現在我開這隻泰醬，其實就是他的味道，憑我自己的口感，他最特別的地方就是放了普寧豆醬，一般的泰醬是不會放的，普寧豆醬在聖馬泰那邊的華人也會用，只不過放在泰汁上會比較特別，不知道為什麼，反而純泰國的泰醬，我反而不喜歡吃。</p></a>
+				<a href="#00:15:18.04" id="00:15:18.04" class="lt" onclick="jumptoTime(918, this.id)"><p>現在他加了普寧豆醬，我非常非常喜歡，也是很獨特的存在，因為其他的泰菜館是做不出這個味道的，不過不幸遇上黃金利亞，我做得出來，我不敢說是百分之一百，因為當間有個比例的問題，但成分我一定沒有吃錯，我的弟妹妹本身都是吃那間泰菜大的，所以他們都說真的很像，很棒，大家跟著我這條方向走，因為我怕做錯，所以今天就吃螺絲比較多。</p></a>
+				<a href="#00:16:1.04" id="00:16:1.04" class="lt" onclick="jumptoTime(961, this.id)"><p>大家看完之後就看成分，我用文字放在說明那裡，有人說我剪過芫茜都剪那麼久，我都不看了，看下一部份吧，芫茜就完成了，然後最後要放香茅，香茅放綠芝，剪成大段就可以了，如果是做少量的，就要將它除衫，我原本的方法是做一次，現在做幾個月，三個月，這是第三條，這是第四條，這是第五條，本來我有一個專業一點的攪拌機，十多年了，比較大，這是第五條，但因為我覺得它骯髒不好看，所以這個新一點，我就用這個，誰知這個小一點。</p></a>
+				<a href="#00:17:31.60" id="00:17:31.60" class="lt" onclick="jumptoTime(1051, this.id)"><p>第六條，乾了的都可以用，不要用醃就可以了，好香，放齊了，讓我看看我的食譜，然後放糖，放15茶匙，1、2、3、4、5、6、7、8、9、10、11、12、13、14、15，OK，15茶匙，我看看有沒有漏了，鹽，加2茶匙，然後加水，用煲過的水，加150cc，為何要加水呢，因為如果不加水的話，就打不開。</p></a>
+				<a href="#00:19:13.86" id="00:19:13.86" class="lt" onclick="jumptoTime(1153, this.id)"><p>打不起這個醬，好了，這樣就搞定了，這個醬不是我跟別人的，是我自己吃完別人的東西之後，然後就，用滑葫蘆弄出來的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:42.46" id="00:19:42.46" class="lt" onclick="jumptoTime(1182, this.id)"><p>ven chromosomes，Ink，toner，stimul trimmed，ー，balance，ų，Rogers，잖아，coule panda，акти，forsvir，аров，보니까，허팝amı，rout lipstick，survivor，uters，여 thereby，He cuerpo。</p></a>
+				<a href="#00:19:56.64" id="00:19:56.64" class="lt" onclick="jumptoTime(1196, this.id)"><p>wash，iamo，fly，?".</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:49.86" id="00:19:49.86" class="lt" onclick="jumptoTime(1189, this.id)"><p>stellar，tam Nature，confronted，Milliarden，às，� écrit unex tran 정말，beide，کر Keith，atteification，orth cond cheese，unsuccess，Jacobs，需要一點時間，因為香茅要熟</p></a>
+				<a href="#00:20:32.17" id="00:20:32.17" class="lt" onclick="jumptoTime(1232, this.id)"><p>把香茅放入鍋裡，讓它煮熟，放入冰箱冷藏，用冰箱冷藏，讓香茅更容易熟，香茅炒好了，可以上碟，好，差不多了，我給大家看看，質感是這樣的，喂，豪哥，對了，OK，夠辣了，好，給大家看看，打完之後的質感是這樣的，看到嗎?我弄暗一點，看到嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:31.05" id="00:21:31.05" class="lt" onclick="jumptoTime(1291, this.id)"><p>就是這樣來的，你知道有多搞笑嗎?</p></a>
+				<a href="#00:21:33.33" id="00:21:33.33" class="lt" onclick="jumptoTime(1293, this.id)"><p>我一開始時，我經常想他是不是放了薑，最後才發現，不是放薑，他打出來的纖維狀，其實是香茅，是香茅的纖維，不是薑，這個呢，就是一個萬用醬，萬用醬底來的，我們先處理它，拿一個罐，我這個醬是很濃稠的，因為它是醬底，Пер Clap，Kommentare，country，ee，For фильма，력。</p></a>
+				<a href="#00:22:12.99" id="00:22:12.99" class="lt" onclick="jumptoTime(1332, this.id)"><p>Tyurp，Theports，ности，formed second，然後我可以馬上，等一下我會示範一次，我怎樣開海鮮醬，即是吃蝦刺身的海鮮醬，ok 另外一種的了，即是由這個醬底開出來的，另外我亦都會拍多一條影片，就是做什麼呢，拍多一條影片就是炒這個生菜包，ok 那就不說那麼多了，今天都拖了大家很多時間。</p></a>
+				<a href="#00:22:43.59" id="00:22:43.59" class="lt" onclick="jumptoTime(1363, this.id)"><p>主要的原因就是因為我要看，我怕做錯，那 Recipe 本身就是我自己發明的，即是發明的意思就是，我吃完別人的東西，然後自己配原料出來，然後吃過 咦 好吃，是真的八九成的味道，那我自己配出來就是這一家，現在這裡的醬，大家不要看，可以放三至六個月的，ok 那就，然後就可以做這個泰式雞醬，這個是泰式的海鮮醬。</p></a>
+				<a href="#00:23:16.59" id="00:23:16.59" class="lt" onclick="jumptoTime(1396, this.id)"><p>和可以炒生菜包 直接炒的，那生菜包其實很簡單的，那等一下我在另一條影片，我就會和大家分享，用這個泰醬的底，然後就是去炒那個生菜包出來，ok 行不行，那等一下見了，我先做一個蝦刺身，好啦 大家，那先頭就和大家分享了，怎樣開這個泰式醬的醬底，ok 那我就順便買了一些，即是一些蝦刺身回來，現做的 我就不懂得開。</p></a>
+				<a href="#00:23:57.59" id="00:23:57.59" class="lt" onclick="jumptoTime(1437, this.id)"><p>我坦白說，開刺身就不是我的專長，ok 不過呢，我現在主要就是說，我想和大家分享，一個泰式醬，這個開了這個醬底之後，那我們怎樣去逐樣，因應不同的食材，去開一個相應的醬底，那先頭呢，大家就看到我只是用芫茜瓣 是不是，那其實正式來說，我們會芫茜葉也用，不過是要新鮮調配的時候，ok 行不行，那我就用一棵的芫茜。</p></a>
+				<a href="#00:24:40.18" id="00:24:40.18" class="lt" onclick="jumptoTime(1480, this.id)"><p>呢個就要切得幼啲啦ok，等我一陣呀，對一對焦先，呢部機都仲係唔夠智能呀，咁呢，呢個係可以切幼啲嘅呢個芫茜ok，係現場調教呢你即刻食嘅時候你先可以放呢個芫茜葉呀，如果唔係呢嗰啲醬就會，如果你想擺耐啲呢一擺過夜呢嗰啲醬就會變黃變黑㗎喇即係嗰啲芫茜葉呀，芫茜啦一棵啦，跟住然之後。</p></a>
+				<a href="#00:25:23.18" id="00:25:23.18" class="lt" onclick="jumptoTime(1523, this.id)"><p>青檸一個啦，等等呀我嗰個，呢個呢你跌咗啲，即係跌咗啲滑落去都唔緊要因為你唔我哋唔需要再打散㗎喇，Ok，一粒，一粒嘅青檸呀，好，跟住然之後呢，三分一斤鹽啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:25:58.80" id="00:25:58.80" class="lt" onclick="jumptoTime(1558, this.id)"><p>Little，theoricit，Auntie，pass upside，� browse，Psychology，Guy，Video，mystery，義 cul，一匙糖，魚露大約3茶匙，魚露在現場開的時候，吃海鮮就可以多一點，大約3茶匙，然後就放少許醋，輕輕一茶匙，然後就可以放入醬汁，不多與少就視乎大家的喜好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:1.95" id="00:27:1.95" class="lt" onclick="jumptoTime(1621, this.id)"><p>好，給大家看看，現場開的，即是你食的時候開的 就變成這樣了，現在這些芫茜葉，如果譬如我今晚不吃的，我放到明天的，它就會變黃，再放多一天就會變黑，它不是不能不吃，不過就會變成這樣，但是我這個，我沒有放芫茜葉，只放芫茜瓣，這個醬料我放三個月至半年都沒有問題，我試過真的放半年，完全不需要防腐劑，好了。</p></a>
+				<a href="#00:27:49.95" id="00:27:49.95" class="lt" onclick="jumptoTime(1669, this.id)"><p>然後，大家都知道這個是我的，熟食砧板，所以做切身就應該沒有問題，我現在先開箱，好，這些蝦翅身呢，大家可以拿回來，買回來，放冰箱，大概放兩三個小時，它就會自然解凍，不需要特別處理，即開即食，這些即食的蝦翅身，放好一點，放好一點，大家，現在我，放盤，等一會我再做總結，千萬不要錯過，因為有些小細節，我必須要講得清清楚楚。</p></a>
+				<a href="#00:28:59.80" id="00:28:59.80" class="lt" onclick="jumptoTime(1739, this.id)"><p>大家都知道我的性格，知道我的風格，另外就是這個，我現在和大家演示，一次性，我開幾個月的醬底，如果大家，只是即興，吃今天，按我文字版，那個，那個食譜就沒有錯，ok，等等，地方淺窄，先收好刀，好，這是泰式蝦刺身，泰式醬，首先，第一，我先打醬底，這個醬底，這個醬底足夠我吃很多餐，這個醬底可以，第一可以吃雞，第二可以用來炒生菜包。</p></a>
+				<a href="#00:30:33.19" id="00:30:33.19" class="lt" onclick="jumptoTime(1833, this.id)"><p>直接炒就可以了，不用加料也可以，如果嫌它不夠香，不夠香茅味，再加香茅，沒問題，也可以吃雞飯，泰式鹹肉，都可以，比你去買泰式雞醬好，這是肯定的，而這個味道，是甚麼味道呢，就是西貢一間老字號的泰菜，那種味道，至於哪一間呢，滿X啦 X泰啦，我經常光顧它，兩公婆，有些觀眾朋友已經認得出，是那間兩公婆，不錯的。</p></a>
+				<a href="#00:31:15.09" id="00:31:15.09" class="lt" onclick="jumptoTime(1875, this.id)"><p>因為它做了一個在地化，譬如說普通的泰醬，它是不會加普寧豆醬，但因為它在地化了，它就加了我們中式的醬料，反而我覺得我更受落，反而原本的泰式醬，我反而覺得，不合我口味，OK，好了，那打了泰醬之後，然後隨著不同的食品，譬如說你吃燒烤的，泰式豬頸肉，或者是雞或者豬，現在這個就配海鮮，配海鮮是怎樣配呢。</p></a>
+				<a href="#00:31:56.69" id="00:31:56.69" class="lt" onclick="jumptoTime(1916, this.id)"><p>先用這個醬底，然後加一粒青檸，然後加大約3茶匙的，即是說是一次過，這樣拌，3茶匙的魚露，然後大概1茶匙的醋，然後1分3的鹽，1匙糖，這樣就開好了，這樣就已經很好味了，如果大家覺得，我現在這樣配海鮮汁，大家不滿意的話，覺得魚露不夠重，你可以加重一點魚露，如果覺得不夠酸的話，就要不加多一粒青檸，要不就加多一點醋。</p></a>
+				<a href="#00:32:40.69" id="00:32:40.69" class="lt" onclick="jumptoTime(1960, this.id)"><p>醋我就不建議，因為始終都是人工的東西，加青檸是好一點的，OK，行不行，其他的配料，大家看到我這個泰醬是沒有加雞粉，該不加就不加了，是不是，該加就加了，是不是，即是這樣，OK，行不行，那，我自己的評價這個泰醬，就是西貢小巷那家老字號的味道，大家不妨跟著我，Wesley去試一下，OK，應該有朋友已經嘗試製出來。</p></a>
+				<a href="#00:33:15.69" id="00:33:15.69" class="lt" onclick="jumptoTime(1995, this.id)"><p>只不過沒見過我，怎樣去打這個泰醬底，OK，行不行，那，這個泰醬底，接下來我會做一個生菜包的，要另外一段影片，因為太長了，OK，到時又看看我怎樣利用這個泰醬底，去做一個生菜包出來，簡單到你不信，只要有了這個泰醬底之後，天下無敵，OK，好，就這樣，吃東西了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:33:41.79" id="00:33:41.79" class="lt" onclick="jumptoTime(2021, this.id)"><p>Moder satellitesisée avocadocoll vir rajolen。</p></a>
+				<a href="#00:33:41.87" id="00:33:41.87" class="lt" onclick="jumptoTime(2021, this.id)"><p>urine。</p></a>
+				<a href="#00:33:42.55" id="00:33:42.55" class="lt" onclick="jumptoTime(2022, this.id)"><p>anan。</p></a>
+</div>
+	</body>
+</html>

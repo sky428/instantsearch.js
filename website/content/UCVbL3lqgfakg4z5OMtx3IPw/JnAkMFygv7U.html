@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——叉燒炒蛋，簡單易煮的送飯神器！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'JnAkMFygv7U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——叉燒炒蛋，簡單易煮的送飯神器！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今次分享一不離二的創作力大爆發。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>女兒回家食飯，我沒理由只煮油雞，我煮叉燒炒蛋，她也喜歡。</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>我之前在滑蛋坑教過，現在介紹材料。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>材料有三兩叉燒，切成絲，你喜歡切片也可以，切絲好炒啲。</p></a>
+				<a href="#00:00:49.00" id="00:00:49.00" class="lt" onclick="jumptoTime(49, this.id)"><p>這已經是發好的蛋，有八隻，八隻配四兩叉燒。</p></a>
+				<a href="#00:01:0.27" id="00:01:0.27" class="lt" onclick="jumptoTime(60, this.id)"><p>這個是有韭黃、蔥，這個蛋因為我不打算做其他調味，所以我未調味的時候就重一點，鹽呢，我是放超過一匙的，然後就放輕輕的，都是那句話，你非要我也是這樣說，我用cheap蛋，所以一定要放輕輕一點雞粉，三分一匙就夠了，用來調味而已，ok，材料就這麼多，簡單，ok，接下來我就看看我怎樣炒了，好了，就一如既往，燒了鑊。</p></a>
+				<a href="#00:01:37.09" id="00:01:37.09" class="lt" onclick="jumptoTime(97, this.id)"><p>大家都看到那隻鑊是起煙的，那就放油，因為炒蛋它比較吸油的，所以用油的時候就不要太緊手，現在我首先要做的就是要爆一下叉燒，因為炒蛋本身就不可以太過猛火的，所以之前就有網友說，你的蛋不夠鑊氣，那大哥，炒蛋都要看看你是炒什麼蛋，芙蓉蛋當然是煎得香一點，炒滑蛋你怎麼可能要煎到它邊香呢，你煎到它邊香就過熟了。</p></a>
+				<a href="#00:02:17.99" id="00:02:17.99" class="lt" onclick="jumptoTime(137, this.id)"><p>所以不同的方式，不同的組合有不同的炒法，ok，現在叉燒炒蛋的味道不是完全來自於蛋的，而是來自於叉燒的那種香味，我之前不是提過的，其實你要做一個好的菜，主要就靠三樣東西，第一個就是叫做梅納反應，OK 第一個，第二個就叫做是焦糖化，第三個呢，就是這個是乳化現象，OK，好了，這個時候我不關火。</p></a>
+				<a href="#00:03:4.11" id="00:03:4.11" class="lt" onclick="jumptoTime(184, this.id)"><p>通常我就維持溫度，所以就小火，給大家看一下，叉燒，略略走油，就令到它的邊有少少焦香感，咁呢啲蛋呢，就算炒到，即係各位網友話齊，唔夠金香呀，唔夠鑊氣，都唔緊要嘅，因為呢叉燒已經係夠金香啦，夠香啦，OK，跟住然之後呢，就開返大個火啦，用返嗰啲油啦，炒叉燒炒蛋呢，其實係一個非常非常之簡單，直接。</p></a>
+				<a href="#00:03:37.13" id="00:03:37.13" class="lt" onclick="jumptoTime(217, this.id)"><p>快捷嘅方法，即係你又鍾意食叉燒，但你又唔想日日都食叉燒，想配下其他嘢，咁就叉燒炒蛋囉，咁呢啲都係快速可以食到飯嘅，同埋呢叉燒呢，即係要叉燒炒蛋呢，你可以隔夜嘅叉燒，我第一日食新鮮叉燒，食唔曬呢，跟住然之後呢，就可以第二日呢，就攞嚟做叉燒炒蛋，或者做其他嘅菜式，嗱，咁呢，上一次呢，叉燒。</p></a>
+				<a href="#00:04:3.01" id="00:04:3.01" class="lt" onclick="jumptoTime(243, this.id)"><p>呢個整呢個滑蛋蝦仁嘅時候，我已經講過㗎啦，吓，呢個係炒蛋落鑊嗰下要高溫，但係，佢一落咗鑊之後呢，就即刻要收火，要靠個餘溫，要靠個餘溫呢去呢個係，炒熟佢嘅，OK 嗱 而家又出煙啦，得啦，將佢放曬落去，OK，跟住然之後收曬火，放叉燒，OK，跟住然之後呢，吓，嗱，記唔記得上次打圈呀，嗱 而家我收曬咗火，睇唔睇到。</p></a>
+				<a href="#00:04:43.77" id="00:04:43.77" class="lt" onclick="jumptoTime(283, this.id)"><p>燈芯火嚟㗎啫，OK，咁就慢慢，炒熟佢，嗱 因為佢第一下落鑊好高溫呀，咁所以呢，吓，所以呢，其實呢佢已經係有一層焦香喺度㗎啦，好啦，嗱 呢個時候，唔好翻喎，繼續搞，好啦 嗱 呢個時候呢，個溫度低過頭啦，可以開返大火，但開返大火記住，吓，都要控制個溫度，唔好畀佢太過高溫，OK，之前有網友問我，九王炒法可以嗎?</p></a>
+				<a href="#00:05:24.09" id="00:05:24.09" class="lt" onclick="jumptoTime(324, this.id)"><p>當然可以，九王我們要的是甚麼?</p></a>
+				<a href="#00:05:27.95" id="00:05:27.95" class="lt" onclick="jumptoTime(327, this.id)"><p>九王我們要的是，半生熟的辛辣和香味，九王生吃也不會肚餓的，除非你有特別反應，我之前跟大家說，高溫的火就要熄掉，這樣是最好控制的，比開火和關火好，第二個就是，滑蛋蝦仁的時候，不是叫不要翻面嗎?</p></a>
+				<a href="#00:05:55.27" id="00:05:55.27" class="lt" onclick="jumptoTime(355, this.id)"><p>但是叉燒炒蛋就可以翻面了，因為叉燒炒蛋的蛋要熟一點，好，看到嗎?</p></a>
+				<a href="#00:06:4.57" id="00:06:4.57" class="lt" onclick="jumptoTime(364, this.id)"><p>可以翻面了，反正一句說話就是，同一樣食材，當你想做不同的菜式的時候，其實技巧是很不一樣的，但是萬變都不離其中，你看看你想要的效果，基本上這個蛋，比上一次滑蛋蝦仁的蛋深色一點，還有少許焦香，這樣就可以了，現在已經九成熟了，等待自己的熱度，熟透就OK了，看到嗎?</p></a>
+				<a href="#00:06:50.57" id="00:06:50.57" class="lt" onclick="jumptoTime(410, this.id)"><p>還有少許蛋漿在裡面，但是這個蛋漿比上一次，滑蛋蝦仁更少，熟的程度比上一次滑蛋蝦仁高，這個就是滑蛋蝦仁，和叉燒炒蛋的分別，當然你說我想吃滑蛋蝦仁的滑蛋，可以嗎?當然可以了，是不是?</p></a>
+				<a href="#00:07:16.57" id="00:07:16.57" class="lt" onclick="jumptoTime(436, this.id)"><p>看你做的，你想吃的口感效果是怎樣的，OK?可以嗎?</p></a>
+				<a href="#00:07:25.57" id="00:07:25.57" class="lt" onclick="jumptoTime(445, this.id)"><p>給大家看一個近鏡，OK?這樣就行了，然後灑上兩粒蔥花，咁就完成啦，ok 得唔得，好簡單好快速，你見我喂真係從來未試過咁快炒好一碟餸嘅，叉燒炒蛋，當你又鍾意食叉燒，隔夜食唔晒，可以點處理就咁處理，仲有要提一提叉燒呢，有個問題嘅，好多人都問過我㗎啦，咁你叉燒炒蛋洗唔洗過啲叉燒，梗係唔好洗啦。</p></a>
+				<a href="#00:08:6.88" id="00:08:6.88" class="lt" onclick="jumptoTime(486, this.id)"><p>點解呀，叉燒汁嘅蜜糖汁，當我先頭走油嘅時候，其實可以產生焦糖化嘅現象，ok 你一旦產生焦糖化現象，你就想唔好食都唔得，ok 得唔得，呢個簡單餸菜，今日就梅開二度，多謝大家收看，我就差唔多去食飯，斬埋隻雞，然後整埋個蔥油，咁就食得飯啦，多謝大家收看啦。</p></a>
+				<a href="#00:08:40.88" id="00:08:40.88" class="lt" onclick="jumptoTime(520, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——醃肉餅，原來不用加生粉也可以做到又嫩又滑！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MnmBUxHiOFo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——醃肉餅，原來不用加生粉也可以做到又嫩又滑！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.31" id="00:00:0.31" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今日想和大家分享如何煮肉餅，這是入廚ABC，frustration，iatric，statutory，possible，jugar，其實撈肉餅就真係好簡單嘅，我相信好多人由細食到大，都唔理佢健康定有病，ok，我先介紹一下，其實材料就好簡單，有胡椒粉，鹽，糖，蠔油，雞粉，用咩牌子都無所謂。</p></a>
+				<a href="#00:00:43.80" id="00:00:43.80" class="lt" onclick="jumptoTime(43, this.id)"><p>豉油，生抽，跟住就仲有，蠔油，唔係蠔油，麻油，呢啲係基本嘅材料，今日我就想特別啲，介紹一樣嘢，好多人成日都話，出面嗰啲撈肉餅好滑，點解我哋屋企，整極都，整得唔好食，其實有兩個竅門，第一個就係加水，第二個我想介紹一下，小梳打粉，呢個就食用梳打，英文名叫Baking Soda，呢個就係普通嘅百佳超市，有得賣。</p></a>
+				<a href="#00:01:35.80" id="00:01:35.80" class="lt" onclick="jumptoTime(95, this.id)"><p>或者係一啲烘焙麵包嘅原料舖，都會有得賣，因為呢個梳打粉，係我哋中廚，係一個非常非常重要嘅，一個材料，不過一般家廚係好少會用，咁通常就啲人就話，用松肉粉，用一啲，西式嘅話，就會係用梳打水，咁其實呢，都唔夠力嘅，都唔夠力嘅，佢要嘅呢，最主要嘅呢，就係要，呢個係用梳打，不過呢用梳打粉有個危險嘅，就好多人。</p></a>
+				<a href="#00:02:17.80" id="00:02:17.80" class="lt" onclick="jumptoTime(137, this.id)"><p>不自覺地加咗，過大嘅份量，於是乎呢就食到好似洗衣粉咁樣，例如，好多茶記，好多茶記佢為咗方便，貪方便佢就落好重手嘅，梳打粉嘅，咁就變咗搶走哂啲肉味，然之後呢就好似，食緊洗衣粉咁當然唔好啦，但係適量嘅，呢個係梳打粉呢，係有助鬆肉嘅但係有梳打粉都唔夠，嘅喎仲要加水，一定要水配梳打粉，先有效嘅。</p></a>
+				<a href="#00:02:51.80" id="00:02:51.80" class="lt" onclick="jumptoTime(171, this.id)"><p>齋肉落梳打粉，同埋齋落水，個功效都唔會顯著嘅，ok 等陣間我會同大家，介紹一下點樣用，好啦，咁呢就，材料啦，撈豬肉撈肉碎，梗係要呢個係，肉碎啦咁我鍾意呢就係用，冰鮮肉嘅咁唔係話，新鮮豬肉，唔好不過，大佬而家講緊，我而家用梅頭嘅碎嘅梅頭嘅碎肉，講緊新鮮，嘅120蚊呀大佬，最平都，九十幾蚊呀，咁呢就係。</p></a>
+				<a href="#00:03:33.80" id="00:03:33.80" class="lt" onclick="jumptoTime(213, this.id)"><p>食唔起嘅咁但係，可能因為我曾經做過飲食業，啦即係涉獵過，廚房嘅嘢啦，咁變咗呢我就好習慣用，動慾嘅咁呢我而家呢一隻呢，就係澳洲嘅冰鮮豬肉，係冰鮮唔係急凍嘅，ok，咁呀平點，平法呢33蚊一斤，嘩大佬，足足平咗三分二有多，呀ok，咁呀好啦，咁同埋呢佢有個包裝嘅，咁佢包裝有定量有重量，亦都係我鍾意用嘅原因。</p></a>
+				<a href="#00:04:9.80" id="00:04:9.80" class="lt" onclick="jumptoTime(249, this.id)"><p>因為其實呢大家聽清楚，我哋撈肉碎呢，或者即係醃肉或者係，烹飪呢其實所有，嘅調味都有定量嘅而呢個，定量嘅參考呢就係重量，ok就係重量，所以呢我鍾意佢咁樣包因為，每一每一盒就半，斤咁變咗我落幾多，我咪知道我有心理有數有幾多，斤囉有幾重囉然之後，我就按住呢個重量就去，加呢個醃料，ok加呢個醃料醃。</p></a>
+				<a href="#00:04:39.80" id="00:04:39.80" class="lt" onclick="jumptoTime(279, this.id)"><p>料係有標準份量嘅，但係大家睇過好多視頻，我都係完全唔，試味完全係，好似戀嚟，但係每一次基本，上嗰個食味即係個，鹹淡度呢係相差無幾，嘅爭嘅就爭在我自己，鍾意鹹啲所以我就落，重手啲如果係有客即係，有朋友嚟食飯嘅話我就落返，輕手啲個分別就係呢，一度啫但係我拍視頻我盡量，都係用淡厚啲嘅，即係用淡厚啲嘅。</p></a>
+				<a href="#00:05:11.80" id="00:05:11.80" class="lt" onclick="jumptoTime(311, this.id)"><p>調味嘅ok因為，我太過習慣啦幾十年都係咁樣所以，我從來唔需要試味，撈嘢我從來，大家睇到，我係好隨便嘅，但係其實我心裏有數，因為，我已經由初始，係逐刻逐刻，逐前逐前咁去秤，嗰個調味，發展到去呢我嗰隻羹，我一舀上手我就知道有幾多，咁變咗呢我就好隨意，你哋睇到嘅我嘅好隨意其實我係，受過。</p></a>
+				<a href="#00:05:45.80" id="00:05:45.80" class="lt" onclick="jumptoTime(345, this.id)"><p>訓練，接受過學習知道個配重，喺邊度即係個配料，要需要幾多ok，好啦，咁我又鍾意呢啲啦咁呢次呢，我就一次過撈，兩斤嘅我次次都係，㗎喇因為呢兩斤呢，我大概可以食到，大概，可以食到三四日，咁點解，我次次都撈兩斤呢，因為我老婆有病呀，咁我就要成日都要，係，即係要煲啲肉碎粥畀佢食，咁佢有佢自己嘅營養，配餐單嘅。</p></a>
+				<a href="#00:06:25.80" id="00:06:25.80" class="lt" onclick="jumptoTime(385, this.id)"><p>咁因為佢食肉碎最多，咁所以呢我次次一撈呢就撈，好多嘅咁呢度兩，啤就一斤喇喎，係咪呀跟住，然之後，三啤就根本喇喎，跟住然之後，第四啤就兩斤喇喎，係咪好輕鬆呀，係咪呀，唔需要，即係已經我已經去到個地步就係唔需要去量重，只需要知道我買返嚟有幾重我就識得去調味㗎喇，好啦，嗱咁呢就我即係，為咗衛生啦咁我就好習慣呢撈嘢呢。</p></a>
+				<a href="#00:07:9.82" id="00:07:9.82" class="lt" onclick="jumptoTime(429, this.id)"><p>我係戴手套嘅啦大家睇下呢個係醫用手套ok，咁呢就比較衛生一啲，咁同埋呢點解我要戴手套呢因為等間我會攞手嚟撈嘅，咁我之前喺視頻有其他嗰啲視頻嗰度都講過啦，筷子係我哋中廚嘅萬用之寶，亦都係the best blender of the world，但係實際上呢其實我哋用人手呢嗰隻手呢，其實係亦都係一個好好嘅攪拌器嚟㗎。</p></a>
+				<a href="#00:07:41.82" id="00:07:41.82" class="lt" onclick="jumptoTime(461, this.id)"><p>咁呀對住個鏡頭比較慌張啲呀，咁呀盡量嗰個手套呢就可以係即係緊啲啦，咁緊啲呢就可以有呢個係好啲嘅手感啦咁樣，咁呀大家要記住如果買手套嘅話呢，有分size㗎喎我咁大隻手，我都係鍾意用中碼嘅，咁呢好好笑嗰個事後婆婆話你帶中碼唔係掛你應該帶大碼㗎喎，我話唔係呀我鍾意中碼佢問點解，我話因為呢我攞嚟撈嘢嘅我就要個手感。</p></a>
+				<a href="#00:08:19.82" id="00:08:19.82" class="lt" onclick="jumptoTime(499, this.id)"><p>中碼中碼係唔好意思呀要就住個鏡頭呀ok，嗱好啦咁而家要落嘢喇喎，咁呢度咪有兩斤一斤呢，就落3.75克即係一池一茶匙，咁呢度兩斤，就落7.5克 兩茶匙，ok 跟住然之後呢，糖呢 就按照鹽嘅份量加多一倍，一斤兩斤 三斤 四斤，點解要糖多啲呢，因為我哋香港人嘅口味就繼承咗上海人嗰邊嘅口味，所以通常我哋食嘢係會偏甜少少嘅。</p></a>
+				<a href="#00:09:5.91" id="00:09:5.91" class="lt" onclick="jumptoTime(545, this.id)"><p>ok 跟住然之後 好囉喎，雞粉喇喎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:11.51" id="00:09:11.51" class="lt" onclick="jumptoTime(551, this.id)"><p>comprehensive，opted，Ris，雞粉一樣 加兩茶匙，大家看到我加醃料是加在一邊的，為什麼呢?因為待會要先攪拌均勻，為什麼要先攪拌均勻呢?是有原因的，是因為我要加胡椒粉，因為我要加食粉，即是Baking Soda，OK?這個小Soda，好了 胡椒粉，然後麻油，麻油 大家喜歡有多香。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:47.72" id="00:09:47.72" class="lt" onclick="jumptoTime(587, this.id)"><p>隨意就可以了，然後蠔油，蠔油就加在醃料上，為什麼要加醃料呢?因為是有原因的，什麼都有原因的，我對於飲食醃料的調味，我是有很嚴格的要求的，鹽糖味是不可以放錯，我之前都說過了，為什麼鹽糖味不可以放錯呢?</p></a>
+				<a href="#00:10:15.24" id="00:10:15.24" class="lt" onclick="jumptoTime(615, this.id)"><p>因為它的化學作用和溫度的變化，尤其是炒的時候 加熱的時候，鹽糖味的次序是不可以放錯的，因為加熱的程度和次序不同，出來的味道是不一樣的，好了 現在就要加食粉 即是加Soda，我不是加很多，我不是加一茶匙，我加大約半茶匙 即是兩斤，即是一斤的話就四分一茶匙，這樣既可以達到鬆肉的效果，同時間又不會重味到搶走肉味。</p></a>
+				<a href="#00:11:0.24" id="00:11:0.24" class="lt" onclick="jumptoTime(660, this.id)"><p>然後你吃下去好像吃洗衣粉一樣，但很多茶餐廳，我和你說這裡兩斤肉，我只放兩茶匙下去，死不死? 是吧?</p></a>
+				<a href="#00:11:10.24" id="00:11:10.24" class="lt" onclick="jumptoTime(670, this.id)"><p>這樣就出事了 是吧?</p></a>
+				<a href="#00:11:12.24" id="00:11:12.24" class="lt" onclick="jumptoTime(672, this.id)"><p>這樣就搶走味道了，好了 接著我最後放，大家我就不放近鏡頭了，因為沒有辦法 單人視頻，我就拿些豉油和生抽去撞，給大家看看，有化學作用的 起泡沫的，為甚麼我要放在一邊，就是這個原因，好了 我將醃料攪拌均勻，然後先放好材料，等等，放好材料，然後有一個很大的步驟，先從開始的時候，你想肉醃得軟身。</p></a>
+				<a href="#00:12:11.24" id="00:12:11.24" class="lt" onclick="jumptoTime(731, this.id)"><p>除了要放梳打之外，最重要的是甚麼，現在欠了甚麼，每樣東西都放了，當然是水，這裡是1200克，豬肉放水的份量，就是每四份就放一份水，即是說這裡要多少，300克水 300克水，300cc，OK，習慣我一開水喉，關水喉，剛剛好，然後撞落醃料，大家睇唔睇到，係咪好多水呀，等陣間一攪就唔見曬㗎啦，其實呢，因為落咗呢個梳打粉呢。</p></a>
+				<a href="#00:12:58.25" id="00:12:58.25" class="lt" onclick="jumptoTime(778, this.id)"><p>就可以落多啲水㗎，OK，好啦，呢個時候，點解我鍾意用手呢，因為如果你唔用手嘅話呢，嗰啲醃料呢，就唔會均勻嘅，即係有可能呢，嗰啲肉碎呢，就係一邊就多啲，一邊就少啲，OK，所以呢，大家呢，就一定要係攞隻手，咁同埋呢，我用手去撈肉餅，仲有一個好重要嘅原因嘅，等陣間撈完之後，你就知㗎啦，好啦，跟住完之後呢。</p></a>
+				<a href="#00:13:38.25" id="00:13:38.25" class="lt" onclick="jumptoTime(818, this.id)"><p>我哋呢，就同一個方向去攪，大家可以睇到嘅，而家嗰啲肉係咪仲係流動得好快呀，係咪呀，等陣間撈下撈下，佢就會好實㗎啦，點解呢?因為呢個呢，就係梳打粉同埋水之間嘅作用，咁呢，加咗梳打粉之後呢，就會令到啲肉類呢，就吸水吸得更加快，OK，現在職業廚房不會像我那麼傻拿筷子慢慢攪拌，因為他們每次醃都幾十斤。</p></a>
+				<a href="#00:14:20.62" id="00:14:20.62" class="lt" onclick="jumptoTime(860, this.id)"><p>那他們是怎樣呢?當然是用攪拌機，當然是用撈肉機，大家看到嗎?現在開始起膠了，很快的，幾分鐘，其實撈肉餅不需要很久，所以我們城市人很趕時間煮一餐飯，撈肉餅是最棒的，而且撈一次之後可以吃一個星期，當然要好好保存，最遲吃的先放入急凍，臨吃前兩天才放入冰箱解凍，保證你一定不會吃到變質的肉類，我經常說，烹飪不是大家看到的。</p></a>
+				<a href="#00:15:12.62" id="00:15:12.62" class="lt" onclick="jumptoTime(912, this.id)"><p>我怎樣控制炒鑊，我怎樣攪拌，其實烹飪是需要用盡五官六感，怎樣用盡呢?</p></a>
+				<a href="#00:15:26.62" id="00:15:26.62" class="lt" onclick="jumptoTime(926, this.id)"><p>我現在看看它起不起膠，鼻子，聞一下會否過鹹，耳朵，聽一下攪拌時的聲音，撈好和未撈好之間，有水和無水之間的聲音是有分別的，然後，雖然我這隻手在撈東西，但其實我在感受它的離阻，感受它的阻力，當我由水汪汪，撈到差不多好的時候，就算我看不到它起膠，閉上眼，我都可以感覺到離阻越來越大的時候，就即是差不多好。</p></a>
+				<a href="#00:16:7.62" id="00:16:7.62" class="lt" onclick="jumptoTime(967, this.id)"><p>大家可以看看，鮮豆水汪汪，現在水是否不見了，這個就是梳打粉和水的神奇化學作用，所以很多時候，很多飲食節目都會介紹，你想肉滑些，放水吧，又或者你想肉滑些，就放梳打粉吧，我就很奇怪，為何他們每次都說一樣，不說第二樣呢，其實兩樣東西加在一起，才是最適合，你可以食到很滑，但又好好味，好好口感，又保持肉味，那種效果。</p></a>
+				<a href="#00:16:50.62" id="00:16:50.62" class="lt" onclick="jumptoTime(1010, this.id)"><p>是兩樣東西加在一起，但我不知道為何，那些專業飲食，不知為何，經常都說一樣，不說第二樣，很奇怪，現在撈到差不多了，離阻已經很厲害了，這個時候，為何我要用手呢，看見了嗎?好像打魚蛋一樣，你問我為何不戴手套呢?</p></a>
+				<a href="#00:17:28.90" id="00:17:28.90" class="lt" onclick="jumptoTime(1048, this.id)"><p>如果我不戴手套，手就會變得很油膩，而且醃料入手指甲，三天都洗不乾淨，三天後，你聞到手指都是醃料的味道，我真的忍受不住，所以我喜歡戴手套，還有我介紹一下，我喜歡用不銹鋼盤，為何我每次都要用兩斤呢?</p></a>
+				<a href="#00:18:8.46" id="00:18:8.46" class="lt" onclick="jumptoTime(1088, this.id)"><p>因為我現在用的不銹鋼盤剛剛好，兩斤就不滿，記住，你想醃料混合得好吃，你醃料的盤子一定要大過實際重量的一倍，你要給它空間走動，給它空間移動，它才吸水吸得快，入味也入得快，現在就差不多了，最後做一個步驟，封油，有人喜歡多些油，有人喜歡少些油，不要緊，多油少油，無所謂，剛剛放油的時候，它離油少一點。</p></a>
+				<a href="#00:19:1.10" id="00:19:1.10" class="lt" onclick="jumptoTime(1141, this.id)"><p>"- STE Hoo wood licensed 67うんриг Cock 104 seventyinkling>< maze θателя</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:2.16" id="00:19:2.16" class="lt" onclick="jumptoTime(1142, this.id)"><p>brightness，everybody，eeee talking，當你攪拌到差不多的時候，油都吸收在肉上，它有個離左右會大，這裡就足夠正正常常，我們一家四口是吃四餐的，四餐的，如果我老婆吃的話，是可以吃大約六天，因為她需要她的病，需要吃多點肉類，我很多時候就煲些肉湯，加少少米進去，我估計如果有醫學知識的聽過。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:36.05" id="00:19:36.05" class="lt" onclick="jumptoTime(1176, this.id)"><p>有個叫做生酮療法，要吸收大量肉類的養分，然後就只要少量的米，和一定份量的菜，作為她的特殊餐飲，好了，現在差不多了，油都不見了，就是這樣，我們的入廚ABC，撈肉餅就完成了，如果大家有什麼疑問，如果大家有什麼疑問的話，可以嘗試給我一些問題，可以inbox我，看看我可不可以幫忙解決，這個是入廚ABC。</p></a>
+				<a href="#00:20:28.79" id="00:20:28.79" class="lt" onclick="jumptoTime(1228, this.id)"><p>這個我就一take過，我就不剪片了，主要就是想介紹一些最基礎，最基礎的知識，最基礎的入廚知識，當你明白了撈肉餅或者醃肉的竅門之後，其實很多東西就會茅塞頓開，其他的東西，都是很簡單的，多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

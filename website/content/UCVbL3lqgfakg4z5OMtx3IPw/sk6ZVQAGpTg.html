@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——鮮蝦粉絲煲，平靚正的選擇，只需要不用50港元就能製作這道香辣爽滑的惹味菜式，味道絕對能夠跟酒家相比哦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'sk6ZVQAGpTg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——鮮蝦粉絲煲，平靚正的選擇，只需要不用50港元就能製作這道香辣爽滑的惹味菜式，味道絕對能夠跟酒家相比哦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天我會和大家分享一道非常有名的菜式，就是一不離二，二不離三。</p></a>
+				<a href="#00:00:9.00" id="00:00:9.00" class="lt" onclick="jumptoTime(9, this.id)"><p>之前我做了一道非常有名的粉絲蟹煲，大家都說很好吃，今天我會做蝦。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>我先加入油，然後再和大家分享有什麼材料。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>上次我做美極蝦時，我用了很多油炸，這次我用少油炸和半油炸，更符合家廚的環境局限和需求。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>我先關火，介紹材料，當然有蝦，我已經把蝦的腳和鬚都剪掉，大家看到嗎?我已經把蝦的水、油、廚紙都吸掉。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>我已經把蝦清洗乾淨，除了蝦，還有蒜蓉、辣椒、芫茜、蔥和薑。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>其實這道菜和美極蝦差不多，不過上次的美極蝦我沒有加美極蝦，有些人會問為什麼不加美極蝦?</p></a>
+				<a href="#00:01:39.00" id="00:01:39.00" class="lt" onclick="jumptoTime(99, this.id)"><p>因為當你把生粉和生抽炒乾後，就會出現類似美極的味道，所以就不用加了。</p></a>
+				<a href="#00:01:56.00" id="00:01:56.00" class="lt" onclick="jumptoTime(116, this.id)"><p>這次我用美極蝦，現在我開大火，等油溫升高。</p></a>
+				<a href="#00:02:9.00" id="00:02:9.00" class="lt" onclick="jumptoTime(129, this.id)"><p>大家會問，如果用半油炸，會否不夠油，炸得蝦會否不夠脆?其實也有方法的，就是用二次油炸的方式，分兩次來炸。</p></a>
+				<a href="#00:02:31.39" id="00:02:31.39" class="lt" onclick="jumptoTime(151, this.id)"><p>首先開大火，油溫要高一點，讓蝦慢慢升高油溫。</p></a>
+				<a href="#00:02:40.39" id="00:02:40.39" class="lt" onclick="jumptoTime(160, this.id)"><p>然後先炸到蝦表面熟透。</p></a>
+				<a href="#00:02:48.39" id="00:02:48.39" class="lt" onclick="jumptoTime(168, this.id)"><p>然後我們繼續用大火，這個時候用大火。</p></a>
+				<a href="#00:02:54.39" id="00:02:54.39" class="lt" onclick="jumptoTime(174, this.id)"><p>炸到蝦表面熟透。</p></a>
+				<a href="#00:03:0.39" id="00:03:0.39" class="lt" onclick="jumptoTime(180, this.id)"><p>大家會有個疑問，這麼多蝦，一次過放進去，不夠油，炸得不是每隻都這麼香，這樣是不會的。</p></a>
+				<a href="#00:03:11.39" id="00:03:11.39" class="lt" onclick="jumptoTime(191, this.id)"><p>最重要是你的鍋夠大，你可以想著當它是一個煎蝦碌的形式。</p></a>
+				<a href="#00:03:20.39" id="00:03:20.39" class="lt" onclick="jumptoTime(200, this.id)"><p>用這個概念來說，蝦碌也可以煎得很脆的。</p></a>
+				<a href="#00:03:33.31" id="00:03:33.31" class="lt" onclick="jumptoTime(213, this.id)"><p>大家看到的，我這隻蝦今天就比較小，一斤都不是很漂亮，一斤有很多隻，有30多隻左右，比我平時用的蝦小很多，今天就很便宜，40元，之前正常的冰鮮蝦都還有48元一斤，40元做一個粉絲蝦煲，看不看得出是划算，這個時候大家要不斷攪拌，為甚麼呢，因為怕它黏底，我們用的油最好是剛好是油壺，油壺可以裝回去，所以我們不需要額外換油。</p></a>
+				<a href="#00:04:36.31" id="00:04:36.31" class="lt" onclick="jumptoTime(276, this.id)"><p>在上一條美記蝦的影片，我都跟大家說過蝦油可以用來炒菜，很香的，這個時候就不用理它了，繼續用大火炸，半煎半炸的形式，好，這個時候我們就把火調小，炸到大火差不多，然後就讓它煮，怎樣?又是用我的絕招，上鍋蓋，留一點邊，OK，就當焗蝦一樣，這次就要用4分鐘，因為蝦多，4分鐘後我再開鍋蓋和大家分享，看看蝦變成怎樣，OK?</p></a>
+				<a href="#00:05:37.08" id="00:05:37.08" class="lt" onclick="jumptoTime(337, this.id)"><p>好了，現在就中響了，我們看看結果如何，這個時候蝦其實已經熟了，但我們依然要翻炸，因為這個時候蝦我們用慢火炸，變成它很吸油，我們現在要先把蝦油升溫，然後在極高溫的情況下，把蝦吸油吸出來，順便令蝦殼更加脆，OK，這個就是我們家廚用小油，炸半煎的形式去做的一個效果，大家看到現在有很多泡，不用理它，隨它吧。</p></a>
+				<a href="#00:06:33.08" id="00:06:33.08" class="lt" onclick="jumptoTime(393, this.id)"><p>現在我開大火，繼續加溫，大家看到的，先看看蝦，蝦就是這樣，我調暗一點，讓大家看到實際的效果，OK，都已經有一點脆了，但都不夠脆，所以現在我首先要把油提高溫度，加一點生油，讓它沒那麼濃稠，因為炸完蝦的油是很濃稠的，一點點就可以了，好，這個時候我繼續燒多一會兒，我介紹一下調味料，這個調味料很簡單。</p></a>
+				<a href="#00:07:30.15" id="00:07:30.15" class="lt" onclick="jumptoTime(450, this.id)"><p>半茶匙鹽，兩茶匙糖，一茶匙蠔油，兩茶匙生抽，幾滴美極，然後加胡椒，加酒，OK，然後加少許雞粉，現在很高溫，這個時候我們馬上放進去炸，這個時候把蝦的油逼出來，可以令到蝦身更脆，這個尺寸的蝦最好做粉絲蝦煲，為甚麼呢?</p></a>
+				<a href="#00:08:7.15" id="00:08:7.15" class="lt" onclick="jumptoTime(487, this.id)"><p>免得剝殼，直接整隻吃就對了，這個方法未必能炸到像我上次的美極蝦那麼脆，但都可以很脆，現在很明顯蝦殼已經有白色了，即是炸得夠脆了，要經常攪拌，否則蝦會很容易燒焦，這個時候關火，全程大火，先頭翻炸，這個時候再夾起蝦，因為這樣處理蝦會比較深色，所以調味的時候就不需要加老抽，給大家看看它的效果如何。</p></a>
+				<a href="#00:09:32.79" id="00:09:32.79" class="lt" onclick="jumptoTime(572, this.id)"><p>我不偷吃了，因為很熱，大家看到蝦身有些白色，即是說它開始脆了，譬如這些，不知道看不看到，因為可能反光，現在我稍為等油降溫，我用油壺把油煮起，平時用來炒菜用，或者炒飯，上次都介紹過給大家，可以用來炒飯，很好吃，我開鑊炒的時候再和大家分享，我就不阻大家時間了，我已經把油拿起，然後清潔過鍋。</p></a>
+				<a href="#00:10:13.79" id="00:10:13.79" class="lt" onclick="jumptoTime(613, this.id)"><p>我用廚紙把鍋子擦乾淨，現在我加少許油，起鑊，少許就可以了，再煙煙，然後把蒜蓉和辣椒放進去，起鑊，稍為爆一下，大家看到我放很少油，所以蒜蓉會黏鍋，不要緊的，OK，稍微炒一炒，炒勻，大家看到我放了很少油，因為蝦本身已經吸了很多油，這個時候將醬料，大概加50cc水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:18.23" id="00:11:18.23" class="lt" onclick="jumptoTime(678, this.id)"><p>加50cc水，很少水的，所以我們要再加多50cc水，因為待會要給粉絲吸水，好，現在我等它滾了，這個我就不cut了，隨它吧，我想重新介紹一下先頭的醬汁，醬汁裡面有什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:58.66" id="00:11:58.66" class="lt" onclick="jumptoTime(718, this.id)"><p>半茶匙的鹽，兩茶匙的糖，然後就是一茶匙的蠔油，兩茶匙的生抽，大概是幾滴的味極，不用多，因為味極很鹹，這個菜本身蝦不是很吸鹹味，待會兒會給粉絲，所以不要弄得太鹹，然後就有少許酒，胡椒，麻油，生粉，拌在一起，現在滾了，滾了我們就關火，接下來是下一個步驟，我這個不關火，不關機，又拿出鍋子。</p></a>
+				<a href="#00:12:47.66" id="00:12:47.66" class="lt" onclick="jumptoTime(767, this.id)"><p>老奴也是拿開鍋子才開火燒一會兒，不然它會關火的，然後我們怎麼做呢?</p></a>
+				<a href="#00:12:57.66" id="00:12:57.66" class="lt" onclick="jumptoTime(777, this.id)"><p>這個時候我們就下薑片，排好底，讓它出味，然後蔥白，放在底部，這樣就可以防止粉絲黏底，這樣變成受熱比較高，我弄高給大家看，真的沒辦法，家廚生仔，這是實戰場景，鋪到這樣，然後將粉絲鋪上去，今天Ian喜歡吃粉絲，所以我給他三包小的龍口粉絲，OK了，然後呢，哈哈，這個時候我們放酒，多放一點，可以令到這個菜更加惹味。</p></a>
+				<a href="#00:14:31.29" id="00:14:31.29" class="lt" onclick="jumptoTime(871, this.id)"><p>然後我們將連蝦帶汁倒進去，不好意思，大家看到我的鍋子在上面，所以頂住，但沒辦法，因為地方比較淺，我們可以將蝦全部放進去，等一會兒煮開的時候，蝦汁全部放進去，大家有沒有發覺，好像少了一點水，所以我們可以再加一點水，加到有一點點水為止，現在開始滾了，然後我們就上鍋蓋，上鍋蓋之後，我們就煮它大概三至四分鐘。</p></a>
+				<a href="#00:15:33.29" id="00:15:33.29" class="lt" onclick="jumptoTime(933, this.id)"><p>四分鐘之後，我就開機給大家看一下結果如何，這個菜其實很簡單，除了炸蝦和煎蝦比較麻煩之外，OK，好了，四分鐘過了，先看看它怎樣，粉絲開始變軟，水還未完全收，這個時候我們先撈一下，為甚麼我要調四分鐘呢，其實四分鐘是很多粉麵，剛剛好熟的時間，即是剛剛好熟的，這個時候我會越煮越少水，這個時候我就可以撈。</p></a>
+				<a href="#00:16:19.90" id="00:16:19.90" class="lt" onclick="jumptoTime(979, this.id)"><p>撈勻它，大家先看看這個好不好，哇，然後芫茜控的，啊，即是芫茜控的，嘿嘿，恩物啊，我怎可以不放大量的芫茜呢，是不是啊，喂，即是去餐廳吃的，這些隨便拿著兒子給你，我們自己喜歡加多少都可以，大家聽到嗎，我打開蓋子之後，它就開始不停吸水了，然後再加蔥下去，正不正啊，大家看看，好，現在呢，是不是水收得剛剛好。</p></a>
+				<a href="#00:17:5.90" id="00:17:5.90" class="lt" onclick="jumptoTime(1025, this.id)"><p>記住，我總共加了100cc的水，啊，不是，差不多150cc，因為我加了三次，那看回我現在拍的片，大家看回，應該是加了三次水，每次50cc的，OK，現在聽到聲音了，正啊，好，我現在先關火，關火，然後我做個近鏡給大家看粉絲的乾爽程度，因為很多人做的粉絲很濕的，我真的不喜歡，粉絲煲之所以惹味。</p></a>
+				<a href="#00:17:45.38" id="00:17:45.38" class="lt" onclick="jumptoTime(1065, this.id)"><p>是因為粉絲爽口又乾身，大家說是不是呢，還有我先放下了，即是墊了薑蔥在底，既可以讓薑蔥出味，然後被粉絲吸收，然後我再放酒下去，酒香混和那些，揮發出來之後，混和那些蝦的香味，又忘記關火了，抽氣，是不是很正啊，我給大家看一下，我夾一夾，我自己還沒揹，是不是很乾爽的，大家看一下，等等，筷子不是很方便，給大家看一下。</p></a>
+				<a href="#00:18:30.98" id="00:18:30.98" class="lt" onclick="jumptoTime(1110, this.id)"><p>這樣可以對到一邊，一邊夾一邊對焦，夠不夠乾爽啊，現在關了之後，大家應該都聽到辣辣聲，因為剛剛好，煲仔有個好處，就是你關了火之後，它還保持到溫度，ok，行不行，這個菜就是這麼簡單的了，不需要很複雜的，大家只是單看賣相，吸不吸引，ok，有幾樣東西我就要總結了，還有要提醒大家的，第一，這次我用另一種炸蝦的方式。</p></a>
+				<a href="#00:19:7.98" id="00:19:7.98" class="lt" onclick="jumptoTime(1147, this.id)"><p>這個應該更加符合家廚的原則，因為我經常都說的，家廚和職業廚房的分別就是，第一，就是工具不齊全，第二，就是我們沒有那麼多地方，第三，就是我們有很多物料要重用的，現在我炸完蝦之後，這一盤，大概剩下半盤左右，本來是四分三，然後現在剩下半壺左右，其實大家看到我用的油是不是很少，然後我用的油這麼少的情況之下。</p></a>
+				<a href="#00:19:48.98" id="00:19:48.98" class="lt" onclick="jumptoTime(1188, this.id)"><p>我一樣可以炸到蝦脆殼的，怎樣炸呢?</p></a>
+				<a href="#00:19:51.98" id="00:19:51.98" class="lt" onclick="jumptoTime(1191, this.id)"><p>就是分兩段式炸，先是炸熟蝦，然後再撈起它 把油溫升高，再一次過炸 蝦殼就會脆了，你可以連蝦帶殼吃，其實粉絲蝦煲最理想的蝦尺寸，其實就是這一列手指的長度，給大家看看，這一列手指的長度，差不多，即是介乎於中蝦和細蝦之間，不知道大家有沒有吃過九字蝦、竹子蝦，或者是泰國蝦那些 因為很細小的，好嗎?</p></a>
+				<a href="#00:20:36.70" id="00:20:36.70" class="lt" onclick="jumptoTime(1236, this.id)"><p>介乎那些再大一點 其實是最理想的，其實更理想的粉絲蝦煲是什麼呢?</p></a>
+				<a href="#00:20:42.70" id="00:20:42.70" class="lt" onclick="jumptoTime(1242, this.id)"><p>用河蝦的蝦毛來炸 因為那些蝦毛很快炸熟，OK?</p></a>
+				<a href="#00:20:47.70" id="00:20:47.70" class="lt" onclick="jumptoTime(1247, this.id)"><p>千萬大家要記住 不要用太大尺寸的蝦，否則我們就沒辦法連殼吃，OK? 這些東西不要貪心，今天我就是看到那些蝦的尺寸 我才想到，不如一不離二 既然做了粉絲蟹煲，不如做一個粉絲蝦煲 讓大家可以有多一個選擇，這個菜式既可以自己吃 送酒 送飯，也可以作為節日菜去用，其實很簡單 粉絲就這樣用暖水浸開就可以了，不用特別處理。</p></a>
+				<a href="#00:21:28.70" id="00:21:28.70" class="lt" onclick="jumptoTime(1288, this.id)"><p>反而呢 我說完炸蝦浸粉絲，反而我們要炒蝦的時候 注意不要收乾水，就這樣煮熟 等它翻滾，然後我們就連汁 帶蝦倒進粉絲裡，但是我們鋪粉絲的時候 要怎麼鋪呢?</p></a>
+				<a href="#00:21:47.70" id="00:21:47.70" class="lt" onclick="jumptoTime(1307, this.id)"><p>記住 一定要薑蔥墊底，大家知不知道為什麼?</p></a>
+				<a href="#00:21:52.70" id="00:21:52.70" class="lt" onclick="jumptoTime(1312, this.id)"><p>因為這樣可以防止粉絲黏底，OK? 還有不用放油的，第二 很多人會放水 或者放酒的時候，就會上鍋蓋 再在鍋蓋頂放酒，我覺得這樣都不夠惹味，大家看到我先前做什麼?</p></a>
+				<a href="#00:22:15.70" id="00:22:15.70" class="lt" onclick="jumptoTime(1335, this.id)"><p>還沒放蝦之前放了什麼?</p></a>
+				<a href="#00:22:17.70" id="00:22:17.70" class="lt" onclick="jumptoTime(1337, this.id)"><p>放酒倒進粉絲裡，因為不斷加熱 酒會揮發，由底揮發上面，這樣是不是可以令粉絲更惹味?</p></a>
+				<a href="#00:22:28.70" id="00:22:28.70" class="lt" onclick="jumptoTime(1348, this.id)"><p>最後大家吃不出很多酒味，因為我煮了這麼久 這麼高溫，酒會揮發，OK? 行不行?</p></a>
+				<a href="#00:22:37.70" id="00:22:37.70" class="lt" onclick="jumptoTime(1357, this.id)"><p>基本上就是這麼多，記住是四分鐘，放所有東西進去後 蓋上蓋子四分鐘，為什麼我要四分鐘呢?</p></a>
+				<a href="#00:22:48.70" id="00:22:48.70" class="lt" onclick="jumptoTime(1368, this.id)"><p>因為四分鐘剛剛好粉絲可以熟 吃得進口，OK?</p></a>
+				<a href="#00:22:54.70" id="00:22:54.70" class="lt" onclick="jumptoTime(1374, this.id)"><p>然後大家看到我揭開蓋子後，不斷揮發 讓它收乾水分，最後底部是沒有水的，最後底部會有少許油，為什麼呢? 因為蝦會把油卸出來，這樣整個粉絲煲 正不正? 正吧?</p></a>
+				<a href="#00:23:11.70" id="00:23:11.70" class="lt" onclick="jumptoTime(1391, this.id)"><p>記住 要煮到這麼乾身才惹味，如果沒有這麼乾身的話，是沒有那麼惹味 有水的話，OK? 大家記住了，那我就不說這麼多了，終於煮好了 吃飯了 開飯了，喂! 好餓呀，齊人了 剛剛聽到開門聲，好了 這樣吧 拜拜，大家可以試一下 真的很好味，每個人吃都說舔舔嘴。</p></a>
+				<a href="#00:23:38.70" id="00:23:38.70" class="lt" onclick="jumptoTime(1418, this.id)"><p>OK? 拜拜。</p></a>
+</div>
+	</body>
+</html>

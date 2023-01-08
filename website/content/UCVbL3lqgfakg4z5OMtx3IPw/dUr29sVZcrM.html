@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——胡椒豬肚湯(加強版)，既可作湯水飲用，也可以利用作為打邊爐的湯底，惹味到讓人欲罷不能！但製作卻非常之簡單！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dUr29sVZcrM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——胡椒豬肚湯(加強版)，既可作湯水飲用，也可以利用作為打邊爐的湯底，惹味到讓人欲罷不能！但製作卻非常之簡單！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.12" id="00:00:0.12" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今天我想和大家分享些甚麼呢，今天都沒有甚麼胃口吃東西，所以我要做一個非常惹味的湯水，然後可以用來打邊爐，然後可以用來食麵的一個湯，那是甚麼呢，就是胡椒豬肚，胡椒鹹菜豬肚湯的加強版，加強版?</p></a>
+				<a href="#00:00:36.12" id="00:00:36.12" class="lt" onclick="jumptoTime(36, this.id)"><p>有這麼長這麼撩撩的菜嗎，是呀，我相信大家就算去酒樓食，尤其是去飲茶，一定會有一個胡椒豬肚湯，即是鹹菜胡椒豬肚湯，另外你去打烊的都會有一個鹹菜胡椒豬肚湯，那大家都略略知道味道和成份有甚麼，今天我就做了一個加強版，這個加強版我兒子就非常非常喜歡，他就覺得，嘩!老爸，你是不是呀，這麼誇張，可以做得比外面好。</p></a>
+				<a href="#00:01:24.12" id="00:01:24.12" class="lt" onclick="jumptoTime(84, this.id)"><p>我說是呀，其實很簡單，OK，那我先放了材料，現在我已經關了火，已經煮開水，先是汆水，我買回來的當然是急凍的豬肚，還有急凍的，還有另一樣東西，為甚麼叫加強版呢，因為還有急凍的龍骨，甚麼叫龍骨呀，龍骨即是煲湯骨，這個脊骨，那我現在先汆水，基本上有甚麼材料，就是薑片和我經常用的寶貝，青花椒，放少許就可以了。</p></a>
+				<a href="#00:02:10.12" id="00:02:10.12" class="lt" onclick="jumptoTime(130, this.id)"><p>大家等我一會兒，誒呀，我先撈起浸泡的豬骨和豬肚，然後放入沸水，沸水大約15分鐘，大家應該看慣我的影片都知道，我放了進去，標準時間是15分鐘，15分鐘，現在開始了，蓋上蓋子，我再介紹其他材料，材料很簡單，這是一隻豬肚，這裡有一個半的蒜包，等一會，調暗一點，看見質感，然後薑片。</p></a>
+				<a href="#00:03:45.13" id="00:03:45.13" class="lt" onclick="jumptoTime(225, this.id)"><p>然後有兩包買回來的胡椒，大約10克，基本上材料就是這樣，還有半棵的香菜，半棵的鹹酸菜，鹹酸菜，OK，這個正常的鹹酸菜，就是要炒的時候，大家要浸水，大家都知道的應該有這個概念，但是要放湯煮胡椒豬肚湯的話，基本上你洗乾淨就可以了，不用怎樣出水的，因為菜會一邊煮一邊出味，那些味道浸出來就當調味了，OK。</p></a>
+				<a href="#00:04:42.10" id="00:04:42.10" class="lt" onclick="jumptoTime(282, this.id)"><p>材料就是這麼多，然後你煮好湯之後，你可以直接喝湯，另外也可以，加這個，我今天就加薯粉，加薯粉，一邊吃，可以加其他火候，肥牛、魚蛋、枝竹，諸如此類，所有火候的材料你都可以用的，OK，那，本來這裡要關機了，但是我也想說一點，我的心聲，那，事緣今天就有一個觀眾，他應該是美國那邊的，他就說，Leo你實在是給我太多靈感。</p></a>
+				<a href="#00:05:28.10" id="00:05:28.10" class="lt" onclick="jumptoTime(328, this.id)"><p>而且，你介紹得很詳細，我真的想請你喝杯咖啡，美國那邊就10塊美金，他就強調10塊美金，我明白他的意思，因為他用英文寫的，我明白他的意思就是想打賞我，就是怕我無償，無私分享，無私分享，無私分享我是真的，但是又是不是無償分享呢，我覺得值得商榷，為什麼呢，其實YouTube有一個制度，我們作為一個YouTuber。</p></a>
+				<a href="#00:06:4.10" id="00:06:4.10" class="lt" onclick="jumptoTime(364, this.id)"><p>其實是可以分到廣告費的，OK，所以大家無需擔心，我是白白付出，當然大家都很明白，我當初的初心，就是因為我老婆的病，我需要地方去發洩，去發洩情緒，另外一方面就是因為我越洋的親友，很希望我拍一些煮食的片，可以教他們去煮食，煮一些香港味出來，香港可以吃的東西，所以我才會拍片，但是發展到後來，大概去年。</p></a>
+				<a href="#00:06:42.10" id="00:06:42.10" class="lt" onclick="jumptoTime(402, this.id)"><p>應該是11月左右，我發覺原來，咦，這麼多觀眾喜歡看我的，於是我就和YouTube，簽了一個合作協議，大家就不需要擔心，這個合作協議，我是可以分到YouTube的廣告費的，你說我賺了多少錢呢，其實我這段時間，我已經賺到一部相機，即是說，如果我要求高一點的話，我現在這部爛相機，可以換掉它。</p></a>
+				<a href="#00:07:14.10" id="00:07:14.10" class="lt" onclick="jumptoTime(434, this.id)"><p>所以大家不需要擔心，你花這麼多精神，一點回報都沒有，不是的，我現在要去治療我本身的壓力，涉壓，治療我本身的情緒不穩定，因為長期病患的照顧者，其實很大壓力，因為我老婆，其實她和癱瘓是沒有分別的，她連去廁所，我要整個人抱她去廁所，你可想而知，我平時的，大家可以想像在老人院，那些幫工，那些童工。</p></a>
+				<a href="#00:07:50.10" id="00:07:50.10" class="lt" onclick="jumptoTime(470, this.id)"><p>他需要做到的事情，其實我本人也是一模一樣做的，我兒子有個朋友，他本身是做老人院的，他也說是，我們一班員工，都要幾個人一起做的，現在你一個人來講，你就更加辛苦了，所以這個初心，我希望大家明白，我首先第一件事，就是要治療自己的情緒，有一個地方去發洩，因為太多水了，太悶了，所以我就把蓋子打開，一樣的，是非水。</p></a>
+				<a href="#00:08:28.42" id="00:08:28.42" class="lt" onclick="jumptoTime(508, this.id)"><p>好了，然後第二件事就是，我有些朋友，因為某一些事件，所以很多親朋都移民到海外，所以他們又想，平時我想過來這裡吃飯，但是去到外國，我又聽不到你的聲音，我又想自己煮兩道菜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:49.86" id="00:08:49.86" class="lt" onclick="jumptoTime(529, this.id)"><p>可不可以教我，所以這個就是第二個目的，然後無意間讓我發覺，原來YouTube可以給我錢，所以才發展到後期的事，所以大家請放心</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:4.94" id="00:09:4.94" class="lt" onclick="jumptoTime(544, this.id)"><p>我花一點時間解釋，大家不需要為我心痛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:9.30" id="00:09:9.30" class="lt" onclick="jumptoTime(549, this.id)"><p>不需要說Leo你無私分享</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:14.38" id="00:09:14.38" class="lt" onclick="jumptoTime(554, this.id)"><p>無償分享，無私分享是真的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:17.34" id="00:09:17.34" class="lt" onclick="jumptoTime(557, this.id)"><p>因為大家見到，我是知無不言，言無不盡，但是否無償，值得商榷，所以大家不需要擔心，我沒有回報，我有的，如果大家給面子，大家想支持一下我，看完整條片，尤其是幫忙看廣告，這已經是對我來說，最大的打賞，所以大家不用說不好意思，可以嗎，這裡飛水還有一段時間，我就不和大家分享了，免得浪費大家時間，等我開始煮湯的時候。</p></a>
+				<a href="#00:09:57.74" id="00:09:57.74" class="lt" onclick="jumptoTime(597, this.id)"><p>我就會重新開機和大家分享，這個是很簡單的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:4.18" id="00:10:4.18" class="lt" onclick="jumptoTime(604, this.id)"><p>雖然說要煮湯和飛水，加起來也要一小時，但是其實我可以告訴大家</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:14.78" id="00:10:14.78" class="lt" onclick="jumptoTime(614, this.id)"><p>你等於煮一餐飯，但是你多了一個選擇，可以嗎，finden♡，adults</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:21.54" id="00:10:21.54" class="lt" onclick="jumptoTime(621, this.id)"><p>aczego，responding，МУЗЫКА</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:22.13" id="00:10:22.13" class="lt" onclick="jumptoTime(622, this.id)"><p>好了，現在大家中響了，先關火，這個是…，飛水飛完了，15分鐘，我現在就跟它過冷河，等我一會兒，本來這裡我不會開給大家看的，不過我想給大家看看，因為這裡有一個特別的程序，我們是需要處理的，OK?</p></a>
+				<a href="#00:10:47.33" id="00:10:47.33" class="lt" onclick="jumptoTime(647, this.id)"><p>所以我們就要…，我就要開機給大家介紹，那麼…，拿起飛完水之後，就拿起這個…，拿起所有材料，不好意思，因為…，這個夾子真的很麻煩，這個膠夾子經常夾不住東西，OK，現在我就不給大家看了，我就拿下去飛水…，不是，先過冷河，先過冷河，然後我就要給大家看，我特地要開這個影片，原因就是因為我要…，特別要示範一次。</p></a>
+				<a href="#00:11:44.33" id="00:11:44.33" class="lt" onclick="jumptoTime(704, this.id)"><p>就是一個…，我這個特別版的胡椒豬肚湯，有一個需要特別處理的程序，OK?</p></a>
+				<a href="#00:11:55.33" id="00:11:55.33" class="lt" onclick="jumptoTime(715, this.id)"><p>好，現在就浸完了，然後…，我們就將這個骨頭倒回碗裡，那做什麼呢?</p></a>
+				<a href="#00:12:12.33" id="00:12:12.33" class="lt" onclick="jumptoTime(732, this.id)"><p>這個就是我…，經常做我之前介紹過的一個方法，鹹豬骨、重鹽，因為我們要快速去令到它入味，所以大家看到我放了四匙鹽，其實這個豬骨就不是很多，大概都是不過一匙左右，OK?</p></a>
+				<a href="#00:12:38.33" id="00:12:38.33" class="lt" onclick="jumptoTime(758, this.id)"><p>那就拌勻它，這個撈法最主要是令所有肉有鹽醃過，這樣就可以了，大概醃半小時就可以了，要將所有肉都沾過鹽，大概醃半小時，我先放一邊，我洗手，這次我要說一句，因為時間關係，我要轉鑊，所以這個時候鍋多煲多就有個好處了，可以省一點時間，這個同樣地都是30吋的韓式炒鑊，我都講過了，我之所以喜歡用這種鑊，原因就是因為它煲東西也可以。</p></a>
+				<a href="#00:13:55.51" id="00:13:55.51" class="lt" onclick="jumptoTime(835, this.id)"><p>煮東西也可以，然後這個是炒東西也可以，平時懶就不用用這麼多鑊，轉這麼多個鍋，簡單來說，這個就是慢用鑊，這個時候我們就開水，然後我們就將已經過了冷河的豬肚放進去，放進去，然後我們就開始放這個湯包，大家看，這種湯包大家都知道，裡面這個是薑片和蒜頭，全部倒進去，然後大家不要介意，因為地方錢窄。</p></a>
+				<a href="#00:14:54.51" id="00:14:54.51" class="lt" onclick="jumptoTime(894, this.id)"><p>所以我只能夠這樣演示，然後將這個10克的胡椒，用滾水把它滾一滾，讓表面的污糟的東西都跑掉，然後我們就可以將它放進湯包裡面，為什麼要用湯包呢?</p></a>
+				<a href="#00:15:11.51" id="00:15:11.51" class="lt" onclick="jumptoTime(911, this.id)"><p>因為等一下我們除了喝湯之外，還要是因為我們要滷麵吃，或者滷薯粉、米線那些，如果你有那些胡椒，咬到的話，大家都知道那個感受，感覺不是那麼好，湯包就齊了，用湯包用完就不要了，第二就是打死裂不會滾滾下散開，然後就用廣角鏡，把繩子扯到中間位置，因為待會滾開就會整個湯包脹，在這階段把繩子扯緊，就算湯包脹也不會散開。</p></a>
+				<a href="#00:16:44.87" id="00:16:44.87" class="lt" onclick="jumptoTime(1004, this.id)"><p>golf palette Urban，mitigate</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:59.51" id="00:16:59.51" class="lt" onclick="jumptoTime(1019, this.id)"><p>記得ensa，кос，ası，disposable，Pos，headed，slop，1982，!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:52.37" id="00:16:52.37" class="lt" onclick="jumptoTime(1012, this.id)"><p>aley，exactement，univers，ระ，sensation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:57.41" id="00:16:57.41" class="lt" onclick="jumptoTime(1017, this.id)"><p>uire，zag，вед</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:53.45" id="00:16:53.45" class="lt" onclick="jumptoTime(1013, this.id)"><p>到了，ganz，R mom，Moment，led，ei，kanssa，tay，isas，ischen，Mystery，shaken，就無所用啦，係咪呀?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:45.93" id="00:16:45.93" class="lt" onclick="jumptoTime(1005, this.id)"><p>記住呀，中間紮到佢好似個葫蘆狀咁樣，紮實佢，OK?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:50.65" id="00:16:50.65" class="lt" onclick="jumptoTime(1010, this.id)"><p>跟住掟落去，跟住呢個時候將啲酸菜放埋落去，先炆煮20分鐘，然後拿起豬肚再切絲，同一時間洗豬骨，將豬骨放入去炆煮，整個過程基本上不用調味，如果覺得不夠鹹可以再加鹽，如果覺得不夠味可以加濃湯煲，因為等一下我會放粉食，當它打邊爐一樣，所以我會放一粒濃湯煲，如果大家當湯飲的話，就不需要再放濃湯煲調味。</p></a>
+				<a href="#00:17:55.38" id="00:17:55.38" class="lt" onclick="jumptoTime(1075, this.id)"><p>基本上就是鹹菜加我煮完的鹹豬骨，就已經夠味了，為什麼我會說這是胡椒豬肚湯的加強版呢，那個竅門就在鹹豬骨那裡，OK 行不行，那我就不妨礙大家時間了，等下我中響的時候，我要加排骨的時候，我再跟大家說，OK，好了 中響了，現在已經煲了20分鐘了，湯有一點點是奶白色的，就是有一點點白色的，因為其實這個過程都有一些乳化現象。</p></a>
+				<a href="#00:18:36.38" id="00:18:36.38" class="lt" onclick="jumptoTime(1116, this.id)"><p>OK，這個時候我們就，這個鏡頭之外，大家先看著湯怎樣滾，鏡頭之外我現在就在沖洗這個醃鹹了的豬骨，這個就是我們家廚可以同時間進行的一個做法，就是不用像專業廚房那樣step by step，現在聽到聲音，大家知道我用很大水，因為要沖洗豬骨表面的鹽分，好 現在我撈起它，然後我就將豬骨放進去。</p></a>
+				<a href="#00:19:24.38" id="00:19:24.38" class="lt" onclick="jumptoTime(1164, this.id)"><p>放進湯裡，好，現在全部倒進去，然後夾起豬肚，做甚麼呢?</p></a>
+				<a href="#00:19:42.64" id="00:19:42.64" class="lt" onclick="jumptoTime(1182, this.id)"><p>切絲、切件，豬肚裏面有湯渣、湯汁，我們倒掉它，然後豬肚，我隨手，左手就馬上倒進凍水裏，其實之前我提過，湯能夠有奶白色的原因，就是有乳化現象，而乳化現象的關係就是，在動物油脂經過高溫處理之後，跟水融合在一起，就變成奶白色，這個現象就叫乳化現象，其實就算我們普通煲湯，如果那些骨或肉帶有肥，它一定程度上都有乳化現象。</p></a>
+				<a href="#00:20:38.64" id="00:20:38.64" class="lt" onclick="jumptoTime(1238, this.id)"><p>只不過它沒有跟煎過動物油脂的效果，那麼強烈，現在我先加滿水，現在我再煲，然後一邊我煲排骨，另一邊我切豬肚的件，這裡我就要加長時間，大概30分鐘，這裡多一分鐘就算了，這裡煮30分鐘，等一會我切完豬肚的件之後，我會馬上放進去，等一會我再開機跟大家分享，再說一下重點，現在繼續煲繼續計時，我已經將豬肚切件。</p></a>
+				<a href="#00:21:33.64" id="00:21:33.64" class="lt" onclick="jumptoTime(1293, this.id)"><p>因為我們要吃豬肚，所以豬肚就不能切得太細，將豬肚全部倒進去，繼續計時，現在我煲豬肚湯全程大火，不會有細火，這樣才可以加快速度，可以令到更快出味，這個製作出來的效果，結果是豬肚很爽很軟，比抓豬肚絲更加軟，不知道為什麼，可能因為一早已經放了鹽，有化學作用，所以豬肚吃起來很爽，口感很有趣，很棒。</p></a>
+				<a href="#00:22:28.51" id="00:22:28.51" class="lt" onclick="jumptoTime(1348, this.id)"><p>我兒子讚不絕口，最喜歡吃這個，到這裡，我們要繼續煮，現在還有22分鐘左右，然後繼續上鍋蓋，然後等它夠時間，這期間我用冷水浸豬肚，這是薯粉，這個薯粉也有分別的，如果是中國製造的薯粉，因為它不預先炒的，變相你直接用冷水浸泡半小時左右，它已經浸開了，然後一放進去，煮好湯之後，一放進去，就會很快熟透。</p></a>
+				<a href="#00:23:20.33" id="00:23:20.33" class="lt" onclick="jumptoTime(1400, this.id)"><p>但如果大家想用韓式的薯粉的話，韓式薯粉會比較硬，之前我在鬼馬家鄉炒米粉那裡，用了韓式薯粉，如果大家想吃韓式薯粉的話，就要花一點點功夫了，要用熱水浸韓式薯粉十分鐘以上，甚至乎要煮它，這樣韓式薯粉最後煮出來才會比較軟，OK?行不行?</p></a>
+				<a href="#00:23:54.53" id="00:23:54.53" class="lt" onclick="jumptoTime(1434, this.id)"><p>兩個國家、兩個地區，同一樣製品，但是有不同的處理方式，大家要記住，OK?</p></a>
+				<a href="#00:24:2.33" id="00:24:2.33" class="lt" onclick="jumptoTime(1442, this.id)"><p>好了，那…，對了，因為我等一下要放薯粉，調味我剛才不是說了嗎?</p></a>
+				<a href="#00:24:9.73" id="00:24:9.73" class="lt" onclick="jumptoTime(1449, this.id)"><p>基本上這個湯就不需要加任何的調味，基本上都會夠味，為什麼呢?</p></a>
+				<a href="#00:24:15.73" id="00:24:15.73" class="lt" onclick="jumptoTime(1455, this.id)"><p>鹹菜有鹹味，豬骨有鹹味，OK?我放這麼多鹽，雖然說我清洗乾淨，但是它也會有鹹味，豬骨會滲出一些味道，所以如果大家當湯喝，就不用再調味了，OK?</p></a>
+				<a href="#00:24:30.53" id="00:24:30.53" class="lt" onclick="jumptoTime(1470, this.id)"><p>但是因為我等一下拿來當做火鍋，再加上就是…，我是拿來煮粉吃的，所以在這方面來說，它就不夠味，如果想夠味的話，那當然要加這個濃湯煲了，OK?</p></a>
+				<a href="#00:24:50.93" id="00:24:50.93" class="lt" onclick="jumptoTime(1490, this.id)"><p>大家都會發現我很喜歡加濃湯煲，是的，因為濃湯煲比清雞湯，它的味道會更加濃郁一些，OK?</p></a>
+				<a href="#00:25:0.13" id="00:25:0.13" class="lt" onclick="jumptoTime(1500, this.id)"><p>還有濃湯煲有魚、牛、雞的選擇，有三種、四種不同的選擇，OK?</p></a>
+				<a href="#00:25:10.33" id="00:25:10.33" class="lt" onclick="jumptoTime(1510, this.id)"><p>所以我就喜歡用濃湯煲，那大家就酌情了，這個純粹個人喜好，但是我建議，如果你是用來煮粉吃或者火鍋，加一顆濃湯煲，我保證你會好吃到不得了，至於說那些…，有些人說你加這麼多添加的東西，只能夠說，你想吃原始又想吃好味，你要花很長很長的時間，我也解釋過，為什麼會有濃湯煲出來，濃湯煲可以代替到，我們傳統廚房上面。</p></a>
+				<a href="#00:25:43.73" id="00:25:43.73" class="lt" onclick="jumptoTime(1543, this.id)"><p>我們需要做的程序上，它代替了什麼，OK?</p></a>
+				<a href="#00:25:49.93" id="00:25:49.93" class="lt" onclick="jumptoTime(1549, this.id)"><p>行不行?</p></a>
+				<a href="#00:25:50.53" id="00:25:50.53" class="lt" onclick="jumptoTime(1550, this.id)"><p>如果大家喜歡吃純粹的，那就自己慢慢熬製，但是如果大家又想相對地快吃很多，簡單很多的，就加濃湯煲，OK?</p></a>
+				<a href="#00:25:59.53" id="00:25:59.53" class="lt" onclick="jumptoTime(1559, this.id)"><p>行不行?</p></a>
+				<a href="#00:26:0.13" id="00:26:0.13" class="lt" onclick="jumptoTime(1560, this.id)"><p>基本上介紹到這裡，等一下煮好了，再響鐘，我再跟大家分享，OK?</p></a>
+				<a href="#00:26:7.39" id="00:26:7.39" class="lt" onclick="jumptoTime(1567, this.id)"><p>好了，大家終於鐘響了，一個小時前前後後加起來，看看結果如何，嘩!</p></a>
+				<a href="#00:26:18.39" id="00:26:18.39" class="lt" onclick="jumptoTime(1578, this.id)"><p>看看，看到嗎?</p></a>
+				<a href="#00:26:20.39" id="00:26:20.39" class="lt" onclick="jumptoTime(1580, this.id)"><p>現在這湯是不是很奶白?</p></a>
+				<a href="#00:26:22.39" id="00:26:22.39" class="lt" onclick="jumptoTime(1582, this.id)"><p>是啊!</p></a>
+				<a href="#00:26:24.39" id="00:26:24.39" class="lt" onclick="jumptoTime(1584, this.id)"><p>因為鹹豬骨加上豬肚，可以有互相影響的作用，變成湯是奶白色的，現在我關火了，等一下我可以用來煮麵，給大家看看近鏡，而家呢個鹹菜豬肚湯呢 嘩!</p></a>
+				<a href="#00:27:0.13" id="00:27:0.13" class="lt" onclick="jumptoTime(1620, this.id)"><p>真係簡直係一流呀，呢個係加強版 用咗鹹豬骨 ok，close up 俾大家睇下，就係咁樣呀，有鹹豬骨啦 有豬肚啦 ok，大家記住要做呢個其實就好簡單嘅，基本上冇乜嘢特別技巧 你只要按照step 1 2 3咁去做就得㗎啦，總共嘅需時大概一小時15分鐘，全程都係用大火先至可以咁快，呢個時候呢 豬肚既腍又爽口。</p></a>
+				<a href="#00:27:44.25" id="00:27:44.25" class="lt" onclick="jumptoTime(1664, this.id)"><p>呢啲豬骨呢 又有肉香又有骨香，又有鹹香味 嘩!</p></a>
+				<a href="#00:27:53.17" id="00:27:53.17" class="lt" onclick="jumptoTime(1673, this.id)"><p>樣樣嘢共嘢一爐呀 大家得唔得 ok，咁我總結一下啦，基本上第一呢，一返嚟呢 就要同時間呢就要同呢個豬肚同埋豬骨呢就飛咗水先啦，清除咗佢表面嗰啲污糟嘢啦，清除咗嗰啲血水啦，咁咪要加咩呀 加薑片同埋加花椒，咁就可以加紅花椒又得啦，青花椒都得 ok，咁呢個第一樣嘢啦，跟住然之後馬上過冷河之後我哋就分開處理啦。</p></a>
+				<a href="#00:28:21.89" id="00:28:21.89" class="lt" onclick="jumptoTime(1701, this.id)"><p>第一時間要同呢個豬骨呢，就係醃咗，加重鹽落去醃，咁醃幾耐呢 大概20至30分鐘到，咁呢啲豬骨呢就有鹹香味㗎啦，跟住然之後同時間第二樣嘢呢就係，加呢個湯包啦 加呢個豬肚啦，咁湯包入面有乜嘢呢 就係有呢個係薑片啦，一包半嘅蒜頭包啦 一包蒜啦，跟住然之後就大概係10克到嘅胡椒啦，咁呢就一齊落去煮。</p></a>
+				<a href="#00:28:52.77" id="00:28:52.77" class="lt" onclick="jumptoTime(1732, this.id)"><p>咁呢就同時間進行嘅，較20分鐘 一邊呢就醃鹹豬骨，另一邊呢就係煲呢個係豬肚，鹹菜豬肚就落埋啲鹹菜一齊煲，20分鐘之後就將嗰啲豬骨就清洗咗佢啦，清洗乾淨呢個鹽份啦，跟住然之後呢就我哋就要換轉啦，就係將啲鹹豬骨 清洗乾淨嘅鹹豬骨，就擺落去湯嗰度去繼續煮，煮幾耐呀 40分鐘，咁呢個時候我哋另一方面呢就交叉啦。</p></a>
+				<a href="#00:29:25.65" id="00:29:25.65" class="lt" onclick="jumptoTime(1765, this.id)"><p>就係呢就將嗰個豬肚呢，就過冷河之後呢就切片，OK，豬肚切片呢就大家要留意一個小技巧嘅，豬肚嘅內籠呢，其實有好多嘅豬油喺入面嘅，即係黐住喺個內壁嘅，我哋切嘅時候一定要切走佢，如果唔係呢，我哋呢個成個湯就唔夠清新㗎啦，就變成係全部都係豬油嚟嘅，OK，咁就影響個食味嘅同埋口感嘅，大家得唔得。</p></a>
+				<a href="#00:29:51.85" id="00:29:51.85" class="lt" onclick="jumptoTime(1791, this.id)"><p>只要做曬呢度之後，40分鐘，咁呢切好咗片之後即刻擺返佢落去繼續，繼續煮啦繼續炆啦 OK，咁呢，40分鐘之後嘅即係鐘響呢，就完成咗好似呢個咁樣啦，跟住然之後做好咗個湯底，可以就咁攞嚟飲湯，當湯飲，然後食豬肚送飯，亦都可以用嚟煮粉麵，亦都可以用嚟打邊爐，嗱 昨日呢，我個仔成10個朋友上嚟食飯，佢哋就係用呢個湯底打邊爐。</p></a>
+				<a href="#00:30:25.73" id="00:30:25.73" class="lt" onclick="jumptoTime(1825, this.id)"><p>個個都讚不絕口，OK，唔好再用咩，淨係用呢個咩皮蛋芫茜湯呀，或者係沙嗲湯呀，或者係呢個麻辣湯底呀，其實我哋仲有第4個選擇嘅係乜嘢呀，鹹豬骨豬肚湯，第五個選擇是鹹豬骨湯，我之前做過一次給大家看，這次大家夢寐以求，原來豬肚湯可以用來做火鍋，可以嗎，我就不說這麼多了，等一下我加些薯粉下去，再煮幾分鐘。</p></a>
+				<a href="#00:31:5.16" id="00:31:5.16" class="lt" onclick="jumptoTime(1865, this.id)"><p>今晚的晚餐就可以吃了，可以嗎，我就不跟大家說了，希望大家喜歡這個做法，這是胡椒鹹菜豬肚湯加強蛋，OK，多謝大家收看，拜拜，我現在越說越想吐了，拜拜，快點煮麵快點吃。</p></a>
+				<a href="#00:31:26.40" id="00:31:26.40" class="lt" onclick="jumptoTime(1886, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——辣酒煮花螺，跟著影片做就對了，鮮香辣脆，連螺湯也不能放過，我家小子吃過以後，又開始嫌棄餐館的味道了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'p7FDkD71UzI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——辣酒煮花螺，跟著影片做就對了，鮮香辣脆，連螺湯也不能放過，我家小子吃過以後，又開始嫌棄餐館的味道了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>嘿嘿，你又搞邊波對住隻鑊，梗係整好嘢啦。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>今日想同大家分享一個香港好好的菜式，通常去海鮮酒家先食到的，自己屋企成日都整唔好。</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>辣酒煮花螺，其實辣酒煮花螺想煮得好食就好簡單，好多人煮唔好只不過係配方同埋程序做錯咋。</p></a>
+				<a href="#00:00:38.00" id="00:00:38.00" class="lt" onclick="jumptoTime(38, this.id)"><p>首先第一件事，煮滾水放幾片薑片，放一匙鹽，要搓花螺。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>拿起一隻先，等下同大家介紹，市面上有花螺和東風螺賣，東風螺便宜一倍，花螺貴一倍，怎樣去分呢?</p></a>
+				<a href="#00:01:15.00" id="00:01:15.00" class="lt" onclick="jumptoTime(75, this.id)"><p>花螺排列得好整齊，長方形的斑點，排列得好整齊，就好似螺身般旋轉。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>而東風螺就好大塊斑，不規則，所以好容易分。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>當然正常商人都會講明這些叫東風螺，那些叫花螺，但好少放埋一齊賣，於是大家就成日都誤會了。</p></a>
+				<a href="#00:01:51.28" id="00:01:51.28" class="lt" onclick="jumptoTime(111, this.id)"><p>東風螺就變成花螺，東風螺都好食的，同埋東風螺係大隻啲嘅，花螺就細隻啲嘅，大家要記住喎唔好買錯喎，如果唔係你遇咗啲無良商人嘅話呢，就花多一倍價錢，但係就買唔到想食嗰樣嘢啦，而家呢就處理呢個甲殼類動物呢，基本上都係咁嘅處理程序㗎啦，就係畀幾片間片，通常甲殼類呢佢喺海底生活呢，即係海床生活呢。</p></a>
+				<a href="#00:02:20.28" id="00:02:20.28" class="lt" onclick="jumptoTime(140, this.id)"><p>佢比較寒涼嘅所以放幾片薑片啦，然之後呢就放啲鹽，做咩呢就幫佢清除呢個表面嘅污糟嘢同埋細菌嘅，ok 啲寄生蟲呀應該咁講殺死啲寄生蟲呀，ok 咁就食得安全啲，咁基本上都係咁處理，咁等佢大滾一陣就得㗎啦，呢度呢我就唔需要同大家去分享啦，咁最主要呢就係等陣間呢，我會開鑊同大家分享，點樣煮辣酒煮花螺煮得好味。</p></a>
+				<a href="#00:02:49.28" id="00:02:49.28" class="lt" onclick="jumptoTime(169, this.id)"><p>ok 好味到點呢，嗱 我就講個笑話，咁話說呢就好多好多年前㗎啦，咁我細佬呢就第一次食我嘅整個辣酒煮花螺，佢誇張到連啲湯都唔放過，咁你可想而知我整嘅辣酒煮花螺呢係如何好味啦，咁呀同埋呢就我呢個呢有機會，即係我覺得係就好過酒家嘅因為點解呢，酒家呢基於成本呀各樣嘅因素呢，佢又唔會放咁多酒嘅。</p></a>
+				<a href="#00:03:20.28" id="00:03:20.28" class="lt" onclick="jumptoTime(200, this.id)"><p>咁我呢就放好多酒落去嘅，咁咪你就當煮豆湯咁咪咁就得㗎啦嗰啲汁呀，好好味嘅ok，等陣間開爐同大家分享呀，好啦大家咁呢先頭呢就已經焯熟咗嗰啲花螺啦，咁呀大滾之後呢，略略呢係滾多佢一兩分鐘就ok㗎啦大滾之後呀，咁呢啲焯熟咗嘅花螺呢表面呢就會有啲係，蓋化現象嘅係唔好意思呀對唔到焦，咁呀畀大家睇下。</p></a>
+				<a href="#00:03:57.28" id="00:03:57.28" class="lt" onclick="jumptoTime(237, this.id)"><p>呢啲呀明顯有蓋化嘅現象嘅咁呢就係熟得好透㗎啦ok，咁呀而家呢就係燒鑊啦跟住然之後，起煙啦咁呀而家呢我就落油啦，少少油就得啦，唔使多嘅，因為等陣間呢，我落嗰啲好多油嘅ok，嘩!好多煙呀!係呀!就係咁㗎啦，跟住落去爆鵝啦，蒜蓉同埋辣椒爆一爆佢啦，跟住落咩呢?</p></a>
+				<a href="#00:04:34.88" id="00:04:34.88" class="lt" onclick="jumptoTime(274, this.id)"><p>我落嗰啲，咁而家收返細火先，因為太大火啦，咁呢，我就係落呢個，如果大家唔想咁辣嘅話呢，就落麻辣油，如果大家想辣啲嘅話呢，就落咩呢?</p></a>
+				<a href="#00:04:51.88" id="00:04:51.88" class="lt" onclick="jumptoTime(291, this.id)"><p>一般辣酒煮花螺呢，傳統上係會落呢個潮州辣椒油嘅，但係呢，我因為第一鍾意嗰種味啦，第二就係因為呢，唔想佢咁辣呀，咁所以我落麻辣油嘅，咁麻辣油落幾多呢?</p></a>
+				<a href="#00:05:9.88" id="00:05:9.88" class="lt" onclick="jumptoTime(309, this.id)"><p>一，大概兩湯匙到啦，OK，連油帶渣兩湯匙呀，好，呢個時候呢，開返大個火先，咁跟住之後就炒啦，就炒呢個蒜蓉，加呢個辣醬，OK，辣油，唔好睇呢度咁多，我放咁多啦，唔係好辣㗎咋，因為我仲要溝水㗎嘛，大概你預嗰個辣度呢，就係一般，你去淡仔食呢，中辣咁上下啦，咁如果係大家唔想咁辣嘅話，咪落一匙麻辣油囉。</p></a>
+				<a href="#00:05:46.88" id="00:05:46.88" class="lt" onclick="jumptoTime(346, this.id)"><p>咁如果大家仲想辣啲嘅話呢，可以加呢個潮州辣椒油，或者係潮州辣椒油嘅變種，蝦味辣椒醬，好啦，而家得囉，跟住然之後呢，我先頭講過啦，我嘅特色就落好多酒嘅，咁呢度呢就落200ml，辣，咋喎呢，就要是... 火不要緊的，沒事的，熱過頭而已，更好，更加好鑊氣，這個是廣東米酒，我知道精義廚房會放黃酒，即是紹酒，但是我們家廚來說。</p></a>
+				<a href="#00:06:35.40" id="00:06:35.40" class="lt" onclick="jumptoTime(395, this.id)"><p>我覺得其實辣酒煮花螺酒味濃一點，香一點會更加出彩，這裡我大概加水到接近400-500ml左右，400-500ml左右，大家記住，即是說酒和水的對開是1比2，一份酒，兩份水，這個辣酒煮花螺才是名副其實的辣酒煮花螺，但是如果大家還想要更加香的酒味，可以酒的比例更加高，這個時候我就調味。</p></a>
+				<a href="#00:07:18.40" id="00:07:18.40" class="lt" onclick="jumptoTime(438, this.id)"><p>現在加酒加其他都不過800ml，所以我們放一匙半鹽，一匙雞粉，然後一匙半糖，基本上調味完成了，現在等它滾一滾，等蒜蓉、辣椒、酒、蓉、白一起出味，等它開始滾的時候我再開機，現在很香酒味，這個時候滾了一會，開始大滾，然後就將所有花螺放進去，然後滾多久呢?</p></a>
+				<a href="#00:08:10.40" id="00:08:10.40" class="lt" onclick="jumptoTime(490, this.id)"><p>滾5分鐘，5分鐘就夠了，可以確保花螺入了酒香味，還有花螺會出了花螺的鮮味，所以為什麼我弟弟這麼喜歡喝花螺湯，等5分鐘後我再開機，看看結果如何，好了，五分鐘過去了，中火了，先關火，看看結果如何，嘩!水分減少了，可以保證，可以跟大家說，這個辣酒煮花螺的湯非常鮮味，大家有沒有發覺我調味和加水好像什麼?</p></a>
+				<a href="#00:09:10.69" id="00:09:10.69" class="lt" onclick="jumptoTime(550, this.id)"><p>好像煮公仔麵，大家懂得煮公仔麵，沒理由這個不會做，對不對?</p></a>
+				<a href="#00:09:16.93" id="00:09:16.93" class="lt" onclick="jumptoTime(556, this.id)"><p>很簡單的，然後先倒入鍋子，用闊口的碟子，深的碟子，我這麼跌扭的動作是因為中式鍋頂著我，好，完成了，然後我把蔥花放上去，加進去，嘩!這樣煮，真的這樣煮，你想它不好吃也難，好，然後除了蔥花之外，當然要大量的芫茜，這裡是一束芫茜，三元一隻，不是貴的，之所以我這個辣酒煮花螺，又忘記關掉，抽氣。</p></a>
+				<a href="#00:10:34.13" id="00:10:34.13" class="lt" onclick="jumptoTime(634, this.id)"><p>辣酒煮花螺，我敢說比酒家好吃，原因和秘訣就在這裡，我放大量的芫茜和蔥，真的沒得輸，好，完成了，等等，還沒完的，總結，大家都知道的，真的，攪勻它，如果大家怕原西、蔥生的話，不習慣的話，大家可以在收火前加進去，但記住，一加進去就要收火了，否則的話，原西和蔥過熟後就沒有了那種特有的香味，OK?可以嗎?</p></a>
+				<a href="#00:11:26.65" id="00:11:26.65" class="lt" onclick="jumptoTime(686, this.id)"><p>大家看看，正不正?</p></a>
+				<a href="#00:11:28.95" id="00:11:28.95" class="lt" onclick="jumptoTime(688, this.id)"><p>給大家看近鏡，正不正?</p></a>
+				<a href="#00:11:33.95" id="00:11:33.95" class="lt" onclick="jumptoTime(693, this.id)"><p>單是賣相就已經沒得輸了，而我這個是夠濃味的，我現在複習一下，總結一下，第一，要加鹽、薑片去汆水，一個是防寒，即是去血寒，第二個是讓寄生蟲快點死，或者快點掉，炒這個花螺醬的時候，要先炒一炒，辣醬混合蒜蓉、辣椒，炒一炒，然後加酒，最後加水，酒和水的比例是1比2，可以嗎?</p></a>
+				<a href="#00:12:18.95" id="00:12:18.95" class="lt" onclick="jumptoTime(738, this.id)"><p>調味呢，又有人會說，你有沒有搞錯?鮮味怎樣怎樣?</p></a>
+				<a href="#00:12:23.95" id="00:12:23.95" class="lt" onclick="jumptoTime(743, this.id)"><p>大家可以不加雞粉，不過我個人認為，加了雞粉後，味道層次會更加出彩，當然有人可以不同意，不加不要緊，OK?個人口味，最後加大量的芫茜和蔥花，這樣就完成了一道美味、非常令人回味無窮的辣酒煮花螺，記住不要加太多湯，大家看到的，我是不是剛剛好?</p></a>
+				<a href="#00:12:56.95" id="00:12:56.95" class="lt" onclick="jumptoTime(776, this.id)"><p>我厲害嗎?剛剛好是這隻碟，是的，我預計了差不多，當然如果要更多的時候，我會有另一隻碟出來，OK?好不好?</p></a>
+				<a href="#00:13:5.95" id="00:13:5.95" class="lt" onclick="jumptoTime(785, this.id)"><p>那就不打擾大家了，希望大家接下來可以嘗試更多的美味，如果大家嫌花螺貴的話，今天我用了150元一斤，如果節日的話，就用了168元一斤，如果大家嫌花螺貴的話，又想吃辣酒煮花螺的話，可以嘗試東風花螺，都可以的，不過始終品種有別，價格已經差了一倍，便宜一點，7、80元一斤，拿來練習一下也好，試試味道也好。</p></a>
+				<a href="#00:13:40.95" id="00:13:40.95" class="lt" onclick="jumptoTime(820, this.id)"><p>我告訴你，這個真的令人回味無窮，OK?好不好?</p></a>
+				<a href="#00:13:44.95" id="00:13:44.95" class="lt" onclick="jumptoTime(824, this.id)"><p>多謝大家收看，拜拜。</p></a>
+</div>
+	</body>
+</html>

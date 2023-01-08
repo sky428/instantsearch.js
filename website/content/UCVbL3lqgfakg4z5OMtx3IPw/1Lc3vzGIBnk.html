@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——冰鎮芥蘭，一道簡單非常卻又欲罷不能的美食！製作簡單而容易掌握技巧！夏日消暑涼菜又豈能缺少發揚自香港茶餐廳的香港名食呢？好味道空口就可以吃下兩斤！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1Lc3vzGIBnk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——冰鎮芥蘭，一道簡單非常卻又欲罷不能的美食！製作簡單而容易掌握技巧！夏日消暑涼菜又豈能缺少發揚自香港茶餐廳的香港名食呢？好味道空口就可以吃下兩斤！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天分享一個非常簡單的美食，但在外面經常看到有的菜式，就是冰鎮芥蘭，現在是夏天，所以吃涼快的菜式是不錯的。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>其實冰鎮芥蘭很簡單，但我們還有一些技巧，大家看看我怎樣做吧，現在水滾了，我先介紹材料，我加一些薑米，這些用來做其他菜式，薑米我順便切了，如果平時不切薑米，就這樣放薑，然後芥蘭，都幾粗壯，大家看到我切了尾部，和要摘花冧，很多人有個疑問，你們廣東人為何要摘花冧呢?</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>其實有兩個原因，一個是因為花冧很容易有寄生蟲，有些蟲蛋你吃了也不察覺，第二個是因為花冧比較稠，通常我們想吃到蔬菜的甜味，花冧是不要的，還有第三個原因，可能會有殘留羊藥，這些是個人習慣，你說沒有就沒有，有就有，無所謂的，反而有蟲蛋，寄生蟲大家要小心些，首先現在水滾，我們要下味，大家要記住，通常一匙鹽，然後一匙糖，。</p></a>
+				<a href="#00:02:2.00" id="00:02:2.00" class="lt" onclick="jumptoTime(122, this.id)"><p>但我們鹿芥蘭要多加些糖，兩匙三匙四匙，然後加一匙雞粉，有少許味道，糖和雞粉可以令菜更加青綠，這個時候我加少許薑米，或者加少許薑，讓它出味，然後我們加些油，做完這幾個部份，大家煮出來的菜就很青綠，大家見到我都不止幾條片，很多條片我都煮青菜，飛水那些都保持到青綠，基本上就是做這個，然後我們就加些菜下去，。</p></a>
+				<a href="#00:03:6.50" id="00:03:6.50" class="lt" onclick="jumptoTime(186, this.id)"><p>煮芥蘭視乎你用途是甚麼，通常來說，如果我們炒的話，現在稍為轉一轉色就可以了，馬上就要撈起，但因為我們現在是直接食，煮完之後就食，焯完之後就食，所以就要焯久一點，接近翻滾的時間就可以了，在這個過程裏面，我先介紹一下，冰鎮芥蘭一定要有一盤冰水，不是你煮完之後，就馬上放在冰面，不是這樣，。</p></a>
+				<a href="#00:03:54.42" id="00:03:54.42" class="lt" onclick="jumptoTime(234, this.id)"><p>否則冰面就會變成水，這個碟子很光，我調暗一點，我加了冰在上面，等一下放些蔬菜在上面，現在開始滾了，小滾了，這個時候就決定大家想怎樣食芥蘭的口感，如果想食爽一點，這個時候就要拿起，如果想食軟一點，就可以給多它二三十秒的時間，讓它再大滾一點，因為芥蘭本身口感比較硬，現在輪到讓菜不要浮在表面，有些可以按壓。</p></a>
+				<a href="#00:04:55.51" id="00:04:55.51" class="lt" onclick="jumptoTime(295, this.id)"><p>這個時候大家看到菜頭已經全熟，所以這個時候時間多與少就視乎大家的需求，我先關掉抽氣扇，不要吵著大家，影響到大家接收訊息，這個時候我們就將它放在冰水裏面，稍為浸一浸，這個時候我們不是沒有事做，浸的期間是有事做，我們做甚麼呢?</p></a>
+				<a href="#00:05:33.51" id="00:05:33.51" class="lt" onclick="jumptoTime(333, this.id)"><p>當然是調一個很好的蠔油汁，蠔油汁都要調嗎?當然了，大家有沒有發覺我煮綠油菜一定會加豬油，現在我正在浸，我繼續說，很多麵攤的師傅煮油菜，一定會加豬油去拌，這樣就可以令到油菜非常可口，但是冰鎮就不可以加豬油，不可以加任何動物油脂，為甚麼呢?因為它會凝結，所以我們不可以隨便地加動物油脂，不好意思，因為我剛才突然想做東西。</p></a>
+				<a href="#00:06:39.51" id="00:06:39.51" class="lt" onclick="jumptoTime(399, this.id)"><p>我突然間閒了一會，這個時候我們要開這個，我調暗一點，這個時候我們要加甚麼呢?</p></a>
+				<a href="#00:06:54.51" id="00:06:54.51" class="lt" onclick="jumptoTime(414, this.id)"><p>加少少熟油，加少少熟油，然後我們就倒蠔油上去，大家有看到嗎?</p></a>
+				<a href="#00:07:9.31" id="00:07:9.31" class="lt" onclick="jumptoTime(429, this.id)"><p>大凡我們開辣醬、蠔油、沙薑，都是差不多這樣的開法，這個時候我們就要攪拌均勻，這樣就可以令到蠔油吸收油份，應該說是令到熟油吸收到蠔油，大家都知道熟油對於一些白灼的食物來說，是非常惹味的，大家說是不是?</p></a>
+				<a href="#00:07:40.31" id="00:07:40.31" class="lt" onclick="jumptoTime(460, this.id)"><p>記住不要加動物油脂，否則就會很難吃，吃到一粒粒油脂凝結了，明白嗎?</p></a>
+				<a href="#00:07:52.31" id="00:07:52.31" class="lt" onclick="jumptoTime(472, this.id)"><p>所以蠔油就要用熟油去開了它，這個時候差不多了，我先拿開它，然後就把浸泡好的菜放在一起，大家看到我的菜是不是很翠綠?</p></a>
+				<a href="#00:08:20.31" id="00:08:20.31" class="lt" onclick="jumptoTime(500, this.id)"><p>是呀!</p></a>
+				<a href="#00:08:21.31" id="00:08:21.31" class="lt" onclick="jumptoTime(501, this.id)"><p>所以其實好吃的東西有時候都很簡單，但簡單當中都要有技巧的，不好意思，這些現場聲音我都不會修剪的了，好，搞定，我稍為擺好，然後將開好的蠔油擺在上面，大家覺得這樣的一個吃法，簡單嗎?</p></a>
+				<a href="#00:09:7.63" id="00:09:7.63" class="lt" onclick="jumptoTime(547, this.id)"><p>是的，很簡單的，希望大家可以跟著一起做，記住這個菜不需要很特別的技巧，最重要有冰就可以了，而且我們要為了吃的過程中會吃得更加香口，蠔油是需要利用熟油去開的，但記住不要用動物油脂，否則它會凝結，一凝結的話就大件事了，大家吃到的就是一些很難受的粉狀的口感，沒什麼特別的，這個菜簡單嗎?</p></a>
+				<a href="#00:09:54.63" id="00:09:54.63" class="lt" onclick="jumptoTime(594, this.id)"><p>簡單，夏天吃的話就一流了，記得，灼菜一定要加多一點糖，然後上味要加鹽和雞粉，我現在就解釋一下，給新來的，舊的應該都知道，雞粉有酵素的，可以令到它更綠，糖可以令到葉綠素保持在菜中，所以它可以保持青綠，但今天我加的糖特別多，因為它是芥蘭，我加多一點芥蘭就可以減低苦澀味，我第一次聽到冰鮮芥蘭，她有鴛鴦的臉。</p></a>
+				<a href="#00:10:42.63" id="00:10:42.63" class="lt" onclick="jumptoTime(642, this.id)"><p>我喜歡吃，她不喜歡吃，女兒也喜歡吃，她說，又是芥蘭?不是吧?</p></a>
+				<a href="#00:10:48.63" id="00:10:48.63" class="lt" onclick="jumptoTime(648, this.id)"><p>我說，你試試吧，我炒的芥蘭，你什麼時候說不好吃，她說，是，那是好吃的，所以要加多一點糖，另外，為了令到揮發的芥蘭更加清香，我們加少少薑，大家看到我加薑米，因為我有其他事做，我懶，順便切薑米，撥少少下去，如果平時大家不是做其他事，就這樣拍薑就可以，基本上就這麼簡單，正不正?我現在肚餓。</p></a>
+				<a href="#00:11:20.40" id="00:11:20.40" class="lt" onclick="jumptoTime(680, this.id)"><p>先吃東西，拜拜，希望大家喜歡，冰鎮芥蘭，不要加動物油，但是為了要令到它惹味，所以我在蠔油加了熟油，OK，行不行?</p></a>
+				<a href="#00:11:34.74" id="00:11:34.74" class="lt" onclick="jumptoTime(694, this.id)"><p>好了，拜拜!</p></a>
+</div>
+	</body>
+</html>

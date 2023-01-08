@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——榨菜肉碎煮豆腐，兒時記憶，阿媽至愛，但總是感覺受罪，成長了，知道苦心了，所以也改良了一下讓這道菜變得更加美味。。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'doKVSVJ5A1Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——榨菜肉碎煮豆腐，兒時記憶，阿媽至愛，但總是感覺受罪，成長了，知道苦心了，所以也改良了一下讓這道菜變得更加美味。。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又是找食的時間啦!</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>今晚想和大家分享什麼好呢?</p></a>
+				<a href="#00:00:9.00" id="00:00:9.00" class="lt" onclick="jumptoTime(9, this.id)"><p>今晚我想和大家分享一個大家小時候很多人都會食過，但很不喜歡食的，就是豆腐!</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>今晚我會做什麼菜式呢?就是榨菜肉碎煮豆腐!</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>應該不少人都食過阿媽做的，我現在先放味道，再慢慢介紹。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>鹽糖、味道、雞粉等等。</p></a>
+				<a href="#00:00:48.02" id="00:00:48.02" class="lt" onclick="jumptoTime(48, this.id)"><p>放入材料後，首先要加豆腐，稍為煮一煮，等豆腐翻滾就可以了，我慢慢介紹材料，豆腐我選用的是包仔，包仔是專業廚房很喜歡用的，包仔是屬於軟豆腐、滑豆腐的一種，另外還有一種是即場切的板豆腐，板豆腐有分硬豆腐和軟豆腐，板豆腐的軟豆腐比較容易碎，所以我選用了包仔，包仔不容易碎，也是專業廚房喜歡用的，但一樣滑。</p></a>
+				<a href="#00:01:46.02" id="00:01:46.02" class="lt" onclick="jumptoTime(106, this.id)"><p>為何要先煮豆腐呢?</p></a>
+				<a href="#00:01:50.02" id="00:01:50.02" class="lt" onclick="jumptoTime(110, this.id)"><p>因為要讓豆腐上味，煮一煮，不用太久，稍為煮滾，一煮滾就關火，就可以煎來用，主要作用是除了上味，也令豆腐硬一點，就不會煎爛，說明榨菜，當然有榨菜，榨菜肉碎，另外還有肉碎，又老人痴呆，忘了在雪櫃拿肉碎出來，不要緊，反正那裡大家不用看了，撈肉碎的一如以往，大家去撈肉餅看影片就知道怎樣撈，一般來說，很多人喜歡切幼粒的肉。</p></a>
+				<a href="#00:02:47.02" id="00:02:47.02" class="lt" onclick="jumptoTime(167, this.id)"><p>炸菜，但為何我要切粗粒呢?</p></a>
+				<a href="#00:02:49.82" id="00:02:49.82" class="lt" onclick="jumptoTime(169, this.id)"><p>是因為我有特別的處理方法，粗粒才能吃到炸菜的口感，如果太幼的話，就不可以了，大家看看我待會怎樣做，除了這東西之外，肉碎大家看不到，因為在冰箱，所以就介紹，加兩隻雞蛋，喂?</p></a>
+				<a href="#00:03:12.98" id="00:03:12.98" class="lt" onclick="jumptoTime(192, this.id)"><p>大家未試過了吧?</p></a>
+				<a href="#00:03:14.74" id="00:03:14.74" class="lt" onclick="jumptoTime(194, this.id)"><p>為何要用雞蛋呢?</p></a>
+				<a href="#00:03:18.30" id="00:03:18.30" class="lt" onclick="jumptoTime(198, this.id)"><p>又是一個秘技，加了雞蛋後，我跟大家說，馬上豆腐的口感完全不同，完全不同的食味，保證你吃到停不下來，OK?</p></a>
+				<a href="#00:03:35.50" id="00:03:35.50" class="lt" onclick="jumptoTime(215, this.id)"><p>加雞蛋，大家想像一下，待會我怎樣加雞蛋，完成品會是怎樣的?</p></a>
+				<a href="#00:03:42.38" id="00:03:42.38" class="lt" onclick="jumptoTime(222, this.id)"><p>我保證大家猜不到，好了，現在開始滾了，等它大滾，大家要記住，因為豆腐很快熟，豆腐很快熟，大家就會不自覺地，一拿去，就很快地拿走，很快就菜成了，但結果豆腐入不到味，還有煮不熟，所以在這樣的情況下，我們先搓一搓它，現在開始大滾了，差不多了，搓一搓它，順便在搓的過程中加味，可以保證豆腐比較有味，而且吃不到很重的豆腥味。</p></a>
+				<a href="#00:04:39.70" id="00:04:39.70" class="lt" onclick="jumptoTime(279, this.id)"><p>OK?</p></a>
+				<a href="#00:04:40.66" id="00:04:40.66" class="lt" onclick="jumptoTime(280, this.id)"><p>大家都知道，如果豆腐煮不熟的話，有種豆腥味是很難受的，小時候很不喜歡吃，但不知為何媽媽就很喜歡煮這道菜，是不是?</p></a>
+				<a href="#00:04:51.34" id="00:04:51.34" class="lt" onclick="jumptoTime(291, this.id)"><p>我今天用我自己的認知改良了很多東西，大家看看我怎樣做，好，現在全滾了，中間都滾了，先關火，豆腐都已經是，自己懂得鋪面了，好，這樣煮過的豆腐，就會硬身，輕輕硬身一點，好了，除了這樣之外，大家要記住，豆腐待會要煎，我會用些塑油紙輕輕抹一抹，讓它沒那麼多水，要先瀝一瀝，有一點耐性，處理一下，讓它沒那麼濕。</p></a>
+				<a href="#00:05:35.16" id="00:05:35.16" class="lt" onclick="jumptoTime(335, this.id)"><p>待會放下去煎，就可以，好光呀，可以令豆腐不容易煎到油彈到四周，好，我先關機，順便去拿肉碎，和繼續餘下的處理過程，好了，大家，燒紅了鍋，放些油，攪拌均勻油，然後，我關小火，平均小火，向左手邊那邊關，好了，這個時候，終於用鑊鏟了，用這隻鑊，然後就放些豆腐進去，豆腐不要煎爛，放下去的時候不要動，稍微煎一煎，不要那麼心急。</p></a>
+				<a href="#00:06:44.16" id="00:06:44.16" class="lt" onclick="jumptoTime(404, this.id)"><p>這個過程我給大家看完的，其實豆腐有很多種做法，我先說通常家廚都是切大小粒，麻婆豆腐也是切大小粒，現在大家有沒有發覺，外面為何可以做到豆腐那麼好吃，為何家裡總是做不到，因為煎得不好，但我們家廚又不可以學習，要煎到起焦才好動，否則一燙就爛，又不可以學職業廚房拿油炸，我們有甚麼辦法可以令家廚做到外面炸豆腐的口感和效果，又可以剔除豆腥味。</p></a>
+				<a href="#00:07:58.43" id="00:07:58.43" class="lt" onclick="jumptoTime(478, this.id)"><p>又可以保持一定的口感，又不會太過硬，那怎麼做呢，這個時候我用鑊鏟試試，差一點，其實邊邊有些已經…，我慢慢這樣篩，煎豆腐要很小心，除非你那隻鑊本身煎開豆腐，即是有足夠的油，否則很難煎到豆腐是圓粒不動，即是它不會爛，所以要很小心去處理，慢慢用陰力篩，現在大部分七成的豆腐都出來了，可以起了。</p></a>
+				<a href="#00:08:49.15" id="00:08:49.15" class="lt" onclick="jumptoTime(529, this.id)"><p>再少少，八成都可以了，可以大力攪拌，大家看到豆腐的質感嗎，看到嗎 有些已經焦了，現在可以稍為開大火，大火一點 也是這麼大，給大家看看，好了 待會我會加雞蛋，大家想到我怎樣加雞蛋了嗎，就是煎豆腐的時候加，分開幾次加，好，這個時候就可以開大火了，開大火了，離少許鑊慢慢煮，這個時候我們就可以反轉了，加完雞蛋就反轉。</p></a>
+				<a href="#00:10:12.54" id="00:10:12.54" class="lt" onclick="jumptoTime(612, this.id)"><p>大家可以看看我煎豆腐煎成怎樣，給大家看看，哎呀，要煎到這樣，看不看到，再調暗些，才大家看到那個，看不看到，是不是不是純白色，已經焦了，是不是，OK，反了它之後，繼續，搖一搖，雖然開大火，其實不應該開大火，但是，為了更加控制，比控制溫度好，所以，我就要，這個時候，我就要，拿起它，然後這次，就加第二隻雞蛋了，由得雞蛋黏著，等一會再散開。</p></a>
+				<a href="#00:11:26.56" id="00:11:26.56" class="lt" onclick="jumptoTime(686, this.id)"><p>現在我開始這樣翻動，豆腐就會散開，因為現在有層雞蛋在表面保護豆腐，所以豆腐不會爛，現在開始翻動，剛開始就不敢翻動，現在就這樣翻動，翻動就會散開，大家看到嗎?</p></a>
+				<a href="#00:11:57.56" id="00:11:57.56" class="lt" onclick="jumptoTime(717, this.id)"><p>變成這些豆腐有蛋香，豆腐的鮮味是否已經上了?</p></a>
+				<a href="#00:12:3.56" id="00:12:3.56" class="lt" onclick="jumptoTime(723, this.id)"><p>豆腐是鹹的，其實不是很鹹，這樣就不會太乾，又不會吃到…，現在開始炒豆腐了，大家看到嗎?我這樣托高來炒，豆腐都不會爛，是否可以做到餐廳、專業廚房那種炸豆腐的效果?</p></a>
+				<a href="#00:12:24.56" id="00:12:24.56" class="lt" onclick="jumptoTime(744, this.id)"><p>再加上我加了蛋，當然比炸豆腐更好，是嗎?而且我又上了味，豆腐就不只是豆腐味，好了，完成，給大家看看，因為我想香港的家廚是不會用這個方法的，OK?</p></a>
+				<a href="#00:12:51.48" id="00:12:51.48" class="lt" onclick="jumptoTime(771, this.id)"><p>這個方法是怎樣來的?</p></a>
+				<a href="#00:12:53.78" id="00:12:53.78" class="lt" onclick="jumptoTime(773, this.id)"><p>東北的!</p></a>
+				<a href="#00:12:55.32" id="00:12:55.32" class="lt" onclick="jumptoTime(775, this.id)"><p>東北的那些大媽就是這樣做的，OK?</p></a>
+				<a href="#00:13:1.72" id="00:13:1.72" class="lt" onclick="jumptoTime(781, this.id)"><p>這個效果，大家看到的，豆腐是不是很硬、很油?</p></a>
+				<a href="#00:13:6.84" id="00:13:6.84" class="lt" onclick="jumptoTime(786, this.id)"><p>很油，但是，我搭不散它的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:11.70" id="00:13:11.70" class="lt" onclick="jumptoTime(791, this.id)"><p>是不是?，我很放心的，因為我煎到焦香，大家都很喜歡吃，以前去涼茶店很喜歡吃那些，煎豆腐的，為什麼喜歡吃呢?因為煎香了，有個焦焦的表皮，香口，是不是?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:30.38" id="00:13:30.38" class="lt" onclick="jumptoTime(810, this.id)"><p>現在，我就做到一模一樣的效果，用來煮菜的話，也可以做到跟這個職業廚房是一模一樣的炸豆腐的效果，OK?我兒子很喜歡吃這個煎豆腐的，就是這樣的煎法，現在開大火，因為不是很髒，煎完豆腐、煎完蛋，是不是?</p></a>
+				<a href="#00:13:58.04" id="00:13:58.04" class="lt" onclick="jumptoTime(838, this.id)"><p>所以隨便處理一下表面那些，蛋漬就可以了，好了，用原本的鑊，接下來第二步做什麼呢?</p></a>
+				<a href="#00:14:15.18" id="00:14:15.18" class="lt" onclick="jumptoTime(855, this.id)"><p>第二步當然是煎肉餅、煎肉碎，現在我這個肉碎，今天下午撈的，也是偷我老婆的，順便撈她的，我們自己吃一點，這個下午撈完之後，就放進冰箱冷凍的，冷凍，至於為什麼要這樣的效果，我在梅菜蒸肉餅那裡已經解釋了，有科學根據的，保證嫩滑，好了，出煙了，等等，馬上加油，肉餅可以多一點，不用完全關小火，大家看到我關小火。</p></a>
+				<a href="#00:15:1.02" id="00:15:1.02" class="lt" onclick="jumptoTime(901, this.id)"><p>向右邊平均關小火，然後把肉餅全部放進去，剛剛開始煎的時候盡量壓平它，讓它大面積受熱，這個時候可以讓它高溫，相對高溫的，可以讓它，這樣壓它，很少用這個鑊鏟的，所以有時候我覺得最重要是自己就手和方便，因為大家都看到的，用夾來炒菜，主要原因是可以當筷子用，我學了西廚那種東西，第一面是稍為耐心一點。</p></a>
+				<a href="#00:15:51.90" id="00:15:51.90" class="lt" onclick="jumptoTime(951, this.id)"><p>為什麼肉餅要煎一煎呢，主要是要煎到有焦香感，一樣就是令它香口，我可以保證，如果大家學會了這個菜式之後，以後你的孫子、子女就不會再拒絕，吃你的肉碎豆腐了，他一定會，又是爬山蟎大白飯，不用說了，因為我全部都是經過香口處理，大家有沒有發覺，是不是很像煎魚餅，就是這樣，這個階段也是這樣，等一會，另一邊稍為煎香一點，我就開始打碎它。</p></a>
+				<a href="#00:16:45.08" id="00:16:45.08" class="lt" onclick="jumptoTime(1005, this.id)"><p>這個過程叫做煤鈉反應，煤鈉反應是所有炒菜、煎食的美味來源，什麼叫煤鈉反應呢?</p></a>
+				<a href="#00:17:3.08" id="00:17:3.08" class="lt" onclick="jumptoTime(1023, this.id)"><p>就是利用高溫快速煎香表面，但肉心未熟透、很亂，這個就叫煤鈉反應，你明白了這個道理後，我現在煎肉餅，你可以用來煎扒，現在另一邊也煎香了，然後就打散它，這個時候開大火，要快速地將所有肉碎都炒熟，炒到大約九成熟，最後的那一成是怎樣呢?</p></a>
+				<a href="#00:17:44.08" id="00:17:44.08" class="lt" onclick="jumptoTime(1064, this.id)"><p>就是最後放進豆腐裡煮熟，煤鈉反應不是中國人發明的，這個科學名詞是外國人發明的，其實這個煤鈉反應已經發明了差不多一百年，三十年代有個科學家很喜歡吃東西，他就研究人類為什麼這麼喜歡吃美味的東西，因為他發現了定律，所以那個人就叫做煤鈉，所以就叫做煤鈉反應，好了，現在可以了，先關小火，我給大家看看。</p></a>
+				<a href="#00:18:27.08" id="00:18:27.08" class="lt" onclick="jumptoTime(1107, this.id)"><p>肉碎有些還很亂，甚至有些大家看到還是有些生的，不要緊，因為待會拿去煮，現在這個情況就是有些焦香，肉心亦亂了，自然這些肉碎就不會黏牙，等等，我要拿一隻鍋，因為廚房小，東西放到四處都是，煎豬肉的油剩下的也頗多，待會可以拿來炒這個炸菜了，我這個是一次過的，大家可以看到連續的做法，好了。</p></a>
+				<a href="#00:19:34.64" id="00:19:34.64" class="lt" onclick="jumptoTime(1174, this.id)"><p>現在先開大火燒鑊，接著要做什麼呢?</p></a>
+				<a href="#00:19:58.22" id="00:19:58.22" class="lt" onclick="jumptoTime(1198, this.id)"><p>接下來就是炒榨菜，咁呀可以加多少少油啦，令到佢嗱你跟住淨返嗰啲肉碎呢你整到佢，甘香變成脆口都唔怕嘅冇乜所謂嘅，好嗱呢個時候呢夠溫度囉喎，放啲蒜蓉落去先，炒一炒佢爆一爆喎，嗱呢個時候又係啦唔使急呀，炒香啲蒜蓉先，OK，好喇見到啲蒜蓉有金黃色啦，跟住我哋就可以落呢個係榨菜，咁嗱呢個榨菜呢。</p></a>
+				<a href="#00:20:56.47" id="00:20:56.47" class="lt" onclick="jumptoTime(1256, this.id)"><p>我已經浸咗成兩三個鐘頭㗎喇，已經浸咗成兩三個鐘頭㗎喇OK，咁所以呢好淡嘅，大家你估下我跟住落嚟做乜嘢，我諗應該大家都估唔到，好喇嗱炒香咗啲榨菜囉喎，跟住然之後我落去做乜嘢呢，榨菜，大家估唔到呢，點解我切粗粒呢，就係因為要落水煮佢呀嘛，如果呢，唔落水煮唔切粗粒落水煮佢就好快就會軟㗎啦咁煮佢幾耐呢，呢度計埋佢滾水呢我就。</p></a>
+				<a href="#00:21:57.21" id="00:21:57.21" class="lt" onclick="jumptoTime(1317, this.id)"><p>三分鐘ok，睇住佢滾嘅，等佢滾咗先，我等陣間解釋點解我要咁做，唔使調味㗎，豆腐有味，點解我要用凍水呢浸佢兩三個鐘咁咁可能大家會有疑問，咁你唔可以用滾水咩滾水會浸淋佢㗎嘛咁咪變咗冇曬口感囉，大家如果係要做呢個菜買炸菜返嚟記住呀一入門口就第一時間沖洗，乾淨嗰啲辣椒跟住然之後攞落去浸浸清水浸涼水浸佢兩三個鐘頭最好呢，就切咗先切咗先嚟浸呢就更加個效果更加顯著。</p></a>
+				<a href="#00:22:54.29" id="00:22:54.29" class="lt" onclick="jumptoTime(1374, this.id)"><p>都仲未計時呀，好，這個時候我們就上鑊蓋了，差不多了，三分鐘，OK?</p></a>
+				<a href="#00:23:9.84" id="00:23:9.84" class="lt" onclick="jumptoTime(1389, this.id)"><p>因為這個要三分鐘的時間，我盡快長話短說，希望可以捱到，如果不是的話我就要關一下機，不然浪費大家時間，話說我小學是寄宿的，大家知不知道我小學最喜歡去哪裏玩呢?我進去學校飯堂的廚房玩，經常和湖南主廚，我最記得他經常拿著杯酒吃蒜頭，生蒜，生蒜送米酒，經常都走進去，那時候很奇怪，我們學校經常都做一個榨菜肉絲湯，我覺得很正，很好味，不是罐頭的榨菜肉絲，是真正的榨菜肉絲湯，醃出來，煮出來的。</p></a>
+				<a href="#00:24:3.84" id="00:24:3.84" class="lt" onclick="jumptoTime(1443, this.id)"><p>那時候我記憶的味道就是現在，那時候當然記住榨菜的口感，記住肉絲的口感，當時太小就不知道怎樣煮，長大了就知道了，那為甚麼我要切粗粒來煮湯呢?因為這樣煮幾分鐘就可以令到榨菜裏面的精華味道全部發揮出來，揮發出來在湯裏面，我等一下放豆腐，豆腐就能驗出湯味，嘩，我現在說到我自己都流口水了，不是開玩笑，為了令到平衡口感，所以我就要切粗粒，因為煮幾分鐘就會軟。</p></a>
+				<a href="#00:24:47.84" id="00:24:47.84" class="lt" onclick="jumptoTime(1487, this.id)"><p>很多人譬如榨菜蒸肉餅，榨菜蒸牛肉，榨菜蒸肉片，很多時候榨菜就軟了，我覺得那種口感就不是太好了，就是它有少少口感，淡淡的口，但你又吃得出榨菜的那種香味在，嘩，正呀，OK，行不行，其實大家可以看到一個人的廚藝形成其實是和他的人生經歷很有關係的，譬如我為甚麼會懂得煮那麼多東西，第一件事我喜歡吃東西，我又不是受過專業訓練，那我為甚麼知道怎樣煮呢?</p></a>
+				<a href="#00:25:23.84" id="00:25:23.84" class="lt" onclick="jumptoTime(1523, this.id)"><p>是因為我吃過的東西，吃過之後記住那種味道回家就研究下，就是這樣研究下研究下就做了那麼多菜出來，OK，行不行，那我先關機，等一會我要加料的時候我再開機，OK，好了，大家鐘響了，時間到了，這時候我們把豆腐全部放進去，然後把肉碎也放進去，炒勻，這個菜式很適合飯，要很多汁，現在鹽的份量少了一點。</p></a>
+				<a href="#00:26:32.21" id="00:26:32.21" class="lt" onclick="jumptoTime(1592, this.id)"><p>所以我加多一點水，稍為煮一分鐘左右，滾一滾，這樣就好入味了，我就不熄了，因為太短時間了，ok?</p></a>
+				<a href="#00:26:56.58" id="00:26:56.58" class="lt" onclick="jumptoTime(1616, this.id)"><p>然後現在要做什麼呢?就要開始調味了，一茶匙蠔油，我放在盤子裡，因為不夠地方，所以我不給大家看了，我就是說，一茶匙蠔油，然後半茶匙鹽，然後一茶匙糖，輕輕三分一茶匙雞粉，然後豉油兩茶匙，然後老抽半茶匙，好，我給大家看看，這樣，然後做什麼呢?</p></a>
+				<a href="#00:27:59.58" id="00:27:59.58" class="lt" onclick="jumptoTime(1679, this.id)"><p>加生粉一茶匙，一茶匙或者兩茶匙都可以，看大家想吃多稠，加少少水，這個調味就差不多了，就完成了，攪勻它，攪勻它之後倒下去，底部還有少少，先用水弄乾淨它，好，然後煮勻它，稍微收少少水，看來那些水好像我又加多了少少，這兩樣東西大家要立刻收生，不夠的話再加多少少，再加多一匙生粉。</p></a>
+				<a href="#00:29:13.95" id="00:29:13.95" class="lt" onclick="jumptoTime(1753, this.id)"><p>우리�roidBig weighing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:29:21.19" id="00:29:21.19" class="lt" onclick="jumptoTime(1761, this.id)"><p>brew，enced，� часов，fera，conf Shawn，Corin welt，copper，propor</p></a>
+				<a href="#00:29:31.83" id="00:29:31.83" class="lt" onclick="jumptoTime(1771, this.id)"><p>預備，иф</p></a>
+				<a href="#00:29:19.57" id="00:29:19.57" class="lt" onclick="jumptoTime(1759, this.id)"><p>美國，amendments，였，gluten，ب rationale，moms，овор，annya，glich，Amanえる</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:29:33.83" id="00:29:33.83" class="lt" onclick="jumptoTime(1773, this.id)"><p>operator，Electii，Nacional，يono</p></a>
+				<a href="#00:29:21.19" id="00:29:21.19" class="lt" onclick="jumptoTime(1761, this.id)"><p>punishing，� делают，cy 수，ck，covering，factors，Light editing，ability，essential，также sekientras</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:29:19.49" id="00:29:19.49" class="lt" onclick="jumptoTime(1759, this.id)"><p>wicked，whoa，WordТак，iin，miss，我的，這個菜主打多汁，用來拌飯，所以水要多一點，至於後來收水的濃度有多高，要看大家自己覺得效果如何，為什麼我會這樣說呢?不是因為我自己要大頭龜，原因是有些人喜歡多點桃汁，有些人喜歡收乾水就香口一點，為什麼我會加這麼多水呢?因為我兒子喜歡拌飯吃，經常說，老爸為什麼你收水收得這麼乾，沒有桃汁。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:30:25.21" id="00:30:25.21" class="lt" onclick="jumptoTime(1825, this.id)"><p>但我本人喜歡吃乾口，但沒辦法，一手難敵眾口，年輕人喜歡濕潤一點，這個時候可以了，關火，看似很複雜，但完全跟以前的記憶，媽媽做的豆腐完全不一樣，這是很香口，很好送飯的一道菜，我現在裝起它，再跟大家做個總結，你看看，這豆腐是不是很硬，但其實是軟豆腐，所以你咬下去之後，你吃到的芯還是很滑的，OK，行不行?還是那句，因為有鍋頂著，所以我動作怪一點，大家不要介意，地方淺窄。</p></a>
+				<a href="#00:31:37.21" id="00:31:37.21" class="lt" onclick="jumptoTime(1897, this.id)"><p>這個豆腐，正，其實這個湯也不是很多，大家看到，也蓋不過我面，這個時候，想它正一點，大量沖花，好，完成了，完成品了，給大家看看，close up，OK嗎?賣相有否食慾?</p></a>
+				<a href="#00:32:17.67" id="00:32:17.67" class="lt" onclick="jumptoTime(1937, this.id)"><p>好了，這個時候我先做個總結，等等，因為底部很熱，我要捧起它，地方淺插，沒辦法，請大家見諒，好，好，現在來吧，大家看看這個榨菜肉碎煮豆腐，我們小時候常常吃的，但是我這個榨菜肉碎煮豆腐，跟以前媽媽那一代的做法是完全不一樣的，我就吸收了東北人做豆腐的方法，而我發覺這個做豆腐的方式，跟榨豆腐的口感是一模一樣。</p></a>
+				<a href="#00:33:0.11" id="00:33:0.11" class="lt" onclick="jumptoTime(1980, this.id)"><p>經過我兒子的食家認證，因為他常常外出吃飯，他說好吃過外面，我說是呀，因為有蛋包著，變了不只是豆腐味那麼單調，而且這樣，經過我這樣處理，豆腐是不是熟了，就不會再有那種青豆味，OK，大家放心食用，除了保留了豆腐原有的滑，再加上現在這樣做，還有那種焦香感，再加上那些榨菜我是煮過的，變了這個汁裏面。</p></a>
+				<a href="#00:33:39.11" id="00:33:39.11" class="lt" onclick="jumptoTime(2019, this.id)"><p>是真的有榨菜的味道，大家可以想像一下，加在一起，正不正呀，正呀，OK，行不行，那就不跟大家說了，煮完菜當然要吃飯，拜拜，啊，不對，對不起，拜什麼拜都還沒總結，那我又總結一下，哎呀，好累呀，因為這個很大盤，第一，豆腐回來，就先用鹽水浸著它，你不及得上處理的時候，OK，這樣可以放得很久，第二，這些榨菜一買回來。</p></a>
+				<a href="#00:34:18.11" id="00:34:18.11" class="lt" onclick="jumptoTime(2058, this.id)"><p>馬上切絲浸水，行不行，這樣浸兩三個小時，保證它不鹹，但是有那種榨菜的香味，第三，處理豆腐要有兩個程序，第一個就是第一時間就汆水，汆水的時候要加味，為什麼呀，因為加了味，那些豆腐就不只是淡淡的，而是有一點帶有一點鹹味的，OK，接著處理完第一浸的程序之後，第四，就要放入水裏面，第四，就是處理豆腐。</p></a>
+				<a href="#00:34:53.11" id="00:34:53.11" class="lt" onclick="jumptoTime(2093, this.id)"><p>就加蛋下去煎，這樣可以保證豆腐不會煎爛，又煎得很實淨，但是它的心是滑的，哈哈，OK，大家看到那個先頭了，怎樣沒有豆腐，它都不爛的，就因為我加了蛋下去，而且，加了蛋下去之後，豆腐就不只是豆腐的香味，還有蛋的香味，尤其是當你煎到它有差不多一朝香的時候，那種蛋香，大家都知道是多好吃的，是不是聽到都流口水呢。</p></a>
+				<a href="#00:35:28.11" id="00:35:28.11" class="lt" onclick="jumptoTime(2128, this.id)"><p>所以我這道菜就是這麼好吃的意思，比我媽媽那個年代煮的豆腐好吃很多，好了，第五了，就是榨菜呢，爆香完炒完之後呢要加水先煮一煮佢三分鐘，然之後就逐樣材料加返落去，煮，咁大家睇到嘅跟住落嚟煮呢我就冇冚蓋嘅，都係兩三分鐘完事㗎喇，跟住之後最後尾調味打芡，咁就完事啦，ok得唔得，大家自從學識咗呢樣嘢之後呢即係。</p></a>
+				<a href="#00:36:8.05" id="00:36:8.05" class="lt" onclick="jumptoTime(2168, this.id)"><p>煮咗呢個咁嘅豆腐之後呢用咁嘅手法煮嘅豆腐呢，以後你個孫仔一定好鍾意食，就唔好似我以前咁樣，嘩大佬，一見佢整豆腐出嚟我真係受罪咁嘅感覺，但唔好怪，即係因為呢個兒時記憶都係快樂嘅，係咪咁講呀，而家記憶返嚟都係快樂嘅，但係嗰陣時就有少少難受囉，係咪咁講呀，ok咁我唔講啦，我去食嘢啦拜拜。</p></a>
+</div>
+	</body>
+</html>

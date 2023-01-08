@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜蘿蔔燜白鱔/門鱔｜香甜軟滑｜一個讓蘿蔔不會變苦的秘技，只要遵守，每次煮蘿蔔都是清甜軟稔！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kQI4MzOsbYY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜蘿蔔燜白鱔/門鱔｜香甜軟滑｜一個讓蘿蔔不會變苦的秘技，只要遵守，每次煮蘿蔔都是清甜軟稔！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 大家晚上好，今日我想同大家分享一個比較傳統的菜式，或者應該這樣說，香港的水面人以前就比較常常會食，現在我就見好少人煮，今日煮一個什麼菜呢，就是蘿蔔燜鱔，今日我就用了白鱔，我等下解釋為什麼，我先處理了，這個白鱔去淡水魚檔，你想要下半截還是上半截，他會幫你切好，我現在先洗一洗沖一沖水。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>大家見到白色的水，不是污糟水是米水，乾淨的，在沖洗的過程當中，我一路介紹，有什麼呢，薑片、原粒蒜子，然後有芫茜，有蔥，還有切碎的唐芹和蒜苗，做法就不會有蒜苗和唐芹，但是我喜歡食，我媽以前都喜歡食，所以我就用這個，香很多，大家可以試下，蘿蔔，新鮮蘿蔔，用滾刀切，想它快熟，煮短時間就切薄些，如果想口感好些就切大些。</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>我一般都切薄些，就用滾刀切，這裡什麼為之滾刀呢，其實我有很多其他菜式都有介紹過，因為我當大家識，所以我就不做那麼多，這個蒜呢，洗乾淨之後呢咁咪基本上啦咁呀呢度鱔呢大概都係一斤鬆啲到啦咁我就，畀大概，一茶匙嘅鹽啦，跟住然之後，一茶匙嘅糖啦，跟住然之後呢就輕輕少少嘅雞粉啦雞粉呢有除腥嘅作用㗎，少少得㗎啦唔使多嘅。</p></a>
+				<a href="#00:02:58.47" id="00:02:58.47" class="lt" onclick="jumptoTime(178, this.id)"><p>跟住然之後呢就，輕輕，胡椒碎或者胡椒粉啦，跟住然之後麻油啦，然後加少許酒，然後加一茶匙生粉，這個時候我們要加一些薑片一起醃，可能有些吃過水面人做的炆鱔，可能有些朋友會非我這個醃法，其實我這個醃法是南潘順醃法，我等下解釋，慢慢解釋，加少少豉油，OK，這樣就完成了，本來這個鱔，我本身就，其實我才有提到水面人很熟悉這個菜式。</p></a>
+				<a href="#00:04:12.53" id="00:04:12.53" class="lt" onclick="jumptoTime(252, this.id)"><p>原因就是因為，其實本來這個菜就是蘿蔔炆門鱔，門鱔就是一個海鱔，一樣都是白鱔，本來就是這樣做，但是為什麼我今天用了白鱔呢，做的是九五搭八，又說是水面人的菜式，但是又用了白鱔，不是門鱔，為什麼呢?</p></a>
+				<a href="#00:04:42.53" id="00:04:42.53" class="lt" onclick="jumptoTime(282, this.id)"><p>因為以前我們吃的時候，很坦白說，我想大家經過的生活都知道，我做生意的，當然是好的東西就賣出去，剩下的，賣不出去的就自己吃，大家說是不是，以前我們吃的門鱔就小很多，現在我就很難找小的門鱔，全部都很大，所以我就沒辦法了，我只好用白鱔才有那個尺寸，還有白鱔有個特點，就是脆口，其實門鱔也是。</p></a>
+				<a href="#00:05:22.53" id="00:05:22.53" class="lt" onclick="jumptoTime(322, this.id)"><p>小的門鱔，像這些大的，門鱔一樣是脆的，只要我們醃得適宜，處理得適當的話，一樣是脆的，門鱔也可以脆的，不過大條的門鱔就不脆了，兩斤蘿蔔配一斤扇，會不會誇張了一點，其實我自己覺得，我喜歡吃燻的蘿蔔，這個菜式有一個醬料，是用南乳炆蘿蔔，南乳炆蘿蔔?</p></a>
+				<a href="#00:06:3.28" id="00:06:3.28" class="lt" onclick="jumptoTime(363, this.id)"><p>是的，首先醃蘿蔔，讓蘿蔔的水分吸收，盡量要將蘿蔔蘸乾身，我已經說過很多次，一個菜式成功的關鍵就是蘿蔔蘸乾身，如果蘿蔔蘸乾身，這道菜就已經成功了一半，盡量將它們拌乾淨，好，差不多了，隨它吧，我攪拌這個鱔就滲入了藍潘順的做法，就不是純水面人的做法，因為我喜歡這樣吃，其實我這個攪拌法，我跟我以前的爺爺、老爸。</p></a>
+				<a href="#00:07:9.00" id="00:07:9.00" class="lt" onclick="jumptoTime(428, this.id)"><p>爭拗過很久，他一遇見我，本來他很喜歡吃蘿蔔燜門鱔，當時我做家庭的伙頭，他一見我 弄門扇就搖頭，打死都不吃 我說你試試吧，最後他被我的廚藝征服了，他說真的像模像樣 你開得當，當時我十多歲，他有他們傳統的要求，我有我自己的見解，有時沒事的，家人或朋友相處之道，大家將就一下，真的好吃的就留下。</p></a>
+				<a href="#00:07:57.24" id="00:07:57.24" class="lt" onclick="jumptoTime(477, this.id)"><p>不好吃的就繼續改良，攪拌至水分吸收，差不多乾身，然後下一個步驟就開始煎東西，這個門扇可以做煲仔菜，天氣冷的話可以用煲仔煮，唯一就是煎的時候要用鑊煎，炒醬要用鑊炒，其他可以用煲仔煮，等下一個鏡頭見，先跟大家分享怎樣攪拌扇，現在開始製作蘿蔔燜扇，現在我燒了鑊，建煙 落油，先煎好扇，然後就要收細火。</p></a>
+				<a href="#00:09:9.91" id="00:09:9.91" class="lt" onclick="jumptoTime(549, this.id)"><p>然後就放些鱔進去，呢啲線呢就唔好貪方便呀一嘢就倒落去呀要逐塊逐塊放呀因為點解呢，你見到水嘅話呢嗰啲線就煎得唔靚㗎喇</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:0.23" id="00:10:0.23" class="lt" onclick="jumptoTime(600, this.id)"><p>咁樣就煎得唔靚喇，將薑和蔥頭拌勻，大家看到還有少許水，不要倒進去，待會最多只用來當成汁，倒進去炆煮，這時候我們要集齊鍋，讓油都沾過所有的油線，這是煎東西的時候必須要注意的，呢個時候呢我哋就上一上鑊蓋呀唔好理佢，一嚟呢可以加速個時間呢咁而嚟呢就等佢嗰啲油呢唔好彈嚟彈去呀，呢個時候我就畀佢三分鐘啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:54.82" id="00:10:54.82" class="lt" onclick="jumptoTime(654, this.id)"><p>一樣呀細火煎魚呀，三分鐘又三分鐘，咁咪三分鐘之後再見呀，三分鐘響咗啦咁我哋呢就，睇下點先呀，好香呀，咁樣嘅，咁而家呢就反轉去另外一邊繼續煎呀，因為我放咗啲豉油落去呀，咁所以呢佢嗰個色呢就會比較深㗎正常呀，好了，然後呢，我們又要，煎三分鐘，不要理它，繼續慢火，繼續三分鐘，三分鐘之後，我們再和大家分享。</p></a>
+				<a href="#00:12:3.50" id="00:12:3.50" class="lt" onclick="jumptoTime(723, this.id)"><p>看看結果如何，好了 三分鐘之後又響了，我們看看，OK了，先看看，都OK，好 關火，然後，這個，我們就可以，轉個煲，我們拿個煲來炆，將鑊放到另一邊，我們先抹乾淨，這個時候我們就打醬了，沙煲的烤箱時間會比較長，麻煩大家耐心一點，其實這個蘿蔔炆門扇不算太複雜，最主要是要煮好，現在打醬的程序也是非常重要，其他的隨便你怎樣發揮都可以。</p></a>
+				<a href="#00:13:58.09" id="00:13:58.09" class="lt" onclick="jumptoTime(838, this.id)"><p>這個時候差不多了 夠熱了，等我一下 因為傳熱傳得比較慢，煲夠熱後要調小火，因為煲的形狀太窄，開到最大火會令到周圍都很熱，有機會燒爆煲，所以調小火，等於我煲仔飯時跟大家說的意思，對於這個煲來說，大火是火苗頂著煲底，有少少火苗走出來，對它來說就為之大火，這個時候煎煎的油不要浪費，用回它。</p></a>
+				<a href="#00:15:15.10" id="00:15:15.10" class="lt" onclick="jumptoTime(915, this.id)"><p>然後加入薑片，先炒薑片，不要加蒜頭，等薑片出味後才加入蒜頭，冬天食呢啲咁嘅煲呢都幾好嘅，就唔使佢嗰啲魚呢咁快凍呢佢就會生嘅，呢個時候呢就慢慢炒下唔好心急下，畀我花時間同花心思呀，炒到表面有少少金香焦邊就對了，炒醬炒得比較久，炆的時候很快熟，十多分鐘就完成，開始有些焦，再炒一炒，蒜頭都有些焦了。</p></a>
+				<a href="#00:17:19.03" id="00:17:19.03" class="lt" onclick="jumptoTime(1039, this.id)"><p>好，這個時候我們就拿南乳，這些小南乳，很小的，好像腐乳般大，放兩磚，加少許腐乳汁，然後將火腿脆脆的，看到火苗很大，所以我再調小火，炒至南乳很遠，我們都聞到香味才算炒得好，現在不要太快，繼續炒，可以了 有少少焦邊，跟住呢個時候我哋就開始落水啦，呢個蘿蔔唔使炒嘅咩 梗係唔使炒啦，大概放500ml水。</p></a>
+				<a href="#00:19:20.32" id="00:19:20.32" class="lt" onclick="jumptoTime(1160, this.id)"><p>也是500ml，然後加入蘿蔔，好，似乎不够水，再加多一点，这个时候记住不要调味，不要加盐，不要加豉油，谁手多，做得不好吃的话，不要赖我，然后我们加冰糖，大概加一粒半方糖的冰糖，不用加多，加少许就够了，为什么我和大家说这个时候不要调味呢?</p></a>
+				<a href="#00:20:20.52" id="00:20:20.52" class="lt" onclick="jumptoTime(1220, this.id)"><p>尤其是不要加豉油，因为如果大家这个时候加豉油的话，那些萝卜就会酸的，我现在先加糖，那些萝卜就会更加甜的，等一会儿上碟，最后加这些蒜的时候，我才调味，这样整个菜就很和味了，但是如果你现在加调味，加盐，加豉油，尤其是豉油的话，它马上会变酸的，到时候你不要和我投诉，说，Leo，我每样东西都加了，为什么还酸?</p></a>
+				<a href="#00:21:2.52" id="00:21:2.52" class="lt" onclick="jumptoTime(1262, this.id)"><p>为什么这么难吃?</p></a>
+				<a href="#00:21:4.52" id="00:21:4.52" class="lt" onclick="jumptoTime(1264, this.id)"><p>因为你提早调味，ok?行不行?</p></a>
+				<a href="#00:21:7.52" id="00:21:7.52" class="lt" onclick="jumptoTime(1267, this.id)"><p>这个时候也是，滚了之后，我们大概给它八分钟的时间，那些萝卜就一定会腍的，ok?</p></a>
+				<a href="#00:21:15.52" id="00:21:15.52" class="lt" onclick="jumptoTime(1275, this.id)"><p>滚的时候才和它计时，等一会儿滚完八分钟之后，它叫我们再开机，到时候就加些蒜，再调味，再和大家分享，ok?行不行?</p></a>
+				<a href="#00:21:26.52" id="00:21:26.52" class="lt" onclick="jumptoTime(1286, this.id)"><p>那就这样，等一会儿见，好了，大家，八分钟过去了，看看怎么样，咦?还有很多水，不过不要紧，这些萝卜就再炆多一会儿才行，但是这个时候，我们就将这个放下去了，这个，蒜，今日呢我啲蘿蔔係偏多㗎呀其實都幾難揀呀，我都唔想揀咁大舊呀但係都冇辦法最細睇完最細係佢，其實係當做嘅咁呀大家睇下我點解講咗句先係話蘿蔔爭少少呢，中間呢仲有啲白嘅咁邊邊一半透明㗎喇。</p></a>
+				<a href="#00:22:26.13" id="00:22:26.13" class="lt" onclick="jumptoTime(1346, this.id)"><p>咁我哋呢呢個時候呢就睇埋佢啦，再滾一陣啦，呢個時候都唔好唔好調味字呀，咁我哋畀兩分鐘時間佢，兩分鐘ok，兩分鐘之後我哋再睇下點啦，兩分鐘又響咗囉咁呢個時候話仲有好多水呀，呢我哋打個電話啦，跟住然之後呢，呢個時候呢我哋就開始調味啦，多水呀同埋多汁呀咁所以呢我放咗根本嚴啦，糖呀唔使放㗎喇因為先頭已經有啦係咪跟住呢個時候少少嘅雞粉。</p></a>
+				<a href="#00:23:33.08" id="00:23:33.08" class="lt" onclick="jumptoTime(1413, this.id)"><p>試味，差不多了，然後將蒜和茄子，糖茄子放下去，然後再將芫茜放下去，芫茜茄子先放下去，留一點，嘩!滋到周圍都是，這個時候就讓它煮，因為這個鍋會多湯一點點，多汁一點點，為什麼呢?</p></a>
+				<a href="#00:24:24.79" id="00:24:24.79" class="lt" onclick="jumptoTime(1464, this.id)"><p>因為等下燙著它，吃到最後那些汁就差不多沒有了，這個時候就把蔥花放下去，好，可以關火了，吃碗麵，將這個放進去，嘩，這樣一個蘿蔔炆白鱔，白鱔煲就完成了，大家可以看看是不是，嘩，迫迫迫迫，好正呢，給大家看看，因為煲仔的特色就是，就算你關了火，它還是迫迫迫迫的，其實這個菜絕對不困難，絕對不是麻煩的。</p></a>
+				<a href="#00:25:33.84" id="00:25:33.84" class="lt" onclick="jumptoTime(1533, this.id)"><p>但是有兩樣要注意，第一，就是拌鱔的時候，要拌得相對乾身一點，不要加水進去，因為鱔肉不是很吸水的，這是第一點，第二，大家不要覺得鱔很難處理，因為通常你去到魚檔，他們會幫你處理鱔的，現在這個我就用白鱔，其實有另外一個版本，就是用門鱔的，不過我先前都說過，我嫌現在的門鱔太大條，其實我們小時候吃的時候。</p></a>
+				<a href="#00:26:15.84" id="00:26:15.84" class="lt" onclick="jumptoTime(1575, this.id)"><p>因為我們是水上人，買不去的魚才會吃，所以門鱔就相對小一點，它做出來的效果就和白鱔一模一樣，記住了，如果要用門鱔做這個菜的話，就不要選太大條，太大條的那些，整隻手臂那麼粗的那些，真的不行，太大條了，這是第一個要注意的地方，拌鱔，第二個，其實這個菜的難度，唯一就是你怎樣去控制炒醬的火候，大家先前看到的。</p></a>
+				<a href="#00:26:53.84" id="00:26:53.84" class="lt" onclick="jumptoTime(1613, this.id)"><p>我是不是又是和一般家庭的做法很不一樣，很多人就放了醬之後，不斷炒蘿蔔、炒材料，我完全沒有的，我炒完醬之後是怎樣的，馬上放水，其實材料是不應該炒的，譬如說蘿蔔，如果我們去炒的時候，它有一個很嚴重的弊病是什麼呢，就是那些南乳是鹹的，炒了蘿蔔就會沾染到鹹味，那就苦了，大家說是不是，所以在這樣的情況下。</p></a>
+				<a href="#00:27:29.14" id="00:27:29.14" class="lt" onclick="jumptoTime(1649, this.id)"><p>我們是不可以將蘿蔔和醬料一起炒的，記住 否則炆到最後蘿蔔會苦的，好了，我們大阪炆東西，我說過很多次 重中之重就是要炒醬，為什麼要炒醬呢，炆東西為什麼這麼滋味呢，其實是有一個科學的原理的，這個叫焦糖化，大家看到我先頭是不是很氣定神閒，慢慢去炒香薑蒜，然後再慢慢去炒香南乳，其實炒香南乳的過程裏面。</p></a>
+				<a href="#00:28:10.14" id="00:28:10.14" class="lt" onclick="jumptoTime(1690, this.id)"><p>其實我的主要目的就是要製造焦糖化，只要在這個階段製造了焦糖化之後，你再加水下去煲，那些水最後出來的汁是很香的，還有很有鑊氣，鑊氣啊，揮之不去的，洗不掉的 煮不掉的，OK，記住，所以大家要記住，以後就算炆蘿蔔炆什麼都好，你要加醬料不要緊，但是千萬不要將醬料和食材一起炒，記住，尤其是蘿蔔你用醬料一起炒的話。</p></a>
+				<a href="#00:28:48.74" id="00:28:48.74" class="lt" onclick="jumptoTime(1728, this.id)"><p>它會苦的，大家有沒有發覺，經常吃的那些會苦，那我現在說是無謂的，我現在試一下看看會不會有苦味，試一下心，我而家個蘿蔔食落去係好野味嘅，有嗰種醬香味，同其他呢個蘿蔔，好野呀，呢個蘿蔔係唔苦呀，如果大家以前食阿媽煮嗰啲，嗰啲蘿蔔係咪好苦呀，點解好苦呀?因為我攞啲醬嚟炒蘿蔔，記住呀。</p></a>
+				<a href="#00:29:39.59" id="00:29:39.59" class="lt" onclick="jumptoTime(1779, this.id)"><p>所以有時魔鬼盡在細節，你稍為調亂咗調轉咗個程序，嗰啲食味已經完全唔一樣㗎啦，記住呀，嗱咁呢嗰啲鱔呢就即係炆佢之前呢就攞鑊係煎一煎佢啦，三分鐘三分鐘咁就煎六分鐘就夠㗎啦，煎兩邊就夠㗎啦煎香佢就得㗎啦，呢一個呢就係製造嗰個咩嘢呀就梅納反應啦，所以呢喂又焦糖化又梅納反應，你話畀我聽呢個咁嘅蘿蔔炆白鱔煲。</p></a>
+				<a href="#00:30:11.59" id="00:30:11.59" class="lt" onclick="jumptoTime(1811, this.id)"><p>有咩理由唔好味呀?</p></a>
+				<a href="#00:30:13.59" id="00:30:13.59" class="lt" onclick="jumptoTime(1813, this.id)"><p>好啦想佢更加好味咩?</p></a>
+				<a href="#00:30:15.59" id="00:30:15.59" class="lt" onclick="jumptoTime(1815, this.id)"><p>嗱我同大家講，一定要用呢個醬呀，咁呢就攞熟油開佢就得㗎啦，攞熟油溝稀佢，跟住攞嚟揀嗰啲蘿蔔，嘩我而家已經又流口水啦真係冇鬼用呀我，咁就記住囉喎，其實呢個餸就好簡單嘅但係非常之惹味，咁冬天大家都見到啦先頭熄咗火一陣都逼逼迫迫，等陣間呢我一路興住一路食啦，冬天就唔怕會腥呀各樣啦，咁同埋呢而家嗰啲鱔呢咁樣處理呢都仲係脆口嘅。</p></a>
+				<a href="#00:30:56.59" id="00:30:56.59" class="lt" onclick="jumptoTime(1856, this.id)"><p>ok得唔得?好簡單㗎咋呢個，大家不妨試下啦，咁我唔講咁多啦係咁先啦食飯啦喂拜拜，喂就快聖誕節呀唔係呢條片出嘅時候已經係聖誕節啦，咁呀呢條片係預祝呀大家聖誕節快樂啦跟住呢條片出嘅時候，補足聖誕節快樂啦，咁我準備呀聽日呢出去出面因為，三年以嚟呀第一次香港人放監呀聽日呢尖沙咀呢肯定人滿為患，咁呢我就同大家去分享拍啲片咁呀分享呢個香港人嘅喜悅啦。</p></a>
+				<a href="#00:31:36.59" id="00:31:36.59" class="lt" onclick="jumptoTime(1896, this.id)"><p>咁呀係咁囉喎拜拜，拜拜去食飯啦，流緊口水呀拜拜。</p></a>
+</div>
+	</body>
+</html>

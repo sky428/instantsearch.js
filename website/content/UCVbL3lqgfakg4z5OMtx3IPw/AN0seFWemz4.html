@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——涼瓜炒蛋，被我女兒視為全世界最好吃的涼瓜炒蛋，是如何製作的呢？其實好簡單，學懂了『脫水大法』即可，大家可以跟著試做哦。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'AN0seFWemz4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——涼瓜炒蛋，被我女兒視為全世界最好吃的涼瓜炒蛋，是如何製作的呢？其實好簡單，學懂了『脫水大法』即可，大家可以跟著試做哦。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今晚我會和大家分享一道女士們喜歡的菜式，包括我女兒的一道菜式。</p></a>
+				<a href="#00:00:14.18" id="00:00:14.18" class="lt" onclick="jumptoTime(14, this.id)"><p>苦瓜炒蛋，苦瓜炒蛋，各人有各種做法，有專業有不專業，在市面上，在Youtube上充斥著各種做法，今天我用我自己認為對的做法，是一道不會苦的苦瓜炒蛋，是一道不會出水的苦瓜炒蛋，是一道很容易咀嚼的苦瓜炒蛋，是一道令人吃到肉麻不軟的苦瓜炒蛋，有這麼誇張嗎?</p></a>
+				<a href="#00:00:58.06" id="00:00:58.06" class="lt" onclick="jumptoTime(58, this.id)"><p>大家來看看我到底怎樣做，首先雞蛋，因為我女兒喜歡吃，今天我做了12隻，我預計她明天早上做早餐都可以，12隻雞蛋，我先放一旁，不要處理她，苦瓜我隨便買了兩隻，唉，看它便宜，10元一盒，喂大哥，現在很難找10元一盒的苦瓜了，大家說是不是?</p></a>
+				<a href="#00:01:24.62" id="00:01:24.62" class="lt" onclick="jumptoTime(84, this.id)"><p>不過有少少難，不要緊，No problem，OK，首先處理它，一頭一尾，尾部切深一點都不怕，OK，放進去浸水，另外我準備了蔥，因為炒蛋怎可以沒有蔥，對嗎?</p></a>
+				<a href="#00:01:45.50" id="00:01:45.50" class="lt" onclick="jumptoTime(105, this.id)"><p>苦瓜炒蛋其實很簡單，就用蒜蓉、苦瓜、蛋、蔥，就這樣，調味就是鹽糖味，OK，搞定，So easy，然後這些是長條，炒的苦瓜，尤其是苦瓜炒蛋，是用泰國的油苦瓜，聽著，這隻要不叫油瓜，要不叫泰國苦瓜，我叫它泰國油苦瓜，是適合、比雷公作好，雷公作是我們本地的產品，最好當然是江門，但是，雷公作這隻苦瓜只適合炆，炒其實不太適合。</p></a>
+				<a href="#00:02:26.94" id="00:02:26.94" class="lt" onclick="jumptoTime(146, this.id)"><p>因為它糊塗太大，太脆，變了很容易炒斷，炒到一煮煮，即是散掉，變了不太適合炒，如果大家要炒的話，記住是買泰國油苦瓜，OK，行不行，長的苦瓜，我切開兩半，很開胖，大家看到水是白色的，為甚麼，因為我剛剛洗完米，家廚就會明白，基本的消毒殺菌，降濃藥，OK，為甚麼我要切開一半，因為這樣容易，OK，容易切。</p></a>
+				<a href="#00:03:5.58" id="00:03:5.58" class="lt" onclick="jumptoTime(185, this.id)"><p>爛的部分我會在爛的部分切開，為甚麼呢，等下我切走它，容易的，包括我自己，初初切油苦瓜，因為太長又怕切到手，經常切到兩邊對不齊，有什麼辦法呢?就是將它切一半，ok?</p></a>
+				<a href="#00:03:22.22" id="00:03:22.22" class="lt" onclick="jumptoTime(202, this.id)"><p>好，然後我又這樣擺一把刀，大家都知道，這裡這個位置是頂著刀柄的，還有我用的刀全部都很平衡的，前面，刀柄就很輕的，所以我才可以這樣擺，大家不要學我，我經常都說的，我入廚幾十年，沒可能不知道這些安全意識的，好，然後第一步，挖瓜囊，ok?</p></a>
+				<a href="#00:03:50.22" id="00:03:50.22" class="lt" onclick="jumptoTime(230, this.id)"><p>因為要遷就鏡頭，大家不要介意，我盡快的，我將整個過程給大家看了，都是那句話，如果你已經有基礎知識，這些東西不想看的，ok，沒問題，你skip了它就是了，但你沒理由去剝奪一些完全不懂的人，想學的人，去看到底怎樣的，所以我的課程設計就是，首先要滿足所有人的要求，然後你自己按自己的要求，自己的需求，那就選擇來看。</p></a>
+				<a href="#00:04:30.22" id="00:04:30.22" class="lt" onclick="jumptoTime(270, this.id)"><p>你覺得，刨苦瓜這麼簡單的東西，不用我學，那你就skip了它，其實現在網上最簡單，不是說以前，你給錢去學，你想skip它都難，我現在不用錢，學了整個過程，為什麼大家還要嫌三嫌四呢?</p></a>
+				<a href="#00:04:49.22" id="00:04:49.22" class="lt" onclick="jumptoTime(289, this.id)"><p>嫌三嫌四的意思就是說，你有沒有考慮過其實有另一種人的需求的?</p></a>
+				<a href="#00:04:55.22" id="00:04:55.22" class="lt" onclick="jumptoTime(295, this.id)"><p>我作為和大家分享，也希望大家透過我的影片，可以學到多少入廚的東西，那你沒理由阻礙別人去學的，做人不可以這麼自私，對不對?</p></a>
+				<a href="#00:05:9.22" id="00:05:9.22" class="lt" onclick="jumptoTime(309, this.id)"><p>所以我也是剛剛有個最新回覆，喂，你不懂剪片嗎?</p></a>
+				<a href="#00:05:17.22" id="00:05:17.22" class="lt" onclick="jumptoTime(317, this.id)"><p>我是不喜歡剪片，你催促我嗎?為什麼?</p></a>
+				<a href="#00:05:23.06" id="00:05:23.06" class="lt" onclick="jumptoTime(323, this.id)"><p>為什麼我免費提供給你們這麼多資源去學習，為什麼你還要嫌三嫌四，要求多多呢?</p></a>
+				<a href="#00:05:31.82" id="00:05:31.82" class="lt" onclick="jumptoTime(331, this.id)"><p>我真的不明白，大不了，如果我真的不受歡迎，觀眾自然會抵制我，是不是?</p></a>
+				<a href="#00:05:39.02" id="00:05:39.02" class="lt" onclick="jumptoTime(339, this.id)"><p>好了，一般來說，這樣的原事是不是?不是的，這裡有個白邊，其實是一個苦味來源，所以我們這個時候要做什麼?</p></a>
+				<a href="#00:05:48.10" id="00:05:48.10" class="lt" onclick="jumptoTime(348, this.id)"><p>盡量用匙羹刮走那些白邊，刮到它有多薄，這是除苦的第一步，OK，那些囊其實就是苦瓜苦味的主要來源之一，所以盡量要刮得乾淨一些，我希望大家會明白，這個世界甚麼人都有，不要以自我中心為主，我當初決定拍片教人，我經常說，我之所以拍片、拍YouTube、放上網，原因是海外親朋的要求，希望教他們怎樣煮菜。</p></a>
+				<a href="#00:06:36.63" id="00:06:36.63" class="lt" onclick="jumptoTime(396, this.id)"><p>然後，因為有了這個基礎，我沒理由說，毒落落不如中落落，所以我就開放給大家看，我的朋友真的不會煮菜，所以我一定要先滿足他們，一定要整個過程拍完，最好直播，但直播大家就時間不對，這個切好了，刮掉囊，然後怎樣呢?</p></a>
+				<a href="#00:07:12.63" id="00:07:12.63" class="lt" onclick="jumptoTime(432, this.id)"><p>苦瓜就很簡單的切，炒雞蛋的苦瓜，切的要求特別多，平時大家喜歡怎樣切就怎樣切，口薄不一不要緊，因為苦瓜炒蛋，要令雞蛋和苦瓜在最短時間內同熟，這個就是考人的功夫，這個考人的功夫在哪裡來呢?</p></a>
+				<a href="#00:07:41.63" id="00:07:41.63" class="lt" onclick="jumptoTime(461, this.id)"><p>就是刀工上，這個時候我會切2mm，2mm薄切，我給大家看看2mm有多厚，看到嗎?應該這個新鏡頭會追到焦，薄切就是這樣，切到很薄，大家會問，你切到這麼薄，等下會不會炒散炒爛呢?</p></a>
+				<a href="#00:08:7.63" id="00:08:7.63" class="lt" onclick="jumptoTime(487, this.id)"><p>當然不會，因為等下我要做什麼呢?</p></a>
+				<a href="#00:08:10.63" id="00:08:10.63" class="lt" onclick="jumptoTime(490, this.id)"><p>我要做一個脫水大快，大家之前看過我炒苦瓜的片都知道，我很喜歡和苦瓜做脫水，為什麼呢?</p></a>
+				<a href="#00:08:22.63" id="00:08:22.63" class="lt" onclick="jumptoTime(502, this.id)"><p>這些我先前刻意在爛的位置切，現在可以用到，不用浪費，咁呀呢個切兩mm嘅苦瓜啦咁呀大家見到呢我都切得相對唔算慢呀咁大家要留心一下咁如果話大家第一次切呢咁咪要切慢啲啦因為呢個呢，苦瓜呢真係有機會你切到咁薄呢有機會呢係會係切到手嘅咁當然我呢啲習慣入廚嘅就好難切到嘅不過都間唔中呀我已經滿手傷痕㗎啦，畢竟都已經入咗廚幾十年尤其是年輕嘅時候劈手劈過自己斬自己喎跟住然之後劏手劏過自己劏自己喎所以呢理論上我係好怕刀嘅所以大家有時候見到我呢用刀嘅時候都好驚住唔單止因為鏡頭嘅問題另外一個原因呢就係因為我真係畀刀劈過所以好驚仲要自己斬自己神奇。</p></a>
+				<a href="#00:09:33.16" id="00:09:33.16" class="lt" onclick="jumptoTime(573, this.id)"><p>入廚有邊個自己冇切緊自己隻手呀我個七姑姐以前呢就做飯堂嘅火頭嘅佢都成日切親隻手㗎啦我就見到佢嘩大佬成塊指甲批曬出嚟見到我自己都寒咗寒發曬即係即係即係毛管凍呀所以我自己記住千祈唔好所以呢後期呢我就好注意呢隻斬手呢個位我通常用嘅呢我次次呢我見到七姑姐即係年細個啦佢都係切親呢個手嘅，佢都係切親呢個位嘅。</p></a>
+				<a href="#00:10:4.16" id="00:10:4.16" class="lt" onclick="jumptoTime(604, this.id)"><p>咁所以呢我而家大個呢我就就記住佢嘅教訓呀所以呢我就用第二節嚟頂住把刀嘅永遠提都唔超過一cm嘅，咁你問你問我係咪好難切到自己呀係咪先，呢個又係先又唔記得咗嗰個爛嗰個位ok咁同埋同大家講呀即係切呢切呢就係用刀嘅中間嗰個位膠前前至到中間嗰個位咁呢就一定可以切斷嘅ok，咁我就唔學得似嗰啲其他廚房咁樣。</p></a>
+				<a href="#00:10:45.22" id="00:10:45.22" class="lt" onclick="jumptoTime(645, this.id)"><p>咁樣，點解呢因為把刀已經唔係平㗎啦畀我用到，所以我用唔到嗰招嘅，而且我成日都覺得嗰招好容易著緊手，感覺啫，大家都可能會覺得我而家係有機會切親手㗎，記住呀係切兩mm，同埋呢大家見到我淋尾落咗刀之後呢係推一推把刀嘅，咁樣呢就可以保證呢，嗰把刀呢就一定斷啦，OK，就係咁多苦瓜啦呢度大概係12兩到啦ok，12兩到啦咁就配12隻雞蛋即係一兩就配一隻。</p></a>
+				<a href="#00:11:32.06" id="00:11:32.06" class="lt" onclick="jumptoTime(692, this.id)"><p>跟住落嚟做乜嘢呢我抹咗把刀先真係要抹到啦，收埋，漏咗舊添，我呢啲都畀人睇，我係唔剪片㗎啦，有錯誤有咩問題呀，我唔覺得，擺呢個錯誤畀人睇係好收家嘅事，因為其實呢錯誤都係一種學習，我自己覺得呀，如果夾硬話永遠都係成功嘅畀人睇到嘅，咁其實係，自己人啫講真做人點會未試過，撞中吓，唔舒服呀撞中做得唔好嘅時候呀ok。</p></a>
+				<a href="#00:12:16.84" id="00:12:16.84" class="lt" onclick="jumptoTime(736, this.id)"><p>呢啲係我做人嘅態度我有咩怕畀人睇呀，我特登點解要拎佢把刀呢因為我要做一個，炒苦瓜裏面一個好重要嘅動作咁呀如果大家之前睇過我炒苦瓜呢咁咪應該估到我，做啲乜嘢㗎啦ok，苦瓜擺落去咁而家呢就做呢個苦瓜嘅脫水大法啦，咁呢鹽就唔怕放多嘅，1 2 3 4，係呀 你想我快啲脫水就要咁多㗎啦，OK 好 跟住嚟囉。</p></a>
+				<a href="#00:12:51.50" id="00:12:51.50" class="lt" onclick="jumptoTime(771, this.id)"><p>輕輕好溫柔地，攞隻手呢個手指位咁樣撩佢，咁樣撩佢 OK，咁呢個時候呢我哋又要用埋隻眼同埋個鼻，點解呢 因為呢，佢脫水嘅過程呢，會釋放到大量好臭嘅，臭青味嘅，你係好明顯係，好明顯係聞到嘅，跟住完之後呢隻眼要望咩呀，望佢出水 而家係咪一滴水都冇㗎係咪，大家睇下我整完之後會出到幾多水出嚟㗎喎，呢度理論上呢個苦瓜最少要出100cc到150cc水。</p></a>
+				<a href="#00:13:34.22" id="00:13:34.22" class="lt" onclick="jumptoTime(814, this.id)"><p>有冇咁誇張呀 差唔多啦100cc，10兩，10兩姐係幾多呀，10兩姐係380克，唔夠380克，呢個時候呢我哋呢，咁樣，OK 得唔得，輕啲嘅喎 如果唔係呢個時間你用力嘅話會，會咩呀 整斷哂啲瓜㗎喎，開始出水啦，呢個時候開始呢就好強烈嘅臭青味出嚟嘅，我經常說盤子要夠大，12兩的苦瓜，用小盤子也可以。</p></a>
+				<a href="#00:14:26.79" id="00:14:26.79" class="lt" onclick="jumptoTime(866, this.id)"><p>但我都說過很多次，大份醃食物也好，給它足夠的活動空間，其實是很重要的，醃肉是這樣的，你做蔬菜脫水大法，一樣，開始出水了，有水見了，這個時候，苦瓜，就會處於半透明的狀態，然後它會開始軟身，我盡量快一點，但這個時間是由食物決定的，不是由我決定的，我亦不會cut，我堅持不cut的原因，就是希望整個過程給大家看完。</p></a>
+				<a href="#00:15:13.79" id="00:15:13.79" class="lt" onclick="jumptoTime(913, this.id)"><p>整個過程給大家看完甚麼，看完它的質感的變化，ok，現在開始有大約40cc的水出來了，看不看到，青色的，但現在還不夠，要弄到它完全脫水為止，脫水為止是甚麼狀態呢，狀態類似於，大家有沒有包過水餃，水餃的蔬菜，就是弄到脫水的狀態，就好像現在這樣，這個時候它是否軟身了，我們開始用陰力，抓它。</p></a>
+				<a href="#00:16:0.79" id="00:16:0.79" class="lt" onclick="jumptoTime(960, this.id)"><p>陰力也不要太大力，會臭一下就抓一下，是不是，大家很熟悉呢，為甚麼我這麼喜歡用手呢，因為只有手才可以做到這個動作，抓和抄，醃食物也好，脫水也好，都很需要這個動作的，ok，這個時候，我每拿起一身，我就用音力，不是用全力，用音力去握它，這個時候差不多了，脫水處都差不多了，我一用力，開始用力，用音力握它。</p></a>
+				<a href="#00:16:34.70" id="00:16:34.70" class="lt" onclick="jumptoTime(994, this.id)"><p>它就很厲害了，出那些水，好，大家聽到嗎?</p></a>
+				<a href="#00:16:42.70" id="00:16:42.70" class="lt" onclick="jumptoTime(1002, this.id)"><p>這裡指不指100cc?一定不指啦，我給大家看看，給大家一個參考，這裡我估計，150cc以上的，不知大家看不看得到，大概是85cc左右，我又不是很準確，差不多是1-2cc左右，這個時候已經出水了，出水之後，這個大家看到就算了，現在這部機可以移動，用鐵篩隔水，然後沖洗，然後渣水，看到嗎。</p></a>
+				<a href="#00:17:48.98" id="00:17:48.98" class="lt" onclick="jumptoTime(1068, this.id)"><p>沒辦法要買支燈回來，在後面剛好身影遮住照明，如果買支攝影燈回來，可以在前面打光，不用遮住，穩定一點，因為我拍片是用手動的，ISO全部都設定好，所以它不會自動調光，一遮住它就黑了，這樣渣水，為什麼要這樣渣水，因為它放了很多鹽，你不這樣渣水，水出來苦瓜就會很鹹，上一次有人問過，你這樣渣苦瓜脫水。</p></a>
+				<a href="#00:18:34.98" id="00:18:34.98" class="lt" onclick="jumptoTime(1114, this.id)"><p>就減少了營養，減少了苦瓜的元素，其實不是的，現在這個時候，我開始渣完水，然後，這是經驗，用鐵篩反轉蓋住，沖水的時候，苦瓜不會流走，有觀眾問過我，Leo你這樣渣水，就減少了功效和元素，其實不是的，沒有渣走，但是這樣渣水之後，第一可以減少苦瓜的苦味，第二可以減少苦瓜的苦味，渣水的口感更佳，可以嗎。</p></a>
+				<a href="#00:19:28.98" id="00:19:28.98" class="lt" onclick="jumptoTime(1168, this.id)"><p>這裡一邊渣水，一邊沖水，洗瓜，另一邊打蛋，這個過程我都給大家看，為甚麼，家廚的時間安排就是這樣，我現在用的是中size，Medium的湖北紅心蛋，如果你買到Large的，即是Big size的，大家適量地減少雞蛋的數量，一般來說，家庭來說都是用中size的，很少用小size的小蛋，也很少用大size的蛋。</p></a>
+				<a href="#00:20:20.32" id="00:20:20.32" class="lt" onclick="jumptoTime(1220, this.id)"><p>因為中size的蛋剛剛好，即是一人一隻，而且方便一點，份量上就不會超標，超過一個人的份量，容易計數，所以中蛋就比較多人用，然後我們這個時候，就要加調味，調味多少呢?</p></a>
+				<a href="#00:20:40.32" id="00:20:40.32" class="lt" onclick="jumptoTime(1240, this.id)"><p>因為等一下我是不加其他調味的，OK，可以嗎?</p></a>
+				<a href="#00:20:44.32" id="00:20:44.32" class="lt" onclick="jumptoTime(1244, this.id)"><p>所以我調味是多一點的，放一匙鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:50.32" id="00:20:50.32" class="lt" onclick="jumptoTime(1250, this.id)"><p>對了，我炒蛋會放雞粉的，為什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:55.32" id="00:20:55.32" class="lt" onclick="jumptoTime(1255, this.id)"><p>除了蛋的聲音，還可以少許增味，少許就可以了，適量就可以了，有些人說，炒蛋都要放雞粉，有沒有搞錯?</p></a>
+				<a href="#00:21:4.32" id="00:21:4.32" class="lt" onclick="jumptoTime(1264, this.id)"><p>喂，大哥，看你用什麼蛋吧，湖北蛋，紅心蛋，炒出來是漂亮的，但其實蛋味是一般的，好，然後加點油，油可以加多一點，很多人就經常有個疑問，喂，你放蛋放半桶油這麼多，有沒有搞錯?</p></a>
+				<a href="#00:21:23.32" id="00:21:23.32" class="lt" onclick="jumptoTime(1283, this.id)"><p>沒有搞錯，大家想吃滑蛋，還是就這樣想吃西式的炒蛋呢?</p></a>
+				<a href="#00:21:30.32" id="00:21:30.32" class="lt" onclick="jumptoTime(1290, this.id)"><p>OK，如果大家想口感滑一點的話，當然要加油了，好了，我都放漏了些東西，放漏了些什麼?</p></a>
+				<a href="#00:21:40.32" id="00:21:40.32" class="lt" onclick="jumptoTime(1300, this.id)"><p>通常我放少許的胡椒，這樣炒蛋出來，就很惹味，我今日已經在我老婆的病人餐實驗過，這次買的湖北紅心蛋，很紅，紅到不得了，顏色非常之靚，待會我炒起來，大家就知道了，還是多說一句都要說，有些菜真的要多油，如果你覺得它多油，你就不要吃，不要說因為所謂的健康，其實油呢，我這裡真的有話要說，以前我都不肯定。</p></a>
+				<a href="#00:22:37.66" id="00:22:37.66" class="lt" onclick="jumptoTime(1357, this.id)"><p>大家猜不猜到我老婆的病人餐有甚麼元素，她現在正在吃的一個叫生酮療法的餐單，我問醫生，我可不可以加肥豬肉進去，醫生就馬上舉起大拇指，你喜歡可以加上去，她接受到就行了，然後我再問，那可不可以多油，她說多油就對了，這個餐單就是這樣，即是甚麼呢?我只是想說這個世事是無絕對的，不要經常為了多油、少油去爭辯。</p></a>
+				<a href="#00:23:13.66" id="00:23:13.66" class="lt" onclick="jumptoTime(1393, this.id)"><p>而且始終我個人的飲食，健康飲食的認知或者知識，就是少吃多滋味、多吃壞肚皮，均衡飲食，不要偏食，這個炒蛋我應該是一個多月前做了一次，不是一個多月，上一次是甚麼?</p></a>
+				<a href="#00:23:32.66" id="00:23:32.66" class="lt" onclick="jumptoTime(1412, this.id)"><p>午餐肉炒蛋，是嗎?</p></a>
+				<a href="#00:23:33.66" id="00:23:33.66" class="lt" onclick="jumptoTime(1413, this.id)"><p>多久之前的事?翻看我的片來看，多久之前的事?</p></a>
+				<a href="#00:23:38.66" id="00:23:38.66" class="lt" onclick="jumptoTime(1418, this.id)"><p>我兩個月才吃那麼多，你想怎樣?</p></a>
+				<a href="#00:23:42.66" id="00:23:42.66" class="lt" onclick="jumptoTime(1422, this.id)"><p>是嗎?這樣就叫多油了?</p></a>
+				<a href="#00:23:45.66" id="00:23:45.66" class="lt" onclick="jumptoTime(1425, this.id)"><p>還有，為甚麼我這麼勤力，這麼多菜式，我的心態就是盡量要做到，這個發好了，大家又嫌我沉味，但其實有時候我想給大家看看，另外就是說，這個蔥浸了很久，它的皮就有少許死皮，炒蛋當然要切蔥，其實我想給大家看看整個過程，其實都是那句，你不喜歡看這部份的，或者你覺得無所謂的，你就不要看這段囉，是不是，多麼簡單。</p></a>
+				<a href="#00:24:40.23" id="00:24:40.23" class="lt" onclick="jumptoTime(1480, this.id)"><p>你只要switch了它，這樣就已經搞定了，對不對，但是因為你的要求，然後滿足你的要求，然後別人的初學者，哦，那是不是別人沒有人權，是不是別人沒有權利去觀摩這個過程，是不是這樣，喂，有得給你選擇，你不去選擇，然後強迫別人去滿足你的要求，我覺得這些人，這樣的心態真的不行，不要說網上世界何其壯大。</p></a>
+				<a href="#00:25:11.19" id="00:25:11.19" class="lt" onclick="jumptoTime(1511, this.id)"><p>這個世界都很大，很多人的，不要只看著自己，是不是這樣說，再加上，我現在這樣的決定，我都是基於這個市場的考慮，為什麼呢，因為真的有這些人，大家看到回覆，罵我的人多，但是，讚我的人都更多，而讚我的人裡面，最多的不是我煮東西很厲害，而是說，我真正找到想學煮菜的地方，你說得很詳細，怎樣怎樣。</p></a>
+				<a href="#00:25:42.79" id="00:25:42.79" class="lt" onclick="jumptoTime(1542, this.id)"><p>喂，真的有這些市場的，我不是隨便決定要這麼長的時間，OK，那大家，有些人說我長氣，說這些廢話，但是，我也知道有很多人是因為我說這些廢話，是其他的影片不會有人說的，所以才喜歡看我的影片，這些叫什麼，市場學上面叫做產品異化，每個人只知道蘋果很厲害，不懂得原來蘋果用了一招叫做產品異化，所以他就這麼賺錢。</p></a>
+				<a href="#00:26:21.79" id="00:26:21.79" class="lt" onclick="jumptoTime(1581, this.id)"><p>我假假地，以前也是做營銷部，即是市場部的，這些基本知識，我沒理由不知道，這個也給大家看，切蔥，炒蛋很快，有人說，幾十分鐘還沒出菜，怎麼搞的，餓死了，怎樣怎樣，喂，大哥，沒有人叫你看這個，說真的，我是一邊做一邊說，其實和真實的時間，大家只要入過廚有經驗就知道，根本上是沒差別的，是不是，那又何須去執著。</p></a>
+				<a href="#00:27:7.36" id="00:27:7.36" class="lt" onclick="jumptoTime(1627, this.id)"><p>我留一點點尾部，待會用來點絕，這個點絕的位置，大家可做可不做，我之所以要做，原因是因為，我要拍片嘛，好，把蔥放進去，好了，搞定了，OK，然後攪拌它，基本上，苦瓜炒蛋的前期功夫就做完了，OK，行不行，好，接著就下一個short見，這個步驟應該大家都很清楚，由這個怎樣去和苦瓜脫水，接著怎樣去發蛋、切蔥。</p></a>
+				<a href="#00:28:9.30" id="00:28:9.30" class="lt" onclick="jumptoTime(1689, this.id)"><p>等下見，先跟大家分享怎樣和苦瓜脫水，怎樣發蛋，我現在開了燒鑊器，終於這隻中式鑊要出場了，為甚麼今天要用中式鑊呢，因為除了炒蛋之外，等下我會煎湯魚，因為湯魚太大了，我想煎多點，所以要用中式鑊，我現在開火燒鑊，其實你想炒東西炒得好吃，想煎東西煎得好，所有的口訣都是由甚麼開始，大火燒鑊開始。</p></a>
+				<a href="#00:28:49.66" id="00:28:49.66" class="lt" onclick="jumptoTime(1729, this.id)"><p>OK，那我就先講講苦瓜，大家看看，我的苦瓜已經脫水後浸泡了十多分鐘，然後我把它全部拿乾，OK，行不行，這樣苦瓜才好吃，就不要見水，現在燒到冒煙了，接著下油，等等，油不夠多，因為等下要預炒蛋，大概加三湯匙，這樣大家就不要說，哎呀，你又加一整罐油，當然不是，好，這個時候要攪拌，然後繼續燒，攪拌均勻油。</p></a>
+				<a href="#00:29:44.98" id="00:29:44.98" class="lt" onclick="jumptoTime(1784, this.id)"><p>大家看見嗎，我攪拌油的動作，不論是用生鐵鍋，中式炒鑊，或者是韓式炒鑊，我都會做這個動作，這個是基本的，因為這個動作，可以視為一種叫做滑鑊的技巧，滑鑊有甚麼用呢，就是令到材料下鑊的時候，更加容易炒得起，OK，大家看看，起煙了，還未夠，再燒多一會兒，再燒多一會兒，不要心急，OK，然後加少許蒜頭，然後將所有的苦瓜全部加進去。</p></a>
+				<a href="#00:30:42.55" id="00:30:42.55" class="lt" onclick="jumptoTime(1842, this.id)"><p>然後這個時候加一匙糖，這樣就甚麼都不用了，只要加一匙糖，這個時候我們主要是要炒到苦瓜接近七成熟的狀態，正常來說，炒苦瓜是不應該放那麼多油的，我現在放那麼多油的原因是什麼呢?</p></a>
+				<a href="#00:31:14.69" id="00:31:14.69" class="lt" onclick="jumptoTime(1874, this.id)"><p>原因是我預先等待炒蛋用的，好，這個時候差不多了，然後我們就蓋上鍋蓋，鍋蓋就是掛鉤的位置，放了它下來，蓋上它，大概多久呢?大概是二、三十秒左右，OK?這個過程是必須的，大家幫我數吧，其實苦瓜炒蛋不是很難的，為什麼我先前用了二十多分鐘去跟大家說法蛋，跟大家說怎樣去和苦瓜脫水，因為這個才是關鍵。</p></a>
+				<a href="#00:32:9.87" id="00:32:9.87" class="lt" onclick="jumptoTime(1929, this.id)"><p>反而不是炒的過程，OK?行不行?</p></a>
+				<a href="#00:32:12.87" id="00:32:12.87" class="lt" onclick="jumptoTime(1932, this.id)"><p>炒的過程反而相對地比較容易很多，當然我再說一次，我不是因為多話想多說廢話，所以才給大家看，好了，可以了，我不是想給大家看看，聽我說廢話，而是給大家看看我鏡頭的過程，那個質感的變化，好了，這個時候可以下蛋了，你看看有多少蛋，如果我不放那麼多油，是炒不起來的，炒蛋有很多種技巧的，現在我推動雞蛋。</p></a>
+				<a href="#00:33:8.68" id="00:33:8.68" class="lt" onclick="jumptoTime(1988, this.id)"><p>大家看到鑊上基本上沒有雞蛋，因為我早就放多了油，還有鑊燒得夠，如果我是…，我現在還在用大火，OK 還在用大火，這個炒蛋階段跟我一般…，之前跟大家介紹的炒蛋技巧有少許分別，為甚麼呢，因為這是中式的炒鑊，鑊底是尖的，這個時候我們要抽起它，然後拿，然後…，開始攪拌，一樣，用鑊尖攪拌，用鑊鏟尖攪拌。</p></a>
+				<a href="#00:33:56.00" id="00:33:56.00" class="lt" onclick="jumptoTime(2036, this.id)"><p>OK，這個時候有少許不夠油，我再放多一點油，炒蛋真的不可以少油，大家喜歡吃的，當然你說不應該這樣炒，OK，沒問題，只不過大家的口感不一樣，是吧，到時你就不要說為甚麼你炒的蛋那麼滑，為甚麼我炒的蛋是合實的，分別就是你敢不敢用油，還有，說真的，現在我還在用大火，我唯一降溫就是要用手，大家也可以理解為甚麼我近期…。</p></a>
+				<a href="#00:34:36.92" id="00:34:36.92" class="lt" onclick="jumptoTime(2076, this.id)"><p>我現在年紀…我都說過，我年紀大了，我不是那麼…，這個時候可以翻一翻，跟滑蛋蝦仁有少許分別，這個時候我攪拌，我現在用的鍋子是大火，因為鍋子比較重，我現在用的是大火，因為鍋子比較重，為甚麼我近期多用了韓式炒鍋，或者不是中式炒鍋，為甚麼呢，原因就在這裡，因為這個鍋子重，我經常要抽起鍋來降溫，大家入慣廚房的都知道。</p></a>
+				<a href="#00:35:18.68" id="00:35:18.68" class="lt" onclick="jumptoTime(2118, this.id)"><p>不是大小火就可以降溫，最快捷的方法當然是，立刻抽起鍋來炒，welling，Power</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:35:29.32" id="00:35:29.32" class="lt" onclick="jumptoTime(2129, this.id)"><p>transition，apert resulting，luckily，omer</p></a>
+				<a href="#00:35:31.34" id="00:35:31.34" class="lt" onclick="jumptoTime(2131, this.id)"><p>steer yeter，nose</p></a>
+				<a href="#00:35:29.50" id="00:35:29.50" class="lt" onclick="jumptoTime(2129, this.id)"><p>urpose，anca，Pract� Arsen，assassination，schreibenımız，اط ethnicity</p></a>
+				<a href="#00:35:31.90" id="00:35:31.90" class="lt" onclick="jumptoTime(2131, this.id)"><p>огод outreach，adequate</p></a>
+				<a href="#00:35:31.68" id="00:35:31.68" class="lt" onclick="jumptoTime(2131, this.id)"><p>Não，Rahmen，incentives，acements</p></a>
+				<a href="#00:35:31.86" id="00:35:31.86" class="lt" onclick="jumptoTime(2131, this.id)"><p>abil Aujourd therapist，pect navigation，אומר，我要 försö accordance</p></a>
+				<a href="#00:35:32.04" id="00:35:32.04" class="lt" onclick="jumptoTime(2132, this.id)"><p>lamp，utilis Hung，disgr trapped，蛋記得一定不能炒全熟，現在這個蛋大概九成熟，我手真的不夠力，大家看看，我炒的苦瓜炒蛋的質感是不是很漂亮，記住，最主要是蛋不能反過來炒，炒到差不多熟，才可以稍為反一反，這個步驟跟客話打蝦仁差一點點，我給大家看看鍋底，炒完蛋就是這樣，這樣才算OK，但如果炒完蛋鍋底黏著就不行。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:36:51.87" id="00:36:51.87" class="lt" onclick="jumptoTime(2211, this.id)"><p>這個要靠火候控制和放油多少，等我灑些蔥在上面，再做一個總結，好，先拉過去，大家對這個炒蛋有否食慾呢?</p></a>
+				<a href="#00:37:27.14" id="00:37:27.14" class="lt" onclick="jumptoTime(2247, this.id)"><p>是不是很正呀?</p></a>
+				<a href="#00:37:30.14" id="00:37:30.14" class="lt" onclick="jumptoTime(2250, this.id)"><p>是不是呀?</p></a>
+				<a href="#00:37:32.14" id="00:37:32.14" class="lt" onclick="jumptoTime(2252, this.id)"><p>大家不要介意我這麼嘮叨，重覆又重覆一些技巧，第一，這個炒蛋要跟苦瓜脫水，只有脫水後，這樣炒苦瓜炒蛋，出來的口感才是很明顯，咬下去的苦瓜是爽口的，而且可以沒那麼苦，大家也看到，我也是用12兩的苦瓜，即是380克左右，我用了150cc的水，有很多人說，這樣會否會低了療效呢?</p></a>
+				<a href="#00:38:22.14" id="00:38:22.14" class="lt" onclick="jumptoTime(2302, this.id)"><p>是會低了，這是事實，但沒有大家想像的那麼多，我們很多時候都是這樣，做人不應該看著兩個極端，而是忠容之道，要平衡各方的利益，譬如說，如果你苦的，又沒口感的，哪有人吃呀?</p></a>
+				<a href="#00:38:43.14" id="00:38:43.14" class="lt" onclick="jumptoTime(2323, this.id)"><p>如果你不苦，但口感又非常好，當然會多人吃，會多人喜愛，問題就來了，你受得苦，不代表所有人都受得苦，很多人吃蛋，吃蛋的滑，我現在這裡有，但那些苦瓜是軟的，又沒人喜歡，我現在這樣做，這樣出水後，那些苦瓜就會爽口，為甚麼會爽口呢?</p></a>
+				<a href="#00:39:7.14" id="00:39:7.14" class="lt" onclick="jumptoTime(2347, this.id)"><p>因為我將水弄出來，脫水後，紋理就會緊緻了，令蔬菜纖維更緊緻，自然咬下去，會很有感覺，這個菜之所以好吃，多些人吃，除了健康之外，當然有口感，滑蛋有滑蛋，苦瓜有爽口的爽口，可以嗎?</p></a>
+				<a href="#00:39:39.14" id="00:39:39.14" class="lt" onclick="jumptoTime(2379, this.id)"><p>第二樣東西，燒鑊的口訣，不只是煎魚有用，炒東西、炒蛋，都是這樣炒，大家也看到，我是否燒鑊燒得很厲害?</p></a>
+				<a href="#00:39:50.14" id="00:39:50.14" class="lt" onclick="jumptoTime(2390, this.id)"><p>是呀!</p></a>
+				<a href="#00:39:51.14" id="00:39:51.14" class="lt" onclick="jumptoTime(2391, this.id)"><p>大家明白嗎?</p></a>
+				<a href="#00:39:53.14" id="00:39:53.14" class="lt" onclick="jumptoTime(2393, this.id)"><p>希望大家跟著這條片一起做，雖然前半部份很長，很長時間，但我希望大家可以真正領悟到炒一碟好吃，大家看到蛋的質感多好嗎?</p></a>
+				<a href="#00:40:10.14" id="00:40:10.14" class="lt" onclick="jumptoTime(2410, this.id)"><p>很多人炒出來一定會爛掉，說真的，我作為食家，我真的吃不下，可以嗎?</p></a>
+				<a href="#00:40:19.14" id="00:40:19.14" class="lt" onclick="jumptoTime(2419, this.id)"><p>不跟大家說這麼多，希望大家喜歡我這個炒法，我女兒喜歡吃，她說，老爸，天下間最好味的苦瓜炒蛋就是你炒的，當然這是有感情成分，但我也很有信心，你們笑著一起做，都是很好吃的，可以嗎?</p></a>
+				<a href="#00:40:40.14" id="00:40:40.14" class="lt" onclick="jumptoTime(2440, this.id)"><p>不打擾大家了，我要炒下一道菜了，再見。</p></a>
+</div>
+	</body>
+</html>

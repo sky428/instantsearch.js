@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蓮藕燜腩仔，只要跟著做，十尺外就能讓人食指大動！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VYvhFmmW1og',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蓮藕燜腩仔，只要跟著做，十尺外就能讓人食指大動！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚想同大家分享另一道菜式。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>又係對住隻鑊搞邊個?</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>今晚想整咩呢?</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>整蓮藕燜腩仔。</p></a>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>我呢個方法同好多人所理解唔一樣。</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>大家睇下我點做。</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>首先放幾塊薑片，跟住放啲我隨說起嘅寶貝青花椒。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>跟住落啲八角。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>我而家整緊呢個過程唔單止係隨說起咁簡單，仲要等佢有啲香料味。</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>放三粒花椒夠曬㗎啦。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>跟住而家放好喇喎。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>直接成塊腩肉未切嘅，掟佢落去。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>跟住呢，有呢個蓮藕，我又放埋落去。</p></a>
+				<a href="#00:01:36.00" id="00:01:36.00" class="lt" onclick="jumptoTime(96, this.id)"><p>咁呢兩樣嘢放咗落去之後就可以滾喇，煮佢幾耐呢?</p></a>
+				<a href="#00:01:52.28" id="00:01:52.28" class="lt" onclick="jumptoTime(112, this.id)"><p>煮它20分鐘，當炆煮，可以嗎?</p></a>
+				<a href="#00:01:58.28" id="00:01:58.28" class="lt" onclick="jumptoTime(118, this.id)"><p>先把它煮熟，其實蓮藕炆腩仔很多人喜歡吃，我想說的是家廚和職業廚房之間，是兩種完全不一樣的方法，我現在這個方法改良了少少職業的方法，然後再在家廚上使用，我為何要先煮熟豬肉，大家都知道煮熟豬肉後，我一般，大家有看我都知道，這樣就隨時可以，為何這次我加八角和蓮藕一起煮呢?</p></a>
+				<a href="#00:02:59.28" id="00:02:59.28" class="lt" onclick="jumptoTime(179, this.id)"><p>其實我想縮短製作的時間，大家都知道蓮藕炆不了一個小時，你不用指望可以吃，如果我除雪氣的話，你不用15分鐘，不用完全除雪氣，所以我將這兩樣東西結合在一起，一般家廚很少會放八角和花椒去炆，但職業是會的，大家亦會發覺職業廚房做的蓮藕炆腩仔很香，因為放了香料，所以在這情況下，我將家廚和職業合二為一，我現在這樣做，保證在最短時間內可以炆好腩仔。</p></a>
+				<a href="#00:03:54.28" id="00:03:54.28" class="lt" onclick="jumptoTime(234, this.id)"><p>有足夠的味道和足夠的口感，蓮藕炆腩仔之所以多人吃，除了它香之外，因為豬肉炆得很軟，肥肉完全不覺得它肥，肥而不膩，很軟，很軟熟，甚至有些高超的廚師可以做到入口即溶，我現在這個方法就是結合了家廚的限制和職業的做法，大家聽到職業的做法，當然要打仗，沒錯，這次打仗方面，我用了三種佐料，薑片，我喜歡連皮一起。</p></a>
+				<a href="#00:04:42.28" id="00:04:42.28" class="lt" onclick="jumptoTime(282, this.id)"><p>當然正常是不連皮，為什麼我會連皮呢?因為我的胃是寒的，連皮對我的胃有益處，然後十粒八粒的蒜頭，原子蒜，我不是拍散了，原粒的，然後有紅蔥頭，大就兩粒，小的就三粒，有了這三樣東西之後，這個…，炆腩仔最主要用南乳醬去炆，一會兒我打個醬就打個南乳醬出來，我之前在炆牛腩那裡都跟大家講過，炆東西其實很簡單。</p></a>
+				<a href="#00:05:32.63" id="00:05:32.63" class="lt" onclick="jumptoTime(332, this.id)"><p>你不需要顧及其他，那些你不需要看火，計準時間 它自動熄火就可以了，OK 行不行，不用理它，最重要的就是打好醬，這個是南乳 待會我會打醬，拿薑蒜和紅蔥頭，也有師傅會加少許麻糬，類似是柱候醬，我今天就跟大家分享純粹南乳醬的形式，因為不是那麼多家庭家廚會有麻糬醬，我麻糬醬都要很難才找到，因為麻糬醬不是那麼多間有得賣。</p></a>
+				<a href="#00:06:15.63" id="00:06:15.63" class="lt" onclick="jumptoTime(375, this.id)"><p>有時它散賣我覺得它不靚，有時它一瓶一瓶那些，我看它的效果又不是好像很好，所以就比較難買，一般家庭很少會用麻糬醬的，暫時介紹這麼多，記住了，這個現在放了花椒八角 薑片下去，煮了多久 20分鐘，我煮好了之後，我等一下打醬怎樣處理下半部分，我再跟大家說，淡淡的，大家已經炆煮了20分鐘，現在先將整塊豬腩肉拿起。</p></a>
+				<a href="#00:07:4.19" id="00:07:4.19" class="lt" onclick="jumptoTime(424, this.id)"><p>然後放涼，稍為用冷水沖洗，然後將蓮藕撈起，隔走香料，然後就可以進入下一步，我怎樣撈起就不給大家看了，我主要開機講這個步驟是怎樣做的，我已經切好所有的肉，現在就燒鑊，做什麼呢?就是做下一個很重要的步驟，也是炆煮，我個人覺得是一個非常重要的步驟，就是炒醬，我這個就是採用Jimmy廚師的手法，而不是跟家廚一樣。</p></a>
+				<a href="#00:07:59.19" id="00:07:59.19" class="lt" onclick="jumptoTime(479, this.id)"><p>上次做蘿蔔牛腩，大家應該見過我怎樣做，不知道大家有沒有看過，如果有看過可以重溫一下，想像一下我接下來怎樣做的步驟，現在已經燒了鑊了，然後就平均小火，先放薑片爆香，大家還記不記得為什麼要先放薑片呢?</p></a>
+				<a href="#00:08:29.19" id="00:08:29.19" class="lt" onclick="jumptoTime(509, this.id)"><p>因為薑片是最受火的，最難炒乾的，所以我們就先放薑片，也重溫一下，老師傅說，你打仗的時候，要醬是好味野味，你一定要那些料頭炒乾身，有那麼乾就得那麼乾，ok，這裡我也不打算剪了，看過的可以skip掉，skip到去落南乳的部分，如果沒看過的，我希望大家耐心一點，去看一下我怎樣去炒乾那些料頭，那些料頭就薑、蔥、蒜。</p></a>
+				<a href="#00:09:17.46" id="00:09:17.46" class="lt" onclick="jumptoTime(557, this.id)"><p>那薑、蔥、蒜的次序也有不同，先落薑，剛剛說的，現在已經在炒了，在煎了，然後就落蒜頭，最後才落蔥頭，為什麼要這樣做呢?因為三種材料的受火程度是不一樣的，受熱的過程的長短是不一樣的，所以我們第一時間一定要先落薑片，薑片就要炒到變金黃，見到差不多有脫水了，我們才落蒜，又見到蒜炒到金黃，才最後才落蔥。</p></a>
+				<a href="#00:09:52.46" id="00:09:52.46" class="lt" onclick="jumptoTime(592, this.id)"><p>如果你最先落蔥或者一起落，你會發覺蔥頭炒到燶了，薑都未乾身，甚至蒜頭都未乾身，在這樣的情況下，你當然是不要食，ok，行不行?</p></a>
+				<a href="#00:10:6.46" id="00:10:6.46" class="lt" onclick="jumptoTime(606, this.id)"><p>大家看一下我怎樣做，我現在做一個close up給大家，大家可以留意一下薑的texture，在我這個炒的過程當中，到底它是有什麼變化的，ok，行不行?</p></a>
+				<a href="#00:10:23.46" id="00:10:23.46" class="lt" onclick="jumptoTime(623, this.id)"><p>耐心一點看一下，這個是炆東西成功的關鍵，亦都是提升大家去炆煮肉類的時候，那個味道的關鍵，我現在這個做法，以前我看過一些老師傅的天書，亦都加上他親口傳授，講個要點，所以我才有這個做法出來的，大家現在見到薑開始有些金黃，中間開始有少少乾身，但呢個時候仲未夠，點為之乾身呢，炒薑炒到上次都講過。</p></a>
+				<a href="#00:11:11.25" id="00:11:11.25" class="lt" onclick="jumptoTime(671, this.id)"><p>炒到佢自己識縮，捲埋一齊，咁就為之啱，但係你到佢捲埋一齊，你先至落蒜就會過熟，即係過乾或者甚至炒窿，所以我哋要留意，要炒到好似呢片咁，我俾大家睇下，呢個膠夾比較麻煩，我俾大家睇下個效果，睇唔睇到呢一邊已經金黃色，其實已經係可以OK架啦，呢邊仲有少少，咁所以呢，喺呢個時候呢，我哋就開始呢。</p></a>
+				<a href="#00:11:46.25" id="00:11:46.25" class="lt" onclick="jumptoTime(706, this.id)"><p>就可以加反轉啲薑之後呢，我哋就可以加呢個係蒜頭啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:52.25" id="00:11:52.25" class="lt" onclick="jumptoTime(712, this.id)"><p>咁記住我炆嘢呢係用原粒蒜呀，原粒蒜子呀</p></a>
+				<a href="#00:12:1.25" id="00:12:1.25" class="lt" onclick="jumptoTime(721, this.id)"><p>咁其實好多時候呢，大家即係有個疑問，譬如話炒菜，我點樣可以炒到呢，啲菜同肉一齊熟呀咁樣，咁大家都知道要走油呢回事係咪，咁同樣道理呢，其實好多食材呢，佢會有好多嘅，程度同埋需要嘅過程，長短都有不一嘅，咁所以喺我哋要落鑊嘅時候呢，首先我哋要知道熟悉嗰種食材，譬如話，薑同蒜，會唔會個時間生熟嘅時間唔一樣呢，或者煎乾嘅時間唔一樣呢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:41.25" id="00:12:41.25" class="lt" onclick="jumptoTime(761, this.id)"><p>係呀唔一樣呀，薑最長呀嘛，咁所以我哋就要落咗薑先，OK得唔得，咁然之後呢，蔥頭呢就最容易炒窿嘅，佢最唔受火嘅，咁所以呢我哋最後炒好咗啲蒜頭，我哋先放蔥頭，咁就啱啦，而家我畀大家睇下嗰啲蒜頭過，咩嘢為之叫做好嘅效果，大家睇唔睇到呢邊，呢邊呢邊呢邊嗰啲蒜頭，係呢邊，蒜頭呢邊呢，這邊已經是金黃。</p></a>
+				<a href="#00:13:23.20" id="00:13:23.20" class="lt" onclick="jumptoTime(803, this.id)"><p>跟住呢邊就生，即係另一邊得 呢邊就唔得，OK 得唔得，好啦 但係而家都差唔多啦，咁差唔多嘅時候，我哋就最後尾放埋個蔥頭落去，在這個過程中要勤力攪動，雖然不可以心急，但要勤力攪動，為什麼呢?因為材料有機會，同一邊受熱，另一邊受不到熱，一邊焦，一邊就生了，好了，現在薑炒到像這樣，嘩!這個就夠味了。</p></a>
+				<a href="#00:14:11.73" id="00:14:11.73" class="lt" onclick="jumptoTime(851, this.id)"><p>夠惹味了，可以嗎?</p></a>
+				<a href="#00:14:13.73" id="00:14:13.73" class="lt" onclick="jumptoTime(853, this.id)"><p>差不多了，這個時候就要放南乳了，先調小火，慢慢放南乳，南乳這次我用了一斤比較鬆的肉，一斤比較鬆的蓮藕，所以我放大概半磚的南乳，就已經足夠了，半磚的南乳已經夠炆三斤的東西了，大家想要顏色的話，可以放一點點的南乳汁，南乳很難打散，所以現在加少許水，輕輕一點，大約10cc，留意炒焦鍋。</p></a>
+				<a href="#00:15:55.55" id="00:15:55.55" class="lt" onclick="jumptoTime(955, this.id)"><p>怎樣炒到醬為之好呢?</p></a>
+				<a href="#00:16:1.55" id="00:16:1.55" class="lt" onclick="jumptoTime(961, this.id)"><p>大家看著鏡頭，現在是不是看到我加了少少水?</p></a>
+				<a href="#00:16:8.55" id="00:16:8.55" class="lt" onclick="jumptoTime(968, this.id)"><p>大家看到水在滾，要炒到怎樣呢?</p></a>
+				<a href="#00:16:13.55" id="00:16:13.55" class="lt" onclick="jumptoTime(973, this.id)"><p>就好像上一次炒豬油醬，要炒到它結塊，結到自己黏在一起，分開的一塊塊的，OK，現在當然一看下去，有辦法還不行，因為炒醬是打，我們叫它打醬，或者炒醬，打醬好像現在烏克蘭一樣，炒醬是炆東西裏面的重中之重，所以我會花多少少時間，我已經講過很多次，其實炆東西很簡單，只要打醬打得好，打得好味的話，用滾水煮都好吃。</p></a>
+				<a href="#00:17:2.55" id="00:17:2.55" class="lt" onclick="jumptoTime(1022, this.id)"><p>炆東西就是這麼簡單，而不是要放很多醬料，不停炒，炒當然要炒，不過不用放那麼多調味，那麼多醬料，而且我這個方法可以是，我現在是炒醬看著，其餘的時間我調好火，調好時間就OK了，大家看不看到，開始凝結了，很香了，現在很香的南乳走了出來，大家嚐一嚐，OK，搞掂，你想，我兒子經常說，為什麼你做的炆腩仔這麼香，香到整屋都香。</p></a>
+				<a href="#00:17:49.50" id="00:17:49.50" class="lt" onclick="jumptoTime(1069, this.id)"><p>真的整屋都香，就是這樣，現在炒好了，我不關火，直接倒這些材料進去，不用炒的，很多家居，很多媽媽，在這個時候就不停炒，不用炒，為什麼呢，因為入味不是靠炒，入味是靠炆的，OK，現在加水，記住，炆的入味不是靠炒那一下，不是靠你不停炒材料，是靠你打醬打得好味，和炆的過程當中，十多分鐘已經夠吸味，加水加多少呢。</p></a>
+				<a href="#00:18:45.50" id="00:18:45.50" class="lt" onclick="jumptoTime(1125, this.id)"><p>我現在大概已經加了600cc，大家會問，我每次都要加這麼多，當然不是，視乎你材料，我們家廚有一個傳統，古老的方法是什麼，加水加到差不多過面就可以了，這個是亞麻時代已經教的方法，現在水差不多過面了，這樣就可以了，好了，這個時候我們馬上可以調味，什麼，現在調味，是呀，我炆的材料很入味，好了。</p></a>
+				<a href="#00:19:25.50" id="00:19:25.50" class="lt" onclick="jumptoTime(1165, this.id)"><p>我加了南乳，所以要計算它的鹹味，經常三斤的材料，就要加三茶匙的鹽，但是因為我加了南乳，所以我現在只需要加兩斤就可以了，OK，然後加少少雞粉 再加少少雞粉 再加少少雞粉，再說一次 雞粉作用等於煎魚廚房的高湯，鹽和糖 糖不要加太多，在蘿蔔牛腩有朋友問過，你用大火炆 行不行 軟軟的 會否柴皮，我告訴你 是不會柴皮的 為什麼呢。</p></a>
+				<a href="#00:20:28.17" id="00:20:28.17" class="lt" onclick="jumptoTime(1228, this.id)"><p>因為我們會加冰糖，冰糖大概是兩至三粒方糖體積的冰糖，然後我們要加豉油，1 2 3 4，4茶匙的生抽，然後 視乎你自己喜歡 我就加2茶匙的老抽，那完事了沒有 當然還沒有完事，為什麼我炆東西很香呢，除了因為南乳本身的酒香之外 你想加強它的香氣，我建議大家不要用紹酒 用廣東米酒，這樣就酌量了 酒。</p></a>
+				<a href="#00:21:42.17" id="00:21:42.17" class="lt" onclick="jumptoTime(1302, this.id)"><p>然後我自己喜歡加我個人的signature，其實每個廚師都會有自己的signature，我炆東西的signature就是加幾滴的美極，基本上現在這個就調味完成了，然後怎樣呢 現在等它滾，然後我們就調40分鐘，剛才我不是用了20分鐘嗎，所以現在加上去就用40分鐘，40分鐘。</p></a>
+				<a href="#00:22:29.27" id="00:22:29.27" class="lt" onclick="jumptoTime(1349, this.id)"><p>我也調好爐就是40分鐘，30分鐘OK，好了 基本上這樣就不用理它了，直至它炆好為止，但是為了方便 為了它不要黏底，30分鐘之後過來看一看火，OK 基本上就是這樣，然後我就可以做其他東西了，我調好鬧鐘 30分鐘之後來看火，然後這樣就可以吃了 是不是很簡單，等一會我炆好之後再給大家看看效果如何，OK。</p></a>
+				<a href="#00:23:17.27" id="00:23:17.27" class="lt" onclick="jumptoTime(1397, this.id)"><p>好了 大家40分鐘響了，可以關火了，大家看看賣相好不好，期間我就過來看一次火，因為要攪一攪它 如果不是黏底，顏色行不行，現在聞到整個廚房都是藍宇童酒香，OK 接著我們關火之後，放些蔥花上去 放些蔥段上去，拌勻它，這樣就搞定了 一餐，其實大家不要經常怕炆東西，我覺得炆東西比炒東西還要簡單，因為雖然炆東西是需要時間。</p></a>
+				<a href="#00:24:10.27" id="00:24:10.27" class="lt" onclick="jumptoTime(1450, this.id)"><p>但是其實最主要集中的火力在哪裡呢，就是這個打醬 我先拿碟子，只要打好醬 基本上你時間夠準 時間夠鐘就熄火，這樣就已經搞掂，同埋大家最好就炆到少啲水 唔好咁多水，大家睇唔睇到 咁太多水的話 當然都好食，不過就冇咁惹味 點解呢，因為佢啲水乾到咁上下嘅時候 就會產生焦糖化嘅現象，在炆嘢嚟講 焦糖化係一個非常之重要嘅一個效果。</p></a>
+				<a href="#00:24:58.18" id="00:24:58.18" class="lt" onclick="jumptoTime(1498, this.id)"><p>如果你能夠將啲汁收返乾少少嘅話 產生少少嘅焦糖化嘅話，咁嗰嘢炆餸就更加惹味，咁當然啦 你話我想多啲汁送飯得唔得 得，咁你寧願係點呢 炆完之後再加返水 藥類再加返少少水，去開返稀嗰個汁 會更加好，點解呢 因為佢經過焦糖化嗰個處理之後，咁然之後呢 你再係開返嗰個稀佢呢，佢變咗保留咗焦糖化嗰種味道。</p></a>
+				<a href="#00:25:37.18" id="00:25:37.18" class="lt" onclick="jumptoTime(1537, this.id)"><p>咁我成日都講 炆嘢點解咁好食呢，就係因為有焦糖化個現象，咁如果你做唔到焦糖化個現象嘅話呢，咁自必然呢 炆嘢就唔好食㗎啦，你炒嗰陣時炒到天花龍鳳都冇用㗎 OK 得唔得，咁我而家呢就約略總結下啦，你等陣啦 哎 結咗舊，字幕由Amara.org社區提供，好，我現在就略略總結一下，ok，行不行?</p></a>
+				<a href="#00:26:13.26" id="00:26:13.26" class="lt" onclick="jumptoTime(1573, this.id)"><p>第一，炆東西的重點是在於你炒醬炒得好不好，你放多少醬，放什麼醬料，不是一個重點，重點是你炒的醬炒得好不好，而這個炒醬在很多人的印象當中，尤其是家廚很多時候都是，我一放完蠔油或是南乳就立即放些料下去炒，這樣就為之炒了，不對的，所以為什麼通常家廚做的炆東西未必個個都做得這麼好吃，通常做得好吃的家廚。</p></a>
+				<a href="#00:26:56.26" id="00:26:56.26" class="lt" onclick="jumptoTime(1616, this.id)"><p>他都會做到一個效果，就是焦糖化，其實炒醬亦都是一個焦糖化現象，ok，行不行?</p></a>
+				<a href="#00:27:6.26" id="00:27:6.26" class="lt" onclick="jumptoTime(1626, this.id)"><p>因為你經過這個焦糖化處理之後，你再去炆的話，那個醬就特別香濃，我現在這個炆腩仔，我可以告訴大家，距離五米以外你已經聞到我的，嗨!</p></a>
+				<a href="#00:27:25.46" id="00:27:25.46" class="lt" onclick="jumptoTime(1645, this.id)"><p>炆腩仔的香味，我兒子經常問我為何這麼香，還有一個故事，我兒子以前還可以帶飯回學校，以前可以回學校，現在疫情沒了，他每次在飯店燉飯時，同學經常問他，你做甚麼這麼香，為何弄到整個飯店都香，可想而知我這個炆腩仔的香程度，為何這麼香，一句話說完，就是要做到焦糖化的效果，焦糖化的效果就是要炒醬，即是炒南乳醬。</p></a>
+				<a href="#00:28:7.62" id="00:28:7.62" class="lt" onclick="jumptoTime(1687, this.id)"><p>所以我覺得這個菜特別香，可以嗎，第二就是，其實你炒好醬後，基本上加熱水就可以了，你看我不停加水，不炒甚麼也不做，加材料就行了，就是這麼簡單，第三就是，很多人有疑惑，例如上次的豬油牛腩，蘿蔔牛腩，有朋友問，你這麼大火炆，會柴皮的，其實要令它不柴皮，有很多種方法，一個就是加冰糖，第二個大家看不看到，我大飯所有的肉類。</p></a>
+				<a href="#00:28:52.38" id="00:28:52.38" class="lt" onclick="jumptoTime(1732, this.id)"><p>就算是凍肉生肉，新鮮肉類，我都會汆水，汆水的過程有兩種方法，一種叫冷水汆水，一種叫熱水汆水，我之前都介紹過，如果你想肉香更強，你就用熱水，滾水的情況下加肉，肉會更結實，肉香會更香，但如果你想嫩滑，就要加冰糖，你就要用冷水去汆水，即是你一落水 未開火就掟定個肉落去，等佢慢慢升溫去煮熟啲肉先 得唔得，咁呢兩個咁嘅汆水法 到底個分別。</p></a>
+				<a href="#00:29:43.28" id="00:29:43.28" class="lt" onclick="jumptoTime(1783, this.id)"><p>除咗係香味呀 肉味呀 同埋口感嘅分別之外呢，其實更加重要嘅呢 就係，其實呢 炆嘢呢 就通常呢，或者係煲湯嘅時候呢，通常就係用熱水汆水法，如果係炒嘅 譬如話我炒嘅豆呀，譬如話我炒嘅小炒肉啦，咁我就會用冷水汆水法 或者係梅窩肉，通常炒嚟講係非常之強調，嫩滑嘅口感，OK 唔可以太硬嘅，但炆就唔同啦。</p></a>
+				<a href="#00:30:15.28" id="00:30:15.28" class="lt" onclick="jumptoTime(1815, this.id)"><p>因為炆呢 你加咗好多香料 同埋加冰糖，甚至乎加草果落去呢，係會令到嗰啲肉係會腍嘅，我為咗加快時間 同埋呢 加快個效果，我呢 就通常都係用大火去炆嘢嘅，從來未比食家投訴過話我柴皮嘅，OK 關鍵係你個時間嘅總和，同埋你落咗啲咩材料落去嘅啫 得唔得，咁就總結到呢度啦，咁呀 喂 梗係整完嘢就要食飯啦 係咪呀。</p></a>
+				<a href="#00:30:46.28" id="00:30:46.28" class="lt" onclick="jumptoTime(1846, this.id)"><p>咁就唔講咁多啦，今日好簡單，記住 炆嘢 炒醬係最緊要嘅，其他天花龍鳳嘅嘢都唔緊要嘅，你只要炒好個醬，哪怕你落滾水落去煮呢 都係好食嘅，OK 得唔得，好啦 去食飯啦。</p></a>
+				<a href="#00:31:1.28" id="00:31:1.28" class="lt" onclick="jumptoTime(1861, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

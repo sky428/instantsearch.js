@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜萵筍炒燒肉｜香滑惹味好送飯｜製作簡單新手都容易上手</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LJbWzTANDWI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜萵筍炒燒肉｜香滑惹味好送飯｜製作簡單新手都容易上手</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家看看這個，蝸筍炒燒肉，可以嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:27.02" id="00:00:27.02" class="lt" onclick="jumptoTime(27, this.id)"><p>希望大家喜歡，大家想知道怎樣做嗎?</p></a>
+				<a href="#00:00:32.02" id="00:00:32.02" class="lt" onclick="jumptoTime(32, this.id)"><p>接下來耐心觀摩一下，我到底怎樣做，怎樣炒，其實這個很方便，亦非常適合城市人的生活，為甚麼呢?</p></a>
+				<a href="#00:00:45.02" id="00:00:45.02" class="lt" onclick="jumptoTime(45, this.id)"><p>因為即使你晚了，只要有大間超級市場，都可以買到燒肉和蝸筍，大家想知道怎樣做的話，一起去看片吧，大家晚上好，今天想和大家分享一個甚麼菜式呢?</p></a>
+				<a href="#00:01:10.02" id="00:01:10.02" class="lt" onclick="jumptoTime(70, this.id)"><p>其實是一個很簡單，但我們家中很喜歡吃的菜式，就是甚麼呢?</p></a>
+				<a href="#00:01:16.02" id="00:01:16.02" class="lt" onclick="jumptoTime(76, this.id)"><p>就是蝸筍炒燒肉，首先要買燒肉回來，我建議大家買燒腩仔，即是不帶骨的那些，一來便宜些，二來可以切成一條條，沒有骨的，切好備用，如果大家不喜歡切細條，可以切成細片，視乎大家喜歡，然後當然要有蝸筍，為了配合燒肉，所以我這裡也是切粗條，至於怎樣做蝸筍，我都有兩三條片，介紹怎樣起蝸筍，怎樣批蝸筍。</p></a>
+				<a href="#00:02:4.02" id="00:02:4.02" class="lt" onclick="jumptoTime(124, this.id)"><p>和蝸筍的原本樣貌是怎樣，我這裡就不給大家看了，我想一拍過，盡量令大家對這個菜式的步驟有認識，首先我正在燒鑊，但我忘記介紹材料，所以我先關火，現在燒它見煙，見煙之後落油，處理甚麼先?</p></a>
+				<a href="#00:02:33.02" id="00:02:33.02" class="lt" onclick="jumptoTime(153, this.id)"><p>當然是處理燒肉，因為處理完燒肉可以原鑊和蝸筍汆水，這樣可以節省時間，即是不用洗鍋，還有可以節省油份，鍋筍就變得很好味，即是口感就很好，稍為見煙，我現在和燒腩仔先把酒油切好，經過這樣處理的話，這個燒腩就非常非常惹味，一定要令到它盡量出現焦香感，即是煎一煎酒油就令到它表面有些焦香感，這樣炒回來的隔夜燒肉也好。</p></a>
+				<a href="#00:03:33.46" id="00:03:33.46" class="lt" onclick="jumptoTime(213, this.id)"><p>新鮮燒肉也好，都會很好味，基本上大家處理，譬如是火腩，冬瓜火腩，枝竹火腩，或者是火腩炆油椎，油椎大家知不知道是甚麼，海蛇的一種，鱔的一種，鰻魚的一種，基本上都是這樣和酒油處理，這個時候翻一翻它，不要只煎一邊，盡量，大家見到，開始有些焦香感，這樣就對了，經過這樣處理的燒肉就特別好味，其實這個過程是甚麼。</p></a>
+				<a href="#00:04:20.46" id="00:04:20.46" class="lt" onclick="jumptoTime(260, this.id)"><p>製作味精，知不知道，又製作味精，是的，這樣處理就可以帶出燒肉的味道出來，而這個味道當然是包括氨基酸，然後等一會，和鹽一混合，就變成谷酸氨鴨，是不是，就是味精，OK，現在可以了，我就，稍微，等等，這樣很慢，還是粗魯一點，大家鏡頭後面看不到我怎樣夾，現在這樣就可以了，然後開大火，直接加水，然後加鹽糖味，一匙鹽，一匙糖，一匙雞粉。</p></a>
+				<a href="#00:05:45.23" id="00:05:45.23" class="lt" onclick="jumptoTime(345, this.id)"><p>大家如果跟隨我的都知道，這樣汆水可以令蔬菜特別脆綠，加兩三片薑片，煮滾後放料去汆水就可以了，醃鹽糖味，大家是舊的當然認識，知道我的用意在哪，新的朋友就不知道，我希望跟大家再簡介一下，鹽就是味道，糖是保持更多的醃綠素，不要讓它流失，雞粉的酵素可以勾出脆綠，原本沒那麼脆綠，我加雞粉可以令它脆綠些，是這三樣東西。</p></a>
+				<a href="#00:06:40.23" id="00:06:40.23" class="lt" onclick="jumptoTime(400, this.id)"><p>等一會兒水滾了我再跟大家分享，水滾了一會兒，放鹽糖味，油，用原本的鍋，大家看看變化，現在沒那麼綠，等一會兒綠到差不多就會綠一些，這就是雞粉在這個過程的作用，基本上吃窩筍有兩種吃法，一種是吃它的爽，另一種是吃它的滑，視乎大家要什麼口感，大家看到嗎?現在我放出來，大家看著畫面的變化，顏色的變化，是不是比先頭我放下去時更綠。</p></a>
+				<a href="#00:07:32.23" id="00:07:32.23" class="lt" onclick="jumptoTime(452, this.id)"><p>這就是雞粉的作用，所以不要經常爭論，你放雞粉不健康，其實雞粉有很多種作用，比味精多些作用，先前我說到吃口感有兩種，一種是吃爽，一種是吃滑，我想兩種中間落墨，又滑又爽，可以嗎?</p></a>
+				<a href="#00:07:57.94" id="00:07:57.94" class="lt" onclick="jumptoTime(477, this.id)"><p>當然可以，基本上，蝸順這回事，你只需要，它一轉色，它和炒西芹是一樣的，只需要一轉色，它就可以食用，所以，如果大家要吃偏向爽口的話，就在這個時候立即撈起，如果想又爽又滑，就可以再煮久一點，但都有同一個基本原則，就是不要讓它大滾，一大滾的話就完全軟了，因為等一下還要炒，好了，現在差不多了，大一點滑。</p></a>
+				<a href="#00:08:44.34" id="00:08:44.34" class="lt" onclick="jumptoTime(524, this.id)"><p>但基本上都是脆的，我先關火，我過一過冷河，我轉過來給大家看，我怎樣過冷河，還有怎樣偷懶，然後整個浸下去，鍋子因為有鹹味，所以稍微沖一沖，這個蝸順，稍微開水沖一沖，讓它快點降溫，通常炒菜有這個過程的原因，就是因為想它再脆一點，然後燉一下，燉出水氣，然後現在，鍋子這邊開大火燒，一樣，記住。</p></a>
+				<a href="#00:09:37.14" id="00:09:37.14" class="lt" onclick="jumptoTime(577, this.id)"><p>我們所有中式，在家廚來說，其實就算不是家廚，都是要背這個口訣，就是什麼?</p></a>
+				<a href="#00:09:45.14" id="00:09:45.14" class="lt" onclick="jumptoTime(585, this.id)"><p>燒鑊，大火燒鑊，見煙落油再見煙，然後炒東西就下料炒，繼續，如果是酒油就繼續大火炒，然後如果是煎的話就收小火，記住，這個口訣，不論是專業廚房，還是家廚都要的，但是因為家廚那個爐具，相對就沒那麼熱，所以我沒那麼大火力，所以我們燒鑊的時間就會比較長，現在開始出煙了 我再燒久一點，這個程度大家是可以做得到的。</p></a>
+				<a href="#00:10:21.31" id="00:10:21.31" class="lt" onclick="jumptoTime(621, this.id)"><p>但是如果想更加多鑊氣的話，我們再燒一燒，現在煙大一點了，然後加一點油 少許就有兩茶匙，因為燒肉本身都有油，是不是，再燒一燒，再等一等 為甚麼，因為我要更加好的鑊氣，然後加少許蒜蓉，這個時候不要馬上加材料，先炒一炒 看到有金黃色就行了，這個時候我才會，這個時候我聞到很香的鑊氣，好 這個時候。</p></a>
+				<a href="#00:11:9.11" id="00:11:9.11" class="lt" onclick="jumptoTime(669, this.id)"><p>我們就開始調味了，不要加燒肉，調味的時候不要加燒肉，為甚麼，因為燒肉是鹹的，你再加味道就很鹹了，這裡大概一斤左右，所以我這裡加鹽，最低限度都要加一斤鹽，如果大家想不要那麼鹹，就加三分二斤，糖一樣 同樣比例 一斤，這個時候我們加少許雞粉，喜歡加就可以 不喜歡加都可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:43.71" id="00:11:43.71" class="lt" onclick="jumptoTime(703, this.id)"><p>不過如果想學我那麼野味，那麼翠綠的話就一定要加，拌勻它</p></a>
+				<a href="#00:11:54.71" id="00:11:54.71" class="lt" onclick="jumptoTime(714, this.id)"><p>拌勻完之後，然後將燒肉，放進去，燒肉，全都放進去，好，這個時候就很簡單了，來一個，下酒，無論你炒魚還是炒肉，炒萵筍一定要下酒，因為下酒之後和沒有下酒，萵筍的味道是差九條街遠的，我老婆本來不喜歡吃萵筍，不喜歡吃油麥菜這些，因為它太重菜青味，但是經過我的烹調之後，她就逢人都說你吃，很好味的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:53.24" id="00:12:53.24" class="lt" onclick="jumptoTime(773, this.id)"><p>很正的，很香的，這個時候我們又打一點芡下去，如果大家一餐飯煮幾個菜的話，就好像我這樣，預先做個芡粉，這個留給她其他用途，然後放些青蔥，最後當然是畫龍點睛，在邊邊放少許生抽，單單這個放生抽畫龍點睛，這個做法是老一輩的師傅經常都會做的，我跟大家說你放了生抽和沒有放生抽，整個炒菜的味道是完全不同的，尤其是肉混合菜的做法。</p></a>
+				<a href="#00:13:59.48" id="00:13:59.48" class="lt" onclick="jumptoTime(839, this.id)"><p>這樣就完成了，是不是很快就脆了，基本上就是這樣一回事，這個又爽口又有野味，又有鑊氣的萵筍炒燒肉，這樣就完成了，所以有時候我們不是說買燒臘回來，不只是吃燒臘，其實燒臘可以延伸下去製作很多菜式，大家看看這隻鑊乾不乾淨，我整理一下碟子再做總結，雖然這個菜很簡單，其實都很適合城市人的生活習慣，因為很快。</p></a>
+				<a href="#00:14:52.80" id="00:14:52.80" class="lt" onclick="jumptoTime(892, this.id)"><p>而且超級市場都可以買到，去大超級市場，不是什麼超級廣場，它本身有燒臘檔，很多時候你晚點去，它反而有些便宜的特價貨，大家都應該清楚的，去慣去熟的都知道，希望大家有一個比較好的想法，我現在就總結一下，其實這個鍋筍炒燒肉就很簡單，唯一比較麻煩的就是要花時間去和鍋筍去去皮，這條片我都知道有時候有些長的。</p></a>
+				<a href="#00:15:40.77" id="00:15:40.77" class="lt" onclick="jumptoTime(940, this.id)"><p>但有些過程我一定會給大家知道，包括怎樣去處理蔬菜，但始終你做得多的話都會有少少的煩厭，如果是新來的朋友，我會在說明留一條連接，給大家看我怎樣初步去處理鍋筍，鍋筍原本的樣子是怎樣的，大家可以去見識一下，這個菜我經常都說很簡單，其實真的很簡單，大家買了燒肉回來稍為修改一下，就變成這個條狀。</p></a>
+				<a href="#00:16:25.57" id="00:16:25.57" class="lt" onclick="jumptoTime(985, this.id)"><p>或者切薄片都可以，然後鍋筍切的時候就配合燒肉的形狀，因為我切的是條型的燒肉，所以我就把它變成粗條型的鍋筍，如果大家切的時候是薄片的燒肉的話，鍋筍就改成薄片，就好像我之前炒班球、炒班片、青炒、蒜蓉炒的鍋筍，那些切一片片，闊身一點的，薄身一點的，其實我們怎樣去收材，那個食材其實主要是看你怎樣配合其他的食材。</p></a>
+				<a href="#00:17:9.57" id="00:17:9.57" class="lt" onclick="jumptoTime(1029, this.id)"><p>或者當時你想要怎樣做，這個第一，第二，燒肉要記住，不是買回來就這樣炒就好吃，一定要有，還要煎到盡量有金香，它散發出來的那種味蕾，不得了，我現在又...</p></a>
+				<a href="#00:17:32.37" id="00:17:32.37" class="lt" onclick="jumptoTime(1052, this.id)"><p>又要吞口水，真的好吃，那我試一下現在的窩筍到底是甚麼口感，相當好，我再炒一下，這個窩筍又變軟了，又不好吃，現在我剛剛好是軟到最後的階段，可以有滑的感覺，我就要這個感覺，要做到這個效果，在汆水的時候要配合炒的時間，那你就要看一下你炒的時候的時間有多長，大家記住了，不要...其實我們很多時候，烹飪的東西其實是前期後期配搭。</p></a>
+				<a href="#00:18:17.61" id="00:18:17.61" class="lt" onclick="jumptoTime(1097, this.id)"><p>好像我們拍照一樣，就是你前期做得好，不代表你出來的成品一定是最好，你前期做得好，你還要預計做後期的空間，這樣前後期配搭，你才可以做到一個最完美，相對完美的效果出來的，記住了，所以我們和窩筍汆水的時候，我們想要甚麼口感，那時候我們就要決定，決定的時候，汆水的時間長短還要配合炒的時候的時間長短，OK，行不行。</p></a>
+				<a href="#00:18:51.61" id="00:18:51.61" class="lt" onclick="jumptoTime(1131, this.id)"><p>這條片就給大家見識一下，看到我到底怎樣前面去處理，配合後面的時間去處理，OK，基本上就是這麼多，調味方面很簡單，都是鹽糖味那些，我連蠔油都沒有放，是不是，但有一點我要特別和大家提醒，窩筍一定要放酒，如果你不放酒的話，你吃到的只會是草青味，是每個人都不喜歡吃的，但如果你放了酒之後，尤其是米酒。</p></a>
+				<a href="#00:19:27.61" id="00:19:27.61" class="lt" onclick="jumptoTime(1167, this.id)"><p>它的酒香不得了，和窩筍的味道是差九條街遠的，OK，行不行，我希望大家明白，很多時候就是這樣，不和大家說了，差不多了，就這樣了，拜拜。</p></a>
+				<a href="#00:19:47.61" id="00:19:47.61" class="lt" onclick="jumptoTime(1187, this.id)"><p>去吃東西了。</p></a>
+</div>
+	</body>
+</html>

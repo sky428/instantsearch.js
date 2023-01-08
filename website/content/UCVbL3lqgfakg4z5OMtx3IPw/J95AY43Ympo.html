@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——薑汁燒牛肉，簡單直接惹味，不需要技巧，看著影片跟著步驟做，就能達到某日本快餐連鎖店的味道，唯一需要注意的是控製生熟程度，可改成豬肉味菜式！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'J95AY43Ympo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——薑汁燒牛肉，簡單直接惹味，不需要技巧，看著影片跟著步驟做，就能達到某日本快餐連鎖店的味道，唯一需要注意的是控製生熟程度，可改成豬肉味菜式！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好﹗，我做的竹筍，剛剛發表的竹筍是不是很繁複，是不是很麻煩，對呀，好吃的東西就是這麼麻煩，我最近發表的絲瓜，是不是很平凡，即是，喂，大哥，平時從小吃到大，用不著你教，是不是，很平凡，是不是，今天呢，所以今天呢，我就和大家做一個，既簡單，但大家又不會經常吃的，一個菜式，其實呢。</p></a>
+				<a href="#00:00:37.63" id="00:00:37.63" class="lt" onclick="jumptoTime(37, this.id)"><p>它是一個半日本的菜式，那，大家是不是很喜歡吃吉野的，尤其是年輕人，是不是，大家有沒有想過，和風牛肉是怎麼來的呢，其實所謂的和風牛肉，一定程度上，其實它是中華料理來的，即是，日本人就說，這些是中華料理，但是我們華人呢，就說這些是日本料理，因為日本傳開來的，但是其實呢，當初呢，這個所謂的和風牛肉，或者是即是。</p></a>
+				<a href="#00:01:18.13" id="00:01:18.13" class="lt" onclick="jumptoTime(78, this.id)"><p>其實都不是和風牛肉，是薑汁牛肉，薑汁牛肉，或者是薑汁豬肉，其實呢，是中國廚師發明的，不過就不是中國發明，真是日本的中國廚師，那後來呢，傳回來中國，或者傳回來華人區，那個個都以為這是日本菜，其實不算是，ok，那為什麼個個都說，這個是日本菜呢，因為它要用到一個，日本人才會有，即是經常用的調味料，就叫味噌。</p></a>
+				<a href="#00:01:50.13" id="00:01:50.13" class="lt" onclick="jumptoTime(110, this.id)"><p>那但事實上呢，味噌這家東西呢，不是味噌，sorry講錯了，味淋，那其實味淋，到底是什麼來的呢，味淋在，即是我們華人的角度來講，其實味淋就很簡單，我們自己都可以調配出來的，什麼來的呢，糖、豉油、酒，三樣東西，按比例，適當的比例，調和在一起，就會變成這個，味淋汁的了，ok，那所以說，其實這道菜呢。</p></a>
+				<a href="#00:02:20.13" id="00:02:20.13" class="lt" onclick="jumptoTime(140, this.id)"><p>都有些和，中國人是有些關係，華人是有些關係的，那好啦，那我說了這麼大堆廢話，怎麼弄呢，今晚呢，我就要弄這個薑汁牛肉，很簡單的，材料，我買兩包，大概一磅左右的肥牛，接著，洋蔥一隻，原版呢，就是用普通的洋蔥，不過小弟個人就很喜歡吃青洋蔥，因為我覺得青洋蔥甜一點，and then，香一點，and then，顏色好一點。</p></a>
+				<a href="#00:02:52.13" id="00:02:52.13" class="lt" onclick="jumptoTime(172, this.id)"><p>ok，那薑到底是怎麼弄呢，暫時不用理它，首先呢，就要處理這個薑，不過處理薑之前呢，我想又吐槽一下，今天呢，有個網友，就是有個觀眾，又在說我的砧板，又說我都是用了十幾年了，又不見了，黑黑黑黑黑黑黑黑黑黑黑，黑黑黑黑黑黑黑黑黑黑，我們中國，香港人用的砧板，基本上90%都是獻木砧板，這些是獻木砧板。</p></a>
+				<a href="#00:03:32.33" id="00:03:32.33" class="lt" onclick="jumptoTime(212, this.id)"><p>獻木砧板的特色是，一濕水，濕的地方會變黑色，乾的地方，大家看到這裡，會不會有人說這裡是髮毛，而且我其實，我小弟，除了是影片裏面，經常性說，一切完東西，馬上要刮砧板，這是基本常識，除了經常說之外，我在鏡頭後面，三天不賣兩天，這些邊邊，我是用洗潔精洗的，因為切肉多會有油份，油份黏著黏著，就越來越髒。</p></a>
+				<a href="#00:04:10.33" id="00:04:10.33" class="lt" onclick="jumptoTime(250, this.id)"><p>你說我是不是要，偶爾要做清潔，就用洗潔精，梳打粉，抹邊邊，抹完之後，是白色的，有木色當中夾著白色的，這些位置，未乾身，就變成這樣，這些不是髒的，我昨天才洗完，用洗潔精洗的，有另一位觀眾，更搞笑，他說我，這樣的砧板要保養，要放在微波爐，叮三分鐘，我想爆粗，微波爐，每個砧板都有一個T-out，放在微波爐。</p></a>
+				<a href="#00:04:56.33" id="00:04:56.33" class="lt" onclick="jumptoTime(296, this.id)"><p>你是否想爆炸，這句說話，有一點點怒氣，但不符合科學常識，再加上這塊砧板，是26cm，最細的，有些28cm甚至30cm，一個22升，的微波爐，家庭常用的，好，所以有些人為咬而咬 說話不花本，我這裡就要下重一點語氣 不說了，我希望就是，我經常都說 你說我快砧板之前，請你有常識 你有沒有進過廚房，你進過廚房都知道是怎麼回事。</p></a>
+				<a href="#00:05:38.88" id="00:05:38.88" class="lt" onclick="jumptoTime(338, this.id)"><p>今天還搞笑到有人叫我放微波爐三分鐘，都不用三分鐘 爆炸了 因為有鐵，唉 真是 怒氣，其實都不是怒氣 不過我又想說話而已，現在要處理了 薑汁怎麼處理呢，我刮薑就不給大家看了，今天工作台比較乾淨，OK 刮了薑皮，然後呢，等我一會 先把刀放好，因為有其他工作，拿隻容器，今天我就利用到一個比較特別的工具，哎呀 等一會。</p></a>
+				<a href="#00:06:38.08" id="00:06:38.08" class="lt" onclick="jumptoTime(398, this.id)"><p>我先把容器拿出來，我又要找東西了 在我櫥櫃裏，有什麼工具呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:50.16" id="00:06:50.16" class="lt" onclick="jumptoTime(410, this.id)"><p>薑刨，好，這個菜式很簡單，簡單到你不相信調味，都很簡單的，說明薑汁 我當然要刨薑蓉，薑蓉</p></a>
+				<a href="#00:07:8.16" id="00:07:8.16" class="lt" onclick="jumptoTime(428, this.id)"><p>薑刨，刨薑蓉，大概，大家平時炒蟹，煮雞的份量，OK，好，差不多可以了，如果大家覺得始終做日本菜，我都要用味醂，那你就買一支味醂回來，但是我們中式家廚，不代表不能夠混合出味醂，ok?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:57.55" id="00:07:57.55" class="lt" onclick="jumptoTime(477, this.id)"><p>好了，現在我刮了一些薑，可以了，然後我拿一隻玻璃碗，我zoom近一點，讓大家可以看得清楚一點，將薑汁，薑汁，不好意思，黏了一塊薑皮，將薑汁倒入碗中，然後按照肉的份量，就開始放調味料，一磅，平常是不是一湯匙糖?</p></a>
+				<a href="#00:08:52.55" id="00:08:52.55" class="lt" onclick="jumptoTime(532, this.id)"><p>一茶匙糖，ok?</p></a>
+				<a href="#00:08:54.55" id="00:08:54.55" class="lt" onclick="jumptoTime(534, this.id)"><p>然後我們就放豉油，豉油要放多一點，1，2，3，4，5，6，大概這裡是3茶匙左右，7，8，4茶匙左右，ok?</p></a>
+				<a href="#00:09:12.55" id="00:09:12.55" class="lt" onclick="jumptoTime(552, this.id)"><p>4茶匙左右，因為我完全不放鹽，所以放這個多一點，ok?</p></a>
+				<a href="#00:09:20.55" id="00:09:20.55" class="lt" onclick="jumptoTime(560, this.id)"><p>放生抽多一點，然後放米酒，高級一點的就用清酒，沒問題的，大家有清酒賣的，日本城，大概1至2茶匙左右，好了，一個，薑味的味醂汁，那就開好了，如果想簡單一點，大家都是那一句，你就放這個，去買味醂，但是因為家廚來說，除非你很喜歡日本的食物，很喜歡日本的廚藝，如果不是的話，通常我們家是不可能有味醂的，但你用一次就浪費了。</p></a>
+				<a href="#00:10:15.70" id="00:10:15.70" class="lt" onclick="jumptoTime(615, this.id)"><p>所以可以自己抽，記住了，以後味醂是怎樣混合出來的，生抽或者醬油，混合糖和酒，就會變成味醂，當然會差一點點，因為味醂還要經過發酵和煮的程序，我現在這個只是生抽，差一點點，但不代表它沒有味道，想它香一點，就放一點點麻油，這個就是用來調味的，這個牛肉是不是完全不處理呢，又不是，我們要處理一下。</p></a>
+				<a href="#00:10:56.50" id="00:10:56.50" class="lt" onclick="jumptoTime(656, this.id)"><p>我們怎樣處理呢，大家看著，大家都知道我廚房狹窄，東西要搬來搬去的，我盡量節省時間，不要浪費大家的時間，好了，我又要用手了，所以呢，用這個手套，我這個手套是醫生手套，不是便宜的普通工作手套，很容易穿的工作手套，我這個真的是醫生手套，我一百元才買了50雙，我不知道是一百多元，一百元還是一百元，我忘記了，我貪它，因為我為什麼要買這麼貴呢。</p></a>
+				<a href="#00:11:42.50" id="00:11:42.50" class="lt" onclick="jumptoTime(702, this.id)"><p>原因是我貪它，彈性夠，而且沒那麼容易穿，好了，這個時候呢，我們就將這個牛肉，全部倒出來，這個其實撇除了我這個比較亂糟糟的東拉西扯的說明，以及為了拍片，我操作慢了之外，其實可以很快的，倒了它出來之後，做什麼?</p></a>
+				<a href="#00:12:25.01" id="00:12:25.01" class="lt" onclick="jumptoTime(745, this.id)"><p>放些油，攪拌它，攪拌它，這樣的作用有兩個原因，第一個，待會我真的煎的時候，符合很多人所謂的少油少鹽的原則，待會用很少油的，很多時候，如果大家煮過肥牛都知道的，拂來拂去，都會黏在一起的，我現在提前利用少少油，將它攪散，待會我煎的時候就不用黏在一起，另外，我可以令到它煎的時候更香，主要有兩個作用。</p></a>
+				<a href="#00:13:22.01" id="00:13:22.01" class="lt" onclick="jumptoTime(802, this.id)"><p>攪到差不多了，就可以了，大家如果喜歡吃的話，就多些，因為我不只一樣菜，所以一磅牛肉就已經很多了，其實都算是多了一磅，因為平時中式炒菜的話，頂到頭上就用八磅或者十安士，不是八磅，吵死了，八安士或者十安士，半磅或者十安士，但是因為我這個菜式，這個仿日本菜，其實只用肉，洋蔥就沒有了，攪拌好了，就放在一旁。</p></a>
+				<a href="#00:14:7.01" id="00:14:7.01" class="lt" onclick="jumptoTime(847, this.id)"><p>用完之後，馬上扔掉，我用手套用得比較好，我不會再用了，衛生手套嘛，然後就處理洋蔥，其實原本不應該給大家看，因為會阻礙大家的時間，但我也想給大家看我怎樣切洋蔥，其實切洋蔥有很多種方法，有中式、西式、自由式，但如果你想切得快，其實也有些技巧的，好，剝完，剩下的，我特別喜歡用這個，即使是做洋蔥的，即使是做沙律，我也喜歡用這個。</p></a>
+				<a href="#00:15:1.71" id="00:15:1.71" class="lt" onclick="jumptoTime(901, this.id)"><p>因為顏色好看，再加上它是比較甜和比較香，尤其是我做漢堡包，打沙律醬，我就一定要用這個，不會用普通的洋蔥，你看我這麼乾，也要刮一刮它，這是習慣，打個十字，然後怎樣呢?</p></a>
+				<a href="#00:15:37.53" id="00:15:37.53" class="lt" onclick="jumptoTime(937, this.id)"><p>如果大家想食長少少，其實呢啲洋蔥就唔使打十字嘅，咁大概每一塊呢大概係半cm到1cm，每一條，咁呢個係其中一個切洋蔥嘅方法，有好多種嘅咁我而家只係講其中一種啫，咁就完啦，洋蔥，枋味林汁，and then，撈好咗嘅牛肉，呢度唔夠位擺，呢三樣嘢，咁就係呢個係，薑汁牛肉，就係咁多啦，ok咁講嘢呢呢度呢個部分就用多咗少少時間。</p></a>
+				<a href="#00:16:35.53" id="00:16:35.53" class="lt" onclick="jumptoTime(995, this.id)"><p>但係整緊時好快嘅啫幾分鐘搞掂ok好簡單，唔好再投訴我啦，好複雜啦ok，係咁先等陣間開鑊嘅時候再同大家分享下，好喇咁先頭大家睇到我點樣撈呢個，攞油撈呢個肥油啦跟住然之後，就點樣去切洋蔥啦ok點樣刨薑啦，而家呢就燒緊鑊用大火，燒鑊大家，記唔記得個口訣啦，大火燒鑊，見煙落油再見煙，先至。</p></a>
+				<a href="#00:17:11.53" id="00:17:11.53" class="lt" onclick="jumptoTime(1031, this.id)"><p>落料炒，呢個就係要炒出鑊氣嘅，不二法門啦ok，咁當然我都提一提大家如果大家用易潔鑊嘅話，落油嗰部分呢係有少少差別嘅，咁我喺前嗰兩條嘅，炒餸嘅視頻影片呢都有介紹過，說明過ok，咁好啦跟住然之後，落油啦，唔使多油㗎喎，輕輕落一茶匙油，大家鍾意，哎呀唔好意思，跌咗支咪，等一陣啦，而家咁就得囉。</p></a>
+				<a href="#00:17:52.53" id="00:17:52.53" class="lt" onclick="jumptoTime(1072, this.id)"><p>跟住然之後呢，呢個鑊有少少過熱但唔緊要嘅，咁我先落洋蔥炒啦，炒到差不多的時候，我們就把洋蔥也放進去，輕輕地炒一下就可以了，不然洋蔥會過快熟，然後把肥牛放在旁邊慢慢煎，這個沒有什麼特別技巧，咳咳，不好意思，嗆到，老人家口水，嗆到，沒有什麼需要特別技巧去炒，就算你不跟足我口訣去燒鑊，都不要緊。</p></a>
+				<a href="#00:18:50.41" id="00:18:50.41" class="lt" onclick="jumptoTime(1130, this.id)"><p>為什麼呢?</p></a>
+				<a href="#00:18:51.41" id="00:18:51.41" class="lt" onclick="jumptoTime(1131, this.id)"><p>因為這個肉本身不是著重鑊氣，炒到牛肉差不多半熟，這個時候就把調好的汁放進去，這個汁有少少淡口，按照我剛才說的比例，有少少淡口，但是如果大家想鹹一點，但不只是鹹，可以放多點生抽進去，可以放多點糖進去，因為如果你要學足味淋的味道，它是帶甜的，所以要放多點糖，全程不用上鑊蓋，煮熟煮滾就可以了。</p></a>
+				<a href="#00:19:49.41" id="00:19:49.41" class="lt" onclick="jumptoTime(1189, this.id)"><p>本身這個有水的，你又要它不要太熟，所以這個時候我們就要打芡，放點生粉進去，用生粉開水，放少少水，開了生粉，生粉多或少，通常一茶匙都夠了，如果想快點收水可以放多少，出來了 就是吉野家的味道，燒牛肉的味道，差不多可以了，因為牛肉不能太熟，這個時候等它水乾，等它水乾，很快的 你加了生粉打了個芡，很快的 很快它就水乾了。</p></a>
+				<a href="#00:20:52.91" id="00:20:52.91" class="lt" onclick="jumptoTime(1252, this.id)"><p>這個菜你要收到它很乾水，那些汁就掛在牛肉上，現在牛肉已經全熟了，好 然後收火，這個時候我又要放私火的東西，想它香一點嗎，我的私火白芝麻，炒過的白芝麻，好，這個時候我再放一點進去，然後再攪拌一攪，這個時候因為那隻鑊還有熱力，所以那些水是會繼續收的，一個野味的薑汁肥牛就完成了，和風的薑汁肥牛。</p></a>
+				<a href="#00:21:52.91" id="00:21:52.91" class="lt" onclick="jumptoTime(1312, this.id)"><p>是不用味醂的版本的，我現在先上碟，然後再和大家總結一下應該要怎樣做，這個菜簡單吧，按道理應該沒有入廚經驗的，只要懂得煎蛋的應該都可以的，都可以已經是應付之餘，可以這樣說，好，我為了要拍好照片，我再加幾粒芝麻進去，然後呢，這個部份就不用跟足，純粹因為要拍照，等我不要關機，不要收機，等我講完總結，雖然是簡單，但其實是有些竅門在裏面的，OK?</p></a>
+				<a href="#00:23:6.51" id="00:23:6.51" class="lt" onclick="jumptoTime(1386, this.id)"><p>好，搞掂了，大家覺得這個賣相可以嗎?</p></a>
+				<a href="#00:23:14.87" id="00:23:14.87" class="lt" onclick="jumptoTime(1394, this.id)"><p>這個就是吉野家吃的牛肉味道，OK，那好，這個菜有什麼我們要注意的地方呢?</p></a>
+				<a href="#00:23:26.87" id="00:23:26.87" class="lt" onclick="jumptoTime(1406, this.id)"><p>我們要注意的地方有幾樣，第一，其實這個菜很簡單的，大家看到材料簡單，製作簡單，是不是?</p></a>
+				<a href="#00:23:33.87" id="00:23:33.87" class="lt" onclick="jumptoTime(1413, this.id)"><p>最主要最核心的部分就是我們要刨薑汁，然後加生抽、加燒酒、加糖，就混合出一個味醂的味道，OK，大家說我不想你這樣混合，這樣生炸，其實不是生炸的，味醂真的是這些東西，只不過人家是經過特製，味道是有分別，但是不是分別到真的嘩一聲天淵之別，你做了一個薑汁味醂之後，然後切洋蔥，先炒洋蔥，在炒之前牛肉要怎樣?要拌勻。</p></a>
+				<a href="#00:24:17.87" id="00:24:17.87" class="lt" onclick="jumptoTime(1457, this.id)"><p>大家有個疑問，我不喜歡吃牛肉，我吃豬肉片可以嗎?</p></a>
+				<a href="#00:24:23.87" id="00:24:23.87" class="lt" onclick="jumptoTime(1463, this.id)"><p>可以，薑汁豬肉，我本來想做薑汁豬肉的，不過小魔怪喜歡吃牛肉多一點，那我就做牛肉，OK，換做牛肉，一樣的做法，行不行?</p></a>
+				<a href="#00:24:42.87" id="00:24:42.87" class="lt" onclick="jumptoTime(1482, this.id)"><p>次序是一樣的，程序是一樣的，唯一就是你煮豬肉要留意一樣東西，牛肉很怕過熟，但是豬肉要煮久一點，為什麼?會有細菌，會有寄生蟲，味道是一樣的，簡單快捷，幾分鐘就完成，我因為要講解過程，所以才會久一點，十分八分鐘就完成，行不行?</p></a>
+				<a href="#00:25:7.87" id="00:25:7.87" class="lt" onclick="jumptoTime(1507, this.id)"><p>簡單了吧，夠不夠簡單?又惹味又簡單又可以送飯，很多人說日本是家鄉，又可以吃家鄉菜，OK，行不行?</p></a>
+				<a href="#00:25:19.87" id="00:25:19.87" class="lt" onclick="jumptoTime(1519, this.id)"><p>我當然是吃飯，不過我還有一樣菜要炒。</p></a>
+				<a href="#00:25:24.87" id="00:25:24.87" class="lt" onclick="jumptoTime(1524, this.id)"><p>謝謝大家，再分享第二條片，再見。</p></a>
+</div>
+	</body>
+</html>

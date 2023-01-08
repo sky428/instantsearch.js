@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜粟米魚塊｜香港茶餐廳情懷｜簡單易做材料易找｜香港人不論在世界任何角落都能做得好的美食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wiUCaznG_gk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜粟米魚塊｜香港茶餐廳情懷｜簡單易做材料易找｜香港人不論在世界任何角落都能做得好的美食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 大家晚上好呀，今日呢我就想同大家分享呢就一個好簡單嘅，茶餐廳嘅名物呀，乜嘢嚟呀茶餐廳嘅名物，粟米魚塊，咁佢就話粟米斑塊，斑塊係魚塊，不過而家呢就好難買到斑塊㗎啦，我講緊急凍呀，因為呢好多都係青衣柳啦，或者係鯰魚柳啦，鯰魚柳，如果真係用斑塊嘅話呢就成本頗貴呀，咁大家見到有排骨嘅。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>紅色呢啲排骨嚟嘅，今日呢我準備整兩個餸呀，一個荔芋臘腸排骨煲，另外一個呢就整呢個茶餐廳嘅名物呀，就係呢個係粟米呢個係魚塊，咁呀材料呀買一塊嗰啲鯰魚柳返嚟啦，跟住然之後呢，有一罐嘅金寶啦金寶湯啦，跟住然之後呢，呢啲泥排㗎啦，粟米啦，咁仲可以加雞蛋嘅，咁而家呢我就先係處理咗呢個，即係佢自然解凍嘅。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>我喺呢個雪櫃呀保鮮格自然解凍咗一日㗎啦，咁我而家呢首先呢我就處理佢先啦，咁我清潔好先啦，咁我就擺埋呢個擺埋呢啲先等陣間先處理，這些鯰魚柳一解凍就沒有石斑那麼挺身，基本上這些都是一磅裝，其實處理茶餐廳式的粟米魚塊很簡單，做得好吃的話大人小孩都喜歡，做得不好吃的話，正如我兒子說的。</p></a>
+				<a href="#00:02:33.83" id="00:02:33.83" class="lt" onclick="jumptoTime(153, this.id)"><p>爸爸你今晚做粟米魚塊，即是斑塊，有什麼問題，看到它很為難的顏色，他說我怕你做到像學校那些那麼難吃，我說不會吧，外面都做得很好吃，首先將它抹乾，抹乾水就好處理一點，全部抹乾水，因為如果不是的話，等下我們就很難上味，這個菜我自己認為，是真的很簡單，完全沒有入廚經驗，你跟著我ABC做，Step 1 Step 2。</p></a>
+				<a href="#00:03:24.83" id="00:03:24.83" class="lt" onclick="jumptoTime(204, this.id)"><p>這樣做就完全可以了，抹乾水差不多了，它還有一點水，這些水就不怕了，首先我們就要，還有一點水，再抹乾水，不怕吃得，為什麼要抹乾水呢，因為這個鯰魚柳其實都很矜貴，矜貴的意思就是你不能碰它，你不能粗暴地對待它，所以有一點水的話，我們處理上就不是那麼好，OK，盡量抹乾水，嘩 抹得多還有水，然後怎樣做呢。</p></a>
+				<a href="#00:04:15.83" id="00:04:15.83" class="lt" onclick="jumptoTime(255, this.id)"><p>首先就大概量一隻手指的位置，我先放在這裏，本身這個黏乳瘤比較厚身，就算你買回來正宗的青衣瘤，即是紐西蘭青衣瘤，現在這些是越南的黏乳瘤，亦都比較高級一點的就是紐西蘭的青衣瘤，當然最正宗的一定是石斑，它有些厚度，我們怎樣做呢，我們首先將它平均地切開，看到嗎，然後切一個，在魚的中間，這樣。</p></a>
+				<a href="#00:05:14.62" id="00:05:14.62" class="lt" onclick="jumptoTime(314, this.id)"><p>將兩刀放進去，如果用西廚刀就簡單得多，中廚刀就有少許不就手，這樣平均地切開，這樣就容易煎熟，好像做蝴蝶柳一樣，然後這裏一樣，這個薄的部分就不理它了，在這裡就刺兩刀，為什麼要刺兩刀呢?</p></a>
+				<a href="#00:05:57.79" id="00:05:57.79" class="lt" onclick="jumptoTime(357, this.id)"><p>因為這樣可以令到醃的時候更容易入味，咁呀記住平均咁樣去，平均咁樣去片佢呀，咁呢個呢咁薄嘅呢，咁我哋就唔使理啦，咁呀我又費事開啦ok，好跟住完之後呢，我哋就要嚟呢，我哋就，佢咁薄呀唔好意思呀，咁呀篤佢兩刀啦ok，好嗱跟住完之後呢我哋點做呢，首先呢就放拍齊佢啦，好 跟住我哋就，加些鹽。</p></a>
+				<a href="#00:07:4.97" id="00:07:4.97" class="lt" onclick="jumptoTime(424, this.id)"><p>等一等 我要抹乾手，不然會黏著鹽，鹽就加少許，輕輕，為什麼要用手，因為可以均勻一點，好 接著，我們就加胡椒粉，多與少就適大家專便，然後呢，落完胡椒粉之後呢，嘩!好勁呀!</p></a>
+				<a href="#00:07:52.27" id="00:07:52.27" class="lt" onclick="jumptoTime(472, this.id)"><p>灑些生粉上去，同一個程序，好!飲呢!</p></a>
+				<a href="#00:08:20.60" id="00:08:20.60" class="lt" onclick="jumptoTime(500, this.id)"><p>這個時候我們盡量不需要弄到它很重味，弱烈就可以了，好，看見已經要翻面了，好，完成了，是不是很簡單?</p></a>
+				<a href="#00:08:48.76" id="00:08:48.76" class="lt" onclick="jumptoTime(528, this.id)"><p>是的，這個放進冰箱，或者室溫也行，半小時左右，半小時後我們就可以，進行下一個步驟了，OK?</p></a>
+				<a href="#00:09:6.76" id="00:09:6.76" class="lt" onclick="jumptoTime(546, this.id)"><p>暫時這樣，再重複一次，很簡單，把水抹乾淨，然後就，鹽和胡椒粉，撒一些生粉，不是撒，是撒生粉就行，很簡單的魚塊，好了，大家，剛才已經處理了，魚塊，這樣，因為它本身會出水，所以生粉就已經變成，濕透了，不要緊的，OK?</p></a>
+				<a href="#00:09:44.76" id="00:09:44.76" class="lt" onclick="jumptoTime(584, this.id)"><p>煎魚塊最重要是有蛋，我現在就用，四隻蛋，為什麼要用這麼多?</p></a>
+				<a href="#00:09:52.76" id="00:09:52.76" class="lt" onclick="jumptoTime(592, this.id)"><p>蛤?</p></a>
+				<a href="#00:10:10.91" id="00:10:10.91" class="lt" onclick="jumptoTime(610, this.id)"><p>哎呀 掉了東西，等我一會兒，總有意外的，因為港產的地方實在太細小了，所以經常會有意外的，這樣吧，應該不會，蛋就不需要調味的 直接打，這個時候我打蛋的時候先開火，今天我這個就用平底鑊，一邊燒鑊，大家記不記得，想不黏底，不只是靠鑊，有時候都會老貓燒鬚，所以一定要燒鑊，燒得好那隻鑊煎東西才會好，我先收起這些。</p></a>
+				<a href="#00:11:16.91" id="00:11:16.91" class="lt" onclick="jumptoTime(676, this.id)"><p>不要等一會兒，真是拿手不成勢，好，這樣就行了，然後怎樣呢，我們將這個魚塊，直接沾蛋漿，三塊先啦，好啦 現在燒夠了，然後放油，油多與少都不要緊的，如果你想它快些香脆些的話，就放多些油啦，然後關小火，因為現在我要煎魚塊，如果大家想慢慢煎，怕多油的話，大家可以放少些油，記住，加完油起煙 關小火，等它一會才放魚塊。</p></a>
+				<a href="#00:12:35.14" id="00:12:35.14" class="lt" onclick="jumptoTime(755, this.id)"><p>因為要等它稍微降溫，這樣煎魚才會好看，其實這個老少咸宜的粟米魚塊很簡單，不用理它，稍為煎香一點才反轉它，其實大家如果煎這個魚塊可以用中式鍋也可以，西式鍋也可以，也可以像我現在這樣用煎pan也可以，為什麼我用煎pan呢?</p></a>
+				<a href="#00:13:33.61" id="00:13:33.61" class="lt" onclick="jumptoTime(813, this.id)"><p>因為煎pan的底夠大，可以放多點東西，不用煎那麼久，然後差不多了，然後我們就反轉它，大家看到畫面是不是已經很像茶餐廳的煎魚塊?</p></a>
+				<a href="#00:13:59.01" id="00:13:59.01" class="lt" onclick="jumptoTime(839, this.id)"><p>基本上我現在的手勢，我太久沒有做了，所以你可以說我不純熟，但基本上如果認識的人一看我就知道，不是茶餐廳的那些嗎?</p></a>
+				<a href="#00:14:13.01" id="00:14:13.01" class="lt" onclick="jumptoTime(853, this.id)"><p>其實很簡單的，茶餐廳本身煎這些斑塊或者魚塊，即是鑽魚塊，水吧來的，其實它是用扒爐煎的，不是用平底鍋煎的，因為扒爐可以更加大量去生產，一次過20塊，10幾20塊都可以，所以扒爐可以很大，慢慢煎，不用急，慢慢煎，煎到它又可以熟，表面又可以比較金香，很明顯這塊熟了點，這塊沒那麼熟，這裡我要剪一剪，因為這裡翹起了。</p></a>
+				<a href="#00:15:15.83" id="00:15:15.83" class="lt" onclick="jumptoTime(915, this.id)"><p>通常它有根見位，不論是任何肉類，魚也好，豬肉，牛肉也好，它都會翹起來，好了，跟住我反轉佢，呢邊就煎得靚啦，所以話唔使郁佢㗎，咁我地翻轉佢，翻轉佢之後再煎多煎咁就得㗎啦，而家為咗要確保魚熟，我地就稍為撳一撳蓋，撳一撳蓋跟住留返個邊位，大概畀佢煎一分鐘到啦，咁我轉個頭呢，我唔阻大家時間啦，轉個頭呢，佢得嘅我再開機同大家分享啦。</p></a>
+				<a href="#00:16:10.75" id="00:16:10.75" class="lt" onclick="jumptoTime(970, this.id)"><p>過咗一分鐘啦，咁應該佢都ok嘅，咁點解我要焗一焗佢呢，主要個原因就係我等佢呢，更加確保佢可以熟，雖然話呢啲我切薄咗佢會更加熟，大家會見到嘅，而家我係咪煎得好靚呀，咁就關細火記住呀，稍為晃動一下，讓油流得均勻，這些魚肉很滑，即是很軟熟，所以要隔離時要小心點，我為了不要等下夾散，我還是拿一隻鑊鏟，拿一隻木的鑊鏟，我先把雞蛋放進去，這個時候就可以了。</p></a>
+				<a href="#00:17:48.60" id="00:17:48.60" class="lt" onclick="jumptoTime(1068, this.id)"><p>繼續加少許油，然後加入魚蛋漿，我稍為抽起鍋 先晾一晾，降一降溫 不要讓它那麼高溫，煎魚我們是不可以太高溫的 OK，一樣，因為這次是四塊 所以我推近一點，一磅魚柳就係咁上下㗎啦，咁呀跟住呢幾句呢攞一攞佢啦記住呀千祈唔好咁快呢幾，咁我就畀大家睇下煎好咗嘅愉快係咩樣嘅，睇咩到。</p></a>
+				<a href="#00:19:15.23" id="00:19:15.23" class="lt" onclick="jumptoTime(1155, this.id)"><p>Ok，咪咁黃色呀，等陣間呢就打返個粟米汁，忌廉粟米汁落去呢就ok㗎啦，咁咪一樣呀，唔好畀佢即係唔好郁佢咁快字啦，如果邊邊比較快焦的話，我們可以反轉，好，這個時候我再上一上鑊蓋，確保它熟，留一點邊讓它透氣，OK，轉個頭再給大家看看，好了，過了差不多一分鐘，超過一分鐘了，我現在就反轉它，先把它晾一晾，降一降溫。</p></a>
+				<a href="#00:20:33.63" id="00:20:33.63" class="lt" onclick="jumptoTime(1233, this.id)"><p>大家看到嗎?我稍為用力一點，它已經散開了，這個就是黏魚柳的特性，所以很多時候餐廳會沾完蛋之後再撲多些麵包糠上去，變成吉利魚柳，吉利魚柳的話，它就比較結實一點，就沒那麼容易散開，但是現在我不用炸的方式，用煎的方式，所以我不撲麵包糠上去，再煎一煎它，再反一反它，煎過另外一邊，好，這次我再煎一煎它就可以了。</p></a>
+				<a href="#00:21:49.15" id="00:21:49.15" class="lt" onclick="jumptoTime(1309, this.id)"><p>基本上不用再加油，稍後我打的粟米芡都不用加油的，有空就拿一下，千萬不要手多手去撩它，夾它，這樣就很容易散，關掉火，這個時候就可以倒粟米進去，拿湯當水用，視乎大家喜歡放多少粟米都可以，好 先開火，如果是餐廳就不會放那麼多粟米，家裡就無所謂了，多些粟米，我再放多少少嘅水落去呀，點解要放多少少水呢等下我要打蛋落去嘅呢個時候呢。</p></a>
+				<a href="#00:23:55.70" id="00:23:55.70" class="lt" onclick="jumptoTime(1435, this.id)"><p>我就先係咁多個蓋啦，煮滾佢先，大家見下，好啦大家咁呢就，水滾喇喎嗰啲粟米滾咗喇喎咁呢個時候呢我就將，淨返落嚟嘅蛋漿，就擺落去，呢個時候唔好郁佢呀，12345，678，90，咁樣呢，嗰啲蛋呢就可以，OK啦，咁有少少蛋啦，跟住然之後呢因為我放得多蛋落去呀，跟住之後呢就，攞呢個金寶雞嘅嗰啲忌廉雞湯呀，我呢個呢呢次呢就用呢個洋蔥。</p></a>
+				<a href="#00:25:3.51" id="00:25:3.51" class="lt" onclick="jumptoTime(1503, this.id)"><p>洋蔥忌廉雞湯，再煮滾便可以了，基本上不需要調味，味道已經足夠了，煮滾後，全部煮滾便可以了，當然啦 我這個就不符合比例的，一定會有口恨說我，嘩 你給這麼多蛋進去的，嘩 你給這麼大件雞湯進去的，那沒辦法了 大哥，家廚你不可以一次過，遇到一點點的事，那現在多了的那些就可以拿來做什麼呢，拿來當湯喝 拌飯吃 OK。</p></a>
+				<a href="#00:26:12.37" id="00:26:12.37" class="lt" onclick="jumptoTime(1572, this.id)"><p>那它現在中間都滾了，那就OK了 搞定，然後我們就，將這個淋上面，為了好看，我就不淋那麼多，放在一邊，給大家看看一個Close Shot，這個很簡單的一個粟米魚塊就完成了，是不是很簡單?</p></a>
+				<a href="#00:27:6.53" id="00:27:6.53" class="lt" onclick="jumptoTime(1626, this.id)"><p>當然大家可以加很多很多的醬汁，為了好看，給大家看見魚塊，我就不加醬汁，無需多解釋，很簡單，這個魚最主要是在開魚的時候要小心，要注意一下，首先要切一個手指長度的魚塊，然後將它切成一半，即是片開它，平均一半，這樣除了好看點之外，還有考慮到它更加容易熟，醃這個魚其實很簡單，就這樣加鹽、胡椒粉、生粉。</p></a>
+				<a href="#00:28:4.53" id="00:28:4.53" class="lt" onclick="jumptoTime(1684, this.id)"><p>生粉也不是拌進去的，就這樣灑在上面，主要是讓它可以蘸蛋漿的時候，更加容易蘸蛋漿，大家看見煎得很平均，這個菜沒有什麼特別技巧，煎完之後，就直接倒入甜玉米，加少許水，然後將其餘蘸完的蛋漿放進去，數十秒，讓蛋漿起蛋花，今天我其實不是做得這麼好看，因為蛋多，蛋少少就夠了，像餐廳做的，其實用的蛋很少。</p></a>
+				<a href="#00:29:1.53" id="00:29:1.53" class="lt" onclick="jumptoTime(1741, this.id)"><p>但我們家廚不要浪費，所以放進去的時候就看到我現在的效果，但這個效果也非常美味，還有大家有沒有看到我這個很輕盈，加上湯 我基本上都沒有調味，是不是?</p></a>
+				<a href="#00:29:20.70" id="00:29:20.70" class="lt" onclick="jumptoTime(1760, this.id)"><p>是的，這個又健康又惹味，老人家和小朋友最喜歡用來送飯，我先試試味道，已經夠味了，不需要太鹹，好嗎?</p></a>
+				<a href="#00:29:39.06" id="00:29:39.06" class="lt" onclick="jumptoTime(1779, this.id)"><p>放涼後就可以了，其他東西不用說了，這個東西簡單易做，不需要特別提醒，最主要是開魚塊的時候要小心一點，可以嗎?</p></a>
+				<a href="#00:29:53.30" id="00:29:53.30" class="lt" onclick="jumptoTime(1793, this.id)"><p>好了 不說了，其實今天有人點菜，我要送外賣，好了，多謝大家收看，希望大家喜歡這個簡單的食譜。</p></a>
+				<a href="#00:30:6.18" id="00:30:6.18" class="lt" onclick="jumptoTime(1806, this.id)"><p>коль beeps。</p></a>
+				<a href="#00:30:6.20" id="00:30:6.20" class="lt" onclick="jumptoTime(1806, this.id)"><p>� Rising</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:6.54" id="00:30:6.54" class="lt" onclick="jumptoTime(1806, this.id)"><p>textbooks。</p></a>
+</div>
+	</body>
+</html>

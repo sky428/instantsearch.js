@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豉汁味菜炒豬大腸，無敵的鑊氣，無敵的美味，那個香港人不愛吃？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OZAna7VvC8c',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豉汁味菜炒豬大腸，無敵的鑊氣，無敵的美味，那個香港人不愛吃？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚我會分享什麼菜式呢?</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>早前有觀眾看到我做豉汁味菜炒豬肚，問我可否做豬大腸?</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>我當然可以，而且我做了兩種炒法。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>今晚我會分享豉汁味菜炒豬大腸，和朱老師做的差不多。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>大家可以看看我怎樣做。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>如果大家已經看過大豆芽炒豬大腸，應該八九不離十古都是一樣的。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>豬腸我已經處理好，至於豬腸怎樣處理，請大家看大豆芽炒豬大腸，那段我會提及豬大腸怎樣做。</p></a>
+				<a href="#00:00:58.00" id="00:00:58.00" class="lt" onclick="jumptoTime(58, this.id)"><p>這是一個平民化，大家可以做到的方法，不是我自己的方法。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>如果是我自己的方法，豬大腸就不是這個顏色，我會用萬年老水去做。</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>現在我已經燒了鍋，今天我用的是易潔鑊，和大家分享一下，其實易潔鑊的炒法和鐵鑊差不多，只是有少許分別。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>一樣的口訣是大火燒鑊，見煙，落油，見煙，然後再炒。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>這個時候燒鑊就差不多了，開始邊邊見煙了，這個步驟和用鐵鑊差一點點，但不是差很遠，一樣要燒鑊。</p></a>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>落油，然後等油出煙，今天我要和豬大腸……，就要令豬腸表面有些像炸豬大腸的感覺，要等油出煙的感覺，才可以令豬大腸的菜式有野味，大家看到我燒鑊燒了很久嗎?</p></a>
+				<a href="#00:02:26.26" id="00:02:26.26" class="lt" onclick="jumptoTime(146, this.id)"><p>雖然我現在和大家說話都很緊張，我都怕會燒壞鑊，易潔鑊比較容易壞，所以我都很緊張，但一樣要燒，該步驟要做到就要做到，還有，易潔鑊有一個不好的地方，就是傳熱慢，大家有沒有發覺，我落油的時候，如果是鐵鑊的話，它會掛著油在鑊邊，第二件鑊是沒有的，好，現在我將豬大腸放入酒油，一樣是大火，放入酒油也是大火。</p></a>
+				<a href="#00:03:1.63" id="00:03:1.63" class="lt" onclick="jumptoTime(181, this.id)"><p>煎和酒油的分別在哪裏呢?</p></a>
+				<a href="#00:03:4.13" id="00:03:4.13" class="lt" onclick="jumptoTime(184, this.id)"><p>就是放了材料後，是用小火還是大火呢?</p></a>
+				<a href="#00:03:10.63" id="00:03:10.63" class="lt" onclick="jumptoTime(190, this.id)"><p>如果用大火的話，就是酒油，如果用小火的話，就是煎，煎和酒油有甚麼分別呢?</p></a>
+				<a href="#00:03:19.13" id="00:03:19.13" class="lt" onclick="jumptoTime(199, this.id)"><p>就是一樣可以達至金黃色的效果，煎的話，它會令到心臟更加結實，因為它是慢火煎，傳熱後會將心臟控熟，但如果是酒油的話，表面會金黃色，但內裏還是嫩滑的，這就是酒油和煎的分別，大家會問，我到底何時用酒油和煎呢?</p></a>
+				<a href="#00:03:48.13" id="00:03:48.13" class="lt" onclick="jumptoTime(228, this.id)"><p>其實就要看大家想要甚麼效果，如果你想要有煤蠟反應的話，那就當然是用酒油，因為快，煤蠟反應是甚麼呢?</p></a>
+				<a href="#00:03:59.13" id="00:03:59.13" class="lt" onclick="jumptoTime(239, this.id)"><p>就是表面金黃色，香脆，但內裏嫩滑，這就是煤蠟反應，如果煎的話，因為傳熱的問題，很容易令到心臟熟得比較結實，熟得比較多，大家可以看到，雖然我用了酒油，但我現在是不是很慢，好像煎一樣，是的，因為我要做到表面有金黃色的效果，所以，有點像炸豬大腸的效果，所以我就要炸久一點，因為這鍋的傳熱性比較慢。</p></a>
+				<a href="#00:04:43.13" id="00:04:43.13" class="lt" onclick="jumptoTime(283, this.id)"><p>炸到甚麼情況之下，酒油炸到甚麼情況才對呢?</p></a>
+				<a href="#00:04:48.63" id="00:04:48.63" class="lt" onclick="jumptoTime(288, this.id)"><p>大家可以看到，是不是有點像炸豬大腸的感覺，其實差不多可以了，好 關掉火，拿起豬腸等等，炸完豬大腸後，會逼出豬油，所以整隻鑊會帶少少豬油味，對這道菜有非常之好效果，我先介紹材料，有蒜蓉、幾粒辣椒、蔥刀、洋蔥切成塊，今日用了三色椒，用包裝咸酸菜，包裝咸酸菜有一個好處，第一它容易處理，第二可以用包裝咸酸菜的汁來做打芡用，就不用加醋，可以有酸味，當然有我自己做的豆豉醬。</p></a>
+				<a href="#00:06:38.77" id="00:06:38.77" class="lt" onclick="jumptoTime(398, this.id)"><p>現在燒鑊差不多，剛剛好，這時要燒多一會，要看它有煙，然後加蒜頭、辣椒、豆豉醬，大家記不記得，如果有看我那個，即是那個，豉汁味菜炒豬肚絲，放青椒先還是放洋蔥先，還是放鹹菜先，當然放青椒先，我怕熱到鑊燒焦，OK，那，這樣呢，大家要記住，翻轉辣椒皮，要碰到油，OK，大家先頭見不見到我，嘩，又落完油，又再落油。</p></a>
+				<a href="#00:07:47.41" id="00:07:47.41" class="lt" onclick="jumptoTime(467, this.id)"><p>點解呀?因為油對青椒，炒的過程中好味不好味，起一個決定性因素，OK，就要炒，將青椒炒到有少少苦味出來，好，得啦，呢個時候呢，我先至係落呢個鹹菜，大家不用擔心，我這個味菜很香，我這個味菜炒豬腸，就算我用易潔鑊，一樣可以炒到很香的鑊氣，好，接著放豬腸，這個時候，如果大家想吃洋蔥熟一點的話，就可以這個時候放，如果大家想吃洋蔥生一點的話，就遲一點放，調味再放。</p></a>
+				<a href="#00:08:53.87" id="00:08:53.87" class="lt" onclick="jumptoTime(533, this.id)"><p>我現在還沒有調味，我開始調味了，都是很簡單的，鹽一茶匙，接著糖一茶匙，接著雞粉，略略，多與少放不放，大家自己決定，無需要介意我到底有沒有放過，好，這個時候，純粹個人習慣，大家看看，是不是很夠鑊氣，所以它都會搶火的，OK，這個時候我們加少少酒 稍為炸一炸，好，這個時候我們就可以將原先加了生粉的酸汁倒進去打個芡，這個時候，這個酸汁你不一定要整個包裝這麼多的份量。</p></a>
+				<a href="#00:10:19.41" id="00:10:19.41" class="lt" onclick="jumptoTime(619, this.id)"><p>為什麼呢?因為有時候有些人會覺得酸，如果你是覺得酸的話，你就加一半，加一點水進去，開到生粉就可以了，如果你想酸一點，你就加全部的酸汁，剛剛好，為什麼我這麼喜歡用包裝呢?</p></a>
+				<a href="#00:10:37.41" id="00:10:37.41" class="lt" onclick="jumptoTime(637, this.id)"><p>尤其是那隻財X爺，即是財神，為什麼我這麼喜歡用這個包裝的鹹酸菜呢?原因就在這裡，因為那些酸汁剛剛好，酸度剛剛好，這個時候最後，我們加幾滴生抽進去，嘩，龍點睛啊，啊，想著說，忘記了，加蔥，這樣一炒出蔥香就OK了，啊，五顏六色，大家有沒有吃肉呢?</p></a>
+				<a href="#00:11:23.41" id="00:11:23.41" class="lt" onclick="jumptoTime(683, this.id)"><p>這個送酒、送飯都一流的，送飯神器，送酒恩物，OK?</p></a>
+				<a href="#00:11:31.41" id="00:11:31.41" class="lt" onclick="jumptoTime(691, this.id)"><p>很簡單的，好，這個時候我們就擺鑊，擺碟，然後我再做一個總結，OK?</p></a>
+				<a href="#00:11:48.41" id="00:11:48.41" class="lt" onclick="jumptoTime(708, this.id)"><p>大家看到我很驚受，為什麼呢?</p></a>
+				<a href="#00:11:52.41" id="00:11:52.41" class="lt" onclick="jumptoTime(712, this.id)"><p>因為那隻中式鑊地方淺窄，中式鑊剛剛好，頂住，又沒有地方掛著它，所以就沒辦法了，這個味菜炒豬大腸就完成了，其實不是很複雜的，大家只要有心機的話，要炒這個好味道也不困難，LL，녹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:31.20" id="00:12:31.20" class="lt" onclick="jumptoTime(751, this.id)"><p>Soy，diferente，總結一下，炒豬大腸、豉汁味菜其實不是很複雜，配料方面是很相配的，兩隻大燈籠椒，一隻紅一隻青，如果你想多吃一點，就加多隻三色椒，一袋剛剛好，然後一隻洋蔥，一包酸菜，豬腸兩至三條去急凍店買，然後回來就根據我上一條大豆芽炒豬腸的做法，其實跟炆豬肚絲的做法是一模一樣的，家庭式的做法。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:15.62" id="00:13:15.62" class="lt" onclick="jumptoTime(795, this.id)"><p>如果大家想豪華一點，想更加好吃一點，有盤滷水就把它滷了，ok?</p></a>
+				<a href="#00:13:22.70" id="00:13:22.70" class="lt" onclick="jumptoTime(802, this.id)"><p>這是第一點，第二，炒的時候要先炒青椒，為什麼?</p></a>
+				<a href="#00:13:29.14" id="00:13:29.14" class="lt" onclick="jumptoTime(809, this.id)"><p>因為這樣青椒是特別香的，你不要小看這個步驟，我小時候很討厭吃青椒，我媽媽炒的那些，炒來炒去都會有股臭青味，不好吃，但是我學會了炒青椒之後，發覺青椒，大瓣辣椒也好，如果我們把它炒成什麼呢?</p></a>
+				<a href="#00:13:53.98" id="00:13:53.98" class="lt" onclick="jumptoTime(833, this.id)"><p>有一點點苦皮，碰過油，碰過高溫的情況，那些青椒是特別好吃的，所以為什麼先頭是先放青椒，而後面才放酸菜，為什麼呢?</p></a>
+				<a href="#00:14:7.98" id="00:14:7.98" class="lt" onclick="jumptoTime(847, this.id)"><p>因為如果先放酸菜，鍋就會降溫，降溫的話就達不到炒青椒那種野味的要求，ok?這是第二點，第三，就是為什麼我經常說，為什麼我喜歡用預包裝的鹹酸菜，因為可以用回那些汁，我又不用加醋，大家看到多簡單，加點生粉，鹽酸，減一半，加一點水，去打個芡，大家記住，這個豉汁，記得最後一定要加幾滴生抽去點味，這樣就行了。</p></a>
+				<a href="#00:14:46.78" id="00:14:46.78" class="lt" onclick="jumptoTime(886, this.id)"><p>至於豉汁，大家都知道的，麻煩大家了，舊的朋友就知道我那個豉汁，就是那一碗豆豉醬是怎麼來的，新的朋友，麻煩你，就去我那個自製萬用豆豉醬那裡，我已經出了很多條片了，那自製萬用豆豉醬就是怎麼炒，炒好了之後，比去超級市場買那些什麼機的，蒜蓉豆豉醬好吃很多的，蒸魚也可以，炒東西也可以，ok?</p></a>
+				<a href="#00:15:14.10" id="00:15:14.10" class="lt" onclick="jumptoTime(914, this.id)"><p>行不行?好了，不說那麼多了，真的要吃飯了，拜拜，多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

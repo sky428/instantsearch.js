@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——騷炸魚皮，簡單易做，在家中也能重現超邪惡的香港小食！新手跟住程序做都不會失敗！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'BkaE5e1Ch5E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——騷炸魚皮，簡單易做，在家中也能重現超邪惡的香港小食！新手跟住程序做都不會失敗！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，大家應該先頭睇到我打魚蛋的影片，我都講，作為一個家廚，當然什麼下流嘢都要利用到盡，大家去打邊爐，當然有吃什麼?炸魚皮，吃魚蛋粉，這個就是我先頭打完魚蛋，刮完魚肉之後的魚皮。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>我跟住落嚟當然要廢物利用，冇理由浪費咗呢個咁正嘅魚皮，而家我同大家分享下點樣去炸生魚皮，如果你去街市，你問下有冇啲打咗魚蛋之後嘅魚皮，有嘅話可以買返嚟，咁呀，什麼都唔使做嘅，咁呀，畀大家睇下先，咁我過我頭，畀少少，係喇，睇唔睇到?OK?魚皮就係咁樣嘅，咁呢就要攞啲紙巾抹返乾佢，跟住落嚟我要點做呢?做法非常之簡單，但係係一個非常邪惡，非常之可口嘅小食，OK?</p></a>
+				<a href="#00:01:18.00" id="00:01:18.00" class="lt" onclick="jumptoTime(78, this.id)"><p>最緊要抹得夠乾喎，好啦，抹乾咗之後呢，跟住然之後呢，我哋就攞隻消毒乾淨嘅兜，我哋做乜嘢呢?</p></a>
+				<a href="#00:01:30.00" id="00:01:30.00" class="lt" onclick="jumptoTime(90, this.id)"><p>睇下先，啲粉，嗱，咁就攞一包罂粟粉，OK?咁就唔使多嘅，咁我而家呢就開咗佢先啦，咁炸魚皮係點樣整呢?就咁攞啲粉，OK?</p></a>
+				<a href="#00:02:0.00" id="00:02:0.00" class="lt" onclick="jumptoTime(120, this.id)"><p>罂粟粉，唔使多嘅啫，大概係，等我睇下先，大概係50克到啦，40至50克到啦，罂粟粉，跟住然之後呢，我哋就落鹽，大概落三分二茶匙，落落啲生粉嗰度，落落啲生粉嗰度，跟住然之後呢，就，落呢個胡椒，胡椒碎，跟住然之後，攪勻佢，跟住之後將啲魚皮呢，就擺落去，記唔記得㗎，呢次我正呀攞個大啲嘅兜呀，慢慢。</p></a>
+				<a href="#00:03:0.52" id="00:03:0.52" class="lt" onclick="jumptoTime(180, this.id)"><p>OK，本身呢個炸魚皮呢就唔需要再調味㗎喇，因為其實你落咗啲鹽落去就ok㗎喇，咁咪少少如果你驚聲嘅呢，咁就先頭你大家都見到啦，我係放咗胡椒嘅，似乎40克生粉都唔夠，要落多少少呀，咁呢基本上呢就係嗰啲生粉呢就盡量呢要佢係均勻咁沾滿嗰啲魚皮ok，盡量咁沾滿嗰啲魚皮，均勻咁沾滿咁到嚟時炸呢佢就唔會走返出嚟㗎喇ok，因為本身啲魚皮就算你點樣整佢乾呀。</p></a>
+				<a href="#00:03:54.02" id="00:03:54.02" class="lt" onclick="jumptoTime(234, this.id)"><p>點樣整佢乾呢都會係有啲濕嘅，好啦咁咪整完囉喎，每塊魚皮都有少少粉囉ok，跟住然之後我哋就可以，嘩漏咗一個，咁要落多少少粉，好 咁要落多少少粉囉，大家看著，這樣拌，基本上這些粉拌完之後，它就不會掉出來，然後拿下去炸，我們家廚就不可能用全油炸的方式，我們盡量半油炸，勤力一點也可以，我先關機，等一會我開鑊炸的時候再開機。</p></a>
+				<a href="#00:04:53.59" id="00:04:53.59" class="lt" onclick="jumptoTime(293, this.id)"><p>好了，我已經燒好油了，現在就放魚皮下去炸，魚皮如果油溫夠就不需要炸太久，基本上浮面後等一會就可以了，其實用夾子夾的時候可以感受它的脆度，因為我們不同職業廚房可以放很多油，所以我們要不時翻動它，要看著它是金黃色，色澤浮面基本上就可以了，現在基本上已經差不多可以了，再等一會兒，不用怕大家說炸的時候要不要加鹽、味粉等等。</p></a>
+				<a href="#00:07:1.75" id="00:07:1.75" class="lt" onclick="jumptoTime(421, this.id)"><p>是不需要的，因為大家也看到我先前沾粉的時候已經放了鹽，還有這些一點也不腥，為什麼呢?</p></a>
+				<a href="#00:07:10.75" id="00:07:10.75" class="lt" onclick="jumptoTime(430, this.id)"><p>第一，炸的魚多數都不會腥的，其次就是因為我放了黑胡椒碎，現在已經可以了，我們可以拿起來了，等一會兒我試一下有多脆，大家可以看到我炸出來的樣子是不是很像麵檔賣的那種，繼續放，還有啊，那時候盡量放平，這樣一來就可以炸得更加鬆，更加快炸得脆，其實都有少少似係炸鹽酥雞咁嘅咁嘅做法，先。</p></a>
+				<a href="#00:09:11.10" id="00:09:11.10" class="lt" onclick="jumptoTime(551, this.id)"><p>聽唔聽話，有個好處就係有少少肉，我呢啲係，現場錄影呀真係食緊嘢呀，再再偷舊食，我都未知到佢，我又畀我已經偷食曬，油溫不夠高，所以油炸得多，炸不起來，我先拿起來，通常如果，以家住為例，萬一炸魚皮、炸物炸到油溫不夠，有什麼辦法補救呢?</p></a>
+				<a href="#00:10:28.51" id="00:10:28.51" class="lt" onclick="jumptoTime(628, this.id)"><p>馬上全部拿起來，等它再燒油溫，再燒一會，現在我不關機了，可以嗎?</p></a>
+				<a href="#00:10:38.51" id="00:10:38.51" class="lt" onclick="jumptoTime(638, this.id)"><p>我不關機了，我讓大家看看過程，怎樣才算油溫夠高，現在彈到到處都是，先蓋住鍋蓋，我不關機，讓大家感受一下，我先試一下，等下出去都沒得吃，繼續偷吃，連骨都脆，一點都不腥，有少許鹹味，跟外面炸得很乾的魚皮，有95%相似，相似的意思是，味道是一樣的，口感是一樣的，唯獨我刮的肉，刮得不夠清，肉的部份有少許軟。</p></a>
+				<a href="#00:11:38.51" id="00:11:38.51" class="lt" onclick="jumptoTime(698, this.id)"><p>但皮還是脆的，怎樣去測油溫呢?</p></a>
+				<a href="#00:11:46.51" id="00:11:46.51" class="lt" onclick="jumptoTime(706, this.id)"><p>怎樣去測油溫呢?</p></a>
+				<a href="#00:11:49.51" id="00:11:49.51" class="lt" onclick="jumptoTime(709, this.id)"><p>就是用木筷子沾少許水，看到嗎?</p></a>
+				<a href="#00:11:58.51" id="00:11:58.51" class="lt" onclick="jumptoTime(718, this.id)"><p>就等木筷子不停地沾水，這樣就不會沾到油，看到嗎?就等木筷子不停地沾水，沾到幾時呢?</p></a>
+				<a href="#00:12:14.51" id="00:12:14.51" class="lt" onclick="jumptoTime(734, this.id)"><p>沾到差不多沒泡為止，沾到差不多沒泡為止，這樣就夠高溫了，現在還是有舖的，這些就是傳統家廚的土法煉鋼，我們沒有現代廚房的設備齊全，有淡熱針等等，但是其實一些古老的智慧，都可以有幫助的，現在繼續炸，繼續有泡，現在泡差不多了，然後等它起煙，少許，少許起煙就可以再放進去，這個視頻不好意思，因為我想給大家看看。</p></a>
+				<a href="#00:13:20.95" id="00:13:20.95" class="lt" onclick="jumptoTime(800, this.id)"><p>炸魚皮或炸食材，在家廚來說應該要怎樣做，大家可以感慨一下，所以我不cut機了，一short播，開始出煙了，泡都減少了，然後再放進去炸，很明顯泡都不一樣，炸的泡，炸魚皮還有一個小秘訣，是什麼呢?</p></a>
+				<a href="#00:14:1.95" id="00:14:1.95" class="lt" onclick="jumptoTime(841, this.id)"><p>我加了大概兩湯匙豬油，我之前在紅燒斑腩那裡說過，豬油撞魚是可以辟腥的，如果用來炸的話，會有什麼作用呢?</p></a>
+				<a href="#00:14:22.95" id="00:14:22.95" class="lt" onclick="jumptoTime(862, this.id)"><p>就是令它更加香口，有部份已經可以了，不過還是要炸的，還有一些沒那麼厚的已經開始浮面了，浮面呢，通常我們認定炸東西是否成功，就是浮面，浮面就是熟的，起碼是熟的，不是生的，OK，然後再炸一會兒就會香脆了，我們炸雞翼也是這樣炸，炸雞腿也是這樣炸，炸其他東西也是這樣炸，大阪雞一沒了水分，因為水分很重，表面的水分沒了，就會浮面了。</p></a>
+				<a href="#00:15:5.42" id="00:15:5.42" class="lt" onclick="jumptoTime(905, this.id)"><p>是很簡單的道理，當水分比例比油小的時候，雞腿那麼重的食物也會浮面的，先留那些，因為已經放了一會兒，我再拿回去炸，好了，搞掂，食碗麵，掂呀，今晚的打邊爐有幾多bonus呀，其實我打魚蛋，打一次魚蛋，其實真的有很多東西可以做，這些魚皮呢，就用來炸啦，是嗎，但其實我都講過，在打魚蛋的時候，我都講過，其實可以用來炒番茄的。</p></a>
+				<a href="#00:16:1.71" id="00:16:1.71" class="lt" onclick="jumptoTime(961, this.id)"><p>煎香魚皮，再用來炒番茄，嘩，正到呢，是好正，不是講笑，好，搞掂，火都熄了，好，俾大家睇下先，個賣相得唔得呀，ok，呢個呢，就係通常打魚蛋之後，呢個下欄嘢整出嚟嘅，如果鹽佢唔夠鹹嘅話呢，就放啲咩呢，放啲椒鹽落去，咁就夠曬鹹啦，ok，得唔得，呢段視頻炸魚皮呢，就講到呢度啦，咁家廚其實真係要識好多嘢嘅。</p></a>
+				<a href="#00:16:47.71" id="00:16:47.71" class="lt" onclick="jumptoTime(1007, this.id)"><p>如果唔係利用唔到佢嗰個下欄嘢，整出啲美味出嚟，呢個係好邪惡嘅炸魚皮，係咪呀，大家認唔認同呀。</p></a>
+				<a href="#00:16:57.71" id="00:16:57.71" class="lt" onclick="jumptoTime(1017, this.id)"><p>好啦，我又要去食嘢啦，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

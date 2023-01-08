@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜芹蒜炒雜菌｜素食不代表沒味道，一樣可以鑊氣香氣營養同時兼得，跟著做就對了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lVW5U3OOBeg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜芹蒜炒雜菌｜素食不代表沒味道，一樣可以鑊氣香氣營養同時兼得，跟著做就對了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，嗯，這是什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.29" id="00:00:7.29" class="lt" onclick="jumptoTime(7, this.id)"><p>炒齋，炒雜菌，這次終於沒有肉了，大家喜不喜歡，只吃蔬菜呢?</p></a>
+				<a href="#00:00:16.29" id="00:00:16.29" class="lt" onclick="jumptoTime(16, this.id)"><p>吃植物呢?</p></a>
+				<a href="#00:00:18.29" id="00:00:18.29" class="lt" onclick="jumptoTime(18, this.id)"><p>我女兒最喜歡吃了，她說她喜歡吃草，不要以為就這樣炒，雜菌就沒有味道，其實可以很惹味的，那怎麼惹味呢?</p></a>
+				<a href="#00:00:31.29" id="00:00:31.29" class="lt" onclick="jumptoTime(31, this.id)"><p>大家接下來就看我怎麼做，希望大家喜歡，去片，大家晚上好，今晚我想和大家分享一個什麼菜呢?</p></a>
+				<a href="#00:00:49.29" id="00:00:49.29" class="lt" onclick="jumptoTime(49, this.id)"><p>就是齋，只是菜，沒有肉的，吃多青菜都要轉口味，吃多肉都要轉口味，大家看到畫面，有什麼材料呢?</p></a>
+				<a href="#00:01:3.29" id="00:01:3.29" class="lt" onclick="jumptoTime(63, this.id)"><p>就是這麼多，今天這個菜叫做，芹蒜炒雜菌，首先，雜菌有什麼呢?</p></a>
+				<a href="#00:01:15.29" id="00:01:15.29" class="lt" onclick="jumptoTime(75, this.id)"><p>我在街市買的，雞腿菇，鮮冬菇，粟米芯，還有金菇，還有其他那些，這些我不知道是什麼菇，基本上，什麼菇都可以，喜歡的草菇、白菌都可以，其實什麼都可以，這些我們首先要處理一下，先要汆水，汆水之前，菇本身都是吃筋部，就是莖部，所以有些寒氣，就要加薑片，隨個人喜歡，然後就加鹽糖味，咁鹽糖味上味之餘佢嘅作用呢咁呀大家都應該好清楚㗎啦，即係跟開我嗰啲呀所以呢鹽糖味呢個階段一定要落曬嘅跟住之後呢。</p></a>
+				<a href="#00:02:25.21" id="00:02:25.21" class="lt" onclick="jumptoTime(145, this.id)"><p>我哋就將呢個係菇呢落去飛水咁呢就，翻滾之後大概五分鐘到就ok㗎啦，或者三分鐘都得嘅即係大家如果唔想食得太淋嘅話，咁呢個時候呢我哋就畀時間佢啦，12345分鐘呀，咁我介紹下其他的材料先，話明呢就係勤算炒呢個雜菌呀嘛，咁呢就係一集嘅糖芹啦，糖芹啦咁呢就係一集嘅蒜苗啦咁樣啦而家呢蒜苗都仲未係，即係當做嘅季節係要到到。</p></a>
+				<a href="#00:03:11.81" id="00:03:11.81" class="lt" onclick="jumptoTime(191, this.id)"><p>冬至打後朝農曆年嗰陣時係當做嘅嗰陣時嘅蒜苗呢就又亂，又好食，嗰陣時候呢就大家可以用多啲蒜苗，而家呢我只係用一集嘅啫，但係如果係大家真係鍾意食蒜苗嘅話呢可以兩至三集都冇問題嘅ok，咁呀糖近就主要就係點味嘅啫就唔使多嘅，跟住然之後呢，就，蒜蓉啦，咁呀有一隻指天椒啦跟住之後做料嗰方面呢就有，沖到啦。</p></a>
+				<a href="#00:03:46.87" id="00:03:46.87" class="lt" onclick="jumptoTime(226, this.id)"><p>咁基本上咁多㗎啦咁嗱醬料嗰方面呢我哋呢，今一次呢我哋就用呢個沙茶醬嘅，因為本身菇都係冇乜味嘅ok，沙茶醬起鑊之外呢今日用蠔油調味啦，好簡單嘅啫呢個餸，咁亦都非常之適合現代城市生活嘅，即係朋友呢去試下呢個彩色嘅，咁我而家呢，我就冚下蓋先，咁呀夠鐘嘅時候呢我先至走去飛水，咁我過完冷河之後我再同大家分享點炒呀。</p></a>
+				<a href="#00:04:20.67" id="00:04:20.67" class="lt" onclick="jumptoTime(260, this.id)"><p>大家咁呢就五分鐘響咗啦，鐘響啦咁呢個時候呢，我哋就，賭起佢啦，咁呀，雜菌呢其實呢就唔需要去過冷河嘅，基本上賭起咗佢，然後再起鑊，繼續燒鑊，稍為抹一抹，因為本身有鹹味，因為有少許鹽，所以鑊底會積了鹽，稍為燒一燒鑊，燒到它見煙了，然後我們就可以，加少許油 大概兩茶匙，大家看到這個新油壺，這個油壺倒出來的份量就對了。</p></a>
+				<a href="#00:05:38.70" id="00:05:38.70" class="lt" onclick="jumptoTime(338, this.id)"><p>不用我每次都放得多油，稍為燒鑊了，燒到它見煙了，然後我們把蒜蓉和辣椒稍為炒一炒，不要這麼快放材料，因為先等它炒一炒，等它有少許金香，然後我們再，稍為炒一炒，然後就加雜菌，好，很香，然後這個時候我們稍為炒一炒就可以調味了，本身因為這個料不多的，所以我們稍微是加一點點鹽就可以了，少過半茶匙。</p></a>
+				<a href="#00:06:37.29" id="00:06:37.29" class="lt" onclick="jumptoTime(397, this.id)"><p>然後糖也一樣，糖可以加多一點點也不怕，大家看到我經常都是用手去調味的，因為為什麼呢，大家習慣了之後用手去調味，它的調味就會均勻一點，就比那個匙羹均勻一點，好，然後我們再將蔥頭放下去，已經很香了，千萬不要說吃素，沒有甚麼味覺，其實不是的，視乎大家怎樣用，這個時候我們就放少許，剛才忘記了放沙打醬。</p></a>
+				<a href="#00:07:46.62" id="00:07:46.62" class="lt" onclick="jumptoTime(466, this.id)"><p>然後加少許蠔油，沙茶醬可以加多些，蠔油就少許就可以，調味就可以了，好香呀嗰啲沙茶醬味呀，好，而家基本上差唔多喇喎，跟住然之後呢就落啲酒，菇類呢就一定要落走嘅如果唔係嘅話呢佢嗰啲，好青味呢就好犀利呀，最後打薄芡，咁就搞掂啦一個好簡單嘅勤算炒呢個係雜菌呀，有紅有綠，睇到都應該都，幾開胃下嘅。</p></a>
+				<a href="#00:09:17.63" id="00:09:17.63" class="lt" onclick="jumptoTime(557, this.id)"><p>咁佢嗰隻辣椒呢其實呢就我買，雜菌嘅時候呢佢包裝入面就送埋畀我嘅，咁所以我就唔好嘥啦用埋佢啦ok，咁如果呢大家想更加色彩鮮艷呢就可以買隻紅色嘅燈籠椒呀，炒呀，咁但係大家要記住我紅色嘅燈籠椒呢我哋就要係，又要，複雜少少嘅炒法㗎喇喎如果唔係嘅話呢嗰啲紅椒呢就唔夠好食嘅ok唔夠，好啦咁呢。</p></a>
+				<a href="#00:09:52.71" id="00:09:52.71" class="lt" onclick="jumptoTime(592, this.id)"><p>搞掂啦跟住然之後呢我就做一做個總結好簡單嘅啫，咁呢個呢就係，勤算炒呢個係，雜菌呀，雜菌呢本身呢就唔係咁適合炒嘅咁但係我哋有咩辦法呢就我哋飛水嘅時候呢，煮得佢透一啲即係煮到佢完全係淋曬為止，跟住然之後呢，炒嘅就好簡單嘅啫，蒜蓉啦少少嘅辣椒啦跟住起鑊啦今一次呢一個，影片呢我就做錯咗一個步驟嘅。</p></a>
+				<a href="#00:10:28.55" id="00:10:28.55" class="lt" onclick="jumptoTime(628, this.id)"><p>就係唔記得咗放呢個沙茶醬呀，Ok，咁呢沙茶醬呢最好呢就一開始嘅時候爆鑊嘅時候落呢，咁就會惹味更加惹味更加香口嘅但係而家我事後落中間落呢，其實就冇乜所謂嘅，只不過呢就會係喺嗰個香氣嗰方面呢就會爭咗啲啲咁得，咁希望大家唔好介意啦咁咪記住喎，沙茶醬係，炒，落鑊，呢個係蒜蓉之後呢就跟住落呢就最好嘅，Ok得唔得。</p></a>
+				<a href="#00:10:59.01" id="00:10:59.01" class="lt" onclick="jumptoTime(659, this.id)"><p>調味好簡單嘅啫都係鹽糖味呀蠔油呀冇其他特別嘢㗎啦，咁呀，我先頭講咗兩次就齋菜呀咁其實齋菜呢家嘢呢就分兩種齋菜嘅一種呢，宗教性嘅齋菜，咁如果講緊宗教性嘅齋菜呢我係唔合格㗎因為點解呢，我放多蒜，蒜苗，放多蒜蓉，如果宗教性嘅話呢啲係屬於聲韻嚟嘅，咁呢，就係唔應該食嘅，ok，咁。</p></a>
+				<a href="#00:11:31.75" id="00:11:31.75" class="lt" onclick="jumptoTime(691, this.id)"><p>但係，另一種齋菜呢就係vegetarian，即係呢個係素食者，咁就百無禁忌啦，咁所以呢個呢呢一次呢我炒呢個雜菌呢就係依據呢就係呢個係素食者，嗰個要求，咁所以呢我又落辣椒又落呢個蒜蓉又落呢個蒜苗，係完全冇問題嘅大家要記住呀如果大家有宗教信仰嘅話呢就唔可以落蒜蓉嘅，只能夠。</p></a>
+				<a href="#00:11:58.89" id="00:11:58.89" class="lt" onclick="jumptoTime(718, this.id)"><p>得唔得，咁當然啦站喺食家嘅立場，梗係有蒜爆香有蒜苗嘅話，香口好多大家話係咪呀，咁但係，亦都有啲人呢係唔鍾意熟食咁重嘅蒜蓉味嘅時候呢，咁就可以亦都可以唔落蒜蓉嘅，得唔得，但係有一個基本我哋炒菜嘅，要訣一定要遵守嘅就係乜嘢呀，燒鑊，大家見到嘅我無論係炒菜又好炒肉都好我全部，煎又好。</p></a>
+				<a href="#00:12:31.91" id="00:12:31.91" class="lt" onclick="jumptoTime(751, this.id)"><p>走油都好全部都依足曬嗰個口訣，係乜嘢呀，大火燒鑊，見煙落油再見煙先至落料炒，基本上就係咁多啦，係咪好簡單呢，成個過程睇曬㗎喇咁我希望大家，又學識多一樣餸啦，多謝大家收看，真係食飯啦，拜拜。</p></a>
+</div>
+	</body>
+</html>

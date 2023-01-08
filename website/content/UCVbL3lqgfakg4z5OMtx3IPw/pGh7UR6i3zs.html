@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——清炒菜遠，清脆利落簡短有力，入門級菜式專業級味道，不需要放薑蒜起鑊卻做到夠鑊氣夠惹味，更能保持常綠。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pGh7UR6i3zs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——清炒菜遠，清脆利落簡短有力，入門級菜式專業級味道，不需要放薑蒜起鑊卻做到夠鑊氣夠惹味，更能保持常綠。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.12" id="00:00:0.12" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好呀!又係對住隻鑊，我想整乜嘢呢?</p></a>
+				<a href="#00:00:7.12" id="00:00:7.12" class="lt" onclick="jumptoTime(7, this.id)"><p>之前有朋友仔就睇見我呢個蒜蓉炒菜心，就問我青炒菜心係咪咁做㗎?都係一樣㗎?</p></a>
+				<a href="#00:00:23.12" id="00:00:23.12" class="lt" onclick="jumptoTime(23, this.id)"><p>我就話係呀，為免大家誤會，我做一次比大家睇，先頭一路講野，一路落材料，落鹽糖味，跟住再加少少油，咁就可以保持菜的青綠，大家估下我呢啲菜擺咗幾耐?擺咗五日啦，青唔青呀?青唔青綠呀?無爛到㗎，大家仲記唔記得，之前我同大家講過點樣去保存呢個蔬菜呀，其實就好簡單，返嚟就浪乾啲水，喺佢半未死之前，表面水冇曬，就可以拿布紙包住佢，擺落雪櫃。</p></a>
+				<a href="#00:01:21.12" id="00:01:21.12" class="lt" onclick="jumptoTime(81, this.id)"><p>擺兩個禮拜都唔怕，一般最好係一個禮拜內食曬，再加上而家菜貴，菜貴都唔緊要，係時有時無，如果大家真係咁想食菜心呢類蔬菜的話，可以學習下，聽下我建議，跟住我一齊做，返嚟浪乾啲菜心表面水，然後先拿布紙，三層布紙包住佢，包得密實啲，擺落雪櫃，咁就可以長期保存，呢度啱啱錄緊菜，我唔係特登要講嘢嘅，我想俾大家睇下嗰個texture嘅變化同顏色嘅變化。</p></a>
+				<a href="#00:02:4.12" id="00:02:4.12" class="lt" onclick="jumptoTime(124, this.id)"><p>菜心有爽嘅菜心同埋淋嘅菜心，呢一隻就淋嘅，咁一轉色就得，因為我呢度放少咗水，所以我放雪長少少時間，要等待全部菜心都轉色，現在已經轉色了，如果我想全部都轉色，可以看看，其實可以另外一個判斷，如果粗的菜心，看它的菜脯、菜莖，OK，看它是否轉色，如果你怕不熟的話，你可以再等一等，OK。</p></a>
+				<a href="#00:02:39.84" id="00:02:39.84" class="lt" onclick="jumptoTime(159, this.id)"><p>因為待會炒的時候很快脆，好了，現在差不多了，已經轉了很多，差不多了，再等一等，水滾了，不行了，OK，關火，我關小火，保持溫度，一樣，為了要好炒，我先把菜頭和菜尾排好，其實炒青菜很簡單，關鍵是你燒鑊它一下，無論你加薑下去炒，還是你用蒜蓉去炒，再烹一烹，讓水分全部掉出來，這樣炒起來，就會更好鑊氣，無論是炒什麼菜都好。</p></a>
+				<a href="#00:03:26.68" id="00:03:26.68" class="lt" onclick="jumptoTime(206, this.id)"><p>關鍵是什麼呢，關鍵就是你燒鑊它一下，現在這條片，是一刀不剪的，OK，大家看看我怎麼做，開大火，好，抹乾它，現在還未可以，我現在一直開大火，最大火，一直燒鑊，鑊還未乾，要它出煙才可以加油，這個我特意一刀不剪，讓大家看看，因著時間的長度，OK，行不行?</p></a>
+				<a href="#00:04:12.63" id="00:04:12.63" class="lt" onclick="jumptoTime(252, this.id)"><p>大家都看到，我最近喜歡用這隻鐵鑊，為什麼?因為它容易燒，和好揸手，炒的時候，因為我年紀大了，我那隻生鐵鑊稍為重了一點，所以我就用現在這些帶病的鐵鑊，這個是熟鐵鑊來的，OK?</p></a>
+				<a href="#00:04:30.63" id="00:04:30.63" class="lt" onclick="jumptoTime(270, this.id)"><p>就不是鑄鐵鑊，生鐵鑊通常是鑄鐵鑊，OK?</p></a>
+				<a href="#00:04:33.63" id="00:04:33.63" class="lt" onclick="jumptoTime(273, this.id)"><p>好了，現在開始，開始有煙了，我就開始下油了，下油，你可以下生油也可以，下豬油都可以，大家看到我那隻，即是看慣我都知道，看到我那隻油壺的顏色就知道是豬油，豬油好香的嘛，OK?</p></a>
+				<a href="#00:04:55.63" id="00:04:55.63" class="lt" onclick="jumptoTime(295, this.id)"><p>再燒一燒，就把油弄勻，大家看到的，一直是出煙的，好，大家看到嗎?</p></a>
+				<a href="#00:05:16.33" id="00:05:16.33" class="lt" onclick="jumptoTime(316, this.id)"><p>鑊不一定要像我這樣搶火，然後搶完火就可以調味，大家記住，最重要是鑊溫度夠高，不一定要像我這樣搶火，只要溫度夠高就可以，炒菜時鑊調味都一樣，盡量用手，這裡一斤菜，鹽一茶匙，糖一茶匙，雞粉少許，雞粉其實相當於專業廚房的高湯，如果鑊溫度夠高的話，我炒到現在還有很多煙，證明鑊溫度夠高。</p></a>
+				<a href="#00:06:11.33" id="00:06:11.33" class="lt" onclick="jumptoTime(371, this.id)"><p>炒一會就可以了，關火，完成，等等，先拿碟子，排好，可能有人問，打玻璃芡會否好一點，我已經講過很多次，打玻璃芡是因為有水，炒得不夠亮，為了好一點，打玻璃芡，如果夠油水的話，就不需要打玻璃芡，現在像我這樣炒，就夠鑊氣了，什麼蒜頭、薑都不用放，等等，給大家看看，夠不夠翠綠，炒菜就是這麼簡單，炒完菜當然要去吃飯。</p></a>
+				<a href="#00:07:21.33" id="00:07:21.33" class="lt" onclick="jumptoTime(441, this.id)"><p>再見。</p></a>
+				<a href="#00:07:23.33" id="00:07:23.33" class="lt" onclick="jumptoTime(443, this.id)"><p>給大家看看翠綠。</p></a>
+</div>
+	</body>
+</html>

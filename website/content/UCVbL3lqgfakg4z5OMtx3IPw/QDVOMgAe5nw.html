@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜魚香茄子肉絲｜鮮香嫩滑｜下飯神器｜製作簡單，只要跟足程序去做，味道已經可以跟餐廳比較了。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QDVOMgAe5nw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜魚香茄子肉絲｜鮮香嫩滑｜下飯神器｜製作簡單，只要跟足程序去做，味道已經可以跟餐廳比較了。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好， 昨天先頭嘅片就係拍嘅。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>就介紹咗我整嗰個魚香茄子肉絲。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>點不知我個女就打電話返嚟話， 喂， 老頭， 我唔返去食飯喎。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>有嘢做， 咁冇計啦， 所以就冇整到。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>正正我可以同大家分享一下隔夜餸點樣整。</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>其實都係一樣， 呢個包裝就用呢個密實袋。</p></a>
+				<a href="#00:00:37.00" id="00:00:37.00" class="lt" onclick="jumptoTime(37, this.id)"><p>呢啲密實袋就吞咗空氣出嚟， 咁我可以洗好茄子， 都保持返個色。</p></a>
+				<a href="#00:00:49.00" id="00:00:49.00" class="lt" onclick="jumptoTime(49, this.id)"><p>不過都有少少氧化， 但唔緊要啦。</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>呢啲氧化， 有少少氧化， 但唔緊要啦， 都食得嘅。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>跟住完之後， 昨日整好哂啲材料， 結果都係冇用到。</p></a>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>有蔥啦， 鹹魚啦， 佐料啦， 咁我而家拎開佢啦。</p></a>
+				<a href="#00:01:21.00" id="00:01:21.00" class="lt" onclick="jumptoTime(81, this.id)"><p>咁其實冇乜所謂嘅， 屋企自己整， 一日半日包裝好佢嘅話， 就問題不大嘅。</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>有啲蔥呀， 芫茜呀， 鹹魚呀， 洗好咗嘅肉絲啦。</p></a>
+				<a href="#00:01:43.00" id="00:01:43.00" class="lt" onclick="jumptoTime(103, this.id)"><p>我都未醃㗎， 現撈現賣， 咁我而家即刻撈咗佢先。</p></a>
+				<a href="#00:01:48.00" id="00:01:48.00" class="lt" onclick="jumptoTime(108, this.id)"><p>唔使洗㗎啦， 因為昨日已經洗乾淨啦， 咁呢個時候呢就好簡單啦。</p></a>
+				<a href="#00:01:57.00" id="00:01:57.00" class="lt" onclick="jumptoTime(117, this.id)"><p>咁呢度大概都係八兩到， 所以落半斤鹽啦。</p></a>
+				<a href="#00:02:1.00" id="00:02:1.00" class="lt" onclick="jumptoTime(121, this.id)"><p>咁我睇呢度啦， 半斤鹽啦， 一斤糖啦。</p></a>
+				<a href="#00:02:10.00" id="00:02:10.00" class="lt" onclick="jumptoTime(130, this.id)"><p>跟住然之後， 生粉啦， 跟住然之後， 少少嘅雞粉點味啦， 少少得㗎啦。</p></a>
+				<a href="#00:02:24.00" id="00:02:24.00" class="lt" onclick="jumptoTime(144, this.id)"><p>跟住然之後呢， 呢個係鹽啦。</p></a>
+				<a href="#00:02:29.15" id="00:02:29.15" class="lt" onclick="jumptoTime(149, this.id)"><p>胡椒碎啦。</p></a>
+				<a href="#00:02:31.15" id="00:02:31.15" class="lt" onclick="jumptoTime(151, this.id)"><p>跟住然之後呢， 就係麻油啦。</p></a>
+				<a href="#00:02:37.15" id="00:02:37.15" class="lt" onclick="jumptoTime(157, this.id)"><p>多與少， 自己決定下。</p></a>
+				<a href="#00:02:40.15" id="00:02:40.15" class="lt" onclick="jumptoTime(160, this.id)"><p>有人鍾意香啲， 有人唔鍾意咁香。</p></a>
+				<a href="#00:02:44.15" id="00:02:44.15" class="lt" onclick="jumptoTime(164, this.id)"><p>跟住然之後生抽啦。</p></a>
+				<a href="#00:02:47.15" id="00:02:47.15" class="lt" onclick="jumptoTime(167, this.id)"><p>大概呢就一茶匙到啦。</p></a>
+				<a href="#00:02:49.15" id="00:02:49.15" class="lt" onclick="jumptoTime(169, this.id)"><p>跟住然之後呢， 我地就落少少蠔油去增味啦。</p></a>
+				<a href="#00:02:58.75" id="00:02:58.75" class="lt" onclick="jumptoTime(178, this.id)"><p>大家有冇見到我未落梳打粉，呢個時候我落油，油可以落多少少，呢個就係農家嘅醃法，就可以做現煮現賣，因為隔咗嘢，水就有少少乾，呢個時候我就落少少水，因為我好少肉絲，所以我大概係20ml水，跟住我就撈佢，撈到佢乾為止，平時我同大家講最後封油，呢個就唔使封油，因為我中途已經落水油落去，一齊醃。</p></a>
+				<a href="#00:04:0.95" id="00:04:0.95" class="lt" onclick="jumptoTime(240, this.id)"><p>通常現煮現賣都係咁樣做，唔使落梳打粉，梳打粉即刻撈即刻用，其實冇意思，只有隔咗一夜，佢先至會有作用，撈到佢明明加咗水，大家睇下係咪開始乾，但都未夠，再撈到佢起膠，再撈到佢更加食曬水為止，然後粉會係外層形成保護膜，可以令到肉絲非常非常之滑，另外開肉絲嗰部分，希望大家要留意，要橫切千萬唔好直切。</p></a>
+				<a href="#00:04:52.95" id="00:04:52.95" class="lt" onclick="jumptoTime(292, this.id)"><p>如果唔係肉絲就會好硬，大家睇下，我撈到幾乾，OK，中菜黎講，大範中菜，要撈嘢嘅話，你撈得靚越靚嘅話，其實就已經係贏咗一半，呢個時候我就開鑊，炸茄子，拿出一隻碗，待會用來隔油，先收起其他東西，現在燒鑊，因為待會再隔油，所以要先抹乾，茄子要上油或者油炸，油炸不代表多油，我現在用廚房紙隔起茄子，pipeline hepatbeing。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:17.33" id="00:06:17.33" class="lt" onclick="jumptoTime(377, this.id)"><p>>-，merak，Helen，discretion，iOS，antioxid ph Salut，overl tal，ева，돌，Grey，겠�immen，borders</p></a>
+				<a href="#00:06:17.27" id="00:06:17.27" class="lt" onclick="jumptoTime(377, this.id)"><p>à，Tracy</p></a>
+				<a href="#00:06:21.47" id="00:06:21.47" class="lt" onclick="jumptoTime(381, this.id)"><p>roasted，bauen</p></a>
+				<a href="#00:06:19.43" id="00:06:19.43" class="lt" onclick="jumptoTime(379, this.id)"><p>lump network，olor，炸茄子一定要油溫夠高，雖然大家見到我落好多油，但一隔起它之後，吸收油份，茄子就自然沒有那麼多油，炒的時候就只落少許油，我首先用濕的筷子試一下，聽到嗎?沒有起泡，現在開始起泡，但起得很慢，我稍為搖一搖，因為邊邊有點熱，我一放進去，如果要起大泡，溫度才夠，為了大量製作，所以要用一隻篩子。</p></a>
+				<a href="#00:08:13.77" id="00:08:13.77" class="lt" onclick="jumptoTime(493, this.id)"><p>請別忘了分享出去並按一個讚喔 並且記得訂閱我們的頻道 才能收到最新消息喔 並且記得分享給你的朋友 才能收到最新消息喔，稍為弱弱炸一炸就可以了，不用炸到很快的十多二十秒，只要油溫夠高的話就不怕的，然後在這裡，這樣隔掉油，這個篩子不夠大，可以放大一點，好了，然後再來，我們在這裡炸這麼短的時間。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:7.07" id="00:09:7.07" class="lt" onclick="jumptoTime(547, this.id)"><p>其實這麼高溫的油很快熟，OK，炸這麼短的時間，就是讓它不要吸油吸得這麼厲害，約略輕輕炸十多二十秒就可以了，在上一次魚香茄子那裡，我也有跟大家說過，moves</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:2.66" id="00:10:2.66" class="lt" onclick="jumptoTime(602, this.id)"><p>sistemas，사가，Special，ны，Does，Crazy，full，Saints，survival，contrad� pilot，Cro Bre finances，щоб，View буде，ifiques，youth</p></a>
+				<a href="#00:10:2.84" id="00:10:2.84" class="lt" onclick="jumptoTime(602, this.id)"><p>ovich，Belle，ood Videos，specified，wire，ess</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:5.12" id="00:10:5.12" class="lt" onclick="jumptoTime(605, this.id)"><p>Olive，ietet，Bella，라고，pand shepherd</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:5.00" id="00:10:5.00" class="lt" onclick="jumptoTime(604, this.id)"><p>interchange crystal，laughter，sadness，��이，strikes，fact 재，horm，must，zero，laboratory，seçwer，teddy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:8.50" id="00:10:8.50" class="lt" onclick="jumptoTime(608, this.id)"><p>�69，oss，隻，Na，Patch，Military，Gülme，advocate，bomb，quantidade antig Rey，кур</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:56.36" id="00:09:56.36" class="lt" onclick="jumptoTime(596, this.id)"><p>переж，urst</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:52.64" id="00:09:52.64" class="lt" onclick="jumptoTime(592, this.id)"><p>yapt，Depression，inqu לה，indoors，Bryce，meter，нако，valt，ött ME tragen，ivory，� Incre could，ciroad，��，lég부터，binge，約略輕輕炸一炸便可以，好，最後那兩塊，茄子一定不可以炒，一炒就變黑，這時稍為加熱，讓水蒸氣出來，然後可以熄火。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:6.31" id="00:11:6.31" class="lt" onclick="jumptoTime(666, this.id)"><p>這時可以隔走油，令茄子乾一點，如果有多餘的油流出來可以用，這些就儲起，等一會兒，都不用，直接就可以了，我在這邊倒，因為我怕會倒血，這時我們要做甚麼呢，這次肉絲不是隔走油，我要令它處於最佳滑流狀態，所以這次肉絲我用chirp的方式，這水要一段時間，我先關機，大家看到水滾了，這時我開始處理肉絲，肉絲拌了很短時間，十多二十分鐘。</p></a>
+				<a href="#00:12:23.31" id="00:12:23.31" class="lt" onclick="jumptoTime(743, this.id)"><p>這時我們就下去，記住一下去不要手多，想肉絲滑就一定要用點耐心，不要太多手，記住，弄滑口也是一樣，弄滑肉粒也是一樣，如果大家有跟開我的影片的話，都知道手多的結果會是怎樣，其實都不用我提，大家跟著我做，不手多，像我現在這樣，在這裡說廢話，說破長野，等它慢慢自己凝結，因為原理很簡單，如果在它未凝結的情況下。</p></a>
+				<a href="#00:13:6.54" id="00:13:6.54" class="lt" onclick="jumptoTime(786, this.id)"><p>你去攪拌它，粉就會掉，這樣就不能保護肉心，肉汁就會流出來，肉汁一流出來，自然就會韌，所以大家不用擔心，這個時候我們很溫柔地攪拌，不要攪散它，最多就是將表面的那些，按一按它，讓它碰到水，讓它熟，大家看到那些泡，那些泡是甚麼來的呢?</p></a>
+				<a href="#00:13:37.54" id="00:13:37.54" class="lt" onclick="jumptoTime(817, this.id)"><p>就是你甩掉的粉和油，混在一起就變成一泡了，這樣看它，這些開始泡面了，怎樣才算熟呢?它會自己甩的，然後熟了的肉就會泡面，這樣就行了，這樣肉絲就會很嫩很滑了，大家看到蒲面的就可以了，中間還未煮開，所以這個時候我們就將邊邊的盤到中間，就逼中間的走去邊邊，這樣就很快了，OK了 行了，熄火。</p></a>
+				<a href="#00:14:45.08" id="00:14:45.08" class="lt" onclick="jumptoTime(885, this.id)"><p>哇!給大家看看，肉絲滑不滑?</p></a>
+				<a href="#00:14:50.88" id="00:14:50.88" class="lt" onclick="jumptoTime(890, this.id)"><p>單是看已經覺得很滑了，好了，接着我们就可以煮食了，將邊邊油、粉、漬全部抹走，記得不用用洗潔精洗，我先頭就已經介紹咗有呢個係用呢個紅油啦，係咪如果大家呢係更加想野味係有嗰個四川嘅風味嘅話呢，就落呢啲嘅四川豆瓣醬記住呀，我哋香港嘅專業廚房呢佢哋呢就會用本地產嘅所謂嘅所謂嘅四川豆瓣醬，其實係唔啱嘅ok嗰啲呢係冇四川味嘅點解我哋要用四川味呢。</p></a>
+				<a href="#00:16:23.39" id="00:16:23.39" class="lt" onclick="jumptoTime(983, this.id)"><p>落少少油得㗎啦咁呢點解我哋要用四川味嘅豆瓣醬呢因為四川嘅豆瓣醬呢，係有蠶豆喺入面嘅嗰個味道係唔一樣㗎啦大家先係落咗呢個鹹魚落去煎先，咁呢大家見到我係介紹原料嘅時候係一啲薑都冇㗎係咪係呀，點解呀因為因為呢我要係煎呢個啦咁就生細火啦而家咁咁咁大火呀生細少少啦，咁呢就係將呢啲鹹魚乾呢鹹魚呢就係煎到佢香口為止咁樣呢就逼走曬佢啲腥味嘅。</p></a>
+				<a href="#00:17:11.39" id="00:17:11.39" class="lt" onclick="jumptoTime(1031, this.id)"><p>就唔需要落薑㗎ok咁呢見到啦佢開始呢就係呢個金黃色啦呢個時候呢我哋再落呢個蒜蓉辣椒，本身呢我落呢一隻嘅紅油呢係有麻味嘅啫唔辣㗎呀咁呢一隻嘅四川嘅豆瓣醬呢，呢一隻叫四川之雲呀係咪川菜之雲呀就皮軟豆瓣醬咩牌子都好啦ok，咁呢佢都係唔辣嘅所以大家可以放心呀嗱好啦嗱而家呢個蒜蓉又得囉喎，呢個係鹹魚又得囉好香嘅鹹魚味啦呢個時候呢我哋就落呢個麻辣油呀。</p></a>
+				<a href="#00:18:5.39" id="00:18:5.39" class="lt" onclick="jumptoTime(1085, this.id)"><p>咁等陣間呢嗰個菜呢嗰個紅油就嚟到嚟啦，好跟住然之後呢我哋就，落呢個，皮軟豆瓣醬，咁呢個皮軟豆瓣醬呢我哋落一茶匙就夠㗎啦佢好鹹㗎，等陣間我哋調味嘅時候要計埋佢嗰個鹹味呀，好，跟住然之後，得囉喎夠曬香口囉喎呢個時候我哋就落水啦，咁呢大概呢落水呢，200ml，呢一個餸呢主要嘅辣味嘅來源就先頭落嗰啲辣椒而唔係先頭落嗰啲，四川豆瓣醬呀唔係落嗰啲。</p></a>
+				<a href="#00:19:3.45" id="00:19:3.45" class="lt" onclick="jumptoTime(1143, this.id)"><p>呢個係麻辣油ok得唔得，咁所以呢大家如果想唔咁辣嘅話呢直頭唔落嗰啲都得嘅，呢個時候呢，我哋呢就落少少嘅，蠔油啦，哇!好勁呀!</p></a>
+				<a href="#00:19:31.23" id="00:19:31.23" class="lt" onclick="jumptoTime(1171, this.id)"><p>好!呢個時候我哋就將，嗰啲茄子倒落去，呢個時候如果發覺水少嗰頭嘅話，咁而家我落少咗水啦，咁就落多啲水啦，落多少少水啦，似乎水仍不夠，大家看到，我先頭炸得油量不夠多，炸得不夠透，所以仍有少少黑色，茄子最適合炒的地方是，它很容易變黑，然後炆茄子，炆多久呢，我們給它4分鐘，4分鐘之後，現在計時。</p></a>
+				<a href="#00:20:46.28" id="00:20:46.28" class="lt" onclick="jumptoTime(1246, this.id)"><p>4分鐘之後再開機，4分鐘過了，茄子就夠軟，好，這個時候我們就將肉絲全部倒進去，大家看到很多渣滓都跑出來了，這個時候我們就可以稍微調一下味，放兩匙糖，然後放少許雞粉，然後放蔥，有芫茜的話就加上去，基本上再加少少生抽調味，本身肉絲又鹹 豆瓣醬又鹹，所以大家不用加太重口的調味，基本上可以了。</p></a>
+				<a href="#00:22:27.02" id="00:22:27.02" class="lt" onclick="jumptoTime(1347, this.id)"><p>是不是，好 接著我就整起它，本身呢個茄子呢大家如果係鍾意嘅話呢，鍾意係淋啲就得，鍾意軟身啲嘅都冇問題嘅ok，咁就視乎大家鍾意啦，接着再放些葱花，我做個close up，然後就可以做個總結，其實這個茄子最討厭的地方就是它經常發黑，我用了很多方法，有蒸的時候上油或者加醋，炒的時候要記住茄子是不能炒的。</p></a>
+				<a href="#00:24:2.66" id="00:24:2.66" class="lt" onclick="jumptoTime(1442, this.id)"><p>這是第一，第二茄子一定要多油，當然你說是不是多到全部都是油呢?</p></a>
+				<a href="#00:24:12.66" id="00:24:12.66" class="lt" onclick="jumptoTime(1452, this.id)"><p>大家看到我這裡不算很多油，可以嗎?</p></a>
+				<a href="#00:24:17.66" id="00:24:17.66" class="lt" onclick="jumptoTime(1457, this.id)"><p>我經常說的，每一樣食材都有適當的油份，你不可以一下子說少油少鹽，如果少油，那些食材是要多油的，例如矮瓜，是要多油的，才可以保持鮮色，你放少油，它發黑就不要怨了，這是第一，第二就是記住矮瓜是不能炒的，所以大家看到我每次做矮瓜，基本上我都沒有炒，都是用油去掃，或者先拉油，先炸它，然後我每次都是先開醬，然後開汁。</p></a>
+				<a href="#00:25:2.66" id="00:25:2.66" class="lt" onclick="jumptoTime(1502, this.id)"><p>然後中途煮好汁，我才放茄子下去，這樣就可以保持顏色會比較好，但我不是做得太好，但不要緊，過程和道理大家都明白就行了，好，說到肉絲，這次我用另一種做法，不是走油，是用灼的，大家都知道，我們做肉粒也好，做滑口也好，做肉絲也好，大家想滑的話，記得灼的時候一定不能手多，等到粉凝結後才拆開，如果不早點攪，粉未凝結，攪散了粉的話。</p></a>
+				<a href="#00:25:49.66" id="00:25:49.66" class="lt" onclick="jumptoTime(1549, this.id)"><p>就會導致粉的保護層沒了，肉汁會流走，結果會怎樣?</p></a>
+				<a href="#00:25:58.37" id="00:25:58.37" class="lt" onclick="jumptoTime(1558, this.id)"><p>當然會令到肉絲粗糙，這是第一，第二，切肉絲的時候一定要，我都給大家看過很多次了，一定要橫紋切，只要橫紋切，不是順紋切的話，通常肉類都不會粗糙得去哪裡，記住，記住，怎樣可以令到肉絲更滑的方法了沒有?</p></a>
+				<a href="#00:26:25.37" id="00:26:25.37" class="lt" onclick="jumptoTime(1585, this.id)"><p>記住，不要手多，第二，很多人以為這個魚香茄子一定是很辣的，不是的，如果大家用正宗的四川調味料的話，其實是可以輕輕辣，有少許口感，就不會一吃下去就覺得很辣，可以嗎?</p></a>
+				<a href="#00:26:50.37" id="00:26:50.37" class="lt" onclick="jumptoTime(1610, this.id)"><p>所以大家看到我用了麻辣紅油，然後再用皮軟的豆瓣醬，這兩樣東西加起來，我可以跟大家說只有我們香港產的豆瓣醬的五分之一的辣度，它不辣的，但是很香，OK，還有用四川的豆瓣醬的話，它有一個特色，就是因為它加了蠶豆，所以它的豆瓣醬的香味，跟我們香港產的豆瓣醬是完全兩回事，香港產的，它說是四川豆瓣醬。</p></a>
+				<a href="#00:27:26.37" id="00:27:26.37" class="lt" onclick="jumptoTime(1646, this.id)"><p>實質上它根本就不是四川味，只有辣，倒不如說是貴州辣椒醬還是湖南辣椒醬，不過它又不是，貴州辣椒醬它又少了那種香味，湖南辣椒醬它又不夠辣，OK，行不行?</p></a>
+				<a href="#00:27:43.37" id="00:27:43.37" class="lt" onclick="jumptoTime(1663, this.id)"><p>很簡單，不算是太複雜，但是也有很多程序要做，希望大家喜歡，記住，這個要滑的肉絲，記住要怎樣做，OK，好不好?</p></a>
+				<a href="#00:27:58.37" id="00:27:58.37" class="lt" onclick="jumptoTime(1678, this.id)"><p>好了，今天不說了，可以吃飯了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:0.37" id="00:28:0.37" class="lt" onclick="jumptoTime(1680, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

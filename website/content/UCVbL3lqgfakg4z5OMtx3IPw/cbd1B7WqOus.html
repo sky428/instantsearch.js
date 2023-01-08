@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——西芹炒牛肉，一道只需花費十數分鐘卻其味無比，又含有丰富營養的炒菜就完成了，只要跟著做新手也可以變大廚！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'cbd1B7WqOus',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——西芹炒牛肉，一道只需花費十數分鐘卻其味無比，又含有丰富營養的炒菜就完成了，只要跟著做新手也可以變大廚！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係開飯的時間。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>今日想同大家分享一個菜式，就是西芹炒牛肉。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>材料很簡單，做法亦都非常簡單。</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>首先有蒜蓉，薑片和葱，為何要放薑片呢?</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>因為用來跟西芹汆水時用的。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>牛肉方面，大家都知道我經常自己醃牛肉，自己開牛肉。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>如果大家想知道怎樣醃牛肉，就麻煩大家移動肉部，去消失的名菜黃埔牛肉炒蛋的前傳，就開牛肉和醃牛肉。</p></a>
+				<a href="#00:01:6.00" id="00:01:6.00" class="lt" onclick="jumptoTime(66, this.id)"><p>我有特別的方法醃牛肉，因為大家知道我喜歡用急凍牛肉，如何令鹹魚變生，死魚凍活魚衣，可以令牛肉味出來，大家可以參考一下。</p></a>
+				<a href="#00:01:23.00" id="00:01:23.00" class="lt" onclick="jumptoTime(83, this.id)"><p>今日值得介紹的是，為何我會做西芹炒牛肉，一來有牛肉，一來要想用什麼材料配牛肉。</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>大家可以到街市買菜，見到有西芹賣，不過這隻西芹不是大家平時吃和買的西芹。</p></a>
+				<a href="#00:01:48.83" id="00:01:48.83" class="lt" onclick="jumptoTime(108, this.id)"><p>大家看到這隻西芹是特別綠的，如果大家之前看過我的影片，都知道我西芹是會刨皮的。</p></a>
+				<a href="#00:01:56.83" id="00:01:56.83" class="lt" onclick="jumptoTime(116, this.id)"><p>但我這隻西芹是沒有刨皮的，而且顏色是深很多的。</p></a>
+				<a href="#00:02:2.83" id="00:02:2.83" class="lt" onclick="jumptoTime(122, this.id)"><p>這是什麼西芹來的?香港種的本地西芹。</p></a>
+				<a href="#00:02:7.83" id="00:02:7.83" class="lt" onclick="jumptoTime(127, this.id)"><p>它有什麼特色呢?我之前都說過，葉子是比較青綠，比較深色。</p></a>
+				<a href="#00:02:19.83" id="00:02:19.83" class="lt" onclick="jumptoTime(139, this.id)"><p>除了之外，它的外形比我們在超市看到的西芹，或者內地工廠的西式西芹，是會比較皮一點。</p></a>
+				<a href="#00:02:36.83" id="00:02:36.83" class="lt" onclick="jumptoTime(156, this.id)"><p>皮的意思是它不會紮得很整齊，而是它的枝葉是散開的。</p></a>
+				<a href="#00:02:46.83" id="00:02:46.83" class="lt" onclick="jumptoTime(166, this.id)"><p>這是第一，第二，它很容易認出來，一見到它散開之餘，還很髒，很多泥黏著，肯定是本土種的。</p></a>
+				<a href="#00:02:55.83" id="00:02:55.83" class="lt" onclick="jumptoTime(175, this.id)"><p>然後它的枝葉就沒有正式西式的西芹，或者內地工廠的西芹，是那麼粗壯的。</p></a>
+				<a href="#00:03:5.83" id="00:03:5.83" class="lt" onclick="jumptoTime(185, this.id)"><p>雖然它是比較小，但是它的口感比西芹好很多。</p></a>
+				<a href="#00:03:13.83" id="00:03:13.83" class="lt" onclick="jumptoTime(193, this.id)"><p>為什麼我不刨皮呢?我之前在介紹西芹菜式的時候，我有說過為什麼我會刨皮。</p></a>
+				<a href="#00:03:27.83" id="00:03:27.83" class="lt" onclick="jumptoTime(207, this.id)"><p>大家有沒有發覺，現在這是一個斷面，這個西芹沒有了白色一點點，白色一點點的橫切面是什麼呢?根。</p></a>
+				<a href="#00:03:36.83" id="00:03:36.83" class="lt" onclick="jumptoTime(216, this.id)"><p>吃下去會起渣的，但是香港種的西芹這種，是很容易的。</p></a>
+				<a href="#00:03:43.86" id="00:03:43.86" class="lt" onclick="jumptoTime(223, this.id)"><p>雖然它硬一點，但是它竟然是沒有渣的，所以我不刨皮就是這個意思。</p></a>
+				<a href="#00:03:50.36" id="00:03:50.36" class="lt" onclick="jumptoTime(230, this.id)"><p>還有大家看到它是很青綠的。</p></a>
+				<a href="#00:03:52.56" id="00:03:52.56" class="lt" onclick="jumptoTime(232, this.id)"><p>除了這些分別之外，貴一點，如果在百佳買一條西芹，十多塊錢，就已經有一磅多，即是一斤半。</p></a>
+				<a href="#00:04:6.16" id="00:04:6.16" class="lt" onclick="jumptoTime(246, this.id)"><p>但是我這裡同樣的份量，我今天買了25塊，行不行?</p></a>
+				<a href="#00:04:12.06" id="00:04:12.06" class="lt" onclick="jumptoTime(252, this.id)"><p>貴一點，但是支持一下自己地方的東西。</p></a>
+				<a href="#00:04:15.86" id="00:04:15.86" class="lt" onclick="jumptoTime(255, this.id)"><p>再加上它本身真的好吃，所以也值得貴一點去買。</p></a>
+				<a href="#00:04:21.06" id="00:04:21.06" class="lt" onclick="jumptoTime(261, this.id)"><p>大家經常看到，現在每個街市都很流行，有什麼本地的有機農菜。</p></a>
+				<a href="#00:04:27.56" id="00:04:27.56" class="lt" onclick="jumptoTime(267, this.id)"><p>其實它都是屬於本地的有機農菜的一種。</p></a>
+				<a href="#00:04:31.06" id="00:04:31.06" class="lt" onclick="jumptoTime(271, this.id)"><p>稍微貴一點。</p></a>
+				<a href="#00:04:32.86" id="00:04:32.86" class="lt" onclick="jumptoTime(272, this.id)"><p>好了，除了是以上介紹的分別之外，其實它處理起來和我們一般所見到的西芹的處理方式是一模一樣的。</p></a>
+				<a href="#00:04:43.86" id="00:04:43.86" class="lt" onclick="jumptoTime(283, this.id)"><p>好了，我現在介紹完原料，介紹完它的歷史，那我就開始先來煎牛肉。</p></a>
+				<a href="#00:04:55.86" id="00:04:55.86" class="lt" onclick="jumptoTime(295, this.id)"><p>記不記得為什麼我要先煎牛肉，不是先和西芹汆水?</p></a>
+				<a href="#00:05:0.86" id="00:05:0.86" class="lt" onclick="jumptoTime(300, this.id)"><p>原因呢?</p></a>
+				<a href="#00:05:3.36" id="00:05:3.36" class="lt" onclick="jumptoTime(303, this.id)"><p>原因就是我可以利用煎牛肉的油去灼熄它，這樣我就少做一道工夫，還有一個好處，不用洗鍋，為什麼?</p></a>
+				<a href="#00:05:16.44" id="00:05:16.44" class="lt" onclick="jumptoTime(316, this.id)"><p>因為煎完牛肉之後，無論你多乾淨，你處理得多好也好，它都會有一點點的鍋粒，黏在底部，OK?</p></a>
+				<a href="#00:05:28.12" id="00:05:28.12" class="lt" onclick="jumptoTime(328, this.id)"><p>行不行?</p></a>
+				<a href="#00:05:28.76" id="00:05:28.76" class="lt" onclick="jumptoTime(328, this.id)"><p>在這個時候，我們就需要洗鍋，你說我不洗鍋行不行?</p></a>
+				<a href="#00:05:36.52" id="00:05:36.52" class="lt" onclick="jumptoTime(336, this.id)"><p>行，然後很多…，你一燒鍋，就是你要炒菜的時候，你要燒鍋，很多鑊屎跑出來，那如果你不想那些鑊屎跑出來，那怎麼辦?</p></a>
+				<a href="#00:05:49.76" id="00:05:49.76" class="lt" onclick="jumptoTime(349, this.id)"><p>那燒鍋的過程就縮短一點，那燒鍋的過程縮短一點，那隻鍋又不夠高溫，你想炒得好吃，有鑊氣又不行，明白嗎?</p></a>
+				<a href="#00:05:58.48" id="00:05:58.48" class="lt" onclick="jumptoTime(358, this.id)"><p>所以我們作為家廚我經常說的，我們不要一本通書看到老，我現在在燒鍋，一直在說，不要一本通書看到老，人家說這樣，專業廚房是這樣，我要做專業味道，我就要跟足程序，不是的，我們是要腦袋懂得變通一下，怎樣?</p></a>
+				<a href="#00:06:20.40" id="00:06:20.40" class="lt" onclick="jumptoTime(380, this.id)"><p>目標一定是炒到最有鑊氣最好吃，是不是?</p></a>
+				<a href="#00:06:23.52" id="00:06:23.52" class="lt" onclick="jumptoTime(383, this.id)"><p>好了，現在，起煙了，那我放點油進去，多與少就視乎大家，但是大家要記住，剩下的油，待會不用攪拌，跟這個在篩汽水的時候，我們就不用攪拌了，OK，那牛肉抓油，怎樣抓油?</p></a>
+				<a href="#00:06:42.00" id="00:06:42.00" class="lt" onclick="jumptoTime(402, this.id)"><p>抓油跟煎有什麼分別?</p></a>
+				<a href="#00:06:43.32" id="00:06:43.32" class="lt" onclick="jumptoTime(403, this.id)"><p>就是大火跟小火的分別，都是多過頭，吃不完，那剩下的我們煮麵吃，或者明天炒乾炒牛肉米粉也好，跟大家分享一下，剛才說不要一本湯書就看見了，我們目標自然一定是，跟希望做到酒樓一樣那麼好味道，和很有鑊氣，但同時間我們不可能跟足酒樓的程序，因為廚房沒有那麼大地方，器具一定沒有職業廚房那麼專業，所以在程序上我們要變通。</p></a>
+				<a href="#00:07:32.34" id="00:07:32.34" class="lt" onclick="jumptoTime(452, this.id)"><p>我現在先煎牛肉再焯菜，我已經是第二次做了，之前那個是什麼呢，之前那個就是牛肉炒菜心，牛肉炒菜丸，大家都看見我絕對是十足十的鑊氣，絕對是十足十專業的味道，但是我要變通一下，家廚可以嗎，好了 現在開始反轉了，這個時候為什麼我用大火去煎它呢，即是跟它走油呢，原因是目的就是要令它產生煤鈉反應，煤鈉反應是什麼呢。</p></a>
+				<a href="#00:08:7.54" id="00:08:7.54" class="lt" onclick="jumptoTime(487, this.id)"><p>是一個科學解釋，就是令到它的表面因為高溫而產生結焦的現象，然後令到牛肉的心不熟，這樣既可以增加焦香感，但同時間又可以令到牛肉嫩滑的一種處理方式，OK 行了，等等 不小心關火了，好 關小火，然後現在先拿起牛肉，我再次給大家看到跟上次炒菜心一樣，牛肉半生熟的，最多去到八成熟，因為一炒一爆炒牛肉就很快熟了。</p></a>
+				<a href="#00:08:52.14" id="00:08:52.14" class="lt" onclick="jumptoTime(532, this.id)"><p>如果大家怕自己技術不夠，哎呀 我不夠你手快，那怎麼辦，可以牛肉只煎一邊，另一邊就任由它保持肉色就算了，OK 行不行，我現在是不是沒有黏鍋底 是不是，大家看不看到 鍋底其實是有些漬在的，這些漬就是牛肉的醃料剩下的，等下如果直接燒鍋的話 它一定會起鑊撈的，看不看得到 一定會起鑊屎的，你炒出來的樣子就不漂亮 是不是。</p></a>
+				<a href="#00:09:26.09" id="00:09:26.09" class="lt" onclick="jumptoTime(566, this.id)"><p>如果你不想它有鑊撈的 或者鑊屎沒那麼厲害，那你就減短這個燒鑊的時間，結果又不夠高溫 又不夠鑊氣，即是你的那道菜兩頭不到岸，所以一定會逼著你去洗鑊的，那你洗鑊就多了時間 是不是，就是自己找自己的品 是不是，好了 現在這個時候我就加水了，這次這個菜我就兩個shot，一個shot就是直至到現在我加水燒鑊為止。</p></a>
+				<a href="#00:10:7.09" id="00:10:7.09" class="lt" onclick="jumptoTime(607, this.id)"><p>OK 那大家看著我怎樣調味，那另外一個shot我就直接撈起西芹的時候，我就直接爆炒 OK，那所以呢 其實有些人說我，喂 你的影片很長很悶 很多東西說，直至到現在為止，我是不是介紹了香港本土的種的西芹 是不是，我是不是講了為什麼要這樣弄牛肉 是不是，我也講了為什麼要這樣調味 是不是，好了 一匙就夠了 一匙鹽。</p></a>
+				<a href="#00:10:42.09" id="00:10:42.09" class="lt" onclick="jumptoTime(642, this.id)"><p>唉 只顧著說話的時候都是眉飛色舞 忙我，好 一匙糖 一如以往，那我這裡就不多解釋為什麼我會加雞粉和糖了，這個是我令到炒菜 焯菜保持常綠的一個秘技，因為剛才我用回走油牛肉的油，所以現在不用加油了，那我上鑊蓋了，好了 到這裡我就關機了，等一會兒焯好 我開始撈的時候 我再開機，唉 不好意思 興奮的那一刻我忘記了一件事。</p></a>
+				<a href="#00:11:20.09" id="00:11:20.09" class="lt" onclick="jumptoTime(680, this.id)"><p>西芹要加的 就是什麼呢，那些薑片焯的時候 焯水的時候就要加薑片的 OK，那我這個補回這個shot的，好 等一會兒炒的時候開始再見了，好了 大家 現在水滾了，我都煮了一會兒 等薑出一出味，然後馬上把西芹放上去，西芹汆水是一定不可以久的，OK 所以它一放下去就會變色了，OK 所以你想吃軟和脆之間。</p></a>
+				<a href="#00:12:6.10" id="00:12:6.10" class="lt" onclick="jumptoTime(726, this.id)"><p>其實可能相差不超過20秒，即是它一轉色 如果你想吃脆就馬上拿起，如果你想吃軟一點 就馬上撈起它，現在可以了 我先關小火，我不想浪費溫度 所以我關小火，可能我這個動作會比較浪費一點煤氣，但是你關小火 如果你是快手的話，那一分鐘或者十多二十秒其實是不礙事的，當然你也可以說 積少成多，但是有時候好吃的東西就真的。</p></a>
+				<a href="#00:12:47.30" id="00:12:47.30" class="lt" onclick="jumptoTime(767, this.id)"><p>在這方面不講究那麼多，烹一烹它 讓水立刻流出來，OK，好 我現在馬上開大火，然後我倒掉水，我稍微用水喉水沖一沖，這裡不讓大家看了 無謂看了 是不是，這樣就快手一點，好 鍋子現在這樣是不是很乾淨，等同洗了鍋 是不是，我等下炒的時候就不用怕有鍋撈 是不是，上一次炒菜心那裡 還是哪裡呢?</p></a>
+				<a href="#00:13:33.90" id="00:13:33.90" class="lt" onclick="jumptoTime(813, this.id)"><p>有人問過我 你為什麼要這樣做?有什麼意義?</p></a>
+				<a href="#00:13:37.90" id="00:13:37.90" class="lt" onclick="jumptoTime(817, this.id)"><p>那我這一次就解釋多一點 OK?</p></a>
+				<a href="#00:13:40.90" id="00:13:40.90" class="lt" onclick="jumptoTime(820, this.id)"><p>行不行?那現在鍋子就很乾淨了，那現在燒鍋，那燒鍋就再重新再講一講，就是怎樣?什麼步驟?</p></a>
+				<a href="#00:13:56.90" id="00:13:56.90" class="lt" onclick="jumptoTime(836, this.id)"><p>燒鍋大火 燒到它見煙 起煙了，接著下油 再見煙 接著下料爆，爆一會兒 才下正式的炒 要炒的材料，那這個過程就會很獲氣了，不一定 大家不一定不用怕，不一定要學我這樣每次都要搶火，因為我已經是講了三十多年在家裡玩火的經驗，所以我是不怕的 OK?</p></a>
+				<a href="#00:14:24.90" id="00:14:24.90" class="lt" onclick="jumptoTime(864, this.id)"><p>那大家如果怕的話 記住是高溫就可以了，不一定要搶火的，好了 現在下油了，那油不用太多的 一茶匙多一點就可以了，最主要的目的是什麼?滑鑊 OK?</p></a>
+				<a href="#00:14:39.90" id="00:14:39.90" class="lt" onclick="jumptoTime(879, this.id)"><p>滑鑊呢 職業那些就知道是什麼了，那就讓它好炒一點 OK?</p></a>
+				<a href="#00:14:45.90" id="00:14:45.90" class="lt" onclick="jumptoTime(885, this.id)"><p>那現在又起煙了，那下蒜頭下去爆一爆先，不要心急 稍微爆一爆蒜頭，見到蒜頭現在有金黃色了，然後下下去，直至現在，大家是否看到西芹是否很脆?</p></a>
+				<a href="#00:15:15.27" id="00:15:15.27" class="lt" onclick="jumptoTime(915, this.id)"><p>這就是香港種植的西芹和外地輸入的西芹的分別，這時候一樣，我先煎調味，一匙左右，所以加鹽一茶匙，我已經解釋過為何要加酒調味，炒菜會比較均勻，一匙糖，然後加少許雞粉，雞粉的作用等同於專業廚房的高湯，它的作用等同於高湯，然後炒均勻後才放牛肉，很快的，等一會兒我的手有油，快炒。</p></a>
+				<a href="#00:16:29.66" id="00:16:29.66" class="lt" onclick="jumptoTime(989, this.id)"><p>这只锅什么都好，唯一不好就是它的手柄很贱，这个时候放葱，然后放少少料酒，我用广东米酒，因为它的酒香很强，如果你不喜欢酒香的话，可以用绍酒，好香了，这个时候，话龙点睛，什么我经常说的，最后放几滴豉油，少少就可以了，要它碰到锅的火气，炒出来的味道就很好吃，好香，我稍微炒一炒，就完事了，熄火。</p></a>
+				<a href="#00:17:33.66" id="00:17:33.66" class="lt" onclick="jumptoTime(1053, this.id)"><p>整个多简单，是不是，我现在用了油焯西芹，到现在这个炒好，五分钟都不用，真的用了五分钟，六分钟左右吧，我多废话，现在上碟了，然后再和大家分享卖相和做总结，因为西芹比较乱，我就摆不了盘，全部放下去，因为前面有个中式锅顶住，没办法，地方小，所以在这个位置摆盘就比较困难，外手外脚，但没办法，因为要给大家看。</p></a>
+				<a href="#00:18:35.66" id="00:18:35.66" class="lt" onclick="jumptoTime(1115, this.id)"><p>我没理由在镜头后面躲起来，给大家看，这样相机就会很脏，因为我的手有油，大家可以看到我拍的视频虽然不是很漂亮，但是画质是挺好的，因为我是用半镜相机拍的，OK?</p></a>
+				<a href="#00:19:3.81" id="00:19:3.81" class="lt" onclick="jumptoTime(1143, this.id)"><p>所以拍得不好，大家多多包涵，好，搞定，好，跟大家做个总结先，唉，这次真棒，拿个抹布，拖一拖先，OK，咁呀，依家咁樣夠唔夠青綠呀，係咪好青綠呀，我已經淨係單單炒菜都成，我諗冇20條都有十幾條片，我條條片嘅炒菜都係好青綠嘅，如果大家一路係追蹤落嚟呢，大家就知道我嘅方法，係唔會失手嘅，OK。</p></a>
+				<a href="#00:19:50.29" id="00:19:50.29" class="lt" onclick="jumptoTime(1190, this.id)"><p>咁就，咁呀依家呢就總結一下啦，西芹炒牛肉就一個字嘅啫，快，要快手，點樣快手呢，卓呢個係即係飛水嘅時候卓西芹呢，十零廿秒頂曬攏一落去一轉色，OK，就即刻可以撈起㗎啦，但係如果你想食淋啲呢，可以放多佢十零廿秒，OK 得唔得先至撈起，咁期間係一直著火㗎，咁第二呢就係同牛肉走友係先做牛肉走友再做呢個卓西芹點解呀，因為我哋可以利用返嗰啲魚油同埋係少咗一次洗鑊嘅時間可以快啲完成。</p></a>
+				<a href="#00:20:36.29" id="00:20:36.29" class="lt" onclick="jumptoTime(1236, this.id)"><p>咁大家都睇到啦，我又卓呢個西芹到即係炒好上盤幾分鐘加埋煎牛肉十分鐘都唔使係咪呀OK，跟住之後調味點呀，如果係菜蔬菜炒肉嘅調味呢一定係調完味之後先至加肉嘅點解呀，因為肉係吸味吸得快過蔬菜嘅，咁所以呢我哋喺加肉之前就一定要調好味，然之後等啲蔬菜稍為掂到啲味吸收咗啲味啦，我哋先放肉咁樣呢一碟炒即係蔬菜炒肉呢先至可以達到肉唔會太咸。</p></a>
+				<a href="#00:21:16.29" id="00:21:16.29" class="lt" onclick="jumptoTime(1276, this.id)"><p>但係蔬菜會有味嘅一個比較均衡嘅效果OK得唔得，咁呢就最後啦關於燒鑊嗰個過程啦咁大家唔慳得嘅記住，所以呢點解一定要洗鑊但係我為免唔洗鑊，所以我喺程序上面同專業廚房係調轉咗嘅OK得唔得，咁呀基本上就係咁多啦，咁呀希望大家鍾意呢啲味蔥啦，咁呀煮完餸我梗係去食飯啦喂。</p></a>
+				<a href="#00:21:50.29" id="00:21:50.29" class="lt" onclick="jumptoTime(1310, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——甜麵豉蒸魚雲，這是古早做法，現代餐館較少見了，但卻是美味非常，有可能比豉汁蒸魚雲更加好味，大家試過就知道了，又一道送飯神器！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jK5yCe7So4c',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——甜麵豉蒸魚雲，這是古早做法，現代餐館較少見了，但卻是美味非常，有可能比豉汁蒸魚雲更加好味，大家試過就知道了，又一道送飯神器！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天想和大家分享什麼呢?</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>我喜歡吃魚雲，所以今天想和大家分享另一道做法的蒸魚雲。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>蒸魚雲不一定只有豉汁蒸魚雲，也不一定只有剁椒蒸魚頭。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>我們還有什麼做法呢?</p></a>
+				<a href="#00:00:38.00" id="00:00:38.00" class="lt" onclick="jumptoTime(38, this.id)"><p>其實鄉下有很多種方法吃魚頭，糟糕了，剛剛做介紹，我已經流口水了，因為實在太過懷念這個味道，今天想和大家分享一個什麼菜式呢?</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>就是面屎蒸魚頭，面屎蒸魚頭應該怎樣做呢?</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>大家看看我怎樣做吧，獨孤一味，魚頭而已，沒有其他東西，免得被人罵我，亂七八糟不乾淨，我這個魚頭不單止買了魚頭，還有我連魚腩一起買了，因為我吃魚頭，沒有什麼肉吃，一來兒子吃肉相，二來我也想和老婆一起分享我的美味，所以我特意買了魚腩，現在打開它，第一件事要做的是什麼，大家記不記得，。</p></a>
+				<a href="#00:01:56.00" id="00:01:56.00" class="lt" onclick="jumptoTime(116, this.id)"><p>當然是要除腥，除腥大家記不記得怎樣做呢，當然是加鹽，其實有很多人都喜歡吃魚頭，但不知道為什麼經常在家裡煮就腥，尤其是吃到後尾枕的位置就很腥，大家不知道為什麼吧?</p></a>
+				<a href="#00:02:24.40" id="00:02:24.40" class="lt" onclick="jumptoTime(144, this.id)"><p>因為沒有做除腥，為什麼酒樓可以做到無腥味呢?</p></a>
+				<a href="#00:02:32.40" id="00:02:32.40" class="lt" onclick="jumptoTime(152, this.id)"><p>原因就是因為它除了腥，我再說一次，這種除腥法是順德人最流行用的，現在世界大同，很多做魚的都懂得用，現在就加點酒，酒大家喜歡吧，這個時候就除腥，我們就要稍微洗一洗，醃一醃，將它全部，尤其是，因為這個魚頭不是很大，連魚腩都只是70元，都算是OK，不算太貴，將它擦一擦，盡量每一個位置，到時大家擦勻了之後。</p></a>
+				<a href="#00:03:29.40" id="00:03:29.40" class="lt" onclick="jumptoTime(209, this.id)"><p>這些魚尤其是這些位置，這些位置，這些膠位，特別容易藏腥味，所以我們就要洗乾淨，擦乾淨，用手擦乾淨，記住，做好這個動作之後，我們就可以，這塊魚就不會有腥味，然後稍微醃一醃，我們家廚可以有時間，但通常職業廚房做完這個就馬上沖洗，這個時候我們就做其他東西，醃的時候，其實很簡單，兩樣東西。</p></a>
+				<a href="#00:04:27.40" id="00:04:27.40" class="lt" onclick="jumptoTime(267, this.id)"><p>麵豉醬，麵豉醬，這個就當垃圾袋吧，大家都清楚我的習慣了，看開我的話，那就麵豉醬吧，當然如果麵豉的話可以的話，我覺得目前來說，意記不錯的，本身香港的，這個也是香港的，不過應該是香港包裝，但是內地做的，我不知道，叫做正甜，都OK，就是沒有酸味，你想要魚頭更惹味的話，這個就重要了，當然要加一點點的沙茶醬。</p></a>
+				<a href="#00:05:6.67" id="00:05:6.67" class="lt" onclick="jumptoTime(306, this.id)"><p>喂，正啊，那等一下，看看我怎樣做了，首先我現在要切幾片薑片，這些薑片我本身都用開了，大家都知道的，家廚比較上是省錢，所以經常那些薑，古靈精怪，什麼都有，OK，等一下，有水，洗乾淨它，那薑，然後就放麵豉，大家可以看著我怎樣放，這個過程大家可以省一點點時間，大概三茶匙，我先放醬汁，然後就放少許沙茶醬。</p></a>
+				<a href="#00:06:34.30" id="00:06:34.30" class="lt" onclick="jumptoTime(394, this.id)"><p>大概一茶匙，鹽就加少少，輕輕的，大概三分一茶匙，糖就可以加多些，大家都知的，可以加一茶匙半，然後輕輕的雞粉，雞粉都是那句，加多加少，適隨尊便，個人喜好，不加都可以，然後生粉，大概一茶匙多些，然後就加少少酒，少少就可以了，然後大概加一茶匙生抽，這個用來醃魚用的，這個時間差不多了，然後就開始沖洗了。</p></a>
+				<a href="#00:07:44.46" id="00:07:44.46" class="lt" onclick="jumptoTime(464, this.id)"><p>記住海鮮、魚類，就算是肉類，記住要沖洗，不要讓水浸，浸了肉味就一定會走掉，沖洗比較容易將表面的污漬洗走，但它不會影響肉味，其實沖洗是比一盆一盆換水洗，這個時候乾淨了，這個時候，魚就一件件，為什麼要切件呢?因為這樣就可以入味一點，這個時候我們要做一個動作，Breadcipe Driужemos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:14.76" id="00:09:14.76" class="lt" onclick="jumptoTime(554, this.id)"><p>consider，irregular，Ivweight，Ecapi，Rahmen</p></a>
+				<a href="#00:09:14.94" id="00:09:14.94" class="lt" onclick="jumptoTime(554, this.id)"><p>� Fake，level</p></a>
+				<a href="#00:09:15.04" id="00:09:15.04" class="lt" onclick="jumptoTime(555, this.id)"><p>prereenergy，дом，played，conversion</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:17.46" id="00:09:17.46" class="lt" onclick="jumptoTime(557, this.id)"><p>Espahabt，produce，завис，sweetheart，ikutorders，就好似我地普通咁印返乾佢先，呢個動作點解要印返乾佢呢，雖然話大家都睇慣我整魚啦，即係嗰個除聲嘅動作啦，但係大家要記住，無論你點樣除聲佢做得好完美都好，但係始終嗰啲水都唔多唔少，就帶咗啲二線菌嘅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:42.90" id="00:09:42.90" class="lt" onclick="jumptoTime(582, this.id)"><p>實有啲嘅，咁你為咗呢即係減低呢個二線菌嘅影響呢，所以呢我哋一定要印乾佢啦，咁你做為做足呢啲咁嘅動作呢，我可以同大家講呢，一定係好即係唔會嗰個腥味㗎啦，唔會有再有腥味㗎啦，剩返低嘅呢大家食到嘅呢，就一定係咩嘢呀，梗係魚嘅鮮味啦ok，大家唔好嫌呢啲咁嘅小動作麻煩喎，咁大家都即係都睇到我唔少嘅影片啦，咁我整魚嘅我估計冇100度送呢。</p></a>
+				<a href="#00:10:27.90" id="00:10:27.90" class="lt" onclick="jumptoTime(627, this.id)"><p>點都有六七十度㗎啦，咁呀大家跟住我一齊做嘅魚嘅菜式，我想問下大家有冇腥味呀，跟足我嘅方法去做有冇腥味呀，其中呢就有一位觀眾呢就feedback返畀我聽，咁呢佢就話呢，根據我嗰個即係呢個咁嘅除腥法呢，佢無論係用緊用去咩魚都好，淡水魚咸水魚全部都唔腥嘅，全部都留返低，只有嘅係魚海鮮應有嘅鮮味ok。</p></a>
+				<a href="#00:11:5.50" id="00:11:5.50" class="lt" onclick="jumptoTime(665, this.id)"><p>咁所以點解呢我成日強調嘅，喂你洗魚呢，即係攞酒嚟洗魚呢，你只能夠熱五分鐘㗎咋，攞鹽嚟洗魚呢只能夠五分鐘㗎咋，你唔好多呀點解呀，因為呢你時間一長咗嘅話呢，佢就會啲酒呢就滲咗落啲肉嗰度，咁變咗就你變咗係醃魚，而唔係乜嘢唔係除腥ok，所以呢大家要畀啲信心呀，即係亦都畀多少少耐性呀，唔好呢即係。</p></a>
+				<a href="#00:11:40.70" id="00:11:40.70" class="lt" onclick="jumptoTime(700, this.id)"><p>厭煩所以呢就唔跟住一齊做ok，好啦呢個時候呢得啦，大家聽唔聽到點解我另外講一講，點解我成日把刀咁擺呢，我講過好多次因為呢，呢個砧板係我嘅工作台，同埋呢亦都係我切嘢嘅地方，咁好多時候呢我為咗方便呢，我就將把刀咁樣擺嘅點解呢，因為呢邊平呀嘛，咁我擺呢度嘅時候呢就方便我做嘢嘅，咁當然大家即係睇唔到啦。</p></a>
+				<a href="#00:12:17.10" id="00:12:17.10" class="lt" onclick="jumptoTime(737, this.id)"><p>唔好學我啦都係一樣啦，呢度因為頂住把刀柄嘅，所以冇嘢嘅即係唔會有危險嘅，好啦呢個時候呢，我哋就繼續囉喎，你睇下我煮一餐飯用幾多隻嘅手套呀，我呢啲就唔慳嘅，因為我本人呢真係，我好忌呢就係個廚房油淋淋呀，即係當然炒緊餸就冇得冇計啦，即係我好忌呢就係我成日隻手呢，就油淋淋呀，即係有有腥味呀有味呀。</p></a>
+				<a href="#00:12:52.50" id="00:12:52.50" class="lt" onclick="jumptoTime(772, this.id)"><p>因為點解呢，我本人呢就有皮膚病嘅，即係嗰啲皮膚呢就好容易敏感嘅，咁我試過我以前點解呢，即係講講開有段故呀，咁呀以前我點解，我成日講我打死都唔返返去做食物行業呢，即係我做個短時間呢，就係因為呢個，呢個皮膚病引起㗎啦，我試過癢到呢，我企都企唔穩呀，你話慘唔慘呀，我要即刻要嗰日呀病發嗰陣時即刻要請假，即刻去睇皮膚科醫生。</p></a>
+				<a href="#00:13:25.70" id="00:13:25.70" class="lt" onclick="jumptoTime(805, this.id)"><p>嘩真係搞到呀，點解即係點解又又係咁樣呢，因為其實呢做食物行業呢，即係不論係外國又好啦，香港又好香港更加慘啦，咁我大家都知道我做嘢呢就盡善盡美嘅，我一路撈就一路講啦ok，咁呢我做嘢呢，就盡量呢就希望盡善盡美嘅，咁呢變咗呢，我初初入行嗰陣時候呢，即係其實呢我就係做樓面先嘅，咁呀。</p></a>
+				<a href="#00:13:58.90" id="00:13:58.90" class="lt" onclick="jumptoTime(838, this.id)"><p>咁呀個經理見到，你咁抵得咁不如返落場更啦，唉仆街啦，晏晝冇訂好佢返屋企，又唔夠時間，咁於是乎做咗啲乜嘩好香，咁於是乎我做乜嘢呢，我就要通街瞓好似乞醫咁，結果呢就惹到一身嘅皮膚病返嚟，咁呢就因為咁嘅緣故呢，所以呢我係好，即係我係喺入廚房嘅，大家見到我喺影片入面呢好多個影片，成日洗手嘅點解呢。</p></a>
+				<a href="#00:14:32.10" id="00:14:32.10" class="lt" onclick="jumptoTime(872, this.id)"><p>就係嗰陣時候引起嘅習慣嚟嘅，好多年啦30年前啦差唔多，廿幾三十年前啦，所以呢即係，我會覺得話我啲嘢唔乾淨，話我塊針筆唔乾淨之類之類，我覺得好委屈囉，喂大佬，如果相對於廚房即係做慣廚房嗰啲人，嘩大佬我嘅清潔習慣，好麻煩過佢哋十倍呀，好啦大家睇到啦，呢個時候我撈撈下已經好偉香啦ok，大家其實呢呢個呢就好簡單嘅。</p></a>
+				<a href="#00:15:5.70" id="00:15:5.70" class="lt" onclick="jumptoTime(905, this.id)"><p>咁我一邊講嘢呢就一邊啦，俾大家睇下個texture嘅變化啦ok，我俾少少個close up俾大家睇下啦，攪拌均勻就可以啦，大家睇到我攪拌得好均勻，雖然我放了生抽和鹽，但其實不夠鹹，因為我預計蒸好之後，我還要放生抽調味，因為我放多了糖，我預計生抽調味後，就調味均勻，基本上就醃好了，我希望先和大家說。</p></a>
+				<a href="#00:16:0.46" id="00:16:0.46" class="lt" onclick="jumptoTime(960, this.id)"><p>其實我想說的是，每個人都會有自己的背景，有自己的經歷，我之所以用手套用得這麼厲害，或者經常要洗手，原因就是因為我曾經中招，而這些經歷很少人會有，主要原因是因為我自小有皮膚病，亦因為我自小有皮膚病，我的皮膚是很滑的，今年我已經五十歲了，但大家看我的手，一點都不像，我以前幾歲的時候，就長出這些破位。</p></a>
+				<a href="#00:16:43.46" id="00:16:43.46" class="lt" onclick="jumptoTime(1003, this.id)"><p>全部都凝固，所以那幾年我要治療這個病的時候，打了很多類固醇，就是因為打了很多類固醇，現在我天生麗質，皮膚比女人白，然後比女人滑，你看看，不管是男還是女，有沒有見過一個五十歲的男人，手心這麼漂亮，皮膚沒有起疹，當然這是天生麗質，我經常進廚房洗碗，這些沒有的，皮膚還可以，但所謂天生麗質都是有因由的，自小沒有病。</p></a>
+				<a href="#00:17:31.46" id="00:17:31.46" class="lt" onclick="jumptoTime(1051, this.id)"><p>沒有打這麼多類固醇，又怎會有這樣的膚質呢，廢話不多說，等一會我蒸的時候再和大家分享，不好意思，再給大家看看，拌好之後是這樣的，大家一定要看，這裡有一個拌好麵豉醬，沙茶醬全部拌好，大家有沒有看到一粒粒的麵豉醬，其實已經被我捏碎了，大部分，最重要是每一粒都要拌好均勻，看起來像拌肉一樣，是不是放漏了東西。</p></a>
+				<a href="#00:18:17.46" id="00:18:17.46" class="lt" onclick="jumptoTime(1097, this.id)"><p>好像是，唉 你說真是老人家，不好意思 剛才嫌我廢話多，跳了的 看不到，大家要加麻油，所以我經常說要看我，不要嫌我囉嗦，加少許麻油 忘記了，加麻油不加也可以，加了會更香口，現在因為我沒帶手套，隨便加幾下 讓它均勻就可以了，這個我不是拖時間的，真的忘記了，OK 好嗎，等下蒸的時候再見，好了 水滾了。</p></a>
+				<a href="#00:19:7.68" id="00:19:7.68" class="lt" onclick="jumptoTime(1147, this.id)"><p>可以放魚進去，都說了我是老人癡呆，先頭說最後還是少了兩樣東西，少了什麼呢，胡椒粉和我最喜歡吃的辣椒，其實先頭已經是拌的時候已經OK，大家可以放胡椒粉或胡椒碎，都可以的 如果怕腥的話，或者喜歡吃的話，但其實不放都OK，因為我們洗魚的時候已經去除腥味，所以基本上不放都沒問題，本身拌的時候都會有薑片。</p></a>
+				<a href="#00:19:49.80" id="00:19:49.80" class="lt" onclick="jumptoTime(1189, this.id)"><p>沒問題的 OK，大家記住了，我是老人癡呆，所以才落後了我經常放的兩樣東西，這個魚其實要蒸它很簡單，蒸魚頭基本上是多少分鐘，10分鐘吧，10分鐘之後我們再看看結果如何，OK 行不行，等下見，好了 鐘響了，看看怎樣，我還沒關火，先看一下，這個呢，再看看，因為我蒸這個厚身了，因為我疊了上去，所以多給它兩分鐘，為什麼我說多給它兩分鐘呢?</p></a>
+				<a href="#00:20:39.05" id="00:20:39.05" class="lt" onclick="jumptoTime(1239, this.id)"><p>因為我看到夾子撥一撥的時候，我看一看魚眼，就未完全凸起，所以我再給它兩分鐘，等一下再看看結果如何，好了，再次中火兩分鐘了，差不多了，其實我們要看魚眼，這個魚眼，它反白了，完全蒸白了之後，它就會凸出來，有一點凸出來的感覺，魚就一定熟的，ok?</p></a>
+				<a href="#00:21:18.25" id="00:21:18.25" class="lt" onclick="jumptoTime(1278, this.id)"><p>現在就ok了，我就放些蔥絲下去了，ok?</p></a>
+				<a href="#00:21:36.31" id="00:21:36.31" class="lt" onclick="jumptoTime(1296, this.id)"><p>好，接著我放完蔥絲下去，接著我再淋些滾油、豉油上面就可以了，等一下我再淋滾油的程序和總結再和大家分享，好了，大家我現在已經燒滾了油，我現在先灒滾油進去，然後再灒上蔥花和蔥絲，油不需要太多，夠用就可以了，好了，這個時候我再放些下去，因為主要我想拍照好看一點，沒有其他意思的，如果大家自己吃的時候。</p></a>
+				<a href="#00:22:24.31" id="00:22:24.31" class="lt" onclick="jumptoTime(1344, this.id)"><p>就可以直接放蔥絲下去，然後淋滾油就可以了，這個時候我們就要放豉油了，兩三茶匙左右，一個野味的麵豉醬蒸魚卵便完成了，這是鄉下的功夫，即是鄉下的菜式，我現在已經流口水了，現在總結一下，其實這個不算太複雜，唯一要注意的是，怎樣拌，有很多家庭主婦蒸魚的時候，都會獨立拌一碟甜麵豉汁，我相信大家很多家庭主婦都認識。</p></a>
+				<a href="#00:23:19.85" id="00:23:19.85" class="lt" onclick="jumptoTime(1399, this.id)"><p>很多朋友都認識，因為這是傳統香港人的做法，很多家庭都是這樣做，但大家有沒有想過，原來醬汁這樣拌魚塊和魚卵，會更加入味，如果直接鋪在醬汁上，有兩個問題，第一是醬料未必會混合在一起，只會鋪在上面，要靠蒸的時候流汁，這樣才可以令魚入味，但我現在的做法是，還未蒸的魚已經入味了，可以嗎。</p></a>
+				<a href="#00:24:1.85" id="00:24:1.85" class="lt" onclick="jumptoTime(1441, this.id)"><p>至於斬、劈那些，這次我沒有給大家看，因為上次開過魚頭，給大家看過就算了，其實這些魚檔可以幫你代勞，他們會問你，你到底是用來炆、煎還是蒸，他們就會幫你代勞，這些可以用來代勞，回來後最重要的第一件事，要做什麼，要去腥，去腥的基本上就是，鹽、胡椒、酒三樣東西，做好這個工夫之後，再抹乾身再拌。</p></a>
+				<a href="#00:24:41.85" id="00:24:41.85" class="lt" onclick="jumptoTime(1481, this.id)"><p>基本上這個魚卵就一定不會腥，有朋友已經回覆我，這個方法一定可以，可以嗎，這個菜其實很簡單，唯一先說要拌的時候，不過我要補充一下，我先拌的時候放的材料，我相信有朋友真的看不齊，因為我老人癡呆，先放漏了一件事，然後再放漏兩件事，我現在重新再說，拌這個放什麼材料，麵豉醬、甜麵豉醬，然後沙茶醬少許。</p></a>
+				<a href="#00:25:20.85" id="00:25:20.85" class="lt" onclick="jumptoTime(1520, this.id)"><p>麵豉醬一個魚頭、一個魚身，兩至三茶匙，然後一茶匙的沙茶醬，然後放少許鹽，再放少許鹽就可以了，糖可以放多些，一茶半至兩茶匙，然後就放胡椒粉、麻油，或者胡椒碎、麻油，OK，然後，佐料很簡單 幾片薑片，這樣就完成了，這個魚卵吃起來就不會腥，大家可以嗎?</p></a>
+				<a href="#00:25:53.94" id="00:25:53.94" class="lt" onclick="jumptoTime(1553, this.id)"><p>OK，好了，那蒸魚卵，大家看到我先蒸10分鐘，然後再加多2分鐘，為什麼我後來要加2分鐘呢?</p></a>
+				<a href="#00:26:4.94" id="00:26:4.94" class="lt" onclick="jumptoTime(1564, this.id)"><p>因為我檢查的時候，那隻眼還沒凸出來，蒸魚其實很簡單，但你想知道它是不是熟的話，你看那條魚的眼，所以每一次我們就算蒸魚卵，現在我已經切開了，我刻意地將魚眼，有魚眼的其中一塊，我就放在上面，這樣我就可以檢查，我拿起鍋蓋的時候，我馬上看熟還是不熟，或者幾多成熟，我們就看到了，大家明白嗎?</p></a>
+				<a href="#00:26:33.84" id="00:26:33.84" class="lt" onclick="jumptoTime(1593, this.id)"><p>那怎樣去判斷，到底那條魚蒸得熟不熟呢?</p></a>
+				<a href="#00:26:37.34" id="00:26:37.34" class="lt" onclick="jumptoTime(1597, this.id)"><p>或者那塊魚蒸得熟不熟呢?</p></a>
+				<a href="#00:26:38.84" id="00:26:38.84" class="lt" onclick="jumptoTime(1598, this.id)"><p>就是看魚眼，它有沒有完全變白，然後白得來，它還要爆出來，如果是白的，基本上就七八成熟了，差不多全熟了，如果爆出來就肯定過熟了，OK?行不行?</p></a>
+				<a href="#00:26:55.84" id="00:26:55.84" class="lt" onclick="jumptoTime(1615, this.id)"><p>肯定熟的，如果大家怕說，怕吃到生的，那你就，看那隻眼囉，OK?行不行?</p></a>
+				<a href="#00:27:5.84" id="00:27:5.84" class="lt" onclick="jumptoTime(1625, this.id)"><p>至於你計時的，我也跟大家說過，是跟它的厚度，跟它的重量有關係的，我剛開始其實已經給它多了時間，但是我也算漏了一點，就是因為我重疊了，變成它有機會差一點點不熟，所以我就多給它兩分鐘，OK?行不行?</p></a>
+				<a href="#00:27:25.84" id="00:27:25.84" class="lt" onclick="jumptoTime(1645, this.id)"><p>蒸好了之後，鋪蔥花上面，淋滾油，然後生抽，搞定，這個是一個典型的，南般信，或者香港人的做法，一個蒸魚的做法，所以我們這些是很會吃魚的，是嗎?</p></a>
+				<a href="#00:27:40.84" id="00:27:40.84" class="lt" onclick="jumptoTime(1660, this.id)"><p>還有這期大家，發不發覺這兩個月，好像做了很多魚的菜式，是啊，夏天嘛，就是吃得太heavy的東西，就變成了，就是有一點點，好像不多，好胃口那樣，這個呢，保證開胃的，我跟大家說，絕對它的食味，絕對不會比豉汁蒸魚丸差，甚至好吃過豉汁蒸魚丸，因為為什麼呢，沙茶醬和甜面豉醬都是很，其實是比面豉醬，比我們自己做的豆豉醬。</p></a>
+				<a href="#00:28:13.84" id="00:28:13.84" class="lt" onclick="jumptoTime(1693, this.id)"><p>它更加惹味，為什麼呢?</p></a>
+				<a href="#00:28:16.84" id="00:28:16.84" class="lt" onclick="jumptoTime(1696, this.id)"><p>甜嘛，香口嘛，大家，我現在，一邊說，都一邊流口水，大家可以試一下這個做法，大家會問，你這個做法好像有點像，什麼什麼，是啊，冬天的沙鍋魚頭，就是這樣做的，沙鍋焗魚頭，沙鍋魚頭呢，就有分兩種的，一種呢，就是現在這樣，拌了之後，直接下去，這個是，沙鍋裏面炆，這個是其中一個做法，那這個呢，我這一次呢，只不過將沙鍋焗魚頭呢。</p></a>
+				<a href="#00:28:52.84" id="00:28:52.84" class="lt" onclick="jumptoTime(1732, this.id)"><p>就變成蒸的意思，夏天就無謂吃沙鍋了，對不對?</p></a>
+				<a href="#00:28:57.84" id="00:28:57.84" class="lt" onclick="jumptoTime(1737, this.id)"><p>冬天的時候我再和大家分享，和相同的概念，另外一個做法，就是用小鍋，OK?</p></a>
+				<a href="#00:29:5.84" id="00:29:5.84" class="lt" onclick="jumptoTime(1745, this.id)"><p>行不行?</p></a>
+				<a href="#00:29:6.84" id="00:29:6.84" class="lt" onclick="jumptoTime(1746, this.id)"><p>好啦，不阻大家時間了，基本上就差不多了，我一邊說一邊流口水，因為我好喜歡吃這個魚卵的，OK?</p></a>
+				<a href="#00:29:13.84" id="00:29:13.84" class="lt" onclick="jumptoTime(1753, this.id)"><p>還要是，弄這個，其實它比這個豉汁蒸魚卵更惹味，好，就這樣，拜拜，吃東西囉。</p></a>
+				<a href="#00:29:22.84" id="00:29:22.84" class="lt" onclick="jumptoTime(1762, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

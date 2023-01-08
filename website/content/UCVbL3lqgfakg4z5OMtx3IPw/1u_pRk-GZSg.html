@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——椒蒜香茜炒腩片，這是一道揉合了港式家常菜和湘菜家常做法的Fussion，或者有人覺得不倫不類，但食家們有吃的沖動，又是一道送飯神器！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1u_pRk-GZSg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——椒蒜香茜炒腩片，這是一道揉合了港式家常菜和湘菜家常做法的Fussion，或者有人覺得不倫不類，但食家們有吃的沖動，又是一道送飯神器！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天我想和大家分享一道菜式叫做椒蒜香茜炒腩片，我兒子投訴我，他說我已經很久沒有炒辣食了，我現在在燒一隻鑊，，我喜歡用湖南椒，因為辣味不重，炒出來很好食，我把辣椒和蒜頭分開一半，我現在用油，因為我之前炸蝦的油，所以我用了一點油，我現在用油，因為我之前炸蝦的油，所以我用了一點油，今天算是走油，，，。</p></a>
+				<a href="#00:02:6.40" id="00:02:6.40" class="lt" onclick="jumptoTime(126, this.id)"><p>大家看到我的肉已經抹得很乾，原因是現在的走油，如果有水的話，油會彈得很厲害，大家看到我剛才不是放很多油嗎?</p></a>
+				<a href="#00:02:24.40" id="00:02:24.40" class="lt" onclick="jumptoTime(144, this.id)"><p>為什麼呢?</p></a>
+				<a href="#00:02:26.56" id="00:02:26.56" class="lt" onclick="jumptoTime(146, this.id)"><p>因為腩肉會出油，現在的過程主要是將腩肉的油逼出來，把油逼出來，讓它吃起來的口感沒那麼油膩，清爽一點，大家看到我很多肉，我這裡一斤，都是一樣的，因為我家裡的小朋友喜歡吃肉，所以我就放多一點肉，比例就多一點，但是如果大家想不要吃那麼多肉，多一點菜的話，就將辣椒和蒜苗的比例增高，說明了。</p></a>
+				<a href="#00:03:6.16" id="00:03:6.16" class="lt" onclick="jumptoTime(186, this.id)"><p>椒、蒜、香、西，就是炒肉、腩、片，自然大大東西的，大大東西的，這個芫茜，我這裡買了兩束，6塊錢，這裡總共是24塊錢的蔬菜，這裡我用了大約50塊錢的急凍腩肉，大家會問，急凍腩肉切好之後，我之前要怎樣處理，怎樣汆水，怎樣去除血氣，麻煩大家去腩片炒，豬腩片炒四季豆那裡，那裡我已經很詳細地講解，怎樣去跟急凍的腩肉汆水。</p></a>
+				<a href="#00:03:57.36" id="00:03:57.36" class="lt" onclick="jumptoTime(237, this.id)"><p>然後怎樣切，因為我已經做過幾次示範，所以我不想大家再花時間，有些舊的觀眾應該看過，也懂得怎樣處理，麻煩大家，我到時在說明那裡，我會給個連結出來，大家可以看怎樣處理急凍冷片，除雪器，怎樣切，大家看到我切的冷片是很薄的，酒油已經差不多了，看到有些已經很焦了，所以已經差不多了，酒油的階段不要弄得太焦，太乾身。</p></a>
+				<a href="#00:04:48.22" id="00:04:48.22" class="lt" onclick="jumptoTime(288, this.id)"><p>否則大家吃下去的瘦肉會有粗糙的感覺，排口多少也有的，但盡量不要做得太乾，這是一個平衡口感和油膩之間的做法，這些比較肥的留給它，用來爆一下鍋，其實這個椒蒜香茜炒腩片的靈感是來自哪裏呢?</p></a>
+				<a href="#00:05:37.31" id="00:05:37.31" class="lt" onclick="jumptoTime(337, this.id)"><p>靈感是來自湖南的著名家常菜小炒肉，現在就按照廣東人的口味，再加些材料進去變化一下，大家看到我先前加的油，直至現在我都不需要再加油，因為腩片會爆出油，大家要記住，現在我比較肥的部份就盡量爆香，現在可以了，然後就加些蒜蓉，然後就加豆豉，大家估不到吧，在湖南菜裏面炒辣椒是要加豆豉的，現在我都講明了。</p></a>
+				<a href="#00:06:32.71" id="00:06:32.71" class="lt" onclick="jumptoTime(392, this.id)"><p>我現在這個做法就糅合了廣東粵菜和湘菜，生炒就可以了，好香，大家看到的，現在這個時候，先炒香蒜和辣椒，盡量吸油，碰到油，因為在這個過程中，我都燒了很久，大家看到我一直用大火，所以大家不用擔心沒有鑊氣，是很有鑊氣的，大家看看，剛剛好吸油，大家要記住，不要經常跟我說什麼小油小鹽，每一種菜，都會有它。</p></a>
+				<a href="#00:07:28.28" id="00:07:28.28" class="lt" onclick="jumptoTime(448, this.id)"><p>適當的油量，如果你是不斷強調，小油小鹽，我跟大家說，你炒的菜一定不好吃，而且小油小鹽，我覺得一直都是一個光源，當然我不是挑戰別人，我自己的想法，有心人都不用詛咒我會死，我全家人都很健康，這個時候，放肉片下去，再炒勻，大家有沒有發現我沒有調味，是呀，為什麼，因為肉我都沒有調味，直接是白肉去炒，所以這個時候。</p></a>
+				<a href="#00:08:10.28" id="00:08:10.28" class="lt" onclick="jumptoTime(490, this.id)"><p>重量是多少，一斤肉一斤菜，所以我放下去，可以放到差不多兩斤鹽，的重量，的份量，不會鹹的，大家要記住，兩斤糖，大家又會說你又煮這麼大份，是呀，一屋人吃，吃兩餐是差不多，放少少的雞粉，放多或少，自己個人喜好，不放都可以，無需爭拗，這個時候，為什麼我常常放布在這裡，就拿來抹手，這個時候，就炒勻，跟著之後。</p></a>
+				<a href="#00:09:4.28" id="00:09:4.28" class="lt" onclick="jumptoTime(544, this.id)"><p>再放少少蠔油，這個蠔油是廣東人常用的，外省人大約一茶匙，外省人很少用蠔油炒菜，基本上已經炒好了，然後再把芫茜放進去，芫茜一放落去炒兩炒就得㗎啦，唔使話太過炒到佢熟，因為芫茜你要佢嗰種香味呢，其實半生熟呢就最好食嘅，稍為炒軟身，好咁就搞掂啦，最後尾落個咩嘢呢，最後尾呢，讚少少酒，跟住之後喺個鑊邊。</p></a>
+				<a href="#00:10:20.10" id="00:10:20.10" class="lt" onclick="jumptoTime(620, this.id)"><p>乜嘢呀，落少少豉油，嘩，呢個好惹味嘅，椒蒜芫茜香茜炒腩片咁就完成啦，咁呢度就幾分鐘嘅時間，ok，我同大家總結下啦咁樣，咁其實呢炒呢個餸呢就好簡單嘅，咁大家有冇發覺其實我炒小菜先係最殺㗎，係呀，簡單快捷又有鑊氣呀嘛，ok，咁呢呢度呢佢會有少少即係嗰啲蒜呀你炒耐咗呢佢會出少少水嘅唔怕嘅呢啲汁好好撈飯嘅ok，咁呀呢個有少少水呢就有得佢。</p></a>
+				<a href="#00:11:6.10" id="00:11:6.10" class="lt" onclick="jumptoTime(666, this.id)"><p>好，咁呀如果你你覺得有需要嘅你咪打個牽落去囉，咁但係我都講咗我係好憎打牽嘅ok，好啦咁呢就總結一下啦咁其實呢個餸呢就好簡單嘅，即係我覺得炒，簡單過我哋粵菜嘅炒牛肉呀，即係炒炒炒呢個，我係好鍾意用冷面炒嘅點解呢，簡單吖嘛，快捷吖嘛，我一，即係一同佢係，即係同佢呢飛完水即係同嗰啲肉片飛完水切咗之後我基本上唔使嘢，全部嘅調味。</p></a>
+				<a href="#00:11:43.86" id="00:11:43.86" class="lt" onclick="jumptoTime(703, this.id)"><p>個味道全部喺炒嘅過程中產生出嚟，Ok得唔得，咁呢變咗呢，我係咪調味只需要調一次呀我唔需要好似醃肉咁又要醃啦又要等啦係咪呀，我直接，我由，喺雪櫃裏面攞嗰舊腩肉出嚟解凍咁我解凍嗰度我曾經同大家講過一個，極速解凍法係咪，解凍跟住然之後去飛水跟住然之後，切片跟住你處理好其他嘢其實呢個餸呢你做起快手上嚟呢由佢，生肉變成好野味上枱嘅餸飯神器呢我要同大家講半個鐘頭。</p></a>
+				<a href="#00:12:26.34" id="00:12:26.34" class="lt" onclick="jumptoTime(746, this.id)"><p>就得㗎啦，你同煮飯嘅時間差唔多嘅，咁呢個呢如果大家係，即係食得辣嘅話呢呢個餸呢，係好好送飯嘅ok，咁呢再者呢，就係因為佢，快吖嘛基本上你煮飯嘅時間就係炒呢碟餸嘅時間，我講緊嘅由雪櫃攞出嚟解凍開始計喎，咁所以呢，喺我哋急速嘅城市生活呢一道餸係非常之適合嘅，咁呢個係第一啦，咁第二啦。</p></a>
+				<a href="#00:12:57.32" id="00:12:57.32" class="lt" onclick="jumptoTime(777, this.id)"><p>好多人會問你呢個餸咁其實呢就會係，需要飛水嗰啲㗎但係你呢次冇演示喎唔係好似你以前咁喎咁，咁因為呢，而家我觀眾越嚟越多舊嘅觀眾亦都有好多咁變咗呢好多舊嘅觀眾呢，就開始，習慣咗，即係亦都知道咗我嘅手法嘅咁所以呢喺程序上有啲我覺得開始可以，刪減嘅呢我就會刪減，咁麻煩大家我喺說明嗰度呢我會畀返一條link就點樣去，處理。</p></a>
+				<a href="#00:13:31.10" id="00:13:31.10" class="lt" onclick="jumptoTime(811, this.id)"><p>你嗰個欖肉，隨說器，呢個係急凍欖肉嚟嘅，點解我咁鍾意用急凍欖肉呢第一，量多，又便宜因為點解呢你去，生肉枱呢，你要買舊似樣嘅欖肉呢其實你要好早去嘅晏咗就買唔到㗎啦，咁，而且又好貴，但係我去急凍舖呢，凍肉舖呢我隨時都可以買到，數量非常之龐大嘅，欖肉我試過成塊豬欖咁大舊，幾斤重嘅咁樣買返嚟，就。</p></a>
+				<a href="#00:14:5.42" id="00:14:5.42" class="lt" onclick="jumptoTime(845, this.id)"><p>都冇問題嘅佢喺急凍倉嗰度攞出嚟啫嘛，OK，咁所以呢我就好鍾意用，急凍欖肉嘅而且呢佢處理上會更加容易一啲，OK更加適合，城市人嘅急促生活而且最緊要就係平吖嘛，如果新鮮欖肉而家講緊嘅90蚊起跳，一斤喎，咁如果係急凍欖肉而家講緊嘅係，32蚊一磅即係你圍到佢大概36蚊，一斤到啦。</p></a>
+				<a href="#00:14:36.64" id="00:14:36.64" class="lt" onclick="jumptoTime(876, this.id)"><p>即係便宜，差唔多接近咗三倍，係咪呀，OK，好啦咁呢度呢我有啲特別嘅，我要提一提醒嘅就係，第一呢個呢我就因為我屋企鍾意食辣啦所以辣椒呢通常都會個比例比較多嘅，咁如果大家食唔到辣嘅話呢嗰個辣椒呢就可以減少個份量就增加蒜苗嘅份量，OK，呢個第一，第二呢，喺蔬菜上面個個都話要清洗乾淨呀，即係要除農藥㗎但係好少人提呢。</p></a>
+				<a href="#00:15:13.84" id="00:15:13.84" class="lt" onclick="jumptoTime(913, this.id)"><p>其實有少少腐爛嘅生菜，係好...</p></a>
+				<a href="#00:15:16.84" id="00:15:16.84" class="lt" onclick="jumptoTime(916, this.id)"><p>嗰蔬菜呢，係好容易食出病黎嘅，所以大家要留意，尤其是係，我而家用緊咩呀，用緊芫茜，芫茜係好容易腐爛嘅，咁當大家去清潔嘅時候呢，大家要注意就係，唔好諗住呢，就話 慳得就慳啦，咪走咗就算啦，如果，嗰條，即係嗰條，芫茜，係開始腐爛一部份嘅話，就成盒芫茜就唔好要啦，沖乾淨佢，沖洗乾淨，咁樣呢，大家先唔會肚餓嘅。</p></a>
+				<a href="#00:15:47.84" id="00:15:47.84" class="lt" onclick="jumptoTime(947, this.id)"><p>如果大家諗住，哎呀，我慳得就慳得，淨係撕咗爛嗰度呢，佢有機會，成條館呢，其他地方都爛，你睇唔到嘅啫，所以最好嘅就係，佢爛一條館呢，即係爛一部份呢，你就將，成條嗰條館，唔係成棵呀，係嗰條館，成條唔好要，ok 得唔得，咁所以先頭呢，我買咗兩扎芫茜呢，就六蚊雞，但係其實我又，差唔多接近三分一，我扔咗㗎。</p></a>
+				<a href="#00:16:14.84" id="00:16:14.84" class="lt" onclick="jumptoTime(974, this.id)"><p>點解呢，因為佢有啲開始腐爛呀嘛，記住呀，呢啲小小嘅，即係食物嘅安全常識嚟㗎啫，好多人唔為意嘅，哎 諗住，哎 佢只不過係浸浸到佢，有少少爛啫，以為係洗爛咗，其實就唔係，其實佢一開始已經爛㗎啦，最好就唔好要，ok 得唔得，咁就冇其他嘢啦，呢個餸，我係值得推介嘅，尤其是呢封食辣嘅呢，呢個係直接可以代替小炒肉嘅。</p></a>
+				<a href="#00:16:42.84" id="00:16:42.84" class="lt" onclick="jumptoTime(1002, this.id)"><p>而且有其他嘅，佢唔係淨係得辣椒，有蒜頭呀，有蒜苗呀，有呢個係，芫茜呀，好好餸飯嘅，ok，咁，希望大家鍾意啦，唔講啦，我煮下一道餸啦，拜拜，哎 咪字，試下先，哎 一路講一路流口水，呢個湖南椒，嗯 咁樣炒咗佢，飯嘅甜度呀，啱啱無呀，可以念呀，嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:15.68" id="00:17:15.68" class="lt" onclick="jumptoTime(1035, this.id)"><p>glich прямо，Cs</p></a>
+				<a href="#00:17:16.56" id="00:17:16.56" class="lt" onclick="jumptoTime(1036, this.id)"><p>przysz，大家看著，我是白肉，我是白肉沒有醃過的，直接大家看到的，一次過在鍋裡和食材和肉一起調味，所以我很喜歡炒這個菜，為什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:38.57" id="00:17:38.57" class="lt" onclick="jumptoTime(1058, this.id)"><p>爛嘛，可以快點開飯，大家試一下，很滑的，ok，很嫩很好吃，很好送飯的，拜拜。</p></a>
+</div>
+	</body>
+</html>

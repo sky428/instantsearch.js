@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——香煎黃花魚，這次我分別使用鐵和和易潔鑊演示如何剪魚不破皮，到底技朮上有沒有分別呢？大家快來看看如何背口訣就能任意使用任何鑊具都能夠煎魚不破皮吧！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QgknQxA-E0Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——香煎黃花魚，這次我分別使用鐵和和易潔鑊演示如何剪魚不破皮，到底技朮上有沒有分別呢？大家快來看看如何背口訣就能任意使用任何鑊具都能夠煎魚不破皮吧！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.19" id="00:00:0.19" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今天只有我一個人吃飯，所以我應該分享甚麼菜呢，我一個人吃飯當然喜歡怎樣煮就怎樣煮，早陣子有觀眾問我，Leo 你的鐵鑊 煎魚很漂亮 在哪裏買的，我用易潔鑊是否一模一樣，今天趁我一個人吃飯，所以我喜歡怎樣煮就怎樣煮，今次同時間演示一下，用鐵鑊和易潔鑊 兩種鑊怎樣煎魚，今天只有我一個人吃飯。</p></a>
+				<a href="#00:00:49.19" id="00:00:49.19" class="lt" onclick="jumptoTime(49, this.id)"><p>我又想吃黃花魚，這裏很便宜 二十元兩條，為何我現在要開機和大家介紹呢，因為我想介紹怎樣處理這些冰鮮魚，大家知道黃花魚 如果買到油水魚就不得了，通常都是冰鮮魚，大家看看我的砧板 未濕水，所以就這麼漂亮，通常買回來的冰鮮魚，左上角那裏 用水沖洗一下肚子，去除它的薄膜，去除它的薄膜就可以減少它的腥味。</p></a>
+				<a href="#00:01:45.19" id="00:01:45.19" class="lt" onclick="jumptoTime(105, this.id)"><p>然後用刀背檢查一下魚鱗有沒有刮乾淨，那位老闆娘對我真是刮得很乾淨，二十元都處理得這麼好，第二條也是一樣，肚子沖洗乾淨，其實很多時候魚的肚子是最腥的來源，所以一定要洗乾淨，摸摸它 也很乾淨，刮得很乾淨，洗乾淨就完成了，這次我最主要就是和大家分享一下，除了煎魚之外，分享一下如何處理冰鮮魚，如果有看我的影片都知道。</p></a>
+				<a href="#00:02:50.30" id="00:02:50.30" class="lt" onclick="jumptoTime(170, this.id)"><p>冰鮮魚好像是比較光的，我調回這樣，除了冰鮮魚，大家看慣我的影片都應該知道如何處理冰鮮魚或魚肉，首先把魚肉抹一抹，吸一吸水，然後做什麼呢?</p></a>
+				<a href="#00:03:18.38" id="00:03:18.38" class="lt" onclick="jumptoTime(198, this.id)"><p>大家應該猜到，看我影片都知道，我用螺絲，大家照單全收，因為這是我的真身，我不會像別人那樣做到，有時候做錯誤都是一種示範，加少少鹽就可以了，然後加些胡椒，然後另一邊，大家等我一下，我先抹手，否則鹽會傷蟲污染，好，因為我們現在最主要的作用是甚麼呢，不是要先醃鹹，先弄清楚，醃鹹和加鹽去做甚麼，我最喜歡做的是甚麼。</p></a>
+				<a href="#00:04:24.94" id="00:04:24.94" class="lt" onclick="jumptoTime(264, this.id)"><p>就是加鹽去令它出水，令它脫水，那有甚麼作用呢，作用當然是可以令肉更加緊緻，就不會有煤或散的現象，這裏背面也是，為何我要灑點胡椒呢，最主要的原因是，亦是可以令魚沒那麼腥，給大家看看近鏡，今天我用消費券買了油壓雲台回來，小型的，專門用來拍片的，我本身對攝影也有些要求，有些認識的拍片就是初哥，大家經常擔心我的安全。</p></a>
+				<a href="#00:05:15.54" id="00:05:15.54" class="lt" onclick="jumptoTime(315, this.id)"><p>我現在因為有油壓雲台，我就方便了，我現在稍為移動一下相機，給大家看看我的刀是怎樣擺的，這個刀柄的位置，剛剛好是頂著造台凸出來的位置，所以大家可以放心，我再給大家看一個廣角鏡頭，我家就是這樣的，造台，那個升盤，所以其實真的大家，我知道有新加坡的朋友去看，亦都有香港的朋友看，香港的朋友如果住公屋的話。</p></a>
+				<a href="#00:06:1.54" id="00:06:1.54" class="lt" onclick="jumptoTime(361, this.id)"><p>其實大家的造台設計都是差不多的，可以嗎，所以大家是有生同感受的，不過如果在香港住私樓的話，當然廚房會大一點點，都是大一點點，當然可以設計到美輪美奐，但是我們住公屋就沒有辦法，我很羨慕新加坡有朋友有祖屋住，那些祖屋比香港的公屋大很多聲，有馬來西亞的朋友，他們的屋亦都大很多，歐美就更加不用說。</p></a>
+				<a href="#00:06:43.74" id="00:06:43.74" class="lt" onclick="jumptoTime(403, this.id)"><p>他們的廚房好像我們的客廳，因為他們連飯廳，即是廚房連飯廳，所以我希望大家要理解，我是基於我在香港的生活環境，所以有些新來的觀眾，或者今天這條片才看了我的，希望大家諒解，香港的生活真的是這樣的，我的廚房有多大呢，就是5呎乘7呎，即是35呎，即是只有3個平方，所以大家要見諒一下，這個黃花魚。</p></a>
+				<a href="#00:07:28.66" id="00:07:28.66" class="lt" onclick="jumptoTime(448, this.id)"><p>其實不需要我特別介紹，如果在香港住的話應該比較熟悉，它的肉是比較滑的，除了用麵豉蒸之外，大家是不是經常，比較少見我蒸菜，我經常覺得蒸菜好像沒有甚麼技巧，而且我家中喜歡吃炒菜，方便嘛，蒸菜一涼了就很難吃，但我很多炒菜大家都見識過不少，很多炒菜我涼了也照吃，當涼菜吃，早陣子和大家分享的薯仔絲炒四季豆，這個涼了比熱吃還好吃。</p></a>
+				<a href="#00:08:8.42" id="00:08:8.42" class="lt" onclick="jumptoTime(488, this.id)"><p>大家不妨試一下，這個菜炒一次之後，不用翻熱，翻熱反而不好吃，ok，第一晚吃熱吃，隔了一天，照拿來凍吃，一樣菜凡都是一流的，所以我比較喜歡炒菜，這個黃花魚，處理很簡單，基本上大同小異，因為如果說香煎，香煎紅心魚是最出名的，但其實香煎黃花魚，都很好吃，而且肉更加滑，ok 行不行，醃它，主要的作用是甚麼。</p></a>
+				<a href="#00:08:51.10" id="00:08:51.10" class="lt" onclick="jumptoTime(531, this.id)"><p>我放胡椒下去就隨聲，放鹽我不是要醃鹹先，大家弄清楚，要它脫水和醃鹹才是兩回事，所以我大概醃它5-10分鐘，大家看到我不是放很多鹽，5-10分鐘不會令它鹹，還有一個特色，在脫水的過程中，你不是放重鹽去醃的時候，那些魚煎或蒸起來反而更甜，例如最突出的例子是甚麼，我和大家分享過的梅菜蒸鯇魚，那條鯇魚。</p></a>
+				<a href="#00:09:27.30" id="00:09:27.30" class="lt" onclick="jumptoTime(567, this.id)"><p>那塊鯇魚如果用鹽令它脫水，而不是令它變成鹹鮮的話，吃下去的肉更鮮甜，ok，即是你一開始處理那條魚的時候，放鹽原來有這麼多神奇的作用，對呀，ok 行不行，主要我這裏不是想浪費時間，是想講清楚，中間的細節給大家聽，即是醃魚或者最主要就是，醃鹹先，和要它脫水，令肉更加緊緻的分別在哪裏，ok 行不行。</p></a>
+				<a href="#00:10:0.90" id="00:10:0.90" class="lt" onclick="jumptoTime(600, this.id)"><p>接下來，我會分別兩條魚，我一個人都可以吃完，很小一條20元，那我等一下，我就分別用鐵鑊，和易潔鑊，分別各煎一條，那就給大家看一下，到底效果如何，好不好，還有就是，煎魚有兩種處理方法，那這一次我就不會放粉，就這樣煎，就這樣香煎，但通常如果我是用來紅燒，或者炆的話，我就會撲粉上去煎，因為為什麼呢。</p></a>
+				<a href="#00:10:36.94" id="00:10:36.94" class="lt" onclick="jumptoTime(636, this.id)"><p>這樣可以保持到炆的過程當中，那些魚肉就不會散，因為那些魚皮不會爛，有粉撲著貼著，但如果我就這樣香煎的話，我就不放粉，就隨它，因為為什麼呢，直接吃它的肉香，那些皮香，行不行，ok 就是這麼多，好了，那麼，換轉鏡頭，換轉下一條，接下來，我現在買了一個油壓頭，有一個好處就是，我這樣動，這樣，這樣動。</p></a>
+				<a href="#00:11:14.42" id="00:11:14.42" class="lt" onclick="jumptoTime(674, this.id)"><p>這個爐頭，是不是很方便，而且，都很穩定，油壓頭就有這個好處，ok，那麼，少少講一下器材，因為本人都算是資深攝影的影友，ok，那麼不跟大家說了，等下開機再和大家分享，怎樣煎魚，用易潔鑊和鐵鑊，兩種方法去煎，那麼大家就很明確知道，哦 易潔鑊是這樣煎的，哦 鐵鑊是這樣煎的，ok 行不行，好。</p></a>
+				<a href="#00:11:45.26" id="00:11:45.26" class="lt" onclick="jumptoTime(705, this.id)"><p>等下見了，拜拜，不是，等下見了，不是拜拜，好了，大家先看了我怎樣去，鹿鹽醃魚，現在給大家看一下，又是時候了，給大家看一下，結果，這裡給大家看一下，是不是有水，剛才大家明明在鏡頭前看到，我用廚紙抹乾淨了，醃了一會兒 幾分鐘而已，照樣是有的，那麼好，現在，我先開鑊，先用鐵鑊，去和大家分享，煎魚不破皮的技法，口訣是什麼。</p></a>
+				<a href="#00:12:30.06" id="00:12:30.06" class="lt" onclick="jumptoTime(750, this.id)"><p>燒鑊，ok，大火燒鑊 起煙 下油，再起煙 收小火 等一會兒降溫，然後放魚進去 是不是，ok，另外，其實我都會用易潔鑊再煎多一次，讓大家在同一條片，就可以看到，到底分別在哪裡，ok 行不行，其實用法差不多，我先洗多條魚，大家看著鑊有沒有起煙，通常我經常說的家廚，其實是一個，入廚是一個很好的，什麼 時間管理的訓練。</p></a>
+				<a href="#00:13:9.06" id="00:13:9.06" class="lt" onclick="jumptoTime(789, this.id)"><p>ok，行不行，那麼，我們通常是間中做事，現在正在燒鑊，我們先去洗魚，變相可以節省很多時間，好 現在洗完了，然後起煙了，還未夠時間，現在我調小火，讓它不要繼續燒，現在要做甚麼呢，就是我要抹乾，吸乾那條魚，那麼，我早前也說過，如果是直接煎來吃的話，香煎來吃的話，那麼，我就，其實不用理會它，不用上粉 撲粉。</p></a>
+				<a href="#00:14:5.10" id="00:14:5.10" class="lt" onclick="jumptoTime(845, this.id)"><p>但如果是用來紅燒的魚的話，我們就要撲粉了，吸乾水份，可能有人會說你太多餘，連這些都要做給大家看，你當我傻嗎?</p></a>
+				<a href="#00:14:30.75" id="00:14:30.75" class="lt" onclick="jumptoTime(870, this.id)"><p>我再說一次，我不可能為單一個觀眾群，去設定我的影片應該怎樣拍，我拍影片基本上一定要用最入門的方式去做，如果你懂得就跳過它，你沒理由阻止不懂的人去學習，所以我希望大家明白，如果你們覺得已經做了，大家要記住一個圖，連圖也要吸水，現在開大火燒鑊，現在開啟測量機，現在使用新鏡頭，多謝消費券。</p></a>
+				<a href="#00:15:37.20" id="00:15:37.20" class="lt" onclick="jumptoTime(937, this.id)"><p>不過我不多謝某些人、某些機構，多謝消費券，我買了新鏡頭，試過追焦不錯，現在我都不斷地吸，盡量吸到手摸上去，好像有少少鹹魚的感覺，現在大火燒到出煙，就落油，出煙、落油，油多與少，其實就視乎它可否觸碰到整條魚，如果用中式炒鑊，反而可以少些油，但如果用韓式炒鑊，反而吸不住整條魚，所以反而要多些油。</p></a>
+				<a href="#00:16:29.20" id="00:16:29.20" class="lt" onclick="jumptoTime(989, this.id)"><p>我這個用油的方法，向右、左手邊，收平均細火，我抽起炒鑊，一邊收火，同時令炒鑊降溫，有少少降溫，現在可以了，我們就放條魚，放條魚的時候，不要理它，可以嗎，不要理它，不要手多，再給大家看看平均細火去到那裏，平均細火就是邊邊有火，中間都有火，這個時候，我們上鑊蓋，煎魚一樣，煎魚是三分鐘，我不理它了，等三分鐘響的時候。</p></a>
+				<a href="#00:17:28.20" id="00:17:28.20" class="lt" onclick="jumptoTime(1048, this.id)"><p>我再開機，好了，三分鐘過了，我們就看看結果如何，煎魚的時候，首先…，看到嗎?我還未鏟它，已經可以在鍋子裡游水了，可以嗎?厲害吧?</p></a>
+				<a href="#00:17:53.95" id="00:17:53.95" class="lt" onclick="jumptoTime(1073, this.id)"><p>好，現在就反轉它，大家看看效果，口訣是怎樣的，先不要說，先蓋上鍋子，留下少許邊邊，留下少許邊邊讓它透氣，先按三分鐘，煎魚其實…，或者煎東西，煎豬扒也好，大家都見過，上次我煎魚也見過，煎雞翼也一樣，煎蛋也一樣，怎樣?大火燒鍋，見煙，下油，見煙，再收小火，等一等，降溫，然後就將要煎的東西放下去，煎之前，可以的話。</p></a>
+				<a href="#00:18:44.95" id="00:18:44.95" class="lt" onclick="jumptoTime(1124, this.id)"><p>盡量讓煎的東西乾一點，尤其是新鮮，未醃過的，醃過了，因為封了油，就不用理它，在這樣的情況下，保證大家一定煎得好，鐵鍋，我已經是第三條片，其實不止第三條，之前也有煎過鯇魚，煎過那些東西，都已經有的，最近這個月，是第三次用鐵鍋煎東西，是不是我這個口訣，永遠沒有脫透，OK?行不行?</p></a>
+				<a href="#00:19:17.95" id="00:19:17.95" class="lt" onclick="jumptoTime(1157, this.id)"><p>等一等三分鐘之後，再看看結果如何，OK?</p></a>
+				<a href="#00:19:21.95" id="00:19:21.95" class="lt" onclick="jumptoTime(1161, this.id)"><p>好了，油中香了，我們就看看結果如何，看到嗎?</p></a>
+				<a href="#00:19:29.95" id="00:19:29.95" class="lt" onclick="jumptoTime(1169, this.id)"><p>可以在鍋裡游水的那條魚，就一定是很棒的，現在我就要再煎，補一補它，讓它煎得更加香脆，OK?行不行?</p></a>
+				<a href="#00:19:48.95" id="00:19:48.95" class="lt" onclick="jumptoTime(1188, this.id)"><p>大家可以看到那條魚，行不行?</p></a>
+				<a href="#00:19:52.95" id="00:19:52.95" class="lt" onclick="jumptoTime(1192, this.id)"><p>OK嗎?</p></a>
+				<a href="#00:19:53.95" id="00:19:53.95" class="lt" onclick="jumptoTime(1193, this.id)"><p>OK，真的是金黃色的，給大家看看，OK?</p></a>
+				<a href="#00:20:2.06" id="00:20:2.06" class="lt" onclick="jumptoTime(1202, this.id)"><p>鐵鑊就得喇喎，跟住落嚟我哋就開始係做咩呀?</p></a>
+				<a href="#00:20:7.06" id="00:20:7.06" class="lt" onclick="jumptoTime(1207, this.id)"><p>梗係，梗係要，用嗰個，易潔鑊啦，OK， 一樣啦，開大火燒鑊， 等我一陣啦，我攞隻碟，咁大家睇住個鏡頭啦， OK?</p></a>
+				<a href="#00:20:52.44" id="00:20:52.44" class="lt" onclick="jumptoTime(1252, this.id)"><p>先燒一燒鑊，沒有位置放鑊，家裡小就是這樣，多隻鑊都放不下，先放著，因為我想用油，之前有觀眾問我，二鍋和三鍋有什麼分別，現在我放了大火，已經燒了很久，其實口訣差不多，但是二鍋，就像很多人擔心一樣，你怕高溫太高，怕燒壞鑊，就可以用手，這樣試，雖然現在沒有出煙，因為現在很多二鍋已經做到無煙，即無煙的狀態。</p></a>
+				<a href="#00:21:45.44" id="00:21:45.44" class="lt" onclick="jumptoTime(1305, this.id)"><p>所以這個時候我用手，跟鑊的高度差不多，你感覺到，是和大家把腳放到暖爐，出煙了，我不說這麼多，用點油，不要浪費，好，然後，很熱了，然後我們就收中火，把油弄勻，讓它繼續出煙，因為煎油太熱了，所以就要講話，現在都是出煙了，因為二鍋的傳熱性比較高，它出過一次煙之後，第二次出煙就很快，所以這個時候。</p></a>
+				<a href="#00:22:37.44" id="00:22:37.44" class="lt" onclick="jumptoTime(1357, this.id)"><p>我們就稍為一樣，關小火，大家現在都看到有煙的，應該是鏡頭，繼續放魚進去，同樣道理，等一會，拿鑊蓋回來，因為我家實在太小了，這個時候放下去，不要走多，然後又是三分鐘，可以不用理它了，我現在先洗鐵鑊，因為今晚只煎魚，沒有菜炒，因為一個人吃飯，我另外已經煮了菜，大家看看，在鏡頭外靠我的聲音，大家亦感受一下我們作為家廚。</p></a>
+				<a href="#00:23:29.27" id="00:23:29.27" class="lt" onclick="jumptoTime(1409, this.id)"><p>真的一樣東西接一樣東西，我們不學得像專業廚房，可以獨立做一些事，集中做一些事，而家廚通常是利用時間的空檔，去做其他事，當然都是廚房的事，這次我不打算關機，因為有另外一樣東西，我想和大家分享，大家記不記得，我早幾天，我拍了一條影片，是講開六種蔥油，我吃不完的，其中有一樣東西是甚麼，就是鮮沙薑蔥油。</p></a>
+				<a href="#00:24:29.27" id="00:24:29.27" class="lt" onclick="jumptoTime(1469, this.id)"><p>加了豉油，我當時已經講過，鮮沙薑蔥油可以用來煎魚和蝦，這次我趁著煎魚，用了豉油，作為蘸魚來吃，一來不要浪費，二來我想演示一下，其實蔥油有很多種用途，我之前已經撈起了很多蔥，因為今天會用新鮮的蔥，在這個時候，為了更惹味，所以我打算在鮮沙薑豉油，加些辣椒，加些辣椒，當然今天時間不夠，如果浸辣椒豉油的話。</p></a>
+				<a href="#00:25:34.57" id="00:25:34.57" class="lt" onclick="jumptoTime(1534, this.id)"><p>大家要提前一天浸，浸得慢，辣椒味道會更突出，但我現在這樣攪拌，當它是吃火鍋，其實都有辣味，很鮮味、很惹味，可以嗎，所以我其實喜歡，雖然我懂得開很多種蔥油，但我基本上喜歡用兩種，一種是熱式蔥油，快、簡單，我吃雞一定是吃那些，另外我喜歡開鮮沙薑蔥油，為甚麼?因為可以拿回來，加豉油就可以拿回來做蒸魚豉油或煎魚豉油。</p></a>
+				<a href="#00:26:12.85" id="00:26:12.85" class="lt" onclick="jumptoTime(1572, this.id)"><p>好了，響鐘了，看看怎樣，好， 攪一攪，喂， 一樣， 魚很生猛，在鍋裡游泳，行不行?</p></a>
+				<a href="#00:26:33.90" id="00:26:33.90" class="lt" onclick="jumptoTime(1593, this.id)"><p>這次我刻意地用兩種不同的鍋，用同一個口訣，大家要記住， 兩種鍋真的有差別，如果說時間的長度，等等，那條魚我怕剷爛，不帥， 等下拍不到帥哥照片，帥哥照片，再給大家看看煎得，看到嗎?</p></a>
+				<a href="#00:27:5.90" id="00:27:5.90" class="lt" onclick="jumptoTime(1625, this.id)"><p>為什麼連這個易潔鍋都要演示給大家看呢?</p></a>
+				<a href="#00:27:10.90" id="00:27:10.90" class="lt" onclick="jumptoTime(1630, this.id)"><p>除了這個有使用時間上的小小差別，是小小的，如果要說時間的差別，普通鐵鍋， 無論生鐵鍋還是熟鐵鍋，燒鍋的時間是長一點，但是如果用這個易潔鍋的話，燒鍋的時間就短一點點，一出煙， 大家就要馬上下油， 不要等了，但是鐵鍋可以繼續燒都不怕，因為不會燒壞，如果只是燒易潔鍋的話， 真是有機會燒壞，當然， 我都說過很多次。</p></a>
+				<a href="#00:27:53.90" id="00:27:53.90" class="lt" onclick="jumptoTime(1673, this.id)"><p>對易潔鍋來說， 最大的傷害是什麼呢?</p></a>
+				<a href="#00:27:56.90" id="00:27:56.90" class="lt" onclick="jumptoTime(1676, this.id)"><p>這麼高溫的情況下， 突然加冷水，撞冷水， 急速降溫，其實這個不是很高，燒到出煙大概200度左右，易潔鍋燒壞要超過300度，所以就算出煙都處於一個安全的水平，但是很多人因為燒到這麼高溫，然後突然加水， 由200度到接近200度，一下子降溫到只有幾十度，那些易潔鍋就很快壞掉，另一個就是煮焦的東西。</p></a>
+				<a href="#00:28:31.90" id="00:28:31.90" class="lt" onclick="jumptoTime(1711, this.id)"><p>易潔鍋煮焦的東西， 都很快壞掉，OK， 行不行?</p></a>
+				<a href="#00:28:34.90" id="00:28:34.90" class="lt" onclick="jumptoTime(1714, this.id)"><p>這件事我最喜歡日本人的，為什麼呢?</p></a>
+				<a href="#00:28:38.90" id="00:28:38.90" class="lt" onclick="jumptoTime(1718, this.id)"><p>日本人的易潔鍋寫明了，為什麼， 你怎麼用，還有可以接受多高的溫度，還有最重要的是提防不要用冷水撞激，不要突然降溫，這樣就可以保持易潔鍋的耐用程度，OK， 行不行?</p></a>
+				<a href="#00:28:55.90" id="00:28:55.90" class="lt" onclick="jumptoTime(1735, this.id)"><p>好了， 現在就，其實我說了差不多都有分幾小時，我就不打算停機了，那麼，一樣的，口訣除了一樣之外，上鍋蓋也是一樣的，為什麼要上鍋蓋呢?</p></a>
+				<a href="#00:29:13.23" id="00:29:13.23" class="lt" onclick="jumptoTime(1753, this.id)"><p>因為第一，就是要防止油彈來彈去，廚房會乾淨一點，容易清潔，第二，就是產生焗爐的效應，所以我煎東西永遠是不會煎不熟的，OK?</p></a>
+				<a href="#00:29:27.27" id="00:29:27.27" class="lt" onclick="jumptoTime(1767, this.id)"><p>但是產生焗爐效應不是叫你密封，是要打開一點點的洞，先前鐵鍋也是這樣做的，是不是?</p></a>
+				<a href="#00:29:36.43" id="00:29:36.43" class="lt" onclick="jumptoTime(1776, this.id)"><p>現在這隻易潔鍋也是這樣做的，打開一點點的洞，讓水蒸氣跑出來，這樣魚就容易抽乾水，那麼容易抽乾水的話，自然就煎得金香了，是不是這樣說呢?</p></a>
+				<a href="#00:29:51.27" id="00:29:51.27" class="lt" onclick="jumptoTime(1791, this.id)"><p>好了，其實這條魚現在差不多了，大家等等，我聞到那些金香味，嘩，大家聽到嗎?一樣是油水，我無論用什麼鍋子煎魚，都可以令到魚在鍋子裡游水的，OK?</p></a>
+				<a href="#00:30:10.55" id="00:30:10.55" class="lt" onclick="jumptoTime(1810, this.id)"><p>所以大家真的一定要跟著我這個方法就沒錯，我每次做都名無一錯，是不是?</p></a>
+				<a href="#00:30:20.75" id="00:30:20.75" class="lt" onclick="jumptoTime(1820, this.id)"><p>好了，現在我檢查一下，看看煎得怎麼樣，唉，真的沒辦法，這些韓式炒鍋就不同中式炒鍋，要煎，嘩，看看煎得多香，是不是時間剛剛好?</p></a>
+				<a href="#00:30:35.11" id="00:30:35.11" class="lt" onclick="jumptoTime(1835, this.id)"><p>喂，煎頭其實沒有計時的，我都忘記了計時，純粹靠感覺，但是家廚因為訓練得多，廚師訓練得多，他自己有自己的感覺，等於我用手加鹽調味，一樣，好了，這個時候OK了，煎得很漂亮了，我們就先拿起魚，我繼續燒鍋，為什麼?</p></a>
+				<a href="#00:31:10.03" id="00:31:10.03" class="lt" onclick="jumptoTime(1870, this.id)"><p>因為等一下有用途的，有用途的，有什麼用途?</p></a>
+				<a href="#00:31:19.35" id="00:31:19.35" class="lt" onclick="jumptoTime(1879, this.id)"><p>等一下大家就知道了，friend ởeeee</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:31:27.29" id="00:31:27.29" class="lt" onclick="jumptoTime(1887, this.id)"><p>excitement，input，%.</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:23.51" id="00:31:23.51" class="lt" onclick="jumptoTime(1883, this.id)"><p>encry</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:31:28.27" id="00:31:28.27" class="lt" onclick="jumptoTime(1888, this.id)"><p>Isab stomach，долго，alike</p></a>
+				<a href="#00:31:28.03" id="00:31:28.03" class="lt" onclick="jumptoTime(1888, this.id)"><p>mo，imbap，謝謝，你想煎魚不要太乾，你想煎魚出彩一點，接下來這個動作 大家都必須要做，無論煎紅衫魚 煎現在我的黃花魚 一模一樣，給大家看看，煎得靚唔靚，除了它本身的酥皮之外 無破皮，ok 好了 得囉，跟著之後呢 我將這個，嘩 正呀，蔥放下去 跟著，將熟油 淋落蔥面，跟著。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:16.58" id="00:32:16.58" class="lt" onclick="jumptoTime(1936, this.id)"><p>等等，好啦，唉 等等先，跟著下來呢 我做埋這個擺碟，放埋啲油 啲豉油落去，ok 嗱，呢一次我買個新鏡頭 點解用咗呢個新鏡頭呢，因為個焦距強啲，長啲嘅話呢 我就可以拉個close up啦，油壓頭 嗱，係咪呀 我用部機係咪暢順好多呀 ok，擋返少少先 ok得，靚唔靚呀，大家話靚唔靚呀 ok 好，跟著之後 我將之前擺係雪櫃十日嘅。</p></a>
+				<a href="#00:33:11.58" id="00:33:11.58" class="lt" onclick="jumptoTime(1991, this.id)"><p>鮮沙薑豉油擺上面，好，有兩隻辣椒就靚仔啲啦，係咪咁講呀?</p></a>
+				<a href="#00:33:31.37" id="00:33:31.37" class="lt" onclick="jumptoTime(2011, this.id)"><p>好，搞掂!</p></a>
+				<a href="#00:33:33.37" id="00:33:33.37" class="lt" onclick="jumptoTime(2013, this.id)"><p>嗱，呢次有擺盤囉掛，係咪呀?</p></a>
+				<a href="#00:33:37.37" id="00:33:37.37" class="lt" onclick="jumptoTime(2017, this.id)"><p>因為新鏡頭嘅關係，我易咗操作，所以呢，真係要賴下器材呀，OK?</p></a>
+				<a href="#00:33:45.37" id="00:33:45.37" class="lt" onclick="jumptoTime(2025, this.id)"><p>真係器材可以俾你有咩呀?</p></a>
+				<a href="#00:33:49.37" id="00:33:49.37" class="lt" onclick="jumptoTime(2029, this.id)"><p>有呢個係送技術嘅，OK?</p></a>
+				<a href="#00:33:55.37" id="00:33:55.37" class="lt" onclick="jumptoTime(2035, this.id)"><p>好啦，總結一下，首先，第一，煎魚嘅口訣係乜嘢呀?</p></a>
+				<a href="#00:34:1.37" id="00:34:1.37" class="lt" onclick="jumptoTime(2041, this.id)"><p>其實呢，你所有炒菜嘅口訣，其實都係一樣嘢嘅，點樣呀?大火，先大火，燒鑊，起煙，見煙，跟住落油，再見煙，收細火，收邊邊細火呀?</p></a>
+				<a href="#00:34:15.37" id="00:34:15.37" class="lt" onclick="jumptoTime(2055, this.id)"><p>向左手邊收，平均細火，收到差唔多熄火為止，或者熄火大少少，OK?</p></a>
+				<a href="#00:34:21.37" id="00:34:21.37" class="lt" onclick="jumptoTime(2061, this.id)"><p>跟住然之後，等佢降溫，等一陣，跟住然之後，第二樣嘢就係落魚啦，落你要煎嘅嘢啦，煎嘢，記住，我講過好多次㗎啦，點呀?唔好手多，要有耐性，所以呢，先頭呢，我喺煎魚嘅期間其實做咗好多嘢嘅，喺鏡頭前，鏡頭後都係嘅，得唔得?OK?</p></a>
+				<a href="#00:34:44.37" id="00:34:44.37" class="lt" onclick="jumptoTime(2084, this.id)"><p>咁呢，你只要唔郁佢，計準時間，三分鐘又三分鐘，煎雞翼又係，煎豬扒又係，煎豬扒又係三分鐘啦，大家睇到啦，煎雞翼大家未見識過喎，遲啲我有機會再嚟同大家分享，點樣煎雞翼煎得靚呀?</p></a>
+				<a href="#00:35:2.37" id="00:35:2.37" class="lt" onclick="jumptoTime(2102, this.id)"><p>我煎雞翼又係無敵嘅，咁呢，好啦，三分鐘又，三分鐘之後呢，跟住揭起個鑊蓋，先檢查下佢可唔可以離皮先，咁呢，就攞一攞，攞一攞佢嗰隻鑊，咁如果唔得嘅話呢，攞鑊鏟幫一幫手，就用陰力壓住嗰隻鑊嚟鏟佢，OK?</p></a>
+				<a href="#00:35:21.37" id="00:35:21.37" class="lt" onclick="jumptoTime(2121, this.id)"><p>壓住嗰隻鑊，陰力壓住嗰隻鑊嚟鏟，OK?</p></a>
+				<a href="#00:35:25.37" id="00:35:25.37" class="lt" onclick="jumptoTime(2125, this.id)"><p>跟住然之後呢，反轉第二面又係三分鐘，三分鐘夠鐘之後，就檢查下佢邊一度係煎得唔靚嘅，再補一補佢，補一補火，咁就完事啦，跟住然之後，喺煎魚嘅過程當中呢，就係點呢?</p></a>
+				<a href="#00:35:41.37" id="00:35:41.37" class="lt" onclick="jumptoTime(2141, this.id)"><p>就係可以呢，點呀 加番啲生蔥落去，淋番煎魚嗰啲豉油，嗰啲熟油落去，嗰啲滾油落去，半生熟嘅蔥出咗味喇喎，跟住然之後點呀，用蒸魚豉油，咁呢個蒸魚豉油呢，我之前有影片介紹呢個六種蔥油嘅開發，嘅衍生產品嚟嘅，我都話，蔥油其實係可以食其他嘅食物嘅，尤其是鮮沙薑，因為佢點解 加咗豉油落去，所以呢。</p></a>
+				<a href="#00:36:13.55" id="00:36:13.55" class="lt" onclick="jumptoTime(2173, this.id)"><p>佢可以揀咩呢，揀羊肉啦，白切羊肉啦，可以揀呢個係分題啦，都得㗎喎，仲有揀鯪魚球，又得，OK，咁我而家，大家見到嘅呢碟煎魚，同樣道理，OK 得唔得，嗱 咁呀，今日分享完食啦，呢個賣相可以嘛，OK 嘛，大家接唔接受到，希望大家，喜歡，啊，我嘅影片啦，亦都喜歡我介紹俾大家嘅烹飪嘅方法啦，咁啊，即係臨尾都要講一句啦。</p></a>
+				<a href="#00:36:47.03" id="00:36:47.03" class="lt" onclick="jumptoTime(2207, this.id)"><p>唔好問我尊唔尊嚴，唔好問我正唔正宗，我淨係知道，我整出嚟嘅嘢好食，食價一致評價，正，咁，我首先就係，滿足到家人嘅需求，然之後滿足到朋友嘅需求，啊，然之後，如果有觀眾跟住我嘅方法一齊做，自必然又滿足到觀眾嘅需求啦，係咪，我就唔理佢係咪正宗，我唔理佢，我唔理我係咪尊嚴，啊，即係唔好再用嗰啲事呢話事啦，哎。</p></a>
+				<a href="#00:37:18.67" id="00:37:18.67" class="lt" onclick="jumptoTime(2238, this.id)"><p>跟住冇眼睇呀，啊，係咁啦，去食慣啦，拜拜啦，真係，好香㗎呢。</p></a>
+				<a href="#00:37:25.51" id="00:37:25.51" class="lt" onclick="jumptoTime(2245, this.id)"><p>variance。</p></a>
+				<a href="#00:37:26.85" id="00:37:26.85" class="lt" onclick="jumptoTime(2246, this.id)"><p>participation。</p></a>
+				<a href="#00:37:26.21" id="00:37:26.21" class="lt" onclick="jumptoTime(2246, this.id)"><p>demasiado。</p></a>
+				<a href="#00:37:26.03" id="00:37:26.03" class="lt" onclick="jumptoTime(2246, this.id)"><p>well</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:37:28.01" id="00:37:28.01" class="lt" onclick="jumptoTime(2248, this.id)"><p>Looking。</p></a>
+</div>
+	</body>
+</html>

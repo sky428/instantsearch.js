@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——南乳花生燜豬手，又一道十尺飄香的菜式，讓人垂涎不止，重現香港雲吞麵店的經典美味！但是製作其實極其簡單的，只要有耐性，大家都可以一試！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'A9_qqf0vZyI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——南乳花生燜豬手，又一道十尺飄香的菜式，讓人垂涎不止，重現香港雲吞麵店的經典美味！但是製作其實極其簡單的，只要有耐性，大家都可以一試！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好呀，又對著鑊，這裡你搞什麼鬼呀，當然是做東西吃啦，煮飯啦，今晚呢，我就想和大家分享，一個，香港很流行，即是麵檔一定會有得食的，你去雲吞麵鋪一定有得食的，一個菜式，就是什麼呢 炆豬手，南乳炆豬手，我今天就加了些花生，有什麼材料呢，南乳炆豬手其實很簡單，唯一的，就是要花時間去炆，薑片。</p></a>
+				<a href="#00:00:40.38" id="00:00:40.38" class="lt" onclick="jumptoTime(40, this.id)"><p>我帶皮的，帶皮的薑片用來打醬，是非常之惹味的，然後是什麼呢，蒜子十粒八粒夠了，然後，當然是有我們的主角，豬手 這裡一隻豬手，是完整的，然後呢，當然有我們的陪襯，花生，我們不是雲吞麵檔，我們是可以加花生的，然後，當然是要有，南乳，等一等，南乳，小南乳，不是很多 半茄就夠了，半樽就夠了，然後 花椒，然後就是。</p></a>
+				<a href="#00:01:32.38" id="00:01:32.38" class="lt" onclick="jumptoTime(92, this.id)"><p>不是 先頭說錯了，那些不是花椒 是八角，然後我的，寶貝武器，青花椒，如果大家難買青花椒的話，用普通花椒，一般麵檔都會是，用普通的紅花椒，所謂的花椒八角的花椒，就是紅花椒，先頭交代這些，是八角，經常都說錯，然後，就加幾片香葉，現在，我首先，我就是，和豬手，先汆水，將豬手，放進去，多水的那一邊，等一會兒，等一會兒，直接倒了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:41.51" id="00:02:41.51" class="lt" onclick="jumptoTime(161, this.id)"><p>好，然後加入青花椒，大家記不記得我講的青花椒在汽水入面有什麼作用?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:6.24" id="00:03:6.24" class="lt" onclick="jumptoTime(186, this.id)"><p>答不答得出?</p></a>
+				<a href="#00:03:7.24" id="00:03:7.24" class="lt" onclick="jumptoTime(187, this.id)"><p>看過我這麼多影片，當然放花椒八角，放青花椒，豬手肉類的汽水主要是除雪氣，現在放八角可以增加香氣，然後放幾片桂葉，大家問，花生放了一起炆，我告訴你，一起炆，不過這麼多花生粒粒，花生很難洗得清，所以我這次連碗一起放進去，我這個叫做權宜之計，本來有網友說你不懂得上次做牛腩的時候，你不懂得有一樣東西叫做煲湯袋嗎。</p></a>
+				<a href="#00:04:13.15" id="00:04:13.15" class="lt" onclick="jumptoTime(253, this.id)"><p>我說不是不懂，不過大家都看到我放了多少香料，我放這麼少香料，我特意要拿個袋，雖然不是很貴 幾塊錢，不過始終不環保，你用完一次難道要洗乾淨嗎，洗乾淨就麻煩了，所以我們懶人就想想其他方法，我整盤放進去，水剛剛浸過面就可以了，之前我之所以拿這麼多水，原因是因為我想浸著花生，然後蓋上蓋子。</p></a>
+				<a href="#00:04:47.15" id="00:04:47.15" class="lt" onclick="jumptoTime(287, this.id)"><p>大火，大概燜它 即是汆水，燜它多久呢，15分鐘就可以了，甚至20分鐘，我現在用20分鐘，其實這個多與少就沒所謂，為什麼這樣說呢，因為這個會計算到總燜的時間，燜豬手通常來說大概是90分鐘，OK 行不行，連同汆水的時間，大概90分鐘 行不行，為什麼我現在加上花生下去燜呢，我不知道大家有沒有吃過南乳花生，或者五香花生。</p></a>
+				<a href="#00:05:40.15" id="00:05:40.15" class="lt" onclick="jumptoTime(340, this.id)"><p>它不是很香嗎，為什麼呢，因為它有香料放進去，我為了要令花生有香料的味道，所以我放進去一起燜，其實為什麼大家會發覺，燜豬手一定是花生燜豬手，為什麼不是其他的蔬菜類，主要原因是因為花生和豬手的時間，是剛剛好同熟，而且口感是很配合的，味道很配合的 行不行，花生大家都知道有南乳花生，燜豬手通常我們都是用南乳燜。</p></a>
+				<a href="#00:06:17.15" id="00:06:17.15" class="lt" onclick="jumptoTime(377, this.id)"><p>當然你說複雜一點的，有沒有呢 有，譬如說是豬油醬去燜，今晚我就不打仗了，而且我也想給大家看一下，其實我們家裡都可以是，做到和這個是，先關小火 煮沸了，多水的頭，OK 繼續打開小小蓋，通常我們出去雲吞麵攤吃的一定是南乳豬手，我為了要給大家看看，其實我們可以做到雲吞麵攤一模一樣的味道，一模一樣的感覺 OK。</p></a>
+				<a href="#00:07:1.35" id="00:07:1.35" class="lt" onclick="jumptoTime(421, this.id)"><p>所以我這一次就加花生下去炆，就不是只炆豬手 OK 行不行，而且我這個炆豬手是很香的，是比麵攤的更香的，大家有沒有發覺，去酒樓吃的時候和麵攤吃的豬手是很不同的，麵攤它是很好吃 很軟，但是它通常的味道就不及得上酒樓的味道，上一次那個蓮藕炆腩仔，我很自豪地說那個標題是十尺飄香 讓人立刻流口水的，是不是 我這個豬手都做到這個效果。</p></a>
+				<a href="#00:07:40.39" id="00:07:40.39" class="lt" onclick="jumptoTime(460, this.id)"><p>但是麵攤通常做不到，為什麼呢 分別就在於打醬那裡，OK 行不行，所以炆豬手就很簡單，但是基本上都不用怎樣去注意，加夠水 計對時間就可以了，OK，但是打醬是重中之重，所以我在這裡和大家分享的，一定是最長時間去打醬，等一會我打醬的時間是完全一刀不剪的，就是整個過程給大家看一下，由怎樣去爆這個佐料。</p></a>
+				<a href="#00:08:18.39" id="00:08:18.39" class="lt" onclick="jumptoTime(498, this.id)"><p>然後怎樣去打醬，直至到拿下去炆為止，炆就很簡單 是不是，炆好的效果就給大家看一下，然後講一下時間的限制就OK了 是不是，OK 那就廢話不多說，我先關機 等一會打醬的時候我再開機，好啦 大家，那麼先頭和那個豬手已經出了水了，大家聽到水聲 我現在過著猛河，我現在開火燒鑊是做什麼呢，就是要打醬 OK。</p></a>
+				<a href="#00:08:56.39" id="00:08:56.39" class="lt" onclick="jumptoTime(536, this.id)"><p>好，上一次柱牛牛腩，我打仗時有朋友問我，你這樣炒香了尿頭再加水，打了折扣，當然不會，但如果不加水可以加什麼呢?其實正式在專業廚房打仗是要加油的，所以這次我多加一點油，嘗試可以減輕水份，因為我用的是易潔鑊，所以我用木鑊鏟，上一次不一樣，因為易潔鑊很容易受傷，這段影片我一刀不剪，讓大家看看到底要怎樣做。</p></a>
+				<a href="#00:10:20.09" id="00:10:20.09" class="lt" onclick="jumptoTime(620, this.id)"><p>炆食物多加一點油也不怕，但如果大家覺得很不健康，或者心理上有抗拒感，就學我上一次柱牛牛腩的做法，在炒醬的中途加水，如果不想加水，想保持香味就加油，油有助於醬料混合，可能大家會說水混合油怎會混合得來，水當然混合不了油，不過油和水在打醬的作用，就是讓醬料更加容易去開稀，很多人開甜醬、麻醬都是用油。</p></a>
+				<a href="#00:11:21.95" id="00:11:21.95" class="lt" onclick="jumptoTime(681, this.id)"><p>開腐乳都是用油，道理是一樣的，如果大家開麻醬、開甜醬都未試過，開腐乳都試過吧，當開腐乳都可以用油，為何打醬不能用油呢，道理是一樣的，而且有個好處，純粹用油，有個好處就是，當我要打醬的時候，因為沒有水在裏面，水份較少，變了它白白的，好像上次一樣，它白白的，次數和狀態就不一樣了，所以正常打醬是要用油不是用水。</p></a>
+				<a href="#00:12:8.95" id="00:12:8.95" class="lt" onclick="jumptoTime(728, this.id)"><p>只不過上次我怕大家說我用油多，所以我用水代替了，這裡我不給大家看效果，大家盡量留意畫面的變化，我現在用中小火，千萬不要大火，炒料頭一定不能大火，現在薑片開始縮，有三分一的地方開始燶，燶的意思是變金黃，不是真的燶，這個時候可以放煎豆，大家看到嗎，一有水滴下去就炸，所以打醬的時候，盡量避免加水。</p></a>
+				<a href="#00:13:1.95" id="00:13:1.95" class="lt" onclick="jumptoTime(781, this.id)"><p>上次是因為我怕被大家說，好，這個時候，一路繼續炒香，大家可以在腦海裏複習，如果有看上一次的柱油牛腩，我怎樣打柱油醬，然後這個是年後炆腩仔，我怎樣處理那個料頭，大家可以複習一下，閉上眼睛，想像一下，到底這個過程接下來會是怎樣的，ok，大家聽到有水聲的，咪裏面，因為我隔離，我和豬手沖水和過冷河，為何要沖水呢?</p></a>
+				<a href="#00:13:45.38" id="00:13:45.38" class="lt" onclick="jumptoTime(825, this.id)"><p>因為豬手在汆水的時候，會有很多血漬變成泡，我用沖水的方式，就可以減少泡的積聚，吃下去就純粹一點，現在蒜頭都可以了，然後我就可以放南乳，我放的時候，我扭到右手邊，長到燈芯火那麼小，現在大概是兩磅多的豬手，急凍豬手，大概是兩斤左右，所以我就不用放那麼多，待會調味的時候，我就要注意了，就沒有上次那麼鹹。</p></a>
+				<a href="#00:14:30.38" id="00:14:30.38" class="lt" onclick="jumptoTime(870, this.id)"><p>放些南乳汁，半磚就夠了，然後就放半磚小南乳，好，跟住呢個時候呢我就摔爛佢啦，先頭又講到啦，咁都有人會講，咁你上次落水咪冇咁好味啦，其實唔係嘅，落水呢你只要炒到佢返去嗰個係一樣咁嘅，嘅稠度呀，你一樣可以係做得好好味嘅ok，而家呢我就繼續炒佢，咁呢就要炒到佢點呢，炒到佢呢係同上次一樣嘅，嗰啲醬呢，南乳你純粹開咗佢係一種香味，好香係咪。</p></a>
+				<a href="#00:15:28.50" id="00:15:28.50" class="lt" onclick="jumptoTime(928, this.id)"><p>咁但係當你去炒嘅過程炒到佢呢完全夠新嘅時候呢即係完全係嗰個合到標準嘅時候呢佢嗰種香氣會更加強烈嘅，就唔同你啱啱開新鮮嘅南乳呢就唔一樣嘅ok，而家可以開返大小小火啦，咁向右手邊嗰邊，向左手邊啦，就唔係用燈芯火啦，用平均細火，咁大家會問，咁佢而家都乾身啦，點解你仲要炒佢呀，因為未炒出個香氣吖嘛，當醬料入材料時，炒到夠乾身時，香氣很強烈。</p></a>
+				<a href="#00:16:37.88" id="00:16:37.88" class="lt" onclick="jumptoTime(997, this.id)"><p>大家可能會有另一個疑問，為什麼要炒那麼久醬?</p></a>
+				<a href="#00:16:43.88" id="00:16:43.88" class="lt" onclick="jumptoTime(1003, this.id)"><p>炒醬也炒了十多分鐘，為什麼?</p></a>
+				<a href="#00:16:47.88" id="00:16:47.88" class="lt" onclick="jumptoTime(1007, this.id)"><p>以前我也是學大家這樣，下去不停地混醬，混完又混，混完又混，然後把材料全倒下去炒，以為很香，誰知原來不是，因為要把所有材料炒乾，薑蒜要炒到乾，醬要炒到乾，這個過程會產生一個科學作用，叫焦糖化，而我們知道人類所謂美食美味，主要有兩個效果，一個叫焦糖化，另一個叫煤蠟反應，煤蠟反應主要是用於新鮮肉煎或爆炒。</p></a>
+				<a href="#00:17:35.88" id="00:17:35.88" class="lt" onclick="jumptoTime(1055, this.id)"><p>如果是炆的話，就要有焦糖化的效果，我現在炒醬其實是提前做出一個焦糖化的科學反應，而這個很香，現在可以了，OK，搞定，大家猜一下我接下來會放什麼?</p></a>
+				<a href="#00:17:54.88" id="00:17:54.88" class="lt" onclick="jumptoTime(1074, this.id)"><p>先放肉還是先放水?</p></a>
+				<a href="#00:17:59.88" id="00:17:59.88" class="lt" onclick="jumptoTime(1079, this.id)"><p>先放水，很香，水一湧出來，這些香味是和，大家就這樣一放了醬料，然後立即放材料下去炒，那種香味是完全不一樣，現在那種香味，我現在距離鍋子起碼有兩呎，我隨便嗅一嗅，那種香氣，然後我們就放豬手和花生下去，大家看到水份不足夠，所以我繼續放入去，放水放多少呢?就剛剛蓋過肉面就剛剛好，然後我們就調味。</p></a>
+				<a href="#00:19:19.31" id="00:19:19.31" class="lt" onclick="jumptoTime(1159, this.id)"><p>我先頭講，因為豬手只有兩斤，所以我就放少些，我又要越南魚的鹹味，所以放一斤鹽就夠了，然後雞粉一斤，然後放生抽三湯匙，然後放酒，我用的是廣東米酒，用紹酒不夠香，一定要用廣東米酒，為什麼我可以做到十呎外都聞到香氣呢?</p></a>
+				<a href="#00:20:5.31" id="00:20:5.31" class="lt" onclick="jumptoTime(1205, this.id)"><p>其中之一就是因為我放的是廣東米酒，另外就是我炒醬炒得夠透，就是另外一個原因，放齊了沒有?還欠什麼?</p></a>
+				<a href="#00:20:24.31" id="00:20:24.31" class="lt" onclick="jumptoTime(1224, this.id)"><p>老抽，老抽了，然後還欠什麼?</p></a>
+				<a href="#00:20:34.31" id="00:20:34.31" class="lt" onclick="jumptoTime(1234, this.id)"><p>大家知不知道?</p></a>
+				<a href="#00:20:36.31" id="00:20:36.31" class="lt" onclick="jumptoTime(1236, this.id)"><p>哦，原來冰糖，冰糖放多少呢?三粒糖左右，好了，跟著大家，我問下大家我還有沒有少了東西?</p></a>
+				<a href="#00:21:4.17" id="00:21:4.17" class="lt" onclick="jumptoTime(1264, this.id)"><p>有沒有?</p></a>
+				<a href="#00:21:9.17" id="00:21:9.17" class="lt" onclick="jumptoTime(1269, this.id)"><p>當然有啦，差了什麼?</p></a>
+				<a href="#00:21:14.17" id="00:21:14.17" class="lt" onclick="jumptoTime(1274, this.id)"><p>差了我的signature，這個是美極，ok?</p></a>
+				<a href="#00:21:25.17" id="00:21:25.17" class="lt" onclick="jumptoTime(1285, this.id)"><p>我又加了老抽，今天的豬手就沒有那麼紅了，比較深色一點的，好，基本上調味了，OK，有什麼呢?再說一下，鹽、味、生抽、老抽、燒酒，然後幾滴的美極，然後加的是冰糖，上一次也有朋友問我，他說，和我爭論一件事，其實是大家討論而已，他不是爭論的，我現在是全程大火去炆的，其實如果是職業廚房的話，通常他們都會用中火去炆的。</p></a>
+				<a href="#00:22:22.14" id="00:22:22.14" class="lt" onclick="jumptoTime(1342, this.id)"><p>其實他們的中火的火力，就等於我們廚房的大火，上一次朋友和我爭論什麼呢?</p></a>
+				<a href="#00:22:29.14" id="00:22:29.14" class="lt" onclick="jumptoTime(1349, this.id)"><p>和我討論什麼呢?</p></a>
+				<a href="#00:22:31.14" id="00:22:31.14" class="lt" onclick="jumptoTime(1351, this.id)"><p>就說，你全程大火，那不就是柴皮，其實炆東西，應該這樣說，如果他要柴皮的話，其實你慢火和大火炆，他都會柴皮的，OK，行不行?</p></a>
+				<a href="#00:22:50.14" id="00:22:50.14" class="lt" onclick="jumptoTime(1370, this.id)"><p>這是第一，第二，我們大範炆東西，你想它軟身，其實是加冰糖，不是加砂糖，所以在這個情況上，我用煲老火湯來比喻，老火湯的肉是不是一梳梳的，是不是很容易起渣的，為什麼炆用大火都不會呢?</p></a>
+				<a href="#00:23:14.14" id="00:23:14.14" class="lt" onclick="jumptoTime(1394, this.id)"><p>因為加了冰糖，老火湯不是，老火湯你一直不可以放糖，最後才加鹽調味，所以就會柴皮，所以其實柴不柴皮呢?</p></a>
+				<a href="#00:23:23.14" id="00:23:23.14" class="lt" onclick="jumptoTime(1403, this.id)"><p>和大小火是沒有關係的，柴不柴皮是和冰糖有絕對的關係的，OK，專業廚房來說，甚至會加一種東西叫草果，草果它都是有效的，它能夠令到肉會嫩滑，炆的時候，也有人放檸檬或蘋果，那是甚麼呢?</p></a>
+				<a href="#00:23:48.06" id="00:23:48.06" class="lt" onclick="jumptoTime(1428, this.id)"><p>就是利用果酸令到肉更嫩更軟，可以嗎?</p></a>
+				<a href="#00:23:53.18" id="00:23:53.18" class="lt" onclick="jumptoTime(1433, this.id)"><p>所以要令到它軟嫩軟，是有很多種方法的，不一定是用小火炆，因為小火和調味的先後次序，和放甚麼種類的糖，和有沒有放果酸類的東西，令到它軟呢，是完全兩回事，這不關火力的，可以嗎?</p></a>
+				<a href="#00:24:15.18" id="00:24:15.18" class="lt" onclick="jumptoTime(1455, this.id)"><p>我基本上解釋了這些，希望日後大家可以跟著這條坊一起走，其實大家看到的，自從柱牛牛腩，然後連口炆腩仔，到今時今日這個炆豬手，南乳炆豬手，我的做法基本上套路都是一樣的，好了，說了這麼多廢話，我現在就蓋上蓋子，調多少分鐘呢?</p></a>
+				<a href="#00:24:47.18" id="00:24:47.18" class="lt" onclick="jumptoTime(1487, this.id)"><p>60分鐘，正常來說，正常來說，要一個半小時才會軟，60分鐘，因為現在開始滾了，所以我開始計時，那麼就，我先前說豬手和花生要炆一個半小時才完全軟，但我先前是飛水時計算了20分鐘，所以可以把時間扣減出來，因為如果純粹飛水的話，那20分鐘已經超過了飛水需要的時間，我就當做炆，為何我先前會用20分鐘呢。</p></a>
+				<a href="#00:25:32.26" id="00:25:32.26" class="lt" onclick="jumptoTime(1532, this.id)"><p>原因是因為我放了香料，我要先令花生和豬手入味，先入香料味，所以我吃到的豬手，和大家在家炆的豬手不一樣，因為我已經有香料滲入，有一種很特別的香口感，可以嗎，就好像大家，我現在想像，就好像大家去酒樓吃的南乳花生豬手那種感覺，可以嗎，不過今天我唯一失敗的就是，我放了太多老抽，可能今天我炆豬手會比較黑。</p></a>
+				<a href="#00:26:9.26" id="00:26:9.26" class="lt" onclick="jumptoTime(1569, this.id)"><p>可以嗎，但黑不代表燒焦，一樣那麼美味，可以嗎，等一會我炆好再和大家看看效果如何，好了大家，一個小時終於過去了，看看結果如何，嘩，賣相好不好，這個呢，如果先前的水，你用大火炆煮一小時，肯定不夠水，要在中間30分鐘的時候，要過來加水，要翻一翻它，不然就有機會燒焦，ok，然後呢，30分鐘再加400cc至600cc的水，然後再炆。</p></a>
+				<a href="#00:27:3.26" id="00:27:3.26" class="lt" onclick="jumptoTime(1623, this.id)"><p>炆煮一小時就是這個效果，即是說，記住，炆煮一小時，因為我們的鍋有限，不是很大，所以一定要來看看，30分鐘看一次，我自己的習慣，很喜歡炆好東西之後，我就放些蔥下去，因為為什麼呢，關火了，我現在關火，關火之後才放蔥下去，嘩!那種香口感，那種美味，本來我這個燜法已經是很惹味的了，很香的。</p></a>
+				<a href="#00:27:44.64" id="00:27:44.64" class="lt" onclick="jumptoTime(1664, this.id)"><p>我現在在廚房外面走過，他都說很香，油炆豬手，是啊，燜好了之後，關火再加蔥段下去，然後攪拌均勻，嘩!然後那些蔥呢，那種香氣又跑出來，半生熟的蔥呢，又滲入肉裡，嘩!真是相得益彰啊，香上加香啊，OK，基本上呢，一個惹味的燜豬手，好!這樣就完成了，OK，其實很簡單的，現在我再重新複述一次重點，第一，記住。</p></a>
+				<a href="#00:28:32.12" id="00:28:32.12" class="lt" onclick="jumptoTime(1712, this.id)"><p>燜東西呢，重點是什麼呢?</p></a>
+				<a href="#00:28:36.12" id="00:28:36.12" class="lt" onclick="jumptoTime(1716, this.id)"><p>重點是打醬，你想它惹味，最重要是要炒到料頭夠乾，先炒薑片，炒到薑片差不多八、九成了，才放蒜頭下去，再炒到蒜頭表面金黃色就可以了，然後放醬，把醬汁打散之後，再這樣炒，炒到你聞到它有種焦香感為止，但不是焦，是焦香感，為甚麼呢，因為這是美味食法的其中一個科學根據，就叫做焦糖化，行嗎?這是第一點。</p></a>
+				<a href="#00:29:13.86" id="00:29:13.86" class="lt" onclick="jumptoTime(1753, this.id)"><p>第二點就是豬手和花生很配合，所以它是同時間炆的，正常之下，由生炆到熟要一個半小時，才可以炆得軟，但這次我們家廚為了縮短製作時間，以及令到更加有效地運用廚具，我們先汆水20分鐘，然後加香料，香料有甚麼呢?花椒、八角、桂葉，OK，這三樣東西，然後先汆水，順便煮一煮20分鐘，等豬手入味。</p></a>
+				<a href="#00:29:57.66" id="00:29:57.66" class="lt" onclick="jumptoTime(1797, this.id)"><p>OK，好了，第三點，花生和豬手要同步做，但花生如果放進香料裡，很難把香料炒出來，到時吃到香料就不好，有兩個方法，要不學我這種懶人方法，用鐵篩隔著，然後拿進去一起炆花生，或者用湯袋，行嗎?這是第二點，第三點就是，記住中間不用再調味，一放水，炒好醬料後，就立即放水，然後加入花生和豬手，就可以立即調味。</p></a>
+				<a href="#00:30:39.42" id="00:30:39.42" class="lt" onclick="jumptoTime(1839, this.id)"><p>行嗎?</p></a>
+				<a href="#00:30:40.42" id="00:30:40.42" class="lt" onclick="jumptoTime(1840, this.id)"><p>這就是我十呎飄香，整間屋都在香，十呎飄香的，南乳炆豬手的方法，OK，這個效果的顏色，有點像酒樓，味道也像酒樓，跟麵檔差一點，我自己偏向，我喜歡吃麵檔的軟，但不喜歡吃酒樓的硬，但我喜歡吃酒樓的味，但不喜歡吃麵檔的味，OK，就是這樣，這個，炆好豬手後，用來送飯也可以，用來烘烤也可以，用來拌麵也可以，有機會我會做拌麵給大家看。</p></a>
+				<a href="#00:31:29.50" id="00:31:29.50" class="lt" onclick="jumptoTime(1889, this.id)"><p>OK，就這樣，煮好東西當然要吃，拜拜，還有，不要拜拜，記住，調味是用冰糖還是砂糖，當然是冰糖，為什麼，因為這樣可以令到，肉更嫩滑更軟，OK，行嗎，這個不關大小火的事，OK，不關時間長短的事，是關調味的事，關肉的化學作用的事，OK，行嗎，好了。</p></a>
+				<a href="#00:32:0.02" id="00:32:0.02" class="lt" onclick="jumptoTime(1920, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

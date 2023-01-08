@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜泰醬蒸黃花魚｜香港人的味道回憶｜簡單易做｜香港家常菜變異地風情</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'b5QLEXY5rcc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜泰醬蒸黃花魚｜香港人的味道回憶｜簡單易做｜香港家常菜變異地風情</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚我會分享一條食魚的做法。</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>因為在休餘期完結後，我經常都會餓過頭，所以經常都會煮魚。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>今晚我會分享一條食魚的做法。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>石手魚﹖黃花魚﹖魚羹﹖，今晚我會分享一條食魚的做法。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>今晚我要分享的是﹖，泰醬﹖，泰醬蒸黃花魚﹖，泰醬蒸黃花魚﹖，泰醬蒸烏頭﹖，泰醬蒸烏頭﹖，泰醬蒸黃花魚﹖，首先要清潔黃花魚﹖，用手輕輕地清潔黃花魚﹖，然後檢查魚的肚腔﹖，將魚刺走，黑膜是腥味的來源，還有腮位，檢查一下，魚檔有時會這樣，我不怪責他，因為他始終有大量工作，我都很欣賞他幫我處理魚，但大家要明白，大家忙中有錯。</p></a>
+				<a href="#00:02:32.49" id="00:02:32.49" class="lt" onclick="jumptoTime(152, this.id)"><p>要檢查一下他的腮位有沒有清潔，今天我可以跟大家說，又是一個非常美味的菜式，因為泰醬酸酸的，加上黃花魚的滑滑的口感，是非常配合的，這個時候我已經洗完了，洗完之後，我就要和他做清潔，大家記不記得我怎樣和他做清潔?</p></a>
+				<a href="#00:03:11.09" id="00:03:11.09" class="lt" onclick="jumptoTime(191, this.id)"><p>記得嗎?</p></a>
+				<a href="#00:03:15.69" id="00:03:15.69" class="lt" onclick="jumptoTime(195, this.id)"><p>記得嗎?</p></a>
+				<a href="#00:03:19.81" id="00:03:19.81" class="lt" onclick="jumptoTime(199, this.id)"><p>不要介意，這個是垃圾袋，記得嗎?</p></a>
+				<a href="#00:03:23.89" id="00:03:23.89" class="lt" onclick="jumptoTime(203, this.id)"><p>不記得?好，由頭開始，我經常說，要吃的魚的鮮味不等於腥味，腥味的來源是異線菌，而這個異線菌是存在於自然界的任何一個角落，除了是魚的腥臭味之外，是因為異線菌，還有樹林落葉的霉臭味，又是異線菌作怪，人類活體的腋下的味道，也是由異線菌作怪，所以在這個過程中，我們要消滅異線菌，大家看到我放了鹽。</p></a>
+				<a href="#00:04:6.77" id="00:04:6.77" class="lt" onclick="jumptoTime(246, this.id)"><p>然後胡椒碎或者胡椒粉，然後放酒，胡椒粉和胡椒碎可以增加香口感，酒也有除味和殺菌的作用，除了是異線菌，還有其他異線菌，大家看清楚，除了魚身外，魚肚也要擦一下，這三樣東西加起來，我們就可以令到，那條魚的表面，我不是隨便就這樣擦一擦，我是要揸一揸它，揸一揸它，跟它按摩一下，就可以令到那條魚。</p></a>
+				<a href="#00:05:1.65" id="00:05:1.65" class="lt" onclick="jumptoTime(301, this.id)"><p>那些最大限度的異線菌，就被我擦走，消滅了，然後剩下來的就是魚的鮮味，通常在這個過程裏面，我們是需要醃一醃的，記住，五分鐘左右，千萬不要超過五分鐘，如果是達到十分鐘的時間，它就開始入味了，到時，鹽就不用說了，一定會入味，變成鹹了，酒就開始侵入肉體裏面，變成我們吃到的不是純粹的魚的鮮味，記住，這個過程五分鐘就好了。</p></a>
+				<a href="#00:05:44.13" id="00:05:44.13" class="lt" onclick="jumptoTime(344, this.id)"><p>我醃一醃它之後，我就再開機跟大家分享，我切的蔥絲、太醬就是三樣東西那麼簡單，所以大家是不是很應該要跟著我一起做萬用太醬呢?</p></a>
+				<a href="#00:06:5.89" id="00:06:5.89" class="lt" onclick="jumptoTime(365, this.id)"><p>萬用太醬出來之後，炒粉麵、生菜包、吃雞都可以用，很多的用途，我都做了相關的菜式，都不下十條以上，你說，泰式萬用醬是不是很好用呢?</p></a>
+				<a href="#00:06:24.45" id="00:06:24.45" class="lt" onclick="jumptoTime(384, this.id)"><p>我跟大家說，比你去泰國士多買那些泰式雞醬好，始終那些都是，第一，會有防腐劑，第二，因為它要長期保持的原因，它做的味道，不是純粹地道的，你在當地吃到的泰汁，我不知道大家有沒有看過泰國煮食的片，他們通常要吃的時候，才會中硬它，基本上就是香茅、芫荽頭、辣椒、蒜頭、青檸、魚露，就是這幾樣，然後有糖、鹽、鹽。</p></a>
+				<a href="#00:07:5.18" id="00:07:5.18" class="lt" onclick="jumptoTime(425, this.id)"><p>就是這幾樣東西，所以我基於家裡經常吃泰國菜，或者喜歡吃那種酸酸的感覺，所以我通常每次一打就打一公升，一公升我就吃三個月，所以大家快點去做一個萬用泰醬，已經有越來越多觀眾回應，嘩!好味道不得了，當然啦!我的泰醬我是根據西貢小食街，某家的泰菜小食、泰國小食的味道，我調配出來的，所以我這個泰醬不是在網上拿回來的。</p></a>
+				<a href="#00:07:46.18" id="00:07:46.18" class="lt" onclick="jumptoTime(466, this.id)"><p>是我吃了幾十年泰國菜，加上我的黃金味道，所以做出這個泰醬，大家不要超我字，不要挑我字，你跟著一起做吧，你跟著一起做之後，你就明白我是不是在說謊，我每一條片我都是希望大家，可以跟著一起做之後，知道我到底有沒有說謊，我每一條片我都希望大家100%複製出來，所以我才這麼長氣，有些人，有些觀眾不明白。</p></a>
+				<a href="#00:08:28.18" id="00:08:28.18" class="lt" onclick="jumptoTime(508, this.id)"><p>我就有個疑問，有些很沒禮貌的就說，你廢話這麼多，說多過做，你跟著我一起做，你就知道，你聽完我說的指示，那個說明，你跟著一起做，你做出來好不好吃，大家心裡有數了，好，我廢話說了這麼多，我就不給他5分鐘了，幾分鐘就搞定，馬上洗魚，其實我們做了泰式麻辣醬之後，放好醬之後，放在這裡，其實我們有很多用途。</p></a>
+				<a href="#00:09:4.18" id="00:09:4.18" class="lt" onclick="jumptoTime(544, this.id)"><p>馬上整個，我連蒸魚的過程，我都是簡化了很多，就不需要去考慮很多東西了，我直接蒸了它就是了，好，那就沖洗它吧，這裡我弄濕了手，就不給大家看了，那就沖洗乾淨它，不要讓它有胡椒黏在表面，一樣是掃一掃它，OK?</p></a>
+				<a href="#00:09:32.77" id="00:09:32.77" class="lt" onclick="jumptoTime(572, this.id)"><p>不過雖然黃花魚肉很滑，看起來好像沒什麼刺，其實它有刺的，所以大家還是要小心一點，好了，那就洗乾淨了，洗乾淨之後，我們又要出動我們的萬用的廚子了，那就把它印乾，我剛才就講漏了，雖然大家心知肚明，即是內的觀眾都心知肚明，但是我講漏了一件事，就是我剛才醃它的時候，洗它的魚身的時候，為什麼要放鹽呢?</p></a>
+				<a href="#00:10:15.97" id="00:10:15.97" class="lt" onclick="jumptoTime(615, this.id)"><p>肉鹽的另一個作用是什麼呢?</p></a>
+				<a href="#00:10:17.97" id="00:10:17.97" class="lt" onclick="jumptoTime(617, this.id)"><p>可以令它脫水，脫水可以改變了它的肉的紋理，改變了肉的紋理的話，就會令到肉變得比較結實，就沒那麼容易變得糊，吃下去的咬口，裡面看看，我是不是吐了很多血?</p></a>
+				<a href="#00:10:39.61" id="00:10:39.61" class="lt" onclick="jumptoTime(639, this.id)"><p>是的，所以大家要吐得…，我每次蒸魚，這個過程是少不免的，我希望大家盡力去做好，因為其實就算我洗完之後，它也不是百分之一百完全可以消除二線菌的，始終水怎麼點都會有細菌在的，所以我們在這個過程裡面一定要怎樣呢?</p></a>
+				<a href="#00:11:9.97" id="00:11:9.97" class="lt" onclick="jumptoTime(669, this.id)"><p>要將這些肚子的腸儘量清潔一下，儘量抹乾它的話，就可以減少魚腥味，到時候大家吃到的就是魚肉純粹的鮮味，OK，行不行?</p></a>
+				<a href="#00:11:31.29" id="00:11:31.29" class="lt" onclick="jumptoTime(691, this.id)"><p>大家要記住</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:33.29" id="00:11:33.29" class="lt" onclick="jumptoTime(693, this.id)"><p>我現在…，印到差不多了，乾了，然後我們先放一邊，因為我要切薑絲，好，這樣，一樣，大家不要介意，在鏡頭阻礙著，先頭呢，之前那個菜，我就示範了怎樣切木瓜，我當時就說了，你懂得切薑絲，自然就懂得切薯仔絲，你懂得切薯仔絲，自然就懂得切木瓜絲，所以大家不要介意，我有時候說，每樣東西都這麼沉皮，原因就是。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:29.05" id="00:12:29.05" class="lt" onclick="jumptoTime(749, this.id)"><p>我經常都認為，就是一里煮食的東西，就是一里通，百里明，OK，好了，大家看看我和切薯仔絲，和切木瓜絲有沒有分別，一樣，拍下來，然後拍扁，因為薑比較輕，所以我們可以切得瀟灑些，好，給大家看，就切成這樣，當然，曾經有朋友說過我，你很厲害嗎?你都不夠專業，我一天切十斤薑，要切到很幼，我只能夠說，不同地方。</p></a>
+				<a href="#00:13:21.47" id="00:13:21.47" class="lt" onclick="jumptoTime(801, this.id)"><p>我經常說，不同地方和不同的菜式，我們自然就有不同的要求，如果我切到這些薑絲不算幼，如果在家廚來說，我切薑絲最幼的時候是甚麼呢?</p></a>
+				<a href="#00:13:42.47" id="00:13:42.47" class="lt" onclick="jumptoTime(822, this.id)"><p>我就做一大堆蟹的薑醋，或者吃蟹的醋，我就會切到很薄、很幼，如果是魚的話，切厚一點也沒所謂，但我切厚當中，已經切到很幼了，給很多人，這個不是認厲害的時候，我只不過趁機說說而已，一邊做事一邊說，我不是只說，不是多說一遍，這個時候，我聞到打開蓋，已經打好的太醬就是這樣，麻煩大家，如果對我這個太醬有興趣的話，我在說明那裡會給連結。</p></a>
+				<a href="#00:14:44.47" id="00:14:44.47" class="lt" onclick="jumptoTime(884, this.id)"><p>我的太醬其實已經做了很多菜式，這些渣是甚麼呢?</p></a>
+				<a href="#00:14:54.47" id="00:14:54.47" class="lt" onclick="jumptoTime(894, this.id)"><p>這些渣是香茅，香茅打完後就剩下些纖維，這樣就完成了，然後，大概放了兩至三湯匙中式湯匙的香茅，泰國萬用鮮辣汁，然後拿去蒸，蒸好後，上蔥花，淋魚露，和醬油生抽，這樣就很棒，我強烈建議大家，我現在說著說著已經流口水了，真的好吃，我兒子也說從來沒吃過這麼好吃的烏豆，總之一句說話，烹飪的東西，萬變不離其宗。</p></a>
+				<a href="#00:15:49.86" id="00:15:49.86" class="lt" onclick="jumptoTime(949, this.id)"><p>千萬不要限制自己，黃花魚一定要學江浙那一帶才叫正宗，要學潮州的才叫正宗，我不管我練什麼式，其實，有句名言，有句名言，有句名言，就是美國的大學，或者科學界，經常會用的，是什麼呢，理論是用來打破的，OK，所以他們絕對不會介意，到底，老師的理論會不會被學生挑戰，因為如果學生挑戰，其實那學生，就會青出於藍。</p></a>
+				<a href="#00:16:29.86" id="00:16:29.86" class="lt" onclick="jumptoTime(989, this.id)"><p>這個世界就會改變，又會有一個全新的面貌，同樣地我們煮食，也是一樣的，大家有沒有發覺，其實我煮很多的技巧，首先我要有一個基礎，我的基礎是什麼呢，因為我吃過很多地方的菜，於是我就會，有時候有川菜，有時候有湘菜，有時候會有泰菜 馬來西亞菜，印度菜也會有的，所以，甚至我最遠的土耳其菜，我也會一點。</p></a>
+				<a href="#00:17:3.86" id="00:17:3.86" class="lt" onclick="jumptoTime(1023, this.id)"><p>所以在這樣的情況下，我們就要運用我們已知的知識，然後就可以融合，一個全新的菜式，我想大家想都沒想過，黃魚可以用泰醬來蒸，是不是，烏頭是有的，因為烏頭在東南亞，也算是一個比較常見的菜式，烏頭 鱸魚那些，常見的魚，他們也有明鱸燒魚，要不就用鱸魚 要不就用烏頭，大家想都沒想過，黃魚原來可以用泰醬來蒸。</p></a>
+				<a href="#00:17:35.86" id="00:17:35.86" class="lt" onclick="jumptoTime(1055, this.id)"><p>極力推薦大家，真的很好吃，我說沒用，大家要跟著一起做才有用，只要跟著我一起做泰醬的朋友，他就知道我這個泰醬有多厲害，OK，不多說了 下一個就是蒸，蒸好之後 看看我怎樣調製混和的醬汁，待會見，現在水滾了 我放魚下去蒸，今日條魚就細啲係呀因為多餸食呀咁好啦，咁我放落去呢就呢個細細地嘅魚呢八分鐘乜都夠㗎喇，八分鐘ok。</p></a>
+				<a href="#00:18:26.97" id="00:18:26.97" class="lt" onclick="jumptoTime(1106, this.id)"><p>八分鐘之後我哋再開蓋，開鑊睇下，佢個效果如何囉喎ok，大家見下，八分鐘，都ok喎，要判斷佢係咪熟曬嘅話呢就通常呢就要嗰隻眼呢就要突出嚟嘅，咁但係呢大家亦都可以呢，由呢個係，即係個魚身嘅大細啦同埋厚度呢就去判斷ok就唔一定要過眼，完全要跌曬出嚟為止呀，咁嗱而家呢我就，擺啲沖絲上面啦我最鍾意。</p></a>
+				<a href="#00:19:15.35" id="00:19:15.35" class="lt" onclick="jumptoTime(1155, this.id)"><p>呢啲，咁多沖絲呀，因為我好鍾意食蔥嘅，大家跟我我都知㗎喇，好，留返少少啦等陣間攞嚟裝飾用啦，咁呀，跟住之後呢我就識機先咁我開始贊助油嗰陣時我再，開機同大家分享下，大家咁呢就已經係，燒好咗啲熟油呀跟住而家呢就讚下佢啦，因為是泰醬的關係，我們可以先加魚露，加少許魚露，然後加生抽，不需要太鹹。</p></a>
+				<a href="#00:20:33.39" id="00:20:33.39" class="lt" onclick="jumptoTime(1233, this.id)"><p>基本上就可以了，現在就放少許蔥絲上去裝飾，好，現在我總結一下，其實這個太醬蒸魚很簡單，我覺得會簡單過，用麵豉和豆豉拌勻，然後再蒸，ok?</p></a>
+				<a href="#00:21:6.83" id="00:21:6.83" class="lt" onclick="jumptoTime(1266, this.id)"><p>但前提是你必須要預先打好太醬，我在說明中會給大家連結，如何打太醬，我這個太醬是按照西貢小巴站的小美食街，其中一間泰國小食店，它的味道是複製出來的，為什麼我可以複製到這個味道呢?</p></a>
+				<a href="#00:21:34.83" id="00:21:34.83" class="lt" onclick="jumptoTime(1294, this.id)"><p>主要原因是因為，它開了店這麼久，我就光顧了這麼久，從小吃到大，由90年代初開始一直吃到現在，已經超過30年了，所以我記得到那個味道，也可以複製到那個味道，麻煩大家跟著說明的連結，說明在影片的下面，如果是手機的話，通常你看不到的，那裡有個向下的箭咀，你一點，一戳它，然後整個說明就會出來了，大家可以看到那條連結。</p></a>
+				<a href="#00:22:10.83" id="00:22:10.83" class="lt" onclick="jumptoTime(1330, this.id)"><p>如果大家喜歡吃泰國菜的話，我這個泰式麻用醬是絕對不能錯過的，不能錯過的程度去到哪裡呢?</p></a>
+				<a href="#00:22:21.83" id="00:22:21.83" class="lt" onclick="jumptoTime(1341, this.id)"><p>它是一個專業級的做生意水準，大家可以想像一下到底去到哪裡，當然，很多泰式店的醬，我自己覺得不一定好吃，但偏偏這個醬的味道，就是我幾十年來，唯一全香港吃的泰菜，這個味道是最好的，最適合我，所以大家可以跟著一起做，蒸魚其實都是一步一步的，一路下去，如果大家一直看我的話，也知道我蒸魚有很多條片，和很多的醬料去配合。</p></a>
+				<a href="#00:23:5.83" id="00:23:5.83" class="lt" onclick="jumptoTime(1385, this.id)"><p>但大家會發覺萬變不離其宗，其中一個重中之重，就是和魚的聲音是隨聲，而這個魚的聲音是隨聲，這個隨聲的方法是非常有效的，也有觀眾回覆說無論鹹淡水魚，這個隨聲方法是非常有效的，大家可以跟著一起做，好了，然後做好之後，大家看到我先前切了薑絲，因為我喜歡吃薑，浸過汁的薑，我很喜歡吃的，用來配飯一流。</p></a>
+				<a href="#00:23:40.21" id="00:23:40.21" class="lt" onclick="jumptoTime(1420, this.id)"><p>如果大家不想加薑也可以，為什麼呢，我這個泰式醬有香茅在裡面，而香茅其實是可以隨聲的，OK，行不行，再加上有一點點辣椒在裡面，酸酸的，而這個做法，我自己覺得比我們粵菜裡面的檸檬蒸烏頭，或者用檸檬去入饌，是更加惹味、更加好吃的，為什麼呢，因為我這個泰醬裡面又有蒜頭，又有香茅，又有新鮮的檸檬汁。</p></a>
+				<a href="#00:24:15.73" id="00:24:15.73" class="lt" onclick="jumptoTime(1455, this.id)"><p>青檸汁，所以特別惹味、特別開胃，我兒子吃不定口，希望大家喜歡，當大家想黃花魚，不要每次都煎，就是用甜麵豉蒸，其實也有其他方法的，試一下這個泰醬去蒸，還是那句話，不要說正不正宗，最重要好吃，現在我泰式混合了中國中廚的做法，非常好吃，希望大家喜歡，多謝大家收看，還有一道菜炒完就可以吃了。</p></a>
+				<a href="#00:24:53.59" id="00:24:53.59" class="lt" onclick="jumptoTime(1493, this.id)"><p>Здראל Tails grands。</p></a>
+				<a href="#00:24:52.83" id="00:24:52.83" class="lt" onclick="jumptoTime(1492, this.id)"><p>Raise</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:54.55" id="00:24:54.55" class="lt" onclick="jumptoTime(1494, this.id)"><p>OUGH。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:53.63" id="00:24:53.63" class="lt" onclick="jumptoTime(1493, this.id)"><p>grading。</p></a>
+</div>
+	</body>
+</html>

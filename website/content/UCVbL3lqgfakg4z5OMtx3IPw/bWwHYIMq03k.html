@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——萬用豆豉醬，只要製成這種豆豉醬，馬上就能成為一級專業廚師，蒸魚雲、蒸盤龍膳等無論怎樣蒸都必成搶手美食！而且製作簡單！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'bWwHYIMq03k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——萬用豆豉醬，只要製成這種豆豉醬，馬上就能成為一級專業廚師，蒸魚雲、蒸盤龍膳等無論怎樣蒸都必成搶手美食！而且製作簡單！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，大家晚上好!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>大家看到畫面，猜到我想做什麼嗎?</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>終於說了好久，大家萬眾期待，我的萬用豆豉醬終於要出場了!</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>材料很簡單，主要原料當然是豆豉，不用說了，獨孤一味，是這牌子，蒜頭、陳皮、糖、蠔油，我現在用的配方是專門用在酒樓的，大家有沒有發覺，去酒樓蒸魚雲、蒸盤龍膳，一條殭屍都不見了?</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>但為什麼他們吃的東西都不腥呢?</p></a>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>秘密就在這三樣東西，這三樣東西加起來，就可以發揮到這個效用，所以為什麼我經常說什麼蒜蓉醬、豆豉醬都浪費，做不到這些效果，最多是被你偷懶，但你偷懶，你都要去剁蒜頭，做慣家廚都知道，剁蒜頭、豆豉其實是同一樣東西，但我用了很多時間，為什麼我剁蒜頭又要用自己不喜歡的豆豉醬呢?</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>不如自己開，今晚我和大家分享，怎樣做萬用豆豉醬，大家做了萬用豆豉醬之後，蒸魚雲不用說了，蒸盤龍膳不用說了，還可以用來做什麼呢?蒸腩片、豉汁排骨，甚至乎用豆豉起鑊都可以用，但因為我經過調味之後，你用這個豆豉醬將會更加惹味，然後大家做的時候，每道菜式就簡化了很多程序，這個就真的可以偷懶。</p></a>
+				<a href="#00:02:7.00" id="00:02:7.00" class="lt" onclick="jumptoTime(127, this.id)"><p>記住，這個是酒樓的配方，所以大家可以學的，這個保證Pure，沒有防腐劑，我就買了這些盒子，我不知道有多重，200ml的盒子，在某處地方買，某城市買，一個三個十多元，我就喜歡用這些，這些做完之後，打完醬，放好盒子後，室溫放涼，等它完全放涼後，放入雪櫃，最少可以吃三個月，但我相信這個盒子不是很多。</p></a>
+				<a href="#00:02:50.00" id="00:02:50.00" class="lt" onclick="jumptoTime(170, this.id)"><p>估計一個盒子，只能做三道菜，你就會用完，OK?</p></a>
+				<a href="#00:02:56.00" id="00:02:56.00" class="lt" onclick="jumptoTime(176, this.id)"><p>所以大家可能會經常做的，但只要學了今天這次之後，跟著今天這次做之後，以後就很簡單了，做一個野味的豆豉醬，蒸魚，不需要再弄得太複雜，直接放幾塊豆豉醬，就完成了，蒸魚丸，不用弄得太複雜，放幾塊豆豉醬，就完成了，這個涼瓜炒牛肉，不用剁，不用剩，整塊放進去，起鍋，就完成了，很簡單，是吧?</p></a>
+				<a href="#00:03:29.00" id="00:03:29.00" class="lt" onclick="jumptoTime(209, this.id)"><p>這次我就不做太多了，我示範一次，只做兩盒，大家看到的，這是甚麼?</p></a>
+				<a href="#00:03:36.00" id="00:03:36.00" class="lt" onclick="jumptoTime(216, this.id)"><p>電子磅，又要出場了，因為我要計數，這裡真的要計數，首先我先開電子磅，對不起，忘記了歸零，開了那個就沒得計數了，現在歸零了，我們每一次做的時候，放多少豆豉和多少料，就用盒子來計數，OK?</p></a>
+				<a href="#00:04:0.00" id="00:04:0.00" class="lt" onclick="jumptoTime(240, this.id)"><p>這是400ml，是吧?</p></a>
+				<a href="#00:04:3.00" id="00:04:3.00" class="lt" onclick="jumptoTime(243, this.id)"><p>我放豆豉，豆豉可以做到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:9.63" id="00:04:9.63" class="lt" onclick="jumptoTime(249, this.id)"><p>好，100克，100克，ok，100克，這裡其實就裝不完的，即是，不是，有多的，那個盒子，即是，怎樣說呢，那個盒子就有多的，兩盒的話，但因為待會我們會調味，放其他的東西進去，即是放蠔油那些，所以就比實際上的豆豉會多，100克的豆豉，ok，好，100克的豆豉，現在第一件事，就要拿水沖洗它。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:43.63" id="00:04:43.63" class="lt" onclick="jumptoTime(283, this.id)"><p>這個是基本的程序，我現在放進去，好，我先把電子磅放好，然後</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:2.63" id="00:05:2.63" class="lt" onclick="jumptoTime(302, this.id)"><p>沾一沾濕布，沾一沾濕布，洗一洗，然後我用一把大一點的骨刀，因為要剁，這樣就不會太傷，大家看到我那些發芽的蒜頭，其實沒所謂的，只要它的芽不是長得很厲害，蒜頭的肉沒有萎縮的話，還可以用，但一旦出現萎縮的情況就不要用了，因為開始變壞了，蒜頭方面，加多加少就看你自己了，但應該100克來說，其實10粒8粒就已經可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.95" id="00:06:0.95" class="lt" onclick="jumptoTime(360, this.id)"><p>這次我用的是一個標準的製作，就是蒜頭豆豉醬的製作成份，如果大家喜歡吃辣的話，其實可以加辣椒進去，這次我沒有加辣椒，因為加辣椒的過程也可以是蒸食物的時候才加的，這個月30號就是我兒子的生日，他們的朋友決定來我家跟他慶祝，又十個猛男，終於可以不用禁令了，我又可以弄一個大龍鳳，那天他們訂了一些菜。</p></a>
+				<a href="#00:06:54.95" id="00:06:54.95" class="lt" onclick="jumptoTime(414, this.id)"><p>要吃什麼辣酒煮花螺，什麼肥牛粉絲，我問他，你不吃魚嗎?</p></a>
+				<a href="#00:07:5.95" id="00:07:5.95" class="lt" onclick="jumptoTime(425, this.id)"><p>他說魚有什麼?</p></a>
+				<a href="#00:07:6.95" id="00:07:6.95" class="lt" onclick="jumptoTime(426, this.id)"><p>我說不如這樣吧，剛剛新打了一個豆豉醬，我就弄一個豉汁蒸魚丸好不好?</p></a>
+				<a href="#00:07:17.95" id="00:07:17.95" class="lt" onclick="jumptoTime(437, this.id)"><p>所以遲些會用到這個豆豉醬，所以現在我弄好就對了，大家看到我整天剝蒜頭，我整天都是單手的，其實這個蒜頭要剝皮很簡單，為什麼我整天剝?</p></a>
+				<a href="#00:07:42.43" id="00:07:42.43" class="lt" onclick="jumptoTime(462, this.id)"><p>整天都用單手而不是雙手，因為這樣我就可以不用那麼…，用右手，就不用那麼…，就不用碰到這些汁，變成黏黏的，我拿刀就不方便，弄到刀髒了，大家看到的，剁豆豉是先切片，大家看到了，盡快吧，不耽誤大家時間，先切片，為什麼要這樣做?</p></a>
+				<a href="#00:08:25.07" id="00:08:25.07" class="lt" onclick="jumptoTime(505, this.id)"><p>因為這樣剁蒜蓉，就不會…，現在我用大家很喜歡，經常在電視都會看到的拖刀，這樣可以很快，但不是每次都會用的，好，先切片，然後摘它，不要那麼快摘，摘它，這樣，大家跟著我用這個方法去剁蒜蓉，就會變得很乾淨，就不會弄到到處都是，我看到有些人剁蒜蓉，是笑話來的，當然我不應該笑，不過我看到他弄到到處都是，然後一邊撿一邊…。</p></a>
+				<a href="#00:09:9.03" id="00:09:9.03" class="lt" onclick="jumptoTime(549, this.id)"><p>大家看到的，直到這個部分為止，雖然說是剁蒜蓉，但其實應該用閘就安全很多，安全的意思就是，蒜頭粒不會弄到到處都是，譬如說我大量製作蒜蓉，譬如說那些蒜蓉醬，我是去到最後才雙刀剁的，大家是不是?</p></a>
+				<a href="#00:09:31.95" id="00:09:31.95" class="lt" onclick="jumptoTime(571, this.id)"><p>有沒有見過?</p></a>
+				<a href="#00:09:33.11" id="00:09:33.11" class="lt" onclick="jumptoTime(573, this.id)"><p>記不記得?</p></a>
+				<a href="#00:09:33.87" id="00:09:33.87" class="lt" onclick="jumptoTime(573, this.id)"><p>初初的時候我是用閘的，為甚麼用閘呢?</p></a>
+				<a href="#00:09:38.07" id="00:09:38.07" class="lt" onclick="jumptoTime(578, this.id)"><p>因為蒜頭這樣就不會弄到到處都是，你看到直到這個時刻，到處是不是很乾淨?</p></a>
+				<a href="#00:09:45.99" id="00:09:45.99" class="lt" onclick="jumptoTime(585, this.id)"><p>但我剁的蒜蓉不少，OK?</p></a>
+				<a href="#00:09:57.21" id="00:09:57.21" class="lt" onclick="jumptoTime(597, this.id)"><p>有些動作看上去好看，但不實用，我現在，因為我是自己家裡吃飯的，我當然用實用來煮，我只有個人和你去表演，對不對，好了，到這個時候就可以剁了，這些蒜蓉已經剁到差不多了，切到差不多了，切到差不多小顆了，你這樣剁，蒜蓉就不會彈到到處都是，但如果蒜蓉大大顆的話，你一剁下去，它當然會雞飛狗走，給你，你被人拍，你也會走，對不對。</p></a>
+				<a href="#00:10:32.21" id="00:10:32.21" class="lt" onclick="jumptoTime(632, this.id)"><p>蒜蓉的生命不和人類的生命不一樣，但它也會彈，會走，對不對，說笑而已，一樣可以剁到很幼細，OK，好，那其實酒樓的蒜蓉醬，之所以不用加薑的秘密就是這個陳皮，我用這個陳皮是18年的，比較貴，45元一斤，不是一兩，一斤便宜了，所以不要貪心放太多，這次我放多了，剩了兩塊，我以為不夠，結果當然出事了。</p></a>
+				<a href="#00:11:25.21" id="00:11:25.21" class="lt" onclick="jumptoTime(685, this.id)"><p>好，等我一會兒，我先裝起蒜蓉，大家看看，我的砧板剁完蒜蓉是不是很乾淨，我現在要學別人，好像把沙子倒掉，陳皮一般來說，用冷水浸半天，或者用暖水浸兩三小時，基本上就可以了，切之前，我們要刮掉那些囊，為什麼呢?因為那些囊會苦的，大家有經驗的都知道，好，然後我先把蒂切出來，一大塊就夠了。</p></a>
+				<a href="#00:12:20.14" id="00:12:20.14" class="lt" onclick="jumptoTime(740, this.id)"><p>這裡大概是一隻金的皮，然後我們就將陳皮捲起，為何要捲起呢?因為方便我們切</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:37.14" id="00:12:37.14" class="lt" onclick="jumptoTime(757, this.id)"><p>好，切得幼細，看見嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:0.55" id="00:13:0.55" class="lt" onclick="jumptoTime(780, this.id)"><p>看見，好，我現在又用拖刀，拖刀不是常常可以用，看似瀟灑，其實有些情況，是不適用的，好像切蔥那些，其實用拖刀是切不斷的，好，切完絲，反轉它，切粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:33.66" id="00:13:33.66" class="lt" onclick="jumptoTime(813, this.id)"><p>將它切粒，好，它不是完全切粒，這個時候我們就剁了，剁到它像蒜蓉一樣，我們打豆豉醬的時候，如果剁得，陳皮融得漂亮的話，我們吃到豆豉的味道，就不會太重，因為豆豉的味道，我們吃到豆豉醬的時候，我們完全吃不到，只有感覺到，有陳皮味，但完全吃不到陳皮的口感，這樣才是最好，記住，所以我們剁蒜蓉可以偷懶，但剁陳皮就不可以偷懶。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:27.66" id="00:14:27.66" class="lt" onclick="jumptoTime(867, this.id)"><p>你看我都很勤力，我都很細心，但我都要繼續剁，最好剁到最後，細粒可以融入豆豉醬，就更加好，還未夠，我們繼續剁，這個要小心一點，要有耐性，我給大家看看，我剁成怎樣，還未合成之前，不要太懶，盡量，一隻碟子裝一樣的原料，這樣，因為我們下鍋的時間都不一樣，下鍋的時間，我剁成這樣，給大家看看，陳皮剁到，真的融化了。</p></a>
+				<a href="#00:15:25.66" id="00:15:25.66" class="lt" onclick="jumptoTime(925, this.id)"><p>跟豆豉，可以偷懶，還看到一粒粒，就是兩回事，記住，然後，開始剁豆豉，為什麼我拿了洗碟，大家是否看到我很多不鏽鋼工具，是的，這些最好不要用那麼多瓦碟，或者那些膠，尤其是膠，我們一定要用不鏽鋼，為什麼呢，易於清潔，我講過很多次，因為那些膠的氣泡很容易黏油，很難洗得掉，一次半次就沒所謂，每次洗不乾淨就會有異味。</p></a>
+				<a href="#00:16:21.66" id="00:16:21.66" class="lt" onclick="jumptoTime(981, this.id)"><p>會有所謂的異味，可以嗎，我這個就比較大意了一點，因為我之前弄了一些豆豉在砧板上，所以現在要逐粒撿起來，沒辦法，有時候太瀟灑總是會出意外的，所以人生過活都要小心，謹小慎微，這個我經常跟兒子說，不要讓人扯尾巴，豆豉泡好了，現在就要剁豆豉，豆豉不要太瀟灑，先用雜刀把它切掉，最後才剁，如果一開始剁的話。</p></a>
+				<a href="#00:17:15.66" id="00:17:15.66" class="lt" onclick="jumptoTime(1035, this.id)"><p>豆豉會跑到處都是，好，剁到差不多的時候，我們可以剁了，大家看不看到我的手是擋住的，順便可以幫忙撥，這樣豆豉就不會剁到四處都是了，這個時候我們要做的豆豉醬，我們就要，所有東西都要剁得很，要很仔細，不可以偷懶，不要讓它原粒豆豉，否則這個豆豉醬，吃出來的口感也不好，賣相也不好，因為我浸過豆豉。</p></a>
+				<a href="#00:18:26.93" id="00:18:26.93" class="lt" onclick="jumptoTime(1106, this.id)"><p>所以豆豉很容易被我剁成醬，我經常擋住光線，好，可以了，這個豆豉，我這個豆豉可以吃幾餐，估計一二三四餐左右吧，再和大家去...現在已經是...</p></a>
+				<a href="#00:19:22.50" id="00:19:22.50" class="lt" onclick="jumptoTime(1162, this.id)"><p>即是...對完了，我再和大家說，這裡大概是一個盒的份量，OK，那麼...蒜頭十粒八粒，很簡單的，蒜頭十粒八粒，果皮就一塊，OK，這裡三樣東西加起來，一二三，三樣東西加起來就剛剛好，裝200ml的盒，OK，這個一盒，大家正常來說可以吃四次，當然，如果你說，可不可以做多一點，當然可以，那就盡量加上去。</p></a>
+				<a href="#00:20:2.50" id="00:20:2.50" class="lt" onclick="jumptoTime(1202, this.id)"><p>好了，等一下，我要炒豆豉醬的時候，我再開機和大家分享，好了，大家...</p></a>
+				<a href="#00:20:11.50" id="00:20:11.50" class="lt" onclick="jumptoTime(1211, this.id)"><p>我開始燒鍋了，我剛才叫了一聲，是因為它關了火，OK，開始燒鍋了，開始炒豆豉醬，一樣的道理，就和我們說，這個是正常，這個是炒菜，或者是煎魚，過程是一樣的，先燒鍋，OK，先燒鑊，燒到差不多的時候，我們就放油進去，要等到它出煙，這個就不急的，很多朋友可能會有個疑問，喂，酒樓級的專業味道就是這麼簡單的嗎?</p></a>
+				<a href="#00:21:9.39" id="00:21:9.39" class="lt" onclick="jumptoTime(1269, this.id)"><p>材料就是這麼簡單，不過等一下大家要看清楚我的手法是怎樣做，要放什麼調味料進去，OK?</p></a>
+				<a href="#00:21:18.39" id="00:21:18.39" class="lt" onclick="jumptoTime(1278, this.id)"><p>要炒多久，炒到質感變成怎樣才可以變成酒樓的味道，不用放薑蒸魚都一樣沒有腥味的，OK?</p></a>
+				<a href="#00:21:28.39" id="00:21:28.39" class="lt" onclick="jumptoTime(1288, this.id)"><p>現在放油，因為現在我們要打醬，所以油要放多一點，因為我們大部份的豆豉醬都是用來蒸魚的，所以這個時候，我們當然要放一些秘密武器，就是放一點點豬油，我說過很多次了，豬油蒸魚是可以隨聲的，你說我這個豆豉醬是不是獨一無二?</p></a>
+				<a href="#00:21:55.39" id="00:21:55.39" class="lt" onclick="jumptoTime(1315, this.id)"><p>比出去買個什麼機好，對不對?</p></a>
+				<a href="#00:21:58.39" id="00:21:58.39" class="lt" onclick="jumptoTime(1318, this.id)"><p>這個時候出煙，炒醬我們就不可以太大火，所以要小火一點，中小火，OK?</p></a>
+				<a href="#00:22:8.39" id="00:22:8.39" class="lt" onclick="jumptoTime(1328, this.id)"><p>然後先放蒜蓉，先爆蒜蓉，好了，這個時候蒜蓉爆了差不多，看到它要輕輕的，邊邊，嘩，現在聞到很香的蒜蓉味就行了，然後放陳皮，陳皮要沾一點油就更加香，好了，然後攪一攪它，差不多十秒八秒之後，我們就放豆豉醬進去，我講過好多次，炒豆豉醬，即是炒打醬，其實這也是打醬的其中一個部分，我講過好多次，一定要慢火慢慢打才會出效果。</p></a>
+				<a href="#00:23:19.39" id="00:23:19.39" class="lt" onclick="jumptoTime(1399, this.id)"><p>如果一早就不斷的平輕淡然，趕時間，我告訴大家，這個醬永遠打不好，在這個階段所有材料都放了，如果大家想吃辣的話，可以放幾隻辣椒，但如果大家想不想每個人都吃辣，就好像我現在這個最原始的打法，最基本的打法，現在蒜頭混合蒜蓉，就很好味，好香，然後這個時候我們就要放其他的調味料，放蠔油，放多一點點，不怕的。</p></a>
+				<a href="#00:24:14.39" id="00:24:14.39" class="lt" onclick="jumptoTime(1454, this.id)"><p>蠔油大概放了兩湯匙，然後放糖，這個豆豉醬可以放四茶匙的糖，大家都知道甜甜的豆豉醬是特別惹味的，當然啦，這個時候，我這個豆豉醬有獨特的香味出來，再混合蠔油，這樣夠味嗎?當然味夠啦，放什麼?老抽，最好的老抽是這個，無可爭議，所有專業廚房一定用這個，都推薦這個，老抽，大概三湯匙的老抽。</p></a>
+				<a href="#00:25:21.33" id="00:25:21.33" class="lt" onclick="jumptoTime(1521, this.id)"><p>這個時候，老抽是屬於液體狀的，我們打醬打得好，就要將液體打到不見了為止，這樣豆豉醬就完成了，這個階段是一般人的階段，然後就個人的階段，我會加少少的雞粉，加多加少就大家自己的意願，你說我加這麼多調味料，我蒸的魚出來有什麼可能不惹味，這個調味料，我可以告訴大家，比一般家廚現場開的豆豉醬蒸魚更惹味，因為我經過高溫處理。</p></a>
+				<a href="#00:26:25.33" id="00:26:25.33" class="lt" onclick="jumptoTime(1585, this.id)"><p>大家也知道蒸魚會有出水，但我現在是怎樣呢?</p></a>
+				<a href="#00:26:35.33" id="00:26:35.33" class="lt" onclick="jumptoTime(1595, this.id)"><p>如果現場煮的豉油豆粉糖，豉油糖豆豉，它也是水，魚又出水，大家是否互相干擾，所以我現在打到它乾為止，到時可以令魚水和醬混合在一起，味道就剛剛好，永遠都是，調味的話，經過高溫處理的調味，是特別惹味的，給大家看看質感，剛剛好，比螺螄醬還要黑，現在還未可以，還要繼續打，打到它乾為止，這是我說過很多次，打醬的秘訣。</p></a>
+				<a href="#00:27:42.40" id="00:27:42.40" class="lt" onclick="jumptoTime(1662, this.id)"><p>打到它甚麼?</p></a>
+				<a href="#00:27:43.56" id="00:27:43.56" class="lt" onclick="jumptoTime(1663, this.id)"><p>其實這是甚麼?</p></a>
+				<a href="#00:27:45.00" id="00:27:45.00" class="lt" onclick="jumptoTime(1665, this.id)"><p>如果大家有聽過我講過，就是提前焦糖化，原來蒸魚也可以玩焦糖化這回事，難怪這麼好吃，可以的，OK，大家明不明白，所以你臨時急走去炒豆豉，和你預先做了焦糖化的豆豉，你告訴我那個味道是否差很遠，OK，大家明不明白，開始黏鍋了，水已經去得差不多了，大家看到有很多油，剩下的，是嗎?</p></a>
+				<a href="#00:28:19.96" id="00:28:19.96" class="lt" onclick="jumptoTime(1699, this.id)"><p>不要緊，這些隨它吧，OK，因為有些油在，有個好處就是有利於你長期保存，沒那麼容易變壞，你最多放進去蒸魚的時候，你撇走油，大家明不明白，OK，現在這個部分多也不要緊，你放進盒子的時候，你照樣把油倒進去，表面有層油，是可以保護醬料長期儲存的，OK，不要說三個月，半年也沒問題，因為你會放進雪櫃，你不是就這樣放在室溫。</p></a>
+				<a href="#00:28:56.96" id="00:28:56.96" class="lt" onclick="jumptoTime(1736, this.id)"><p>OK，好了，差不多可以了，關火了，因為我已經感覺到離阻很厲害，又用了五官六感，主菜就是要用這些東西，好，有時候，為什麼我可以那麼輕鬆地，和大家一邊做一邊說話呢，原因就是因為，我是用手去感覺，用鼻子去聞，用耳朵去聽，用眼睛去看，有那麼多的感應器，我都出錯的話，你說我是否該罵、該打，OK。</p></a>
+				<a href="#00:29:30.96" id="00:29:30.96" class="lt" onclick="jumptoTime(1770, this.id)"><p>接著我們就可以裝盒了，好，那我就不等它室溫了，給大家看看，我怎樣裝盒，一樣用這塊板，那些盒子用之前，就給它滾水滾一滾，OK，嘩，好香，整個廚房都是那些香味，ні tener Highway certainly byte сид sigufudock，obrig abla，carn descobrir。</p></a>
+				<a href="#00:30:17.70" id="00:30:17.70" class="lt" onclick="jumptoTime(1817, this.id)"><p>supplắ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:26.90" id="00:30:26.90" class="lt" onclick="jumptoTime(1826, this.id)"><p>nuts，plataform，用，mover，commencer，Barack workflows，Chevakukan</p></a>
+				<a href="#00:30:26.86" id="00:30:26.86" class="lt" onclick="jumptoTime(1826, this.id)"><p>hum�도，flipping，nur can strengthened，apall ceramic，impacting，dicen，estruct candies，schemes，web urban，welcome tolerant</p></a>
+				<a href="#00:30:20.02" id="00:30:20.02" class="lt" onclick="jumptoTime(1820, this.id)"><p>traged cop，Style，scattering，aroma，DAVID，٩니다，100克剛剛好可以裝一個盒子，煮完之後，有點多，我先裝去另一個盒子，OK，大家看到表面是有些油的，這個大家在室溫的時候就可以儲存了，變成室溫之後就可以放進雪櫃儲存了，蓋上蓋子，OK?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:10.18" id="00:31:10.18" class="lt" onclick="jumptoTime(1870, this.id)"><p>這個就是酒樓級的，專用的豆豉醬，這個豆豉醬的用途非常廣泛，蒸魚頭、蒸鯇魚、蒸鱸魚、蒸黃魚、蒸排骨，或者是炒的苦瓜牛肉、苦瓜排骨，全部都可以用得上，甚至你炆東西，你想放什麼都可以用得上，而這個味蕾，大家剛才都看到了，我放了很多調味，是嗎?</p></a>
+				<a href="#00:31:44.18" id="00:31:44.18" class="lt" onclick="jumptoTime(1904, this.id)"><p>有糖、蠔油、老抽，主要就是這三樣，大家如果喜歡，可以放雞粉，放多與少，自己個人喜好，不喜歡放都無所謂，但因為我已經高溫處理過，再加上有糖，糖是甜味，所以到時候蒸魚，你放幾塊上面，你直接淋完滾油之後，直接放鹹的豉油，根本不需要調味，已經很好味，這就是為什麼酒樓餐廳不需要放薑去蒸魚鱗，都一樣不腥。</p></a>
+				<a href="#00:32:18.18" id="00:32:18.18" class="lt" onclick="jumptoTime(1938, this.id)"><p>秘密就在這裡，不跟大家說這麼多了，希望大家學會這個萬用豆豉醬之後，以後就不再煩惱，不再買什麼東西了，講完就再見了，希望大家煮更多好吃的給家人。</p></a>
+				<a href="#00:32:40.18" id="00:32:40.18" class="lt" onclick="jumptoTime(1960, this.id)"><p>OK，拜拜。</p></a>
+</div>
+	</body>
+</html>

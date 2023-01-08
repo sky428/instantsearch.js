@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的家常菜——滑蛋炒蝦仁，滑蛋如何炒得好？蝦仁如何做到爽脆？影片提供了可能的答案。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'IkghXlj3z9M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的家常菜——滑蛋炒蝦仁，滑蛋如何炒得好？蝦仁如何做到爽脆？影片提供了可能的答案。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.25" id="00:00:0.25" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天我想和大家分享一道菜式，其實是家常菜，大家看到畫面都知道是甚麼，就是滑蛋蝦仁，這道菜式很普遍，也很簡單，可以做得很好吃，但炒蛋的部分又好像很難做得好，所以今天我想吃滑蛋蝦仁，所以和大家分享一下我炒滑蛋蝦仁的方法，我炒蛋的方法是從我祖母那一代傳下來的，不知道大家有沒有聽過一道菜式。</p></a>
+				<a href="#00:00:46.25" id="00:00:46.25" class="lt" onclick="jumptoTime(46, this.id)"><p>是廣州名菜，叫做黃埔炒蛋，牛肉黃埔炒蛋，這道菜式似乎現在很難在一般餐廳見到，因為這道菜式要做得好就很難，牛肉又不硬，蛋又要滑，這個就難度高很多，我就退而求其次，香港多甚麼?多水產，所以我間中都會做滑蛋蝦仁，先介紹一下材料，這個是九王，然後是青蔥，然後是蛋，蛋方面就視乎你喜歡吃多少，一般來說都是8至10隻。</p></a>
+				<a href="#00:01:43.03" id="00:01:43.03" class="lt" onclick="jumptoTime(103, this.id)"><p>如果你說人少一點，食量少一點，你可以給少一點份量，6隻蛋都可以，九王其實不用放那麼多，不過沒辦法，因為一買回來就要一堆，蔥我反而會放多一點，除了這個之外，還有蛋，我今天就用8隻，兩隻食物就夠吃兩餐，蛋8隻，我特別要介紹一下蝦仁，蝦仁呢，蝦我會買冰鮮蝦，你看到蝦身都很完整，它不會貴過急凍蝦仁，已經剝殼那些。</p></a>
+				<a href="#00:02:41.03" id="00:02:41.03" class="lt" onclick="jumptoTime(161, this.id)"><p>但我不是很喜歡用，因為打了急凍劑，解凍之後，急凍蝦有一個好處，就是它透明，透明度更高，但有一個問題，蝦味我覺得不足夠，淡而無味，所以我喜歡用冰鮮蝦，這些冰鮮蝦在香港已經有多大呢，其實差不多接近中蝦那麼大隻，看到整隻手掌那麼長，蝦身都很完整，證明它新鮮，我喜歡用冰鮮蝦，因為蝦味很足夠，蝦味跟白焯蝦沒分別。</p></a>
+				<a href="#00:03:36.03" id="00:03:36.03" class="lt" onclick="jumptoTime(216, this.id)"><p>但有一個好處，就是蝦味更香，處理起來比較容易，而且便宜，現在一斤冰鮮蝦只要40元，40元已經有20隻，很多了，如果同樣的份量，急凍蝦的話，隨時比它更貴，要差不多這麼大隻，隨時比它更貴，所以在選料上，我比較喜歡用冰鮮蝦，而在香港普遍食肆來說，除了炒飯蝦之外，很多做蝦仁，例如腸粉蝦仁，雲吞蝦仁，多數都是用。</p></a>
+				<a href="#00:04:24.12" id="00:04:24.12" class="lt" onclick="jumptoTime(264, this.id)"><p>現在大家看到這隻蝦，都幾划算的，我吃過很多次，基本上我都是買這隻蝦，很好吃的，接下來就看看我怎樣做了，現在我已經將蝦剝殼了，現在就看看怎樣醃，剝殼後，腸已經挑出來了，洗乾淨的，加少許鹽，輕輕就可以了，少許就可以了，不用多，然後少許雞粉，少許雞粉，然後胡椒，然後麻油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:24.92" id="00:05:24.92" class="lt" onclick="jumptoTime(324, this.id)"><p>最後是生粉，有些人，甚至老師傅都會教你，醃蝦的時候加少許廚酒，例如黃酒之類，但我自己本人就不是很喜歡，加酒去醃蝦，因為覺得味道不太合自己，所以我都會加少許酒，因為覺得味道不太合自己，所以我現在就，基本上就只是鹽，雞粉，胡椒和生粉，不用多，然後攪拌均勻，通常這些蝦基本上醃一醃，大概十多分鐘就可以了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:23.82" id="00:06:23.82" class="lt" onclick="jumptoTime(383, this.id)"><p>記住為什麼蝦會爽脆和透明呢，原因是因為有鹽，鹽可以令蝦身爽脆，胡椒去除腥味，麻油提香，雞粉增味，基本上醃的時候，攪拌到表面有起膠，不會分開水、醃料和肉類，基本上就完成了，基本上醃好了，然後放一旁備用，雞蛋就必須的，因為我們要炒蛋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:56.82" id="00:07:56.82" class="lt" onclick="jumptoTime(476, this.id)"><p>謝謝觀看，雞蛋不只是打發那麼簡單，我們也需要，有少許調味，加少許雞粉，然後加少少鹽，鹽呢，通常8隻雞蛋，我放三分一匙，因為蝦仁醃過後都有味，所以不需要太鹹，然後就胡椒粉，或者我喜歡就加胡椒碎，然後發蛋是加少少油的，為什麼要加油呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:55.83" id="00:08:55.83" class="lt" onclick="jumptoTime(535, this.id)"><p>因為加油發蛋，蛋就會滑些，然後就發蛋了，我很喜歡用筷子，你們身邊有發蛋器也好，有叉也好，有匙羹也好，都可以的，但是我個人認為，筷子是世界上最好的攪拌器，真的慢用，什麼都可以用，通常我們入廚的人，基本上都會有什麼用什麼，但是我個人覺得最好用的都是筷子，這樣攪拌均勻，直到蛋白蛋黃都混合在一起，這個過程亦都將調味發勻。</p></a>
+				<a href="#00:09:45.83" id="00:09:45.83" class="lt" onclick="jumptoTime(585, this.id)"><p>基本上可以完成了，備用，然後我們就要用九王，九王不用太多，雖然它賣的地方足足有三兩，但是我個人，我個人覺得一兩就夠了，不用太多，當然如果你個人比較喜歡吃九王的話，你加多少都沒有所謂，因為我們要炒蛋，所以九王不要切得太長，大概一寸左右，一吋左右，然後放入蛋液，然後放入蔥</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:52.39" id="00:10:52.39" class="lt" onclick="jumptoTime(652, this.id)"><p>蔥</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:54.39" id="00:10:54.39" class="lt" onclick="jumptoTime(654, this.id)"><p>我們就，要一大條，這裡已經有一兩，簡單來說，如果標準化的話，就是九黃一兩，蔥一兩，撕掉表面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:16.39" id="00:11:16.39" class="lt" onclick="jumptoTime(676, this.id)"><p>然後洗乾淨，為什麼我連蔥也拍呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:27.39" id="00:11:27.39" class="lt" onclick="jumptoTime(687, this.id)"><p>因為我都讓大家再重溫一下，我是怎樣切蔥的，之前在另一個視頻，涼拌豬耳的時候，我已經做過了，蔥就切薄一點，不要切太大粒，好，那主要的葱白部分，我会放在蛋里面，但是留下少许葱白部分，待会儿用来装饰，少少就可以了，加所有材料後，將它們拌勻，基本上蛋和蝦仁，基本上所有材料都拌勻了，待會下鍋炒便可以了。</p></a>
+				<a href="#00:12:52.39" id="00:12:52.39" class="lt" onclick="jumptoTime(772, this.id)"><p>蝦便可以了，蝦已醃了一段時間，鮮頭已備好，現在和大家分享處理蝦仁的過程，醃好後不要直接煎，先將水煮沸，先將水汆水，汆水後再煎，這樣蝦才會滑和爽脆，如果直接煎蝦仁，蝦仁會變得很糊，這個不能冷卻，我曾經試過，可否冷卻一下，是不可以的，現在將蝦仁放入鍋裡後，不要立即攪拌，大多數都是這樣，不論是醃過的肉。</p></a>
+				<a href="#00:13:47.39" id="00:13:47.39" class="lt" onclick="jumptoTime(827, this.id)"><p>牛柳粒或蝦仁，當大家做汆水的動作時，一定不能立即攪拌，任由它，放在水裡不要理會，等到它滾了，現在開始滾了，還未可以，忍耐一下，等到它大滾時才攪拌，這是甚麼問題呢，因為當你放入水裡，如果立即攪拌，蝦身上的生粉會立即散開，等於跟白焯蝦沒有分別，因為我們處理過的蝦仁，比白焯蝦爽身很多，但如果等不及。</p></a>
+				<a href="#00:14:44.39" id="00:14:44.39" class="lt" onclick="jumptoTime(884, this.id)"><p>立即放入水裡攪拌，這樣就不好了，這樣就死人多了，蝦仁不醃好過醃，一樣會沒味，所以我現在跟大家說話的時候，其實我是死忍難忍的，當然我習慣了就不是死忍難忍，我也要花點時間的，OK，現在看到邊邊開始滾了，開始大滾了，我們才慢慢攪，慢慢攪鬆它，之前任由它黏，任由它黏，大概飛水蝦仁要飛水多久時間呢?</p></a>
+				<a href="#00:15:28.25" id="00:15:28.25" class="lt" onclick="jumptoTime(928, this.id)"><p>我們沒有標準時間，因為不同重量都有不同的計法，不同的水份都有不同的計法，基本上我們的習慣或者我們的經驗，都是以它滾為準，大滾，等多它大概二三十秒左右，或者十來二十秒左右，這樣就代表蝦熟了，另外一個可以判斷它到底熟不熟呢，就是蝦捲在一起，經常說彎弓蝦米彎弓蝦米，本來蝦是直的，或者有一定的長度。</p></a>
+				<a href="#00:16:12.25" id="00:16:12.25" class="lt" onclick="jumptoTime(972, this.id)"><p>當它全熟的時候，它就變成彎弓蝦米了，在這個時候我們就可以熄火了，所有的蝦仁都會變成一卷狀的，在這個時候大家會發覺到，蝦仁是有一點透明的，跟我們白焯蝦有一點分別，處理蝦仁之後，處理完之後我們就進入下一步了，蝦仁就飛完水了，飛完水之後要做什麼呢?</p></a>
+				<a href="#00:16:44.25" id="00:16:44.25" class="lt" onclick="jumptoTime(1004, this.id)"><p>就是要煎一煎它，或者職業廚房來說，就是要拉一拉油，為什麼要這樣做呢?</p></a>
+				<a href="#00:16:51.25" id="00:16:51.25" class="lt" onclick="jumptoTime(1011, this.id)"><p>其實我們可以懶，不需要飛水，不需要走油，不需要煎一煎它，為什麼我們要做這個動作呢?</p></a>
+				<a href="#00:16:59.25" id="00:16:59.25" class="lt" onclick="jumptoTime(1019, this.id)"><p>因為這樣蝦仁有一點點的焦香感，是惹味很多的，OK，這樣一樣，先開大火，然後燒一燒鍋，等到差不多了，我們就放油了，因為等下我不用鑊，可以放多少少油，即是不用鑊就直接炒蛋，所以我們不需要再勁食，我沒有關小火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:59.64" id="00:17:59.64" class="lt" onclick="jumptoTime(1079, this.id)"><p>好了，這個時候就可以調小火，通常我自己的習慣，有時候會繼續開大火放料，或者有時候就收小火才放料，這個分別在哪裏呢，這個分別主要在，到底我是用來拉油還是走油還是煎，如果煎的話我會收小火才放料，如果是拉油的話，純粹走油的話，我就會大火直接放，大家看到表面有點焦，這些焦點就是蝦仁的食味所在，基本上就可以了。</p></a>
+				<a href="#00:18:45.64" id="00:18:45.64" class="lt" onclick="jumptoTime(1125, this.id)"><p>然後就輕輕地走一走油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:53.75" id="00:18:53.75" class="lt" onclick="jumptoTime(1133, this.id)"><p>我先頭啲蝦就走完油啦，可以俾大家睇下，走完油，個隻蝦就咁樣嘅，因為隻鑊唔算太污糟，所以我就懶啦，直接唔洗鑊啦，如果唔係，其實炒蛋正路應該要洗鑊嘅，再加上我考慮咗好耐，我到底用咩鑊炒好呢，為咗大家貼近到大家平時嘅習慣，好多人都會用易潔鑊，所以我今次用易潔鑊炒，大家見到我呢次就放好多油落去，我之前都講過啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:34.75" id="00:19:34.75" class="lt" onclick="jumptoTime(1174, this.id)"><p>其實放幾多油呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:36.75" id="00:19:36.75" class="lt" onclick="jumptoTime(1176, this.id)"><p>就要睇下視乎你係到底係做咩嘅菜式，有啲菜你係唔夠油係唔好食嘅，有啲菜係多油就唔好食嘅，先燒紅咗隻鑊啦，炒蛋嘅傳統技巧，燒紅咗隻鑊之後呢，即刻收細火，收細火，炒蛋呢，個溫度嘅控制係好緊要嘅，要炒到佢又要夠熟但又唔可以老，呢個時候放蛋喇，跟住放埋啲蝦落去，咁點呢，睇清楚大家，我即刻嚟鑊。</p></a>
+				<a href="#00:20:20.75" id="00:20:20.75" class="lt" onclick="jumptoTime(1220, this.id)"><p>睇唔睇到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:22.75" id="00:20:22.75" class="lt" onclick="jumptoTime(1222, this.id)"><p>睇唔睇到，咁呢我就可以攪到啲蛋呢，起個皺紋，同埋呢，係嗰啲蛋又唔會過老，而家呢就放返落去，繼續攪，咁蛋呢，係第一下高溫嘅啫，跟住落嚟呢就唔可以高溫嘅，呢個呢就係亦都係我先頭提過嘅，我阿媽嗰輩好鍾意食嗰啲，牛肉黃布炒蛋呀，就係咁樣整呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:54.75" id="00:20:54.75" class="lt" onclick="jumptoTime(1254, this.id)"><p>唔好煩呀，由得佢喎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:56.75" id="00:20:56.75" class="lt" onclick="jumptoTime(1256, this.id)"><p>而家呢係有溫度嘅，因為我生細咗火，畀大家睇下個火，好細嘅呀，咁呢，然之後一直攪，咁如果你覺得係溫度高嗰頭，即係生到咁細火都仲高嗰頭呢，咁大家呢就要做咩呀，就要拎起隻鑊，嚟一嚟，好啦，差不多可以了，如果再炒就太老了，大家看看還有些蛋汁在，那就隨便它了，然後我們關火，基本上這樣的狀態，大家看看，表面差不多熟了，但是又有少許蛋汁。</p></a>
+				<a href="#00:21:39.95" id="00:21:39.95" class="lt" onclick="jumptoTime(1299, this.id)"><p>基本上就完成了，基本上，在蛋半熟的狀態下，我們就要關火起鍋了，大家可以看到質感，基本上不能全熟，現在可以看到蛋漿流出來，這樣就為之一個好的炒蛋，一個蝦仁炒蛋 炒滑蛋 滑蛋炒蝦仁，如果是熟透就大件事了，不單止賣相差 口感也會差，在這個時候 做完後拿上枱，大概有十分鐘的時間，這個十分鐘 熱度剛剛好將流出來的蛋漿。</p></a>
+				<a href="#00:23:1.47" id="00:23:1.47" class="lt" onclick="jumptoTime(1381, this.id)"><p>弄到八九成熟 差不多裡面的芯都熟了，這樣大家吃下去就適合了，就是滑蛋，如果一開始已經炒得太熟就大件事了，上到枱就老了，大家特別要留意和提醒一下，我炒蛋的時候沒有反轉蛋來炒，一直是用鑊鏟尖不停地撩，令蛋漿不斷轉換位置，熟的蛋漿被我撩到摺在一起，生的蛋漿流回鑊底，不斷重複這個動作，蛋漿起皺紋。</p></a>
+				<a href="#00:23:53.47" id="00:23:53.47" class="lt" onclick="jumptoTime(1433, this.id)"><p>皺紋的中間夾著蛋漿，這樣可以有少許焦香感，因為碰到鑊底的就有焦香感，熟的蛋漿夾著蛋漿，咬下去是出汁的，這樣豐富的口感，才會顯得炒蛋是滑嫩和好吃的。</p></a>
+				<a href="#00:24:21.47" id="00:24:21.47" class="lt" onclick="jumptoTime(1461, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

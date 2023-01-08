@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜椰菜回鍋肉｜香鮮脆嫩｜送飯神器｜簡單易做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UT_sCFjb0SM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜椰菜回鍋肉｜香鮮脆嫩｜送飯神器｜簡單易做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.42" id="00:00:0.42" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好呀!今日我哋分享一個簡單嘅回鍋肉，可能有朋友就嫌我唔想食竹筍喎有冇其他方法呀?</p></a>
+				<a href="#00:00:11.52" id="00:00:11.52" class="lt" onclick="jumptoTime(11, this.id)"><p>梗係有喇，我又唔想食咁耐喎，可唔可以呀?梗係可以啦!</p></a>
+				<a href="#00:00:18.94" id="00:00:18.94" class="lt" onclick="jumptoTime(18, this.id)"><p>所以今日我就同大家分享一個簡單啲嘅回鍋肉，就是那個肉，再和大家簡介一下，這個就是我已經處理好的，大概半斤左右的豬腩肉，回鍋肉其實它如果原產的話，即是正宗的話，它是用豬屁屁肉的，連肥肉帶瘦肉再帶皮來做，但是我這裡我用的是豬腩肉，因為在香港來說，豬腩肉相對比豬屁屁肉更容易找，而且大量供應。</p></a>
+				<a href="#00:01:0.86" id="00:01:0.86" class="lt" onclick="jumptoTime(60, this.id)"><p>而且更便宜，我用的是巴西急凍豬腩肉，28元一磅即是約35元一斤，是不是35元?</p></a>
+				<a href="#00:01:10.80" id="00:01:10.80" class="lt" onclick="jumptoTime(70, this.id)"><p>28元1.25，我當它2吧，33元左右，33元一斤，如果是新鮮豬腩肉的話，要100元一斤，便宜了三倍，至於怎樣處理豬腩片，我在另外一個回鍋肉的影片已經說過，我會在說明那裡給大家連結去看，可以嗎?</p></a>
+				<a href="#00:01:39.80" id="00:01:39.80" class="lt" onclick="jumptoTime(99, this.id)"><p>除了豬腩片之外，獨孤一味椰菜，這個是扁椰菜，當然是貴一點，但好吃一點，說明是減辣版，我這個當然只是用蒜蓉，但是記住，我們用的豆瓣醬一定是四川特產皮苑豆瓣醬，只要用過這個豆瓣醬，什麼四川味都可以做出來，而且上一條竹筍回鍋肉，我更加可以確定，用了這個豆瓣醬之後，是比香港好，醬油廠出品的所謂的四川豆瓣醬。</p></a>
+				<a href="#00:02:32.22" id="00:02:32.22" class="lt" onclick="jumptoTime(152, this.id)"><p>因為它的特色就是有蠶豆在裏面，所以它這個豆瓣醬是很特別的香氣，上一次的竹筍胡鍋肉我已經證實了，它可以炒得到正式的胡鍋肉的味道，至於甚麼是正式呢，你當然要吃過才知道那種味道，你沒吃過是不知道的，所以這樣炒就是有竹筍有半肥瘦肉片，就叫做胡鍋肉當然不是，除了要炒川菜除了川味，除了一定要用這個皮軟的四川豆瓣醬之外。</p></a>
+				<a href="#00:03:11.26" id="00:03:11.26" class="lt" onclick="jumptoTime(191, this.id)"><p>當然花椒油就不得了，這個花椒油你當菜油用就可以了，是青花椒油來的，它有甚麼特色呢，當然帶少少麻辣味，少少而已很輕的，好了 吹完水 說完一大輪之後，當然是開火燒鍋，開火燒鍋就是大火燒鍋，然後我們就等它冒煙，冒煙之後我們就開始跟豬腩片走油了，這個是減辣版，還有我不是用竹筍，我之前都說過。</p></a>
+				<a href="#00:03:51.82" id="00:03:51.82" class="lt" onclick="jumptoTime(231, this.id)"><p>其實胡鍋肉很多配菜都可以的，只要你選對肉調對味，味道是那種味道就ok了，就是叫做胡鍋肉了，大家明不明白，當然胡鍋肉都有分地域的，上海胡鍋肉和四川胡鍋肉就很不一樣的，今天我跟大家分享就是四川胡鍋肉的變奏版，好了 現在冒煙了，然後我就放油，油可以多放一點點，因為我想留一些油來拌麵吃，因為我跟豬腩片走油。</p></a>
+				<a href="#00:04:34.70" id="00:04:34.70" class="lt" onclick="jumptoTime(274, this.id)"><p>其實可以出一點點豬油出來，然後再冒煙，就將腩片放下去，我們剛開始放的時候就不用理會它，不要動它 隨它，呢個呢我抹得唔夠乾身呀係啦呢個要留意呀咁呢啲豬腩片呢，之前呢我哋係要係抹佢乾身啲咁呢同上一次畀呢個呢一個，就唔夠乾身呀所以呢啲油但係但係我已經中咗兩滴呀不過就唔算太痛呀，入得廚房嘅話呢基本上一定會畀油彈過嘅大家話係咪當然。</p></a>
+				<a href="#00:05:23.16" id="00:05:23.16" class="lt" onclick="jumptoTime(323, this.id)"><p>如果唔代表你可以孖夫呀咁就盡量又滴一滴啦又彈一彈呀，咁呢就盡量呢就係地面就最好啦好啦嗱呢個時候呢我哋就可以喐佢啦，記住呀回鍋肉呢嗰個豬腩片，唔好畀佢好勁呀嗰啲水好勁呀咁你唔好畀佢呢係，走友得太過窿呀咁咪有少少就得㗎喇咁我而家呢，快速搞佢啦因為差唔多得啦咁就唔好畀佢咁窿呀如果唔係呢，失卻咗回鍋肉嘅特色呀OK喇我而家生細火先。</p></a>
+				<a href="#00:06:7.70" id="00:06:7.70" class="lt" onclick="jumptoTime(367, this.id)"><p>好彩我帶咗眼鏡嘅如果唔係我隻眼都中招呀我而家眼鏡已經有好多，好，我哋開返埋個貨啦就逼一逼啲油呀咁呀逼一逼嗰啲，水晶嘢出嚟跟住之後我哋就可以處返佢我哋平時撈麵又好炒菜都好都可以用得返嘅，咁呢個呢就係同肥豬肉走友嘅好處，差唔多啦咁我呢個呢，我倒返倒咗啲油落去呀，呢個時候呢我哋就繼續繼續燒鑊喇喎。</p></a>
+				<a href="#00:06:58.38" id="00:06:58.38" class="lt" onclick="jumptoTime(418, this.id)"><p>好快見因為熱呀嘛跟住呢個時候呢我哋就落呢個，豆瓣醬準備啦跟住我哋先呢就係將嗰啲，蒜蓉呢，落咗嗰個花椒油先唔好意思呀呢度調轉咗呀落咗花椒油喇，落水啦，呢個總有馬友失提嘅時候，都會做錯嘢嘅，但係大家只要補救返，一樣啦咁就炒一炒佢先啦ok，呢個時候我哋關細火呀點解呀，因為我哋開始要落呢個豆瓣醬啦。</p></a>
+				<a href="#00:07:43.59" id="00:07:43.59" class="lt" onclick="jumptoTime(463, this.id)"><p>呢個四川嘅皮原豆瓣醬呢，就好鹹嘅，所以唔好落得太多，大概兩斤到，上一次呢就整到好鹹呀，呢個時候呢，我哋就炒一炒佢，呢個真係BB辣嚟㗎，所以我又冇落辣椒，咁大家放心下皮原辣椒醬呢，佢本即係皮原嘅豆瓣醬呢，佢本身唔係好辣嘅啫，好開返大個火，呢個時候呢，就開始差唔多啦，睇住呀唔好畀佢窿呀，咁呢個炒醬嘅過程都幾緊要呀。</p></a>
+				<a href="#00:08:28.91" id="00:08:28.91" class="lt" onclick="jumptoTime(508, this.id)"><p>可以令到呢個嘢菜呢，係更加惹味嘅ok，咁呢個時候呢我哋就炒，炒嗰啲菜頭呀，吓，來炒佢先，跟住你放埋落去，放埋呢個豬腩片，點解要將個菜頭擺咗落去先呢，咁樣呢就可以令到佢呢，就相對地呢就可以平衡一啲呀，大家唔好睇佢咁紅喎，其實呢，可以話畀大家聽佢唔辣㗎喎ok，呢個時候呢我哋就放埋呢個椰菜落去啦，如果沒有乾水的話 放一點水下去 灑幾滴水。</p></a>
+				<a href="#00:09:45.08" id="00:09:45.08" class="lt" onclick="jumptoTime(585, this.id)"><p>本身椰菜就唔係好出水嘅，所以大家要灑水落去都可以嘅，灑水除咗係令到佢更加濕潤之外，就可以令到佢呢稍為降一降溫啦ok，大家睇下我呢個係後面放嘅椰袋頭，所以呢個時候呢佢就炒得唔係好熟呀，為咗要令到佢呢即係炒熟啦咁所以呢我哋上，二三十秒就得㗎喇咁就可以數住啦跟住之後一上，上鑊蓋跟住之後調埋未放埋啲沖到落去就ok啦大家手等呀。</p></a>
+				<a href="#00:10:45.47" id="00:10:45.47" class="lt" onclick="jumptoTime(645, this.id)"><p>咁大家想呢係佢即係測試佢到底有幾高溫呢咁我哋呢個呢，開始啦手啦OK，咁你過一過啲菜佢呢就可以好好即係好好嘢未㗎喇ok，咁咪見佢咁乾呢可以再放啲水呀，炒椰菜就可以咁炒咗喎，炒其他菜就盡量啦，呢個時候，我哋就可以調味啦咁我先頭講呢嗰個豆瓣醬就好鹹嘅，唔使放，夠㗎啦，一茶匙。</p></a>
+				<a href="#00:11:45.37" id="00:11:45.37" class="lt" onclick="jumptoTime(705, this.id)"><p>一茶匙到啦，跟住之後呢雞粉呀，少少啦雞粉一樣呀，多少，落唔落個人意願唔需要咬呀，可以了 又出了那些回鍋肉 罐頭回鍋肉的味道出來，這個時候我們就將蔥，本身回鍋肉 蔥是不用放的，不過我個人喜歡它那種蔥香，所以才放，這個時候最後了，我們說龍點睛，在邊邊 鑊的邊邊，放幾滴豉油下去 生抽下去，OK 搞定。</p></a>
+				<a href="#00:12:37.78" id="00:12:37.78" class="lt" onclick="jumptoTime(757, this.id)"><p>吃碗麵，一個減辣椰菜版的回鍋肉就出來了，我再跟大家說，回鍋肉大家要記住，其實不一定要什麼的，不一定要指定要竹筍的，其他我相信大家在餐廳都吃過很多的回鍋肉，也知道回鍋肉是什麼味道，我可以跟大家說，我這個味道 大家鏡頭就看不到，但是我可以跟大家說，就是和這個罐頭回鍋肉的味道是一模一樣的，雖然我放的是椰菜。</p></a>
+				<a href="#00:13:18.78" id="00:13:18.78" class="lt" onclick="jumptoTime(798, this.id)"><p>為什麼會是一模一樣呢，就是因為我放了這個皮軟豆瓣醬的功勞，OK 行不行，希望大家有另一個選擇，因為我這個沒有加辣椒，也沒有加其他的調味，所以我可以告訴大家，不是很辣的，以我的觀感來說，就是BB辣，是不是很簡單，是不是，其實就真的這麼簡單，行不行 我做個總結，然後總結一下，這個就很簡單。</p></a>
+				<a href="#00:14:6.78" id="00:14:6.78" class="lt" onclick="jumptoTime(846, this.id)"><p>這個菜，說明是回鍋肉，大家要記住，其實重點主角一定是肉，不是菜，菜其實原版的回鍋肉，菜是可以配時令的，不一定要竹筍，因為竹筍大概是三至十月，這七個月八個月的時間，行不行，所以其他的日子大家可以配椰菜，配其他青椒 辣椒來炒，一樣可以的，配蒜來炒一樣可以的，所以重點不是你配什麼菜，重點是你選的肉做的手法。</p></a>
+				<a href="#00:14:47.17" id="00:14:47.17" class="lt" onclick="jumptoTime(887, this.id)"><p>什麼叫回鍋肉呢，大家也看到我經常做腩肉，其實我做腩肉的技巧就是回鍋肉，可以嗎?炒腩肉的技巧，廣義上來說，我所有的豬腩肉炒菜，都是回鍋肉的其中一種，就是菜式來的，可以嗎?</p></a>
+				<a href="#00:15:9.03" id="00:15:9.03" class="lt" onclick="jumptoTime(909, this.id)"><p>炒菜那裡是椰菜，先放椰菜頭，炒它，炒到半熟才放菜，還有大家要注意，如果它乾水的話，大家可以加水，即是加水，一來可以降溫，二來就不要太乾，還有大家看到的，我整碟菜是不是很乾淨，即是不會水汪汪的，希望大家喜歡，這也是一個簡單的菜式，小朋友就這樣了，可能有朋友沒看過我炒回鍋肉的，大家看看，等等。</p></a>
+				<a href="#00:15:50.03" id="00:15:50.03" class="lt" onclick="jumptoTime(950, this.id)"><p>我先弄一個廣角，好了，大家看看我這三隻，三隻，我這三隻的辣椒醬，這個就是加辣版的桂林辣椒醬，這個就是蝦米辣椒醬，這個就是皮軟辣椒醬，一定是加辣版這個最辣，其次這個，噴火的這兩個都可以，這個呢，如果桂林辣椒醬加辣版是10分的話，這隻皮軟的頂曬窿2分，即是不辣，好不好，希望大家喜歡，多些選擇。</p></a>
+				<a href="#00:16:31.03" id="00:16:31.03" class="lt" onclick="jumptoTime(991, this.id)"><p>不要說經常不吃辣，其實大家放鬆心懷，其實有很多很多選擇，希望大家喜歡，不跟大家說那麼多，不耽誤大家時間了。</p></a>
+				<a href="#00:16:46.03" id="00:16:46.03" class="lt" onclick="jumptoTime(1006, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

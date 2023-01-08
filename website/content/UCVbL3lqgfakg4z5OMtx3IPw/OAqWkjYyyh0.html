@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——紅燒斑尾 Ft. 豆卜粉絲</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OAqWkjYyyh0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——紅燒斑尾 Ft. 豆卜粉絲</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.09" id="00:00:0.09" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今天我想跟大家分享一個在香港非常普遍的事，就是紅燒擺尾，擺尾是甚麼來的呢?</p></a>
+				<a href="#00:00:20.46" id="00:00:20.46" class="lt" onclick="jumptoTime(20, this.id)"><p>其實就是魚尾，在香港主要是鹹水的水域，所以通常香港人所謂的紅燒擺尾，通常是鹹水魚，其中又以石斑為主要的肉類材料，今天我買了花高一點的代價，貴一點的，吃點好東西，買了兩條龍躉尾，給大家看一下，這個已經劈了尾巴，然後這個我就要求不要劈，大家看一下，這個原本就是這樣的樣子，為甚麼我要求不要劈呢?因為我自己慢慢修剪。</p></a>
+				<a href="#00:01:15.46" id="00:01:15.46" class="lt" onclick="jumptoTime(75, this.id)"><p>其實擺尾，即是魚尾，最好吃的部份就是尾鰭和肉之間連接，骨膠原就非常豐富，如果喜歡吃的人，吃到這個就非常美味，這個也是送走的恩物，尾鰭、背鰭、肚鰭，我都叫他不要斬，我自己拿回來，不要浪費，雖然它是照稱，當然計重量就要付錢，其實這裡的紅燒石斑尾，不是那麼複雜，我們需要的是甚麼材料呢?除了斑尾之外，簡單一點。</p></a>
+				<a href="#00:02:4.46" id="00:02:4.46" class="lt" onclick="jumptoTime(124, this.id)"><p>有薑，然後我就喜歡放兩粒蒜子，然後有蔥，這個是一束，通常一束到一束都夠了，不過我都說過很多次，我喜歡吃蔥，所以我通常用兩束，然後芫茜，本來芫茜只是作為點綴，不過大家都知道街市不會一條賣給你，所以我買了一束，我看看接下來用來有甚麼用，這次的紅燒魚尾，我就加豆卜，豆卜有四兩，也不是很貴，然後我買了幾隻，本來如果是正式的酒家，職業廚房，他們會加冬菇。</p></a>
+				<a href="#00:03:7.46" id="00:03:7.46" class="lt" onclick="jumptoTime(187, this.id)"><p>但是我特意放了幾隻冬菇，我懶，我就不浸冬菇了，我買了幾隻新鮮的冬菇，用來點味，另外，細包的龍口粉絲，這隻是龍口粉絲，細包的龍口粉絲，我買了兩包，這個大家應該經常聽過的，就是粉絲雜菜煲，節瓜粉絲，其實處理粉絲有兩種方法，其中一種是用冷水浸開，然後放進去放湯煮，另外一種方式，今晚我也會用到，就是用來炸。</p></a>
+				<a href="#00:03:56.46" id="00:03:56.46" class="lt" onclick="jumptoTime(236, this.id)"><p>炸完之後，就用來混入紅燒魚腩裡，用來吸收汁，這個粉絲好吃到不得了，大家有沒有吃過馬拉雙薯，或者粉絲蟹煲，那些粉絲是不是乾爽得來，又很惹味，其實他們這個粉絲的處理方式，都是用油炸的，今天我又用家廚常用的方式，就是半油炸，少許油就可以了，因為太多油都不是說不健康，可能太過飽了，所以今晚我就用半油半煎半炸的方式去處理粉絲。</p></a>
+				<a href="#00:04:43.46" id="00:04:43.46" class="lt" onclick="jumptoTime(283, this.id)"><p>基本上，這裡的材料就介紹完畢了，我現在就要先洗魚尾，然後開了，好啦!咁呢就而家呢就，約略洗完佢魚尾啦，咁我哋洗完佢魚尾之後呢，係咪咁就算呢?其實唔係嘅，咁大家都應該處理過海鮮都會知道呢，石斑呢，佢呢就個表面呢就有好多散嘅，咁所以呢我通常呢就係，落少少鹽啦，跟住然之後呢，散一散佢啦。</p></a>
+				<a href="#00:05:26.94" id="00:05:26.94" class="lt" onclick="jumptoTime(326, this.id)"><p>落啲鹽就散一散個表面，咁呢就可以去散嘅，OK?</p></a>
+				<a href="#00:05:33.34" id="00:05:33.34" class="lt" onclick="jumptoTime(333, this.id)"><p>咁呀，散完一面就到第二面啦，咁落少少鹽，用少少陰力，大家睇唔睇到呢，開始嗰邊邊係咪有啲白色嘅嘢出嚟呀，嗰啲呢就係散嚟嘅，咁我哋呢就，攞手攞啲鹽，然之後捉下佢，咁呢基本上呢，就去咗大部分嘅散㗎啦，咁呀，兩條都係咁處理啦，兩條都係咁處理，咁就一樣啦，咁主要呢，其實用鹽散佢呢仲有一個作用嘅，不過呢呢個就需要時間。</p></a>
+				<a href="#00:06:20.34" id="00:06:20.34" class="lt" onclick="jumptoTime(380, this.id)"><p>通常呢啲魚呢，佢本身都有水份㗎嘛，有咩辦法可以令到啲魚肉呢更加爽身呢，其實呢就係，可以用鹽，約略係醃佢大概，即係新鮮嚟計呀，蒸魚咁樣計呀，咁呀大概係醃佢，攞鹽散勻全身之後，醃佢大概一個鐘頭到，咁呢啲魚肉呢，就會脫水嘅，有少少脫水嘅，咁樣呢係可以令到呢，嗰啲即係，嗰啲魚肉呢就會更加緊緻啦，食起上嚟呢就冇咁容易。</p></a>
+				<a href="#00:06:56.54" id="00:06:56.54" class="lt" onclick="jumptoTime(416, this.id)"><p>諧口，冇咁容易霉嘅，咁就一梳梳肉咁就過癮啲啦，口感就好啲啦ok，好啦，咁呢就洗乾淨喇喎，醃完喇喎，咁我哋點做呢，就要同佢斬片啦，魚鰭我不是全部斬走，只斬了邊邊，留下這些位置很好食，咁通常呢啲人話咁大舊魚，如果你要斬嘅話呢，會唔會好難定位呀即係好難斬得到佢標準嘅，即係，通常我哋係點樣做呢，首先呢就係輕輕攞把刀。</p></a>
+				<a href="#00:08:15.49" id="00:08:15.49" class="lt" onclick="jumptoTime(495, this.id)"><p>戒咗，戒咗個位先跟住定位，呢個魚夠曬年紀大呀，咁我哋就整完一件㗎喇，跟住之後大概呢每一件呢開，三分二寸到一寸，刀不夠重，所以沒辦法，所以海鮮檔的刀很重，大家有沒有見過，原因是要斬斑的時候，拍到我的手都紅了，這一件也不輕，也有三、四兩，基本上就是這樣開的方式，通常因為我要拍視頻，所以我叫海鮮檔老闆不要斬。</p></a>
+				<a href="#00:09:46.89" id="00:09:46.89" class="lt" onclick="jumptoTime(586, this.id)"><p>讓我自己斬，現在正式自己拿來切，不過我想介紹一下，到底怎樣開一塊魚，或者怎樣斬一塊魚，大家可以看到，這個，大家看看，跟手指的比例，好，終於出盡九牛二虎之力，我用這把骨刀，但骨刀也不夠強，不知道大家有沒有逛過街市，街市的海鮮檔刀特別重，大概接近1.5公斤左右，特別重的原因是要斬這些大塊魚，要斬斷魚骨。</p></a>
+				<a href="#00:10:46.89" id="00:10:46.89" class="lt" onclick="jumptoTime(646, this.id)"><p>現在一件件的就弄好了，我們要處理一下，稍微醃一醃，醃魚大部分是斑球之類，其實很簡單，稍微加一點鹽，現在這裡有，一斤多一點，然後大概加一茶匙鹽，然後加胡椒粉，胡椒粉適量，不用太多的、太複雜的醃料，因為本身魚的魚味是很足夠的，只需要有什麼呢?</p></a>
+				<a href="#00:11:35.59" id="00:11:35.59" class="lt" onclick="jumptoTime(695, this.id)"><p>鹽、胡椒粉、生粉，還有麻油，大家看看這個麻油，基本上這四樣東西就可以了，麻油也不用太多的，略量，加一加，視乎它有沒有水，如果水份不是太多的話，加一點水，主要是開了生粉，然後醃，大家看到我都是戴著手套的，我之前的視頻也有說過，主要是戴手套比較衛生，第二，我喜歡用手去醃東西，主要的原因是。</p></a>
+				<a href="#00:12:28.03" id="00:12:28.03" class="lt" onclick="jumptoTime(748, this.id)"><p>之前的視頻也有介紹，用手其實有兩個目的，第一個是手比較靈活，例如這麼大的魚，你沒辦法用筷子直接攪拌，令它全部都可以上粉、上味，這樣就可以靈活一點，第二，我也有說過，烹飪是要利用五官六感，手腳並用，我現在用手的主要原因是，除了靈活性，令它更加均勻的調味外，另外，我還要有手感，用手感去感受黏性、黏度和黏度。</p></a>
+				<a href="#00:13:13.79" id="00:13:13.79" class="lt" onclick="jumptoTime(793, this.id)"><p>這樣就可以確認，我現在醃的東西，到底能否達到，應該要有的效果，OK?</p></a>
+				<a href="#00:13:25.79" id="00:13:25.79" class="lt" onclick="jumptoTime(805, this.id)"><p>稍微醃一醃就可以了，放置一會兒，大約半小時就可以了，OK，先頭經過雞手鴨腳 剁魚腩 剁魚尾，之後現在開始處理粉絲，我先頭已經講過處理粉絲有兩種方式，一種是用冷水浸 通常放湯就這樣做，但紅燒那種就不可以 要炸，大家看看 為什麼要買細包龍口粉絲，因為可以完整炸 大家看到，不用放很多油 燒紅了鍋 油之後就炸半炸式。</p></a>
+				<a href="#00:14:34.35" id="00:14:34.35" class="lt" onclick="jumptoTime(874, this.id)"><p>我經常講家廚不可以學廚房那樣做那麼多標準動作，我們唯有用半炸的方式 可以省油 省火，大家看看 油溫夠高的話 粉絲就變粗，可能樣子是否有點熟悶呢，沒錯 粥店經常做的滑口粉絲 會滲入米通，其實那些就是這種粉絲 炸開了，炸一炸 吸油之後炸到表面變成米通就可以了，這個就整完之後放上去。</p></a>
+				<a href="#00:15:53.82" id="00:15:53.82" class="lt" onclick="jumptoTime(953, this.id)"><p>接著進入下一個步驟，紅燒魚尾或紅燒斑球之類，通常先頭醃過的，大家都看到，現在輪到處理油炸或酒油，要沾生粉，因為這是油炸的過程，或者走油的過程，生粉炸的時候會脫落很多，通常用完之後這些油就不要了，當然職業廚房就不會有這個問題，所以我們家廚在這個時候，通常我們放的油就不會放很多，亦是我強調的半油半油炸的方式。</p></a>
+				<a href="#00:17:10.48" id="00:17:10.48" class="lt" onclick="jumptoTime(1030, this.id)"><p>這樣在家廚來說是最省的，大家看到我一直沾粉一直炸，大家在這個過程當中要記住，誰先放誰放後，翻動的時候順序次序，否則會造成有些焦，但有些不夠熟，因為用灌油炸的方式，所以大家要注意處理的時候，要多些翻動，否則未必會全熟，通常這個走油的過程，大概處理到七八成熟，怎樣才算七八成熟呢，通常炸到表面有些金黃色便可以。</p></a>
+				<a href="#00:18:44.89" id="00:18:44.89" class="lt" onclick="jumptoTime(1124, this.id)"><p>有時要耐心一點，通常這個過程大約3-4分鐘，現在這個不是全部魚尾，只不過是一半，如果全部處理好，可能要差不多10分鐘，即是分2次處理，要注意，這個半油炸最考人工夫的地方是，如果炸魚腩的粉不夠新的話，很多時候會導致炸得不夠透，沒有那種脆的口感，而是一咬下去，整個口都是粉，這一點大家要注意。</p></a>
+				<a href="#00:19:44.89" id="00:19:44.89" class="lt" onclick="jumptoTime(1184, this.id)"><p>大家看到魚尾開始脫皮嗎?</p></a>
+				<a href="#00:19:47.89" id="00:19:47.89" class="lt" onclick="jumptoTime(1187, this.id)"><p>即是這部分差不多熟透，但這個還未熟透，因為本身有厚度，本身不是十分熟透，這個要注意，通常要看著它，因為它吸油吸得快，而且高溫，大家也看到它不停有煙，所以半小時可以加少許油去降溫，不需要特意去調校火力，我現在是用大火，開始有少許金黃色，大家看到邊邊有少許金黃色，差不多了，呢邊呢個就ok啦呢種咁嘅金黃色。</p></a>
+				<a href="#00:20:56.67" id="00:20:56.67" class="lt" onclick="jumptoTime(1256, this.id)"><p>對住嗰個位咁就ok啦大家睇唔睇到呀，加咗油但係好似冇乜點降溫咁呀係咪呀咁就係啱嘅，咁嘅狀況係啱嘅因為其實我加咗油呢都唔係加好少好多嘅啫，降溫，方法嘅ok，懶人唔鍾意調教個火力咁好多時候，因為我以前細個呀，學煮嘢嗰陣時呢我係學呢個柴爐嘅，金黃色啦ok啦，唔容易散呀，之後。</p></a>
+				<a href="#00:22:1.69" id="00:22:1.69" class="lt" onclick="jumptoTime(1321, this.id)"><p>第二轉，這部份暫時到這裏，製作完材料第一次的程序後，現在是真正的炒的時候，先把鍋燒紅，過程之前的視頻也有說過，如何把鍋燒紅，然後就放油，大家還記不記得，我之前說過，有薑、蒜、蔥，記不記得我之前說過，放蔥、蒜、薑、蔥、蒜的程序，首先要放薑片，放薑片，為何要放薑片呢?</p></a>
+				<a href="#00:23:8.89" id="00:23:8.89" class="lt" onclick="jumptoTime(1388, this.id)"><p>為何要先放薑片呢?</p></a>
+				<a href="#00:23:10.89" id="00:23:10.89" class="lt" onclick="jumptoTime(1390, this.id)"><p>然後就放蒜頭，蒜頭炆煮時通常是原粒的，爆炒一下，最後才放蔥，大家還記得為何要這樣做嗎?</p></a>
+				<a href="#00:23:30.89" id="00:23:30.89" class="lt" onclick="jumptoTime(1410, this.id)"><p>因為薑、蒜、蔥有不同的吸熱程度，所以千萬不要一起放，否則炒焦蔥頭，也未輪到薑出味，如果想出味均勻，就一定要依程序放，爆香薑、蒜、蔥後就放菇、豆腐炒，這個時候就放酒，不好意思，因為時間關係，因為時間關係，我沒有打稿，我隨心之所至，興之所至，所以說話就比較食羅斯，爆香材料後加入蠔油，聽唔聽到呢個鑊邊好多火腸出嚟呀。</p></a>
+				<a href="#00:24:52.99" id="00:24:52.99" class="lt" onclick="jumptoTime(1492, this.id)"><p>因為我而家呢嗰隻鑊呢個溫度係比較高溫嘅咁我已經解決，好多次㗎喇我哋廚房即家廚呢點樣可以，煮到出面嘅味道呢咁樣主要就要靠嗰個，保持呢個高溫ok咁而家呢大概係落五百cc水，一般嘅蚊嘢落咁多五百cc水多唔多個頭呀其實唔多㗎知唔知點解，因為等陣間落粉絲㗎嘛蚊蚊下嘅時候呢，覺得好多水但係落完粉絲呢就乜水都唔見曬。</p></a>
+				<a href="#00:25:37.27" id="00:25:37.27" class="lt" onclick="jumptoTime(1537, this.id)"><p>大家睇唔睇到我落嗰個程序呀炒到咁上下，炒香咗啦跟住落蠔油再炒一炒跟住之後就落水咁而家呢，咁蓋蚊蚊佢先，呢個時候係唔需要調味嘅調味要臨到最後尾先調味而家可以咁，我將嗰啲味呢就灰咗落去嗰個，本身豆卜其實冇乜味嘅，咁另外呢呢個當中呢就有個竅妙嘅咁其實呢出面餐廳呢一般，嚟講呢就紅燒魚腩呀紅燒魚尾呀呢啲呢會落肉絲嘅。</p></a>
+				<a href="#00:26:22.07" id="00:26:22.07" class="lt" onclick="jumptoTime(1582, this.id)"><p>冬菇之外就落肉絲咁呢嗰個味道呢就個層次就豐富好多咁家廚，大佬我為咗調嗰兩滴味我去邊度搵兩條肉絲出嚟呀搵幾條肉絲出嚟呀，咁所以呢一般家庭好難做到但係其實有竅妙嘅我會放乜嘢呢，豬油豬油可以增加豬油撞著魚呢，可以增加佢嘅鮮味嘅，OK大家記住喇喎，呢個過程就好長時間嘅咁我而家暫時呢就識一識機先呀，好啦嗱而家大概呢就蚊咗兩三分鐘呀。</p></a>
+				<a href="#00:27:3.03" id="00:27:3.03" class="lt" onclick="jumptoTime(1623, this.id)"><p>咁我基本上就ok嘅，咁然之後呢呢個時候呢我哋就要落乜嘢呢就將嗰啲，魚尾呢就放曬落去，好，這個時候我們就開始調味了，鹽大概半茶匙就可以了，可能很淡口，但其實待會味道一燜，水就不見了就很鹹，然後糖可以加三匙，為什麼要加這麼多呢?因為待會還有其他調味料，雞粉就加一茶匙左右，攪勻。</p></a>
+				<a href="#00:28:14.20" id="00:28:14.20" class="lt" onclick="jumptoTime(1694, this.id)"><p>攪勻後便開始，為何我會放鹽這麼少呢?</p></a>
+				<a href="#00:28:20.20" id="00:28:20.20" class="lt" onclick="jumptoTime(1700, this.id)"><p>因為生抽是需要放的，生抽大概是放兩湯匙，一湯匙至兩湯匙，然後加老抽上色，調味完成後，加入粉絲，等一會粉絲吸收湯汁，這個時候其實水份不足，可能大家會覺得，嘩!還有這麼多水?</p></a>
+				<a href="#00:29:33.61" id="00:29:33.61" class="lt" onclick="jumptoTime(1773, this.id)"><p>不是吧?是呀!粉絲很喜歡吸水，這個時候，我們就把鍋蓋上，煮大約一至兩分鐘，現在已經超過兩分鐘了，邊邊還有很多水，現在差不多沒有了，還有一點黏底，這個時候，我們就放蔥，粉絲吸水後，就是這個樣子，其實，如果用油炸就好很多，現在我用半油炸，其實不是炸得很透，希望大家自己做的時候，可以比我做得更加靚仔，加上葱段、芫茜。</p></a>
+				<a href="#00:30:45.20" id="00:30:45.20" class="lt" onclick="jumptoTime(1845, this.id)"><p>差不多了，很香了，好，臨上碟之前還有一個步驟，因為我第一次開始讚酒，但讚了很少，臨上碟之前就加少許酒，讓它取回酒的餘香，上碟上枱的時候就會很香，基本上大家看到已經沒有水了，所以才說很少水，不是，很多水，其實到最後差不多是一滴水都沒有，基本上一碟紅燒魚尾斑尾就完成了，大家可以加枝竹炆。</p></a>
+				<a href="#00:31:59.83" id="00:31:59.83" class="lt" onclick="jumptoTime(1919, this.id)"><p>整個過程都是大同小異，可以用枝竹炆，也可以用豆卜粉絲炆，OK，讓大家看看完成的賣相，我本身喜歡吃軟的，所以炆得比較久，如果大家想吃香脆一點，其實可以下魚後的過程不需要那麼久，可以立即加粉絲，甚至粉絲差不多了，才加魚都可以，整個過程由你們自己發辦，但味道基本上製作過程就是這樣，希望這個紅燒斑尾，FIT。</p></a>
+				<a href="#00:32:54.83" id="00:32:54.83" class="lt" onclick="jumptoTime(1974, this.id)"><p>這個是豆卜粉絲，大家喜歡吧，今晚就先吃粉絲，我要開飯了，拜拜。</p></a>
+</div>
+	</body>
+</html>

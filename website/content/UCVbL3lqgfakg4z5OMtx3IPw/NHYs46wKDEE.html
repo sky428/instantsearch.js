@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——薄荷葉滑牛雞蛋湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NHYs46wKDEE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——薄荷葉滑牛雞蛋湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.22" id="00:00:0.22" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天和大家介紹一個比較特別的菜式，基本上餐廳都很難吃得到，只有存在於傳說當中，是什麼傳說呢?</p></a>
+				<a href="#00:00:20.22" id="00:00:20.22" class="lt" onclick="jumptoTime(20, this.id)"><p>大家先看看有什麼材料，今天主要有幾樣東西，大家猜到是什麼嗎?</p></a>
+				<a href="#00:00:32.22" id="00:00:32.22" class="lt" onclick="jumptoTime(32, this.id)"><p>這是一碟麵，大家猜猜看吧!</p></a>
+				<a href="#00:00:38.42" id="00:00:38.42" class="lt" onclick="jumptoTime(38, this.id)"><p>沒錯，就是薄荷葉，薄荷葉，然後今晚我想做一個什麼菜呢?</p></a>
+				<a href="#00:00:48.02" id="00:00:48.02" class="lt" onclick="jumptoTime(48, this.id)"><p>就是薄荷葉滑口蛋湯，這個菜式基本上在現代香港的飲食中非常罕見，只會存在於老一輩的家廚之中，其實薄荷葉這個菜式大家猜不猜得到，看到有薄荷葉，第一時間當然想到特飲，或者現在很多飲品市場，很多飲品譬如檸茶或者蘋果茶都會滲入薄荷味，但大家想都想不到，其實薄荷葉是可以做鹹的，是可以做送飯菜的。</p></a>
+				<a href="#00:01:32.82" id="00:01:32.82" class="lt" onclick="jumptoTime(92, this.id)"><p>再介紹一下材料，今天有主角薄荷葉，另外吃肉瘦開心，這裡有一斤牛肉，已經醃好了，至於怎樣醃和開法呢?</p></a>
+				<a href="#00:01:47.82" id="00:01:47.82" class="lt" onclick="jumptoTime(107, this.id)"><p>我之前都拍了一個視頻，既然這個菜式有蛋，當然要先打蛋，這裡大概四隻，另外有兩隻沒有打蛋的，用來做什麼呢?</p></a>
+				<a href="#00:02:0.82" id="00:02:0.82" class="lt" onclick="jumptoTime(120, this.id)"><p>這個是可以用來增加湯的野味感，大家猜到嗎?</p></a>
+				<a href="#00:02:7.82" id="00:02:7.82" class="lt" onclick="jumptoTime(127, this.id)"><p>煎蛋，其實經常聽人說有個叫陽春麵，陽春麵到底是怎樣做湯的呢?</p></a>
+				<a href="#00:02:17.82" id="00:02:17.82" class="lt" onclick="jumptoTime(137, this.id)"><p>陽春麵做湯就是靠這兩隻雞蛋，等一下我給大家看看，到底我怎樣做可以提升湯的野味，當然有爆香鑊的蒜頭，這裡有五粒，然後蔥花，大家都知道有什麼用途，這裡的薄荷葉大概有多少呢?</p></a>
+				<a href="#00:02:42.82" id="00:02:42.82" class="lt" onclick="jumptoTime(162, this.id)"><p>不要看它那麼多，其實這裡只有半斤，今天我逛街市，突然間看到有薄荷葉賣，其實都不是突然的，其實我們經常都說，菜要當時得令，現在已經進入初夏了，也是薄荷葉應市的時候，為什麼香港街市，雖然說在一般的餐館裡面，高級也好，或者是普通平民的餐館也好，很難得看到有薄荷的菜色，但是為什麼香港的街市，一定是到時候過了清明沒多久。</p></a>
+				<a href="#00:03:25.82" id="00:03:25.82" class="lt" onclick="jumptoTime(205, this.id)"><p>進入初夏的時候，就開始有薄荷葉應市呢?</p></a>
+				<a href="#00:03:30.82" id="00:03:30.82" class="lt" onclick="jumptoTime(210, this.id)"><p>因為本身其實我們的家常菜裡面，都經常間中都會用到薄荷，而這個薄荷，可以這麼說，今天我為什麼會想到這個菜色呢?</p></a>
+				<a href="#00:03:44.82" id="00:03:44.82" class="lt" onclick="jumptoTime(224, this.id)"><p>第一就是因為我兒時的記憶，以前我奶奶就很喜歡吃，鄉下就窮到窮，我暑假回去，她通常間中會煮薄荷煎蛋湯，薄荷蛋湯，或者薄荷蛋肉片湯，不單止是滑口，可以配肉片也行，煮來一餐，以前窮，他們在自由地，通常都會種一些雜菜，而在我祖母的自由地裡，其中一個雜菜就是薄荷葉，除了薄荷葉之外，還有一個夏天廣東人很喜愛的，糧食或者甜品。</p></a>
+				<a href="#00:04:28.75" id="00:04:28.75" class="lt" onclick="jumptoTime(268, this.id)"><p>糧粉，糧粉菜，我祖母也會種的，當然這是老一輩，現在新一輩已經不懂得這些東西，好了，簡單介紹完這個材料之後，我們接下來就看看怎麼做，先前介紹了薄荷滑口蛋湯的基本材料，現在就看看怎麼做，我先前也說了，有牛肉，有薄荷葉，有發好的蛋漿，我特意留了兩隻蛋，用來做什麼呢，用來煎，煎完之後用來煮湯，可以增加湯的整體味道。</p></a>
+				<a href="#00:05:15.55" id="00:05:15.55" class="lt" onclick="jumptoTime(315, this.id)"><p>好了，我就不再介紹怎樣燒鍋，之前的幾個視頻都做過，就不反覆了，所以我直接一開始就已經燒好鍋，然後我就直接把蛋下去煎，我就直接把蛋下去煎，煎蛋要煎到不粘底要靚就先大火，雖然不講不講都要講下，然後打一隻蛋落去就不用理會，收返細個火就可以，跟住之後我地點做呢，就係煎佢兩邊，打蛋其實煎我都講過好多次。</p></a>
+				<a href="#00:06:18.59" id="00:06:18.59" class="lt" onclick="jumptoTime(378, this.id)"><p>你唔可以心急，你一心急就一定煎和，所以你見到我打蛋一分鐘，我都唔理佢，開始見到有金黃色，跟住之後我地就開始反蛋，大家睇唔睇到我用咩工具，我唔係用鑊鏟，我用咩呀，用呢個，鉗，點解我會用鉗呢，個原因就係因為呢隻就唔係正式嘅中式炒鑊，係韓式炒鑊，佢個弧度呢，就其實我覺得就唔係好適合，唔係好適合用鑊鏟。</p></a>
+				<a href="#00:07:1.59" id="00:07:1.59" class="lt" onclick="jumptoTime(421, this.id)"><p>一個好嘅廚師呢，其實用咩工具都可以煎到五萬個蛋，睇唔睇到呀大家，我攞鉗一樣可以煎蛋，一樣可以反蛋，我希望大家要明白呢，我地好多時候，唔好話對工具一定要要求百分百準確，好多時候我地家廚黎講，講得唔好聽就係有咩食乜，有咩用乜嘅，所以呢你比隻筷子我一樣可以煎到蛋，你比雙筷子係唔係一隻，你比隻鉗我一樣煎到蛋係唔爆黃嘅。</p></a>
+				<a href="#00:07:40.59" id="00:07:40.59" class="lt" onclick="jumptoTime(460, this.id)"><p>ok，咁好啦，而家就煎蛋啦，我地要煎熟曬嘅，要煎窿嘅，大家睇到個表面係窿曬嘅，咁樣我地煮出黎嘅蛋湯先有野味嘅感覺，ok，好啦，跟住落黎我地煎完蛋之後就做下一個步驟，就係，炒呢個，炒呢個係，突然間食螺絲，炒呢個係薄荷葉，薄荷葉就放一粒蒜頭落去，咁一樣啦，咁點解幾時先放蒜頭呀，就係當啲油燒到咁上下起煙啦，跟住之後我地就放個薄荷葉落去。</p></a>
+				<a href="#00:08:31.07" id="00:08:31.07" class="lt" onclick="jumptoTime(511, this.id)"><p>咁蒜頭都要爆一爆啦，大家睇到嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:43.55" id="00:08:43.55" class="lt" onclick="jumptoTime(523, this.id)"><p>謝謝，薄荷葉太散了，所以要放下去，現在放下去爆炒，等它吸收油，其實薄荷葉的處理手法</p></a>
+				<a href="#00:09:4.46" id="00:09:4.46" class="lt" onclick="jumptoTime(544, this.id)"><p>就好像是放菠菜湯，或者是西洋菜湯，做法差不多，或者是九記湯，就拿一顆鑽頭下去爆炒，然後把菜吸一吸油，在高溫之下吸一吸油，這樣出來的味道就特別香了，然後放兩隻煎好的蛋，然後放薄荷，現在已經有很香的薄荷葉味，放大約1600ml的水，因為這個半斤，我先前有提過，其實這個做法就是，做西洋菜湯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:58.46" id="00:09:58.46" class="lt" onclick="jumptoTime(598, this.id)"><p>即是滾湯，做九記湯，九記葉的湯，都是這樣的做法，就是拿一顆蒜頭下去爆炒，然後把菜葉放下去，炒一炒在高溫之下吸油，在這樣的情況之下，那些菜葉，這樣的滾湯就會很好味，通常現在就放了水，然後就上鑊蓋，通常是多久呢，大概大滾之後，三分鐘就可以放其他材料了，差不多三分鐘了，我們就開始做下一個，要加入其他的材料。</p></a>
+				<a href="#00:10:44.46" id="00:10:44.46" class="lt" onclick="jumptoTime(644, this.id)"><p>下一個程序，大家看看，滾了三分鐘之後的薄荷葉，它就開始軟身，顏色也會深很多，然後我們就加其他材料了，加什麼呢?先加牛肉吧，今天吃肉瘦肯定很開心，因為這裡有一斤牛肉，記不記得我講過，做滑牛，飛水的時候怎樣做?不要動它，隨它，我現在隨它，等水滾了，然後我才攪散它，OK?</p></a>
+				<a href="#00:11:35.26" id="00:11:35.26" class="lt" onclick="jumptoTime(695, this.id)"><p>大概煮了一分鐘，大家可以見到開始大滾，表面的牛肉還未熟，為何要這樣做呢，記得原因嗎，因為如果太早攪散，黏在牛肉表面的生粉便會脫落，脫落後口感便會變粗糙，不要太過份，先放雞蛋，已打發好的蛋，這裏已有四隻蛋，這時才攪散，便可以起蛋花的作用，在這情況下，不用太過份，等它再次沸騰便可以食，這菜式會有少許泡。</p></a>
+				<a href="#00:12:49.26" id="00:12:49.26" class="lt" onclick="jumptoTime(769, this.id)"><p>賣相不太好看，但其實是很美味，這時我還未調味，要等它再次沸騰，等它再次沸騰才調味，調味很簡單，現在大滾，因為我今天用來做湯飯，所以湯要少許鹹，加一半鹽，然後加對應份量的糖，然後加少許雞粉，因為太多所以我加了三分二茶匙，在這情況下，攪拌好，牛肉便可以了，因為我已經做了，然後便完成，關火。</p></a>
+				<a href="#00:13:54.26" id="00:13:54.26" class="lt" onclick="jumptoTime(834, this.id)"><p>稍為攪拌，然後加入蔥花，一道很惹味的菜式，清涼又簡單的薄荷葉滑口蛋湯，一道清涼惹味應節應時的薄荷葉滑口蛋湯，今天主要是用來淘飯的，所以我先前都說過調味比較鹹，如果想做湯的話就要減少鹽，我先前加了一湯匙半，但因為有牛肉和蛋都有味道，所以半湯匙鹽已經很足味，現在給大家看看質感如何，賣相如何。</p></a>
+				<a href="#00:15:3.30" id="00:15:3.30" class="lt" onclick="jumptoTime(903, this.id)"><p>大家可以看看，覺得這個菜如何，大家看到湯比較濁，原因有兩個，第一是太快攪拌蛋，蛋散了，第二是因為牛肉有生粉走出來，所以會有生粉凹陷，所以比較濁，這個通常是豬肝湯都會出現的問題，如果大家不想看到這種情況，下次可以先沖水，沖水後再加，這樣就比較穩定，湯就清澈很多，但我自己覺得湯已經清澈了，但味道因為粉有味道。</p></a>
+				<a href="#00:16:3.30" id="00:16:3.30" class="lt" onclick="jumptoTime(963, this.id)"><p>走出來反而沒有濃烈的肉味，大家也看到有黃色的油，是什麼呢，是我後面加的麻油，可以提香，簡單快捷，算是應時食品，這是薄荷葉，滑口蛋湯，舉一反三，還有其他湯類，例如冬瓜，這個是，什麼花湯，香花，冬瓜椰香花肉碎，冬瓜鹹蛋肉碎，枸杞豬肝湯，西洋菜肉片湯，或者是菠菜鹹蛋肉片湯，都是這樣的做法，還有變化出來。</p></a>
+				<a href="#00:17:13.36" id="00:17:13.36" class="lt" onclick="jumptoTime(1033, this.id)"><p>大家經常吃的菜式，就是金銀蛋現菜，這些全部都是舉一反三，所以這道菜很特別，未必有這麼多人喜歡薄荷葉，而且還要鹹，是不是很奇怪?其實不奇怪，這些全部都是傳統菜式，我祖母本身是番禺人，所以我小時候放假，回家經常吃到的菜式，希望大家欣賞這道菜式，如果明天看到，還有薄荷葉賣的話，可以試一下跟著我這個方法做。</p></a>
+				<a href="#00:17:58.36" id="00:17:58.36" class="lt" onclick="jumptoTime(1078, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

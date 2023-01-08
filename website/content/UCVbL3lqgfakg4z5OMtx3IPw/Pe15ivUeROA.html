@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜清蒸寬尾魷魚｜味道清甜肉質爽脆｜簡單易做｜另類蒸魚</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Pe15ivUeROA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜清蒸寬尾魷魚｜味道清甜肉質爽脆｜簡單易做｜另類蒸魚</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚安!</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>大家睇到呢個畫面，咁多垃圾嘅，得個白膠袋，呢度想介紹啲乜嘢?</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>今日我想介紹一個大家可能知道有呢樣菜式，不過就冇諗過自己可以整得到嘅，就係清蒸魷魚!</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>簡單唔簡單?清蒸魷魚聽得多，清蒸魷魚點蒸?就好似蒸魚咁簡單!</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>先唔講咁多，而家我介紹主角出場先!</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>叮叮叮叮，係咩嘢魷魚?食開有條癮!</p></a>
+				<a href="#00:00:48.00" id="00:00:48.00" class="lt" onclick="jumptoTime(48, this.id)"><p>大家睇下咩嚟㗎?係墨魚嚟㗎!你又話蒸魷魚?魷魚嚟㗎!唔係墨魚嚟㗎!</p></a>
+				<a href="#00:00:58.00" id="00:00:58.00" class="lt" onclick="jumptoTime(58, this.id)"><p>食開有條癮，我發覺原來我個仔好鍾意食呢隻魷魚，所以我上方設法，大家都見到之前都已經介紹咗個菜式，呢個係西蘭花炒灰味魷魚!</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>灰味魷魚外形上好似墨魚，但實際上佢就係魷魚嚟㗎!點分呢?</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>第一，魷魚會有前面兩條長竹鬚，長過佢其餘八條爪，呢個竹鬚係魷魚特有嘅特性特點之一!</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>第二，墨魚背部係硬，但魷魚背部係軟，大家明唔明白?呢個就分別魷魚同墨魚，雖然外形上似墨魚，但實際上係魷魚嚟㗎!</p></a>
+				<a href="#00:02:3.00" id="00:02:3.00" class="lt" onclick="jumptoTime(123, this.id)"><p>魷魚名叫做灰味魷魚，或者叫做荷包魷魚，點解我連續整咗兩次?因為佢好爽口，一般魷魚比較軟身，但灰味魷魚爽口!</p></a>
+				<a href="#00:02:27.97" id="00:02:27.97" class="lt" onclick="jumptoTime(147, this.id)"><p>我認為這個特性可以清蒸，其實是有這個菜式的，不是我作出來的，這個時候我首先第一件事，我要先處理它，處理魷魚很簡單，一隻手拿著魷魚尾，一隻手拿著魷魚頭一扯，這樣它就出來了，銀色的這個位置是脈囊，對下這個位置是胃，這隻魷魚肯定餓了很久，記住銀色那邊是脈囊，所以千萬不要弄破它，否則整個砧板都黑了。</p></a>
+				<a href="#00:03:11.97" id="00:03:11.97" class="lt" onclick="jumptoTime(191, this.id)"><p>然後第二隻，很簡單，一隻手拿著魷魚尾，一隻手拿著魷魚頭一扯，這樣就完成了，然後我們就清洗它，我先放盆子，我現在要記住，洗海鮮一定要用大水沖洗，這個不關環保事，因為我要清蒸，所以我原隻魷魚就不沖洗，原隻魷魚不沖洗，然後我一扯，這條骨就出來了，用手扣住，因為裡面還有內臟，卵巢，蒸囊都在裡面，所以我們要用手去找。</p></a>
+				<a href="#00:04:20.58" id="00:04:20.58" class="lt" onclick="jumptoTime(260, this.id)"><p>好像挖雞腔一樣，用手指這樣挖，將內臟盡可能挖出來，然後第二個同樣的做法，先將脊骨拔出來，魷魚的脊骨是透明和半硬的，墨魚的脊骨是硬的，這個很肥，這個紅色的，大家知道是什麼器官，很多東西，很肥，這個當然要準備生仔，將它全部挖出來，大家看看，這些全部都是它的子孫，扣乾淨之後，用水沖洗，再繼續，表皮有些膜，皮是留下來的，但如果有些薄膜就要去掉。</p></a>
+				<a href="#00:05:56.67" id="00:05:56.67" class="lt" onclick="jumptoTime(356, this.id)"><p>洗乾淨了，這個還是有點髒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:7.67" id="00:06:7.67" class="lt" onclick="jumptoTime(367, this.id)"><p>大家看看左上角的位置，看看我怎樣沖洗</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:18.67" id="00:06:18.67" class="lt" onclick="jumptoTime(378, this.id)"><p>再檢查一下，盡量把內臟扣乾淨，因為待會蒸的時候，我們不會破邊，破邊的話它會縮小，縮小的話就保持不了漂亮的形狀，這些繼續還有，好，咁就搞掂囉，跟住處理個頭，處理個頭好簡單嘅啫，佢呢個嘴，呢個係嘴嚟嘅，咁呢就對下呢啲軟組織呢，就攞把刀噹住個砧板，跟住一扯，咁呢佢個胃呀腸呀脈囊呀，就全部出曬黎，銀色呢個。</p></a>
+				<a href="#00:07:18.59" id="00:07:18.59" class="lt" onclick="jumptoTime(438, this.id)"><p>咁呢千祈唔好整破佢個脈囊呀，跟住之後攞個刀尖一啄，啄佢隻眼一下，跟住之後將佢嗰啲眼嘅，內容呀，嗰啲組織呢就，拔咗佢出嚟，跟住之後，輕輕一啄就得㗎啦，嗱，嗰啲銀色嗰啲呢就佢個嗰啲瞳孔呀，眼嘅外部嘅組織呀ok，跟住然之後呢，嗱呢個，呢個呢個嘴，呢個個嘴，咁呢就攞隻手食指同拇指，跟住一啄，好似啄暗瘡咁。</p></a>
+				<a href="#00:08:5.09" id="00:08:5.09" class="lt" onclick="jumptoTime(485, this.id)"><p>跟住佢成個嘴就出咗嚟㗎啦，咁呢後面掹住嗰啲呢就係佢嘅食道嚟嘅，ok，嗱咁呀成個魷魚就咁樣就完事啦，好，嗱再嚟，俾大家睇下，嗱呢個白色開始呢個銀色呢個呢就係脈囊嚟嘅，由白色呢個軟組織開始攞把刀尖啄住佢，跟住然之後啄實個針板一扯，嗱咁佢整個嘅胃呀嗱最下面呢個胃啦，銀色嘅就係脈囊啦，咁佢所有嘅組織呢都。</p></a>
+				<a href="#00:08:40.09" id="00:08:40.09" class="lt" onclick="jumptoTime(520, this.id)"><p>出曬嚟啦跟住然之後喺佢個眼嗰度攞個刀尖一啄，咁佢就破開一半嘅跟住攞個刀尖，呢個撳實個針板跟住然之後呢一拎佢呢，咁呢啲組織就出曬嚟嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:58.88" id="00:08:58.88" class="lt" onclick="jumptoTime(538, this.id)"><p>order，� grilled mills，стро</p></a>
+				<a href="#00:09:4.40" id="00:09:4.40" class="lt" onclick="jumptoTime(544, this.id)"><p>nursery，umbai，كpow，passage</p></a>
+				<a href="#00:09:3.02" id="00:09:3.02" class="lt" onclick="jumptoTime(543, this.id)"><p>eing，´ manifold，bedroom，petition，바，styling，advocates，breath，rh sausнал，mushlyn</p></a>
+				<a href="#00:09:4.44" id="00:09:4.44" class="lt" onclick="jumptoTime(544, this.id)"><p>дополн，bil Uhm，regres Tr Bub pequうん</p></a>
+				<a href="#00:09:6.56" id="00:09:6.56" class="lt" onclick="jumptoTime(546, this.id)"><p>можете，大家看到嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:9.59" id="00:09:9.59" class="lt" onclick="jumptoTime(549, this.id)"><p>然後一樣，左手食指和拇指一撇，然後順勢，右手一扣，整個嘴就出來了，這樣就乾淨了，然後繼續沖洗，不環保都要這樣說，又要衛生又要乾淨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:31.59" id="00:09:31.59" class="lt" onclick="jumptoTime(571, this.id)"><p>大家看到表面有些膜，有些白色的，撕了這層膜後，皮就會很光亮，因為我是清蒸，所以這次保留表皮，這個膜要撕掉，撕掉這個膜，它整個皮都會有光澤，撕掉這個膜，整個身體就很容光煥發，然後我做什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:8.59" id="00:10:8.59" class="lt" onclick="jumptoTime(608, this.id)"><p>簡單去做一個除腥，大家記不記得怎樣做除腥?</p></a>
+				<a href="#00:10:19.59" id="00:10:19.59" class="lt" onclick="jumptoTime(619, this.id)"><p>除腥怎樣做?</p></a>
+				<a href="#00:10:21.59" id="00:10:21.59" class="lt" onclick="jumptoTime(621, this.id)"><p>大家記不記得?</p></a>
+				<a href="#00:10:27.07" id="00:10:27.07" class="lt" onclick="jumptoTime(627, this.id)"><p>好，怎樣做?</p></a>
+				<a href="#00:10:31.07" id="00:10:31.07" class="lt" onclick="jumptoTime(631, this.id)"><p>有沒有人答到?</p></a>
+				<a href="#00:10:33.07" id="00:10:33.07" class="lt" onclick="jumptoTime(633, this.id)"><p>不要緊，我照示範一次，這樣就放些鹽，這個部分放多些鹽也不要緊，然後放些胡椒，不要以為魷魚不需要，魷魚也需要，然後放些酒，即是三樣東西，胡椒、鹽、酒，然後攪拌一下，這個過程很快速，記住，這個過程很快速，我之前和大家做炒魷魚時，我不是和大家說過，魷魚是不可以重醃的，大家說是不是?</p></a>
+				<a href="#00:11:22.07" id="00:11:22.07" class="lt" onclick="jumptoTime(682, this.id)"><p>我不知道有沒有朋友跟著我一起做，將這些汁倒入魷魚筒，倒入魷魚筒，用手指撩一下，大家看到那些汁，然後這個同樣，倒些汁入魷魚筒，然後一樣撩一下，這樣就清洗完畢，大家有沒有發覺?</p></a>
+				<a href="#00:11:57.07" id="00:11:57.07" class="lt" onclick="jumptoTime(717, this.id)"><p>我一攪拌完之後，鬚都好像直了一點，鮮頭都沒有那麼直，這個隨聲，現在你做完就可以洗掉，這樣就可以令到表面魷魚那些，黏著的細菌、不乾淨的東西洗得乾乾淨淨，另外可以令到它的腥味，即是那些二線菌都沒有了，它的腥味來源都沒有了，剩下的就是魷魚的清甜味，這個時候特別給大家看看，起泡了，因為那些菌、腥味都跑出來了。</p></a>
+				<a href="#00:12:35.07" id="00:12:35.07" class="lt" onclick="jumptoTime(755, this.id)"><p>OK，等待，好，這個時候我繼續沖洗，大家看到我用了很多水，真的沒有辦法，大家記住，不是我不好的習慣，因為你不用沖洗的方法，你浸泡，它的味道就會全部跑出來，用沖洗的方法可以相對地保持乾淨，但同時間又不會浸走它的鮮味，好，現在就可以了，然後我們就抹乾淨砧板進入下一個程序，先抹乾淨刀。</p></a>
+				<a href="#00:13:35.18" id="00:13:35.18" class="lt" onclick="jumptoTime(815, this.id)"><p>然後用碟子把魷魚沖洗乾淨，這個時候又是萬用廚子出場的時候了，那就把它抹乾，魷魚筒入面都畀啲紙塞佢落去，即係等佢乾身啲啦，大家睇到表層表面都有層膜嘅，即係你鍾意撕就得唔撕都得，唔撕冇影響嘅，不過撕咗呢因為佢嗰個顏色就會艷麗啲，咁就睇上去呢就好睇啲，ok，食住咗添，好跟住之後繼續啦，咁你係廚子唔啱得我都同大家講啦。</p></a>
+				<a href="#00:14:39.85" id="00:14:39.85" class="lt" onclick="jumptoTime(879, this.id)"><p>你一個月用曬四卷廚子都係講緊嘅係，廿幾蚊啫，係咪，廿幾蚊嘅成本換嚟呢，一個更加好嘅食味呀，更加更加靚嘅外形呀，咁你話大家值唔值得先係咪，好嗱呢個時候呢我繼續，撩佢，撩佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:3.85" id="00:15:3.85" class="lt" onclick="jumptoTime(903, this.id)"><p>撩佢撩佢撩佢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:9.85" id="00:15:9.85" class="lt" onclick="jumptoTime(909, this.id)"><p>好嗱呢個時候呢咁我就，送返乾個表面啦，唔知做乜鬼呢排呢即係我唔係感冒呀，咁我大家都知道我中咗招跟住隔離過啦，咁好返之後我而家成個禮拜有多咁呢，佢依然間唔中都留下鼻水呀，個人好攰呀呢啲係咪後遺症呢，嗱咁呀，印乾曬啦，大家見到我而家擺到呢亂七八糟等間我會，砌返好佢嘅，好嗱咁呀用完呀總共用咗六張廚紙呀。</p></a>
+				<a href="#00:15:50.85" id="00:15:50.85" class="lt" onclick="jumptoTime(950, this.id)"><p>好嗱呢個時候呢我哋呢，就要擺位喇喎嗱咁呢，首先呢就大概呢每，一CM多啲啦，好，嗱我將佢咁樣砌返完佢跟住個頭大個頭係咪，一開二，大家看到我這樣，這個時候我就做一個標準擺刀的姿勢，我希望大家真的要理解，因地制宜這一點是很重要的，好，我再砌一下店的外形，跟著這個一樣，一厘米多一點，即是半寸左右，我切下去的時候已經很乾爽。</p></a>
+				<a href="#00:17:4.25" id="00:17:4.25" class="lt" onclick="jumptoTime(1024, this.id)"><p>所以為甚麼，還有水，還不夠乾，乾爽一點的水就沒那麼容易腥，沒那麼容易有異味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:15.25" id="00:17:15.25" class="lt" onclick="jumptoTime(1035, this.id)"><p>好，然後我們就把它拼好，這個頭部我們就要一開二，容易食一點，拼好它，然後我們就放一點點位置進去，等它固定，等一會蒸它會縮的，它一縮的時候，因為它扣著，蒸熟的時候就不會走樣得太離譜，這個時候我們就弄完，我先扔掉垃圾</p></a>
+				<a href="#00:18:17.88" id="00:18:17.88" class="lt" onclick="jumptoTime(1097, this.id)"><p>然後我們開始做佐料，佐料就是要薑的，好像普通蒸魚，我刮薑的部分就不給大家看了，在後面的垃圾桶，薑多與少其實就視乎個人，若你一比就得架啦正常呀，咁如果你鍾意食薑絲嘅即係好似例如我呢啲咁呢，咁可以畀多少少落去嘅，咁呀大家都好耐冇見過切薑絲啦係咪，好咁呀切薄片啦跟住拍齊對齊佢啦跟住，然之後點呢攞隻手一拍。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:12.45" id="00:19:12.45" class="lt" onclick="jumptoTime(1152, this.id)"><p>咁呢就好似啤牌咁樣跟住之後，我這個切法，你喜歡切幼或粗也可以，我適中，既不太幼又不太粗，好，薑絲切好了，然後就逐些放在上面，放勻就可以了，其實我都說過，因為我喜歡吃薑，所以就放多一點，但如果大家不喜歡吃那麼多，適量就夠了，三分一就夠了，隨便放幾條薑絲就可以了，可以嗎?</p></a>
+				<a href="#00:20:19.15" id="00:20:19.15" class="lt" onclick="jumptoTime(1219, this.id)"><p>好了，然後就弄好了，弄好了沒有?</p></a>
+				<a href="#00:20:23.15" id="00:20:23.15" class="lt" onclick="jumptoTime(1223, this.id)"><p>當然還沒弄完，這個時候就灑一點胡椒，可以惹味一點，跟隨聲無關，我現在灑胡椒，只是想它惹味一點，然後呢，大家不想做蒸魚豉油，其實可以有一個方法走位，這個時候就放少許糖，放少許糖，等一會蒸好之後，就有少許奶豉油帶甜味，大家記住，這個前期功夫就完了，等一會開鑊蒸的時候，我再跟大家分享，都用了22分鐘。</p></a>
+				<a href="#00:21:6.15" id="00:21:6.15" class="lt" onclick="jumptoTime(1266, this.id)"><p>希望大家明白我的理念是什麼，盡量清楚一點，可以嗎?</p></a>
+				<a href="#00:21:12.15" id="00:21:12.15" class="lt" onclick="jumptoTime(1272, this.id)"><p>好，那呢，完了，等一會蒸的時候，我再跟大家分享，好了，現在水滾了，我們就將已經處理好的魷魚，就放進去，放進去之前，盡量你看到它有水，就吸乾一點，令到魷魚就沒有那麼多異味去干擾，好了，這個時候，魷魚其實就很容易熟，所以我們就要，不可以蒸得太久，七分鐘已經是最盡的，如果大家覺得還是熟了，就可以減一兩分鐘。</p></a>
+				<a href="#00:21:57.15" id="00:21:57.15" class="lt" onclick="jumptoTime(1317, this.id)"><p>可以嗎?</p></a>
+				<a href="#00:21:58.15" id="00:21:58.15" class="lt" onclick="jumptoTime(1318, this.id)"><p>現在開始計時，七分鐘之後再看看結果如何，現在還有三分多鐘，才到七分鐘，但是我已經發覺，它已經完成了，所以大家要記住，蒸魷魚一定要快手，我現在先關火，然後我就放些蔥絲上去，我可以跟大家說，這個蒸魷魚是很清甜，大家可能聽過有清蒸魷魚，但是你未吃過，你是不知道那個魷魚，那個清甜的程度去到那裡，我現在就拿起它，然後灒油，再做總結。</p></a>
+				<a href="#00:23:6.58" id="00:23:6.58" class="lt" onclick="jumptoTime(1386, this.id)"><p>好了，大家，現在我已經做好油了，我現在就灒油下去，因為我放了太久，所以油溫不夠高，但都足夠令蔥炸熟，先放一邊，然後淋豉油上面，好，完成了，我留少少蔥，放上面會好看些，好!搞掂!</p></a>
+				<a href="#00:24:12.68" id="00:24:12.68" class="lt" onclick="jumptoTime(1452, this.id)"><p>一個好清甜的清蒸魷魚就完成了，這個清蒸魷魚其實可以用長尾魷或者寬尾魷，我今天用寬尾魷，為什麼呢?因為寬尾魷是很爽口脆口的，咬下去很爽脆的，我兒子也喜歡吃，所以我就買了這個寬尾魷，大家記不記得寬尾魷和墨魚的分別在哪裡?</p></a>
+				<a href="#00:24:49.68" id="00:24:49.68" class="lt" onclick="jumptoTime(1489, this.id)"><p>如果你看不明白，可以問魚台，問他這是魷魚還是墨魚，其實都有分別的，一看觸鬚長的就一定是魷魚，墨魚的觸鬚比較短，魷魚的觸鬚特別長，很容易分辨，摸上手的時候，背部的墨魚是硬的，魷魚是軟的，一按下去，軟身的就一定是魷魚，怎樣選擇好的魷魚呢?</p></a>
+				<a href="#00:25:32.68" id="00:25:32.68" class="lt" onclick="jumptoTime(1532, this.id)"><p>我先前沒有說，盡量不要破表皮，大家看到我有一些破的，有些白色的原點，那些相對地沒那麼新鮮，不過今天我兒子說想吃，所以我就沒辦法，照買，其實蒸魷魚的處理方式和蒸魚是一樣的，除聲大法也是一樣的，不過在處理上，魷魚有特別的方法，通常來說，街市的魚台都很順手，都會幫客人，即買家，割走眼睛、除墨囊、剝走嘴巴。</p></a>
+				<a href="#00:26:27.68" id="00:26:27.68" class="lt" onclick="jumptoTime(1587, this.id)"><p>基本上魚台都可以代勞，但清洗的部分，大家一定要看著我的影片，當然我也想學學怎樣處理魷魚，大家可以去看魷魚的影片，好，現在我們學多一樣東西，清洗完筆後要把水吸乾，這樣才可以去除異味，不過魷魚本身有很多水份，現在大家看到我這個水份不算多，因為我已經倒了三分之二，即使你把水吸乾，本身魷魚的水份很高，所以大家要記住盡量吸乾水份。</p></a>
+				<a href="#00:27:12.33" id="00:27:12.33" class="lt" onclick="jumptoTime(1632, this.id)"><p>蒸完魷魚後，看到魷魚有很多水份，就盡量倒多一點水，這樣我們淋豉油的時候就不用沾得太淡，這裡有少許技巧，如果你想魷魚更惹味，想豉油不太鹹，怎樣做呢?</p></a>
+				<a href="#00:27:31.33" id="00:27:31.33" class="lt" onclick="jumptoTime(1651, this.id)"><p>惹味一點就加少許胡椒，胡椒碎才有香，胡椒粉不香，然後預先灑少許糖，倒豉油的時候就不用純粹豉油的鹹，大一點可以提鮮，有少許鮮味，切的時候大概切一厘米多一點，即是半寸左右，基本上你做完這幾樣東西，就可以做到現在大家看到畫面的效果，有一樣東西特別要提醒，特別特別提醒，我先頭一開始是否用七分鐘去蒸，七分鐘絕大部分的海鮮類都會熟。</p></a>
+				<a href="#00:28:16.33" id="00:28:16.33" class="lt" onclick="jumptoTime(1696, this.id)"><p>除了魚之外，魚就需要蒸久一點，但魷魚就特別一點，我先頭是否突然間煞停了，三分多鐘的時候就煞停了，為什麼?因為魷魚會更加快熟，大概蒸四分鐘左右，就怎樣也會熟，怎樣判斷它熟呢?</p></a>
+				<a href="#00:28:37.33" id="00:28:37.33" class="lt" onclick="jumptoTime(1717, this.id)"><p>魷魚一蒸起來就會縮，它會由半透明狀變成純白色，這兩個徵狀大家就可以判斷，到底魷魚是否已經蒸熟了，可以嗎?可以，就是這麼簡單，希望大家可以有一個滿意的，一個又健康，因為魷魚本身有很多蛋白質，除了三高不可以吃之外，絕大部份的人只有有益而無害，希望大家喜歡這個菜式，簡單簡單，其實不需要太多技巧。</p></a>
+				<a href="#00:29:23.06" id="00:29:23.06" class="lt" onclick="jumptoTime(1763, this.id)"><p>最重要是我的隨聲大法，還有蒸的時候要注意時間不要太久，希望大家喜歡，做完東西我去做下一道菜，拜拜。</p></a>
+</div>
+	</body>
+</html>

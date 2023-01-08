@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——『蝦醬蒸豬腩片』，真。香港的家常菜，常常讓人垂涎不止！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '35FwPu0biz0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——『蝦醬蒸豬腩片』，真。香港的家常菜，常常讓人垂涎不止！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，我都好耐冇拍過視頻，今日我想同大家分享一個傳統香港人的美食，就是蝦醬蒸腩片，蝦醬蒸腩片材料很簡單，有蝦醬，香港蝦醬大澳出品最好，主角是一整塊豬腩肉，它是急凍的，等下我會介紹怎樣處理，然後是一塊薑，切薑絲，我非常喜歡蒸鹹魚和蝦醬的薑，因為入味後的辣味和香氣，絕對可以送飯。</p></a>
+				<a href="#00:01:10.46" id="00:01:10.46" class="lt" onclick="jumptoTime(70, this.id)"><p>然後蔥，蔥大概有二兩，大家喜歡放多放少就隨意了，這個蝦醬，蝦膏，我比較喜歡用蝦膏，不喜歡用蝦醬，因為我覺得蝦醬水份比較高，蝦的濃香度濃烈度是比不上蝦膏的，蝦膏我喜歡放多少都可以，等一下我就會示範一次，怎樣用蝦膏去蒸這個腩片，比較值得介紹的就是這塊豬腩肉，為什麼要介紹這塊豬腩肉呢，因為很多人不懂怎樣去切豬腩肉。</p></a>
+				<a href="#00:02:4.46" id="00:02:4.46" class="lt" onclick="jumptoTime(124, this.id)"><p>因為豬腩肉的肉片很薄，為什麼呢，因為豬腩肉沒有汆水，汆水的時候要讓肉身全熟才切得好，除了要全熟才切得好，還有另一個理由，如果肉身不是全熟去蒸腩片的話，生蒸出來的腩片是會變硬的，大家猜不到了吧，所以蒸腩片的汆水過程是很重要的，除了這個之外，其實腩肉汆水有兩種方法，有技巧的，大家可能會說急凍肉不是吧。</p></a>
+				<a href="#00:02:53.46" id="00:02:53.46" class="lt" onclick="jumptoTime(173, this.id)"><p>很重雪味怎麼辦，我教大家一個方法，用薑片加青花椒，記住是青花椒，不是市面上買到的紅花椒，即是花椒八角的花椒，為什麼會用青花椒呢，因為青花椒的味道非常濃烈，也非常霸道，可以有效去除雪味，它比放酒和薑的效果更好，如果大家在市面上看到青花椒，千萬不要放過，大家也知道青花椒除了是，我現在介紹的用來汆水去除雪味之外。</p></a>
+				<a href="#00:03:35.46" id="00:03:35.46" class="lt" onclick="jumptoTime(215, this.id)"><p>它更重要的用途是甚麼呢，做麻辣菜式，ok，這塊腩肉其實，我先不說了，其實腩肉汆水，有兩種方法，一種叫冷水下肉，即是下水還未開火，就下肉，另一種就是滾水下肉，等水滾大，溫度夠高，才下肉，兩種方法有甚麼分別呢，在烹飪上大家都知道，蒸炒煮炒，有蒸 有炆 有燉，而有炒，而這兩種肉類汆水法，分別要對應。</p></a>
+				<a href="#00:04:26.06" id="00:04:26.06" class="lt" onclick="jumptoTime(266, this.id)"><p>到底是蒸還是炒還是炆，如果是要蒸和炒，我們首先要強調的是嫩滑，嫩滑，所以我們要，記住了，我們要冷水下肉，在這樣的情況下，可以保持到肉類的軟滑，記住 聽住，冷水下肉去汆水，是會保持到肉質的嫩滑，但是另一方面來說，如果打算用來炆的話，用來煮的話，我們強調的是肉香，所以這個時候我們汆水，要將肉等到大滾。</p></a>
+				<a href="#00:05:8.06" id="00:05:8.06" class="lt" onclick="jumptoTime(308, this.id)"><p>等到水煮滾，大滾的情況下才下肉，這樣的情況下，肉香就會強烈很多，當然口感方面會粗糙一點，但是因為炆煮一小時，45分鐘最少，所以在這個效果下，口感不會覺得很柴皮，但如果是炒或蒸，用滾水下肉的話，你會發覺是很粗糙的，雖然有肉香 但很粗糙，所以大家要記住，滾水下肉 冷水下肉，是有兩種效果，視乎你接下來要做什麼。</p></a>
+				<a href="#00:05:45.06" id="00:05:45.06" class="lt" onclick="jumptoTime(345, this.id)"><p>好了 介紹，基本上介紹完原料，初始的做法，我這個，腩肉已經汆水了，我等一下就切片，OK 等一下切片之後，我再介紹給大家，切片的程度，其實這道菜很簡單，大家不用怕，先介紹材料，現在開始調味，其實調味很簡單，主要是鹽、糖和少許雞粉，因為我今天買的蝦醬比較淡，所以我才會加鹽，如果是鹹的就不用加鹽，否則會太鹹。</p></a>
+				<a href="#00:06:35.52" id="00:06:35.52" class="lt" onclick="jumptoTime(395, this.id)"><p>大概加半茶匙鹽，加糖要多一點，大概加兩茶匙，然後加雞粉，雞粉只要輕輕加，我這裡大概加三分一茶匙，基本上待會開始蒸的時候，熱力就會溶化調味料，大家看看，我將蝦膏切成一片片，均勻地放在肉的表面，蒸開後待會慢慢溶化，另外我今天用的方法是，傳統水面人會用的蝦醬蒸的方法，所以待會蒸完後還要用火彈，大家看到我這裡有一個很重要的器具。</p></a>
+				<a href="#00:07:53.52" id="00:07:53.52" class="lt" onclick="jumptoTime(473, this.id)"><p>大家看到我有一個砂鍋，其實傳統水面人會用鐵鍋或是砵頭，用來蒸蝦，即是蝦醬肉片，蝦醬這個腩片，然後蒸好之後，它還要是用火炭的，所以通常他們的器皿，就是一是鐵盤，一是這個砵仔，我家裡找遍了，沒有砵仔，我上次其實買了一個砵仔的，不過好像打爛了，真的打爛了砵頭，那麼現在鋪好了，所以我就用了我女兒的私房東西，我這個砵仔是我女兒的。</p></a>
+				<a href="#00:08:38.59" id="00:08:38.59" class="lt" onclick="jumptoTime(518, this.id)"><p>好了，調味完畢了，然後加一個很重要的，加薑絲，我呢就加超多薑絲的，不是因為我怕腥，是因為我喜歡吃，做完蝦醬的薑絲，簡直可以送飯的，所以我就加多一點，那麼大家如果是不喜歡吃的，就加少一點，如果喜歡吃的，那就好像我那麼多，那麼薑絲我切得很幼的，切得很幼的，OK，那麼就切到粗幼，隨個人喜好，但是我自己就比較喜歡切得幼一點。</p></a>
+				<a href="#00:09:22.19" id="00:09:22.19" class="lt" onclick="jumptoTime(562, this.id)"><p>因為可以入味和出味，好了，有一個很重要的一個環節，我都忘記介紹了，那麼大家看一下我切那個肉片，腩片切到多薄，那麼我就說過的，切到大概兩毫米，兩三毫米，那麼為什麼要切到那麼薄呢，這個其實呢，這邊就厚了，這邊就薄了，這邊這個厚度是對的，這邊就稍微厚了一點，但是都不算太影響那個食味和口感的，那麼為什麼要切到那麼薄呢。</p></a>
+				<a href="#00:09:56.03" id="00:09:56.03" class="lt" onclick="jumptoTime(596, this.id)"><p>那麼其實呢，很多時候我經常說的，煮食是一種化學的作用，那麼大家可能會質疑，喂!你這樣那麼基本上，又不加其他的醃料，就這樣鹽糖味，或者就這樣加鹽或者糖，行不行的，其實蝦醬本身是有鹹味的，那麼再加上你一會兒見到我加糖比較多，其實這樣是會令到油脂變得很油膩的，是到時候是逼出來的，然後那些肥肉是爽的。</p></a>
+				<a href="#00:10:26.56" id="00:10:26.56" class="lt" onclick="jumptoTime(626, this.id)"><p>爽而不膩，這個是技巧來的，其實我們在廣東人裏面，我很欣賞兩道菜式，總之有它，我現在說到都流口水，有它我那天一定是三大碗白飯，現在這個份量我大概是一磅，不夠一磅，好像是三十二元，一磅，不夠一磅，我買了三十元，這個份量我告訴你，我可以吃足一個星期，真的一個星期送飯，不是說笑，在有糖的化學成分的情況下，蒸出來肉質很滑溜。</p></a>
+				<a href="#00:11:12.56" id="00:11:12.56" class="lt" onclick="jumptoTime(672, this.id)"><p>肥肉很爽口，其實我們廣東人有兩樣菜式，一樣就是現在這個，香港水上人經常吃的，蝦醬蒸腩仔，另一個就是磨豉蒸腩片，我不知道大家有沒有聽過磨豉蒸腩片，磨豉現在市面上很難發現到，只有工業用的工場或者批發才會見到，零售都很少見到，黑色一坨東西，其實它是豉油的副產品，這個磨豉又是非常惹味，不過當然它那個偏甜一點。</p></a>
+				<a href="#00:11:51.40" id="00:11:51.40" class="lt" onclick="jumptoTime(711, this.id)"><p>這個蝦醬偏鹹一點，好了，現在說了這麼多，然後我們表面上要加一點油，一點點就可以了，接下來就可以拿去蒸了，蒸的過程當中，這個份量大概蒸多久?</p></a>
+				<a href="#00:12:8.52" id="00:12:8.52" class="lt" onclick="jumptoTime(728, this.id)"><p>蒸十分鐘就可以了，因為到時我們還要拿火去燙，OK，好了，這個蝦醬蒸腩片已經是蒸好了，蒸十分鐘左右就可以了，現在我們需要煮它，開火，然後慢慢煮它幾分鐘就可以了，因為本身是沒有水的，我們要加一點水，加一點水，然後用筷子攪散，因為蝦醬本身如果不用水開，其實比較難溶，大家也看到雖然蒸了，但蝦醬還是一塊塊的。</p></a>
+				<a href="#00:13:17.40" id="00:13:17.40" class="lt" onclick="jumptoTime(797, this.id)"><p>這個時候我們用筷子慢慢攪散，這樣就有一點熱，肉片現在很彈牙很彈口，記住先前提過，很多人以為飛水不需要煮熟，其實飛水也有很多種方法，有很多時間不同的計算，因為這個是肉片，如果飛完水之後還是要嫩滑的話，無論是飛完水之後蒸，或者是飛完水之後炒，想保持嫩滑的效果，記住一定要全熟，還記不記得我先前介紹的肉片。</p></a>
+				<a href="#00:14:11.40" id="00:14:11.40" class="lt" onclick="jumptoTime(851, this.id)"><p>怎樣可以保持嫩滑，就是要用冷水下肉，千萬不要用滾水，滾水的話肉會粗糙，現在慢慢攪拌，這個時候薑絲在表面還未吸味，現在稍微煮一煮，嘩!現在開始攪散蝦膏的味道，開始很香，其實蝦醬這東西很奇怪，好像吃臭豆腐一樣，喜歡的人就喜歡到不得了，但不喜歡的人就覺得很臭，其實我再解釋一下，為什麼我喜歡用蝦膏而不是蝦醬。</p></a>
+				<a href="#00:15:0.40" id="00:15:0.40" class="lt" onclick="jumptoTime(900, this.id)"><p>因為蝦膏的蝦味濃烈很多，大家看到開始滾了，不要理會它，繼續攪拌，繼續攪拌，大家先頭見到的，我調味很簡單，鹽糖味直接鋪上去，不用特別技巧，其實沒有什麼特別技巧，你想想當初漁民，出海打魚，沒有什麼技巧，怎麼會懂得做這個菜呢?</p></a>
+				<a href="#00:15:31.28" id="00:15:31.28" class="lt" onclick="jumptoTime(931, this.id)"><p>為什麼會吃得到呢?</p></a>
+				<a href="#00:15:33.22" id="00:15:33.22" class="lt" onclick="jumptoTime(933, this.id)"><p>話說我十一歲的時候，被人賣豬仔，十一二歲，有份書記工，做不做?</p></a>
+				<a href="#00:15:41.76" id="00:15:41.76" class="lt" onclick="jumptoTime(941, this.id)"><p>那時候十一二歲，沒有人請，有人請當然做，那時候的小朋友已經知道，萬惡金錢的吸引力，所以就被人賣了豬仔，去跟人家出海打魚，一天就吃足六餐，由早上凌晨四點，四點多五點，一直吃到天黑為止，為什麼會一天吃六餐呢?</p></a>
+				<a href="#00:16:5.66" id="00:16:5.66" class="lt" onclick="jumptoTime(965, this.id)"><p>因為漁民他們打魚，需要的體力消耗很大，所以他們吃飯是很頻密的，每次就算點一碗胃口，點不吃也好，每次都兩碗白飯，一天要吃十二碗白飯，大家想不想像得到?</p></a>
+				<a href="#00:16:22.66" id="00:16:22.66" class="lt" onclick="jumptoTime(982, this.id)"><p>其實漁民真的很辛苦的，體力消耗得很厲害，所以他們…，那時候我小時候嘛，幫不了什麼忙，十一二歲，你幹什麼啊?</p></a>
+				<a href="#00:16:34.66" id="00:16:34.66" class="lt" onclick="jumptoTime(994, this.id)"><p>結果我做什麼呢?</p></a>
+				<a href="#00:16:36.66" id="00:16:36.66" class="lt" onclick="jumptoTime(996, this.id)"><p>我就做了火頭軍，那時候呢，我人生第一次的，第一次擴闊視野，怎樣去做海鮮呢?</p></a>
+				<a href="#00:16:46.66" id="00:16:46.66" class="lt" onclick="jumptoTime(1006, this.id)"><p>大家都知道，大家有沒有發覺我做海鮮很拿手，或者很喜歡做海鮮，就是那時候學的，做火頭軍，一天吃六餐飯，一個暑假下來，大家想想，差不多人家煮一整年飯，都沒有我煮那麼多餐，所以那時候我就快速急速的，提升自己煮食的技巧，當然也會有人教我，本身我自己也懂的，我六歲就懂得煮飯，所以學東西也特別快，現在呢。</p></a>
+				<a href="#00:17:21.66" id="00:17:21.66" class="lt" onclick="jumptoTime(1041, this.id)"><p>大家看到它滾了嗎?</p></a>
+				<a href="#00:17:23.66" id="00:17:23.66" class="lt" onclick="jumptoTime(1043, this.id)"><p>滾了很久了，現在應該也有四五分鐘多了，再滾一滾就OK了，這個時候，蝦醬色就出來了，肉開始吸收蝦醬的味道，讓我試一下味，鹹淡度非常適中，在這裡我再重複一次調味是怎樣呢，首先第一件事要說的是，我買回來的蝦膏是淡口的，所以我才會加鹽，如果買回來是鹹口的，大家千萬不要加鹽，就這樣加糖就可以了，這裡是一磅肉。</p></a>
+				<a href="#00:18:3.29" id="00:18:3.29" class="lt" onclick="jumptoTime(1083, this.id)"><p>我加半茶匙的鹽，三茶匙的糖，然後加一點點提味的半茶匙的雞粉，加的蝦膏的份量是多少呢，大概是三兩左右，三兩的份量是多少呢，大概是三磚方糖的份量，大家記住了，一磅肉，這個份量已經足夠我可以，這個份量的肉，足夠我一個星期吃，所以這道菜既可以送飯，同時也是一個非常節儉的吃法，如果大家窮的話，說真的這道菜真的是一流的。</p></a>
+				<a href="#00:18:50.79" id="00:18:50.79" class="lt" onclick="jumptoTime(1130, this.id)"><p>保證你每餐吃兩大碗飯，我吃三碗，然後吃了一個星期，好了現在差不多可以了，不用太乾水，因為有些醬汁到時可以拌飯，大家看到有些薑絲，我很多的，一瓶有很多的，現在一煮完就不多見了，好了最後我們就搞定了，關火了，然後就哇，鋪點蔥花下去，這樣就一道美味的，我們屬於我們香港人的送飯神器，蝦醬蒸豬腩片。</p></a>
+				<a href="#00:19:31.79" id="00:19:31.79" class="lt" onclick="jumptoTime(1171, this.id)"><p>這樣就完成了，OK 多謝大家，給大家看看，這個完成品，是不是很吸引呢，這個就是為什麼，蒸完之後再用火去燙它的原因，增加它的風味，大家看到邊邊已經有點焦，這樣的效果就對了，正式多謝大家。</p></a>
+				<a href="#00:20:3.79" id="00:20:3.79" class="lt" onclick="jumptoTime(1203, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

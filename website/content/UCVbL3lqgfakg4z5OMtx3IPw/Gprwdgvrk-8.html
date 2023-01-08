@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜明火燒大蝦｜本來燒大頭蝦，現在改成燒海虎蝦｜雖是急凍蝦，但處理得宜之後卻更勝新鮮蝦！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Gprwdgvrk-8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜明火燒大蝦｜本來燒大頭蝦，現在改成燒海虎蝦｜雖是急凍蝦，但處理得宜之後卻更勝新鮮蝦！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>我和朋友上來開派對，開烤肉吧﹕，今日有些特別嘢，有咩特別嘢?</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>大家睇下先﹕，嘩﹕又係老婆特別吩咐，不過今日有事，來唔到﹕，燒中蝦﹕，燒蝦就唔係就咁燒﹕，其實我哋要有個醬汁﹕，最簡單最偷懶嘅方法係咩?</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>呢度入面有乜嘢?</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>有呢個係﹕，等陣先，我驚住打蛇﹕，嚇死我﹕，有乜嘢呢?</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>我哋唔需要做到好複雜﹕，首先，梗係要有日本嘅燒汁﹕，好簡單，賣呢一罐就30蚊﹕，出面大把膠樽裝嗰啲20蚊都有得賣﹕，除咗日本燒汁之外﹕，燒汁本身就好淡﹕，佢唔夠味，點算呢﹕，又係佢﹕，係呀，乜牌子﹕，睇到啦﹕，甜豉油，就大少少甜，好配日本燒汁﹕，跟住我哋就落少少蒜蓉﹕，呢個蒜蓉我咁啱開咗啲蒜蓉，就少少﹕。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>跟住再加乜嘢呢﹕，呢個不得了﹕，等佢更加惹味，就落呢個﹕，呢個麻辣味﹕，佢本身絕對唔係好辣﹕，就算唔食得辣，都食得﹕，點解要落呢個﹕，貪口癮﹕，過癮﹕，而家個個就夠熱﹕，其實就好簡單﹕，一個爐擺唔曬﹕，好多隻﹕，唔好咁貪心﹕，睇下先﹕，首先呢個蝦肚﹕，蝦肚擺上去先﹕，因為呢﹕，個個蝦肚其實係最難熟﹕。</p></a>
+				<a href="#00:02:12.00" id="00:02:12.00" class="lt" onclick="jumptoTime(132, this.id)"><p>跟住排齊佢﹕，蝦壁蝦，點解要咁做呢﹕，咁樣呢，我哋就可以﹕，令到佢保持個溫度比較高﹕，佢就比較容易熟﹕，蝦要處理很簡單，剪走蝦的手腳，然後用手拿竹籤穿過去，就完成了，放完後不要太猛火，否則很快燒焦，然後給它三分鐘，這樣燒蝦其實很快，我現在調了醬汁，醬汁千萬不要太快，如果太快的話很快燒焦，燒焦後蝦肉還未熟。</p></a>
+				<a href="#00:03:24.94" id="00:03:24.94" class="lt" onclick="jumptoTime(204, this.id)"><p>現在開始計時，看不看得到，放在這裏，這樣就看完了，三分鐘後才調，什麼都不用理，這個就是短片，當作bonus，大家的燒蝦，三分鐘後再見，三分鐘過去了，蝦身開始發紅，大家都知道，蝦身發紅代表它會熟，為什麼蝦身會由青色變成紅色，因為蝦身裏面有所謂的蝦紅素，蝦肉熟了就會變紅，蟹肉也一樣，所以不論藍色。</p></a>
+				<a href="#00:04:27.94" id="00:04:27.94" class="lt" onclick="jumptoTime(267, this.id)"><p>我又拍齊了，再煮三分鐘，燒蝦就很簡單，三分鐘過去了，反轉，這個時候大家看到，其實我們想知道蝦是否熟，不需要太緊張，只需要燒斷了，不過不要緊，然後反轉，只要我們看到蝦都紅了，基本上蝦就會熟了，然後這個時候，我們又給它三分鐘，最後三分鐘，這個就用了九分鐘，有些蝦頭已經開始泡了，已經開始滾了，它一滾的話，即是已經OK了。</p></a>
+				<a href="#00:05:40.41" id="00:05:40.41" class="lt" onclick="jumptoTime(340, this.id)"><p>好，三分鐘之後，我們再看看結果如何，好了，三分鐘過了，這個時候我們總共用了九分鐘，這個時候我們就不需要再看時間了，大家看到，放在中間的蝦都已經是…，你看，這些已經燒到黑了，所以是絕對熟的，這個時候我們就將燒汁放在上面，然後再輕輕灑上少許黑椒鹽，然後反轉它，這個時候一燒乾蝦身就可以了，一上味一燒乾蝦身就可以了。</p></a>
+				<a href="#00:06:56.90" id="00:06:56.90" class="lt" onclick="jumptoTime(416, this.id)"><p>否則大家看到很快燶，因為醬油很快燶，吃下去這些蝦很過癮，本身這些不夠味道，有些甜甜的，因為加了麻辣油，所以它有少許麻味，然後這個時候，我們又灑上少許胡椒鹽，少許就可以了，否則一樣的，過熟，好 搞定，再翻一翻它，大家看到了，因為有醬汁很快燶，大家要留意，數十秒鐘，可以關火了，隨它焗一焗，趕緊就拿。</p></a>
+				<a href="#00:08:5.27" id="00:08:5.27" class="lt" onclick="jumptoTime(485, this.id)"><p>上碟之前，為免影響食慾，剪一剪蝦尾，因為這個猛火的頭部多數都是這樣的，好，那，跟緊一下喔!</p></a>
+				<a href="#00:08:55.42" id="00:08:55.42" class="lt" onclick="jumptoTime(535, this.id)"><p>一個好簡單嘅，亦都好惹味嘅，呢個燒蝦咁就完成啦，希望大家鍾意啦，唔好淨係呢，即係話咁dry，可以食下其他嘢嘅，基本上就唔需要點樣總結㗎啦，好簡單㗎咋呢個燒蝦，好惹味㗎，我地先選乾淨個d殼先，跟住之後先剝殼食。</p></a>
+				<a href="#00:09:29.42" id="00:09:29.42" class="lt" onclick="jumptoTime(569, this.id)"><p>就係咁樣食燒蝦嘅。</p></a>
+</div>
+	</body>
+</html>

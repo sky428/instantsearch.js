@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蒜茸牛油燒蘆筍，簡單製作就能獲得美味，大家就不要想著煲煲罉罉了，美味其實可以好簡單！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kNARsPooaTk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蒜茸牛油燒蘆筍，簡單製作就能獲得美味，大家就不要想著煲煲罉罉了，美味其實可以好簡單！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今次分享的是西式燒烤食譜。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>大家應該都認識過，之前是燒金菇，現在是燒蘆筍。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>其實每個地方或每種技巧，大家都可以無限發揮。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>我常常說，一里通百里明之外，無需考慮工具齊不齊全，無需考慮技法順不順正，最緊要因地制宜和出嚟最緊要結果的效果，好吃。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>今日我想同大家分享燒蘆筍，好簡單，30蚊，我整條用哂，我估計佢全部都，佢有啲好粗嘅就十幾蚊，但我要切咗佢一半以上，其實就差唔多，佢粗啲，幼啲，但就真係貴。</p></a>
+				<a href="#00:01:1.00" id="00:01:1.00" class="lt" onclick="jumptoTime(61, this.id)"><p>我而家就開始，蘆筍好簡單，一般咁貴都係有機，有機就少放農藥，所以我就咁洗一洗，沖洗佢。</p></a>
+				<a href="#00:01:20.00" id="00:01:20.00" class="lt" onclick="jumptoTime(80, this.id)"><p>跟住稍為沖一沖水，又係好簡單，我連續做咗三個直接用燒烤網燒，明火燒，即係石紙燒的燒烤，大家見到，其實呢啲係完全唔需要技巧，調味亦都係最pure。</p></a>
+				<a href="#00:01:49.00" id="00:01:49.00" class="lt" onclick="jumptoTime(109, this.id)"><p>唔需要任何理論，ok?</p></a>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>好，呢度我就切咗一半，跟住又係我嘅石紙出場嘅時候，大家等下先。</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>哦，係喎，唔記得咗添，要剁蒜頭，再同大家演示下，大家唔好介意，亦都唔好話我好拖長嚟做，因為點解呢?</p></a>
+				<a href="#00:02:24.00" id="00:02:24.00" class="lt" onclick="jumptoTime(144, this.id)"><p>有好多人唔明白，即係你睇慣我，或者你本身識嘅呢。</p></a>
+				<a href="#00:02:29.54" id="00:02:29.54" class="lt" onclick="jumptoTime(149, this.id)"><p>咁就自必然，即係可以係好熟習啦，有啲嘢唔需要介紹，唔需要多講，大家都知㗎。</p></a>
+				<a href="#00:02:36.46" id="00:02:36.46" class="lt" onclick="jumptoTime(156, this.id)"><p>咁但係呢，我呢啲影片呢，就for一啲唔知頭唔知路，唔知幾時會第一次睇我嘅朋友仔。</p></a>
+				<a href="#00:02:44.74" id="00:02:44.74" class="lt" onclick="jumptoTime(164, this.id)"><p>咁所以呢，我都係不厭其煩，咁將成個過程呢，包括埋最基本，點樣剝蒜頭呀。</p></a>
+				<a href="#00:02:51.70" id="00:02:51.70" class="lt" onclick="jumptoTime(171, this.id)"><p>我都畀埋畀大家睇，因為真係有啲人係唔識㗎。</p></a>
+				<a href="#00:02:56.66" id="00:02:56.66" class="lt" onclick="jumptoTime(176, this.id)"><p>所以呢，我希望大家要大度一啲，唔好以為自己識呢，就唔畀人哋識。</p></a>
+				<a href="#00:03:2.74" id="00:03:2.74" class="lt" onclick="jumptoTime(182, this.id)"><p>Ok?</p></a>
+				<a href="#00:03:4.30" id="00:03:4.30" class="lt" onclick="jumptoTime(184, this.id)"><p>咁呀，如果大家覺得呢個位煩嘅，咁你咪skip咗佢囉，係咪?好唔好?</p></a>
+				<a href="#00:03:10.78" id="00:03:10.78" class="lt" onclick="jumptoTime(190, this.id)"><p>咁呀，其實呢，呢個都係好簡單，好過炒呀。</p></a>
+				<a href="#00:03:15.58" id="00:03:15.58" class="lt" onclick="jumptoTime(195, this.id)"><p>一樣啦，咁呢，記住呀，剁蒜頭呢，唔係真係剁㗎。</p></a>
+				<a href="#00:03:22.30" id="00:03:22.30" class="lt" onclick="jumptoTime(202, this.id)"><p>我哋先呢，就係切咗片先，咁樣呢，就可以令到啲蒜頭呢，我哋等陣間剁出嚟嘅蒜蓉呢，就幼細一啲同埋易剁一啲。</p></a>
+				<a href="#00:03:36.06" id="00:03:36.06" class="lt" onclick="jumptoTime(216, this.id)"><p>好!跟住之後就摘佢，咁其實呢剁蒜蓉，雖然話就話叫剁蒜蓉，但係其實呢就有三道工序，三種功夫嘅，包括咪切、剁，唔係，切跟住之後摘，我而家就係摘啦，大家見到呢，我因為多咗呢個工序呢，變咗呢啲蒜頭就唔會周圍走，周圍彈嘅，我就算剁完之後呢，都好乾淨嘅個砧板ok，包括砧板周圍呀，好啦!摘到咁上下呢，我哋就要剁啦。</p></a>
+				<a href="#00:04:8.06" id="00:04:8.06" class="lt" onclick="jumptoTime(248, this.id)"><p>真係剁啦，因為點解呢，佢始終呢，唔夠幼細呀，咁呢個時候呢就剁，咁呢就用個刀嘅前半邊呀，咁如果係西式廚刀嘅話呢，可能要用中段，因為點解呢，西式廚刀呢，佢個重量同力矩嘅問題呀，就唔夠中式刀嚟嘅，咁所以呢，少少技巧上有少少分別ok，好!嗱!咁樣，先切片再摘再剁，係咪好幼細呀，好啦!擺起咗，好!跟住然之後呢。</p></a>
+				<a href="#00:04:47.06" id="00:04:47.06" class="lt" onclick="jumptoTime(287, this.id)"><p>我哋又嚟出動到，嗱!呢個記住呀，要買嘅heavy duty ok，heavy duty嘅錫紙，呢個，係啦!唔使咁大呀，好!跟住然之後呢，將粗嗰部分就墊底，因為點解呀，嗰度直接受火㗎嘛，嗱!係呢個時候呢，你想啲蘆筍呢，即係佢出嚟個效果呢，就靚一啲呀，咁點算呢，唔好疊住佢呀，即係粗嗰啲唔好疊粗，粗就要疊幼。</p></a>
+				<a href="#00:05:34.06" id="00:05:34.06" class="lt" onclick="jumptoTime(334, this.id)"><p>好啦!嗱!大家呢如果係想係，呃，佢outcome出嚟個效果呢，就脆綠嗰啲呢就做乜嘢呢，上少少油，就唔淨止係麻油啦，唔淨止係牛油啦ok，仲要係乜嘢呀，係生油，咁呢就可以令到呢，等陣間呢，我包，因為由頭到尾呢個蘆筍都要包住嘅ok，咁所以呢，少少就可以了 自己小心一點，上少少油 這樣就可以令到，突然間出來的效果會濃很多。</p></a>
+				<a href="#00:06:19.21" id="00:06:19.21" class="lt" onclick="jumptoTime(379, this.id)"><p>好 跟著之後呢，等一等，灑少少，不是鹽 是糖，大家知不知道為什麼，因為這樣可以令到蔬菜更加脆綠，好 跟著之後，將這個鋪上面，將嫩的部分鋪上面，這邊就不是直接碰到火的，所以呢 這邊就鋪上面，嫩的部分就鋪上面，輕輕地灑上油就可以了，不用太多，然後就可以放鹽了，啊不是，不是放鹽，對不起，放牛油。</p></a>
+				<a href="#00:07:29.66" id="00:07:29.66" class="lt" onclick="jumptoTime(449, this.id)"><p>牛油真的很香，好，然後呢，再拿來埋一些，落的時候就要灑上去均勻一點，把手伸高一點，這樣就夠味了，鹽不用多 半茶匙都不用，因為很少，自己如果落手落的話就要小心，好 先包好牛油，搞定了 搞定了沒有，差一點點，黑椒，落的時候貼著落 為什麼呢，因為少少夠 不要多，多了味道就會變濁，為什麼要這樣做呢，原因就是因為。</p></a>
+				<a href="#00:08:46.55" id="00:08:46.55" class="lt" onclick="jumptoTime(526, this.id)"><p>黑椒是不能直接碰到錫紙的，不然燒那邊會燒穿洞，記住 這是經驗，我試過很多次了，所以千萬不能不聽老人言，首先要對摺，菜最好包起來 為什麼呢，因為齊口，然後對摺 拉到最緊，然後一小摺一小摺地摺，接著摺一個小摺 第一摺，為什麼要這樣摺呢，這樣可以防止待會，熟的時候會出水，然後第二小摺，一小摺一小摺。</p></a>
+				<a href="#00:09:52.40" id="00:09:52.40" class="lt" onclick="jumptoTime(592, this.id)"><p>千萬不要看到它這麼寬，我就摺寬一點，不要，因為要摺幾摺才可以防水，防止水流出來，這樣，等一會燒它，我這樣摺了兩摺，摺了三摺之後，這樣燒它，它等一會水都不會流出來，好了，接著到這裡，弄均勻它，為什麼要弄均勻呢，因為爐頭的火力有限，太寬的時候，開電的就不行了，所以這個時候，我就弄向中間那邊，一直壓它。</p></a>
+				<a href="#00:10:31.40" id="00:10:31.40" class="lt" onclick="jumptoTime(631, this.id)"><p>這個時候一樣，不要因為它寬，所以你就摺它大摺，我們就逐小摺，逐小摺摺下去，之所以要這樣做，原因就是可以防止，它熟的時候出水，這個時候搖一搖，為什麼呢 讓它齊口，好，大家看到嗎，接著一樣，逐小逐小摺，摺這個，包朱古力，每一次，按一按它，就可以保證，它燒的過程不會漏水，好，這樣就完成了，這個尺寸，剛剛好放在爐頭。</p></a>
+				<a href="#00:11:29.40" id="00:11:29.40" class="lt" onclick="jumptoTime(689, this.id)"><p>我給大家看看，除了是，這個蘆筍，這一包大包的是什麼呢，蜆來的，同樣的做法，這個是我們，用明火去石子燒烤，這個標準程序，有些朋友，我相信很多都是，出去燒烤，很多時候，不知為什麼經常燒穿，原因有兩個，一是那個黑椒，直接碰到石子，高溫加熱，就會燒穿石子，另外一個就是包得不夠好，包得像我這樣，就ok了。</p></a>
+				<a href="#00:12:13.40" id="00:12:13.40" class="lt" onclick="jumptoTime(733, this.id)"><p>是不是很簡單，是不是多點花心玩玩，是的，最重要的是除了要買一個燒烤網外，沒有其他新的工具，最多是你沒有牛油，買牛油回來，牛油平時可以用的，是不是，是不是很簡單，不需要入廚技巧，跟著一起做，這個也可以做到一個純粹用石油氣爐燒，也可以做一個豐盛的晚餐，我還沒有出，這個泰式燒魚，還有，大家趨之若鶩的鹽焗蟹。</p></a>
+				<a href="#00:12:53.80" id="00:12:53.80" class="lt" onclick="jumptoTime(773, this.id)"><p>鹽焗蟹，這東西就是我這個燒法的最高境界，為什麼呢，其實鹽焗蟹不適合用一隻普通的易潔鑊去焗，因為釋放出來的毒量，比你吸收的營養多，而且很容易燒壞，通常人家會用生鐵鑊去焗，而且要很注意溫度的變化，不可以超過100度，剛剛好100度，鬆一點，這樣才焗出來，對鑊沒有那麼大的影響，但如果我用錫紙來焗，包著鹽和蟹來焗。</p></a>
+				<a href="#00:13:35.80" id="00:13:35.80" class="lt" onclick="jumptoTime(815, this.id)"><p>那就不同的說法，一次性，我管得它是否穿洞，最重要是煮的時候不要穿洞就行了，事後的，我都是扔掉錫紙，所以，大家先學好，最高境界，到時我會用這個方法做鹽焗蟹，好不好，好，等下我直接燒的時候再說，再和大家分享，等下見，是不是很簡單呢，是的，seasoning，是不是很簡單呢，Yes，很簡單。</p></a>
+				<a href="#00:14:10.80" id="00:14:10.80" class="lt" onclick="jumptoTime(850, this.id)"><p>OK，等下見，先放蒜蓉，不好意思，沒有蒜蓉，蘆筍就不好吃，aced". אחד，prints，legg，maint gotten，Fab 것은，chill，ok 啦 咁我擺返落去啦 我包嗰度唔畀大家睇啦，我最主要 我想畀大家睇就 唉 老人痴呆我又做錯嘢 ok 好唔好，等陣間我開火燒嘅時候再同大家分享下。</p></a>
+				<a href="#00:15:3.33" id="00:15:3.33" class="lt" onclick="jumptoTime(903, this.id)"><p>好啦 大家咁呢 今日終於進入最後一個菜式啦，咁先頭大家見到我點樣同啲蘆筍調味啦係咪，咁呢 要燒呢 呢個就好簡單嘅，首先呢就將個燒烤網就擺上個爐面跟住開火，好啦 跟住然之後呢就生返細火呀，向左手邊生 生到差唔多細 差唔多熄火為止，跟住然之後呢 我哋就將呢個包好咗嘅蘆筍呢，就擺上去 嗱 咁呢 就唔係好耐嘅啫。</p></a>
+				<a href="#00:15:38.33" id="00:15:38.33" class="lt" onclick="jumptoTime(938, this.id)"><p>唔係好長時間㗎 就畀佢呢 就三分鐘先，因為點解呢 嗱 我解釋一下 其實呢判斷佢熟唔熟呢，就唔需要睇個時間嘅 最主要呢就要睇呢，佢而家呢會唔會漲起 咁如果佢會漲起嘅話呢，咁即係話呢 佢入面就已經熟曬㗎啦 ok，咁所以呢 大家唔需要擔心嘅 咁嗱，我等陣間呢三分鐘之後我就去 差唔多係三分鐘㗎啦，咁呢三分鐘之後我就開機同大家睇下個結果囉。</p></a>
+				<a href="#00:16:10.33" id="00:16:10.33" class="lt" onclick="jumptoTime(970, this.id)"><p>睇下個效果囉 嗱 而家呢聽到啪啪啪啪聲呢，係因為我放左油落去呀 嗱 好啦大家，咁呢鐘響左囉 嘩 漲到乒乒磅磅呀 熄火先，嗱 記住一件事呀，咁呢 其實呢 我可以同大家講呢，我哋用錫紙燒嘢呢 係 即係當然大約嘅時間，大家都要知啦 咁但係唔使計到咁足嘅，要判斷佢係乜嘢呀 要判斷呢，佢熟唔熟呢 就係睇下佢燒到會唔會漲。</p></a>
+				<a href="#00:16:46.33" id="00:16:46.33" class="lt" onclick="jumptoTime(1006, this.id)"><p>佢一漲之後就滾起咗啦 滾起咗嘅話呢 咁即係熟㗎啦，ok 咁就要視乎各種各樣嘅食材啦，咁你唔可以過熟㗎嘛 ok 嗱 先頭呢，大概用左幾耐時間整到咁膨脹呢，兩分三十幾秒到 即係我先頭呢就計佢三分鐘就冇錯嘅，一定 ok 得唔得 嗱 燒蔬菜就要呢個時間，咁呢 譬如話我之前呢發表嗰個，燒金菇呢 咁就長少少 因為點解呀 燒金菇呢。</p></a>
+				<a href="#00:17:18.33" id="00:17:18.33" class="lt" onclick="jumptoTime(1038, this.id)"><p>你見到我呢，係比較厚身，即係個根部，接近根部個位比較厚身嘅，所以要燒耐少少，而且金菇你燒耐少少都唔怕過熟嘅，但係呢，呢個就唔得啦，呢個蘆筍就唔得啦，我攤一攤喇喎，跟住而家呢我就，攞佢起身，佢好快熱亦都好快呢，降溫嘅，跟住呢，呢個時候呢我哋就，又嚟開箱喇嘛，嘿，篤一嘢先，篤一嘢，篤咗之後攞剪刀，刀始終都冇嘢托住。</p></a>
+				<a href="#00:18:7.34" id="00:18:7.34" class="lt" onclick="jumptoTime(1087, this.id)"><p>都唔係好方便，嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:30.31" id="00:18:30.31" class="lt" onclick="jumptoTime(1110, this.id)"><p>posit，Cock</p></a>
+				<a href="#00:18:38.13" id="00:18:38.13" class="lt" onclick="jumptoTime(1118, this.id)"><p>encouragement，comedy，perpet sollte</p></a>
+				<a href="#00:18:36.91" id="00:18:36.91" class="lt" onclick="jumptoTime(1116, this.id)"><p>montrer，Maria，fır Sexual，personagem，ух，electronics，이� occasion ether，cleaner，ui</p></a>
+				<a href="#00:18:39.83" id="00:18:39.83" class="lt" onclick="jumptoTime(1119, this.id)"><p>bel，Hai，стать，ש goes，şu，galax installed，เล</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:42.05" id="00:18:42.05" class="lt" onclick="jumptoTime(1122, this.id)"><p>couch，cloth，網，suite</p></a>
+				<a href="#00:18:42.71" id="00:18:42.71" class="lt" onclick="jumptoTime(1122, this.id)"><p>our，etty，likely，bacterial，^^，we fireworks</p></a>
+				<a href="#00:18:43.35" id="00:18:43.35" class="lt" onclick="jumptoTime(1123, this.id)"><p>too，Hook，BR，101，varied，boost</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:40.21" id="00:18:40.21" class="lt" onclick="jumptoTime(1120, this.id)"><p>謝謝觀看，喂!呢個蘆筍青唔青綠先?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:47.67" id="00:18:47.67" class="lt" onclick="jumptoTime(1127, this.id)"><p>首先問下大家先，夠唔夠青綠呀?</p></a>
+				<a href="#00:18:51.67" id="00:18:51.67" class="lt" onclick="jumptoTime(1131, this.id)"><p>正呢!</p></a>
+				<a href="#00:18:53.67" id="00:18:53.67" class="lt" onclick="jumptoTime(1133, this.id)"><p>先頭呢，點解我預先整咗啲油，即係燒一燒上油就係咁解啦，而且呢，係經過加熱嘅時候呢，佢個高溫呢，呢啲蘆筍會更加好味嘅，呢個第一啦，第二呢，大家見到我先頭燒呢係三分鐘嘅啫，係咪比炒仲快呀?</p></a>
+				<a href="#00:19:11.67" id="00:19:11.67" class="lt" onclick="jumptoTime(1151, this.id)"><p>因為炒仲要飛水，飛完水仲要洗鑊，洗完鑊再炒，係咪好麻煩呀?</p></a>
+				<a href="#00:19:17.67" id="00:19:17.67" class="lt" onclick="jumptoTime(1157, this.id)"><p>我而家直接劈落去三分鐘搞掂，快唔快呀?快啦!係咪呀?</p></a>
+				<a href="#00:19:22.67" id="00:19:22.67" class="lt" onclick="jumptoTime(1162, this.id)"><p>喂!即係講得唔好聽嘅，我呢個真係最賢齒嘅做法嚟嘅，OK?</p></a>
+				<a href="#00:19:28.67" id="00:19:28.67" class="lt" onclick="jumptoTime(1168, this.id)"><p>咁大家真係可以嘗試下，尤其是呢嗰啲未有入廚經驗嘅朋友仔，值得一試，燒初頭有好多種嘅，唔係淨係燒蘆筍嘅，燒瓜都得㗎，其實，好唔好?</p></a>
+				<a href="#00:19:41.67" id="00:19:41.67" class="lt" onclick="jumptoTime(1181, this.id)"><p>咁我就總結一下啦，第一，蘆筍攞返嚟洗乾淨啦，係咪?</p></a>
+				<a href="#00:19:46.67" id="00:19:46.67" class="lt" onclick="jumptoTime(1186, this.id)"><p>如果大家買到平嘅蘆筍呢，你就要切咗佢一半嘅，最少，因為點解個頭嗰啲係唔食得㗎?</p></a>
+				<a href="#00:19:54.67" id="00:19:54.67" class="lt" onclick="jumptoTime(1194, this.id)"><p>係好似食咬竹咁嘅，嗰啲纖維好勁㗎，咁所以呢，喺咁嘅情況之下呢，我哋就買貴少少都唔怕，因為如果嗰啲呢大碌嘅就15蚊一擲，你起碼要買三爪45蚊，我呢度呢一擲30蚊，係貴呀，不過全部用得返呀嘛，Ok? 明唔明白? 個分別係邊度?</p></a>
+				<a href="#00:20:13.67" id="00:20:13.67" class="lt" onclick="jumptoTime(1213, this.id)"><p>好啦，而且呢，佢粗嘅蘆筍呢，通常都係大陸產嘅，幼嘅蘆筍有機會係香港產嘅，有機農場產嘅，或者再貴少少呢，就係外國貨嚟嘅，Ok?</p></a>
+				<a href="#00:20:25.67" id="00:20:25.67" class="lt" onclick="jumptoTime(1225, this.id)"><p>咁所以呢，大家喺挑選呢個蘆筍嘅時候，就要注意啦，唔係粗就好嘢嚟㗎，Ok? 得唔得?</p></a>
+				<a href="#00:20:33.67" id="00:20:33.67" class="lt" onclick="jumptoTime(1233, this.id)"><p>粗嘅呢，通常我攞嚟做咩? 切粒我嚟炒飯，健體呀嘛，Ok? 好啦，咁呢個第一樣嘢啦喎，揀蘆筍啦，咁第二樣呢，就係洗乾淨之後，好簡單，切開佢兩段，咁就裁開佢呢，令到佢剛剛好，嗰個寬度，Ok? 得唔得?</p></a>
+				<a href="#00:20:49.67" id="00:20:49.67" class="lt" onclick="jumptoTime(1249, this.id)"><p>第三樣嘢呢，就係我哋，臨包錫紙之前呢，就同佢上一上油，點解呀?</p></a>
+				<a href="#00:20:56.67" id="00:20:56.67" class="lt" onclick="jumptoTime(1256, this.id)"><p>咁樣可以令到佢脆綠啲嘅，同埋呢，其他嗰啲，即係呢個錫紙燒嗰個食物呢，係唔需要放糖嘅，點解我呢個蘆筍會放糖呢?</p></a>
+				<a href="#00:21:7.67" id="00:21:7.67" class="lt" onclick="jumptoTime(1267, this.id)"><p>因為糖可以保持到佢最大限度，唔流失嗰個葉綠素，所以可以保持到青綠，不會黃，調味一般 蒜蓉、牛油、胡椒，但要記住胡椒要灑在蘆筍面，千萬不要碰到錫紙底，不然我加熱的話 一定會燒穿錫紙底，到時候流出汁，其實汁是正的 因為有牛油和蒜蓉味，好嗎?</p></a>
+				<a href="#00:21:42.51" id="00:21:42.51" class="lt" onclick="jumptoTime(1302, this.id)"><p>然後重中之重是，排好後 記住包錫紙的手勢，不要以為想節省時間，摺兩摺就算了，不是的 大家看到我盡量摺三摺，而且要對摺，在這情況下 我最大行動保持，鮮豆漲得這麼厲害 它沒有爆開，所以不會流汁 汁就流回裡面，但如果包得不好，它一漲就流水出來，那就麻煩了，流水了就沒有精華，最後這個菜燒菜不用太久。</p></a>
+				<a href="#00:22:23.51" id="00:22:23.51" class="lt" onclick="jumptoTime(1343, this.id)"><p>三分鐘，之前我燒金菇就五分鐘，這次三分鐘，快嗎?快啊，如果不是因為我拍片和簡介，十分鐘內這個菜一定可以，七八分鐘就完成了，而且非常適合初歌的朋友，而且我可以和大家說，這個做法雖然簡單，但大酒店和大廚都是這樣做的，如果大家想到沒有東西好想，拿去做生意，我非常歡迎，你自己試吧，跟著一起試吧。</p></a>
+				<a href="#00:23:0.51" id="00:23:0.51" class="lt" onclick="jumptoTime(1380, this.id)"><p>多謝大家收看，是不是我特別多古靈精怪的東西，一個燒烤王可以做出這麼多東西，是的 最精彩的還沒有出現，燒魚 燒泰式魚 泰式燒魚，還有燒完焗蟹，很多東西玩，再貴一點的都可以，燒龍蝦都可以，多謝大家收看，真的要吃飯了，今天第三個菜，今天我給自己99分，真的 認真的，不是說笑，多謝大家收看。</p></a>
+				<a href="#00:23:30.51" id="00:23:30.51" class="lt" onclick="jumptoTime(1410, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

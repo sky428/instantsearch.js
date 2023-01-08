@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——蒸水蛋，傳統做法，一個步驟讓其入口即溶，兩個步驟變成送飯神器，所有名廚都要甘拜下風！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xmKUwvwM5Rk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——蒸水蛋，傳統做法，一個步驟讓其入口即溶，兩個步驟變成送飯神器，所有名廚都要甘拜下風！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好， 晚上好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>過去幾個視頻， 我做的菜式都好複雜， 大家頭都暈了。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>到底需不需要做到這樣呢?</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>今天我只做一個很簡單， 很簡單， 很簡單， 沒可能失敗的菜式。</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>做什麼呢? 看到四隻雞蛋， 四隻雞蛋用來做什麼呢?</p></a>
+				<a href="#00:00:37.00" id="00:00:37.00" class="lt" onclick="jumptoTime(37, this.id)"><p>大家想想吧。</p></a>
+				<a href="#00:00:39.20" id="00:00:39.20" class="lt" onclick="jumptoTime(39, this.id)"><p>沒錯，今天就做一個不可能失敗的菜式，就是蒸水蛋。</p></a>
+				<a href="#00:00:48.20" id="00:00:48.20" class="lt" onclick="jumptoTime(48, this.id)"><p>蒸水蛋，我這裡只有四隻，OK?</p></a>
+				<a href="#00:00:52.20" id="00:00:52.20" class="lt" onclick="jumptoTime(52, this.id)"><p>我知道網上教人蒸水蛋，又要蓋這個蓋那個，又要包保鮮紙，諸如此類，巴巴巴。</p></a>
+				<a href="#00:01:5.20" id="00:01:5.20" class="lt" onclick="jumptoTime(65, this.id)"><p>其實，說真的，我們傳統家廚，我們還是燒火水爐，燒柴那一代，哪有那麼多東西搞的?</p></a>
+				<a href="#00:01:14.20" id="00:01:14.20" class="lt" onclick="jumptoTime(74, this.id)"><p>又不見得我們那時候蒸水蛋很困難。</p></a>
+				<a href="#00:01:17.20" id="00:01:17.20" class="lt" onclick="jumptoTime(77, this.id)"><p>其實，在傳統家廚裡面，就是阿嫲那一代教我的，其實蒸水蛋真的很簡單，很簡單的事。</p></a>
+				<a href="#00:01:25.20" id="00:01:25.20" class="lt" onclick="jumptoTime(85, this.id)"><p>你只需要做一個步驟，你就可以做到一個入口即溶，軟滑無比的蒸水蛋。</p></a>
+				<a href="#00:01:37.20" id="00:01:37.20" class="lt" onclick="jumptoTime(97, this.id)"><p>一個步驟就搞定，那個步驟不需要工具，只需要你肯做就可以了。</p></a>
+				<a href="#00:01:43.20" id="00:01:43.20" class="lt" onclick="jumptoTime(103, this.id)"><p>那是什麼呢?等一下我就揭曉。</p></a>
+				<a href="#00:01:48.20" id="00:01:48.20" class="lt" onclick="jumptoTime(108, this.id)"><p>另外，其實在外面的餐廳蒸水蛋，大家都覺得蒸水蛋很方便，很簡單，很像，很簡單。</p></a>
+				<a href="#00:02:0.20" id="00:02:0.20" class="lt" onclick="jumptoTime(120, this.id)"><p>但其實，外面的餐廳蒸的水蛋，我不是說蒸得不好看，不過我總是不滿意。</p></a>
+				<a href="#00:02:7.20" id="00:02:7.20" class="lt" onclick="jumptoTime(127, this.id)"><p>為什麼不滿意呢?就是因為他做少了一個步驟。</p></a>
+				<a href="#00:02:11.20" id="00:02:11.20" class="lt" onclick="jumptoTime(131, this.id)"><p>那今天這個視頻主要跟大家分享兩樣東西，就是蒸水蛋的秘訣。</p></a>
+				<a href="#00:02:18.20" id="00:02:18.20" class="lt" onclick="jumptoTime(138, this.id)"><p>你只要做對了這個步驟的話，我保證你，你以後都不想吃餐廳出品的蒸水蛋。</p></a>
+				<a href="#00:02:28.20" id="00:02:28.20" class="lt" onclick="jumptoTime(148, this.id)"><p>OK?好啦，廢話不多說。</p></a>
+				<a href="#00:02:30.20" id="00:02:30.20" class="lt" onclick="jumptoTime(150, this.id)"><p>第一個困難，蒸水蛋要蒸到軟滑，那要做些什麼呢?</p></a>
+				<a href="#00:02:37.20" id="00:02:37.20" class="lt" onclick="jumptoTime(157, this.id)"><p>其實，很坦白說，蒸水蛋，很多人最覺得困難的就是到底要加多少水。</p></a>
+				<a href="#00:02:46.20" id="00:02:46.20" class="lt" onclick="jumptoTime(166, this.id)"><p>那我現在就做一個簡單的方法，記住就是蒸水蛋，你加多少隻蛋，就加多一份水下去。</p></a>
+				<a href="#00:02:54.20" id="00:02:54.20" class="lt" onclick="jumptoTime(174, this.id)"><p>那如何量度呢?我這裡先有一隻碗，那我現在四隻水蛋，是不是?四隻蛋，是不是?</p></a>
+				<a href="#00:03:10.49" id="00:03:10.49" class="lt" onclick="jumptoTime(190, this.id)"><p>四隻蛋。</p></a>
+				<a href="#00:03:12.49" id="00:03:12.49" class="lt" onclick="jumptoTime(192, this.id)"><p>大家看到四隻蛋佔這個碗的比例是多少嗎，你記住這個高度，然後放同一樣份量的水進去，這樣就可以了，這個比例是絕對正確的，ok?可以嗎，這個時候。</p></a>
+				<a href="#00:03:32.49" id="00:03:32.49" class="lt" onclick="jumptoTime(212, this.id)"><p>很多人反對我另一件事，在上一個視頻說我炒蛋，發蛋加雞粉，喂大哥，我不是用最頂級的雞蛋，也不是用最好味的雞蛋，即是最重雞味的雞蛋，也不是用日本的貴價雞蛋，所以呢，很多時候，例如我普通家庭，一排蛋30隻，40元你想怎樣呢，你想蛋味去到哪呢，跟你會加北海道牛奶，你會加這個，即是牛乳下去炒，那個食味是不一樣的。</p></a>
+				<a href="#00:04:14.49" id="00:04:14.49" class="lt" onclick="jumptoTime(254, this.id)"><p>那些當然不用加雞粉，是不是，但是呢，普通雞蛋最低價的雞蛋，喂大哥我們窮，所以放少少，輕輕就可以了，調一下味，鹽呢，兩樣，然後想蛋軟滑，加少少油，油多與少，大家自己喜歡，但你想蛋滑。</p></a>
+				<a href="#00:04:44.49" id="00:04:44.49" class="lt" onclick="jumptoTime(284, this.id)"><p>一定要加油，然後，發蛋，發蛋，要對好鏡頭，發的時候，速率盡你的能力，快快一點，因為這碗很小，所以我都會放在一旁，主要在這個過程中，我們把調味料，把油、蛋、蛋清和蛋黃，全部放在一起，OK，讓畫面看起來更好看，即是能夠對焦，所以我會放在一旁，我不是懶惰，是因為要遷就畫面，OK，好了，這樣就發好了，發好了。</p></a>
+				<a href="#00:05:34.40" id="00:05:34.40" class="lt" onclick="jumptoTime(334, this.id)"><p>記住，是甚麼?</p></a>
+				<a href="#00:05:37.04" id="00:05:37.04" class="lt" onclick="jumptoTime(337, this.id)"><p>這個蛋佔碗的高度，記住，好，先放發好的蛋，放在這裡。</p></a>
+				<a href="#00:05:47.00" id="00:05:47.00" class="lt" onclick="jumptoTime(347, this.id)"><p>OK，然後加水，加水是加甚麼呢?</p></a>
+				<a href="#00:05:50.96" id="00:05:50.96" class="lt" onclick="jumptoTime(350, this.id)"><p>當然是煮過的水，不是加生水，記住，如果你加生水，到時肚子餓，你就不要找我，好了，加回蛋佔碗的比例，份量，然後一邊攪拌，慢慢放，慢慢放，不要一次過倒下去，否則就很難發勻，如果你覺得水多，然後你就先停一停，然後繼續發，盡量以你自己的能力發快一點，這個作用是讓蛋和水混合，OK，這樣，因為放平其實不好發。</p></a>
+				<a href="#00:06:39.84" id="00:06:39.84" class="lt" onclick="jumptoTime(399, this.id)"><p>就拿起碗，用手輕輕打斜，打至差不多可以了，水和蛋都混合在一起了，這樣就可以停手了。</p></a>
+				<a href="#00:06:56.64" id="00:06:56.64" class="lt" onclick="jumptoTime(416, this.id)"><p>接下來我要做的步驟，很多人都不會做的，這個步驟其實可以這樣說，蛋要做到入口即溶，沒有渣，然後不會起蜂窩狀，為什麼會起蜂窩狀呢?</p></a>
+				<a href="#00:07:23.64" id="00:07:23.64" class="lt" onclick="jumptoTime(443, this.id)"><p>最主要是因為蛋有泡，大家看到表面有很多泡嗎?</p></a>
+				<a href="#00:07:27.64" id="00:07:27.64" class="lt" onclick="jumptoTime(447, this.id)"><p>其實那些泡就是令大家蒸水蛋失敗的真空，所以無論我們怎樣做都好，主要有兩個方法，以前的廚具不講究，所以通常會用東西撈起蛋的泡，但現在我們的廚具比較豐富，比較多樣性，所以大家只要做一個步驟就可以了，就是把泡隔起，等一會，我拿一隻碟子，單人操機，沒辦法，大家要忍耐一下，然後我們拿起它。</p></a>
+				<a href="#00:08:25.64" id="00:08:25.64" class="lt" onclick="jumptoTime(505, this.id)"><p>我擺正一點給大家看，倒下去的時候，把隔隔起，蛋起，這個是會整成蜂窩狀的真空，我現在就已經隔起了，還有一些蛋或者多餘的材料，你沒辦法發得均勻的話，這個時候，這個蛋就剛剛好了，是不是很純正?</p></a>
+				<a href="#00:08:57.59" id="00:08:57.59" class="lt" onclick="jumptoTime(537, this.id)"><p>這個時候，我通常會灑幾粒胡椒進去，讓它好味一點，基本上，這個蛋就完成了，現在就等著做了，這個步驟，記住，做這個步驟之後，你的蛋就可以平滑如鏡，不用擔心它會起蜂窩狀，記住，發起蛋的泡就是真空，就是起蜂窩狀的真空，令到這個蛋的口感不佳的真空，通常有兩種方法，現在我就做了一個方法，就是用東西隔起。</p></a>
+				<a href="#00:09:39.59" id="00:09:39.59" class="lt" onclick="jumptoTime(579, this.id)"><p>用一個密隱密的撈皮，比較稠密的撈皮，隔開蜂窩狀的泡，另一個方法就是，你將蛋放在這裡，放一段時間，然後用匙羹，將其餘的泡，舀起來，這樣就OK了，大家明白嗎?</p></a>
+				<a href="#00:10:5.59" id="00:10:5.59" class="lt" onclick="jumptoTime(605, this.id)"><p>這個就希望大家可以記住，兩個方法，第一個方法是什麼?</p></a>
+				<a href="#00:10:15.59" id="00:10:15.59" class="lt" onclick="jumptoTime(615, this.id)"><p>不要說我沉氣，第一個方法就是，先拿一個比較密隱密的撈皮，隔起蜂窩狀的泡，另一個方法就是，發完蛋之後，放一段比較長的時間，可能是15分鐘至30分鐘，最後在放碟之前，用匙羹舀起泡，都有差不多的效果，當然它的效果，沒有用密隱密的撈皮，隔起蜂窩狀的泡那麼好，接下來我就蒸了，蒸也有方法的，這個蒸。</p></a>
+				<a href="#00:10:46.59" id="00:10:46.59" class="lt" onclick="jumptoTime(646, this.id)"><p>這個隔水蒸，我可以告訴你，是我們傳統阿嫲那一代，已經教的方法，不需要做到很複雜，直接放進鍋裡蒸就行了，你只需要做一個動作，你就已經可以做出，入口即溶，軟滑的效果，OK，我已經煮開水了，滾了。</p></a>
+				<a href="#00:11:13.43" id="00:11:13.43" class="lt" onclick="jumptoTime(673, this.id)"><p>我現在放隻蛋，放隻蛋落去，呢個過程其實都幾緊要嘅，所以我就要開機畀大家睇下，正路呢，即係坊間好多種方法啦，用保鮮紙又好，古靈精怪嘅方法都好，但其實呢唔需要咁複雜，唔需要搞到咁多，因為嗰啲失敗率都會好高嘅，只需要做一個動作，我哋上鑊蓋嘅時候，留返少少，留返少少嘅空間畀佢，咁如果係中式鑊嘅話呢，咁我哋合麻交落係乜嘢呢。</p></a>
+				<a href="#00:11:51.57" id="00:11:51.57" class="lt" onclick="jumptoTime(711, this.id)"><p>開隻筷子，頂起佢，搞掂，就係咁簡單嘅一個動作，好啦，咁呢個時候我哋開始計時喇喎，咁就幾多分鐘呢，8分鐘搞掂㗎啦，咁呢一般嚟講呢，8分鐘就一定熟嘅，咁如果睇下嗰個蛋嘅深淺程度啦，咁如果佢深啲厚啲嘅話呢你就，較8分鐘啦，咁如果佢薄啲嘅話呢，咁你就較7分鐘其實都足夠㗎啦ok。</p></a>
+				<a href="#00:12:23.05" id="00:12:23.05" class="lt" onclick="jumptoTime(743, this.id)"><p>咁我而家開始計時，我解釋點解會即係有啲職業廚房即係家人蒸蛋要上，呢個保鮮紙呢，咁我解釋一下，咁其實呢蒸水蛋呢對於個溫度呢，係非常之敏感嘅，啲蛋呢如果溫度過高嘅話呢佢係會膨脹嘅，ok得唔得，咁呢，所以，嗰啲職業廚房佢放入蒸櫃之前佢會包保鮮紙，然之後呢個所謂嘅專業嘅手法呢，就專業嘅方法呢就流傳喺坊間。</p></a>
+				<a href="#00:13:4.79" id="00:13:4.79" class="lt" onclick="jumptoTime(784, this.id)"><p>同埋其他嘅方法但佢無論係用咩方法都好佢嘅目的就係要令到個蛋嘅表面呢，唔可以達到100度，ok唔可以達到100度，咁而，我哋古老嘅即係家廚嘅方法就攞隻筷子頂起個鑊蓋，個目的都係一樣，係令到佢接觸到蛋嘅表面嘅溫度呢就唔超過100度，咁嗰啲蛋呢就唔會發㗎啦，一超過100度一達到100度呢嗰啲蛋就會發嘅佢熟咗之後就會發嘅，Ok得唔得咁咁大家都。</p></a>
+				<a href="#00:13:40.37" id="00:13:40.37" class="lt" onclick="jumptoTime(820, this.id)"><p>食過呢個，車車芙里㗎啦係咪一拎出嚟好cold one嘅時候佢焗完之後係咪嗰啲蛋漲曬呀，道理係一樣嘅，因為蛋呢佢係有即係佢個成份裏面呢係有多少酵素喺入面嘅，所以溫度過高嘅時候呢佢就會發大，你唔想佢發大好簡單嘅啫，中式鑊你就攞隻筷子頂起個鑊蓋，如果譬如話我呢啲都唔知韓式鑊啦我當佢我好鍾意用佢因為佢夠輕，咁呢就。</p></a>
+				<a href="#00:14:13.39" id="00:14:13.39" class="lt" onclick="jumptoTime(853, this.id)"><p>你只需要留返少少空間令到呢個蛋嘅表面唔達到永遠達唔到嗰100度嘅，嘅話呢，嗰啲蛋就冇事嘅，Ok得唔得，大家知道個原理喇喎以後唔好再用啲，可能會失敗即係因為你唔知道個原理，所以呢好多時候你聽人講跟住又包保鮮紙又成大包嘅保鮮紙點解都唔得嘅呢，個原因就係個溫度嗰度，Ok得唔得而家我就講咗個原理啦。</p></a>
+				<a href="#00:14:40.79" id="00:14:40.79" class="lt" onclick="jumptoTime(880, this.id)"><p>咁我亦都唔曬曬街嘅時間，咁呢就我識一識機先整好咗之後，另外一個動作，係可以令到啲蛋係超好味嘅，變成呢個送飯神器嘅，Ok咁呢個呢就餐廳，係好少會去做咁當然亦都有餐廳去做，但係真係上心去做呢個小動作嘅廚師真係唔多，等佢蒸好咗之後我再，畀大家睇下個效果下。</p></a>
+				<a href="#00:15:8.71" id="00:15:8.71" class="lt" onclick="jumptoTime(908, this.id)"><p>好啦大家今日鐘響咗啦咁呀睇下，咁呢我就懶咗啲呀咁個邊邊呢其實呢落去之前呢即係落去嘅時候都，仲要係搞一搞佢因為我先頭隔嗰啲鋪呀，隔得唔夠乾淨所以都仲有少少大家睇下個表面，近啲畀大家睇下，個表面大部分時間，大部分嘅面積呢都係正常嘅係有少少個邊邊仲有少少巢皮，點解呢因為先頭懶，隔咗佢唔夠清ok。</p></a>
+				<a href="#00:15:43.27" id="00:15:43.27" class="lt" onclick="jumptoTime(943, this.id)"><p>呢個時候呢我哋要做一個小動作喎，咁然之後呢我哋就審啲蔥花上面，蔥花呢就唔使整熟佢嘅，就係要嗰啲蔥花嘅，即係辛辣味呀，混和嗰啲蛋，嘅香味，Ok，咁呢個呢就係我哋香港人或者係南般信一帶呢，蒸水蛋嘅，一個，即係方法嚟嘅，Ok，我就鍾意放好多鐘嘅我講過好多次我鍾意食蔥呀，咁呢啲蔥呢係咪特別幼呀特別細粒呀點解呢，因為我通常擺啲蔥返嚟呢就。</p></a>
+				<a href="#00:16:21.67" id="00:16:21.67" class="lt" onclick="jumptoTime(981, this.id)"><p>備用，擺耐咗嗰啲蔥呢就會枯萎嘅，咁枯萎呢我又唔想揼咗佢，咁先頭畫面應該你見到有少少話好似啲草，有乾嘅但係浸緊嘅嗰啲就衝嚟嘅，Ok，即係我哋為咗要慳錢，幾蚊都係錢㗎嘛，呢個時候放完蔥呀有得佢嗰啲溫度呢，有得佢，等嗰啲溫度呢就令到你表面啲蔥呢就半生熟，然之後你放咩呢，放少少熟油，我呢啲呢就豬油嚟嘅。</p></a>
+				<a href="#00:16:54.97" id="00:16:54.97" class="lt" onclick="jumptoTime(1014, this.id)"><p>豬油嚟嘅，我自己整嘅，咁咪豬油最好啦咁但係如果冇豬油嘅話呢就整少少熟油啦咁呢個，基本上就完半完成品囉，跟住然之後，先頭呢我係咪落好少鹽呀其實唔夠鹹嘅，我特登嘅ok，咁呢，呢個時候，呢一個咁嘅蒸水蛋我話畀你聽就變成馬上呢就變成一個送飯神器，如果你去茶餐廳食嘅話呢，佢係好滑，係好好食。</p></a>
+				<a href="#00:17:25.93" id="00:17:25.93" class="lt" onclick="jumptoTime(1045, this.id)"><p>不過呢，好似爭啲嘢咁樣，熟油豉油同蔥花囉，Ok得唔得，好啦咁呀畀大家睇下嗰個賣相如何呀，好嘅靚嘅匙羹。</p></a>
+				<a href="#00:17:44.48" id="00:17:44.48" class="lt" onclick="jumptoTime(1064, this.id)"><p>我而家開啦，畀大家睇下，好滑㗎係咪，咁但係呢我今日都有少少失敗啦我唔怕失敗嘅，但係呢我就，講畀你大家聽個道理喺邊一度然之後呢，我已經講咗喇先頭點解嗰邊邊都仲有少少起即係起風佢又，唔係完全蜂窩狀嘅我畀大家睇下，入面都好靚嘅，我反轉佢，再少少蜂窩狀嘅ok少少，喺個邊邊位點解會有呢個咁嘅現象呢，我懶。</p></a>
+				<a href="#00:18:28.28" id="00:18:28.28" class="lt" onclick="jumptoTime(1108, this.id)"><p>我先頭隔嗰個鋪隔得唔夠清，同埋如果你係，驚住自己隔得唔夠清嘅話呢，你係可以，做多一個動作就係淋放上即係，淋放放落個鑊嗰陣時啦，攞筷子再搞一搞佢搞勻啲蛋但就唔好太大力，Ok將嗰啲鋪呢就盡量搞，平均一啲，咁呢，就唔會再出現呢個蜂窩狀㗎喇ok得唔得，咁呀呢個咁嘅送飯神器，喂大佬。</p></a>
+				<a href="#00:18:59.24" id="00:18:59.24" class="lt" onclick="jumptoTime(1139, this.id)"><p>呢度呢啲碟呢可以，我哋兩仔爺呢送送四碗白飯㗎，唔係講笑，Ok咁呀大家，希望大家跟住做呢畀我做得更加好啦，咁我亦都講咗嗰個原理喺邊度啦係咪呀，咁我亦都講咗點解我仲有呢個呢個仲有少少失敗嘅原因啦，喺邊度啦咁希望大家呢，就跟住一齊做，做足嘅話呢，唔使出去食嘅，自己屋企整，好食個餐廳嘅。</p></a>
+				<a href="#00:19:31.26" id="00:19:31.26" class="lt" onclick="jumptoTime(1171, this.id)"><p>Ok，咁咪又夠鐘食飯喇已經，煲好飯喇，拜拜。</p></a>
+				<a href="#00:19:38.68" id="00:19:38.68" class="lt" onclick="jumptoTime(1178, this.id)"><p>又去食飯啦。</p></a>
+</div>
+	</body>
+</html>

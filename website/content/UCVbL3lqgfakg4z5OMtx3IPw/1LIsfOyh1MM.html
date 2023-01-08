@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——沙嗲牛肉鮮魚片米線(可改用其他咸淡水魚類)，這幾天熱到不得了，不吃飯可以吃湯粉，香港地，當然是要吃魚湯了。花的是心機和時間，其實製作很簡單的。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1LIsfOyh1MM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——沙嗲牛肉鮮魚片米線(可改用其他咸淡水魚類)，這幾天熱到不得了，不吃飯可以吃湯粉，香港地，當然是要吃魚湯了。花的是心機和時間，其實製作很簡單的。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好!</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>大家看到我亂七八糟的樣子，到底又想搞什麼呢?</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>其實我一不離二不離三，吃魚湯米線吃了上癮。</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>所以今天想和大家一魚兩味，買一條黑鯧，為什麼要買黑鯧呢?</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>我本來想買石斑，誰不知沒有心目中想要的石斑的尺寸。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>所以我買了一條黑鯧，因為黑鯧的肉厚，所以可以用來起肉。</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>肉醃了之後用來白焯，焯了配合魚湯米線吃。</p></a>
+				<a href="#00:01:1.00" id="00:01:1.00" class="lt" onclick="jumptoTime(61, this.id)"><p>這條黑鯧便宜了70元，一斤鬆一點。</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>我現在先洗了它。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>我開這個影片最主要是和大家分享如何開魚起肉。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>大家之前見過我一魚兩味，一個做湯和一個做炒球，大家應該知道我如何開魚肉出來。</p></a>
+				<a href="#00:01:49.00" id="00:01:49.00" class="lt" onclick="jumptoTime(109, this.id)"><p>我現在重覆，但不要緊，因為大家做法有少少分別，希望大家不要介意，有些技巧真的要重覆重覆才可以。</p></a>
+				<a href="#00:02:6.00" id="00:02:6.00" class="lt" onclick="jumptoTime(126, this.id)"><p>我們洗魚的時候，要洗乾淨。</p></a>
+				<a href="#00:02:18.70" id="00:02:18.70" class="lt" onclick="jumptoTime(138, this.id)"><p>大家記不記得，如何去除腥味?</p></a>
+				<a href="#00:02:23.70" id="00:02:23.70" class="lt" onclick="jumptoTime(143, this.id)"><p>為什麼魚會有腥味?</p></a>
+				<a href="#00:02:25.70" id="00:02:25.70" class="lt" onclick="jumptoTime(145, this.id)"><p>大家知道了，就是放腺菌的作用。</p></a>
+				<a href="#00:02:30.70" id="00:02:30.70" class="lt" onclick="jumptoTime(150, this.id)"><p>我現在盡量不斷地抹它。</p></a>
+				<a href="#00:02:35.70" id="00:02:35.70" class="lt" onclick="jumptoTime(155, this.id)"><p>這個和蒸魚有一點點分別。</p></a>
+				<a href="#00:02:40.70" id="00:02:40.70" class="lt" onclick="jumptoTime(160, this.id)"><p>我不可能用燒酒、酒和鹽醃它。</p></a>
+				<a href="#00:02:55.51" id="00:02:55.51" class="lt" onclick="jumptoTime(175, this.id)"><p>但我們都需要盡量去除掉表面的污漬，令到本來是附著在放射性菌的身體產生的污漬，洗乾淨，這個時候我們就要開魚肉，怎樣開呢?</p></a>
+				<a href="#00:03:31.51" id="00:03:31.51" class="lt" onclick="jumptoTime(211, this.id)"><p>斜刀沿著魚的後尾枕一直放斜下來吐，因為待會我們吐這裡有骨，所以我們不會吐那邊，斜刀，大家看到嗎?</p></a>
+				<a href="#00:03:50.51" id="00:03:50.51" class="lt" onclick="jumptoTime(230, this.id)"><p>然後就沿著脊鰭的位置用刀尖不停割，割到尾部，直至你割的時候，直至你感覺到有骨的感覺，然後繼續用刀沿著骨的位置，用手指這樣用少少陰力向上扯，這樣我們開的魚肉出來就很貼骨，我在這個時候雖然是用刀尖下去割，但其實刀尖有一個作用，就是我可以感覺到它每一下碰到骨頭的手感，OK，我先關水。</p></a>
+				<a href="#00:05:1.53" id="00:05:1.53" class="lt" onclick="jumptoTime(301, this.id)"><p>大家見到我係好貼骨嘅，咁我而家就利用刀尖去感覺，每一下我拖嘅時候就感覺到呢，就係嗰啲魚呀，掂到嗰個魚骨啦，呢個時候就沿住嗰個肚，嗰啲骨位呢再解一解，好，魚肉出來了，給大家看看，一斤重的，我現在片出來，一邊的魚肉，頂著洞只有三兩多，好，然後先放進水裡，大家看看，是不是很貼骨?</p></a>
+				<a href="#00:06:4.76" id="00:06:4.76" class="lt" onclick="jumptoTime(364, this.id)"><p>沒有一吋地方浪費的，ok?</p></a>
+				<a href="#00:06:7.76" id="00:06:7.76" class="lt" onclick="jumptoTime(367, this.id)"><p>好，然後另一邊也是一樣，為什麼我經常說要保持那把刀夠鋒利的原因就是這樣，因為我們有機會做片魚肉的動作，一樣，我用陰力壓刀到魚身，然後利用刀尖的位置去感受我每一下碰到魚骨的手感，這樣我就可以每一刀下去就很準確，就不會有多餘的肉黏在魚骨上，ok?</p></a>
+				<a href="#00:07:7.76" id="00:07:7.76" class="lt" onclick="jumptoTime(427, this.id)"><p>然後左手就用陰力去拉起魚肉，這樣就方便我們繼續切下去，這裡已經一斤了，超過一斤的黑鯧，但實際上我們能夠吃到的肉，說真的，不超過八兩，一半都沒有，大家要小心，越接近肚位，就越多骨，海魚就是這樣，所以有機會切到骨，魚肉會碰到骨，大家要小心點，好，唉，不知做乜鬼呀，又係拍到一半部機就罷工啦，好彩我又發覺到架姐。</p></a>
+				<a href="#00:08:25.79" id="00:08:25.79" class="lt" onclick="jumptoTime(505, this.id)"><p>先頭呢，我再講返啦，沖洗咗，即係起完肉啦，大概呢我再比大家睇下，咁呀，有呢個係兩塊肉，大概都係八兩到架姐OK，咁呢，呢個魚身呢，我都沖洗咗架啦，魚身等陣間我地呢就係煮湯用嘅OK，咁就，咁呀，為免呢，嗰啲旗位呢，等陣間煎到窿呢，會出黎呢，就會起渣，咁所以呢，我就剁哂佢OK，咁呀，依家呢，咁呢整幾件啦跟住然之後。</p></a>
+				<a href="#00:09:16.47" id="00:09:16.47" class="lt" onclick="jumptoTime(556, this.id)"><p>乜都唔使理㗎喇咁呀等間我哋呀煎係魚湯啦ok，好啦大家原來張卡爆曬我自己都唔知我仲以為點解，成日都斷㗎呢咁樣咁呀中間呢有啲過程呢就拍得唔係咁好呀，大家就唔好介意咁啦而家呢我就洗完啲魚肉啦咁呢我哋要做一個動作嘅，就係呢就將啲魚肉呢抹返乾佢，Ok，今日都幾多意外呀，先頭。</p></a>
+				<a href="#00:09:55.81" id="00:09:55.81" class="lt" onclick="jumptoTime(595, this.id)"><p>都一下唔為意嗰個沙爹牛肉都，即係，應該有部分都係拍唔到呢個係我最唔想見到嘅情況ok，好啦咁咪繼續啦抹返乾嗰啲魚肉啦呢個過程都好緊要㗎喎，咁呢喺雖然話等間我哋係要醃呀咁但係呢如果呢我哋，喺呢個過程呢我哋唔抹返乾嗰啲水啦抹返乾佢表面呢變咗呢嗰啲我成日，講嗰啲咩放線菌呀就成日黏附喺嗰啲魚嘅表面呢就會有聲味嘅ok，咁我哋而家呢將呢啲水份呢。</p></a>
+				<a href="#00:10:35.49" id="00:10:35.49" class="lt" onclick="jumptoTime(635, this.id)"><p>就抹曬佢咁呢就變咗呢，呢個係放線菌呢就盡量減少我哋就冇咁聲味啦ok得唔得，記住呀，點解大家要明白點解我哋成日，入慣廚房嘅成日都要用廚子就咁解啦，好啦咁呢個時候呢，我攞隻兜先呀，大家見到呢我係一直帶著個手套點解呢因為我哋要攞嗰啲魚肉呀，呢個核突嘅大家眼冤呀，咁咗佢啦可以，咁啦好啦跟住然之後呢。</p></a>
+				<a href="#00:11:12.59" id="00:11:12.59" class="lt" onclick="jumptoTime(672, this.id)"><p>呢個時候呢我哋就，起魚肉啦，咁啦，魚肉呢，就唔好似得太薄，點解呀因為呢，會係太薄呢等間呢會散㗎喎錄開之後，我先前都講，本來我想買石斑，但最後我買了鷹倉，不是鷹倉，這隻叫黑倉，為何我會買了黑倉呢，主要原因是它比較厚肉，絕對不會比石斑肉薄，只不過，它的口感相對地沒有石斑那麼好，但我又想吃魚湯米線。</p></a>
+				<a href="#00:12:7.18" id="00:12:7.18" class="lt" onclick="jumptoTime(727, this.id)"><p>所以我就買了黑倉，因為沒辦法，我不想走那麼遠，家樓下只有這些魚賣，這個時候，我先抹好刀，放好刀，然後我們就醃了，醃其實很簡單，少許胡椒，醃魚其實真的很簡單，大家不要想得那麼複雜，少許胡椒，然後輕輕的鹽，少許就可以了，然後就加少許麻油，如果大家怕腥的話，還有一個方法，就是加少許雞粉，有人抗議的。</p></a>
+				<a href="#00:13:12.71" id="00:13:12.71" class="lt" onclick="jumptoTime(792, this.id)"><p>但其實呢，這是各思各法，我覺得無所謂的，少許雞粉可以辟腥，但不會影響魚本身的味道，然後少許生粉，然後我們要，先用完酒，不好意思，用這個BB酒，這期百佳的廣東米酒，正在做宣傳，不過各位小器，送了少許酒，等一等，我用刀割一割，嚇死我了，手套，無一身冷汗，幸好沒有打破，如果是大支的，一定會打破，手套滑手。</p></a>
+				<a href="#00:14:11.77" id="00:14:11.77" class="lt" onclick="jumptoTime(851, this.id)"><p>加少許酒，這樣便可以了，然後將所有材料拌勻，如果覺得它是乾的那一層，可以加少許水，加水的作用最重要是讓它混合得起，不用加很多水，少許就可以了，然後就可以放一旁備用了，等一會兒我要煮米線的時候，我再開機，我本身今晚買了大豆芽，給大家看看，大豆芽，我現在順手開機浸泡，然後有腐皮。</p></a>
+				<a href="#00:15:50.20" id="00:15:50.20" class="lt" onclick="jumptoTime(950, this.id)"><p>今晚我煮腐皮魚湯，會有少許不同，跟上次的腐皮魚湯，我直接用來浸泡，然後用來吃，但今次我直接用來做湯底，因為我怕今天魚的味道不夠，因為上次的魚湯味道不一樣，所以我用腐皮和大豆芽一起煮湯，這樣就有另一種風味了，今次的魚湯就做好了，奶白色很滑的嘛 大家都知道啦 喝魚湯，很鮮味的嘛。</p></a>
+				<a href="#00:16:44.53" id="00:16:44.53" class="lt" onclick="jumptoTime(1004, this.id)"><p>但是如果我加上腐皮下去煮它一會兒的話，加上豆芽煮它一會兒的話，又是完全不一樣的風味湯底來的，OK 行不行，等一會兒我開機要做的時候，我再跟大家分享，這裡不好意思 今晚因為一刻忘記了換卡，所以弄到那條視頻斷絕和衷，我現在心裡都有點不安樂，因為我一向都強調的是，我巨細無遺嘛，但是誰知道我要說的話全部都錄不到。</p></a>
+				<a href="#00:17:18.83" id="00:17:18.83" class="lt" onclick="jumptoTime(1038, this.id)"><p>OK 等一會兒再見，應該等一會兒就沒有意外了，不好意思 等一會兒見，好了 大家 先跟大家分享了怎樣起魚肉，然後怎樣醃魚肉，現在煎魚了 要煲湯，大家看過我上一條視頻，就是說那個龍白魚湯魚蛋米線，大家應該知道接下來要怎麼做的了，不過為免大家再從頭開始過，所以我先由頭開始做給大家看看，現在燒鑊了 看到煙就下油了。</p></a>
+				<a href="#00:18:7.43" id="00:18:7.43" class="lt" onclick="jumptoTime(1087, this.id)"><p>然後再燒一會兒，等它見煙之後我才再收小火，這個就是煎魚的基本步驟，大家看慣我的都應該知道的了，好 這個時候我們下魚了，這個魚骨我會把它弄得很乾，盡量弄乾一點，讓它煎的時候好一點，看到有水出，我們要…，看到有水就要攪拌到四周，還有會有聲音，所以要在放紙之前，要把水份吸乾，在這個過程中，我們要先收起鵝才放進去。</p></a>
+				<a href="#00:19:24.91" id="00:19:24.91" class="lt" onclick="jumptoTime(1164, this.id)"><p>大家看看，讓油能夠集中在鵝身上，讓油能夠沾到鵝身上，所有要煎的部份，煎出來的魚才會有甘香的味道，大家要注意，不要太過於手動，現在就上鑊蓋，留一點邊位，三分鐘，三分鐘後再開蓋給大家看看效果，大家又中響了，我們看看結果如何，嘩!煎得很甘香，這邊還未夠，所以我們要集中在鵝身上，煎魚湯，我都說過很多次，要怎樣呢?</p></a>
+				<a href="#00:20:21.91" id="00:20:21.91" class="lt" onclick="jumptoTime(1221, this.id)"><p>越煎得它甘香的話，煮出來的湯就越奶白，大家看看，煎得好，它就自動離鑊，不用鏟子，你看煎得多金香，只要煎得夠金香，所有湯就會更加奶白色，這個時候繼續上鍋，煎三分鐘，因為它薄很多，所以很快就可以了，待會煎好再給大家看看，好了，大家又中香了，我們看看結果如何，嘩，你看看，夠不夠金香?</p></a>
+				<a href="#00:21:40.94" id="00:21:40.94" class="lt" onclick="jumptoTime(1300, this.id)"><p>這次的魚湯一定又是很白色的了，這個時候我們開大火，然後放薑片，放薑片下去，薑片可以連皮也可以，開大火後，鍋開始冒煙，即是溫度足夠，引一引火，焯一焯它，然後加水，我加這個加到上去呢，2700cc以上，因為人多食粉，整多啲湯，真係唔好意思，本來我用白胡椒上一次，點知今日返到屋企先見，原來冇買。</p></a>
+				<a href="#00:23:18.69" id="00:23:18.69" class="lt" onclick="jumptoTime(1398, this.id)"><p>唔緊要落青花椒，不過青花椒有色，唔好落咁多，而且味道亦都比較霸道，所以隨便落幾粒就得，跟住之後呢，我地就，落濃湯煲，因為我而家落多咗好多水，所以我就要落兩盒濃湯煲，我用豬味，新包裝，今日我去白雞買先知，咁呢就，一如以往我個解釋，我會落豬味，點解要豬味呢，等於人地出面專業餐廳，豬骨湯，加埋魚湯。</p></a>
+				<a href="#00:24:1.69" id="00:24:1.69" class="lt" onclick="jumptoTime(1441, this.id)"><p>咁就熬出黎，我落豬味濃湯煲就方便好多啦OK，落兩粒，跟住因為湯比較多，所以我就要落兩匙鹽，跟住兩匙糖，呢個係基本嘅，等陣間再睇下夠唔夠鹹味，我先再加，正常係應該夠嘅，跟住之後就可以上鑊蓋，咁呢就係要煮佢五分鐘，咁咪大家都知道啦，呢個魚湯呢通常呢煮佢，大概兩分鐘到就變白色㗎啦，咁五分鐘我就想佢更加出味咁解嘅啫。</p></a>
+				<a href="#00:24:59.65" id="00:24:59.65" class="lt" onclick="jumptoTime(1499, this.id)"><p>等陣間轉鑊嘅時候呢，隔渣嘅時候呢，我再同大家分享下，好啦又五分鐘過咗去中響囉，我睇下點先，一如既往魚湯夠唔夠白呀，夠白呢，呢個時候我熄火啦，咁做乜嘢呢就要轉鑊呀，等一陣先，好重呀，等一等下，真係重，跟住個餅都斷啦真係，好跟住就，先倒些湯，因為我沒有用白胡椒，所以湯會否沒有那麼白?</p></a>
+				<a href="#00:26:22.98" id="00:26:22.98" class="lt" onclick="jumptoTime(1582, this.id)"><p>我帶了少少黃色，因為受到青花椒的污染，所以它煮出來的顏色是青色的，我先將它放一旁，這就是純魚湯，然後我要做什麼呢?</p></a>
+				<a href="#00:26:53.98" id="00:26:53.98" class="lt" onclick="jumptoTime(1613, this.id)"><p>我要將芽菜和腐竹放進去一起煮，等一會兒湯就會很惹味，亦都很健康，因為全部都是蔬菜，我煮的米線都很健康，然後還有要配韭菜，還有現在的魚已經放在雪櫃兩三個小時，應該OK的，然後米線各樣，除了魚之外，我還加了沙嗲牛肉，搞到好像在吃餐廳一樣，對飲食有要求的話，現在我講到自己都在流口水，對飲食有要求的話。</p></a>
+				<a href="#00:27:51.38" id="00:27:51.38" class="lt" onclick="jumptoTime(1671, this.id)"><p>反正在家裡百無聊賴的話，我們唯有對食物的追求，我這裏要煮它五分鐘，等它滾了之後我才按五分鐘，等一會兒再看看五分鐘之後會變成怎樣，不合我蓋的，不好意思，興奮過頭，忘記了這個才對，等一會兒再看看結果，好了，大家又鐘響了，五分鐘過了，那就看看它怎樣，結果如何，是不是很白呢，腐竹和豆芽加上魚有這個效果。</p></a>
+				<a href="#00:28:32.38" id="00:28:32.38" class="lt" onclick="jumptoTime(1712, this.id)"><p>比鮮牛還白，先試一下味道，看看它夠不夠味，可以加一匙糖，然後加少少生抽，再點一點味，現在開始煮米線，昨天用的米線的篩子好像不夠，今天用大篩子，現在放入米線，放入一匙生抽，再放入一匙生抽，米線可以吸收魚味，米線就這樣煮，過完冷河之後，之前米線應該怎樣處理，大家知道吧，煮它十分鐘左右，然後過冷河。</p></a>
+				<a href="#00:30:11.05" id="00:30:11.05" class="lt" onclick="jumptoTime(1811, this.id)"><p>基本上就一定適合用了，這樣就夠味了，米線就吸收了魚湯的味道，好，等一等，拿一隻大碗，地方淺窄，還是那句，沒辦法，然後，我先關小火，然後，我就，弄下來給大家看，地方淺窄，沒辦法，這樣就要加韭菜，韭菜就略略搓一搓就可以了，關小火都不怕，為甚麼要關小火呢?</p></a>
+				<a href="#00:31:6.90" id="00:31:6.90" class="lt" onclick="jumptoTime(1866, this.id)"><p>因為我放碗在那裡，我怕火燒到碗，因為地方實在太淺窄，沒辦法，請大家見諒，其實我經常喜歡做魚湯米線，主要原因是因為它夠健康，大家看到的，我除了煎魚的時候放的油，現在一滴油都沒有放過，先放韭菜，好，然後呢，這次就出動我之前做好的沙嗲牛肉了，嘩，正呀，大家看到，我已經放了沙嗲牛肉，大家看看，我這隻沙嗲牛肉之前做的。</p></a>
+				<a href="#00:32:2.90" id="00:32:2.90" class="lt" onclick="jumptoTime(1922, this.id)"><p>已經放了幾個小時了，第二餐，大家看到，除了油之外，就沒有水，就是我炒沙嗲的時候放麵粉，最大的功勞呀，嘩，很香，自己食鐘意點落點配都得，而家搞到好似走咗落便當食嘢咁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:32:37.15" id="00:32:37.15" class="lt" onclick="jumptoTime(1957, this.id)"><p>好，落少少沙爹汁，跟住之後我拎返開佢先，我而家就鹿嗰啲魚肉，點解我諗到會落沙爹呢，因為其實如果純粹係魚肉嘅話，我驚住寡嗰頭，大家睇下嗰啲魚肉，冇水倒流返出嚟嘅，大家睇到，證明呢個係非常之好，個效果，醃製嘅效果，放返上去先，鹿魚呢，雀魚呢就好簡單嘅啫，OK，現在稍為等它大滾，這個時候我都忘記了，這些麵、腐竹、豆芽是可以吃的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:47.88" id="00:33:47.88" class="lt" onclick="jumptoTime(2027, this.id)"><p>我可以放在櫃子邊邊，嘩!吃這些是不是很健康呢?</p></a>
+				<a href="#00:34:8.86" id="00:34:8.86" class="lt" onclick="jumptoTime(2048, this.id)"><p>現在等它大滾 之後就可以下去煮魚了，大家可能有個疑問，你放了芽菜和腐竹進去，可以繼續這樣滾嗎，我們家庭式是可以的，而且越滾越出味，反過來越滾越軟和越有魚味，現在差不多大滾了，我們就開始放魚肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:34:51.35" id="00:34:51.35" class="lt" onclick="jumptoTime(2091, this.id)"><p>這次我用黑鯧魚，為什麼我敢用黑鯧魚呢，主要原因是，大家應該吃過鷹鯧魚，不是經常說鷹鯧魚，鯧魚其實可以用來炒球，只不過它的肉質，沒有石斑那種煙韌度和滑，一樣可以吃到，既然炒球也可以，為什麼不能用來煮呢，我先前也說過，因為我街市找不到石斑，本來想叫石斑，不過這樣就省錢，一條魚70元，加上所有材料。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:35:34.35" id="00:35:34.35" class="lt" onclick="jumptoTime(2134, this.id)"><p>這個都是150元以內，但我們三個人可以吃，三、四、五碗，150元五碗，一個成本50元，30元我覺得都不算太貴，50元我覺得都不算過份，大家看看，半熟狀態再煮熟一點，其實蒼魚肉都幾好食，最唔滑嘅肉就應該係黃立倉，但黃立倉係最普遍，黃立倉都可以炒球，黑蒼魚肉更加爽嫩，雖然無石斑咁好食，但都係好好食，我哋就煮熟佢，大家睇下，因為佢冇大滾，所以我驚佢唔熟，所以我哋就畀多少少耐性俾佢。</p></a>
+				<a href="#00:36:56.01" id="00:36:56.01" class="lt" onclick="jumptoTime(2216, this.id)"><p>我哋而家開始對流，等佢一開始開始起泡，咁就ok啦，搞掂，熄火，今次我攞返隻碗入嚟，真係我驚住燒到隻碗，熄咗火，跟住我移落嚟，希望大家唔好介意，因為我實在地方太淺窄，ok，咁好啦，作鬼啦，個夾甩咗隻臂，頂呀，好彩我早有準備，我呢屋企冇嘢多，廚具多，我哋用呢隻，呢隻係襟濃啲，不過就短好多，呢個時候我擺返正佢啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:38:16.01" id="00:38:16.01" class="lt" onclick="jumptoTime(2296, this.id)"><p>好，我哋擺返正佢啦，咁我哋就擺返正佢啦，我哋擺返正佢啦，肉質真的不錯，比黃臘蔥好，好了，在這個時候，可以了，然後，當然是我的最愛，蔥花，先放一點，然後呢，為什麼我要先放一點呢，因為那些湯，滾湯撞下去就很棒的，OK，撞到蔥的味道，就很棒的，好，完成了，然後再放多一點，好像不太見勢，放多一點沙爹。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:39:13.78" id="00:39:13.78" class="lt" onclick="jumptoTime(2353, this.id)"><p>沙爹，然後，大量的蔥，好，行不行啊，這個賣相，像不像在外面麵檔吃的呢，是啊，自己家製的，大家都可以試一下我這樣做，雖然就繁複了一點，不過作為我們一家之主，我們，大部分的時間都花在，照顧家人的身上，其實我們只需要，辛苦一點，可能一天裏面，多延誤一個小時出來處理魚湯，其實我們就可以，晚上讓家人。</p></a>
+				<a href="#00:40:5.50" id="00:40:5.50" class="lt" onclick="jumptoTime(2405, this.id)"><p>享受到一個很豐盛的，麵餐，OK，大家如果喜歡我，這樣的做法，很健康的，除了，沙嗲牛肉比較多油，之外，我全程，這個麵餐，基本上就是煎魚的油，就是這麼多油，OK，行不行，有菜，有腐竹，有豆芽，有新鮮的魚肉，多豐富，是不是，如果大家有興趣，可以跟著一起做，很健康，很好吃，好不好，那就不和大家說了，這個就是標準的做法。</p></a>
+				<a href="#00:40:43.50" id="00:40:43.50" class="lt" onclick="jumptoTime(2443, this.id)"><p>但是其實還有一個，不標準的做法，這個是，是很好吃很多的，不過可能會有人說不夠健康，是什麼呢，這些是什麼來的，豬油，OK，吃完之後，最後，就是這樣了，OK 行不行，這個做法就將整個麵餐提升到另一個層次，基本上我都不需要總結得太多，因為都是那些東西，大家唯一要注意的是起肉的時候，那把刀要感覺魚骨。</p></a>
+				<a href="#00:41:29.32" id="00:41:29.32" class="lt" onclick="jumptoTime(2489, this.id)"><p>如果不是的話 萬一用力過頭了，或者過了龍 連骨都起了，就失去了意義 變成肉有骨，現在這些肉就老少咸宜 是沒有骨的，OK 行不行，第二樣東西就是，我們煎魚 做這個魚湯，你想它越白的話 是怎樣呢，你煎得它越甘香 它就越白，OK 行不行，那為什麼要放龍湯煲 要豬味呢，其實就等於是專業餐廳裏面用的豬骨魚湯底，那人家要熬呢 熬幾個小時的。</p></a>
+				<a href="#00:42:3.32" id="00:42:3.32" class="lt" onclick="jumptoTime(2523, this.id)"><p>不用 略加兩粒就搞定了，OK 行不行，在家裏 當然這個方便很多，沒理由為了吃個麵 又熬幾個小時湯底，是不是這樣說，所以這個是節省時間的必要之惡，OK 好不好，那做完東西 當然要吃東西，唉 忘記關掉抽氣扇，說再見了 去吃東西了，流口水了。</p></a>
+				<a href="#00:42:27.32" id="00:42:27.32" class="lt" onclick="jumptoTime(2547, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——沙嗲牛柳粉絲鍋，可以使用肥牛、滑牛代替，惹味非常，可以單吃也可以是送飯神器！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'qEfBVgtl0pM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——沙嗲牛柳粉絲鍋，可以使用肥牛、滑牛代替，惹味非常，可以單吃也可以是送飯神器！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好呀!</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>今日我同大家分享菜式之前，煮食之前，我想聲明少少嘢。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>真係唔好意思，我已經缺勤咗幾日，多謝大家關心先啦!</p></a>
+				<a href="#00:00:28.68" id="00:00:28.68" class="lt" onclick="jumptoTime(28, this.id)"><p>主要原因是我實在太累，因為我老婆的病情比較反覆，我花比較多時間照顧她，導致我不夠睡，我女兒回來時問我，老爸你的眼睛比熊貓還要厲害，我女兒買了護眼罩給我，然後她說你人堂發黑，還是不要工作，不要煮飯，我們自己處理吧，累到那天本來兒子的生日飯我準備拍四條片跟大家分享，但我越拍越迷路，越做越迷路，很累，拍衰了。</p></a>
+				<a href="#00:01:24.68" id="00:01:24.68" class="lt" onclick="jumptoTime(84, this.id)"><p>我跟兒子說，老爸可不可以下一個菜不煮，問你朋友夠不夠飽，如果不夠飽，我炒幾個粉麵出來就算了，做菜式跟做粉麵是兩回事，做粉麵很簡單，菜式就複雜一點，結果那天的生日飯吃了三份一個菜，有四個菜是正常的，兩個菜是不正常的，我只是炒粉麵出來，不好意思，我知道大家看愛我，我就有鋪癮，也多謝大家支持，其實在我過去半年，我已經拍下150條片，超過150道菜式，在網上分享。</p></a>
+				<a href="#00:02:18.68" id="00:02:18.68" class="lt" onclick="jumptoTime(138, this.id)"><p>所以大家如果想看我的片，可以看我之前的菜式，150道菜式，足夠大家半年天天都可以不同款式，應該可以滿足到大家，我將連接放在這條片的說明部分，如果大家看不到我最近的片，先看我的舊片，我知道有很多朋友都是這兩三個月才看我的，其實我之前已經拍下很多片，大家先看看，看有沒有靈感，第二件事，我想說有些人真的很沒有同理心。</p></a>
+				<a href="#00:03:2.68" id="00:03:2.68" class="lt" onclick="jumptoTime(182, this.id)"><p>我本人已經說過很多次，我拍片分享煮食不單只是拍片分享煮食這麼簡單，也是我自我治療，自我修復的其中一部分，所以我為什麼這麼多東西說，因為作為一個長期病患者的家人，甚至是唯一的照顧者的身份的時候，其實是很大壓力的，而我之所以拍片和大家分享煮食的心得，其實其中一個目的，除了因為我朋友要求，例如月陽的朋友要求，你拍些片給我們看看。</p></a>
+				<a href="#00:03:44.47" id="00:03:44.47" class="lt" onclick="jumptoTime(224, this.id)"><p>讓我們聽聽你的聲音，另外學學煮食，這是其中一個目的，另外一個目的就是，我希望透過拍片，作為一種精神情緒的轉移，一個轉化，這種叫做情緒轉化或者情緒轉移，其實是精神病的轉移，醫學裏面的其中一環，當一個人太大壓力的時候，就有所謂的轉移大法，會令到你不用在原來的困境裏面繼續發愁，繼續去加大心理壓力。</p></a>
+				<a href="#00:04:24.03" id="00:04:24.03" class="lt" onclick="jumptoTime(264, this.id)"><p>令到自己最後逼到走上絕路，所以就需要有一個所謂的轉移大法，而拍片我跟大家聊天，跟大家一路說其實就是一種轉移大法，可以減輕我作為一個病人照顧者的壓力，我又真的很不明白，那些人其實我很想說粗口的 說真的說到這裏，我不是很明白，喂 我這條片的特色就是這樣的，你又做什麼說很噁心 又說聾又說瘡，煮食就煮食。</p></a>
+				<a href="#00:04:59.35" id="00:04:59.35" class="lt" onclick="jumptoTime(299, this.id)"><p>我本身拍片其實我本來的目的，就不只是說煮食的，我有很多方面的，譬如說拍照，譬如說一些花花草草那些，雀雀鳥鳥那些，這些題材我都會說，只不過現在因為我老婆的關係，我走不開，所以我就沒有去拍那些片，而且大家有沒有發覺，我這個頻道是完全用我自己的名字的，我沒有改那些什麼什麼煮食的名目的，為什麼呢。</p></a>
+				<a href="#00:05:35.31" id="00:05:35.31" class="lt" onclick="jumptoTime(335, this.id)"><p>因為我想，這個是作為我自己的一個精神治療的主體，所以我連名字我都不想改，就是這個原因，我希望有朋友看到我這條片的話，我麻煩大家，你可以非議我怎樣煮食，但我麻煩你們不要在病人傷口上殺驗，你不知道我發生什麼事的時候，我麻煩你，你不喜歡看你走就行了，麻煩你閉嘴，積積口德，好不好，那就廢話說完。</p></a>
+				<a href="#00:06:14.43" id="00:06:14.43" class="lt" onclick="jumptoTime(374, this.id)"><p>語氣有一點凝重，不好意思，煮食應該開心的，那我先說，我兒子的生日飯煮到一半就煮不下去了，因為太累了，其實大家不用擔心我老婆，今天我和她換藥的時候，洗傷口的時候，她其實很得七七八八，只要她不出意外，她守下規矩，她不要任性，其實幾天之後就可以濕水洗澡了，所以大家不用擔心，我也趁著這兩三天，罷工的日子。</p></a>
+				<a href="#00:06:53.27" id="00:06:53.27" class="lt" onclick="jumptoTime(413, this.id)"><p>其實我睡了很多，不過睡完之後，還是有一點痛，那種痛是事後的痛，過兩天就沒事了，大家不用擔心，今天我想和大家分享一道什麼菜式呢，就是一道我兒子的生日飯，我還沒拍完，但多了材料出來的，那是什麼呢，就是沙嗲牛柳粒粉絲，本來，我兒子的朋友點菜就是沙嗲肥牛粉絲煲，但因為那天煮得不太好，也拍得不好。</p></a>
+				<a href="#00:07:29.55" id="00:07:29.55" class="lt" onclick="jumptoTime(449, this.id)"><p>所以整條片我剛剛已經刪了，今天肥牛我就不會特意買了，但我做了剩下的牛柳粒，所以我就把它轉化成牛柳粒粉絲煲，沙嗲牛柳粒粉絲，OK 行不行，首先介紹一下材料，不好意思，今天麻煩大家，有些朋友看到這裡覺得我多廢話的，麻煩你立即離開，我不稀罕你們的，OK，不要在這裡亂說話，你要留言，我告訴你。</p></a>
+				<a href="#00:08:10.25" id="00:08:10.25" class="lt" onclick="jumptoTime(490, this.id)"><p>你不但傷不了我，還可以幫我每一個留言多找幾百個曝光率，即是幫我找觀眾，我多謝你都來不及了，你不喜歡看就走吧，好了，介紹一下，這個牛柳粒，我已經拌好了，本來是兒子生日的其中一道菜，吃剩了，我用牛柳粒，可以嗎，然後，接下來就是重點，沙嗲牛肉，沙嗲是用什麼來做的，首先原材料是沙茶醬，大家應該有聽過。</p></a>
+				<a href="#00:08:51.01" id="00:08:51.01" class="lt" onclick="jumptoTime(531, this.id)"><p>沙茶醬，但沙茶醬不是沙嗲，是沙嗲的父親，沙嗲的父親，沙嗲是由沙茶醬開出來的，然後有什麼材料呢，有洋蔥切粒，我這裡有一隻，但其實用半隻就夠了，先頭的份量，少許蒜蓉，用來起鍋的，然後，很多餐廳，就漏了這個，這是什麼，蝦米，沙嗲有蝦米在裡面，是惹味很多的，不是說沒有蝦米就不好吃，不過有了蝦米之後，是另一種層次。</p></a>
+				<a href="#00:09:40.37" id="00:09:40.37" class="lt" onclick="jumptoTime(580, this.id)"><p>無論口感，無論是味道，除了這些之外，沙嗲一定要有什麼，這是最好吃的沙嗲醬，這是花生醬，我這次買的花生醬是還沒開的，花生醬是怎樣才算是好的花生醬呢，開沙嗲的花生醬呢，就是要用粗粒的，不要用滑的，不要用幼粒的，要用粗粒的花生醬，這樣開沙嗲出來是好吃很多的，好了，然後除了花生醬之外，其實真正導致沙嗲出彩的是甚麼呢。</p></a>
+				<a href="#00:10:24.18" id="00:10:24.18" class="lt" onclick="jumptoTime(624, this.id)"><p>炸花生碎，我已經把它弄碎了，這些花生是從哪裏來的呢，如果有看過我的觀眾，應該知道我在樓下的豆腐店買的，那些涼油店買的，炸好一包包的花生，我用牛油紙包好之後，就用鍋子啪啪啪啪啪，打碎了就變成這個花生碎了，基本上材料就是這樣，哎呀，當然漏了一樣最重要的東西，牛肉粉沙嗲牛肉粉絲之所以好吃，當然不能錯過這個粉絲。</p></a>
+				<a href="#00:11:5.18" id="00:11:5.18" class="lt" onclick="jumptoTime(665, this.id)"><p>這個粉絲就這樣用暖水浸開就可以了，浸開了就立刻撈起，不要浸得太過軟，否則煮出來就會變糊，材料介紹完畢，現在開爐，開爐，開爐第一件事是燒鑊，這個爐真是氣死我了，開爐，燒鑊，燒到它起煙，一如以往，等我一會，拿一隻好看一點的鍋子來裝，現在不是冬天，所以我就不弄一個小鍋子去裝，我就隨便拿一隻玻璃鍋就搞定了，OK。</p></a>
+				<a href="#00:12:5.14" id="00:12:5.14" class="lt" onclick="jumptoTime(725, this.id)"><p>好了，燒鑊啦，第一件事做什麼呢?</p></a>
+				<a href="#00:12:11.14" id="00:12:11.14" class="lt" onclick="jumptoTime(731, this.id)"><p>如果是肥牛粉絲煲的話，肥牛就不用處理，你炒好料之後，直接放肥牛下去煮就可以了，但是因為我這個牛柳粒是醃製好的，至於牛柳粒是怎樣醃製的呢?</p></a>
+				<a href="#00:12:28.14" id="00:12:28.14" class="lt" onclick="jumptoTime(748, this.id)"><p>麻煩大家，我稍後都會在說明那裡放連接，大家看看我怎樣醃製牛肉，可以又滑又爽，好了，現在開好鑊，現在看到煙了，放油，第一件事要先和牛肉走油，這個就一摔過了，由頭演變到尾，我不會剪接，也不會剪接，大家以後做這個沙嗲牛肉粉絲煲就簡單得多了，好了，現在燒好鑊了，第一件事就是要和牛肉走油，大家還記不記得和牛肉走油有什麼要注意的地方?</p></a>
+				<a href="#00:13:24.14" id="00:13:24.14" class="lt" onclick="jumptoTime(804, this.id)"><p>大家還記不記得?給大家三秒，1，2，3，OK，和牛肉走油最重要的是什麼?</p></a>
+				<a href="#00:13:35.14" id="00:13:35.14" class="lt" onclick="jumptoTime(815, this.id)"><p>不要手多，要給點耐性，OK，煎牛肉和牛肉走油是一樣的，現在這個時候，我開始和它攪拌均勻，因為我放的油不是很多，不要完全浸過牛肉，因為牛柳粒比較高，所以我需要轉一轉鍋，讓油可以碰到所有牛肉為止，而這個走油的過程，要它碰到所有油的目的，就是要讓它產生這個梅納反應，梅納反應是甚麼呢?</p></a>
+				<a href="#00:14:27.11" id="00:14:27.11" class="lt" onclick="jumptoTime(867, this.id)"><p>就是可以令到它表面焦香，但內部是嫩滑的一個科學現象，所以就叫做梅納反應，好，稍為等它煎一煎先啦，可能呢，呢個時間呢就講緊嘅係超過30秒嘅，咁就視乎呢你感覺到嗰隻鑊到底個溫度去到邊，我而家攞隻耳聽呢，呢隻鑊嘅溫度放咗油落去之後呢降溫降得太快啦，所以我想佢燒一陣先，所以我就唔郁佢，ok。</p></a>
+				<a href="#00:15:8.36" id="00:15:8.36" class="lt" onclick="jumptoTime(908, this.id)"><p>好啦，呢個時候我哋可以啦，得啦，咁我啦，大家睇下，如果呢，我唔郁嗰啲牛肉反而呢，你睇下佢自動離鑊㗎，睇咩到呀，郁㗎，識郁㗎，ok，咁啦而家呢就全部反轉嗰啲牛肉啦，嘩，煎得好靚呀，有嗰種即係，焦香呀，睇顏色都睇到，睇個表面嗰啲焦都睇到，我哋就要咁樣蛋，因為呢啲係牛柳嚟㗎嘛，牛柳係比牛肉仲要厚身㗎，所以大家唔使擔心話，嘩，會唔會過火㗎，呢條梗係唔會啦，ok。</p></a>
+				<a href="#00:15:56.73" id="00:15:56.73" class="lt" onclick="jumptoTime(956, this.id)"><p>好，讓大家看看它的質感，我們要煎牛肉煎成這樣，那在家裡，另一邊就不用理它了，另一邊就隨它，馬上可以拿起那些甚麼，先拿起那些牛肉，牛肉大約六成熟，不用理會，待會放入沙嗲汁煮一會便可以全熟，因為這段時間還有溫度，至熱，臨落鑊前已經八、九成熟，所以待會放入鑊後很快便可以，因為現在有汁走出來，所以油會白白的。</p></a>
+				<a href="#00:17:5.55" id="00:17:5.55" class="lt" onclick="jumptoTime(1025, this.id)"><p>這時拿起鑊，讓水氣儘快蒸發，油便不會彈來彈去，聽到聲音嗎? 先前聽到聲音和現在聽到聲音，先前是聲音，現在是最白的，證明水分已經去得差不多了，這時再加少許油，然後先放蝦尾，稍為爆香蝦尾後，將半個洋蔥、洋蔥粒和蒜蓉一起放進去，多了的洋蔥留待下次用，這次不用，這時慢慢炒，炒至乾身一點。</p></a>
+				<a href="#00:18:6.55" id="00:18:6.55" class="lt" onclick="jumptoTime(1086, this.id)"><p>老師傅教的，如果想醬料好，待會打的是沙爹醬，想醬料好味，就將佐料炒得越香越乾身，待會打出來的醬越好味，加上現在有蝦米，已經很香，我現在已經想吃，可否不煮?很累啊!</p></a>
+				<a href="#00:18:40.86" id="00:18:40.86" class="lt" onclick="jumptoTime(1120, this.id)"><p>但我這次不是因為大家才拍片的，是因為我一定要吃完牛肉，因為牛肉已經醃了三天，第四天開始發霉，因為有醃料再加上梳打粉，越放得久，肉的吸水化學作用就越厲害，反而肉就不會變滑，變成霉口，這些就是醃料的小技巧，不要以為放得久就沒事，醃好了，不是的，如果放在冰鮮格，其實第四、五天都不吃的話，就有機會變的。</p></a>
+				<a href="#00:19:24.86" id="00:19:24.86" class="lt" onclick="jumptoTime(1164, this.id)"><p>其中一種就會變霉，如果你不想它變，有什麼辦法?</p></a>
+				<a href="#00:19:28.86" id="00:19:28.86" class="lt" onclick="jumptoTime(1168, this.id)"><p>你明知道兩、三天都吃不完，你就將其中一部分放在冰格，現在夠香了，然後我把火調小，調到最小的燈心火，為什麼?因為我要放料炒醬了，等等，放料炒醬，我放一大茶匙，這裡其實是一湯匙，當作一湯匙，兩湯匙的沙茶醬，加少許油，放完沙茶醬之後，然後放花生醬，記住這花生醬要用粗粒，有很多種牌子的，不過這款是香港人吃慣的。</p></a>
+				<a href="#00:20:29.86" id="00:20:29.86" class="lt" onclick="jumptoTime(1229, this.id)"><p>大家也知道，以前賣廣告賣得很厲害，放多少呢?</p></a>
+				<a href="#00:20:34.86" id="00:20:34.86" class="lt" onclick="jumptoTime(1234, this.id)"><p>放兩茶匙花生醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:43.48" id="00:20:43.48" class="lt" onclick="jumptoTime(1243, this.id)"><p>這個時候就要視乎大家了，如果大家想食濃味一點的，可以再加多一湯匙的，去咗邊呀?我擺咗邊，再加多一湯匙的沙茶醬，OK，再加多一湯匙的，我放咗邊呀，再加多一湯匙的沙茶醬，如果大家想食濃味一點，本來花生醬和沙茶醬是一比一，一湯匙對一茶匙，現在我變成兩茶匙的花生醬，對三湯匙的沙茶醬，然後呢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:39.48" id="00:21:39.48" class="lt" onclick="jumptoTime(1299, this.id)"><p>如果想食辣的，最簡單，加什麼呀?</p></a>
+				<a href="#00:21:45.48" id="00:21:45.48" class="lt" onclick="jumptoTime(1305, this.id)"><p>加蝦米辣椒醬，這次一定要用蝦米辣椒醬，知不知道為什麼?</p></a>
+				<a href="#00:21:52.48" id="00:21:52.48" class="lt" onclick="jumptoTime(1312, this.id)"><p>因為蝦米和沙嗲是很合的，大家記不記得我先前放什麼爆鑊的?</p></a>
+				<a href="#00:22:0.48" id="00:22:0.48" class="lt" onclick="jumptoTime(1320, this.id)"><p>放蝦米爆鑊的，正宗，不要說正宗，正式的沙嗲醬是有蝦米在裏面的，我們香港食的沙嗲牛肉，他們就不會放蝦米，其實就沒有說正不正宗，也沒有說地道不地道，各處有各處鄉村各處，而且大家都知，沙嗲這家店不只是東南亞有的，本身潮州人都經常食的，經常做的，譬如沙嗲牛肉炒河這一類，但是沙茶醬其實英文名都叫做Satay，所以就不需要太過執著。</p></a>
+				<a href="#00:22:49.48" id="00:22:49.48" class="lt" onclick="jumptoTime(1369, this.id)"><p>只是到處不同的原材料有不同的叫法，現在大家看到嗎?</p></a>
+				<a href="#00:22:57.48" id="00:22:57.48" class="lt" onclick="jumptoTime(1377, this.id)"><p>已經起泡了，這個時候那些未乾身的洋蔥是會出水的，那就隨它吧，所以你不用怕會炒焦，慢慢炒到它變成這樣，炒到金黃色為止，現在開始有很香的沙嗲味道出來了，記得這個時候，現在開平均小火，千萬不要用大火，OK，好了，炒到差不多了，然後我們就開始，加水煮了，這個過程，什麼都不用做，水100cc夠了，不用多。</p></a>
+				<a href="#00:23:54.75" id="00:23:54.75" class="lt" onclick="jumptoTime(1434, this.id)"><p>OK，不要想著有粉絲，怎樣?</p></a>
+				<a href="#00:23:58.19" id="00:23:58.19" class="lt" onclick="jumptoTime(1438, this.id)"><p>不需要，等一下大家看看我怎樣，我炒到最後要很乾身的，這個時候我就調味，放大概半匙鹽，然後兩匙糖，沙嗲偏甜一點是比較好吃的，現在我開大火，然後雞粉半茶匙，然後我們就放老抽兩茶匙，然後調味，放什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:43.31" id="00:24:43.31" class="lt" onclick="jumptoTime(1483, this.id)"><p>放魚露，OK，這些香港茶餐廳是不會做的，這個不是說他做錯，是大家的偏向不同，大家都知道的，沙茶醬配魚露是很好吃的，如果是茶餐廳的話，他們就會放生抽，但是我建議大家，如果要煮沙嗲的話就放魚露，魚露是香很多的，都一樣，魚露其實不只是泰國有的，不只是東南亞的，其實潮州人都有魚露生產的，OK。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:18.11" id="00:25:18.11" class="lt" onclick="jumptoTime(1518, this.id)"><p>好了，然後我們就放魚露，然後我們就放魚露</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:25:24.03" id="00:25:24.03" class="lt" onclick="jumptoTime(1524, this.id)"><p>然後我們就放魚露，好了，現在這樣就好了，然後我們就不理它了，繼續煮，先上鑊蓋，鑊蓋</p></a>
+				<a href="#00:25:41.03" id="00:25:41.03" class="lt" onclick="jumptoTime(1541, this.id)"><p>煮多一會兒，放回食材</p></a>
+				<a href="#00:25:44.44" id="00:25:44.44" class="lt" onclick="jumptoTime(1544, this.id)"><p>煮至大滾，大滚了，这个时候我让大家猜猜，到底是放牛肉还是粉丝，1，2，3 大家有答案对不对，看着，当然是放粉丝啦，粉丝给它吸味，大家留心粉絲的變化，因為我不希望它太濕，所以大家不要想著粉絲很吸水，所以大家就去加很多水，不用加很多，只要加到它夠煮開的汁就可以了，通常都是150-100cc左右，隨便，為甚麼要這樣呢，因為我先頭的粉絲是用水浸開的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:19.64" id="00:27:19.64" class="lt" onclick="jumptoTime(1639, this.id)"><p>所以它本身已經很快熟，而且不吸水，再吸水的話就很肥，明白嗎，就變成一坨東西，為了要讓它相對地乾身一點，所以我開這個沙爹汁，嘩，好香，我開這個沙爹汁的時候，基本上我就是可以隨便加點水，開得到就行，不要太多水，50-100cc左右，好了，嘩，這隻色正啊，然後落牛柳，其實我呢次都比多咗水呀。</p></a>
+				<a href="#00:28:28.40" id="00:28:28.40" class="lt" onclick="jumptoTime(1708, this.id)"><p>話說話，但唔緊要嘅唔影響唔太影響佢嗰個食味呀，即係我本人呢就鍾意乾啲，咁有啲呢就鍾意即係有汁嘅，即係好少少嘅唔緊要嘅，呢啲係各人嘅喜好ok，嗱好啦呢個時候呢我哋就，搞勻佢啦等嗰啲牛肉呢就煮一煮佢啦吸一吸味啦，咁然之後呢，就等嗰啲粉絲呢就吸完未啦牛肉吸完未啦，大家睇下，最好呢就收到佢乾曬水呀。</p></a>
+				<a href="#00:29:16.69" id="00:29:16.69" class="lt" onclick="jumptoTime(1756, this.id)"><p>咁而家我係咁撩佢我就主要就係等佢吸水吸得多啲，喺呢個部分因為呢我係好，熄得火喇，咁呀大家，睇清楚喇喎，今日呢度送嚟講呢其實我嘅牛柳呢係偏多少少嘅，主要原因就係因為我要將所有嘅廚餘用曬佢為止ok，咁所以呢就用多少少下，呢個時候呢，我就將呢個，基本上呢嗰個，粉絲呢吸嗰個味呢，即係吸嗰啲汁呢吸到差唔多喇。</p></a>
+				<a href="#00:29:56.63" id="00:29:56.63" class="lt" onclick="jumptoTime(1796, this.id)"><p>係咪個底都冇乜嘢㗎喇ok，唔好意思呀，原來超時，所以聽又斷咗，咁咪真係唔想剪接都唔得喇喇咁咪將啲花生碎呢最後尾啦留咗個兩樣嘢呀，將啲花生碎就擺上去嘩，見到都開胃呀係咪呢，跟住然之後呢再審啲蔥花上面，呢個咁嘅牛柳粒，呢個係，沙爹牛柳粒粉絲咁就完成啦，咁我唔敢講我正唔正宗但係呢，我學返嚟嘅開沙爹呢就係要落蝦米。</p></a>
+				<a href="#00:30:38.35" id="00:30:38.35" class="lt" onclick="jumptoTime(1838, this.id)"><p>同埋呢，就係要落呢個係，落呢個蝦米同埋落呢個花生碎嘅而且仲要係，炒過嘅花生碎，所以點解我先來用炸花生碎就咁解啦，咁樣嘅情況之下呢呢一度咁嘅，沙爹牛肉，粉絲呢，就非常非常之惹味㗎喇ok，我而家總結一下啦，第一，其實呢個沙爹牛肉呢，就可以係用肥牛嘅我本來個菜式呢就係用肥牛嘅，因為嗰日。</p></a>
+				<a href="#00:31:14.95" id="00:31:14.95" class="lt" onclick="jumptoTime(1874, this.id)"><p>阿仔嘅生日飯拍得唔好，咁我今日我就利用，淨低嘅牛柳粒嚟做，咁你牛柳粒又得牛肉都得ok得唔得，咁我冇所謂嘅，但係如果你係用呢個肥牛嘅話呢就唔需要有煎嗰個過程，你直接呢就skip咗個先頭呢就係嗰個牛柳粒走油嗰個過程ok得唔得，然之後呢，就係，喺打好咗個沙爹醬之後呢，然之後直接落肥牛落去。</p></a>
+				<a href="#00:31:43.11" id="00:31:43.11" class="lt" onclick="jumptoTime(1903, this.id)"><p>去煮就得㗎喇，ok得唔得，好啦，咁呀第二樣嘢呢就係，記住呢就係開呢個沙爹醬呢有乜嘢呀，開沙爹醬第一個有蝦米啦第二個有洋蔥啦，第三個要有花生啦花生醬啦，咁花生醬呢，我哋呢就用粗粒嘅花生醬得唔得就唔好用幼粒㗎，唔好用幼滑嘅ok得唔得咁樣呢佢可以令到嗰個口感同味道會更加豐富，好啦。</p></a>
+				<a href="#00:32:13.31" id="00:32:13.31" class="lt" onclick="jumptoTime(1933, this.id)"><p>最後尾呢我哋要加生嘅花生碎落去，ok咁呢呢個沙爹就一定係good fit㗎喇絕對係中東南亞嘅風味嚟嘅，好，咁樣煮嘅過程當中呢大家唔好以為喎，係落，咩先呀落呢個粉絲先，點解粉絲吸水需要嘅時間長，牛肉本身演出扮成熟或者係你放肥牛嘅時候肥牛好快熟嘅咁所以呢，先放粉絲，然之後先再放呢個牛肉或者肥牛落去得唔得ok。</p></a>
+				<a href="#00:32:45.31" id="00:32:45.31" class="lt" onclick="jumptoTime(1965, this.id)"><p>呢個要注意呀落先落後，個分別係邊呀就會變成呢就係粉絲吸唔夠水你調轉咗個程序嘅話粉絲係吸唔夠水，牛肉就老嗰頭，所以先頭我就特登要提大家，要大家估，等大家記住係落粉絲先，然之後先至落呢個牛肉，得唔得ok，唔講咁多啦而家聽我把聲冇乜事係咪，咁呀，再去同大家講一次啦如果大家呢見到我冇發新片嘅話呢麻煩大家就去，睇咗啲舊片先啦有150個菜式。</p></a>
+				<a href="#00:33:20.37" id="00:33:20.37" class="lt" onclick="jumptoTime(2000, this.id)"><p>足夠大家喺半年日日都同食唔同款㗎啦如果你跟住跟足去做嘅話，ok得唔得，咁呀，見估，我唔使休息咁耐掛我而家都拍咗啲條片呀我應該呢幾日都會繼續拍片嘅，爭大咖好多嘅片有啲應承咗大家係未拍嘅咁我亦都講啦因為我老婆，病情反覆所以我先至係，罷工，不過呢，個好消息就係我而家老婆呢，肯聽我話呢。</p></a>
+				<a href="#00:33:51.09" id="00:33:51.09" class="lt" onclick="jumptoTime(2031, this.id)"><p>應該過兩日呢就可以沖涼㗎喇，可以掂水㗎喇咁所以佢一掂水精神返呢，我又可以，全力以赴下同大家分享我各種各樣嘅菜式好嗎。</p></a>
+				<a href="#00:34:1.33" id="00:34:1.33" class="lt" onclick="jumptoTime(2041, this.id)"><p>好啦咁多謝大家收看啦拜拜。</p></a>
+</div>
+	</body>
+</html>

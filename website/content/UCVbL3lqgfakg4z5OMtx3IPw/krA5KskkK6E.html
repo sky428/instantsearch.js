@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜薑汁燒肉｜簡單易做和風美食｜送飯神器｜土炮味醂汁</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'krA5KskkK6E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜薑汁燒肉｜簡單易做和風美食｜送飯神器｜土炮味醂汁</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好，今日同大家分享呢啲咩菜式呢?</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>呢個簡單快捷而且可大量長期儲存，想食嘅時候拿出嚟整嘅菜式，亦都係非常之簡單，薑汁燒肉，薑汁燒肉好簡單，主要材料，有火鍋的豬腩片，其實它也不便宜，因為它是火鍋的級數，即是它可以一拿出來一煮就吃得了，就不用洗的，所以就貴一點點，給大家看看，這個美國黑豚五花腩，看到嗎，這裡大概加起來，兩包。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>加起來大概接近一磅，很少的，都已經是六十八塊，然後還有什麼呢，一隻洋蔥，然後薑，其實這個薑汁燒肉，你說它是中華料理也可以，你說是日式料理也可以，在我們中國人來說，這個薑汁燒肉，就說它是日本的菜，但是在日本人的說法，這個是中國人的菜，因為它用了一個日本人常用的醬汁，但是中國人是不會用的，那就是叫做味醂。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>但是味醂呢，大家聽到，那我不是要買一瓶味醂回來，其實不是的，為什麼呢，味醂呢，你只要知道成份，其實是可以自己混出來的，味醂其實就三樣東西，薑、米酒和醬油，三樣東西混在一起，就會變成味醂汁，我這個菜的調味也是非常簡單，就是直接把味醂汁放下去，拌和炒，就完事了，不需要放鹽和味各樣的，調味很純粹的。</p></a>
+				<a href="#00:02:21.00" id="00:02:21.00" class="lt" onclick="jumptoTime(141, this.id)"><p>那現在首先要製作這個土炮味林汁，首先第一件事要做什麼呢，我們就要，這是刨薑汁，薑已經去皮了，然後可以磨成蓉，這些蓉本身有些汁在裡面，這些就是味醂汁的原材料，少許就可以了，不用多，OK，大家看到大概一粒蒜頭的份量，然後我們就要洋蔥，洋蔥切碎，如果是小的洋葱的话，小的洋葱的话，这个洋葱放得久了，这个切掉，不要的部分，坏死的部分，如果这个洋葱是小的话，大家可以用一只，如果是洋葱大只的话，半只都够的。</p></a>
+				<a href="#00:04:2.31" id="00:04:2.31" class="lt" onclick="jumptoTime(242, this.id)"><p>大家不要介意小的地方浅杂，不过我相信很多香港人都是这样，所以，放到周围都是这样，一只小洋葱，如果大家想吃多一点的话，可以放多一点，这个腊肉不是不处理的，其实我们需要处理，首先，封好之后，我们要放少许油，拌一拌它，为什么要这样做呢?是等炒的时候，快一点，方便分开，煎得好一点，因为本身我们这个菜，其实它很少油的，全部都是靠它本身肉类的油去挥发。</p></a>
+				<a href="#00:05:7.31" id="00:05:7.31" class="lt" onclick="jumptoTime(307, this.id)"><p>这个时候，我们就放少许油，大概一茶匙就够了，然后，就拌一拌它，这个肉其实已经拿出来差不多三个小时了，它还没有完全解冻，我们就把它撕开，等它一块一块，然后沾染我之后放进去的油，这样我们煮的时候就不会黏在一起了，其实也方便它快速熟，因为这个菜很快，你的理解就是除了我现在在说废话和前期需要准备的功夫之外，其实和火锅，即是火锅煲的时间是差不多的。</p></a>
+				<a href="#00:06:2.81" id="00:06:2.81" class="lt" onclick="jumptoTime(362, this.id)"><p>而且还可以省下你蘸酱油的时间，因为我会把酱油加进去，好，这样就可以了，然后这个也可以放在一边，我们现在再回来处理这个酱汁，我们主要是用土炮味淋，很简单的，除了姜汁之外，我们就加生抽进去，1，2，3，4，5，6，7，8，这里大概是4茶匙的生抽，为什么要放这么多生抽进去呢?</p></a>
+				<a href="#00:06:37.53" id="00:06:37.53" class="lt" onclick="jumptoTime(397, this.id)"><p>因为我等一下什么味道都不调的，咸味全靠它了，然后呢，放两匙糖进去，然后呢，我这次就放半点，因为刚好我已经买了这个清酒回来，如果没有清酒的话，可以用什么代替呢?</p></a>
+				<a href="#00:06:59.37" id="00:06:59.37" class="lt" onclick="jumptoTime(419, this.id)"><p>这里大概是2茶匙左右的清酒，如果没有清酒的话，其实大家可以用广东米酒代替的，当然味道会差一点点，但都是可以这样，基本上就是这样调味的了，如果大家想香口一点的话，就可以加几滴麻油进去，OK，这个味醂汁就开好了，大家记住，这个份量就是4茶匙的，这里4至5茶匙的生抽，然后就是2茶匙的糖。</p></a>
+				<a href="#00:07:38.13" id="00:07:38.13" class="lt" onclick="jumptoTime(458, this.id)"><p>然后就是2茶匙的清酒或者2茶匙的米酒，加一点点姜，加一点点麻油，这个酱汁就开好了，简单吗?当然简单了，快捷开饭，而且那个猪腩肉可以放在冰箱里放很久，卖回来就立刻放进冰箱里，放进冰箱，放很久，半年都没问题，OK?</p></a>
+				<a href="#00:07:59.49" id="00:07:59.49" class="lt" onclick="jumptoTime(479, this.id)"><p>等一会儿我要煮的时候，开机我才再和大家分享，等一会儿见，是不是很简单?</p></a>
+				<a href="#00:08:8.21" id="00:08:8.21" class="lt" onclick="jumptoTime(488, this.id)"><p>好了，大家，我现在准备煮这个姜汁烧肉，我现在正在烧锅，大家看到我刚才炸完油，Marine machine，Telesторов，mic，lie，신，支eto，Autob לפ，拜拜，隻鑊呢就係有油嘅咁所以呢，就我唔抹啦亦都唔洗啦咁但係呢都一樣要燒鑊嘅ok，先頭呢我咪介紹咗呢個汁嘅，你都好咗。</p></a>
+				<a href="#00:08:39.71" id="00:08:39.71" class="lt" onclick="jumptoTime(519, this.id)"><p>你想佢快啲收水呢就放少少嘅生粉落去呀，咁呢突然間呢嗰個出嚟嘅效果就非常之靚㗎啦大概一茶匙到啦生粉，而家呢我就燒緊喎，等一等先呀記住呀無論我哋任何嘅時候都需要燒鑊，都要背個口訣嘅嗰個口訣係乜嘢呀，大火燒鑊建議落油再見煙落料炒ok喇而家呢，有煙呀咁我落少少油，少少得㗎啦咁呀似乎個重量啦咁而家呢大概係落一茶匙到啦ok。</p></a>
+				<a href="#00:09:21.93" id="00:09:21.93" class="lt" onclick="jumptoTime(561, this.id)"><p>跟住然之後呢，跟住然之後呢我哋就將呢個洋蔥先炒咗個洋蔥先，炒香個洋蔥先呀，咁呢個時候呢其實啲洋蔥呢就已經吸曬嗰啲油呀因為好少油㗎咋，等陣間呢主要嘅油份呢邊度嚟呢梗係喺嗰啲，走出嚟啦好啦炒完洋蔥之後呢我哋就開始落呢個，落呢個係，五花腩呀，咁咪稍為，好香呀咁呢我哋稍為呢就先煎一煎佢先呀，咁我一落鑊強調好多次嘅好多時候我哋煎嘢呢。</p></a>
+				<a href="#00:10:11.85" id="00:10:11.85" class="lt" onclick="jumptoTime(611, this.id)"><p>係唔需要太過即係太過心急嘅我由得佢，由得佢，咁呢個時候呢你跟住啲洋蔥過熟呢，咁你就可以下，即係擺咗上面啦跟住稍為呢有得佢先來佢而家呢，煎到咁上下開始出返油啦先頭冇曬油㗎而家有油啦點解呀，始終攬片嚟講呢，係，大油份嘅奶佢一出油呢我哋就可以，好容易咁翻轉呀ok，我們再煎多一會兒，不要心急。</p></a>
+				<a href="#00:11:7.00" id="00:11:7.00" class="lt" onclick="jumptoTime(667, this.id)"><p>因為豬肉就不同牛肉，豬肉是一定要全熟的，大家說對不對，讓豬肉的油自己逼出來，其實這個菜很簡單，全程不需要上鑊蓋 很簡單，這個時候差不多九成熟，這個時候將醬汁全放進去，調味就是這麼簡單，現在就好像這個味林的味道了，因為我放的是清酒，我上一次是放的是燒酒，那這個燒酒呢，即是廣東米酒呢，它的酒氣就強烈一點。</p></a>
+				<a href="#00:12:17.32" id="00:12:17.32" class="lt" onclick="jumptoTime(737, this.id)"><p>清酒就清香而沒有那麼強烈的酒氣，那這個就是日本米酒和中國米酒的分別了，好了 這個時候其實就差不多了，現在等什麼呢，我們繼續煮，煮到它收乾水分和汁，好香呀，好啦，咁咪基本上呢就ok㗎啦咁如果大家呢係想留返少少汁嚟撈飯嘅話呢，OK啦，咁呀可以識得火㗎喇喎，識火喇喎跟住然之後，我哋梗係要乜嘢呀梗係要落返啲芝麻落去啦。</p></a>
+				<a href="#00:13:19.07" id="00:13:19.07" class="lt" onclick="jumptoTime(799, this.id)"><p>我自己私人炒嘅ok，咁呀然之後撈兩撈搞掂，呢個咁嘅薑汁薑汁汁燒肉呀係咪好簡單呀即係大家呢諗到冇得好，今日係打風嘅，大家呢可以預先呢即係知道咗啦咁就可以買定啲，急凍嘅即係火鍋嘅豬腩片返嚟ok啦咁咪而家幾多汁係咪，咁呢啲汁一路返呢一流呀正呀，好，大家等等，好香呀，我擺一擺盤之後呢。</p></a>
+				<a href="#00:14:15.74" id="00:14:15.74" class="lt" onclick="jumptoTime(855, this.id)"><p>跟住我就做總結，呢個薑汁燒肉呢，大家話簡唔簡單呀，又唔使調味，我直接一兜醬汁，跟住之後呢一兜醬汁之後呢，跟住之後就係，即係就咁一鑊熟，煮熟佢咁就食得啦，所以呢即係打風嘅日子，或者係唔想煮飯嘅日子，但係又想食嘢呢，呢個薑汁燒肉我覺得呢，就應該幾適合嘅，同埋年輕人呢係好喜愛嘅，譬如我啲仔女呢。</p></a>
+				<a href="#00:14:51.74" id="00:14:51.74" class="lt" onclick="jumptoTime(891, this.id)"><p>好鍾意食雞嘢家㗎嘛，係咪呀，我呢個咁嘅做法呢，就係類似吉野家嗰啲，係咪好簡單呢，好啦，咁我而家擺完啦，咁整個close up先，呢個餸，有冇食肉呀，大家話有冇食肉呀，咁希望呢，大家可以跟住一齊做，可以有一個滿意嘅效果啦，咁我自己嚟講呢，我係絕對會滿意嘅，咁呀，咁就總結一下，咁就總，其實呢個餸呢就。</p></a>
+				<a href="#00:15:30.74" id="00:15:30.74" class="lt" onclick="jumptoTime(930, this.id)"><p>我一直都係強調好簡單嘅，因為點解唔使醃呀嘛，但係唔使醃當中呢，我哋都需要係乜嘢呀，攞少少油撈佢，點解要攞少少油撈佢呀，因為可以令到佢分離，就唔使煮起身嘅時候，黐埋一嚿，大家睇下我每一條肉，個都好分明嘅，大家話係咪，咁呀，唔需要話，唔需要話我夾硬要分開佢嘅，咁，先頭呢，個啲肉咪好長嘅，咁大家有冇諗過。</p></a>
+				<a href="#00:16:0.74" id="00:16:0.74" class="lt" onclick="jumptoTime(960, this.id)"><p>咦，阿Leo點解你唔切一切佢呀，就算切都唔好切得太短，可能講緊嘅係，一條肉呢，你剪一下就好啦，點解呢，因為如果太過短嘅話呢，就個賣相呢就相對地差啲嘅，好唔好，咁呢就第一啦，咁第二呢就係我哋用油呢，主要個目的呢，就係令到佢呢嗰啲肉身呢就分離，就唔好黐埋一住，我哋煎嘅時候呢佢，就好煎啲。</p></a>
+				<a href="#00:16:24.74" id="00:16:24.74" class="lt" onclick="jumptoTime(984, this.id)"><p>得唔得，好啦跟住完之後呢，大家唔使擔心話我要整呢個日式呢個日式薑汁燒肉呀，咁，我係咪應該要買支味霖返嚟唔使嘅我哋土炮即場，調製都得嘅，係咩嘢呀，醬油清酒薑汁三樣嘢，撈埋一齊就已經係變咗一個味霖㗎啦，當然你話係咪十足十呢咁就家家都有，唔同嘅味道嘅，即係等於係乜嘢乾炒牛河咁樣，有時候都會有。</p></a>
+				<a href="#00:16:56.77" id="00:16:56.77" class="lt" onclick="jumptoTime(1016, this.id)"><p>落多落少都會有啲味道上嘅分別㗎嘛係咪呀，但係大致上個風味係一樣嘅，好啦咁呢就因為，我係完全唔使調味唔會落鹽唔會落其他嘢嘅所以呢，我哋呢就齋落生抽呢就可以落多啲，呢度一磅肉嚟計呢可以落4至6茶匙，4至6茶匙嘅生抽，然之後再加呢兩茶匙嘅糖，咁就調好味㗎啦薑嗰方面多少就等大家啦先頭一粒蒜頭到嘅份量，咁樣如果想佢香口啲咪加少少麻油落去囉。</p></a>
+				<a href="#00:17:32.87" id="00:17:32.87" class="lt" onclick="jumptoTime(1052, this.id)"><p>咁呢，如果大家好似要需要好似我咁樣收到咁乾嘅話呢就，喺個汁嗰度加一，茶匙嘅生粉，咁呢就會非常之，容易收水㗎啦就收到好似我而家咁但我而家都都帶少少汁嘅盡量帶少少汁都係點解呢，濕濕地呢係容易入口好多嘅，炒嗰陣時一落去，先炒呢個洋蔥啦跟住然之後呢，炒到，半熟嘅洋蔥啦我哋就開始放呢個係放呢個，欖片上去啦咁欖片我哋放落嘅時候一樣呀唔好郁佢。</p></a>
+				<a href="#00:18:7.17" id="00:18:7.17" class="lt" onclick="jumptoTime(1087, this.id)"><p>記住呀等佢煎一煎先，大家見到我先頭郁嘅時候呢，係見到佢有油出嚟啦我先郁佢咁樣呢，就可以保持返成條欖片嘅完整嘅如果唔係我哋好容易扯爛嘅，因為點解佢會黐鑊底㗎，ok得唔得，炒到八九成熟呢就攞個醬汁落去，再收返水，咁就完事啦係咪好簡單呀，係呀簡單大家覺得簡單嘅就，去試下啦我100%保證，係吉野家嗰啲味道嚟嘅。</p></a>
+				<a href="#00:18:41.23" id="00:18:41.23" class="lt" onclick="jumptoTime(1121, this.id)"><p>Ok好唔好咁咪唔同大家講咁多啦一個簡單嘅餸亦都唔需要咁長氣呀，希望大家能夠做得畀我更加正啦，多謝大家收看啦拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>廣東話影片｜泰醬甜麵豉燒羅菲魚｜中泰結合出好味道｜微辣酸咸帶出鮮魚味｜開胃好送飯｜簡單易做家常菜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ippJFX8pHrM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>廣東話影片｜泰醬甜麵豉燒羅菲魚｜中泰結合出好味道｜微辣酸咸帶出鮮魚味｜開胃好送飯｜簡單易做家常菜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.11" id="00:00:6.11" class="lt" onclick="jumptoTime(6, this.id)"><p>嘩!這是什麼?</p></a>
+				<a href="#00:00:9.11" id="00:00:9.11" class="lt" onclick="jumptoTime(9, this.id)"><p>咦?</p></a>
+				<a href="#00:00:11.11" id="00:00:11.11" class="lt" onclick="jumptoTime(11, this.id)"><p>煎鳳魚?</p></a>
+				<a href="#00:00:13.11" id="00:00:13.11" class="lt" onclick="jumptoTime(13, this.id)"><p>不是吧?</p></a>
+				<a href="#00:00:15.11" id="00:00:15.11" class="lt" onclick="jumptoTime(15, this.id)"><p>但又好像不像，有些什麼?</p></a>
+				<a href="#00:00:17.11" id="00:00:17.11" class="lt" onclick="jumptoTime(17, this.id)"><p>有些黃豆在裡面，是什麼來的?</p></a>
+				<a href="#00:00:19.11" id="00:00:19.11" class="lt" onclick="jumptoTime(19, this.id)"><p>啊!</p></a>
+				<a href="#00:00:21.11" id="00:00:21.11" class="lt" onclick="jumptoTime(21, this.id)"><p>Fusion菜來的，泰國夾中菜，大家，看一看接下來我怎麼做吧，如果想學的話，記住看完，不要嫌我煩，看看好不好吃，看樣子就知道是完美的煎魚，再加上這個醬汁，非常酸酸甜甜，非常惹味，希望大家喜歡吧，大家晚上好，今天想和大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:56.11" id="00:00:56.11" class="lt" onclick="jumptoTime(56, this.id)"><p>咦?又亂了，是呀，放在一旁，地方小，這裡有兩個菜式的材料，不過現在這條片，我只是介紹和大家介紹其中一樣，今晚玩什麼呢?</p></a>
+				<a href="#00:01:9.11" id="00:01:9.11" class="lt" onclick="jumptoTime(69, this.id)"><p>我玩Fusion，玩什麼Fusion呢?</p></a>
+				<a href="#00:01:13.11" id="00:01:13.11" class="lt" onclick="jumptoTime(73, this.id)"><p>就是我想做一個粵菜，加上泰菜的Fusion，那麼，這條非洲質，大家都見慣見熟，是不是?</p></a>
+				<a href="#00:01:28.11" id="00:01:28.11" class="lt" onclick="jumptoTime(88, this.id)"><p>要不就紅燒，煎鳳，蒸，今天這條非洲質，我都是用紅燒的，不過我用一些醬料的混合，那麼有什麼呢?</p></a>
+				<a href="#00:01:45.11" id="00:01:45.11" class="lt" onclick="jumptoTime(105, this.id)"><p>首先，薑片，蒜頭，一粒紅蔥頭，可以切開它，切開兩半容易煮，然後，很多很多很多的蔥，很厲害的，然後很多很多的芫茜切段，那麼今天我做的Fusion菜是什麼呢?</p></a>
+				<a href="#00:02:12.11" id="00:02:12.11" class="lt" onclick="jumptoTime(132, this.id)"><p>就是甜麵豉泰醬煮羅飛魚，那麼非洲質又叫羅飛魚，那麼，非洲質是怎樣來的呢?</p></a>
+				<a href="#00:02:27.11" id="00:02:27.11" class="lt" onclick="jumptoTime(147, this.id)"><p>其實非洲質，其實它不算是汁魚，只不過是，只不過是來到我們中國之後，因為他像鴿子，所以就叫做非洲鴿，因為他來自非洲，其實大概是上世紀的30年代左右，首先傳了過去台灣，台灣有另外一個名字，用人來起名，但是在我們華人圈，非洲鴿或者叫羅非魚，通常都是叫非洲鴿，各個地方有自己的叫法，今天我想做的菜式。</p></a>
+				<a href="#00:03:17.52" id="00:03:17.52" class="lt" onclick="jumptoTime(197, this.id)"><p>首先有我們香港製粉，不是太貴，甜麵豉，然後有我做的萬用太醬，大家還有沒有剩下的，還是有沒有做過，之前和大家介紹的泰式萬用醬，這個醬有很多香料，所以它也非常適合做海鮮，因為前面我不想浪費大家太多時間，當然第一要處理這條魚，要洗乾淨，所以用我的隨聲大法，其實叫順德隨聲大法，基本上所有海鮮都這樣做。</p></a>
+				<a href="#00:04:5.24" id="00:04:5.24" class="lt" onclick="jumptoTime(245, this.id)"><p>放大量的鹽、胡椒和酒，和魚抹身，抹幾分鐘，抹乾之後放在這裡，五分鐘內就要再清洗，很多人說這是魚，很腥，大家有沒有發覺，非洲鴿的內部是很黑的，其實很多魚的內部都是黑的，盡量洗乾淨，用手指擦乾淨，可以減少腥味，這個腮部也是，事後要用紙巾抹乾，現在這條魚已經很乾，這是煎魚不腥和不黏鍋的第一步，我介紹完畢。</p></a>
+				<a href="#00:04:53.08" id="00:04:53.08" class="lt" onclick="jumptoTime(293, this.id)"><p>然後開火，這個腦勺，1、2、3，每次都要數數字才會著，blas，其實大家會說 這些加在一起是好吃的嗎?</p></a>
+				<a href="#00:05:12.82" id="00:05:12.82" class="lt" onclick="jumptoTime(312, this.id)"><p>我想說一下我做fusion的心得，大家都知道我網羅世界主要的食物菜系的一些基本做法，我也懂的，其實懂了這些基礎之後，大家就可以左調右調 左配右配，今天我用的是甜麵豉醬 加上泰式的萬用醬，其實我不是亂配的，首先大家要玩fusion的時候，首先一件事就是我們用的香料或者醬料，首先你要理解它背後的一些材料的味道。</p></a>
+				<a href="#00:05:57.82" id="00:05:57.82" class="lt" onclick="jumptoTime(357, this.id)"><p>然後和它的材質 你才可以加在一起，如果大家有跟我玩泰式萬用醬的話，大家知道我這個泰式萬用醬其中一個很重要的因素，就是一個材料就是普寧豆板醬，普寧豆板醬本身就是黃豆，所以基本上可以確認一件事，就是我這個泰式萬用醬很配合一些豆類的製品，你明白嗎?</p></a>
+				<a href="#00:06:31.82" id="00:06:31.82" class="lt" onclick="jumptoTime(391, this.id)"><p>所以我才敢這樣玩，如果不是的話大家千萬不要試，你要明白玩fusion是一件事，你亂來玩黑暗料理又是另一件事，現在就燒鑊了，我一直跟大家說其實這個是在燒鑊的，背後訣，大火燒鑊 見煙 下油 再見煙，現在燒一燒 再見煙，然後向左邊平均小火，然後稍微拿起 把油弄勻 降溫，大家有沒有發覺我的鑊今天很乾淨。</p></a>
+				<a href="#00:07:13.82" id="00:07:13.82" class="lt" onclick="jumptoTime(433, this.id)"><p>當然乾淨了 我洗了，這樣一下去就不要動，煎魚要不黏鑊底 除了背後訣 燒到鑊夠紅之外，還有下鑊後不要亂動，然後我們把油雜質兩邊，碰一下鑊邊的魚，碰不到油的位置，讓它滲油下去，這樣就可以令到魚煎得比較平均，不會煎到最後，很多時候魚尾會爆開的，大家煎放油放得不平均，OK，然後我們稍為煎一下，整條魚都有油。</p></a>
+				<a href="#00:08:5.97" id="00:08:5.97" class="lt" onclick="jumptoTime(485, this.id)"><p>然後我們就開始進入這個，三分鐘又三分鐘的無限循環，上鑊蓋，這個留一點位置，這個可以產生像焗爐的效應，然後三分鐘一邊，OK 三分鐘先，不理它那麼多，好了 現在我就不阻大家時間了，我關一下電腦，三分鐘之後跟大家再分享，看看效果如何，好了，鐘響了 三分鐘過了，我們看看怎樣，這條魚煎得挺好，這個時候我們繼續。</p></a>
+				<a href="#00:08:48.61" id="00:08:48.61" class="lt" onclick="jumptoTime(528, this.id)"><p>先開大火，為什麼呢，很明顯現在雜質魚都不動的話，即是它未完全離鑊，OK，那就開大火，這個階段我叫補火，舊的朋友就應該，懂得我這個玩法，叫補火，每一邊就十幾二十秒鐘，讓它煎得好看一點，十幾二十秒鐘就好了，久了它有機會，油的熱力不均勻的話，就會令到它很容易燒焦，補火這件事我特別講，舊的朋友就應該都懂得。</p></a>
+				<a href="#00:09:35.81" id="00:09:35.81" class="lt" onclick="jumptoTime(575, this.id)"><p>這個時候大家看到我不停地搖油，讓油盡量碰到魚身，沒有黏鑊的那部份，沒有之前沒有碰到油的那部份，現在這個時候我關小火，為什麼呢?我感覺它應該差不多可以了，為什麼我感覺差不多可以呢?因為我用我的鼻子聞，我經常都說的，我們做廚房、做廚師最重要的是做什麼?</p></a>
+				<a href="#00:10:7.67" id="00:10:7.67" class="lt" onclick="jumptoTime(607, this.id)"><p>要利用五官六感，這個時候我就用陰力，大部份都已經可以了，這裡中間的背脊差一點點，如果大家想快點離鑊其實有一個辦法的，在背脊這個位置切三刀，減少它接觸面，然後增加它的空間、空位，這樣就容易一點起鑊的，這個時候我要它起鑊，慢慢試用陰力，不要太大力用陰力，這樣就可以令到它沒那麼容易破皮的，記住煎魚用大力又不行。</p></a>
+				<a href="#00:10:59.07" id="00:10:59.07" class="lt" onclick="jumptoTime(659, this.id)"><p>多手又不行，這個時候我主要這個時候手的力度，力度就是向著鑊的不是向著魚，如果你靠向魚的話很容易就會煎破皮的，我繼續了，這個階段雖然我關小火，但依然是補火的狀態，差不多可以了，差一點點，直至到我們這樣用陰力去試，直至到它可以自由在鑊中游水為止，這邊完成了，記住用陰力的支撐點的力點，就要在鍋子上，不是在魚身上。</p></a>
+				<a href="#00:12:4.59" id="00:12:4.59" class="lt" onclick="jumptoTime(724, this.id)"><p>看到嗎?它可以自由地在鍋子上游水，這樣就可以了，這個時候呢，因為西式鍋有一個不好處，就是和中式鍋不一樣，我們翻的時候要小心一點，要有借助其他的工具，大家看看，漂亮嗎?</p></a>
+				<a href="#00:12:32.59" id="00:12:32.59" class="lt" onclick="jumptoTime(752, this.id)"><p>沒有破皮的，OK?</p></a>
+				<a href="#00:12:35.59" id="00:12:35.59" class="lt" onclick="jumptoTime(755, this.id)"><p>這個東西我一定會吃不下的，有些觀眾說我每次煎魚都煎得這麼漂亮，是啊，因為我吃魚吃得多嘛，大家都看到的，應該看到不少的魚的彩色，這個時候我把油弄均勻，弄均勻油，為什麼呢?</p></a>
+				<a href="#00:12:55.59" id="00:12:55.59" class="lt" onclick="jumptoTime(775, this.id)"><p>準備煎另外一邊，我稍微按一按它，讓它大面積的去接觸油分，這個時候我再上鍋蓋，又是三分鐘了，三分鐘之後我們就看看效果如何，現在是中火了，三分鐘又過了，我檢查一下，現在還未可以，現在處於補火的階段，這個時候我補火就開始調味了，首先要加胡椒，少許就可以了，然後我們就把薑片放進去一起煎，大家會見到，為何我先頭不落胡椒，現在才落呢。</p></a>
+				<a href="#00:13:59.52" id="00:13:59.52" class="lt" onclick="jumptoTime(839, this.id)"><p>因為胡椒不要太早落，太早落就會燶，大家看看，可以自由活動，這次就簡單得多，記住胡椒不要一早落，否則魚會燶，這時我落了薑，落蒜頭，開大火，我現在很少油，大家看，煎魚第一邊最難煎，第一邊煎得好，第二邊一定不會黏鍋，這時我再落蔥，現在我用大火補火，這時我放薑蒜蔥，可以令魚更香口更惹味，我現在開始用我習慣的鉗子。</p></a>
+				<a href="#00:15:26.03" id="00:15:26.03" class="lt" onclick="jumptoTime(926, this.id)"><p>我現在放蔥刀，蔥白可以用來煎，令它更香口，蔥是最後才放，否則很容易燒焦，這時出味差不多了，可以放酒，這樣引火，魚想生都難，完成了，然後落水，落水大約150ml，然後落甜麵豉兩茶匙，然後就加泰式醬，這個泰式醬有青檸汁、芫茜卷、香茅等，所以很香，再加些渣，大概兩湯匙左右，好了。</p></a>
+				<a href="#00:17:28.59" id="00:17:28.59" class="lt" onclick="jumptoTime(1048, this.id)"><p>這個時候其實它已經很夠味，又酸又甜，這個時候我們就要加魚露，因為它是太醬，所以魚露比較配合，記住我們玩Fusion，中廚西廚一起配合，或者其他異國風情配合都沒有問題，但首先要明白那些醬料調味料，是否配合，我這裡不知道多少，適量，這裡這樣放應該有三茶匙，但它鹹味的來源就是魚露，好了。</p></a>
+				<a href="#00:18:8.59" id="00:18:8.59" class="lt" onclick="jumptoTime(1088, this.id)"><p>然後想它有漂亮的顏色，放大概一茶匙左右的老抽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:18.59" id="00:18:18.59" class="lt" onclick="jumptoTime(1098, this.id)"><p>好，現在我們就可以煮它大概兩分鐘，然後在這個時間我們要做什麼呢，這個時間我們要打薄芡上去，這樣</p></a>
+				<a href="#00:18:42.59" id="00:18:42.59" class="lt" onclick="jumptoTime(1122, this.id)"><p>一至兩茶匙的生抽，一至兩茶匙的生粉，加二十毫升左右的清水，把它攪勻，完事啦喎，咁呀等陣間佢鐘響咗我再開機啦唔阻大家時間啦，好啦大家啦咁呀兩分鐘過咗去啦鐘響啦，睇下個結果先嘩，呢啲水係咪搞得好好呀啱啱好，好啦呢個時候呢我哋呢，嗰啲魚嘅香味都出曬嚟呀，咁呢就有多少，即係少水嗰頭呀咁所以呢，呢個時候呢我哋就呢個蜆呢我哋得。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:35.98" id="00:19:35.98" class="lt" onclick="jumptoTime(1175, this.id)"><p>加多少少水落去大概夾埋呢就50秒到啦，記住呀唔使落鹽唔使落其他嘢㗎啦，因為本身啲面屎又鹹鹹甜甜嘅咁呢，本身呢嗰個我嗰個慢用醬呢亦都調咗味嘅，咁呀加咗魚露呢就等於係咩㗎啦，等於係即係已經係較咗呢個啦跟住，而家放鬆啦等於係較咗味㗎啦所以，唔使放其他味嘅ok好嗱呢個時候呢，我哋就將嗰啲芫茜啦芫茜廣先呀。</p></a>
+				<a href="#00:20:19.18" id="00:20:19.18" class="lt" onclick="jumptoTime(1219, this.id)"><p>放曬落去囉，這樣魚就很香了，好了 關火了，是不是很簡單 很快就煎熟了，這樣就反轉 讓另一邊吸汁，我們吃的時候先吃吸汁那邊，等另一邊一邊吃一邊吸汁，原來擺碟也有技巧的，然後將這些汁 夠不夠濃，這樣這些汁就非常之惹味又夠鹹味，所以大家要記住調味一點都不需要加鹽，夠鹹了 我告訴你，我現在還加了一分鐘鹹的濃度。</p></a>
+				<a href="#00:21:19.99" id="00:21:19.99" class="lt" onclick="jumptoTime(1279, this.id)"><p>因為我加的那個都比較多，那個魚露我都比較多，好 將這個芫茜放下去，是不是很簡單 是不是很簡單，是 所以我希望大家，有時候創新的菜式或者玩fusion，就不是那麼複雜的，唯一大家要注意的地方，就是你加的醬汁到底合不合適，如果醬汁是合適的話，當然是可以了，為什麼我會這樣說呢，其實泰菜都是在說真正成形。</p></a>
+				<a href="#00:22:12.99" id="00:22:12.99" class="lt" onclick="jumptoTime(1332, this.id)"><p>其實都是在說近這兩百年的事，而東南亞菜，尤其是馬來西亞和泰國以至越南，受到我們中菜的影響是非常厲害的，尤其是潮汕菜 潮州菜和福建菜，所以在這樣的情況下，其實他們用的很多醬料，或者調的味道出來，就很合適我們中式的一些醬料，尤其是一些黃豆的製品，比如說醬油 腐乳 豆豉，比如說我現在用的是甜麵豉。</p></a>
+				<a href="#00:22:54.99" id="00:22:54.99" class="lt" onclick="jumptoTime(1374, this.id)"><p>你首先要明白背後的道理，明白後要玩融合，就真的會創造一些新的味道出來，我現在這個味道就是，酸酸甜甜鹹鹹，三樣東西，鮮甜鹹鹹 沒有苦的，現在我聞到魚香都非常厲害，因為我加了魚露，就更加強調了魚的鮮味，那種鹹香味，可以嗎?</p></a>
+				<a href="#00:23:22.65" id="00:23:22.65" class="lt" onclick="jumptoTime(1402, this.id)"><p>好了，我們知道了醬料背後的歷史之後，很自然我們就要配出來一層辣的醬汁，因為我先前已經放回冰箱了，其實我先前的萬用泰式醬，我跟其他人做的泰式醬是不一樣的，因為我加了潮州的普寧豆瓣醬下去，所以本身我調製的這個萬用泰式醬，已經具備了中菜的部分的靈魂，所以這一次我就夠膽將，黃豆醬或者甜麵豉加進去這條魚。</p></a>
+				<a href="#00:24:6.79" id="00:24:6.79" class="lt" onclick="jumptoTime(1446, this.id)"><p>大家都知道，非洲汁我們大多都是煎封來吃的，很棒的，大家都知道，其實甜麵豉這東西用來蒸魚燜魚都很棒的，是不是，現在我就不只是甜和鹹，我就加了一些東南亞風情，我自己自製的泰式萬用醬，裡面又有香茅，又有青檸汁，又有芫茜頭，諸如此類，又有辣椒，馬上搖身一變，這個就變成一個野味的融合菜，是這個粵菜配合泰菜。</p></a>
+				<a href="#00:24:50.27" id="00:24:50.27" class="lt" onclick="jumptoTime(1490, this.id)"><p>兩者結合，相得益彰，一加一是大過二的，ok 行不行，這個菜就很簡單，我也不阻大家吃飯了，不阻大家時間，希望大家喜歡，真的可以這樣做，我也經常這樣做，不然我怎麼會打成這幾個，泰式萬用醬怎麼吃得這麼快，難道每餐吃海南雞飯嗎，是不是，多謝大家收看，希望大家有新靈感，真的很好吃，我現在越說越口水，最活該的一件事。</p></a>
+				<a href="#00:25:24.35" id="00:25:24.35" class="lt" onclick="jumptoTime(1524, this.id)"><p>我每天都在說，我說你作為一個廚師之前 你首先要是一個食家，你是一個食家的時候 你才會多創意的，因為為什麼你經常去吃東西，就是你很渴望去吃東西，變成了你會 當你自己具備這個條件，就是創作的條件的時候 你會很渴望自己，是想創作出自己的味道出來的，這個就是為什麼我能夠短短一年，都還沒夠就出了350個菜式。</p></a>
+				<a href="#00:25:52.29" id="00:25:52.29" class="lt" onclick="jumptoTime(1552, this.id)"><p>就是平均一天能夠出超過一個菜式出來的，為什麼 我現在還沒乾糖的 還有很多東西還沒出的，OK 所以我希望大家明白，有時候創意這件事不是叫你去做黑暗料理，是你不了解香料背後的歷史的話，或者是那種特性的話，你就很難去做一個滿意的fusion出來的，就變成了現在很流行的那句話 叫做黑暗料理，地獄廚神就有你的份 廚神就沒有你的份。</p></a>
+				<a href="#00:26:27.79" id="00:26:27.79" class="lt" onclick="jumptoTime(1587, this.id)"><p>所以我希望大家 其實都是那句話，治大國如烹小鮮，你不要看著爐頭那麼小，鏡頭看到那麼多東西就是那麼多東西，但其實如果大家真的想去學的話，其實真的要懂得一下歷史，和懂得一下一些法學的知識，自然就相得益彰了 好嗎。</p></a>
+				<a href="#00:26:50.79" id="00:26:50.79" class="lt" onclick="jumptoTime(1610, this.id)"><p>好 不打擾大家了 去吃東西了 拜拜。</p></a>
+</div>
+	</body>
+</html>

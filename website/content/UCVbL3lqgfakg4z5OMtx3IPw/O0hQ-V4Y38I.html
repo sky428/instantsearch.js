@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豉汁蒸盤龍鱔，製作簡單但卻惹味非常，只需要跟著程序做，就能做到酒樓的水準了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'O0hQ-V4Y38I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豉汁蒸盤龍鱔，製作簡單但卻惹味非常，只需要跟著程序做，就能做到酒樓的水準了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚好。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今晚想和大家分享什麼菜式呢?</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>有了萬用豆豉醬之後，終於輪到它出場了。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>是什麼呢?</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>嘩!</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>是這個!</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>今晚和大家分享這個蒸盤龍鱔。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>盤龍鱔留著用來裝垃圾。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>這是家廚的好習慣。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>盤龍鱔，我和魚檔已經說好，我要蒸盤龍鱔，你幫我切得好一點。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>一條鱔就多過頭，現在大概三分二條鱔。</p></a>
+				<a href="#00:00:45.00" id="00:00:45.00" class="lt" onclick="jumptoTime(45, this.id)"><p>今日我女兒的朋友上來吃飯，我close up給大家看，現在是不是很乾淨?</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>因為魚檔可以幫你清潔。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>如果你想自己處理，那怎麼辦呢?</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>現代城市就不要處理太多，但如果你依然想知道，我就用口述告訴大家。</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>這條生鱔通常需要用滾水清洗，因為表面有很多鱔，清洗過後才開始清理。</p></a>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>現在相對地乾淨了，但我還要處理，等下再和大家分享。</p></a>
+				<a href="#00:01:29.00" id="00:01:29.00" class="lt" onclick="jumptoTime(89, this.id)"><p>現在我介紹材料，今日我用了一條鱔，我的萬用豆豉醬出場了，現在還有大約大半盒，吃完這一盒就吃光了，然後一隻泰國鳳眼椒，大隻的，如果用指天椒的話就兩三隻，今天這個盤紅鱔是一點也不需要薑的，因為全部都是我這一盒萬用豆豉醬的功勞，我這個萬用豆豉醬之前已經和大家分享過了，怎樣做，是不是?</p></a>
+				<a href="#00:02:0.80" id="00:02:0.80" class="lt" onclick="jumptoTime(120, this.id)"><p>新來的朋友，大家可以去找我的StarLeo，點開影片，滑下去，下面大概二月份三月份的影片，就有這個萬用豆豉醬的影片教大家，和大家分享怎樣做的，這個就是酒樓的味道，它裡面有什麼呢?</p></a>
+				<a href="#00:02:24.80" id="00:02:24.80" class="lt" onclick="jumptoTime(144, this.id)"><p>有蒜頭、薑末，或者不用薑末也可以，蒜頭、蒜蓉，然後就是果皮、蠔油、糖、老抽，炒出來的，OK?</p></a>
+				<a href="#00:02:40.32" id="00:02:40.32" class="lt" onclick="jumptoTime(160, this.id)"><p>炒了之後就可以放幾個月的，你要用的時候，舀幾罐出來就可以了，OK?</p></a>
+				<a href="#00:02:48.08" id="00:02:48.08" class="lt" onclick="jumptoTime(168, this.id)"><p>好不好?</p></a>
+				<a href="#00:02:48.60" id="00:02:48.60" class="lt" onclick="jumptoTime(168, this.id)"><p>那現在呢，我首先要處理這條鱔，雖然說魚檔已經幫我處理好了，但是我回來後，也需要依然處理過，那怎樣呢?</p></a>
+				<a href="#00:03:2.80" id="00:03:2.80" class="lt" onclick="jumptoTime(182, this.id)"><p>我首先要放鹽，其實這個手法也是一般我蒸魚的時候用的手法，順德蒸魚大法，OK?</p></a>
+				<a href="#00:03:18.84" id="00:03:18.84" class="lt" onclick="jumptoTime(198, this.id)"><p>放點鹽，然後呢，就放少許胡椒，然後呢，少許酒，不過這個鱔我需要用多一樣東西，就是生粉去清洗它，為什麼呢?因為去腥，鹽加生粉可以幫魚的表面去腥，為什麼我需要用鹽酒和胡椒去清洗它，原因就是因為魚的表面有很多的污染，原因就是要清理魚的表面的異性菌，然後在這個過程中去除所有腥味，所以我蒸這盤鱔的時候。</p></a>
+				<a href="#00:04:16.09" id="00:04:16.09" class="lt" onclick="jumptoTime(256, this.id)"><p>我一粒薑都不需要放，我只需要放我的萬用豆豉醬就可以了，大家說既然這麼簡單，Leo你為什麼還要分享呢?</p></a>
+				<a href="#00:04:27.09" id="00:04:27.09" class="lt" onclick="jumptoTime(267, this.id)"><p>其實我最主要是想給大家看我怎樣洗鱔，OK?可以嗎?</p></a>
+				<a href="#00:04:33.09" id="00:04:33.09" class="lt" onclick="jumptoTime(273, this.id)"><p>我們就抹勻它，其實我現在這樣用生粉加鹽去醃鱔身，除了具有去腥，這些內腔都要擦的，不要爛啊，除了這一點之外，還有一個額外的功效，大家有沒有發覺自己蒸鱔的時候，肉的顏色總是有點霉霉的，但如果我現在這樣去拿生粉、鹽、酒，shell unus pans reinforcement，發etus。</p></a>
+				<a href="#00:05:19.47" id="00:05:19.47" class="lt" onclick="jumptoTime(319, this.id)"><p>cantidad，Dop，vegetarian，bic，embr東西，胡椒 除了去腥味之外，對於腌鱔來說 還有一個額外的功用，就是可以令到鱔身更爽口，ok，這樣做也有另一個效果，不知道大家知不知道 其實鱔有些毒素，它的毒素是什麼呢，我不知道大家有沒有吃過鱔，那些鱔 尤其是去吃火鍋的時候，你未處理過鱔 直接生煮。</p></a>
+				<a href="#00:05:56.06" id="00:05:56.06" class="lt" onclick="jumptoTime(356, this.id)"><p>大家吃下去的那口鱔 有沒有覺得舌頭癢癢的，有沒有覺得，其實這些就是鱔自身帶的毒素的刺激，它不會毒死人的，它只不過是帶有這些分子在裡面，所以令到你吃下去的舌頭有點鼻鼻的 癢癢的感覺，但如果我現在這樣去散混它，然後我才去清洗它，這條鱔又爽，也不會吃到你的口癢癢的，ok，正不正 正的。</p></a>
+				<a href="#00:06:36.06" id="00:06:36.06" class="lt" onclick="jumptoTime(396, this.id)"><p>所以不要小看一些小步驟，我經常都說的，其實你想煮東西煮得好吃，有些步驟是不可以避免的，ok，現在我就，其實這個結果就有點，怎麼說呢，有些是令到它好像有醃，即是平時我們醃食物的效果，OK，這個時候出水是不要緊的，我怎麼會發現到這個呢，試完十多歲的時候，我爸爸經常拿門扇回來，然後叫我做。</p></a>
+				<a href="#00:07:22.22" id="00:07:22.22" class="lt" onclick="jumptoTime(442, this.id)"><p>然後我就不知道怎樣做，我做的門扇是爽脆的，但不知道為什麼他們炆的門扇，就經常都軟軟的，我慢慢就發現到原來這個方法，有這樣的奇效，大家可以跟著一起做，我先醃了它五分鐘，我就不阻大家時間了，五分鐘後我們就要馬上清洗，如果不是的話，扇身就會因為太多鹽而變鹹，這樣就不對了，等一下見，好了 大家現在已經夠了五分鐘了。</p></a>
+				<a href="#00:07:59.22" id="00:07:59.22" class="lt" onclick="jumptoTime(479, this.id)"><p>我們就移一移，這些是原本洗過的，就清洗乾淨它，因為大家經常有個疑惑，這裡你經常拿酒來舔那些魚，會不會那些魚有酒味，不會的，只需要我們把它清洗得乾乾淨淨，現在大家看不到，非常之，這條扇的表面非常之是，好爽，大家記住了，這樣拿生粉、鹽、酒去醃一醃它，然後我就拿碟子，大家看看我的砧板，未濕水的時候多麼乾爽。</p></a>
+				<a href="#00:08:58.22" id="00:08:58.22" class="lt" onclick="jumptoTime(538, this.id)"><p>哪裡有細菌，真的不說了，我不動氣，不過是順口，然後我們就放在碟子上，一樣我們要用廚紙抹乾乾爽爽，這些廚子就是消耗性的物資，大家可以不要介意，多用一點，吸乾水份，這裡有些血漬，吸乾水份，大家會看到，仍有少許血水滲出來，這個時候盡量吸乾水份，令到腥味減到最低，盆龍鱔，現在熟透了，我先摸一摸，OK，可以了。</p></a>
+				<a href="#00:10:34.26" id="00:10:34.26" class="lt" onclick="jumptoTime(634, this.id)"><p>好，這樣就完成了，擺好位置了，是不是?</p></a>
+				<a href="#00:10:40.26" id="00:10:40.26" class="lt" onclick="jumptoTime(640, this.id)"><p>OK，這些東西是髒水，先倒掉，好，這個時候我們就開始開，開這個豉汁，首先洗一洗辣椒，大家不要介意，盡量我不希望給大家有感覺，我剪片，剪到到處都是，然後斷了，中間到底發生什麼事，不知道，所以大家看慣我都知道，我一定是怎樣，一定是一take過，很多步驟，盡量給大家看清楚細節，OK?</p></a>
+				<a href="#00:11:33.26" id="00:11:33.26" class="lt" onclick="jumptoTime(693, this.id)"><p>好，一隻辣椒切了，然後我們就開豉汁，先拿一隻匙羹，這個已經炒好了，給大家看，我再講一次，之前有觀眾跟著我做萬用豆豉醬，就是現在這樣，很乾的，是不是?</p></a>
+				<a href="#00:12:4.26" id="00:12:4.26" class="lt" onclick="jumptoTime(724, this.id)"><p>我再解釋一次，為什麼我要炒到這麼乾呢?</p></a>
+				<a href="#00:12:7.26" id="00:12:7.26" class="lt" onclick="jumptoTime(727, this.id)"><p>是因為炒乾一點，盡量炒乾水份，它可以擺的時間更加長，OK?</p></a>
+				<a href="#00:12:14.26" id="00:12:14.26" class="lt" onclick="jumptoTime(734, this.id)"><p>這個時候我們就放兩大匙，要用的時候，我們才要開氣，這樣就可以讓豆豉醬可以放久一點，好，然後想它甜一點，可以加一匙糖，然後，有兩個方法可以開豆豉，一個是用煮過的涼開水，或者是暖開水，然後，或者直接加油，或者兩樣東西加在一起都可以，我現在就開它，要用的時候才開，如果按照我那個馬用豆豉醬，它相對地就沒那麼甜，雖然我都加了很多糖。</p></a>
+				<a href="#00:13:17.24" id="00:13:17.24" class="lt" onclick="jumptoTime(797, this.id)"><p>但是，可能會有些人覺得不夠甜，在這樣的情況之下，大家可以在現在開氣這個時間，這個步驟裏面加糖，這樣就可以令到豆豉醬甜一點，OK，開好了就是這樣，盡量攪勻它，將水和豆豉醬攪勻，好，開好了，然後拿出這條線，然後將豆豉慢慢放進去，因為我加了水和油，所以它變得很稀，你喜歡怎樣擺都可以，初步處理完畢，可以直接放入鑊蒸。</p></a>
+				<a href="#00:14:51.38" id="00:14:51.38" class="lt" onclick="jumptoTime(891, this.id)"><p>大家說是不是很簡單?</p></a>
+				<a href="#00:14:54.38" id="00:14:54.38" class="lt" onclick="jumptoTime(894, this.id)"><p>大家想吃盆龍鱔，是否以為會很複雜?</p></a>
+				<a href="#00:14:58.38" id="00:14:58.38" class="lt" onclick="jumptoTime(898, this.id)"><p>當然不是，很簡單，最麻煩是湯鱔、洗鱔，魚檔幫你處理，回來後，最重要是做什麼?</p></a>
+				<a href="#00:15:8.38" id="00:15:8.38" class="lt" onclick="jumptoTime(908, this.id)"><p>就是做那個脆鱔和醃一醃它，令肉更脆，而且不會太容易令你吃到舌頭癢，除了這些就沒什麼了，接著我們就開火蒸，大家看看，等下我開火的時候再和大家分享，到底怎樣做，這個菜很簡單，又大體，又見得人，又簡單，ok?行不行?</p></a>
+				<a href="#00:15:39.38" id="00:15:39.38" class="lt" onclick="jumptoTime(939, this.id)"><p>等下開火再說，等下見，大家先看我怎樣處理鱔，怎樣拌，現在水滾了，接著我們就放進去，大火，我之前都介紹過怎樣蒸海鮮，是嗎?</p></a>
+				<a href="#00:16:7.38" id="00:16:7.38" class="lt" onclick="jumptoTime(967, this.id)"><p>因為這個鱔比較厚身，所以我們一般用最大時間，12分鐘去計，起跳，如果大家覺得還是不夠軟的話，還是15分鐘好了，不要太長時間，現在開始計時，等下時間到，我們再和大家看看是什麼結果，什麼效果，蒸盤和鱔很簡單，不用搞太多，大家記得要一個萬用豆豉醬，好了，鐘響了，15分鐘後關火，看看結果如何。</p></a>
+				<a href="#00:16:48.46" id="00:16:48.46" class="lt" onclick="jumptoTime(1008, this.id)"><p>開，嘩，12分鐘，這個，就是，盤龍鱔其實已經，什麼?已經過熟了，所以，在我們香港人，或者是粵菜，吃慣粵菜的人眼中，其實是不用蒸這麼久的，OK?</p></a>
+				<a href="#00:17:14.82" id="00:17:14.82" class="lt" onclick="jumptoTime(1034, this.id)"><p>好，現在我就放，放了這個，蔥，先放上去，然後做什麼?</p></a>
+				<a href="#00:17:24.94" id="00:17:24.94" class="lt" onclick="jumptoTime(1044, this.id)"><p>當然是，灒熟油，為什麼我說過熟呢?大家看看，那些皮已經是，爆開了，OK?</p></a>
+				<a href="#00:17:36.54" id="00:17:36.54" class="lt" onclick="jumptoTime(1056, this.id)"><p>所以，其實，就不需要蒸太久的，還有我剛才在醃的過程當中，我已經跟大家說了，其實，我的做法是可以吃到脆鱔的口感，所以，太過熟其實就，都是有一點浪費的，好了，接下來我灒熟油做總結，做最後一個步驟，這樣就可以吃了，等下開機再跟大家分享，好了，我已經把油燒開了，現在灒上油，這樣就可以吃了，都是一樣。</p></a>
+				<a href="#00:18:19.94" id="00:18:19.94" class="lt" onclick="jumptoTime(1099, this.id)"><p>我不是很贊成，就是說很多人怕蔥不熟，就用回爐蓋一下，因為其實我們之所以，我們香港人蒸魚，這麼好吃，原因就是因為我們用生蔥，加滾油，OK?</p></a>
+				<a href="#00:18:40.34" id="00:18:40.34" class="lt" onclick="jumptoTime(1120, this.id)"><p>大家不要以為很多油，魚身會吸了油，這個時候我們要做什麼呢?</p></a>
+				<a href="#00:18:50.10" id="00:18:50.10" class="lt" onclick="jumptoTime(1130, this.id)"><p>剛才我用了我的萬用豆豉醬，還要加了糖，所以這個時候，我們是不需要加其他東西的，這樣就可以吃了，其實很簡單的，我知道很多人想吃盤龍鱔，但大家心目中的盤龍鱔是非常複雜的，但我可以保證，今時今日我們吃盤龍鱔不需要太複雜，為什麼呢?</p></a>
+				<a href="#00:19:26.46" id="00:19:26.46" class="lt" onclick="jumptoTime(1166, this.id)"><p>湯，其實你跟魚檔說要蒸盤龍鱔，基本上他已經幫你搞定了，還切得比我們好，我們就雞手鴨腳，這是第一，第二，記住了，我這個萬用豆豉醬發表了很久，但我這個萬用豆豉醬是不是做出了很多菜式呢?</p></a>
+				<a href="#00:19:48.06" id="00:19:48.06" class="lt" onclick="jumptoTime(1188, this.id)"><p>有味菜豬腸、味菜豬肚絲，味菜牛肉，然後蒸魚，現在最終蒸魚鱗，現在最終這個極品盤龍鱔就出來了，都是用我自製的萬用豆豉醬做的，大家可以發現，我這個菜是否一條薑絲都沒有放?</p></a>
+				<a href="#00:20:13.86" id="00:20:13.86" class="lt" onclick="jumptoTime(1213, this.id)"><p>是的，是不是很簡單?</p></a>
+				<a href="#00:20:15.62" id="00:20:15.62" class="lt" onclick="jumptoTime(1215, this.id)"><p>是的，為什麼?</p></a>
+				<a href="#00:20:17.14" id="00:20:17.14" class="lt" onclick="jumptoTime(1217, this.id)"><p>因為我做了一個萬用豆豉醬，如果大家去超級市場買那些有品牌的蒜蓉豆豉醬，那些是不行的，因為他們真的是蒜蓉加豆豉，就沒有其他料了，除了味精，但是我這個自製萬用豆豉醬，因為加了果皮進去，而且整個製程，也是專業廚房、海鮮酒家的一個做法，所以呢，我每一次蒸魚鱗也好，蒸這個盆龍鱔、蒸魚也好，除非我很想吃薑。</p></a>
+				<a href="#00:20:55.10" id="00:20:55.10" class="lt" onclick="jumptoTime(1255, this.id)"><p>如果不是的話，我根本就不需要加薑絲進去的，OK?可以嗎?</p></a>
+				<a href="#00:20:59.58" id="00:20:59.58" class="lt" onclick="jumptoTime(1259, this.id)"><p>但是一點都不腥的，為什麼?</p></a>
+				<a href="#00:21:1.66" id="00:21:1.66" class="lt" onclick="jumptoTime(1261, this.id)"><p>因為我前期功夫做了很多事情，那，我所有蒸魚的影片，都一定會做一個過程的，就是什麼呢?</p></a>
+				<a href="#00:21:12.56" id="00:21:12.56" class="lt" onclick="jumptoTime(1272, this.id)"><p>一回來，清洗了，除了一般大家，都知道的，要擦乾淨那些出血的地方，那些腮的位置，就是令它沒那麼腥之外，我還一定會做一個動作，是什麼呢?</p></a>
+				<a href="#00:21:24.80" id="00:21:24.80" class="lt" onclick="jumptoTime(1284, this.id)"><p>加酒、加鹽、加胡椒，三樣東西，洗它，醃它五分鐘，它的作用就是除了它身上的二線菌，二線菌我經常說是什麼呢?</p></a>
+				<a href="#00:21:37.12" id="00:21:37.12" class="lt" onclick="jumptoTime(1297, this.id)"><p>是細菌的一種，是導致魚上會有魚腥味，在我們身上就會有臭芋味，不要說我噁心，這是科學的東西，OK?我現在跟大家做科普，所以我們為了要減少它的臭腥味，腥臭味，所以我們一定要用酒、加鹽、加胡椒，三樣東西，洗它，醃它五分鐘，保證你，就算你買回來的時候，你覺得很腥，但是你吃進口一點都不腥，只有剩下什麼呢?</p></a>
+				<a href="#00:22:10.80" id="00:22:10.80" class="lt" onclick="jumptoTime(1330, this.id)"><p>剩下的是海鮮魚類的鮮甜味，行不行?</p></a>
+				<a href="#00:22:14.96" id="00:22:14.96" class="lt" onclick="jumptoTime(1334, this.id)"><p>這個過程很重要的，好不好?</p></a>
+				<a href="#00:22:17.72" id="00:22:17.72" class="lt" onclick="jumptoTime(1337, this.id)"><p>除了這些我這麼心痛，說完又說，每條影片都說，每條蒸魚影片都說之外，其他的那些，easy job，就算你沒有入廚經驗，跟著這個程序做，我保證你一定做得出，海鮮酒家的味道出來，海鮮酒家的賣相出來，OK?行不行?</p></a>
+				<a href="#00:22:37.24" id="00:22:37.24" class="lt" onclick="jumptoTime(1357, this.id)"><p>大家說我這個蒲龍鱔，是不是很簡單?</p></a>
+				<a href="#00:22:39.92" id="00:22:39.92" class="lt" onclick="jumptoTime(1359, this.id)"><p>簡單，但是，酒家都是這樣做的，酒家的味道都是這樣，不過今天我唯一失敗的地方就是，我怕它不熟，用了12分鐘，弄到皮都爆了，不漂亮，不帥，這個是唯一，今天我要自我批評的地方，但是其他的食味各樣，是酒家的味道，大家跟著一起做，是不是很簡單?</p></a>
+				<a href="#00:23:4.84" id="00:23:4.84" class="lt" onclick="jumptoTime(1384, this.id)"><p>覺得簡單就，大家一起做，跟著出來做，這個，喂，大佬喜慶節日，是不是?</p></a>
+				<a href="#00:23:13.20" id="00:23:13.20" class="lt" onclick="jumptoTime(1393, this.id)"><p>這個飲宴，這個舉辦私人宴會，這個菜式是絕對適合的，大家說是不是?</p></a>
+				<a href="#00:23:19.16" id="00:23:19.16" class="lt" onclick="jumptoTime(1399, this.id)"><p>是不是?</p></a>
+				<a href="#00:23:19.68" id="00:23:19.68" class="lt" onclick="jumptoTime(1399, this.id)"><p>又有看頭，又有賣相，OK?好不好?</p></a>
+				<a href="#00:23:22.44" id="00:23:22.44" class="lt" onclick="jumptoTime(1402, this.id)"><p>那不跟大家說了，弄完東西去吃飯了，拜拜!希望大家，不要覺得，再不要覺得入廚是很繁複的事，其實有些菜式，大家吃下去很好吃，沒有大家想像中那麼困難，那麼複雜的做法的，OK?好不好?</p></a>
+				<a href="#00:23:38.96" id="00:23:38.96" class="lt" onclick="jumptoTime(1418, this.id)"><p>多謝大家收看了。</p></a>
+				<a href="#00:23:39.96" id="00:23:39.96" class="lt" onclick="jumptoTime(1419, this.id)"><p>拜拜!</p></a>
+</div>
+	</body>
+</html>

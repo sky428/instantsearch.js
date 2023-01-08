@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——消失的名菜『黃埔牛肉炒蛋』正傳，這是一道餐廳已經什少見到的菜式，好吃牛肉，好吃滑蛋的朋友可以試著製作，也算是一種傳承。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'oNG-fJq_8uM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——消失的名菜『黃埔牛肉炒蛋』正傳，這是一道餐廳已經什少見到的菜式，好吃牛肉，好吃滑蛋的朋友可以試著製作，也算是一種傳承。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:0.63" id="00:00:0.63" class="lt" onclick="jumptoTime(0, this.id)"><p>大家晚上好，今晚吃甚麼菜呢，今晚吃，說了一年，黃埔牛肉炒蛋，大概在差不多一年前，我跟大家分享過怎樣拌牛肉，當時預告消失的，廣州名菜叫做黃布牛肉炒蛋，或者牛肉黃布炒蛋，大家可能有些年輕觀眾，是完全未見過是甚麼來的，為甚麼呢?</p></a>
+				<a href="#00:00:57.19" id="00:00:57.19" class="lt" onclick="jumptoTime(57, this.id)"><p>因為現在絕大部份的餐廳，包括酒樓都不會出這個菜，因為比較麻煩，亦不知為甚麼他們不願意做，以致大家忘記原來有這樣的菜，既然是黃布炒蛋，當然是廣州的黃布，我不知道是怎樣發明的，我祖母的姓氏是向，不知跟向媽媽有甚麼關係，她的父親，即是我的太爺，他是軍人，將軍，不知道有沒有跟典故有關，所以我祖母很喜歡吃。</p></a>
+				<a href="#00:01:46.79" id="00:01:46.79" class="lt" onclick="jumptoTime(106, this.id)"><p>我小時候經常吃她做的黃布炒蛋，牛肉黃布炒蛋，那時候很窮，不是經常有牛肉吃，所以黃布炒蛋經常吃，我記住印象是怎樣，直至她作古，我都沒有機會親自下廚做一個，直至自己長大後慢慢研究，原來可以這樣做的，所以今天跟大家分享一個消失的名菜，叫做黃布牛肉炒蛋，或者叫做牛肉黃布炒蛋，材料很簡單。</p></a>
+				<a href="#00:02:28.95" id="00:02:28.95" class="lt" onclick="jumptoTime(148, this.id)"><p>材料主要有雞蛋，今晚我用8隻，雞蛋用多些都不怕，喜歡吃蛋的朋友都不需要怕吃，因為醫學上已經證明了，三高膽固醇真空不是雞蛋，基本上你一天吃3-4隻，當然不能每天吃，其實問題不大，這裏有8隻，大隻的蛋，如果小隻的就10隻，廣式炒滑蛋，廣式 廣府菜的廣，一定有什麼?</p></a>
+				<a href="#00:03:12.95" id="00:03:12.95" class="lt" onclick="jumptoTime(192, this.id)"><p>有這個韭黃，然後有蔥，然後有牛肉，牛肉怎樣拌呢?</p></a>
+				<a href="#00:03:28.95" id="00:03:28.95" class="lt" onclick="jumptoTime(208, this.id)"><p>大家可以參考我差不多一年前的影片，那裏有教大家，和大家分享了怎樣開牛肉，怎樣醃牛肉，其中有些竅門，尤其是，坦白說我真的吃不起新鮮牛肉，最便宜都要160元一斤，我買半斤，夠一家人吃半斤，都已經是80元，還要是不見食的，我這裏已經有一磅牛肉，即接近一斤牛肉，我現在說多少錢?</p></a>
+				<a href="#00:04:12.95" id="00:04:12.95" class="lt" onclick="jumptoTime(252, this.id)"><p>40元便宜一半，所以近代，起碼我自己，我很喜歡吃急凍牛肉，所以有那條影片，怎樣開牛肉，即自己拿回來開，不用他幫我片，然後怎樣解凍，諸如此類，大家可以看那條影片，那個叫消失的名菜，黃埔牛肉炒蛋前傳，大家看看怎樣做，急凍牛肉本身在解凍過程當中，因為會有血水滲出來，血水會比新鮮的肉類流失得比較快，所以它的肉味、牛肉味通常不夠。</p></a>
+				<a href="#00:04:56.95" id="00:04:56.95" class="lt" onclick="jumptoTime(296, this.id)"><p>我那段影片就教大家怎樣去…，死與當活與醫，怎樣將他的牛肉味拌出來，起碼能欺騙到大家的味蕾，OK?行不行?大家去看看吧，好了，這個黃埔牛肉炒蛋，其實很簡單的，我現在首先跟大家分享，怎樣打蛋。</p></a>
+				<a href="#00:05:29.76" id="00:05:29.76" class="lt" onclick="jumptoTime(329, this.id)"><p>打蛋，等等，老人家就慢慢…，我很老嗎?今年才50歲而已，我還跟兒子的朋友打成一片，我兒子玩甚麼我又玩甚麼，好了，給大家看個近鏡，先看看，OK，打蛋喜歡自由式，不要看我，不要以為我很瀟灑，其實我都是習慣成自然，功多藝熟，大家如果不習慣單手打蛋，雙手其實沒所謂，OK，字幕由Amara.org社區提供，我介紹一下這些蛋。</p></a>
+				<a href="#00:06:26.68" id="00:06:26.68" class="lt" onclick="jumptoTime(386, this.id)"><p>這些蛋我這個呢，燒光頭了，有蛋殼掉了。</p></a>
+				<a href="#00:06:30.68" id="00:06:30.68" class="lt" onclick="jumptoTime(390, this.id)"><p>我這些蛋就是，用的是湖北的紅心蛋，現在大概四十多元一排，約略比一般香港慣用的泰國蛋貴三幾元，ok，為什麼我要用紅心蛋呢，我跟大家介紹一下，其實蛋有分很多類，有白蛋，有黃蛋，黃蛋當中，都有分深淺色的蛋黃，我現在用的是比較深色的，湖北紅心蛋，為什麼我要用紅心蛋呢，蛋有分兩類，一種是用來煎好吃的。</p></a>
+				<a href="#00:07:17.68" id="00:07:17.68" class="lt" onclick="jumptoTime(437, this.id)"><p>通常那些就是白蛋，譬如美國的力康蛋，那些白蛋，煎荷包蛋就很好吃，因為它比較容易煎，還有白蛋的蛋白比較黏稠，它比較硬，沒那麼容易煎破皮，沒那麼容易煎穿黃，所以白蛋，通常廚師就用來煎蛋，但是，如果你用來做中式的，譬如炒飯、炒蛋那些，我就強烈建議大家用黃蛋，而且用一些所謂的紅心蛋，紅心蛋，馬來蛋都有紅心蛋。</p></a>
+				<a href="#00:08:4.68" id="00:08:4.68" class="lt" onclick="jumptoTime(484, this.id)"><p>但是如果你說蛋味，和顏色來說，湖北的紅心蛋，我燒光頭了，先把蛋殼拿出來，有時候入廚不是100%保證一定成功，這也是入廚的好處，好玩的地方，的味道，當然了，蛋白會掉落，就比較麻煩，OK，好，現在打蛋了，強烈建議大家，如果用來做蒸水蛋，或者炒飯，或者炒蛋，就強烈建議大家用紅蛋，紅蛋通常蛋味會濃一點。</p></a>
+				<a href="#00:08:57.95" id="00:08:57.95" class="lt" onclick="jumptoTime(537, this.id)"><p>還有，如果你用了一些，標明是紅心蛋，顏色比較紅，比較黃，那些雞蛋就更加適合用來炒，因為炒出來的樣子漂亮，OK，這裏有八隻蛋，首先，我們打發之前就加少許鹽，因為待會牛肉炒蛋，我完全不加調味，所以這個時候，我們需要加重一點，八隻蛋大概是三分二茶匙的鹽，要加的就是，被人經常非議的雞蛋炒蛋，為甚麼要加雞粉。</p></a>
+				<a href="#00:09:45.95" id="00:09:45.95" class="lt" onclick="jumptoTime(585, this.id)"><p>其實雞粉就半殼，OK，然後就胡椒碎，也是，胡椒碎，一般人都會用胡椒粉，我就喜歡用胡椒碎，為甚麼呢，說了很多次，因為它清一點，沒那麼重，好了，完成了，是吧，這裏經常都有人非議，炒蛋為甚麼要加雞粉，醃蝦為甚麼要加雞粉，做海鮮為甚麼要加雞粉，雞粉的作用有很多種，既然是炒蛋，我就先說炒蛋的東西，炒蛋為甚麼要加雞粉。</p></a>
+				<a href="#00:10:25.95" id="00:10:25.95" class="lt" onclick="jumptoTime(625, this.id)"><p>炒蛋為甚麼要加雞粉，因為不是每隻雞蛋都是最fit的狀態，我這隻是cheap蛋來的，已經是排名第二、第三最低的了，你以為是那些可以生吃的日本雞蛋嗎，那些當然是不需要加雞粉的，如果你說一般炒蛋的話，即是一般的雞蛋的話，其實你是可以加些雞粉增味的，尤其是清炒的時候，可以嗎?</p></a>
+				<a href="#00:10:57.46" id="00:10:57.46" class="lt" onclick="jumptoTime(657, this.id)"><p>即是等於甚麼呢?</p></a>
+				<a href="#00:10:58.46" id="00:10:58.46" class="lt" onclick="jumptoTime(658, this.id)"><p>等於北海道的牛乳炒蛋，你都加牛乳吧，然後說起牛乳，現在我加油了，大家是否看到我加了很多油，又被人說，嘩!你倒了一碗油進去，那些蛋哪裏健康啊?</p></a>
+				<a href="#00:11:18.46" id="00:11:18.46" class="lt" onclick="jumptoTime(678, this.id)"><p>大哥、大姐，其實我想說的是，大家去餐廳很喜歡吃的名物，譬如北海道牛乳炒蛋，那些沒有油嗎?</p></a>
+				<a href="#00:11:31.46" id="00:11:31.46" class="lt" onclick="jumptoTime(691, this.id)"><p>那些牛乳是甚麼來的?</p></a>
+				<a href="#00:11:32.46" id="00:11:32.46" class="lt" onclick="jumptoTime(692, this.id)"><p>全脂牛奶來的，嘩!加了多少牛奶啊?</p></a>
+				<a href="#00:11:36.46" id="00:11:36.46" class="lt" onclick="jumptoTime(696, this.id)"><p>它不單止只是油，還有其他的膽固醇脂肪，OK?行不行?</p></a>
+				<a href="#00:11:41.46" id="00:11:41.46" class="lt" onclick="jumptoTime(701, this.id)"><p>所以大家不要介意，我為甚麼加雞粉和油，大家都知道的，加油做甚麼?</p></a>
+				<a href="#00:11:50.46" id="00:11:50.46" class="lt" onclick="jumptoTime(710, this.id)"><p>可以令到它更加滑嘛，行不行?</p></a>
+				<a href="#00:11:57.60" id="00:11:57.60" class="lt" onclick="jumptoTime(717, this.id)"><p>其實跟加北海道的名物，北海道牛乳炒蛋其實是一模一樣的，OK，你說加牛乳、牛奶，其實牛奶全脂牛奶不就是脂肪來的，如果你覺得真的這麼不健康，吃少一點吧 尤其是，你以為北海道牛奶炒蛋，很香、很滑、很正 每天都吃，還是那句，如果有一個正確的健康觀念的話，麻煩少吃多滋味，不要一喜歡就不停地吃，好了 我現在快一點了 只顧著說話。</p></a>
+				<a href="#00:12:36.06" id="00:12:36.06" class="lt" onclick="jumptoTime(756, this.id)"><p>好 這樣就攪拌均勻為止，大家看到的 在螢幕上看到的，我這隻蛋是黃色很多的，深色很多的，試過被兒女問，你這隻蛋放了甚麼 這麼紅、這麼黃，我說因為用了不同的蛋，記住這個叫湖北紅心蛋，好 攪拌均勻，現在主要是攪拌均勻味道，攪拌均勻之後，攪拌均勻之後，就放九王，大家不要介意我這麼多東西說，其實有時候我會說一下歷史。</p></a>
+				<a href="#00:13:17.06" id="00:13:17.06" class="lt" onclick="jumptoTime(797, this.id)"><p>說一下這道菜式有甚麼特色，說一下這道菜的歷史，當中亦都會牽涉到一些烹飪的技巧，放完九王之後就放蔥，OK，希望大家不要介意，有時候我會講一下健康之道。</p></a>
+				<a href="#00:13:39.59" id="00:13:39.59" class="lt" onclick="jumptoTime(819, this.id)"><p>不要看別人放多油就一定不健康，真正的健康之道是甚麼?</p></a>
+				<a href="#00:13:46.59" id="00:13:46.59" class="lt" onclick="jumptoTime(826, this.id)"><p>均衡飲食，大家看到我道路送一定有菜，吃飯一定要有菜，炒過粉我都會放菜，譬如最近我做了炒麵或湯麵上來的影片，大家看到我是不是放很多菜?</p></a>
+				<a href="#00:14:3.59" id="00:14:3.59" class="lt" onclick="jumptoTime(843, this.id)"><p>因為菜可以幫助吸收營養，大家明白的，這些就不說了，去廁所用的，ok?</p></a>
+				<a href="#00:14:13.59" id="00:14:13.59" class="lt" onclick="jumptoTime(853, this.id)"><p>健康有時候很多東西，不是說你所謂的減少用油、用鹽，就等於健康，不是這樣，攝取的量也有過程，攝取的量在醫學上，在藥物學上有所謂的，叫甚麼呢?</p></a>
+				<a href="#00:14:41.59" id="00:14:41.59" class="lt" onclick="jumptoTime(881, this.id)"><p>藥物沉澱?還是甚麼?我忘記了，即是說人體正常對於主要地球物質，有一個消化過程，需要時間，如果當人體消化過程當中，攝取量比消化能力快的時候，就會積聚，積聚多了之後，就會慢慢變成壞的細胞，壞的物質，然後就會影響身體，而且在這個過程中，還要牽涉到積聚量的問題，即是你全積的量，總量到底有多少的問題，字幕由Amara.org社區提供。</p></a>
+				<a href="#00:15:28.18" id="00:15:28.18" class="lt" onclick="jumptoTime(928, this.id)"><p>當你過了一段時間不吸收，身體自然就會消化了，消耗了，就會保持一個相對地平衡的狀態，所以古人有一句說話叫小吃多滋味，多吃怪肚皮，是有道理的，我都經常教導子女，以前小時候，現在長大了就不聽我說了，都說你喜歡吃的東西，不要一味地吃，你一定要隔一段時間就不要吃，隔一段時間再吃，這樣才可以保持你身體健康，行不行。</p></a>
+				<a href="#00:16:15.18" id="00:16:15.18" class="lt" onclick="jumptoTime(975, this.id)"><p>不好意思，花了一段時間，可能又說了一些有些人認為的廢話，但是我認為是健康之道，OK，現在我就直接開爐和大家分享，怎樣去做這個黃埔牛肉炒蛋，請看影片資訊欄的資訊欄，請搜尋【阿輝廚房】，上一條影片，之前發過一條影片，是關於炒肉丁的，大家還記不記得，我怎樣做一個超嫩滑的肉丁，其實黃埔牛肉炒蛋的原理是一樣的。</p></a>
+				<a href="#00:16:59.83" id="00:16:59.83" class="lt" onclick="jumptoTime(1019, this.id)"><p>OK，我現在先開火，夠燒，沒辦法，先抽起鍋，等一會，現在關火，先加水，清水，煮滾，然後去焯牛肉，大家可以在這個時間，腦裏重溫一下，我和大家分享的那條，是炒肉丁，製作超嫩滑的肉粒，豬肉粒的一個方法，這個是黃埔牛肉炒蛋，這個去焯牛肉，做法是一模一樣的，大家現在先想一想，怎樣做?</p></a>
+				<a href="#00:17:40.31" id="00:17:40.31" class="lt" onclick="jumptoTime(1060, this.id)"><p>接下來看看我怎樣做。</p></a>
+				<a href="#00:17:42.31" id="00:17:42.31" class="lt" onclick="jumptoTime(1062, this.id)"><p>等水滾，我再開機，好了，大家，現在水滾了，OK，心裏複雜完，我之前介紹的，做超嫩滑肉粒的做法，大家記不記得是怎樣，水滾，我加牛肉，這個時候我們應不應該動它?</p></a>
+				<a href="#00:18:10.31" id="00:18:10.31" class="lt" onclick="jumptoTime(1090, this.id)"><p>不應該，OK，繼續，任由它滾，這裡我一刀不剪，給大家看看質感的變化，這裡大概需要牛肉比肉粒，快時間熟一點，和需求的生熟程度有分別，牛肉少少生熟，沒所謂，豬肉生熟就一定不行，好了，記住，你想要做一個嫩滑的肉片，或者肉粒，第一時間，下去汆水的時候，可不可以動它?</p></a>
+				<a href="#00:18:47.31" id="00:18:47.31" class="lt" onclick="jumptoTime(1127, this.id)"><p>是不可以，OK，現在就等它，等它煮熟，煮一會兒，煮一會兒後，煮一會兒後，邊緣開始滾動，先不理它，先等肉的表面的生粉凝結，如果我們太快攪拌，那些生粉因為未凝結，很容易脫落，一脫落，肉的表面就會暴露在空氣或水面前，在這情況下，肉很容易過腦，很容易粗糙，還有水分流失，所以我們一開始不動它，現在開始慢慢滾動。</p></a>
+				<a href="#00:19:35.58" id="00:19:35.58" class="lt" onclick="jumptoTime(1175, this.id)"><p>越滾越近心，這時候我們開始動它，這些肉片，邊緣散開的肉片可以了，所以要一直撈起，OK，要一路煮，一路撈起它，可以嗎，不要等它全部熟，牛肉就要注意這方面，OK 可以了嗎，表面一轉色，牛肉就可以拿起，然後反轉它，這個時候我們就可以攪散牛肉，如果它繼續黏著，你不要勉強攪散它，逐塊逐塊，你一移它出來，生肉會有生肉色，你不要動它。</p></a>
+				<a href="#00:20:37.23" id="00:20:37.23" class="lt" onclick="jumptoTime(1237, this.id)"><p>等它一會兒，然後再攪散它，又見到生肉色，又不要動它，牛肉有這個小小的竅門，可以令到所有牛肉的肉質保持嫩滑，當我們攪散所有之後，馬上熄火，你看到所有都鬆了，馬上熄火，這個時候牛肉已經可以吃了，我試試</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:6.23" id="00:21:6.23" class="lt" onclick="jumptoTime(1266, this.id)"><p>嘩，很嫩滑，大家聽到我的聲音嗎?</p></a>
+				<a href="#00:21:13.23" id="00:21:13.23" class="lt" onclick="jumptoTime(1273, this.id)"><p>是絕不含糊的，即是我一咬就斷了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:21:19.23" id="00:21:19.23" class="lt" onclick="jumptoTime(1279, this.id)"><p>大家有沒有吃過這些，經常吃到的嫩滑牛肉，可以嗎?這裡我就不給大家看了，我繼續撈那部分，然後炒蛋再給大家看，記住，嫩滑牛肉和做嫩滑肉丁是一樣的，而且還要加多一點技巧，是什麼呢?</p></a>
+				<a href="#00:21:43.23" id="00:21:43.23" class="lt" onclick="jumptoTime(1303, this.id)"><p>第一，一開始不要攪它，任由它，等它滾水，由邊邊一直滾到芯，但又不要等到芯都滾了，邊邊就開始脫落，一邊煮，一邊撈起脫落的牛肉，這樣就可以了，可以嗎?</p></a>
+				<a href="#00:22:5.23" id="00:22:5.23" class="lt" onclick="jumptoTime(1325, this.id)"><p>我再吃一塊，現在已經浸了很久，我試試</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:11.30" id="00:22:11.30" class="lt" onclick="jumptoTime(1331, this.id)"><p>嘩，好爽，好滑，跟住之後怎樣，當你攪散牛肉的過程當中，一攪散一見到三角色，即刻停，不要動，先讓它滾一滾，跟住見到它一轉色，跟住你繼續攪散，再攪散，又見到三角色，又停一停，這個是一個很重要的技巧，不會攪走所有生粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:22:38.30" id="00:22:38.30" class="lt" onclick="jumptoTime(1358, this.id)"><p>亦都不會令到肉不均勻，三角程度不均勻，可以嗎，焯牛肉少少技巧。</p></a>
+				<a href="#00:22:49.30" id="00:22:49.30" class="lt" onclick="jumptoTime(1369, this.id)"><p>大家我已經撈起牛肉，其實已經燒鑊，我現在抹乾淨鑊先，現在開始炒蛋，稍為燒一燒鑊先，在上一次我同大家分享滑蛋蝦仁的時候，我已經冰水煎一煎蝦仁，因為希望它表面有少少焦香感，但是黃埔牛肉炒蛋，牛肉是不需要再煎的，因為再煎會過老，我這裏要講一講，蝦其實有少少過老是不要緊的，但是牛肉就一定不可以過老，大家不要一本通書就看到老，以為每一樣東西都是剛剛熟就最好，不是的，每一樣東西都有它的生熟程度和接受程度，。</p></a>
+				<a href="#00:23:50.30" id="00:23:50.30" class="lt" onclick="jumptoTime(1430, this.id)"><p>燒了一會鑊之後，先試溫拿手，然後放油，炒蛋的竅門在哪裏呢，炒蛋的竅門在於一開始的時候的高溫，然後馬上收火，馬上收細火慢慢炒，這次我用長柄鑊鏟，為什麼呢?</p></a>
+				<a href="#00:24:24.36" id="00:24:24.36" class="lt" onclick="jumptoTime(1464, this.id)"><p>因為炒滑蛋我會用一個特別技巧，大家會經常問，炒滑蛋為什麼要做這麼複雜的東西，其實炒蛋是有分的，炒滑蛋和普通炒蛋是不一樣的，炒滑蛋是不能反轉來炒的，炒蛋是可以反轉來炒的。</p></a>
+				<a href="#00:24:46.76" id="00:24:46.76" class="lt" onclick="jumptoTime(1486, this.id)"><p>現在這個時候夠熱了，大家聽到聲音嗎?</p></a>
+				<a href="#00:24:55.76" id="00:24:55.76" class="lt" onclick="jumptoTime(1495, this.id)"><p>這個時候馬上收細火，然後馬上放牛肉，很快的，我先說，炒滑蛋是不能反轉來炒的，可以嗎?</p></a>
+				<a href="#00:25:18.76" id="00:25:18.76" class="lt" onclick="jumptoTime(1518, this.id)"><p>現在我收到最細燈心火了，剛下鍋的時候是用大火的，這個時候我們不斷同心圓去攪拌，千萬不要反轉來炒，如果反轉來炒就不是炒滑蛋了，可以嗎?</p></a>
+				<a href="#00:25:42.76" id="00:25:42.76" class="lt" onclick="jumptoTime(1542, this.id)"><p>現在只是利用鑊的餘溫去煮熟蛋，和上次和大家分享的滑蛋炒蝦仁是一模一樣的，現在可以開大一點火，讓蛋快速凝結，記得拿著鑊鏟 扭扭扭 捲捲捲，這樣就可以捲出薄布狀，蛋有皺紋在裏面，這樣就會有薄布的感覺，所以為何叫做黃布炒蛋，到底黃布炒蛋的布字是，廣州黃布的布，黃布軍校的布，還是薄布的布 我都不懂分辨。</p></a>
+				<a href="#00:26:41.17" id="00:26:41.17" class="lt" onclick="jumptoTime(1601, this.id)"><p>好了，這次炒得比上次的滑蛋蝦仁炒得久一點，因為我發覺蛋的份量多，還有鑊的溫度不足，所以我可以繼續炒下去，炒到差不多就可以了，這樣就可以起蛋了，給大家看看效果，最重要的是甚麼，最重要的是蛋還會有少許蛋汁，九王就不需要炒到全熟，大家可能會說，怎麼這麼生 甚麼甚麼，其實很坦白說，每一樣食材都有生熟的接受程度。</p></a>
+				<a href="#00:27:54.17" id="00:27:54.17" class="lt" onclick="jumptoTime(1674, this.id)"><p>九王其實是可以生吃的，大家知不知道雲吞麵一定要加九王，九王是生的，最多給它湯汆一汆 半生熟而已，OK 行不行，這次這個炒蛋 正，這次我貪心了 牛肉多了，蛋不夠，炒下去蛋蓋不過牛肉，所以賣相上還是有少許失手，但是炒的方法和食味口感，大家看不看到，這次比上次炒熟了。</p></a>
+				<a href="#00:28:40.69" id="00:28:40.69" class="lt" onclick="jumptoTime(1720, this.id)"><p>如果你問我，我願意吃哪一種的炒法呢?，即是哪一種的生熟程度呢?</p></a>
+				<a href="#00:28:48.57" id="00:28:48.57" class="lt" onclick="jumptoTime(1728, this.id)"><p>我覺得上次的黑人炒蛋就炒得好看很多，可以嗎?</p></a>
+				<a href="#00:28:53.67" id="00:28:53.67" class="lt" onclick="jumptoTime(1733, this.id)"><p>給大家看看，底部還有蛋汁流出來，記住炒滑蛋，頂到最尾的八、九成就好了，其餘的一成去了哪裡?</p></a>
+				<a href="#00:29:7.87" id="00:29:7.87" class="lt" onclick="jumptoTime(1747, this.id)"><p>其餘的一成，因為大家由炒到上鍋，到飯桌，再到大家夾來吃，其實已經相隔了最少十分八分鐘，那麼，它自熱的溫度就會將裡面的蛋漿都控熟，可以嗎?</p></a>
+				<a href="#00:29:24.77" id="00:29:24.77" class="lt" onclick="jumptoTime(1764, this.id)"><p>蛋就有這個特性，炒蛋，OK?</p></a>
+				<a href="#00:29:28.77" id="00:29:28.77" class="lt" onclick="jumptoTime(1768, this.id)"><p>大家記住，先頭大家都看到，我是沒有反來炒的，OK，現在有少少散的蛋，不是因為炒得不好，是因為我貪心，牛肉多那一頭，可以嗎?總結一下，第一，發蛋不放油，你就不要想著滑蛋，北海道牛乳炒蛋的原理都是一樣，你不要以為放牛奶就健康些，牛奶是要放全脂奶炒蛋才好吃的，你問問那些日本的專業師傅就知道了，OK，所以我們放生油去發蛋。</p></a>
+				<a href="#00:30:8.77" id="00:30:8.77" class="lt" onclick="jumptoTime(1808, this.id)"><p>和北海道牛乳炒滑蛋的原理是一模一樣，主要的成分就是因為它有油脂在裡面，OK，這是第一，第二，就是我們焯牛肉的時候，怎樣焯?</p></a>
+				<a href="#00:30:22.77" id="00:30:22.77" class="lt" onclick="jumptoTime(1822, this.id)"><p>大家太過詳細我就不說了，大家回頭看前面，我焯牛肉的部分，記住不要手多，不要心急，OK?</p></a>
+				<a href="#00:30:33.51" id="00:30:33.51" class="lt" onclick="jumptoTime(1833, this.id)"><p>第三，炒蛋的時候千萬不要反過來炒，那個不是叫炒滑蛋，那個叫炒蛋，炒滑蛋和炒蛋是有基本上的分別的，OK?</p></a>
+				<a href="#00:30:45.51" id="00:30:45.51" class="lt" onclick="jumptoTime(1845, this.id)"><p>大家記住，第四，最後一樣，就是蛋炒到八九成熟，很想碟了，不要擔心，如果不是上到桌面，就會過腦，食家就會批評，OK?</p></a>
+				<a href="#00:30:57.51" id="00:30:57.51" class="lt" onclick="jumptoTime(1857, this.id)"><p>OK?行不行?基本上就是這麼多，好了，炒完菜我當然要去食飯了，這麼大碟，我們三仔可以吃兩餐，不過我女兒很喜歡食，她雖然食菜多，但她食起炒蛋上來的勁，比她哥哥更勁，可能有一半是我女兒食了的，OK?</p></a>
+				<a href="#00:31:16.51" id="00:31:16.51" class="lt" onclick="jumptoTime(1876, this.id)"><p>好，多謝大家收看，拜拜!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——古法芥蘭炒臘味，既不同於專業酒樓，但味道更勝酒樓！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'iM7q1oM_LH0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——古法芥蘭炒臘味，既不同於專業酒樓，但味道更勝酒樓！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今天我會分享如何製作芥蘭炒臘味。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>昨晚我已經預告了，因為我昨晚製作臘味飯時，因為有多了臘味，所以今天我會繼續製作臘味。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>一般家庭廚師不像職業廚房般，每天都可以隨便發辦，而是要視乎家庭有什麼材料。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>通常家庭廚師製作菜式，延續性很高，因為很多時候第一天用不完的材料，就想盡快用第二天或第三天去燒好快，就可以省錢。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>之前我製作過一個古法芥蘭炒土魷，大家可以看到。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>今日同樣地我會用古法生炒芥蘭臘味。</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>材料很簡單，我先介紹材料。</p></a>
+				<a href="#00:01:15.17" id="00:01:15.17" class="lt" onclick="jumptoTime(75, this.id)"><p>材料當然有芥蘭，今天買的芥蘭比前天粗，已經裁好了，大家看看，第一刀第二刀，成三角形，怎樣裁芥蘭呢?</p></a>
+				<a href="#00:01:38.77" id="00:01:38.77" class="lt" onclick="jumptoTime(98, this.id)"><p>麻煩大家去前天的芥蘭炒土魷的視頻，我就很清楚地演示怎樣去裁芥蘭，怎樣去裁走葉子、怎樣去裁去果仁。</p></a>
+				<a href="#00:01:53.37" id="00:01:53.37" class="lt" onclick="jumptoTime(113, this.id)"><p>然後這個臘味已經處理好了，切片了，大家看看，不需要切得太薄，為何我用片字呢?</p></a>
+				<a href="#00:02:6.85" id="00:02:6.85" class="lt" onclick="jumptoTime(126, this.id)"><p>因為臘肉不是用切的方式，是用片的方式，這樣出來的效果才是最好的，好的就是它有嚼勁，還有外形美觀一點，它不會縮在一起，還有延長了它肥瘦之間的距離，即是寬度，變了它沒那麼容易脫落，這是很重要的一個效果，至於怎樣去片臘肉呢?</p></a>
+				<a href="#00:02:35.61" id="00:02:35.61" class="lt" onclick="jumptoTime(155, this.id)"><p>昨天那個臘味大鍋飯，那裡我就已經有演示了，今天我就長話短說不說了，炒臘味通常都是有臘肉、臘腸、潤腸，通常都是這三樣東西，ok?</p></a>
+				<a href="#00:02:54.05" id="00:02:54.05" class="lt" onclick="jumptoTime(174, this.id)"><p>然後佐料就很簡單，只是用薑碎爆鑊，然後拍一拍它，然後剁到不要那麼大粒，即是不要圓夠，這樣又讓它好一點出味。</p></a>
+				<a href="#00:03:11.73" id="00:03:11.73" class="lt" onclick="jumptoTime(191, this.id)"><p>好了，重點就介紹這個是糖酒，那糖酒是甚麼來的呢?</p></a>
+				<a href="#00:03:19.61" id="00:03:19.61" class="lt" onclick="jumptoTime(199, this.id)"><p>在我之前的視頻，即是和大家分享芥蘭炒肚丸的時候，我是有演示過怎樣去開糖酒的，一般大家都知道，有些菜，炒一些菜，蔬菜類，它是需要加料酒的，但是它通常都是炒菜的中途，或者上鍋的時候，它才，即是起鍋的時候才灒些酒進去，但是炒芥蘭，或者是尤其是生炒芥蘭呢，它就不是這樣的，它就是預先要開了一個糖酒在裡面。</p></a>
+				<a href="#00:03:59.49" id="00:03:59.49" class="lt" onclick="jumptoTime(239, this.id)"><p>那裡面有甚麼成分呢?</p></a>
+				<a href="#00:04:1.03" id="00:04:1.03" class="lt" onclick="jumptoTime(241, this.id)"><p>就有片糖、有酒、有少許水，那少許水我是用滾水的，少許水而已，主要的作用就是要開糖，那為甚麼要用滾水這麼誇張呢?</p></a>
+				<a href="#00:04:13.07" id="00:04:13.07" class="lt" onclick="jumptoTime(253, this.id)"><p>為甚麼普通水不行呢?</p></a>
+				<a href="#00:04:14.65" id="00:04:14.65" class="lt" onclick="jumptoTime(254, this.id)"><p>因為呢…，我用的是片糖，大家看到，我用蓋子把它蓋起來，大家要記住，片糖很容易受潮，其實我這塊已經有點變形了，但你知道我這塊片糖放了多久嗎?</p></a>
+				<a href="#00:04:32.07" id="00:04:32.07" class="lt" onclick="jumptoTime(272, this.id)"><p>差不多兩年了，因為我通常很少…除了做糖水，或者炒芥蘭，不然很少用片糖，所以一包片糖回來用得比較久，因為它容易受潮，所以最好用密封瓶，或者最低限度…，這個就是我以前吃的蜂王漿，紐西蘭蜂王漿，用膠瓶，或者雜物瓶，甚至最好用密封瓶裝好片糖，這樣可以放得久一點，我這塊已經放了兩年了，不過放心，糖是很少變形的。</p></a>
+				<a href="#00:05:14.47" id="00:05:14.47" class="lt" onclick="jumptoTime(314, this.id)"><p>就算它受潮了也好，好了，開糖酒的步驟，麻煩大家回到芥蘭桃柚的視頻，清楚地顯示了怎樣去採芥蘭，怎樣開糖酒，OK，麻煩大家回去看，至於這個臘味也是，麻煩大家回去臘味大鑊飯的視頻，那段影片有介紹怎樣去片，這個是臘肉，片得好看，可以增加口感，可以增加美觀，OK，行不行?</p></a>
+				<a href="#00:05:55.83" id="00:05:55.83" class="lt" onclick="jumptoTime(355, this.id)"><p>基本上原料就是這些了，介紹完畢，我就開始起鑊了。</p></a>
+				<a href="#00:06:3.43" id="00:06:3.43" class="lt" onclick="jumptoTime(363, this.id)"><p>好，我已經開火燒了一會兒，大家都看到有煙，都是那個步驟，燒一會兒鑊，然後起煙就放油，然後攪拌一下，繼續起煙，然後做甚麼呢?</p></a>
+				<a href="#00:06:23.15" id="00:06:23.15" class="lt" onclick="jumptoTime(383, this.id)"><p>我們就是要做這個…，先關小火，太熱了，先處理臘味，走油爆一下，這個過程可以將臘味煮熟，和將油份擠出來，現在鑊降溫可以開大火，炒臘味先炒的時候要大火，相對地高溫，當然不要像煎頭那樣，煙都出來了，然後持續地出煙，太過高溫又不好，否則臘味本身就硬，尤其是臘肉，這麼高溫會令它更硬，先前我已經說了。</p></a>
+				<a href="#00:07:18.95" id="00:07:18.95" class="lt" onclick="jumptoTime(438, this.id)"><p>如果大家想看臘肉怎樣開，怎樣片，可以看之前的臘味飯視頻，除此之外，我亦都希望提醒大家，臘味我們需要用滾水浸開，浸大約10至15分鐘，通常這個有甚麼作用呢，第一可以令表面的污漬，因為曬東西很多時候有塵，運送過程有塵，處理過程可能有毛菌，所以要用滾水浸開，浸開大約10分鐘就OK了，看之前的視頻。</p></a>
+				<a href="#00:08:2.95" id="00:08:2.95" class="lt" onclick="jumptoTime(482, this.id)"><p>現在爆一爆，看到臘肉開始透明，馬上起它，現在我熄了火，等一等，因為我不想咳嗽，所以一個視頻一剔過，好了 浸完之後，大家看到我下鍋的時候，放的油比正常炒菜的油少，為什麼呢?因為臘味會出油嘛，很多肥膏、肥脂，現在大家看到很多油了，比起之前下鍋的時候還多，這些拿回來用，但都不夠炒菜，OK。</p></a>
+				<a href="#00:08:59.70" id="00:08:59.70" class="lt" onclick="jumptoTime(539, this.id)"><p>怎樣才算是走油好呢?</p></a>
+				<a href="#00:09:6.70" id="00:09:6.70" class="lt" onclick="jumptoTime(546, this.id)"><p>就是輕輕一點點，有些焦焦的，輕輕就可以了，這樣走過的油，炒起來就很好吃，很香口的，你知道大阪這些處理的東西，香口就可以了，繼續開火，開大火，拿回臘味油來用，但這裡還不夠的，因為那裡雖然我裁了一些芥蘭，但都超過一斤，所以再放多一點點，輕輕的油份，以往我都經常強調要燒鑊，我們家廚可以炒到比餐廳還要好味，或者至低限度達到餐廳的效果。</p></a>
+				<a href="#00:09:49.70" id="00:09:49.70" class="lt" onclick="jumptoTime(589, this.id)"><p>是要燒鑊的，但是呢，我沒有燒鑊，直接開火，然後直接加油。</p></a>
+				<a href="#00:09:58.70" id="00:09:58.70" class="lt" onclick="jumptoTime(598, this.id)"><p>因為通常燒鑊的過程是要新鑊，即是剛剛甚麼都沒有的情況下，燒鑊才有用，但是我們如果開了鑊，沒有洗過鑊，本身鑊有油的話，就不需要燒鑊的過程，直接放油就可以了，現在看到煙了，然後放薑爆一下，千萬不要心急，稍為爆一下薑，讓薑出味，這個生炒芥蘭。</p></a>
+				<a href="#00:10:34.70" id="00:10:34.70" class="lt" onclick="jumptoTime(634, this.id)"><p>特別強調的是薑味，如果你不是爆過薑的話，薑味就沒那麼突出，變成那個特色就沒甚麼了，你看看很多煙，證明溫度夠了，為甚麼我經常說要燒到鑊起煙，才放材料呢，就是這個原因，現在大家看到我很勤力翻動菜，為什麼呢?</p></a>
+				<a href="#00:11:7.76" id="00:11:7.76" class="lt" onclick="jumptoTime(667, this.id)"><p>我盡量令到每一段的菜，每一件菜都是沾有油份和碰過熱的，這個過程很重要的，為什麼有很多熟手的廚師都會有拋鑊這個動作呢?</p></a>
+				<a href="#00:11:22.84" id="00:11:22.84" class="lt" onclick="jumptoTime(682, this.id)"><p>其中一個作用就是這裡了，要將所有的料都要碰過火，這樣就很好吃的，好了，這個時候呢。</p></a>
+				<a href="#00:11:31.64" id="00:11:31.64" class="lt" onclick="jumptoTime(691, this.id)"><p>留意這個程序，這個時候我就要加這個酒了，嗯，很香，那些特有的薑汁炒芥蘭的香味。</p></a>
+				<a href="#00:11:53.20" id="00:11:53.20" class="lt" onclick="jumptoTime(713, this.id)"><p>好，這個時候上鍋蓋，上鍋蓋通常是多少呢?</p></a>
+				<a href="#00:11:56.96" id="00:11:56.96" class="lt" onclick="jumptoTime(716, this.id)"><p>上一次都有說過的，就是30秒至45秒之間，不可以超過50秒的，至於為什麼會有這個時間的差異呢?</p></a>
+				<a href="#00:12:5.44" id="00:12:5.44" class="lt" onclick="jumptoTime(725, this.id)"><p>就要視乎芥蘭的粗幼，大家都知道有些芥蘭很粗的，很大塊的，譬如說今天我買回來的芥蘭，就粗過上一次我芥蘭炒牛肉的芥蘭，所以今天的時間就會長過上一次，上一次呢，其實為什麼我會說我有一點失敗呢?</p></a>
+				<a href="#00:12:25.64" id="00:12:25.64" class="lt" onclick="jumptoTime(745, this.id)"><p>就是因為過熟，為什麼過熟呢?</p></a>
+				<a href="#00:12:27.44" id="00:12:27.44" class="lt" onclick="jumptoTime(747, this.id)"><p>就因為上蓋的時間長了，好了，這個時候可以了。</p></a>
+				<a href="#00:12:39.68" id="00:12:39.68" class="lt" onclick="jumptoTime(759, this.id)"><p>這個時候我只是放了糖而已，什麼都沒有放過的，沒有調味的，好，這個時候呢，我們就可以放回南梨下去了，現在就沒有上一次那麼高溫了，上一次大家聽聲音都聽到的，這一次就沒那麼大聲，就要拖長一點時間，順便我講一下，芥蘭怎樣判斷它全熟呢，這個邊邊變了半透明的綠色，但中間是白色的，即是還沒熟，這些菜尾的。</p></a>
+				<a href="#00:13:23.07" id="00:13:23.07" class="lt" onclick="jumptoTime(803, this.id)"><p>看到嗎? 開始變了半透明的綠色，即是已經全熟了，所以這個芥蘭稍微炒多一會兒就OK了，這些芥蘭頭比較粗，比較粗，看到還有白色的，它一轉色就可以了，你不要再炒了。</p></a>
+				<a href="#00:13:49.07" id="00:13:49.07" class="lt" onclick="jumptoTime(829, this.id)"><p>這個時候就要加調味了，差不多了，加調味就是一斤芥蘭，所以就放一斤鹽，一斤鹽就夠了，為甚麼呢? 因為臘味本身有味，不用放太多，然後放半斤雞粉，半斤，基本上就完成了，基本上咁就完成㗎喇啱啱好我調完味呢嗰啲芥蘭就差唔多全部轉曬色啦即係得㗎啦可以收得火。</p></a>
+				<a href="#00:14:30.58" id="00:14:30.58" class="lt" onclick="jumptoTime(870, this.id)"><p>咁呀因為我落咗糖水呀咁所以呢可能會有水如果大家覺得係多水嘅你可以打個薄嘅玻璃片落去咁但係其實呢啲菜呢通常咁樣生炒菜呢係唔需要打玻璃片，但係我係好唔習慣好唔鍾意嗰啲職業廚房啦識得火啦即係好唔鍾意嗰啲職業廚房呢炒碟菜都係唔係都打個片落去即係尤其是淮揚菜呢我好坦白講我真係唔係咁鍾意囉，好喇咁呀其實呢炒一個臘味炒芥蘭就好簡單嘅咁我連埋煮飯即係控制個時間呢我保證你30分鐘就已經有飯食㗎喇先洗落米啦跟住然之後呢嗰啲米水攞嚟即刻浸咗啲芥蘭啦即刻浸臘味啦咁呢就浸臘味呢。</p></a>
+				<a href="#00:15:22.58" id="00:15:22.58" class="lt" onclick="jumptoTime(922, this.id)"><p>大概浸十分鐘到啦跟住然之後嗰啲米水浸到啲芥蘭都咁上下啦跟住然之後就可以係洗菜啦切菜啦切切臘味啦咁樣個時間剛剛好嘅咁呢個時間呢連連切連切帶炒呢其實15分鐘內呢個係即係芥蘭炒臘味就會完成㗎啦。</p></a>
+				<a href="#00:15:48.58" id="00:15:48.58" class="lt" onclick="jumptoTime(948, this.id)"><p>因為唔好意思呀我要就我隻中式鑊呀所以所以呢就唔係咁咩即係唔係咁就手ok喇咁咪一碟古法臘味炒芥蘭就完成喇係咪條命好簡單呀係咪炒起身好簡單呀呢個呢既野味又好送飯啦一個cosup俾大家睇下既野味又好送飯嘅菜菜色就係咁樣啦冬天食正秋風起食臘味呀，咁呢個係其中一個大家睇到嘅今日好夠油所以呢就畀上一次呢嗰個即係由於靠土有炒芥蘭呢就令身好多嘅咁嘅菜炒出嚟就正呀ok咁呀咁呀呢個簡單嘅菜式就咁樣做完啦咁呀我又要去食飯啦因為其實已經跳咗掣㗎喇ok呢個簡單菜式都係30分鐘有飯食，好我要食飯啦拜拜。</p></a>
+</div>
+	</body>
+</html>

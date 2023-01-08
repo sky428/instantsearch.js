@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——豉汁蒸黃骨魚，這是一道珠三角的家常菜，加上自製的萬用豆豉醬，就變成鮮香嫩滑的惹味送飯神器，製作其實很簡單，只需細心即可！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lwZmthOAD70',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——豉汁蒸黃骨魚，這是一道珠三角的家常菜，加上自製的萬用豆豉醬，就變成鮮香嫩滑的惹味送飯神器，製作其實很簡單，只需細心即可！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家晚上好!</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>嘩!又係亂七八糟!</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>係呀!實戰環境就係咁㗎啦!</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>背後成排人等住我開飯呀!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>得鬼閒整到咁乾淨、咁整齊!</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>係咪咁講呀?</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>大家屋企嘅廚房都係咁㗎啦!</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>今晚呢，我想同大家分享啲乜嘢呢?</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>我今日喺鮮魚檔見到好嘢喎!</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>乜嘢嚟㗎?</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>黃骨魚呀!</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>黃骨魚係一種淡水魚，即近唐虱。</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>本來我今日見到有唐虱嘅，咁我想蒸唐虱食，但係突然間眼邊一閃，有黃骨魚喎!</p></a>
+				<a href="#00:00:42.00" id="00:00:42.00" class="lt" onclick="jumptoTime(42, this.id)"><p>所以我就買咗黃骨魚。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>黃骨魚佢個肉更加嫩，如果大家覺得唐虱魚個肉都好嫩嘅話呢，黃骨魚個肉就更加嫩。</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>咁今晚我想同大家分享啲乜嘢呢?</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>就係豉汁蒸黃骨魚!</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>我首先落去洗咗佢先!</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>咁我又稍為攞水沖一沖佢呀!</p></a>
+				<a href="#00:01:7.00" id="00:01:7.00" class="lt" onclick="jumptoTime(67, this.id)"><p>大家唔好睇我呢個污糟水呀!</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>呢個叫米水、糞米水!</p></a>
+				<a href="#00:01:14.00" id="00:01:14.00" class="lt" onclick="jumptoTime(74, this.id)"><p>不懂得關埋，反而出個故意先呀!</p></a>
+				<a href="#00:01:18.00" id="00:01:18.00" class="lt" onclick="jumptoTime(78, this.id)"><p>唔好再連入廚基本嘅知識都唔知，就係度亂咁講嘢!</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>跟住有咩材料呢?</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>就薑啦!跟住辣椒一隻啦!</p></a>
+				<a href="#00:01:32.00" id="00:01:32.00" class="lt" onclick="jumptoTime(92, this.id)"><p>呢個先係重點呀!</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>呢個係乜嘢呀?</p></a>
+				<a href="#00:01:35.00" id="00:01:35.00" class="lt" onclick="jumptoTime(95, this.id)"><p>呢個就係我自己打嘅豉椒醬!</p></a>
+				<a href="#00:01:41.00" id="00:01:41.00" class="lt" onclick="jumptoTime(101, this.id)"><p>即係豆豉醬，我屋企萬用豆豉醬!</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>咁我稍為呢啲魚呢，我擺埋一邊先!</p></a>
+				<a href="#00:01:50.00" id="00:01:50.00" class="lt" onclick="jumptoTime(110, this.id)"><p>咁啲嘢擺埋一邊先!</p></a>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>咁啲魚呢，我郁一郁過嚟比大家睇下!</p></a>
+				<a href="#00:01:55.00" id="00:01:55.00" class="lt" onclick="jumptoTime(115, this.id)"><p>咁啲魚基本上都係嗰種清潔嘅手勢㗎啦!</p></a>
+				<a href="#00:02:2.00" id="00:02:2.00" class="lt" onclick="jumptoTime(122, this.id)"><p>就係攞水搓一搓嗰啲胸腔啦!</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>搓一搓啲腮位啦!</p></a>
+				<a href="#00:02:9.00" id="00:02:9.00" class="lt" onclick="jumptoTime(129, this.id)"><p>就等佢冇咁腥啦!OK!</p></a>
+				<a href="#00:02:14.22" id="00:02:14.22" class="lt" onclick="jumptoTime(134, this.id)"><p>因為呢個黃骨魚呢就今日比較大條呀，咁可能呢大家會見到有陣時會細條啲嘅，咁呢個大條呢今日今晚呢，我哋三個人食飯，所以呢就一人一條呢就剛剛好㗎啦，大家睇唔睇到呀?</p></a>
+				<a href="#00:02:30.22" id="00:02:30.22" class="lt" onclick="jumptoTime(150, this.id)"><p>我捽完之後呢，佢馬上呢，就即係，變成紅色啦因為有血水呀嘛，咁呢啲呢就係我哋基本上呢，清潔海鮮，呢個就真係污糟啦要倒啦，咁清潔海鮮呢我哋必需要做嘅一啲功夫嚟嘅，咁黃骨魚呢大家要小心喎，呢啲刺呢即係呢個位呢，唔好對到焦呀，呢個位呢佢有啲毒刺嘅，咁通常呢個魚檔呢，就會幫你啄咗佢㗎啦咁我叫魚檔幫我劏嘅，咁但係有陣時佢忙中有錯呢。</p></a>
+				<a href="#00:03:8.22" id="00:03:8.22" class="lt" onclick="jumptoTime(188, this.id)"><p>大家要檢查一下，最好呢就係自己檢查一下呢，就唔好畀佢吉親啦吉親嘅話好赤痛㗎ok，咁呀呢個呢個背背脊呢，都係有呢個毒刺嘅，咁都係啦，咁魚檔幫你啄咗佢咁你睇一睇佢啦，咁呀通常佢都會照做㗎啦但係可能會，忙中忙中有錯啄漏呀ok，好啦跟住然之後呢，而家呢進入呢我哋一般處理，呢個係即係我處理呢個。</p></a>
+				<a href="#00:03:40.22" id="00:03:40.22" class="lt" onclick="jumptoTime(220, this.id)"><p>魚嘅基本程序啦大家記唔記得呀我點做呀，記唔記得呀，冇錯啦咁呢就首先呢就係，攞少少鹽啦，先將它反轉，加少許鹽，將它攪拌一下，然後，胡椒碎，胡椒粉，其實在這個部份，胡椒粉會更好，OK?</p></a>
+				<a href="#00:04:22.92" id="00:04:22.92" class="lt" onclick="jumptoTime(262, this.id)"><p>好，然後加少許酒，這個就是基本上標準的除腥方法，大家要記住，這個垃圾袋，大家都清楚的，我看慣了，如果看不慣的話，我告訴大家，家廚，香港的家廚通常都是這樣的，方便自己，然後，拿手搓勻，小心那三條刀刺，雖然說是斬了，但是有機會會刺傷手，大家要注意，將這三條魚，酒、鹽，搓勻，大家記不記得我用鹽是什麼意思?</p></a>
+				<a href="#00:05:14.74" id="00:05:14.74" class="lt" onclick="jumptoTime(314, this.id)"><p>令它脫水，然後，酒和胡椒是什麼意思?</p></a>
+				<a href="#00:05:20.06" id="00:05:20.06" class="lt" onclick="jumptoTime(320, this.id)"><p>除了它的二氧化碳，就一定可以令它的腥味全部去掉，OK?</p></a>
+				<a href="#00:05:26.38" id="00:05:26.38" class="lt" onclick="jumptoTime(326, this.id)"><p>這個就是標準順德人的蒸魚法，我這些蒸魚，我告訴你，我很多蒸魚，基本上隔夜，通常就算隔夜，現在就清洗，隔夜翻熱也不會腥，但是大家應該有個經驗，那些魚，蒸魚，或者炆魚也好，一翻熱就會很腥，但是我這樣的做法，就算翻熱隔夜吃也不會腥，我這個很有信心，因為幾十年都是這樣做，我兒子特別喜歡吃，有時候我兒子還會抵死。</p></a>
+				<a href="#00:06:11.98" id="00:06:11.98" class="lt" onclick="jumptoTime(371, this.id)"><p>他說，老爸，好像魚隔夜了，凍了更好吃，我說不是說你不腥嗎?</p></a>
+				<a href="#00:06:18.22" id="00:06:18.22" class="lt" onclick="jumptoTime(378, this.id)"><p>他說不腥，很好吃，希望大家明白，每一個處理的手法都會有它的效果，好了，除了我們已經沖洗乾淨，你不要以為，為什麼很多人，我特意讓大家看看這盆水，這盆水還有些血水，有些雜質在這裡，為什麼很多廚師都會教你，蒸完的蒸魚水不要，原因就是，看看這盆水，你以為洗完之後很乾淨嗎?</p></a>
+				<a href="#00:07:1.59" id="00:07:1.59" class="lt" onclick="jumptoTime(421, this.id)"><p>要經過我先頭的程序才叫真正乾淨，所以很多時候，蒸魚水都會帶有很濃烈的腥味，尤其是某些魚，所以大家，我不厭其煩，我每條煮的魚，我都教大家用這個方法，為什麼呢?</p></a>
+				<a href="#00:07:21.63" id="00:07:21.63" class="lt" onclick="jumptoTime(441, this.id)"><p>因為煮完之後一點都不腥，OK?</p></a>
+				<a href="#00:07:24.19" id="00:07:24.19" class="lt" onclick="jumptoTime(444, this.id)"><p>好了，這個時候，煮完之後還要做多一個程序，那麼，熟悉我的朋友，看慣我的朋友都知道是怎樣的，就是把水吸乾，本來先頭有些殘，我現在，我這樣煮一煮之後，我現在摸上去魚身都很爽的了，好，這樣，吸乾水分，那麼，做完這個步驟之後，之所以叫黃骨魚，你看它好像，那些油都是黃的，在肚子上，那麼，就是，做完這個步驟之後，我可以保證大家。</p></a>
+				<a href="#00:08:1.95" id="00:08:1.95" class="lt" onclick="jumptoTime(481, this.id)"><p>那些魚汁就可以用回的，那麼，我之前都講過了，很多時候為什麼一定要用蒸魚豉油，原因就是因為，每個師傅都會教你，把魚汁倒掉，那麼你變成了，你吃不回原本那條魚的鮮味，OK，那麼，所以就要靠這個蒸魚豉油去提鮮，提出它的味道，OK，那麼，現在基本上，那些水都七七八八沒有了，那麼，那麼大家可以放心，那麼。</p></a>
+				<a href="#00:08:38.87" id="00:08:38.87" class="lt" onclick="jumptoTime(518, this.id)"><p>那些魚汁蒸出來，都不會腥的，OK，那麼處理完了，我先放一旁，然後我做什麼呢，我來刮薑啊，大家也看到，我基本上都是一般家廚的手法，為什麼我經常要放一個垃圾袋在我面前呢?</p></a>
+				<a href="#00:09:8.86" id="00:09:8.86" class="lt" onclick="jumptoTime(548, this.id)"><p>原因就是方便嘛!OK?</p></a>
+				<a href="#00:09:18.59" id="00:09:18.59" class="lt" onclick="jumptoTime(558, this.id)"><p>刮薑很簡單，洗乾淨，切薑，其實用我配方的豆豉醬，買我豆豉醬就是這一盒，我會在說明那裡給大家連結，怎樣製作，切薑就很簡單，拍平它，напрoksacement</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:56.82" id="00:09:56.82" class="lt" onclick="jumptoTime(596, this.id)"><p>� ă，balanced，eremy，вол</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:58.70" id="00:09:58.70" class="lt" onclick="jumptoTime(598, this.id)"><p>playlist，ube，resol 당，абат，Tomato</p></a>
+				<a href="#00:09:56.00" id="00:09:56.00" class="lt" onclick="jumptoTime(596, this.id)"><p>رب切，até，atisfぇ，maioria，你想切多幼都可以，你想切多粗都可以，其實這樣切，薑就切得整齊些，不會硬硬的，好，搞定，如果大家想切幼些，再幼些都可以，可以給大家看看有多幼，上次有個，不要說我記仇，有時我真的不明白，大家的工作環境不同，你有意見就大家分享一下，無需要說自己一日切十斤薑。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:45.63" id="00:10:45.63" class="lt" onclick="jumptoTime(645, this.id)"><p>然後說自己切得多幼，我要再幼些都可以，主要視乎用途，切那麼幼做甚麼呢，很多時候要切到那麼幼，就是因為我要開薑草，吃蟹草就可以切到那麼幼，如果蒸魚隨便切，差不多就可以，但這次我都切得很幼，又切快了，免得又被人說，這些不夠專業，怎樣怎樣，大哥，我真的不明白那些人甚麼心態，大家不要介意我那麼多廢話。</p></a>
+				<a href="#00:11:25.63" id="00:11:25.63" class="lt" onclick="jumptoTime(685, this.id)"><p>有時我主要想說人生道理，做人需不需要做到這樣呢，我想問一下那些人，大家各有各做，對不對，如果你不肯拍片和大家分享，你有更高的技巧，你說來都沒有用，你柴人台沒有意思，好，弄完之後，這個豆豉醬，之前有朋友說，我的豆豉醬很硬身，很乾，因為我要長期儲存，如果它濕的話就不行，我拿一隻辣椒出來，我先洗了，大家都看得見。</p></a>
+				<a href="#00:12:16.28" id="00:12:16.28" class="lt" onclick="jumptoTime(736, this.id)"><p>切辣椒絲，如果大家不怕吃辣的話，即是不喜歡吃辣的話，這個辣椒絲就少放一點，或者不放也可以，大家看到我這個辣椒很大隻，這個叫泰國鳳眼椒，我喜歡用它，即是用一隻就夠了，平時，OK，好，然後，還很香，我這裡已經放了一個多月了，由二、三月放到現在，即是足足有兩、三個月了，OK，為什麼我要炒到這麼乾呢，可以長期儲存嘛。</p></a>
+				<a href="#00:12:52.28" id="00:12:52.28" class="lt" onclick="jumptoTime(772, this.id)"><p>好，然後大概放兩大茶匙，那麼，先前就說了，有些朋友就說，你很乾，很難用，所以這個時候我們就要開它，可以放少許油，然後呢，就加少許水，熟的水，不是生水，少許就可以了，開它就可以了，這個炒過的豆豉醬，有些新的朋友不知道，不知道我會炒了豆豉醬，這些豆豉醬，它裡面我加了陳皮、蒜頭、薑蓉，有蠔油、糖、少許雞粉。</p></a>
+				<a href="#00:13:47.28" id="00:13:47.28" class="lt" onclick="jumptoTime(827, this.id)"><p>所以這個辣椒醬，不是辣椒醬，這個豆豉醬就很夠味，而且是偏甜的，那麼，等一會我們蒸熟了之後，我們就可以做什麼，我們就可以，就這樣放生抽，再配合那個不腥的魚汁，這樣蒸魚就會很出彩，OK，行不行，大家看到嗎，現在我攪稀，我的萬用豆豉醬就是這樣用的，那麼，我之前不是加了水和油嗎，其實蒸魚我是用油的。</p></a>
+				<a href="#00:14:28.28" id="00:14:28.28" class="lt" onclick="jumptoTime(868, this.id)"><p>不過我就是不想被人說口實，就是說我用油太多，所以我就用水去開它，這個時候每條魚就放勻，豆豉醬開好之後，放一年半或幾個月都不怕，亦有些朋友告訴我，一個星期不用吃完，為甚麼?</p></a>
+				<a href="#00:15:8.04" id="00:15:8.04" class="lt" onclick="jumptoTime(908, this.id)"><p>他說我送給朋友，自己又很喜歡吃，吃著吃著就吃了很多，OK，我這個豆豉醬基本上不放薑絲都不會腥，為甚麼我會放薑絲?之前蒸魚我都解釋過，因為我本人很喜歡吃經過豆豉醬浸過的薑絲，給大家看看，基本上拿去蒸就可以了，等我開火蒸的時候再跟大家分享，就這樣，待會見，大家先頭我已經跟大家介紹了怎樣處理黃骨魚，現在水滾了，當然要放魚下去蒸。</p></a>
+				<a href="#00:15:58.20" id="00:15:58.20" class="lt" onclick="jumptoTime(958, this.id)"><p>蒸魚我經常都說8分鐘、10分鐘，其實原理是怎樣來的呢?</p></a>
+				<a href="#00:16:9.48" id="00:16:9.48" class="lt" onclick="jumptoTime(969, this.id)"><p>我先上鍋蓋，先調時間，這條魚，3條魚算不算太厚身，所以8分鐘就夠了，其實蒸東西的方法是怎樣計算的呢?</p></a>
+				<a href="#00:16:29.48" id="00:16:29.48" class="lt" onclick="jumptoTime(989, this.id)"><p>一般來說，就是計重量乘以0.8就OK了，即是說，通常我們買的魚回來，10兩、11兩，大概蒸8分鐘、9分鐘，如果超過一斤的話，12分鐘一路上，我們家廚來說，很少會蒸一斤半以上的，所以很難得會蒸超過20分鐘的，OK，記住蒸魚的時間是0.8，重量計算，乘以0.8，基本上是錯不了的。</p></a>
+				<a href="#00:17:7.32" id="00:17:7.32" class="lt" onclick="jumptoTime(1027, this.id)"><p>這是一個方法，如果你說，不是的，這麼難計算，我不懂得計算，怎麼辦呢?</p></a>
+				<a href="#00:17:14.02" id="00:17:14.02" class="lt" onclick="jumptoTime(1034, this.id)"><p>一般來說，如果薄的魚，薄到像我們手指般薄的話，一般來說6分鐘就可以了，如果是厚身一點，本身有福康，或者各樣，厚到這麼厚，大概8分鐘起跳，那就一定錯不了，但是記住，無論你蒸多久都好，蒸魚，我們很少會蒸過12分鐘，如果你還是怕說，不行，我又怕過熟，但又怕不夠熟怎麼辦呢?</p></a>
+				<a href="#00:17:45.02" id="00:17:45.02" class="lt" onclick="jumptoTime(1065, this.id)"><p>有什麼辦法呢?上次，我在蒸生魚那裡，我有提過的，我就說，撬開鍋蓋，看到魚眼珠凸了出來，白色的，整個魚眼珠凸了出來，爆了出來，那就一定熟了，因為連魚頭這麼大的胸腔，它都可以熟的話，魚肉就一定熟的，OK，行不行?</p></a>
+				<a href="#00:18:11.52" id="00:18:11.52" class="lt" onclick="jumptoTime(1091, this.id)"><p>這個基本上蒸魚的技巧，其他的就不需要了，直接計時就可以了，等一會蒸好了之後，我放蔥，放蔥，灒油，我再跟大家分享，好了，8分鐘響了，先關掉火，看看結果如何，看看，嘩，很多汁，我剛才說8分鐘就一定熟，那怎樣去確認它熟不熟呢?</p></a>
+				<a href="#00:18:41.52" id="00:18:41.52" class="lt" onclick="jumptoTime(1121, this.id)"><p>大家，看不看得到魚眼?</p></a>
+				<a href="#00:18:47.52" id="00:18:47.52" class="lt" onclick="jumptoTime(1127, this.id)"><p>我近鏡給大家看一下，魚眼一蒸熟了，它就會發白，然後就會爆眼珠，它凸了眼珠出來就一定熟的，蒸魚最好的結果就是，剛剛好熟，剛剛好，黏著一點點骨頭就最好，OK，那我現在就放蔥下去，我們香港人之所以蒸魚蒸得好吃呢，原因就是，我們很講求、很著重，就是蒸魚的時候，先關掉抽氣，吵著大家，蒸魚的時候很講求的。</p></a>
+				<a href="#00:19:31.39" id="00:19:31.39" class="lt" onclick="jumptoTime(1171, this.id)"><p>就是剛剛好熟，還有，我們的蔥，我們通常都不會翻熟的，就是不會焗熟它，OK，我知道很多家廚就怕蔥不熟，其實蔥要生蔥，然後潑滾油，效果才是最好的，OK，我因為喜歡吃蔥，所以放很多蔥，那好了，這裡基本上就是這樣了，現在大家是不是看到很多汁，如果大家不想要太多汁怎麼辦呢，那就倒掉。</p></a>
+				<a href="#00:20:6.39" id="00:20:6.39" class="lt" onclick="jumptoTime(1206, this.id)"><p>剩下大概幾湯匙的份量，為什麼呢?</p></a>
+				<a href="#00:20:14.39" id="00:20:14.39" class="lt" onclick="jumptoTime(1214, this.id)"><p>太多的水，其實就會影響魚味，當然，我有些蒸魚，我會特意多留一點汁，為什麼呢?因為它特別好吃，譬如上一次那個，蒜子蒸龍躉腩，因為我醃過的，那些醃過，它本身有味道的，所以我不怕留，但是這些，我就盡量不要留太多，倒回鍋裡就可以了，然後呢，我們就進入下一個程序了，等一下我再開機和大家分享，不要走開，不要關機。</p></a>
+				<a href="#00:20:49.39" id="00:20:49.39" class="lt" onclick="jumptoTime(1249, this.id)"><p>我還要總結那個才是最精彩的部分，好了，現在我已經燒滾了油，現在我就潑滾油下去，潑滾油下去蔥花、蔥絲那裡，大家不用怕蔥不熟，其實最好吃的效果，其實就是在滾油潑下去的蔥花，然後再加上這個醬油，這個蒸魚就簡直是完美到不能夠形容了，好了，我們倒豉油的時候就倒回蔥花那裡，然後再把滾油倒進去。</p></a>
+				<a href="#00:21:38.24" id="00:21:38.24" class="lt" onclick="jumptoTime(1298, this.id)"><p>把蔥花的蔥汁灑進去，然後再用豉油，把蔥的表面淋上去，再把油灑進去，整條魚就很鮮美了，這個就是豉汁蒸黃骨魚，本身是珠江一帶流行的蒸魚菜式，這個主要是吃它的嫩滑和香，所以我們不應該蒸太久，反正香港人也好，粵菜也好，我們講求蒸魚剛剛好熟，最好蒸好之後上枱撥開魚肉，剛剛好魚骨還黏著一點肉，就為之最fit、最好的蒸魚效果。</p></a>
+				<a href="#00:22:38.09" id="00:22:38.09" class="lt" onclick="jumptoTime(1358, this.id)"><p>可能外省人喜歡蒸熟一點，他會跟大家說要蒸長時間一點，其實不是的，不過當然每一道菜都有不同的吃法，吃過這種蒸魚法，基本上回不了頭，現在總結一下，近鏡給大家看看，有幾樣東西，第一，大家要記住我所有蒸魚的菜式，或其他煮魚的菜式，基本上都一定是經過什麼?</p></a>
+				<a href="#00:23:13.61" id="00:23:13.61" class="lt" onclick="jumptoTime(1393, this.id)"><p>酒、鹽、胡椒粉，這三樣醃過之後才完成，為什麼呢?</p></a>
+				<a href="#00:23:22.31" id="00:23:22.31" class="lt" onclick="jumptoTime(1402, this.id)"><p>這是錯誤的，大家不要誤會，為什麼這樣說呢?</p></a>
+				<a href="#00:23:29.29" id="00:23:29.29" class="lt" onclick="jumptoTime(1409, this.id)"><p>不要誤會以為拿水沖洗乾淨就一定乾淨，其實不是的，魚身表面還有很多的二線體，而這個不是二線體，而是二線菌，而這個二線菌，就是產生腥臭味的最重要的來源，如果我們能夠完全清除，我可以跟大家說，無論大家怎樣處理魚都不會腥，信德人之所以全世界出名，吃魚、蒸魚、美食，為什麼呢?</p></a>
+				<a href="#00:24:9.59" id="00:24:9.59" class="lt" onclick="jumptoTime(1449, this.id)"><p>他就是用了我剛才說的方法，另外，當然有一個題外話，信德人養魚有一個叫做，我忘記了叫做沉澱法還是什麼法，沉土法還是什麼法，可以令到魚完全不腥，就是在賣之前餓魚15天，用清水不斷換水，養魚15天，然後才拿出去應試，所以全世界很奇怪的一件事就是，淡水魚可以吃魚生的嗎?</p></a>
+				<a href="#00:24:42.21" id="00:24:42.21" class="lt" onclick="jumptoTime(1482, this.id)"><p>你不要理會，信德就有個信德魚生，很有名的，為什麼呢?</p></a>
+				<a href="#00:24:47.39" id="00:24:47.39" class="lt" onclick="jumptoTime(1487, this.id)"><p>就是因為他們有清理二線菌這個概念，而清理二線菌，除了我剛才介紹的酒鹽胡椒洗魚之外，就是剛才說的養魚技術，好了，當你做了這個過程之後就不腥了，但也不是的，還有很多其他的程序，我用的是自己打的豆豉醬，大家可能會問，如果第一次看的話會問，也沒有吃過我分享的豆豉醬，自製萬用豆豉醬的那種野味，大家會問為什麼要自己做豆豉醬。</p></a>
+				<a href="#00:25:29.39" id="00:25:29.39" class="lt" onclick="jumptoTime(1529, this.id)"><p>為什麼不是直接拌呢?</p></a>
+				<a href="#00:25:30.89" id="00:25:30.89" class="lt" onclick="jumptoTime(1530, this.id)"><p>我媽媽那一代他們是會自己拌的，通常是蒜頭豆豉，糖醋醬油，但這樣拌勻，有個問題是它不能完全散發出豆豉的香味，而且蒜蓉是生的，變成有種辛辣的感覺，大家可能會覺得還差一點，這是第一，第二就是如果你沒有炒豆豉醬，沒有加陳皮下去，變相你的豆豉醬很容易蒸魚會腥，但是如果用我們自製的萬用豆豉醬，因為加了陳皮下去。</p></a>
+				<a href="#00:26:11.48" id="00:26:11.48" class="lt" onclick="jumptoTime(1571, this.id)"><p>魚就算你不放薑也不會腥，所以為什麼酒樓，你會發覺他們蒸魚丸是不會放薑的，但是一樣那麼惹味，為什麼呢?</p></a>
+				<a href="#00:26:23.28" id="00:26:23.28" class="lt" onclick="jumptoTime(1583, this.id)"><p>因為那些豆豉醬，因為那些豆豉醬有陳皮，ok?</p></a>
+				<a href="#00:26:26.60" id="00:26:26.60" class="lt" onclick="jumptoTime(1586, this.id)"><p>行不行?</p></a>
+				<a href="#00:26:27.44" id="00:26:27.44" class="lt" onclick="jumptoTime(1587, this.id)"><p>好了，然後呢，你蒸好了之後，我看到很多人習慣怕蔥不熟，先焗一焗，其實這個動作是不好的，正確的動作是什麼呢?</p></a>
+				<a href="#00:26:39.20" id="00:26:39.20" class="lt" onclick="jumptoTime(1599, this.id)"><p>就是直接生蔥蘸熟油，這個效果才是最能夠發揮，我們香港人蒸魚，或者是粵菜裡面蒸魚的精髓，最後的提香，ok?</p></a>
+				<a href="#00:26:54.52" id="00:26:54.52" class="lt" onclick="jumptoTime(1614, this.id)"><p>行不行?</p></a>
+				<a href="#00:26:55.04" id="00:26:55.04" class="lt" onclick="jumptoTime(1615, this.id)"><p>好了，說到熟與不熟，先前說過了，重量乘0.8，一定錯不了，一般來說，我們很少，家廚來說，很少會蒸，買回來的魚超過一斤的，所以呢，蒸8分鐘至12分鐘，一定錯不了，都做不夠嗎?</p></a>
+				<a href="#00:27:16.76" id="00:27:16.76" class="lt" onclick="jumptoTime(1636, this.id)"><p>看魚眼，我給大家看看魚眼，看魚眼，它的眼球完全硬化，然後眼珠爆出來，就一定熟，ok?</p></a>
+				<a href="#00:27:28.00" id="00:27:28.00" class="lt" onclick="jumptoTime(1648, this.id)"><p>最後總結，我們香港人之所以蒸魚，全世界知名，就算內地的廚師都不夠來，原因就是因為我們永遠掌握火候剛剛好，剛剛好是什麼意思呢?</p></a>
+				<a href="#00:27:40.48" id="00:27:40.48" class="lt" onclick="jumptoTime(1660, this.id)"><p>上到桌子，那一碟魚，還是黏一點點骨頭的，一點點而已，最理想就是，吃到最後那一口，它的炙熱，剛剛好，最後那條脊骨的肉，就離骨，這個就是最神乎其技，但不是那麼多人掌握得到，但是如果大家能夠做到，吃到最後還有一點點肉，黏著骨頭的話，已經是非常之，可以打90分以上了，ok?</p></a>
+				<a href="#00:28:11.24" id="00:28:11.24" class="lt" onclick="jumptoTime(1691, this.id)"><p>蒸魚不難，蒸魚看似很簡單，但是很多小技巧，大家一定要記住，怎樣去除腥呢?</p></a>
+				<a href="#00:28:19.52" id="00:28:19.52" class="lt" onclick="jumptoTime(1699, this.id)"><p>怎樣令到它更加惹味呢?</p></a>
+				<a href="#00:28:21.24" id="00:28:21.24" class="lt" onclick="jumptoTime(1701, this.id)"><p>ok?</p></a>
+				<a href="#00:28:21.76" id="00:28:21.76" class="lt" onclick="jumptoTime(1701, this.id)"><p>這個是關鍵，怎樣去令到它剛剛好熟呢?</p></a>
+				<a href="#00:28:25.12" id="00:28:25.12" class="lt" onclick="jumptoTime(1705, this.id)"><p>這個也是關鍵，ok?</p></a>
+				<a href="#00:28:27.76" id="00:28:27.76" class="lt" onclick="jumptoTime(1707, this.id)"><p>好，分享完了，那我又煮下一道菜了，接下來，就開飯了，不跟大家說了。</p></a>
+				<a href="#00:28:35.92" id="00:28:35.92" class="lt" onclick="jumptoTime(1715, this.id)"><p>拜拜!多謝收看!</p></a>
+</div>
+	</body>
+</html>

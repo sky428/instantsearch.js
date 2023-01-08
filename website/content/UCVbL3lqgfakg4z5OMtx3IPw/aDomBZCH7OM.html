@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》香港人的味道回憶——我把居酒屋搬回家了，先用龍蝦示範一次在家做燒烤，味道絕對是專業哦。而且簡單易做，去買隻電烤爐回家就是了！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'aDomBZCH7OM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》香港人的味道回憶——我把居酒屋搬回家了，先用龍蝦示範一次在家做燒烤，味道絕對是專業哦。而且簡單易做，去買隻電烤爐回家就是了！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今日是年初四，估計這條片出的時候都好多日之後了。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>近一兩個月，我經常玩烤爐，很多朋友可能會覺得，喂，你是不是老呀?</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>屋企點可能玩到咁heavy嘅嘢?其實玩到嘅，今晚我又開波，又開party，我比個wide shot比大家睇下。</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>呢個爐仔其實尺寸接近專業燒烤爐，不過細少少，火數細少少，燒嘢慢少少，但完全可以做到居酒屋、餐廳專業串燒所做嘅全部品種。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>之前大家睇過，我又燒龍蝦又燒呢樣古靈精怪，我今日燒乜嘢呢?</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>蔬菜先，講講蔬菜先，有秋葵、冬菇、豆，你睇下我串得整唔整齊?</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>呢個蔬菜，跟住有龍蝦、大頭蝦，龍蝦我打算用牛油清酒燒，大頭蝦我打算用來做汁燒，咩為之汁燒呢?</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>其實就用燒汁再加鹽，好好食嘅，亦都有我拿手好戲，呢個雞翼，呢個雞翼唔係熟嘅，係風乾咗嘅雞翼。</p></a>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>呢個我專門會拍一條片出嚟，同大家分享下，喺屋企用燒烤爐點樣燒雞翼好食。</p></a>
+				<a href="#00:02:1.00" id="00:02:1.00" class="lt" onclick="jumptoTime(121, this.id)"><p>除咗呢啲之外，仲有秋刀魚，好多朋友有個疑問，秋刀魚返嚟需要煮咗啲醬汁?</p></a>
+				<a href="#00:02:14.37" id="00:02:14.37" class="lt" onclick="jumptoTime(134, this.id)"><p>開肚子，我告訴大家，千萬不要，除非你有神級的開魚技術，否則很容易，秋刀魚一開就劏破膽，因為肚子太小，OK?</p></a>
+				<a href="#00:02:29.37" id="00:02:29.37" class="lt" onclick="jumptoTime(149, this.id)"><p>所以最好就是原條燒，一回來，我剛剛解凍了，連包裝都沒有插，OK?可以嗎?</p></a>
+				<a href="#00:02:39.33" id="00:02:39.33" class="lt" onclick="jumptoTime(159, this.id)"><p>記住，秋刀魚是原條燒，千萬不要手多，想著乾淨，然後開肚子，我告訴你，十條穿九條一定是劏破膽，到時整個肚子，甚至整個魚身都不能吃，OK?</p></a>
+				<a href="#00:02:57.25" id="00:02:57.25" class="lt" onclick="jumptoTime(177, this.id)"><p>或者你忍受到那種膽汁味、苦味，那你就繼續吃，這個今晚我都會專門拍一條片出來，OK?</p></a>
+				<a href="#00:03:5.49" id="00:03:5.49" class="lt" onclick="jumptoTime(185, this.id)"><p>那麼，除了燒這些之外，我亦都買了一些正正式式的扒類，這個是什麼?</p></a>
+				<a href="#00:03:18.13" id="00:03:18.13" class="lt" onclick="jumptoTime(198, this.id)"><p>美國頂級牛肉眼扒，我見它的雪花都幾靚，那麼，燒扒都有些技巧的，大家見到的，現在我還未完全解凍，記住，燒扒是不可以完全解凍的，否則，它薄脆脆，到時你想燒到它表面脆，裡面就過熟了，明白嗎?</p></a>
+				<a href="#00:03:45.41" id="00:03:45.41" class="lt" onclick="jumptoTime(225, this.id)"><p>這個我都會拍一條片出來，和大家分享一下，怎樣用最純粹的方法，用西式的方法去燒一塊靚的扒出來，OK?</p></a>
+				<a href="#00:03:56.45" id="00:03:56.45" class="lt" onclick="jumptoTime(236, this.id)"><p>那麼，Grill是西方很流行的烹飪方式，我們香港人，到底能否做到呢?</p></a>
+				<a href="#00:04:11.54" id="00:04:11.54" class="lt" onclick="jumptoTime(251, this.id)"><p>其實是做到的，最多只是慢一點，這個爐很便宜，399元，在XXX城買的，我已經在這裡熬了很久，不過可惜的是只有1400火，最多是在這裡放9吋串燒，所以燒東西會燒得很慢，但基本上所有Groove Bar可以做到的東西，這個爐都可以做到，最多只是慢一點，所以我是極力推薦大家，如果大家想換口味。</p></a>
+				<a href="#00:04:44.54" id="00:04:44.54" class="lt" onclick="jumptoTime(284, this.id)"><p>可以用這個爐，這個視頻主要是介紹我有什麼材料，除了工具、食物還有什麼呢?</p></a>
+				<a href="#00:04:59.54" id="00:04:59.54" class="lt" onclick="jumptoTime(299, this.id)"><p>一盤生油，這個生油是用來滑爐用的，因為這個爐是半煎餅式的，有洞，但比較粗，像鑊一樣，是生鐵來的，所以有時候我會掃油上去，不然會黏住，這是我自己買回來的燒汁，自己再加工一下，有豬油和頭抽，加一點點味，因為我嫌它是香的那種醬油，不過它味道不夠，然後是辣椒，燒烤怎可以沒有辣椒粉呢?</p></a>
+				<a href="#00:05:54.79" id="00:05:54.79" class="lt" onclick="jumptoTime(354, this.id)"><p>燒烤怎可以沒有孜然粉呢?</p></a>
+				<a href="#00:05:56.79" id="00:05:56.79" class="lt" onclick="jumptoTime(356, this.id)"><p>這個孜然粉我自己炒過的，炒過米，加些孜然進去，做什麼呢?因為它是用來防潮的，然後呢，有什麼呢?</p></a>
+				<a href="#00:06:6.79" id="00:06:6.79" class="lt" onclick="jumptoTime(366, this.id)"><p>有這個黑椒碎，然後，需要蜜糖的時候，有蜜糖，基本上就齊全了，有些特別的東西，燒海鮮的時候，用日本清酒，這些是學居酒屋的，然後，有一塊牛油，牛油用的是無鹽牛油就可以了，然後，有一盤蒜蓉，蒜蓉用來做什麼呢?</p></a>
+				<a href="#00:06:35.79" id="00:06:35.79" class="lt" onclick="jumptoTime(395, this.id)"><p>譬如可以燒茄子，燒海鮮，等下清酒牛油燒龍蝦，我就需要用到這個蒜蓉，這個蒜蓉是我自己開的，看過我的影片的朋友，應該都知道的了，這個蒜蓉我自己開的，是和酒樓餐廳是一模一樣的，OK，行不行?</p></a>
+				<a href="#00:07:1.79" id="00:07:1.79" class="lt" onclick="jumptoTime(421, this.id)"><p>基本上，可以開工了，其實很簡單的，為什麼我這麼喜歡玩Growbar呢?</p></a>
+				<a href="#00:07:8.79" id="00:07:8.79" class="lt" onclick="jumptoTime(428, this.id)"><p>其實是有理由的，因為其實做廚師都挺辛苦的，如果譬如說我炒中式菜也好，或者製作其他的菜系也好，通常我自己一個人在廚房，人家和我說話，我就很困難，想和人家聊天，大家上來吃飯，自然我是主人家，自然想和我聊聊天，如果我是一般做的菜式的話，我就比較困難，一說話，就好像我經常說拍片，我不是我最高水準。</p></a>
+				<a href="#00:07:43.79" id="00:07:43.79" class="lt" onclick="jumptoTime(463, this.id)"><p>因為經常都說了話，然後忘記了做什麼，所以做Growbar是最自然的，可以做到好像深宵食堂一樣，一邊和客人聊天，一邊做，而且它也需要時間去等，所以我個人比較喜歡，如果朋友上來的話，歡天喜地，搞一下Party，當然是Growbar，不要叫小菜了，是不是這樣說?</p></a>
+				<a href="#00:08:11.79" id="00:08:11.79" class="lt" onclick="jumptoTime(491, this.id)"><p>這裡就介紹到此為止，等一下我再拍三條片，雞翼、龍蝦、牛扒，可以讓大家看看我到底在家裡是怎樣做的，我家裡很坦白說，300多呎，即是30個平方多一點，32個平方，ok?</p></a>
+				<a href="#00:08:40.45" id="00:08:40.45" class="lt" onclick="jumptoTime(520, this.id)"><p>行不行?</p></a>
+				<a href="#00:08:41.45" id="00:08:41.45" class="lt" onclick="jumptoTime(521, this.id)"><p>這是一間公屋，我想大家能想像到我的廚房有多小，但我的廚房這麼小之餘，都可以把整間居酒屋搬回來，我最高可以燒到10人的份量，當然出事就慢一點，大家將就一下，大家希望多個途徑，去玩多點花式，不要經常炒菜，或者煎扒，其實烤肉吧，烤肉來說，我可以跟大家說，最純粹的烹飪方式，我跟大家分享一下，大家可以試一下去做。</p></a>
+				<a href="#00:09:23.73" id="00:09:23.73" class="lt" onclick="jumptoTime(563, this.id)"><p>買一個這樣的小爐不是很貴，399元，專業一點的2、3千都有這些小爐，淘寶我見過有600多元，專業級的，專業級的就3000元，快一點，但又很重，不太適合地方狹窄，搬來搬去的地方，行不行?</p></a>
+				<a href="#00:09:44.97" id="00:09:44.97" class="lt" onclick="jumptoTime(584, this.id)"><p>等下再見，現在開爐了，第一件事做什麼呢?</p></a>
+				<a href="#00:09:54.09" id="00:09:54.09" class="lt" onclick="jumptoTime(594, this.id)"><p>我們先燒龍蝦，客人說想吃龍蝦，我就先燒龍蝦，上一次拍的片不是看到的角度看得那麼好，燒龍蝦先燒肉的部分，先燒肉的部分，然後才反轉來燒，龍蝦視乎大小，視乎它的大小，這個比較小，比上一次，很簡單，調3分鐘，OK，調3分鐘，燒了這邊就反轉來燒，就可以加其他東西，OK，三分鐘過去了，我們開始翻面，通常這些鐵鍋底，燒烤來計算，有少少黏底。</p></a>
+				<a href="#00:11:7.95" id="00:11:7.95" class="lt" onclick="jumptoTime(667, this.id)"><p>慢慢翻面，大家看不看到鏡頭呢?</p></a>
+				<a href="#00:11:29.08" id="00:11:29.08" class="lt" onclick="jumptoTime(689, this.id)"><p>蝦仍然會動的，厲害到三下，因為不是完全熟透，有些神經反應，大家看不看到金黃色的?</p></a>
+				<a href="#00:11:47.08" id="00:11:47.08" class="lt" onclick="jumptoTime(707, this.id)"><p>是煎焦一點點的，這樣就對了，現在開始放牛油，這個角度看得清楚點，上次的片，因為客人拍的，幫我拍下來，因為角度問題，手拿機，所以看得不太清楚，好，我close up一個先，大家會看得清楚啲，因為這樣燒法溫度是不夠的，所以這個時候我們用火去幫牛油溶一溶，然後把牛油塗在蝦身上，這樣塗一塗就可以了。</p></a>
+				<a href="#00:13:21.39" id="00:13:21.39" class="lt" onclick="jumptoTime(801, this.id)"><p>讓它能夠滋潤牛油的味道，咁呢個呢就需要少少技巧呀因為呢嗰啲牛油又又即係硬啦跟住然之後呢嗰啲即係蝦身呢又唔夠溫度啦ok，因為比較厚呀好咁咪查完啲牛油即係淨低嗰啲呢就擺返擺返落佢嗰個蝦殼嗰度入面咁等陣間呢佢就會燒熔㗎喇，呢個時候呢跟住然之後我哋就落蒜蓉呀嘛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:30.51" id="00:14:30.51" class="lt" onclick="jumptoTime(870, this.id)"><p>字幕by索兰娅。，我擺一擺正隻蝦先啦好啦，因為呢個蝦身就比較厚呀，咁所以呢，嗰啲蒜蓉呢如果係生嘅話呢，生嘅即係佢冇咁容易熟嘅呢，咁有咩辦法呢，嗱而家一個呢就我而家攞火燒佢啦，另外一個呢就係預先整熟咗啲蒜蓉先，等佢唔好咁生，不過呢用火槍嘅時候大家要留意下，就唔好畀佢太過接近個蝦身，就只要個火舌輕輕掂佢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:9.79" id="00:15:9.79" class="lt" onclick="jumptoTime(909, this.id)"><p>有火花出嚟就ok㗎啦，咁呢個時候呢我順勢呢就喺個蝦身嗰度燒佢，因為呢咁樣嗰啲蝦蝦肉蝦肉呢先至可以完全係熟曬嘅，因為龍蝦呢個身係比較厚呀，嗱咁樣燒過之後呢嗰啲龍蝦係完全食唔出，但係用電燒出嚟㗎喎，咁呢個我係喺邊度學返嚟㗎呢就係日本人，即係日本餐廳就係咁整呀，嗰啲居酒屋呀或者壽司師傅呀都會係用呢種方法，好嗱呢個時候啦跟住之後我哋就可以落黑椒啦。</p></a>
+				<a href="#00:15:51.79" id="00:15:51.79" class="lt" onclick="jumptoTime(951, this.id)"><p>黑椒碎，嗱落啲黑椒碎啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:58.79" id="00:15:58.79" class="lt" onclick="jumptoTime(958, this.id)"><p>跟住之後，落呢個黑椒鹽啦呢個黑椒鹽呢我係用海鹽去炒出嚟嘅，咁就食海鮮呀梗係海鹽啦，等陣間呢我要做呢個燒扒牛扒嘅時候我就會用岩鹽，即係大家應該略略有少少嘅嘅即係入廚知識都知㗎啦，肉類即係就用岩鹽如果海鮮就用海鹽ok，咁就基本上就加齊囉跟住呢個時候呢我哋再火攞火去彈一彈佢，我自己拍的片一定很長。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:50.82" id="00:16:50.82" class="lt" onclick="jumptoTime(1010, this.id)"><p>這個時候繼續燒，你會問燒這麼久會不會過熟，當然不會過熟，其實我們經驗是怎樣去判斷那隻龍蝦是否一定熟，看它這個頭是否有很多汁，現在有很多牛油那些東西，如果夠熱的話，它會滾起，好像煲水一樣，所以我們可以在這個時候判斷它是否熟，當然大家也看到它跳來跳去，生的龍蝦能吃嗎?當然可以吃，不過我又不想餓肚子。</p></a>
+				<a href="#00:17:28.82" id="00:17:28.82" class="lt" onclick="jumptoTime(1048, this.id)"><p>不是每個人都能吃的，這個時候我甚麼都新鮮，我現在切蔥，龍蝦快熟了，其實有時候大家可能會問我，你這樣做事為甚麼不先切蔥，其實有時候預先切好東西是輕鬆，不過有時候時間反而控制得不太好，很多時候我們習慣了一邊做事一邊計時，我們是不自覺地已經入腦入肉了，剛剛好，我切完這些蔥就差不多了，我盡量，如果是我自己拍的片就一定是一刀不剪。</p></a>
+				<a href="#00:18:25.82" id="00:18:25.82" class="lt" onclick="jumptoTime(1105, this.id)"><p>大家不要嫌我長氣，嗅到味道了，差不多了，殼開始燶了，好，等一會兒，這個時候差不多了，大家有沒有看過上一條片，燒龍蝦，這個時候放什麼?當然是日本清酒，OK，放了之後，整條龍蝦就不同味道了，好了，這個時候我們就用火燒它，大家看不看到它開始滾了，即是可以了，還有它的殼是白白的，即是溫度夠高了。</p></a>
+				<a href="#00:19:33.80" id="00:19:33.80" class="lt" onclick="jumptoTime(1173, this.id)"><p>我不知道視頻大家看不看到，在視頻裏面看不看到，如果怕蒜蓉生，可以再燒一燒，其實這樣用火來燒，燒黑椒和鹽，再加蒜蓉混和，會很香，這個時候我們加蔥，現在我開始聞到鴿殼的焦香味道，OK 行不行，這樣一定熟了，好，搞掂了 大家，OK嗎，再放大給大家看看，賣相可以嗎，這樣就可以了，可以上碟了。</p></a>
+				<a href="#00:21:3.08" id="00:21:3.08" class="lt" onclick="jumptoTime(1263, this.id)"><p>我去吃東西了，不是 客人吃東西，OK，我可以關機了。</p></a>
+				<a href="#00:21:12.08" id="00:21:12.08" class="lt" onclick="jumptoTime(1272, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>
