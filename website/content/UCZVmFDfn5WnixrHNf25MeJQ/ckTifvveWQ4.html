@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 煲湯慳錢大法 菜乾豬骨湯 煲湯好味慳錢就係咁簡單/ 燒臘餐廳菜乾咸豬骨湯好味竅門</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ckTifvveWQ4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 煲湯慳錢大法 菜乾豬骨湯 煲湯好味慳錢就係咁簡單/ 燒臘餐廳菜乾咸豬骨湯好味竅門</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.80" id="00:00:3.80" class="lt" onclick="jumptoTime(3, this.id)"><p>�，嗯，嗚，咩，咩，大家好又係我星星同大家職人吹水，大家好買咗啲靚菜乾返嚟又煲個菜乾湯同大家吹下水呀，好耐之前呀，啲網友呀問我一個問題就係話衛星星你講過啦你以前入行，啲燒味部呀用嗰啲飯呀都靚啲係香啲係呀，入行燒味部用啲飯呀會畀廚房嗰啲會過會高一級嘅，仲有一樣嘢就係話喎，如果有啲獨立燒味部呀佢會自己煲埋荔湯㗎喎。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:54.69" id="00:00:54.69" class="lt" onclick="jumptoTime(54, this.id)"><p>點解呀佢會跟住燒味飯出嘢，咁你以前燒味部嗰啲荔湯呀，個味道會畀我哋廚房嗰啲會更加好呀知唔知點解，因為燒味部呀，佢好多時佢都會，有啲鹹豬骨呀，有啲啞頭啞頸呀咁樣搭埋落去煲呀，通常啲燒味部呀會煲啲咩湯呀，菜乾湯，咁而家眾所周知呀喺出面買豬肉呀豬骨呀真係相當之貴，咁今次最主要同大家分享下啦我哋自己一啲業內煲湯又點樣好味啦，又點樣可以慳少少錢呀。</p></a>
+				<a href="#00:01:42.57" id="00:01:42.57" class="lt" onclick="jumptoTime(102, this.id)"><p>咁係咪我哋出面呀煲乜嘢泥湯，都係用味精呀用乜嘢呀，我自己做餐廳嗰陣時呀我都係堅持會攞啲新鮮，豬骨返嚟煲，呢啲新鮮豬骨呀佢都唔係話啲乜嘢靚部位呀乜嘢呀，我哋嗰陣時攞呢啲豬頭嗰啲位呀人哋人哋啲，收納檔呀起咗出嚟呀有啲骨呀咁樣我哋就專門買呢啲，咁你哋一份幾錢呀，十蚊㗎嘛，十蚊咗喎呢度。</p></a>
+				<a href="#00:02:13.29" id="00:02:13.29" class="lt" onclick="jumptoTime(133, this.id)"><p>咁呢度一份幾多錢呀呢啲，20蚊，如果呢度夾埋曬啦煲五六個人飲都夠飲㗎喇，咁你啲豬骨呀，返到嚟呀我哋都係要，我啲室溫水，浸咗十零分鐘先，咁浸我再用呢都係等佢啲唔好嘅味道呀等佢識出呀特別係呢啲，唔係太高，啲豬骨呀因為佢又冇乜肉嘅冇乜，冇乜肉喺度嘅，但我哋又主要攞嚟攞啲豬骨味呀，一般去啲。</p></a>
+				<a href="#00:02:54.01" id="00:02:54.01" class="lt" onclick="jumptoTime(174, this.id)"><p>小辣泡呀佢好多時都會一份份會執咗出嚟呀，但係呢啲豬骨呀，佢都有分呀，豬手呀嗰嗰舊骨呀，咁樣有啲就會分有啲豬頭呀就會改咗啲出嚟呀，咁樣，咁你喺度買豬手呀呢啲位呀，就會比較冇咁肥囉同埋個味道就會好少少嘅，咁我呢啲鹹豬骨呀嗰個用途就好廣泛呀咁我眾所周知如果有出去飲都知㗎啦，魚豬嗰啲豬頭呀咁落返嚟咩呀。</p></a>
+				<a href="#00:03:27.29" id="00:03:27.29" class="lt" onclick="jumptoTime(207, this.id)"><p>煲粥啦，咁下天開嚟滾湯呀甚至乎你攞嚟煲湯呀，咁樣即係當啲，陳腎嗰啲味道有少少鹹香味㗎嘛，咁我哋都係好簡單呀就唔需要點樣處理咁我擺佢咁ok，我睇返啲菜乾呀，咁你再講啦，同大家分享下點為之靚為之唔靚咁樣呀，呢啲菜乾呀，就真係一級菜乾，佢畀嗰啲普通嗰啲菜乾呀，佢係貴好有好幾倍價錢，呢度呢三代幾錢呀呢度已經25蚊㗎喎。</p></a>
+				<a href="#00:04:5.69" id="00:04:5.69" class="lt" onclick="jumptoTime(245, this.id)"><p>但係呢啲優質菜乾呀，佢有度好呢就係話，佢全部天然生曬啦，同埋呢佢冇乜，佢冇乜，泥呀冇乜沙嗰啲㗎嘛最重要一樣嘢呢就係話，佢冇染色呀，你買好多好深色嗰啲菜乾呀佢都曾經呀會經過染色呀咁樣，咁樣啲呢個菜乾呀返到嚟呢都係好簡單，咁我哋就一次過就浸曬佢呀，咁我哋約浸佢，十零分鐘呀目的呢，都係等你浸開佢。</p></a>
+				<a href="#00:04:43.59" id="00:04:43.59" class="lt" onclick="jumptoTime(283, this.id)"><p>咁樣浸開佢啦咁樣洗佢兩三次咁ok呀，咁樣如果有啲，唔係好靚嗰啲呀佢嗰個菜頭呢就會好大嘅會夾雜咗好多沙喺裏面呀知唔知點解呀，如果多沙佢又重清啲呀嘛，咁樣呢啲我哋就應該浸開佢咁我睇一睇個底多唔多沙先再處理佢，甘筍，或者紅蘿蔔我哋叫做台北呀都講過多次呀盡量買啲，有泥呀較為濕潤呀嗰啲呢。</p></a>
+				<a href="#00:05:14.14" id="00:05:14.14" class="lt" onclick="jumptoTime(314, this.id)"><p>就會比較清甜啲嘅，咁我呢啲都係刨咗佢咁ok囉，冇泥嗰啲，甘筍呀或者嗰啲有啲咩用途呀嗰啲，做沙律囉，甘筍，刨好曬，洗呀佢呀擺埋一邊，咁我哋就浸一角嘅陳皮呀咁樣沖沖水咁咪浸咗佢，咁我連埋啲陳皮水，咁我保留返佢，咁呢個湯呀咁可以用藍包蜜棗又係好彩今次咁，羅漢講咩用羅漢果啦，咁你啲細個羅漢果啦如果攞嚟煲湯啦用半個就夠㗎喇。</p></a>
+				<a href="#00:06:2.78" id="00:06:2.78" class="lt" onclick="jumptoTime(362, this.id)"><p>咁我咪就係一展開佢囉，最主要攞羅漢果，你唔攞個心㗎嘛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:11.50" id="00:06:11.50" class="lt" onclick="jumptoTime(371, this.id)"><p>分開一半，沖沖水，備用咁ok呀，咁我哋就可以把某啲陳皮嗰度一齊啦，真係如果屋企人多飲嘅咁呀煲到，六公升七公升嘅咁就落曬一個都唔緊要嘅，豬骨，浸咗有十分鐘囉大家都睇到呀，濕溫水有威力咁嘅就係咁呀咁如果你又洗，將佢所有嘅血水洗乾淨曬佢，咁洗咗五六次洗到冇曬血水之後呢咁我哋又隨即進入下一步，開火。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:56.56" id="00:06:56.56" class="lt" onclick="jumptoTime(416, this.id)"><p>燒啲凍水，如果做啲嘢豬骨呀，一定要凍水出水，因為佢本身，豬嗰啲酥味呀各方面呢就會比較濃厚啲，咁如果你洗得佢乾淨你出水出得佢乾淨基本上你同普通豬骨嘅用法，都係一樣同埋個味道，咁當然佢價錢就梗係平好多啦，新鮮豬骨飛緊水之際啦咁我就睇返我哋啲，燒豬手骨啦呢啲就一條條呢個燒豬手骨呀咁我哋返嚟㗎嘛，點樣去處理佢啦。</p></a>
+				<a href="#00:07:40.69" id="00:07:40.69" class="lt" onclick="jumptoTime(460, this.id)"><p>煲湯滾湯呀咁我哋都要擺落去飛一飛水，主要都係兩個目的，第一，我哋飛飛佢啲，啲油呀，咁咪第二個目的呢就係話，好鹹嘅味道呢我哋都要飛一飛佢，咁你話，唔飛水咁得唔得咁樣我就唔好建議呀，但係呢啲豬骨呀，即係每日去都係新鮮整出嚟呀咁咪其實即刻就係可以食得㗎啦，咁我睇返我哋啲新鮮豬骨呀，喺滾水過程當中呀。</p></a>
+				<a href="#00:08:19.35" id="00:08:19.35" class="lt" onclick="jumptoTime(499, this.id)"><p>佢就會逼到一啲唔好嘅味道呀嗰啲血水呀就將佢逼曬出嚟呀咪頭嗰啲，唔好嘅味道啦，咁我哋呢隻一定要飛到去夠透嘅，咁我哋都係飛一陣先，咁呢個時間呀咁我哋嗰啲，鹹豬骨呢咁我可以擺埋落去，咁我約囉，四舊咁上下啦，落埋呢舊，咁正得嗰啲啦我聽日就留返嚟煲返個菜乾，鹹豬骨粥呀咁樣都係擺返喺雪櫃，個普通嗰個蔬菜格就可以。</p></a>
+				<a href="#00:08:58.01" id="00:08:58.01" class="lt" onclick="jumptoTime(538, this.id)"><p>鹹豬骨呀都係等佢啲，啲油呢有啲飛一飛出嚟啦點為之得啦冇血水標出嚟咁我為之得囉，反去，豬骨同埋啲鹹豬骨咁嘅隨即，倒起曬佢啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:18.75" id="00:09:18.75" class="lt" onclick="jumptoTime(558, this.id)"><p>咁我哋就異話不說呀咁我將佢，沖洗，沖洗呀，將佢頭先，一啲唔好嘅味道呀識出嚟嗰啲渣滓呀咪洗乾淨曬佢囉，呢啲都要沖一沖佢嘅，咁我洗乾淨佢咁ok呀，豬骨沖洗好曬之後呢咁我哋就進入下一步呀咁我呢度喎咁咪點樣呀，煲出嚟呀</p></a>
+				<a href="#00:09:44.61" id="00:09:44.61" class="lt" onclick="jumptoTime(584, this.id)"><p>放啲水落去先，咁我呢個煲藥放到3.5公升咁上下啦，咁樣如果落到四公升呀盡量就落四公升呀，咁隨即我哋擺埋啲果皮呀羅漢果呀，凍水落跟住咪辦辦生開火我哋就可以煲咗呢啲先，跟住買嘢呀，攞返條紅蘿蔔呀甘水出嚟呀，咁我哋用一個滾刀嘅切法啦，如果喺出面做緊啲師兄煲荔湯嘅咁咪切得細細粒啲囉，點解呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:31.16" id="00:10:31.16" class="lt" onclick="jumptoTime(631, this.id)"><p>有少少湯有少少肉有少少紅蘿蔔有少少菜乾咁就最理想，咁我而家喺屋企呢就冇乜所謂啦咁我大大粒咁我而家你又隨即，凍水，擺埋落一齊煲咗先，咁跟住我就睇返啲菜乾呀，你再講啦真係，真係相當之靚，真係靚到個程度呀大家睇下，真係冇乜曬嘅第一轉㗎喎，咁你又再換一換水，洗一洗先，咁我又撈起曬啦咁呀就，到底呀。</p></a>
+				<a href="#00:11:10.06" id="00:11:10.06" class="lt" onclick="jumptoTime(670, this.id)"><p>幾開心呀，咁我哋喺公司做呀洗菜乾又唔係唔係太開心呀多沙呀，咁我今次呢就係講呀洗兩轉到ok呀，嗰啲菜乾污糟嘅咁咪睇個盤底啦攞起曬佢睇個盤底有冇曬，如果仲有沙嘅你咪洗得兩次啦咁我盡量樣呀同埋一個嗱嘅方式，咁我就留返你少少啦咁咪聽日煲粥呀，咁我聽日煲粥就有時間就拍攝啦冇時間就，咁呀煲第二啲粥先再同你拍攝呀咁呢啲都係好簡單嘅。</p></a>
+				<a href="#00:11:49.48" id="00:11:49.48" class="lt" onclick="jumptoTime(709, this.id)"><p>咁我哋頭嗰啲位呀，咁我又整大少少啦，咁咪可以剪埋落去啦，如果大家話都有大白菜呀可以搭少少大白菜落去呀，咁我都之前都整咗一個㗎啦即係煲金銀菜呀嘛，咁呢個時間，咪將啲菜乾，可以，咁我淨係煲粥嗰啲啦我搵保鮮紙咁樣就包返好佢啦就唔需要浸㗎啦，咁我將嗰啲菜乾頭嗰啲啦咁我又擺咗嚟煲湯呀，煲粥嗰啲呀咁我就盡量用個味ok呀。</p></a>
+				<a href="#00:12:33.53" id="00:12:33.53" class="lt" onclick="jumptoTime(753, this.id)"><p>咁菜乾放咗落去之後呀咁我等佢滾返起佢，咁用康寧煲呀因為全熱就好快嘅，臨滾嘅時候你好就好收細火呀，等佢借返呢咁先畀返少少火去，咁而家我哋咪可以擺埋，啲骨落去囉，啲豬骨呀燒骨呀咁樣就全部擺曬落去，跟住我哋用個中火，搵佢半個鐘頭先，煲滷火湯呀頭呢半個鐘頭呢就真係相當之重要，盡量等佢所有材料呢個味道呀。</p></a>
+				<a href="#00:13:14.49" id="00:13:14.49" class="lt" onclick="jumptoTime(794, this.id)"><p>出曬嚟咁我哋先再收慢火，煲佢個半鐘，咁我全程兩個鐘頭就已經ok呀，保持住個細火咁呀前後煲咗約兩個鐘頭，我哋望一望佢乜嘢模樣先，大家已經係相當之濃郁㗎喎，熄火起得，咁我喺咗之後呀咁呀試咗少少味，羅漢果又甜咗少少，我建議大家呢落三分一個咁上下啦，咁樣呢度掉返少少鹽落去就已經ok啦，咁呀。</p></a>
+				<a href="#00:14:2.63" id="00:14:2.63" class="lt" onclick="jumptoTime(842, this.id)"><p>畀啲鹹豬骨畀大家睇下先，最正呢啲呀，跟住邊呀，跟住咪啲菜乾呀，呢啲，菜乾湯呀啲靚菜乾呀煲出嚟呀係唔會太深色呀，不禮湯呀每樣有少少我都講過多次啦，如果你出面去啲食飯呀，如果不正舊呀，呢啲咩，大嘅豬手骨落去呀，真係你嗰餐食得開心㗎真係，好不麻呢啖落去咁我可以開飯，一個，慳皮板嘅，菜乾豬骨湯咁咪完成囉。</p></a>
+				<a href="#00:14:53.97" id="00:14:53.97" class="lt" onclick="jumptoTime(893, this.id)"><p>咁當然你唔好，同你另一半講呀話你慳咗皮啦你話足料，足料靚湯呀，因為而家出面，買一斤豬肉，都要七八十蚊呀，咁你到，用廿零蚊嘅本錢，仲攞起咗幾個煲粥喎，係咪話好慳皮呀，有老火湯嘅風味呀嘛，咁你鍾意菜乾湯我又畀個like我星星呀，咁我鍾意鹹豬骨嘅網友訂閱我職人吹水頻道，如果鍾意甘筍咁點呀梗係加入我頻道會員繼續吹水啦，今日個分享就到此為止啦咁咪多謝收睇下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

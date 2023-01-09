@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 北風起 打邊爐 火鍋 沙嗲湯底點樣做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'zwI5TBqrwuE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 北風起 打邊爐 火鍋 沙嗲湯底點樣做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.71" id="00:00:3.71" class="lt" onclick="jumptoTime(3, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，大家好又係我星星同大家職人吹水，大家好，咁我擺咗咁多樣嘢喺度啦，都係同上次嗰一樣呀整一樣嘢嘅天氣凍凍地，梗係要整個鍋十下十下啦，80年代嗰陣時呢，有一個湯底呢就相當之出名呀，點解出名呀因為嗰陣時冇湯底呀，我哋出去打邊爐呀，有直情有啲火鍋專門店呀以前大家有冇聽過以前嗰啲咩叫。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:52.83" id="00:00:52.83" class="lt" onclick="jumptoTime(52, this.id)"><p>四季火鍋呀，總統火鍋呀嗰啲好多㗎，淨係打邊爐嘅嘢，乜都冇人入到去湯底，兩個，一個沙爹一個清湯或者皮蛋芫茜魚片湯咁樣囉，80年代就個個都沙呢個湯底點解呀，食肥牛嗰陣時，我自己就好鍾意去九龍城呀一間食呀，食啲沙爹鍋呀，食啲手切肥牛呀啲手切線鼓牛呢就真係相當之正，今日就同大家分享下，沙爹湯底嘅做法啦。</p></a>
+				<a href="#00:01:33.53" id="00:01:33.53" class="lt" onclick="jumptoTime(93, this.id)"><p>咁呢個沙爹湯底呀，亦係有別於我哋做80年代茶餐廳嗰啲沙爹牛肉呀嗰啲咁呀咁呢個湯底，就會就更加，豐富少少會多咗兩種醬嘅但係都不離開嗰個基本烹調，原來，首先我哋要足夠嘅香料，蔥蒜，乾蔥啦蒜啦，洋蔥呀，咁我經過一番努力之後咁我就將啲乾蔥，切曬絲，咁呀有，十零粒嘅蒜頭啦得成蒜蓉呀咁呀少少紅椒絲，可以落指天椒得㗎。</p></a>
+				<a href="#00:02:16.29" id="00:02:16.29" class="lt" onclick="jumptoTime(136, this.id)"><p>咁我自己做呢個喎啦我習慣做落洋蔥嘅始終啲沙爹湯底呀，有少少洋蔥喺度呢佢就會嘢未啲㗎，洋蔥呀我哋又擺埋一邊備用，未講醬料之前呢，咁我哋已經係要進入下一步呀，咁我哋著咗個火先，燒魚即獲，咁我哋保持住個細火燒魚即獲加番少少油落去咁我哋第一步呢，我哋落咗啲乾蔥絲落去先，都係一啲做醬底好基本嘅竅門就係我哋用個慢火。</p></a>
+				<a href="#00:03:2.28" id="00:03:2.28" class="lt" onclick="jumptoTime(182, this.id)"><p>將啲乾蔥絲，慢慢將佢爆香佢先唔好心急慢慢嚟，咁爆緊支仔咁我哋就排曬啲醬料出嚟啦，冇頂成呀，仲有雞湯呀，咁做呢個醬打咩呀，最重要就係沙茶醬，咩唔係沙爹咩，係沙茶醬呀沙茶醬係落到兩個湯匙，再繼續，呢度一個，跟住再開多個新嘅，兩個湯匙，跟住又係攞返啲沙爹醬出嚟呀，我哋落一個，一個湯匙，沙爹醬一個湯匙。</p></a>
+				<a href="#00:03:54.24" id="00:03:54.24" class="lt" onclick="jumptoTime(234, this.id)"><p>咁樣兩個兩個醬底個味呢其實都係有少少唔同，咁我哋都仲要更加，想好味啲啦，我哋點呀小蝦醬落去，蝦醬呀，一半個茶匙，嗰啲醬料都未搞掂呀呢度呀，開始變金黃色喎，跟住我哋，洋蔥落去，慢慢炒佢，咁你我由呢邊呀，咁我落埋你嗰啲，算落去，咁我哋就保持住，呢度，慢慢將佢炒香佢先，咁全程都係保持個慢火，咁務求都係將嗰啲香味呢迫曬出嚟呀咁而家繼續。</p></a>
+				<a href="#00:04:46.98" id="00:04:46.98" class="lt" onclick="jumptoTime(286, this.id)"><p>我哋嗰張底喎，咁我哋加返一個茶匙嘅豆瓣醬落去畀返個辣味佢，如果你食得好辣嘅咁我頭先嗰啲紅椒咩用曬指天椒呀，咁我哋攞啲芝麻醬出嚟做呢個啦個芝麻醬呀真係相當之，重要呀，咁我攞返啫乾淨匙羹出嚟啦逢係不呢啲醬底都，生水，芝麻醬呀，我哋落一個茶匙，咁我去到個主角出場呀，咩呀，花生醬呀。</p></a>
+				<a href="#00:05:27.62" id="00:05:27.62" class="lt" onclick="jumptoTime(327, this.id)"><p>咁呢個，花生醬呀，先係主角，花生醬你落幾多呀，湯匙出嚟，落一，我哋落，夠兩個，一，二，咁整體個醬膽調配好咁而家我咪返返過嚟，睇返你啲洋蔥同埋蒜啦，做呢啲醬底呀剷呢啲，蒜蓉乾蔥就唔好心急，慢慢炒到佢香曬，將啲香味逼曬出嚟，嗰個香味呀咁我都係畀返大火去，咁又將啲洋蔥，都爆香埋佢，洋蔥都有個香味識出呀跟住我哋咪將啲，啲醬料就全部就剷曬落去囉。</p></a>
+				<a href="#00:06:30.08" id="00:06:30.08" class="lt" onclick="jumptoTime(390, this.id)"><p>呢啲，跟住，我哋就全部落曬佢，一啲都唔好嘥慢慢將佢掛曬落去，啲醬料落曬之後呀，咁我哋就，慢慢，推向佢，我哋將個醬料呀剷醬剷咗呀慢慢去到剷囉，啲醬，唔剷邊度香呀，就咁撩曬落啲水嗰度，你啲醬你落幾多你都唔香㗎，咁我哋喺度呢就慢慢將佢剷香曬佢，大家都睇到呀喇起曬泡喇喎想更加香呀鑊邊撐少少走落去，跟住我哋就隨即落水。</p></a>
+				<a href="#00:07:28.70" id="00:07:28.70" class="lt" onclick="jumptoTime(448, this.id)"><p>滾起佢先，咁咪滾起之後呢咁我攞返隻碗出嚟咁我哋倒雞湯，我哋雞湯同水嘅比例呢就係一比一，頭先落咗差唔多一碗水呀咁我都落返差唔多一碗雞湯落去，咁你嗰啲調味咁我哋落返半個茶匙嗰個鹽落去，生抽，更加豐富啲個味道，老抽落去，少少黑椒落去呀等佢嗰個味又更加，豐富啲，倒返落個鍋嗰度咁我開火咁今日有啲咩食呢，咁咪真係正呀。</p></a>
+				<a href="#00:08:38.51" id="00:08:38.51" class="lt" onclick="jumptoTime(518, this.id)"><p>落去底下，樣樣執少少上嚟啦，咁我自己就好懷念呀80年代喺出面食嗰啲雜錦鍋呢，咁我哋大鍋細鍋中鍋咁呀執一份出嚟啦咁樣樣有少少呀，真係唔正呀，咁我最正，就梗係呢個啦，如果食牛肉就更加配合呀，呢個沙爹湯底呀如果大家鍾意食，花生醬嘅味道，咁可以而家再加多少少花生醬落去嘅，因為呀。</p></a>
+				<a href="#00:09:21.27" id="00:09:21.27" class="lt" onclick="jumptoTime(561, this.id)"><p>花生醬重呀先會配合到牛肉味嘅，咁如果好咗你今日冇牛肉嘅咁我其實我呢個味道就已經係足夠啦，咁天氣凍凍地位佬寫個大鍋，食，道，咩湯底呀仲使講嘅梗係沙爹㗎啦今日個主角㗎嘛，沙爹湯底呀嘛，咁樣鍾意乜嘢火鍋配料就識除尊便啦，咁我都係樣樣執少少上嚟，咁鍾意沙爹湯底網友畀個like我星星啦咁樣鍾意食雜錦鍋嘅網友訂閱我職人吹水頻道，幫我分享下呢個。</p></a>
+				<a href="#00:10:5.21" id="00:10:5.21" class="lt" onclick="jumptoTime(605, this.id)"><p>火鍋沙爹湯底咁我就打邊爐食飯先多謝收睇，下條影片再同大家吹過拜拜。</p></a>
+</div>
+	</body>
+</html>

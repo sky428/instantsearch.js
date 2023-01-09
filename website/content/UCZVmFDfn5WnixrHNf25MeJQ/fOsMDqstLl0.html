@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 泰式明爐魚 好味就係咁簡單 Thai Style Steamed Fish</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'fOsMDqstLl0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 泰式明爐魚 好味就係咁簡單 Thai Style Steamed Fish</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:8.73" id="00:00:8.73" class="lt" onclick="jumptoTime(8, this.id)"><p>放在磁鐵爐裡煮，那種香味，我先吃東西了，大家好又係我星星同大家職人吹水，咁大家都睇到呀今日買咗啲，東南亞香料有啲咩搞作呢咁我攞個主角出嚟畀大家睇下先，拿支酒版出嚟呀，我啱啱喺越南玩完返嚟呀魚露嚟呀，越南差唔多，係最貴嗰隻啦，為咗隆重其事呢支魚露咁我就買咗條，幾大條呀，一隻手臂咁長。</p></a>
+				<a href="#00:01:24.15" id="00:01:24.15" class="lt" onclick="jumptoTime(84, this.id)"><p>相當之靚呀，咁大條嘅烏頭，湯呢啲烏頭呢最記，緊要記得，內臟呀，烏頭，烏頭個扣呀，最值錢呢舊呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:44.11" id="00:01:44.11" class="lt" onclick="jumptoTime(104, this.id)"><p>咁我哋乜都唔好你而家洗乾淨㗎條魚先</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:56.91" id="00:01:56.91" class="lt" onclick="jumptoTime(116, this.id)"><p>咁鯊魚，我哋第一件事，出嚟先，殘留喺魚身，剩嗰啲魚鱗，我哋全部仔細將佢刮乾淨，通常嗰啲師傅呢啲位呀都唔係打到好乾淨呀咁我而家咪執一執佢啦，同埋特別烏頭，裏面呀，即係呢啲高呢啲位呀咁我哋都係要清理曬佢，唔識太肥呀嘛，我哋唔係話一掛佢啦，跟住再沖洗乾淨，整個肚裏面嗰啲血漬我哋要見唔到㗎，清洗乾淨之後我哋將佢瓊水呀。</p></a>
+				<a href="#00:02:44.79" id="00:02:44.79" class="lt" onclick="jumptoTime(164, this.id)"><p>跟住，準備埋啲香料，咁我哋不單止瓊水咁咪就真係抹乾身，香辣魚鍋呀，香茅兩條，南薑，咁我呢啲咩嚟㗎呢，檸檬葉嚟㗎，紫天椒，辣味嘅來源，酸味嘅來源來自青檸有兩粒，泰式酸辣魚鍋呀咁我90年代好鍾意囉，一間，食㗎，今次就類似佢嘅方法去做呀咁我哋又，首先改咗香茅嘅尾段出嚟，煎住條魚，跟住我哋攞返條烏頭出嚟，瓊水我哋進一步。</p></a>
+				<a href="#00:03:50.90" id="00:03:50.90" class="lt" onclick="jumptoTime(230, this.id)"><p>要內內外外都要抹到佢好乾身，所有生味嘅來源，都係嚟住魚皮表面嘅水分所以我哋一定要將，好乾身嘅，抹到佢乾身之後，咁而家我哋，胡椒粉，魚身底面都要，我哋都畀返少少底味佢嘅，來源都係魚露呀咁我哋就，喺魚皮表面嗰度，一鎊一鎊一陣，魚露上面，咁樣有少少鹹味，魚肚裏面我今日你咩擺幾滴落去囉，咁我唔使擺太多嘅因為都幾鹹下嘅。</p></a>
+				<a href="#00:04:49.54" id="00:04:49.54" class="lt" onclick="jumptoTime(289, this.id)"><p>咁我魚肚裏面呀我咁我哋用衰藥，擺少少香嗎，檸檬葉落去，增加，香味呀，咁我哋攞碟出嚟，中間，香茅落去，咁我哋燒滾啲水，咁我哋，煲水，燒到水滾，水滾後，把魚放下去蒸，這條魚一斤重要蒸多久呢?</p></a>
+				<a href="#00:05:33.24" id="00:05:33.24" class="lt" onclick="jumptoTime(333, this.id)"><p>我們要用高溫鎖住肉汁，現在先蒸8分鐘，在蒸的時候，我們看看配料，泰式魚鍋有什麼香料呢?</p></a>
+				<a href="#00:05:54.68" id="00:05:54.68" class="lt" onclick="jumptoTime(354, this.id)"><p>這不是香料，是椰菜，加一點椰菜，這不是香料，是新鮮草菇，這是芹菜、蒜、芫荽、乾蔥和蒜頭，沙拉羹，這條魚蒸了8分鐘，現在看看，為什麼不看這個?</p></a>
+				<a href="#00:06:29.68" id="00:06:29.68" class="lt" onclick="jumptoTime(389, this.id)"><p>這是烏魚扣，稍微切開清洗乾淨，主角待會處理，現在看看魚，關火，拿上來放在陰涼的地方吹凍，這條魚熟了沒有?現在差不多八成半了，椰菜，我們拿少量出來切絲，芹菜、芫荽、蒜，洗乾淨切段，蒜頭，我們用三粒切成蒜蓉，乾蔥也是用三粒，現在處理其他香料，香茅怎樣處理呢?最有味道的就是頭，在頭部剁鬆，然後切。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:35.68" id="00:07:35.68" class="lt" onclick="jumptoTime(455, this.id)"><p>這樣就OK了，南薑洗乾淨後切片，切到這個程度，備用就可以了，最有味道的地方是底部，酸味的來源是來自青檸，我們把它切開，榨汁就可以了，酸味就有了，辣味的來源，紫天椒，吃辣的可以切碎，放一隻或兩隻，如果我不吃辣的就不要切了，就這樣放一隻，另一個香味來源，檸檬葉，放進去，香味就有了，湯的味道來源是甚麼呢。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:39.38" id="00:08:39.38" class="lt" onclick="jumptoTime(519, this.id)"><p>鹹味來自魚露，我們還要加肉，這些都是新鮮的豬肉，我們用豉油、豆粉、糖、生抽、魚露、胡椒粉、水，打到它起筋，搓成粒狀，當成肉丸一樣，拿出味道，另一個香味來源是甚麼呢，新鮮的草菇，這些新鮮的草菇，我們用濕紙巾，把整隻草菇擦乾淨，如果有泥塵的話，可以刮一下，把它全部擦乾淨就可以了，把草菇擦乾淨，現在開始處理湯底。</p></a>
+				<a href="#00:09:41.54" id="00:09:41.54" class="lt" onclick="jumptoTime(581, this.id)"><p>開火，開火之後，先處理一下新鮮的草菇，這些新鮮的草菇都很難做的，但是在家裡，我跟大家分享一個秘技或方法，開一鍋，用小火，放草菇進去，用白鍋慢慢烘兩三分鐘，烘的作用是讓它的菇青味釋出，如果在外面做，直接用滾油去拉油，去逼草菇的青味出來，在家裡就不需要了，用白鍋慢慢烘一烘，烘了三分鐘左右，就拿起來。</p></a>
+				<a href="#00:10:38.09" id="00:10:38.09" class="lt" onclick="jumptoTime(638, this.id)"><p>然後用大火，加一點油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:42.09" id="00:10:42.09" class="lt" onclick="jumptoTime(642, this.id)"><p>放油之後，把南薑、乾蔥、香茅、辣椒、香菜、香料放下去爆炒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:57.09" id="00:10:57.09" class="lt" onclick="jumptoTime(657, this.id)"><p>約一分鐘，香味釋出，這時，加入蒜蓉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:5.09" id="00:11:5.09" class="lt" onclick="jumptoTime(665, this.id)"><p>炒十秒鐘</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:9.09" id="00:11:9.09" class="lt" onclick="jumptoTime(669, this.id)"><p>聞到有蒜蓉的香味，就在鍋邊加一點酒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:17.09" id="00:11:17.09" class="lt" onclick="jumptoTime(677, this.id)"><p>加完酒之後，加滾水或雞湯都可以，等滾水滾出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:34.97" id="00:11:34.97" class="lt" onclick="jumptoTime(694, this.id)"><p>當湯滾起之後呢，我們就把肉丸放進去，肉丸也是要煮熟的，肉丸放進去之後，再煮它兩分鐘左右，就可以開始調味了，調味，我們加一點胡椒粉，鹹味的來源，主要是來自魚露，魚露大概是四湯匙，視乎你本身的魚露有多鹹，只是魚露的鹹味是否足夠呢?不足夠的，我們再加三分一茶匙的鹽，做這些魚鍋的湯底，味道一定要夠濃才會好喝。</p></a>
+				<a href="#00:12:28.73" id="00:12:28.73" class="lt" onclick="jumptoTime(748, this.id)"><p>有足夠的鹹味，我們調大約三分一的椰糖，如果沒有椰糖，用普通的砂糖也可以，調好味之後，我們放剛才的草菇進去，草菇是相當好吃的，這段時間呢，我們加上之前的檸檬汁，檸檬汁不要太早加，我們加的時候要上碟才好，湯底在滾的同時，我們看看這條烏頭，已經變冷了，為甚麼我們要蒸魚，又要變冷呢?</p></a>
+				<a href="#00:13:21.75" id="00:13:21.75" class="lt" onclick="jumptoTime(801, this.id)"><p>就是要做泰式魚鍋的所在，如果直接把它浸熟，魚是不太好吃的，我們蒸到魚八成半，然後把它吹冷，然後再放進魚鍋裡慢慢滾，就相當好吃，說到魚鍋，我們會不會買一些泰式的魚鍋呢?</p></a>
+				<a href="#00:13:41.85" id="00:13:41.85" class="lt" onclick="jumptoTime(821, this.id)"><p>我們不需要的，找一隻大隻的不鏽鋼碟，我們先把香茅、香料放在底部，然後我們就鋪一些生椰菜，為什麼要生?因為它會滾，滾了就熟了，然後把魚移過來，現在把配料和湯全部放進去，肉丸放在最後，加了肉丸後，味道也不一樣，加上芹菜、蒜頭、芫荽，完成了，現在聞到已經很香了，我建議大家多滾一點湯，因為一邊滾一邊吃是最棒的。</p></a>
+				<a href="#00:14:39.70" id="00:14:39.70" class="lt" onclick="jumptoTime(879, this.id)"><p>放在瓷電爐的表面，喜歡吃泰式魚鍋的朋友，給我一個LIKE，喜歡吃草菇的朋友，訂閱我職人吹水的頻道，幫我分享一下泰式明爐魚，我先吃東西了，謝謝收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

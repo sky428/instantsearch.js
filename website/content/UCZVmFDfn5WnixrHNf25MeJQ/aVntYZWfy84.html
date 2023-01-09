@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉好邪惡好味道 /五花腩簡單易做/ 竅門 五杯汁紅燒肉/ 最少食四碗 碗飯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'aVntYZWfy84',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉好邪惡好味道 /五花腩簡單易做/ 竅門 五杯汁紅燒肉/ 最少食四碗 碗飯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.15" id="00:00:13.15" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好咁呀攞開啲裝飾品先，大家睇個名都睇到呀，五杯五花腩，急凍五花腩，咁樣呢啲急凍五花腩呢咁有時候我哋返嚟做呀，都係幾好功夫呀因為點解呢，急凍五花腩佢一定就冇，新鮮嗰啲五花腩呀個肉味咁好呀，咁我哋點樣真係烹調呀，食嘢食時令嚴下嘅甜甜酸酸係最正㗎啦，咁呢類型嘅五花腩都係一般凍肉舖亦都會買到超市亦都會有。</p></a>
+				<a href="#00:01:6.41" id="00:01:6.41" class="lt" onclick="jumptoTime(66, this.id)"><p>咁你啲五花腩有幾厚呀，差唔多，一吋咁厚喎咁呢兩條呢就真係相當之靚啦雖然話即係啲急凍貨。</p></a>
+				<a href="#00:01:16.89" id="00:01:16.89" class="lt" onclick="jumptoTime(76, this.id)"><p>咁我哋都要睇下啲，啲五花均唔均勻呀咁樣，咁呢兩條就我哋返到嚟啦攤到軟身之後呢咁我就，咩都冇你啦，咁又同佢整個淡鹽水肉先呀，咁我都時都講呀咁我呢啲曾經入過雪櫃急凍嘅肉呀因為入個雪櫃呀，雪過啦佢肉嗰啲纖維都膨脹呀都會入咗少少雪未落去，咁我哋攤會唔會攤攤曬出嚟呀係攤唔曬出嚟㗎，咁我哋都係要用啲淡鹽水呀浸一浸佢呀因為啲肉呀吸收咗一啲。</p></a>
+				<a href="#00:01:51.71" id="00:01:51.71" class="lt" onclick="jumptoTime(111, this.id)"><p>鹽嘅味道呀咁佢啲肉嘅纖維就將佢收縮呀咁我從而又將佢，一啲唔好嘅血水呀啲雪味呀逼一逼佢出嚟呀，咁我哋浸佢約十零分鐘啦跟住就洗乾淨佢。</p></a>
+				<a href="#00:02:4.25" id="00:02:4.25" class="lt" onclick="jumptoTime(124, this.id)"><p>五花腩浸咁之際啦咁，其實配料好簡單，我哋四五粒乾蔥，兩三條蔥，四片薑咁樣ok，經過一輪呀梳梳洗洗之後呢，咁就準備好曬喇喎，咁我哋做呢個，五杯五花腩呀其實有啲似一啲叫做，紅燒肉呀，紅燒五花腩呀咁樣呀我哋以前上海菜做呢呢啲紅燒肉呢會炒，糖色佢做，PRO unin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:42.71" id="00:02:42.71" class="lt" onclick="jumptoTime(162, this.id)"><p>unrelated，neste，攞啲現成嘅糖色返嚟嘅咁我哋行內都會有嘅呢啲，但係屋企做啦做呢個五杯呢就唔需要嘅我哋就揀化佢，今次我呢度兩舊肉約，800 gram咁上下咁我又條埋呢個，五杯汁呀咁我都冇留意呀喂星星其實你哋鄉下嘢三杯五杯點樣分㗎，呢個問題呢就問得相當之好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:9.29" id="00:03:9.29" class="lt" onclick="jumptoTime(189, this.id)"><p>其實我哋都係用一個三杯嗰個原理，去，處理咁點解我哋整雞呀用三杯整呀整我用五倍呀因為嗰個，時間呀嘛，咁我哋就，要話乜說呀咁呀我哋攞碗出嚟，攞碗出嚟啦咁樣就落，一碗糖呀，咁你可以攞嘅杯出嚟都得㗎係咪，最緊要你都係要，同一個份量呀嘛，跟住，我哋，賭，一碗嘅酒落去，咁樣用咩酒都得㗎，咁你可以。</p></a>
+				<a href="#00:03:50.49" id="00:03:50.49" class="lt" onclick="jumptoTime(230, this.id)"><p>用啲白酒呀，我啫媽精呀咁樣咁我跟住我哋又攞啲，陳醋出嚟，或者用振江醋呀咁就，唔係好適宜用啲，白醋或者我整嗰啲糖醋蘿蔔呀嗰啲醋因為嗰啲就比較猛烈少少，咁我做呢個肉呀用啲陳醋呀咁呀就比較好啲，都係一碗，如果真係搵唔到陳醋嘅咁樣用普通嗰啲果醋呀咁樣，但係糖嗰個比例嘅自己就要教一教囉嗰個酸度咁跟住最後咩呀，鹹味嘅來源來自生抽生抽都係一碗。</p></a>
+				<a href="#00:04:28.13" id="00:04:28.13" class="lt" onclick="jumptoTime(268, this.id)"><p>生抽，咁佢都最後咩一碗係乜嘢啦，相當之簡單，清水呀，攞埋，一碗嘅清水落去，咁主要個味道就調校好呀，咁樣其他嗰啲味道嘅就來自，薑呀乾蔥呀蔥呀咁樣呀，如果鍾意食乾蔥嘅，落多兩三粒落去因為啲乾蔥都好好食㗎喎，調好曬所有味道之後呀加埋啲料頭咁，十零分鐘啦咁樣雖然話個盤粉紅色睇唔到啲粉紅色嗰啲水，大都會睇到少少嘅。</p></a>
+				<a href="#00:05:10.73" id="00:05:10.73" class="lt" onclick="jumptoTime(310, this.id)"><p>咁樣你咪，倒清曬啲水洗四五次洗乾淨佢啦，咁洗咗四五次之後呢咁我又將佢瓊水，有睇開我整呢啲五花腩呢我都講過好多次呀如果你想個型太靚㗎啦，你就圓條咗去飛水，咁樣飛完水你先再切啦咁佢出嚟個型態呢就會比較靚啲，如果但係屋企食呢我哋就真係冇乜所謂嘅，因為你切開咗佢飛水啦，你就會快啲㗎嘛。</p></a>
+				<a href="#00:05:42.71" id="00:05:42.71" class="lt" onclick="jumptoTime(342, this.id)"><p>咁我哋切開飛水啦都有個住嘅地方啦我哋唔好切得太過細件，咁我哋就盡量啦即係攞返一個，正正方方咁樣啦即係，再闊少少都ok呀，咁佢都有少少收縮呀，咁我哋就全部改曬佢咁ok呀，咁我睇緊洗嗰陣時最緊要就檢查嗰啲，皮呀有冇殘留啲毛呀嗰啲喺度啦，咁呢啲都係啲烹調嘅，細節位呀嘛，咁可唔可以用生鮮肉去做呀都係可以嘅。</p></a>
+				<a href="#00:06:26.73" id="00:06:26.73" class="lt" onclick="jumptoTime(386, this.id)"><p>咁有啲外國網友如果買唔到啲新鮮豬肉嘅咁咪用呢啲，整一個，都係相當之好味呀，咁五花腩切好曬之後啦咁樣呀辦板聲啦進入下一步開咗個火先，凍水落去，咁我哋又擺兩片薑呀擺啲蔥味落去啦，咁我擺少少紹酒落去，咁最重要，擺返一個湯匙嗰個白醋奶。</p></a>
+				<a href="#00:06:53.89" id="00:06:53.89" class="lt" onclick="jumptoTime(413, this.id)"><p>跟住我哋將所有嘅五花腩打落去飛水，咁喺佢，凍水加熱過程當中咁咪將一啲唔好嘅味道呀咪將佢逼曬出嚟囉，咁落酒落薑落蔥，落醋個作用都係一樣，咁樣我哋點樣釋除佢啲素味呀一啲唔好嘅味道呀咁就係靠呢啲呀，我哋搵水計都要搵咗都要飛去五六分鐘，我要飛去，差唔多成舊肉啦要去熟曬，咁做呢類型嘅豬腩肉菜式呀或者。</p></a>
+				<a href="#00:07:35.70" id="00:07:35.70" class="lt" onclick="jumptoTime(455, this.id)"><p>扣肉呀芋頭扣肉呀咁樣，咁我以前做，茶餐廳私房菜咁我都必定會有做，紅燒肉就，間中時令啦夏天我就會做呢啲啦咁我哋做上海菜又會，去蚊蜜魚呀咁我之前都做過一次呀墨魚大烤呀嘛，都係相當之好味，呢個肉呀，最重要係個汁呀，整多少少咁呀留返個汁呀咁呀第二日攞嚟呀，撈麵呀撈意粉呀撈拉麵食呀好好食㗎，咁你話做係咪好複雜呀唔複雜呀你你見到我整我都唔複雜㗎。</p></a>
+				<a href="#00:08:21.26" id="00:08:21.26" class="lt" onclick="jumptoTime(501, this.id)"><p>你想再簡單啲嘅，啲肉，再切細粒啲囉，咁你飛咗啲水個時間你就唔使咁長呀嘛，咁而家我哋冇嘢㗎，我哋，都係飛水嘅時間將就肉，飛熟佢咁你一間你蚊主嘅時間你都係，40呀45分鐘呀咁你啲急凍豬腩仔呢就必定會淋曬，咁我如果新鮮肉就蚊內少少啦，同一個，烹調技巧嚟㗎嘛，咁我但係，新鮮肉就，唔好整甜嫩酸酸啦咁我遲啲再同大家分享一個。</p></a>
+				<a href="#00:09:0.44" id="00:09:0.44" class="lt" onclick="jumptoTime(540, this.id)"><p>簡單啲又香口嘅新鮮豬肉做法啦，咁大家睇到呀凍水加熱過程當中，咪將啲唔好嘅嘢咪迫曬出嚟啦，呢啲就係一啲唔好味道呀啲舖嚟㗎，咁我哋就撇一撇佢啦，咁而家我哋都係要，飛行員，六至十分鐘左右啦，都知道比較大件嘅，咁務求都係要成舊肉飛熟佢，水滾就飛咗十分鐘呀我哋撈起曬佢沖水，沖水都係將佢飛水一啲唔好嘅嘢。</p></a>
+				<a href="#00:09:41.51" id="00:09:41.51" class="lt" onclick="jumptoTime(581, this.id)"><p>洗乾淨佢咋嘛，同埋另舊肉呀佢呢個時間呀，收縮下咁你一陣間再問呀呢啲肉呢就會好食啲，咁我哋稍為勤一勤水咁呀攞齊曬啲配料，咁呢邊呀，咁就著返個火去啦，燒返熱嘅話先，熱咗之後呀，我哋第一步就擺曬我哋啲豬肉嚟啦我哋白鑊就煎一煎佢啦，大熱燒熱少少嘅話呢你先煎到呀，豬肉，已經有返咁少，咁我煎一煎佢啦迫一迫啲油份出嚟啦。</p></a>
+				<a href="#00:10:27.59" id="00:10:27.59" class="lt" onclick="jumptoTime(627, this.id)"><p>同埋你邊個個型當中呀，咁我都有啲騷味呀會邊度你出嚟，香味識出啦咁你光聰呀薑片呀咁我哋咪，擺中間啦，油，尖一尖佢，又炒一炒佢，沖白色嗰部分咁我又咪擺埋落去啦，都係爆一爆佢呀嘛務求，乾蔥呀薑呀同埋蔥嘅味道呀就爆一爆佢出嚟，太黑呀咁而家又剛少少呀，畀少少心機啦呢段時間咁呀啲肉呀，有少少椒呀咁咪最理想呀。</p></a>
+				<a href="#00:11:13.67" id="00:11:13.67" class="lt" onclick="jumptoTime(673, this.id)"><p>更加香我哋喺鑊邊撐少少走落去咁我隨即咁我哋，攞曬我哋啲五杯汁，咁我又慢慢加落去，咁我加少少先啦咁我等佢慢慢滾起先，五花肉呀，有啲騷嘅，咁我哋就滾起曬之後呀係咪滾咗啲，咁又加少少落去啦，啲都係一啲班圖技巧之一嚟㗎嘛，又滾喎咁又你呀，咁我又所有加曬落去，滾起曬先，如果大家知道個份量嘅，就唔使教你一兜㗎喇咁喺隻鑊嗰度落落咗酒先落水。</p></a>
+				<a href="#00:12:14.02" id="00:12:14.02" class="lt" onclick="jumptoTime(734, this.id)"><p>落糖滾起佢先落醬油呀醋最後落，都ok呀咁你滾起佢先，滾起咗之後入面頭嗰啲舖啦就係就撇一撇佢啦，一啲唔好嘅嘢嚟㗎嘛，跟住我哋收慢火，冚蓋，我哋今日就蚊佢約45分鐘，保持住一個慢火而家約蚊咗，45分鐘，望一望佢咩環境先都好靚喎，咁我哋呢45分鐘呀中間呀都係要郁佢呀咁咪等佢啲，蚊得均勻啲呀嘛。</p></a>
+				<a href="#00:13:3.68" id="00:13:3.68" class="lt" onclick="jumptoTime(783, this.id)"><p>咁我又搵個大舊少少呀吉一吉佢啦，快啲吉咁咪最好啦係啲，差唔多喇喎，咁你咁貝紅燒肉呀去到而家就一個就即係頗為關鍵嘅時間，咁我而家就要試一試個汁嗰個，甜酸程度，如果你稍為覺得而家都唔係好夠濃嘅，咁你咪收一收佢啦開大個火，咁你而家你覺得話我，都係適合啦個濃度就啱啱好啦，咁又唔需要呀。</p></a>
+				<a href="#00:13:38.24" id="00:13:38.24" class="lt" onclick="jumptoTime(818, this.id)"><p>紅燒肉呀，你識火，你浸一浸佢呀，就仲好食，你擺佢今晚呀或者擺你聽朝呀咁咪仲正，咁多汁點說呀，精華嚟㗎，啲汁，另外搵隻碗擺喺好佢，呢碗汁呀，正如我頭先所講呀，主角拉麵，切少少青瓜絲落去做涼拌，拉麵呀，甚至乎你蒸少少腸粉，撈呢個五杯汁來都係好好食，我嗰時做啲三杯雞呀嗰啲汁呀咪咁樣整呀，我知你都嘅。</p></a>
+				<a href="#00:14:22.99" id="00:14:22.99" class="lt" onclick="jumptoTime(862, this.id)"><p>咁咪收一收佢囉，啲肉嘅我哋不理佢先，咁包啲肉之後呢咁我係咪淋埋啲汁上去啦啲埋牽呢我建議大家，就盡量唔好埋牽，乜得，咁砌好曬個肉咁我哋咪蒸，頭先嗰啲汁，咪淋埋上面囉，收到好緊或者打牽呀我唔建議㗎，因為呢個汁呀，精華所在呀，咁我以前做呢個五杯紅燒肉呀咁樣，出餐呀咁樣跟少少唐生菜呀咁呀，相當之多地盤工友食㗎喎。</p></a>
+				<a href="#00:15:8.55" id="00:15:8.55" class="lt" onclick="jumptoTime(908, this.id)"><p>不單止多地盤工友呀，甚至乎，有啲，好靚嘅ol呀都會叫呢個肥豬肉食呀，吸引之處就係個執法，咁，菜就冇呀擺返少少，沖絲上面，咁大家睇到呀，冇炒過糖色，乜嘢都冇，咁我識個來源呢咪來自生抽，陳醋囉，我真係睇到流口水呀好邪惡呀，係呀，流口水嘅嘢就真係好邪惡呀特別呢個呢呢個呀，五花腩網友畀個like我星星呀，真係。</p></a>
+				<a href="#00:15:51.55" id="00:15:51.55" class="lt" onclick="jumptoTime(951, this.id)"><p>太好笑呀因為諗起頭先嗰個靚女嗰段說話呢，真係好多靚女鍾意食呀嘛，咁我鍾意靚女個網友就定個職人出咗個頻道啦如果兩樣嘢都鍾意嘅麻煩你加個頻道會員，今日就分享就到此為止啦，咁呀多謝收睇，我已經流緊口水講唔到嘢呀咁我下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

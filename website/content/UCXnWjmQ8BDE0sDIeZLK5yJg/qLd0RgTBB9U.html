@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【打到手軟】自製牛丸！係咪要手打？ [Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'qLd0RgTBB9U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【打到手軟】自製牛丸！係咪要手打？ [Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>請訂閱鬼鬼和音你，按讚鬼鬼，分享給朋友</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:6.38" id="00:00:6.38" class="lt" onclick="jumptoTime(6, this.id)"><p>留言一下嘛，掰掰，Of statues，集，ophobia，pra，osed，pla，weisen，공當，Vullooking，1，packs，ell toolbar</p></a>
+				<a href="#00:00:16.63" id="00:00:16.63" class="lt" onclick="jumptoTime(16, this.id)"><p>kind，真的厲害的東西，就是，牛丸，牛丸買其實很便宜而已，其實什麼二十多元，三十元，那你就可以買到一磅，但是，如果你真的去研究，牛丸，基本上在街上，有時候你買到的牛丸，有機會是裡面沒有牛的，完全可以去到，因為牛丸，如果是要買牛肉來做，其實挺貴的，如果是真真正正，100%純牛肉的牛丸，其實你三十多元。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:49.35" id="00:00:49.35" class="lt" onclick="jumptoTime(49, this.id)"><p>應該是買不到的，所以我們今天，就自己做了，好不好，自己試一下做，挺有趣的，嗯，未必可以吃到街上那些，這樣丟下去彈上來，但是，其實是有些原則，只要你跟，你都可以做到一個，挺特別的成品的，是挺有趣的，我們今天一起來做，首先第一件事要做，你要準備的，就是你去買一包牛肉回來，你最好預先把它放進冰水，冷藏成冰。</p></a>
+				<a href="#00:01:17.35" id="00:01:17.35" class="lt" onclick="jumptoTime(77, this.id)"><p>但是又不用，完全冰，因為太硬，我們做不到下一個步驟，所以我就放進去，變成冰，然後放了一個小時左右，它略為軟一點，又未去到最軟的狀態，就是它是未解凍的，但是它是有差不多溫度的，這麼冷的，因為那個重點其實是溫度，無論你做，煮，所有過程，溫度是超級重要的，溫度會影響整個東西的質感，我們直接拿一個，攪拌的那個碗出來。</p></a>
+				<a href="#00:01:49.65" id="00:01:49.65" class="lt" onclick="jumptoTime(109, this.id)"><p>直接放進去就可以了，你就撕開它，如果你撕得開，它起碼是有差不多的溫度，讓你撕得開，如果它硬得像一塊石頭，其實就，不是說不行，也好，更好，但是你的刀，就先這樣，它就會很容易磨蝕了，你攪拌的那把刀，之後把你需要加進去的東西，都一次過加進去，因為，攪拌，你分開幾次加，慢慢攪拌，那個時間會拉長了，我們一氣呵成。</p></a>
+				<a href="#00:02:21.15" id="00:02:21.15" class="lt" onclick="jumptoTime(141, this.id)"><p>就可以保持在一個冷的溫度，保持最冷，我們需要一點魚露，大約5克，其實你當一匙吧，你一匙吧，你可以沒有，你可以不加的，魚露和牛丸是配的，無論你去月式，還是潮式，粉麵店，都會給你一點魚露的，之後那些就，最好就有了，胡椒粉，胡椒粉我們要很少，一克左右，之後黑椒，你有就有，沒有就沒有，也是盡可能有就有，黑椒和牛肉。</p></a>
+				<a href="#00:02:58.05" id="00:02:58.05" class="lt" onclick="jumptoTime(178, this.id)"><p>也是永世的朋友，也是要一克，但是很難的，我現在轉了這麼多圈，那個磅沒有動過，特別是你，那些牛肉不是特別好，就是普通免治牛肉，沒有什麼特別味道，所以調味方面，你要補一點，盡可能補足，之後鹽，鹽很重要的，鹽一定要加的，因為鹽會令到它，更加容易攪到那個質感出來，之後雞粉，那你就可加可不加了，這個真的。</p></a>
+				<a href="#00:03:35.15" id="00:03:35.15" class="lt" onclick="jumptoTime(215, this.id)"><p>然後呢，特別了，開始到一些，有關結構上的材料了，第一樣就是，泡打粉，你問為什麼會泡打粉呢，我們又不是蛋糕，我們又不是要，這麼小顆牛丸，醬到這麼大顆，然後拿來賣，不就沒理由的，牛丸的口感跟這個沒關係，泡打粉呢，裡面有一個很神奇的物質，會跟肉有一個作用的，然後他們會，好像漿一樣，容易變成一團東西，還有會黏得比較好。</p></a>
+				<a href="#00:04:6.35" id="00:04:6.35" class="lt" onclick="jumptoTime(246, this.id)"><p>如果你商業用，可能他們會有其他，更加好的東西，但是，我們普通家裡，泡打粉是有這個效果的，你說是不是很明顯呢，你說沒有是不是真的不行呢，沒有也是可以的，因為我試過，兩個都試過，有跟沒有，那個彈的程度差一點點，所以我們要加一點，至於那個化學物質的實際，跟怎樣肉跟蛋白質的作用，我就怕說錯就不說了，之後就有粟粉。</p></a>
+				<a href="#00:04:36.25" id="00:04:36.25" class="lt" onclick="jumptoTime(276, this.id)"><p>粟粉就是，令到它流出來的水分，被它吸收了，然後，就是結合得更加好，因為你知道肉，一熟，你有炒過免治牛肉的，免治牛肉一熟的時候，就會出水，然後縮小，粟粉其實就是拿來，在中間的角色，之後，整個東西就是這樣，然後可以按情況加一點水，水的量每個人不同，你看著，狀態合不合你，加會好一點，所以我就不一次過加了，藥膜是25。</p></a>
+				<a href="#00:05:10.15" id="00:05:10.15" class="lt" onclick="jumptoTime(310, this.id)"><p>有時候有些肉會濕一點，有時候有些肉會乾一點，那就看情況，因為它濕潤的程度，水分的程度，會影響你擠出來的表面的光滑程度，所以是這個東西你要關心，如果你看它的樣子是沒有要求的，其實水的份量又不是真的那麼重要，有些人會用蛋白的，也是一個好的選擇，因為你想像一下，蛋白，你煮蛋的，蛋白是脆的。</p></a>
+				<a href="#00:05:43.35" id="00:05:43.35" class="lt" onclick="jumptoTime(343, this.id)"><p>所以用蛋白代替水，也是一個不錯的選擇，用藥膜也是，不到一隻蛋的蛋白，因為我們跟水差不多，兩樣都可以，但我試過那個程度，水跟蛋白出來的差異程度，又沒有到超級多，跟有泡打粉沒泡打粉一樣，最最最最最重要的元素，都是溫度，所以你就盡快，趁它現在還是冰凍的時候，快手攪拌它，藥膜是比普通免治牛肉再打碎一點點，其實就不打得多少的角散。</p></a>
+				<a href="#00:06:23.35" id="00:06:23.35" class="lt" onclick="jumptoTime(383, this.id)"><p>你盡可能打，因為我們的機器，最多家裡都是這些，跟真正做丸的機器，是有一點點不同的，尤其是我們現在這麼冷，那塊肉很硬的，你會需要藥乾時間，你就盡量弄，我們再打多一會，為什麼溫度這麼重要呢，因為如果它不夠冷，那些肉會有一點點出油的狀態，在那個狀態之下，那顆東西就會分離一點，就是它肉跟肉之間的質感就會越分離，就會越接近肉丸。</p></a>
+				<a href="#00:06:57.85" id="00:06:57.85" class="lt" onclick="jumptoTime(417, this.id)"><p>西式肉丸那種質感，中式肉丸跟西式肉丸的分別，就是會去到那個，就是那個質感，你可以想像一下，西式肉丸一咬下去，就是全部碎開一顆顆的，中式肉丸就是整顆，好像橡膠那樣，攪拌完就可以拿出來，你都可以略攪的，最重要的是你要確保它有一種黏糊糊的狀態，就好像你攪肉餅那樣，那就是那些肉，裡面的蛋白質。</p></a>
+				<a href="#00:07:25.35" id="00:07:25.35" class="lt" onclick="jumptoTime(445, this.id)"><p>是純粹流出來之後，整個就會很一致地融合，就不會變成肉粒，你是要有那個質感，才像中式的牛丸，牛肉豬肉都是，我們這次就做純牛肉，你可以加豬肉進去，沒什麼大關係的，一樣可以的，你看它現在是，確實有點硬，你可以加一點水，如果你覺得它太硬，你看看能不能擠出來，你這樣撥下去，你看看能不能擠出來，如果擠出來，表面是光滑的。</p></a>
+				<a href="#00:08:0.35" id="00:08:0.35" class="lt" onclick="jumptoTime(480, this.id)"><p>其實就OK了，我們再捏一下，確保它是黏糊糊的狀態，還有所有東西都混合得很好，很有彈性，但是這個過程你不要攪太久，因為這個東西是冷的，我們現在很冷的，我們的手很熱的，如果你弄熱了它，那就慘了，那一塊東西就先這樣了，得不償失了，所以用機器有它的好處，因為機器沒有溫度的，不是，機器它冷一點，給我們補這個溫暖的心。</p></a>
+				<a href="#00:08:37.06" id="00:08:37.06" class="lt" onclick="jumptoTime(517, this.id)"><p>確保它攪好之後，攤平它，我們又放進去再冷一點，那就確保它超級冷，那時候就可以，下一步擠它出來，那就...一會兒回來，好了，我們那個牛丸大概要冷一個小時，冷到第八個字，九個字，十個字，就可以準備好煲一些水，就可以煮那個牛丸，但是那個煲水就不是說，就這樣煲滾它就可以的，因為你知道我們那顆牛丸裡面有很多空氣。</p></a>
+				<a href="#00:09:9.06" id="00:09:9.06" class="lt" onclick="jumptoTime(549, this.id)"><p>因為攪的時候會把空氣運進去，然後又有粉，那就是說它受熱某程度上是會略為脹大，那同時就好像焗蛋糕一樣，你越高溫煮它，它就脹得越大，那變成了如果它很高溫地煮，脹得很大，那就是裡面的質感就會鬆散了，沒有我們吃的那顆牛丸那麼彈，那麼結實，所以如果你用高溫煮一顆牛丸，其實它的質感是會接近西式的肉丸，因為煮到散了，脹大了。</p></a>
+				<a href="#00:09:45.06" id="00:09:45.06" class="lt" onclick="jumptoTime(585, this.id)"><p>所以我們是要用一個相對低溫慢慢浸熟它，讓它不要膨脹得那麼厲害，要保持著結實的狀態之下熟，那我們就煲一些水，那就用小火慢慢浸熟它，可能去70度那些大概的水溫，然後浸它大概十幾分鐘，那它就會熟了，總之呢，就不要讓它...這樣滾，又或者你煲到水超級滾，然後關到最低火力，之後那個水就可以慢慢過溫了。</p></a>
+				<a href="#00:10:23.06" id="00:10:23.06" class="lt" onclick="jumptoTime(623, this.id)"><p>還有你放兩三顆牛丸下去，那溫度就會下降了，與此同時，煮的時候可以準備一盆冰水，那顆牛丸煮到最熱的時候，放進去很冷，它會熱脹冷縮，熱脹，然後冷縮，縮進去，它就會很緊緻，說得不錯，水，水就超級滾了，我們關到最小火力，然後拿開一點，拿我們的牛丸出來，之後拿一隻匙羹，拿一盆水，洗乾淨你的手，之後就可以。</p></a>
+				<a href="#00:11:5.90" id="00:11:5.90" class="lt" onclick="jumptoTime(665, this.id)"><p>最正最期待，就是煮這個牛丸了，我們扔下去，將裡面的空氣盡可能地踏出來，之後這樣，第一下不用這麼多，第一下先向下刮，讓它的表面平一點，然後捏下去，它就會擠出來，然後你用匙羹這樣舀，那顆牛丸就會出來了，當然你可以調節大小，因為這樣，第一下是不會平的，所以第一下通常要先撥一些牛丸下去，然後才將它擠出來。</p></a>
+				<a href="#00:11:50.10" id="00:11:50.10" class="lt" onclick="jumptoTime(710, this.id)"><p>這樣，一顆，然後放進去，如此類推，就將它全部擠出來，這個動作叫做擠，魚蛋，我小時候看過一個紀錄片，叫做大咸濕，好像，如果我沒記錯，說以前香港有一種攤子叫做，魚蛋攤，是做色情事業的，為什麼叫做魚蛋攤呢?</p></a>
+				<a href="#00:12:18.14" id="00:12:18.14" class="lt" onclick="jumptoTime(738, this.id)"><p>因為那個攤子，是全黑，一盞燈都沒有，裡面有些女性，之後那些人走進去，就是摸黑，摸著摸著，然後就好像，擠魚蛋那樣，所以就叫做魚蛋攤，如果我沒記錯就是這樣，那套東西好像是叫大咸濕，我們呢，一本正經地，說一下，我們看看盤子的狀況，如果你水分多一點，其實你的丸子，會滑一點，還有你現在看起來好像滑，但是放進去的那一刻。</p></a>
+				<a href="#00:13:1.70" id="00:13:1.70" class="lt" onclick="jumptoTime(781, this.id)"><p>因為它一熟肉會縮的，所以會有一點點不同的，跟你現在在肉眼看，我們如此類推就弄完它，小火慢慢浸，十分八分鐘左右，它就OK了，你準備一盤冰水，好了，時間到了，我們是時候撈起它們了，拿一些冰水，然後就放進去，它們就會馬上縮小了，所以從頭到尾，所有東西都是關於溫度的，其實就沒什麼特別秘密的，而那些秘密呢。</p></a>
+				<a href="#00:13:41.20" id="00:13:41.20" class="lt" onclick="jumptoTime(821, this.id)"><p>真的秘密的我們是接觸不到的，應該是真的有些特別的化學物，或者師傅有些特別的技巧，就可以令它更加好吃，更加彈這樣，好，我們浸完冰水，縮一縮，牛丸就會完成了，你可以鎖住它也可以，然後馬上拿來吃也可以，這樣，搞定，完成，好!我們這次的自製牛丸就完成了，樣貌是這樣的，它又不是真的去街上買的那種，那麼彈的確實。</p></a>
+				<a href="#00:14:27.44" id="00:14:27.44" class="lt" onclick="jumptoTime(867, this.id)"><p>但你看我這樣捏它，都還是沒有崩潰，你看我這樣捏都沒有崩潰，就是樣貌是這樣的狀態，那我們馬上撕開來搖一搖，就是這樣，就是牛丸的味道，比起自己臉上的牛丸沒有那麼大的牛丸的味道，很接近的，而且吃起來都很開心，因為肉變成一顆丸，感覺是挺有趣的，就是這樣了，今集來到這裡，記得Like、Facebook、Follow、Instagram、訂閱、追蹤、加戶，還有贊助我們。</p></a>
+				<a href="#00:15:4.44" id="00:15:4.44" class="lt" onclick="jumptoTime(904, this.id)"><p>星期一、二、三、四、五、六，記得在身邊，星期日也可能會有，就是這樣，我們下個星期見。</p></a>
+				<a href="#00:15:9.44" id="00:15:9.44" class="lt" onclick="jumptoTime(909, this.id)"><p>Bye Bye。</p></a>
+</div>
+	</body>
+</html>

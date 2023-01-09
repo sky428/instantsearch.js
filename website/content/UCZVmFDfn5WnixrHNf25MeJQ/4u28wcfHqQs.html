@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水 〉 荷葉飯 鮑汁 星星 同你講 只要踏實地去做 人人做得到 餡料處理 端午節 有關荷葉菜式</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4u28wcfHqQs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水 〉 荷葉飯 鮑汁 星星 同你講 只要踏實地去做 人人做得到 餡料處理 端午節 有關荷葉菜式</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.02" id="00:00:13.02" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好，又係我星星同大家職人吹水，大家好，整啲荷葉出嚟，星星你唔係又整糯米雞呀?</p></a>
+				<a href="#00:00:26.02" id="00:00:26.02" class="lt" onclick="jumptoTime(26, this.id)"><p>唔係整糯米雞呀，片頭都寫咗啦，包汁荷葉飯吖嘛，咁做荷葉飯其實要買啲新鮮荷葉，好可惜呀，連啲乾荷葉買塊靚啲都買唔到呀，咁我哋就，二話不說，呢啲係呢一集貨舖有得買嘅，我哋搵啲水浸咗佢先，咁呢啲乾品荷葉，我哋要最少都要浸水浸佢30分鐘，浸到佢扯飽水，有個軟身，咁我哋先再處理佢，咁做荷葉飯，買到新鮮荷葉嘅就一定用新鮮荷葉做。</p></a>
+				<a href="#00:01:2.02" id="00:01:2.02" class="lt" onclick="jumptoTime(62, this.id)"><p>嗰個風味就最好㗎啦，出面做啦，又叫做鮮蝦鮮蝦鮮蝦荷葉飯，咁我而家就用啲急凍蝦仁去做啦，呢啲急凍蝦仁返到嚟啦，我哋用兩茶匙鹽落去，跟住放啲水，咁我哋浸佢十幾分鐘，咁用鹽水解凍嘅目的呢，都係逼一逼佢，曾經入過雪櫃呀，嗰啲雪味逼一逼一出嚟啦，同埋等佢有個基本鹹味入咗入去，跟住我哋再清洗佢四五次，跟住有兜急凍嘅雞柳呀。</p></a>
+				<a href="#00:01:41.02" id="00:01:41.02" class="lt" onclick="jumptoTime(101, this.id)"><p>呢啲雞柳我頭先已經用淡鹽水浸開咗，咁而家我哋洗乾淨佢先，洗咗三四次之後，咁我哋就攤鬆佢啦，咁我哋稍為瀝一瀝水，咁未講配料之前，咁我哋就吹返啲飯先啦，荷葉飯，包汁荷葉飯，飯一定係主角嚟㗎啦，咁我哋喺出面做啦，都有兩三種做法嘅，咁喺屋企做呢，同大家做一啲比較簡單啲嘅，首先我哋將兩個膠兜，即係電飯煲嗰啲呀。</p></a>
+				<a href="#00:02:19.02" id="00:02:19.02" class="lt" onclick="jumptoTime(139, this.id)"><p>嗰啲膠兜嗰啲米洗咗佢先，做呢個荷葉飯，我哋要啲飯爽身嘅，所以我哋洗嗰度，我哋慢慢搓一搓佢，務求將佢啲米出面嗰啲最黏糯嘅質地洗一洗出嚟，稍為瀝乾水，倒入碟內，開一罐最細罐的即食鮑魚出來，看鮑魚汁份量有多少，加水到這兒，當然要舀起鮑魚計，攪勻，倒入米，將米和米混合，開火，燒水放飯，保持大火滾水蒸約35分鐘，將蝦仁浸約十多分鐘，倒入鹽水，將它洗淨。</p></a>
+				<a href="#00:03:47.52" id="00:03:47.52" class="lt" onclick="jumptoTime(227, this.id)"><p>務求洗到蝦仁無滑，盡量將鹹味洗出來，因為它都吸收了部份鹹味，最重要將它瀝乾水，這次做一盤海鮮飯我放一半就夠，處理雞胸肉，又名雞柳，這些都是我之前整雞時改出來，切開一粒粒便可，約一手指頭大粒，因為煮熟了會細粒些，全部改用拉刀方法便可，去到兩條真正雞柳部分，這些有少許筋，挑出來切開便可以，這些雞胸肉我用一半便夠，雞柳醃，鹹味來源是生抽約一湯匙。</p></a>
+				<a href="#00:05:0.55" id="00:05:0.55" class="lt" onclick="jumptoTime(300, this.id)"><p>約150克，半茶匙砂糖，半茶匙生粉，攪勻讓它滑身，約落一茶匙生油，讓它鎖一鎖醃料，從而令它更滑，很簡單，雞柳有時間最好醃約30分鐘，有蝦仁更好，浸幾條蝦乾，襯到鮑魚，還有其他配料，有些我之前浸的冬菇，拿兩隻出來切粒，有些甘筍粒，這些綠色的是西蘭花框，做包汁荷葉飯在酒樓食都是一個貴價菜式，特別是飲宴，最頂級的菜式都是沒有包汁荷葉飯。</p></a>
+				<a href="#00:06:17.15" id="00:06:17.15" class="lt" onclick="jumptoTime(377, this.id)"><p>自己做都不是太困難，蝦乾沖水浸，洗乾淨，拿乾水備用，飯蒸時無無聊聊拿乾品荷葉出來，新鮮荷葉怎樣處理?新鮮荷葉都是浸水，做一會步驟要拖水洗乾淨，特別是新鮮荷葉，新鮮荷葉多了草青味，要釋除草青味保留原本荷葉的香味，新鮮荷葉飯，不是新鮮蝦，是新鮮荷葉，很可惜，逛了幾個街市都買不到，現在的菜檔很少拿新鮮荷葉，因為新鮮荷葉不耐放。</p></a>
+				<a href="#00:07:25.23" id="00:07:25.23" class="lt" onclick="jumptoTime(445, this.id)"><p>一會兒放一會兒，會爛掉，不好看，沒人要，現在很多都是農場直接交給食肆，配料適隨專便，如果在外面做，賣到錢的，甚至乎用大粒大子大隻蝦，也可以用元貝仔，保持大火，現在約蒸了30分鐘，看一看，因為這是前期，一會兒還要處理，最緊要看飯心這些位置行不行，如果行蒸30分鐘便可以，拿碟飯出來，兜水不要倒掉，有什麼用。</p></a>
+				<a href="#00:08:16.23" id="00:08:16.23" class="lt" onclick="jumptoTime(496, this.id)"><p>現在處理荷葉，放入沸水，滾水計一分鐘便可，大家看到一煮，青綠色的便煮出來，煮一煮便會軟身很多，相當香，現在煮這些荷葉，大家知不知道這些荷葉除了用來包糯米雞，還有什麼用途，在下面留言欄留言，這邊隨即準備些凍水，浸入凍水，再清洗乾淨，放涼備用，荷葉洗乾淨後隨即晾水，取配料出來，急不及待著火，燒熱鍋，鍋熱後落適量油。</p></a>
+				<a href="#00:09:22.23" id="00:09:22.23" class="lt" onclick="jumptoTime(562, this.id)"><p>落蝦仁，要吸乾水，蝦仔很快，放下蝦仁，攤鬆，快到怎樣?一和你鞠躬便差不多，煎一煎封便可，基本上一分鐘都不用，便可以起，目的是煎封，期間保持大火，落雞丁，落一半便夠，落了便不要動，約三十秒，見底微轉色便反了，務求煎封兩邊才炒，不要一落鑊便不停翻，未鎖到肉汁便所有味都翻出來，這邊都煎了約三十秒，炒一炒，務求鎖鎖肉汁。</p></a>
+				<a href="#00:10:41.55" id="00:10:41.55" class="lt" onclick="jumptoTime(641, this.id)"><p>不用煎焗，因為待會還要蒸，拿起這些，落少許油，爆冬菇，冬菇配料要爆一爆才香，很快聞到冬菇香味便放蝦乾煎一煎，西蘭花頭，甘筍粒放下去，保持大火炒一炒，約一分鐘蝦乾可拿起，將剛才的飯鏟落去，剛才忘記翻散，不要用鑊鏟這樣對，用殼，在外面炒都會用殼，用殼按一按，務求將飯底炒香，壓縮後可炒，等飯。</p></a>
+				<a href="#00:12:5.23" id="00:12:5.23" class="lt" onclick="jumptoTime(725, this.id)"><p>水份收乾，飯旁邊微微跳，落剛才的雞丁蝦仁，保持大火炒兩三下，將飯混和，飯底試味，補約一湯匙蠔油，在鑊邊落約一茶匙生抽，這時快手些，炒幾下，差不多，現在已很香，飯底整好後拿碗出來，鋪蠔葉，將蝦乾鮑魚鋪底，現在剷些飯底，外面做的飯底稍為放一放，做這些蠔葉飯要做很多，將蠔葉打爆，怎樣打爆?滿些，現在很簡單，首先摺兩邊，按住這兒，這兒覆住。</p></a>
+				<a href="#00:13:41.73" id="00:13:41.73" class="lt" onclick="jumptoTime(821, this.id)"><p>一塊蠔葉已可，那塊留來煲些去濕茶飲，拿個盤過來，反轉也很簡單，整個反出來，整盤放下去，已可，準備好後隨即開火，燒些水，水滾後易話不說，放蓋，更正做這個蓋，蒸多久?十分鐘都可以，不要蒸太久，所以這飯自己在家做，立即做，立即食，品質一定比外面食好，因為剛才說過每次會做很多，放幾十圍酒，蒸籠放幾十圍，去到單尾才出。</p></a>
+				<a href="#00:14:54.94" id="00:14:54.94" class="lt" onclick="jumptoTime(894, this.id)"><p>自己做一定新鮮滾熱辣，保持大火約蒸十分鐘，開了，開完這個才有東西看，竹籠有樣好，竹籠可以關掉才開，因為竹籠無倒汗水，千呼萬喚齒出來，一上單尾，包汁河葉飯，綠乾淨剪開慢慢剪開，最正是這剎那，我都未看過什麼模樣，原來剪得太細，一個籠仔包汁蒸河葉飯，加多兩片蝦乾上去，整個飯就升價十倍，自己在家做都不是很複雜。</p></a>
+				<a href="#00:16:4.94" id="00:16:4.94" class="lt" onclick="jumptoTime(964, this.id)"><p>最主要是明白道理，洗米時將米洗乾淨些，飯做出來會粒粒分明，這個飯我強烈建議大家，母親節時做給媽媽食，母親節快樂，對母親一份心意一個敬重，用少許心思其實不是太難做，一家人享用又可以營造一家溫馨，鍾意食荷葉飯的網友俾個LIKE我星星，鍾意個籠仔的朋友訂閱職人吹水頻道，鍾意鮑魚麻煩你加入頻道會員，我哋繼續吹水。</p></a>
+				<a href="#00:16:54.02" id="00:16:54.02" class="lt" onclick="jumptoTime(1014, this.id)"><p>今日分享到此為止，我食東西，母親節快樂，再見。</p></a>
+</div>
+	</body>
+</html>

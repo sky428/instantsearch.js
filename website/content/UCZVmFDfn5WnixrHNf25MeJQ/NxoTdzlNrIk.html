@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 刀工分享 文思豆腐羹 吹水篇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NxoTdzlNrIk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 刀工分享 文思豆腐羹 吹水篇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.31" id="00:00:1.31" class="lt" onclick="jumptoTime(1, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好，又係我星星同大家職人吹水，大家好，近期有好多網友都係一次過買定幾餐餸呀咁樣呀咁呀，又想整少少嘢食又想吹下水咁呀喺雪櫃啦啦到咗乜嘢就整乜嘢啦，咁呀有兩盒豆腐，咁一般都係喺超市買定啲豆腐呀咁你豆腐買兩盒，平啲呀嘛，又攞返個豆腐出嚟同大家吹下水呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:47.72" id="00:00:47.72" class="lt" onclick="jumptoTime(47, this.id)"><p>咁喺中國，各大省份菜餚當中呢如果講都工最好呢就叫做揚州菜，咁有一個叫做斯文豆腐羹呀，咁我將啲，豆腐切到好似頭髮絲咁幼嘅，咁我星星就今日就練習下啦，咁而家好多廚藝呀都工呀都畀以前係對退步咗好多㗎，咁我自己都希望係拍低，一啲影片呀畫面呀咁樣保留低咁咪又可以同大家分享下，吹下水呀。</p></a>
+				<a href="#00:01:27.66" id="00:01:27.66" class="lt" onclick="jumptoTime(87, this.id)"><p>咁你豆腐呢，咁你就成舊就倒咗佢出嚟，咁咪吸轉嗰啲難度呀唔緊要咁我哋搵把刀啦，等，畀兩個窿佢，如果有空氣入到去啦佢就好易成舊豆腐咁咪咁出嚟，豆腐灘咗出嚟之後呢咁我又準備少少清水，跟住我哋落一茶匙鹽落去，鹽的作用呢，第一，他都可以逼一逼豆腐一啲唔好嘅味道，咁而家呢啲盒裝豆腐啦佢經過蒸煮啦咁呀，基本上。</p></a>
+				<a href="#00:02:11.18" id="00:02:11.18" class="lt" onclick="jumptoTime(131, this.id)"><p>你而家一，攞出嚟佢就會食得㗎喇，咁第二個作用呢就係話呢，我哋，啲豆腐切成絲之後啦，咁我可以幫佢定一定型，第一步，我們要把砧板和刀弄濕，要把豆腐切成絲狀，刀工一定要練好，第二，我們要切得不太高，我們先把它切成一塊二，一切二之後，就比較容易處理，我們加點水進去，我們用刀把手放進去，不斷地切，集中精神。</p></a>
+				<a href="#00:03:12.70" id="00:03:12.70" class="lt" onclick="jumptoTime(192, this.id)"><p>這樣切下去，就會比較容易得心應手，如果說切得像杭州師傅那樣，就切不下去了，因為年紀大了，而且我們粵菜的刀工沒有楊州師傅的厲害，切到最後，我們不要切到最後，就切一條給大家看看，切好之後，我們加適量的水進去，我們把水倒回去，慢慢地把水倒掉，一定要溫柔一點，給大家看看，有多薄，拍不出來。</p></a>
+				<a href="#00:04:18.82" id="00:04:18.82" class="lt" onclick="jumptoTime(258, this.id)"><p>我們把它放開，先把頭切掉，頭也是，慢慢地切，集中精神，一邊說話一邊切，一定不會切得太好，但是也要給大家吹吹水，切了一點，放進水裡，給大家看看，合不合格，我自己覺得還是差一點點，可以再切幼一點，再用點心思，把它們放在一起，因為烹調、煮食都是一個用心和耐性的練習，為什麼我自己拍的影片會慢慢煮、慢慢拍、慢慢說呢?</p></a>
+				<a href="#00:05:24.08" id="00:05:24.08" class="lt" onclick="jumptoTime(324, this.id)"><p>都是在訓練自己的耐性之一，我除了煮食以外，我做其他事都是比較性急的人，大家看看第二次，有沒有顯著進步呢?</p></a>
+				<a href="#00:05:46.32" id="00:05:46.32" class="lt" onclick="jumptoTime(346, this.id)"><p>還是差不多的，給大家看看，其實都已經切得蠻薄的了，這個菜的材料配料就相當簡單，因為主角是豆腐，如果你做到這個菜給另一半或家人分享的話，我相信你當晚都會成為主角，我會繼續集中精神，不是切東西，因為切東西就很一般，我已經十年沒有切過這個豆腐了，上次切已經是十年前了，放上刀子，大家就會看得清楚一點。</p></a>
+				<a href="#00:06:46.08" id="00:06:46.08" class="lt" onclick="jumptoTime(406, this.id)"><p>更加清楚是怎樣呢?</p></a>
+				<a href="#00:06:49.08" id="00:06:49.08" class="lt" onclick="jumptoTime(409, this.id)"><p>開燈出來，怎麼切呢?燈還沒開，慢慢地放下去，放下去之後呢，大家看到嗎?</p></a>
+				<a href="#00:07:10.08" id="00:07:10.08" class="lt" onclick="jumptoTime(430, this.id)"><p>這一面就已經有進步了，接著又來了，繼續吧，這塊豆腐片切開一半之後，真的比較容易掌握，經過第一次之後，第二次就切少一點，這樣就比較容易攤開，再加一點水，就比較容易攤開，攤條煮食是比較悶的，悶之餘，也是要訓練一下自己，平平淡淡，日常工作也是很緊張，每一行各業都會有壓力，放假就在家慢慢煮，在家煮食跟日常工作是兩個世界。</p></a>
+				<a href="#00:08:18.54" id="00:08:18.54" class="lt" onclick="jumptoTime(498, this.id)"><p>這次呢，有沒有什麼大進步呢?</p></a>
+				<a href="#00:08:24.16" id="00:08:24.16" class="lt" onclick="jumptoTime(504, this.id)"><p>我覺得沒有什麼，因為我們這些人，吹水不抹嘴那些，不要緊，我們繼續，嘗試一下，再集中精神，很多時候切東西都是靠頻率，還有手感去切，有很多東西切得好，是不用看的，就是靠頻率，再移開一點，繼續，盡量用感覺，悶到大家都沒辦法了，因為，這個真的要，高度集中才能做到，希望這條影片可以教大家，訓練到放慢的心情。</p></a>
+				<a href="#00:09:40.98" id="00:09:40.98" class="lt" onclick="jumptoTime(580, this.id)"><p>慢慢在家享受一下，攤飲樂水啦，有時收工臨急臨忙在家煮東西，講方法囉煮嘢，咁而家好多，即係烹飪呀好企煮嘢食煮甜品呀咁都係，當係一種興趣舒緩一啲工作壓力呀，繼續咁樣，咁我呢做上海菜揚州菜師兄就多多包涵啦，我盡咗力㗎啦，越美就越，差唔緊要㗎，咁我呢個菜我有時間嘅我就會，再多啲練習呀咁我哋擺曬落去啦，咁我哋就盡量養鬆佢。</p></a>
+				<a href="#00:10:36.48" id="00:10:36.48" class="lt" onclick="jumptoTime(636, this.id)"><p>大家一大輪吹水我唔知吹乜呀因為，我都係擺咗啲精神內設嘅，如果啲頭髮有咁粗咁樣真係大鑊呀，進步空間係冇㗎啦咁我我哋行內有一句呢就叫做話，回堂呀，知唔知大家咩叫回堂呀，咁我之前有大嶼山呀，同大家真係入去玩呀吹下水呀其實我拍咗一段嘅不過嗰段我自己唔小心即係生，講回堂我游水，越遊越遊返轉頭呀嘛。</p></a>
+				<a href="#00:11:13.34" id="00:11:13.34" class="lt" onclick="jumptoTime(673, this.id)"><p>咁我哋啲行內咪叫做回堂啦，咁而家我星星呀係唔係回堂當中呀我係大幅倒退呀即係啲，功夫呀咁樣咁我都係好慶幸而家都仲係到咁嘅好開心呀，跟住我哋搵個最密嘅格勢，將佢全部倒起曬佢，我哋，頭先嗰啲淡鹽水乾曬佢先，開火，豆腐羹呀，用隻鑊做呢就會比較好啲呀，咁我哋而家就，落返一碗嘅清雞湯落去，清雞湯滾緊之際咁呀你就視乎你本身嗰個清雞湯個味道呀。</p></a>
+				<a href="#00:12:1.22" id="00:12:1.22" class="lt" onclick="jumptoTime(721, this.id)"><p>如果唔夠呀交返少少未來呀咁我一般嚟講都夠味呀，如果你出面做呀會做個上湯呀，咩上湯嘅材料呀一般都係呀，豬展啦豬骨啦雞腳啦雞肉啦，金華火腿呀幾個文火牙佢幾個鐘頭啦用頭浸嗰日嗰個湯呀，雖然啲豆腐佢又唔係好值錢但係背後個心機同埋個湯呢，就真係相當之考功夫，雞湯，搵你呀喎，咁我哋收慢火。</p></a>
+				<a href="#00:12:34.57" id="00:12:34.57" class="lt" onclick="jumptoTime(754, this.id)"><p>咁我哋準備約兩個湯匙嗰個生粉水，我哋三分鐘呢我就搞唔佢先，跟住，我哋呢度，一定要推住推到有個漩渦，咁我啲生粉水，咪咁落呀，咁我推到點為之得呢，等佢滾返起佢，滾返起之際，咁我喺嘅程度呀，咁上下得㗎，流水咁流得慢少少咁你收到個最慢火，豆腐，咁我哋慢慢吞落去，我哋唔好唔使帶滾佢㗎啦呢個豆腐呀，佢本身。</p></a>
+				<a href="#00:13:21.91" id="00:13:21.91" class="lt" onclick="jumptoTime(801, this.id)"><p>凍食都得㗎嘛，咁而家你咪喺度慢慢將佢推散佢囉，唔好心急，慢慢推，咁你一大力啦佢又會推到殺，即係睇唔到頭髮絲呀，呢個冇文，設計就唔好心急，咁咪頭髮絲入面咗頭髮碎㗎啦，我哋慢慢將佢，逐啲逐啲咁樣推開佢，最關鍵嘅技巧呀嘛，好在你做滑蛋線嗰啲咁樣呀，你看似好簡單做得一個靚嘅滑蛋線，相當之考功夫呀。</p></a>
+				<a href="#00:14:9.55" id="00:14:9.55" class="lt" onclick="jumptoTime(849, this.id)"><p>睇唔睇到個效果呀，睇唔睇到一絲絲呀，呈現眼前嗰啲，完成喇喎，咁如果自己喺屋企做呀可以，加返一啲，冬菇絲啦或者一啲菜絲呀或者，一啲即食火腿落去呀咁呀都係好方便，好簡單嘅，咁我而家咪不喺去囉，一絲絲的，慢慢倒下去，繼續弄多點，然後全部倒下去，剛剛好一碗，咁一個，傳說中嘅法師豆腐羹咁呀，咁我就可以叫做豆腐羹啦又唔可以叫法師呀但係都好慶幸睇到一條條嘅。</p></a>
+				<a href="#00:15:19.28" id="00:15:19.28" class="lt" onclick="jumptoTime(919, this.id)"><p>最大條邊度呀，跌咗出嚟嗰條囉同埋一隻鑊嗰啲啦，咁好多嘢大家睇我喺度吹水呀咁呢啲影片，相當之沉悶呀但係亦係值得，紀錄低同大家分享嘅煮食都係訓練耐性之一嚟嘅，咁你鍾意食豆腐網友畀個like我星星囉咁你鍾意食雞湯嘅網友呢，食雞湯嘅你話好笑唔好笑呀因為我哋都冇ng呀嘛，咁我鍾意笑個網友為畀個like我星星囉跟住訂閱職人吹嘢頻道幫我分享下呢個。</p></a>
+				<a href="#00:15:56.14" id="00:15:56.14" class="lt" onclick="jumptoTime(956, this.id)"><p>法師，豆腐羹咁呀又名文師豆腐羹啦咁我就食嘢先啦多謝收睇，下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

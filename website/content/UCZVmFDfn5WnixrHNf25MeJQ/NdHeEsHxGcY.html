@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 昔日情懷 哥登堡 鐵板扒餐</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NdHeEsHxGcY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 昔日情懷 哥登堡 鐵板扒餐</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:22.71" id="00:00:22.71" class="lt" onclick="jumptoTime(22, this.id)"><p>大家好，九龍土瓜灣，有咩好吹呀，我星星識別嘅情懷啦，我身後面呢間叫做哥登堡餐廳，三十幾年歷史，三十幾年歷史，三十幾年歷史，以前就係啲危雄光管嚟㗎，呢度，喺度，介紹呀，整體餐廳嘅環境，搵個位坐低先，各式扒餐，以前食牛肉我就好鍾意食豬扒，豬扒餐，自選晚餐，小食多啲喎呢度，煮菜呀，紅白湯，還有超直之選。</p></a>
+				<a href="#00:02:56.05" id="00:02:56.05" class="lt" onclick="jumptoTime(176, this.id)"><p>豬扒、牛扒、羊扒，都不錯，晚餐也有焗豬扒飯吃，滑蛋叉燒炒河豚，真棒，紅湯在這裏，剛剛叫了一個雜扒、羊扒、紅湯和白湯，紅湯叫羅宋湯，白湯叫忌廉湯，這次回來，整體餐廳都沒有變過，裝潢和招呼方面，我還認得有個男朋友，他從90年代開始，我見到他很大聲，現在又見到他，我真的很開心，這類型的西餐廳出名的就是羅宋湯。</p></a>
+				<a href="#00:04:9.05" id="00:04:9.05" class="lt" onclick="jumptoTime(249, this.id)"><p>茄膏、雜菜，羅宋湯熬了兩天，已經很濃郁，有紅湯當然有白湯，今天有個白湯叫周打魚湯，以前懷舊西餐的周打魚湯很出名，雜炒剛剛上了，牛扒就改成雞扒，最重要是下汁，不然就要貼板上，大家吃懷舊雜炒餐最特別是煎蛋，commissioner coffee systematic，Sr。</p></a>
+				<a href="#00:05:8.47" id="00:05:8.47" class="lt" onclick="jumptoTime(308, this.id)"><p>世 biography，pensando，pflicht</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:7.43" id="00:05:7.43" class="lt" onclick="jumptoTime(307, this.id)"><p>Michigan，arnya</p></a>
+				<a href="#00:05:6.63" id="00:05:6.63" class="lt" onclick="jumptoTime(306, this.id)"><p>situación，presidential，satisfy，poser，ι mez，salts</p></a>
+				<a href="#00:05:13.73" id="00:05:13.73" class="lt" onclick="jumptoTime(313, this.id)"><p>Cuba，counterpart，pien</p></a>
+				<a href="#00:05:13.93" id="00:05:13.93" class="lt" onclick="jumptoTime(313, this.id)"><p>kor pourrait，Lindsay，大家知唔知道呢個係乜嘢，以前有啲好估嘅我餐廳呢廚房呢就喺上高嘅呢間都係一樣，牛扒就係上高嗰度落嚟啦，濃汁呀，最正，最正呢個聲音呀，黑椒汁呀，西餐呀，回憶，一定落㗎，一定落㗎，隔離呀嘛，食到最後，尾又係叫餐茶時間呀，凍檸茶，最緊要，甜品呀，以前有冇紅豆冰。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:7.00" id="00:07:7.00" class="lt" onclick="jumptoTime(426, this.id)"><p>有機會喺屋企呀，全脂花奶，奶香奶滋味呀嘛，你完全食唔到，今晚影咗好多嘢因為點解呢，唔好講話啲嘢，下次食嘢，鍾意就畀個like訂閱我嘅頻道，幫我星星分享下，Follow我嘅Facebook同埋Instagram拜拜。</p></a>
+</div>
+	</body>
+</html>

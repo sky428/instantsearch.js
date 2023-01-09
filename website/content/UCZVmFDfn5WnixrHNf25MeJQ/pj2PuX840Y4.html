@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 欖角豉汁蒸 盤龍鱔</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pj2PuX840Y4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 欖角豉汁蒸 盤龍鱔</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，各位好，我是星星師傅，星星師傅，這是什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.13" id="00:00:8.13" class="lt" onclick="jumptoTime(8, this.id)"><p>這是盆龍鱔，今天和各位分享的是濫市盆龍蒸鱔，這些鱔買回來後，魚檔師傅會幫你起了鱔，起了鱔後可以洗乾淨，最緊要是吸乾水，吸到絲綢，這些鱔很難食，放幾個小時就差很遠，還有什麼配料呢?有少許蔥花、白芫荽、一粒豆豉，有些冷角醬，這些冷角醬是我們自己調的，遲些有機會和各位分享，有些是用蔥油、蒜蓉、豆瓣醬，陳皮粒，開了醬。</p></a>
+				<a href="#00:00:56.13" id="00:00:56.13" class="lt" onclick="jumptoTime(56, this.id)"><p>將鱔吸乾水後，一滴水都沒有，這些一定要很乾身，如果不乾身，鱔的腥味殘留在鱔內，這段時間，少許胡椒粉、生粉，拌勻，我都是單手拿機，盡量要穩定，將所有配料倒下去，首先放糖，糖大約一茶匙，生抽一湯匙，老抽大約半湯匙，這醬的主要味道來自蠔油，蠔油可以落約兩個湯匙，然後攪勻，油，放油，將鱔放下去，再按摩。</p></a>
+				<a href="#00:02:37.31" id="00:02:37.31" class="lt" onclick="jumptoTime(157, this.id)"><p>將所有材料放進去，蒸這些鱔還有一樣很重要的步驟，蒸的時候水滾後才醃條鱔，醃好後即刻蒸，將鱔放入蒸爐，將鱔放入蒸爐，將鱔放入蒸爐，這些專業蒸爐這條鱔大約蒸多久?蒸8分鐘，這條鱔大約蒸了10分鐘，看看模樣如何，蒸了8分鐘不太好，現在可以上菜，加些芫荽蔥，少許熟油，完成了，拿過來這邊展示給大家看。</p></a>
+				<a href="#00:04:5.74" id="00:04:5.74" class="lt" onclick="jumptoTime(245, this.id)"><p>完成了，謝謝各位收看。</p></a>
+</div>
+	</body>
+</html>

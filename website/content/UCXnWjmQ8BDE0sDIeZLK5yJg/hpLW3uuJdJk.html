@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【超簡單】 三天自製鹹蛋黃!?</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hpLW3uuJdJk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【超簡單】 三天自製鹹蛋黃!?</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>哇!</p></a>
+				<a href="#00:00:2.30" id="00:00:2.30" class="lt" onclick="jumptoTime(2, this.id)"><p>哇!</p></a>
+				<a href="#00:00:2.94" id="00:00:2.94" class="lt" onclick="jumptoTime(2, this.id)"><p>哇!</p></a>
+				<a href="#00:00:3.78" id="00:00:3.78" class="lt" onclick="jumptoTime(3, this.id)"><p>喂!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:4.70" id="00:00:4.70" class="lt" onclick="jumptoTime(4, this.id)"><p>Mexicanurers while，Dimzer，tin，Doo，aha，равно，laz coordinated，prevents，서로，ngulo，這個就是我們其中之一個新的節目，這個節目就是專門拍一些，它還不算是一個食譜，因為可能它很簡單，或者它的步驟沒有什麼需要，拍出來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.35" id="00:00:21.35" class="lt" onclick="jumptoTime(21, this.id)"><p>但是又跟食物有關，有些測試這樣，那麼今集主要就是講一件，我在網上看到，很神奇可以試的一件事，就是用三天就可以自己在家裡，做到這個鹹蛋黃，那我現在就來試一下，做到這個鹹蛋黃，只是鹹蛋黃，不是整隻鹹蛋，它的方法就是，用低溫冷藏的一隻蛋，然後將它的蛋黃抽取出來之後，再醃那個只是蛋黃，那麼就可以超快完成一個鹹蛋黃。</p></a>
+				<a href="#00:00:54.83" id="00:00:54.83" class="lt" onclick="jumptoTime(54, this.id)"><p>就不用像平時一樣，好像以前一樣，又要找一個甕缸，然後要倒鹹水進去，然後又要有些石灰，什麼什麼，很多化學的東西，那麼這個就只是用鹽就可以搞定了，那麼看起來又好像又快又健康，還有最重要的一件事就是，它只是要一個鹹蛋黃之後，那些蛋白可以當平時的蛋白抽出來用，那麼就不會浪費蛋白，因為平時我們那些蛋白。</p></a>
+				<a href="#00:01:25.03" id="00:01:25.03" class="lt" onclick="jumptoTime(85, this.id)"><p>很多時候都不吃，或者拿出來做鹹蛋黃做了餅之後，那些鹹蛋白就丟掉了，所以是很值得試的，如果你需要做大量的蛋黃的話，我們就需要將這個三個雞蛋，那麼我們這次就試三個雞蛋，那麼如果你真的很認真地想做鹹蛋，其實鹹蛋是鴨蛋來的，就不是雞蛋來的，不過就麻煩了，兼難買又貴，那麼我們就做一個測試而已，純粹我們就用雞蛋來做。</p></a>
+				<a href="#00:01:54.11" id="00:01:54.11" class="lt" onclick="jumptoTime(114, this.id)"><p>我們首先將這些雞蛋放進冰箱，就是零度以下，冷藏它為三天，因為三天才可以確保，所有東西都已經是冷藏到最冷，那麼我們現在放進去，好，三天後了，你看看，雞蛋已經冷藏到裂開了，那麼我們要做的，現在就是將這些蛋黃解凍，不是，將這些雞蛋解凍，然後拿雞蛋黃出來，那麼我們要，首先應該是要用一些水，浸一浸，讓它的殼可以撕開。</p></a>
+				<a href="#00:02:25.99" id="00:02:25.99" class="lt" onclick="jumptoTime(145, this.id)"><p>先浸一浸，應該差不多了，我浸了大概，嘩嘩嘩，我浸了它大概五分鐘，所以現在應該融了一點，那麼就可以慢慢地把它拆出來，哦，你看看，有一顆結了冰的，你看看一顆結了冰的蛋黃，現在它是很滑的，三蛋，現在要做的就是，等它們解凍，我們放在這裡，等它們慢慢融化，好了 解凍完了 你看，已經有三顆蛋黃，可以拿出來了。</p></a>
+				<a href="#00:03:19.37" id="00:03:19.37" class="lt" onclick="jumptoTime(199, this.id)"><p>拿出來之前 首先我們要，把鹽放好，在一個盤子上，一點點就好 剛剛夠它窩下去，其實已經夠了，因為最重要是遮住蛋黃，然後你說，用這麼多鹽 浪費錢，如果你連兩塊錢都沒有，買鹽你都沒錢，那我也幫不了你，鹽是最便宜的，鹽比糖還便宜，好 直接用手了，現在直接用手了，蛋黃是會再煮的，之前呢 做那個三筆尖的時候，有很多人留言。</p></a>
+				<a href="#00:03:55.37" id="00:03:55.37" class="lt" onclick="jumptoTime(235, this.id)"><p>說 為什麼會用手，隔蛋黃 你不會用其他東西，不會用隔篩，不會用蛋殼，用手是最乾淨的，你們用的其他東西，是不會比手乾淨，手是人體上最靈活的，部分之一，我有其他地方都很靈活的，尤其是，偷了我的影片，上大陸的網，下面的人就留言，我又沒得留 要不然一口氣，你不要吃麵包，吃麵包，而不是家頓做的 家頓的麵包，全部都是用機器做的 真是沒手碰過。</p></a>
+				<a href="#00:04:33.37" id="00:04:33.37" class="lt" onclick="jumptoTime(273, this.id)"><p>全香港麵包店的人，都是用手做的，全部都是用手搓的 他們又不吵，為什麼 完全是極度，極度無知，說得出這句 他們自己不覺得自己無知，那一刻 那一刻厲害，你明不明白，用鹽，遮住它，今天影片就拍到這裡 拜拜，剩下的蛋白可以留著做其他用途，OK的 可以用到的，然後就根據食譜放一天，有些說半小時 有些說一天。</p></a>
+				<a href="#00:05:11.28" id="00:05:11.28" class="lt" onclick="jumptoTime(311, this.id)"><p>有些就說...總之就差不多，我們放一天 放進雪櫃放一天，再拿出來看看它變成怎樣，好了 經過一天又回來了，我們看看這個東西現在什麼狀況，但這顆蛋黃好像變硬了，這樣，我們拿去試一下沖走鹽巴 然後風乾它，就是這樣了，我們過去，好 時間到了，像喔，像喔，像喔，好 這個就是剛剛蒸出來的鹹蛋，看到嗎 很像喔。</p></a>
+				<a href="#00:06:0.32" id="00:06:0.32" class="lt" onclick="jumptoTime(360, this.id)"><p>那我們，那我們，插進去看看，比平時好像硬一點，哇</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:21.32" id="00:06:21.32" class="lt" onclick="jumptoTime(381, this.id)"><p>你看，OK的，好 試一下，蒸的版本，好 蒸的版本，現在試一下，有鹹蛋味</p></a>
+				<a href="#00:06:39.32" id="00:06:39.32" class="lt" onclick="jumptoTime(399, this.id)"><p>好，有鹹蛋味，味道比較鹹，味道不太香，可能是因為用了雞蛋，好，那如果我覺得呢，如果我們真的自己做呢，應該呢，就用回那個醃的時間可以減回一半或以上，就是可能其實兩三個小時，或者更短時間就可以了，那實際要多少呢，就看你想要多鹹了，其實我就覺得，還有那個顏色呢，其實呢，那個蛋，因為那個蛋，這個蛋本身是這樣的顏色的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:25.00" id="00:07:25.00" class="lt" onclick="jumptoTime(445, this.id)"><p>如果你想要漂亮一點，紅一點呢，就應該是用一些本身的蛋黃紅一點的蛋，但是你看到它的質感呢，都是跟鹹蛋很接近的，那你會問，其實為什麼我們要這樣自己做啊，有什麼好處呢，那個好處呢，就是呢，這個做法呢，就可以得到一顆完全圓形的蛋黃，那其實你可以skip了冷凍的那個步驟，也沒有問題的，你可以直接拿一隻生的雞蛋。</p></a>
+				<a href="#00:07:52.80" id="00:07:52.80" class="lt" onclick="jumptoTime(472, this.id)"><p>然後拿一個生的蛋黃，然後拿出來直接放在鹽裡面醃，一樣可以做到這個效果的，只不過呢，那個蛋黃呢，最終呢，就會變成一餅的，你有時候在街上也會看到的，有一種蛋黃是一餅的，真空包裝的賣的，那種就是可能用這個方法來做的了，這個方法呢，就可以得到一個完全圓形的蛋黃，那你不是拿這個完全圓形的蛋黃，你才可以拿來做那些。</p></a>
+				<a href="#00:08:18.80" id="00:08:18.80" class="lt" onclick="jumptoTime(498, this.id)"><p>月餅啊，什麼蛋黃酥啊那些，你要切開它，裡面那顆東西是圓形的嘛，那如果你是拿來想著，拿來想著蒸蛋啊，拿來想著做那些金沙啊，什麼鹹蛋黃什麼什麼什麼，那其實呢，直接拿個蛋黃出來，生的那樣拿個蛋黃出來，拿去醃呢，其實已經OK的了，那當然啦，你買到這個鴨蛋就當然最好啦，因為真的鹹蛋是鴨蛋的嘛，那鴨蛋呢。</p></a>
+				<a href="#00:08:46.80" id="00:08:46.80" class="lt" onclick="jumptoTime(526, this.id)"><p>其實有一陣自己的香味呢，是跟雞蛋完全不同的，那你說就這樣吃，那當然雞蛋好吃一點啦，那個味道是順一點啦，就是容易一點入口啦，那但是如果你那時候做鹹蛋呢，就真的鴨蛋是會好一點的，那鴨蛋呢，在街市呢，有些地方呢，多數都會有得賣的啦，那就不是真的超難找的，純粹貴一點點，可能三元啊，四元一隻啊。</p></a>
+				<a href="#00:09:11.80" id="00:09:11.80" class="lt" onclick="jumptoTime(551, this.id)"><p>那才買得到，那你們如果自己真的有心做呢，想自己做一隻呢，完全沒有加什麼化學材料啊，什麼什麼的鴨蛋呢，就可以嘗試自己在家裡做啦，那這次這個實驗呢，是OK的我覺得，OK的，那我們剩下這個鹹蛋黃呢，就會拿來做下一個食譜啦，那記得看那個鹹蛋蒸肉餅的片啦，那我們下次再見，記得like facebook follow instagram，訂閱啦。</p></a>
+				<a href="#00:09:42.80" id="00:09:42.80" class="lt" onclick="jumptoTime(582, this.id)"><p>現在還有贊助的，你喜歡可以贊助，那就是這樣啦，那我們下一集再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

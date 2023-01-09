@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉  順德家鄉私房 西米花生雞蛋糖水  hometown-style sweet soup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'g2id045M4eo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉  順德家鄉私房 西米花生雞蛋糖水  hometown-style sweet soup</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.59" id="00:00:9.59" class="lt" onclick="jumptoTime(9, this.id)"><p>我們要把蛋打發，把它弄出來，全糖水就完成了，現在倒出來給大家看看，各位大家好，我星星同大家職人吹水，咁又吹下我自己家鄉順德呀大家知唔知我順德有啲咩出名呀，中佐州之順德魚米之鄉，炸鯪魚球呀嗰啲就真係相當之出名呀，咁我仲有一樣嘢就係話，雙皮奶呀牛乳呀，都好出名嘅，咁我哋自己家鄉呀，有啲好地道嘅糖水。</p></a>
+				<a href="#00:01:3.99" id="00:01:3.99" class="lt" onclick="jumptoTime(63, this.id)"><p>可能你出去食順德菜你未必食到嘅，今日就同大家分享呢個，家常嘅順德糖水，咁嘅材料就好簡單，睇下啲材料先，花生，一碗，雞蛋兩隻，片糖用幾多一塊就夠啦，西米，半個飯碗，順德好地道嘅家常糖水就係咁呀，我細個當時屋企人呀就成日煲呢個糖水，一入去一陣間就搞掂，咁我哋主要，就幫手要咩花生因為要去咗啲花生衣，咁我今日大約煲呢隻湯碗咁上下啦呢度就一公升多少少呀。</p></a>
+				<a href="#00:01:52.13" id="00:01:52.13" class="lt" onclick="jumptoTime(112, this.id)"><p>咁我哋用一隻飯碗，西米，大半碗就夠啦，西米浸咗之後咪處理啲花生呀，花生，我哋摸曬落去，我哋將佢浸熱水，十分鐘先，浸咗約五六分鐘呀咁我哋咪，呢落去啦，啲花生衣，整到出嚟，咁我哋咪全部咪曬啦，咁而家，咪做，幾分鐘呀都係咪咁多，呢個糖水呀我細個嗰陣時呀呢個步驟就一定係我㗎啦，因為給小朋友做嘛，好啱親子落一個糖水。</p></a>
+				<a href="#00:02:56.93" id="00:02:56.93" class="lt" onclick="jumptoTime(176, this.id)"><p>同埋啲小朋友一齊做下呢類型嘅糖水啦，經過一番努力之後，終於，將所有花生衣就剝曬啦，咁我哋就沖一沖水啦，而家就開始煲呀，加滿水，凍水連花生，我哋而家倒曬落去，開火，煲啲花生先水滾收細火煲佢十分鐘，花生西米糖水我相信呀好多人，聽過呀同大家分享下，呢個糖水呀我同大家講呀，冰凍去聽日食呀仲正，之後。</p></a>
+				<a href="#00:04:16.79" id="00:04:16.79" class="lt" onclick="jumptoTime(256, this.id)"><p>一塊我哋一放埋落去，十分鐘呀，花生，糖，滾緊之際，最細火呀，咁我而家咪，啲雞蛋呀，有咩用呀，蛋花，打佢，打勻佢，雞蛋意米等待，當中等咩呢，花生，仲係細火㗎喎，十分鐘之後，咁我哋咪郁郁佢呀，這時候，調大一點的火，為什麼呢?</p></a>
+				<a href="#00:05:28.97" id="00:05:28.97" class="lt" onclick="jumptoTime(328, this.id)"><p>因為要把西米也加進去，把泡西米的水也加進去，現在用大火，讓它滾起，滾的同時，我們要慢慢攪拌它，不要急，讓它滾起，為什麼要不停攪拌它呢?</p></a>
+				<a href="#00:05:59.63" id="00:05:59.63" class="lt" onclick="jumptoTime(359, this.id)"><p>主要是防止西米黏在一起，黏底，這些西米需要過冷河嗎?</p></a>
+				<a href="#00:06:7.55" id="00:06:7.55" class="lt" onclick="jumptoTime(367, this.id)"><p>不需要過冷河，有什麼做西米的作品需要過冷河呢?</p></a>
+				<a href="#00:06:14.03" id="00:06:14.03" class="lt" onclick="jumptoTime(374, this.id)"><p>椰汁西米露，冷吃的，西米過冷河會比較爽，這個糖水不需要，西米也差不多變透明了，現在試一下甜度，差一點點的甜度，我們再加半塊片糖，因為我也是想著冷吃，所以甜一點會比較好，因為冷藏過後，糖水不會那麼甜，西米大約慢火焗了十分鐘之後，我們主要是把西米焗到透明，這次的西米比較大，所以我煮久一點，如果用最小的西米，其實就完成了。</p></a>
+				<a href="#00:07:13.43" id="00:07:13.43" class="lt" onclick="jumptoTime(433, this.id)"><p>這段時間，我們把蛋也加進去，不停地攪拌它，我們要把蛋打發，用大火把它煮沸，這樣就完成了，大家看不看得到蛋花一煮開的樣子，是不是很漂亮呢?</p></a>
+				<a href="#00:07:50.59" id="00:07:50.59" class="lt" onclick="jumptoTime(470, this.id)"><p>咁呢個家鄉糖水咁就完成啦咁我而家咪倒喺畀大家睇下，一個地道順德家鄉糖水咁咪完成囉，花生西米雞蛋片糖就係咁簡單，咁而家熱食食一細碗先有淨咗啲咪雪凍佢啦，聽日食重淨呀雪凍佢，咁呢啲咁地道嘅糖水，我相信，喺youtube，都冇乜人會，做過啦我先先就同大家分享下，咁我鍾意食花生嘅網友畀我啦我先成咗咁我鍾意食蛋花網友訂閱我職人吹水嘅頻道，幫我分享下呢個花生西米。</p></a>
+				<a href="#00:08:44.00" id="00:08:44.00" class="lt" onclick="jumptoTime(523, this.id)"><p>雞蛋糖水，咁我就食咗先啦咁呀多謝大家收睇，咁下次再做啲家鄉嘅菜同大家分享。</p></a>
+				<a href="#00:08:51.16" id="00:08:51.16" class="lt" onclick="jumptoTime(531, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

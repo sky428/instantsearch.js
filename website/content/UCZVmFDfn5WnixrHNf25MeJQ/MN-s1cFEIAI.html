@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人 吹水〉 江南百花雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MN-s1cFEIAI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人 吹水〉 江南百花雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，各位好，我是星星师父，今天做什么呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.70" id="00:00:8.70" class="lt" onclick="jumptoTime(8, this.id)"><p>这东西是什么呢?</p></a>
+				<a href="#00:00:10.70" id="00:00:10.70" class="lt" onclick="jumptoTime(10, this.id)"><p>这鸡排好像行刑一样，今天跟各位分享的菜式就是，有鸡排，这些，打开给大家看，是虾仁，今天跟各位分享的菜式是，叫做江南百花鸡，江南百花鸡呢，我之前就买了一只鸡回来，起了肉，现在就是将鸡排洗干净，为什么会搞得好像行刑一样呢?</p></a>
+				<a href="#00:00:49.10" id="00:00:49.10" class="lt" onclick="jumptoTime(49, this.id)"><p>因为要改了鸡排，有些位置要穿过去，现在就先放一边，處理好蝦膠，今天和各位分享一個蝦膠的做法，蝦買回來後，先去殼洗乾淨，怎樣洗呢?</p></a>
+				<a href="#00:01:27.67" id="00:01:27.67" class="lt" onclick="jumptoTime(87, this.id)"><p>第一次用生粉去除蝦殼，洗乾淨後沖水，落鹽醃蝦，繼續醃蝦，直至蝦皮起泡，沖水，沖完水再用鹽醃，重覆這個步驟，沖乾淨水，用布或紙巾包緊，放雪櫃冷藏，一定要乾水，洗乾淨蝦後乾身，有黏性，這些用來打蝦膠就OK，打蝦膠怎樣打呢?</p></a>
+				<a href="#00:02:33.17" id="00:02:33.17" class="lt" onclick="jumptoTime(153, this.id)"><p>用刀打蝦膠，打幾下就可以，不用太碎，打幾下就可以，繼續，所以蝦一定要吸乾身，如果蝦有水有兩個不好處，第一，腥味很重，第二，很難打到起膠，拍開後再拿出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:52.43" id="00:03:52.43" class="lt" onclick="jumptoTime(232, this.id)"><p>用刀背再打十多下，現在已經很膠了，如果處理得好，蝦在處理的過程中已經很膠了，還有一點鹹味，放在碗裡，現在要放調味料，剛才醃蝦中已經吸收了很多鹹味，所以不用放鹽，再放一點胡椒粉，再放一點糖，可以加一點生粉，大概半茶匙生粉就可以了，然後，輕輕地拌勻</p></a>
+				<a href="#00:05:10.10" id="00:05:10.10" class="lt" onclick="jumptoTime(310, this.id)"><p>主要是拌勻味道，不要太濃稠，大概這樣就可以了，做蝦膠還有一個很重要的步驟，就是要冷藏，大概半小時，冷藏半小時之後，蝦膠會更加有彈性，為什麼要冷藏呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:43.18" id="00:05:43.18" class="lt" onclick="jumptoTime(343, this.id)"><p>因為這些蝦膠，打完之後，我們俗稱放在冰箱裡冷藏一下，冷藏一會兒，讓它變得更加脹，接著這個步驟是怎樣呢?</p></a>
+				<a href="#00:05:58.58" id="00:05:58.58" class="lt" onclick="jumptoTime(358, this.id)"><p>先說說這個蝦膠，為什麼要弄成這樣呢?</p></a>
+				<a href="#00:06:5.08" id="00:06:5.08" class="lt" onclick="jumptoTime(365, this.id)"><p>我們做江南百花雞，原本是用一個底膠，用竹籤穿過它，用這個用途是為了什麼呢?</p></a>
+				<a href="#00:06:17.86" id="00:06:17.86" class="lt" onclick="jumptoTime(377, this.id)"><p>就是防止它收縮，收縮的話，看起來就不好看，現在沒有底膠了，只好用這個用途，穿過它，希望它不會收縮太多，這個雞肉，我稍微加了一點點鹽和胡椒粉，一點點紹酒，這段時間，我們要加一點點粉，我們稍後會鋪蝦膠上去，增加它的黏性，讓它黏得更好，蝦膠就慢慢鋪上去，慢慢鋪，盡量均勻一點，不要一邊厚一邊薄，盡量均勻一點。</p></a>
+				<a href="#00:07:38.32" id="00:07:38.32" class="lt" onclick="jumptoTime(458, this.id)"><p>ился，Lun couldn</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:40.06" id="00:07:40.06" class="lt" onclick="jumptoTime(460, this.id)"><p>уй，Suz corazón，gewesen，substantially，mia，政治 servers，如何，Aglee，dumpling</p></a>
+				<a href="#00:07:45.72" id="00:07:45.72" class="lt" onclick="jumptoTime(465, this.id)"><p>suspended，którym，influences，smells</p></a>
+				<a href="#00:07:41.48" id="00:07:41.48" class="lt" onclick="jumptoTime(461, this.id)"><p>木 remember，25uments，� 허팝 shaped</p></a>
+				<a href="#00:07:43.10" id="00:07:43.10" class="lt" onclick="jumptoTime(463, this.id)"><p>thankfully，stuffs，elements</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:45.20" id="00:07:45.20" class="lt" onclick="jumptoTime(465, this.id)"><p>translned，пос名atic recommends，鋪好之後，就可以拿去蒸了，蒸這個有什麼竅門呢?一定要用大火，因為蝦、蝦膠一定要用大火，炸也是一樣，現在拿去蒸了，放在碟子上蒸，大概蒸5-6分钟，蒸了7分钟左右，打开看看形态如何，看看鸡肉熟了没有，鸡腿已经熟了，关火。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:58.32" id="00:08:58.32" class="lt" onclick="jumptoTime(538, this.id)"><p>放置几分钟后，为什么要放置呢?</p></a>
+				<a href="#00:09:2.82" id="00:09:2.82" class="lt" onclick="jumptoTime(542, this.id)"><p>刚刚蒸完，很热，放置一会儿，让它散散热力，让鸡肉的油分回溢，要放凉一点才能切开，放凉有好作用，煎牛排要放凉，我们做好了，给大家看看鸡背，鸡的背面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:39.84" id="00:09:39.84" class="lt" onclick="jumptoTime(579, this.id)"><p>鸡的正面，我们要把它改掉，要把它改掉，要改掉，怎樣改呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:56.35" id="00:09:56.35" class="lt" onclick="jumptoTime(596, this.id)"><p>先把雞腿位置移到旁邊，然後把雞腿位置移到旁邊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:11.69" id="00:10:11.69" class="lt" onclick="jumptoTime(611, this.id)"><p>thankful</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:21.53" id="00:10:21.53" class="lt" onclick="jumptoTime(621, this.id)"><p>九 ti siege，categories，overthrow，arrested，füh 짧，Dot，ili，ILL，amen，cir，Disability，NH Leuten，ket</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:23.67" id="00:10:23.67" class="lt" onclick="jumptoTime(623, this.id)"><p>Dingen，REAL，?' zombie，BC，trave，squ胡，ahh，FR Quindi，construir，ате，listed，parliamentary，Ethi prevent</p></a>
+				<a href="#00:10:25.69" id="00:10:25.69" class="lt" onclick="jumptoTime(625, this.id)"><p>Loch，astron，believably，fun</p></a>
+				<a href="#00:10:28.23" id="00:10:28.23" class="lt" onclick="jumptoTime(628, this.id)"><p>Zoo，player，ste advertis Goodbye，invaluable，milliseconds，͡° shoulders SSD dependencies，персон</p></a>
+				<a href="#00:10:59.88" id="00:10:59.88" class="lt" onclick="jumptoTime(659, this.id)"><p>� Mormon，Iz Buffiggles</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:0.68" id="00:11:0.68" class="lt" onclick="jumptoTime(660, this.id)"><p>�seen，accord sacar，diaphrag vienen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:48.96" id="00:10:48.96" class="lt" onclick="jumptoTime(648, this.id)"><p>même，Myans，ici，�Music，vez，bridge</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:56.26" id="00:10:56.26" class="lt" onclick="jumptoTime(656, this.id)"><p>dynam Louis，BENmiş，Members，Bobppy，счит，�ilt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:58.86" id="00:10:58.86" class="lt" onclick="jumptoTime(658, this.id)"><p>Origiber，resistance，встрет，klethrop，Lamborg legislature，conn spell，stör，Sul</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:49.62" id="00:10:49.62" class="lt" onclick="jumptoTime(649, this.id)"><p>백신，ря，realizing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:58.46" id="00:10:58.46" class="lt" onclick="jumptoTime(658, this.id)"><p>현，зв，known，irgendwie，места，repayério，ца</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:0.46" id="00:11:0.46" class="lt" onclick="jumptoTime(660, this.id)"><p>消 responsible，sabes，beneficial，иг facebook，者</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:39.30" id="00:10:39.30" class="lt" onclick="jumptoTime(639, this.id)"><p>wizhall，Legal，Mad�lair</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:58.22" id="00:10:58.22" class="lt" onclick="jumptoTime(658, this.id)"><p>fut realism，dictators，olun</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:56.74" id="00:10:56.74" class="lt" onclick="jumptoTime(656, this.id)"><p>Coigmatseason，Бог，Lebanon</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:52.52" id="00:10:52.52" class="lt" onclick="jumptoTime(652, this.id)"><p>Mad Pol��，Grand，ague</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:40.04" id="00:10:40.04" class="lt" onclick="jumptoTime(640, this.id)"><p>contamin invalid，schem выгляд Nove supuesto，mmm，favourite，�ounced</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:38.64" id="00:10:38.64" class="lt" onclick="jumptoTime(638, this.id)"><p>abra inquè subscribe，под，整份放下去，再放些裝飾，接著放個芡，切好雞之後放些裝飾，是不是有些看頭，接著這個步驟要做什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:9.92" id="00:11:9.92" class="lt" onclick="jumptoTime(669, this.id)"><p>放些流淚劍，放些油，這個真的要放油的，上次滑蛋肉片我都沒有放油的，接著放些雞湯，這是我之前浸雞剩下的雞湯，滚一滚，加少许米，半茶匙盐，半茶匙糖，加入一些酒，稍微滾起，加入生粉水，這類型的菜式很少人做，如果正式古法的乾龍白花雞，是沒有肉的，只有雞皮，放一些蝦膠在上面，蒸熟，現在有些人會做得比較好，把雞肉切碎。</p></a>
+				<a href="#00:12:41.35" id="00:12:41.35" class="lt" onclick="jumptoTime(761, this.id)"><p>釀入雞皮，甚至有些人會把雞皮吹乾，上體炸掉，把雞皮煎熟，加入一些醬汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:55.35" id="00:12:55.35" class="lt" onclick="jumptoTime(775, this.id)"><p>將雞肉煎熟，將雞肉煎熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:10.46" id="00:13:10.46" class="lt" onclick="jumptoTime(790, this.id)"><p>加少許麻油，勾一勾芡，勾芡不用太稠，有些掛便可以，菜也放些下去，今天這個江南白花雞便完成了，這些是比較考手的菜式，有時間可以做這些菜式，最主要是打蝦膠，蝦膠一定要洗乾淨，抹乾身，吸乾水，冷卻才打，相當滑身，彈口，有蝦味，今日分享到此為止，我先吃東西，多謝各位收看。</p></a>
+</div>
+	</body>
+</html>

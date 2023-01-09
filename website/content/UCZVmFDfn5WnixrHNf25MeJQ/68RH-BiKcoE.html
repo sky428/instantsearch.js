@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉柴魚花生粥 /食咗唔會郁 /基本技巧/ 粥底綿滑 /花生點樣煲得腍/ 柴魚香</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '68RH-BiKcoE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉柴魚花生粥 /食咗唔會郁 /基本技巧/ 粥底綿滑 /花生點樣煲得腍/ 柴魚香</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.24" id="00:00:13.24" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好，咁好耐都冇煲過粥呀，睇個片頭睇到呀茶魚花生，鹹豬骨粥，仲加多咗一個特定嘅材料嘅，關子先，茶魚茶魚呀咁樣呀茶魚同埋花生㗎啦，咁你哋都係一般雜貨舖就可以買到呀咁你茶魚呀，都係要乾身呀，攞上手，聞一聞佢，魚嘅香味呀咁樣啲茶魚呢就為之好呀，同埋啲色澤呢你都睇到呀。</p></a>
+				<a href="#00:00:58.30" id="00:00:58.30" class="lt" onclick="jumptoTime(58, this.id)"><p>有啲暗暗呀有啲冇點呀嗰啲係嗰啲就唔係啲一啲靚嘅茶魚嚟㗎，咁你查完返嚟啦，我哋都係好簡單嘅，咁簡單到點呀，開咗個火先啦，白鑊去，擺落去，我哋又行開行佢呀，咁呢個步驟呀，好識畀人講嘅，點解呀，真係好似我煲張魚湯㗎嘛好再整大地魚咁樣呀，點解要行開行去啦，就等啲茶魚呀，就發揮啲香味出嚟，咁樣看佢幾時。</p></a>
+				<a href="#00:01:40.78" id="00:01:40.78" class="lt" onclick="jumptoTime(100, this.id)"><p>咁有少少香味識出啦，咁樣ok呀，大家就唔好學我啦搵返個搵返個夾啦，點為之得呀，微微，有少少，焦香，你都會唔會聞到有少少呀茶魚嘅香味，咁我自己對你我查返張租啦就真係，好懷念呀，我細個嗰陣時呀喺聖俠節京村呢個屋長大啦，好多啲商販呀都會擔啲嘢呀周三跑去賣，其中一個呢就齊花真足，我哋細個啦都係真係冇乜嘢食㗎有呢啲。</p></a>
+				<a href="#00:02:22.76" id="00:02:22.76" class="lt" onclick="jumptoTime(142, this.id)"><p>唔好上嚟買呢我哋好開心，仲有個賣魚蛋嘅，我唔知，啲網友街坊仲記唔記得啦嗰個魚蛋佬啦日日三點零鐘呀真係，啖啲魚蛋呀周圍賣，咁樣行到而家咁就差唔多喇，咁我哋就好簡單，跟住我哋搵啲水浸返去咁就ok喇喎，齊如浸緊之際咁我就攞返啲花生出嚟㗎啲花生係要一早，處理咗佢先呀特別屋企有老人家有長者我建議大家隔夜就做咗呢個步驟，做咗呢個步驟。</p></a>
+				<a href="#00:03:6.63" id="00:03:6.63" class="lt" onclick="jumptoTime(186, this.id)"><p>花生藥150 gram咁上下啦，咁我哋就洗乾淨佢先，花生洗乾淨咗之後呀，咁我哋就隨即到啲，大滾水落去，我哋浸一浸佢，用滾水浸嘅目的呀都係希望花生嗰啲皮呀佢都有啲唔好，唔好嘅味道呀，同埋呀有啲色呀咁樣我哋就真係將佢浸一浸出嚟，五分鐘到就可以攞去沖水呀，花生沖乾淨水，咁我哋就隨即。</p></a>
+				<a href="#00:03:40.93" id="00:03:40.93" class="lt" onclick="jumptoTime(220, this.id)"><p>嗰啲滾水嗰度，咁我哋有得去滾咗啲花生，約滾佢，20分鐘都唔緊要㗎，咁我哋緊記啦我哋一定要熱水落，熱水落，搵嗰啲花生啦佢先會容易臨㗎，跟住我哋攞返啲米出嚟，普通嘅泰國絲苗米，咁我哋今次又係落一碗呀咁我哋就洗乾淨先，洗兩次，搵適量嘅水浸返去一度浸過面呀，咁我哋又落返，三分一茶匙嗰個鹽落去。</p></a>
+				<a href="#00:04:18.55" id="00:04:18.55" class="lt" onclick="jumptoTime(258, this.id)"><p>加返一個湯匙嗰個油落去，咁我哋就隨即搞勻佢，嗰啲米呀，都要浸得，30分鐘呀個愛呀先發揮到佢個，浸米嗰個威力呀咁我就最好就浸到有一兩個鐘啦，咁跟住就攞返我哋啲鹹豬骨出嚟呀，好簡單呀，喺啲新鮮豬肉舖買嗰啲豬骨返嚟，咁樣唔使洗唔使成呀咁樣就用兩茶匙醃咗佢，跟住擺返個雪櫃冰架，臨整之前一晚咪攞出嚟攤囉。</p></a>
+				<a href="#00:04:57.47" id="00:04:57.47" class="lt" onclick="jumptoTime(297, this.id)"><p>咁樣而家攤到鬆曬啦跟住就搵水洗咗三四次，咁我哋就隨即攞去清洗呀。</p></a>
+				<a href="#00:05:6.02" id="00:05:6.02" class="lt" onclick="jumptoTime(306, this.id)"><p>兩個目的呀，第一張多餘嘅鹽味啦清洗返曬出嚟，第二就係將佢清潔乾淨呀，因為呀佢有鹽醃過，嗰啲肉呢，啲鹽味入曬佢呀，咁我哋就，三四次，鹹豬骨洗乾淨我哋將佢瓊水，咁我哋又隨即，準備少少凍水開火，跟住，我哋擺咗鹹豬骨落去，凍水將佢飛水，排骨飛緊水之際呀咁喺雪櫃，又找到啲物資出嚟，咩嚟㗎啦頭先都有講呀賣個關子就呢樣嘢呀，賣完關仔又唔記得攞出嚟。</p></a>
+				<a href="#00:05:54.40" id="00:05:54.40" class="lt" onclick="jumptoTime(354, this.id)"><p>有石頭咁點呀，沖一沖水呀，新鮮腐竹，煲粥呀我哋攞啲腐竹內煲呀，滑啲，咁我哋沖到軟身之後呀咁我哋就係改咗咁ok呀，如果你預先攞佢出嚟呀咁呀輕輕沖水咁樣，跟住我又切開去一條條呀，如果你今次好咗落咁多腐竹嘅，咁水呀比例呀我哋就多返啲咁多呀，咸豬骨飛好咗水之後呢咁我又隨即就將佢沖水，將所有鹹味呀泡沫呀清洗乾淨。</p></a>
+				<a href="#00:06:43.54" id="00:06:43.54" class="lt" onclick="jumptoTime(403, this.id)"><p>鹹豬骨沖洗乾淨之後備用，跟住我又攞返個煲出嚟，咁我哋整體嘅水嘅份量呢約三公升，咁因為花生嗰邊有水浸咗度有水茶如果有水，咁我呢度約摸落兩公升都話夠啦咁我再落得不來第二杯，咁我隨即，就二話不說呀，開咗火先，我哋將啲水煲滾去，水煲滾過程當中呀我哋可以先將一半腐竹我哋擺咗落去先，如果鍾意食腐竹㗎就可以遲啲落。</p></a>
+				<a href="#00:07:22.44" id="00:07:22.44" class="lt" onclick="jumptoTime(442, this.id)"><p>咁呢啲腐竹啦佢就會煲到啦會溶曬嘅，咁所有嘢煲緊當中而家我哋咪睇返啲茶魚囉，浸咗一段日子呀，浸到軟身，咁跟住我哋又，輕輕改咗咁ok呀，咁我哋又切，薄條啦，開曬佢，推刀嘅形式呀，茶園，唔好倒咗佢喎，當啲腐竹呢啲水滾起呀，跟住我哋又，擺埋啲米落去隨即。</p></a>
+				<a href="#00:08:19.55" id="00:08:19.55" class="lt" onclick="jumptoTime(499, this.id)"><p>擺曬啲米落去咁我哋就不停咁咪搞住佢，咁我哋不停咁樣搞住佢搞到啲水再度滾起，啲米一個翻騰嘅狀態呀，咁樣ok呀，因為煲粥呀你好多時痴底呀就係開頭你嗰段時間呀你擺咗啲米落去呀你冇，咁我有啲最咗底，咁我咪滾唔起啦，當啲米滾起曬之後去除咗我哋倒埋啲豬骨落去，花生呢段時間我哋連埋啲花生水一齊倒曬落去，落曬所有材料之後呢咁我哋都係要等佢滾起。</p></a>
+				<a href="#00:09:9.26" id="00:09:9.26" class="lt" onclick="jumptoTime(549, this.id)"><p>煲粥呀咁我哋有句說話就係叫，明火靚粥明火靚粥，明火嘅意思啦我哋都要保持個火啦，真係要夠，煲到啲米呢有個郁動，咁樣為師煲到啲靚粥㗎，當然我哋如果喺出面做粥譜嗰啲嗰啲粥呀，最少都要煲三個鐘頭㗎喺屋企我哋都煲呢啲，住家粥呢咁我呢個粥呢煲一個鐘頭都係ok，點解出面嗰啲鍾意煲咁耐呀，棉襖咁呀佢要。</p></a>
+				<a href="#00:09:44.60" id="00:09:44.60" class="lt" onclick="jumptoTime(584, this.id)"><p>一把落嗰啲腐竹呢差唔多都爛曬，咁我哋就可以畀返個中火去呀咁我哋就煲佢30分鐘先，咁煲緊啲仔再同大家就吹多兩句呀，咁我哋煲粥呀水嘅比例呀咁我之前有一兩集呢已經講過，咁我又好視乎我哋自己嘅口味啦，咁你當日想食稀粥啦或者結束啦咁樣，咁我呢個呢就介乎，識鐘囉呢個，同埋我哋煲粥嗰起名呢都係會有影響㗎，如果用香檸煲嘅煲啦。</p></a>
+				<a href="#00:10:20.44" id="00:10:20.44" class="lt" onclick="jumptoTime(620, this.id)"><p>我建議大家落多少少水落去，因為可能煲啦佢受熱好快㗎啲蒸發嗰啲嘢係好快嘅，用不鏽鋼煲嗰啲都係落多少少水，如果用啞煲煲嘅就個水份呢就唔使調較咁高落去，保持住個細火而家約煲咗30分鐘，我哋望望咩模樣先，咁你30分鐘呀我每隔10分鐘都會出嚟搞一搞佢嘅，畀我近啲嘅鏡頭大家睇下，30分鐘開曬囉呀啲咪已經。</p></a>
+				<a href="#00:10:58.84" id="00:10:58.84" class="lt" onclick="jumptoTime(658, this.id)"><p>跟住呢段時間啦我哋將茶魚，茶魚水倒曬落去，咁淨得嗰啲腐竹呢段時間咪擺埋落去囉，鍾意有少少腐竹咬口嘅，咁你呢時間啦，我哋都係要等佢再度滾返起佢，跟住收返細個火啦再煲多佢30分鐘。</p></a>
+				<a href="#00:11:24.62" id="00:11:24.62" class="lt" onclick="jumptoTime(684, this.id)"><p>等佢滾緊之際再同大家又吹多兩咀呀，咁我之前煲過兩三個粥啦咁咪好多網友都留言呀，其中一個留言呀就真係好多人都會問㗎，我用不鏽鋼煲，煲粥，痴曬底咁，有啲咩方法呀，點樣洗呀都係好難洗呀，咁我哋業界裏面即係當然會有啲方法啦，咁我哋喺出面做啦用不鏽鋼煲啦或者用剃布呀咁樣，或者不慎咁樣煲窿咗之後呀。</p></a>
+				<a href="#00:12:2.24" id="00:12:2.24" class="lt" onclick="jumptoTime(722, this.id)"><p>咁我哋又將所有嘅足呀倒曬佢啦一煲窿嗰啲粥呢就唔要得呀，咁我煲底嗰度呀，好難洗㗎嘛，大家又唔需要急住去洗㗎，亦唔需要真係浸佢，咁我哋呢就，成個煲，就擺出嚟，擺返上個爐面嗰度，用個最細嗰個火慢慢烘佢，咁我去幾耐呀，幾粒鐘，目的都係想等佢痴咗底嗰啲呢，形成一塊焦呀，慢慢學呀學呀學呀啦，佢嗰塊焦呢就會慢慢慢慢啦就成塊好似餅乾㗎嘛咁樣甩出嚟。</p></a>
+				<a href="#00:12:40.90" id="00:12:40.90" class="lt" onclick="jumptoTime(760, this.id)"><p>咁我哋跟住先再清洗，咁我而下黐住煲底嗰啲汁呢，咁樣又，睇下佢乜嘢煲啦即係如果你啲呀睇煲咁你咪用啲，鯨魚涼呀咁樣如果不鏽鋼煲，咪用啲醋呀檸檬汁呀，梳打呀，洗下佢啦咁咪ok啦，保持住個細火，又煲多咗15分鐘全程煲咗45分鐘，咁我五分鐘前睇過啦就已經係完成㗎，咁樣煲45分鐘就已經ok呀你唔好咁而家你就可以識火加埋味去，咁我試咗味之後呀。</p></a>
+				<a href="#00:13:24.16" id="00:13:24.16" class="lt" onclick="jumptoTime(804, this.id)"><p>我約落返三分一茶匙嗰個鹽落去就ok呀，咁整體足啦佢都要夠鹹呀先好食㗎，取決落鹽嗰個味道啦就係話，我哋睇下冇，啲肉食啦譬如我今次有鹹豬肝，柴魚又係有少少鹹味鮮味呀咁我落返少少鹽落就ok呀，仲有個殺手鐧，我再澄清呀私房材料呀，頭先嗰句唔知出唔出得街呀，咩嚟㗎，大地魚粉，加一茶匙大地魚粉。</p></a>
+				<a href="#00:14:7.21" id="00:14:7.21" class="lt" onclick="jumptoTime(847, this.id)"><p>整個茶魚花生粥味道呀，昇華不少，咁我哋係搞完所有味道咁ok呀，如果想食林啲豬骨林啲花生嘅，而家可以冚埋過去冚咗一個鐘頭，就更加理想，畀大家睇下咁，攤咗個鐘頭咪凍曬囉，夏天，暖暖地食啦啲粥，如果想食返熱嘅，咪蒸一蒸佢囉不一碗出嚟，我唔介意啲花生，阿啱地呀咁你而家食又係相當之唔錯，咁我點解走樓嗰啲花生會整到嗰啲林呢。</p></a>
+				<a href="#00:14:49.45" id="00:14:49.45" class="lt" onclick="jumptoTime(889, this.id)"><p>我哋有精鬼㗎嘛，我哋啲花生，正係兩個鐘頭咁跟住喺個精鬼嗰度，就擺過嘢㗎啦返嚟又再蒸一蒸佢，點會唔林呀，豬骨頭擺面呀，食嗰陣時加班少少胡椒粉呀加班少少生菜絲呀，今日就冇乜嘢裝飾呀咁樣亦係呢張相呀影響條片嘅流量呀希望大家，Share啦，咁我鍾意食豬骨粥嘅網友畀個like個星星，咁咗食茶魚網友定個職人吹水頻道。</p></a>
+				<a href="#00:15:27.85" id="00:15:27.85" class="lt" onclick="jumptoTime(927, this.id)"><p>如果鍾意食隔夜粥呢，夜粥呀咁我又麻煩你，加我頻道會員繼續吹水，咁今日返嚟就到此為止啦多謝收睇下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

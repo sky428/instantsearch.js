@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人吹水〉 猴頭菇冬菇蟲草花魚尾煲豬展湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2aPJC3JKe1E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人吹水〉 猴頭菇冬菇蟲草花魚尾煲豬展湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>各位好，秋风起凉凉的，最好就是喝点汤水补健一下，今天星星，有什么汤水介绍?</p></a>
+				<a href="#00:00:26.08" id="00:00:26.08" class="lt" onclick="jumptoTime(26, this.id)"><p>秋风起，我一定会放一些南北杏、蜜棗、果皮，这些泡了，冷水就可以放下去，今天有什么材料煲汤呢?</p></a>
+				<a href="#00:00:47.24" id="00:00:47.24" class="lt" onclick="jumptoTime(47, this.id)"><p>有些松草花、猴头菇、冬菇，这个汤就是香菇煲松草花，这些猴头菇有什么作用呢?</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>猴头菇的作用是相当有益，主要是利肠胃，利肠胃不好，用猴头菇煲汤就最好了，最主要是抗癌，松草花的功效都是增强体能和抵抗力，这两样都是浸水洗干净，用水养着，浸至软身，冬菇也是用来洗干净，用水浸泡，每一次都要放很多，还有甘笋，很多人问我这把刀好像很厉害，这把刀也是一般大陆平价刀，没什么特别的，我老婆买的。</p></a>
+				<a href="#00:02:55.52" id="00:02:55.52" class="lt" onclick="jumptoTime(175, this.id)"><p>在家里用就可以了，甘笋也放进去，所有材料都是冷水放进去，星星，这盘没有肉吗?有肉，还没放，刚才煎了一条鱼尾，滚水放，还有一块猪肘，这里大概一斤左右，滚水放，整块放，现在等它滚水，还有几只猪肘，煲完汤再放，星星，汤滚了，接着呢?</p></a>
+				<a href="#00:03:41.32" id="00:03:41.32" class="lt" onclick="jumptoTime(221, this.id)"><p>接着放鱼，不用鱼袋吗?</p></a>
+				<a href="#00:03:49.16" id="00:03:49.16" class="lt" onclick="jumptoTime(229, this.id)"><p>如果家里有小朋友就放鱼袋，如果家里有大人喝就不用了，放鱼，等它滚出味，这段时间，水还是滚得差不多，放猪肘，整块放，星星又吃了，整块放，煲汤，煎肉送吃，现在煲多久呢?</p></a>
+				<a href="#00:04:29.56" id="00:04:29.56" class="lt" onclick="jumptoTime(269, this.id)"><p>煲半小时，保持虾眼水的火力，煲半小时，接着收慢火，煲半小时，现在煲汤煲了约两小时，现在看看什么模样，差不多七七八八了，水差不多收了一半，看看这块，这块猪肘已经软了，先拿起它，煲汤就OK了，汤就煲好了，用这么充足的材料去煲汤，味道就已经很足够了，加一点盐就OK了，我们看看材料吧，有猴头菇、冬菇、虫草花、杞子。</p></a>
+				<a href="#00:05:32.53" id="00:05:32.53" class="lt" onclick="jumptoTime(332, this.id)"><p>鱼尾、猪肘，这个香菇虫草花鱼尾煲猪肘汤就已经完成了，现在天气开始变凉了，煲这些补健汤水喝一下，增强自己本身的体质、免疫能力，就相当有补健的效果，今天的汤水分享就到此为止了，感谢各位收看。</p></a>
+</div>
+	</body>
+</html>

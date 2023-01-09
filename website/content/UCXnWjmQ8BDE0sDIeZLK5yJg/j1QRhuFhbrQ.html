@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【簡單二人份】麻辣雞煲</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'j1QRhuFhbrQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【簡單二人份】麻辣雞煲</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，馬田出來了，我們今天會做一個超級簡化和迷你版的麻辣雞煲，而最重要的材料就是我們用了上次自己做的麻辣油，其他材料已經超級超級簡化了，變了你在家裡就算很晚下班最後一秒，你都可以在超級市場買了這一堆材料，都可以做到雞煲來吃，好，我們先處理了三隻雞腿。</p></a>
+				<a href="#00:00:40.36" id="00:00:40.36" class="lt" onclick="jumptoTime(40, this.id)"><p>我們先拿刀出來斬掉一些我們不要的東西，就是那些太多完全沒用的皮可以先斬掉，因為太多等下都是斬掉掉，沒什麼意思，但其他那些黏著肉的皮我們是要的，因為那些皮其實是雞煲香味的來源之一，雞如果沒有油其實那股味道不是特別重，是特別好吃的，就是會很乾和很粗糙，所以我們是需要剩下一點油，那你們可能會問為什麼我們不買半隻新鮮雞來做。</p></a>
+				<a href="#00:01:17.36" id="00:01:17.36" class="lt" onclick="jumptoTime(77, this.id)"><p>因為說明是超簡單最後一秒才做到，所以我們就用了急凍的雞腿，那你說我不懂那些東西也是，就是我覺得所有麻辣的東西，其實是會掩蓋大部分的東西的鮮味，所以你不怕用一些很便宜的材料，或者用一些很便宜的材料來做，那些如果本身很鮮味的東西，你可以做麻辣其實是很浪費的，因為那些鮮味是會被辣味掩蓋過，辣本身是很掩蓋味道的。</p></a>
+				<a href="#00:01:53.36" id="00:01:53.36" class="lt" onclick="jumptoTime(113, this.id)"><p>是一種刺激性的東西，變了它會掩蓋過了其他味道，那些鹹甜酸苦那些東西全部都不夠辣那麼強烈，所以用雪雞是ok的沒什麼所謂的，做起來還不怕有雪味，因為那種味道真的太濃烈了，那我們先處理這個雞，首先斬開它一塊一塊，這樣斬了它一塊，反轉它看看哪塊打哪塊，好再來，好再來，那你看到如果那個雞你斬開是很多碎骨的，就代表你的刀本身不夠鋒利。</p></a>
+				<a href="#00:02:34.36" id="00:02:34.36" class="lt" onclick="jumptoTime(154, this.id)"><p>那你就要磨一磨你的刀，那如果你一下子劈不開，就好像因為這把其實太薄和太輕，變了其實斬起這些骨上來是有些難度的，你可以嘗試用剪刀來代替這個刀，那如果不行你也可以用第二個方法的，就是你一下子斬不斷，首先這樣找一個位置，然後拿起它這樣鑿下去，鑿多一下它就會掉下來，這個是輕力的方法，這個不是正確的方法。</p></a>
+				<a href="#00:03:4.36" id="00:03:4.36" class="lt" onclick="jumptoTime(184, this.id)"><p>理應你是一下子應該要斬開它，你盡可能磨你的刀，但是如果你真的不行，難道不做嗎?那也要做的，那就唯有用這些傍慢左度一點的方法，但是小心手，說明這些是不正確的方法，所以要特別小心手，不要斬太小塊，因為如果太小塊它煮熟了，那你就好像變了那些雞粒煲，你就不會變成雞煲了，那剩下這一塊也是，那我們可以斬到就盡量自己斬。</p></a>
+				<a href="#00:03:38.36" id="00:03:38.36" class="lt" onclick="jumptoTime(218, this.id)"><p>如此類推，斬完那麼多隻雞，還有你嘗試一下，這裡是比較好力的，你拿刀這個位置，就是近柄的位置，那個力是會比近尖的位置大，這樣就很難的，但是你這麼近手柄的位置，其實相對力度是比較容易發的，好!斬好雞就下一步了，我們首先要把雞醃好，我們將雞移過來，醃這堆雞，就是很簡單的，因為待會他會放很多醬去煮，所以現在這一步。</p></a>
+				<a href="#00:04:15.45" id="00:04:15.45" class="lt" onclick="jumptoTime(255, this.id)"><p>是不需要放太多調味，我們首先放些酒，之後，豉油糖，就ok了，因為我們待會會炒，所以這個東西我們就不放太多生粉，因為老抽會很容易黏，豉油糖，有人喜歡放老抽，有人不喜歡，因為放了老抽，雞本身的顏色就會深一點，看起來就好像濃味一點，但我們這次就不放了，少少糖，攪拌均勻，我們同一時間就可以準備，其他的材料。</p></a>
+				<a href="#00:04:53.45" id="00:04:53.45" class="lt" onclick="jumptoTime(293, this.id)"><p>哎呀!飛了隻雞</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:55.45" id="00:04:55.45" class="lt" onclick="jumptoTime(295, this.id)"><p>幸好沒有雞毛，好，我們就讓他放一邊，下一步，用這塊就可以了，你喜歡的話可以刮掉雞油，記住要把刀反轉，好，我們要什麼呢，我們之後就要兩塊薑，薑先要處理，外面那層皮的部分，因為有些人喜歡吃那塊薑，所以我們會將皮拿走，要做的就是這樣，刮一刮，用匙羹，刮走表面的皮，用匙羹會比較簡單，因為這些位置，有匙羹是比較容易處理。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:35.45" id="00:05:35.45" class="lt" onclick="jumptoTime(335, this.id)"><p>我們來切兩片薑，切片，之後到蒜頭，蒜頭去皮後整粒就可以了，這次我們不是要蒜蓉，整粒放進去就好了，稍微拍一拍，待會容易一點出味，搞定，整件事半小時內其實做得好，你可以令它更加上一層樓，如果你有時間有心機，當然是用半隻雞，因為雞不同地方其實有不同味道，尤其是骨的位置，味道其實是不同的，跟肉的部分是不同的。</p></a>
+				<a href="#00:06:14.94" id="00:06:14.94" class="lt" onclick="jumptoTime(374, this.id)"><p>另外香料，你可以加多點香料，有花椒、八角、香葉那些，你也可以加進去，其實你有時間這樣炒香料，雞煲會更好吃，但這次我們這個是簡單版，所以就不準備那些了，那些一定要在街市才有，其實都挺麻煩的，我們切完這粒紅蔥頭，之後就要半個紅色的洋蔥，或者紫洋蔥，那你可能會問，這個紫洋蔥跟這個蔥頭的分別，其實是放大版來的。</p></a>
+				<a href="#00:06:49.54" id="00:06:49.54" class="lt" onclick="jumptoTime(409, this.id)"><p>這個香味會比較濃縮，所以這個是要有香味的，而這個就要當成是一道菜，有香脆的口感，有洋蔥這樣，令整個雞煲沒那麼膩，只有肉這樣，所以這個東西是很重要的，但如果你沒有，用普通洋蔥都沒問題的，那這個就隨你喜歡，你喜歡怎麼切都可以，現在我們說的這東西，都是自己在家裡吃而已，所以OK的，味道就好像我們做蛋糕那樣。</p></a>
+				<a href="#00:07:19.24" id="00:07:19.24" class="lt" onclick="jumptoTime(439, this.id)"><p>5g 5g，那些步驟次序，那些全部都要很仔細，很細節的，沒有這東西的，之後出味蔥，你可以分開一半的，一半可以炒，一半最後放在上面，那就會好看一點，那我們這一段呢，都是要的，蔥的白色位置，我們都是要的，放下去炒，之後剩下一條，是用來鋪面的，如果你跟我一樣擔心炒起來的調味料會很麻煩，弄不及放，放不及放。</p></a>
+				<a href="#00:07:51.42" id="00:07:51.42" class="lt" onclick="jumptoTime(471, this.id)"><p>你可以現在先放好你要的調味料，這樣就不怕這些東西會炒焦，還沒放切醬，先放調味料，調味料我們分開兩個方向，一個方向就是調味料是可以炒的，不怕焦，我們可以跟這些香料一起炒，之後調味料如果會焦，或者裡面有糖，甜甜的那些，它炒太多會乾掉，那些我們分開後再放，所以我們先放可以炒的部分，第一樣就是豆瓣醬，豆瓣醬炒了其實會好一點。</p></a>
+				<a href="#00:08:30.42" id="00:08:30.42" class="lt" onclick="jumptoTime(510, this.id)"><p>我們需要大概20克的豆瓣醬，豆瓣醬其實是什麼來的呢?</p></a>
+				<a href="#00:08:35.42" id="00:08:35.42" class="lt" onclick="jumptoTime(515, this.id)"><p>豆瓣醬其實是將發霉的蠶豆和辣椒一起發酵造成的，發霉的蠶豆是真的一顆，你見到是一顆蠶豆然後發霉的，所以自己在家是做不到的，因為你找不到發霉的蠶豆，發霉的蠶豆有一種自己的發霉菌，跟做醬油一樣，是一種特定的菌，你不可以真正放蠶豆發霉，你會中毒死的，豆類發霉是很毒的，極度毒，裡面有一種菌是極度快致癌的，你吃完很快會死的。</p></a>
+				<a href="#00:09:11.42" id="00:09:11.42" class="lt" onclick="jumptoTime(551, this.id)"><p>所以是不可以自己亂攪的，豆瓣醬可以放的，我們放了一點點，不同牌子的豆瓣醬有不同味道的，都差異頗大的，有些是很酸的，會有一陣酸味的，有時候去店鋪吃鍋貼，你會不會有些豆瓣醬呢?</p></a>
+				<a href="#00:09:31.02" id="00:09:31.02" class="lt" onclick="jumptoTime(571, this.id)"><p>我這款我覺得是偏鹹的，偏濃味的，但不是偏辣味的那種濃味，是偏醬的那種鹹味，所以你自己選擇，你自己喜歡的，因為我們用的份量很多，所以如果你用的醬是不同的，你的味道會偏差很多，所以你自己研究一下自己喜歡什麼味道，之後就再放辣椒油，這個就真的隨意了，這個量，因為我們這個是自己做的，變了你們沒有這個，其實你就跟著你自己需要放辣的份量去放。</p></a>
+				<a href="#00:10:1.82" id="00:10:1.82" class="lt" onclick="jumptoTime(601, this.id)"><p>那我們這次就要40克的，這個是什麼來的呢?如果你沒有看過，這個就是我們的麻辣油，我們用了辣椒和花椒來做的，如果你要自己找東西去代替它，你就可以找辣椒油，和一點點的花椒油混合，通常街上賣的那些，味道比我這個濃一點，所以你可以減一半或者以上的份量都可以，因為我這個是偏向蒜蓉味比較重，還有一點點蔥在裡面，就是它裡面很多的份量都不是辣椒。</p></a>
+				<a href="#00:10:37.02" id="00:10:37.02" class="lt" onclick="jumptoTime(637, this.id)"><p>所以它不是很辣，這個就是我們麻辣雞煲的麻和辣最主要的來源，就是這裡了，之後就到下一個醬了，下一個醬就是會燒焦的醬，那我們有什麼呢?雞煲有一點點蠔油，沒什麼可壞的了，雞和蠔油是不知道為什麼，沒什麼呢，其實蠔油這個瓶子呢，經過了這麼多年，是時候改進了，不過我有見過這個蠔油瓶呢，出過一個新版，好像茄汁一樣可以這樣擠的。</p></a>
+				<a href="#00:11:10.56" id="00:11:10.56" class="lt" onclick="jumptoTime(670, this.id)"><p>其實是應該買那個瓶子的，這個呢，這一下動作是很容易出事的，因為它是濃稠的，你這樣放，很容易一下子倒了很多，又或者呢，你可能會倒不出來，所以那個擠擠瓶是偉大發明來的，我覺得，之後第二個醬呢，自己喜歡的，可放可不放的，我喜歡吃那個是有一點點甜味的，所以我會加一點點海鮮醬進去，海鮮醬本身就是甜味。</p></a>
+				<a href="#00:11:36.76" id="00:11:36.76" class="lt" onclick="jumptoTime(696, this.id)"><p>那它和柱侯醬啊，那些炆雞那些呢，都是類似的東西來的，其實，大家都是麵豉醬延伸出來的東西來的，所以這個海鮮醬加進去呢，我覺得會令到麻辣的味道有一點點中和，大眾化一點，那我們會放10克，好，那我們調味料呢，就搞好了，好，那我們開始炒我們的東西了，放一點油，好，那燒熱一點油呢，就可以放我們的材料了，啊。</p></a>
+				<a href="#00:12:7.76" id="00:12:7.76" class="lt" onclick="jumptoTime(727, this.id)"><p>哇!</p></a>
+				<a href="#00:12:15.83" id="00:12:15.83" class="lt" onclick="jumptoTime(735, this.id)"><p>如果你有香料的，花椒、八角、香葉、肉桂條，我都忘記了，你們自己找找看，大概甚麼是配雞煲的香料，你現在這一刻就可以放了，因為香料是要炒過，還有要有油才會有香味，有沒有人想看拋鑊?</p></a>
+				<a href="#00:12:38.83" id="00:12:38.83" class="lt" onclick="jumptoTime(758, this.id)"><p>我看到有個帖子說我不懂拋鑊，我真的不懂，因為我是用電磁爐，有沒有人知道拋鑊和電磁爐不是朋友?</p></a>
+				<a href="#00:12:50.83" id="00:12:50.83" class="lt" onclick="jumptoTime(770, this.id)"><p>在家的電磁爐，其實拋鑊等於是傻子，你炒到看到有香味就差不多了，因為待會雞等等都會再放，他們都會一起煮，所以現在不用完全炒到超級超級超級熟，我們下一步就是把炒過的香料放進去，這些要炒過才有香味，例如是花椒油、辣椒油、豆瓣醬，炒過才有味，雞，其實雞可以先放，好像醬早就放了，不過不要緊，很大陣味。</p></a>
+				<a href="#00:13:34.83" id="00:13:34.83" class="lt" onclick="jumptoTime(814, this.id)"><p>炒熟雞，大火把雞外面炒熟，因為我們待會還會慢慢煮，現在這個步驟是炒香雞的外面，令到它有...知不知道是甚麼?</p></a>
+				<a href="#00:13:47.83" id="00:13:47.83" class="lt" onclick="jumptoTime(827, this.id)"><p>大家留言給我答案吧，你見雞開始有少少縮起來，雞皮開始比雞肉細了，這樣就可以了，我們就可以把醬放進去，關掉火，有隻膠刮和沒隻膠刮的分別就是，沒隻膠刮的話，你會有三分之一的醬，都是放在碗裡的，好，攪拌均勻，你看到顏色已經深了很多，還有醬的感覺馬上就更突出了，那不用煎了，因為醬料的部分很多，它本身也是很濃稠的。</p></a>
+				<a href="#00:14:33.94" id="00:14:33.94" class="lt" onclick="jumptoTime(873, this.id)"><p>還有很多我們現在用的醬本身也有增調劑，所以醬汁會比較稠，比起沒有放，讓它煮一會，煮5-10分鐘，好，蓋上蓋子，好，差不多了，打開看看，因為雞肉本身也有很多水分，所以我沒有另外加雞湯，你看到也有很多汁，最後一個步驟，你可做或不做，就是調到最大火，之後可以加一點酒，加酒的作用就是，讓所有東西的香味更加容易散發。</p></a>
+				<a href="#00:15:15.94" id="00:15:15.94" class="lt" onclick="jumptoTime(915, this.id)"><p>另外可以加一點麻油，讓味道更香，但是很香的，所以你自己小心一點，不要加太多，少許麻油，很少就行了，麻油是香味的油，所以煮太久味道會沒了，搞定，之後到最重要的步驟，就是將雞放進鍋裡，讓它變成雞煲，加上蔥，真的搞定，好啦!這次的雞煲就完成了，希望你們喜歡，這次的食譜就來到這裡了，記得Like Facebook，Follow Instagram。</p></a>
+				<a href="#00:16:22.99" id="00:16:22.99" class="lt" onclick="jumptoTime(982, this.id)"><p>訂閱，喜歡可以贊助加入會員，我們下次又是時候做其他東西了，下次再見，Bye Bye，麻就是花椒，嘩。</p></a>
+				<a href="#00:16:45.57" id="00:16:45.57" class="lt" onclick="jumptoTime(1005, this.id)"><p>standby</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:47.43" id="00:16:47.43" class="lt" onclick="jumptoTime(1007, this.id)"><p>gem。</p></a>
+				<a href="#00:16:46.27" id="00:16:46.27" class="lt" onclick="jumptoTime(1006, this.id)"><p>forward，skeleton。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:45.77" id="00:16:45.77" class="lt" onclick="jumptoTime(1005, this.id)"><p>dropping。</p></a>
+				<a href="#00:16:45.87" id="00:16:45.87" class="lt" onclick="jumptoTime(1005, this.id)"><p>iam の。</p></a>
+				<a href="#00:16:44.67" id="00:16:44.67" class="lt" onclick="jumptoTime(1004, this.id)"><p>Uran。</p></a>
+				<a href="#00:16:44.85" id="00:16:44.85" class="lt" onclick="jumptoTime(1004, this.id)"><p>cane</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:47.29" id="00:16:47.29" class="lt" onclick="jumptoTime(1007, this.id)"><p>key。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:45.81" id="00:16:45.81" class="lt" onclick="jumptoTime(1005, this.id)"><p>Champion。</p></a>
+</div>
+	</body>
+</html>

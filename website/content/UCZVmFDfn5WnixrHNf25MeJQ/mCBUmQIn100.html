@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人 吹水〉 淮山茨實 節瓜 煲豬展湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'mCBUmQIn100',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人 吹水〉 淮山茨實 節瓜 煲豬展湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，又是我星星介紹的湯水片，今天有什麼湯水介紹呢，在街市逛了一圈，看到一些很漂亮的節瓜，就買了一些，節瓜煲什麼呢?回家就找了一些配料，因為今天有些急趕，下班到現在，所以配料全部都浸一浸，有些淮山片、慈石，看到有些南北杏，果皮，蜜棗，這些可以先放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:58.74" id="00:00:58.74" class="lt" onclick="jumptoTime(58, this.id)"><p>weisen fridge，Brown attorneys</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:27.18" id="00:01:27.18" class="lt" onclick="jumptoTime(87, this.id)"><p>솔직히，catchy，gunta，amplified</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:25.90" id="00:01:25.90" class="lt" onclick="jumptoTime(85, this.id)"><p>resolver，겠</p></a>
+				<a href="#00:01:23.92" id="00:01:23.92" class="lt" onclick="jumptoTime(83, this.id)"><p>Station Airlrawd，becue，li</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:26.82" id="00:01:26.82" class="lt" onclick="jumptoTime(86, this.id)"><p>No，�型</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:12.58" id="00:01:12.58" class="lt" onclick="jumptoTime(72, this.id)"><p>тысяч，konuş，bot，harms</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:20.52" id="00:01:20.52" class="lt" onclick="jumptoTime(80, this.id)"><p>earthly，Γ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:16.56" id="00:01:16.56" class="lt" onclick="jumptoTime(76, this.id)"><p>Liverpool，!*</p></a>
+				<a href="#00:01:27.24" id="00:01:27.24" class="lt" onclick="jumptoTime(87, this.id)"><p>Tw Viele，progressed，czenie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.14" id="00:01:23.14" class="lt" onclick="jumptoTime(83, this.id)"><p>��고，Rusia，ufficient，пол，importante，�무，ying</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:26.84" id="00:01:26.84" class="lt" onclick="jumptoTime(86, this.id)"><p>atz，aru</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:21.26" id="00:01:21.26" class="lt" onclick="jumptoTime(81, this.id)"><p>Giant，put deficiency，京 PRESID analysts，contrast</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:58.20" id="00:00:58.20" class="lt" onclick="jumptoTime(58, this.id)"><p>reside�タ Yoo，Washington，Federation transition，Seriously，skateboard</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:26.24" id="00:01:26.24" class="lt" onclick="jumptoTime(86, this.id)"><p>nouveau，roles，Ts Equity，Sau，%.</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:3.86" id="00:01:3.86" class="lt" onclick="jumptoTime(63, this.id)"><p>Snazy，yourself</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:16.54" id="00:01:16.54" class="lt" onclick="jumptoTime(76, this.id)"><p>лиз seconds，專озя，� intermitt WH</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:19.62" id="00:01:19.62" class="lt" onclick="jumptoTime(79, this.id)"><p>있，�azzi，bubb awkward，tunnels，supplements，ぁ，additional，ambre，sulph Gesundheits，leaks</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:19.52" id="00:01:19.52" class="lt" onclick="jumptoTime(79, this.id)"><p>量，amfulness，Méấp，guns，三個節瓜，一斤鬆一點，日表醃節瓜不是整個放下去的，為什麼呢?一會兒你就知道了，每一次煲湯有一樣東西必定要放的，紅蘿蔔，金筍，紅蘿蔔買什麼最好呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:7.50" id="00:02:7.50" class="lt" onclick="jumptoTime(127, this.id)"><p>買有泥的那些，買台瀑，煲湯最好，有紅蘿蔔味，新鮮的，有時放工煲湯很趕時間，紅蘿蔔也可以放進去，豬展買多一點，一斤半，買了50元，什麼都不用說了，星星，你今天真的很趕時間，豬仔已經洗乾淨了，很新鮮，水滾後就可以放進去，放入豬筋，現在給大家看看煲湯的形態，放入豬肩，形態就是這樣，現在用大火煲滾，滾約半小時，然後調小火。</p></a>
+				<a href="#00:04:5.29" id="00:04:5.29" class="lt" onclick="jumptoTime(245, this.id)"><p>再煲多一小時，這樣就可以了，待會煲滾後再跟大家分享，滾起後，我們要維持現在滾的狀態，等它滾半小時，這半小時主要是等它滾熟，然後調小火，慢慢煲，煲到出味，煲完再跟大家看看，煲湯就煲好了，煲完只剩下一半水，再少一點，這裏大概有三碗水多一點，剛才不是有三個節瓜嗎?</p></a>
+				<a href="#00:04:56.29" id="00:04:56.29" class="lt" onclick="jumptoTime(296, this.id)"><p>我拿了兩個上來，做了一個節瓜泡，有時候湯渣的東西就不要浪費，湯就煲好了，大約四五斤材料，湯的顏色相當濃郁，有時候兩個人吃飯，煲湯，煮飯，用湯渣，做個節瓜泡，吃完肉就剛剛好了，有湯喝，又吃得健康，今天的分享到此為止，我先吃飯，多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

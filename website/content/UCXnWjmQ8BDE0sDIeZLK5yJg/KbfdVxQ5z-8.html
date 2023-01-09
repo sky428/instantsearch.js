@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【懶人簡化版】黑糖馬拉糕 [Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KbfdVxQ5z-8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【懶人簡化版】黑糖馬拉糕 [Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由 Amara.org 社群提供，馬鈴出來了，我們今天做一些簡單的東西，但是它複雜起來，也可以蠻複雜的，這個就是馬拉糕，聽起來好像沒什麼特別，好像就普通的蒸蛋糕，有什麼特別，但是如果你要把它變得很複雜，它是可以很複雜的，我們一邊做一邊慢慢說，為什麼會很複雜，首先我們看一下材料，也是那些東西。</p></a>
+				<a href="#00:00:42.87" id="00:00:42.87" class="lt" onclick="jumptoTime(42, this.id)"><p>也是那些東西，蛋糕、博愛、複蛋、奶、油，那些東西，我們今天會有，黑糖，令顏色更好看，還有香味多一點，怎樣?看完了?</p></a>
+				<a href="#00:00:56.87" id="00:00:56.87" class="lt" onclick="jumptoTime(56, this.id)"><p>好，來吧!</p></a>
+				<a href="#00:00:58.87" id="00:00:58.87" class="lt" onclick="jumptoTime(58, this.id)"><p>首先我們需要的是，低筋麵粉，之後還有，泡打粉，我們今天做的馬拉糕，是一個簡化版的馬拉糕，真正的馬拉糕，其實是需要經過發酵的，還有很多店鋪，會有一個自己的麵種，麵種就是一個，發酵了的麵糰，每一次就會用一點，然後剩下多一點，之後每一次拿一點出來，然後又會補一點進去，那個麵種其實是會，在一間店鋪裡面很重要的位置。</p></a>
+				<a href="#00:01:34.87" id="00:01:34.87" class="lt" onclick="jumptoTime(94, this.id)"><p>因為那個配方，其實做不出來的，所以幾十年前已經開始，用，用到幾十年後的今天，不停地用完一點，補一點進去，才會得到，今天的麵種，麵種就是令到馬拉糕，變得鬆軟最主要的原因，所以我們今天這個簡化版，相對地那個糕，質地是沒有，真正的古法馬拉糕，那麼鬆軟，但是味道可以很接近，做起來就超級簡單，容易一點，成功很多。</p></a>
+				<a href="#00:02:10.87" id="00:02:10.87" class="lt" onclick="jumptoTime(130, this.id)"><p>那麼我們首先，將低筋麵粉和，泡打粉混合，因為我們，只是用了泡打粉，泡打粉在這裡的作用就是取代，那個麵種，令到，那個馬拉糕變得鬆軟，麵種的作用就是，它可以發酵，發酵了，裡面就會有很多菌，很多酵母菌在裡面，如果是用麵種，那麵種在焗的時候，就會將它的二氧化碳釋放出來，之後就會令到糕升起，那麼同樣地，這個。</p></a>
+				<a href="#00:02:40.87" id="00:02:40.87" class="lt" onclick="jumptoTime(160, this.id)"><p>都是一樣，我們用泡打粉，來代替它，攪拌均勻，沒什麼特別的了，中式的點心，很多時候都見到的了，吉士粉，也是攪拌均勻，但是麵種這東西，就不只是中式的甜品，才會用的，或者中式的點心，才會見到的，麵種這東西，就算你在，外國的麵包，都會，很常見到這東西，甚至有些人，因為麵種，很重要，是一間麵包店的生命，所以其實有幾個人。</p></a>
+				<a href="#00:03:16.87" id="00:03:16.87" class="lt" onclick="jumptoTime(196, this.id)"><p>專責保護著那些麵種，他們會控制住，那個地方的環境，濕度，溫度，要24小時，都一模一樣，因為那個麵種會發酵，如果有一天突然之間，太熱，那些麵種可能會太熱，死掉了，那就糟糕了，那麵包店，就會停頓了，所以有些人會特意照顧著麵種，然後又會，調校好溫度，讓那些麵種可以繼續生存，因為他們是有生命的。</p></a>
+				<a href="#00:03:50.87" id="00:03:50.87" class="lt" onclick="jumptoTime(230, this.id)"><p>裡面有很多酵母菌，所以是很重要的，我們不懂就不要教了，算了，弄個簡單的好不好，好，接著就要放黑糖，如果你的黑糖，沒有我這些粉粒那麼小，你可以先將這個液體，即是這個花奶，和它一起煮融，但是如果你能攪得融，你不怕的，那就沒所謂了，混在一起就可以了，那只是黑糖就不夠甜，所以我們加點砂糖，因為如果你只是放。</p></a>
+				<a href="#00:04:20.87" id="00:04:20.87" class="lt" onclick="jumptoTime(260, this.id)"><p>全部都是黑糖，那個味道又會太濃，所以黑糖和砂糖兩混合，如果你沒有黑糖，你可以選擇用其他東西，黃糖或者紅糖，都可以，如果你真的完全沒有，那你就用砂糖吧，沒什麼所謂的，只是顏色差一點，之後就到兩隻蛋，我們拿隻蛋出來，打勻它，那蛋呢，都是在蛋糕裡面，會漲的其中之一個原因，但是這次我們就不會特意，去打發它。</p></a>
+				<a href="#00:04:54.87" id="00:04:54.87" class="lt" onclick="jumptoTime(294, this.id)"><p>只是混合在一起就可以了，好，下蛋，之後就到巴拿雅，這個也是其中一個馬拉糕那麼濃郁那麼好吃的原因之一，如果你沒有的話就...</p></a>
+				<a href="#00:05:12.51" id="00:05:12.51" class="lt" onclick="jumptoTime(312, this.id)"><p>不買了，牛奶取代不了那種味道，或者你補其他香味的材料，唯有讓它濃郁一點，然後拌勻，把打蛋器拿出來，因為我懶的關係，所以那些黑糖，是還沒完全溶掉的，但是沒什麼的，蒸的時候最終會溶掉的，不過它會沉在底部變成一粒粒的那樣，那攪到沒有粉粒，其實就OK的了，最後加上一點點油，那不用全部放進去，我猜這裡有點多。</p></a>
+				<a href="#00:05:46.20" id="00:05:46.20" class="lt" onclick="jumptoTime(346, this.id)"><p>放一半夠，那你跟我們食譜的份量就OK的了，那放油的意思就是讓它變得滑一點，因為有時候你吃一些糕，有機會吃到很乾很粗糙的，那就是有機會，一來有機會是水不夠，水不夠就會很明顯是硬身一點的，如果你不是的話，它軟的，但是很粗糙的，那可能可以加一點油會好一點，那就讓它放一會，之後轉頭再攪一攪它，那就OK了。</p></a>
+				<a href="#00:06:13.56" id="00:06:13.56" class="lt" onclick="jumptoTime(373, this.id)"><p>那我們先可以煮好水，準備好其他的東西，好!拿了我們的朋友出來，又是他了，陪伴了我們很多集的精龍一號，煮水，那煮水的同時呢，有一件事可以做的，就是為了方便待會放進我們的杯子裡，可以先把這個蛋漿或者蛋糕漿，先放進涼杯裡，那因為放進涼杯裡，它會比較容易集中在一個位置，就不會滴到到處都是，因為如果你滴到到處都是。</p></a>
+				<a href="#00:06:47.76" id="00:06:47.76" class="lt" onclick="jumptoTime(407, this.id)"><p>有一個問題的，就是它如果黏在杯邊，你是抹不走的，抹不走的，那到蛋糕升起的時候，那些蛋糕漿就會頂住蛋糕升起，變成有機會你的蛋糕會歪在一邊，之後準備好六個這樣的模具，這次我們這個是六個的份量，因為我這個東西最多也是蒸到六個同一時間，然後拿一些這樣的蛋糕仔蛋，蛋糕仔底紙，蒸的蛋糕有一個好處。</p></a>
+				<a href="#00:07:18.88" id="00:07:18.88" class="lt" onclick="jumptoTime(438, this.id)"><p>就是它很快的，十多分鐘就可以做好，平均分下去六個，那去到一半滿左右你就可以停一停，因為我們要平均分，那如果你太多有機會要不離不去，又會有機會弄髒邊邊的，對了 感覺到全部有了，才再平均分它，那就會每一個都一樣了，水又滾了，蒸了它，好，平均好，蓋上蓋子，我們用中至大火，不要太大，因為太大受熱太快。</p></a>
+				<a href="#00:08:6.30" id="00:08:6.30" class="lt" onclick="jumptoTime(486, this.id)"><p>就會脹得很快，很厲害，有機會頂部會這樣，砰砰砰，爆開裂開，就不是我們想要的效果，所以不要太大，蒸大概10分鐘，蒸15分鐘，看你的火力，可以測試一下，蒸完用針插一下，看有沒有蛋糕漿，如果沒有就證明熟了，保守一點就蒸15分鐘，因為不怕蒸過濃，15分鐘，好 時間到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.30" id="00:08:42.30" class="lt" onclick="jumptoTime(522, this.id)"><p>打開看看，嘩，爆了兩個，太大火了，有三四個，是帥的，都說不要太大火，說了你的又不聽，拿出來，好!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:18.21" id="00:09:18.21" class="lt" onclick="jumptoTime(558, this.id)"><p>那今集這個迷你型的簡單馬拉糕就完成了，多漂亮，我說這個籠多漂亮，不是做得多漂亮，哈哈哈哈，好!那今集就來到這裡了，記得Like Facebook，Follow Instagram，訂閱，還有加入會員贊助，那我們下次又做其他東西吃了，下次再見，Bye Bye，容易些成功很多，容易很多成功。</p></a>
+				<a href="#00:09:54.51" id="00:09:54.51" class="lt" onclick="jumptoTime(594, this.id)"><p>對了，容易成功很多，沒錯，末期。</p></a>
+				<a href="#00:09:58.51" id="00:09:58.51" class="lt" onclick="jumptoTime(598, this.id)"><p>末期。</p></a>
+</div>
+	</body>
+</html>

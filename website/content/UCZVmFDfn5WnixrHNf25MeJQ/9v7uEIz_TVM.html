@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 賀年素菜 金瑤蘭花 金菇扒西蘭花 簡單快捷</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '9v7uEIz_TVM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 賀年素菜 金瑤蘭花 金菇扒西蘭花 簡單快捷</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.64" id="00:00:3.64" class="lt" onclick="jumptoTime(3, this.id)"><p>欢迎订阅我的频道，大家好又係我星星同大家職人吹水，大家好咁咪大家都睇到個袋呀咁樣有位朋友上嚟食飯呀，咁咪要加個餸啦咁佢就食齋菜嘅，Foodpanda喺網上都開咗一間24小時嘅超市，相當之方便啦咁我有見及之後就扮扮聲咁我上網仔訂，咁我哋睇下買咗咩食材呀，西蘭花，金菇呀每樣一個。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:0.51" id="00:01:0.51" class="lt" onclick="jumptoTime(60, this.id)"><p>咁呢啲食材呀大家想知道點樣訂呀咁就可以回一回帶，睇下，咁就好感謝大家回到未來事啦咁咪20分鐘前呢咁我就上咗，Foodpanda呢個apps呀咁我撳入去，咁而家除咗一般叫餐之外呢咁佢就多咗一個叫做，PandaMark 24小時嘅網上超市，咁我哋入到去呢就揀選返，自己心目中想。</p></a>
+				<a href="#00:01:33.27" id="00:01:33.27" class="lt" onclick="jumptoTime(93, this.id)"><p>揀選嘅食品啦咁佢就個種類就相當之繁多嘅，基本上，超市有嘅佢都會有呀今次我哋呢就揀新鮮食品，咁我今次呢個啦大家睇到呀咁菇咁我哋咪，揀兩個啦，西蘭花，呢度，咁我又揀兩個，咁就已經ok喇喎，咁大家都睇到呀一個網上訂購，食材嘅過程呢亦係相當之簡便，咁你一班打網上呢個24小時超市呢啲貨品都係相當之新鮮，同埋快捷呀。</p></a>
+				<a href="#00:02:12.95" id="00:02:12.95" class="lt" onclick="jumptoTime(132, this.id)"><p>整個過程，十零分鐘㗎喎，咁有時煲緊湯又行唔開嘅咁咪都係幫到手啦，咁點樣我哋處理一個簡易嘅餸菜呢咁我而家就開始，咁材料就西蘭花兩個啦，金菇兩包，就係咁簡單，咁我哋首先處理咗啲西蘭花先咁我又攞啲鹽出嚟，咁我哋落少少鹽水落去，開少少鹽水先，鹽水開咗之後呢咁我哋今日開咗西蘭花啦，好簡便㗎我哋攞把刀仔出嚟㗎。</p></a>
+				<a href="#00:02:49.69" id="00:02:49.69" class="lt" onclick="jumptoTime(169, this.id)"><p>我哋首先，西蘭花腳呢度，咁我哋就切咗佢，跟住呢大粒呢啲呢我哋咪改一改佢呢我哋就全部擺曬落啲鹽水嗰度，浸一浸佢，咁而家我哋就，改曬佢先，咁頭先個朋友上嚟話唔使㗎啦你就咁呀出兩條菜畀我都唔得，其實而家，都好方便呀訂呢啲餸菜，花少少心思亦係做到一個相當之考受個賀年菜，咁我都係切咗個頭呀，西蘭花呀個品質呢就真係相當之好。</p></a>
+				<a href="#00:03:24.75" id="00:03:24.75" class="lt" onclick="jumptoTime(204, this.id)"><p>一切落去就知㗎我哋，睇啦，嗰啲紋理呀咁就相當之幼默嘅，呢個西蘭花呢就，好食㗎一睇呀，知道，咁我哋就全部切埋先，西蘭花我哋有得去浸一陣咁而家就處理埋啲金菇，咁我攞隻碗出嚟呀放返少少清水落去呀，咁嗰啲金菇呢係都係相當之簡單，呢個味呀我哋就唔要㗎，咁我頭呢度呀咁我哋就改埋佢，點解改咗佢呀。</p></a>
+				<a href="#00:04:4.69" id="00:04:4.69" class="lt" onclick="jumptoTime(244, this.id)"><p>扮瑤柱㗎嘛，點樣辦呀，咁我哋就睇佢出嚟先，咁你想啲瑤柱呀北海道干貝瑤柱呀定係，頂級嘅瑤柱，咁我哋呀就切返咁就下醋，好睇㗎嘛，一開三個ok，睇到啲瑤柱，又粗又長咁我已經睇到都開心呀嘛，過年，咁你包咗一樣，咁我哋都係落一刀，咩嗰啲呀咪留返嚟呀煮麵囉可以，跟住我哋又，咁樣改曬咁ok啦，跟住我哋將兩包金菇就擺喺啲水嗰度呀咁我又稍為浸一浸佢咁ok。</p></a>
+				<a href="#00:04:58.80" id="00:04:58.80" class="lt" onclick="jumptoTime(298, this.id)"><p>金菇浸緊之際咁我哋而家咪條埋個現執囉咁我現執啦我哋準備，300毫升嘅清水，咁我以上嘅調味料呢都係可以喺foodmart 24小時超市可以買到㗎啦，呢條未料，咁我哋落一茶匙嗰個香菇粉落去，香菇素蠔油，一個湯匙，落返三分一茶匙嗰個鹽落去咁我哋再畀返半個茶匙，砂糖落去，咁我哋想係咪更加豐富啲啦我哋加多一個湯匙生抽落去。</p></a>
+				<a href="#00:05:43.34" id="00:05:43.34" class="lt" onclick="jumptoTime(343, this.id)"><p>最後教返一個茶匙嗰個老抽落去呢個執基本上呢就已經係完成㗎，萬事俱備呀睇返啲西蘭花呀，浸咗十零分鐘咁而家我哋倒曬啲水去洗兩三次，西蘭花洗咗三次之後咁我哋咪倒曬啲水去瓊水啦跟住啲金菇，金菇我哋瓊曬水咁就ok呀，咁所有材料準備好曬之後呢我哋就進入下一步，開火，燒啲水先，咁水滾咗之後呀。</p></a>
+				<a href="#00:06:24.56" id="00:06:24.56" class="lt" onclick="jumptoTime(384, this.id)"><p>我哋畀少少味佢我哋落返一個茶匙到嘅鹽落去，一個茶匙嗰個砂糖落去，咁我哋畀返少少味佢，一間就出去啲西蘭花，咁最重要都係畀返少少油佢，咁我哋出面行內呢就叫油鹽水，打咗啲西蘭花我哋叫咗咁樣你就將啲西蘭花擺曬落去，咁我哋就保持住一個大火，咁又焯佢三四分鐘，咁我哋全程保持咗個大火，咁我哋搓啲西蘭花呢先會搓到佢清脆嫩目嘅。</p></a>
+				<a href="#00:07:3.78" id="00:07:3.78" class="lt" onclick="jumptoTime(423, this.id)"><p>咁咪仲有少少油㗎嘛，咁而家好多時都會叫外賣㗎喇，食得，第二啲餐廳多㗎嘛可以叫啲食材返嚟，自己煮，比較啱自己口味啦特別係我呢邊嗰啲朋友食渣咁樣呀，好簡單㗎嘛你花少少心思落去，我保證你一陣間再嚟食囉呀畀我睇個賣相就已經，咁我哋就繼續，出去，咁我全場約出咗四分鐘咁而家我哋咪撈起佢啦，西蘭花瓊瑾水之際咁我哋就唔使又倒曬。</p></a>
+				<a href="#00:07:41.92" id="00:07:41.92" class="lt" onclick="jumptoTime(461, this.id)"><p>開返個火，少少油落去，將我哋頭先教好嗰啲，煮滾佢先，當個汁滾起咗之後呢咁我又落埋你，咁我哋大約搵佢一分鐘搵搵水計，一分鐘之後啦，我哋準備一個茶匙嗰個生粉水咁我哋就埋現，好緊要嘅首先我哋收細個火先，快啲，咁我哋就推到個圈呀要緊啲嘅點解啲緊呀，咁你而家推文咗之後呢咁我哋畀返個大火去，再滾返起咁我呢。</p></a>
+				<a href="#00:08:53.36" id="00:08:53.36" class="lt" onclick="jumptoTime(533, this.id)"><p>就差唔多咁而家你就可以食，少少麻油落去，然後我們把西蘭花排好，現在我們要做的就是，把芡慢慢淋在西蘭花的中間，不要急，淋得漂亮一點，就做出一個韓國菜，最重要是把芡弄得漂亮，是不是很漂亮，簡直是上等的瑤柱，很粗，好，再加上素瑤柱汁，整個素菜就呈現眼前，這個菜由在Foodpanda 24小時超市下單，到完成，都是很短的時間。</p></a>
+				<a href="#00:09:49.44" id="00:09:49.44" class="lt" onclick="jumptoTime(589, this.id)"><p>臨近過年，就做個齋菜吃，這麼好的齋菜，其實很簡單，喜歡吃西蘭花的朋友，記得按讚，喜歡吃齋菜的朋友，訂閱我職人吹的頻道，幫我分享一下這個，金菇素翅西蘭花，我先吃飯，下條影片再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

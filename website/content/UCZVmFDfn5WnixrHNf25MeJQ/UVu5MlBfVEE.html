@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉  香茅 薑茶 加咗佢 有糖尿病寒底人士都啱飲</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UVu5MlBfVEE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉  香茅 薑茶 加咗佢 有糖尿病寒底人士都啱飲</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:28.15" id="00:00:28.15" class="lt" onclick="jumptoTime(28, this.id)"><p>各位大家好，又係我星星同大家職人吹水，大家都睇到呀呢班唔係線嚟㗎，一大包香茅，我收工買㗎，呢包呢，柬埔寨特產，讀萬卷書呀不如行萬里路，出去玩呀都有少少得著，我之前都煲過好多香茅檸檬薏米水呀，或者其他嗰啲嘢糖薏米水呀，好多網友都問我，我身體屬於係，良性嘅即係成日都手腳冰冷呀連夏天都咁有冇啲，比較清潤啲嘅。</p></a>
+				<a href="#00:01:21.15" id="00:01:21.15" class="lt" onclick="jumptoTime(81, this.id)"><p>糖水呀或者薑水飲下，同大家分享呢個叫做，香茅薑茶啦，好簡單，同大家吹吹你包嘢，乜嘢嚟㗎呢，我喺柬埔寨買嘅叫柬埔寨棕櫚糖，純天然嘅，咁你呢間你呢堂價錢貴唔貴呀唔貴㗎好平呀柬埔寨買，但係佢有一個特點呢就係話，甜度好香，升糖能力呀，有糖尿病嗰啲就知呀，呢啲糖呀，類似，羅漢果糖呀椰糖呀嗰啲咁樣嘅，升糖能力好低呀。</p></a>
+				<a href="#00:02:10.81" id="00:02:10.81" class="lt" onclick="jumptoTime(130, this.id)"><p>同埋，佢就，香味又好好啦咁我而家同大家，同大家做一個開箱，睇睇裏面有冇樣呀，咁我開咗之後呀咁我裏面有幾多呀，幾骨子，臘腸，今日我就用一條，加十條香茅同大家分享呢個，香茅薑水，香茅我哋用幾多呢，重量好難講呀，24，ceptions，for Esp，mark</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:58.11" id="00:02:58.11" class="lt" onclick="jumptoTime(178, this.id)"><p>OH，Daddy</p></a>
+				<a href="#00:02:56.57" id="00:02:56.57" class="lt" onclick="jumptoTime(176, this.id)"><p>któ，Prime，poets，term，idiots，op</p></a>
+				<a href="#00:02:56.83" id="00:02:56.83" class="lt" onclick="jumptoTime(176, this.id)"><p>struggling，transformative，enin，KI，八九十，十字，下次煲啦包返佢用，香茅薑茶啦梗係唔少得，有薑㗎啦，薑嘅份量，就視乎大家，喜好呀，咁我對，薑味我就相當之鍾意呀香茅味我相當之鍾意，家裏都係得返咁細舊薑，咁我就精銳進出啦如果，有多少少嘅咁呀用多呢個一倍都唔緊要嘅，咁我哋就連薑皮一齊洗埋佢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:42.90" id="00:03:42.90" class="lt" onclick="jumptoTime(222, this.id)"><p>老薑洗乾淨之後，咁我今次都係煲三個人嘅份量，咁我哋準備兩公升嘅清水，首先我哋處理咗個薑先，拍佢呀嘛，咩叫拍薑呀，等佢容易啲出味，我哋再開開佢，包啲清水，咁點呀，拍鬆佢，味道最有味就係頭呢度，如是者，一樣咁做呀，香茅呢，清潔啦，安神啦，陣痛嘅功效，所以我好鍾意煲香茅水，咁樣因為我哋，做廚房呀嘛。</p></a>
+				<a href="#00:05:2.78" id="00:05:2.78" class="lt" onclick="jumptoTime(302, this.id)"><p>有好多網友如果個身體係，虛寒㗎，就連有糖尿病底嗰啲都可以飲埋啦，咁如果有啲網友話香港好難買到呢啲棕櫚糖㗎喎，買唔到唔緊要用椰糖，擺曬落去，開火，用猛火煲滾佢先，香茅薑茶要煲幾耐呀煲30分鐘就可以㗎啦，煲滾之際咁我哋咪插埋呢啲，棕櫚糖出嚟囉咁樣呢度，一塊片糖咁上一個份量呀咁我哋就可以，好硬呀。</p></a>
+				<a href="#00:06:17.21" id="00:06:17.21" class="lt" onclick="jumptoTime(377, this.id)"><p>相當之清甜呀，今次糖嘅份量呢就一塊片糖多少少呀，香茅薑茶呢就不宜太甜嘅有少少甜味，咁又最好飲呀，啱啱煲滾咁我哋收慢火，15分鐘先，而家滾咗15分鐘咁我哋睇下模樣先，呢段時間，我哋落埋啲棕櫚糖落去，五分鐘，全程煲咗30分鐘成個廚房呀，香茅香味，畀大家睇下，唔好睇佢清清地呀，相當之濃郁相得益彰。</p></a>
+				<a href="#00:07:36.55" id="00:07:36.55" class="lt" onclick="jumptoTime(456, this.id)"><p>透明一筆，透明的看起來，濃郁很多，現在已經是相當香了，香茅有清潔、安眠、鎮痛的作用，薑有驅寒，棕櫚糖純天然，絕對適合糖尿病人飲用，因為升糖指數很慢，這個薑茶，很適合，寒底人士飲用，甚麼是寒底呀，長期手腳冰冷，又不能涼冷氣，這個絕對適合飲用，夏日炎炎，冰到飲用，我都是一個香茅癡，最喜歡煲香茅水。</p></a>
+				<a href="#00:08:45.91" id="00:08:45.91" class="lt" onclick="jumptoTime(525, this.id)"><p>喜歡喝香茅水的朋友，記得按LIKE我星星，訂閱我職人吹水頻道，分享這道，棕櫚，香茅，薑茶。</p></a>
+				<a href="#00:08:55.37" id="00:08:55.37" class="lt" onclick="jumptoTime(535, this.id)"><p>我先喝茶了，謝謝收看。</p></a>
+</div>
+	</body>
+</html>

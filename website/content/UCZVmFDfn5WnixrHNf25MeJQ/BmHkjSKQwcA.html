@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 咖哩炒蟹 咖哩汁香濃滑溜 點樣做 Curry fried crab</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'BmHkjSKQwcA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 咖哩炒蟹 咖哩汁香濃滑溜 點樣做 Curry fried crab</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.37" id="00:00:9.37" class="lt" onclick="jumptoTime(9, this.id)"><p>將所有嘅汁，我哋淋返曬落啲蟹嗰度，點呀，大家好，又是我星星同大家職人吹水，每年過了中秋打後，休餘期過後呢海產，豐富，蟹仔返嚟啦同大家，又吹下水啦，紅花蟹一返到嚟我哋無論乜嘢，方法都好，我哋搵啲室溫水，浸佢五六分鐘，淡水浸一浸佢個作用呢主要都係清潔啦同埋等下有啲唔舒服嘅環境之下咁就套一套，海水出嚟啦。</p></a>
+				<a href="#00:01:34.59" id="00:01:34.59" class="lt" onclick="jumptoTime(94, this.id)"><p>我哋最主要啦都係洗乾淨個學嘅表面，咁又炒咗少少材料出嚟同大家做個，咖喱炒蟹，咁準備咗啲配料先，兩粒乾蔥，蒜頭兩粒，切蒜蓉，洋蔥，配料準備好曬之後啦，咁我哋仲要一包細嘅嘢將大約60毫升嘅一隻雞蛋，雞蛋我哋打咗佢先有咩用呀一陣間先再同大家吹，我哋一條埋個咖喱蛋先，咁我哋落到，半個湯匙嘅黃薑粉。</p></a>
+				<a href="#00:02:50.94" id="00:02:50.94" class="lt" onclick="jumptoTime(170, this.id)"><p>跟住咩嚟㗎，咖喱蛋話咖喱醬，半個湯匙，跟住咩嚟㗎，沙爹醬，我哋沙爹醬呀，多少少嘅落咗一個湯匙，準備好嘅咖喱配料跟住我而家先處理啲蟹，咁我哋林主，之前先好洗乾淨佢跟住而家咪通咗佢，咁我上次將中炒話我都做過一次呀，我哋攞後尾呢度呀，我後尾呢度，咁我哋，處理呢啲蟹呢有兩種方法，如果我哋原隻做㗎啦我哋首先搵啲冰水。</p></a>
+				<a href="#00:04:0.15" id="00:04:0.15" class="lt" onclick="jumptoTime(240, this.id)"><p>浸咗佢先，令到佢處於一個瞓覺狀態，咁我哋一湯蟹呢，就另外第二個方法，我哋反而係，蟹腩呢個部分蟹心呢個部分，都沾落去，一下，即時用最短嘅時間我哋結束佢，反轉去，都咁多蟹鉗，一蚊，出咗半呀，呢邊咪一樣呀，開咗之後，我哋下午呢個部分唔好要，唔好嘅味道呀，所有嘢呀都係喺喺呢度呢個位呀，咁我呢咁細隻蟹呀。</p></a>
+				<a href="#00:04:54.43" id="00:04:54.43" class="lt" onclick="jumptoTime(294, this.id)"><p>只係，所有位，我哋掛曬佢，可以呀，一開始都唔使㗎啦因為太細隻呀你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:8.77" id="00:05:8.77" class="lt" onclick="jumptoTime(308, this.id)"><p>咁你完成咗喎，蟹蓋呢度，我哋喺側邊嗰度嗰度，都係落一刀跟住我哋喺個下嘴呢個地方，我哋咪一邊佢，將佢，我哋全部清理曬佢，側邊呢啲膏嚟㗎喎，呢啲就唔使清理㗎喎，咁ok喇喎，咁去到下一期嘛，相當之簡單，紙巾包住佢</p></a>
+				<a href="#00:06:7.10" id="00:06:7.10" class="lt" onclick="jumptoTime(367, this.id)"><p>咁就ok㗎喇，湯乾淨曬之後，我哋隔離準備一兜嘅凍水，咁你打算有咩作用呀咁我係通好咗啲蟹呀就擺落去，我哋係輕細佢呀，湯好咗啲蟹啦我哋唔好勁沖佢乜嘢蟹味都畀你沖曬出嚟呀，咁我哋喺出面做呀，有蟹嘅菜色啦，我哋都唔會一早上嘅，點解呀，因為蟹味濃呀嘛，第一第二道菜上咗啲蟹呢你跟住食其他嗰啲呀食乜都冇乜味，咁我而家用一個方式。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:56.94" id="00:06:56.94" class="lt" onclick="jumptoTime(416, this.id)"><p>拿返起佢，我哋唔好勁洗佢，唔係嗰個嗰啲高級畀你洗曬出嚟，稍為停一停水，開火，之後，蟹條，蟹蓋，大火，我哋每邊約，一分鐘咁上下，油到少許還要用香，每邊都一兜佢啦，兩分鐘後，油，炒一炒，洋蔥炒咗一分鐘之後，落埋啲蒜蓉，咖喱蛋，整體香味識出，加水，加水後，當咖喱煮沸後，加入蟹，一起煮一煮，咖喱汁的份量要多，稍為蓋上蓋子，煮三分鐘。</p></a>
+				<a href="#00:10:16.67" id="00:10:16.67" class="lt" onclick="jumptoTime(616, this.id)"><p>用慢火，約煮咗三分鐘，開個蓋，出嚟，味先，一湯匙，砂糖一個茶匙，兩三下，可以將啲蟹，盡量保留喺底，之後，落埋啲椰奶，煮滾先，我們保留了一個茶匙的奶，加一個茶匙的澱粉，然後把剛才的雞蛋也加進去，攪拌均勻，接著把雞蛋也加進去，然後把雞蛋也攪拌均勻，當它煮開後，我們就上碟，把所有的汁都淋在蟹上，我建議這個菜式多加一點咖喱汁。</p></a>
+				<a href="#00:12:42.05" id="00:12:42.05" class="lt" onclick="jumptoTime(762, this.id)"><p>放一點芫荽在上面，咖喱炒紅蟹就完成了，我建議再煮多一點咖喱汁會比較好，因為蘸一點蒜蓉包吃很棒的，為了發酵，喜歡吃蟹的朋友給我like我星星，喜歡吃咖喱的朋友訂閱我職人吹水的頻道，幫我分享一下這個，咖喱炒蟹，那我就先吃東西了，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

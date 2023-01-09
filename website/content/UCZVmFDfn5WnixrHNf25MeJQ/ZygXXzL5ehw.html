@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 冰花燉蛋 嫩滑竅門 Steamed Egg Custard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZygXXzL5ehw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 冰花燉蛋 嫩滑竅門 Steamed Egg Custard</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.83" id="00:00:8.83" class="lt" onclick="jumptoTime(8, this.id)"><p>接著打磨，用真是滑過星星的面，用隔篩出來，有什麼用?</p></a>
+				<a href="#00:00:18.55" id="00:00:18.55" class="lt" onclick="jumptoTime(18, this.id)"><p>當然要調整一下，各位大家好，又係我星星同大家職人吹水，我老婆小雲就話想食下啲甜品，攞幾隻雞蛋冰糖出嚟同大家吹下水啦，咁我哋順德鄉下，有一個，好出名嘅就叫做，雙皮奶呀薑汁燉奶呀，燉蛋嘢都好出名㗎喎，咁我哋鄉下會有啲冰花燉蛋呀，水牛奶燉蛋呀今日就同大家吹下啲冰花燉蛋啦，咁我做蒸蛋有啲咩邊幾個竅門呀。</p></a>
+				<a href="#00:01:23.84" id="00:01:23.84" class="lt" onclick="jumptoTime(83, this.id)"><p>雞蛋，份量同埋水嘅份量比例，甜度呀幾樣嘢，咁今日我就做兩碗四隻雞蛋，我哋首先打咗兩隻雞蛋先，打埋佢囉，打咗蛋之後，咁樣我哋點樣衡量個水嘅比例呢，咁呀出面坊間好多都係呀一份蛋1.5份水，或者一份蛋兩份水咁樣講得冇錯但係我哋再深入啲，睇下，本身雞蛋嘅質量嘅都好重要，呢啲都唔係啲乜嘢貴價蛋呀或者日本蛋呀嗰啲都係一般啲，泰國蛋。</p></a>
+				<a href="#00:02:14.80" id="00:02:14.80" class="lt" onclick="jumptoTime(134, this.id)"><p>咁你平日帶我睇個蛋呀，蛋白呀，佢都唔係話好潔呀同埋啲顏色都唔係好靚，今日呢份打呢，我哋就一份雞蛋就一份水，點知為之一份呀，相同嘅碗出嚟，咁我哋倒咗落一隻碗嗰度，咁我哋咪睇到呢度我哋要加幾多水呀，加加咩水呀，我哋要加凍滾水，唔好加水喉水點解呀，水喉水啦你沖出嚟啦，有氣泡呀咁你整啲打出嚟咪有啲一撲撲咁樣精出嚟咪唔夠玩囉，呢個又係一個蒸蛋嘅好重要嘅竅門。</p></a>
+				<a href="#00:03:7.98" id="00:03:7.98" class="lt" onclick="jumptoTime(187, this.id)"><p>咁我哋都要，煮咗啲，冰糖先嘅因為啲冰花呢，咁我哋，煮兩碗，蒸兩碗咁我落幾多冰糖呀，甜度就取決於大家，咁我自己呀，落三份一碗咁咪差唔多，攞啲冰糖碎呀，都會貴少少呀知唔知點解，加工過呀，咁我哋攞啲冰糖水有咩作用呀，好大作用㗎喎，我哋喺出面，牛上湯呀，熬意湯呀，或者有時，雲吞麵湯呀，咁我哋出面做呀未知雞粉有少不免呀，咁我哋教完啲湯呢我哋就會攞咗冰糖水落去。</p></a>
+				<a href="#00:04:7.14" id="00:04:7.14" class="lt" onclick="jumptoTime(247, this.id)"><p>呢啲呀，出面好少師傅會同其他人講㗎，如果大家喺外國，做餐廳網友咁有時，滾咗啲湯咁呀落咗啲雞粉未知唔係攞少少冰糖水落去啦，中和返雞粉嘅啲味，冇咁口渴呀，咁我哋擺落去咁我哋就，容約先，冰糖溶緊之際咁我哋而家咪，處理返啲蛋呀，咁我哋首先將四隻雞蛋，我哋係輕手打暈佢先我哋唔好，唔好大力咁樣。</p></a>
+				<a href="#00:04:58.08" id="00:04:58.08" class="lt" onclick="jumptoTime(298, this.id)"><p>打咗啲空氣入去啦嗰啲蛋蒸出嚟呢就唔係，咁我哋就慢慢發呀盡量搞混佢就ok呀，蒸水蛋煎得靚，呢個亦係一個竅門嚟㗎，如果你好似做蛋糕咁樣將啲空氣打曬入去啲蛋嗰度，做蛋糕就啱但係精髓打呢就係唔好，精髓蛋就係唔靚㗎喇咁樣就，咁我而家睇下你冰糖啫都差唔多啦，冰糖水用得七七八八咁樣有啲，冰花嗰啲我哋咪料一料佢啦順便攤一攤。</p></a>
+				<a href="#00:05:51.27" id="00:05:51.27" class="lt" onclick="jumptoTime(351, this.id)"><p>唔好咁熱太熱撞落去咪撞熟咗啲蛋呀，稍為吹凍咗糖水之後，我哋將啲熱嘅糖水，慢慢，加啲蛋漿嗰度呀，慢慢落慢慢落一路落一路搞一路落一路搞，攪拌均勻，攪拌均勻之後，我們拿個隔篩出來，有什麼用呢?</p></a>
+				<a href="#00:06:38.85" id="00:06:38.85" class="lt" onclick="jumptoTime(398, this.id)"><p>當然是隔一下，我們把粗的蛋白隔一下，大家看到嗎?</p></a>
+				<a href="#00:06:51.35" id="00:06:51.35" class="lt" onclick="jumptoTime(411, this.id)"><p>蒸出來的冰花燉蛋就夠滑了，然後我們輕輕的撇一下泡，如果家裡有火槍，就用火槍，燙一下，然後我們分開兩個碗，剛剛好呀兩碗，咁而家我哋用啲，入得微波爐個保鮮紙包咗佢先，包咗保鮮紙之後咁我哋咪，搵返頭先鑊水呀，咁水滾後咁我哋咪均勻，落去囉，咁我哋蒸呢個蛋，要蒸幾耐呀，我哋收到最慢嘅火爐，我哋冚蓋。</p></a>
+				<a href="#00:08:5.13" id="00:08:5.13" class="lt" onclick="jumptoTime(485, this.id)"><p>我哋保存住呢個火爐蒸佢，八分鐘，跟住唔好開蓋我哋再焗佢十分鐘，依家蒸咗八分鐘之後，保鮮紙咪發揮到佢個作用囉，咁而家你就，熄火，有得佢喺隻鑊嗰度，十分鐘或者十二分鐘十五分鐘都冇所謂㗎，十分鐘咁上下點解要焗啦喺屋企蒸蛋呀真係好開心呀點解可以慢慢，喺我哋日常，我哋都係職業廚房用嗰啲啲精鬼呢就冇得焗㗎我哋一定要計時間呀，開呀。</p></a>
+				<a href="#00:09:1.71" id="00:09:1.71" class="lt" onclick="jumptoTime(541, this.id)"><p>睇唔到啦，好簡單一個方法，郁下佢，咁咪ok㗎喇喎，咁我攞出嚟望下咩模樣望望唔到呀咁我都唔知睇下佢啦，有個紅旗啦，大家看到嗎?</p></a>
+				<a href="#00:09:35.28" id="00:09:35.28" class="lt" onclick="jumptoTime(575, this.id)"><p>比星星的臉還要滑，想知道心裡滑不滑，用湯匙，給大家看看，看到嗎?</p></a>
+				<a href="#00:09:55.88" id="00:09:55.88" class="lt" onclick="jumptoTime(595, this.id)"><p>滑溜溜的，嫩滑冰花燉蛋，當中包含兩三個竅門，大家掌握到，每個人都可以做到一個嫩滑的冰花燉蛋，喜歡吃蛋的朋友給我一個讚，喜歡吃冰糖的朋友，訂閱我職人吹水的頻道，分享一下這個冰花燉蛋，我忍不住急不及待，先吃東西，多謝收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

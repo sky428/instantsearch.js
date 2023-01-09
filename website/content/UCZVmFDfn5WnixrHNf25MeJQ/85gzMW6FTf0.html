@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 香茅檸檬薏米水製作簡單易做/清熱去濕/ 舒緩喉嚨不適/</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '85gzMW6FTf0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 香茅檸檬薏米水製作簡單易做/清熱去濕/ 舒緩喉嚨不適/</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.19" id="00:00:0.19" class="lt" onclick="jumptoTime(0, this.id)"><p>煲好模樣，在頭部切片，星星，這是什麼?</p></a>
+				<a href="#00:00:22.03" id="00:00:22.03" class="lt" onclick="jumptoTime(22, this.id)"><p>是蔥嗎?</p></a>
+				<a href="#00:00:24.03" id="00:00:24.03" class="lt" onclick="jumptoTime(24, this.id)"><p>當然不是蔥啦，今天用這兩樣東西和大家分享一下，各位好，我是星星师父，今天跟各位分享一个香茅柠檬薏米水，这些是香茅，今天跟各位分享一个香茅柠檬薏米水，先看看材料，当然少不了柠檬，薏米大约大半碗约150克，还有一碗冰糖约200克，香茅有十支，这些材料可以煲到多少水呢，我今天大约用两公升的水煲糖水，先煲水。</p></a>
+				<a href="#00:01:32.03" id="00:01:32.03" class="lt" onclick="jumptoTime(92, this.id)"><p>煲水的同时洗薏米，浸一浸洗掉就行，怎样洗呢，像洗米一样洗，薏米洗了两次后，看看有没有浮生物或杂质浮在上面，如果没有就OK，薏米又跟大家吹两嘴，这种叫生薏米，生薏米的作用是清热、沥料、去水，有些行底的人士未必这么熟，有一种叫熟薏米，行底的人士一半生薏米一半熟薏米，薏米搞定了，冰水就可以煲了。</p></a>
+				<a href="#00:02:30.03" id="00:02:30.03" class="lt" onclick="jumptoTime(150, this.id)"><p>煲薏米的同时我们先处理香茅，这些香茅在街市很容易买到，或者在东南亚食品店买到，买到后如果头不太好看就切掉，用多少香茅就要看你自己的口味，小弟就很喜欢香茅的味道，所以我煲糖水或是凉茶也好，薏米水也好，我都会放很多香茅，我们切了头出来，怎么处理呢，在头的部分拍松，拍松的目的就是让它煲出来的时候容易出味，现在全部都拍松。</p></a>
+				<a href="#00:03:31.36" id="00:03:31.36" class="lt" onclick="jumptoTime(211, this.id)"><p>拍松之后，尾部不要了，然后放入煲里，剩下的香茅不要扔掉，用梳器的网袋包起放在窗边吹，香茅味道很香，接着我们处理柠檬，切片，切薄一点也不怕，不用太快放，最后15分钟才放，这个薏米水要煲多久呢，大约煲45分钟，煲滚水，然后收慢火，煲45分钟，这些柠檬要煲30分钟才放，和冰糖一起放，煲滚之后，收慢火。</p></a>
+				<a href="#00:04:39.92" id="00:04:39.92" class="lt" onclick="jumptoTime(279, this.id)"><p>收慢火煲30分钟，接着才放柠檬和糖，煲了30分钟，看看什么样子，可以看到香茅味和薏米的味道都出来了，这段时间放入冰糖，冰糖放了之后，可以放柠檬了，放多少柠檬就看你吃到多酸，冰糖和柠檬煲了15分钟之后，看看什么模样，已经很香柠檬味，可以关火，我舀一杯給大家看看，煲好模樣給大家看清楚，相當濃郁。</p></a>
+				<a href="#00:05:52.31" id="00:05:52.31" class="lt" onclick="jumptoTime(352, this.id)"><p>這個香茅檸檬薏米水，我們把渣隔起，放涼，冷藏後飲更有風味，煲薏米水一定要有足夠火爐，全程煲了五十分鐘，煲食盡量一爐火，什麼叫一爐火呢，中間不要加水，要決定煲多少，一次過加水，不要中間加水，這個香茅檸檬薏米水很適合現在這麼炎夏的天氣，有機會就煲個香茅檸檬薏米水飲下，今日分享到此為止，多謝各位收看，再見。</p></a>
+</div>
+	</body>
+</html>

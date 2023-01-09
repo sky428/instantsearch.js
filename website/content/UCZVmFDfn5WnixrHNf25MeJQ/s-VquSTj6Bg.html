@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 氣炸鍋 麵包布甸 就係咁簡單 Airfryer bread pudding</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 's-VquSTj6Bg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 氣炸鍋 麵包布甸 就係咁簡單 Airfryer bread pudding</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.38" id="00:00:8.38" class="lt" onclick="jumptoTime(8, this.id)"><p>好似棉花咁嘅，做出嚟嗰啲板子呢就相當之好食嘅，呢把刀唔利咁我就慢慢切，咁我哋攞出嚟望望乜嘢模樣先，咁我因為做咁細隻碟呀其實兩隻雞蛋就已經，OK呀，一份水嘅花奶落去，一份蛋，奶同埋水就一對一，大家好，又是我星星和大家職人吹水，大家看到了，拿麵包皮出來有什麼用呢?</p></a>
+				<a href="#00:01:12.38" id="00:01:12.38" class="lt" onclick="jumptoTime(72, this.id)"><p>吹一下廚餘回收之類的，做了三文治，麵包皮不要丟掉，這些麵包皮也很有用的，當然有很多網友問，星星，麵包皮有什麼用呢?</p></a>
+				<a href="#00:01:25.30" id="00:01:25.30" class="lt" onclick="jumptoTime(85, this.id)"><p>當然是用來吃的啦，大家有沒有吃過漢堡包?</p></a>
+				<a href="#00:01:30.30" id="00:01:30.30" class="lt" onclick="jumptoTime(90, this.id)"><p>打牛肉漢堡也要用麵包皮，浸泡後拌勻一起打，今天就用這些麵包皮和大家做一個甜品，拿出氣炸鍋，預熱200度，十多分鐘，麵包皮氣炸鍋有咩甜品搞咗啦雞蛋呀，大家有冇食過一個叫做麵包布甸呀，咁呢個都係一個好老牌嘅甜品呀我入行嗰陣時就好多人，食嘅，咁呀呢個，喺外國嘅家庭呢一個好普遍呀又係好成日做嘅甜品呀，今日用一個簡單嘅方法同大家分享下啦。</p></a>
+				<a href="#00:02:32.86" id="00:02:32.86" class="lt" onclick="jumptoTime(152, this.id)"><p>首先我哋準備一個呀，擺得入喎氣炸鍋，要深少少因為我哋都要裝啲蛋漿，麵包皮呀咁我哋就咩咩佢呀，咁我等佢容易吸收啲蛋漿，先唔好太多呀，咁我因為仲咁細隻點呀其實，兩隻雞蛋，已經ok呀，雞蛋，我哋慢慢，稍為發人佢，我哋唔好打佢起泡，唔好唔好扯過嚟打我慢慢打佢就已經ok，打暈咗之後呀咁我哋點樣計算雞蛋同，水或者奶嘅份量呀。</p></a>
+				<a href="#00:03:30.46" id="00:03:30.46" class="lt" onclick="jumptoTime(210, this.id)"><p>今日我就用花奶同埋水呀大家可以用鮮奶或者用忌廉去做得，如果用水，我哋用煲過嘅滾水，我哋擺返頭先一份蛋一份水落去，跟住，我哋再，倒返一份水嘅花奶落去，即係無形中呀我哋一份蛋，奶同埋水就一對一，我哋加埋啲花奶落去，甜味就適隨尊便啦咁我呢度啦大約落兩個湯匙，咁上下啦，自己可以大家調教一下嘅，咁如果喺出面做啦我哋仲會加埋啲香油呀或者啲。</p></a>
+				<a href="#00:04:30.68" id="00:04:30.68" class="lt" onclick="jumptoTime(270, this.id)"><p>拉條落去呀，有提示乾呀咁我今日就好開心呀乜都冇呀，簡單就同大家分享呢個，麵包布甸，攪勻曬之後呢咁我哋就，麵包慢慢吸收啲蛋漿，膨脹，咁等佢浸幾耐先一個最理想，我建議大家浸耐少少，方包呀，唔使浸咁耐㗎，麵包去做，就冇咁好㗎呢個，油炸鬼去做，十分鐘嘅時間啦，都差唔多吸收曬啲蛋漿膨脹咗呀，都預熱咗約有十零分鐘呀。</p></a>
+				<a href="#00:06:12.04" id="00:06:12.04" class="lt" onclick="jumptoTime(372, this.id)"><p>我哋慢慢，就擺咗碟蛋漿落去，落去之後呀，慢慢倒埋落去囉，現在調一下溫度，我們調到140度，焗它大約18分鐘，現在大概，烤了12分鐘左右，我們拿出來看看，大家看看，表面也差不多了，現在就差顏色，我們放回去繼續，用氣炸鍋、乾鍋、焗爐，有什麼分別呢?其實三個都是同一個烹調模式，用焗爐做這個雞蛋布甸，我們要加水，為什麼呢?</p></a>
+				<a href="#00:07:37.21" id="00:07:37.21" class="lt" onclick="jumptoTime(457, this.id)"><p>因為焗爐的恆溫會比較均勻，我們要加水讓蛋沒有那麼老，氣炸鍋就不用了，因為它在頂部加熱，在旁邊抽風，所以底下的熱度就不會那麼高，反而我覺得用氣炸鍋做這個雞蛋布甸比較適合，只要掌握到溫度就可以了，最後一分鐘，140度，我們拿出來看看，大家看看，近鏡給大家看看，是不是烤得很漂亮?</p></a>
+				<a href="#00:08:32.49" id="00:08:32.49" class="lt" onclick="jumptoTime(512, this.id)"><p>用麵包皮做一個麵包布甸，大家也看到效果了，用氣炸鍋烹調的原理跟恆溫、焗爐是一樣的，一樣的，我也是第一次用氣炸鍋做，當中的竅門，我覺得140度的溫度是適合的，這個時間也是對的，如果大家，可以用忌廉去做，焗出來的顏色會更好，甜味就要自己調整一下，喜歡吃蒸蛋的朋友，給我一個讚，喜歡吃蛋餅的朋友，訂閱我。</p></a>
+				<a href="#00:09:33.25" id="00:09:33.25" class="lt" onclick="jumptoTime(573, this.id)"><p>喜歡吃雞蛋布甸的朋友，當然要快點看多幾次，我先吃東西，甜度就大家自己調，今次分享到此為止，多謝收看。</p></a>
+				<a href="#00:09:46.37" id="00:09:46.37" class="lt" onclick="jumptoTime(586, this.id)"><p>下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

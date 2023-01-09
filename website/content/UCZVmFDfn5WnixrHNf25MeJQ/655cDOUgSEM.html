@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 蒸魚🐟 係要 咁 樣去除魚嘅腥味- 清蒸 燕星斑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '655cDOUgSEM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 蒸魚🐟 係要 咁 樣去除魚嘅腥味- 清蒸 燕星斑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>蒸魚有什麼竅門和注意的地方?</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>入嚟睇吓咪知囉!</p></a>
+				<a href="#00:00:20.35" id="00:00:20.35" class="lt" onclick="jumptoTime(20, this.id)"><p>各位好，我是星星师父，今天跟各位分享蒸鱼，清蒸鱼看似简单，其实当中有很多器皿，首先我们去街市买了条新鲜鱼，如果还没蒸好，放在冰箱，蒸之前半小时或一小时，现在半小时才拿出来清洗，为什么不要一早洗呢?</p></a>
+				<a href="#00:00:54.15" id="00:00:54.15" class="lt" onclick="jumptoTime(54, this.id)"><p>因为鱼进冰箱也要出来放一放，洗完放冰箱又不一样，现在慢慢刮干净，这条是什么鱼呢?</p></a>
+				<a href="#00:01:13.15" id="00:01:13.15" class="lt" onclick="jumptoTime(73, this.id)"><p>看起来像东星鱼或西星鱼，这条叫燕星鲅，燕星鲅有什么分别呢?</p></a>
+				<a href="#00:01:24.15" id="00:01:24.15" class="lt" onclick="jumptoTime(84, this.id)"><p>大家看这条尾部，呈现燕子，东星鱼是平脚的，东星鱼是比较油润滑，燕星鲅的肉没那么油润，但吃起来也好吃，现在先洗干净，今天会多花些时间和大家分享如何处理这条鱼，通常师傅打鱼的这些位置都不干净，我们用刀刮这些位置，刮干净了，肚这些位置也要打干净，里面的也要刮干净，腥味的来源就在这里，现在慢慢把这些位置洗干净。</p></a>
+				<a href="#00:02:24.15" id="00:02:24.15" class="lt" onclick="jumptoTime(144, this.id)"><p>洗鱼肚的这些位置也很重要，我们要切开它，把隐藏的血都洗掉，无论多新鲜的鱼，它的腥味的来源在这里，残留在鱼身里，现在我们刮干净，洗干净后再清洗干净，鱼洗干净后晾水，放在湿的地方晾水，晾水之余，我都讲过很多次，处理海鲜最重要是要抹干身和抹干肚子里的水分，那些腥味就是隐藏着鱼表面的水分，越湿越好，蒸出来的鱼都会有鱼的腥味。</p></a>
+				<a href="#00:03:22.55" id="00:03:22.55" class="lt" onclick="jumptoTime(202, this.id)"><p>所以我们做这个步骤很重要，有很多蒸鱼都不懂抹干身去蒸，蒸出来的鱼就不好看，我们做中菜饮食是蒸鱼的基本功，有时鱼未必用来蒸，有些鱼可以做生滚粥，大家知不知道有什么鱼可以做生滚粥呢?</p></a>
+				<a href="#00:03:52.55" id="00:03:52.55" class="lt" onclick="jumptoTime(232, this.id)"><p>大家都想到泥鯭粥，生滚的，泥鯭够清淡是吧?</p></a>
+				<a href="#00:03:58.55" id="00:03:58.55" class="lt" onclick="jumptoTime(238, this.id)"><p>为什么滚完粥，泥鯭都那么好吃?</p></a>
+				<a href="#00:04:4.55" id="00:04:4.55" class="lt" onclick="jumptoTime(244, this.id)"><p>有些生滚泥鯭粥就是要把泥鯭洗得很干净和抹得很干身，当然如果泥鯭不新鲜，就做不到生滚粥，做大盆的泥鯭粥才香，现在抹干身，放在室温里，放几个小时才蒸，在蒸之前还有什么竅门呢?一会儿再和大家分享，魚在室溫裏面放了數個小時，為甚麼呢?</p></a>
+				<a href="#00:04:48.04" id="00:04:48.04" class="lt" onclick="jumptoTime(288, this.id)"><p>因為魚在室溫裏面放了數個小時，所以魚肉的溫度跟室溫差不多，蒸出來會比較好吃，如果現在才從雪櫃取出來，可能雪櫃裏面有四度，魚肉本身已經是在很低溫的雪櫃，蒸出來的魚就不漂亮，我們先把魚放好，放一些薑蔥在底部，把魚放好，盡量湯開口的位置向底，為甚麼呢?不要讓它藏水，把魚放好，這條魚約14兩至一斤，我們蒸它十分鐘，焗它兩分鐘。</p></a>
+				<a href="#00:05:41.54" id="00:05:41.54" class="lt" onclick="jumptoTime(341, this.id)"><p>現在放去蒸，一定要水大滾的，現在蒸了十分鐘，隱約可以看到魚裡面有條鰭，關火，焗多兩分鐘，現在差不多焗了兩分鐘，為甚麼要焗呢?</p></a>
+				<a href="#00:06:13.54" id="00:06:13.54" class="lt" onclick="jumptoTime(373, this.id)"><p>讓最厚肉的地方慢慢低溫焗熟，魚剛熟到有些黏骨，這些魚蒸出來就最漂亮，這條魚的模樣是怎樣呢?隱約可以看到，我還未開蓋，現在開蓋給大家看看，給大家看看，這條魚蒸得好，新鮮，它會告訴你，新鮮的魚會刮高，蒸完出來還是醬身飽滿，這條魚就蒸得好，拿了魚就燒熟油，油要香些，放蒜頭，少許便夠，不要太多。</p></a>
+				<a href="#00:07:18.58" id="00:07:18.58" class="lt" onclick="jumptoTime(438, this.id)"><p>現在滾起，油滾了之後，炸油，炸了油之後，豉油不要淋魚面，在旁邊放，落少許豉油便夠，這條清蒸燕星斑便完成了，做海鮮要抹乾身，蒸的時間不要過濃，魚一蒸過濃，肉便會收縮，鮮味便會變水分，這條魚便沒有鮮味，買幾靚的魚食也沒有用，今日分享到此為止，大家有機會便蒸魚食，多謝各位收看，我先去吃飯了。</p></a>
+</div>
+	</body>
+</html>

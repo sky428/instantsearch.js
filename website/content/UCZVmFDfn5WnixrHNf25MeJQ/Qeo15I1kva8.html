@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 五杯豉油雞😋 簡單易做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Qeo15I1kva8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 五杯豉油雞😋 簡單易做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>今日同大家拍開箱片，有咩開?入嚟睇咪知囉!去片，各位好，我是星星师父，很多网友问我会不会拍开箱影片，今天就拍开箱影片，有什么东西要开呢?</p></a>
+				<a href="#00:00:32.45" id="00:00:32.45" class="lt" onclick="jumptoTime(32, this.id)"><p>好累啊，找不到箱子，可以开袋吗?</p></a>
+				<a href="#00:00:38.25" id="00:00:38.25" class="lt" onclick="jumptoTime(38, this.id)"><p>市场上有没有人开袋的?</p></a>
+				<a href="#00:00:40.79" id="00:00:40.79" class="lt" onclick="jumptoTime(40, this.id)"><p>跟大家拍开袋吧，有什么东西要开呢?</p></a>
+				<a href="#00:00:51.75" id="00:00:51.75" class="lt" onclick="jumptoTime(51, this.id)"><p>开箱吧，开箱鸡，这只大约2斤重的冰鲜三黄鸡，还算大，在室温放置12小时，将鸡软身，现在浸泡半小时，放多少盐呢?</p></a>
+				<a href="#00:01:20.55" id="00:01:20.55" class="lt" onclick="jumptoTime(80, this.id)"><p>放几茶匙盐，让鸡肉吸收鲜味，今天这只鸡有什么用途呢?</p></a>
+				<a href="#00:01:33.55" id="00:01:33.55" class="lt" onclick="jumptoTime(93, this.id)"><p>我打算做一只五杯豉油鸡，做这种豉油鸡浸泡鸡，把鸡放出来，室温解冻是很重要的，要把鸡解冻才会浸泡得好看，现在浸泡一小时，浸泡了一小时，大家看到有什么样子了，旁边的血水已经释出，现在把淡泡水倒掉，洗一下，洗干净，用水洗，洗干净，去除肺部，浸泡鸡的肺部一定要去除，剪了两只脚，在前面的位置，不要剪在这，剪高一点。</p></a>
+				<a href="#00:02:31.55" id="00:02:31.55" class="lt" onclick="jumptoTime(151, this.id)"><p>看鸡熟不熟都要看鸡腿，洗干净剪掉肥膏，第一步要怎樣處理雞呢?</p></a>
+				<a href="#00:02:54.59" id="00:02:54.59" class="lt" onclick="jumptoTime(174, this.id)"><p>將雞完全乾水，燒熱炒鍋，小火，將雞放入炒鍋，將四面辣放入炒鍋，大家聽到聲音了，把雞皮拿去收縮，再煎香雞皮，這個有什麼作用呢，主要是令雞皮更香，我們做五杯鴨也是要用這個步驟，為什麼不放油呢，因為雞太肥了，所以不要太大火，慢慢煎，拿碗出來，這個碗有多大呢，大約有100毫升，加入一碗酒，用大火，加一碗酒，一碗滾水。</p></a>
+				<a href="#00:04:27.65" id="00:04:27.65" class="lt" onclick="jumptoTime(267, this.id)"><p>第三碗落豉油，第三碗豉油，薑片、乾蔥、糖，醋什麼時候放?</p></a>
+				<a href="#00:05:7.58" id="00:05:7.58" class="lt" onclick="jumptoTime(307, this.id)"><p>醋待滾後才放，現在放醋，醋的份量有些斟酌，我這次用陳醋，陳醋的比例差不多一碗，醋如果有些酸些的就不要放那麼多，現在放醋，煮滾，煮滾後計算雞要浸多久，滾了，關火至最細，燈芯火，最細，保持住這火爐，這隻雞大約浸40-50分鐘，先浸雞胸底下，現在不停找些熱的時候汁淋雞背，務求讓它吸收肉汁。</p></a>
+				<a href="#00:06:11.58" id="00:06:11.58" class="lt" onclick="jumptoTime(371, this.id)"><p>反一反，為何要反一反呢?讓雞囊內有些熱的汁流入去，剛才為何會有個洞呢?作用就是這樣，雞囊內的溫度都很重要，現在浸雞胸位置，浸15分鐘再看看，現在浸了5分鐘，也不代表不用動，再浸10分鐘左右，讓它受熱均勻一點，我們也在用雞腔的水，不要讓雞胸黏底，因為始終也給了它一點火，這隻雞很適合家庭節日做的。</p></a>
+				<a href="#00:07:27.50" id="00:07:27.50" class="lt" onclick="jumptoTime(447, this.id)"><p>有心機有時間，這隻雞的要點是醬汁只剩一半，用這麼大的雞煮醬汁，大家想想好不好吃，現在淋一淋，繼續浸，現在雞胸浸了15分鐘，我們拿起雞頭這個部份，大家不要學我，因為雞頭也很熱，我們就向雞胸這個位置倒雞腔的醬汁出來，現在淋熱的醬汁，淋熱的醬汁，淋完之後倒出來，做這隻雞真的要心機和時間，我們現在反轉它。</p></a>
+				<a href="#00:08:40.30" id="00:08:40.30" class="lt" onclick="jumptoTime(520, this.id)"><p>反轉後，又是浸15分鐘，期間每5分鐘淋一淋，倒一倒雞腔的醬汁出來，其實最難熟的就是雞腿這兩邊，現在先浸底面，然後再浸雞腿，現在雞背浸了15分鐘，期間也是5分鐘，我們可以動它，倒一倒雞胸的醬汁出來，不斷加熱的醬汁在雞胸裏面，這段時間我們也是要倒出來，我們先浸這邊的雞腿，浸多久呢?這邊也要浸10分鐘。</p></a>
+				<a href="#00:09:27.30" id="00:09:27.30" class="lt" onclick="jumptoTime(567, this.id)"><p>期間也是要每5分鐘淋一淋，用心、時間、耐性，如果稍不小心，雞腿已經焦了一點，功夫豉油雞全程5分鐘，反轉這邊再煮5分鐘，務求要浸到熟透，全程浸了一小時，底面兩邊各15分鐘，這段時間用些工具，調大火，找到汁大滾，收汁，濃郁的汁讓雞吸收，約一兩分鐘便可以，汁已經很濃了，找一張碟子。</p></a>
+				<a href="#00:10:58.43" id="00:10:58.43" class="lt" onclick="jumptoTime(658, this.id)"><p>放在當風的地方，吹涼後才斬，斬完上碟的模樣就是這樣，如果怕骨位不熟的話，可以煮熱剛才的醬汁淋一淋，一定要配合醬汁才好吃，有豉油香味，甜甜酸酸，配飯一流，今日分享到此為止，多謝各位收看。</p></a>
+</div>
+	</body>
+</html>

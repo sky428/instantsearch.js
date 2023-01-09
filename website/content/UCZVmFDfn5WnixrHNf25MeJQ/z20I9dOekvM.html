@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉   魚翅瓜 蟲草花 栗子 甘筍 煲豬展湯Chinese soup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'z20I9dOekvM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉   魚翅瓜 蟲草花 栗子 甘筍 煲豬展湯Chinese soup</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:12.09" id="00:00:12.09" class="lt" onclick="jumptoTime(12, this.id)"><p>也請別忘了分享出去並按一個讚哦 並且記得訂閱我們的頻道 才能收到最新消息喔，大家好，又是我星星和大家職人吹水，真的很開心，為什麼呢?因為買了便宜的魚翅瓜，今天煲魚翅瓜湯，先看看材料，陳皮一角，南北杏色，松草花一手，元貝仔一堆，調一下味，栗子，去皮可以參考我栗子去皮的頻道，還有一斤多一點的新鮮豬展，洗乾淨。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:10.38" id="00:01:10.38" class="lt" onclick="jumptoTime(70, this.id)"><p>用冷水加熱，加熱過程中將魚的血水味逼出來，2-4人份量，準備3公升清水，陳皮，加入陳皮水，冷水，南北杏也可以冷水，松草花拿一手出來浸泡十分鐘，用一個拿的方式洗乾淨，再浸泡，浸完拿去飛水，飛完水洗乾淨，用清水浸泡，可以一早拿去煲，這些元貝仔瑤柱仔，用室溫水浸一浸，倒水，現在用瑤柱水一起浸，一起放下去，調一下味。</p></a>
+				<a href="#00:02:19.38" id="00:02:19.38" class="lt" onclick="jumptoTime(139, this.id)"><p>開火，將以上材料煲開，豬展飛好後，舀起，過清水，過乾淨，將豬展洗淨，目的是將新鮮豬展的酥味洗出來，處理豬展後，豬展沒有酥味，高湯就好飲，新鮮豬展處理好後，可以放入一組煲，接著處理魚翅瓜和甘筍紅蘿蔔，我建議買有泥的，有泥的煲湯比較清甜，我自己行內的，叫做台卜，刨乾淨。</p></a>
+				<a href="#00:03:24.02" id="00:03:24.02" class="lt" onclick="jumptoTime(204, this.id)"><p>甘筍洗淨後放一旁備用，我們來處理魚翅瓜，為何這麼開心呢?因為買到便宜的，大家去街市買菜，會不會像我一樣在街市逛逛，我今天一到市政街市，看到一間魚翅瓜賣，問他多少錢一斤，他說二十多塊一斤，我就到處逛逛，到樓下街舖，有一間賣多少錢一斤呢?</p></a>
+				<a href="#00:04:1.72" id="00:04:1.72" class="lt" onclick="jumptoTime(241, this.id)"><p>六塊一斤，我這一斤一半，買了九塊，你說開心嗎?</p></a>
+				<a href="#00:04:11.12" id="00:04:11.12" class="lt" onclick="jumptoTime(251, this.id)"><p>這些魚翅瓜有什麼好處呢?</p></a>
+				<a href="#00:04:16.12" id="00:04:16.12" class="lt" onclick="jumptoTime(256, this.id)"><p>清熱解毒，如果像我之前有糖尿底，我就經常煲這些瓜，處理這些瓜也是很簡單的，我們連皮一起洗乾淨，最重要是把表皮的雜質洗兩三遍，魚翅瓜洗乾淨後，為何要把表皮洗乾淨呢?</p></a>
+				<a href="#00:04:42.72" id="00:04:42.72" class="lt" onclick="jumptoTime(282, this.id)"><p>因為我們連皮一起煲，我們先處理甘筍，大家看到我每次煲湯都會放甘筍，甘筍有維他命C和蘿蔔，相當豐富，特別是近期的天氣，肺炎那麼嚴重，所以要多煲一點，湯水充滿維他命C，增強抵抗能力，每樣都有適當的運動，這是最重要的，我們可以先煮它，魚翅瓜，怎樣處理呢?</p></a>
+				<a href="#00:05:30.15" id="00:05:30.15" class="lt" onclick="jumptoTime(330, this.id)"><p>其實相當簡單，頭部切掉，不要，頭尾，中間用刀子按著，慢慢拍下去，打開，打開後給大家看看裡面的模樣，裡面像冬瓜一樣，但我們不要去掉，因為魚翅就在裡面，現在看不到的，煮好之後，它會縮在裡面，不用切太小塊，這樣就OK了，切好，魚翅瓜煮湯的材料的動態性也很大，夏天可以配雪梨蘋果一起煮，也很好喝，現在放下去煮。</p></a>
+				<a href="#00:06:35.47" id="00:06:35.47" class="lt" onclick="jumptoTime(395, this.id)"><p>用大火煮半小時，再用小火煮半小時，栗子要放什麼時候呢?</p></a>
+				<a href="#00:06:48.47" id="00:06:48.47" class="lt" onclick="jumptoTime(408, this.id)"><p>中間的一小時，或者現在放也可以，喜歡吃粉的可以現在放，沙拿魚翅煮了半小時，現在放栗子，放了栗子後，用小火蓋上蓋子煮半小時，沙拿魚翅煮了兩小時，現在看看魚翅煮到什麼樣子，差不多了，可以關火了，到底魚翅在哪呢?</p></a>
+				<a href="#00:07:34.98" id="00:07:34.98" class="lt" onclick="jumptoTime(454, this.id)"><p>不是這些，這些是蟲草花，魚翅呢，剝一塊給大家看看，為什麼叫大家不要去蟋蟀呢?</p></a>
+				<a href="#00:07:46.64" id="00:07:46.64" class="lt" onclick="jumptoTime(466, this.id)"><p>魚翅就這樣一條條的，這些魚翅很清甜的，再剝一塊給大家看看，這些，先把它剝開，栗子還沒爛的，有味道，現在把它舀起來，我喝湯的時候，是不放鹽的，大家喜歡的鹹度就自己調整，一般就放一些焯鹽在桌上，自己加就最好，大家看看湯水多濃郁，不但濃郁，味道也很不錯，保證大人小孩都喜歡喝這個湯，近期流感高峰期，就煮一下魚翅瓜蟲草花。</p></a>
+				<a href="#00:08:47.72" id="00:08:47.72" class="lt" onclick="jumptoTime(527, this.id)"><p>增強抵抗能力，魚翅瓜對糖尿液也很好，我常說，用充足的材料煮一鍋湯，就只有自己煮，喜歡喝老火湯的朋友，記得按讚，喜歡吃魚翅的朋友，訂閱我職人吹水的頻道，幫我分享一下這個魚翅瓜煮豬展湯，我先喝湯了，謝謝收看，下次再跟各位分享，再見。</p></a>
+</div>
+	</body>
+</html>

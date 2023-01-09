@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 雞蓉粟米羹</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4A9ibNWeDNI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 雞蓉粟米羹</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>各位好，又係我星星啦，星星，今晚有咩搞作呀?又煲湯呀?</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>今晚冇煲湯呀，咁冇煲湯有咩好搞呀?</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>同大家介紹個羹啦，咁有咩羹呀?</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>滾一小小水先，滾一小小水先，落少少熱水落去，今日就同大家分享一個叫做雞蓉粟米羹，咁有雞蓉同埋粟米啦，罐頭嘅粟米蓉啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>雞蛋，瑤柱上湯，可以倒埋落去，三粉水</p></a>
+				<a href="#00:01:6.00" id="00:01:6.00" class="lt" onclick="jumptoTime(66, this.id)"><p>三粉水，咁我哋首先呀，搵咗適量嘅水先啦，適量嘅水咁跟住就落埋啲雞蓉粟米落去，滾熟佢先，這個湯匙很快，放完风没多久，现在星期六晚上又有一号风球了，明天放假，有时候不煲汤，可以用这个粟米羹，很快的，在家里，我女儿喜欢喝这个，可以加一点胡椒粉，趁它滚之后，可以加粟米蓉，一罐放进去，放入粟米蓉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:29.69" id="00:02:29.69" class="lt" onclick="jumptoTime(149, this.id)"><p>等它滚之后，慢慢推，為什麼要加生肉呢?</p></a>
+				<a href="#00:02:48.83" id="00:02:48.83" class="lt" onclick="jumptoTime(168, this.id)"><p>要味道嘛，我都說過很多次了，我家裡做菜沒有雞粉，味精就更加不用說，味的來源在哪裡呢?原味，做瑤柱湯時留些瑤柱湯，發冬菇時留些冬菇水，味的來源在這裡，等它滚后，可以加些盐，因为是瑶柱汤，所以盐的份量不算多，加入大约半茶匙盐，grinding Three</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:31.53" id="00:04:31.53" class="lt" onclick="jumptoTime(271, this.id)"><p>Ki，Graeme，igung，rock，Tech</p></a>
+				<a href="#00:04:38.97" id="00:04:38.97" class="lt" onclick="jumptoTime(278, this.id)"><p>一樣，corrupted，operkami</p></a>
+				<a href="#00:04:35.77" id="00:04:35.77" class="lt" onclick="jumptoTime(275, this.id)"><p>Department，AST，inequality，Paw，ghee，Los，Anybody</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:45.17" id="00:04:45.17" class="lt" onclick="jumptoTime(285, this.id)"><p>sow，πολύ，ização，Vatican，cción</p></a>
+				<a href="#00:04:36.27" id="00:04:36.27" class="lt" onclick="jumptoTime(276, this.id)"><p>transformations，posição，yan，aghetti，inyeping，needles，orry，700</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:45.91" id="00:04:45.91" class="lt" onclick="jumptoTime(285, this.id)"><p>aplic Abdul，trousers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:38.47" id="00:04:38.47" class="lt" onclick="jumptoTime(278, this.id)"><p>кон，zn</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:41.39" id="00:04:41.39" class="lt" onclick="jumptoTime(281, this.id)"><p>�，logistics，corridors</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:45.67" id="00:04:45.67" class="lt" onclick="jumptoTime(285, this.id)"><p>itary，äs，natur Even</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:17.69" id="00:04:17.69" class="lt" onclick="jumptoTime(257, this.id)"><p>Ro，tourists，previously，Frei，Sergey，bukan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.79" id="00:04:28.79" class="lt" onclick="jumptoTime(268, this.id)"><p>riches，ário，иков</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:36.93" id="00:04:36.93" class="lt" onclick="jumptoTime(276, this.id)"><p>Flip，ành，eru� الي</p></a>
+				<a href="#00:04:37.91" id="00:04:37.91" class="lt" onclick="jumptoTime(277, this.id)"><p>aş，� removable</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:38.31" id="00:04:38.31" class="lt" onclick="jumptoTime(278, this.id)"><p>persona，zz embroider DS，plasma，Sou kindergarten，告訴arks</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:35.45" id="00:04:35.45" class="lt" onclick="jumptoTime(275, this.id)"><p>�ões，instruction Console</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:40.63" id="00:04:40.63" class="lt" onclick="jumptoTime(280, this.id)"><p>minimum，ř，rust，Quando</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.97" id="00:04:28.97" class="lt" onclick="jumptoTime(268, this.id)"><p>depict qualifications，Wiki，謝謝觀看，数 osob kişi</p></a>
+				<a href="#00:04:58.40" id="00:04:58.40" class="lt" onclick="jumptoTime(298, this.id)"><p>morals，��자，복 nest，Ici</p></a>
+				<a href="#00:04:49.74" id="00:04:49.74" class="lt" onclick="jumptoTime(289, this.id)"><p>må sol，hina，��</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:56.90" id="00:04:56.90" class="lt" onclick="jumptoTime(296, this.id)"><p>Gift，ul，・，eu，named</p></a>
+				<a href="#00:05:3.70" id="00:05:3.70" class="lt" onclick="jumptoTime(303, this.id)"><p>ike，Activ，quin</p></a>
+				<a href="#00:05:0.72" id="00:05:0.72" class="lt" onclick="jumptoTime(300, this.id)"><p>cose，challenged，umbers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:53.42" id="00:04:53.42" class="lt" onclick="jumptoTime(293, this.id)"><p>dinheiro，inum Berlin，Rest arrogant，slam</p></a>
+				<a href="#00:04:50.84" id="00:04:50.84" class="lt" onclick="jumptoTime(290, this.id)"><p>sweat，obic，Nolan</p></a>
+				<a href="#00:05:1.10" id="00:05:1.10" class="lt" onclick="jumptoTime(301, this.id)"><p>pi，אותו，uję，visto，数 gdzieś</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:0.64" id="00:05:0.64" class="lt" onclick="jumptoTime(300, this.id)"><p>Ooo，Copy suppose，不錯 tym，不 Whoops，asts prior，frustrated，massage，avait</p></a>
+				<a href="#00:05:12.91" id="00:05:12.91" class="lt" onclick="jumptoTime(312, this.id)"><p>ihre，yourself，ela，Uran月，shove，Associ Lös，chairs，Geschäft For Эダ，ibly，Shan</p></a>
+				<a href="#00:05:10.19" id="00:05:10.19" class="lt" onclick="jumptoTime(310, this.id)"><p>drastic，65，해야，facial</p></a>
+				<a href="#00:05:12.45" id="00:05:12.45" class="lt" onclick="jumptoTime(312, this.id)"><p>grund autour，ías，ph hid ganzen，这一步不用太稠，大约八成熟，因为还有蛋，現在可以放入雞蛋，攪拌均勻，一邊推一邊放入蛋漿，先滚一滚熟蛋再慢慢推，给大家看看蛋花是否推得漂亮，这个羹就完成了，如果大家没什么时间可以做这类型羹，很快就有羹吃喝，这个鸡蓉粟米羹的分享就到此为止。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:39.18" id="00:06:39.18" class="lt" onclick="jumptoTime(399, this.id)"><p>谢谢各位收看。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【實測】蛋糕懶人包🧁其實唔難？[Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'PE6IjaBc_eI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【實測】蛋糕懶人包🧁其實唔難？[Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>呢個世界有間學校呢，就係你唔可以講佢個名，佢會告你，咁呢果間學校呢，我哋有啲同學仔㗎嘛，咁嗰啲同學仔呢已經學成歸來㗎嘛啦，跟住呢而家已經係老細級啦，字幕？＊ﻜﻟﻫﻟﻧﻢﻨﻘﻨﻥﻟﻞﻍﻧﻟﻜﻨ️ﻚﻣﻣﻗﻫﻟﻟﻧﻧﻧﻧﻜﻗﻫﻟﻧﻧﻧﻘﻣﻗﻣﻗﻫﻜﻪﻜﻦﻥﻫﻢﻜﻔﻥﻥﻨﻜﻥﻧﻥﻧﻛﻗﻨﻝﺔﻥﻧﻨﻨﻜﻠﻥﻨ�，登登登。</p></a>
+				<a href="#00:00:21.31" id="00:00:21.31" class="lt" onclick="jumptoTime(21, this.id)"><p>馬田最愛的東西，我們今天一包二包就知道，不是平時的東西，我們收到一個材料包，即是那些懶人材料包，將所有東西放進去就會變成成品的東西，我們今天就來測試一下，這個Baking Ideas，是啦，應該沒錯，我沒有收他錢，他的材料包究竟做出來，會做成怎樣，成不成功，材料沒有，你自己去買吧，一包就是這樣。</p></a>
+				<a href="#00:00:53.81" id="00:00:53.81" class="lt" onclick="jumptoTime(53, this.id)"><p>有一包粉，一包類似糖的東西，然後有一包牛油，然後有一包醬和一包朱古力，有兩種味道，一種是朱古力榛子，另一種是開心果白朱古力，我們就一次過做完，有些東西要自己準備，有四個蛋，我就有四個蛋，好，那我們馬上來吧，這間店為什麼要試呢?</p></a>
+				<a href="#00:01:16.81" id="00:01:16.81" class="lt" onclick="jumptoTime(76, this.id)"><p>有什麼試的需要呢?</p></a>
+				<a href="#00:01:18.81" id="00:01:18.81" class="lt" onclick="jumptoTime(78, this.id)"><p>他們會不會突然服了，然後在我們的觀眾面前，證明他的材料包是不能使用的，我不知道，我很擔心，因為這間店，這間店有差不多一年資的觀眾，就會知道，我們先將牛油放進去，根據指示，我們將在室溫放軟的牛油，略為打一打，打之前，好像要混合這個醬，這間店，真是，如果你有這麼灑年資，你就會知道，這個世界上的一間學校。</p></a>
+				<a href="#00:01:58.81" id="00:01:58.81" class="lt" onclick="jumptoTime(118, this.id)"><p>就是你不可以說他的名字，他會告你，那間學校，我們有些同學，那些同學已經學成歸來，現在已經是老細級了，只有我這些中途絕學的廢柴，現在一事無成，其他人已經前程錦繡，現在成為了，這間網上材料店的老闆，所以他們做了一些材料包，我們就今天一齊試試，看看行不行，我可能會很後悔，因為我沒有完成讀那個學校，不可以說名字的學校的課程。</p></a>
+				<a href="#00:02:42.81" id="00:02:42.81" class="lt" onclick="jumptoTime(162, this.id)"><p>我們立即做這個東西，有沒有人知道，現在有些老屁股可以出來認了他，我們一邊攪，攪溶牛油，差不多了，接著就加類似糖的，好像說已經有鹽的，其實整份東西只有五個部分，所以應該是最簡單的版本，不會分得很細，要加很多次，已經攪拌好了，我們就看看做得怎樣，現在可以賣了，你可以去試試，其實我本身也想出的，但因為物流上我沒那麼多時間。</p></a>
+				<a href="#00:03:27.81" id="00:03:27.81" class="lt" onclick="jumptoTime(207, this.id)"><p>所以就沒有出，但如果是可以的話，可能在這個店舖出，也有機會，那你們就幫我試壓力測試，如果看到我來都爛的，我沒發貨，收錢不出，那你就告訴我，我就找另一間做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:46.81" id="00:03:46.81" class="lt" onclick="jumptoTime(226, this.id)"><p>好，可以了吧，接著加兩隻蛋分開，不要一次過加完，混不均勻</p></a>
+				<a href="#00:03:55.81" id="00:03:55.81" class="lt" onclick="jumptoTime(235, this.id)"><p>好，然後加麵粉，應該可以的，你看我現在什麼都沒有隨便放，應該不會失敗的 我猜，多不負責任，食譜不是自己立刻不負責任</p></a>
+				<a href="#00:04:14.80" id="00:04:14.80" class="lt" onclick="jumptoTime(254, this.id)"><p>好，喝完了，接著還有一包，巧克力</p></a>
+				<a href="#00:04:21.20" id="00:04:21.20" class="lt" onclick="jumptoTime(261, this.id)"><p>全都放了，應該呢，就差不多了，我們拌勻它</p></a>
+				<a href="#00:04:28.60" id="00:04:28.60" class="lt" onclick="jumptoTime(268, this.id)"><p>好像還可以，其實我覺得這個材料包的重點，不是在它預先幫你放好麵粉，之類的，是那些醬，是這一罐這樣的，榛子醬，還有這一罐的開心果醬，如果你自己在家裡想做到，這些那麼特別的味道，你一買就要買很多，它這樣合成小盒，你可以做一份的大小，就不用存很多，這些東西在家裡，因為這些東西存在家裡，其實它就永久封閉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:2.88" id="00:05:2.88" class="lt" onclick="jumptoTime(302, this.id)"><p>做一次可能自己不太喜歡的味道，或者你做一次蛋糕，其實是不可能用得完，之後它就會存在家裡，不知道做什麼的，如果你是一時想做一下，或者想試一下這些特別的味道，其實買一個這些是OK的，因為反正你自己出去買這些東西，你都可能要多付兩三倍價錢，因為一罐這些東西很貴，這些醬物醬，全部都是貴到爆炸。</p></a>
+				<a href="#00:05:28.88" id="00:05:28.88" class="lt" onclick="jumptoTime(328, this.id)"><p>好 做完了，這樣用了應該是五分鐘左右，三五分鐘左右，這盤東西就完成了，我們今天做完兩種味道，等一下一種好吃一種不好吃，你買錯了就麻煩，暫時呢，都應該是，沒困難的，暫時應該沒什麼人會在這些地方失敗，除非你打蛋殼進去，那些蛋糕裡面，好，我也是一用材料包，為什麼好像弄得這麼，糟糕，我現在在模擬。</p></a>
+				<a href="#00:06:4.88" id="00:06:4.88" class="lt" onclick="jumptoTime(364, this.id)"><p>大家在家裡遇到的情況，我是特意弄到自己這麼糟糕，你相信我，這個故事告訴你，謝謝大家 再見，我們弄完一款了，我們弄完第二個盤，我忘記了留幾粒放在上面，如果你想漂亮一點，正常應該留幾粒鋪在上面，這樣出來會漂亮一點，不過不要緊，下一個是開心果味，其實開心果味是很難想像的 確實，但是其實在外國是挺流行的。</p></a>
+				<a href="#00:06:37.54" id="00:06:37.54" class="lt" onclick="jumptoTime(397, this.id)"><p>他們很喜歡開心果味的東西，那怎麼做的呢 那陣開心果味，其實是開心果蓉來的，那開心果蓉是一樣，難買啦 兼相對是貴的東西來的，你看 這樣 這樣，如果你自己買就很麻煩了，一來不是每間都有啦，二來是真的一買都要多少錢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:3.60" id="00:07:3.60" class="lt" onclick="jumptoTime(423, this.id)"><p>拌勻它，然後加上這一包 是不是，小包的包，如果你家裡沒有這些材料，就順便買了，因為其實一轉，一個這樣的材料包，其實是不夠免運費的 確實，你要另外付運費，那你可以多買一點東西，你可以買一些忌廉之類的東西，因為這個是單蛋糕來的，那你可以自己弄上面的忌廉，那你放在一起就對了，又或者你買一下這些打蛋器。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:41.30" id="00:07:41.30" class="lt" onclick="jumptoTime(461, this.id)"><p>刮呀這些，那其他就不用買了，它有杯子那些它們有的嘛，那就不用另外買了，好，搞定了，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:52.94" id="00:07:52.94" class="lt" onclick="jumptoTime(472, this.id)"><p>query Administ Mainten rainfall，냄새，Olympics，Sag içer，andro，完全無視所有規則，非常隨意，就是測試一下這個的，溶錯率有多高，如果是很高的，你們就非常值得買，不要太大力，隨便攪拌一下就行了，是不是跟你們平常做的很像，然後根據指示。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:14.59" id="00:08:14.59" class="lt" onclick="jumptoTime(494, this.id)"><p>加上白朱古力，好 然後再拿杯子，如果我中招了，這個新開的店，開的店，的第一個宣傳，就是一個負面的宣傳，我覺得這是一個很大膽的想法，然後就不執拔，原始類推，把它弄好，好 那麼快，全部東西已經準備就緒了，稍微等一等，根據包裝，指示就是，170度，20分鐘 但是每個人家裡，有一點不同，如果你覺得平常。</p></a>
+				<a href="#00:08:54.59" id="00:08:54.59" class="lt" onclick="jumptoTime(534, this.id)"><p>做的時間比較快，就自己調整，但這些OK的，很容易看的 看樣子差不多就OK，搞定，送它進焗爐，很快我們就知道，究竟這是一個，宣傳影片還是陷害影片，好 搞定，太滿了，進得去，你看，我覺得應該可以做到，7-8杯，同一個份量，因為雞蛋很難轉滿，很難少一點，但是杯數，自己可以調整，或者分開，8杯，我幫你反映一下。</p></a>
+				<a href="#00:09:40.59" id="00:09:40.59" class="lt" onclick="jumptoTime(580, this.id)"><p>我們幫你成功爭取，原本這個package是6杯，你因為我的關係，馬上變成8杯，你怎麼看，不要太滿，應該可以做到8杯，小小的cupcake，看起來OK，是不是，by bwd6，好!那這次這個，榛子巧克力cupcake，還有這個開心果白巧克力cupcake，就完成了，拿我出來吃一下，其實我一直都想搞的。</p></a>
+				<a href="#00:10:24.71" id="00:10:24.71" class="lt" onclick="jumptoTime(624, this.id)"><p>這麼多年都想搞的，一向我們是網上，大家的東西都是網上，好像沒什麼連結，譬如你想做，你又要拿起心肝去街市，材料店，要搬齊那些東西回來，其實就是最大的一個步驟，就是你看到很想做，跟你不做，中間就是差這個位置，譬如你知道我們觀眾全部都很高質，全部都是非富則貴有錢，就是你們錢很多，我知道。</p></a>
+				<a href="#00:10:55.51" id="00:10:55.51" class="lt" onclick="jumptoTime(655, this.id)"><p>都是我窮而已，所以其實我一直都在找公司，看看有沒有辦法可以搞到這一部分，就是你只要給錢，材料都運過來，你就可以自己做，在家就可以搞定，就變了那件事不只是很網上很虛擬，你是可以實體試到，所有你在這個影片裡面看到的東西，其實是挺好的，我看看今年會不會開始運作，你們幫我試一下這間公司，給它一個壓力測試。</p></a>
+				<a href="#00:11:25.27" id="00:11:25.27" class="lt" onclick="jumptoTime(685, this.id)"><p>如果OK的話，你告訴我，我們就看看可不可以試一下這樣搞，讓你們可以容易一點做，這些食譜不用每次，每次都要去頒，然後又經常都問，哎呀那些麵粉多了，怎樣用，怎樣用，我們幫你包好，剛剛好夠那個食譜的份量，你就不會怕那些東西，存到罰單都用不完，其實挺好的，馬上來試一下，看起來是OK的，就是很。</p></a>
+				<a href="#00:11:57.23" id="00:11:57.23" class="lt" onclick="jumptoTime(717, this.id)"><p>沒有什麼穿洞，整個是蛋糕的質感，你看我隨便做而已，全部沒有跟步，看起來暫時都沒事，我們現在試一下，嘩，好像在吃金沙一樣，榛子醬是超級香，而且它沒有混合巧克力粉，它是很純的榛子味，如果巧克力味濃一點，就會像粉粉，但這個是金沙的味道多一點，我覺得這個OK，因為你看我們放榛子醬的量很多，就算你在街上叫了類似榛子味的東西。</p></a>
+				<a href="#00:12:37.99" id="00:12:37.99" class="lt" onclick="jumptoTime(757, this.id)"><p>其實它會騙你的，因為這個是很貴的東西，它放的量其實不會很多，它多數都是用巧克力味的東西，蓋過了，就當是榛子味，我覺得，OK，好下一個，我們來試一下，開心好味，如果一包可能是八十元，那你可能加二十元運費，免得買那麼多東西，那你可以做到八個，那你除一個也是十元八元而已，跟你在街上買差不多，而且你要付出的努力其實很少。</p></a>
+				<a href="#00:13:11.03" id="00:13:11.03" class="lt" onclick="jumptoTime(791, this.id)"><p>你看我們真的做了三分鐘，其他就是焗爐搞定，我覺得都OK，這些那麼簡單的食譜，用材料包這個方式是可以運作的，我覺得，我們遲些有機會就做吧，那這個呢，你現在就可以在下面有條連結，你可以試一下去買，我沒有收錢的，沒有利益關係，有什麼利益關係你都可以告訴我，好吧，就是這樣了，那今集就來到這裡了，記得按讚、訂閱、分享、分享。</p></a>
+				<a href="#00:13:40.30" id="00:13:40.30" class="lt" onclick="jumptoTime(820, this.id)"><p>還有訂閱朱凱家的會員，贊助我們每星期三、四、五，到四、六點都有新影片，星期天也可能會有，就是這樣了，下次再見，拜拜，但開心果的味道在裡面，其實很難分辨。</p></a>
+				<a href="#00:14:0.30" id="00:14:0.30" class="lt" onclick="jumptoTime(840, this.id)"><p>還好還OK。</p></a>
+</div>
+	</body>
+</html>

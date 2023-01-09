@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 懷舊粵菜 錦鹵雲吞 當中技巧😋記得保存和分享</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'YESycvDrNqw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 懷舊粵菜 錦鹵雲吞 當中技巧😋記得保存和分享</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:11.71" id="00:00:11.71" class="lt" onclick="jumptoTime(11, this.id)"><p>大家好，又是我星星同大家職人吹水，大家好，真的要說得超慢，為什麼呢?</p></a>
+				<a href="#00:00:25.47" id="00:00:25.47" class="lt" onclick="jumptoTime(25, this.id)"><p>因為材料太多了，這個菜我一直都很想做，為什麼到現在還沒做呢?</p></a>
+				<a href="#00:00:37.11" id="00:00:37.11" class="lt" onclick="jumptoTime(37, this.id)"><p>原因是很難集齊所有材料，這類菜式在街上吃比較方便，但是我真的想紀錄下來跟大家分享，大家看片頭也看到，錦魯雲吞，我常常出去吃東西，一有錦魯雲吞就會叫，錦魯雲吞最難是醜，一些很雜的配料，很多時候出去吃東西，我都會吃雜燴的，為什麼呢?因為在家裡吃，很難吃到雜燴炒麵，有這麼多配料，今天我們的配料齊不齊呢?</p></a>
+				<a href="#00:01:19.79" id="00:01:19.79" class="lt" onclick="jumptoTime(79, this.id)"><p>不齊的，但我們也看看有什麼材料，先看看材料，菠蘿兩塊，這個呢?</p></a>
+				<a href="#00:01:29.87" id="00:01:29.87" class="lt" onclick="jumptoTime(89, this.id)"><p>拍清楚給大家看，不是醬油，是糖醋汁，還有三色椒，後面是最難找到的材料，雜燴料，用紙巾包著，一會兒看就知道，還有雲吞皮，在外面吃雜燴炒麵或雜燴飯，跟八珍豆腐，大家知不知道分別在哪裡?</p></a>
+				<a href="#00:02:1.71" id="00:02:1.71" class="lt" onclick="jumptoTime(121, this.id)"><p>在外面做，也有分為上八珍和下八珍，做錦鹿雲吞，一定是上八珍，上八珍會加什麼呢?</p></a>
+				<a href="#00:02:13.71" id="00:02:13.71" class="lt" onclick="jumptoTime(133, this.id)"><p>除了以上的材料，有肉丸、豬肚、豬心、豬肝、肉片，這條是正粉腸，有基本材料，紙巾底下還有蝦仁，上八珍還會加叉燒、魷魚等，這份配料也是去雙熟的雲吞麵店、粥檔，跟老闆李讓集會材料，又買了少少雲吞皮，跟大家分享一下，大家買不到這些集會材料也不要緊，可以用蝦仁、魷魚、叉燒，味道也很不錯。</p></a>
+				<a href="#00:03:19.06" id="00:03:19.06" class="lt" onclick="jumptoTime(199, this.id)"><p>蝦仁、魷魚，我們用鹽醃一下，沖乾淨水，吸乾水，我會用一部分做錦鹿雲吞，然後拿一碗豉油出來，因為包了半仙子，真的很像豉油，這碗糖醋汁，大家可以參考一下我做的做法，主要是用不同的酸味去做糖醋汁，要偏甜、濃郁，包裝三色椒很簡單，每樣切一點出來，不用很多，用一點點綴一下，要洗乾淨，因為很髒，我再洗兩三遍。</p></a>
+				<a href="#00:04:18.44" id="00:04:18.44" class="lt" onclick="jumptoTime(258, this.id)"><p>洗乾淨後改很簡單，中間開一刀，斜切，呈菱形效果，另一邊也是一樣，用拉刀的方式也可以，紅椒的，開一刀，中間這顆漂亮一點，罐裝菠蘿片，如果有小朋友可以多放一點，全部對角開就可以了，完成了，配料準備好之後，拿些材料出來，有蝦仁、及底的馬肉、糖醋汁，隨即開火，燒水，做第一步，先處理醬汁，其實錦魯雲吞，錦魯雲吞，這真是兩個菜式。</p></a>
+				<a href="#00:05:30.06" id="00:05:30.06" class="lt" onclick="jumptoTime(330, this.id)"><p>首先將肉片飛水，因為肉片難熟，現在放豬肝，逐步放，不要心急，現在放豬心，煮熟這些，三樣材料都煮開了，其他便放，主要是煮熱和煮透，一定要煮透，當它再煮開，放蝦仁，蝦仁最後放，因為最快熟，喜歡食物便放多些，當成一道菜，蝦仁便馬上變嫩，在鑊內將所有材料煮熟和煮透，蝦仁煮熟後，將所有材料撈起，不要過熟，但一定要透。</p></a>
+				<a href="#00:06:45.06" id="00:06:45.06" class="lt" onclick="jumptoTime(405, this.id)"><p>將八珍料放中間的洞，讓它吹一吹，現在處理糖醋汁，燒熱直鑊，落適量油，不用太多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:8.06" id="00:07:8.06" class="lt" onclick="jumptoTime(428, this.id)"><p>放三色椒，蔥段，薑片，放下去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:18.06" id="00:07:18.06" class="lt" onclick="jumptoTime(438, this.id)"><p>炒到有香味，當有香味釋出，落八珍料，炒兩三下，務求讓它有香味，在鑊邊灒些酒，落糖醋汁，滾起，滾的過程中落菠蘿，讓糖醋汁味入配料，煮一煮，不是主要滾熟，因為配料已煮熟，否則糖醋汁配料不熟會很軟，味會淡，現在滾便可以，汁滾起便可以，已完成，全部倒下去便可以，很吸引吧，這已是一道菜，錦露雲吞還在煙滋滋，這邊已改頭換面。</p></a>
+				<a href="#00:08:52.92" id="00:08:52.92" class="lt" onclick="jumptoTime(532, this.id)"><p>先燒鍋油，放一旁保持熱度，趁油溫未熱拿些雲吞皮出來吹水，雲吞皮是一般粉麵店買到的，但現在很多雲吞店的雲吞皮都是自己搓的，自己搓的蛋味特別濃郁，像我上次在酒店吃雲吞皮，蛋味相當足夠，雲吞皮都可以，因為價錢不貴，買這麼多都是收5元，今日約炸十塊左右，油溫約170-180度左右，聽到油響即是代表有四至五成油，炸這麼薄的雲吞皮很快。</p></a>
+				<a href="#00:10:0.29" id="00:10:0.29" class="lt" onclick="jumptoTime(600, this.id)"><p>當油溫開始縮小的時候，我們就拿一些雲吞皮過來，我們不用摺了，我們在外面做，會用蝦膠來摺一下，在家裡做就比較方便，逐一摘，先摘幾塊，放進去之後，保持著這個油溫，按一下，Magazine Är间 як sortinglé сам</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:32.59" id="00:10:32.59" class="lt" onclick="jumptoTime(632, this.id)"><p>capacity，Cam Wednesday</p></a>
+				<a href="#00:10:37.03" id="00:10:37.03" class="lt" onclick="jumptoTime(637, this.id)"><p>Lance，olate，Interestingly，enschaft，� Gor CrunchGu startups，tagged</p></a>
+				<a href="#00:10:32.73" id="00:10:32.73" class="lt" onclick="jumptoTime(632, this.id)"><p>motor，카，論</p></a>
+				<a href="#00:10:35.67" id="00:10:35.67" class="lt" onclick="jumptoTime(635, this.id)"><p>Por，coordin，JIN，Cattutto</p></a>
+				<a href="#00:10:34.69" id="00:10:34.69" class="lt" onclick="jumptoTime(634, this.id)"><p>ste Island，GoodDear，livre</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:38.89" id="00:10:38.89" class="lt" onclick="jumptoTime(638, this.id)"><p>ciBLANK，zosta</p></a>
+				<a href="#00:10:38.19" id="00:10:38.19" class="lt" onclick="jumptoTime(638, this.id)"><p>굉장，ambiguトミー，collectors，hoven</p></a>
+				<a href="#00:10:47.27" id="00:10:47.27" class="lt" onclick="jumptoTime(647, this.id)"><p>ической yemek，Alexandra，upright，Carbon наблюд taraf</p></a>
+				<a href="#00:11:0.95" id="00:11:0.95" class="lt" onclick="jumptoTime(660, this.id)"><p>St называется，com，metal</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:3.69" id="00:11:3.69" class="lt" onclick="jumptoTime(663, this.id)"><p>Madкр，य</p></a>
+				<a href="#00:11:1.27" id="00:11:1.27" class="lt" onclick="jumptoTime(661, this.id)"><p>식으로，었습니다，völlig，alta，amino</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:53.93" id="00:10:53.93" class="lt" onclick="jumptoTime(653, this.id)"><p>kus，홍，있고，Cle歲</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:6.67" id="00:11:6.67" class="lt" onclick="jumptoTime(666, this.id)"><p>sque огр，cker，älle</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:9.17" id="00:11:9.17" class="lt" onclick="jumptoTime(669, this.id)"><p>Technologies，awn</p></a>
+				<a href="#00:11:2.29" id="00:11:2.29" class="lt" onclick="jumptoTime(662, this.id)"><p>இல，Netflix，hierarch aim，estad，calidad</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:5.85" id="00:11:5.85" class="lt" onclick="jumptoTime(665, this.id)"><p>technicians，försö，服，山，years</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:8.69" id="00:11:8.69" class="lt" onclick="jumptoTime(668, this.id)"><p>Х，attending，conditions，잠�aws</p></a>
+				<a href="#00:11:1.07" id="00:11:1.07" class="lt" onclick="jumptoTime(661, this.id)"><p>polynom，funded，cs，네，Müzik</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:0.91" id="00:11:0.91" class="lt" onclick="jumptoTime(660, this.id)"><p>Rita，오� crises，outro</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:4.67" id="00:11:4.67" class="lt" onclick="jumptoTime(664, this.id)"><p>tightening，disciplines，счит全部 santé，ира</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:0.93" id="00:11:0.93" class="lt" onclick="jumptoTime(660, this.id)"><p>Cola，Virtual，Krsna，��니다，asta，Jeong</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:0.31" id="00:11:0.31" class="lt" onclick="jumptoTime(660, this.id)"><p>ctica，sa，忘 Ter，departed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:54.85" id="00:10:54.85" class="lt" onclick="jumptoTime(654, this.id)"><p>domin pouvez，cleared，martial，бар，살짝</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:7.33" id="00:11:7.33" class="lt" onclick="jumptoTime(667, this.id)"><p>Aww，forums</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:56.25" id="00:10:56.25" class="lt" onclick="jumptoTime(656, this.id)"><p>weaker，約一分鐘就完成了，一轉色就可以了，先撈起來，晾一晾，繼續，大家知道我炸了多少嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:54.87" id="00:10:54.87" class="lt" onclick="jumptoTime(654, this.id)"><p>我炸了十多塊，有多脆呢?看不見就不要緊，聽一下聲音，撈起來，每一塊都很漂亮，如果買到更漂亮的雲吞皮就更棒，這塊是剛才吃過的，放進去，懷舊香口的錦魯雲吞呈現在眼前，看到已經很想吃了，喜歡吃炸雲吞的朋友給個讚，喜歡吃糖醋汁的朋友，訂閱我職人吹水的頻道，喜歡吃豬肝的朋友，加入頻道會員繼續吹水，今天這個懷舊經典粵菜分享到此為止。</p></a>
+				<a href="#00:11:44.03" id="00:11:44.03" class="lt" onclick="jumptoTime(704, this.id)"><p>口水都流了，不能說話了，下個影片再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 糯米釀雞翼 原來咁簡單 人人做得到 Sticky rice stuffed chicken wings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TBLc0KGjEcw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 糯米釀雞翼 原來咁簡單 人人做得到 Sticky rice stuffed chicken wings</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:13.69" id="00:00:13.69" class="lt" onclick="jumptoTime(13, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，大家好又係我星星同大家職人吹水，咁大家認識到糯米釀雞翼都係一個頗為複雜嘅菜，今次用一個簡單嘅方法同大家分享下呢個做法啦，咁好多時一聽到糯米嘅菜色大家都會諗起我個生炒糯米飯，除咗生炒糯米飯呢咁我哋都仲有啲即食點心，即食點心呀我哋擺喺微波爐嗰度三分半鐘先。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:4.50" id="00:01:4.50" class="lt" onclick="jumptoTime(64, this.id)"><p>咁真係緊之仔呀，有啲急凍嘅雞全日咁我買啲較大隻比較好啲，我哋攞啲鹽出嚟，我哋落三個茶匙嘅鹽落去，用啲水浸佢先，咁咁咪有作用又幫佢解凍呀同埋等我有部分嘅雪未識出，咁用微波爐叮咗三分半鐘之後呢咁呢類型嘅即食珍珠雞又即刻可以食，點解我哋要，將佢叮熟咗佢先做呢就係做呢個，糯米釀雞翼嘅一個好重要嘅關鍵。</p></a>
+				<a href="#00:01:40.86" id="00:01:40.86" class="lt" onclick="jumptoTime(100, this.id)"><p>如果我哋硬咁樣入去啦好多時呀，熟咗啦你咪我心去都未熟呀所以我哋一定要叮到佢夠熱食得咁而家我哋就，攤一攤佢先，雞翼，浸咗15分鐘之後，咁而家你咪檢查啲雞翼呀，呢啲啦咁我哋拎咗佢啦，咁而家呢我哋就沖洗兩三次洗乾淨就ok，洗乾淨之後我哋將佢瓊水，瓊水嗰張廚房紙出嚟咁我哋要將整隻雞翼，抹到乾身。</p></a>
+				<a href="#00:02:28.20" id="00:02:28.20" class="lt" onclick="jumptoTime(148, this.id)"><p>你進入下一步呢你先會容易處理呀，吸乾水份之後呢咁我哋進入下一步一個好關鍵嘅步驟就係咩呢，點樣，將，雞翼呢條中骨起出嚟跟住我哋樣嘢入去呢，咁我哋有兩三個少少，要門呀同大家就分享下，攞出嚟啦，有睇開我起全雞我都成日講呀，關節埋手，關節埋手，咁我哋打咗隻雞翼，我哋喺雞翼，取呢個上半部畀你攞把剪出嚟我哋喺度剪落去，喺度剪。</p></a>
+				<a href="#00:03:14.94" id="00:03:14.94" class="lt" onclick="jumptoTime(194, this.id)"><p>剪到啦，關鍵呢個位，關節呢個位呀，咁我哋慢慢，關節呢個位，慢慢咁樣剪，攞把細嘅刀仔慢慢挑都得嘅，呢個位呀，白色呢個，我哋然之後咁樣剪落去，咁咪剪開咗啦，剪開咗之後咁我哋啦，我哋就唔好向底下我哋就向上剪，盡量保持多啲雞皮，喺呢度好嗎，咁咪起咗出嚟啦，跟住我攞返個中翼，攞返上嚟，白色，雞骨呢個位呢度呀咁我哋反咗塊。</p></a>
+				<a href="#00:04:14.34" id="00:04:14.34" class="lt" onclick="jumptoTime(254, this.id)"><p>雞皮出嚟，咁我哋沿住呢度呀，攞到尖嘅膠剪，我哋慢慢剪落去，唔好心急，慢慢呢度，慢慢慢慢剪，咁目的呢，都係等佢即係黐住，雞轉彎位呢度呀，軟骨呢個位呀咁我哋就剪開佢，剪到咁剪到啦成個雞皮吞咗出嚟之後呢，我哋我哋咪偷偷去啦，咁樣雞肉中間呢其實有兩舊骨嘅，咁我呢兩舊骨呀，咁我哋攝把架剪落去，呢度中間呢度。</p></a>
+				<a href="#00:05:1.00" id="00:05:1.00" class="lt" onclick="jumptoTime(300, this.id)"><p>咁我剪一下，剪一下啦，咁我哋搵隻手呀慢慢吞落嚟，咁我哋唔好心急，我諗我哋慢慢吞慢慢吞慢慢吞，慢慢吞慢慢吞慢慢吞，咁吞到落去最低呢個位呢度呢呢度就好簡單呀，我哋，揸住其中一條骨，咁我哋咬一咬佢，成條骨就會拎佢出嚟喇喎，跟住到處理另外一條骨啦我哋又將所有，肉吞到落嚟，咁我哋揸住，雞翼尖嗰個位置呢咁我哋一咬。</p></a>
+				<a href="#00:05:44.52" id="00:05:44.52" class="lt" onclick="jumptoTime(344, this.id)"><p>一萌，第二條骨咁我拎佢出嚟，咁我哋慢慢將隻雞翼咁吞返出嚟，咁我鋪返畀大家睇下，咁咪完成啦，咁跟住處理雞腿呢個位呀，雞腿呢個位呀就相當，之簡單，我哋又喺度，剪斷，跟佢啲位呀跟住，攞把剪，咁我哋慢慢，將所有嘅肉呀，掛曬落嚟呀，咁咪成日雞腿㗎嘛，保留返啲骨喺度，咁係咪真係好努力呀，咁有睇開我嘅視頻我成日都講呀，烹調主食我哋好多時都要講方法嘅。</p></a>
+				<a href="#00:06:40.58" id="00:06:40.58" class="lt" onclick="jumptoTime(400, this.id)"><p>有識切嘅方法咁你咪帶嚟一個方便囉，做呢個糯米釀雞翼，最緊要就起咗個骨出嚟呀，啖啖肉呢度呀，咁我哋就攞返包珍珠雞出嚟呀咁佢個室溫嗰度呢都，攤咗十零分鐘呀，咁我哋就攞一隻出嚟先，打開佢，而家都，好乾身嘅喎唔係好削㗎喎，咁我呢度就，開三份啦，因為雞翼呢，都不要讓它太過脹，太過脹的話，它很容易會爆，我們就拿一塊出來。</p></a>
+				<a href="#00:07:31.62" id="00:07:31.62" class="lt" onclick="jumptoTime(451, this.id)"><p>我們把三份一件放在湯匙上，這裡呢，我們輕輕地翻出來，然後呢，用湯匙把它們放在一起，慢慢地把它們推進去，然後呢，用湯匙把它們推出來，我們用手幫忙，這樣，慢慢地把它們推進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:3.82" id="00:08:3.82" class="lt" onclick="jumptoTime(483, this.id)"><p>這樣，一推進去之後呢，我們就把雞皮拿出來，再用手這樣推進去，務求把它們推到脹身，然後我們準備幾支牙籤，這個牙籤呢，我們用一個穿針的方式，先把這個戳進去，然後穿過去，這邊也穿過去，如果有水草的話，用水草綁也可以，如果我們在外面做，用廚房的白繩子綁起來，這樣我們就不會掉皮，穿好之後，這個模樣就是這樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:55.76" id="00:08:55.76" class="lt" onclick="jumptoTime(535, this.id)"><p>中翼都弄好了，雞翼也煮好了，我們進入下一步，一步到位的醃肉環節，我們先把醃肉汁拿出來，看看裡面的成份，成份當中呢，最重要是要有頭抽，頭抽的主要作用呢，是令到肉類的鮮味更加提升，接著還有蒜蓉和洋蔥蓉，兩者的作用呢，都是可以將雪肉裡面剩餘的雪味去去除，還有裡面的香料的香味，將它們拌勻後，香味更加提升。</p></a>
+				<a href="#00:09:45.05" id="00:09:45.05" class="lt" onclick="jumptoTime(585, this.id)"><p>裏面還有果糖果酸，果糖果酸的作用是，令到肉質更加鬆軟和更加快入味，酒的作用也是令到整個醬汁，味道更加昇華，一支醃肉醬汁，豬牛雞，樣樣都佳能，我太太日常還用來煮菜，煎，炒，蒸，煮，樣樣都可以，用它相當簡單，用之前要將它搖勻，因為還有洋蔥和蒜，將它搖勻，約一隻雞翼落一個湯匙，我這裏有四隻，所以我每邊落兩個湯匙。</p></a>
+				<a href="#00:10:40.59" id="00:10:40.59" class="lt" onclick="jumptoTime(640, this.id)"><p>1，2，1，第四個湯匙，落了之後，將整隻雞翼塗勻，然後放置十五分鐘便可以，這邊也是一樣，這樣便可以了，其他任何調味料都不用落了，雞翼和雞腿已醃了五、六分鐘，這段時間我們將氣炸鍋取出來，將它預熱十分鐘，當氣炸鍋夠熱的時候，我們便將它取出來，小心手，不要碰到它，然後我們逐一放進去，將雞翼的表面部份先燒。</p></a>
+				<a href="#00:11:55.63" id="00:11:55.63" class="lt" onclick="jumptoTime(715, this.id)"><p>將它放好，然後取汁放入氣炸鍋，倒數180度，時間5分鐘，先把第一面燒一下，最後一分鐘了，拿出來看看，哇，接著把糯米雞翼反轉，這時拿一個掃出來，碟底剩下的醃肉汁，就掃一點，塗在雞翼上，不要浪費，當燒烤醬用，放回氣炸鍋，保持180度，這邊也是5分鐘，開始，雞翼反轉，另一邊也燒了5分鐘，先拿出來看看。</p></a>
+				<a href="#00:13:29.21" id="00:13:29.21" class="lt" onclick="jumptoTime(809, this.id)"><p>剛剛響鐘，我常說，看雞翼熟不熟，看它脹不脹身就知道，特別是雞中翼，是不是呈現了剛剛說的，糯米不要太飽滿，如果太飽滿，就已經爆了出來，現在就很好了，現在就把它反轉，反轉後，剩下的醃肉醬汁，塗在雞翼表面，第一，讓它顏色更好，第二，讓它味道更好，不要浪費，最後放回氣炸鍋，我們用200度。</p></a>
+				<a href="#00:14:30.80" id="00:14:30.80" class="lt" onclick="jumptoTime(870, this.id)"><p>時間兩分鐘，目的就是用高溫把雞翼的表面弄一下，讓它有些乾身、有些脆身，那一間又到了最後一分鐘了，拿出來看看，嘩，OK的，一拿出來已經是香味十足了，現在先把牙籤拔掉，一個殿堂級的糯米釀雞翼就呈現在眼前了，大家聽到它的名字就知道原來很複雜，其實不是很複雜，只是知道改雞翼的竅門，用一些一步到位的醃肉醬汁。</p></a>
+				<a href="#00:15:16.46" id="00:15:16.46" class="lt" onclick="jumptoTime(916, this.id)"><p>手到拿來，這個菜式絕對適合一家人吃的，特別是小朋友吃的，有興趣的朋友一定要看片尾，片尾是怎樣的呢?</p></a>
+				<a href="#00:15:38.46" id="00:15:38.46" class="lt" onclick="jumptoTime(938, this.id)"><p>剪一剪中間給大家看看，最美的模樣，多美啊，今天的分享就到此為止了，謝謝收看。</p></a>
+</div>
+	</body>
+</html>

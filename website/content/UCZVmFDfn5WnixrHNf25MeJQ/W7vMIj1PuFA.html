@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉蒸蛋糕 點樣做到鬆軟 充滿蛋香 簡單易做 人人做得到 小朋友至愛長者餐單</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'W7vMIj1PuFA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉蒸蛋糕 點樣做到鬆軟 充滿蛋香 簡單易做 人人做得到 小朋友至愛長者餐單</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.50" id="00:00:13.50" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好各位海外嘅網友頻道會員網友，Facebook職人吹水群組嘅網友大家好呀，上次做完個白糖糕之後真係引到好大迴響呀，咁好多網友都上載咗自己一啲好優秀嘅作品呀，咁我自己都係有啲係相當之開心呀因為做一個鬆軟嘅白糖糕呀，真係有幾高技巧嘅，咁我上次做白糖糕嗰陣時都講過啦。</p></a>
+				<a href="#00:00:54.98" id="00:00:54.98" class="lt" onclick="jumptoTime(54, this.id)"><p>咁我哋，喺鄉下食白糖糕啦仲會撚埋一隻糕食㗎，咁今次又唔係話同大家做一隻糕，咁我哋，咁呢隻都係咁上下類似嘅做法，但係就偏向打味重啲呀，咁你屋企呀人最近，有生日嘅咁呢個就啱曬啦，咁呢個都係我哋以前細個個味道呀咁嘅材料就唔好複雜嘅，雞蛋三隻呀，有啲，紅糖，低筋麵粉，咁材料就簡單到無論呀，整蛋糕都係有少少份量同埋材料嘅咁今次就同大家分享一個。</p></a>
+				<a href="#00:01:46.96" id="00:01:46.96" class="lt" onclick="jumptoTime(106, this.id)"><p>最基本嘅蒸蛋糕呀，咁我哋三隻雞蛋咁我哋約落幾多粉咁上下啦，咁我哋約落50，60都冇乜所謂嘅，咁我哋就視乎你啲雞蛋呀大隻呀咁上下啦，咁我啲湖北蛋都幾大隻㗎我就約落60個，低筋粉落去，咩低筋粉呀低筋麵粉呀嘛一定係，稱咗佢60，咁麵粉清好咗之後呢咁又好緊呀咁我就，青麻沙糖，咁樣去返零先。</p></a>
+				<a href="#00:02:37.81" id="00:02:37.81" class="lt" onclick="jumptoTime(157, this.id)"><p>咁沙糖藥膜就，30 gram到呢度咁上下啦，咁我食甜啲就可以落多少少嘅，沙糖量好咗之後，30 gram多少少啦30至40都冇問題嘅咁就視乎自己，甜度啦，即使去到40 gram都唔會太甜㗎呢個，咁跟住我哋而家就處理埋啲蛋先，咁做呢個蛋糕都係相當之簡單易做㗎如果屋企呀，有電動嗰啲打蛋器呢。</p></a>
+				<a href="#00:03:19.81" id="00:03:19.81" class="lt" onclick="jumptoTime(199, this.id)"><p>咁就，唔需要用我今次嘅方法啦咁我成隻雞蛋去做就已經ok呀咁如果好似我咁樣，成日玩埋你嗰啲咩手打400萬次嗰啲咁樣，咁我哋咪分一分佢囉，我哋將蛋白同埋蛋黃，將佢分開佢先，要留意一樣嘢喎，蛋白呢隻碗一定唔好有油唔好有生水要乾淨嘅，因為有睇開我整嗰啲手打400次，或者整嗰啲呀，西多士咁我都曾經有打過呢啲㗎。</p></a>
+				<a href="#00:04:2.05" id="00:04:2.05" class="lt" onclick="jumptoTime(242, this.id)"><p>或者呀焗雪山呀打蛋白呀咁樣都講過呀，一有以上嗰啲，有水呀，有油呀咁你打唔起㗎，咁而家啦我哋就，落曬啲蛋白落去先，蛋白嘅份量呢都算幾多下，蛋白準備好之後呢，攞返個叉或者我哋攞返啲，打蛋器出嚟呀咁我而家我哋就發佢咁我哋就盡量，蛋白就發起佢呢個就爭少少我都係攞返支叉出嚟好啲，叉出嚟呀咁我哋都係要抹乾淨佢。</p></a>
+				<a href="#00:04:46.33" id="00:04:46.33" class="lt" onclick="jumptoTime(286, this.id)"><p>咁我哋咪打囉，係用一個全蛋法嘅，點解之前打呀即係連埋蛋黃一齊落去打呀咁咪點打，快啲打啦，幾兄弟咁樣輪流輪流打下輪流打下咁樣，屋企人，長輩唔識用呢啲分蛋法啦呢啲分蛋法啦都係烹調技巧之一嚟㗎，好多識做蛋糕嘅都知㗎，咁我哋就畀啲心機時間啦咁而家都係爭400萬次，咁上下啦咁我哋就打起佢先，我都唔知你部機影唔影嗰啲白色呀成日都影唔到啲白色呀。</p></a>
+				<a href="#00:05:38.99" id="00:05:38.99" class="lt" onclick="jumptoTime(338, this.id)"><p>打咗一分鐘咁上下咁我哋嗰啲沙糖呀，我哋會到一半落去嘅咁而家我哋就落三分一啦，蛋白呀，新鮮蛋會打啦啲蛋白呢會比較容易打啲，咁樣如果夠凍有少少沙糖呀佢就會比較容易打得起，咁樣有啲網友話點樣成日打用機打都打唔起呀你蛋白，即係唔係太耐呀第二你咪有油呀話有水呀，第三你部機打得太過耐呢打起咗啦佢又會打返轉頭喎，咁我哋就打咗咁上下。</p></a>
+				<a href="#00:06:26.07" id="00:06:26.07" class="lt" onclick="jumptoTime(386, this.id)"><p>咁我哋又再落多少少落唔好落曬喎，呢度呢我哋溝啲蛋黃嗰度嘅咁樣咪繼續呀，做出嚟會個顏色靚少少啦有咩用沙糖都得㗎，咁我打咗一陣呀你話手軟未啦都未手軟㗎因為我哋都，九經訓練呀話咁我哋就盡量將啲蛋白咁樣打起佢，落返去，一路吹一路打咁咪唔係幾理想呀咁我等我打埋先，一輪努力之後你話得未啦，未得㗎。</p></a>
+				<a href="#00:07:14.99" id="00:07:14.99" class="lt" onclick="jumptoTime(434, this.id)"><p>打得喺個機會呀就一半一半呀因為佢都比較水呀休息陣先，咁啫先啦，咁我飲啖啡個樣靚仔啲呀嘛飲完嘢，雖然睇唔到樣但係聽把聲都聽到㗎嘛，經過一輪努力之後呢而家都係約打咗，幾分鐘呀，咁上下咁ok喎最好你拉上嚟嗰陣時呢，成條角咁黐住咁就更加理想呀差唔多㗎啦，約打咗30秒咁就差唔多喇喎，咁最基本係乜嘢啦咁你咪擺咗個頭嗰度啦佢倒唔到落嚟咁咪為之標準呀咁而家你擺。</p></a>
+				<a href="#00:08:2.34" id="00:08:2.34" class="lt" onclick="jumptoTime(482, this.id)"><p>先，咁跟住到處理蛋黃呀，我哋正如嗰啲，砂糖咁咪倒曬落去啦，咁我哋加返六個湯匙倒嘅牛奶落去，咁你個你個水份呀，即係嗰啲液體嘅水份呀你未必要落牛奶呀你落水都得㗎甚至你落，其他味道都可以㗎，有啲班蘭汁呀或者班蘭香精呀咁樣你加你，都可以㗎咁我哋又稍為將個底搞唔係先，我哋又將啲低筋麵粉呀就慢慢，西馬落去。</p></a>
+				<a href="#00:08:49.70" id="00:08:49.70" class="lt" onclick="jumptoTime(529, this.id)"><p>一定要過篩嘅，咁我個細個作用乜嘢呀，一來，就等佢又話少少啦以來你過篩過程之中呀咪麵粉呀佢都會打咗少少空氣落去，同時亦會將嗰啲，好粗嗰啲麵粉咁樣篩一篩佢啦，真係唔會好大粒嗰啲，冇冇呢啲咪都係咁ok啦，咁跟住啦，我哋就將佢，搞勻佢咁ok呀，如果有啲膠刮就最好啦我有冇呀都有膠刮喺度呀，咁落奶嘅作用都係等佢。</p></a>
+				<a href="#00:09:28.38" id="00:09:28.38" class="lt" onclick="jumptoTime(568, this.id)"><p>即係香滑少少呀，咁樣我哋細個嗰陣時就冇奶㗎啦，就咁用水呀佢清蛋糕呀真係好香蛋味呀，咁樣大家唔落奶落水都冇問題呀咁你咪將，慢慢就將佢混和曬先，咁我哋仲有一樣嘢要落㗎，大家都好清楚呀要攞乜嘢咁我哋而家就，將呢啲就全部搞唔係啫，咁我哋就唔好好勁咁樣搞，我哋混和佢就ok呀唔好搞到佢起筋呀，搞到睇唔到嗰啲粉粒。</p></a>
+				<a href="#00:10:13.06" id="00:10:13.06" class="lt" onclick="jumptoTime(613, this.id)"><p>到最後我哋落油，幾多油呢，幾多隻雞蛋就落幾多個湯匙啦，咁我三個雞蛋咁我咪落三湯匙落去囉，咁我盡量用啲，淡味呢個油會比較好啲嘅，唔好搶咗佢，蛋糕嗰啲味呀嘛，咁你話將啲油呀同埋啲，蛋漿，混和佢，有個作用呢就等我蛋糕有個滑度呀嘛，將啲油都混和曬入去裏面之後呀，咁我哋就攞返啲蛋白出嚟，咁我哋就。</p></a>
+				<a href="#00:11:1.46" id="00:11:1.46" class="lt" onclick="jumptoTime(661, this.id)"><p>處理咗啲蛋白先，咁我哋就不少少落去，咁我哋就慢慢掛，呢個蛋糕嘅鬆軟呢就係靠個蛋白呀所以呢我哋就唔好勁搞佢，我哋又輕輕手，整蛋糕，真係好似對住另一半咁樣呀，畀個愛心佢囉，當佢混和到咁上下呢，咁我哋就，將呢度攞過嚟，咁我哋就，將所有嘅蛋白，就倒曬落去，咁我哋就喺呢邊就慢慢，溫柔，第二。</p></a>
+				<a href="#00:11:46.00" id="00:11:46.00" class="lt" onclick="jumptoTime(706, this.id)"><p>就將佢半雲，畫側邊就一路轉，咁我睇到冇曬白色嘢咁就ok㗎喇，咁你個蛋糕呀最基本嘅做法，咁可以，蒸呀，今次就用最傳統嘅蒸呀咁就可以用焗爐去焗啦，又係可以做一個紙杯蛋糕，去焗，氣炸鍋去焗都可以嘅，做紙杯蛋糕又會好啲呀或者，擺個平少少氣味喺個氣炸鍋嗰度焗呀都可以，有焗爐呀，咁我攞返啲焗蛋糕嗰啲盤呀可以得嗰啲盤呢就會更加理想。</p></a>
+				<a href="#00:12:31.46" id="00:12:31.46" class="lt" onclick="jumptoTime(751, this.id)"><p>如果蒸蛋糕呀攞碟蒸又得，攞一個類似呢啲碗，窄窄長長呢啲碗去蒸都ok呀，咁我又鋪返少少，蛋糕紙喺底呀，如果大家有嗰啲蛋糕盤就唔使咁麻煩㗎啦咁我都係，整兩張窄窄長長咁塞咗落去務求即係等，間出嚟嗰陣時就易出少少呀咁樣咁我哋就整好佢先啦，唔落都得㗎查少少油喺底呀咁而家啦我哋就好簡單，我哋就將所有混和好曬嗰啲。</p></a>
+				<a href="#00:13:19.84" id="00:13:19.84" class="lt" onclick="jumptoTime(799, this.id)"><p>蛋糕漿呀，就慢慢倒曬落去，倒到，睇下啦應該就八成到就ok呀如果太滿呀，佢會迫曬出嚟㗎，差唔多啱啱好，咁蛋糕將準備好曬之後咁我哋就二話不說呀，咁我哋呢邊就開咗火去先，跟住呀少搵啲水呀，隨即就，擺落去蒸呀，咁咪約蒸，25至30分鐘咁上下咁我哋又調返個中火蒸就可以呀咁我蒸呢一蛋糕唔使咁大火嘅，咁正緊嗰陣時再同大家吹多兩嘴呀凡係蒸嘢蒸超過十。</p></a>
+				<a href="#00:14:14.68" id="00:14:14.68" class="lt" onclick="jumptoTime(854, this.id)"><p>十零分鐘嘅喺隔離煲定少少水，或者燉嘢呀，或者整啲梅菜扣肉呀咁我哋，咁上下我都正羅拔高要補充返啲水分，咁呢個蛋糕醬呀正如頭先所講就係話，如果我哋唔精咁呀入去焗爐咁我哋係點樣焗呀都係用180度，倒，焗佢25至30分鐘，如果大家有嗰啲蛋糕冇嘅咁咪攞啲蛋糕冇咪就咁成日攞如果大家冇嘅，可以攞個邊邊平平嗰啲器皿亦係都可以嘅。</p></a>
+				<a href="#00:14:52.82" id="00:14:52.82" class="lt" onclick="jumptoTime(892, this.id)"><p>咁樣，上高如果用焗爐嘅咪鋪返少少石子囉，我建議大家就，用嗰啲入得焗爐嗰啲紙杯呀好似焗人哋嗰啲合圖蛋糕㗎嘛嗰啲，紙杯呀，勇氣炸鍋啦細細杯咁樣焗呀，個效果都唔錯嘅，甚至乎，乜都冇最簡單，打落個電飯煲，或者而家嗰啲智能萬用鍋亦係都可以嘅，相當之方便，大家有個嗰啲焗爐啲冇呀，咁亦係都可以喺呢個份量嗰度呀。</p></a>
+				<a href="#00:15:38.14" id="00:15:38.14" class="lt" onclick="jumptoTime(938, this.id)"><p>加多藥，三分一茶匙嘅拋打粉落去，咁樣佢，焗出嚟啦即係，窄窄長長嗰啲啦佢仲會覺得發得會比較好啲，比較鬆軟啲，咁樣以上嘅材料呀而家嗰啲好多嗰啲烘焙店呀，蛋糕店呀都有得買㗎，咁呀就相當之多人呀我之前上去間烘焙店，買想話買少少嘢太多人呀我都冇入去買呀，保持著中火咁我而家約蒸咗，20分鐘咁上下啦大家睇唔睇到裏面。</p></a>
+				<a href="#00:16:30.90" id="00:16:30.90" class="lt" onclick="jumptoTime(990, this.id)"><p>呢度唔係好清楚呀已經高好多呀，我頭先落嗰啲粉漿開咗時呢得八成呀而家呢就已經係突曬出嚟㗎，咁呢啲咪叫做步步高升呀，生日快樂咁咪呢啲呀，雖然用啲好，簡便嘅材料，但係如果你做一個蒸蛋糕畀屋企人食呀一份心思㗎嘛，咁我約莫蒸咗30分鐘咁我而家就慢慢打開蓋話大家睇下，咁樣清楚啲，係咪Happy birthday啦。</p></a>
+				<a href="#00:17:15.96" id="00:17:15.96" class="lt" onclick="jumptoTime(1035, this.id)"><p>咁我哋點樣取決於佢熟唔熟咁你唔需要問我嘅道具已經攞出嚟啦，咁我哋就喺正中間嗰度呀，咩對嘅快啲落去，蚊出嚟，睇下有冇嘢黐住，有冇嘢知咗呀，冇呀嘛，南無咁我又，識火喇喎，咁大家睇到啦，到內㗎時候，都係得七成八成呀佢家去蒸好咗之後呢佢會漲咗好多出嚟，但係我哋攤一攤佢啦，佢就會，縮返少少落去。</p></a>
+				<a href="#00:17:51.54" id="00:17:51.54" class="lt" onclick="jumptoTime(1071, this.id)"><p>呢個蛋糕呀，我都係建議大家，就攤凍佢，先好，摸佢浸紙，你家摸呢，佢就好容易阿龍燒炮呀咁就散曬㗎啦，已經聞到，一陣好清香嘅，蛋糕味呀，咁我哋以前細個呀有隻叫做，紙包蛋糕呀，而家出去嗰啲啲包餅點呢就好少真係見到，一個個嗰啲紙包蛋糕除非你去返啲好舊式嗰啲啦，咁我哋自己都好懷念呢種味道嘅，咁今次做。</p></a>
+				<a href="#00:18:33.28" id="00:18:33.28" class="lt" onclick="jumptoTime(1113, this.id)"><p>呢個蒸蛋糕啦佢唔複雜嘅，咁我大家咪可以試下囉，我而家已經好想食呀，咁正如我頭先所講呀，呢個蛋糕呀我原材料係唔貴呀同埋好簡單，最貴，就係嗰份心意呀嘛心意係無價嘅，咁大家咪，攞少少時間出嚟，整個蛋糕，咁樣屋企人有人生日有小朋友生日或者屋企有，老人家有長者生日呀咁樣咪可以整個蛋糕咁呀又可以，兩下囉。</p></a>
+				<a href="#00:19:12.74" id="00:19:12.74" class="lt" onclick="jumptoTime(1152, this.id)"><p>至於裏面糖嘅比例呀，油嘅比例呀如果老人家食嘅咪可以著量減少囉，咁今日分享就到此為止啦咁樣，咁我食紙包蛋糕網友訂閱職人吹水頻道，冇鐘意合圖蛋糕點呀，咁你加入我頻道會員繼續吹水呀，咁我就攤凍佢一陣間我就食嘢啦今日分享到此為止多謝收睇，下條影片再同大家出個拜拜，我幾時都講呀識睇就一定睇片未呀，攞咗佢出嚟先。</p></a>
+				<a href="#00:19:52.42" id="00:19:52.42" class="lt" onclick="jumptoTime(1192, this.id)"><p>咁樣，而家都好容易，整開佢咋嘛，咁就，切少少畀大家睇下，咁我哋呢度就開咗內先，咁呢個蛋糕呀，蒸，25分鐘就已經足夠30分鐘呢咁我有少少，多少少，你喎，大家，送送軟，嘩而家嗰啲蛋糕嘅香味呀滲曬出嚟呀，咁我就真係先啦多謝收睇。</p></a>
+</div>
+	</body>
+</html>

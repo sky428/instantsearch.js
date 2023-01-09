@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 皮爽肉嫩 海南雞飯  How to make Hainan Chicken Rice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Gj2Nbx91ORM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 皮爽肉嫩 海南雞飯  How to make Hainan Chicken Rice</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>очно，English，undy，Const để，VOICES，glove，Pedro，até，uniformly，Серг，exist，but，стр TA，aru，нет zaj，Daisy，將它放在當風位置，先吹涼，大家好，又係星星同大家職人吹水，星星，影住棵蔥做什麼?大家看清楚，不是蔥來的，這棵是香茅來的，夫子肉出，你又煲什麼香茅檸檬薏米水。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:49.90" id="00:00:49.90" class="lt" onclick="jumptoTime(49, this.id)"><p>今日和大家分享這和雞有關的菜式，做個海南雞飯和大家分享，做海南雞飯有什麼材料呢?這棵是蔥來的，這不是蔥，這叫斑蘭葉，這是香茅，這是檸檬葉，這是南薑，這是乾蔥，海南雞飯要分兩部分做，第一部分處理雞，取雞湯浸雞，今日這三黃雞超過兩斤，約一公斤多，第一步用淡鹽水浸雞去除雪味，雞要鬆到一定狀態，浸了十分鐘後剪腳出來。</p></a>
+				<a href="#00:02:0.90" id="00:02:0.90" class="lt" onclick="jumptoTime(120, this.id)"><p>在轉彎位底下，剪了兩隻腳後處理雞肥膏，這肥膏要挖出來洗淨保留，這雞油很有用，將雞肺完全挖乾淨，浸雞肺會影響雞的生熟程度，所以一定要洗乾淨和挖清，我和大家說過，還有一個很重要的竅門，在雞胸和雞頸中間位置開個洞，開這個洞有什麼作用呢，方便浸雞時，讓雞在雞胸內有對流作用，雞浸出來會好看很多，這也是烹調的小竅門。</p></a>
+				<a href="#00:03:5.94" id="00:03:5.94" class="lt" onclick="jumptoTime(185, this.id)"><p>雞洗淨將雞朗向下，瀝水。</p></a>
+				<a href="#00:03:11.94" id="00:03:11.94" class="lt" onclick="jumptoTime(191, this.id)"><p>準備約3-4公升水浸雞，香麻頭部拍鬆放下去，南薑放3-4片，斑蘭葉和檸檬葉放下去，煲5分鐘才放，拿碗出來放些凍清水，半茶匙黃薑粉，為何要用凍水開呢，因為熱水或煲熱湯放黃薑粉不會溶，開了，黃薑粉開後倒入浸雞的水，雞湯完成，不用鹽，開始浸雞，第一步燒滾水放雞，雞放下去過熱水便收縮，做一隻雞皮爽肉嫩這步驟很重要。</p></a>
+				<a href="#00:04:32.94" id="00:04:32.94" class="lt" onclick="jumptoTime(272, this.id)"><p>準備凍水，放雞，令雞皮更爽身，現在開始浸，湯滾了，放雞，看到這位置有氣泡嗎，水滲入雞湯取起，等雞湯的水滲出來，再放下去，這個釣水動作做三四次，務求將雞胸內的水和溫度達至水一模一樣，雞浸出來才靚，再放下去，放下去，這一面收火浸30分鐘，現在雞浸了半小時，開火，星星，怎樣衡量浸雞湯的溫度?</p></a>
+				<a href="#00:05:55.22" id="00:05:55.22" class="lt" onclick="jumptoTime(355, this.id)"><p>要保持雞湯60-80度之間，這隻雞約兩斤重多些，浸約1小時，現在坊間有很多慢煮棒，如果大家有慢煮棒便調到約70度。</p></a>
+				<a href="#00:06:13.22" id="00:06:13.22" class="lt" onclick="jumptoTime(373, this.id)"><p>浸雞之際，準備飯配料，乾蔥，蝦米，雞油，南薑，檸檬葉，斑蘭葉，一粒蒜蓉，乾蔥切絲，待會用來起鑊，切完，將蝦米備用，蝦米拿少量出來，一柱仔便夠，輕輕剁碎，拿薯仔出來做什麼?</p></a>
+				<a href="#00:07:9.03" id="00:07:9.03" class="lt" onclick="jumptoTime(429, this.id)"><p>做海南雞飯當然拿薑出來，和大家分享薑蓉，外面做的薑蓉全部用機打或磨，我食的薑蓉一定是手切薑蓉，將它刮皮改好，切薄片，切到最薄，打平鋪好後切絲，切幾粗，切到最幼，量齊後切幼粒，為何薑蓉不用磨?我和大家分享過，這些手切薑蓉要自己切才可以食，在外面付錢都食不到，切到最幼，剁幾下，將薑纖維全部切斷，食到薑粒口感。</p></a>
+				<a href="#00:08:36.03" id="00:08:36.03" class="lt" onclick="jumptoTime(516, this.id)"><p>薑米切好後，約用三分一茶匙鹽，拌勻，如果喜歡食沙薑味可少許沙薑粉，我食白切雞或海南雞飯很簡單，最緊要有這手切薑蓉，全程浸了約45分鐘，開火將雞囊水倒出來反轉，雞全程浸了約1小時15分鐘，起雞，起出來的模樣放在當風位置吹凍，怎樣看雞熟不熟得透呢?用筷子篤下，如果有紅色血水出代表未熟得透，我們多數看這位置，這位置縮上去代表這隻雞基本上有九成熟。</p></a>
+				<a href="#00:09:40.41" id="00:09:40.41" class="lt" onclick="jumptoTime(580, this.id)"><p>燒熱隻鑊，放適量油，煎雞油都要落油?是呀，落雞油，放了雞油後慢慢火煎，慢到怎樣?最細火，等雞油慢慢釋出，煎雞油時開始處理飯，海南雞飯油飯都很重要，怎樣處理呢?</p></a>
+				<a href="#00:10:15.41" id="00:10:15.41" class="lt" onclick="jumptoTime(615, this.id)"><p>準備一碗米，剛才舀起一碗雞湯，洗乾淨米去瓊水，雞油怎，為何加那麼多，沒有乾蔥絲和芫茜頭，讓它香些，將配料，雞油全部舀起，將雞油澆在薑蓉，今日的戲肉不是雞，是飯，現在要煮海南雞飯，首先落蝦米，爆香蝦米，約爆一分鐘有蝦米香味釋出，落乾蔥，爆到乾蔥旁邊微焦香，落蒜蓉，慢慢火爆香，不要心急，因為蒜蓉一燶整個飯有苦味，聞到有蒜蓉香味，落米。</p></a>
+				<a href="#00:11:54.77" id="00:11:54.77" class="lt" onclick="jumptoTime(714, this.id)"><p>慢慢將所有香料味道炒紮米，先落芫茜頭，雞油一齊放下去，做海南雞飯，要油飯香，一定要將米炒香，先煮飯，這是一個關鍵竅門，聞到所有香味釋出，將米放在飯煲。</p></a>
+				<a href="#00:12:37.77" id="00:12:37.77" class="lt" onclick="jumptoTime(757, this.id)"><p>落飯煲，雞湯出凍，將雞湯倒下去，混和好後，水份遮飯面，少許便可，剩餘的香茅，南薑，斑蘭葉，檸檬葉放下去，蓋上蓋，煲飯，煲飯煲好，焗了十多分鐘，煲的時候已經很香，現在看模樣，一公出來這種香味，舀碗給大家看，雞放涼後便開了，今日用一個拆骨起肉方式和大家分享，首先在頸開刀，開了兩份後，今日食一半，另一半用鹽醃，用保鮮紙包，留明日食或後日食。</p></a>
+				<a href="#00:14:4.49" id="00:14:4.49" class="lt" onclick="jumptoTime(844, this.id)"><p>將它改，放好一份，第二份，雞腿尾部不要，將豬油放好，海南雞起完骨的模樣，剛才斬時大家看到有多嫩滑，再配合油飯，手切薑蓉，後面是什麼?</p></a>
+				<a href="#00:14:48.01" id="00:14:48.01" class="lt" onclick="jumptoTime(888, this.id)"><p>我之前在印尼峇里島買的黑豬油，甜豉油，甜甜酸酸的醬汁可以參考我上年做的涼拌雞翼，今日海南雞飯分享到此為止，喜歡食海南雞飯的網友俾個LIKE我星星，訂閱我職人吹水頻道，分享這海南雞飯，下個視頻再和大家分享，多謝收看，再見。</p></a>
+</div>
+	</body>
+</html>

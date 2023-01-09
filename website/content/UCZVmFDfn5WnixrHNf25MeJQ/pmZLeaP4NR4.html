@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉  夏枯草 清肝明目 加加糖冬瓜 清熱解暑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pmZLeaP4NR4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉  夏枯草 清肝明目 加加糖冬瓜 清熱解暑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.38" id="00:00:8.38" class="lt" onclick="jumptoTime(8, this.id)"><p>煲涼茶呢最少都要煲45分鐘至到50，開咗花咁話，煲完呢，上嗰啲渣呀，糖冬瓜，咁我又夾曬嚟食㗎，但係我就永遠都唔食，大家好又係我星星同大家職人吹水，咁又同大家吹下啲涼茶呀咁最近出街撞到好多fans話，我成日見到你都睇唔著呀睇到我睇唔著咁好，咁我有啲咩涼茶，一家大小都啱飲，咁我又同大家吹下啦咁我呢隻。</p></a>
+				<a href="#00:01:2.23" id="00:01:2.23" class="lt" onclick="jumptoTime(62, this.id)"><p>大家，叫乜嘢呀，畀我寫咗呀嘛，咁邊個寫咗呀，下枯草，任何一間涼茶店都會飲到下枯草呀大家冇見過下枯草呀，下枯草咩模樣呀，無從，唔知都以為有條無從喺度添呀，一包買幾錢呀十蚊啦，三至四人，買一包就夠啦，咁我哋第一步，開水，將下枯草，浸佢十分鐘先，咁浸佢個作用，都係將下枯草，本身表面嘅，尋開我哋浸一浸佢出嚟。</p></a>
+				<a href="#00:02:1.35" id="00:02:1.35" class="lt" onclick="jumptoTime(121, this.id)"><p>同埋一浸水呢，佢又會好似菜咁呀會發漲少少嘅，咁咪將，喺裏面匿藏嗰啲泥塵浸一浸佢出嚟我哋嘅嗰啲先再洗呀，咁今日煲呢個涼茶，有好多種煲法嘅下枯草，咁今日就同大家分享我細個，阿媽成日煲呢個方法，咁我之前煲涼茶都成日落，羅漢果呀或者落其他嘢糖呀中女糖呀，咁我細個嗰陣時阿媽煲下枯草，大家知唔知你咩。</p></a>
+				<a href="#00:02:36.93" id="00:02:36.93" class="lt" onclick="jumptoTime(156, this.id)"><p>寫咗啦糖冬瓜呀，咁我就會加一手嘅，黃豆，呢啲黃豆呢咁我哋拿一手落去啦，沖沖水跟住浸佢呢度而家浸咗差唔多一個鐘頭咁上下，下呼吐浸了五分鐘大家看不看到形態，開花了，咁我哋浸佢個目的都係想佢咁樣㗎嘛佢開咗之後咁而家我哋咪，沖洗佢啦，咁我哋都係用一個，嗱嘅方式，點解呀大家仲記唔記得呀，咁我哋拿佢。</p></a>
+				<a href="#00:03:31.00" id="00:03:31.00" class="lt" onclick="jumptoTime(210, this.id)"><p>咪將，泥塵，沉曬底囉，我哋唔好倒，成盤咁樣倒落去啦咪將啲沙泥咪倒返曬落去啦，咁我哋係咁嗱，咁我哋做呢個動作啦，大約做三次，咁呀個盤底冇乜沙泥，殘留咁就ok㗎啦，拿佢囉，第三次，都仲係用同一個方法，嗰啲識出嚟嗰啲一粒粒細細粒嗰啲呀，就唔需要理佢㗎啦，下枯草，一定有，我哋最主要睇下個底嗰度呢唔好話有冇，沙泥。</p></a>
+				<a href="#00:04:15.54" id="00:04:15.54" class="lt" onclick="jumptoTime(255, this.id)"><p>冇呢咁就已經ok㗎啦，下枯草洗乾淨曬之後呢咁我哋三至四人份量我哋又準備，2.5至3公升嘅水呀咁我哋咪將下烏草攞曬落去囉，跟住，我哋倒埋啲黃豆，連埋水一齊放落去，跟住我哋放埋糖冬瓜，呢度一包呢，就300克，咁我落200度就差唔多甜到就視乎大家鍾意呀咁，落淨幾條啦有咩用呀就咁食囉，而家咪開始煲囉。</p></a>
+				<a href="#00:05:4.70" id="00:05:4.70" class="lt" onclick="jumptoTime(304, this.id)"><p>咁我哋，煲到去水滾計數，收慢火，煲佢，45分鐘，煲涼茶呢最少都要煲45分鐘至到50，分鐘先發揮到涼茶應有嘅功效，剛剛開始滾啦咁我哋收慢少少個火，咁我哋慢慢將蝦枯草所有材料我哋慢慢撳返曬落去，我哋用蝦眼水呢個時間再煲佢45分鐘，15分鐘，已經煲咗50分鐘咁我哋睇下個模樣先，全程差唔多煲咗一個鐘頭呀。</p></a>
+				<a href="#00:06:3.54" id="00:06:3.54" class="lt" onclick="jumptoTime(363, this.id)"><p>強調煲涼茶一定要有足夠嘅火，涼茶，如果你唔夠火，或者，開大啲個火係咁滾係咁滾滾咗十零廿分鐘嗰啲涼茶呢，入口呀，就喼喉嘅，亦係發揮唔到涼茶應有嘅功效，咁呢個下呼吐煲糖冬瓜呢，絕對係一家大細都啱飲嘅呢個涼茶，阿媽煲呢個涼茶呢，煲完呀，上嗰啲渣呀，糖冬瓜，咁我又夾曬嚟食㗎但係我就永遠都唔會食啲豆嘅，你多啲食啲豆呀啲豆有益㗎呢細路仔邊度鍾意食豆呀。</p></a>
+				<a href="#00:07:5.76" id="00:07:5.76" class="lt" onclick="jumptoTime(425, this.id)"><p>糖冬瓜就會食㗎，但係而家我就好鍾意食啲豆㗎，畀大家睇下睇下，真係有幾濃郁呀，出街飲就冇咁濃㗎啦啲涼茶，佢輪得嚟仲係，潤喉喎嘛，下呼吐涼茶好多人都耳熟能詳呀煲糖冬瓜黃豆，更加適合一家大細飲用，咁我仲有下呼吐網友，畀個like我星星，訂閱我職人吹水頻道，幫我分享下呢個，下呼吐煲糖冬瓜，咁我就同個女飲涼茶先啦咁多謝收睇。</p></a>
+				<a href="#00:07:56.61" id="00:07:56.61" class="lt" onclick="jumptoTime(476, this.id)"><p>下個視頻再同大家吹過，拜拜。</p></a>
+</div>
+	</body>
+</html>

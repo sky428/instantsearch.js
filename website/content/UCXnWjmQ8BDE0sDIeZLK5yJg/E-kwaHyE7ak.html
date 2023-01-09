@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【實測】 BBC炒飯！其實錯唔晒？幾好食？ [Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'E-kwaHyE7ak',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【實測】 BBC炒飯！其實錯唔晒？幾好食？ [Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，trucks，pontos，oversized，次，paljon，eding，先把電池拿出來，我們來吧，看到一個這麼差的炭，你就知道我們今天有苦介紹，也是萬眾期待，我們的試食譜系列，但這次不是試書，就是試一個大家應該都很熟悉的食譜，應該每一個人都看過，就是BBC教你炒中式炒飯。</p></a>
+				<a href="#00:00:39.35" id="00:00:39.35" class="lt" onclick="jumptoTime(39, this.id)"><p>網上就說一定是錯的，就是錯得離譜，然後每一個人都負評，又說毀滅了中式炒飯，但是我們覺得很中性，沒有試過就沒有權批評，你怎麼知道不好吃呢，是不是，可能很好吃呢，所以我們今天一起來試試，第一件事，他們最重要的，當然是飯，飯是車司，但是其實他們買到的米，和我們在香港買到的米，其實是一個完全不同品種的米，我們平時吃中式。</p></a>
+				<a href="#00:01:14.85" id="00:01:14.85" class="lt" onclick="jumptoTime(74, this.id)"><p>可能會吃泰國絲苗米，小小粒的就叫珍珠米，珍珠米就是來自日本種，可能中國會有種，台灣自己會有種，這一種就厲害了，他們用的那種就叫做印度長米，有些是很長很長很長的，然後畫面看到，就是再另外一種，Basmati，我就跟著他們網上的食譜，找回一包這樣的米回來，才拍的，這一包東西，你猜猜多少錢。</p></a>
+				<a href="#00:01:51.85" id="00:01:51.85" class="lt" onclick="jumptoTime(111, this.id)"><p>我們平時買可能5kg，可能買3kg，可能60元，可能3kg，貴可能是80元那些，這一包東西1kg，買了85元，這個超級豪華的炒飯，不過事不宜遲，因為其實我做過資料搜集，其實在很多印度巴西，還是那些地方的人，其實他們是真的這樣煮米的，他們是會多水煮一煮，然後過冷河沖的，因為米的質地不同，其實就是澱粉質的比例。</p></a>
+				<a href="#00:02:29.85" id="00:02:29.85" class="lt" onclick="jumptoTime(149, this.id)"><p>或者他可能會釋出澱粉質多還是少，為什麼日本人洗米要洗那麼多次，要洗5次呢，就因為他們喜歡沖走表面，米外面那層澱粉質，讓它變成一個很光滑的米，你吃下去，粒粒都是一粒一粒的，其實他們這樣洗，其實我覺得是有原因的，眼看下去，現在這樣看，我給一個近鏡給你們看，詳細的食譜，現在你都在畫面看到，因為是公開的。</p></a>
+				<a href="#00:02:59.85" id="00:02:59.85" class="lt" onclick="jumptoTime(179, this.id)"><p>其實這個米真的挺長的，而且米的形狀，跟我們平時吃的米，它像是一條長一點，不直一條，但我們平時吃的泰國米，中間肚子的位置會比較闊一點，那個流線型會多一點，真的比較直，好，那我們立刻跟著他的做法來試吧，先把米放好，倒米，Put the rice，in the medium sauce pan，一個類似的。</p></a>
+				<a href="#00:03:34.62" id="00:03:34.62" class="lt" onclick="jumptoTime(214, this.id)"><p>medium sauce pan，這個也大，然後就放米進去，這裡是150米嘛，然後他說要加300水，煮滾，之後就，關小火，然後再煮10分鐘就行了，對於一個沒有電飯煲的人來說，我覺得這個方法，是一個方法，多加水你不會燒焦，如果你多加水，這樣煮一個飯，你會黏底黏到瘋了，你試過就知道了，你要想像一下一個外國人是沒有電飯煲的。</p></a>
+				<a href="#00:04:10.62" id="00:04:10.62" class="lt" onclick="jumptoTime(250, this.id)"><p>關小火，蓋上蓋子，計時10分鐘，所以第一步，煮飯是OK的，是應該的，然後下一步，就是跟著他們的做法來切，其實切起來，真的剛剛好10分鐘，Red pepper，Finely chopped，二分一個，為什麼配料這麼不好吃，切了頭，切了尾，不要裡面的東西，然後擀平，這樣很容易切絲，很少切這些東西，很少切這些。</p></a>
+				<a href="#00:04:54.62" id="00:04:54.62" class="lt" onclick="jumptoTime(294, this.id)"><p>紅椒，多數都是用來做煎釀三寶，但外國是很流行的，半個，很多啊，想起都已經不好吃，看到這些東西，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，洋蔥是小洋蔥，Finely chopped，洋蔥可能有點大，我們就稍後放少一點，我們就Finely chopped它，很少人看到我拿這把大刀出來用，很少看到我用大刀大砧板。</p></a>
+				<a href="#00:05:31.44" id="00:05:31.44" class="lt" onclick="jumptoTime(331, this.id)"><p>這把刀呢，這套刀一把三把的，是我剛剛開頻道的時候，還沒有錢賺，賺不到錢很窮的時候買的，好像都買了一套三把，好像買了二千多元，不知道是買來借錢還是什麼，那時候很窮，雖然現在都沒好多，但都用了這麼久都算是，狀態還非常良好，只是跌到頭崩了，三把的頭都是崩的，這樣吧，這裡不下了，三色豆。</p></a>
+				<a href="#00:06:5.84" id="00:06:5.84" class="lt" onclick="jumptoTime(365, this.id)"><p>不是，不是三色豆，青豆他說要50g，為什麼我會說錯三色豆呢，他說要兩棵蔥，那我們就切完它吧，是不是，抽中了嗎?</p></a>
+				<a href="#00:06:26.18" id="00:06:26.18" class="lt" onclick="jumptoTime(386, this.id)"><p>還有三分鐘，冷眼，然後薑蒜，他說三粒，兩粒，其實我不喜歡加薑，但是很多人說炒飯一定要加薑，我不知道是不是，所以我覺得他的食譜都是認真，很不負責任，有沒有覺得我弄得很隨心，因為別人的食譜，炒了好像跟自己無關，好像你弄完我的食譜傳回給我那樣，他說差一點點不要緊，然後就炒了，好，Garlic，Crushed。</p></a>
+				<a href="#00:06:58.40" id="00:06:58.40" class="lt" onclick="jumptoTime(418, this.id)"><p>Crushed就是壓碎，3cm，Piece，Fresh，Root，Ginger，Peel and，Grate，就是薑蓉蒜蓉，這樣切碎它，這些都有一個好處，就是很容易做這些動作，好，時間到，時間到，我們先轉頭，免得煮壞了飯，來吧，準備，3，2，1，打開，嘩，好熱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:25.20" id="00:07:25.20" class="lt" onclick="jumptoTime(445, this.id)"><p>嘩，嘩，嘩，怎麼會乾了水，嘩，好漂亮，Perfect cooked rice，啊?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:38.70" id="00:07:38.70" class="lt" onclick="jumptoTime(458, this.id)"><p>大家怎麼看，除了有點黏底之外，有沒有人覺得我很厲害，沒問題，為什麼他煮完這麼多水，我就加了雙倍水，150，然後300，先試一口，老老實實，不知道這米本身是這樣還是怎樣，有點粗糙，好，最重要的時刻，還有，為什麼好像這麼少的份量，因為黏底黏了很多，是不是，你看，這個廚房投資了這麼久，終於有它真正的價值。</p></a>
+				<a href="#00:08:18.20" id="00:08:18.20" class="lt" onclick="jumptoTime(498, this.id)"><p>擦乾淨，我們帶好的米飯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:25.20" id="00:08:25.20" class="lt" onclick="jumptoTime(505, this.id)"><p>就準備好了，先試一口，真的硬了一點，不明白為什麼要這樣沖，但口感好像沒有改變，好，來了，接著再準備這兩隻蛋，兩隻蛋這麼多，打散它，好，萬事俱備，來得，首先第一步，下油，它說是一個茶匙，不是，一個湯匙，不夠油，雖然我瘦底，但我覺得這裡很多油，只是炒蛋下了這麼多油，Heat a tablespoon of the oil in a frying pan or wok，Over a medium heat。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:13.76" id="00:09:13.76" class="lt" onclick="jumptoTime(553, this.id)"><p>對，對了，Add the egg and cook， stirring， until scrambled，英文很好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:24.76" id="00:09:24.76" class="lt" onclick="jumptoTime(564, this.id)"><p>Scrambled，拿一張碟子，裝一些scrambled，不錯，Heat the remaining tablespoon of oil in a pan over a high heat，這次要大火了，有要求的，用完整支油，肉都沒有，但要吃30g油，但去酒樓吃也是這樣，應該會有更多油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:57.76" id="00:09:57.76" class="lt" onclick="jumptoTime(597, this.id)"><p>好，全部倒進去，它說的，Add the onion and season with salt and pepper，Salt and pepper沒有寫的，厲害，我吃到橙塔菜了，這麼大一盤，Salt，但你叫人高火，那怎麼辦?</p></a>
+				<a href="#00:10:22.76" id="00:10:22.76" class="lt" onclick="jumptoTime(622, this.id)"><p>哪裡來得及呢?</p></a>
+				<a href="#00:10:24.76" id="00:10:24.76" class="lt" onclick="jumptoTime(624, this.id)"><p>等一下，現在是香辣中式炒飯，沒關係，暫時情況不錯，Fry for 2 minutes，Add garlic and ginger，Add garlic and ginger，燒焦了，是不是要保持大火?</p></a>
+				<a href="#00:10:44.76" id="00:10:44.76" class="lt" onclick="jumptoTime(644, this.id)"><p>Fry for 30 minutes，Reduce the heat to medium，好，Dr. Rice，P，Eat being onion，燒焦了，然後調成中火，然後，薑煮蛋，先離火，然後，醬油，他說要一個茶匙，這麼大一匙醬油，我覺得出事了，這麼濕，但挺香的，老老實實，醬油味和薑味。</p></a>
+				<a href="#00:11:32.11" id="00:11:32.11" class="lt" onclick="jumptoTime(692, this.id)"><p>這個配合是真的，外國人馬上，嘩!他們是中國菜，Jacky，Bruce Lee，他們會馬上，這樣，好，是不是可以了，炒在一起，煮3.5分鐘，直到蛋煮熟，這麼久，我們炒，3.5分鐘，有沒有人覺得我的炒法，炒得非常好，看起來像可以吃，但我覺得炒得太慢，因為太濕，所以浪費時間去炒，可能我的鍋面積不夠大，蒸發得比較慢。</p></a>
+				<a href="#00:12:16.11" id="00:12:16.11" class="lt" onclick="jumptoTime(736, this.id)"><p>但夠了，差不多了，好，沒問題，完成，我覺得OK，不用看，不用吃都知道OK，裝上碟，嘩，我覺得我炒得比他們好，有沒有人認同，我的廚藝非常高，PBC欠我一個交代，簡直是米芝蓮，真的完成，好!我們這次的這個，BBC中式炒飯，就完成了，非常漂亮，我們立刻來試試看，炒完飯的比例好像也很適合，雖然看起來好像有點奇怪。</p></a>
+				<a href="#00:13:9.80" id="00:13:9.80" class="lt" onclick="jumptoTime(789, this.id)"><p>但是炒完就真的像炒飯，立刻來試試看，我只放了八分之一的鹽，以利申，挺香的，味道沒問題，口感怪到趴街，很多配料，尤其是那個紅椒，因為它很多水分，洋蔥很多水分，飯本身已經不夠硬，然後全部東西加起來好像，看起來像炒飯，但是你吃的時候好像炒雜菜一樣，裡面所有東西都是軟軟的，沒有東西是有口感的，味道沒問題。</p></a>
+				<a href="#00:13:54.78" id="00:13:54.78" class="lt" onclick="jumptoTime(834, this.id)"><p>味道真的非常中式，如果用同一個方式，你把配料切成這樣，然後用普通炒飯，這是一個好的炒飯，因為我一開始以為很鹹，它只放了鹽和醬油，但是不知道是不是因為它菜的配料超級多的關係，平衡起來，沒有東西是不鹹的，是香的，還有真的有一點點甜味，飯的口感也不怪，是那些紅椒和洋蔥，如果你真的要一個，很極速的情況下。</p></a>
+				<a href="#00:14:32.28" id="00:14:32.28" class="lt" onclick="jumptoTime(872, this.id)"><p>你要做一鍋炒飯出來，它只給你十分鐘，二十分鐘，你要做一鍋炒飯出來，其實這個方法是最好最快的方法，這樣煮完飯，當然最終不要過冷河，你直接煮完飯，直接拿去炒，十分鐘煮好飯，你放進電飯煲，你的電飯煲還沒彈，到這一刻，其實這些配料真的，這些配料真的錯了，這些配料真的錯了，全錯零分，就是這樣。</p></a>
+				<a href="#00:14:59.28" id="00:14:59.28" class="lt" onclick="jumptoTime(899, this.id)"><p>不用再吃了，但是也要吃了，遲些吃吧，今集來到這裡，記得按讚、追蹤、分享、留言、訂閱，追蹤、追加會員站，再從星期一、四、五中速點，甚至星期日都會有，下次再有這些再見吧，拜拜。</p></a>
+</div>
+	</body>
+</html>

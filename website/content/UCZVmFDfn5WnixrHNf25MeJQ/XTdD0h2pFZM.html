@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 一頭野生鮑魚 海參 瑤柱 茶樹菇 冬菇 豬展煲雞湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'XTdD0h2pFZM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 一頭野生鮑魚 海參 瑤柱 茶樹菇 冬菇 豬展煲雞湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>臨近母親節，當然要做些鮑魚給母親食下啦，有咩做法呢?去片!</p></a>
+				<a href="#00:00:19.10" id="00:00:19.10" class="lt" onclick="jumptoTime(19, this.id)"><p>大家好，我是星星师父，放这么多东西在这，都是，煮一罐鲍鱼，母亲节，煮些东西给家人吃，这种野生鲍鱼，肉质比较韧，但是鲜味十足，煮汤是一流的，煮完汤再煮，看怎样吃，今天有什么煲呢，干品冬菇，昨晚浸了它，浸之前用生粉洗一洗，再过水浸一浸到今天，茶水锅，還有一些魚肉和一塊陳皮，放入冷水中。</p></a>
+				<a href="#00:01:29.08" id="00:01:29.08" class="lt" onclick="jumptoTime(89, this.id)"><p>還有一些茶樹菇，這些茶樹菇之前煲湯時也有介紹過怎樣處理，浸泡十多分鐘後洗乾淨，洗乾淨後要拖水，拖水後再洗，再浸泡，浸到現在，把茶樹菇和水一起放進去煲，還有一些瑤柱，放進去煲，甘筍就切了，煲湯隨意切便可以，因為我家人很喜歡吃甘筍，特別是煲湯的甘筍，所以我煲任何湯都會加一些甘筍，在外面做貴價湯就不會有甘筍。</p></a>
+				<a href="#00:02:30.00" id="00:02:30.00" class="lt" onclick="jumptoTime(150, this.id)"><p>切了，拿去煲，大約一斤豬展，改一改，豬展頭這塊骨很好吃，我經常買這塊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:57.00" id="00:02:57.00" class="lt" onclick="jumptoTime(177, this.id)"><p>放一旁備用，有些人不喜歡吃皮，這段時間按著雞頭慢慢取出皮，一塊切出來，大家看到嗎?皮，這就切了，肥膏這些位置切了，切開，這些位置不要切太細，因為骨會慘口，切開，這些位置不要切太細，因為骨會慘口，有些肥都不要緊，這些肥不怕，處理這邊，取出皮，按著雞，成化，皮要出來，切掉肥膏的部份。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:31.06" id="00:04:31.06" class="lt" onclick="jumptoTime(271, this.id)"><p>改出來，用雞胸和雞背的部份煲湯，拿去蒸就可以了，煲湯的部份改出來，洗乾淨雞胸、雞腳、豬展，然後倒進去煲，鮑魚也是煲湯的部份就好，потом新聞 wealth</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:24.80" id="00:05:24.80" class="lt" onclick="jumptoTime(324, this.id)"><p>nutrition，Doll Ph sauteanti，一樣，về，hopeful，gosh，cuz，joke，receives</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:21.40" id="00:05:21.40" class="lt" onclick="jumptoTime(321, this.id)"><p>secure，Minneapolis，veramente，provocっ，Croat опас，Sequ earnest</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:20.20" id="00:05:20.20" class="lt" onclick="jumptoTime(320, this.id)"><p>delegates，uinely，nos，ե� Wars，نہ，były，watching</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:24.10" id="00:05:24.10" class="lt" onclick="jumptoTime(324, this.id)"><p>imeter，moc，photos，lesia，鮑魚水留著，相當鮮甜，大家看看這隻鮑魚，這麼大隻一頭的紐西蘭野生鮑魚，這些鮑魚都是很罕有的，形態多美，我們現在，拿去煲，整隻放下去，慢慢煲，煲多久呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.05" id="00:06:0.05" class="lt" onclick="jumptoTime(360, this.id)"><p>這個湯也要煲兩小時，湯煲了一小時，看看模樣如何，最重要當然要看主角，鮑魚，到這個時間，約一小時，可以放海參，之前也有分享過，這些不是貴價海參，但這隻海參很實很爽肉，很耐煲，之前發了，現在放下去，調小火，煲多久，現在再煲多一個小時，煲了兩個小時，現在看看什麼模樣，水都收得差不多了，相當濃郁，浸幾次。</p></a>
+				<a href="#00:07:7.05" id="00:07:7.05" class="lt" onclick="jumptoTime(427, this.id)"><p>煲過的湯，再加幾次，滾十分鐘，可以喝了，這個湯不用放鹽，為什麼?</p></a>
+				<a href="#00:07:19.05" id="00:07:19.05" class="lt" onclick="jumptoTime(439, this.id)"><p>因為足夠肉類，湯煲好模樣，就是這樣，看上去，湯很清，但很濃郁，這些就是飛水飛得好，材料準備好了，做燉湯或煲湯的基本工序就是這樣，這些湯煲出來，漂亮的，但又要濃郁的，足夠的肉類，這個湯放了這麼多干瑤柱，鹽也不用放了，到了母親節，做些鮑魚海參湯給家人喝，最好不過啦，今天的分享到此為止，謝謝各位收看。</p></a>
+</div>
+	</body>
+</html>

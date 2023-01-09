@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 賀年菜 八寶雞 八寶齊來 新年快樂</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dozOHvATE4s',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 賀年菜 八寶雞 八寶齊來 新年快樂</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，MING PAO CANADA MING PAO TORONTO，大家好又係我星星同大家職人吹水，大家好呀咁呀睇到個檯面咪好開心呀通常咁，大堆頭嘅我都係煲湯嘅但係今年就唔係煲湯喎臨近過年咁，我每年過年呢都會用雞入棧同大家分享啲餸菜咁我上年大家，做咗個紅運吊燒雞。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.32" id="00:00:42.32" class="lt" onclick="jumptoTime(42, this.id)"><p>咁樣好多網友都話係相當之複雜呀，冇啲簡單啲用雞嘅賀年菜啦，就用以上嘅材料同大家分享佢叫做八寶雞，咁話明雞梗係唔少得雞㗎啦咁我都係喺超市呀買咗隻三王雞呀咁樣我哋返到嚟，我哋就乜都唔好理呀，二話不說，咁我哋攞兩茶匙鹽落去，淡鹽水，浸佢30分鐘先，咁我喺街市，或者超市，揀呢啲啦冰鮮嘅三王雞呢咁有啲咩要點呀。</p></a>
+				<a href="#00:01:23.28" id="00:01:23.28" class="lt" onclick="jumptoTime(83, this.id)"><p>通常佢都擺咗十零廿隻喺度我畀你揀呀我哋會揀揀啲呢，啲皮較為黃呀，呢啲呢佢嘅油份又會比較好會比較香呀，咁樣我哋要蚊嘅雞腳出嚟呀先浸到嘅要浸埋個雞囊裏面呀嘛，雞浸緊之際呢話明八寶八寶有邊八寶呢。</p></a>
+				<a href="#00:01:44.54" id="00:01:44.54" class="lt" onclick="jumptoTime(104, this.id)"><p>咁就浸發冬菇呀四隻至五隻，小小蓮子，咁有蓮子邊有百合百年好呀咪過年係最好㗎啦。</p></a>
+				<a href="#00:01:55.28" id="00:01:55.28" class="lt" onclick="jumptoTime(115, this.id)"><p>有一罐呢罐頭鮑魚呀，鹹蛋黃呀，有啲栗子有啲臘肉，咁呀仲有一碗嘅糯米，咁睇曬以上材料之後呢咁樣我哋啲，蓮子百合咁我哋要最少要浸兩三個鐘頭，咁樣今次最想同大家吹下啲糯米呀今次都落米呢，咁大家睇到我係唔好浸水呀係呀唔需要浸水呀咁我哋一家直接去蒸就可以㗎啦，八樣材料當中呢有冇話定咗邊八樣㗎啦咁樣，香口嘅鮑魚鮑魚汁今次就係主力嘅咁我自己就鍾意。</p></a>
+				<a href="#00:02:40.92" id="00:02:40.92" class="lt" onclick="jumptoTime(160, this.id)"><p>用少少栗子落去㗎咁咪有相當之香嘅咁咪過年嘅連子百合，百年好合呀咁咪整埋啲鹹蛋黃落去啦首先而家我哋呢我哋就洗咗啲糯米先，我啲糯米洗咗兩次之後呢咁我哋就瓊返曬啲水出嚟盡量就瓊透啲，咁我哋陣間呢兩個水份呢就會準啲呀咁我哋又用曬所有個鮑魚汁，咁我又倒返落頭先糧米嗰隻碗嗰度先呀，咁落咗落之後呢咁我又倒埋啲冬菇水落去。</p></a>
+				<a href="#00:03:19.06" id="00:03:19.06" class="lt" onclick="jumptoTime(199, this.id)"><p>香呀冬菇水，咁落咗啲冬菇水之後呢大家都記得呀頭先我都係八成米到㗎嘛，咁而家我半碗水多少少咁就ok㗎喇喎，唔使太多水㗎，全部倒曬落去先，蓮子我哋隔水擺埋落去，百合我哋隔水擺曬落去，咁呢個時間呢咁我哋就切埋啲冬菇，同埋啲鮑魚全部將佢切粒就可以呀，我哋全部擺曬落去，去到包包如果你都係呀咁呀切一粒粒咁呀可以啦，鮑魚。</p></a>
+				<a href="#00:04:9.00" id="00:04:9.00" class="lt" onclick="jumptoTime(249, this.id)"><p>擺埋落去備用，咁去到臘肉呀，咁我哋就最好就拖一拖水佢，跟住我哋先切咁樣會比較好切啲嘅，咁我哋都係全部將佢切粒，咁我哋擺埋啲落，糯米嗰度，落曬落去之後呢咁我哋就調返一個湯匙嗰個蠔油落去，老抽落去啦等有返少少顏色呀咁我約一個茶匙都ok呀，跟住我哋將所有材料咁我哋就撈勻佢，準備一隻平平嘅碟呀最好就。</p></a>
+				<a href="#00:04:59.28" id="00:04:59.28" class="lt" onclick="jumptoTime(299, this.id)"><p>正正方方咁樣啦我呢隻我都係麻麻地呀因為個底呢比較窄呀，咁我蒸出嚟啦佢冇咁溫和，唔緊要，跟住，我哋落埋啲栗子落去啦，阿爸阿嫂頂，咁我呢個八寶飯呀我哋二話不說，我哋開火，燒啲水，咁我哋擺落去蒸水滾計精去，40分鐘，糯米精緊支仔咁你隻雞翼係浸咗約，差唔多，二十零三十分鐘呀咁樣你咪將嗰啲最肥嘅呢就將佢挖乾淨曬出嚟先，因為呢啲三黃雞呀啲雞味呢啲位呀都係相當之肥嘅。</p></a>
+				<a href="#00:06:7.90" id="00:06:7.90" class="lt" onclick="jumptoTime(367, this.id)"><p>咁我哋就挖曬啦挖曬啦跟住呀我哋就剪雞腳剪雞腳呀我都講過多次，我哋喺嗰個教位呀跟住雞腳呢個位呢度呀，落去，你嗰啲教位嗰度入手啦，都係好容易剪嘅嘢，做呢個八寶雞呀，最難呢都係陰間，點樣將佢拆骨起肉，如果家裏的婦女或者，啱啱啱啱啱經驗嗰啲呀咁樣，你可以省卻拆骨起肉呢個步驟，大精安陣時呢。</p></a>
+				<a href="#00:06:49.00" id="00:06:49.00" class="lt" onclick="jumptoTime(409, this.id)"><p>就要精耐少少，咁我而家就將佢清洗乾淨佢先啦，有時呢啲雞呀，佢執得唔乾淨呀，咁咪一係就攞你老婆微淺呀咁樣如果佢收埋啲微淺嘅咪攞把膠剪出嚟囉，咁我哋就，輕輕，蚊咗咁咪ok呀呢啲位呀，咁我哋洗一洗佢先，即係清洗乾淨之後咁我哋又要將佢瓊水，咁我哋雞皮呢啲位呀我哋首先將佢抹抹佢先，抹乾咗啦一間呢就會好做啲嘢。</p></a>
+				<a href="#00:07:29.70" id="00:07:29.70" class="lt" onclick="jumptoTime(449, this.id)"><p>咁我又擺返喺度先，抹乾咗少少之後呢咁我哋拆骨起肉首先我哋都要，了解下隻雞嘅，架構咁樣其實我呢個拆骨起肉呀我三年前都做過一次呀，嗰個就叫做起全雞呀，咁樣就好似喺度雞扒咁樣，今次我哋呢，我哋就，更進一步呀，咁我哋又將整隻雞嘅雞皮呢，同埋啲雞肉呢我就起咗出啦，咁我而家你又要一啲佢先。</p></a>
+				<a href="#00:08:7.08" id="00:08:7.08" class="lt" onclick="jumptoTime(487, this.id)"><p>咁你都好簡單呀咁我哋落約四個湯匙嗰個頭抽，目的都係成隻雞呢，入味，咁樣有時間嘅最好就要得佢有三四個鐘頭，咁雞醃緊之際咁呢邊又差唔多約八個字呀，咁我哋又望望咩模樣先，都差唔多喎，咁我攞出嚟咁就，一溜雲女呀，去側邊呀中間嗰啲位呀咁都差唔多，整少少試下先，好味呀，其實現在已經是一個好正嘅糯米飯嚟㗎啦，咁呀。</p></a>
+				<a href="#00:09:3.81" id="00:09:3.81" class="lt" onclick="jumptoTime(543, this.id)"><p>我哋又唔需要讓曬落去呀，我哋將主要嘅材料呀讓曬落咁ok呀咁我而家又搞唔佢先，你再搞一搞佢啦，佢散咁啲，蒸氣啦，咁佢又會硬身少少呀所以我哋一定要蒸得去透㗎呢個，咁呢個時候呢我哋就攞返隻雞出嚟，咁我哋又再將啲頭抽呀嗰啲就，整雲女啦，做呢個八寶雞呀其中一個要點呢就係話，我哋啲餡料呀。</p></a>
+				<a href="#00:09:41.19" id="00:09:41.19" class="lt" onclick="jumptoTime(581, this.id)"><p>就一定要，熱㗎，唔好太凍，如果你，整定啲糯米飯呀你都落咪飯凍啦，咁你一樣入去啦直計呀，蒸好耐啦佢都蒸唔透呀同埋唔熟呀，咁我哋而家呢啲呢咁樣慢慢讓入去啦咁我最正，咁我梗係就，羊仔啲栗子呀，糯米呀咁我哋慢慢噴入去啦，咁樣，頭先嗰度就有少少穿咗咁樣我就決定就唔讓太多入去呀，咁我又慢慢將佢慢慢咁樣撻入去。</p></a>
+				<a href="#00:10:24.45" id="00:10:24.45" class="lt" onclick="jumptoTime(624, this.id)"><p>最緊要個鹹蛋黃呀，咁我淨返呢啲啦，你一蒸返佢又咪可以當糯米飯食囉，咁我哋就，蓮子百合栗子嗰啲呢咁我哋就盡量擺曬，喺中間呀而家，我隻雞呀，讓佢飽滿曬之後呢，我哋準備兩支竹籤頭先我哋雞頸呢個位呀，咁我哋就扭一扭佢呀，我係流返實佢咁ok呀，我冇求呢唔好等佢爆出嚟㗎嘛，咁我哋咪，搵啲竹籤咁樣。</p></a>
+				<a href="#00:11:5.91" id="00:11:5.91" class="lt" onclick="jumptoTime(665, this.id)"><p>穿一穿佢呀，都係冇求固定咗佢㗎嘛，雞頭呢個位，咁我哋陣間啦，都係會改返個雞頭出嚟㗎，咁去到雞味呀，咁我哋就準備另外一支竹籤，咁我哋就好似，穿燒鵝咁呀如果屋企呀，我針呀，咁呀，用啲不修過我針囉，一般家庭一般家庭都唔會有㗎喇，呢啲竹籤都ok呀，嗰陣時就小心啲囉，因為呢，做燒味啦，其中之一個啦。</p></a>
+				<a href="#00:11:50.30" id="00:11:50.30" class="lt" onclick="jumptoTime(710, this.id)"><p>慘痛之處呢就成日畀啲鵝針呀，吉到呀，咁我哋啦，最後尾呢下啦，咁我哋就成支，插咗入去裏面嗰度，咁我哋咬斷佢咁ok呀，咁我哋就固定曬佢，咁我哋整隻雞，穿好曬佢之後呢，咁我哋再擺多條喺度呀，我哋都要攞一攞佢㗎因為點解，糯米呢就擲住隻雞呀，如果你唔攞佢去蒸呀，有啲位呀未必熟㗎，咁我哋淨返少少頭抽呀咁咪查埋上去囉，我等佢蒸出嚟啲色呢就靚仔啲呀嘛。</p></a>
+				<a href="#00:12:42.26" id="00:12:42.26" class="lt" onclick="jumptoTime(762, this.id)"><p>萬事俱備咁我哋就著返個火，燒返啲水，水滾呀咁我又擺返落去蒸，咁你又蒸幾耐啦，我哋最少都要蒸佢35分鐘，撒拿間就蒸咗35分鐘，就真係，個味道呀真係相當之唔錯呀，就開三份去，唔好太細煩，咁樣開咗咁ok，仲有條嘢喺度呀人來，唔好太細煩呀，好彩就買咗幾條菜心，咁樣學年菜當中呢咁我梗係擺返粒紅棗落去啦咁我鍾意食，八寶嘅網友比個like我星星咁樣食雞嘅網友訂閱職人吹水嘅頻道。</p></a>
+				<a href="#00:13:44.87" id="00:13:44.87" class="lt" onclick="jumptoTime(824, this.id)"><p>兩者都鍾意嘅咁仲同大家擺個早年呀，恭祝大家八寶齊來，健健康康開開心心咁我就食飯先下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

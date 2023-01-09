@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 年年有餘 順德名菜 油浸筍殼</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0Wr7MhYtugU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 年年有餘 順德名菜 油浸筍殼</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.37" id="00:00:9.37" class="lt" onclick="jumptoTime(9, this.id)"><p>其他油慢慢浸，打直切，要給些底味，大家好，又係星星同大家分享下，星星，你拍住個膠刀做什麼?</p></a>
+				<a href="#00:00:34.20" id="00:00:34.20" class="lt" onclick="jumptoTime(34, this.id)"><p>魚來的，星星，又搞什麼魚?</p></a>
+				<a href="#00:00:37.20" id="00:00:37.20" class="lt" onclick="jumptoTime(37, this.id)"><p>正所謂春邊秋里就夏三泥，問下大家冬天食什麼魚好?</p></a>
+				<a href="#00:00:44.20" id="00:00:44.20" class="lt" onclick="jumptoTime(44, this.id)"><p>你次次講的都不是整的，沒錯，你做什麼拿條生魚出來?</p></a>
+				<a href="#00:00:52.20" id="00:00:52.20" class="lt" onclick="jumptoTime(52, this.id)"><p>大家看清楚，這條叫筍殼，上次做了個油浸一夜乾之後，很多網友都留言，星星你會否做條油浸筍殼和大家分享下，今次我買條筍殼魚回來，做個油浸筍殼和大家分享下，都是一個很傳統和出名的順德菜，順德出了名魚米之鄉，做淡水魚，順德師傅真有一手，這條約12兩筍殼買回來，第一步洗了它，做這類型的河鮮，最緊要是新鮮，即買即食。</p></a>
+				<a href="#00:01:44.20" id="00:01:44.20" class="lt" onclick="jumptoTime(104, this.id)"><p>買新鮮的不可早上買，日晚食，一宰了魚質量便變了，玩魚也是，這些魚回來將殘餘在魚身的籠內打乾淨，通常買筍殼魚，魚檔師傅都會問你開肚還是開邊，我這條開肚，因為我細條，如果開邊，他便在這兒開了，洗魚都和大家講過很多次，特別是魚身這些位置，有血這些位置和中間骨這些位置，我們便切開，將所有殘留在內的血全部洗乾淨。</p></a>
+				<a href="#00:02:35.20" id="00:02:35.20" class="lt" onclick="jumptoTime(155, this.id)"><p>因為魚的腥味通常殘留在這些位置和魚皮這些位置，洗兩三次，最緊要在肚內洗乾淨，將魚皮拿上來，放涼瀝水，一定要抹到很乾身，在魚停水之際準備少許芫茜和蔥絲，這菜配料不多，切蔥絲，橫開後直切，放在水中養著，一養著便可以，整條筍瀝乾水後第一步要做什麼?</p></a>
+				<a href="#00:03:37.66" id="00:03:37.66" class="lt" onclick="jumptoTime(217, this.id)"><p>開火，燒熱油，一定要夠油，準備炸前要加少許底味，底味加少許幼鹽，炒一炒內籠和魚身，加少許鹹味，油溫找隻鑊推下去，聽不到油的響聲，代表油溫差不多180度，這時關火，將魚放下去，按一按定型，用較熱的油溫鎖死魚的表面，全程不用開火，在這油溫浸三分鐘，當炸了30秒左右定型後便可以慢慢浸，現在炸了約一分鐘，大家見到油溫，泡沉了。</p></a>
+				<a href="#00:05:26.35" id="00:05:26.35" class="lt" onclick="jumptoTime(326, this.id)"><p>代表用較低油溫慢慢浸，這段時間再浸一分鐘，現在炸了約兩分鐘，這段時間開大火將油溫扯高，扯高油溫作用是進一步將魚內油份迫出來，順便搶脆魚身，所以做油浸筍殼魚一定要夠油才做到效果，一加大油溫大家看到油的形態已不同，用高油溫炸約一分鐘，炸東西都要講求油溫控制，入行學廚時做埋片位，第一樣接觸是學炸東西，學看油溫。</p></a>
+				<a href="#00:06:48.35" id="00:06:48.35" class="lt" onclick="jumptoTime(408, this.id)"><p>全程炸了約三分半鐘，這段時間輕輕拿起魚，為何，我們進一步燒高油溫，盡量去到180度過外，約燒約40秒，現在約燒了40秒，見到旁邊有黑煙起出來，將魚放下去搶脆，如果剛才不拿起魚，等油溫燒高，魚便會乾，不好食，將外面搶香，約炸約30秒便夠，炸了30秒便整條起，晾乾油，晾乾油後將芫茜蔥絲放上魚身面，用少許熟油淋蔥絲。</p></a>
+				<a href="#00:08:17.67" id="00:08:17.67" class="lt" onclick="jumptoTime(497, this.id)"><p>這段時間可在碟邊落適量豉油或蒸魚豉油或之前浸黃豉油都可以，一條油浸筍殼便完成，外脆內軟，魚肉仍是滑的，在家做，掌握油溫其實做得很方便，最緊要買條新鮮靚的筍殼魚，喜歡食油浸筍殼的網友俾個LIKE我星星，訂閱我職人吹水頻道，分享這油浸筍殼魚，多謝大家收看下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

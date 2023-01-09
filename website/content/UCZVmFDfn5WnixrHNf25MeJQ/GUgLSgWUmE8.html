@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 脆炸年糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GUgLSgWUmE8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 脆炸年糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，星星，這是什麼?一定是年糕吧，難道是蘿蔔糕嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:12.59" id="00:00:12.59" class="lt" onclick="jumptoTime(12, this.id)"><p>很多網友都會煎年糕吃，除了煎之外，還有什麼好做的呢?</p></a>
+				<a href="#00:00:22.79" id="00:00:22.79" class="lt" onclick="jumptoTime(22, this.id)"><p>我老婆小雲早兩天看電視，她說要介紹，用春卷皮包著來炸，她叫我做春卷皮，今天就試試看，先放開年糕，拿碗出來，星星，這是什麼?麵粉嗎?</p></a>
+				<a href="#00:00:49.63" id="00:00:49.63" class="lt" onclick="jumptoTime(49, this.id)"><p>你不是真的做春卷皮吧，我不會做春卷皮，開個脆漿，用脆漿和大家分享一下，未必一定要買天婦羅粉或炸粉，家裡只要有普通的麵粉和生粉，我們在外面做，很多時候會做一些酥炸生蠔之類的菜式，今天就跟大家分享一下，用酥炸的脆漿和大家分享一下，開酥炸漿，第一件事就是要放麵粉，麵粉我們放五湯匙，麵粉五湯匙。</p></a>
+				<a href="#00:01:51.59" id="00:01:51.59" class="lt" onclick="jumptoTime(111, this.id)"><p>生粉三匙，差不多一湯匙，攪拌均勻，然後在冰箱拿冰水出來，做脆漿有兩個很重要的步驟，就是要用冰水開漿，如果做西餐或炸洋蔥圈就用啤酒來開，做中菜就用冰水來開，大概要用多少冰水呢?</p></a>
+				<a href="#00:02:29.08" id="00:02:29.08" class="lt" onclick="jumptoTime(149, this.id)"><p>用碗把所有材料放進去，慢慢放進去，粉要不要篩一下?不用了，慢慢放進去，攪拌到怎樣才算可以呢?</p></a>
+				<a href="#00:02:48.86" id="00:02:48.86" class="lt" onclick="jumptoTime(168, this.id)"><p>攪拌到糊狀，水慢慢放進去，沿著邊緣慢慢攪拌，不要太大力攪拌，我們不想粉起筋，因為起筋的話，炸出來的漿就不脆了，我們慢慢攪拌，主要是攪拌均勻，水不要一次過放進去，要慢慢放，為什麼要慢慢放呢?這樣才可以把粉漿攪拌到適合自己的稠度，我們有個術語叫做大食姑娘開削粉，一次過倒進去，漿就削掉，攪拌到怎樣才算可以呢?現在差不多了。</p></a>
+				<a href="#00:03:47.06" id="00:03:47.06" class="lt" onclick="jumptoTime(227, this.id)"><p>稀了一點，不要緊的，我們把它打開，放入冰箱冷藏一会，因为想粉浆脆，粉一定要冷，冷藏一会，现在要处理年糕，先切出来，年糕要切成怎样呢?</p></a>
+				<a href="#00:04:24.79" id="00:04:24.79" class="lt" onclick="jumptoTime(264, this.id)"><p>不要切成一片片</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:26.51" id="00:04:26.51" class="lt" onclick="jumptoTime(266, this.id)"><p>切成一条条，eti analytcessors</p></a>
+				<a href="#00:04:45.96" id="00:04:45.96" class="lt" onclick="jumptoTime(285, this.id)"><p>Victoriahaus，Webshouses，ambitious，medicmbre</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:52.00" id="00:04:52.00" class="lt" onclick="jumptoTime(291, this.id)"><p>будто，biomass</p></a>
+				<a href="#00:04:53.50" id="00:04:53.50" class="lt" onclick="jumptoTime(293, this.id)"><p>dominant，Er alongside，shareholders</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:49.06" id="00:04:49.06" class="lt" onclick="jumptoTime(289, this.id)"><p>profit，Elaine，иж，bio，dai Außerdem，нуть</p></a>
+				<a href="#00:04:49.32" id="00:04:49.32" class="lt" onclick="jumptoTime(289, this.id)"><p>� recipes，號，miteinander，朝</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:45.90" id="00:04:45.90" class="lt" onclick="jumptoTime(285, this.id)"><p>mascara，accomplishments，г，炸幾條和大家分享一下，我們就炸這麼多，剛才差不多放了六顆粉，一碗水差不多放完了，現在弄到這樣，其實一條條，這樣放，其實已經是，上了一點點粉，我們現在，再加一湯匙麵粉，我們不想太碎，為什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:29.37" id="00:05:29.37" class="lt" onclick="jumptoTime(329, this.id)"><p>我們還有一樣東西要加的，還有什麼東西要加呢?</p></a>
+				<a href="#00:05:36.27" id="00:05:36.27" class="lt" onclick="jumptoTime(336, this.id)"><p>等一下再跟大家說，我們打開粉之後，這樣差不多了，放在冰箱，冰箱拿出粉漿，現在大概冰了十分鐘，現在看到這樣，我們就可以，再加剛才的水，我們要調到粉漿，差不多一條條絲的樣子，這個粉漿是用來調味的，這個粉漿，我們調一點鹹味給它，我們加四分一茶匙鹽，給它一點味道，做這些酥炸醉漿，第一個要點就是冷卻，還有第二個要點是什麼?</p></a>
+				<a href="#00:06:54.35" id="00:06:54.35" class="lt" onclick="jumptoTime(414, this.id)"><p>就是要加油，油的份量有多少呢?</p></a>
+				<a href="#00:06:58.19" id="00:06:58.19" class="lt" onclick="jumptoTime(418, this.id)"><p>這個大概三分一碗左右，我們加油的份量是醉漿整體的份量的三分一，我們臨炸的時候才加油，慢慢攪拌，為何要在炸之前才加油呢?</p></a>
+				<a href="#00:07:28.47" id="00:07:28.47" class="lt" onclick="jumptoTime(448, this.id)"><p>如果一早加油，醬汁便不酥脆，現在攪拌均勻，慢慢攪拌，讓油分泌在醬汁內，現在油溫是很高的，我們想知道油溫是否足夠，現在油溫是OK的，炸這類型的年糕，因為它本身已經熟了，我們只要炸熱它，油溫要去到180度，上了一件，放兩件，逐件逐件上，逐件逐件落，大家看到，ballots ast sap</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:13.87" id="00:09:13.87" class="lt" onclick="jumptoTime(553, this.id)"><p>artifact，timer，LIN due，лад，ler，doing，呀，ettleposition</p></a>
+				<a href="#00:09:2.49" id="00:09:2.49" class="lt" onclick="jumptoTime(542, this.id)"><p>Just，Jen</p></a>
+				<a href="#00:09:16.57" id="00:09:16.57" class="lt" onclick="jumptoTime(556, this.id)"><p>ост，Nep，ить</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:5.63" id="00:09:5.63" class="lt" onclick="jumptoTime(545, this.id)"><p>ativas，bookstore，MUSIC，Wahr，itti，さん</p></a>
+				<a href="#00:09:5.23" id="00:09:5.23" class="lt" onclick="jumptoTime(545, this.id)"><p>do никто，는지，ні，oranges，influential，Anyone Bon uncheckitat，chapρί，Division，approval，Team，стен</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:16.91" id="00:09:16.91" class="lt" onclick="jumptoTime(556, this.id)"><p>정，這個èle，animate，only，counties</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:5.77" id="00:09:5.77" class="lt" onclick="jumptoTime(545, this.id)"><p>Warrior，historically，injections，Uno</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:58.47" id="00:08:58.47" class="lt" onclick="jumptoTime(538, this.id)"><p>Kristen，hostile</p></a>
+				<a href="#00:09:11.69" id="00:09:11.69" class="lt" onclick="jumptoTime(551, this.id)"><p>onc ссыл，ят，walked literature，这里 magnet，大的，ощ，例 Thousands，pushes，AU，says，forming，Lup，King，nn，parhodou，forma，McCain，Sho relatives，Así combining，dropped。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:27.69" id="00:09:27.69" class="lt" onclick="jumptoTime(567, this.id)"><p>APPBook</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:34.49" id="00:09:34.49" class="lt" onclick="jumptoTime(574, this.id)"><p>spind chore，달 lawn，кие，미，Wellness，Kra 설명，Daw</p></a>
+				<a href="#00:09:33.69" id="00:09:33.69" class="lt" onclick="jumptoTime(573, this.id)"><p>бы，mp，union，Est，mover，Comp09</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:40.87" id="00:09:40.87" class="lt" onclick="jumptoTime(580, this.id)"><p>minister，Baek，turmoil</p></a>
+				<a href="#00:09:30.39" id="00:09:30.39" class="lt" onclick="jumptoTime(570, this.id)"><p>sandy，plaisir，inequality，centered</p></a>
+				<a href="#00:09:35.41" id="00:09:35.41" class="lt" onclick="jumptoTime(575, this.id)"><p>οπο fishy，很快的，主要是炸到脆浆够脆，现在开大火，取脆的面，再炸约一分钟，这个炸酱除了炸年糕还有什么炸呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:23.03" id="00:10:23.03" class="lt" onclick="jumptoTime(623, this.id)"><p>最好是做一些酥炸生蚝，如果想更脆可以加入啤酒，如果没有啤酒可以加入苏打粉或臭粉，会更加酥脆，现在加大油温，油温要看着火，油温升得很快，看看可不可以，旁边的可以，差不多了，可以熄火了，用廚房紙吸油，先起它，炸好了模樣就是這樣，星星，為何多了三條，是的，剩下的粉漿可以炸蟹柳吃，這三條是蟹柳。</p></a>
+				<a href="#00:12:7.90" id="00:12:7.90" class="lt" onclick="jumptoTime(727, this.id)"><p>脆不脆呢，聽到聲音嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:16.54" id="00:12:16.54" class="lt" onclick="jumptoTime(736, this.id)"><p>我幫你拿一塊，我幫你拿一塊，新台北大海苔，大家聽到聲音嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:35.80" id="00:12:35.80" class="lt" onclick="jumptoTime(755, this.id)"><p>我吃一口年糕給大家看看，聽到聲音嗎?</p></a>
+				<a href="#00:12:43.80" id="00:12:43.80" class="lt" onclick="jumptoTime(763, this.id)"><p>很脆，今天這次的分享就到此為止，多謝各位收看，如果大家剩下年糕，可以用麵粉或生粉，開脆漿炸出來食</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:27.80" id="00:13:27.80" class="lt" onclick="jumptoTime(807, this.id)"><p>謝謝收看。</p></a>
+</div>
+	</body>
+</html>

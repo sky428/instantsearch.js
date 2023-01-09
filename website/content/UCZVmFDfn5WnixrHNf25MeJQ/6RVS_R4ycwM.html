@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 豆豉醬炒蕃薯葉 點樣保持清脆嫩綠 職人同你講</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '6RVS_R4ycwM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 豆豉醬炒蕃薯葉 點樣保持清脆嫩綠 職人同你講</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:20.41" id="00:00:20.41" class="lt" onclick="jumptoTime(20, this.id)"><p>大家好，又是我星星的職人吹水，大家好呀，見到不是草來的，一大堆的，不是草的，當然是葉來的啦，近期在街市，整個街市都是，這是什麼葉來的，番薯葉，大家吃粗糧啦，粗纖維的，雖然說，番薯葉，都有老有嫩呀，買這些番薯苗最好，買回來做這些番薯苗，三束多少錢，三束加起來都是九塊，大家以為好像很多，其實不是很多，為什麼，我們做這些番薯苗。</p></a>
+				<a href="#00:01:21.07" id="00:01:21.07" class="lt" onclick="jumptoTime(81, this.id)"><p>我們，要狠心，我們只吃這裏的，這些都是，我們，不要要尾部，因為尾部，就真的粗糧，比較粗糙，我們只要葉的部分，我們就要改掉，改掉之後，就什麼都不要管，我們用水浸泡30分鐘，再洗，用水浸泡葉的作用，讓表面的灰塵釋出，一扯水之後，它就會，扯開，扯開之餘，它會有不乾淨的東西，殘留的農藥，這段時間就浸出來，這類型的番薯苗，我們在外面做有幾種做法。</p></a>
+				<a href="#00:02:20.71" id="00:02:20.71" class="lt" onclick="jumptoTime(140, this.id)"><p>第一就是炒椒絲腐乳，第二就是炒蝦醬，跟通菜的差不多，第三就是炒蒜頭豆豉，我們在外面做，很多時候都是，豆豉鯪魚、油麥菜、番薯苗，在家做，有這麼好的豆豉醬，就跟大家分享一下，用乾淨的匙羹，不要用濕水，不然的話，不要說太多，怕口水，像我這種口水佬，豆豉醬大家可以參考我之前的做法，每次做完都封好，放雪櫃，每次做豆豉都必定要加一點乾蔥。</p></a>
+				<a href="#00:03:14.38" id="00:03:14.38" class="lt" onclick="jumptoTime(194, this.id)"><p>這些就是味道的來源，盡量利用蔥蒜起鑊，切絲就可以了，利用刀頭，用手指頂著刀，切得靈活一點，全部切絲就可以了，配料準備完畢，繼續洗菜，每次洗菜都是用舀的方式，舀一舀，再過多兩三次水，舀到最後，大家看到水嗎?</p></a>
+				<a href="#00:04:9.74" id="00:04:9.74" class="lt" onclick="jumptoTime(249, this.id)"><p>污糟的東西都在水裡，如果不斷地舀，就把污糟的東西倒進去，洗了四次之後，怎樣才算可以呢?</p></a>
+				<a href="#00:04:22.34" id="00:04:22.34" class="lt" onclick="jumptoTime(262, this.id)"><p>我們看盆底有沒有雜質就可以了，接著要瀝乾水，生炒菜瀝乾水很重要，拿配料出來，開小火，先熱鍋，熱了之後，加適量的油，用小火爆香乾蔥，乾蔥明明散開了，加一點火力，炒香底部，番薯條很快熟，香味出來了，加入豆豉醬，蒜蓉，慢慢炒香，豆豉蒜蓉都聞到個香味喎我哋畀個大火去，我哋落花旋苗之前呢我哋一定要猛火嘅，慢慢。</p></a>
+				<a href="#00:05:50.39" id="00:05:50.39" class="lt" onclick="jumptoTime(350, this.id)"><p>好心急，一下一下咁樣，好多次呀，最好呢就聽到個鑊，乾身呀，唔夠熱呀，喺個中間嗰度單炒上，唔夠呀，我冇乜水識出㗎，我哋繼續，差不多差不多，基本鹹味呀，一會，咁我再炒多幾下，咁我炒咗個餸菜呀，咁就起得㗎喇喎，有冇水呀，咁蒜頭豆豉，油麥菜啦，蕃薯葉呀個味道相當之濃郁呀，氛圍呀，咁我鍾意食番薯葉嘅網友畀個like我聲聲啦咁我鍾意炒菜一起可成冇水出嘅梗係睇我職人吹水頻道啦，分享下呢個。</p></a>
+				<a href="#00:08:5.54" id="00:08:5.54" class="lt" onclick="jumptoTime(485, this.id)"><p>酸豆豉炒番薯葉，好多次運載同打出個拜拜。</p></a>
+</div>
+	</body>
+</html>

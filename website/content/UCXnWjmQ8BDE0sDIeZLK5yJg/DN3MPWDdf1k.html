@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【清新食譜】果汁雪條 Ice Pop</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'DN3MPWDdf1k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【清新食譜】果汁雪條 Ice Pop</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由 Amara.org 社群提供，登登!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:11.72" id="00:00:11.72" class="lt" onclick="jumptoTime(11, this.id)"><p>馬田出來了，你看我買了些什麼，因為我現在看到買這個超大支果粒橙，就有東西送，你看我一次過買三支你就知道，送的東西是厲害的，就是這些雪條模，雪條模很普通而已，有什麼特別的，但不是的，你看清楚一點，是超漂亮的雪條模，你看是兩個花形的，雪條模來的，現在我們就可以弄雪條了，為什麼要買三個這麼多呢，因為我想一次過試三種不同味的果粒橙弄成雪條。</p></a>
+				<a href="#00:00:51.72" id="00:00:51.72" class="lt" onclick="jumptoTime(51, this.id)"><p>就可以用完這麼多款果粒橙了，好，拿出來看看，你看裡面，這樣，一次可以弄兩支，所以我們這次可以弄六種不同味，啊不是，三種不同味，好，那開完了，洗完了，乾淨了，我們看到有三個雪條模，那我們準備另外兩種味，蘆薈青提子，這個西柚，還有果粒橙，我們就可以一次過弄三種不同味的雪條了，但除了普通雪條之外，我們想加一些水果。</p></a>
+				<a href="#00:01:33.72" id="00:01:33.72" class="lt" onclick="jumptoTime(93, this.id)"><p>還有要加一點蜜糖，因為人對於味覺其實不同溫度有不同感受，所以要冷的東西需要再甜一點，你才感受到它的甜味，熱一點的東西不用那麼甜，你也可以容易感受到甜味，所以我們準備了蜜糖，除了蜜糖本身比較好吃之外，就可以令它再甜一點，這樣就很適合可以弄到雪條裡，好，先切一些水果，我們先弄一個提子味。</p></a>
+				<a href="#00:02:5.72" id="00:02:5.72" class="lt" onclick="jumptoTime(125, this.id)"><p>提子是青提子，這個是青提子，之後我們再配提子，有三隻提子，超提子，看到都很葡萄，洗乾淨，切了放進模裡，為什麼要選這麼多提子呢，因為提子味其實最配合提子，好，我們放進去，這樣就很漂亮了，你看，記得，這邊才是表面，你最中，所以，我們要放得很齊，好了，之前我量了一個模大概是100ml，即是每邊50ml。</p></a>
+				<a href="#00:02:51.72" id="00:02:51.72" class="lt" onclick="jumptoTime(171, this.id)"><p>如果你預先放了材料可以減少一點，即是大概不用100ml，就夠了，記得要搖勻一點，因為有些蘆薈粒，你必須要搖勻才可以搖出來，之後我們放蜜糖，蜜糖其實隨意，蜜糖隨意，大概6g左右，6g即是多少呢，即是一匙多一點，你看，滿了一點就可以了，然後拌進去，拌勻，出來的味道就應該，你喜歡甜一點，可以放多一點蜜糖。</p></a>
+				<a href="#00:03:29.72" id="00:03:29.72" class="lt" onclick="jumptoTime(209, this.id)"><p>好，完成，就可以倒進去了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:34.52" id="00:03:34.52" class="lt" onclick="jumptoTime(214, this.id)"><p>sheets，ël，brewer artwork，nodes，saint，sar круг，MU rainfall，不用太多，舀少少出來，因為你雪冰粒你都知，冰是會脹滴滴咁多，雪完之後，所以唔使話100%滿曬，留返少少空位比佢，好啦咁呢個就可以拎去雪啦，我地再整埋其餘嗰兩隻味，就係橙味啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:59.79" id="00:03:59.79" class="lt" onclick="jumptoTime(239, this.id)"><p>果粒橙味啦同埋呢個嘅，西柚味，咁呢橙味呢一個呢我就會揀呢，士多啤梨同埋藍莓，因為佢哋兩個色同橙色會夾啲，咁我地首先切開啲士多啤梨先，咁其實兩粒三粒你地隨意，就得㗎啦，咁要切細粒啲嘅，生果呢其實有分兩個大類嘅，咁我想講嗰種大類呢，就唔係形狀或者形狀成份嘅大類，就係呢，筋性同埋非筋性生果，咁我地將啲材料放落去先。</p></a>
+				<a href="#00:04:35.51" id="00:04:35.51" class="lt" onclick="jumptoTime(275, this.id)"><p>咁筋性同非筋性生果究竟係乜嘢呢，筋性生果呢就係一啲呢，會釋放氣體，咁釋放氣體係做咩㗎，釋放氣體呢就係呢，會自己變熟嘅，咁我地呢就叫嗰啲做筋性生果，咁有一啲生果呢就叫做非筋性生果，就係呢你點樣放佢呢，佢都唔會自己變熟嘅，咁我地今次咁多種生果啦，咁我地就可以一次過講曬啦，有乜嘢係筋性生果呀。</p></a>
+				<a href="#00:05:3.03" id="00:05:3.03" class="lt" onclick="jumptoTime(303, this.id)"><p>最明顯最明顯嘅例子，香蕉，擺佢就會熟㗎啦，咁呢嗰啲就係筋性生果啦，咁我地今次入面有乜嘢係筋性生果呢，藍莓係筋性生果，佢擺擺下呢係會熟嘅，芒果係好明顯啦，大家都會呢嘔到呢，佢呢最靚最好味嗰時先去食㗎嘛，咁嗰啲呢個呢都係筋性生果，咁有乜嘢係非筋性生果呀，橙就係非筋性生果啦，西柚都係非筋性生果。</p></a>
+				<a href="#00:05:30.55" id="00:05:30.55" class="lt" onclick="jumptoTime(330, this.id)"><p>提子都係非筋性生果，即係佢哋呢，如果佢係未熟嗰陣時你攞佢落嚟呢，你點樣嘔佢呢，佢都唔會變返熟嘅，好咁到西柚味啦，西柚味呢我哋準備咗芒果，咁芒果又係好簡單啦，你揀個熟㗎啦，咁之後切呢，我哋用一卡應該夠㗎啦，咁又係咁樣，擺喺度，切兩刀，切兩刀，三刀，四刀啦，之後攞隻匙羹，咁樣挖佢出嚟啦，咁啲肉呢。</p></a>
+				<a href="#00:06:5.03" id="00:06:5.03" class="lt" onclick="jumptoTime(365, this.id)"><p>就會起曬出嚟㗎啦，搞掂，咁我哋將啲果肉呢，放落去先，係因為個模呢，個高度有限呀，你唔好放咁大粒喎，細細粒好啦，如果太大呢，就切碎啲啲，好咁剩返嘅呢，教你一個，最好嘅處理，剩返生果嘅方法，好，那到處理我們的果汁部分了，果汁部分一樣，我們準備了蜜糖，大概也是加剛剛好份量的蜜糖，那處理剩下果汁的方法呢，我又教你最好處理剩下果汁的方法呢。</p></a>
+				<a href="#00:06:50.84" id="00:06:50.84" class="lt" onclick="jumptoTime(410, this.id)"><p>就是呢，喝了它，橙汁，有時候你會覺得混合蜜糖很難，因為有時候蜜糖會很濃稠，你只要把部分水分拿出來，混合稀了才加足夠的水量，這樣就會比較容易攪拌，一次過加入全部水，我們需要100ml和一匙蜜糖，這個時候才加一半半，這樣就很快就混合了，先倒進模子裡，二號模，蓋上，之後就到我們的西柚味了，也是一樣。</p></a>
+				<a href="#00:07:43.84" id="00:07:43.84" class="lt" onclick="jumptoTime(463, this.id)"><p>可以用我們剛才說的方法做，一匙左右，然後先加一點點液體進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:52.84" id="00:07:52.84" class="lt" onclick="jumptoTime(472, this.id)"><p>攪拌均勻，加上西柚汁，倒進去，蓋上，好 搞定，我們等它冷卻後就可以拿回來了，這樣大概四個小時以上就最穩固，四個小時後再見</p></a>
+				<a href="#00:08:19.84" id="00:08:19.84" class="lt" onclick="jumptoTime(499, this.id)"><p>完成了，我們先拿出來看看，應該要用熱水浸一浸，才能拿出來，熱水來了</p></a>
+				<a href="#00:08:35.84" id="00:08:35.84" class="lt" onclick="jumptoTime(515, this.id)"><p>好，我們把熱水塗在背部，讓它能夠脫模，緊張了，緊張了，完成了，登登!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:2.77" id="00:09:2.77" class="lt" onclick="jumptoTime(542, this.id)"><p>完成了，逐個試一下，這個就是提子了，那麼雪條本身是青提子蘆薈味，之後還有黑提和紅提子，帽子超漂亮的，你看看，就算是冰了透明色，你也看到帽子是超漂亮的，哎呀!滴水了!滴水了!</p></a>
+				<a href="#00:09:31.91" id="00:09:31.91" class="lt" onclick="jumptoTime(571, this.id)"><p>下一個!下一個!下一個!</p></a>
+				<a href="#00:09:33.61" id="00:09:33.61" class="lt" onclick="jumptoTime(573, this.id)"><p>西柚芒果，也是超漂亮的，冷啊，藍莓士多啤梨橙，不知道你們小時候是不是跟我一樣，通常小時候第一次做雪條，都是會做橙汁味雪條，所以這個味道很適合小朋友，一吃就覺得，就是自己做雪條的味道，超開心，今集就到這裡，記得讚好、訂閱、分享，我們每星期三、五、六都會有新片，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

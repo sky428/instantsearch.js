@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 蒜蓉黑椒炒鮮冬菇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'XINJSLi9uaQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 蒜蓉黑椒炒鮮冬菇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.05" id="00:00:9.05" class="lt" onclick="jumptoTime(9, this.id)"><p>各位好，我是星星师傅，星星，今天我们要分享的是什么?</p></a>
+				<a href="#00:00:14.07" id="00:00:14.07" class="lt" onclick="jumptoTime(14, this.id)"><p>好像摆阵似的，你在开弹?</p></a>
+				<a href="#00:00:16.75" id="00:00:16.75" class="lt" onclick="jumptoTime(16, this.id)"><p>不是开弹，今天我们要分享的是冬菇，你又发冬菇了?</p></a>
+				<a href="#00:00:22.73" id="00:00:22.73" class="lt" onclick="jumptoTime(22, this.id)"><p>这些是新鲜的冬菇，不用发的，这些都是新鲜的冬菇，这些新鲜的冬菇大部分都是菇包菇，菇包菇是在温室发出来的，菇包菇的特性是比较薄，但是发出来的都很漂亮，现在有些我之前说的发冬菇，干品冬菇，有些叫原木菇，这些很多叫顶白花菇，通常是短脚或者没有脚的，这些菇就很薄，没有原木菇那么好，主要的分别就是这些。</p></a>
+				<a href="#00:01:6.75" id="00:01:6.75" class="lt" onclick="jumptoTime(66, this.id)"><p>有时候去买花菇，就要看它的脚，看冬菇厚不厚，新鲜的冬菇就没所谓，这些就很漂亮，新鲜的冬菇有什么特点呢?</p></a>
+				<a href="#00:01:25.59" id="00:01:25.59" class="lt" onclick="jumptoTime(85, this.id)"><p>原本是用黑椒蒜蓉牛油炒意粉的，回家没有意粉，就这样炒，连牛油都没有，就这样炒，就这样蒜蓉黑椒炒，这些菇剪了一段，星星，这些菇要不要洗?</p></a>
+				<a href="#00:01:47.59" id="00:01:47.59" class="lt" onclick="jumptoTime(107, this.id)"><p>其实这些菇不用洗的，这些菇用一块湿纸巾或者毛巾就这样擦就行，为什么呢?我刚才也说过这些都是温室的包菇，都比较干净，擦干净就可以了，现在剪完就擦干净，这类型的酸冬菇，其实很多外国的网友都会买到的，品种还很多，今天就跟大家做一些简单的做法，就这样炒，炒菇有什么效果呢?</p></a>
+				<a href="#00:02:31.59" id="00:02:31.59" class="lt" onclick="jumptoTime(151, this.id)"><p>炒的时候再跟大家分享一下，我们先剪掉一些角，然后擦干净，今天是元宵佳节，顺道祝各位网友，拍拖的朋友成双成对，像我们这些人，恩恩爱爱，团团圆圆，最重要是心想事成，身体健康，星星，今天会不会做汤圆呢?</p></a>
+				<a href="#00:03:3.59" id="00:03:3.59" class="lt" onclick="jumptoTime(183, this.id)"><p>我今天上班做了很多，今天同事开大食会，做了些咸汤圆，我没有时间拍摄过程，拍了两张照片和大家分享一下，我们继续擦干净就可以了，這些新鮮冬菇其實很難擺放，有時候放在冰箱也不行，最好的溫度大概是十七八度左右，放在室溫的地方，不要焗著它，我買回來的時候忘記拆保鮮膜，在超市買的，焗一焗就變成這樣。</p></a>
+				<a href="#00:03:50.86" id="00:03:50.86" class="lt" onclick="jumptoTime(230, this.id)"><p>這些大隻的就剪一剪，為什麼要剪一剪?因為它們比較小，炒菜的材料大小要適中，炒起來就均勻了，今天不拿刀出來切，剪也可以，各位網友，今天晚上趕時間，買一包新鮮冬菇就這樣炒來吃，家裡有綠意粉，炒完冬菇放入意粉拌一拌就完成了，剪好之後就開始炒，炒之前先要熱鍋，開大火，燒到冒煙就關掉火，關掉火就慢慢熱鍋。</p></a>
+				<a href="#00:05:6.42" id="00:05:6.42" class="lt" onclick="jumptoTime(306, this.id)"><p>剛才就拍了蒜蓉，有些芫茜碎，點綴一下，我們就放一點油進去，不用太多油，炒冬菇一定要熱鍋，要大火，放進去，讓它爛一爛，現在就煎一煎，煎的作用是封锅表面，让水份吸收，炒菇时千万不要过火，否则会出水，而且它把油份拉得很快，剛才放那麼多油，它就已經沒有了，我們繼續煎一煎它，因為這些菇很快。</p></a>
+				<a href="#00:06:46.73" id="00:06:46.73" class="lt" onclick="jumptoTime(406, this.id)"><p>現在沒有油了，我們再放兩滴油下去，我們可以爆一下蒜蓉，現在才爆，因為蒜蓉很快燶，放蒜蓉後，先調小火，蒜蓉味出來後，把菇包好，這個菜式很快，最適合是夜晚吃的冬菇炒意粉，這時可以看到菇已經軟了，趁它還未出水前，加1 4 茶匙鹽，現在放黑椒碎，黑椒碎放多少就隨你喜歡，現在放牛油，如果沒有的話，可以加生抽，再炒幾下。</p></a>
+				<a href="#00:08:31.82" id="00:08:31.82" class="lt" onclick="jumptoTime(511, this.id)"><p>如果有意粉就不用加，如果沒有就可以起了，大家看看是不是很乾身，沒有水出，這個蒜蓉黑椒炒鮮冬菇就完成了，大家看看鍋子是不是很乾身，炒這些最重要是開大火，讓它鎖死菇的表面，不要太過火，過火一冒水菇就不好吃了，這個蒜蓉黑椒炒鮮冬菇就完成了，這些菜式簡單又易做，配意粉食又得，配公仔麵食又得。</p></a>
+				<a href="#00:09:20.46" id="00:09:20.46" class="lt" onclick="jumptoTime(560, this.id)"><p>今日分享到此為止，多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

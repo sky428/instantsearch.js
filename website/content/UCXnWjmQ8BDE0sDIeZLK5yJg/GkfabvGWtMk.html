@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【食辣多view】自製辣椒油／麻辣油🌶🌶🌶</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GkfabvGWtMk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【食辣多view】自製辣椒油／麻辣油🌶🌶🌶</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.38" id="00:00:0.38" class="lt" onclick="jumptoTime(0, this.id)"><p>pret� elected</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:7.52" id="00:00:7.52" class="lt" onclick="jumptoTime(7, this.id)"><p>preguntas，histogram，と思います</p></a>
+				<a href="#00:00:5.90" id="00:00:5.90" class="lt" onclick="jumptoTime(5, this.id)"><p>rament，Chris，releases，mog，ری，當然</p></a>
+				<a href="#00:00:4.74" id="00:00:4.74" class="lt" onclick="jumptoTime(4, this.id)"><p>lya，� 고양，favorable，tark，Chancellor，실</p></a>
+				<a href="#00:00:5.26" id="00:00:5.26" class="lt" onclick="jumptoTime(5, this.id)"><p>seating，spun</p></a>
+				<a href="#00:00:8.06" id="00:00:8.06" class="lt" onclick="jumptoTime(8, this.id)"><p>ties，Manufact Gill，PM</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:2.10" id="00:00:2.10" class="lt" onclick="jumptoTime(2, this.id)"><p>íb，Sha Federal，噔噔，馬田出來了，看不看得到這個辣椒，這個辣椒就是我們上一次，做那個雞翼尖的時候，留下的 所以我就想，這些辣椒這麼辣，幾隻都已經夠煮一鍋東西，其實是沒有機會會用完的，用不完的 總之我就想，可不可以把它弄成其他東西吃呢，那不如就把它轉成辣椒油，然後我就找食譜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:37.07" id="00:00:37.07" class="lt" onclick="jumptoTime(37, this.id)"><p>既然弄得了不如弄個特別一點的，一弄就弄一個麻辣的油，買賣買賣，就貴過原本的那包辣椒，幾倍了 不過不要緊，我們香港人都習慣了，幾百億都放進去了，超過幾百億算是什麼，首先呢，我們要一大盆辣椒，這裡大概是100克左右，那就夠做我們一盆的辣椒油了，因為切就太麻煩了，所以我想了一個方法，就是用剪刀剪。</p></a>
+				<a href="#00:01:10.88" id="00:01:10.88" class="lt" onclick="jumptoTime(70, this.id)"><p>這樣會快一點，而且簡單一點，為什麼要剪開它呢?</p></a>
+				<a href="#00:01:14.38" id="00:01:14.38" class="lt" onclick="jumptoTime(74, this.id)"><p>因為我們第一個步驟其實是需要將辣椒烘成為辣椒乾，這樣它才可以做到辣椒油，新鮮辣椒因為裡面水分太多了，水跟油混合不來，它就會很快變壞了，而且濕濕的就不適合做辣椒油，剪開它就可以幫助快一點烘乾，與此同時你可以開你的焗爐了，大概120度，你可以預熱，如果沒有焗爐也不行，那怎麼辦呢?</p></a>
+				<a href="#00:01:44.68" id="00:01:44.68" class="lt" onclick="jumptoTime(104, this.id)"><p>用我們原始一點的方法，就是趁日間很慢的時候，你跟那些阿婆爭曬塵皮的位置，就是你平時看到那些阿婆曬塵皮的，那你跟她鬥早下去，霸佔她的位置，然後說我要曬辣椒，然後你霸佔她的位置，那個關愛的塵皮位置，你就放在那裡曬，曬乾為止，但要小心喔，你霸佔她的位置，我不知道會加什麼進去，當然你跟阿婆爭就好一點。</p></a>
+				<a href="#00:02:11.68" id="00:02:11.68" class="lt" onclick="jumptoTime(131, this.id)"><p>如果你是跟阿伯爭，那你就可能變成不是素食，那不用很認真的，約莫屋就可以了，那辣椒油你想要多辣呢?</p></a>
+				<a href="#00:02:21.68" id="00:02:21.68" class="lt" onclick="jumptoTime(141, this.id)"><p>你可以用幾個方法去調整它的份量，第一就是辣椒的份量，第二就是辣椒的種類，其實不同的辣椒本身有一種不同的辣度，它有一個指數的，我忘記了它叫什麼名字了，沒有特意查Google，那個數字其實就是說那個辣椒要稀釋多少倍，你才會完全感覺不到它的辣味，那當然，這些指天椒在我印象中，就是幾百到千幾這樣。</p></a>
+				<a href="#00:02:43.68" id="00:02:43.68" class="lt" onclick="jumptoTime(163, this.id)"><p>如果我沒有記錯，平時我們吃的那些辣椒醬，辣椒醬的辣汁，大概都好像是幾百到一千的，那不同種類的辣度就會越來越高，那有些現在最高種到的辣椒，好像是去到一百萬度還是二百萬度的，在我印象之中，那所以你就可以調節辣椒的份量，還有辣椒的種類，那你說，不是啊，我只是想在家試做辣椒油而已，我不想弄那麼多東西。</p></a>
+				<a href="#00:03:12.68" id="00:03:12.68" class="lt" onclick="jumptoTime(192, this.id)"><p>可不可以有些簡單的方法，其實街市有乾辣椒賣的，那種都是中間辣，不是很辣，那你可以直接買那個辣椒，那你就可以省下焗的程序，這個程序純粹是我身癢，沒什麼事做才弄的，好，我們辣椒就切好了，整盤放在這裡，如果你是做麻辣的，那你就會需要花椒，我們可以同一時間放進去烘的，因為烘了，其實它的味道會比較容易出來，之後第三樣就是可有可無。</p></a>
+				<a href="#00:03:44.68" id="00:03:44.68" class="lt" onclick="jumptoTime(224, this.id)"><p>這個就是泡椒，泡椒就是大陸的麻辣火鍋裡面多數會有的，它辣度很低而已，是有一陣類似煙燻過的香味，我們加進去，它的味道就會更加特別，就是多一點不同的味道，這裡大概是辣椒的一半，我們又放在一起烘，這個不容易買的，街市也不是每個街市都有的，那你去到真的大一點的街市，通常你會問老闆，這個叫泡椒，你說要泡椒。</p></a>
+				<a href="#00:04:17.68" id="00:04:17.68" class="lt" onclick="jumptoTime(257, this.id)"><p>他就會有機會給你，超市就難找了，這麼大隻，這些就放進焗爐，120度，焗半個小時，如果你是已經有辣椒乾的，你就不用做這個步驟了，全部東西放進鍋裡炒，烘乾一點點水分，讓味道更容易出來，那就OK了，那我們現在放進焗爐，焗的途中就要準備其他配料了，這兩樣東西都是很重要的，有什麼泡椒、花椒。</p></a>
+				<a href="#00:04:50.66" id="00:04:50.66" class="lt" onclick="jumptoTime(290, this.id)"><p>你沒有其實不要緊的，這兩樣東西你最好就找到回來，不然你的那個就真的純辣椒油，就沒什麼香味什麼都沒有了，第一樣就是蒜頭，蒜頭，第二樣就是乾蔥頭，哎呀 乾蔥頭，這兩樣東西就是令到辣椒油多一點香味，還有一個很主要的作用就是令到油大罐一點，整大罐的容量，因為如果你是純辣椒油的話，你一小匙這樣舀下去。</p></a>
+				<a href="#00:05:20.66" id="00:05:20.66" class="lt" onclick="jumptoTime(320, this.id)"><p>已經是超級多辣椒，就會太辣了 沒什麼香味，這個其實是令到成半的東西，那個比例你容易一點控制，譬如我舀一小匙這樣放在麵上，那我剛剛好又不會太辣，然後又有多一點香味，這個是很重要的元素，首先處理好，也是這樣切了它 拿了它出來，然後切碎它 盡可能粒粒大小差不多，如果你是大小粒粒不同，那它炸的時候就會一粒熟一點。</p></a>
+				<a href="#00:05:51.66" id="00:05:51.66" class="lt" onclick="jumptoTime(351, this.id)"><p>一粒沒那麼熟，就會很麻煩了，還有自己做的辣椒油的好處就是，你可以調節那個辣度，譬如你可以多一點蒜蓉 少一點辣，那它就會香味多一點，好 處理完了，我們首先將這些東西，稍微切得差不多，因為它按出來那一下 壓那一下，其實不是很均勻，我們要稍微切一切它，讓它全部都變得差不多那麼小，蒜蓉 搞定。</p></a>
+				<a href="#00:06:20.66" id="00:06:20.66" class="lt" onclick="jumptoTime(380, this.id)"><p>撥東西是反轉刀的，看到嗎，不然你就會刮壞刀了，你會刮到刀很快變鈍，好 之後就到這個乾蔥頭，我們切掉它的頭，切掉它的尾，讓它可以摸到東西出來，乾蔥頭經常都會很容易很髒，所以撕的時候不要省，盡量撕多一點，撕多一層，那裡面的芯就會很乾淨了，之後跟切洋蔥一樣，你平時洋蔥怎麼切它都是這樣切的，因為我們是要切它成碎的。</p></a>
+				<a href="#00:07:0.66" id="00:07:0.66" class="lt" onclick="jumptoTime(420, this.id)"><p>做法都是一模一樣的，搞掂!乾蔥都切碎了，之後就到油了，辣椒油當然要有油，油要多少呢?我們大概需要150克，譬如你喜歡多油的就多放一點，因為辣椒油其實呢，我不知道你小時候是不是這樣，我小時候就喜歡吃辣椒油，但我又不喜歡吃那些渣的，那我就會很壞的，只是用一個小匙子不停地舀人家一點油，然後滴滴滴。</p></a>
+				<a href="#00:07:31.75" id="00:07:31.75" class="lt" onclick="jumptoTime(451, this.id)"><p>然後那些渣就丟掉，隨你們喜歡，多一點油就沒那麼辣，好，那我們大概用150克來做標準，那你看看我們的完成品，你覺得加多一點就多一點，少一點就少一點，那我們燒的這個油的溫度是慢火，就是最低火力，那就不要太熱，因為如果它太熱，你一丟這些蔥、蒜、蒜進去，你一丟進去就會馬上燒焦，那我們就炸不乾它裡面的水分。</p></a>
+				<a href="#00:07:59.75" id="00:07:59.75" class="lt" onclick="jumptoTime(479, this.id)"><p>好，來了，應該差不多了，你看到略為稀了一點，就是油有差不多的熱度了，那我們先放蒜頭，後放蔥，攪開它，慢火炸它，那要炸到它盡乾，因為我們那罐油可以保存很久，如果裡面有水分，它就保存得相對沒那麼久，還有機會發泡，但乾不代表要焦，你又不是要炸到它變脆，如果不是太脆其實會影響那個東西，我是要那個香味。</p></a>
+				<a href="#00:08:31.75" id="00:08:31.75" class="lt" onclick="jumptoTime(511, this.id)"><p>而不是要咬下去有些啵啵聲，所以你要拿那個中間位，這個過程其實挺久的，不是炸一會兒，就算我切到那麼衰，也不是說炸一會兒，就會馬上變得很乾，炸到一會兒就可以放蔥了，整個過程其實不用很久，因為譬如我們真的要自己焗辣椒，就放一個辣椒進去，然後就炸這個東西，整個過程我想九個字之內，其實可以完成。</p></a>
+				<a href="#00:09:4.75" id="00:09:4.75" class="lt" onclick="jumptoTime(544, this.id)"><p>那罐東西做出來也有200ml左右，可以用很久，除非你吃很辣，但是大家都知道，我們不是吃辣頻道的，那如何分辨炸的乾味呢?</p></a>
+				<a href="#00:09:18.19" id="00:09:18.19" class="lt" onclick="jumptoTime(558, this.id)"><p>一方面可以用眼睛看，第二個方向就是看水蒸氣，如果你看到現在還有很多水蒸氣在這裡，水蒸氣你看到有很多在這裡，證明裡面還有很多水分，一直攪拌它，因為蒜蓉會黏底，你只看到水蒸氣現在已經很少了，沒有什麼水蒸氣了，那就是那一盤東西已經差不多了，你看到蒜蓉這樣舀上來已經微黃了，如果你再炸它就會變炸蒜了。</p></a>
+				<a href="#00:09:45.79" id="00:09:45.79" class="lt" onclick="jumptoTime(585, this.id)"><p>那差不多就可以關火了，好!回來了，那你看到辣椒已經變成了辣椒乾了，那它剛剛出爐還有一點軟身的，等你放涼一點它就會變硬了，這個好像鵝氣，沙鎚，有些鵝水的主音通常不會玩鵝氣的，它就會拿著一個沙鎚這樣，好!沒了，放進攪拌機裡把它攪爛，還有我自己為什麼要攪拌呢，因為其實我很怕吃到原裝一顆花椒，然後啪一聲然後就。</p></a>
+				<a href="#00:10:29.59" id="00:10:29.59" class="lt" onclick="jumptoTime(629, this.id)"><p>咿呀，然後口有一點麻痺的感覺，我是不太喜歡的，所以我喜歡把花椒也攪爛，看一下，差不多，嘩!嘩!</p></a>
+				<a href="#00:10:44.79" id="00:10:44.79" class="lt" onclick="jumptoTime(644, this.id)"><p>嘩!幸好戴了眼鏡，有兩個方向的，一個方向就是辣椒油，那你就可以把它攪爛才倒進油裡，如果你想像一罐醬那樣，你就可以把全部東西先攪爛，丟進油裡，我們最後完成之後，整罐油放進去再打一次，它就會很融合，好像花生醬那樣，整塊的，兩個方向看你喜歡哪個，我們首先燒熱一點油，略為煮一煮就可以了，那些味道其實呢。</p></a>
+				<a href="#00:11:15.92" id="00:11:15.92" class="lt" onclick="jumptoTime(675, this.id)"><p>在你放了罐子之後，它都會慢慢流下去，那我們就把材料直接放進去，這個辣椒裡面就可以了，第一樣呢，你可不可以放，但是放了的話，味道又會有性格一點，就是五香粉，它會令到整樣東西，有一點點好像，接近可以拿來炆東西的味道，那我們放五克五香粉，得車啊喂，好，之後呢，還有一點點鹽，鹽有兩個作用的，一來有一點鹹味。</p></a>
+				<a href="#00:11:42.54" id="00:11:42.54" class="lt" onclick="jumptoTime(702, this.id)"><p>二來可以令到你的東西，保存得久一點，那你看到油呢，開始煮滾了，那我們把火收小一點，因為我們不是要炸焦這些東西，我們只是要一點點溫度，讓那些辣椒，可以融入油裡，因為辣椒素是油溶性的，還有其他東西，都是那些香味，都是融入油裡的，所以要一點點溫度，去幫一幫它，因為要重複這樣，炸兩次，所以一開始呢。</p></a>
+				<a href="#00:12:11.64" id="00:12:11.64" class="lt" onclick="jumptoTime(731, this.id)"><p>那些蒜頭和蔥，就不可以炸得太多，我們加上辣椒，攪一攪它，那來到這一刻呢，你可以看看，你覺得那些油夠不夠，不夠你可以加一點，這個時候呢，如果你是敏感的話，你記得戴口罩，因為那股味道，都蠻濃烈的，那約莫煮它幾分鐘，好那你煮多一會兒，就可以關火了，那略為呢，放涼一點點，不要太過熱，因為油是可以去到百多度的，那你那個玻璃罐呢。</p></a>
+				<a href="#00:12:47.64" id="00:12:47.64" class="lt" onclick="jumptoTime(767, this.id)"><p>就算它是耐熱的玻璃罐，都未必可以承受到，那麼高溫度的，所以略為放涼一點點，就算它差不多一百度了，那你的罐也不會爆開，一個呢，你就放進滾水裡，煮它，那讓它呢，那個罐裡面呢，就不要有菌，第二個方向呢，就是，正常家裡沒有的，就是拿一些消毒酒精，食用消毒酒精，噴它一下，然後等它乾，那麼那些菌呢，就會死光了。</p></a>
+				<a href="#00:13:16.24" id="00:13:16.24" class="lt" onclick="jumptoTime(796, this.id)"><p>因為如果你沒有做這個步驟呢，又是有機會有菌的話呢，那麼會發霉的，尤其是你做果醬那類的東西呢，就會更加明顯，一定要做這個動作，如果你沒有做呢，很容易壞的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:29.34" id="00:13:29.34" class="lt" onclick="jumptoTime(809, this.id)"><p>temptationceğiz，buds</p></a>
+				<a href="#00:13:29.82" id="00:13:29.82" class="lt" onclick="jumptoTime(809, this.id)"><p>expectancy，dois，OK就可以裝起來了，這東西其實有很多個方向，你可以做很多種不同做法的，例如，你可以加一些豆豉、花生，就會變成另一種辣椒醬，好!完成!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:57.85" id="00:13:57.85" class="lt" onclick="jumptoTime(837, this.id)"><p>其實實際做出來會大過這個罐少少，即是油多少少，同埋我再另外額外加多左少少油，因為我覺得渣太多油太少，所以就再額外加左50ml左右既油，咁樣，咁令到個比例，岩返D，就係咁樣啦，可以留言話比我知呢，你想見到呢罐油攞黎整乜野辣既野性，可以係下面留意，咁呢今集就差唔多啦，記得like facebook follow instagram，訂閱啦可以加入會員贊助。</p></a>
+				<a href="#00:14:31.95" id="00:14:31.95" class="lt" onclick="jumptoTime(871, this.id)"><p>同埋呢我地逢星期一啦星期三啦星期五呢，都會有新片既，就係咁樣啦，下次再見，拜拜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:45.95" id="00:14:45.95" class="lt" onclick="jumptoTime(885, this.id)"><p>因為你係揸住佢個釘，揸住佢個釘，呢個夾已經用爛左，點解要再用一次呢。</p></a>
+</div>
+	</body>
+</html>

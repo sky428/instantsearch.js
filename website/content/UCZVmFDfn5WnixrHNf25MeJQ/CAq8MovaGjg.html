@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉  私房 鹽焗雞 惹味 秘技 Chinese Salted Chicken</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CAq8MovaGjg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉  私房 鹽焗雞 惹味 秘技 Chinese Salted Chicken</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.41" id="00:00:8.41" class="lt" onclick="jumptoTime(8, this.id)"><p>我聽日就慢慢試呀，咁呀雞皮呢個位呀，細胖包咁咪醃下隻雞胸裏面囉，關鍵時刻啦，Hello各位大家好又係我星星同大家職人吹水啦，首先就好感謝廣州兩位網友，又送咗啲手信畀我啦咁呀，一支，頂級嘅頭抽，廣州腐乳，鹽焗雞粉呀，咁亦好多謝我即人吹水其中一位管理員，阿輝幫我帶落嚟呀，相當感激三位。</p></a>
+				<a href="#00:01:10.82" id="00:01:10.82" class="lt" onclick="jumptoTime(70, this.id)"><p>咁我自從，拍咗片之後同埋成立咗facebook群組呀，我自己最感恩就一樣嘅就係話好實在咁識到一班實實在在個網友，呢種感受，人與人之間嘅接觸，絕對唔係可以用，幾多錢去衡量㗎，今日攞咗呢三樣嘢落嚟咁有啲咩吹呀，呢包叫做鹽焗雞配料呀，咁我就為咗隆重提示，咁我又買咗兩隻走地雞，咁一隻我尋日已經係整咗做。</p></a>
+				<a href="#00:01:59.46" id="00:01:59.46" class="lt" onclick="jumptoTime(119, this.id)"><p>五杯雞呀咁就攞上個網友個小型聚會嗰度同大家，分享下啲刀工呀斬雞嗰啲呀，咁今日呢隻雞呀，就做一隻鹽焗雞同大家吹下水，咁我買呢啲叫做即日鮮走地雞呀，咁我畀一般嗰啲冰鮮雞就貴少少呀，我哋都係擺喺度，我哋畀四五個茶匙鹽落去我哋浸咗十分鐘，咁呢隻雞大約兩斤鬆少少呀，咁我哋處理啲雞呢啲呢類型嘅冰鮮雞呀我都講過多次呀，雞嗰兩舊糕。</p></a>
+				<a href="#00:02:52.20" id="00:02:52.20" class="lt" onclick="jumptoTime(172, this.id)"><p>我哋要抆咗出嚟先，抆咗出嚟之後啦，我哋，落去，雞肺嗰啲位，特別係浸雞呀，如果你雞肺嗰啲位呢我哋唔話咗佢啦嗰隻雞呀，浸出嚟呀真係唔靚嘅嗰個位呢就好難會熟嘅，我哋而家就話清楚曬佢先，咁我哋洗咗期間啦咪檢查你雞有啲位呀即係乾唔乾淨呀呢隻雞都，乾淨，唔好乾淨我咪用少少鹽囉，擦一擦佢啦呢啲位。</p></a>
+				<a href="#00:03:37.79" id="00:03:37.79" class="lt" onclick="jumptoTime(217, this.id)"><p>雞毛嗰啲我哋咪蚊一蚊佢囉，咁我哋而家就過去兩次水，即係洗咗三四次之後啦，咁我哋咪，雞胸呢度向下，將雞囊嗰啲水我哋瓊返曬出嚟，咁我哋又擺埋一邊備用先，咁你嘅時間我哋準備啲配料，呢啲配料嚟㗎，臘腸呀，臘腸同鹽焗雞都有關係呀，有㗎，臘腸出嚟洗乾淨佢，跟住，而家，我哋，搵啲滾水，十一十佢先，我哋開咗煙滴雞。</p></a>
+				<a href="#00:04:26.41" id="00:04:26.41" class="lt" onclick="jumptoTime(266, this.id)"><p>咁我哋都要，印乾水，整隻雞，內內外外我哋將佢吸乾曬水，雞囊裏面呀，乾淨曬，咁我哋咪開始業啦，咁我就打算呢個30克呀我就打算用，半包，將雞出面，煙雲佢，咁我另外，細胖包咁咪要買隻雞胸裏面囉，咁呀用剩少少，睇下個鹹度如何先，差唔多，雞囊裏面，我哋搵手，慢慢出，這包的包裝，一包就剛好可以用一隻雞，也可以用三分之二的包裝，剩下的就用來做沙薑汁。</p></a>
+				<a href="#00:05:45.38" id="00:05:45.38" class="lt" onclick="jumptoTime(345, this.id)"><p>我剛才也做了一點來試，它也蠻鹹的，我決定用15g就夠了，剩下的就用半包，最好就醃它兩三個小時，在醃的時候，我們準備薑和大量的蔥，蔥的份量大概十條，現在就把它改好洗乾淨，洗乾淨之後，我切了一點洋蔥絲，因為沒有乾蔥，所以就切一點洋蔥絲，這些汁不太好看的，我們也不要丟掉，我們也放一旁備用。</p></a>
+				<a href="#00:06:35.30" id="00:06:35.30" class="lt" onclick="jumptoTime(395, this.id)"><p>蔥頭的部分，我們不要，蔥白的部分，我們保留，這裡也放在一旁備用，把薑也刮乾淨，切成薄片就可以了，切薄片，讓它容易出味，要這麼多薑，多一點薑，準備好所有材料之後，臘腸我們蒸了15分鐘，一定要蒸熟的，我們就把醃好的雞拿出來，我們現在要怎麼做呢?首先把雞腿塞進去，這個就讓它撐開雞胸。</p></a>
+				<a href="#00:07:34.94" id="00:07:34.94" class="lt" onclick="jumptoTime(454, this.id)"><p>然後把熱的臘腸塞進去，我們放兩片薑片，放兩條蔥白，放一點洋蔥，如果有乾蔥就放一點就最好，弄好了，然後就把整隻雞拿出來，鹽焗雞，怎樣焗呢?</p></a>
+				<a href="#00:08:10.90" id="00:08:10.90" class="lt" onclick="jumptoTime(490, this.id)"><p>有焗爐就最好，整隻放進去，用160度，焗35-40分鐘，星星，如果沒有焗爐，怎麼辦?</p></a>
+				<a href="#00:08:24.30" id="00:08:24.30" class="lt" onclick="jumptoTime(504, this.id)"><p>這個問題問得相當好，因為我沒有焗爐，可以放進電飯煲，不然用那麼多薑蔥做什麼?</p></a>
+				<a href="#00:08:32.60" id="00:08:32.60" class="lt" onclick="jumptoTime(512, this.id)"><p>如果這麼大的雞，電飯煲也放不下呢?</p></a>
+				<a href="#00:08:36.22" id="00:08:36.22" class="lt" onclick="jumptoTime(516, this.id)"><p>那就用鍋子來做吧，今天就用鍋子跟大家分享這個做法，我們準備開火，把最不漂亮的放在最底，然後，普普通通的放在中間，洋蔥、薑片，我們就放一層一層，先放進去，洋蔥、薑片，最漂亮的這幾條放在最頂，這段時間，我們放一塊雞油進去，期間保持大火，這段時間，我們把整隻雞放進去，大家聽到聲音嗎?</p></a>
+				<a href="#00:09:40.12" id="00:09:40.12" class="lt" onclick="jumptoTime(580, this.id)"><p>聽到嗎?我們準備了紹興酒，每次大概放100毫升，放了一會兒之後，蓋上蓋子，頭十分鐘要放三次，現在等三分鐘，現在約兩分鐘，我們看看裡面有沒有水分釋出，有一點水分，我們再放一點進去，繼續煮，這裏也是過兩三分鐘，又焗了兩分鐘多，現在先開一開它，放回正常的位置，然後我們放第三次，因為紹興酒沒有了，所以我拿一支雙蒸的。</p></a>
+				<a href="#00:10:45.58" id="00:10:45.58" class="lt" onclick="jumptoTime(645, this.id)"><p>現在再焗兩分鐘，全程焗了十分鐘，看看怎樣，水分不太多，再加一次紹興酒，調小火，蓋上蓋子，這次焗了二十分鐘，用小火，現在是二十分鐘保持最小火，我們看看它的模樣，看一看它的模樣，看它熟不熟，看是看不到的，調一下位置，十分鐘了，反轉雞看看什麼模樣，開了，我們還是用最小的火，看雞腿的位置，差不多熟了。</p></a>
+				<a href="#00:11:53.98" id="00:11:53.98" class="lt" onclick="jumptoTime(713, this.id)"><p>我們再反轉看看，顏色也很漂亮，現在拿起來，這個時候是關鍵時刻了，放在底部，先把它放涼，大家看見底部嗎?</p></a>
+				<a href="#00:12:14.88" id="00:12:14.88" class="lt" onclick="jumptoTime(734, this.id)"><p>這就是精華所在，這些油，我們等一下再把它隔出來，我憑經驗就看得出它是熟的，大家猜不到的話，用筷子，用雞腿最後的位置，刺進去看看是否能刺進去，還有看它釋出的水是否有血水，我們這邊也刺一下，水是透明的，代表雞已經熟了，鍋裡的精華，我們現在就把它倒出來，這些就是精華，用這麼多雞油、薑、蔥。</p></a>
+				<a href="#00:13:4.12" id="00:13:4.12" class="lt" onclick="jumptoTime(784, this.id)"><p>煮出來的汁不是很多，油分解出來有什麼作用呢?</p></a>
+				<a href="#00:13:11.54" id="00:13:11.54" class="lt" onclick="jumptoTime(791, this.id)"><p>我們拿一包鹽焗雞粉出來，我們把它打開，用來蘸雞吃，也很棒，或者用來拌麵也很好吃，這些薑蔥就直接吃，這些已經可以直接吃了，雞已經冷卻了一點，我們把它拿出來，把它放進去，先把雞腳的位置拿出來，這邊也是，咁我哋就搵返個鉗出嚟啦將，裏面，臘腸攞返出嚟，增加你嘅香味呀嘛，你咪攞攞，攞攞。</p></a>
+				<a href="#00:14:17.05" id="00:14:17.05" class="lt" onclick="jumptoTime(857, this.id)"><p>仲有煙出緊㗎喎，啲雞熱呢就好難斬嘅咁我慢慢嚟啦，咁我哋，搵返轉佢，咁我今日就食半隻呀我留返半隻，雪咗佢，聽日咪可以做手撕雞囉，我哋攞一刀，熟曬呀，少少出嚟，攞到，攞走佢啦咁我擺埋邊先，咁我哋擺埋邊，咁我哋先一圈嘅雞腿呢度出嚟先，嗰啲油我哋放一放佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:15.93" id="00:15:15.93" class="lt" onclick="jumptoTime(915, this.id)"><p>呢度攞到，熟曬，相當之嫩滑，咁我哋撳住呢度呀，方法，咁我哋排返隻雞出嚟啦，咁我呢間斬唔出嚟啦咁樣，都係咁樣排快㗎喇喎，我哋首先，處理咗個，雞背先，咁樣囉，咁咪飽咗份先啦，跟住到雞胸呢個位，唔過骨嘅我哋呀一啱佢，咁樣又唔好要，玩咗出嚟我哋執佢啦，一雞做手撕雞，好好食㗎，我聽日就慢慢試呀，咁我繼續呢個位呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:29.75" id="00:16:29.75" class="lt" onclick="jumptoTime(989, this.id)"><p>放進去，雞翼，我們在這裏湯一湯，壓住，拍一拍，用剛才的鹽焗雞粉，配上雞油，再點鹽焗雞，這樣就一流了，如果雞有時間，最好醃半天，這樣更好，很感謝廣州的網友，也很感謝阿輝幫我帶來鹽焗雞粉，今天這個鹽焗雞粉分享到此為止，喜歡吃鹽焗雞的網友給我LIKE我星星，訂閱我職人吹水的頻道，幫我分享一下，鹽焗雞。</p></a>
+				<a href="#00:17:21.75" id="00:17:21.75" class="lt" onclick="jumptoTime(1041, this.id)"><p>我先吃飯了，多謝收看，再見。</p></a>
+</div>
+	</body>
+</html>

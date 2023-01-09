@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉吉品鮑魚 鮮竹蒸鳳球 冬至快樂 (備註欄有詳盡食譜 參考)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Iy8IOJ7ZgzA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉吉品鮑魚 鮮竹蒸鳳球 冬至快樂 (備註欄有詳盡食譜 參考)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:11.29" id="00:00:11.29" class="lt" onclick="jumptoTime(11, this.id)"><p>大家好，又係我星星同大家職人吹水，大家好，今日正正就係冬至正日正所謂冬大過年，好高興收到你咁嘅送畀我一份，殿堂級嘅冬至禮物咁點解話殿堂級呢，紅燒元貝至尊鮑魚呀嘛，佢仲係嚴選吉品鮑魚去做呀，眾所周知啦鮑魚品質當中呢，吉品包呢，就即係最高級別嘅，咁吉品包個特性呢就係話，鮑魚肉。</p></a>
+				<a href="#00:00:53.01" id="00:00:53.01" class="lt" onclick="jumptoTime(53, this.id)"><p>嗰個味道呀係特別香濃嘅，同埋嗰個口感呢就特別好嘅，自己浸發一個吉品鮑魚呢，就即係相當之多工序嘅，咁而家有一個，禮盒裝，咁我自己都未睇喎，整開咗啦，相當之精美嘅裏面，睇到，鮑魚，嗰個形狀喇喎，我上年呢我都做過好多，呢類型，禮盒裝，或者罐頭鮑魚，咁大家可以參考下我嗰個，鮑魚，福建飯啦，鮑魚乾燒伊麵啦鮑魚盤菜啦。</p></a>
+				<a href="#00:01:41.39" id="00:01:41.39" class="lt" onclick="jumptoTime(101, this.id)"><p>咁當然，今次收到你咁嘅一個旗艦級嘅禮盒裝鮑魚，咁我哋做一個，賀年送菜，既簡單又易做嘅我而家睇下材料先，凍雞排一塊，新鮮腐竹四條，咁咪浸咗少少糖生菜啦，急凍雞排任何超級市場都會有得買㗎喇，簡選呢啲雞排嗰陣時呢就盡量揀啲，就比較有肉色呀有粉紅色呀呢啲咁嘅質量就會比較好，咁樣我哋。</p></a>
+				<a href="#00:02:19.27" id="00:02:19.27" class="lt" onclick="jumptoTime(139, this.id)"><p>雪櫃四度嘅溫度嗰度呀失溫嘅攤到去軟身，咁我跟住我哋攞咗出嚟，今次呢就唔需要唔需要皮，所以我哋呢個時候呢我哋將整塊雞扒皮呢，就蚊咗佢，感覺我哋要把嗰啲蚊咗㗎，處理呢兩件急凍雞扒有一個好重要嘅竅門就係同大家分享，我哋攞一個茶匙鹽落去，跟住我哋放啲少少淡鹽水，浸佢十零二十分鐘用淡鹽水浸嘅目的呢都係希望令佢呀，雞扒嗰啲肉呀有少少收縮嘅從而迫咗雞扒裏面嗰啲。</p></a>
+				<a href="#00:03:2.49" id="00:03:2.49" class="lt" onclick="jumptoTime(182, this.id)"><p>雪味呀血水呀逼佢出嚟咁我哋而家浸一浸佢先，咁雞扒浸緊之際咁我哋又睇返你啲新鮮腐竹，咁你啲新鮮腐竹呢任何賣豆品嘅地方買豆腐嘅地方都會買到，我哋返到嚟啦我哋係響響水沖一沖佢，乾水就ok呀，咁我準備少少糖生菜，咁我哋沖乾淨佢浸水浸佢半個鐘咁我一陣用嚟，做一個半碟，咁材料浸緊之際咁呀同大家做一個。</p></a>
+				<a href="#00:03:39.87" id="00:03:39.87" class="lt" onclick="jumptoTime(219, this.id)"><p>開箱儀式呀，咁開咗之後呀，隻隻鮑魚都相當之飽滿，咁我睇到有兩隻三隻手指咁上一大粒呀，咁我仲有一個特點呀就係話，佢用多咗一包，紅燒元配至尊鮑魚汁呀，咁我哋首先啦嗰啲鮑魚出嚟畀大家睇下先，真係，而家個汁呢就已經係金光閃閃呀，呢類型呀，佢執呢，佢長時間為咗鮑魚呀咁即係鮑魚咪更加入味啦，咁另外仲跟住一包呢紅燒元配至尊鮑魚汁呢。</p></a>
+				<a href="#00:04:37.99" id="00:04:37.99" class="lt" onclick="jumptoTime(277, this.id)"><p>咁呢個鮑魚汁呢，就真係相當之多用途呀即係特顯呢個禮盒包裝呢，咁不單止可以做，平時嗰啲種菜啦亦係可以，做下啲，瑤柱扒豆苗呀嗰類嘅話而家開出嚟畀大家睇下先咁我哋開之前呢，一定要將佢搖勻㗎，因為裏面呀佢係充滿元貝絲嘅，全部倒曬出嚟呀，金剛閃閃呀你睇下嗰啲，都係相當之粗大嘅，大粒嗰啲。</p></a>
+				<a href="#00:05:14.48" id="00:05:14.48" class="lt" onclick="jumptoTime(314, this.id)"><p>要去做嘅，咁我睇完咁頂級嘅吉品鮑魚呢咁我哋就望一望啲雞扒，都約浸咗有十零分鐘咁我哋就猜一猜佢跟住我而家我哋就沖水，洗到佢冇曬血水為止，洗乾淨後盡速將佢瓊水，雞扒不單止用瓊水，我哋仲要攞張廚房紙出嚟啦，將雞扒所有嘅水份呢吸乾佢，咁快啲返到為止得呀，黐手有少少，咁而家呢我哋就將佢改一改佢，大家要留意個尾呀。</p></a>
+				<a href="#00:06:4.48" id="00:06:4.48" class="lt" onclick="jumptoTime(364, this.id)"><p>佢個尾都會有啲金喺度，咁我哋改咗少少跟出嚟唔好要，跟住而家我哋，一粒粒先，咁你快啲打約200g咁上下啦，咁一陣就會分成，六粒嘅鳳球呀，咁你又切成一粒粒，方便，咁我哋就盡量用個刀頭去剁，咁就剁咗呢邊先，咁我而家咪喺呢邊剁啦，所有雞扒纖維都要剁到斷曬，咁我手唔使好碎呢又唔使好碎㗎喎，雖然話用一塊凍雞扒去做㗎喎。</p></a>
+				<a href="#00:07:0.28" id="00:07:0.28" class="lt" onclick="jumptoTime(420, this.id)"><p>但係你用手剁呢你又突顯咗你真係擺咗心機時間落去㗎喎，做一個賀年送菜同屋企人分享，呢個係最重要，兩三分鐘呢一咁上下咁就ok呀咁我哋而家就擺返手，打呢個鳳球，做呢個鳳球呀，我哋首先，落三分一茶匙鹽落去，落鹽落去嗱嗱個作用呢就等佢快啲起膠，大家睇我一落咗鹽，幾下就已經出曬嚟喇喎，好簡單呀。</p></a>
+				<a href="#00:07:40.36" id="00:07:40.36" class="lt" onclick="jumptoTime(460, this.id)"><p>咁未個來源，我哋利用返去嗰個，瑤柱汁，咁我哋落，兩個湯匙落去就已經足夠喇，咁最後加返一個茶匙生粉落去，咁就已經ok喎跟住我哋將生粉，瑤柱鮑魚汁，嗰啲味道呢，我哋全部就，搬運佢，咁我哋嗱約嗱一分鐘，攞到呢佢再度粘手咁就為之ok呀，咁猜到再次粘手之後呀，咁我哋就，打佢幾下，咩打佢個作用呢，等佢個鳳球一更加脹身。</p></a>
+				<a href="#00:08:29.52" id="00:08:29.52" class="lt" onclick="jumptoTime(509, this.id)"><p>咁你咪做到出面，酒樓啲口感囉，跟住我哋，擺返入去雪櫃嗰度雪一雪佢，冇簡單呀，咁呢段時候我哋攞返啲鮮腐竹出嚟洗乾淨嘅係乾水，咁我哋就唔好整亂佢，打返場佢一般鮮腐竹啦佢個頭呢都會比較硬嘅，咁我哋就，偷咗佢出嚟，唔好咁樣喎，留返嚟煮齋，咁我哋呢就分開六份，打場佢分六份，咁而家我哋攞返啲雞丸出嚟，六個雞煲落去。</p></a>
+				<a href="#00:09:17.38" id="00:09:17.38" class="lt" onclick="jumptoTime(557, this.id)"><p>鳳球準備好之後咁我哋咪攞返我哋啲吉品鮑魚出嚟呀，咁我哋攞嘅匙羹出嚟，咁我哋就，一隻，咁我哋就，一手幫一幫，咁樣ok喇喎，鮑魚排好曬之後，咪好有氣勢呀，記得留返啲汁喎，咁我哋隨即又進入下一步，咁我哋開火先，燒啲水，咁水滾後咁我哋又隨即擺落去蒸，咁我哋蒸幾耐呀，蓋蓋，8分鐘，用大火殺那間蒸咗，8分鐘。</p></a>
+				<a href="#00:10:12.72" id="00:10:12.72" class="lt" onclick="jumptoTime(612, this.id)"><p>急不及待呀咁我睇下個模樣話，相當之香呀，鯨魚呀咁我哋點取決於，雞丸熟未呀，睇色出嚟嗰啲汁呀，透明就全部熟曬㗎啦，咁呢段時間呀我哋利用返頭先蒸嘢嗰啲水呀，打埋啲唐生菜，唐生菜咁我又將佢半邊，跟住我哋再返個火，燒返熱隻鑊佢，熱咗之後呢咁我哋擺兩滴油落去，跟住所有啲鑊係，頭先嗰個，搵返佢。</p></a>
+				<a href="#00:11:8.02" id="00:11:8.02" class="lt" onclick="jumptoTime(668, this.id)"><p>咁我哋就好簡單呀咁我哋用個中火慢慢，將個圈，推翻滾佢咁就ok呀，期間乜嘢都唔使落，因為呢佢本身呀已經有少少掛㗎，搵咗之後熄火，跟住我係咪將個圈慢慢，淋上去鮑魚嗰度，菜呢度又畀啲佢，呢個汁呢，就真係相當之夾嘅，夾邊個，先付足呀嘛，索曬啲精華，而家已經好想食呀，一個絕對係想得酒樓大湯嘅餸菜，將一個殿堂級紅燒元貝至尊鮑魚吉品包。</p></a>
+				<a href="#00:12:4.80" id="00:12:4.80" class="lt" onclick="jumptoTime(724, this.id)"><p>花少少心機、時間、簡單烹調，絕對是一個賞得大頭的菜式，這個禮盒包裝不單止方便自己烹調，過年送禮也是相當適合的，大家看包裝就知道，過時過節，你放了心思、心機去烹調，家人是會吃得出的，我職人吹水這個頻道，經常強調在家中吃飯的溫馨、重要性，喜歡食吉品鮑魚的朋友給個LIKE我星星，喜歡食瑤柱的朋友訂閱我職人吹水的頻道。</p></a>
+				<a href="#00:12:44.20" id="00:12:44.20" class="lt" onclick="jumptoTime(764, this.id)"><p>幫我分享一下這個吉品鮑魚瑤柱汁蒸鳳球，我先吃飯，多謝收看，下條影片再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【超科學】自製涼粉</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Igks-uypUxE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【超科學】自製涼粉</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，登登，夏天出來了，我們今天在家做一樣，完全沒有成本效益，就是在家裏做涼粉，那為甚麼要在家裏做涼粉呢?</p></a>
+				<a href="#00:00:22.94" id="00:00:22.94" class="lt" onclick="jumptoTime(22, this.id)"><p>在街上其實五塊已經可以買到這麼大塊了，但是我們這個頻道，一向都是，身癢的樣子，所有東西都喜歡自己做的，所以我們今天就會自己在家裏做涼粉，其實做涼粉是一個，材料超簡單，步驟超複雜，和牽涉很多科學知識的東西，首先，涼粉其實只有一種主要材料，就是涼粉草，涼粉草在中藥店，就可以買得到，涼粉草裏面有一種很特別的物質。</p></a>
+				<a href="#00:00:54.94" id="00:00:54.94" class="lt" onclick="jumptoTime(54, this.id)"><p>就是膠質，那涼粉的膠質，就是涼粉會凝固和會這麼彈的，主要原因，我們這次就要用，80g的涼粉草，這個份量其實是經過，一篇論文測試過的，就是有一些人是研究過，多少個水的比例，加多少涼粉草，出來是最容易溶解到，裏面的物質，之後我們要洗乾淨它，才可以下一步，好，洗完了，就可以拿去煲了，至於煲的時候，有一個重點。</p></a>
+				<a href="#00:01:30.76" id="00:01:30.76" class="lt" onclick="jumptoTime(90, this.id)"><p>有些人叫你放，有些人叫你不放，那樣東西就是鹼水，如果放了鹼水的涼粉，就會容易煲出涼粉的膠質，因為在鹼性的情況下，涼粉醋是比較容易解體的，那些膠質就會在涼粉醋裡面溶解溶出來，那鹼水是什麼?</p></a>
+				<a href="#00:01:52.12" id="00:01:52.12" class="lt" onclick="jumptoTime(112, this.id)"><p>就是平時我們做月餅啊，做那些鹼水粽啊，做那些雲吞麵啊，那些鹼水麵那些，那樣東西其實你說容易買還是不容易買，說難買也是不難買的，通常那些烘焙材料店，你都會買得到的，但我自己試過，效果就不是很好，我覺得放不放都好像沒什麼分別，然後我又再繼續找報告，之後就找到一樣東西，是很適合我們用的，如果你上一次有留心。</p></a>
+				<a href="#00:02:23.16" id="00:02:23.16" class="lt" onclick="jumptoTime(143, this.id)"><p>你就會想起這個東西，我們要令到水變得有鹼性，令到這個涼粉醋可以釋放它的膠質，沒錯，就是梳打粉了，其實梳打粉也是有一樣的功用的，而且我親身試過，效果是非常好的，還沒有那種鹼的味道，因為之前煲呢，為什麼剛剛好像有一點番茄味，就是因為用了鹼水的味道，會有一點點味道，但我用過梳打粉的效果是非常好的，究竟是多少呢。</p></a>
+				<a href="#00:02:56.92" id="00:02:56.92" class="lt" onclick="jumptoTime(176, this.id)"><p>涼粉醋是80g，水呢，就是1000ml，就是一L，涼粉醋應該是水的8%，就是那個研究說大概這樣，效果是最好的，如果我們是用梳打粉的話，就是5g，之後我們將我們的梳打粉放進去，攪勻它就可以倒進去了，然後你就會問，為什麼一定要放，不放會怎樣，不放呢，其實也可以的，以前也有人不放的，究竟有什麼分別呢。</p></a>
+				<a href="#00:03:27.32" id="00:03:27.32" class="lt" onclick="jumptoTime(207, this.id)"><p>就是速度的分別，如果你要不放，你煲到那個涼粉醋的膠質出來，5個小時左右，根據前人的經驗，2-3個小時是沒有反應的，我試過了，如果放了，差多少呢，半個小時就已經有了，我們拿中間位置，越煲越久其實越多，其實越好，因為時間太長就不適合經濟效益，浪費爐火、浪費電，所以我們這次會煲一個小時，中間就要不停地加水。</p></a>
+				<a href="#00:03:55.72" id="00:03:55.72" class="lt" onclick="jumptoTime(235, this.id)"><p>保持它的濃度是剛剛好，那它的釋放膠質的情況就會越好，膠質在涼粉的最主要作用，就是保持那個硬的彈性，之後我們還會用澱粉質，令到它有那個硬度，兩個是要配合的，所以全部東西都是有固定的比例，才可以做出來的，有一樣東西要超級留意的，就算我們這次是煮一L那麼少，你也需要一個超級超級超級超級超級超級超級超級超級超級大的鍋子，因為我們現在可能是1%的滿。</p></a>
+				<a href="#00:04:31.39" id="00:04:31.39" class="lt" onclick="jumptoTime(271, this.id)"><p>但是它滾起來會高過鍋子很多，高到那麼多，所以一滾就要立刻收到有那麼小火只有那麼小火，比你平時想像中那種小火，我們要再小一點點，因為加了梳打粉的關係，轉小火就可以加蓋，讓它煮一個小時，好，一個小時後回來了，其實也煮過了一點點，煮過了一點點，只是擦了而已，我發現了一個超級超級超級厲害的方法，看著我。</p></a>
+				<a href="#00:05:2.79" id="00:05:2.79" class="lt" onclick="jumptoTime(302, this.id)"><p>令它沒那麼容易滾起來，放一隻碟子進去一起煮，它就會壓著草，沒那麼容易滾起來，要量大概有多少液體，不可以亂來，因為待會會牽涉到我們需要加多少粉去煮稠一點，所以我們要知道究竟我們蒸發了多少，不然我只是告訴你加多少水去煮，其實每個人煮出來的份量都不一樣，之後的份量就會錯了，那約莫這裡500多。</p></a>
+				<a href="#00:05:37.99" id="00:05:37.99" class="lt" onclick="jumptoTime(337, this.id)"><p>現在就去下一個步驟了，要怎麼做呢，首先我們要加一些冷水進去，讓它變回我們要的量，如果你的粉量很多的話，就可以加冰，譬如你有800-900克的粉，那就是不可以加太多冷水進去，因為我們想它冷，你可以直接加冰進去，讓它變回一顆粒，好，那現在呢，就先加冰，因為我們都，熱熱地煮東西，那就剩下。</p></a>
+				<a href="#00:06:8.52" id="00:06:8.52" class="lt" onclick="jumptoTime(368, this.id)"><p>現在是六百多，再加上水，加到去一煮，那我們攪拌均勻，讓它變成一鍋，沒那麼熱的液體，就可以倒回鍋裡了，倒回鍋裡之後要做什麼呢，因為膠質呢，其實是可以再度引發它出來的，那要怎麼做呢，就是用手搓它出來，首先拿一些出來，然後捏捏捏捏捏捏，搓搓搓搓捏捏捏捏，那你會看到是滑滑滑的，然後你不停捏不停搓，搓完一會兒之後就放回鍋裡。</p></a>
+				<a href="#00:06:43.76" id="00:06:43.76" class="lt" onclick="jumptoTime(403, this.id)"><p>讓它那些膠質可以融入鍋裡，如果現在太熱，那你就做不到這個動作，所以我們是必須讓那些東西，冷卻的，那你感覺到差不多就可以，捏走那些液體，丟掉它，好，之後就倒進去，再隔一次，我們需要隔兩次，第一次呢，就是用筲箕就可以了，聽到嗎?熱熱的聲音，滑滑滑的，熱熱的聲音，為什麼要過兩次呢?</p></a>
+				<a href="#00:07:15.76" id="00:07:15.76" class="lt" onclick="jumptoTime(435, this.id)"><p>因為第一次我們過了最大顆，最沒用的東西，第二次才過滑一點，因為我們需要一個，你平時煲湯的魚袋，用來塗那些大過的茶袋，那些就真的可以，隔到沒有渣滓，好，再過第二次了，我們這次準備了一個，茶袋，應該可以的，其實我沒有實際試過再用茶袋隔，但是如果你家裡有，煲湯魚袋就更好了，因為大過一點，不會塞。</p></a>
+				<a href="#00:07:47.76" id="00:07:47.76" class="lt" onclick="jumptoTime(467, this.id)"><p>好了，我正式宣佈是需要用煲湯魚袋，但是我沒有，那怎麼辦呢?</p></a>
+				<a href="#00:07:55.76" id="00:07:55.76" class="lt" onclick="jumptoTime(475, this.id)"><p>不要緊，雙重過濾，但是你不要想著一開始就將涼粉草，放進去煲湯魚袋裡，因為這樣，粉度不夠，其實那些膠質是不會流出來的，這個成果根本就是一個，科學的實驗，你看到為什麼一定要過呢?</p></a>
+				<a href="#00:08:13.76" id="00:08:13.76" class="lt" onclick="jumptoTime(493, this.id)"><p>為什麼要過得這麼辛苦呢?</p></a>
+				<a href="#00:08:15.76" id="00:08:15.76" class="lt" onclick="jumptoTime(495, this.id)"><p>因為其實有很多一顆顆的東西，那些一顆顆不是茶葉，那種軟的一顆顆，其實是，涼粉草裡面有很多雜質，很多沙，很多的東西，所以其實一定要過濾，如果過濾不清，你會無緣無故吃到，一顆顆的東西，好，過了第一次，既然我們這麼差，過濾網，好，再過第二次啦，這次真的要量清楚，究竟有多少了，是這次這東西才可以，很多東西你帶兩個是不會安全的。</p></a>
+				<a href="#00:08:53.17" id="00:08:53.17" class="lt" onclick="jumptoTime(533, this.id)"><p>那照計算比例，我們需要的就是要加澱粉進去，那澱粉是多少呢，澱粉大概是2%至3%左右，看你想它有多硬，還有用不同的澱粉會有不同的，根據研究，你可以用粟粉，我自己試過可以用粟粉，但是它說最好最好最好，就是用片栗粉，那為什麼用片栗粉是最好呢，因為他們的測試就說，片栗粉因為是馬鈴薯的粉，薯仔粉來的。</p></a>
+				<a href="#00:09:26.37" id="00:09:26.37" class="lt" onclick="jumptoTime(566, this.id)"><p>它裡面所含的支連澱粉的份量，是最高，所以在化學作用裡面，就會最適合用來做涼粉，所以我們這次就選擇了用片栗粉，但是你待會煮的時候其實可以自己試，你煮的時候覺得它不夠濃稠，你可以再開一點點再加進去，沒什麼所謂的，只要一開始不要太多就行了，太多就回不了頭了，那我們就打好我們的粉了，那怎麼開呢。</p></a>
+				<a href="#00:09:53.37" id="00:09:53.37" class="lt" onclick="jumptoTime(593, this.id)"><p>拿一點點我們的液體出來，混合它，混合完之後，就將我們這些混合了粉的液體，慢慢的將它混合在這個東西裡面，之後就可以拿去煮了，好，現在就煮了，一邊攪拌一邊攪拌，讓它不會黏底，因為一煮過就很容易黏底，煮滾了，煮一會兒，煮一分鐘左右，確保它真的所有份量都夠糊化的溫度，那這個糊化是什麼呢?</p></a>
+				<a href="#00:10:28.53" id="00:10:28.53" class="lt" onclick="jumptoTime(628, this.id)"><p>有聽書的同學就會明白了，沒聽書的同學，出去罰站，那澱粉的比例和膠質的比例其實是很重要的，其實你可以加很多澱粉下去煮到它很稠，就算你的鍋子沒有膠質，都會凝固成一磚像涼粉那樣的東西，但是那個口感就會沒有那個爽的感覺，所以你可以省錢，加很少涼粉醋，然後加很多水，當然相對地那個膠質會少了，那之後你就要多加一點澱粉去補足那個量。</p></a>
+				<a href="#00:11:5.03" id="00:11:5.03" class="lt" onclick="jumptoTime(665, this.id)"><p>現在這樣就差不多了，類似現在這樣的狀況，有一點黏稠黏稠的，就是大家很熟悉的那個質感，類似那個質感就OK了，那之後冷了就會凝固了，將我們這盤涼粉倒下去，你見到是現在這個質感，你做涼粉就一定要是整顆硬的爽的，如果你將澱粉的量減少一點，你就會做到仙草，仙草凍，有時候你去喝珍珠奶茶，有一種叫仙草凍的東東。</p></a>
+				<a href="#00:11:38.03" id="00:11:38.03" class="lt" onclick="jumptoTime(698, this.id)"><p>其實那種是軟身一點的，就是在你煮這一刻，加少一點澱粉就會形成那一種，放涼一點就可以包保鮮紙，之後拿去冷藏，稍後回來，好 經過了一天，回來了，是時候下一步切粒了，正，它很軟的 它不是很硬的，味道超級硬 平時那些嗶嗶聲那麼硬的，如果你喜歡超級硬 你可以加多一點點粉去煮，它是介乎台式跟普通涼粉的那種中間，現在的狀態是。</p></a>
+				<a href="#00:12:18.14" id="00:12:18.14" class="lt" onclick="jumptoTime(738, this.id)"><p>有點緊張倒出來的東西，你們平時會怎樣吃涼粉的 我想問一下，你們會加糖水 加花奶 還是怎樣，好像可以硬一點 我也覺得有一點點軟，我這裡加了27 我想可以30至35都可以，這樣質感會再像涼粉一點，你們會加花奶和糖漿 是不是，最正的吃法，但是我兩樣都沒有 所以我想了一個很聰明的方法，你看看是不是等同。</p></a>
+				<a href="#00:12:52.14" id="00:12:52.14" class="lt" onclick="jumptoTime(772, this.id)"><p>你們投票看看是不是等同，我的吃法就是牛奶加煉奶，應該是等於花奶和糖漿的量，很接近的東西 這樣最後會，搞定，好!那這次就完成了，試一下，不夠甜，還有呢，可以再硬一點點，現在這個類似仙草凍的效果，就還沒到涼粉那麼硬，好了!那這集就來到這裡了，你最好加一些水果，就可以賣很貴，就不是幾塊錢一碗的涼粉了，記得Like Facebook Instagram。</p></a>
+				<a href="#00:13:42.59" id="00:13:42.59" class="lt" onclick="jumptoTime(822, this.id)"><p>訂閱，喜歡可以加入會員贊助，我們逢星期一、三、五，都會有新影片的，下次再見，掰掰。</p></a>
+</div>
+	</body>
+</html>

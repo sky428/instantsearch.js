@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人 吹水〉 手切薑蓉製作 編</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0inhRKha2dA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人 吹水〉 手切薑蓉製作 編</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由 Amara.org 社群提供，浸雞之餘，切薑絲和蔥絲，切薑絲和蔥絲，切成片後將它們排好，盡量切幼，有幼的可以切幼，薑已經去皮了，洗乾淨，預先準備一碗清水，蔥頭不要醃，大約切一吋，約一吋，排好慢慢切，切蔥慢慢切，這是做白王雞的薑絲蔥絲，葱白的可以切幼一点，葱切出来后，你觉得不太好看的话，不要紧的，放在水里，它会慢慢开。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:56.79" id="00:01:56.79" class="lt" onclick="jumptoTime(116, this.id)"><p>这些是大块的，可以再切幼一点，放在水里养着它，刚刚切完姜葱丝之后，还要和大家分享姜蓉，姜蓉是怎么做的呢?姜蓉是全部用手切的，怎么用手切呢?</p></a>
+				<a href="#00:02:36.29" id="00:02:36.29" class="lt" onclick="jumptoTime(156, this.id)"><p>我做一次给你们看，切到最薄的，切到最薄，接着切丝，也是最薄的，最幼，星星，为什么姜蓉你不磨呢?</p></a>
+				<a href="#00:03:4.65" id="00:03:4.65" class="lt" onclick="jumptoTime(184, this.id)"><p>我们在外面做的姜蓉，全部都是用机器打的，自己吃，用心切，再用手切姜蓉，将姜里面的纤维切到最细最幼，这些姜蓉就真的一绝，为什么呢?</p></a>
+				<a href="#00:03:32.69" id="00:03:32.69" class="lt" onclick="jumptoTime(212, this.id)"><p>是要自己切才能吃的，在外面，你叫它多贵的鸡也好，一定是没有手切姜蓉吃的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:45.33" id="00:03:45.33" class="lt" onclick="jumptoTime(225, this.id)"><p>给大家看看，是不是切得很幼，切到最幼的时候，再剁几下，implementing</p></a>
+				<a href="#00:04:15.43" id="00:04:15.43" class="lt" onclick="jumptoTime(255, this.id)"><p>observed，ucz pigs，shelf，breaking，cher referring，Гā，некоторые，Hay</p></a>
+				<a href="#00:04:17.95" id="00:04:17.95" class="lt" onclick="jumptoTime(257, this.id)"><p>ennen，ot pounding，humanity，anda</p></a>
+				<a href="#00:04:18.19" id="00:04:18.19" class="lt" onclick="jumptoTime(258, this.id)"><p>po目前，groups，BU внутри，advocate OMG，放入盤內，大約放半茶匙或三分一的鹽就可以，然後攪拌均勻，不用加蔥，攪拌均勻，放一旁，待會炸熟油時倒些熟油，這樣就可以了，這個薑蓉是主角，雞肉的配角，為甚麼?跟著做一次，自己食便知。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉肯德基 KFC 蘑菇飯 如何製作 原汁原味Mushroom rice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'm9QahGiPKzU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉肯德基 KFC 蘑菇飯 如何製作 原汁原味Mushroom rice</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Mushroom rice，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好又係我星星同大家職人吹水，大家好，咁自從開通咗個頻道會員之後啦咁呀有好多網友呀都喺度呀，有咩菜色想整呀，網友啦佢留咗好多次呀喺不同嘅渠道佢都話為星星，出面，賣炸雞嗰間快餐店嗰啲蘑菇飯點樣整呀點解我成日都整唔到嗰個味道，我已經用到最靚嘅新鮮蘑菇去整㗎。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.40" id="00:00:45.40" class="lt" onclick="jumptoTime(45, this.id)"><p>咁呢個問題呢就問得真係相當之好啦咁我亦係都係已經成佢，同大家分享下啦其實當中有啲乜嘢，奧妙呀有啲乜嘢，要拿捏呢其實，唔複雜㗎，咁做嗰個快餐嗰個蘑菇飯呀，咁我自己有時候我出去食炸雞飯呢炸雞呢我都會食嗰個飯嘅，咁我哋做呢啲蘑菇嘅菜色啦，我哋唔好用新鮮蘑菇去做，咁用咩蘑菇呀大家睇到呀罐頭蘑菇片呀嘛，咁點解用罐頭蘑菇片去做會好食過用新鮮蘑菇呀。</p></a>
+				<a href="#00:01:26.88" id="00:01:26.88" class="lt" onclick="jumptoTime(86, this.id)"><p>大家食法唔同，咁我可以同大家再分享多少少呀我有時做中菜呢做渣嘢，有一個叫做，包片爬生菜呀係齋嚟㗎咁我哋用啲咩包片呀嗰啲罐頭嗰啲叫做，包菇呀，出嚟切片去做，我用新鮮嗰啲呀大隻嗰啲包菇呢我哋係做唔到嗰種味呀，新鮮菇呀係有菇嘅鮮味，有菇嘅，草青味，咁呢啲，罐頭菇呢佢一樣好佢就同你，剔除咗佢個草腥味呀。</p></a>
+				<a href="#00:02:1.94" id="00:02:1.94" class="lt" onclick="jumptoTime(121, this.id)"><p>咁樣我哋就係要用一啲方法剔除一啲罐頭唔好嘅味道咁而家就同，分享下，材料有麵粉呀咁呀有啲清雞湯呀，新鮮牛油呀黑胡椒胡椒粉呀，咁咪仲有罐頭蘑菇片，咁罐頭首先我哋隔曬啲水先，咁我整一半就夠啦咁一般幾多呢整體蘑菇嘅份量呢約200，咁上下，咁我哋就倒落個兜嗰度先，罐頭啦，有一個好重要嘅步驟呢我強烈建議大家做。</p></a>
+				<a href="#00:02:40.94" id="00:02:40.94" class="lt" onclick="jumptoTime(160, this.id)"><p>我哋出面做一啲基本嘅做法咁我哋放啲水落去，咁我哋攞去煮滾佢我哋飛一飛水，咁飛到佢滾為止咁我哋就進入下一步，咁我哋攞返啲新鮮牛油出嚟咁我新車又落幾多呢呢度呀，落一隻手指位咁上下，一定要用新鮮牛油呀如果唔係呢就冇乜味呀，而家滾咗喇大家睇唔睇到我面頭啲泡咪一啲唔好嘅味道呀，撇除咗佢我哋隔水倒去先。</p></a>
+				<a href="#00:03:19.06" id="00:03:19.06" class="lt" onclick="jumptoTime(199, this.id)"><p>隔曬水就將佢瓊水咁而家就進入下一步喇喎，咁我哋輕輕燒熱即鑊佢，咁我哋第一步呢就落咗啲牛油落去先慢慢煎融佢，先緊之際呢咁我哋落埋啲蘑菇落去，等佢爆一爆佢有個香味，咁我哋就攞一攞佢呀等啲，新鮮牛油，爆一爆啲，罐頭草菇，咁我哋攞啲麵粉出嚟，咁我哋大約落一湯匙倒落去，咁我哋直接，喺呢度整個麵撈。</p></a>
+				<a href="#00:04:5.66" id="00:04:5.66" class="lt" onclick="jumptoTime(245, this.id)"><p>慢慢火，將牛油，麵粉咁我哋慢慢火炒香佢先，咁呢個時間呀，就設計唔好心急唔好大火因為好容易窿呀，咁我哋炒到呀，有啲牛油香味呀有少少麵粉香味呀咁呢個過程呢約30秒到咁上下咁ok，更加香我哋喺鑊邊嗰度呀走落去，更加好，嗰啲雞湯出嚟奧運去，咁我哋呀，落返到咁上下就ok呀，咁我哋呀，就開咗慢火。</p></a>
+				<a href="#00:04:55.76" id="00:04:55.76" class="lt" onclick="jumptoTime(295, this.id)"><p>慢慢將啲雞湯，麵糊，推勻佢如果感覺到要，而家仲可以加多少少雞湯，咁樣，保持一個慢火，咁我哋又推到去成個蘑菇汁咁樣，咁呢個時間我哋可以畀味，好簡單呀，胡椒粉，少少，主要味嘅來源，黑椒，黑椒味呀我哋就要好重呀，咁我呢度大約落到三分一茶匙，一定要足夠黑椒味咁你先會做到出面，嗰個快餐嗰個效果，之後我哋慢慢。</p></a>
+				<a href="#00:05:49.00" id="00:05:49.00" class="lt" onclick="jumptoTime(349, this.id)"><p>將佢推開佢呀，咁我哋將所有嘅汁滾起佢，完成未呀大家覺得，唔似樣呀，唔似樣呀有一樣嘢呢就要最後落嘅，當佢整體滾起之後，咁我哋攞少少老抽出嚟，老抽嘅作用係咩呀，豉油西餐呀梗係整色整水呀咁我哋教返啲色落去，咁ok呀，咁我哋又留返少少牛油落，喺最後落就更加理想但係頭先唔記得咗呀，有冇試咗呀。</p></a>
+				<a href="#00:06:36.36" id="00:06:36.36" class="lt" onclick="jumptoTime(396, this.id)"><p>咁老抽個份量又大家睇色水呀，呢個蘑菇飯未有份量嘅就好取決於你本身嘅雞湯，有啲好濃味呀就唔需要保鹽，咁我呢個啦我又補返少少鹽落去啦，呢個蘑菇飯呀，個汁呀，偏向濃先好食㗎咁樣ok㗎喇喎，一有order嚟蘑菇飯一個，咁咪即到啦，有啲乜嘢治癒得佢咁呀，我係咁豪俾佢呀，我喺出面呀叫我餐呀得三片至四片嘅細蘑菇呀，咁而家。</p></a>
+				<a href="#00:07:19.88" id="00:07:19.88" class="lt" onclick="jumptoTime(439, this.id)"><p>係咪好治癒呀大家，咁臨上碟之前再好多少少畀你點樣好呀，落咗少少黑椒落去更加惹味，如果再整個昇華版嘅，返西水落去啦，咁我淨成個頂頂配呀我哋叫做蘑菇飯，咁一個豪華版嘅蘑菇飯係呈現眼前啦，咁我鍾意食快餐蘑菇飯網友畀個like我星星啦，咁我鍾意，食黑椒網友訂閱職人吹水嘅頻道，咁我兩者都鍾意食嘅就歡迎加入我。</p></a>
+				<a href="#00:07:56.76" id="00:07:56.76" class="lt" onclick="jumptoTime(476, this.id)"><p>頻道會員，留言繼續吹水，咁今次分享就到此為止呀咁呀大家就記得幫分享下啦咁我就食飯先，咁多謝收睇。</p></a>
+				<a href="#00:08:7.26" id="00:08:7.26" class="lt" onclick="jumptoTime(487, this.id)"><p>下條影片再同大家再講拜拜。</p></a>
+</div>
+	</body>
+</html>

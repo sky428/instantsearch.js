@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【鹹片】岩鹽? 海鹽? 餐桌鹽? 真係有分別？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'bZy_iPqWHqI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【鹹片】岩鹽? 海鹽? 餐桌鹽? 真係有分別？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>曬噏唔做，登登，完成出來了，我們今天呢，厲害了，就是呢，說關於鹽的東西，究竟鹽是什麼?</p></a>
+				<a href="#00:00:19.86" id="00:00:19.86" class="lt" onclick="jumptoTime(19, this.id)"><p>究竟怎麼分呢?</p></a>
+				<a href="#00:00:21.26" id="00:00:21.26" class="lt" onclick="jumptoTime(21, this.id)"><p>有這麼多鹽，又有海鹽，又有岩鹽，又有餐桌鹽，這麼多種鹽究竟有什麼分別?</p></a>
+				<a href="#00:00:27.90" id="00:00:27.90" class="lt" onclick="jumptoTime(27, this.id)"><p>還有我們應該怎麼選呢?</p></a>
+				<a href="#00:00:29.94" id="00:00:29.94" class="lt" onclick="jumptoTime(29, this.id)"><p>拿來煮東西吃，首先說鹽，最普通的鹽，鹽是什麼呢?</p></a>
+				<a href="#00:00:35.58" id="00:00:35.58" class="lt" onclick="jumptoTime(35, this.id)"><p>鹽就是一種調味料，你可以當它是鹽，它最主要的成分就是，氯化鈉，氯化鈉佔了一包普通的鹽，佔了90%多，剩下的是什麼呢?</p></a>
+				<a href="#00:00:48.06" id="00:00:48.06" class="lt" onclick="jumptoTime(48, this.id)"><p>可能剩下一點雜質，還有有時候呢，會加一些，防止鹽結成一團的東西，就是把東西隔開隔開，讓它不要黏在一起，所以呢，一包鹽大概有九成多的重量，都是來自氯化鈉，氯化鈉就是讓我們覺得那東西鹹，那個味覺，的最主要成分，那你聽到了，氯化了的鈉，就不是綠色的，就是，是氯氣的氯，那鈉就是鹽裡面，我們最需要的一件事。</p></a>
+				<a href="#00:01:22.18" id="00:01:22.18" class="lt" onclick="jumptoTime(82, this.id)"><p>或者我們最不需要的一件事，為什麼這麼說呢?</p></a>
+				<a href="#00:01:25.42" id="00:01:25.42" class="lt" onclick="jumptoTime(85, this.id)"><p>因為現在人類的生活，實在太容易吸收到鹽了，所以呢，我們有時候會過量，那過量呢，就是對身體不好的，鈉過量，那太少會怎麼樣呢?</p></a>
+				<a href="#00:01:38.82" id="00:01:38.82" class="lt" onclick="jumptoTime(98, this.id)"><p>太少也是不好的，因為其實我們身體，是需要鈉這件事的，鈉是一種電解質，如果你知道電解質是什麼呢?</p></a>
+				<a href="#00:01:46.30" id="00:01:46.30" class="lt" onclick="jumptoTime(106, this.id)"><p>就是保抗力那些，那他說為什麼有什麼電解質呢?</p></a>
+				<a href="#00:01:49.78" id="00:01:49.78" class="lt" onclick="jumptoTime(109, this.id)"><p>電解質就是讓我們身體裡面的水分，可以帶走，帶那些營養走來走去的一個成分，所以我們是需要有這件事的，只要太多，就會形成心臟病，心血管疾病等等，那究竟一天我們吃多少才算多，還是吃多少才算少呢?</p></a>
+				<a href="#00:02:7.78" id="00:02:7.78" class="lt" onclick="jumptoTime(127, this.id)"><p>世界衛生組織建議，就是每天不要超過2000毫克，那多少鹽才會有2000毫克的鈉呢?</p></a>
+				<a href="#00:02:14.74" id="00:02:14.74" class="lt" onclick="jumptoTime(134, this.id)"><p>鈉大概在一包鹽裡面，就是三成多，就是鈉，三成多是鈉，因為它九成多是氯化鈉，那它實際就會有三成多是鈉，那變成了，五克的鹽，三成多，就接近，2000，那五克一個平湯匙，就是大概這麼多了，這裡就是我們一天身體最多最安全的地方，就是這麼多鹽，那你說我平時吃牛扒，這樣灑一點點就夠了，哪裡吃得到這麼多鹽，那你就要看其他東西的包裝了。</p></a>
+				<a href="#00:02:58.13" id="00:02:58.13" class="lt" onclick="jumptoTime(178, this.id)"><p>我們早餐，一條小腸子，多少啊，250，250，小腸子多做一個沙嗲牛肉麵，一匙醬油，319，那譬如你做一個這樣的餐，其實你已經吃了超過幾百毫克的鹽，納豆套了，那如果你的湯底是出前一丁的湯包，那你就要看出前一丁的湯包了，出前一丁的湯包都是有幾百的了，這些加起來，如果你經常外出吃或者經常吃製作過的食品，這些食品一定會爆的。</p></a>
+				<a href="#00:03:47.13" id="00:03:47.13" class="lt" onclick="jumptoTime(227, this.id)"><p>差不多一定會爆的，所以我們平時就要注意吸收一下這些，不要吸收太多不要吸收太少，那關於這一部分就說完了，我們說回和真的煮東西有關，那你說平時這些餐桌鹽就是純的，很純的，因為它是經過化學處理過，拿走其他不要的東西，剩下的只是綠化鈉，所以有90%多的綠化鈉，那這個就是我們平時的餐桌鹽，那我們除了普通的餐桌鹽之外。</p></a>
+				<a href="#00:04:18.13" id="00:04:18.13" class="lt" onclick="jumptoTime(258, this.id)"><p>我們還會看到其他鹽的，那各自有什麼分別呢，就是海鹽和岩鹽都是一些沒有經過精煉過的鹽，或者它精煉得沒這個那麼嚴重，所以它就會剩下很多的礦物質，我們先說岩鹽，岩鹽其實最主要就是一個地方，就是喜馬拉雅山，喜馬拉拉拉拉雅山，那喜馬拉雅山附近有一個湖，那這個湖就是鹹水湖，所以它就會結了一些鹽在那裡，而他們最主要生產出來的鹽。</p></a>
+				<a href="#00:04:55.13" id="00:04:55.13" class="lt" onclick="jumptoTime(295, this.id)"><p>都是這個顏色，粉紅色的，那有時候會是這樣的瓶裝，那它就會寫著喜馬拉雅山的粉紅色的鹽，有時候它會叫它做玫瑰鹽，但裡面是跟玫瑰完全沒有關係的，它這個粉紅色就是因為裡面有一種它們自己有的礦物質，所以才會變成粉紅色，第二樣你會買到的，就到海鹽了，海鹽的海這麼大，自然不同地方都會有不同地方有出的海鹽，變成它們其他礦物質的成分。</p></a>
+				<a href="#00:05:30.12" id="00:05:30.12" class="lt" onclick="jumptoTime(330, this.id)"><p>就會不同了，到處都不同了，那你會說，哇那是不是很有益啊，很多礦物質啊，那一定，那岩鹽有岩鹽好啊，有岩鹽有岩鹽的礦物質，海鹽有海鹽的礦物質，那不就是，一定比用普通鹽好啊，是不是啊，那其實就不一定的，完全不一定的，我們打個比喻吧，如果你當普通餐桌鹽是蒸餾水，這些海鹽、岩鹽，就是水喉水，就是扭出來的那些我們沒有經過高溫蒸餾的。</p></a>
+				<a href="#00:06:3.32" id="00:06:3.32" class="lt" onclick="jumptoTime(363, this.id)"><p>那你說哪一樣比較健康啊，那通常我們大家都會說，當然是扭開水喉水之後煮了它，然後拿來喝就會最好啦，因為裡面有礦物質嘛，是不是啊，那但是，你知道啦，有些東西是不由你控制的，有時候有些水喉，是含鉛的嘛，那你喝那些水呢，那就一定不會健康過喝蒸餾水了，同樣地，都是一樣的，海那麼大，什麼都有，經常都說油污。</p></a>
+				<a href="#00:06:34.12" id="00:06:34.12" class="lt" onclick="jumptoTime(394, this.id)"><p>倒射膠粒，什麼膠袋浮了進去，什麼海龜吃了，這樣那樣，然後又有輻射，是輻射進海裡，所以我們的海呢，就不是我們想像中那麼乾淨的，而這些鹽呢，是沒有經過蒸製的，簡單來說，是很多海裡面本身有的東西，都包含在裡面，所以你自己買的時候呢，就要小心一點了，或者你信得過就好，信不過就不要買了，因為呢。</p></a>
+				<a href="#00:07:8.32" id="00:07:8.32" class="lt" onclick="jumptoTime(428, this.id)"><p>海鹽呢，是沒有辦法完全保證，它裡面呢，是沒有有害的東西的，那當然那個量，不足以吃死你啦，也都可能未到會過標準啦，或者你驗到那個量啦，那但是呢，裡面呢，都是有很多東西的，那你說，不是喔 那它有礦物質喔，有礦物質比較重要啦 是不是啊，很重要的嘛 你有很多元素啊，你是需要身體有的嘛，那吃這些海鹽啊 岩鹽啊。</p></a>
+				<a href="#00:07:39.20" id="00:07:39.20" class="lt" onclick="jumptoTime(459, this.id)"><p>就可以補充到這些元素囉，但是你要記住喔，我們最開頭說了什麼 為什麼開頭要說呢，一天我們需要鹽的攝取量是有限的喔，就算你一天三餐在家裡吃，你一天最多都是吃到一斤這麼多鹽而已，是不是啊，你真正吸收到礦物質的份量是多少啊，厲害了，可能一包 他們那些單位是用100克來計算，才有幾幾幾幾個毫克。</p></a>
+				<a href="#00:08:10.36" id="00:08:10.36" class="lt" onclick="jumptoTime(490, this.id)"><p>所以如果你吃一斤呢，裡面可以吸收到礦物質的份量呢，是少到呢 你接近可以忽略的，如果你只是靠這個方法來吸收你的礦物質呢，要不你就一天吃很多鹽 你已經吃鹽死了，要不你就可以當那些礦物質沒有吸收過，你就要在其他地方來吸收啦，那為什麼我們還要買這麼貴的海鹽 岩鹽啊，你現在是不是賭命啊。</p></a>
+				<a href="#00:08:37.92" id="00:08:37.92" class="lt" onclick="jumptoTime(517, this.id)"><p>這三家東西 這幾家東西是不是完全不放廣告呢，不是的，最主要就是因為它帶來的味道是不是有不同啊，海鹽一定好吃一點啦，那又回到這裡了，你一天最多都是吃到一匙，你一次可能放一截，一截鹽裡面又有九成多是這個的氯化鈉，那剩下的那0.0截，就是你那一截可能有兩粒，會製成你們的口味有不同，我就覺得呢。</p></a>
+				<a href="#00:09:13.28" id="00:09:13.28" class="lt" onclick="jumptoTime(553, this.id)"><p>不同的鹽呢，真正真正它在味道上呢，就不會有一個很大很大的分別，尤其是你拿來煮菜，你煮進去一碗麵裡，那碗麵可能湯有其他材料的，或者那個菜本身是有其他調味料的，基本上鹽可以帶來的差別呢，你是接近可以完全分量的了，因為它的量實在太少了，你可能多放兩粒胡椒粉，你已經蓋過了你的海鹽可以啊，或者岩鹽可以帶來和餐菜鹽的分別。</p></a>
+				<a href="#00:09:44.88" id="00:09:44.88" class="lt" onclick="jumptoTime(584, this.id)"><p>那你唯一可以有分別的地方是什麼啊，直接倒進去的，例如牛扒，你可能煎好了，這樣割割割，這樣弄鹽在上面，這樣你就有機會呢，可以吃到它們的分別了，我覺得最主要的分別其實不是真正來自它的味道有分別，而是它呈現的狀態帶來的分別比它的味道大很多，因為你看到它們的鹽，通常都是海鹽、岩鹽都是超大粒的，超大粒的。</p></a>
+				<a href="#00:10:20.68" id="00:10:20.68" class="lt" onclick="jumptoTime(620, this.id)"><p>變了它們呈現的方法不是溶在水裡，你就會將這些鹽放在你們的材料裡，譬如我當這個是牛扒，你看到這個鹽的呈現方式就是這樣的，你就要將它這樣刨上去，這樣刨上去就可以製造很多不同質地不同大小的鹽，它的鹽是一些大粒、一些小粒、一些大粒、一些小粒的，你吃下去放進嘴裡之後，它溶化的速度就不同了。</p></a>
+				<a href="#00:11:0.64" id="00:11:0.64" class="lt" onclick="jumptoTime(660, this.id)"><p>不同你溶了在水裡，那你就會覺得很有層次感，比起如果你用餐桌鹽，粒粒都是一樣大小的，沒有大沒有小的，全部都是接近一模一樣的，那它的味道你就會覺得有層次一點，而且沒有那麼單一，還有海鹽也是，它天生已經是做出來的時候已經是大小不同了，粒粒都不同的，你就會有層次感，而且它粒粒不同之餘，你看到它是比較鬆的。</p></a>
+				<a href="#00:11:32.60" id="00:11:32.60" class="lt" onclick="jumptoTime(692, this.id)"><p>它不是死實一粒的，它那個一粒大小差不多跟一粒粒粗幼的，那你說我可不可以用粗鹽來代替，它不同的，海鹽的凝結狀況是比較鬆的，比較脆的那個感覺那個質地，有時候有一些，這一種就叫做鹽之花，鹽之花 鹽花 海花 鹽，那就是因為它的凝結的情況就是，很鬆的，而且它是很薄的，很薄很鬆的，如果你看到。</p></a>
+				<a href="#00:12:7.92" id="00:12:7.92" class="lt" onclick="jumptoTime(727, this.id)"><p>它是散散的，粒粒大小不同的，那有些位置它比較薄它就快點融，比較結實的那些位置就晚一點融，變成你一口吃下去，它慢慢的味道融出來的時候，就會有不規則的那種融出來，所以你才會有一個這樣的感覺，果然，真的不同味道，它真的不像鹹，很有層次感，很豐富，就是因為它融化的速度有分別，如果你只是將少量的鹽。</p></a>
+				<a href="#00:12:40.39" id="00:12:40.39" class="lt" onclick="jumptoTime(760, this.id)"><p>少量，說清楚，你不要跟我說大量，少量的鹽融在水裡，然後整杯倒下去，其實不會有一個很大的分別，如果你直接已經煲好了一鍋湯，你只是加少許鹽，你更加不會有分別的，所以這個就是不同鹽，你選擇的時候可以選擇，當然，其實一句說完，這麼多種鹽最大的分別就是市場的分別，就是這樣，我們這集就來到這裡，記得Like Facebook，Follow Instagram，訂閱。</p></a>
+				<a href="#00:13:20.59" id="00:13:20.59" class="lt" onclick="jumptoTime(800, this.id)"><p>還有有什麼主題你們想知道，可能可以直接說，又或者有些東西可以煮，可以跟我說，就是這樣，這集就來到這裡。</p></a>
+				<a href="#00:13:29.99" id="00:13:29.99" class="lt" onclick="jumptoTime(809, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

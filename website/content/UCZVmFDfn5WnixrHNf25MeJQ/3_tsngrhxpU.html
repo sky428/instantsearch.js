@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人吹水〉 浸發冬菇分享篇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3_tsngrhxpU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人吹水〉 浸發冬菇分享篇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.05" id="00:00:1.05" class="lt" onclick="jumptoTime(1, this.id)"><p>各位好，我是星星师父，今天跟各位分享一包包的冬菇，今天跟各位分享一包包的冬菇，看我煮食视频的朋友都知道我煮食没有鸡粉和味精，我很多时候都喜欢用冬菇做料头，起锅，甚至煲汤，一次我会做大约半斤左右，今天就和各位分享一下冬菇，这些冬菇，冬菇都会有些分成便宜货和贵货，贵货的大多数都是叫做原木菇。</p></a>
+				<a href="#00:00:55.57" id="00:00:55.57" class="lt" onclick="jumptoTime(55, this.id)"><p>原木菇都有些便宜货和贵货的，我自己吃的原木菇，都是用来炆菜，调味，煲汤，这些大约是90元一斤左右，买两斤便宜一点点，我买了几斤回来，为什么会炆冬菇呢，因为这些冬菇已经软身了，今天没有太阳晒，软身了，我马上炆它，如果不炆，它会再焦一点，会吸收一些味道，味道会很厉害，这些花菇贵一点，但很爽口。</p></a>
+				<a href="#00:01:55.24" id="00:01:55.24" class="lt" onclick="jumptoTime(115, this.id)"><p>去掉冬菇脚，留作煲汤用，香草菇贵一点，香草菇和原木菇的分别是什么呢?</p></a>
+				<a href="#00:02:19.00" id="00:02:19.00" class="lt" onclick="jumptoTime(139, this.id)"><p>原木菇是从木发出来的，香草菇是从菇包发出来的，香草菇是很薄身的，大部份都是没有脚的，香草菇和原木菇的价钱差很远，香草菇三四十元一斤，如果今天不做，再放下去会起霉味，第一步要做什么呢?</p></a>
+				<a href="#00:03:14.84" id="00:03:14.84" class="lt" onclick="jumptoTime(194, this.id)"><p>不要以为这些很软身，发都不用发，要淋一淋热水就可以了，千万不要放热水，全部倒下去，冬菇一定要不要放热水，因为冬菇里面有菇青味，一放热水就会锁住味道，用水浸约十五分钟，冬菇浸约十五分钟后，倒掉水，再倒出来，不是可以炆煮的吗?</p></a>
+				<a href="#00:04:19.86" id="00:04:19.86" class="lt" onclick="jumptoTime(259, this.id)"><p>可以炆煮的，第二个步骤还没有做，还有很多步骤，这个步骤是什么呢?</p></a>
+				<a href="#00:04:28.42" id="00:04:28.42" class="lt" onclick="jumptoTime(268, this.id)"><p>生粉，放生粉进去，放生粉的作用是什么呢?</p></a>
+				<a href="#00:04:38.56" id="00:04:38.56" class="lt" onclick="jumptoTime(278, this.id)"><p>用手指捏住生粉，用生粉不停地捏，这个步骤有什么作用呢?</p></a>
+				<a href="#00:04:53.18" id="00:04:53.18" class="lt" onclick="jumptoTime(293, this.id)"><p>用生粉捏住冬菇，让冬菇里面的污糟东西和表面的污糟东西，和冬菇里面的杂质，特别是边上的杂质，搓一下，搓一下之后再过水，你看到的，一边搓，生粉就越来越深色，越来越污糟，搓出一些污糟东西，在清洗过程中，将冬菇的味道带出来，这一步我们已经搓好了，洗干净它，看到生粉的水吗?</p></a>
+				<a href="#00:05:53.06" id="00:05:53.06" class="lt" onclick="jumptoTime(353, this.id)"><p>是啡白色的，现在我们再倒进去，这里最少过两次水，过两次水，过清它，再过，过水，再洗，我们再看冬菇的味道是否够味，这些冬菇有些潮了，我再洗一次，洗一次就差不多够了，再洗一次，星星，你這樣洗不怕洗走菇味嗎?</p></a>
+				<a href="#00:06:50.00" id="00:06:50.00" class="lt" onclick="jumptoTime(410, this.id)"><p>現在這樣洗就是洗走冬菇裏面一些惡味、不好的味道，就是靠這段時間將它洗走，重複第一次的步驟，就是這樣洗，洗完之後放水，繼續洗，倒進去，然後可以過水，倒回去，過水，浸冬菇這個步驟相當重要，用生粉揉勻，然後再洗乾淨，冬菇大約浸了15分鐘左右，其實還有很遠的路程，但這些冬菇一定要洗乾淨，再倒，看看冬菇的身體有沒有殘留的粉。</p></a>
+				<a href="#00:08:19.50" id="00:08:19.50" class="lt" onclick="jumptoTime(499, this.id)"><p>現在差不多了，冬菇浸了一晚之後，看看它的模樣，經過一晚的浸法，它比原本大了一倍，發冬菇一個很重要的竅門，就是一定要浸水夠，這是很重要的，浸水夠了就要去掉冬菇，現在不要動它，因為已經洗乾淨了，現在開始炆冬菇，炆冬菇要怎樣做呢?</p></a>
+				<a href="#00:09:6.50" id="00:09:6.50" class="lt" onclick="jumptoTime(546, this.id)"><p>先把冬菇浸水，一齊放下去，連同浸的冬菇水一起放下去，這段時間大火加熱，由凍水加熱，浸的冬菇水不要不要，原煲放冰糖，其他什麼都不用放，蓋上蓋子，等它滾，現在冬菇滾了之後，我們收慢火，這個狀態之後再炆15分鐘，15分鐘好了，炆這些冬菇不用太長時間，最重要是浸透水，現在等它炆到所有冬菇夠熟，這樣就OK了，不用太長時間。</p></a>
+				<a href="#00:10:18.14" id="00:10:18.14" class="lt" onclick="jumptoTime(618, this.id)"><p>微微火調著，15分鐘，現在炆了15分鐘，我們揭開來看看，OK了，然後怎樣，蓋上蓋子，關火，現在換衣服上班，今晚再分享，現在下班回家看看這盤東西的模樣，冬菇發得很漂亮，剪一隻給大家看看，ck Thi compass数 leverage</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:3.94" id="00:11:3.94" class="lt" onclick="jumptoTime(663, this.id)"><p>formatting，Announcer，tså，Oz，kre，saç，Gedanken，權，�emaker，Yue</p></a>
+				<a href="#00:11:1.06" id="00:11:1.06" class="lt" onclick="jumptoTime(661, this.id)"><p>essent Shak，vår</p></a>
+				<a href="#00:11:1.86" id="00:11:1.86" class="lt" onclick="jumptoTime(661, this.id)"><p>goog이죠，governors</p></a>
+				<a href="#00:11:0.08" id="00:11:0.08" class="lt" onclick="jumptoTime(660, this.id)"><p>ration，immer，undergoing，starve</p></a>
+				<a href="#00:11:0.08" id="00:11:0.08" class="lt" onclick="jumptoTime(660, this.id)"><p>Teddy，工 만 Diesel，Mig classrooms</p></a>
+				<a href="#00:10:59.32" id="00:10:59.32" class="lt" onclick="jumptoTime(659, this.id)"><p>narr sweetie，現在可以倒起，不要倒掉水，水很有用，用篩隔掉，隔掉所有冬菇水，冬菇放起，這些水用湯碗，用水煲湯，做碗仔翅，什麼都可以，留些冬菇水，這些冬菇用保鮮紙包好放冰箱，用時拿一包出來，有些包五隻有些包十隻，今日發冬菇分享到此為止，多謝大家收看，這些冬菇都是一般基本用途，做冬菇蒸雞，冬菇蒸肉餅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:23.03" id="00:12:23.03" class="lt" onclick="jumptoTime(743, this.id)"><p>或者一些做料頭，Cola</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:34.65" id="00:12:34.65" class="lt" onclick="jumptoTime(754, this.id)"><p>Beaut ges，orth，desarrollo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:32.95" id="00:12:32.95" class="lt" onclick="jumptoTime(752, this.id)"><p>rif hist awhile，smoke，ventional</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:29.65" id="00:12:29.65" class="lt" onclick="jumptoTime(749, this.id)"><p>ambul advertising，GU temporary</p></a>
+				<a href="#00:12:35.87" id="00:12:35.87" class="lt" onclick="jumptoTime(755, this.id)"><p>ziet，Simone，Turbo，mechanic，flourish，hait beach，gluc Kendall</p></a>
+				<a href="#00:12:30.71" id="00:12:30.71" class="lt" onclick="jumptoTime(750, this.id)"><p>� trumpet，uckles</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:32.55" id="00:12:32.55" class="lt" onclick="jumptoTime(752, this.id)"><p>jelly hunch，houses，PhD，practicing，pro gehe</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:37.27" id="00:12:37.27" class="lt" onclick="jumptoTime(757, this.id)"><p>paddle，ting，być，yout ecology</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:38.03" id="00:12:38.03" class="lt" onclick="jumptoTime(758, this.id)"><p>Fighter，gaming，돌。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 肉骨茶 打邊爐 吹水篇 Bak kut teh</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Oe5IHxlBfeQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 肉骨茶 打邊爐 吹水篇 Bak kut teh</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.72" id="00:00:9.72" class="lt" onclick="jumptoTime(9, this.id)"><p>這些湯包就壓一壓它，讓它更加出味，大家好，又係我星星同大家職人吹水，氣溫就照降啦，外面還有一點點雨，回來就大聲地打火鍋啦，在冰箱裡只能找到這盤東西出來，對呀，只能找到這盤東西出來打火鍋，我星星煮東西，找到什麼就做什麼，完全是還沒解凍的，這個時候微波爐就發揮功效，我們先放進微波爐解凍十分鐘。</p></a>
+				<a href="#00:01:4.31" id="00:01:4.31" class="lt" onclick="jumptoTime(64, this.id)"><p>微波爐有二十多年歷史，有些功能，現在的電器都是取代不了的，例如解凍，排骨在解凍之際，其實我昨天已經吃了一餐，昨天吃醉雞，剩下一點點配料，家裡的湯底就沒有了，隨便在冰箱裡拿起什麼就做什麼，這些都是去東南亞旅行買回來的，配了蒜頭，刷一點冬菇出來，冰箱裡還有一棵生菜和急凍雲吞，就可以打火鍋了，排骨在微波爐解凍十分鐘後，就發揮了功效。</p></a>
+				<a href="#00:01:57.75" id="00:01:57.75" class="lt" onclick="jumptoTime(117, this.id)"><p>進一步將排骨解凍，加一茶匙鹽，再用淡鹽水浸泡十分鐘，排骨用淡鹽水浸泡十分鐘後，將所有淡鹽水倒掉，洗乾淨，洗兩三次，將排骨晾乾水，開火，燒一些凍水，將排骨放入沸水中，畢竟是急凍排骨嘛，我們做好事前的基本工序，讓急凍排骨去除雪味，清除血水，配什麼都好吃，排骨在沸騰的同時，拿湯包出來給大家沖一下水，因為我們在順德，很喜歡在冬天吃火鍋。</p></a>
+				<a href="#00:03:22.51" id="00:03:22.51" class="lt" onclick="jumptoTime(202, this.id)"><p>我們小時候用什麼火鍋呢?</p></a>
+				<a href="#00:03:25.79" id="00:03:25.79" class="lt" onclick="jumptoTime(205, this.id)"><p>就是用鑊，用火水爐，在地上燒，最喜歡吃什麼呢?鯪魚球，我記得有時候家人買了一條鯪魚回來，去骨起肉，用骨頭來煎湯，一定有生菜，我們用鯪魚球蘸醬油，再包生菜一起吃，我記得家人很喜歡吃蜆芥，我小時候不吃，現在很喜歡吃，以後用蜆芥做其他菜式跟大家分享，外出旅行，很多時候都會買手信，我這些都是在外面買回來的。</p></a>
+				<a href="#00:04:6.59" id="00:04:6.59" class="lt" onclick="jumptoTime(246, this.id)"><p>東南亞風味，這個是在新加坡買的，大家說吃哪一包好呢?</p></a>
+				<a href="#00:04:13.47" id="00:04:13.47" class="lt" onclick="jumptoTime(253, this.id)"><p>拿了這包就吃這包，冷水加熱，大家都看到排骨了，看到嗎?</p></a>
+				<a href="#00:04:26.03" id="00:04:26.03" class="lt" onclick="jumptoTime(266, this.id)"><p>把血水、鱈魚味都逼出來，現在我們把它洗乾淨，倒下去，煙霧瀰漫，繼續沖洗，把所有釋出的泡沫洗乾淨，排骨洗乾淨之後呢，真正就開你爆湯包，好簡單呀，煮公仔麵咁，如果屋企冇呢啲湯包咁樣呀，咪睇我之前嗰啲打邊爐嗰啲片呀或者搵個魚湯呀，搵個雞湯呀甚至乎用啲現成雞湯都得㗎有時飲起上嚟嗰陣時，咁我攞出嚟之後呢。</p></a>
+				<a href="#00:05:19.75" id="00:05:19.75" class="lt" onclick="jumptoTime(319, this.id)"><p>咁多嘢嘅，有兩個藥材包，就唔好拆開真係呢啲啦，水有千六號星咁呀水呢度呢就已經係，煲緊㗎啦，水滾，咁就好簡單呀咁我哋將啲藥材包，蒜頭，冬菇，排骨，咁我哋水滾後生細火，35分鐘，茶煲咗十零廿分鐘呀，有包調味包嘅咁我終於都睇到你幫調味包有咩作用，原來我呢個說明書嗰度講呀，用嚟煙排骨嘅，開埋啲。</p></a>
+				<a href="#00:06:31.19" id="00:06:31.19" class="lt" onclick="jumptoTime(391, this.id)"><p>豉油老抽，呢個粉，五香粉㗎嘛，咁我嗰個作用呢即係頭先啲排骨飛水呀飛完水之後攞去撈一撈佢呀等佢有少少五香粉，入味呀，咁而家佢就話要教返三個茶匙，生抽落去，差唔多呀，咁我再加返一個湯匙嗰個老抽，慢火，煲咗，35分鐘，這35分鐘主要是要煮到湯包出味，排骨夠軟，急凍排骨很快軟，看蒜頭是否軟就知道了，這段時間我們加剛才的香料和粉。</p></a>
+				<a href="#00:07:37.60" id="00:07:37.60" class="lt" onclick="jumptoTime(457, this.id)"><p>再煮10分鐘，試一下味道，顏色都出來了，這些湯包壓一壓，讓它更加出味，剛才試過，真的很棒，可惜買不到油條，買到油條真的一絕，最後加半茶匙鹽就OK了，放昨天吃火鍋剩下的配料，有豬皮、豬紅、豬肉，配合肉骨茶湯底，現在已經很想吃了，還有些雲吞和生菜，喜歡吃生菜的朋友給個LIKE，喜歡吃肉骨茶的朋友訂閱我。</p></a>
+				<a href="#00:08:49.80" id="00:08:49.80" class="lt" onclick="jumptoTime(529, this.id)"><p>分享這個肉骨茶火鍋，寒冷天時大家記得要保暖，吃火鍋最好。</p></a>
+				<a href="#00:08:57.80" id="00:08:57.80" class="lt" onclick="jumptoTime(537, this.id)"><p>多謝收看，下次再分享，再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉  兩個小技巧 剁椒 調配 蒸桂花魚 冬至快樂</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ieNGOSKs89o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉  兩個小技巧 剁椒 調配 蒸桂花魚 冬至快樂</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.15" id="00:00:13.15" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好咁臨近冬至呀祝大家一個冬至，快樂身體健康呀正所謂東大過年呀，估唔到，即係唔好睇少街市嘅威力呀咁樣硬咗少少落去啦又乜嘢係魚都買唔到呀，咁我想話買條，東星嘅話西星蒸蝦都買唔到呀咁樣就，買條淡水老鼠斑呢就，咁咩叫淡水老鼠斑呀，咪就係，桂花魚囉。</p></a>
+				<a href="#00:00:55.91" id="00:00:55.91" class="lt" onclick="jumptoTime(55, this.id)"><p>咁精貴花魚都係相當之簡單呀但係簡單得嚟呢如果想好食呢，買啲泡椒，咁呀少少蒜蓉，少少乾蔥，咁我哋，買兩茶匙鹽落去，咁我哋呀，拿去，洗一洗佢，洗曬表面嗰啲散埋啲聲嚟，咁我哋都講好多次呀處理呢啲淡水魚呀咁我哋就盡量，唔好落薑蒸如果唔落薑蒸咁有啲咩好蒸呀，蒸陳皮呀蒸豉汁呀，蒸麵豉呀今日呢個剁椒醬呀咁呀攞嚟蒸魚頭呀話蒸淡水魚，相當之正呀。</p></a>
+				<a href="#00:01:44.81" id="00:01:44.81" class="lt" onclick="jumptoTime(104, this.id)"><p>今日老闆打條魚打相當之乾淨呀，一塊鹽都冇呀，個魚肚呢個底度呀咁我哋都搞兩刀落去，盡量一等佢裏面嗰啲血呢洗清曬佢，魚嘅聲味嘅來源就係呢度呀，你洗得乾淨冇聲味，咁樣成功咗一大半㗎啦，咁以前呀呢啲桂花魚呀，相當之貴嘅今日買呢條就唔係好貴呀都幾抵食，桂花魚我哋洗咗三四次之後呢，點為之得呀。</p></a>
+				<a href="#00:02:25.27" id="00:02:25.27" class="lt" onclick="jumptoTime(145, this.id)"><p>洗到，基本上冇曬紅色嘢咁又為之ok咁我而家呢我哋打個魚套呢就將佢，水，咁我不單止要瓊水呀咁我哋仲要將整條魚啦，抹到佢乾身，處理呢，魚類呀海鮮呀，呢啲有一啲，好重要嘅步驟，條魚洗得乾淨吸乾水，咁我哋而家又等佢停一停先，咁而家你處理我哋一碟椒醬呀，呢啲就叫做呀，現成係得買㗎但係我哋想佢更加好味啲呀咁咪就，少少。</p></a>
+				<a href="#00:03:11.32" id="00:03:11.32" class="lt" onclick="jumptoTime(191, this.id)"><p>乾蔥絲，少少蒜蓉落去咁咪更加理想呀唔複雜嘅做呢個，咁你新鮮乾蔥呀咁咪真係相當之香嘅咁我有時我都會，買啲即係，剝咗衣嗰啲乾蔥呀嗰啲又冇咁香嘅，咁呀嗰啲就我哋以前做廚房就好多時都係冇攞咗啲，嗰啲返嚟做呀，咁我知咗先有咩ok喇喎，嗰啲蒜頭啦，都係咁樣，最薄片，跟住加埋啲乾蔥呀，輕輕壓佢幾下。</p></a>
+				<a href="#00:04:0.46" id="00:04:0.46" class="lt" onclick="jumptoTime(240, this.id)"><p>又唔使整得太過碎㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:4.30" id="00:04:4.30" class="lt" onclick="jumptoTime(244, this.id)"><p>咁樣已經ok喇喎，我哋擺落去玩嗰度備用，咁趁開嘢呀嘛洗埋兩條蔥呢啲蔥尾呢我哋，返去都有用嘅，咁我又切少少，蔥絲呀，始終蒸魚呀有少少芫茜蔥呀咁咪正好多呀咁我今日冇芫茜呀，咁我哋又切呢啲就慢慢切放鬆隻手，放鬆隻手，咁我切咗少少呀，我哋呀，搵啲水出嚟，咁我又擺咗啲水嗰度，浸一浸佢，浸佢個目的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:57.56" id="00:04:57.56" class="lt" onclick="jumptoTime(297, this.id)"><p>等佢沖嗰啲好辛辣嘅味道呢就浸一浸佢出嚟，第二呀，一陣佢呀佢就會情願彎曲呀咁咪就相當之靚嘅，咁我哋就擺埋一邊先咁我哋就睇返我哋啲蒜頭同埋啲乾蔥，咁調配呢個就好簡單呀，嘩咁實嘅，咁有時撞啱呢啲進去呢啲，蓋好難開呀咁有時係手濕咗點呀我哋攞條濕毛巾出嚟呀，咁我哋戀著呀，濕毛巾呀嗰啲嗰啲力度呀。</p></a>
+				<a href="#00:05:38.46" id="00:05:38.46" class="lt" onclick="jumptoTime(338, this.id)"><p>畀小力，有聲咁咪得囉喎，有時一叫叫實咗呀相當之難開呀咁咪用呢個方法呢咁我哋就，攞返隻乾淨匙羹唔好有生水，因為有生水呀，你呢樽椒呢你就好快會鑊㗎，咁我哋約落，兩至三個湯匙呀，咁我視乎你睇你食到幾難呀不少汁落去，攞匀佢呀，呢個腳椒呀佢本身味道都會幾鹹下㗎，咁我哋一陣間呀，咩樂事由嗰度呢就唔好落太多咁ok呀。</p></a>
+				<a href="#00:06:23.00" id="00:06:23.00" class="lt" onclick="jumptoTime(383, this.id)"><p>甚至乎呢有時候你精語呀淨係落多啲呢啲，腳椒呀，咁我又都唔使落呀，我哋擺埋一邊條魚瓊水又係停咗一段時間呀，咁又係要睇佢夠唔夠乾深，土裏面呀都收埋舊紙喺度嘅，我哋仲要抹魚呀，都順住條魚去抹，我哋唔好買咁樣買返上嚟呀好易得到手㗎，全部抹乾佢，桂花魚買到乾曬之後呢咁我哋攞返少少胡椒粉出嚟呀，魚身裏面。</p></a>
+				<a href="#00:07:6.76" id="00:07:6.76" class="lt" onclick="jumptoTime(426, this.id)"><p>兩邊，咁我落啲胡椒粉落去，跟住呢，我攞生粉，撲一陣薄薄地個粉上去，同佢化化妝，你一陣間蒸出嚟呀你條魚呀，就好靚仔呀，靚女靚女啦靚仔整日變得靚仔啦，咁就ok喇喎，跟住呀，我攞返隻碟出嚟，頭先嗰啲蔥味呀嗰啲咩蔥肉呀咁樣我咪，攞嚟攞一攞條魚呀，咁條魚就準備好曬呀，醬又準備好曬呀，咁我哋喺隔離呀。</p></a>
+				<a href="#00:07:49.33" id="00:07:49.33" class="lt" onclick="jumptoTime(469, this.id)"><p>我哋燒滾啲水先，水滾後，咁我哋先放啲醬落去，我哋唔好一早嘢佢，一嘢佢啦條魚嗰啲鮮味呢佢又會走曬出嚟呀，咁我哋就鋪住佢，咁我哋又隨即就擺落去，趁啲滾水咁我成條魚擺落去蒸，咁你條魚約蒸幾耐呀呢條魚約12兩到，蒸，七分鐘就ok呀，咁剎嗰間我哋保持住個大火而家約蒸咗佢七分鐘，蒸嘢呀我哋都講好多次呀保持住個大火開蓋。</p></a>
+				<a href="#00:08:39.51" id="00:08:39.51" class="lt" onclick="jumptoTime(519, this.id)"><p>唔好等佢有啲倒汗水呀，呢條魚呀，有白色水標出嚟呀，條魚基本上呢，就已經係熟曬㗎咁我哋係，都都都，全部都都得入去啦已經，你攞返起曬底下嗰啲蔥咁我係面頭嗰度咪上班啲少少蔥絲上去，跟住我哋搵返少少熟油咁我係咪，咋上去呀，而家已經好香呀，咁我哋喺側邊嗰度輕輕放返啲蒸魚豉油，上去。</p></a>
+				<a href="#00:09:22.29" id="00:09:22.29" class="lt" onclick="jumptoTime(562, this.id)"><p>咁呢個啲貴花魚呀真係相當之正呀已經，咁我哋點樣取決，蒸一條魚嘅時間呀大家買魚嗰陣時間呀，買咗問老闆呀，咁通常老闆佢都會係好概括講一個一定會蒸得熟嘅時間比你，咁樣，魚檔老闆呢佢又唔會話，即係同你講你條魚有冇入個雪櫃呀你今日個天氣係點樣呀咁樣好似今日，天氣凍咁樣，咁我哋咪會。</p></a>
+				<a href="#00:09:56.97" id="00:09:56.97" class="lt" onclick="jumptoTime(596, this.id)"><p>蒸多佢一分鐘至兩分鐘呀，入個雪櫃呀咪早少少攞返佢出嚟攤返個室溫個狀態，咁你先可以正嗰啲你嗰條魚你先會蒸得靚嘅，咁一條12兩個桂花魚呀呢啲魚呀蒸嘅最好食㗎啦咁我鍾意食，網友畀個like我聲聲呀，咁你鍾意食桂花魚網友訂閱職人吹水嘅頻道，咁我兩者都鍾意食㗎，加入我頻道會員啦繼續吹水呀，咁今日分享到此為止啦咁咪多謝收睇。</p></a>
+				<a href="#00:10:31.53" id="00:10:31.53" class="lt" onclick="jumptoTime(631, this.id)"><p>下條影片再同大家，吹個水，冬至快樂。</p></a>
+				<a href="#00:10:35.11" id="00:10:35.11" class="lt" onclick="jumptoTime(635, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

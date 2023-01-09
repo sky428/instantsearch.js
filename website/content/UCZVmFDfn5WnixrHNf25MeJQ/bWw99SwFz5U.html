@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹 水〉 紐西蘭黑翡翠鮑魚煲雞湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'bWw99SwFz5U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹 水〉 紐西蘭黑翡翠鮑魚煲雞湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，各位好，我是星星师父，今天我做糯米饭，这是黄粘饭，之前在泰国买了猪肉松饭给我同事，同事回报我，做了黄粘饭，今天介绍糯米饭，好味，很久没有煲汤和大家分享，今天和大家分享汤有什么材料，有一个鸡壳，一斤猪肘，先汆水，然后将肉汆水，汆水最重要是冷水下肉，为什么要冷水下肉?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:8.84" id="00:01:8.84" class="lt" onclick="jumptoTime(68, this.id)"><p>冷水下肉是让水慢慢加热，将肉里面的血水全部逼出来，如果烧到水大滚下肉，一落肉，会锁死肉的表面，做不到一个汆水的效果，等它滚一滚，煲汤除了鸡肉之外还有什么材料呢?</p></a>
+				<a href="#00:01:40.74" id="00:01:40.74" class="lt" onclick="jumptoTime(100, this.id)"><p>还有果皮，蜜棗，冷水可以放在煲汤里，先煲热，还有其他材料呢?</p></a>
+				<a href="#00:02:1.56" id="00:02:1.56" class="lt" onclick="jumptoTime(121, this.id)"><p>还有淮山，这些淮山冷水浸一小时后洗净，现在可以冷水下肉，還有大約十隻冬菇，都是之前發冬菇的冬菇，現在可以放進去，再煮幾次，煲完湯再放，大家都看到，水加熱過程當中會有些東西釋出來，這些東西，凍水加熱，飛水，一個很重要的步驟，將這些東西迫出來，如果一放下去，鎖住肉，這些東西就迫不出來，繼續滾，要滾起它，要滾熟肉。</p></a>
+				<a href="#00:03:20.03" id="00:03:20.03" class="lt" onclick="jumptoTime(200, this.id)"><p>今日煲湯還有一個主角，什麼主角呢，病了一大輪，現在煲鮑魚吃，有什麼鮑魚呢?</p></a>
+				<a href="#00:03:37.03" id="00:03:37.03" class="lt" onclick="jumptoTime(217, this.id)"><p>之前買了兩罐鮑魚，今日決定煲這隻紐西蘭黑翡翠鮑魚，大家看到嗎，為何要煲罐頭呢?</p></a>
+				<a href="#00:04:0.03" id="00:04:0.03" class="lt" onclick="jumptoTime(240, this.id)"><p>因為罐頭的工夫省卻了，這些鮑魚是全天然的，不是養的鮑魚，肉飛水，飛透，釋出所有不好的東西，那些騷味，呃味全部飛出來，飛到這段時間，可以拿出來沖水，倒掉水，洗乾淨，逐個逐個沖乾淨，放雞腳煲湯時，記得不要斬腳趾，斬腳趾釋出油份很多，全部洗乾淨，五花腩都是凍水飛水，飛到它熟，現在等它飛熟。</p></a>
+				<a href="#00:05:5.03" id="00:05:5.03" class="lt" onclick="jumptoTime(305, this.id)"><p>洗乾淨所有材料後，可以放入煲裡，可以放入煲裡了，可以放入煲裡了，可以先煲滾，這隻鮑魚是一罐一頭的，一隻天然野生的一頭鮑魚其實很罕有，而且這類鮑魚的鮑味相當濃郁，為什麼要用罐頭呢?</p></a>
+				<a href="#00:05:45.37" id="00:05:45.37" class="lt" onclick="jumptoTime(345, this.id)"><p>罐頭就省了你事前很多功夫，如果用鮑魚回來解凍、洗的話，很多工序，這些事前的功夫就省卻了，這些天然鮑魚是很硬的，一定要先煲它，這樣就煮了一年半了，再用來煲湯，有多大隻呢?</p></a>
+				<a href="#00:06:28.19" id="00:06:28.19" class="lt" onclick="jumptoTime(388, this.id)"><p>放一隻手指進去，一隻手掌般大，相當大隻，很漂亮，現在放進去煲湯，放進去就可以了，放一隻鮑魚之後不要大滾，微微的沸騰，現在就煲它兩個小時，罐頭的鮑魚水不要倒掉，這些水也相當好味，我們留待會再做菜和大家分享，鮑魚大概煲了45分鐘，現在看看什麼模樣，不要躲起來，這是野生鮑魚，鮮味相當濃郁，比一般鮮味多很多倍。</p></a>
+				<a href="#00:07:49.77" id="00:07:49.77" class="lt" onclick="jumptoTime(469, this.id)"><p>有個特點是很耐火，這些罐頭鮑魚，拿回來煲湯，我稍後再拿去炆，煲湯時再和各位分享，煲了兩小時多些少，看看模樣如何，湯差不多差不多了，這段時間可以起嗎?</p></a>
+				<a href="#00:08:21.37" id="00:08:21.37" class="lt" onclick="jumptoTime(501, this.id)"><p>蓋上蓋子，關火，焗半小時，為何要焗半小時呢，讓鮑魚更加軟身和吸收湯汁，鮑魚雞湯煲了半小時，完成了，拍攝這湯給各位看看，相當濃郁，調少許金華火腿調味，鹽也不用，這些紐西蘭野生黑翡翠鮑魚，我建議大家用罐頭，用罐頭可以省下很多功夫，而且容易煲軟些，鮑魚可以吃得回，我稍後再拿去炆，這湯適合病後。</p></a>
+				<a href="#00:09:21.97" id="00:09:21.97" class="lt" onclick="jumptoTime(561, this.id)"><p>例如我這種病到盲目，現在病好，可以喝這湯增強免疫能力，對婦女也很好，很滋陰，特別是產後，調經各方面都很好，如果大家有機會可以煲鮑魚雞湯，今日分享到此為止，謝謝各位收看。</p></a>
+</div>
+	</body>
+</html>

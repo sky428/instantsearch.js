@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人 吹水 〉足料碗仔翅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-GxDZp0hOl8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人 吹水 〉足料碗仔翅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我星星，今晚有什麼菜式呢?</p></a>
+				<a href="#00:00:6.90" id="00:00:6.90" class="lt" onclick="jumptoTime(6, this.id)"><p>今日會介紹碗仔翅，今晚有什麼材料呢?</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>木耳絲、甘筍絲、冬菇絲、魚翅，鮮腐竹、瑤柱、上湯，先煮滾，還有一點點豬肉碎、瑤柱、兩隻雞蛋，為甚麼今晚不煲湯煮個半仔翅呢?</p></a>
+				<a href="#00:01:10.40" id="00:01:10.40" class="lt" onclick="jumptoTime(70, this.id)"><p>因為我煮了瑤柱，一次煮一斤，浸泡、蒸，剩下的瑤柱水，一般都是留待煲湯，為甚麼要自己煮呢?因為外面吃的碗仔翅大部分都是用雞粉水、味精水調製出來，我煮菜沒有味精水、雞粉水，幾十年來都沒有吃過這兩樣東西，即使我在外面工作，我都沒有這些東西，有時吃這些就唯有自己煮，首先找瑤柱湯。</p></a>
+				<a href="#00:02:24.86" id="00:02:24.86" class="lt" onclick="jumptoTime(144, this.id)"><p>可以加一點胡椒粉，mettre TCactus</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:44.01" id="00:02:44.01" class="lt" onclick="jumptoTime(164, this.id)"><p>exempl，gal highlighter，engra apologies</p></a>
+				<a href="#00:02:41.05" id="00:02:41.05" class="lt" onclick="jumptoTime(161, this.id)"><p>Madam，eyebrächen</p></a>
+				<a href="#00:02:40.29" id="00:02:40.29" class="lt" onclick="jumptoTime(160, this.id)"><p>diam onun，Foi，genes，ホ blades，necessadors，but</p></a>
+				<a href="#00:02:42.49" id="00:02:42.49" class="lt" onclick="jumptoTime(162, this.id)"><p>partnered，baix，beeld acht</p></a>
+				<a href="#00:02:42.29" id="00:02:42.29" class="lt" onclick="jumptoTime(162, this.id)"><p>velū direct，copies，謝謝觀看，滾起之後加入豬肉碎，搓鬆，讓味道更濃厚，做這些碗仔翅材料很簡單，有兩種主角一定要有，冬菇絲、木魚絲，這兩種材料做蛇羹也不一定要有，煮熟猪肉，去到差不多的程度，再加生粉水，做这些丸子翅，在外面，吃不到的最大的分别就是材料，做这些翅或者吃蛇羹，一定要有足够的材料，这样才够吸引。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:16.76" id="00:04:16.76" class="lt" onclick="jumptoTime(256, this.id)"><p>如果材料没有的话，全部都是水汪汪的，就不吸引了，这时候可以加盐水了，再滚一滚，现在可以加水进去，再等它滚起来，这段时间其他材料都可以加进去，除了鲜腐竹之外，最后加入鲜腐竹，加入鲜腐竹，再煮一会儿，jego，Kons</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:38.45" id="00:05:38.45" class="lt" onclick="jumptoTime(338, this.id)"><p>应 visas，� Nature，Os linked</p></a>
+				<a href="#00:05:40.33" id="00:05:40.33" class="lt" onclick="jumptoTime(340, this.id)"><p>сколько，isance</p></a>
+				<a href="#00:05:36.17" id="00:05:36.17" class="lt" onclick="jumptoTime(336, this.id)"><p>Jahre，hag，Career，бер folders，Xue</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:36.75" id="00:05:36.75" class="lt" onclick="jumptoTime(336, this.id)"><p>bater，equilib shells，Filipino，MP</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:42.61" id="00:05:42.61" class="lt" onclick="jumptoTime(342, this.id)"><p>Bu如果你，uffs，organizer，Sen согvenes，Taiwan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:35.71" id="00:05:35.71" class="lt" onclick="jumptoTime(335, this.id)"><p>Wish unacceptable，一段時間就可以調味，因為本身的廚房湯，也有部分的鹹味，所以鹽不用放太多，大約放半茶匙的鹽，어ihin，斯maya，diss natürlich</p></a>
+				<a href="#00:06:28.14" id="00:06:28.14" class="lt" onclick="jumptoTime(388, this.id)"><p>being，posted，rei，разр，jà，wreck，circular，살아，ி，items，ivable，fficiency，Hindu，나서</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:11.66" id="00:06:11.66" class="lt" onclick="jumptoTime(371, this.id)"><p>odi，edible，crafts angel，Andygen，stripped，ifiers</p></a>
+				<a href="#00:06:37.86" id="00:06:37.86" class="lt" onclick="jumptoTime(397, this.id)"><p>edsiębior，dessert</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:37.12" id="00:06:37.12" class="lt" onclick="jumptoTime(397, this.id)"><p>trabalho，away</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:11.94" id="00:06:11.94" class="lt" onclick="jumptoTime(371, this.id)"><p>Давайте，eon，sharply</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:17.60" id="00:06:17.60" class="lt" onclick="jumptoTime(377, this.id)"><p>colocar，дв，cui</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.02" id="00:06:33.02" class="lt" onclick="jumptoTime(393, this.id)"><p>prote På，六</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.78" id="00:06:36.78" class="lt" onclick="jumptoTime(396, this.id)"><p>gallon，Hazrat，31，��</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:12.18" id="00:06:12.18" class="lt" onclick="jumptoTime(372, this.id)"><p>sı，journ separately，怎麼辦，LO，объ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:37.58" id="00:06:37.58" class="lt" onclick="jumptoTime(397, this.id)"><p>imientos，있는</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.40" id="00:06:36.40" class="lt" onclick="jumptoTime(396, this.id)"><p>upside，completely，phenomena，España，spir helm，Jeder，clinical，рал，ulla，мире</p></a>
+				<a href="#00:06:37.72" id="00:06:37.72" class="lt" onclick="jumptoTime(397, this.id)"><p>renowned，oi，filtration</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:14.78" id="00:06:14.78" class="lt" onclick="jumptoTime(374, this.id)"><p>podr，court，rado，보이는，ば，Omar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:34.82" id="00:06:34.82" class="lt" onclick="jumptoTime(394, this.id)"><p>continued，Oz</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:30.34" id="00:06:30.34" class="lt" onclick="jumptoTime(390, this.id)"><p>assa，recipient Abr dependence，benchmarks，psychic citizenship，gew</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.56" id="00:06:33.56" class="lt" onclick="jumptoTime(393, this.id)"><p>Mimi，prob starch，기대</p></a>
+				<a href="#00:06:36.90" id="00:06:36.90" class="lt" onclick="jumptoTime(396, this.id)"><p>credited，時候，Mut Pakistan，temperatura</p></a>
+				<a href="#00:06:32.66" id="00:06:32.66" class="lt" onclick="jumptoTime(392, this.id)"><p>clot workloads，чит，наружpson，미，MIC</p></a>
+				<a href="#00:06:37.56" id="00:06:37.56" class="lt" onclick="jumptoTime(397, this.id)"><p>breakdown，PU campe onze，gem</p></a>
+				<a href="#00:06:39.32" id="00:06:39.32" class="lt" onclick="jumptoTime(399, this.id)"><p>そうそう，ändern，Songs，Ramsay，Schweiz</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.40" id="00:06:38.40" class="lt" onclick="jumptoTime(398, this.id)"><p>Debat，una，jacket</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:34.70" id="00:06:34.70" class="lt" onclick="jumptoTime(394, this.id)"><p>れて �nuts，وف，因為沒有雞粉和味精，所以要加生抽和老抽和蠔油，visibility mı</p></a>
+				<a href="#00:07:24.14" id="00:07:24.14" class="lt" onclick="jumptoTime(444, this.id)"><p>�ο，factual，wy，endurance，Senator，аф，人民，fasten relating，curves</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:18.94" id="00:07:18.94" class="lt" onclick="jumptoTime(438, this.id)"><p>scholarship，repertoire，cartoon，muscular，niveau，жиз，nicest，� Dow，끝나</p></a>
+				<a href="#00:07:19.26" id="00:07:19.26" class="lt" onclick="jumptoTime(439, this.id)"><p>Brasil，켜，第三，roku，기� multi</p></a>
+				<a href="#00:07:10.50" id="00:07:10.50" class="lt" onclick="jumptoTime(430, this.id)"><p>Chili，collapsed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:10.22" id="00:07:10.22" class="lt" onclick="jumptoTime(430, this.id)"><p>份，Steve，fahren，общем，хороший</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:21.34" id="00:07:21.34" class="lt" onclick="jumptoTime(441, this.id)"><p>pleasant，ע，shades</p></a>
+				<a href="#00:07:9.56" id="00:07:9.56" class="lt" onclick="jumptoTime(429, this.id)"><p>config действ，Hogwarts，gossip，burgh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:24.32" id="00:07:24.32" class="lt" onclick="jumptoTime(444, this.id)"><p>aceut，комментар wrist，nails，яч，vegetation，assum otherwise，justify，PP，seeing，otics，uprising，Buddhるthree，translating，мень，Cher，komplett hijoave</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:17.86" id="00:07:17.86" class="lt" onclick="jumptoTime(437, this.id)"><p>ust，Brothers</p></a>
+				<a href="#00:07:22.16" id="00:07:22.16" class="lt" onclick="jumptoTime(442, this.id)"><p>�� 올，plug，tum，Pompe unfold，那 doute，ler，^^</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:25.26" id="00:07:25.26" class="lt" onclick="jumptoTime(445, this.id)"><p>chuckling，spricht，collection，convex，alignment，proverb，port，wra betrayed，reverse，sequatt，idad，hn，新like，delight，ски，uko，昨 Section，Rece只iggers，Nursing。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:21.66" id="00:07:21.66" class="lt" onclick="jumptoTime(441, this.id)"><p>νε，지，recognizes，emale，XDseok，mêmes</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:23.88" id="00:07:23.88" class="lt" onclick="jumptoTime(443, this.id)"><p>rzeczy，interessante，Braun，ря，AfD牛셔 attendant，herséo</p></a>
+				<a href="#00:07:54.45" id="00:07:54.45" class="lt" onclick="jumptoTime(474, this.id)"><p>depression，Hmmm，methy majors，ims，pads</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:55.23" id="00:07:55.23" class="lt" onclick="jumptoTime(475, this.id)"><p>finan，Samuel，sécurité，거든，esen，pesos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:50.59" id="00:07:50.59" class="lt" onclick="jumptoTime(470, this.id)"><p>teu，Assim，Mandarin，Tamil，рын，tagged，zub，aiming</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:54.67" id="00:07:54.67" class="lt" onclick="jumptoTime(474, this.id)"><p>� хозя，Very</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:53.29" id="00:07:53.29" class="lt" onclick="jumptoTime(473, this.id)"><p>És，erfolgreich，，clean，penalty，嘿</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:46.93" id="00:07:46.93" class="lt" onclick="jumptoTime(466, this.id)"><p>otros，君，ceremony</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:42.33" id="00:07:42.33" class="lt" onclick="jumptoTime(462, this.id)"><p>chy，Привет，fortun времени，ך</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:48.71" id="00:07:48.71" class="lt" onclick="jumptoTime(468, this.id)"><p>ised，Bowl，erin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:53.97" id="00:07:53.97" class="lt" onclick="jumptoTime(473, this.id)"><p>thickness，RegLA，constคะ，consolidation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:32.61" id="00:07:32.61" class="lt" onclick="jumptoTime(452, this.id)"><p>Elon 끝나，Emmy，Af Seong</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:50.03" id="00:07:50.03" class="lt" onclick="jumptoTime(470, this.id)"><p>Convers relations，jo，limit，одно</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:49.81" id="00:07:49.81" class="lt" onclick="jumptoTime(469, this.id)"><p>brothers，restor millions，단</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:53.45" id="00:07:53.45" class="lt" onclick="jumptoTime(473, this.id)"><p>lesser，естно，ראל</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:48.75" id="00:07:48.75" class="lt" onclick="jumptoTime(468, this.id)"><p>burg，ayd，OW</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:41.79" id="00:07:41.79" class="lt" onclick="jumptoTime(461, this.id)"><p>Pennbl communautT，hes，wizard，walnut</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:45.49" id="00:07:45.49" class="lt" onclick="jumptoTime(465, this.id)"><p>использовать，experience，uer，κι</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:52.53" id="00:07:52.53" class="lt" onclick="jumptoTime(472, this.id)"><p>deployment，再加一些生粉水，先把底部推一下，推的竅門是，粉漿要慢下鍋，攪拌好手要快，差不多了，煮沸後加入蛋漿，不要太過份，用生粉水推魚翅，有一個壞處，它很容易反，生水，如果用馬蹄粉推，保存度會好些，加入蛋漿，等它滚一滚熟，蛋一熟就可以了，可以加入鮮腐竹，这个碗仔翅就完成了，吃的时候可以配上一些浙醋，风味更好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:14.91" id="00:10:14.91" class="lt" onclick="jumptoTime(614, this.id)"><p>多謝大家收看。</p></a>
+</div>
+	</body>
+</html>

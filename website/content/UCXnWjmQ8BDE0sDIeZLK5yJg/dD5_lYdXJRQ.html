@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【出街食算】自製甜酸齋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dD5_lYdXJRQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【出街食算】自製甜酸齋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.41" id="00:00:0.41" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕by索兰娅🐰，登登!馬田出來了，又來我們這個環節了，我們這個節目的宗旨就是，出街吃好過自己煮，所以可以促進香港經濟，大家可以出街吃多一點，我們今天又做了什麼奇怪的東西呢?</p></a>
+				<a href="#00:00:23.82" id="00:00:23.82" class="lt" onclick="jumptoTime(23, this.id)"><p>就是這個酸齋，我們自己在家裡做，絕對是比外出吃貴的，那有什麼材料呢?</p></a>
+				<a href="#00:00:31.82" id="00:00:31.82" class="lt" onclick="jumptoTime(31, this.id)"><p>我們現在先看一下，在這裡，有沒有人覺得我今天的衣服，和酸齋很搭，好!就是這些材料了，那我們首先，就要準備好這些麵筋，這些就叫做麵筋，其實在街市買的，是一種炸了的麵團，這樣的東西，首先我們要做的就是先把它煮一煮，因為它買回來，其實是半乾半濕的狀態，你聞一聞它，有一陣油液味的，因為它是炸過的，所以我們要先煮一煮。</p></a>
+				<a href="#00:01:7.82" id="00:01:7.82" class="lt" onclick="jumptoTime(67, this.id)"><p>讓它變得鬆一點，還有將油炸出來，這樣就會好吃一點，如果不是的話，是不可以繼續做下去的，你看我摸一摸，手已經全部都是油了，所以現在，我們先把它打散，好，加水，大概...這樣，然後煮滾它之後，我們放下去煮它，大概5-10分鐘，你可以看著它，看到你覺得它是適合你喜歡的口感，因為越煮會越軟。</p></a>
+				<a href="#00:01:41.98" id="00:01:41.98" class="lt" onclick="jumptoTime(101, this.id)"><p>那有些人就喜歡煙韌一點，有些人就喜歡軟一點，看你自己喜歡啦，但最少都5分鐘，不然它還沒煮開，是會整塊東西，這樣很奇怪，在煮水的期間，可以說，你知不知道麵筋是什麼?</p></a>
+				<a href="#00:01:56.28" id="00:01:56.28" class="lt" onclick="jumptoTime(116, this.id)"><p>其實麵筋的名字已經告訴你它本身是什麼，就是麵粉的筋，麵筋，譬如我們平時會搓麵包做麵團，我們把麵粉加水，然後搓，搓一搓，筋就會出來，那些gluten就會出來，他們不停地搓很多gluten的時候，裡面就是麵筋，之後那塊麵團就會拿去沖水，沖走那些澱粉質，剩下純粹裡面的筋，就叫做麵筋，之後那塊麵筋拿去炸，就會變成現在這個樣子。</p></a>
+				<a href="#00:02:37.28" id="00:02:37.28" class="lt" onclick="jumptoTime(157, this.id)"><p>但是這些真的太過太過太過完全不合乎成本效益的東西，我們真的不要自己做了，麵筋在街市買很便宜，20多塊，就很大袋了，吃到爆炸了，你自己買一包麵粉回來搓，搓到手麻，然後又要洗水，洗一大輪，這個過程太瘋狂了，所以我們直接買麵筋算了，好嗎?</p></a>
+				<a href="#00:03:3.28" id="00:03:3.28" class="lt" onclick="jumptoTime(183, this.id)"><p>好，水滾了，你看到已經很濛了，我們就可以把麵筋放進去，灼一灼，麵筋跟生筋有點像，都是一個類似筋形的東西，然後拿去炸，但是生筋是一個球形，裡面是空心的，麵筋是實心一點，漂亮一點，但是這兩樣東西都是很高脂肪，很高卡路里的東西，還有裡面嚴格來說其實沒什麼營養，純粹是好吃的，好像薯片一樣，就是有口感，但就不是特別有營養的東西。</p></a>
+				<a href="#00:03:43.28" id="00:03:43.28" class="lt" onclick="jumptoTime(223, this.id)"><p>好，就這樣，不要理它，先做其他東西，我們可以準備醬料了，酸齋的醬跟生炒排骨的醬，咕嚕肉的醬是接近一模一樣，很像，只是濃度有一點不同，還有可能少了一點鹹味，所以要的東西都差不多，首先，第一樣，茄汁，茄汁比咕嚕肉多，這個茄汁最主要的用途就是顏色，不是每一間都有用茄汁的，有些店舖是沒有用的。</p></a>
+				<a href="#00:04:16.90" id="00:04:16.90" class="lt" onclick="jumptoTime(256, this.id)"><p>但是如果沒有用的店舖是怎樣做到橙色出來呢?</p></a>
+				<a href="#00:04:20.70" id="00:04:20.70" class="lt" onclick="jumptoTime(260, this.id)"><p>就是直接用人造色素，就可以做到酸齋的橙色的效果，我們今天就不放那些了，所以我們放的茄汁會比較多，變相茄汁的味道其實蠻濃的，之後，大量的糖，因為有一定的酸度，必定要放一定的糖，之後，就有醋了，醋也是很重要的一部分，因為要有一定的酸才算是酸齋，只放茄汁，味道是酸味，因為始終要酸到，這麼大塊東西都感覺到酸味。</p></a>
+				<a href="#00:04:53.34" id="00:04:53.34" class="lt" onclick="jumptoTime(293, this.id)"><p>其實是要多酸的，那是約12克，因為10克我覺得好像少了一點，再多一點點就差不多了，你喜歡沒那麼酸的可以放少一點也OK的，或者你放再多一點糖，之後咕嚕肉啊，那些也是的，有一樣東西是可放可不放的，但是放了之後你會感覺到，是完全不同了，那個就是茄汁了，因為它本身是用很多不同類型的材料，加上發酵出來。</p></a>
+				<a href="#00:05:24.58" id="00:05:24.58" class="lt" onclick="jumptoTime(324, this.id)"><p>所以它有自己一個很特別的味道，也是如果有就會好一點，大概就放一個茶匙就可以了，因為太深色了，還有它的味道太濃烈了，太多會很搶的，整件事的平衡就會沒了，之後我們把它們混在一起，趁它熱的時候把材料也混在一起，之後加水，加水要加多少呢，200ml，因為我們有差不多的齋，就要加水讓汁多一點，你做到這個東西。</p></a>
+				<a href="#00:06:3.23" id="00:06:3.23" class="lt" onclick="jumptoTime(363, this.id)"><p>煮完就差不多了，所以這件事是快的，純粹成本效益低，因為酸齋本身都不是很貴的東西，那你說，不是喔，不是，只是喜歡吃酸齋，我喜歡吃其他味道，我喜歡吃咖哩齋，其實原理是一樣的，還有如果你做咖哩齋，我覺得是會比街的好吃，如果你用真的咖哩醬，因為平時街的酸齋，不是，咖哩齋，神經病，咖哩齋其實是用咖哩粉。</p></a>
+				<a href="#00:06:33.73" id="00:06:33.73" class="lt" onclick="jumptoTime(393, this.id)"><p>它只是顏色，咖哩味其實不是很濃，如果你是用真正的咖哩醬，用你自己吃開喜歡的咖哩醬，來做其實會好味一點，你只要好像平時做咖哩一樣，沒什麼分別，加水煮稀，加些配料也好，什麼也好，炒香之後再打個芡，就行了，好像這個，然後醬油齋還是蠔油齋，那個我從來都不喜歡吃，我覺得那個太沒性格，我好像吃普通東西一樣。</p></a>
+				<a href="#00:07:1.73" id="00:07:1.73" class="lt" onclick="jumptoTime(421, this.id)"><p>我就不會吃它，這盤東西弄好了，我們就可以看我們的麵筋弄成怎樣，你看它煮到差不多，就可以撈起它，但現在應該還不行，我覺得還有一點，可以再軟一點，我喜歡自己喜歡軟一點，你喜歡那塊齋有多大塊，你就可以現在切，譬如你喜歡一大塊，那你就隨它，看你喜歡的大小，就剪小一點，我大概喜歡一口的大小，這個就太大了。</p></a>
+				<a href="#00:07:35.73" id="00:07:35.73" class="lt" onclick="jumptoTime(455, this.id)"><p>我覺得大一點，我就會把它切一半，讓它繼續煮，切了就會煮得快一點，因為麵筋是一樣，不固定的東西，你看這個，完全是不知道怎樣的，所以你要自己剪，你看煮到差不多，就可以關火，然後拿去冰水沖走油和水，之後就會清爽一點，字幕by索兰娅🐰，好!洗完澡回來了，可以看一下麵筋是怎樣的，其實我們把麵筋剪開來看，你就會看到其實是一個好像網狀結構的東西。</p></a>
+				<a href="#00:08:23.08" id="00:08:23.08" class="lt" onclick="jumptoTime(503, this.id)"><p>那剛才煮完就拿去沖水，沖完冷水，重複可以過水過幾次，不停捏一下它，因為裡面其實還有很多水和油，可以讓你沖一下沖一下沖出來，那重複幾次都不怕的，你不會怕捏爛它，那洗完乾淨之後就是現在這個樣子，那我們就可以做下一步煮它了，我們把剛才的汁倒進去，然後煮滾它之後，弄好芡就差不多了，剛才忘記加鹽。</p></a>
+				<a href="#00:08:55.08" id="00:08:55.08" class="lt" onclick="jumptoTime(535, this.id)"><p>我會加一點鹽進去，那你可以在這裡偷一點出來，在它還沒煮滾之前，因為我們等一下會用粟粉來做芡，那現在先拿起一點，就可以把粟粉混合，那大約十克吧，看你喜歡，有些人喜歡稠一點，有些人喜歡稀一點，看你自己喜歡，但是稠一點稀一點其實那個關鍵，就不是在你混合多少粟粉上，是在等一下有一個步驟，你記得做就會比較容易控制。</p></a>
+				<a href="#00:09:31.58" id="00:09:31.58" class="lt" onclick="jumptoTime(571, this.id)"><p>那我們混合稀一點的粟粉，這樣就白麻痺了，我們回來看看這個醬，其實煮滾了就差不多了，讓它煮一點時間，因為這些酸的東西，醋、喼汁、茄汁，他們不知道為什麼一開始煮的時候，其實是很攻避的，但是你給它一段時間煮一煮，它們是會融合得好一點的，你聞到的，會有一點點不同，差不多了，之後就重要了，因為麵筋裡面。</p></a>
+				<a href="#00:10:9.27" id="00:10:9.27" class="lt" onclick="jumptoTime(609, this.id)"><p>我們剛才沖完水，裡面其實是超多水的，所以如果你直接放進去，那一鍋東西就會很稀，味道就會完全不同，所以你必須要把裡面的水扭乾，用力把裡面的水分全部拿出來就對了，你看到是這樣的，然後一下子捏進去，你看到其實有很多水可以被你捏出來，這些水如果混進醬汁裡，醬汁就會變味了，我們把水全部捏進去就可以放進醬汁裡，我們慢慢煮滾一點。</p></a>
+				<a href="#00:10:43.27" id="00:10:43.27" class="lt" onclick="jumptoTime(643, this.id)"><p>讓它吸收多一點醬汁，好，之後來到最後一步了，你看到它煮到差不多了，關小一點火，因為放芡的東西，就是放生粉水的東西，一放的話，如果它太熱就會馬上凝固，就會變成一團東西，所以你可以關小一點火，讓它沒那麼容易一倒下去馬上熟，最重要的是一倒下去就要同一時間不停攪拌，不然就會變硬成一團東西，好，來了。</p></a>
+				<a href="#00:11:10.27" id="00:11:10.27" class="lt" onclick="jumptoTime(670, this.id)"><p>你可以分批慢慢放，不用急，看著來也可以，因為太稠了就不能回頭，稀了就可以慢慢變濃，所以不怕，你可以慢慢放，調你喜歡的濃度，但是你要看著它，放完之後一定要煮滾，你才能確定那些粟粉是成功全部糊化作用，如果你沒有成功糊化作用，你就覺得它很稀，不停地加，到它真正煮滾的時候，你就變成一個餅。</p></a>
+				<a href="#00:11:42.27" id="00:11:42.27" class="lt" onclick="jumptoTime(702, this.id)"><p>或者變成一個酸齋糕，一團東西就會變成，你要確保它真的煮滾了，真的糊化了，發生了它變濃的作用，才好下一步，你看到嗎?現在濃了一點點，但是還不是很夠，我們就繼續加進去，加進去，差一點點，攪拌均勻，還有分次加有它的好處，因為淡的東西會慢慢走去濃的地方，好像水分就會由稀的地方走去濃稠的地方，濃稠的地方又會走去稀的地方。</p></a>
+				<a href="#00:12:20.73" id="00:12:20.73" class="lt" onclick="jumptoTime(740, this.id)"><p>所以如果你分次加，它會慢慢變濃，就不會一次過變完，其實是會均勻一點，尤其是因為麵筋裡面，一開始已經吸了一些水分，吸了我們的汁，如果你不分次加，一次過加完，外面的汁會封住它的表面，它裡面有那些還沒混合到生粉的汁，你咬下去那個質感就會有點不同，如果你分了兩次加，它裡面的水分就會走出來，然後濃的那些又會走進去。</p></a>
+				<a href="#00:12:52.23" id="00:12:52.23" class="lt" onclick="jumptoTime(772, this.id)"><p>之後你再加一次，它裡面的那些又會走出來又會走進去，彈出彈入，打我一頓，變成這樣經過一個循環之後，就會相對均勻一點，搞定!</p></a>
+				<a href="#00:13:24.79" id="00:13:24.79" class="lt" onclick="jumptoTime(804, this.id)"><p>登登，完成了，記得說你做的時候，看你自己是喜歡它熱吃還是冷吃，如果你是做完馬上吃的，那就沒什麼所謂，如果你是冷吃的你就要留意了，因為這個汁呢，其實冷了會變稠一點，如果你是冷吃的你就記得，調那個粟粉的時候，不要放那麼多，可以減一點點，令到它沒那麼稠，還有如果你喜歡汁多一點，你可以把成份汁的份量。</p></a>
+				<a href="#00:13:54.51" id="00:13:54.51" class="lt" onclick="jumptoTime(834, this.id)"><p>再加多一點點，就是這樣了，那今集就來到這裡了，希望你們喜歡這次的食譜，記得Like Facebook，Follow Instagram，加入會員，贊助，有沒有數漏，沒有了，記得逢星期一，星期三，星期六，我們都有新片，就是這樣了，下次再見，例えば</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:33.57" id="00:14:33.57" class="lt" onclick="jumptoTime(873, this.id)"><p>�ther，prank有，市。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:20.29" id="00:14:20.29" class="lt" onclick="jumptoTime(860, this.id)"><p>odd。</p></a>
+				<a href="#00:14:19.73" id="00:14:19.73" class="lt" onclick="jumptoTime(859, this.id)"><p>Blake</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:27.09" id="00:14:27.09" class="lt" onclick="jumptoTime(867, this.id)"><p>encer。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:32.57" id="00:14:32.57" class="lt" onclick="jumptoTime(872, this.id)"><p>Journey，waiter，glued，mean，ément。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:26.47" id="00:14:26.47" class="lt" onclick="jumptoTime(866, this.id)"><p>dream。</p></a>
+				<a href="#00:14:22.83" id="00:14:22.83" class="lt" onclick="jumptoTime(862, this.id)"><p>rical</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:31.69" id="00:14:31.69" class="lt" onclick="jumptoTime(871, this.id)"><p>gangs，été。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:29.63" id="00:14:29.63" class="lt" onclick="jumptoTime(869, this.id)"><p>Nobel。</p></a>
+				<a href="#00:14:21.81" id="00:14:21.81" class="lt" onclick="jumptoTime(861, this.id)"><p>descon</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:32.65" id="00:14:32.65" class="lt" onclick="jumptoTime(872, this.id)"><p>anal。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:26.17" id="00:14:26.17" class="lt" onclick="jumptoTime(866, this.id)"><p>lets，Containibile</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:28.71" id="00:14:28.71" class="lt" onclick="jumptoTime(868, this.id)"><p>private。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:17.77" id="00:14:17.77" class="lt" onclick="jumptoTime(857, this.id)"><p>ır，placing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:31.21" id="00:14:31.21" class="lt" onclick="jumptoTime(871, this.id)"><p>presentation，egg</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:32.91" id="00:14:32.91" class="lt" onclick="jumptoTime(872, this.id)"><p>Qiao，aseg niez，존。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:20.45" id="00:14:20.45" class="lt" onclick="jumptoTime(860, this.id)"><p>不對 diplom</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:23.37" id="00:14:23.37" class="lt" onclick="jumptoTime(863, this.id)"><p>Entertainment，しょ。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:18.95" id="00:14:18.95" class="lt" onclick="jumptoTime(858, this.id)"><p>alet，yd，ே Guess</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:23.47" id="00:14:23.47" class="lt" onclick="jumptoTime(863, this.id)"><p>字幕由Amara.org社区提供。</p></a>
+</div>
+	</body>
+</html>

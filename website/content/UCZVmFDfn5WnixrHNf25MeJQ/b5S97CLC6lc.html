@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 沙參玉竹百合甘筍煲豬展湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'b5S97CLC6lc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 沙參玉竹百合甘筍煲豬展湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:17.02" id="00:00:17.02" class="lt" onclick="jumptoTime(17, this.id)"><p>各位好，我是星星师父，星星，这些是什么?</p></a>
+				<a href="#00:00:24.22" id="00:00:24.22" class="lt" onclick="jumptoTime(24, this.id)"><p>现在清楚多了，你又玩中药?</p></a>
+				<a href="#00:00:29.82" id="00:00:29.82" class="lt" onclick="jumptoTime(29, this.id)"><p>这些天时，煲些养生汤水，养养生，这种叫沙参，这种叫肉粥，今天煲沙参肉粥，配白鹹，这些天时，又不冷又不热又不干又不湿，最好煲这种汤水，养养生，生津止渴，养肺，清热，这种材料我们回来的，首先用水浸，用冻水浸一浸，浸多久?</p></a>
+				<a href="#00:01:14.22" id="00:01:14.22" class="lt" onclick="jumptoTime(74, this.id)"><p>大约浸半小时，倒入去，八盒不用太多，一堆就够了，这类型的煲汤材料都卖得很贵，我们先用水浸，浸一浸，还有其他材料，四粒蜜棗，一块陈皮，这些是正宗的靓陈皮，这块陈皮超过十年了，正式的靓陈皮，底部是深色，前面是浅色，看多薄身，这些狼不用刮吗?</p></a>
+				<a href="#00:02:7.22" id="00:02:7.22" class="lt" onclick="jumptoTime(127, this.id)"><p>八隻的狼就不太燥热，可以轻轻刮一刮，果皮蜜棗可以拿去煲，放半煲水，蜜棗和果皮冻水，现在煲，每次煲汤都离不开甘笋，放两条甘笋，咁准凍水落就得㗎喇，好所謂嘅，隨意切，凍水咪放埋佢啦，咁呢個仲有條鰓嘅，加入一些甘筍，一人一斤，還有一些肉，一個湯夠兩個人食，煲個湯煮個飯就夠食，這裏有差不多一斤豬展，先將它們汆水。</p></a>
+				<a href="#00:03:30.35" id="00:03:30.35" class="lt" onclick="jumptoTime(210, this.id)"><p>洗乾淨所有的鱈魚，鱈魚是非常透的，會否把肉味都釋放出來?不會的，將它們放入水滾後就煲，沙参、肉粥、百合，浸了大约20分钟，全部倒出来，洗一洗它，因为它本身浸开之后会有些杂质、沙泥在里面，这时候就冲洗干净它，然后再浸，这类型的冬藥一定要洗干净，现在就这样，就不要倒了，为什么要这样呢?</p></a>
+				<a href="#00:04:50.03" id="00:04:50.03" class="lt" onclick="jumptoTime(290, this.id)"><p>因为要去除一些污秽和灰尘，放进去，现在我们要怎么做呢?</p></a>
+				<a href="#00:05:5.35" id="00:05:5.35" class="lt" onclick="jumptoTime(305, this.id)"><p>我们先用热水浸一会儿，我们拿去冷水，加热到差不多滚的时候，就当是去除水分，为什么要用热水去除水分呢?</p></a>
+				<a href="#00:05:26.51" id="00:05:26.51" class="lt" onclick="jumptoTime(326, this.id)"><p>现在跟大家再说两句，这类型的沙参、肉粥、百合，很多时候在干身的过程中，都会放一些干燥剂或风干剂，我们浸了它之后再去除水分，就把里面的不好的味道去除，最主要的目的就是这样，现在我们洗干净它，这个时候，再把里面的不好的味道洗掉，然后就拿去煲，煲出来的汤就不会有什么异味，沖一沖就可以了，等水滾後拿去煲。</p></a>
+				<a href="#00:06:33.53" id="00:06:33.53" class="lt" onclick="jumptoTime(393, this.id)"><p>骨頭水滾，放下去煲滾，沙參肉粥八合，可以放下去了，放入去後，等它煮滾，大火煮半小時，然後轉小火，再煮多一個半小時，全程煮兩小時便可以了，現在等它滾起，大火煮半小時，煮好再跟大家分享，經過兩小時的湯水，現在就完成了，大家看看，很清淡，但很濃郁，最重要是把沙參、肉粥、百合浸水洗乾淨，然後再汆水。</p></a>
+				<a href="#00:07:49.98" id="00:07:49.98" class="lt" onclick="jumptoTime(469, this.id)"><p>湯水煲出來就不會有藥材的酸味，現在天氣熱，可以用這些清熱潤肺的湯水，很適合的，特別是我這種冬天病了兩個月就咳了兩個月，現在康復了，最適合用這些湯水，今天的分享到此為止，謝謝各位收看。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【芝士茶】唔駛返大陸 在家做芝士茶</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vVGD1ZtCg-o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【芝士茶】唔駛返大陸 在家做芝士茶</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:12.35" id="00:00:12.35" class="lt" onclick="jumptoTime(12, this.id)"><p>馬田出來了，我們今天呢 厲害了，弄一些，是不是潮流末端呢，都蠻末端的，就是這個芝士茶，其實芝士茶是甚麼來的呢，其實是以前N年前，我做過一個叫做奶蓋綠茶，那奶蓋綠茶呢，加了芝士就演變了，成為現在這個芝士茶，其實很簡單的，自己在家裡都做得到，不貴的，其實不用十塊一杯的，自己做都可以，所以自己在家裡做。</p></a>
+				<a href="#00:00:48.37" id="00:00:48.37" class="lt" onclick="jumptoTime(48, this.id)"><p>一百人喝是OK的，如果你想做一杯就算了吧，因為步驟都麻煩，還有你要準備的東西都多的，而且一杯其實是做不到出來的，最少都要做兩杯的份量，首先我們一定要有的，就是忌廉芝士，那你買這個牌子好了，其他牌子呢，沒有那麼好吃的，那我們就要50克這個忌廉芝士，那忌廉芝士有一個重點的，就是它必定要先。</p></a>
+				<a href="#00:01:18.37" id="00:01:18.37" class="lt" onclick="jumptoTime(78, this.id)"><p>放在室溫攤軟了，即是怎樣才算是攤軟，因為它本身是很硬的，所以你要把它放在室溫一段時間，讓它軟了，不然你是做不到下一步的，那你打到它軟了的狀態，就可以再加牛奶了，如果你忘記了解凍呢，就很麻煩了，因為這個東西就會硬到，你打不開的，還有這次這個芝士茶，其實份量越多，其實是越容易做的，你看我這次做那麼少。</p></a>
+				<a href="#00:01:50.37" id="00:01:50.37" class="lt" onclick="jumptoTime(110, this.id)"><p>它就會黏著那個刮，很難打，反而你做得多，你可能可以用機器，或者它整大塊，沒那麼容易黏著攪拌板</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:5.37" id="00:02:5.37" class="lt" onclick="jumptoTime(125, this.id)"><p>你看，黏在上面的比在攤子上還要多，我們首先打到這堆東西，軟身，可以做下一步，之後呢，分三次，三次加入我們的牛奶，不是說三次，是分三次，我們要50的，大概每次15，最後那次多一點點，為什麼要分三次呢，因為如果不是這樣做，其實是很難很難很難混合的，因為濃的東西變成稀，如果你一次過加入所有水份，其實是會攪到很歪的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:43.37" id="00:02:43.37" class="lt" onclick="jumptoTime(163, this.id)"><p>所以我們分三次，每一次你都要確保攪到，很軟，很軟滑，如果你看到還有些粒粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:58.37" id="00:02:58.37" class="lt" onclick="jumptoTime(178, this.id)"><p>你就盡可能打，打到它沒有為止，好，第一次</p></a>
+				<a href="#00:03:8.32" id="00:03:8.32" class="lt" onclick="jumptoTime(188, this.id)"><p>最後一次我們加上鹽，鹽很重要的，因為這個東西其實很鹹的，我喝過，我不知道為什麼這麼鹹，其實我是不喜歡喝這麼鹹的，所以我減了一半的份量，如果你要做回，很接近你在某些店鋪喝的，你就給我這個鹽加多一個雙倍，我其實只加了一克，我就順手量了，如果你沒有量的話，其實我已經加了一半的份量，我就順手量了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:37.32" id="00:03:37.32" class="lt" onclick="jumptoTime(217, this.id)"><p>如果你沒有量，或者你的磅量不到一克這麼仔細，你就八大一茶匙吧，因為磅呢，如果你真的量一克，其實會很不準確的，尤其是只量到一克的磅，你直接量一克，可能你量了三、四克出來也不奇怪，因為頭一克的誤差是很大的，所以你要買磅，如果你要量一克的東西，你要買一個有零點一克的磅，你才可以量到一克的東西，一克的東西是準確的。</p></a>
+				<a href="#00:04:7.32" id="00:04:7.32" class="lt" onclick="jumptoTime(247, this.id)"><p>好，那就攪拌一下鹽，這個就是其中一半的部分了，另外一半的部分就是奶蓋的部分，那奶蓋的部分其實是什麼呢?</p></a>
+				<a href="#00:04:19.32" id="00:04:19.32" class="lt" onclick="jumptoTime(259, this.id)"><p>奶蓋的部分其實一句說完，就是CREAM，所以它才可以浮在杯子的頂，因為裡面有空氣，首先需要100克的奶油，有些人說是加煉奶的，有些人當然是加糖的，其實是沒有加糖的，只有我說是加煉奶的，大部份人都說是加煉奶的，其實分別不是很大，因為你那個奶油已經是最主要的味道來源，奶油本身已經是很濃郁牛奶味的東西，你見到有牛奶。</p></a>
+				<a href="#00:04:55.32" id="00:04:55.32" class="lt" onclick="jumptoTime(295, this.id)"><p>基本上全部都是奶，煉奶在中間的影響力很低，我們還要加15克的糖，加完糖後，我們要打到它有多少呢?</p></a>
+				<a href="#00:05:10.65" id="00:05:10.65" class="lt" onclick="jumptoTime(310, this.id)"><p>這個就要看觀察了，首先，打奶油有幾個重點，首先，你的碗一定要乾淨，不能有東西在裡面，洗完要洗乾淨一點，第二，就是要夠冷，不要拿出來攤開，奶油跟奶油芝士雖然名字不太像，奶油是不能放在室溫太久的，奶油的盒子寫明了，最佳打法的溫度是4-8度，就是要冷的，如果太熱的話，它是打不開的，如果打太久，或者你很怕的話。</p></a>
+				<a href="#00:05:53.65" id="00:05:53.65" class="lt" onclick="jumptoTime(353, this.id)"><p>你就可以加一盆冰在底，它就會冷一點，你就不怕太熱打不開，打開的方法就是這樣，讓它聚在一邊，這樣就可以一次過打多一點空氣，你不要這樣拿，這樣拿會很累，你用手的手會手腕很累，你這樣拿，然後整個手動，可能你手腕比手臂強，我沒什麼好說的，但正常人應該都是手臂比手腕強，所以用手臂會好一點。</p></a>
+				<a href="#00:06:30.65" id="00:06:30.65" class="lt" onclick="jumptoTime(390, this.id)"><p>還有你可以觀察一下你的手臂有沒有震動，如果有震動就不要喝這個了，你做完就算了，做完就請朋友喝就算了，你看到我現在打了不用一分鐘，奶油其實已經完成了，打好了，不用太硬，這個也比滴滴硬，因為我們倒完之後還可以慢慢調整程度，一次過放進去，慢慢攪拌，好，刮乾淨碗盤，看看質感，你可以觀察一下質感是否你要的。</p></a>
+				<a href="#00:07:22.65" id="00:07:22.65" class="lt" onclick="jumptoTime(442, this.id)"><p>可以再硬一點點的，想要多一點空氣可以再打兩下，其實現在已經差不多了，那為什麼我現在沒有這樣打呢?</p></a>
+				<a href="#00:07:34.14" id="00:07:34.14" class="lt" onclick="jumptoTime(454, this.id)"><p>因為我們輕輕微調，如果你起勢這樣打，其實那個CREAM一打發好的時候，打到七成八成，它由七成變成九成，可能是三下四下，就已經可以變到很多了，那個範圍很窄而已，你再打幾下就差很遠了，所以到這個時候就要慢慢看，慢慢試，就不跟一開始打，一開始打你怎麼打，它都還沒有反應的，好，震了一些大的氣泡出來，那我們這盤東西呢。</p></a>
+				<a href="#00:08:6.64" id="00:08:6.64" class="lt" onclick="jumptoTime(486, this.id)"><p>就差不多了，冷藏它，沖茶，那沖茶呢，沒什麼特別的，隨便茶，你喜歡什麼茶就什麼茶，你喜歡烏龍茶就烏龍茶，綠茶就綠茶啦，但是唯一要知道的就是，其實會要比平時喝一包茶濃一點點的，因為冷的茶呢，很容易覺得淡的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:31.24" id="00:08:31.24" class="lt" onclick="jumptoTime(511, this.id)"><p>汽水又太甜，水又太淡，我要煲煲茶</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:37.14" id="00:08:37.14" class="lt" onclick="jumptoTime(517, this.id)"><p>那我們兩包沖，250毫升啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:40.94" id="00:08:40.94" class="lt" onclick="jumptoTime(520, this.id)"><p>那就等它泡吧，好，冰到，冰到冰到，那你按根你自己喜歡放糖啦，你喜歡放砂糖，其實可以放砂糖，不用放這些液體糖的，液體糖是放冷的東西的，放多少呢，隨意啦，但是有一個重點的，我喝過發現是出事的，就是平時你們那些普通茶喝，是可以點一點甜的，但是芝士茶這東西，是比較難點一點甜的，我那次點了半糖，是難喝到趴在那裡的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:17.24" id="00:09:17.24" class="lt" onclick="jumptoTime(557, this.id)"><p>因為那個芝士是，已經是鹹的，然後下面那杯東西你不夠甜，最終你喝了上面那杯，喝了一會兒，然後最終把它混合之後，你得到一杯好像老火湯那樣的東西，所以呢，是要甜一點點的，15克啦這裡，然後呢，將我們的綠茶，沖下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:41.84" id="00:09:41.84" class="lt" onclick="jumptoTime(581, this.id)"><p>按一按茶包，那我們熱呢，熱茶沖下去就要滿杯冰，冰塊已經溶化了一半，再多攪拌兩下，就會再少一點，哎呀，果然多攪拌兩下是少了，茶底就做好了，加上奶蓋就完成了，一份大概是兩杯的份量，例如，奶蓋溶化後就要攪拌一下，冰塊是很重要的，冰塊可以令奶蓋不會一次過沖到茶底，喜歡加綠茶粉就加綠茶粉，喜歡不加就不加。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:44.25" id="00:10:44.25" class="lt" onclick="jumptoTime(644, this.id)"><p>其實也沒什麼特別，若果你剩下多少位置給奶蓋呢?</p></a>
+				<a href="#00:10:49.25" id="00:10:49.25" class="lt" onclick="jumptoTime(649, this.id)"><p>大概3cm，其實等於這杯的線就對了，再灑一點綠茶粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:59.25" id="00:10:59.25" class="lt" onclick="jumptoTime(659, this.id)"><p>完成了，好，這樣超級簡單，這次又完成了，冰都溶得七七八八了，根據這個東西喝的方法就是，先喝一口，喝一口，接著再喝多一點，就會喝到底部的茶，之後才慢慢混合來喝，是不是覺得我會喝到滿嘴都是呢?我是不會的，這個茶好喝</p></a>
+				<a href="#00:11:42.23" id="00:11:42.23" class="lt" onclick="jumptoTime(702, this.id)"><p>推介給你，類似這個名字的，沒有付錢的，他喜歡付錢都可以現在付，我的戶口在下面，就是這樣了，之後有什麼想做你可以告訴我們，我們一起來做，好，這集就來到這裡，希望大家喜歡，我們一起來做，好，這集就來到這裡，我們搞著東西來說，搞著東西來說，我們記得like facebook，follow instagram，訂閱，喜歡就可以贊助。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:17.23" id="00:12:17.23" class="lt" onclick="jumptoTime(737, this.id)"><p>我們逢星期三，星期五，星期六，都會有新片的，就是這樣了，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

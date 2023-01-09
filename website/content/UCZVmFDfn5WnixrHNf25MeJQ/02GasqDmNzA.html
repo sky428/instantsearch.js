@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 家鄉鹹湯圓 How to make salt rice dumpling</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '02GasqDmNzA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 家鄉鹹湯圓 How to make salt rice dumpling</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:22.14" id="00:00:22.14" class="lt" onclick="jumptoTime(22, this.id)"><p>大家好，又係星星同大家分享下，星星，你不是又整年糕吧?</p></a>
+				<a href="#00:00:30.14" id="00:00:30.14" class="lt" onclick="jumptoTime(30, this.id)"><p>糯米粉除了整年糕，還有很多可以做，例如做湯圓，有什麼材料?這些用來做湯圓，真不真?</p></a>
+				<a href="#00:00:42.14" id="00:00:42.14" class="lt" onclick="jumptoTime(42, this.id)"><p>湯圓除了甜食之外，其實還有鹹湯圓，在Facebook職人吹水群組有位網友上載了鹹湯圓，勾起我自己少少情懷，適逢雪櫃有類似材料，又和大家吹水，鹹湯圓有什麼材料?蝦米浸水，豬肉碎用少許豉油和豆粉糖醃，少許紹菜，糖芹，如果有蒜仔更好，做鹹湯圓，還有些甘筍粒，昨日煲湯剩了些甘筍粒，一定少不了冬菇，做鹹湯圓冬菇蝦米主要材料，順德鹹湯圓有什麼特點呢?</p></a>
+				<a href="#00:01:42.14" id="00:01:42.14" class="lt" onclick="jumptoTime(102, this.id)"><p>多了魚鬆，用鯪魚肉打起，煎香，魚鬆煮蘿蔔，昨日剩了些做鹹湯圓，湯圓始終要先開粉，這才是靈魂，糯米粉可放多少?看你幾多人食，我放了五湯匙，還有一樣很重要的，熱水，現在還在出煙，用熱水開，為何用熱水開?讓糯米粉產生黏性，除了落熱水外還有什麼竅門?</p></a>
+				<a href="#00:02:34.14" id="00:02:34.14" class="lt" onclick="jumptoTime(154, this.id)"><p>就是慢慢加熱水，不要心急，現在水差不多無了便又落，慢慢開，這些粉用熱水開，令它煙韌度好些，大家很多時在家搓湯圓，搓一搓是否很容易爆開，用凍水開或凍滾水開都會這樣，但用熱水開便很黏，有些粉一定要開到半生熟才發揮作用，大家知不知道是甚麼粉，將來做菜式時再和大家分享，開到差不多，按一按，現在差不多了，可以用手搓，首先洗乾淨，逐下逐下搓上來。</p></a>
+				<a href="#00:03:33.90" id="00:03:33.90" class="lt" onclick="jumptoTime(213, this.id)"><p>怎樣才可以呢?現在比較鬆軟些，不要緊，現在再加少許粉，不要加太多，逐些逐些加，搓到均勻，這粉見到光滑，光面，搓了約一分鐘多些，現在這粉差不多了，上下鬆軟程度差不多，這粉現在可以了，將整塊拿出來，切開一半，搓到一條長條形，拉到U字形，拿刀出來，切到自己想食的大小，切開，然後拿粒出來，搓，不用餡了，便完成一粒，很容易。</p></a>
+				<a href="#00:05:0.90" id="00:05:0.90" class="lt" onclick="jumptoTime(300, this.id)"><p>如果食甜湯丸，看中間想食甚麼餡，如果順德家鄉甜湯丸，便塞粒片糖粒落中間，適逢元宵佳節，做個湯丸食便煙煙韌韌，祝各位友情人終成眷屬，如果是終成眷屬的，會更煙韌，經過一輪努力後便完成了，放一旁備用，處理湯底第一步，爆香蝦米，燒熱鍋，落適量油，炒香蝦米，爆到蝦米有香味釋出，做這個家鄉湯圓，冬菇蝦米豬肉是味的來源。</p></a>
+				<a href="#00:06:0.44" id="00:06:0.44" class="lt" onclick="jumptoTime(360, this.id)"><p>約爆了一分鐘聞到蝦米味，落剛才的豬肉，輕輕煎一煎封，煎封30秒反另一邊再煎封30秒，不用煎熟，這段時間可以輕輕揚散，落冬菇爆一爆，冬菇都要煎一煎爆一爆才會香，這些冬菇都是我之前發冬菇的冬菇，做冬菇的竅門沒什麼特別，最緊要用生粉洗乾淨，浸水有足夠水有足夠時間浸，冬菇就會滑身好吃，這段時間落魚鬆，落魚鬆後繼續爆香。</p></a>
+				<a href="#00:07:10.44" id="00:07:10.44" class="lt" onclick="jumptoTime(430, this.id)"><p>這些魚鬆都是現成在魚舖買打好的魚鬆，一般魚餐的魚鬆都會打好，落味後回來就不用處理，有機會日後做鯪魚球再和大家分享，聞到所有材料都有香味釋出，加少許酒增加香味，這段時間落水，湯圓湯圓，一定要夠湯，等它滾起，浸蝦米的水倒下去，如果有冬菇水可用，更好味，紅蘿蔔現在可落下去，紹菜現在可落下去，落少許鹽，然後落少許胡椒粉，胡椒粉落多少少也不要緊。</p></a>
+				<a href="#00:08:26.55" id="00:08:26.55" class="lt" onclick="jumptoTime(506, this.id)"><p>約落半茶匙鹽，魚露約半湯匙，落少許鹹味，滾起時落湯圓，是否放下去一齊滾?不是，另外再滾一煲水，因為放下去一齊滾，湯很容易起漿，起漿便不好食，現在分開滾，滾約一分多鐘，大家看到開始跳起，浮面便差不多了，這時舀起，放入湯，用湯餵一餵湯圓，用湯焯一分鐘，上碟前加少許麻油，落湯圓，這鹹湯圓不換給大家看，現在整好已很想食。</p></a>
+				<a href="#00:09:41.55" id="00:09:41.55" class="lt" onclick="jumptoTime(581, this.id)"><p>一個充滿情懷的家鄉鹹湯圓便完成，適逢元宵佳節，祝各位友情人終成眷屬，好似湯圓般甜甜蜜蜜，喜歡食湯圓的網友俾個LIKE我星星，訂閱我職人吹水頻道，再分享這鹹湯圓，今日分享到此為止，預祝大家元宵佳節快樂，多謝收看，再見。</p></a>
+</div>
+	</body>
+</html>

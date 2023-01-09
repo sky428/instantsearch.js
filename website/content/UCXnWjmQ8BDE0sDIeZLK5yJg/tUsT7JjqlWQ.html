@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【出街食算】椰汁班蘭糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'tUsT7JjqlWQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【出街食算】椰汁班蘭糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，馬田又出來了，看到這棵東西，又猜到我們今天會做些什麼了，今天我們會來做一個西式，泰式，粵式，不知道，總之就是這個椰汁斑蘭糕，我們來看看有什麼材料，先在這裡，其實每一次我都跟不上框出來的動作，那和上次一樣，都是照樣處理斑蘭葉，因為上次我用了一些，一些斑蘭葉。</p></a>
+				<a href="#00:00:40.52" id="00:00:40.52" class="lt" onclick="jumptoTime(40, this.id)"><p>因為上次的影片大家反應非常熱烈，大家都說我不喜歡吃斑蘭，我不喜歡吃椰汁，那既然你們兩個都不喜歡，所以我就將這兩樣東西，再一次結合成為，椰汁斑蘭糕，那我們慢慢地滲透滲透，不停地拍，那播著播著，你們就會喜歡這東西就覺得這東西沒問題，沒錯，就是這樣了，那為什麼這些葉可以放那麼久呢?</p></a>
+				<a href="#00:01:8.60" id="00:01:8.60" class="lt" onclick="jumptoTime(68, this.id)"><p>這些葉都是上次的葉子，那我就明知自己一定會再弄，所以我就把一部分的葉子，放進冰箱裡冷藏，就是在零度之下保存，那保存完解凍了其實都OK的，是軟身了一點，就是你會感覺到它有一點點的霉霉，但是我只是用來榨汁而已，我不是用來弄東西吃的，就是我不是用來包東西吃的，所以它的外表其實不重要的，這次會用得比較多。</p></a>
+				<a href="#00:01:35.74" id="00:01:35.74" class="lt" onclick="jumptoTime(95, this.id)"><p>因為我們那個顏色要很深色，才會做到那個漸層layer的效果，那我們把那些斑蘭葉剪下去，最終應該是大概，80g左右的斑蘭葉，那我們加一點水進去那個斑蘭葉裡，讓它容易一點打，那要多少呢?</p></a>
+				<a href="#00:01:54.78" id="00:01:54.78" class="lt" onclick="jumptoTime(114, this.id)"><p>其實沒什麼所謂的，你大概可以40、50、60都可以，因為等一下我們會放這個汁，之後再加水，導致到它成為我們剛剛那個水分的那個量，所以可以多放一點，這樣之後會比較容易攪拌，好!搞定!</p></a>
+				<a href="#00:02:13.18" id="00:02:13.18" class="lt" onclick="jumptoTime(133, this.id)"><p>那一模一樣，我們先壓榨它的汁出來，那我們這次用第二個方法，就是不用茶袋直接用筲箕來試一試，之後壓它，那你看到那些汁在下面就流出來了，然後我們加那個水的分量，那我們總共要那個液體的分量，大約是70左右，70多這樣，所以我們加30多下去，好!</p></a>
+				<a href="#00:02:40.14" id="00:02:40.14" class="lt" onclick="jumptoTime(160, this.id)"><p>那大約現在這裡有75ml的液體，那就OK了，那這個就是第一層，就是斑蘭汁綠色那一層的椰汁膏，然後我們現在還可以準備另外一層的，就是椰汁那一層，白色那一層的椰汁膏，那兩個的做法其實是很接近的，那有這個汁之後就可以一起開始了，這個椰汁膏其實最主要的成份是什麼呢?</p></a>
+				<a href="#00:03:4.86" id="00:03:4.86" class="lt" onclick="jumptoTime(184, this.id)"><p>最主要的成份就是木薯粉和粘米粉，木薯粉的作用就是令到它有一個有嚼勁的口感，但是如果全部都是木薯粉的話，就會太過嚼勁，好像吃香口膠一樣，所以我們會用一些沒有那麼嚼勁的粉混進去，來調一個比例讓它不會太過嚼勁，我們這次就選用了粘米粉，粘米粉就是你看到的蘿蔔糕，什麼蜜蜂膏全部都會用的，或者是一個做糕很常見的粉。</p></a>
+				<a href="#00:03:33.46" id="00:03:33.46" class="lt" onclick="jumptoTime(213, this.id)"><p>粘米粉其實就是普通米做出來的粉，我們就準備好兩份我們的粉，第一個大份的木薯粉，之後到粘米粉，你可以根據你自己的口味調較，木薯粉越多就越有嚼勁，粘米粉越多就越沒那麼有嚼勁，那你就可以根據你自己想要的口感，之後就到下糖了，下糖其實是多的，因為這些不是液體，所以你真的要咬開裡面，甜味才會湧出來。</p></a>
+				<a href="#00:04:5.56" id="00:04:5.56" class="lt" onclick="jumptoTime(245, this.id)"><p>所以其實它是要用很多糖的，我們下糖，還有如果椰汁你不夠糖下去，它是會有一點鹹鹹的，不知道你有沒有這個感覺，好，那磅完兩份我們就可以下椰汁了，兩份有一點不同，因為我們有一份有斑蘭的水和斑蘭的汁，所以那一份我們可以少下一點椰汁，而椰汁那一份就要多下一點，椰汁這個我們選了椰漿，所以你看到那個濃稠度是頗稠的。</p></a>
+				<a href="#00:04:38.06" id="00:04:38.06" class="lt" onclick="jumptoTime(278, this.id)"><p>那你下去，我想問一下不喜歡吃椰汁的人是因為什麼原因?</p></a>
+				<a href="#00:04:45.56" id="00:04:45.56" class="lt" onclick="jumptoTime(285, this.id)"><p>我覺得椰汁挺好的，你們是什麼原因不喜歡吃椰汁?</p></a>
+				<a href="#00:04:50.06" id="00:04:50.06" class="lt" onclick="jumptoTime(290, this.id)"><p>你不喜歡吃椰汁是不是會不喜歡吃咖哩?</p></a>
+				<a href="#00:04:52.56" id="00:04:52.56" class="lt" onclick="jumptoTime(292, this.id)"><p>咖哩很多時候都有椰汁，那之後我們就下這一份，就下我們剛才磅好的斑蘭汁和水直接加下去，而這一邊我們就加50毫升的水，之後的步驟就沒什麼特別了，不用怎麼說了，就是攪拌均勻，攪拌均勻的同時，你可以準備好，待會要蒸的那個鍋，我們攪拌均勻，那這次真的要拌勻，因為我們，skip了一些步驟，那些糖我們現在直接放下去的嘛。</p></a>
+				<a href="#00:05:27.14" id="00:05:27.14" class="lt" onclick="jumptoTime(327, this.id)"><p>那變了你真的要攪拌得很勻，那些糖才會溶解，如果不是，待會就會不均勻了，好 搞定，好了 那左右已經準備好了，就可以拿出鍋子來，準備蒸的，這次我們這個鍋子，是用蒸的方法來做的，所以沒有焗爐啊，或者怎麼樣啊，都可以做得到，好 那在煮水的期間，我們可以準備其他東西了，我們現在是需要一個鍋子的，因為這個鍋子的大小。</p></a>
+				<a href="#00:05:54.74" id="00:05:54.74" class="lt" onclick="jumptoTime(354, this.id)"><p>是很影響，待會你那個東西，做到多少層的，那我們這次這個鍋子呢，就是13x13左右，因為你看它，這樣的形狀，我是不懂得計算它，究竟實際是多少的，就是可能上面是12，下面是14這樣，那你當它是13x13吧，那這個鍋子呢，現在就要塗點油進去，不然待會蒸完呢，它會黏住了，就拿不出來，滴一點點進去就可以了。</p></a>
+				<a href="#00:06:20.74" id="00:06:20.74" class="lt" onclick="jumptoTime(380, this.id)"><p>是，應該是炒的，好，現在水滾了，我們可以放進去了，我們要做的就是，將一個盤子放進去，這樣，之後就將我們的粉漿，放進兩個不同的量杯，這樣待會就會容易一點處理，如果你一顆一顆這樣舀，你又要很多顆，然後又不知道要放多少，直接倒進去就最方便了，之後就可以倒進去開始蒸了，用一個透明的盤子有一個好處就是，你可以看到你放了多少。</p></a>
+				<a href="#00:06:55.97" id="00:06:55.97" class="lt" onclick="jumptoTime(415, this.id)"><p>那每一層大概是，大火蒸它四分鐘，那它表面就會凝固了，如果你蒸不夠時間，它表面不凝固，會有一個問題會發生，就是你再倒下一層進去的時候，它又會覆蓋了一個面，或者你會整花了那個層，就是因為你的重力這樣掉下去的時候，如果它還沒完全凝固，那它中間的粉漿就會被你推開，那你慢慢就會變成一個，不是一層層的。</p></a>
+				<a href="#00:07:23.97" id="00:07:23.97" class="lt" onclick="jumptoTime(443, this.id)"><p>變成一個三角形的，蒸很久都會蒸不熟，因為你蒸一蒸就越蒸越高，本來的面就會變成中心位，如果你中心位不熟的話，你很久都沒蒸過，所以這個時間你是不可以加速的，為什麼我可以這麼肯定告訴你呢，因為這個時間是我測試過最短的，本來就說十分鐘就八分鐘，結果死不信就五分鐘六分鐘四分鐘，這樣減下去。</p></a>
+				<a href="#00:07:47.97" id="00:07:47.97" class="lt" onclick="jumptoTime(467, this.id)"><p>吃餡三分鐘就失敗了，沒錯，這樣的東西都做了無數次，就是為了大家可以，省那幾分鐘，好 時間到，嘩 嘩 嘩 先打開看看，你看到全部都是，統一一隻顏色，那就是成功形成，好 下一層</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:11.97" id="00:08:11.97" class="lt" onclick="jumptoTime(491, this.id)"><p>蓋上蓋子，蓋上蓋子 又蒸四分鐘，好 又再來了，還有另一個重點是要知道的，如果忘記了就會有點麻煩，就是這個粉漿放著放著 它會慢慢沉澱下去，變成每一次放太久 最好先攪一攪 攪勻一點，不然上面的會太稀 下面的會太稠，出來的膏就會不均勻，你見不見到有點起伏，我會關小一點火，因為我覺得應該是熟得太快。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:49.67" id="00:08:49.67" class="lt" onclick="jumptoTime(529, this.id)"><p>因為這個火力太大 它蒸得太快 太容易凝固，變得不太滑，之後那幾層會減慢一點 但時間是一樣的，好 又時間到了 打開看一下，沒錯 平滑了很多 你看，所以食譜的東西都不一定準確，我都是亂說的，好 那我們再到下一層了，你知道每個人家裡的火力不同，或者用的爐不同，或者你用的碗的全熱度也不同，其實有很多東西都不同。</p></a>
+				<a href="#00:09:28.87" id="00:09:28.87" class="lt" onclick="jumptoTime(568, this.id)"><p>你是要靠自己觀察那東西對不對才能做到，好 白色，開始要加多一點，因為上到頂 我這個碗越來越大，又再來了，已經忘記了去到第幾層，好像Inception一樣，再加綠色，現在這層是第五層了吧，OK，繼續等待，又回來了，這次到什麼色啊，白色，好 應該再多兩層左右，我們這個就會完成了，好辛苦啊。</p></a>
+				<a href="#00:10:19.67" id="00:10:19.67" class="lt" onclick="jumptoTime(619, this.id)"><p>那最後一層，大概蒸多十分八分鐘就可以了，那我們現在是時候打開來看一下了，開，耶，焗起了，你看，OK啦，勉強OK啦，攤動它，好，因為時間的關係已經完全到了第二天了，它已經冷凍了一晚，變得很硬，其實這東西本來應該是在室溫下吃的，所以你應該會再把它放軟，就會好一點，但冷凍硬了有一個好處，就是它會比較容易切。</p></a>
+				<a href="#00:11:0.14" id="00:11:0.14" class="lt" onclick="jumptoTime(660, this.id)"><p>那我們現在就把它拿出來，小心沿著邊按一按它，它就會出來，如果好像我這個沒有這個那麼硬或者那麼冷，你就要小心一點，因為你這個步驟有機會會把它按爛，好，完成，拿出來了，多漂亮啊，切的時候有一點點東西可以留意的，那我現在就這樣切一個給你們看，那你看到其實是要多大力和多黏的，如果你這塊東西是有一點點軟身的話。</p></a>
+				<a href="#00:11:36.88" id="00:11:36.88" class="lt" onclick="jumptoTime(696, this.id)"><p>那你怎麼做呢?</p></a>
+				<a href="#00:11:38.88" id="00:11:38.88" class="lt" onclick="jumptoTime(698, this.id)"><p>你可以把刀子濕一點點水再切，那之後就會比較容易切，就是我們拿一點水，刷一刷刀子，那些漿就不會黏在刀子上，那就會比較容易切，那我們切到我們喜歡的大小就可以了，這樣，那你看到刀子上面就不會黏著，像剛剛那樣的粉黏著，如果你是要求高，你可以把邊切掉再切的，那塊東西出來就會正方一點，但是如果自己在家裡吃就沒所謂了。</p></a>
+				<a href="#00:12:10.88" id="00:12:10.88" class="lt" onclick="jumptoTime(730, this.id)"><p>那邊都切掉了，這樣切開它，你看到如果有濕水的話是比較容易切的，刀子下的那一刻不會黏著刀子，然後就切，好，再切，好，切完，那你可以把它叮一叮，讓它軟身一點，這樣就可以吃了，好，這次這個斑蘭椰汁糕就完成了，那你會看到有些不是很均勻，還有那條直線不是很直的那些位置，就是因為它蒸的時候太大火，所以它有一點點焗起來了，脹起來了。</p></a>
+				<a href="#00:12:58.85" id="00:12:58.85" class="lt" onclick="jumptoTime(778, this.id)"><p>那就會令到中間這條線不是那麼平的，那只要調慢一點火，拖長一點蒸的時間，其實應該就不會有問題了，還有吃之前最好放在室溫，攤軟一點，或者直接叮它，叮一會讓它熱一點，那它就會很軟熟，如果你沒有叮，它如果從冰箱拿出來是這樣的，完全不同的，這東西是很硬的，好像擦膠一樣，但是放軟了，它就會很軟熟和很堅韌的，你看，那如果你嫌麻煩，不想用斑蘭汁。</p></a>
+				<a href="#00:13:33.35" id="00:13:33.35" class="lt" onclick="jumptoTime(813, this.id)"><p>那你可以直接買斑蘭的香料，那你要放多少呢?其實很簡單，因為麻煩的香料多數都連它的色素，所以你放到適合的顏色，理應就夠味了，那你就不用弄那麼多斑蘭汁，那食譜的份量就跟椰汁這一面的份量照做，然後加色素和加這個香料進去，那就OK了，好啦，那這集就來到這裡了，記得like facebook，follow instagram，訂閱，我們逢星期一，星期三，星期五都有新片。</p></a>
+				<a href="#00:14:6.35" id="00:14:6.35" class="lt" onclick="jumptoTime(846, this.id)"><p>下次再見，拜拜，字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

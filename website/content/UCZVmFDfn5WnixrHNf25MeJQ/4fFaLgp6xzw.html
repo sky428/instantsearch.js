@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 酸辣湯 家常版 簡單易做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4fFaLgp6xzw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 酸辣湯 家常版 簡單易做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，各位好，我是星星师父，星星，你又去踩车?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:16.68" id="00:00:16.68" class="lt" onclick="jumptoTime(16, this.id)"><p>你转行了?经常去踩车，又去玩，不见你煮食物，我给大家看看我的头盔，因为今天看到网友留言说我戴着头盔挺有型的，我决定戴着头盔煮食物，早些跟我说收视就高些，先拿起头盔，有什么东西呢?</p></a>
+				<a href="#00:00:40.18" id="00:00:40.18" class="lt" onclick="jumptoTime(40, this.id)"><p>一大堆大龙凤在这，又黑又白，这些是什么?</p></a>
+				<a href="#00:00:47.18" id="00:00:47.18" class="lt" onclick="jumptoTime(47, this.id)"><p>不是豆腐花，这些叫做布包豆腐，我们自己行乱就叫做包仔豆腐，这是巧克力，猪肉，木耳丝，瑶柱水，大龙凤，有什么东西呢?</p></a>
+				<a href="#00:01:29.82" id="00:01:29.82" class="lt" onclick="jumptoTime(89, this.id)"><p>其實買這麼多東西回來，都是想煮罐頭，星星你又玩罐頭?</p></a>
+				<a href="#00:01:37.64" id="00:01:37.64" class="lt" onclick="jumptoTime(97, this.id)"><p>你是不是煮到沒有東西煮?</p></a>
+				<a href="#00:01:39.92" id="00:01:39.92" class="lt" onclick="jumptoTime(99, this.id)"><p>家中會多了很多罐頭，家中有什麼罐頭呢?</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(104, this.id)"><p>豆豉鯪魚，火腿午餐肉，還有什麼?</p></a>
+				<a href="#00:01:52.64" id="00:01:52.64" class="lt" onclick="jumptoTime(112, this.id)"><p>叫蘑菇湯，這個呢?我常常用來炒飯的，紅腰豆，有時候做沙律都會用紅腰豆，你又用這個來炒菜?</p></a>
+				<a href="#00:02:8.02" id="00:02:8.02" class="lt" onclick="jumptoTime(128, this.id)"><p>是的，今天用罐頭來做一個酸辣湯的菜式，這兩樣東西回來後，用淡鹽水浸泡，浸泡的作用也是逼出豆腐不好的味道，這些小豆腐跟硬豆腐或軟豆腐有什麼分別呢?</p></a>
+				<a href="#00:02:47.24" id="00:02:47.24" class="lt" onclick="jumptoTime(167, this.id)"><p>它介乎在硬豆腐和軟豆腐之間，這樣會看得清楚一點，我們做上海菜很常用這種豆腐，因為這種豆腐是軟硬適中和豆味濃，我們要做酸辣湯，要先改一下，切豆腐要整濕一點，切粗條，切完，排好它，切粗條就可以了，不用切到頭髮那麼幼，我都切不到，這些豬紅也是用淡鹽水浸泡的，這些就叫做公公雜物，所以我經常說做菜要小心，不要學我這樣。</p></a>
+				<a href="#00:04:7.70" id="00:04:7.70" class="lt" onclick="jumptoTime(247, this.id)"><p>又不穿鞋又不穿衣服，不要學我這樣，星星你呀，你這個酸辣湯很廢，說明酸辣湯，辣就是豆瓣醬，酸味最好是用振江醋，沒有振江醋我就用陳醋，為甚麼要做酸辣湯呢?因為上次就有做過，做這罐三屍炒油麥菜，覺得裡面的材料都可以做酸辣湯，有些網友留言說不如你又試做，又試做吧，有些網友問我，星星你日常不煮東西，又不出去踩單車，有沒有上網看其他煮食片?</p></a>
+				<a href="#00:04:57.94" id="00:04:57.94" class="lt" onclick="jumptoTime(297, this.id)"><p>我不多，我主要上網多數是看其他人出去玩的片，近來我都會看一兩個煮食的視頻，煮得幾好，等水滾之際，我看甚麼視頻呢?</p></a>
+				<a href="#00:05:28.94" id="00:05:28.94" class="lt" onclick="jumptoTime(328, this.id)"><p>我覺得他做這個視頻對食材各方面很有心，食物煮得很好，為甚麼我會看到他的頻道，覺得他做得好呢?</p></a>
+				<a href="#00:05:48.94" id="00:05:48.94" class="lt" onclick="jumptoTime(348, this.id)"><p>煮食出來給人吃，或者在網上煮食出來你吃不到，你看個畫面也好，你都會感受到他很用心處理每一樣食材，很用心做好那個菜，這件事絕對在他的畫面我們感受到，我們做廚師都要有這個專業的質素，才可以拍到一些片出來感染到別人，今天這件事，水滾了，可以弄了嗎?</p></a>
+				<a href="#00:06:24.94" id="00:06:24.94" class="lt" onclick="jumptoTime(384, this.id)"><p>首先我們要把食材拖一拖水，這些木耳絲浸了之後，洗了兩次水，現在拖一拖水，所有東西都要拖一拖水，等它滾，這些拖水的目的，把木耳的不好味道拖出來，拖熱和拖軟，現在可以放在一旁，把這些拖水，剛才用淡鹽水浸泡過後，可以洗一洗，然後拖水，豆腐也是一樣，洗一洗再拖水，不要太大力，等它滾起就可以。</p></a>
+				<a href="#00:07:28.42" id="00:07:28.42" class="lt" onclick="jumptoTime(448, this.id)"><p>慢慢舀起來，舀起來後晾水備用，接著到主角出場，這類型的罐頭，都是很重味和很多油，如果用來做羹，也是要先拖一拖，我們先拖一拖它本身的味道和油，大家可以看到油都浮在上面，現在拖熱它，然後舀起來，一滾起就可以舀起來，其實裡面也有些筍絲和肉絲，正式的酸辣湯是有豬肚絲的，家庭版本就沒有所謂，主要是用筍絲和一些底味，舀起來後晾乾水備用。</p></a>
+				<a href="#00:08:44.06" id="00:08:44.06" class="lt" onclick="jumptoTime(524, this.id)"><p>油份已經沒有了，先試一下味道，這樣才能判斷要放多少味，這個時候放入瑤柱水，瑤柱水一開始要試味，加入適量的滾水，當瑤柱湯滾起，就放入木耳絲，木耳絲也要剪一剪，現在滾一滾，現在回鑊很快，放進去，豬紅豆腐，放進去，不要太大力，自己做足夠料，不要外面吃，舀起來一根根都沒有那麼多料，這段時間開始調味。</p></a>
+				<a href="#00:10:9.43" id="00:10:9.43" class="lt" onclick="jumptoTime(609, this.id)"><p>放一點胡椒粉，這裡我又放半茶匙鹽，要看你的瑤柱水有多鹹，放一點糖，和一下味道，半茶匙糖，放一點生抽，老抽，再試味，生抽大約放一個湯匙，老抽放多少呢?</p></a>
+				<a href="#00:11:1.43" id="00:11:1.43" class="lt" onclick="jumptoTime(661, this.id)"><p>主要是給它色，給它色，還差一點，酸辣的时候放呢?最后放，现在准备生粉水，这里有三个汤匙的生粉，开了生粉水之后，现在就尝一下味道，做酸辣汤要注意一件事，不要放太咸，因为豆瓣酱有咸味，现在尝一下，开生粉水，推芡都讲过很多次，滚了之后，底下这儿要化，isol juvenile，segu расп。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:16.31" id="00:12:16.31" class="lt" onclick="jumptoTime(736, this.id)"><p>competitions，iento</p></a>
+				<a href="#00:12:14.09" id="00:12:14.09" class="lt" onclick="jumptoTime(734, this.id)"><p>behavioral，countdown，rz，기� Tenemos，вм，lichkeit</p></a>
+				<a href="#00:12:15.81" id="00:12:15.81" class="lt" onclick="jumptoTime(735, this.id)"><p>� JOSH contrat，victory</p></a>
+				<a href="#00:12:14.59" id="00:12:14.59" class="lt" onclick="jumptoTime(734, this.id)"><p>hoje，Bike，ενinstr electrod，мяс，цен，required，complaining</p></a>
+				<a href="#00:12:17.72" id="00:12:17.72" class="lt" onclick="jumptoTime(737, this.id)"><p>慢慢滚出来，滾起之後，豆瓣醬和陳醋，現在放，放多少視乎你食到幾辣，我家人不是食到很辣，所以我不放太多，陳醋也放一個湯匙，關掉火，攪勻，這些芡不要攪得太過厲害，否則會反，什麼叫反?化水，差不多了，酸辣湯完成了模樣，就是這樣，這個家常版的酸辣湯，簡單快捷易做，大家有機會可以試試，至於如果沒有瑤柱湯，可以買一盒清雞湯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:55.41" id="00:13:55.41" class="lt" onclick="jumptoTime(835, this.id)"><p>豆腐和豬紅，這兩個都是主角，加上罐頭筍絲已經可以了，在外面食，哪有這麼多料，今日這個家常版酸辣湯分享到此為止，多謝大家收看，再見。</p></a>
+</div>
+	</body>
+</html>

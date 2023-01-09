@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 香脆松子仁 係要咁樣炸 Fried pine nuts</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8ThfMWPyA8Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 香脆松子仁 係要咁樣炸 Fried pine nuts</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA MARKET，現在聽到聲音，這兒大約要炸多久，大家好，又係星星同大家分享下，星星，拿包雀粟出來做什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:32.92" id="00:00:32.92" class="lt" onclick="jumptoTime(32, this.id)"><p>拿包雀粟出來當然是餵雀，大家看清楚，這包叫松子仁，今日和大家分享松子仁，我們有很多菜式都會用到松子仁，中西菜都常用的食材，但現在的松子仁不便宜，今日我們松子仁怎樣處理?</p></a>
+				<a href="#00:00:54.92" id="00:00:54.92" class="lt" onclick="jumptoTime(54, this.id)"><p>今日炸松子仁和大家分享做法，松子仁回來後我們怎樣處理?</p></a>
+				<a href="#00:01:2.92" id="00:01:2.92" class="lt" onclick="jumptoTime(62, this.id)"><p>第一步用廚房紙整濕少許，然後輕輕抹一抹，主要將松子仁表面灰塵抹走，稍為清潔，然後可以開始炸，將松子仁清潔乾淨後，開始燒油，如果夠油就隔一隔，要加多少許油，炸東西一定要夠油才炸得好，炸松子仁要用什麼油溫去炸呢?</p></a>
+				<a href="#00:01:51.92" id="00:01:51.92" class="lt" onclick="jumptoTime(111, this.id)"><p>大家看到聲音，聽到鍋有油的響聲，這些油的響聲要是什麼鍋才聽到呢?</p></a>
+				<a href="#00:02:6.92" id="00:02:6.92" class="lt" onclick="jumptoTime(126, this.id)"><p>生鐵鍋或熟鐵鍋，用易潔鍋未必聽到，聽不到又怎樣?用溫度計，我們用三四成油就好拿去炸，現在聽到響聲，大約130度油溫，可以落松子仁慢慢炸，不要用太高溫，落下去慢慢炸，將油慢慢加熱，放下去，稍為有泡好氣，現在收細火，慢慢炸，不要心急，這要炸多久呢?炸約一至兩分鐘，要看形態，蟲子仁得，其實手會感受到，因為用木殼推下去，推到蟲子仁輕身，差不多要起得。</p></a>
+				<a href="#00:03:15.18" id="00:03:15.18" class="lt" onclick="jumptoTime(195, this.id)"><p>炸物要用眼看油溫，用手推食材，大家感受到，入行開頭學師，第一約位做事，就是學炸物，如果不炸，用焗的可以嗎?可以，用低溫慢慢焗，現在用這溫度大約炸兩分鐘，推下去都開始輕身，現在轉色，差不多起得，不要等它炸夠色才起，因為夠色起便會燶，現在舀起，舀起後大家聽到聲嗎?都開始有些脆，現在晾油攤凍，蟲子仁炸好後找個地方攤凍，大家聽到聲嗎?很脆嗎?</p></a>
+				<a href="#00:04:42.18" id="00:04:42.18" class="lt" onclick="jumptoTime(282, this.id)"><p>然後倒起，完成，炸這類型蟲子仁有兩個要點，油溫2-3成油便可放蟲子仁，油溫不要太高，慢慢炸，炸至稍為輕身，稍為轉色，蟲子仁便好起，日常有什麼用途呢?</p></a>
+				<a href="#00:05:8.46" id="00:05:8.46" class="lt" onclick="jumptoTime(308, this.id)"><p>做沙律，灑幾粒上面便很好食，甚至拿幾粒食便很好食，不炸用低溫焗都可以，今日松子仁分享到此為止，喜歡食松子仁的網友俾個LIKE我星星，訂閱我頻道分享這松子仁，我下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

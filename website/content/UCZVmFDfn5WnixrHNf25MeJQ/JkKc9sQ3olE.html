@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 栗子自動剝殼 合掌瓜栗子煲豬展湯 入秋時令湯水推介</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'JkKc9sQ3olE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 栗子自動剝殼 合掌瓜栗子煲豬展湯 入秋時令湯水推介</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.40" id="00:00:5.40" class="lt" onclick="jumptoTime(5, this.id)"><p>味道相當之好，食齋，最好帶返對手，栗子處理好之後，大家好又係我星星同大家職人吹水，阿波下啲合掌瓜湯同大家吹下，中秋之後呀，其實栗子，都係好靚好當做，咁我早兩年都做咗個視頻呀，點樣摸栗子呀，相當之方便，大家又可以睇一睇我頭先，點樣我摸㗎，當然會係貴少少啦，大家可以睇返我上年嗰個，我上年嗰個。</p></a>
+				<a href="#00:01:30.42" id="00:01:30.42" class="lt" onclick="jumptoTime(90, this.id)"><p>介紹分工呀咁我今次就唔講咁多，都係好簡單，咁我跟住洗乾淨我就已經可以，落去呀，浸佢五六分鐘，除咗栗子咁我浸咗四粒嘅蜜棗，手嘅爛北行，一個嘅果皮洗乾淨浸咗佢啦，我仲有一斤嘅豬展咁我返嚟頭先改咗呀搵少少濕溫水浸佢五六分鐘，我仲有一個蘿蔔，蔣瓜，今日呢度都係煲三人份量呀嗰度呀一斤栗子呀，蔣瓜我哋都係要買啲。</p></a>
+				<a href="#00:02:36.20" id="00:02:36.20" class="lt" onclick="jumptoTime(156, this.id)"><p>比較皮乾肉滑，聚首嘅，咁煲湯呀我哋唔使刨皮㗎啦，所有材料洗乾淨先，豬展，洗咗三次之後咁我係將所有血水洗曬出嚟啦，跟住我哋燒啲凍水有啲咩用呀，飛咗啲豬展先，進一步將，豬展裏面嘅酥味，逼出，三至四人份量我哋準備，3，點五至四公升嘅水，首先，倒曬啲爛不幸物組，洗乾淨嗰個皮添埋浸嗰個皮水我哋一齊凍水倒咗落去，煲咗佢先。</p></a>
+				<a href="#00:03:33.92" id="00:03:33.92" class="lt" onclick="jumptoTime(213, this.id)"><p>煲緊水之際咁我哋今日，我哋唔使乜皮，但係我哋要去咗個骨去咁我點樣去呢咁樣撳住，輕輕架一架咁咪挑咗出嚟啦，咁我哋唔使改到，大細粒呀，大家要住一樣嘢啦，對手套啦，咁我呢度就切埋佢先，咁我哋都係可以凍水嗰個擺埋落去煲呀，甘筍呀，台北，最正呀，幾分鐘之後，咁我哋而家咪，殘留嗰啲，栗子衣咁我哋搵把刀仔掛佢啦，清洗乾淨佢。</p></a>
+				<a href="#00:04:55.56" id="00:04:55.56" class="lt" onclick="jumptoTime(295, this.id)"><p>栗子處理好曬之後我哋咪一齊擺曬落去，豬展飛緊水大家都睇到啲泡沫呀，呢啲咪有啲，酥米呀啲血腥味咁就迫埋佢出嚟囉，我們現在把它舀起來，進一步把泡沫的腥味清洗掉，這些都是處理熬湯的基本工夫，豬仔洗乾淨之後，我們就把它放在一起熬，煮滾之後，用中火煮半小時，然後用慢火煮半小時，為什麼要用中大火煮半小時呢?</p></a>
+				<a href="#00:05:54.23" id="00:05:54.23" class="lt" onclick="jumptoTime(354, this.id)"><p>因為要把所有材料的味道煮出來，然後再用慢火煮，一個滷火湯的完成，要講求火力，我們在外面煮湯，有時還要用陰陽火，有時用大火，有時用小火，因為我們煮湯是用大火的，在家煮用這個方法就絕對可以了，沙拉羹煮了兩個小時，先看看它的樣子，湯的味道都出來了，舀給大家看看，這個合掌瓜栗子湯的味道是相當的好。</p></a>
+				<a href="#00:06:43.23" id="00:06:43.23" class="lt" onclick="jumptoTime(403, this.id)"><p>如果有些吃素的網友，不用加肉，那有什麼可以代替呢?</p></a>
+				<a href="#00:06:48.23" id="00:06:48.23" class="lt" onclick="jumptoTime(408, this.id)"><p>可以加腰果，或者加黃豆，這個湯也很好吃，合掌瓜栗子甘筍煮豬展的完成，個人口味，可以加適量的鹽，我喝湯就不加鹽，家人喝的就各自加，我喜歡喝合掌瓜湯的網友給我LIKE，訂閱我職人吹水的頻道，分享這個栗子合掌瓜甘筍煮豬展湯。</p></a>
+				<a href="#00:07:29.23" id="00:07:29.23" class="lt" onclick="jumptoTime(449, this.id)"><p>多謝收看，下個視頻再和大家分享。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉冬至快樂 江南百花雞/ 經典懷舊粵菜 /今次做一個私房版本 /保證食到有雞味 ,冬至快樂 /冬至推介餸菜/一定做主角</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'mx9ownYOXsA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉冬至快樂 江南百花雞/ 經典懷舊粵菜 /今次做一個私房版本 /保證食到有雞味 ,冬至快樂 /冬至推介餸菜/一定做主角</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.82" id="00:00:13.82" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好咁我正所謂東大個年咁呀每年過冬呀，都會一家人呀圍裏食餐飯咁樣呀咁我當中嘅菜式亦係，好重要嘅，我相信呢幾年啦大家都整咗好多有間，雞嘅菜色啦咁呀就連年都做主角㗎啦，咁我記得啦我四年前開台啦咁咪做咗一個就叫做，江南白花雞咁呀就住家食嘅版本呀咁樣，好多網友都留言呀就問為星星其實正式嘅江南白花雞。</p></a>
+				<a href="#00:00:56.06" id="00:00:56.06" class="lt" onclick="jumptoTime(56, this.id)"><p>唔係話好似你咁樣整㗎喎或者乜嘢乜嘢呀咁樣呀，今日同大家分享呢個版本呢就做一個，較為傳統啲嘅粵菜做法啦，包含少少自己喺幾十年，嘅烹調心路歷程當中即係加少少變化落去啦，咁材料就唔複雜嘅，一隻，三黃雞呀，咁樣，喺超市買到180g嘅急凍蝦仁，我哋都好簡單，咁我哋就攞一個茶匙鹽落去跟住開啲水，咁我撳一撳佢咁我個目的都係將佢解凍啦同埋。</p></a>
+				<a href="#00:01:46.70" id="00:01:46.70" class="lt" onclick="jumptoTime(106, this.id)"><p>解凍過程之中呀吸收少少鹽水呀，返去一啲，啲雪味呀一啲呀，呢啲蝦仁呢都曾經係票發過㗎喇點解我建議大家用呢個蝦仁仔打蝦膠呢，佢係比較難打啲嘅但係有樣好佢就係話呢，佢冇新鮮蝦呢，即係咁重嗰啲腥味呀，同埋就，容易處理啦，咁我哋就睇返隻雞呀爆曬光都唔緊要，一般生黃雞呀我相信呀，全香港或者外國好多網友呀都會買到呀呢類型嘅冰鮮雞呀。</p></a>
+				<a href="#00:02:28.68" id="00:02:28.68" class="lt" onclick="jumptoTime(148, this.id)"><p>咁我哋做呢個哥倫巴花雞呢，我哋主要都係用個雞皮，去做㗎，咁我上次做嗰個版本呀就係用塊雞扒去做㗎咁我連埋肉去做，雞皮啦都係相對簡單呀咁我哋，一茶匙鹽落去啦，咁我跟住就，打咗隻碗嗰度，咁我哋就開啲水，十零分鐘，用淡鹽水呀將啲雞呀裏面嗰啲唔好嘅味道呀即係將佢浸一浸佢出嚟先再，清洗。</p></a>
+				<a href="#00:03:0.18" id="00:03:0.18" class="lt" onclick="jumptoTime(180, this.id)"><p>咁我哋都係擺返一個茶匙，當所有材料都用淡鹽水約浸咗15分鐘跟住我就全部，清洗乾淨，所有材料都清洗乾淨之後呢咁呀最緊要就係雞皮嗰個部分啦，咁我哋不單要瓊水，仲要將佢所有水份呢，就要抹乾佢嘅，咁我哋就擺返喺雪櫃嗰度備用，咁我洗四五次啦，裝所有嘅嘆唔想味道呀咁呀洗曬出嚟咁我哋就攞啲，兩陣。</p></a>
+				<a href="#00:03:52.90" id="00:03:52.90" class="lt" onclick="jumptoTime(232, this.id)"><p>跟住上高再加多兩陣如果屋企有用開乾淨嘅白毛巾亦係，都可以用啲白毛巾嘅咁我哋喺出面做呀直頭用啲沙拉毛巾呀，包到嗰啲呀咁我哋就處理啲蝦仁，咁我哋呢就捲好曬之後呢，都係成兜擺返雪櫃嗰度，等佢雪雪佢上一索水，咁我跟住輪到呢啲，雞髀肉呀雞胸肉呀咁我哋都係同樣，張阿媽乾淨佢，咁我講到有少少黐手之後呀咁而家我哋又要將佢改咗佢啦。</p></a>
+				<a href="#00:04:28.74" id="00:04:28.74" class="lt" onclick="jumptoTime(268, this.id)"><p>咁我哋，打一個，雞蓉呀，雞丸呀嗰啲呀，將佢全部，都係將佢雞裏面呀有啲纖維呀啲筋呀嗰啲位呢咁就解斷佢，特別係雞髀呢啲位呀雞上髀呢啲位佢都會有啲嘅，最多呢就雞下髀嗰啲，所以我今次呢雞下髀嗰啲呀，我又冇冇改咗出嚟，咁我又搭咗雞髀肉落去呢做呢啲雞丸啦，口感呀個味道呀就更加好呀，因為。</p></a>
+				<a href="#00:05:9.94" id="00:05:9.94" class="lt" onclick="jumptoTime(309, this.id)"><p>雞胸肉嘅味道會比較單一啲，咁我哋就，同多肉餅一樣㗎嘛，咁唔得有啲咩方法呢，攪拌機出嚟呀，咁我搞咗就可以呀，大家都要煎返啲嘢喺底，盡量呢就用個刀頭去剁，毛巾都好重要喎，咁我不單止可以同你固定嗰個砧板呀仲有一個，緩衝嘅作用呀你冇得一度落去呢都有少少緩衝嘅作用呀，咁你得咗十零下咁我返嚟呢邊，有小朋友嘅。</p></a>
+				<a href="#00:06:7.46" id="00:06:7.46" class="lt" onclick="jumptoTime(367, this.id)"><p>咁我全程都差唔多兩分鐘咁上下啦唔使都好耐呀咁我都係咁嘅階段啦咁就ok啦，好簡單呀，咁我哋用一個雞蛋白，一半就畀啲蝦膠一半就畀啲雞肉，咁我哋約一個湯匙到啦蛋白，跟住落返少少胡椒粉，鹹味嘅來源，三分一茶匙，咁我再畀返三分一茶匙嗰個糖呢，落返一個茶匙嗰個蠔油落去啦等佢未呀更加靚，咁我跟住又約加一個茶匙嗰個生粉落去。</p></a>
+				<a href="#00:07:15.06" id="00:07:15.06" class="lt" onclick="jumptoTime(435, this.id)"><p>洗乾淨雙手咁樣將所有嘅調味料呀生粉呀，攞唔去先，即係一次過即係擺太多水落去，咁我哋就首先係將佢打咗個底打到佢稍為起膠咁我哋又，叫做埋欄呀咁點樣埋欄呀睇到啦會同你講呀，黐埋場咁咁ok㗎啦，佢就會係越實淨㗎你感覺到呀，十零下咋嘛，咁我哋點樣取決佢個鬆軟程度使唔使加水呢咁我又睇返你個繼續啦，通常呢啲雪雞咁我哋打到呢個份量呢都唔需要點樣真係加水落去。</p></a>
+				<a href="#00:08:9.84" id="00:08:9.84" class="lt" onclick="jumptoTime(489, this.id)"><p>差唔多喇喎，擺入去雪櫃嗰度呢就最好，半個鐘，搞掂咗之後呢咪到啲蝦仁呀，咁樣說咗嘢有30分鐘呀睇到呀，蝦仁呀啲蝦身呀好似糧味個荷包咁呀咁ok呀，好慳勁嘅話糧味個荷包呀都係好搭水呀咁樣你咪，想一想啲郵輪囉，入去賭場都係少少少少當贏呀咁樣呀，做個好幾個影片㗎啦，乾身呀咁我哋用一個，拍嘅方式。</p></a>
+				<a href="#00:08:57.33" id="00:08:57.33" class="lt" onclick="jumptoTime(537, this.id)"><p>幾多咁ok呀，我哋唔使得佢太過勇嘅，全部拍曬先，我有少少技巧嘅，我哋拉後，有時候我哋拍豬扒呀啲跟嗰啲啦咁樣一拍落去就拉去啲跟嗰啲地方一拍落去咁你，你咪拍得鬆啦，我哋行內職業廚師一啲技巧嚟㗎喇，當拍好曬之後咁我哋就攞返出去出嚟，咁你啲蝦呢你夠乾身呀你一拍落去呀其實佢已經係有少少膠喺度唔會拍到周圍，咁相對而言如果你唔夠乾身嘅你一攞上嚟啦心理嚟咁樣拍啦。</p></a>
+				<a href="#00:09:40.85" id="00:09:40.85" class="lt" onclick="jumptoTime(580, this.id)"><p>成個廚房有啲打仗咁樣，更加簡單，有啲未照嚴呀咁咪可以審少少未照嚴落去如果冇嘅咪，落返少少胡椒粉呀少少鹽啦咁咪已經ok呀，唔好落太多喎因為本身嗰啲蝦膠呢頭先搵啲鹽水浸佢呢都係有少少鹹嘅，咁我呢度呀約落咗五分一茶匙咁咁上下啦咁我哋就跟住就掉返三米一茶匙嗰個糖，落返。</p></a>
+				<a href="#00:10:26.17" id="00:10:26.17" class="lt" onclick="jumptoTime(626, this.id)"><p>生粉落去啦，咁我放埋個蛋打落去囉半隻同埋有啲雞啦一人一半，咁我，咁我呢度啦我大約落多一個茶匙到呀清水落去囉咁我又將啲生粉呀，開咗佢先，咁我哋就即係開啲，濕粉呀嘛，咁我開咗啲濕粉之後呀，咁我去個好處呢就係容易融入啲蝦膠裏面，如果你如果你就咁你擺啲乾粉落去啦，佢就好容易，有啲乾粉呀你又會攞唔唔。</p></a>
+				<a href="#00:11:1.88" id="00:11:1.88" class="lt" onclick="jumptoTime(661, this.id)"><p>咁樣就係咁啦，咁樣就攞到去又係起膠咁ok啦，咁打啲蝦膠呀都係主要兩點呀第一，你啲蝦肉你要夠凍第二你要夠乾，基本上，冇乜冇乜難度呀，你唔好加啲薑汁呀你唔好加啲酒落去呀，一家呢啲落去呀你個蝦膠呢你就會唔會㗎啦，咁我而家你就慢慢，最好就同一個方向，打到咁上下，其實差唔多㗎喎你唔好諗住有少少啲呀咁樣呀，兩三下。</p></a>
+				<a href="#00:11:48.22" id="00:11:48.22" class="lt" onclick="jumptoTime(708, this.id)"><p>打好之後呀，麻油，兩三滴都係救㗎啦，如果冇嘅就好咗咁呀加少少生油落去呀，將個蝦膠呀，令佢更加滑身，咁我哋都係，將佢，融入埋落去咁ok呀，咁我哋行內做清口行一行佢啦因為呢啲，啲軟呀啲粉呀啲漿呀嗰啲呀都係要少少佢嘅，雞丸呀同埋啲蝦膠經過30分鐘嘅冷藏之後呢，咁咪就會，結實一啲呀，咁樣即係雪櫃嘅溫度呀令到佢又更加好爽口呀咁我所以我哋一定要輸一輸。</p></a>
+				<a href="#00:12:39.15" id="00:12:39.15" class="lt" onclick="jumptoTime(759, this.id)"><p>咁呢段時間㗎咁我哋攞返塊雞皮出嚟，咁我哋就成塊雞皮就反轉佢，咁裏面呢都係要將佢所有水分將佢吸乾去，之後咁我哋又攞啲生粉出嚟，咁我哋搏一搏，啲生粉上去呀嗰個目的呢都係將佢一間嗰啲雞肉呀會黐得好少少，同埋雞腿呢個位呢咁我哋都要退返少少，咁我雞腿呢度呀有少少位㗎嘛咁我攞個匙羹出嚟呀濕少少水咁我又不少少，咁我就咁我哋有返少少。</p></a>
+				<a href="#00:13:25.23" id="00:13:25.23" class="lt" onclick="jumptoTime(805, this.id)"><p>醬生呀咁你一陣間精出嚟咪好睇啲啦，咁我都一樣咗之後呀咁我都醬醬啲嘅感覺呀，好心機啲嘅你可以讓返，蝦膠內都得嘅，因為我有啲屋企人就唔食蝦咁我又唔搞咁多蝦膠落去呀，咁我哋兩個位嘅留返畀佢食啦咁樣整日雞身呢都係我食嘅，咁我哋就將啲雞肉呀，咁我哋就，填曬佢中間呢個位雞翼至雞腿呢個位，填曬一陣。</p></a>
+				<a href="#00:13:59.01" id="00:13:59.01" class="lt" onclick="jumptoTime(839, this.id)"><p>咁我哋仲有啲方法嘅，濕少少水，手背，慢慢，將佢收落去，咁樣又差唔多喎，側邊呢度呢唔使收咁多，上完一層之後，我們就再加一點生粉，讓蝦膠鋪上去的時候，會有一點黏力，接著就要蝦膠出場了，手上也要用一點水，然後我們就用蝦膠，慢慢地，慢慢地，跟雞肉一層一層地形成，鋪好之後，我們要把它弄得更加穩固，在雞皮旁邊的位置，也要加一點生粉。</p></a>
+				<a href="#00:15:3.39" id="00:15:3.39" class="lt" onclick="jumptoTime(903, this.id)"><p>這樣包起來會更加結實，接著，我們慢慢地把它收起來，尾巴的位置也要收起來，盡量收起來，像一隻雞的形狀，收起來，收起來之後，頭的位置用牙籤輕輕地穿一下，這樣就不會弄出來，這些位置也要穿一下，這樣穿好之後，模樣也是一樣的，拿出一隻碟子，整隻放在這裡，這樣就OK了，萬事俱備，我們把雞頭放上去，這邊隨便，我們就開火。</p></a>
+				<a href="#00:16:2.19" id="00:16:2.19" class="lt" onclick="jumptoTime(962, this.id)"><p>把水燒開，水滾後，我們就放進去蒸，我們全程保持猛火，蒸20分鐘，如果用蒸焗爐的話，可以多加2-3分鐘，保持住個大火，現在全程約蒸了20分鐘，看看怎樣的模樣，先開了一個才關火，給大家看看模樣，旁邊的爸爸媽媽開火了，有什麼用，先打幾條菜，菜又這麼快就煮好了，為甚麼要打呢?因為我們是術語學家，不是用手打，大家也看到，要搓它。</p></a>
+				<a href="#00:16:56.72" id="00:16:56.72" class="lt" onclick="jumptoTime(1016, this.id)"><p>現在雞蒸好了，雞油也不要浪費，我們也準備一些合作雞湯，這樣蒸出來的雞湯也不要浪費，現在我們先埋一個薄芡，準備一些合作雞湯，加上剛才蒸完雞出來的雞油，加適量的下去，雞湯有些香味，在鑊邊灑一些酒，滾的時候，差不多滾起了，我們埋芡，調小火，準備一些生粉水，生粉在埋芡的時候才調小火，推芡也說過很多次，用手慢慢地推。</p></a>
+				<a href="#00:17:47.90" id="00:17:47.90" class="lt" onclick="jumptoTime(1067, this.id)"><p>推到流利芡就可以了，不要推得太緊，這樣就差不多了，再滾起就差不多了，再有起泡就熄火，如果芡滾太久就會老，這樣就不好了，芡埋完之後，雞也攤了約一分鐘，不要太熱去切，讓它鬆一鬆的生切，就會更好，這些芽籤都切好了，其實切這個也很簡單，分三份就可以了，首先在雞翼和雞身中間，慢慢切一刀，這樣切下去。</p></a>
+				<a href="#00:18:43.28" id="00:18:43.28" class="lt" onclick="jumptoTime(1123, this.id)"><p>同樣地，這邊也是，慢慢切下去，打橫開咁我哋就喺基地呢個位呢度呀，咁我哋就落咗一刀先，咁我哋慢慢鋪返上隻碟嗰度用返啲菜，半碟，咁而家你咪，淋埋個流利線上面咁就ok啦，呢個就唔能夠太過緊嘅，有少少掛咁就得㗎啦，咁一個心機傳統嘅菜式江南白花雞，冷錢囉，咁我呢個又更加豐富啦因為點樣多啲，雞肉喺裏面呀嘛。</p></a>
+				<a href="#00:19:30.90" id="00:19:30.90" class="lt" onclick="jumptoTime(1170, this.id)"><p>咁我都係心機時間技巧都係缺一不可㗎啦，咁我住幾點呀就係話，正如隻雞嗰度我哋等佢回一回有最好就等佢，吹得佢有五六分鐘呀等我雞皮，完全收縮曬啦咁你切啦出嚟你嗰個效果呢你就會好呀，第二，埋現呀咁我唔好埋得太過緊呀埋到成個漳湖咁你又做得唔靚㗎啦，咁正所謂東大個年啦咁樣整個江南白花雞咁我就保證你東至你，做主角㗎啦。</p></a>
+				<a href="#00:20:5.72" id="00:20:5.72" class="lt" onclick="jumptoTime(1205, this.id)"><p>咁我鍾意食雞嘅網友畀個like我星星呀咁我鍾意百花網友訂閱我職人出水，咁鍾意傳統粵菜網友麻煩你加入我頻道會員呀繼續吹水呀，咁我就食飯先咁下條影片再同大家出個，祝大家冬至快樂拜拜。</p></a>
+</div>
+	</body>
+</html>

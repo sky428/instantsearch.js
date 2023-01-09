@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 花生西米糕 小食甜品 人人做得到</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'q01HfTQPwJQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 花生西米糕 小食甜品 人人做得到</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:10.14" id="00:00:10.14" class="lt" onclick="jumptoTime(10, this.id)"><p>咁大家都睇到呀西米點樣斬梗係唔使得花生呀花生做餡，咁我哋餡料之中呢，我哋有，杭蝦，咁我哋盡量整嗰陣時嗰啲西米，大家好，又係我星星同大家職人吹水，拍攝這麼多東西，還以為是做爐座呢，黑寶膠粒，像不像，片頭都寫了，西米，咁大家有睇開我星星廚房職人吹水，我三年前都上載過幾張相係喺公司做㗎叫做，花生西米盞。</p></a>
+				<a href="#00:01:14.52" id="00:01:14.52" class="lt" onclick="jumptoTime(74, this.id)"><p>咁有好多網友都留言，其實，係咪好複雜呀難唔難做呀，有冇啲，又可以喺屋企做到又唔係話，要求好多技術呀咁呢個就正正就可以，材料唔好複雜，最緊要就係西米呀，跟住我哋有啲，菊香嗰個花生，跟住我哋中水去，咩做花生醬呀，砂糖，少少油，咁我做下啲，石子兜呀細細個嗰隻紙兜，咁呢類型嘅石子兜呀任何家品舖都會有得買啦咁呀兩隻手指公共上一大隻呀，有啲做蛋撻嗰啲係大隻少少呀。</p></a>
+				<a href="#00:02:14.94" id="00:02:14.94" class="lt" onclick="jumptoTime(134, this.id)"><p>咁我找人成屋企，都係得返咁多咁我就唔，整少少同大家，分享下啦咁我整咁多其實我要，咁上下多個西米就差唔多影舊咁我哋洗一洗佢跟住浸佢十分鐘先，洗一洗佢呀，倒咗水之後跟住我哋再放水呀，針梗之際，咁我哋咪，吹下啲，花生，花生西米盞，花生做餡，咁我哋下午之中呀，我哋有，香香咗個花生，咁我哋乜嘢去啦。</p></a>
+				<a href="#00:03:9.96" id="00:03:9.96" class="lt" onclick="jumptoTime(189, this.id)"><p>你攤去咁我哋咪行出去囉，咁我之前嗰啲少少㗎啦，又唔使太歲㗎，食緊又得，用樽子搖晃也可以，甚至乎用攪拌機打一打也可以，我們就稍為搖晃它一下，應該一輪努力之後，現在就差不多了，進入第二步，我們拿些花生醬出來，大家可以買我這種滑身花生醬，或者可以買一些有花生粒的花生醬，但是我可以跟大家說，自己烘一些花生碎，那個底就會香很多。</p></a>
+				<a href="#00:04:10.95" id="00:04:10.95" class="lt" onclick="jumptoTime(250, this.id)"><p>我們攪拌到一個醬的底部，這裡也要加一點糖，大概加兩茶匙的糖，先攪拌均勻，攪拌均勻之後，大家可以看到，這裡也可以加一點花生醬，有一點點油潤，油不要太散就可以了，大家可以看到，這樣就可以了，甜度可以自己調整，我這裡試了之後，我多加一個茶匙的砂糖，因為中間的花生餡偏甜才好吃，我們現在攪拌均勻。</p></a>
+				<a href="#00:05:12.95" id="00:05:12.95" class="lt" onclick="jumptoTime(312, this.id)"><p>花生餡料攪拌好之後，現在就處理西米，把西米的水全部倒掉，然後倒回碗裡，我們再加一個茶匙的生油，完成了，我們可以上碟了，一個茶匙的砂糖，讓它有一點點的甜味，也不需要太甜，我們現在把它們全部攪拌均勻，攪拌到西米有一點點油潤，多加一點油也沒關係，生油大概兩個茶匙，攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.35" id="00:06:18.35" class="lt" onclick="jumptoTime(378, this.id)"><p>備用，我們拿個錫箔出來，拿個掃，油，我們滴一滴油，掃一掃底部，接著，我們舀一匙下去，油不用太多，我們還要放餡料的，這個菜式也是很適合，親子的菜式，跟小朋友一起吃，放假，味道也不錯，中間的味道，其實很因人而異，也會隨尊便的，大家可以發揮一下創意，做蓮蓉，也可以做芝麻餡，我們繼續，西米呢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:45.65" id="00:07:45.65" class="lt" onclick="jumptoTime(465, this.id)"><p>不要買太大粒的，我做的比這個小一點，我偶爾會煮家鄉糖水，大家有喝過，順德糖水嗎，西米花生雞蛋片糖，煮了糖水，冰起來喝很棒，做好底部了，接著放點花生餡，down，ago</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.03" id="00:08:31.03" class="lt" onclick="jumptoTime(511, this.id)"><p>position，chrome，THAT smells</p></a>
+				<a href="#00:08:29.47" id="00:08:29.47" class="lt" onclick="jumptoTime(509, this.id)"><p>션，Zam</p></a>
+				<a href="#00:08:31.55" id="00:08:31.55" class="lt" onclick="jumptoTime(511, this.id)"><p>palate，Hug，wd</p></a>
+				<a href="#00:08:28.07" id="00:08:28.07" class="lt" onclick="jumptoTime(508, this.id)"><p>日本，enses，accessed，Rust refine</p></a>
+				<a href="#00:08:28.31" id="00:08:28.31" class="lt" onclick="jumptoTime(508, this.id)"><p>ισ，application，Flint，Awesome</p></a>
+				<a href="#00:08:27.43" id="00:08:27.43" class="lt" onclick="jumptoTime(507, this.id)"><p>ibal，bisog，ello</p></a>
+				<a href="#00:08:27.85" id="00:08:27.85" class="lt" onclick="jumptoTime(507, this.id)"><p>bandwidth，繼續啦，花生餡料，落曬之後，咁而家就好開心呀咁好開心呀因為地基有呀，鋼筋水泥咁而家咪，平頂啦點平呀好簡單，西米落去，封頂佢，咁我哋鋪平曬之後呢，我哋最好就攞出嚟咁樣，一噸一噸佢，落曬先，咁我哋盡量整嗰陣時嗰啲西米就唔好，出面嗰邊嗰度呀，一整到個邊嗰度呀你攞上手食嗰陣時呢就好你呀，咁你又唔係等一等佢啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:42.33" id="00:09:42.33" class="lt" onclick="jumptoTime(582, this.id)"><p>整好曬之後，開火，水，咁我哋要去蒸嘅，水滾咁我哋擺落去，吸過，依家，蒸佢八分鐘，跟住收火焗佢兩分鐘，依家藥膜蒸咗六分鐘，咁我哋就裝裝佢囉，咁我睇唔到啦，睇唔到都唔使心急咁呀整兩件，鵝肝多士食下啦，剩低嗰啲花生醬咪唔好曬啦，茶麵包嘅餅乾就一流㗎啦，蒸咗約七分鐘咁就下啦，睇咩模樣㗎啦，直接熄火。</p></a>
+				<a href="#00:10:54.01" id="00:10:54.01" class="lt" onclick="jumptoTime(654, this.id)"><p>等佢喺個鑊嗰度，兩分鐘，焗咗兩分鐘之後，咁我哋就睇下咩模樣啦，我們在鍋子裡拿它出來，放在室溫的地方，要把它吹到室溫的狀態，一兩個小時也沒關係，一定要室溫才好吃，大家都看到了，西米怎樣才算是好呢?</p></a>
+				<a href="#00:11:40.48" id="00:11:40.48" class="lt" onclick="jumptoTime(700, this.id)"><p>呈現透明為之得，中間有些白色的，白色的芯，不怕的，我們在室溫慢慢放涼，它也會把白色的芯焗到透明，我們盡量把它一角一角分開，慢慢在室溫吹幾個小時，把它吹涼，至於甜度，大家可以自行調整，現在做甜品，很有趣的，做甜品不甜就成功了，為什麼呢?</p></a>
+				<a href="#00:12:25.64" id="00:12:25.64" class="lt" onclick="jumptoTime(745, this.id)"><p>我經常都吹甜品店吃，旁邊的姐姐說很好吃，不甜，這個甜品不甜是很好吃的，喜歡吃甜品的朋友，給我一個讚，喜歡吃西米的朋友，訂閱職人吹水的頻道，幫我分享一下這個花生西米盞，我出去踩踏單車，回來再拍些相給大家看，謝謝收看，拜拜~!</p></a>
+</div>
+	</body>
+</html>

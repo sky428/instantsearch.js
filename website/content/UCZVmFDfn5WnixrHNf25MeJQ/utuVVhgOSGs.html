@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 乾炒雜菜米粉 米粉點樣選擇 要炒到乾身入味竅門分享Stir-fried rice noodles</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'utuVVhgOSGs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 乾炒雜菜米粉 米粉點樣選擇 要炒到乾身入味竅門分享Stir-fried rice noodles</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.41" id="00:00:8.41" class="lt" onclick="jumptoTime(8, this.id)"><p>炒飯，有七八成熟，早晨，大家好，又係我星星同大家職人吹水，炒個米粉做早餐，同大家吹吹米粉，同埋重溫吓啦，呢啲係啲番魚排粉，咁我哋啲米粉我哋點樣分類呢有啲米粉，幼身嘅啲，用嚟做湯米，咁我炒米粉呀用呢啲，粗身嘅烹魚排粉用嚟炒米粉呀好適合，咁我哋做咗咪粉我都係堅持要打咗個米粉先嘅咁你點打咗個米粉呢，水滾後。</p></a>
+				<a href="#00:01:13.21" id="00:01:13.21" class="lt" onclick="jumptoTime(73, this.id)"><p>米粉落去，我哋浸佢一分鐘，咁我哋浸佢過程之中呢我哋就唔需要開火，浸了一分鐘後，把所有熱水倒出來，這段時間不要過冷水，我們要把水弄出來，如果我們在外面做，這段時間會放一塊乾淨的毛巾在上面，然後放在一個當風的位置，吹它，讓熱力的蒸發，令米粉變得脹身，米粉有一個香味，家裡有什麼就炒什麼。</p></a>
+				<a href="#00:02:12.98" id="00:02:12.98" class="lt" onclick="jumptoTime(132, this.id)"><p>我拿了一點紹菜、西芹、黃椒、甘筍，打兩隻雞蛋，這些是菜脯粒，洗乾淨所有食材後，把西芹的粗絲去掉，去掉後，我們還要刨一下，我們也是切成絲狀就可以了，改一下，這樣就可以了，甘筍的皮也要去掉，切成薄片，跟著切絲，這樣就可以了，做這些雜菜炒米粉，我建議大家菜的比例多一點也不要緊，然後，我們把紹菜頭拿出來。</p></a>
+				<a href="#00:03:29.50" id="00:03:29.50" class="lt" onclick="jumptoTime(209, this.id)"><p>用紹菜也可以，用椰菜也可以，我們就切小塊，打兩隻雞蛋，準備好所有材料後，是不是好像很多雜菜一樣，其實炒完也不會很多，現在我們拿米粉出來看看是什麼樣子，咁呢啲時間我哋打好咗個米粉咁我哋攞返出嚟睇下，我將個米粉焗咗幾分鐘跟住養鬆佢擺喺啲當風位置嗰度要吹凍佢，大家睇到嗎。</p></a>
+				<a href="#00:04:12.63" id="00:04:12.63" class="lt" onclick="jumptoTime(252, this.id)"><p>米粉呀，醬生，有彈手有個蓬鬆，咁我哋做炒米粉呀我哋一定要吹到佢凍曬，雜菜，第一步我哋都係要，燒熱隻鑊先，首先我哋落咗啲，菜脯粒落去，我哋搵一百鑊，一行佢，大約一分鐘到呀，我哋攞返，我哋將甘筍西芹，黃椒，炒咗30秒到，所有嘅雜菜，一分鐘到咁我哋落返三分一茶匙，都有少少，有啲遠身呀，落返，咁我哋炒埋個蛋先。</p></a>
+				<a href="#00:05:50.93" id="00:05:50.93" class="lt" onclick="jumptoTime(350, this.id)"><p>有七八成熟到咁我哋又慘你呀，我係咪放落去，炒米粉，好食好多呀，咁我以前喺出面做，星洲炒米呀，一分鐘到咁我咪，炒飯炒米粉炒河粉我哋都係要，炒香個底先，嗰邊都有個香味識出嚟咁我哋咪，再慢慢煎一煎，大家睇唔睇到，米粉，香味識出呀，所有配料，咁你時間我係咪將所有，咁混和咗佢之後，一個湯匙嘅香菇素，我哋攞一個茶匙嗰個頭抽。</p></a>
+				<a href="#00:07:46.26" id="00:07:46.26" class="lt" onclick="jumptoTime(466, this.id)"><p>咁我哋咪慢慢，所有嘅調味，頭抽落去呢就已經係相當之，當所有味道攞完曬之後咁我哋咪再，再煎一煎返佢呀，好乾身呀，好香口，慢慢，好乾爽嘅，雜菜雞蛋炒米粉完成了，雖然沒有肉，但這個米粉也相當好味道，喜歡吃雜菜炒米的朋友，給個LIKE我星星，喜歡吃星洲炒米的朋友，訂閱我職人吹水頻道，分享一下這個雜菜雞蛋炒米粉。</p></a>
+				<a href="#00:09:6.60" id="00:09:6.60" class="lt" onclick="jumptoTime(546, this.id)"><p>我先吃早餐，多謝收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

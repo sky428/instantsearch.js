@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 街頭🏝️ 鮮榨椰汁 椰漿製作 仲有新鮮椰絲 Fresh Coconut Juice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Yxqjki7QNEo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 街頭🏝️ 鮮榨椰汁 椰漿製作 仲有新鮮椰絲 Fresh Coconut Juice</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.59" id="00:00:21.59" class="lt" onclick="jumptoTime(21, this.id)"><p>大家好，又係我星星同大家職人吹水，大家好，天時暑熱，大家除了喝珍珠奶茶或奶蓋之外，有沒有喝過傳統椰汁呀，我自己就感受好深刻啦，70年代尾80年代初期，每逢戲院門口必定有幾檔嘢㗎啦，食品呀有老味呀煨魷魚呀嗰啲呀，飲品呀其中一檔呢就梗係鮮榨椰汁嘅，呢類型嘅鮮榨椰汁，而家。</p></a>
+				<a href="#00:01:7.41" id="00:01:7.41" class="lt" onclick="jumptoTime(67, this.id)"><p>唔係咁方便出街飲其實自己屋企做咁樣間難唔難做呀或者，當中有咩，竅門呀咁樣，就同大家分享下，材料先㗎嘛，杯就必定要有㗎啦，咁我哋準備啲淡奶，係要全支㗎喎，講多一次全支淡奶唔好用啲，低支或者直支嘅，咁我哋就準備啲煉奶，咁咪梗係唔少得我哋煮過㗎啦新鮮椰子，咁咪仲有一樣好重要嘅材料咁呢樣我擺開先，先。</p></a>
+				<a href="#00:01:52.49" id="00:01:52.49" class="lt" onclick="jumptoTime(112, this.id)"><p>新鮮椰子，一定有椰子水，新鮮椰子返到嚟，點解會變成呢個模樣呀，大家就去片睇睇，看完老闆精湛地開椰子的技術之後，大家就會明白為什麼椰子會變成亞龍燒炮，散掉了，挑選椰子有什麼竅門呢?</p></a>
+				<a href="#00:02:38.78" id="00:02:38.78" class="lt" onclick="jumptoTime(158, this.id)"><p>跟大家分享兩三個，第一，挑選椰子不要太乾，太乾的代表放太久，第二，最重要是拿上手，看看夠不夠乾，乾的代表椰子水夠，乾的代表椰子水新鮮，而且比較甜，如果拿上手，椰子的比例重量不夠，證明椰子放了很久，所以比較老或蒸發了一點，比較老的椰子水會酸，買回來的椰子水，我們適宜即時食用，不適宜就去冰箱冷藏。</p></a>
+				<a href="#00:03:32.83" id="00:03:32.83" class="lt" onclick="jumptoTime(212, this.id)"><p>因為冷藏過夜之後，椰子水也有機會變酸，跟馬蹄一樣，即刨即食，刨完馬蹄放在這裡泡，也會有一點酸的，現在的椰子已經變成碎片，我們要怎樣做呢?</p></a>
+				<a href="#00:03:54.93" id="00:03:54.93" class="lt" onclick="jumptoTime(234, this.id)"><p>除了刨之外，最簡單的方法就是用刀切，首先，切成一條條狀，我們站在這裡，盡量用刀頭推刀的位置，慢慢切，不要心急，我們把所有啡色的位置切掉，這個也是一樣的，盡量按著它，最重要是讓它站在這裡，這樣就很容易切，是不是很簡單?</p></a>
+				<a href="#00:04:40.65" id="00:04:40.65" class="lt" onclick="jumptoTime(280, this.id)"><p>當你明白這個方法之後，我們就切成一條條，這樣一下下切下去，這些也是一樣的，不是很困難，在外面有些賣椰子的店舖，他們會幫你打椰漿，打完椰漿之後，大家最好是即日吃掉它，如果不吃的話，就要放冰箱，因為我剛才也說過，椰汁很容易變味，完成之後，剩下的就用來做其他菜式，椰子雞就最棒了。</p></a>
+				<a href="#00:05:38.68" id="00:05:38.68" class="lt" onclick="jumptoTime(338, this.id)"><p>咁跟住你點樣處理啦如果屋企有啲大型攪拌機呀咁上一大舊，都ok呀如果靠為細部嗰啲，咪咪一咪佢啦，跟住，我哋攞一啲，煲嘅凍滾水咁好多網友問我乜嘢叫凍滾水呀特別係嗰啲，嗰啲呀，外國嘅網友啦或者有啲日本直嘅網友啦，咁我哋，都係習慣將啲水煲過嘅，咁如果你喺嗰邊有蒸餾水或者有filter過嚟嗰啲水嘅咁呀，直接飲用嗰啲水嘅係都可以呀。</p></a>
+				<a href="#00:06:15.78" id="00:06:15.78" class="lt" onclick="jumptoTime(375, this.id)"><p>咁我哋而家啦，我哋直接到度滾水落去啦，咁我哋就洗佢兩三次，當然，你事前必定要洗乾淨手呀，咁我洗到點為之得呀，兩三次洗到冇，冇曬啲雜質啦咁ok囉，跟住我哋攞返啲，攪拌機出嚟咁我呢類型嗰啲攪拌機呀咁好似我哋日常咁，即係，處理生處理過生肉或者處理過其他嗰啲我哋每一次呢，都要，煲啲滾水。</p></a>
+				<a href="#00:06:55.72" id="00:06:55.72" class="lt" onclick="jumptoTime(415, this.id)"><p>咁我哋，將佢錄一錄佢，如果甚至乎屋企有小朋友飲嘅，咁樣，溫度再加強啲錄耐少少啦，因為有啲菌都要，100度高溫呀咁呀先可以殺到㗎咁而家你唔係，賭起佢，得未呢，當然未得啦，咁我哋仲有個魚袋㗎嘛，咁你啲魚袋返嚟我哋洗乾淨佢呀洗乾淨佢之後呀，咁我哋，都係要用啲滾水落一落去，大家就小心啲啲熱度呀咁我跟住咪，浪一浪返乾佢囉。</p></a>
+				<a href="#00:07:43.86" id="00:07:43.86" class="lt" onclick="jumptoTime(463, this.id)"><p>咁樣處理呢啲凍飲呀最緊要就係乾淨同埋衛生呀嘛，咁我哋第一步呢首先係打咗啲冰先，有啲靚嘅攪拌機咁樣，一起開成做又可以呀我今次呢就將佢分得細緻啲即係講清楚個，大家掌握呀，做這些小型攪拌機，打冰都要按一按，很厲害，開頭幾下就不要太快，用攪拌機的技巧就是這樣，慢慢來，開頭幾下，聽到聲音就快些，這樣就OK，看看什麼模樣，OK了。</p></a>
+				<a href="#00:08:42.46" id="00:08:42.46" class="lt" onclick="jumptoTime(522, this.id)"><p>冰攪好後，拿刀出來處理椰肉，打之前拿一包椰水出來，先倒出來，因為打這些椰肉都要有少許水才打到，椰水都會有少許渣滓，我們就放一六個格篩，隔走它，然後落椰肉，這裏的椰肉約一百克左右，椰水落多少呢?落一百毫升左右，接著按實它，慢慢打，有少許溶了，用快速打到它變成漿，期間要打下停下打下停下。</p></a>
+				<a href="#00:09:55.46" id="00:09:55.46" class="lt" onclick="jumptoTime(595, this.id)"><p>打了約兩分鐘後，看看夠不夠滑，如果不夠滑，可以加少許水，加幾湯匙，因為沒有水就不會太滑，加水後繼續打，給大家看清楚狀態，打到有些泡沫上去，有些泡沫下去，這樣就均勻了，打了約一分鐘，拿出來看看，這台機也做得到，相當開心，現在差不多了，先拿起刀，放回魚袋，現在慢慢把椰蓉放進去，切得漂亮，是不是很潔白?</p></a>
+				<a href="#00:11:8.12" id="00:11:8.12" class="lt" onclick="jumptoTime(668, this.id)"><p>椰子蓉放進去之後，我們慢慢收緊袋子，我們用工具把它們拿出來，一邊壓，把椰汁、椰漿都壓出來，裡面的榨菜也有用，可以用來煲湯，也可以烘乾它，做成椰絲、麵包，不會浪費，把魚袋洗乾淨，晾乾，之後拿來煲湯用，大家看到嗎?</p></a>
+				<a href="#00:11:51.82" id="00:11:51.82" class="lt" onclick="jumptoTime(711, this.id)"><p>全部都弄出來了，椰漿都攪拌好了，我們椰漿跟水、冰、奶的比例是怎樣呢?</p></a>
+				<a href="#00:12:2.00" id="00:12:2.00" class="lt" onclick="jumptoTime(722, this.id)"><p>最重要是這個步驟，我們有個概念，椰漿要五份才一杯，因為做這些椰汁，椰漿不能太多，我們要有椰汁的香味、奶的香味，這樣才能運行一杯椰汁，如果椰汁太重，就會比較膩，椰汁本身的飽和脂肪是很高的，如果只喝一碗，就不用吃東西了，甜味的來源有兩個方法，第一，大家可以跟我之前做涼粉一樣，用冰糖水，第二個方法就是。</p></a>
+				<a href="#00:12:48.08" id="00:12:48.08" class="lt" onclick="jumptoTime(768, this.id)"><p>加一些煉奶，兩杯的份量約四湯匙煉奶，我們拿出全脂淡奶，約八個湯匙，淡奶一定要夠，還要用好的淡奶，任何牌子的淡奶都可以，一定要全脂，然後加一杯熱水，剛才也說過了，一杯一湯匙的水，一杯一湯匙的水，然後加一杯熱水，再加一杯熱水，三份的水，其他水的來源就靠冰，如果大家還有攪拌機，這段時間可以放回去再攪拌，整好後可以整多些，除了用來飲椰汁，做椰子雪條也很正，加剛才的椰蓉。</p></a>
+				<a href="#00:14:4.31" id="00:14:4.31" class="lt" onclick="jumptoTime(844, this.id)"><p>弄好之後，老闆，一杯椰汁就即到囉，一杯，大家看到嗎?</p></a>
+				<a href="#00:14:15.57" id="00:14:15.57" class="lt" onclick="jumptoTime(855, this.id)"><p>漿著了，一個新鮮椰子冰就呈現眼前啦，如果大家家裡有攪拌機，把整個步驟一起做，打兩杯，再用魚袋隔，味道會更濃郁，現在已經很正，你出街怎會飲到這麼濃味的椰汁，鍾意椰子的網友俾個like我星星啦，鍾意香滑濃味的椰汁的網友，訂閱職人吹水頻道分享下這個，鮮榨椰汁，多謝收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

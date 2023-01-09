@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 芒果布甸 家常版本 簡單易做 Mango Pudding</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'BDqgJlWSZMY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 芒果布甸 家常版本 簡單易做 Mango Pudding</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.54" id="00:00:0.54" class="lt" onclick="jumptoTime(0, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，十秒左右，整個放下來，弄到溶掉之後，放一旁，我們把它切成粒狀，成一個粒狀，各位好，我是星星師父，星星，你幹嘛拍碗呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:44.84" id="00:00:44.84" class="lt" onclick="jumptoTime(44, this.id)"><p>拍碗和工具，跟大家分享一下，跟大家分享一下怎樣洗碗，洗碗也要吹，星星?</p></a>
+				<a href="#00:00:55.08" id="00:00:55.08" class="lt" onclick="jumptoTime(55, this.id)"><p>對呀，洗碗也要吹，你不是煮也沒東西煮吧?</p></a>
+				<a href="#00:00:57.64" id="00:00:57.64" class="lt" onclick="jumptoTime(57, this.id)"><p>這些東西沒什麼收視的，大家都知道我拍影片不是因為收視，我是有份正職的，拍影片是為了興趣，今天跟大家分享一下怎樣清潔碗，清潔看似是微不足道的事，但是對我們做飲食，特別是職業廚師是很重要的，我們做什麼都好，進廚房之前首先要洗乾淨雙手，接著，這些工具，我們煮沸水，要煮沸的，我們要把所有東西都放進去。</p></a>
+				<a href="#00:01:36.60" id="00:01:36.60" class="lt" onclick="jumptoTime(96, this.id)"><p>這個步驟對我們待會做的東西有莫大的幫助和消毒，倒掉熱水之後，我們就放回隔篩裡，這些類似洗碗機的隔篩，外國的網友很多時候都會有洗碗機，但是香港就不是很多家裡人會有洗碗機，我公司的那些是有洗碗機的，所以我把它轉了，讓它慢慢沉水，放開碗碟之後，拿一塊白板出來，什麼白板?不是紅棕白板那種，熟食用的膠砧板。</p></a>
+				<a href="#00:02:16.56" id="00:02:16.56" class="lt" onclick="jumptoTime(136, this.id)"><p>我們也要用熱水把它滾一滾，滾了熟食砧板之後，有什麼做法呢?</p></a>
+				<a href="#00:02:26.92" id="00:02:26.92" class="lt" onclick="jumptoTime(146, this.id)"><p>喝一包奶一樣，跟大家分享這個，影片開始時已經說了，芒果布甸，星星，你不是拿一包啫喱粉當做布甸嗎?</p></a>
+				<a href="#00:02:42.68" id="00:02:42.68" class="lt" onclick="jumptoTime(162, this.id)"><p>是的，啫喱粉就可以當做布甸了，這個芒果布甸我之前在Facebook職人吹水群組也上載過相片，是在公司做的，我們做的當然很多，這次在家跟大家分享一下我日常公司的做法，這次做一盒啫喱粉的份量，這盒啫喱粉有多重呢?</p></a>
+				<a href="#00:03:10.54" id="00:03:10.54" class="lt" onclick="jumptoTime(190, this.id)"><p>80支，裏面也有一個微微的說明，一盒啫喱粉大約放225毫升熱水，這次的份量相當簡單，大家看到了，一盒小屋奶，一包魚膠粉、一包小屋奶加225毫升熱水就可以了，做這類型的甜品或布甸，最重要是乾淨、衛生、清潔，做西餐或做餅，我們有一個專門的部門是做冷盤的，做甜品、做冷盤，分得很清楚，倒啫喱粉後，拿一個有容器的，現在倒水。</p></a>
+				<a href="#00:04:16.10" id="00:04:16.10" class="lt" onclick="jumptoTime(256, this.id)"><p>用熱水，大家看到這條線嗎?</p></a>
+				<a href="#00:04:21.14" id="00:04:21.14" class="lt" onclick="jumptoTime(261, this.id)"><p>大約200度就可以了，為甚麼呢?一會兒再跟大家說，這段時間我們慢慢倒下去，倒下去之後要攪拌均勻，怎樣攪拌呢?當然是用叉子攪拌，不要用手，我們慢慢將魚膠粉溶掉，攪拌溶掉之後，放在一旁，室溫備用，我去超市買了一個芒果，這是甚麼呢?</p></a>
+				<a href="#00:04:55.54" id="00:04:55.54" class="lt" onclick="jumptoTime(295, this.id)"><p>它寫著泰國水仙芒，或者印度芒果，我們買這個芒果，最好是在米缸裡放一晚，放一晚的作用是讓米缸慢慢把芒果吹熟，這段時間的芒果慢慢成熟就會比較香，如果像我這樣即買即做即食，就選一個熟一點的，摸起來會有一點軟身，處理新鮮的水果，我們還是拿手套出來，因為要衛生一點，做好防護措施之後，我們怎樣開芒果呢?</p></a>
+				<a href="#00:05:48.48" id="00:05:48.48" class="lt" onclick="jumptoTime(348, this.id)"><p>各位網友日常在家吃芒果當然要剝皮，剝皮就這樣吃，開芒果也有自己的方法，我們先打動芒果，拿出一點，現在拿刀在芒果的旁邊，慢慢剝，剝到中間的核，慢慢剝下去，就開了芒果核，看到夠滑嗎?</p></a>
+				<a href="#00:06:29.48" id="00:06:29.48" class="lt" onclick="jumptoTime(389, this.id)"><p>這邊也是一樣，慢慢剝下去，小心手，如果頂到夠滑就轉一轉刀的位置，這邊開了出來，這樣開了出來，我們怎樣起肉呢?</p></a>
+				<a href="#00:06:53.48" id="00:06:53.48" class="lt" onclick="jumptoTime(413, this.id)"><p>拿一把尖刀或小刀慢慢割，首先斜刀，拿一邊，然後再用斜刀，我們割到粒粒，成一個菱形，不要太用力，不要割斷塊皮，怎樣拿出來呢?</p></a>
+				<a href="#00:07:24.48" id="00:07:24.48" class="lt" onclick="jumptoTime(444, this.id)"><p>很簡單，拿匙羹沿著芒果皮慢慢割，切出來，這樣就有膩膩的，芒果皮底下這些不會浪費的，一會兒就知道了，為什麼說它不會浪費呢，我們慢慢刮，刮到變成芒果蓉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:7.03" id="00:08:7.03" class="lt" onclick="jumptoTime(487, this.id)"><p>這樣就沒有浪費了，是不是，這顆核，怎樣去處理呢，有一個很關鍵的步驟，我平時就這樣把它切掉，最好就是把它切掉，今天就跟大家分享這個做法，今天就跟大家分享這個做法，慢慢刮，沒有浪費的，慢慢刮，刮完還能不能選呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:52.03" id="00:08:52.03" class="lt" onclick="jumptoTime(532, this.id)"><p>都可以的，我一會兒會選，選這些芒果核，很棒的，這些是可以的，我們慢慢刮，這種泰國水鮮芒果，它有勝在，肉厚，核細，焗一焗就更香，刮到乾乾淨淨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:22.03" id="00:09:22.03" class="lt" onclick="jumptoTime(562, this.id)"><p>這樣，處理好之後，這個怎樣呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:30.03" id="00:09:30.03" class="lt" onclick="jumptoTime(570, this.id)"><p>這個也是用同一個方法，斜刀，這樣切掉，其實一盒用半個芒果就已經很足夠了，這半個有什麼好做呢?</p></a>
+				<a href="#00:09:46.03" id="00:09:46.03" class="lt" onclick="jumptoTime(586, this.id)"><p>當然是自己吃啦，最棒是怎樣吃呢?</p></a>
+				<a href="#00:09:50.03" id="00:09:50.03" class="lt" onclick="jumptoTime(590, this.id)"><p>這，燦爛的時刻，就開始了，最棒就是用匙羹，慢慢吃吧，完成了芒果之後，拿出一盒奶，星星，這是什麼神秘食材?</p></a>
+				<a href="#00:10:15.00" id="00:10:15.00" class="lt" onclick="jumptoTime(615, this.id)"><p>這不是神秘食材，這是蛋糕，我吃的，跟這個芒果布甸一點關係也沒有，我們看看這個芒果啫喱，已經在室溫中冷凍，大家不要介意我一邊吃一邊做，因為我做完這個出去踩單車，可以吃飽一點，我們拿出這兩個透明盤，有什麼作用?</p></a>
+				<a href="#00:10:43.00" id="00:10:43.00" class="lt" onclick="jumptoTime(643, this.id)"><p>首先我們放芒果粒，選擇一些好看的，怎樣才算好看?</p></a>
+				<a href="#00:10:51.00" id="00:10:51.00" class="lt" onclick="jumptoTime(651, this.id)"><p>看樣子，最重要是有樣子看，我什麼時候都這樣說，放了芒果粒之後，攪勻，攪勻有什麼作用?</p></a>
+				<a href="#00:11:3.00" id="00:11:3.00" class="lt" onclick="jumptoTime(663, this.id)"><p>我們先倒啫喱進去，淋多少?不用淋多少，剛剛遮過面，現在放進冰箱冷藏30分鐘，在室溫放到凍後，拿一盒鮮奶，然後開了，直接倒進去，這包小屋仔奶的容量是多少呢?</p></a>
+				<a href="#00:11:50.78" id="00:11:50.78" class="lt" onclick="jumptoTime(710, this.id)"><p>大概是225毫升左右，讓我看看，終於找個放大鏡來看，在哪裡寫的呢?</p></a>
+				<a href="#00:12:3.28" id="00:12:3.28" class="lt" onclick="jumptoTime(723, this.id)"><p>在這裡，對不對?當然對不到，236毫升，這個份量就標準了，然後我們慢慢攪拌，大家吃芒果布甸，還記得還有一個很重要的材料嗎?</p></a>
+				<a href="#00:12:28.48" id="00:12:28.48" class="lt" onclick="jumptoTime(748, this.id)"><p>蛋黃，我們做這個沒有蛋黃的，我們很多時候在外面做芒果布甸，現在就不放雞蛋，還有呢，也是一個衛生的問題，以前我們是直接放生蛋黃，現在我們要把蛋黃推到差不多80度的溫度，現在我們把芒果蓉和水全部加進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:1.38" id="00:13:1.38" class="lt" onclick="jumptoTime(781, this.id)"><p>攪拌均勻，是不是浮面呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:12.62" id="00:13:12.62" class="lt" onclick="jumptoTime(792, this.id)"><p>為什麼呢?因為夠冷，開好芒果布甸之後，在冰箱拿這個出來，這是什麼呢?剛才放冰箱冷藏了半小時的那個，冷藏到什麼程度呢?</p></a>
+				<a href="#00:13:32.28" id="00:13:32.28" class="lt" onclick="jumptoTime(812, this.id)"><p>就是有點凝固，然後我們把剛才的芒果布甸，攪拌均勻，然後慢慢放進去，整碗放到滿，放到滿了之後，剩下的，我們就用玻璃碗或乾淨的容器，用熱水把它放進去，剩下的就全部倒進去，上面的泡沫就弄走它，現在就很簡單，這個蓋子蓋上就可以了，這兩碗就包保鮮紙，用保鮮紙包好之後，放在雪櫃的蔬菜格，或者是雪櫃的最上層。</p></a>
+				<a href="#00:14:34.77" id="00:14:34.77" class="lt" onclick="jumptoTime(874, this.id)"><p>為什麼呢?</p></a>
+				<a href="#00:14:35.97" id="00:14:35.97" class="lt" onclick="jumptoTime(875, this.id)"><p>因為我們在雪櫃也要跟生熟食物分開處理，這些最上層的蔬菜格就把它蓋上，六個小時之後，我踩完單車回來了，又是這個畫面，是的，拉出來看看就知道了，變成怎樣呢?</p></a>
+				<a href="#00:15:0.81" id="00:15:0.81" class="lt" onclick="jumptoTime(900, this.id)"><p>OK了，拿出來給大家看看，最少要放幾個小時，怎樣才算是OK呢?</p></a>
+				<a href="#00:15:12.33" id="00:15:12.33" class="lt" onclick="jumptoTime(912, this.id)"><p>平的就可以了，拿開給大家看看，芒果都浮在上面了，底下的也是做了芒果果凍，我們怎樣把它移出來呢?</p></a>
+				<a href="#00:15:31.07" id="00:15:31.07" class="lt" onclick="jumptoTime(931, this.id)"><p>準備一支牙籤，在邊緣的位置，沿著邊緣的位置，慢慢地偷一點，偷了之後，把它吸起來，吸起來之後，用風筒吹一下，如果有火槍或者噴射火機，也可以的，因為沒有太多火，用風筒，用風筒吹了三十秒左右，它就整個吹下來，接著就把它打開，看到整個賣相嗎?</p></a>
+				<a href="#00:16:28.90" id="00:16:28.90" class="lt" onclick="jumptoTime(988, this.id)"><p>接著我們拿剛才的芒果做半碟，這個芒果布甸就完成了，至於甜度，這個份量剛剛好，我們吃的時候加一點點花奶，是哪種花奶呢?</p></a>
+				<a href="#00:16:50.74" id="00:16:50.74" class="lt" onclick="jumptoTime(1010, this.id)"><p>這個三花淡奶，不要用直擠，用直擠是沒有味道的，吃果凍一定可以吃得出來，再加上芒果，這個芒果布甸就完成了，再加上花奶，就是一流了，哪種花奶呢?</p></a>
+				<a href="#00:17:14.46" id="00:17:14.46" class="lt" onclick="jumptoTime(1034, this.id)"><p>旁邊這個大的就變成這樣，這個就我吃了，這個留給女兒吃，小雲就吃那個透明的，今天芒果布甸的分享到此為止，喜歡吃布甸的朋友，給個讚有清晰，喜歡吃芒果的朋友，訂閱職人吹水的頻道，幫我分享一下這個消暑貢品芒果布甸，我先吃了，多謝收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

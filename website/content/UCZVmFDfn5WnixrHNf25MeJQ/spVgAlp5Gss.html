@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職 人吹水〉 紅菜頭雜菜湯( 齋 湯)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'spVgAlp5Gss',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職 人吹水〉 紅菜頭雜菜湯( 齋 湯)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.02" id="00:00:9.02" class="lt" onclick="jumptoTime(9, this.id)"><p>大家好，我是星星师傅，这一碗是什么呢?</p></a>
+				<a href="#00:00:13.02" id="00:00:13.02" class="lt" onclick="jumptoTime(13, this.id)"><p>这是红腰豆，红腰豆有什么作用呢?</p></a>
+				<a href="#00:00:17.02" id="00:00:17.02" class="lt" onclick="jumptoTime(17, this.id)"><p>今天跟各位分享煲汤的方法，这位朋友又在煲汤，煲汤没什么人看的，今天跟大家分享一个比较健康的汤水，首先材料有红腰豆和果皮，这些是要冷水煮的，所以先放进去，还有什么材料呢?</p></a>
+				<a href="#00:00:52.02" id="00:00:52.02" class="lt" onclick="jumptoTime(52, this.id)"><p>逐样跟大家介绍，甘笋一条，星星，我们买甘笋，有很多种品种，买甘笋就一定要买有泥的那种，煲汤，有泥的那种叫台卜，比较鲜嫩，多汁，新鲜，没有泥的那种叫甘笋，切了放进去，还有粟米三条，切碎，再放粟米三条，还有什么材料呢?</p></a>
+				<a href="#00:02:11.12" id="00:02:11.12" class="lt" onclick="jumptoTime(131, this.id)"><p>还有三支西芹，如果用来煲汤的话，买大陆西芹也没所谓，便宜很多，我今天买了美国西芹，因为美国西芹贵很多，一般用来炒的用美国西芹，全部放进去，动了，不要紧，我们把它调整好，煲汤随意可以了，放一叶也不要紧，放进去，还有什么呢?</p></a>
+				<a href="#00:02:57.12" id="00:02:57.12" class="lt" onclick="jumptoTime(177, this.id)"><p>还有番茄，两个也够了，番茄四个，大约一斤左右，切碎，随意切就可以了，如果大家在家切可以慢慢切，我在家做事也会慢一点，为什么呢?</p></a>
+				<a href="#00:03:32.12" id="00:03:32.12" class="lt" onclick="jumptoTime(212, this.id)"><p>因为我家里的刀具和砧板在家用，不太专业，也不太利，因为不只是我用，我老婆也有用，所以我也不会用什么好刀，这些大陆的刀，几十块钱一把，还送了砧板，用了七八年，如果在廚房用的刀會好很多，一般在外面用的，用陳之記的不鏽鋼刀，什麼叫做鋼刀呢?之前跟大家說過，一般用來切薄的東西，我們會用鋼刀，現在很多中菜師傅用來挑花，也是用鋼刀。</p></a>
+				<a href="#00:04:31.59" id="00:04:31.59" class="lt" onclick="jumptoTime(271, this.id)"><p>我們這些叫做片刀，用來操用的，還有什麼呢?紅菜頭，紅菜頭的葉和芯，為什麼連葉和芯也不放過呢?</p></a>
+				<a href="#00:04:47.99" id="00:04:47.99" class="lt" onclick="jumptoTime(287, this.id)"><p>因為葉和芯是很高營養分的，雖然味道不是太好，但是煲湯主要是要養分，所以我們會把它放進去，紅菜頭有益，不用我多說了，很多人都知道，我們以前做西餐的羅宋湯也是用紅菜頭的，現在很少了，因為貴嘛，全部切碎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:32.32" id="00:05:32.32" class="lt" onclick="jumptoTime(332, this.id)"><p>göre토，Moses，Rider，weg người，של，sous</p></a>
+				<a href="#00:05:44.74" id="00:05:44.74" class="lt" onclick="jumptoTime(344, this.id)"><p>μας，won</p></a>
+				<a href="#00:05:36.60" id="00:05:36.60" class="lt" onclick="jumptoTime(336, this.id)"><p>implant，watts，meus，�ieli</p></a>
+				<a href="#00:05:35.18" id="00:05:35.18" class="lt" onclick="jumptoTime(335, this.id)"><p>nooit，arada，�оме，Jahre，把所有材料放下去之後，用大火煮半小時，不斷滾，為何要煮半小時呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.13" id="00:06:0.13" class="lt" onclick="jumptoTime(360, this.id)"><p>這半小時讓它熟透，星星，剛才你弄了一弄，沒有材料了，這是素湯，主要味道來源是豆和其他原味，煮了半小時後，可以關掉火，慢慢煮，煮多一小時就可以了，這個湯總數煮一個半小時就可以了，煮好之後再拍給大家看，煮了一個半小時，水分差不多六七成，這個湯已經可以了，可以當湯喝，我會加大約一個茶匙的鹽，讓它有風味，這些湯渣可以拿回家吃。</p></a>
+				<a href="#00:07:16.13" id="00:07:16.13" class="lt" onclick="jumptoTime(436, this.id)"><p>今天的湯的推介到此為止，如果大家有空想我煮健康一點的湯喝，這個就是其中一個我比較喜歡的齋湯，如果日後有什麼齋湯推介，再跟大家分享，多謝各位收看，我先喝湯了。</p></a>
+</div>
+	</body>
+</html>

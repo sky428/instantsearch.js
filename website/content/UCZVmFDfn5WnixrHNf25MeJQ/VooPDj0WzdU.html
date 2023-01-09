@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉懷舊街頭小食冷糕 香煎冷糕/ 潮州冷糕 /配椰絲花生餡料/ 班戟/雞蛋仔/ 格仔餅/ 簡單易做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VooPDj0WzdU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉懷舊街頭小食冷糕 香煎冷糕/ 潮州冷糕 /配椰絲花生餡料/ 班戟/雞蛋仔/ 格仔餅/ 簡單易做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.80" id="00:00:3.80" class="lt" onclick="jumptoTime(3, this.id)"><p>下雨天， 最好是用雨刷洗手。</p></a>
+				<a href="#00:00:8.80" id="00:00:8.80" class="lt" onclick="jumptoTime(8, this.id)"><p>洗手後， 用水洗手。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.63" id="00:00:13.63" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，咁我攞返啲麵粉出嚟同大家又吹下水呀咁好多時候你出街都會，食到一啲叫做雞蛋仔呀格仔餅呀甚至乎，我哋以前做西餐呢有一隻叫做班戟呀嗰啲而家嗰啲班戟，如果冇呢班戟玩咁又點樣搞法呢，其實做又複唔複雜呀，咁我哋甚至乎以前我哋鄉下有一隻叫做煎嗰啲甜薄餐會用啲糯米粉呀，米粉去做呀。</p></a>
+				<a href="#00:00:55.61" id="00:00:55.61" class="lt" onclick="jumptoTime(55, this.id)"><p>當然，做，出面嗰啲雞蛋仔呢就係用麵粉去做呀，我跟佢做呢個啦就以前我哋就街邊食過有一隻就叫做，唔係又唔係夾餅，佢哋叫做冷糕呀冷糕呀，以前呀喺出面食呀整完呀會夾啲呀，煉奶呀花生醬呀咁樣呀啱啱就整咗啲花生咁樣做睇，同大家分享一個做花生餡呀咁你又搞咗我，個面糊張先，咁我約落100 gram到啦，咁我最終又整埋嗰啲小麵粉呀呢度約200gram咁上下。</p></a>
+				<a href="#00:01:44.51" id="00:01:44.51" class="lt" onclick="jumptoTime(104, this.id)"><p>跟住我哋攞啲攞啲泡打粉出嚟咁樣落一個茶匙都咁上下，我落多少少落差唔多，跟住我哋加約一個湯匙都係沙糖落去，唔使太甜㗎呢個高底，咁我哋又將沙糖呀泡打粉呀麵粉呀咁呀稍為就撈一撈佢呀，撈勻佢先，咁麵粉嘅咁樣盡量用返啲呀中間麵粉呀話低筋麵粉都可以，咁樣再攞個棒出嚟啦咁樣落一隻雞蛋㗎唔夠唔夠，我落多隻。</p></a>
+				<a href="#00:02:30.59" id="00:02:30.59" class="lt" onclick="jumptoTime(150, this.id)"><p>跟住我哋攞啲椰漿出嚟咁我哋約落兩湯匙都係嘢將落去，跟住落返約，一個茶匙嗰個生油落去，咁我係咪將所有蛋漿呀椰漿呀咁樣搞唔佢先啦稍為發文，咁而家你又將頭先嗰啲，麵粉呀拋打粉呀糖呀咁樣就全部又擺返返曬落去，咁我哋呢就慢慢搞，咁我哋就盡量就唔好搞到佢即係起筋呀，咁至於呢個，麵粉嗰個稀稠程度呢。</p></a>
+				<a href="#00:03:18.55" id="00:03:18.55" class="lt" onclick="jumptoTime(198, this.id)"><p>咁我哋就用水去調教，咁教你點為之得啦，一個流動嘅漿狀所以我啲水呀我哋每一次都唔好加太多落去，等佢食咁啲我又加啲食咁啲又加啲落去咁咪最理想，搞到而家咁樣差唔多喎，一個流動嘅漿狀，咁你個張得未呀，未得㗎，我哋擺喺雪櫃嗰度呀最好就說佢30分鐘，啱啱就整米通咁就用鹽呢就炒咗少少呢啲花生，咁我大家就可以睇返我整米通嗰條影片呀。</p></a>
+				<a href="#00:04:5.65" id="00:04:5.65" class="lt" onclick="jumptoTime(245, this.id)"><p>花生呀咁我哋烘到佢手有少少顏色呢咁佢就好起啦，攤凍佢呀，完全凍曬，咁我哋先可以做到呢個，花生餡嘅，花生餡呀除咗花生之外呀，咁我哋仲有啲，夜用啦，甜味就來自砂糖，如果有芝麻嘅咁樣，落埋啲炒香芝麻就更加好，但係主要個味嘅來源呢，都係花生，咁我哋都好簡單呀凍曬之後呀，咁我又擺落去慢慢打一次唔好打太多，咁我落曬之後呀開頭呢就慢慢一下一下啦。</p></a>
+				<a href="#00:04:51.99" id="00:04:51.99" class="lt" onclick="jumptoTime(291, this.id)"><p>唔好咁快速我哋又唔使打太過歲呀，打開用茶啦開咗一半呀咁我哋先啦先飯，咁我最後畀我幾下啦咁咪都係咗佢啦，差唔多喇喎，我又望望佢，咁嘅環境就ok喇喎，咁我哋咪打埋其他嗰啲啦，咁我哋都係咁樣呀慢慢睇，咁我好容易搞掂呀，花生蓉呀林國年前，整定少少喺度呀用途好廣泛呀，咁有啲咩用途呀嗰陣陣陣呼朱肉出啦攞嚟包角仔呀，都相當之正呀例如。</p></a>
+				<a href="#00:05:50.12" id="00:05:50.12" class="lt" onclick="jumptoTime(350, this.id)"><p>整啲班戟呀攞呢啲餡都係好好呀咁我哋一時間就，唔好撈太多咁我哋就食幾多就撈幾多呀呢啲咩，花生蓉呀咁我哋搵個，保鮮袋呀咁呀，再好佢呀，咁我迫返曬啲空氣出嚟咁呀擺返喺雪櫃嗰度ok呀，咁我擺十零廿日都冇問題呀，我哋下一步，咁我哋就開咗個火，買啲嘢用落去慢慢火我哋行一行向佢，咁你一路行啦已經聞到好香嗰啲嘢用未㗎喇。</p></a>
+				<a href="#00:06:29.80" id="00:06:29.80" class="lt" onclick="jumptoTime(389, this.id)"><p>好遠呀，如果有芝麻嘅，咪用埋啲芝麻一齊去烘香佢囉，阿爺用，烘到香呀乾身之後呢咁我哋咪攞埋啲花生嗰度呀，我跟住我哋就，輕輕就攞唔佢呀，咁我啲嘢用呀，同埋啲花生呀我哋都係要等到佢完全係凍曬呢先好加糖，咁凍曬之後呀咁我又加砂糖呀，基本上有，一份餡料一份糖冇ok呀咁我呢度約落四個湯匙，跟住又將佢半文去。</p></a>
+				<a href="#00:07:12.56" id="00:07:12.56" class="lt" onclick="jumptoTime(432, this.id)"><p>咩備用咁就可以呀，咁樣用途就係會有相當之廣泛嘅，呢個，大家好似覺得好多糖落去呀我呢個就已經係，比標準份量減少一半㗎啦，我哋以前一份料係兩份糖呀而家個個都話啲嘢唔甜唔甜唔甜唔好食咁樣，大家就就返個甜度啦，準備好咁我咪，攞返個糕底出嚟啦，擺咗佢30分鐘，行一行去呀我哋行內叫做，攞出嚟啦。</p></a>
+				<a href="#00:07:58.46" id="00:07:58.46" class="lt" onclick="jumptoTime(478, this.id)"><p>咁我又稍為少少呀咁樣就可以再加多啲咁多水落去，咁我哋務求做到一個流質嘅效果呀嘛，做呢啲糕底啲粉漿呀，唔好咁考究個份量，咁我哋就最主要知道個鐘點喺邊度係咩ok呀，咁我好似，瀑布流落去慢少少咁ok呀而家都仲未得，咁上下咁就ok喎如果你攞用嚟煎班戟呢仲要開，稀少少，咁我哋就開咗個細火。</p></a>
+				<a href="#00:08:41.74" id="00:08:41.74" class="lt" onclick="jumptoTime(521, this.id)"><p>慢慢，燒熱嘅煎餅佢先，咁我煎餅熱咗啦咁我哋又，落兩滴油落去啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:49.66" id="00:08:49.66" class="lt" onclick="jumptoTime(529, this.id)"><p>紙巾呀整個意見喎，我哋都要，插到佢平曬嘅，咁做呢個啦我哋又可以做一個，班戟嘅做法去做，做一個冷糕嘅做法，落咗底下嗰度咪整完佢囉，擺落去呀都係呀唔好郁佢，細火，我會同你講㗎，氣泡氣泡係你都老友你認住都係啪，氣泡呀可以，但係呀博博博博呀咁樣就差唔多得呀同埋會變色嘅，見到啦側邊嗰啲呀可以有少少變色呀咁我哋咪，再讀佢啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:45.22" id="00:09:45.22" class="lt" onclick="jumptoTime(585, this.id)"><p>跟住又反咗佢冇乜食都唔緊要㗎咁我哋一間先到去金黃色就可以，咁約一分鐘到，咁咪又返返個呢邊囉，煎到佢嗰邊金黃色咁樣呢邊茶餡咁ok呀，反轉咗呀咁我睇下夠唔夠色，咁ok喎側邊嗰啲再煎一煎佢，呢個用易潔鑊做呀就比較容易掌握啲嘅，差唔多啦咁我起得，咁我跟住咪煎第二塊囉，咁我哋都係咁樣。</p></a>
+				<a href="#00:10:31.14" id="00:10:31.14" class="lt" onclick="jumptoTime(631, this.id)"><p>慢慢落去中間嗰度呀，落咗就唔好理佢，等陣間先，落咗落去又一分鐘都唔使呀咁佢開頭中間呢都有少少氣泡，咁樣整上嚟呀，咁我哋都係啦呢個時間我哋就可以返咗佢，咁做呢個班戟呀你將所有嘅水份呀，專為，牛奶都係可以嘅，但係如果你落，全部用牛奶呀你煎呢就全程你都係用細火呀，牛奶嘅份量多呢，佢又比較容易攞嘅我今次呢水嘅份量會較多呢。</p></a>
+				<a href="#00:11:13.12" id="00:11:13.12" class="lt" onclick="jumptoTime(673, this.id)"><p>所以我就冇咁容易窿呀，呢邊又煎呀嗰邊又煎呀，咁我煎埋嗰邊再煎一煎香佢，咁我起得喎，咁咪最後尾呢個啦，咁我哋又，一次過又放曬落去呀，咁我哋都係全程保持住個細火，以前我哋出面呀買呢啲欄高呀都要等我一段時間㗎，因為一次過啦佢煎呀煎一大底呀，我擺咗落去之後呢用佢用個細火，咁跟住就二話不說咁我哋就。</p></a>
+				<a href="#00:11:58.18" id="00:11:58.18" class="lt" onclick="jumptoTime(718, this.id)"><p>冚個蓋落去，我哋又全程冇嘢細火就煎佢一邊咁咪ok，咁嗰個大個煎緊㗎咁呢個都好簡單呀咁我哋，咁我哋又攞返啲牛油落去啦，咁我呢邊又查啲嗰邊又查少少，跟住咪，落埋我哋都下咁料啦，可以落牛油呀，加花奶呀，唔係加花奶呀加啲煉奶呀花生醬呀都ok呀，咁呢個咪好似三文治咁樣呀，整好佢咁跟住，一開二。</p></a>
+				<a href="#00:12:45.50" id="00:12:45.50" class="lt" onclick="jumptoTime(765, this.id)"><p>嘩，咁咪一個，咁就食得㗎喇，我再整杯齋啡嘅嗱咁我就唔客氣呀，我未到呀，啱啱佢，我自己覺得，包打粉呀唔係好夠，落多少爆打搵佢呀就更加理想，咁我一路成日一路整呀大家都睇到呀面頭嗰啲，水蒸氣呀佢都係做一個半煎焗嘅效果嘅，望一望佢，咩環境，睇到呀，嗰啲泡呀，開始多呀，同埋佢開始爆嘅，即係代表呢個粉呀。</p></a>
+				<a href="#00:13:39.24" id="00:13:39.24" class="lt" onclick="jumptoTime(819, this.id)"><p>就差唔多已經有七八成，咁我哋再過一過去啦都係過多兩分鐘咁上下嗰啲，咁呀，你睇到呀，差唔多全部開曬呀，咁我哋就輕輕就呢個呢個啦喎喎，睇下個底嘩好靚，咁我係咪準備頭先嗰個，嗰個盤呀咁我成底又擺落嚟，咁我最緊要睇一睇個底呀嘛，係咪好靚呀，我係咪二話不說咪擺返啲牛油落去啦，喺出面做呀一個就做。</p></a>
+				<a href="#00:14:25.32" id="00:14:25.32" class="lt" onclick="jumptoTime(865, this.id)"><p>四分之六份㗎啦咁跟住，老闆又會，審多啲呢啲，跟住就係咪，咁樣咪，你可以開，四份呀，開埋佢，咁一個熱辣辣嘅椰絲冷糕咁就呈現眼前囉，咁鐘意食香啲嘅係咪可以落多少少牛油落去啦，咁鐘意食昔日情懷美食嘅網友畀我like我星星呀咁樣將佢食雞蛋仔網友訂，我職人出咗個頻道，如果兩者都鍾意呀咁麻煩你加個頻道會員呀，咁我就食咗先咁下條影片再打出個拜拜。</p></a>
+</div>
+	</body>
+</html>

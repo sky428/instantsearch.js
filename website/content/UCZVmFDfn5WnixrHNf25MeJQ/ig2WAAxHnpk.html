@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 生炒骨 脆炸排骨秘技 Sweet and Sour Pork</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ig2WAAxHnpk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 生炒骨 脆炸排骨秘技 Sweet and Sour Pork</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，這時可以舀起它，青椒、菠蘿一定要有，現在已經很脆，大家好，又係我星星同大家職人吹水，片頭都寫咗啦，呢個絕對係懷舊粵菜啦，生炒骨，咁亦係我自己童年一個最鍾意食嘅菜，屋企人呀大排檔呀一定係叫喎，有個，肉呀甜甜酸酸好好食呀，到後期好大個先知道原來呢個叫做生炒排骨。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:5.82" id="00:01:5.82" class="lt" onclick="jumptoTime(65, this.id)"><p>諗幾多諗唔明點解會叫做生炒呀其實呢個唔係生炒呀不過係個名係咁叫，大家，生炒雞絲飯係咪生炒呀，生炒嘅，咁大約有半磅多少少嘅，排骨啦，咁我哋咁硬身咁點呀，打兩茶匙鹽落去，鹽之後跟住我哋開水，排骨約浸咗十零分鐘呀已經鬆開曬呀，咁呢段時間我哋咪攞去洗呀，所有淡鹽水沖洗乾淨佢，沖洗過程之中咁我咪將佢裏面嗰啲雪未呀全部沖手。</p></a>
+				<a href="#00:02:1.12" id="00:02:1.12" class="lt" onclick="jumptoTime(121, this.id)"><p>出嚟囉，排骨洗咗三次之後，咁我咪將佢瓊水囉，瓊水都係好重要㗎喎，我哋將排骨，肉裏面，啲水份，瓊番曬出嚟，咁我哋再，用醃料呢，入去咁佢先會鬆軟呀嘛，瓊水，仲係要，乾身，咁樣你陰間你煙排骨咁佢咪會入味啲滑身啲囉，同埋炸出嚟啦，香口啲嘅，排骨，吸乾淨曬啲水之後呢，咁我哋準備一個兜有咩用呀，準備啲醃料。</p></a>
+				<a href="#00:02:53.86" id="00:02:53.86" class="lt" onclick="jumptoTime(173, this.id)"><p>我哋需要少少蛋漿㗎咁我哋打個雞蛋先啦，咁我打咗我哋要幾多呀，我哋約每一個湯匙都咁上下，咁你都咁上下即係幾多呀，三分一隻至四分一隻呀但係唔使太多嘅，咁我畀返少少胡椒粉落去，鹽我哋攞返四分一茶匙，砂糖都係四分一茶匙，一個茶匙嗰個生抽，一個茶匙紹酒，酥味，生粉出嚟生粉，一個茶匙，麵粉。</p></a>
+				<a href="#00:03:58.84" id="00:03:58.84" class="lt" onclick="jumptoTime(238, this.id)"><p>都係大約落一個茶匙，所有嘅醃料，我哋半文去先，排骨落去醃啦，我哋唔好怕污糟用手落去，最好就醃到有一分鐘，等啲味同埋蛋液，麵糊慢慢入去，鬆軟啦，唔好太過濕，咁我哋繼續，醃咗一分鐘過後咁我哋加返一個茶匙嗰個生油落去，令到個排骨呢，將頭先醃咗佢嘅醃料呢就鎖一鎖住佢，入去雪櫃呀雪一雪去呀，色彩繽紛嘅彩椒配合埋菠蘿。</p></a>
+				<a href="#00:05:29.93" id="00:05:29.93" class="lt" onclick="jumptoTime(329, this.id)"><p>主角出場啦，咁你個主角糖醋汁，大家咪可以參考返我上年，糖醋汁製作嘅視頻，如果冇糖醋汁，頭先開菠蘿嗰度留返啲菠蘿水，加茄汁，加返少少醋，加少少糖自己加返個甜酸味道亦係都可以當然，有呢啲咁正嘅糖醋汁就更加好啦，咁呢個糖醋汁嘅用途講飯咁我就唔多講呀，上次有睇過個孫齋我都用呢個糖醋汁嘅，咁我哋每一次呢攞出嚟。</p></a>
+				<a href="#00:06:11.41" id="00:06:11.41" class="lt" onclick="jumptoTime(371, this.id)"><p>用嗰陣時啦，都唔好，搵啲有生水，嗰啲殼，不去，即使用隻學筆，我哋都係一定要乾身，一滴生水都冇，咁我哋臨到出嚟嗰陣時呢仲要搞勻佢，一定要搞勻佢，咁我等佢嗰啲糖呀醋呀茄汁呀半文班上個味道咁咪均勻，咁我今日啦，差唔多用一碗都係差唔多，因為配料返咁上下多嘛，跟住咪封返兩層保鮮紙，擺返入去雪櫃呀。</p></a>
+				<a href="#00:06:51.35" id="00:06:51.35" class="lt" onclick="jumptoTime(411, this.id)"><p>配料處理好曬之後呢，排骨出嚟，跟住著咗個火去，做乜嘢，燒定啲油，我哋攞啲生粉出嚟，咁我呢排骨呢就全部都想乾生粉，咁我點樣上呀，唔使上太過口嘅，咁我哋想曬佢先，如果我哋日常做做啲比較高級少少嘅粵菜呀我哋會用冷排做，新鮮冷排做新鮮冷排做呀，我哋上個粉會更加薄，生炒骨啦，我哋唔好上到去，個粉呀。</p></a>
+				<a href="#00:07:43.33" id="00:07:43.33" class="lt" onclick="jumptoTime(463, this.id)"><p>嗰個粉漿啦太過好呢就唔好食㗎，排骨上咗乾粉之後咁我哋都由溫呢都係差唔多，我哋大約六成油溫160度至180度，如果我哋出面做呢我哋會請佢啲油溫呢190度，跟住我哋，教細個火，排骨呀我哋喺側邊嗰度，慢慢落，落咗落去唔好郁佢，一分鐘先，因為你上乾房呀，我哋一落去佢未定嘅，咁我啲粉咪散曬出嚟囉。</p></a>
+				<a href="#00:08:34.16" id="00:08:34.16" class="lt" onclick="jumptoTime(514, this.id)"><p>唔靚㗎同埋唔香口唔脆口，咁我哋都係要睇住油溫，咁我哋見到而家仲有咁多好色出啦，一分鐘之後，排骨，慢慢，咁而家大約咗分半鐘咁做下，咁我哋咪著兩加返少少人，大約，三分鐘，我哋事前就會炸到咁，我哋先再會炸返佢，一分鐘我哋請咗啲油溫190度，我哋大約就係，30秒，好快上色㗎啫，出嚟，炸了40秒。</p></a>
+				<a href="#00:10:36.47" id="00:10:36.47" class="lt" onclick="jumptoTime(636, this.id)"><p>好脆呀，還有一樣東西，先熄火，排骨，油，洋蔥，香味識出，所有嘅彩椒，再慢慢炒香，30秒都唔使，香味，香味，糖醋汁，煮滾佢先，糖醋汁滾起咗之後，我哋炒佢幾下，落埋啲排骨落去，收火，排骨，有少少掛嘅咁我哋又可以起得啦，唔使太多嘅，啱啱掛佢啲排骨咁又ok呀，跟著我們就慢慢地刮在碟子上，煮好之後，鍋底也沒有什麼留下的，這樣就OK了，現在還在冒煙的生炒骨。</p></a>
+				<a href="#00:13:17.58" id="00:13:17.58" class="lt" onclick="jumptoTime(797, this.id)"><p>這樣就完成了，回鍋的時候已經很想吃了，喜歡吃生炒骨的朋友給個讚，喜歡吃糖醋的朋友訂閱我職人吹水的頻道，幫我分享一下懷舊粵菜生炒排骨，我先吃飯了，謝謝收看，下次再跟各位分享。</p></a>
+</div>
+	</body>
+</html>

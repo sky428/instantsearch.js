@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉簡易製作 /營養高味道好/ 蕃茄薯仔紅腰豆鷹嘴豆營養湯/ 齋菜關注組</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'T5oDBHlbK88',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉簡易製作 /營養高味道好/ 蕃茄薯仔紅腰豆鷹嘴豆營養湯/ 齋菜關注組</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.77" id="00:00:3.77" class="lt" onclick="jumptoTime(3, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，大家好又係我星星同大家職人吹水，大家好，開台冇幾耐呀做過一個齋湯，紅菜頭營養湯呀當中個材料有，紅菜頭啦咁樣番茄呀薯仔呀咁樣甘筍呀，咁我最特別就係有啲雙豆呀一陣間先講，喺嗰個湯呀大家就可以search返睇返嘅，好特別嘅材料呢就係話唔係西芹呀，係嗰個。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:54.79" id="00:00:54.79" class="lt" onclick="jumptoTime(54, this.id)"><p>鹹酸菜，咁我都唔好一留言就係話點解你煲過啲西式湯，鹹酸菜呀，職業廚師一啲私人湯水嘅烹飪技巧，好多網友睇返嗰條影片呢，留言問呀，我啲朋友又唔鍾意紅菜頭，咁又買唔到鹹酸菜咁有啲咩代替呢，呢個湯水呢就解答曬大家所有問題，煮食呀同埋食物嘅口味呢就好得意嘅，咁我自己就相當之鍾意紅菜頭呀同埋鹹菜呀嗰陣味，咁樣有鹹菜又配合埋啲少少西芹呀嗰陣味呢就好正。</p></a>
+				<a href="#00:01:47.01" id="00:01:47.01" class="lt" onclick="jumptoTime(107, this.id)"><p>你話啲小朋友呀我唔鍾意食呀啲紅菜頭呀，紅菜頭呢，青青地嗰啲味呀，咁樣唔緊要㗎，口味嘅嘢就好特別㗎嘛，鍾唔鍾意食呢啲嘢好主觀㗎，榴槤好唔好食呀，你鍾意食咪好食囉臭豆腐好唔好食呀，鍾意食唔係好食呀，咁我哋做職業廚師咁好多時，我哋煮食呀都係用一個好客觀嘅表演呢做一樣嘢出嚟令到大家都，接受嗰個味道㗎嘛。</p></a>
+				<a href="#00:02:23.35" id="00:02:23.35" class="lt" onclick="jumptoTime(143, this.id)"><p>咁我事不宜遲呀唔好吹咁多呀，咁樣呀，英嘴豆紅腰豆咁樣每樣約半個飯碗呀，都係煲齋湯未嘅來源嘅，番茄約900g咁上下，咁如果有陳皮嘅咪浸兩個落去啦咁咪洋蔥一個，咁我薯仔，同埋甘筍有大約600，係每樣係每樣600呢咁上下，4-5人嘅份量就ok呀咁我唔需要落任何肉嘅，咁我做法亦係都唔係太過困難嘅我哋已經浸嗰啲嘢呢就一早就浸咗佢，陳皮啦。</p></a>
+				<a href="#00:03:13.81" id="00:03:13.81" class="lt" onclick="jumptoTime(193, this.id)"><p>同埋我自己最鍾意用嘅雙豆啦，紅腰豆同埋英嘴豆，乾淨水浸佢幾個鐘頭最少都要浸幾個鐘頭，三四個鐘呀未浸之前呀，咁我咪咪會有啫，發大咗好多啦，同埋呢啲都係呀，我哋浸呢啲豆呢，我哋要，畀豆呢又要多三四倍嘅水份去浸佢嘅，因為佢會扯飽水呀，咁第一步咁我哋攞個烹調，咁我哋約落返，三至四公升嘅水呀，三至四人咁你咪落三公升呀四至五人咁你咪落四公升呀。</p></a>
+				<a href="#00:04:3.99" id="00:04:3.99" class="lt" onclick="jumptoTime(243, this.id)"><p>咁我呢度又落咗差唔多四公升呀咁樣就，陳皮沉皮嗰啲水就倒埋落去，紅腰豆英嘴豆咁我哋連埋陣頭嗰啲水就倒埋落去，咁有啲網友曾經問我用罐頭嗰啲得唔得呀，唔好用罐頭，用自己浸嗰啲，因為罐頭嗰啲紅腰豆英嘴豆呢嗰啲就適宜做啲，即食呀啲冷盤沙律呀咁樣煲湯呀，必定係用啲乾品嘅豆呀，浸浸完咗佢煲呀咁你個湯你先有味。</p></a>
+				<a href="#00:04:43.91" id="00:04:43.91" class="lt" onclick="jumptoTime(283, this.id)"><p>咁我哋就二話不說呀，煲咗以上三樣，咁湯煲緊之際吖嘛吹下個今日個主角呀，唔鍾意食紅菜頭，唔鍾意食南瓜，唔鍾意買唔到咸酸菜咁其他代替品呢，就係番茄啦，咁我哋約買多，半斤呀半磅呀即係約300元，如果揀呢啲番茄呢揀嚟煲湯呢我哋呢，大隻少少，係好硬嘅，你唔好林北，煲湯嗰啲呀買啲硬身啲嘅番茄就會好啲嘅，我諗住攞嚟煮番茄蛋呀或者煮其他呀。</p></a>
+				<a href="#00:05:36.70" id="00:05:36.70" class="lt" onclick="jumptoTime(336, this.id)"><p>少少呀，水分嘅甜度會比較足啲嘅，熬湯呀或者呀做下啲三文治呀咁樣，好簡單呀咁我哋就，咩咗粒定佢，盡量就成個番茄煲曬佢吖嘛，有咁多日煲咁多，咁呀揀呢啲番茄咁就首先就唔好有啲咩，咁就首先就唔好有啲咩破損呀同埋第二就，睇埋呢塊啦，青青綠綠咁樣都係代表佢新鮮嘅，今日就好平呀呢，連埋呢番茄薯仔呀都係呀18蚊三磅呀。</p></a>
+				<a href="#00:06:24.30" id="00:06:24.30" class="lt" onclick="jumptoTime(384, this.id)"><p>煲齋湯咁咪可以落少少番茄囉，薯仔呀，薯仔呢間嘢個個都唔陌生㗎喇但係點樣揀呀，網友應該買啲咩薯仔呀，薯仔都，講過有好幾次啦咁我哋就盡量啦咪就買啲，皮乾肉滑嘅，咁樣最主要就係唔好出啲肉牙，肉牙出呢嗰啲薯仔呢，就會有，毒素喺度呀，你點樣烹調呢，都唔會都唔會識除咗嗰啲毒素呀所以，出牙呢你就一定唔好買。</p></a>
+				<a href="#00:07:5.78" id="00:07:5.78" class="lt" onclick="jumptoTime(425, this.id)"><p>有時有啲業界嘅我攞啲薯仔肉返嚟睇唔到咁樣嘢，入口有少少嗱喉嗰批薯仔你又唔好要呀，咁樣我哋揀都係揀唔好，仲有唔好有啲破損啦有啲爛啦咁有啲就，宅男有啲網咪盡量唔好揀嗰啲啦咁你呢種食薯仔啦咁樣，我哋以前出街市呢就搵咗手撩一撩佢呀睇下會唔會黃肉呀，如果係黃肉嗰啲就白萬生去買啦但係而家就冇冇冇呢啲高底上㗎啦，咁樣如果你外國網友就入到呢超市㗎咪可以買返啲袋裝嗰啲新樹囉。</p></a>
+				<a href="#00:07:47.49" id="00:07:47.49" class="lt" onclick="jumptoTime(467, this.id)"><p>外國嗰啲薯仔嘅質量呢都係唔錯㗎，咁我哋都係好簡單呀咁我攞個跑出嚟就，咁ok呀，外國網友問我，星星，我用刮節瓜嗰啲方法刮得唔得㗎，就唔係唔係唔係太好啦，有時嗰啲，大型樹仔咁我哋都有啲機嘅同埋磨皮嘅，咁呢啲就屋企就唔需要呀咁我哋就刨咗佢啦就最貼切呀呢個方法，咁我睇下有啲窿眼嗰啲地方咪刨多下啦，浸埋。</p></a>
+				<a href="#00:08:26.41" id="00:08:26.41" class="lt" onclick="jumptoTime(506, this.id)"><p>咁你輸咗一刨完啦就立即就擺埋啲水度浸住佢，去到我哋呀主角呀，甘筍呀，咁我哋就叫做台北呀咁我都講過多次呀煲湯呀，買啲有泥嗰啲，有泥嗰啲，好多時候嗰啲就叫做甘筍呀，其實都係同一樣嘢嚟㗎，咁我哋揀呢啲都係啦咁我揀下睇下有冇破損呀，濕唔濕潤呀，夠新鮮呀，比較清甜啲嘅，咁我哋都係啦咁我咪大家就唔好介意呀，現場。</p></a>
+				<a href="#00:09:11.47" id="00:09:11.47" class="lt" onclick="jumptoTime(551, this.id)"><p>即做即時拍攝，有時有啲膠袋商呀咁大家就，即係多多包容呀，咁我都唔係話，即係煮完一個餸菜咁樣就，畫面呀咁樣憑想像同大家講呀咁我又冇呢啲嘢，堅持，將一個餸菜整個過程呢一路做一路煮個流程呢，同大家分享㗎嘛，煮食呢整個流程呢都係好緊要，所有材料，煲幾耐，成品出嚟，一分鐘咁樣完成㗎喇，十幾廿分鐘同自己賭買呀。</p></a>
+				<a href="#00:10:5.62" id="00:10:5.62" class="lt" onclick="jumptoTime(605, this.id)"><p>一分鐘同埋整十幾廿分鐘，咁樣對我嚟講係咪爭好遠呀咁我當然爭好遠呀咁我整一條十幾廿，十幾廿分鐘嘅影片，一分鐘嘅咁我就可以利用其他嗰啲時間整多十幾廿條影片，煲呢個湯另外一個味嘅來源係來自洋蔥啦，有味啦仲係相當之有益嘅，開咗去嗰張塊皮咁樣沖一沖水搞掂，洋蔥切咗之後咁樣揀洋蔥咁樣點樣揀呀大家回一回睇睇返我呢個，質量唔係太好呀。</p></a>
+				<a href="#00:10:50.42" id="00:10:50.42" class="lt" onclick="jumptoTime(650, this.id)"><p>乾身啦嗰塊皮呢就情願啲少少啡色呀嗰啲嗰啲，所有材料再清洗佢一兩次之後呢，改動，咁我哋切都係好簡單呀咁我哋就預設先，味道嘅層次豐富啲嘅，可以用我呢個配搭再搭少少話，腰果落去呀咁我未到都係相當之好，幾年前嗰條影片嗰個方法去做嘅都ok呀，煲湯咁我哋，金獸都係唔好切得透呀細粒，但係我哋最少都要煲佢兩個鐘頭。</p></a>
+				<a href="#00:11:45.46" id="00:11:45.46" class="lt" onclick="jumptoTime(705, this.id)"><p>有啲網友，留言呀我唔想煲咁耐喎，啱曬呀你唔想煲兩個鐘你咪，咁呀啲金獸就要話不說呀咁呀佢係咩咁樣，整濕少少把刀，如果你把刀呢乾呀佢就好容易會啲實嘅，都唔好切得太過細粒呀，大粒少少，咁因為你煲得咁長時間啦咁我呢就好容易會冇曬咁我哋就，咁上下size啦咁ok呀，最後就到，番茄同埋洋蔥呀。</p></a>
+				<a href="#00:12:50.31" id="00:12:50.31" class="lt" onclick="jumptoTime(770, this.id)"><p>咁我哋就將之前整濕咗嘅砧板呀都話咁呀手嘅手，買埋佢啦，番茄呢，你就唔需要，濕呀反而濕呢佢仲唔係太好喎，善呀咁你仲容易，好手，咁我都有嘅，咁我哋首先就開咗佢啦開咗佢啦最穩妥啲位呢咁我哋擺，方法，穩妥啲啦，有時呢都唔理啦就過唔到啲番茄皮，咁你當你，之後就真係就好想咁呀，真係好實淨呀，一氣呵成咁就搞掂啦。</p></a>
+				<a href="#00:13:51.73" id="00:13:51.73" class="lt" onclick="jumptoTime(831, this.id)"><p>番茄，咁我哋都係切過咁咪ok，都係擺曬落去，材料啦都係，唔使點樣事成日或者炒呀嗰啲呀，咁我哋又一氣呵成就係擺曬落去咁ok呀，咁我哋又用大火，煲滾佢，咁你跟住就轉返細啲咁多，中大火，煲佢30分鐘先，大火煲30分鐘呀，出未呀你煲齋湯好煲老火湯，咁樣我係煲嗰個年當中呀咁我面頭，識咗啲泡沫嘅。</p></a>
+				<a href="#00:14:43.95" id="00:14:43.95" class="lt" onclick="jumptoTime(883, this.id)"><p>我講好多次呀同埋呢啲泡沫都係啲唔好嘅嘢嚟㗎，蔬菜青米呀咁樣佢加熱過程當中呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:17.29" id="00:15:17.29" class="lt" onclick="jumptoTime(917, this.id)"><p>蔬菜青米，蔬菜青米，保持住個煲湯火爐，咁我哋又睇一睇乜嘢模樣，咁你又講我調味都好簡單呀，個別人事咁我飲咩我又唔落嚴嘅，少少落去啦，甜味就已經係好足夠㗎啦呢個湯，因為你個材料都係會比較多嘛同埋，英崽豆都係相當之有味嘅，呢個齋湯嚟㗎喎，咁我其他嗰啲材料咪可以搵一碟嗰度，雖然話係一個齋湯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:7.58" id="00:17:7.58" class="lt" onclick="jumptoTime(1027, this.id)"><p>煲完湯呢啲材料都係好好食嘅，一個秘技添就係話將呢度所有材料呢，攪拌機呀攪勻佢呀，煮意粉食，豐富味道好嘅齋湯呀，加少少腰果落去呀，紅腰豆英嘴豆，繼續吹水。</p></a>
+</div>
+	</body>
+</html>

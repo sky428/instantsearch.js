@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 蕃茄薯仔甘筍滾肉片湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_w91XzG89-0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 蕃茄薯仔甘筍滾肉片湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>各位好，我是星星師傅，星星，又飲中藥?</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>不是中藥，是齋啡，過咗年後，我哋都係好多嘢做，又唔夠瞓，整杯齋啡飲下去，今日有咩吹呢?</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>今日同大家滾個湯吹下，有咩湯呀?甘筍湯呀?</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>係呀，甘筍湯，咁我哋又切咗啲甘筍落去滾咗佢先，甘筍，呢度一條啦，我哋刨咗洗咗佢，咁就割咗佢，滾湯都係呀，落咗啲甘筍先，落咗佢跟住點呀?</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>開火，滾湯梗係唔食得肉架啦，呢度大約買咗一斤嘅新鮮肉片啦，咁我就決定就用嚟滾曬湯去，咁我哋返嚟就搵啲清水浸一浸佢啦，轉頭就沖乾淨佢咁就ok，肉片同埋甘筍，星星仲有咩其他材料呀?</p></a>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>有嘅，大家滾一個蕃茄薯仔湯，大人細路都啱飲呀，我個女朋友食飯就最鍾意飲呢個湯，咁我哋就割埋啲薯仔先啦，冇乜所謂嘅隨意切就得㗎啦，隨意切咁樣擺喺邊呀星星，炒一炒佢先，蕃茄薯仔湯都要炒一炒佢?係呀冇錯，炒一炒佢先，點炒呀?搵咗鑊炒呀，而家就畀少少油去，炒緊啲薯仔同時咁我哋就切埋啲蕃茄啦，呢啲呢都係可以就咁食嘅啲蕃茄。</p></a>
+				<a href="#00:02:14.00" id="00:02:14.00" class="lt" onclick="jumptoTime(134, this.id)"><p>咁我哋又擺埋落去啦，都唔係話啲一般肉茄呀咁樣呀都好細個呀呢啲蕃茄，所以我又落多啲落去啦，咁我又洗乾淨佢啦，番茄薯仔湯呢，番茄同埋薯仔炒一炒佢就會香好多，炒一炒，作用是让番茄的青味也炒出来，薯仔的青味也炒出来，炒到怎样为止呢，番茄有点软细是可以的，因为我们还要用滚汤，做这些番茄薯仔汤或是罗宋汤。</p></a>
+				<a href="#00:03:17.85" id="00:03:17.85" class="lt" onclick="jumptoTime(197, this.id)"><p>我们都会先炒香材料再煲，汤煲出来会更浓，滚汤也是一样，今天买不到鱼，如果买鱼可以加鱼就最好，现在这段时间，这些新鲜肉片浸了十分钟，用湿温水浸，浸的作用是，让肉片的血水浸出来，现在洗净，这个洗了两次，再洗净，现在再洗，血水洗出来，再洗一次，洗净后，用清水晾干十分钟，最重要是晾干血水，晾干血水。</p></a>
+				<a href="#00:04:7.85" id="00:04:7.85" class="lt" onclick="jumptoTime(247, this.id)"><p>然后再煲，有些滚汤会先腌肉片，今天有很多肉片，我就直接放下去煮，放下去后，等它滚起来，滚起来后，用大火，大约煲30分钟，这个汤就完成了，滚了十多分钟，看一看，现在，已经很浓郁了，好像老火汤，为什么呢?</p></a>
+				<a href="#00:04:49.85" id="00:04:49.85" class="lt" onclick="jumptoTime(289, this.id)"><p>材料充足，这个番茄薯仔滚肉片汤就完成了，做一个滚汤，要滚到出味和浓郁，番茄和薯仔炒的步骤很重要，炒一炒，汤底就会香很多，和浓郁很多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:11.85" id="00:05:11.85" class="lt" onclick="jumptoTime(311, this.id)"><p>谢谢观看，这道菜调少少盐，少少咸味，已经很好喝，这些又简单又易做又快，一家大小都合口味的汤，今日和大家分享，有时间找些番茄薯仔汤和小朋友喝，今日分享到此为止，多谢大家收看。</p></a>
+</div>
+	</body>
+</html>

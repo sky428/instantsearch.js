@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 皮爽肉嫩 玫瑰豉油雞 soy sauce chicken 家常版簡單易做 中英文字幕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'i8PpbAqnJ6M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 皮爽肉嫩 玫瑰豉油雞 soy sauce chicken 家常版簡單易做 中英文字幕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.54" id="00:00:0.54" class="lt" onclick="jumptoTime(0, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，一開啟，轉中小火，將雞皮切開，一看便知道是三眼火，大家好，又係星星同大家分享下，星星，你都無嘢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.95" id="00:00:31.95" class="lt" onclick="jumptoTime(31, this.id)"><p>有嘢，剛才你影了出來，咩來的?</p></a>
+				<a href="#00:00:34.95" id="00:00:34.95" class="lt" onclick="jumptoTime(34, this.id)"><p>雞來的，咩雞來的，咁大袋，呢啲都係一般超市嘅冰鮮雞，今日買雞返嚟有咩搞作呢，話說我之前做咗個豉油王乳鴿，得到好大迴響，好感謝好多網友做咗好靚嘅乳鴿，上載咗我職人吹水群組同大家分享，好多網友都話，星星我買唔到乳鴿，或者好多外國網友都話我嗰邊無乳鴿，你可否正正式式做一隻豉油雞同大家分享下，今日做一隻豉油雞同大家分享下。</p></a>
+				<a href="#00:01:16.95" id="00:01:16.95" class="lt" onclick="jumptoTime(76, this.id)"><p>咁啲冰鮮雞返到嚟，拆佢出嚟，放入室溫水，放4-5茶匙鹽落去，用淡鹽水將佢解凍，務求將蒜味逼出來，雞用淡鹽水浸咗十幾分鐘，這段時間剪隻腳，大家講過很多次，在彎位底下剪，唔好剪上來，剪兩隻腳後，還有一個位很重要，在雞頸底下這個位，開少許窿，開這個窿有什麼作用呢?浸雞一定要讓雞囊內水流通，雞浸出來才靚，洗雞最重要是要挖清雞肺位。</p></a>
+				<a href="#00:02:20.95" id="00:02:20.95" class="lt" onclick="jumptoTime(140, this.id)"><p>雞清洗兩三次後將它凍得企瓊水，這邊也要燒一鑊滾水，放雞下去，也是要令雞皮熱水令它脹身，浸了30秒後快速放隔離的凍水，這個作用令雞皮更脹，將雞進一步收縮，做出雞皮脆肉嫰的效果，調配豉油汁，這隻雞約一斤半，兩碗水，一碗，兩碗，豉油用兩碗，第一碗倒下去，第二碗，老抽份量不要太多，因為雞很快上色，所以比上次的老抽落少一半，倒下去。</p></a>
+				<a href="#00:03:45.02" id="00:03:45.02" class="lt" onclick="jumptoTime(225, this.id)"><p>還有兩粒冰糖，手指公約一大粒冰糖，放下去，還有八粒乾蔥，八片薑片和蔥，放下去，用三分之一碗玫瑰露，等它滾，豉油汁滾起便放雞，這時用豉油令整隻雞受熱均勻，這隻雞要浸多久?和上次乳鴿一樣，每邊浸15分鐘，如果有大量豉油汁用大桶浸便可用低溫慢煮方法浸，不用開火，今次保持全程細火，每邊浸15分鐘，先令它整體受熱，最緊要雞囊內淋些熱的豉油汁，淋了後倒出來。</p></a>
+				<a href="#00:04:56.02" id="00:04:56.02" class="lt" onclick="jumptoTime(296, this.id)"><p>因為雞囊內溫度很重要，雞浸出來靚不靚要靠這些細節位，保持細火，這邊浸15分鐘，現在約莫浸了13-14分鐘便反轉，將雞倒出所有雞囊水，反轉，期間保持細火，將新的豉油汁倒入雞囊內，讓裏面受熱均勻，這邊也是，要不停淋住，偶爾要動動，因為保持細火，這邊全程浸了32分鐘，期間不停淋住，雞腿位置收縮了，根收縮了，代表雞差不多熟。</p></a>
+				<a href="#00:05:59.58" id="00:05:59.58" class="lt" onclick="jumptoTime(359, this.id)"><p>將雞腿開，攤凍，現在可以開始斬，第一步斬頸，落一刀拍一拍，頸部出來，第二步，起中間這條脊骨出來，落一刀，開了一邊，現在開另一邊，將整條拿出來，將骨在中間的雞胸位壓下去，將雞胸位切開，處理一邊，先將雞翼這位置切開，用刀尾一下割，將雞腿圈出來，一拍，盡量一刀割，便整齊，雞皮不會爛，將雞皮中間按下去，一刀一刀割下去，雞尾不要，將這些放上去。</p></a>
+				<a href="#00:07:35.51" id="00:07:35.51" class="lt" onclick="jumptoTime(455, this.id)"><p>接著到雞腿，一下一下按下去，雞翼劏一刀，打橫按下去，盡量在雞翼不要斬到有尖骨，如果有小朋友食有尖骨便很危險，一樣，起了雞翼，圈圈，雞腿位落一刀，一開二，開了雞胸位，將雞腿放好，接著到這兒，放好，雞腿放好，雞翼放好，雞斬好後調整汁，做豉油雞另一個竅門在這兒，大家看我怎樣做，將大部份汁落去，開火，本身這豉油汁底都是偏鹹的。</p></a>
+				<a href="#00:09:0.51" id="00:09:0.51" class="lt" onclick="jumptoTime(540, this.id)"><p>食鴨或乳鴿便適合味，做豉油雞的汁偏甜才好食，這時加多一粒半隻手指公大的冰糖，當冰糖溶了後，加多一個蓋和玫瑰露便可以，淋上去，最緊要是乾蔥，喜歡食乾蔥的不妨整多些，我勁鍾意食乾蔥，皮爽肉嫩入味，豉油又好食的豉油雞便完成，喜歡食豉油雞的網友俾個LIKE我星星，訂閱我頻道和分享這豉油雞做法，多謝大家收看，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>

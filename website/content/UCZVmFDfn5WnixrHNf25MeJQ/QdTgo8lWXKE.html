@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 大有來頭 爵士湯 鮑魚蜜瓜煲雞湯 清潤滋陰好味</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QdTgo8lWXKE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 大有來頭 爵士湯 鮑魚蜜瓜煲雞湯 清潤滋陰好味</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:13.66" id="00:00:13.66" class="lt" onclick="jumptoTime(13, this.id)"><p>以上言論不代表本台立場，大家好又係我星星同大家職人吹水，咁大家睇到一個耳熟能詳嘅排頭咁咪梗係，煲湯呀冇錯煲湯，材料，陳皮，我哋要曬三片，咁呢啲原貝仔我哋約150 gram，新鮮鮑魚呀嘛十隻，有禮嘅紅蘿蔔呀我哋叫台北一個，今日主角呀嘛，蜜瓜，咁你仲有，雞，咁咁多材料去煲一個湯咁我哋就將呢啲，唔等洗嘅暫時係擺開先。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:12.88" id="00:01:12.88" class="lt" onclick="jumptoTime(72, this.id)"><p>咁我哋就，吹咗啲原貝仔先，咁呢啲原貝仔呀咁我哋日常嘅會擺喺雪櫃冰格嗰度咁我哋用嗰陣時我咪先攞出嚟，咁我哋用呢度咁上下倒就夠啦，咁我哋就用少少室溫水浸咗十分鐘先，咁好多網友都留言呀就問我係星星乜嘢叫做室溫水呀，咁我用，室溫水點解我喺，我嗰個地方又浸唔到你嘅效果，咁。</p></a>
+				<a href="#00:01:47.94" id="00:01:47.94" class="lt" onclick="jumptoTime(107, this.id)"><p>講得詳盡少少呀，我哋約用，22至到27度咁上下個水去浸，當然如果你住喺西伯利亞嘅你當然你要即係煮少少呀啲水，咁我浸嘅目的呀都係，等佢有啲，啲沙塵呀嗰啲咁呀慢慢識出跟住我哋洗一洗佢先再浸，咁我到咗底第一轉水呀咩啦啦佢呀咁我跟住我哋咪再賭呀，賭完而家咪先再浸呀，我哋準備約三公升度嘅清水，我哋將原配仔。</p></a>
+				<a href="#00:02:28.40" id="00:02:28.40" class="lt" onclick="jumptoTime(148, this.id)"><p>陳皮連埋水我哋一齊擺喺煲咗佢先，好跟住我哋處理我哋嘅鮑魚，新鮮鮑魚，咁揀咗十隻出嚟啦咁呢啲新鮮鮑魚點為之新鮮呀，睇顏色呀，唔係都可以喐佢呀，佢就呢隻咁，呢隻手係白咗少少嘅咁呀，而家冇呢啲咁新鮮㗎啦，咁我哋返到嚟呀，咁我哋就說一說佢先跟住啦，我哋攞，兩茶匙嘅鹽落去，搵水，浸咗十零分鐘先。</p></a>
+				<a href="#00:03:11.90" id="00:03:11.90" class="lt" onclick="jumptoTime(191, this.id)"><p>咁包魚浸緊我哋攞佢先，咁我哋攞返啲雞出嚟，我每一次買雞呀，我都會買兩隻呀點解呀，師奶心態呀嘛平啲呀嘛，同埋而家買餸一次過買多少少喺度咁咪好啲啦，有睇開我整鹹雞呀咁我成日都講呀，一隻即刻食一隻咪，鹽去啦，兩隻之中，一邊就好呀，呢隻呢隻黃有比較好呀嘛，咁你邊先得返到嚟呀，咁我哋首先。</p></a>
+				<a href="#00:03:50.56" id="00:03:50.56" class="lt" onclick="jumptoTime(230, this.id)"><p>喺個空出嚟，咁我就兩食呀雞翼同埋雞腿呀我又整其他餸菜呀，呢度，起埋兩隻腳，喺攞有呢度攞一刀，跟住呢度，我係拍一拍佢入去之後呢咁我哋繼續拍佢落，咁你雞油嗰啲呀我哋起曬，咁跟住，我哋雞嘅呢個位，喺個位嗰度起咗佢出嚟，咁我哋，蚊住，呢度，都撳住，雞胸呢個位咁我哋，就慢慢扯佢出嚟，有邊啲位棘住㗎咪補少補得到落去啦，慢慢拉。</p></a>
+				<a href="#00:04:49.18" id="00:04:49.18" class="lt" onclick="jumptoTime(289, this.id)"><p>慢慢拉，拉到最後咩呀，呢啲位呀，改改佢，咁我睇下呢啲，好肥呢啲呀，全部，雞嗰啲，黃油，我哋全部唔要，嗱呢啲都係，半隻雞起咗之後呀，咁我落一茶匙鹽落去，淡鹽水呀浸佢幾分鐘，純粹洗乾淨佢，咁半隻雞浸緊之際咁煲咁大煲湯半隻雞夠唔夠味啦，咁我習慣呀都會加返啲新鮮豬展落去㗎約一斤咁上下，豬展半隻雞洗乾淨我哋將佢瓊一瓊水跟住我哋隨即。</p></a>
+				<a href="#00:05:42.51" id="00:05:42.51" class="lt" onclick="jumptoTime(342, this.id)"><p>開火，到啲凍水落去，咁隨即，將我哋啲，豬展，雞腳，半隻雞咁我哋擺落去凍水飛水慢慢加熱加熱過程之中呢就，豬肉，嗰啲騷味呀，豬肉嘅血水味，雞嘅血水，騷味，全部將佢逼曬出嚟，咁繼續飛緊水就係攞返啲鮑魚出嚟呀咁我用啲鹽水炸浸佢，將佢稍為清洗下，咁我哋過去兩三次水呀，咁我哋都係要將表面有啲，啲散呀。</p></a>
+				<a href="#00:06:34.21" id="00:06:34.21" class="lt" onclick="jumptoTime(394, this.id)"><p>海水未有咁我哋就稍為洗一洗乾淨佢呀，咁鮑魚我哋稍為瓊一瓊水咁我睇返你飛緊肉嗰啲雞肉呀豬展呀，一啲唔好嘅味道唔係全部變曬啲泡呀，咁呢個時間，我哋將啲鮑魚，打埋落去一齊，咁我哋約，一分鐘啲鮑魚，跟住先再清水，鮑魚一飛咗一分鐘之後咁我哋準備啲凍水，咁我哋擺埋邊備用呀，咁我而家就倒曬啲水去洗乾淨佢先，雞肉。</p></a>
+				<a href="#00:07:18.77" id="00:07:18.77" class="lt" onclick="jumptoTime(438, this.id)"><p>豬展洗乾淨曬之後呀，咁我哋今日隨即，馬茅煲湯裏面呀，咁隨即處理埋我哋呢啲鮑魚咁我哋呢啲鮑魚呀咁咪吹吹佢呀，表面嗰啲散呀，容易的處理呀嘛，一刷佢咁咪甩囉，裏面呀，乾狀咁我哋點樣整佢出嚟呢，咁我哋就好簡單嘅，咁我哋挑起，鮑魚尾部點為之頭點為之尾呀，佢頭嗰度啦，佢都仲有個嘴喺度㗎，不咁細隻啦你喺唔喺度嘴都冇乜所謂。</p></a>
+				<a href="#00:08:4.93" id="00:08:4.93" class="lt" onclick="jumptoTime(484, this.id)"><p>呢個鮑魚呀，我裏面呀佢有個乾狀喺度，咁我哋，搵個匙羹，一挑佢，咁我哋就可以成組攞曬出嚟呀，咁你啲乾狀我食唔食呀如果中國人我習慣都唔食呢啲嘅但係日本人韓國人，當佢補咁樣呀，咁我哋呢就全部將佢洗乾淨曬先，鮑魚洗乾淨之後咁我哋都仲要將佢，吸乾水呀，處理海鮮一啲好基本嘅竅門，咁呀。</p></a>
+				<a href="#00:08:40.03" id="00:08:40.03" class="lt" onclick="jumptoTime(520, this.id)"><p>好多網友都覺得奇怪為啲點解你唔起咗個學佢呀，煲湯呀，連埋鮑魚海一齊煲呀，都有佢個，用價值㗎，咁點解頭先我將學一齊飛水呀，將學嘅表面，有啲細菌都一齊，清除佢呀嘛，鮑魚抹乾淨曬之後呀咁而家咪，可以，攞埋一齊落去，煲咗佢先啦，咁我個鮑魚雞湯呀，搞咗半日之後呀咁呀就仲有最後兩樣食材咁我哋而家先處理下，咁我哋煲湯呀。</p></a>
+				<a href="#00:09:19.19" id="00:09:19.19" class="lt" onclick="jumptoTime(559, this.id)"><p>買啲有泥濕潤，紅蘿蔔或者台北，咁呢啲就會比較清甜啲喎，保留返個膠袋咁我哋又一下一下咁樣，咁我跑曬佢，咁洗乾淨之後咁我哋就改咗佢，咁喺屋企煲，大個咁ok呀，咁我哋喺出面煲又會切少少呀可能會切啲，即係滾筒形呀，咁ok喎，接著你咪切埋佢啦，咁隨即就擺埋煲湯嗰度，咁我哋等佢，搵起，15分鐘。</p></a>
+				<a href="#00:10:10.98" id="00:10:10.98" class="lt" onclick="jumptoTime(610, this.id)"><p>跟住吸蓋煲佢一個鐘，吹返我哋今次真係最終嘅主角呀即係唔係話乜嘢鮑魚呀雞呀，瑤柱呀嗰啲呀，就係我哋嘅蜜瓜，點解咁特別用個蜜瓜煲湯嘅，我哋中國人食嘢食時令呀嘛去到夏天蜜瓜嘅相當之當，當做嘅咁用嚟，都海鮮亦係相當之知音嘅，咁我哋揀選蜜瓜咩竅門呢如果即刻食嗰啲咁樣梗係揀個熟啲啦，如果揀個煲湯嘅。</p></a>
+				<a href="#00:10:48.86" id="00:10:48.86" class="lt" onclick="jumptoTime(648, this.id)"><p>我哋一定要揀個，比較生日咁可以夠硬呀咁樣，咁我哋返嚟洗乾淨之後呢，咁我哋就，開咗佢，或者啲浪去，咁我掛曬郎之後咁我而家咪改咗佢呀，嗰幾大個呀，我哋，一吋成一吋咁上下，OK喇喎，沙嗰間就煲咗一個鐘頭，咁之前準備咗啲蜜瓜咁我而家咪，放埋落去囉，咁你咪掛咁上下生煲一個鐘頭就差唔多呀，咁我哋吸返蓋咁咪繼續用個慢火煲佢一個鐘頭全程煲兩個鐘頭。</p></a>
+				<a href="#00:11:40.84" id="00:11:40.84" class="lt" onclick="jumptoTime(700, this.id)"><p>多少少咁就差唔多呀，落咗蜜瓜，煲咗個鐘頭，我哋望望佢，OK未喎，林曬喇，畀畀大家睇下，落咗蜜瓜真係睇到已經好想飲呀，唔使煲得太耐㗎喎，呢個湯水呀大家有冇聽過，個叫做爵士湯呀，都差唔多，咁上下做法，落鑼頭，我今次呢，就落鮑魚同埋雞，啲肉呢可以畀返上嚟食㗎喎，雞，成日雞殼咁咪不返上嚟，試咗佢點知熟油豉油食囉。</p></a>
+				<a href="#00:12:35.76" id="00:12:35.76" class="lt" onclick="jumptoTime(755, this.id)"><p>鮑魚，上嚟啦，鮑魚蜜瓜煲雞，咁咪加少少豬展落去，少少，元貝仔，鹽都唔使落㗎，整體個味道啦我保證大家一試難忘，如果屋企有小朋友，有虎女咁呢個湯夏天就啱曬相當之滋陰嘅，咁鍾意鮑魚網友咪畀個like個星星呀，咁我鍾意飲湯咁點呀定咗職人吹水嘅頻道幫我分享下呢個，鮑魚，蜜瓜煲雞湯咁我就食飯先啦多謝收睇。</p></a>
+</div>
+	</body>
+</html>

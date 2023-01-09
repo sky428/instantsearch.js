@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【焗薯】風琴焗薯／芝士煙肉焗薯／酸忌廉焗薯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'fERnL5xUbz4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【焗薯】風琴焗薯／芝士煙肉焗薯／酸忌廉焗薯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，Lemon，ultrasound，Plaid，aven，diyorum，üng，700，향，� leaf，Tumb，Afterwards，tamam，Edanza，consid Henry，登登!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:9.26" id="00:00:9.26" class="lt" onclick="jumptoTime(9, this.id)"><p>馬電出來了，我們今天要做薯仔，這裡有一些美國的薯仔，最適合用來做焗薯，我們剩下三隻在這裡，我們可以一次過試試三款不同的焗薯，焗薯其實不是一氣呵成就可以焗完的，他們通常是要自己先焗熟的，因為他們太大塊了，而且芯很難熟，所以他們本身要先焗熟，然後再加其他材料再焗一次，我們要做的就是先鋪一張錫紙，因為過程中會很麻煩。</p></a>
+				<a href="#00:00:50.26" id="00:00:50.26" class="lt" onclick="jumptoTime(50, this.id)"><p>預先有很多步驟要處理，所以我們鋪一張紙，這樣就可以防止待會芝士、油、焦了，黏著底盤很難清洗的情況出現，之後拿一隻叉在薯仔上刺一些洞，有什麼作用呢?</p></a>
+				<a href="#00:01:15.26" id="00:01:15.26" class="lt" onclick="jumptoTime(75, this.id)"><p>就是為了令裡面的水氣可以散發，這樣就不會焗到爆開了，跌到大爆炸，因為我們還要它完整的形狀，之後我們加些油醃一下，可不可以叫醃呢?</p></a>
+				<a href="#00:01:36.26" id="00:01:36.26" class="lt" onclick="jumptoTime(96, this.id)"><p>這樣就令它很均勻地包滿了我們要的東西，我們首先塗滿油，有油的話，焗完的表面就會相對脆一點，就不會像一塊紙皮那樣，之後就加鹽，加多一點點也沒所謂，因為只是在表面，然後再攪拌均勻，好!</p></a>
+				<a href="#00:02:5.26" id="00:02:5.26" class="lt" onclick="jumptoTime(125, this.id)"><p>之後就可以拿去焗了，大概焗150度45分鐘，其實很長時間的，不過焗爐有一個好處就是完全不用理它，你放進去就可以了，所以我們現在就拿去焗了，好!現在薯仔就焗好了，做這三款焗薯的方法就要三種不同的過程，第一款就是我們平常吃的最簡單的一款焗薯，threatensいる，fo copies。</p></a>
+				<a href="#00:02:32.10" id="00:02:32.10" class="lt" onclick="jumptoTime(152, this.id)"><p>Punkt，tät，가지</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:32.28" id="00:02:32.28" class="lt" onclick="jumptoTime(152, this.id)"><p>ours，Ontario，Uma，不用加什麼材料，就這樣焗完就可以了，我們拿一個出來，趁它熱的時候剖開它，之後拿一些隔熱的東西，例如紙巾，弄成這個樣子，然後這樣壓一壓它，壓一壓它，讓它中間開口，還有爆開一些軟一點，對了 這樣，我們趁熱加一些牛油和酸奶油，就可以了，那酸奶油是什麼呢，就是一些酸酸的奶油。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:7.62" id="00:03:7.62" class="lt" onclick="jumptoTime(187, this.id)"><p>那這個東西和薯仔是超級超級超級配的，其實薯仔和大量的奶製品都是超級配的，你做薯蓉你會加忌廉，你會加牛油，那你做這個薯條，如果你有吃過，那些炸薯條，也是很流行加酸奶油進去做醬的，也是超級超級配的，所以牛油 即是奶類製品和焗薯，是超級好朋友來的，那你看到它現在已經這樣壓一壓它，就會慢慢地融化進薯仔裡面。</p></a>
+				<a href="#00:03:40.22" id="00:03:40.22" class="lt" onclick="jumptoTime(220, this.id)"><p>那之後還有我們要的酸奶油，那我們開盒的時候就再輕微地攪一攪它，但是記住，這些東西是開了盒就很快壞的，還有你記得那個匙羹，碰完它就不要碰其他東西之後又插回去，不然你會令到那些東西受污染，也是很快會變壞的，那我們放一大匙我們的酸奶油進去，那鹽剛剛就加了，那我們再加一點點黑椒其實已經OK了，好 那這個第一款就完成了。</p></a>
+				<a href="#00:04:16.32" id="00:04:16.32" class="lt" onclick="jumptoTime(256, this.id)"><p>那第一款最普通最基本的這種焗薯，最適合在什麼情況下吃呢，最適合就是配在那些扒那些旁邊，就是你當它是一個配菜或者做成，令到那東西飽一點，就是令到那餐飽一點，只是吃一塊扒不夠的，那你可以順手做一個這樣的焗薯，這個焗薯最好的好處就是，很簡單 你不用理它，你開頭可能用兩三分鐘做完之後，放進去焗爐。</p></a>
+				<a href="#00:04:44.72" id="00:04:44.72" class="lt" onclick="jumptoTime(284, this.id)"><p>然後你就可以全部時間都做其他東西，那45分鐘之後它自己叫你，那你就隨便切開它然後加一點醬，那就完成了，那我們試一下現在這個小薯，切開給你看看，45分鐘其實夠了，它裡面已經超軟，還有，配上沙拉忌廉和牛油，其實就很合適</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:14.92" id="00:05:14.92" class="lt" onclick="jumptoTime(314, this.id)"><p>乾杯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:21.63" id="00:05:21.63" class="lt" onclick="jumptoTime(321, this.id)"><p>這個就是我們第一款的樹蓉了，不是，焗樹，我們就可以現在繼續做，好，那我們首先切了煙肉，這個就是另一款焗樹，裡面其中一個比較重要的配料，但是煙肉就不能一次過放進去焗的，因為你要那個香脆的效果，其實它是必須要預先煎香的，我們等一下拌進去的時候，拿去焗的時候，它是不會焗到很爛的，它是不會焗到很香的。</p></a>
+				<a href="#00:05:51.63" id="00:05:51.63" class="lt" onclick="jumptoTime(351, this.id)"><p>所以要先煎了它，那不用理它了，開了鍋，全部放進去，讓它慢慢自己煎就可以了，因為我們要它脆一點，所以讓它慢慢煎，它的油會自己慢慢地滲出來，那你看OK了才拿起來就可以了，那我們可以做下一個步驟的東西，首先我們需要準備一個盤子，之後選一隻我們要的薯仔，現在不是超級熱的了，我們切開它，不要切到底。</p></a>
+				<a href="#00:06:23.63" id="00:06:23.63" class="lt" onclick="jumptoTime(383, this.id)"><p>不要切爛它，我們要的，接著跟剛才一樣，壓著它，讓它那個開口打開，之後開口打開之後，我們找一個匙羹，將裡面少量的薯仔，適量的薯仔，挖出來，看著辣了，因為我這個，沒有經過專人訓練的，是不太怕辣的，途中記得攪一下煙肉，讓它不要煎得太焦，好之後，記得我們剛才有一個匙羹嗎，用這個匙羹，加少量，我們的sour cream進去。</p></a>
+				<a href="#00:07:5.63" id="00:07:5.63" class="lt" onclick="jumptoTime(425, this.id)"><p>這個就隨意了，因為這個是調味而已，就沒有說，要好像做蛋糕那樣，超級超級超級緊張，份量是多少，鹽 黑椒那些隨意，喜歡的就多放一點，不喜歡的就少放一點，如果我想要一點辣，我會放一點這個，這個卡爾胡椒，卡爾胡椒，它就會有一點點辣味，接著到放鹽，很少就行了，之後呢，看不看到我們的煙肉，其實已經煎到油都出來了。</p></a>
+				<a href="#00:07:46.63" id="00:07:46.63" class="lt" onclick="jumptoTime(466, this.id)"><p>我們先攤一攤，其實油我不要那麼多，用另一個匙羹，攪拌好，將薯仔壓碎一點，加上煙肉，留一點在表面，不要全放，之後，將薯仔放入鍋裡，其實同一個方法，你可以嘗試做蛋沙律，即是你可以做一個類似蛋沙律的沙律，然後，在這個時候，將薯仔放進鍋裡，如果用蛋沙律，就不用再焗了，因為沙律醬其實不太能焗，沙律醬如果受熱，油份會逼出來。</p></a>
+				<a href="#00:08:33.65" id="00:08:33.65" class="lt" onclick="jumptoTime(513, this.id)"><p>然後結構就會散開，所以那種就好像第一款一樣，你可以馬上吃，加上蛋沙律在表面，加上蔥就OK了，這一款我們還會加芝士，將芝士放進去，極邪惡，再加上一點煙肉，讓它的頂部漂亮一點，這個就可以拿去焗了，最後這一款，風琴薯仔，一定要將薯仔放涼才可以切，如果薯仔太軟，就會切到爛掉，也不能出現卡卡的。</p></a>
+				<a href="#00:09:17.65" id="00:09:17.65" class="lt" onclick="jumptoTime(557, this.id)"><p>所以其實你有另一個方法可以選擇，不一定要焗熟，你可以選擇煮熟，放在沸水裡煮半小時，然後將它沖冷水或浸冰水，浸冷，整個過程可以快很多，只不過這次因為我其他都要焗了，就算一次過焗完，它攤，你沒理由現在拿去沖水，所以要攤久一點，慢慢等，攤冷了，拿出來，之後我們要切的，就是不要切到底，切一條條坑出來。</p></a>
+				<a href="#00:09:55.65" id="00:09:55.65" class="lt" onclick="jumptoTime(595, this.id)"><p>也不要切爛它的皮，要慢慢地切，你現在就會看到，因為冷了，那層皮才不會脫落得很快，如果是熱的，那時候這樣切，你是切不到的，因為一切就會軟軟的，然後整個就會扁了，沿著薯仔切一行，好!</p></a>
+				<a href="#00:10:22.74" id="00:10:22.74" class="lt" onclick="jumptoTime(622, this.id)"><p>這樣就切開了一行一行了，之後拿兩塊芝士放進去，為什麼這次不是用，芝士碎，而是要用一塊呢?</p></a>
+				<a href="#00:10:32.78" id="00:10:32.78" class="lt" onclick="jumptoTime(632, this.id)"><p>因為我們這次是要放進去的，所以用這個芝士會方便一點，就不會，不知道怎麼放，然後放到很難切，整個東西歪歪的，我們這樣切就差不多了，一塊大概切成六塊，兩塊就十二塊，應該剛剛好夠間線，之後中間再放煙肉，順便，這樣沿著薯仔的邊切，如果太大力的話，其實會辣一點，還有兩滑，我們切開這個切開一半</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:14.30" id="00:11:14.30" class="lt" onclick="jumptoTime(674, this.id)"><p>好!，這樣就剛剛好了，還有煙肉，喜歡的話就可以放進去，隨便放就可以了，這樣就有煙肉，沒那麼滑，除了芝士味之外，因為這個會溶解，所以我們要用錫紙包住，讓它不會流到四處都是芝士，略為包一包</p></a>
+				<a href="#00:11:50.30" id="00:11:50.30" class="lt" onclick="jumptoTime(710, this.id)"><p>這樣，登登，這樣兩個都可以拿去烤了，大概十分鐘左右，二百度，好!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:5.30" id="00:12:5.30" class="lt" onclick="jumptoTime(725, this.id)"><p>好!看!烤好了，就是這個樣子，這個就是風乾芝士，這個就是風琴菊樹，旁邊就是我們釀了很多料進去的芝士菊樹，現在拿出來試一下，我們先試這邊這個，這裡裡面就是調好的味道的薯蓉，再加上芝士</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:38.79" id="00:12:38.79" class="lt" onclick="jumptoTime(758, this.id)"><p>看看，正!Nice!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:46.79" id="00:12:46.79" class="lt" onclick="jumptoTime(766, this.id)"><p>因為調味的關係，所以這個應該是最濃郁的，其實這個風琴薯仔，純粹是靠芝士的味道，沒有其他味道，所以看上去比較好看，但吃起來是你們可以自己選擇調味的，會比較好吃，好!這集就到這裡了，記得Like Facebook，Follow Instagram，訂閱，還有想做的，想試的，或者你看到網上的食譜是否真的。</p></a>
+				<a href="#00:13:22.79" id="00:13:22.79" class="lt" onclick="jumptoTime(802, this.id)"><p>可以Send給我，告訴我，我們一起來試做，就是這樣了，我們逢星期三，五和六，都會有新片的，拜拜!</p></a>
+</div>
+	</body>
+</html>

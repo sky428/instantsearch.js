@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 鮮鮑魚係要咁樣洗！ 陳皮清蒸鮑魚 吹水篇Steamed abalone</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_Z27fK2Tsaw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 鮮鮑魚係要咁樣洗！ 陳皮清蒸鮑魚 吹水篇Steamed abalone</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.88" id="00:00:9.88" class="lt" onclick="jumptoTime(9, this.id)"><p>鋪好後水滾後拿去蒸，幼絲切到最幼，同一隻未洗，是否相差很遠?</p></a>
+				<a href="#00:00:31.96" id="00:00:31.96" class="lt" onclick="jumptoTime(31, this.id)"><p>大家好，又係星星同大家分享下，星星，咁恐怖嘅咩嚟?</p></a>
+				<a href="#00:00:38.96" id="00:00:38.96" class="lt" onclick="jumptoTime(38, this.id)"><p>睇落真係幾恐怖，睇呢啲，睇到未?未知唔緊要，大家唔使大驚小怪，呢啲全部都係新鮮鮑魚，新鮮到點?</p></a>
+				<a href="#00:00:53.96" id="00:00:53.96" class="lt" onclick="jumptoTime(53, this.id)"><p>好似排緊隊，一隻住一隻，比大家睇清楚，處理咁新鮮鮑魚有什麼竅門?</p></a>
+				<a href="#00:01:3.96" id="00:01:3.96" class="lt" onclick="jumptoTime(63, this.id)"><p>睇開我星星頻道，大家亦都清楚我平時怎樣煮海鮮，未煮之前，唔好理佢，我哋劈埋一邊先，我哋臨煮先洗佢，浸粉絲，而家咁凍天時浸粉絲，我哋用暖水浸，清蒸鮑魚一定要用陳皮蒸，就最正，陳皮預早浸約一小時，輕輕刮一刮，切幼絲，要幾幼?最幼，用一個推刀方式慢慢切，切幼絲，給大家看，是否很幼，接著到蔥，切蔥絲上面，很多網友留言問我。</p></a>
+				<a href="#00:02:0.96" id="00:02:0.96" class="lt" onclick="jumptoTime(120, this.id)"><p>星星，為什麼你會用清水浸蔥絲?</p></a>
+				<a href="#00:02:5.96" id="00:02:5.96" class="lt" onclick="jumptoTime(125, this.id)"><p>我切一塊給大家看，切開少許，放入水中，一會兒看什麼狀態，切到一吋長，擺正，按住它，用手指頭頂住刀，慢慢推下去，一下一下推，大家看到嗎?切下去蔥絲仍很直，浸完水便可看形狀，現在浸水，浸了約兩分鐘，大家看，剛才切的已經開了一整束花，浸水後很挺身，好在我們洗菜，為何要浸菜呢?</p></a>
+				<a href="#00:03:5.74" id="00:03:5.74" class="lt" onclick="jumptoTime(185, this.id)"><p>因為將菜浸開，第二目的是將蔥本身很辛辣的味道浸出來，臨上前晾乾水，灑上臨熟油便可以，當處理好蔥後，臨開始食時才取出鮑魚，這麼新鮮的鮑魚第一轉怎樣處理，怎樣洗，我們在外面業界有一個做法，今日和大家分享，首先將鮑魚用普通室溫水打下去，洗一轉，順便拔一拔，大家看，新鮮度，在外面很多人說旁邊的腎要怎樣處理。</p></a>
+				<a href="#00:04:6.74" id="00:04:6.74" class="lt" onclick="jumptoTime(246, this.id)"><p>是否現在用東西馬上抹或散開，如果鮑魚這麼生，不停散開便會痛苦，鮑魚這樣不好食，洗第一轉後取起，星星，可以了嗎?未可以，未開始洗，準備一盆凍水，找一盆滾水，現在將鮑魚放入滾水，數著1，2，3，4，5，5秒左右取出來，放入凍水，現在才洗，拖熱水的目的是令表面的腎更易清理，用牙刷在鮑魚表面刷一刷，大家看到嗎。</p></a>
+				<a href="#00:05:17.74" id="00:05:17.74" class="lt" onclick="jumptoTime(317, this.id)"><p>洗好一隻後和一隻未洗是否差很遠，現在處理第二隻，拆開，因為拖熱水的原理是像劏鱔，用熱水拖一拖，然後散了些鱔出來，鮑魚的腥味在鱔，上年有個網友私底下PM我，問我澳洲有很多鮑魚，如何清蒸，有何方法洗，真的很抱歉，今年碰巧才有時間做這鮑魚和大家分享，這隻這麼污糟，都是這樣一拆便拆出來，網友問我，鮑魚腸內臟可否食，有沒有人食。</p></a>
+				<a href="#00:06:23.58" id="00:06:23.58" class="lt" onclick="jumptoTime(383, this.id)"><p>老實說，香港做鮑魚一般內臟都不會食，但其他東南亞地方如韓國日本處理鮑魚，連鮑魚肝都會食，你問我會否食，鮑魚肝我都很喜歡食，但食下去甘甘苦苦，未必個個人都接受到，當然我不建議連內臟都食，鮑魚拆乾淨鱔後洗多次，主要沖一沖洗乾淨後反轉去晾水，拿粉絲出來，粉絲的作用是吸鮑魚汁和煎底，鋪鮑魚，鋪之前用廚房紙或乾淨毛巾抹乾身。</p></a>
+				<a href="#00:07:39.58" id="00:07:39.58" class="lt" onclick="jumptoTime(459, this.id)"><p>做海鮮一個很重要步驟，因為不乾身腥味來源在這，鮑魚要蒸多久呢?大約半小時，有三隻手指的闊度，這類鮑魚蒸三分鐘便可，鋪好後水滾後拿去蒸，蓋上蓋子，計三分鐘，大家蒸了三分鐘，開了看看，現在熄火，拿起後倒水，燒熟油，盡量不要用炸過的油，用新油，將它慢慢淋上面，大家看到效果嗎?落豉油，簡單易做的清蒸鮑魚便完成。</p></a>
+				<a href="#00:08:55.70" id="00:08:55.70" class="lt" onclick="jumptoTime(535, this.id)"><p>大家最主要是怎樣清潔鮑魚的鱔，令鮑魚保留鮮味而無腥味，蒸的時間亦很重要，今日果皮清蒸鮑魚分享到此為止，喜歡食鮑魚的網友俾個LIKE我星星，訂閱我星星頻道，再分享這果皮清蒸鮑魚，今日分享到此為止，多謝大家收看，再見。</p></a>
+</div>
+	</body>
+</html>

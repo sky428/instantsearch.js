@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈 職人吹水〉 世界杯小食/點樣揀花生 炸花生竅門 潮式炸花生Fried Peanut</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0ofnmelLfA4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈 職人吹水〉 世界杯小食/點樣揀花生 炸花生竅門 潮式炸花生Fried Peanut</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.37" id="00:00:9.37" class="lt" onclick="jumptoTime(9, this.id)"><p>全部舀起，80-90度滾水，炸花生油溫，大家好，又係星星同大家分享下，星星，這兩包是什麼?一看便知道是花生，今日整兩包花生又煲湯?</p></a>
+				<a href="#00:00:43.62" id="00:00:43.62" class="lt" onclick="jumptoTime(43, this.id)"><p>花生除了煲湯還有很多用途，最直接方法是炸來食是最正，如果做炸花生，買什麼花生炸比較靚呢?</p></a>
+				<a href="#00:00:55.62" id="00:00:55.62" class="lt" onclick="jumptoTime(55, this.id)"><p>我這隻叫豬豆，買細粒豬豆炸是最香最靚，不要買大粒，大粒適宜用來煲湯，這類型細粒豬豆用來炸花生是最好，今日炸一包，臨炸前有什麼工序要做呢?</p></a>
+				<a href="#00:01:21.62" id="00:01:21.62" class="lt" onclick="jumptoTime(81, this.id)"><p>這個問題問得相當之好，我們在暖壺放80-90度滾水，浸5-6分鐘，有兩個作用，第一，幫它清潔，令灰塵釋出，第二，花生衣本身有少許膩味苦味，這段時間浸出來，浸了5-6分鐘後，大家看到水的色嗎?</p></a>
+				<a href="#00:02:1.62" id="00:02:1.62" class="lt" onclick="jumptoTime(121, this.id)"><p>這段時間倒起，隔水後用廚房紙抹乾身，最好吹一吹，現在開始炸，適量油，開火，炸花生油溫不要太高，大約用120-130度油溫，花生便可落去，落去後微微有泡出，保持油溫，慢慢加熱，不要心急，當油溫加熱過程中，將花生內的水份逼出來，保持中小火，慢慢炸，將花生推至稍為輕身，油溫會慢慢升高，約炸三分鐘後，推落去花生開始輕身，見到泡開始中間細密些，保持這油溫不用加大。</p></a>
+				<a href="#00:03:29.68" id="00:03:29.68" class="lt" onclick="jumptoTime(209, this.id)"><p>因為炸花生本身溫度很高，炸至夠橫色可起，炸約一分鐘，全程約炸了四分半鐘，推落去輕身，聞到花生的香味，花生稍為轉色便可起，如果炸到花生夠色才起便焦了，起後搓油，然後晾油，晾油當中，花生內本身仍在燒，有些滋滋聲，為何等花生一轉色便可起，因為花生內熱度仍在炸，將花生放在中間，將中間的花生放在中間，將中間的花生放在中間。</p></a>
+				<a href="#00:04:34.68" id="00:04:34.68" class="lt" onclick="jumptoTime(274, this.id)"><p>中間的花生便會燶了，花生攤到凍曬後才落鹽，灑少許鹽，花生熱時不要落鹽，現在食已經很脆，相當之脆口，這類型炸花生餐前小食一流，餸粥又一流，還有很多餡料都會用到炸花生，例如椰絲花生芝麻餡料，整碎花生，炒完糯米飯都要灑幾粒花生上面，今日炸花生分享到此為止，喜歡食炸花生的網友俾個LIKE我星星，訂閱我星星頻道幫我分享這潮州炸花生，下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>
