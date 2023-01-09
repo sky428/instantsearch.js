@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>溫故知新系列（中字CC重製版）——美極蝦製作全過程，以及解說如何處理蝦油的製作。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nmxKMV9SjRM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>溫故知新系列（中字CC重製版）——美極蝦製作全過程，以及解說如何處理蝦油的製作。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今晚又不知食咩食。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>行到街市，見到有蝦賣，有冰鮮蝦賣。</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>今晚不如就整美極蝦啦。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>於是乎我買咗一斤冰鮮蝦返嚟。</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>呢隻冰鮮蝦其實香港好普遍。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>都幾大隻蝦，差唔多去到中蝦水平。</p></a>
+				<a href="#00:00:42.00" id="00:00:42.00" class="lt" onclick="jumptoTime(42, this.id)"><p>都唔係好貴，40蚊。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>符合我嘅預算，即係一日餐費一家人餐費100蚊以內，OK嘅，40蚊。</p></a>
+				<a href="#00:01:1.00" id="00:01:1.00" class="lt" onclick="jumptoTime(61, this.id)"><p>大家唔知記唔記得上一次整滑蛋蝦仁都係用呢隻蝦。</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>今次我用美極蝦嘅時候，我攞近啲畀大家睇，要對焦下。</p></a>
+				<a href="#00:01:18.00" id="00:01:18.00" class="lt" onclick="jumptoTime(78, this.id)"><p>呢隻蝦我就好鍾意用嘅，貪佢呢個係平啦，第一個梗係要平啦。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>第二個就因為佢相對嚟講係新鮮嘅。</p></a>
+				<a href="#00:01:30.00" id="00:01:30.00" class="lt" onclick="jumptoTime(90, this.id)"><p>因為好多蝦返嚟冰鮮蝦有撈泡嘅方式唔一樣。</p></a>
+				<a href="#00:01:35.00" id="00:01:35.00" class="lt" onclick="jumptoTime(95, this.id)"><p>所以都會係有唔同嘅水準。</p></a>
+				<a href="#00:01:40.00" id="00:01:40.00" class="lt" onclick="jumptoTime(100, this.id)"><p>大家都可以睇到隻隻蝦身都好完整㗎，我求其拎一隻出嚟都好完整㗎。</p></a>
+				<a href="#00:01:47.00" id="00:01:47.00" class="lt" onclick="jumptoTime(107, this.id)"><p>咁美極蝦除咗係蝦係主要材料之外，介紹下一啲佐料啦。</p></a>
+				<a href="#00:01:55.00" id="00:01:55.00" class="lt" onclick="jumptoTime(115, this.id)"><p>幾粒蒜頭。</p></a>
+				<a href="#00:01:57.36" id="00:01:57.36" class="lt" onclick="jumptoTime(117, this.id)"><p>然後，蔥這裡有一束，其實放兩條就可以了。</p></a>
+				<a href="#00:02:1.86" id="00:02:1.86" class="lt" onclick="jumptoTime(121, this.id)"><p>然後，泰國紅眼椒，或者是指天椒，香港經常都有賣的。</p></a>
+				<a href="#00:02:7.86" id="00:02:7.86" class="lt" onclick="jumptoTime(127, this.id)"><p>指天椒，用一隻。</p></a>
+				<a href="#00:02:10.86" id="00:02:10.86" class="lt" onclick="jumptoTime(130, this.id)"><p>然後，這個是胡椒碎，醬油。</p></a>
+				<a href="#00:02:18.86" id="00:02:18.86" class="lt" onclick="jumptoTime(138, this.id)"><p>這個醬油，我拿一個醬油瓶來，貪圖一個醬油瓶，漂亮的。</p></a>
+				<a href="#00:02:22.86" id="00:02:22.86" class="lt" onclick="jumptoTime(142, this.id)"><p>我未至於高貴到用萬字醬油。</p></a>
+				<a href="#00:02:25.86" id="00:02:25.86" class="lt" onclick="jumptoTime(145, this.id)"><p>普通生抽來的。</p></a>
+				<a href="#00:02:27.86" id="00:02:27.86" class="lt" onclick="jumptoTime(147, this.id)"><p>然後，蠔油。</p></a>
+				<a href="#00:02:31.86" id="00:02:31.86" class="lt" onclick="jumptoTime(151, this.id)"><p>然後，老抽。</p></a>
+				<a href="#00:02:34.86" id="00:02:34.86" class="lt" onclick="jumptoTime(154, this.id)"><p>老抽我特別介紹一下，我比較喜歡用草菇老抽。</p></a>
+				<a href="#00:02:38.86" id="00:02:38.86" class="lt" onclick="jumptoTime(158, this.id)"><p>我相信職業廚房一定會用這隻的。</p></a>
+				<a href="#00:02:41.86" id="00:02:41.86" class="lt" onclick="jumptoTime(161, this.id)"><p>為什麼呢?貪圖它上色漂亮，味道相對比較順和，沒那麼容易酸。</p></a>
+				<a href="#00:02:48.86" id="00:02:48.86" class="lt" onclick="jumptoTime(168, this.id)"><p>材料很簡單，接下來就看看我怎樣做。</p></a>
+				<a href="#00:02:53.86" id="00:02:53.86" class="lt" onclick="jumptoTime(173, this.id)"><p>我暫時就不剪了，直接一鏡頭拍過了。</p></a>
+				<a href="#00:02:58.86" id="00:02:58.86" class="lt" onclick="jumptoTime(178, this.id)"><p>給大家看看我怎樣處理蝦先。</p></a>
+				<a href="#00:03:4.86" id="00:03:4.86" class="lt" onclick="jumptoTime(184, this.id)"><p>先放好東西。</p></a>
+				<a href="#00:03:13.40" id="00:03:13.40" class="lt" onclick="jumptoTime(193, this.id)"><p>首先呢，其實都不用說話了，拿一塊毛巾，因為那些聲盤，工作台是很滑的，針板放進去，所以我通常會剪一塊毛巾，今天又被人說我的針板，唉，真的沒辦法，大家給你看看，乾的，是這樣的顏色，濕的，是這樣的顏色，半濕半乾之間，就是這樣的顏色，為什麼我這裡會有白色的呢，因為我經常刮針板，如果不是經常刮針板的話，這裡就不會有白色的。</p></a>
+				<a href="#00:03:55.40" id="00:03:55.40" class="lt" onclick="jumptoTime(235, this.id)"><p>順便介紹一下，我這個針板差不多用了11年了，為什麼我可以用這麼久呢，為什麼很多的針板，我這個就是中式針板，用一棵樹的圓塊，劈出來的，裁出來的，這些是中式針板，絕大部分的香港人都是用這個針板，不要再說我的針板髒了，拜託，但是為什麼，我的針板可以用11年這麼久，為什麼有些人用幾個月，甚至最多都是用一兩年。</p></a>
+				<a href="#00:04:31.40" id="00:04:31.40" class="lt" onclick="jumptoTime(271, this.id)"><p>就會裂的呢，簡單來說就是，因為你不是經常進廚房嘛，針板不是經常濕的嘛，當它乾燥的那一刻，當那塊針板完全沒有水份的時候，針板就自然解體了，這個是中式針板必然會出現的現象，但是如果你經常進廚房，天天進廚房，天天都濕著針板的話，那塊針板是不可能裂的，只要有水養著它就不會裂的了，但是這一隻木。</p></a>
+				<a href="#00:05:2.40" id="00:05:2.40" class="lt" onclick="jumptoTime(302, this.id)"><p>我不記得這隻叫什麼木了，這隻木的特色就是，不沾水，乾的就是白色的，或者是木色的，濕了水就是黑色的，不要再說那塊針板，真的有點生氣了，今天又被兩個人罵了，就是濕了水就是黑色的，這是這種中式針板的百分之，就是，不要說上了年紀了，百分之八十以上的中廚，就是家廚都會用這隻針板，中式針板圓形的，整棵樹裁出來的。</p></a>
+				<a href="#00:05:39.40" id="00:05:39.40" class="lt" onclick="jumptoTime(339, this.id)"><p>OK，那我就不說那麼多了，再有人罵我都什麼的，又浪費了一點時間，分幾兩分鐘了，那我主要就想，一take個，就，讓大家看看我怎樣裁蝦，這隻是原隻蝦，用剪刀，然後呢，剪了它，剪了它的頭，由尾部一路剪，剪走它的腳，剪走它的腳，拿上來，OK，那麼，把蝦全部剪走，剪走它的刺，你先前看到我由尾部剪，由頭剪也可以。</p></a>
+				<a href="#00:06:39.93" id="00:06:39.93" class="lt" onclick="jumptoTime(399, this.id)"><p>其實沒所謂的，最重要是當時是就手，最重要是剪走它的蝦腳，這種蝦的尺寸，一斤即是600克，大概有20隻蝦，即是一隻蝦足有30克，差不多兩半重，都蠻重的，先剪走蝦頭，然後貼著蝦身，剪走蝦腳，這個步驟可以很快的，其實剪蝦，順手最重要是拿上手，其實沒有所謂的，前剪後剪，由前向前剪，由前向後剪，或者由後向前剪。</p></a>
+				<a href="#00:07:36.55" id="00:07:36.55" class="lt" onclick="jumptoTime(456, this.id)"><p>沒有所謂的，給大家看看，給大家看看，剪光蝦腳便可以了，為甚麼我要拿蝦殼呢，我待會炸蝦時，便會炸到蝦殼很脆，大家便可以連蝦殼食，其實蝦是一個很豐富的礦物質，除了蝦肉有蛋白質之外，即是有豐富的營養之外，本身我食蝦，很喜歡連殼食，即是煮一些連殼食的菜式，原因是因為蝦殼含有豐富的鐵質和蓋質，所以很多時候，尤其是我煮蝦，便不會煮其他食物。</p></a>
+				<a href="#00:08:27.55" id="00:08:27.55" class="lt" onclick="jumptoTime(507, this.id)"><p>即是不會去蝦殼，我連殼食一起，連殼食有一個好處，我待會炸的蝦油，我會拿回來用，蝦油，大家知不知道，其實是一個很好的味道，我不知道大家有沒有聽過，即是雞油炒飯，大家有沒有聽過蝦油炒飯，蝦油炒飯很棒的，日本還有特意有餐廳是拿蝦油，炸蝦油拿回來炒飯，那我就不浪費大家的時間，大家都看到我大概是怎樣剪蝦的。</p></a>
+				<a href="#00:09:4.55" id="00:09:4.55" class="lt" onclick="jumptoTime(544, this.id)"><p>我先關機，做其他步驟再開機，好了，先前剪完蝦，現在沖水，通常這些蝦不要用水浸，但需要用活水，即有流動的水沖洗，可以沖洗乾淨蝦表面的不乾淨物質，和沖走蝦的殘留，通常我開小水，大約沖洗十多分鐘，當水不透明，即有些混濁，然後變成接近透明或透明，即代表蝦乾淨，這是小小技巧，這次開機，我想給大家看看怎樣拍蒜頭、切蒜頭、剁蒜頭。</p></a>
+				<a href="#00:10:6.57" id="00:10:6.57" class="lt" onclick="jumptoTime(606, this.id)"><p>很多人拿手不成勢，我嘗試給大家看看，蒜頭不用太大力，只要正常的力度就可以，基本上我喜歡這樣用，一邊不放下刀，一邊用手就可以脫皮，輕輕拍一下蒜頭，蒜頭還可以保持原粒，這隻拍大力了，拍扁了，如果是原粒蒜子，我會用這樣，大家看到，其實拍蒜頭是很簡單的一回事，大家不需要太緊張，我亦看到很多人剁蒜頭，剁到四處都是。</p></a>
+				<a href="#00:11:1.09" id="00:11:1.09" class="lt" onclick="jumptoTime(661, this.id)"><p>這次我特意開機給大家看看，怎樣由原粒蒜頭，很快速地、很乾淨地變成蒜蓉，再說說，濕了水，砧板變成黑色，未濕水，這些部份是木色的，這些是砧板的特色，我不明白為何人們經常說我的砧板骯髒，大家看到嗎?</p></a>
+				<a href="#00:11:30.81" id="00:11:30.81" class="lt" onclick="jumptoTime(690, this.id)"><p>現在我先將蒜頭切成片，有這麼薄就切這麼薄，切得越薄的話，蒜頭越快越脆，將蒜頭切成片，是不是這樣?</p></a>
+				<a href="#00:11:53.20" id="00:11:53.20" class="lt" onclick="jumptoTime(713, this.id)"><p>我不明白為甚麼人們把蒜頭切成片片片，大家看到我切碎的時候，有沒有切成片片?</p></a>
+				<a href="#00:12:12.20" id="00:12:12.20" class="lt" onclick="jumptoTime(732, this.id)"><p>好了，當蒜頭差不多完成了，其實這個形狀，很多人都說是圓的，我喜歡切碎一點，這個時候，我輕輕地，不用把刀拋得太高，慢慢地，不斷地剁，我幫它配音，大家看到嗎?</p></a>
+				<a href="#00:12:37.20" id="00:12:37.20" class="lt" onclick="jumptoTime(757, this.id)"><p>整個蒜頭怎麼會…拍蒜頭，剁蒜蓉，怎麼會弄到到處都是呢?</p></a>
+				<a href="#00:12:42.20" id="00:12:42.20" class="lt" onclick="jumptoTime(762, this.id)"><p>而且，我這些，給大家看一下，我剁得很碎，OK?</p></a>
+				<a href="#00:12:48.20" id="00:12:48.20" class="lt" onclick="jumptoTime(768, this.id)"><p>我特意開視頻給大家看看，剁蒜蓉，剁得夠碎，和很乾淨，不會四處彈的方法，好，說回我們要有一個習慣，每次切完一樣東西，我都會刮一下砧板，因為我上次也說過，可以防止肉碎、異味，黏在砧板上，一久了，那時候真的會發霉、有細菌，好，然後我和大家，給大家看看，說一下關於醃料，即是調味料，這個美極蝦很簡單。</p></a>
+				<a href="#00:13:40.56" id="00:13:40.56" class="lt" onclick="jumptoTime(820, this.id)"><p>大約蠔油1茶匙，1茶匙蠔油，然後，2匙糖，然後豉油，豉油大約1茶匙半，豉油會多一點，1茶匙半，然後少許老抽，用來上色，大約1茶匙半至1茶匙，然後，加少許麻油，麻油大約一茶匙，或者不用一茶匙，都可以，視乎大家喜歡，然後最後加一匙生粉，加一匙生粉，然後，大概加十克至二十克，十克至二十克左右的清水，然後攪拌均勻。</p></a>
+				<a href="#00:15:2.63" id="00:15:2.63" class="lt" onclick="jumptoTime(902, this.id)"><p>好了，然後最重要是攪拌均勻，讓糖融化，讓它入味一點，還有讓生粉融入水中，基本上調味料就是這樣，其實味記蝦不是很複雜，這個簡單的菜式，我相信很多人都會做得好，差在水準的分別就是，待會炸蝦的時候，大家拿捏得準不準確，到底炸完之後，蝦殼是硬的，吃起來起渣，還是炸完之後，蝦殼一口咬下去，很快脆，一口兩口就碎了。</p></a>
+				<a href="#00:15:44.19" id="00:15:44.19" class="lt" onclick="jumptoTime(944, this.id)"><p>就是那種脆的口感，調味料就完成了，我給大家看一下，蝦的先頭，大家應該都聽到有水聲，我都說我是用清水，用活水沖蝦，千萬不要直接用水浸，用水浸的話，蝦味就會浸走，用活水浸的話，一邊開水，一邊流動，有好處就是可以令蝦身不乾淨的東西洗乾淨，另外，令蝦乾淨之餘，也不會容易流失養分，或者蝦味。</p></a>
+				<a href="#00:16:38.19" id="00:16:38.19" class="lt" onclick="jumptoTime(998, this.id)"><p>我給大家看一下，鏡頭入面看不看到?</p></a>
+				<a href="#00:16:43.14" id="00:16:43.14" class="lt" onclick="jumptoTime(1003, this.id)"><p>現在是清水的了，差不多了，我由開水到現在這個咪，應該有十分鐘了，是不是很清澈?</p></a>
+				<a href="#00:16:54.26" id="00:16:54.26" class="lt" onclick="jumptoTime(1014, this.id)"><p>去到這個程度，這樣洗蝦就對了，千萬不要用水浸，浸是不對的，是要用活水沖洗，職業廚房的說法就是用啤水，但我又不是開大水去啤，稍為令水有流動就可以了，現在蝦洗完了，然後我要做什麼呢?</p></a>
+				<a href="#00:17:27.26" id="00:17:27.26" class="lt" onclick="jumptoTime(1047, this.id)"><p>拿起蝦，這個步驟我都不剪，因為我覺得都頗重要的，現在這樣撈起蝦，我用篩的原因是可以隔水，然後拿一定數量的廚紙，炸蝦有沒有水是很重要的，因為大家都知道水和高溫的油的反應會爆炸，我以前很記得，我第一份工作，我去竹店做暑期工，那時候應該十四歲，我親眼看著竹店的油滾了一茶匙水，整個鍋子油都飛到四處。</p></a>
+				<a href="#00:18:35.82" id="00:18:35.82" class="lt" onclick="jumptoTime(1115, this.id)"><p>然後出來幾乎火速爆炸，連主廚都拖著我走，隔了一會才敢走進去，所以大煩炸東西，即是先炸一下，即是什麼都不加的情況下，要記住盡量要吸乾水分，否則有時間又懶又不想吸乾水分，就直接放乾水分，但需要的時間會比較長，現在這些廚子，我常說是廚房必備的消耗品，所以不要太過份，如果是職業廚房的話，他們會用勞巾。</p></a>
+				<a href="#00:19:29.66" id="00:19:29.66" class="lt" onclick="jumptoTime(1169, this.id)"><p>但家廚不可能特意做一塊生肉的毛巾，不用一陣子也會有細菌，難道每次都要洗嗎，不是方便 反而變成麻煩，摸一下蝦，還未乾 繼續擦，擦到感覺乾爽為止，就好像我們洗完澡擦身一樣，盡量擦乾，大家可以看到在鏡頭裏面，畫面裏面都可以看到，這些蝦剪成這樣，ians eller</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:17.98" id="00:20:17.98" class="lt" onclick="jumptoTime(1217, this.id)"><p>tenure，cushion，zione，HAEL，seem，Champions，уж，對唔到招喎，對到喇，俾大家睇下剪成咁，跟住完之後，因為呢 有蝦膏，所以張紙就變成紅色正常，千祈唔好驚，呢啲蝦，隻隻都爆膏喎，大家聽唔聽到個頭，個頭都係紅色嘅，證明隻隻蝦都係好好膏，等陣間我炸之後呢，我就特登要炸得香啲。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:46.29" id="00:20:46.29" class="lt" onclick="jumptoTime(1246, this.id)"><p>咁同埋呢，我要處理過啲蝦油之後呢，之後攞嚟撈麵食又好，炒飯又好炒菜都好，好香好香，所以大家千祈唔好睇少熟油，或者係，國語叫咩，小寬油，或者係，呢個係，廚師職業廚房，所講嘅叫做香油，或者係我哋平時，講嘅熟油千祈唔好睇少，呢啲咁嘅油萬年油，我成日都攞嚟係反而係，可以增加呢個蔥菜，嘅一啲風味，ok 乾淨啦。</p></a>
+				<a href="#00:21:26.29" id="00:21:26.29" class="lt" onclick="jumptoTime(1286, this.id)"><p>乾啦，我又熄機啦跟住然之後呢，下一步就炸下嘅，時候我再開機，好啦大家，就我而家呢就，已經係啲油已經夠高，所以我而家呢就，放蝦落去炸，大家看到蝦一遇到油就彈到到處都是，一般來說，炸東西，即是中廚來說，或者拉油，一般來說都是160度左右，但我們炸蝦就要稍為高溫一點，要去到180至200度左右，怎樣去測試呢?</p></a>
+				<a href="#00:22:25.57" id="00:22:25.57" class="lt" onclick="jumptoTime(1345, this.id)"><p>就是用一隻木筷子，乾的木筷子，稍為沾一沾水，然後放進油裡，然後它就會出泡，在筷子周圍出泡，炸到筷子快沒泡為止，就夠高溫，當然不是要炸到筷子全黑，另外一個方式，因為我們家廚不是經常開油鍋，我們也不會有專用的炸爐，一般來說，我們用鐵鍋，或者用鑊，我們就燒到油加鑊，少許起煙，剛開始開機的時候，大家應該都看到有少許起煙。</p></a>
+				<a href="#00:23:10.57" id="00:23:10.57" class="lt" onclick="jumptoTime(1390, this.id)"><p>這樣就對了，為什麼要這麼高溫呢?</p></a>
+				<a href="#00:23:17.57" id="00:23:17.57" class="lt" onclick="jumptoTime(1397, this.id)"><p>因為高油溫，一觸碰到蝦，因為我們家廚的油量不高，所以它會很急速降溫，我之所以用相對高溫度，原因是預防它急速降溫，導致炸得不夠透，現在蝦已經正常來說，現在這樣彎曲，給大家看看，彎曲了，其實已經熟了，但是我們還要炸多一會，讓油溫再...</p></a>
+				<a href="#00:24:7.95" id="00:24:7.95" class="lt" onclick="jumptoTime(1447, this.id)"><p>現在其實你聽聲音都知道的，其實油溫不夠高的，持續大火加熱，但是這個過程要不斷翻動，如果不是底下的蝦，因為碰到油鍋底就會燒焦的，不斷地翻動，稍微再炸久一點，那麼又會遇到一個問題了，上次滑蛋蝦仁，人們說蝦頭老了，怎樣怎樣，巴巴巴諸如此類，喂大哥，家廚不同職業廚房，我們不可能用極高溫短時間內去走油，所以在這樣的情況下。</p></a>
+				<a href="#00:24:48.55" id="00:24:48.55" class="lt" onclick="jumptoTime(1488, this.id)"><p>多多少少都會有一點點過熟的現象，但是過熟代表不代表蝦營養完全沒有了呢?</p></a>
+				<a href="#00:24:54.99" id="00:24:54.99" class="lt" onclick="jumptoTime(1494, this.id)"><p>當然不是了，麻煩學一下這個科學，最基本的科學知識，第二就是，過熟會不會令到蝦沒那麼彈口呢?</p></a>
+				<a href="#00:25:6.71" id="00:25:6.71" class="lt" onclick="jumptoTime(1506, this.id)"><p>當然不是了，只要你不是熟到乾爽的那種，蝦的彈牙口感依然會在，除非你的蝦本身就是霉的，OK，我不是想發牢騷，我是想特別指出，某一些烹飪上的謬誤，到底是不是真的呢?</p></a>
+				<a href="#00:25:29.19" id="00:25:29.19" class="lt" onclick="jumptoTime(1529, this.id)"><p>我只不過是純粹解釋一下，好了，這個時候呢，蝦的味道還差一點點，因為油溫不夠高，下油的高溫是很重要的，但是我先頭拿捏得不是很準，你說炸成這樣行不行呢?</p></a>
+				<a href="#00:25:52.91" id="00:25:52.91" class="lt" onclick="jumptoTime(1552, this.id)"><p>當然行啦，好吃的，不過蝦殼是不是炸到脆了呢?</p></a>
+				<a href="#00:25:58.91" id="00:25:58.91" class="lt" onclick="jumptoTime(1558, this.id)"><p>那就未至於了，所以現在這樣，大家不要介意我繼續這樣說，和不停地炸，記住，如果蝦不是炸到乾身，或者焗到乾身，本身蝦的彈牙口感依然會在，過熟，是不是走失了營養呢?</p></a>
+				<a href="#00:26:25.91" id="00:26:25.91" class="lt" onclick="jumptoTime(1585, this.id)"><p>當然不是了，這些是基本的科學知識，是不是?</p></a>
+				<a href="#00:26:31.79" id="00:26:31.79" class="lt" onclick="jumptoTime(1591, this.id)"><p>不過，最重要就是，其實都是那一句，所有的菜，看你想它最終達到什麼結果，或者你想，達到你自己想要的那種效果，譬如說，喂!那些蝦，我生蝦真的不行的，會肚子餓的，那我就只好煮熟一點，那我現在，我煮這個美極蝦，我為了要炸脆它的皮，那我就唯有，炸久一點，那，那怎麼炸到蝦夠呢?</p></a>
+				<a href="#00:27:5.11" id="00:27:5.11" class="lt" onclick="jumptoTime(1625, this.id)"><p>為什麼我不關機呢?</p></a>
+				<a href="#00:27:6.11" id="00:27:6.11" class="lt" onclick="jumptoTime(1626, this.id)"><p>我就是因為，我想給大家看一下，怎麼炸到，夠了，我不知道，視頻，影片，畫面，能不能拍到那種質感，能不能看到蝦，那些蝦殼，是不是有白色的，能不能看到，這些通常就是已經炸到夠新的結果，就是說你炸到蝦殼，有一點點白色，因為它的鈣質，因為高溫處理之後，都跑出來了，那所以呢，它就會有白色的，那這些蝦殼就對了，我就要。</p></a>
+				<a href="#00:27:43.99" id="00:27:43.99" class="lt" onclick="jumptoTime(1663, this.id)"><p>等下吃的時候，我連蝦殼一起吃的，好，那真的可以了，這個炸得漂亮了，看不看到，大家看不看到，那些白色的，蝦尾，尤其是蝦尾，OK，搞定，關火，OK，然後我們就，拿一隻碟，然後呢，就要拿，這個是，廚紙，用來做什麼呢，沾著碟底，用來吸油的，好了，蝦殼炸得好靚，大家見到蝦好黃，是嗎?</p></a>
+				<a href="#00:28:33.87" id="00:28:33.87" class="lt" onclick="jumptoTime(1713, this.id)"><p>因為這裡每隻蝦都有膏，所以炸出來的蝦油都特別黃，特別深色，好，現在把蝦拿出來後，我們要再開火，為什麼呢?因為現在的油還有很多水分，我都跟大家說過，要留一些油來用，用來做蝦油，所以現在就要再開火，大家都好鍾意食蝦子麵，係咪?</p></a>
+				<a href="#00:29:22.21" id="00:29:22.21" class="lt" onclick="jumptoTime(1762, this.id)"><p>咁蝦子麵點解咁鍾意食呀?</p></a>
+				<a href="#00:29:25.21" id="00:29:25.21" class="lt" onclick="jumptoTime(1765, this.id)"><p>因為佢嗰種蝦子嗰種特有嘅香味吖嘛，如果我炸完蝦之後，我再處理返啲蝦油濃縮一下，即係而家再開火再濃縮一啲，咁呢係攞嚟日後攞嚟撈米粉食呀或者撈麵食呢係好正嘅，大家千祈唔好嘥千祈話哎呀即係唔好話哎呀啲油老曬啦咁黃嘅咁紅嘅唔好要呀咁唔係，真係唔好嘥呀大佬天下美味好多時候就係啲下欄嘢，大家覺得唔係好睇得上眼嘅下欄嘢。</p></a>
+				<a href="#00:30:5.21" id="00:30:5.21" class="lt" onclick="jumptoTime(1805, this.id)"><p>咁呢而家係咪大家見到好多鋪呀係咪呀，咁呢因為佢仲有好多水份，咁而家呢我最主要我就燒到佢呢就嗰啲鋪呢就冇曬啦呢個時候呢見到有煙呀咁呢為咗呢唔好令到隻鑊燒壞啦亦都唔好令到佢太高溫啦，咁所以呢我就生細個火佢但係依然係搞嘅咁點為之處理好呢啲蝦油呢就係等到佢啲鋪有咁少得咁少咁就冇可能完全即係要好耐時間先完全處理好嘅，通常就係差唔多冇啦咁你其實你就可以收得火等佢如果慢慢將嗰啲水蒸氣呢迫埋返出嚟咁就會有一個好純淨嘅蝦油你留返嚟撈麵又好炒菜都好炒飯都更加正ok咁我都講過啦日本有餐廳有一間餐廳呢佢專門就係炸蝦油喂人哋要人哋嗰啲整蝦球出嚟咪去曬啲殼呀去曬啲頭嘅。</p></a>
+				<a href="#00:31:9.21" id="00:31:9.21" class="lt" onclick="jumptoTime(1869, this.id)"><p>佢係專門收呢啲咁嘅廚餘返嚟做咩呢炸蝦油落嚟話佢整個蝦油炒飯真係賣到佳之學問㗎ok，好啦!咁呢而家呢見到啦，啲泡係咪少咗呀?</p></a>
+				<a href="#00:31:26.12" id="00:31:26.12" class="lt" onclick="jumptoTime(1886, this.id)"><p>因為佢個高溫呀，逼咗個啲水蒸氣出嚟啦，咁點解我要咁做呢?</p></a>
+				<a href="#00:31:32.12" id="00:31:32.12" class="lt" onclick="jumptoTime(1892, this.id)"><p>一嚟要濃縮個啲蝦油，二嚟呢，少咗水份呢，個啲油就冇咁容易，可以擺耐啲嘅，大家記住囉，因為呢度嚟講呢，都足足有成700-6700cc，咁6-700cc嚟講呢，可以食好耐㗎啦，好啦!</p></a>
+				<a href="#00:31:52.12" id="00:31:52.12" class="lt" onclick="jumptoTime(1912, this.id)"><p>而家見到個泡係咪越嚟越少啦，越嚟越少呢，又見到有煙啦，我關細火都有煙，即係其實就好高溫㗎啦，呢個時候呢就差唔多得㗎啦，大家一定要搞佢喎，因為點解呢?</p></a>
+				<a href="#00:32:10.12" id="00:32:10.12" class="lt" onclick="jumptoTime(1930, this.id)"><p>搞佢係除咗係因為可以令到，個啲水蒸氣快啲揮發之外呢，仲有一個效果就係保護隻鑊，我咁樣搞佢呢，啲油呢就會潑起，喺個鑊邊嗰度就起到降溫嘅作用，同時間啲油可以受溫嘅作用，咁呢既可以保護住隻易潔鑊，同時間呢，亦都可以令到啲油呢，就更加濃縮，大家睇唔睇到?</p></a>
+				<a href="#00:32:36.12" id="00:32:36.12" class="lt" onclick="jumptoTime(1956, this.id)"><p>好!熄得火，咁大家記住囉，如果大家成日都睇我啲視頻呢，成日我好鍾意，即係整一樣嘢出嚟，就會整到第二樣嘢出嚟嘅，點解呢?</p></a>
+				<a href="#00:32:48.12" id="00:32:48.12" class="lt" onclick="jumptoTime(1968, this.id)"><p>呢個就係家廚必然嘅，即係個技藝或者係必然嘅做法嚟嘅，因為點解呢?</p></a>
+				<a href="#00:32:55.12" id="00:32:55.12" class="lt" onclick="jumptoTime(1975, this.id)"><p>家廚唔同職業廚房，可以去消耗好多嘅物資，同時間呢，其實呢就，都可以做到好多好嘅嘢，越係用得少材料去發揮更加多嘅變化出嚟，其實我哋可以慳到好多錢嘅，我成日都講我港產好窮，我老婆有病，收入我真係全職照顧佢，所以我冇乜收入，佢嗰度都要靠雙殘金去津貼，所以變咗我樣樣嘢都要慳，咁我而家我咁樣炸完蝦之後留返啲蝦油。</p></a>
+				<a href="#00:33:37.93" id="00:33:37.93" class="lt" onclick="jumptoTime(2017, this.id)"><p>而家係咪啲鋪冇曬，好香蝦味呀成個廚房都係蝦味好香，咁呢喺咁嘅情況之下呢，我就可以慳到錢，我而家呢個蝦油可以第二日攞嚟撈米粉食又一餐，我畀大家感受下我要炸到嗰啲蝦油幾脆，好熱，試下先，大家聽唔聽到我直接咬啲蝦殼直接食，要炸到有咁嘅效果先得嘅ok，跟住然之後而家熄機啦，要留返下一度炒蝦嘅時候我先開機啦。</p></a>
+				<a href="#00:34:24.93" id="00:34:24.93" class="lt" onclick="jumptoTime(2064, this.id)"><p>好啦大家咁先頭經過呢個炸完蝦啦，咁呢就而家燒完鑊啦，我開機之前已經燒咗鑊㗎啦，咁燒鑊嘅原因大家都知㗎啦講好多次，咁呢而家就開始進入炒啦，咁我起曬煙嘅夠曬夠曬溫度呀，咁就蒜蓉啦辣椒啦，把鑊煎，我都講過好多次，蒜蓉不要一落鑊就落其他料，這個時候我落些胡椒碎，我這個步驟特別不同，好多人會覺得會否需要爆一爆它呢?</p></a>
+				<a href="#00:35:19.48" id="00:35:19.48" class="lt" onclick="jumptoTime(2119, this.id)"><p>當然要啦，原因是我覺得胡椒碎爆一爆，會出一出香味，它的香味會更加濃郁，現在好香胡椒味，跟住這個時候我們就落些酒，又玩火，忍一忍它，然後就把煎到整好嘅汁放落去，記住我煎到有加水，加大約10-20cc就好，不要多，因為這樣可以快些入味快些收水，好，可以，這個菜很簡單，簡單到無人信，炒兩炒，差不多可以。</p></a>
+				<a href="#00:36:22.48" id="00:36:22.48" class="lt" onclick="jumptoTime(2182, this.id)"><p>跟住之後，我們把蔥花分成兩部分，前面蔥白部分拿來炒，剩下少少蔥身的部分，等下上碟時會剪碎，好香，基本上就完成了，完成了，一個美味的美極蝦就完成了，是不是很簡單?</p></a>
+				<a href="#00:36:55.90" id="00:36:55.90" class="lt" onclick="jumptoTime(2215, this.id)"><p>我之前煮的材料，時間比較長，但是炒起來，蝦就很簡單，如果現在的蝦是深色的，可以用老抽少一點，我自己習慣了手勢，就不太好，老抽我通常會用很多，這個就是一個美味的美極蝦就完成了，這個也是超級好送飯和超級好味的，這個時候，我給大家看一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:37:50.82" id="00:37:50.82" class="lt" onclick="jumptoTime(2270, this.id)"><p>빼 anci reflecting，highly suspect，karş，czas</p></a>
+				<a href="#00:37:55.52" id="00:37:55.52" class="lt" onclick="jumptoTime(2275, this.id)"><p>Half，답，прев，ried，X，ole，hinter</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:37:58.80" id="00:37:58.80" class="lt" onclick="jumptoTime(2278, this.id)"><p>OSE，оль，negócio，inki</p></a>
+				<a href="#00:37:59.18" id="00:37:59.18" class="lt" onclick="jumptoTime(2279, this.id)"><p>dang élé，çek grim，רת</p></a>
+				<a href="#00:37:59.64" id="00:37:59.64" class="lt" onclick="jumptoTime(2279, this.id)"><p>Insert，Hyun，아� squeeze</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:38:0.30" id="00:38:0.30" class="lt" onclick="jumptoTime(2280, this.id)"><p>workers，county，Pang turtle stud��도록，zobaczy，téc Johannes Sav Princeton terror Alice</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:38:0.46" id="00:38:0.46" class="lt" onclick="jumptoTime(2280, this.id)"><p>homelessness，viewpoint，MIC</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:37:57.90" id="00:37:57.90" class="lt" onclick="jumptoTime(2277, this.id)"><p>swallowed，ref，sytu，Feeling，moje，행，du</p></a>
+				<a href="#00:37:59.66" id="00:37:59.66" class="lt" onclick="jumptoTime(2279, this.id)"><p>prima，assemb uit，vedere，ibilidad，sunlight，medicines，Tyson，Dus，brows Sver application，fell pole，lying，call</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:38:1.12" id="00:38:1.12" class="lt" onclick="jumptoTime(2281, this.id)"><p>sorted，רוצ，et，加返光佢先啦，好，跟住然之後呢我哋灑啲蔥花上面，咁就完成啦咁呢，我呢個呢就比較深色啲但唔係因為我煮窿咗呀，係因為呢個落老抽落多咗啫，ok咁咪上埋啲蔥花上面咁就好靚㗎啦，咁一到，呢個係，咁就完成啦ok咁多謝大家，拜拜，先頭呢就因為隻碟嘅關係個測光呢就比較暗咗，少少呀咁所以呢而家我再重新再畀大家睇下。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:38:47.92" id="00:38:47.92" class="lt" onclick="jumptoTime(2327, this.id)"><p>嗰個，即係成色如何，咁呢就，應該ok掛，咁呀希望大家，即係有一個，好好嘅送飯嘅一度送啦咁呀唔講咁多啦，拜拜。</p></a>
+</div>
+	</body>
+</html>

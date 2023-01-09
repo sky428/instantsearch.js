@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>溫故知新(重製版中文CC字幕)——油泡龍躉球</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nT1jeEcYvG8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>溫故知新(重製版中文CC字幕)——油泡龍躉球</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.22" id="00:00:0.22" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，我是阿武，今天想和大家分享一道比較貴價的家常菜，也可以說是入得廚房出得廳堂，宴請朋友，其實這個也算是不錯的選擇，那是什麼呢?就是油泡班球，不知道大家有沒有聽過油泡的做法，一般來說油泡有什麼呢?</p></a>
+				<a href="#00:00:31.22" id="00:00:31.22" class="lt" onclick="jumptoTime(31, this.id)"><p>油泡班球，今天介紹的，也有油泡田雞，也有油泡鮑魚，鮮鮑魚，一般來說，我們選擇油泡魚片也可以，譬如說一些淡水魚，例如桂魚，桂花魚，或者是比較實肉的海魚，例如石斑，這個油泡班球，今天我就升級了一點，我不是用班球，我用什麼呢?</p></a>
+				<a href="#00:01:8.22" id="00:01:8.22" class="lt" onclick="jumptoTime(68, this.id)"><p>就是用龍躉，一般來說街市的龍躉肉已經開好了，當然，淡淡肉，它的特性是什麼呢?</p></a>
+				<a href="#00:01:22.22" id="00:01:22.22" class="lt" onclick="jumptoTime(82, this.id)"><p>皮比較有嚼勁，不可以太熟，一熟的時候，皮就很硬，媽媽都不認得，感覺就好像大家去吃了，突然間說到出口，翠玉鯇魚，那些皮，如果是過老的話，就很硬，媽媽都不認得，它的好處就是淡淡肉，肉質比較結實一點，不會有霉味，一般來說，做班球的龍躉球，比較適合做油泡，也比較適合用來紅燒或者炆，切法方面，雖然說它是球。</p></a>
+				<a href="#00:02:6.22" id="00:02:6.22" class="lt" onclick="jumptoTime(126, this.id)"><p>但一般來說，不可以太大塊，我會切一個長方形，給大家看看我切成怎樣，除了主菜，主角就是龍躉球之外，還有什麼呢?還有九王，九王在油炮的菜式裏面，九王是一個頗重要的配角，還有蔥，也有薑片，也有紅蘿蔔，紅蘿蔔我大概用三分一條，三分一條用來做什麼呢?</p></a>
+				<a href="#00:02:46.72" id="00:02:46.72" class="lt" onclick="jumptoTime(166, this.id)"><p>用來做點磚和點味，OK，一個西蘭花，一般來說都是用西蘭花做半碟，好看兼且爽脆好吃，OK，芫茜我用一條兩條尾裝飾，上碟的時候，當然高級一點的，你可以做花、雕花那些，這個就是宴會的要求，但一般來說我們炒好之後，有個西蘭花半碟其實已經很漂亮，一般我們如果宴請朋友的話，這道菜式都是不錯的，介紹完這個原料之後。</p></a>
+				<a href="#00:03:27.48" id="00:03:27.48" class="lt" onclick="jumptoTime(207, this.id)"><p>就看看我怎麼做了，好了，先介紹完這個材料，現在就看看我們怎樣去處理魚塊，這個斑球或者龍躉球，通常大凡是這個水產類，不論是田雞也好，魚塊也好，基本上調味的方式都是很接近的，首先這個魚塊的時候，我們醃魚塊要放薑片，為了美觀，薑片就切成菱形或者長方形，小塊薄片，炒出來就會好看一點，其實醃魚塊就很簡單。</p></a>
+				<a href="#00:04:21.48" id="00:04:21.48" class="lt" onclick="jumptoTime(261, this.id)"><p>這裡有一斤魚肉，一斤的魚塊，已經切好了，鹽就一茶匙，糖就一茶匙，雞粉就半茶匙，通常大家看到我放雞粉都是輕輕的，就不會放太多，OK，然後胡椒粉，胡椒碎或者你們喜歡用胡椒粉，我喜歡用胡椒碎，然後就麻油，麻油，放多少就看個人的要求，然後就醋酒，醋酒大概半茶匙就夠了，喜歡酒味重一點的就可以放一茶匙，基本上調味就是這麼多。</p></a>
+				<a href="#00:05:38.05" id="00:05:38.05" class="lt" onclick="jumptoTime(338, this.id)"><p>不需要太多，然後最重要的就是生粉，生粉有什麼用呢，生粉可以令到它滑一點，然後就攪拌均勻，我自己一樣，我比較喜歡用手套，我之前都解釋過為什麼，用手去醃東西的手感好很多，我經常都說，其實烹飪是真的要用盡五官六感，OK，醃肉的標準是怎樣才算是醃得好呢?</p></a>
+				<a href="#00:06:27.87" id="00:06:27.87" class="lt" onclick="jumptoTime(387, this.id)"><p>我經常說的，不過我都不厭其煩，就是要醃到水分不見了，肉類吸收了水分，值得一提的是，我經常說醃肉要加水，但醃魚肉，魚塊就不用加水，因為魚塊本身的水分已經很豐富，再加上有酒和麻油，這些都有水分，洗完之後，不是完全沥乾，都是有水分的，你看到鮮魚頭還是有水分的，現在我加水，就已經沒有水分了，生粉和水都被魚塊吸收了。</p></a>
+				<a href="#00:07:15.87" id="00:07:15.87" class="lt" onclick="jumptoTime(435, this.id)"><p>然後就拌勻，拌到沒有水分，表面有些膠狀就可以了，然後就加油，這個程序叫做封油，這樣就完成了，然後放進冰箱冷凍一個小時就完成了，大家晚上好，先頭已經介紹了油爆龍躉球，或者油爆班球的材料，現在就看看怎樣做，我們先把配菜焯熟，配菜就是西蘭花，西蘭花很多人說白焯健康一點，或者怎樣，但通常白焯沒有什麼味道。</p></a>
+				<a href="#00:08:13.12" id="00:08:13.12" class="lt" onclick="jumptoTime(493, this.id)"><p>我們怎樣可以兼顧到白焯的健康，又可以減少煎炒的熱氣呢，我通常在加水之前，我就拿兩粒蒜頭或者加上薑，爆一爆鍋，然後有少許油，然後再加水，爆香過的油加水再煮西蘭花或蔬菜，就會帶有一種炒菜的香味，但同時間就沒有那麼熱氣，西蘭花就不用煮很久，通常就看你喜歡吃爽口一點，還是軟身一點，如果你是兼顧的話。</p></a>
+				<a href="#00:09:9.12" id="00:09:9.12" class="lt" onclick="jumptoTime(549, this.id)"><p>我們有一個界線分，全滾就軟一點，小滾就是中度的爽，放下去差不多滾的時候，那個就為之最爽口，這個時候通常如果是飛完水再炒的話，我就會用最爽口的程度，但現在做拌菜，我不打算炒了，所以我就弄軟一點，又要注意，雖然西蘭花爽口一點就好吃一點，但要注意如果家裏有老人家，或者直上有老人家的話，西蘭花就不適宜太爽。</p></a>
+				<a href="#00:09:55.12" id="00:09:55.12" class="lt" onclick="jumptoTime(595, this.id)"><p>現在都小滾了一會，大滾了，OK 搞掂，然後我們就做油爆班球，先處理完配菜，然後我們就要處理班球，油爆班球不是用來煎的，是要走油的，所以燒一燒鍋，稍微見微煙之後，然後我們就要放油，油可以放多一點，待會煎完之後油多了的，可以拿回去，大家還記不記得油爆和煎的分別在哪裏，除了油多和油少的分別之外，最重要的一個分別就是。</p></a>
+				<a href="#00:10:48.62" id="00:10:48.62" class="lt" onclick="jumptoTime(648, this.id)"><p>放肉的時候和放肉之後，控制火候的分別，如果是油爆或者走油的話，走油的話，現在是在說走油和煎，走油就是一直保持高溫，利用高溫快速去燒熱食物，肉類的表面，但是要保持肉心的嫩滑，如果是煎的話，是慢火慢慢煎，慢慢由外煎到內熟，OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:26.62" id="00:11:26.62" class="lt" onclick="jumptoTime(686, this.id)"><p>大家看到我的魚是醃得很乾的，所有的肉類都是，如果是要做走油或者是，就算走不走油都好，都是要醃到比較乾身的，這樣才有利於肉在高溫之下，快速地去煎香表面，如果是煎水的話，就很容易因為降溫，變了就不好，同一個道理，就是一放進鍋裏不要理它，不要理它，由它煎到一邊就焦香，魚比豬牛快熟，最快熟的一定是魚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:28.35" id="00:12:28.35" class="lt" onclick="jumptoTime(748, this.id)"><p>然後是牛，然後是豬，所以在處理的時候，在態度上、概念上，我們是有一點分別的，魚我就比較快熟，如果鹽呢，因為魚太快熟，所以你怕它熟的時候，你就可以拿起鍋子，拿起鍋子來一來，這樣就可以幫助它降溫，當然另一個就是，麻煩快一點，像我現在這樣慢吞吞的話，那些魚就真的熟了，如果是魚身太過熟的話，大家都知道。</p></a>
+				<a href="#00:13:12.35" id="00:13:12.35" class="lt" onclick="jumptoTime(792, this.id)"><p>太過熟的話，那個嫩滑就沒有了，就會開始粗糙，大家看到的，魚是不是很快，表面就已經有些焦香了，煎魚一樣，不可以太熟，現在基本上有些焦香了，可以開始離鑊了，我們選一些比較焦香比較厲害的，我們先拆起它，因為份量多的時候，鑊的受熱不平均，所以有些會焦一點，有些就沒那麼焦，煎到有焦香感的話，焦香感越重的話。</p></a>
+				<a href="#00:14:21.03" id="00:14:21.03" class="lt" onclick="jumptoTime(861, this.id)"><p>它的風味就越佳，不是天鵝，是酒友啊!OK?</p></a>
+				<a href="#00:14:44.12" id="00:14:44.12" class="lt" onclick="jumptoTime(884, this.id)"><p>因為有些不夠高溫的話，肉會比較熟，熟了，要看顏色，如果不焦，就算了，其他部份都已經OK了，處理完魚肉走油後 進入下一個程序，接著要爆料頭 進入合成鍋，大家看到我已經燒了一會才開機，開始起微煙，因為走油的魚肉有油份 所以不用放太多油，然後再起煙，先放薑片 大家看到我已經切成菱形，這樣看上去好看一點。</p></a>
+				<a href="#00:16:9.37" id="00:16:9.37" class="lt" onclick="jumptoTime(969, this.id)"><p>有時候我們煮菜好不好看或好吃，好不好吃最主要 但也要看好不好看，好不好看有時候我們要切不同形狀，油爆班球或龍躉球我會放兩粒蒜頭，但如果是油爆田雞或鮑魚我就不需要，然後放蔥白，青蔥的部份我留著 等下我會剪碎，然後放紅蘿蔔 紅蘿蔔片，然後放蔥 蒜 薑，現在爆香，然後放醬油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:11.59" id="00:17:11.59" class="lt" onclick="jumptoTime(1031, this.id)"><p>然後放芝麻，放一點酒，如果鍋夠溫度的話，表面會很容易引火，為什麼我強調有火的出現呢，因為如果火能夠在表面走遍全身的話，鍋氣就會自然地走出來，炒飯球不用太久，然後放韭黃，這個時候我們要放少許調味，雖然只炒的話 肉本身是有味的，但是想多一點味道，放少許蠔油，大概一茶匙，然後放少許生抽，因為蠔油和生抽見到火。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:28.59" id="00:18:28.59" class="lt" onclick="jumptoTime(1108, this.id)"><p>會產生一個很特別的香味，因為蠔油其實大家都知道，蠔油是會提鮮的，因為它本身其實都是海鮮的一種，有些海鮮我們買回來，品質不太好的時候，我們就需要用蠔油去提升它的鮮味，好了 我都說了，油炮飯球不用炒太久，好了 這樣就完成了，給大家看看這道菜的質感，OK 這樣大家可以看到的，很脆，很柔滑。</p></a>
+				<a href="#00:19:28.60" id="00:19:28.60" class="lt" onclick="jumptoTime(1168, this.id)"><p>而且這道菜相對比較貴，製作過程也不算太複雜，但要注意的是炒的時間不能太長，這樣才能保持嫩滑，一道油泡龍躉球便完成了，希望大家喜歡今晚的製作，這道菜式可以做宴會用，多謝大家。</p></a>
+</div>
+	</body>
+</html>

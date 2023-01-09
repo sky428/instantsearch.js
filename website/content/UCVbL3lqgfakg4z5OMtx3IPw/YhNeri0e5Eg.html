@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》節日菜系列——火焰蝦，客人不但有美食，還可以玩埋一份！這是一道簡單、眾樂、惹味共冶一爐的菜式，最適合節日一家人齊齊整整一起玩！(但我因為貪心而幾乎失敗了。請留意最後總結！)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'YhNeri0e5Eg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》節日菜系列——火焰蝦，客人不但有美食，還可以玩埋一份！這是一道簡單、眾樂、惹味共冶一爐的菜式，最適合節日一家人齊齊整整一起玩！(但我因為貪心而幾乎失敗了。請留意最後總結！)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>好喇，大家晚安!今晚食好西!</p></a>
+				<a href="#00:00:5.20" id="00:00:5.20" class="lt" onclick="jumptoTime(5, this.id)"><p>左邊燒另一隻蟹，差唔多得㗎啦，咁，喂，我呢隻兜搞咩呀?</p></a>
+				<a href="#00:00:13.70" id="00:00:13.70" class="lt" onclick="jumptoTime(13, this.id)"><p>本來我諗住攞出廳玩嘅，不過呢，因為我一單人操機，我費時拎嚟拎去啦，呢嘢，所以呢，今日呢，我就同大家呢，就喺呢度呢，呢個窩居呀，分享啲咩嘢呢?火焰蝦!</p></a>
+				<a href="#00:00:30.34" id="00:00:30.34" class="lt" onclick="jumptoTime(30, this.id)"><p>咁食蝦呢，好多嘅唔係煮蝦，就係咩呀?就係呢個，即係焯蝦咁樣炒蝦，唔好咁悶啦，醒下玩下呢個火焰蝦，咁呢，其實呢，我呢個呢就好簡單嘅，唔係好複雜嘅啫，咁呀，首先呢，就搵一隻受到熱嘅玻璃兜啦，呢個蟹得囉，差唔多，我再焗一焗佢先啦，等我一陣啦，郁一郁佢先，反轉佢，等我一陣啦，好啦，咁呢。</p></a>
+				<a href="#00:01:17.74" id="00:01:17.74" class="lt" onclick="jumptoTime(77, this.id)"><p>唔好理嗰個，咁呢，火焰蝦呢，大家就聽得多啦，到底係點樣做嘅呢?</p></a>
+				<a href="#00:01:22.86" id="00:01:22.86" class="lt" onclick="jumptoTime(82, this.id)"><p>咁樣其實呢，就好簡單嘅啫，首先呢，洗乾淨蝦，跟住之後，倒咗落一隻可以承受高熱嘅，呢個係玻璃兜入面，跟住然之後呢，嘩，呢個係咩?二鍋頭，咁呀，係咪一定要用二鍋頭呢?就唔一定嘅，最緊要係佢夠嗰個度數要夠高，二鍋頭係56度嘅，咁所以呢，我哋就用二鍋頭啦，咁呢，蝦呢，大概倒佢，300ml左右。</p></a>
+				<a href="#00:01:59.72" id="00:01:59.72" class="lt" onclick="jumptoTime(119, this.id)"><p>跟住然之後呢，我哋而家呢就，開房啦吧，好，這樣就點燃它，然後，哎，關火了，等等，哎，這個水比較麻煩，因為酒已經放在下面，要一直攪拌蝦，酒要揮發出來才可以著火，否則就不著火，大隻果頭，你客多果頭，唯有再倒多少少酒落去啦，咁呢我呢度大概已經到咗300秒啦，一直興住佢呀即係等佢嗰啲火呢就著，大家看到的，火一直在燒。</p></a>
+				<a href="#00:04:8.11" id="00:04:8.11" class="lt" onclick="jumptoTime(248, this.id)"><p>其實就等於直接燒蝦的樣子，蟹就完成了，先關火，直接放到另一邊，大家看到火水沒有碰到蝦，之所以著火是因為酒精，其實這個火焰蝦很簡單的，不會很複雜的，ok?</p></a>
+				<a href="#00:05:9.73" id="00:05:9.73" class="lt" onclick="jumptoTime(309, this.id)"><p>唯一就是你要保持酒精要著火，當然了，人家在酒樓的蝦不是很大隻的，而且通常來說就是半鍋左右，ok?</p></a>
+				<a href="#00:05:29.73" id="00:05:29.73" class="lt" onclick="jumptoTime(329, this.id)"><p>即是這一盤來計算，等一會兒，我還是拿筷子穩陣，其實煮食有很多種方法，不是只有一種，最緊要保持一直着火就可以了，因為我怕它熄火，所以才不斷地用火槍去燒它，不是因為我要燒蝦，OK，我先移動一下鍋子，因為我經常都是燒死那邊，咁點解話火焰蝦呢咁多人想食呢其實呢個原因呢就係因為呢，火焰蝦呢佢嗰個即係溝咗嗰啲酒味呀同埋呢佢嗰個生熟程度呀ok咁其實呢火焰蝦呢就唔係全熟嘅。</p></a>
+				<a href="#00:07:21.36" id="00:07:21.36" class="lt" onclick="jumptoTime(441, this.id)"><p>有少少輕輕有少少生嘅嘩嗰種咁嘅即係嗰種咁嘅爽口呢嘩真係不得了呀，咁咪當然啦個前提就係你哋大家真係鍾意食先啦係咪呀即係食得到飲得到走先啦因為呢佢嘅酒精濃度都幾高下嘅，咁咪大家見到呀我一翻開呢嗰啲酒精一有個溫度呢佢就即刻會自己著㗎啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:48.70" id="00:07:48.70" class="lt" onclick="jumptoTime(468, this.id)"><p>Uhr，stink，cri witар，response，adult，nails，arnt，validation，��，�시，Sar，ultura，Besides，�리，logo，iencia，Umm，мо，depuis，plant，solidarity，أ，我們� pog，ожно，PTS，textures。</p></a>
+				<a href="#00:08:3.76" id="00:08:3.76" class="lt" onclick="jumptoTime(483, this.id)"><p>Ik，sanct sekali，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，咁咪當然啦我先頭都講啦因為呢我呢度足足有兩斤蝦嚟嘅咁變咗呢其實個份量呢就比較多呀咁如果呢我想佢呢係即係，燒得好啲㗎其實我要落好多酒㗎咁但係呢我而家呢就落好少嘅啫因為點解呢屋企裏面呢有人唔係咁受得咁所以呢我就輕手啲啦，同埋呢而家其實我今一次呢就比較貪心咗呀咁如果你話即係火焰蝦嚟講呢其實用細隻少少嘅蝦呢就會更加好嘅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:46.43" id="00:08:46.43" class="lt" onclick="jumptoTime(526, this.id)"><p>我而家呢已經搞到個蝦頭都甩埋出嚟呀手都軟埋而家呢因為我我嗰個呢就唔係咁就手呀等陣呀我轉一轉先咁我就手啲呢，喂HelloWaitressWaiter幫我拎出去攤啦唔該唔該大家等我一陣呀因為我轉一轉先好唔就手呀呢邊，好咁我而家再重新再開始過呀大家唔係覺得好麻煩呀其實唔麻煩㗎而且呢如果我哋呢係即係喺屋企玩嘅話呢即係喺出面聽呀飯廳裏面玩嘅話呢，仲正仲開心係咪一家人幾難得呀一齊煮飯仔呀大家睇到㗎我一叫開啲蝦呢嗰啲酒精揮發咗出嚟點到點到火呢佢就即刻會著㗎啦。</p></a>
+				<a href="#00:09:56.43" id="00:09:56.43" class="lt" onclick="jumptoTime(596, this.id)"><p>我哋一定要咁樣料佢喎嗰啲火先會著㗎喎因為呢要嗰啲酒精揮發咗出嚟呢點到火呢先至會著㗎喎ok，蝦差不多可以了，這個不可以懶的，一定要不斷地撈蝦，否則酒精就不能揮發出來，這樣就不會著火，大家看到嗎?</p></a>
+				<a href="#00:10:43.42" id="00:10:43.42" class="lt" onclick="jumptoTime(643, this.id)"><p>我每一次撈出來就會著火，如果不撈出來就不會著火，咁呀呢個中秋節呢就可以玩下嘢啦係咪呀，就唔使咁悶啦唔使話白焯蝦咁樣，我真係有啲，有啲咩呀，大家睇唔睇到呀其實呢佢如果佢一直著火嘅話呢我只要一撩開佢呢，嗰啲酒精一揮發到出嚟呢佢就會著火㗎啦，真係，手都，軟埋呀大家就識就識，跟住我一撩佢佢就會著㗎啦。</p></a>
+				<a href="#00:11:36.64" id="00:11:36.64" class="lt" onclick="jumptoTime(696, this.id)"><p>火焰貓呢樣嘢好玩呀，咁我可以呢如果呢即係大家一家人嘅話呢可以，叫呢個，來賓呀，即係玩埋一份都得嘅，大家睇唔睇到，我一撩佢佢好似就識就識咁但係我一撩佢呢佢就會著㗎啦，差唔多全熟啦，其實都有技巧㗎喎呢個呢個筷子太長，太太咩啦，我攞隻筷子短嘅，係啦佢完全識曬火呢就唔掂啦，等一等。</p></a>
+				<a href="#00:12:54.46" id="00:12:54.46" class="lt" onclick="jumptoTime(774, this.id)"><p>這個時候酒精都揮發得差不多了，所以再加些酒，嘩!真的整瓶二鍋頭用光了，真的不省，大家看到嗎?</p></a>
+				<a href="#00:13:8.06" id="00:13:8.06" class="lt" onclick="jumptoTime(788, this.id)"><p>表面有酒精濃度夠高的話，它就立刻著火，所以這個火焰蝦，它貴在酒貴，蝦可以很便宜，好，關掉它，再攪拌一下，這些蝦已經熟得差不多了，不過這些蝦被我攪拌得散了，好，繼續攪拌，其實火焰蝦真的不可以貪心，第一個份量不可以多，第二就真的要放酒 放得很厲害，好了 我再放最後的那些，全部放下去。</p></a>
+				<a href="#00:15:16.99" id="00:15:16.99" class="lt" onclick="jumptoTime(916, this.id)"><p>差不多了，好了，真的熟透了，這個時候已經足夠溫度了，我們就開始蓋上蓋子，再焗一焗，嘩，好熱啊，焗一焗，然後我們就做下一步工夫，做什麼呢?</p></a>
+				<a href="#00:16:4.14" id="00:16:4.14" class="lt" onclick="jumptoTime(964, this.id)"><p>當然是要讚我們的即食豉油，首先先燒火，我介紹一下，蝦的時候如果是馬上開的，很簡單，蒜蓉、辣椒、蔥花，然後怎樣呢?</p></a>
+				<a href="#00:16:32.14" id="00:16:32.14" class="lt" onclick="jumptoTime(992, this.id)"><p>加一匙糖，然後我等一下就灒熟油進去，現在差不多可以燒到鑊了，然後我們就放油，記住不要以為我們做這個是贊熟油，都不需要是背口訣，一樣要背口訣 大火燒鑊，然後見煙落油，然後就直接倒入糖，好，等我一會兒，這個蝦很正，擺靚仔少少，希望大家睇下，呢個時候我係咪加咗糖，首先我地倒大概20ml左右嘅冷或者暖嘅開水，跟住我地先至倒生抽落去。</p></a>
+				<a href="#00:18:37.17" id="00:18:37.17" class="lt" onclick="jumptoTime(1117, this.id)"><p>咁樣就可以令到啲豉油冇咁鹹，同埋帶少少甜，好，呢個味道就差唔多，等我睇下先，可以再加少少生抽，咁呢個啞媽豉油呢就已經係好鮮㗎啦ok，就唔會好鹹嘅，咁等陣間呢我再開機呢，我再同大家分享呢即係擺好少少位呀，跟住之後先至同大家分享同埋總結下呀，好啦大家咁呢呢個火焰蝦，ok呀先頭呢因為我太過貪心咁就其實呢，大家呢可以係兩斤呢係分兩次玩嘅。</p></a>
+				<a href="#00:19:32.03" id="00:19:32.03" class="lt" onclick="jumptoTime(1172, this.id)"><p>賓客嚟到我哋即席呢可以喺枱面度玩呢樣嘢嘅，咁就兩斤每次一斤呢就唔會好似我先頭咁樣，了結佢都了唔熟都唔著火因為呢其實呢，火焰蝦本身呢你一料佢呢只要有少少火苗呢，嗰啲酒精一揮發咗出嚟佢就即刻會著火㗎啦ok，先頭呢我之所以係料極都好似唔著火呢個原因呢，就係因為呢第一我太貪心一次過落曬兩斤，第二呢就係因為呢我呢就係sorry呀唔好意思呀。</p></a>
+				<a href="#00:20:9.03" id="00:20:9.03" class="lt" onclick="jumptoTime(1209, this.id)"><p>繼續咁呢第一呢就因為我太貪心啦就落曬呢個，係一兩斤落去我料唔起啦咁咪第二呢就係因為呢，我嗰個蝦呢買返嚟太大隻咁就唔好買咁，大隻呢就其實普通平平地嗰個基圍蝦呢就，最好嘅ok得唔得咁呀呢個呢通常嚟講就，十分鐘到呢就有得食㗎啦即係但係呢你，燒完佢之後呢即係等佢燒完之後你見到，佢差唔多熟曬啦係咪咁呢就要過一個佢。</p></a>
+				<a href="#00:20:44.03" id="00:20:44.03" class="lt" onclick="jumptoTime(1244, this.id)"><p>其實呢而家呢個呢係好熱㗎咁我而家咁，樣整落去呢起碼都超過七十度以上㗎，喇即係淨係講緊個邊邊喎個心一定唔，止嘅咁所以呢啲蝦呢就剛剛好熟嘅放心，呀咁呀第一啦你睇下啲蝦熟唔熟呢，就係佢變紅啦咁咪第二呢佢呢埋一舊呢，咁就一定得㗎啦好啦咁呀跟住落嚟呢就，整完囉呀咁我個蝦嘅豉油係點開呢嗰個，豉油呢你要開個蝦嘅時候呢就係好簡單。</p></a>
+				<a href="#00:21:15.03" id="00:21:15.03" class="lt" onclick="jumptoTime(1275, this.id)"><p>㗎啫蒜蓉辣椒蔥即時開跟住讚熟油，加少少糖落去跟住溝少少嘅白開水，滾又好熱又好冷嘅都好，跟住然之後呢你哋大家呢就可以，即係再加呢，就係呢個係生抽落去，咁呢，呢個豉油嘅鮮味同鹹度，甜度就剛剛好嘅，我哋啱啱就一流下，咁呢我個女呢就，投訴過，佢話你呢個火焰蝦酒味太重係呀其實呢個火焰蝦本身呢，就係最蝦嘅。</p></a>
+				<a href="#00:21:47.96" id="00:21:47.96" class="lt" onclick="jumptoTime(1307, this.id)"><p>呢個係變種嚟嘅大家都見到啦我先頭落咗，落咗足足呢，足足呢500秒嘅，魚窩頭呀，所以呢嗱佢下面呢如果鍾意飲嗰啲呢下面嗰啲湯精華嚟嘅，蝦水再加埋啲酒，咁但係其實呢因為先頭燒咗嘛所以佢揮發咗好多嘅，所以呢大家食嘅時候一定要咬呢個蝦嘅豉油，咁呢就絕配啦ok得唔得，咁咪希望大家鍾意我呢個做法啦咁呀其實呢，呢個做法呢。</p></a>
+				<a href="#00:22:25.84" id="00:22:25.84" class="lt" onclick="jumptoTime(1345, this.id)"><p>係可以即係，玩下嘢嘅，咁同埋呢最緊要就係，我唔需要用爐呀嘛，係咪呀，我唔需要用其他爐直接擺個枱面直接點火燒就係啦係咪呀，係咪好玩呀，賓客又得娛樂，又得睇，食落去我同大家講呀呢日蝦呢，呢個火焰蝦呢，係爽口過你就咁，白焯蝦嘅，因為始終佢真係有火喺佢表面，就形成唔同嘅，Ok好唔好，唔阻大家啦。</p></a>
+				<a href="#00:23:0.66" id="00:23:0.66" class="lt" onclick="jumptoTime(1380, this.id)"><p>整完之後梗係要迎賓啦等啲客人去食嘢啦ok，係咁呀希望大家鍾意呢個菜式呀中秋節可以玩下嘅，不過要記住喎，唔好學我咁貪心喎，唔好買咁大隻蝦喎，唔好一次過兩斤落曬個兜嗰度可能要逐斤逐斤嚟㗎喎ok得唔得，好啦係咁啦。</p></a>
+				<a href="#00:23:21.40" id="00:23:21.40" class="lt" onclick="jumptoTime(1401, this.id)"><p>希望大家鍾意啦多謝大家收看拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《廣東話影片》節日菜系列——蒜子蒸龍躉腩，一道酒樓味道的經典家常菜，製作簡單，味道清甜又啖啖肉，大家快來試下製作吧。</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 't5-Z0JGknrA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《廣東話影片》節日菜系列——蒜子蒸龍躉腩，一道酒樓味道的經典家常菜，製作簡單，味道清甜又啖啖肉，大家快來試下製作吧。</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello， 大家晚上好!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日簡直是晴天霹靂!</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>本來今日要安裝冷氣， 誰知今日落雨， 無得安裝冷氣。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>派旗信宴最快都要今個星期六， 真係慘呀! 還有六日捱!</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>今日都要食飯， 做了這麼多餐涼菜， 唯有都要做些熱飯。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>今日我想同大家分享一個香港名菜， 或者一個比較有特色的菜。</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>大家見到好大塊是什麼? 龍躉腩!</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>今日呢塊龍躉腩有1斤11兩， 有少少大骨， 因為大骨位特別好味。</p></a>
+				<a href="#00:01:2.00" id="00:01:2.00" class="lt" onclick="jumptoTime(62, this.id)"><p>1斤11兩， 四個人食， 邊度食得哂?</p></a>
+				<a href="#00:01:7.00" id="00:01:7.00" class="lt" onclick="jumptoTime(67, this.id)"><p>所以我打算分兩餐， 一餐我做蒜子蒸龍躉腩。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>大家去海鮮手家會食， 但在家很少有人做， 因為好似唔知點樣做。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>今日我同大家分享這個菜。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>呢塊龍躉腩要分兩餐食， 除了蒜子蒸龍躉腩外，我亦會同大家分享一個有特色的健康菜， 蟲草花雲耳蒸龍躉腩。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>可以蒸魚? 當然可以， 不過就後話了。</p></a>
+				<a href="#00:01:50.00" id="00:01:50.00" class="lt" onclick="jumptoTime(110, this.id)"><p>我現在要處理龍躉腩， 龍躉腩買回來後一定要沖洗，因為我解釋過好多次， 臭腥味不是魚的味道， 是因為有二線菌。</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>為了清除二線菌， 一定要用猛水沖洗， 用手搓表面。</p></a>
+				<a href="#00:02:13.00" id="00:02:13.00" class="lt" onclick="jumptoTime(133, this.id)"><p>我現在戴住手套， 搓到感覺好清爽， 不會滑滑的， 這樣就對了。</p></a>
+				<a href="#00:02:22.00" id="00:02:22.00" class="lt" onclick="jumptoTime(142, this.id)"><p>沖洗完， 大家要記住， 臭腥味不等於鮮味， 一定要預先處理好。</p></a>
+				<a href="#00:02:29.00" id="00:02:29.00" class="lt" onclick="jumptoTime(149, this.id)"><p>這時候我們開龍躉腩， 要預先切球，所以切的時候要先切一條條。</p></a>
+				<a href="#00:02:45.00" id="00:02:45.00" class="lt" onclick="jumptoTime(165, this.id)"><p>龍躉腩的特色是什麼呢? 油脂豐富， 皮非常好， 又有骨膠原。</p></a>
+				<a href="#00:03:0.00" id="00:03:0.00" class="lt" onclick="jumptoTime(180, this.id)"><p>所以龍躉腩好吃就好吃在這裡， 大概一寸多一點， 每一條先切條。</p></a>
+				<a href="#00:03:13.00" id="00:03:13.00" class="lt" onclick="jumptoTime(193, this.id)"><p>因為龍躉通常要吃的不是沙巴龍躉， 沙巴龍躉是人工養殖的。</p></a>
+				<a href="#00:03:23.00" id="00:03:23.00" class="lt" onclick="jumptoTime(203, this.id)"><p>我手上這塊是深海龍躉， 通常活了一把年紀， 切的時候皮比較硬， 但吃的時候就很有趣。</p></a>
+				<a href="#00:03:36.00" id="00:03:36.00" class="lt" onclick="jumptoTime(216, this.id)"><p>我現在切的這部分， 全部都是淨肉， 沒有骨， 但肚子這部分有骨。</p></a>
+				<a href="#00:03:49.00" id="00:03:49.00" class="lt" onclick="jumptoTime(229, this.id)"><p>這部分是骨架。</p></a>
+				<a href="#00:03:52.45" id="00:03:52.45" class="lt" onclick="jumptoTime(232, this.id)"><p>因為它的皮比較硬，所以切的時候要用力一點，切到下面。</p></a>
+				<a href="#00:03:59.45" id="00:03:59.45" class="lt" onclick="jumptoTime(239, this.id)"><p>大家聽到刀聲，即是切下去的那一下刀聲，都知道這個是沒有骨的。</p></a>
+				<a href="#00:04:4.45" id="00:04:4.45" class="lt" onclick="jumptoTime(244, this.id)"><p>這個有骨的了。</p></a>
+				<a href="#00:04:12.45" id="00:04:12.45" class="lt" onclick="jumptoTime(252, this.id)"><p>大家聽到嗎?</p></a>
+				<a href="#00:04:14.45" id="00:04:14.45" class="lt" onclick="jumptoTime(254, this.id)"><p>這個要處理的時候，我們要小心一點。</p></a>
+				<a href="#00:04:18.45" id="00:04:18.45" class="lt" onclick="jumptoTime(258, this.id)"><p>最好是橫切，切斷它的骨。</p></a>
+				<a href="#00:04:24.45" id="00:04:24.45" class="lt" onclick="jumptoTime(264, this.id)"><p>不然吃的時候，會有很大條很長的骨。</p></a>
+				<a href="#00:04:35.45" id="00:04:35.45" class="lt" onclick="jumptoTime(275, this.id)"><p>基本上這個已經切好了。</p></a>
+				<a href="#00:04:38.45" id="00:04:38.45" class="lt" onclick="jumptoTime(278, this.id)"><p>切好後，就算是做同一件事，有空就要換一轉刀刮砧板。</p></a>
+				<a href="#00:04:51.45" id="00:04:51.45" class="lt" onclick="jumptoTime(291, this.id)"><p>這是入廚的好手勢。</p></a>
+				<a href="#00:04:54.45" id="00:04:54.45" class="lt" onclick="jumptoTime(294, this.id)"><p>然後切大概一吋見丁方。</p></a>
+				<a href="#00:05:0.45" id="00:05:0.45" class="lt" onclick="jumptoTime(300, this.id)"><p>因為它的肉是厚的，所以會變成長條形。</p></a>
+				<a href="#00:05:4.45" id="00:05:4.45" class="lt" onclick="jumptoTime(304, this.id)"><p>然後頂部會黏著魚皮，底部全部都是肉。</p></a>
+				<a href="#00:05:11.45" id="00:05:11.45" class="lt" onclick="jumptoTime(311, this.id)"><p>切班球，即是切球炒球，都是這樣切法。</p></a>
+				<a href="#00:05:29.31" id="00:05:29.31" class="lt" onclick="jumptoTime(329, this.id)"><p>咁呢度好多肉嘅但係我一次過撈曬㗎啦咁，撈完之後呢就一半就攞嚟做呢個係，蒜子蒸龍躉腩啦另一半呢就攞嚟，聽日呢就攞嚟呢就蒸呢個係，蒸呢個係蟲草花雲耳，蒸龍躉腩呢一個呢大家就，比較少聽呀蒜子蒸龍躉腩呢你去海鮮酒家一定有得食嘅，點解要即刻要掛針板呢因為呢嗰啲肉呀，係會係有啲肉嘅末呢就攝咗落針板嗰度啦，另外呢其實呢嗰個二線菌呢亦都會黐咗。</p></a>
+				<a href="#00:06:13.31" id="00:06:13.31" class="lt" onclick="jumptoTime(373, this.id)"><p>落個針板嗰度嘅馬上掛呢佢就唔會食得咁入㗎啦，咁呢就可以保持嗰個針板嘅衛生呀針板嘅衛生呢就唔係因為，咩嘢呀唔係因為嗰個顏色ok，好啦嗱咁呢個時候呢我哋就，蒜子啦咁呀蒜子呢個葉葉呢個係，龍躉腩嘅時候呢我就有掛啲薑片呀，大家睇到嘅，咁呀我哋家廚呀即係基本上，有咩刀就用咩刀就唔會話好似職業廚房，咁呢即係有咁多嘅專業工具幫手嘅ok。</p></a>
+				<a href="#00:07:1.31" id="00:07:1.31" class="lt" onclick="jumptoTime(421, this.id)"><p>所以呢我哋呢為咗要，即係勿盡其用呀我哋有陣時候呢啲薑呢即係古靈精怪嘅形狀，我哋都照用嘅咁呀唔同話即係即係，職業廚房啦因為佢搵錢吖嘛所以呢佢哋就切得好靚啦咁呀，切薑片切少少薑片，手套呢，戴住手套呢好鬼麻煩，我已經切穿左個手套啦，其實我唔係好鍾意戴手套做嘢嘅，不過呢，因為我預左等陣間要醃呀，我要攞手醃呀。</p></a>
+				<a href="#00:07:41.13" id="00:07:41.13" class="lt" onclick="jumptoTime(461, this.id)"><p>所以呢，就一定要戴手套，我之前都解釋過啦，點解啦，即係手套，係因為呢，戴手套醃嘢呢，係因為我用手，然之後呢，嗰啲醃料呢，就久久不散嘅，ok，嗱，咁呢，將呢個薑片開半，跟住然之後斜切，咁呀，盡量少少啦，少粒啦變成，ok，嘩，好鬼熱，冇冷氣呀，好慘呀真係，好，嗱，咁呀，完左啦喎，洗一洗把刀先，等陣呀。</p></a>
+				<a href="#00:08:31.13" id="00:08:31.13" class="lt" onclick="jumptoTime(511, this.id)"><p>嘩，好鬼熱呀，等陣，我抹一抹汗先，真係，我背肌本身呢，我個人就好大汗嘅，跟住然之後，再加上冇冷氣，吹住風扇都唔掂呀，好喇，嗱，咁呢，就，我哋跪完砧板洗完刀啦，咁呀，抹一抹個砧板先，我都講過好多次㗎啦，呢個亦都係除咗個砧板之外，亦都係我嘅工作台呀，好，跟住呢，呢個呢就到到呢個係關鍵時刻㗎啦，咁呀，大家，家廚見到我呢個作為垃圾袋嘅購物膠袋呢。</p></a>
+				<a href="#00:09:17.13" id="00:09:17.13" class="lt" onclick="jumptoTime(557, this.id)"><p>大家就唔好介意啦，ok，咁呀，我再close up少少啦，集中啲吓，大家，嗱，咁呀，薑片啦，魚啦係咪，跟住然之後呢，嗱，呢度呢，我預先呢，就煎咗啲蒜油，ok，煎咗啲蒜油，咁呀，呢度嘅油大概係三茶匙到啦，ok，咁然之後呢，你當佢麻油就得㗎啦，麻油咁用就得㗎啦，ok，跟住然之後呢，我哋就將呢個蒜子蓮油呢。</p></a>
+				<a href="#00:09:49.13" id="00:09:49.13" class="lt" onclick="jumptoTime(589, this.id)"><p>就撈咗佢落去，咁呢個係當麻油咁用嘅，蒜子蒸龍躉腩呢係一道非常之簡單嘅餸嚟嘅，不過呢就大家想像唔到到底點做嘅啫，ok 好啦跟住然之後呢除咗蒜油之外，咁就落少少麻油啦，啲樽就用曬啦，好跟住然之後呢，我哋落乜嘢呢，落呢個係，呢個成斤嘅兩斤嘅，我哋都差唔多一斤十一兩呀，咁所以呢我哋落少少嘅鹽去調味啦，咁就一一斤多少少啦ok。</p></a>
+				<a href="#00:10:34.76" id="00:10:34.76" class="lt" onclick="jumptoTime(634, this.id)"><p>跟住然之後糖啦又係啦一斤多少少啦，跟住然之後呢就落胡椒粉啦，胡椒粉，我就落胡椒碎啦ok，咁大家可以落胡椒粉啦，跟住然之後呢，就落生粉啦，熱到我自己都唔知想講乜嘢呀，大家想像一下，我而家呢個頭頂呢，係嬲住塊毛巾嘅，搞唔搞笑呀，冇辦法真係，好跟住然之後兩斤嘅生粉啦，跟住然之後呢，落少少嘅燒酒啦。</p></a>
+				<a href="#00:11:18.55" id="00:11:18.55" class="lt" onclick="jumptoTime(678, this.id)"><p>基本上醃龍躉腩就係咁多，重覆ingredient就係有薑片啦，預先炒好咗嘅蒜油啦，連埋一個原粒蒜子啦，跟住鹽、糖、豆粉、胡椒粉、麻油，就係咁多啦，落少少酒 輕輕，Ok 好，呢個時候呢，因為佢都幾多嘅，為咗要撈開呢，咁我就要落少少水啦，Ok 大概係20至30ml左右啦，好 呢個時候呢。</p></a>
+				<a href="#00:11:50.55" id="00:11:50.55" class="lt" onclick="jumptoTime(710, this.id)"><p>我哋就開始撈囉，蒜子蒸龍躉腩呢，其實呢 最基本嘅係乜嘢呢，即係大家都見到我材料好簡單啦，係咪呀，做嘢都好簡單啦，最主要就其實你係要煎嗰個蒜油嘅啫，其他嘅嘢呢就，冇咩大不了，Ok，一般嘅海鮮類嘅醃法，Ok，而家呢，好香嘅酒味啦，同埋好香嘅蒜油味啦，咁呢 呢個就係，呢個蒜子蒸龍躉腩嘅基本嘅醃法，而呢個醃法呢。</p></a>
+				<a href="#00:12:31.55" id="00:12:31.55" class="lt" onclick="jumptoTime(751, this.id)"><p>亦都係海鮮酒家，專業廚房嘅醃法嚟嘅，Ok，所以呢，呢個係宴會菜之餘呢，見得下人之餘呢，亦都係好好味嘅，大家跟住我呢個方法做呢，就保證大家呢係可以食得出係酒樓嘅味道，海鮮酒家嘅味道，就唔會腥啦，亦都好惹味啦，Ok，咁呢個我先頭都講啦，可以作為節日菜嘅，因為佢都頗貴呀，呢度呢我買咗成兩百蚊㗎啦已經，為何今天我這麼富貴呢?</p></a>
+				<a href="#00:13:9.71" id="00:13:9.71" class="lt" onclick="jumptoTime(789, this.id)"><p>因為我女兒的朋友上來吃飯，我打算做三人菜，酸泥白肉、蒜子蒸龍躉腩，然後做絲瓜湯，有些肉吃，而且實在太熱了，所以我不想再玩火了，我想有一個星期我都玩不了火，因為實在太熱了，沒有冷氣，大家看到了，我拌一拌，為何我要跟大家說話呢?</p></a>
+				<a href="#00:13:41.71" id="00:13:41.71" class="lt" onclick="jumptoTime(821, this.id)"><p>因為我要讓大家看到質感的變化，大家有沒有留意質感的變化?</p></a>
+				<a href="#00:13:46.71" id="00:13:46.71" class="lt" onclick="jumptoTime(826, this.id)"><p>才是有水的，現在拌魚肉、雞肉、牛肉、甚麼肉都好，記住，唯一的法則就是拌到有水變沒水，保證肉一定入味，現在我稍為再拌一拌，現在已經很乾身了，最後當然要封油，好了，現在封好油了，封好油之後，我就不理它了，放進冰箱，大概一個小時左右，之後就可以用了，然後呢，我今天就用部分的來做蒸蒸籠燉腩，同樣的，我拌了這麼多的。</p></a>
+				<a href="#00:14:38.99" id="00:14:38.99" class="lt" onclick="jumptoTime(878, this.id)"><p>另外一半呢，我明天呢，即是下個星期，有另一條影片呢，我就做這個松草花雲耳蒸籠燉腩，又貴氣又健康，好不好?</p></a>
+				<a href="#00:14:50.91" id="00:14:50.91" class="lt" onclick="jumptoTime(890, this.id)"><p>下一個short見了，很簡單的，最主要的部分已經完結了，下一個部分就是看看我怎樣蒸，和看看後期怎樣製作，ok?</p></a>
+				<a href="#00:15:2.19" id="00:15:2.19" class="lt" onclick="jumptoTime(902, this.id)"><p>好啦，大家，這樣就先看完怎樣開魚、怎樣醃魚了，那現在呢，我們就煲了滾水了，那現在呢，我們就放下去蒸一下，那蒸這個籠燉腩呢，當它是一般魚的蒸法就可以了，不用太過計較的，最重要的是，我們盡量放下去的時候呢，即是放在碟子上的時候呢，盡量不要讓它疊得太高，這樣呢，基本上就和魚沒有分別的，ok?</p></a>
+				<a href="#00:15:36.19" id="00:15:36.19" class="lt" onclick="jumptoTime(936, this.id)"><p>好，這個時候呢，我們放了下去之後呢，我們就調這個是，9分鐘就可以了，如果是怕9分鐘熟的那一邊呢，那8分鐘以下吧，如果是怕不夠熟呢，就調到10分鐘吧，ok?</p></a>
+				<a href="#00:15:56.19" id="00:15:56.19" class="lt" onclick="jumptoTime(956, this.id)"><p>一般蒸魚都是差不多這個時間的，那等一下蒸好了之後，再給大家看一下那個效果如何了，好啦，終於9分鐘鐘響了，那我們就關火先，看一下那個效果如何了，嘩，白雪雪，是不是很正呢?</p></a>
+				<a href="#00:16:17.19" id="00:16:17.19" class="lt" onclick="jumptoTime(977, this.id)"><p>先調暗一點，不然呢，看不到那個質感，基本上就是這樣了，這些汁就不用倒的，可以用的，那接下來呢，還有一個步驟，我們這個蒜子蒸龍躉腩呢，就完美了，就複製到這個海鮮酒家的味道了，好，等一下下一個鏡頭見，好啦，現在就輪到最後一個步驟了，那我們就放一些...啊...</p></a>
+				<a href="#00:16:53.14" id="00:16:53.14" class="lt" onclick="jumptoTime(1013, this.id)"><p>蔥下去啦，那我呢...一樣啦，我喜歡吃，所以呢，我們就放多一點下去，OK，好，然後呢，我們就將這個已經燒紅了的油，就倒下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:11.94" id="00:17:11.94" class="lt" onclick="jumptoTime(1031, this.id)"><p>好，跟住我哋就淋啲豉油上面，因為我醃嗰陣時其實唔係好鹹㗎咋，因應大家嘅口味就可以放多少少嘅生抽落去，因為本身已經有魚汁喺度，所以我哋唔需要好高級嘅蒸魚豉油，咁呢個味道就已經可以還原海鮮酒家嘅味道，ok 得唔得，先頭睇到我點樣撈 點樣開，最緊要呢 呢個蒜子蒸龍躉腩，最緊要嘅就係你要先煎咗呢個蒜子油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:20.68" id="00:18:20.68" class="lt" onclick="jumptoTime(1100, this.id)"><p>原粒蒜子 ok，咁煎到佢金黃，咁基本上收火 再等佢降一降溫，煎埋佢金香呢，咁就ok㗎啦，咁呢個蒜子油就倒埋落去一齊去醃，ok 醃料好簡單㗎啫，鹽糖 ok 胡椒，鹽胡椒 跟住生粉 蒜子油，跟住就冇啦 係咁多啦，咁就撈好咗之後呢，蒸完呢 而家呢個味道，雖然龍躉腩就死魚嚟嘅 ok，但係呢一個咁嘅蒸法。</p></a>
+				<a href="#00:18:57.78" id="00:18:57.78" class="lt" onclick="jumptoTime(1137, this.id)"><p>絕對食落去淡淡肉，金香 肥美，因為點解呀，呢個蒸龍躉腩呢，其實佢最好食呢就嗰啲油脂呀 ok，得唔得，嗱 咁呢個係好簡單嘅酒樓菜嚟嘅，咁呀 只有 都係嗰句說話啦，只有你想不到 唔會有你做不到嘅，呢個菜呢，簡單 得體 大方，出得廳堂 入得廚房 ok，得唔得 ok，咁唔講啦 喂，肚餓呀 食飯啦。</p></a>
+				<a href="#00:19:29.78" id="00:19:29.78" class="lt" onclick="jumptoTime(1169, this.id)"><p>Bye Bye 呢個真係好正㗎，雖然佢唯一就係貴咗少少囉 ok，大家可以試下節日菜，唔好淨係齋，成日都話清蒸魚咁樣，呢啲淡淡肉真係好正㗎 ok，好 Bye Bye。</p></a>
+				<a href="#00:19:43.68" id="00:19:43.68" class="lt" onclick="jumptoTime(1183, this.id)"><p>希望大家鍾意啦。</p></a>
+</div>
+	</body>
+</html>
