@@ -47,6 +47,7 @@ const menu = connectMenu<{ container: string }>(
 
 export const topics = menu({
   container: '[data-widget="topics"]',
-  attribute: 'categories',
+  //attribute: 'categories',
+  attribute: 'playlist_title',
   limit: 10,
 });
