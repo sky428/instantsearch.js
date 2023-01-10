@@ -4,7 +4,7 @@ import { formatDistanceToNow } from 'date-fns';
 
 type Hit = {
   //slug: string;
-  objectID: string;
+  id: string;
   //primary_category: {
     //slug: string;
     playlist_title: string
@@ -27,7 +27,7 @@ type Hit = {
 };
 
 const getBlogPostUrl = (hit: Hit) =>
-  `https://charming-malabi-744fc4.netlify.app/content/${hit.channel_id}/${hit.objectID}.html`;
+  `https://charming-malabi-744fc4.netlify.app/content/${hit.channel_id}/${hit.id}.html`;
 
 function createHit(hit: Hit, { isHighlighted, refinedCategory }) {
   //const author = hit.coauthors && hit.coauthors[0];
