@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉聖誕燒雞 燒火雞 燒春雞 簡單易做黃金燒雞 當中技巧 聖誕快樂Christmas roast chicken</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ENNG1Y2DXOk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉聖誕燒雞 燒火雞 燒春雞 簡單易做黃金燒雞 當中技巧 聖誕快樂Christmas roast chicken</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>聖誕快樂，大家好又係我星星同大家職人吹水，大家好，咁，睇咗咁多材料，仲要為煲雞湯添呀，片頭都寫咗啦因為臨近聖誕節，咁我祝各位網友，聖誕快樂先，咁我自己就相當之，懷念往事呀細個嗰陣聖誕節啦屋企人帶我哋就係食啲，聖誕大餐呀，甚至乎我自己出嚟做嗰陣時呀，我都會做啲港式聖誕大餐，咁我聖誕大餐當中呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.84" id="00:00:55.84" class="lt" onclick="jumptoTime(55, this.id)"><p>火雞又唔少得㗎喇，如果我哋屋企做呀人少整一隻火雞呢就真係食唔曬，咁今日呢做呢個方法啦，不單止可以用嚟做火雞，冰鮮雞新鮮雞，甚至乎，春雞都可以，點解買咗春雞唔整呀，其實呢啲西式烹調呢整春雞都係唔錯㗎，不過，我個女兒話唔鍾意食春雞呀咁我又返埋聲落去買返隻冰鮮雞上嚟整呀，做法都係一樣。</p></a>
+				<a href="#00:01:32.18" id="00:01:32.18" class="lt" onclick="jumptoTime(92, this.id)"><p>冰鮮雞買到返嚟啦我哋要攤到軟身，跟住落水，咁我哋落返兩個湯匙到呀淡鹽水落去，30分鐘先，咁浸緊過程之中呀咁我哋因為，改咗嗰啲腳出嚟啦，呢啲腳呢啲位呀我哋剪呀我哋唔好剪低呀我哋剪上高，啱啱上高呢個價位呢度呀我哋剪落去，如果唔係呀你燒完出嚟呀佢都係一趟上去呀你又成隻腳就唔好睇呀，西式做法呀咁我哋呢邊都係一樣呀。</p></a>
+				<a href="#00:02:13.12" id="00:02:13.12" class="lt" onclick="jumptoTime(133, this.id)"><p>咁我哋都教佢就剪落去，咁咪呢啲高呀就全部都唔好要畫曬出嚟，咁樣可以留返去㗎喎，有啲咩用呀，雞油樽把有冇聽過呀練啲雞油，好在練豬油嗰個方法咋嘛咁我有個有條影片我都好似整過，咁樣我哋就要將裏面雞肺嗰啲位呀，全部，話通佢，做西式嗰啲呢就好少西餐師傅呢會同你講呢啲呀，如果我哋呢中式烹調嗰啲雞呢我哋又會咁樣做，雞頭呢個位咁我哋買喺度剪咗佢啦。</p></a>
+				<a href="#00:02:56.57" id="00:02:56.57" class="lt" onclick="jumptoTime(176, this.id)"><p>慢慢剪，呢啲位呀呢度咁樣剪一剪，兩隻手呀得㗎，咁咪可以用保鮮紙包返起佢攞嚟煲湯呀擺返喺雪櫃，冰格，用淡鹽水浸佢做咩呀我成日都強調呀，特別係做啲西式嗰啲春雞呀，一定要用淡鹽水浸，咁我可以同大家分享一樣嘢啦我嗰陣時，做酒店嗰陣時呀，咁我哋會試餐㗎嘛，攞咗啲春雞出嚟幫你試呀，咁我又咬咗一啖。</p></a>
+				<a href="#00:03:47.25" id="00:03:47.25" class="lt" onclick="jumptoTime(227, this.id)"><p>咁咪咬咗一啖呢，咁我就真係擺喺冇食呀跟住嗰個試餐嗰個呢佢就話，春雞，好嘢嚟㗎星星，好嘢呀但係我食到有雪味呀所以我就就試一啖就算啦就唔好，一個論點就係話呢你幾靚嘅食材都好呀你原本你做得唔好呢你咪嘥，差咗囉聽埋嗰隻春雞呀發過嚟呀有出細緻添呀有條雞無送嘅，咁大家係先都睇到啦嗱頸嗰啲位我再揸執佢呀，呢啲高呢啲啦我哋咪展埋出嚟呀。</p></a>
+				<a href="#00:04:29.49" id="00:04:29.49" class="lt" onclick="jumptoTime(269, this.id)"><p>同頭先嗰啲，雞黃油一齊留返起嚟點雞油呀呢啲呢啲位呀呢一雞呢就真係相當之，黃油呀，雞係用呢啲位呀喺管理啲位呀我哋都抆埋出嚟㗎，都係唔係好乾淨呀呢啲清理曬先，咁雞我哋有得佢再浸一浸佢先咁而家你攞返其他嗰啲材料出嚟，咁多材料呀係呀，三寶呀，咁畀三寶更加好係點樣呀，四寶，咁畀四寶更加好五寶。</p></a>
+				<a href="#00:05:11.21" id="00:05:11.21" class="lt" onclick="jumptoTime(311, this.id)"><p>西式五寶呀呢個叫做，今日就好高興呀就買咗條有泥嘅台北呀咁我呢啲就特別開天，咁我哋就刨曬皮，洗乾淨佢先，我今想刨曬皮咁樣我哋留返個尾呀點解呀一陣間就會同大家講呀，我哋細咁呀，我哋就，將所有最粗嘅稱為呢個跑曬，雖然我攞嚟醃肉用途，但係醃完肉呀，你可以食得返㗎嘛，唔好嘥呀啲嘢，咁我跑曬之後呢。</p></a>
+				<a href="#00:05:48.83" id="00:05:48.83" class="lt" onclick="jumptoTime(348, this.id)"><p>咁我自己有一個，好嘅方法呢就係話呢，即係杜著最粗嗰啲，咁樣，C出嚟，呢啲咪C曬佢啦，我呢啲都係，我哋再試一試佢，最粗嗰啲，C曬出嚟呀，咁我揚充我哋係咪曬啲衣佢咁呀切咗咁ok呀，咁我呢三個洋蔥呀個時候婆送畀我㗎喇，咁樣當然都唔係話啲乜嘢特別好㗎但係我哋都唔緊要嘅，咁我哋，張面頭嗰兩陣。</p></a>
+				<a href="#00:06:24.93" id="00:06:24.93" class="lt" onclick="jumptoTime(384, this.id)"><p>咩咗佢，中間嗰啲呀，都好靚㗎，所有材料清洗乾淨佢之後呀咁我哋就，抹返乾隻手揸刀呀嘛，咁我哋嗰啲安頭位呀都要企你乾淨㗎，第一就衛生啦第二你切嘢嗰陣時，都唔會咁容易受傷，咁我哋又全部切曬條呀咁就得㗎，都唔理喎，咁我哋又攤返開去啦，咁我切條，都係，幾樣，香料，咁未到呀嘛咁我切咗咪擺埋邊呀，洋蔥又係。</p></a>
+				<a href="#00:07:18.13" id="00:07:18.13" class="lt" onclick="jumptoTime(438, this.id)"><p>咁我哋就全部切粗條，洋蔥就可以落多少少嘅，甚至乎我之前做茶餐廳呀咁我都係用呢個方法，去業我自己嗰啲，雞髀雞翼呀當然我哋做茶餐廳呢就會落埋啲中式調味料呀，西勤，打場咁樣切，全部打場咁樣切，呢條都係，香料，備用，大家睇到呀其實仲有幾塊月桂葉嘅咁我哋就洗埋佢就擺埋一齊啦，咁我哋攞返個器皿出嚟個器皿呢一定要係可以浸到隻雞嘅。</p></a>
+				<a href="#00:08:13.17" id="00:08:13.17" class="lt" onclick="jumptoTime(493, this.id)"><p>咁樣又擺啲秘製嘢落去呀大家真係好硬呀咁你都睇到，我冇秘製嘅，我有乜嘢都全部公開曬畀人睇呀，約有十零粒，黑胡椒，原粒嗰啲黑胡椒呀你唔好用啲黑胡椒粉落去喎，跟住所有，頭先嗰啲香料我哋擺曬落去，放水，落鹽呀，我哋約落兩湯匙嗰個鹽落去，咁個鹹度呢係你試入口呢認為啱啱好呀個鹹味，再行啲啲咁得。</p></a>
+				<a href="#00:08:55.15" id="00:08:55.15" class="lt" onclick="jumptoTime(535, this.id)"><p>咁即係點呀星星，咁樣你有食咗鹹雞呀，即係介乎，冰鮮雞同埋鹹雞之間呀，大家見到喎我係咁猜咩呢，等所有嘅香料，出味呀，咁我猜幾耐呀，咁我睇你有幾大力囉，好彩咁樣差啦一分鐘咁就得啦咁我可以擺埋一邊，準備好之後呢咁我哋又擺返去，睇返雞呀你雞差不多浸咗三個分鐘呀，因為將佢全部清洗乾淨呀，點為之得呀。</p></a>
+				<a href="#00:09:36.11" id="00:09:36.11" class="lt" onclick="jumptoTime(576, this.id)"><p>冇曬嗰啲黃色嘢冇曬啲血水呀為之得呀，咁我洗四五次之後最緊要都係個雞囊裏面呀你沖洗乾淨曬，曬佢呀，咁你咪就係將佢瓊水啦，瓊水都不得止喎，我哋仲要將佢成日雞呀抹到佢乾身，咁我仲有雞囊裏面咁我哋都要抹抹佢呀，睇下啦，點解會咁呀，心得滯，如果大家只係就唔好煎得太深，因為呢，燒完出嚟啦佢仲會。</p></a>
+				<a href="#00:10:13.19" id="00:10:13.19" class="lt" onclick="jumptoTime(613, this.id)"><p>噴上少少呀咁我到時就會，呢度呀，咁樣就一半肉呀一半皮呀咁樣夠夠好睇呀，咁點解你要全部啲水抹曬佢呢，兩個目的呀，即係，第一等佢，乾身呀最重要呢就係話，等佢容易吸收嗰啲，醃料嘅味道，雖然我哋一陣間都係要攞去，攞去浸水，咁我仲會有少少血水迫返出嚟嘅，咁隻雞抹到佢乾乾淨淨之後呀咁我哋就，二話不說。</p></a>
+				<a href="#00:10:52.09" id="00:10:52.09" class="lt" onclick="jumptoTime(652, this.id)"><p>咁我哋就成隻雞擺落去，咁我啱啱好浸曬呀，咁我哋要浸幾耐呀，最少都要浸，八個鐘，即係換言之呢隻雞呀，你今日整，聽日燒，咁就最理想㗎喇，咁而家就乜都唔好理呀，擺返入去雪櫃，春雞就醃咗約八個鐘，咁而家就攞返出嚟畀大家睇下，好多網友都想話睇下我個冰格有幾大，我都係用一般，嗰啲雪櫃呀，就將隻雞攞返出嚟。</p></a>
+				<a href="#00:11:45.07" id="00:11:45.07" class="lt" onclick="jumptoTime(705, this.id)"><p>攞出嚟之際啦，好呀嘅雞呀，有部分有部分血水呢都會識出咗出嚟，難睇啲，都睇到呀啲洋蔥呀嗰啲都深色咗少少，我哋一定要將個雞攞向下啦我哋將佢瓊水，好乾㗎，咁你咋就，我哋倒返出嚟，好有用㗎喎，如果喺屋企呀有啲大型嘅焗爐呀咁我可以攞嚟墊底同隻雞一齊局嘅，咁呀乜都冇，得個氣炸鍋我頭先都擔心夠唔夠即係夠唔夠佢擺落去呀，咁樣呢啲。</p></a>
+				<a href="#00:12:29.17" id="00:12:29.17" class="lt" onclick="jumptoTime(749, this.id)"><p>雜菜可以分開炒一炒佢跟住鋪返落隻雞嗰度囉，咁如果你越想隻雞，燒得佢乾身，靚啦，瓊光水呀，都唔得㗎一定要吹，抹到佢乾身，最好就擺啲當風嘅地方呀吹咗兩三個鐘就最理想，咁隻雞吹咗一段時間呀，有少少黐手呀，有焗爐嘅就可以用焗爐，落去，我啱啱好擺到落個氣炸鍋度呀咁我哋預先預熱咗係200度，溫度呀。</p></a>
+				<a href="#00:13:23.43" id="00:13:23.43" class="lt" onclick="jumptoTime(803, this.id)"><p>十分鐘先，我哋用，最高嘅溫度，將隻雞，盡快，鎖死佢嘅肉汁，咁跟住我哋先，較低，返個溫度呢就慢慢將隻雞，咁大家如果用焗爐嘅原理都係一樣，咁你如果大家用焗爐係咪預熱嘅焗爐220度啦，雞內，十分鐘，跟住將個焗爐，降返去140度，再焗佢30分鐘，或者40分鐘，似乎你一雞，火雞的話甚至乎再大啲嘅火雞呀有四磅有啲火雞呀，兩個鐘至三個鐘。</p></a>
+				<a href="#00:14:10.55" id="00:14:10.55" class="lt" onclick="jumptoTime(850, this.id)"><p>我哋攞嚟個兜攞嚟個數，先牛油出嚟，做呢個燒雞或者火雞，燒雞，趁牛油還在用的時候，聽一下這次的廣告，職人吹水這個頻道就是講求分享煮食，長期的訂閱率偏低，收看率偏低，希望大家多多訂閱，多多收看和分享，感謝職人吹水的贊助和廣告，大家看看那邊，其實也沒什麼好看的，用牛油跟大家聊聊天，燒雞也是花點心思、耐心、時間，也是用爐子燒的。</p></a>
+				<a href="#00:15:12.13" id="00:15:12.13" class="lt" onclick="jumptoTime(912, this.id)"><p>這段影片也是又長又悶的，在這段時間也跟大家分享一些輕鬆的事，在家裡烹飪，特別是這段時間，全世界的網友們都在過著不一樣的聖誕節，在家裡慢慢烹飪，不要做太大隻的，做小隻的，分組活動就最好，我自己對港式的聖誕大餐相當有情懷，以前的港式聖誕大餐也很棒，首先有什麼湯呢?</p></a>
+				<a href="#00:15:56.93" id="00:15:56.93" class="lt" onclick="jumptoTime(956, this.id)"><p>港式的酥皮龍蝦湯，再低一點的，有金碧多魚翅湯，再低一點的，有周打海鮮湯，然後有二盤，二盤之後已經是燒火雞、火腿，然後有大盤，大盤一般都是扒、魚，然後就有甜品、水果，通常水果我們都會給一大羹，如果是兒童餐，就會少了大盤，多一份玩具，當然兒童餐就會便宜很多，以前都會吃節日氣氛，做西餐來說，有兩三個旺日的，聖誕節就是其一。</p></a>
+				<a href="#00:16:48.89" id="00:16:48.89" class="lt" onclick="jumptoTime(1008, this.id)"><p>如果大家看到有什麼旺日，可以留言跟朋友分享，十分鐘又過咗啦，即時攞出嚟睇呀，鎖住佢個表面㗎咋嘛，跟住我哋將隻雞反轉佢，都係用200度高火，十分鐘，200度，十分鐘都係用個高火，另外將佢雞胸雞皮嗰啲嗰啲位呀再鎖死佢，呢類型嘅氣炸鍋呢係嗰個工序會比較繁複啲，其實我有個，烤焗營嘅微波爐呀。</p></a>
+				<a href="#00:17:49.56" id="00:17:49.56" class="lt" onclick="jumptoTime(1069, this.id)"><p>微波爐嗰度呀，25分鐘啦烤焗營呀咁我呢隻雞又好熟曬，用個微波爐原理，氣炸鍋原理呢其實同用焗爐嘅就差唔多，我個網友送咗個氣炸鍋畀我啦嗰個大部分呢我都係用一個焗爐嘅原理同大家，分享食物，仲燒緊紙仔啦咁我呢度點樣整熱呀，咁香喎真係，咁我哋唔好睇佢住咁我哋又睇返隻雞呀又係反轉咗第二面，最後一分鐘。</p></a>
+				<a href="#00:18:37.68" id="00:18:37.68" class="lt" onclick="jumptoTime(1117, this.id)"><p>咁我出嚟畀大家睇下，唔緊要，腳呀嗰啲位呀，全部查問佢，唔緊要，咁我哋就成隻雞擺返嚟，咁我哋就揀返落去160度，咁我局佢幾耐啦，時間，20分鐘，160度，現在約焗了10分鐘，拿出來看看，剛才6分鐘的時候，已經塗過一層了，現在塗一點上去，聽到聲音嗎?現在有點脆了，特別是雞翼的位置，繼續。</p></a>
+				<a href="#00:19:51.41" id="00:19:51.41" class="lt" onclick="jumptoTime(1191, this.id)"><p>繼續，全程已經焗了30分鐘，拿出來看看，看看雞腿的位置，期間我們還是要補油，還未可以的，塗一點油，做配菜，很可惜，位置不夠，但我們還是希望可以放一些月桂葉，洋蔥，再焗多10分鐘，塗完油，放進去，最後10分鐘，200度，10分鐘，全程40分鐘，大家看看，還在炸，看不看得到，如果用氣炸鍋，拿出來要小心一點，做好擺盤之後。</p></a>
+				<a href="#00:21:12.57" id="00:21:12.57" class="lt" onclick="jumptoTime(1272, this.id)"><p>用筷子，穿過雞肉，用手擺一下，一定熟透，看這個位置就知道了，如果怕不熟，或者怕火雞太大，怎樣做呢，用筷子在雞肉底部的位置，刺一刺，讓血水出來，看有沒有紅色，全部都是青色的，代表雞肉熟透了，繼續跟大家聊聊天，為什麼我們要用這麼多水和香料醃呢，我們要把雞肉的香味隱藏在裡面，從而燒出來，表面看不到有任何香料，但你一吃下去。</p></a>
+				<a href="#00:22:12.41" id="00:22:12.41" class="lt" onclick="jumptoTime(1332, this.id)"><p>就會吃到很香的香料味道，炒西蘭花苗，這裏也有影片可以看，大家記得，我們通常吃火雞都會炒一些，椰菜苗，小小的，大家吃聖誕大餐一定會吃到，放一點下去，這隻雞一定要放涼，才可以切成片，放一些火腿、甘巴里汁，相當之正，一個聖誕燒雞餐，喜歡吃火雞的朋友給個LIKE，喜歡吃燒雞的朋友，訂閱我職人吹水頻道。</p></a>
+				<a href="#00:22:53.65" id="00:22:53.65" class="lt" onclick="jumptoTime(1373, this.id)"><p>分享這個牛油香草燒雞，我先吃東西，下條影片再和大家分享，預祝各位聖誕快樂，記得加入頻道會員，繼續吹哨，再見。</p></a>
+</div>
+	</body>
+</html>

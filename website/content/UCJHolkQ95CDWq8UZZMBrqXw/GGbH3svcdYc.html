@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[好開胃] 香辣意式燴意粉 Spicy Italian Orzo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GGbH3svcdYc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[好開胃] 香辣意式燴意粉 Spicy Italian Orzo</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮呀，今日呢想教大家呢一個家常西餐呀，而且呢係好適合一啲呢返工之後呢，攰到趴喺度嘅朋友們㗎，無錯因為呢一個，送菜呢家常西餐呢，就係一鍋過就搞掂㗎喇，唔使搞咁多嘢嘅ok，今日呢我哋就整一個香辣意式燴意粉，即刻開始啦，今日要介紹一隻呢，我相信好多香港人呢就未必會，成日食嘅可能有啲人會食啦。</p></a>
+				<a href="#00:00:40.24" id="00:00:40.24" class="lt" onclick="jumptoTime(40, this.id)"><p>我要介紹畀大家呢就係呢一隻意粉，好似米咁樣喎，畀個近鏡大家睇下先，係咪好似飯咁樣呀，呢一隻呢其實係意大利粉嚟㗎喎，咁佢嘅名字呢就叫做ORZO，咁呢唔好以為係米，不過呢佢係整到好似米咁，咁佢呢一隻ORZO呢，其實呢可以叫做Soup Pasta，咁多啲湯咁咪有少少Pasta呢，咁你可能冇乜胃口嗰陣時呢。</p></a>
+				<a href="#00:01:12.08" id="00:01:12.08" class="lt" onclick="jumptoTime(72, this.id)"><p>食落去有啲湯水冇咁滯喎，仲要香辣嘅添，咁可能呢更加開胃㗎，好喇咁而家呢我哋開始整嘢㗎喇，首先呢我哋要切切剁剁啦，咁有呢個蒜頭同埋洋蔥嘅，我哋攪咗個蒜頭先啦，嗱個蒜頭呢，有陣時你買返嚟呢，會見到有啲綠色嘅錠喺度㗎，咁呀當然我哋要即係整走佢啦，係咪先切開曬先，好然後呢我哋就搵把細刀仔呢，喺嗰個尾度呢咁樣咳一咳出嚟。</p></a>
+				<a href="#00:01:41.64" id="00:01:41.64" class="lt" onclick="jumptoTime(101, this.id)"><p>挑一挑佢咁就成個呢出咗嚟㗎喇喎，就係咁喇，好，嚟到先，整咗曬喇呢啲當然係唔要啦，好跟住我哋要做啲乜嘢呢我哋要將嗰啲蒜頭呢，切細佢啦，搞掂個蒜頭，切洋蔥，呢啲就唔要㗎喇，我哋要切粒粒嘅將佢，好，兩個搞掂，咁我哋處理其他材料啦Bear，跟住嗰個材料呢其實係可有可無嘅，點解呢，純粹因為呢我自己想有啲肉食，於是乎呢我就加咗兩條呢。</p></a>
+				<a href="#00:02:15.76" id="00:02:15.76" class="lt" onclick="jumptoTime(135, this.id)"><p>煙燻嘅香腸落去嘅，呢一個嘅食譜呢係唔需要加呢一個腸嘅，不過如果你係覺得真係唔掛得滯嘅話呢，你可以加好似我咁樣腸啦，又或者加啲海鮮都冇問題，斜切望落去好似大舊啲咁，好咁我哋可以開始煮，其實除咗頭先我哋切切剁剁嗰啲材料之外呢，仲有其他材料嘅，包括有呢一個提魚啦，即係anchovies，呢一個呢其實呢就係外國人嘅鹹魚啦。</p></a>
+				<a href="#00:02:53.72" id="00:02:53.72" class="lt" onclick="jumptoTime(173, this.id)"><p>咁又係一係鍾意一係就唔鍾意，我呢超鍾意因為嗰種鹹香呢，跟住辣椒碎，黑陳醋，茄膏，當然仲有我哋嘅車厘茄啦，Oyster，洋蔥啦，仲有呢個蒜片嘅，加埋我啲腸仔呢，咁呀而家真係可以開始煮啦，好啦咁我哋呢一開始呢就燒紅咗個煎pan先啦，然後呢我哋就落少少油嘅，咁因為呢我就鍾意加咗啲腸落去啦，咁於是乎呢我就會將啲香腸呢就煎香咗先嘅。</p></a>
+				<a href="#00:03:35.72" id="00:03:35.72" class="lt" onclick="jumptoTime(215, this.id)"><p>假如你真係都有海鮮嘅話呢，即係譬如話蜆呀，鮮魷呀，甚至乎呢一個魚呀，咁我都建議大家呢就係煮熟咗佢先嘅，你可以煎啦你可以煮啦，Up to你嘅啫OK，香腸煎咗就梗係香啲啦，又嚟啦，Hello，好煎啲腸先，好啦我哋呢就係煎香啲腸嘅啫，我哋唔需要呢就係煎窿佢嘅，咁就生一個細火啦，然後呢就將啲腸呢攞返出嚟嘅。</p></a>
+				<a href="#00:04:14.72" id="00:04:14.72" class="lt" onclick="jumptoTime(254, this.id)"><p>唔使洗個煎pan，開返去呢一個中火，跟住呢我哋就放我哋啲洋蔥粒落去啦，假如啲香腸呀上面呢，煎咗出嚟有啲乜嘢殘餘嘅渣紙，喺個煎pan度呢都可以用洋蔥呢，一一幫佢洗乾淨嘅，而家呢我哋就將啲洋蔥呢就係煮到佢半透明，咁快就已經搞掂，跟住我哋做啲咩呢我哋就會炒一炒啲提魚，提魚通常用油浸住嘅。</p></a>
+				<a href="#00:04:49.00" id="00:04:49.00" class="lt" onclick="jumptoTime(289, this.id)"><p>我就鍾意加返少少將入面嗰啲油落埋去，咁個香味呢，就會更加正㗎喇，撳扁佢，因為我哋想均勻啲，呢個時候呢，蒜片落埋去，喺呢個時候呢你就應該聞到呢啲鹹香同埋啲蒜片，撈埋出嚟嗰陣，香氣，Oh my goodness，係超正，跟住我就會落我啲車厘茄㗎喇，你可能會問，點解你會將成粒車厘茄切都唔切，就咁就劈落去嘅咁樣。</p></a>
+				<a href="#00:05:26.38" id="00:05:26.38" class="lt" onclick="jumptoTime(326, this.id)"><p>問得非常之好呀呢位同學，因為呢我哋要將個車厘茄呢，慢慢煮爆佢，煮爆佢，我哋而家個火呢就要熄到中細火啦咁呢要煮爆嗰啲車厘茄，係需要少少時間嘅，咁呀大概我諗十分鐘，你自己呢，就喺度碌下佢呀咁呢，煮煮下呢，佢就會爆㗎喇喎，今次呢我哋就冇用呢一個罐頭蕃茄㗎因為，我哋要健康啲吖嘛，大家可以看到 皮都脫落得差不多了。</p></a>
+				<a href="#00:06:9.20" id="00:06:9.20" class="lt" onclick="jumptoTime(369, this.id)"><p>記住這個火千萬不要太大，如果太大的話有機會燒焦，所以是中慢火，我會控制一下自己，看到番茄開始爛的時候，就不要一爆它，因為我們還想保持這個球的形狀，煮爆它 不是摧毀它，好 現在很漂亮了，色澤非常好，然後我們要加什麼呢，就是辣椒乾的碎，然後黑陳醋，再加茄膏，拌在一起炒，我相信很多亞洲人士會覺得，外國人的辣椒都不辣。</p></a>
+				<a href="#00:06:51.80" id="00:06:51.80" class="lt" onclick="jumptoTime(411, this.id)"><p>這次食譜加的份量都不錯，如果你覺得這個食譜的份量不夠的話，你可以加多一點，不過我建議大家可以先試這個份量的辣椒，我怕加太多，以為自己吃得很辣，然後就出事了，然後我們加雞湯，再加水 拌一拌，然後我們就可以加Oso，我明白的 你看到好像米的東西，就覺得我沒有洗過 是不是要洗一洗，不用 其實它只是乾的意粉。</p></a>
+				<a href="#00:07:27.80" id="00:07:27.80" class="lt" onclick="jumptoTime(447, this.id)"><p>忍住忍住，我知道很多中國人都想洗，意粉來的，好 倒下去，然後我們拌一拌，就跟著Oso包裝上的煮的時間，這個就說煮8-10分鐘，我喜歡有些咬口，於是我就煮8分鐘，記住蓋上蓋子，開中火，8分鐘，好了 過了8分鐘了，打開來看看，嘩 正呀，好香 好好吃，這個時候你可以關火了，現在就試一下味，如果你覺得不夠鹹的話。</p></a>
+				<a href="#00:08:16.26" id="00:08:16.26" class="lt" onclick="jumptoTime(496, this.id)"><p>你可以加些鹽和胡椒粉，我這個就剛剛好，完美的，好 試完味之後，你就可以加你的香腸，再次重申，你是不需要加香腸的，只不過我自己想加，吃得了朋友，喂!吃東西啦!</p></a>
+				<a href="#00:08:45.59" id="00:08:45.59" class="lt" onclick="jumptoTime(525, this.id)"><p>加了少少平葉番茜點綴一下，好!馬上試一口，嗯!好好味!非常之好食!</p></a>
+				<a href="#00:08:59.59" id="00:08:59.59" class="lt" onclick="jumptoTime(539, this.id)"><p>嘩!那個辣是現在才kick in，嘩!嘻嘻嘻!</p></a>
+				<a href="#00:09:7.59" id="00:09:7.59" class="lt" onclick="jumptoTime(547, this.id)"><p>但是雖然是有些辣，但你會想食第二口，於是我就不和你說那麼多，記住訂閱我的youtube channel，和follow我的facebook page，最好當然是like，多謝大家!我要食東西啦!</p></a>
+				<a href="#00:09:22.59" id="00:09:22.59" class="lt" onclick="jumptoTime(562, this.id)"><p>拜拜!嘩!好味!</p></a>
+</div>
+	</body>
+</html>

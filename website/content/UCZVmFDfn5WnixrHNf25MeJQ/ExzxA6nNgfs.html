@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉新年快樂 黑椒雜菌意粉 簡單易做 聖誕新年派對推介</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ExzxA6nNgfs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉新年快樂 黑椒雜菌意粉 簡單易做 聖誕新年派對推介</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.74" id="00:00:3.74" class="lt" onclick="jumptoTime(3, this.id)"><p>字幕由Amara.org社区提供，大家好又係我星星同大家職人吹水，大家好新年快樂呀，各位網友來年個個都順順利利身體健康心想事成，咁每年過咗冬至之後乜聖誕呀過年呀咁樣，網友都會煮西餐食下嘅，有多網友留言就係問我星星，有冇啲又，簡單，經驗又唔係太高又可以喺屋企做到嘅，係絕對有嘅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:56.78" id="00:00:56.78" class="lt" onclick="jumptoTime(56, this.id)"><p>咁就例如今次啦咁有時候好多時喺出面食西餐啦食到一個叫做，雜品會意粉呀或者黑椒插滾炒意粉呀咁樣，都收得你幾貴下嘅，咁你自己屋企做呢，都唔係太困難，咁有時兩口子，喺出面啲西餐廳難訂位嘅咁樣咪老公又煮下老婆食下囉咁樣女朋友，又煮畀男朋友食下啦咁我就幾溫馨嘅因為做西餐呢我哋感受，一年當中有兩大日子就最多人訂位嘅。</p></a>
+				<a href="#00:01:35.94" id="00:01:35.94" class="lt" onclick="jumptoTime(95, this.id)"><p>我講一個先啦聖誕節，另外嗰個呢就留返畀網友喺備註欄嗰度留下言呀，咁今日呢個，大家都睇到呀咁有兩隻菌類咁樣上次又淨咗啲三色椒呀同埋啲洋蔥呀咁又煮埋佢，咁樣上次做過，因為我哋好多時呀我喺喺出面做呀咁有啲，任食火鍋呀都會，有呢啲咁嘅菌類嘅如果出面有啲，啲業界啲師兄弟呀咁我哋有啲咩，有咩你竅門分享呀。</p></a>
+				<a href="#00:02:13.82" id="00:02:13.82" class="lt" onclick="jumptoTime(133, this.id)"><p>係咪嚟一個洗一個啦你洗唔到咁多㗎，咁我哋咪一早洗咗佢囉，咁樣一早洗咗佢咁你又話唔好點水呀係呀的確係呀咁樣當中要點樣處理呀，咁我首先我哋就搵個盤，就開啲水，咁我頭啦我哋都唔好要呀咁咪煮咗佢咁我又擺埋佢啦，一般西餐嚟講呀呢類型嘅白菌呀佢都係搵啲濕毛巾呀咁樣係咪抹佢呀，搵把刀呀咩掛掛佢再買抹佢呀咁樣ok呀但係你呀。</p></a>
+				<a href="#00:02:52.81" id="00:02:52.81" class="lt" onclick="jumptoTime(172, this.id)"><p>中餐嚟講呀我哋多數都係攞去過一個水，就最穩陣嘅，咁我哋目的都係用啲清水呀將啲，菇菌表面呀啲灰塵呀咁樣就洗一洗佢呀咁跟住就可以攞起佢，咁攞起咗佢之後呢就將其他瓊水呀大家都睇到啦你點樣乾淨都好啦至你始終你嗰個，睇到有啲，唔乾淨嗰啲嘢就喺曬啲水嗰度呀，攞起咗之後呀咁我哋就隨即又將要瓊水呀咁我哋啲中菜廚房，廚房。</p></a>
+				<a href="#00:03:34.79" id="00:03:34.79" class="lt" onclick="jumptoTime(214, this.id)"><p>咁我係咪喺啲風機嗰度吹佢囉，即係搞沙律菜嗰啲即係隔水器啦都可以利用嘅下，唔好介意呀今日有少少漏口呀因為條嚟嗰度好生啲囉飛機呀，啲地方就係出去啦，咁隨即將你呀三色椒就去咗呢就清洗乾淨啦，一粒乾蔥一粒蒜頭，彩椒呀，三色椒呀中間呢啲呀就盡量就唔好要呀，好簡單呀，我哋咪行喺度咁樣，一片係咪ok呢。</p></a>
+				<a href="#00:04:28.59" id="00:04:28.59" class="lt" onclick="jumptoTime(268, this.id)"><p>咁我哋跟住呢都係全部將佢，我哋要乾身其實處理呢啲，洋蔥絲呀，西椒啦我哋都係要保持乾身嘅，西餐都係會用一個即係用啲濕毛巾呀買一買去呀咁就ok呀，都係頭先嗰個概念呀咁樣，吹乾佢啦，重點係要佢乾身呀嘛，小心啲啦，皮呢會有少少，點解話要長期保持乾身呀因為呢濕水呢佢就好易，會爛呀。</p></a>
+				<a href="#00:05:28.23" id="00:05:28.23" class="lt" onclick="jumptoTime(328, this.id)"><p>西椒呀，成袋咁樣爛曬，香料呀，乾蔥呀，蒜頭蒜片，蒜頭嘅可以落多幾粒落去呀，三色椒切完就睇下啲菌類呀咁樣又出咗陣間又，少少，不單止寓意保存，同埋你煮起咗嚟嗰陣時呢，你都係會難煮啲嘅特別你煮得，全部，臨煮之前先好切盡量唔好一早切咗佢，唔好切開一片片你先可以洗喎，一片片呀你即刻你攞去洗呀洗完呢佢又話，好快就會標榜水呀。</p></a>
+				<a href="#00:06:45.29" id="00:06:45.29" class="lt" onclick="jumptoTime(405, this.id)"><p>菌你炒出嚟㗎嘛你又唔靚呀，咁我哋就攞返包意粉出嚟咁你包意粉呢大約，十一分鐘咁上下，水滾呀咁我哋就乜嘢都唔使落油鹽都唔使落呀就咁，慢慢，咁我哋呢度約煮九分鐘咁就係咁，開火喎，保持住嗰個大火，包一包啲，保持，唔好一次過炒太多，落去之後呀咁我哋喺嗰邊嗰度呀爭少少酒落去，唔好嗰味道呀，落去啦。</p></a>
+				<a href="#00:08:12.39" id="00:08:12.39" class="lt" onclick="jumptoTime(492, this.id)"><p>落去囉，雜菌，仲係乾身㗎，洋蔥先啦，30秒到咁咪揚出呀嗰啲透明呀，將啲蒜蓉呀乾蔥呀三色椒呀因為全部擺曬落去，炒香，炒緊之際，畢書，保持住個大火咁我又炒落去夠香呀咁好食呀，更加香呀，如果有白酒嘅咪可以落少少白酒落去呀，咁我哋都係攞返少少，胡椒落去呀，少少鹽巴落去，咁我哋將啲雜品，大火炒佢幾下。</p></a>
+				<a href="#00:09:58.57" id="00:09:58.57" class="lt" onclick="jumptoTime(598, this.id)"><p>咁我起得㗎喎，因為呢個已經係一個餸菜嚟㗎喇，一半，將啲雜品，收入個意粉嗰度，呢個過程都係要約煮一兩分鐘咁上下啦，牛油，豉油，炒龍蝦，牛油，咁我哋上碟啦，鹹味方面呀，咁一個彩椒黑椒雜品炒意粉，之前呀，簡單易做嘅菜式呀，一至兩舊嘅牛油喺面更加香，咁我鍾意習慣嘅網友畀個like個星星啦咁我將食意粉嘅網友訂閱職人吹水嘅頻道，咁我鍾意簡單烹調又好味嘅咁麻煩你加有個頻道會員繼續吹水啦。</p></a>
+				<a href="#00:11:50.45" id="00:11:50.45" class="lt" onclick="jumptoTime(710, this.id)"><p>今日就分享到此為止咁我就繼續我嘅新年大餐啦，下條影片再同大家出㗎拜拜。</p></a>
+</div>
+	</body>
+</html>

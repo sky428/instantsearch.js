@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之夜半打邊爐</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'qiKjVD40Lmw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之夜半打邊爐</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>搞一搞先。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello， Hi， 大家好， Facebook， Hello， How's everyone? 等下大家先。</p></a>
+				<a href="#00:00:24.44" id="00:00:24.44" class="lt" onclick="jumptoTime(24, this.id)"><p>Hello Hello，先等大家進來，可以再調一下鏡頭，有沒有人知道?</p></a>
+				<a href="#00:01:4.47" id="00:01:4.47" class="lt" onclick="jumptoTime(64, this.id)"><p>看得到嗎?</p></a>
+				<a href="#00:01:6.47" id="00:01:6.47" class="lt" onclick="jumptoTime(66, this.id)"><p>OK啦，Facebook就剪了頭髮，YouTube呢，就，闊了一點，我先看看，Facebook讓我先調較一下，等等，進來吧各位，YouTube可以低一點，這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:30.47" id="00:01:30.47" class="lt" onclick="jumptoTime(90, this.id)"><p>接著，高一點，高一點就好，這樣，這樣</p></a>
+				<a href="#00:01:42.47" id="00:01:42.47" class="lt" onclick="jumptoTime(102, this.id)"><p>哈囉，喂 今天怎樣?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:47.95" id="00:01:47.95" class="lt" onclick="jumptoTime(107, this.id)"><p>我好瘋狂，今天我想和大家吃火鍋，我的天，因為今天有點肚餓，於是又想吃火鍋，剛好有些好湯底，又想試一下，我們首先，先不要說什麼，我們先選好湯底，不過歡迎大家來到太上燒野之夜半打火鍋，今餐我做一個單人的打火鍋，沒錯，我是需要一些me time的，我還特意做了一個很小的爐頭，這個爐頭有一點歷史，有一次我要去外面工作。</p></a>
+				<a href="#00:02:37.39" id="00:02:37.39" class="lt" onclick="jumptoTime(157, this.id)"><p>然後太嫂突然說我想自己吃壽喜燒，那時候我們家裡還沒有爐，如果做一個大爐好像很浪費，於是我就買了一個小爐給她，然後她自己很開心地做壽喜燒，一直都保存在這裡，後來家庭開始長大之後，多了Luke和Cate，這個爐頭就很少用了，因為多數都要和他們一起去煮，但是今晚，色夕又這麼冷，然後又夜半只有我一個人。</p></a>
+				<a href="#00:03:12.07" id="00:03:12.07" class="lt" onclick="jumptoTime(192, this.id)"><p>那當然是自己打一下火鍋，是不是?</p></a>
+				<a href="#00:03:16.07" id="00:03:16.07" class="lt" onclick="jumptoTime(196, this.id)"><p>好，於是我就想和大家一起試一下東西，我已經準備好了，然後我有烏冬，然後我有自己做的一盤打火鍋食物，然後有安格斯牛，然後有慕容，這個慕容是特別濃味的，OK，然後當然有這個微風的牛丸，我自己上次介紹過了，然後有一些墨魚酥丸，然後有這個，死了，突然間忘記了這個叫什麼，油羊，是的，有些油羊在這裡，然後有一些黃阿爸。</p></a>
+				<a href="#00:03:59.11" id="00:03:59.11" class="lt" onclick="jumptoTime(239, this.id)"><p>OK，日本黃阿爸，那就烏冬，讚其烏冬，好，那麼，我們下次再見，一會再介紹這瓶好東西，這瓶是香印提子酒，香印提子酒，很好味，但先不說其他 我們先選擇湯底，今天有四款湯底，我想你們幫我選擇，非常自私食，今天我的兄弟Kelvin說了自私食，OK，有人說在Youtube說我不可能全部吃完，I don't know maybe。</p></a>
+				<a href="#00:04:43.07" id="00:04:43.07" class="lt" onclick="jumptoTime(283, this.id)"><p>先選擇湯底，有四包日本的湯底，我想和你們一起選擇，看看你們想選擇哪一個，首先有這個豆乳味，它是雞湯底，他說最後吃烏冬是非常棒的，有人這樣說，然後這個是雞味，雞湯味，這個比較純的雞湯味，看看你們想怎樣，然後這個，這個日本版本的番茄味，番茄湯底味，Tomato味，我覺得這個沒有這麼濃稠，然後這個厲害了。</p></a>
+				<a href="#00:05:41.75" id="00:05:41.75" class="lt" onclick="jumptoTime(341, this.id)"><p>這個用鰹魚做底的醬油生薑，醬油生薑味，好了，你們選擇，我應該吃哪一個有四款，有這個豆乳，OK，有這個雞湯，有這個番茄味，Tomato味，為什麼我會選擇這個，因為這個有一個Tor，我腦裏的日文Tor和Toronto的Tor差不多，我想說這個Toronto味，我真的很想念Toronto，但無論如何今天氣溫都差不多。</p></a>
+				<a href="#00:06:23.91" id="00:06:23.91" class="lt" onclick="jumptoTime(383, this.id)"><p>和Toronto在我駛魚去的時候已經這麼冷，然後這個就是醬油生薑，我應該吃哪一個，我看看你們的留言，有人說，Facebook有人說豆乳，然後，有人說生薑好像不錯，然後又是Dark Brown One，有人說生薑，YouTube說，然後又是番茄，醬油，豆乳，豆乳，豆乳，很多豆乳。</p></a>
+				<a href="#00:06:53.27" id="00:06:53.27" class="lt" onclick="jumptoTime(413, this.id)"><p>然後又是生薑，生薑就比較特別，然後又是豆乳，豆乳，豆乳，生薑，似乎是生薑和豆乳之爭，醬油，生薑和番茄，有豆乳，豆乳，豆乳，我看到很多豆乳，然後YouTube就一半一半，但是豆乳都似乎是多一些，我給大家多一點時間，我現在自己留言，你打在留言那裡，剛剛進來的朋友，我現在準備吃火鍋，自己一個人。</p></a>
+				<a href="#00:07:27.77" id="00:07:27.77" class="lt" onclick="jumptoTime(447, this.id)"><p>然後有四包日本的湯底在我面前，有豆乳，雞味，番茄味，醬油，生薑，你們先選，我呢，就想開這瓶好東西，喝一喝，這瓶是香印提子造的酒，我覺得好像很誇張，這瓶酒，每一瓶都用了兩抽香印提子提煉，應該都幾過癮，這瓶酒叫做Fox Village，在日本叫做Fox Village，大家都可以上網去看看，當然你們想買的話。</p></a>
+				<a href="#00:08:19.77" id="00:08:19.77" class="lt" onclick="jumptoTime(499, this.id)"><p>去iamama.com就可以買，你自己上網看，網址已經寫在YouTube和Facebook的描述，我先打開這個，我看看大家還有什麼，這瓶酒有人問在哪裡買到，這瓶酒在iamama.com，我已經post了連結在YouTube的描述，如果Facebook的朋友，你就可以去描述那裡看，已經post出來了。</p></a>
+				<a href="#00:08:49.77" id="00:08:49.77" class="lt" onclick="jumptoTime(529, this.id)"><p>好，我看看，iamama.com，嘩，這瓶酒好香啊，非常好，其實最好是冷藏飲用，我覺得聖誕節拿出來威風一下就可以了，先看看，這個很清，我自己加冰因為我忘記了冷藏，自己加冰飲吧，我覺得好像在吃液體香胭提子，我的天啊，很正啊，而且酒精味不是很重</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:42.15" id="00:09:42.15" class="lt" onclick="jumptoTime(582, this.id)"><p>Good，This is good，這個是白酒，白酒來的，各位可以想一下，因為真的挺好味，為什麼我弄不掉這個，豆乳 醬油 醬油 豆乳 豆乳，Facebook那邊有人說番茄 豆乳 薑 薑 豆乳，豆乳 Facebook是豆乳，豆乳 生薑 醬油 豆乳，這個香韌的白葡萄酒 白酒，酒精味不濃 但你喝下去有淡淡香韌葡萄味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:48.51" id="00:10:48.51" class="lt" onclick="jumptoTime(648, this.id)"><p>很厲害 味道也很強，It's good</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:54.51" id="00:10:54.51" class="lt" onclick="jumptoTime(654, this.id)"><p>好喝呀這個 好喝 好喝 好喝 好喝，這個好喝呀 這個，大家可以 大家可以試試，這個是Fox Village 見不見到，Fox Village 上IamMama.com就有得買，聖誕節 適合買一瓶在家裡 朋友喝，或者送禮 送禮也好 因為我覺得這個很特別，是香韌葡萄酒 跟人說我們要喝葡萄酒，我們這次用香韌做的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:32.51" id="00:11:32.51" class="lt" onclick="jumptoTime(692, this.id)"><p>真的嗎 打開喝大家可以試試，我覺得這個好喝 這個好喝 這個好喝，好了 選了沒有 選了這個，喝什麼味 開什麼湯底味，有人問酒是不是很甜 不是很甜，當然我自己加了冰，但是甜度適中，不是我自己昨晚拉的梅酒那麼甜，是OK的 剛剛好，香韌葡萄酒是非常好，怎樣 湯選了沒有 醬油，大家似乎想試試醬油。</p></a>
+				<a href="#00:12:18.51" id="00:12:18.51" class="lt" onclick="jumptoTime(738, this.id)"><p>其實我也想 我可以選一下嗎，我也想試試醬油，豆乳我們也試過，但是醬油我真的沒試過，試一下好嗎，我相信豆乳那個也好吃，我們試一下醬油，OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:43.08" id="00:12:43.08" class="lt" onclick="jumptoTime(763, this.id)"><p>先開了，倒出來，好，哼哼，我還有的 你等一等</p></a>
+				<a href="#00:13:17.53" id="00:13:17.53" class="lt" onclick="jumptoTime(797, this.id)"><p>耶! 開了你一包，爽啊，聞一下， 好香， 好香，有陣薑味， OK的，好啊， 這個冬天呢，有些薑去打埋邊爐，可能更嫩粒粒，好， 馬上開果</p></a>
+				<a href="#00:13:40.75" id="00:13:40.75" class="lt" onclick="jumptoTime(820, this.id)"><p>嘩!，嘩嘩嘩嘩嘩嘩嘩!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:46.35" id="00:13:46.35" class="lt" onclick="jumptoTime(826, this.id)"><p>好興奮， 好興奮，我好想，快些食， 快啲滾啊唔該，醬油， 有人見到啫喱呀?</p></a>
+				<a href="#00:13:56.19" id="00:13:56.19" class="lt" onclick="jumptoTime(836, this.id)"><p>是唔係見到啫喱? 啫喱， Come here， Come，Woo， 啫喱好想食，係咪呀?</p></a>
+				<a href="#00:14:4.33" id="00:14:4.33" class="lt" onclick="jumptoTime(844, this.id)"><p>啫喱見到， 嘩! 死啦，你看， 你睇下佢個樣， 你睇下佢個樣，你看看他，只看著食物，真是開心，做狗真是，不過老了，老人家了這個位置，十幾歲了已經，還是那句，假如有一天，你突然間不見了他的話，他只是睡了而已，好了，我要放他下去了，OK，好，下去下去下去，好，YouTube</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:38.31" id="00:14:38.31" class="lt" onclick="jumptoTime(878, this.id)"><p>好，好了，湯底在哪裏可以買?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:42.31" id="00:14:42.31" class="lt" onclick="jumptoTime(882, this.id)"><p>問得好，這個在IamMama，iamma.com，OK，我在這個description和這個description的facebook和這個youtube，已經寫了一個連結在這裏，有一個link在這裏的了，那你按進去就可以了，OK，那你按進去就可以了，我打了出來的了，行不行?</p></a>
+				<a href="#00:15:5.31" id="00:15:5.31" class="lt" onclick="jumptoTime(905, this.id)"><p>一個人吃兩包?</p></a>
+				<a href="#00:15:7.31" id="00:15:7.31" class="lt" onclick="jumptoTime(907, this.id)"><p>不是呀，藍珍珠，我不是一個人吃兩包，其實那個煲太大了，那跟著呢，我又不想太少去煮，於是我就放多一點而已，還有你們看樣子好看一點嘛，太少好像很快煮完，我覺得不太好，多一點，算了，這次開心一點，好了，跟著要試一下醬汁了，我們今天有很多新的醬汁，這個醬汁就叫做，太醒，嘩，我老花了，清糖生子醬油。</p></a>
+				<a href="#00:15:57.32" id="00:15:57.32" class="lt" onclick="jumptoTime(957, this.id)"><p>即是有青椒，有些青椒在裏面，清糖生子醬油，OK，我就是用來點東西的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:10.32" id="00:16:10.32" class="lt" onclick="jumptoTime(970, this.id)"><p>然後我還找了一個碗試湯，我先放些醬油，這個醬油有點辣，應該有少少辣的味道，嗯，很香，很香，馬上試一下，OK，日本醬油真的不同，甜的，不是生抽，老抽那些近乎有少少死鹹的味道，當然做法又不同，不過日本醬油是好味的，這個很抱歉，不知道為什麼，這個是正的，好，然後呢，就有這個很濃香的芝麻醬，濃香芝麻醬，OK。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:13.32" id="00:17:13.32" class="lt" onclick="jumptoTime(1033, this.id)"><p>我就喜歡這樣混在一起的，我不知道你，如果你不喜歡的話，沒問題，我喜歡混在一起的，嘩，正，我的天啊，我想請問Facebook是不是還是沒有這個，還是沒有這個Notification，這個真的很慘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:33.32" id="00:17:33.32" class="lt" onclick="jumptoTime(1053, this.id)"><p>唉，有人問我的湯底要不要加水，你喜歡就加水，我覺得可以不加水的，你喜歡沒那麼濃味就加水，我想吃原味，好，放些下去醬油，不是，先試一下才好</p></a>
+				<a href="#00:17:52.32" id="00:17:52.32" class="lt" onclick="jumptoTime(1072, this.id)"><p>乾淨，不是乾淨，倒進筷子裡，Good，很濃的味道，好，好了，那接著呢，有蒜蓉辣椒油，有一個是中辣，有一個是微辣，很正呀，這個蒜頭呢，寫了有三條規矩，你吃這個辣油的時候，有三條規矩你一定要遵守，第一個規矩就是你吃的時候和人見面，要控制一下，千萬不要和人接觸，第二條規矩就是你吃的時候都要和人分享。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:59.31" id="00:18:59.31" class="lt" onclick="jumptoTime(1139, this.id)"><p>最後一條規矩就是千萬不要怕蒜頭的臭味，這就是三條規矩，寫在瓶身上，很正呀，每一個瓶身都有三條規矩，日本人呢，我很喜歡他們做這些誇張的事情，我覺得很好笑，你吃這個你會有那種意境，嘩，是不是真的這麼厲害呀，我們可以開來看看，嘩，現在馬上很暖，有個火，很香，很香蒜油，蒜頭味，大家看一下，YouTube的看一下，跟著Facebook，很正呀。</p></a>
+				<a href="#00:19:56.31" id="00:19:56.31" class="lt" onclick="jumptoTime(1196, this.id)"><p>給大家看一下，嘩，好呀，好呀，這個，好呀，讓我看看有多辣，就這樣吃，嗯，辣不是太厲害，但是吃完之後，那個是一個後勁，不是一吃就辣，是後勁厲害，這個很好吃，我先吃這個，我喜歡辣的，這個很好吃，嘩，好，然後當然黑色那個就沒那麼辣，其實沒那麼辣的那個，我先看看，但還是辣油，沒那麼辣，這個我覺得可以用來拌麵吃，也是完美的，當然辣的那個也可以。</p></a>
+				<a href="#00:21:14.03" id="00:21:14.03" class="lt" onclick="jumptoTime(1274, this.id)"><p>另外一個要介紹的就是這個Butter Soyau，Butter Soyau的Garlic Sauce，什麼叫Butter Soyau呢?就是豉油牛油的蒜蓉醬，嘩，要給大家看一下，YouTube，Facebook，好正呀這個，其實這個絕對可以塗在麵包上面做蒜蓉多士，它是溶了牛油，然後你塗上去，我又想放些進去那個Sauce。</p></a>
+				<a href="#00:21:56.03" id="00:21:56.03" class="lt" onclick="jumptoTime(1316, this.id)"><p>嘩，還有一粒粒蒜頭，正呀，好，我又放了些，時間剛剛好，說完之後湯底就開始滾了，正呀，有少少像豆板醬呀?Ellen說，是的，我是剛剛進來的朋友，今天我是自己打火鍋，我有幾款日本的湯底在這裡，剛才開了這個就是醬油生薑味，其實還有其他款式的，有豆乳味，大家可以去iamama.com看一看，因為他們有些package好像比較划算。</p></a>
+				<a href="#00:22:44.82" id="00:22:44.82" class="lt" onclick="jumptoTime(1364, this.id)"><p>剛剛冬天你可以立刻買回來試一下，然後有這個tomato的味道，先去按一下，不要說笑，然後有一個雞湯味，我們今天就試這個醬油生薑味，嘩，好滾呀，正呀，好，首先我們放些魚丸，要久一點，看多好呀，然後我們放這個武蓉，特濃武蓉，正呀，安格斯牛肉，牛肉味很重，然後菜，嘩，好開心呀，正，真的很正。</p></a>
+				<a href="#00:23:48.82" id="00:23:48.82" class="lt" onclick="jumptoTime(1428, this.id)"><p>然後我的醬，放在這裡，我準備拌一拌，拌好了，好，嗯，有人問是否遺風丸，沒錯，是遺風丸，嘩，牛肉，好，還有一個牛肉，耶，真開心，沒辦法，這麼晚才吃東西，嗯，拌在一起也很好吃，嗯，好，加少許湯，我不知道你會不會，我會，加少許湯，正，好，再殺多一個牛肉，這個牛肉很好吃，沒有用，不能殺太久，否則會太軟。</p></a>
+				<a href="#00:24:59.51" id="00:24:59.51" class="lt" onclick="jumptoTime(1499, this.id)"><p>試下呢個慕容嘅味道有幾濃先，好好味，好香呀呢個慕容，牛肉搞掂，細少少火先，一個人就可以做呢啲嘢啦，試下蛋湯，好味，有個薑味，呢個打邊爐正，呢個好特別，我覺得好特別，好少有呢個，咁樣嘅醬油薑味，好舒服喎呢個，呢個好味，大家如何，未食飯搞掂邊爐啦簡單啦，有人問Kate喺邊度，太嫂都瞓咗呀，阿Luke都瞓咗呀。</p></a>
+				<a href="#00:26:24.77" id="00:26:24.77" class="lt" onclick="jumptoTime(1584, this.id)"><p>咁所以呢，我就自己喺度享受緊，呢一個me time所以開始嗰陣時我就話我係嚟享受呢一個me time，好正，試下食下啲牛羊，哇，爽呀，好，吃完暖暖的，有些人說，在九龍城見到都不敢打招呼，是不是我的樣子太兇，有些人說我不笑的時候，樣子是兇神惡煞，但我一出聲就另一回事</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:27:17.27" id="00:27:17.27" class="lt" onclick="jumptoTime(1637, this.id)"><p>是不是呢?，有人問我有沒有和別人合過樂隊，Youtube，我有和別人合過樂隊，我以前在多倫多有合過樂隊，我們樂隊和今晚的湯底有些關係，我們樂隊的名字叫Ginger，年輕時，很好笑，我剛剛去加拿大和以前的樂隊友，以前一個樂隊友去吃飯，我可以說，以前做商場表演，我負責唱歌，其他負責彈樂器，吉他、鼓等等。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:4.27" id="00:28:4.27" class="lt" onclick="jumptoTime(1684, this.id)"><p>我也曾經試過彈Bass，但我彈得不好，但如果你唱歌時彈樂器，其實一起做是很有型的，我覺得，但當你唱歌和彈樂器兩件事一起做，你需要一個很特別的挑戰，不是每個人都可以，是很難的，而我也不是做得很好，所以做了一兩次就放棄了，專心唱歌，那時候我們小時候去組樂隊，自己要擺放裝備，我們會被聘請去卡拉OK酒吧。</p></a>
+				<a href="#00:28:53.27" id="00:28:53.27" class="lt" onclick="jumptoTime(1733, this.id)"><p>現時流行的卡拉OK，我們在二十多年前就開始了，我記得那時候我們有五個人，五個人，是不是五個人?</p></a>
+				<a href="#00:29:14.10" id="00:29:14.10" class="lt" onclick="jumptoTime(1754, this.id)"><p>兩支結他、一個bass、一個鼓，再加上我唱歌，五個人，然後呢，我們就會被請到卡拉OK，去彈流行曲，然後客人就上來唱，那時候我們做三個小時?四個小時?</p></a>
+				<a href="#00:29:38.42" id="00:29:38.42" class="lt" onclick="jumptoTime(1778, this.id)"><p>做四個小時，我們的酬勞，你猜是多少錢?</p></a>
+				<a href="#00:29:42.90" id="00:29:42.90" class="lt" onclick="jumptoTime(1782, this.id)"><p>我們的酬勞是200元加幣，200元加幣，200元加幣那時候是1000元，1000元港幣，那時候的年代，通常我們組樂隊後，收東西，肚子餓，肚子餓就要吃東西，一吃東西，五個大男孩，一吃東西，那200元已經沒有了大半，所以基本上我們是組樂隊用來餵自己，就是這樣，我不知道你們有沒有組過樂隊?</p></a>
+				<a href="#00:30:22.90" id="00:30:22.90" class="lt" onclick="jumptoTime(1822, this.id)"><p>組樂隊的生活就是這樣，但是很開心，很好玩，最棒就是我們去華人的商場做表演，如果在多倫多的朋友，一定聽過First Markham Place，萬錦廣場，那時候我的年代是剛建成，很無奈，我們就被邀請到，在First Markham Place商場中間的Food Court，我們在那裡試過做表演。</p></a>
+				<a href="#00:31:0.90" id="00:31:0.90" class="lt" onclick="jumptoTime(1860, this.id)"><p>星期六的下午，一直表演，有阿公阿婆坐在那裡，也有些人坐在那裡聽，但只有幾隻小貓，我們照樣在那裡唱Beyond的歌，在那裡對著公公婆婆唱我是憤怒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:31:26.90" id="00:31:26.90" class="lt" onclick="jumptoTime(1886, this.id)"><p>哈哈哈哈，很好笑，我自己也覺得，那時候有點尷尬，但回想起來我覺得真的很棒，是很棒的經歷，拜拜，那麼，看看他寫了什麼，有人說放一些相片來看看，我遲些找找，我應該有的，我放在Facebook大家可以去看看，有人問我那一支是什麼酒，我這支酒是日本的香印葡萄酒，不是平時的葡萄酒，是用香印提子提煉出來的白酒，是日本的，叫做Fox Village。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:26.66" id="00:32:26.66" class="lt" onclick="jumptoTime(1946, this.id)"><p>如果大家想聖誕時試一支這樣的酒，我覺得是值得試的，你可以上IamMama.com，我已經放了連結在資訊欄，大家可以去試試，應該有些套餐可以買，湯底套餐和醬汁套餐，還有一些米，日本米也很好吃，大家一定要試試，做一包仔試試，人一世物一世，Facebook有人說老人家應該很開心，終於不是被逼聽粵曲，是嗎?我不知道他們會不會在聽柯氏品路。</p></a>
+				<a href="#00:33:16.66" id="00:33:16.66" class="lt" onclick="jumptoTime(1996, this.id)"><p>可否鎮，可否鎮什麼，可否鎮，我突然忘記了，是那個嗎?可否鎮我一口氣，那些就是那些日子，我的天，真的很好吃，繼續好吃，冰布龍很好吃，吃這個遺風丸，這是他們很出名的牛丸，很開心，正，Good day 徐太，有人問我在樂園見到我可不可以和我打招呼，當然可以 為什麼不行，我講過 如果你在街上見到我。</p></a>
+				<a href="#00:34:26.57" id="00:34:26.57" class="lt" onclick="jumptoTime(2066, this.id)"><p>可以隨便和我打招呼，如果你見到我突然 啊啊 這樣的話，千萬不要怪我 因為我可能是在做夢，即是和我說Hello 說Hi，我可能是在做夢 我通常都是在做夢，在逛街的時候，所以有時候你會見到一些藝人，他們逛街的時候 木口木面 黑黑黑面，其實他們不是囂張的，有些是 但其實大部份都是工作很累，其實在鏡頭面前笑得多。</p></a>
+				<a href="#00:35:9.57" id="00:35:9.57" class="lt" onclick="jumptoTime(2109, this.id)"><p>又或者像我一樣在電台講話講得多，YouTube講話講得多，而在自己一個人的時候，你是不想說話不想笑的，不是說我們囂張 而是我們只想休息一下，所以我們自己逛街的時候，就會木口木面，木口木面和有些人覺得我們黑口黑面，因為平時你在螢光幕前見慣，我們就是笑啊 嘻哈啊 很有energy啊，但見到真人的時候。</p></a>
+				<a href="#00:35:39.57" id="00:35:39.57" class="lt" onclick="jumptoTime(2139, this.id)"><p>為什麼你會這樣呢，是口黑面黑的，又沒有精神啊 打個招呼啊，都這樣啊 拍張照片都不行啊，很多人有這樣的反應，但我只不過想告訴大家，其實大部份時間我們這些藝人，多數都是累和在做夢，所以才會這樣，不要怪我們，就好像你下班，你下班，然後有人不停地跟你聊天，你下班之後不停地問你問題，你也會有機會黑口黑面。</p></a>
+				<a href="#00:36:14.57" id="00:36:14.57" class="lt" onclick="jumptoTime(2174, this.id)"><p>但你做這一行，其實就難免了，其實你任何時候都需要友善一點，不過如果你真的見到我，有時候黑口黑面的話，我是在做夢，和很累的，就是這樣，隨便跟我打招呼，我OK的 沒問題的，大家集合拍一下照片 沒所謂的 我也不知道多開心，你們是不是剛剛進來的，為什麼Facebook這期這麼慘 是不是沒有通知呢，沒理由的 大家是不是已經忘記了我了。</p></a>
+				<a href="#00:37:8.15" id="00:37:8.15" class="lt" onclick="jumptoTime(2228, this.id)"><p>我有一點sad 為什麼會這樣，是不是可以多一點人，如果可以多一點人就好了 YouTube，有人見過我在City Super和Cake一起買東西，多謝你不耽誤我的親子時間，有人說昨晚和今晚都收不到通知，搞什麼啊Facebook 為什麼會這樣，我也不知道在哪裡可以弄一個通知，讓大家可以彈出來。</p></a>
+				<a href="#00:37:56.67" id="00:37:56.67" class="lt" onclick="jumptoTime(2276, this.id)"><p>為什麼沒有通知，有點氣，Facebook都沒有通知，YouTube的人都告訴我Facebook沒有通知，為什麼會這樣，這樣不行啊，我覺得不是太好，有人說我的T恤很漂亮，大家看到我的T恤嗎，你認不認得到這是什麼，應該有見過的，如果你看我的影片，我應該有穿過，我其中一件是我的最愛的T恤，其中一件我最愛的T恤。</p></a>
+				<a href="#00:38:30.59" id="00:38:30.59" class="lt" onclick="jumptoTime(2310, this.id)"><p>就是Sound of Music，一個主角，你知道有一個scene，在山上唱，The hills are alive，with the sound of music，是這樣唱的，他拿著兩支槍，然後他就在轉，你想像一下，The hills are alive，我覺得很有趣，所以我買了這一件。</p></a>
+				<a href="#00:39:1.07" id="00:39:1.07" class="lt" onclick="jumptoTime(2341, this.id)"><p>我覺得很好笑，謝謝讚我的T恤漂亮，我覺得很棒，The hills are alive，昨晚沒有通知，今晚有，我真的不知道，有些人收到通知，有些人收不到通知，為什麼會這樣，可以追蹤一下，我又看回YouTube，我看的直播的留言，不知道為什麼，突然間停了，溫哥華早餐時間，看到我吃火鍋很餓，就吃火鍋吧。</p></a>
+				<a href="#00:39:43.07" id="00:39:43.07" class="lt" onclick="jumptoTime(2383, this.id)"><p>YouTube在溫哥華的朋友，你們是不是，還在下雪呢，多倫多下雪了嗎，我看了一些新聞，我看CP24，我經常都，我看了一些新聞，好像已經很下雪了，不知道，好 孤獨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:40:5.45" id="00:40:5.45" class="lt" onclick="jumptoTime(2405, this.id)"><p>Isaac，iedy，이� Kra fashioned，icial，dares，kho，serum，érence，1953，大家知道烏冬已經熟了，未熟不是這樣，雪藏烏冬全部都已經熟了，所以我常常說烏冬放去吃火鍋，其實你把烏冬拆散後，你已經可以夾來吃，因為如果你煮太久的話，他們是會太軟，所以你會看到我一放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:40:34.42" id="00:40:34.42" class="lt" onclick="jumptoTime(2434, this.id)"><p>我把烏冬拆散，我就差不多可以拿來吃，只是想讓他們熱一點，就是這樣，不要煮太久，烏冬本身是熟的，我怕大家不知道，所以要說一說，現在天氣這麼冷，多不多暴風雪，小心開車，小心開車，暴風雪的話，都不是人敢問，我試過暴風雪，由多倫多開車，開車進去Waterloo，你可能會問，為什麼，年少氣盛的我，是想開車進去。</p></a>
+				<a href="#00:41:16.42" id="00:41:16.42" class="lt" onclick="jumptoTime(2476, this.id)"><p>見女朋友，我真的，小時候做一些瘋狂的事，我怕我兒子或女兒，將來會報給我，可能學過爸爸，半夜開車，去找另一半，我就可以體會到，我媽媽的心情，突然間，十點鐘，是十點鐘，晚上暴風雪，然後突然，跟我媽說，我今晚去Waterloo不回來了，然後我拿著車匙就走了，嚇死，但當時已經，二十歲，當然大學，開了這麼久。</p></a>
+				<a href="#00:42:4.42" id="00:42:4.42" class="lt" onclick="jumptoTime(2524, this.id)"><p>媽媽也有信心，始終這樣走出去，也是害怕的，被我嚇死，然後我開車，開了很快，大家不要學我，那時候真的很瘋狂，兩小時，平時我想，Waterloo如果這樣大風雪，三小時，但我兩小時就進去了，那時候為了見女朋友，很瘋狂，我覺得，遲早會報，印在我身上，好 這一檔搞定，謝謝觀看，先吃一口，正，不錯啊，雖然說是一個人吃火鍋。</p></a>
+				<a href="#00:42:54.70" id="00:42:54.70" class="lt" onclick="jumptoTime(2574, this.id)"><p>但我都有你們陪我，聊聊天也好，你們說什麼?</p></a>
+				<a href="#00:43:0.70" id="00:43:0.70" class="lt" onclick="jumptoTime(2580, this.id)"><p>最近天氣冷，可不可以教煮一些用鍋的菜式?</p></a>
+				<a href="#00:43:5.70" id="00:43:5.70" class="lt" onclick="jumptoTime(2585, this.id)"><p>也可以的，其實我之前也教過一些，但我想再預告一下，星期二晚，即是20號，我有一個影片，大家要看一看，我會教大家做冬天的一餐飯，正啊，千萬不要等它煮沸，如果煮沸就會軟，20號，我有一個冬天的一條影片，我很想大家看，其實是教煮一餐飯，如果你可以做到那一餐飯，我也覺得，也不錯，也挺威風的，如果你在家做得到。</p></a>
+				<a href="#00:43:51.70" id="00:43:51.70" class="lt" onclick="jumptoTime(2631, this.id)"><p>我覺得挺威風的，還有，我在做節那一餐飯，會教大家，其中一個菜會教大家，做咕嚕肉，這個咕嚕肉，每個人都讚好吃，我都說很好吃，我不是說讚自己，我簡直是捧自己，真的好吃，你一定要學，不難做的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:44:27.70" id="00:44:27.70" class="lt" onclick="jumptoTime(2667, this.id)"><p>好吃，真的好吃，年宵，晚點見 拜拜，煲仔飯?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:44:38.61" id="00:44:38.61" class="lt" onclick="jumptoTime(2678, this.id)"><p>煲仔飯我教過做一次，教過了 阿Zaki問我老婆懂不懂煮菜，一定懂的，好不好味而已，個個都懂煮，個個都懂放些東西在鍋裡開火，用水煮一下 放些油炒一下，個個都懂煮東西吃，是好不好吃而已，其實那些人說不懂煮東西吃的，騙你的 個個都懂煮，是好不好吃而已，就是這麼簡單，你怎會不懂煮東西，傻的嗎。</p></a>
+				<a href="#00:45:11.61" id="00:45:11.61" class="lt" onclick="jumptoTime(2711, this.id)"><p>經常說我不懂煮東西，難 你只不過是懶，不是不懂煮 是難，你要煮就一定煮得到，只不過是難吃，不要說自己不懂煮 你懂煮，不過你只要肯下手下腳，然後你又肯幫自己進步，我保證你有這樣的心態，你一定不會煮，然後跟大家說 我也懂一點點，你相信我 你肯做就行，你不肯做 沒人幫到你的，你只會一輩子停留在那個位置。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:45:53.61" id="00:45:53.61" class="lt" onclick="jumptoTime(2753, this.id)"><p>是不是，好好吃，那個汁好正，這個時候我要把烏冬夾出來</p></a>
+				<a href="#00:46:6.61" id="00:46:6.61" class="lt" onclick="jumptoTime(2766, this.id)"><p>不然會太軟，就是這樣，所以今晚跟大家吃火鍋，是不是很正 我覺得很正，尤其香港時間 明天</p></a>
+				<a href="#00:46:23.61" id="00:46:23.61" class="lt" onclick="jumptoTime(2783, this.id)"><p>星期六 星期日，星期一 哇，九度 新界還要低多兩三度，還不搶火鍋，非常好，然後買一包這樣的湯底，不用想 倒進去即食，又可以試試不同的湯底，你可以做兩鍋，做完一鍋 像今天醬油生薑，然後做一個豆乳，其實那個蕃茄湯底，你不用一定要吃火鍋，你用綠麵 通心粉 殺狗牛肉都可以，哇 這個湯很棒，有薑 現在很暖身。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:47:10.98" id="00:47:10.98" class="lt" onclick="jumptoTime(2830, this.id)"><p>很棒，哇 Very nice</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:47:17.98" id="00:47:17.98" class="lt" onclick="jumptoTime(2837, this.id)"><p>好東西 好東西 好東西，好 我看到有人問問題，烏冬都軟了 現在沒有了 剛剛好，冰豆腐是買蒸煮豆腐還是硬豆腐，你找硬豆腐 拿去冰格冷凍，但你起碼要冷凍三天，因為冷凍到水變硬 走掉 出現洞，所以冰豆腐要冷凍一段時間，最好你切細件去冷凍，這樣才可以有，這樣才容易做到，看YouTube 為什麼經常停了，我想看一個comment。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:48:12.98" id="00:48:12.98" class="lt" onclick="jumptoTime(2892, this.id)"><p>搞錯啊，碗在哪買 我在超市買的，我在超市買的，請問買豬哪一部份做咕嚕肉，這個問題問得非常好，我教的食譜是用五花腩做的，所以是無敵的，是無敵的 我告訴你，梅頭是 它淡淡肉，但你絕對沒有五花腩肉加肥膏肉加肥膏這麼好吃，信我 你更加要看我20號的影片，怎樣教你做這麼好的五花腩咕嚕肉，好好吃。</p></a>
+				<a href="#00:48:56.98" id="00:48:56.98" class="lt" onclick="jumptoTime(2936, this.id)"><p>真的不是自己誇自己，我每次做 每個人都誇我自己都不停地吃，好 多謝觀看，就這樣吧，Youtube不能回答嗎?</p></a>
+				<a href="#00:49:17.81" id="00:49:17.81" class="lt" onclick="jumptoTime(2957, this.id)"><p>搞什麼呀現在，我真的不明白Facebook的通知又沒有什麼，Youtube又說不能回答，我是不是應該，不如我繼續這樣做吧，Facebook這樣不行，我真的很不開心</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:49:35.81" id="00:49:35.81" class="lt" onclick="jumptoTime(2975, this.id)"><p>Anyway，我希望大家都可以重看，如果大家有興趣，這瓶香印葡萄酒，我覺得值得去買一瓶來試試，你可以上IamMama.com，我已經寫了連結在資訊欄，在帖文有連結，在Youtube的帖文也有連結，湯底也在那裏買，應該有包裝，你自己看看，蒜頭辣椒油也有賣，我覺得很好吃，青椒醬油也很好吃，這個蒜頭牛油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:50:25.81" id="00:50:25.81" class="lt" onclick="jumptoTime(3025, this.id)"><p>我覺得你可以試試，然後用來烤麵包，應該很好吃，我不打擾大家了，我也要吃完，然後收拾東西，還要洗碗，大家也差不多要睡覺了，在加拿大多倫多的朋友，你們吃早餐吧，如果有興趣，今晚也可以吃火鍋，我要吃完東西了，我會走過來，先關機，多謝大家</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:51:1.81" id="00:51:1.81" class="lt" onclick="jumptoTime(3061, this.id)"><p>多謝多謝，今次先和Youtube說再見，多謝大家陪我，多謝大家陪我。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:51:11.81" id="00:51:11.81" class="lt" onclick="jumptoTime(3071, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

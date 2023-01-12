@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[呷啖湯] 極速周打魚湯 Quick Fish Chowder</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Myo5McWWkpg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[呷啖湯] 極速周打魚湯 Quick Fish Chowder</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.52" id="00:00:0.52" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮，今日我哋又做一啲快捷方便又飽肚，但又唔係好飽嘅嘢，即係啱啱啲，你冇乜胃口嘅，亦都係冇乜力去煮嘅，但係呢，我又唔想食得太差喎，嗰啲咁嘅婆媽狀態呢，今日呢個我相信，我自己就好滿足到我嘅，咁你呢我都希望滿足到你，咁我今日做一個乜嘢呢，我哋今日做一個，超級快速周打魚湯，有嘢食又飽肚。</p></a>
+				<a href="#00:00:36.76" id="00:00:36.76" class="lt" onclick="jumptoTime(36, this.id)"><p>嚟啦喂，我哋就睇下呢一個超級快速周打魚湯嘅材料係啲乜嘢先啦，當然有呢一個魚啦，嗱我呢就揀咗呢一個Seabass嘅，咁佢呢翼呢就叫白鱈魚，ok咁我建議大家呢就係用一啲白肉嘅魚會好啲嘅，因為呢我覺得白肉嘅魚呢佢食落去呢就冇咁硬，會多汁啲同埋襯返個周打魚湯，因為佢都係白色㗎嘛，咁所以呢白肉魚係first choice。</p></a>
+				<a href="#00:01:12.16" id="00:01:12.16" class="lt" onclick="jumptoTime(72, this.id)"><p>咁除咗呢一個魚之外呢，我哋仲有呢一個煙肉啦，薯仔啦，洋蔥啦，跟住仲有，嘩，三色豆，係咪好耐冇見佢呢，係咪有少少掛住佢呢，冇錯我哋今日呢就放呢一個三色豆落呢個周打魚湯度，其實係好味嘅，信我，好，我哋去預備啲材料先啦，第一樣嘢要做嘅呢我哋就搞一搞嗰個魚先啦，預備定一張廚房紙喺度，點解呢因為我哋要嗰個魚汁嘅。</p></a>
+				<a href="#00:01:49.04" id="00:01:49.04" class="lt" onclick="jumptoTime(109, this.id)"><p>但我哋要做啲乜嘢呢，我哋呢就要將呢一個魚呢醃一醃嘅，少少鹽，跟住少少胡椒粉，搓搓佢啦，跟住呢我哋攞起舊魚啦，然後呢就放個廚房紙喺個盤嗰度，然後呢就放啲魚喺上面，咁點解我哋要咁樣做呢，因為呢我哋醃嗰個魚嗰陣時呢，佢就會將個魚嗰啲水分呢抽一抽出嚟嘅，咁我哋落少少鹽咁醃除咗會令到個魚塊有啲味之外呢，亦都會呢幫手呢將嗰啲腥味呀同埋呢個雪藏味呢抽走出嚟㗎。</p></a>
+				<a href="#00:02:27.64" id="00:02:27.64" class="lt" onclick="jumptoTime(147, this.id)"><p>ok 記住做呢一樣嘢呀，跟住要處理洋蔥，洋蔥就將佢切粒，定唔要啦，中間呢條有啲綠色，你都可以唔要，跟住我哋就搞個薯仔，薯仔我就揀咗啲新薯，如果你真係鍾意用啲大大隻隻嘅薯仔，記住要批皮，點解我會揀新薯呢，因為有啲皮喺呢個粥打魚湯度，食落去嗰個咬口係好啲嘅，呢個係我個人嘅喜好嚟嘅啫，新薯嗰啲皮都食得。</p></a>
+				<a href="#00:03:11.38" id="00:03:11.38" class="lt" onclick="jumptoTime(191, this.id)"><p>其實係懶囉，好 我哋切啦，切一啲Bite Size，當你舀呢個粥打魚湯嗰陣時，可以一粒粒咁樣食嘅，咁就最Happy啦，但係又唔好切得太細粒，太細粒就會唔見曬啲薯仔，又唔係太好，要切切剁剁嘅嘢已經搞掂曬，我哋而家可以開始煮，呢個時候我哋就要煎香Bacon，我哋將煎Pan已經整熱咗少少，我哋用幾多塊呢?兩塊。</p></a>
+				<a href="#00:03:48.42" id="00:03:48.42" class="lt" onclick="jumptoTime(228, this.id)"><p>我哋唔使落油，因為我哋想Bacon嗰啲油自己出曬，如果我哋再落油就會有少少炸嘅Feel，同埋會太多油，另外一樣嘢呢，呢一個步驟，你見到我切切剁剁，做曬所有嘢先至煎Bacon，假如你睇咗呢一個Video之後，覺得熟咗，強烈建議你，一開始就煎呢個Bacon先，因為佢需要少少時間，然後你喺煎緊Bacon嗰陣時。</p></a>
+				<a href="#00:04:21.42" id="00:04:21.42" class="lt" onclick="jumptoTime(261, this.id)"><p>等緊嗰陣時，就喺度醃下魚呀，切下洋蔥呀，搞下啲薯仔呀，咁樣你就會慳咗好多時間，但係而家我係想逐步逐步，去話畀你聽，睇得清楚少少，煎呢個煙肉呢，我就用中慢火，慢慢煎佢，你太快佢會快窿啲，油又出唔到嚟，你會見到真係，大約兩倍咁多，但係啲油已經出哂嚟㗎啦，而家呢我哋呢就將佢，放喺一個碟上面啦，讓它放涼一會。</p></a>
+				<a href="#00:05:0.16" id="00:05:0.16" class="lt" onclick="jumptoTime(300, this.id)"><p>然後呢，呢個鑊就有曬一啲煙肉嘅香油喺度，千祈唔好洗呢個鑊，我哋而家要做啲咩呢，炒洋蔥，開返個火爐先，都係中火啦，跟住落洋蔥，然後呢，我哋要加一啲煙燻嘅燈籠椒粉，炒一炒佢，呢個燻豆對於呢個周打魚湯係好緊要，所以一定要落，冇煙燻唔緊要，普通燻豆都可以，呢個時候呢，放你嘅三色豆落去，我哋想炒香下佢。</p></a>
+				<a href="#00:05:40.24" id="00:05:40.24" class="lt" onclick="jumptoTime(340, this.id)"><p>三色豆就梗係襯返三眼仔啦，跟住我哋就放呢個蘋果汁，煮到呢個蘋果汁冇咗一半就ok，但係點解我放蘋果汁呢，傳統嚟講就應該放呢個白酒，但係呢，我又唔係好想白酒嗰陣味令到我啲小朋友唔想食，但係雖然白酒味已經係煮走曬，但係我驚佢哋唔食，於是乎我就改用蘋果汁，咁其實如果你真係怕用白酒嘅話呢，呢個周打魚湯絕對可以用蘋果汁去代替。</p></a>
+				<a href="#00:06:18.08" id="00:06:18.08" class="lt" onclick="jumptoTime(378, this.id)"><p>咁當然你要做返傳統嗰個方法，就係白酒，煮走咗一半嘅蘋果汁，我哋而家就落呢個薯仔，不過唔好意思頭先爭已經唔記得同你講，就係切好咗個薯仔，記住浸喺水度，而家倒咗曬啲水先，落薯仔，攪一攪佢，跟住我哋放啲魚湯，加返少少水，攪一攪佢，跟住放一塊月桂葉，然後我哋就煮滾咗呢個湯之後，我哋就調返中細火，就等佢慢慢熬。</p></a>
+				<a href="#00:06:52.88" id="00:06:52.88" class="lt" onclick="jumptoTime(412, this.id)"><p>熬幾耐就熬佢十分鐘，ok，等我哋等個湯熬嘅時候，我哋都可以做其他嘢，頭先煎好咗嘅煙肉，應該非常之脆，而家我哋就要整碎佢，我哋搵張廚房紙，撳住佢，然後用手，或者揸，唔好撳，yeah，你可以整碎啲，忍唔住要扒一件，第二樣可以做的就是將魚切成煮的大小，當然我們想切到可以用匙羹一舀就一件，斜切就好似靚仔啲。</p></a>
+				<a href="#00:07:36.60" id="00:07:36.60" class="lt" onclick="jumptoTime(456, this.id)"><p>感覺上就可以多啲，唔使太細件，當然有些人就會鍾意成件魚拿去煮，跟住到湯要舀的時候先拆散，這樣做就好似比較自然，唯一一樣不好的，就是這麼大件魚煮的話，煮的時間會長久，長久的話魚就會柴，所以你自己喜歡，看你想用什麼方法煮，搞掂，等湯，十分鐘過後你會看到薯仔其實是軟了，不過用新薯就不會散得太多，現在調大一點到中火。</p></a>
+				<a href="#00:08:28.36" id="00:08:28.36" class="lt" onclick="jumptoTime(508, this.id)"><p>然後就要加忌廉，攪勻，現在就要將忌廉再煲多一會，等它收一點汁，大概三分鐘，然後就要放魚，放魚之後大概煮三至五分鐘，你可以找一塊來試試看，好嗎，來吧，三分鐘已經過去了，你看到已經煮滾了，忌廉也收了一點水，湯也變稠了，也非常香，這個時候就放魚，哇 弄散一點 不要混在一起，煮三至五分鐘就搞掂，在上碟之前記得要取走月桂葉。</p></a>
+				<a href="#00:09:27.44" id="00:09:27.44" class="lt" onclick="jumptoTime(567, this.id)"><p>就食得咯，很快就完成了這個，周打魚湯，當然要立即吃，最棒的是多士，再沾上湯來吃，這樣就完美了，我立即這樣做，沾沾沾，我的天啊，湯都吸收了，真的很好吃，我覺得這個最適合，真的沒有胃口，又不想吃太飽，又想吃好一點，婆媽這麼騎呢的感覺，周打魚湯加多士，完美，記住跟著這個食譜做，還有訂閱我的YouTube頻道，追蹤和讚好我的Facebook專頁。</p></a>
+				<a href="#00:10:32.20" id="00:10:32.20" class="lt" onclick="jumptoTime(632, this.id)"><p>多謝 喝湯了。</p></a>
+</div>
+	</body>
+</html>

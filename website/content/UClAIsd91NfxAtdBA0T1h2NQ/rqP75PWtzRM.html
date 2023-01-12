@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室老香港懷舊美食 滑蛋牛肉飯回憶番哂黎 Nostalgic fried rice with beef and scrambled eggs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'rqP75PWtzRM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室老香港懷舊美食 滑蛋牛肉飯回憶番哂黎 Nostalgic fried rice with beef and scrambled eggs</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.89" id="00:00:8.89" class="lt" onclick="jumptoTime(8, this.id)"><p>飯底是粒粒分明的，有蛋香的，再加上這些滑蛋，滑上加滑，我好容易就乾掉它，大家好，我想和大家分享一下，我小時候在酒樓吃的甜頭飯，就是我最喜愛的滑蛋牛飯炒底，本身我都好喜歡吃，但當時我略嫌，那些舊式酒樓，滑蛋牛的蛋給的很少，有一次我發現這麼少蛋，不如加上炒底，最多加一元左右，原來滑蛋牛的炒底是很好吃的，自從我開始做酒店。</p></a>
+				<a href="#00:00:57.97" id="00:00:57.97" class="lt" onclick="jumptoTime(57, this.id)"><p>做法蘭西餐，我沒有再去老式酒樓，因為沒有空，很多年都沒有吃過，如果要做懷舊感覺，還要好吃的家常甜頭飯，這個是值得推薦的，再喝一口就開始吧，滑蛋牛肉飯炒底，當然有飯，這個飯是我基本上黃金食譜，之前和大家說過如何煲飯，煲到可以這樣形態，一點都不黏鍋，十足十好似，逐粒逐粒飯煲熟了，倒在一起。</p></a>
+				<a href="#00:01:48.58" id="00:01:48.58" class="lt" onclick="jumptoTime(108, this.id)"><p>炒飯必要是這樣的飯底才可以做得好，放連結在這裏讓大家可以去看看，如何去成就一個無敵的炒飯底，炒飯一定要有雞蛋，材料其實很簡單，只需要牛肉、蔥、韭黃，必須必須必須，重要的要說三次，薑絲這些老牌茶居酒樓就會有，新派的薑絲又不會放，當然你放水也可以，放雞湯也可以，隨你做一個很薄很薄的芡，可以開始。</p></a>
+				<a href="#00:02:36.94" id="00:02:36.94" class="lt" onclick="jumptoTime(156, this.id)"><p>首先我們先炒飯，只要飯煲得好，就好像現在這樣，多麼輕鬆，已經基本上炒好了，飯底先加少許鹽調味，是不是已經是很令人胃口大開，炒得它乾身，粒粒分明，那就是好的炒飯，如果是這樣的炒飯，你吃一碗，你覺得太乾，之所以我這麼喜歡滑蛋牛飯，加上這個炒底，這個炒底就這樣吃已經很好吃，但加上濕濕的滑蛋牛肉鋪在上面，就不得了。</p></a>
+				<a href="#00:03:23.84" id="00:03:23.84" class="lt" onclick="jumptoTime(203, this.id)"><p>我們開始做滑蛋牛，有很多朋友可能覺得這些都可有可無，但我個人認為，我覺得有幾條薑絲 整個味道會差很遠，牛肉真的很過癮，如果你說不是和牛 我不吃的，你便用和牛，因為我要還原以前的味道，所以我這些牛肉 特意在街市的凍肉店，有些是幫你醃製，醃製好後 怎樣炒都不會韌，當然我覺得這個不錯，它沒有很厲害地醃製到軟了。</p></a>
+				<a href="#00:04:13.84" id="00:04:13.84" class="lt" onclick="jumptoTime(253, this.id)"><p>你加了韭黃就不要煮太久，因為有少許生粉，我們把這些雞湯一手套地加進去，20秒都不用 它就煮開了，為了讓芡汁看起來更好看，我們這個時候加少許油，將滑蛋倒進去，大家不要死命地攪拌，你看到它這樣，輕輕就行了，一個好像日式親子檔，這樣的滑蛋牛肉飯，就是這麼簡單，這樣就完成了，飯底是粒粒分明的，有蛋香的。</p></a>
+				<a href="#00:05:9.99" id="00:05:9.99" class="lt" onclick="jumptoTime(309, this.id)"><p>再加上這些滑蛋，滑上加滑，我好容易就乾掉它，這個是我的童年回憶，如果大家在七十年代時，經常去茶樓喝茶，這個是足夠你回憶一整晚的美食，即是配一杯酒，哈哈哈哈，Oh my god，本節目由以下贊助商贊助。</p></a>
+</div>
+	</body>
+</html>

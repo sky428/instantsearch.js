@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Cooking Ideas 分享煮意] 炆牛手指 (Braised Beef Fingers)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wsdadh-udw8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[Cooking Ideas 分享煮意] 炆牛手指 (Braised Beef Fingers)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.73" id="00:00:0.73" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天我們做一個炆牛手指，材料很簡單，先用鹽和黑椒醃牛手指，然後把紅蘿蔔，洋蔥和蒜頭切碎。</p></a>
+				<a href="#00:00:30.73" id="00:00:30.73" class="lt" onclick="jumptoTime(30, this.id)"><p>醃了半小時後，我們要把牛手指下鍋煎一煎，這個步驟最主要是把肉汁鎖在裡面，所以我們要把四面都煎香。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:0.73" id="00:01:0.73" class="lt" onclick="jumptoTime(60, this.id)"><p>然後把牛手指放在鍋裡，然後把肉汁鎖住，然後把牛手指放在鍋裡，然後把肉汁鎖住。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:17.63" id="00:01:17.63" class="lt" onclick="jumptoTime(77, this.id)"><p>煎的過程當中有少少焦香也無所謂，因為這樣更加惹味，煎的時間差不多了，就要把所有材料放在一起了，然後就放油在鐵鑄鍋或燜鍋內，爆香蒜頭和洋蔥，等洋蔥炒到熟透後，再放入紅蘿蔔，繼續炒，炒到差不多熟透後，就可以把牛手指放進鍋內，煮出來才發現原來這次有3磅牛手指，其實份量也挺多的，燜一鍋可以分幾餐吃。</p></a>
+				<a href="#00:02:49.63" id="00:02:49.63" class="lt" onclick="jumptoTime(169, this.id)"><p>炒了一會後，就可以放入雞清湯，雞清湯不要放太多，大概7-8分滿就可以了，湯滾起後，就可以放入月桂葉，煮多一會後，就可以蓋上鍋蓋，然後用慢火燜15-30分鐘左右，紅蘿蔔都軟了就差不多了，搞掂又食得，希望大家鍾意我今次嘅介紹啦，有咩提議儘管留言話我知，下次再見，拜拜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:57.09" id="00:03:57.09" class="lt" onclick="jumptoTime(237, this.id)"><p>要記得like comment同埋要分享畀你哋嘅朋友，仲要撳埋個鐘仔呀多謝你哋嘅支持下次見拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之好耐冇見！食嘢先！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KjsTLSZ7Oew',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之好耐冇見！食嘢先！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello Hello Hello Hello，喂好耐冇見呀咁多位，等下大家入嚟先，唔知會唔會忘記咗呢，啊，嘩呢個鏡頭污糟喎Facebook，抹一抹先，Facebook嘅請你大家等啦，抹一抹鏡頭呀，好啲，YouTube都可能要抹一抹，好，哈哈哈哈，喂好耐冇見呀咁多位，點呀你哋，唉我知道我放咗兩個禮拜假。</p></a>
+				<a href="#00:00:37.00" id="00:00:37.00" class="lt" onclick="jumptoTime(37, this.id)"><p>係咪呀有人數住我喎我記得，啊，上個禮拜我去睇出話劇啫，都俾人數住，哈哈哈哈，好慘呀，好等下你哋入嚟先，啊，load下我個ipad，搞下啲ipad嘢先呀，睇下你哋搞緊啲咩，唉，好耐冇見呀，YouTube搞一搞先，好，好第一個同我say hello嘅係阿Kim喎，喺YouTube嗰度，咁跟住呢Facebook。</p></a>
+				<a href="#00:01:14.00" id="00:01:14.00" class="lt" onclick="jumptoTime(74, this.id)"><p>我睇下啦，喂Hello呀，Hi，你杯酒喺邊度，喂至尊寶友問喎喺Facebook嘅，醒咗，唉，醒曬整咩食咁夜好夜咩，有人YouTube問好夜咩，唔係好夜咋嘛，啊，西多士唔係西多士呀今日，喂係喎，YouTube呢有人話睇咗個，Garlic bread呀蒜蓉包好正喎，喂真係你哋未睇你快啲睇呀，Facebook呀係咪呀。</p></a>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>Facebook呀sorry，原來冇做Live一輪呢，嘅人都會懵啲嘅係，冇意思呀，Ok咁因為呢暑假關係呢，咁就有好多人呢就未瞓覺嘅，咁例如呢，有一個呢啲咁樣嘅小朋友，喺度未瞓覺嘅，1 2 3，Hi，Hello，有人好想上鏡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:17.00" id="00:02:17.00" class="lt" onclick="jumptoTime(137, this.id)"><p>係呀，咁就代理都要分</p></a>
+				<a href="#00:02:20.00" id="00:02:20.00" class="lt" onclick="jumptoTime(140, this.id)"><p>Hello，這位女士，大家有沒有記得她叫Jelly?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:33.12" id="00:02:33.12" class="lt" onclick="jumptoTime(153, this.id)"><p>她叫Jelly</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:35.12" id="00:02:35.12" class="lt" onclick="jumptoTime(155, this.id)"><p>她叫Jelly，她已經很老了，你看看她，爸爸，哥哥，哥哥，喂，行了行了，她拍到你，你知道的，太太，很正，我自己看不到，你看不到，但鏡頭看到你，正，突然發現，傻傻的，你拍到我嗎?</p></a>
+				<a href="#00:03:7.12" id="00:03:7.12" class="lt" onclick="jumptoTime(187, this.id)"><p>我告訴她不是，這位Jelly，有跟她打招呼嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:15.12" id="00:03:15.12" class="lt" onclick="jumptoTime(195, this.id)"><p>但鏡頭拍不到我，Jelly已經很老了，也要和大家分享一下，因為我怕有時候你會看到她，有時候你會突然看不到她，發生什麼事呢?</p></a>
+				<a href="#00:03:38.12" id="00:03:38.12" class="lt" onclick="jumptoTime(218, this.id)"><p>這位老人家有病，她有一次心臟病發，心臟病發，暈倒了，你其實是想看她的樣子，不是看她的手，謝謝你，心臟病發，暈倒了一次，不是，兩次，她要好好照顧，不知道什麼時候會再來，所以要讓大家多看一看，Jelly，有人問她幾歲，她已經十四歲了，她是老人家，十四歲，很厲害，就是這樣，她不知道看著誰，她看著太太。</p></a>
+				<a href="#00:04:39.12" id="00:04:39.12" class="lt" onclick="jumptoTime(279, this.id)"><p>我先把Jelly放下，她好像不想，但好像很想，好像很舒服，好吧，會不會有人說我摸完狗之後又要煮東西吃，不是你摸就可以了，我摸而已 不是你吃應該說，不是你吃，很乾淨的啫喱，好 先放下啫喱，再見，好了，順便跟大家說一下，喂，那，多謝YouTube那裡，Vicky 多謝VG Vicky，你的Super Chat。</p></a>
+				<a href="#00:05:22.48" id="00:05:22.48" class="lt" onclick="jumptoTime(322, this.id)"><p>Hi Chef and Kate，多謝你的Super Chat，Thank you so much，如果YouTube的朋友想玩Super Stickers，Super Thanks，Super Chat的話，隨便玩一下，OK，那就是那句，用來資助Kate和Luke，出外讀書的一個洗費。</p></a>
+				<a href="#00:05:41.92" id="00:05:41.92" class="lt" onclick="jumptoTime(341, this.id)"><p>大家也看到，如果有看我們Facebook，或者YouTube的相片的話，Kate近來自己洗碗，開始很乖，我們不叫她自己洗碗，所以我說，已經踏出了出外讀書的第一步，那就是，可以自己照顧一下自己，起碼洗一下碗，還有兒子，報告一下給大家聽，這麼久沒見，兒子他自己開始，煮早餐給自己吃了，雖然是很簡單的。</p></a>
+				<a href="#00:06:13.28" id="00:06:13.28" class="lt" onclick="jumptoTime(373, this.id)"><p>譬如煎一隻蛋給自己吃，或者是煮個出前一丁給自己和妹妹吃，她也有眼有眼，算是這樣，只差她不太洗碗，所以兩個混在一起就好了，OK，那就是這樣，回答一下Facebook，有人說，Mukji，她媽媽十五歲，今天八月中上了天堂，是，沒錯，All dogs and cats goes to heaven，OK。</p></a>
+				<a href="#00:06:50.56" id="00:06:50.56" class="lt" onclick="jumptoTime(410, this.id)"><p>所以，其實應該很開心，他們陪伴過我們的日子，傷心就是傷心，但是寵物始終，所有東西都是一樣，有一個完結的日子，不過大家要記住，開心的日子是最好的，OK，好，拜拜，星期五當然要喝點東西，今天我喝的東西是一些神徒介紹給我喝的，他說這個加這個很好喝的一定要喝，我不知道是不是因為，Anson Lo賣了那個神品的廣告，但是他就說。</p></a>
+				<a href="#00:07:33.43" id="00:07:33.43" class="lt" onclick="jumptoTime(453, this.id)"><p>他的神徒就跟我說，這個很好喝的一定要喝，這個只是某一種味道而已，就是什麼呢，當然大家有沒有吃過這個新年最好的飲品呢，芋蝦，芋蝦，很容易記住的，神徒就跟我說，這個芋蝦有芋子味的那個要混酒，混酒就最好喝了，OK，我還沒試過的，我想試一下了今天，好，多謝Marlene的Super Chat，Happy Friday Mr. 和Mrs. Tarzan。</p></a>
+				<a href="#00:08:14.15" id="00:08:14.15" class="lt" onclick="jumptoTime(494, this.id)"><p>Happy Friday to you too，Thank you so much，好了，我們首先就倒了這個芋蝦，我經常覺得名字很正，OK，好，新年飲品，他們說，先倒這麼多，這個就是芋蝦，我真的沒喝過的，我試一下這個是什麼味道，OK，好，然後，他就說芋蝦混酒，是這樣的，我們試一下吧，芋蝦混酒。</p></a>
+				<a href="#00:08:51.55" id="00:08:51.55" class="lt" onclick="jumptoTime(531, this.id)"><p>應該是多少呢，我不知道，OK，神徒介紹的這個，是他告訴我好喝的，我不知道好不好喝，多謝神徒們，Thank you so much，我試一下這個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:14.55" id="00:09:14.55" class="lt" onclick="jumptoTime(554, this.id)"><p>好不好喝，真的OK，好不好喝，有紫加清酒是OK，你又入鏡了，你又看到我了，有條縫隙看到你，不是很看得到，多好喝，多謝神徒，Thank you so much，嗯，Not bad，大家有沒有喝過，可以試一下，很正，OK</p></a>
+				<a href="#00:09:41.55" id="00:09:41.55" class="lt" onclick="jumptoTime(581, this.id)"><p>황ään evenly，adora，好，新年飲品，好正呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:47.66" id="00:09:47.66" class="lt" onclick="jumptoTime(587, this.id)"><p>好，先放走這個清酒，放走這個芋蝦，喂，這個兩個星期做了些什麼?</p></a>
+				<a href="#00:10:1.66" id="00:10:1.66" class="lt" onclick="jumptoTime(601, this.id)"><p>前個星期我去吃飯，跟著其實跟Leo波和朱薰姨去吃飯，跟著我們去看電影，看明日戰記，明日戰記，有沒有支持明日戰記?</p></a>
+				<a href="#00:10:21.66" id="00:10:21.66" class="lt" onclick="jumptoTime(621, this.id)"><p>大家可能都說支持明日戰記，支持香港科幻片，支持古生，但我和太嫂支持另外一個，因為導演是我們的朋友，所以我們就，高輝好野，我們叫他高輝，CG畫得好靚，CG畫得好，其實在拍這套戲之前，他已經做了很多年CG，是很叻的，他今次第一次做導演，我覺得正呀!</p></a>
+				<a href="#00:10:57.66" id="00:10:57.66" class="lt" onclick="jumptoTime(657, this.id)"><p>真是大片導演，要支持下他，我就第一個支持高輝先，即是導演，當然又支持古生，支持香港的沙發電影，不知道你們看了沒有?</p></a>
+				<a href="#00:11:15.66" id="00:11:15.66" class="lt" onclick="jumptoTime(675, this.id)"><p>我看了，我覺得幾好看，Not bad，是正的，不要說是港產片，我覺得是越來越靚，越來越好，畫得靚，因為我自己本身很喜歡，我不懂形容是什麼，日本式的末世紀，很殘的世界，譬如說，不好意思，我被阿基拉影響，所以之後我喜歡看，末世紀很殘的世界，然後我喜歡看，戰鬥得很久的機械人，不是很新的，小時候很喜歡看。</p></a>
+				<a href="#00:12:7.66" id="00:12:7.66" class="lt" onclick="jumptoTime(727, this.id)"><p>長大後就喜歡看，殘舊的機械人，好像經歷過滄桑，為什麼我喜歡星戰呢?</p></a>
+				<a href="#00:12:17.66" id="00:12:17.66" class="lt" onclick="jumptoTime(737, this.id)"><p>因為星戰是特別殘舊，因為George Lucas說過，星戰是經歷了很久的戰爭，所以戰機都是殘舊的，明日戰記也有這樣的感覺，裝甲也很殘舊，我覺得我是喜歡的，所以大家也要支持一下，好像很久沒見過，不停說話都沒煮東西吃，我想給你看些東西，給你看些什麼?</p></a>
+				<a href="#00:12:55.66" id="00:12:55.66" class="lt" onclick="jumptoTime(775, this.id)"><p>看什麼?</p></a>
+				<a href="#00:12:56.66" id="00:12:56.66" class="lt" onclick="jumptoTime(776, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:57.66" id="00:12:57.66" class="lt" onclick="jumptoTime(777, this.id)"><p>看什麼?，這個，這個，還沒睡的狀態就是這樣，暑假，這個是，這個是什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:6.66" id="00:13:6.66" class="lt" onclick="jumptoTime(786, this.id)"><p>這個是Panda，Panda，OK，Panda，Panda，OK，這個是Red Panda，OK，好了，都夜了，不睡，我去你的床，不睡，就是這樣，暑假就是這樣，其實都要開始煮東西了，好了，好了，這樣，看看一些留言，聽著說，要你吃蛋糕，什麼時候找我拍電影?</p></a>
+				<a href="#00:13:47.91" id="00:13:47.91" class="lt" onclick="jumptoTime(827, this.id)"><p>啊啊啊啊啊，高輝不知道，他這麼大製作的人不會找到我，試試可以混啤酒嗎?</p></a>
+				<a href="#00:13:57.91" id="00:13:57.91" class="lt" onclick="jumptoTime(837, this.id)"><p>是嗎?Facebook的Pinky說可以混啤酒，我真的不知道，回酒區可以嗎?</p></a>
+				<a href="#00:14:3.91" id="00:14:3.91" class="lt" onclick="jumptoTime(843, this.id)"><p>Really?</p></a>
+				<a href="#00:14:4.91" id="00:14:4.91" class="lt" onclick="jumptoTime(844, this.id)"><p>我真的不知道，好，接著，看看，YouTube那些做什麼?</p></a>
+				<a href="#00:14:16.78" id="00:14:16.78" class="lt" onclick="jumptoTime(856, this.id)"><p>YouTube那些，哥哥煮麵，妹妹洗碗，有沒有清酒介紹，我真的沒有，因為清酒，是別人叫我喝的，沒什麼特別，唯一我可以說，我自己喜歡純米酒，不是大吟釀，純米酒，為什麼呢，因為純米酒，那個，那些叫什麼，Distill，蒸餾的過程，沒那麼多，反而多些角色，味道更濃，所以我喜歡喝，如果清酒的話，我喜歡喝純米酒那種。</p></a>
+				<a href="#00:15:4.78" id="00:15:4.78" class="lt" onclick="jumptoTime(904, this.id)"><p>好喝很多，我自己覺得，是啦，煮東西就吃啦，其實我今天很想煮一個甜品，是很簡單的，我想介紹給大家，因為這個甜品，我覺得是很好吃的，因為下午茶又可以，宵夜又可以，我們做什麼呢，英文叫Cinnamon Toast，就是，肉桂多士，這個肉桂多士真的好正，一定要做給大家看，很簡單，我們先移動鏡頭，Facebook先移動。</p></a>
+				<a href="#00:15:44.78" id="00:15:44.78" class="lt" onclick="jumptoTime(944, this.id)"><p>Youtube大家等下，有人問Luke仔在哪，Luke仔在哪，OK，等下，各位，這樣好些啦，OK，到Youtube啦，謝謝你，OK，這裡，OK啦，生完酒都好正，Youtube說，我真的沒試過，好，下次試試泡啤酒，真的沒試過，很想看你在ViuTV拍煮食節目，我也很想看到自己在ViuTV拍煮食節目，ViuTV什麼時候找我?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:40.74" id="00:16:40.74" class="lt" onclick="jumptoTime(1000, this.id)"><p>你繼續申請吧，你們繼續寫電郵吧，繼續寫電郵吧，去ViuTV問吧，寫信問吧，喂!這樣吧，今天這個Cinnamon Toast的材料很簡單，牛油，我們不是用這麼多的，不用擔心，然後有砂糖，有肉桂粉，還有白麵包，首先要把糖和肉桂粉拌勻，然後要加少許鹽，因為要把味道調出來，因為只有糖和肉桂粉的味道，只有甜味。</p></a>
+				<a href="#00:17:40.74" id="00:17:40.74" class="lt" onclick="jumptoTime(1060, this.id)"><p>沒有肉桂粉的味道，哇 正，好 然後我們要做些什麼呢，差點忘記了，要拿一把小刀，我們就要放些牛油，放在鍋子裡</p></a>
+				<a href="#00:18:10.49" id="00:18:10.49" class="lt" onclick="jumptoTime(1090, this.id)"><p>然後開火，看不看得到，Facebook可能要，要有一點，我剛剛就已經聞到，這麼快 還沒煮，我聞到有些辛辣味，你喜不喜歡吃辛辣味，太嫂，好喜歡，好喜歡，我這個辛辣味，喜歡是長大了才喜歡，我也是，我小時候覺得，辛辣味好像口水味，我覺得，真的老了，老了就是這樣，不是，我覺得辛辣味很老，是啊，很外國人。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:51.49" id="00:18:51.49" class="lt" onclick="jumptoTime(1131, this.id)"><p>好啦，我們現在就融了些牛油，我們用中火，不要太大火，牛油會燒焦，如果不是，我們要將所有牛油融化，好啦，起泡之後，我們就將一邊麵包放下去，壓一壓它，OK，盡量吸收牛油，轉呀轉呀轉，不停地吸，你會發現牛油會沒有的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:26.49" id="00:19:26.49" class="lt" onclick="jumptoTime(1166, this.id)"><p>哈哈哈哈，本來很多的，你看到很多的，嘩，突然間沒有了</p></a>
+				<a href="#00:19:35.49" id="00:19:35.49" class="lt" onclick="jumptoTime(1175, this.id)"><p>OK，吸一吸，好，好啦，接著，吸了之後，我們另一邊要吸了，我聞到了，你也聞到了，是不是，做這個Cinnamon Toast的好處就是，你可以不停地加牛油</p></a>
+				<a href="#00:19:53.49" id="00:19:53.49" class="lt" onclick="jumptoTime(1193, this.id)"><p>哈哈哈哈，因為，你不夠牛油的話，是不好味的</p></a>
+				<a href="#00:20:1.49" id="00:20:1.49" class="lt" onclick="jumptoTime(1201, this.id)"><p>嘩，我們要繼續加牛油，在那邊，因為那邊也要吸的，是不是</p></a>
+				<a href="#00:20:10.49" id="00:20:10.49" class="lt" onclick="jumptoTime(1210, this.id)"><p>好香，Oh my gosh，好正，糖是要多一點的，有人問，在Facebook問，究竟糖是不是要多一點呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:28.90" id="00:20:28.90" class="lt" onclick="jumptoTime(1228, this.id)"><p>是，其實肉桂粉，大概要放兩茶匙，都夠了，至於糖，要多一點，可能要三湯匙，OK?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:42.90" id="00:20:42.90" class="lt" onclick="jumptoTime(1242, this.id)"><p>三至四湯匙，好，哇!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:48.90" id="00:20:48.90" class="lt" onclick="jumptoTime(1248, this.id)"><p>已經很棒了，OK?</p></a>
+				<a href="#00:20:52.90" id="00:20:52.90" class="lt" onclick="jumptoTime(1252, this.id)"><p>吸收了牛油，火要小一點，小火，OK?</p></a>
+				<a href="#00:21:0.90" id="00:21:0.90" class="lt" onclick="jumptoTime(1260, this.id)"><p>還未可以，中火，因為那邊還未烘好，我們，要吸收牛油，你看到，沒有牛油就對了，哇!</p></a>
+				<a href="#00:21:16.90" id="00:21:16.90" class="lt" onclick="jumptoTime(1276, this.id)"><p>多漂亮，很開心，Oh my goodness，Very nice，好，小火，因為開始太熱了，好，接著我們做些很嚴峻的事，就是將那些，Cinnamon加糖，灑上多士上，這個厲害，這個厲害，好，接著，我們要做甚麼呢?</p></a>
+				<a href="#00:21:54.90" id="00:21:54.90" class="lt" onclick="jumptoTime(1314, this.id)"><p>將它翻動，糖就會溶化，但會開始焦糖，是很正呀!我告訴你，Oh my gosh!</p></a>
+				<a href="#00:22:16.83" id="00:22:16.83" class="lt" onclick="jumptoTime(1336, this.id)"><p>OK，真的不可小說，如果太乾的話，我們可以加少少牛油，少少就可以了，嘩!好多牛油呀!大家說，當然啦!</p></a>
+				<a href="#00:22:30.83" id="00:22:30.83" class="lt" onclick="jumptoTime(1350, this.id)"><p>開多時候另一選擇，這個做法是要多牛油的，嘩!</p></a>
+				<a href="#00:22:38.83" id="00:22:38.83" class="lt" onclick="jumptoTime(1358, this.id)"><p>你們西多士不肥，是不是呀?</p></a>
+				<a href="#00:22:42.83" id="00:22:42.83" class="lt" onclick="jumptoTime(1362, this.id)"><p>你那些鄰居很痛苦，因為剛剛那麼香又沒飯吃，隔著螢幕都聞到，嘩!正</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:50.83" id="00:22:50.83" class="lt" onclick="jumptoTime(1370, this.id)"><p>Oh my gosh!，好呀!</p></a>
+				<a href="#00:22:54.83" id="00:22:54.83" class="lt" onclick="jumptoTime(1374, this.id)"><p>像呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:56.83" id="00:22:56.83" class="lt" onclick="jumptoTime(1376, this.id)"><p>OK!好呀!</p></a>
+				<a href="#00:22:58.83" id="00:22:58.83" class="lt" onclick="jumptoTime(1378, this.id)"><p>一邊攪拌之後，我告訴你，再加牛油，不說笑的，不說笑那麼邪惡，不說笑那麼邪惡，然後我們又翻面，嘩!你看看這邊，已經焦糖了，很正，在這個時候，火真的不可以太大，現在要開始等了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:35.88" id="00:23:35.88" class="lt" onclick="jumptoTime(1415, this.id)"><p>你會發現，這邊其實已經是，有少少焦糖了的狀態出現，如果你是，一會拿起上來，冷了下來一點，反而會硬的，嘩!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:53.88" id="00:23:53.88" class="lt" onclick="jumptoTime(1433, this.id)"><p>Oh my gosh!</p></a>
+				<a href="#00:23:57.88" id="00:23:57.88" class="lt" onclick="jumptoTime(1437, this.id)"><p>要開抽氣扇，Sorry!Sorry!Sorry!不好意思，Sorry!Sorry!Sorry!不好意思，Sorry!Sorry!Sorry!</p></a>
+				<a href="#00:24:7.88" id="00:24:7.88" class="lt" onclick="jumptoTime(1447, this.id)"><p>真的不要說笑，這個，Oh!</p></a>
+				<a href="#00:24:13.88" id="00:24:13.88" class="lt" onclick="jumptoTime(1453, this.id)"><p>Oh!</p></a>
+				<a href="#00:24:15.88" id="00:24:15.88" class="lt" onclick="jumptoTime(1455, this.id)"><p>如果太大火，先拿起開，嘩!</p></a>
+				<a href="#00:24:21.88" id="00:24:21.88" class="lt" onclick="jumptoTime(1461, this.id)"><p>Excuse me!</p></a>
+				<a href="#00:24:23.88" id="00:24:23.88" class="lt" onclick="jumptoTime(1463, this.id)"><p>真的很好吃，我告訴你，拌一拌，是很正的這個Cinnamon Toast，這個方法，是無敵的，我告訴你，你看，嘩!</p></a>
+				<a href="#00:24:41.88" id="00:24:41.88" class="lt" onclick="jumptoTime(1481, this.id)"><p>Oh my gosh!</p></a>
+				<a href="#00:24:43.88" id="00:24:43.88" class="lt" onclick="jumptoTime(1483, this.id)"><p>已經硬了，正!</p></a>
+				<a href="#00:24:47.88" id="00:24:47.88" class="lt" onclick="jumptoTime(1487, this.id)"><p>好!</p></a>
+				<a href="#00:24:49.88" id="00:24:49.88" class="lt" onclick="jumptoTime(1489, this.id)"><p>再燒多一會，嘩!很開心，好開心，好!</p></a>
+				<a href="#00:25:1.88" id="00:25:1.88" class="lt" onclick="jumptoTime(1501, this.id)"><p>完成!關火!</p></a>
+				<a href="#00:25:3.88" id="00:25:3.88" class="lt" onclick="jumptoTime(1503, this.id)"><p>上!</p></a>
+				<a href="#00:25:5.88" id="00:25:5.88" class="lt" onclick="jumptoTime(1505, this.id)"><p>嘩!</p></a>
+				<a href="#00:25:14.84" id="00:25:14.84" class="lt" onclick="jumptoTime(1514, this.id)"><p>接著，還未完的，再灑少許在上面，少許就可以了，不用太多，這是一個甜品來的，各位，先看看，嘩，這個真的很好吃，先看看，我的天啊，這個不是焦的，有人說焦了，當然不是啦，是焦糖化的，這個是焦糖化的，焦糖化的，OK，接著拿刀叉吃，我告訴你，好，拿一把刀，真的不是開玩笑，真的很好吃，拿另一個叉。</p></a>
+				<a href="#00:26:22.55" id="00:26:22.55" class="lt" onclick="jumptoTime(1582, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:26.55" id="00:26:26.55" class="lt" onclick="jumptoTime(1586, this.id)"><p>嘩，嘩，我的天啊，嘩! 呃呃聲啊! 告訴你，好好食!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:3.38" id="00:27:3.38" class="lt" onclick="jumptoTime(1623, this.id)"><p>嘩! 真係! 再次俾大家望一望先，Look at this! Look at this!</p></a>
+				<a href="#00:27:12.38" id="00:27:12.38" class="lt" onclick="jumptoTime(1632, this.id)"><p>Very nice!</p></a>
+				<a href="#00:27:14.38" id="00:27:14.38" class="lt" onclick="jumptoTime(1634, this.id)"><p>真係好正! 好好味喎!</p></a>
+				<a href="#00:27:18.38" id="00:27:18.38" class="lt" onclick="jumptoTime(1638, this.id)"><p>嘩! 好開心啊!</p></a>
+				<a href="#00:27:21.38" id="00:27:21.38" class="lt" onclick="jumptoTime(1641, this.id)"><p>喂! 非洲多士，有啲人成日覺得黑咗 窿咗 唔好睇啊 非洲多士啊 咩咩咩啊 成啊嗰啲，我唔知你講笑定係乜嘢啦 但係，Cinnamon呢 整到出嚟嘅色呢 就係咁嘅，糖呢 如果Scaramon Caramelize咗 焦糖化咗呢 係咁嘅，如果你覺得係非洲多士嘅話呢，唉! 我都無嘢好講啦 真係。</p></a>
+				<a href="#00:27:43.38" id="00:27:43.38" class="lt" onclick="jumptoTime(1663, this.id)"><p>But anyway 咁啊，多謝阿KL 喺YouTube嘅Super Chat OK，Thank you so much 好，我哋食下嘢先 好 轉一轉Facebook嘅朋友過嚟啦，Hello，Hi，Hello Hello Hello，好 調返轉個鏡頭啊，有啲似年糕啊 係咩?</p></a>
+				<a href="#00:28:10.38" id="00:28:10.38" class="lt" onclick="jumptoTime(1690, this.id)"><p>真係咩? 好 YouTube嘅你 過返嚟先啊，Hello，Hi，Hello，OK 好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:28:22.38" id="00:28:22.38" class="lt" onclick="jumptoTime(1702, this.id)"><p>真係好好食啊 話畀你聽，係好味嘅</p></a>
+				<a href="#00:28:30.38" id="00:28:30.38" class="lt" onclick="jumptoTime(1710, this.id)"><p>唉，食嘢啦喂 等陣先，Facebook 調低返少少，好易整 嗱，你望落去好易整 但係呢，如果你個火係太大嘅話呢 個牛油呢 真係會有機會係窿嘅，咁個糖如果加咗落去呢 真係會有機會呢 係會燒窿嘅，唔係講笑 係有機會窿嘅，不過 如果你整得好嘅話呢，係好好食㗎，聽唔聽到啲聲啊 熄咗個呢個嘢先，已經硬了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:14.47" id="00:29:14.47" class="lt" onclick="jumptoTime(1754, this.id)"><p>OK，真的不是開玩笑，好，我們吃下去了，用手還是什麼好呢，用手吧，用手吃吧，嗯，So good，哇，讓我享受一下，Very nice，Very good，你看看，中間那些，給facebook那些看看，看到嗎，YouTube，中間那些，OK，嗯，哦!</p></a>
+				<a href="#00:30:9.99" id="00:30:9.99" class="lt" onclick="jumptoTime(1809, this.id)"><p>Youtube from Venezuela，Do I have recipe for egg tartar?</p></a>
+				<a href="#00:30:18.99" id="00:30:18.99" class="lt" onclick="jumptoTime(1818, this.id)"><p>Oh， I'm not sure，I don't have it with me now，But I do， ok?</p></a>
+				<a href="#00:30:25.99" id="00:30:25.99" class="lt" onclick="jumptoTime(1825, this.id)"><p>Thank you for tuning in from Venezuela，Como estas?</p></a>
+				<a href="#00:30:30.99" id="00:30:30.99" class="lt" onclick="jumptoTime(1830, this.id)"><p>Ha ha ha， that's my only Spanish，真的好吃，怎么办呢?</p></a>
+				<a href="#00:30:47.99" id="00:30:47.99" class="lt" onclick="jumptoTime(1847, this.id)"><p>Bien， y tu?</p></a>
+				<a href="#00:30:51.99" id="00:30:51.99" class="lt" onclick="jumptoTime(1851, this.id)"><p>Bien， bien， bien，Gracias， gracias，好好吃，好，先看看，很好吃，真的很好吃，不是開玩笑，很邪惡，但真的很好吃，Youtube有人問我會不會教做關東煮，關東煮?其實很容易的，如果你想的話可以教一下，繼續吧，真的不要開玩笑，想不到這麼簡單，四種材料。</p></a>
+				<a href="#00:31:42.99" id="00:31:42.99" class="lt" onclick="jumptoTime(1902, this.id)"><p>牛油，鹽，糖，五種材料，牛油，鹽，糖，肉桂粉，麵包，用煮的方法，令整件事變成另一件事，煮食真的很奇妙，很過癮，有些人喜歡煮食，想死，但如果你喜歡煮食，為何可以這麼有趣，加起來變成另一個味道，瘋狂，現在是迫大家看我吃東西，因為我吃不到，因為很好吃，好了，吃完，先喝一杯，有少少像在吃一些waffle的感覺，但是脆的。</p></a>
+				<a href="#00:32:53.58" id="00:32:53.58" class="lt" onclick="jumptoTime(1973, this.id)"><p>不是太脆，表面是脆的，但你們真的要試一下，要試一下怎樣吃，不過真的要小心燒焦，今個星期五很感謝大家收看我的live，很久沒有和大家見面，放了兩個星期暑假，希望現在上學，所有事情都正常，小朋友要上學，對我們做父母來說所有事情都正常，增肥的要看我做節目，但說不出口，我現在想減肥，笑吧笑吧。</p></a>
+				<a href="#00:33:45.66" id="00:33:45.66" class="lt" onclick="jumptoTime(2025, this.id)"><p>隨便笑吧，我不想這麼早死，所以想減肥，但這個我忍了很久，這個星期我口很節儉，節儉得很厲害，所以留了這個quota，星期五和你們吃，所以我要很珍惜，香港burger有沒有推介，我真的不知道，因為我吃的你可能不覺得好吃，我自己喜歡吃five guys，但有些人說五 guys很一般，有些人說shake shack好吃。</p></a>
+				<a href="#00:34:37.82" id="00:34:37.82" class="lt" onclick="jumptoTime(2077, this.id)"><p>但我覺得一般，日本的shake shack好吃，當然有很多不小的店做burger好吃，但我又忘記了名字，anyway，今天我們的直播就到此為止，希望下星期大家同樣時間，繼續收看泰山自煮之泰想宵夜，多謝今晚各位一齊來和我聊天，兩個星期沒有見面，Thank you so much，希望下星期還可以見到你們。</p></a>
+				<a href="#00:35:23.67" id="00:35:23.67" class="lt" onclick="jumptoTime(2123, this.id)"><p>有人問如果沒有Cinnamon只用糖可不可以，都可以的，但沒有那種味道，要小心燒焦，可以試一下，但沒有那種味道，差一點點，可以試一下，多謝你們的收看，晚了，各位阿姨叔叔睡覺了，我們下星期再見，多謝你們，先和Facebook說再見，再見，Youtube和你說再見。</p></a>
+				<a href="#00:35:58.67" id="00:35:58.67" class="lt" onclick="jumptoTime(2158, this.id)"><p>再見。</p></a>
+</div>
+	</body>
+</html>

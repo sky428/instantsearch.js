@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Cooking Ideas 分享煮意] XO醬小炒王 (XO Sauce Siu Chow Wong)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '39YMnqR58EA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[Cooking Ideas 分享煮意] XO醬小炒王 (XO Sauce Siu Chow Wong)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.66" id="00:00:1.66" class="lt" onclick="jumptoTime(1, this.id)"><p>好，今日我哋整小炒王，材料有韭菜花，蝦，菜脯，蝦乾，XO醬，青雞湯，辣椒，蒜頭，腰果，蝦要用鹽，胡椒，豆粉醃一醃，蝦乾要浸軟切絲，菜脯都要浸軟切絲，記得要熟乾，辣椒當然要切絲，蒜頭剁碎，準備，首先我哋起個白鑊，炒一炒啲菜脯絲先。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.66" id="00:00:42.66" class="lt" onclick="jumptoTime(42, this.id)"><p>務求炒到佢乾身，咁又香又脆，就得㗎啦，炒完之後呢我哋就爭啲油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:53.66" id="00:00:53.66" class="lt" onclick="jumptoTime(53, this.id)"><p>落蒜頭，兜一兜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:57.66" id="00:00:57.66" class="lt" onclick="jumptoTime(57, this.id)"><p>跟住呢就落埋啲蝦乾落去炒，都係咁呀一樣係炒香佢。</p></a>
+				<a href="#00:01:6.66" id="00:01:6.66" class="lt" onclick="jumptoTime(66, this.id)"><p>炒完之後呢我哋就要畢起備用，跟住我哋就準備炒蝦啦，小紅脊鑊落油落蒜頭，炒蝦嘅秘訣呢我其實都講過好多次㗎啦。</p></a>
+				<a href="#00:01:36.66" id="00:01:36.66" class="lt" onclick="jumptoTime(96, this.id)"><p>最緊要最緊要最緊要呢就係唔好炒得太熟，因為呢我哋跟住之後呢會再同啲菜呢炒埋一齊嘅，所以喺呢個階段呢啲蝦呢你炒到佢一半熟呀七成熟呢好夠㗎啦，啲蝦搞掂啦又畢起擺埋同一隻碟度先啦，接著炒韭菜花。</p></a>
+				<a href="#00:02:13.50" id="00:02:13.50" class="lt" onclick="jumptoTime(133, this.id)"><p>燒好鑊 放油，放多點蒜頭，小菜王要香口才好吃，接著放韭菜花，炒韭菜花，火要夠大，但不是死炒難炒，因為，炒多兩下，我會放，雞清湯，然後蓋上蓋子。</p></a>
+				<a href="#00:02:39.50" id="00:02:39.50" class="lt" onclick="jumptoTime(159, this.id)"><p>再煮一會，韭菜花就會好吃，煮了一會就蓋上蓋子，看到湯還在。</p></a>
+				<a href="#00:02:53.50" id="00:02:53.50" class="lt" onclick="jumptoTime(173, this.id)"><p>炒多兩下，等湯水揮發，然後就放，蝦乾，和菜脯絲。</p></a>
+				<a href="#00:03:3.50" id="00:03:3.50" class="lt" onclick="jumptoTime(183, this.id)"><p>拌勻，炒多兩下，再放辣椒絲，和最重要的XO醬。</p></a>
+				<a href="#00:03:11.50" id="00:03:11.50" class="lt" onclick="jumptoTime(191, this.id)"><p>XO醬，多少，適隨專便，喜歡辣的可以放多點辣椒絲或XO醬，然後快炒，拌勻，差不多了。</p></a>
+				<a href="#00:03:29.50" id="00:03:29.50" class="lt" onclick="jumptoTime(209, this.id)"><p>這個菜我教完我姐姐，之後她都炒過幾次，所以你看到，她炒出來的火候，都不錯，亦都炒出來很乾身，都是一樣東西，給多點機會她們，炒多幾次，慢慢上手就好吃。</p></a>
+				<a href="#00:03:59.50" id="00:03:59.50" class="lt" onclick="jumptoTime(239, this.id)"><p>最後把腰果，撒上面，就完成，這個菜的材料，其實可以加加減減，甚至你喜歡的話，加點肉絲雞絲，或者腰柱絲，都可以，希望大家喜歡我今次的介紹，如果有什麼想法，不妨留言告訴我，再見!</p></a>
+</div>
+	</body>
+</html>

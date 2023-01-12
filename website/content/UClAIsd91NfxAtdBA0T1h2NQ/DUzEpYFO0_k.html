@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室 乾炒牛河最緊要”呢”個步驟 仲要咁炒先夠鑊氣</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'DUzEpYFO0_k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室 乾炒牛河最緊要”呢”個步驟 仲要咁炒先夠鑊氣</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家看看這個乾炒牛河有多美麗，我真的用了三分鐘就炒出來，這種我們稱之為鑊氣，這個真的沒得頂，超滿足，大家好，今天先喝了再和大家說，很多時候我都會煮意大利的Pasta，今天就相反，反而我想和大家分享一下，我們中國四大發明，粥品麵飯其中一個，榜首位置最受歡迎的中國Pasta。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:35.32" id="00:00:35.32" class="lt" onclick="jumptoTime(35, this.id)"><p>就是乾炒牛河，其實乾炒牛河，我認為是發生於電光火石之間的一道菜，只要所有材料準備好，三分鐘內更快的公仔麵，就應該可以煮好了，第一件事要處理的，就是處理牛肉，今天我用的，就是最普通的肉檔牛肉，如果是富貴一點，牛小排切片，或者和牛牛柳切片也可以，但我覺得這樣比較原風味，你知道我們去酒樓吃都是牛腩肉，買了牛肉回來。</p></a>
+				<a href="#00:01:20.34" id="00:01:20.34" class="lt" onclick="jumptoTime(80, this.id)"><p>都是很簡單的醃製法，少許生抽，少許糖，少許生粉，不要做太多，太多生粉的話，炒完之後會像粉一樣黏在牛肉上，我覺得一點也不好吃，少許水，好了，這樣就弄勻它，牛肉先弄好後就放一旁，早在我學法蘭西餐之前，其實我是做乾炒牛河出身的，你猜不到吧，我記得半世紀之前，我們做小朋友學師的時候，我們都是做打河的。</p></a>
+				<a href="#00:01:58.62" id="00:01:58.62" class="lt" onclick="jumptoTime(118, this.id)"><p>打河一有乾炒牛河的單一進來，我們就會一把河粉，一把河粉這樣放在碟子上，然後我們會把它弄散，如果不弄散，師傅的河粉會一河飛過來，這些河粉是一塊塊的，我們要弄散到這樣，一條條分開，這樣才可以給師傅炒，如果不弄散，一會兒會變成三條一疊，四條一疊，所以這個步驟非常重要，最後一條也被我弄散了，基本上我檢查過。</p></a>
+				<a href="#00:02:35.26" id="00:02:35.26" class="lt" onclick="jumptoTime(155, this.id)"><p>也沒有疊起來，它說是炒河，你看到它挺軟熟，也不是很厚，以前我們所謂的炒河是很粗身的，很厚，又比較闊，那種是我們以前的人喜歡吃的，咬下去有質感的河粉，現在的人偏向比較軟滑的河粉，當然，現在有些還經典到，要用湯河來炒，更薄、更滑，如果你喜歡滑的，你可以用湯河，但如果你喜歡比較酒樓風味的，可以用炒河去炒。</p></a>
+				<a href="#00:03:12.74" id="00:03:12.74" class="lt" onclick="jumptoTime(192, this.id)"><p>這樣就對了，除了河粉， 說說配料吧，近十多二十年，我去很多地方吃乾炒牛河，都不加薑絲，但以前， 當我小時候，上酒樓吃， 乾炒牛河也有薑絲，反而加了洋蔥，我覺得不搭配，如果你喜歡咬下去爽口，多加銀芽，我喜歡加少許韭菜花，我喜歡咬下去爽口的感覺，炒乾炒牛河的時候，這個韭黃是最後加的，韭黃一炒過熟， 軟了， 一下子掉下來。</p></a>
+				<a href="#00:03:54.08" id="00:03:54.08" class="lt" onclick="jumptoTime(234, this.id)"><p>真的一般， 不太好吃，如果把韭黃的香味發揮到最盡，一定要是後期才行，我強烈建議大家用不黏鍋，即是熱鑊，在冷的時候下油就對了，要燒到很紅才下油，熱鑊的塗層很容易脫落，很快就要換鑊，然後先炒牛肉，把牛肉放一旁，再加少許油，真的不是開玩笑，很快就炒好了，加少許薑絲，因為我自己很喜歡吃薑的味道，隨便放一放。</p></a>
+				<a href="#00:04:39.21" id="00:04:39.21" class="lt" onclick="jumptoTime(279, this.id)"><p>就可以依序地放蔥、韭菜花、銀芽，全放下去，炒一炒，銀芽只要開始有少許，你覺得它已經殺青了，殺青的意思是，你看到它炒一炒已經有少許香味，就可以加河粉，有些人做得很厲害，煎河粉，差不多像煎腸粉的做法，其實不需要，如果以家居來說，這樣就可以了，最重要是不要沾底，因為現在我們加生抽、老抽，主要的作用是甚麼呢。</p></a>
+				<a href="#00:05:20.53" id="00:05:20.53" class="lt" onclick="jumptoTime(320, this.id)"><p>是用猛火，不要沾底，把生抽、老抽，裡面的大豆蛋白質，經過高溫之下，形成一個我們所謂的酶納反應，Meyer reaction，這樣會產生那種香氣，這也是其中一種鑊氣的來源，再加牛肉，最後加韭黃，你看到我是用筷子來炒，用筷子這樣撈，其實可以避免到，有時候你用一些鑊，隨便都會把河粉壓爛，如果你有一個好的二鍋。</p></a>
+				<a href="#00:05:57.05" id="00:05:57.05" class="lt" onclick="jumptoTime(357, this.id)"><p>一死那麼差勁，還可以喝一口啤酒，你會看到河粉已經有少許焦的狀態，完成，上菜，大家看看這個乾炒牛河有多美麗，嘩，你看，你很明顯聞到薑的香味，韭黃、韭菜花，炒出來的各樣都有不同的香氣，還可以聞到一些生抽和老抽，經過高溫之下，那種焦香的味道會噴上來，這種我們稱之為鑊氣，只要用這個方法，鑊不黏底，真的可以煎香生抽老抽。</p></a>
+				<a href="#00:06:54.93" id="00:06:54.93" class="lt" onclick="jumptoTime(414, this.id)"><p>做出來一點也不會被酒流差，吃這個乾炒牛河，一定少不了我們從小到大，最佳拍檔的橙色辣椒醬，先放一點，足夠的芽菜，有韭黃、韭菜花，再加上橙色辣椒醬，嘩，這個真的沒得頂，超滿足，嘩，一大口啤酒，我真的用了三分鐘就炒出來了，不過當然，前期功夫也要有，希望大家多在家煮飯。</p></a>
+				<a href="#00:07:30.45" id="00:07:30.45" class="lt" onclick="jumptoTime(450, this.id)"><p>有益自己，有益家人。</p></a>
+</div>
+	</body>
+</html>

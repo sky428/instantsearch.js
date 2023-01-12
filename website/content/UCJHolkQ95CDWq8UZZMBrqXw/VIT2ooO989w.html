@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[好味碟頭飯] 漢堡煎蛋飯 Loco Moco</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VIT2ooO989w',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[好味碟頭飯] 漢堡煎蛋飯 Loco Moco</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>歡迎大家嚟到泰山自煮，今日要教大家做一個碟頭飯，名稱就係叫做漢堡煎蛋飯，聽個名都知道係粵美佳品，事不宜遲 開波，其實呢個漢堡煎蛋飯係一個夏威夷菜式嚟嘅，英文名叫Loco Moco，呢個名係點嚟嘅呢，相傳個故事就係咁嘅，就係1949年嗰陣時，喺夏威夷有班靚仔去到一個茶餐廳，唔係我哋嗰啲茶餐廳 即係嗰啲Diners。</p></a>
+				<a href="#00:00:38.80" id="00:00:38.80" class="lt" onclick="jumptoTime(38, this.id)"><p>就話我想食啲好平嘅嘢，但又快又好味嘅，我哋唔係咩 個個都想㗎啦，店主又好好人，好喇 不如整啦，有個漢堡扒 然後擺啲飯喺隔離，然後淋啲Gravy 啡色嘅肉汁上去，咁就搞掂啦，呢啲年青人就覺得好好味喎呢一個，有冇名呀老細 冇名呀，你啱啱叫我整㗎啫嘛，跟住啲年青人就話 喂 咁唔得喎，不如起個名啦幫佢。</p></a>
+				<a href="#00:01:6.80" id="00:01:6.80" class="lt" onclick="jumptoTime(66, this.id)"><p>咁就啱啱佢哋嗰班友仔當中呢，有一個人個花名呢就叫做Crazy，ok 咁而呢一個同學呢，佢呢就係讀呢個西班牙文嘅咁樣，跟住佢話喂 不如咁樣啦，將呢個飯係跟我個Crazy嗰個同學名，得 但係呢就好Crazy 好似太核突啦，我哋不如將佢變成西班牙文，Crazy 咁可能會順耳啲喎，西班牙文嘅Crazy呢就係Loco啦。</p></a>
+				<a href="#00:01:33.80" id="00:01:33.80" class="lt" onclick="jumptoTime(93, this.id)"><p>咁解釋咗頭Part啦喎，咁點解叫Moco呢，冇解㗎 佢哋覺得壓韻，於是乎呢有兩個音就Loco Moco，就係咁㗎咋，於是乎呢就誕生咗呢一個呢，而家都可以叫做係夏威夷嘅招牌菜，叫Loco Moco，咁喺日本呢都有得食㗎喎，呢個漢堡扒飯 因為呢真係兩款都好似㗎，咁今日呢我哋就做呢一個泰山版本，Ok Let's Go。</p></a>
+				<a href="#00:02:4.80" id="00:02:4.80" class="lt" onclick="jumptoTime(124, this.id)"><p>首先呢我哋就要切一切啲洋蔥㗎，我哋要將個洋蔥切粒啦，咁就視乎你鍾意嘅啫，我就覺得今次呢一個漢堡扒呢，就唔需要太多洋蔥嘅，因為呢我想食多少少肉，太多洋蔥呢反而呢係會散得滯嘅，我整半個洋蔥就夠啦，我哋就將佢留返嗰個保鮮紙包住放喺雪櫃，去醃洋蔥，切蘑菇 其實呢個蘑菇呢我就係用嚟做汁嘅，唔使切得咁薄 厚少少就得㗎喇。</p></a>
+				<a href="#00:02:38.48" id="00:02:38.48" class="lt" onclick="jumptoTime(158, this.id)"><p>好 切完個蘑菇 跟住呢，你要搞吓啲蒜蓉啦，你可以用新鮮蒜蓉擺落部機度打生佢又得，你鍾意用手剁又得 磨又得，你鍾意用呢一啱啱嗰啲預備好咗嘅蒜蓉又得，總之要有蒜蓉 ok，咁你啲切切割割嘅嘢呢就已經搞掂㗎喇，我哋而家搞搞個漢堡扒啦，好啦 你會見到呢 我就買咗啲免治牛肉喎，咁你見到 咦 呢啲係咩嚟㗎。</p></a>
+				<a href="#00:03:7.88" id="00:03:7.88" class="lt" onclick="jumptoTime(187, this.id)"><p>肥膏，整呢一個漢堡扒呢 我呢就覺得呢你起碼呢，成成肉呢要有20至25%呢係肥膏嚟先至會好味啲㗎，但係如果你覺得好怕肥 好驚呀咁樣，冇問題㗎 你個扒就乾過地氈咁嘅姐係，落少少肥啦 你信我啦，個味道同埋個汁呢係會好味好多㗎 ok，好啦 首先呢我哋要戴一戴個手套，因為呢我自己就鍾意用手呢去mix呢一個肉嘅。</p></a>
+				<a href="#00:03:45.88" id="00:03:45.88" class="lt" onclick="jumptoTime(225, this.id)"><p>好 洋蔥，蒜蓉 一個好緊要嘅材料 喼汁呀，跟住雞蛋 係啦 好好嘅習慣打落個兜度，知道佢唔係壞呢 先至倒落你嘅材料入面呀，跟住呢我哋就 撈勻佢啦，哎呀 我唔記得落一啲嘢添 咁都俾大家望到 我成日都唔記得佢呢個 真係 洗一洗手套，就係鹽啦 冇味一陣真係 真係激死呀真係，同埋黑胡椒 呢兩嘢都好緊要 真係救命。</p></a>
+				<a href="#00:04:29.88" id="00:04:29.88" class="lt" onclick="jumptoTime(269, this.id)"><p>哎呀真係 好啦 再撈過，記住呢我哋做呢一個漢堡呢 我哋唔係做呢一個肉丸喎，所以我哋唔可以撈得太過犀利，撈嗰陣時呢 亦都唔好又疊又成 千祈唔好呀，如果唔係呢啲肉呢就會韌㗎啦，我哋要用手咁樣揸下佢呢就ok㗎啦，好 到最後我會落啲木薯粉呀，令到啲肉可以結實啲 紮實啲啦，煎出嚟 亦都滑身啲㗎。</p></a>
+				<a href="#00:05:4.63" id="00:05:4.63" class="lt" onclick="jumptoTime(304, this.id)"><p>好 跟住呢嗰個盤呢，如果你有留意嘅話呢，我係鋪咗啲牛油紙喺度㗎，咁點解要鋪牛油紙呢，就因為我哋呢做一個Pattie啦，即係做一塊漢堡扒啦，我哋就唔想咁容易黐到落去，容易攞到出嚟呀，於是乎呢我哋就用個牛油紙包住先，嗱個size呢 我覺得大嚿啲，厚身啲呢就會好味啲 多啲肉汁喺入面嘅，咁其實你至少呢嗰個漢堡啦。</p></a>
+				<a href="#00:05:35.11" id="00:05:35.11" class="lt" onclick="jumptoTime(335, this.id)"><p>煎完出嚟之後呢最好起碼有半吋厚啦，咁而家我哋整個煲嘅狀呢，其實係想煎嗰陣時呢我哋先至撳扁佢，唔係一早就撳扁咗佢，咁就易啲處理啦呢個，好 咁整完之後呢 保鮮紙包住佢，放喺個雪櫃呢 畀佢浸至二十分鐘呢，先起一起先 跟住呢我哋先攞去煎㗎，OK，好喇咁呀雪咗二十分鐘之後呢，嗰啲肉餅呢而家可以去煎㗎喇。</p></a>
+				<a href="#00:06:3.59" id="00:06:3.59" class="lt" onclick="jumptoTime(363, this.id)"><p>燒熱咗個平底鑊先，跟住呢落啲咁多油得喇，因為呢我哋呢個漢堡呢，加多咗呢一個牛嘅肥膏喺入面，攪碎埋 於是乎呢一陣呢就會出好多油，我哋唔需要落太多油落去個鑊度煎㗎，好 嚟喇Bur，睇下一嚿，撳一撳，好 煎住三嚿先，而家呢就係用緊呢一個中火㗎，我哋呢大概呢，煎佢分半鐘啦一邊，咁再flip去第二邊。</p></a>
+				<a href="#00:06:38.67" id="00:06:38.67" class="lt" onclick="jumptoTime(398, this.id)"><p>跟住呢再煎多分半鐘，然後呢我哋就要，落少少水呢焗一焗佢㗎喇，好 分半鐘，反一反佢，嘩 正呀，好開心 好開心，再煎分半鐘，好啦 分半鐘過去咗喇喎，咁而家呢我哋就落少少水啦，跟住冚蓋，繼續用中火，煮到水蒸發了就可以了，水已經蒸發了，先關火，然後把漢堡扒放在碗裡，這個時候不用洗鍋了，馬上來做醬汁。</p></a>
+				<a href="#00:07:22.22" id="00:07:22.22" class="lt" onclick="jumptoTime(442, this.id)"><p>預備了醬汁的材料，然後開火，把醬汁留在碗裡，首先要加糖，煮一下糖，已經融化了，然後加牛肉湯，如果沒有牛肉湯不要緊，加雞湯也可以，不過牛肉湯的味道會濃郁很多，生抽，老抽，喼汁，喼汁這個很重要，茄汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:56.26" id="00:07:56.26" class="lt" onclick="jumptoTime(476, this.id)"><p>要攪拌一下，把所有材料攪拌均勻，煮到沸騰，然後就預備一個芡汁，這個芡汁我用了木薯粉做的，木薯粉比粟粉的回水程度低，可以更黏，生粉更加可以，木薯粉也說過，是中間的，便宜又容易找到，所以我喜歡用木薯粉做芡汁，攪拌均勻，千萬不要一次過倒入，永遠逐少逐少倒入，倒入後要立刻攪拌，讓它煮一會，因為煮一會才會出到稠身的程度。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:44.94" id="00:08:44.94" class="lt" onclick="jumptoTime(524, this.id)"><p>又來了，如果怕的話可以先調小火，火力不夠大就比較容易攪拌，多倒一點，汁何時才可以呢，可以用匙羹攪拌，然後沾一點，用手指這樣切過去，你看到汁不掉到坑裡，這樣就準備好了，最後才放蘑菇，嘩，轉小火，讓它熬大約3-4分鐘，這樣汁就準備好了，好了，完成了，吃東西了，哇，加上一隻蛋，灑上蔥花，配上飯，是不是很棒，哇，真的不是開玩笑。</p></a>
+				<a href="#00:09:42.13" id="00:09:42.13" class="lt" onclick="jumptoTime(582, this.id)"><p>連肉一起吃，哇</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:45.93" id="00:09:45.93" class="lt" onclick="jumptoTime(585, this.id)"><p>嗯，融入口中，非常好，很好吃，哇，真的很好吃，我真的覺得很本地，整件事很瘋狂，記得接下來做，訂閱我的YouTube頻道，和追蹤我的Facebook專頁，謝謝大家，當然要點讚，再見。</p></a>
+</div>
+	</body>
+</html>

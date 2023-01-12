@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[芝士控注意] 帕馬臣芝士雞 Chicken Parmigiana ( Chicken Parmesan )</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'usO1B3RIGDg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[芝士控注意] 帕馬臣芝士雞 Chicken Parmigiana ( Chicken Parmesan )</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮呀，今日我哋煮意大利野Italiano，咁我哋呢個意大利野呢，其實都幾經典㗎，經典在佢唔係意大利野囉，唔係 其實佢都係意大利野嚟嘅，不過佢嘅發跡地呢，你可以講係喺美國嘅，因為其實呢一樣食品呢，係意大利人將佢喺美國發起嘅啫，咁點解會係咁樣呢，咁我哋轉頭話畀大家聽，咁我哋今日要煮啲咩嘢呢。</p></a>
+				<a href="#00:00:32.96" id="00:00:32.96" class="lt" onclick="jumptoTime(32, this.id)"><p>就係煮呢個Chicken Parmigiana，呢個帕馬臣芝士雞，直譯就係咁樣囉，即刻開始，好 首先呢我哋整一整個雞嘅，咁我哋今次呢就買咗呢一個雞腿肉啦，咁我就預備咗四塊咁多嘅，咁但係其實呢四塊呢，係好多㗎喎，我覺得呢如果你一家四口嘅話呢，四塊都可能夠食㗎喇，點解我一陣話畀你聽，好 我哋點樣處理個雞先呢。</p></a>
+				<a href="#00:01:3.36" id="00:01:3.36" class="lt" onclick="jumptoTime(63, this.id)"><p>我哋呢整張保鮮紙，跟住我哋攞一嚿雞腿肉，咁然後呢放喺中間，然後再攞第二張包實佢，就係咁啦，咁跟住我哋要做咩嘢呢，我哋係要揼扁呢一個雞腿肉㗎，揼到點樣呢，揼到呢就真係好薄㗎喇，我畀你望一望喺呢度，係咁薄㗎揼到，嗱 我哋講少少呢一個，Chicken Parmigiana嘅起源，其實Chicken Parmigiana起源呢。</p></a>
+				<a href="#00:01:32.16" id="00:01:32.16" class="lt" onclick="jumptoTime(92, this.id)"><p>就係喺美國起源嘅，咁就係喺呢個二十世紀，中嗰陣時啦，就係一啲意大利人呢，大逃亡呀 咁去咗呢一個，美國 其實呢一個Chicken Parmigiana呢，係兩個，餸夾埋一齊㗎喎 嗱一個呢，就係嗰個叫做Eggplant Parmesan，另外一個呢就係好似，吉列豬扒咁樣嘅食物，但係喺意大利呢。</p></a>
+				<a href="#00:01:56.16" id="00:01:56.16" class="lt" onclick="jumptoTime(116, this.id)"><p>佢哋專門係食牛仔肉㗎喎，因為好多牛仔肉呀嗰度，意大利人呢就大逃亡去到美國之後呢，就發現 咦，啲雞肉呢同埋啲肉類呢，好平喎 最平嗰個係雞喎，咁不如呢就將呢，兩樣餸呢夾埋一齊，變成一個新嘢 咁跟住呢，就出現咗Chicken Parmesan，咁呢一個Chicken Parmesan呢，其實呢 而家。</p></a>
+				<a href="#00:02:20.16" id="00:02:20.16" class="lt" onclick="jumptoTime(140, this.id)"><p>喺美國好流行啦，當然啦 喺英國都有，英國呢反而都，都好食嘅，澳洲其實好流行，澳洲流行到一個地方，係啲酒吧都會serve，係一個Pub food咁樣食，我哋今日做呢一個，就有少少亞洲風味，而個亞洲風味係邊到嚟呢，我哋轉頭就可以話畀大家聽啦，咁我哋跟住就要，揼埋嗰四塊嘅雞腿肉先，四塊雞肉已經係揼扁咗。</p></a>
+				<a href="#00:02:53.15" id="00:02:53.15" class="lt" onclick="jumptoTime(173, this.id)"><p>我呢今次就用咗保鮮紙，咁點解今次用保鮮紙呢，第一因為大家可以望到我，將個雞肉點樣揼扁佢，但其實如果你喺屋企做嘅話，用牛油紙就會好啲嘅，因為你如果有留意嘅話，頭先我整呢一個保鮮紙嗰陣時，越揼呢啲保鮮紙會縮埋去嘅，縮埋去佢會越整越細嘅，但牛油紙就唔會發生呢啲咁嘅事，同埋你可以用完，揼完一塊之後。</p></a>
+				<a href="#00:03:18.91" id="00:03:18.91" class="lt" onclick="jumptoTime(198, this.id)"><p>用返喺第二塊嗰度，咁你又會慳返啲啦，而家我哋就要醃一醃啲雞先，好咁除咗有啲乜嘢呢，有洋蔥粉，有蒜粉，咁我哋搵一個兜，倒咗佢落去先，跟住我哋要落少少鹽，跟住黑胡椒，然後搵個叉，撈一撈啲粉，跟住我哋就撒上去，記住我哋要撒兩邊，所以我哋唔好撒太多一次過，然後我哋輕輕打一打佢，咁其實最傳統嘅雞肉巴馬臣，係用雞胸肉。</p></a>
+				<a href="#00:03:54.03" id="00:03:54.03" class="lt" onclick="jumptoTime(234, this.id)"><p>但係點解用雞髀肉呢，雞髀肉係好食好多，跟住你又搵個盤，擺好佢，搭埋一齊都唔緊要，而家我哋有啲雞肉醃一陣先，而家我哋就要整呢個，Chicken Parmesan，第二樣最緊要嘅材料，就係嗰個番茄醬，嗰個番茄醬其實都好傳統下，當然我哋需要嘅材料主要就係，番茄，跟住我哋就有呢個洋蔥，同埋呢個蒜頭。</p></a>
+				<a href="#00:04:25.35" id="00:04:25.35" class="lt" onclick="jumptoTime(265, this.id)"><p>我哋攪咗個洋蔥先，好，咁洋蔥我鍾意多啲，於是乎我就用哂成個洋蔥，咁而家我哋個洋蔥係要點樣呢，我哋要切粒嘅，好，切完洋蔥我哋攪一攪個番茄先，今次我哋用咗兩款番茄，第一款就係罐頭番茄，咁連埋嗰啲汁，就係番茄粒嚟嘅，另外一個我哋就用咗一啲，Plum Tomato，咁就佢會個味道濃少少，同埋就係甜。</p></a>
+				<a href="#00:04:55.38" id="00:04:55.38" class="lt" onclick="jumptoTime(295, this.id)"><p>當然你用大蕃茄都可以，但我建議大家新鮮加罐頭就最好味，我們就攪一下新鮮蕃茄，你將佢睇下啲大細，你剪開八份，咁就得㗎啦 一路切啦，蕃茄粒就切好咗，跟住你就要切埋啲蒜頭，蒜粒唔使太細粒，粗粗地就ok㗎啦，跟住你嘅洋蔥，然後預備一啲調味料，鹽、糖、雞湯，同埋頭先我講過會落少少亞洲風味嘅老抽，對於中國人條利嚟講呢。</p></a>
+				<a href="#00:05:39.38" id="00:05:39.38" class="lt" onclick="jumptoTime(339, this.id)"><p>你加咗啲老抽落去，你唔會睇到嘅，個色係會沉咗少少，但係呢你會覺得好食啲嘅，信我 ok，咁我哋而家開始煮個汁，我哋燒熱咗個煲落少少油，第一樣嘢呢我哋就要炒香個洋蔥先嘅，我哋要將個洋蔥炒到半透明，咁跟住呢我哋就可以落其他嘅材料，不過如果你想嗰個汁呢嗰個味道香啲，又或者你想嗰個蕃茄醬呢甜味帶多少少嘅話呢，我建議大家呢就將個洋蔥呢係煮到變啡色。</p></a>
+				<a href="#00:06:18.38" id="00:06:18.38" class="lt" onclick="jumptoTime(378, this.id)"><p>即係呢將個洋蔥焦糖化，咁up住你嘅，因為呢如果你真係要將佢焦糖化嘅話呢，係需要少少時間嘅，或者你攞個中間位呢就係淺啡色都ok㗎啦 ok，咁呀我決定煮耐少少㗎啦，咁我唔知你點睇啦，慢慢煮吓先，好啦我就將個洋蔥呢煮到佢淺啡色呀，因為呢如果你真係要焦糖化佢呢，你都要差唔多成20至25分鐘嘅，咁但係其實呢咁樣淺啡色呢都已經好夠㗎啦。</p></a>
+				<a href="#00:06:51.38" id="00:06:51.38" class="lt" onclick="jumptoTime(411, this.id)"><p>因為你見到呢佢個煲底入面呢，啡色嗰啲都已經係焦糖化咗㗎啦吓，跟住我哋落返啲咁多油，咁個油呢係用嚟爆香啲蒜頭㗎，咁我哋全程呢都係用緊呢一個中慢火去做嘅，好啦蒜頭千祈唔好爆太耐因為會苦呀吓，跟住呢我哋落啲新鮮蕃茄先，新鮮蕃茄嗰啲汁液呢就可以幫你呢洗一洗嗰個煲底啦，咁你見到呢個煲底而家都嘩乾淨曬啦。</p></a>
+				<a href="#00:07:21.38" id="00:07:21.38" class="lt" onclick="jumptoTime(441, this.id)"><p>咁其實呢呢個都有名稱喎Deglazing吖叫做，跟住呢我哋就落我哋嘅罐頭番茄，然後再加雞湯，當然你可以選擇加水嘅，咁但係呢個味道呢加雞湯係會好好多嘅，好 加鹽，砂糖，亞洲風味，老抽，好喇 嚟到呢個時候呢，你可以有一個調味料可以加落去嘅，咁就係呢一個，Thyme啦 百里香，咁我就選擇加嘅 因為我覺得會香啲。</p></a>
+				<a href="#00:07:50.45" id="00:07:50.45" class="lt" onclick="jumptoTime(470, this.id)"><p>但係你話需唔需要呢，唔需要嘅，我純粹係想將個味道昇華啫，咁如果你加嘅話呢，兩波就夠㗎喇，即係兩小波呀，捏一捏佢 炸一炸，就ok㗎喇，好喇 咁煲滾咗佢之後呢，你可以轉細火，就畀佢再熬吓，咁係熬大概幾耐呢，熬大概20分鐘至到30分鐘都ok㗎，咁喺呢個等佢20分鐘30分鐘嗰陣時，你做乜嘢呢。</p></a>
+				<a href="#00:08:16.97" id="00:08:16.97" class="lt" onclick="jumptoTime(496, this.id)"><p>我哋去炸雞扒，好喇 咁個番茄醬呢，就用呢個細火就熬緊啦，我哋而家呢就整整嗰個雞扒先啦，咁喺我面前呢，我已經有一個鑊啦，咁就有半磚油到啦，咁我哋唔係全炸嘅，就係半煎炸咁樣啦，ok，咁而家呢我哋要搞搞嗰個炸粉啦，咁好簡單嘅啫，我哋首先呢，就要將嗰個靈魂放喺呢一個，日式麵包糠入面，就係帕瑪辰芝士啦。</p></a>
+				<a href="#00:08:49.93" id="00:08:49.93" class="lt" onclick="jumptoTime(529, this.id)"><p>嘩，放一半好喇喎，咁跟住呢我哋就要將呢個帕瑪辰芝士同埋，麵包糠呢 撈勻佢先，然後就要呢一個中筋麵粉啦，同埋呢，一隻雞蛋嘅，雞蛋呢有機會唔夠嘅，咁但係呢我就覺得，唔夠先再算，真係夠嘅話呢，咁咪一隻就唔使嘥第二隻囉係咪，ok 咁我哋第一塊呢，點樣做呢，麵粉，兩邊，make sure呢，啲麵粉掂到曬個雞扒㗎。</p></a>
+				<a href="#00:09:20.33" id="00:09:20.33" class="lt" onclick="jumptoTime(560, this.id)"><p>多餘嘅呢，燉一燉佢，ok，我哋放喺個蛋漿嗰度，好，撳實佢先，嗱我哋擺喺個麵包糠入面之後，我哋由佢呢，靜止一陣先，因為呢我哋想嗰個麵包糠呢，索晒啲蛋漿，等佢瓊定咗，我哋先攞去炸嘅，一路一路咁樣做啦，最好就係工廠式咁樣啦，染咗個粉啦，蛋漿啦，跟住你麵包糠，然後就攞去炸，逐塊逐塊咁樣去做呢，就perfect 切齒啦。</p></a>
+				<a href="#00:09:51.29" id="00:09:51.29" class="lt" onclick="jumptoTime(591, this.id)"><p>看來我還是不夠蛋，我要多一隻蛋，油已經夠熱了，我們可以拿些麵包糠放進去，一放進去就浮上來，即是準備好了，現在我們將雞扒炸一炸，然後放進去，我們現在用中火做這件事，一邊炸大約一至兩分鐘，兩分鐘過後，你會看到已經有點硬，我們翻一翻，嘩!你看看顏色多漂亮，如此類推，一邊炸大約兩分鐘，然後就可以拿走。</p></a>
+				<a href="#00:10:35.49" id="00:10:35.49" class="lt" onclick="jumptoTime(635, this.id)"><p>繼續炸雞扒，同時醬汁還在攪拌，所有東西都在運行中，炸完雞扒之後，我們就將番茄醬和雞扒放在一起，這個時候我們可能會分道揚鑣，因為如果沒有焗爐的話，你就要放在煎鍋上，放番茄醬和雞扒，這樣做法，然後用火焗熔芝士，但如果你有焗爐的話，就用我這個做法，首先預備芝士，我們有這個Mozzarella芝士，還有我們剩下的Parmesan。</p></a>
+				<a href="#00:11:25.89" id="00:11:25.89" class="lt" onclick="jumptoTime(685, this.id)"><p>番茄醬，拌勻，然後放在底部，如果你是用煎鍋去做，爐頭去做，不是用焗爐去做的話，一樣的做法，不用太多，然後我們就放雞扒上去，看見都興奮，我的天啊，然後我們就要淋上番茄醬，記住，如果你用煎鍋去做，我們要蓋上蓋子，不然就用不到芝士，但焗爐就不要蓋上蓋子，我們拿我們的Mozzarella芝士，一塊雞扒。</p></a>
+				<a href="#00:12:3.89" id="00:12:3.89" class="lt" onclick="jumptoTime(723, this.id)"><p>一塊芝士，然後再灑上Parmesan，還有兩塊剩下，不要浪費，反正都是，用完它吧，然後把雞肉巴馬臣放入200度上火的焗爐，焗大約3-5分鐘，讓芝士變成啡色就可以了，完成了，當然要試吃，嘩，嘩 好正，先試這個，我的天，先試芝士，好開心，配意粉，一絕，除非你，意粉 班尼，全部一律，好正，這個雞意粉，其實不太複雜。</p></a>
+				<a href="#00:13:15.40" id="00:13:15.40" class="lt" onclick="jumptoTime(795, this.id)"><p>不過需要一點時間，但我覺得值得花點時間試試，因為實在太好吃了，尤其是芝士，記得訂閱我的YouTube頻道，和追蹤我的Facebook專頁，多謝大家，rica</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:35.38" id="00:13:35.38" class="lt" onclick="jumptoTime(815, this.id)"><p>Marina，струк，hot，Mut drama，detox，MP rester，況，אל，">，Sta，vey，Trying，Bundes，sugars，问题，endangered，Logan，vedere，ially，besonders，иг Salv inex，Ganze，Coc confronted，ollow opinions。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:29.38" id="00:13:29.38" class="lt" onclick="jumptoTime(809, this.id)"><p>uenwoman</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:48.34" id="00:13:48.34" class="lt" onclick="jumptoTime(828, this.id)"><p>faux，denied，olla，די，Hoch，menus，úp，elf，ep Device，fam，insula，KIR tut，Schом，多謝您收睇時局新聞，再會!</p></a>
+</div>
+	</body>
+</html>

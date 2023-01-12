@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Risotto - Ricky教室 速成版意大利飯 簡單快趣 口感煙韌又過癮</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jGJa7bcXXg0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Risotto - Ricky教室 速成版意大利飯 簡單快趣 口感煙韌又過癮</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.75" id="00:00:5.75" class="lt" onclick="jumptoTime(5, this.id)"><p>粒粒分明 有彈性 好味道，大家好，今日和大家玩煮飯仔，真係煮飯仔，今次煮意大利飯，我都有啲變就，意大利飯大家煮起上嚟容易好多，煮嘅時間又輕鬆，每逢煮咩都好 事先準備好緊要，大家陪我試，煮這個意大利飯會用到白酒，當然要先喝一杯白酒，在這麼熱的天氣，再喝一口新西蘭來的Souffle au Blanc，嘩，真的清爽到。</p></a>
+				<a href="#00:01:6.36" id="00:01:6.36" class="lt" onclick="jumptoTime(66, this.id)"><p>要讓大家煮得輕鬆、方便、快速，有兩大關鍵，第一是什麼呢，這次煮不是用意大利米，我們用了日本米，因為意大利米很大粒，無論你是Avolio也好，Cannelloni也好，意大利米的體積足足有日本米兩倍大，煮的時間起碼兩倍長，如果你還想快點完成意大利飯，有什麼方法呢，事先將米浸水一小時前，我又富貴一點。</p></a>
+				<a href="#00:01:44.08" id="00:01:44.08" class="lt" onclick="jumptoTime(104, this.id)"><p>這個是用雞湯浸的，雞湯浸了一小時，你看，米外面的澱粉，有很多已經浸出來了，待會我們一起煮，煮的時候會令意大利飯，比較容易變得幼滑，看看我可以幫大家怎樣把時間偷回來，煮意大利飯十分鐘之內，說你也不相信，平常意大利米意大利飯正宗的煮法，你沒有半小時，我相信你都做不來，來吧，我們現在開始煮速成版的意大利飯。</p></a>
+				<a href="#00:02:25.12" id="00:02:25.12" class="lt" onclick="jumptoTime(145, this.id)"><p>第一步，我們加乾蔥，開中火，隨意炒一下，大家可以用洋蔥，沒什麼大分別，只不過我覺得乾蔥顏色比較好，第二個步驟，通常意大利人會加米炒，但米已經浸水了，我們現在立刻加酒，加什麼酒呢，當然是自己在喝的酒，這些就是我們死酒鬼的主食常識，依照國際慣例，倒了酒進去煮至半透明，就煮走酒精的味道，留下酒的本身果味。</p></a>
+				<a href="#00:03:9.25" id="00:03:9.25" class="lt" onclick="jumptoTime(189, this.id)"><p>煮30秒就煮到剩下一半，把浸泡的米和米水連在一起，一手倒進去，這裡是200克的米，在食譜中，我們用了500克雞湯，其中200克倒進來浸泡米，還有300克，我們把300克倒進去，開大火煮沸，煮傳統意大利飯的朋友，可能看到這裡已經關機了，師傅，怎樣?</p></a>
+				<a href="#00:03:39.69" id="00:03:39.69" class="lt" onclick="jumptoTime(219, this.id)"><p>人家的意大利飯不是這樣煮的，就是舀一勺湯，攪拌一下，煮至沒有湯了，再舀一勺湯，又攪拌一下，如是者，攪拌大約25分鐘，就應該七、八成熟，差不多了，然後加入其他配料，再攪拌一會兒，這樣才行，但這個飯照樣煮，水沸騰後，就不要理會，繼續煮沸，我只需要6分鐘就煮好這個意大利飯，為何我會鍾情日本米。</p></a>
+				<a href="#00:04:18.45" id="00:04:18.45" class="lt" onclick="jumptoTime(258, this.id)"><p>因為日本米比較纖幼，沒有意大利米的米飯那麼粗獷，你一咬下去的時候，大牙突然黏著了，因為裡面的米芯未熟得全熟，但它不是生的，而且它快，一會兒就完成，現在還有少許時間，就勤勤清理好配料，我們可以加煙肉，當然你最好買一些我們叫Pancetta，意大利煙肉，因為比較大顆，厚身一點，吃下去舒服很多，少許鹽調味。</p></a>
+				<a href="#00:05:2.05" id="00:05:2.05" class="lt" onclick="jumptoTime(302, this.id)"><p>配料完成，飯也差不多了，最後加芝士，然後開熄火，現在還未夠幼滑，加些牛油，剛剛好，先試一試，就是這種感覺，你一咬中飯心，有些是有點硬 有點彈，粒粒分明 有彈性，有時你為了方便，這個是省了你大半時間，但味道一點都不差，好味道，配一杯白酒，你也別說不爽。</p></a>
+</div>
+	</body>
+</html>

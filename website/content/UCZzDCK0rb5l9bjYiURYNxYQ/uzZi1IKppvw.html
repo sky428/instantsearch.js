@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Steak Lab 牛扒實驗室]  慢烤肉眼 (乾手淨腳焗爐版) The Perfect Steak! (Slow Cook with Oven)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'uzZi1IKppvw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[Steak Lab 牛扒實驗室]  慢烤肉眼 (乾手淨腳焗爐版) The Perfect Steak! (Slow Cook with Oven)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:10.59" id="00:00:10.59" class="lt" onclick="jumptoTime(10, this.id)"><p>Hello 大家好呀，唔知大家有冇試過喺網上面買一啲凍肉返嚟，今次我就咁啱得咁巧喺一個主流嘅社交平台上面見到，呢一件冰鮮嘅安格斯，咁我就二話不說，逼咗佢返嚟，睇下今次點整，呢件冰鮮肉眼嚟到嘅時候，全真空包裝，拆開個袋之後見到啲marbling都好靚，唔錯唔錯，正所謂，可遇不可求。</p></a>
+				<a href="#00:00:50.51" id="00:00:50.51" class="lt" onclick="jumptoTime(50, this.id)"><p>買到舊靚牛，呢件咁靚嘅冰鮮肉眼真係要好好咁樣處理，上網做返啲資料搜集，如果整medium rare嘅話中心溫度我哋要keep喺52至54度，左右，但係因為咁大舊牛，所以我哋會用到一個，焗爐嘅探熱針去幫手，一般去到烘焙店或者上海街都可以買到㗎啦，又或者淘寶都得當然會平好多，咁大舊牛都真係好難一次過食曬。</p></a>
+				<a href="#00:01:29.43" id="00:01:29.43" class="lt" onclick="jumptoTime(89, this.id)"><p>所以我就將佢切開兩份，一大一細，咁我哋今次呢就先整咗呢個細半嘅先，大概三磅半左右，但係因為呢件牛係冰鮮嘅關係啦所以我都會盡快食曬佢，好先講講啲醃料先，當然有黑胡椒海鹽，我會再加啲thyme，paprika，同埋一啲Mexican seasoning，呢個部分好重要，千祈唔好慳。</p></a>
+				<a href="#00:02:7.57" id="00:02:7.57" class="lt" onclick="jumptoTime(127, this.id)"><p>我哋需要好多好多嘅香料，因為舊牛真係唔細，將啲醃料撈勻之後我哋就可以準備下一個步驟，我會在焗盤上鋪上兩張保鮮紙，然後把牛肉放在中間，然後把醃料慢慢鋪上，一定要每一邊都鋪滿，塗好後， 把保鮮紙拉起， 包緊牛肉，在這個過程中， 最好多包一層， 讓香料黏緊牛肉，然後放入雪櫃，放入雪櫃， 什麼都不用做， 醃24小時。</p></a>
+				<a href="#00:03:22.09" id="00:03:22.09" class="lt" onclick="jumptoTime(202, this.id)"><p>過了一天， 準備焗牛，在焗盤上， 準備蒜頭和玫瑰花，牛肉要早一小時從雪櫃取出來，因為要放入雪櫃， 待它失溫才能入爐，準備好之後，我們就要把焗爐探熱針插入肉中，最重要是針頭插到肉中心點，這樣就可以了，看溫度計，現在中心點是16度，相差幾度是沒有所謂的，將焗爐預熱125度，溫度計設定目標溫度為48度，入爐後，我們要一直看著探熱針，這塊肉大概90分鐘就可以焗到48度。</p></a>
+				<a href="#00:04:43.28" id="00:04:43.28" class="lt" onclick="jumptoTime(283, this.id)"><p>為了方便理解，我做了一些圖表，開始時，牛的中心溫度大約是16度左右，一直焗的話，溫度會慢慢上升，到90分鐘左右，應該會到48度，到目標溫度，我們就要把牛拿出來，要注意的是，牛的大小會影響到焗的時間，牛拿出來休息的時候，你會看到中心溫度會繼續慢慢上升，甚至會到54-55度，沒問題的，因為牛會慢慢下降。</p></a>
+				<a href="#00:05:34.28" id="00:05:34.28" class="lt" onclick="jumptoTime(334, this.id)"><p>看圖表，這個休息過程我用了60分鐘，牛會慢慢上升到54度，再下降到48度，到48度的時候，我們要把牛再次放進爐，不過這次爐的溫度設定為250度，這個火力焗20-30分鐘，就可以把牛的表皮焗到香脆，再看圖表，中心溫度會一直上升，由48度到54-55度，這個時間牛扒就完成了，出到來的扒稍等三兩分鐘就可以準備切了。</p></a>
+				<a href="#00:06:29.10" id="00:06:29.10" class="lt" onclick="jumptoTime(389, this.id)"><p>第一刀切下去你會感覺到皮很脆，切出來你會看到肉的顏色很粉嫩，達到Medium Rare的效果，所以說其實我們用了碳熱針的話，就可以令到件事容易掌握出來的效果都是很理想的，當然，刀柄的生熟程度，大家可以根據之前的圖表去調節，只要在探熱針內調整就可以了。</p></a>
+				<a href="#00:07:13.03" id="00:07:13.03" class="lt" onclick="jumptoTime(433, this.id)"><p>這件冰鮮肉眼刀的質素也很高，所以出來的效果也不錯。</p></a>
+				<a href="#00:07:20.03" id="00:07:20.03" class="lt" onclick="jumptoTime(440, this.id)"><p>我都不客氣，只要再加一件肉眼刀，點一點芥辣，味道剛剛好。</p></a>
+				<a href="#00:07:31.03" id="00:07:31.03" class="lt" onclick="jumptoTime(451, this.id)"><p>另外一半，因為這件比較大，所以第一次慢焗也用了120分鐘，才可以將中心溫度提升至48度。</p></a>
+				<a href="#00:07:51.03" id="00:07:51.03" class="lt" onclick="jumptoTime(471, this.id)"><p>用同樣的方法，繼續用探熱針去監察整個過程，切出來的效果也很理想，雖然很大塊，但也處理得很好。</p></a>
+				<a href="#00:08:5.03" id="00:08:5.03" class="lt" onclick="jumptoTime(485, this.id)"><p>大家留意，這個做法，我全程都只是用焗爐，不需要開鑊煎，所以乾手淨腳，不需要把廚房弄得一頭煙。</p></a>
+				<a href="#00:08:24.03" id="00:08:24.03" class="lt" onclick="jumptoTime(504, this.id)"><p>希望大家喜歡我的分享，最後我會把圖表和流程再總結一次，有需要的話可以POST，抄下，謝謝，拜拜。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:54.03" id="00:08:54.03" class="lt" onclick="jumptoTime(534, this.id)"><p>謝謝觀看，下次見，拜拜。</p></a>
+				<a href="#00:09:1.02" id="00:09:1.02" class="lt" onclick="jumptoTime(541, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，请不吝点赞 订阅 转发 打赏支持明镜与点点栏目</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:16.12" id="00:09:16.12" class="lt" onclick="jumptoTime(556, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，要記得Like、Comment和分享給朋友，還要按小鈴鐺，多謝你們的支持，下次見，Bye Bye!</p></a>
+</div>
+	</body>
+</html>

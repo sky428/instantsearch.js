@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[拌飯首選] 香蔥豆豉雞 Chicken with Black Beans & Shallots</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lRkFK_wpnZw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[拌飯首選] 香蔥豆豉雞 Chicken with Black Beans & Shallots</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮，今日要同大家整一個小菜，就叫做香蔥豆豉雞，其實呢一個餸你係一定食過㗎啦，咁但係我哋今日有樣嘢想教一教大家處理嘅，就係嗰個豆豉啦，事不宜遲 招牌開始，心水清嘅朋友呢就應該可能諗到，咦 阿太太 你係咪講緊羅定豆豉雞呀咁樣，其實我都可以話係講緊羅定豆豉雞，但我唔可以叫呢一個雞叫做羅定豆豉雞。</p></a>
+				<a href="#00:00:37.20" id="00:00:37.20" class="lt" onclick="jumptoTime(37, this.id)"><p>因為我用嘅豆豉就唔係羅定呢個地方嚟㗎，因為羅定呢個地方其實出產豆豉係非常之出名，但係好可惜喺香港就真係好少好少地方有賣呢一個羅定嘅，最多就係賣咩呢就係陽光嘅豆豉，周圍你都見唔到嘅 陽光都靚啲豆豉，不過呢就可能冇羅定咁靚啦，而我今日呢又唔係用陽光嘅豆豉喎，我今日用香港本土嘅豆豉，上水古洞自己做嘅。</p></a>
+				<a href="#00:01:11.60" id="00:01:11.60" class="lt" onclick="jumptoTime(71, this.id)"><p>所以我哋今日呢個雞除咗可以叫做，香蔥豆豉雞之外呢，我仲可以叫佢做上水古洞豆豉雞，嗯嗯嗯嗯嗯，OK 好 我哋即刻嚟搞搞個豆豉先啦，呢個就係我哋香港自己做嘅豆豉啦，呢一度呢就夠我哋今晚整雞㗎啦，首先我哋要將個豆豉洗一洗先嘅，當然啦搵個筲箕用水沖曬佢所有水就得㗎啦，跟住我哋要做啲乜嘢呢。</p></a>
+				<a href="#00:01:42.52" id="00:01:42.52" class="lt" onclick="jumptoTime(102, this.id)"><p>我哋呢就要鋪啲廚房紙出嚟啦，咁然後呢將啲豆豉放落個廚房紙度，然後輕輕咁樣，唔好硬爛佢呀，嗰啲紙紮紮住佢，將啲豆豉呢，嗰啲紙紮紮佢，再用啲水沖一沖，沖一沖番啲水，OK 好啦跟住，我洗番呢一個盤啦，亦都抹乾咗佢嘅，我哋呢就將個豆豉呢，倒番落個盤先，清洗豆豉嘅原因呢，因為豆豉其實醃咗之後呢就會生曬㗎嘛，咁所以呢可能有啲沙石呀。</p></a>
+				<a href="#00:02:21.64" id="00:02:21.64" class="lt" onclick="jumptoTime(141, this.id)"><p>或者啲石頭損壞爛嘅，要做兩種煮法，第一樣就是用滾油去煮，先煎一下，時間關係 我已經把油弄熱了，就在這裡，我現在先煎一下，這樣用滾油煎一下豆豉，就會令它香很多，接著我們就有第二個步驟，第二個步驟，我們就是要蒸一下它，好，弄了熱水，然後有個蒸架，然後我們就放今次這個份量的豆豉下去，放在這裡 蓋上蓋子。</p></a>
+				<a href="#00:03:1.17" id="00:03:1.17" class="lt" onclick="jumptoTime(181, this.id)"><p>然後就蒸它十分鐘左右，其實處理豆豉的方法大概都是這樣，小至我們今天只是用來煮這個豆豉雞的豆豉，直到你可能做一大罐豆豉，都是這樣做的，只不過你用的油份量不同，還有蒸的時間是不同的，譬如說我這些這麼小就十分鐘就夠了，你一大罐的那些有機會要蒸半小時，蒸完之後，如果你用不完的，你就可以放在一個瓶子裡。</p></a>
+				<a href="#00:03:32.33" id="00:03:32.33" class="lt" onclick="jumptoTime(212, this.id)"><p>然後放進冰箱，要用的時候就拿出來，譬如說炒一下青菜，炒一下海鮮，都可以的，就是這樣處理的，但是等豆豉蒸之餘，我們就會做其他東西，就是醃雞，今次我們這個香蔥豆豉雞，我就選擇了用雞腿肉，為什麼用雞腿肉呢，很簡單，因為我的家人怕吐骨，真的用雞骨有骨的那些比較好吃，每一個家庭都有不同的吃東西方法，我家裡雞腿肉就可以了。</p></a>
+				<a href="#00:04:11.69" id="00:04:11.69" class="lt" onclick="jumptoTime(251, this.id)"><p>你喜歡用，當然可以買一隻雞，不斷地斬斬斬斬來煮，一樣的，OK 來吧，好 那我們先切一切雞腿肉，很明顯一看就知道，我是用兩款不同的雞腿肉，我喜歡連皮，我曾經跟大家說過，雞腿肉有些厚有些薄，要想薄一點的話，記住這些位置可能要削一半，但是我們現在不需要了，因為我們想有些雞件的感覺去吃，好 接著我們就要調味。</p></a>
+				<a href="#00:04:45.21" id="00:04:45.21" class="lt" onclick="jumptoTime(285, this.id)"><p>首先我們有蠔油，白砂糖，紹興酒，先拌勻，拌勻之後，再加木薯粉，拌勻，最後加一點油，我選用了粟米油，記得剛才攪拌的次序很重要，因為最後要用油封住味道，千萬不要以為隨便全部倒進去，不是的，調味的例如糖、蠔油先放進去，然後放粉末，最後才放油，雞至少要醃20分鐘，當然醃久一點會好一點，但起碼要醃20分鐘。</p></a>
+				<a href="#00:05:27.83" id="00:05:27.83" class="lt" onclick="jumptoTime(327, this.id)"><p>然後要做什麼呢，接著要切成小塊，切到中間的時候，豆豉應該已經蒸好了，我們先切東西吧，切成小塊的東西，我們總共有四款要做，首先有紅波椒，還有很重要的乾蔥，然後這裡有兩款，看到嗎，為什麼我會滴出水，先抹一抹，大家看到這個有蔥和糖，我會用水養著它，這樣它會脆壯很多，會爽身一點，我們先做簡單一點的，最簡單是這個。</p></a>
+				<a href="#00:06:12.75" id="00:06:12.75" class="lt" onclick="jumptoTime(372, this.id)"><p>為什麼呢，我們削皮之後，乾蔥是圓粒的，但我們又想它有多一點味道，我們要怎麼做呢，我們用刀拍一拍它，打開一點就可以了，接著我們先做蔥和糖，但豆豉又可以了，拿出來給大家看看，就是這樣，看起來可能覺得沒什麼分別，但如果你在現場的話，就會聞到陣陣的豆豉香，超棒，今天真的要代鴨，小心熱 把豆豉放在一二角，我們繼續切東西。</p></a>
+				<a href="#00:06:59.39" id="00:06:59.39" class="lt" onclick="jumptoTime(419, this.id)"><p>不如先切唐芹，這些已經洗乾淨了，切頭切尾，然後就可以切段，接著切蔥一樣，蔥也是一樣切段，最好是白色，接著是綠色部分，這些尾部通常都不要，好了，蔥段切完之後，我們來做一個波椒，紅色的波椒，我還是比較喜歡它的顏色，arem schema，зем，dispatch，Thereคนük commend，argue。</p></a>
+				<a href="#00:07:28.62" id="00:07:28.62" class="lt" onclick="jumptoTime(448, this.id)"><p>將佢切頭切尾啦，然後中間，切咗個心出嚟呀，呢度唔要啦，白色部分都唔要，跟住我哋其實呢，就要切三角形，或者尖身啦咁啦，三角形呢係會靚啲㗎，好 切切剁剁嘅嘢呢，經已係搞掂晒㗎啦，而家你需要做啲乜嘢呢，等個雞醃多一陣囉，咁呀準備下啲煮食工具呀，成呀或者飲杯水呀，先至開始煮飯囉，好快搞掂㗎啦，好啦set好晒個架布之後呢。</p></a>
+				<a href="#00:08:4.22" id="00:08:4.22" class="lt" onclick="jumptoTime(484, this.id)"><p>我哋呢就可以煮個雞先，嗱我哋呢要煎一煎個雞，我哋呢已經整熱咗個兜啦，by the way呢一個呢都係上菜，嗰個兜嚟嘅，洗少啲嘢嘛係咪先，落啲油啦好跟住呢，我哋就落啲雞囉喎，呢個時候呢我哋就用中大火呢，去煎一煎佢啦，我哋唔會郁佢嘅，咁就煎到咁上下呢，郁下佢睇下佢如果真係甩到，個個底嘅話呢即係代表佢ready㗎啦。</p></a>
+				<a href="#00:08:32.22" id="00:08:32.22" class="lt" onclick="jumptoTime(512, this.id)"><p>ok，好啦可以睇下囉喎，佢仲可能有少少黐嘅，但係唔緊要，好啦我哋嗰啲雞呢已經係，煎好咗㗎啦，未熟晒嘅不過呢我哋都要攞佢，出嚟先啦吓，如果你喺屋企見到呢一堆嘢呢，你就會覺得嘩死啦洗死我啦咁樣，我哋呢就，唔會洗呢一個嘅因為呢呢一個呢，係煤辣反應之後出現，嘅情況喇，喺街呢你一定唔會見到咁樣，因為佢唔會即係要靚啲。</p></a>
+				<a href="#00:09:4.22" id="00:09:4.22" class="lt" onclick="jumptoTime(544, this.id)"><p>但係我哋屋企呢我就會，鍾意呢一個方法去做嘅因為呢呢，一個味道呢個精華，先會喺返到嘅，咁當然你自己鍾意，去即係走油呀，搵個熱鑊去煎，up to你啫但係我就鍾意，有呢啲啡色嘢喺度，呢個係一個個人喜好，好開返個火先，咁呢壇嘢我哋點樣，處理呢我哋呢就好簡單，首先呢爆返，香啲糖芹同埋啲，蔥段先咁我哋就係。</p></a>
+				<a href="#00:09:36.22" id="00:09:36.22" class="lt" onclick="jumptoTime(576, this.id)"><p>落白色嗰部分，跟住我哋放我哋嘅，乾蔥頭落去，煮吓先，好香呀已經好呢個時候，放埋個紅椒落去，然後落啲酒啦，跟住落，少少綠色嘅蔥段，落返啲雞，跟住我哋落啲雞湯，咁你煮煮下，你就會發現個底部係會乾淨起上嚟，因為我哋有一啲唔同嘅汁液喺度幫佢洗底，亦都因為個雞入面有木薯粉喺度，所以你見到個汁係會濃稠起上嚟，係咪呀幾正。</p></a>
+				<a href="#00:10:21.81" id="00:10:21.81" class="lt" onclick="jumptoTime(621, this.id)"><p>跟住我哋加返少少老抽落去畀啲顏色佢，少少嘅啫，最後豆豉，yeah，撈勻佢，嘩正，Oh my goodness，好香，熄火，食得㗎啦，食嘅時間到啦，嘩 哈哈哈哈，梗係整舊雞 撈少少汁，夾少少豆豉，嗯 好好味，我呢個食譜呢 嗰啲豆豉呢，偏少嘅 因為呢，我啲小朋友呢，仲未識得欣賞豆豉，大過少少啦 佢哋應該都會識㗎啦。</p></a>
+				<a href="#00:11:12.00" id="00:11:12.00" class="lt" onclick="jumptoTime(672, this.id)"><p>咁但係如果你想嘅話呢 你可以攞多啲嘅，我覺得 咁呢 咁你啲調味呢，就會好啲好鹹 少少撈飯呢，就係perfect啦，呢個餸呢 我覺得好啱平時晚飯食㗎，嘩 喺整碗飯撈汁，已經搞掂啦 我覺得如果你一個人呢，都可以煮 哈哈，好好味呀 記住Subscribe我嘅，Youtube Channel 同埋Follow我嘅，Facebook Page 多謝晒。</p></a>
+				<a href="#00:11:34.00" id="00:11:34.00" class="lt" onclick="jumptoTime(694, this.id)"><p>食嘢先，嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:38.00" id="00:11:38.00" class="lt" onclick="jumptoTime(698, this.id)"><p>哦，嗯。</p></a>
+</div>
+	</body>
+</html>

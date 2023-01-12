@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[DIRECTOR'S CUT] 拿坡里意大利麵 Spaghetti Napolitano</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'INAILYHqxwk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[DIRECTOR'S CUT] 拿坡里意大利麵 Spaghetti Napolitano</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:10.43" id="00:00:10.43" class="lt" onclick="jumptoTime(10, this.id)"><p>Hello 大家好，如果你是看到標題畫面的兩句對白，而點進來看的話，恭喜你，你已經中毒太深，這套劇我相信你應該看了不止一次，如果你是看了這兩句對白，而點進來看的話，恭喜你，你已經中毒太深，這套劇我相信你應該看了不止一次，沒錯，我就是在說最近在Netflix很熱門的First Love，就算你沒有看過劇。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:50.03" id="00:00:50.03" class="lt" onclick="jumptoTime(50, this.id)"><p>我想首主題曲你都一定聽過，劇中經常看到這碟日式拿玻璃意粉，其實不也是頹飯一碟，跟我們的照燒雞扒飯和玉米粒飯的地位差不多，做拿波利意粉的材料很隨心，今次我用了青椒 洋蔥 蒜頭，最重要是要有茄膏和罐頭番茄，這兩罐在意大利入口，我覺得味道比新鮮番茄更好，然後要準備茄汁 因為茄汁有糖分，做出來的汁不會太酸。</p></a>
+				<a href="#00:01:55.91" id="00:01:55.91" class="lt" onclick="jumptoTime(115, this.id)"><p>然後要準備Basil 它可以算是番茄的老友記，味道很配合，然後是橄欖油 不需要很貴，意粉我選擇了一款不會太粗的No.5，留意盒上寫著煮9分鐘就要Al dente，煮的時候要減3分鐘，然後是Salami，Salami可以用不同的款式，甚至是Torreso 火腿 香腸都可以，準備好就把洋蔥和青椒切條。</p></a>
+				<a href="#00:02:43.91" id="00:02:43.91" class="lt" onclick="jumptoTime(163, this.id)"><p>蒜頭要剁碎，Salami就用半包 夠兩個人吃，茄膏和罐頭番茄我們都是用半罐，其他留起 把它們混合，把番茄剪開，先煮沸水 加少許鹽，然後把意粉放進去，意粉要煮6分鐘，煮完就撈起 水不要倒掉，然後開鍋 加點油，然後爆香洋蔥和蒜頭，炒香後 加橄欖油，然後把青椒放在一起炒，最重要的步驟就是把番茄和茄膏炒香，這個步驟不能省。</p></a>
+				<a href="#00:03:56.18" id="00:03:56.18" class="lt" onclick="jumptoTime(236, this.id)"><p>因為如果不把茄膏炒香，醬汁就不香了，然後把茄汁加進去，讓它有甜味，然後再加生抽，把所有材料拌勻，繼續炒，然後把香草和海鮮放進去，炒一會兒，醬汁就煮好了，這個時候就把剛才隔水的意粉拌勻，你會看到它比較硬，因為還沒煮夠時間，我們就把兩勺意粉水拌勻，一起煮，煮意粉真的不要過時，否則會太軟，然後加一點鹽，給它一點味道。</p></a>
+				<a href="#00:05:1.18" id="00:05:1.18" class="lt" onclick="jumptoTime(301, this.id)"><p>再煮一會兒就完成了，可以準備上碟，我做這個拿坡里意粉的材料比較簡單，當然你們也可以準備一些新鮮的Basil，可以把味道提升到另一個層次，吃之前，加一些黑椒和撒上巴馬臣芝士，這個芝士有鹹香味，跟番茄的酸酸甜甜特別搭，希望大家喜歡我這次的分享，最後想提一提，意大利番茄其實進了罐子，出口到世界各地，其實他們的質素是非常高的。</p></a>
+				<a href="#00:05:57.18" id="00:05:57.18" class="lt" onclick="jumptoTime(357, this.id)"><p>放在不同的菜式上都可以做到很美味，其實意大利人做拿坡里意粉，甚至乎是不加肉，其實都是只有一碟意粉和茄汁，可想而知，番茄和茄汁是如何的搭配呢?</p></a>
+				<a href="#00:06:15.15" id="00:06:15.15" class="lt" onclick="jumptoTime(375, this.id)"><p>在意大利人心目中的份量是多高，這次這碟頹飯，大家覺得如何呢?</p></a>
+				<a href="#00:06:22.95" id="00:06:22.95" class="lt" onclick="jumptoTime(382, this.id)"><p>如果喜歡的話，記得給我一個讚，和訂閱我的頻道，多謝，下次見，拜拜!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:58.55" id="00:06:58.55" class="lt" onclick="jumptoTime(418, this.id)"><p>多謝，下次見，拜拜!</p></a>
+</div>
+	</body>
+</html>

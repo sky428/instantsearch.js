@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[一鍋過搞掂] 蒜頭雞 Garlic Chicken</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'cxjiAtRPQEo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[一鍋過搞掂] 蒜頭雞 Garlic Chicken</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮，今日要教大家做一道菜叫做蒜頭雞，呢個餸實在太簡單，簡單到我連名都唔想諗，總之入面有啲咩我就叫個名，就係蒜頭同埋雞，好易煮嘅啫，即係易到你覺得，吓點解你夾埋啲咁嘅嘢嘅咁樣，有啲人可能咁講，咁但係呢，我覺得有陣時，你係要學一啲係匿埋眼做都得嘅嘢嚟嘅，究竟有幾易呢。</p></a>
+				<a href="#00:00:34.36" id="00:00:34.36" class="lt" onclick="jumptoTime(34, this.id)"><p>即刻開始做咪知囉，好喇咁呢一個蒜頭雞呢，我哋今次係用咗雞嘅全髀㗎，一定要有埋骨㗎喎，咁我又解釋下呢，有陣時好多人都會話，嗯有骨嘅肉呢係特別好味啲㗎喎，咁點解呢，其實呢有啲說法呢就話，骨頭入面嘅骨髓呢，會落埋嗰啲餸入面，或者你煮汁嗰陣時呢，就令到嗰個汁個味道更香濃嘅，我唔知，有機會。</p></a>
+				<a href="#00:01:9.88" id="00:01:9.88" class="lt" onclick="jumptoTime(69, this.id)"><p>不過有一個可以肯定嘅呢，就係有好多人呢，喺食個骨嗰陣時，去到最尾呢，見到嗰啲肉，嘩點解特別好食嘅咁樣，嗱啲燒排骨嗰啲，嘩點解咁好味嘅呢，原因呢，如果你真係用食物學講嘅話呢，就係因為骨頭唔係好受熱，咁黐住骨頭嗰啲肉呢，唔係煮得咁透徹，於是乎啲水分呢，就會鎖得好啲，咁咪好味啲囉，Juicy啲囉。</p></a>
+				<a href="#00:01:34.04" id="00:01:34.04" class="lt" onclick="jumptoTime(94, this.id)"><p>就係咁解嘅啫，咁但係如果你鍾意話，嗯，我呢好懶㗎，我淨係鍾意食呢一個雞扒嘅啫，我唔要食到骨，咁冇問題嘅，咁但係我可以話畀你聽，如果你係咁煮嘅話呢，你出嚟嘅雞呢，係會柴好多，乾好多㗎，試下我呢個方法，連埋骨去煮，OK，同埋啲骨都唔係好多啫，一條咋嘛啲雞腿骨，係咪啊，OK，嚟啦，好，咁我哋首先呢，要將個雞腿呢。</p></a>
+				<a href="#00:02:2.84" id="00:02:2.84" class="lt" onclick="jumptoTime(122, this.id)"><p>就要分開嘅，唔可以成個煮嘅，成個煮嘅太大啦，咁我都曾經講過啦，咁你切開呢個雞腿呢，好簡單嘅啫，咁你搵到個雞嗰個關節位啦，有一個凹位嘅，OK，咁你呢把刀一切落去，就係㗎啦，哦，好容易嘅啫，OK，咁跟住呢你切好曬啲雞腿之後呢，我哋就將佢鋪好佢喺呢個砧板上面，跟住我哋就落少少鹽，然後胡椒粉，跟住我哋要搓一搓佢。</p></a>
+				<a href="#00:02:36.83" id="00:02:36.83" class="lt" onclick="jumptoTime(156, this.id)"><p>每一個都搓一搓佢，唔好搓得太大力 搓爛咗啲雞皮，砧板上面有嗰啲咁樣嘅鹽呀雞皮呀，唔係 鹽呀，胡椒粉呀嗰啲你都要撈埋佢 唔好浪費，跟住將啲雞皮放喺個兜度，保鮮紙包住佢，唔使放雪櫃 因為呢個速度就太快做完，由佢喺室外嗰度，唔係室外 室溫 對唔住，室溫嗰度 褻它廿分鐘，跟住我哋就可以煮㗎喇。</p></a>
+				<a href="#00:03:5.93" id="00:03:5.93" class="lt" onclick="jumptoTime(185, this.id)"><p>跟住呢廿分鐘呢，做乜呢，就係做呢啲呢個餸最難嗰個地方，OK，BANG，見唔見到嗰啲蒜頭呀，全部都係人手撕出嚟㗎，OK 咁呢就係完整一粒咁樣蒜頭，我哋唔使將佢切爛呀成呀點，總之一粒咁樣去撕出嚟 OK，呢度呢就兩個完整一嚿嘅蒜頭撕咗出嚟㗎，廿分鐘呢都夠曬你做㗎喇 OK，咁所以呢呢個係最難嗰個㗎喇。</p></a>
+				<a href="#00:03:42.93" id="00:03:42.93" class="lt" onclick="jumptoTime(222, this.id)"><p>咁假如你唔想做嘅，咁你咪叫下屋企人做囉，跟住你咪同佢講話，你哋都坐喺度坐得太耐啦係咪，幫我做啲嘢 幫我剝蒜頭 快啲，咁樣跟住你咪去下杯咖啡囉係咪，掂啦，好啦我哋已經可以開始煮㗎喇喎，係咪好快呀，真係好容易㗎啫，首先呢你就要搵一個平底煎pan啦，或者搵咗嗰啲大嗰啲鑄鐵鍋呢，平底嗰啲啦最好多啲位嘅。</p></a>
+				<a href="#00:04:13.93" id="00:04:13.93" class="lt" onclick="jumptoTime(253, this.id)"><p>嚟去做呢個餸，因為呢我哋一鍋過搞掂呢，你就洗少啲碟啦 OK，好咁我哋燒熱咗個鑊先，點樣知道熱唔熱呢，灑啲水落去 嘩係已經係即刻蒸發曬啦，咁就可以落油囉，咁呢我哋而家係用中火㗎，首先呢我哋要將啲雞皮先放落去 OK，雞皮冇所謂啦，好啦咁我哋呢放咗啲雞落去之後呢，個皮嗰邊煎呢我哋要煎到佢呢金黃色，甚至乎呢脆脆地就好啦。</p></a>
+				<a href="#00:04:46.43" id="00:04:46.43" class="lt" onclick="jumptoTime(286, this.id)"><p>咁大概需要嘅時間呢係4至到5分鐘到，4至到5分鐘，OK，之後就要翻面，然後再煎大約2至3分鐘，記得我們是用中火去煎，先煎，煎了5分鐘，先看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:7.97" id="00:05:7.97" class="lt" onclick="jumptoTime(307, this.id)"><p>嘩，很漂亮，現在可以翻面，嘩，很漂亮，很漂亮，很漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:16.61" id="00:05:16.61" class="lt" onclick="jumptoTime(316, this.id)"><p>小心彈到你，3分鐘，好了，3分鐘又過了，我們先關火，然後拿一個盤子將雞拿起來，接著我們要做什麼呢，接著開火，然後還是熱的，撕好的蒜頭全部放下去，我們就要這樣拌勻蒜頭在油裡，這個油很棒，是雞的油，是雞的油，好香啊!</p></a>
+				<a href="#00:05:49.23" id="00:05:49.23" class="lt" onclick="jumptoTime(349, this.id)"><p>現在我們會繼續用中火炸蒜頭，你會看到它已經在油裡炸，如果你想它炸得更香脆的話，有個方法，你把鍋子放在火爐旁邊，我相信很多人都會懂得，然後你會看到油會變得更高，蒜頭就好像在炸一樣，這邊怎麼辦呢?</p></a>
+				<a href="#00:06:17.95" id="00:06:17.95" class="lt" onclick="jumptoTime(377, this.id)"><p>你就可以把鍋子移到另一邊，如果你怕這樣的話，你可以用匙羹把蒜頭移到另一邊，那邊又沒有炸到，那就移到另一邊，我們要盡量把蒜頭煎炸至金黃色，這樣就可以了，炸一炸它，蒜頭你會看到，嘩! 顏色很漂亮，金黃色就完美了，然後我們要做什麼呢?</p></a>
+				<a href="#00:06:47.83" id="00:06:47.83" class="lt" onclick="jumptoTime(407, this.id)"><p>我們要加白酒和味醂，然後拌一拌，現在的作用是什麼呢?</p></a>
+				<a href="#00:06:57.23" id="00:06:57.23" class="lt" onclick="jumptoTime(417, this.id)"><p>其實我們想用酒精類，把鍋底有任何黏著的肉渣，洗一洗，我經常說這些才是精華，於是我們要把這些放在菜裡，唯一可以清理到的，就是加一些酒精類的東西，或者是酸的東西，酒是最好的，因為它既甜又酸，加進去的菜，我經常覺得是那種，Tanginess，我不知道怎麼說，總之是Tanginess，就會令菜的味道更加立體。</p></a>
+				<a href="#00:07:35.23" id="00:07:35.23" class="lt" onclick="jumptoTime(455, this.id)"><p>我不懂得怎樣形容，我只是這樣說，有些人會問，加酒?</p></a>
+				<a href="#00:07:42.87" id="00:07:42.87" class="lt" onclick="jumptoTime(462, this.id)"><p>小朋友會不會不能吃呢?</p></a>
+				<a href="#00:07:45.87" id="00:07:45.87" class="lt" onclick="jumptoTime(465, this.id)"><p>我只是說，你可能煮完之後，不想給小朋友吃，因為實在太好吃了，不是，可以吃的，為什麼呢?</p></a>
+				<a href="#00:07:54.23" id="00:07:54.23" class="lt" onclick="jumptoTime(474, this.id)"><p>因為酒精類，像我現在這樣煮，是會揮發出來的，什麼時候才算是可以呢?</p></a>
+				<a href="#00:08:1.27" id="00:08:1.27" class="lt" onclick="jumptoTime(481, this.id)"><p>很簡單，用鼻子去聞一下就行了，如果你煮到差不多，你聞一下，好像沒有了酒精味，就是說酒精已經蒸發了，你可以加其他的調味料了，酒精的味道已經蒸發了，接著，壽喜燒汁，雞湯，水，少許鹽，糖，先拌勻，接著，就可以放雞肉，雞皮當然向上，你可以放上去，然後蓋上蓋子，留一條縫隙，我們繼續用中火，煮開後，開始計時。</p></a>
+				<a href="#00:08:44.11" id="00:08:44.11" class="lt" onclick="jumptoTime(524, this.id)"><p>半小時，這樣就準備好了，是不是很快?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:50.06" id="00:08:50.06" class="lt" onclick="jumptoTime(530, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，完成 可以吃了，嘩 你看多漂亮，醬汁煮到差不多的時候，開始有一點稠，又不是太稠，剛剛好，淋上去雞皮是完美的，嘩 多漂亮，接著當然要做一件雞吃，嘩 看看</p></a>
+				<a href="#00:09:23.35" id="00:09:23.35" class="lt" onclick="jumptoTime(563, this.id)"><p>多漂亮，我不客氣了</p></a>
+				<a href="#00:09:28.95" id="00:09:28.95" class="lt" onclick="jumptoTime(568, this.id)"><p>嗯，雞超多汁，超入味，是剛剛好的，嗯，趁熱吃，一流，接著那個醬汁，拌飯，兩碗飯，謝謝，這個很容易煮，不妨試試，冬天整鍋上熱，更好，記得訂閱我的YouTube頻道，和追蹤我的Facebook專頁，最好當然要點讚，多謝大家。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:2.63" id="00:10:2.63" class="lt" onclick="jumptoTime(602, this.id)"><p>吃東西。</p></a>
+</div>
+	</body>
+</html>

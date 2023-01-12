@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室 終極版香濃粟米湯 大人細路都愛 Ultimate Corn Soup For The Family</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_Q4r4LUZozw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室 終極版香濃粟米湯 大人細路都愛 Ultimate Corn Soup For The Family</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家睇下個質地幾咁絲滑，我敢擔保係你成世人飲過最好飲嘅粟米湯，大家好，今日想同大家分享一個幾得意嘅食譜，成個材料都得幾樣嘢，但係咁簡單嘅食材可以煮出你諗都諗唔到咁美味嘅一道菜式，係用新鮮粟米做嘅粟米湯，面前只有四種材料，有機新鮮粟米、雞湯、鮮奶和牛油，喝完就開工，這個湯最難處理的地方。</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>都是把粟米批出來，網上有很多神器批粟米，但我沒有試過一個很好用的，不如用刀切吧，我們需要200克粟米粒，不是整條切出來的粟米粒，通常我批都是數著四行，如果你是打算用這兩條粟米，待會做湯料，就勸大家不要切得太深，有些朋友說，他吃粟米喜歡把粒粒分開吃，為什麼不要切太深，因為大家吃過的粟米是這樣的，粟米芯最接近的位置。</p></a>
+				<a href="#00:01:50.72" id="00:01:50.72" class="lt" onclick="jumptoTime(110, this.id)"><p>是有白色的位置，咬下去沒有粟米味，而且有少許韌芽，就不要切太深，盡量避免切到白色的位置，我不知道大家有否吃過，以前有一段時期，我們還有很多戲院，在戲院除了賣爆谷外，你不難找到那時會有些牛油炒粟米，有些很小的小店，你吃過就覺得牛油炒粟米很好吃，待會的湯就差不多是那個版本，那個味道。</p></a>
+				<a href="#00:02:36.58" id="00:02:36.58" class="lt" onclick="jumptoTime(156, this.id)"><p>不過是做成一個你喝了之後，你會覺得很難忘的粟米湯，開始做這麼簡單的粟米湯，炒粟米是隨意的，不是炒到很有鑊氣那種，只要牛油溶了，有鹽也可以，沒有鹽也可以，牛油就可以了，最好不要用植物牛油，因為植物牛油炒出來的味道是不一樣的，牛油溶了就可以加粟米了，炒粟米也是不用很大火，開中火就可以了。</p></a>
+				<a href="#00:03:9.58" id="00:03:9.58" class="lt" onclick="jumptoTime(189, this.id)"><p>你炒它一分多鐘就可以了，只不過是隨意炒一點點粟米的香味，現在就正正聞到你在戲院的時候，有些牛油炒粟米的香味，在這個時候聞到粟米的香味，這樣就已經夠了，我們可以加其他材料了，開大火， 滾起它，很快， 30秒就滾起了，然後調小火，還沒滾就可以了，你也是滾它一分多鐘，這樣就可以了，我們把它倒進攪拌機裡。</p></a>
+				<a href="#00:04:3.74" id="00:04:3.74" class="lt" onclick="jumptoTime(243, this.id)"><p>打成這樣後 還要過篩去除渣，因為你知道粟米有很多渣，用密格將粟米湯倒入隔篩，如果大家是素食的朋友，剛才的食譜是用雞湯，就算用水或奶不加雞湯也可以，大家看看質地 多麼的絲滑，雞湯的版本和水的版本其實不差很遠，有些人喜歡水的版本，因為覺得粟米的甜味更加清楚，調味很少 一點點鹽，最多只需要0.5克。</p></a>
+				<a href="#00:05:0.98" id="00:05:0.98" class="lt" onclick="jumptoTime(300, this.id)"><p>真是太棒了，如果放雪櫃 將來拿出來，冷藏也很好喝，這才是神秘，這些粟米不要切太深，稍後會用少許牛油炒，還有…，我覺得最棒的是牛油多士，非常棒，先焗一會，我們來炒粟米配料，粟米炒一會兒便可以了，只需要一分多鐘，少少鹽，正正是以前，在電影時吃過的，油炒粟米味道一模一樣，配料完成，湯也可以了，可以上碟了。</p></a>
+				<a href="#00:06:16.06" id="00:06:16.06" class="lt" onclick="jumptoTime(376, this.id)"><p>還可以送酒，你知道洋人很喜歡一碗湯，一塊麵包或多士，一杯酒，這樣就是一個完美的午餐，我敢保證，這是你一輩子喝過最好喝的粟米湯，喜歡粟米的你，一定不可以錯過。</p></a>
+</div>
+	</body>
+</html>

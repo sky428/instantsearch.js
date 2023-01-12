@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之食芝士</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TxDKb5SzDRE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之食芝士</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>要先搞下啲ipad先，等一等大家先。</p></a>
+				<a href="#00:00:17.66" id="00:00:17.66" class="lt" onclick="jumptoTime(17, this.id)"><p>怎樣?</p></a>
+				<a href="#00:00:19.66" id="00:00:19.66" class="lt" onclick="jumptoTime(19, this.id)"><p>Hello，我看看這個時間大家是不是已經睡著了，我想試一下晚一點的時間，不知道人流會是怎樣，於是我想試一下遲一個小時，看看有多少Auntie，Uncle還沒睡，咦，還有一些還沒睡，Hello，Hi，是不是會有另一班朋友出現在我今晚的Live，我真的不知道有多少人會在，於是我想試一下晚一點的時間，看看有什麼觀眾群會出現。</p></a>
+				<a href="#00:00:58.66" id="00:00:58.66" class="lt" onclick="jumptoTime(58, this.id)"><p>所以謝謝大家，會不會是年輕一點的朋友和我一起吃東西呢，今晚就真的要看看，我現在就要先弄一下我的iPad，咦，睡了，Pinky，你每次都在，我真的很感謝你，雖然你已經有一個在Facebook的泣怒的emoji，Hello，沒錯，今晚在這裡出現的，有人說Betty說I am young，沒錯，Hello，Hi，大家。</p></a>
+				<a href="#00:01:35.66" id="00:01:35.66" class="lt" onclick="jumptoTime(95, this.id)"><p>Facebook的朋友你們好，沒錯，在這個時間出現的話，證明你們還是非常年輕，Youtube我就不敢說了，Youtube可能有些在加拿大的朋友，美國的朋友，可能只是早上，剛剛吃完早餐，或者準備吃午餐，我不知道你們在那邊搞什麼，有沒有Youtube的朋友，或者Facebook的朋友，是在外國的呢。</p></a>
+				<a href="#00:02:0.66" id="00:02:0.66" class="lt" onclick="jumptoTime(120, this.id)"><p>有的我就不介意你們揮揮手，有沒有人在外國的，你們?</p></a>
+				<a href="#00:02:8.66" id="00:02:8.66" class="lt" onclick="jumptoTime(128, this.id)"><p>有沒有的?</p></a>
+				<a href="#00:02:9.66" id="00:02:9.66" class="lt" onclick="jumptoTime(129, this.id)"><p>晚點好，我們早安，May Tim，其實你在哪裡呢?我每次都會見到你的，Pauline你在quarantine?</p></a>
+				<a href="#00:02:17.66" id="00:02:17.66" class="lt" onclick="jumptoTime(137, this.id)"><p>Yvonne就在Vancouver，因為我跟不同的人說話，在Youtube就有人在quarantine，不要緊，quarantine很快就完了，也有人在Vancouver，也有人在London，有很多朋友以為今晚沒有Live，有的，沒有的我會說的，但因為我今天想試一下，晚一點你們會不會在，我想試一下晚一點的時間，會不會有不同的朋友出現。</p></a>
+				<a href="#00:02:48.66" id="00:02:48.66" class="lt" onclick="jumptoTime(168, this.id)"><p>因為上次我真的晚了，晚了才做Live，我又覺得，咦，又有很多朋友在，我想試一下晚一點會不會好一點，在Youtube的有Andy就在London，Hi Andy，Hi Yvonne from Vancouver，有人在元朗，有人在Youtube就說，I'm just out of quarantine，OK，Congratulations。</p></a>
+				<a href="#00:03:25.66" id="00:03:25.66" class="lt" onclick="jumptoTime(205, this.id)"><p>Just out of quarantine，不好意思，我還在做那個Youtube的，那個iPad的...</p></a>
+				<a href="#00:03:35.12" id="00:03:35.12" class="lt" onclick="jumptoTime(215, this.id)"><p>Link...不好意思，我在Facebook那邊，我在看大家...</p></a>
+				<a href="#00:03:40.12" id="00:03:40.12" class="lt" onclick="jumptoTime(220, this.id)"><p>Hello， 搞定了，You are all here， 大家在這裏，Hello，Hello， 在筲箕灣， 是嗎?</p></a>
+				<a href="#00:03:50.12" id="00:03:50.12" class="lt" onclick="jumptoTime(230, this.id)"><p>Hello， 筲箕灣的朋友，筲箕灣的YouTube， Hello，這個時間才像宵夜， 是嗎?</p></a>
+				<a href="#00:03:58.12" id="00:03:58.12" class="lt" onclick="jumptoTime(238, this.id)"><p>這個時間才像宵夜，今天我們這個宵夜，就...簡單一點，因為我近來買了一些芝士，很想和大家分享一下，有人問我們是不是這個CNN會改做運動宵夜，不要走啊，會不會是你睡在床上， 看見我做運動會很開心呢?</p></a>
+				<a href="#00:04:23.12" id="00:04:23.12" class="lt" onclick="jumptoTime(263, this.id)"><p>不會的， 是嗎?</p></a>
+				<a href="#00:04:25.12" id="00:04:25.12" class="lt" onclick="jumptoTime(265, this.id)"><p>咦， 可能真的太晚了，朋友們真的睡了，難道我的觀眾群就是已經睡了的一班，星期五果然是老了一點的，多少歲你們自己知道了， 如果你們睡了，好， 那我這個星期就想和大家，試一下芝士，這樣吧，哇!</p></a>
+				<a href="#00:04:54.38" id="00:04:54.38" class="lt" onclick="jumptoTime(294, this.id)"><p>我在看大家的留言，Hello，你們好，OK，也跟YouTube的朋友們說一下，如果你想支持一下我兩個小朋友去外國讀書的話，或者是普通讀書的話，就麻煩你找一下那些Super Chat，Super Stickers，Super Thank You那些，OK?好，YouTube的你，Facebook的你也可以。</p></a>
+				<a href="#00:05:20.38" id="00:05:20.38" class="lt" onclick="jumptoTime(320, this.id)"><p>如果有興趣想知道我們經常跟YouTube的朋友說是做什麼的，你就可以去YouTube看一看，好，今天我們有三款芝士我想跟大家介紹一下，因為這個芝士太多款式了，我想介紹一個平時你可以當做小吃的芝士，我覺得是可以咬一下的，因為有些芝士你會覺得，真的不可以當做小吃，譬如你要Mozzarella那些。</p></a>
+				<a href="#00:05:52.38" id="00:05:52.38" class="lt" onclick="jumptoTime(352, this.id)"><p>有些Cheese Stick你也可以當做小吃，但是我經常覺得Mozzarella，應該放在Pizza那裡吃是最好的，有點融化的，就好一點了，我今天想介紹一些，你其實就這樣，白口吃，然後喝一點東西，喝點紅酒也好，你自己喜歡喝什麼，喝咖啡也行，其實無所謂的，你睡得著的話，隨便你了，可以試一下。</p></a>
+				<a href="#00:06:26.38" id="00:06:26.38" class="lt" onclick="jumptoTime(386, this.id)"><p>我知道，先看看一些留言，有朋友們在英國的，多謝在Facebook的英國的你，在YouTube的朋友說，我的主診醫生是沒有眼睛的，他叫我不要吃太多，沒有說不吃了，有人看了我昨天的YouTube的影片，昨天我去了永那裡吃東西，出了一條影片，出了一條永那裡吃東西的影片，那間餐廳是世界50最好的餐廳。</p></a>
+				<a href="#00:07:15.38" id="00:07:15.38" class="lt" onclick="jumptoTime(435, this.id)"><p>裡面的名單是排100的，如果你想看的話，其實最多只能說100間，如果在世界排行第100的話，真的不錯的，我也想說，很久以前我會看米芝蓮的，但現在我會看世界50最好的，因為它比較中肯，還有很多餐廳我也有吃過，當然有些在秘魯我沒有吃過，但是有些在日本，香港，又或者是新加坡，泰國。</p></a>
+				<a href="#00:07:59.38" id="00:07:59.38" class="lt" onclick="jumptoTime(479, this.id)"><p>我也有吃過，真的很好吃，所以我會看世界50最好的，或者是亞洲50最好的，去看一些好吃的餐廳，米芝蓮有些真的好，但不知道為什麼，近年有點不太好，我只能這樣說，有些人真的會說，你也能進去?</p></a>
+				<a href="#00:08:31.52" id="00:08:31.52" class="lt" onclick="jumptoTime(511, this.id)"><p>反應是這樣的，但無論如何，如果你想知道，永這間餐廳是怎樣的話，記得去youtube，看一看我的影片，因為那間餐廳，是一個香港人的師傅，他叫Vicky，是男士，但他其實已經在，做了很多年廚師，他亦都很，很有才華，很厲害的廚師，其實他很久之前，在中環，灣仔，我都已經，吃過他煮的東西，他開了一間餐廳。</p></a>
+				<a href="#00:09:9.52" id="00:09:9.52" class="lt" onclick="jumptoTime(549, this.id)"><p>叫VA，那VA，玩了很多東西，他的食物，是比較有趣的，這次他就做了，一道中國菜，叫永，我覺得是做得很好吃的，所以大家不妨有機會，就去試一下，首先要多謝youtube的Tanya，多謝Tanya Chan，多謝你的super chat，FYI，for your information，we are still very young。</p></a>
+				<a href="#00:09:43.52" id="00:09:43.52" class="lt" onclick="jumptoTime(583, this.id)"><p>多謝，然後就有youtube的Wendy Wong，她的super chat，多謝支持我的小朋友去外國讀書，Thank you so much，好了，先看看一些comments，在facebook，有Amy，說book不到，很難book，是很難book的，是永，好像很熟，真的很難book。</p></a>
+				<a href="#00:10:15.52" id="00:10:15.52" class="lt" onclick="jumptoTime(615, this.id)"><p>如果你有朋友早上book了，你當他是best friend，很久沒見過，好好聊，就黐餐，看看他有沒有黐給你，在youtube又有，super stickers，yxkxxk，多謝你，我代Luke和Kate多謝大家，今晚如果你心水清，你會聽到，沒有太掃把聲，因為他去了看電影，因為小朋友考完試。</p></a>
+				<a href="#00:10:47.52" id="00:10:47.52" class="lt" onclick="jumptoTime(647, this.id)"><p>所以放鬆一下，他也去了看，他去了看，姜B那套戲，我不敢說名字，因為我怕我說錯，不過我都可以說，有毛順君那套，和姜B那套，好像是，媽媽有了第二個，不要罵我，媽媽有了第二個，他今天去看，他應該很興奮，所以我做完這個直播之後，我要拿雨傘去接他，所以，還有阿JER，幸好有人看，不然我會被罵，有阿JER和姜濤。</p></a>
+				<a href="#00:11:34.05" id="00:11:34.05" class="lt" onclick="jumptoTime(694, this.id)"><p>那套《媽媽有了第二個》，應該是，還有阿JER，謝謝，馬上湧出來，還有阿JER，真是，真是抱歉，好好好，《青雲》新戲還沒看，我有很多電影還沒看，沒時間，全部都是我家人去看電影，因為我兒子今天看了《Super Pets》，他說很享受，很好看，很開心，很多笑位，他說很棒，多謝YOUTUBE的ANNA，多謝你的SUPER STICKERS。</p></a>
+				<a href="#00:12:13.81" id="00:12:13.81" class="lt" onclick="jumptoTime(733, this.id)"><p>我喜歡這個，THANKS FOR BEING YOU，YES，TRY TO BE ME，我希望大家都喜歡我BEING MYSELF，THANK YOU，因為很難，ANYWAY，多謝大家，多謝你們，OK，不如我們吃芝士吧，好不好，吃芝士吧，我們有很多東西要吃，所以我們要開始了，我們要先移動FACEBOOK的CAMERA。</p></a>
+				<a href="#00:12:39.57" id="00:12:39.57" class="lt" onclick="jumptoTime(759, this.id)"><p>YOUTUBE等一等，OK，FACEBOOK的你請等等，多謝多謝，HOLD ON，OK，在這裡，今晚非常簡單，這個設置，因為我們是試食的，所以我們不要弄太多東西，好，FACEBOOK先過來，然後YOUTUBE，THANK YOU，請大家稍等，DUDUDUDUDUDU，HELLO，OK。</p></a>
+				<a href="#00:13:9.49" id="00:13:9.49" class="lt" onclick="jumptoTime(789, this.id)"><p>這裡，也要給大家看看，今天的芝士，還有什麼芝士，好，首先介紹一下芝士是甚麼，這個叫comté的芝士，comté的芝士其實是一個很普遍的法國芝士，它有分很多不同的款式，款式的意思是它的年齡，這個年齡是24個月，吃下去會咬到有些crystal化的，那些叫甚麼呢，蒸化了，crystallized的碎在裡面，是很好吃的。</p></a>
+				<a href="#00:14:1.59" id="00:14:1.59" class="lt" onclick="jumptoTime(841, this.id)"><p>這個是荷蘭的smoked cheddar，smoked cheddar，我覺得看電視送走吃，很好吃的小吃，煙燻的芝士，然後有一個我真的沒吃過，這個是在日本訂回來的，它叫cheese stand，是一個natural everyday cheese，它在東京都做的，我給大家看一下。</p></a>
+				<a href="#00:14:36.59" id="00:14:36.59" class="lt" onclick="jumptoTime(876, this.id)"><p>看不看得到，natural cheese，在東京都做的，youtube大家看得到嗎，youtube，就是這個，所以這個全部都有期間限定，我們先試一下comté，comté其實是one of my favorites，我很喜歡吃的，因為它有少少鬆脆的感覺，接著，給大家看一下，comté的芝士。</p></a>
+				<a href="#00:15:21.59" id="00:15:21.59" class="lt" onclick="jumptoTime(921, this.id)"><p>可能你走一看也不知道是甚麼，這個就是24個月的芝士，Betty多謝你，多謝你支持Cake和Luke的讀書基金，Betty Leung多謝你，Kate和Luke支持太嫂enjoy，多謝你，試一下，很好吃，你咬下去，是有一種，有點沙沙的感覺，但很好吃，味道是，如果你喜歡吃這個，這個Compé的話。</p></a>
+				<a href="#00:16:1.12" id="00:16:1.12" class="lt" onclick="jumptoTime(961, this.id)"><p>你真的要試試看，COMTE，法國芝士來的，其中一個很普遍，但也是很容易入口的芝士，另外一個就是這個Smoked Cheddar，這個是煙燻味的，這個Smoked Cheddar是荷蘭製的，很好吃的，我先把它切出來，好，接著我們有這個來自，CheeseStand.com的芝士，我們不如試一下，這個我真的沒試過。</p></a>
+				<a href="#00:16:30.40" id="00:16:30.40" class="lt" onclick="jumptoTime(990, this.id)"><p>所以我想和大家一起試一下，先看看它怎麼開，拆了這個，好像很漂亮，這個芝士，大家看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:47.40" id="00:16:47.40" class="lt" onclick="jumptoTime(1007, this.id)"><p>好了，大家可以看一下，出來之後是這樣的，就像這樣</p></a>
+				<a href="#00:16:59.40" id="00:16:59.40" class="lt" onclick="jumptoTime(1019, this.id)"><p>好，很可愛，它紮了芝士就是這個形狀，紮了就是這樣，好像兩個屁股，好，讓我試一下是什麼味道，好緊張，我覺得好像很棒，好，放回去，好了，好，就是這三款芝士，今天想介紹給大家，因為我覺得這個是很適合做小吃的芝士，其實有時候芝士，它又難切，有時候又很黏，有時候又太肥，味道太濃，但我個人覺得這兩款芝士，是很適合做小吃的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:5.40" id="00:18:5.40" class="lt" onclick="jumptoTime(1085, this.id)"><p>我們轉一下鏡頭，今天我們很精簡，Facebook Hello，我們下次見，好了，轉回...哎呀，哎呀，sorry，Hello， hello， hello， hello， 好，歡迎來到YouTube啦，請等等下，謝謝大家的patience，多謝，好，打開這個先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:39.89" id="00:18:39.89" class="lt" onclick="jumptoTime(1119, this.id)"><p>好，Hi，好，晚上好，身體好，保重身體先，OK，那，有這三款芝士在這裡，那我這邊有一個叫做Conté，Conté其實是一個很好吃的芝士，Very good，那味道呢，是甘甘地，你咬下去，是有一點沙的感覺，有一點沙的感覺，其實是很好吃的，我覺得，如果你喜歡吃一些甘甘濃濃味的呢，你可以去試一下。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:23.89" id="00:19:23.89" class="lt" onclick="jumptoTime(1163, this.id)"><p>這個Conté，我這個是24個月的，有人知道，Facebook裏面有人知道，Conté正呀，阿Venus吃過，是吧，真的要試一下，然後呢，荷蘭來的Smoked Cheese，OK，荷蘭來的Smoked Cheese，我們試一下這個，有人問，這個Smoked Cheese是不是很鹹呢，No，No。</p></a>
+				<a href="#00:19:47.89" id="00:19:47.89" class="lt" onclick="jumptoTime(1187, this.id)"><p>No，No，No，Not at all，這個煙燻芝士，sorry，這些全部都是牛奶的芝士，有時候是牛奶，OK?</p></a>
+				<a href="#00:20:3.11" id="00:20:3.11" class="lt" onclick="jumptoTime(1203, this.id)"><p>這個煙燻芝士，有人說很鹹，No，絕對不是，這款荷蘭的，是偏淡的，但煙燻的味道是很香，吃下去你會覺得，嗯，吃完之後你會想喝一口紅酒，我可以告訴你，煙燻芝士很配合紅酒，我不明白，我覺得味蕾是很好吃的，Facebook的Venus，法國仔教我吃Conté，一試愛上，哇，你好，有法國仔教你，帥不帥?</p></a>
+				<a href="#00:20:47.11" id="00:20:47.11" class="lt" onclick="jumptoTime(1247, this.id)"><p>法國芝士，Conté，非常好吃，大家真的要試試，這個煙燻芝士，當小吃一樣吃，我剛才說的那一塊，你可以兩晚就吃完，如果你大吃的話，一晚就可以吃完，Kenny，你好，煙燻芝士有一個加了煙燻火腿，也很好吃，真的，很想試試，我真的很想吃，我覺得好像很好吃，Facebook的Lydia，她說很喜歡吃Gruyère，Gruyère其實煮菜也很好，因為它的溶點很低，很快就溶。</p></a>
+				<a href="#00:21:34.11" id="00:21:34.11" class="lt" onclick="jumptoTime(1294, this.id)"><p>所以也是很好吃的芝士，現在我就要試試這個我沒試過的芝士，就是日本芝士，她說這個是Natural Cheese，我們先看看好不好吃，是沒有味道的，哈哈哈哈，天然芝士原來是沒有味道的，但是很好吃，因為有時候沒有味道就吃到那種，芝士味，就是沒有，你可以說它是沒有角色，哈哈哈哈，好像沒有角色那樣。</p></a>
+				<a href="#00:22:19.95" id="00:22:19.95" class="lt" onclick="jumptoTime(1339, this.id)"><p>但是很淡口，很淡口，這個Natural Cheese是很淡口的，一說到Cheese，很多人就有很多不同的評論，有些人說Gruyère是太濃了，也許，接著有Peggy在Facebook就說，I like raclette， raclette真的不是每個人都喜歡吃，不是每個人都喜歡吃。</p></a>
+				<a href="#00:22:44.53" id="00:22:44.53" class="lt" onclick="jumptoTime(1364, this.id)"><p>也有在Facebook，我的朋友打電話，不是打電話，神經病，就說Caciocavallo，Caciocavallo，這隻是不是Caciocavallo，日本那隻Natural Cheese，Caciocavallo，我不太記得名字，所以不敢說，所以你告訴我，我才敢說，是不是，Ellen Kang，Caciocavallo，這隻日本Cheese，maybe it is。</p></a>
+				<a href="#00:23:12.03" id="00:23:12.03" class="lt" onclick="jumptoTime(1392, this.id)"><p>It's very good，Blue Cheese，我不喜歡吃，Sorry，你喜歡Blue Cheese的朋友，如果你說，怎麼搞的，Blue Cheese你不喜歡吃，是呀，我不喜歡吃，真的不行，我吃不到這個Blue Cheese，I cannot stand it， sorry，Sorry， Blue Cheese lover， not my type。</p></a>
+				<a href="#00:23:34.03" id="00:23:34.03" class="lt" onclick="jumptoTime(1414, this.id)"><p>I cannot stand it，吃不到，但是如果你真的想試一下芝士的話，Comte，我介紹給你，未吃過Comte的話，please，請大家明天有時間，有機會，去超市或者外國的市場，去選擇Comte來試一下，你真的，我覺得是一試愛上，Smoked Cheese，一個很好的小吃，因為它有少許煙燻味。</p></a>
+				<a href="#00:24:7.03" id="00:24:7.03" class="lt" onclick="jumptoTime(1447, this.id)"><p>吃完之後，你配紅酒，剛才聽到有一個comment，問，你如果喜歡喝什麼紅酒，即是配，其實紅酒對我來說，我不太會喝，但是我只會喝到，哪個好喝，我就覺得好喝，然後我會喜歡選擇一些，如果配Smoked Cheese的話，我會選擇一些厚身一點的，Bold一點的，即是重身一點的紅酒去喝，就是這樣。</p></a>
+				<a href="#00:24:39.03" id="00:24:39.03" class="lt" onclick="jumptoTime(1479, this.id)"><p>如果你說，如果我喝紅酒，我會喜歡喝哪個區的呢?</p></a>
+				<a href="#00:24:45.03" id="00:24:45.03" class="lt" onclick="jumptoTime(1485, this.id)"><p>我喜歡喝Barolo，Barolo區，一個小區，Barolo小區的紅酒，我很喜歡喝Barolo那邊的區的紅酒，I don't know，我覺得他們的味道是很棒的，就是這樣，這款Natural Sweet Cheese，Caciocavallo，Thank you，我不是很記得名字，多謝Alan告訴我。</p></a>
+				<a href="#00:25:11.03" id="00:25:11.03" class="lt" onclick="jumptoTime(1511, this.id)"><p>Alright， comment，這三隻芝士我想介紹給大家，有人問我這隻natural cheese的質地如何，其實它像mozzarella，有少少mozzarella的感覺，但它比mozzarella鹹些，因為它有些鹽，就是這樣，加上這裡按下去，都有點韌力，是幾好食，這個ok。</p></a>
+				<a href="#00:25:58.70" id="00:25:58.70" class="lt" onclick="jumptoTime(1558, this.id)"><p>小吃是ok，早上可以切少少做早餐，smoked cheese可以晚上吃，comté午餐，我不知為什麼，我喜歡午餐，晚上ok，但這個smoked cheese，我比較喜歡晚上吃，所以今晚，我叫MARVY，hello，這兩隻，我喜歡吃的芝士，想介紹給大家，Alan說Caciocavallo可以用煎鍋煎芝士，很好味。</p></a>
+				<a href="#00:26:55.70" id="00:26:55.70" class="lt" onclick="jumptoTime(1615, this.id)"><p>也可以就這樣食，加些olive oil，加些black pepper就好食，Facebook的Lydia說，將少少blue cheese放西梅，真的可以嗎?</p></a>
+				<a href="#00:27:12.70" id="00:27:12.70" class="lt" onclick="jumptoTime(1632, this.id)"><p>好吃?</p></a>
+				<a href="#00:27:14.70" id="00:27:14.70" class="lt" onclick="jumptoTime(1634, this.id)"><p>真的這麼正?</p></a>
+				<a href="#00:27:16.70" id="00:27:16.70" class="lt" onclick="jumptoTime(1636, this.id)"><p>I don't know，I really don't know，blue cheese真是，I don't know，都可以試下嘅，就係咁樣囉，今日想介紹呢啲芝士畀大家食，我覺得可以去試下嘅，呢個入門版我覺得有啲comte， smoked cheddar，同埋一個...咩話?</p></a>
+				<a href="#00:27:48.74" id="00:27:48.74" class="lt" onclick="jumptoTime(1668, this.id)"><p>我成日忘記個名呀，等我睇下先，Caciocavallo，算啦，你忘記個名啦，Anyway，呢個naturalcheese你去cheesestand.com睇下，有啲人話鍾意食Tilsit from Switzerland，Really? Ok，好多名喎，今晚都有好多人提供啲芝士名畀我，鍾意食芝士嘅朋友真係正。</p></a>
+				<a href="#00:28:20.74" id="00:28:20.74" class="lt" onclick="jumptoTime(1700, this.id)"><p>我唔介意大家可以再係comment介紹啲芝士畀我，因為你話我係咪食好多芝士? No!</p></a>
+				<a href="#00:28:26.74" id="00:28:26.74" class="lt" onclick="jumptoTime(1706, this.id)"><p>我真係唔係食好多芝士，但係我其實食芝士嗰啲都係普普通通，如果大家有啲芝士名字可以介紹畀我，我絕對無任歡迎，Please留啲comment畀我，等大家都可以認識下，去試下都好，真係，趁條利仲work到，趁仲識分，港式芝士蝦醬，Ok， thank you very much，腐乳係咪呀?唔係蝦醬係咪呀?</p></a>
+				<a href="#00:28:58.74" id="00:28:58.74" class="lt" onclick="jumptoTime(1738, this.id)"><p>港式芝士係腐乳喎，我覺得似乎係，Anyway，係啦，咁樣大家可以互相集思廣益，喺comment嗰度寫啲你覺得自己好好食嘅芝士，最好就有得賣啦，唔好拋一啲你，我喺意大利嗰陣時食嗰隻芝士，好好味呀，叫乜乜乜乜乜，跟住，無得賣嘅，你都可以講下嘅，最好睇下可唔可以講埋喺邊度買到，咁樣就好正。</p></a>
+				<a href="#00:29:28.74" id="00:29:28.74" class="lt" onclick="jumptoTime(1768, this.id)"><p>咁我又可以講畀大家聽，我呢隻芝士呢，呢一隻呢，呢兩隻呢就係Taste度買嘅，咁呢一個呢，就喺網上面，OISIX嗰度買嘅，咁你都可以去Cheesestand.com嗰度望一望，咁你哋可以自己去睇一睇啦，搞掂，好，咁睇得個鐘呢，咁呢個時間呢，我都差唔多要去接太嫂返屋企啦，因為如果遲到嘅話呢。</p></a>
+				<a href="#00:29:59.74" id="00:29:59.74" class="lt" onclick="jumptoTime(1799, this.id)"><p>佢係會鬧我嘅，唔係咁嘢，一個女人仔喺街度又唔係太好啦，所以我都要去接佢啦，咳咳咳咳咳，所以你見我呢就冇飲紅酒嘅，因為呢我要揸車一陣，好，咁今晚呢一個Live呢，簡簡單單，但係呢我覺得，麻煩大家可以留個Message，話畀大家聽有啲咩芝士係好食，我覺得大家都想知嘅，我都想知嘅，ok，所以Please。</p></a>
+				<a href="#00:30:29.74" id="00:30:29.74" class="lt" onclick="jumptoTime(1829, this.id)"><p>請你哋留個Comment話畀我哋聽，有啲咩芝士介紹下畀大家食，好唔好呀，咁我哋先講完畢，Thank you so much，祝大家有一個愉快嘅周末，希望你哋開心心，星期六星期日，可能天氣都麻麻地，如果係嘅話，咁就留喺屋企囉，嘆下冷氣，睇下電視，做下梳化薯仔，Couch Potato，其實都係好舒服嘅。</p></a>
+				<a href="#00:31:1.74" id="00:31:1.74" class="lt" onclick="jumptoTime(1861, this.id)"><p>咁多謝大家，今晚呢係呢個時間呢，陪我一齊，試芝士，咁我而家要去接太蘇啦，咁我哋同Facebook嘅講Bye Bye先，Bye Bye Facebook嘅朋友，Bye Bye，好YouTube嘅你多謝你，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

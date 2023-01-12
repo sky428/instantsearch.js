@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2021年3月21日</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UwKUu1IbD8U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>2021年3月21日</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好又係我星星同大家職人吹水，大家睇落係咪好大堆頭呀排到成台都係嘢我自己都覺得，其實我都係整一個執㗎咋喎，咁你個執有啲咩咁巴閉呀，咁我早前好多網友都分別喺facebook呀，頻道會員呀甚至係youtube留言版呀留言就係問，衛星星。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.85" id="00:00:48.85" class="lt" onclick="jumptoTime(48, this.id)"><p>其實出面街邊嗰啲，咖喱魚蛋，嗰個汁點樣整㗎咁樣，特別喺頻道會員嗰度啦咁呀好多網友問呢個問題，今日就同大家分享下我自己之前做嗰個醬汁嘅做法，咁未睇醬汁之前咁咪大家出街，梗係要篤魚蛋㗎啦咁咪再呢啲白曬曬咩㗎，牛柏葉囉咁呢啲呀，我之前有啲浸發魷魚囉，咁我首先就將嗰啲食得嗰啲我哋擺埋一邊先，靈魂。</p></a>
+				<a href="#00:01:31.09" id="00:01:31.09" class="lt" onclick="jumptoTime(91, this.id)"><p>都係個執呀嘛，咁我執當中呀，咁我哋，都要分，兩類呀第一，就係香料，第二就係個醬，缺一不可嘅呢個，咁大量嘅乾蔥同埋蒜蓉呀攞幾多呀，蒜蓉攞兩嚿啦，乾蔥落一包仔啦，咁而家就擔擔仔就摸曬啲蒜頭同埋乾蔥先，咁幾經辛苦搞掂啲蒜頭之後呀咁咪而家咪輪到啲乾蔥肉呀，做呢啲呀，真係重拾返我自己入行呀做靚仔嗰段時間呀嗰啲生涯，咁我哋咪做呢啲呀。</p></a>
+				<a href="#00:02:19.99" id="00:02:19.99" class="lt" onclick="jumptoTime(139, this.id)"><p>蒜頭呀咩洋蔥呀，咁我哋嗰陣時，乜嘢都，係原材料返嚟㗎，唔會整好曬㗎啦，而家我哋喺出面做呀，蒜肉呀乾蔥肉呀，全部都係可以，咩好曬嚟㗎，咁咁似啲乾蔥油，我又買呢啲細細粒啦就會比較香啲呀有啲大粒啲嘅就唔使處理咁多嘢呀，咁我又繼續，好曬之後咁我哋就洗乾淨佢呀，發好嘅魷魚同埋啲發佢個拍嘢啦我哋搵水浸返佢洗乾淨佢，跟住又擺咗雪櫃先。</p></a>
+				<a href="#00:03:3.40" id="00:03:3.40" class="lt" onclick="jumptoTime(183, this.id)"><p>咁整好曬之後呢咁我哋喺出面做呢就有兩個途徑，第一，就係把你落部搞肉機嗰度呀，用個最粗嗰個窿呢，全部搞曬佢，第二個途徑，搵個攪拌機呀，咁樣，第三個途徑，搵手嘅，咁我喺屋企，慢慢做，落菜，慢慢切曬佢啦跟住得佢囉，呢兩樣呢個底呢就好重要㗎，咁當然喺出面做，就唔會自己得㗎啦咁呀一定係全部用機搞㗎，數量多呀搞好多㗎搞算用。</p></a>
+				<a href="#00:04:2.02" id="00:04:2.02" class="lt" onclick="jumptoTime(242, this.id)"><p>搞幾合呀嗰啲膠盒呀，咁樣切到碎菜之後呢咁我哋咪用個刀尾呀，一下一下咁樣落去呀我哋又唔好得呀，飛到周圍都係㗎啦，咁我哋又唔使話啫，整到佢，太過細粒㗎，咁我識當就得㗎喇最緊要都係另外識出香味㗎喎，咁你啲烹調咪講求耐性囉，好快呀我攞啲現成嘢返嚟拍㗎啫嘛係咪先咁樣我自己，煮嘢食都係陶嘢性情啦同埋都係分享即係過鐘有技巧呀。</p></a>
+				<a href="#00:04:51.55" id="00:04:51.55" class="lt" onclick="jumptoTime(291, this.id)"><p>洋蔥蒜頭都有少少技巧喺度呀嘛，咁有啲小店咁咪可以自己，整咁咪整好啲囉自己咩呢個香味又香好多嘅，咁咪好曬啦，我都係度備用，跟住到你講咗呀講咗點呀，我哋全部切曬絲佢咁ok呀，自己做呀咁我啲乾蔥我都係設施呀，好少搞㗎，佢啲裏面嗰啲呀乾蔥嗰啲味呢就唔會畀你全部搞曬出嚟㗎，就會比較好嘅咁我哋出面都有啲。</p></a>
+				<a href="#00:05:46.33" id="00:05:46.33" class="lt" onclick="jumptoTime(346, this.id)"><p>設施嗰啲機呀，熱淚人士一定知道呀嗰啲設施嗰啲擺乜嘢落去啦，全部打曬絲呀，咁我哋就切曬佢先，好似好大條咁樣整埋啦，唔係得返好多呀呢度點解呀呢個都係醬底，其中之一個份子嚟㗎食落去所以叫大家整多啲就係咁呀，咁我哋又繼續啦啲乾蔥絲咁我成日都用㗎喇教大家，都頭去切咁你咪比較靈活啲啦，都切。</p></a>
+				<a href="#00:06:33.95" id="00:06:33.95" class="lt" onclick="jumptoTime(393, this.id)"><p>配料搞掂曬之後啦咁我哋又睇返啲醬料，咁醬料當中呢一樽呢，就叫做青花椒油呀，大家可以youtube search職人吹水，花椒油嘅做法，如果冇出面都會有啲現成有得賣嘅咁樣我哋隨即開火，燒熱直鑊去先，我呢張花椒油呀我今年呀整咗四次㗎啦，咁我哋呀，就落返約五六個湯匙呀，咁隨即收個慢火。</p></a>
+				<a href="#00:07:13.15" id="00:07:13.15" class="lt" onclick="jumptoTime(433, this.id)"><p>咁我哋又將一半嘅乾蔥絲，打落去，一個慢火，咁我哋整到佢點為之得啦，佢有個焦香呀，唔好咁心急，咁做呢啲醬料呀我提供一個，基本嘅，技巧同埋醬料嘅組合，同埋，個味道嘅終點呀點解之中鐘點呀，即係你要做到咁乜嘢味道，先會講為人知最鍾意食㗎啦，呢個先係最重要㗎嘛，至於辣味，就自己調校呀，一般出面做呀都有三個辣味呀。</p></a>
+				<a href="#00:07:56.15" id="00:07:56.15" class="lt" onclick="jumptoTime(476, this.id)"><p>咁我而家又慢慢爆香呢啲先，咁而家最重要都係講個醬底呀，出面成日講都話為，咖喱魚蛋咖喱魚蛋，其實我哋都係做一個混合嘅醬底嘅，魚蛋加唔加呢，我哋浸魚蛋嗰度，落啲咖喱落去浸，都係點返呢個醬底，呢個醬底有啲係相當之重要㗎啦，咁阿花之流講咗啦咁有豬油醬啦豆瓣醬，咁有咖喱蛋，沙茶醬，比例呢就係話。</p></a>
+				<a href="#00:08:37.11" id="00:08:37.11" class="lt" onclick="jumptoTime(517, this.id)"><p>咖喱，咁我哋落一個湯匙，嗰個比例呀，跟住，沙茶醬，咁我哋同咖喱一樣，都係一個湯匙，咁跟住辣豆瓣醬呢個辣豆瓣醬呀我哋畀只係畀一個基本嘅，辣味同埋香味佢呀，所以我攞一個茶匙到話夠呀，咁我醬料其中之一個靈魂呢就係，柱侯醬，都係一個茶匙，咁醬料準備好，咁我哋就準備少少雞湯，咁我出面就有唔會有雞湯呀咁我大家咪點返少少雞粉落去囉，萬事俱備。</p></a>
+				<a href="#00:09:30.46" id="00:09:30.46" class="lt" onclick="jumptoTime(570, this.id)"><p>咁而家咪保持住個細火，你啲乾蔥呀，大家睇到話啲乾蔥，全部變曬色喎，有啲酥油嘅香味喎，咁呢段時間，我係咪攞埋啲蒜落去囉，落埋啲，紅椒絲落去，咁呀都係等佢帶一帶個味咁我哋就保持住個慢火繼續，咁我哋畀少少耐性，就將啲蒜蓉都炒到佢變為金黃色，咁做呢啲醬料呀，點解要強調個仗體咁重要呀，我自己呀。</p></a>
+				<a href="#00:10:17.58" id="00:10:17.58" class="lt" onclick="jumptoTime(617, this.id)"><p>都係要畀錢畀好多錢去出去，學一啲，醬料基本技巧㗎，咁我哋都會進修㗎嘛，將啲心得同大家分享呀，大家都睇到呀個底呢就呈現金黃色呀咁而家你咩，將啲醬呀，就全部就落曬落去，四樣醬料，攞乾淨佢啦，保持住個慢火，慢慢將個混醬呀，推香佢，唔好心急，我哋推到佢呀全部都容男咁就最理想，咁我哋都要不停走去剷住佢呀咩個剷醬剷醬咪就係呢啲囉，順浮去痴底㗎嘛。</p></a>
+				<a href="#00:11:16.20" id="00:11:16.20" class="lt" onclick="jumptoTime(676, this.id)"><p>嗱咁你而家呢個時間呢聞到啲醬料個香味喎咁我而家畀返個最大火去，想我將你更加香我哋喺鑊邊嗰度撐少少走落去，跟住，我哋落埋啲雞湯落去，咁你嘅來源來自雞湯，第二個來源就係來自蠔油咁我呢度呀落返約兩個湯匙嗰個蠔油落去，跟住，釣返一個湯匙嗰個生抽落去，咁我哋仲要交返少少色落去呀攞返啲老抽落去，等佢嘅顏色呢就更加好啲咁我而家就係咪一陣間先。</p></a>
+				<a href="#00:12:7.04" id="00:12:7.04" class="lt" onclick="jumptoTime(727, this.id)"><p>咁咪有一陣，咁呢個醬汁最終嘅味道呢我哋係要偏濃嘅，有少少咖哩味，其他嗰啲味道呢都係襯托咖哩味嘅，咁呢個呢有少少辣之餘濃味呢，我哋仲要夠甜呀，大甜嘅咁我呢度呢約落返兩個茶匙嗰個砂糖落去，做一個執嘅竅門講曬㗎喇喎，搵返起佢先，咁到最後，開返少少生粉水，咁我哋埋喺度講好多次呀我哋底下要快落線就要慢，咁我又推到佢較為近少少跟住開返個火。</p></a>
+				<a href="#00:12:56.70" id="00:12:56.70" class="lt" onclick="jumptoTime(776, this.id)"><p>搵返佢透嘅一定要，做呢啲醬汁呀我哋一定要滾到去透同埋個醬底嗰啲料呀我哋唔好有生，如果你啲乾蔥蒜蓉你滾得佢唔夠透啦，好易會反呀點為之反呀，鳥鳥呀佢又會變曬水㗎啦搵佢之後熄火，咁我完成喎，咁我將底我哋喺隻鑊嗰度嘔一嘔佢先啦跟住咪，攞返啲，浸發咗個魷魚出嚟啦咁嘅魚蛋呀，拍嘢呀洗乾淨佢。</p></a>
+				<a href="#00:13:36.12" id="00:13:36.12" class="lt" onclick="jumptoTime(816, this.id)"><p>咁跟住咪攞返呢啲包裝魚蛋出嚟就最方便啦點樣講呀，因為呢就即刻食㗎嘛，咁我哋攞到出嚟啦，就好簡單呀，我哋擺啲滾水嗰度就得啦，咁正如我頭先所講呀我哋喺出面做呀一烹就清水，一烹就咖喱咖喱咪咖喱膽加少少清水囉，咁我哋都清水啦咁我哋都畀返少少味呀畀返少少鹹味去呀，鹽落去，魚蛋浸緊之際呀咁我設計唔好大火喎我哋慢慢火浸佢。</p></a>
+				<a href="#00:14:14.74" id="00:14:14.74" class="lt" onclick="jumptoTime(854, this.id)"><p>佢啦，佢魚蛋呀一張個新嘅就唔好食呀啲魚蛋，咁我哋又攞返啲浸法好嘅牛扒葉出嚟當然我哋就要洗乾淨佢啦，咁我哋又點樣改呢嗰度兩個手指咁上一副，咁樣已經係呢度已經係一個order㗎啦咁我哋就，點樣穿呀，咁我哋就，開三折，咁我攞一嚿出嚟，喺嗰牛扒葉新嗰度呀，我哋接過u字，咁我哋，穿入去。</p></a>
+				<a href="#00:14:56.22" id="00:14:56.22" class="lt" onclick="jumptoTime(896, this.id)"><p>出嚟一塊呢就係咁樣呀，跟住，呢邊係咁呀，呢度可能睇得清楚啲呀唔好篤親嘅手呀，咁樣，跟住呢塊又係，吞好佢呀，搞掂之後咁我擺返落水浸住啦跟住呢啲，發好咗個魷魚酥咁我又點樣改呀，我哋兩條，嚴謹未，兩條嚴謹未，一吋幾多呀，一吋四，即係咁樣做為一吋㗎啦出面，咁我哋首先呢喺個尾嗰度呀，我哋喺度穿入去。</p></a>
+				<a href="#00:15:42.04" id="00:15:42.04" class="lt" onclick="jumptoTime(942, this.id)"><p>咁我哋有兩種穿法㗎喎，咁第一種就係咁樣呀我第二種呀，我哋會穿埋條鬚上嚟㗎，咁我哋喺條鬚嗰度呀，再穿返落嚟㗎，咁樣穿呀，佢又好似，大體少少呀嘛，咁有啲穿一條有啲穿兩條，咁樣跟住咪穿埋呢個啦，有啲好長啲鬚啦，通常，我哋都係穿上上高呀，咁樣，魚蛋藥浸咗十分鐘咁咪應該ok㗎啦，我哋又真係千祈唔好滾佢啦咁咪如果有我打嚟魚蛋一串，咁我哋咪篤畀佢囉。</p></a>
+				<a href="#00:16:26.86" id="00:16:26.86" class="lt" onclick="jumptoTime(986, this.id)"><p>有啲高手啦就咁咪已經篤到㗎啦，跟住我哋隨即，就咋嘛啲辣汁嗰度呀，成村站落去最好呀，真係，邊位叫咗教你魚蛋咁咪即到呀一串魷魚一串，拍嘢冇問題稍等下一即刻錄，相反呢啲拍嘢魷魚就一定要猛火喎，咁隔離個汁梗係要搵住佢㗎啦，隨即我哋咪攞起上嚟停一停水，跟住我哋咪畀返啲汁去啦，爭取最正呀不過呢個汁呢我仲有其他用途呀晚啲再食呀。</p></a>
+				<a href="#00:17:29.87" id="00:17:29.87" class="lt" onclick="jumptoTime(1049, this.id)"><p>所以我就唔會撈㗎，好多啲，真係啲魷魚，咁我完成囉，咁大家三樣之中咁我最鍾意食邊樣呀，魚蛋呢就最受歡迎嘅，咁咪魷魚，同埋拍嘢就畀我買得貴啲嘅，咁當中最重要，梗係個醬汁呀因為靈魂嚟㗎嘛呢個醬汁，咁呢類醬汁嘅分享呀，即係網上就唔係好多人講呀即係點樣會產香個底呀用咁大量嘅乾蔥蒜蓉呀，咁我星星我就毫無保留呀。</p></a>
+				<a href="#00:18:21.83" id="00:18:21.83" class="lt" onclick="jumptoTime(1101, this.id)"><p>全部同大家分享呀，呢啲醬汁，希望大家都用得著呀，如果大家覺得呢啲醬汁嘅幫到你嘅咁你就加入我頻道會員，畀我職人吹水一個延續性嘅發展啦，咁樣鍾意食咖喱魚蛋嘅網友畀我like我星星呀咁鍾意食魷魚嘅網友訂閱我職人出嚟嘅頻道，幫我分享下呢個，沙嗲汁，魚蛋汁又名咖喱汁，總之就秘製醬汁啦希望大家都做到自己嘅口味，咁今日分享到此為止呀多謝收睇。</p></a>
+				<a href="#00:18:56.65" id="00:18:56.65" class="lt" onclick="jumptoTime(1136, this.id)"><p>下條影片再同大家出個拜拜。</p></a>
+</div>
+	</body>
+</html>

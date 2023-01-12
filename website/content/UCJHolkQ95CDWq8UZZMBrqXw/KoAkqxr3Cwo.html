@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之日本零食大食會！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KoAkqxr3Cwo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之日本零食大食會！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>我會調光少少先，耶，OK啦，Hello Hi Hello Hi Hi Hi，喂咁等緊你地入黎果陣時呢，我就搞搞我個ipad，又睇一睇大家，有冇，say個hi先啦係咪先，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>Hello Hello Hello，Hello，Hello</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>我睇下先啦，YouTube你去左邊，好，YouTube，耶，Turtle Go 係Facebook嘅，Hello Hi，喂Becky Hello 你地好呀，係YouTube嘅，Reef Hello，Reef我冇讀錯呀應該係Reef係咪呀，定係Reevy呀，Hello，Hi Hello Hello。</p></a>
+				<a href="#00:01:0.00" id="00:01:0.00" class="lt" onclick="jumptoTime(60, this.id)"><p>喂今晚正呀今晚，今晚我真係有好嘢要介紹，俾大家喂Hello，Facebook嘅你Hello呀，搞搞個，嘩點解個鏡頭咁歪呀今晚搞得，係啦咁樣啦，Yes，唔好意思呀YouTube咁多位，我搞緊Facebook果邊啲嘢呀，哈哈哈哈，Hello，Happy Friday Again 呀咁多位，咁如果係海外嘅朋友呢。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>就都係Happy Friday，你地係朝頭早呀係咪呀，係呀朝頭早呀Happy Friday，大家好呀大家好呀，歡迎大家嚟到太上宵夜呀，咁今日呢我地嘅太上宵夜呢，如果你有睇題目嘅話呢，睇我地嘅Description嘅話呢，我地今日，西利啦，個Title呢就等我記唔記得先，日本零食大食會呀。</p></a>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>嗯，大家係咪嚟到呢一個時候呢，都開始，無論你地坐，一個電腦mon面前呀，或者係一個平板電腦，面前呀電話面前呀，好似而家你地咁樣啦，或者電視機面前呀，咁突然間唔知點解去到呢啲時候呢，就硬係想放啲嘢落口，你想放咩都好啦我呢就係放食物嘅，哈哈哈哈，我呢個時候，唔知點解硬係想，有啲嘢咬下，咁樣呢就真係好開心架啦。</p></a>
+				<a href="#00:02:30.00" id="00:02:30.00" class="lt" onclick="jumptoTime(150, this.id)"><p>一路咬住呢就一路睇下，唔好用腦呀嘛最緊要，睇嘢最好係乜嘢呢，即係睇電視呀，睇電影呀最正嘅就係，唔使用腦因為呢，我自己睇過一個研究呢就係話，如果你睇電視呀或者睇緊，電影嘅時候呢你個腦電波呢，係咁嘅，哈哈哈哈，靜止嘅咁於是你咪好relax囉，個人因為你唔用腦呀嘛，睇嘢嗰陣時所以，點解啲人會。</p></a>
+				<a href="#00:03:0.00" id="00:03:0.00" class="lt" onclick="jumptoTime(180, this.id)"><p>睇ipad呀睇，啲電影呀成呀有陣時會好舒服，上癮呢就係咁嘅意思因為你個腦真係可以休息呀嘛，咁你休息嗰陣時，最好就係做啲咩再放啲嘢落個口度食囉，哈哈哈哈，咁就係最好嘅休息啦，唉，講嘢我都想試下一陣就同大家一齊試下先，喂，咳咳，再等一等你地先啦，有幾包嘢呀係呀今日有幾包嘢呀喂，嗰幾包嘢呢。</p></a>
+				<a href="#00:03:28.00" id="00:03:28.00" class="lt" onclick="jumptoTime(208, this.id)"><p>都係正嘢嚟嘅，上次，我咪介紹過啲青魚，畀大家嘅，有冇食到呀，好好食呀日本罐頭呀，好好味，我已經約曬，超正ok，咁所以大家呢，介紹親戚畀你嘅嘢呢一定係冇衰，今日呢亦都要介紹，一啲，好好味嘅食物呢，畀大家去研究下啦，因為呢，如果有睇開你live嘅朋友呢，都會，亦都有可能買過嘅朋友呢，你都知道呢今日要介紹嘅呢一個。</p></a>
+				<a href="#00:04:8.00" id="00:04:8.00" class="lt" onclick="jumptoTime(248, this.id)"><p>食物呢，嚟自呢一個嘅網站呢，都一定係，good stuff係好嘢嚟嘅，因為一路以嚟呢，我食過呀，佢介紹嘅嘢啦，都係好味嘅所以呢我都想介紹畀你，呢一個就係，肯定㗎啦咁樣呢，今日呢我哋星期五呢，我哋成日都會係，飲啲嘢先㗎嘛係咪，就飲啲嘢先啦咁今日講明，係一個日本嘅零食大會呢，我哋一定係飲啲。</p></a>
+				<a href="#00:04:40.00" id="00:04:40.00" class="lt" onclick="jumptoTime(280, this.id)"><p>日本嘢先啦好健康呀我哋今日，點解咁講呢，嘩係，我哋今日呀，有呢一個，果實酒飲呀我哋今日果實酒，ok 蘋果，果實酒呢一個，又係嚟自日本嘅，青森呀，青森呢一個地方，ok咁呢一個呢就係一個，果實酒嚟㗎啦好細支，但係當然呢有大支裝嘅，嘩，呢一個就係大支裝啦，一個大支裝一個細支裝ok，咁今日呢又見到你。</p></a>
+				<a href="#00:05:16.00" id="00:05:16.00" class="lt" onclick="jumptoTime(316, this.id)"><p>太嫂 見到你啦，係呀梗係啦跟住呢，就大支裝同細支裝，今日我哋飲細支裝自己飲嘅，係啦 係咪影到我㗎，梗係影到你啦，咁其實呢 真係影到我㗎，係呀，咁跟住呢，我係特別想同大家呢，你知啦，我買好多呢啲，Star Wars嘢㗎嘛其實呢我屋企呢，由，即係玩具呀，平時廚房用具呢，都有Star Wars嘢嘅，咁呀今日呢。</p></a>
+				<a href="#00:05:52.00" id="00:05:52.00" class="lt" onclick="jumptoTime(352, this.id)"><p>比你睇到添 今日呢我想介紹一個，我平時都有用開嘅，一個開瓶器，一個Star Wars嘅，開瓶器 大家望一望，係Darth Vader嘅一個，開瓶器 ok，我係特登，等到一個要用呢一個，開瓶器 唔係開瓶器啦，開啤酒瓶，咁樣嘅 呢個叫咩呀，我都唔知叫咩呀真係，係咪開瓶器呀 開瓶器啦，大家要睇下。</p></a>
+				<a href="#00:06:26.00" id="00:06:26.00" class="lt" onclick="jumptoTime(386, this.id)"><p>呢個 ok，好cute㗎我覺得，好好笑呢件事，好了 元氣覺醒呀有人講呀，冇錯啦 我一定要係你面前，開嘅 點解咁好笑呢，大家靜少少喎 ok，聽實啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:42.00" id="00:06:42.00" class="lt" onclick="jumptoTime(402, this.id)"><p>好無聊呀你，好 要唔要聽多次呀，喂 咁嘅喂，嚟得，好無聊呀你，好 要唔要聽多次呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:0.00" id="00:07:0.00" class="lt" onclick="jumptoTime(420, this.id)"><p>好無聊呀你，好無聊呀你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:4.00" id="00:07:4.00" class="lt" onclick="jumptoTime(424, this.id)"><p>好無聊呀你，好無聊呀你，好無聊呀你</p></a>
+				<a href="#00:07:10.00" id="00:07:10.00" class="lt" onclick="jumptoTime(430, this.id)"><p>好無聊呀你，係咪好正，sorry 對唔住呀，幾十歲人仲覺得呢啲好好笑呢，因為我真係覺得好好笑嘅係，會唔會太正 冇錯 youtube嘅人，你係咪覺得太正呀 我都覺得超搞笑，呢個真係好正，呢個就係一個Darth Vader嘅，開屏器啦，每次一開呢，你就可以聽住音樂，即係每次開呢，即係好似啤酒聲咁樣嘅呢一個。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:56.00" id="00:07:56.00" class="lt" onclick="jumptoTime(476, this.id)"><p>跟住呢就聽，Imperial March，係咪好開心呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:2.00" id="00:08:2.00" class="lt" onclick="jumptoTime(482, this.id)"><p>好無聊，好無聊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:6.00" id="00:08:6.00" class="lt" onclick="jumptoTime(486, this.id)"><p>我已經播咗三次啦，夠啦，入返正題先，我哋呢，要飲下嘢先，飲下嘢先，呢一個就係蘋果嘅果實酒，好 嚟啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:22.00" id="00:08:22.00" class="lt" onclick="jumptoTime(502, this.id)"><p>酒嚟㗎 你有酒㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:24.00" id="00:08:24.00" class="lt" onclick="jumptoTime(504, this.id)"><p>冇㗎 西打嚟咋嘛，大家望下先，係咁樣嘅，好清，其實一倒出嚟呢，嗰個味道已經係好香，好正呀呢個，飲下先啦 試下先，我未試過嘅呢個</p></a>
+				<a href="#00:08:46.00" id="00:08:46.00" class="lt" onclick="jumptoTime(526, this.id)"><p>所以想同大家試下，好正，好清呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:56.00" id="00:08:56.00" class="lt" onclick="jumptoTime(536, this.id)"><p>雪凍咗仲好飲</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:58.00" id="00:08:58.00" class="lt" onclick="jumptoTime(538, this.id)"><p>雪凍咗仲好飲，雪凍咗會好飲啲，因為我自己，失敗咗啦今日，應該雪凍咗先好飲，但係都正喎呢一個，Not bad，首先同大家，講cheers先啦，Happy Friday，大家飲杯先，這個是來自清心園，日本清心園的一個蘋果的Cider，Apple Cider 果實酒來的，有人問在哪裏買的，沒錯 我已經放了網址。</p></a>
+				<a href="#00:09:36.80" id="00:09:36.80" class="lt" onclick="jumptoTime(576, this.id)"><p>在我的YouTube和Facebook description裏面，所以你現在可以去看看，小小一支我覺得都不錯，開著我的Live一邊說一邊聽一邊看，你可以去這個網址看，叫做I am Mama，當然講給你聽的當然有好處，看到這個Live的朋友，你很幸運，因為你打入這個Tarzan Cooks的Promo Code，接下來你要買的東西。</p></a>
+				<a href="#00:10:13.30" id="00:10:13.30" class="lt" onclick="jumptoTime(613, this.id)"><p>就是有折扣的，是不是很正，所以我們一開始就弄杯飲料，很小一支，比你還要小，有支大的你知道嗎，我們要介紹一下有什麼東西吃，今天主要介紹給大家的，就是有四款東西，我先給你們看一看，為什麼要主力介紹給你們呢，就是因為我，等一下 舉起一點，這個 舉得不是太好，這四款Pound Cake，我已經是吃過了。</p></a>
+				<a href="#00:10:52.80" id="00:10:52.80" class="lt" onclick="jumptoTime(652, this.id)"><p>這四款Pound Cake，我已經是吃過了，很好吃，真的不是開玩笑，很鬆軟，OK 很好吃，還有我想說，大部分香港人都會擔心，Pound Cake會不會很甜，No 這個真的不是那麼甜，就是剛剛好的味道，而有四款味道我們選擇，當然每個人都有自己的喜好，包括有什麼呢，有栗子，有Yuzu，有Caramel Coffee。</p></a>
+				<a href="#00:11:33.80" id="00:11:33.80" class="lt" onclick="jumptoTime(693, this.id)"><p>焦糖咖啡味，還有我懷疑是香港人最愛的綠茶紅豆味，很正，全部在日本製造，而這個做蛋糕的地方，他已經有差不多25年的經驗，做這個蛋糕，所以做出來是非常好吃的，還有，這個 糟了 還有一款，等一下 手拿得不好，這四款蛋糕，這四款Pound Cake，全部是用日本小麥麵粉製造出來的，是非常好吃的。</p></a>
+				<a href="#00:12:19.80" id="00:12:19.80" class="lt" onclick="jumptoTime(739, this.id)"><p>他們的名字叫Bonjiji，為什麼要這樣展示出來呢，我是很想大家去選擇，選擇試哪一個，和大家試一下，綠色那盒就是綠茶紅豆，然後有深咖啡色的，就是焦糖咖啡味，然後還有一個就是Yuzu柚子味道，然後最後那個就是栗子Chestnut，現在可以留言了，有哪一位想我試哪一個，你們快點出聲。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:58.80" id="00:12:58.80" class="lt" onclick="jumptoTime(778, this.id)"><p>剛才問你這瓶酒多少錢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:0.80" id="00:13:0.80" class="lt" onclick="jumptoTime(780, this.id)"><p>你上網站去看看，大家可以留言想試哪一款，我開來給大家看一看，好像鮑魚，是不是 有一點點像，焦糖咖啡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:16.80" id="00:13:16.80" class="lt" onclick="jumptoTime(796, this.id)"><p>有人說焦糖咖啡，焦糖咖啡，焦糖咖啡</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:22.80" id="00:13:22.80" class="lt" onclick="jumptoTime(802, this.id)"><p>咖啡了，Facebook也有人說咖啡了，焦糖咖啡，焦糖咖啡，很多人說咖啡了，焦糖咖啡，焦糖咖啡，Youtube那邊很多人選了焦糖咖啡，綠茶紅豆有一個在Facebook那裡，似乎焦糖咖啡，咖啡是贏的，焦糖咖啡，焦糖咖啡這個很有趣，大家都好像沒有試過，焦糖咖啡，我們不如試一下焦糖咖啡，我們就試一下焦糖咖啡。</p></a>
+				<a href="#00:14:1.80" id="00:14:1.80" class="lt" onclick="jumptoTime(841, this.id)"><p>好，轉一轉鏡頭，Facebook我們就開始轉一轉你，好 Facebook，請等等，OK，Facebook，好 反轉，Hello，在這裏，OK，焦糖咖啡，Hello 到你們了，請等等 Youtube，Hi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:35.80" id="00:14:35.80" class="lt" onclick="jumptoTime(875, this.id)"><p>是不是戴在你的額頭上，你的眼鏡，好，請等等 嘩 為什麼卡住了，Sorry Youtube的朋友們，好 撞到Facebook那邊，天啊，好了，Facebook 要退後一點</p></a>
+				<a href="#00:14:57.80" id="00:14:57.80" class="lt" onclick="jumptoTime(897, this.id)"><p>好，這樣，這樣OK嗎，OK，Youtube低一點，好，這裏高一點，低一點，OK，Facebook 嘩 今天我們做什麼，我們教得這麼好，OK，好，OK 搞定了，我們現在，可以開始試，我再看看有沒有改變，那個，投票情況</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:35.80" id="00:15:35.80" class="lt" onclick="jumptoTime(935, this.id)"><p>栗子</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:37.80" id="00:15:37.80" class="lt" onclick="jumptoTime(937, this.id)"><p>但焦糖咖啡是最多的，焦糖咖啡，是很多的，我們不如就試，焦糖咖啡，先開來看看，嘩，正啊，這樣開出來之後，好，我最喜歡日本的包裝，永遠都有一個口可以讓你開，這時候我就開了，嘩 好香，一開就香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:9.80" id="00:16:9.80" class="lt" onclick="jumptoTime(969, this.id)"><p>嗯，好香，有一陣焦糖的，味道湧出來，大家可以看看，Very nice，一隻手，其實如果你肚餓的話，你可以一個人吃完</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:27.80" id="00:16:27.80" class="lt" onclick="jumptoTime(987, this.id)"><p>好了，你而已，為了方便</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:33.80" id="00:16:33.80" class="lt" onclick="jumptoTime(993, this.id)"><p>我把旁邊切開，方便切</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:41.80" id="00:16:41.80" class="lt" onclick="jumptoTime(1001, this.id)"><p>嘩，打開，先，好了，打開了，嘩 好正</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:57.80" id="00:16:57.80" class="lt" onclick="jumptoTime(1017, this.id)"><p>嘩</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:1.80" id="00:17:1.80" class="lt" onclick="jumptoTime(1021, this.id)"><p>嘩，好，靚，按一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:9.80" id="00:17:9.80" class="lt" onclick="jumptoTime(1029, this.id)"><p>給大家看看，嘩，幾正，這個蛋糕好味，聞到已經好香，Very nice，好，焦糖蛋糕，我們又要，放在這裏，既然這麼開心，我想試完它，我們試，這個綠茶，既然大家，這麼踴躍，我們試綠茶，綠茶開了，你會見到綠茶紅豆</p></a>
+				<a href="#00:17:47.80" id="00:17:47.80" class="lt" onclick="jumptoTime(1067, this.id)"><p>大快手手，攪拌好，試這個，都是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:55.80" id="00:17:55.80" class="lt" onclick="jumptoTime(1075, this.id)"><p>一開已經聞到咖啡味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:57.80" id="00:17:57.80" class="lt" onclick="jumptoTime(1077, this.id)"><p>是嗎?好香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:59.80" id="00:17:59.80" class="lt" onclick="jumptoTime(1079, this.id)"><p>真的很香，Very good，好，你做個Close up給人看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:7.80" id="00:18:7.80" class="lt" onclick="jumptoTime(1087, this.id)"><p>我又剪了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:9.80" id="00:18:9.80" class="lt" onclick="jumptoTime(1089, this.id)"><p>有得看無得食，好慘</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:13.80" id="00:18:13.80" class="lt" onclick="jumptoTime(1093, this.id)"><p>好正，我覺得可以做下午茶，最正，綠色，你應該送杯茶</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:25.80" id="00:18:25.80" class="lt" onclick="jumptoTime(1105, this.id)"><p>綠茶</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:28.90" id="00:18:28.90" class="lt" onclick="jumptoTime(1108, this.id)"><p>綠茶蛋糕就是這個了，好呀 做Chestnut，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:33.90" id="00:18:33.90" class="lt" onclick="jumptoTime(1113, this.id)"><p>栗子和咖啡的都不知怎樣做</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:36.90" id="00:18:36.90" class="lt" onclick="jumptoTime(1116, this.id)"><p>是呀 栗子和咖啡，跟住我們開埋個Chestnut，杯紅茶的，反正都是了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:44.90" id="00:18:44.90" class="lt" onclick="jumptoTime(1124, this.id)"><p>所有東西都開了，什麼?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:47.90" id="00:18:47.90" class="lt" onclick="jumptoTime(1127, this.id)"><p>質地幾軟綿綿的，質地好軟綿綿的 真是，好啦 跟住呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:52.90" id="00:18:52.90" class="lt" onclick="jumptoTime(1132, this.id)"><p>要多杯Dessert Wine</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:53.90" id="00:18:53.90" class="lt" onclick="jumptoTime(1133, this.id)"><p>是呀 多杯Dessert Wine更好，跟住我們就開了個栗子的，栗子蛋糕，我想話比大家聽呢，我隻狗Jelly呢，係勁跳起身，想食的 因為佢都聞到呀，係超興奮 佢而家係，係我腳底嗰度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:9.90" id="00:19:9.90" class="lt" onclick="jumptoTime(1149, this.id)"><p>要幫你郁下 俾你睇下</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:11.90" id="00:19:11.90" class="lt" onclick="jumptoTime(1151, this.id)"><p>唔使啦 唔使啦 好，而家我切開咗嗰個，嘩 Chestnut嗰個，好靚喎，個顏色好靚 Chestnut，好靚呀個顏色，大家見唔見到淺淡黃色，好靚呀個 又係嗰啲呢，哎呀 跌咗粒添，我已經俾Jelly食咗啦，已經，好 Chestnut 係度，即刻係度食，好 跟住 話唔係都係，開埋個柚子。</p></a>
+				<a href="#00:19:43.90" id="00:19:43.90" class="lt" onclick="jumptoTime(1183, this.id)"><p>開埋個柚子，OK，開埋個柚子先，嘩 好靚嘅其實今日，好靚亂呀今日，好多嘢呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:55.90" id="00:19:55.90" class="lt" onclick="jumptoTime(1195, this.id)"><p>嘩 好開心呀，痴線喎，今日開咗好多蛋糕呀，我係唔會食晒 唔使擔心，但係 我想試俾大家睇囉，因為其實呢，我收到嗰時都幾興奮，一開嗰時就好香呀係，所以我一定要，嘩 好，好香呀呢個柚子</p></a>
+				<a href="#00:20:21.90" id="00:20:21.90" class="lt" onclick="jumptoTime(1221, this.id)"><p>Yeah，又係嘅，黃黃啲色嘅呢個，好靚呀，見唔見到呀大家呢個係柚子，嘩 Very Nice，嗯，好香，呢四隻，It's very good，好 我哋不如，試下囉好冇呀喂，我哋試下，好 我哋轉返個鏡頭過嚟先，我想切俾大家睇下，我哋郁下呢個Facebook先，Facebook嘅朋友，Hello。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:57.90" id="00:20:57.90" class="lt" onclick="jumptoTime(1257, this.id)"><p>Hi 我哋又試嘢啦，試嘢食啦OK 跟住到Youtube啦，請等下Youtube，Hello，Hi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:7.90" id="00:21:7.90" class="lt" onclick="jumptoTime(1267, this.id)"><p>OK，Youtube 等下 郁得正少少，Facebook Hello，OK 唔記得轉返，一陣呢啲嘢要調轉晒，Yeah OK 好，喂，好啦得，好靚呀我覺得，咁樣擺出嚟，呢四件蛋糕 It's very nice，OK 好啦，咁樣呢，我哋不如試下呢一個，焦糖咖啡先，焦糖咖啡就係呢一個，咁我哋即刻可以。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:45.90" id="00:21:45.90" class="lt" onclick="jumptoTime(1305, this.id)"><p>咬下啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:47.90" id="00:21:47.90" class="lt" onclick="jumptoTime(1307, this.id)"><p>嗯，一放落個口度呢，焦糖味湧出嚟啦，然後呢你就會食到呢，呢個好香嘅，咖啡味道出嚟嘅，但係唔係苦苦嗰隻，係，好奶香嗰隻，好Nice 要唔要試下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:9.90" id="00:22:9.90" class="lt" onclick="jumptoTime(1329, this.id)"><p>呢個係咩味呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:11.90" id="00:22:11.90" class="lt" onclick="jumptoTime(1331, this.id)"><p>呢個焦糖咖啡，得唔得呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:15.90" id="00:22:15.90" class="lt" onclick="jumptoTime(1335, this.id)"><p>好靚呀，好似台灣嗰啲，唔係 正正係新加坡嗰隻，係咩，我覺得好食過</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:25.90" id="00:22:25.90" class="lt" onclick="jumptoTime(1345, this.id)"><p>Caster Cake，呢個叫Bornjiji，OK 好啦，跟住我哋試呢一個綠茶紅豆，先，嗯，呢個呢，好食嘅地方呢就係，你食到，係綠茶味嘅，不過呢有陣時有啲綠茶嘅蛋糕呢，佢綠茶味好重，咁就唔係呀，呢一個呢就啱啱好，食落個嘴度呢，第一下唔會係綠茶嘅，跟住呢個綠茶味先至出嚟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:1.90" id="00:23:1.90" class="lt" onclick="jumptoTime(1381, this.id)"><p>我食曬嘅你睇下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:3.90" id="00:23:3.90" class="lt" onclick="jumptoTime(1383, this.id)"><p>我真係食曬嘅，其實我哋有兩盒嘅，好食到不得了，已經食完一盒，其實真係停唔到嘅，係停唔到嘅，跟住呢佢有少少紅，佢有唔係少少，有啲紅豆呢啱啱喺個蛋糕，即係蛋糕中間，咁樣係你食完，咁上下有啲紅豆呢，燉返勻呢個味道係非常好，跟住我哋食下呢一個，Chestnut先，Chestnut</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:23:35.90" id="00:23:35.90" class="lt" onclick="jumptoTime(1415, this.id)"><p>嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:45.90" id="00:23:45.90" class="lt" onclick="jumptoTime(1425, this.id)"><p>Chestnut呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:23:47.90" id="00:23:47.90" class="lt" onclick="jumptoTime(1427, this.id)"><p>係最正常嘅，但係呢你估唔到呢，你係見唔到，任何嘅栗子但係你咬到栗子，你係咬到栗子，你係咬到栗子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:59.90" id="00:23:59.90" class="lt" onclick="jumptoTime(1439, this.id)"><p>栗子味，但係好似有啲柚子味，我係咪食錯咗</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:5.90" id="00:24:5.90" class="lt" onclick="jumptoTime(1445, this.id)"><p>哎呀死啦我食錯咗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:7.90" id="00:24:7.90" class="lt" onclick="jumptoTime(1447, this.id)"><p>呢個有柚子味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:9.90" id="00:24:9.90" class="lt" onclick="jumptoTime(1449, this.id)"><p>我食錯咗，但係點解咁似栗子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:17.90" id="00:24:17.90" class="lt" onclick="jumptoTime(1457, this.id)"><p>你切兩個一樣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:19.90" id="00:24:19.90" class="lt" onclick="jumptoTime(1459, this.id)"><p>唔係呀我真係食錯咗，我食錯咗，呢個咬到栗子，呢個有栗子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:29.90" id="00:24:29.90" class="lt" onclick="jumptoTime(1469, this.id)"><p>入面有栗子粒，好似甜啲，柚子嗰個就清，即係少少檸檬味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:37.90" id="00:24:37.90" class="lt" onclick="jumptoTime(1477, this.id)"><p>Live睇到我出錯，係咪好正呢係咪好笑，總之好味啦，柚子嘅呢個，食到柚子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:49.90" id="00:24:49.90" class="lt" onclick="jumptoTime(1489, this.id)"><p>跟住食栗子，栗子嗰個有少少栗子粒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:53.90" id="00:24:53.90" class="lt" onclick="jumptoTime(1493, this.id)"><p>食到柚子，Yes I am so sorry</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:59.90" id="00:24:59.90" class="lt" onclick="jumptoTime(1499, this.id)"><p>栗子冇咗一粒，但係好好味，因為佢色一樣，外圖好似一樣，但係味道就唔同</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:9.90" id="00:25:9.90" class="lt" onclick="jumptoTime(1509, this.id)"><p>It's very good，是可以吃的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:14.18" id="00:25:14.18" class="lt" onclick="jumptoTime(1514, this.id)"><p>會不會很甜?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:15.98" id="00:25:15.98" class="lt" onclick="jumptoTime(1515, this.id)"><p>不會，真的不會很甜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:17.50" id="00:25:17.50" class="lt" onclick="jumptoTime(1517, this.id)"><p>一點也不甜</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:18.78" id="00:25:18.78" class="lt" onclick="jumptoTime(1518, this.id)"><p>不是一點也不甜，也甜的，但不是那麼甜，不是在街外買的那些薄餅很怕的，小時候可能喜歡吃，但長大之後發現，哇，濕濕的，像芝士餅一樣，但不是，這個是非常鬆軟，而且不是很甜，太嫂也說不是很甜的時候，你可以相信她，因為她也很怕甜食</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:47.98" id="00:25:47.98" class="lt" onclick="jumptoTime(1547, this.id)"><p>YouTube不停問你什麼牌子在哪裡買</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:50.98" id="00:25:50.98" class="lt" onclick="jumptoTime(1550, this.id)"><p>那個牌子叫做BONJIGI，BONJIGI，這個包裝紙很醜，我給大家看一個比較好看的，剛剛進來的朋友，這個叫BONJIGI，是一個在日本的牌子，是有很多年做蛋糕的經驗的一個品牌，很好吃的，大家是手做的，手做蛋糕，忘記告訴你，是人手做的，不是機器做出來的，值錢的地方除了是味道和調校的平衡做得很好之外，還要是手做的蛋糕。</p></a>
+				<a href="#00:26:41.78" id="00:26:41.78" class="lt" onclick="jumptoTime(1601, this.id)"><p>Handcraft蛋糕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:43.38" id="00:26:43.38" class="lt" onclick="jumptoTime(1603, this.id)"><p>你覺得哪款味道最好?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:45.18" id="00:26:45.18" class="lt" onclick="jumptoTime(1605, this.id)"><p>我真心覺得焦糖咖啡味道是最好味的，焦糖咖啡味道是最好味的，如果你想知道在哪裡買的話，我已經把網址放在Facebook的描述，也放在YouTube的描述，所以大家可以去看一下，當然你看到Live的話，你最好是第一批，就是有折扣，你是泰山自尊Tarzan Cooks，打了這個Promo Code進去。</p></a>
+				<a href="#00:27:24.98" id="00:27:24.98" class="lt" onclick="jumptoTime(1644, this.id)"><p>你就可以買東西有折扣，我已經詳細列了那些，在哪裡買的詳細詳細資料在描述，你可以去看一下，還有另一樣東西就是要告訴大家，其實我還要介紹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:45.18" id="00:27:45.18" class="lt" onclick="jumptoTime(1665, this.id)"><p>好像香蕉蛋糕</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:27:46.78" id="00:27:46.78" class="lt" onclick="jumptoTime(1666, this.id)"><p>有點像，但是沒有香蕉的口感那麼實</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:50.78" id="00:27:50.78" class="lt" onclick="jumptoTime(1670, this.id)"><p>我想說它不乾，它真的不乾，我怕吃這些蛋糕一開，會乾乾的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:27:59.38" id="00:27:59.38" class="lt" onclick="jumptoTime(1679, this.id)"><p>它完全沒有，我都蠻驚訝的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:3.98" id="00:28:3.98" class="lt" onclick="jumptoTime(1683, this.id)"><p>日本人真的有這種問題</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:5.78" id="00:28:5.78" class="lt" onclick="jumptoTime(1685, this.id)"><p>我也是想這樣說，真的不是開玩笑，我開的時候，我會覺得會不會都是沙粒，你知道有時候蛋糕，尤其是包裝了的蛋糕，會乾乾的，好像太嫂說的，還有吃下去，粒粒的，多好吃，算了，買了就算了，但是這個，我想告訴大家，其實真的吃不停，太嫂可以作證，我是不是已經拍了兩個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:36.78" id="00:28:36.78" class="lt" onclick="jumptoTime(1716, this.id)"><p>我們每人其實吃了一個，不知道是不是想增肥，你看看，再給你看看，本來說試吃的，誰知道，整個沒了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:49.38" id="00:28:49.38" class="lt" onclick="jumptoTime(1729, this.id)"><p>沒了，真的很好吃，我不是開玩笑，你怎樣都要試一下，買一個來試一下，你可以試了之後，你說，太太，你騙我的，也不是這樣的，隨便說我，但是因為我太有信心了，你買了之後，你只會一邊吃一邊說，對了，真的說對了，然後突然間就，啊?</p></a>
+				<a href="#00:29:10.58" id="00:29:10.58" class="lt" onclick="jumptoTime(1750, this.id)"><p>沒了?</p></a>
+				<a href="#00:29:11.18" id="00:29:11.18" class="lt" onclick="jumptoTime(1751, this.id)"><p>為什麼我買了一包這麼少</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:14.18" id="00:29:14.18" class="lt" onclick="jumptoTime(1754, this.id)"><p>食用期會不會很短，他什麼時候，食用期會不會很短，什麼時候延期的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:19.98" id="00:29:19.98" class="lt" onclick="jumptoTime(1759, this.id)"><p>那又，我又不知道他什麼時候做的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:23.38" id="00:29:23.38" class="lt" onclick="jumptoTime(1763, this.id)"><p>他沒有寫，什麼時候延期的，我看看，他有想未期限的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:27.58" id="00:29:27.58" class="lt" onclick="jumptoTime(1767, this.id)"><p>但是，他沒有說什麼時候做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:29.98" id="00:29:29.98" class="lt" onclick="jumptoTime(1769, this.id)"><p>期限照什麼時候</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:31.98" id="00:29:31.98" class="lt" onclick="jumptoTime(1771, this.id)"><p>他這個，這個他，就至到十月，我給你看看這個，十月的，這個綠茶紅豆，至到十月，OK，是不是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:45.98" id="00:29:45.98" class="lt" onclick="jumptoTime(1785, this.id)"><p>通常只有甜味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:47.38" id="00:29:47.38" class="lt" onclick="jumptoTime(1787, this.id)"><p>他又不是，這個不是只有甜味，這個真的有他說的香味在</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:53.58" id="00:29:53.58" class="lt" onclick="jumptoTime(1793, this.id)"><p>有人問我喜歡什麼，我最喜歡綠茶，哦，綠茶紅豆</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:57.58" id="00:29:57.58" class="lt" onclick="jumptoTime(1797, this.id)"><p>太太喜歡綠茶紅豆，OK，那大家可以自己去看一下，都好像有個combo這樣賣的，都好像，好像有個綠茶紅豆加這個焦糖咖啡combo，好像，好像，大家上去那個網站，自己看一下，OK，那當然除了有這個BONZIZI蛋糕之外，那我還有很多其他的零食的，那，是可以很健康的零食，那包含了什麼呢，蘋果片。</p></a>
+				<a href="#00:30:30.78" id="00:30:30.78" class="lt" onclick="jumptoTime(1830, this.id)"><p>那有青蘋果，然後有紅蘋果的，那也可以去那個網站賣，那就是蘋果片</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:30:37.18" id="00:30:37.18" class="lt" onclick="jumptoTime(1837, this.id)"><p>這些給小朋友吃，我覺得，小朋友吃的，這個，就是帶回學校做snack的，Yes，是的，現在開始開學了，有snack time的，沒有lunch，但是有snack，有snack time，是的，所以帶這個我覺得很好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:49.58" id="00:30:49.58" class="lt" onclick="jumptoTime(1849, this.id)"><p>這個很健康的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:30:50.58" id="00:30:50.58" class="lt" onclick="jumptoTime(1850, this.id)"><p>因為他沒有糖，什麼都沒有的，Yes，他好像乾，dry fruit那樣，太嫂說的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:57.58" id="00:30:57.58" class="lt" onclick="jumptoTime(1857, this.id)"><p>不是我說的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:30:58.58" id="00:30:58.58" class="lt" onclick="jumptoTime(1858, this.id)"><p>這個太嫂說的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:59.18" id="00:30:59.18" class="lt" onclick="jumptoTime(1859, this.id)"><p>這個我也吃了，沒錯，你可以不相信我，但是你也要相信太嫂，OK，這個是蘋果片，Very nice，那接著我已經吃了，那接著，如果，假如，你覺得，嘩，在這麼大包，小朋友，不是開了，很快就軟了，之後，不要緊，我已經想好了，哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:19.78" id="00:31:19.78" class="lt" onclick="jumptoTime(1879, this.id)"><p>一天，一天，一包，OK</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:23.18" id="00:31:23.18" class="lt" onclick="jumptoTime(1883, this.id)"><p>那就有青蘋果，接著還有這個紅蘋果，OK，開包來吃一下，看到嗎，黃藍蘋果，Sorry不是青蘋果，黃藍蘋果，接著，原來那是蘋果，是蘋果，接著有一個紅蘋果，富士蘋果，OK，那我們不如開包吃一下，我們開富士蘋果吃，好不好，開富士蘋果</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:44.98" id="00:31:44.98" class="lt" onclick="jumptoTime(1904, this.id)"><p>但是其實比平時，比吃薯片好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:49.98" id="00:31:49.98" class="lt" onclick="jumptoTime(1909, this.id)"><p>他真的dry了蘋果，你看到嗎，Very nice</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:54.78" id="00:31:54.78" class="lt" onclick="jumptoTime(1914, this.id)"><p>有沒有門市可以買</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:56.38" id="00:31:56.38" class="lt" onclick="jumptoTime(1916, this.id)"><p>門市，沒有，一定要上網買，我拍一個給大家聽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:32:2.98" id="00:32:2.98" class="lt" onclick="jumptoTime(1922, this.id)"><p>嘩，正，OK，太嫂，嘩，好香，太嫂你要不要</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:8.98" id="00:32:8.98" class="lt" onclick="jumptoTime(1928, this.id)"><p>我想，好，來吧，好，是脆的，我喜歡這個多過剛才那個薯片，所以你咬下去，它的蘋果味湧到口中，對</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:32:22.78" id="00:32:22.78" class="lt" onclick="jumptoTime(1942, this.id)"><p>It's pretty good，It's good，這個是富士</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:27.18" id="00:32:27.18" class="lt" onclick="jumptoTime(1947, this.id)"><p>那個可能，另外薄一點的像薯片，對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:32:30.98" id="00:32:30.98" class="lt" onclick="jumptoTime(1950, this.id)"><p>接著我開黃藍蘋果</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:33.78" id="00:32:33.78" class="lt" onclick="jumptoTime(1953, this.id)"><p>而且吃的時候沒有那麼罪惡感，對，口癢的時候</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:32:39.18" id="00:32:39.18" class="lt" onclick="jumptoTime(1959, this.id)"><p>口癢，這個OK，好，這個又拍一個了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:32:42.58" id="00:32:42.58" class="lt" onclick="jumptoTime(1962, this.id)"><p>我Highly recommend這個，我喜歡這個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:32:45.38" id="00:32:45.38" class="lt" onclick="jumptoTime(1965, this.id)"><p>太嫂說Highly recommend，好，黃藍蘋果，喂，我喜歡吃黃藍的多一點，黃藍的好吃，你試一下，它甜之餘有一點點酸酸的，更好吃，蘋果味很厲害</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:3.18" id="00:33:3.18" class="lt" onclick="jumptoTime(1983, this.id)"><p>這個清一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:33:4.58" id="00:33:4.58" class="lt" onclick="jumptoTime(1984, this.id)"><p>你吃下去後面的味道，很棒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:8.58" id="00:33:8.58" class="lt" onclick="jumptoTime(1988, this.id)"><p>我覺得黃的清一點，但紅的就甜一點，甜一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:33:13.98" id="00:33:13.98" class="lt" onclick="jumptoTime(1993, this.id)"><p>好，我給Jelly吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:17.18" id="00:33:17.18" class="lt" onclick="jumptoTime(1997, this.id)"><p>來吧，好，她已經吃了，很漂亮，其實很漂亮，做得很漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:33:21.78" id="00:33:21.78" class="lt" onclick="jumptoTime(2001, this.id)"><p>好，接著，還有大概有什麼要介紹呢，看看，還有一個，我想試一下，所以和大家一起試，這個是提子Jelly飲品，我試這個，很棒，很香，看看這是什麼，我已經老花了，沒錯，青森黑加侖子果凍，立刻試一下，當然是雪凍的比較好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:57.38" id="00:33:57.38" class="lt" onclick="jumptoTime(2037, this.id)"><p>是果汁嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:33:58.78" id="00:33:58.78" class="lt" onclick="jumptoTime(2038, this.id)"><p>很香，糟了，我是不是應該留給小朋友吃，我覺得小朋友會喜歡吃多一點，很棒，OK，這個我留給他們，非常好，你沒有什麼?只有一包，不是，有兩包，我們有兩個小孩，你記不記得，再買吧，現在有節日，看看還有什麼，還有一個，黑加侖子餅，黑加侖子餅，我們可以試這個，很多東西可以試</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:34:45.63" id="00:34:45.63" class="lt" onclick="jumptoTime(2085, this.id)"><p>很香，好像有些puff pastry，我們撕開來看看，嘩，嘩，嘩，這樣，試一試，我覺得這個，弄熱了，黑加侖子，正呀，嗯，好吃，這樣，說到弄熱，如果你買這個，BONJOUJIS蛋糕的話，你可以放進焗爐，焗一焗它，那個皮就有一點鬆脆，但裡面還是很軟，大家可以試一下，非常好，我強烈推介這個BONJOUJIS蛋糕，不是因為我幫他賣東西。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:35:41.63" id="00:35:41.63" class="lt" onclick="jumptoTime(2141, this.id)"><p>如果你是這樣想的話，沒問題的，你又賣東西，那你就不要買，無所謂的，自由，有自由，你想買就買，不買就不買，但我只不過是想告訴大家，是好吃，所以分享，剛好幫他賣，就是這樣，那就是好吃，我自己都吃過，覺得好，我才會賣，就是這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:36:11.63" id="00:36:11.63" class="lt" onclick="jumptoTime(2171, this.id)"><p>很好，你應該說，如果不好吃也不會出聲</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:36:15.63" id="00:36:15.63" class="lt" onclick="jumptoTime(2175, this.id)"><p>不好吃也不會出聲，真的不會，不是說笑，這個真的好吃，所以大家，有興趣的話，你可以馬上上去，我已經寫了，在YOUTUBE DESCRIPTION寫了網址，跟著在FACEBOOK，也寫了網址，如果你現在買，打進這個TARZAN COOKS，有優惠和折扣，大家，反正現在晚上，也沒什麼事做，就打進。</p></a>
+				<a href="#00:36:45.63" id="00:36:45.63" class="lt" onclick="jumptoTime(2205, this.id)"><p>網站看看，點擊網頁，就可以看到我今天說的話，有很多不同的組合，你可以一起買，不過強烈推介，就是這個BONZI 蛋糕，因為中秋快到了，不是一定要吃月餅，也可以吃蛋糕，還有，你可以用這個BONZI，當作禮物，送給別人，不是每次收到都是月餅，你送一個蛋糕，給別人，中秋節快樂，也不是很大，一隻手掌。</p></a>
+				<a href="#00:37:25.63" id="00:37:25.63" class="lt" onclick="jumptoTime(2245, this.id)"><p>剛剛好，譬如說，四個人，五個人，六個人，一個下午，已經吃完了，雖然，我是一個人吃完</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:37:39.63" id="00:37:39.63" class="lt" onclick="jumptoTime(2259, this.id)"><p>很好吃，你的果凍，有沒有加糖</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:37:45.63" id="00:37:45.63" class="lt" onclick="jumptoTime(2265, this.id)"><p>果凍有沒有加糖，讓我看看，看看，沒有，沒有，讓我試一下，好像沒有，沒有，讓我看看，有加糖，有加一點點糖，有加一點點糖，有加一點點糖，加了一點點糖，有糖的，你自己決定，但也很好吃，蘋果的就沒有，你覺得怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:38:23.63" id="00:38:23.63" class="lt" onclick="jumptoTime(2303, this.id)"><p>黑卡倫子，但不算太甜，也不算太甜，但也不算太甜</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:38:31.63" id="00:38:31.63" class="lt" onclick="jumptoTime(2311, this.id)"><p>就是這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:38:33.63" id="00:38:33.63" class="lt" onclick="jumptoTime(2313, this.id)"><p>OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:38:35.63" id="00:38:35.63" class="lt" onclick="jumptoTime(2315, this.id)"><p>這個也很適合小朋友，這個，現在小朋友，很喜歡吃那些蒟蒻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:38:43.63" id="00:38:43.63" class="lt" onclick="jumptoTime(2323, this.id)"><p>對，有點像，喂，就是這樣，大家可以去，看看，BONJITSU這個蛋糕，可以上網站，去看看，如果你想試一下，就試，不想試就不想試，覺得合適就買，不喜歡就不要買，我只可以說，你會錯過了一個很好吃的蛋糕，就是這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:39:15.63" id="00:39:15.63" class="lt" onclick="jumptoTime(2355, this.id)"><p>我非常推薦你吃，你吃了就停不了，你看我們兩個，吃了整個就知道</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:39:23.63" id="00:39:23.63" class="lt" onclick="jumptoTime(2363, this.id)"><p>好正，今天LIVE就完滿結束，祝大家有一個愉快的周末，祝大家有一個愉快的周末，也希望大家健健康康，也希望大家健健康康，如果你們買了，就告訴我，哪個蛋糕你們覺得最好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:39:41.63" id="00:39:41.63" class="lt" onclick="jumptoTime(2381, this.id)"><p>可以放多久</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:39:43.63" id="00:39:43.63" class="lt" onclick="jumptoTime(2383, this.id)"><p>他有寫，你問我，我真的不知道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:39:47.63" id="00:39:47.63" class="lt" onclick="jumptoTime(2387, this.id)"><p>每個蛋糕不同</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:39:49.63" id="00:39:49.63" class="lt" onclick="jumptoTime(2389, this.id)"><p>每個蛋糕都不同，每個放的日子也不同，就是這樣，手做的一個，日本蛋糕叫，BONJIJI 四款味道，大家可以上網看看，我已經寫了，在FACEBOOK，和YOUTUBE的說明，希望大家現在去看看，記住入，TARZAN COOKS，折扣一位碼，好，多謝大家，今晚我們的LIVE就到此為止，我都要收拾東西。</p></a>
+				<a href="#00:40:23.63" id="00:40:23.63" class="lt" onclick="jumptoTime(2423, this.id)"><p>和吃蛋糕，好了，就這樣，再見，FACEBOOK，再見，YOUTUBE，多謝大家。</p></a>
+				<a href="#00:40:33.63" id="00:40:33.63" class="lt" onclick="jumptoTime(2433, this.id)"><p>再見，再見。</p></a>
+</div>
+	</body>
+</html>

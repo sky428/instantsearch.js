@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室 急凍蝦頭都煮到神級鮮濃蝦汁 好味到大叫Mamma Mia!!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'i14wK7sPngw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室 急凍蝦頭都煮到神級鮮濃蝦汁 好味到大叫Mamma Mia!!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MAMMA MIA!!，，，大家好， 又來到Ricky的煮飯仔系列，上一集有個視頻我未跟大家說，如果買急凍蝦回來，要先切蝦頭才炒蝦身，這次我想跟大家說，如果用蝦頭做蝦汁，究竟要怎樣處理，做蝦汁， 蝦頭的處理當然非常重要，但還要不過， 先喝一杯，很多朋友都有一個誤解，你知道蝦頭裏面有蝦膏。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.87" id="00:00:42.87" class="lt" onclick="jumptoTime(42, this.id)"><p>蝦膏才是精華所在，一點也不能浪費，其實蝦頭裏面的蝦膏，對蝦汁一點幫助也沒有，如果將這些蝦膏放進蝦汁裏，熬完之後，蝦湯或蝦汁就會留住一些，不太乾淨的甘苦味，這次我和大家說一下，如果做一個極致的蝦汁，究竟要怎樣處理，我們首先最重要不要蝦頭，這個保護性的蝦頭，如果我們想煎香蝦頭時，就只會煎香這個蝦頭。</p></a>
+				<a href="#00:01:24.23" id="00:01:24.23" class="lt" onclick="jumptoTime(84, this.id)"><p>所以這個不要，剛才說過蝦頭的蝦膏，其實是苦味的來源，而且煮得太久，聞起來有少許阿摩尼亞的味道，就是那些東西作怪，第二步，將蝦膏盡量不要，擠出來，再擠多一次，乾淨了，如果你想蝦汁有極致的鮮味，這是不可缺少的步驟，蝦頭去掉頭盔，然後將蝦膏全部洗淨，很多朋友犯了一個很大的錯誤，煎蝦頭，然後加些材料、湯。</p></a>
+				<a href="#00:02:12.95" id="00:02:12.95" class="lt" onclick="jumptoTime(132, this.id)"><p>然後就開火，在鍋裡，三碗水，煮成一碗，然後就隔出來，這樣就完美了，味道就全部進入蝦頭，其實你應該怎樣做呢，譬如說你需要一碗這麼多的蝦湯，你拿五碗水，煮一會，煮二十多分鐘，什麼都出味了，在四碗水的時間，把蝦頭的精華全部隔出來，然後才減少，在四碗的時間，濃縮成大半碗，這樣就可以完全把蝦的味道精華，在蝦湯或者蝦汁裡。</p></a>
+				<a href="#00:02:53.27" id="00:02:53.27" class="lt" onclick="jumptoTime(173, this.id)"><p>現在把蝦排好就可以了，然後放油，最好不要放牛油，因為牛油太容易燒焦，放橄欖油，才開火，中火慢慢煎，煎透、煎香，煎蝦頭真的不用急，意大利人說的，慢慢來，Piano， piano，先喝一杯，在香噴噴的時候，我們就放番茄，少量茄膏，放少許茄膏，味道上不是提升很多，但顏色上就幫到很多忙，顏色鮮艷很多。</p></a>
+				<a href="#00:03:38.69" id="00:03:38.69" class="lt" onclick="jumptoTime(218, this.id)"><p>食慾也大很多，放完番茄，放茄膏，然後放水，煮的時候，可以在中途偶爾按一下蝦頭，讓它快點出味，蝦頭的味道取決於煮多久，越煮久，蝦味會出，但不是澎湃的清新蝦味，最好用最短的時間，將味道全部釋放出來，保存著濃郁的蝦味，還有清新的感覺，煮了大約二、三十分鐘，你看到還有很多水，這個時候就要把它隔掉，現在要把它減少至大半碗蝦汁。</p></a>
+				<a href="#00:04:26.45" id="00:04:26.45" class="lt" onclick="jumptoTime(266, this.id)"><p>就可以開始煮意粉了，這是極致的乾淨，濃郁鮮甜味道的蝦頭汁，這個意粉需要大約七、八分鐘，在五分鐘的時候，我把它撈起，放入蝦汁，黃金的三分鐘很重要，最後三分鐘，把意粉放入汁裡煮，將汁的味道煮入意粉中，因為經過差不多三分二的烹煮之後，乾的意粉裡的分子已經很鬆散，很容易入味，每一條意粉都飽含著蝦汁，調味方面，很少鹽，先試試。</p></a>
+				<a href="#00:05:31.04" id="00:05:31.04" class="lt" onclick="jumptoTime(331, this.id)"><p>聞到嗎?</p></a>
+				<a href="#00:05:32.00" id="00:05:32.00" class="lt" onclick="jumptoTime(332, this.id)"><p>真正的意粉，這是清鮮無比，最極致蝦味道的湯汁，我相信你未曾試過，用蝦頭煮出這樣的味道，非常推薦大家一定要試試，乾杯。</p></a>
+</div>
+	</body>
+</html>

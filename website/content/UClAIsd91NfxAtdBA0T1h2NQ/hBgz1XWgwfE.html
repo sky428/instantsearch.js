@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>名廚Ricky早餐至愛食麻辣撈麵  麵餅有底面之分 煮兩分鐘啱啱好</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hBgz1XWgwfE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>名廚Ricky早餐至愛食麻辣撈麵  麵餅有底面之分 煮兩分鐘啱啱好</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>MING PAO CANADA MANGA，起碼一個星期五日，我都會將這個做早餐，Hello 歡迎大家來到Ricky的頻道，今日我想和大家分享一下，我自己本人，早上的早餐是吃什麼的，我相信大家都不會陌生，這種食物大家從小吃到大，就是，這個切前一丁，大家留意到呢個呢就係我哋餐廳專用，咁好多朋友都講呀餐廳專用同。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:43.66" id="00:00:43.66" class="lt" onclick="jumptoTime(43, this.id)"><p>我哋一般買嗰啲有咩唔同呢咁其實呢個，味道啦佢面嘅大細啦同埋嘅質地呢，基本上差唔多一模一樣嘅，其實我自己本身呢就真係差唔多日日食咁，滯咁我都算係半個專家嚟嘅第一步，大家煮呢個姐一丁當然係要打開個袋，係咪連打開個袋呢好多朋友都仲係，咁樣打開嘅，咁樣跟住再咁樣先係攞個面出嚟，㗎嘛係咪佢哋個廠呢就唔想你咁樣做。</p></a>
+				<a href="#00:01:16.70" id="00:01:16.70" class="lt" onclick="jumptoTime(76, this.id)"><p>法嘅佢有個更加快捷嘅方法呢個就係，隱藏嘅方法啦雖然唔係咩秘密但係好，多人都唔知嘅其實呢佢廠已經係預設咗，係要你點樣開呀你睇唔睇呢度有個，狗牙連個底呢度都有一個狗牙其實，正確開佢嘅方法呢係咁樣咁樣攞，出嚟㗎嘛除咗開袋呢一個隱藏嘅秘技，之外呢咁仲有其實呢出前一丁呢佢係，一種係天婦羅式嘅乾麵嚟嘅即係油炸。</p></a>
+				<a href="#00:01:54.86" id="00:01:54.86" class="lt" onclick="jumptoTime(114, this.id)"><p>啦咁油炸呢有分底面啦你睇下呢個我，稱之為面呢個稱之為底你咁大家，分辨唔到㗎如果我將呢個調轉咁係咪，好容易睇到一個係白啲一個係黃啲呢，咁黃啲呢邊呢佢個面呢就會係比較硬啲，嘅咁你錄嘅時間呢你都因應係軟啲硬啲，錄嘅方法都唔同㗎喎嗱喺錄面嘅時候，呢因為面嘅底面嘅軟硬程度唔同啦我哋，有深色嗰面呢就向底咁我又較中到喎。</p></a>
+				<a href="#00:02:35.82" id="00:02:35.82" class="lt" onclick="jumptoTime(155, this.id)"><p>呢個呢大約係兩分鐘就差唔多啦因為我，試過好多唔同時間啦用兩分鐘呢個，方法嚟到錄面呢咁出嚟嘅時候成個，面嘅質地呢基本上呢就非常之一致，兩個麵餅我哋用嘅材料有咩呢，你只要係一包呢啲神仙粉就夠㗎喇，一包，咁我呢個呢係一個麻辣撈麵嚟嘅，咁除咗呢包神仙粉之外呢，要落啲你自己鍾意嘅辣醬，隨你啦。</p></a>
+				<a href="#00:03:5.85" id="00:03:5.85" class="lt" onclick="jumptoTime(185, this.id)"><p>我呢個呢就係有頭有面好出名嘅一個辣椒醬嚟嘅，桂林辣椒醬，話咗麻辣啦，當然辣味就有啦，麻味呢就係呢個花椒油，除咗花椒油之外，因為係撈麵嚟嘅，撈麵所以我哋呢就要多少少油喇，再落多大約一湯匙嘅油，我試過喇唔夠油呢，就不如唔好食飽喇，咁變咗成個面呢又唔爽身啦，又唔彈牙啦，呢個係敗筆嚟嘅，咁我哋呢畀少少咁多嘅水落去。</p></a>
+				<a href="#00:03:39.33" id="00:03:39.33" class="lt" onclick="jumptoTime(219, this.id)"><p>撈勻佢，汁就已經撈好咗喇，食早餐梗係要快啦係咪，佢，夠鐘，將個面倒起，放佢落去，迅速咁樣撈勻佢，搞掂，食嘅時間點食，係咁易將個溫泉蛋篤開佢，雖然好辣，但有咗啲蛋嘅滋潤，你食落去嘅時間呢，嗰啲辣度又減輕咗，而成個麵呢，質地都要豐富好多，剛才和大家分享麻辣出前一丁我的早餐，其實它吃起來比它看上去還要好吃很多倍，大家如果喜歡這條片的話。</p></a>
+				<a href="#00:04:50.20" id="00:04:50.20" class="lt" onclick="jumptoTime(290, this.id)"><p>記住都是不要CLS，下次我會介紹更多好吃的東西給大家分享。</p></a>
+</div>
+	</body>
+</html>

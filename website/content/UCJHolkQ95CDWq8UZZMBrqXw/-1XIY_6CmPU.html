@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之挑戰旋風蛋+泰山冷麵</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-1XIY_6CmPU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之挑戰旋風蛋+泰山冷麵</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.52" id="00:00:0.52" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello，Hi Hello Hello Hello，Hello 大家好呀，Hi Hi Hi，你地好嗎?</p></a>
+				<a href="#00:00:11.28" id="00:00:11.28" class="lt" onclick="jumptoTime(11, this.id)"><p>Hello Hello，Hi</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:00:15.04" id="00:00:15.04" class="lt" onclick="jumptoTime(15, this.id)"><p>Hi，Hello 大家好，又到星期五喇喎，等一等大家先，今日呢就都係繼續早左少少啦，因為事關我想大家呢係一陣去睇，呢個ViuTV小食上大台，今個星期五呢就最後一集同阿Crystal一齊做，所以呢你地如果想睇就一陣記住睇喇喎，知唔知呀，我而家呢搞搞個ipad兼等埋大家先，喂Hello Hello。</p></a>
+				<a href="#00:00:49.24" id="00:00:49.24" class="lt" onclick="jumptoTime(49, this.id)"><p>好，搞搞個網絡先，Hello Hello Hello Hello，今日好講喇今日</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:57.24" id="00:00:57.24" class="lt" onclick="jumptoTime(57, this.id)"><p>嘻嘻嘻嘻，Hello Hello Hello</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:01:0.24" id="00:01:0.24" class="lt" onclick="jumptoTime(60, this.id)"><p>Hello Hello，喂未上大台呀係喇，喺Facebook已經知道未上大台呀，Hello Hello Hello Pinky Hello Apple Hello Irene Hello Sandy，喂又整野食呀?係呀又整野食呀，跟住呢有人問我喂你有冇練呢一個旋風彈呀?</p></a>
+				<a href="#00:01:20.24" id="00:01:20.24" class="lt" onclick="jumptoTime(80, this.id)"><p>冇</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:21.24" id="00:01:21.24" class="lt" onclick="jumptoTime(81, this.id)"><p>哈哈哈哈，我要你地陪我一齊練，真係呀，有幾耐搞幾耐呀唔好講笑真係，好，今日呢真係，首先同YouTube嘅朋友講聲先，呢啲基本嘢啦，嗰啲Super Stickers Super Chat Super Thank You，快啲出多啲OK，我需要，推自己去旅行呀，咁就靠佢地Crowd Fund我去日本喇喎，OK。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:01:51.24" id="00:01:51.24" class="lt" onclick="jumptoTime(111, this.id)"><p>我唔知你地去唔去日本呀，不過你記住，玩嗰個Super Stickers Super Chat Super Thanks嗰啲OK，去日本就講笑嘅啫，供我啲細路讀書呀真嘅，哈哈哈哈，喂，今日呢我地就唔好搞咁多野啦，我地今日呢就去即刻搞搞個旋風彈先啦，好唔好呀，嘩邊個係咁叫我大師傅呀真係</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:17.24" id="00:02:17.24" class="lt" onclick="jumptoTime(137, this.id)"><p>喂，好，打線，好 好 好 好，我要再 YouTube 要再整多一次，因為呢 好似有啲嘢衰衰地咁樣嘅，好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:33.97" id="00:02:33.97" class="lt" onclick="jumptoTime(153, this.id)"><p>好 撈多次呀，好 OK 搞掂，好 喂 咁呀 今日嘢都唔飲呀，嘢都唔飲呀，就即刻去做嗰個蛋呀，我移一移 Facebook 先呀，趕住大家要睇小食上大台嘛係咪先，好，等下先咁多位轉一轉鏡頭呀，Hello，OK，依邊，跟住 Flip 過嚟，Yes，好 YouTube 嘅你等等下 唔好意思，今日唔講咁多嘢啦。</p></a>
+				<a href="#00:03:5.97" id="00:03:5.97" class="lt" onclick="jumptoTime(185, this.id)"><p>今日呢 即刻嚟啦，有啲人喺度係咁叫太嫂整太嫂整，佢整唔到㗎，佢唔得㗎，佢得個講字㗎咋，OK 好 嚟啦喎，依邊，YouTube YouTube Sorry，YouTube 哎呀 Flip 返個鏡頭先，好 依度，今日準備咗幾多打雞蛋呀，都係好似上次咁囉，6隻囉，係咪上次5隻，今次都係5隻 好。</p></a>
+				<a href="#00:03:35.97" id="00:03:35.97" class="lt" onclick="jumptoTime(215, this.id)"><p>咁樣好啲呀依邊，好似，咁樣就可以睇到我究竟係，失敗呀，定係成功啦 好，少一個鑊啦，雞蛋我已經準備好了，看看有什麼人說，節目只剩下星期，是呀 YouTube的Golden，只剩下星期，又看看太少人做，不要了，這個鑊很容易熱，先關小火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:25.93" id="00:04:25.93" class="lt" onclick="jumptoTime(265, this.id)"><p>我過來幫你做一個，你做不到我幫你做一次，你出鏡嗎?</p></a>
+				<a href="#00:04:30.93" id="00:04:30.93" class="lt" onclick="jumptoTime(270, this.id)"><p>不用的 你拍著鑊就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:04:32.93" id="00:04:32.93" class="lt" onclick="jumptoTime(272, this.id)"><p>它會拍到你的樣子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:33.93" id="00:04:33.93" class="lt" onclick="jumptoTime(273, this.id)"><p>你拍著鑊吧 你再教我，再教 哦 OK，你做一下 看你成不成功，好 等一下，加油 加油 加油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:04:41.93" id="00:04:41.93" class="lt" onclick="jumptoTime(281, this.id)"><p>要多放一點油，上次我覺得少一點蛋好像好一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:51.93" id="00:04:51.93" class="lt" onclick="jumptoTime(291, this.id)"><p>好，火不要太猛 要小的，然後攪一下 少少蛋漿，多謝JC你的Super Chat，Thank you Thank you，你對我很有信心，You got it this time，Support Tarzan，Thank you JC，Thank you so much，好 我怕太熱了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:16.93" id="00:05:16.93" class="lt" onclick="jumptoTime(316, this.id)"><p>我們要怎麼做呢，我記得我都有看過一些片，有些人說要弄一下筷子，吸一點油，然後就弄一個蛋漿，這樣OK，我就倒一點下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:36.93" id="00:05:36.93" class="lt" onclick="jumptoTime(336, this.id)"><p>緊張嗎?，緊張，你記不記得我剛才教你的技巧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:40.93" id="00:05:40.93" class="lt" onclick="jumptoTime(340, this.id)"><p>你剛才教我，好 大火少少，你記不記得，不記得</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:48.93" id="00:05:48.93" class="lt" onclick="jumptoTime(348, this.id)"><p>畫完之後不要只放筷子在中間</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:52.93" id="00:05:52.93" class="lt" onclick="jumptoTime(352, this.id)"><p>是 是 是，你很多東西說</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:54.93" id="00:05:54.93" class="lt" onclick="jumptoTime(354, this.id)"><p>Hi Hi</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:56.93" id="00:05:56.93" class="lt" onclick="jumptoTime(356, this.id)"><p>Hello Hello，OK 好了 試一下，這邊先，好 接著這邊，震一下，喂 有些看頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:15.93" id="00:06:15.93" class="lt" onclick="jumptoTime(375, this.id)"><p>繼續 繼續 繼續，你放下筷子，不要保留在中間，再捲，我正在捲，對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:24.93" id="00:06:24.93" class="lt" onclick="jumptoTime(384, this.id)"><p>喂 有些看頭 各位，有些看頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:31.20" id="00:06:31.20" class="lt" onclick="jumptoTime(391, this.id)"><p>然後再 夠了，然後再撩旁邊，對了 對了 對了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:41.20" id="00:06:41.20" class="lt" onclick="jumptoTime(401, this.id)"><p>要離開了 要離開火了，是不是要關掉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:45.20" id="00:06:45.20" class="lt" onclick="jumptoTime(405, this.id)"><p>小小成功</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:47.20" id="00:06:47.20" class="lt" onclick="jumptoTime(407, this.id)"><p>喂 小小成功，太熱了 太熱了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:51.20" id="00:06:51.20" class="lt" onclick="jumptoTime(411, this.id)"><p>爛了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:53.20" id="00:06:53.20" class="lt" onclick="jumptoTime(413, this.id)"><p>太熱了 已經爛了，不要緊，再來 我還有蛋的，等等 我來碟先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:7.20" id="00:07:7.20" class="lt" onclick="jumptoTime(427, this.id)"><p>差一點點，差一點點，稍微微旋風</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:13.20" id="00:07:13.20" class="lt" onclick="jumptoTime(433, this.id)"><p>稍微微旋風 各位，比上星期好，真的 再加些油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:19.20" id="00:07:19.20" class="lt" onclick="jumptoTime(439, this.id)"><p>都說了你的筷子不要保持在中間，要再搖晃，然後再搖晃旁邊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:25.20" id="00:07:25.20" class="lt" onclick="jumptoTime(445, this.id)"><p>要抹一下筷子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:29.20" id="00:07:29.20" class="lt" onclick="jumptoTime(449, this.id)"><p>今天是不是冷面，撈炒蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:33.20" id="00:07:33.20" class="lt" onclick="jumptoTime(453, this.id)"><p>好，不要太熱 沾些油，不會，有人說會不會沉船 蛋就不會</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:43.20" id="00:07:43.20" class="lt" onclick="jumptoTime(463, this.id)"><p>大家給些獎勵，有人給了獎勵</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:49.20" id="00:07:49.20" class="lt" onclick="jumptoTime(469, this.id)"><p>多謝你 繼續</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:51.20" id="00:07:51.20" class="lt" onclick="jumptoTime(471, this.id)"><p>好，又來了，看看</p></a>
+				<a href="#00:08:3.20" id="00:08:3.20" class="lt" onclick="jumptoTime(483, this.id)"><p>好了，又開煲了 調小火，有二百多人在看你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:9.20" id="00:08:9.20" class="lt" onclick="jumptoTime(489, this.id)"><p>是，失敗是成功之母</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:15.20" id="00:08:15.20" class="lt" onclick="jumptoTime(495, this.id)"><p>喂，比上次更差，搞錯呀</p></a>
+				<a href="#00:08:29.26" id="00:08:29.26" class="lt" onclick="jumptoTime(509, this.id)"><p>好，中間唔得呀，中間又唔得呀，哎呀 頭先好好呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:44.26" id="00:08:44.26" class="lt" onclick="jumptoTime(524, this.id)"><p>繼續啦 你唔好放棄呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:08:46.26" id="00:08:46.26" class="lt" onclick="jumptoTime(526, this.id)"><p>放棄咗啦 呢個已經 我又放棄啦，吓</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:51.26" id="00:08:51.26" class="lt" onclick="jumptoTime(531, this.id)"><p>你口啲係咪隻蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:08:53.26" id="00:08:53.26" class="lt" onclick="jumptoTime(533, this.id)"><p>太多呀可能，再嚟 再嚟 再嚟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:59.26" id="00:08:59.26" class="lt" onclick="jumptoTime(539, this.id)"><p>唉，睇嚟大家好想你成功呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:3.26" id="00:09:3.26" class="lt" onclick="jumptoTime(543, this.id)"><p>我都好想睇到我成功呀大佬，唔夠油呀係咪呀 好多油喎已經，點解唔得嘅喂，頭先第一嘢得㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:11.26" id="00:09:11.26" class="lt" onclick="jumptoTime(551, this.id)"><p>好啦 整埋呢次 整炒蛋算啦，整埋呢次整冷面呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:15.26" id="00:09:15.26" class="lt" onclick="jumptoTime(555, this.id)"><p>你係整你嘅冷面呀，最後一次 今次第三次啦 因為呢，淨返咁多嘢 又嚟過</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:21.26" id="00:09:21.26" class="lt" onclick="jumptoTime(561, this.id)"><p>你俾我整呀不如</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:23.26" id="00:09:23.26" class="lt" onclick="jumptoTime(563, this.id)"><p>哈哈 好呀，個個都想睇其實，你整呀嘛，你整呀嘛，我未整過 你未整過呀，好 你就整啦，一陣太嫂整咗呢 掂咗呢，恭喜佢 好驚呀，好啦 嚟啦太嫂你，熄咗啦 你係咪嚟㗎，你係咪嚟㗎，喂 Miss Sugar 多謝你，多謝你呀 support太嫂呀，要多啲油喎 嘩，好多油啦已經 喂，我開咗啦。</p></a>
+				<a href="#00:09:55.26" id="00:09:55.26" class="lt" onclick="jumptoTime(595, this.id)"><p>開咗個細火 你快啲過嚟啦，等陣先，好 你嚟啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:1.26" id="00:10:1.26" class="lt" onclick="jumptoTime(601, this.id)"><p>嚟啦，你搵個廚魔，地獄廚神整嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:7.26" id="00:10:7.26" class="lt" onclick="jumptoTime(607, this.id)"><p>梗係啦，太嫂嚟啦，攪細火嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:13.26" id="00:10:13.26" class="lt" onclick="jumptoTime(613, this.id)"><p>我連冧烈都唔識整，整啦，哈哈，有殼嘅，點解 喂，有蛋殼嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:25.26" id="00:10:25.26" class="lt" onclick="jumptoTime(625, this.id)"><p>陰你囉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:27.26" id="00:10:27.26" class="lt" onclick="jumptoTime(627, this.id)"><p>都未熟係咪呀，你做乜問我呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:31.26" id="00:10:31.26" class="lt" onclick="jumptoTime(631, this.id)"><p>你做乜問我呀，你做乜問我呀，都未熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:37.26" id="00:10:37.26" class="lt" onclick="jumptoTime(637, this.id)"><p>都未熟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:39.26" id="00:10:39.26" class="lt" onclick="jumptoTime(639, this.id)"><p>你做乜問我呀，你自己攪個火呀你咁叻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:43.26" id="00:10:43.26" class="lt" onclick="jumptoTime(643, this.id)"><p>好大鑊喎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:45.26" id="00:10:45.26" class="lt" onclick="jumptoTime(645, this.id)"><p>死啦死啦，死啦死啦，你整到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:56.51" id="00:10:56.51" class="lt" onclick="jumptoTime(656, this.id)"><p>真的很難捲</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:0.51" id="00:11:0.51" class="lt" onclick="jumptoTime(660, this.id)"><p>蛋熟了，快點給點支持給太嫂，中間散了，你有沒有開爐，阿姐，你爐有沒有開過，有人叫你加油，是不是真的叫你加油，這位太太搞什麼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:24.51" id="00:11:24.51" class="lt" onclick="jumptoTime(684, this.id)"><p>可以了，剛才弄到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:28.51" id="00:11:28.51" class="lt" onclick="jumptoTime(688, this.id)"><p>原來你的得意是這樣，你的手好像抽筋，你是中國人嗎?你不會拿筷子，你做什麼，有人抽筋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:46.51" id="00:11:46.51" class="lt" onclick="jumptoTime(706, this.id)"><p>抽筋蛋法</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:48.51" id="00:11:48.51" class="lt" onclick="jumptoTime(708, this.id)"><p>抽筋蛋法，你什麼時候七師傅上身</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:52.51" id="00:11:52.51" class="lt" onclick="jumptoTime(712, this.id)"><p>差不多了，真的可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:56.51" id="00:11:56.51" class="lt" onclick="jumptoTime(716, this.id)"><p>神經病，你說可以就行</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:0.51" id="00:12:0.51" class="lt" onclick="jumptoTime(720, this.id)"><p>不行，喂，喂什麼，我上鏡，很難</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:12.51" id="00:12:12.51" class="lt" onclick="jumptoTime(732, this.id)"><p>我第一次，很難遷就你，你說第一次就沒用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:18.51" id="00:12:18.51" class="lt" onclick="jumptoTime(738, this.id)"><p>蛋已經碎了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:20.51" id="00:12:20.51" class="lt" onclick="jumptoTime(740, this.id)"><p>不開玩笑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:22.51" id="00:12:22.51" class="lt" onclick="jumptoTime(742, this.id)"><p>不開玩笑，喇 旋風蛋，哈哈哈哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:30.91" id="00:12:30.91" class="lt" onclick="jumptoTime(750, this.id)"><p>哈哈哈哈哈哈，這位這位師奶</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:34.91" id="00:12:34.91" class="lt" onclick="jumptoTime(754, this.id)"><p>麻煩你 麻煩你熄火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:36.91" id="00:12:36.91" class="lt" onclick="jumptoTime(756, this.id)"><p>我差一點點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:38.91" id="00:12:38.91" class="lt" onclick="jumptoTime(758, this.id)"><p>你蛋比狐風還要老，喂 麻煩你，瘋了 熄了火，瘋了 麻煩你熄了火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:46.91" id="00:12:46.91" class="lt" onclick="jumptoTime(766, this.id)"><p>可以了，我們今天有炒蛋吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:50.91" id="00:12:50.91" class="lt" onclick="jumptoTime(770, this.id)"><p>你可以離開鏡頭了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:52.91" id="00:12:52.91" class="lt" onclick="jumptoTime(772, this.id)"><p>有人打蛋 打得很噁心，喂喂 行了行了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:56.91" id="00:12:56.91" class="lt" onclick="jumptoTime(776, this.id)"><p>你看看 打得多噁心，很趕呀 快11點了，我還要弄個冷麵</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:2.91" id="00:13:2.91" class="lt" onclick="jumptoTime(782, this.id)"><p>不行 我要再弄一個，謝謝啦 我要放回架子</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:6.91" id="00:13:6.91" class="lt" onclick="jumptoTime(786, this.id)"><p>OK OK，Oh my gosh，各位 這就是太嫂旋風蛋，根本我們兩夫妻都做不到，哈哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:16.91" id="00:13:16.91" class="lt" onclick="jumptoTime(796, this.id)"><p>我一定要弄到為止，我今個星期練 下星期再弄給你看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:20.91" id="00:13:20.91" class="lt" onclick="jumptoTime(800, this.id)"><p>誰吃呀，誰吃呀，誰吃呀 我想問，誰吃呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:28.91" id="00:13:28.91" class="lt" onclick="jumptoTime(808, this.id)"><p>你不是弄冷麵加炒蛋嗎，瘋了，冷麵通常上面都有炒蛋，行了行了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:38.91" id="00:13:38.91" class="lt" onclick="jumptoTime(818, this.id)"><p>好，冷麵就是這樣 快快脆脆，真的，首先煲個熱水，這個冷麵我在九龍城買的，它很正，這個冷麵應該已經熟了，但是，阿小婆阿卿姐</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:56.91" id="00:13:56.91" class="lt" onclick="jumptoTime(836, this.id)"><p>跟我說</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:58.91" id="00:13:58.91" class="lt" onclick="jumptoTime(838, this.id)"><p>你要煮一下才可以，我聽她說，我煲滾了個滾水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:4.91" id="00:14:4.91" class="lt" onclick="jumptoTime(844, this.id)"><p>加些火腿叫你</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:14:6.91" id="00:14:6.91" class="lt" onclick="jumptoTime(846, this.id)"><p>不加，這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:10.91" id="00:14:10.91" class="lt" onclick="jumptoTime(850, this.id)"><p>加下去，我一定要練 我不甘心</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:14:14.91" id="00:14:14.91" class="lt" onclick="jumptoTime(854, this.id)"><p>加下去，然後就預備一壺冰水，OK</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:25.18" id="00:14:25.18" class="lt" onclick="jumptoTime(865, this.id)"><p>一湖呀?一煲呀?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:14:29.18" id="00:14:29.18" class="lt" onclick="jumptoTime(869, this.id)"><p>浪一浪佢喎，阿卿姐話，浪一浪佢就好啲，啲油就咁少少，得㗎啦，其實熱水浪一浪，跟住倒落一個凍水嗰度，好，OK，咁呢而家由佢呢攤一攤先，我呀擺喺呢度啦，OK，唉，自古成功衰N次喎有人話，炒蛋成功呀真係有人話，大把炒蛋呀，OK，好，跟住呢我要教大家做一個汁喎，呢個汁係好正嘅，首先呢呢度有啲乜嘢呢，就有呢一個花生醬啦，畀Facebook睇先。</p></a>
+				<a href="#00:15:15.18" id="00:15:15.18" class="lt" onclick="jumptoTime(915, this.id)"><p>花生醬加呢一個沙茶醬，花生醬加沙茶醬，OK，兩個喺度，跟住呢，我哋呢就要有呢一個米醋，OK，然後呢，士拉叉醬，再有一啲甜豉油喺度，首先呢，倒咗個米醋落去先，然後士拉叉醬少少，好，跟住呢，落少少甜豉油，煲仔飯豉油，啲咁多啦，係啦，然後呢，攪勻佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:56.18" id="00:15:56.18" class="lt" onclick="jumptoTime(956, this.id)"><p>我覺得個精髓呢，冷面係個冷面汁囉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:59.18" id="00:15:59.18" class="lt" onclick="jumptoTime(959, this.id)"><p>梗係啦，係呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:16:7.77" id="00:16:7.77" class="lt" onclick="jumptoTime(967, this.id)"><p>幾點鐘呀老婆</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:10.77" id="00:16:10.77" class="lt" onclick="jumptoTime(970, this.id)"><p>53分，我唔想阻住人哋睇我節目呀，53分</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:16:16.77" id="00:16:16.77" class="lt" onclick="jumptoTime(976, this.id)"><p>跟住呢，我哋呢就，放一啲麻油一路放呢就一路搞，OK，左右左右咁搞得㗎啦，其實呢有少少似整沙律醬嘅，OK，一路倒啲麻油一路左右左右咁搞，然後再，搞一搞佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:45.77" id="00:16:45.77" class="lt" onclick="jumptoTime(1005, this.id)"><p>要多啲油啲人都話</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:16:47.77" id="00:16:47.77" class="lt" onclick="jumptoTime(1007, this.id)"><p>係呀好多油㗎啦呢度已經好多油㗎啦，好啦畀大家睇一睇呢個醬呢，等陣先呀，老婆攞個匙羹畀我呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:0.77" id="00:17:0.77" class="lt" onclick="jumptoTime(1020, this.id)"><p>你會唔會大定細呀，攞個匙羹畀我 細就細得㗎啦，你會唔會寫定個recipe出嚟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:6.77" id="00:17:6.77" class="lt" onclick="jumptoTime(1026, this.id)"><p>我會我會我會</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:11.77" id="00:17:11.77" class="lt" onclick="jumptoTime(1031, this.id)"><p>你真係攞個細吉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:13.77" id="00:17:13.77" class="lt" onclick="jumptoTime(1033, this.id)"><p>你話細咁呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:14.77" id="00:17:14.77" class="lt" onclick="jumptoTime(1034, this.id)"><p>OK我畀大家望一望呢個汁，唔使啦唔使啦，嘩正呀，呢個潔度就啱啦，Facebook睇唔睇到呀，呢度，係咪YouTube睇唔睇到呀，呢度，So nice，OK好，跟住我哋要做啲乜嘢呢，因為呢每個人個屋企都唔同，我自己屋企呢就淨返一啲，青瓜啦，有啲啲radish，喺度啦，咁我哋就用埋啲radish啦，咁我點做呢。</p></a>
+				<a href="#00:17:50.77" id="00:17:50.77" class="lt" onclick="jumptoTime(1070, this.id)"><p>咁就切頭切尾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:52.77" id="00:17:52.77" class="lt" onclick="jumptoTime(1072, this.id)"><p>你個pan唔夠大 下次我攞個大啲嘅pan，哦pan唔夠大呀，係呀 旋風蛋，OK，Final cook，哦，你個pan嘅問題</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:6.77" id="00:18:6.77" class="lt" onclick="jumptoTime(1086, this.id)"><p>好跟住青瓜切頭切尾啦又，然後我做啲乜嘢呢，我將個青瓜整碎佢嘅，鍾意</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:18.77" id="00:18:18.77" class="lt" onclick="jumptoTime(1098, this.id)"><p>字幕由Amara.org社区提供，不行，我下星期要做到為止，可能我會贏</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:38.11" id="00:18:38.11" class="lt" onclick="jumptoTime(1118, this.id)"><p>無所謂，你贏我，總之有一個人做到就行，我免得人家過個星期，怎樣?已經做到第九個月，還未做到，兩夫妻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:49.31" id="00:18:49.31" class="lt" onclick="jumptoTime(1129, this.id)"><p>炒蛋上大桌，炒蛋上大桌</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:53.31" id="00:18:53.31" class="lt" onclick="jumptoTime(1133, this.id)"><p>跟住我就批這個radish，加炒蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:57.31" id="00:18:57.31" class="lt" onclick="jumptoTime(1137, this.id)"><p>好啦好啦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:19:11.45" id="00:19:11.45" class="lt" onclick="jumptoTime(1151, this.id)"><p>OK，好健康呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:19.45" id="00:19:19.45" class="lt" onclick="jumptoTime(1159, this.id)"><p>好 乾脆一定比了，好!拌一拌它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:36.95" id="00:19:36.95" class="lt" onclick="jumptoTime(1176, this.id)"><p>醬汁會不會太乳化?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:19:39.95" id="00:19:39.95" class="lt" onclick="jumptoTime(1179, this.id)"><p>乳化就對了!，我就是要它乳化，emulsify，問得很好這個題目，好!跟住我們要攪一攪麵，我決定用我碗的Star Wars碗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:55.95" id="00:19:55.95" class="lt" onclick="jumptoTime(1195, this.id)"><p>原來加上YouTube有四百多人看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:19:58.95" id="00:19:58.95" class="lt" onclick="jumptoTime(1198, this.id)"><p>多謝你!加上YouTube，我在倒水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:6.95" id="00:20:6.95" class="lt" onclick="jumptoTime(1206, this.id)"><p>差不多了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:20:10.95" id="00:20:10.95" class="lt" onclick="jumptoTime(1210, this.id)"><p>把麵放進碗裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:21.95" id="00:20:21.95" class="lt" onclick="jumptoTime(1221, this.id)"><p>太嫂是不是每晚都有私事?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:20:24.95" id="00:20:24.95" class="lt" onclick="jumptoTime(1224, this.id)"><p>然後我們就倒些醬汁進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:28.95" id="00:20:28.95" class="lt" onclick="jumptoTime(1228, this.id)"><p>你說有三分鐘</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:20:30.95" id="00:20:30.95" class="lt" onclick="jumptoTime(1230, this.id)"><p>三分鐘，對不起，不用用完，可以保存在雪櫃，跟住拌一拌它，嘩!正!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:44.95" id="00:20:44.95" class="lt" onclick="jumptoTime(1244, this.id)"><p>拌一拌</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:20:46.95" id="00:20:46.95" class="lt" onclick="jumptoTime(1246, this.id)"><p>好!跟住我就喜歡放些蔬菜在上面，然後再放些醬汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:1.95" id="00:21:1.95" class="lt" onclick="jumptoTime(1261, this.id)"><p>炒蛋!，放炒蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:21:12.95" id="00:21:12.95" class="lt" onclick="jumptoTime(1272, this.id)"><p>炒蛋，在這裏，其實顏色很漂亮，好!</p></a>
+				<a href="#00:21:19.95" id="00:21:19.95" class="lt" onclick="jumptoTime(1279, this.id)"><p>這個泰山冷麵，Facebook的你，YouTube的你，就OK啦!</p></a>
+				<a href="#00:21:34.68" id="00:21:34.68" class="lt" onclick="jumptoTime(1294, this.id)"><p>完成!</p></a>
+				<a href="#00:21:35.72" id="00:21:35.72" class="lt" onclick="jumptoTime(1295, this.id)"><p>有點日本feel，我覺得這個很健康，加點紫菜碎，加點紫菜碎，總之其實你喜歡加火腿什麼都可以的，我調轉鏡頭，先Facebook各位，等等，Hello，請等等，我還要教少少東西，轉過來，唉!搞定，好了，接著到YouTube，請等等，YouTube等等，好，Hello，Hello，YouTube你們好，加青瓜正呀。</p></a>
+				<a href="#00:22:10.06" id="00:22:10.06" class="lt" onclick="jumptoTime(1330, this.id)"><p>真係正呀，加點芝麻更正呀，有樣東西要介紹給大家，咦!去咗邊呀，無錯呢度，呢個好好食呀，哥麻粉呀，呢個芝麻粉呀，佢專門加係日本的菠菜，嗰度嘅，因為我呢個未開，我費事開啦，有個開咗嘅，我地買左個包，快啲啦趕住小食上大枱，多謝S Sam，你嘅Super Stickers，Thank you so much，呢包開咗。</p></a>
+				<a href="#00:22:50.06" id="00:22:50.06" class="lt" onclick="jumptoTime(1370, this.id)"><p>因為我地兩個都好鍾意食呢個，呢個係Very Nice，我地灑少少落呢個，冷面度先，唔加啦，今次唔加，但唔係話唔得，OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:6.82" id="00:23:6.82" class="lt" onclick="jumptoTime(1386, this.id)"><p>festive kolasia，thrust Jeg，喂 加了啦 呢一個 見唔見到呀，Very nice，Yeah OK 好 即刻試下先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:14.76" id="00:23:14.76" class="lt" onclick="jumptoTime(1394, this.id)"><p>果個芝麻有味嘅，我知呀 即係唔係只係芝麻有味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:23:18.76" id="00:23:18.76" class="lt" onclick="jumptoTime(1398, this.id)"><p>唔係只係芝麻有味嘅 係呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:23:20.76" id="00:23:20.76" class="lt" onclick="jumptoTime(1400, this.id)"><p>Woo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:22.76" id="00:23:22.76" class="lt" onclick="jumptoTime(1402, this.id)"><p>嗯，喺邊度買呀 問你，好好食呀 邊度買呀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:23:27.76" id="00:23:27.76" class="lt" onclick="jumptoTime(1407, this.id)"><p>Erm 有個商店叫 OISIX，好多年㗎啦已經 OISIX，上網訂㗎要係，你自己找下，OISIX，OISIX</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:42.76" id="00:23:42.76" class="lt" onclick="jumptoTime(1422, this.id)"><p>唔係飯酥黎嘅 唔係飯酥，佢話唔係飯酥 真係芝麻黎嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:23:46.76" id="00:23:46.76" class="lt" onclick="jumptoTime(1426, this.id)"><p>芝麻黎嘅 唔係飯酥黎嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:48.76" id="00:23:48.76" class="lt" onclick="jumptoTime(1428, this.id)"><p>但係有調味嘅芝麻 磨咗嘅芝麻，磨咗嘅調味芝麻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:23:52.76" id="00:23:52.76" class="lt" onclick="jumptoTime(1432, this.id)"><p>係啦 食下，太嫂炒個蛋先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:56.76" id="00:23:56.76" class="lt" onclick="jumptoTime(1436, this.id)"><p>係咪好好食呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:23:58.76" id="00:23:58.76" class="lt" onclick="jumptoTime(1438, this.id)"><p>好好食呀，我哋個節目係咪做緊呀已經 做啦，係咪做緊呀 同大家講個比喻，咁唔好阻住大家，睇個咁好睇嘅節目小食上大台，快啲熄咗呢一個，網上嘅世界，即係去電視嘅世界，去支持我同Crystal，做嘅小食上大台，係咁先啦 我唔阻大家啦 因為呢，我自己都會睇，下個禮拜 做咩呀，真係走喎啲人 再挑戰呀，咩呀真係 喂 走啦走啦走啦。</p></a>
+				<a href="#00:24:28.76" id="00:24:28.76" class="lt" onclick="jumptoTime(1468, this.id)"><p>快啲睇睇啦 啲人真係走呀 走啦走啦走啦，係咁啦 係咁啦 走先啦，Love you Love you 係啦，走先啦 係咁先啦 下次再玩啦 OK，喂 快啲去睇啦，係咁啦 係咁啦，Bye Bye Bye Bye Bye Bye Bye，做啦 做啦 係咁啦 Bye Bye Bye Bye Bye。</p></a>
+				<a href="#00:24:44.76" id="00:24:44.76" class="lt" onclick="jumptoTime(1484, this.id)"><p>Bye Bye Bye Bye YouTube。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室 肉絲炒麵 一定要煎至外脆內軟至係王道!!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3oovJ1ftaSI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室 肉絲炒麵 一定要煎至外脆內軟至係王道!!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>兩面金黃中間仲有面芯嘅，呢啲先係肉絲炒麵啦咩，我從一個朋友身上學到，原來肉絲炒麵有很多地方或師傅，都很少做的步驟，令肉絲炒麵沒那麼好吃，肉絲炒麵最重要是麵，麵很多時因為芡汁不夠，或者材料不夠，令你吃到的麵，就是咬中一塊脆的麵條，沒有味道的，是完全沒有味道的，那次在朋友身上學會，在麵條上調味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:50.23" id="00:00:50.23" class="lt" onclick="jumptoTime(50, this.id)"><p>才拿去煎，這樣就非常好，首先要把麵煮滾，水滾後放麵，可以關火，加少許油，大約兩分鐘，只要把麵浸開，因為這些麵餅，基本上是熟麵，一會兒就已經鬆開，剛才我加少許油，是等待麵液冷卻後，就不要黏在一起，不需要太多，你看到這樣，散開了，基本上就完成，倒進去，一開始時不是說了，幫麵餅調味是重中之重的重點，其實很簡單。</p></a>
+				<a href="#00:01:43.31" id="00:01:43.31" class="lt" onclick="jumptoTime(103, this.id)"><p>不需要很厲害的調味品，生抽少許，拌勻，完成了，一點點的步驟，就令整件事產生你意想不到的大變化，好 接下來我們放涼一點，放在一旁，麵餅應該是要煎的，當然不是不放油去煎，但是大家看到，有油的，但只不過是這樣的油，我們是足夠煎脆了它的表面，今時今日有些師兄因為要快，然後放很多很多油，整個麵就差不多炸出來。</p></a>
+				<a href="#00:02:31.07" id="00:02:31.07" class="lt" onclick="jumptoTime(151, this.id)"><p>這些並不是肉絲炒麵，這些是肉絲炸麵，什麼都炸乾了，我們應該是慢慢煎，大家在家做的時候，就可以有多點時間，就可以做一些比較手工的，真正的肉絲炒麵，你放一點生抽下去，沒有煎過就這樣放下去，就這樣吃就覺得不錯，麵本身有些味道，我相信應該差不多了，麵餅是有足夠的厚度，也只不過是煎脆它表面這一塊，我們以前所謂的肉絲炒麵應該是這樣。</p></a>
+				<a href="#00:03:14.31" id="00:03:14.31" class="lt" onclick="jumptoTime(194, this.id)"><p>如果就這樣煎，就要中大火，每一面都需要兩分鐘左右才煎成這樣，麵已經煎好了，這個我用了豬頸肉， 因為我喜歡它的質感，怎樣煮都不會粗糙， 而且好吃，尤其是家裡的朋友，如果想做肉絲炒麵，買十多元的瘦肉切絲，這樣就糟糕了，很多時候， 如果瘦肉切絲，家裡就這樣， 加少許糖鹽豆粉，炒完之後， 打完芡。</p></a>
+				<a href="#00:04:0.46" id="00:04:0.46" class="lt" onclick="jumptoTime(240, this.id)"><p>肉絲就會變得乾、粗糙、過熟，這樣就不好吃了， 豬頸肉，一點問題都不會發生，炒熟了， 就將所有材料放進去，薑絲、蔥、少許冬菇，炒一炒，我這裡也聞到香味，韭黃和肥仔芽菜，韭黃一定要有，很多家裡朋友最怕遇到的問題，就是打芡的時候，很多人都說打芡很困難，一放進去， 煮的時候會整塊，其實也有方法的。</p></a>
+				<a href="#00:04:43.46" id="00:04:43.46" class="lt" onclick="jumptoTime(283, this.id)"><p>這裡有雞湯和粟粉，加少許雞湯，攪拌均勻，將雞湯倒進材料裡，煮滾了， 滾得很鹹，關火， 將粟粉水放進去，開火， 快速攪拌，大家也不是很專業，怎樣萬無一失，我不會起一塊塊，可以直接將它倒進去，現在雞湯和粟粉都攪拌好了，二話不說， 全都倒進去，才開火， 開到最猛烈，我喜歡加少許生抽， 讓它更好味，慢慢攪拌。</p></a>
+				<a href="#00:05:29.46" id="00:05:29.46" class="lt" onclick="jumptoTime(329, this.id)"><p>開始滾了， 滾了，一點也不起粒，也是稀稠得剛剛好的芡，這樣就攪拌好了，有些朋友喜歡這樣服務，這個肉絲炒麵，整個芡放在碟子上，然後才將麵放在上面，當然要剪一下，好像切蛋糕一樣，一開六，這樣服務的方法有什麼好處呢，如果你兜頭淋，很多時候會把麵餅煎好，現在這樣，一定有些脆的還留在，而且這種煎法。</p></a>
+				<a href="#00:06:14.26" id="00:06:14.26" class="lt" onclick="jumptoTime(374, this.id)"><p>你還可以吃到麵芯，麵芯還是麵，不是炸脆的麵條，這個就是我們想要的那種效果，兩面金黃，中間還有麵芯，這些才是肉絲炒麵，一塊麵，舀少許芡，好處是一定不會浸軟麵，你吃的時候，你咬到麵頭一聲脆，裡面還有調味的麵條，麵芯是有味道的，軟的，加上無敵的豬頸肉，如果大家真的有什麼秘技，也可以留言，大家一起分享。</p></a>
+				<a href="#00:07:10.06" id="00:07:10.06" class="lt" onclick="jumptoTime(430, this.id)"><p>乾杯!</p></a>
+</div>
+	</body>
+</html>

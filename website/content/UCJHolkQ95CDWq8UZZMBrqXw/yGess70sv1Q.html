@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰想宵夜之狐狸烏冬</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yGess70sv1Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰想宵夜之狐狸烏冬</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hi Hi Hi，喂，大家好呀，How's everyone，Hello，喂，又見面啦，YouTube嘅朋友，你地好，Hi，跟住Facebook嘅朋友，你地好呀，Hi，又係兩部機，一齊做嘅時間啦，等我睇下YouTube呢邊呢，可唔可以轉少少，光先，會光啲呢，呢一個，好少少，我用呢一個啦就。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>Hello，Happy Friday，YouTube同埋Facebook嘅朋友，你地好呀，等我開開，我嘅iPad先，好，撳咗啦，嘩，咁大聲嘅，熄咗聲先，Hello，Hi，Hi，我同Facebook嘅朋友打下招呼先，Hello，嘩，一字尊寶呀，咁正嘅名，Hello Monica，Hello，咁多位，你地好，Hi。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>Hello，Hello，呢邊Oscar，Hello，YouTube嘅朋友，喂，係啦，飲杯先啦，喂，今日呢一個，Happy Friday呢，真係好歡迎大家呢，又嚟到啦，唔好睇我呢，今晚呢好似，好興奮㗎嘛，其實呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>我係好攰㗎，點解我好攰呢，飲啖嘢先再同大家講下，好，Ok，Good Morning from Vancouver，咦，Hello Yvonne，你好呀，喂，首先呢，飲杯嘢先，我今晚呢就決定呢，Full Japan呀，今日，全部日本嘢呀，我整今日，於是乎呢，我就攞咗，支珍藏出嚟啦，又攞咗支，山崎12年呀。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:58.00" id="00:01:58.00" class="lt" onclick="jumptoTime(118, this.id)"><p>有number嘅呢一個，好難得嘅，飲杯先，咁多位，唉，真係經過一日嘅，辛勞，真係要，飲番杯嘢先，好，閂返個瓶蓋先，Hello，Hi，咁，嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:18.00" id="00:02:18.00" class="lt" onclick="jumptoTime(138, this.id)"><p>我呢個，Happy Friday 先，各位，Cheers Cheers Cheers，喂，你們有沒有拿著飲料飲的?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:24.45" id="00:02:24.45" class="lt" onclick="jumptoTime(144, this.id)"><p>YouTube 的你，或者 Facebook 的你，各位，有沒有拿著飲料飲的?</p></a>
+				<a href="#00:02:30.45" id="00:02:30.45" class="lt" onclick="jumptoTime(150, this.id)"><p>OK?</p></a>
+				<a href="#00:02:31.45" id="00:02:31.45" class="lt" onclick="jumptoTime(151, this.id)"><p>Cheers Cheers，啊，真是，有號碼的威士忌是不一樣的，喂，真是不錯，這麼多位，在Facebook有，Darren from Toronto， Hello from Toronto，各位Torontonians，各位Torontonians，好不好，眼睛都腫了，你說得很對，喂，今天是long day。</p></a>
+				<a href="#00:03:3.91" id="00:03:3.91" class="lt" onclick="jumptoTime(183, this.id)"><p>我慢慢告訴大家發生什麼事，不過首先和YouTube的朋友說，YouTube，如果你第一次看我的LINE，或者也看過的話，YouTube是有Super Stickers，和Super Thanks可以玩的，你想玩的話，隨便玩吧，我也不介意你們慢慢和我一起，做Super Stickers和Super Chat，先謝謝你們，OK，Thank you so much。</p></a>
+				<a href="#00:03:31.25" id="00:03:31.25" class="lt" onclick="jumptoTime(211, this.id)"><p>今天發生什麼事呢，今天其實是一個很開心的季節，為什麼很開心很累呢，今天我一大早，八點多就開始工作了，一直做到現在，我想一個多小時前才完，做了十多個小時，做什麼事呢，就是去拍攝，去拍攝是做什麼呢，ViuTV有一個新的節目將會來的，由我來做主持，這段時間趕緊拍攝，於是對上一段時間，都開了一個對。</p></a>
+				<a href="#00:04:24.37" id="00:04:24.37" class="lt" onclick="jumptoTime(264, this.id)"><p>由早上十點做到凌晨一點半左右，今天又拍了十多個小時，其實真的很累，眼睛都腫了，但都是開心的累，所以你們也要等我開心，因為又有新節目了，我暫時知道這個新節目，將會在五月或六月在ViuTV播出，所以到時大家記住看，到時一定要支持我，首先要多謝YouTube的Stella，多謝Stella。</p></a>
+				<a href="#00:05:14.45" id="00:05:14.45" class="lt" onclick="jumptoTime(314, this.id)"><p>你的Super Chat，多謝Stella Kwok，多謝你支持支持，所以你們記住，五月或六月時記得收看我的新節目，做主持的，希望到時見到你們支持我，知道嗎?</p></a>
+				<a href="#00:05:43.41" id="00:05:43.41" class="lt" onclick="jumptoTime(343, this.id)"><p>靠你們的了，知道嗎?</p></a>
+				<a href="#00:05:47.77" id="00:05:47.77" class="lt" onclick="jumptoTime(347, this.id)"><p>又有Super Stickers，多謝YouTube的Mimi眼，多謝你，今天我們做了很多星期的邪惡事，今天想做一個叫狐狸烏冬的日本食物，大家有沒有聽過狐狸烏冬這個食物呢?</p></a>
+				<a href="#00:06:20.13" id="00:06:20.13" class="lt" onclick="jumptoTime(380, this.id)"><p>我相信很多人都吃過，但你不知道叫狐狸烏冬，其實這個日文名叫Kitsune，Kitsune Udon，Youtube回來了，大家都在YouTube，歡迎YouTube的朋友，很多人都在，都要多謝YXKXXK的Super Stickers，Thank you so much，不好意思我又回來了。</p></a>
+				<a href="#00:06:56.77" id="00:06:56.77" class="lt" onclick="jumptoTime(416, this.id)"><p>大家馬上走了，但多謝Facebook的朋友在看，多謝你們一直留守Facebook，剛才Youtube的朋友，今天很忙，又甩這個，但Facebook的朋友又留守了，多謝，其實剛才說到Kitsune Udon，Kitsune Udon的直譯，其實在日文叫狐狸烏冬，狐狸烏冬其實是怎樣來的呢?</p></a>
+				<a href="#00:07:30.05" id="00:07:30.05" class="lt" onclick="jumptoTime(450, this.id)"><p>只不過是油羊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:31.73" id="00:07:31.73" class="lt" onclick="jumptoTime(451, this.id)"><p>什麼叫油羊呢?，大家一定吃過</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:35.01" id="00:07:35.01" class="lt" onclick="jumptoTime(455, this.id)"><p>就是豆腐皮，豆腐皮，ok，為什麼叫狐狸烏冬呢?</p></a>
+				<a href="#00:07:42.29" id="00:07:42.29" class="lt" onclick="jumptoTime(462, this.id)"><p>因為他們說經過調味的油羊，顏色就好像狐狸毛的顏色，於是日本人就叫這個油羊烏冬，叫做Kitsune Udon，狐狸烏冬，亦相傳說狐狸很喜歡吃這個油羊，於是幫這個油羊烏冬叫做Kitsune Udon，所以大家一定吃過，但這個Kitsune Udon其實很容易做，大家首先當然要買一些油羊，油羊。</p></a>
+				<a href="#00:08:24.53" id="00:08:24.53" class="lt" onclick="jumptoTime(504, this.id)"><p>這個油羊有很多朋友會直接拿來煮，今晚我就教一教大家，怎樣去做這個狐狸烏冬的油羊，我們開始吧，我們先轉一下鏡頭，既然Facebook剛才那麼乖，我們不如先轉Facebook的鏡頭，各位請等一等，好，好，Facebook的你轉了來，很乖了，多謝你們，Youtube的朋友請等一等，好，在這裏。</p></a>
+				<a href="#00:09:12.41" id="00:09:12.41" class="lt" onclick="jumptoTime(552, this.id)"><p>Youtube的你，多謝你等一等，來到這邊就轉一轉鏡頭，這裏，好，多謝大家，多謝大家的忍耐，好了，我們要做一做油揚，首先我們要切油揚出來，今天我做了這麼久都還未吃夠，於是我們就切成四塊，即是變了八條，然後我們要做什麼呢，我們要放入冷的煎鍋，就這樣放就可以了，放入冷的煎鍋，然後開火。</p></a>
+				<a href="#00:10:26.78" id="00:10:26.78" class="lt" onclick="jumptoTime(626, this.id)"><p>然後開火，其實油揚已經有些油在，於是我們就用油揚本身的油去烘爽，所以我們就這樣用中火烘一烘，好，Youtube的朋友，多謝JC，多謝你的利是，多謝你的Super Chat，多謝你的Awesome Recipe，多謝你的Awesome Support，現在我們就將油揚烘乾，火不用太大，中小火都可以。</p></a>
+				<a href="#00:11:23.78" id="00:11:23.78" class="lt" onclick="jumptoTime(683, this.id)"><p>但今日我好想介紹一樣東西給大家，什麼呢，我就是想介紹一個高湯的湯包，高湯的湯包就是這個，大家見不見到，我給Facebook的朋友看看，我給Facebook的朋友看看，叫Akomeya，YouTube的朋友可以看看，叫Akomeya，這個Akomeya的湯包，其實是日本的高湯包，它好處是什麼呢?</p></a>
+				<a href="#00:11:59.58" id="00:11:59.58" class="lt" onclick="jumptoTime(719, this.id)"><p>它好處是，首先是很好吃，因為我遇到這個，我也很想介紹給大家，它說沒有化學調味料添加，所以是非常自然的，它有很多不同的款式，今天我選了這個飛魚，飛魚在這裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:26.58" id="00:12:26.58" class="lt" onclick="jumptoTime(746, this.id)"><p>我想給大家看看，飛魚，很正的，叫做烤飛魚，烤飛魚叫什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:39.58" id="00:12:39.58" class="lt" onclick="jumptoTime(759, this.id)"><p>有隻翅膀的，這裡，烤飛魚，這個，其實它是一個，Dashi，可以用來做烏冬的湯底，我今天就選擇了，用這個烤飛魚做湯底，因為，那時候不是經常和大家說，這個我發現是更加好吃的，於是想和大家分享一下，現在，我們要開，來吃一下，很正，我是喜歡濃湯的，於是，我就會放，三包，它這裡說，500ml的水就兩包，就是濃湯的。</p></a>
+				<a href="#00:13:34.58" id="00:13:34.58" class="lt" onclick="jumptoTime(814, this.id)"><p>但是我就加多了一點水，加多了200ml水，就放三包，700ml水放三包，這是我自己預計的，好了，再看看，先游泳，你會聽到油羊的聲音，它已經烘乾了，我們繼續用油烘乾，可以讓大家看看，有一塊已經烘乾了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:14:22.21" id="00:14:22.21" class="lt" onclick="jumptoTime(862, this.id)"><p>Facebook鏡頭太少了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:25.21" id="00:14:25.21" class="lt" onclick="jumptoTime(865, this.id)"><p>太嫂又來了，可能要後一點，Facebook鏡頭要後一點，不好意思各位，多謝VG Vicky，多謝你的Super Chat，Thank you so much，一會兒我再說多一點，關於這個DASHI湯包，因為這個湯包是很棒的，我稍後再說，現在先做，我們將它放在水中，然後煮沸，我們再看一看這邊。</p></a>
+				<a href="#00:15:11.21" id="00:15:11.21" class="lt" onclick="jumptoTime(911, this.id)"><p>在煮沸，其實這個湯包，煮沸後，你立刻放下去，攪拌均勻，三分鐘就準備好了，但是，我自己想這個湯更濃味，於是，我就放進冷水，和水一起煮，味道會更濃，現在油羊，我們可以翻一下，翻一下，因為很多已經煮到脆脆了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:2.21" id="00:16:2.21" class="lt" onclick="jumptoTime(962, this.id)"><p>好了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:4.21" id="00:16:4.21" class="lt" onclick="jumptoTime(964, this.id)"><p>我們現在煮水，當然會介紹，但是我先煮了，如果大家有空的話，等我煮的話，你馬上可以上去Facebook或者YouTube，我已經寫了連結在這裡，有連結的，因為今天我介紹的湯包，當然有好東西給你們，所以你們自己如果真的有興趣看一看，就去連結按一下，然後先看一看，然後再聽我介紹一下，OK?</p></a>
+				<a href="#00:16:43.94" id="00:16:43.94" class="lt" onclick="jumptoTime(1003, this.id)"><p>你自己看一看，今晚有好東西給大家，真的不是開玩笑，好了，是呀，我已經說了多謝Vicky，Vicky Vicky，Thank you so much，好了，這樣，大家會看到很多款湯包在後面，我會逐一介紹的，因為這個湯包是真的好正，所以今晚特意想和大家介紹一下，因為是沒有添加任何物質的，好了。</p></a>
+				<a href="#00:17:15.06" id="00:17:15.06" class="lt" onclick="jumptoTime(1035, this.id)"><p>我們現在就要攪一攪這個，油釀豆腐，為什麼要變成這個狐狸烏冬呢，就是因為它的顏色，顏色是怎樣來的呢，就是有這個砂糖，豉油，和這個水，我們首先將這個砂糖倒進水裡，多謝在YouTube的Fanny MT Ma，多謝你的Super Stickers，Thank you so much，好了。</p></a>
+				<a href="#00:17:43.14" id="00:17:43.14" class="lt" onclick="jumptoTime(1063, this.id)"><p>然後我們將那個豉油，倒進那個砂糖和水裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:48.58" id="00:17:48.58" class="lt" onclick="jumptoTime(1068, this.id)"><p>先攪拌均勻，攪拌均勻，攪攪攪攪，盡量攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:58.02" id="00:17:58.02" class="lt" onclick="jumptoTime(1078, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:4.79" id="00:18:4.79" class="lt" onclick="jumptoTime(1084, this.id)"><p>好了，這個，這個油揚你會見到，嘩!顏色出來了，有少少上了啡色，which is，perfect，ok，有這個顏色就最好，大家見不見到，好正，好!跟住我們熄了，這個小火，攪一攪這個豉油，Facebook的朋友，要確認，這裏遠少少，大家可能望到清楚啲，好!攪一攪，豉油先，我們就而家倒落去，然後我們就用小火。</p></a>
+				<a href="#00:18:56.27" id="00:18:56.27" class="lt" onclick="jumptoTime(1136, this.id)"><p>小火翻一翻，翻一翻油羊，我們之前已經是烘乾了油羊，它已經是硬的，我們不用放任何油，因為油羊本身都有油，現在我們在做什麼呢，現在我們就要用小火，將這個汁煮乾，即是說要油羊吃光汁，吃光汁，這個就要慢慢煮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:32.27" id="00:19:32.27" class="lt" onclick="jumptoTime(1172, this.id)"><p>好，在這個時候，我們又預備另一個碗，我們要做什麼呢，我們要攪一攪日本湯包，做完那個高湯之後，要加些味道，加些什麼味道呢，加這個，清酒，不好意思，然後加這個味醂，然後加少少，豉油，然後糖，這個就是湯底的味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:19.27" id="00:20:19.27" class="lt" onclick="jumptoTime(1219, this.id)"><p>OK</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:24.27" id="00:20:24.27" class="lt" onclick="jumptoTime(1224, this.id)"><p>你們有沒有去看連結，在描述那裡，你們現在等我的時候，就開另一個窗戶看看吧，各位，但不要生我的LIVE，OK</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:38.27" id="00:20:38.27" class="lt" onclick="jumptoTime(1238, this.id)"><p>有很多好東西，真的，NO KIDDING</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:47.50" id="00:20:47.50" class="lt" onclick="jumptoTime(1247, this.id)"><p>在爆旋陀螺JERRY 希望直播有100萬人，可能我都想啊真是，那時是瘋了的了，OK，好了，我們見到湯包已經煮滾了，見不見到Facebook的朋友，煮滾了，Youtube都見到，煮滾了之後，我們再煮多三分鐘就OK了，至於這個油羊，你會見到開始上色了，見不見到，嘩，正啊，味道很正啊，反一反它。</p></a>
+				<a href="#00:21:27.50" id="00:21:27.50" class="lt" onclick="jumptoTime(1287, this.id)"><p>可以調小火，讓它再慢一點上色，它呢，油羊會慢慢吸收所有豉油味，吸收所有汁，OK，這個就是你家裏如果想煮狐狸烏冬要做的東西，行不行，好，這個茄子烏冬的汁已經調好，我們先放一旁，接著我們要做什麼呢，接著我們要切一些菜，什麼菜呢，其實呢，就是一些京蔥，或者一些日本的京蔥，先抹一下砧板，我們其實要將它切一些這麼幼的絲出來。</p></a>
+				<a href="#00:22:26.50" id="00:22:26.50" class="lt" onclick="jumptoTime(1346, this.id)"><p>OK，我們可以兩個葉，我們只要綠色的部分，兩個葉一起切，這裡好像切好一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:35.50" id="00:22:35.50" class="lt" onclick="jumptoTime(1355, this.id)"><p>不要了，再來，剛剛進來的朋友們，今晚我們在煮一個日本名菜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:46.50" id="00:22:46.50" class="lt" onclick="jumptoTime(1366, this.id)"><p>狐狸烏冬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:50.43" id="00:22:50.43" class="lt" onclick="jumptoTime(1370, this.id)"><p>剛剛進來的YouTube的朋友，如果你想玩的話，我們有一個Super Stickers和Super Chat，可以讓你們玩玩，完全歡迎你們一起玩玩，好，在這裡又要多謝Catherine Lam，多謝Catherine Lam在YouTube的Catherine Lam，多謝你的Super Stickers。</p></a>
+				<a href="#00:23:14.43" id="00:23:14.43" class="lt" onclick="jumptoTime(1394, this.id)"><p>Thank you so much，現在拿碟子裝這些京蔥，待會可以放在烏冬上，大家看不看得到，那些油羊已經吸收了汁，沒有了，即是說味道已經入去了，Very nice，好了，我們看看，很快已經完成了，然後呢，這個高湯也完成了，哇，好香，為什麼這麼香，我真的被你氣死，好了，完成之後我們要做什麼呢，我們要拿湯包出來。</p></a>
+				<a href="#00:24:2.43" id="00:24:2.43" class="lt" onclick="jumptoTime(1442, this.id)"><p>好了，先拿湯包出來，很香啊!</p></a>
+				<a href="#00:24:17.73" id="00:24:17.73" class="lt" onclick="jumptoTime(1457, this.id)"><p>太嫂，真的很香啊!</p></a>
+				<a href="#00:24:20.73" id="00:24:20.73" class="lt" onclick="jumptoTime(1460, this.id)"><p>我不是開玩笑，那種香味呢，平時烏冬都沒有那麼香，這種香味，你會聞到沒有味精味，為什麼我要介紹給大家，就是你會聞到沒有味精味，那一刻開心啊，是不是?</p></a>
+				<a href="#00:24:41.73" id="00:24:41.73" class="lt" onclick="jumptoTime(1481, this.id)"><p>好了，現在已經準備好湯了，我已經準備好碗了，準備了什麼碗呢?</p></a>
+				<a href="#00:25:2.73" id="00:25:2.73" class="lt" onclick="jumptoTime(1502, this.id)"><p>有一個Star Wars碗，這個好看嗎?</p></a>
+				<a href="#00:25:6.73" id="00:25:6.73" class="lt" onclick="jumptoTime(1506, this.id)"><p>是Star Wars的，是Star Wars的，是不是很開心啊?</p></a>
+				<a href="#00:25:13.73" id="00:25:13.73" class="lt" onclick="jumptoTime(1513, this.id)"><p>什麼?</p></a>
+				<a href="#00:25:14.73" id="00:25:14.73" class="lt" onclick="jumptoTime(1514, this.id)"><p>我有一點點顏色，不過不是COVID，我知道了，我現在要謝謝小信甲，謝謝小信甲的Super Stickers，謝謝Money Lee的Super Stickers，謝謝Jackie Louie的Super Stickers，Thank you so much，謝謝各位一起玩Super Stickers的朋友。</p></a>
+				<a href="#00:25:36.73" id="00:25:36.73" class="lt" onclick="jumptoTime(1536, this.id)"><p>好了，我們關火之後，因為我們要拿湯包出來，我們現在要做什麼呢?</p></a>
+				<a href="#00:25:44.73" id="00:25:44.73" class="lt" onclick="jumptoTime(1544, this.id)"><p>我們要開滾火，開滾火，我們要做什麼呢?</p></a>
+				<a href="#00:25:56.73" id="00:25:56.73" class="lt" onclick="jumptoTime(1556, this.id)"><p>我們要放烏冬進去，但是因為烏冬還是很硬，我們要等湯再滾，其實已經是完成了，這個砧板拿走了，YouTube的鏡頭看不到什麼?</p></a>
+				<a href="#00:26:24.73" id="00:26:24.73" class="lt" onclick="jumptoTime(1584, this.id)"><p>原來看不到爐的?</p></a>
+				<a href="#00:26:26.73" id="00:26:26.73" class="lt" onclick="jumptoTime(1586, this.id)"><p>不是啊，我看到爐的，你不要嚇我啦，我給大家近鏡看一下Facebook的朋友，這個就是剛剛做好的狐狸牛羊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:45.02" id="00:26:45.02" class="lt" onclick="jumptoTime(1605, this.id)"><p>哈哈哈哈，對不起，是的，是免費購物，Facebook的朋友可以看一下，很香啊，太嫂也說很香啊，OK，這碗湯真的很漂亮，我告訴大家，是的，這個菲德煲也很正</p></a>
+				<a href="#00:27:8.22" id="00:27:8.22" class="lt" onclick="jumptoTime(1628, this.id)"><p>是不是很開心，好了，湯煮好了，現在我們就放烏冬進去，烏冬?不用了</p></a>
+				<a href="#00:27:20.22" id="00:27:20.22" class="lt" onclick="jumptoTime(1640, this.id)"><p>雪藏的不用了，是的，放入去，順便用這個湯煮好便更入味，其實熟的烏冬，即是雪藏烏冬其實已經熟了，所以我們只要將它放入熱水裏，便已經散開便可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:27:56.49" id="00:27:56.49" class="lt" onclick="jumptoTime(1676, this.id)"><p>OK</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:2.49" id="00:28:2.49" class="lt" onclick="jumptoTime(1682, this.id)"><p>有些人在Youtube說，如果吃那個狐狸烏冬，那些辣是很重的，其實真的，杯麵的味精當然是多，但是這個湯包你在家裏弄，是沒有味精的，是天然的，所有東西都是天然的，為甚麼呢?告訴大家</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:28.49" id="00:28:28.49" class="lt" onclick="jumptoTime(1708, this.id)"><p>你Facebook今天有些怪人進來了，是嗎?</p></a>
+				<a href="#00:28:32.49" id="00:28:32.49" class="lt" onclick="jumptoTime(1712, this.id)"><p>是呀，有些不知是甚麼文，是嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:36.49" id="00:28:36.49" class="lt" onclick="jumptoTime(1716, this.id)"><p>我都不知道，通常都會有些這樣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:28:40.49" id="00:28:40.49" class="lt" onclick="jumptoTime(1720, this.id)"><p>是嗎?，好了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:47.49" id="00:28:47.49" class="lt" onclick="jumptoTime(1727, this.id)"><p>我很忙，可能不能封鎖這些，用好一點品質的烏冬，當然可以，不過晚上我貪快，貪快，好了，烏冬已經完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:5.49" id="00:29:5.49" class="lt" onclick="jumptoTime(1745, this.id)"><p>但有冷凍烏冬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:7.49" id="00:29:7.49" class="lt" onclick="jumptoTime(1747, this.id)"><p>甚麼是冷凍烏冬?，即是冰的烏冬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:29:9.49" id="00:29:9.49" class="lt" onclick="jumptoTime(1749, this.id)"><p>我覺得冰烏冬比雪藏烏冬好吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:14.49" id="00:29:14.49" class="lt" onclick="jumptoTime(1754, this.id)"><p>首先要多謝KL你的Super Chat，也要多謝Donald Kwok你的Super Chat，他問我你的正職是做甚麼?</p></a>
+				<a href="#00:29:27.49" id="00:29:27.49" class="lt" onclick="jumptoTime(1767, this.id)"><p>我的正職是娛樂大家，我是邪江族，我有做電台、做電視、做Youtube，很多不同的東西，好了，現在我們就把味道倒進去，哇，好香，現在完成了，所有東西都可以放在一起了，首先我們就倒了一個，哇 倒了一個湯進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:6.81" id="00:30:6.81" class="lt" onclick="jumptoTime(1806, this.id)"><p>哇 真是，這個留給太嫂，很香，然後我們就放煮好的牛羊下去，煮三塊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:30:24.72" id="00:30:24.72" class="lt" onclick="jumptoTime(1824, this.id)"><p>叫你放好烏冬不要浪費湯底，當然，但我都說我自己多功能煮食達人</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:32.52" id="00:30:32.52" class="lt" onclick="jumptoTime(1832, this.id)"><p>然後就放一些京蔥</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:44.95" id="00:30:44.95" class="lt" onclick="jumptoTime(1844, this.id)"><p>哇!爽死你了!，好!搞定了!各位!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:30:51.95" id="00:30:51.95" class="lt" onclick="jumptoTime(1851, this.id)"><p>和Alice拍完節目才回過來，大家都很關心你，給YouTube的朋友看看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:58.95" id="00:30:58.95" class="lt" onclick="jumptoTime(1858, this.id)"><p>這個就是我的狐狸烏冬了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:3.95" id="00:31:3.95" class="lt" onclick="jumptoTime(1863, this.id)"><p>哇!正不正呀?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:7.95" id="00:31:7.95" class="lt" onclick="jumptoTime(1867, this.id)"><p>好正呀!好靚呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:10.95" id="00:31:10.95" class="lt" onclick="jumptoTime(1870, this.id)"><p>好靚呀!你就這樣拍個影片都靚呀!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:14.95" id="00:31:14.95" class="lt" onclick="jumptoTime(1874, this.id)"><p>好!跟住我給YouTube的朋友看看，請Facebook的朋友忍耐一陣，YouTube的朋友請等等，好!這樣呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:27.95" id="00:31:27.95" class="lt" onclick="jumptoTime(1887, this.id)"><p>你的正職是多工民主食達人</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:30.95" id="00:31:30.95" class="lt" onclick="jumptoTime(1890, this.id)"><p>看不看到呀?這個就是我的宵夜狐狸烏冬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:35.95" id="00:31:35.95" class="lt" onclick="jumptoTime(1895, this.id)"><p>Facebook說你是多工民主食達人</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:39.95" id="00:31:39.95" class="lt" onclick="jumptoTime(1899, this.id)"><p>多謝各位!，好!又是試食的時間了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:46.95" id="00:31:46.95" class="lt" onclick="jumptoTime(1906, this.id)"><p>不是歌手嗎?還要答你</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:48.95" id="00:31:48.95" class="lt" onclick="jumptoTime(1908, this.id)"><p>還有歌手呀!，好!我先轉個鏡頭出來，好!等等呀!太嫂!</p></a>
+				<a href="#00:31:59.95" id="00:31:59.95" class="lt" onclick="jumptoTime(1919, this.id)"><p>我先轉個鏡頭，Facebook的你請你忍耐呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:32:5.95" id="00:32:5.95" class="lt" onclick="jumptoTime(1925, this.id)"><p>我試下呀!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:32:6.95" id="00:32:6.95" class="lt" onclick="jumptoTime(1926, this.id)"><p>等等呀!太嫂!</p></a>
+				<a href="#00:32:8.95" id="00:32:8.95" class="lt" onclick="jumptoTime(1928, this.id)"><p>太嫂!你先等等呀!</p></a>
+				<a href="#00:32:11.95" id="00:32:11.95" class="lt" onclick="jumptoTime(1931, this.id)"><p>一陣人家又說你又說甚麼又成了，好!轉回來呀!</p></a>
+				<a href="#00:32:17.95" id="00:32:17.95" class="lt" onclick="jumptoTime(1937, this.id)"><p>試食!</p></a>
+				<a href="#00:32:19.95" id="00:32:19.95" class="lt" onclick="jumptoTime(1939, this.id)"><p>你想出鏡就好!很多人都想你出鏡，好!</p></a>
+				<a href="#00:32:25.95" id="00:32:25.95" class="lt" onclick="jumptoTime(1945, this.id)"><p>好味呀!</p></a>
+				<a href="#00:32:27.95" id="00:32:27.95" class="lt" onclick="jumptoTime(1947, this.id)"><p>好味呀!是嗎?</p></a>
+				<a href="#00:32:29.95" id="00:32:29.95" class="lt" onclick="jumptoTime(1949, this.id)"><p>不用宵夜!下午食都可以呀!</p></a>
+				<a href="#00:32:31.95" id="00:32:31.95" class="lt" onclick="jumptoTime(1951, this.id)"><p>又多謝Allen!多謝Allen Chan!</p></a>
+				<a href="#00:32:36.95" id="00:32:36.95" class="lt" onclick="jumptoTime(1956, this.id)"><p>你的Super Chat呀!</p></a>
+				<a href="#00:32:39.95" id="00:32:39.95" class="lt" onclick="jumptoTime(1959, this.id)"><p>喂!是否真的開會完呀?</p></a>
+				<a href="#00:32:41.95" id="00:32:41.95" class="lt" onclick="jumptoTime(1961, this.id)"><p>你叫我快點開會完?</p></a>
+				<a href="#00:32:43.95" id="00:32:43.95" class="lt" onclick="jumptoTime(1963, this.id)"><p>你是不是真的會給我800元一個月?</p></a>
+				<a href="#00:32:47.95" id="00:32:47.95" class="lt" onclick="jumptoTime(1967, this.id)"><p>說笑!說笑!說笑!</p></a>
+				<a href="#00:32:49.95" id="00:32:49.95" class="lt" onclick="jumptoTime(1969, this.id)"><p>我當然不會收這麼多呀!</p></a>
+				<a href="#00:32:51.95" id="00:32:51.95" class="lt" onclick="jumptoTime(1971, this.id)"><p>8000元呀!一年!</p></a>
+				<a href="#00:32:55.95" id="00:32:55.95" class="lt" onclick="jumptoTime(1975, this.id)"><p>No!No!No!No!</p></a>
+				<a href="#00:32:57.95" id="00:32:57.95" class="lt" onclick="jumptoTime(1977, this.id)"><p>沒有想過呀!未想呀!這些事!</p></a>
+				<a href="#00:32:59.95" id="00:32:59.95" class="lt" onclick="jumptoTime(1979, this.id)"><p>好!</p></a>
+				<a href="#00:33:1.95" id="00:33:1.95" class="lt" onclick="jumptoTime(1981, this.id)"><p>即刻食下東西先!</p></a>
+				<a href="#00:33:3.95" id="00:33:3.95" class="lt" onclick="jumptoTime(1983, this.id)"><p>Miriam!多謝Miriam!多謝Miriam T130!多謝!</p></a>
+				<a href="#00:33:13.50" id="00:33:13.50" class="lt" onclick="jumptoTime(1993, this.id)"><p>現在先吃一碗狐狸烏冬，各位!爽!不是!喝一口湯才是真!</p></a>
+				<a href="#00:33:28.41" id="00:33:28.41" class="lt" onclick="jumptoTime(2008, this.id)"><p>好舒服，如果你閉上眼睛，我真的覺得自己去了日本，好開心</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:33:38.41" id="00:33:38.41" class="lt" onclick="jumptoTime(2018, this.id)"><p>明天好好食，明天馬上試做，明天馬上試做</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:33:46.41" id="00:33:46.41" class="lt" onclick="jumptoTime(2026, this.id)"><p>如果你要試做的話，你一定要買這個湯包，我多吃兩口，我再介紹這個湯包給你認識，因為這個湯包，嗯，這個油羊好味，這個湯包，是很適合</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:34:6.41" id="00:34:6.41" class="lt" onclick="jumptoTime(2046, this.id)"><p>很適合</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:34:8.41" id="00:34:8.41" class="lt" onclick="jumptoTime(2048, this.id)"><p>你們，喜歡，很健康又不喜歡味精，這個，湯就適合你，沒有加任何，防腐劑，喂</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:34:24.41" id="00:34:24.41" class="lt" onclick="jumptoTime(2064, this.id)"><p>你拿去吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:34:26.41" id="00:34:26.41" class="lt" onclick="jumptoTime(2066, this.id)"><p>給你吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:34:28.41" id="00:34:28.41" class="lt" onclick="jumptoTime(2068, this.id)"><p>給我吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:34:30.41" id="00:34:30.41" class="lt" onclick="jumptoTime(2070, this.id)"><p>給我吃，你真是的，我多吃一口，各位，嗯，非常好吃，湯喝下去真的很舒服，真的很好，多謝Wendy Wong，多謝你的Super Stickers，在YouTube的朋友，現在我真的要介紹了，我先拿著剛才我用的包，這個有本紙的，有本書的，我怕我說錯了，YouTube的朋友看到嗎，Facebook的。</p></a>
+				<a href="#00:35:16.35" id="00:35:16.35" class="lt" onclick="jumptoTime(2116, this.id)"><p>Akomeya Tokyo，就是來自日本的一間米舖的意思，Akomeya就是一間米舖的意思，他真的先做米，做米起家的，他的日本米是來自四個地方的，來自山形、石村、長野和兵庫，他有不同的米種，大家可以去試一下，例如說說他本身是做什麼的，他有石村原產的白萬鶴，白萬鶴比較甜，口感會好一點。</p></a>
+				<a href="#00:36:6.35" id="00:36:6.35" class="lt" onclick="jumptoTime(2166, this.id)"><p>山形原的叫炎基，這個叫頂級日本米，香甜黏糯，米香濃厚，他講的，然後有一個在冰庫縣叫做，輝夜姬，輝夜姬這個味道柔和清甜，就有點不同，變冷還可以保持黏性，還有一個在長野縣叫風爽，這個米的黏度較低，很適合配一些醬汁豐富的菜式，如果大家有興趣的話，不妨按我的連結去看看，有這些米賣，好了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:36:57.16" id="00:36:57.16" class="lt" onclick="jumptoTime(2217, this.id)"><p>我正在吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:36:58.16" id="00:36:58.16" class="lt" onclick="jumptoTime(2218, this.id)"><p>太太你吃完了，我這些宵夜唯有再煮，反正我還有湯，我們先介紹這個湯包，這個高湯包，其實這個是小包裝，這裡有五袋，五個包，一袋五個包，用這個鯡魚，燒了的鯡魚做出來，我相信香港很少見到，有鯡魚做日式高湯的湯包，吃下去之後，沒有味精的感覺，是很重要的，不妨可以看看，自己看看，還有其他款式，吃了不口渴。</p></a>
+				<a href="#00:37:49.16" id="00:37:49.16" class="lt" onclick="jumptoTime(2269, this.id)"><p>最重要是這個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:37:51.16" id="00:37:51.16" class="lt" onclick="jumptoTime(2271, this.id)"><p>不會口渴</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:37:53.16" id="00:37:53.16" class="lt" onclick="jumptoTime(2273, this.id)"><p>然後有這個，吞拿魚，吞拿魚湯包，吞拿魚湯包，有人問你在哪裏買，問我在哪裏買?</p></a>
+				<a href="#00:38:4.86" id="00:38:4.86" class="lt" onclick="jumptoTime(2284, this.id)"><p>我在Facebook和Youtube的Description，已經放了連結，有興趣可以去看看，吞拿魚，當然還有，最傳統的沙甸魚，即是主乾，沙甸魚乾，有很多不同，然後亦有鰹魚，鰹魚是大包裝，鰹魚可以做很多不同的湯底，大家可以去看看，然後，這個我真的要介紹一下，這個就是野菜，甚麼是野菜?</p></a>
+				<a href="#00:38:38.86" id="00:38:38.86" class="lt" onclick="jumptoTime(2318, this.id)"><p>即是蔬菜的高湯包，你可以用來，煮菜，即是煮菜，煮菜的時候，很多時候都會用水，或者是，加些鹽就算了，我建議大家，你可以買一個，蔬菜湯包，然後剪開湯包，將粉倒入水裏，然後煮菜，好吃很多，甚至乎你可以買一包，野菜湯包粉，倒少少在你，炒的菜裏，是會好吃很多，這個，我覺得幾過癮，還有一個，很有趣的，就是雞湯。</p></a>
+				<a href="#00:39:28.86" id="00:39:28.86" class="lt" onclick="jumptoTime(2368, this.id)"><p>雞湯的Dashi，這個，可以加雲吞麵嗎?</p></a>
+				<a href="#00:39:34.86" id="00:39:34.86" class="lt" onclick="jumptoTime(2374, this.id)"><p>可以的，大家可以試一下，味道應該是很正，今天我要做一個，狐狸烏冬，所以做不到雞湯麵，大家可以試一下，有人問，可以用來做火鍋嗎?</p></a>
+				<a href="#00:39:52.86" id="00:39:52.86" class="lt" onclick="jumptoTime(2392, this.id)"><p>當然可以，喂，這裏手拿的，大家看看，很多款，有很多款，很多款，手拿不完，還有這個，極推介，很多款，很多款，為什麼今天要介紹給你呢?</p></a>
+				<a href="#00:40:18.86" id="00:40:18.86" class="lt" onclick="jumptoTime(2418, this.id)"><p>因為，有好東西給大家，當然如果你現在按下連結，你打這個Tarzan Cooks，T-A-R-Z-A-N-C-O-O-K-S，這個宣傳碼，你買這個湯包是有9折的，400元就是，你買滿400元就已經是免運費了，OK，這個是真心的，這個是好東西才介紹給你，大家真的可以去試一下，是在日本直接來的。</p></a>
+				<a href="#00:40:59.16" id="00:40:59.16" class="lt" onclick="jumptoTime(2459, this.id)"><p>這個是一個很好吃的高湯包，真的可以試一下，我覺得很好吃，剛才我們試過，我很少這樣，是不是，真的這麼賣力去分享給你，通常我真的要推銷的東西，我真的試過才告訴大家，所以請去試一下，真的試一下，你買一些試一下，是很棒的，再次提一提大家，如果你按我YouTube description，和Facebook description那裡有連結。</p></a>
+				<a href="#00:41:42.16" id="00:41:42.16" class="lt" onclick="jumptoTime(2502, this.id)"><p>你按進去，然後打一個宣傳碼，就是一個折扣優惠的代用券，你打就是TARZANCOOKS，不識算就看我YouTube Channel的名字，和Facebook Page的名字就行了，是一樣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:42:3.16" id="00:42:3.16" class="lt" onclick="jumptoTime(2523, this.id)"><p>猶陽哪裡有得賣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:42:4.16" id="00:42:4.16" class="lt" onclick="jumptoTime(2524, this.id)"><p>猶陽Donki都有得賣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:42:7.16" id="00:42:7.16" class="lt" onclick="jumptoTime(2527, this.id)"><p>其實有些大的，Taste都有得賣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:42:11.16" id="00:42:11.16" class="lt" onclick="jumptoTime(2531, this.id)"><p>Taste都有得賣，超級市場都有得賣，大家可以隨便看看，但是這個湯底，暫時只有我們那條連結有得賣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:42:21.16" id="00:42:21.16" class="lt" onclick="jumptoTime(2541, this.id)"><p>那條連結都可能有猶陽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:42:23.16" id="00:42:23.16" class="lt" onclick="jumptoTime(2543, this.id)"><p>你自己看看，這個湯底就是一間米店，Akomeya，Akomeya這個日本的湯包，現在在那個連結才有得賣，大家不妨上去看看，打那個TARZANCOOKS的宣傳碼，有9折，直至到4月30日，慢慢看不用急，今晚可以試試看，然後你想買多少，跟朋友一起買，因為一次過運就比較划算，OK?</p></a>
+				<a href="#00:43:3.49" id="00:43:3.49" class="lt" onclick="jumptoTime(2583, this.id)"><p>今晚的直播到此為止，我不用說太多，因為好東西自然會賣給你，你不試，只是你的損失，這是真心說話，不是硬賣，我就覺得非常好吃，OK?就是這麼多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:43:21.65" id="00:43:21.65" class="lt" onclick="jumptoTime(2601, this.id)"><p>這樣，我的飲料在哪裏?</p></a>
+				<a href="#00:43:25.65" id="00:43:25.65" class="lt" onclick="jumptoTime(2605, this.id)"><p>你的飲料都吃光了，我知道</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:43:29.25" id="00:43:29.25" class="lt" onclick="jumptoTime(2609, this.id)"><p>又要再煮，湯喝完 四百元節前還是節後?</p></a>
+				<a href="#00:43:34.05" id="00:43:34.05" class="lt" onclick="jumptoTime(2614, this.id)"><p>應該是你節後，要滿四百元才行，應該是這樣，我想說湯都喝完了，我記得是，大家查一查，好不好? 湯都喝完了，OK 今天我的直播就做完了，YouTube直播也做完了，Facebook直播也做完了，大家都差不多累了要睡覺了，但我絕對建議大家可以試一試，狐狸烏冬 狐狸烏冬，多謝大家的收看，亦多謝YouTube。</p></a>
+				<a href="#00:44:11.01" id="00:44:11.01" class="lt" onclick="jumptoTime(2651, this.id)"><p>你們各位跟我一起玩Super Chat，和Super Stickers的朋友們，多謝Facebook的朋友們，每個星期你們都跟了我很久，多謝你，Thank you so much，每一晚星期五晚，都一起在這裡太上宵夜，最後都要一個真的賣廣告，記住訂閱我的YouTube Channel，還有Like和Follow我的Facebook Page。</p></a>
+				<a href="#00:44:37.01" id="00:44:37.01" class="lt" onclick="jumptoTime(2677, this.id)"><p>多謝大家，記住點擊連結進去，看看這個日式高湯包，OK?</p></a>
+				<a href="#00:44:43.41" id="00:44:43.41" class="lt" onclick="jumptoTime(2683, this.id)"><p>乖了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:44:44.09" id="00:44:44.09" class="lt" onclick="jumptoTime(2684, this.id)"><p>還有Sticker</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:44:45.05" id="00:44:45.05" class="lt" onclick="jumptoTime(2685, this.id)"><p>睡覺了，知不知道?</p></a>
+				<a href="#00:44:47.01" id="00:44:47.01" class="lt" onclick="jumptoTime(2687, this.id)"><p>好了我和Facebook的朋友說再見，拜拜各位Facebook，拜拜，Happy Weekend，Happy Friday，YouTube的朋友，再見</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:44:57.21" id="00:44:57.21" class="lt" onclick="jumptoTime(2697, this.id)"><p>還有Happy Friday。</p></a>
+</div>
+	</body>
+</html>

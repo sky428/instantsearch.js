@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[嘴巴去旅行] 西班牙薯仔流心蛋 Huevos Rotos ("Broken Egg")</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wHfZ3Erq9vY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[嘴巴去旅行] 西班牙薯仔流心蛋 Huevos Rotos ("Broken Egg")</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎大家嚟到泰山自煮，今日要教大家做tapas，知唔知咩叫tapas呢?</p></a>
+				<a href="#00:00:6.60" id="00:00:6.60" class="lt" onclick="jumptoTime(6, this.id)"><p>TAPAS，就係西班牙嘅小菜，而所謂嘅小菜就唔好你印象之中，中國人嘅小菜嘩咁樣大碟，佢哋嘅tapas真係好細碟，但係我哋今日就整一個大嘅portion，因為我哋用一個中國人嘅諗法去做，如果你真係要做其實你係要做細啲，不過anyway我哋做大啲，大家可以分離食，今日要教大家做嘅一個tapas就係叫做，Huevos Rotos。</p></a>
+				<a href="#00:00:37.48" id="00:00:37.48" class="lt" onclick="jumptoTime(37, this.id)"><p>我讀錯咗 再比多一次，Huevos Rotos，識西班牙文嗰啲唔好笑我，直譯就係碎雞蛋，即係其實係流心蛋，再加啲薯仔再加啲肉類，西班牙人通常都會放爛肉腸，但係我哋今日就會放prosciutto，意大利火腿，好 即刻開始，我手上就係prosciutto，好薄嘅意大利風乾火腿，我哋要做啲乜嘢。</p></a>
+				<a href="#00:01:8.52" id="00:01:8.52" class="lt" onclick="jumptoTime(68, this.id)"><p>我哋首先就係想煎脆佢，好似煎bacon咁樣，今次破天荒，我落橄欖油煮嘢，因為要跟返西班牙嘅風味，所以落啲橄欖油煮，火已經熱咗一陣，我哋放落去，基本上我哋就係想煎脆佢，我哋就用中火去做呢件事，煎脆佢都需要少少時間，但係佢哋咁薄都唔會話太耐，大概我諗3至5分鐘，我哋等一等佢，好快就已經煎完。</p></a>
+				<a href="#00:01:47.04" id="00:01:47.04" class="lt" onclick="jumptoTime(107, this.id)"><p>你見到一塊好薄嘅prosciutto，已經畀我哋煎到乾咗，等佢吹乾一陣佢就會脆，就係咁樣 凍一陣，跟住我哋要做啲咩，我哋要做啲切切剁剁嘅嘢，Hoyle's Rotto嘅主要材料都係，薯仔同埋雞蛋，我哋而家搞搞薯仔先，你見到有兩款薯仔，有一個我已經批皮，都係啲新薯仔，另一個我哋就要切一切佢。</p></a>
+				<a href="#00:02:18.76" id="00:02:18.76" class="lt" onclick="jumptoTime(138, this.id)"><p>我哋唔可以切太大嚿，咁我哋要切細嚿啲，因為我哋會直接攞上去煮，因為太大塊 他們很難煮熟，然後我將它放入水中，切好薯仔之後 我們就切洋蔥，洋蔥不用太多，我們先切頭 不要了，你可能會問，為什麼你的洋蔥旁邊沒有這麼有趣呢，我可以解釋給你聽，因為太嫂 我老婆很喜歡吃洋蔥，但她永遠都不能吃整個洋蔥，她經常將洋蔥旁邊的一半削一削。</p></a>
+				<a href="#00:03:1.52" id="00:03:1.52" class="lt" onclick="jumptoTime(181, this.id)"><p>就給自己用，剩下的就這樣，我經常都要用醜陋的洋蔥，不是不能吃，不過我經常覺得好像很醜陋，不過這次第一次給大家看看，我家的生活狀況是如何，我們現在就將它切絲，記得切完洋蔥之後 都要將它拆散，因為如果不拆散洋蔥，煮的時候 它一定會黏在一起，要記緊這一點，好 放到碟子上，洋蔥完成了，最後一樣。</p></a>
+				<a href="#00:03:34.96" id="00:03:34.96" class="lt" onclick="jumptoTime(214, this.id)"><p>你自己要做的就是蒜蓉，不用給大家看了，自己去磨蒜蓉，我有一個刨去刨，磨完就是這樣，切切剁剁的東西已經完成了，我們可以開始煮了，先把煎鍋加熱，然後加橄欖油，這次用西班牙風味，然後就加薯仔，用中火，然後就要將薯仔煎一會，煎到它變成金黃色，我們才繼續做其他步驟，煎了大約五分鐘之後，你會看到它變成金黃色。</p></a>
+				<a href="#00:04:16.36" id="00:04:16.36" class="lt" onclick="jumptoTime(256, this.id)"><p>然後就要加調味料，有巴西里香粉，紅燈籠椒粉，鹽，黑胡椒，然後就要拌一拌，其實薯仔還沒有熟透，我們就要加一點熱水，再煮一煮，就預備你的煲蓋，就加一點點，蓋上蓋子，有點像煎餃子的做法，你大概煮三分鐘，直至水變乾為止，好!先看看，嘩!正呀!</p></a>
+				<a href="#00:04:51.36" id="00:04:51.36" class="lt" onclick="jumptoTime(291, this.id)"><p>水除了會幫你煮熟，還可以幫你煮乾，除了煮薯仔，還會幫你清洗鍋子，還有一件事要提醒你，薯仔乾了水之後，很容易黏底，如果你任由它，太太說三分鐘就任由它，但你也要留意火候，因為如果不留意的話，一乾了，黏底就很麻煩，趁它還有少許油，我們就放洋蔥下去，仍然保持中火，拌勻洋蔥後，就可以放蒜蓉，如果你怕拌不均勻。</p></a>
+				<a href="#00:05:34.60" id="00:05:34.60" class="lt" onclick="jumptoTime(334, this.id)"><p>可以在每個地方放一點，再煮一煮，如果你覺得乾的話，可以加少許橄欖油，來到這個時候，我們要放雞蛋，放雞蛋也有少許步驟，首先我們做一件事，先關掉小火，這個時候，整個廚房都會有很香的蒜頭味，很棒，然後我們要做甚麼呢，我們要在一些位置做一個洞，我發現只有三個洞，可以放一隻蛋，我們先打一隻蛋，千萬不要打爛蛋黃。</p></a>
+				<a href="#00:06:11.84" id="00:06:11.84" class="lt" onclick="jumptoTime(371, this.id)"><p>然後放在你攪拌的洞，一隻，你看我拿四隻來，我怕有一隻打爛蛋黃，好，兩隻，三隻，然後我們就蓋上蓋子，中慢火，很小的，我們就嘗試將蛋白焗熟，蛋黃要令到它流心蛋，即不是太熟，因為其實這個菜最棒，就是將蛋黃拌薯仔一起吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.52" id="00:06:41.52" class="lt" onclick="jumptoTime(401, this.id)"><p>Yeah，好，Colin見人，嘩，正呀，然後我們要做甚麼呢，記得我們在最開始煎脆了的意大利火腿，這個Prosciutto，現在我們要做甚麼呢，我們要撒上去，嘩，好開心，然後剩下一些，我當然要煮鴨了，時間剛剛好，可以吃晚飯了，今天這個西班牙菜，我們要試一下，我喜歡加多一點點黑椒，那個火腿其實是鹹的，所以我們就不會加鹽。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:30.93" id="00:07:30.93" class="lt" onclick="jumptoTime(450, this.id)"><p>來了，我的天</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:36.69" id="00:07:36.69" class="lt" onclick="jumptoTime(456, this.id)"><p>嗯，非常好，哇，非常好，嗯，哦，哈哈哈，記得訂閱我的YouTube頻道</p></a>
+				<a href="#00:07:46.93" id="00:07:46.93" class="lt" onclick="jumptoTime(466, this.id)"><p>還有追蹤我的Facebook專頁，最好就是點讚，好吃到沒話說，哦，耶，繼續，哇，正，哇，真的很好吃，嗯。</p></a>
+</div>
+	</body>
+</html>

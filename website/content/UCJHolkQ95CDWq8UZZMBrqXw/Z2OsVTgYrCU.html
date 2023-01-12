@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[撈飯之選] 韓國大醬湯 Doenjang Jjigae ( Korean Soy Bean Paste Stew )</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Z2OsVTgYrCU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[撈飯之選] 韓國大醬湯 Doenjang Jjigae ( Korean Soy Bean Paste Stew )</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>歡迎大家嚟到泰山自煮呀，今日呢我要教大家呢做一個韓國家庭嘅家常小菜呀，叫做乜嘢名呢就叫做 Doenjang Jjigae，識韓文嘅朋友唔好笑我，咁其實中文係咩呢中文呢佢哋叫做大醬湯，咁呀呢一個呢基本上呢每一個韓國家庭呢都應該識得整㗎，因為呢一個真係佢哋係成日都會食嘅，咁但係版本方面呢每一個屋企都唔同㗎喎。</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>咁有啲呢就會放海鮮啦有啲就放齋即係豆腐呀菇呀，有啲就放豬肉呀有啲呢就放呢一個牛肉呀咁樣，咁而今日呢我哋做嘅大醬湯版本呢就係放豬肉嘅仲要係放五花腩添，好食呀即刻嚟啦，其實呢一個大醬湯呢係好快就搞掂㗎啦因為呢嗰啲材料係簡單嘅，咁呀切切剁剁嘅時間呢都唔係太多㗎咋咁所以呢好適合呢就係又係嗰啲放工返嚟呀或者你好趕住食一餐飯呀，咁你做咗呢一個湯出嚟之後呢咁就可以跟埋碗白飯超正嘅。</p></a>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>而今日呢我哋做呢一個份量呢係可以畀一至兩個人嘅，好我哋即刻嚟啦首先我哋就要搞搞個蘿蔔先嘩你見到呢個蘿蔔你睇下嘩係好大粒喎ok，咁呢個蘿蔔呢就係韓國蘿蔔嚟嘅，好啦咁我哋呢就要切一切佢啦咁我哋呢切片啦唔使太厚啦，因為呢我哋想快啲煮熟佢咁所以呢我哋唔好切得太厚呀咁就ok㗎啦，好搞掂跟住切洋蔥喇喎洋蔥呢我哋唔使要曬成個嘅我哋要一半就得㗎啦。</p></a>
+				<a href="#00:01:48.00" id="00:01:48.00" class="lt" onclick="jumptoTime(108, this.id)"><p>如果你想再切多半呢個洋蔥就會好細㗎啦吓ok，咁我呢就鍾意見到同埋食到洋蔥於是乎呢我就就咁就算啦，切四刀咪得啦，唔係四刀添喎我唔識數喎三刀咋喎原來係四份三刀，唔係四份三刀呀切開咗四份我只係用咗三刀啫，我啲數學真係差呀，好咁呀洋蔥呢每一次記住呀我哋切完咗啲洋蔥之後一定要呢將佢拔開因為呢如果你唔拔開嘅話呢佢煮嗰陣時呢就會黐埋一齊㗎啦，好咁我哋呢就要將佢呢拔開啦。</p></a>
+				<a href="#00:02:29.95" id="00:02:29.95" class="lt" onclick="jumptoTime(149, this.id)"><p>好 搞掂，跟住我哋切下啲京蔥，京蔥我哋切開咗半之後，我哋可以咁樣切片，跟住最好就浸一浸啲京蔥先，因為佢哋較為污糟，所以浸一浸水，要用嗰陣時先至攞走哂啲水，跟住先落去煮，繼續切嘢，我哋而家就係切脆肉瓜，我哋就唔要哂成個，因為實在太大個啦，我哋要咁多啫，好 你唔要，跟住同樣地啦，切片啦。</p></a>
+				<a href="#00:03:2.19" id="00:03:2.19" class="lt" onclick="jumptoTime(182, this.id)"><p>搭番齊整佢之後，我哋呢就切一半，Boom 就係咁啦，如果你想細啲嘅呢，其實呢你可以再切多一刀咁樣嘅，其實咁樣係好啲嘅，因為你又可以快啲熟啦，跟住呢你食嗰陣時呢，又冇咁大嚿囉可以，即係有陣時呢你切字下呢，就會諗到一啲應該做嘅嘢，咁煮餸就係咁樣，一路做就一路學㗎嘛係咪先，就係咁。</p></a>
+				<a href="#00:03:28.19" id="00:03:28.19" class="lt" onclick="jumptoTime(208, this.id)"><p>好 搞掂，跟住切一切啲蔥啦，咁蔥呢我哋就將佢打斜切嘅，咁點解打斜切呢，因為呢呢個係會淋喺個面度，咁打斜切呢就會靚仔啲啦，係咁囉，Ok，好啦 咁跟住呢我哋就切呢一個五花腩啦，嘩 幾靚，嗱 咁畀少少Tips畀大家啦，咁通常呢我哋喺街市買嘅五花腩呢，佢哋都係室溫啦，咁買到返嚟呢就一坨嘢好似我咁樣，咁樣呢如果你真係想佢容易切啲嘅。</p></a>
+				<a href="#00:04:5.19" id="00:04:5.19" class="lt" onclick="jumptoTime(245, this.id)"><p>唔會切到歪歪斜斜嘅話呢，你就將個五花腩放落冰格嗰度，咁就大概半個鐘頭就夠㗎啦，擺咗落去之後呢，咁佢一陣呢就會易切好多㗎囉，Ok，好 咁呢個放咗一陣㗎啦，咁我哋而家切片啦，我哋又唔使切咁厚啦，嗱 硬咗之後呢，就易切好多啦，好，Ok，有人可能會問，咦 你呢舊肉係咪出水先會好啲呢，其實呢。</p></a>
+				<a href="#00:04:34.09" id="00:04:34.09" class="lt" onclick="jumptoTime(274, this.id)"><p>呢一個有少少係唔同國家唔同嘅做法啦，中國人做呢，通常都會出水先嘅，咁但係外國人做呢，就咁即刻煎㗎，嗱 韓國人呢，都係就咁即刻煎嘅，咁你話係唔係好大分別呢咁樣，其實就唔係好大分別嘅啫，咁我覺得呢，咪跟吓人哋做囉，人哋咁多年歷史，都未有人有事，咁我哋咪...</p></a>
+				<a href="#00:04:57.74" id="00:04:57.74" class="lt" onclick="jumptoTime(297, this.id)"><p>都係咁試下嚟做囉，咁當然 你話唔得呀 我個心呢，我唔安樂呀 唔出水咁樣，冇問題，你出咗水之後去做呢 都得嘅，不過 我可以話畀你聽呢，即刻煎嘅話呢 佢就有嗰種，窿窿地嘅味道 其實係會香啲嘅，好啦 咁跟住呢 我哋就要預備一啲菇類囉喎，我就預備咗一啲杏鮑菇，不過呢就係迷你版本嘅，咁你自己鍾意落啲咩菇都得。</p></a>
+				<a href="#00:05:23.18" id="00:05:23.18" class="lt" onclick="jumptoTime(323, this.id)"><p>咁通常呢 會落一啲新鮮嘅冬菇啦，或者係我而家用緊嘅杏鮑菇，咁如果你話想用雞髀菇 咁樣得唔得呢，都冇問題嘅 OK，然後 預備一啲蒜蓉 OK，咁你自己去磨啦，跟住呢 呢一個呢，就真係要同大家介紹下啦，你估下呢一個係乜嘢嚟嘅，其實如果你係煮飯嘅話呢，你係日日呢 都會見到嘅，點解 因為呢一個呢。</p></a>
+				<a href="#00:05:52.44" id="00:05:52.44" class="lt" onclick="jumptoTime(352, this.id)"><p>係洗米水，嗱 點解我哋會儲埋啲洗米水呢，因為原來韓國人呢，佢係會將呢啲洗米水呢，攞去一齊煮佢呢一個大醬湯㗎喎，點解佢哋會咁樣做呢，因為呢 佢想將嗰個湯呢，嗰個稠度增加，咁呢 飲落去呢 就會有啲質感啦，同埋 嗰個湯呢，係會甜少少嘅，有啲米香味 米甜味 OK，咁嗱 呢一個洗米水呢，就係第一次洗完嘅洗米水呢。</p></a>
+				<a href="#00:06:23.60" id="00:06:23.60" class="lt" onclick="jumptoTime(383, this.id)"><p>我就已經留咗喺度㗎啦，咁所以 點解佢哋話呢一個大醬湯配飯最好呢，因為呢 最慳價，連洗米水都用埋，非常之好嘅煮食小tips，大家要記住啦，好啦 咁切切剁剁呀，洗洗抹抹嘅嘢呢 都已經係搞掂啦，煮嘢啦喂，好啦 咁開始煮嘢啦喎，咁搵咗一個煲呢，就係用嚟上埋菜㗎，咁一個鍋搞掂哂，非常方便㗎 OK。</p></a>
+				<a href="#00:06:52.72" id="00:06:52.72" class="lt" onclick="jumptoTime(412, this.id)"><p>好 嚟啦喎，開咗個火先，跟住呢 我哋就會將個五花腩呢，就擺上去啦，我哋唔使等嗰個鍋呢熱嘅，我哋呢 就咁擺上去，事關呢 我想啲油呢慢慢逼出嚟呀，咁樣呢 你一陣去煮嗰陣時，就會有啲豬油嘅香味，而唔係呢 個鍋好熱啦，咁你一放啲五花腩落去呢，咁佢跟住呢 就煎咗佢啦，咁我哋咁樣做法呢，嗰啲油就可以慢慢地逼出嚟啦。</p></a>
+				<a href="#00:07:20.12" id="00:07:20.12" class="lt" onclick="jumptoTime(440, this.id)"><p>咁我哋用呢一個中大火去做呢件事啦，到咁上下 你咪反吓佢囉，你見到啲油就出咗嚟，其實就唔會黐嘅 非常之正，你反吓佢 繼續喺第二邊再擠啲油出嚟，正呀，好啦 煎咗大概兩至三分鐘，我哋會見到啲油都出咗啲，你見到啲豬肉都有少少啡色，我哋唔係要煮到佢全啡，我哋少少爆香之後，我哋就攞返佢出嚟先，淨返啲豬油喺度。</p></a>
+				<a href="#00:07:57.94" id="00:07:57.94" class="lt" onclick="jumptoTime(477, this.id)"><p>跟住我哋就搵韓國嘅麵豉醬，就落去，正，我哋要爆一爆香佢，我哋可以轉一轉細火，跟住落少少洋蔥，爆香佢啲咁多，跟住我哋落少少米水，調大少少個火，然後就撈一撈佢先，跟住做嘅嘢基本上就係放嘢入去，我哋放啲大蔥 白蘿蔔，再放返你啲豬肉，然後再倒你啲米水，跟住蓋蓋留返一條縫，然後我哋大概就係中慢火去煮佢十分鐘，咁而家等佢煮吓先。</p></a>
+				<a href="#00:08:48.30" id="00:08:48.30" class="lt" onclick="jumptoTime(528, this.id)"><p>搞咗十分鐘，我哋睇一睇 其實已經好香，正，呢個時候我哋搖一搖佢先，Very nice，然後我哋搞一搞細火先，因為我哋要落嘢，所以我唔想大家太熱嘅時候整親大家，如果你熟手嘅話，你係唔需要搞細火，我哋落蒜蓉，搞一搞佢，而家先落少少白砂糖，跟住我哋落脆肉瓜，菇，較返大少少個火，中火，然後我哋就唔使蓋蓋。</p></a>
+				<a href="#00:09:25.34" id="00:09:25.34" class="lt" onclick="jumptoTime(565, this.id)"><p>用中火就煮佢大概三分鐘，咁就就嚟Ready，如果你想嘅話，你都可以加多少少豆腐落去，煮咗三分鐘之後，我就決定加埋我啲豆腐落去，Yeah，然後推一推佢，其實呢個鍋都真係好飽，唔好講笑，然後較細火，少少麻油，跟住呢，加少少米醋落去，成件事係即刻唔同曬，醒神好多，嘩嘩嘩，有冇咁滾呀，落啲米醋。</p></a>
+				<a href="#00:09:59.66" id="00:09:59.66" class="lt" onclick="jumptoTime(599, this.id)"><p>係呢個時候你要諗一諗，我呢度有啲韓國辣椒粉，我冇落到去，點解呢，就因為我啲小朋友唔食，但係如果你想嘅話，你而家就可以省少少喺面，跟住我哋再放埋，頭先切過嘅蔥，同埋你預備咗有啲辣椒絲喺度都ok，可以唔需要嘅，不過我覺得有啲紅色好似靚啲咁樣，撒埋落去，搞掂㗎啦，吃嘢，吃飯啦!</p></a>
+				<a href="#00:10:38.86" id="00:10:38.86" class="lt" onclick="jumptoTime(638, this.id)"><p>嘩!這個真的要拌飯吃，韓國人就是這樣，加少少，然後，正喔!</p></a>
+				<a href="#00:10:50.18" id="00:10:50.18" class="lt" onclick="jumptoTime(650, this.id)"><p>嘩!</p></a>
+				<a href="#00:10:52.18" id="00:10:52.18" class="lt" onclick="jumptoTime(652, this.id)"><p>嗯!</p></a>
+				<a href="#00:11:4.73" id="00:11:4.73" class="lt" onclick="jumptoTime(664, this.id)"><p>超辣的!</p></a>
+				<a href="#00:11:6.73" id="00:11:6.73" class="lt" onclick="jumptoTime(666, this.id)"><p>好味道!</p></a>
+				<a href="#00:11:8.73" id="00:11:8.73" class="lt" onclick="jumptoTime(668, this.id)"><p>超好吃!</p></a>
+				<a href="#00:11:10.73" id="00:11:10.73" class="lt" onclick="jumptoTime(670, this.id)"><p>超開胃!</p></a>
+				<a href="#00:11:12.73" id="00:11:12.73" class="lt" onclick="jumptoTime(672, this.id)"><p>這個真的太好吃了!</p></a>
+				<a href="#00:11:14.73" id="00:11:14.73" class="lt" onclick="jumptoTime(674, this.id)"><p>你想不到煮什麼，這個絕對可以帶到袋子裡的!</p></a>
+				<a href="#00:11:18.73" id="00:11:18.73" class="lt" onclick="jumptoTime(678, this.id)"><p>這樣就一餐了!</p></a>
+				<a href="#00:11:20.73" id="00:11:20.73" class="lt" onclick="jumptoTime(680, this.id)"><p>記得訂閱我的YouTube頻道，還有Follow我的Facebook Page!</p></a>
+				<a href="#00:11:25.73" id="00:11:25.73" class="lt" onclick="jumptoTime(685, this.id)"><p>最好就按讚!謝謝!</p></a>
+				<a href="#00:11:27.73" id="00:11:27.73" class="lt" onclick="jumptoTime(687, this.id)"><p>吃飯了!</p></a>
+</div>
+	</body>
+</html>

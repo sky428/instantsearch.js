@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tomahawk Steak Part 2 (又係斧頭扒) 精華版</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'B0P6WpvorlQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Tomahawk Steak Part 2 (又係斧頭扒) 精華版</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，今天我們又來做斧頭扒，這次我們做一件3寸厚的，大約3磅左右，希望這次做Medium，因為有些朋友希望做熟一點，這次我們來看看如何做，首先把扒解凍，通常會放在冰箱冷藏一至兩天，讓它慢慢融化，然後在室溫準備上醃料，醃料不外乎是鹽，胡椒，和一些巴西里香，甚至乎想加些香料也沒問題。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.26" id="00:00:55.26" class="lt" onclick="jumptoTime(55, this.id)"><p>這個步驟最重要是把肉塗上醃料，均勻地塗上醃料就OK了，塗好醃料後，放室溫2小時，然後我會把蒜頭和新鮮的玫瑰花放入盤子，準備入爐，然後把肉放入扒，目標溫度是125度華氏，因為我們想做一個中等的烤焗，烤焗爐預熱至225度華氏，如果可以的話就把整件扒放進去，這個低溫煮法是希望肉汁，不要流失得太快。</p></a>
+				<a href="#00:01:57.26" id="00:01:57.26" class="lt" onclick="jumptoTime(117, this.id)"><p>所以用這個溫度大概烤焗90分鐘左右，應該差不多到125度華氏，接下來就是最重要，最重要的步驟，休息，我希望肉汁會更好，所以就鋪了一塊錫紙在上面，再烤30分鐘，接著就煎脆面，處理面時，我把脂肪切出來用來起鍋，最緊要燒紅鍋，燒紅鍋就可以把面放入鍋內，第一步先把脂肪煎香，讓脂肪出油，讓面更香脆，煎完邊位後就可以煎扒面。</p></a>
+				<a href="#00:03:10.51" id="00:03:10.51" class="lt" onclick="jumptoTime(190, this.id)"><p>我希望可以煎得熟一點，大概煎2分鐘左右，我用了坑紋鑊，希望可以做得好一點，然後加入牛油，蒜頭和玫瑰花，將油塗上扒面，讓它再上味，更香脆，煎的工夫會一直出煙，令到煙霧瀰漫，所以最好開行抽油煙機，抽氣扇，否則煙霧瀰漫，其他扒面也要煎，毛球也要煎脆，差不多可以上菜了，準備上菜。</p></a>
+				<a href="#00:04:47.26" id="00:04:47.26" class="lt" onclick="jumptoTime(287, this.id)"><p>整食整水，我都擺埋啲車厘茄，蒜頭，擺埋喺隻碟上面啦，咁呀務求畀大家可以打卡用，好好睇睇咁呀嘛，咁打卡嘅時間其實亦都係畀劍柏再rest多少少時間啦，可能大概五至十分鐘到，咁其實呢就可以切㗎啦，首先嚟講我會第一件事呢將支骨呢起咗出嚟先，咁劍柏就好切好多，同埋一睇呢就見到啦，出嚟嘅效果係medium。</p></a>
+				<a href="#00:05:26.42" id="00:05:26.42" class="lt" onclick="jumptoTime(326, this.id)"><p>達到我哋嘅要求呀，咁跟住我會將啲肥膏切走先，一陣間再搞，咁就開始慢慢切開啲肉啦，咁大家可以睇下啲肉，嗰個，顏色睇下合唔合心意啦，這塊牛扒我們休息的時間足夠，所以做到很粉嫩，中等度，肉汁不會逼出來，其實這是休息的效果，最重要千萬不要心急，讓肉汁回到牛扒，外面脆，內裡多汁，似乎生熟程度都好滿意。</p></a>
+				<a href="#00:06:35.83" id="00:06:35.83" class="lt" onclick="jumptoTime(395, this.id)"><p>講多句啦，其實頭先開始嘅時間起咗個骨之後呢，有啲肥膏嗰度切咗出嚟呢，其實都可以用番頭先隻鑊呢，落去再煎一煎佢，等佢再香口啲，咁嗰啲黐骨嘅肉呀，同埋啲肥膏呢，煎完之後呢就更加香口更加好味嘅，好啦，今次為大家準備嘅斧頭扒呢就差唔多啦，希望大家鍾意我介紹啦，如果啱睇嘅話，希望大家Like and Subscribe。</p></a>
+				<a href="#00:07:7.83" id="00:07:7.83" class="lt" onclick="jumptoTime(427, this.id)"><p>同埋撳埋個鐘仔呀，我哋下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

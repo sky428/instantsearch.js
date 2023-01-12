@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 煙肉黑椒炒椰菜仔</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'u9QIR5uScbY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 煙肉黑椒炒椰菜仔</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.77" id="00:00:3.77" class="lt" onclick="jumptoTime(3, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好又係我星星同大家職人吹水，大家好咁我真係好開心呀咁我早兩日，落去買啲椰菜仔，周圍都冇，咁我終於就炒咗個西蘭花苗呀咁我唔知邊條片出先啦，咁樣跟住就去到啲超市呀超市就一定有呀呢類嘅嘢菜仔呀，即係急凍包裝嘅咁又唔係好靚仔咁我冇買，今日呢唔想買呢落到街市呀第一檔就見到有呢類型嘅椰菜仔買。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:53.43" id="00:00:53.43" class="lt" onclick="jumptoTime(53, this.id)"><p>新鮮椰菜仔呀，林近聲單前呢就真係相當之多㗎，咁我哋做聖誕大餐呢，就一定會有嘅呢啲嘢菜仔，做伴菜呀嘛，燒火雞一定會有少少呀，今日，都係做一個西式，蒜蓉煙肉炒，咁好多網友都會問呀咁呢啲椰菜仔一定係炒西式㗎喎未必㗎喎，炒中式都好食喎中式係咩炒呀，炒臘味呀，臘味炒椰菜仔呀，泰式都得㗎喎，泰式椰菜仔呀。</p></a>
+				<a href="#00:01:41.05" id="00:01:41.05" class="lt" onclick="jumptoTime(101, this.id)"><p>買咗一斤呀買咗一斤返嚟咁我哋就，乜嘢都唔好你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:47.19" id="00:01:47.19" class="lt" onclick="jumptoTime(107, this.id)"><p>我哋搵水浸佢啫，浸一浸佢浸佢30分鐘，我哋，買嗰啲中式菜呀中式烹調呀咁我哋啲菜一定要浸㗎，如果大家喺超市買到嗰啲一袋袋包裝嗰啲，唔使浸喎嗰啲即刻都食得㗎喎，嗰啲你成袋擺喺微波爐丁一丁佢得呀呢啲呀，下次一個畀大家睇下，你哋呢，你哋咁㗎喎，啲嘢參與，咁今次都係相當之簡單呀咁我哋攞四條煙肉出嚟呀咁我哋就切到好似手指咁上下粗，大都唔使出呀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:31.49" id="00:02:31.49" class="lt" onclick="jumptoTime(151, this.id)"><p>出埋都仔嘅最開心㗎喇，點解呀，證明出啲嘢輕便啲呀嘛，咁準備咗之後咪擺喺後面呀咁而家我又有，我啲乾蔥，嗰啲蒜出嚟就改曬佢，一定要有㗎，炒呢個，蒜蓉乾蔥，鍾意搭少少洋蔥內仲正呀我而家睇下個雪櫃有冇洋蔥呀，呢啲就，開曬佢，摸曬之後，咁我雪櫃又畀我插咗半個洋蔥㗎喇，沖一沖水咪攞返曬出嚟啦，咁有時喺屋企整嘢。</p></a>
+				<a href="#00:03:25.50" id="00:03:25.50" class="lt" onclick="jumptoTime(205, this.id)"><p>放慢心情囉慢慢整，徒夜下嘛，咁我往年，有嘢做緊嗰陣時就唔會咁休閒㗎喇咁大家有時睇返我，之前呀嗰啲我收工返嚟趕煲湯呀嗰啲呀，咁樣唔得閒有唔得閒嘅做法，得閒有得閒嘅做法啦班條煮食，各有各樂趣，好得意喎，有啲幾年前都唔得閒去到而家都唔得閒㗎喎日日口都唔得閒㗎喎唔知點解呀，你又切曬先。</p></a>
+				<a href="#00:04:5.68" id="00:04:5.68" class="lt" onclick="jumptoTime(245, this.id)"><p>我哋又全部呀切曬蒜片咁得啦，用呢啲刀仔就靈活啲啦，真係好少用呀我多數用啲大刀呀，呢啲呀用一個拉刀咁ok呀，我又鍾意炒蒜片嘅，如果鍾意食呀落多啲都仲好呀，咁我哋都係設施，咁樣切曬咁我好奇呀，低角度再次返轉頭啦，咁咪易撞黑呀，呢啲設有啲基本功嚟㗎嘛，咁材料預備好曬之後呢嗰啲野菜仔係浸咗約十零二十分鐘呀，我哋清洗兩三次。</p></a>
+				<a href="#00:04:53.82" id="00:04:53.82" class="lt" onclick="jumptoTime(293, this.id)"><p>洗咗三次之後我哋就將佢停一停水呀咁我哋就快速進入，進入下一步喇喎，咁我哋開火，煲滾啲水先，咁水滾咗之後呀我哋放返藥半個茶食都係嫌內呀，咁我哋又將啲椰菜仔啦我哋擺曬落去，我哋出去三分鐘，咁期間我哋都放返少少油落去我哋呢叫做油鹽水呀，打嗰啲菜佢，我等佢啲色澤更加好啲啦，我做呢個椰菜仔都係相對方便嘅。</p></a>
+				<a href="#00:05:46.43" id="00:05:46.43" class="lt" onclick="jumptoTime(346, this.id)"><p>特別係對外國有啲網友呀呢個椰菜仔又一定唔會陌生，咁做呢個椰菜仔係我自己對聖誕餐一種，情懷呀因為我之前做個燒雞呀做其他，都有講過，即係自己喺出面以前食聖誕大餐呀，今年就應該食唔到聖誕大餐㗎啦，仲有一個禮拜到我過年呀，過聖誕呀咁樣呀，兩分零鐘嘅我哋咪攞粒，咁咪年一年女啦，咁我中間有少少炮呀林新呀咁其實都差唔多因為你仲要回鑊炒㗎嘛而家都未去先。</p></a>
+				<a href="#00:06:37.37" id="00:06:37.37" class="lt" onclick="jumptoTime(397, this.id)"><p>熱水之後你咪停一停水呀，跟住我哋又，進入下一步喇喎可以鑊出嚟，開火，我哋燒熱佢先，咁隻鑊微微有煙囪，咁你又擺埋啲煙肉落去，我哋用個慢慢火呀煎一煎啲煙肉，等佢油份釋出，咁而家落去呀，30秒囉呀，我唔使畀油㗎，慢慢火煎佢嗰啲煙肉，煙肉微微焦香，咁我哋畀返個大火去，咁咩時間呀，我又放埋啲洋蔥，炒炒炒香佢先。</p></a>
+				<a href="#00:07:32.75" id="00:07:32.75" class="lt" onclick="jumptoTime(452, this.id)"><p>即係脆嗰啲煙肉呀，都係要軟軟地嘅，大家唔好以為有啲窿呀或者呢啲好嘢呀，鑽頭呢唔見曬呀，香味呀咁我落埋啲乾蔥呀蒜片落去咁我再炒咗兩三下，保持住個大火炒佢幾下務求，煙肉蒜片洋蔥嘅香味呀逼一逼入啲嘢，我哋喺鑊邊嗰度，灑少少水落去，進一步呀將所有，香味呀逼一逼埋個椰菜仔裏面呀話你成粒茶呀，呢邊呢就會比較會實少少嘅如果大家想食林啲嘅呢。</p></a>
+				<a href="#00:08:49.03" id="00:08:49.03" class="lt" onclick="jumptoTime(529, this.id)"><p>一開二啦但係呢個椰菜仔呀我又建議大家炒成粒呀因為一年冇幾多，食到咗呀，咁我幫一分鐘過後咁我哋家就睇望乜嘢環境呀，真係係相當之香呀而家，保持住一個大火，所有水份都差唔多收乾呀，好簡單呀咁我哋攞返三個一茶匙嗰個鹽落去，半個茶匙嗰個砂糖落去，甜味呀先好食㗎因為本身呢都會有少少，咁我去到最後咩呀。</p></a>
+				<a href="#00:09:51.50" id="00:09:51.50" class="lt" onclick="jumptoTime(591, this.id)"><p>我建議大家落多少少，小朋友食得辣嘅話，多啲黑椒好食呀，兩三下，有牛油有冇牛油嘅時候咁樣已經ok呀，起埋佢啦，我呢個野菜仔呀，我嚟做半菜呀呢個相當之唔錯呀一流呀呢個，剷起曬佢，好乾身嘅隻鑊呀，咁我一個簡單易做充滿聖誕節日嘅氣氛，咁就咪嘢菜仔㗎嘛，咁我哋以前就做配菜呀，咁樣就，擺一個燒火雞火腿咁就擺啲嘢菜仔呀。</p></a>
+				<a href="#00:10:53.18" id="00:10:53.18" class="lt" onclick="jumptoTime(653, this.id)"><p>咁我擺少少薯條呀喺中間嗰度，金巴利汁呀咁樣真係相當之有節日氣氛呀，咁今日就名正言順做主角呀相當之正呀，咁呢個菜色大家煮少少意粉落去攞埋啲意粉，一齊煮都係好好食㗎喎，咁我啲野菜仔可以切細舊少少呀，咁鍾意食聖誕大餐嘅網友畀我like我聲明呀咁我鍾意食煙肉嘅網友訂閱我職人吹水嘅頻道，食野菜仔網友。</p></a>
+				<a href="#00:11:32.60" id="00:11:32.60" class="lt" onclick="jumptoTime(692, this.id)"><p>歡迎你加入我頻道會員繼續吹水，影片再同大家吹過拜拜。</p></a>
+</div>
+	</body>
+</html>

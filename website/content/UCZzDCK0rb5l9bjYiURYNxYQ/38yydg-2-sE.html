@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[分享煮意 Cooking Ideas] 焗雞唔嚡四大心得 How To Make Chicken Tender & Juicy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '38yydg-2-sE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[分享煮意 Cooking Ideas] 焗雞唔嚡四大心得 How To Make Chicken Tender & Juicy</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.72" id="00:00:5.72" class="lt" onclick="jumptoTime(5, this.id)"><p>Hello 大家好，早排掛住睇世界盃都無乜時間剪片，喺咁多隊國家隊當中，法國隊係我非常留意嘅，唔係因為佢地踢得勁，而係因為佢地個logo有隻雞，係我最鍾意食嘅法國雞，通常我喺超市買完隻雞返嚟之後，我就會慳返唔會擺入屋企個冰格，而係直接將隻雞擺喺上面個格，等佢慢慢融雪，最緊要係乜都唔使做。</p></a>
+				<a href="#00:00:42.72" id="00:00:42.72" class="lt" onclick="jumptoTime(42, this.id)"><p>正所謂不想努力了嘅解凍方法，通常擺佢隔一晚嘢，就會完全解凍，但係呢隻雞呢，擺佢隔一晚嘢就會完全解凍，跟住我地就可以做下一個步驟，雞肉溶化後 先在雞的屁股上切掉脂肪，因為太肥了 我們不要的，然後我們準備和雞做SPA，先把4匙鹽和3匙糖用暖水打開，然後放兩片冰柿，作用是把雞的冰味去除，然後加入適量的凍水。</p></a>
+				<a href="#00:01:47.49" id="00:01:47.49" class="lt" onclick="jumptoTime(107, this.id)"><p>然後把雞放進去，也是一樣 什麼都不用做，最重要是水的份量足夠蓋過雞，用保鮮紙包一包 放一旁，大概4-8小時放一旁 什麼都不用做，這樣就完成了，忘記了說 今天教烤雞，烤雞當然順便找些蔬菜墊底，我這裏準備了一些薯仔 紅蘿蔔 洋蔥 蒜頭，我還要一個檸檬 一會兒告訴大家怎樣用，其他醃料都是黑椒 鹽。</p></a>
+				<a href="#00:02:41.03" id="00:02:41.03" class="lt" onclick="jumptoTime(161, this.id)"><p>Paprika Rosemary 和 Thyme，還有 Olive Oil，不知道大家平時鋪石紙在焗盤上，有沒有弄錯反光面和不反光面，不過我會再做多一個動作，就是把石紙略為整皺一點，目的是要把有凹凸面，等待食物或蔬菜上面的時候，就不會那麼容易黏住，而且受熱方面會更加平均，不要說我又在教Physics。</p></a>
+				<a href="#00:03:25.03" id="00:03:25.03" class="lt" onclick="jumptoTime(205, this.id)"><p>如果大家有興趣的話 也可以略為研究，薯仔和紅蘿蔔，我用滾刀的方式切開它一塊塊，不要切太小 因為太小的話，焗完會縮水 沒東西看，把它們放在焗盤上 稍微攪拌一下，然後略為調味一下，最後把蒜頭放得漂亮一點，加上少許橄欖油就OK了，最後我們再放少許檸檬皮，讓味道多一點層次，雞做完SPA就要瀝乾水。</p></a>
+				<a href="#00:04:18.03" id="00:04:18.03" class="lt" onclick="jumptoTime(258, this.id)"><p>在這個時候我們就準備做Scrub，Scrub裡面都是一些香料混合在一起，然後用橄欖油開一開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.03" id="00:04:30.03" class="lt" onclick="jumptoTime(270, this.id)"><p>做Scrub的意思，就是把剛才的香料和橄欖油，塗在雞上，慢慢按摩 搓搓搓，你看看這隻雞 多漂亮，多麼享受，接下來我們預先準備6片牛油，每片大約5克，然後把剛才的檸檬切開，備用，這時候我們要把雞胸上的雞皮，慢慢很溫柔地揭起，然後把牛油慢慢地塞進雞胸，我們這樣用牛油幫雞胸膛，再加上剛才浸雞的方法。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:37.41" id="00:05:37.41" class="lt" onclick="jumptoTime(337, this.id)"><p>就可以確保雞胸焗完出來，保持嫩滑一點也不會粗糙，在這個過程當中 大家真的要小心一點，不要弄穿皮 否則前功盡廢，最後還有一個秘技，就是把剛才的檸檬 整個塞進雞肉裡，所以我們選擇檸檬也不能太大，如果是滑出來的話 可以用牙籤刺一下，好 準備入爐，剛才的蔬菜上 灑上一些巴菲力，然後放好架子。</p></a>
+				<a href="#00:06:33.73" id="00:06:33.73" class="lt" onclick="jumptoTime(393, this.id)"><p>然後把雞肉放上去，把雞翼放在架子底 否則會燒焦，如果有繩子的話 可以把雞肉綁一綁，不過我就懶鬼了，預熱焗爐 225度，然後把雞肉連同蔬菜放進去，焗的時間視乎雞肉大小，這次我大概焗了一個小時，完成，牛油完全融入雞胸，你看顏色 基本上可以吃了，只要把檸檬拿出來就完成，不過我喜歡香口一點，所以加上最後一個步驟。</p></a>
+				<a href="#00:07:38.73" id="00:07:38.73" class="lt" onclick="jumptoTime(458, this.id)"><p>檸檬拿出來後 非常熱，你看 冒煙了，我用鉗子把檸檬汁全部榨出來，然後我加一點蜜糖，然後把蜜糖檸檬汁塗在雞胸上，這時候我會把焗爐推到最大火，這裡是大概250度，然後把雞放進去，焗大概10分鐘，完成了，我喜歡有一點點焦，拿出來稍微放涼一會兒，就可以切開上桌了，大家記得蜜糖會搶火，所以在控制火候方面都要小心。</p></a>
+				<a href="#00:08:44.48" id="00:08:44.48" class="lt" onclick="jumptoTime(524, this.id)"><p>好，我們就切開雞胸出來看看，一點也不粗糙，算是不錯吧，其他雞腿的部分當然也沒問題，最後 示範給大家看一石二鳥，我用兩個架 一高一低打斜，將兩隻雞放入焗爐，這樣就可以多些人分享，喜歡我的介紹，記得 Like and Subscribe，給我支持，還要分享給其他朋友，多謝 拜拜。</p></a>
+</div>
+	</body>
+</html>

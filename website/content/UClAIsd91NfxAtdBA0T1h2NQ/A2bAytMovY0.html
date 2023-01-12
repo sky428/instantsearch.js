@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky教室 茶餐廳王牌 粟米肉粒飯 靈魂就係白汁</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'A2bAytMovY0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky教室 茶餐廳王牌 粟米肉粒飯 靈魂就係白汁</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.84" id="00:00:6.84" class="lt" onclick="jumptoTime(6, this.id)"><p>和大家試試這個，Show me your love，各位好，Santé，今天要做的菜式，大部分香港人都吃過，這個菜式其實隱藏著一個，我們法蘭西料理裡，最基本的，每一個做法餐的人都要懂得，無論你做芝士汁龍蝦，意麵底也好，你做一個焗海鮮飯也好，這個白汁，他們叫做Béchamel，做這個醬汁之前。</p></a>
+				<a href="#00:00:52.35" id="00:00:52.35" class="lt" onclick="jumptoTime(52, this.id)"><p>有一個在西餐茶餐廳裡，西餐茶餐廳裡的東西你都知道，就是麵撈，麵撈就是油加麵粉混合，來煮一個醬汁，其實是最傳統的法蘭西料理中，最基本的一道菜式，今天我想用這個方法，為大家做一個歷久不衰的茶餐廳名菜，是粟米肉粒飯，煮粟米肉粒飯之前，一定要準備一件事，先喝一杯，第一件事是先處理肉粒，其實用甚麼肉粒都可以。</p></a>
+				<a href="#00:01:36.99" id="00:01:36.99" class="lt" onclick="jumptoTime(96, this.id)"><p>只吃瘦肉的話，就買豬扒肉眼的位置切，這是豬扒的位置，豬扒很瘦的部位，上面有一個蓋子，你看看油花的分泌，它的鑼鼓很漂亮，如果你是怕肥的，就不要用這些，你可以用豬肉眼 最瘦，有時候如果我要做粟米肉粒，我甚至會買腩排，你知道它間中有肥瘦的部分，醃一醃它，你死命地煮它也好，它也很好吃，首先我們跟大家說說。</p></a>
+				<a href="#00:02:14.47" id="00:02:14.47" class="lt" onclick="jumptoTime(134, this.id)"><p>如何做麵撈，依照傳統的做法，25克牛油，一定是25克麵粉，然後我們慢慢地，炒香麵粉，剛入行的時候，我們在餐廳做這些麵撈，說的是一桶油，一桶豬油，我們那時候牛油太貴了，麵粉一直在燒熱的時候，慢慢地加…，一個多小時就這樣做，聽到也會害怕，看到它起泡了 聞到香味了，可以關火 完全關火，之後我們才…。</p></a>
+				<a href="#00:02:56.88" id="00:02:56.88" class="lt" onclick="jumptoTime(176, this.id)"><p>雞湯、忌廉 一直攪拌 先攪拌均勻，很多時候大家會在頻道中，教大家如何做白汁，做好麵糊後 逐少逐少加入牛奶，慢慢攪拌，麵糊很熱的話 加牛奶進去，麵糊就會馬上熟了，其實不需要這樣做，關火 倒入雞湯和忌廉，攪拌至均勻，攪拌約20至30秒，然後才開火，現在水開始冒泡，你看到已經開始沸騰 開始變稠，這個已經造就了白汁。</p></a>
+				<a href="#00:03:40.56" id="00:03:40.56" class="lt" onclick="jumptoTime(220, this.id)"><p>有忌廉的白汁，我還加了雞湯，連調味也省了，現在你會看到有點稠的味道，Béchamel是一種濃稠的醬汁，煮蝦可以加蝦湯稀釋，煮雞也可以用雞湯稀釋，稀釋的Béchamel變成了Valuté，Valuté可以當湯喝，這個白汁很絲滑，但它也有一個死位，做好後 待會放在這裡，它很快就會形成一個硬膜。</p></a>
+				<a href="#00:04:15.76" id="00:04:15.76" class="lt" onclick="jumptoTime(255, this.id)"><p>所以通常做好後 用東西蓋著，否則它一定會有硬皮在表面，醬汁就會一粒粒，煮好白汁就放一旁，現在要炒配料，加少許油，加肉粒，用中火慢慢炒，豬肉已經炒到六七成熟，我明顯見到它已經有點上色，畢竟是粟米肉粒， 當然要有粟米，我很喜歡粟米汁一定要加少許新鮮粟米，聞到牛油炒香粟米的味道， 完成，接下來的步驟就是。</p></a>
+				<a href="#00:05:8.48" id="00:05:8.48" class="lt" onclick="jumptoTime(308, this.id)"><p>將炒好的豬肉、粟米、蔬菜，倒入剛才的白汁， 開火，我們從小到大一定有罐頭粟米，所以這個時候要加少許罐頭粟米，令味道更加大人和小朋友都喜歡，基本上已經完成，粟米肉粒可以配意大利麵條，如果煮稠一點， 汁不要太多，可以放在多士上做小食，和大家試試這個粟米肉粒，吃下去會吃到麵條的味道，牛油炒香麵粉的味道。</p></a>
+				<a href="#00:06:0.72" id="00:06:0.72" class="lt" onclick="jumptoTime(360, this.id)"><p>現在還在汁裡，新鮮粟米粒的爽脆，喜歡煮飯的也可以試試這種方法，我先和大家乾杯。</p></a>
+</div>
+	</body>
+</html>

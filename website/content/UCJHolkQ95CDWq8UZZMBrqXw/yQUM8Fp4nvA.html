@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[快煮飯食] 香辣粟米椰子湯 Spicy Corn Coconut Soup</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yQUM8Fp4nvA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[快煮飯食] 香辣粟米椰子湯 Spicy Corn Coconut Soup</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>歡迎大家嚟到泰山自煮呀，今日我送阿Luke同阿K回學啦，一打開到屋企門，嘩一陣冷風吹埋嚟，搞到我突然間好想飲碗湯呀，不過我又唔想飲呢個中式老婆湯，我想飲啲西式CREAMY啲嘅湯，飽肚啲暖啲，但係我又驚太流，於是乎不如辣辣地又好，諗到個正湯要介紹畀你，非常之易整嘅，係一個香辣粟米椰子湯，齁齁齁齁。</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>即刻開始做，今日整呢一個香辣粟米椰子湯呢，個靈感呢就係來自，美國南部嘅宋菜，咁呢美國南部嘅朋友們呢，都其實幾鍾意食辣，而佢哋嘅辣呢，都有時係會勁過我哋，即係中國人食嗰啲辣，真係估唔到，不過今次呢一個辣粟米呢，佢哋通常都會係呢一個，感恩節嗰陣時呢。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>除咗食下火雞呀，之類呢佢哋嘅SIDE DISH呢，都會出現呢一個，SPICY CREAM CORN，咁於是乎呢我就諗下。</p></a>
+				<a href="#00:01:15.00" id="00:01:15.00" class="lt" onclick="jumptoTime(75, this.id)"><p>粟米湯其實呢我哋，香港人都好鍾意飲呢個粟米湯，可唔可以將呢一個粟米湯。</p></a>
+				<a href="#00:01:21.00" id="00:01:21.00" class="lt" onclick="jumptoTime(81, this.id)"><p>變辣呢咁樣，咁其實係幾好味嘅，咁再加上呢一個。</p></a>
+				<a href="#00:01:27.00" id="00:01:27.00" class="lt" onclick="jumptoTime(87, this.id)"><p>薑啦，喺呢一個涼涼啲嘅天氣呢，真係可以暖暖胃嘅，咁當然頭先你會見到有啲。</p></a>
+				<a href="#00:01:35.00" id="00:01:35.00" class="lt" onclick="jumptoTime(95, this.id)"><p>香料啦即係譬如乾蔥又有啦，蒜頭又有啦，咁其實呢啲呢就，令到個湯更加香嘅，我頭先講過呢，就想食呢啲CREAMY啲嘅，湯啦咁於是乎呢我就，加咗啲薯仔落去，今次呢我就用咗啲新薯仔嘅，細細粒粒嗰啲呢我就，費事啦我就直接呢刨咗啲皮，佢然後切粒直接，放落去咁就唔使煞呀成日嗰啲，唔好搞咁多嘢啦佢呢可以慢慢，煮嘅如果你切細粒啲呢。</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>佢仲煮得腍啲添因為呢我哋，目的呢基本上就係想啲薯仔，腍嘅啫所以切細粒啲，就ok㗎啦咁你，大概呢都見到個湯呢，已經係搞掂，九成㗎啦你煮到而家呢已經係，非常之香啦我呢就，冇落鹽嘅因為呢我覺得個雞湯，已經夠鹹㗎啦，係咁跟住等個湯凍少少，放落個blender打到你。</p></a>
+				<a href="#00:02:29.00" id="00:02:29.00" class="lt" onclick="jumptoTime(149, this.id)"><p>鍾意嘅濃厚度咁就上碟㗎啦，好啦咁就搞掂咗呢一個香辣，粟米椰子湯啦我覺得呢一個，涼涼啲嘅天氣呢飲呢一個，辣辣地嘅湯呢，非常之暖胃呀假如呢你，lunch係唔係好想食嘢嘅話呢，呢個湯呢都非常之，適合㗎啦好啦好簡單，記住試下做啦多謝，大家subscribe我嘅youtube，channel同埋follow我嘅facebook。</p></a>
+				<a href="#00:03:19.00" id="00:03:19.00" class="lt" onclick="jumptoTime(199, this.id)"><p>page thank you</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:25.08" id="00:03:25.08" class="lt" onclick="jumptoTime(205, this.id)"><p>也請別忘了分享出去並按一個讚哦 並且記得訂閱我們的頻道 才能收到最新消息喔。</p></a>
+</div>
+	</body>
+</html>

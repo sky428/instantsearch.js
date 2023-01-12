@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 鐵板燒貴價菜自己做 錫紙牛油焗露筍</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'HEC8gkHQQNk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 鐵板燒貴價菜自己做 錫紙牛油焗露筍</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:12.51" id="00:00:12.51" class="lt" onclick="jumptoTime(12, this.id)"><p>時間呢我哋畀返個大火去跟住落邊嗰度呀爭少少走落去，咁我哋利用走嘅蒸發呢嗰啲蒸氣呢就將，慢慢逼熟佢，大家好又係我星星同大家職人吹水，大家好各位頻道會員嘅網友大家好各位facebook嘅網友，IG網友大家好呀，近期多咗出街呀咁呀撞到好多不同類型嘅網友呀咁我自己，都好開心呀即係感受到大家背後畀個力量埋正能量呀。</p></a>
+				<a href="#00:00:56.79" id="00:00:56.79" class="lt" onclick="jumptoTime(56, this.id)"><p>咁好多網友，都問我啦你唔好搞啲嘢，咁複雜啦成日開爐炸嘢咁樣有冇啲簡單啲又好食呀，今日呀，就用啲蘆筍做啲簡單嘅方法又好食嘅仲同大家分享下，睇下啲材料先調味就好簡單呀，黑胡椒碎，鮮牛油，鹽，咁呀梗係，有蘆筍呀，石子，呢度已經係一個送嚟㗎啦大家有冇出食個鐵板燒呀，好多時，呢度，一個石子燒蘆筍。</p></a>
+				<a href="#00:01:38.51" id="00:01:38.51" class="lt" onclick="jumptoTime(98, this.id)"><p>收你唔平嘅價錢喎，咁當然我哋都要買啲質量比較好啲嘅蘆筍呀，日式超市，咁呀買啲，澳洲或者美國咁呀或者有啲歐洲嘅蘆筍亦係相當，相當之唔錯嘅，咁我點樣睇佢為之靚唔靚呢，睇色澤囉，先暖程度囉，同埋呢個蘆筍呀，好取決於呢佢大支，定細支嘅，咁樣越大支就越貴囉當然咁我呢啲幾大支啦，半隻手。</p></a>
+				<a href="#00:02:16.41" id="00:02:16.41" class="lt" onclick="jumptoTime(136, this.id)"><p>半隻手咁長喎，咁開咗出嚟呀咁呀處理都係，好簡單呀你都想呀，成條都可以食得㗎喎，但係呢，最先亂就係頂呢個部分呀，最先亂如果你喺出面做呀，淨係用呢個部分嘅咁我睇下有咩用呀嗰啲用其他用途囉，炒小炒呀切粒呀都係好好食㗎，咁樣我哋如果想成條食曬佢咁有啲咩要做呀，咁我哋跑呀，咁樣。</p></a>
+				<a href="#00:02:54.66" id="00:02:54.66" class="lt" onclick="jumptoTime(174, this.id)"><p>咁我試下彭炮先啦咁我哋攝咗啲位落去啦咁樣，係咁跑跑跑跑跑跑跑，係咁跑出嚟，做鐵板燒嗰啲師傅又，都，都好犀利呀咁樣呀，咁我發皮嗰度慢慢跑佢出嚟啦，咁我當然我呢把刀仔又，跑到去已經好好啦，因為我都係粗用呀呢啲都，咁咪跑曬佢啦，咁除開刀仔，最理想都係用返個跑呀，咁我用返個跑啦，我哋後面呢度呀。</p></a>
+				<a href="#00:03:39.74" id="00:03:39.74" class="lt" onclick="jumptoTime(219, this.id)"><p>批咗咁ok呀因為呢啲路信呀，所以唔好話睇咁大條呀，就係相當之亂㗎，咁我哋就，後面呢度呀，跑一跑去咁ok呀，路上將佢最粗嗰啲皮跑曬之後呢咁又二話不說啦搵水，洗一洗佢，跟住我哋擺埋一邊瓊水咁我哋準備兩粒嘅乾蔥四粒嘅蒜頭，咁我哋嘅乾蔥呀，唔使切到好細嘅，蒜頭呀，咁樣整開佢咁ok呀，咁我哋一陣間啦。</p></a>
+				<a href="#00:04:21.46" id="00:04:21.46" class="lt" onclick="jumptoTime(261, this.id)"><p>就攞嚟墊底嘅呢啲，跟住我哋攞啲新鮮牛油出嚟咁咪有幾多呢，差唔多隻手指咁上下啦，配料準備好之後呢咁我哋攞返啲蘆筍出嚟，大家睇到呀，呢啲蘆筍呀咁優質嘅蘆筍呀佢個味呢都係，相當之亂我哋稍為呢，少少頭，我哋唔要嘅，呢啲切出嚟啦，我哋就係要嘅，有咁多度，呢啲就係要嘅呢啲呢，就同呢啲擺埋曬一齊，我哋。</p></a>
+				<a href="#00:05:3.20" id="00:05:3.20" class="lt" onclick="jumptoTime(303, this.id)"><p>盡量唔好，切開佢成條去做就最理想嘅，咁我哋又整隻錫紙船先咁我哋攞錫紙出嚟啦，一般錫紙有分，底同埋面呀畀個拎新嗰啲，咁我哋拎出嚟，唔緊要，唔知影唔影到呀有啲反光咁我哋呀咁啲咋將出嚟先，咁我哋就將啞面嗰度就擺咗喺底先，隨即我哋唔知多張出嚟咁上一場到嘅，呢啲錫紙都有少少技巧㗎喎你唔好心急慢慢咁咪攞落嚟，咁我哋將兩邊啞面對啞面就擺咗。</p></a>
+				<a href="#00:05:57.48" id="00:05:57.48" class="lt" onclick="jumptoTime(357, this.id)"><p>鋪佢先，咁兩張搭埋之後得咩呀未得㗎，我哋仲要整好少少個底，因為我應該擺喺隻鑊嗰度整㗎所以我個底嗰度呢佢受熱嗰度呀，我會整好少少，咁我哋都係要啞面對啞面，即係好似整到食整到整到個鑊咁樣，咁樣咁ok喇喎，咁第一步呀，我攞少少牛油呀，我哋咁樣出下底先，牛油喺度呀，跟住呀，我哋就將啲，蒜呀。</p></a>
+				<a href="#00:06:48.92" id="00:06:48.92" class="lt" onclick="jumptoTime(408, this.id)"><p>乾蔥呀，嗰啲蘆筍嗰啲，最頭呀最難熟嗰啲我係咪擺喺呢個位囉，跟住我哋主角出場呀咁我哋將啲蘆筍，平排咁我擺曬喺度，咁我哋就盡量就要搵一啲呢攞一攞佢，浪高佢，跟住呢，我呢啲牛油擺上去，落鹽喇喎，咁我攞返適量嘅鹽落去，咁我等你有少少鹹味呀嘛，跟住啦，就落胡椒，調味好簡單，跟住我哋，左右兩邊玩咗上嚟先。</p></a>
+				<a href="#00:07:51.07" id="00:07:51.07" class="lt" onclick="jumptoTime(471, this.id)"><p>跟住我哋呢邊反過去，反轉過來之後呢咁我哋側邊呢個位呢度呀，咁我哋接多兩下，收一收佢兩條邊，咁你咪整咗一個好紮實嘅，錫紙袋出嚟囉，咁樣收口又呢邊吖嘛咁我哋仲有嘢要落喎仲有咩落呢，咁我攞啲酒落去呀如果佢有清酒嘅最落清酒如果冇嘅落少少，中式嘅廚酒都ok呀，一個湯匙咁上下，落咗酒之後呢家仔我哋加返一個湯匙土嘅。</p></a>
+				<a href="#00:08:38.88" id="00:08:38.88" class="lt" onclick="jumptoTime(518, this.id)"><p>滾水落去，等佢個包裏面呀咁呀有少少水份呀嘛咁我而家就係將啲酒，同埋啲，水咁我而家就，倒曬喺裏面，咁多咗之後呢跟住我呢我哋我哋就喺度收口呀，接實佢，整好啲先，盡量就唔好畀佢漏氣出嚟，一頓佢，咁就ok喇喎，咁封好曬之後其實最理想有焗爐呀如果冇焗爐呀咁我點呀，我哋有鑊㗎嘛，咁我哋燒隻鑊先。</p></a>
+				<a href="#00:09:33.92" id="00:09:33.92" class="lt" onclick="jumptoTime(573, this.id)"><p>咁我熱咗之後咁我哋畀返個大火去呀，咁畀返個大火去咁我哋呢，頭先，個底比較厚嗰度呢，咁我又擺咗落去，平底鑊就會比較理想你想少少嘅咁我哋呢個要，焗佢幾耐呀，咁我哋用大火，焗佢兩分鐘，跟住收個中火再焗佢兩分鐘，全程四分鐘咁又睇佢本身嗰個受熱情況呀，落酒同埋落水呢，落酒嘅作用呢就等我一陣間佢滾你嗰陣時你走揮發呢，青梅呀等佢扯咗出嚟呀。</p></a>
+				<a href="#00:10:16.40" id="00:10:16.40" class="lt" onclick="jumptoTime(616, this.id)"><p>水呢就增加佢裏面喎水蒸氣嘛等我老上呢就更加清脆聯絡㗎嘛，咁我哋家就吸埋佢先，咁保持住個中火而家約，三分鐘咁上下啦睇唔睇到裏面咩景況呀，有少少執翼，整佢出嚟喎，咁我食紙包呢咁我有少少醬身呢咁我為之ok呀，咁剎那就四分鐘時間就斬晚就過去啦，情願將新嘅咁我而家就識火，咁我帶你攞上嚟嗰陣時就小心啲啦因為相當之熱。</p></a>
+				<a href="#00:10:59.82" id="00:10:59.82" class="lt" onclick="jumptoTime(659, this.id)"><p>咁我當然梗係要開咗畀大家睇下你哋乜嘢環境㗎啦，咁我哋攞返把刀仔出嚟呀咁我哋咪完全側邊嗰度，慢慢，慢慢開咗佢囉，慢慢介過嚟，開咗之後呀，慢慢反起曬先，好熱，冇正呀，簡單易做方向撲鼻，黑椒味牛油味而家又出曬嚟呀，更加好食呀，咁你時間呢，我哋再補多少少黑椒，再補少少鹽花上面，咁又相當之正，咁我最重要都係保留返佢底下嗰啲牛油汁呀。</p></a>
+				<a href="#00:12:1.50" id="00:12:1.50" class="lt" onclick="jumptoTime(721, this.id)"><p>如果鍾意呀可以擺少少豉油落去整日都相當之好食㗎喎，咁你個簡單美味，易做嘅，蒜蓉牛油石子，焗蘆筍，可以就咁食呀可以配襯任何嘅，扒類魚類亦係相當之正嘅，咁你食蘆筍網友畀個like個星星呀咁你食蒜蓉網友定個職人吹水嘅頻道，咁兩者都鍾意食㗎，就加入個頻道會員繼續吹水，咁我又食嘢先下條影片再同大家吹過拜拜。</p></a>
+</div>
+	</body>
+</html>

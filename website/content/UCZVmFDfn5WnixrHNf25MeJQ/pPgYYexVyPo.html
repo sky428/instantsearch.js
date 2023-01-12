@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉 蔥油餅 懷舊風味家中做得到 熱辣辣即做即食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pPgYYexVyPo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉 蔥油餅 懷舊風味家中做得到 熱辣辣即做即食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.91" id="00:00:13.91" class="lt" onclick="jumptoTime(13, this.id)"><p>大家好又係我星星同大家職人吹水，大家好，咁我之前又落返西灣河行街食嘢咁咪食咗個蔥油餅唔知，仲食咗兩個添呀，咁樣喺炭樓食咗一個啦咁樣又喺城安街嗰度食咗一個呀咁我自己又相當之懷念呢種，味道呀咁又同大家分享下一啲蔥油餅可唔可以喺家，停用呢個簡單嘅方式同大家分享下，咁我從油餅一定唔食得沖呀。</p></a>
+				<a href="#00:00:53.83" id="00:00:53.83" class="lt" onclick="jumptoTime(53, this.id)"><p>咁我再啲中筋麵粉呀咁樣啲烤毛嗰啲芝麻，咁樣做樣講呀咁呀沖就三四條呀咁我盡量買啲紅頭沖呀咁咪新唔新鮮，同你講呀，條條挺直呀，咁我返嚟呀咪咗個沖頭咁咪浸咗佢啦，咁樣我哋今次就用一啲叫做，中筋麵粉去做呀，咁我以我哋以前入行嗰陣時就好少會攞啲中筋麵粉嘅，通常我哋攞啲普通麵粉呀即係啲低筋麵粉同埋高筋麵粉，我哋去溝嘅。</p></a>
+				<a href="#00:01:26.87" id="00:01:26.87" class="lt" onclick="jumptoTime(86, this.id)"><p>咁而家就好方便啦咁樣就買包中筋麵粉咁ok，中筋麵粉呀約，200g咁上下，咁我仲有啲整面包嘅烤模呀咁呢一包，十gram咁我上次就用咗半咁咪淨返，五，五gram喺度呀咁咪差唔多，咁樣就少少炒香嘅芝麻啦，咁我哋就首先就浸佢啲蔥佢先啦因為，都係要需要少少時間同埋耐性嘅，咁我哋又攞返個器皿出嚟啦咁咪中間麵粉。</p></a>
+				<a href="#00:02:7.59" id="00:02:7.59" class="lt" onclick="jumptoTime(127, this.id)"><p>落幾多呀我哋落約200g咁上下，仲爭差唔多啦，啱啱好呀，咁呢度睇下大家清楚啲呀，啱啱好呀200g，咁當然就係唔計隻碗嘅重量呀咁我哋擺隻碗上去咁咪，咁返去到麵粉都係200g ok啦，咁我哋就擺開佢先。</p></a>
+				<a href="#00:02:41.47" id="00:02:41.47" class="lt" onclick="jumptoTime(161, this.id)"><p>咁呀跟住我哋就攞返呢啲，烤帽出嚟呀咁呢啲烤帽呢都係好簡單嘅處理咁我哋就倒曬出嚟先，咁想你啲乾烤帽發得好呢我哋有兩個元素嘅第一個元素呢就係話，我哋要畀啲室溫水去如果夏天嘅話呢普通室溫水又ok呀，咁我今日呢就調較咗整體嘅份量就200毫升呀咁我未必會落曬嘅，咁我整體嘅份量呀落淨幾多又扣幾多呀咁我哋呢度呀落少少落就夠。</p></a>
+				<a href="#00:03:19.87" id="00:03:19.87" class="lt" onclick="jumptoTime(199, this.id)"><p>跟住想去更加，發得好啲嘅咁我哋落，三分一茶匙嗰個砂糖落去呀，即係畀糖佢呢即係，畀啲食療畀啲營養佢呀嘛，咁我哋就喺邊度擺埋一邊，等佢，養一養佢先。</p></a>
+				<a href="#00:03:45.71" id="00:03:45.71" class="lt" onclick="jumptoTime(225, this.id)"><p>擺埋咗邊之後呀咁我啲麵粉呀都要畀返少未去，咁我呢度要落返，三分一茶匙嗰個鹽落去呀，咁我等你返少少鹹味，跟住我哋就半文去呀將啲鹽呀麵粉呀咁樣咁我哋，中間就，畀個窿佢呀咁畀個窿佢之餘呀咁我哋就將啲烤模呀呢就倒曬落去中間，咁我哋就慢慢加水呀咁我哋將頭先咁樣200ml個水呢咁我哋就慢慢，慢慢加落去呀。</p></a>
+				<a href="#00:04:21.03" id="00:04:21.03" class="lt" onclick="jumptoTime(261, this.id)"><p>咁開粉呀我哋都唔好一次過加曬啲水落去咁我又等，慢慢食入去啦，咁水嘅份量都係要視乎啲粉呀咁樣嗰個由軟程度嘅，咁我哋先再去調教佢呀，咁樣冇乜水喎咁咪繼續落呀，咁我落咗之後都係好簡單呀咁我哋就慢慢就將佢，慢慢就將佢搬運佢呀，千祈唔好心急呀你一心急啦你一開削咗啲粉呢，好多時就花唔到轉頭呀你個粉呢就越差就越大舊㗎啦咁我哋就等佢。</p></a>
+				<a href="#00:05:4.31" id="00:05:4.31" class="lt" onclick="jumptoTime(304, this.id)"><p>慢慢索曬入去先呀，咁我跟住入咪又加落去啦，咁我呢個好得意㗎你而家你覺得佢仲有咁多粉呀咁乾呀，佢越差嘅就越濕嘅特別係呢啲即係叫中筋粉呀話高筋粉，做包點嗰啲呀咁我痴如知咗咁樣點呀我搵一隻匙羹又幫，幫手啦唔需要心急嘅，咁去到呢個階段就差唔多喎咁咪有落咗藥幾多水呀落咗，150咁上下啦整體嘅份量呀。</p></a>
+				<a href="#00:05:46.45" id="00:05:46.45" class="lt" onclick="jumptoTime(346, this.id)"><p>咁去到呢個階段啦我哋一手呢洗乾淨佢，濕少少水，咁我哋就慢慢就將佢半圍，咁我哋就差佢分零鐘呀咁樣猜到呀，黏性呀咁樣就，差唔多呀，咁我哋呢就搵塊，濕布冚住佢。</p></a>
+				<a href="#00:06:14.87" id="00:06:14.87" class="lt" onclick="jumptoTime(374, this.id)"><p>咁咪咁樣就擺喺一個室溫地方呀咁樣今日啲天氣30，零度，一個鐘頭就差唔多，咁呀中間麵粉發緊支仔呢咁我睇返你衝呀咁而家就改個鐘頭洗乾淨先，咁我做呢啲都好簡單呀咁我哋就第一陣嗰啲老老，地就全部唔好要啦，將佢全部咪曬佢，自己做呀買啲新鮮嘅沖咗佢就會比較香啲嘅，咁我哋以前喺出面做全部啲沖呀即係攞啲蔥肉返嚟㗎，咁佢都係會處理好曬呀當然我哋攞啲蔥肉就會冇呢啲衝咁香。</p></a>
+				<a href="#00:06:58.39" id="00:06:58.39" class="lt" onclick="jumptoTime(418, this.id)"><p>咁我哋再清洗佢一次呀就沖一沖佢咁而家就真係改咗佢呀，做呢啲都係好簡單，咁我哋就盡量沖肉同埋沖白呀，就每樣一盤，唔好似得太細粒，我哋切到，手指甲咁上下，太細粒呀，佢就唔好食㗎呢啲蔥油餅，有少少大粒呀咬口呀咁ok呀，多啲蔥嘅咁咪多少少呀，聰明啲少少就唔好要呀，咁我哋就擺埋一邊，吹一吹乾佢先。</p></a>
+				<a href="#00:07:41.79" id="00:07:41.79" class="lt" onclick="jumptoTime(461, this.id)"><p>咁咪經過咗一個鐘頭發酵之後呢，咁樣得未㗎啦如果一個鐘頭，發得啦咁咪就真係發達啦，咁樣我哋就發咗前期功夫第一步先，咁我都係畀頭先發起咗少少呀，跟住呀，我哋就搵隻碟，倒返適量嘅，乾嘅樽中間粉出嚟呀咁樣你就，洗乾淨呀手，咁我哋就，沉返少少耐先，咁你手嗰度呢又知返少少粉，咁我哋喺個板嗰度呢又落返少少粉，咁我哋慢慢呢就要將佢起出嚟㗎。</p></a>
+				<a href="#00:08:26.59" id="00:08:26.59" class="lt" onclick="jumptoTime(506, this.id)"><p>盡量等一手呢唔好知嗰啲粉佢。</p></a>
+				<a href="#00:08:30.17" id="00:08:30.17" class="lt" onclick="jumptoTime(510, this.id)"><p>咁我哋就倒曬落個板嗰度咁咪ok呀，咁我哋想去好食鬆軟呀就，靠靠呢一部呀，咁我哋，都要咁樣，撳返啲空氣出嚟㗎，咁我第二日呢，我哋趁呢段時間呢，猜到佢啦佢更勝呢就會更加好，咁你食落去呢，就會更加，即係有嗰個咬口呀，咁我哋就慢慢搓啦咁樣搓幾耐呢，菜仔都整舊粉呢，都有個，銀聖啦咁樣約初去20零下咁ok啦，可以搵另外一個手呢幫幫手咁樣呀。</p></a>
+				<a href="#00:09:18.57" id="00:09:18.57" class="lt" onclick="jumptoTime(558, this.id)"><p>咁我哋就，再猜多幾下咁就差唔多，差咗廿零下之後咁而家你就擺返落隻碗嗰度，咁我哋再等佢20分鐘咁上下，期間都係，咁我條煲啦，咁，舊中間麵粉呀等到佢第二次發酵之際呀咁樣係未發之前呀，吹下呢類型嘅砧板呀，咁我喺出面做呀嗰啲點心師兄呀真係有一個位呀叫做案板嗰個位呀，呢啲位呀，咁通常都係會用啲松木呀咁樣呀。</p></a>
+				<a href="#00:10:1.85" id="00:10:1.85" class="lt" onclick="jumptoTime(601, this.id)"><p>咁而家我呢塊呢我都係姨媽加司嗰啲買啦，買唔返嚟咁咪洗乾淨佢咁咪吹咗一晚呀，吹乾咗之後呀咁我哋就查返啲油上面，咁樣查上面又等佢又吹一晚，咁樣如是者做兩三次呢個咁嘅程序呀，咁日常呀咁呢啲板，咁你咪，可以差下啲包皮呀，正呀啲包點呀食下囉咁樣呀做完都好簡單呀洗返乾淨佢，浪返幹佢浪幹咗之後就係查返浸油上面咁ok呀。</p></a>
+				<a href="#00:10:38.19" id="00:10:38.19" class="lt" onclick="jumptoTime(638, this.id)"><p>咁呀正袋咗十零分鐘等佢第二次發酵，咁你係可以話，等夠粉即係休息下陣呢做麵粉呀每逢你郁過呢都係要等佢休息下嘅。</p></a>
+				<a href="#00:10:52.01" id="00:10:52.01" class="lt" onclick="jumptoTime(652, this.id)"><p>咁而家就好緊呀咁我哋攞一個湯匙嗰個生油落去，等一手啦嗨嗨啲生油呀咁樣，你等佢發佢之後呢再落油落去呢，佢就會，更加滑啲呀嗰個粉咁而家我哋就，將佢，再混和佢冇曬光面為止，咁我又擺返我呢度猜呀咁咪最好係咁樣呀，咁我等佢話少少呀嘛，你點為之得呢佢會同你講㗎嘛知知你個針板呀，咁就ok啦混和曬咁我哋呀手間識兩個粉上面啦。</p></a>
+				<a href="#00:11:39.11" id="00:11:39.11" class="lt" onclick="jumptoTime(699, this.id)"><p>咁我唔使打佢知到周圍都係呀，頭先嗰個鐘頭係周圍搵碌棍呀，咁我好可惜呀佢就真係太樂會整呢啲呀嗰個棍都唔知擺喺入面咁唔緊要啦咁我，咁我哋就差到一條呢，長長地嘅形狀呀，即係如果你夠份呀你夠根性呀你點拉佢都得㗎，咁拉長咗之後呢咁就到我哋個主角出場呀，咁我哋啲蔥花咪擺喺中間嗰度呀，鍾意食多啲嘅落多少少落去啦。</p></a>
+				<a href="#00:12:16.24" id="00:12:16.24" class="lt" onclick="jumptoTime(736, this.id)"><p>咁我衝之後呢咁我啲蔥呀我哋畀返少少鹽花上面，咁等啲蔥呀都有啲得咁多個鹹味又唔好咁重手，最好呢就搵隻手呀咁樣呀，但係啲蔥你又唔好一早落鹽喎你一早落鹽呀標水喎，咁樣臨整之前落咁呀最理想呀，咁我又整返少少粉呀咁我哋又慢慢，將佢呢，呢頭呀，咁樣捲捲捲捲捲，捲捲捲捲，我哋慢慢又將佢，捲成曬一捲佢先。</p></a>
+				<a href="#00:12:53.12" id="00:12:53.12" class="lt" onclick="jumptoTime(773, this.id)"><p>漏出嚟都唔緊要㗎，好噁心呀好噁心唔緊要㗎咁我哋又執返靚佢啦，慢慢，就將佢，撳返個圓形出嚟呀，咁我幾經一輪嘅艱辛之後呢咁我終於就整返個圓形出嚟啦有碌棍有啲嘢咁。</p></a>
+				<a href="#00:13:20.00" id="00:13:20.00" class="lt" onclick="jumptoTime(800, this.id)"><p>咁我哋就審埋啲芝麻上面啦，咁我哋就，輕輕握實佢咁咪ok呀，咁我芝麻就底面都要少少嘅咁我呢度又受又審少少呀，咁我萬事俱備，咁我扮扮聲著咗個火去咁我哋攞個平底嘅煎餅出嚟啦，燒熱咗個熱鍋之後呢咁我哋就教返個中慢火咁我倒返適量嘅油，落去，多少少油都唔緊要嘅，跟手我就異話不說咁就，咁我哋就擺落去啦。</p></a>
+				<a href="#00:14:6.58" id="00:14:6.58" class="lt" onclick="jumptoTime(846, this.id)"><p>就唔好好住保持住一個細火先，咁期間就真係唔好大火呀慢慢火煎呀煎到點為之得呀，煎到個底呢有少少硬呀咁我哋就，就可以開屋去呀，一定一定咗型先啦，有少少起焦呀咁樣咪畀返個中火去啦，慢慢煎，每面煎，兩分鐘至三分鐘到咁咪差唔多呀，咁你話係咪好難做呀其實就唔係好難做嘅咁我只係，發個麵團嗰度呢要嘥少少時間呀咁當然如果你有心機呀咁樣整個形狀咁。</p></a>
+				<a href="#00:14:57.84" id="00:14:57.84" class="lt" onclick="jumptoTime(897, this.id)"><p>可以整靚啲啦，咁我哋又保持住一個中火呀咁我知點為之得呀咁我望下底呀咁我夠顏色咁，差唔多可以返得㗎，三分鐘呀咁呀反咗畀大家睇下，咁我哋就繼續，溫暖嘅受熱，反正咗之後呀咁我哋慢慢都係煎到去呀呢邊都係有啲金黃色呀，咁我哋就再返返去呢邊邊度爭啲咁我哋咪煎返邊度囉咁而家我哋就，調到個火就一中大火之間啦咁樣。</p></a>
+				<a href="#00:15:41.12" id="00:15:41.12" class="lt" onclick="jumptoTime(941, this.id)"><p>油溫，迫返啲佢裏面啲油份呀迫返佢出嚟呀咁樣呢個出油餅就，差唔多喇喎咁你就可以攞去呀識，咁我睇一睇油先，咁我哋瓊油呀都要，瓊佢分零鐘咁我目的呢都係等佢攤攤凍佢，咁我哋唔好太熱咗去切佢呀，咁我哋又攞返嘅熟肉砧板出嚟啦，跟住我哋慢慢開咗佢囉，咁我哋盡量就一刀過啦係咪呀落去啦咁樣畀大家睇下中間呢度，話相當之熱呀。</p></a>
+				<a href="#00:16:31.56" id="00:16:31.56" class="lt" onclick="jumptoTime(991, this.id)"><p>正唔正呀，咁我好似多啲沖呀更加好呀我而家咪開埋佢啦，一刀過，咁我切曬之後呀簡單易做個蔥油餅嘅咪呈現眼前囉，咁樣都發得幾好喎唔錯喎即係距離發達之路咁就，差唔多喎，咁呢個蔥油餅呀咁樣自己做都唔係太過困難呀最重要就係話，有個新鮮嘅蔥呀嘛，同埋即煎即食，就最正嘅，咁將食蔥油餅嘅網友畀個like我聲聲呀，咁樣鍾意食。</p></a>
+				<a href="#00:17:13.34" id="00:17:13.34" class="lt" onclick="jumptoTime(1033, this.id)"><p>芝麻大餅咁點呀一定係職人出去頻道啦，如果鍾意食家鄉煎薄餐呀啲信得嘢呀咁麻煩你今日我頻道會員啦咁我就食嘢先，影片就繼續吹水拜拜，咁我都唔識睇你睇片未呀睇片未咩呀，我食㗎嘛，咁我都忍唔住呀，咁我整咗啖先呀，聽唔聽到嗰啲聲呀，出面就係相當之脆呀，我裏面呀又有個鬆軟嘅感覺，咁我手完啦。</p></a>
+				<a href="#00:17:52.50" id="00:17:52.50" class="lt" onclick="jumptoTime(1072, this.id)"><p>真係啲蔥唔係好夠呀，同埋呢，上個芝麻上都唔係太好呀，咁我一問一問啲聲呀，有啲網友呀都係畀個留言啦，芝麻點樣上多啲啦，咁我又。</p></a>
+				<a href="#00:18:6.58" id="00:18:6.58" class="lt" onclick="jumptoTime(1086, this.id)"><p>繼續食呀先啦咁我呢個未到十分之正呀拜拜。</p></a>
+</div>
+	</body>
+</html>

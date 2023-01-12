@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>〈職人吹水〉頻道會員 涼粉 咁樣整好好食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'y-tk-xjcbdo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>〈職人吹水〉頻道會員 涼粉 咁樣整好好食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.75" id="00:00:21.75" class="lt" onclick="jumptoTime(21, this.id)"><p>大家好又係我星星同大家職人吹水，咁一睇以上嘅材料，仲要為我整緊大閘蟹㖭呀，有薑又有糖呀整薑糖呀，咁今日嘅主角都係薑糖喎，依家個個都會喺屋企煮食㗎喇因為而你而家出街食特別係食甜品呀，食啲凍嘢呀都唔係咁多地方有得食，有都唔係咁夠膽食咁呀有啲就真係要自己整呀，咁我啱啱尋日就落咗去深水埗，咁呀買啲架撐㗎嘛咁我每次落身心理部呀。</p></a>
+				<a href="#00:01:6.55" id="00:01:6.55" class="lt" onclick="jumptoTime(66, this.id)"><p>我都會做兩樣嘢，第一，佢食腸粉，第二，就係，呢個黑猛猛咩嚟㗎，呢個叫做涼粉呀，深水埗，跟住桂林街鴨寮街前面嗰度有一檔呀都唔錯價錢唔貴呀，咁呀，本地做，質量唔錯我每次落去呢我都會幫襯嘅，咁整涼粉，其實個個都，已熟能長㗎喇咁今日同大家分享一個，整個薑糖呀整個薑糖跟住就整個涼粉，咁我仲有一隻好特別嘅材料呀呢就叫做。</p></a>
+				<a href="#00:01:52.87" id="00:01:52.87" class="lt" onclick="jumptoTime(112, this.id)"><p>藍香紫呀，藍香紫呀我上年，買㗎都係間中攞出嚟沖下都係，清潔解毒呀相當之有益嘅，咁邊個地方有得買呢買啲東南亞食品嘅舖頭，我哋一時間，溫啲凍滾水浸咗佢，你唔好睇佢咁少呀呢度有一個茶匙到呀，我哋畀足夠嘅水落去，浸到面，大家睇到呀，涼粉同呢隻有關係有關係呀，首先我哋煮咗個糖水先，我哋準備300毫升到個清水。</p></a>
+				<a href="#00:02:37.67" id="00:02:37.67" class="lt" onclick="jumptoTime(157, this.id)"><p>倒入個煲嗰度，跟住準備，半隻手掌咁大塊嘅薑，去皮跟住切片，我哋要整啲薑糖呀，咁呢個薑糖呀，除咗食涼粉仲有其他用途喎，咁我哋擺埋啲水喇，跟住開火，我哋用個中火慢慢煮滾佢先，跟住我哋攞包片糖出嚟，同片糖日相當之啱配搭嘅，做呢個涼粉咁除咗呢個薑糖之外呢用椰糖整都好食㗎喎，今日就用薑糖做咁我哋用幾多，兩塊。</p></a>
+				<a href="#00:03:30.08" id="00:03:30.08" class="lt" onclick="jumptoTime(210, this.id)"><p>我哋把埋啲，一齊嗰度搵咗佢先，咁糖水煮緊之際咁而家我哋去吹返今日，主角囉，買呢類型嘅先制涼粉呢咁呀邊度，一般賣豆腐嘅舖頭都會有，咁有部分超市呢都會有啲叫做罐頭涼粉，咁，如果豆腐舖買嗰啲呢佢通常都係一大罐呀咁咪集開一件件咁樣呀，咁我返到嚟啦我哋首先，擺個隻碗喺度，放咗落去先，咁如果喺街市買嗰啲散裝涼粉呢咁返到嚟我哋第一步呢。</p></a>
+				<a href="#00:04:23.82" id="00:04:23.82" class="lt" onclick="jumptoTime(263, this.id)"><p>煲過嘅凍滾水，我未稍為沖一沖佢，沖佢個目的呢，都係，沖走佢一啲，唔乾淨嘅嘢呀譬如呀尋哀呀或者乜嘢如果罐頭嗰啲呢就唔需要，跟住呢，我哋就成塊擺出嚟，咁做呢類型，甜品，或者，凍飲嘅食品呀咁我哋必須都要事先，消毒曬你個，砧板刀具雙手，事前一定要清洗乾淨呀，特別係而家，啲菌咁犀利啦咁我哋點樣改呢，咁我哋首先改到一半片先。</p></a>
+				<a href="#00:05:9.38" id="00:05:9.38" class="lt" onclick="jumptoTime(309, this.id)"><p>慢慢慢慢改落去，有很多買了這些涼粉回來，都不知道怎樣應付，很大塊，不知道怎樣切，不用擔心，我們慢慢把它切成兩片，切好之後，大家覺得像甚麼呢，有賭錢嗎?</p></a>
+				<a href="#00:05:38.06" id="00:05:38.06" class="lt" onclick="jumptoTime(338, this.id)"><p>有玩過天狗、排狗嗎?</p></a>
+				<a href="#00:05:41.66" id="00:05:41.66" class="lt" onclick="jumptoTime(341, this.id)"><p>現在差不多那類型了，現在就改成一條條，如果大家家裡有些玻璃型的雜刀、雜薯條，雜到玻璃型都可以，這樣切，然後疊在一起，然後就打直切到一粒粒的大小，小心手，涼粉不是太難切的，但是要切到一粒粒的，也是有難度的，現在外面有些都會切到一粒粒的，用一個透明盒裝著，我強烈建議大家吃涼粉不要吃罐頭，買到新鮮就吃新鮮，因為都是夏天。</p></a>
+				<a href="#00:06:38.30" id="00:06:38.30" class="lt" onclick="jumptoTime(398, this.id)"><p>用來做燒薯的，然後就逐一放進去，放進去之後，進入下一步，很簡單，拿出煮過的水，倒進去，讓它醃一醃，做這個步驟兩次，然後倒出水，把水逼出來，或者用篩子隔一隔，主要是幫涼粉稍微清潔一下，逼出第一次水，倒進去，然後又來一次，放入冷開水，消毒了的氣泡，然後隔水，隔水後，倒進去，第三次，倒入冷水。</p></a>
+				<a href="#00:07:50.13" id="00:07:50.13" class="lt" onclick="jumptoTime(470, this.id)"><p>輕輕地泡過涼粉就可以了，然後用保鮮紙封好，放進冰箱冷藏，涼粉在冰的時候，拿一些薑汁糖水出來，看起來好像很稀，冷藏過後會變稠一點，喜歡吃薑味的可以再加一點，先放涼，放涼的時候，就要拿出涼粉了，大家看到嗎?新鮮涼粉撞到冰箱裡的顏色，亮亮的，就是新鮮涼粉的威力，糖水還沒冷，就跟大家聊聊陳年往事，我以前在西灣河十字徑村長大，村口那邊。</p></a>
+				<a href="#00:08:54.81" id="00:08:54.81" class="lt" onclick="jumptoTime(534, this.id)"><p>小時候會有些刨冰店，什麼刨冰店呢?就是喝冰的，當然，那時候的衛生情況就不能跟現在比較，我那時候最喜歡喝什麼呢?</p></a>
+				<a href="#00:09:8.57" id="00:09:8.57" class="lt" onclick="jumptoTime(548, this.id)"><p>涼粉，加一點紅豆，然後再刨冰，再加橙汁，那時候對我來說是最棒的飲品，現在跟大家分享兩三種的涼粉飲法，如果家裡沒有糖水，有一個方法是非常棒的，拿冰涼的涼粉出來，加一點煉奶，一茶匙的煉奶，然後加一點全脂花奶，這樣就已經很好吃了，如果在這個基礎上更好吃的話，就加一個冰球，我保證小朋友們每一個都會動高手指。</p></a>
+				<a href="#00:10:6.54" id="00:10:6.54" class="lt" onclick="jumptoTime(606, this.id)"><p>第二種吃法，我們用南香籽，首先呢，我們加一點涼粉，然後，我們加薑糖，大概三個湯匙，接著，拿一張南香籽，就這樣灑在上面，就已經很棒了，第三種吃法，我之前做私房菜，除了香茅檸檬薏米水之外，這個涼粉水也是相當受歡迎的，又簡單又好吃，首先，玻璃杯，加入適量的薑糖或者椰糖的糖水，加一湯匙的南香籽，接著，涼粉不用加太多。</p></a>
+				<a href="#00:11:14.42" id="00:11:14.42" class="lt" onclick="jumptoTime(674, this.id)"><p>最主要是要有涼粉水，涼粉水多一點會更好，也不需要太濃，這時候呢，我們加一點冰水，喜歡冷的就加冰水，如果不夠冷的話，就加冰水，這個就當作是涼粉水來喝，跟大家分享，除了做涼粉之外，也可以用涼粉水加一點水泡著，這杯我自己也很喜歡喝，味道各方面都不錯，如果兩者比較，我喜歡加薑糖的，比椰糖的多，其次我喜歡吃哪種呢?</p></a>
+				<a href="#00:12:10.58" id="00:12:10.58" class="lt" onclick="jumptoTime(730, this.id)"><p>我喜歡吃這個，這個加了南香籽，增加了賣點，最好是加一點椰奶，最棒!</p></a>
+				<a href="#00:12:23.98" id="00:12:23.98" class="lt" onclick="jumptoTime(743, this.id)"><p>雖然說是一個簡單的新鮮涼粉，但我們也要懂得如何衛生處理它，大人小朋友也能吃得安心放心，分享兩三款比較簡單的吃法，既好吃又清涼，配上雪糕更加一絕啦，這杯是我的，這兩碗是家裡的一人一碗，我先吃東西啦，喜歡吃涼粉的朋友記得按讚，喜歡吃南香子的朋友訂閱我職人吹水頻道分享這款，南香子涼粉冰。</p></a>
+				<a href="#00:13:1.88" id="00:13:1.88" class="lt" onclick="jumptoTime(781, this.id)"><p>下個視頻再和大家分享，再見。</p></a>
+</div>
+	</body>
+</html>
