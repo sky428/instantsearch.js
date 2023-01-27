@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做韓式牛骨湯 | 用電子壓力煲初試做 | 方便快捷完成清澈美味的湯 | Homemade Korean Galbitang</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'brcTGlV0ck4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做韓式牛骨湯 | 用電子壓力煲初試做 | 方便快捷完成清澈美味的湯 | Homemade Korean Galbitang</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.95" id="00:00:4.95" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello， 各位朋友你們好!</p></a>
+				<a href="#00:00:8.95" id="00:00:8.95" class="lt" onclick="jumptoTime(8, this.id)"><p>我最近買了一些牛肋骨，本來我打算用濃的醬汁去炆煮，因為我最近都不想吃太肥膩太濃味的東西，所以我就轉了想，在家裡找找有什麼材料可以做牛肋骨，所以就想做韓式牛肋骨湯，剛好我家裡也有類似的材料，不過我這個是普通的白蘿蔔，不是韓國的蘿蔔，如果可以買到韓國的蘿蔔就最好了，我這裡有大約兩磅的牛肋骨。</p></a>
+				<a href="#00:00:56.95" id="00:00:56.95" class="lt" onclick="jumptoTime(56, this.id)"><p>洋蔥、蒜頭、雞蛋和韓式粉絲，第一件事要做的是，因為這些牛肋骨是新鮮的，牛肋骨是很好的，你們看一下，但是很肥膩，而且骨頭裡面有很多血水，首先我們要浸凍水，浸一浸，浸多久呢?</p></a>
+				<a href="#00:01:32.95" id="00:01:32.95" class="lt" onclick="jumptoTime(92, this.id)"><p>大約浸大半小時至一小時，總之浸到水從清澈變成粉紅色，我們就可以做下一個步驟，第二件事要浸的就是粉絲，韓式粉絲也是浸軟，接下來我們處理白蘿蔔，去皮，每一次去皮兩次，去深一點，為什麼呢?</p></a>
+				<a href="#00:02:11.95" id="00:02:11.95" class="lt" onclick="jumptoTime(131, this.id)"><p>因為白蘿蔔的皮比較苦，如果去深一點，煮出來就不會太苦了，切好後就把頭切掉，切成兩塊就可以了，需要切成很大塊的，因為我們待會煮湯，會和肉一起煮，切成這樣就可以了，接下來我們要洋蔥，洋蔥也可以，沒什麼所謂的，一個兩個甚至三個都可以，因為我這個洋蔥比較小，所以我就放兩個，接下來就是蒜頭，蒜頭可以。</p></a>
+				<a href="#00:03:4.89" id="00:03:4.89" class="lt" onclick="jumptoTime(184, this.id)"><p>我們這個整個的蒜頭，可以用完它，不過就要分兩部分，一部分我就拿來煮湯，一部分最後就放在湯裡，所以我就預留兩粒，最後的時候，就會做蒜蓉放在湯裡，這兩粒就先拿來放開，剩下的我們就可以，全個去皮之後，煮湯底的時候，就用來煮湯，完成了，我們現在等，我們現在來看一下，這裡你看到嗎，浸了很多血水出來，接下來我們。</p></a>
+				<a href="#00:03:57.89" id="00:03:57.89" class="lt" onclick="jumptoTime(237, this.id)"><p>就把它放進鍋裡，我們就要幫它再汆水，就放涼水，然後將裡面的骨頭，有時候有些髒東西，油、酥的味道，有的味道，不好的味道，都可以將它汆水，汆出來，因為始終這些都是骨頭，所以如果你想湯，好吃一點，沒有那麼，再清一點的話，最好就做這個步驟，現在我等一下就放涼水進去，過了這個面，然後就用涼水開鍋，慢慢煮到它滾。</p></a>
+				<a href="#00:04:51.89" id="00:04:51.89" class="lt" onclick="jumptoTime(291, this.id)"><p>滾起就大約兩三分鐘，就可以了，謝謝，洗淨浮泡，確保湯不會有太多污漬，用電動煲煮大約1.5至2小時，用12杯水煮大約10分鐘，把排骨和洋蔥、白蘿蔔和蒜頭放入煮食水，用燉煮功能煮大約35分鐘，我會省下很多時間，我現在移前一點，把氣閥關上，如果想快一點，用熱水是最好，但我沒有時間用冷水，要等到慢慢煮熱水。</p></a>
+				<a href="#00:07:19.02" id="00:07:19.02" class="lt" onclick="jumptoTime(439, this.id)"><p>加上蒸氣變成高壓，蒸氣變成壓力才可以開始煮，才計35分鐘，我大約是35分鐘，然後用這個，不要用湯這個，因為湯那個是用高壓的，我現在是用低壓的，用這個，需要35分鐘，這樣就不用看火，又省電，然後等它，開始了，現在開始還未計35分鐘，現在開始把水剩下的熱，變成高壓，就可以煮，到時它自己會計，差不多的時候再回來。</p></a>
+				<a href="#00:08:34.02" id="00:08:34.02" class="lt" onclick="jumptoTime(514, this.id)"><p>之前你們有兩隻蛋用來做什麼呢，其實這隻蛋是用來做裝飾，如果不喜歡可以不放，分開蛋黃蛋白，加少少鹽，胡椒粉，攪拌均勻，然後拿去煎，煎一塊薄的蛋餅，一塊白色一塊黃色就可以了，油在熱鍋上，抹勻表面，然後就可以放進去，攪拌均勻，然後就煎，煎好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:26.07" id="00:09:26.07" class="lt" onclick="jumptoTime(566, this.id)"><p>再放入蒜蓉和葱花，完成了，现在已经是L002，即是已经35分钟了，现在还在焗，我再等10分钟才放气，然后就这里了，预备了刚才煎的蛋白丝和蛋黄丝，另外这里有些黑胡椒碎，葱花和蒜蓉，你喜欢可以多一点，我刚才预备了两粒蒜蓉，这里有一条葱，然后是调味，调味有些豉油，这种没有那么咸，你可以用韩国本身有的汤豉油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:9.07" id="00:10:9.07" class="lt" onclick="jumptoTime(609, this.id)"><p>我这种只是低盐豉油，然后有少少盐，但一定要加些盐来调味，另外粉丝也浸好了，现在等待一会儿，我们就做下一个步骤，现在已经过了10分钟，我们可以开气阀，这里千万不要点，因为很热，我们开气阀，放气，放到这颗颗位，这颗银色的，掉下去就可以开盖，你看看这里自己掉下去，放了气就可以拿开，我们看看汤怎么样。</p></a>
+				<a href="#00:10:50.07" id="00:10:50.07" class="lt" onclick="jumptoTime(650, this.id)"><p>哇，好香啊，这里面也有些油，趁这个时间我们可以去掉油，先夹萝卜，然后是骨头，放入汤</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:12.07" id="00:11:12.07" class="lt" onclick="jumptoTime(672, this.id)"><p>谢谢观看，下次见，đây PW �hare fictional Poss� veya Greece，endings</p></a>
+				<a href="#00:11:49.79" id="00:11:49.79" class="lt" onclick="jumptoTime(709, this.id)"><p>사용，ի，Northern，Histor padre，저도，是的</p></a>
+				<a href="#00:11:50.45" id="00:11:50.45" class="lt" onclick="jumptoTime(710, this.id)"><p>Ek，tester，Honors，optic，ichtig</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:33.97" id="00:11:33.97" class="lt" onclick="jumptoTime(693, this.id)"><p>teenth，reset，權</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:41.73" id="00:11:41.73" class="lt" onclick="jumptoTime(701, this.id)"><p>nochsam，gifts</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:42.45" id="00:11:42.45" class="lt" onclick="jumptoTime(702, this.id)"><p>Pr，lacked，енно，noise</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:47.15" id="00:11:47.15" class="lt" onclick="jumptoTime(707, this.id)"><p>TC，ベ Zhang</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:51.07" id="00:11:51.07" class="lt" onclick="jumptoTime(711, this.id)"><p>Attorney，am，handy，mini，jang</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:39.75" id="00:11:39.75" class="lt" onclick="jumptoTime(699, this.id)"><p>glaub，ıll</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:49.87" id="00:11:49.87" class="lt" onclick="jumptoTime(709, this.id)"><p>enforce，corruption，otiation，envelope，fur Ш</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:43.41" id="00:11:43.41" class="lt" onclick="jumptoTime(703, this.id)"><p>robe，store，beginning</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:28.35" id="00:11:28.35" class="lt" onclick="jumptoTime(688, this.id)"><p>SP，fus Renee，Nissan， trzy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:39.83" id="00:11:39.83" class="lt" onclick="jumptoTime(699, this.id)"><p>зан，Crisis，finitely，lean，hilarious</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:43.23" id="00:11:43.23" class="lt" onclick="jumptoTime(703, this.id)"><p>Stanford，Zen，��</p></a>
+				<a href="#00:11:48.73" id="00:11:48.73" class="lt" onclick="jumptoTime(708, this.id)"><p>ど，refrigerator，ędzie，точки，données，check Lun黃，ynı，yy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:51.59" id="00:11:51.59" class="lt" onclick="jumptoTime(711, this.id)"><p>�� corr訂，aromatic，HD，authentication，ap valued</p></a>
+				<a href="#00:11:23.91" id="00:11:23.91" class="lt" onclick="jumptoTime(683, this.id)"><p>rumah，Э，ieron，pagar，先把蘿蔔切開，蘿蔔很軟的，一切開就能切開，先切半，然後切成一件件，最後開始煮，為什麼要這樣做呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:18.27" id="00:12:18.27" class="lt" onclick="jumptoTime(738, this.id)"><p>因為我們有粉絲，如果沒有粉絲，可以先煮湯，再放材料，煮滾後放碗裡放材料就行，但因為有粉絲，我們就，好，我們移過來，煮一煮粉絲，開火，加熱湯，湯很清澈，已經撇去油的湯，另外這裡有排骨，有幾種做法，我現在用最簡單的方法，把所有調味料放在湯裡，如果你有買一些，教煮韓式菜的書，這個湯，這個排骨，拿出來後，其實可以用豉油。</p></a>
+				<a href="#00:13:2.27" id="00:13:2.27" class="lt" onclick="jumptoTime(782, this.id)"><p>因為現在煮湯，放豉油和蒜蓉，拌一拌放在一邊，湯也會再加味，但我會把湯和豉油混合，放了一湯匙的豉油，拌一拌排骨，讓它有少少味，但可以不做，隨你喜歡，我可以這樣試，放了排骨是熱的，放了豉油，很快就吸收了，可能就是因為這個方法，可能就是因為這樣，因為我始終沒試過，做這個湯，開始看到湯已經很熱了，現在煙越來越多的時候。</p></a>
+				<a href="#00:13:41.07" id="00:13:41.07" class="lt" onclick="jumptoTime(821, this.id)"><p>我們就可以放粉絲下去，看你吃多少，譬如你家裡人多，每人一串，看你想不想當一個湯粉來吃，還是怎樣，如果像我這樣，我真的想當一個晚餐來吃，我剛才那一堆已經吃了這麼多，其實好像兩碗粉，不過如果你出去吃韓國料理，這個湯的粉絲其實很少，你看一放下去，放進熱的湯裡，它很快就OK了，這個時候我們就放另一些配料進去，就是蒜蓉。</p></a>
+				<a href="#00:14:15.57" id="00:14:15.57" class="lt" onclick="jumptoTime(855, this.id)"><p>這個蒜蓉我有兩粒，就放進去煮，接著就是醬油，醬油那裡就大約我們放幾湯匙，因為始終這個湯這麼多水，這麼多水分，我們之前一點調味都沒有放，轉一轉它，我舀一點來試一下味，還未夠的，今天視頻就分享到這裡了，可以加多一點醬油和鹽，加入蘿蔔，如果這個時間最好就是有韓式的鍋就可以直接在鍋裡面煮熱它，如果沒有的話我們就自己做一個碗。</p></a>
+				<a href="#00:15:24.88" id="00:15:24.88" class="lt" onclick="jumptoTime(924, this.id)"><p>所以我就要煮滾一點，如果是用韓式的鐵鍋的那些碗 湯碗，它可以放在爐頭上面那些就最好了，這樣就可以弄到熱熱辣辣的吃，首先我就在底部放一點粉絲，我現在開始上碗碟了，在碗裡放一點粉絲，然後就放幾塊排骨上面，然後就可以舀湯和蘿蔔上去，然後就可以放蛋白絲和蛋黃絲上去，這個就是我看到書的時候都會有的，所以都跟著放一些進去。</p></a>
+				<a href="#00:16:41.55" id="00:16:41.55" class="lt" onclick="jumptoTime(1001, this.id)"><p>然後就是蔥花，然後就放一些黑椒碎在上面，好，一個牛骨清湯就已經做好了，給你們看看，就是要給你們看一下，因為這個是深色碗，看不到湯的顏色，湯很清，但是這個用白色底的碗就看得到，所以這個湯一定很清的，好，我們可以試味了，讓你們看看湯，試湯的味道，很清澈，隔了油已經盡量少油，嗯!很香。</p></a>
+				<a href="#00:17:39.91" id="00:17:39.91" class="lt" onclick="jumptoTime(1059, this.id)"><p>很香蘿蔔，洋蔥你都會喝到那種味道，但不是很濃，那種，而是很清，然後我試一下，因為我自己，看書就有，看過有放蛋，因為都是，給美觀的，但都可以試一下，上面放了胡椒，就更香，喜歡的話可以再放胡椒，然後我試，蘿蔔</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:13.91" id="00:18:13.91" class="lt" onclick="jumptoTime(1093, this.id)"><p>嗯!，蘿蔔很綿，一口，一口，就已經很軟，而且，多汁，甜，你見過，我沒有放冰糖，我們平時，我們華人，喜歡炆東西，放冰糖令到肉軟，但我今次，沒有，只是，只是，用Instant Pot，炆它，肉一拆就起，可以，嗯!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:7.91" id="00:19:7.91" class="lt" onclick="jumptoTime(1147, this.id)"><p>現在有些，不是很軟，但如果你喜歡，脫骨很軟，可以煮久一點，這個質地我喜歡，如果你想，再軟一點，不想咬，可以煮到，50分鐘，我這個35分鐘，試粉絲，嗯!</p></a>
+				<a href="#00:19:36.51" id="00:19:36.51" class="lt" onclick="jumptoTime(1176, this.id)"><p>嗯!</p></a>
+				<a href="#00:19:38.45" id="00:19:38.45" class="lt" onclick="jumptoTime(1178, this.id)"><p>好吃!</p></a>
+				<a href="#00:19:40.41" id="00:19:40.41" class="lt" onclick="jumptoTime(1180, this.id)"><p>如果你想吃辣，想這個味道是辣的話，你可以，剛才撞湯的時候，你可以，我剛才在肉上面放了一些豉油，那時候你可以放一些辣椒粉進去，然後撞湯進去，如果不是的話，你可以就這樣吃，又可以，你可以平時做一個正式的韓餐，有泡菜、有飯，這樣就更加好，對我來說，這個湯對我來說，這次我是第一次做，看了書、看了參考。</p></a>
+				<a href="#00:20:10.39" id="00:20:10.39" class="lt" onclick="jumptoTime(1210, this.id)"><p>然後試一下自己在家裡用不僅有的材料來做，我覺得做出來也是很成功的，尤其是Instant Pot，電子壓力鍋，真的可以幫到很多忙，如果你們可以的話，也可以試一下自己用Instant Pot做，但是如果沒有的話，就像我之前也說了，用鍋子煮，大約煮一個半小時、兩個小時，可以節省爐火的。</p></a>
+				<a href="#00:20:34.69" id="00:20:34.69" class="lt" onclick="jumptoTime(1234, this.id)"><p>就是可以煮45分鐘，焗它大半個小時再開火再煮，加起來再煮45分鐘，這樣應該也可以做到這個效果的，今天我介紹到這裡，謝謝大家一起跟我去經歷，我這次第一次做韓式的牛骨湯，希望你們也喜歡，如果你們也可以試的話，你們應該會做得比我好，下次見，拜拜。</p></a>
+</div>
+	</body>
+</html>

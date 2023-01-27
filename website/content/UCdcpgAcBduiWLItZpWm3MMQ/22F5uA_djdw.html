@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做街頭小食：咖哩豬皮蘿蔔牛丸魚蛋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '22F5uA_djdw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做街頭小食：咖哩豬皮蘿蔔牛丸魚蛋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>咖哩豬皮蘿蔔牛丸魚蛋，大家好，最近我買了一些丸子，這是黑椒牛筋丸，魚蛋丸和墨魚丸，有時我會買一些放在冰箱，隨時可以用來煮綠粉，我看到這麼多，不如就做一個平常在街邊吃到的小吃，咖哩魚蛋，豬皮蘿蔔魚蛋，不如就加上丸子，豬皮蘿蔔牛丸魚蛋墨魚丸。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.35" id="00:00:46.35" class="lt" onclick="jumptoTime(46, this.id)"><p>不如我們看看怎樣做，我這次做法比較簡單，豬皮我買在超級市場的凍櫃就可以了，已經洗好浸開，沒有皮乾淨，如果喜歡的話，有些人會買沙包豬皮，也可以買乾貨，然後有蘿蔔，買的時候選一些最新鮮的就好了，然後有我這次選的丸子，這是黑椒牛筋丸，炸魚蛋丸，墨魚丸，每樣一碟，每樣大約20粒，所以這裡很多，另外需要一些料頭，蒜頭，乾蔥，洋蔥，薑，然後會加醬料。</p></a>
+				<a href="#00:01:55.35" id="00:01:55.35" class="lt" onclick="jumptoTime(115, this.id)"><p>一會兒再說，現在先處理面前的食材，首先處理豬皮，這裡的豬皮是新鮮做的，是超市自己做的，但我們也會處理的，你看看，打開，看到豬皮還有些白色的，其實是油，最好是用豬油的成份，這樣，最好是用刀刮走油份，這樣可以更容易出水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:40.89" id="00:02:40.89" class="lt" onclick="jumptoTime(160, this.id)"><p>有一些位置，好像這裏，有些豬油還未完全清理，用刀輕輕把脂肪刮走，看到嗎，這樣豬皮就不會太油膩，將豬油刮走，看似很麻煩，但其實很簡單，輕輕地刮就可以了，整理一下，看到豬皮有白色的，再刮走，洗淨，切成適合的大小，因為已經發酵了，所以要看想吃多大塊，先去皮萝卜，我會在同一個位置劈兩下，因為中間的皮會有一點點澀味</p></a>
+				<a href="#00:04:19.83" id="00:04:19.83" class="lt" onclick="jumptoTime(259, this.id)"><p>然後就把它切成條狀，切成大小隨意，如果你想吃到一塊塊的蘿蔔就切成大塊一點，我每樣都切成四塊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:50.83" id="00:04:50.83" class="lt" onclick="jumptoTime(290, this.id)"><p>然後就把蘿蔔放進熱水裡煮一煮。</p></a>
+				<a href="#00:05:10.83" id="00:05:10.83" class="lt" onclick="jumptoTime(310, this.id)"><p>喜歡的話可以放兩粒冰糖，煮兩分鐘就可以了，我現在就把薑和蔥放進去，然後就把豬皮放進去煮一煮，再把豬皮洗乾淨，豬皮已經開始脹起來了，就把它流起來，然後就放進冷水裡，因為我家裡的水是很冷的，所以就可以用冷水去煮一煮，所有材料都準備好了，現在先調配醬汁，有醬汁，咖喱魚蛋，豬皮蘿蔔，最重要的是咖喱汁，我這裏有些咖喱醬，可以用自己喜歡的牌子。</p></a>
+				<a href="#00:06:51.11" id="00:06:51.11" class="lt" onclick="jumptoTime(411, this.id)"><p>我這裏有這麼多，我會放一湯匙半，如果想要更加辣，可以加少許辣豆瓣醬，我大約放一個茶匙，另外還有另一個香味來源，就是加少少柱候醬，做這些我家裏做就像混醬一樣。</p></a>
+				<a href="#00:07:48.67" id="00:07:48.67" class="lt" onclick="jumptoTime(468, this.id)"><p>混一些家裏有的醬來做，如果你有沙茶醬可以加沙茶醬，我會加另一樣海鮮醬，海鮮醬會加多少少，因為海鮮醬甜，可以調和咖哩蛋比較辣，我會加海鮮醬，海鮮醬和咖哩蛋一樣一湯匙半，這樣就很好味，將它們拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:43.67" id="00:08:43.67" class="lt" onclick="jumptoTime(523, this.id)"><p>這個就是一會兒做的醬，因為這個醬顏色很深，我想它黃一點香一點，我們可以加少少黃薑粉，我這裡大概一個茶匙黃薑粉，這樣就剛剛好，我們可以開始煮了，首先我們要加油，炒洋蔥、乾蔥和蒜頭</p></a>
+				<a href="#00:09:28.67" id="00:09:28.67" class="lt" onclick="jumptoTime(568, this.id)"><p>熱油後，開始感覺到熱力，我們就可以將乾蔥和洋蔥放進去，開中火慢慢炒，干葱和蒜头可以放多少都可以，我这次放了2粒干葱和半个洋葱，炒完之后会变成浓的酱汁，但要看你喜不喜欢浓浓的酱汁，我喜歡醬汁濃一點，所以我會加多一點，炒至半透明就可以加入蒜蓉，繼續炒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:59.39" id="00:10:59.39" class="lt" onclick="jumptoTime(659, this.id)"><p>將醬汁放入鍋中，醬汁要過火炒，不要直接放入鍋中，要和材料炒一會才會更香，嗯!很香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:23.39" id="00:11:23.39" class="lt" onclick="jumptoTime(683, this.id)"><p>慢慢炒，可以撈走，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，炒至三分熟，加入白萝卜，翻炒均匀</p></a>
+				<a href="#00:12:21.10" id="00:12:21.10" class="lt" onclick="jumptoTime(741, this.id)"><p>πε surve，commun transaction</p></a>
+				<a href="#00:12:25.30" id="00:12:25.30" class="lt" onclick="jumptoTime(745, this.id)"><p>incarcerated，tedious，Phi，wär，Together，bowel</p></a>
+				<a href="#00:12:22.04" id="00:12:22.04" class="lt" onclick="jumptoTime(742, this.id)"><p>слов，sibling，dud orange，diet，Gear</p></a>
+				<a href="#00:12:26.20" id="00:12:26.20" class="lt" onclick="jumptoTime(746, this.id)"><p>infectious，assa，swellma，pf，saat</p></a>
+				<a href="#00:12:28.78" id="00:12:28.78" class="lt" onclick="jumptoTime(748, this.id)"><p>üğ，fout，ní，把白色的植物分開，把咖喱顏色也加上去，肉已經很滿了，我會用雙鏟，cemumbs</p></a>
+				<a href="#00:13:6.09" id="00:13:6.09" class="lt" onclick="jumptoTime(786, this.id)"><p>llevar，Dig logic，そうだ，locking，gives，不行，очно，baby，Boost league，ffect，sports，Warum，好吃 passiert</p></a>
+				<a href="#00:13:6.45" id="00:13:6.45" class="lt" onclick="jumptoTime(786, this.id)"><p>avic，grim，煎軟了，很香</p></a>
+				<a href="#00:13:11.03" id="00:13:11.03" class="lt" onclick="jumptoTime(791, this.id)"><p>現在可以，完成，加入水，加入西葱，加入雞湯，拌勻後將雞湯倒入雞湯中，再拌勻</p></a>
+				<a href="#00:13:35.55" id="00:13:35.55" class="lt" onclick="jumptoTime(815, this.id)"><p>煮滾，因為蘿蔔已經煮了一會，現在可以慢慢燜，另外豬皮也入味，覺得不夠水可以加熱水，現在慢慢等它煮滾，然後慢慢調小火，等它煮到夠味就可以了，現在已經煮了半小時，關火，放置約十分鐘，現在已經入味了，這個配菜配夜總好吃，現在當然也會很好吃，可以上碟了，因為醬汁不是很濃稠，如果喜歡可以加芡汁，但我個人不喜歡。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:41.55" id="00:14:41.55" class="lt" onclick="jumptoTime(881, this.id)"><p>我覺得這樣已經很足夠，我們回來了，還未裝好，我可以裝到兩大碗，所以我食譜會調節份量，不如試吃吧，很開心找到兩支竹籤，可以在家裝在街邊吃魚蛋，試一下魚蛋，你們喜歡蘸甜醬還是辣醬，我知道有些會有很濃稠的醬，但我現在已經很滿足了，ixediami</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:41.08" id="00:15:41.08" class="lt" onclick="jumptoTime(941, this.id)"><p>war，ups，Gos，pture</p></a>
+				<a href="#00:15:42.10" id="00:15:42.10" class="lt" onclick="jumptoTime(942, this.id)"><p>іє giveaway，pection，ṛṣlement，cursor，spinner，hypert cancell，Pla original</p></a>
+				<a href="#00:15:40.68" id="00:15:40.68" class="lt" onclick="jumptoTime(940, this.id)"><p>Argh Development，further，pén decor，zego，ẫn traced，fut explained</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:40.48" id="00:15:40.48" class="lt" onclick="jumptoTime(940, this.id)"><p>不 Iya，先試蘿蔔，已經很入味，味道剛才才起鑊，所以沒有額外加味，可以加鹽或糖，調味，現在試豬皮，很入味，雞皮吸收了汁，很棒，不過很辣，對我來說，突然吸收了這麼大一口汁，很辣，所以辣與不辣，要看自己如何調較，如果能吃辣，可以在咖喱蛋加多些辣豆瓣醬，如果不能吃辣，可以相對減少一點，可以加多些柱候醬和海鮮醬的味道。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:9.38" id="00:17:9.38" class="lt" onclick="jumptoTime(1029, this.id)"><p>今天分享到此，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

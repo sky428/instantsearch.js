@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易食譜：柚子蜜煎鴨胸/美極蝦碌/清酒煮蜆</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pF6VE1srzzA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易食譜：柚子蜜煎鴨胸/美極蝦碌/清酒煮蜆</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.15" id="00:00:0.15" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天和大家一起做三道菜，我們開始吧，首先，用鹽水浸泡蜆，浸泡約一至兩個小時，然後用牙刷清洗乾淨，之後處理蝦，這是冰鮮蝦，融雪後，把蝦腳和眼睛和牙齒的尖端切掉，然後用牙籤挑去蝦腸，在蝦背的位置用牙籤刺進去，然後拉出來就可以了，用廚房紙把蝦印乾後放入雪櫃冷藏，現在處理料頭。</p></a>
+				<a href="#00:01:24.92" id="00:01:24.92" class="lt" onclick="jumptoTime(84, this.id)"><p>洋蔥切絲</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:54.92" id="00:01:54.92" class="lt" onclick="jumptoTime(114, this.id)"><p>洋蔥切絲，洋蔥切絲，洋蔥切絲，蒜頭切成蓉，很多人問蒜頭如何去皮，其實很簡單，只要用刀背拍一拍，然後就剁一剁蒜頭的頭，然後就剁開蒜頭</p></a>
+				<a href="#00:03:34.78" id="00:03:34.78" class="lt" onclick="jumptoTime(214, this.id)"><p>剁蒜頭，接着我们切干葱，一半切丝，一半切碎，然後處理鴨胸，先切掉鴨皮凸出來的部分，這是冰鮮鴨胸， 剛才用了雪鮮鴨皮，在鴨胸表皮斜切， 把鴨皮斜切，切完一邊，我會切另一邊，你喜歡的可以將切的寬度切密一點，鍋未開火，我們先加些油，鴨胸也加些鹽在表皮上，將鴨胸放入冷鑊，記得鴨胸是冷的，放入鴨胸後才開火。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:49.95" id="00:05:49.95" class="lt" onclick="jumptoTime(349, this.id)"><p>開小火慢慢煎，聽到有聲音就煎大約6分鐘，鴨胸會變得香脆，然後可以轉至另一面，煎至金黃色就可以撈出，每一根就分離，如果想食熟啲嘅話你可以煎耐啲，煎好後上碟， 放置10-8分鐘，倒入油酒和柚子蜜， 約2湯匙，然後加入一茶匙的豉油，拌勻，直至醬汁變稠，Mo continues food Verseción Cage，divul reservations。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:23.91" id="00:07:23.91" class="lt" onclick="jumptoTime(443, this.id)"><p>Bo SC，inhabit，compromised，yerde，runners，cket，Phase，herkes，순，trong，teens，לפ cybersecurity，ties，chiff recognise，göt，extraordinarily，NonTw�면，hence。</p></a>
+				<a href="#00:07:26.15" id="00:07:26.15" class="lt" onclick="jumptoTime(446, this.id)"><p>exercising，passa，unless</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:27.01" id="00:07:27.01" class="lt" onclick="jumptoTime(447, this.id)"><p>Temperенной，된，utches，しゃ，arbeiten，disgr likes，��，picked，participant dollars，RC，generations</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:26.97" id="00:07:26.97" class="lt" onclick="jumptoTime(446, this.id)"><p>nap，circumstance，60's，i，multiplозя，謝謝，然後把鴨胸切片，因為鴨胸皮很脆，所以切片時很難，當然你可以用鋒利的刀</p></a>
+				<a href="#00:08:5.66" id="00:08:5.66" class="lt" onclick="jumptoTime(485, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，切好之後就可以把柚子蜜汁淋上去，或者可以放在碟邊沾醬吃，是不是很簡單呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:27.68" id="00:08:27.68" class="lt" onclick="jumptoTime(507, this.id)"><p>這個柚子蜜煎鴨胸就完成了，接著我們來做美極煎蝦，首先把生粉放上去，將蝦均勻地煎滿生粉，你喜歡的話可以不放，我放的原因是因為這些是冰鮮蝦，煎出來的時候可以吸走水份，和令蝦乾身一點，煎出來脆一點，不喜歡的話可以不放生粉，油熱好之後，將蝦排上去，慢慢煎至兩邊金黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:52.17" id="00:09:52.17" class="lt" onclick="jumptoTime(592, this.id)"><p>蝦排煎至金黃色，不然可以直接把蝦放入鑊炒香</p></a>
+				<a href="#00:10:38.79" id="00:10:38.79" class="lt" onclick="jumptoTime(638, this.id)"><p>加一點點鹽，加一點點糖，加一點點水，加一點點胡椒粉，加一點點白醋，加一點點生抽，加一點點老抽，加一點點白醋，煎至金黄反转，一边煎一边翻面，煎至兩面金黃後， 將蝦拿走，將蝦拿走後， 將其放入煎鍋中，然後將洋蔥放入油鍋中炒至軟身和金黃色，加入洋蔥和蒜末，加入蔥和蒜末，炒好之後就可以落個醬汁，呢個味極汁係好簡單嘅。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:28.83" id="00:12:28.83" class="lt" onclick="jumptoTime(748, this.id)"><p>一湯匙味極汁配一茶匙糖，就睇下你需要幾多味極汁，我呢度就係三湯匙味極汁同三茶匙糖，好，我哋可以出嚟啦，三勺辣椒加埋，將蝦炒至汁收乾就可以上碟食，美極煎蝦完成，最後一個菜，清酒煮蜆，首先用砂鍋，熱鍋後，加入油，均勻地鋪滿砂鍋，然後將乾蔥和蒜放入去慢慢炒，炒到有蒜蓉的香味之後，我們就可以將片放入去。</p></a>
+				<a href="#00:13:42.14" id="00:13:42.14" class="lt" onclick="jumptoTime(822, this.id)"><p>然後將它輕輕地炒 拌勻就可以了，最後加少少清酒，我這裡是1 1 3 半，喜歡多些的可以加多些，然後蓋上蓋子，大概煮幾分鐘，直到蜆可以開口就可以了，這個食譜沒有加鹽，因為蜆已經夠味了，最後加些蔥花和牛油，拌勻，就可以整個沙窩一起上碟了，讓你們看看是不是很正呢，清酒煮蜆完成了。</p></a>
+				<a href="#00:14:54.01" id="00:14:54.01" class="lt" onclick="jumptoTime(894, this.id)"><p>今次我用新方法拍攝，拍攝後再配音。</p></a>
+				<a href="#00:15:1.01" id="00:15:1.01" class="lt" onclick="jumptoTime(901, this.id)"><p>我最喜歡今次的主食片，聲音很逼真。</p></a>
+				<a href="#00:15:7.01" id="00:15:7.01" class="lt" onclick="jumptoTime(907, this.id)"><p>希望大家喜歡，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

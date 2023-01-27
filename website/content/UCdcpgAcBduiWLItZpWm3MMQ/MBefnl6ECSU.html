@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家常XO醬 (XO Sauce)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MBefnl6ECSU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>家常XO醬 (XO Sauce)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，快到農曆新年了，很多人在家裏都會做一些糕類，例如蘿蔔糕、芋頭糕等等，吃這些糕的時候，很多時候都會有不同的醬料，其中一樣就是XO醬，今天我想和大家一起做這個家常的XO醬，為什麼叫做家常呢?因為你不一定要用最貴最貴的材料，我們都可以做到一個很美味的XO醬，而這個XO醬，你做一個一定的份量，還可以倒在一些小小的瓶子裏送給朋友，都很好的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:44.06" id="00:00:44.06" class="lt" onclick="jumptoTime(44, this.id)"><p>不如我們現在開始吧，好嗎?</p></a>
+				<a href="#00:00:47.06" id="00:00:47.06" class="lt" onclick="jumptoTime(47, this.id)"><p>首先我要介紹一下材料，材料方面，我用了乾瑤柱，不是很大顆的，因為那些很貴，我家裡有，但我又不太捨得，所以我另外買了一些，我去跟海味舖問他們，我想做XO醬，想用一種便宜一點的價錢，不用一定要很漂亮的，因為他們都跟我說，如果你用一個很漂亮的乾貝或乾瑤柱來做，其實真的浪費了，當然你有這個能力，有這個價錢，有這個財力是不介意的。</p></a>
+				<a href="#00:01:30.43" id="00:01:30.43" class="lt" onclick="jumptoTime(90, this.id)"><p>你可以將這些轉做一些很圓粒，很大粒的日本乾貝都可以，我這隻介紹的也是日本來的，那隻是小粒，碎一點點的，這隻也要74元加一磅，這裡大約150克左右，半磅不夠，蝦米，當然你覺得吃好一點的，你可以用蝦乾來切粒，我就用普通蝦米，你看到它們兩個好像有些水一樣，因為我現在用熱水浸泡著它，乾瑤柱和金華火腿，這兩樣要拿去蒸。</p></a>
+				<a href="#00:02:29.43" id="00:02:29.43" class="lt" onclick="jumptoTime(149, this.id)"><p>我現在將這兩個拿去蒸，我介紹其他材料，75克蝦米，乾瑤柱150克，火腿65克，蒜頭100克，蔥頭150克，另外有些辣椒，辣椒你就可以選擇，你可以加紅辣椒或紫天椒，視乎你喜歡吃辣，可以吃到多辣，而我吃不太辣，所以我一半是辣椒，一半是紫天椒芯，一會兒我還會將紫椒倒出來，如果你吃辣的話，可以全部加紫天椒或紫椒。</p></a>
+				<a href="#00:03:20.43" id="00:03:20.43" class="lt" onclick="jumptoTime(200, this.id)"><p>如果你不吃辣，像我這樣，只想要味道，可以將紫椒倒出來，只留一兩隻有紫椒的都可以，在這個時間，我先拿這些拿去蒸，而這個金華火腿，我蒸之前，我會在中間切一半，讓它容易蒸，而且它的紋路是這樣的，一會兒蒸起來，一捏就會很容易閃爍，它的長度好像和干瑤柱差不多長一樣，現在我拿去蒸。</p></a>
+				<a href="#00:04:5.44" id="00:04:5.44" class="lt" onclick="jumptoTime(245, this.id)"><p>做XO醬最麻煩的就是準備剛才的材料，乾蔥不是一買回來就這樣，要去皮，切粒，涼，蒜頭也是，為什麼要戴手套呢?因為一會兒蒜頭和乾蔥切的時候，很容易就…，我現在已經開始…，始終我自己又不是很會噴，首先，我們現在就開始切它，如果你怕，例如切這些紅蔥頭的時候，你怕流眼淚的話，你可以將紅蔥頭放進冰箱，冰格冷藏三四個小時，再拿出來切。</p></a>
+				<a href="#00:05:7.12" id="00:05:7.12" class="lt" onclick="jumptoTime(307, this.id)"><p>我沒有這個時間，就這樣把它切了，已經開始有些工序的感覺了，有人說如果沒有紅蔥頭，可以用其他代替，可以用洋蔥代替，但香味上就不太一樣，紅蔥頭會更香，平時紅蔥頭可以用來做菜，有很多不同的做法，但你只炸這些紅蔥頭，其實在東南亞很多地方的菜都會有炸的蔥頭，平時你喜歡的話，自己也可以炸一罐放在這裡用，如果想在家裡送給朋友，可以把食譜加多一點。</p></a>
+				<a href="#00:06:25.87" id="00:06:25.87" class="lt" onclick="jumptoTime(385, this.id)"><p>如果只是一家人，兩夫妻，一家四口，很少的，可以把食譜分開來做，我現在就切好了，切蝦米，可以切成碎片，可以省油和水份，但要留意火候，因為蝦米會燒焦，最後處理辣椒，可以切成粒狀，但我怕辣，所以要切成粒狀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:37.75" id="00:07:37.75" class="lt" onclick="jumptoTime(457, this.id)"><p>將蝦米推出，辣椒的份量少了，因為我怕辣，如果是你本身吃辣的，可以加辣椒，我這裏的辣椒大約是50克左右，你可以加到80克甚至100克，XO醬本身是辣的，當然你可以做完全不辣，我跟傳統辣，但要看自己的承受程度，如果喜歡辣的，可以加整隻指天椒，可以用或切粒，隨你喜歡，瑤柱蒸好後，我用水去除掉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:57.51" id="00:08:57.51" class="lt" onclick="jumptoTime(537, this.id)"><p>瑤柱絲因為熱，所以用手一挪就已經碎了，另外金華火腿也是，用水去除掉，可以用來煮湯，可以切絲，可以切成絲，但有時間可以切絲，材料準備得差不多了，我這裏有些用來盛起的瓶子，我現在拿出來，我已經把乾瑤柱拆絲後，加入少許玫瑰露酒拌勻，如果不用玫瑰露，可以用紹興酒，加入乾蔥、蝦米、蒜蓉、辣椒和調味料，調味料有三種，雞粉1茶匙、糖1湯匙和蠔油2湯匙。</p></a>
+				<a href="#00:10:38.19" id="00:10:38.19" class="lt" onclick="jumptoTime(638, this.id)"><p>我已經準備灶水，先把油熱好，油不需要太熱，只需要中火慢慢炒，如果想看其他方法，可以到網上找，如果怕蒜頭和乾蔥燒焦，可以分開炒，再拿出來，或者可以把乾瑤柱、蝦米和金華火腿炒好後，用另一個鍋調味，我用的是家常版，不用煮飯，只需要用一個鑊，只要火候控制好，不要太大火，盡量看時間，然後慢慢炒。</p></a>
+				<a href="#00:12:3.19" id="00:12:3.19" class="lt" onclick="jumptoTime(723, this.id)"><p>現在等油溫，如果放筷子，看到氣泡嗎?就差不多了，現在已經超過100度，調至中火，調至小火，因為已經有熱的溫度，第一步，將乾蔥放入炸鍋，看到泡沫，不用怕，已經是乾蔥的水份，調至小火，炸完後，放入冰箱冷藏一晚，火候會慢慢變得較為細小，現在可以看到火候變得較為細小，現在可以放入麵團，慢慢地將麵團放入鍋中。</p></a>
+				<a href="#00:13:19.96" id="00:13:19.96" class="lt" onclick="jumptoTime(799, this.id)"><p>慢慢炸，我可以在一至兩分鐘內，加入蒜末，看著火的位置，中火和中火之間不斷調整，現在我慢慢加入，現在火不大，所以蒜頭不會太易爆，所以很快就會變成焦焦的，因為我這麼早放進去，我不會再留起它，所以我慢一點放其實是不要緊的，是讓它慢慢炸，然後將水份慢慢炸出來，然後我們就放最下的，然後我們一樣在順序放進去。</p></a>
+				<a href="#00:14:35.43" id="00:14:35.43" class="lt" onclick="jumptoTime(875, this.id)"><p>看到它現在不是金黃色，只是淺金黃淺黃色，的時候我們就可以將這個，蕃茄絲放進去，你都看到我的火是這麼久都不是很大很大的火，油也不是剛剛開始的時候夠熱之後就不會再繼續加大它很熱，現在就慢慢煮了，這個時間是時間血漬，慢慢將水份炸出來，炸得差不多，水份開始滴出來，就可以加入蝦米了，火力是中火，但不至中大。</p></a>
+				<a href="#00:15:50.22" id="00:15:50.22" class="lt" onclick="jumptoTime(950, this.id)"><p>但比中火多一點，這樣就可以看著煮，加黃酒，這些全部都是內煮的，然後慢慢炒，為什麼我還未加辣椒呢?</p></a>
+				<a href="#00:16:16.22" id="00:16:16.22" class="lt" onclick="jumptoTime(976, this.id)"><p>因為這裏還未煮夠，第二是我怕辣，所以加了一點，你喜歡辣的可以加，如果是新手學的話，我都覺得我自己不是一個熟手，我自己覺得用這個方法比用大火好，我可以加一點胡椒，odorеди series</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:57.26" id="00:16:57.26" class="lt" onclick="jumptoTime(1017, this.id)"><p>ото，hombre，問題</p></a>
+				<a href="#00:16:58.66" id="00:16:58.66" class="lt" onclick="jumptoTime(1018, this.id)"><p>spre Ord，love</p></a>
+				<a href="#00:17:0.40" id="00:17:0.40" class="lt" onclick="jumptoTime(1020, this.id)"><p>young，seafood，salvation</p></a>
+				<a href="#00:16:52.14" id="00:16:52.14" class="lt" onclick="jumptoTime(1012, this.id)"><p>newsletter，Nevertheless 여자，award，implicit，under говоря</p></a>
+				<a href="#00:16:58.70" id="00:16:58.70" class="lt" onclick="jumptoTime(1018, this.id)"><p>ơi，circa，status，орт</p></a>
+				<a href="#00:16:46.90" id="00:16:46.90" class="lt" onclick="jumptoTime(1006, this.id)"><p>Loop，exch 나올，포인，全部 tan，announcing，ає</p></a>
+				<a href="#00:17:1.74" id="00:17:1.74" class="lt" onclick="jumptoTime(1021, this.id)"><p>selected，cynical，valves，orry，parap reh，多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:1.85" id="00:17:1.85" class="lt" onclick="jumptoTime(1021, this.id)"><p>我加了醬汁和糖，èle</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:39.43" id="00:17:39.43" class="lt" onclick="jumptoTime(1059, this.id)"><p>fell，caused，alerts</p></a>
+				<a href="#00:17:39.85" id="00:17:39.85" class="lt" onclick="jumptoTime(1059, this.id)"><p>o cottage，用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:30.63" id="00:17:30.63" class="lt" onclick="jumptoTime(1050, this.id)"><p>ND，наверное</p></a>
+				<a href="#00:17:39.09" id="00:17:39.09" class="lt" onclick="jumptoTime(1059, this.id)"><p>Message，on，Gateway，bother，favored，blocked</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:36.47" id="00:17:36.47" class="lt" onclick="jumptoTime(1056, this.id)"><p>projet，aji，insightful，Task，cylinder，不是，Zealand，yüz，CAS</p></a>
+				<a href="#00:17:29.51" id="00:17:29.51" class="lt" onclick="jumptoTime(1049, this.id)"><p>Voiceover，kaikki，Vill fry，אומר</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:40.65" id="00:17:40.65" class="lt" onclick="jumptoTime(1060, this.id)"><p>lasachi，Wars，hairyangs</p></a>
+				<a href="#00:17:42.25" id="00:17:42.25" class="lt" onclick="jumptoTime(1062, this.id)"><p>deer，infinite，Nikki，acam，Dutch</p></a>
+				<a href="#00:17:53.01" id="00:17:53.01" class="lt" onclick="jumptoTime(1073, this.id)"><p>informal，59，عند，аг，wichtiger，Forbes，νε oc owns，exp donations</p></a>
+				<a href="#00:17:44.23" id="00:17:44.23" class="lt" onclick="jumptoTime(1064, this.id)"><p>leben，rew rapport，ل，wat streets，�ificial，compensation，caught，ался，— masturb，這裏會自動消毒，我已經煮了半小時，所有水份都已經逼出來了，全部都已經是金黃色，然後就可以放進瓶子裏，入春的時候，我都是趁熱的時候就入囉，Kait At Jonah。</p></a>
+				<a href="#00:18:36.99" id="00:18:36.99" class="lt" onclick="jumptoTime(1116, this.id)"><p>ilyn，gun，ób，definitive，bewusst，rough，standing，Danielle，justification，owie</p></a>
+				<a href="#00:18:50.75" id="00:18:50.75" class="lt" onclick="jumptoTime(1130, this.id)"><p>harvesting，visuals，вар</p></a>
+				<a href="#00:18:37.01" id="00:18:37.01" class="lt" onclick="jumptoTime(1117, this.id)"><p>emb，ggak，icem，placement，Goes，roportion</p></a>
+				<a href="#00:18:41.95" id="00:18:41.95" class="lt" onclick="jumptoTime(1121, this.id)"><p>multiple，çık，Kann，Kinda，slang，beasts，głos</p></a>
+				<a href="#00:18:51.17" id="00:18:51.17" class="lt" onclick="jumptoTime(1131, this.id)"><p>citiz conductor，chool</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:37.81" id="00:18:37.81" class="lt" onclick="jumptoTime(1117, this.id)"><p>appar differentiate，ros，olacak</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:57.43" id="00:18:57.43" class="lt" onclick="jumptoTime(1137, this.id)"><p>좋다，having，Absol month，cohort，are，candies，scims</p></a>
+				<a href="#00:18:42.83" id="00:18:42.83" class="lt" onclick="jumptoTime(1122, this.id)"><p>Har，After，Greek，blown，glitterarett intensala，zwe uhhh，oz</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:56.91" id="00:18:56.91" class="lt" onclick="jumptoTime(1136, this.id)"><p>ness，És，date，哈，cleans Grindhovilen，bronze，Read Passover，udent，�도，Ô cade，Millionen，mond senses</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:54.31" id="00:18:54.31" class="lt" onclick="jumptoTime(1134, this.id)"><p>ини，Это edible，heap youtubers，bird，arlos，obtaining，cooler，owned airline</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:57.07" id="00:18:57.07" class="lt" onclick="jumptoTime(1137, this.id)"><p>yorsun，请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，做這個就成功了，因為容易，你只要慢慢用心慢慢炒，其實就很容易，你剛才看到我那些泡泡，其實你那裡也可以，到泡泡這麼綿密的時候，其實就可以離火了，如果你真的怕太大火，其實中間有些時間，火可以開合開合，就是開色開色，自己確保放心一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:34.00" id="00:19:34.00" class="lt" onclick="jumptoTime(1174, this.id)"><p>不用怕，我打算弄幾串，可以送給朋友，就是送給朋友，送給媽媽、爸爸，試一下，XO醬拿來蘸蘿蔔糕，蘸拌麵，拌炒飯，蒸菜的時候，都很好，希望大家喜歡的話，可以試一下做，如果有什麼問題，或者有什麼煮日食的疑問，不懂的話，想跟我一起去談一下的話，你可以來我自己的網頁，我的專頁就是，人妻家為煮煮看的Facebook Page，可以大家交流一下。</p></a>
+				<a href="#00:20:35.84" id="00:20:35.84" class="lt" onclick="jumptoTime(1235, this.id)"><p>甚至你在人妻先修班的網頁留言，我都會回答你們，最後因為XO醬需要油，我要放些油封住它，讓它可以更耐放，Hastaакиamilybest onboardoutineob tinha，ge Delaware</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:5.48" id="00:21:5.48" class="lt" onclick="jumptoTime(1265, this.id)"><p>�niafficbl，transpose，possa，Maria</p></a>
+				<a href="#00:21:5.20" id="00:21:5.20" class="lt" onclick="jumptoTime(1265, this.id)"><p>Step aqui，第二，retired，갈，etr，RX，�리，aggression，piston，permitir，jat</p></a>
+				<a href="#00:21:7.08" id="00:21:7.08" class="lt" onclick="jumptoTime(1267, this.id)"><p>Lopez，Hari，agreed</p></a>
+				<a href="#00:21:6.92" id="00:21:6.92" class="lt" onclick="jumptoTime(1266, this.id)"><p>merchand，username，desem，développ</p></a>
+				<a href="#00:21:0.12" id="00:21:0.12" class="lt" onclick="jumptoTime(1260, this.id)"><p>Bir ót，lait，binary，fate，ItNice，tellement，madre</p></a>
+				<a href="#00:21:0.84" id="00:21:0.84" class="lt" onclick="jumptoTime(1260, this.id)"><p>Vienna，多謝您的觀看，顏色也很漂亮，很像XO，所以就叫做XO醬，謝謝收看，下次見，我今日介紹到這裡，另外就是這裡，現在是趁熱的，趁熱的時候，我們就要將蓋子蓋上，為何要這樣做呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:34.01" id="00:21:34.01" class="lt" onclick="jumptoTime(1294, this.id)"><p>這樣就方便讓這個XO醬可以更均勻，不是說我現在即刻可以積入，可以送給朋友的，可能約得來都可能一個星期兩個星期，我們就可以蓋上蓋子，現在趁熱蓋上蓋子，將它捲起來，捲到差不多緊實的時候，將它反轉，這樣就可以了，現在就要將蓋子蓋上蓋子，蓋上蓋子，這樣就可以了，然後逐個逐個這樣，因為冷縮熱脹的關係。</p></a>
+				<a href="#00:22:14.01" id="00:22:14.01" class="lt" onclick="jumptoTime(1334, this.id)"><p>它就會有真空的感覺，這樣就容易一點，可以將蓋子吸收了，這樣就可以放久一點，好，我繼續蓋上蓋子，希望大家試下我這個食譜，我可能今次都弄得焦了一點，不過你們自己遷就一下，始終我不是教你們做，我示範一次我自己找到食譜，然後自己將食譜改良，變成一個適合自己的食譜，和大家一起分享，如果你們有什麼意見的話。</p></a>
+				<a href="#00:22:52.01" id="00:22:52.01" class="lt" onclick="jumptoTime(1372, this.id)"><p>都可以留言給我，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

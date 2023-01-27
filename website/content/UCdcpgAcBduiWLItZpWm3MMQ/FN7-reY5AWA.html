@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做韓式辣牛肉湯 - Spicy Beef Soup (Korean Style)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'FN7-reY5AWA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做韓式辣牛肉湯 - Spicy Beef Soup (Korean Style)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.44" id="00:00:4.44" class="lt" onclick="jumptoTime(4, this.id)"><p>最近看到很多朋友去了韓國玩，我自己沒得去，所以想自己在家製作韓國菜，然後我在群組上發了一張圖給大家投票，投到可以做什麼，大家投票就會一起做韓式辣牛肉湯，不如我們先看看材料，材料有牛肉，我這塊是牛腩肉，即是屁股的位置，其實是整個做成Roast Beef的，可以用來焗牛肉，我切了其中一個部分，用來做這個。</p></a>
+				<a href="#00:00:51.44" id="00:00:51.44" class="lt" onclick="jumptoTime(51, this.id)"><p>你可以用牛肩肉，甚至乎牛腩都可以，看你自己喜歡，或者是鮮豬肉也可以，只要是你喜歡的類型都可以，當然，又便宜又貴，你又可以看自己的經濟是怎樣，我這裏有牛肉，然後有芽菜，如果是傳統食譜，就只用芽菜，但我想營養豐富一點，我就買了大豆芽，大豆芽煮湯會更好，因為有豆，營養價值會更高，這裏有些香菇，冬菇。</p></a>
+				<a href="#00:01:36.44" id="00:01:36.44" class="lt" onclick="jumptoTime(96, this.id)"><p>我之前已經用水浸過，現在已經很軟，有些蔥，你可以用大蔥，我家裏買了蔥，這裏有一束蔥，我切了一段，還有其他材料，有白蘿蔔，白蘿蔔大塊的會和牛肉一起煮，洋蔥切大塊的也是和牛肉一起煮，這裡有些比較小的，是待會跟湯一起煮的，有些蒜頭，有洋蔥切成絲，還有一些切成小塊的蘿蔔，這樣會比較容易煮軟。</p></a>
+				<a href="#00:02:25.40" id="00:02:25.40" class="lt" onclick="jumptoTime(145, this.id)"><p>如果是傳統的韓式食譜，應該還會有一種材料，那種材料叫做Fern Blakes，中文其實是一種乾的決菜，但我這裡比較難找，除非要特意開車去韓國的超級市場找，我剛好時間不合適就沒有這東西，但如果沒有的話也可以，那些不是很多是配料，是煮湯的時候加進去的，會比較好吃，其實當自己煮的時候，你們也知道。</p></a>
+				<a href="#00:03:5.80" id="00:03:5.80" class="lt" onclick="jumptoTime(185, this.id)"><p>我很多時候也是將原食譜，未必可以完全將一個很傳統的食譜，完全呈現在你們的眼前，但是我很多時候也會改變它，做一個適合自己、方便自己的，食譜，另外還有一些調味料，最後才用的，有幾個調味料，就是麻油，一湯匙的麻油，一湯匙的醬油，一湯匙的韓國辣椒粉，還有大約半湯匙的韓式辣椒醬，即是甜辣醬。</p></a>
+				<a href="#00:03:44.78" id="00:03:44.78" class="lt" onclick="jumptoTime(224, this.id)"><p>如果是原食譜，就沒有這個調味料，只用這個調味料和鹽，但我自己很喜歡吃這個醬，我經常覺得這個醬有韓式的味道，我就覺得很好吃，我想加一點進去，豐富湯的味道，所以就有這幾樣材料，你見到我今天切完，就不能看你切東西，因為今天一早就準備好了，除了牛肉，還有其他材料，我們先處理牛肉，牛肉本來很大塊。</p></a>
+				<a href="#00:04:28.78" id="00:04:28.78" class="lt" onclick="jumptoTime(268, this.id)"><p>我切了一塊大約像手的大小，然後就是一串厚的牛肉，我現在再處理一點點，遲一點煮好之後，我會將它切成絲，煮牛肉的時候要快一點，因為這麼大塊，不知道要煮多久才能煮好，所以我將它再切開一半，另外再將中間再切多一半，等到它切成四面，等到他們方便我煮的時候，就不會那麼難入味，現在煮完之後，我們就拿牛肉去沖水。</p></a>
+				<a href="#00:05:31.78" id="00:05:31.78" class="lt" onclick="jumptoTime(331, this.id)"><p>沖走它的血水味，也可以用其他方法，像我之前也說過，用水沖洗，沖洗牛肉，沖洗牛肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:49.78" id="00:05:49.78" class="lt" onclick="jumptoTime(349, this.id)"><p>沖洗牛肉，用冷水沖洗牛肉，由冷水開始慢慢煮，讓牛肉可以把污垢都煮出來，也可以的，但如果不懶想快點煮，不要煮太多，因為煮完之後要拿去倒掉，然後再重新煮，如果懶的 省時間的，我們可以用水沖洗，沖洗幾分鐘 讓它可以沖走血水，我們才拿去煮，但不是沖水，不要熱水把牛肉放進去，我們不是熱水，所以我現在是冷水。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:32.97" id="00:06:32.97" class="lt" onclick="jumptoTime(392, this.id)"><p>冷水下去煮，洗好牛肉之後，我們這裡有個鍋，我大約有八杯水，然後我們可以把蘿蔔放進去，洋蔥也放進去，然後把牛肉也放進去，慢慢煮 煮滾，煮滾之後再調小火，中火煮大約煮一個小時，要看牛肉的軟滑程度，到牛肉真的軟了，然後就可以拿來煮了，我忘記把冬菇也放進去，放進去一起煮，煮的時候會有這些髒東西浮在上面，浮在上面的時候。</p></a>
+				<a href="#00:07:27.97" id="00:07:27.97" class="lt" onclick="jumptoTime(447, this.id)"><p>我們也是要把它弄走，讓湯可以清澈一點，可以了，我們把這些浮在上面的泡泡，全部清掉，把水沖一沖就可以繼續煮了，可以繼續煮了，當湯滾起了，有些污糟的東西出來之後，我們就可以調小火慢慢煮，大約煮一個小時，總之煮到牛肉軟身，好了，牛肉煮的時候，我們就處理另一些材料，首先就是我們將切好的蘿蔔，洋蔥絲和蒜蓉碎。</p></a>
+				<a href="#00:08:24.54" id="00:08:24.54" class="lt" onclick="jumptoTime(504, this.id)"><p>全部放進大盤裡，還有蔥和大豆芽，全部放進去，將所有材料拌勻，好像醃製蔬菜一樣，最後將牛肉湯煲好後，將所有材料隔出來，將切絲冬菇放入湯中煮一煮，這個湯的煮法相對其他菜式都很簡單，材料都是隨意放入湯中煮或切絲，拌好後就可以放一邊等湯煮，Hello 我們回來了，為什麼多了一個這樣的形狀的鍋子，剛才沒有見過。</p></a>
+				<a href="#00:10:14.46" id="00:10:14.46" class="lt" onclick="jumptoTime(614, this.id)"><p>什麼事呢，剛才我在撇油的時候，想慢慢煮牛肉的時候，我先生就說，你為什麼要慢慢煮，家裡是有壓力鍋的，為什麼不倒進去馬上煮，就不用花那麼多時間，我就說對呀，因為那個煲湯已經撇走那些髒東西，而且已經很熱，可以馬上放進壓力鍋就可以馬上煮，剛才就把牛肉放進壓力鍋煮了半小時，已經所有東西都軟了，我們可以看看牛肉是怎樣。</p></a>
+				<a href="#00:10:58.46" id="00:10:58.46" class="lt" onclick="jumptoTime(658, this.id)"><p>牛肉是很軟很軟，一插進去很快很容易擦絲，我拿起一塊牛肉給大家看看，這塊牛肉已經很軟，已經很軟了，一推就可以把絲都推出來，比我想像中更軟，現在我們可以把湯倒出來，只需要牛肉冬菇，其他的就不要了，我們可以做下一個步驟，我們可以把冬菇切成絲，這樣牛肉就可以慢慢的撕成絲了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:46.46" id="00:11:46.46" class="lt" onclick="jumptoTime(706, this.id)"><p>切片，牛肉可以撕開，這樣拉就可以拉開，我剛才用真空煲，是快了，但要看時間，可能不用半小時，可能15分鐘都可以，否則肉絲很容易碎，我需要它軟軟的，但如果太軟的話，會過軟，所以要有嚼勁，不像煲湯肉，很容易碎，但不要緊，可以自己慢慢煮，煮的時候湯水會少了，會更濃郁，如果用高速真空煲，高壓力煲，水的成份會更多。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:2.16" id="00:13:2.16" class="lt" onclick="jumptoTime(782, this.id)"><p>如果用真空煲，可能湯水會更多，如果兩個人煮，湯水不用用完，可以放在冰箱或冰箱，可以放湯或再煮，下一次再煮，湯底已經有了，因為湯底是湯底，我今天不用用完這四塊牛肉，我這塊牛肉已經有了，可以撕掉或冷藏，下次再用，可以在冰箱拿出來解凍，很方便去做，最後把醬汁和蔬菜放在湯底，放入冬菇和牛肉。</p></a>
+				<a href="#00:14:37.56" id="00:14:37.56" class="lt" onclick="jumptoTime(877, this.id)"><p>全部放進去煮10分鐘，煮至洋蔥和蔥頭變軟就可以了，很香呀!給你們看看，嘩!好大煙呀!</p></a>
+				<a href="#00:15:3.27" id="00:15:3.27" class="lt" onclick="jumptoTime(903, this.id)"><p>湯已經煮好了，煮好之後，我們就可以上碟了，上湯碗了，我沒有韓式的碗，其實我想去買的，但在附近很難找到，所以就放棄了，如果想吃辣一點，可以根據材料再加辣，加到你喜歡的程度，而我呢，就覺得已經夠了，對我來說，在鏡頭看，顏色沒有那麼鮮明，但在我眼前看就很乾，顏色很漂亮，我再開燈看看，可能好一點。</p></a>
+				<a href="#00:16:10.27" id="00:16:10.27" class="lt" onclick="jumptoTime(970, this.id)"><p>可以做到兩個人一碗，冬天就到了，天氣很寒冷，如果在家煮一個熱的湯，加一個白飯，這個湯因為有牛肉，其實很滋補，還有各種蔬菜，可以吃得飽，又暖又飽又滋補，加上白飯，韓國人通常湯配白飯，飯就放在湯裡，如果沒有白飯，可以用粟米飯或十穀米，可以給你們看看，拉近一點給你們看，好，有很多菜，有蔬菜和肉，我今天介紹到這裡。</p></a>
+				<a href="#00:17:15.27" id="00:17:15.27" class="lt" onclick="jumptoTime(1035, this.id)"><p>希望大家喜歡，也繼續支持我，我們下次再見。</p></a>
+				<a href="#00:17:19.27" id="00:17:19.27" class="lt" onclick="jumptoTime(1039, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初試慢煮棒 - Trying Sous Vide Device - Anova Precision Cooker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'msohp6IYLh4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>初試慢煮棒 - Trying Sous Vide Device - Anova Precision Cooker</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello 大家好，今日同大家一齊試新嘢。</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>我問朋友借咗部機，因為佢話呢部機好好用，我話好想試下，佢就借畀我玩。</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>呢部係咩嚟嘅呢?呢部就係整Sous Vide Device，係一個專整慢煮嘅工具。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>我聽人講中文好似叫慢煮神棍，呢一支係一支神棍嚟嘅。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>我開嚟睇下先，你可以接駁同佢接駁自己嘅WiFi同智己嘅Smartphone，有咩問題都有群組可以同你傾，可以一齊整嘢食㗎啦。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>佢呢度亦都有一個表，表就話牛肉一串口大約54.5度或130度C，即係華氏或是涉氏，煮嘅時間就1至4個鐘頭，佢嗰個時間好闊。</p></a>
+				<a href="#00:01:35.00" id="00:01:35.00" class="lt" onclick="jumptoTime(95, this.id)"><p>雞胸兩串口嘅雞胸大約60，3.5度約1至4個鐘頭，如果豬扒就由2個鐘頭起，即係兩串口嘅，魚就容易啲，30至40分鐘。</p></a>
+				<a href="#00:01:58.00" id="00:01:58.00" class="lt" onclick="jumptoTime(118, this.id)"><p>菜要高溫啲，因為如果要整腍佢，要高溫啲，但都係要耐啲嘅。</p></a>
+				<a href="#00:02:5.00" id="00:02:5.00" class="lt" onclick="jumptoTime(125, this.id)"><p>咁我再睇下啦，呢個就係一個介紹啦，又係，看到了，就是這樣了，很大一部的，這樣拿出來，就是這樣，簡單，這個夾在爐煲那裡，這個應該是發熱的，再加一個就是插頭，看起來很簡單，可以試一下，我今天買了一件牛扒和雞胸，可以試一下，Sophie的煮法是來自於…，法國他們想把食物放在真空的環境內，然後用一個持續性的低溫慢煮方法加熱，令到它在一個特定的溫度和環境內煮。</p></a>
+				<a href="#00:03:38.94" id="00:03:38.94" class="lt" onclick="jumptoTime(218, this.id)"><p>煮好後就可以保留它的肉汁，一樣軟熟鬆軟的，基本上就是這樣，介紹完這個就介紹另一樣東西，這部機也說了，做Zuvio這東西最重要是慢煮，還有一個朋友，就是這個，我看到網上也有人用厚身的zip lock，或者他們有自己的一套zip lock，基本上就是用真空的，這個就是抽真空的機，你可以用手動的，我家裡的是電的。</p></a>
+				<a href="#00:04:27.94" id="00:04:27.94" class="lt" onclick="jumptoTime(267, this.id)"><p>有真空袋，有大有小，我們就可以開始了，首先我先找一個適合的鍋子，準備好鍋水，然後就把慢煮神棍放上去，這裡有個數字，就是水位到哪裡，我可以量度一下，然後在鍋子的位置定型，大概在哪個位置，大家看不看到?</p></a>
+				<a href="#00:05:27.29" id="00:05:27.29" class="lt" onclick="jumptoTime(327, this.id)"><p>接著我們就可以插上去看看怎樣玩了，現在我把它放在水中，用了不鏽鋼鍋，我在網上看到有些人會用一些膠器皿，或者用一些保溫的，我也明白，如果要保溫的話，就可以令到水的溫度穩定，但我手上只有這個東西，所以我就用了最傳統的，最簡單的，用家裡自己的煲湯煲來做了，現在它已經有水的溫度，大概想調整溫度。</p></a>
+				<a href="#00:06:25.29" id="00:06:25.29" class="lt" onclick="jumptoTime(385, this.id)"><p>我們可以按它，它就會告訴我們，幾時就可以調整到，我這裡有兩件雞扒，是雞胸肉，然後我現在就做一點薑汁酒給它，你可以削皮，我很多時候用薑都不削皮，你切除專便，看你喜不喜歡，palmsaton´ cultures</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:19.27" id="00:07:19.27" class="lt" onclick="jumptoTime(439, this.id)"><p>paths，retire，шие，ама</p></a>
+				<a href="#00:07:17.31" id="00:07:17.31" class="lt" onclick="jumptoTime(437, this.id)"><p>ди，degrees，چ</p></a>
+				<a href="#00:07:8.49" id="00:07:8.49" class="lt" onclick="jumptoTime(428, this.id)"><p>remake，scroll</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:11.01" id="00:07:11.01" class="lt" onclick="jumptoTime(431, this.id)"><p>heeft，Dafür，proof，dw，inent</p></a>
+				<a href="#00:07:11.25" id="00:07:11.25" class="lt" onclick="jumptoTime(431, this.id)"><p>contextual，Charl�ת，trabalh，Tit Desktop</p></a>
+				<a href="#00:07:11.13" id="00:07:11.13" class="lt" onclick="jumptoTime(431, this.id)"><p>der，oben，Yes iPhone dependent</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:15.59" id="00:07:15.59" class="lt" onclick="jumptoTime(435, this.id)"><p>trial，Krankerness，iken，磨好之後，我可以倒入酒，你可以加紹興酒、花雕酒或清酒，這樣就可以有些酒在這裡給他用了，然後我拿兩個袋子，將雞胸放入雞胸，放少許薑汁酒</p></a>
+				<a href="#00:08:32.62" id="00:08:32.62" class="lt" onclick="jumptoTime(512, this.id)"><p>將雞胸放入酒，加些薑汁酒，另外可以加蒜頭，可以用自己喜歡的調味料</p></a>
+				<a href="#00:09:18.44" id="00:09:18.44" class="lt" onclick="jumptoTime(558, this.id)"><p>謝謝觀看，放一粒蒜頭，放些鹽，胡椒粉，胡椒粉，豆粉，加兩滴油</p></a>
+				<a href="#00:10:21.63" id="00:10:21.63" class="lt" onclick="jumptoTime(621, this.id)"><p>這個也可以了，攤平它，攤平之後，我會把它放進去，然後就蓋上，已經抽了，然後就可以放進去，慢煮棒，我這裡有個慢煮棒，然後就可以推這個，推到你想要的溫度，現在這個是一個華氏的溫度，我大約要60度的攝氏，即是140度華氏，滑了之後我就按它，設定在這個，然後我按它，然後它就已經開始動了，等它和這個水。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:32.98" id="00:11:32.98" class="lt" onclick="jumptoTime(692, this.id)"><p>就到了我心目中的溫度，這個就是可以做一個WIFI，我開了之後，然後我就下載了那個APP，然後可以用那個APP去和它SYNCHRONIZE，我現在都在看怎樣玩，所以就暫時不要弄它，它就比想像中沒那麼嘈，因為我上網看，聽人說它都很嘈，但到現在你們都聽到，其實它不算嘈，都很安靜，接下來我就整理牛扒。</p></a>
+				<a href="#00:12:35.98" id="00:12:35.98" class="lt" onclick="jumptoTime(755, this.id)"><p>牛扒就更加簡單，好的牛扒只需要鹽和黑椒就可以了，什麼都不需要，當然你可以放一點油，當然你可以放一些香草，譬如白梨香或玫瑰花，甚至乎我們都可以放一些蒜頭，都可以的，先把油抹乾淨，然後放鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:33.34" id="00:13:33.34" class="lt" onclick="jumptoTime(813, this.id)"><p>辣椒，我當我平時煎扒這樣做，看看它和平時煎扒出來有什麼分別</p></a>
+				<a href="#00:13:52.44" id="00:13:52.44" class="lt" onclick="jumptoTime(832, this.id)"><p>當然你不喜歡的話可以加一片頭，沒問題的，這個袋子是包裝的，將它放進去，如果你有些香料的話也可以放進去</p></a>
+				<a href="#00:14:13.44" id="00:14:13.44" class="lt" onclick="jumptoTime(853, this.id)"><p>其實我覺得沒問題的，甚至乎你放牛油或其他東西，我覺得真的沒問題的，只要你喜歡，試一下而已，我也是第一次玩這個機，我也不知道應該怎樣才對，所以就試一下，不試又怎知道不對呢，試了不好吃的就下次再做好一點，煮食大多都是這樣，剛剛他已經打電話給我，我現在可以放進去了，我大約將雞胸煮45分鐘左右，因為我待會還要煎一煎給你吃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:2.44" id="00:15:2.44" class="lt" onclick="jumptoTime(902, this.id)"><p>我將雞胸放進去，45分鐘後看看怎樣，我的時間告訴我45分鐘已經到了，我現在就去看看雞怎樣，再關掉，看看雞怎樣，我的雞就可以拿出來了，看樣子應該已經熟了，這樣就拿出來，我調低一點度數，用來煮牛肉，等很久才可以吃東西，差不多了，這樣，先看一下，差不多了，加水，加些凍水下去，快一點，現在就放牛下去，放它泡。</p></a>
+				<a href="#00:16:15.07" id="00:16:15.07" class="lt" onclick="jumptoTime(975, this.id)"><p>牛就要一個小時，現在雞胸就弄好了，雞胸就弄好了，是一個剛剛拿出來的，現在就很濕潤，很軟，可以就這樣，切片，就這樣吃，如果想香口一點，我們可以，撲些生粉上去，煎一煎它，我準備了，撲些生粉上去煎，可以不做，可以就這樣，不放就這樣吃，少油少鹽少脂肪，就很，很健康，但我想吃香口一點，撲些生粉上去煎，如果金黃色的話就可以翻面。</p></a>
+				<a href="#00:17:33.60" id="00:17:33.60" class="lt" onclick="jumptoTime(1053, this.id)"><p>如果想金黃色的話可以再煎一會，看你自己想金黃色到什麼程度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:49.60" id="00:17:49.60" class="lt" onclick="jumptoTime(1069, this.id)"><p>我們看看，如果想金黃色的話可以再煎一會，מקHo</p></a>
+				<a href="#00:18:1.18" id="00:18:1.18" class="lt" onclick="jumptoTime(1081, this.id)"><p>Hola，acabou，watermelon，:「 haircut Medicaid，excit która，influ，Tack，workspace</p></a>
+				<a href="#00:18:0.46" id="00:18:0.46" class="lt" onclick="jumptoTime(1080, this.id)"><p>éri，ár，Kyoto</p></a>
+				<a href="#00:18:5.52" id="00:18:5.52" class="lt" onclick="jumptoTime(1085, this.id)"><p>itious，presa，HAM plante，knees，slowly，Ol傳，Genesis，rils</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:3.90" id="00:18:3.90" class="lt" onclick="jumptoTime(1083, this.id)"><p>san，Ctrl</p></a>
+				<a href="#00:18:5.76" id="00:18:5.76" class="lt" onclick="jumptoTime(1085, this.id)"><p>lakh groundbreaking，reibt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:11.20" id="00:18:11.20" class="lt" onclick="jumptoTime(1091, this.id)"><p>bounded，МУ，deploying，看看，雞胸已經切好了，放上去，感覺上雞胸真的很軟熟，切下去的感覺是很…很…，真的很簡單，我現在可以先試一塊，真的很多汁，很多汁，嗯…雖然你們也看到，我是沒有加任何很特別的香料，我只是加了一點點鹽，一些汁酒和蒜頭，它已經很有味道了，只是煮了一段時間。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:53.98" id="00:18:53.98" class="lt" onclick="jumptoTime(1133, this.id)"><p>前面根本沒有醃過，是直接將一些…，將剛才我說的調味料直接放進去一起煮，但是…很夠味，嗯…，醬汁方面，你可以加一些類似這樣的醬汁，可以用這種，或者自己調，買一些有色的芝麻汁，這樣就加一點點蜜糖，加一點點檸檬汁或者青檸汁，勾勾它也可以，就這樣這個味道已經…，很美味的，如果不想…什麼都不想加的時候，就這樣加一隻這樣的芝麻沙律醬。</p></a>
+				<a href="#00:19:41.98" id="00:19:41.98" class="lt" onclick="jumptoTime(1181, this.id)"><p>都已經可以很美味了，那我呢…如果是懶人，像我這樣，就加一點點這個芝麻沙律醬進去，好，那今天介紹這個雞扒，接下來就做牛扒，這樣就可以了，現在牛扒快要煮好的時候，我先把沙律醬放在旁邊，等到它一會兒做好之後，就上碟，就上桌，這樣就可以了，一會兒牛扒就放在它旁邊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:25.38" id="00:20:25.38" class="lt" onclick="jumptoTime(1225, this.id)"><p>那我先打開牛肉，嘩，它這麼多水出來，剛才用慢煮機煮完，它是白色的，按下去，它已經很軟，然後我現在就要用火煎它，煎完就可以吃了，我現在就用平底鍋，這是不銹鋼鑊，放了一些油和牛油，等到油溫夠熱，就可以把牛排放下去煎，剛才用慢煮機煮完，我有蒜頭在這裡，把牛排放下去煎，一 latchFI Internet fabrication</p></a>
+				<a href="#00:22:14.99" id="00:22:14.99" class="lt" onclick="jumptoTime(1334, this.id)"><p>proprio，ผ</p></a>
+				<a href="#00:22:7.99" id="00:22:7.99" class="lt" onclick="jumptoTime(1327, this.id)"><p>danach，когда，Little，siinä，CDU，слож，toys，kull，81，->，있는，kenbia，construct tooth，ometown，retra..."，Przy GOD，einen，fullest，CMS，Sull transmit，可以</p></a>
+				<a href="#00:22:18.41" id="00:22:18.41" class="lt" onclick="jumptoTime(1338, this.id)"><p>rade，meden，mute，them，meaning，痛 elemental，calling，crucified，pruch，Zeit tutorial，opia，USIC sequence，將牛扒放入鍋中煎約一分鐘，crazy</p></a>
+				<a href="#00:22:39.12" id="00:22:39.12" class="lt" onclick="jumptoTime(1359, this.id)"><p>conferonse，wheilo，Quant invisible，osing，wall，liches，ogóle，Dri 32，còn，Nissan，ぜ，Или，thinly，Evil，plein，Emircore，Hue achieve，summertime，けて，?​ convention，plaisir。</p></a>
+				<a href="#00:23:2.40" id="00:23:2.40" class="lt" onclick="jumptoTime(1382, this.id)"><p>42，Celine，taps，luent，가격，�도，�에，Irlaimed，lifting，край，Hixx，toxic，Daniel Australian，tuber，lig た，ноп，voyage，cookies，aren，nastawn，今日は，antid，roaming，solic Bob，Severalodar。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:43.62" id="00:22:43.62" class="lt" onclick="jumptoTime(1363, this.id)"><p>cannon Abraham，оче NOW，seat</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:56.36" id="00:22:56.36" class="lt" onclick="jumptoTime(1376, this.id)"><p>quantity，Dort indirectly，étaient，Haus，ethics，Kurt，webinars，santieves，crouch，Nina，Cycl Inc tallest，assed，un，Все，Wi高 terrace，Mer borrowing，放入炒熟的猪肉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:45.88" id="00:22:45.88" class="lt" onclick="jumptoTime(1365, this.id)"><p>炒到猪肉变软，放入炒熟的猪肉，炒到猪肉变软，放入炒熟的猪肉，放入炒熟的猪肉，放入炒熟的猪肉，放入炒熟的猪肉，放入炒熟的猪肉，蒜頭很快煮熟，煎至金黃色就可以了，因為已經熟了，其實和平時煎牛扒的步驟差不多，只是中間多了鰻魚的步驟，其實我一邊煎一邊想，其實我是否需要這支鰻魚蛋呢，會否煎出來有點硬。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:23.87" id="00:24:23.87" class="lt" onclick="jumptoTime(1463, this.id)"><p>等一會兒試味才知道，好了，我試吃了，其實牛扒你喜歡的話，可以自己煮個汁來吃，或者是，或者是可以，做個Gravy，或者做其他東西都可以，但其實如果很好味的牛扒，什麼都不用放，只要放鹽就夠了，切出來後，它也有一點點，粉紅色，我試吃，是很軟的，而且，這一隻，一切的時候很軟，這一隻已經不是Rip-Eyes，是Striped Loin。</p></a>
+				<a href="#00:25:25.87" id="00:25:25.87" class="lt" onclick="jumptoTime(1525, this.id)"><p>是一隻比較肉味重一點，硬身一點的牛扒，但這樣煮，你看看牛扒多好看，這樣，都很好味，很軟，外面就脆脆的，因為我煎香了，這樣，經過我試味之後，我發覺，我發覺，鰻魚扒都不錯，其實都有很多發揮的空間，始終是我第一次，問朋友借來玩，來試試看吧!</p></a>
+				<a href="#00:26:16.80" id="00:26:16.80" class="lt" onclick="jumptoTime(1576, this.id)"><p>應該還有很多很多潛力的，但如果只做牛扒的話，雖然好吃，但我還是喜歡自己烤的那種，可以更香脆，香辣，燒烤的感覺更重的牛扒，這個也好吃，如果你是完全不會烹飪的話，做牛扒用這個方法，就萬無一失了，但如果你懂烹飪的話，這個就真的差一點，你會覺得，我可以不用慢煮棒，也可以做得更好吃，我懷疑，如果慢煮棒是用很大塊的肉。</p></a>
+				<a href="#00:27:6.40" id="00:27:6.40" class="lt" onclick="jumptoTime(1626, this.id)"><p>或者是用很多小時的肉，應該是有它的好處的，今天就介紹到這裡，希望你們也可以試試看，如果你們家裡有慢煮棒，也可以發掘一下它的優點，還有它有什麼可以做的可能性，或者可以在婦女人妻媒體的群組，或者是人妻家為主主漢的Facebook專頁，我們可以聊聊，今天就介紹到這裡，下次見，拜拜。</p></a>
+</div>
+	</body>
+</html>

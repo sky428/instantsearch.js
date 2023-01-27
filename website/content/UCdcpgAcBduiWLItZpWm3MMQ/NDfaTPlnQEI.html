@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做芝士漢堡扒 (Cheese Hamburger Steak)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NDfaTPlnQEI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做芝士漢堡扒 (Cheese Hamburger Steak)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello，今日同大家一齊整漢堡扒。</p></a>
+				<a href="#00:00:5.68" id="00:00:5.68" class="lt" onclick="jumptoTime(5, this.id)"><p>不如我哋睇下啲材料啦。</p></a>
+				<a href="#00:00:7.68" id="00:00:7.68" class="lt" onclick="jumptoTime(7, this.id)"><p>材料好簡單嘅。</p></a>
+				<a href="#00:00:9.32" id="00:00:9.32" class="lt" onclick="jumptoTime(9, this.id)"><p>其實如果你唔想落咁多味都可以嘅。</p></a>
+				<a href="#00:00:15.48" id="00:00:15.48" class="lt" onclick="jumptoTime(15, this.id)"><p>材料就係有碎牛肉啦。</p></a>
+				<a href="#00:00:18.44" id="00:00:18.44" class="lt" onclick="jumptoTime(18, this.id)"><p>你可以揀肥啲或者瘦啲。</p></a>
+				<a href="#00:00:22.24" id="00:00:22.24" class="lt" onclick="jumptoTime(22, this.id)"><p>我呢一個就係medium嘅。</p></a>
+				<a href="#00:00:24.24" id="00:00:24.24" class="lt" onclick="jumptoTime(24, this.id)"><p>我哋呢度可以揀瘦啲嘅牛肉或者extra lean嘅牛肉。</p></a>
+				<a href="#00:00:31.24" id="00:00:31.24" class="lt" onclick="jumptoTime(31, this.id)"><p>我就揀medium，唔好咁瘦。</p></a>
+				<a href="#00:00:36.24" id="00:00:36.24" class="lt" onclick="jumptoTime(36, this.id)"><p>因為太瘦嘅話，整出嚟嗰塊牛肉就會好硬㗎啦。</p></a>
+				<a href="#00:00:40.24" id="00:00:40.24" class="lt" onclick="jumptoTime(40, this.id)"><p>跟住我又有少少洋蔥啦，蒜頭啦，芝士啦。</p></a>
+				<a href="#00:00:47.24" id="00:00:47.24" class="lt" onclick="jumptoTime(47, this.id)"><p>仲有呢一個就係secret ingredient啦。</p></a>
+				<a href="#00:00:52.24" id="00:00:52.24" class="lt" onclick="jumptoTime(52, this.id)"><p>咁係咩嚟㗎呢?呢啲就係麥皮啦。</p></a>
+				<a href="#00:00:55.24" id="00:00:55.24" class="lt" onclick="jumptoTime(55, this.id)"><p>咁樣我會擺啲麥皮落去㗎。</p></a>
+				<a href="#00:00:58.24" id="00:00:58.24" class="lt" onclick="jumptoTime(58, this.id)"><p>跟住就係有少少喼汁啦，鹽啦，仲有就係胡椒粉，黑胡椒。</p></a>
+				<a href="#00:01:8.24" id="00:01:8.24" class="lt" onclick="jumptoTime(68, this.id)"><p>就係咁多啦。</p></a>
+				<a href="#00:01:10.24" id="00:01:10.24" class="lt" onclick="jumptoTime(70, this.id)"><p>咁不如我哋而家開始整啦，好唔好?</p></a>
+				<a href="#00:01:13.24" id="00:01:13.24" class="lt" onclick="jumptoTime(73, this.id)"><p>首先我就處理咗個洋蔥先。</p></a>
+				<a href="#00:01:17.24" id="00:01:17.24" class="lt" onclick="jumptoTime(77, this.id)"><p>咁洋蔥我需要半個就已經夠㗎啦。</p></a>
+				<a href="#00:01:21.24" id="00:01:21.24" class="lt" onclick="jumptoTime(81, this.id)"><p>攞嚟，攞嚟，攞嚟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.24" id="00:01:23.24" class="lt" onclick="jumptoTime(83, this.id)"><p>字幕由Amara.org社区提供，VC momentum upbeat，siz</p></a>
+				<a href="#00:01:30.49" id="00:01:30.49" class="lt" onclick="jumptoTime(90, this.id)"><p>memories，fair filmmaking，noss，Ten，قال</p></a>
+				<a href="#00:01:34.23" id="00:01:34.23" class="lt" onclick="jumptoTime(94, this.id)"><p>rien，promet épo，comment surrender，� dedim，zenie，ою，whisk st Dollar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:33.95" id="00:01:33.95" class="lt" onclick="jumptoTime(93, this.id)"><p>warm mansion，úc</p></a>
+				<a href="#00:01:36.79" id="00:01:36.79" class="lt" onclick="jumptoTime(96, this.id)"><p>funky，nyt analyst，Ac Yap，sä Sé，Applic frig，ako，наз</p></a>
+				<a href="#00:01:48.39" id="00:01:48.39" class="lt" onclick="jumptoTime(108, this.id)"><p>ally，龍</p></a>
+				<a href="#00:01:55.69" id="00:01:55.69" class="lt" onclick="jumptoTime(115, this.id)"><p>lav，MON tik，dough，harassment，argued</p></a>
+				<a href="#00:01:59.11" id="00:01:59.11" class="lt" onclick="jumptoTime(119, this.id)"><p>Jorge，up，enrich，richtige，transport，streamlined，wine，hour，� foi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:59.63" id="00:01:59.63" class="lt" onclick="jumptoTime(119, this.id)"><p>donut，car</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:51.41" id="00:01:51.41" class="lt" onclick="jumptoTime(111, this.id)"><p>ус，Ye Psychology</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:0.23" id="00:02:0.23" class="lt" onclick="jumptoTime(120, this.id)"><p>slightly，Gaming，minerals，boils</p></a>
+				<a href="#00:01:56.03" id="00:01:56.03" class="lt" onclick="jumptoTime(116, this.id)"><p>stencil，tocar，arche obeHYUN</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:54.97" id="00:01:54.97" class="lt" onclick="jumptoTime(114, this.id)"><p>Carlo，weight，Oft택， �， flush</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:55.27" id="00:01:55.27" class="lt" onclick="jumptoTime(115, this.id)"><p>trib став，真的 DM，quelque，Choose，never，Giant，formula，плюс Sans，accompan，emb</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:1.97" id="00:02:1.97" class="lt" onclick="jumptoTime(121, this.id)"><p>一，二，大約兩湯匙的醬汁，第二樣要處理的就是蒜頭，把蒜頭拍扁，拿走一些，我們可以磨成蓉，蒜頭比較軟身，我把蒜頭放進去，再把所有材料拌入牛肉中，再切細</p></a>
+				<a href="#00:03:2.35" id="00:03:2.35" class="lt" onclick="jumptoTime(182, this.id)"><p>再切幾下，放開一邊，還有什麼需要呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:12.35" id="00:03:12.35" class="lt" onclick="jumptoTime(192, this.id)"><p>就是這個麥皮，我可以加兩匙水，讓麥皮吸收水份，用熱水浸泡，煮出場了，這裏有些牛肉，我這裏有450克牛肉，可以做三個，我每一個大約150克，容易一點自己煮，在這個時間，可以把，這個，放進去，蒜頭放進去，可以把洋蔥蓉放進去，其實如果你不想放，這些都可以，就這樣放鹽和黑胡椒，都可以做到一個美味的漢堡，不過如果你想它。</p></a>
+				<a href="#00:04:24.93" id="00:04:24.93" class="lt" onclick="jumptoTime(264, this.id)"><p>開心一點，多一點味道，濃味，即是有些味道，你就可以像我這樣，加些味道，但是你不加都可以的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:42.93" id="00:04:42.93" class="lt" onclick="jumptoTime(282, this.id)"><p>然後我把它，拌勻，忘記了還有一樣東西，我最需要的，就是雞蛋，我們放一隻雞蛋進去，再攪拌均勻，這個方法跟傳統漢堡不同，如果在加拿大做漢堡的話，只需要加鹽和胡椒粉，如果在做芝心的話，可以加入芝士，手洗乾淨後，就可以攪拌均勻，如果喜歡的話，可以用手套，另外可以加入喼汁，喼汁配牛肉會更好，這是我自己做的食譜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:47.26" id="00:06:47.26" class="lt" onclick="jumptoTime(407, this.id)"><p>可以因應自己的想像去加自己喜歡的東西，最後我會用熱水浸泡一下麥皮，現在麥皮已經涼了，所以我可以放一點進去，為什麼我會放麥皮呢?</p></a>
+				<a href="#00:07:32.49" id="00:07:32.49" class="lt" onclick="jumptoTime(452, this.id)"><p>因為有原因的，如果你的牛肉很瘦的話，麥皮吸水後會變軟，吃下去會有肥豬肉的口感，為什麼我會放麥皮呢?</p></a>
+				<a href="#00:08:4.49" id="00:08:4.49" class="lt" onclick="jumptoTime(484, this.id)"><p>如果蒜頭太大，我會把它擠出來，我覺得會太硬，其實是增加口感，如果你不放也可以，如果有日式漢堡，我會放麵包糠和牛奶，這樣就不會太硬了，加少少鹽，少少，鹹味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:9.98" id="00:09:9.98" class="lt" onclick="jumptoTime(549, this.id)"><p>應該冇味，我這裡四分之一茶匙，另外就要黑胡椒，我先剝哂隻手，唔好整污糟佢</p></a>
+				<a href="#00:09:51.98" id="00:09:51.98" class="lt" onclick="jumptoTime(591, this.id)"><p>唔好整污糟佢，分成3份，牛肉450克，加上其他材料，我剛才兩個大約550克，除以3大約180克，分成3份，將牛肉鋪平，將其裏面的空氣切走，牛肉就開始變成圓形，不要太緊，不想太緊，輕輕地搓揉，做好後可以夾麵包，或者當飯餐，加沙律，喜歡的話可以在中間放芝士，我不會做，因為我想放在麵包上，יצ sip。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:4.05" id="00:12:4.05" class="lt" onclick="jumptoTime(724, this.id)"><p>cje</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:6.95" id="00:12:6.95" class="lt" onclick="jumptoTime(726, this.id)"><p>...，èt</p></a>
+				<a href="#00:12:10.05" id="00:12:10.05" class="lt" onclick="jumptoTime(730, this.id)"><p>violently，Adventure，48</p></a>
+				<a href="#00:12:8.69" id="00:12:8.69" class="lt" onclick="jumptoTime(728, this.id)"><p>急，оть</p></a>
+				<a href="#00:12:8.41" id="00:12:8.41" class="lt" onclick="jumptoTime(728, this.id)"><p>kleine，torso，urp</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:6.57" id="00:12:6.57" class="lt" onclick="jumptoTime(726, this.id)"><p>alon Inn，convers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:10.77" id="00:12:10.77" class="lt" onclick="jumptoTime(730, this.id)"><p>food，結果，goo，a lados，part interior，teen</p></a>
+				<a href="#00:12:8.53" id="00:12:8.53" class="lt" onclick="jumptoTime(728, this.id)"><p>maior，need，煎好後，我可以馬上煎，如果你想要在冰箱冷藏，可以包好後放冰箱，吃的時候再放冰箱，甚至冷藏一會，等到第二天吃也可以，或者煎好後再冷藏，Ham路amat né</p></a>
+				<a href="#00:13:6.33" id="00:13:6.33" class="lt" onclick="jumptoTime(786, this.id)"><p>princi Twilight，oland，Rex，dapat，antiqu</p></a>
+				<a href="#00:13:20.21" id="00:13:20.21" class="lt" onclick="jumptoTime(800, this.id)"><p>schemھ，kamera</p></a>
+				<a href="#00:13:14.49" id="00:13:14.49" class="lt" onclick="jumptoTime(794, this.id)"><p>Lal，threw，ப spind，wears</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:16.07" id="00:13:16.07" class="lt" onclick="jumptoTime(796, this.id)"><p>sits，升</p></a>
+				<a href="#00:13:20.17" id="00:13:20.17" class="lt" onclick="jumptoTime(800, this.id)"><p>const toxic，anymore，Aur，nor</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:23.57" id="00:13:23.57" class="lt" onclick="jumptoTime(803, this.id)"><p>worry，Perfect</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:23.07" id="00:13:23.07" class="lt" onclick="jumptoTime(803, this.id)"><p>kilometer，роб，roaming</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:22.27" id="00:13:22.27" class="lt" onclick="jumptoTime(802, this.id)"><p>pumpkins，Goog curves，infinirit</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:20.63" id="00:13:20.63" class="lt" onclick="jumptoTime(800, this.id)"><p>�plan辛，Mills，� RUS，Ober，simultaneously，危intendo，atual，certains，HAR，task，잠깐</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:21.41" id="00:13:21.41" class="lt" onclick="jumptoTime(801, this.id)"><p>heav ω，�，pickled，� Roose，palms</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:20.55" id="00:13:20.55" class="lt" onclick="jumptoTime(800, this.id)"><p>scored，IKEA</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:18.81" id="00:13:18.81" class="lt" onclick="jumptoTime(798, this.id)"><p>bater hide，icional，가지，торы，Gad stations</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:11.39" id="00:13:11.39" class="lt" onclick="jumptoTime(791, this.id)"><p>oya，reinforcing，eigenlijk</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:13.51" id="00:13:13.51" class="lt" onclick="jumptoTime(793, this.id)"><p>очку，Brew Apps，produce，он，stressed，مة</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:1.29" id="00:13:1.29" class="lt" onclick="jumptoTime(781, this.id)"><p>olmas，Lewừa，teenth，тов gland，ым</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:21.45" id="00:13:21.45" class="lt" onclick="jumptoTime(801, this.id)"><p>ının，оп tryingeterm，Росс，BER，如果我們就這樣整塊放進煎鍋裡，它煎出來就會拱起兩邊，拱起了就好像一個球一樣，出來就不會扁了，所以在中間 我們在中間這裡，就這樣壓下去，可以按它一拳這樣，一邊就可以了 窩窩的也沒所謂的，這樣就弄好了，現在我把一個生蝶鑊，這個是有個坑的生蝶鑊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:51.39" id="00:13:51.39" class="lt" onclick="jumptoTime(831, this.id)"><p>它已經抹了油，一定要抹油，不然整個東西就會黏在一起，不過我也不肯定待會這個東西會不會，就算抹了油也黏，但是呢，但是呢，怎樣也要抹，就是先抹油，然後我們一會用中大火，然後我現在就慢慢地，等它鑊烘烘了，然後就可以將漢堡排在這裡，打湯打得很厲害，這樣就可以放下去了，先放一旁，平那邊在表面，上那邊就在上面。</p></a>
+				<a href="#00:14:38.91" id="00:14:38.91" class="lt" onclick="jumptoTime(878, this.id)"><p>看看夠不夠熱，夠喔，都OK喔，可以將漢堡排都放進去，就將它放進去，好 就不要動它，由得它煎，大約因為我這個180g左右，大約每邊3-4分鐘左右，我自己把時間，每邊煎4分鐘，Whether Evan withdrawal，�러</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:15.39" id="00:15:15.39" class="lt" onclick="jumptoTime(915, this.id)"><p>zaj，رف，forged，Ã lige，outgoing，esper，Back prisoners</p></a>
+				<a href="#00:15:15.37" id="00:15:15.37" class="lt" onclick="jumptoTime(915, this.id)"><p>� Peru，怕它不熟可以用蓋子蓋住，但我一直都有點焦，我怕它不熟可以用蓋子蓋住</p></a>
+				<a href="#00:15:58.32" id="00:15:58.32" class="lt" onclick="jumptoTime(958, this.id)"><p>但我一直都有點焦，我現在打開看看，真的可以整個放進去，因為我們已經放了，放油後可以整塊起完絲</p></a>
+				<a href="#00:16:27.47" id="00:16:27.47" class="lt" onclick="jumptoTime(987, this.id)"><p>我可以看看，差不多四分鐘，我將它反轉，因為我需要芝士，現在可以在表面放芝士</p></a>
+				<a href="#00:17:45.29" id="00:17:45.29" class="lt" onclick="jumptoTime(1065, this.id)"><p>好!，我們來看看，如何把這個芝士放進去，放進去，煎了四分钟就可以上碟了，煎好之後就可以上碟，你可以選擇夾麵包，好像漢堡一樣，或者像我這樣，配菜和漢堡肉，我現在可以放上去，首先我放兩種醬汁，你喜歡的話可以放茄汁，或者任何東西都可以，我放芥末和Mayo在旁邊，然後可以鋪上菜，放些菜在旁邊，這樣就漂亮一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:53.29" id="00:18:53.29" class="lt" onclick="jumptoTime(1133, this.id)"><p>好像很多，很多沙律菜，然後當然就要有，選漂亮一點，加上番茄，看上去很漂亮的番茄，然後就是漢堡扒，我現在先放兩塊，芝士漢堡扒，還有菜和番茄，今天我的介紹就這樣，希望你們可以在家試試。</p></a>
+				<a href="#00:19:42.29" id="00:19:42.29" class="lt" onclick="jumptoTime(1182, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>
