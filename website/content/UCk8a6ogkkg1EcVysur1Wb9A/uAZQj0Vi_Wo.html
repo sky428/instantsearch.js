@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>十分鐘上桌　蒜蓉粉絲蒸象拔蚌仔| 海鮮 |食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'uAZQj0Vi_Wo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>十分鐘上桌　蒜蓉粉絲蒸象拔蚌仔| 海鮮 |食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.52" id="00:00:0.52" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello大家好，又係我王子同大家見面，我會煮什麼呢?</p></a>
+				<a href="#00:00:4.22" id="00:00:4.22" class="lt" onclick="jumptoTime(4, this.id)"><p>今日我去街市買了一些新鮮的小象拔蚌，如果想知道我還有什麼介紹給大家，記得訂閱我啦!</p></a>
+				<a href="#00:00:18.39" id="00:00:18.39" class="lt" onclick="jumptoTime(18, this.id)"><p>我會怎樣做呢?</p></a>
+				<a href="#00:00:23.51" id="00:00:23.51" class="lt" onclick="jumptoTime(23, this.id)"><p>很簡單，我隔水蒸它，我會加什麼呢?</p></a>
+				<a href="#00:00:29.91" id="00:00:29.91" class="lt" onclick="jumptoTime(29, this.id)"><p>當然是我經常介紹的泰國粉絲，其他材料就是，少少豉油，要熟油，很簡單，純粹我會加蒜頭醬和芹菜，拌一拌它的味道，然後我會將粉絲煮開，讓它軟一點，然後就拌在碟底，再將橡皮糖放上面，然後就蒸，蒸完就加熟油，然後就加少少豉油，這樣就完成了，我這裡有些，我經常說我很喜歡的蒜蓉醬，我這裡有些芹菜和蔥，我會將蒜蓉醬拌在一起。</p></a>
+				<a href="#00:01:17.35" id="00:01:17.35" class="lt" onclick="jumptoTime(77, this.id)"><p>一會兒就要鋪上橡皮糖，喜歡吃辣的人，這裡有些指天椒，可以剪少少，粉絲，這裡有些泰國粉絲，喜歡吃粉絲的朋友，我想大部分都喜歡，就加兩包，如果不是太大興趣的粉絲，我想沒有什麼人，就加一包就算了，這裡是怎樣呢，純粹要煮開它，煮開它之後，用少少滾水煮一煮，放在爐頭煮開，然後就晾乾水，一會兒就鋪在橡皮糖底，粉絲就加水。</p></a>
+				<a href="#00:02:12.07" id="00:02:12.07" class="lt" onclick="jumptoTime(132, this.id)"><p>煮多久，純粹煮開一分鐘，或者一分鐘以下，這樣都可以，我們就用這些做一做，粉絲煮完後，我剛才做了這個醬的混合物，這個會放在旁邊蒸，但我亦都倒少少下去，攪勻它，粉絲因為它那麼大，你剪一剪開它，平均攤開它，我會稍為再剪一剪開它，因為一陣間他們在外面食飯時，一夾就會方便些，你喜歡可以放幾片薑，你不喜歡就不放薑。</p></a>
+				<a href="#00:03:4.93" id="00:03:4.93" class="lt" onclick="jumptoTime(184, this.id)"><p>然後就攤平這些醬拔蚌，無論你放多少隻都好，總之都要蒸三分鐘多，剛才做了這個醬的混合物，每一隻醬拔蚌放些上去，現在水滾了 打開蓋子，把蝦放入蒸爐，放入蒸爐蒸3分鐘，這邊有一些油，用來煮熟它，做熟油 待會淋上去表面，蒸好了 3分鐘，再灑上少少蔥花，要加少少熟油，炸 炸 炸，每隻都要加少少熟油，最後的步驟。</p></a>
+				<a href="#00:04:21.53" id="00:04:21.53" class="lt" onclick="jumptoTime(261, this.id)"><p>就是加少少，正豉油，就這樣，完成，這個象拔蚌大功告成，我就不試了 因為我知道一定很好味，要盡快等它熱騰騰，我就拿出去，因為我家人正在等著吃這道菜，但我嗅到，是很香和很靚仔，簡單成這樣的一道菜，怎可以不做，3分鐘蒸，其他東西加起來10分鐘就完成，在家煮食可以這麼好味，這麼容易 這麼正，記得 如果喜歡看我的片。</p></a>
+				<a href="#00:05:5.09" id="00:05:5.09" class="lt" onclick="jumptoTime(305, this.id)"><p>記得要訂閱我啦。</p></a>
+</div>
+	</body>
+</html>

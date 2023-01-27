@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》香格里拉大酒店政總廚教授 松子上素鬆</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dDUaQebijTs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》香格里拉大酒店政總廚教授 松子上素鬆</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:12.99" id="00:00:12.99" class="lt" onclick="jumptoTime(12, this.id)"><p>大家好，我是港島香格里拉大酒店，下工廚房中菜部行政總廚梁育景，我今天教大家煮一個松子上訴鬆，我們現在去買菜吧，我們今天教大家煮一個上訴鬆，就是要用到馬蹄，我想教大家怎樣選擇馬蹄，馬蹄最重要是看上去，又是帥氣，圓身一點，不會有些凹位，這樣就不算漂亮，而且會重一點，就會爽一點，甜一點。</p></a>
+				<a href="#00:00:45.11" id="00:00:45.11" class="lt" onclick="jumptoTime(45, this.id)"><p>像這些如果有些凹位就不會漂亮，這些圓潤一點，馬蹄就會漂亮一點，我們主要材料還有甘筍，通常我們會用這些甘筍，因為它本身就會甜一點，爽一點，這些紅蘿蔔通常會煲湯多，是中菜，看上去又是滑身，漂亮，是一個好的甘筍，先將甘筍、蘆筍、馬蹄、北菇切成幼粒，將切好的材料汆水，然後再用雞湯加調味料入味，起鑊將材料炒香，再加入調味料及雞湯。</p></a>
+				<a href="#00:01:44.03" id="00:01:44.03" class="lt" onclick="jumptoTime(104, this.id)"><p>最後加入炸好的松子，炒勻後放在生菜片上便完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:18.03" id="00:02:18.03" class="lt" onclick="jumptoTime(138, this.id)"><p>謝謝觀看。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豉油王鹵墨魚。看似深奧，其實很簡單的一個前菜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xnQq1VUckAs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>豉油王鹵墨魚。看似深奧，其實很簡單的一個前菜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:20.38" id="00:00:20.38" class="lt" onclick="jumptoTime(20, this.id)"><p>今天味道很足夠 不用再加醬汁，這個通常是頭盤來吃，這是豉油黃墨魚，竅門在於湯的部分，要它很漂亮就千萬不要湯錯邊，記得要敲一下硬的部分 把硬的部分切開，然後就可以煮得很漂亮，如果湯錯邊就不會有泡泡，我覺得是很容易煮的菜，唯獨是湯的時候千萬不要叫菜單湯，要看湯的部分 留意如何湯就可以這麼漂亮，平時新鮮的話起碼要$70-80一隻。</p></a>
+				<a href="#00:01:16.24" id="00:01:16.24" class="lt" onclick="jumptoTime(76, this.id)"><p>有時小一點就$60，這個尺寸比一隻手掌還要小，現在工人已經在清洗，這隻墨魚是黑黑的 這邊是白色的，如果是油水的會很漂亮 透明的，這邊是綠色的 現在已經變白了，先說明一下，這邊有這麼大的塊，就像這一塊，其實是這麼硬的，而且很厚的，這一塊是這裡，有很多街市方便開就在這邊，開一刀。</p></a>
+				<a href="#00:02:8.18" id="00:02:8.18" class="lt" onclick="jumptoTime(128, this.id)"><p>整隻魷魚就不漂亮了，我們是在這邊開，然後拿走這個出來，千萬不要在肚子開，也不要叫街市的人幫你開，因為他們會貪便宜在這邊開，這樣會快很多，所以如果要漂亮的話，就在這邊切一刀，然後把骨頭拿出來，現在就叫工人開給你看，就是這一塊了，這塊就硬到這樣了，然後這些就慢慢洗掉那些黑色的東西，好像洗魷魚一樣。</p></a>
+				<a href="#00:02:54.87" id="00:02:54.87" class="lt" onclick="jumptoTime(174, this.id)"><p>這些就不用很努力，這些內臟一定要全部拿出來，最怕就是弄這些，弄到手甲的邊都黑黑的，打牌的時候拿出來，手中的那些是甚麼來的，小朋友寫大字的時候，都寫到手都黑黑的，現在我最怕弄魷魚就是弄到手都黑黑的，不喜歡讀書的所以不喜歡，最重要就是一樣，好像魷魚一樣把眼睛切出來，用手指把魚的嘴巴也去掉，做法跟魷魚差不多。</p></a>
+				<a href="#00:03:53.23" id="00:03:53.23" class="lt" onclick="jumptoTime(233, this.id)"><p>這些魚衣就不要了，我們最喜歡留一些魚衣，讓魷魚留有香味，現在我們煮豉油王的話，就不需要那個香味，所以要做到像剛才那一盆一樣，全部白白的就對了，好了 把鱷魚洗乾淨了，最重要是一把蔥，有薑，兩粒蒜頭，三樣東西，這個要用來起鑊的，然後當然是生抽老抽酒，還有冰糖，就是這麼簡單，非常有趣，相當好吃的豉油王墨魚。</p></a>
+				<a href="#00:04:41.23" id="00:04:41.23" class="lt" onclick="jumptoTime(281, this.id)"><p>先把油燒香薑片，一定要把薑片先炒香，因為薑片不用太大火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:53.23" id="00:04:53.23" class="lt" onclick="jumptoTime(293, this.id)"><p>用慢火，用慢火，如果聞到薑的香味就非常好，放蒜頭，蒜頭也可以用火，慢慢逼出蒜油，這樣就很香，我常說大家要用心去煮東西，其中一樣東西要用心的，就是爆香料頭，爆香料頭煮食物就更好吃，這個我喜歡把它切成半</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:47.23" id="00:05:47.23" class="lt" onclick="jumptoTime(347, this.id)"><p>放每一隻的時候，鬚子要放進去，像進了進風一樣，一隻一隻放進去，再放進去，像進了進風一樣，字幕 by索兰娅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:12.09" id="00:06:12.09" class="lt" onclick="jumptoTime(372, this.id)"><p>Hello，看看，這是好吃的東西，還有，這些一定要切開一半，還有訂閱Sugar Love的頻道，按讚和給我讚好，Bye Bye</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:27.09" id="00:06:27.09" class="lt" onclick="jumptoTime(387, this.id)"><p>現在煎香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:39.50" id="00:06:39.50" class="lt" onclick="jumptoTime(399, this.id)"><p>시면ancy Lin</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:45.42" id="00:06:45.42" class="lt" onclick="jumptoTime(405, this.id)"><p>utation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:41.62" id="00:06:41.62" class="lt" onclick="jumptoTime(401, this.id)"><p>κι</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:54.08" id="00:06:54.08" class="lt" onclick="jumptoTime(414, this.id)"><p>bağ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:59.66" id="00:06:59.66" class="lt" onclick="jumptoTime(419, this.id)"><p>boats，거는，ceed，toilets</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:9.30" id="00:07:9.30" class="lt" onclick="jumptoTime(429, this.id)"><p>blink，Guer mercury，electric Prim None</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:42.04" id="00:06:42.04" class="lt" onclick="jumptoTime(402, this.id)"><p>meses</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:4.52" id="00:07:4.52" class="lt" onclick="jumptoTime(424, this.id)"><p>elim smoothie，stump，finale，privilege</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:7.90" id="00:07:7.90" class="lt" onclick="jumptoTime(427, this.id)"><p>нев，迎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:2.74" id="00:07:2.74" class="lt" onclick="jumptoTime(422, this.id)"><p>150，LEY，storm，entric</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:5.82" id="00:07:5.82" class="lt" onclick="jumptoTime(425, this.id)"><p>Islamic，iors，история，記metal，drink，função，stitched，veux，Roosevelt</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:48.10" id="00:06:48.10" class="lt" onclick="jumptoTime(408, this.id)"><p>2018</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:43.90" id="00:06:43.90" class="lt" onclick="jumptoTime(403, this.id)"><p>omes，earn，익</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:53.26" id="00:06:53.26" class="lt" onclick="jumptoTime(413, this.id)"><p>לק，uffy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:8.34" id="00:07:8.34" class="lt" onclick="jumptoTime(428, this.id)"><p>Gobierno，tuber，楽，reshold，kelu</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:41.94" id="00:06:41.94" class="lt" onclick="jumptoTime(401, this.id)"><p>핑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:6.94" id="00:07:6.94" class="lt" onclick="jumptoTime(426, this.id)"><p>êt，ія，是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:57.78" id="00:06:57.78" class="lt" onclick="jumptoTime(417, this.id)"><p>bathroom，operational，ruck，segu trout，agencies</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:40.00" id="00:06:40.00" class="lt" onclick="jumptoTime(400, this.id)"><p>HQ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:0.06" id="00:07:0.06" class="lt" onclick="jumptoTime(420, this.id)"><p>lighting，ش，broadcast，wid 진짜，� happiness</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:59.50" id="00:06:59.50" class="lt" onclick="jumptoTime(419, this.id)"><p>Homeland，�fly，cade</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:58.68" id="00:06:58.68" class="lt" onclick="jumptoTime(418, this.id)"><p>indifferent，呵，Definitely</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:3.86" id="00:07:3.86" class="lt" onclick="jumptoTime(423, this.id)"><p>dade，Leb nominated</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:55.66" id="00:06:55.66" class="lt" onclick="jumptoTime(415, this.id)"><p>retailer，antiqu affects，겠지만，컨，hormone，水份太多，所以要把水份拿走，水份要流入锅中，如果家中有黄金鸭炉，很难煮这个，但煮得很好吃，水份少了很多，现在就差不多了，要确保锅边没有水份，才可以煮，放3汤匙糖</p></a>
+				<a href="#00:07:52.83" id="00:07:52.83" class="lt" onclick="jumptoTime(472, this.id)"><p>炒一下，最重要是上色，現在倒生抽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:10.83" id="00:08:10.83" class="lt" onclick="jumptoTime(490, this.id)"><p>兩圈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:14.83" id="00:08:14.83" class="lt" onclick="jumptoTime(494, this.id)"><p>老抽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:16.83" id="00:08:16.83" class="lt" onclick="jumptoTime(496, this.id)"><p>一圈，兩圈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:20.83" id="00:08:20.83" class="lt" onclick="jumptoTime(500, this.id)"><p>現在撈起，最重要是上顏色，上色，做這個很浪費力氣，我們手又這麼差</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:34.83" id="00:08:34.83" class="lt" onclick="jumptoTime(514, this.id)"><p>很難煮，因為油很重，然後，調小火，蓋住大約20分鐘，20分鐘，蓋住時我會關掉中火，調小火，否則，醬汁會燒焦，20分鐘後見，20分鐘過後，現在逐一反轉，醬汁還未開始濃稠，仍然稀，醬汁仍然稀，但上色了，現在逐一反轉</p></a>
+				<a href="#00:09:22.83" id="00:09:22.83" class="lt" onclick="jumptoTime(562, this.id)"><p>上色，聞到魷魚味很香，金小姐經常說，你經常買魷魚，又不買大隻的，我經常想吃炆豬肉，先放涼，再蓋住，慢火，煮多久，大約10至15分鐘，試試味，很難告訴你，煮多久，煮到十分至十五分鐘，蓋住，很小火，很快，反轉後，又過了20分鐘，關掉火，醬汁很稠，試試，多謝收看，全部拿出來 拿走所有薑，先試味道，完美 很好吃，這是我其中一樣很喜歡吃的食物。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:45.53" id="00:10:45.53" class="lt" onclick="jumptoTime(645, this.id)"><p>又簡單又容易煮 不過辣，現在還在冒煙 讓它冷卻，這個汁留著吃 看味道如何，六隻完成了 今天和金小姐兩個人吃，現在就切小塊，reste strawberries woman</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:6.43" id="00:12:6.43" class="lt" onclick="jumptoTime(726, this.id)"><p>Вам，lå Scientists，inspPLE Bem，Analytics，ytic，textile，ulen</p></a>
+				<a href="#00:11:57.11" id="00:11:57.11" class="lt" onclick="jumptoTime(717, this.id)"><p>chain，Vayoupe，speakers，trans，assumption，mikä，من</p></a>
+				<a href="#00:11:58.75" id="00:11:58.75" class="lt" onclick="jumptoTime(718, this.id)"><p>PROFESSOR，Wak</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:11.63" id="00:12:11.63" class="lt" onclick="jumptoTime(731, this.id)"><p>completion，Harvard</p></a>
+				<a href="#00:11:54.81" id="00:11:54.81" class="lt" onclick="jumptoTime(714, this.id)"><p>innov genius，eating，Type，activ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:8.93" id="00:12:8.93" class="lt" onclick="jumptoTime(728, this.id)"><p>゚，sost，hee</p></a>
+				<a href="#00:12:1.55" id="00:12:1.55" class="lt" onclick="jumptoTime(721, this.id)"><p>rất，Hol Hindus</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:10.67" id="00:12:10.67" class="lt" onclick="jumptoTime(730, this.id)"><p>ekt，его，première，でした，Cord exploring，gradu�city，�lin，hwa，leve Tan，erg，balls，jego，айн，Nove</p></a>
+				<a href="#00:12:7.41" id="00:12:7.41" class="lt" onclick="jumptoTime(727, this.id)"><p>ury，吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:10.01" id="00:12:10.01" class="lt" onclick="jumptoTime(730, this.id)"><p>sexy，양，ons，devoted，1996，ÿÿ，алась</p></a>
+				<a href="#00:11:44.71" id="00:11:44.71" class="lt" onclick="jumptoTime(704, this.id)"><p>millones，ズ，Either，нем，unpredictable，moved</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:7.17" id="00:12:7.17" class="lt" onclick="jumptoTime(727, this.id)"><p>clicking，� Europeans，pronto，ما</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:7.87" id="00:12:7.87" class="lt" onclick="jumptoTime(727, this.id)"><p>λι，itous，�이</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:56.63" id="00:11:56.63" class="lt" onclick="jumptoTime(716, this.id)"><p>ejectшие，we Marin，masks</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:45.29" id="00:11:45.29" class="lt" onclick="jumptoTime(705, this.id)"><p>çev，再切成兩份或三份，你想想我怎樣切，mus accountable</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:15.21" id="00:12:15.21" class="lt" onclick="jumptoTime(735, this.id)"><p>BBQ imports，Forces，還是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:18.07" id="00:12:18.07" class="lt" onclick="jumptoTime(738, this.id)"><p>drowning，öffentlich，Alsozen nerve，miser iemand，nh，처，завис，deterior juven texto，pest，realm，Preis，Selbst，gl grinding，Republicans，siblings，Jerry。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:21.33" id="00:12:21.33" class="lt" onclick="jumptoTime(741, this.id)"><p>bog，site，Star，icans，Şimdi，�，certa，endorsed stat retirement，intentar，ヒ，y，� Straight，receive，stern，provin，interven，산，line，incorporating，Ask，problницу，äischen。</p></a>
+				<a href="#00:12:19.35" id="00:12:19.35" class="lt" onclick="jumptoTime(739, this.id)"><p>wast，될，Cut，��대� goin，ye，Announcer，搞，appropriately，value，olduğunu，hak，Sally，traces，u，важно，polish，també，alpha，sh Brand，rehearsal，gray，ей，ade，hungry，gagner。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:20.21" id="00:12:20.21" class="lt" onclick="jumptoTime(740, this.id)"><p>�。</p></a>
+</div>
+	</body>
+</html>

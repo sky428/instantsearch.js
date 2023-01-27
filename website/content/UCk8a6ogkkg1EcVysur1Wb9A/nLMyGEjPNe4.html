@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》瑤柱三色蒸水蛋 喜來登酒店總廚示範蒸出完美水蛋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nLMyGEjPNe4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》瑤柱三色蒸水蛋 喜來登酒店總廚示範蒸出完美水蛋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.94" id="00:00:6.94" class="lt" onclick="jumptoTime(6, this.id)"><p>大家好，我是香港喜來登酒店，天寶閣總廚陳偉健，今天教大家做一個瑤柱三色蒸水蛋，一起去街市買東西吧，我比較喜歡日本的蛋，但我們在街市買的方便是最好的，新鮮，我們買的時候看到裂痕就不要選了，選一些比較完好的，沒有破裂的就可以了，我們選鹹蛋的時候，因為有很多灰，我們完全看不到裡面的樣子，我們買的時候看到包裝很新淨。</p></a>
+				<a href="#00:00:43.94" id="00:00:43.94" class="lt" onclick="jumptoTime(43, this.id)"><p>完全沒有破損，代表是新鮮拆出來的，這些皮蛋長時間放得久，吹乾的時候顏色會淡了，會起白灰，這些就沒有那麼漂亮，這些顏色代表它還是很新鮮，偏黃色，選一些比較濕潤，多一點黃色的，這些比較漂亮，蒸水蛋要用三樣材料，皮蛋，鹹蛋和雞蛋，因為皮蛋會有流心的效果，首先要把皮蛋蒸十分鐘，令它熟，有什麼好處呢?</p></a>
+				<a href="#00:01:22.94" id="00:01:22.94" class="lt" onclick="jumptoTime(82, this.id)"><p>切的時候容易處理，顏色也會漂亮一點，如果生出來又黏刀，又很笨拙，就不太好，鹹蛋只需要蛋黃，白色的蛋白是不需要的，而蛋黃也不需要蒸，直接生切就可以了，雞蛋會打起後完全發軟，把沉澱物和多餘的物質分開，令蒸出來的水蛋更加滑，記得一件事，雞蛋要一份雞蛋一份半水，蒸出來的水蛋會更滑，有些顫抖的效果，把切碎的皮蛋和鹹蛋黃放在碟底。</p></a>
+				<a href="#00:02:9.18" id="00:02:9.18" class="lt" onclick="jumptoTime(129, this.id)"><p>把雞蛋和瑤柱一起倒進去，瑤柱要先浸水，再蒸大概一個小時，令到瑤柱變軟，把瑤柱放在皮蛋和鹹蛋上，有一樣東西大家要留意，當你放入蛋的時候，發覺它有氣泡，我們就要把它撥走，或者用紙巾吸一吸，令它完全沒有氣泡，還有蒸的時候記得把保鮮紙蓋好，然後才放進去蒸，因為你不放保鮮紙的時候，有些導汗會滴在蛋上。</p></a>
+				<a href="#00:02:42.22" id="00:02:42.22" class="lt" onclick="jumptoTime(162, this.id)"><p>就會起了一些孔，一個個的泡泡，蒸出來的蛋就不會平滑，現在這個份量大概蒸15分鐘左右，它就會完全熟了。</p></a>
+</div>
+	</body>
+</html>

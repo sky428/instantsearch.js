@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》卅二公館總廚李文星 雙刀剁肉餅 馬友鹹魚蒸肉餅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'n6NkHDPwhvM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》卅二公館總廚李文星 雙刀剁肉餅 馬友鹹魚蒸肉餅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.83" id="00:00:7.83" class="lt" onclick="jumptoTime(7, this.id)"><p>大家好，我是三菜魚公館，中菜行政總廚李文星，我今天教大家煮一碟，馬友鹹魚蒸肉餅，我們現在去買菜吧，鹹魚是最貴的鹹魚之一，我們首先要聞一下，很香，不會臭，再聞一下肚子，這條鹹魚很漂亮，鹹魚有一個秘訣，生鮮才會有肉燒梅魚，如果是熟的，肉就不會那麼嫩，切開來看到，這裡有些反光的面，整條黏著骨頭。</p></a>
+				<a href="#00:00:45.43" id="00:00:45.43" class="lt" onclick="jumptoTime(45, this.id)"><p>中間有些梅的感覺，可能是不新鮮，這個位置就是上肉，就是大腿肉對上一塊肉，做肉餅特別爽口，還有口感，肥瘦比例現在沒有那麼多肥肉，差不多七三比例，因為沒有肥肉，肉質會很鹹，豬肉我們選用上肉，都是要冷藏一下，冷藏一下的用途是，切容易，不會刺到，也容易剁，接著就起了一層皮，切得規則地切就可以了，就剁。</p></a>
+				<a href="#00:01:33.05" id="00:01:33.05" class="lt" onclick="jumptoTime(93, this.id)"><p>剁到肉全部散開，還有些膠狀，這樣就可以了，打肉餅，很打靚的，首先要放鹽，還有開水，就搓到起膠，鹽會令到肉產生膠狀，我們蒸的時候，就不會散開，打到起膠的時候，就會加上雞粉，和少許糖，再加些水，最後就會加上，豆粉，令到肉餅，會更加滑，搓到最後，我們會放些蔥油，蔥油令到肉餅，不會粗糙，所以為什麼有些人吃肉餅就很粗糙。</p></a>
+				<a href="#00:02:9.05" id="00:02:9.05" class="lt" onclick="jumptoTime(129, this.id)"><p>有些人吃起來很滑，就是油和豆粉的作用，令到肉餅，很鬆，很滑，有些馬友鹹魚，黏著，有些內臟就要去掉，兩邊煎到金黃色，就放進豬肉餅，上面就放一些，薑絲和椒絲，令到魚的腥味，去掉，產生香味，滾水，蒸8至10分鐘，我們拿出來，如果有些水流出來，就代表肉，已經全熟了，出來的時候就倒入肉汁，放些蔥花。</p></a>
+				<a href="#00:02:47.05" id="00:02:47.05" class="lt" onclick="jumptoTime(167, this.id)"><p>再灑少許蔥油，肉汁，再加海鮮生抽，豉油，倒在一起，再在鍋裡灑一些，就淋在肉餅上，吃起來比較多汁，鮮味。</p></a>
+</div>
+	</body>
+</html>

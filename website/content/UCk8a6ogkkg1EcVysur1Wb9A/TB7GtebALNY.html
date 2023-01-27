@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIY特色「韓式麻藥溏心蛋」好簡單！好食程度叫人吃上癮│《DIY食譜》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TB7GtebALNY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>DIY特色「韓式麻藥溏心蛋」好簡單！好食程度叫人吃上癮│《DIY食譜》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，我係Lu，今日教大家做韓式麻藥溏心蛋，麻藥係韓國話，食咗會上癮好好食，呢隻溏心蛋最啱係送白飯，只係食佢都夠㗎啦，燒開水後 加入白醋，可以令雞蛋煲時穩定，但記得放雞蛋時要很小心，因為現在不是放普通冷水，放雞蛋時要慢慢，不要令它爆開，但要小心不要燙到，所以會逐一放進去，記得水要完全蓋過雞蛋。</p></a>
+				<a href="#00:00:57.67" id="00:00:57.67" class="lt" onclick="jumptoTime(57, this.id)"><p>為何要轉動呢，其實是令雞蛋黃走在中間，現在要煲6分鐘，大家記得要用室溫雞蛋，今次用的是日本雞蛋，現在坊間都很容易買到，煮雞蛋時就開始做醬汁，這是韓式醬油，把醬油全倒進去，把液體全部都先做好，這個就不要走，麻油最後才加，然後有蜜糖，一定要把蜜糖先溶掉，然後加糖，這些全部都已經放進去後，我們就開始把其他材料放進去。</p></a>
+				<a href="#00:01:39.95" id="00:01:39.95" class="lt" onclick="jumptoTime(99, this.id)"><p>洋蔥，然後蒜頭，紅椒，青椒，蔥，攪拌好後，最後才加麻油和芝麻，現在這個醬汁很濃，因為我們還未放水，大家要遷就那個盒子，其實不會太大個盒子，今次這個份量，再加50ml水就夠了，大家記得這些是食水，即是煲過的水，現在已經把醬汁攪拌好，待會只需要把雞蛋剝殼後放進去，我們就可以完成，待會可以幫助它容易脫殼，我們要在剛才這麼熱的溫度。</p></a>
+				<a href="#00:02:21.03" id="00:02:21.03" class="lt" onclick="jumptoTime(141, this.id)"><p>令它停止再繼續煮，所以要立即降溫，現在這個醬汁已經完成了，待會我們只需要把雞蛋剝殼後，放進去就可以了，我們在冰水中，其實可以方便剝殼，我通常都會剝扁那邊，一邊是尖的，一邊是相對平的，那邊其實有一個小小的空位，就可以透過那個空位慢慢剝下去，這樣雞蛋通常都會完整一點，這個韓式麻藥糖心蛋就已經做好了，中間的過程中。</p></a>
+				<a href="#00:02:57.95" id="00:02:57.95" class="lt" onclick="jumptoTime(177, this.id)"><p>因為我不是完全蓋過它，但其實都夠了，在冰的過程中，偶爾推一下它，它會轉動，你看到它轉動了，轉動了的時候，它就可以在另一邊再吸收味道，所以沒所謂，差一點點不要緊，現在我們就把它放進冰箱，最少就冰它一天</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:20.90" id="00:03:20.90" class="lt" onclick="jumptoTime(200, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+	</body>
+</html>

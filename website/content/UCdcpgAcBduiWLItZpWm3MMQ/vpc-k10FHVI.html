@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>焗脆皮紅豆年糕 (Baked Red Bean Mochi Cake)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vpc-k10FHVI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>焗脆皮紅豆年糕 (Baked Red Bean Mochi Cake)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.71" id="00:00:3.71" class="lt" onclick="jumptoTime(3, this.id)"><p>Hello，2017年第一次和大家見面，祝大家新年快樂!</p></a>
+				<a href="#00:00:10.71" id="00:00:10.71" class="lt" onclick="jumptoTime(10, this.id)"><p>今日我和大家一起做一個很簡單的迷你脆皮焗年糕，作為我新的一年對自己有一個期望，希望越做越好，另外，一月尾已經到農曆新年，希望接下來幾個星期都可以朝著農曆新年的方向去做，未來幾個星期我們都會做一些關於新年的美食，今日就介紹這個了，首先看一下，雖然是年糕，但不是蒸的，這個年糕是焗的，我需要的材料也很簡單。</p></a>
+				<a href="#00:01:10.69" id="00:01:10.69" class="lt" onclick="jumptoTime(70, this.id)"><p>首先我要糯米粉，因為是年糕，所以要糯米粉，我要發粉，牛奶，菜油，雞蛋，如果想把它豐富一點，沒那麼寡，我會加紅豆，你可以買一些紅豆餡，我手上沒有紅豆餡，所以我用罐頭紅豆，一會兒看看怎樣做，令到蛋糕可以豐富一點，不會只有一塊粉，首先，不如我先處理紅豆，我這個是日本紅豆，一開就是一罐，它是一粒粒的。</p></a>
+				<a href="#00:02:0.69" id="00:02:0.69" class="lt" onclick="jumptoTime(120, this.id)"><p>我先倒出來，有幾個做法，你可以把它搓碎，然後用鍋慢慢煮，令到水可以再收乾一點，就變成一個紅豆餡料，或者像我這樣，可以直接在餡料的糯米粉漿中，分一半攪拌紅豆，紅豆會混合糯米粉，不會變成糯米粉咬下去也會有紅豆或紅豆蓉，外面你可能會看到，如果是用焗的脆皮年糕，很多時候都是把買的紅豆餡壓過去，然後放在中間，變成一層，我就想試一下，我用一個更簡單的方法，就是把它攪拌在糯米粉漿中，看看會變成怎樣。</p></a>
+				<a href="#00:03:16.69" id="00:03:16.69" class="lt" onclick="jumptoTime(196, this.id)"><p>這次我不肯定會做得很好，但我就想試一下用這個方法，可不可以做到一個新的口味，接下來就是做粉漿，粉漿有什麼材料呢?當然有糯米粉，糯米粉要一包，我這裡是一隻水磨糯米粉，一包就是400克，我需要400克，為免攪拌時，打起不夠多粒，我就篩一篩，我做的這個就是迷你版，即是會放在cupcake muffin的pan上焗，當然你也可以做原裝版，放在8吋盤或9吋盤上做。</p></a>
+				<a href="#00:04:21.24" id="00:04:21.24" class="lt" onclick="jumptoTime(261, this.id)"><p>都可以的，過篩後，我就需要第二樣東西，就是發粉，這個就是baking powder，我需要一茶匙，一茶匙，放進去，攪拌均勻，另外，加入白糖和鮮奶，一杯白糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:56.24" id="00:04:56.24" class="lt" onclick="jumptoTime(296, this.id)"><p>一個兩杯，一杯白糖，其實一杯白糖已經不太甜，如果你想到好像外面的年糕那麼甜，你應該起碼要放一杯半，因為我一會兒會放紅豆，紅豆有甜味，所以我減了糖，這裡就是一杯白糖，然後我會放兩杯鮮奶，先打開一半的鮮奶，用2杯鮮奶，今天做脆皮年糕是非常簡單的，你可以用打蛋器，我用電動的，你可以自己用手慢慢攪拌，用慢速攪拌。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:46.65" id="00:06:46.65" class="lt" onclick="jumptoTime(406, this.id)"><p>攪拌至沒有粉狀，糖也融化了，沒有粒狀便可以了，需要時間，慢慢攪拌，用最慢的慢速，如果用西式的攪拌器，可以加整些奶油，因為我這個攪拌器是用來焗的，不是蒸的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:10.19" id="00:08:10.19" class="lt" onclick="jumptoTime(490, this.id)"><p>謝謝觀看，阿 Effectsusz cert adults，fue jestem，Sick，intoler brigcomp</p></a>
+				<a href="#00:08:27.64" id="00:08:27.64" class="lt" onclick="jumptoTime(507, this.id)"><p>한다，wrapped，adolescent，Dynasty</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:36.00" id="00:08:36.00" class="lt" onclick="jumptoTime(516, this.id)"><p>Vanc mo，Cornell，starting，ней，sighs，그런</p></a>
+				<a href="#00:08:30.66" id="00:08:30.66" class="lt" onclick="jumptoTime(510, this.id)"><p>ouvert，lr，αυτό，pipes，inference</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:41.02" id="00:08:41.02" class="lt" onclick="jumptoTime(521, this.id)"><p>люс，bu，그래，Deck，esc，proclaim</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.32" id="00:08:42.32" class="lt" onclick="jumptoTime(522, this.id)"><p>ogn，parental，azt，whooshing，Zukunft，spiral，stimulation，owned，vis</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.12" id="00:08:42.12" class="lt" onclick="jumptoTime(522, this.id)"><p>�도，surprisingly</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.62" id="00:08:42.62" class="lt" onclick="jumptoTime(522, this.id)"><p>Hayır，лай，ed，ension，deferheart，acre，ion，印 Wolf</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.18" id="00:08:31.18" class="lt" onclick="jumptoTime(511, this.id)"><p>há Nearly，inim</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:37.10" id="00:08:37.10" class="lt" onclick="jumptoTime(517, this.id)"><p>compressor，dile取，уг，gentle，� 토� manque，ius，Virtual，créd starts，무슨，allein</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.78" id="00:08:27.78" class="lt" onclick="jumptoTime(507, this.id)"><p>pathogens，!?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:38.28" id="00:08:38.28" class="lt" onclick="jumptoTime(518, this.id)"><p>às，だ，trif sabia，��오，expenditure，Depending resurител，בא Wu</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.58" id="00:08:42.58" class="lt" onclick="jumptoTime(522, this.id)"><p>OULD tö，binder</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:38.60" id="00:08:38.60" class="lt" onclick="jumptoTime(518, this.id)"><p>加热到滚水，加热到滚水，加热到滚水，現在可以看到已經很均勻了，我想過篩一下，我確保可以這樣滑，mur ne Folge</p></a>
+				<a href="#00:09:50.51" id="00:09:50.51" class="lt" onclick="jumptoTime(590, this.id)"><p>この сделали，App 각 hugs</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:58.27" id="00:09:58.27" class="lt" onclick="jumptoTime(598, this.id)"><p>insanity，schol Maple，gers holidays，lost</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:55.25" id="00:09:55.25" class="lt" onclick="jumptoTime(595, this.id)"><p>Mal회，訴iri，aterial，oro，Meter，société，spectral，iver belly，både，wait</p></a>
+				<a href="#00:09:47.05" id="00:09:47.05" class="lt" onclick="jumptoTime(587, this.id)"><p>�ways，osh，sinful，сон，ts，land，begged</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:45.09" id="00:09:45.09" class="lt" onclick="jumptoTime(585, this.id)"><p>purple，וב，catch</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:45.91" id="00:09:45.91" class="lt" onclick="jumptoTime(585, this.id)"><p>Soldier，punk，� Programm，Neder，ное</p></a>
+				<a href="#00:09:52.53" id="00:09:52.53" class="lt" onclick="jumptoTime(592, this.id)"><p>vienen，Mike，érence，Burn graduating</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:50.49" id="00:09:50.49" class="lt" onclick="jumptoTime(590, this.id)"><p>clipse，今天的 pops� kneaddock，接著我放雞蛋，我需要的是三隻雞蛋</p></a>
+				<a href="#00:10:21.18" id="00:10:21.18" class="lt" onclick="jumptoTime(621, this.id)"><p>放入冰箱冷藏，冰箱冷藏後，可以用來做其他食材，例如，炒菜，炒肉，炒雞，炒雞蛋，炒雞蛋，炒雞蛋，炒雞蛋，下集再見</p></a>
+				<a href="#00:10:54.85" id="00:10:54.85" class="lt" onclick="jumptoTime(654, this.id)"><p>estad eighty，toughest，街，ously，ubl송，dodge，explanation，맛있는，motif，INT，onsoking，там，которое，Pl Eventually，samo，гов，Grab capabilities，מק Ins，謝謝觀看，三隻。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:7.88" id="00:11:7.88" class="lt" onclick="jumptoTime(667, this.id)"><p>將雞蛋打勻，constructed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:53.01" id="00:11:53.01" class="lt" onclick="jumptoTime(713, this.id)"><p>Zerousst somewhat，zyć，­ puts，snare，rus，�든，metrics，neath，devast?)，personne，velope</p></a>
+				<a href="#00:11:41.99" id="00:11:41.99" class="lt" onclick="jumptoTime(701, this.id)"><p>SY，hadi，ưa，warum，soi，вместе</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.11" id="00:11:54.11" class="lt" onclick="jumptoTime(714, this.id)"><p>buixa，lasting，committed，婆оды，ymph 맞，lance，gaz，30，highlighter，urança</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:57.99" id="00:11:57.99" class="lt" onclick="jumptoTime(717, this.id)"><p>(-，rec decentral時 œ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:36.11" id="00:11:36.11" class="lt" onclick="jumptoTime(696, this.id)"><p>affair NS，sentiments，parle，ductuck，nuclei</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.77" id="00:11:54.77" class="lt" onclick="jumptoTime(714, this.id)"><p>kra，promised</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.33" id="00:11:54.33" class="lt" onclick="jumptoTime(714, this.id)"><p>ędzie，Gimme，X，poems，list</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:55.87" id="00:11:55.87" class="lt" onclick="jumptoTime(715, this.id)"><p>uar，我想 Guatem Xin，ond aquellos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.53" id="00:11:54.53" class="lt" onclick="jumptoTime(714, this.id)"><p>lect hurdles，Gottes Bronze，gging</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:44.35" id="00:11:44.35" class="lt" onclick="jumptoTime(704, this.id)"><p>cal ně один umm，advice，唉，asshole，strips</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.31" id="00:12:1.31" class="lt" onclick="jumptoTime(721, this.id)"><p>cand Nest CG，suo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:48.29" id="00:11:48.29" class="lt" onclick="jumptoTime(708, this.id)"><p>WiFi，вин</p></a>
+				<a href="#00:11:58.21" id="00:11:58.21" class="lt" onclick="jumptoTime(718, this.id)"><p>��� enemies，Neredstellen，uestas</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:53.57" id="00:11:53.57" class="lt" onclick="jumptoTime(713, this.id)"><p>QuinrectionMaster，objections，filmed，這個是，imal，control Staats魔 virgin，gospel，SWRad</p></a>
+				<a href="#00:11:48.49" id="00:11:48.49" class="lt" onclick="jumptoTime(708, this.id)"><p>عل HY，Пон，arya，dependence，Put，depl，urate，servi，xus，RIGHT，cut</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:56.67" id="00:11:56.67" class="lt" onclick="jumptoTime(716, this.id)"><p>vel Item，호，Television，небольш，undos，disturbing，Interviewer，File，ves</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.73" id="00:12:1.73" class="lt" onclick="jumptoTime(721, this.id)"><p>баб，boca，bases，war，special，disorder，näch，Apps，holes</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:53.89" id="00:11:53.89" class="lt" onclick="jumptoTime(713, this.id)"><p>immensely，tablespoon，좋아，sustained，新 1963，agrees</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:2.83" id="00:12:2.83" class="lt" onclick="jumptoTime(722, this.id)"><p>giving，associ appreciative，φο，again，way，bindseat，Work Aus Irene，packets</p></a>
+				<a href="#00:11:57.45" id="00:11:57.45" class="lt" onclick="jumptoTime(717, this.id)"><p>Cage，video</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:51.91" id="00:11:51.91" class="lt" onclick="jumptoTime(711, this.id)"><p>magically，introduce，그렇 Sean，cho title</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:0.17" id="00:12:0.17" class="lt" onclick="jumptoTime(720, this.id)"><p>ketchup，스�rement，abyte</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:0.77" id="00:12:0.77" class="lt" onclick="jumptoTime(720, this.id)"><p>housed，reated，utable，ี，indic掰掰，endured，ikel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:47.41" id="00:11:47.41" class="lt" onclick="jumptoTime(707, this.id)"><p>rested，äl，recherche，fulfillment</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:56.43" id="00:11:56.43" class="lt" onclick="jumptoTime(716, this.id)"><p>Standards，gera，diarrhea隻 iPhone anys</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:2.13" id="00:12:2.13" class="lt" onclick="jumptoTime(722, this.id)"><p>meno，versus</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:40.45" id="00:11:40.45" class="lt" onclick="jumptoTime(700, this.id)"><p>cked，втор，lunar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:59.67" id="00:11:59.67" class="lt" onclick="jumptoTime(719, this.id)"><p>restroom，Whats倒，� 봐，rire</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:56.19" id="00:11:56.19" class="lt" onclick="jumptoTime(716, this.id)"><p>鉄塔，Hearts，meng，buds，coriander</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:0.05" id="00:12:0.05" class="lt" onclick="jumptoTime(720, this.id)"><p>돼，Works</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:3.39" id="00:12:3.39" class="lt" onclick="jumptoTime(723, this.id)"><p>istinct，approaches</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:57.21" id="00:11:57.21" class="lt" onclick="jumptoTime(717, this.id)"><p>Punch Max，CRI youtuber，finцип，Finn，sights</p></a>
+				<a href="#00:11:45.27" id="00:11:45.27" class="lt" onclick="jumptoTime(705, this.id)"><p>standards，pitFinally</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:2.21" id="00:12:2.21" class="lt" onclick="jumptoTime(722, this.id)"><p>dl，Emer Afterwards，interviewing，campuses，heiro，peppers，semana</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.69" id="00:11:54.69" class="lt" onclick="jumptoTime(714, this.id)"><p>granny，eder，Aly undergoing，었다，доп，vanity</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:53.39" id="00:11:53.39" class="lt" onclick="jumptoTime(713, this.id)"><p>friendly，LAUGHTER，TT bake，worm ambigu，acuerdo，Smithsonian，NARRATOR Bev</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.25" id="00:12:1.25" class="lt" onclick="jumptoTime(721, this.id)"><p>US，而且，fastest，ringing，lá</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:49.65" id="00:11:49.65" class="lt" onclick="jumptoTime(709, this.id)"><p>motives，diminish，ision，agu factory，gaan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:0.21" id="00:12:0.21" class="lt" onclick="jumptoTime(720, this.id)"><p>anders，chuck</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:59.29" id="00:11:59.29" class="lt" onclick="jumptoTime(719, this.id)"><p>得，eyel계</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:57.03" id="00:11:57.03" class="lt" onclick="jumptoTime(717, this.id)"><p>sorta，iPhones</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:41.09" id="00:11:41.09" class="lt" onclick="jumptoTime(701, this.id)"><p>詰리，cznie，πά</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:49.37" id="00:11:49.37" class="lt" onclick="jumptoTime(709, this.id)"><p>Uma，condensed，INAUDIBLE，我需要3分之4的菜油，這個時間我還想說，我們現在要預熱焗爐，焗爐大約是350度華氏，最後階段打這個粉漿，打到粉漿和油完全混合</p></a>
+				<a href="#00:12:57.72" id="00:12:57.72" class="lt" onclick="jumptoTime(777, this.id)"><p>這樣就完成了，然後我預熱了焗爐，預熱350度，然後我處理盤子，說明是迷你的脆皮年糕，焗脆皮年糕，我放進麥芬天，你可以用大的焗盤，為免黏底，我每一個都掃上油，令到焗起來不會黏，另外我怕不夠，我預備了另一個焗盤，這個也是小小的焗盤，我會把大焗盤放多一塊紙，令到焗出來時容易移動，焗爐就好了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:16.73" id="00:14:16.73" class="lt" onclick="jumptoTime(856, this.id)"><p>差不多了，剛才不是說有紅豆嗎，我說是有紅豆，現在開始處理，我把它分開做兩盤，分開做兩盤，分開做兩盤，因為我相信茶碗的表面沒有紅豆，紅豆就在底部，我分開一點，然後將這些紅豆倒入其中一部分，我現在看看有多少，確保我可以說得真，這裡500ml，這裡就700ml，即是這裡就1200ml，我將這些倒入700ml那邊。</p></a>
+				<a href="#00:15:47.77" id="00:15:47.77" class="lt" onclick="jumptoTime(947, this.id)"><p>然後就拌勻，我盡量把它拌勻一點，讓它不要黏在底部，拌多幾下 顏色就要出來了，可以全部一起拌勻，我只是想有兩種顏色，不過可能會變得不一樣，我想試一下，好像一個實驗，我以前做就是用外面賣的鹽性餡，磨成一張很薄的紙，倒一半的鹽性餡，然後再放一半的鹽性餡，倒一半的麵糊，然後再放一塊小的餡料，再蓋上蓋子。</p></a>
+				<a href="#00:16:52.25" id="00:16:52.25" class="lt" onclick="jumptoTime(1012, this.id)"><p>這樣來烤的，現在我想試一下，新的一連用，把食譜變成一個新的食譜，紅豆粒要先舀一點， 確保每個都有一點，再淋上紅豆醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:53.96" id="00:17:53.96" class="lt" onclick="jumptoTime(1073, this.id)"><p>撒上蔥花，每個年糕都要確保有紅豆在裡面，miners，celery</p></a>
+				<a href="#00:18:29.81" id="00:18:29.81" class="lt" onclick="jumptoTime(1109, this.id)"><p>urch res，reservnas，fellowship，oop，Calling，Rare，reduced，onym，bakaniu，outheast</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:24.05" id="00:18:24.05" class="lt" onclick="jumptoTime(1104, this.id)"><p>herical，xen</p></a>
+				<a href="#00:18:35.47" id="00:18:35.47" class="lt" onclick="jumptoTime(1115, this.id)"><p>Yap，Most</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:33.97" id="00:18:33.97" class="lt" onclick="jumptoTime(1113, this.id)"><p>app listen，na，Kyoto</p></a>
+				<a href="#00:18:29.55" id="00:18:29.55" class="lt" onclick="jumptoTime(1109, this.id)"><p>envy，edor，situação，panze，set，precon</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:23.47" id="00:18:23.47" class="lt" onclick="jumptoTime(1103, this.id)"><p>ίν Heaways，Orange，exhausted，programmed，goat，òn，剩下的放在碗內，一時不要緊，待會抹一下就可以了，然後把表面的倒在碗內，再倒入麵糊中，可以拌一拌，然後就可以焗了，當然我先抹乾淨，Hello 這樣就好了，現在這個年糕焗得很漂亮，焗了45分鐘，當然要焗熟為止。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:43.31" id="00:19:43.31" class="lt" onclick="jumptoTime(1183, this.id)"><p>然後想試一下熟不熟，拿支牙籤刺出來，都是很清晰的就已經可以了，我已經試了，然後就可以慢慢等它冷了就可以拿出來，另外那個因為大，起碼要焗一個小時，我們一會再看看，大的那個已經完成了，焗出來都很漂亮，很金黃色，因為有些光打得不漂亮，其實它是很金黃色和很脆皮，這個紅豆脆皮年糕，其實不用放雪櫃。</p></a>
+				<a href="#00:20:27.31" id="00:20:27.31" class="lt" onclick="jumptoTime(1227, this.id)"><p>放在室溫都可以放幾天，當它吃的時候，它現在很脆皮，這樣你看看多漂亮，紅豆在底，這些不是焦的，因為紅豆的顏色才會這樣，吃起來是脆的，我試給你們看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:50.31" id="00:20:50.31" class="lt" onclick="jumptoTime(1250, this.id)"><p>它外面是脆，裡面是年糕，可能紅豆混在裡面，很好吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:0.31" id="00:21:0.31" class="lt" onclick="jumptoTime(1260, this.id)"><p>如果你想，也不是太甜，吃的時候，最好再放在烘焙桶烘一會，讓它脆脆的，這樣就可以，一直都可以保持脆，吃的時候仍然是脆皮，在新的一年，2017年大家都步步高升。</p></a>
+				<a href="#00:21:23.31" id="00:21:23.31" class="lt" onclick="jumptoTime(1283, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

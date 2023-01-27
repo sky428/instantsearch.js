@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豉油王/XO醬炒腸粉。自家可以炒到好似街賣咁</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NaMowsKwTJc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>豉油王/XO醬炒腸粉。自家可以炒到好似街賣咁</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，昨天吃剩的腸粉，今天硬梆梆，好像…不知道是什麼硬梆梆，我想再蒸來吃一定不好吃，於是我就想不如今天就把昨天吃剩的腸粉，豬腸粉做豉油王腸粉，家裡只有蔥兩條，然後就沒有銀芽，在冰箱裡找了一個我昨天買的，有些大豆芽，預備今晚吃的，去裡面找一些散出來的，剩下的剪幾條出來，這些剪剩的出來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:59.79" id="00:00:59.79" class="lt" onclick="jumptoTime(59, this.id)"><p>這些剪剩的出來，你剪完今晚就沒有剩的，不是呀，今晚吃頭的那些，今晚不會剋搏你的，吃這些，都已經剩下沒幾個，你剪多兩條，夠了夠了夠了，什麼夠了，好了，夠了夠了，你不要管在這鍋東西裡，撿著撿著都撿了這麼多沒有豆芽的，假裝銀芽，你看到我儲藏的大豆芽，或者你買銀芽回來都要的，泡在水裡。</p></a>
+				<a href="#00:01:39.79" id="00:01:39.79" class="lt" onclick="jumptoTime(99, this.id)"><p>你看到你去街市買，他們都是泡在水裡，因為你不泡在水裡，這些就會變成像現在這樣綠色的，如果你的銀芽不泡在水裡，它就會變成啡啡軟軟的，不太好，好了，現在就可以開始，咦，不如炒兩味大家看一下，一個XO醬，一個豉油王，好了，先說炒豉油王，炒豉油王，如果你去買腸粉的時候，其實很多地方都有這些，差不多你買腸粉的地方都有這些。</p></a>
+				<a href="#00:02:17.79" id="00:02:17.79" class="lt" onclick="jumptoTime(137, this.id)"><p>李錦記的一包小小包的甜豉油，如果炒這個腸粉就要一包做底的味道，豉油王，然後顏色就一定要用草菇老抽，然後呢，白芝麻，要烘一烘，這個就是XO醬，XO醬我會用嘉麟樓的XO醬來炒，都要有底色，底色仍然是草菇老抽，簡單些，它回來的時候很長。</p></a>
+				<a href="#00:02:54.28" id="00:02:54.28" class="lt" onclick="jumptoTime(174, this.id)"><p>要我自己切，我不夠放這個，所以這條可以切三條，這裡也是，這些切三條，一半XO醬一半豉油黃，雖然很少，就是這樣，蔥切成小段，這裡要烘一點芝麻，芝麻要馬上烘。</p></a>
+				<a href="#00:03:33.28" id="00:03:33.28" class="lt" onclick="jumptoTime(213, this.id)"><p>即使烘了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:35.28" id="00:03:35.28" class="lt" onclick="jumptoTime(215, this.id)"><p>再烘一烘，用慢火，這邊就炒，因為它很油，所以要放少許，我覺得底部要放少許甜豉油炒一炒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:7.28" id="00:04:7.28" class="lt" onclick="jumptoTime(247, this.id)"><p>然後放少許草菇老抽，顏色會馬上變好，加這些就完成了。</p></a>
+				<a href="#00:04:24.28" id="00:04:24.28" class="lt" onclick="jumptoTime(264, this.id)"><p>炒一炒，炒到軟了就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.28" id="00:04:30.28" class="lt" onclick="jumptoTime(270, this.id)"><p>完成了，現在炒XO醬，不用放甜豉油，只放草菇老抽</p></a>
+				<a href="#00:04:52.28" id="00:04:52.28" class="lt" onclick="jumptoTime(292, this.id)"><p>放這些，好了，放一匙XO醬，加入少許老抽</p></a>
+				<a href="#00:05:13.39" id="00:05:13.39" class="lt" onclick="jumptoTime(313, this.id)"><p>如果食得辣就可以加多些XO醬，完成，今天吃午餐，吃了一個豉油王炒的，炒給金小姐，因為我不吃醋醬，不吃辣的，我覺得好像比蒸的好吃，因為蒸的時候很難蒸得透，豬腸粉會硬了一點，但是炒的時候會炒得軟一點，我覺得炒的比昨天的好吃，這個全部都是剩下的，昨天是蒸的，今天炒的更好吃，大家都見慣見熟我這個廚房。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:58.74" id="00:05:58.74" class="lt" onclick="jumptoTime(358, this.id)"><p>平時我都會有很多煮食的影片放在Youtube，但是今天這條影片可以說是，暫時來說最後一條影片和大家分享，原因是因為，找食家難了各位，因為我自己不做editing，我為了大家聽眾的喜見，我都特意做了英文的subtitle，有字幕，其實我是特意希望，在世界各地的朋友都可以share到一些，很簡單的方法和容易煮的方法。</p></a>
+				<a href="#00:06:48.74" id="00:06:48.74" class="lt" onclick="jumptoTime(408, this.id)"><p>去煮一些家常菜，但是其實因為，那個editing course，其實真的很貴，還有我們Youtube出的影片少，所以我們Youtube的錢，其實是差不多給了editor，我還要貼給editor，所以我現在決定，所有煮食的影片我都會拍，不過我希望大家支持我，開始要入美元，Youtube的membership才有煮食的影片看。</p></a>
+				<a href="#00:07:29.74" id="00:07:29.74" class="lt" onclick="jumptoTime(449, this.id)"><p>原因是我發覺有些朋友，因為他們不煮食，他們很少看我的share，或者看我的煮食的影片，如果煮食的朋友，他們又會覺得，只是煮食又不夠，我自己都覺得是，其實我經常很希望做到一件事，就是煮食的影片，能夠像我以前，可以看你怎樣煮，再加上以前我在電台，找一把口和你說，煮完那個蛋，我的聽眾又可以，feedback說。</p></a>
+				<a href="#00:08:3.74" id="00:08:3.74" class="lt" onclick="jumptoTime(483, this.id)"><p>我上次弄的蛋，不行喔，是很好笑的，因為我們都有很多笑話，譬如我們在電台說，用白鑊去炒炒那些東西，於是過了幾個禮拜，突然有個聽眾說，阿蘇阿蘇，我在街市找的鑊，全部不是銀色是黑色，我找不到白鑊，救命，於是我們又試過，下水的時候，最重要是，蝦眼水的時候，把芽菜丟進去，又有聽眾說，那些蝦眼水呢，去哪找那麼多蝦眼。</p></a>
+				<a href="#00:08:46.74" id="00:08:46.74" class="lt" onclick="jumptoTime(526, this.id)"><p>那怎麼辦，去街市買海鮮店，就只能告訴他買蝦眼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:52.50" id="00:08:52.50" class="lt" onclick="jumptoTime(532, this.id)"><p>carbono，아니면，veteran，기，vanilla，經過這麼多年 大家的笑話也做了很多，大家從電台 到廣播，我又在 TownGuest 教了很久煮菜，又在 Cable TVB，又在很多雜誌 新加基 飲食男女，很多不同的渠道 也跟大家分享過煮食，最後 我覺得這次也是我最後，應該拍我這一世最後的一堆煮食片。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:33.62" id="00:09:33.62" class="lt" onclick="jumptoTime(573, this.id)"><p>我也希望大家流傳得好，我也很希望在這個時候，大家也可以分享到，究竟煮食片的時候的竅門 難度，去哪裡問呢?</p></a>
+				<a href="#00:09:51.12" id="00:09:51.12" class="lt" onclick="jumptoTime(591, this.id)"><p>有時我又不回答你們，於是我們很希望大家可以加入會員，直接看我的影片，大家留意我有一個是講會員的，怎樣入會 各樣東西，希望大家繼續支持我，謝謝大家，加入會員看我煮食的影片。</p></a>
+</div>
+	</body>
+</html>

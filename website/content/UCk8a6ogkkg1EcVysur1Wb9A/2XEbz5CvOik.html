@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》豉味彩椒炒牛肉 會展總廚傳授兒子的拿手小菜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2XEbz5CvOik',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》豉味彩椒炒牛肉 會展總廚傳授兒子的拿手小菜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.26" id="00:00:7.26" class="lt" onclick="jumptoTime(7, this.id)"><p>我是香港會議展覽中心中廚部行政總廚譚國星，我今天帶大家來大埔區街市，買菜煮時味彩椒炒牛頸脊，如果去街市買新鮮牛肉來炒，最好的部位就是牛頸脊，因為其他部位沒有它那麼軟滑，就算熟了也不會鹹，因為牛頸脊是頸背只有兩條，價錢相對亦是貴一倍，炒牛頸仔有兩個小貼士，切牛肉如果切直紋就不好吃，這些紋是橫紋。</p></a>
+				<a href="#00:00:55.65" id="00:00:55.65" class="lt" onclick="jumptoTime(55, this.id)"><p>跟著這塊肉切就對了，切斷肉紋 肉就沒有紋，斜斜的出來的效果就是這樣，如果打直切就只有半個位，我覺得這樣切會好看點，將直紋反轉就變成橫紋，肉的纖維密度分佈得很鬆，直紋牛肉怎樣也不會軟，將牛肉切片調味，拌勻後放入雪櫃約30分鐘，這樣就可以令牛肉入味，醃肉時要加少許蠔油，因為蠔油跟牛肉的味道很配。</p></a>
+				<a href="#00:01:43.65" id="00:01:43.65" class="lt" onclick="jumptoTime(103, this.id)"><p>如果用三色彩椒 半個就夠了，洗淨切成菱形，好看點 入味點，將彩椒爆炒 灒少許水，大約五成熟就可以倒起彩椒，煎一煎牛肉片，如果在家可以用竹筷子，將牛肉攤開 受熱就平均點，大約炒一分鐘就有五成熟，然後就可以將料頭爆香，就是乾蔥 蒜蓉 豆豉，再放牛肉 炒多兩下，再放彩椒 芡汁 快炒就完成</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:50.65" id="00:02:50.65" class="lt" onclick="jumptoTime(170, this.id)"><p>MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

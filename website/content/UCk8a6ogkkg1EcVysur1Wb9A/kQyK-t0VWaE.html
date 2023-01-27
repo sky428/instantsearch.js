@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》卅二公館總廚炮製 芥蘭炒牛肉</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kQyK-t0VWaE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》卅二公館總廚炮製 芥蘭炒牛肉</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.35" id="00:00:7.35" class="lt" onclick="jumptoTime(7, this.id)"><p>大家好，我是三十二公館中菜行政中廚李文星，今天我教大家做一個芥蘭炒牛肉，我們買菜吧，選芥蘭苗最好是青綠色，還有要選短身一點的，我們叫矮腳，這些芥蘭比較嫩和甜，這隻叫紅頭蔥是春天才有的，過了這個季節就沒有了，紅頭蔥的味道是特別香的，味道會持久很多，我們常見牛肉有三款炒是比較好看的，第一款叫包腩。</p></a>
+				<a href="#00:00:53.55" id="00:00:53.55" class="lt" onclick="jumptoTime(53, this.id)"><p>是在腩的邊緣，第二款是柳梅，是很嫩滑的炒，這個沒得炒，第三款就是這個，我們以前把肉眼斜出來，用肉眼邊來炒，因為油花比較多，嫩滑之餘也有油花的香味，我們今天建議用柳梅，柳梅更嫩滑，首先把芥蘭洗乾淨，然後斜切，斜切的意思是範圍大一點，令味道更吸收，牛肉回來的時間最好放在雪櫃，放兩三個小時。</p></a>
+				<a href="#00:01:36.35" id="00:01:36.35" class="lt" onclick="jumptoTime(96, this.id)"><p>雪櫃之後就不會黏刀，切出來的大小會均勻一點，芥蘭切的時候會切斷筋，這樣就不會有筋，切好之後就會放生抽，糖，還有生粉，為什麼我們不放鹽呢，鹽會把牛肉刺死，拌到有一點點膠狀，就放在這裡，讓它吸收水分，肉要吸收水分，才會軟滑和脹身，大概醃20分鐘，至半小時，我們要加生牛奶，拌一拌，炒的時候燒紅的鍋，加一點薑汁酒。</p></a>
+				<a href="#00:02:16.35" id="00:02:16.35" class="lt" onclick="jumptoTime(136, this.id)"><p>爆炒的過程，加一點水和糖，鹽，轉色後倒上去，燒紅之後就放暖牛奶，加牛肉酒油，大概10秒就完成了，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，薑要在火關掉，如果開大火就會燒焦，加芥蘭，再炸一湯匙花雕，再加牛肉和芡汁，為什麼要加多一點糖，因為芥蘭有苦澀味，多一點糖和酒，芥蘭的苦澀味都去掉，產生香味。</p></a>
+				<a href="#00:03:6.15" id="00:03:6.15" class="lt" onclick="jumptoTime(186, this.id)"><p>芥蘭的肉汁都擠進芥蘭裏，完成了。</p></a>
+</div>
+	</body>
+</html>

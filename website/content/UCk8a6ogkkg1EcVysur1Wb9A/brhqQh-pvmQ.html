@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》喜來登酒店總廚陳偉傑  教大家薑葱魚露鮮雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'brhqQh-pvmQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》喜來登酒店總廚陳偉傑  教大家薑葱魚露鮮雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.83" id="00:00:7.83" class="lt" onclick="jumptoTime(7, this.id)"><p>大家好，我是香港喜來登酒店，天寶閣中菜廳總廚陳偉傑，今天教大家做一個薑蔥魚露煎雞，一起去街市買東西吧，煎雞一定要選肥身的，好油的雞去做，憑肉眼看，大隻的當然是肥的，買的時候要注意，例如你的腳短，腿粗壯的，這些雞一定是肥身的，好油的，皮的顏色是呈黃色的，今天煎雞的時候要選油份重的，肥身的會香一點。</p></a>
+				<a href="#00:00:42.83" id="00:00:42.83" class="lt" onclick="jumptoTime(42, this.id)"><p>煎出來會好吃一點，煎雞的時候，首先要把雞斬斷，先除去雞腳的部分，然後我們就由頭部開始斬除雞頸，我們首先會將刀在雞尾的部分，一路沿著切下去，中間有個鉸位，我們將它破開，然後我們就很容易將它切開一半，開了一半之後，我們就先將雞翼斬下來，我們就會將雞沿著背部分開一半，然後我們就沿著雞腿的部分。</p></a>
+				<a href="#00:01:26.45" id="00:01:26.45" class="lt" onclick="jumptoTime(86, this.id)"><p>將它圈出來，分開三部分，現在有胸、雞背、雞腿，然後我們就先將雞背多餘的骨切下來，然後就將它斬件，記得斬件的時候要留意大小，記得不要將雞腿橫切，因為當我們橫切的時候，那些骨的鉸位會形成一個很尖的刺，我們吃的時候就很容易會刺到自己，跟著雞腿本身的紋理去處理，將它斬成一片片，我們就要用一些生抽、少許糖去拌勻。</p></a>
+				<a href="#00:02:11.45" id="00:02:11.45" class="lt" onclick="jumptoTime(131, this.id)"><p>再加一些生粉，令它更滑，當我們加完生粉後，我們會加少許生油，令它煎起來不會黏鍋，又滑一點，又可以將調味完全封住在雞肉上，首先我們要用慢火將雞肉平均分佈在鍋裡，我們就會加一些薑片一起煎，用慢火煎到它大概金黃色，我們就會煎另外一面，最重要是煎的時候大概要將它煮到七成熟，不要全熟，因為全熟的話，你再煮的時候就會粗糙。</p></a>
+				<a href="#00:02:48.45" id="00:02:48.45" class="lt" onclick="jumptoTime(168, this.id)"><p>我們會很滑的，先把油倒出來，然後開始放蒜蓉爆香，然後放入雞肉，還有我們預先準備的蔥，魚露，少許蠔油，少許糖，然後放少許雞湯，把雞肉用猛火炒勻，再放少許生粉，令雞肉的汁能夠包住，煮雞肉的時候，我們要留意一點，千萬不要蓋上蓋子，因為蓋上蓋子的時候，導汗水和熱力太強，會令雞肉熟過膿，不能夠令它煮出來滑香。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》惜食．物盡其用</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NSn1RxlFBM8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》惜食．物盡其用</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>《王子煮場》，先介紹Candy 我嘅父女社，今年嘅社長兼好朋友，Natalie 可宜 我叫佢做鬼妹，佢係你介紹比我識㗎啦，係咪 你哋以前就係舊同學，多謝你哋兩位今日嚟食我嘅嘢，淨係個Serve and Serve 今日嘅主題，Serve 就係牛肉，Serve 就係花膠扒，Georgia 想問花膠點整呢。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>花膠就係花膠用紅酒汁，紅酒 唔係呢支呢，就係呢支紅酒，點解得返半支呢支紅酒，即係我琴晚本人飲淨，已經醉醉地飲唔落，所以就留返半支，我又唔想嘥嘢，如果就咁飲支紅酒今日會太酸，所以不如我哋整一個汁，No Waste 嘅一啲嘢，加埋落個花膠度，都多啲唔怕嘅，咁呢個汁除咗紅酒仲有冇其他嘢，有嘅。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>呢個又係中西合璧嘅醬汁，就係一個紅酒果皮汁，果皮香落埋花膠度，就會帶出另外一種嘅味道，花膠就要先發咗佢，花膠點發呢，好簡單地就係你煲滾，一鍋滾水，你可以落少少薑蔥落去，辟咗佢少少嘅味，花膠就係水滾咗之後，你就掟啲花膠落去，冚蓋，拎起個煲，唔好再落火，乜嘢都唔好搞，拎開一邊，等佢完全成個煲凍曬之後，花膠就發好啦。</p></a>
+				<a href="#00:02:9.00" id="00:02:9.00" class="lt" onclick="jumptoTime(129, this.id)"><p>花膠同埋呢個海參，有一個好大嘅特點，就係佢一掂油，佢就溶，佢直情係好似Glue咁樣會溶，呢個你睇到我而家就咁擺落去，就唔好開大火，你暖幾分鐘，就可以拎返出嚟上碟，嗰陣時就倒返個紅酒汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:30.00" id="00:02:30.00" class="lt" onclick="jumptoTime(150, this.id)"><p>除咗你話頭先呢，用飲剩半支嗰啲紅酒，你用嚟整呢個紅酒汁之外呢，其實喺我哋平時煮嘢食呢，仲有冇啲咩可以循環再用，真係唔好嘥嗰啲Tips，睇下你食剩啲咩囉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:43.00" id="00:02:43.00" class="lt" onclick="jumptoTime(163, this.id)"><p>其實燒味就係一樣好好嘅嘢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:45.00" id="00:02:45.00" class="lt" onclick="jumptoTime(165, this.id)"><p>可以用嚟炒飯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:47.00" id="00:02:47.00" class="lt" onclick="jumptoTime(167, this.id)"><p>第二日整麵，我媽咪都成日係咁，冇錯啦，叉燒做叉燒撈麵先好食，煮完雞粒或者我整海南雞飯，我通常起哂啲骨，咁我就通常會叫我工人呢，麻煩你留返哂所有啲雞頸，雞頭呀 雞骨呀，雞殼呀，咁我就盡量儲哂喺個冰箱度，咁我有時會點呢，就係話新年嗰陣時呢，我哋要整個湯膽，咁湯膽其實係咩呢，譬如話好多餐廳呀，好多嘅酒家呢。</p></a>
+				<a href="#00:03:16.00" id="00:03:16.00" class="lt" onclick="jumptoTime(196, this.id)"><p>佢哋就一定呢，要自己整一個湯膽呢，就係用佢啲魚翅呀，或者佢哋啲鮑魚汁嘅，咁嗰個就係佢嘅上湯膽，咁其實呢離不開呢，就係用靠肉啦，金華火腿啦 豬肉啦 鵝頭啦，等等呢啲嘢嚟整，咁其實全部都骨咋嘛，咁我就鍾意佢留返哂呢啲嘢嚟，可能一年就整一大鑊湯膽，咁我就之後可以話，我自己啲上湯呀，或者我自己整鮑魚汁呀。</p></a>
+				<a href="#00:03:45.00" id="00:03:45.00" class="lt" onclick="jumptoTime(225, this.id)"><p>整花膠汁嗰陣時我就用返個湯膽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:47.00" id="00:03:47.00" class="lt" onclick="jumptoTime(227, this.id)"><p>一年儲埋儲埋應該都好多雞骨，其實應該都儲唔哂咁多嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:51.00" id="00:03:51.00" class="lt" onclick="jumptoTime(231, this.id)"><p>不過盡量儲呀，鬼妹俾對筷子嚟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:55.00" id="00:03:55.00" class="lt" onclick="jumptoTime(235, this.id)"><p>好呀好呀好呀 我負責攪呀攪呀先</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:57.00" id="00:03:57.00" class="lt" onclick="jumptoTime(237, this.id)"><p>你攪呀攪吓佢，咁我哋都係鍾意，牛丼皮啦，咁一陣間呢個意粉最主要就係用返，我淨話炸蒜頭，Shallow fry 個蒜頭，嗰個Garlic Oil，就撈返落呢個意粉，即係又係唔好嘥啦，Candy呢邊就，佢幫我切咗啲Mints啦，同埋有啲三文魚子啦，咁其實一陣間就會Combine埋呢兩樣嘢一齊嘅，咁有埋個檸檬。</p></a>
+				<a href="#00:04:25.00" id="00:04:25.00" class="lt" onclick="jumptoTime(265, this.id)"><p>喺度我哋切開咗一半，就係會有啲Refreshing少少嘅感覺，咁就成個Pasta。</p></a>
+</div>
+	</body>
+</html>

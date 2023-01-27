@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》香格里拉大酒店總廚梁汝景 教授薑葱冬瓜焗肉蟹煲</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'A3ZjirOqaAo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》香格里拉大酒店總廚梁汝景 教授薑葱冬瓜焗肉蟹煲</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA.COM，我是港島香格里拉大酒店，下工廚房中菜部的行政總廚梁雨景，我今天會教大家煮一個薑蔥焗肉蟹煲，我們先去買菜吧，我們今晚會用肉蟹來煮，因為肉蟹的肉比較多，但有些人會喜歡吃花蟹，花蟹的肉比較鮮味，但蟹肉沒有肉蟹那麼多，如果你想吃每一口肉都是吃肉蟹。</p></a>
+				<a href="#00:00:49.23" id="00:00:49.23" class="lt" onclick="jumptoTime(49, this.id)"><p>我教大家如何選擇新鮮和好的肉蟹，要看牠的眼睛，碰牠的眼睛時，肉蟹會縮得很快，證明這隻蟹夠生猛，最重要是蟹夠重，要重身的，摸下去，如果太輕的蟹，或者是水蟹，蟹肉就不會那麼好，我們先把肉切好洗乾淨，將冬瓜拉油， 用熱水煮至軟身， 瑤柱浸水蒸至軟身， 枝竹用熱水汆水，起鑊將薑片炸至金黃色， 肉蟹先拋少許生粉， 落鑊炸至金黃色備用。</p></a>
+				<a href="#00:01:55.44" id="00:01:55.44" class="lt" onclick="jumptoTime(115, this.id)"><p>爆香薑蔥蒜蓉， 加入蟹快炒， 加入紹酒及雞湯，加入瑤柱， 仙子竹及冬瓜， 最後加入調味料，蓋上蓋子， 用中火煮三分鐘， 最後加入生粉水及少許麻油便完成。</p></a>
+</div>
+	</body>
+</html>

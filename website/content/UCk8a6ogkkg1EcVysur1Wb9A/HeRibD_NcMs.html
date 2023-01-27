@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易版迷你冬瓜盅  家常菜達人示範 助你消悶熱暑氣│在家自煮│《DIY食譜》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'HeRibD_NcMs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易版迷你冬瓜盅  家常菜達人示範 助你消悶熱暑氣│在家自煮│《DIY食譜》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello大家好，我係Celia，今日我會教大家做一個迷你冬瓜盅，夏天最啱食瓜，冬瓜可以去水腫同解毒，今日就跟我一齊做啦!</p></a>
+				<a href="#00:00:20.22" id="00:00:20.22" class="lt" onclick="jumptoTime(20, this.id)"><p>首先將瘦肉切成細片，拌勻生抽、砂糖、麻油、粟粉等醃料，在室溫醃10分鐘，然後我們前一晚分別用半碗清水浸軟冬菇和瑤柱，然後將浸軟的冬菇切粒，將浸軟的瑤柱撕成絲，而浸冬菇和瑤柱水就留用，冰鮮蝦洗淨剝殼，然後用牙籤在第二節的位置去腸，我們不建議用油水蝦，因為肉很黏殼，不容易去撕殼，然後我們用匙羹刮去冬瓜囊和去核。</p></a>
+				<a href="#00:00:57.22" id="00:00:57.22" class="lt" onclick="jumptoTime(57, this.id)"><p>再刮去冬瓜肉，將冬瓜肉切件，然後用細刀切腳趾邊，我們刮冬瓜時的邊位留大約1cm，底部千萬不要刮得太深，否則冬瓜蒸完就會容易爛，我們將冬瓜放在大碗上面，放入蒸爐，用100度蒸20分鐘，或者隔水蒸20分鐘，之後再拿出來，然後我們在另一個鍋落雞湯，冬菇水和瑤柱水，湯滾起之後再加入冬菇粒，瑤柱絲。</p></a>
+				<a href="#00:01:33.22" id="00:01:33.22" class="lt" onclick="jumptoTime(93, this.id)"><p>瘦肉片和冬瓜粒，湯滾起之後我們再轉小火，蓋上蓋子再煮20分鐘，加入蝦，煮到蝦變色之後就熄火，然後我們將煮好的湯和配料，倒入冬瓜盅裏，最後將冬瓜盅放入蒸爐，用100度蒸20分鐘，或者隔水蒸20分鐘。</p></a>
+				<a href="#00:01:56.22" id="00:01:56.22" class="lt" onclick="jumptoTime(116, this.id)"><p>最後還可以加入適量鹽和胡椒粉調味。</p></a>
+</div>
+	</body>
+</html>

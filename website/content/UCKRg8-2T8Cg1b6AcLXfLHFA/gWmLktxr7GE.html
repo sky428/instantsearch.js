@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鹽水蒸魚，由西貢「六福」阿虎傳授</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'gWmLktxr7GE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>鹽水蒸魚，由西貢「六福」阿虎傳授</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:16.90" id="00:00:16.90" class="lt" onclick="jumptoTime(16, this.id)"><p>這是六福油鹽蒸魚，我覺得非常好吃，無論蒸大魚或小魚都用這個方法，因為可以吃到魚的鮮味，非常好，在這裡謝謝阿虎，大家學習一下，簡單得不得了，煮到一流的菜式，星期六在西貢碼頭有新鮮釣的魚，今天有鷹鰍，這個尺寸也不錯，上星期的鰍更好看，這星期沒有小魚，今天用六福的方法蒸魚，成功了很多次，今天蒸大魚給大家看。</p></a>
+				<a href="#00:01:10.46" id="00:01:10.46" class="lt" onclick="jumptoTime(70, this.id)"><p>大魚小魚都可以這樣做，鷹鰍、海鮮醬、鹽、蔥，待會有油做蔥，魚要吃的時候才洗，這樣比較好，否則會有霉味，所以湯就不用煎，先把裡面的鰓，因為它薄所以蒸的時間又短，所以這個差不多15分鐘，由清潔開始至上桌，非常簡單，不過有一樣東西一定要告訴大家，如果你不是買油水的蒼魚，在街市會看到放在雪上的，千萬不要用這個方法蒸。</p></a>
+				<a href="#00:02:9.26" id="00:02:9.26" class="lt" onclick="jumptoTime(129, this.id)"><p>因為會很腥，一定要用油水的魚來蒸，千萬不要用死了的魚來蒸，不太好，在日本買了很多卷，幸好這兩年沒有去日本還沒用完，這是海鮮紙，專門日本人用來包裝，現在要來抹乾，陸福教我們蒸魚很簡單，在魚的兩邊灑鹽，我們沒有經驗，所以灑一點鹽，很怕已經夠了，原來吃下去是淡味，不夠味，結果第三次蒸才蒸得好，一邊做好之後。</p></a>
+				<a href="#00:03:19.46" id="00:03:19.46" class="lt" onclick="jumptoTime(199, this.id)"><p>然後反轉，這邊一樣要灑鹽，今天金小姐打麻將，我蒸魚給大家吃，原來剛才我倒進去的鹽，全部都放進去也不要緊，這樣的味道才好，阿虎教我們要放兩匙水，在魚的上面，讓鹽可以融化，但不要用手去抹，隨便它，拿去蒸就可以，現在就去蒸，一條這樣的魚蒸大概五六分鐘就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:11.08" id="00:04:11.08" class="lt" onclick="jumptoTime(251, this.id)"><p>你在做什麼?，記得訂閱我和我的頻道，按個鐘仔和給我讚好，拜拜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:19.08" id="00:04:19.08" class="lt" onclick="jumptoTime(259, this.id)"><p>現在就煮滾油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:34.08" id="00:04:34.08" class="lt" onclick="jumptoTime(274, this.id)"><p>煮滾油就去蒸蔥，阿虎就解釋過了，大條的魚就切絲，小條的魚就可以切粒粒，因為我們不喜歡太多油，所以就放了蔥，然後再煮別的蔥，這樣蔥就不會太多油，好，完成，五分鐘，很方便，方便起見，方便拿，再放上碟上膏，現在第一件事要做的，就是把魚汁舀上魚上膏，現在蒸出來很多汁，阿虎就說要把魚汁慢慢舀上魚上膏，然後就很簡單。</p></a>
+				<a href="#00:05:41.08" id="00:05:41.08" class="lt" onclick="jumptoTime(341, this.id)"><p>現在就放蔥在上面，這個真的不是開玩笑，真的要多謝西貢陸福的阿虎，因為如果不是他，我們就沒有這麼好吃又容易煮的蒸魚，今天我們和魚人，我們去陸福站和Bobby，你覺得這條魚怎麼樣，正</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.31" id="00:06:10.31" class="lt" onclick="jumptoTime(370, this.id)"><p>正?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:11.07" id="00:06:11.07" class="lt" onclick="jumptoTime(371, this.id)"><p>全部是新鮮的，肉是滑到無法比，無法比，因為我們一開始試，一開始試你也有份試，一開始不敢放鹽，味道就差很多，這次是剛剛好，如果我選擇就這個比上次好，但兩次都好吃，嘩 不是開玩笑，你現在選擇魷魚選擇什麼，我下星期會煮給你，OK，就是聖誕禮物，行不行，正，魚要多謝Macy買，在西貢買，西貢。</p></a>
+				<a href="#00:06:44.71" id="00:06:44.71" class="lt" onclick="jumptoTime(404, this.id)"><p>什麼時間去買好呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:46.95" id="00:06:46.95" class="lt" onclick="jumptoTime(406, this.id)"><p>往日早上10點一定在這裡，在海邊，是，但今天我10點半去到還沒在，10點多去到還沒在，因為今天大風，很難找到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:0.95" id="00:07:0.95" class="lt" onclick="jumptoTime(420, this.id)"><p>所以這些可以不可求，好像上星期，只有一條魚給我們買了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:6.67" id="00:07:6.67" class="lt" onclick="jumptoTime(426, this.id)"><p>買了，上星期有一條石鯧在游泳，你看過除了黃臘鯧，石游泳的鷹鯧，全部我都沒看過游泳，是，今天就三條鷹鯧給我買了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:22.19" id="00:07:22.19" class="lt" onclick="jumptoTime(442, this.id)"><p>我們買了兩條，她買一條我買兩條，150元，所以很划算，所以如果大家有興趣，也可以進來我們西貢，在海邊，那裡有很多艇，你可以逐艇去問，有什麼魚，有什麼美的魚，有什麼游泳的魚，任何游泳魚，我們現在全部都喜歡，用阿虎的方法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:47.95" id="00:07:47.95" class="lt" onclick="jumptoTime(467, this.id)"><p>沒錯，沒試過蒸魚會不放醬油，是，從來沒試過</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:53.71" id="00:07:53.71" class="lt" onclick="jumptoTime(473, this.id)"><p>現在吃到阿虎的魚之後，我們就發覺，陸福的魚為什麼這麼好吃，原來不放醬油，真的才吃到魚的鮮味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:7.51" id="00:08:7.51" class="lt" onclick="jumptoTime(487, this.id)"><p>當剩下的汁拌飯，真的為之骨頭，好好味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:36.12" id="00:08:36.12" class="lt" onclick="jumptoTime(516, this.id)"><p>快點上Show 《忌時多》選購今年的聖誕及新年禮物吧!</p></a>
+</div>
+	</body>
+</html>

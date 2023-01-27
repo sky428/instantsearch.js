@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易食譜: 在家做藜麥沙律 | How to make Quinoa Salad |</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZGFxvwRuFRE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易食譜: 在家做藜麥沙律 | How to make Quinoa Salad |</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.49" id="00:00:6.49" class="lt" onclick="jumptoTime(6, this.id)"><p>Hello 各位朋友，你們好!</p></a>
+				<a href="#00:00:8.49" id="00:00:8.49" class="lt" onclick="jumptoTime(8, this.id)"><p>今天我介紹的是一種食物，名字叫做禮物，英文名叫做Kinwa，究竟它是什麼呢?</p></a>
+				<a href="#00:00:19.49" id="00:00:19.49" class="lt" onclick="jumptoTime(19, this.id)"><p>其實它是一種植物，外表就像小米一樣，可能我們中國人未必對這個食材熟悉，但禮物在歐美已經是備受推崇的一種食物，根據維基百科，禮物是一種可食用的種子，而它不是穀物類，它是屬於禮亞科，即是與菠菜近親，禮物原產地是安地斯山脈，是南美洲最早的農作物之一，它也很喜歡在高海拔的地方生長，而安地斯山脈的區域是現在最多禮物出產的地方。</p></a>
+				<a href="#00:01:25.49" id="00:01:25.49" class="lt" onclick="jumptoTime(85, this.id)"><p>亦是今天的阿瓜多爾、玻利維亞、哥倫比亞和秘魯，而現在很多歐美國家都在研究將禮物在自己的地方生長，禮物現在為什麼備受推崇呢?</p></a>
+				<a href="#00:01:49.49" id="00:01:49.49" class="lt" onclick="jumptoTime(109, this.id)"><p>因為它的營養價值非常之高，除了有必需的氨基酸，還有大量鈣、鋁和鐵，所以現在很多人用來做代餐，吃禮物而減少食穀物或米之類，然後就是他的煮法，其實他的煮食方法跟煮飯沒什麼分別，很簡單，只要把1比1的泥和水放在鍋裡，煮沸後煮15分鐘就可以了，接下來我會介紹一種泥麥沙律，希望大家喜歡。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:50.69" id="00:02:50.69" class="lt" onclick="jumptoTime(170, this.id)"><p>現在開始做泥麥沙律，先給你們看看泥麥的樣子，它很輕的，不是穀物類，很多人會用來做沙律或當飯吃，如果減肥或想健康點，吃得清一點，其實這是另一個選擇，而我平時在家裡，我都會煮一些泥物，然後拌在白飯上，這樣會比較健康，不只是吃白飯，但你們也可以做一大盒的泥物，放在冰箱，吃白飯的時候可以在冰箱裡放一些泥物，拌在白飯上一起吃，首先我講一下怎樣處理泥物。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:7.56" id="00:04:7.56" class="lt" onclick="jumptoTime(247, this.id)"><p>它的煮法和煮飯差不多，這次我會做一個比較清淡的沙律，所以我們開始做了，煮泥物的方法和煮飯有點相似，但它更簡單，首先要先量一下泥物，今天我要用一杯的泥物，這裡是四分之一杯，所以我要四盒，有些人會把泥物泡水或浸泡一下才煮，但其實如果節省時間是沒有問題的，首先要洗泥物，不論是買回來的泥物還是洗了的泥物，都建議要洗一下，在水裡沖洗幾秒就可以了。</p></a>
+				<a href="#00:05:14.56" id="00:05:14.56" class="lt" onclick="jumptoTime(314, this.id)"><p>現在可以洗了，泥物洗好後就可以直接放進鍋裡，先抹走它，我這裡是一杯泥物，我加一杯水進去，在這個時間，有些人會在泥物加味道，例如做小米或東南亞飯，水的份量可以不用清水用雞湯，或者在裡面加些辣椒，例如黃薑、黃薑粉，或者是辣椒碎、黑椒，都可以的，你可以加進去改變它，但我今天做一款最原始、最簡單的，就是直接用水煮它。</p></a>
+				<a href="#00:06:44.57" id="00:06:44.57" class="lt" onclick="jumptoTime(404, this.id)"><p>放入鍋中後用大火煮滾，滾了之後就蓋上蓋子，再調較中小火，然後再煮15分鐘，這樣就可以了，現在滾了，我就調較小火，然後就可以煮了，再焗15分鐘，等到水份都吸收了，在煮的時候就可以準備今天的材料，今天的材料一眼就看得到，你可以看到有些青椒，青椒類的東西，例如橙、黃、紅椒，另外有芒果，我用的是蘋果芒果。</p></a>
+				<a href="#00:07:50.57" id="00:07:50.57" class="lt" onclick="jumptoTime(470, this.id)"><p>因為它比平常吃的黃芒果，比較硬身，做沙律時就不容易掉了，還有一些青瓜，還有一些芫茜，如果怕吃芫茜的話，你可以不加，你喜歡的話可以加蒜鹽，或者自己喜歡的香料，我現在用最簡單的方法來做，這些青椒我已經洗乾淨了，我每樣青椒要半個，這次是示範，如果家裡人多的話，可以一次過做好全部青椒，如果想做一個熟的沙拉，可以把這些椒放一點點的胡椒，鹽和油放在烤盤上焗一下，然後來做。</p></a>
+				<a href="#00:09:6.94" id="00:09:6.94" class="lt" onclick="jumptoTime(546, this.id)"><p>今天我做的這個比較清爽型，全部材料都是脆的，除了那個Kiwa就是禮物之外，我們可以把它切粒，其實做沙律的配搭是很隨意的，當你想買材料的時候，你未必一定要跟足我這個材料，你可以加入你自己喜歡的食材，現在很多人配合我們的主題減肥，所以食物也會健康一點，但其實很多人都會用泥麥做代餐，其實真的不妨自己試試做。</p></a>
+				<a href="#00:10:23.98" id="00:10:23.98" class="lt" onclick="jumptoTime(623, this.id)"><p>甚至乎做飯糰的時候，你也可以把它混合在一起，加在一起吃，因為它始終不是穀物，因為它是一個種子，所以它不是穀物，所以它會變成low carb，另外我們可以切一些青瓜，然後處理芒果，你都聽到它切下去很脆身，芒果，你可以用匙羹刮它出來，我就這樣剝皮，因為它比平時我們吃的芒果硬身很多，它已經熟了。</p></a>
+				<a href="#00:11:35.37" id="00:11:35.37" class="lt" onclick="jumptoTime(695, this.id)"><p>它已經不是生的了，它很香芒果味，但它吃下去跟平時的女生芒果很不像，平時的女生芒果香很多，好吃很多，但如果做這些沙律，這個會比較好處理，因為你看它很，不會很軟，它很結實，我一樣切它一粒粒，而且水份相對平常吃的芒果水份少很多，你看我切出來桌面也不是有汁，如果是煮菜的話這個就很適合，芒果的香味比雷宋芒酸很多。</p></a>
+				<a href="#00:13:3.29" id="00:13:3.29" class="lt" onclick="jumptoTime(783, this.id)"><p>材料差不多完成了，現在還欠切少許芫茜，這是選擇，如果不吃芫茜的話，可以不加，芫茜切碎，放在一邊，放的時候就可以放在表面，放它，在這個時間我們就可以做那個汁，那個汁跟上次那個汁，其實基本上，基本上是很像的，只是再清一點，我連Mustard都不，即是芥辣我都不放，首先我拍一粒蒜頭，跟著就。</p></a>
+				<a href="#00:14:12.63" id="00:14:12.63" class="lt" onclick="jumptoTime(852, this.id)"><p>跟著就，切融它，然後再加醋和油，比例可以自己調整，我會一半一半，但如果不想吃太酸的話，可以加多一點油和醋，泥墨煮了15分鐘後，已經煮好了，讓你們看看，讓你們近一點看，現在可以這樣放一放，讓你們再近一點看，泥墨是有一點像有尾巴的，現在可以這樣放一放，現在泥墨汁已經煮好了，現在放一放，泥墨又分開了，我會再攪拌一會。</p></a>
+				<a href="#00:16:7.88" id="00:16:7.88" class="lt" onclick="jumptoTime(967, this.id)"><p>讓油和泥墨可以混合，泥墨已經煮好了，好像飯一樣，現在可以把所有材料攪拌，可以放進去，現在裝飾就可以放在中間，然後再灑一點，先塗上面膜，我可以將需要的鹽和黑胡椒放入油醋汁中，然後就可以淋上去拌飯，淋好汁後就可以拌飯，拌好，每粒水果上都有泥物，我剛才放得少了，可以繼續放下去，因為剛才是擺盤。</p></a>
+				<a href="#00:18:3.31" id="00:18:3.31" class="lt" onclick="jumptoTime(1083, this.id)"><p>剩下的泥物都可以全部放下去，做出來的份量真的兩個人都夠吃，真的可以當一餐飯，我把泥物也放下去，拌好就可以吃了，我自己來試吃，因為我的泥麥還沒放涼，現在會比較熱了，如果放涼來拌的話，是一個很好吃的沙拉，現在是溫度暖和蔬菜的感覺比較有趣，但味道是很好吃的，泥麥的感覺是有點彈牙的，但不會像生米那樣，因為泥麥始終不是焗物。</p></a>
+				<a href="#00:19:27.13" id="00:19:27.13" class="lt" onclick="jumptoTime(1167, this.id)"><p>如果想更軟的，可以焗久一點，如果想更粗糙的，可以放少一點水，但最標準是用1比1的水來煮15分鐘。</p></a>
+				<a href="#00:19:43.13" id="00:19:43.13" class="lt" onclick="jumptoTime(1183, this.id)"><p>今天就介紹到這裡，希望大家喜歡，拜拜!</p></a>
+</div>
+	</body>
+</html>

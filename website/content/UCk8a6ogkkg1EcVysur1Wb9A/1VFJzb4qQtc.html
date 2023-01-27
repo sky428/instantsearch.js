@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》跟萬豪酒店中菜總廚鄧家濠行街市 名廚教煮家鄉金菜雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1VFJzb4qQtc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》跟萬豪酒店中菜總廚鄧家濠行街市 名廚教煮家鄉金菜雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.63" id="00:00:9.63" class="lt" onclick="jumptoTime(9, this.id)"><p>我是Jason師傅，我是金鐘萬豪酒店中菜人，敬勇廚，今天要教大家煮家鄉金菜雞，你現在跟著我去買菜吧，我喜歡用鄰方雞，因為尺寸比較大，肉質和韌度也比較適合，今天我會選擇甜梅菜，因為方便大家烹調的時候，不需要處理得太久，通常選擇梅菜的框比熱的框好，因為框的味道比熱的框好，口感各方面。</p></a>
+				<a href="#00:00:49.13" id="00:00:49.13" class="lt" onclick="jumptoTime(49, this.id)"><p>真的不是掉了雞排嗎?</p></a>
+				<a href="#00:00:51.13" id="00:00:51.13" class="lt" onclick="jumptoTime(51, this.id)"><p>謝謝，梅菜拿回來後，其實還有醃了一些鹽和糖，還有裡面有很多沙子，我們回來後就什麼都不說了，先放進去浸水，洗乾淨，家鄉金菜雞最重要的是梅菜膽，梅菜膽就是汁水，如何去骨雞，用梅菜頭，加上蠔油、片糖、鹽和生抽，做成滷水膽的狀態，然後用來骨雞，鹹味和甜味就視乎個人口味去調節，我們切了中間的梅菜心。</p></a>
+				<a href="#00:01:38.12" id="00:01:38.12" class="lt" onclick="jumptoTime(98, this.id)"><p>然後用白鑊煸香，煸香的時候去除水果味，之後就加了一些融化的片糖，加少許生抽和玫瑰露再炒，炒香後再拿去蒸兩個小時，因為實在太複雜了，所以建議大家多做一點在家，有空用來蒸鯇魚、蒸肉餅都可以用到，這個骨雞最重要是要先放竹笛達在鍋底，防止它燙到底部，骨雞的水分要控制得很重要，最好是去到一半。</p></a>
+				<a href="#00:02:10.12" id="00:02:10.12" class="lt" onclick="jumptoTime(130, this.id)"><p>然後大概骨它15分鐘，你會看到雞腿筋縮起來，代表它已經差不多熟了，這個時間就反轉它，再骨多15分鐘，之後就看一看它究竟出來的生熟程度，再決定是否需要再烹調多一點。</p></a>
+</div>
+	</body>
+</html>

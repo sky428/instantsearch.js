@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>超級食物沙律 - Superfood Salad</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '52eW_zBhocw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>超級食物沙律 - Superfood Salad</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.32" id="00:00:6.32" class="lt" onclick="jumptoTime(6, this.id)"><p>Hello 各位朋友你們好，兩個星期沒見，這個星期我會和大家一起做，Superfood salad，前面就是需要的材料，為什麼我會做這個呢，其實是因為我去旅行，去旅行的時候，我去到某些餐廳，也不少的餐廳，它裡面的沙律，其中有些部分，寫明是一些叫做，Superfood salad，我就覺得很奇怪。</p></a>
+				<a href="#00:00:38.32" id="00:00:38.32" class="lt" onclick="jumptoTime(38, this.id)"><p>超級食物沙律究竟是什麼呢，那我才發覺原來，Superfood這個字，連著的，超級食物這個字，就是現在新興的，這幾年是很新興的，很多健康食品，甚至乎你去到超級市場，也有些session，有些位置也是專擺，Superfood這個東西，而愛者多數都是，聲稱對健康很好，還有就是，要多點錢買。</p></a>
+				<a href="#00:01:10.32" id="00:01:10.32" class="lt" onclick="jumptoTime(70, this.id)"><p>那我看回，我兩年前的一條片，我也介紹過，Superfood這個東西，超級食物，其中一樣就是在這個位置，你看到的，這些好像小米的東西，它的名字叫做Kira，或者中文名叫做禮物，其實是一個種子，對健康，現在聲稱對健康很好，比起你吃白米，或者吃其他東西會很好，那超級食物，其實也有很多不同的爭議，那些人都說。</p></a>
+				<a href="#00:01:48.32" id="00:01:48.32" class="lt" onclick="jumptoTime(108, this.id)"><p>究竟我是否真的需要用這麼多錢，特意去買貴的東西，去做這件事呢，我自己覺得，認為不是的，你可以選擇你自己喜歡的，另外就是，不一定說，最貴的東西就最好，那我今天，介紹一下我今天自己這個，超級食物，超級食物沙律，好像很厲害，介紹一下我需要的材料，是什麼，我有罐頭的粟米，你未必一定全部放進去，我待會要倒出來。</p></a>
+				<a href="#00:02:26.32" id="00:02:26.32" class="lt" onclick="jumptoTime(146, this.id)"><p>我有一罐的，我這裡也有一罐的，的，櫻桔豆，倒出來後，用水沖一沖，沖走那種在水裡，浸了那種滑滑的感覺，清洗乾淨，我有這個羽衣甘藍，紅色的，有，石榴，這個就是橙，檸檬，紅色的，洋蔥，如果我做沙律的時候，我很多時候都會選擇紅色的洋蔥，因為它沒那麼辣，比普通的洋蔥沒那麼辣，而且它切出來，顏色又會好看一點，因為它紅色白色。</p></a>
+				<a href="#00:03:18.32" id="00:03:18.32" class="lt" onclick="jumptoTime(198, this.id)"><p>我有野莓，紅葡萄，你喜歡可以放一些，番茄進去也可以，另外就是有一些，芫茜，芫茜就你看看見人見智，因為有很多人，我知道是不吃芫茜的，但是我就自己，我很喜歡吃，芫茜的，還有很多的，超級食物沙律裡面，我上網找過很多不同的，食譜，都會看見它的出現，所以我有就加進去了，你不喜歡的可以不放，這個。</p></a>
+				<a href="#00:04:0.32" id="00:04:0.32" class="lt" onclick="jumptoTime(240, this.id)"><p>這個就是Feta Cheese，是一種希臘的，芝士，它是，好像豆腐一樣，一搓開，捏了就濕濕的，可以混進你的食物，沙律裡面，接下來就是，這裡的主角，就是泥蜜，首先我們要處理的就是泥蜜，因為其他的都可以，就這樣我們就可以拿來做沙律，我們要，處理這個泥蜜，泥蜜是要煮的，我已經洗乾淨了泥蜜，然後我就將它。</p></a>
+				<a href="#00:04:40.32" id="00:04:40.32" class="lt" onclick="jumptoTime(280, this.id)"><p>放進鍋裡，這是半杯的泥物，我加一杯的水，比例是2比1，水是泥物的兩倍，2比1，然後就可以放在爐頭裡煮，煮開後就關小火，最小最小的火，焗7至10分鐘，跟煮白飯是一樣的，煮法，等一會兒回來看，泥物已經煮好了，煮完後，焗它，用小火煮完，然後再蓋上蓋子，任由它焗，將水分全部吸進泥物裡，它煮好了，放涼後就可以用來做沙律。</p></a>
+				<a href="#00:05:43.57" id="00:05:43.57" class="lt" onclick="jumptoTime(343, this.id)"><p>近鏡看看，它是一粒粒的，每一粒都像一條小尾巴，可以放涼，現在處理羽衣甘藍，羽衣甘藍是一道很粗纖維的菜，很結實，要用力才可以撕開，切開羽衣甘藍，最好是切掉這條羽衣甘藍，或者用來炒菜，切碎一點，容易吃，將羽衣甘藍的整條羽衣甘藍剪出來，一條粗一條長的羽衣甘藍，做沙律時就不需要這條羽衣甘藍，可以將羽衣甘藍放進一個沖水機。</p></a>
+				<a href="#00:07:6.68" id="00:07:6.68" class="lt" onclick="jumptoTime(426, this.id)"><p>裝置那裡，我不懂得怎樣形容這東西，然後我們就可以在這裡，切碎一點點可以放進去，可以捲起來，切，切都比較，很隨意地切就可以了，甚至乎你有空可以，撕掉它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:28.68" id="00:07:28.68" class="lt" onclick="jumptoTime(448, this.id)"><p>切碎，它的容量，份量看起來好像很多，其實它不是很重，但我都要分開幾次去切，去冰水，冰水去冰，�동Thotted Czyowej，pol uncheck bereit</p></a>
+				<a href="#00:08:19.35" id="00:08:19.35" class="lt" onclick="jumptoTime(499, this.id)"><p>ления，\'์Lucanges</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:10.97" id="00:08:10.97" class="lt" onclick="jumptoTime(490, this.id)"><p>liberated，úsica，피iors，Kerry，law</p></a>
+				<a href="#00:08:14.99" id="00:08:14.99" class="lt" onclick="jumptoTime(494, this.id)"><p>Albert，obstacles，érieur，rising，horizADE，Iranian，....</p></a>
+				<a href="#00:08:16.95" id="00:08:16.95" class="lt" onclick="jumptoTime(496, this.id)"><p>Zo직，browse，置 최고hesion，invited，WrestPod，ça</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:5.83" id="00:08:5.83" class="lt" onclick="jumptoTime(485, this.id)"><p>resurrection，Macht，braù，Breaking APP</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:17.67" id="00:08:17.67" class="lt" onclick="jumptoTime(497, this.id)"><p>謝謝觀看，接着我们处理洋葱，红洋葱这里多少都可以你喜欢，我需要四分之一个就已经够了，让它有点香味，切成幼粒，然後處理芫茜，切碎，洗乾淨提子，切成小塊，提子軟的切的時候就要小心了，然後處理石榴，將它橫切一半，然後敲出來，慢慢就會敲出來，我這個石頭比較小，不是太大，你可以先壓一壓它，再敲出來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:37.95" id="00:10:37.95" class="lt" onclick="jumptoTime(637, this.id)"><p>裡面這些白色的是不吃的，我們是吃紅色的紙，剩下的就拿走，我只需要把籽吃掉，吃起來有點難度，很多人不喜歡，因為裡面有顆白色的籽，吃起來會有渣，而且人們不會把籽吐出來，直接吃掉，如果你不喜歡可以不放，我只要把籽吃掉，然後把表面的皮慢慢切走，ixa uncomfortableSer ourselvesıl</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:2.29" id="00:12:2.29" class="lt" onclick="jumptoTime(722, this.id)"><p>لو，terrifying，ollen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:0.07" id="00:12:0.07" class="lt" onclick="jumptoTime(720, this.id)"><p>sollten，12 unglaub 104，ном，row，gesture，NOT，Hawaii</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.17" id="00:12:1.17" class="lt" onclick="jumptoTime(721, this.id)"><p>Excel，事 лич，thm，Sora</p></a>
+				<a href="#00:12:5.23" id="00:12:5.23" class="lt" onclick="jumptoTime(725, this.id)"><p>�sweise，crashing</p></a>
+				<a href="#00:12:3.41" id="00:12:3.41" class="lt" onclick="jumptoTime(723, this.id)"><p>ss，또</p></a>
+				<a href="#00:12:5.66" id="00:12:5.66" class="lt" onclick="jumptoTime(725, this.id)"><p>看不看得到?，我怕阻礙到你，這個步驟你可以不做，我做了覺得可能會好看一點，但我又切得不好看，不要緊，慢慢來，沿兩邊切開，最後一塊橙出來，всё realtacula myś autres</p></a>
+				<a href="#00:13:12.61" id="00:13:12.61" class="lt" onclick="jumptoTime(792, this.id)"><p>Kuering，нит，connectors，adomo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:13.75" id="00:13:13.75" class="lt" onclick="jumptoTime(793, this.id)"><p>cile，display，我不知道</p></a>
+				<a href="#00:13:9.03" id="00:13:9.03" class="lt" onclick="jumptoTime(789, this.id)"><p>be，conj survival，horrinha，uft，ăm，seeks，gef，等一下</p></a>
+				<a href="#00:13:8.89" id="00:13:8.89" class="lt" onclick="jumptoTime(788, this.id)"><p>Bea Finn，Trick wandering，techn jogo，謝謝，我不知道為什麼腦海裡想著要這樣做，其實撕橙子是比較方便的，有時候我也不明白自己為什麼要這樣，但在我設計這個食譜的時候，腦海裡看到了這樣的橙子，所以我就要這樣做，下面留起果汁，一會用來做dressing也可以用，給你看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:0.91" id="00:14:0.91" class="lt" onclick="jumptoTime(840, this.id)"><p>很漂亮，好了 完成了，然後我做dressing，這裡大約只有一半的橙汁，我加一點點汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:44.91" id="00:14:44.91" class="lt" onclick="jumptoTime(884, this.id)"><p>完成，然後就要做醬汁，看起來材料很豐富，我向一向給你們看看，有多少材料，嘩!這麼大堆材料，所以我們要做醬汁，這裡大約橙汁加檸檬汁，大約四分之一杯，我加一點蜜糖，大約一湯匙蜜糖，加少少甜味，然後我會加蒜末，我會將蒜末放入鍋中，你喜歡的話可以切碎，但如果你想味道更濃的話，就像我這樣磨勻，你看看你喜歡蒜末的程度。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:53.25" id="00:15:53.25" class="lt" onclick="jumptoTime(953, this.id)"><p>我現在就放大約兩粒，然後就把蒜末放進鍋裡，其實頭頭尾尾加起來也只有一粒，因為我的頭尾不批，你們自己喜歡多少就自己決定，這個就變成像一個領物，再加一個蒜頭的調味料，然後再加一些黑胡椒和鹽，攪拌一下，接著，我們就要加橄欖油，這個就是，Extra Virgin的橄欖油，冷炸的橄欖油，大約。</p></a>
+				<a href="#00:17:6.52" id="00:17:6.52" class="lt" onclick="jumptoTime(1026, this.id)"><p>4-6茶匙，看你想要酸一點，酸味多一點，還是油味平衡的味道多一點，做這些醬汁，都是靠你自己喜歡，想再濃味一點的話，可以再加，Honey Mustard，或者不同的醋，不是隨便攪拌，真的攪拌到比較均勻，因為始終是油和水，我們要攪拌到，有種稠身的感覺，我先試味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:42.52" id="00:17:42.52" class="lt" onclick="jumptoTime(1062, this.id)"><p>味道不夠，還是酸一點的時候，我可以，再加，油，這樣就完成了，味道，完成之後，就可以攪拌，我家裡最大的盤子，已經被這個菜，浸了很多地方，要小心攪拌，我可以，將禮物，攪拌</p></a>
+				<a href="#00:18:26.52" id="00:18:26.52" class="lt" onclick="jumptoTime(1106, this.id)"><p>將所有東西攪拌在一起，就可以了，然後我，攪拌均勻，攪拌均勻，完成之後，就可以馬上吃，或者你可以選擇，甚至我自己準備，明天帶飯，我都會帶這個，可以逐一，將其他材料，放進去，然後，攪拌均勻，顏色配搭也是適隨尊便的， 顏色好看一點， 令大家吃沙律時心情好一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:25.58" id="00:19:25.58" class="lt" onclick="jumptoTime(1165, this.id)"><p>我這裏除了有纖維素之外， 還有泥， 礦， 其實礦也是有碳水化合物的， 因此會飽肚一點。</p></a>
+				<a href="#00:19:49.58" id="00:19:49.58" class="lt" onclick="jumptoTime(1189, this.id)"><p>因為我們吃飯時， 飯有飯氣， 才會飽， 因為有碳水化合物。</p></a>
+				<a href="#00:19:59.58" id="00:19:59.58" class="lt" onclick="jumptoTime(1199, this.id)"><p>然後加入洋蔥， 拌勻， 因為我的盤子不夠大。</p></a>
+				<a href="#00:20:21.58" id="00:20:21.58" class="lt" onclick="jumptoTime(1221, this.id)"><p>然後加入提子， 莓， 芫茜， 橙和石榴， 拌勻。</p></a>
+				<a href="#00:20:48.58" id="00:20:48.58" class="lt" onclick="jumptoTime(1248, this.id)"><p>然後加入剛才打好的醬汁， 拌勻。</p></a>
+				<a href="#00:21:17.58" id="00:21:17.58" class="lt" onclick="jumptoTime(1277, this.id)"><p>這裏就夠兩個人吃兩餐了。</p></a>
+				<a href="#00:21:22.50" id="00:21:22.50" class="lt" onclick="jumptoTime(1282, this.id)"><p>如果有四個人的話，可以四個人吃。</p></a>
+				<a href="#00:21:25.50" id="00:21:25.50" class="lt" onclick="jumptoTime(1285, this.id)"><p>平時吃很寡，可以配其他主菜，例如煎豬扒，牛扒，烤雞胸，烤魚。</p></a>
+				<a href="#00:21:41.50" id="00:21:41.50" class="lt" onclick="jumptoTime(1301, this.id)"><p>這個可以配很多不同的主菜，當然是西式主菜。</p></a>
+				<a href="#00:21:48.50" id="00:21:48.50" class="lt" onclick="jumptoTime(1308, this.id)"><p>這個時候，我會舀一點點來試吃。</p></a>
+				<a href="#00:21:52.50" id="00:21:52.50" class="lt" onclick="jumptoTime(1312, this.id)"><p>有橙，石榴果，葡萄，禮物，各種不同的東西。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:11.26" id="00:22:11.26" class="lt" onclick="jumptoTime(1331, this.id)"><p>我們來看看，出來的，不知為何，我在家看就很綠很漂亮，但今天可能燈光問題，就比較深色，我現在試，你先試試看，其實夏天吃真的很好，因為清新，如果你不喜歡咖哩的味道，你可以不加，但我覺得配上去，就像吃主菜，有種吃主菜會有的味道，如果你不加的話，就變成好像吃水果一樣，我今天介紹的就是這麼多，做完這個超級食物沙律之後。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:23:15.85" id="00:23:15.85" class="lt" onclick="jumptoTime(1395, this.id)"><p>我自己認為，這是一個噪音，是一個噱頭，或者是一個很奪目的名字，你可以不用這個名字做自己喜歡的沙律，但我告訴你，是好吃的，我這個沙律是好吃的，希望大家有時間可以試試，我今天介紹到這裡，下次再見。</p></a>
+</div>
+	</body>
+</html>

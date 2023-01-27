@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》 – 王子煮場 港式味道變奏 黑椒黃金鴛鴦飯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '6kCeWk_7Dxs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》 – 王子煮場 港式味道變奏 黑椒黃金鴛鴦飯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>鴛鴦飯我諗大家都食過啦，咁我就唔係咁鍾意嗰啲紅白汁嘅鴛鴦飯嘅，咁我今日呢就會整我自己嘅一個，我叫做王子嘅鴛鴦飯，咁呀睇睇點整法啦</p></a>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>我嘅煙飯主要就兩個材料嘅，一個呢就係都係海鮮啦，我就會用返一個蝦啦，咁另外一邊呢其實都係用咗蝦，咁我哋呢就會用呢個蝦，咁另外一邊呢其實都係會用返肉嘅，都係雞肉嘅，蝦點做呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>我哋而家呢就先落啲油落去，多返少少油啦，我哋又唔使去到好似酒家咁樣，即係成盤油，但係都要多返少少油，因為蝦要類似想做返個酒油咁樣嘅效果，呢個油夠熱嘅時候呢，我哋就將個蝦就擺落去啦，你睇到一落去炸咗一聲呢，咁即係佢夠熱啦，轉色呢，咁就其實要拎出嚟㗎啦，因為其實海鮮真係唔好過熟，寧願佢a little bit undercooked都唔好。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>overcooked囉，點解要酒油呢?</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>咁個蝦呢你先保存到佢嗰個爽脆感啦，同埋嗰個滑嘅，好啦咁個雞扒呢，雖然我一陣間會有個汁喺面啦，但係都要醃下佢嘅，落少少呢個米酒落去，咁其實呢我點解會咁樣呢?</p></a>
+				<a href="#00:01:23.00" id="00:01:23.00" class="lt" onclick="jumptoTime(83, this.id)"><p>我係想落咗個blender度整咗佢一個汁咁樣嘅嘢，先至可以搭落塊雞扒度醃製嘅，咁就會成樣嘢平均啲囉，咁我呢度呢有少少呢個華鹽嘅，白胡椒粉，我嘅至愛魚露，落返少少嘅糖會好啲嘅，兩滴嘅豉油啦，仲有呢個呢就係一個沙薑粉，咁而家就落我個神秘食材落去啦，最好的醃料就是用這些放入袋子，第一，它不會膩。</p></a>
+				<a href="#00:01:59.91" id="00:01:59.91" class="lt" onclick="jumptoTime(119, this.id)"><p>第二，它會均勻，因為你可以拋、搓、弄它，醃完後可以放入雪櫃，最好醃一個小時以上，味道會更入味，久一點也沒問題，趁雞排在醃，我們就要做醬汁，第一個醬汁就是黑椒汁，黑椒汁是為了雞排而切的，第一步就是加牛油，牛油在溶化的時候，我們就放蒜頭、蔥頭、乾蔥頭和薑，放進去，你看到它開始熟，我們就把黑椒放進去。</p></a>
+				<a href="#00:02:41.63" id="00:02:41.63" class="lt" onclick="jumptoTime(161, this.id)"><p>這裡有黑椒、白胡椒、青胡椒和紅胡椒，一起攪拌，但都是以黑胡椒為主，因為我們不想醬汁不像黑椒汁，炒一炒，加少少上湯，它才會變成醬汁的狀態，加少少麵粉，差不多了，你會看到顏色依然不夠黑的話，就會加少少老抽，到這個位置，你可以上面放上紅椒，我會加少少白蘭地，它的醬汁就會香很多，我喜歡醬汁滑一點。</p></a>
+				<a href="#00:03:26.83" id="00:03:26.83" class="lt" onclick="jumptoTime(206, this.id)"><p>你可以加少少全脂牛奶，這個醬汁基本上完成了，我們做完一邊的黑椒醬汁，鴛鴦飯，我們當然要做另一邊的醬汁，是什麼醬汁呢，其實就是鹹蛋黃的黃金醬汁，鹹蛋黃買回來之後，就要蒸熟它，隔水蒸，蒸熟它之後，你會看到它會化了一點，然後就要摻碎它，我會用一個塞鎖袋，塞鎖袋的好處就是，你可以用手搓搓搓爛它，我們也是將牛油放下去。</p></a>
+				<a href="#00:04:4.43" id="00:04:4.43" class="lt" onclick="jumptoTime(244, this.id)"><p>加少少蒜頭，我們當然要加汽肉，就是磊碎了的鹹蛋黃，記住千萬不要用太大火，因為一燒焦，就會不見了黃色，它會變成啡色，加少少雞湯，即是要加些鹽，那邊是黑椒汁，這邊我就喜歡加少少白胡椒，因為我覺得少少白胡椒和蝦味幾襯，加少少麵粉，因為我們要醬汁比較厚，滴一點，它不會那麼容易滲入飯裡面，看到它的汁開始變稠。</p></a>
+				<a href="#00:04:47.03" id="00:04:47.03" class="lt" onclick="jumptoTime(287, this.id)"><p>差不多了，我就要加我的特別食材，這個特別食材，是非常有益的一件事，東南亞人很喜歡用這個，我覺得很配合我這個醬汁，雞扒醃了一小時就可以煎了，雞扒先用皮那邊下鍋，只煎一邊，不用煎另外一邊，先要用大火，讓鑊夠熱，它就不會黏，調小火，蓋上蓋子，大約八至十分鐘，出來的時候，整塊雞扒都熟了，皮那邊就很脆很好吃，雞扒就不用翻面。</p></a>
+				<a href="#00:05:40.45" id="00:05:40.45" class="lt" onclick="jumptoTime(340, this.id)"><p>現在就讓它煎十分鐘，雞扒煎了十分鐘，我們就看看樣貌如何，沒有焦的，可以開大一點火，再燙一燙雞皮，讓它更脆，亦都讓水氣散一散，我們先將一邊鋪上黑椒汁，同樣做法，然後就將切好的雞扒鋪上黑椒汁，同樣地，將煎好的蝦鋪上黃金汁，剩餘的汁再鋪上蝦面，大致上完成了，之前的焗爐已經預熱至200度，可以放入焗爐大約五至六分鐘。</p></a>
+				<a href="#00:07:2.49" id="00:07:2.49" class="lt" onclick="jumptoTime(422, this.id)"><p>介紹我今天的嘉賓兼好朋友Andrew，我們試一試它，這是我今天做的鴛鴦飯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:12.01" id="00:07:12.01" class="lt" onclick="jumptoTime(432, this.id)"><p>這個跟平常吃的鴛鴦飯很不同，但跟平常吃的滑蛋蝦仁飯，和黑椒雞扒飯差不多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:19.93" id="00:07:19.93" class="lt" onclick="jumptoTime(439, this.id)"><p>事不宜遲，你先試雞翼，看看味道如何</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:26.49" id="00:07:26.49" class="lt" onclick="jumptoTime(446, this.id)"><p>雞肉很滑，皮也很脆</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:29.69" id="00:07:29.69" class="lt" onclick="jumptoTime(449, this.id)"><p>沒錯，我用了一個反轉的方法，雞皮放入烤盤蓋，10分鐘，煮熟雞翼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:39.61" id="00:07:39.61" class="lt" onclick="jumptoTime(459, this.id)"><p>重點是醬汁，你去哪裏買的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:42.01" id="00:07:42.01" class="lt" onclick="jumptoTime(462, this.id)"><p>醬汁?買?，你覺得我會買嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:44.41" id="00:07:44.41" class="lt" onclick="jumptoTime(464, this.id)"><p>它很有層次和質感，有種工地的感覺</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:49.05" id="00:07:49.05" class="lt" onclick="jumptoTime(469, this.id)"><p>我知道黑椒醬會比較濃味，但你會否吃到雞扒放了甚麼香料，或者放了甚麼東西去醃，你會覺得有種獨特的味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:2.49" id="00:08:2.49" class="lt" onclick="jumptoTime(482, this.id)"><p>嗯，豬扒很多時候會用到這個來醃，很香的味道就是用到這個，真的沒想到，我放了香茅，醃雞扒，為何有時會說香茅豬扒，香茅豬扒為何不可以香茅雞扒，香茅味配上黑椒其實是有效的，雞扒不會太過於濃烈，雞扒本身也有香味，味道很細膩，是很配合的，好，試另一邊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:39.85" id="00:08:39.85" class="lt" onclick="jumptoTime(519, this.id)"><p>這是甚麼蝦?感覺很新鮮，有海水味，通常黃金的做法都是脆口香口，這個不是，我知道蝦應該要整鑊，但不是脆脆的，很熱氣的感覺</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:0.89" id="00:09:0.89" class="lt" onclick="jumptoTime(540, this.id)"><p>我剛才說我放了麵粉，麵粉是白色的，黃金蝦是黃色的，平時看到它很黃金，現在看到我也是很黃金的，你知不知道我放了甚麼去令它變成這樣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:16.09" id="00:09:16.09" class="lt" onclick="jumptoTime(556, this.id)"><p>黃薑粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:18.09" id="00:09:18.09" class="lt" onclick="jumptoTime(558, this.id)"><p>沒錯，因為如果不放黃薑粉，顏色會變淡，出來的顏色就不太黃金，這兩樣配搭是帶出很有益的效果，Andrew你覺得這個鴛鴦飯你會給我多少分?</p></a>
+				<a href="#00:09:38.09" id="00:09:38.09" class="lt" onclick="jumptoTime(578, this.id)"><p>0至5分，不是滿分的話</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:41.29" id="00:09:41.29" class="lt" onclick="jumptoTime(581, this.id)"><p>我會在雞蛋裡挑頭，沒理由給5分，隨便給4分，那1分是給你，因為你挑剔，對，就找些東西挑剔一下，不可以說這碗飯完美，那怎樣才可以補那1分呢?</p></a>
+				<a href="#00:09:58.89" id="00:09:58.89" class="lt" onclick="jumptoTime(598, this.id)"><p>如果作為午餐或晚餐吃這碗飯的話，可能頭幾口都會吃到不停，謝謝。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》天外天中菜行政主廚徐偉輝 甜酸百變 柚子芒果手撕雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3yGgyFJpwus',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》天外天中菜行政主廚徐偉輝 甜酸百變 柚子芒果手撕雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA.COM，大家好，我是天外天才輝師傅，我今天帶名報讀者Eva去逛街市，你好，Eva，你好，石師傅，今天我們去街市買甚麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:16.41" id="00:00:16.41" class="lt" onclick="jumptoTime(16, this.id)"><p>我們今天不如去買水果，買水果我們就做柚子手撕雞，好呀，金柚雖然看來大，但色澤比較鮮，而且比較重，這個有黃色，看起來比較輕，師傅，我們怎樣挑芒果?</p></a>
+				<a href="#00:00:39.49" id="00:00:39.49" class="lt" onclick="jumptoTime(39, this.id)"><p>現在有兩種在手，一種是黑色，一種是很漂亮，有甚麼分別?</p></a>
+				<a href="#00:00:45.29" id="00:00:45.29" class="lt" onclick="jumptoTime(45, this.id)"><p>這些熟過頭了，有時已經是黑色，開始爛了，聞一聞就知道兩種有分別，這個比較香，我們這次去雞檔，有兩種雞，加美雞比較細，價錢可能貴一點，我這次用了三黃雞，三黃雞比較均勻，比較大隻，我認為最適合做炸子雞、炆雞，金鈾買回來後， 記得要先拆肉，然後要挑選衣服和襪子，芒果取肉， 切粒備用，芒果去皮有個小貼士。</p></a>
+				<a href="#00:01:34.29" id="00:01:34.29" class="lt" onclick="jumptoTime(94, this.id)"><p>可以用湯匙或湯碗在芒果邊劃圓邊，整塊肉就可以拿出來，然後可以調一調上雞的雞肶水，把水、白醋、節醋、麻油糖煮在一起備用，雞清洗後， 雞背向面，雞胸和大腿按壓，然後劃少少洞， 塗勻滑鹽，燒滾水， 燒滾腍皮，雞皮轉色後， 再上雞肶水，塗勻， 風乾6小時，風乾後， 浸炸約10分鐘，備用。</p></a>
+				<a href="#00:02:27.29" id="00:02:27.29" class="lt" onclick="jumptoTime(147, this.id)"><p>食用時， 調炸約4-5分鐘，看油溫和雞變化，脹身後， 差不多可以，炸的時候， 水分會冒出來，開大火， 讓雞皮脆一點，燒油， 中油溫，放入薄荷葉， 轉色後倒出來備用，炸好後， 去骨、去肉，切絲，拌炒好的柚子肉、芒果，拌勻後， 放在中間，鋪上切好的雞皮，炸好的薄荷葉， 半邊就可以了，在家可以用雞腩。</p></a>
+				<a href="#00:03:11.29" id="00:03:11.29" class="lt" onclick="jumptoTime(191, this.id)"><p>蒸或焗， 去骨、切絲，省上髀和調炸時間。</p></a>
+</div>
+	</body>
+</html>

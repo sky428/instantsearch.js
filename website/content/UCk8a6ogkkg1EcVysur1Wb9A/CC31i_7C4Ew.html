@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》卅二公館總廚教煮 滑蛋鮮蝦仁</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CC31i_7C4Ew',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》卅二公館總廚教煮 滑蛋鮮蝦仁</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA.COM，大家好，我是三十二公館，中菜行政總廚李文星，我今天教大家煮一個，滑蛋炒蝦仁，我們這次選用的是基圍蝦，4月開始蝦會很漂亮、很剛做，基圍蝦口感比較滑，做滑蛋蝦仁是最好的，如果死了，蝦會變白，而且這些透明的，青色是最好的，我們叫做生蝦金條。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.18" id="00:00:45.18" class="lt" onclick="jumptoTime(45, this.id)"><p>首先把蝦子汆水，蝦子大約七、八成熟，我們就撕掉蝦殼，然後剪掉蝦頭，選擇蛋的時候，會選擇湖北蛋，炒出來的香味會比較濃，放一點點雞粉，鹽、糖、豆粉水，攪拌均勻後，我們就把原先剝好的蝦肉，用暖油大約100度先炒油，炒完油我們再加一點蔥油，我們放油的時候，千萬不要分幾次放，然後放蛋下去炒，炒到大約五成熟。</p></a>
+				<a href="#00:01:26.82" id="00:01:26.82" class="lt" onclick="jumptoTime(86, this.id)"><p>就放蝦仁下去，開很輕微的火慢慢炒，要用陰油的力去炒，千萬不要大火，大火炒出來的蛋就不會滑，炒到蛋的份量不到百分之一百熟，我們大約九成熟。</p></a>
+				<a href="#00:01:44.34" id="00:01:44.34" class="lt" onclick="jumptoTime(104, this.id)"><p>就可以上碟了。</p></a>
+</div>
+	</body>
+</html>

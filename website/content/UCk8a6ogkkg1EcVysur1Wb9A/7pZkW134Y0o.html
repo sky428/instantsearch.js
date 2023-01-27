@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》 以食會友</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '7pZkW134Y0o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》 以食會友</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.59" id="00:00:21.59" class="lt" onclick="jumptoTime(21, this.id)"><p>好難得，我們多年好朋友，聚一聚，不用說，認識你很多年，你是舊同學，中學兼著友，二十多年了，你就是一個很好的大學朋友，兼我是你和你老公的媒人，多謝你，這個湯我之前已經準備好，已經放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:47.03" id="00:00:47.03" class="lt" onclick="jumptoTime(47, this.id)"><p>番茄魚湯，但又有些酥皮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:50.19" id="00:00:50.19" class="lt" onclick="jumptoTime(50, this.id)"><p>像我們，全部都中西西，弄不清楚，喝番茄魚湯作基礎，節日的關係，鋪上酥皮，好像比較過癮，中西合璧，沒錯，你知道我從小到大，在香港，澳洲，大學在英國，和你們一起，多年來，我都很喜歡吃亞洲菜，但我覺得有時候，可以把中國菜和西式菜混合，好像我們今天做的這個湯，是挺特別的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:35.07" id="00:01:35.07" class="lt" onclick="jumptoTime(95, this.id)"><p>那時候在英國讀書，為甚麼你會懂得煮菜，我們都不懂得煮菜，沒有答案好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:48.43" id="00:01:48.43" class="lt" onclick="jumptoTime(108, this.id)"><p>沒有答案好吃，就是沒有答案好吃，因為窮，外面的菜又貴又難吃，那時候碟頭飯有八磅，我們吃十四碗，自己煮，那時候我們沒有上網，我們的年代好像說了很久，其實就是吃完外面的菜，自己去買原材料去清洗和試，英國的原材料很漂亮，你知道我爺爺很擅長煮菜，放假回去就問他，為甚麼?這些東西怎麼發?</p></a>
+				<a href="#00:02:21.23" id="00:02:21.23" class="lt" onclick="jumptoTime(141, this.id)"><p>就是這樣開始，我整個煮食的旅程，老實說，這麼多年朋友，我第一次煮東西給你吃，你的感覺如何呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:36.52" id="00:02:36.52" class="lt" onclick="jumptoTime(156, this.id)"><p>很難得有一個星期會有這一餐吃，因為來來去去一至四都是吃火鍋，很難吃的食物，開始的時候，我當時也不是很多錢，我記得你做的那個，就是很簡單的一個黑椒汁，再加一塊雞扒，是黑椒雞扒飯，但是那些黑椒雞扒飯是比香港的茶餐廳更好吃，而且那股胡椒味真的會攻到鼻子上，我記得George當時真的很神心，清晨五、六時就去一個很有名的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:14.08" id="00:03:14.08" class="lt" onclick="jumptoTime(194, this.id)"><p>叫Billingsgate Fish Market，在家裡逛四個小時，早上四點多，我們應該是昨晚喝完酒喝到兩點，然後就不睡，四點就去購物，買完之後就拿回家，冷藏一下，然後睡覺，到下午就開始切蒜頭，開工</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:35.08" id="00:03:35.08" class="lt" onclick="jumptoTime(215, this.id)"><p>然後晚上你們又來吃，我剛才幫你剝了這麼多椰菜花，我們今天是做什麼的?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:41.28" id="00:03:41.28" class="lt" onclick="jumptoTime(221, this.id)"><p>這個椰菜花是韓式風格的椰菜花，很簡單的，簡單得你剛才切了的椰菜花，我特意去買一些黃色和紫色的，Festive Season，全部倒進去，這裡就加少少海鹽，我看到是Lava Salt，是Iceland的海鹽，很漂亮，你開始拌，我就會慢慢倒麻油進去，這個是我認為在韓國買最好最好最好吃的麻油，不用太多。</p></a>
+				<a href="#00:04:14.16" id="00:04:14.16" class="lt" onclick="jumptoTime(254, this.id)"><p>拌勻後，其實菜就很簡單，這是我和你最喜歡吃的牛肉，這裡有些很好的日本和牛，基本上是鐵板燒的質素，一放進爐就已經熟了，聽到聲音嗎?</p></a>
+				<a href="#00:04:37.14" id="00:04:37.14" class="lt" onclick="jumptoTime(277, this.id)"><p>放入蒜末，再放入青蔥，幫我按壓一下，然後放入鹽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:48.14" id="00:04:48.14" class="lt" onclick="jumptoTime(288, this.id)"><p>這些飲食，煮食初哥也可以做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:52.14" id="00:04:52.14" class="lt" onclick="jumptoTime(292, this.id)"><p>但非常好吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:55.14" id="00:04:55.14" class="lt" onclick="jumptoTime(295, this.id)"><p>不過不用擔心，有阿Jer在幫忙，superb avoir</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:9.02" id="00:05:9.02" class="lt" onclick="jumptoTime(309, this.id)"><p>obliv Thing，Eh，scal scripts，passe，screw，liken，hel легко，Desp employees，Video助 powin，Pac，tramp，영，Prof，dando，marine，maybe，坐，pizz!!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:16.60" id="00:05:16.60" class="lt" onclick="jumptoTime(316, this.id)"><p>Очень belief，п Careful，ương，proceedings，principals，geek，טقول，elabor，después，SD，Hallo，iona，al Stress，Understand，Driver，JO downstairs，уем，пр，observers。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:24.74" id="00:05:24.74" class="lt" onclick="jumptoTime(324, this.id)"><p>packet，jeito，indicated，aid，ід，Company，και，vários，stool，Hung magnets，travail，runway，briefing，أن Sammy，cushion，便 Infrast，rumah，ecological，Tet，stra。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:0.52" id="00:05:0.52" class="lt" onclick="jumptoTime(300, this.id)"><p>Einstein</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:16.92" id="00:05:16.92" class="lt" onclick="jumptoTime(316, this.id)"><p>SAL no Gum，Biz，hey，未经许可，不得翻唱或使用。</p></a>
+</div>
+	</body>
+</html>

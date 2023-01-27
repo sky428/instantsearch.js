@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>為何深夜總是餓？櫻花蝦醬百搭多變 消夜撈麵添鮮香│《新手廚房》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nSvGMd8lMuw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>為何深夜總是餓？櫻花蝦醬百搭多變 消夜撈麵添鮮香│《新手廚房》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好，我是Carol，今天我會教大家做櫻花蝦醬，做法很簡單，做好後可以拌麵、炒飯、蒸水蛋，甚至炒肉、炒菜都可以，首先將乾蔥去皮，然後放入攪拌機攪碎，油煮滾後就可以放入乾蔥，然後再加入蒜蓉，然後要給點耐性慢慢攪拌，這個過程大約需要20分鐘左右，確保乾蔥和蒜頭都炸乾為止。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:54.84" id="00:00:54.84" class="lt" onclick="jumptoTime(54, this.id)"><p>我們可以加少少老抽，讓顏色平衡一點，這個時候可以放入辣椒，將辣椒放入攪拌機，要煮大約5分鐘左右，然後加入糖、鹽和辣椒粉，將準備好的櫻花蝦倒入，這個步驟大約要炒5分鐘左右，最後加入蝦子拌勻，這樣就完成了，櫻花蝦一般都會在日本或台灣進口，這次我用工程員魚躍，選擇一些不太大的櫻花蝦，小小的就可以了。</p></a>
+				<a href="#00:01:41.84" id="00:01:41.84" class="lt" onclick="jumptoTime(101, this.id)"><p>因為做醬汁太大隻會影響口感，如果不吃辣可以將辣椒和辣椒粉這兩個材料剔除，如果想吃少少辣，可以在切籽天椒時將籽去除，這樣就可以減低辣度，這個食譜只加了鹽和糖調味，第一次味會覺得比較鹹，這樣就對了，因為我們做醬汁時應該偏鹹，到時用來拌麵或其他食材，味道就會剛剛好。</p></a>
+</div>
+	</body>
+</html>

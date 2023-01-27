@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》湯渣變身雞肉煨麵、上湯浸津白</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'u4q0O-axnxc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》湯渣變身雞肉煨麵、上湯浸津白</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.52" id="00:00:0.52" class="lt" onclick="jumptoTime(0, this.id)"><p>今日邀請旅遊達人Jerry，煮一餐飯畀你食，你平時去旅行有冇啲咩有主題嘅飯嘅呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:11.96" id="00:00:11.96" class="lt" onclick="jumptoTime(11, this.id)"><p>印象深刻比較正嘅一個主題就係，抹黑食飯，喺台北嘅一個好靚嘅舖頭，佢點解要抹黑食飯呢?</p></a>
+				<a href="#00:00:21.96" id="00:00:21.96" class="lt" onclick="jumptoTime(21, this.id)"><p>就係因為等我哋可以用返最原始嘅感官，即係舌頭嘅味道，去品嘗呢一餐飯，今日嘅主題又係咩呢?</p></a>
+				<a href="#00:00:30.60" id="00:00:30.60" class="lt" onclick="jumptoTime(30, this.id)"><p>係隔夜嘅湯渣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.12" id="00:00:33.12" class="lt" onclick="jumptoTime(33, this.id)"><p>咁你食埋我嗰份呀?，其實你未必會失望㗎喇，我嗰日就食完餐飯，佢就係一個火筒燉津白同埋雞嘅湯，我煮完出嚟之後，我就發覺佢擺個湯渣畀我睇嘅時候，嗰啲火筒係完全啲味係仲未出哂嘅，咁我就覺得好嘥，如果你就咁食就好鹹，如果你扔咗去就真係好浪費，咁我就覺得可以拎返佢返嚟做第二浸湯，熬多兩個鐘頭就已經係好靚㗎喇。</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>我哋今日就整個上湯浸津白，你睇到呢啲係一啲細嘅津白，咁就咁切開佢一半就得㗎喇，唔使搞咁多嘢㗎喇</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:17.48" id="00:01:17.48" class="lt" onclick="jumptoTime(77, this.id)"><p>平時我自己食就為咗健康唔落油嘅，係咪就咁擺落去就得㗎喇?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:21.84" id="00:01:21.84" class="lt" onclick="jumptoTime(81, this.id)"><p>咁你會唔會覺得大便有問題?</p></a>
+				<a href="#00:01:25.08" id="00:01:25.08" class="lt" onclick="jumptoTime(85, this.id)"><p>咁食菜已經好多纖維啦，纖維無油係無用㗎，佢會谷住咗喺你嘅腸胃入面，其實係無益㗎，所以其實食菜係一定要有油先至得㗎，咁就要加啲適量嘅油，加少少油落去，焯一陣啦，焯三兩分鐘啦，開一拖水之後呢，咁我哋就隔起佢喇，你見到佢而家係好有光澤，好似架咁呀我哋玩具，我哋就擺返落去個煲，你一路倒湯啦。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:54.85" id="00:01:54.85" class="lt" onclick="jumptoTime(114, this.id)"><p>大約三至四分鐘，夠了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:58.29" id="00:01:58.29" class="lt" onclick="jumptoTime(118, this.id)"><p>調大火，等它一煮開之後，然後就收到很小火，然後就焗它，焗熟的話，它的纖維就會破裂，就會變得更加軟，蓋上蓋子，我想焗它五至七分鐘，五至七分鐘就可以了，現在我們的樽白也浸好了，會不會浸久一點，它會變得更加透明，它會越來越軟越化，最後加少少芡汁，稠一點，我不喜歡太稠，太稠的話會很噁心，嘩。</p></a>
+				<a href="#00:02:36.81" id="00:02:36.81" class="lt" onclick="jumptoTime(156, this.id)"><p>我們不如做個嫩雞煨麵，這個也是煲湯渣，所以我不敢叫它做嫩雞煨麵，老雞，雞煨麵，你幫我將它的絲，絲一絲一絲，其實坊間我見過很多人，煮完麵，然後就將湯倒下去，很正常，一般的麵是對的，是，很正確的，但是煨麵就不正確了，因為煨麵是要煨的，是，我經常說，所以我的做法就不同，一定是將麵放在上湯一起煨，煨麵就是喜歡吃它的軟。</p></a>
+				<a href="#00:03:10.17" id="00:03:10.17" class="lt" onclick="jumptoTime(190, this.id)"><p>因為雞，我都是在火銅煲雞湯那裡，湯渣，對 拿它出來，所以其實雞本身都已經是很有味，加進去，加一點胡椒粉，好 搞定了，OK，我們煮麵了，這個就是上海麵，這個可能要去麵舖街市買到，如果真的買不到這個麵，不妨可以用這些包裝的，我想好吃的話一定是這個，我也想做，其實這個上湯就是用火鋅，再去做的上湯。</p></a>
+				<a href="#00:03:46.29" id="00:03:46.29" class="lt" onclick="jumptoTime(226, this.id)"><p>整個麵可以放下去，雞絲是最後才放下去，雞絲是最後才放下去，煲這個麵要多久，我想可能要去到10分鐘，如果你喜歡麵軟一點，你可以再久一點，我這裡準備了一些菇，לפ vodka</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:4.31" id="00:04:4.31" class="lt" onclick="jumptoTime(244, this.id)"><p>��릴，дуже，Contact</p></a>
+				<a href="#00:04:3.45" id="00:04:3.45" class="lt" onclick="jumptoTime(243, this.id)"><p>teenager，loads</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:6.09" id="00:04:6.09" class="lt" onclick="jumptoTime(246, this.id)"><p>我都好期待食呢個麵</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:8.49" id="00:04:8.49" class="lt" onclick="jumptoTime(248, this.id)"><p>差唔多八分鐘啦，係 差唔多啦，咁我地要掟埋個菜落去囉，你鍾意脆口啲，脆口啲好啲，咁就唔使煮咁耐囉，我諗分零鐘啦 個菜</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:17.09" id="00:04:17.09" class="lt" onclick="jumptoTime(257, this.id)"><p>所以你對食麵都好講究喎其實，因為通常啲人煮麵係，係屋企貪快 脆，唔係 求其煮完就食㗎啦嘛，呢個係錯㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:27.09" id="00:04:27.09" class="lt" onclick="jumptoTime(267, this.id)"><p>要用十分鐘煮呢個麵，唔應該係咁樣去做㗎，其實呢我地再要少少調味嘅，加少少胡椒粉，呢個係一個紹興酒，落埋落個麵度呢，嘩 係香到不得了 我話畀你聽，同埋好襯㗎個味，好啦 咁你個雞啦，雞 攞個雞啦 喺度 倒晒落去，一落雞呢 我話畀你聽呢，就熄火啦 就要上啦，因為你都話啦 個老雞黎㗎嘛大佬，太功告成啦 正啊呢個。</p></a>
+				<a href="#00:04:52.09" id="00:04:52.09" class="lt" onclick="jumptoTime(292, this.id)"><p>好啦 咁個烏面啦，咁我地再靚仔少少呢，就呢 又係加啲隔夜料囉，又係加夜料，咁個火筒呢其實我地可以，煮一碗汁出黎㗎嘛，就咁睇都覺得佢仲有好多味，完成，字幕by索兰娅🐰</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:13.05" id="00:05:13.05" class="lt" onclick="jumptoTime(313, this.id)"><p>好嘢 又煮好餐飯啦，今次呢個好健康，試左個樽白先啦，好夠味喎真係，出面好多時食嘅樽白，個芡都係好蕭，呢個係可以當湯飲下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:31.89" id="00:05:31.89" class="lt" onclick="jumptoTime(331, this.id)"><p>好味喎，試埋個麵啦，其實你都仲聞到個火腿，個火同個口味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:39.41" id="00:05:39.41" class="lt" onclick="jumptoTime(339, this.id)"><p>試吓先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:40.73" id="00:05:40.73" class="lt" onclick="jumptoTime(340, this.id)"><p>你唔可以期望佢變到真係話，好滑好滑，但係唔會太差</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:47.25" id="00:05:47.25" class="lt" onclick="jumptoTime(347, this.id)"><p>個麵好入味，同埋你又落左紹興酒，又落左麻油，又落左胡椒粉，無錯，所以個口味都係好多層次，食你煮嘅嘢我先知道，食物係唔可以浪費之餘，亦都可以用淨嘅湯渣，都可以煮出咁好味嘅嘢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.01" id="00:06:10.01" class="lt" onclick="jumptoTime(370, this.id)"><p>咁咁啦兩道餸平時就，5分就最高分，兩道加埋一齊計，10分最高分，你幾多分</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:16.85" id="00:06:16.85" class="lt" onclick="jumptoTime(376, this.id)"><p>夾埋嘅話有8.5分，多謝，唯一美中不足就係，我覺得個雞真係蟹有少少，如果真係可以用嫩雞，我諗可以再好味啲，不過而家係教大家，用埋啲湯渣再整，所以其實都好好食</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:32.65" id="00:06:32.65" class="lt" onclick="jumptoTime(392, this.id)"><p>多謝。</p></a>
+</div>
+	</body>
+</html>

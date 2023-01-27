@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>麥提莎糯米糍自己搞掂！粉糰Q彈秘訣原來係......│《DIY食譜》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'AIwA-n5X9_g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>麥提莎糯米糍自己搞掂！粉糰Q彈秘訣原來係......│《DIY食譜》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>糯米糍，糯米粉，香蕉糕，冰皮月餅，糯米糍，糯米粉，糯米糍，糯米糍</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:42.17" id="00:01:42.17" class="lt" onclick="jumptoTime(102, this.id)"><p>今天會教大家做麥提莎糯米糍，會用糯米粉加粘米粉，因為糯米有黏黏的程度，加上粘米會比較爽口，不會黏牙，首先將粉和糖過篩，不要結成粒狀，將粉全部拌勻，拌至一個顏色。</p></a>
+				<a href="#00:02:8.17" id="00:02:8.17" class="lt" onclick="jumptoTime(128, this.id)"><p>然後分三次慢慢加入奶，一次過拌勻，粉會全部黏在一起，做到很順滑，像朱古力奶的狀態，就可以將粉和糖過篩，確保粒狀不會結硬，蒸的時候不會有粉在。</p></a>
+				<a href="#00:02:31.17" id="00:02:31.17" class="lt" onclick="jumptoTime(151, this.id)"><p>準備碟子，拿去蒸。</p></a>
+				<a href="#00:02:35.17" id="00:02:35.17" class="lt" onclick="jumptoTime(155, this.id)"><p>通常會噴油，盡量不要用花生油，因為花生油太重味，放好後，用保鮮紙蓋住蒸，水滾了，放進去蒸17分鐘，糯米糍的皮已經做好了，這個狀態，待會放涼後，會先搓揉，大家經常覺得，很黏怎麼辦，手也一樣，我自己會用普通的袋子，先噴油，剛才噴了油的，很容易起，整個放進去，想煙韌度好一點，就要這樣搓揉，這個狀態已經可以了。</p></a>
+				<a href="#00:03:32.17" id="00:03:32.17" class="lt" onclick="jumptoTime(212, this.id)"><p>反正都是切的，將袋子攤開。</p></a>
+				<a href="#00:03:43.70" id="00:03:43.70" class="lt" onclick="jumptoTime(223, this.id)"><p>然後我們就已經在這個階段的時候，滾到自己想要的厚薄度，現在滾到這個狀態，我們就將袋子剪開，它可以原片留在這裡，而我們的手最好戴手套，因為它一定會黏著我們的手，我們就準備了一些穀物粉，放一點點在膠刮上，現在就將它裁成大小，我們拿了一塊，其實只需要將它這樣，將它圓圓的。</p></a>
+</div>
+	</body>
+</html>

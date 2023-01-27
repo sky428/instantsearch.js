@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易羊腩煲 - Lamb Stew (short version)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '98THCmUG7Ls',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易羊腩煲 - Lamb Stew (short version)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.09" id="00:00:4.09" class="lt" onclick="jumptoTime(4, this.id)"><p>先講解材料，羊肉是有皮的，是羊腩，2磅半，還有一些配料，例如蔥頭、薑、蔥段、馬蹄、枝竹，可以加，可以不加，但這些當然會更好吃，加這些材料，尤其像我家裡，雖然會做羊腩煲，但不是經常做的，因為家人很多都很怕羶，但他們對旁邊的配料有興趣，所以我會加多一點，如果平時的話，你們加幾粒，加幾條，就已經沒問題了，因為羊腩煲最主要的就是羊腩。</p></a>
+				<a href="#00:00:56.79" id="00:00:56.79" class="lt" onclick="jumptoTime(56, this.id)"><p>我們廣東人吃羊是連皮吃的，北方人吃羊就只吃羊肉，因為連皮，有些脂肪在裡面，所以會很羶，最好笑的就是我們喜歡吃羊，但又怕羶味，那怎樣可以解決羶味呢?</p></a>
+				<a href="#00:01:18.27" id="00:01:18.27" class="lt" onclick="jumptoTime(78, this.id)"><p>坊間有很多不同的方法，這個就是我家教的方法，當然我們有甘蔗，甘蔗一起煮，甘蔗也會有甜味，令羊肉更好吃，也會去掉羶味，還有大量的薑，薑一起爆炒的時候，也會去掉羊肉的羶味，另外我家做羊腩煲還有兩個特別的材料，一個就是陳皮，另一個就是當歸，當歸也不是很多，一個當歸也沒有，很少，但應該在藥材店叫切薄片，但我媽媽給了我一整塊。</p></a>
+				<a href="#00:02:14.59" id="00:02:14.59" class="lt" onclick="jumptoTime(134, this.id)"><p>我怎麼破都破不開，又斬到一塊塊，這樣就可以去掉羊肉的羶味，仍然保留羊肉的香味，你們會問，用當歸會不會有當歸的藥材味?</p></a>
+				<a href="#00:02:33.87" id="00:02:33.87" class="lt" onclick="jumptoTime(153, this.id)"><p>其實是不會的，因為我家裡的羊肉很少，但它也會帶起羊肉的香味，這裡有些凍水，凍水的時候我會先把羊肉汆水，凍水下羊肉，然後我會加一些蔥段和薑，這樣我們就把羊肉慢慢火，由凍水開始煮，煮到它還沒滾的時候，我們就關火，然後你看到很多污糟的東西就會出來，一會兒就過了它，我們就可以開始煮了，你們看看，汆水後，我們隔水後羊腩就可以煮了。</p></a>
+				<a href="#00:03:24.27" id="00:03:24.27" class="lt" onclick="jumptoTime(204, this.id)"><p>首先我燒熱油，有些聲音之後，我可以將薑蔥，和蔥，我只是用蔥段白色，還有這些就是乾蔥頭，不需要切成小塊，薑就厚片，然後我們就爆炒，爆炒的時候我可以加醬料一起爆炒，我這裡有兩湯匙南乳，一湯匙柱候醬，還有一個湯匙老抽，全部放進去，醬料爆炒後就會香一點，開小火，香味已經出來了，將羊肉放入鍋中，然後炒香。</p></a>
+				<a href="#00:04:44.06" id="00:04:44.06" class="lt" onclick="jumptoTime(284, this.id)"><p>將羊肉煎至汁不減，炒至金黃色後，就可以加入酒，如果家中有紹興酒，可以加入，如果沒有的話，可以加入米酒，我加了少許，加少許酒，bends</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:29.90" id="00:05:29.90" class="lt" onclick="jumptoTime(329, this.id)"><p>stanöglich，iker，pilgr polsk，� antis �cę，líder，Jest</p></a>
+				<a href="#00:05:30.52" id="00:05:30.52" class="lt" onclick="jumptoTime(330, this.id)"><p>ynthesis，stealth，exercising</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:32.06" id="00:05:32.06" class="lt" onclick="jumptoTime(332, this.id)"><p>аемся，deserves，spaces，tych，yapt，Rolle</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:25.08" id="00:05:25.08" class="lt" onclick="jumptoTime(325, this.id)"><p>Policy，critэт，Exp Burada，ureau，STACK，PCR，1947</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:32.14" id="00:05:32.14" class="lt" onclick="jumptoTime(332, this.id)"><p>integrate，véritable，breath，eu que，PO，nossa，Councillors，wolf</p></a>
+				<a href="#00:05:29.82" id="00:05:29.82" class="lt" onclick="jumptoTime(329, this.id)"><p>�assing，Indian，ότε вдруг，bracelets，水大約50ml，半公升水，一起煮，到這個時間我可以將竹蔗放入去，如果用瓦鍋炆的話，竹蔗會鋪在底部，然後再放羊肉，我現在用木鑊，最後才放在鍋中，所以我會這樣，這個時間就要放其他材料，果皮，當歸，冰糖，炆羊腩或牛腩都會放冰糖，因為會令到它更加軟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:42.83" id="00:06:42.83" class="lt" onclick="jumptoTime(402, this.id)"><p>現在我用火慢慢煮滾，顏色都不錯，還有一樣東西忘記放，就是馬蹄，這個時間就放馬蹄，你未必需要放這麼多，我家人喜歡吃馬蹄，所以就放多一點，然後蓋上蓋子，現在我調小火慢慢煮，大約煮一小時，就可以食了，我預備做羊腩煲的時候，就可以拿些腐乳出來攪拌，我這個是辣的腐乳，你可以不辣，我這個是尿麻記。</p></a>
+				<a href="#00:07:39.83" id="00:07:39.83" class="lt" onclick="jumptoTime(459, this.id)"><p>拿少少出來一會用來蘸，南乳拿來煮，腐乳拿來蘸，可以拿幾粒出來，一會用來蘸羊肉食，加少少糖，然後將它們分開，將冬瓜和洋芒菇攪拌均勻，洋芒菇便準備好了，我讓你們看一下，是不是很漂亮呢，因為快要吃了，所以現在放進去煮杯，將洋芒菇放進去煮杯，我只需要把羊腩和竹蔗的配料放進去，竹蔗的尾部可以不吃，但可以吃的。</p></a>
+				<a href="#00:09:17.22" id="00:09:17.22" class="lt" onclick="jumptoTime(557, this.id)"><p>把陳皮撥開，最後把羊肉放進去，因為我沒有用很多水，所以煮出來的湯不算多，最後才把竹蔗放進去，因為竹蔗吸收味道，所以要快點放進去，因為我沒有用很多水，所以只放在表面十分鐘，最後才放鹽，因為之前只放了醬，所以要放鹽，現在可以揭開羊腩，看一看多好，最後可以撒點蔥上去，整個好看一點，看上去好像很美，今天就介紹到這裡，謝謝收看，下次見，拜拜。</p></a>
+</div>
+	</body>
+</html>

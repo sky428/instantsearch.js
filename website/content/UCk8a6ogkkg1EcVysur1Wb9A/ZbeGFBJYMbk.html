@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京蔥炒羊肉 快炒鑊氣十足 回味大學的美味回憶  | 鑊氣小炒 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZbeGFBJYMbk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>京蔥炒羊肉 快炒鑊氣十足 回味大學的美味回憶  | 鑊氣小炒 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我王子同大家見面，今日會同大家分享一道京蔥炒羊肉，呢道菜式係我英國讀大學時，有一個同學邀請我去宿舍的共用廚房煮給我食，之後我愛上咗，所以今日亦都同大家分享，如果想知點樣做飯，就記得訂閱我啦!</p></a>
+				<a href="#00:00:31.67" id="00:00:31.67" class="lt" onclick="jumptoTime(31, this.id)"><p>材料有什麼呢?</p></a>
+				<a href="#00:00:33.67" id="00:00:33.67" class="lt" onclick="jumptoTime(33, this.id)"><p>當然是羊肉，我量了四人份量，我用了200-250克羊肉，這是羊柳條，很優質、很漂亮的羊柳條，很軟、很韌、很香，亦有一條京蔥，一些蒜頭，我這裏有四粒，然後切片，一些黑胡椒，豉油、麻油，如果喜歡辣的話，可以加黃子辣椒油，做法是怎樣呢?</p></a>
+				<a href="#00:01:9.67" id="00:01:9.67" class="lt" onclick="jumptoTime(69, this.id)"><p>羊肉先切開然後醃，醃用豉油和麻油就可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:15.67" id="00:01:15.67" class="lt" onclick="jumptoTime(75, this.id)"><p>不用醃太長時間，然後我們就要拿羊肉，先加少少蒜片，和羊肉一起炒，炒到五成熟，我們就先拿一邊，然後我們再加油，炒一炒京蔥，大小或怎樣切，就視乎你個人喜好，切開炒一炒，炒熟了京蔥之後，我們就將羊肉和蒜片，一起倒下去，再翻炒，我們也可以加少少紹興酒，豉油和黑胡椒去調味，然後就可以上碟食，希望大家喜歡我這道大學時期的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:12.67" id="00:02:12.67" class="lt" onclick="jumptoTime(132, this.id)"><p>京蔥炒羊肉，如果還想知我有什麼好東西介紹給大家的話，記得訂閱我啦!</p></a>
+</div>
+	</body>
+</html>

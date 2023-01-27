@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做梅菜蒸茄子 ｜ 懶人版不油炸</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0w-aBWp0fhI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做梅菜蒸茄子 ｜ 懶人版不油炸</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.14" id="00:00:6.14" class="lt" onclick="jumptoTime(6, this.id)"><p>大家好，今天和大家分享一個簡單的菜式，這是一個蕃茄，是清雪櫃系列，家裡有些甜梅菜，快到期了，我買了這一種，然後打算用梅菜來蒸蕃茄，最好是買到比較幼長的蕃茄，但最近很少在唐人超市買到，所以我看到的蕃茄只有圓圓的，我覺得蒸蕃茄最好吃的是吃幼長的蕃茄，這次做這個不用炸，用最簡單的方法做梅菜蒸蕃茄，我們先看看怎樣做。</p></a>
+				<a href="#00:01:10.14" id="00:01:10.14" class="lt" onclick="jumptoTime(70, this.id)"><p>首先拿梅菜出來，不用太多，一棵左右，然後可以浸泡，一棵蕃茄很多，所以要一棵去掉，是醃漬的，所以很乾身，有很多糖、鹽、調味料，一棵已經這麼多，和我的蕃茄差不多，如果可以多買幾個蕃茄就最好，然後浸泡，這些我會拿個盒子盛起，可以放久一點，我們就浸水，洗一下，為什麼呢?</p></a>
+				<a href="#00:02:0.54" id="00:02:0.54" class="lt" onclick="jumptoTime(120, this.id)"><p>因為梅菜裡面，這些葉的位置有很多泥，沙那些一定要洗乾淨，我現在先去洗一下，我已經用了幾個水，把那些葉子，弄乾淨，那些粒粒，每一塊的葉子，都要清洗乾淨，然後浸一會，因為它的味道很鹹，很鹹很甜很重味，所以浸一會，這個時間我們先處理蒜頭，在頭部切一刀，然後就，壓一壓它，我需要蒜蓉，我會放進去蒸，所以我可以用一個。</p></a>
+				<a href="#00:02:46.54" id="00:02:46.54" class="lt" onclick="jumptoTime(166, this.id)"><p>刀工好的，可以切，不然我們可以壓平，壓平它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:22.54" id="00:03:22.54" class="lt" onclick="jumptoTime(202, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，完成後就可以切個矮瓜，這個矮瓜或者茄子最好用長的，但如果沒有的話，這個肥的也可以用，不過要看裡面的籽有沒有那麼白，我會盡量切得清淡一點，如果想每個都有條邊的話，可以切成一條一條的，我大概會切4-5片，Евiny solamente TWO curling kabul，pasó。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:37.41" id="00:04:37.41" class="lt" onclick="jumptoTime(277, this.id)"><p>Pos enter</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:41.81" id="00:04:41.81" class="lt" onclick="jumptoTime(281, this.id)"><p>Hersburn，employers，João，grandibug，lihood</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:54.55" id="00:04:54.55" class="lt" onclick="jumptoTime(294, this.id)"><p>umm，código，roz，Dale，некоторые</p></a>
+				<a href="#00:04:49.17" id="00:04:49.17" class="lt" onclick="jumptoTime(289, this.id)"><p>weddings，utmost，appa，ur，days，ori</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:52.83" id="00:04:52.83" class="lt" onclick="jumptoTime(292, this.id)"><p>peninsula，edo，pepp Electronic，Arcrolog Doy，哈哈，hadn opioid，praw，休</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:54.65" id="00:04:54.65" class="lt" onclick="jumptoTime(294, this.id)"><p>asion，Burada，eniz，Bilder，М Jacques，itate</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:49.73" id="00:04:49.73" class="lt" onclick="jumptoTime(289, this.id)"><p>ancestor，mayor</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:48.25" id="00:04:48.25" class="lt" onclick="jumptoTime(288, this.id)"><p>vidéo，했，� treadmill，algun</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:53.73" id="00:04:53.73" class="lt" onclick="jumptoTime(293, this.id)"><p>superior，ihan，ừa，aty，оз</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:58.55" id="00:04:58.55" class="lt" onclick="jumptoTime(298, this.id)"><p>Curtis，Chronsea，Investment，kennt，然後一塊一塊的切，將所有的水果放入碗中，如果你怕吃到苦瓜時會咸或是粗糙，你可以用淡鹽水去浸泡，但我覺得一半一半的水果會比較平均，但如果你覺得沒所謂，我還是喜歡吃苦瓜的味道，可以不用理會，當然你浸一浸淡鹽水，它就會白身一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:57.60" id="00:05:57.60" class="lt" onclick="jumptoTime(357, this.id)"><p>不會像現在這樣，它開始開始氧化，它就會黃身一點，如果你想保持到它做完之後，苦瓜是很漂亮的，很鮮色的話，當然你炸它是最好，但如果像我這樣，我不想油膩，我不想炸，也不想麻煩的話，好像這個做法其實也是做得到的，只是清淡一點，沒有那種，因為，因為苦瓜或者茄子，它是一些瘦的物，它是像菇類一樣，它很吸油。</p></a>
+				<a href="#00:06:32.60" id="00:06:32.60" class="lt" onclick="jumptoTime(392, this.id)"><p>越多油它會好吃，但如果你說我OK，不用那麼多油也可以的話，其實這個方法就已經足夠了，梅菜已經把水弄乾了，再用廚房紙把它吸乾，最好是越乾身就越好，我們就可以把它切碎，你自己看著吧，想吃大顆一點小顆一點也沒所謂，當然如果你小顆一點，就容易吃一點，我們盡量可以切碎一點，切它小顆一點，切到菜頭那裡。</p></a>
+				<a href="#00:07:18.60" id="00:07:18.60" class="lt" onclick="jumptoTime(438, this.id)"><p>我們再打一刀，再切它小一點，然後再切碎，因為菜頭那裡，它的瓣比較硬，這裡就更加要切，切小一點再切小顆一點，不然，譬如你看到有些位置，好像這些，有個，這個位置，這裡這樣，這些就很硬，你直接可以切掉，不放進去也可以，切好就放進去，meses，ibl，ças</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:54.10" id="00:07:54.10" class="lt" onclick="jumptoTime(474, this.id)"><p>each，sir，nesse，��</p></a>
+				<a href="#00:07:57.40" id="00:07:57.40" class="lt" onclick="jumptoTime(477, this.id)"><p>tidak，直К，notes，Azer TRAVIS，調味，如果沒有懶人的方法，可以在鑊下炒香，加些油和糖，如果是懶人的方法，就什麼都不做。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:17.60" id="00:08:17.60" class="lt" onclick="jumptoTime(497, this.id)"><p>加些糖，加些糖可以溫和咸味，拌一拌，有些人怕梅菜有渴味，所以要用油，雖然是清淡食譜，但茄子和梅菜都需要油，所以我加些油，我加兩種油，麻油和普通油，我不是加很多，只是這樣一圈，大約一匙，加蒜蓉，有些蒜蓉是冷藏的，最後才加，我會先煮好，再用熟油炸，完成後就可以放上去，我那邊已經在煮水，一會隔水蒸，大火煮滾水。</p></a>
+				<a href="#00:10:8.60" id="00:10:8.60" class="lt" onclick="jumptoTime(608, this.id)"><p>就可以放上去，茄子和梅菜都在裡面，將所有材料放在一起， 這樣就更好味了，就可以拿去蒸了，大概蒸多久呢? 視乎你有多少茄子。</p></a>
+				<a href="#00:10:49.03" id="00:10:49.03" class="lt" onclick="jumptoTime(649, this.id)"><p>像我這樣， 還要這麼大一件， 我蒸十分鐘，如果你小一點的， 有些再切得精緻一點， 小小條， 幼身的那種，你蒸七分鐘就可以了，如果你有蒸焗爐， 蒸焗爐的話， 蒸久一點，我家的蒸焗爐是小的， 所以要再蒸久一點， 蒸十二三分鐘，但如果用鑊蒸的話， 大約七至十分鐘就可以了，好， 我們可以拿去蒸了。</p></a>
+				<a href="#00:11:35.03" id="00:11:35.03" class="lt" onclick="jumptoTime(695, this.id)"><p>現在蒸氣很大了， 我們打開它， 然後就可以放上去蒸了，我蒸它十分鐘， 一會兒見</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:49.03" id="00:11:49.03" class="lt" onclick="jumptoTime(709, this.id)"><p>蒸好了，我們回來了， 已經蒸好了， 很熱，我蒸了它十分鐘，現在就可以試吃了，吃之前， 你可以試一下味道， 要不要加一點點豉油，我加一點點的豉油， 加一點點就好， 如果你喜歡的話， 你不加也可以，然後就可以試味了，茄子已經完全熟了， 你拿筷子一戳， 已經一戳就穿了，我從旁邊夾一條上來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:38.03" id="00:12:38.03" class="lt" onclick="jumptoTime(758, this.id)"><p>因為是蒸的關係， 它就不是變成紫色了，茄子已經完全熟了， 加一點梅菜來試吃，嗯， 好好吃，喜歡的話可以用來配飯或粥，這個簡單的菜式， 連蒸和預備都很快就完成，希望大家喜歡， 下次再見， 拜拜。</p></a>
+</div>
+	</body>
+</html>

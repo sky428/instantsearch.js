@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》念念不忘上海窰雞 回港炮製秘魯人參昇華版本</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'tdSRB2rBwIc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》念念不忘上海窰雞 回港炮製秘魯人參昇華版本</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，我就是很喜歡吃雞的人，所以有一次我在上海，叫了一隻外賣送到酒店給我，這隻雞原來叫做窯雞，我吃到出來很香蒜頭味，也很香沙薑味，我這次的做法會再花巧一點，嘗試做出它的口味，我還會加上自己一個特別的材料，一會兒才揭曉是什麼，雞已經是我之前做了少少功夫，加了鹽和少少紹興酒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:51.57" id="00:00:51.57" class="lt" onclick="jumptoTime(51, this.id)"><p>整隻雞搓一搓，中間一般情況都會塞薑和蔥，已經塞在雞裏面，一日前我會醃雞，正如我上次說的，在上海在大陸吃的雞，我覺得很好吃，但它沒有我這麼多配料在裏面，我們塞進去，栗子可能不夠軟，所以一定要煲開它，讓它軟一點，冬菇，其實每樣東西都不會放很多，純粹紅棗這些是出它的香味為主，金華火腿，放了金華火腿進去之後。</p></a>
+				<a href="#00:01:37.57" id="00:01:37.57" class="lt" onclick="jumptoTime(97, this.id)"><p>栗子等等吸收香味，亦都會好味一點，杞子，離不開的當然是蒜頭，蒜頭的香味，這些雞內臟不是很矜貴的東西，通常一般的雞檔在街市都買得到，現在外面我會放少少沙薑粉，另外會放一個沙薑醬，沙薑雞醬通常一般大型超市都會有，亦都是大品牌的牌子，不要放得太多，因為一會兒雞會太鹹，盡量均勻一點，有時候雞翼下面的位置都要花多少心機。</p></a>
+				<a href="#00:02:29.57" id="00:02:29.57" class="lt" onclick="jumptoTime(149, this.id)"><p>將醬特意拉到那裏，做完沙薑醬之後，現在放我那個特別的材料進去，這個特別食材是非常有益的，其實對男女老幼都很有益的一種食材，可以用牙籤封住後面，讓蒸的時候肉汁和材料不會流出來，之後就要將它包入荷葉，我會蓋多一塊荷葉在頂部，因為我的雞都比較大，之後我都會用錫紙去包，因為我始終怕荷葉會有些洞，將雞的汁很容易流出來。</p></a>
+				<a href="#00:03:25.57" id="00:03:25.57" class="lt" onclick="jumptoTime(205, this.id)"><p>水滾後就可以將雞放入去，蓋上蓋子，因為我的雞比較大，除了雞之外，我裏面還有其他配料，我會蒸它7個字，關火後就放在一邊，讓它休息5分鐘，整隻雞就一定熟了，也不會太老，我今日請了我的試食專員，是我姐姐，她是一個很懂得吃的人，但完全不懂得煮，你先試試雞翼吧，你最喜歡的，你一邊吃，我一邊撕開其他肉給你吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:20.27" id="00:04:20.27" class="lt" onclick="jumptoTime(260, this.id)"><p>其實可以吃到雞內臟的味道，是嗎，有水準，謝謝，好味嗎，好味 當然好味，其實雞很滑，你就算吃雞胸，剛剛她叫我吃雞胸，其實跟雞翼的味道，和軟硬度是差不多的，所以整隻雞都煮得很均勻，我先試試</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:43.07" id="00:04:43.07" class="lt" onclick="jumptoTime(283, this.id)"><p>而且很入味，我還加了一樣特別的材料</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:47.59" id="00:04:47.59" class="lt" onclick="jumptoTime(287, this.id)"><p>再試一口雞看看能否吃到，有少少甘甘的味道，很入味，我覺得有些像藥材的材料在裏面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:56.55" id="00:04:56.55" class="lt" onclick="jumptoTime(296, this.id)"><p>算了 我開蠱給你，是馬卡，馬卡就是秘魯的人參，我今次專登擺了一粒馬卡，切開它做片，連同其他配料，塞入雞內一起蒸，因為吸了雞的精華和油，吸了之後，它就沒有了馬卡本身，那個不太受歡迎的味道，人們一吃下去，是覺得好味的，亦都是一個很健康的材料，將整個雞的健康程度，可以再提升和加分，分數5分 你覺得值多少分。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:35.79" id="00:05:35.79" class="lt" onclick="jumptoTime(335, this.id)"><p>我覺得值4.5分，因為味道和我們吃的不一樣，但其實滑度，比外面賣的更好。</p></a>
+</div>
+	</body>
+</html>

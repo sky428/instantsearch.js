@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>有聲！龍蝦湯爆爆飯 脆米配濃湯 輕脆惹味入口即爆 | 龍蝦 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'SAjpJ2PmlQc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>有聲！龍蝦湯爆爆飯 脆米配濃湯 輕脆惹味入口即爆 | 龍蝦 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello大家好，又係我王子同大家見面，今日會同大家分享一個龍蝦湯爆爆飯，其實亦都係我識食系列嘅一道菜，因為呢個龍蝦其實就係食完個刺身之後，淨係好大個龍蝦頭同埋個殼咁嚟熬一個湯底出嚟，如果想知點做法嘅記得Subscribe我啦!</p></a>
+				<a href="#00:00:38.94" id="00:00:38.94" class="lt" onclick="jumptoTime(38, this.id)"><p>介紹一下材料，這裏有兩隻完整的龍蝦，其實不是 只是殼，這兩隻龍蝦我之前切身，吃了中間的肉，留了頭和殼，這裏兩隻龍蝦沒有肉，差不多兩斤，這裏有草菇，六七隻左右，七粒大子，幾片薑，一匙米，一碗煮熟的飯，其他調味料，少少糖芹，芫茜 蔥，上湯 胡椒粉，和水，要怎樣做飯，先教大家如何處理爆飯，這碗白飯要拿去炸。</p></a>
+				<a href="#00:01:37.94" id="00:01:37.94" class="lt" onclick="jumptoTime(97, this.id)"><p>炸一次後放一旁，煮粥的時候再炸，讓它更脆，再倒入粥時炸一聲，就會很香口，這就是爆飯，煮粥後要怎樣做，龍蝦剁成小塊後，拿幾片薑，炒香，加上湯和水，上湯和水大約三公升，用中大火蓋上蓋子，煮差不多九個小時，等它出味，另一邊煮的時候，要處理草菇，汆水後切成粒狀，芫茜 蔥 芹菜也切粒，龍蝦湯煮好後，用筲箕隔走渣滓。</p></a>
+				<a href="#00:02:37.94" id="00:02:37.94" class="lt" onclick="jumptoTime(157, this.id)"><p>只要湯，湯放回鍋後，就要放米煮，如果喜歡粥就煮久一點，然後可以倒入帶子和草菇，再滾一滾，加芫茜 蔥 芹菜和胡椒粉調味，最後加上爆飯，爽脆的就可以吃了，希望大家喜歡我這個色食系列的龍蝦湯，事不宜遲 我們先試一試</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:13.82" id="00:03:13.82" class="lt" onclick="jumptoTime(193, this.id)"><p>嗯 很香呀，我們先舀一口粥，然後當然要爆一爆，如果你們想impress人，可以整鍋粥拿出去，把爆爆倒下去</p></a>
+				<a href="#00:03:39.82" id="00:03:39.82" class="lt" onclick="jumptoTime(219, this.id)"><p>就會更好，anyway 先試一試，聽到嗎?</p></a>
+				<a href="#00:03:49.82" id="00:03:49.82" class="lt" onclick="jumptoTime(229, this.id)"><p>這個，很ok，Huangorm，absolut，versión，punching，온，Rocket，農家的酸味和甜味都很突出，平凡中絕不平凡，希望大家喜歡，如果還想知我有什麼好介紹給大家，記得訂閱我啦!</p></a>
+</div>
+	</body>
+</html>

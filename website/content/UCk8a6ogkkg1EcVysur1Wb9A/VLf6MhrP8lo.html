@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》鹹魚白菜爆爽口肉眼筋 凱悅酒店總廚親手選料示範</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VLf6MhrP8lo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》鹹魚白菜爆爽口肉眼筋 凱悅酒店總廚親手選料示範</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.95" id="00:00:9.95" class="lt" onclick="jumptoTime(9, this.id)"><p>我是沙田海悅酒店中菜總廚何振隆師傅，我們現在帶你進去上水石河街市走走，我們通常會選擇豬里肌，即豬扒的部位，那些肉眼筋，師傅現在正在起肉眼筋，肉眼筋比較爽脆，我們去街市選擇一些好的鹹魚，例如麻油鹹魚，一定要選擇梅香鹹魚，因為它的香味比較好，奶白菜，要選擇一些比較大的，大的比較容易做，而且比較好吃。</p></a>
+				<a href="#00:00:54.95" id="00:00:54.95" class="lt" onclick="jumptoTime(54, this.id)"><p>肉眼筋回來後，我們會改成一段段，用少許糖和生粉醃一醃，然後再加少許油，拌一拌就可以了，為甚麼這次選擇麻油梅香鹹魚呢?</p></a>
+				<a href="#00:01:8.95" id="00:01:8.95" class="lt" onclick="jumptoTime(68, this.id)"><p>因為鹹魚本身的味道很香，而且白菜本身是沒有味道的，所以我們一定要選擇鹹魚，是要用梅香，令白菜的味道更加豐富，我們買回來的白菜，首先切成一小塊，然後清洗乾淨，用油起鑊，用肉眼筋輕輕地拉油，或者在鑊上放些油，煎一會，煎到半生熟，拿出來備用，我們用油起鑊，爆香鹹魚和薑，聞到味道後，再放白菜一起慢慢炒。</p></a>
+				<a href="#00:01:48.95" id="00:01:48.95" class="lt" onclick="jumptoTime(108, this.id)"><p>炒到差不多熟，期間，如果鑊太乾的時候，可以灒少許水進去，當肉眼開始熟的時候，最後再灒少許白酒，去燥香菜，令到菜的香味更加香，加少許糖和鹽就可以了，因為鹹魚本身的鹹味也差不多，所以不建議加太多鹽。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>涼瓜菜脯蛋。大家又冇得出街食飯，咁就乖乖哋學吓煮餸啦😅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NqAiiNAdedw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>涼瓜菜脯蛋。大家又冇得出街食飯，咁就乖乖哋學吓煮餸啦😅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，這個叫做涼瓜菜脯Pizza，最難的就是你把菜脯反過來，當它煮了第一次底部，這裡還有水汪汪的時候，其實你不用怕，讓它反過來，煮好的時候更加容易，用碟子蓋著鍋子反過來，相當簡單，大家學會了，這一下我手也做到，你一定做到，我手也拿不到鍋子，相當簡單，相當好吃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:53.92" id="00:00:53.92" class="lt" onclick="jumptoTime(53, this.id)"><p>涼瓜脯不是西菜，是中菜，不過西餐的中菜，非常好吃，人見人愛，人人來到都說要吃涼瓜Pizza，用水浸泡菜脯8-10條，切粒粒，切成小粒就很好，不會硬硬的，但有菜脯的味道，非常好，涼瓜就不像我炒涼瓜，要這樣切開四段，然後劈中間，劈完這些會爽一點，好吃一點，這個味道是不好吃的苦瓜味，為什麼很多人不喜歡吃苦瓜。</p></a>
+				<a href="#00:02:1.04" id="00:02:1.04" class="lt" onclick="jumptoTime(121, this.id)"><p>來到我家就喜歡吃苦瓜，因為我劈完那些，今天人少，所以4隻蛋，菜脯和涼瓜，如果喜歡大鍋的話，可以8隻蛋和涼瓜，多些菜脯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:21.92" id="00:02:21.92" class="lt" onclick="jumptoTime(141, this.id)"><p>就這樣切，切成條狀，現在煎蛋，加一點鹽，然後加些涼瓜條，再加些菜脯，這個菜脯都多得太少，不用加太多，加多一點點，OK 就是這樣，是不是很簡單，貓貓say hello，Hello，多多say hello，Hello，記得訂閱GelGel Super，按個鐘仔，還有給多點like，拜拜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:37.27" id="00:03:37.27" class="lt" onclick="jumptoTime(217, this.id)"><p>平時我們炒蛋就要很大火，паруatori，cyn кур splash</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:45.59" id="00:03:45.59" class="lt" onclick="jumptoTime(225, this.id)"><p>ged MS，quarộc</p></a>
+				<a href="#00:03:53.05" id="00:03:53.05" class="lt" onclick="jumptoTime(233, this.id)"><p>Тут，fooled，paralyzed，hon roz，classroom</p></a>
+				<a href="#00:03:44.07" id="00:03:44.07" class="lt" onclick="jumptoTime(224, this.id)"><p>olan，supervis 출 Banks</p></a>
+				<a href="#00:03:53.67" id="00:03:53.67" class="lt" onclick="jumptoTime(233, this.id)"><p>rust，år，relevance，сначала，ие</p></a>
+				<a href="#00:03:44.55" id="00:03:44.55" class="lt" onclick="jumptoTime(224, this.id)"><p>rü effective，puisque，Baby，ded</p></a>
+				<a href="#00:03:49.83" id="00:03:49.83" class="lt" onclick="jumptoTime(229, this.id)"><p>ש中ども，ipple，onnen，burger，decided，Circuit，appar schizophrenia</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.53" id="00:03:59.53" class="lt" onclick="jumptoTime(239, this.id)"><p>昨 ts，ไป，moisture，railroad，ją，abei，handmade，rápido</p></a>
+				<a href="#00:03:52.65" id="00:03:52.65" class="lt" onclick="jumptoTime(232, this.id)"><p>cipvoir，不需要太大聲，因為要慢慢煮</p></a>
+				<a href="#00:04:7.59" id="00:04:7.59" class="lt" onclick="jumptoTime(247, this.id)"><p>Dayton vaseն，poz，knight，равствho，okay，�，won，agriculture，unexpected，dop ungefähr，flooding，ры，把材料放好</p></a>
+				<a href="#00:04:23.15" id="00:04:23.15" class="lt" onclick="jumptoTime(263, this.id)"><p>蓋上蓋子，再把火調小一點，大概3-4分鐘左右，我們看看它會不會動，我們要找一個湯匙，我們先看看它會不會動，現在這個來了，底部還沒熟，大概2分鐘，現在應該可以了，好 開蓋，謝謝觀看，登登登登登登登登登登，切成像薄餅的形狀，我喜歡切成大小均勻，視乎你喜歡吃多大塊，OK，新年有什麼好介紹?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:20.18" id="00:06:20.18" class="lt" onclick="jumptoTime(380, this.id)"><p>看我的影片就知道了，當然蘇勁士多已經有一斤裝臘腸，一斤裝潤腸，今年還有禮品裝的，人人有米，年年有餘的，臘腸四條，潤腸四條，中間還有一包米，這個送禮真的大方得體，而且便宜，只售HK$388。</p></a>
+</div>
+	</body>
+</html>

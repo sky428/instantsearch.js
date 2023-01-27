@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》蛇王芬總廚任錦松 涼瓜炒河 混蛋嫩滑回甘</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'h9T7eURCG2k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》蛇王芬總廚任錦松 涼瓜炒河 混蛋嫩滑回甘</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，字幕由Amara.org社区提供，我哋攞嚟炒河，你買一隻厚增嘅粗增嘅，就好似炒得靚㗎啦，因為你攞落去就唔黐頭好黐㗎啦，呢啲幼增嘅河粉呢，多到攞嚟放湯㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:23.19" id="00:01:23.19" class="lt" onclick="jumptoTime(83, this.id)"><p>師傅先將涼瓜切頭切尾，然後開邊，刮走狼，斜刀切件，然後加少少鹽攪拌，燒紅隻鑊，見到有煙嘅時候先落油，油熱咗之後就倒起，然後將河粉落鑊，加少少雞粉，用大火推鬆河粉，之後就可以倒起放上碟，將涼瓜拖一拖水，冷排切件之後，就可以拉油或者煎香，去到金黃色左右，就可以拿起備用，將涼瓜同冷排回鑊，加少少水。</p></a>
+				<a href="#00:02:5.19" id="00:02:5.19" class="lt" onclick="jumptoTime(125, this.id)"><p>落返啲調味，炆大約三分鐘，如果你想知佢夠唔夠腍，可以攞筷子插一插，咁就可以試到佢究竟腍唔腍，將發好咗既蛋漿落鑊，將佢煮滾，將發好咗既蛋漿落鑊，開細火，師傅提大家如果蛋漿要夠滑，倒咗落鑊之後就唔好，郁佢啦，蛋漿一滾就可以放上河粉上面啦。</p></a>
+</div>
+	</body>
+</html>

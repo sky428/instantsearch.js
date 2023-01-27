@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消暑必食！麻辣拍青瓜 烹飪新手一齊學整！│《DIY食譜》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'c71sAQK5Al4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>消暑必食！麻辣拍青瓜 烹飪新手一齊學整！│《DIY食譜》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，我係Celia，今日會教大家做麻辣拍青瓜，因為天氣好熱，我都想食一啲酸酸辣辣嘅嘢，今次我呢個拍青瓜加咗麻辣醬，大家跟我一齊試下啦!</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>將青瓜洗淨後，再去頭去尾，然後將青瓜切半，再用匙羹去核，然後再用刀背壓青瓜，令它更鬆脆和入味，然後將青瓜平均切段，每段大約5cm，將青瓜放入密實袋內，放些鹽，然後封口，然後再擠密實袋，等青瓜和鹽拌勻，再放入雪櫃冷藏10分鐘，為何要加鹽在青瓜上，因為這樣就可以將多餘的水分流出來，令醬汁更入味。</p></a>
+				<a href="#00:01:3.68" id="00:01:3.68" class="lt" onclick="jumptoTime(63, this.id)"><p>我們先將蒜頭壓成蒜蓉，再加入生抽、黑醋、辣椒油、砂糖，花椒油、麻油和指天椒，然後在雪櫃取出密實袋，倒走青瓜水，再用廚房紙印乾青瓜，我們將印乾水的青瓜放入密實袋，再加調味醬汁，封口，搖勻，然後再放入雪櫃醃2小時。</p></a>
+				<a href="#00:01:32.88" id="00:01:32.88" class="lt" onclick="jumptoTime(92, this.id)"><p>這樣就完成了。</p></a>
+</div>
+	</body>
+</html>

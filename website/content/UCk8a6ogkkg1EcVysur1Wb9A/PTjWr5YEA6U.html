@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【王子煮場】沙嗲牛肉炒芥蘭 經典組合重現 | 沙嗲牛肉 | 炒芥蘭《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'PTjWr5YEA6U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【王子煮場】沙嗲牛肉炒芥蘭 經典組合重現 | 沙嗲牛肉 | 炒芥蘭《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello大家好，又係我王子同大家見面啦。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日會同大家介紹一道香港人非常鍾意嘅沙嗲牛肉炒芥蘭。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>如果鍾意的話記得訂閱我啦!</p></a>
+				<a href="#00:00:30.75" id="00:00:30.75" class="lt" onclick="jumptoTime(30, this.id)"><p>主要材料是芥蘭，今晚這餐我預一至兩人份量，所以我用四分一斤芥蘭，如果喜歡多些可以半斤或一斤，這裡有些牛肉，這些是優質牛肉，我經常說最好用豬肋骨或豬肋骨切片，為什麼呢?因為這些牛肉不用用粉醃，我直接用片牛肉醃，然後炒，吃牛肉本身的香味，適量蒜頭和乾蔥，當然要沙嗲醬，我選擇了巨樹牌沙嗲醬，因為我覺得它很香港味道。</p></a>
+				<a href="#00:01:23.05" id="00:01:23.05" class="lt" onclick="jumptoTime(83, this.id)"><p>對它的味道很有情懷，而且調味已經夠香口和重，所以不需要加太多調味，方便大家，亦需要少少油鹽和糖去煮菜，和適量黑胡椒粉，做法是如何呢?其實相當簡單，第一要用滾水加油鹽和糖去煮芥蘭，雖然這道菜叫沙嗲牛肉炒芥蘭，但其實芥蘭不需要炒，純粹用油鹽糖煮三分鐘左右，就會看到菜熟透，整個綠色是很漂亮的。</p></a>
+				<a href="#00:02:15.05" id="00:02:15.05" class="lt" onclick="jumptoTime(135, this.id)"><p>因為加了油鹽糖，是在酒家或煮菜煮菜的技巧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:47.05" id="00:02:47.05" class="lt" onclick="jumptoTime(167, this.id)"><p>MING PAO CANADA CANADA.COM，然後就上碟，用煎鍋 最好不黏底，容易黏鍋，加少少油，炒香乾蔥和蒜頭，加牛肉一起炒，然後就加一湯匙的沙嗲醬，炒好後就可以加少少黑胡椒，如果喜歡濃稠就可以加少少生粉水，做個汁然後鋪上芥蘭，這麼簡單就完成了</p></a>
+				<a href="#00:04:10.61" id="00:04:10.61" class="lt" onclick="jumptoTime(250, this.id)"><p>做個沙嗲醬，加少少沙嗲醬，做個沙嗲醬，做個沙嗲醬，希望大家喜歡我這個沙嗲牛肉炒芥蘭，其實芥蘭是完全不需要炒的，炒是炒牛肉，而一定要找一個好吃的沙嗲醬，我就建議舊宇舒盒，這個沙嗲醬，因為非常有香港情懷，如果還想知道我有什麼好東西介紹給大家的話。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:19.91" id="00:05:19.91" class="lt" onclick="jumptoTime(319, this.id)"><p>記得訂閱我啦!</p></a>
+</div>
+	</body>
+</html>

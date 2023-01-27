@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易常備菜：柚除茶漬合掌瓜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'l_f4OvwRnQY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易常備菜：柚除茶漬合掌瓜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.19" id="00:00:0.19" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello， 各位朋友， 你們好!</p></a>
+				<a href="#00:00:2.19" id="00:00:2.19" class="lt" onclick="jumptoTime(2, this.id)"><p>今天和大家用柚子茶醃漬合掌瓜，看看效果如何，首先， 合掌瓜洗淨後， 去皮，去頭去尾， 去芯， 就可以切片，很多時候， 合掌瓜可以用來煲湯，合掌瓜可以生吃，雖然有青草的味道， 但仍然甜爽脆，在東南亞， 很多人會用合掌瓜做沙律或涼拌，切好的合掌瓜， 加些鹽，除了可以將瓜內的水去除， 還可以殺青，殺青的意思是將濃味的青草味減低。</p></a>
+				<a href="#00:01:10.19" id="00:01:10.19" class="lt" onclick="jumptoTime(70, this.id)"><p>拌好後， 放置10分鐘，可以將水分逼出來，可以看到有很多水分，然後可以沖洗， 去除鹽味，將合掌瓜洗淨， 再加些水，然後可以調汁醃漬，醬汁很簡單， 只需要柚子茶，任何牌子都可以，有些人會加糖， 但我只會加柚子茶和醋，這是日本米醋，柚子茶和醋是兩份， 醋是一份，比例差不多，拌好後可以試味， 調味。</p></a>
+				<a href="#00:02:25.19" id="00:02:25.19" class="lt" onclick="jumptoTime(145, this.id)"><p>如果想更酸可以加多些醋，攪拌好後，就倒入合掌瓜，拌勻後，可以醃製兩小時或一夜，醃製好的合掌瓜可以放雪櫃兩三日，是不是很簡單呢?</p></a>
+				<a href="#00:02:57.28" id="00:02:57.28" class="lt" onclick="jumptoTime(177, this.id)"><p>除了用來醃合掌瓜，這個醬也可以用來醃白蘿蔔和青瓜，我最後放了超過一日，但味道還是很爽脆，夏天做這個涼拌就最適合，我大概醃製了一晚，醃製好後，就可以上碟，如果只有兩個人，可以做一個，吃不完的話，可以放雪櫃，像常備菜一樣，可以放三天，是不是很方便?很簡單呢?</p></a>
+				<a href="#00:03:45.28" id="00:03:45.28" class="lt" onclick="jumptoTime(225, this.id)"><p>喜歡的話，可以試做，我做了幾個涼拌菜式，可以到我的youtube頻道找來看，今次分享到此，下次再見。</p></a>
+				<a href="#00:03:59.28" id="00:03:59.28" class="lt" onclick="jumptoTime(239, this.id)"><p>拜拜!</p></a>
+</div>
+	</body>
+</html>

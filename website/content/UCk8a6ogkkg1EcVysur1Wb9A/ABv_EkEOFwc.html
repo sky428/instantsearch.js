@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>送飯必備！鹹香惹味 潮州鹵水五花腩 | 鹵水 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ABv_EkEOFwc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>送飯必備！鹹香惹味 潮州鹵水五花腩 | 鹵水 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello大家好，又係我王子同大家見面啦!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日會同大家分享一個潮州鹵水五花腩，送飯、送粥、送麵，全部都一流!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>大家知點做法，記得訂閱我啦!</p></a>
+				<a href="#00:00:24.51" id="00:00:24.51" class="lt" onclick="jumptoTime(24, this.id)"><p>材料需要什麼呢?</p></a>
+				<a href="#00:00:27.01" id="00:00:27.01" class="lt" onclick="jumptoTime(27, this.id)"><p>五花腩，五花腩大約一斤兩，即是七、八兩克左右，大小自己喜歡，多和少都是一樣做法，需要上湯加水，上湯加水要多少呢?</p></a>
+				<a href="#00:00:48.81" id="00:00:48.81" class="lt" onclick="jumptoTime(48, this.id)"><p>總之用煲一定要蓋過豬肉的份量，然後就要滷水的配料，最重要是肉桂，花椒、八角、香葉，平時可以買到一包滷水料，如果真的買不到的話，花椒、八角、香葉和肉桂不可缺少，亦要少少冰糖、豆腐隨你，薑、蔥、老抽、生抽，做法是怎樣呢?</p></a>
+				<a href="#00:01:26.81" id="00:01:26.81" class="lt" onclick="jumptoTime(86, this.id)"><p>先要汆水，我會用少少薑片、蔥和少少米酒，出完水後浸一浸冰水，讓皮和肉爽脆收一收，然後將它吸乾水，加少許油 先煎一煎五花腩，然後另一邊廂就落上湯加水，加老水料 冰糖 生抽 老抽，然後煲出汁，汁的味道就要自己試，通常要鹹味 濃味少少，然後就放五花腩，等大火滾起後就蓋上蓋，關小火燜一半小時。</p></a>
+				<a href="#00:02:50.81" id="00:02:50.81" class="lt" onclick="jumptoTime(170, this.id)"><p>然後就拿出五花腩，放涼 再吊高，吊乾水後隨時可以煲汁，希望大家喜歡這個潮州滷水五花腩，我加豆腐 因為它吸了老水汁，配飯就很棒，飯就不停帶回家，給你們一些貼士，這個滷水汁不要用完一次就丟掉，可以放冰箱下次再用，還可以滷其他東西，如果還想知我有什麼好東西介紹給大家，記得訂閱我啦!</p></a>
+</div>
+	</body>
+</html>

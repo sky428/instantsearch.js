@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>薑醋 (Ginger Vinegar Soup)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lyDLpfARwdQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>薑醋 (Ginger Vinegar Soup)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，Hello 各位朋友你們好，今天我來了我朋友家，因為她快生孩子，我想做一些薑醋給她，這次我暫時先做薑醋，沒有豬手和雞蛋，先煲 等到薑可以煮到可以，到生的時候放豬手，雞蛋的時候就沒那麼辣，所以我只做薑醋，今天就展示給大家，首先材料很簡單，顧名思義是薑醋。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.43" id="00:00:45.43" class="lt" onclick="jumptoTime(45, this.id)"><p>第一樣就是薑，我買了一些薑回來，如果在香港你們可以有很多不同種類的薑，例如老薑、泥薑、紫薑，分得很細，但我們這裡是加拿大，沒那麼多選擇給你看，我看到有薑就買，看到它肥的就買，我沒分哪種薑，因為真的沒得選擇，沒得找，第二樣就是最重要的材料，就是要甜醋，看你買哪種，我們這裡也有八珍甜醋，我買了這款。</p></a>
+				<a href="#00:01:29.43" id="00:01:29.43" class="lt" onclick="jumptoTime(89, this.id)"><p>在香港有很多不同的醬園，也有不同的甜醋，可以選擇自己喜歡的，我這裡有甜醋，除了甜醋外，我們還要有黑糯米醋，可以將甜醋和糯米醋放進去，可以令醋的味道中和，不會太酸，可以調整自己喜歡的味道，我們現在開始試做吧，首先我拿這些東西，首先是薑，這是我沒洗過的薑，我們不是只煮一個薑的菜，而是用來坐月的。</p></a>
+				<a href="#00:02:12.43" id="00:02:12.43" class="lt" onclick="jumptoTime(132, this.id)"><p>所以薑皮是會留的，首先我們拿薑後，可以刮薑皮，你可以用削的方法，我多數會用刮的方法，你選擇一些薄的匙羹來刮，刮的方法是比普通的削皮方法好很多，而且會保留很多肉，只削了薑皮的表面，首先我們要將薑皮刨出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:49.62" id="00:02:49.62" class="lt" onclick="jumptoTime(169, this.id)"><p>我們開始做，有些大粒小粒的也不要緊，先將它刨出來，一會兒再做下一個步驟，有些不太好看的就切掉，有些薑的芯不太好看的，有些可以不要，我就用另一塊薑，將薑皮曬乾，然後收起，等待生育後沖洗，雖然我未生過小孩，但聽過很多人說，這是廣東人的民間智慧，將薑皮削成小塊，然後慢慢削，將薑皮拆開，然後曬乾，待待生育後沖洗。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:36.41" id="00:04:36.41" class="lt" onclick="jumptoTime(276, this.id)"><p>用來驅風，那薑一塊塊的在這裡怎樣呢?</p></a>
+				<a href="#00:04:40.41" id="00:04:40.41" class="lt" onclick="jumptoTime(280, this.id)"><p>我們現在就要拍鬆它，經常說拍薑的拍，就是這樣拍，拍鬆整個薑，譬如這個很大塊的，我可以把它切開一半再拍也可以，太好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:3.41" id="00:05:3.41" class="lt" onclick="jumptoTime(303, this.id)"><p>今天來到這裡有助手，好多了，用這種</p></a>
+				<a href="#00:05:10.41" id="00:05:10.41" class="lt" onclick="jumptoTime(310, this.id)"><p>就這樣拍開它，拍鬆整塊薑</p></a>
+				<a href="#00:05:19.41" id="00:05:19.41" class="lt" onclick="jumptoTime(319, this.id)"><p>全部都是這樣拍，扶著，全部都是這樣拍，扶著</p></a>
+				<a href="#00:05:37.63" id="00:05:37.63" class="lt" onclick="jumptoTime(337, this.id)"><p>拍鬆它就可以了，有時候拍得太碎</p></a>
+				<a href="#00:05:42.41" id="00:05:42.41" class="lt" onclick="jumptoTime(342, this.id)"><p>Cherylemed simplestosity，hay，red，remem找，supre，선，вс，constants，She intimkok，� variation，uity，werk，finder，той，cycles，�심，Celsius，Cisco，Global，andon，Soo。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:41.79" id="00:05:41.79" class="lt" onclick="jumptoTime(341, this.id)"><p>Shin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:49.83" id="00:05:49.83" class="lt" onclick="jumptoTime(349, this.id)"><p>открыв，шиб，antis keeper，visas，associations，stora voll，16，ائ 1985，ICA，IVP，Conservative，GS，htt tiế ole，ale，aremos，dikk bureau，��，gosh，مث Particularly，字幕by索兰娅·。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:4.25" id="00:06:4.25" class="lt" onclick="jumptoTime(364, this.id)"><p>我們拍完薑之後，就來下一個步驟，我們先開一個鑊，鑊是白鑊，然後就把薑放下去，用白鑊慢慢炒，炒到薑的黃色再深一點，然後再放其他材料，現在先用白鑊烘一烘，可以把薑的水份收緊一點，我預備了一個竹鐺，可以用或不用，我看到有就用，洗乾淨後，用來吸乾水份</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:10.19" id="00:07:10.19" class="lt" onclick="jumptoTime(430, this.id)"><p>不需要太多，可以吧?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:13.19" id="00:07:13.19" class="lt" onclick="jumptoTime(433, this.id)"><p>試試看，那個可能很臭，這個不臭，有聲音，等它白鑊烘乾，很香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:0.43" id="00:08:0.43" class="lt" onclick="jumptoTime(480, this.id)"><p>謝謝觀看，看到底部有金黃色，我現在就加少許油，油不用加太多，少許就可以了，可以拍照了，不要拍我的樣子，炒至薑變金黃色就可以了，同時我又加少少鹽，加少少鹽就會將薑的辣味出嚟，等到它冇咁辣，其實唔使落咁多，少少灑上去就可以了，剛才是白黃色，現在有些金黃色，慢慢炒至金黃色就可以了，还 Prozent。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:45.03" id="00:10:45.03" class="lt" onclick="jumptoTime(645, this.id)"><p>acqu rapping，hui</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:29.65" id="00:10:29.65" class="lt" onclick="jumptoTime(629, this.id)"><p>combust verde，fin，awesome，lock，niin，zupełnie，DIE</p></a>
+				<a href="#00:10:53.39" id="00:10:53.39" class="lt" onclick="jumptoTime(653, this.id)"><p>зна，explores</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:43.05" id="00:10:43.05" class="lt" onclick="jumptoTime(643, this.id)"><p>ethanol，sted，Tig itchy，لكن，pta，ring</p></a>
+				<a href="#00:10:45.89" id="00:10:45.89" class="lt" onclick="jumptoTime(645, this.id)"><p>Cruz，uvre</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:52.31" id="00:10:52.31" class="lt" onclick="jumptoTime(652, this.id)"><p>Studios，scanning，iyi，links，�ро</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:43.03" id="00:10:43.03" class="lt" onclick="jumptoTime(643, this.id)"><p>hn，erek，Och，춰，arsi，statist stabilization，chakra，Sic incons，hammer，preserving</p></a>
+				<a href="#00:10:27.53" id="00:10:27.53" class="lt" onclick="jumptoTime(627, this.id)"><p>colleg incorporates，blame，번，fr XX，今天的，roleum，그럴，bumpy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:31.77" id="00:10:31.77" class="lt" onclick="jumptoTime(631, this.id)"><p>during，sake，bütün</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:48.05" id="00:10:48.05" class="lt" onclick="jumptoTime(648, this.id)"><p>winning，armed，Catholic，líxo，checking，셔야</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:48.77" id="00:10:48.77" class="lt" onclick="jumptoTime(648, this.id)"><p>ыч，segurança，könnt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:49.41" id="00:10:49.41" class="lt" onclick="jumptoTime(649, this.id)"><p>uet，gold，utilize，glam miracle，approximately，gospel，playful，objetivo，skies，播lasse</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:53.13" id="00:10:53.13" class="lt" onclick="jumptoTime(653, this.id)"><p>nio，surv Present disapp Rép，pipe，首先要注意，一定要把水吸走，然後就可以放竹筒，把剛才的薑放進去，將薑放上去，下一個步驟就可以加甜醋，首先我倒一些甜醋，還未調味，因為要把薑泡滿，我會確保它已經浸泡在水中，因為它只是浮起，不用擔心，然後我會加一點點黑胡椒粉，剛才我加的薑大約是1.1克。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:47.24" id="00:12:47.24" class="lt" onclick="jumptoTime(767, this.id)"><p>現在的甜醋大約是1900克，我會加兩顆番茄，因為我怕它會太酸，passليodes après</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:14.57" id="00:13:14.57" class="lt" onclick="jumptoTime(794, this.id)"><p>w，vale，arius，chlossen，ultur</p></a>
+				<a href="#00:13:16.23" id="00:13:16.23" class="lt" onclick="jumptoTime(796, this.id)"><p>self，hier，61，Collins，EOVER</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:15.71" id="00:13:15.71" class="lt" onclick="jumptoTime(795, this.id)"><p>implemented，ittee，�</p></a>
+				<a href="#00:13:20.31" id="00:13:20.31" class="lt" onclick="jumptoTime(800, this.id)"><p>� Atlas，famous，BÜNDNIS，federal，Rhodes durum，gle，差不多了，現在可以整鍋拿去煲了，煲的時候，然後我用兩隻筷子放在上面，然後用鍋蓋把水份都抹乾淨，然後放在鍋子上，現在就開始煲，用中大火煲滾，煲滾後再煲半小時，我們已經煲好第一階段，倒入水中，千萬要把水份都抹乾。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:27.38" id="00:14:27.38" class="lt" onclick="jumptoTime(867, this.id)"><p>現在已經煲滾了超過半小時，如果你想做薑醋雞蛋，可以在這個時間下，但我這次做薑醋雞蛋，是在這個時候就完成，把火關掉，放涼，然後把雞蛋放入冰箱，每星期拿出來煲一煲，中火煲滾後調小火，不用煲半小時，只需煲10分鐘至15分鐘，煲滾後醋會變稠，再加些甜醋就可以了，現在可以試味了，如果是做菜的話，現在已經可以了。</p></a>
+				<a href="#00:15:36.02" id="00:15:36.02" class="lt" onclick="jumptoTime(936, this.id)"><p>加上豬肉就可以了，我現在試一下味道好不好吃，現在有辣味，還有酸酸甜甜，但現在只是剛剛煮好，仍然比較稀，我們要慢慢等薑出味，和沒那麼辣，每次每星期煮，煮到可以順口一點，就會好味一點，今天就介紹到這裡，希望下次再介紹其他食材給你們，拜拜。</p></a>
+</div>
+	</body>
+</html>

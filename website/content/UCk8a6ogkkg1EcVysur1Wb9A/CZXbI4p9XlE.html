@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》喜來登酒店天寶閣大廚心得 蓮藕煎肉餅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CZXbI4p9XlE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》喜來登酒店天寶閣大廚心得 蓮藕煎肉餅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.44" id="00:00:8.44" class="lt" onclick="jumptoTime(8, this.id)"><p>大家好，我是香港希拉登酒店，天寶閣中菜廳總廚陳偉傑，今天教大家做年柳煎肉餅，一起去街市買東西吧，煎肉餅的時候，我們要選擇爽身的年柳，買年柳的時候要注意甚麼呢?</p></a>
+				<a href="#00:00:26.44" id="00:00:26.44" class="lt" onclick="jumptoTime(26, this.id)"><p>首先要看它的顏色，正常的年柳是啡黃黃的，這些原生的漿代表已經成熟了，這些年柳會比較爽和清甜，還有要注意有沒有不好的異味，代表已經壞了，所以不要再買了，年藕回來後，我們要先清洗一下污泥，去掉皮，有部分要切片，有部分要切粒，記得切的時候不要切太厚，也不要切得太薄，切得好，煎出來會爽脆一點，好吃一點，記得年藕片切完後，要用水浸泡。</p></a>
+				<a href="#00:01:10.75" id="00:01:10.75" class="lt" onclick="jumptoTime(70, this.id)"><p>因為年藕本身是澱粉質很重的食物，當它遇到空氣的時候，就會氧化，很快會變黑，變黑其實沒有問題，只是顏色不漂亮，我們會用水浸泡，再換幾次水，就不會有這個問題出現，現在開始處理年藕，有些貼士可以幫大家，當我們買回來的年藕放在冰箱裡十多分鐘，拿出來的時候，豬肉的表面會有一點硬，對於我們切的時候，就會方便一點，容易處理。</p></a>
+				<a href="#00:01:45.75" id="00:01:45.75" class="lt" onclick="jumptoTime(105, this.id)"><p>先切開一條條，然後再切粒，切的時候會比切的好，因為切的時候會起筋，破壞豬肉本身的口感，如果我覺得它不夠幼，我們可以切幾下，當然不要切得太過份，接下來我們會將冬菇和芫荽去切粒，我們只要芫荽的香味就可以了，葉子可以留下來煮湯，就不會浪費了，記得我們搓這個肉餅的時候，我們先加一些馬蹄粉和生粉，令豬肉結實。</p></a>
+				<a href="#00:02:29.75" id="00:02:29.75" class="lt" onclick="jumptoTime(149, this.id)"><p>搓到一定時間的時候，它開始埋好了，我們就會加預先準備的雞蛋，搓到它看不到雞蛋黃的時候，我們就可以加預先準備的年糕碎，還有一些冬菇和芫荽，和鹽和糖一起拌勻，當我們一直拌勻的時候，我們就可以搗一搗，令到它的膠質更加好，煎起來不會那麼容易鬆散，用手去搓的時候，你可以感覺到肉是散還是起膠，然後我們就會將蓮藕片隔水。</p></a>
+				<a href="#00:03:9.99" id="00:03:9.99" class="lt" onclick="jumptoTime(189, this.id)"><p>輕輕地吸乾，我們拍一點粉開始釀豬肉餡進去，首先我們放豬肉餡的時候，我們要平均地分佈在每一個角落，不要放太多，因為太多的話煎的時候就會難熟，煎的時間越久，肉餅的口感就會越粗糙，然後我們就會準備一些生粉，在邊緣滾動，生粉的作用是什麼呢，是令到豬肉不會掉出來，是黏著蓮藕，開始煎的時候不要放太多油，不要太猛火。</p></a>
+				<a href="#00:03:44.19" id="00:03:44.19" class="lt" onclick="jumptoTime(224, this.id)"><p>慢慢煎兩邊，到豬肉開始有三成熟至五成熟，我們就開始將火調高一點，加一點油，到豬肉越來越小泡，脹身，你會看到它開始熟了，我們就開大一點火，加多一點油，好像有一種煎炸的方法，煎到兩邊金黃色，當你看到它金黃色的時候，我們用火爐再開慢一點，把裡面本身的油逼出來，吃進口裡的時候就不會那麼油膩，而且會脆口一點。</p></a>
+				<a href="#00:04:19.11" id="00:04:19.11" class="lt" onclick="jumptoTime(259, this.id)"><p>和會香一點。</p></a>
+</div>
+	</body>
+</html>

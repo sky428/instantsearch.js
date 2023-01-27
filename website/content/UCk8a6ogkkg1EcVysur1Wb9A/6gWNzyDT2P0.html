@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》蝦醬蒸五花腩 滿福樓總廚示範</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '6gWNzyDT2P0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》蝦醬蒸五花腩 滿福樓總廚示範</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.68" id="00:00:7.68" class="lt" onclick="jumptoTime(7, this.id)"><p>大家好，我是香港蠻妮海景酒店，滿福樓行政總廚孫錦勝，今天教大家煮蝦醬蒸五花腩，我們一起去買菜吧，我們選擇五花腩，通常會選擇半肥瘦的，一層瘦一層肥，這樣的層次，蒸出來的五花腩，口感和香味都會好一點，如果太瘦的話，口感就會很鹹，如果太肥的話，就會很膩，通常選蝦醬，我們會選擇色澤和幼滑程度，因為我們是香港人。</p></a>
+				<a href="#00:00:45.68" id="00:00:45.68" class="lt" onclick="jumptoTime(45, this.id)"><p>所以我們都是選擇香港出的大澳蝦醬，如果你是配豬肉的話，其實我都是建議選擇淡口一點的，濃口的我們通常會用來炒菜蔬，因為菜蔬會比較淡口，本身我們蒸五花腩，肉味也會存在，如果蝦醬味太濃的話，配搭就不會那麼好，我們首先將薑和紅椒切成絲備用，五花腩我們放回來之後，如果你想切得厚薄均一的話，最好放入冰箱冷藏半小時。</p></a>
+				<a href="#00:01:32.68" id="00:01:32.68" class="lt" onclick="jumptoTime(92, this.id)"><p>令到它微微定型，我們用刀切的時候，就會切得很均勻，厚薄就會均勻，不會蒸出來有厚有薄，有生有熟，影響口感，我們切完之後，加半匙蝦醬下去拌勻，加少許糖，因為五花腩是那麼薄的，我們拌勻之後，也不用特別浪費時間去醃它，它的味道應該都可以入味，灑少許生粉，再拌勻，再拌勻薑絲，之後就可以鋪在碟子上，當然不要疊得太厚。</p></a>
+				<a href="#00:02:9.68" id="00:02:9.68" class="lt" onclick="jumptoTime(129, this.id)"><p>三分一疊就夠了，疊完之後，我們灑上紅椒絲，就可以拿去蒸了，大約蒸五分鐘就熟了，熟了之後，我們再加少許豉油提鮮，就可以完成了。</p></a>
+</div>
+	</body>
+</html>

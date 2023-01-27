@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》生猛桂花魚 變成八寶生拆魚蓉羹 凱悅酒店總廚示範</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'cRk_RZ06AUs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》生猛桂花魚 變成八寶生拆魚蓉羹 凱悅酒店總廚示範</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:11.19" id="00:00:11.19" class="lt" onclick="jumptoTime(11, this.id)"><p>我是沙田十八葱菜总厨何振隆师傅，我现在带你去上水涮鱼街市买菜，今天我们介绍一个生煮八宝鱼蓉羹，我们选择的是桂花鱼新鲜油水，桂花鱼是淡水老鼠斑，肉比较鲜味和甜，桂花鱼是生猛，而且鱼身很完美，不会有损伤，鱼肉很完美，这条可以，腐竹是用生鲨鱼羹切丝用的，我们买了新鲜的腐竹，我們把桂花魚從頭部和腩部切開。</p></a>
+				<a href="#00:01:7.38" id="00:01:7.38" class="lt" onclick="jumptoTime(67, this.id)"><p>從尾部取出魚肉，我們再看看大骨，取出大骨時，我們避開了骨位，到時拆出來的魚肉就不會有骨癌，魚肉我們要用生粉拌勻，為甚麼要這樣做呢?</p></a>
+				<a href="#00:01:24.38" id="00:01:24.38" class="lt" onclick="jumptoTime(84, this.id)"><p>因為魚肉會更滑，鎖住魚肉的鮮味，煲魚湯時，我們要留意魚肉和魚腩的位置，要煎透，像煎到金黃色，再用大火煮，為甚麼呢?</p></a>
+				<a href="#00:01:42.38" id="00:01:42.38" class="lt" onclick="jumptoTime(102, this.id)"><p>因為要用大火才能把骨香味取出來，如果煎不透魚肉，可能有魚腥味，然後用大火煮，再加其他配料一起煮，大約半小時至45分鐘就可以了，煮好後，我們可以用隔渣，隔渣可以用來做生擦魚蓉羹，我們首先把浸發好的竹笙和白貝木耳，鮮腐竹、聖瓜、甘筍、陳皮切成絲，還有桂花魚也是切成絲，我們把魚湯和所有配料混合。</p></a>
+				<a href="#00:02:28.38" id="00:02:28.38" class="lt" onclick="jumptoTime(148, this.id)"><p>調味，然後勾芡，湯就完成了，最後再加上一些，藍仁、芫茜和金華火腿絲就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:6.38" id="00:03:6.38" class="lt" onclick="jumptoTime(186, this.id)"><p>喜歡的話請訂閱支持啊。</p></a>
+</div>
+	</body>
+</html>

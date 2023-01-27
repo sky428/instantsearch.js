@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》澳門永利宮 鮮蟹肉勝瓜夜香花煎蛋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jAUQMejKpU4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》澳門永利宮 鮮蟹肉勝瓜夜香花煎蛋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA.COM，大家好，我是澳門永利工行政總廚譚國峰，今天我們會去澳門其中一個街市，也很有名，可以買到好海鮮的，就是下環街市，我們會教大家做鮮蟹肉椰香花聖瓜煎蛋，我們現在去買菜吧，如果是肉蟹，一定要重，現在拿起手要生猛，如果動也不想動，已經差一點，可以叫慢抓蟹。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:40.23" id="00:00:40.23" class="lt" onclick="jumptoTime(40, this.id)"><p>我們挑蟹或買肉蟹，斤幾重的蟹雖然是淡淡肉，但半斤上下的肉蟹，口感比較嫩滑，如果有養殖的，顏色是暗啞的，你看這些顏色，它是深綠之餘帶少許金黃色，你看它的殼，因為它在天然環境生存，所以殼都很高質，現在這些比較幼身，不是太大條，嫩綠，而且瓜皮的節不會很花，這樣就已經很漂亮，拿起覺得它嫩，如果是老的瓜，就硬乎乎的。</p></a>
+				<a href="#00:01:40.83" id="00:01:40.83" class="lt" onclick="jumptoTime(100, this.id)"><p>這款叫椰香花，你看到它是硬橙的，顏色沒有黑點，乾爽的，不會黏黏的，已經很新鮮，廣東人有不同的做法，用來煮湯，煮肉片湯、蛋花，或者很傳統的冬瓜盅，首先我們先處理這隻肉蟹，我們會在蟹中間下刀，將它的離殼和蟹鉗一起斬開，然後用厚刀削走蟹鰓，還有蟹肺和蟹心，連同蟹蓋，清潔好後，我們就可以拿來蒸3至4分鐘。</p></a>
+				<a href="#00:02:44.43" id="00:02:44.43" class="lt" onclick="jumptoTime(164, this.id)"><p>同一時間處理聖瓜，聖瓜去頭尾，用薯仔刨皮，刨掉表面的皮，一開四，去掉一部分囊，切成大約一吋長的細條，至於野香花，我們買回來，除了去掉硬的花莖外，我們只要成形的花蓮，如果想食得更精緻，可以去掉每一朵花的花托，只要花瓣的部分，這樣就是食得最嫩的方法，然後切好蔥花，一齊備用，這時蟹已經蒸好，我們就將蒸熟的蟹拆肉。</p></a>
+				<a href="#00:03:39.43" id="00:03:39.43" class="lt" onclick="jumptoTime(219, this.id)"><p>首先用剪刀將蟹蓋的花膏挑起，然後蟹身，我們會逐隻腳用剪刀去咬出來，然後剩下的蟹身，會用剪刀在中間，逐格逐格的蟹殼剪斷，可以分成兩半，然後會在蟹身，逐格逐格的挑出來，至於蟹腳，會用剪刀去咬出來，裡面的細骨不會留在蟹肉裡，至於蟹鉗，輕輕剝碎蟹殼，很容易就可以，將裡面的四屆蟹肉取出來，燒熱鍋。</p></a>
+				<a href="#00:04:29.43" id="00:04:29.43" class="lt" onclick="jumptoTime(269, this.id)"><p>用兩茶匙的油，只煎香蟹肉，這樣就可以做到提香去腥的作用，我們首先打蛋，然後就加調味，再加上聖瓜，野香花，蟹肉，這樣攪勻，將蛋將平均鋪在鍋上，用中小火慢慢煎，煎到另外一邊是金黃色硬身，然後就將這幅煎蛋反轉，同樣煎另外一邊至金黃色，這樣就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:38.43" id="00:05:38.43" class="lt" onclick="jumptoTime(338, this.id)"><p>MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

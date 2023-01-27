@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>咖喱控必學！惹味乾炒咖喱雞 星馬料理港式味道  | 港式咖喱 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Wrbn2jkmcYg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>咖喱控必學！惹味乾炒咖喱雞 星馬料理港式味道  | 港式咖喱 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello大家好，又係我王子同大家見面啦。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日會同大家分享一道乾炒咖喱雞。</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>如果想知點做，記得訂閱我啦!</p></a>
+				<a href="#00:00:21.37" id="00:00:21.37" class="lt" onclick="jumptoTime(21, this.id)"><p>材料需要什麼呢?</p></a>
+				<a href="#00:00:23.37" id="00:00:23.37" class="lt" onclick="jumptoTime(23, this.id)"><p>我這裡有半隻雞，因為我這裡是2-3人份量，如果多人食的話可以用一隻雞，這裡有咖喱粉和黃薑粉，黃薑粉就很少，咖喱粉我這裡是半湯匙左右，咖喱醬也要，咖喱醬就要差不多兩湯匙，我選擇了巨樹牌咖喱，加油咖喱，為什麼我會選擇這個咖喱呢?</p></a>
+				<a href="#00:00:55.37" id="00:00:55.37" class="lt" onclick="jumptoTime(55, this.id)"><p>因為我吃這道菜，在某餐廳是一間香港很港式的咖喱屋，我覺得加巨樹牌咖喱，就會有港式的味道，符合我們香港人，這裡有炸了的乾蔥，還有四分之一的洋蔥切絲，這裡有新鮮乾蔥、蒜頭，如果你喜歡的話可以加辣椒，一條香茅、一條番蘭葉，幾塊檸檬葉，適量的魚露、紹興酒和少許椰奶，做法是怎樣呢?</p></a>
+				<a href="#00:01:37.37" id="00:01:37.37" class="lt" onclick="jumptoTime(97, this.id)"><p>雞就要先醃了，加少許酒、瑤椒粉、魚露、豉油、豆粉、生粉，攪拌好，放在冰箱最少一個多小時，讓它入味，然後就要拿出來，我會切大塊一點，因為我吃的那時候，在某咖喱屋是大塊的，大小就視乎你們的喜好，我會先下鑊、拿油，爆香香茅、番蘭葉、蒜頭和乾蔥，OK，然後就連同雞一起炒香，然後就倒少少紹興酒，紹興酒主要是揮發香味。</p></a>
+				<a href="#00:02:38.92" id="00:02:38.92" class="lt" onclick="jumptoTime(158, this.id)"><p>然後就關小火 蓋上蓋子，8-10分鐘 等雞煮熟，然後就打開蓋子，之後就加其他材料，就是咖哩粉、黃薑粉、咖哩醬，然後加入洋蔥和魚露，先炒香，之後才加少少椰奶，加上乾蔥碎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:25.18" id="00:03:25.18" class="lt" onclick="jumptoTime(205, this.id)"><p>就不得了了，希望大家喜歡我這道，好惹味的乾炒咖哩雞，這道菜一點都不複雜，但我亦可以和大家說，要小心選擇，一個好味的咖哩醬配搭，我就選擇了這道菜，如果還想知我有什麼好東西，介紹給大家的話，歡迎訂閱我的頻道。</p></a>
+</div>
+	</body>
+</html>

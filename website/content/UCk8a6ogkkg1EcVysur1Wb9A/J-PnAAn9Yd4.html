@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Son姐教你自製脆嫩鹹餺餦  I Son級廚房 I 新手輕鬆煮 I 辣媽CEO 張慧敏 Son姐</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'J-PnAAn9Yd4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Son姐教你自製脆嫩鹹餺餦  I Son級廚房 I 新手輕鬆煮 I 辣媽CEO 張慧敏 Son姐</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 我係辣媽CEO 張慧敏，今日同大家示範呢個呢就係經典懷舊菜式就係煎餐餐啦。</p></a>
+				<a href="#00:00:12.31" id="00:00:12.31" class="lt" onclick="jumptoTime(12, this.id)"><p>如果在家做難不難呢?</p></a>
+				<a href="#00:00:14.83" id="00:00:14.83" class="lt" onclick="jumptoTime(14, this.id)"><p>容易到一個點，你只需要的東西就是麵粉，這個就是普通的，在中文就會叫中筋麵粉，這裡有240克的麵粉，這裡40克的糯米粉，一般糯米粉都可以，只要把糯米粉和麵粉混合，各一茶匙鹽和糖，混合，兩隻雞蛋，你會看到它好像有些一粒粒的，是很正常的，但這個我不建議大家用電動的，不需要，因為我們不是要做蛋糕，要打空氣。</p></a>
+				<a href="#00:00:51.11" id="00:00:51.11" class="lt" onclick="jumptoTime(51, this.id)"><p>我們只需要把整件事，拌得均勻就可以了，大概有500克的水，如果你喜歡薄餐很薄，你就可以加多一點水，令粉漿稀一點，你不要一次過加很多水，如果你一次過加很多水，你的粉團一定會有粒粒，但如果像我這樣，先加兩隻雞蛋，然後慢慢加水，一直攪拌，你做出來的粉團，可以夠膽跟你說很滑，我覺得這個的濃稠度，就差不多了。</p></a>
+				<a href="#00:01:27.91" id="00:01:27.91" class="lt" onclick="jumptoTime(87, this.id)"><p>所以你剛才聽到，240克的麵粉，差不多是一杯麵粉，有多一點，你會覺得好像很多，但如果你現在這樣煎，如果我這個鑊這樣，其實你煎多快就沒有了，蝦米，另外一個材料，如果這個蝦米，你買的這個，和我這個小小的，基本上是不需要再切，如果是這個份量，我不用加這麼多，我想加一半應該都夠，另外我會切韭菜和蔥，切韭菜和蔥沒有什麼技巧。</p></a>
+				<a href="#00:02:5.35" id="00:02:5.35" class="lt" onclick="jumptoTime(125, this.id)"><p>不過如果你想它好吃，盡量切幼細一點，第一可以煎得香，如果切得太大粒，否則韭菜生的話，會有辛辣不好吃，雖然我喜歡吃韭菜，但我都沒有加所有的原因，因為它是薄餐，不是韭菜餅，所以我會加些蔥花，我們燒紅了的鑊，然後加油，不要等油太滾的時候就加，我大概加一匙，你可以試一下，試一下加一匙，煎薄餐不需要擔心它不熟。</p></a>
+				<a href="#00:02:44.62" id="00:02:44.62" class="lt" onclick="jumptoTime(164, this.id)"><p>因為它始終很薄，所以煎的時候，我現在全程大概用六七度的火，油不可以不煮，如果油不熱，它又煎不香不脆，現在聞到很香，煎薄餐煎到像我們這個都算是極致，這個就是一般在酒樓看到的，這個比一般來說厚一點的以前酒樓版，這個就是我家以前一向都做的厚版，我自己最喜歡的就是厚版，大家也可以去試一下，你們喜歡的是哪一個版本。</p></a>
+				<a href="#00:03:23.74" id="00:03:23.74" class="lt" onclick="jumptoTime(203, this.id)"><p>但不要緊，最重要是什麼呢，跟著一起做，這個就是懷舊經典煎薄餐</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:41.27" id="00:03:41.27" class="lt" onclick="jumptoTime(221, this.id)"><p>喜歡的話請訂閱支持啊。</p></a>
+</div>
+	</body>
+</html>

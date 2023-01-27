@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》香脆煎焗魚嘴 滿福樓總廚公開食譜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'mXLEnugP8Yo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》香脆煎焗魚嘴 滿福樓總廚公開食譜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，我係香港萬麗海景酒店滿福樓行政總廚孫錦勝。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>今日教大家煮一個煎焗魚嘴。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>我地依家一齊去買餸啦。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>咁煎焗魚嘴點解我地要揀大魚頭呢?</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>因為大魚頭肉厚同埋韻多，軟骨位亦都係特別多肉嘅。</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>我地揀大魚頭要睇佢新鮮，新鮮又好食。</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>同埋佢帶血好多時都係新鮮開出嚟嘅。</p></a>
+				<a href="#00:00:45.18" id="00:00:45.18" class="lt" onclick="jumptoTime(45, this.id)"><p>魚頭先開邊，將中間厚位的魚頭骨再切開一刀，令兩邊均勻厚，腮位邊位都是魚骨，亦都幫它斬齊，落少少鹽、少少糖、胡椒粉，拌一拌，大約醃十分鐘，十分鐘後，落半隻雞蛋，再拌一拌，拌勻後，落粉，之後拿去煎，為何要落生粉呢?</p></a>
+				<a href="#00:01:21.18" id="00:01:21.18" class="lt" onclick="jumptoTime(81, this.id)"><p>有兩個好處，第一，鎖水效果，第二，令魚嘴面或底部香脆，煎的時候，將煎鍋燒紅，然後掃油，將魚嘴面有眼的部位先煎，因為魚嘴不想煎的時候反來反去，令它可能會爛，散開，我們煎完一面，煎另一面，煎到它起焦，香脆，這個過程大約煎到兩、三成熟，在煎魚骨底之前，我們會灑些胡椒粒，胡椒粒最好是自己買些白胡椒，回來打碎。</p></a>
+				<a href="#00:02:8.18" id="00:02:8.18" class="lt" onclick="jumptoTime(128, this.id)"><p>因為這樣原粒胡椒打碎，香味是同，買回來白胡椒碎，是差很遠的，在煎底部的時候，我們就可以將火調到中小火，如果是一斤魚頭，大約煎八分鐘左右，我們再反看它起焦和香脆，煎到七分鐘的時候，我們就加薑、蒜、蔥一起，煎一分鐘，令魚嘴提升香味，薑、蔥、蒜的味道。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fan Dining：黑毛豬豬油撈飯│一日YouTuber挑戰│「超班實習生」</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0Te51Pkwcss',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Fan Dining：黑毛豬豬油撈飯│一日YouTuber挑戰│「超班實習生」</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.99" id="00:00:0.99" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎跟飯太一起friend dining，我們今天要做的是黑毛豬豬油撈飯，為什麼我們要做一個很多人都煮過的飯呢?</p></a>
+				<a href="#00:00:11.99" id="00:00:11.99" class="lt" onclick="jumptoTime(11, this.id)"><p>因為這個飯有三個我，如果你們想知道的話，我們一起去片，我們今天回到飯太廚房，我們今天做的黑毛豬豬油撈飯的三套是什麼呢?</p></a>
+				<a href="#00:00:31.99" id="00:00:31.99" class="lt" onclick="jumptoTime(31, this.id)"><p>第一，我們最重要的是米，因為米是飯太的配方，這個米是新米，舊米，撈出來的效果是很配合豬油撈飯，我們現在先洗米，然後幫它蒸，然後我們要炸豬油渣，豬油渣就是用豬板油，豬板油有什麼好呢?</p></a>
+				<a href="#00:01:2.99" id="00:01:2.99" class="lt" onclick="jumptoTime(62, this.id)"><p>它出來的效果是會白一點，油香會多一點，油量也會多一點，所以我們用豬板油來做，這是第二個好，第三個好就是用西班牙門口豬肉，吃橡果的門口豬肉，它的韌度是有一點點，另外就是它配這個飯，豬味的香味是差很遠的，我們現在開始煮了，我們現在就炸豬油，炸豬油其實也有很多方法，但是我們今天容易，我們開始把豬油放進去。</p></a>
+				<a href="#00:01:45.99" id="00:01:45.99" class="lt" onclick="jumptoTime(105, this.id)"><p>記住我們一定要冷鑊，不可以熱，然後我們先把它汆水，這個步驟很重要，因為如果你不汆水，那些雜質，你一會兒會看到很多雜質浮上來，如果你不汆水的話，它炸出來的豬油，它不能香，還有它會有一陣很豬的味道，很噏的味道，就是豬的噏的味道，所以這個步驟其實很重要，我們汆水，水滾了之後，我們大概等一兩分鐘，其實可以拿起來。</p></a>
+				<a href="#00:02:20.99" id="00:02:20.99" class="lt" onclick="jumptoTime(140, this.id)"><p>汆水之後我們就可以炸，也是冷鑊下鑊，千萬不要熱鑊，如果熱鑊的話它就會...</p></a>
+				<a href="#00:02:31.93" id="00:02:31.93" class="lt" onclick="jumptoTime(151, this.id)"><p>很容易燒焦，還有一陣臘味，就不好吃了，很快就出很多油，你看油多漂亮，很清淡，還有很多油，這個時候我們放一點鹽，這裡大概是半茶匙的鹽，放在豬油裡，炸到差不多了，差不多就可以了，最後上...</p></a>
+				<a href="#00:03:2.93" id="00:03:2.93" class="lt" onclick="jumptoTime(182, this.id)"><p>起鑊的時候，我們就開大火，將它炸大約十秒，然後就立刻拿起，就可以了，你們聽到聲音都聽到，它在那個...</p></a>
+				<a href="#00:03:16.93" id="00:03:16.93" class="lt" onclick="jumptoTime(196, this.id)"><p>什麼那裡，都已經有一點...</p></a>
+				<a href="#00:03:18.93" id="00:03:18.93" class="lt" onclick="jumptoTime(198, this.id)"><p>脆脆的聲音，接著我們就，切了這塊紅豬，拌勻它，你看紅豬的肉花很漂亮，很...很好，你看很漂亮，我們切片，不要切太厚，盡量切薄一點，現在放南乳醬，這個南乳醬很香，不要放太多，如果太多就很鹹，我們就放這個南乳醬，我們煎這個豬肉的時候，要逐塊放下去煎，不然它會黏著，這樣黏著，煎出來的效果就不好，油不要太滾。</p></a>
+				<a href="#00:04:9.93" id="00:04:9.93" class="lt" onclick="jumptoTime(249, this.id)"><p>太滾下去，很快就燶了，太乾也不好吃，好香啊，半煎炸的形式</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.93" id="00:04:28.93" class="lt" onclick="jumptoTime(268, this.id)"><p>差不多熟了，本集完畢，也請記得分享出去並按一個讚哦 才能收到最新消息哦 才能收到最新影片通知哦，飯已經蒸好， 拿出來， 趁熱一定要趁熱，盛好，首先放豬油，放豬肉，放秘製醬油，這個醬油特別留意，我們用兩份生抽， 一份老抽，再加少許酒，拌飯一起吃， 飯就一傳百，麵放上乾蒜和花生和蔥，重點是放上炸豬油渣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:54.12" id="00:05:54.12" class="lt" onclick="jumptoTime(354, this.id)"><p>這個也是靈魂，大家喜歡嗎?</p></a>
+				<a href="#00:06:2.12" id="00:06:2.12" class="lt" onclick="jumptoTime(362, this.id)"><p>我們一起試食吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:6.12" id="00:06:6.12" class="lt" onclick="jumptoTime(366, this.id)"><p>剛才拿機時已經好多次了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.12" id="00:06:10.12" class="lt" onclick="jumptoTime(370, this.id)"><p>我們試食吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:15.12" id="00:06:15.12" class="lt" onclick="jumptoTime(375, this.id)"><p>好香，我已經感到香味，豬肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:27.12" id="00:06:27.12" class="lt" onclick="jumptoTime(387, this.id)"><p>米是否很好吃?，它是軟熟的， 但有嚼勁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:34.12" id="00:06:34.12" class="lt" onclick="jumptoTime(394, this.id)"><p>飯的質感不同，因為形狀不同，有些較長， 有些較圓，咬下去是有質感的，你又添飯了，對嗎?</p></a>
+				<a href="#00:06:58.21" id="00:06:58.21" class="lt" onclick="jumptoTime(418, this.id)"><p>對， 又添飯了，如果大家喜歡這條影片，記得按讚和分享</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:7.45" id="00:07:7.45" class="lt" onclick="jumptoTime(427, this.id)"><p>還有， 我第一次學做，有甚麼做得不好的， 大家分享一下</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:13.05" id="00:07:13.05" class="lt" onclick="jumptoTime(433, this.id)"><p>記得在下面留言告訴我們有甚麼做得不好，好，沒有， 不知道有人說，哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:19.93" id="00:07:19.93" class="lt" onclick="jumptoTime(439, this.id)"><p>瘋了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:21.93" id="00:07:21.93" class="lt" onclick="jumptoTime(441, this.id)"><p>好， 就這樣，拜拜。</p></a>
+</div>
+	</body>
+</html>

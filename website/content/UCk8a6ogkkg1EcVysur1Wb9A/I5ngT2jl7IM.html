@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》菜式昇華大計之特製豉油雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'I5ngT2jl7IM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》菜式昇華大計之特製豉油雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>我今日嘅嘉賓Jerry C，認識你係因為成日喺電視度見到你係咁咬手嗰啲廣告，今日就會做一個豉油雞，我平時喺出面食嘅豉油雞就好多我唔係咁鍾意，因為偏甜，我今日就會用我自己嘅配方煮一個我自己嘅豉油雞，咁當然就係一定要有隻雞啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>咁跟住呢就有啲蔥啦，芫茜啦，薑啦，咁點解今日會整豉油雞呢，其實呢原本我就唔識煮豉油雞，你唔記得你前年生日嗰陣時迫我一定要煮豉油雞，因為我細個係好鍾意食豉油雞，但係呢因為大過咗好少返屋企食飯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>所以上次你話你會煮飯嘅時候我就問你可唔可以整豉油雞就係咁解啦，Ok， let's start 好唔好呀，我哋一開始就係煮豉油雞，第一樣嘢就要個水滾你同我掟啲蔥落去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>成棵掟落去，係成棵掟落去，我印象中我生日你整俾我嗰隻豉油雞係</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>我食過最好食嘅一個豉油雞，我唔係吹水，嗰個味道係好豐富嘅，因為佢又鹹鹹得嚟又甜甜地，但又未去到係一味甜，咁同埋你整嗰隻雞呢係好滑嘅，咁嗰個皮呢又唔會話好乾，咁所以咬落去又係好爽，咁我哋就唔會話好爽，好乾咁所以咬落去呢又係好爽，咁呢個係我印象中嗰個豉油雞嘅味道嚟嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:24.00" id="00:01:24.00" class="lt" onclick="jumptoTime(84, this.id)"><p>咁我哋而家隻雞呢就要浸落呢個水度，因為滾水呢就去咗佢嗰啲即係血腥味呀，咁你唔好理冰鮮淨新鮮都有血味㗎啦，咁同埋呢你見到佢開始呢即係有少少啲血水油呀嗰啲出嚟，咁我哋就係最主要就係想pick咗佢呢度，所以浸一陣已經得㗎喇，浸一陣啦咁你又拎起佢啦，要做咗呢個步驟呢就將隻雞呢擺落個冰水度，咁佢嗰個皮呢就會爽脆啲。</p></a>
+				<a href="#00:01:54.64" id="00:01:54.64" class="lt" onclick="jumptoTime(114, this.id)"><p>轉一轉佢先，擺埋佢一邊，咁我哋就可以開始做，嗰個汁喇，第一樣嘢就落油先啦，咁你落油之前開個爐先啦，落幾多呀?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:5.72" id="00:02:5.72" class="lt" onclick="jumptoTime(125, this.id)"><p>落多少少啦，自己去馬來西亞食過一種雞叫做，洞篤雞，洞篤雞，咁咩叫洞篤雞呢，係用一個燒嘅方法去整嘅，所以啲皮係好脆嘅，咁然後佢燒完成隻之後呢，就搵一個鐵架就將隻雞掛起佢，咁成隻上枱嘅時候呢，隻雞就企咗喺度咁，咁好唔好食呀?</p></a>
+				<a href="#00:02:28.72" id="00:02:28.72" class="lt" onclick="jumptoTime(148, this.id)"><p>我覺得麻麻地啦，佢係得意啲啦嗰個叫洞篤雞，咁但係你話食雞都係廣東省食好味啲嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:34.32" id="00:02:34.32" class="lt" onclick="jumptoTime(154, this.id)"><p>好啦咁你炒到而家嗰個，好香呀而家，係囉香味啦，薑蔥開始有少少窿窿地啦，ok我哋落啲上湯啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:42.88" id="00:02:42.88" class="lt" onclick="jumptoTime(162, this.id)"><p>咁個汁咪好多囉如果咁大盤汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:45.48" id="00:02:45.48" class="lt" onclick="jumptoTime(165, this.id)"><p>因為我係成隻雞浸落去，我唔係即係有一啲人嘅做法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:49.48" id="00:02:49.48" class="lt" onclick="jumptoTime(169, this.id)"><p>啲人煎㗎咋嘛煎下煎下</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:51.48" id="00:02:51.48" class="lt" onclick="jumptoTime(171, this.id)"><p>其實佢哋係碌呀，佢哋鍾意碌，咁我就prefer成隻雞浸落去嘅，好啦佢滾啦而家，咁我哋呢就將佢倒落呢個高嘅煲入面，咁我哋而家開始呢就要加呢個，豉油呀老抽呀生抽咁樣，一定係個生抽多過老抽嘅，老抽主要係用嚟出色嘅啫，你差唔多成支倒晒落去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:13.48" id="00:03:13.48" class="lt" onclick="jumptoTime(193, this.id)"><p>成支倒晒落去呀?，你倒啦，好咁倒完呢個生抽我哋就倒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:17.48" id="00:03:17.48" class="lt" onclick="jumptoTime(197, this.id)"><p>老抽你倒三分一支先，OK好，好咁樣先啦，老抽OK，跟住要加水，倒幾多你話我聽下，OK等佢滾一滾先，滾啦嗰汁，好啦咁我哋而家呢就要落呢咋嘢啦，肉桂係咪咁呀?</p></a>
+				<a href="#00:03:38.48" id="00:03:38.48" class="lt" onclick="jumptoTime(218, this.id)"><p>一支夠呀，花椒擺上去，擺上去 兩粒啫，好 香葉 擺晒落去啦，花椒我哋倒晒落去，會唔會好鹹㗎?你試下先啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:52.50" id="00:03:52.50" class="lt" onclick="jumptoTime(232, this.id)"><p>有些很鹹，我知道，要加冰糖</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:57.54" id="00:03:57.54" class="lt" onclick="jumptoTime(237, this.id)"><p>先放一粒大的，我告訴你調汁的時候，沒有一個完美的方法，到這些步驟的時候，你自己加 加完之後再試，試到你認為味道適合，這樣就可以了，差不多了，等一下 等一下，有一樣東西很重要的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:18.66" id="00:04:18.66" class="lt" onclick="jumptoTime(258, this.id)"><p>你不記得我之前說玫瑰露，像紹興酒的朋友</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:22.66" id="00:04:22.66" class="lt" onclick="jumptoTime(262, this.id)"><p>不是 玫瑰露是玫瑰露，是不是整個汁香很多，所以煮食一定要加玫瑰露，然後我現在加我的神秘食材，是什麼 你看那邊，我可以告訴你，行了，放了嗎 行了，你拿一隻雞來，我們就放它進汁，我喜歡底部的，你一定要這樣推一推，讓汁都進到中間，不然中間就入不到味，你要等一等它再滾起，好了 滾起了，按它。</p></a>
+				<a href="#00:04:56.66" id="00:04:56.66" class="lt" onclick="jumptoTime(296, this.id)"><p>我們要關火浸，滾起之後就關火浸，開蓋，浸多久，七到八個小時，你通常拿起它之後，你放了出來，顏色會再深一點，平時會掛著，這條頸位，然後這樣掛起，但這裡不能掛，唯有放涼，切雞一定要放涼，才好切，不然皮就會爛，肉也會散，自己也會辣手</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:48.38" id="00:05:48.38" class="lt" onclick="jumptoTime(348, this.id)"><p>忍不住了，好想馬上吃，行行行，還未可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:51.10" id="00:05:51.10" class="lt" onclick="jumptoTime(351, this.id)"><p>為甚麼，先加多一點東西，我這裡有三支很好的元朗製的豉油，我會將它加進我剛才煮豉油雞的汁，我會每樣都加少許，嗯，好香，可以倒下去，因為也淋上熱隻雞，是不是顏色更好看，試吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:14.14" id="00:06:14.14" class="lt" onclick="jumptoTime(374, this.id)"><p>嗯，雞肉很滑，上一次已經是兩三年前吃，這次吃我覺得味道更好，很滑，我加了一個神秘食材</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:26.14" id="00:06:26.14" class="lt" onclick="jumptoTime(386, this.id)"><p>你猜到是甚麼嗎，我起初想是否加了一些金華火腿</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:30.14" id="00:06:30.14" class="lt" onclick="jumptoTime(390, this.id)"><p>跟水果有一點關係，橙皮那些</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:35.14" id="00:06:35.14" class="lt" onclick="jumptoTime(395, this.id)"><p>差不多，類似，因為吃到好像有些果皮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:41.14" id="00:06:41.14" class="lt" onclick="jumptoTime(401, this.id)"><p>我發覺原來很多湯，你去炆食物，加了果皮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:46.14" id="00:06:46.14" class="lt" onclick="jumptoTime(406, this.id)"><p>將整個味道和香味提升了，其實除了提升之外，果皮也很有益，果皮有化痰，是很多益處的一個成分，五分你會給多少分呢，上次吃我會給4.5分，這次你改良過之後</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:6.14" id="00:07:6.14" class="lt" onclick="jumptoTime(426, this.id)"><p>我會給4.5分，加上你的心思，真的可以拿到滿分，謝謝，這個真的很好吃，我真的從來沒有拿過滿分</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:15.14" id="00:07:15.14" class="lt" onclick="jumptoTime(435, this.id)"><p>謝謝你，出去給你一隻雞，謝謝，字幕 by 蘇顯榮。</p></a>
+</div>
+	</body>
+</html>

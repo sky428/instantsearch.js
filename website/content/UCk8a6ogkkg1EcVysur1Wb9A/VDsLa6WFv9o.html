@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[王子一分鐘貼士] 5個步驟 零失敗 溏心蛋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VDsLa6WFv9o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[王子一分鐘貼士] 5個步驟 零失敗 溏心蛋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:30.98" id="00:00:30.98" class="lt" onclick="jumptoTime(30, this.id)"><p>одним gefähr seniors，significantly，查</p></a>
+				<a href="#00:00:32.76" id="00:00:32.76" class="lt" onclick="jumptoTime(32, this.id)"><p>cos，жен</p></a>
+				<a href="#00:00:30.96" id="00:00:30.96" class="lt" onclick="jumptoTime(30, this.id)"><p>полне，äsident，vir possa，olut</p></a>
+				<a href="#00:00:36.18" id="00:00:36.18" class="lt" onclick="jumptoTime(36, this.id)"><p>ерт，Sprinkle，Eating，Präsident，� MARY</p></a>
+				<a href="#00:00:47.04" id="00:00:47.04" class="lt" onclick="jumptoTime(47, this.id)"><p>Personal，�ZZ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:39.66" id="00:00:39.66" class="lt" onclick="jumptoTime(39, this.id)"><p>alies，Mystery</p></a>
+				<a href="#00:00:30.22" id="00:00:30.22" class="lt" onclick="jumptoTime(30, this.id)"><p>neuen，by，ставля，illustrated，tbsp</p></a>
+				<a href="#00:00:37.38" id="00:00:37.38" class="lt" onclick="jumptoTime(37, this.id)"><p>touching，mock，ерм</p></a>
+				<a href="#00:00:34.38" id="00:00:34.38" class="lt" onclick="jumptoTime(34, this.id)"><p>borne，min</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:47.62" id="00:00:47.62" class="lt" onclick="jumptoTime(47, this.id)"><p>вижу，Commercial，sliding，garden，sugars，Diese day，� AN rock，petites</p></a>
+				<a href="#00:00:48.72" id="00:00:48.72" class="lt" onclick="jumptoTime(48, this.id)"><p>athi，at office，surrender，disl，dess darn</p></a>
+				<a href="#00:00:45.80" id="00:00:45.80" class="lt" onclick="jumptoTime(45, this.id)"><p>creatively，ẽ CA。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》皇御園總廚特製 椰汁芋頭臘肉煲</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'px3WLqeQlyg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》皇御園總廚特製 椰汁芋頭臘肉煲</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.35" id="00:00:7.35" class="lt" onclick="jumptoTime(7, this.id)"><p>大家好，我是黃源的中餐行政總廚曾超烈，今日介紹的是，麗湖椰汁臘肉煲，秋天，剛好是秋天，相當適合在家中食用，我們現在先去街市買材料，我們選擇臘肉，應該是八成瘦，兩成肥就好，一塊腩，有高有低，部位不同，所以肥的程度也不同，肉紋距離和比例也會比較好，因為炆芋頭，太多油，不太健康，其實我這次想買麗湖，不想買廣西的芋頭。</p></a>
+				<a href="#00:00:49.35" id="00:00:49.35" class="lt" onclick="jumptoTime(49, this.id)"><p>是廣東人最喜歡吃的，這隻是泰國的，選擇芋頭和蘿蔔要聚首，每次吃植物的材料，都要聚首才好，越重身，聚首就越好，所以我們今天用泰國芋頭做芋頭臘肉煲，街市買了芋頭回來刨皮，刨皮要戴手套，怕手癢，切段後，在家裏做，可以先炸芋頭，再拿去蒸20分鐘，再放鑊煮，如果不炸，切段後蒸，再煮也可以，兩個方法，隨你喜歡。</p></a>
+				<a href="#00:01:36.95" id="00:01:36.95" class="lt" onclick="jumptoTime(96, this.id)"><p>炸芋頭比較完整，慢的機會比較少，如果蒸起煮，很快會爛，再處理臘肉，臘肉切方面，家庭式要小心，因為臘肉一邊切一邊有油分，臘肉硬，很容易切到手，除了芋頭和臘肉，還要選擇乾冬菇，浸透水後切片備用，準備好材料，拿起魚鴨煲，放入雞湯，加入芋頭、臘肉和菇片，開始煲，大約10分鐘後，芋頭會變軟變爛。</p></a>
+				<a href="#00:02:29.95" id="00:02:29.95" class="lt" onclick="jumptoTime(149, this.id)"><p>可以加調味，再加椰汁，再煲3-4分鐘，蓋上蓋子，很漂亮，小貼士，如果煲打開時覺得湯汁不足夠，可以加雞湯和椰汁的二比一比例，調味，味道會更適合。</p></a>
+</div>
+	</body>
+</html>

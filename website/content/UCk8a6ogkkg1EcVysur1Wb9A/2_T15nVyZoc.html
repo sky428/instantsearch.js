@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自製酒店級美食　黯然銷魂飯 | 家常菜 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2_T15nVyZoc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自製酒店級美食　黯然銷魂飯 | 家常菜 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello 又係我王子同大家見面，我之前就整咗叉燒，如果你覺得純粹一個叉燒，好似冇乜特別咁樣嘅，咁我哋不如整佢加埋飯，加埋蛋加埋條菜，想知道點樣煮就記住訂閱我啦，其實喺屋企都可以整到一個咁樣咁正嘅飯，好簡單點做呢，第一就係新鮮嘅叉燒，跟住就要煎一隻蛋，最好嘅就加條菜，跟住煲個白飯。</p></a>
+				<a href="#00:00:48.72" id="00:00:48.72" class="lt" onclick="jumptoTime(48, this.id)"><p>擺曬上去，我嘅做法就會搵一隻好靚嘅豉油，因為其實個豉油係好重要嘅，喺呢個飯入面，另外再加上落啲咁多麻油，同埋少少蔥花，我覺得擺埋上面就冇得頂啦，咁我而家呢度就有個熱鐵鑊，點解呢?因為煎蛋，我自煎就落咗少少油，油都會多少少嘅，其實煎蛋多少少油，變咗佢個底會脆脆地就會好味啲嘅，咁我呢邊就煲滾一個水。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>因為呢個水其實就主要用嚟煮菜，我哋先攞兩條菜，落去呢度，記住我成日都強調煮菜要有少少油，我之前喺王子煮場講過，如果食菜唔落油就排唔到出嚟嘅，有少少味嘅，你可以落少少鹽啦，唔落其實冇所謂㗎啦，撳住蓋，畀佢用細火浸一浸熟，佢油要熱，但係煎蛋嗰陣時就唔好太大火，火唔好太大煎蛋，好啦。</p></a>
+				<a href="#00:02:13.11" id="00:02:13.11" class="lt" onclick="jumptoTime(133, this.id)"><p>加一隻蛋下去，剪開，好，煎蛋的時候不要讓它黏住，雖然這些易潔鑊都不會黏，但有時候會滴少少，你就要動一動，讓整隻蛋可以上來上去，好了，白飯就新鮮，煲出來，熱熱的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:37.11" id="00:02:37.11" class="lt" onclick="jumptoTime(157, this.id)"><p>先放，兩條菜在旁邊，現在香港人覺得要吃菜才健康，我們就放兩條菜，在旁邊，蛋，最後才開大火，辣一辣，辣一辣，底部，然後，我們就將它，這個很重要，見到底部，是有少少脆脆的，油就盡量，先瀝乾，好了，我就不將它蓋在叉燒頂，我放在旁邊，叉燒，這個飯沒有了叉燒怎麼辦，好了，鋪上叉燒，把菜放好，這個黯然銷魂飯，在某酒店。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:35.11" id="00:03:35.11" class="lt" onclick="jumptoTime(215, this.id)"><p>在灣仔，他們用的醬油，就是這個，放少少在邊位，因為剛才是白飯，可能味道不夠，還有這個麻油，我之前說過，這個在韓國很好的麻油，我們又稍為，加少少，好了 最後</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:1.11" id="00:04:1.11" class="lt" onclick="jumptoTime(241, this.id)"><p>就灑，一些蔥花，上個面，這樣是不是，好看了，當然拿出來之前，拿少少紙巾，印一印醬油，記得訂閱我啦。</p></a>
+</div>
+	</body>
+</html>

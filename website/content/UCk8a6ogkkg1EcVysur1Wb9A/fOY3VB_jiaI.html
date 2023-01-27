@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《跟着大廚去買餸》英國名廚Theo Randall教煮 意式番茄沙律 甜如葡萄</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'fOY3VB_jiaI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《跟着大廚去買餸》英國名廚Theo Randall教煮 意式番茄沙律 甜如葡萄</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.19" id="00:00:4.19" class="lt" onclick="jumptoTime(4, this.id)"><p>我們來到萬川的Mercado，最美麗的意大利店，賣最出色的意大利食品。</p></a>
+				<a href="#00:00:11.19" id="00:00:11.19" class="lt" onclick="jumptoTime(11, this.id)"><p>我們來看看他們的產品吧!</p></a>
+				<a href="#00:00:15.19" id="00:00:15.19" class="lt" onclick="jumptoTime(15, this.id)"><p>你可以看到他們有非常多的番茄，我們有很漂亮的番茄，還有很甜的大多士，就像吃葡萄一樣。</p></a>
+				<a href="#00:00:25.19" id="00:00:25.19" class="lt" onclick="jumptoTime(25, this.id)"><p>大多士非常甜，皮很薄，但它們的酸度很高，當它們變成綠色，酸度就會變成糖，我會用黃色和紅色，黃色的顏色，味道跟大多士的紅色相似，而山馬茄的味道，它們的味道不像大多士，所以它們很適合烹飪。</p></a>
+				<a href="#00:00:46.19" id="00:00:46.19" class="lt" onclick="jumptoTime(46, this.id)"><p>山馬茄是意大利最重要的番茄，用來煮瓶子或瓶子的番茄，因為它可以製作所有意大利番茄的醬汁，所以這些番茄非常重要。</p></a>
+				<a href="#00:00:58.19" id="00:00:58.19" class="lt" onclick="jumptoTime(58, this.id)"><p>這是一顆鮮肉的番茄，非常厚的番茄，完全相反於大多士，大多士的甜度更高，山馬茄的甜度更低，但在沙拉裡，它們會非常有效。</p></a>
+				<a href="#00:01:11.19" id="00:01:11.19" class="lt" onclick="jumptoTime(71, this.id)"><p>他們稱它為鶴心番茄，因為它看起來像心。</p></a>
+				<a href="#00:01:15.19" id="00:01:15.19" class="lt" onclick="jumptoTime(75, this.id)"><p>我這裡有幾顆番茄，通常叫它們鶴心番茄，因為它們有條狀，看起來像番茄，它們是非常黑的番茄，裡面幾乎是黑色的，但它們是非常甜的番茄，很可愛的小小的，有點點的，他們是植物番茄，只是質感和口味。</p></a>
+				<a href="#00:01:37.19" id="00:01:37.19" class="lt" onclick="jumptoTime(97, this.id)"><p>我們這裡有很多不同的醬汁，有白酒醬，還有紅酒醬，它們都有不同的用途，白酒醬非常棒，當你醃製一些食物時，你可以加上一些醬汁，像是沙拉沙拉，但是我今天要用的醬汁，是芥末醬，因為它們的甜度更高。</p></a>
+				<a href="#00:01:54.19" id="00:01:54.19" class="lt" onclick="jumptoTime(114, this.id)"><p>所以我會選擇這個，因為我覺得這個會有很甜的口味，很適合配上番茄。</p></a>
+				<a href="#00:02:6.23" id="00:02:6.23" class="lt" onclick="jumptoTime(126, this.id)"><p>我把一公分厚的柳葉切成塊，然後放入一大片的番茄，然後我把柳葉切成塊，去除白色或綠色的根部，因為柳葉很硬，會有一點苦澀，然後我把大葉切成塊，去除苦澀，所以總是用大葉在盤子的底部，然後放上一些小的番茄，視乎他們的大小，要增加質感，就放入麵包糠，鹹酥的牛肉起司，一些新鮮的香草，然後我們把Radicchio沙拉。</p></a>
+				<a href="#00:02:48.23" id="00:02:48.23" class="lt" onclick="jumptoTime(168, this.id)"><p>混合一些芥末醬和橄欖油，要增加味道，就放入一些海鮮醬和黑胡椒，Radicchio沙拉我們會放在番茄上面，你可以加一些芥末醬，再加一點橄欖油調味。</p></a>
+</div>
+	</body>
+</html>

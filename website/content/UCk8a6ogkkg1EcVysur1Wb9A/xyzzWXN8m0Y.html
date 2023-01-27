@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>端午節又到！最簡易自己動手包糉 重拾兒時家常風味│《新手廚房》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xyzzWXN8m0Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>端午節又到！最簡易自己動手包糉 重拾兒時家常風味│《新手廚房》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，快到端午節了，今次會和大家做兩款粽子，一款是傳統的廣東鹹肉粽，另一款是桂花紅豆鹼水粽，材料很簡單，方法也不難，只要跟足指示去做，你也會做到的，首先洗糯米、蓮子和綠豆，浸水，接著浸粽葉和鹹水草，粽葉浸完後，將它逐塊逐塊洗乾淨，包粽之前，將粽葉灼一灼。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.84" id="00:00:55.84" class="lt" onclick="jumptoTime(55, this.id)"><p>這樣會乾淨些和容易包，豬肉切成條狀，放入冰箱醃一晚，包粽前，將豬肉取出，加入五香粉拌勻，浸好糯米，將它晾乾水，放鹽和油拌勻，待會用來包粽，綠豆浸好後，再晾乾水，放油拌勻便可，蓮子隔水備用，取兩塊粽葉，光滑面向上，將它交叉重疊，向外面兩塊粽葉對角摺起來，形成一個兜兜，放入材料，最底和最面都要放糯米。</p></a>
+				<a href="#00:01:54.84" id="00:01:54.84" class="lt" onclick="jumptoTime(114, this.id)"><p>用一塊粽葉蓋頂，光滑面向材料，左右兩邊向中間摺，前後都向中間摺，多餘的葉向中間收或用剪刀剪掉，這樣便可以看到五個角，用鹹水草綁住，綁住左右兩邊，不要散開，記得綁緊一點，效果會比較紮實，做完鹹粽，我們又試試做甜粽，首先，糯米洗淨，浸泡一會兒，把桂花糖隔走多餘的糖水，我們不想它太甜和太濕。</p></a>
+				<a href="#00:02:56.37" id="00:02:56.37" class="lt" onclick="jumptoTime(176, this.id)"><p>浸泡好的糯米，我們來調味，加入桂花糖、油和鹼水，拌勻備用，豆沙搓成長條形，最好把豆沙冰起來，大概冷藏一至兩個小時，硬一點，糯米就不會容易滲入，雖然這個也是廣東粽，但我們這次用另一個方法包，讓它看起來有一點不同，用兩塊粽葉，兩塊都是光滑面向上，把它重疊，上面對摺下來，再向側面對摺，打開它，已經看到有個洞。</p></a>
+				<a href="#00:03:33.37" id="00:03:33.37" class="lt" onclick="jumptoTime(213, this.id)"><p>夠了，先放兩斤糯米鋪平，再放一條豆沙，再放兩斤糯米在表面，我們用另一塊粽葉圍住它，然後在上面封口，摺在旁邊，推向前面的粽葉，把它向下挖進去，這樣就行了，這個是鹼水種，綁的時候不要綁得太緊，讓它吸收更多水，就變得比較有嚼勁，鹹種和甜種的煮法其實是一模一樣的，放涼水進粽子，水沸騰後轉小火煮三小時就行了，鹹肉粽的材料很簡單。</p></a>
+				<a href="#00:04:22.22" id="00:04:22.22" class="lt" onclick="jumptoTime(262, this.id)"><p>吸引之處是材料和味道配搭得很好，看到這麼大塊肥豬肉不要怕，因為這是它的精髓，煮了三個小時後，肥豬肉在粽子裡完全融化，完全吸收了，很好吃，如果你真的很怕肥，你用五花腩也可以。</p></a>
+</div>
+	</body>
+</html>

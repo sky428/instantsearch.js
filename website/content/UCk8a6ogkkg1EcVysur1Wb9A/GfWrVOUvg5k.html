@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《王子煮場》 – 泡菜煎餅 中韓Fusion版</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GfWrVOUvg5k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>《王子煮場》 – 泡菜煎餅 中韓Fusion版</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>我早排去韓國，韓國我相信大家知道其中一樣最出名嘅就離不開泡菜。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>我嗰次去韓國，我就去咗一個Academy學整泡菜。</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>我今日就拎咗我自己整嘅泡菜嚟會教大家整一個kimchi pancake。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>整kimchi pancake第一步，你梗係要個kimchi pancake粉啦。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>咁其實個粉就好容易買到嘅，就係一包咁嘅粉嚟㗎。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>倒咗出嚟之後就要溝水，咁記住唔好溝熱水，因為溝熱水嘅話佢個粉就會一舊舊黐埋哂。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>我想話千祈唔好跟佢個packaging後面話畀你聽幾多gram嘅粉幾多嘅水。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>因為呢個係絕對錯嘅，我都試過跟佢一次真係出事嘅。</p></a>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>我哋其實就要多啲粉少啲水，見到其實漿漿地嘅，就唔係話好流質咁嘅。</p></a>
+				<a href="#00:01:2.00" id="00:01:2.00" class="lt" onclick="jumptoTime(62, this.id)"><p>整完個漿之後呢，你要落蛋啦，咁我哋而家先放隻雞蛋落去先。</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>除咗雞蛋之外，我唔係淨食雞蛋，我亦都會落我自己嘅特別啲嘅食材落去㗎。</p></a>
+				<a href="#00:01:21.90" id="00:01:21.90" class="lt" onclick="jumptoTime(81, this.id)"><p>佢會整個成樣嘢香啲㗎。</p></a>
+				<a href="#00:01:24.46" id="00:01:24.46" class="lt" onclick="jumptoTime(84, this.id)"><p>咁潮州人特別係鍾意如果煎蛋呀或者整佢哋嘅和樂，即係我哋叫呢個蠔仔餅呀，都會落呢樣嘢落去嘅。</p></a>
+				<a href="#00:01:35.74" id="00:01:35.74" class="lt" onclick="jumptoTime(95, this.id)"><p>打開咗啲蛋之後呢，咁我哋就可以倒埋落呢個漿嗰度囉。</p></a>
+				<a href="#00:01:41.90" id="00:01:41.90" class="lt" onclick="jumptoTime(101, this.id)"><p>喇，Kimchi呢就好多水㗎，我哋將呢個Kimchi嘅汁呢倒埋落去。</p></a>
+				<a href="#00:01:47.50" id="00:01:47.50" class="lt" onclick="jumptoTime(107, this.id)"><p>講一講返呢我呢個整呢個Kimchi嗰陣時，老師呢就話韓國人就落三斤辣椒粉嘅，咁你一般人呢就唔好落咁多斤辣椒粉，因為你哋頂唔順嘅太辣嘅。</p></a>
+				<a href="#00:02:0.38" id="00:02:0.38" class="lt" onclick="jumptoTime(120, this.id)"><p>咁老師一拎住聲嗰陣時呢我就落咗六斤，因為我鍾意辣嘅。</p></a>
+				<a href="#00:02:5.42" id="00:02:5.42" class="lt" onclick="jumptoTime(125, this.id)"><p>咁見到呢其實個顏色呢就有少少變咗橙橙地嘅，就唔係淨係黃色嘅。</p></a>
+				<a href="#00:02:11.42" id="00:02:11.42" class="lt" onclick="jumptoTime(131, this.id)"><p>有啲人就會話咦咁你使唔使落啲調味落去呀，本身Kimchi已經個味係好搶㗎喇。</p></a>
+				<a href="#00:02:18.78" id="00:02:18.78" class="lt" onclick="jumptoTime(138, this.id)"><p>咁同埋呢通常我哋食呢個Kimchi Pancake呢，我哋都會加呢個即係會點一個汁嘅，咁所以就唔使專登將佢呢個蛋整到太過鹹呀，或者加太多味道嘅，應該差唔多。</p></a>
+				<a href="#00:02:32.22" id="00:02:32.22" class="lt" onclick="jumptoTime(152, this.id)"><p>咁唔好淨係Kimchi咁齋啦係咪呀，咁我會落一啲蔥啦，呢度主要都係蔥頭為主啦，咁同埋呢亦都會加啲洋蔥，我呢度選擇咗一啲紫洋蔥，咁加埋少少即係我哋中國人嘅元素，又係香口啦，我就加埋一啲韭黃落嚟添嘅，ok，我覺得成個配搭都應該係好嘅，好好嘅。</p></a>
+				<a href="#00:02:56.22" id="00:02:56.22" class="lt" onclick="jumptoTime(176, this.id)"><p>好啦，咁將啲嘢全部攪攪攪攪攪攪攪埋曬佢。</p></a>
+				<a href="#00:03:0.70" id="00:03:0.70" class="lt" onclick="jumptoTime(180, this.id)"><p>好啦，咁我哋溝好個粉漿之後呢，咁梗係落鑊煎啦。</p></a>
+				<a href="#00:03:4.54" id="00:03:4.54" class="lt" onclick="jumptoTime(184, this.id)"><p>油呢要多少少嘅，因為其實煮親蛋嘅嘢呢，油都要多少少嘅。</p></a>
+				<a href="#00:03:11.10" id="00:03:11.10" class="lt" onclick="jumptoTime(191, this.id)"><p>咁我哋就將佢都攪拌好。</p></a>
+				<a href="#00:03:21.72" id="00:03:21.72" class="lt" onclick="jumptoTime(201, this.id)"><p>不要太貪心，大小已經很完美，固定後就可以在另一邊翻面，要煎久一點，讓一邊比較緊實才不翻面，不然一翻面就會散開，一定要煎到有點焦，有點脆，最後就是最完美的樣貌，Andrew 我這位非常挑剔的朋友，今天做了一個Kimchi Pancake，讓我們試一下，這個Kimchi是我自己做的，我上次去韓國的時候。</p></a>
+				<a href="#00:04:15.67" id="00:04:15.67" class="lt" onclick="jumptoTime(255, this.id)"><p>是我自己去了學校學做的，Kimchi是科學證明，現在說是非常有益的一件事，醃製完、發酵完之後，Kimchi的益生菌好像益力多了很多，所以我每次吃完Kimchi，真的會很暢順，這是Kimchi的一個很大的優勢，我做的Kimchi Pancake，可能你看到不像外面那些圓形，或者剪得這麼漂亮。</p></a>
+				<a href="#00:04:46.79" id="00:04:46.79" class="lt" onclick="jumptoTime(286, this.id)"><p>但是希望可以用這個味道來補充，好啊，讓你試一下，好，這個有我的Kimchi在裡面，試一試看，你當然要加一個你所謂叫我的王子汁，我這個汁是加了少少洋蔥，少少蔥和蒜頭，然後再加上我最愛的，這個非常昂貴的韓國買回來的麻辣醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:14.43" id="00:05:14.43" class="lt" onclick="jumptoTime(314, this.id)"><p>試一試，這個味道很好，很多不同種類的食材在裡面，還有很多不同的口感，感覺好像潮州的紅蘿蔔，我覺得是加了少少潮州元素，尤其是邊位的焦味，有種很濃的，是不是蛋味，你為什麼會吃到有潮州的味道，其實是因為我加了鴨蛋，我們平時正宗潮州食物，如果是煎紅蘿蔔，是用鴨蛋</p></a>
+				<a href="#00:05:54.15" id="00:05:54.15" class="lt" onclick="jumptoTime(354, this.id)"><p>因為會香一點，但是最主要是用鴨蛋，是讓蛋味更豐富和香一點，你會怎樣評分呢，0至5，5最高，這個我覺得是好吃的，這個真的好吃，它有少少層次，還有香味真的很重，其實你之前在這裡煮，你開盡頭，測驗機，那股香味</p></a>
+				<a href="#00:06:19.51" id="00:06:19.51" class="lt" onclick="jumptoTime(379, this.id)"><p>צר。</p></a>
+				<a href="#00:06:19.51" id="00:06:19.51" class="lt" onclick="jumptoTime(379, this.id)"><p>contrast。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:19.27" id="00:06:19.27" class="lt" onclick="jumptoTime(379, this.id)"><p>seldom</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.03" id="00:06:22.03" class="lt" onclick="jumptoTime(382, this.id)"><p>inconsinder。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:21.63" id="00:06:21.63" class="lt" onclick="jumptoTime(381, this.id)"><p>?]。</p></a>
+				<a href="#00:06:22.13" id="00:06:22.13" class="lt" onclick="jumptoTime(382, this.id)"><p>AD。</p></a>
+				<a href="#00:06:20.25" id="00:06:20.25" class="lt" onclick="jumptoTime(380, this.id)"><p>faults。</p></a>
+				<a href="#00:06:21.39" id="00:06:21.39" class="lt" onclick="jumptoTime(381, this.id)"><p>respons。</p></a>
+				<a href="#00:06:19.43" id="00:06:19.43" class="lt" onclick="jumptoTime(379, this.id)"><p>üst。</p></a>
+</div>
+	</body>
+</html>

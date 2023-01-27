@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>沙嗲牛肉粉絲煲 粉絲爽口醬汁惹味  | 煲仔菜 | 食譜 |《王子煮場》</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3dej0hnj9NY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>沙嗲牛肉粉絲煲 粉絲爽口醬汁惹味  | 煲仔菜 | 食譜 |《王子煮場》</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello大家好!又係我王子同大家見面，今日會同大家分享一個沙嗲牛肉粉絲煲，沙嗲牛肉粉絲一聽到就好似有少少潮州風味，但我會選擇用韓國材料，韓國牛肉同埋好靚嘅韓國麻油，沙嗲牛肉粉絲煲各思各法，有啲濕嘅有啲乾嘅，我呢個就會乾身同埋香噴噴，如果想知點樣做記得訂閱我啦，多謝大家!</p></a>
+				<a href="#00:00:47.16" id="00:00:47.16" class="lt" onclick="jumptoTime(47, this.id)"><p>材料有什麼呢?</p></a>
+				<a href="#00:00:49.16" id="00:00:49.16" class="lt" onclick="jumptoTime(49, this.id)"><p>200克韓國牛肉，兩包泰國粉絲，我經常說泰國粉絲質素好很多，炒完後泰國粉絲會碎，兩包泰國粉絲80克，最好不要多過兩包，因為很難炒，沙茶醬一湯匙，沙嗲醬一湯匙，少少麻油，少少蒜頭或蒜泥，少少芹菜和黑胡椒，怎樣做呢?</p></a>
+				<a href="#00:01:27.16" id="00:01:27.16" class="lt" onclick="jumptoTime(87, this.id)"><p>主要分兩個步驟，一是處理粉絲，二是處理牛肉，粉絲要怎樣處理呢?</p></a>
+				<a href="#00:01:33.16" id="00:01:33.16" class="lt" onclick="jumptoTime(93, this.id)"><p>先拆開它，用滾水先汆水，讓它變軟，去除它的韓味，瀝乾水後用上湯浸粉絲，浸多久?半小時至一小時都可以，最重要是吸收味道，炒粉絲時加入少少蒜泥，半湯匙沙茶醬，半湯匙沙嗲醬，加少少水或上湯，然後加入粉絲炒 讓粉絲吸乾水和湯，中間可以加少少麻油，黑椒和糖芹炒香，炒乾粉絲後放入另一個煲，現在處理牛肉。</p></a>
+				<a href="#00:03:24.56" id="00:03:24.56" class="lt" onclick="jumptoTime(204, this.id)"><p>優質牛肉不用醃，加少少油，加半湯匙沙嗲醬，然後炒牛肉，加少少水，再灑少少糖，沙嗲牛肉粉絲煲，兩下手勢已經做出來了，真的五分鐘就完成，最花時間的是什麼呢?</p></a>
+				<a href="#00:04:13.24" id="00:04:13.24" class="lt" onclick="jumptoTime(253, this.id)"><p>浸粉絲，但這道菜真的香到不得了，而我發覺就算你用什麼好牛肉也好，主角其實變成粉絲，如果還想知我有什麼好東西介紹給大家，記得訂閱我啦!</p></a>
+</div>
+	</body>
+</html>
