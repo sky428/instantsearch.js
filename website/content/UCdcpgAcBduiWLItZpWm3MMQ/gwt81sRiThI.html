@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手作熱狗仔飽 (Cute Mini Hot Dog)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'gwt81sRiThI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>手作熱狗仔飽 (Cute Mini Hot Dog)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.38" id="00:00:4.38" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，今天我會和大家一起做麵包，首先，我需要先做幾件事，才可以趕得及完成，因為我希望在天黑前可以完成，首先，我需要一些黑豆，黑豆已經用暖水浸泡了，首先，我需要兩杯的暖水，我先開始了，然後我需要一茶匙的乳酪，即是它的酵母，放進去，同一時間我需要同樣份量的糖，放好後，我將它們攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:21.64" id="00:01:21.64" class="lt" onclick="jumptoTime(81, this.id)"><p>攪拌均勻，我們要把它拿走，然後我們在這邊開始量自己的材料，另外我預備了另一個材料，就是麵粉，我們需要250克的麵粉，接著我會用250g麵粉，我這個是做麵包的麵粉來的，如果沒有的話用那種中筋麵粉也可以的，這款是高筋麵粉或者麵包麵粉，或者你可以買中筋麵粉或者叫做All Purpose Flour，這樣也可以的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:34.60" id="00:02:34.60" class="lt" onclick="jumptoTime(154, this.id)"><p>250g，這樣我們就開始放了，最後還是要等到天黑，不好意思，好，那你們看到了，那些衣紙已經啟動了，看到有一層泡泡在裡面，這樣就對了，在這個時間，我這次做的麵包是鹹麵包，所以我會放一湯匙橄欖油，然後一湯匙的鹽，半湯匙的鹽，這樣就可以了，這個時間我會攪拌好，然後就可以倒進麵粉裡了，把小洞讓開。</p></a>
+				<a href="#00:03:51.60" id="00:03:51.60" class="lt" onclick="jumptoTime(231, this.id)"><p>然後把水倒進麵粉裡，慢慢等到可以攪拌好，把麵粉黏在一起，將麵粉和麵粉混合，慢慢地攪拌，因為我家太冷了，要把冰淇淋濃縮，環境要暖和一點，我家比較冷，加拿大秋冬開始冷，所以比較麻煩，差不多形成一大塊就可以搓揉，現在很粉狀，要搓揉至黏在一起，而且很光滑，需要一點力氣，可以放在碗內。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:1.79" id="00:06:1.79" class="lt" onclick="jumptoTime(361, this.id)"><p>字幕by索兰娅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:12.92" id="00:06:12.92" class="lt" onclick="jumptoTime(372, this.id)"><p>如果你有countertop的話，可以在countertop乾淨的用，我就不喜歡，多數會用墊著的，我就推它，向外推，向下推，就是這樣，慢慢地搓，剛才已經看到粉末都慢慢地搓，已經黏好，繼續搓，搓均勻，因為現在它一點都不光滑，很皺皮，很肉酸，要搓到它很漂亮才行，因為現在很粗糙，不夠漂亮。</p></a>
+				<a href="#00:07:13.92" id="00:07:13.92" class="lt" onclick="jumptoTime(433, this.id)"><p>做這個動作很減壓，如果有情緒病，最好做麵包，這是我的提議，有情緒病的人，最好做麵包，現在還不行，這樣一搓又開，還不行，記得我之前說過做麵包，最重要是到它黏在一起，一拿起就可以黏著，拉開，看到有個透光面，這樣才行，如果現在還不行，就是還不行，繼續搓，再拉開看看，還不行，繼續</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:19.80" id="00:08:19.80" class="lt" onclick="jumptoTime(499, this.id)"><p>本期視頻就拍到這裡了，下次見!，每週固定3、4部影片 喜歡我的影片請訂閱或按讚，現在比剛才的不粒粒分明，我們可以再打開看看，還差一點點，現在皮膚變得平滑了很多，然後我們測試一下皮膚是否可以慢慢拉開皮膚，現在皮膚有點透光的程度，這樣就可以了，當然你想再搓的話可以再搓一會，我自己的皮膚就夠了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:52.58" id="00:09:52.58" class="lt" onclick="jumptoTime(592, this.id)"><p>把包包收起來，然後我就需要一個碗，灑一點麵粉，把麵團放進去，灑一點麵粉，然後用保鮮膜蓋住，等它起了，大約等一個小時，室溫的話就一個小時，如果想放進冰箱就要幾個小時，室溫的話就一個小時，或者等到它雙倍大小就可以了，回來了，現在它大約升了一倍，然後插進去，我這裡可以做到大約十個，現在我先把它分開。</p></a>
+				<a href="#00:11:21.85" id="00:11:21.85" class="lt" onclick="jumptoTime(681, this.id)"><p>量一下有多重，大約40克就好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:55.85" id="00:11:55.85" class="lt" onclick="jumptoTime(715, this.id)"><p>放入冰箱冷藏，切開10個，每一個都要搓圓，現在的麵團很柔軟，很容易搓到，搓到一個橢圓形，一個像橄欖的形狀，這樣弄了十份後，就可以用保鮮紙蓋住再用</p></a>
+				<a href="#00:13:59.64" id="00:13:59.64" class="lt" onclick="jumptoTime(839, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，我會蓋著放在一個地方再等多15分鐘等到它脹起來，回來了 大約它已經升起了，現在有四個麵包在這裡，我之前有些黑豆，將它們印乾，我會在這個位置剪一剪</p></a>
+				<a href="#00:15:25.34" id="00:15:25.34" class="lt" onclick="jumptoTime(925, this.id)"><p>謝謝觀看，下次見，字幕by索兰娅✿，剪了之後，我就將黑豆放進去，現在就做一個熱狗仔包，party TrickKap billion，rere immortalian</p></a>
+				<a href="#00:16:45.98" id="00:16:45.98" class="lt" onclick="jumptoTime(1005, this.id)"><p>sai，bigger，pir ending</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:37.12" id="00:16:37.12" class="lt" onclick="jumptoTime(997, this.id)"><p>vere，envelop Euros，simulated，NI，ieza，oured</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:39.50" id="00:16:39.50" class="lt" onclick="jumptoTime(999, this.id)"><p>יתי，그림，ublique</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:32.50" id="00:16:32.50" class="lt" onclick="jumptoTime(992, this.id)"><p>PS，historically，� rotational，Economics</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:22.20" id="00:16:22.20" class="lt" onclick="jumptoTime(982, this.id)"><p>europpton，antioxidants，Americans，achusetts</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:40.04" id="00:16:40.04" class="lt" onclick="jumptoTime(1000, this.id)"><p>resort，inderweise，teh，Treφο，chilly，Allahu，groans</p></a>
+				<a href="#00:16:28.84" id="00:16:28.84" class="lt" onclick="jumptoTime(988, this.id)"><p>딱，Croat rogue</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:42.34" id="00:16:42.34" class="lt" onclick="jumptoTime(1002, this.id)"><p>allowance，führen，sealed，Rad SUBSCRI Ek，emed Jahren，가능when，ằ Universal，illing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:40.56" id="00:16:40.56" class="lt" onclick="jumptoTime(1000, this.id)"><p>ca описании，holder</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:46.28" id="00:16:46.28" class="lt" onclick="jumptoTime(1006, this.id)"><p>enabling，�though</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:42.32" id="00:16:42.32" class="lt" onclick="jumptoTime(1002, this.id)"><p>cons evaluating，gli，phải，Stephan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:44.60" id="00:16:44.60" class="lt" onclick="jumptoTime(1004, this.id)"><p>놓，hea follow，ailed，�，cience，utan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:46.08" id="00:16:46.08" class="lt" onclick="jumptoTime(1006, this.id)"><p>וט，Sam，길，using，Bose，unintelligible，иваем，metabolRed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:33.82" id="00:16:33.82" class="lt" onclick="jumptoTime(993, this.id)"><p>있，кими，ramble，afraid，min</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:36.96" id="00:16:36.96" class="lt" onclick="jumptoTime(996, this.id)"><p>cose，controls，col，SARAH，ー，topic，profess，bra，Lead，lane，Atlantic，Freddy，understandable，Status，procedural，сил，temp，sew outdoor，parach，ЗЫ sensational，quota。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:48.28" id="00:16:48.28" class="lt" onclick="jumptoTime(1008, this.id)"><p>toxicity，Free，mattered，Vert наши，Crit powdered，ús inherent，dissert otherwise，Nasılithmetic，racial，πό，frig hundreds turnout Lehrer，athe disposal，iping。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:45.00" id="00:16:45.00" class="lt" onclick="jumptoTime(1005, this.id)"><p>��alı，Rico，ция，aqui，発 plus，енного，Bene livest 103，我可以將它放入400度的焗爐，近一點給你們看，400度焗爐焗10分鐘，gro exactement Дажемент transmitter</p></a>
+				<a href="#00:17:23.41" id="00:17:23.41" class="lt" onclick="jumptoTime(1043, this.id)"><p>Quit，happ Clay，AE，embarrassing，EPA，Gul，vill APPLAUSE，intestine，мон，교 lows，envy，frank，iets，把蔬菜洗淨，把香腸切絲，把菜葉切絲</p></a>
+				<a href="#00:18:0.92" id="00:18:0.92" class="lt" onclick="jumptoTime(1080, this.id)"><p>把香腸切絲，焗好了，給你們看看包包的樣子，是這樣的，如果你想再焗金黃一點，可以再焗久一點，我就覺得OK了，不想它太啡，這樣我先放下，因為很熱，就可以了，拿過來給你們看看，像不像一隻小狗，我拿來是給熱狗狗吃的，我今天就是做熱狗狗，給你們看看，他們幾隻，熱狗狗是這樣的，在這個時間。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:51.14" id="00:18:51.14" class="lt" onclick="jumptoTime(1131, this.id)"><p>我現在先切開給你們看，切開給你們看底下的金黃色，我把它切開，熱狗狗，嘩，幾靚，跟住我哋可以夾啲生菜絲，嘩，啲貓嘢嘢呀，所以，所以唔好意思呀，唔使驚，係啲貓偷食嘢啫，咁樣可以將啲生菜絲夾咗落去啦，咁樣呢，擺條香腸，其實不加什麼都可以，好了 做好了，可愛嗎?</p></a>
+				<a href="#00:19:55.63" id="00:19:55.63" class="lt" onclick="jumptoTime(1195, this.id)"><p>好 繼續做四個，這樣吃的時候可以加些茄汁和芥辣一起吃，其實他們這麼小 我用一塊生菜絲都可以，這個食譜是我在網上看到的，我就想可以試試做，其實不是很難做的，很容易做的，這樣給小朋友開派對又可以很開心，因為熱血時報四周年，11月11日，我做了這個熱狗仔包慶賀他們。</p></a>
+				<a href="#00:21:6.67" id="00:21:6.67" class="lt" onclick="jumptoTime(1266, this.id)"><p>希望大家喜歡，下次再見，byebye。</p></a>
+</div>
+	</body>
+</html>

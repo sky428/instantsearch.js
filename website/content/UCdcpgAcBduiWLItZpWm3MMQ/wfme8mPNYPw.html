@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>薯片做奄列,你敢唔敢試?  - Potato Chip Omelette</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wfme8mPNYPw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>薯片做奄列,你敢唔敢試?  - Potato Chip Omelette</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.20" id="00:00:6.20" class="lt" onclick="jumptoTime(6, this.id)"><p>Hello 大家好，網上有一條片是關於薯片加蛋做一個奄列，你可以看到相片是這樣的，亦有人問我可不可以，我看了那條片，不會在這裏播放，你們可以上網找找，進來這裏找薯片，有其他味道嗎?</p></a>
+				<a href="#00:01:10.11" id="00:01:10.11" class="lt" onclick="jumptoTime(70, this.id)"><p>有隻卡式的，想選另一款，厚一點焗的，試一下有什麼不同效果，選這款吧，這款是原味，點少一點洋蔥，那我可以買洋蔥嗎，那我買，買一個紅色的吧，買一隻烤烤的，剛才看到有很多選擇，這些是特價，但我不需要買太多，所以我選這款，口切，香腸，買這個吧，剛剛一條過，不用吃太多，用完就ok了，最後買芝士，我買這些吧。</p></a>
+				<a href="#00:02:32.35" id="00:02:32.35" class="lt" onclick="jumptoTime(152, this.id)"><p>用剩的可以夾麵包，我打算，不如我試一下，用這個方法，做是怎樣，大家一起思考，首先，有一包薯片，有三種味道，芝士、椒香、原味，然後，開了一包，每一袋，放兩種東西，一袋放，培根、洋蔥，一袋放芝士，香菜，一袋放蔥、香腸，我未必買齊，可以這麼多，然後加幾隻蛋，然後，全部放進袋裡，然後，放進鍋裡，煮15分鐘，然後。</p></a>
+				<a href="#00:03:36.35" id="00:03:36.35" class="lt" onclick="jumptoTime(216, this.id)"><p>做一塊，如果我，不敢用這個包裝袋，來煮，因為這個包裝袋經歷過，無限的地方，有什麼爛過，袋子很髒，我會用別的袋子來做，另外，那條片，只需幾分鐘，當然，你也知道我，不可能幾分鐘就做完，因為這些東西全部是生的，要做的話，全部都要時間，我們現在開始吧，將培根切成條狀，煎的時候就會變成碎片，然後就切粒粒。</p></a>
+				<a href="#00:04:43.23" id="00:04:43.23" class="lt" onclick="jumptoTime(283, this.id)"><p>你看到有些芝士粒在裡面，切些小乾蔥，切碎，接著切洋蔥，我需要半個，你可以用紅黃蔥紫洋蔥或者普通的白洋蔥或者黃洋蔥都可以的，無所謂</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:49.90" id="00:05:49.90" class="lt" onclick="jumptoTime(349, this.id)"><p>四塊，你可以買Mozzarella都可以的，那種會比較拉絲，這隻是黃色的芝士，那種質地當然不會那麼拉絲，但它會比較濃味，芝士味會比較濃，看你喜歡不喜歡芝士味，準備好配料，回來了 現在要熱鍋，放些油進去</p></a>
+				<a href="#00:07:9.90" id="00:07:9.90" class="lt" onclick="jumptoTime(429, this.id)"><p>放入洋蔥，加少許鹽 讓它快點軟，慢慢炒至金黃色，焦糖化，炒至金黃色就可以了，將培根放入鍋內煎香，推开它，有个芝士，我先拿开</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:30.03" id="00:08:30.03" class="lt" onclick="jumptoTime(510, this.id)"><p>推开它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:40.12" id="00:08:40.12" class="lt" onclick="jumptoTime(520, this.id)"><p>不要動它，慢慢煎，炒到煙肉油都出來了，讓它有少許香香脆脆，當看到它開始金黃色，縮小了很多，我們差不多要拿起它，否則它繼續炸，炸的時候會變得越來越脆，會變得很硬很乾，我們先把油撇走，開始了，之前你們看那條片，食材幾分鐘就完成了，因為已經預備好，我們現在前期預備都看了，我有三隻薯片，其實我做不完三隻。</p></a>
+				<a href="#00:09:32.12" id="00:09:32.12" class="lt" onclick="jumptoTime(572, this.id)"><p>因為我差不多要四隻第一隻，一隻薯片我吃不到這麼多蛋，所以我在想要用哪幾隻，我打算，不要這隻，用這隻和這隻薯片，做兩個不同版本，它的版本是，首先打開，看見了，這裡一包薯片，然後捏碎，我覺得不需要捏太碎，捏到這樣碎就可以了，放在這裡，是不是也，然後我們，就打三隻蛋上去，一隻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:51.18" id="00:10:51.18" class="lt" onclick="jumptoTime(651, this.id)"><p>完成，三隻，我會加少少奶，如果冇奶，可以加淡奶，攪勻，本應全部食材倒入袋內一次過煮，但我不想這樣，因為袋子外面很骯髒，所以我倒轉把薯片倒出來，拌勻，現在已經吸收了蛋汁，然後可以放入食材，我打算放一半食材，全部放一半，放入剛才煮的食材，我將它們放一半，另外的食材待會放入另一層味道，用另一個方法煮。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:33.45" id="00:12:33.45" class="lt" onclick="jumptoTime(753, this.id)"><p>然後拌勻，可能我要多放一隻蛋，才可以令它們黏在一起，我將它放入一個厚身的密實袋內，他們做的時候，直接放入水中，我不想直接碰到底部，所以我會先把密實袋放進去，這個已經浸了，然後再煮15分鐘，另外一個我會用Muffin Pan來烤，看看效果如何，首先，我會把蛋糕盤上的油掃乾淨，我會打雞蛋。</p></a>
+				<a href="#00:14:12.22" id="00:14:12.22" class="lt" onclick="jumptoTime(852, this.id)"><p>淡奶，攪拌均勻，打碎，我用這隻厚身的焗薯片，一塊塊放進去浸軟，浸軟，浸軟至軟身，最好浸久一點，然後可以逐一將它舀入去，再將其放入冰箱冷藏</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:13.47" id="00:15:13.47" class="lt" onclick="jumptoTime(913, this.id)"><p>洋蔥，最後把芝士鋪在上面，多一點也不要緊，最後加入蛋漿</p></a>
+				<a href="#00:16:8.97" id="00:16:8.97" class="lt" onclick="jumptoTime(968, this.id)"><p>完成，最後把蔥放在上面，375度焗10至15分鐘，15分鐘已經夠了，先關火，拿出來，OK啦 現在我開漿了 看看這個怎樣，一個很大的蛋 剛裂開，先把它弄出來，感覺很軟熟，然後我找個好看一點的位置，好像這邊好看一點，這邊好看一點，那我就切它一件件，現在仍然是很熱的，裡面好像流心，我跟足它自己15分鐘。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:58.78" id="00:17:58.78" class="lt" onclick="jumptoTime(1078, this.id)"><p>放些菜給他，放些茄汁給他，好! 第一碟完成了!</p></a>
+				<a href="#00:18:28.71" id="00:18:28.71" class="lt" onclick="jumptoTime(1108, this.id)"><p>趁烤箱還在烤的時候，我要試試味道了!</p></a>
+				<a href="#00:18:33.71" id="00:18:33.71" class="lt" onclick="jumptoTime(1113, this.id)"><p>我怕冷掉了味道不好，所以先試試味道!</p></a>
+				<a href="#00:18:53.63" id="00:18:53.63" class="lt" onclick="jumptoTime(1133, this.id)"><p>沒有薯片味道了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:55.63" id="00:18:55.63" class="lt" onclick="jumptoTime(1135, this.id)"><p>其實也沒有薯片的質感，嗯，有那種BBQ薯片的味道，嗯，有薯仔味，不難吃，嗯，不過呢，因為拍照也吃得下了一點，嗯，嗯，加上我的菜，就好像薯仔蛋餅，一樣，先蘸一點茄汁，蘸了起司好吃很多，蘸了起司好吃很多，看我一會兒那個，看怎樣，這個就是我自己做的，輕輕切開，讓它容易拿出來，焗了15分鐘</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:33.21" id="00:20:33.21" class="lt" onclick="jumptoTime(1233, this.id)"><p>很漂亮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:39.21" id="00:20:39.21" class="lt" onclick="jumptoTime(1239, this.id)"><p>給大家看看，這個，就是我，重新整理的，好了，拍完照就試吃了，不如切開它，給你們看橫切面，거를Gameagen required</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:36.55" id="00:21:36.55" class="lt" onclick="jumptoTime(1296, this.id)"><p>Baba</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:39.11" id="00:21:39.11" class="lt" onclick="jumptoTime(1299, this.id)"><p>能osen，spr chociaż</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:30.03" id="00:21:30.03" class="lt" onclick="jumptoTime(1290, this.id)"><p>sitzen，claim</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:37.81" id="00:21:37.81" class="lt" onclick="jumptoTime(1297, this.id)"><p>ậ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:42.51" id="00:21:42.51" class="lt" onclick="jumptoTime(1302, this.id)"><p>לש，Nom worries，NA，require，1933，reduction，Une40，loe</p></a>
+				<a href="#00:21:29.85" id="00:21:29.85" class="lt" onclick="jumptoTime(1289, this.id)"><p>tense，incre walked，lihat，lain，소�istani</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:36.85" id="00:21:36.85" class="lt" onclick="jumptoTime(1296, this.id)"><p>upp Sue</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:41.17" id="00:21:41.17" class="lt" onclick="jumptoTime(1301, this.id)"><p>示，knead</p></a>
+				<a href="#00:21:25.89" id="00:21:25.89" class="lt" onclick="jumptoTime(1285, this.id)"><p>firm，வ，MD</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:23.79" id="00:21:23.79" class="lt" onclick="jumptoTime(1283, this.id)"><p>ejerc confidently，transpota sih，ника</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:37.35" id="00:21:37.35" class="lt" onclick="jumptoTime(1297, this.id)"><p>ма</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:22.91" id="00:21:22.91" class="lt" onclick="jumptoTime(1282, this.id)"><p>Eightaghetti</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:34.23" id="00:21:34.23" class="lt" onclick="jumptoTime(1294, this.id)"><p>ibles，jść，енной</p></a>
+				<a href="#00:21:34.75" id="00:21:34.75" class="lt" onclick="jumptoTime(1294, this.id)"><p>али，стро，het，notably，Out Sver Nak，Bachelordisplay Tri 1800，好像真的是一個菜，好吃很多，焗好過烚，焗好吃很多，材料一樣，應該更濃味，因為用了燒烤薯片，我這個用了鹽味的薯片，其實我已經有調味，因為培根和芝士都有鹹味，如果想鹹一點可以再加，原來可以蘸茄汁。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:26.87" id="00:22:26.87" class="lt" onclick="jumptoTime(1346, this.id)"><p>蘸茄汁是好吃的，但就這樣吃也ok，我自己做這個好吃一點，但不作準，你們只會看，你們試不到，但看樣子也知道，焗出來效果好很多，好吃，我挑戰做這個，用這個浪費食物，來做一個菜，出來也ok，希望你們覺得ok可以課金給我，或者有什麼想挑戰可以課金點餸，今天介紹到這裡，下次再見。</p></a>
+</div>
+	</body>
+</html>

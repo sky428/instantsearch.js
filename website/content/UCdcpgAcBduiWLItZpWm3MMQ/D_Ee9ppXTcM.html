@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做麻婆豆腐 (少辣) | Homemade Mapo Tofu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'D_Ee9ppXTcM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做麻婆豆腐 (少辣) | Homemade Mapo Tofu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.95" id="00:00:4.95" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友，你們好!</p></a>
+				<a href="#00:00:7.95" id="00:00:7.95" class="lt" onclick="jumptoTime(7, this.id)"><p>我一直都很想拍麻婆豆腐的影片，以前很多時候我在家煮麻婆豆腐，我都會懶去買調味的麵包，現在有很多的，你去超級市場看到X記、TOWHOX，這些大品牌都會出一些包裝，專做麻婆豆腐，只要煮熟材料，然後加醬汁就可以了，但我都很想做一個自己家做的，由頭做到尾的麻婆豆腐，所以今天拍影片就是拍麻婆豆腐，麻婆豆腐很多時候都相傳在清朝的時候。</p></a>
+				<a href="#00:01:1.95" id="00:01:1.95" class="lt" onclick="jumptoTime(61, this.id)"><p>在成都有間店鋪，專做這種豆腐，老闆娘姓陳，陳麻婆，因為她的臉有些凹凸，所以她做出來的豆腐叫麻婆豆腐，有很多的版本，我知道你去很多唐人店或日本的唐餐，都會看到很多麻婆豆腐，不同的做法、不同的材料，這個就是我家的材料，可能和你家的材料完全不同，但不要緊，每個人都可以有自己生活中的麻婆豆腐，看看材料。</p></a>
+				<a href="#00:01:48.95" id="00:01:48.95" class="lt" onclick="jumptoTime(108, this.id)"><p>我用的是豬絞肉，你可以買一塊豬肉來切，其實都說過麻婆豆腐都可以用牛肉，但我在想，因為我的廚藝有限，如果要炒牛肉煮這麼久，要煮到不老、不硬、不乾，就很難的，所以我還是選用豬肉，豬肉容易煮，新手來說就容易煮，我需要豬肉，不需要太多，我需要這裡的一半，這裡有一塊豆腐，麻婆豆腐最重要是豆腐，我這個是Medium的豆腐。</p></a>
+				<a href="#00:02:35.39" id="00:02:35.39" class="lt" onclick="jumptoTime(155, this.id)"><p>其實我這牌子是在這裡買的，多人多在這裡買，其實在你們的地方買，可能在街市會看到一磚獨立的豆腐，我們這裡買的豆腐很多都是這樣，麻婆豆腐裡面都會有麻麻的辣味，我這裡有一點花椒粉，不想吃麻太辣的都可以不放，另外我有自己做的辣椒油，這個辣椒油是我自己做的，然後有豆瓣醬，我會放一點桂林辣椒醬，看你喜歡放什麼。</p></a>
+				<a href="#00:03:18.91" id="00:03:18.91" class="lt" onclick="jumptoTime(198, this.id)"><p>有辣豆瓣醬就放辣豆瓣醬也可以，除了這個有配料，就是薑、蔥、蒜，洋洋一點，我喜歡再加一點味道，我就買了一點炸菜，放進去，也有些人說麻婆豆腐裡面可能有其他材料，可能不是炸菜，可能是豆豉，或者是很多不同的蔥、蒜、糖芹，色彩專變的，看你自己喜歡吃什麼，首先我拿了170克的豬肉，拿了出來。</p></a>
+				<a href="#00:04:4.03" id="00:04:4.03" class="lt" onclick="jumptoTime(244, this.id)"><p>然後我需要切碎這些炸菜，所以我需要這個也不是很大塊，小小一塊，接下來我們切一些料頭，最近因為我弄傷了手，這個位置有根膜炎，其實不是很適宜拿刀，不過我還是要拍片，拿刀、拿筆、拿東西都沒有力氣，而且會很痛，另外現在的天氣轉變，過敏期手還起了一塊塊，不好意思有外觀之誤，但我會繼續拍片，雖然很多人都在罵我。</p></a>
+				<a href="#00:04:50.99" id="00:04:50.99" class="lt" onclick="jumptoTime(290, this.id)"><p>說我煮東西很廢，但我還是會繼續拍，因為始終拍片是我的...</p></a>
+				<a href="#00:05:1.41" id="00:05:1.41" class="lt" onclick="jumptoTime(301, this.id)"><p>是一個興趣和抒發自己情感的出口，所以我會繼續拍自己喜歡的東西，蒜頭切粒，其實上星期我已經休息了一會兒，我拿了一條錄音機出來，去播放，我休息了一個星期，但那時我還未看醫生，為疾忌醫，到最後，逼於無奈痛到拿筆也拿不到，這樣我才去看醫生，我們切薑，薑也是切成小粒，將豆腐切開，先倒水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:11.92" id="00:07:11.92" class="lt" onclick="jumptoTime(431, this.id)"><p>ância，큰，smoke，vill unlike，��，urate，không，ario，big，sen compile，obe，met，product，準，três，powdered，�ates，Eph Cinema，ray，.</ literaturepeople ac pag silly，cruelty。</p></a>
+				<a href="#00:07:17.36" id="00:07:17.36" class="lt" onclick="jumptoTime(437, this.id)"><p>нев，對了，thumbs evol，абот，θ，분위 hates，hyp deploying，zm，Deutsch，profitable，wet，Rights，royunächst，пос unreal commissioner，spiritual，回到煮食的步驟，首先要將豆腐汆水，想令豆腐煮的時候不會太容易爛。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:40.85" id="00:07:40.85" class="lt" onclick="jumptoTime(460, this.id)"><p>其中一個辦法就是將豆腐在鹽水下汆水，汆水後豆腐便會變得不易爛，首先在水中加鹽，煮滾後便可以將豆腐汆水，現在水已經熱了，但水不是很大，現在可以將豆腐放入鍋中，其實你喜歡用嫩豆腐也可以，我都有買嫩豆腐和硬豆腐，但我想試用硬豆腐，煮一兩分鐘便可以，將豬肉放入鍋中，然後就可以加入豬肉，將豬肉放入鍋中。</p></a>
+				<a href="#00:09:20.72" id="00:09:20.72" class="lt" onclick="jumptoTime(560, this.id)"><p>將豬肉放入鍋中，然後再將豬肉炒散，看到邊緣有些顏色變了就可以翻面，然後炒香，不要動它，我這個不是用火，是用電爐，我不會用太大火煮，我現在用的是中火，未至於是大火，但如果家中用火爐就好一點，現在可以將它們分開，它們未熟，這個時候可以將薑、蒜頭放進去，炒香，這個時候，我剛才有些蔥，我放一半進去，然後炒香。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:45.55" id="00:10:45.55" class="lt" onclick="jumptoTime(645, this.id)"><p>然後拌勻，這個時候，我可以將我剛才的納豆板醬，大約兩湯匙，就可以放進去，然後就可以和它一起炒，讓它慢慢炒到味道可以均勻，慢慢炒到味道可以入肉，我還會加少少我自己做的辣椒油，可以了，請訂閱，分享，打賞支持我，謝謝，大約兩茶匙，拌勻，令顏色更漂亮，在鏡頭看似淺色，但在我看就深色很多，可能因為燈光的關係。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:55.40" id="00:11:55.40" class="lt" onclick="jumptoTime(715, this.id)"><p>看上去較黃的光，你會看到我現在用眼睛看的顏色，再加入榨菜，榨菜都會有點咸，這個時候我會加少許糖，如果覺得顏色不夠的話，就可以加少許老抽，我再煮一下看看怎樣，然後加水，這是熱水，放入所有材料，然後等它煮，煮至沸騰，老抽，加少許食鹽，然後推下去，是不是我豆瓣醉不夠呢，多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:14:8.92" id="00:14:8.92" class="lt" onclick="jumptoTime(848, this.id)"><p>現在要試味，要試味看看有什麼不足，嗯，夠味，最後加少少生粉碎埋埋個芡，落少少係側邊，收少少水，收少少汁，唔夠就再落多少少，再推一推它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:10.73" id="00:15:10.73" class="lt" onclick="jumptoTime(910, this.id)"><p>ôle，ju ل，NY，program，太 kicked，supplying，Crist shocks</p></a>
+				<a href="#00:15:18.35" id="00:15:18.35" class="lt" onclick="jumptoTime(918, this.id)"><p>對 workforce，rak，八umpwell，allows</p></a>
+				<a href="#00:15:21.33" id="00:15:21.33" class="lt" onclick="jumptoTime(921, this.id)"><p>Tu вод，isiert，warmedbest，عت</p></a>
+				<a href="#00:15:21.53" id="00:15:21.53" class="lt" onclick="jumptoTime(921, this.id)"><p>Comp，Motors，updated，動，umm</p></a>
+				<a href="#00:15:19.05" id="00:15:19.05" class="lt" onclick="jumptoTime(919, this.id)"><p>action，авай</p></a>
+				<a href="#00:15:20.15" id="00:15:20.15" class="lt" onclick="jumptoTime(920, this.id)"><p>distribute，лай，하게，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，完成了!上碟啦!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:29.61" id="00:15:29.61" class="lt" onclick="jumptoTime(929, this.id)"><p>最後加些蔥花，還有花椒粉，最後才灑上去，完成了，完成了，這個好呀 送飯，送飯一碗，馬頭到處，你們覺得OK嗎，給我一點意見吧，在留言告訴我，在Facebook群組告訴我都可以的，麻婆豆腐就是這樣，我家的麻婆豆腐，我試味，我用手拿著有點顫抖，我試味，好吃，自己說好吃，雖然是用硬豆腐，但咬開，裡面還是很滑的。</p></a>
+				<a href="#00:17:25.16" id="00:17:25.16" class="lt" onclick="jumptoTime(1045, this.id)"><p>好，今天介紹到這裡，希望大家喜歡，在家做麻婆豆腐，再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浸白切雞小技巧，新手浸雞斬雞話咁易</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MKZdMUVpZUQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>浸白切雞小技巧，新手浸雞斬雞話咁易</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多倫多美食頻道，大家好，今天我來到媽媽家，和她一起預備今晚的中秋節晚餐，我和她一起預備浸雞，其他材料她大部分都預備了，今晚的晚餐很豐富，我們現在開始吧，浸雞當然有一隻雞，我們這裡買了一隻沒有抗生素的雞，它算是黃油雞，已經用鹽洗了幾次，看不看得到?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:41.58" id="00:00:41.58" class="lt" onclick="jumptoTime(41, this.id)"><p>看不看得到內裡?</p></a>
+				<a href="#00:00:43.58" id="00:00:43.58" class="lt" onclick="jumptoTime(43, this.id)"><p>其實還有一個位置一定要留意，就是我們要摸到雞胸上的位置，要去掉雞肺的內臟，否則浸雞容易不熟，現在全部都沒有了，最重要是這個位置，另外浸雞的另一件事，就是在雞胸的喉嚨這個位置，我們應該要這個位置，用匙羹去摸，水就可以在這裡，通到裡面，通到下面，我們需要一鍋熱水，最好用的鍋子是高一點，大一點。</p></a>
+				<a href="#00:01:56.63" id="00:01:56.63" class="lt" onclick="jumptoTime(116, this.id)"><p>水大一點，這樣就可以，確保水夠熱力，可以慢慢浸雞，如果水不夠熱的話，雞就會很容易，溫度一放下去，就會掉得很厲害，好，水已經沸騰了，先在大火沸騰水，然後雞就可以放進去，現在我們就可以將雞放進去，封好整隻雞放進去，然後把雞拿出來，確保水可以流到這裡，也可以流到裡面，然後再放進去，你可以重複這個步驟，三至五次不等。</p></a>
+				<a href="#00:02:47.63" id="00:02:47.63" class="lt" onclick="jumptoTime(167, this.id)"><p>無所謂，總之幾次，現在第三次，放進去之後，雞的皮已經全部脹起，有泡出來，就是剛才的水，在那裡穿出來了，穿過雞囊，我們又再把它清理乾淨，現在已經把雞肉拔出來三四次，我們可以把整隻雞放進去，雞胸部向下，確保所有水可以浸過雞，我現在浸過的雞也很多，也有一串水，總之浸過整隻雞，然後我們繼續開火，這個也是開著火。</p></a>
+				<a href="#00:03:37.04" id="00:03:37.04" class="lt" onclick="jumptoTime(217, this.id)"><p>現在煲水放進去之後，沒有滾，現在就等它滾起，剛才我是開大火把雞放進去，中火等它慢慢滾起，一滾起我們就可以關火，然後慢慢浸，浸的時間要多久，就要看雞有多大，35至55分鐘不等，就要看雞有多大和多重，還有爐火我已經控制了，我們一會兒回來，現在已經開始滾起，不需要大滾，總之你看到水開始泡沫，滾起了我們就可以關火。</p></a>
+				<a href="#00:04:22.04" id="00:04:22.04" class="lt" onclick="jumptoTime(262, this.id)"><p>然後就可以浸，現在開始我們計時浸，就可以了，雞已經浸了37分鐘，37分鐘我們就拿起雞，你看到雞腿的位置，不同的位置你可以再刺，怕的話一刺出來的血水，是白色的，那雞就可以了，我們馬上把雞放進冰水裡，讓它浸一下，浸一下冰水，停止再煮雞，我們現在可以拿起雞，浸好雞之後就可以用廚房紙把水份吸乾，然後將雞放涼。</p></a>
+				<a href="#00:05:32.10" id="00:05:32.10" class="lt" onclick="jumptoTime(332, this.id)"><p>等雞涼了，雞熱的時候就不要斬，因為雞肉會散開，然後就可以斬雞了，因為我是新手的關係，本來我媽媽想叫媽媽斬的，但影片是我的，我還是要自己斬比較好，媽媽教了我怎樣斬，我就自己斬，這是第一次自己斬，因為我平常是用廚房剪刀，首先在雞屁股後面切一刀，我的刀是一般般，這把刀是我媽媽家裡的，然後就可以切開一半。</p></a>
+				<a href="#00:06:20.10" id="00:06:20.10" class="lt" onclick="jumptoTime(380, this.id)"><p>然後就可以斬雞翼，在雞翼的腋下切開一刀，然後切下去，我平常很少用這種刀，我多數是用西式廚刀，所以這麼大把刀都有點害怕，然後切雞腿，也是在縫隙切進去，原來用這種方法或刀，媽媽教的是用刀的下方，角落的位置斬，其實比我想像中容易，一切就可以切開雞腿，斬開一半雞肉後，就可以將雞胸慢慢剁，始終我又不夠力。</p></a>
+				<a href="#00:07:14.10" id="00:07:14.10" class="lt" onclick="jumptoTime(434, this.id)"><p>所以又害怕，所以斬雞還要用手幫忙，不過整個過程都算暢順，比我想像中容易很多，我經常覺得斬雞好難，但只要有對的刀，我應該要買一把類似的刀，我要找一把斬雞的刀，這樣會比較容易，然後我們就開始斬另外一邊，斬完第一邊後，第二邊就會覺得很順手，感覺上會比較利落，信心也會比較大，我想我多斬幾次，就會更加厲害。</p></a>
+				<a href="#00:08:17.10" id="00:08:17.10" class="lt" onclick="jumptoTime(497, this.id)"><p>現在再看影片自己斬，我覺得都可以的，雞肉都熟透了，因為怕有血水，最後一隻雞翼，切開一邊，然後轉角位，轉彎位，斬一刀，就完成了，雞頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:57.49" id="00:08:57.49" class="lt" onclick="jumptoTime(537, this.id)"><p>我們不吃雞頭的，不過早節就放了，完成了，雖然不太好看，但家裏也不介意的，薑蓉都預備好了，先把薑切碎，然後放蔥，你喜歡全薑都可以的，然後已經放了少許鹽調味，一會兒再放熟油就完成了，今天我煲了什麼湯?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:51.48" id="00:09:51.48" class="lt" onclick="jumptoTime(591, this.id)"><p>很多時候我們煲湯都是用真空煲煲的，就是用這個內膽煲好之後再放進去慢慢煲，今天我們煲這個就是有蓮藕，栗子，無花果，陳皮，還有豬骨，腰果，湯，很重的材料，很多時候我們煲湯都會放一些腰果進去，令到湯更香，放入蔥花</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:45.48" id="00:10:45.48" class="lt" onclick="jumptoTime(645, this.id)"><p>放入豬肉，放入蔥花，放入豬肉，放入蔥花，放入蔥花，放入蔥花，再放入蔥花，再放入蔥花，放入蔥花，cauliflower，Healing，pedestrian，oko</p></a>
+				<a href="#00:11:38.24" id="00:11:38.24" class="lt" onclick="jumptoTime(698, this.id)"><p>血，��，oya，are，ilot，dau</p></a>
+				<a href="#00:11:47.84" id="00:11:47.84" class="lt" onclick="jumptoTime(707, this.id)"><p>Ét，âl，RISADAS，经 Wouldn одной，seni，answered</p></a>
+				<a href="#00:11:29.20" id="00:11:29.20" class="lt" onclick="jumptoTime(689, this.id)"><p>optimistic，supplemental，dran，Acad sharp</p></a>
+				<a href="#00:11:48.06" id="00:11:48.06" class="lt" onclick="jumptoTime(708, this.id)"><p>年的，rozum，Franklin，vu，upbeat</p></a>
+				<a href="#00:11:35.48" id="00:11:35.48" class="lt" onclick="jumptoTime(695, this.id)"><p>acja，Table descend nou Perez，UA，當 deliber� 훨씬</p></a>
+				<a href="#00:11:38.14" id="00:11:38.14" class="lt" onclick="jumptoTime(698, this.id)"><p>shroud influ буд，██</p></a>
+				<a href="#00:11:30.82" id="00:11:30.82" class="lt" onclick="jumptoTime(690, this.id)"><p>�데 나왔，ulars</p></a>
+				<a href="#00:11:31.24" id="00:11:31.24" class="lt" onclick="jumptoTime(691, this.id)"><p>jeszcze，imer，alam，�ologne</p></a>
+				<a href="#00:11:44.36" id="00:11:44.36" class="lt" onclick="jumptoTime(704, this.id)"><p>ρι，baş，aints，pizza</p></a>
+				<a href="#00:11:39.64" id="00:11:39.64" class="lt" onclick="jumptoTime(699, this.id)"><p>icht，unus louder，Friend，Lo</p></a>
+				<a href="#00:11:42.10" id="00:11:42.10" class="lt" onclick="jumptoTime(702, this.id)"><p>leng，hosp，senin，adomo，стор，思，esque，Mel</p></a>
+				<a href="#00:11:36.02" id="00:11:36.02" class="lt" onclick="jumptoTime(696, this.id)"><p>ply，Czy，ienza</p></a>
+				<a href="#00:11:40.58" id="00:11:40.58" class="lt" onclick="jumptoTime(700, this.id)"><p>apanese，crunch Gente，Sir，Bhariander，LOOK</p></a>
+				<a href="#00:11:38.50" id="00:11:38.50" class="lt" onclick="jumptoTime(698, this.id)"><p>Megan，crane，ический，obliv 정부，peril</p></a>
+				<a href="#00:11:47.60" id="00:11:47.60" class="lt" onclick="jumptoTime(707, this.id)"><p>updateрод Fake acknowledging，給你看看這隻雞，海參炆冬菇加鮑魚，媽媽幫忙煮好飯了，湯、通菜、雞、炆冬菇、豆苗、燒肉、鹹蛋黃、炒蝦仁，鮑魚很大隻，還有湯圓、月餅、水果等，不知道你們吃月餅是吃白蓮蓉還是黃蓮蓉呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:8.94" id="00:13:8.94" class="lt" onclick="jumptoTime(788, this.id)"><p>我只喜歡吃黃蓮蓉，但現在比較難買，祝大家中秋節快樂，一家人齊齊整整，開開心心，下次再見。</p></a>
+</div>
+	</body>
+</html>

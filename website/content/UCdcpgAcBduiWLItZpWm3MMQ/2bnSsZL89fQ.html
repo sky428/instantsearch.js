@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做雞肉丸 - Homemade Chicken Balls</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2bnSsZL89fQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做雞肉丸 - Homemade Chicken Balls</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.09" id="00:00:4.09" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello各位朋友你們好，好久不見了，因為前陣子我病了，現在是康復的時間，但是好多了。</p></a>
+				<a href="#00:00:19.09" id="00:00:19.09" class="lt" onclick="jumptoTime(19, this.id)"><p>謝謝在Facebook上很多朋友來關心我，鼓勵我，我真的很感謝。今天因為我病好之後，我都要穿兩件衣服，要吃清淡一點的東西。</p></a>
+				<a href="#00:00:41.01" id="00:00:41.01" class="lt" onclick="jumptoTime(41, this.id)"><p>我便想，我可以介紹給大家什麼東西容易做，清淡一點，又可以自己吃到呢?</p></a>
+				<a href="#00:00:50.65" id="00:00:50.65" class="lt" onclick="jumptoTime(50, this.id)"><p>我考慮了一陣子，然後我便嘗試在家中做肉丸，我做的是用雞胸肉做的雞肉丸，不如我介紹一下材料吧，材料最主要是雞胸肉，如果你想要其他肉丸也沒有問題，你可以做牛肉丸或豬肉丸，我用的是雞胸肉丸，雞胸肉是沒有皮的，沒有骨的，剛從雪櫃取出來的，亦沒有荷葉蒙，比較健康一點，裡面有什麼材料呢?</p></a>
+				<a href="#00:01:39.17" id="00:01:39.17" class="lt" onclick="jumptoTime(99, this.id)"><p>最主要是雞肉丸，其他材料可以改變，到我寫食譜時，我可以再給大家一些建議，我會放洋蔥，紅蘿蔔，雞肉丸會比較白色，顏色會比較好看，而且比較有益，調味料方面也是一樣，正常做肉丸的話，需要加一些鹹味或濃味的食材，例如蒜粉、薑粉、雞粉，我會盡量減少，然後我需要的是鹽，然後會加一點胡椒粉，另外我會加一些沒有添加的麵豉醬。</p></a>
+				<a href="#00:02:35.97" id="00:02:35.97" class="lt" onclick="jumptoTime(155, this.id)"><p>需要一點點的薑汁酒，還有豉油，如果你想再清淡一點的話，可以不加，我會加一點點，另外一點點麻油，首先我需要一個攪拌器，一個攪拌器，如果你有一個大的攪拌器就最好，但我家裡只有一個攪拌器，如果沒有攪拌器也不要緊，我們可以用肉餅來攪拌，但如果有的話，我就可以方便很多，首先，我們把雞胸肉切成小塊。</p></a>
+				<a href="#00:03:23.09" id="00:03:23.09" class="lt" onclick="jumptoTime(203, this.id)"><p>因為我的雞肉比較小，所以我不可以全部放進去，我會逐一放進去，如果切太大塊的話，對雞胸肉也會有負荷，所以我會切成小塊，這樣就可以了，容易一點打碎，雞胸肉就在冰箱拿出來，不要放在室溫，在冰箱，現在是很冷的，不要緊的，因為我們都是想它冷打，讓它不會那麼快令到肉升溫，因為如果肉打的時候，用機器打的時候。</p></a>
+				<a href="#00:04:7.78" id="00:04:7.78" class="lt" onclick="jumptoTime(247, this.id)"><p>它都會有磨擦，它會升溫，溫度就會升，這樣會對肉質不太好，如果沒有的話，我們就可以快速地打碎，有一個這樣的調理機就很方便，然後就打碎，看起來像鬼哭神號，我們來看看，差不多已經打爛了大部分，打爛了大部分就可以了，我們繼續做下一隻，500克的雞肉已經打到這麼多，現在做下一個步驟，先把雞肉用保鮮紙包住。</p></a>
+				<a href="#00:05:16.66" id="00:05:16.66" class="lt" onclick="jumptoTime(316, this.id)"><p>放進冰箱，第二個步驟有三件事要做，三件事要切，首先切洋蔥，然後切紅蘿蔔，然後磨薑蓉，先切洋蔥，先把表面的皮去掉，然後把蒂切掉，然後切成粒狀，切完後放進調理機打至溶化</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:16.66" id="00:06:16.66" class="lt" onclick="jumptoTime(376, this.id)"><p>用冰水沖洗乾淨，然後就可以將它放回調理機內，調理機已經洗淨了，我們就再做第二輪，xy exem Stockholm，哦</p></a>
+				<a href="#00:06:36.03" id="00:06:36.03" class="lt" onclick="jumptoTime(396, this.id)"><p>Becky，AS，crisp，ide，atten，peso，brighten</p></a>
+				<a href="#00:06:35.83" id="00:06:35.83" class="lt" onclick="jumptoTime(395, this.id)"><p>Rak，lect，Pors，fund，dying</p></a>
+				<a href="#00:06:34.21" id="00:06:34.21" class="lt" onclick="jumptoTime(394, this.id)"><p>façon，sectors，homemade，將紅蘿蔔取出，這個不用了，下一個紅蘿蔔也在這裡，用這個來打，雞肉一定要洗淨才用，切薄片，然後再放進去，讓我看看他們能否幫我</p></a>
+				<a href="#00:07:17.74" id="00:07:17.74" class="lt" onclick="jumptoTime(437, this.id)"><p>打個閃電，因為紅蘿蔔比其他食材硬身，所以要打蓉要打久一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:38.41" id="00:07:38.41" class="lt" onclick="jumptoTime(458, this.id)"><p>趁著今天又要做紅蘿蔔，在這裡給大家一個小貼士。</p></a>
+				<a href="#00:07:45.41" id="00:07:45.41" class="lt" onclick="jumptoTime(465, this.id)"><p>我用調理機打完後，紅蘿蔔的顏色已經在膠上了。</p></a>
+				<a href="#00:07:51.41" id="00:07:51.41" class="lt" onclick="jumptoTime(471, this.id)"><p>刮刀也有顏色，已經洗過也不會掉。</p></a>
+				<a href="#00:08:2.41" id="00:08:2.41" class="lt" onclick="jumptoTime(482, this.id)"><p>那怎麼辦呢?</p></a>
+				<a href="#00:08:6.41" id="00:08:6.41" class="lt" onclick="jumptoTime(486, this.id)"><p>其實方法很簡單，需要一張紙或喜歡用布也可以。</p></a>
+				<a href="#00:08:14.41" id="00:08:14.41" class="lt" onclick="jumptoTime(494, this.id)"><p>第二樣需要的就是油。</p></a>
+				<a href="#00:08:24.19" id="00:08:24.19" class="lt" onclick="jumptoTime(504, this.id)"><p>這些是染了油的紙，然後我把它一抹，看不看得到?</p></a>
+				<a href="#00:08:34.19" id="00:08:34.19" class="lt" onclick="jumptoTime(514, this.id)"><p>橙黃色已經掉出來了，已經在紙上了，你只要慢慢地用油抹它，它就可以把塑膠上面的黃色和橙色的部分抹掉，我試試用這個，你看看現在是很橙色的，我有個底給你看到，我再加多點油，什麼油都可以的，生油就可以了，然後我就把它抹掉，看不看得到，剪色了很多， 再擦一次，打開底部， 抹乾淨後， 看一看是不是和剛才的不同了很多呢?</p></a>
+				<a href="#00:09:58.73" id="00:09:58.73" class="lt" onclick="jumptoTime(598, this.id)"><p>然後再用平常洗碗的方式洗乾淨就可以了， 希望這個方法可以幫到你們。</p></a>
+				<a href="#00:10:6.73" id="00:10:6.73" class="lt" onclick="jumptoTime(606, this.id)"><p>接下來我會用另一個小道具， 用來磨薑汁酒的。</p></a>
+				<a href="#00:10:15.73" id="00:10:15.73" class="lt" onclick="jumptoTime(615, this.id)"><p>薑已經去皮後， 我就可以用這個磨去磨它了。</p></a>
+				<a href="#00:10:21.73" id="00:10:21.73" class="lt" onclick="jumptoTime(621, this.id)"><p>這個磨跟了我十幾年了， 但真的很好用。</p></a>
+				<a href="#00:10:26.73" id="00:10:26.73" class="lt" onclick="jumptoTime(626, this.id)"><p>很多時候我醃雞的時候， 我都會用薑汁酒來醃， 薑汁酒做法很簡單。</p></a>
+				<a href="#00:10:38.73" id="00:10:38.73" class="lt" onclick="jumptoTime(638, this.id)"><p>首先， 先磨薑蓉， 薑汁就會一滴滴流出來。</p></a>
+				<a href="#00:10:58.73" id="00:10:58.73" class="lt" onclick="jumptoTime(658, this.id)"><p>然後就可以放酒了， 放什麼酒呢? 放紹興酒， 料理酒都可以的， 看你家裡有什麼吧。</p></a>
+				<a href="#00:11:7.73" id="00:11:7.73" class="lt" onclick="jumptoTime(667, this.id)"><p>如果我家裡只有黃色的酒， 就放黃酒吧。</p></a>
+				<a href="#00:11:11.73" id="00:11:11.73" class="lt" onclick="jumptoTime(671, this.id)"><p>如果有清酒的， 都沒有問題的。</p></a>
+				<a href="#00:11:15.73" id="00:11:15.73" class="lt" onclick="jumptoTime(675, this.id)"><p>大概一湯匙左右的酒， 放一會兒， 等我醃的時候， 把醃的醬汁擠出來， 就變成薑汁酒了。</p></a>
+				<a href="#00:11:28.73" id="00:11:28.73" class="lt" onclick="jumptoTime(688, this.id)"><p>現在就開始把它們合成， 把它們全部混合。</p></a>
+				<a href="#00:11:33.73" id="00:11:33.73" class="lt" onclick="jumptoTime(693, this.id)"><p>雞胸肉500克， 即是一小節的紅蘿蔔， 一個洋蔥蓉， 一湯匙的薑汁酒， 一隻雞蛋， 冰水， 少許的糖， 少許的鹽， 一個匙羹的味噌， 胡椒粉， 麻油。</p></a>
+				<a href="#00:12:2.73" id="00:12:2.73" class="lt" onclick="jumptoTime(722, this.id)"><p>可以加少許的醬油。</p></a>
+				<a href="#00:12:7.73" id="00:12:7.73" class="lt" onclick="jumptoTime(727, this.id)"><p>首先， 我先把味噌醃好， 再放入胡椒粉和鹽。</p></a>
+				<a href="#00:12:22.27" id="00:12:22.27" class="lt" onclick="jumptoTime(742, this.id)"><p>將薑汁酒放入碗內，將薑汁酒推至最上，一按下，薑汁酒便會流出，將薑汁酒放入碗內</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:46.82" id="00:12:46.82" class="lt" onclick="jumptoTime(766, this.id)"><p>aver� compress，Grant，Eig，фильм，endar，passion，lately，cook，Cau，continues，Cru，覺得，reservoir，instance，emailed，reserved，toolbox，VICcile，mares，加少許糖和鹽，然後我可以加一湯匙的豉油和少許麻油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:28.56" id="00:13:28.56" class="lt" onclick="jumptoTime(808, this.id)"><p>我還是喜歡用筷子，然後就可以攪拌均勻，雞肉要冷藏一會，要攪拌至起膠狀，如果你有大型的攪拌機就可以用，但我怕會太熱，所以我會放一些冷水在旁邊，最後我會加一隻雞蛋，加少許冷水，其實我打的時候可以加一些冰塊，然後就可以用最小的速度慢慢攪拌</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:11.56" id="00:15:11.56" class="lt" onclick="jumptoTime(911, this.id)"><p>完成，加入冰水，有時要留意它會否變暖，如果是冰的就可以了，可以加些冰水，打到何時才會完呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:55.85" id="00:15:55.85" class="lt" onclick="jumptoTime(955, this.id)"><p>其實很簡單的，一開始打的時候，肉質好像很鬆，後來你會覺得肉質好像啜住機器，這樣就可以了，即是它開始起膠，有啜的力度，有個彈性在，現在開始肉質好像啜住了，開始也很亮，大家可以看看肉質，最後我，就加上洋蔥和紅蘿蔔</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:32.85" id="00:16:32.85" class="lt" onclick="jumptoTime(992, this.id)"><p>最後才加進去，然後再打它，加冰水或冰塊的原因是令雞肉不容易變熱，當然我家已經開了冷氣，家裡也不熱，另外可以加水令雞肉更鬆軟，讓它吸收更多水份，我之前也試過不使用攪拌器，用筷子慢慢攪拌，但如果用筷子攪拌，我需要用手包著肚腩，這樣會令雞肉容易變熱，所以用攪拌機加冰水會比較好，如果你想吃到質感更好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:51.25" id="00:17:51.25" class="lt" onclick="jumptoTime(1071, this.id)"><p>你可以這樣做，但你覺得好像沒所謂的話，你也可以照你自己喜歡的方法做，不一定要這樣做，只是你出來的口感，看你喜歡是怎樣，我試過不放冷水，不用機器攪拌，自己用強壯的鼻子去攪拌，是可以做到的，其實它差不多，你會看到肉丸開始很亮，你在機器看就看不到，但我這樣看，它的光澤很光亮，還有它開始有些膠質，黏著我的機器。</p></a>
+				<a href="#00:18:34.41" id="00:18:34.41" class="lt" onclick="jumptoTime(1114, this.id)"><p>我從來沒有用大塊的，好像聲音很大，因為我換了機器，但其實我用最小的力量來攪拌，所以它已經很黏了，我給你們看，其實你看，已經很黏了，這樣就可以了，接著我們可以下去下一個步驟，你這樣攪拌也是攪拌幾分鐘，你看看你自己喜歡哪個方法，哪個方法你覺得最好，你就自己用，我這個我做完之後，我跟你們說我是這樣做的。</p></a>
+				<a href="#00:19:14.13" id="00:19:14.13" class="lt" onclick="jumptoTime(1154, this.id)"><p>但這不是絕對的定律，你想用你的方法，你看完我這樣做，你覺得有更多的想法，可以再做好一點的話，你可以在我的YouTube下面留言，也可以在我的專頁留言，或者在婦女人妻媒體的群組留言，給我意見也可以的，這裡有個溫度計，指著煮到80度，不要超過80度，低於80度是可以的，但不要超過80度，我們就可以做肉丸了。</p></a>
+				<a href="#00:19:47.41" id="00:19:47.41" class="lt" onclick="jumptoTime(1187, this.id)"><p>首先湯匙最好是泡熱水，手呢，我又要看了，手要怎樣做呢，就是你手拿著肉丸，接著在你這個位置，虎口的位置擠，如果你覺得不夠圓，你就再擠到你覺得合適的圓形為止，然後就舀出來，放進去，就是這麼簡單了，就是這樣，然後慢慢將你想要的肉丸，形狀大小，你可以做大顆一點，或者可以做小顆一點，然後我就馬上放進去了，如果你不是。</p></a>
+				<a href="#00:20:32.73" id="00:20:32.73" class="lt" onclick="jumptoTime(1232, this.id)"><p>我真的覺得馬上放進去會好一點，就是這樣，然後慢慢等它煮，只要不要高過它，譬如我一高，我保持著就關火，等到它仍然遮住80度，我看著溫度計來做，然後就慢慢擠肉丸，你可以大粒小粒喜歡，你喜歡看我口感，你喜歡我口感，我喜歡很大粒，圓圓圓很大粒的也可以，我又喜歡很小粒的也可以，慢慢擠，這樣就可以了。</p></a>
+				<a href="#00:21:12.34" id="00:21:12.34" class="lt" onclick="jumptoTime(1272, this.id)"><p>你怕它不黏著湯匙，首先在熱水上沾一下，這樣就可以一筆就不會黏著肉丸，大小就看你怎樣做，然後快手一點，慢慢這樣，快手一點做，譬如你覺得我做得不好，我就伸手再擠，擠到適當為止，然後再擠，你看到圓形就對了，就把它舀出來，我這裏有兩個雞胸，肉丸又不是很大粒，我已經做到整個鍋子都滿了，一次過做肉丸。</p></a>
+				<a href="#00:22:2.34" id="00:22:2.34" class="lt" onclick="jumptoTime(1322, this.id)"><p>最好不要自己想要，想吃幾粒才做，最好可以像我這樣，一次過做好，譬如這裏500克，這樣做好之後，可以煮熟之後，放涼，就可以把它放進去煮熟，放進冰箱 至少要放幾個月，吃的時候才拿出來，吃的時候看自己喜歡怎樣煮，例如平時喜歡煮綠色麵的話，可以放兩粒自己喜歡的丸子，或者粉絲煲也可以放入去，代替了自己煮的獅子頭。</p></a>
+				<a href="#00:23:1.00" id="00:23:1.00" class="lt" onclick="jumptoTime(1381, this.id)"><p>另外也可以串起來煎香，然後放一個照燒汁下去點來吃，肉丸有很多食用方法，看自己喜歡的時候就可以，自己煮真的安心很多，在外面吃不知道別人放了什麼東西，煮著煮著 肉丸就開始慢慢浮起來，浮起的肉丸已經熟了，下面的還沒熟，我看一下是因為多到滿滿還是什麼，但不是 他們真的還沒浮，真的是浮面的。</p></a>
+				<a href="#00:23:53.00" id="00:23:53.00" class="lt" onclick="jumptoTime(1433, this.id)"><p>浮面的就熟了，浮面的就慢慢舀起來，最後一粒都已經流上來了，整碟肉丸都已經煮好了，我這裡有四十粒肉丸，可以看著看著，如果不想煮太多就把食譜減一半，或者想多一點就可以把食譜二倍數，現在肉丸就煮好了，煮好之後不要動它，讓它慢慢放涼，最好吃的時候，我用手的 手洗乾淨的，最好吃的時候，放涼後就可以試一下。</p></a>
+				<a href="#00:24:53.15" id="00:24:53.15" class="lt" onclick="jumptoTime(1493, this.id)"><p>給你們看看，很鬆軟，我這裡不是加太鹹，如果想再鹹一點可以再加，對我來說已經很足夠，另外我這個是雞胸肉丸，比其他肉更軟，有些人會覺得粉粉的感覺，我自己是接受到的，但如果你想像外面吃的魚肉丸，那麼彈牙的話，就最好用豬肉或牛肉，甚至如果喜歡的話，可以試試用雞腿肉，我每次都是用雞胸肉，我自己是接受到這個味道。</p></a>
+				<a href="#00:25:44.15" id="00:25:44.15" class="lt" onclick="jumptoTime(1544, this.id)"><p>這個質地，你剛才也看到我這樣捏，也不是太差，也很鬆軟，剛才也說了，這個肉丸有很多不同的用途，放涼後，拿一個可以放冰格的保鮮袋，放平放滿，然後放冰格冷藏，最少可以冷藏一個月</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:20.15" id="00:26:20.15" class="lt" onclick="jumptoTime(1580, this.id)"><p>可以冷藏一個月，你自己可以安心吃自己家製的丸子，另外煮完丸子的湯，其實也可以，隔一隔它之後，也可以放麵，做個粉絲，加些丸子，加些豆腐，加些蔬菜，加些豆卜，就可以做一個菜，我今天介紹到這裡，剛剛開始復原，接下來也會有一系列，不同的食物排隊，很想做，希望身體許可，時間許可，我會繼續拍一些，好吃的影片。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:10.15" id="00:27:10.15" class="lt" onclick="jumptoTime(1630, this.id)"><p>和大家分享，今天就這樣，多謝各位，下次再見 拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做滷水雞脾滷水蛋/薑蔥鹽水雞脾</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jy3iUM9xn3Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做滷水雞脾滷水蛋/薑蔥鹽水雞脾</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多倫多美食頻道，今天買了很多雞腿仔，打算和大家做兩個菜式，我們就開始吧!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:14.18" id="00:00:14.18" class="lt" onclick="jumptoTime(14, this.id)"><p>這裡有2.744kg的雞腿，這個就是雞腿仔，我先把它拆開</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:30.18" id="00:00:30.18" class="lt" onclick="jumptoTime(30, this.id)"><p>我現在大概數一下有多少隻，27隻雞腿，我不會用完全部的，我會留一些放在冰箱裡，如果放在冰箱裡就不要洗了，直接在這裡收拾好就放在冰箱裡，大概放14隻雞腿，中間留一點空間給雞腿，因為放在冰箱裡會比較省位，冰箱裡會溶解，所以我只需要拿7隻雞腿出來，不需要拿這麼多雞腿出來，這樣比較方便。</p></a>
+				<a href="#00:01:24.18" id="00:01:24.18" class="lt" onclick="jumptoTime(84, this.id)"><p>雞腿放在冰箱裡，先放在一邊，然後兩邊摺起來，摺起來，這樣就可以分兩次用了，剩下的要怎麼做呢?</p></a>
+				<a href="#00:01:58.18" id="00:01:58.18" class="lt" onclick="jumptoTime(118, this.id)"><p>第一件事就是洗了，因為我現在會用，所以我會拿去浸鹽水，因為這個也是從冰箱裡拿出來的，因為加拿大雞不是很好的，普通雞，不是黃油雞或是走地雞，所以沒有什麼味道，而且有雪過，最好用淡鹽水浸一浸，浸完再用鹽水洗一洗，再用，雞腿已經洗淨，現在分開兩部分，因為我想用兩種不同的醬汁浸泡雞腿，用家中最原始的方法浸泡雞腿。</p></a>
+				<a href="#00:03:6.07" id="00:03:6.07" class="lt" onclick="jumptoTime(186, this.id)"><p>另外用我家裏的滷汁，在冰箱裏取出滷汁浸泡雞腿，我們開始吧，我已經在冰箱取出了一些鹵水，正在解冰的，其實我放在微波爐上冷凍了一會兒，但還未完全融化，用來做鹵水雞腿，另外這邊就是用鹽水雞腿，其實你也可以叫白鹵水，看你怎麼說，我家裡就叫薑蔥鹽水雞腿，但我家裡就用光了蔥，發現我沒有唐人用過的蔥，所以我就用蔥頭。</p></a>
+				<a href="#00:03:56.12" id="00:03:56.12" class="lt" onclick="jumptoTime(236, this.id)"><p>有薑，鹽，可以放一些酒進去，如果你怕雞腿像雪雞那樣，你想去除一下味道，你也可以放一些香料進去，我放了一塊香葉，還有一點白胡椒粒，如果想要好像沒有顏色的鹵水汁，你也可以放花椒、八角、桂皮，我想要清一點的味道，所有雞腿不用汆水，因為我剛才已經浸了很久水，已經洗乾淨了，然後我就煮滾鹵水汁，另外這邊也要煮滾。</p></a>
+				<a href="#00:04:35.00" id="00:04:35.00" class="lt" onclick="jumptoTime(275, this.id)"><p>我們現在開始，這個薑，你看看你喜不喜歡洗乾淨，平時我一向都喜歡把薑的皮搖起來，所以我就會照樣把皮搖起來，切開之後，輕輕地壓一壓，這樣我們就可以放進鍋裡了，我放一塊桂皮，兩個少許白胡椒粉，然後就把鹽放進去，雞腿就是放了多鹽的味道，但如果不想要太多鹽的話</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:18.04" id="00:05:18.04" class="lt" onclick="jumptoTime(318, this.id)"><p>你也可以的，我加了一些薑蔥，加了一些乾蔥，你看看鹽的份量，你看看會不會多，這裡大約兩湯匙，我們就可以加水了，2公升水，煮滾，開中火，將雞腿全部放入鍋中，煮滾，將雞腿浸泡，可以切開雞腿的雞腿，將雞腿放入鍋中，將雞腿放入鍋中，將雞腿蓋上蓋子，大約煮25至30分鐘，大約煮25至30分鐘</p></a>
+				<a href="#00:07:35.63" id="00:07:35.63" class="lt" onclick="jumptoTime(455, this.id)"><p>可以上碟，雞腿已經出水了，可以再刺一下看看有沒有血水，刺了出來的水是白色的，所以這個雞腿已經熟了，其實25分鐘就已經完成了，現在還有1分鐘，即是24-25分鐘，現在就要看看雞腿有多大，爐火是怎樣，現在可以完全關火，如果你想再入味一點，可以關火再浸泡，現在其實已經可以吃了，現在就拿起雞腿夾出來。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:31.40" id="00:08:31.40" class="lt" onclick="jumptoTime(511, this.id)"><p>雞腿已經煮好了，看看有多光澤</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:37.40" id="00:08:37.40" class="lt" onclick="jumptoTime(517, this.id)"><p>試味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:48.31" id="00:08:48.31" class="lt" onclick="jumptoTime(528, this.id)"><p>很滑，熟透，沒有血水，鹽味剛剛好，不太鹹，吃不完的雞腿，放雪櫃放2-3日，雞腿可以直接吃，冷藏後可以拆肉，切成絲狀，配沙拉醬，我用日式芝麻醬配沙拉菜，很好吃，配粉皮，青瓜都很好，雞腿可以分2-3餐，滾水汁倒入，煮滾，不用太大火，中火煮熱就可以，滾水熱了，放雞腿，因為不夠滾水，所以我這個沒有，我把7隻雞腿改為6隻。</p></a>
+				<a href="#00:10:54.01" id="00:10:54.01" class="lt" onclick="jumptoTime(654, this.id)"><p>開中火煮，同樣浸泡，如果用慢火，煮雞，雞肉會很老，如果想滑滑雞腿，用浸泡的方法，就最好，現在也是，煮滾，用中火，不用開大慢火，煮滾，煮滾後，反轉，關火，焗，滷水雞腿已經滾起，這個，因為浸不滿，雞肉，所以，用中火，中小火，煮5分鐘，再反轉浸泡，如果浸不滿，用這個方法，如果完全浸過雞，一滾起就關火，用這個方法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:14.01" id="00:12:14.01" class="lt" onclick="jumptoTime(734, this.id)"><p>煮滾，這個雞腿已經，煮了，3分鐘，再反轉，煮了3至5分鐘，雞肉已經脹起，關火，最小火，蓋上蓋子，焗30分鐘，25-30分鐘，現在煮的時候我處理，因為我想弄一些滷蛋，你想弄一些完全熟透的蛋，還是你想弄一些糖心蛋，隨你喜歡，如果你想弄糖心蛋，滷汁就要拿出來，然後放涼，然後把煮好的蛋放進去，浸泡。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:13.87" id="00:13:13.87" class="lt" onclick="jumptoTime(793, this.id)"><p>如果想吃完全熟的滷蛋，就和它放在雞腿上煮，煮之前，我們把蛋在屁股篤一個洞，你可以用釘子，或者用我，去10元店，我這裡是2元店，去買這個用具，把蛋的屁股加一個洞，然後就可以拿蛋去煮了，我就冷水下蛋，然後就放少許鹽下去，這樣就不會太容易爆開，其實什麼方法都可以，就這樣用自己的方法去煮蛋，我就是當水滾了之後才計時。</p></a>
+				<a href="#00:14:24.09" id="00:14:24.09" class="lt" onclick="jumptoTime(864, this.id)"><p>如果你想糖心蛋就6分鐘，如果想熟透就8分鐘，沒所謂的，如果你想詳細一點的食譜，我就會在食譜打食譜的時候，詳細一點的將不同的分鐘告訴大家，蛋就已經夠時間了，然後就把它放進冷水裡，如果有冰水就更好，我今晚沒有冰，讓它浸一會，然後就可以剝殼，剝完一隻蛋了，再去剝，雞腿已經浸泡了25分鐘，如果想要更深色就可以再浸泡一會兒。</p></a>
+				<a href="#00:15:36.78" id="00:15:36.78" class="lt" onclick="jumptoTime(936, this.id)"><p>同時可以把雞蛋放進去浸泡，如果想要更深色就可以再浸泡一會兒，如果想要更深色就可以再浸泡一會兒，如果想要更深色就可以再浸泡一會兒，可以用最小的爐火，雞蛋煮滾後就可以拿出來，雞蛋煮滾後就可以拿出來，現在上碟，蛋不是完全熟透，因為我只用了6分半鐘，浸完之後再慢慢加熱再熟一點，就是這樣。</p></a>
+				<a href="#00:17:58.45" id="00:17:58.45" class="lt" onclick="jumptoTime(1078, this.id)"><p>樣子也很漂亮，cries</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:9.11" id="00:18:9.11" class="lt" onclick="jumptoTime(1089, this.id)"><p>organizations，tous</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:9.07" id="00:18:9.07" class="lt" onclick="jumptoTime(1089, this.id)"><p>pues，shred，awaiting</p></a>
+				<a href="#00:18:7.39" id="00:18:7.39" class="lt" onclick="jumptoTime(1087, this.id)"><p>ballistic，igs，oter，命，avocado，rou monet</p></a>
+				<a href="#00:18:16.88" id="00:18:16.88" class="lt" onclick="jumptoTime(1096, this.id)"><p>Bureau，attentarias，ر giverange，mans，防 Firstly</p></a>
+				<a href="#00:18:11.94" id="00:18:11.94" class="lt" onclick="jumptoTime(1091, this.id)"><p>애，Otto，overdiece</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:15.36" id="00:18:15.36" class="lt" onclick="jumptoTime(1095, this.id)"><p>ov definitely，alid</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:11.18" id="00:18:11.18" class="lt" onclick="jumptoTime(1091, this.id)"><p>这界</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:16.30" id="00:18:16.30" class="lt" onclick="jumptoTime(1096, this.id)"><p>ради，wilderness，unre PF，呼學 MJ</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:9.24" id="00:18:9.24" class="lt" onclick="jumptoTime(1089, this.id)"><p>pie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:10.92" id="00:18:10.92" class="lt" onclick="jumptoTime(1090, this.id)"><p>sa，natürlich，嗯，titles</p></a>
+				<a href="#00:18:25.53" id="00:18:25.53" class="lt" onclick="jumptoTime(1105, this.id)"><p>IF，iche</p></a>
+				<a href="#00:18:21.89" id="00:18:21.89" class="lt" onclick="jumptoTime(1101, this.id)"><p>uks，bear，已Crowd，Me описании，ourage，eder，kt，eso，�رة，另外這個雞腿，顏色也很漂亮，因為這裡沒有打燈，只用家裡的燈，也不錯，雞腿用手吃最開心，descriptions�� citrus，Mich Vegas</p></a>
+				<a href="#00:19:9.67" id="00:19:9.67" class="lt" onclick="jumptoTime(1149, this.id)"><p>aring，oleh，� quar Wię，koy</p></a>
+				<a href="#00:19:5.47" id="00:19:5.47" class="lt" onclick="jumptoTime(1145, this.id)"><p>feeling，SEC mocking，etaan，Grill，カASHUI，electr meet，marginal</p></a>
+				<a href="#00:19:12.01" id="00:19:12.01" class="lt" onclick="jumptoTime(1152, this.id)"><p>Temple，違う，äsident，Percy，seasoned，philosoph Level，uvre，好滑 好美，今天分享到此，下次再見。</p></a>
+</div>
+	</body>
+</html>

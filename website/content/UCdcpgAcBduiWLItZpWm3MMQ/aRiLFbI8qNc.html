@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>即興live黑蒜木耳雞湯一齊傾，仲有新書睇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'aRiLFbI8qNc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>即興live黑蒜木耳雞湯一齊傾，仲有新書睇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，有幾多人?</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>有三個，唔緊要，多謝你地黎睇。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>今日係咩日子呢?</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>就係呢個長周末啦。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>多人講呢，2月其實就有安省啦。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>2月就有個長周末叫做Family Day嘅。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>每年呢個時間我地都會去旅行嘅。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>但係呢兩年冇啦，呢日就第三年啦已經。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>咁就冇啦，咁所以呢，萬電都要拍下片呀，係屋企呀。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>不如同大家傾下計呀，整下嘢食呀，順便當係整落一個早午餐啦。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>早午餐整雞湯呀，你話幾勁呀。</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>咁我地呢，咁我地呢，依家做啲咩呢?</p></a>
+				<a href="#00:00:59.00" id="00:00:59.00" class="lt" onclick="jumptoTime(59, this.id)"><p>歡迎各位黎到呀，咁我地呢，依家呢，首先第一樣嘢就係黑蒜，咁我呢就最近買左啲黑蒜。</p></a>
+				<a href="#00:01:15.00" id="00:01:15.00" class="lt" onclick="jumptoTime(75, this.id)"><p>好，我最近買左啲黑蒜，啱啱開過佢嘅啫。</p></a>
+				<a href="#00:01:19.00" id="00:01:19.00" class="lt" onclick="jumptoTime(79, this.id)"><p>我就係韓國嗰啲超級市場嗰度買嘅。</p></a>
+				<a href="#00:01:23.00" id="00:01:23.00" class="lt" onclick="jumptoTime(83, this.id)"><p>咁我地見到，係啦，係我韓國超級市場買嘅。</p></a>
+				<a href="#00:01:27.00" id="00:01:27.00" class="lt" onclick="jumptoTime(87, this.id)"><p>買左一個黑蒜，有個全自然喺度，咁佢就話係，有機農場嘅，咁你地可以睇下，呢個唔係廣告嚟㗎，拎開先啦咁啦。咁樣呢就買左啲黑蒜，咁我諗住啲黑蒜除咗攞黎做咩好呢?</p></a>
+				<a href="#00:01:43.00" id="00:01:43.00" class="lt" onclick="jumptoTime(103, this.id)"><p>咁但係好多人都話黑蒜係好有益嘅，咁我地，開黎睇下，佢一隻係獨子蒜咁嘅形式嘅黑蒜，係咁樣嘅。</p></a>
+				<a href="#00:01:55.00" id="00:01:55.00" class="lt" onclick="jumptoTime(115, this.id)"><p>獨子蒜形式嘅黑蒜。</p></a>
+				<a href="#00:01:59.00" id="00:01:59.00" class="lt" onclick="jumptoTime(119, this.id)"><p>咁樣呢，我就開左兩個live，除咗facebook之外呢，就係youtube。</p></a>
+				<a href="#00:02:7.00" id="00:02:7.00" class="lt" onclick="jumptoTime(127, this.id)"><p>咁就見到呢，係兩邊唔同角度嘅live嚟嘅。</p></a>
+				<a href="#00:02:11.00" id="00:02:11.00" class="lt" onclick="jumptoTime(131, this.id)"><p>咁樣呢，話好多年，幾年前呢，好興好多人屋企呢，整黑蒜㗎。</p></a>
+				<a href="#00:02:17.00" id="00:02:17.00" class="lt" onclick="jumptoTime(137, this.id)"><p>字幕由Amara.org社區提供，你們有吃過嗎?</p></a>
+				<a href="#00:02:20.99" id="00:02:20.99" class="lt" onclick="jumptoTime(140, this.id)"><p>我發現我沒有吃過，我有朋友做過給我，我好像口垢般吃過，但沒有用來煮東西，後來發現原來可以用來煮東西，都可以的，聞起來很香，這隻是一粒粒的，如果在家可以做一粒粒的，或者蒜頭很多瓣的都可以，它說是超級有益，因為經過十多天的發酵，所以就多加了辣味，然後就多了一些好的物質，就這樣吃都很好吃，但有很強的蒜味。</p></a>
+				<a href="#00:03:42.99" id="00:03:42.99" class="lt" onclick="jumptoTime(222, this.id)"><p>看你自己喜不喜歡，我這次用來煲湯，不是煲老火湯，只是煲湯，大概半小時就煲好了，這個Live應該一小時就煲好了，需要的材料有，冬菇，已經洗淨浸泡了，還有木耳，其實冬菇和黑蒜都可以，但我喜歡加不同的材料，加了黑蒜和冬菇就有木耳，還有黃油雞，看看你家裡拿到什麼，最近突價，現在什麼都貴，看到突價就馬上不買。</p></a>
+				<a href="#00:04:39.33" id="00:04:39.33" class="lt" onclick="jumptoTime(279, this.id)"><p>現在一鍋湯，我家兩個人或四個人，一個鍋湯不需要用整隻雞，只需要用半隻雞就行，雞已經處理好，另外一半就用來今晚做金針雲耳紅棗蒸雞，我喜歡用食物盒裝起，放在冰箱，很方便，除了蒜之外，還要加一些薑，我會加一些生蒜，令味道更濃，另外還有一種配料，就是米酒，這個湯比較台式，其實黑蒜很多時候都是從韓國來的，韓國式的都有做不同的黑蒜雞湯，你們可以去找找。</p></a>
+				<a href="#00:06:15.13" id="00:06:15.13" class="lt" onclick="jumptoTime(375, this.id)"><p>我會加一些米酒，這個米酒是在台灣人超市買的，但這裡的米酒是有鹽味的，因為怕人們會喝酒，所以這裡的米酒，廚用的酒都是有鹽味的，甚至乎你家裡有玫瑰露酒，它全部都是會有鹹味的，所以調味的時候要試一下，試身體怎樣做，第一樣東西，我們先和雞出水，做這個雞湯有兩種人說過有不同的做法，大家可以留言，我看看能不能看到你們的留言。</p></a>
+				<a href="#00:07:22.66" id="00:07:22.66" class="lt" onclick="jumptoTime(442, this.id)"><p>如果有的話，有兩種做法，一種是不出水直接煎雞，另一種是出水再煮，視乎你自己喜歡怎樣，如果不出水，我先煮水，剛才忘記了，看著開通Live，實在太沒品質了，人家做Live可以把你們的留言放在Live的面，我就不懂，另外我不懂得開兩邊，希望大家可以看，偷師不用偷師，我煮食是自己喜歡，不是煮得很厲害，很多時候我的薑是連皮的，如果你不喜歡就不要連皮。</p></a>
+				<a href="#00:08:46.66" id="00:08:46.66" class="lt" onclick="jumptoTime(526, this.id)"><p>一會兒我會用薑出水和兩片煮，歡迎大家收看我的直播，一早煮這麼多東西，是啊 我打算開直播，反正都沒什麼街去，雖然今天是家庭日，多倫多或安省的家庭日，那，商場也不是說，大部分開，但最主要的譬如Eaton Centre，或者那些Outlet Mall，就開的 因為很多時候，人們其實在這個時間。</p></a>
+				<a href="#00:09:35.26" id="00:09:35.26" class="lt" onclick="jumptoTime(575, this.id)"><p>以前，這個時間人們就會，去美國那邊，去美國那邊幹嘛呢，就是去Outlet那邊，買東西，因為這個時間，美國是不是這個時間呢，應該是這個時間 我們家庭日，他們應該是，President Day，他們應該是一個假期，這個時間，告訴你 平時，現在疫情不止 沒得過，以前，這個時間如果去美國，他們那個Outlet的。</p></a>
+				<a href="#00:10:11.26" id="00:10:11.26" class="lt" onclick="jumptoTime(611, this.id)"><p>特價是比，聖誕節那段時間，還便宜，因為是換季，他們，上一季那些，全部都做特價，所以超便宜，如果我不會去長的旅行，這個時間因為太冷，很多時候我都會，去美國那邊，去收拾便宜的東西，加拿大人去美國其實很多時候，都是去買東西，我不知道你們，知不知道，好像深圳人，去香港買東西，即將可以去，但還沒便宜，現在什麼都貴。</p></a>
+				<a href="#00:11:1.26" id="00:11:1.26" class="lt" onclick="jumptoTime(661, this.id)"><p>真的，衣食住行，你講得出的東西，全部都貴，有些是不察覺，最搞笑的有些，不單止，價錢沒變，但包裝就轉了，然後裡面的東西就縮水了，20% 30%，其實跟加價沒分別，好，這些是菇，我正在煮水，這些是菇，我已經切好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:38.27" id="00:11:38.27" class="lt" onclick="jumptoTime(698, this.id)"><p>所以沒有什麼特別要做，待會我會留一些菇來，用來煮水，這樣會比較好吃，我把菇切半，因為菇很大隻，切半一口一口會比較方便</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:0.33" id="00:12:0.33" class="lt" onclick="jumptoTime(720, this.id)"><p>斜斜地切</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:10.33" id="00:12:10.33" class="lt" onclick="jumptoTime(730, this.id)"><p>很開心有人來看Live，這個就是白貝木耳，看你喜不喜歡加進去，因為白貝木耳其實是很好的，很好的，也有清血毒，清腸，一些清道的東西，我會把它切碎一點，它有一個硬硬的東西，如果有的話就切走，切碎一點，待會切的時候會比較方便，不要切太大塊，因為剛才切兩塊，我以為會很小，一切起又很大，這裡有兩塊木耳。</p></a>
+				<a href="#00:13:11.33" id="00:13:11.33" class="lt" onclick="jumptoTime(791, this.id)"><p>非常簡單方便</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:14.33" id="00:13:14.33" class="lt" onclick="jumptoTime(794, this.id)"><p>現在就放水，還有些蔥，如果出水的話有些蔥就最好了，我來拿水</p></a>
+				<a href="#00:13:38.75" id="00:13:38.75" class="lt" onclick="jumptoTime(818, this.id)"><p>amientoDesольше reck replica，chloraaaa青 adopted</p></a>
+				<a href="#00:14:3.13" id="00:14:3.13" class="lt" onclick="jumptoTime(843, this.id)"><p>scoring，otom samh LIAM</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:3.69" id="00:14:3.69" class="lt" onclick="jumptoTime(843, this.id)"><p>voice，painful，actually，Detroit</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:56.55" id="00:13:56.55" class="lt" onclick="jumptoTime(836, this.id)"><p>� mobil，montage</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:2.15" id="00:14:2.15" class="lt" onclick="jumptoTime(842, this.id)"><p>Elipełnie，Mrsẩ，世界，TC，viscosity，она，иф，句 Sache，ㅎ，aders，insult</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:4.07" id="00:14:4.07" class="lt" onclick="jumptoTime(844, this.id)"><p>essee，safels</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:0.19" id="00:14:0.19" class="lt" onclick="jumptoTime(840, this.id)"><p>EN centimeter，Marianfal notre，loading，pH，CS，unnie，Soon，drum，madness，peare</p></a>
+				<a href="#00:13:56.39" id="00:13:56.39" class="lt" onclick="jumptoTime(836, this.id)"><p>Tudo，attering，pushing，peł upsetting</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:3.97" id="00:14:3.97" class="lt" onclick="jumptoTime(843, this.id)"><p>Spike，���ним，해�itu，변，流</p></a>
+				<a href="#00:14:4.29" id="00:14:4.29" class="lt" onclick="jumptoTime(844, this.id)"><p>stamping，Pors frequency</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:0.01" id="00:14:0.01" class="lt" onclick="jumptoTime(840, this.id)"><p>máIndilar，stoff，Duch，арищ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:59.93" id="00:13:59.93" class="lt" onclick="jumptoTime(839, this.id)"><p>Dynasty，uyu，su，behind</p></a>
+				<a href="#00:13:51.61" id="00:13:51.61" class="lt" onclick="jumptoTime(831, this.id)"><p>вместе，pie，masa，המ� girls</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:6.29" id="00:14:6.29" class="lt" onclick="jumptoTime(846, this.id)"><p>노래，stimulus</p></a>
+				<a href="#00:13:49.53" id="00:13:49.53" class="lt" onclick="jumptoTime(829, this.id)"><p>constjustbung，raid</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:55.65" id="00:13:55.65" class="lt" onclick="jumptoTime(835, this.id)"><p>πο，煲湯的時候就不用放蔥，我們出水的時候才放的，切了頭去，煲湯是待會吃的時候才放一點點的，所以我蔥就只放蔥段，待會用來出水，剩下的這些我可以切碎，待會用來灑在上面，放入薑片和蔥，然後放入雞肉，雞肉應該放涼</p></a>
+				<a href="#00:15:7.60" id="00:15:7.60" class="lt" onclick="jumptoTime(907, this.id)"><p>posterior，nuestro，CDC，Tiere，Happiness，anor，Animals，gravit cheat，blue，�ánd</p></a>
+				<a href="#00:15:26.30" id="00:15:26.30" class="lt" onclick="jumptoTime(926, this.id)"><p>うわ，BR，박</p></a>
+				<a href="#00:15:17.68" id="00:15:17.68" class="lt" onclick="jumptoTime(917, this.id)"><p>다�했던，wie，uição，From</p></a>
+				<a href="#00:15:12.24" id="00:15:12.24" class="lt" onclick="jumptoTime(912, this.id)"><p>empresas，Bereich，earliest</p></a>
+				<a href="#00:15:21.00" id="00:15:21.00" class="lt" onclick="jumptoTime(921, this.id)"><p>HUD，Maori</p></a>
+				<a href="#00:15:10.94" id="00:15:10.94" class="lt" onclick="jumptoTime(910, this.id)"><p>otherwise，adle，rabbit，Da Freddy</p></a>
+				<a href="#00:15:8.44" id="00:15:8.44" class="lt" onclick="jumptoTime(908, this.id)"><p>eliminfind，πά，maps，snapshot，dor accountability，ичего，� wifi，Forgivehhhh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:28.04" id="00:15:28.04" class="lt" onclick="jumptoTime(928, this.id)"><p>Caroline，Hour</p></a>
+				<a href="#00:15:9.64" id="00:15:9.64" class="lt" onclick="jumptoTime(909, this.id)"><p>filmed state，earlier，Rover rely sandwich</p></a>
+				<a href="#00:15:26.22" id="00:15:26.22" class="lt" onclick="jumptoTime(926, this.id)"><p>初 Than bends，rant</p></a>
+				<a href="#00:15:21.46" id="00:15:21.46" class="lt" onclick="jumptoTime(921, this.id)"><p>Sant seiz，peanuts，lesser，bib，companies，輕intendent，bracht，Pix，quien</p></a>
+				<a href="#00:15:23.00" id="00:15:23.00" class="lt" onclick="jumptoTime(923, this.id)"><p>Recent，sud，abandoned，rospect chickens，'?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:25.02" id="00:15:25.02" class="lt" onclick="jumptoTime(925, this.id)"><p>especialzione，biliyor，ela</p></a>
+				<a href="#00:15:27.64" id="00:15:27.64" class="lt" onclick="jumptoTime(927, this.id)"><p>Govern，Tools</p></a>
+				<a href="#00:16:1.92" id="00:16:1.92" class="lt" onclick="jumptoTime(961, this.id)"><p>40 drivers，inflamıl Besarak，düşün，safely，تيället</p></a>
+				<a href="#00:15:56.08" id="00:15:56.08" class="lt" onclick="jumptoTime(956, this.id)"><p>воз，schol，kita，GI</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:2.26" id="00:16:2.26" class="lt" onclick="jumptoTime(962, this.id)"><p>wi Carter，� ம，있는，Wa</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:56.50" id="00:15:56.50" class="lt" onclick="jumptoTime(956, this.id)"><p>supervision，Breakfast</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:45.60" id="00:15:45.60" class="lt" onclick="jumptoTime(945, this.id)"><p>isin，の，Fun，zza</p></a>
+				<a href="#00:15:54.02" id="00:15:54.02" class="lt" onclick="jumptoTime(954, this.id)"><p>Maroin，ortion，inc，producing，cess</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:56.44" id="00:15:56.44" class="lt" onclick="jumptoTime(956, this.id)"><p>attaching，schinal</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:47.84" id="00:15:47.84" class="lt" onclick="jumptoTime(947, this.id)"><p>Bangladesh，OW，canvas，09，Vis motives，Ald sits，lic ق，Bon Derek，ssä</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:2.36" id="00:16:2.36" class="lt" onclick="jumptoTime(962, this.id)"><p>delete，Cerуг，freshmen，國 Gross，regulatory，proclaim XV，civ dipl，resolving，iasm，priv impression，STE，operator，Å Users</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:56.64" id="00:15:56.64" class="lt" onclick="jumptoTime(956, this.id)"><p>drinks，JAC Walking，omnia</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:4.25" id="00:16:4.25" class="lt" onclick="jumptoTime(964, this.id)"><p>放入所有雞肉，可以加多幾粒辣椒一起出水，去喝茶?好啊!這個時間喝茶正啊!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:51.65" id="00:16:51.65" class="lt" onclick="jumptoTime(1011, this.id)"><p>哈哈哈哈，就好啦!可以去喝茶，我不去啊!這麼冷，我不想出街，好!首先第一樣東西就傻了，就是記住!冷水下!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:6.65" id="00:17:6.65" class="lt" onclick="jumptoTime(1026, this.id)"><p>哈哈哈哈，所以很多人經常在說什麼什麼你教人家，你教什麼人啊?教，怎麼教呢?告訴你真的要先加個Q，怎麼教呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:18.65" id="00:17:18.65" class="lt" onclick="jumptoTime(1038, this.id)"><p>怎麼教呢?大家都是煮東西吃，我喜歡煮東西吃，有個頻道在這裡，不是因為想教人，不是真的想做老師，不是真的說什麼，只是真的喜歡煮東西吃，然後呢，自己又做得不好，所以就經常去看書啊，去上網啊，去學啊問家人啊，問媽媽啊，問叔叔啊，總之問家人或身邊煮東西吃的，問他們，然後自己就試，試的時候就想不如拍片，可能有些人跟我一樣。</p></a>
+				<a href="#00:17:55.65" id="00:17:55.65" class="lt" onclick="jumptoTime(1075, this.id)"><p>都是不懂的，然後經常被人罵，你不懂就不要拍片啊，拍片是美國門檻要高到，你一定要是廚房師傅，你一定要是大廚，你一定要是，在酒樓裡面的行政總廚，你才有資格拍片，真的想了一下，有一點生氣，我不明白，是不是真的一定要是厲害的人，我心想最紅的，師傅，現在拍片都是在茶餐廳，那你怎麼樣，那你為什麼一定要是，大廚啊。</p></a>
+				<a href="#00:18:33.65" id="00:18:33.65" class="lt" onclick="jumptoTime(1113, this.id)"><p>不要玩了，為什麼不可以，拍片啊，為什麼我不懂都不可以拍片啊，我真的不明白，有些人是真的，有些人是真的，有些留言，是說叫我去死，是啊我收到留言叫我去死，或者你老公忍不住，你快點死吧，你老公都會死啊，瘋了，我當然刪掉了，或者已經可能在，youtube已經幫我screen了，因為說了一些東西，可能一些字眼都會screen了。</p></a>
+				<a href="#00:19:11.65" id="00:19:11.65" class="lt" onclick="jumptoTime(1151, this.id)"><p>沒有了，但有時回想起來都會很生氣，但有時要跟自己說不要生氣，因為你上網了，這個網上的世界，別人的嘴在別人那裡，那你怎樣?</p></a>
+				<a href="#00:19:26.83" id="00:19:26.83" class="lt" onclick="jumptoTime(1166, this.id)"><p>你找他出來打?</p></a>
+				<a href="#00:19:28.83" id="00:19:28.83" class="lt" onclick="jumptoTime(1168, this.id)"><p>你不可能的，我也不會打人的，那怎樣?硬吃?</p></a>
+				<a href="#00:19:33.83" id="00:19:33.83" class="lt" onclick="jumptoTime(1173, this.id)"><p>因為你上網了，上網隨時任何人都可以，都可以說你，雖然現在很多時候，都是在說，你做人都會有些態度吧，做人都應該會有禮貌吧，說真的，放上YOUTUBE，這個是免費的世界，免費的，你可以開了YOUTUBE去做，那有些人就說，我花時間看你，多謝你花時間看我，但是，不是你花了時間看我，我也花了時間拍片。</p></a>
+				<a href="#00:20:12.83" id="00:20:12.83" class="lt" onclick="jumptoTime(1212, this.id)"><p>就可以這樣說我，突然間在這個時間，突然間吐槽，因為真的，我不是教煮食，我只是想跟大家分享，我煮食開心，學到什麼，我懂煮的，跟大家一起分享也好，或者是，給自己過日子，告訴自己，因為其實，拍片，其中一樣東西，可以令我專注在，做一些，我需要思考的東西，慢慢去做，令我放鬆一點，但是拍的時候我也可以放鬆，剪片的時候緊張一點。</p></a>
+				<a href="#00:20:58.83" id="00:20:58.83" class="lt" onclick="jumptoTime(1258, this.id)"><p>但是播出來收到，人們說的話，就會覺得為什麼呢，為什麼，為什麼人們這麼不友善，我真的不明白，很多謝，現在有人在兩邊都有看，煮食其實是減壓的，基本上，但是自己容易怒氣，但我身體上是不可以怒氣的，不要說這些不開心的事了，說些開心的事吧，這裡的材料都差不多了，我先切蔥，等它出水就可以了，現在就可以用這個做早午餐。</p></a>
+				<a href="#00:22:19.87" id="00:22:19.87" class="lt" onclick="jumptoTime(1339, this.id)"><p>煮完之後應該十一點都可以了，然後就可以開箱看我新買的書了，學習的不外乎就是上網問人和看書，我看很多書的，但我又不可以很長時間看，因為我每次看書都是看幾頁的，精神集中不到可以很看得到，但我自己喜歡看書，開始了，你看到一些浮沫出來了，等到它再滾起之前拿走雞，然後就可以煮了，拿個有洞的來煮。</p></a>
+				<a href="#00:23:30.87" id="00:23:30.87" class="lt" onclick="jumptoTime(1410, this.id)"><p>這個光線你們喜歡這個光線還是平時用很大的光線呢?</p></a>
+				<a href="#00:23:44.87" id="00:23:44.87" class="lt" onclick="jumptoTime(1424, this.id)"><p>你比較喜歡哪個?</p></a>
+				<a href="#00:23:46.24" id="00:23:46.24" class="lt" onclick="jumptoTime(1426, this.id)"><p>這個還是你們喜歡?</p></a>
+				<a href="#00:23:52.24" id="00:23:52.24" class="lt" onclick="jumptoTime(1432, this.id)"><p>這個?</p></a>
+				<a href="#00:23:56.24" id="00:23:56.24" class="lt" onclick="jumptoTime(1436, this.id)"><p>我發覺這個暗一點，但柔和一點，我們可以夾起它，有時有些浮沫，撥開它，讓雞肉不要碰到浮沫，關掉火，滾起了，這個湯，這個水就不要了，因為骨頭出了這些東西出來，待會湯就會清很多，youtube上網很多人都很mean，我為什麼又要想這些，就是連你拿筷子拿得好不好都會被罵，總之好像你一出生就要被罵。</p></a>
+				<a href="#00:25:21.03" id="00:25:21.03" class="lt" onclick="jumptoTime(1521, this.id)"><p>我喜歡的可以將湯沖一沖水，但我避開浮沫，所以沒有浮沫，就可以馬上煮，將果醬倒入鍋中，將香菇和香菇水放入鍋中，然後把蒜頭和木耳放進去，然後把蒜頭和木耳放進去，然後就可以加水，然後就煮，水比雞翼還要冷，當然你可以用LC煲煮，我今天用雅煲煮雞翼，鬆開它，平均地放進去，再加一點水，就是這樣了，浸過了，然後我們可以開火。</p></a>
+				<a href="#00:27:45.82" id="00:27:45.82" class="lt" onclick="jumptoTime(1665, this.id)"><p>慢慢煮，好耶，完成了，水滾了之後，再煮半小時就可以了，你好，你好啊，我看到咖啡包了，我拿去那邊給大家看看，這邊，就是這樣，現在我們就煮了，剩下的，還有一樣東西，這麼快，米酒，放一點點米酒進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:28:38.82" id="00:28:38.82" class="lt" onclick="jumptoTime(1718, this.id)"><p>大概這麼多</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:28:44.82" id="00:28:44.82" class="lt" onclick="jumptoTime(1724, this.id)"><p>這個碗小半碗就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:28:48.82" id="00:28:48.82" class="lt" onclick="jumptoTime(1728, this.id)"><p>這樣就可以了，拿著米酒一直看著，但還是忘記了要攪拌好，順便就醃這個雞，今晚吃的這個，放一點點在這邊，沒有任何東西了，豉油糖</p></a>
+				<a href="#00:29:11.82" id="00:29:11.82" class="lt" onclick="jumptoTime(1751, this.id)"><p>豉油糖，和我放豉油糖一樣，什麼都不放，好，不要寫，不要寫，不要寫，不要寫，不要寫</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:29:26.82" id="00:29:26.82" class="lt" onclick="jumptoTime(1766, this.id)"><p>少許糖，放多一點，少許，少許糖，少許豉油，攪拌好，今晚就拿來金針鱗蒸雞，今天就可以一整天吃一隻雞了，如果大家有什麼想跟我說的話，可以留言告訴我，我一看到就會跟你說，當然記得啦，家飛，但這幾排我真的很少看龍馬老師的直播，所以不是經常跟其他人聊天，醃好後就蓋上，然後就可以放雪櫃，今晚才拿來蒸，我現在經常買外賣，剩下很多盒子。</p></a>
+				<a href="#00:31:12.23" id="00:31:12.23" class="lt" onclick="jumptoTime(1872, this.id)"><p>這些盒子其實都可以放在微波爐，但我不會這樣做，只會用來醃東西，因為有很多不同尺寸的，我多數用這個尺寸，我現在就用幾個盒子醃東西，湯煲煲緊嘅時候畀大家睇下啦，下一條片啦，呢個咩嚟㗎，呢個呢就係，燒肉呀，咁我整咗兩嚿，已經呢，雪咗呢超過，十幾呀，十幾個鐘㗎啦，咁一陣間呢就會批咗啲鹽，我一陣間就會晏啲呢。</p></a>
+				<a href="#00:32:2.41" id="00:32:2.41" class="lt" onclick="jumptoTime(1922, this.id)"><p>我就會拍片呢，就整呢個燒肉嘅，咁但係當然唔係live啦，咁，咁但係呢大家都可以睇下，我就諗住用兩個方法呢，嚟整燒肉嘅，用兩個方法嚟整燒肉嘅，一個方法呢就係用蒸焗爐嘅方法焗啦，另一個呢就係用個鑊仔煎嘅，咁我都好期待個鑊仔嗰個未試過用鑊呀，因為平時多數用焗爐整㗎，咁未試過用鑊，咁我試下用個鑊嚟煎吓整唔整到。</p></a>
+				<a href="#00:32:36.93" id="00:32:36.93" class="lt" onclick="jumptoTime(1956, this.id)"><p>睇下可以比較一下兩種，係會點嘅，咁呢個呢就攞返入雪櫃啦，攞返入雪櫃，跟住呢，一陣間晏啲就拍，我今日去拍，嗱今日呢我做咗呢個live啦，之後呢我就會，Hello你好，係啦，咁樣呢，之後，嗱我依家呢就做呢個live啦，之後食午餐啦，跟住呢就會拍呢條片，仲會做多個，我仲要排埋今日，我希望今日可以再拍多一條係，因為我買咗兩份豬腩呀。</p></a>
+				<a href="#00:33:16.09" id="00:33:16.09" class="lt" onclick="jumptoTime(1996, this.id)"><p>我想再拍多一條豬腩，我諗緊呢係整梅菜扣肉，定係整乜嘢，你哋都可以畀啲意見我呀，整梅菜扣肉定係整乜嘢好，係呀，燒腩呀，係啦，咁我燒腩自己喺屋企整，依家好多人都整過㗎啦，不過我想試下，我自己都整過好多次，但係先發覺到呢，原來我係冇拍片嘅，所以呢我就整條拍片就做埋比較啦，一個就係焗，一個就係煎嘅。</p></a>
+				<a href="#00:33:50.53" id="00:33:50.53" class="lt" onclick="jumptoTime(2030, this.id)"><p>咁我繼續攞返埋佢先，咁另外嗰份豬腩呢，另外嗰份豬腩呢，不如... 係啦，依家仲慢慢煲緊，另外嗰份豬腩呢，整梅菜扣肉好定係整咩好呢?</p></a>
+				<a href="#00:34:6.34" id="00:34:6.34" class="lt" onclick="jumptoTime(2046, this.id)"><p>有冇好意見呢?</p></a>
+				<a href="#00:34:9.34" id="00:34:9.34" class="lt" onclick="jumptoTime(2049, this.id)"><p>梅菜扣腩肉呢我就...</p></a>
+				<a href="#00:34:11.34" id="00:34:11.34" class="lt" onclick="jumptoTime(2051, this.id)"><p>其實又唔整曬成份嘅，可以整梅菜腩肉，另外可以再整多份，頭先嗰個size四方形，仲可以整咩好呢?</p></a>
+				<a href="#00:34:20.34" id="00:34:20.34" class="lt" onclick="jumptoTime(2060, this.id)"><p>田角煮?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:34:21.34" id="00:34:21.34" class="lt" onclick="jumptoTime(2061, this.id)"><p>因為呢依家工作越黎越忙，咁我好難呢，即係每個星期，我又限定自己，因為呢，你唔限定自己</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:34:37.34" id="00:34:37.34" class="lt" onclick="jumptoTime(2077, this.id)"><p>你唔俾自己得，你好難做嘢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:34:40.34" id="00:34:40.34" class="lt" onclick="jumptoTime(2080, this.id)"><p>你就會一蹶不振，再加上呢，人妻家為主主賀案呢，其實仲要有一個，一個人妻家為主主賀案，其實仲會喺，另外一個平台，熱血時報嗰度播，所以每個星期，我盡量都唔甩場，除非我真係有事，所以依家呢，如果有長周末嘅話，我又遇到時間遇到材料，我都諗住一次過拍曬，一次過拍多啲，留喺度做backup，隨時就可以再剪。</p></a>
+				<a href="#00:35:25.34" id="00:35:25.34" class="lt" onclick="jumptoTime(2125, this.id)"><p>其實呢，本身已經有條片拍好曬，係整開蠔同埋整蜆，即係開蜆，Hello你好呀，MY我見到，好多時都係，留言見到你，但係好少喺live見到你，腩肉可以整東坡肉，東坡肉女仔紅燒肉嗰啲整過，拍咗片，好依家呢，趁呢個時間，不如再傾下我買咗啲咩書，反正都等，不過我要set好個陣，陣間呢片如果雞湯，如果要片浮沫。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:36:11.34" id="00:36:11.34" class="lt" onclick="jumptoTime(2171, this.id)"><p>我set定個陣先，我set定個陣先，我set定個陣先，我set定個陣先，我set定個陣先，現在等它慢慢煮，它現在還在煮，在這個時間，我就不如和大家聊一下我買的書，這些書未必是最新出版的書，但是我最新買的，這兩本書是在網上博客來買的，這兩本是在台灣人超市台式超市買的，都是一些關於食材的書，現在的環境。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:37:16.62" id="00:37:16.62" class="lt" onclick="jumptoTime(2236, this.id)"><p>再加上就算去街市，我們這裡沒有街市，沒有濕的街市，很少當然會有，但很遠的，可能要去農場或是去市場，才會有所謂的濕街市，否則我們多數會去超市，很多東西都會包裝得一樣，我懷念小時候跟媽媽去香港的街市，或者跟我叔叔去香港的街市，有些是大型市政局的街市，有些是屋邨裏面，我在香港的時候有住過屋邨，屋邨裏面或屋苑都會有自己的街市。</p></a>
+				<a href="#00:38:6.62" id="00:38:6.62" class="lt" onclick="jumptoTime(2286, this.id)"><p>我小時候就已經很喜歡逛街市，我見到很多人會見到，有些不同的人，例如買菜、豬肉、牛肉、豬肉檔，我都很開心，唯獨一樣我不敢去的就是雞檔，我從小到大都很怕雞，我會避開雞檔，所以在這方面我會避開雞檔那邊，到了這裡結婚，這裡就不會見到這些雞檔，雞是一隻隻已經斬光，我就不太怕，可以跟大家一起煮雞，所以我很喜歡去看人家賣菜的互動。</p></a>
+				<a href="#00:39:1.40" id="00:39:1.40" class="lt" onclick="jumptoTime(2341, this.id)"><p>很好笑的，好像賣菜一樣，多少錢一斤，這個多少，新不新鮮，見到他們在說話，媽媽跟他們說話，會不會搭條蟲，我覺得是很開心的一個經驗，但現在當然有疫情，就算去超級市場，你不能跟人互動，你進去一個超級市場，雖然很大很漂亮，我之前都有不同的影片，都拍過我們去了不同的超級市場，parachute，taxes。</p></a>
+				<a href="#00:39:34.90" id="00:39:34.90" class="lt" onclick="jumptoTime(2374, this.id)"><p>mejorar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:39:35.90" id="00:39:35.90" class="lt" onclick="jumptoTime(2375, this.id)"><p>att powous，stadt</p></a>
+				<a href="#00:39:36.18" id="00:39:36.18" class="lt" onclick="jumptoTime(2376, this.id)"><p>ocal，мор sú，感覺很冷，你進去就看到東西，然後看到有什麼用，對的就放進籃子裡，然後走，你會覺得，真的只是購物，每種人與人之間的，互動關係，還有會學到東西，譬如我記得媽媽以前都會說，我去到豬肉檔，我說不撕的，豬肉這麼多部位，你只買豬肉，你可以問豬肉檔的叔叔，我豬肉是用來蒸的，他就切一塊蒸的豬肉給你。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:40:19.53" id="00:40:19.53" class="lt" onclick="jumptoTime(2419, this.id)"><p>一個是用來做豬扒的，他就切豬扒給你，他會告訴你這種是怎樣，怎樣做好，大家這種互動，我就會覺得學到很多東西，這個就是我喜歡逛街市，所以長大後，去旅行，我都很喜歡逛人家的超市，街市，超市都會逛的，但我會很喜歡逛他們的農場市場，或者他們的街市，很開心的，去看看人家不同的東西，人家怎樣擺，人家有什麼地道的。</p></a>
+				<a href="#00:40:58.53" id="00:40:58.53" class="lt" onclick="jumptoTime(2458, this.id)"><p>在地的，當做的是什麼，都不同的，我不知道你們喜不喜歡，但我自己就很喜歡，這些就是我在博客內買的，我買了這本，如果你在網上買書，很多時候都是在博客內，很多時候你就會上到網上，去選自己喜歡的書，來來去去都是看那些，我上去博客內，先看一下，來來去去都是，我有一個博客內的app，現在很多時候，我現在看書。</p></a>
+				<a href="#00:41:52.53" id="00:41:52.53" class="lt" onclick="jumptoTime(2512, this.id)"><p>我會用我的ipad看，ok，早安，早安，下次見，下次再出live的時候見，拜拜，你們知不知道我現在很多時候都會在網上，薄熙來是我最主力去網上買書，但是很多時候你想買的書我看看，例如我下次想買就是這本，我有他的…因為我很喜歡他的，你們喜歡嗎?</p></a>
+				<a href="#00:42:30.25" id="00:42:30.25" class="lt" onclick="jumptoTime(2550, this.id)"><p>我很喜歡…我很喜歡這個韓國廚師的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:42:36.41" id="00:42:36.41" class="lt" onclick="jumptoTime(2556, this.id)"><p>möchte Stones，mixes，belt，елич，PREcast，destro，shield，positiv，küç，designed，孫榮，你們知不知道?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:42:47.07" id="00:42:47.07" class="lt" onclick="jumptoTime(2567, this.id)"><p>我本身有本書叫正韓式，最近出了這本韓式小菜，我在考慮買真正的書還是買電子書，因為電子書快，現在，都是一樣，差不多貴，電子書快，你就可以，買了之後，可以入到APP，立即看，但實體書，拿起感覺，很不同，今天加拿大放假，我見到，有朋友在Facebook問，今天是加拿大放假，很不同，拿著本書，和。</p></a>
+				<a href="#00:43:37.07" id="00:43:37.07" class="lt" onclick="jumptoTime(2617, this.id)"><p>用這個，上網，是完全兩回事，這裡有浮沫出現，差不多，我見到浮沫，可以撇走，湯就會很清，全程用中火煮，煮大約30分鐘，煮沸，蓋上蓋子，煮30分鐘，就可以吃了，調味，可以加少少鹽，調味，純粹的蒜頭，黑蒜，木耳，冬菇，三黑，這些食物很有益，現在天氣寒冷，香港很冷，加拿大當然冷，這個時間，煮湯，倒飯進去，就這樣飲，很正。</p></a>
+				<a href="#00:44:53.07" id="00:44:53.07" class="lt" onclick="jumptoTime(2693, this.id)"><p>蓋上蓋子，調回中火，煮30分鐘，就可以了，其實我25分鐘也可以，好 那我們就可以聊天，聊大約25分鐘，那我們說回，如果我們回到這邊，向這邊，我們回到這邊，那邊在煮湯，你在這邊過來，在Facebook過來，那邊鏡頭就斜邊，斜邊Facebook，我看到，我在Facebook那邊過來，跳過來這邊YouTube。</p></a>
+				<a href="#00:45:37.23" id="00:45:37.23" class="lt" onclick="jumptoTime(2737, this.id)"><p>因為我這邊是兩邊鏡頭，一邊是斜的，我這邊開來給你看，給Facebook的朋友，給YouTube的朋友，看看我們Facebook，那個樣子是怎樣，我看看，看看Facebook的Live，是怎樣，開了開了，我現在先，看看，自己，給你看，他們那個鏡頭，是這樣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:46:21.23" id="00:46:21.23" class="lt" onclick="jumptoTime(2781, this.id)"><p>小一點，就行了，他們那個鏡頭是，向斜，他們那個鏡頭是向斜的，那YouTube的鏡頭，是向直的，就是這樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:46:43.83" id="00:46:43.83" class="lt" onclick="jumptoTime(2803, this.id)"><p>可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:46:50.14" id="00:46:50.14" class="lt" onclick="jumptoTime(2810, this.id)"><p>有人跟我說，Facebook的鏡頭比較清晰，Youtube的顏色沒那麼黃，Youtube的比較黃，我也不知道為什麼，是手機的問題?</p></a>
+				<a href="#00:47:6.14" id="00:47:6.14" class="lt" onclick="jumptoTime(2826, this.id)"><p>我不知道我設定了什麼，你也知道，我經常都，我不知道，我真的，電腦那些，我真的電腦那些，是白痴，拍到影片，我覺得自己已經，很厲害，沒什麼可以，已經是，算是這樣，真的黃了一點，可能是有，光的反應，感應，所以就會這樣，Youtube就比較黃，好像很陳舊，Hello Lillian，你兩邊都看，謝謝你，說回來，我平時用ipad剪片。</p></a>
+				<a href="#00:47:56.14" id="00:47:56.14" class="lt" onclick="jumptoTime(2876, this.id)"><p>所以，就用，iphone拍片，ipad剪片，因為我有一個，卡在上面，所有東西都可以連在一起，隨時在不同的device，可以互相，連在一起，所以我選擇了這樣用，當然他們就user friendly，他們就比較簡單，對於我這些，電腦白痴，就會好一點，然後，我們來看看，然後說，回頭，回想，說買書。</p></a>
+				<a href="#00:48:42.14" id="00:48:42.14" class="lt" onclick="jumptoTime(2922, this.id)"><p>我平時，就會在博客買書，現在我在想，我想買的這本書，我應該買實體書還是電子書，電子書，可以馬上看，可以馬上看，實體書就要等，而且很貴，譬如這本書，如果是電子書，我看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:49:6.14" id="00:49:6.14" class="lt" onclick="jumptoTime(2946, this.id)"><p>如果是，如果是，如果是，不知是二百多，當300元台幣一本，如果是電子書，可能便宜20元、30元，但如果是實體書我買的話，我是要乘二的，因為是運費，因為我在加拿大，他在台灣，而他們只會送郵件過來，再加上現在運費，當然這個運費要乘本，譬如這本書300元，我差不多要600元台幣，我才可以買到這本書，還有就是。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:49:48.31" id="00:49:48.31" class="lt" onclick="jumptoTime(2988, this.id)"><p>運到過來的話，要時間，你不要以為今天買明天到，不是的，因為現在疫情關係，海關有很多東西，都會扣住了，等很久或者通關過很久，而通關過很久，而他又檢查的話，還要多一個手續費，就是說我另外再要多付，大約10至15元的加幣的手續費，給海關，所以說，如果我買一本實體書，大概的成本就是，這本書的價錢乘以。</p></a>
+				<a href="#00:50:22.21" id="00:50:22.21" class="lt" onclick="jumptoTime(3022, this.id)"><p>再加，十多元加幣，加幣，十多元加幣的手續費，所以差不多是2.5，差不多2.5乘以2.5，就是買一本書看到價錢，多少錢呢，貨來三補就像這本書一樣，看看它多少錢，現在算吧，這本書定價380元，如果是380元，那我就會乘以，算它400元，乘以就已經差不多800元，就是760元，760元再加加幣的手續費，760元就是台幣。</p></a>
+				<a href="#00:51:4.61" id="00:51:4.61" class="lt" onclick="jumptoTime(3064, this.id)"><p>台幣我當保守，高一點，除以30元，780元除以30元，也要70元，也是二十多三十元，加幣再加十多元，你看看這個價錢來買一本書，但我又喜歡拿這本書，所以經常都很糾結，你們有沒有這些呢，這次我最近買了，四本書，兩本書是實體書，是在，是在超市，是在台灣，是在台灣，在台式超市買的，有兩本在博客買的，超市買大概20元左右。</p></a>
+				<a href="#00:51:53.82" id="00:51:53.82" class="lt" onclick="jumptoTime(3113, this.id)"><p>其實很合理的，我馬上拿到還可以去看看，還有這間我剛才介紹的，最主要的材料是想知道更多不同的食材，食材怎樣配，所以看到食材書就很喜歡，這本不是不好，但不是我想要的書，食物解剖，當食物遇上藝術，《不無聊美食百科》，最麻煩就是運送時間，真的遲遲收不到，這裡是《不無聊美食百科》，但你看裡面說的全部都是一本圖畫書。</p></a>
+				<a href="#00:52:58.25" id="00:52:58.25" class="lt" onclick="jumptoTime(3178, this.id)"><p>當然也有些詞彙，但它是一本將食材的橫切面或其他用品用畫畫的方式畫出來，而畫風我自己不喜歡，如果說畫畫藝術的話，如果說如上藝術的話，畫風見仁見智，可能有些人很喜歡，但我不喜歡畫風，然後全本書都是這樣的，看看你喜不喜歡，有些人可能喜歡，我喜歡食材，但我這樣看就一般，這些我很清楚，有些東西不用說也知道。</p></a>
+				<a href="#00:53:44.25" id="00:53:44.25" class="lt" onclick="jumptoTime(3224, this.id)"><p>它就這樣畫了一張照片，這個是菠蘿蜜的樣子，我覺得對我來說不太淺，或是不太像我想要的書，但這本書很貴，你剛才也看到，380台幣乘以2.5，我買了這本書，拿起手回來，我期待，因為我只看到這裡，因為去博客來的時候，有時只看封面，很期待，然後就變成這樣，例如說如何製作豆腐，幾張照片，然後幾個字就說做到了。</p></a>
+				<a href="#00:54:29.25" id="00:54:29.25" class="lt" onclick="jumptoTime(3269, this.id)"><p>我是否真的，如果這樣跟著它，這樣幾行字就做到豆腐呢，我有點懷疑，所以這本書，有些人喜歡看畫書，你可以買，但我一般，我可以打開這裡，我看到自己，這裡可以看到你們的字，好啊，那我打開這裡，可以看到你們說的話，好，然後第二本，這本先，這本我覺得，這本是日本人寫的，然後就是，日本人寫，但是是講食材的書，我們打開。</p></a>
+				<a href="#00:55:31.35" id="00:55:31.35" class="lt" onclick="jumptoTime(3331, this.id)"><p>這本書我反而挺喜歡的，因為是拍照的，這本書叫做，45款家居必備乾貨活用食譜，它有食譜和乾貨活用，這個時間我覺得這本書，挺好的，為什麼呢?</p></a>
+				<a href="#00:55:47.35" id="00:55:47.35" class="lt" onclick="jumptoTime(3347, this.id)"><p>就是我們現在什麼都貴，乾貨可以放在家裡放久一點，我可以買不同的乾貨，然後做不同的食譜配搭，所以我覺得這本書挺好的，這個就是，它的目錄，你們想買的話，可以在博客來買，或者，我在超市買回來的，譬如這裡，海產，昆布，我家裡也有，然後它就會有，幾個食譜，關於昆布，很多想法，給我可以，可以去，在之後拍片的時候。</p></a>
+				<a href="#00:56:31.35" id="00:56:31.35" class="lt" onclick="jumptoTime(3391, this.id)"><p>可以參考，另外就是，除了它介紹了昆布，有不同的食譜，還有就是它有介紹，昆布的種類，這些真的會讓我學到很多東西，雖然有時候我會看日劇，或者看日本的，節目都會知道，關於昆布，我是聽過的，這個也聽過的，昆布詩，他們會告訴你，產地大約是怎樣，我覺得，我學到東西在這本書裡面，看到，看到，自己的材料，我又可以去。</p></a>
+				<a href="#00:57:15.35" id="00:57:15.35" class="lt" onclick="jumptoTime(3435, this.id)"><p>認識，這本書我就很喜歡，裙帶菜，海帶芽，我家裡也有，昆布的，你不一定要放在冰箱裡，你真的要放在廚房裡，我的頻道也有一個自己的廚房，乾的，你裝好放在密實盒裡，放在不會太熱的地方，乾爽的地方就可以放很久，隨時可以食用，除了這些之外，它也會說一些魚缸，當然如果說乾貨類的，其實我們華人也有很多，譬如我們的海味。</p></a>
+				<a href="#00:58:1.80" id="00:58:1.80" class="lt" onclick="jumptoTime(3481, this.id)"><p>我們煲湯料的都是乾貨，那些也是可以放很久的，在這個時間，你買了某幾套最主要的，然後放在家裡隨時可以煲湯，用的時候，就算不出門，不能出門的時間，你也可以拿來用，我覺得是挺好的，它有介紹蝦乾，魷魚乾，我們也會做土魷，乾貝就是乾魚柱，前陣子我做了XO醬，這裡也看到，我不是用它來剖析，是用來剖析我自己的。</p></a>
+				<a href="#00:58:41.36" id="00:58:41.36" class="lt" onclick="jumptoTime(3521, this.id)"><p>我覺得這一本，如果你對這些東西沒有概念，對乾貨沒有概念，買一本這本書，在門口我覺得挺好的，對我來說很喜歡，所以可以介紹給大家，如果你們想買可以上網去買，除了乾貨之外，有時候也會很喜歡，我也很八卦去看看，自己醃，自己醃是怎樣，這一本就叫做自己醃，DIY，醃蘿蔔乾，梅菜乾，酸白菜，筍乾。</p></a>
+				<a href="#00:59:17.20" id="00:59:17.20" class="lt" onclick="jumptoTime(3557, this.id)"><p>鹹豬肉，各種材料，我覺得這一本也不錯，這是台灣出版的，作者兩位都是台灣人，它會講一下關於手作的醃漬手藝，也有導讀，有材料原則，用什麼器具，開始，這個步驟是一步一步的，雖然很疏，但真的一步一步的，由一個例子，我們看這個流程，做這個芥菜，然後怎樣去挪它，然後怎樣去紮著它，怎樣用，然後它又會有些注意事項，然後就會教你做應用的一個食譜。</p></a>
+				<a href="#01:00:21.82" id="01:00:21.82" class="lt" onclick="jumptoTime(3621, this.id)"><p>這種也很有趣，如果你真的在這個時間，想自己去醃一下東西，又可以省下一些錢，或者有些食材用不完，省下來用，這本書也很有趣，可以去看看，但未必需要拿來看門口，如果你真的對這種食材有興趣，可以看，但未必需要買來看門口，但我覺得很有趣，我很喜歡看這些書，可以學到東西，第三，這本也是在超市買的，這本叫免疫力up。</p></a>
+				<a href="#01:01:9.82" id="01:01:9.82" class="lt" onclick="jumptoTime(3669, this.id)"><p>鹽漬檸檬，這本是日本人出的書，很香雞湯味，我越聞越餓，這本書就是一本，這種類的書，這本就是一本，叫做什麼書呢，有一段時間是很流行，很多人都在做，這些是潮流書，很多人都會做鹽漬檸檬，這本就將鹽漬檸檬，所有可以用的食譜，會不同的集齊出來，我喜歡很精美，看看這些書的相片，嘩，多漂亮，XO醬是很棒的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#01:02:4.82" id="01:02:4.82" class="lt" onclick="jumptoTime(3724, this.id)"><p>不吃辣不要緊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#01:02:6.82" id="01:02:6.82" class="lt" onclick="jumptoTime(3726, this.id)"><p>不要加辣，XO醬不一定要辣，也可以不加辣，我這個就，這裡我都會，加辣，我會加辣，我會加辣，如果食譜是在這本書出的，我都會說的，如果你們喜歡的，你們可以去看看，看你們喜不喜歡這種潮流類的書，然後你可以試試用檸檬，很漂亮，這本書看看，日系版面都很漂亮，我又再看一看我的電話號碼，好熱。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#01:03:30.73" id="01:03:30.73" class="lt" onclick="jumptoTime(3810, this.id)"><p>嘩</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#01:03:32.73" id="01:03:32.73" class="lt" onclick="jumptoTime(3812, this.id)"><p>好靚呀，差唔多啦，仲有6分鐘就搞掂，可以預備，浮沫都見到，超香，好餓，等陣間可以拿飯，拿來，食，超開心，睇下先，我可以睇兩邊，用呢個，今日我就試咗，用呢一種方法，其實好多人如果開live，開兩邊live，佢哋應該係會有個app，然後將兩條link入晒落去，然後就可以，互相轉換，同埋有啲字可以一齊睇到，我就想學。</p></a>
+				<a href="#01:04:20.73" id="01:04:20.73" class="lt" onclick="jumptoTime(3860, this.id)"><p>將來可以直情睇到，你哋講嘅嘢，喺個重溫嘅時候，即刻可以睇到，所以我就，所以我就，去學，努力學，又無得問人，我問得邊個呢，我周邊都無人，唉，總之，作為一個，youtube，網上，時報，提供影片嘅人，但係我嗰個，科技嘅知識，咁貧乏嘅時候，真係好吃力，飲啖水先，字幕by索兰娅。</p></a>
+				<a href="#01:05:23.74" id="01:05:23.74" class="lt" onclick="jumptoTime(3923, this.id)"><p>所以我真的不知道該怎麼辦，一想起想做的事，但不知道怎樣實行的時候，就會很失落，不如看看有什麼食譜可以拍，看看看照片，這是鹽漬檸檬，用鹽漬檸檬，要鹽漬了的檸檬，然後用這些鹽漬了的檸檬，去做不同的食譜，我覺得都幾特別，鹽漬檸檬還有很多不同的功用，例如可以令到肉變軟，因為有酸，可以去除魚腥味。</p></a>
+				<a href="#01:06:25.98" id="01:06:25.98" class="lt" onclick="jumptoTime(3985, this.id)"><p>可以令料理有清新的味道，因為檸檬是清新的味道，整粒檸檬也很有營養，當然煮了營養減少很多，因為維他命C遇熱會減少很多，它說檸檬酸有助代謝糖分，很多人都怕糖類的東西，想低糖或想身體糖容易代謝，這個都很好，可以預防菜變色，又可以做甜品，又可以防菌防腐，這裡說到檸檬超厲害，所以這裡介紹了一些醃漬檸檬的最強食譜，但做這個之前一定要先醃漬好檸檬。</p></a>
+				<a href="#01:07:30.34" id="01:07:30.34" class="lt" onclick="jumptoTime(4050, this.id)"><p>檸檬不是當做，到夏天的時候可以找一些食譜試做，嘩正呀炸雞肉，但不可以吃太多，agu До，ba</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#01:07:49.78" id="01:07:49.78" class="lt" onclick="jumptoTime(4069, this.id)"><p>reload，Sono，oral，ail</p></a>
+				<a href="#01:07:49.14" id="01:07:49.14" class="lt" onclick="jumptoTime(4069, this.id)"><p>erd，ья</p></a>
+				<a href="#01:07:46.24" id="01:07:46.24" class="lt" onclick="jumptoTime(4066, this.id)"><p>Kindern，excellent，beers</p></a>
+				<a href="#01:07:49.86" id="01:07:49.86" class="lt" onclick="jumptoTime(4069, this.id)"><p>aslında，~"，Sew Mount，其實就這樣煎這個也很棒，這個三文魚，正到鼻子，焗蝦通心粉意粉，但是我發覺如果我這個頻道是煮西式食物或者煮其他東西，不是煮中式食物就沒什麼人看的，除了以前，我以前全部東西都是做焗蛋糕做點心做甜食的，因為我一直以來都是一個甜品姐姐，因為家裡廚房掌廚的是我先生。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#01:08:33.03" id="01:08:33.03" class="lt" onclick="jumptoTime(4113, this.id)"><p>即是我老公不是我的，我就做甜品類的東西，但是自從拍片之後我就加了很多，好像剛剛出的那條片做排骨三種排骨，我就可以設定好，有些人以為我在一餐裡吃完三個排骨，但其實不是，我是一個星期裡面，我買了一盤排骨，我可以一個星期裡面不同日子都可以吃排骨，一來可以拍片，二來可以省錢，三來又可以鍛鍊自己的熟練度。</p></a>
+				<a href="#01:09:5.03" id="01:09:5.03" class="lt" onclick="jumptoTime(4145, this.id)"><p>廚藝的熟練度，我也有問過的，大家想不想我多拍一些類似的，但是後來我才發現，我做這三四種的四種菜，是找自己笨的，為什麼找自己笨呢?</p></a>
+				<a href="#01:09:28.03" id="01:09:28.03" class="lt" onclick="jumptoTime(4168, this.id)"><p>為什麼找自己笨呢?</p></a>
+				<a href="#01:09:29.03" id="01:09:29.03" class="lt" onclick="jumptoTime(4169, this.id)"><p>因為剪片我打算省一點時間，因為我很忙，我打算自己煮東西的時候順便拍，最多角度不太一般，先拍下來用，誰知道剪片我花了很多時間，因為剪掉一些不想要的鏡頭，我現在也在打字，所以要打四種食譜，再加上我會寫食譜，我每一個影片，最近的一百條影片，我都是自己寫食譜，你在description box那裡，應該會找到食譜的連結。</p></a>
+				<a href="#01:10:10.72" id="01:10:10.72" class="lt" onclick="jumptoTime(4210, this.id)"><p>或者整個完整食譜，都已經在description box裡面，所以我就說，那我會不會打四個食譜，那天打食譜那天我崩潰了，因為我最近上班忙到很辛苦，我差不多八點多才回家，然後煮飯，我快速吃飯，我都要去九點多才可以吃飯，但我第二天又要回八點多，我又要睡覺，但我睡之前四個小時又不能吃東西，我要吃完再洗。</p></a>
+				<a href="#01:10:54.72" id="01:10:54.72" class="lt" onclick="jumptoTime(4254, this.id)"><p>我要一點多小時才可以睡，第二天又要很早上班，所以，我就自己玩自己，我經常都覺得自己，害自己的那個，就是我自己害自己，好 湯已經完了，我們的live都完了，開來給大家看一下，最後的成品是怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#01:11:25.72" id="01:11:25.72" class="lt" onclick="jumptoTime(4285, this.id)"><p>哇 好正啊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#01:11:29.72" id="01:11:29.72" class="lt" onclick="jumptoTime(4289, this.id)"><p>給大家看一下，近鏡一點，過來 過來 看著，看著，哇 真美呢，看看這個湯多好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#01:11:47.96" id="01:11:47.96" class="lt" onclick="jumptoTime(4307, this.id)"><p>湯色</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#01:11:54.96" id="01:11:54.96" class="lt" onclick="jumptoTime(4314, this.id)"><p>漂亮嗎?，這個湯超香，好棒，我現在可以吃了，可以最後加一點蔥花，現在是冬天，香港很冷，很多人很慘，喝這個雞湯，令自己暖一點，再加上有黑蒜和雞，可以補充一下，令身體補充足夠的營養和能力，接下來我們還有很多時間去Fighting，用這個湯和大家加油，無論在多倫多的朋友，香港的朋友，我們都要加油，希望我們可以過正常的日子。</p></a>
+				<a href="#01:13:15.96" id="01:13:15.96" class="lt" onclick="jumptoTime(4395, this.id)"><p>平安的日子，不需要大喜大樂，大家平平安安就好了，今天的Live完了，多謝大家收看和陪伴我這麼久，73分鐘，一個小時15分鐘，多謝你們，我會繼續開Live，繼續努力拍片，雖然有很多錯誤，但我希望你們包容，覺得開開心心，平安平安，下次再見，再見。</p></a>
+</div>
+	</body>
+</html>

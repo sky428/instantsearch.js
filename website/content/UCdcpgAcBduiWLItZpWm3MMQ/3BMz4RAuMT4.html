@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做蕃茄蛋花湯 濃郁美味｜Facebook Live 節錄</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3BMz4RAuMT4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做蕃茄蛋花湯 濃郁美味｜Facebook Live 節錄</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>廣東話字幕，放入冰箱冷藏30分钟，切成小块，放入冰箱冷藏30分钟，Hello，你好嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:39.83" id="00:01:39.83" class="lt" onclick="jumptoTime(99, this.id)"><p>或者像我這樣煮食也可以，今天我做的材料很簡單，就是番茄、蔥和蛋，如果喜歡可以加些豆腐</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:5.83" id="00:02:5.83" class="lt" onclick="jumptoTime(125, this.id)"><p>沒所謂的，看你喜歡加些什麼，雞蛋可以先打開，因為這個湯很快，加少許鹽</p></a>
+				<a href="#00:02:40.83" id="00:02:40.83" class="lt" onclick="jumptoTime(160, this.id)"><p>雞蛋裏面，胡椒粉，調味都是鹽和胡椒粉，不會有其他調味料，開了爐，湯只需要這麼少材料就可以了，現在經常不能外出吃飯，或者突然肚子餓，我相信很多家庭都會有番茄蔥和雞蛋，首先要加一點油，一個小匙就夠了，燒開後，中火，熱油後，我們想做到湯香味濃郁一點，把蔥頭和油一起放進去，輕輕地炒一炒，不用太大火，熱熱地炒就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:7.64" id="00:04:7.64" class="lt" onclick="jumptoTime(247, this.id)"><p>慢慢炒到蔥頭變成金黃色，如果我比較喜歡西式，我之前把洋蔥也放進去，我可以把蔥頭也放進去，用小火，慢慢炒香蔥頭，我這個是濃湯，想把湯濃一點，但如果用水和番茄慢慢煮，不太可能煮到那種味道，如果不放味精的話，可能就不夠香，很難有香味，我們就用蔥頭炒，令湯有香味，水和番茄就不會太乾，小時候家人做的就是煮水，放薑和番茄，煮一煮。</p></a>
+				<a href="#00:05:17.88" id="00:05:17.88" class="lt" onclick="jumptoTime(317, this.id)"><p>最後再放蛋花，如果我們再多一點，湯就會更好喝，現在金黃色就對了，可以把番茄放進去，現在就很香，翻開番茄，我現在也是用中小火，我們就煮番茄，番茄煮到軟軟的，兩邊都煮一下，其實用油炒番茄，有益的營養就更容易被我們吸收，不怕煮爛，因為我想要濃濃的番茄湯，然後我這裡有蔥，這些待會放在上面，所以就切，趁現在煮的時候，切蔥花。</p></a>
+				<a href="#00:06:42.88" id="00:06:42.88" class="lt" onclick="jumptoTime(402, this.id)"><p>蔥花煮到軟軟的，就可以加熱水，大概這樣， 兩人一杯就可以了，然後就開始煮了，你看看， 比平時煮的快很多， 顏色已經變了，煮了幾分鐘，試一下味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:36.73" id="00:07:36.73" class="lt" onclick="jumptoTime(456, this.id)"><p>好了，味道好了，放入蒜末，放入蒜末，放入蒜末，完成了，我經常怕吃鹹的食物會少放鹽，我當時在想這件事的時候就要補一些，其實你也聽到我的聲音有點模糊，其實也不是說很模糊，也是有一點作病未病的感覺，還有之前年頭年尾的時候病了一段時間，也沒有完全康復，聲音仍然是有點模糊，現在這樣煮到蕃茄軟了，蕃茄已經軟了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:4.56" id="00:09:4.56" class="lt" onclick="jumptoTime(544, this.id)"><p>湯已經變成橙紅色了，這樣就可以了，你看看，這裡下蛋花，有兩種方法，看你喜歡吃很碎的，就像粟米忌廉湯，就放蛋黃打發打發打發，讓花很碎，如果喜歡吃到一塊塊蛋，這樣就可以，我想吃一塊塊蛋，好像吃到韓式水煮蛋，一塊塊蛋的感覺就可以先倒上去，先倒在表面，不要動它，讓它自己煮一分鐘，等到蛋自己開始浮出來，蛋就不會很碎地散開。</p></a>
+				<a href="#00:10:0.56" id="00:10:0.56" class="lt" onclick="jumptoTime(600, this.id)"><p>好像粟米湯的蛋花，很碎地散開，你看一塊塊的蛋，它浮起了，一塊塊的蛋，蛋是一塊塊的，這樣就出來了，我覺得這樣也很好吃，看你喜歡怎樣煮，關火，最後放蔥，看你喜不喜歡，我可以的，湯完成了，讓大家看看湯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:46.59" id="00:10:46.59" class="lt" onclick="jumptoTime(646, this.id)"><p>湯完成了，Kirby откры cigarettes，Whats grosse，core，Grow，obesity，baptimal，orta，yes，озм Thailand，baar，ande Norm eden，Equity，又有營養又好吃，這個時候應該在香港吃宵夜吧，我喜歡蛋的程度，很滑又有蛋的味道。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:49.52" id="00:11:49.52" class="lt" onclick="jumptoTime(709, this.id)"><p>我喜歡用蕃茄做的蛋花湯，蛋就直接倒進去，然後就變成這樣一朵一朵，如果用粟米湯做的蛋花湯，我就喜歡打散蛋花湯，這樣做的蛋花湯，蛋就很滑，可以吃到蛋肉的味道，有點像韓國的水煮蛋，不喜歡放蔥的話，不用放太多，之前炒蔥和蕃茄一定要做，這樣湯就更濃郁，只要幾個材料就可以做到很香很美味很有營養價值的湯，我的直播也不是很長時間，這樣就做好了。</p></a>
+				<a href="#00:12:48.52" id="00:12:48.52" class="lt" onclick="jumptoTime(768, this.id)"><p>下次直播再和大家做一些很簡單的東西，拜拜。</p></a>
+</div>
+	</body>
+</html>

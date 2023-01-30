@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homemade Tonkatsu 日式炸豬扒</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'DZlVw0f-6hc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Homemade Tonkatsu 日式炸豬扒</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.66" id="00:00:5.66" class="lt" onclick="jumptoTime(5, this.id)"><p>Hello， 各位朋友， 你們好!</p></a>
+				<a href="#00:00:7.66" id="00:00:7.66" class="lt" onclick="jumptoTime(7, this.id)"><p>今天和大家做日式炸豬扒 Tom Katsu，我收到課金點餸，有位朋友想我示範一次做日式炸豬扒，中間也有些要求，我盡量去試試，平時在家做， 我會快快手手做完就炸好，如果有幾個問題，其中一個問題是，如何令豬扒外皮不要鬆開，炸完後， 有些人吃過皮橫皮肉橫肉，第二個要留意的是，如何令到皮很脆。</p></a>
+				<a href="#00:00:54.66" id="00:00:54.66" class="lt" onclick="jumptoTime(54, this.id)"><p>第三個問題是，如何令椰菜切得好看，這就是他給我的三個問題，我盡量去做，希望可以令到大家滿意，亦可以趁這個機會去學習，如何做日式炸豬扒，不如我先和大家介紹前面的材料，有椰菜， 這是配菜，但不能少，有椰菜伴豬扒，令到豬扒不油膩，第二樣是豬扒，為什麼有兩種顏色，一種深色， 一種淺色，這些豬扒都是武漢耳毛豬扒。</p></a>
+				<a href="#00:01:49.66" id="00:01:49.66" class="lt" onclick="jumptoTime(109, this.id)"><p>這是豬柳，不是很肥，為什麼有兩種顏色，我問過肉檔，他說是同一種，同一個部位，前後可能有些較軟的肉，像雞肉， 黑肉， 白肉的意思，但其實是同一樣東西，所以我特意買兩種，看看炸出來會否有不同，另外就是麵粉，炸的時候需要三樣東西，雞蛋麵粉和麵包糠，我問過人，我之前用的是白菊仁，我覺得炸出來還是差一點，有些網友知道我有困難。</p></a>
+				<a href="#00:02:49.66" id="00:02:49.66" class="lt" onclick="jumptoTime(169, this.id)"><p>都介紹我試試這個，這個很好，所以我買了這個來試，它比我平常看到的更大顆，如果你說做日式炸豬扒，我沒有這種叫Panko的麵包糠，我用外國平常買的那種行不行呢?</p></a>
+				<a href="#00:03:15.39" id="00:03:15.39" class="lt" onclick="jumptoTime(195, this.id)"><p>不是說不行 但出來的皮就沒那麼漂亮，因為它要這些那麼粗粒那麼大粒，所以出來的皮會更鬆脆，首先我現在解決了其中一個問題，就是如何令豬扒鬆脆，其中一個原因就是你選擇的麵包糠，最好是粗粒一點，最好是日式麵包糠，這樣就可以解決到這個，最少先天聖地，最少可以解決外面脆的問題，當然要跟隨其他步驟。</p></a>
+				<a href="#00:04:2.85" id="00:04:2.85" class="lt" onclick="jumptoTime(242, this.id)"><p>蛋幾隻，我這裡有四塊豬扒，我三隻蛋應該都沒問題，我現在可以開始，首先我先切了椰菜，椰菜你看看你想用哪一種椰菜，你可以用高麗菜那些都可以，我在我家附近，我找到一隻很實身的卷心椰菜，我現在找個位置切了它，等我切好才拿去洗，我不需要整個，我用半個就已經夠了，現在切好之後已經平了，然後我們就可以切了。</p></a>
+				<a href="#00:04:58.85" id="00:04:58.85" class="lt" onclick="jumptoTime(298, this.id)"><p>第二個問題，如果另外一個問題，如果外面的人切的椰菜可以這麼漂亮，第一可能你去一些很好的炸豬扒店，他們都是多工，師傅的刀很快，刀很鋒利，另外可能他們有機器可以刨，如果在家裡的話，我們盡量可以切自己慢慢切，第二就是刀真的要鋒利，你要磨了刀，然後我們就可以慢慢地切，它就可以很幼了，皮很幼。</p></a>
+				<a href="#00:05:54.75" id="00:05:54.75" class="lt" onclick="jumptoTime(354, this.id)"><p>我們開始切，首先把刀切薄，然後慢慢切，我的刀很利害，所以我可以慢慢，沿著邊切，你看到皮很薄，如果你說，還有沒有方法，比較簡便，更加，不懂切，不懂用刀的方法，有什麼方法呢，可以用這個方法，怎樣做呢，就好像刨蘿蔔皮，刨它，你看，刨出來，都可以很漂亮，這個就是，我發現的，其中一個，答這個問題，如果你，沒有信心自己的刀。</p></a>
+				<a href="#00:07:4.75" id="00:07:4.75" class="lt" onclick="jumptoTime(424, this.id)"><p>能否切得很漂亮，你就可以用，刨刨的方法，慢慢刨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:12.75" id="00:07:12.75" class="lt" onclick="jumptoTime(432, this.id)"><p>我已經答了兩個問題，很開心</p></a>
+				<a href="#00:07:18.75" id="00:07:18.75" class="lt" onclick="jumptoTime(438, this.id)"><p>接著我們處理雞蛋，我加了一點點，胡椒粉在雞蛋</p></a>
+				<a href="#00:07:28.75" id="00:07:28.75" class="lt" onclick="jumptoTime(448, this.id)"><p>然後加一點點鹽，然後，我們就完成了，接著就打勻它，這個步驟也不可以小看，不可以隨便打勻它，一定要將雞蛋打到沒有蛋白，一定要打到均勻，這樣才可以完全地黏在豬扒上，接下來就處理豬扒，首先把黑椒切碎，加些鹽和黑胡椒，第二樣要處理的就是豬扒本身，首先，你見到這兩條邊嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:21.41" id="00:09:21.41" class="lt" onclick="jumptoTime(561, this.id)"><p>如果經過熱油炸，它就會縮小，豬扒就會捲起來，所以要用刀把邊位切開一點，讓它不會滾動，可以再用刀尖刺一下豬扒，每一塊都是這樣，用刀尖輕輕地把邊位切開一點，用刀尖刺一下，最後就是要打豬扒，用刀背輕輕地打一下豬扒，不需要打到它變扁，可以先醃製再打，然後慢慢地打，慢慢地打，讓肉鬆開一點，這樣炸出來的豬扒就不會死硬。</p></a>
+				<a href="#00:10:54.41" id="00:10:54.41" class="lt" onclick="jumptoTime(654, this.id)"><p>接下來就是最重要的部分，就是上粉，上粉衣，首先，我們要怎樣做呢?</p></a>
+				<a href="#00:11:3.41" id="00:11:3.41" class="lt" onclick="jumptoTime(663, this.id)"><p>把豬扒放在麵粉上，我們有三個步驟，我已經放好，首先，放在麵粉上，邊位要完全黏著麵粉，然後就可以把它拍開，把它鬆開，多出來的那些</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:45.02" id="00:11:45.02" class="lt" onclick="jumptoTime(705, this.id)"><p>謝謝觀看，之後就可以放入蛋漿中，讓蛋漿完全吸收蛋漿，第三個步驟，我們就將麵包糠放入麵包糠裏，這個步驟最重要，因為想麵包糠很均勻地黏著麵包糠，所以我需要用力壓著麵包糠，反轉，也要壓著麵包糠，在旁邊的邊位也是，做這個吉列豬扒，最重要的就是麵包糠的位置，就是麵包糠的位置，麵包糠的位置。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:58.87" id="00:12:58.87" class="lt" onclick="jumptoTime(778, this.id)"><p>盡量用力將麵包糠的麵粉黏著豬扒，現在我們可以開始加油炸，我用的是芥花籽油，可以用一些沒有味道的菜油，油的份量需要多一點，上網可以看到有些人用半煎炸的油，如果油份多一點，反而比較容易掌控，起碼要浸過豬扒，如果家中有電炸鍋就最好，因為可以恆常地在某一個溫度炸豬扒，如果是用電炸鍋的話，就要用180度炸幾分鐘就可以了。</p></a>
+				<a href="#00:14:5.91" id="00:14:5.91" class="lt" onclick="jumptoTime(845, this.id)"><p>4分鐘或以上，要看豬扒有多厚和多大塊，如果是家用的，就不要太高，因為怕控制不到時會燒焦，所以大約170度攝氏度，如果是家用，就要用一個小鍋來做，最好有個溫度計，放在旁邊看著溫度，另外最好有個小炸鍋，可以把炸好的豬扒拿出來，當然木筷子和有個小炸鍋都可以，但要知道我自己又不是很擅長用筷子，所以要小心一點，以免油一滴上來就很危險。</p></a>
+				<a href="#00:15:6.91" id="00:15:6.91" class="lt" onclick="jumptoTime(906, this.id)"><p>另外我這邊有兩種顏色的豬扒，分開了兩種，首先這個是麵粉雞蛋麵包糠，每隻塞一塊，這個比較厚實，我先塞麵包雞蛋麵包糠，然後再塞雞蛋麵包糠，我試試看炸出來有什麼不同，大家可以一起做實驗看看會怎樣，做好的豬扒，直接放在這裡是不太好，因為粉衣可以更加黏著豬扒，其實是不怕的，可以放在旁邊，這個時間可以熱油，洗椰菜，做其他東西，因為煮油都要時間。</p></a>
+				<a href="#00:16:10.91" id="00:16:10.91" class="lt" onclick="jumptoTime(970, this.id)"><p>油熱的時候，我們就做其他東西，其中一樣很重要的，就是豬扒汁，很多時候外面會賣一支一支的炸豬扒汁，如果沒有的話，又不想特別，只是為了吃兩塊炸豬扒而賣一支汁的話，可以像我這樣用一個很簡單的方法，就是需要茄汁和喼汁，份量很簡單，只要兩份茄汁，一份喼汁就可以做到，現在我做一次，我們這裡，快點做。</p></a>
+				<a href="#00:16:49.91" id="00:16:49.91" class="lt" onclick="jumptoTime(1009, this.id)"><p>我放四湯匙的鹽，加些茄汁，加2湯匙喼汁，攪拌均勻便可，很簡單吧?</p></a>
+				<a href="#00:17:32.73" id="00:17:32.73" class="lt" onclick="jumptoTime(1052, this.id)"><p>當然也有很多不同的方法，例如自己煮咖哩汁，諸如此類，但我純粹是懶人，食譜的話，我覺得這是最快捷的方法，如果真的，沒有豬扒醬的話，也可以試試，我這個方法，現在我們在熱油，我告訴你，現在我看起來，差不多300度，即是華氏300度，攝氏140度，我現在在做什麼呢?</p></a>
+				<a href="#00:18:8.73" id="00:18:8.73" class="lt" onclick="jumptoTime(1088, this.id)"><p>就是攪拌油，因為油和水不同，流動性不大，所以，炸的時候，最好推動一下，這樣上下，溫度都可以均勻，不然，我剛才用電子計算，上下，真的差一段距離，溫度，所以我推動一下，讓上下溫度，流動性好一點，希望，差不多的時候，可以調小火一點，讓它穩定，再攪拌一次，已經夠170度，現在我穩定它，開小火，然後開始炸，我先炸重口的。</p></a>
+				<a href="#00:19:15.31" id="00:19:15.31" class="lt" onclick="jumptoTime(1155, this.id)"><p>整個放進去，我再推一推它，讓它不要黏著底部，讓它黏著底部，然後我們可以計時去炸它，大約炸4分鐘左右，炸到有泡泡，泡泡會開始減少，炸2分鐘後，最好反轉，令到炸得均勻，同時可以用小的酒櫃，將泡泡上來，第一時間將它們舀上來，不要影響到油的其他碎屑，否則會散開，喜歡的話可以一次炸2塊，我先試炸1塊。</p></a>
+				<a href="#00:20:44.00" id="00:20:44.00" class="lt" onclick="jumptoTime(1244, this.id)"><p>看到泡泡開始浮起，我關掉火，然後拿起，炸出來看看是否很漂亮，現在先將泡泡留起，放在一個隔油紙上，這次炸2塊，是上了一層粉衣，當溫度足夠，就可以放入，我可以兩塊放入，然後就看著溫度，讓他養一養，不要兩隻貼著，所以要看著溫度計，最麻煩就是這個，因為要看著溫度計，不要溫度下降太多，要看著，如果有個電炸爐就最好，始終在家做日式炸豬扒都是困難的，要處理這麼多東西，都是困難的，還有要處理這麼大鍋油，都是一個困難。</p></a>
+				<a href="#00:23:0.25" id="00:23:0.25" class="lt" onclick="jumptoTime(1380, this.id)"><p>差不多四分鐘後就可以把豬扒撈起，看上去很漂亮吧，已經炸好了，四塊豬扒在這裡了，介紹一下，這兩隻就是只沾了一次粉衣的豬扒，這兩塊，你們看看，這兩塊就是沾了兩次粉衣的豬扒，ählt työ какие Resources</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:21.33" id="00:24:21.33" class="lt" onclick="jumptoTime(1461, this.id)"><p>серvan leakingolen，steroids，rooms</p></a>
+				<a href="#00:24:14.85" id="00:24:14.85" class="lt" onclick="jumptoTime(1454, this.id)"><p>spilled，pantalla</p></a>
+				<a href="#00:24:22.19" id="00:24:22.19" class="lt" onclick="jumptoTime(1462, this.id)"><p>нуть，disturb，EST，backstage，Vict ͡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:15.09" id="00:24:15.09" class="lt" onclick="jumptoTime(1455, this.id)"><p>ечь，ús，scam</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:20.11" id="00:24:20.11" class="lt" onclick="jumptoTime(1460, this.id)"><p>�ücks，зр，45，Poland，Mo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:25.69" id="00:24:25.69" class="lt" onclick="jumptoTime(1465, this.id)"><p>é，hong，прок，・・ lethal，illa，blooming，Curiosity，Premium，Multip kalian，tunnel，importance，賽ussia，。。 Nations，� инт hood</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:17.17" id="00:24:17.17" class="lt" onclick="jumptoTime(1457, this.id)"><p>pse unnecess LE，لك，ographic，paprika，Nintendo，kadın，SMITH</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:21.17" id="00:24:21.17" class="lt" onclick="jumptoTime(1461, this.id)"><p>voiture，pages，do</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:20.55" id="00:24:20.55" class="lt" onclick="jumptoTime(1460, this.id)"><p>τικ，ahora</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:14.51" id="00:24:14.51" class="lt" onclick="jumptoTime(1454, this.id)"><p>shelters，Strom，promote，unde，soy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:7.71" id="00:24:7.71" class="lt" onclick="jumptoTime(1447, this.id)"><p>欢 действительно，ech SCP，Э，twist，statistics，Salesforce</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:19.67" id="00:24:19.67" class="lt" onclick="jumptoTime(1459, this.id)"><p>erste，ligh ponieważ，ous，discernstalk，Canada，하고，ise，Legends，박</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:24.91" id="00:24:24.91" class="lt" onclick="jumptoTime(1464, this.id)"><p>unre号，切成小塊，切成小塊，切好後，我拿中間的給大家看，看多漂亮，它是黏的，我已經做到其中一個要求，就是脆皮黏住豬扒，不會鬆開，再切一塊雙層的豬扒，用紙巾抹一下，再切，聽到嗎?聲音跟剛才的不同，外層會更脆，很大煙，煙出來，很漂亮，再加上煙，漂亮嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:1.10" id="00:26:1.10" class="lt" onclick="jumptoTime(1561, this.id)"><p>OK嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:3.10" id="00:26:3.10" class="lt" onclick="jumptoTime(1563, this.id)"><p>我再看一看，這個就不太好，皮就容易出來了，但外面會比較厚身，比較脆，原來，如果用兩層的話，外面看上去就很脆，聲音很脆，但炸起來，這個就容易脫皮，知道了的話，下次就可以試，如果太鬆開，可能因為用了兩層，如果是一層的，真的會黏住，看你喜歡怎樣做，就可以加上醬料，剛才做的醬，加上去，有些人不喜歡吃醬，可以不加。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:11.10" id="00:27:11.10" class="lt" onclick="jumptoTime(1631, this.id)"><p>有些人喜歡吃脆的豬扒，可以不加，可以加些沙律醬，在椰菜旁邊，如果家裡有黃芥辣，可以放一片在旁邊，日式居酒屋，炸豬扒都可以用，試吃環節，咦，不是喎，這一塊都是雙層的，但這一塊都很結實，那看一下，我可能有一塊壓得不夠結實，一塊壓得比較結實，你看看，這一塊都是兩層的，它是兩層的這一隻，你看看，它都沒有掉出來的。</p></a>
+				<a href="#00:28:12.49" id="00:28:12.49" class="lt" onclick="jumptoTime(1692, this.id)"><p>那就真的要看一下，炸的時候，自己做的時候是不是有壓實麵包糠在豬扒上，那不如我試吃吧，聽不聽到?</p></a>
+				<a href="#00:28:31.27" id="00:28:31.27" class="lt" onclick="jumptoTime(1711, this.id)"><p>很脆的，要自己讚一下自己先，真的沒有掉出來，希望各位都喜歡我這次的介紹，希望你們都可以讚好和分享我的影片，如果你們有什麼問題，也可以來到我的專頁，然後你可以留言或者私訊我問問題，我會盡快回答你們，今天介紹到這裡，下次再見吧，拜拜。</p></a>
+</div>
+	</body>
+</html>

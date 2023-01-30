@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零失手香草焗雞 (Foolproof Roast Chicken)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'FqRCImJ9xuM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>零失手香草焗雞 (Foolproof Roast Chicken)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:6.07" id="00:00:6.07" class="lt" onclick="jumptoTime(6, this.id)"><p>Hello 各位你們好呀，今日呢就係到咗聖誕節特集嘅第四集啦，咁樣呢之前呢我哋教過呢整小食啦，整蛋糕啦，咁今日呢我哋就整主菜啦，咁樣你見到啦係啦你見到有隻雞，好細隻㗎咋你睇落去，呢隻雞就係約1.1公斤嘅啫，大約兩磅零啦，因為我淨係兩個人食，咁如果你屋企多啲人嘅，咁你咪買隻大啲嘅雞囉，聖誕節呢好多時呢都會。</p></a>
+				<a href="#00:00:49.07" id="00:00:49.07" class="lt" onclick="jumptoTime(49, this.id)"><p>有好多唔同嘅主菜啦，其中一樣呢就係可能係火雞啦，而我多數呢就會揀焗雞嘅，點解呢因為火雞實在太大隻，而我唔係咁多屋企唔係咁多人呢，咁就做唔到囉，因為整完之後呢跟住，落嚟可能無限餐都要食返嗰個火雞，咁所以呢我就會選擇做焗雞嘅，首先呢焗雞呢第一個條件呢，買一隻雞啦咁我，你鍾意買自己種類嘅雞啦咁。</p></a>
+				<a href="#00:01:21.07" id="00:01:21.07" class="lt" onclick="jumptoTime(81, this.id)"><p>第一個條件呢就係返落嚟之後呢，我哋焗之前呢呢隻雞呢就要放室溫，令到佢呢就係唔好仲係冰凍嘅，咁如果你喺個雪櫃度拎出嚟你起碼要拎佢，一個鐘或者半個鐘至一個鐘呢，令到佢呢唔係好似雪櫃攞出嚟咁凍，第二樣嘢呢就係有水份嘅話呢，我索乾咗啲水份去，令到呢佢呢就唔好即係乾身啲啦，就唔好咁濕啦。</p></a>
+				<a href="#00:01:56.07" id="00:01:56.07" class="lt" onclick="jumptoTime(116, this.id)"><p>咁呢度好好嘅呢就係呢一隻雞，我買返嚟呢佢已經窄咗呀，但係呢唔得喎我要做我自己啲嘢喎，所以我就會拆返開佢，一陣間自己再綁過啦，咁樣呢做整焗雞呢，然後第二樣嘢呢就係呢你要一對好乾淨嘅手手啦，因為多數呢都會我係用手做嘅，咁另外呢就將佢裏面呢一啲，即係個空間裏面呢度呢呢啲呢濕嘅呢，你都可以呢就整走去抹乾佢啦。</p></a>
+				<a href="#00:02:29.07" id="00:02:29.07" class="lt" onclick="jumptoTime(149, this.id)"><p>總之我就抹乾身佢，另外呢就係呢啲位呢，你見到呢度好大嚿肥膏呢，咁我都會剪走佢嘅，咁當然你唔想嘅無乜所謂啦，嗰塊皮我仲keep，但係裏面呢度呢塊肥膏呢，就最好剪走佢唔好黐住啦，咁我呢個雞呢都擺咗室溫好耐㗎啦，雖然佢都軟軟凍凍地，但係就冇好似啱啱係雪櫃拎出嚟咁凍啦，另外呢我就再另外處理佢嘅呢，就係呢索乾水。</p></a>
+				<a href="#00:03:8.40" id="00:03:8.40" class="lt" onclick="jumptoTime(188, this.id)"><p>之後呢，咁跟住呢，我就呢喺嗰個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:14.20" id="00:03:14.20" class="lt" onclick="jumptoTime(194, this.id)"><p>呢度</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:17.32" id="00:03:17.32" class="lt" onclick="jumptoTime(197, this.id)"><p>呢度落條雞頸啦，你睇下你自己鍾唔鍾意要呢啲，如果唔鍾意嘅你都可以剪走佢嘅，雞皮我會用，但如果有些小小的，我會用，另外，這隻雞的骨頭在這裡，我可以先把骨頭割出來，這邊也有一條，那個胸上面的那塊骨，這個位置的那塊，拍了它出來，那一會切雞胸的時候，可以整塊雞胸就這樣切，不會阻礙著，這條。</p></a>
+				<a href="#00:04:36.33" id="00:04:36.33" class="lt" onclick="jumptoTime(276, this.id)"><p>拍了這條骨出來，那一會切雞胸的時候，就可以一次過切，不會阻礙著有條骨在那裡，這樣就容易一點切雞胸出來，然後做什麼呢，就是在內隱那裡，我先season了它，就是先把味道放進內隱那裡，我有些鹽，灑些鹽，灑在雞胸裡面，這個時間我就開始預熱了焗爐，450度，是很高溫的做的，這樣你可以，先預熱了焗爐。</p></a>
+				<a href="#00:05:17.33" id="00:05:17.33" class="lt" onclick="jumptoTime(317, this.id)"><p>這樣，放些鹽，放進雞胸裡面，然後，我就放那個pepper，先放上去，雞胸不要動</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:34.33" id="00:05:34.33" class="lt" onclick="jumptoTime(334, this.id)"><p>灑些胡椒粉進去，黑椒，放進雞胸裡面，就這樣放進去，與此同時，還有什麼呢，放進去，我就會放些蒜頭進去，蒜頭，因為我的雞很小，我不需要放那麼多，但如果雞比較大，你可以再放多一點，放了蒜頭進去，我放少少，那個主味，我就放少少這個thyme進去，中文好像叫做百里香，我又把那個thyme，放進去了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:24.78" id="00:06:24.78" class="lt" onclick="jumptoTime(384, this.id)"><p>香料可以選擇自己喜歡的，亦有人會放羅斯瑪利，所以沒有所謂，你可以再放洋蔥或檸檬。</p></a>
+				<a href="#00:06:43.78" id="00:06:43.78" class="lt" onclick="jumptoTime(403, this.id)"><p>我會放半個洋蔥，你會發覺到我沒有洗東西，直接放進去，如果你在香港怕的話，可以洗一下，但我不會怕，所以我會放進去，然後我會放半個檸檬，這個檸檬比我整個放進去還要大，好 完成了，Birdy的肚子就完成了，這裡是表面，表面要怎樣處理呢，我會用牛油，把牛油放軟。</p></a>
+				<a href="#00:07:51.78" id="00:07:51.78" class="lt" onclick="jumptoTime(471, this.id)"><p>然後放鬆軟的牛油，然後把牛油鋪平，所有地方都把牛油塗平，如果你想健康一點，不想吃牛油怕肥，你可以用橄欖油或提子核油，我會用牛油，一會兒我會再灑提子核油，這是背部，背部也要塗，當然要，背部塗好就塗前面，但都要用少許鹽，鮮艷表面，另外我有少許，忘記了，還有一點，就是這個，你可以不放，但我也想放一點。</p></a>
+				<a href="#00:09:2.99" id="00:09:2.99" class="lt" onclick="jumptoTime(542, this.id)"><p>讓它有一點味道，表皮有一點味道，對 做這些會很混亂，另外，我這裡還有些times，我可以將這些times，這樣移除之後，可以放一些在原位，這個是底部，我們把表面反轉，再重新一樣做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:40.99" id="00:09:40.99" class="lt" onclick="jumptoTime(580, this.id)"><p>對，這個是表面，一樣，按摩它，然後用牛油，放在表面，有些會放在皮底，但我這個是小雞，皮會比較薄，我怕會弄穿它，如果你是大雞 例如有4-5磅，我會建議你，在皮的底部，這樣，慢慢地，搓開它，我現在也做示範給你看，手指在胸底，搓開它，慢慢地，慢慢地，將手指，慢慢地在皮和肉之間，將皮和肉，分開，然後你就可以，將牛油。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:38.99" id="00:10:38.99" class="lt" onclick="jumptoTime(638, this.id)"><p>塞進去，你可以將牛油放在尾，塞進去，像我現在這樣，然後放一點點times，塞進去，你也知道我一向，做食物，我選擇比較隨意，你可以將它，放進去，這個可以隨便切，慢慢推下去，但我這隻是雞仔，很薄皮，所以我盡量不想這樣做，怕它會破，所以我不會這樣對待它，再一樣，鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:30.29" id="00:11:30.29" class="lt" onclick="jumptoTime(690, this.id)"><p>這個巴西里香</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:36.85" id="00:11:36.85" class="lt" onclick="jumptoTime(696, this.id)"><p>其實到現在看，真的很簡單，什麼都沒有，焗好就可以了，接著我們要綁雞仔，我不用整隻雞仔綁，只要綁著雞腳就可以了，看到嗎?這裡有雞腳，我這樣給你們看，首先把雞頭放進去屁股，看到嗎?</p></a>
+				<a href="#00:12:24.38" id="00:12:24.38" class="lt" onclick="jumptoTime(744, this.id)"><p>跟著呢，這樣，跟著這個向下，這個向下，這樣可以綁住，最好綁好屁股，我再試多一次，這樣，綁住了，這樣，看不看得到，在腳的下面，左邊在這條，拉過去之後，就這條，右邊在左手這邊，左邊在右手這邊，不過你喜歡怎樣綁都可以，不過我這樣綁，穩固一點，好看一點，其實你可以不跟我綁，兩條綁在一起，都可以，好了，接著我就。</p></a>
+				<a href="#00:13:20.38" id="00:13:20.38" class="lt" onclick="jumptoTime(800, this.id)"><p>這樣，等到它定型，跟著呢，這裡有兩隻翼，這樣綁住，這裏就是自己 看到嗎?</p></a>
+				<a href="#00:13:38.15" id="00:13:38.15" class="lt" onclick="jumptoTime(818, this.id)"><p>放過去 然後就屈過它的表面，它的皮 上面這裏這樣，看到嗎?</p></a>
+				<a href="#00:13:48.15" id="00:13:48.15" class="lt" onclick="jumptoTime(828, this.id)"><p>就是這樣，等到它可以收起來 待會烤出來，仍然有個雞形就好看一點，這個也是 我再試一次 這樣，然後將這個雞翼尖就放進去後面，這個位置 放進去，這樣做後 雞翼就會收起來，雞那邊完成了 我就打算配菜，配菜你可以選擇自己喜歡的，譬如薯仔 各樣你喜歡的 根莖類的東西，比較難熟的那些 因為要焗它，我介紹一下我今天做的東西有些什麼。</p></a>
+				<a href="#00:14:35.15" id="00:14:35.15" class="lt" onclick="jumptoTime(875, this.id)"><p>有這幾樣 這個不是紅蘿蔔，這個是紅蘿蔔 這個不是白蘿蔔。</p></a>
+				<a href="#00:14:41.15" id="00:14:41.15" class="lt" onclick="jumptoTime(881, this.id)"><p>這兩個就是紅菜頭，然後我就找到一隻是有機的，這個就是橙色的紅菜頭，我看到挺有趣的 買來試一下，紅蘿蔔，這個英文就叫做 Parsley，我不知道中文是什麼，都是一些根莖類的東西，我打算放這些進去，我的做法很簡單 你有焗盤就用焗盤，我用生鐵鍋，我平時常用生鐵鍋 所以我就用生鐵鍋，在生鐵鍋底部放一點點油。</p></a>
+				<a href="#00:15:25.62" id="00:15:25.62" class="lt" onclick="jumptoTime(925, this.id)"><p>然後就可以把這些削去皮，然後切，你可以放薯仔、番薯、南瓜、豬兒齒類的植物，放進去也可以，只要你喜歡，這個如果你吃得濃味、吃得近，可以放進去，因為它有很濃的味道，我現在這樣削，它比紅蘿蔔的味道更濃，好像有些人說這個叫歐洲蘿蔔，我中文，但我真的不太知道中文是什麼，我看到它很漂亮，我買一些這樣剪。</p></a>
+				<a href="#00:16:18.52" id="00:16:18.52" class="lt" onclick="jumptoTime(978, this.id)"><p>然後我再繼續，我特意選擇不同的顏色，等待烤出來的蔬菜，會更漂亮 更多不同的顏色，所以你喜歡吃什麼其實無所謂，這樣，來到這裡，我們都要season，加少許油在上面，鹽，一樣 鹽，我想加些巴黎加，也可以加些，鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:57.52" id="00:16:57.52" class="lt" onclick="jumptoTime(1017, this.id)"><p>然後就是，黑胡椒，然後我剛才有些洋蔥，可以放進去，我先撥開一些位置，一會兒放雞雞，先放在中間，放一放雞雞，在中間，然後剛才還有一個檸檬，你都可以，放在旁邊，也可以，檸檬，另外我剛才還有些蒜頭，還有這些時間表 我也放在旁邊，是不是很漂亮呢 看起來，然後我就可以將雞雞，然後我就可以將雞雞放上去，空向上夾。</p></a>
+				<a href="#00:18:14.92" id="00:18:14.92" class="lt" onclick="jumptoTime(1094, this.id)"><p>OK 這樣就可以拿去焗了，450度 第一次焗35分鐘左右，然後我會再降到很小火，焗多40分鐘 大約就是這樣，因為我的雞很小，好 等一下見，OK 出爐了，出爐了，雞雞漂亮嗎，這樣 想看看它熟了沒有 很簡單，你們看見嗎，我剛剛在最厚的位置插著溫度計，過了175度就一定熟了，現在已經熟了 先把它拿出來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:18.92" id="00:19:18.92" class="lt" onclick="jumptoTime(1158, this.id)"><p>這樣 你們看看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:27.16" id="00:19:27.16" class="lt" onclick="jumptoTime(1167, this.id)"><p>看看，漂亮嗎?，焗好後，不要馬上切開雞，否則很容易會乾，我們要怎樣做呢?</p></a>
+				<a href="#00:19:43.16" id="00:19:43.16" class="lt" onclick="jumptoTime(1183, this.id)"><p>不想太乾，要怎樣做呢?</p></a>
+				<a href="#00:19:45.16" id="00:19:45.16" class="lt" onclick="jumptoTime(1185, this.id)"><p>就是要用錫紙或輕輕蓋著，等待10-15分鐘，等待水分收進雞胸，雞肉不用太快蒸發，之後才慢慢切，肉汁就會保留在雞肉裡，蓋上錫紙，如果雞肉大約3-4磅，就要因應時間加長，前面熱的部分，最少要35分鐘，後面就會加長，可能要1小時，這樣才可以令雞肉大塊全熟，等待後就可以切開吃，等了大約15分鐘，就可以切開雞胸。</p></a>
+				<a href="#00:20:51.16" id="00:20:51.16" class="lt" onclick="jumptoTime(1251, this.id)"><p>切開就可以吃了，近鏡給大家看清楚，雞肉完全不乾，而且很光滑，很開心，裡面很多汁，因為我放了檸檬，現在就可以把雞胸切開，為何可以這樣呢?</p></a>
+				<a href="#00:21:28.41" id="00:21:28.41" class="lt" onclick="jumptoTime(1288, this.id)"><p>很軟熟就可以切出雞胸，你看看多白嫩，很嫩滑，而且一切就可以切到底，因為剛才起了的骨頭不會阻礙，一切就可以切到底，整個雞胸就可以起出來了，然後可以把檸檬汁擠上去，喜歡的話可以把檸檬汁擠上去，令到它更香，可以拿起來，裡面還有洋蔥，而且仍然有很多汁，洋蔥在裡面，可以吃的，如果你想吃鼻子，也可以吃，我最想給你們看雞胸有多嫩滑。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:29.41" id="00:22:29.41" class="lt" onclick="jumptoTime(1349, this.id)"><p>是不粗糙的，很滑的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:43.19" id="00:22:43.19" class="lt" onclick="jumptoTime(1363, this.id)"><p>看看，看不看得到，我要先試了，好熱啊，先試一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:55.19" id="00:22:55.19" class="lt" onclick="jumptoTime(1375, this.id)"><p>好吃嗎?，好吃嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:23:6.55" id="00:23:6.55" class="lt" onclick="jumptoTime(1386, this.id)"><p>用這個方法可以保留雞肉的汁，希望大家試試看跟著我做吧，首先把雞肉拿走，這個醬汁很棒的，可以用來蘸麵包或是加一點點雞湯，接著把蒜頭放在麵包上，除了雞肉，還有配菜可以配搭，聖誕節可以簡單點做一個雞肉配菜，今天就介紹到這裡，祝大家聖誕節快樂，希望大家可以享受一下節日的氣氛，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做辣辣雞煲 - homemade chicken hotpot (spicy)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'IMLQEPyFhSo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做辣辣雞煲 - homemade chicken hotpot (spicy)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.12" id="00:00:4.12" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好， 各位朋友你們好!</p></a>
+				<a href="#00:00:6.12" id="00:00:6.12" class="lt" onclick="jumptoTime(6, this.id)"><p>看到前面那麼多食材， 你們都會猜到我今天會做一個菜式，而我今天會做什麼呢?</p></a>
+				<a href="#00:00:13.12" id="00:00:13.12" class="lt" onclick="jumptoTime(13, this.id)"><p>就是有關於雞的了!</p></a>
+				<a href="#00:00:15.12" id="00:00:15.12" class="lt" onclick="jumptoTime(15, this.id)"><p>在網上我看到很多人都說冬天的時候都會去吃雞煲，我從來就沒有吃過的，除了印象中小時候在香港吃過啫啫雞煲之外，我懷疑現在人們常常吃的雞煲不是那種東西，因為他們都說是一些比較辣的東西，而我呢就很想試!</p></a>
+				<a href="#00:00:44.12" id="00:00:44.12" class="lt" onclick="jumptoTime(44, this.id)"><p>我看到人們經常在Facebook上發帖都很開心，還有吃完雞煲之後他們說會再倒湯進去，然後用那些湯來做火鍋，我今天就想試一下自己可不可以靠這個想像力和網上資料去做這個雞煲，需要的材料就是桌上這些，我做這個應該是簡易版的，因為從頭開始可能都會加一些花椒、八角、草果、桂皮等等，而我今天在超級市場看到有一瓶這樣的東西。</p></a>
+				<a href="#00:01:29.12" id="00:01:29.12" class="lt" onclick="jumptoTime(89, this.id)"><p>麻辣醬，四川頂級大紅葡花椒漢方，它是台灣製造的，我知道很多人都會用另一個品牌叫寧記，我這裡就找不到，我看到這個就想用這個做簡易版，希望好吃，但我其實都有點怕，因為我不是很能吃辣，可能我會減少一點，或者如果吃不到辣的朋友可以不要加那些醬，我們現在開始吧，首先我要處理的就是要洗好這些東西，這些要切好。</p></a>
+				<a href="#00:02:14.12" id="00:02:14.12" class="lt" onclick="jumptoTime(134, this.id)"><p>洗乾淨，去皮，切開，切片，雞斬件，我們先做這些，稍後回來，回來了，我這裡有些芫茜，已經洗乾淨切了，那些唐芹葉我已經切碎了，這些是最後才放進去的，而在那個料頭那裡，我已經切好了，辣椒我就放少了，放少一點，我剛才有五隻，其實我放了一隻，這樣，然後就有洋蔥、蔥頭那些，全部一粒粒切好，我最不開心就是，我今天找蔥頭的時候。</p></a>
+				<a href="#00:02:56.78" id="00:02:56.78" class="lt" onclick="jumptoTime(176, this.id)"><p>它沒有小小粒，圓圓的那些，它一個蔥頭都好像，半個洋蔥那麼大粒，這個我就不太喜歡，另外就是，那些唐芹、芹菜那部分，我又切一條條，稍後在中途的時候，就會加進去，讓它也有些菜看上去，雞已經切好一件件了，首先就先醃了雞，醃雞，傳統都是豉油糖粉，我們可以再加多一點東西，加少許酒，我這個是冰鮮雞，你可以加一點酒。</p></a>
+				<a href="#00:03:36.08" id="00:03:36.08" class="lt" onclick="jumptoTime(216, this.id)"><p>如果你不吃辣的話，現在也可以在這裡加一點蠔油，就更好吃，如果你冰鮮雞，你想再濃一點雞味，你喜歡的話，可以加少許雞粉，今天我這裡就不加了，首先我就先加豉油，加少許生抽，一隻雞大約一湯匙，平時煮菜很難說準確份量，因為煮菜最重要是喜歡加多少，再加上憑經驗就可以了，再加上老抽，讓雞上色，待會兒雞會深色一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:40.47" id="00:04:40.47" class="lt" onclick="jumptoTime(280, this.id)"><p>顏色會好看一點，加少許胡椒粉，我買的雞是沒有抗生素的，可以自己買，可以買一隻或半隻，我買了一隻雞，雞肉也不是很大，但也有很多肉，兩至四個人吃完全沒問題，加了胡椒粉後可以加少許蠔油，加太多了，跟醬油差不多份量就足夠了，這個已經很好吃了，可以加些麻油增加香味，再加少許，再加少許酒，視乎你家裏有什麼酒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:7.74" id="00:06:7.74" class="lt" onclick="jumptoTime(367, this.id)"><p>我家裏只有黃酒，你可以加紹興酒，可以加花雕酒，可以加清酒，視乎你家裏有什麼酒，加少許酒也可以去除雞肉的腥味，最後加糖，因為剛才的材料全部都是鹹的，我加少許糖，中和它，然後加少許生粉，因為稍後要爆它，加些生粉會好些，不停攪拌，不是要加很多生粉，稍後煮的時候，雞肉可能會出水，加些生粉會收少許水，我加生粉的時候會小心。</p></a>
+				<a href="#00:07:20.44" id="00:07:20.44" class="lt" onclick="jumptoTime(440, this.id)"><p>最後才加生粉，雞肉已經煮到顏色很漂亮，醃大約半小時，你喜歡的話可以再醃多一點，20分鐘半小時就可以了，稍後回來再開始，稍後回來，先調整醬汁，稍後可以倒進去，我加麻辣醬，上面有辣椒油和渣，我應該加，大約一湯匙，大約兩湯匙，我心癢，想加一點豆瓣醬，看看有什麼味道，加一點豆瓣醬，稍後就可以爆炒，最後才加調味。</p></a>
+				<a href="#00:08:44.75" id="00:08:44.75" class="lt" onclick="jumptoTime(524, this.id)"><p>看看還要不要加其他調味料，調味料令它更好味，現在開始了，首先我把鍋子熱了，然後放油，現在慢慢用慢火，令鍋子熱一點，油熱一點，你見到了，你煮雞煲，為何你會用熱鍋，原因是，我不是廚藝高手，如果直接用砂鍋煮，我會很害怕，我怕雞煎的時候，會黏在砂鍋底，我的廚藝未到那程度，我既然知道自己的缺點，就用最方便的方法煮。</p></a>
+				<a href="#00:09:32.75" id="00:09:32.75" class="lt" onclick="jumptoTime(572, this.id)"><p>可以用砂鍋，各位廚藝了得，也可以用現在很流行的，很貴的很名貴的煲，都可以的，我用最簡單的方法，當油差不多熱的時候，我們可以，薑就可以先放進去，它是最耐煮的，但它不是很小，聲音很小，我開始，我的鍋子可以大火一點，我先爆薑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:21.75" id="00:10:21.75" class="lt" onclick="jumptoTime(621, this.id)"><p>放在料頭上，都要小心，有些不夠爆，就不要放進去，這麼開心，我可以把洋蔥，放進去</p></a>
+				<a href="#00:10:42.75" id="00:10:42.75" class="lt" onclick="jumptoTime(642, this.id)"><p>洋蔥、乾蔥頭，都可以放進去，不要爆</p></a>
+				<a href="#00:10:54.75" id="00:10:54.75" class="lt" onclick="jumptoTime(654, this.id)"><p>很香，字幕由Amara.org社區提供，放蒜頭</p></a>
+				<a href="#00:11:16.79" id="00:11:16.79" class="lt" onclick="jumptoTime(676, this.id)"><p>rigorous，lifestyle，compañ DAM，researchers，�ây，toute，tricky，имости，fully，digitally，ub scientist，怎麼了，‑ Serge，turtle，poi，note，爾，jul Nintendo，ch，atas。</p></a>
+				<a href="#00:11:20.21" id="00:11:20.21" class="lt" onclick="jumptoTime(680, this.id)"><p>Unterschied，Hu，gend，Testament，д Пом，ун，amy，� mesures，aura，SN，ting，Unit invers espacio，火夠猛烈就可以將雞放入去，將雞炒勻，好，將整隻雞放入去，我不要攪拌一會兒，炒一會兒就完成了，mani trainer，動 Hehe。</p></a>
+				<a href="#00:12:20.24" id="00:12:20.24" class="lt" onclick="jumptoTime(740, this.id)"><p>asonable，pie，Town</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:18.34" id="00:12:18.34" class="lt" onclick="jumptoTime(738, this.id)"><p>Production，Sovi 부분，sesi，consolidate</p></a>
+				<a href="#00:12:3.32" id="00:12:3.32" class="lt" onclick="jumptoTime(723, this.id)"><p>� persu Pu，��，facial</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:16.86" id="00:12:16.86" class="lt" onclick="jumptoTime(736, this.id)"><p>Pharm agriculture，commanded</p></a>
+				<a href="#00:12:9.16" id="00:12:9.16" class="lt" onclick="jumptoTime(729, this.id)"><p>üy，milhões，chemicals，boro，answer，열</p></a>
+				<a href="#00:12:20.20" id="00:12:20.20" class="lt" onclick="jumptoTime(740, this.id)"><p>Born，stool，exp arrested，motion，aw시면</p></a>
+				<a href="#00:12:19.56" id="00:12:19.56" class="lt" onclick="jumptoTime(739, this.id)"><p>Și，troublesome，).</p></a>
+				<a href="#00:12:9.06" id="00:12:9.06" class="lt" onclick="jumptoTime(729, this.id)"><p>LIVE，有一yw，precious，вли，tutte，WOODRUFF，וא，iele，скорее</p></a>
+				<a href="#00:12:11.90" id="00:12:11.90" class="lt" onclick="jumptoTime(731, this.id)"><p>bij，бес，возмож，populations，一會兒再翻面，然後再做什麼，ensuring Quand facts</p></a>
+				<a href="#00:12:20.12" id="00:12:20.12" class="lt" onclick="jumptoTime(740, this.id)"><p>messaging，sagen，brand，freeze，naments，Councillors，EA，MARTIN，venth，uy，له，l，wise，HASrades，compassionate，Alexandra，Cast!(，pi unknowns，empresas，謝謝觀看，earth buck никто。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:31.83" id="00:12:31.83" class="lt" onclick="jumptoTime(751, this.id)"><p>~"，networking Vel巴</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:36.75" id="00:12:36.75" class="lt" onclick="jumptoTime(756, this.id)"><p>Jadi，한데</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:35.07" id="00:12:35.07" class="lt" onclick="jumptoTime(755, this.id)"><p>oud говорю，bons période</p></a>
+				<a href="#00:12:25.57" id="00:12:25.57" class="lt" onclick="jumptoTime(745, this.id)"><p>Examples，estos，inaug Rais chapel，fantastít，teeth，재미，achte，ран anticipate，Phantom</p></a>
+				<a href="#00:12:22.03" id="00:12:22.03" class="lt" onclick="jumptoTime(742, this.id)"><p>Leslie，viu，dates，heut，ifiable，rine，los，contemptkin</p></a>
+				<a href="#00:12:36.17" id="00:12:36.17" class="lt" onclick="jumptoTime(756, this.id)"><p>опас，chce，ağı，śli，ened</p></a>
+				<a href="#00:12:25.31" id="00:12:25.31" class="lt" onclick="jumptoTime(745, this.id)"><p>�还有，iras，Ash annoyed，radsmith guideline</p></a>
+				<a href="#00:12:31.51" id="00:12:31.51" class="lt" onclick="jumptoTime(751, this.id)"><p>przysz，något，AC</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:28.07" id="00:12:28.07" class="lt" onclick="jumptoTime(748, this.id)"><p>rench，scares，univers빦�，ary，illum Gaming，Clap dès，слова，trazer，Athens closer，orbiting，ечно point，用大火煮，現在可以推了，就可以炒了，和這些小頭炒了，小頭炒了，火力調至中小，不要太大火，剛才爆的時候我調至很小火。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:5.40" id="00:13:5.40" class="lt" onclick="jumptoTime(785, this.id)"><p>當然我用電爐，所以小火也有個好處，如果你在香港用火爐的話，就要自己看火，這個時候就要慢慢看火，最後放入這些，這些是辣椒，火要看著時大時小，再攪拌</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:4.85" id="00:14:4.85" class="lt" onclick="jumptoTime(844, this.id)"><p>sociaisиш Danny meno，James，cloak，poon，Provost，Kah mijn，Investment，aska，ographers，evacuate，harden</p></a>
+				<a href="#00:14:19.13" id="00:14:19.13" class="lt" onclick="jumptoTime(859, this.id)"><p>kız，чи，arsen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:18.07" id="00:14:18.07" class="lt" onclick="jumptoTime(858, this.id)"><p>Ol της，betray，arner，seeks</p></a>
+				<a href="#00:14:27.27" id="00:14:27.27" class="lt" onclick="jumptoTime(867, this.id)"><p>1944，PDF，konk clergy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:14.13" id="00:14:14.13" class="lt" onclick="jumptoTime(854, this.id)"><p>його，ancestry，mies</p></a>
+				<a href="#00:14:17.67" id="00:14:17.67" class="lt" onclick="jumptoTime(857, this.id)"><p>손，companion</p></a>
+				<a href="#00:14:11.51" id="00:14:11.51" class="lt" onclick="jumptoTime(851, this.id)"><p>Erin，amplified，Foi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:13.49" id="00:14:13.49" class="lt" onclick="jumptoTime(853, this.id)"><p>Drake，овой，tama，infinity，Grace，기� label，sorcer 잡아，Growing Sacramento</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:22.51" id="00:14:22.51" class="lt" onclick="jumptoTime(862, this.id)"><p>pays，typing，addressing，bul Polizei，manifested，全程聽到啪啪啪啪啪聲，我繞著它，全程聽到啪啪啪啪啪聲，很開心，煮日食炒菜最開心就是聽到這些聲，最後放少少酒，火不夠猛，酒下去就不是炸炸聲，不開心了，見到雞還未熟，只是煎香表面，完全未熟，顏色都OK靚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:13.60" id="00:15:13.60" class="lt" onclick="jumptoTime(913, this.id)"><p>現場看會更深色，起!起!起!</p></a>
+				<a href="#00:15:28.03" id="00:15:28.03" class="lt" onclick="jumptoTime(928, this.id)"><p>湯下去之後，很香之後，我現在其實很快的了，已經弄好一半了，最後我們就放些湯下去，滾起了之後，就是煮它，八至十分鐘，煮到它熟，那就可以吃了，然後當然要再試味，那些那樣，與此同時，你可以在這裡煮，或者，我現在快熟了，沙鍋我一直都已經有，沙鍋在旁邊暖著了，然後我整個放進沙鍋裡，慢慢煮，你看看你自己喜歡是怎樣。</p></a>
+				<a href="#00:16:12.03" id="00:16:12.03" class="lt" onclick="jumptoTime(972, this.id)"><p>我可以，將沙鍋移過來，將雞倒進去，慢慢煮，剛才那個方法，我未必可以用沙鍋來拋鍋，現在這樣煮，就剛剛好，煮好之後就轉移到，沙鍋裡慢慢煮，沙鍋我一直在旁邊用小火，燒著它，讓它熱熱的，又不是很熱，熱熱的，然後，我們就可以，等它慢慢煮，煮滾了之後，就可以吃了，好了，回來了，首先我要報告一下，就是，不要放青雞湯了，各位。</p></a>
+				<a href="#00:17:4.03" id="00:17:4.03" class="lt" onclick="jumptoTime(1024, this.id)"><p>我放了之後才發現，它有很多水，我剛才放了半罐，到最後我要舀走它，來煮，因為我看到，網上那些雞煲，應該是比較濃稠的，所以就不要放青雞湯了，我舀走了，它也有這麼多水分，所以，但也很棒，我知道，你看看雞煲，煮了，十分鐘，在這個時間拍張照片，接著就是吃了，吃的時候我們就把芫茜和糖藤放進去，漂亮嗎?</p></a>
+				<a href="#00:18:3.91" id="00:18:3.91" class="lt" onclick="jumptoTime(1083, this.id)"><p>好，現在放進去蓋上蓋子再打開蓋子，現在我就試吃了，看看配哪一塊比較好，好，加上芫茜我都來試吃了，給你們看看，這是雞胸肉，一點也不老，給你們看，好吃，最後可以加些醬油調味，可以再加些麻油調味，今天就這樣，下次再見。</p></a>
+</div>
+	</body>
+</html>

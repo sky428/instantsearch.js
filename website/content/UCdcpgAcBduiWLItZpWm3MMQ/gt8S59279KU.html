@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家用冰雞骨做簡易高湯  | Homemade Chicken Broth</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'gt8S59279KU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家用冰雞骨做簡易高湯  | Homemade Chicken Broth</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.56" id="00:00:5.56" class="lt" onclick="jumptoTime(5, this.id)"><p>平時把雞上腿剔出來的雞骨，我會用保鮮紙包好，一份份放在冰箱，儲夠份量拿出來，今次就儲夠了，拿出來和大家一起煲一個簡易的高湯，加蝦米和冬菇，用小小粒的冬菇就可以了。</p></a>
+				<a href="#00:00:42.52" id="00:00:42.52" class="lt" onclick="jumptoTime(42, this.id)"><p>大家好，前段時間我們做了一些雞扒，買了很多雞扒用來做不同的菜式，當然買了之後會起很多骨，今天就把骨頭用掉，大家都知道現在每樣東西都加價，我們都想在家中吃好一點，又可以省一點，我便想一下，買了這麼多雞骨草米。</p></a>
+				<a href="#00:01:14.38" id="00:01:14.38" class="lt" onclick="jumptoTime(74, this.id)"><p>不如一次過做一個清雞湯，然後放在冰箱或雪櫃，放涼又可以放湯煮食，我覺得都不錯，當然買罐清雞湯都很便宜，但自己做的感覺上沒有那麼多防腐劑，沒有那麼多雞肉的東西，今天就在冰箱裡放了我之前草的骨頭，在外國我們都會這樣做，起了骨頭我們不會隨便丟掉，我都會用保鮮紙包好，等到有一天可以用，當然最好越快用越好。</p></a>
+				<a href="#00:02:12.02" id="00:02:12.02" class="lt" onclick="jumptoTime(132, this.id)"><p>另外有些可能在之前，譬如蒸雞我不吃雞腳，我之前已經剁好了留下雞腳，都有用的，現在可以一次過煮了，只用雞骨是不夠味道的，因為你都想湯多一點味道，等到可以用來做不同的東西，用來煮其他湯，加蔬菜煮湯的時候，它都會更加香味，我會加了什麼呢。</p></a>
+				<a href="#00:02:41.94" id="00:02:41.94" class="lt" onclick="jumptoTime(161, this.id)"><p>我這裡有些甜菜脯，浸一浸水，浸走污垢，洗一下，有少許，雞骨大概有一公斤，這裡有幾條菜脯，有些菇，這些菇和蝦米，其實都不需要太多，少少的就可以了，這些菇是很小的，大隻的指甲，很小的不需要買大菇，家裡找到便宜的菇都可以，十多二十隻，蝦米大約半三分之一兩杯，你喜歡加多少都可以，只要味道豐富一點，另外要加些甜味。</p></a>
+				<a href="#00:03:36.18" id="00:03:36.18" class="lt" onclick="jumptoTime(216, this.id)"><p>我會加洋蔥，洋蔥不需要太多，因為太多就搶過了雞的味道，加些薑就好一點，現在可以開始做了，第一樣東西，我們就拿水沖洗一下菇，因為菇始終有些位置，可能都會有沙，洗掉它和蝦米，不用浸的，因為浸了邊邊就爽了，我們想它把味道留在湯裡面，所以就沖洗一下，沖洗完之後過水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.06" id="00:04:10.06" class="lt" onclick="jumptoTime(250, this.id)"><p>放一鍋水就可以了，這樣浸一浸，一會兒就把它切絲，切條，然後這塊，首先就這樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:23.30" id="00:04:23.30" class="lt" onclick="jumptoTime(263, this.id)"><p>不停地沖洗上面的冰，然後我們就做下一個步驟了，開始，先把雞骨放入冰箱，放入兩片薑，先把雞骨浸泡在水中。</p></a>
+				<a href="#00:05:8.14" id="00:05:8.14" class="lt" onclick="jumptoTime(308, this.id)"><p>開火，先把菜脯切成絲，我這裏有兩隻菜脯，可以隨意切開，菜脯可以放置一段時間，洋蔥切成四片</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.14" id="00:06:27.14" class="lt" onclick="jumptoTime(387, this.id)"><p>洋蔥切成絲，切開後就切皮，稍後會稍微炒一下，將皮全部弄散就可以了，煮一煮， 它就會有些浮泡出來，我們最好把它挖出來，等到它滾起，現在還未滾起。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:6.83" id="00:07:6.83" class="lt" onclick="jumptoTime(426, this.id)"><p>但它已經有些浮泡出來了，因為始終這些都是骨頭，ulent worth effectiveness，句，Nä</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:14.25" id="00:07:14.25" class="lt" onclick="jumptoTime(434, this.id)"><p>disbel Cheese，因為有很多污漬在骨頭內，血水也會流出來，所以我們要把所有污漬清理乾淨，這樣湯的質感就會很好，這些水是不要的，待會我們還要清理，不過在這個時間還未煮開之前，就要先把粉末去掉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:38.13" id="00:07:38.13" class="lt" onclick="jumptoTime(458, this.id)"><p>現在已經煮開了，煮開後大約煮5分鐘左右，繼續把污漬去掉，5分鐘後我們就要沖凍水，洗淨骨頭就可以開始煲湯了，現在開始煲湯，先把洋蔥和菜脯放入鍋裡，不用放油，放在原本的鍋裡，一次過放進鍋裡煮，用白鑊把湯煮好，讓菜脯和洋蔥先揮發味道，讓菜脯更香，然後就可以煲湯了，放入鍋裡煮，讓湯的水分流走。</p></a>
+				<a href="#00:09:0.32" id="00:09:0.32" class="lt" onclick="jumptoTime(540, this.id)"><p>炒到有煙出，開始聞到香味。</p></a>
+				<a href="#00:09:14.32" id="00:09:14.32" class="lt" onclick="jumptoTime(554, this.id)"><p>可以把香菇和蝦放進去，同樣烘烘烘，大約炒3-4分鐘就可以了。</p></a>
+				<a href="#00:09:42.64" id="00:09:42.64" class="lt" onclick="jumptoTime(582, this.id)"><p>tenga</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:44.08" id="00:09:44.08" class="lt" onclick="jumptoTime(584, this.id)"><p>nity，Tryingapan，將雞骨放入鑊中，將熱水放入鑊中，大約是3.5公升熱水，完全可以浸過雞骨，這時可以撩底，U responses，exact，correctly，로</p></a>
+				<a href="#00:10:17.23" id="00:10:17.23" class="lt" onclick="jumptoTime(617, this.id)"><p>fruit，donné</p></a>
+				<a href="#00:10:19.91" id="00:10:19.91" class="lt" onclick="jumptoTime(619, this.id)"><p>toler duplicate，usually，常，炒至香味出來了，先把底部撈起，剛才炒的時候，底部已經有些顏色，那些都是味道，撈起底部，然後就開始煲，因為這個是熱水的關係，我們就不需要開到很大火，現在已經開到很大火，我們只用中火，煲它再滾一點，然後就中小火煲它半小時，不要用大滾火滾水，因為始終。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:6.78" id="00:11:6.78" class="lt" onclick="jumptoTime(666, this.id)"><p>這些是雞腳骨，它很容易會出很多血水，雖然我們已經出過一次，你想湯好看一點，但不要用很大很猛火滾水。</p></a>
+				<a href="#00:11:20.78" id="00:11:20.78" class="lt" onclick="jumptoTime(680, this.id)"><p>用中火慢慢煲它，用玻璃蓋蓋住，蓋住之後一滾水就調中小火，湯已經微微滾起，你見到泡在上面，這樣升上來，我們就可以將它轉小火，中小火，然後就煲它，大概一個半小時至兩個小時，視乎你自己喜歡濃郁的狀態，我們現在等它慢慢繼續煲，已經煲了一個半小時，蓋住蓋子慢慢煲，它不是很滾，現在我們可以試試看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:18.78" id="00:12:18.78" class="lt" onclick="jumptoTime(738, this.id)"><p>好漂亮，我先試試，顏色很像雞湯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:30.78" id="00:12:30.78" class="lt" onclick="jumptoTime(750, this.id)"><p>真的像雞湯，因為已經有鹹味，不需要再加鹽，洋葱一颗就够了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:2.39" id="00:13:2.39" class="lt" onclick="jumptoTime(782, this.id)"><p>很棒，现在可以过筛，剩下的鸡汤可以留起，然后放入冰箱，慢慢用，可以马上喝，喜欢可以马上喝。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:32.39" id="00:13:32.39" class="lt" onclick="jumptoTime(812, this.id)"><p>马上过筛，让水分流出来，不然会怕水吸收食材，过筛，留汁，鸡骨过筛，得出这么大一锅汤，鸡脚喜欢可以吃，很好味，骨头不要。</p></a>
+				<a href="#00:14:23.39" id="00:14:23.39" class="lt" onclick="jumptoTime(863, this.id)"><p>冬菇可以夹起，其他菜铺的都够味，没有味道，可以不要，冬菇一颗一颗很完整，可以炒菜，或者放点甜豉油和麻油，已经很好吃，已经软了，可以用，剩下的汤，可以用汽水盖起。</p></a>
+				<a href="#00:15:20.12" id="00:15:20.12" class="lt" onclick="jumptoTime(920, this.id)"><p>湯冷卻後就可以盛起，可以放在自己喜歡的容器，我這些可以放在冰格的盒子，大約是1.3公升一盒，每次可以一次過用一盒，喜歡的話可以分細盒一點，我這裏大約是1.3公升</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:3.52" id="00:16:3.52" class="lt" onclick="jumptoTime(963, this.id)"><p>2公升左右，可以留一點空間，因為冷卻後會脹起來，留一點空間讓我盒子脹起來，完成了，可以放在冰箱，如果放在普通冰箱可以放三天，如果放在冰箱可以放一個月，或者三個星期，因為我有雞腳，顏色會比較實色，如果全部都是骨頭和清乾淨的話。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:47.52" id="00:16:47.52" class="lt" onclick="jumptoTime(1007, this.id)"><p>湯會比較清，現在會比較清淡，今天我分享的就是這樣，還有一些湯還沒喝完，下次再和大家分享更多美食，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>
