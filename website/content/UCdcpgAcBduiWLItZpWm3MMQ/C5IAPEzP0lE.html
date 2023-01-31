@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水晶西米盞 (簡短版)  - Steam Sago Cake (short version)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'C5IAPEzP0lE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>水晶西米盞 (簡短版)  - Steam Sago Cake (short version)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>這個甜品就是西米盞，首先我們看到有介紹材料，有西米，有豆沙，這些就是市售的豆沙，你可以自己做，如果說簡便，好快的，最好就買就可以了，首先第一樣東西就要浸水，我已經有些水在這了，然後就把西米倒進去，這就是半包西米，然後就把西米倒進去，這樣就讓它完全浸在水裏面，不要動它 大約浸一個小時，一個小時後回來見。</p></a>
+				<a href="#00:00:52.19" id="00:00:52.19" class="lt" onclick="jumptoTime(52, this.id)"><p>我現在這個方法是和平時處理西米的方法是完全不同的，為什麼呢，因為我這次是做西米盞 我會拿它來蒸，所以我就是浸了水 等它吸一口水，然後一會兒再做，我已經浸好了，浸好的時候 我就要把它隔水 把這些水都倒掉，我示範給你看，把它隔水，所有的水都會釀出來，你見到它是一粒粒的，我繼續隔。</p></a>
+				<a href="#00:01:38.19" id="00:01:38.19" class="lt" onclick="jumptoTime(98, this.id)"><p>這樣就得出一個這麼大的篩米，這個篩米在這之後我們要做什麼呢，我就將少許油放進去，大約是一個大匙，攪拌均勻，剛才放了油 現在就放糖進去，攪拌均勻，因為我是用這種篩子來做的，這個篩子很小，我要想西米一會兒第一層就來到這裡一半，然後紅豆沙就再放在上面，然後再蓋上一些西米在上面，所以我就要看一下紅豆沙。</p></a>
+				<a href="#00:02:32.19" id="00:02:32.19" class="lt" onclick="jumptoTime(152, this.id)"><p>其實大約是小於這個圈 扁扁的就可以了，我就做幾個這樣的餡，大約一個這樣的匙羹就可以了，然後就可以將它放進去，將它分開一點，待會放入餡料時會方便一點，這個時候我將油倒入碗中，然後預備一個掃，掃上油後，均勻地掃在模具上，用黑模，現在可以將西米放入模具，首先，我可以將一匙西米放入模具中，將一半放在底部。</p></a>
+				<a href="#00:03:52.24" id="00:03:52.24" class="lt" onclick="jumptoTime(232, this.id)"><p>然後將剛才做好的紅豆放入模具中，然後用另一半西米蓋住模具，最好就慢慢地壓著蓋著，就是這樣，做好一個，我第一次用這種模具，即是用這個卡來做西米盞，希望一會兒可以脫掉，這樣就可以蓋著，然後就，嘩!很大，有些蒸氣，然後就可以隔水大火蒸，蒸25分鐘，我們一會兒回來，現在已經焗了25分鐘，我們打開一點來看看。</p></a>
+				<a href="#00:05:7.87" id="00:05:7.87" class="lt" onclick="jumptoTime(307, this.id)"><p>我放一點煙，它已經透明了，有些還很脹，讓你們看看，我現在可以拿出來，我拿出來了，看，已經蒸好了，現在就要試一下，可不可以拿出來，這樣拿起來，我這裡有些邊位，我可以撥走，讓它一會兒出來的樣子漂亮一點，然後我就可以在旁邊這樣撥一撥，它就不是很黏了，因為很熱，要放一放它就沒那麼軟，現在仍然很軟，不過很容易一推就推出來。</p></a>
+				<a href="#00:06:9.87" id="00:06:9.87" class="lt" onclick="jumptoTime(369, this.id)"><p>多推一個出來給你們看看，因為我塗了油，一推就推出來了，是不是很漂亮呢，這樣可以熱吃，現在它很熱可以放一放，或者可以冷凍一點吃也可以，今天的介紹就這樣，希望大家都可以在家裡有空做。</p></a>
+				<a href="#00:06:37.87" id="00:06:37.87" class="lt" onclick="jumptoTime(397, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

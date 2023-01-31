@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[懷舊糕點] 在家做白糖糕 - Cantonese Steamed Rice Cake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QS_mSalg8tE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[懷舊糕點] 在家做白糖糕 - Cantonese Steamed Rice Cake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>請點贊、分享、留言、訂閱我啦!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:5.53" id="00:00:5.53" class="lt" onclick="jumptoTime(5, this.id)"><p>Hello各位朋友你們好，今天我又做一個中式懷舊糕點，為什麼這兩邊好像有些東西很像又不像，為什麼呢?</p></a>
+				<a href="#00:00:21.53" id="00:00:21.53" class="lt" onclick="jumptoTime(21, this.id)"><p>因為我打算做白糖糕，白糖糕很多時候大家都應該吃過，它是白色的，有些蜂巢裡面有很多洞洞，有些說要不酸，有些說要酸，其實我一直以來都吃兩種都有，而我自己本人就很喜歡吃白糖糕，上網去看，看家裡有些書去看，白糖糕有很多方法做，我今天又是新行，所以我想見到有幾個方法，我選了兩個方法出來試，份量材料盡量跟它差不多。</p></a>
+				<a href="#00:01:8.53" id="00:01:8.53" class="lt" onclick="jumptoTime(68, this.id)"><p>兩個比較的材料都差不多，想看看做出來有什麼不同，一個是用白米做的白糖糕，一個是用粘米粉做的白糖糕，一個是麻煩版，一個是簡易版，就是這麼簡單，這裡有些白米，之前我已經處理過，這裡有150克的白米，我們會洗乾淨，用水浸大概幾個小時，我現在是睡前，我放水進去，然後放進冰箱，現在已經浸過夜，清水就在這裡。</p></a>
+				<a href="#00:01:59.53" id="00:01:59.53" class="lt" onclick="jumptoTime(119, this.id)"><p>150克的白米，250ml的水，3分之4茶匙的乳酪，還有90克的砂糖，另外這邊也是150克，粘米粉，一樣是3分之4茶匙的酵母，還有90克的乳酪，300ml 水，這個水比這個多，因為這個米是濕的，而這個是乾的，所以要多一點水，現在開始做吧，首先處理乳酪，這裡有乳酪和酵母菌，加一點水，再加一點糖。</p></a>
+				<a href="#00:03:5.57" id="00:03:5.57" class="lt" onclick="jumptoTime(185, this.id)"><p>拌勻，等到它慢慢發霉，變成泡泡，再等它，這裡有150克白米，已經泡過，將它放進去，然後在剛才的250ml水中，加一點點水，然後將它拌勻，打了幾分鐘，可以看看，已經很滑身，用手指摸摸，感覺到很滑，之前用過，有沙沙的感覺，現在已經很滑，雖然有沙沙的感覺，因為是米粒，但已經很滑，不是一粒粒大粒，打了5-6分鐘，已經很滑，這樣就可以了，倒出來。</p></a>
+				<a href="#00:05:8.09" id="00:05:8.09" class="lt" onclick="jumptoTime(308, this.id)"><p>剩下的水，90克糖放進去，煮溶，煮溶就可以了，不需要煮到糖溶了，砂糖很容易溶，現在已經完全溶了，放涼涼的，冷冷的，不需要到室溫，可以和米漿混合，現在太熱了，要等一等，現在糖水大約60度，不是室溫，然後就放進粉漿，為什麼要暖暖的放，因為粉漿和水容易混合，如果所有東西都是冷水，很容易米漿會…，水滑水、米滑米、粉滑粉的感覺。</p></a>
+				<a href="#00:06:29.92" id="00:06:29.92" class="lt" onclick="jumptoTime(389, this.id)"><p>如果有了暖暖的效果的話，就會比較容易混合，不會太容易一放下就會全部掉在底下，我剛剛按漏了，就是這裡已經低於30度的溫度，然後我就把烤模放進去，現在已經混合了，但我剛剛忘記了按記錄，現在已經混合了，然後我們就放到室溫發酵，如果發酵的話，我這裡的室溫是22度，起碼是冬天，可能要發酵兩三個小時。</p></a>
+				<a href="#00:07:26.32" id="00:07:26.32" class="lt" onclick="jumptoTime(446, this.id)"><p>如果家裡比較熱的話，20多30度的那些，發酵一個小時就可以了，我現在就拿去，如果你想快速一點的話，就好像我這樣，我放在微波爐裡面，然後加一碗熱水，然後蓋住它，讓它慢慢發酵，這樣它就可能會加快發酵的時間，現在第二邊我又再做了，用簡易方法，我這裡加一點水到這邊，加一點砂糖煮溶糖水，一樣慢慢煮溶它。</p></a>
+				<a href="#00:08:7.92" id="00:08:7.92" class="lt" onclick="jumptoTime(487, this.id)"><p>烤模也是，剛剛也是，我拿了一些水，然後也是，拿了一些水，然後放一點糖下去，讓它自己慢慢發酵，然後就是這裡了，我把這裡的水，就在這裡慢慢攪拌它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:29.12" id="00:08:29.12" class="lt" onclick="jumptoTime(509, this.id)"><p>攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:41.08" id="00:08:41.08" class="lt" onclick="jumptoTime(521, this.id)"><p>將所有水份倒入鍋中，然後慢慢將水份開啟，攪拌至沒有粉粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:2.76" id="00:09:2.76" class="lt" onclick="jumptoTime(542, this.id)"><p>łych，Compared 1964，Paint，1000，Buildiff，involved，acontec Response，Kelly，인�!</p></a>
+				<a href="#00:09:5.64" id="00:09:5.64" class="lt" onclick="jumptoTime(545, this.id)"><p>many，рем，reco，adas，apps，糖水也準備好了，糖水也是一樣，大約50-60度，不是熱的，慢慢攪拌</p></a>
+				<a href="#00:09:31.80" id="00:09:31.80" class="lt" onclick="jumptoTime(571, this.id)"><p>慢慢攪拌，完全打開了，現在量一下溫度，現在是三十多度，等它冷卻一點，就可以把酵母放進去，現在就可以把酵母放進去，攪勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:20.86" id="00:10:20.86" class="lt" onclick="jumptoTime(620, this.id)"><p>然後放置一段時間</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:30.86" id="00:10:30.86" class="lt" onclick="jumptoTime(630, this.id)"><p>我現在已經發酵了兩小時，我之前和後面做的時間相差15分鐘，所以我可以做完一個就一個，現在我會在這個7吋的模具裏塗上油，等待待會就可以倒進去做，我現在拿出來這個就是用米漿做的，已經是兩個小時了，上面有很多大泡泡，我現在就全部攪拌均勻，然後就可以倒入盤內，最後加少許油拌勻，加少許就可以了。</p></a>
+				<a href="#00:11:52.40" id="00:11:52.40" class="lt" onclick="jumptoTime(712, this.id)"><p>拌勻，Beng variouslean</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:2.98" id="00:12:2.98" class="lt" onclick="jumptoTime(722, this.id)"><p>CruTa sitten，ético，treaties，ministstru</p></a>
+				<a href="#00:12:10.66" id="00:12:10.66" class="lt" onclick="jumptoTime(730, this.id)"><p>Redner，sauces</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:8.88" id="00:12:8.88" class="lt" onclick="jumptoTime(728, this.id)"><p>land，half，mit，黑</p></a>
+				<a href="#00:11:59.96" id="00:11:59.96" class="lt" onclick="jumptoTime(719, this.id)"><p>foolish，flee，Gucci</p></a>
+				<a href="#00:11:57.18" id="00:11:57.18" class="lt" onclick="jumptoTime(717, this.id)"><p>nota，crafts，circumstance，opponents</p></a>
+				<a href="#00:12:1.22" id="00:12:1.22" class="lt" onclick="jumptoTime(721, this.id)"><p>hoven，rendre</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.22" id="00:12:1.22" class="lt" onclick="jumptoTime(721, this.id)"><p>pos，fidelity，advanceJason</p></a>
+				<a href="#00:12:2.32" id="00:12:2.32" class="lt" onclick="jumptoTime(722, this.id)"><p>머�，honesty，arbeit</p></a>
+				<a href="#00:12:1.04" id="00:12:1.04" class="lt" onclick="jumptoTime(721, this.id)"><p>dobre，blocking，Mean sizing，maze，minim purposes，femme，виде</p></a>
+				<a href="#00:12:11.52" id="00:12:11.52" class="lt" onclick="jumptoTime(731, this.id)"><p>Х strands，Fore Bock，ポ branding，然後就可以拿去蒸了，我用一個蒸焗爐來蒸，我會用Super Steam 蒸20-25分鐘，其實它剛才已經焗好了第一份，剛才它在裡面仍然是很高很大，怎知道一拿出來就塌了，是不是因為我用的爐太大火，它旁邊的邊都有少少金黃色，哎呀!大件事了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:54.94" id="00:12:54.94" class="lt" onclick="jumptoTime(774, this.id)"><p>它現在就凹了下去，我現在用第二個，我試一下不用爐用鍋來蒸，看看會不會不同，這個就是之後的了，這個就是用粉來搓的，然後我們就將它由底至面攪拌均勻，攪拌好後會有很多泡泡，攪拌均勻，攪拌好後我們就過篩，攪拌均勻，攪拌均勻後我們就過篩，過篩後拿去蒸，剛才那個似乎失敗了，現在再蒸20-25分鐘看看怎樣，第二個已經出爐了。</p></a>
+				<a href="#00:14:20.65" id="00:14:20.65" class="lt" onclick="jumptoTime(860, this.id)"><p>給你們看看，裡面有很多空氣和洞洞的，聞起來也有白糖的味道，現在要放涼了，放涼後才可以切，聽到有聲音，我先把它放出來，移動一下，把它移出來，你看多漂亮，放出來，一個白糖糕，就是用粉漿做的那個，現在切出來給大家看，已經完全放涼了，看看出來是怎樣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:23.65" id="00:15:23.65" class="lt" onclick="jumptoTime(923, this.id)"><p>非常好吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:32.31" id="00:15:32.31" class="lt" onclick="jumptoTime(932, this.id)"><p>一絲絲的，看到嗎?，一條條的，上層有泡沫的，一絲絲的，一個糕點，我給你們看兩面，這個白糖糕，用快速版做的，出來的效果就很漂亮，我覺得我錯的地方是，我用了蒸焗爐來焗，問題就在那裡出來，如果不是，它一開始在焗爐看起來很漂亮，但一拿出來，它就不夠深，挺不出來，我唯有就是這樣，全部都很漂亮，全部一塊塊的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:47.87" id="00:16:47.87" class="lt" onclick="jumptoTime(1007, this.id)"><p>現在給大家看清楚，看到有鬆脆的再撕開給大家看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:3.87" id="00:17:3.87" class="lt" onclick="jumptoTime(1023, this.id)"><p>試味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:5.87" id="00:17:5.87" class="lt" onclick="jumptoTime(1025, this.id)"><p>很軟，很像</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:26.71" id="00:17:26.71" class="lt" onclick="jumptoTime(1046, this.id)"><p>好像白糖，好，好像我小時候吃的那些，但當然沒有那些好吃，始終第一次做，其實可能有很多步驟，都想再改，才可以再好一點，但基本上技巧掌握就是這樣，今天介紹到這裡，希望下次再找其他東西，跟大家分享一起做，下次再見</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:25.71" id="00:18:25.71" class="lt" onclick="jumptoTime(1105, this.id)"><p>是不是倒了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:30.71" id="00:18:30.71" class="lt" onclick="jumptoTime(1110, this.id)"><p>紋路就更加漂亮，試試吃，更加像</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:39.71" id="00:18:39.71" class="lt" onclick="jumptoTime(1119, this.id)"><p>還好，吃飯，還是很彈，很嫩熟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:7.27" id="00:19:7.27" class="lt" onclick="jumptoTime(1147, this.id)"><p>我這個其實是減了糖的，所以沒有外面的那麼甜，蒸好之後，一定要稍微放涼，這樣就可以去除發酵的味道，有時就是不忿氣，想做好一點做好一點，但時間又不夠，不過呢，用了力就算了，我會繼續做，做到變成自己小時候吃的那種味道為止，繼續努力吧，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做缽仔糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kvD3kjf1JHk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做缽仔糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:10.04" id="00:00:10.04" class="lt" onclick="jumptoTime(10, this.id)"><p>大家好，今天和大家做一個簡單的中式甜點，這個甜點是很多人的兒時回憶，但也很簡單做的，就是缽仔糕，前面所有材料就在這裡，我們看看材料，上網可以有不同的缽仔糕材料，很多時候最主打的就是粘米粉，粘米粉就是用平時吃的米去磨粉，我們平時用粘米粉做什麼呢?</p></a>
+				<a href="#00:00:51.04" id="00:00:51.04" class="lt" onclick="jumptoTime(51, this.id)"><p>就是做蘿蔔糕，蘿蔔糕裡面其中一個很重要的材料就是粘米粉，另外你也會看到有另外一個材料，就是我們Tapioca的木薯粉或是燉麵，燉麵用來做什麼呢?</p></a>
+				<a href="#00:01:8.04" id="00:01:8.04" class="lt" onclick="jumptoTime(68, this.id)"><p>除了用來做缽仔糕這個材料之外，就是做蝦餃，蝦餃的皮透明的就是用燉麵來做的，木薯粉大家可能都知道Tapioca，就是什麼呢?</p></a>
+				<a href="#00:01:24.04" id="00:01:24.04" class="lt" onclick="jumptoTime(84, this.id)"><p>它有很多不同的名字，例如是菱粉或者是，還有木薯粉，很多時候我們在哪裡會找到珍珠奶茶的珍珠呢?</p></a>
+				<a href="#00:01:36.40" id="00:01:36.40" class="lt" onclick="jumptoTime(96, this.id)"><p>就是用這個粉做的，今天我就試一下將這幾種粉混合一起，做一個缽仔糕的糕底，不如先介紹一下材料吧，材料就是有粘米粉，這裡有90克的粘米粉，然後就是木薯粉25克，這是燉麵25克，然後就是紅豆，紅豆我自己就自己做了，但是因為我放在真空壓力鍋裡做，久了它就很快就已經軟了，處理紅豆最方便的，你可以自己去買。</p></a>
+				<a href="#00:02:17.40" id="00:02:17.40" class="lt" onclick="jumptoTime(137, this.id)"><p>或者拿紅豆回來，拿水泡幾個小時，甚至泡過夜，然後第二天就慢慢煮，你可以放在真空煮，可以放在壓力煮，或者就這樣慢慢煮，我用壓力鍋煮了15分鐘，就已經可以變成這樣了，紅豆的材料就隨意，看你要吃多少紅豆，你就要放多少，這裡我就用了片糖，片糖一袋是100克，你可以用你自己喜歡的糖，很多時候你在網上看到食譜。</p></a>
+				<a href="#00:02:58.40" id="00:02:58.40" class="lt" onclick="jumptoTime(178, this.id)"><p>多數都是用黃糖，你可以用黑糖也可以，總之你想深色一點，你可以用黑糖也可以，或者有些片糖，我這一隻就用普通片糖，但有些是叫做原片糖，原蔗糖的片糖，它就再深色一點，再黑一點，你想要深色一點，就可以試一下，可以再用一點，再深一點的不同的糖，它就大約100克左右，你可以如果說，我喜歡吃白色的缽仔糕，你就可以把它變成白糖。</p></a>
+				<a href="#00:03:27.40" id="00:03:27.40" class="lt" onclick="jumptoTime(207, this.id)"><p>白糖就變成白色的缽仔糕，就是這麼簡單，甚至會加一點椰漿，讓它香一點，而我這裡就不需要，因為我喜歡吃最傳統的黃色糖，所以我就用黃糖，接下來就是這個水，水我有分兩部分，一部分就是要半杯水，125ml左右，另一部分就是一杯水大約250ml，所有的材料都在這裡，我們首先要怎麼做呢，首先第一件事就是。</p></a>
+				<a href="#00:04:1.40" id="00:04:1.40" class="lt" onclick="jumptoTime(241, this.id)"><p>先煮糖水，就將一杯的糖，一杯的水，倒下去，加一杯水和糖，然後就可以煮了，另外我們可以先開火，把鍋開了水就可以開始煮，現在煮就可以了 因為很快，這裡有幾個小碗，這個碗不是很大，我好像一個量杯，首先把碗擦乾，然後每一個碗都抹一點油，因為這個只是一個瓷碗，可能一會兒鍋子黏在碗上，很難拿出來。</p></a>
+				<a href="#00:05:17.86" id="00:05:17.86" class="lt" onclick="jumptoTime(317, this.id)"><p>所以我們最好抹一點油，讓它容易一點，容易一點，一會兒去脫模，我每一個這樣抹一點，這個就是，本來我想做一口的缽仔糕，但是我剛才經過downtown，就看到有賣這些小碗，我覺得雖然一口的拍照得宜漂亮，但是喜歡吃缽仔糕，真的很想整個缽仔，即是傳統的缽仔，一會兒撈出來，我以前做一口的，我沒試過做一個碗。</p></a>
+				<a href="#00:06:10.01" id="00:06:10.01" class="lt" onclick="jumptoTime(370, this.id)"><p>因為家裡沒有這些小碗，剛好今天遇到有，我可以做一個真正的缽仔糕，現在我開始煮糖，將它放進去煮，我移開它，在這個方便這裡，另外我這裡有三個，半杯水和三個粉，現在我們打算將這幾個粉類，將它攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:49.01" id="00:06:49.01" class="lt" onclick="jumptoTime(409, this.id)"><p>放進來，攪拌均勻，然後我們可以將半杯水，慢慢攪拌，我暫時用半杯水攪拌，如果不夠的話可以加少許水</p></a>
+				<a href="#00:07:41.36" id="00:07:41.36" class="lt" onclick="jumptoTime(461, this.id)"><p>攪拌均勻，如果太硬的話，就要加水，通常不要加多過一杯水，要拌到它沒有很黏，好像漿一樣，如果覺得太濃的話，可以加水，但不要多於半杯，否則會太結實，看著質感來轉，我發覺原來用中式的東西，用筷子是最好的，下面也是緊的，上面很稀，但下面要用力才能攪拌得到，所以一定要攪拌均勻才行，底部溶化後，繼續攪拌均勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:35.99" id="00:09:35.99" class="lt" onclick="jumptoTime(575, this.id)"><p>但我不想加太多水，否則怕會變硬，同一時間，另一邊已經開始蒸，開了爐，準備用來蒸糕，如果想太甜的話，可以減少一點，但我不建議，如果想不太甜的話，可以減少一點，由100減到70，要確保底部的粉漿均勻，這樣就最好，看看，給你們看看，質地是挺流質的，我只加了75ml的水，jeune。</p></a>
+				<a href="#00:10:59.33" id="00:10:59.33" class="lt" onclick="jumptoTime(659, this.id)"><p>maintaining</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:7.19" id="00:11:7.19" class="lt" onclick="jumptoTime(667, this.id)"><p>overlook，websites，äl clotious</p></a>
+				<a href="#00:11:3.25" id="00:11:3.25" class="lt" onclick="jumptoTime(663, this.id)"><p>çek apprentices，clone，believably</p></a>
+				<a href="#00:11:1.27" id="00:11:1.27" class="lt" onclick="jumptoTime(661, this.id)"><p>Dru Christie，online，shallow，orama，''</p></a>
+				<a href="#00:11:6.89" id="00:11:6.89" class="lt" onclick="jumptoTime(666, this.id)"><p>milli，ilian，sont，parts，ashion</p></a>
+				<a href="#00:11:9.43" id="00:11:9.43" class="lt" onclick="jumptoTime(669, this.id)"><p>Portuguese，pursued，파</p></a>
+				<a href="#00:11:4.51" id="00:11:4.51" class="lt" onclick="jumptoTime(664, this.id)"><p>noon，cus，Rip YES</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:8.87" id="00:11:8.87" class="lt" onclick="jumptoTime(668, this.id)"><p>playful，petrol，攪拌均勻後，加入糖，攪拌至沒有粉粒，是不是很簡單呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:30.53" id="00:11:30.53" class="lt" onclick="jumptoTime(690, this.id)"><p>然後倒入砵仔蒸就可以了，砵仔糕是很簡單的，但最重要是質地如何，不同的配方都會有不同的效果，這個就是我自己左撈右撈的結果，跟網上的可能會有些不同，但試一下，看看它行不行，這是我的想法，跟平時做的食譜是不同的，我每次都想做的時候有新的食譜，看看能不能做出來，幸運地，很多時候都做得到，失敗當然有，但失敗的時候，我最多再錄一遍。</p></a>
+				<a href="#00:12:19.53" id="00:12:19.53" class="lt" onclick="jumptoTime(739, this.id)"><p>我們下一個步驟，現在我在鍋裡煮水，開始熱了，之前我已經放了碗進去，等待水開始熱，現在等待水開大火，等待水滾，水滾後，可以繼續攪拌醬料，然後就可以倒進去，倒到八分滿，九分滿，其實我這個黃糖看起來也不算薄，如果喜歡的話，可以再深一點的糖，我這裡應該有六個，接著就放紅豆，看你喜歡放多少。</p></a>
+				<a href="#00:13:29.88" id="00:13:29.88" class="lt" onclick="jumptoTime(809, this.id)"><p>我這裡有，就放多一點紅豆，好吃嘛，紅豆小鍋，每一個就放一匙，我媽媽的我只喜歡食少少，你又可以落，即是up to你自己，鍾意幾多就落幾多，我反正有喺度，唔好浪費就落埋佢，事不宜遲，咁就依家大火開住佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:9.15" id="00:14:9.15" class="lt" onclick="jumptoTime(849, this.id)"><p>蒸15分15至20分鐘，我諗應該要蒸20分鐘，咁我哋就睇下，咁我哋就睇下，蒸20分鐘，咁開始啦，一陣返嚟啦，好20分鐘啦，我哋打開睇下啦，嘩 漲起哂，仲有個鍋仔喺嗰度，咁我哋可以拆，拆落去，拔出嚟，睇下仍然冇黐嘅，咁佢就已經ok㗎啦，咁我哋可以拎佢出嚟㗎啦，好啦，啲缽仔糕拎出嚟啦，咁我依家就預備咗啲粟添。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:49.15" id="00:14:49.15" class="lt" onclick="jumptoTime(889, this.id)"><p>畀你哋近鏡，睇下啲缽仔糕，咁呢，平時應該就等佢，攤凍啲咁樣整就可以嘅，先整就最好嘅，咁因為我拍片想早啲趁個，天未落山之前，太陽未落山之前，可以做到出嚟影到，啲光靚啲啦，咁樣就試下熱嘅，戴住個手套嚟整啦，好熱呀，咁然後跟住我哋可以，攞個竹簽，去左佢側邊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:25.15" id="00:15:25.15" class="lt" onclick="jumptoTime(925, this.id)"><p>字幕由Amara.org社区提供，然後拿兩個竹籤， 看能不能拿出來， 看能不能拿出來， 看還未可以， 貼住它，最好是等它完全凍好才拿出來， 看能不能拿出來，拿出來後， 看能不能拿出來， 看能不能拿出來， 看還未可以，現在到我試吃時間， 當然放涼會比較容易脫， 因為沒有黏著碗，我現在試吃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:50.54" id="00:16:50.54" class="lt" onclick="jumptoTime(1010, this.id)"><p>好吃，看看，嗯，煙煙燙燙的，還有</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:18.04" id="00:17:18.04" class="lt" onclick="jumptoTime(1038, this.id)"><p>不硬，有些有時會很硬，有些不硬，很軟， 但又爽口，很開心做到，希望你們也試做吧，下次再介紹其他食物給你們，拜拜!</p></a>
+</div>
+	</body>
+</html>

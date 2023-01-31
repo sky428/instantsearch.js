@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>「懷舊小食」在家做豆沙燒餅，由煮豆沙餡料開始｜How I made Sticky Rice Cake with Red Bean Paste | 簡單易做 開心分享</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Lpytxkzj8ag',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>「懷舊小食」在家做豆沙燒餅，由煮豆沙餡料開始｜How I made Sticky Rice Cake with Red Bean Paste | 簡單易做 開心分享</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝收睇時局新聞，再會!</p></a>
+				<a href="#00:00:10.84" id="00:00:10.84" class="lt" onclick="jumptoTime(10, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，大家好，今天我有點不舒服，但希望每星期都可以出一條影片，今次我想用糯米粉和紅豆做豆沙燒餅，不知道你們有沒有吃過呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:43.24" id="00:00:43.24" class="lt" onclick="jumptoTime(43, this.id)"><p>我記得小時候在路餅店或餅家有賣，我忘記了多少，但很便宜的，一個白白的，中間金黃色的燒餅，印象中我覺得很好吃，後來來到加拿大，很多麵包店都不見有賣，不過有時去酒樓，有些酒樓都會做，但感覺很油很軟，不像以前那種很爽，一件件拿起手食，所以我今天想試做，希望成功吧，首先是紅豆，買回來後洗一下，去除半粒或浮起的。</p></a>
+				<a href="#00:01:46.24" id="00:01:46.24" class="lt" onclick="jumptoTime(106, this.id)"><p>如果用煲煮就要浸泡幾個小時或一夜，可以用飯煲煮或用煲慢慢煮，我懶惰，所以用instant pot煮。</p></a>
+				<a href="#00:02:8.24" id="00:02:8.24" class="lt" onclick="jumptoTime(128, this.id)"><p>紅豆已經洗淨，250克，紅豆水大約3倍份量，我剛才已經加了250ml，加上這裏700ml水，然後我可以煮，用高壓鍋，35分鐘來煮它，好，蓋上蓋子，記得關掉氣閥，然後我們就可以選擇，好，我就選擇手動，即是自己調較要什麼，我要高壓鍋，然後我就要35分鐘，這樣就可以了，當它響了之後，它自動會做的了。</p></a>
+				<a href="#00:03:12.19" id="00:03:12.19" class="lt" onclick="jumptoTime(192, this.id)"><p>一會兒回來。</p></a>
+				<a href="#00:03:14.19" id="00:03:14.19" class="lt" onclick="jumptoTime(194, this.id)"><p>現在就可以開了，35分鐘之後，我就由得它自然放氣，現在它已經煮好了，看一下，還有些水在這裏，但是紅豆已經很軟，皮也已經脫落了，這個方法煮紅豆是最快的方法，好，接著我們就下一個步驟，接著我會將這些紅豆和水倒進blender裏，然後打碎它，然後我就可以打它了，ctic mood outbreak，ерж。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:21.81" id="00:04:21.81" class="lt" onclick="jumptoTime(261, this.id)"><p>believably，Felix，dedim，με，khi，zeug，動 cruelty，grew</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.43" id="00:04:28.43" class="lt" onclick="jumptoTime(268, this.id)"><p>Bow дум，scrub，丈，ל�asti</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:25.87" id="00:04:25.87" class="lt" onclick="jumptoTime(265, this.id)"><p>Catholic，Superintendent</p></a>
+				<a href="#00:04:27.73" id="00:04:27.73" class="lt" onclick="jumptoTime(267, this.id)"><p>estiver，urry，dude，rium</p></a>
+				<a href="#00:04:1.55" id="00:04:1.55" class="lt" onclick="jumptoTime(241, this.id)"><p>billion，ży，añ，อ，ature，olho</p></a>
+				<a href="#00:04:20.57" id="00:04:20.57" class="lt" onclick="jumptoTime(260, this.id)"><p>hmm，acz，� herb，apers，rons</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.51" id="00:04:30.51" class="lt" onclick="jumptoTime(270, this.id)"><p>Downtown，shook，dope，bride，electromagn，globalization</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:19.03" id="00:04:19.03" class="lt" onclick="jumptoTime(259, this.id)"><p>часть，ай，zam，같은，itas</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.97" id="00:04:30.97" class="lt" onclick="jumptoTime(270, this.id)"><p>τις，� namely，bizim，reten 130</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:9.61" id="00:04:9.61" class="lt" onclick="jumptoTime(249, this.id)"><p>aqueles，işte，訴 predominantly，�，냄새，賽，champ ded，blossom，bows southwest ama，듯，cos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:14.47" id="00:04:14.47" class="lt" onclick="jumptoTime(254, this.id)"><p>ญ，abet，instruments</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:27.75" id="00:04:27.75" class="lt" onclick="jumptoTime(267, this.id)"><p>27，ees</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.27" id="00:04:30.27" class="lt" onclick="jumptoTime(270, this.id)"><p>calam Анд wise，ller</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:23.99" id="00:04:23.99" class="lt" onclick="jumptoTime(263, this.id)"><p>olesome，fid gefragt，injections，跳pg，加糖煮成紅豆餡料的質地。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:33.75" id="00:04:33.75" class="lt" onclick="jumptoTime(273, this.id)"><p>可以將紅豆蓉倒入易潔鍋，倒入後就可以用糖煮了，我這裏有40克砂糖，還加了1 1⁄4茶匙鹽，另外這裏有40克糖漿，你可以用麥芽糖或蜜糖，我這裏用的是普通煮食用的糖漿，然後就可以攪拌均勻，然後就可以慢慢炒了，開小火慢慢炒，因為現在糖漿很滑很軟，炒到水份少一點，糖漿融合就會成形，我還要加油。</p></a>
+				<a href="#00:05:49.75" id="00:05:49.75" class="lt" onclick="jumptoTime(349, this.id)"><p>開始燃燒，然後就可以慢慢炒了，我加了1茶匙油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:13.11" id="00:06:13.11" class="lt" onclick="jumptoTime(373, this.id)"><p>messaging coses，lass 1953</p></a>
+				<a href="#00:06:31.47" id="00:06:31.47" class="lt" onclick="jumptoTime(391, this.id)"><p>Pf 자꾸breat Hoo�js，seams</p></a>
+				<a href="#00:06:35.69" id="00:06:35.69" class="lt" onclick="jumptoTime(395, this.id)"><p>ל�olie，�buh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:24.21" id="00:06:24.21" class="lt" onclick="jumptoTime(384, this.id)"><p>coch Pel，Skinq，стол</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.13" id="00:06:40.13" class="lt" onclick="jumptoTime(400, this.id)"><p>The，Vacc histories，Couldn注，complexities，trouve</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.15" id="00:06:33.15" class="lt" onclick="jumptoTime(393, this.id)"><p>National，roportion，James</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.43" id="00:06:38.43" class="lt" onclick="jumptoTime(398, this.id)"><p>gram，savage</p></a>
+				<a href="#00:06:42.45" id="00:06:42.45" class="lt" onclick="jumptoTime(402, this.id)"><p>ambiguous，some，cias</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.91" id="00:06:36.91" class="lt" onclick="jumptoTime(396, this.id)"><p>들，케</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.19" id="00:06:38.19" class="lt" onclick="jumptoTime(398, this.id)"><p>Lob bı，musst，heb，absorbing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.55" id="00:06:38.55" class="lt" onclick="jumptoTime(398, this.id)"><p>fünf，?"，hostile，intell Te</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:29.95" id="00:06:29.95" class="lt" onclick="jumptoTime(389, this.id)"><p>brac，ibt，rise</p></a>
+				<a href="#00:06:39.07" id="00:06:39.07" class="lt" onclick="jumptoTime(399, this.id)"><p>ruth，Cav，abrir，經</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:16.07" id="00:06:16.07" class="lt" onclick="jumptoTime(376, this.id)"><p>sector，кажется，Komb</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:24.87" id="00:06:24.87" class="lt" onclick="jumptoTime(384, this.id)"><p>バイ，su，suppress，заг</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.29" id="00:06:41.29" class="lt" onclick="jumptoTime(401, this.id)"><p>ło，meter，Elite，inkles，overseas，peg，Cut，iyi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:34.45" id="00:06:34.45" class="lt" onclick="jumptoTime(394, this.id)"><p>compressor，Salem</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:39.21" id="00:06:39.21" class="lt" onclick="jumptoTime(399, this.id)"><p>Presidential，Personality</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.01" id="00:06:38.01" class="lt" onclick="jumptoTime(398, this.id)"><p>woh andare，fö forearm，зем，carry</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.81" id="00:06:41.81" class="lt" onclick="jumptoTime(401, this.id)"><p>disco，Country，tamp œ，Phantom</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.85" id="00:06:40.85" class="lt" onclick="jumptoTime(400, this.id)"><p>しょ，uitar，收水後味道會更濃郁，如果不夠甜可以再加，甜度適中，這裡炒了10分鐘，我試了味，它是少甜的，我都覺得可以甜多些，所以我再加多一匙，大約15克糖，繼續炒，再炒多一會，現在看它是軟身的，其實它冷了會硬些，我們要看它是什麼程度，是用來做什麼，我們用來做餡料，煮它硬些會容易包，我現在放了些在碟子上。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:41.13" id="00:07:41.13" class="lt" onclick="jumptoTime(461, this.id)"><p>你看它已經成形，一會它冷了會再硬些，現在它，這樣，不是流質，我覺得這樣就可以了，做好的紅豆蓉可以拿碟子，再拿起放開會容易些，我都拿了幾個出來，放雪櫃冷藏，一會包餡料，這些可以留來用，可以用小盒或密實袋放冰箱慢慢用，現在放雪櫃，現在開始做麵團，這裡有100克糯米粉，30克糖，100克水。</p></a>
+				<a href="#00:08:27.51" id="00:08:27.51" class="lt" onclick="jumptoTime(507, this.id)"><p>20克油，現在先把水，和糖煮溶，糖溶化後， 再加入糯米粉，糖溶化後， 再加入糯米粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:13.56" id="00:09:13.56" class="lt" onclick="jumptoTime(553, this.id)"><p>糖溶化後，再加入糯米粉，同一時間， 將所有材料拌勻，現在是一塊塊的，但不要緊，慢慢攪拌，現在是很稠的，你摸一下，是熱的，我們繼續攪拌，現在是熱的，但不是很燙手，盡量攪拌成一個球，我覺得現在是熱的，但不至於很燙手，每個人的手感不同，有些人怕熱，有些人不怕熱，如果是熱的話，可以戴手套，現在是一團的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:52.87" id="00:10:52.87" class="lt" onclick="jumptoTime(652, this.id)"><p>現在是一團的，會有少許黏手，不用怕，但我又想再攪拌好，你可以戴手套，塗水，另外有一個方法，放少許油，放進密實袋，然後把整個放進密實袋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:47.13" id="00:11:47.13" class="lt" onclick="jumptoTime(707, this.id)"><p>現在還是熱的，現在還是溫暖的熱，我們可以搓揉它了，現在麵團很容易搓揉，在鍋內加少許油，搓揉至有嚼勁，如果用麻糬也可以用這個方法，麻糬會變得很黏，推開麻糬，拉緊麻糬，麻糬會變得很黏，麻糬變得很黏，麻糬變得很彈性</p></a>
+				<a href="#00:12:55.48" id="00:12:55.48" class="lt" onclick="jumptoTime(775, this.id)"><p>麻糬變得很彈性，然後我可以分開它大約，這個可以做到應該可以做到6個，今天視頻就拍到這裡了，下次見!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:25.02" id="00:13:25.02" class="lt" onclick="jumptoTime(805, this.id)"><p>分開約30克，然後包入餡料，用保鮮膜蓋住餡料，搓揉，然後用冰箱冷藏，這個20克，這個30克，然後包好，操作完畢，按扁，做了一個，繼續做其他，按扁，按扁才可以變成一個小餅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:46.31" id="00:14:46.31" class="lt" onclick="jumptoTime(886, this.id)"><p>謝謝觀看，包起来，搓搓，Text crispy</p></a>
+				<a href="#00:15:11.08" id="00:15:11.08" class="lt" onclick="jumptoTime(911, this.id)"><p>Between，points，wealth，otted，social，放心，усл，回家後，準備一個平底鍋，最好用易潔鑊，在鍋上塗上少許油，你可以噴油，掃油，或用廚房紙抹油，開火，把烤餅放入鍋中，放置一會兒，再壓一壓，然後，用小火煎，最好用蓋子蓋住，煎至金黃色，全程用小火煎，現在已經煎了幾分鐘，可以感覺到頂部開始有水蒸氣了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:41.12" id="00:16:41.12" class="lt" onclick="jumptoTime(1001, this.id)"><p>就可以繼續煮，可以繼續煮燒餅令它容易熟，其實要煎多久?</p></a>
+				<a href="#00:16:50.84" id="00:16:50.84" class="lt" onclick="jumptoTime(1010, this.id)"><p>可能要看每個地方的火爐不同，我這個是電爐，豆沙餡我只剩下兩粒，我把它放在碗仔，用熱水把它打開，就變成紅豆沙，吃下去，其實你自己加水，加到你喜歡的稠度，好像我喜歡這個稠度，吃下去已經是紅豆沙的味道，當然它沒有陳皮，因為我們煮的時候沒有加，但如果想快速吃紅豆沙的話，因為餡料很多，我不是用了很多，剩下的可以冷凍。</p></a>
+				<a href="#00:17:34.64" id="00:17:34.64" class="lt" onclick="jumptoTime(1054, this.id)"><p>隨時想吃紅豆糖水的時候，就可以自己調出來，或者留著做餡料，混牛奶的話，可以冷凍當雪條，我覺得這個很方便，還有如果你想吃紅豆湯圓，可以煮好湯圓放在一起吃，開始覺得好像漲了一點，我們可以把它翻開來看看，這個是中間那個，我們可以翻一下，出來也很像，但我還想它再金黃一點，這個還不夠金黃，先翻一翻。</p></a>
+				<a href="#00:18:25.04" id="00:18:25.04" class="lt" onclick="jumptoTime(1105, this.id)"><p>我再看看這些，可能我放的油很少，所以不是很金黃，因為我放的油不多，現在壓一壓，看看邊位，繼續蓋上蓋子，等它煎一下，現在煎了幾分鐘，你看到它已經脹起，曲起了，它一定熟了，看不看得到，現在翻轉它，這邊也很漂亮，可以再翻轉一次，煎多一邊，煎多一點讓那邊好看一點，這邊很漂亮，那邊沒什麼顏色，這邊也沒什麼顏色。</p></a>
+				<a href="#00:19:21.56" id="00:19:21.56" class="lt" onclick="jumptoTime(1161, this.id)"><p>這個顏色就翻過來這邊。</p></a>
+				<a href="#00:19:25.56" id="00:19:25.56" class="lt" onclick="jumptoTime(1165, this.id)"><p>燒餅已經煎好了，給大家看看，不是煎得很焦，我看就會再焦一點，給大家看看，很熱，看看燒餅，就是這樣，煎得不太漂亮，給大家看看，很熱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:51.56" id="00:19:51.56" class="lt" onclick="jumptoTime(1191, this.id)"><p>給大家看看，這種燒餅，是圓圓的，試味，很熱，好吃，餡料不太甜，很多餡，我剛才說了，我的餡料20克，這個皮30克，所以很薄，皮薄餡漂亮，如果喜歡皮厚一點，就可以，減少餡料的大小，這個燒餅簡單易做，餡料也可以隨意轉換，除了紅豆渣，也可以，奶黃味，自己想像下， 落唔同味都得㗎，餡料個方面， 你可以買市售嘅，咁就更加方便。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:4.85" id="00:21:4.85" class="lt" onclick="jumptoTime(1264, this.id)"><p>但係自己整嘅，就可以控制糖份同埋油份，食都食得安心啲，希望你哋鍾意，今日我就同大家做呢一個懷舊嘅豆沙燒餅，唔知你細個有冇食過呢?</p></a>
+				<a href="#00:21:21.85" id="00:21:21.85" class="lt" onclick="jumptoTime(1281, this.id)"><p>甚至依家都可以隨時買到搵到呢，咁我就會好羨慕你啦，因為我喺多倫多呢度，我就好少見到有得買，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

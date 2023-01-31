@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[港式糕點] 在家做黑糖馬拉糕 (簡易版) - Homemade Cantonese Sponge Cake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2tEomPGUYTI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[港式糕點] 在家做黑糖馬拉糕 (簡易版) - Homemade Cantonese Sponge Cake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.47" id="00:00:5.47" class="lt" onclick="jumptoTime(5, this.id)"><p>Hello 各位朋友，你們好!</p></a>
+				<a href="#00:00:7.47" id="00:00:7.47" class="lt" onclick="jumptoTime(7, this.id)"><p>今天就延續之前的港式點心或懷舊點心系列，今天有我的蛋糕盤在這裡，所以我會做一些糕點類，中式糕點，這個就和大家一起做簡易的馬拉糕，馬拉糕我們很多時候都吃過，如果要做馬拉糕，我們在酒樓看到小時候，看到的馬拉糕是很大個蒸籠，一大盤，蒸到它是啡啡黃黃，然後切成一塊塊，我小時候就喜歡吃邊位多於中間，如果是傳統的馬拉糕。</p></a>
+				<a href="#00:00:58.47" id="00:00:58.47" class="lt" onclick="jumptoTime(58, this.id)"><p>就要用高筒來做，需要用烤模和露面筒來做，所以是一個很費時的糕點，但賣起來就未必會賣到好價錢，現在很多時候都會用一些較簡單的方法去做，尤其是在家中，我們未必有時間去做一個馬拉糕，但又想吃，現在很多時候去到新式的酒樓，馬拉糕也不是像以前一樣，在一個大蒸盤裏面切開一件件，而是很多時候變成一個小蛋糕。</p></a>
+				<a href="#00:01:45.47" id="00:01:45.47" class="lt" onclick="jumptoTime(105, this.id)"><p>小時候看到的馬拉糕很多時候都是啡色的，因為是用了露面筒的關係，但到現在新派的酒樓馬拉糕，都是鮮黃色的，可以用來做雞蛋的，又或者現在很流行的黑糖，今天我會用黑糖來做這個簡易版的馬拉糕，可以在家中一起做，首先我們介紹一下材料，材料為何有這麼多粉呢，稍後的粉其實只需要混合在一起就可以了，也沒有什麼懸念。</p></a>
+				<a href="#00:02:27.47" id="00:02:27.47" class="lt" onclick="jumptoTime(147, this.id)"><p>我用了低筋麵粉，這裡有些粟粉，這裡有些吉士粉，其實是雞蛋黃的中式糕點，加了這個粉後，就好像加了濃郁的雞蛋味，這樣就叫吉士粉，然後我這裡有些粉末和梳打粉，粉末就是發粉，Baking Powder，然後Baking Soda就是梳打粉，然後有兩隻雞蛋和油，這些是菜油，最後就是我用了這個份量的糖。</p></a>
+				<a href="#00:03:15.38" id="00:03:15.38" class="lt" onclick="jumptoTime(195, this.id)"><p>但我把它分成一半是砂糖，一半是黑糖，因為完全都是用了黑糖，其實也不是不好的，但是黑糖就比較難溶，如果我直接打下去，就會變成很多斑點，加上砂糖的甜度比黑糖還要甜，所以我就把它加在一起，這裡有一個蛋糕盤，這個蛋糕盤大概是6吋，我需要的就是這麼多，首先，我要先把蛋糕盤抹上油，借用這裡的油。</p></a>
+				<a href="#00:04:3.38" id="00:04:3.38" class="lt" onclick="jumptoTime(243, this.id)"><p>因為也未必用得完，用一點點油，抹勻蛋糕盤，我等一下就省下放焗爐紙在裡面，這個馬拉糕除了可以用蛋糕盤做，也可以放在小蛋糕，像cupcake那些，cupcake模，muffin那些，放進去也可以，再放一張蛋糕紙就可以了，也可以方便，如果是這裡的份量，應該可以做到4-6個，看蛋糕的大小如何，當然，如果用小的。</p></a>
+				<a href="#00:04:53.38" id="00:04:53.38" class="lt" onclick="jumptoTime(293, this.id)"><p>蒸的時間就不需要這麼多，抹完油之後，就放在旁邊，最後我忘記了，還有三花淡奶，你喜歡用什麼牌子都可以，就是這樣，接下來，我們把低筋麵粉，英叔粉、吉士粉、發粉、梳打粉，全部過篩，先把麵粉過篩，粉類的篩子不想一塊塊，然後粉類可以均勻地混合，如果有些太大顆就不要</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.50" id="00:06:41.50" class="lt" onclick="jumptoTime(401, this.id)"><p>攪拌均勻，現在我這裡有些熱水在下面，上面就放一個鍋子，接著我等一下就要把黑糖融化，因為就這樣放進去，黑糖很難融化，很難完全融解，因為它是一粒粒的，所以我就要煮熱水，隔水煮融它，我這裡也有淡奶，這裡是大約60毫升的淡奶，然後把砂糖和黑糖放進去，然後用隔水煮的方法，令它們完全融解，一融就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:50.91" id="00:07:50.91" class="lt" onclick="jumptoTime(470, this.id)"><p>不用煮到很滾很什麼的，熱熱的就放進去就可以了，不用煮熱水，我已經關火了，確保它完全融化就可以了，還有些粒粒的，慢慢攪拌它，現在可以看到它還未完全融解，你看到好像流質一樣，因為你看到有些深色的一點點，我們就要將它，全部看起來有些深色的一點點，沒有了就等它完全可以融解在裡面，因為黑糖比較難融解。</p></a>
+				<a href="#00:08:39.98" id="00:08:39.98" class="lt" onclick="jumptoTime(519, this.id)"><p>因為黑糖是透明或白色，所以不容易融解，但黑糖是粒狀，所以不容易融解，如果太大顆，就會沉到底部，所以要完全融解，黑糖溶液是用隔水溶解的，所以要放涼，因為如果太熱，就會令蛋糕變酥脆，然後用隔水溶解，將糖溶液拌入蛋液中，攪拌好後，就可以把麵粉也加進去，攪拌均勻，務求完全混合，沒有粉粒為止，最後把油倒進去。</p></a>
+				<a href="#00:11:55.19" id="00:11:55.19" class="lt" onclick="jumptoTime(715, this.id)"><p>現在顏色也很漂亮，如果喜歡吃全黑糖濃味，可以把份量調成全黑糖，或者把份量調成全白糖，其實是顏色隨你喜歡的，最重要是合自己口味，要確保油分完全混合，現在的質地很滑，這樣就可以了，喜歡的話可以再過篩，但我覺得不需要，然後就倒進盤子裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:30.12" id="00:13:30.12" class="lt" onclick="jumptoTime(810, this.id)"><p>謝謝觀看，讓空氣能夠退出，因為我用鑊來蒸，所以蓋子很大，如果有很大的布可以包住，讓它沒有導汗水，如果沒有的話，可以用我之前做的香蕉糕，我會放一塊廚房紙在上面，再蓋上錫紙，然後拿去蒸，這樣就能防止導汗水掉進去，水滾了，打開就可以放進去，大火蒸25-30分鐘，我們一會兒見，已經焗了25分鐘，拿出來看看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:45.90" id="00:14:45.90" class="lt" onclick="jumptoTime(885, this.id)"><p>看看多漂亮，現在拿牙籤來看看，熟透了，可以拿碟子把它移出來，很熱，已經完成了，可以拿出來，現在切開，吃一點吧，切開一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:36.45" id="00:15:36.45" class="lt" onclick="jumptoTime(936, this.id)"><p>看看，很鬆軟，要試吃了，比起外面吃的馬拉糕鬆散了一點，沒那麼黏的感覺，散了一點，沒那麼油潤，因為我減了油，要多加一點油就會好吃一點，但質地也像飯，今天就介紹到這裡，希望大家喜歡，下次再看看我做什麼，下次再見。</p></a>
+</div>
+	</body>
+</html>

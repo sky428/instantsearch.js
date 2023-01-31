@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做雞仔餅 – Baked Pork Cookies / Gai Zai Beng</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MOOZVsa3nLY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做雞仔餅 – Baked Pork Cookies / Gai Zai Beng</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.11" id="00:00:9.11" class="lt" onclick="jumptoTime(9, this.id)"><p>大家好，今天和大家一起做雞仔餅，最近我收到課金點餸，想我做雞仔餅，我到處找找食譜，究竟怎樣做，終於都嘗試，第一次在大家面前做一次雞仔餅，雞仔餅是一個很傳統的中式糕點，需要的材料都蠻複雜，材料都蠻多，不如我先介紹所有材料，做雞仔餅，餅當然要有個皮，外面的皮需要麵粉120克，蜜芽糖85克，生油即普通菜油都可以，3湯匙或30克。</p></a>
+				<a href="#00:01:16.11" id="00:01:16.11" class="lt" onclick="jumptoTime(76, this.id)"><p>梳打粉半茶匙，我已經放入麵粉裏面，我今日用的是低筋麵粉，如果沒有的話用普通麵粉都可以，餡料部分比較多，最主要的材料是肥豬肉，這是冰肉，需要處理過，一會兒我會介紹怎樣處理，肥豬肉需要100克，芝麻20克，核桃碎30克，味道方面，我需要35克南乳，糖20克，胡椒粉和五香粉少許，水和少許酒，酒的份量只需要一茶匙。</p></a>
+				<a href="#00:02:26.44" id="00:02:26.44" class="lt" onclick="jumptoTime(146, this.id)"><p>雞蛋，稍後會打成蛋漿，然後塗在上面，另外，還需要一件事，就是糕粉，這是糯米粉，糕粉是甚麼呢?</p></a>
+				<a href="#00:02:39.44" id="00:02:39.44" class="lt" onclick="jumptoTime(159, this.id)"><p>糕粉是熟的糯米粉，首先要處理的兩件事，第一件事是冰肉，第二件事是糕粉，我們來看看冰肉是怎樣做的，我在肉店買了肥豬肉，洗乾淨，吸乾水份後，切成粒狀，切好了，然後煮一鍋熱水，然後煮熟，當水煮沸後，就可以把肥豬肉放進去，然後調至中火，慢慢煮，大約煮幾分鐘就可以了，肥豬肉已經隔了水，當然還有水份，可以用廚房紙吸走水份。</p></a>
+				<a href="#00:03:58.44" id="00:03:58.44" class="lt" onclick="jumptoTime(238, this.id)"><p>可以用手指吸走水份，然後用另一個鍋子，把煮好的肥豬肉放進去，然後加入200克砂糖，攪拌均勻，這裡有70克的酒，我加了40克玫瑰露和20克Vodka酒，為什麼我不是全部加玫瑰露呢?</p></a>
+				<a href="#00:04:59.92" id="00:04:59.92" class="lt" onclick="jumptoTime(299, this.id)"><p>因為我沒有沒有味的玫瑰露，所以我加了一些沒有味的酒，怕有股鹹味，所以就不加了，然後就把所有材料拌勻，然後就可以放進冰箱冷藏幾天，冰肉做好之後，就可以拿出來解凍，然後就可以拿出來用，如果要再大顆一點，可以用剪刀剪一剪，然後就要處理糕粉了，糕粉多數都會用在一些中式的糕點上，例如我之前有教過做香蕉糕，或者你想做一些糯米用的糯米糍之類的時候，都需要用到糕粉。</p></a>
+				<a href="#00:06:18.92" id="00:06:18.92" class="lt" onclick="jumptoTime(378, this.id)"><p>糕粉是怎樣做的呢?</p></a>
+				<a href="#00:06:21.92" id="00:06:21.92" class="lt" onclick="jumptoTime(381, this.id)"><p>首先你要有一些生的糯米粉，拿了糯米粉之後，我們就需要把糯米粉弄熟，弄熟它有很多種方法的，最傳統的方法就是先拿一張紙剪一剪，然後蒸，蒸完之後再用白鑊炒，這個方法比較原始，而且確保糕粉熟透，而一個簡單的方法就是用白鑊炒，慢慢地炒，炒到雪白的糕粉有一點點偏黃色就可以了，但千萬不要炒焦，炒焦味道會很重。</p></a>
+				<a href="#00:07:0.92" id="00:07:0.92" class="lt" onclick="jumptoTime(420, this.id)"><p>我們就可以把糕粉放進去，你可以用白鑊或我用的鍋子也可以，慢慢地攤平，慢慢加熱炒，不用加什麼，只需要時間慢慢炒，糕粉已經完成了，現在已經有微黃色，然後就可以下一個步驟了，接下來就做餅皮的部分，首先把麵粉和梳打粉過篩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:29.13" id="00:08:29.13" class="lt" onclick="jumptoTime(509, this.id)"><p>然後把麵粉和梳打粉過篩，然後就要處理這個麥芽糖，剛才用微波爐加熱20秒，讓麥芽糖比較容易流質，不會太硬，然後就把3湯匙或30克生油混合，然後就把麥芽糖和麥芽糖混合，這個做法讓麥芽糖更容易處理，麥芽糖和麥芽糖混合後就更容易放入麵粉，然後就把麥芽糖和生油混合，然後就可以慢慢把麥芽糖和麥芽糖混合。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:49.85" id="00:09:49.85" class="lt" onclick="jumptoTime(589, this.id)"><p>慢慢搓至成一個麵團，麵團是淺啡色的，如果你在網上看食譜，很多食譜都有用鹼水，我平時很少用鹼水，所以就沒有用，我會改用其他食譜看到的，就是用梳打粉，因為我買了一瓶鹼水，如果只用幾滴，我之後都不知怎樣辦，慢慢搓揉，粉末和油分就會混合成一團，搓揉至麵團變柔軟，搓好粉團後，用保鮮紙包一包放一旁等待下一個步驟，搓長一點，因為稍後會切去，長形方便一點。</p></a>
+				<a href="#00:11:54.67" id="00:11:54.67" class="lt" onclick="jumptoTime(714, this.id)"><p>接下來就做餡料的部分，首先把做好的肥豬肉放進去，然後就可以放入核桃碎、芝麻、糖、胡椒粉和五香粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:33.67" id="00:12:33.67" class="lt" onclick="jumptoTime(753, this.id)"><p>攪拌均勻，將南乳放入鍋中，南乳大約一磚，大約45-40克，將南乳放入鍋中，最後加入糕粉，然後加入水，慢慢攪拌至成團狀，已經聞到雞仔餅的味道，看上去好像有點濕，但不要緊，我們試試看包不包得到，然後我們就開始分開餅皮包餡，我先拿開餡料，首先，我現在的材料加起來做了230克，我們大約15克可以做到15個。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:48.31" id="00:14:48.31" class="lt" onclick="jumptoTime(888, this.id)"><p>我先看看，切開大概15克，切成14-15克一件就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:43.37" id="00:15:43.37" class="lt" onclick="jumptoTime(943, this.id)"><p>继续搅拌，有些多了的可以分給小小的，因為15克除不盡，除230克，可能還有一點，我每樣再切一點給他們，每個都有一點，應該差不多了，然後逐個逐個搓圓，然後用搓揉器搓薄，將薄薄的薄餅放入油中，然後將餡料包好，將餡料包好，將薄餅放入油中，然後包住佢，然後按一按佢，我一陣間都會係個焗盤嗰度擺低都會按一按佢，包好咗啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:29.21" id="00:18:29.21" class="lt" onclick="jumptoTime(1109, this.id)"><p>咁有啲嘢爆餡啦，唔緊要嘅，唔使怕，焗出嚟睇下佢點先，我呢一個焗爐已經預熱咗190度攝氏華氏呢就375度已經預熱好㗎啦，咁所以呢我依家呢油浸蛋漿喺個面，等佢呢一陣間上色，咁跟住呢就擺入去焗，一擺咗落去嘅時候呢，然後就將個焗爐呢就搞返落去180度，即係350度華氏，180度攝氏，咁焗大約呢就係14至18分鐘。</p></a>
+				<a href="#00:19:12.21" id="00:19:12.21" class="lt" onclick="jumptoTime(1152, this.id)"><p>咁即係點解有個range呢，都係囉，睇下你嗰個雞仔餅，佢係個厚薄程度同埋個大細囉，咁所以呢就有個range喺度啦，咁我由開始，譬如我由13分鐘開始就夾住佢啦要，聞起來很香，有南乳和果仁的味道，希望烤出來會好看一點，接著就可以拿去烤了，雞仔餅烤好了，給你們看看，這樣包開的比較像，反而包得很厚的就不太像，這樣包開的比較像。</p></a>
+				<a href="#00:20:24.41" id="00:20:24.41" class="lt" onclick="jumptoTime(1224, this.id)"><p>很熱啊，我足足烤了18分鐘，因為我這個比較厚和大，給你們看看樣子，像不像，現在很熱，還未可以吃，要先放涼，到我現在試吃了，拿個雞仔餅給你們看，我撕開它，裡面有肥豬肉和果仁，撕開的感覺很韌，因為現在還是熱，放涼一點會比較硬，現在我試吃，像雞仔餅，但我可以再壓扁一點，再焗焦一點，可能會更好吃，但現在已經很像了。</p></a>
+				<a href="#00:21:37.05" id="00:21:37.05" class="lt" onclick="jumptoTime(1297, this.id)"><p>試吃完之後，檢討一下，首先，我醃冰肉的時候，應該不要放太多酒，現在酒味會重了一點，另外，我減少了糖，所以外皮會比較乾，另外，我可以再放多一點餡料，不怕它會爆開，反而更好看，我今天介紹到這裡，如果你們想試做，都可以試做，試做後，給我一些意見吧，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>
