@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>士多啤梨芝士餅 (Strawberry Cheesecake)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TtoJMRnBDLE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>士多啤梨芝士餅 (Strawberry Cheesecake)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.38" id="00:00:4.38" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，今天我們一起做士多啤梨芝士蛋糕，不用烤，而且很簡單，我們先看看材料，首先有士多啤梨，忌廉芝士，檸檬，還有一些餅乾碎，可以買現成的，已經磨好的，或者買自己喜歡吃的餅乾，例如消化餅或其他茶餅類，自己打碎也可以，我這個比較簡單，另外要一個芝士蛋糕盤，這樣底部可以移動，先打碎150克餅乾碎。</p></a>
+				<a href="#00:01:18.20" id="00:01:18.20" class="lt" onclick="jumptoTime(78, this.id)"><p>另外我需要50g 牛油，將牛油放入微波爐中， 將它們放涼，大約30秒後， 牛油就會變成這個狀態，再用匙羹攪拌一下， 牛油就會完全涼了，可以用盤子或盤子做， 我選擇用盤子，將剛才的餅碎和牛油加在一起，將它們均勻地攪拌，攪拌好後就可以放在盤子上，這個盤子的底部其實不是這個盤子的，這個盤子的底部就不見了。</p></a>
+				<a href="#00:02:33.89" id="00:02:33.89" class="lt" onclick="jumptoTime(153, this.id)"><p>所以它可能會有一點鬆，我有什麼做法可以令到它，我怕它待會放進雪櫃時會漏的話，首先第一件事就是用錫紙包一包底部，如果你在家裡那個是沒事的，就不用做這個程序，這個是因為我這個盤子不是它原本，我才做這個程序包一包它，好了 攪拌好後，我們可以將餅底放進去，全部都在那邊，看起來好像很多，是有很多的，因為我喜歡多些的底厚些，如果你覺得不需要太厚的話，可以盡量減少，減到100度也可以。</p></a>
+				<a href="#00:03:40.93" id="00:03:40.93" class="lt" onclick="jumptoTime(220, this.id)"><p>然後我們就印緊它，這個就是做芝士蛋糕最基本的，我們可以用平底的東西壓一下，例如我用類似這些的杯子也可以，這樣壓緊它，OK，餅底做好了之後，我們就可以拿出來，餅底做好了之後，我們就放進冰箱冷藏，OK，處理士多啤梨了，士多啤梨大約要120克左右，士多啤梨多與少視乎出來的時候士多啤梨有多濃味，你可以放多些或少些，但當然不可以太過份。</p></a>
+				<a href="#00:04:34.93" id="00:04:34.93" class="lt" onclick="jumptoTime(274, this.id)"><p>不然你要做魚膠粉就要加多些士多啤梨，然後我要加少許檸檬汁在士多啤梨上，我今天一次過購物就買了很多檸檬，這些檸檬是很小的，BB檸檬，我要少少果汁，加到這裡，加了之後我就加少少糖，接着打成士多啤梨蓉，lave Broad Respect</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:5.35" id="00:06:5.35" class="lt" onclick="jumptoTime(365, this.id)"><p>higher，rouge，propagate，Loud，Proper，lim fluct Usually，AA，comwiście，cottage，ola</p></a>
+				<a href="#00:06:10.19" id="00:06:10.19" class="lt" onclick="jumptoTime(370, this.id)"><p>في，eremos，thankfully，years，мыш，Audrey，schooling，kanske，謝謝觀看，你看看，它已經完全變了，融化了，我要留一點點作為裝飾，留下兩匙左右，用來做裝飾，剩下的用來做，放在芝士蛋糕裏面，第二個步驟就是打芝士，這方面，這個芝士一直以來放在室溫，等到它退冰後會容易打。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:58.59" id="00:06:58.59" class="lt" onclick="jumptoTime(418, this.id)"><p>一九</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:0.59" id="00:07:0.59" class="lt" onclick="jumptoTime(420, this.id)"><p>接著我放糖，半杯，這樣就完成了，本杯</p></a>
+				<a href="#00:07:13.59" id="00:07:13.59" class="lt" onclick="jumptoTime(433, this.id)"><p>本杯，魚籽同時我們來攪魚膠粉，這個先放開一點，我們先攪魚膠粉，我需要1.5Tbsp，我會放半杯水，不用加太多水，我這個食譜是用很多水，先攪拌一下，吸收所有水份，待會我們就可以，你可以隔水，隔水整溶它，或者，放進微波爐，溶了之後，我就攤一攤它，現在，現在變了溶液，我攤一攤它，因為待會要放進去，我要它。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:28.86" id="00:08:28.86" class="lt" onclick="jumptoTime(508, this.id)"><p>不可以太熱，所以先弄好，然後我們就回到這裡，開始慢慢打它，剛才它是一塊塊的，我開始慢慢打，打到糖和忌廉芝士完全混合，我可以再打一打，它還有一些，這裡還有些粒粒的，還未完全滑，我現在打完它，我會在這裏留一點點裝飾，大約和這個差不多，大約50克，我繼續，我連魚膠粉的溶液都要留一點點，留一點點。</p></a>
+				<a href="#00:09:39.29" id="00:09:39.29" class="lt" onclick="jumptoTime(579, this.id)"><p>我們可以將剛才預備好的草莓汁放進去，我又再慢慢地攪勻，刮一刮邊邊，因為芝士的密度比較高，很容易黏在底部，刮一刮底部，然後繼續打一打，務求所有材料均勻地拌勻，這個完成了，可以放開，然後打忌廉，我需要大約一杯忌廉，接著打起，我不用打到全個形成了忌廉，我打到好像融化了的雪糕就可以了，我去到這個程度是有點膩。</p></a>
+				<a href="#00:11:9.47" id="00:11:9.47" class="lt" onclick="jumptoTime(669, this.id)"><p>即是有些流質，而剛才那些泡沫我已經可以細緻的時候，我這個程度我已經可以了，好了 我這裡我也是放一點點，在剛才這些忌廉芝士那裡，這個拿開，我們就來回這裡，這樣我打起了，這個放開，拿這個回來，剛才那些溶液，我摸一下它不是太凍，我就將一些魚膠粉溶液放進去，打一打 攪一攪，攪勻之後，最後就將。</p></a>
+				<a href="#00:11:56.47" id="00:11:56.47" class="lt" onclick="jumptoTime(716, this.id)"><p>有些泡沫，攪一攪，現在已經攪勻了，接著我就將剩下的忌廉，就倒進去 攪在一起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:10.47" id="00:12:10.47" class="lt" onclick="jumptoTime(730, this.id)"><p>然後就將它，攪在一起，攪好之後我們就拿餅底出來，這樣，首先我將這個溶液，我就放進去，首先倒一點點，讓它先在底部</p></a>
+				<a href="#00:12:40.47" id="00:12:40.47" class="lt" onclick="jumptoTime(760, this.id)"><p>再倒一點點，攪勻，均勻地讓它黏好位置，然後我搖一搖它，確保它黏好，然後我可以撒一些草莓在裏面，有些人可能會在旁邊，逐片逐片放草莓，我不做這樣了，你可以，依你自己喜歡，喜歡多少，你喜歡多些草莓，你就放多些，OK 差不多了，然後再蓋多些草莓，我又是這樣搓一搓，確保它們都緊實，我再放上來給你們看，現在是這樣的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:43.02" id="00:13:43.02" class="lt" onclick="jumptoTime(823, this.id)"><p>我放進雪櫃冷藏一會，然後再做多一層，就是去整理好它，現在就把它放進雪櫃，我現在暫時冷藏它兩至三個小時，我們剛才剩下了忌廉和奶油，我要把它們打勻，打勻後就把它們放開，這個就是放在上面裝飾用的，而這個草莓芝士蛋糕，其實我在多倫多開過一個Cooking Party，我和一些組員一起做過，其實你們在家也可以這樣做。</p></a>
+				<a href="#00:14:36.02" id="00:14:36.02" class="lt" onclick="jumptoTime(876, this.id)"><p>也可以把它們分成小一點或一杯杯，都沒有問題的，現在等待全部完成後，我們一起去組裝蛋糕，Hello 我們回來了，這一家的蛋糕冷藏了一個多小時，我想把第二層的芝士醬放進去，這個就是剛才留下的忌廉芝士和奶油，再加上魚膠粉，首先我把它倒進去，先把它放好，把它留到整個蛋糕都可以蓋住，蓋住後。</p></a>
+				<a href="#00:15:30.02" id="00:15:30.02" class="lt" onclick="jumptoTime(930, this.id)"><p>我可以把剛才留下的草莓芝士醬倒進去，看自己喜歡怎樣的樣子，我可以一點點放進去，放在一旁，看你自己喜歡擺邊，你可以自己做些花，撩些花都可以，擺在旁邊，有些細，有些大，有些在閃閃的，做到有些花，花花地，花碌碌的，隨意點可能會好看一點，放在表面後， 這些花可以自己做， 不用理會也可以，可以整個芝士蛋糕放士多啤梨也可以。</p></a>
+				<a href="#00:17:3.05" id="00:17:3.05" class="lt" onclick="jumptoTime(1023, this.id)"><p>我只是想做得漂亮一點，把切好的士多啤梨放進去，因為這個顏色很淺， 所以不用怕，把士多啤梨放進去， 隨意放就好，可以加些薄荷葉， 讓它有其他顏色，可以拿一拿看夠不夠 或者喜不喜歡，好了 給你們看看，現在放進去冷藏 冷藏好就可以吃了，OK 蛋糕 芝士蛋糕已經冷藏好了，其實可以冷藏久一點。</p></a>
+				<a href="#00:18:41.99" id="00:18:41.99" class="lt" onclick="jumptoTime(1121, this.id)"><p>不過我想趁還有日光 我先開蛋糕給大家看，現在蛋糕成形了，如果我是這個脫底模 怎樣開呢，在家裡的話 底部是脫的，我把它放在一個小的洞 高一點的東西，現在它很緊 脫不掉，我們有個火，現在沿著旁邊燒，如果沒有火的話 不要緊，你可以用熱毛巾 甚至用風筒都可以，只要看自己手上有什麼可以用 就用它吧，我在旁邊燒 燒到表面有點融化。</p></a>
+				<a href="#00:19:45.99" id="00:19:45.99" class="lt" onclick="jumptoTime(1185, this.id)"><p>這樣就容易把它移出來，可以慢慢移出來 移到了，當然不要燒太大火 像我剛才燒得很大火，旁邊有一點點融化，不過可以給你們看看蛋糕，就是這樣了 漂亮嗎，希望大家都試試做吧 下次見 拜拜。</p></a>
+</div>
+	</body>
+</html>

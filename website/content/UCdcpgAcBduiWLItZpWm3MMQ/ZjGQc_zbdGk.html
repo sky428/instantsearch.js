@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>懶人雙式蝴蝶酥 - Chocolate and Matcha Palmier</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZjGQc_zbdGk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>懶人雙式蝴蝶酥 - Chocolate and Matcha Palmier</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:4.22" id="00:00:4.22" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello， 各位朋友， 你們好!</p></a>
+				<a href="#00:00:7.22" id="00:00:7.22" class="lt" onclick="jumptoTime(7, this.id)"><p>今天我會和大家做一個懶人食譜，做這個懶人食譜， 其實連食譜都不需要，只要有自己的材料， 自己加一些材料就可以了，那我做什麼呢?</p></a>
+				<a href="#00:00:22.22" id="00:00:22.22" class="lt" onclick="jumptoTime(22, this.id)"><p>就是做蝴蝶酥了!</p></a>
+				<a href="#00:00:25.22" id="00:00:25.22" class="lt" onclick="jumptoTime(25, this.id)"><p>因為很多時候， 外面到處都可以買蝴蝶酥，但如果我想自己做自己喜歡吃的味道，或者拿來送給別人的時候，我們就可以有一個很簡易的方法了，首先介紹一下材料，就是我們可以買市售的Puff Pastry，這些就是酥皮的皮，已經完全是包好的，有一些是還沒包好的一塊，要自己用麵粉棍去壓，壓到你所需要的薄度和厚度。</p></a>
+				<a href="#00:01:7.22" id="00:01:7.22" class="lt" onclick="jumptoTime(67, this.id)"><p>這些就最好了，最適合今天的懶人食譜的題目，今天我就想和大家做一個懶人食譜，叫做雙色蝴蝶酥，為什麼是雙色呢?</p></a>
+				<a href="#00:01:22.22" id="00:01:22.22" class="lt" onclick="jumptoTime(82, this.id)"><p>因為它有兩種味道，我就不做原味了，只要不加我介紹的兩種味道就做原味了，所以你們可以自己選擇自己喜歡的味道，我今天就做朱古力味，可可味，還有綠茶味，或者是抹茶味，你喜歡怎麼叫吧，我這裡就有一盒市售的Puff Pastry，放室溫可以嗎?</p></a>
+				<a href="#00:01:56.22" id="00:01:56.22" class="lt" onclick="jumptoTime(116, this.id)"><p>其實不可以，因為室溫太大，很容易會出油，而且烤出來就沒那麼好吃，會有影響的，所以最好在冰箱冰格拿出來，放在冰箱冷凍那邊，怎麼分冷藏冷凍，那邊吧，平常冰箱冷凍一晚幾個小時都可以，捏一下有一點軟就ok了，然後你去買一些你喜歡的，這個沒有味道的，真的是綠茶粉，我這個綠茶粉，這樣抹茶粉，我買了一罐，拿了一些來做。</p></a>
+				<a href="#00:02:44.81" id="00:02:44.81" class="lt" onclick="jumptoTime(164, this.id)"><p>另外可可粉你也可以拿你自己喜歡的牌子，這次我就混了這兩款，把它們混在一起做，看看有什麼不同，因為這一款深色很多，這一款淺色一點，我想捲起來之後紋路會深色一點，所以我就兩款混在一起，沒有的話，你自己喜歡在哪裡任何牌子都可以的，另外就是用了的無鹽牛油，砂糖，還有糖粉，糖粉我打算放在裡面。</p></a>
+				<a href="#00:03:21.93" id="00:03:21.93" class="lt" onclick="jumptoTime(201, this.id)"><p>但是如果沒有糖粉的話，全部用砂糖都沒有問題的，另外有少少工具，就是掃子，還有篩子可以均勻地灑下去，然後就是這樣，這麼簡單，我現在可以把它拿開去做了，很簡單拿它出來，可以預熱焗爐，焗爐是390度華氏的，這樣打開，你看看它多軟熟，它已經完全融解了，摸起來還是冰凍的，這樣就開始融解了，這個位置就對了。</p></a>
+				<a href="#00:04:9.57" id="00:04:9.57" class="lt" onclick="jumptoTime(249, this.id)"><p>打開了它，我不用了，它已經是正正方方的，我們就可以做第一種味道了，怎樣做呢，就是將第一種味道，我們可以先放綠茶，掃下去，但它現在是乾的，這樣掃下去會不會不黏呢，其實真的會不黏的，所以我自己就想，掃一點牛油下去會好一點，或者是可以，如果不用牛油的話，你可以用掃水，但是掃水就真的要很少，因為這個酥皮也是用牛油搓的。</p></a>
+				<a href="#00:04:46.49" id="00:04:46.49" class="lt" onclick="jumptoTime(286, this.id)"><p>這樣味道就會比較配合牛油，撒上糖粉後，就可以撒上抹茶粉，撒上抹茶粉後，就可以撒上抹茶粉，另外，如果做了之後，待會出現的顏色，即是如果它有多點顏色，那邊稍後出來，它就會變深色一點。</p></a>
+				<a href="#00:05:31.95" id="00:05:31.95" class="lt" onclick="jumptoTime(331, this.id)"><p>均勻地把整塊酥皮都抹上綠茶粉和糖粉。</p></a>
+				<a href="#00:05:49.95" id="00:05:49.95" class="lt" onclick="jumptoTime(349, this.id)"><p>已經做好大部份的程序了。</p></a>
+				<a href="#00:06:1.95" id="00:06:1.95" class="lt" onclick="jumptoTime(361, this.id)"><p>然後，我們就在這個位置，對摺它。</p></a>
+				<a href="#00:06:27.95" id="00:06:27.95" class="lt" onclick="jumptoTime(387, this.id)"><p>因為我要做蝴蝶酥，所以我首先要對摺一條痕。</p></a>
+				<a href="#00:06:34.95" id="00:06:34.95" class="lt" onclick="jumptoTime(394, this.id)"><p>然後，我再分多三份。</p></a>
+				<a href="#00:06:38.95" id="00:06:38.95" class="lt" onclick="jumptoTime(398, this.id)"><p>總之，我整塊酥皮平均做五份。</p></a>
+				<a href="#00:06:48.95" id="00:06:48.95" class="lt" onclick="jumptoTime(408, this.id)"><p>然後，我們就把第一邊蓋上去，然後把另一邊也蓋上。</p></a>
+				<a href="#00:07:4.95" id="00:07:4.95" class="lt" onclick="jumptoTime(424, this.id)"><p>然後，我再把它捲進來。</p></a>
+				<a href="#00:07:16.95" id="00:07:16.95" class="lt" onclick="jumptoTime(436, this.id)"><p>然後，這一邊也是這樣。</p></a>
+				<a href="#00:07:20.95" id="00:07:20.95" class="lt" onclick="jumptoTime(440, this.id)"><p>這個真的超簡單的了。</p></a>
+				<a href="#00:07:26.95" id="00:07:26.95" class="lt" onclick="jumptoTime(446, this.id)"><p>這個就超簡單的了，不懂得烹飪也可以做到的了。</p></a>
+				<a href="#00:07:33.95" id="00:07:33.95" class="lt" onclick="jumptoTime(453, this.id)"><p>最後，我把它們疊在一起。</p></a>
+				<a href="#00:07:38.95" id="00:07:38.95" class="lt" onclick="jumptoTime(458, this.id)"><p>做完這個步驟之後，我做什麼呢?</p></a>
+				<a href="#00:07:46.65" id="00:07:46.65" class="lt" onclick="jumptoTime(466, this.id)"><p>首先，因為它已經放出來軟了，我將它放進冰箱冷藏一下，冷藏一下，等它變硬一點再切，事不宜遲，我們做第二塊，一樣地，打開它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:14.65" id="00:08:14.65" class="lt" onclick="jumptoTime(494, this.id)"><p>然後，掃牛油，重複剛才的動作，如果想送給朋友，可以一次過買很多塊回來，大量生產，蝴蝶酥是心形的，很適合情人節送給朋友，再加糖粉和朱古力粉，如果想更懶的話，可以放在一起，如果不夠糖，可以再加一點，如果想要更多朱古力味，可以加多一點糖粉，如果喜歡原味的話，可以只加糖粉或砂糖，如果想要其他味道，可以加些砂糖。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:59.47" id="00:09:59.47" class="lt" onclick="jumptoTime(599, this.id)"><p>但砂糖味道會更濃，不能像朱古力般多放，跟剛才一樣，分成五份，用刀子輕輕地刮一下，這樣分辨更容易，這個好像有一點點，大概這樣，這個不是刀，這個當然是沒有刀，不理會的，印一印它，讓你容易一點去分它的區域，一樣都是這樣，先摺兩邊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:51.50" id="00:10:51.50" class="lt" onclick="jumptoTime(651, this.id)"><p>再摺下去，這樣也是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:7.87" id="00:11:7.87" class="lt" onclick="jumptoTime(667, this.id)"><p>然後再放進來，切下去，然後我們也是放進雪櫃，冷藏一下才切，好了 已經回來了，它已經冷藏好了，為什麼大家都會發疏，為什麼它一條長一條短，很簡單 因為這條我沒有轉過它，所以這條比較幼身，這條比較闊身，不要緊 都是這樣吃，然後我們就切它，切多少呢 大約四分之一寸，或者四分之三，最好大家平均一點。</p></a>
+				<a href="#00:11:48.87" id="00:11:48.87" class="lt" onclick="jumptoTime(708, this.id)"><p>待會焗的時候，就容易受熱，我們可以慢慢切它，第一個頭也可以要的，沒問題，大約一寸那麼多，是不是，我將它四分之一寸，我想大約這樣，我差不多這個時間這樣切，每個都是一樣那麼闊，切了之後，就可以將它放在焗盤上，每個位置都隔一點點空間，放在焗盤上，現在它是這樣的，待會兩邊這些位置，就會這樣鬆開，它就會發脹。</p></a>
+				<a href="#00:12:46.87" id="00:12:46.87" class="lt" onclick="jumptoTime(766, this.id)"><p>再切第二條，粗厚的話，可以適當的切，但最好是全部都切得差不多厚度，然後就捏一捏它做個造型，再鬆開捏一捏，最好在冬天做，夏天時因為家中室溫高，很容易溶，所以最好在冬天做，做最後一個手續，在表面掃上牛油，在表面掃上砂糖，在表面掃上砂糖，在表面掃上砂糖，在表面掃上砂糖，在表面掃上砂糖。</p></a>
+				<a href="#00:15:4.19" id="00:15:4.19" class="lt" onclick="jumptoTime(904, this.id)"><p>在表面掃上砂糖，在表面掃上砂糖，在表面掃上砂糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:28.19" id="00:15:28.19" class="lt" onclick="jumptoTime(928, this.id)"><p>在表面掃上砂糖，在表面掃上砂糖</p></a>
+				<a href="#00:15:46.19" id="00:15:46.19" class="lt" onclick="jumptoTime(946, this.id)"><p>在表面掃上砂糖，兩種顏色，一種是朱古力味，另一種是綠茶味，焗的時候焗到一半我就拿出來反轉焗另一半，當然有些可能焦糖化了變成金黃色，另外這個綠茶也是，另一邊看看這邊，這邊綠一點，拍照就漂亮了，我們放涼一點才吃，熱的時候會比較不脆，所以放涼一點，然後就可以試吃了，近一點看，最好就是捏一捏或者摺的時候摺緊一點。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:7.42" id="00:17:7.42" class="lt" onclick="jumptoTime(1027, this.id)"><p>就會黏得好看一點，如果鬆散了就會有個洞，這些就很漂亮了，可以黏得很緊，是不是很漂亮，一個像心形的蝴蝶酥，放了一段時間就可以試味了，我先試綠茶味，現在可以把我的經驗告訴你，摺的時候摺緊一點，就不會有縫隙彈出來，我先試味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:57.34" id="00:17:57.34" class="lt" onclick="jumptoTime(1077, this.id)"><p>很脆很鬆化，一咬開就散開了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:18.06" id="00:18:18.06" class="lt" onclick="jumptoTime(1098, this.id)"><p>原來綠茶味是怎樣的，綠茶味會帶出草青味，如果用普通綠茶粉就不用抹茶粉，就不會有很重的草青味，但如果你喜歡的話 沒所謂的，因為我用抹茶粉 可能是貴的東西，不能經過高溫處理，我吃了一半，我再試試朱古力的，很鬆軟的 已經可以分開了，我再試試，朱古力就沒有這個問題，可可粉是可以焗的，焗蛋糕 餅乾都會用這個朱古力粉。</p></a>
+				<a href="#00:19:43.73" id="00:19:43.73" class="lt" onclick="jumptoTime(1183, this.id)"><p>經過高溫之後不會變成其他味道，會有很香的朱古力味，而且很脆，我剛才好像放了很多糖 但其實這樣吃不太甜，你看我的手 剛才拿完之後手是不油膩的 很乾爽的，為什麼會這樣 明明放了很多油 酥皮也是油，為什麼我拿完之後手是沒有油膩的感覺呢，首先焗的時候 記得爐要熱 酥皮要夠冷，焗了8分鐘之後反轉 拿出來反轉 不怕的。</p></a>
+				<a href="#00:20:38.13" id="00:20:38.13" class="lt" onclick="jumptoTime(1238, this.id)"><p>拿出來 照它反轉，然後再放進去8分鐘之後關火，打開一點點 放在裡面2-3分鐘，然後再慢慢等2-3分鐘，放在焗爐打開，再拿出來再放，油份回落後，不會有油浮面，或者四周都是油，會很乾爽，今天就介紹到這裡，希望你們會做得比我好看，做得比我好吃，希望你們可以找到自己喜歡的味道，今天就介紹到這裡。</p></a>
+				<a href="#00:21:22.96" id="00:21:22.96" class="lt" onclick="jumptoTime(1282, this.id)"><p>希望下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

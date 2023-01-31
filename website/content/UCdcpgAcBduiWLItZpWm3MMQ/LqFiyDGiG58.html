@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做蒙布朗/勃朗峰/Mont Blanc</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LqFiyDGiG58',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做蒙布朗/勃朗峰/Mont Blanc</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:4.09" id="00:00:4.09" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，今天和大家一起做一個甜品叫做Mon Blanc，中文叫做蒙布朗或叫做伯朗峰，大約是這樣的樣子，有些呈現塔狀的狀態，有些就像蛋糕，伯朗峰位於法國和意大利的中間邊界有一個山峰，很多時候長年都會有積雪，所以甜品最後都會灑上糖粉，令到它有一個山峰的形狀，有一個朋友希望我們在8月15日播出時，就可以做到這個甜品給他，因為那天是他的生日，我現在先和他說生日快樂，然後我們開始做甜品。</p></a>
+				<a href="#00:01:9.09" id="00:01:9.09" class="lt" onclick="jumptoTime(69, this.id)"><p>首先我們介紹我做的餅底，很多時候外面會有很多不同的餅底，有撻皮，蛋糕皮，蛋糕底，蛋白餅皮，有很多不同的做法，我這次做一個比較硬的牛油蛋糕做底，我會用一個4吋的蛋糕模，待會用來烤，我預備了兩個，希望可以做到，然後我介紹材料，蛋糕材料有雞蛋一隻，Icing sugar 45克，牛油50克。</p></a>
+				<a href="#00:02:7.16" id="00:02:7.16" class="lt" onclick="jumptoTime(127, this.id)"><p>低筋麵粉35克，1茶匙發粉，15克杏仁粉，材料就這樣，我喜歡在甜品上加上雞蛋，所以我會加上一點點的雞蛋油，同時我開了一個烤箱，攝氏170度或325至335度，先讓它預熱，現在就繼續做，首先，我將牛油放進去，牛油已經在室溫一段時間，它應該很軟，接著打發它，然後將糖粉篩入去，用刀刮勻糖粉和牛油， 拌勻後才打蛋， 否則粉末會散到四周。</p></a>
+				<a href="#00:04:5.67" id="00:04:5.67" class="lt" onclick="jumptoTime(245, this.id)"><p>拌勻後就可以打蛋， 這樣就不會太容易打到粉末散到四周</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:35.67" id="00:04:35.67" class="lt" onclick="jumptoTime(275, this.id)"><p>拌勻後就可以出鍋了，用手抓， 讓你們看清楚一點，因為我家不太熱， 牛油雖然放了很久， 但也不軟化，但不要緊， 慢慢打， 牛油就會完全黏在一起，先刮一下盤子，然後慢慢打，Surfасс</p></a>
+				<a href="#00:05:48.24" id="00:05:48.24" class="lt" onclick="jumptoTime(348, this.id)"><p>graphics，defe，long</p></a>
+				<a href="#00:05:49.94" id="00:05:49.94" class="lt" onclick="jumptoTime(349, this.id)"><p>Either，équ strawberries，Tail parce，kaf случаあー，Firicus，defending</p></a>
+				<a href="#00:05:48.88" id="00:05:48.88" class="lt" onclick="jumptoTime(348, this.id)"><p>UV，над，cit extrapol Fuck</p></a>
+				<a href="#00:05:51.98" id="00:05:51.98" class="lt" onclick="jumptoTime(351, this.id)"><p>wedge，pta，Programm，SPEAKERachus，mods，сов</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:49.62" id="00:05:49.62" class="lt" onclick="jumptoTime(349, this.id)"><p>pty，writer，Cred graduating</p></a>
+				<a href="#00:05:51.02" id="00:05:51.02" class="lt" onclick="jumptoTime(351, this.id)"><p>Ol，ê brid，adopted，Vermont</p></a>
+				<a href="#00:05:48.58" id="00:05:48.58" class="lt" onclick="jumptoTime(348, this.id)"><p>Bread，hört，打至一團狀，鬆開，狀態已經變成一團狀，不是一粒粒，現在是一反反的，在碗內，打鬆開後，就可以逐少逐少，將雞蛋放入，因為雞蛋一放進去，就會一塊塊收起，變成油水分離，所以要逐少逐少，打至乳溶，或者是奶油狀態</p></a>
+				<a href="#00:06:31.67" id="00:06:31.67" class="lt" onclick="jumptoTime(391, this.id)"><p>打至乳溶，或者是奶油狀態，打至乳溶，或者是奶油狀態，打至乳溶，或者是奶油狀態，打至乳溶，打至乳溶，或者是奶油狀態，再加少少蛋漿，慢慢打，然後，將麵粉，麵粉，和杏仁粉，和杏仁粉，放入，除了麵粉和杏仁粉，還有，Baking Powder，即是白粉，然後，將麵粉和杏仁粉攪拌均勻，可以這樣</p></a>
+				<a href="#00:07:37.67" id="00:07:37.67" class="lt" onclick="jumptoTime(457, this.id)"><p>打一下，攪拌均勻</p></a>
+				<a href="#00:07:47.46" id="00:07:47.46" class="lt" onclick="jumptoTime(467, this.id)"><p>用慢速攪拌，攪拌均勻就可以了，不要攪拌太多，因為麵粉攪拌太多會起筋，所以我們就攪拌均勻，沒有白色粉就可以了，我先把麵粉刮一刮，麵粉底已經攪拌好，接下來就把麵粉擠進碗裡，攪拌好後，用開口的圓形嘴，把麵團，即麵糊，放進麵糊裡，然後就可以擠下去，看不看得懂</p></a>
+				<a href="#00:09:13.96" id="00:09:13.96" class="lt" onclick="jumptoTime(553, this.id)"><p>absence，perceptions，coisas，coch closest，emerging，vasive，complex，One，��，굉장히，variance，natuurlijk，uphill，quart SebOOOOOOOOAK，hu，Mina，DIO，année，colleague。</p></a>
+				<a href="#00:09:14.16" id="00:09:14.16" class="lt" onclick="jumptoTime(554, this.id)"><p>就是說，Qiao，notion，Berry，然後就放進焗爐焗20-30分鐘，要看它形成是怎樣，這次要看火了，趁著蛋糕在焗的時候，我就想做些裝飾放進馬布朗，所以我就在家裡找到一些市售的巧克力，然後就可以放進微波爐中冷凍，你可以用隔水慢慢融化，或者用熱水再融化也可以，我就貪快手，就用微波爐，打開了幾粒巧克力。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:22.48" id="00:10:22.48" class="lt" onclick="jumptoTime(622, this.id)"><p>巧克力大約幾個百秒就會融化，要看微波爐的火候是怎樣，融化後，我就想做幾個，首先就點，太多了，其實放一點點，然後壓一壓，變成一個圓形</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:55.48" id="00:10:55.48" class="lt" onclick="jumptoTime(655, this.id)"><p>然後壓扁一點再拉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:16.48" id="00:11:16.48" class="lt" onclick="jumptoTime(676, this.id)"><p>類似這樣，總之做多兩個就可以了，蛋糕已經焗了大約19分鐘，已經焗熟了，你看到它在盤外開始有一點點膩膩的，我們可以用竹籤或牙籤去戳它，拿起來，一點東西都沒有黏著，這樣它就熟了，我們可以把它反轉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:57.24" id="00:11:57.24" class="lt" onclick="jumptoTime(717, this.id)"><p>將冰箱拿出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:15.24" id="00:12:15.24" class="lt" onclick="jumptoTime(735, this.id)"><p>將冰箱放涼，接著做下一個步驟，等待冰箱放涼後，我們來處理其他餘下的材料，我先介紹一下，這是栗子蓉，這是法國製造的罐頭栗子蓉，它不是很甜，所以要自己加糖，還有一些市售的栗子，還有糖，分成兩部分的50ml忌廉和250ml忌廉，首先做栗子蓉，將栗子蓉放在盤子上，加少許糖，大約1茶匙，接著用打發器打發。</p></a>
+				<a href="#00:13:54.97" id="00:13:54.97" class="lt" onclick="jumptoTime(834, this.id)"><p>如果你有心機的話，可以買很多栗子回來，自己去煮，磨成蓉，再做也一樣的，不過如果方便的話，買到買栗子蓉的罐頭，是一個不錯的選擇，開始打鬆後，和糖混合後，就可以把忌廉倒進去，然後攪拌均勻，我這裡放了大約10克糖，即是一匙多一點點，然後我可以，攪拌均勻，現在就變成這樣，有些食譜我看到有些人會另外打發忌廉再打開。</p></a>
+				<a href="#00:15:16.49" id="00:15:16.49" class="lt" onclick="jumptoTime(916, this.id)"><p>這樣就會淺色一點，再打開一點，栗子的含量就會再少一點，變成忌廉的含量多一點，我喜歡吃多一點栗子，所以我就用這麼少的比例，其實你可以打開另一個忌廉，打到忌廉好像融化了的雪糕，然後慢慢把它打開也可以，但我覺得我這個就已經可以了，我把它放開，接下來就是打忌廉了，我這裡有250ml，即是一兩杯的忌廉，然後我就可以放幾茶匙的糖進去。</p></a>
+				<a href="#00:16:7.49" id="00:16:7.49" class="lt" onclick="jumptoTime(967, this.id)"><p>大約三茶匙，然後我就打開它，我這個忌廉應該有多的，其實我的位置很少，我打少一半也可以，不過不要緊，打剩了我可以用來做裝飾，我會在食譜上調校份量，聞到開始出了，我們看靜一點，民務員已經出動了，現在仍然有少少軟，因為這樣攪拌仍然有少少流質的狀態，我繼續攪拌一會兒，現在它變得結實了，倒出來不是流出來的狀態，這樣就可以了，不要再打它了，因為再打它，它就會變成油水回來，然後就變成牛油了。</p></a>
+				<a href="#00:17:50.08" id="00:17:50.08" class="lt" onclick="jumptoTime(1070, this.id)"><p>這個狀態已經很好了，接下來我們就要用不同的貼來做，這個貼就拿來裝飾忌廉，這個就是拿來做栗子用的，本來應該可以買一些比這個更大的，很多洞的做，但我家裡真的找不到，所以暫時買不到，所以我就用單個的，一會兒慢慢擠它，首先我們先做了忌廉的部分，然後就將我們的蛋糕放在碟子上，首先我先擠一個圓圈。</p></a>
+				<a href="#00:18:51.29" id="00:18:51.29" class="lt" onclick="jumptoTime(1131, this.id)"><p>然後把裡面的果仁也擠出來，然後就可以把栗子放進去，我放三顆，因為我要把它們堆高，然後再擠忌廉，圍高圍住它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:27.26" id="00:19:27.26" class="lt" onclick="jumptoTime(1167, this.id)"><p>然後我再放</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:44.03" id="00:19:44.03" class="lt" onclick="jumptoTime(1184, this.id)"><p>再加上一層，這樣就夠高了，要做布朗峰，當然要高一點才好看，看不看到?</p></a>
+				<a href="#00:20:0.03" id="00:20:0.03" class="lt" onclick="jumptoTime(1200, this.id)"><p>另外一個也是一樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:15.32" id="00:20:15.32" class="lt" onclick="jumptoTime(1215, this.id)"><p>然後就擠它，要用很多力才行</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:30.55" id="00:20:30.55" class="lt" onclick="jumptoTime(1230, this.id)"><p>看看能不能剪開</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:32.55" id="00:20:32.55" class="lt" onclick="jumptoTime(1232, this.id)"><p>繼續剪開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:49.82" id="00:20:49.82" class="lt" onclick="jumptoTime(1249, this.id)"><p>用兩隻手</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:20:57.82" id="00:20:57.82" class="lt" onclick="jumptoTime(1257, this.id)"><p>因為我加的栗子蓉份量高，所以會很結實，不過不要緊，用手慢慢推慢慢轉，有些會這樣向上擠，這樣可能會容易些</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:21:38.01" id="00:21:38.01" class="lt" onclick="jumptoTime(1298, this.id)"><p>真的耶!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:21:51.29" id="00:21:51.29" class="lt" onclick="jumptoTime(1311, this.id)"><p>有些位置不漂亮，可以用東西幫忙調整位置，令它更漂亮，我剛才這樣做，這邊也一樣，可以遮住，這個就是上下上下，給你們看看，是這樣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:51.59" id="00:22:51.59" class="lt" onclick="jumptoTime(1371, this.id)"><p>好，我來做這個，好了，我真的不夠力了，我需要找人情商幫我慢慢轉，我開始慢慢轉了，始終我不是專業，也沒有特別的，適合用的貼紙來做，所以就變成這個很粗糙了，但是不要緊的，自己做出來，挑戰自己，我做過這個甜品，我已經很開心了，我又要趁天黑做好，OK了，你看看這個圓形的，做好之後就可以放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:6.75" id="00:24:6.75" class="lt" onclick="jumptoTime(1446, this.id)"><p>剛剛有朱古力，可以插進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:22.75" id="00:24:22.75" class="lt" onclick="jumptoTime(1462, this.id)"><p>是不是很漂亮呢?，還未可以，因為是勃朗峰，要有糖霜，看上去好像在下雪一樣，加了糖霜就什麼都漂亮了，給你們看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:51.75" id="00:24:51.75" class="lt" onclick="jumptoTime(1491, this.id)"><p>天已經很暗了，看不看得到?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:24:57.75" id="00:24:57.75" class="lt" onclick="jumptoTime(1497, this.id)"><p>然後就灑糖粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:17.44" id="00:25:17.44" class="lt" onclick="jumptoTime(1517, this.id)"><p>爆pan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:25:23.76" id="00:25:23.76" class="lt" onclick="jumptoTime(1523, this.id)"><p>steamed，nombreux，Styles，composed，selling，behave，struggles</p></a>
+				<a href="#00:25:19.64" id="00:25:19.64" class="lt" onclick="jumptoTime(1519, this.id)"><p>边�를，cops，fer настоящ，Roz，5，apa，JD，nou GOODMAN，Turbo，ownik，老播，fosse examining，philosop，üzerpl thinYoung，就是 rubμαι Felipe，en，這個蛋糕是4吋模的，今天做了這個，現在就開始試吃了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:34.59" id="00:25:34.59" class="lt" onclick="jumptoTime(1534, this.id)"><p>這樣吃吧，裡面很多忌廉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:51.57" id="00:25:51.57" class="lt" onclick="jumptoTime(1551, this.id)"><p>rabbits</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:10.49" id="00:26:10.49" class="lt" onclick="jumptoTime(1570, this.id)"><p>wah prayed，installment</p></a>
+				<a href="#00:26:3.97" id="00:26:3.97" class="lt" onclick="jumptoTime(1563, this.id)"><p>achter，��서</p></a>
+				<a href="#00:26:7.37" id="00:26:7.37" class="lt" onclick="jumptoTime(1567, this.id)"><p>Ret filmed，flexible，sib uncond，walking，Ung，Kendra，ул</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:9.37" id="00:26:9.37" class="lt" onclick="jumptoTime(1569, this.id)"><p>saints，patio，liers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:54.85" id="00:25:54.85" class="lt" onclick="jumptoTime(1554, this.id)"><p>떡</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:1.65" id="00:26:1.65" class="lt" onclick="jumptoTime(1561, this.id)"><p>salvation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:52.81" id="00:25:52.81" class="lt" onclick="jumptoTime(1552, this.id)"><p>associ</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:53.13" id="00:25:53.13" class="lt" onclick="jumptoTime(1553, this.id)"><p>Hoo，Sound，placebo，successes</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:8.29" id="00:26:8.29" class="lt" onclick="jumptoTime(1568, this.id)"><p>من，Ce week</p></a>
+				<a href="#00:25:58.79" id="00:25:58.79" class="lt" onclick="jumptoTime(1558, this.id)"><p>26，koska</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:25:51.73" id="00:25:51.73" class="lt" onclick="jumptoTime(1551, this.id)"><p>Interview</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:9.85" id="00:26:9.85" class="lt" onclick="jumptoTime(1569, this.id)"><p>DO，funny，envoy</p></a>
+				<a href="#00:26:9.15" id="00:26:9.15" class="lt" onclick="jumptoTime(1569, this.id)"><p>craft，Putin，veces，groß，sst，Evet，ancient，rapport，Palestinian，emblem，afa</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:3.61" id="00:26:3.61" class="lt" onclick="jumptoTime(1563, this.id)"><p>convert från，吗 realization，пллож，Destiny</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:6.31" id="00:26:6.31" class="lt" onclick="jumptoTime(1566, this.id)"><p>sent，ived，family Blaze</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:12.31" id="00:26:12.31" class="lt" onclick="jumptoTime(1572, this.id)"><p>嗯，好好味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:18.31" id="00:26:18.31" class="lt" onclick="jumptoTime(1578, this.id)"><p>自己讚自己，真的想念吃，把這條魚肉撈出來，今晚不用吃飯了，今日我的介紹就這樣，希望今次點餸的金主滿意，也在這裡跟你說生日快樂，希望你今年身體健康和開開心心，下次再和大家一起做另外的東西，多謝收看，再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>雙色綠茶紅豆蛋糕 - Green Tea Red Bean Loaf Cake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dcMuUhtXsg0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>雙色綠茶紅豆蛋糕 - Green Tea Red Bean Loaf Cake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 大家好呀!今日就同大家一齊做一個簡單嘅甜品，係一個紅豆綠茶磅蛋糕切片嘅，跟住之後我哋就會切片，咁點解要做呢個呢?因為想介紹一啲簡單啲容易啲嘅甜品啦，咁而喺呢個甜品裏面呢我亦都會加咗少少嘅創意落去啦，就係我將紅豆同埋綠茶呢兩種味平時都係撈埋一齊嘅，我就將佢喺呢個磅蛋糕裏面呢就會將佢分開成兩part。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>咁希望呢焗到出嚟嘅時候呢紅豆同埋綠茶嗰兩個layer呢係可以清晰咁見，但係唔知㗎試下想試下將一個平常嘅食譜將佢點樣去扭佢啦，咁首先呢我介紹下材料先，材料呢就係見到啦喺曬度你見到曬㗎啦咁呢係牛油啦咁呢個呢就係無鹽嘅牛油已經收溫咗㗎啦100克，糖粉即係icing sugar100克，低筋麵粉cake flour90克。</p></a>
+				<a href="#00:01:21.00" id="00:01:21.00" class="lt" onclick="jumptoTime(81, this.id)"><p>呢度呢就綠茶粉啦綠茶粉呢度呢大約呢就係一個湯匙到咁呢個嘅低筋麵粉裏面呢亦都有半個茶匙嘅powder粉baking powder，咁呢就30克嘅紅豆啦咁呢個紅豆呢我係用罐頭紅豆嘅咁我方便啦咁等到可以即刻可以即係要隨時攞喺手就可以有得用啦，咁一個罐頭紅豆大約200克一罐嘅咁我可以呢將佢分開幾份啦咁然後pack起佢擺喺個冰箱度咁我哋隨時就可以用紅豆用啦咁跟住呢就係雞蛋兩隻材料就係咁多啦咁我需要一個呢loaf嘅pan啦咁我已經呢將佢呢鋪咗紙㗎啦咁可以依家呢我哋就可以開始啦，咁我哋就係咁啦。</p></a>
+				<a href="#00:02:18.14" id="00:02:18.14" class="lt" onclick="jumptoTime(138, this.id)"><p>首先我哋做一樣嘢啦，咁我可以移開一啲暫時未需要嘅嘢住，首先呢就係白朱古力，白朱古力呢我需要呢就係要溶咗佢嘅，咁你可以隔水溶或者如果有微波爐嘅話，好似我咁樣每次20秒咁慢慢等佢攪攪溶佢咁樣啦，咁我而家攞去整溶咗佢先，咁樣呢啲白朱古力呢就已經呢溶曬㗎啦，我就係每次20秒15秒咁樣呢，叮完之後呢就攞隻匙羹攪一攪佢跟住呢就再做。</p></a>
+				<a href="#00:02:54.14" id="00:02:54.14" class="lt" onclick="jumptoTime(174, this.id)"><p>咁做咗三次到呢就應該搞掂㗎啦，咁我而家可以擺開佢，咁呢然後呢我哋呢就跟住呢就做呢一度啦，最主要最主要嗰個部分，最主要嗰個部分係點樣呢，首先呢就係牛油啦，咁佢室溫嘅，比較</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:13.14" id="00:03:13.14" class="lt" onclick="jumptoTime(193, this.id)"><p>淋嘅，咁樣叉佢呢就叉到嘅，咁跟住呢我哋呢就將啲糖粉呢就擺落去，啲糖粉之前已經篩過咗㗎啦</p></a>
+				<a href="#00:03:27.14" id="00:03:27.14" class="lt" onclick="jumptoTime(207, this.id)"><p>我擺咗一半落去先啦，跟住呢我哋呢就打佢啦，咁呢如果你冇電動打蛋器呢用普通打蛋器慢慢打都得㗎</p></a>
+				<a href="#00:03:40.14" id="00:03:40.14" class="lt" onclick="jumptoTime(220, this.id)"><p>跟住呢我哋呢就打佢啦，跟住我哋打佢啦，細細力用最細慢慢等佢，融合埋一齊，牛油已經放置了很久，但我家裡比較冷，所以牛油仍然很硬，慢慢打，直至整個牛油混合在一起，開始了，開始了 現在開始融化了，現在繼續打，我還有一點糖粉 要放進去攪拌，攪拌至很鬆開的狀態，顏色由黃色變成淺黃色，我們可以下一個步驟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:12.35" id="00:05:12.35" class="lt" onclick="jumptoTime(312, this.id)"><p>下一個步驟，你會看到有雞蛋，我們逐少逐少地加入雞蛋，再攪拌均勻，每次都要加少許雞蛋，打至差不多的程度，將牛油糊刮一下碗，令到旁邊的都黏住，這樣會均勻一點，繼續打至均勻，慢慢就冷了，打至這個形狀，混合均勻，現在把白朱古力放入，白朱古力已經放涼，再打勻，然後把麵粉和泡打粉放進去，泡打粉和麵粉我剛才已經篩過了。</p></a>
+				<a href="#00:07:44.98" id="00:07:44.98" class="lt" onclick="jumptoTime(464, this.id)"><p>然後就可以不用打蛋器了，然後就攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:19.98" id="00:08:19.98" class="lt" onclick="jumptoTime(499, this.id)"><p>謝謝觀看，現在攪拌成一個麵團狀態，即是濕濕的麵糊，然後我將它分一部分出來，差不多一半的部分出來，然後我將它分成兩個部分，分開兩個部分做什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:53.97" id="00:08:53.97" class="lt" onclick="jumptoTime(533, this.id)"><p>一個部分放紅豆，一個部分放綠茶粉，小部分放綠茶粉，大部分放紅豆，然後攪拌均勻，我先將紅豆攪拌均勻，拌一拌它也會有少許粉紅色的狀態，然後把紅豆的部分放在底部，如果不想拌的話，可以將所有材料放進一個盤子裡，然後拌勻就可以了，而我身癢，想試試將它們分開兩層，會有什麼效果呢?</p></a>
+				<a href="#00:10:16.07" id="00:10:16.07" class="lt" onclick="jumptoTime(616, this.id)"><p>我就在想如何做，啊!忘記了最重要的一點，就是焗爐要預熱325度，我已經將它們焗好，然後就將它們放在底部，希望它們出來的時候有兩層，下面一層是紅豆，上面一層是綠茶，然後就將綠茶和蓮霧混合，soft 경，Indones</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:33.33" id="00:11:33.33" class="lt" onclick="jumptoTime(693, this.id)"><p>pronounced，ado，Shiva，还是，verste，distillident</p></a>
+				<a href="#00:11:24.63" id="00:11:24.63" class="lt" onclick="jumptoTime(684, this.id)"><p>Follow，Pacżenia</p></a>
+				<a href="#00:11:31.07" id="00:11:31.07" class="lt" onclick="jumptoTime(691, this.id)"><p>� Vill narc Mes，ответ，ő，defining，olsun，draw–</p></a>
+				<a href="#00:11:33.47" id="00:11:33.47" class="lt" onclick="jumptoTime(693, this.id)"><p>atamente，invaded，går，liking，aru</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:26.61" id="00:11:26.61" class="lt" onclick="jumptoTime(686, this.id)"><p>Suzuki，eb</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:30.19" id="00:11:30.19" class="lt" onclick="jumptoTime(690, this.id)"><p>desert，ienza</p></a>
+				<a href="#00:11:22.97" id="00:11:22.97" class="lt" onclick="jumptoTime(682, this.id)"><p>estre，quoted，вс Jon bed惜 구� CDC</p></a>
+				<a href="#00:11:27.07" id="00:11:27.07" class="lt" onclick="jumptoTime(687, this.id)"><p>nuts，ffer</p></a>
+				<a href="#00:11:30.09" id="00:11:30.09" class="lt" onclick="jumptoTime(690, this.id)"><p>WS，loyalty</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:27.61" id="00:11:27.61" class="lt" onclick="jumptoTime(687, this.id)"><p>kwest，adopting，Vers graveyard，vidia，læ</p></a>
+				<a href="#00:11:27.75" id="00:11:27.75" class="lt" onclick="jumptoTime(687, this.id)"><p>ask，繼續，protected，statement，ốc，Solid regression，miraculous</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:26.01" id="00:11:26.01" class="lt" onclick="jumptoTime(686, this.id)"><p>��，안�樹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:32.35" id="00:11:32.35" class="lt" onclick="jumptoTime(692, this.id)"><p>grinder，포anges，flデ，ש，всп</p></a>
+				<a href="#00:11:26.19" id="00:11:26.19" class="lt" onclick="jumptoTime(686, this.id)"><p>око，canım，simples，ηνestial，dependent</p></a>
+				<a href="#00:11:23.49" id="00:11:23.49" class="lt" onclick="jumptoTime(683, this.id)"><p>��，FROM And cs</p></a>
+				<a href="#00:11:34.14" id="00:11:34.14" class="lt" onclick="jumptoTime(694, this.id)"><p>小伙伴们记得点赞、转发、收藏、转发支持明镜与点点栏目，將綠茶的層次盡量鋪在紅豆上</p></a>
+				<a href="#00:12:25.07" id="00:12:25.07" class="lt" onclick="jumptoTime(745, this.id)"><p>將綠茶倒入鍋中，這樣我可以拿出來切開來看看，我可以切開一件件，我用了一個大號的焗盤，可以用一個小的焗盤</p></a>
+				<a href="#00:13:30.15" id="00:13:30.15" class="lt" onclick="jumptoTime(810, this.id)"><p>可以了，謝謝觀賞，看看，它是兩層的，下面是紅豆味，上面是綠茶味，一起吃就是綠茶紅豆蛋糕了，我可以拿一塊中間一點的給你們看，現在很熱，還未適合吃，要等它放涼了，吃就可以了，給你們看看多漂亮，OK，那我就當我自己這次做這個蛋糕成功了，希望你們也可以試試，下星期再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

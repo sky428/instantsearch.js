@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做蘇格蘭酥餅 - Scottish Shortbread</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ofWWWwm0A5g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做蘇格蘭酥餅 - Scottish Shortbread</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:4.15" id="00:00:4.15" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友 你們好，少休了一陣子，現在又重新投入拍片，我前陣子去了蘇格蘭旅行，今天我想趁這個機會，去做一個蘇格蘭很有代表性的食物，平時你們可能都會看到，可以買這個品牌的Shortbread Cookie，我買了一個就是這樣，因為這個圖案很有趣，我今天打算做蘇格蘭的Shortbread，你會看到平時Shortbread好像有三種材料。</p></a>
+				<a href="#00:01:0.15" id="00:01:0.15" class="lt" onclick="jumptoTime(60, this.id)"><p>為什麼我這裡有四種呢?</p></a>
+				<a href="#00:01:2.15" id="00:01:2.15" class="lt" onclick="jumptoTime(62, this.id)"><p>我一會兒告訴你，事緣就是我去完蘇格蘭回來，我想做這個Shortbread Cookie，很久之前我看過蔡蘭先生的一篇文章，是關於威士忌之旅的，他在文章的最後一段，他去了一個主人的家，他們有個廚師做一個Shortbread Cookie，他覺得很好吃，還把食譜寫在文章裡，我讀一讀給你們聽吧。</p></a>
+				<a href="#00:01:51.74" id="00:01:51.74" class="lt" onclick="jumptoTime(111, this.id)"><p>廚師是一位女士，名叫Noma，供應了茶和咖啡之後，拿出她做得最出色的英式甜餅Shortbread，我們吃的，白糖糕是用米做的，英國人用麵粉做，也只是加白糖而已，但製成品非常美味，而我這個不吃這類子甜飽肚皮，東西的人，也連吞幾塊，要了她的一張菜譜，食譜是這樣的，8安士的麵粉，8安士的牛油。</p></a>
+				<a href="#00:02:35.22" id="00:02:35.22" class="lt" onclick="jumptoTime(155, this.id)"><p>4安士的米粉，4安士的粉糖，混合之後切成塊狀，放入焗爐，175度攝氏之下，控制至表面金黃為止，原來秘訣在於加了米粉，回到香港一定試做，這一段是她節錄在她寫這篇文章，威士忌之旅第四，她講述的這一段這麼小小的食譜，我希望試一下，用她的食譜來做，Shortbread cookie，我不知道成不成功。</p></a>
+				<a href="#00:03:18.70" id="00:03:18.70" class="lt" onclick="jumptoTime(198, this.id)"><p>因為我平時做Shortbread，沒有加米粉，我也不知道她這裡所說的米粉是什麼，我就，試一下用，如果是我們用的米粉，很多時候都說，Rice flour，我們多數都會說是粘米粉，我試一下把它換成粘米粉，看看做出來的效果如何，我們有什麼呢，因為平時做Shortbread，它有一個既定特定的比例。</p></a>
+				<a href="#00:03:56.18" id="00:03:56.18" class="lt" onclick="jumptoTime(236, this.id)"><p>就是糖，一份，牛油，兩份，麵粉，三份，而剛才，說的食譜其實都是，在這個比例裡面，因為它是4盎司的糖粉，8盎司的牛油，8盎司加4盎司，8盎司麵粉，所以我會把這個，加在一起，加4盎司米粉 加起來就12盎司，就變成1 2 3，就是那個比例是一樣的 是可以的，那我就可以試一下做了，那首先我要做的東西是什麼呢?</p></a>
+				<a href="#00:04:39.36" id="00:04:39.36" class="lt" onclick="jumptoTime(279, this.id)"><p>牛油就是室溫了，它的食譜剛才就是講那幾句的了，是沒有講說怎麼做的，那我就用我自己既有的印象，做草莓的印象來配合這個食譜去做了，室溫了的牛油 你按下去，我的手已經洗乾淨了，這樣就 咦 它一按下去是軟的，那就對了，那我就把牛油放進去，將牛油放入盤內，將牛油打至鬆化，接著可以將糖粉放入去，我試下味先。</p></a>
+				<a href="#00:05:44.21" id="00:05:44.21" class="lt" onclick="jumptoTime(344, this.id)"><p>係喇，呢個係糖粉啦，咁我而家就可以將佢擺落去啦，學糖粉之後呢，第一下就慢速，如果唔係太快就會彈到周圍</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:28.21" id="00:06:28.21" class="lt" onclick="jumptoTime(388, this.id)"><p>記得訂閱我啦，給點耐性，讓它們可以黏在一起，這個步驟很重要，要將糖粉和牛油打至均勻，還要鬆開</p></a>
+				<a href="#00:07:24.81" id="00:07:24.81" class="lt" onclick="jumptoTime(444, this.id)"><p>將蛋黃和牛油混合，將蛋黃和牛油混合，將蛋黃和牛油混合，將蛋黃和牛油混合，慢慢加快速度，打開的時候，我會放在這裡，另外我要處理的就是這裡，我會把粘米粉倒進麵粉裡，然後拌勻，這個就是一個程序，如果你想傳統的雪糕就是這幾種材料的時候，你想加其他材料呢?有什麼材料可以加呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:4.51" id="00:09:4.51" class="lt" onclick="jumptoTime(544, this.id)"><p>其實我們可以加雲呢拿或者檸檬皮，或者加一些乾果和朱古力，在這個時候 如果是檸檬皮和雲呢拿，最好在這個程序的時候就加進去，我都加一點點進去 雖然他們的食譜沒有說要加，我都加一點點進去 調一下味道 讓它香一點，我都怕那些粘米粉可能會有些獨特的味道，如果加一點點雲呢拿 可能會令到它去掉那種味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:16.51" id="00:10:16.51" class="lt" onclick="jumptoTime(616, this.id)"><p>謝謝觀看，打至麵團鬆開就可以了，這個時候我們就不用打蛋器了，其實如果你覺得沒所謂的話，你可以用的，但如果怕打得太多的話，因為我們現在會加麵粉，如果打蛋器打得太多的話，就怕麵團會很結實，所以我們現在就不用打蛋器了，然後就可以把麵粉放進去，這個時候我們就可以把麵粉和牛油和糖粉的混合體，把它們混合在一起。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:30.26" id="00:11:30.26" class="lt" onclick="jumptoTime(690, this.id)"><p>慢慢地把它們混合在一起，不用怕好像太多麵粉，因為我們的比例是正確的，我們可以從底部掃上去，把它們慢慢地混合，它們就會慢慢地黏在一起，我們務求把這個麵團慢慢地把它們成團，到它們像沙狀一樣，很多牛油和麵粉都黏在一起的時候，我們就可以用手把它們變成一團，慢慢地把它們按壓，把它們慢慢地變成一團，然後打開保鮮紙，將它們砌成一團。</p></a>
+				<a href="#00:13:34.45" id="00:13:34.45" class="lt" onclick="jumptoTime(814, this.id)"><p>然後將它們捏成像黏在一起的狀態。</p></a>
+				<a href="#00:13:43.45" id="00:13:43.45" class="lt" onclick="jumptoTime(823, this.id)"><p>然後將它們放在保鮮紙上。</p></a>
+				<a href="#00:13:57.45" id="00:13:57.45" class="lt" onclick="jumptoTime(837, this.id)"><p>因為我待會要把它冷藏，所以我現在先把它放在這裡。</p></a>
+				<a href="#00:14:10.78" id="00:14:10.78" class="lt" onclick="jumptoTime(850, this.id)"><p>我這個不是正宗的做法，只是我自己的方法，如果你想做一個正宗的蘇格蘭燒肉，可以上網找其他影片來看，將肉放在一起後，慢慢壓成一團，然後放入冰箱冷藏，冷藏好才做下一個步驟，我現在用很小的力度，不是很大力地壓成一個很結實的餅，我現在用很小的力度，讓它們黏在一起，讓它們冷藏一下，讓牛油黏在一起，然後再做下一個步驟。</p></a>
+				<a href="#00:15:21.78" id="00:15:21.78" class="lt" onclick="jumptoTime(921, this.id)"><p>已經冷藏好了，但我還不知道它和我之前做的有點不同，是不是因為我加了芥末粉的關係呢?</p></a>
+				<a href="#00:15:31.78" id="00:15:31.78" class="lt" onclick="jumptoTime(931, this.id)"><p>不過不要緊，繼續做，現在我把它們反轉，不成功也不要緊，試過放一支，我想它應該不是放麵粉，然後我這裡有一個墊了Parchment Paper的一個焗盤，然後我可以將這個麵團慢慢的把它做好造型，先黏好它，我不理了，現在我不理那麼多了，我現在先把它黏好，黏好在焗盤上，等它一會兒焗得平整一點，將它黏在一起。</p></a>
+				<a href="#00:17:1.50" id="00:17:1.50" class="lt" onclick="jumptoTime(1021, this.id)"><p>將它整個麵團黏在焗盤上，我這個焗盤大了一點，你可以用一個小一點的來做，我將它們平整地黏在一起，有時食譜並非永遠都可以100%完美，況且我真的用那幾個字來猜食譜是怎樣做，所以就算真的不成功也會預計到，我嘗試一下用自己的想像，可否將文字寫的食譜，只用幾句話就把它變成一個法文出來，然後將它變成一個方形的時候，我們就可以把它做形了。</p></a>
+				<a href="#00:18:34.66" id="00:18:34.66" class="lt" onclick="jumptoTime(1114, this.id)"><p>你可以用刀，或者像我這樣用這個，我可以將它就……，切成小塊，因為現在早些切，一會兒就容易分開，焗好後，一會兒就容易分開，然後就可以用叉子在上面刺孔，這樣就不會凸起來，還有花紋，漂亮一點。</p></a>
+				<a href="#00:20:14.22" id="00:20:14.22" class="lt" onclick="jumptoTime(1214, this.id)"><p>看你喜歡怎樣刺，我刺得很噁心，努力一點，刺好看一點。</p></a>
+				<a href="#00:20:39.51" id="00:20:39.51" class="lt" onclick="jumptoTime(1239, this.id)"><p>好了，很噁心，巧克力餅乾，現在放進焗爐，焗好了，焗了40分鐘，有金黃色邊，可以拿出來，可能我刺的洞太密，有少許裂痕，但不要緊，可以整個拿出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:7.51" id="00:21:7.51" class="lt" onclick="jumptoTime(1267, this.id)"><p>拿出來，趁熱，可以再切開，剛才切開的部分，再切開，我也不知道怎樣拍照，但不要緊，是一個經驗，試了，下次我自己用自己的食譜，最後我都要試味，切開一點給大家看看，都是一個很鬆的餅，我試一下，很甜，甜度和味道都像，但質感就不像，質感像杏仁餅，但味道就像，下次我做的話，我會用全麵粉做，可能會好吃一點，可能我加了米粉，味道會很鬆。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:22:48.98" id="00:22:48.98" class="lt" onclick="jumptoTime(1368, this.id)"><p>我現在覺得像吃杏仁餅，今天我的介紹就這樣，休息了幾個星期，終於回來錄影，第一條影片算是失敗，但不要緊，我下星期再做，跟大家分享。</p></a>
+				<a href="#00:23:12.98" id="00:23:12.98" class="lt" onclick="jumptoTime(1392, this.id)"><p>下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>甜心朱古力雲蛋糕 (Chocolate Cloud Cake)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'iVlwR8HXF70',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>甜心朱古力雲蛋糕 (Chocolate Cloud Cake)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>情人節，今日我想示範一個甜品，一個蛋糕，係for情人節，有情人又好，無情人又好，呢個蛋糕放心，整咗出嚟好好食。</p></a>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>個蛋糕叫咩名呢?個蛋糕就係叫做朱古力一嚿雲蛋糕。咩叫一嚿雲蛋糕呢?咁其實就係一個無麵粉嘅蛋糕嚟嘅。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>不如我哋睇下個材料先啦。</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>咁我材料呢就會有，最主要呢啲係到最後裝飾嘅啫，呢啲生果，你見到有草莓啦，有藍莓啦，或者你可以擺你自己鍾意嘅生果都得嘅。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>主要嘅材料呢就係有朱古力啦，雞蛋，糖，同埋牛油嘅。咁呢一個呢就係橙味嘅酒啦，隨意落嘅，想落就得，唔落都得嘅。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>如果想佢香啲嘅話可以加個橙皮落去啦。</p></a>
+				<a href="#00:01:7.00" id="00:01:7.00" class="lt" onclick="jumptoTime(67, this.id)"><p>咁樣呢，不如我哋而家開始囉，開始點樣做呢一個蛋糕。</p></a>
+				<a href="#00:01:14.00" id="00:01:14.00" class="lt" onclick="jumptoTime(74, this.id)"><p>首先呢，我哋準備個用具先。用具方面呢，我呢度呢就有兩個嘅模嘅，你可以揀圓形嘅模。</p></a>
+				<a href="#00:01:24.00" id="00:01:24.00" class="lt" onclick="jumptoTime(84, this.id)"><p>咁樣呢，我呢個呢就係6吋嘅，或者呢，好似我呢個呢，呢個呢大約7吋到嘅。呢一個呢就係心形嘅模。</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>咁我今日呢就會用心形嘅模嚟做啦。</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>首先呢，我哋呢就剪咗個形出嚟呢，就做個底，黐住佢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:7.00" id="00:02:7.00" class="lt" onclick="jumptoTime(127, this.id)"><p>咁我哋就做咗啦。</p></a>
+				<a href="#00:02:13.50" id="00:02:13.50" class="lt" onclick="jumptoTime(133, this.id)"><p>這樣就可以了，弄好之後，第二樣東西，我們就分雞蛋，首先我要一隻全蛋</p></a>
+				<a href="#00:02:31.50" id="00:02:31.50" class="lt" onclick="jumptoTime(151, this.id)"><p>然後我要兩隻蛋黃，把雞蛋和牛奶混合，把雞蛋和牛奶放入冰箱，用冰箱冷藏一晚，蛋白2隻放開，第二步驟就是需要一個爐，加熱熱水，隔水放另一個盤子，然後就可以用朱古力，切碎，慢慢放入朱古力</p></a>
+				<a href="#00:03:53.76" id="00:03:53.76" class="lt" onclick="jumptoTime(233, this.id)"><p>等它慢慢融化，完成，水滾後可以調小火，朱古力差不多溶化，將牛油放入，拌勻，朱古力和牛油完全混合，朱古力完全溶化，朱古力完全溶化，我這款是Bitter Sweet朱古力，可以用牛奶朱古力或黑朱古力，可以用黑朱古力或牛奶朱古力，可以做到同樣的效果，如果用牛奶朱古力，糖份量會減少，如果用黑朱古力。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:11.01" id="00:05:11.01" class="lt" onclick="jumptoTime(311, this.id)"><p>可以不用再加，或者可以再加，但如果用牛奶朱古力，可以減少糖份量，將朱古力放開，因為朱古力熱熱的，將朱古力放開，第二步驟，打蛋白，可以先打蛋黃，為何我會先打蛋白呢，因為我不想用蛋白，打完蛋白再打蛋黃沒有分別，但打蛋黃要先洗蛋黃才可以打蛋白，所以沒什麼問題，將蛋白放入一個碗，開始慢慢打，不需要打到起泡。</p></a>
+				<a href="#00:06:6.01" id="00:06:6.01" class="lt" onclick="jumptoTime(366, this.id)"><p>打起泡就可以，打到起泡，開始有泡沫，可以加糖，糖不是全部加進去的，我預備三匙在這裡，剩下的就放蛋黃那邊，加一點點蛋黃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:9.23" id="00:07:9.23" class="lt" onclick="jumptoTime(429, this.id)"><p>謝謝觀看，接著可以再攪拌</p></a>
+				<a href="#00:07:42.79" id="00:07:42.79" class="lt" onclick="jumptoTime(462, this.id)"><p>攪拌均勻，這樣就可以了</p></a>
+				<a href="#00:08:19.38" id="00:08:19.38" class="lt" onclick="jumptoTime(499, this.id)"><p>然後放開這個，然後看回這裏，這裏有蛋黃，我們可以將兩隻蛋黃，一隻全蛋加糖</p></a>
+				<a href="#00:08:34.38" id="00:08:34.38" class="lt" onclick="jumptoTime(514, this.id)"><p>打碗糖，現在可以加味了，喜歡的話可以加一點酒，不加也可以，喜歡的話可以加橙皮，可以加一個或加少許，刮的時候只刮橙皮的表面，不要刮橙皮的表面，否則會苦，可以加些鹽或Vanilla，但我今天不加了，因為我加了酒和橙皮，巧克力醬也開始凍了，加熱後就可以慢慢加進去，把蛋黃攪拌均勻</p></a>
+				<a href="#00:11:14.54" id="00:11:14.54" class="lt" onclick="jumptoTime(674, this.id)"><p>把蛋黃攪拌均勻，烤箱已預熱350度，等待完成後就可以入烤箱</p></a>
+				<a href="#00:11:34.25" id="00:11:34.25" class="lt" onclick="jumptoTime(694, this.id)"><p>繼續打蛋，在旁邊刮一刮邊緣，攪拌均勻</p></a>
+				<a href="#00:12:14.11" id="00:12:14.11" class="lt" onclick="jumptoTime(734, this.id)"><p>拌勻後就可以了，把麵糊放入焗爐，謝謝觀看，將蛋糊和巧克力混合，將蛋糊和巧克力混合，然後慢慢將所有材料拌勻</p></a>
+				<a href="#00:13:26.25" id="00:13:26.25" class="lt" onclick="jumptoTime(806, this.id)"><p>然後再攪拌均勻，輕手地由底向上，由底向上撥上來，盡量將它們混合在一起，拌勻後就可以放入焗盤，將焗盤放入焗盤</p></a>
+				<a href="#00:14:30.09" id="00:14:30.09" class="lt" onclick="jumptoTime(870, this.id)"><p>完成了，然後就可以拿去烤了，蛋糕烤好了，蛋糕裂開了怎麼辦?不用怕，因為蛋糕不會直接切開，會等待蛋糕冷卻，然後整個蛋糕會從中間凹下去，我需要的就是這樣，所以不用怕，但如果不想直接吃的話，可以把溫度調低一點就可以了，我烤了25分鐘，現在就可以放涼，等到完全冷卻為止，然後把蛋糕放回烤箱，一會兒回來見。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:29.58" id="00:15:29.58" class="lt" onclick="jumptoTime(929, this.id)"><p>蛋糕已經烤好了，為什麼會裂開?不用怕，我就是要它這樣，Cow cake的意思是，它會像一個撻子一樣凹下去，然後就可以裹滿忌廉和水果，原食譜上網搜尋，chocolate cow cake就只有忌廉和水果，因為情人節，可以做一些草莓蛋糕，或藍莓蛋糕，讓它看起來更美，我們再試試看，先做草莓蛋糕。</p></a>
+				<a href="#00:16:15.58" id="00:16:15.58" class="lt" onclick="jumptoTime(975, this.id)"><p>你可以不把蛋糕全裹滿，或者把芯剪出來，可以先把芯剪開，然後切開一半，然後在這裡剪一個尖尖的，心形的凳凳，收一收它，收一收角位，看到嗎?</p></a>
+				<a href="#00:17:19.31" id="00:17:19.31" class="lt" onclick="jumptoTime(1039, this.id)"><p>對，這樣就可以繼續畫多幾個不同的心形，你看到這個，已經有一個尖在上面，在上面畫兩個弧形，加一個尖端，這樣就可以畫到一個心形，我們可以繼續畫，草莓已經裁好了，一個個心形的草莓，有兩個可以另外再放，然後是藍莓，最後就是打忌廉，這個大小我需要250ml忌廉就足夠了，一杯的忌廉，這個忌廉是剛從雪櫃取出來的。</p></a>
+				<a href="#00:18:46.95" id="00:18:46.95" class="lt" onclick="jumptoTime(1126, this.id)"><p>比較容易打發，我會加少少，大約一湯匙糖，你喜歡可以加多少少，我會加少少香草精，Goth像 일단tantadic</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:17.91" id="00:19:17.91" class="lt" onclick="jumptoTime(1157, this.id)"><p>��，shooters</p></a>
+				<a href="#00:19:16.13" id="00:19:16.13" class="lt" onclick="jumptoTime(1156, this.id)"><p>trav top，segue，larger，Mire Curry，Winter，plugging，Mysterจะ，שות</p></a>
+				<a href="#00:19:23.75" id="00:19:23.75" class="lt" onclick="jumptoTime(1163, this.id)"><p>Copy，洗 fair，sheets，acknowledge</p></a>
+				<a href="#00:19:12.23" id="00:19:12.23" class="lt" onclick="jumptoTime(1152, this.id)"><p>Pearson，viv，chet，build，exc 해�政治，Dante，pirates，zet，nonsense，ities，insanlar，municipality，kızım，jà alguna</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:19.49" id="00:19:19.49" class="lt" onclick="jumptoTime(1159, this.id)"><p>moonlight Missouri業 vimos，然後打起它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:26.59" id="00:19:26.59" class="lt" onclick="jumptoTime(1166, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，開始看到紋路了，但現在仍然很軟，繼續打，紋路越來越實，也沒有剛才那麼軟，這樣就可以了，你可以再打下去，我覺得差不多了，蛋糕做好了，就可以放忌廉，你可以放在擠花袋裡擠花，但我會放士多啤梨，所以不擠也沒問題，就這樣鋪滿裡面的心心，所以這個蛋糕很簡單，男女都可以做。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:31.59" id="00:22:31.59" class="lt" onclick="jumptoTime(1351, this.id)"><p>完全沒問題，當然你可以用擠花袋擠到一個個波波，也沒問題，畫平一點，讓它漂亮一點，畫一個心形，刮刀刮到你心目中的感觉，Whoo哈囉 enc，assembly</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:25.49" id="00:24:25.49" class="lt" onclick="jumptoTime(1465, this.id)"><p>时候，Pere diese，MAL Director</p></a>
+				<a href="#00:24:23.07" id="00:24:23.07" class="lt" onclick="jumptoTime(1463, this.id)"><p>firmly，surgeries</p></a>
+				<a href="#00:24:25.99" id="00:24:25.99" class="lt" onclick="jumptoTime(1465, this.id)"><p>PlayStation，chaft� marvelous，ex，miedo，gener，sinister，focusbior</p></a>
+				<a href="#00:24:25.71" id="00:24:25.71" class="lt" onclick="jumptoTime(1465, this.id)"><p>ysics，negativity</p></a>
+				<a href="#00:24:22.89" id="00:24:22.89" class="lt" onclick="jumptoTime(1462, this.id)"><p>BO，endeavors，加入我們喜歡的材料，可以插入芯芯</p></a>
+				<a href="#00:24:58.47" id="00:24:58.47" class="lt" onclick="jumptoTime(1498, this.id)"><p>把芯芯插入芯芯，把芯芯插入芯芯，插到自己喜歡的位置就可以了，嘩!好多心心呀!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:51.55" id="00:25:51.55" class="lt" onclick="jumptoTime(1551, this.id)"><p>可以再放一些自己喜歡的水果</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:21.55" id="00:26:21.55" class="lt" onclick="jumptoTime(1581, this.id)"><p>可以再放一些自己喜歡的水果，放到你自己覺得滿意為止，我只看到有空位就塞進去，但你也可以放到自己喜歡的，OK，做好了，給你們看看，想再漂亮一點可以灑一點糖粉進去，然後冷藏一下，吃的時候拿出來切開就可以了，我今天介紹的就是這些，希望你們在家試試看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:27:27.99" id="00:27:27.99" class="lt" onclick="jumptoTime(1647, this.id)"><p>祝大家情人節快樂，拜拜!</p></a>
+</div>
+	</body>
+</html>

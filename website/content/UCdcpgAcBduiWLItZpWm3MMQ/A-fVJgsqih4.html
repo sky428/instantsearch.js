@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[簡易派對食譜] 士多啤梨酥皮撻 / 玫瑰蘋果酥 / 腸仔酥皮卷</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'A-fVJgsqih4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[簡易派對食譜] 士多啤梨酥皮撻 / 玫瑰蘋果酥 / 腸仔酥皮卷</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.03" id="00:00:4.03" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello各位朋友，你們好!</p></a>
+				<a href="#00:00:6.03" id="00:00:6.03" class="lt" onclick="jumptoTime(6, this.id)"><p>今天我之前在群組開了投票，想知道大家喜歡煙肉類還是酥皮類小食?</p></a>
+				<a href="#00:00:21.03" id="00:00:21.03" class="lt" onclick="jumptoTime(21, this.id)"><p>最後，酥皮類小食勝出了!</p></a>
+				<a href="#00:00:26.03" id="00:00:26.03" class="lt" onclick="jumptoTime(26, this.id)"><p>所以我今次和大家一起做的就是酥皮類小食!</p></a>
+				<a href="#00:00:32.03" id="00:00:32.03" class="lt" onclick="jumptoTime(32, this.id)"><p>希望大家包容一下，因為我病了，聲音變了!</p></a>
+				<a href="#00:00:40.03" id="00:00:40.03" class="lt" onclick="jumptoTime(40, this.id)"><p>不如我們看看材料吧!</p></a>
+				<a href="#00:00:45.03" id="00:00:45.03" class="lt" onclick="jumptoTime(45, this.id)"><p>最近可能是聖誕節的關係，很難買酥皮，我去了很多超級市場，我本來想買這種，已經pre-roll了一塊的酥皮，因為放在家裡很久，最後我買了一些自己硬剁的酥皮，還有很長時間，等它融化，我打算做三樣食物，首先是曾經在韓國風靡亞洲區，但我沒有做到，想做的是蘋果酥皮，草莓小撻，長脊捲，需要的材料大約就是這些，甜的當然是糖，鹹的我會加一些芥辣醬。</p></a>
+				<a href="#00:02:1.03" id="00:02:1.03" class="lt" onclick="jumptoTime(121, this.id)"><p>如果有些粒粒子的就更好，喜歡的話可以加些香草，我這次會加一些花生，另外有蘋果當然有桃子，今天我們可以開始了，首先我們先處理蘋果，蘋果比較小，現在也不是蘋果的時間了，然後我們就把蘋果收出來，切掉蒂頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:53.82" id="00:02:53.82" class="lt" onclick="jumptoTime(173, this.id)"><p>切掉蒂頭，將蘋果切成薄片</p></a>
+				<a href="#00:03:21.54" id="00:03:21.54" class="lt" onclick="jumptoTime(201, this.id)"><p>дети，meteor，rę，reminis effectiveness，Tree，Sentinel，dic，limited，III，inaudible，whisper，bind，sacrifice，superstar，trouble，�500，ographics，pleasures，그것 Whole。</p></a>
+				<a href="#00:03:25.52" id="00:03:25.52" class="lt" onclick="jumptoTime(205, this.id)"><p>avored，謝謝觀看，切好後，加少許檸檬汁，因為怕它變色</p></a>
+				<a href="#00:03:42.64" id="00:03:42.64" class="lt" onclick="jumptoTime(222, this.id)"><p>切好後，將其放入冰箱冷藏，加入檸檬汁，因為怕它會變色，同時加入糖，糖也是隨意的，因為是蘋果，所以加了檸檬汁，加糖令它容易軟化，將所有材料搓勻，接著我們要一個鑊，鑊好之後將蘋果放入鑊中，加少許水，接著將蘋果煮軟，大概煮一至兩分鐘，蘋果不是要煮熟，是要煮軟一點，待會包的時候會更柔軟，煮開後可以試一塊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:29.16" id="00:05:29.16" class="lt" onclick="jumptoTime(329, this.id)"><p>這樣就完成了，隔水後用紙巾吸水，這樣就可以了，可以放涼，蘋果做完之後就切士多啤梨，這個不是士多啤梨季節，買這些比較溫實的士多啤梨，再加少少糖，令士多啤梨軟化，等待一會，等待出少少水，現在我開始硬化酥皮，加少少麵粉，我這個要自己硬化，如果買到可以pre-roll的就最好，我先做模型。</p></a>
+				<a href="#00:07:14.54" id="00:07:14.54" class="lt" onclick="jumptoTime(434, this.id)"><p>首先做花花形，給士多啤梨撻，你可以用圓形，吸少少麵粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:31.54" id="00:07:31.54" class="lt" onclick="jumptoTime(451, this.id)"><p>然後一cut就cut到，吸出來後在中間做個小花花</p></a>
+				<a href="#00:08:7.54" id="00:08:7.54" class="lt" onclick="jumptoTime(487, this.id)"><p>再做一個小花花，Sinne bin punct是我 obwohl Everyday</p></a>
+				<a href="#00:08:38.90" id="00:08:38.90" class="lt" onclick="jumptoTime(518, this.id)"><p>OLLijk，jobbar，蛋，黨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:35.84" id="00:08:35.84" class="lt" onclick="jumptoTime(515, this.id)"><p>factor，payload，permit，Привет，obedience，ukt，remo ряд</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:38.80" id="00:08:38.80" class="lt" onclick="jumptoTime(518, this.id)"><p>marks，triple</p></a>
+				<a href="#00:08:35.96" id="00:08:35.96" class="lt" onclick="jumptoTime(515, this.id)"><p>moon，achievements，quito，bueno</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:40.30" id="00:08:40.30" class="lt" onclick="jumptoTime(520, this.id)"><p>דть，fellas</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:37.70" id="00:08:37.70" class="lt" onclick="jumptoTime(517, this.id)"><p>ithe，disc afin，racism，ниц，hon迎wie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:29.56" id="00:08:29.56" class="lt" onclick="jumptoTime(509, this.id)"><p>proceed，wszyscy，yardım，الق，� � était</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:39.66" id="00:08:39.66" class="lt" onclick="jumptoTime(519, this.id)"><p>обс，ありがとうござ noun，bolag</p></a>
+				<a href="#00:08:25.32" id="00:08:25.32" class="lt" onclick="jumptoTime(505, this.id)"><p>source，1980，répond，saute</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:41.06" id="00:08:41.06" class="lt" onclick="jumptoTime(521, this.id)"><p>reluctant，Binπ，� compan vibrations，jsem，너，annt，found</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:41.46" id="00:08:41.46" class="lt" onclick="jumptoTime(521, this.id)"><p>roller，MM，uncheck</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:29.84" id="00:08:29.84" class="lt" onclick="jumptoTime(509, this.id)"><p>この，여러분들</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.76" id="00:08:27.76" class="lt" onclick="jumptoTime(507, this.id)"><p>� nerd emoc，shoots</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:35.98" id="00:08:35.98" class="lt" onclick="jumptoTime(515, this.id)"><p>uft，eligvidemment，dug，harassment，interestingly</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:38.34" id="00:08:38.34" class="lt" onclick="jumptoTime(518, this.id)"><p>referred Polski，��</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:36.90" id="00:08:36.90" class="lt" onclick="jumptoTime(516, this.id)"><p>海 spaces，heid</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:30.34" id="00:08:30.34" class="lt" onclick="jumptoTime(510, this.id)"><p>preferred，�nier，thick，Temperrato</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:37.70" id="00:08:37.70" class="lt" onclick="jumptoTime(517, this.id)"><p>partis，toxicity，待會焗的時候， 把麵團撲起來，然後在麵團邊緣的側邊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:32.88" id="00:08:32.88" class="lt" onclick="jumptoTime(512, this.id)"><p>我要黏這個麵團， 是不是?，我把水掃進去，然後把麵團邊緣黏上去，吸好後放入冰箱冷藏，因為溫度差距越大，層次就越多，第二塊，蘋果花，切成長條，遷就蘋果的厚度，再切成一條，大約一吋，把蘋果條拿出來，輕輕地將蘋果條壓開，將之前的蘋果放上去，這樣蘋果的花味會更密，再將它們薄長一點就可以做得更美觀，如果只做一條也可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:32.83" id="00:10:32.83" class="lt" onclick="jumptoTime(632, this.id)"><p>可以薄長一點，等到捲出來捲得更大，在這個時間，有些食譜會放果醬在中間，如果不想吃太甜，因為蘋果也有調味甜，一會兒也會放糖，不想吃太甜的可以不放糖，在這個時間我會灑一點糖，如果不喜歡香草味可以不加，但我個人喜歡肉桂味道，所以我會加多一點，然後把下面的布包著上面的布，然後由一邊捲到另一邊。</p></a>
+				<a href="#00:12:26.75" id="00:12:26.75" class="lt" onclick="jumptoTime(746, this.id)"><p>捲出來的樣子，像蘋果花一樣，最後捏一下，捲不太緊，因為會漲起，然後放進麵糊盤內，限制麵糊不會過大，這是不粘的，不怕麵糊黏住，最後一個都完成了，一共做了四個，先放進冰箱冷藏，烤箱預熱至190度，攝氏390度，這是之前做的塔，最後是草莓，草莓放糖後，要先把水倒掉，再放少許的罌粟粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:49.75" id="00:13:49.75" class="lt" onclick="jumptoTime(829, this.id)"><p>攪拌均勻，防止再出水，已經出水一轉，再加多2茶匙罌粟粉，待烤箱時，水分就不會太多，然後放進麵糊盤內，差不多了</p></a>
+				<a href="#00:14:23.75" id="00:14:23.75" class="lt" onclick="jumptoTime(863, this.id)"><p>再放少許的罌粟粉，在邊緣放上蛋漿</p></a>
+				<a href="#00:14:50.24" id="00:14:50.24" class="lt" onclick="jumptoTime(890, this.id)"><p>ok，到最後，又是要加糖，在旁邊加糖，如果不想的話可以不加，但甜品要加糖才會甜，酥皮本身有少許牛油味和鹽味，但不算有甜味，因為它是用來做鹹和甜的酥皮，最後才用來做season，用大焗爐一邊焗蘋果一邊焗酥皮，最後就做香腸卷，用煙燻味的香腸或大條的切開，切開一半，然後放少許芥辣醬，然後放上芝士醬，再捲起。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:47.76" id="00:16:47.76" class="lt" onclick="jumptoTime(1007, this.id)"><p>最底部貼在底部，這樣就可以了，再捲起麵條，香腸，不過你會浪費時間</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:30.55" id="00:17:30.55" class="lt" onclick="jumptoTime(1050, this.id)"><p>這個在Halloween應該會比較開心，包好後，在表面掃上雞蛋漿，可以加些香料調味，你可以加百里香、迷迭香或香草，可以加些黑胡椒，可以加些鹽，冷藏一會再放入烤箱，這個草莓撻已經烤了30分鐘，這個小的已經烤了25分鐘，另外這個蘋果花花的要再烤35分鐘，這個花花的已經烤好了，底部很脆。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:46.12" id="00:19:46.12" class="lt" onclick="jumptoTime(1186, this.id)"><p>很熱，焗好了，焗完之後，再焗香腸，香腸也是焗25-30分鐘，要看皮的反應，到最後一個步驟，就是遮醜的步驟，想更漂亮，就可以在上面，灑上糖霜，就可以遮掉，不太漂亮的位置，所以做大士多啤梨的時候，其實可以再放多點士多啤梨，可以再高一點，這個也是，灑上少許，太好了，太陽差不多下山，就做好了，最後這個香腸卷。</p></a>
+				<a href="#00:20:56.12" id="00:20:56.12" class="lt" onclick="jumptoTime(1256, this.id)"><p>焗了25分鐘，你看，這種翹著，就包得最漂亮，反而這種，有些會散散的，你們不要學我，要包的時候，要包到底部緊一點，這樣就會漂亮，今天做了三樣東西，只用了一種酥皮，我先試吃鹹的，因為甜的我怕咳嗽，看起來也很美，我試給你們看，Scholars</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:3.99" id="00:22:3.99" class="lt" onclick="jumptoTime(1323, this.id)"><p>айн，kim，reverb，aussi，Pak，formation</p></a>
+				<a href="#00:22:5.01" id="00:22:5.01" class="lt" onclick="jumptoTime(1325, this.id)"><p>ہ，bamboo，今天和大家做了三樣東西，草莓撻，蘋果酥皮花，酥皮香腸卷，希望大家喜歡，在聖誕節期間和家人分享喜歡的食物，我們下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

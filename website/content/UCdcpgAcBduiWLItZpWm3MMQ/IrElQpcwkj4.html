@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>香草曲奇棒棒 (Vanilla Cookie Pops)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'IrElQpcwkj4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>香草曲奇棒棒 (Vanilla Cookie Pops)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello，今日同大家一齊做呢一個Vanilla Cookie Pops，Vanilla Cookie棒棒，希望大家鍾意試下做，咁我哋不如而家睇下點做囉。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>好，我哋介紹下啲材料先。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>整曲奇材料如果係好basic嘅曲奇材料其實好簡單。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>你見到枱面有四樣嘢，但其實呢度有六樣嘢嘅。</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>我介紹下啲材料先。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>無鹽牛油，室溫左200g。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>砂糖200g。</p></a>
+				<a href="#00:00:42.00" id="00:00:42.00" class="lt" onclick="jumptoTime(42, this.id)"><p>一隻雞蛋，一茶匙Vanilla精油。</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>呢度係350g嘅麵粉，加半茶匙嘅鹽。</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>材料就係咁多啦。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>咁你見到，有部嘢喺度喎。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>如果你屋企有嘅，咁你就唔使開個盤慢慢打囉。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>因為呢個食譜就全部嘢擺哂落去一個大嘅盤裏面，打佢咁就得㗎啦。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>需要呢，如果你係用呢一隻打發器，一座枱式打發器，做呢個曲奇就係需要用呢一個工具啦。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>呢個工具就係俾牛油同糖做creaming用嘅。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>咁我插返上去先。</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>首先將牛油擺落去先。</p></a>
+				<a href="#00:01:55.19" id="00:01:55.19" class="lt" onclick="jumptoTime(115, this.id)"><p>糖，我們可以開啟它，慢慢等它們融合一起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:32.75" id="00:02:32.75" class="lt" onclick="jumptoTime(152, this.id)"><p>加一點點鹽，加一點點糖，加一點點水，加一點點鹽，加一點點糖，加一點點水，完成，現在就來刮一下盤子，繼續打，打到差不多，就可以把雞蛋放進去</p></a>
+				<a href="#00:04:8.41" id="00:04:8.41" class="lt" onclick="jumptoTime(248, this.id)"><p>字幕by索兰娅。，把牛油、雞蛋和糖混合，攪拌均勻後，就可以把麵粉倒入鍋中，你可以先把麵粉篩進去，或者把麵粉篩進去後，再慢慢倒入鍋中，把麵粉篩進鍋中，現在不要打得太大 否則麵糰會一片片地出現粉末，慢慢攪拌，慢慢攪拌至成為麵團就可以了，這個食譜不會有Baking Powder或Baking Soda，因為待會做好麵團後。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:48.28" id="00:05:48.28" class="lt" onclick="jumptoTime(348, this.id)"><p>我們會把模印出來，我們就是想它保持住，不要焗完之後會升起、發脹、散開，所以這個食譜就不會有這類的麵團，由細粉粒開始慢慢粒狀大，開始黏在一起</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:38.07" id="00:06:38.07" class="lt" onclick="jumptoTime(398, this.id)"><p>我會用手機慢慢搓揉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:42.07" id="00:06:42.07" class="lt" onclick="jumptoTime(402, this.id)"><p>它差不多黏成一團的時候，我就不再用手機搓揉，我會拿出來自己慢慢搓揉，我會用一張矽膠墊，然後就可以用你喜歡的，你可以用滑爐紙或保鮮紙去做這個動作，我先把它分開，將它刮出來，我攪到它有點大粒，開始拿它出來，因為我再攪，怕它起筋，不想它這樣，所以要把它拿出來，之後就把它捏緊，現在已經很鬆軟的一個麵團。</p></a>
+				<a href="#00:08:52.72" id="00:08:52.72" class="lt" onclick="jumptoTime(532, this.id)"><p>其他麵團我會盡量把它們黏在一起，如果你覺得我這個份量太多，你可以隨時將份量減半，不過我盡量盡到容易些量，容易些用材料，因為它這個這樣，我就就一隻蛋，我才將份量變成這樣，如果你想，我覺得你可以再少些，你就要秤半隻蛋，這個是麻煩的地方，所以我多數一用就用到比較容易些，不用我特意再秤一些時間，整個麵團已經好地地在這裏。</p></a>
+				<a href="#00:09:53.88" id="00:09:53.88" class="lt" onclick="jumptoTime(593, this.id)"><p>然後我做甚麼呢?</p></a>
+				<a href="#00:09:56.88" id="00:09:56.88" class="lt" onclick="jumptoTime(596, this.id)"><p>然後我就用硬點去壓，那要硬到幾薄呢?就視乎你要做的麵糊是幾薄，就是看你想要的曲奇是幾薄，來回做三下，之後我就轉向外，再再次壓，因為我現在這個覺得太大塊，我就要分開去兩半，然後我再就方便再擀，然後就秤它兩下，來回兩三下，之後就轉另一個方向，再去壓到適合的程度，我想要什麼的適合程度呢?</p></a>
+				<a href="#00:11:17.38" id="00:11:17.38" class="lt" onclick="jumptoTime(677, this.id)"><p>你可以選擇，你可以找什麼呢?</p></a>
+				<a href="#00:11:19.38" id="00:11:19.38" class="lt" onclick="jumptoTime(679, this.id)"><p>好像這樣，我這裡可以用一些粗的，這個是榨物的筷子，它是粗一點，有多粗就是出來的曲奇有多厚，沒有這些，這個太粗，可以用筷子，曲奇出來就會是筷子這麼厚，然後就把它架在，它的外面，這個輪子的外面，這樣硬到剛剛好筷子的位置，它就不會再下，它出來的度數，厚薄就變成和筷子的厚薄一樣，這樣就好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:22.22" id="00:12:22.22" class="lt" onclick="jumptoTime(742, this.id)"><p>suggested agreed girls au Glo，цип，ıs，Parce，reference，funktion，thood，CN，kadar，Platz，adura，� Prepare，franc，To，Penny，cyst，timing，Crime，PC，flew，Forsch，Allen。</p></a>
+				<a href="#00:12:32.34" id="00:12:32.34" class="lt" onclick="jumptoTime(752, this.id)"><p>router，accumulate，visited，numbists，Does pequeño，양 bark，ис tried，cockpit，angels，謝謝觀看，放入雪櫃，雪了一會兒，然後就可以印了，你可以選擇不同的公仔，或者看家裡有什麼，我家裡有這些，我拿了一個大家差不多的大小，一個花花形一個圓形。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:10.55" id="00:13:10.55" class="lt" onclick="jumptoTime(790, this.id)"><p>蓋上蓋子，蓋上蓋子前如果皮太軟的話，就可以用印子拍一下粉，然後蓋上蓋子，但我這個已經雪到硬了，其實應該不用的，我試一次給你們看，蓋上蓋子，整個都可以，推一推，推出來了，如果側面有些不太好看的，可以收一收，然後我們就可以用一支竹籤，你可以用紫、長、白色的都可以，我今天就用竹籤，這樣就可以在花花的位置。</p></a>
+				<a href="#00:14:20.55" id="00:14:20.55" class="lt" onclick="jumptoTime(860, this.id)"><p>在這兩處的中間就刺下去，最好就是鋪在焗盤的上面，放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:35.55" id="00:14:35.55" class="lt" onclick="jumptoTime(875, this.id)"><p>先拿開焗盤，給你們看，然後慢慢的把它刺下去，用手指感受一下，感受到它，插到哪個位置，然後，對了，這樣來看看 我覺得這邊厚一點，好像這邊薄一點的話，我就將厚一點，薄一點這邊 如果怕，恐防它 還有一點，怕它一會兒烤完之後爛，我可以搓一點點，麵團 一點點，再在這些位置補一補，確保它不要，一會兒烤完之後爛。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:27.56" id="00:15:27.56" class="lt" onclick="jumptoTime(927, this.id)"><p>這個做底，這個做面，這樣一個，繼續做，剩下的，你都可以搓回去，繼續吸，看有多厚，竹籤已經插入曲奇，已經變成曲奇泡，現在放入雪櫃冷藏，雪涼後就可以焗了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:26.31" id="00:16:26.31" class="lt" onclick="jumptoTime(986, this.id)"><p>toilets，sympathy，sini，Breathe，ural，Bo，DAR，niego，BCE，完了，procса，Stre SP，Ihrer，situated，rying，processor，ammunition，cho curated，especie，gamer，primary，Tensor。</p></a>
+				<a href="#00:16:41.67" id="00:16:41.67" class="lt" onclick="jumptoTime(1001, this.id)"><p>MSuct23，ipedia，Rah，(?)，niche，herbal laps，narrow，CAN dignea，步arina，canned，Disability，晚安，我用了15分鐘來烤這個曲奇波，你看到它現在還是軟軟的，因為它剛剛出來，還是要有一點點軟的，怎樣才算熟呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:59.32" id="00:16:59.32" class="lt" onclick="jumptoTime(1019, this.id)"><p>你在鏡頭看就不會這樣覺得，我在旁邊看，底部的旁邊，你會看到微微有一點點黃色，其實就已經是熟的了，現在這個時間，我們要放在盤子上，放置10分鐘，然後等到它的形狀開始定，然後我們就把它放到曲奇的烤箱，讓它放涼，好了，曲奇已經烤好了，已經放涼了，讓我拿近一點給你們看，這樣，底部是金黃色的，可以拿起來的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:2.52" id="00:18:2.52" class="lt" onclick="jumptoTime(1082, this.id)"><p>triangular designation，zing edited verbal，Под aún，roz，放涼後可以直接吃，你可以加糖霜，我之前的影片教過你們，可以加糖霜做一個花紋，或者可以加糖皮，即是那些Fondant，加進去然後再做圖形也可以，我今天最簡單，什麼都不加，因為我覺得這樣是最好吃的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:28.53" id="00:18:28.53" class="lt" onclick="jumptoTime(1108, this.id)"><p>加了那些東西只會更甜，還有只是漂亮，沒有其他東西，我現在說說怎樣裝飾，怎樣拿出來送給別人或是在家裡，我剛才也想了一段時間，如果有發泡膠的話，可以插著一支支，或者可以像我這樣，如果有小花瓶也好，如果沒有就像我這樣，用小杯子也可以，你看看家裡有沒有，別人送禮物送剩了，這些罩子可以塞進杯子裡，如果有彩沙或者石。</p></a>
+				<a href="#00:19:16.53" id="00:19:16.53" class="lt" onclick="jumptoTime(1156, this.id)"><p>甚至乎那些粒粒糖，也可以塞進去，然後就可以把曲奇插上去，就在這個位置插上去，這樣就可以固定了，看不看得到?</p></a>
+				<a href="#00:19:52.59" id="00:19:52.59" class="lt" onclick="jumptoTime(1192, this.id)"><p>是不是很簡單呢?</p></a>
+				<a href="#00:19:54.59" id="00:19:54.59" class="lt" onclick="jumptoTime(1194, this.id)"><p>如果你想再多一點，就多放一些字體上去，你看看，甚至乎你可以再放一些其他東西，不同的盤子，不同的東西都可以，我可以加一些小擺設在杯子上，看上去就好像好看一點，我打平給你們看，這樣就可以立體一點，我今天就介紹到這裡，希望你們喜歡，下個星期就和大家再做其他東西。</p></a>
+				<a href="#00:20:33.59" id="00:20:33.59" class="lt" onclick="jumptoTime(1233, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

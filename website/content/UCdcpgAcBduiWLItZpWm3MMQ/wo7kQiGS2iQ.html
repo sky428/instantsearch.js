@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次做魔法蛋糕 - My First Magic Cake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wo7kQiGS2iQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>第一次做魔法蛋糕 - My First Magic Cake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.25" id="00:00:4.25" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello，各位朋友，你們好!</p></a>
+				<a href="#00:00:7.25" id="00:00:7.25" class="lt" onclick="jumptoTime(7, this.id)"><p>新的一年，2019年，這條片是第一條片，我在這裡祝大家新年進步，身體健康，今年可以穩多點，健康點，開心點，吃好點，今天因為是第一條片，加上是我們婦女人妻媒體第一百集，所以我打算做一個蛋糕，這個是什麼呢?英文是Magic Cake，魔法蛋糕，或者是魔術蛋糕，那是什麼呢?先做了，大家一起看著，我們一起做了。</p></a>
+				<a href="#00:00:42.25" id="00:00:42.25" class="lt" onclick="jumptoTime(42, this.id)"><p>做完之後就知道是什麼了，那我們開始吧!材料是一眼看完的，我移一點材料給你們看，幾種材料，就是雞蛋，這裡有三隻雞蛋，90克砂糖，90克低筋麵粉，375ml牛奶，這裡就是90克牛油，但已經溶了，少許鹽，還有少許Vanilla，就是這麼簡單，那我們現在開始吧!</p></a>
+				<a href="#00:01:23.25" id="00:01:23.25" class="lt" onclick="jumptoTime(83, this.id)"><p>首先把麵粉過篩，這個是低筋麵粉，接下來把雞蛋分開蛋黃和蛋白</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:1.25" id="00:02:1.25" class="lt" onclick="jumptoTime(121, this.id)"><p>把蛋黃和蛋白混合，這裡有90克糖，我大約放了它，放剩的，例如少許留待打蛋白，這裡我可以將蛋黃和砂糖慢慢攪拌均勻，現在是鮮黃色，慢慢攪拌至淡色，你開始看到它沒有剛才的感覺那麼鮮黃色了，我們再攪拌一下，盡量感覺上糖好像很沙沙，因為是一粒粒的感覺，令它好像沒有那麼沙沙的感覺，看不到就行了。</p></a>
+				<a href="#00:03:6.76" id="00:03:6.76" class="lt" onclick="jumptoTime(186, this.id)"><p>nar 1914，assists，verted，расп，Queen，bbie，therap，nickname，Bret thrust，fais support，Det bacter Glass，permis，וש，Heather，�，Heil�MK，was，het，gén，rolling，aru。</p></a>
+				<a href="#00:03:17.18" id="00:03:17.18" class="lt" onclick="jumptoTime(197, this.id)"><p>unacceptable，uft，amp，passado，eggs，맛있어요，bargaining，hand，Kurt，Custom Bailey，現在是越來越淺色，然後就可以把90克熔好的牛油倒進去，攪拌至均勻</p></a>
+				<a href="#00:04:6.75" id="00:04:6.75" class="lt" onclick="jumptoTime(246, this.id)"><p>攪拌至均勻，現在先預熱焗爐，就是150度攝氏或者300度華氏，現在預熱了，然後這裡我們就混合了，接下來我們就可以放麵粉進去，我也是分兩次</p></a>
+				<a href="#00:04:39.72" id="00:04:39.72" class="lt" onclick="jumptoTime(279, this.id)"><p>打得很厚，這次做的魔法蛋糕，顧名思義是一個魔法蛋糕，說是有三種口感的，第一層是棉花蛋糕，中間是Custard，底層是Fudge，我第一次做這個蛋糕，不知道做得怎樣，不過試試吧，攪拌均勻後就可以加牛奶，牛奶375ml，分次加入，這個食譜需要很多牛奶，因為最後才可以將它們分開，令牛奶多很多水份。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:18.03" id="00:06:18.03" class="lt" onclick="jumptoTime(378, this.id)"><p>所以中間有一層像Custard燉蛋的夾層。</p></a>
+				<a href="#00:06:25.03" id="00:06:25.03" class="lt" onclick="jumptoTime(385, this.id)"><p>我們先慢慢攪拌，因為剛才的麵糊很稠，現在加了牛奶，它稀了，很容易會看到一粒粒。</p></a>
+				<a href="#00:06:37.03" id="00:06:37.03" class="lt" onclick="jumptoTime(397, this.id)"><p>我們要盡量攪拌到它不覺得有一粒粒，很滑很順的感覺。</p></a>
+				<a href="#00:06:55.93" id="00:06:55.93" class="lt" onclick="jumptoTime(415, this.id)"><p>可以加一些調味料，你可以加自己喜歡的調味料，我加了香草精，如果喜歡的話可以加檸檬味的香油，玫瑰味，橙味都可以，慢慢地加進去，越久就越稀，這樣就對了，但我們繼續攪拌，因為麵糊還未均勻，要慢慢攪拌至均勻，剛才忘記了要加鹽，現在也加進去，好，完成了，你看看，很流質性，現在打蛋白，打至有泡泡時，加入剩下的砂糖。</p></a>
+				<a href="#00:08:39.95" id="00:08:39.95" class="lt" onclick="jumptoTime(519, this.id)"><p>打至有泡泡時，加入剩下的砂糖，打到蛋白不掉出來就可以了，然後再攪拌均勻，然後就可以把蛋白倒進去，蛋白會浮在表面，不用怕，慢慢攪拌均勻，攪拌到蛋白的大小不見就可以了，攪拌到完全不見就可以了，現在已經很OK了，接下來就是倒入焗盤，我這個是20cm的焗盤，其實可以用一個小一點的18cm的焗盤，現在就倒進去。</p></a>
+				<a href="#00:10:41.47" id="00:10:41.47" class="lt" onclick="jumptoTime(641, this.id)"><p>現在可以放進焗爐焗50分鐘至1小時，焗好了，這家的蛋糕我用了45分鐘來焗，因為我看到它裝上去的時候已經有少少裂痕，已經很熟了，我怕我焗得太熱太熟，因為我用小焗爐來焗的，不是用大焗爐，我怕下面的焗熟了，就變了沒有三層的樣子，所以我很害怕，始終是我第一次做，現在我要放涼，放涼後放進冰箱冷藏2小時。</p></a>
+				<a href="#00:11:24.47" id="00:11:24.47" class="lt" onclick="jumptoTime(684, this.id)"><p>這樣就可以吃了，蛋糕已經冷藏了2小時，現在就把它拿出來，現在就把它攤開，因為我用20cm的盤，這樣就變扁了，你看旁邊是薄了，如果我用18cm或再小一點，它的層次應該會再好一點，然後就切好邊，看看它出來是怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:20.47" id="00:12:20.47" class="lt" onclick="jumptoTime(740, this.id)"><p>看不看得到，三層的，一層兩層中間，三層這個比較實，給你們看一個比較</p></a>
+				<a href="#00:12:56.60" id="00:12:56.60" class="lt" onclick="jumptoTime(776, this.id)"><p>好!，很成功!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:2.60" id="00:13:2.60" class="lt" onclick="jumptoTime(782, this.id)"><p>真的有三層出來!</p></a>
+				<a href="#00:13:16.55" id="00:13:16.55" class="lt" onclick="jumptoTime(796, this.id)"><p>люблю香 Flag</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:28.55" id="00:13:28.55" class="lt" onclick="jumptoTime(808, this.id)"><p>corn，NOT visualization</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:27.67" id="00:13:27.67" class="lt" onclick="jumptoTime(807, this.id)"><p>orter，backs，alarm，Tisch，pouvait</p></a>
+				<a href="#00:13:26.73" id="00:13:26.73" class="lt" onclick="jumptoTime(806, this.id)"><p>높，Seriously，DIS，banned</p></a>
+				<a href="#00:13:27.97" id="00:13:27.97" class="lt" onclick="jumptoTime(807, this.id)"><p>Through，其实，ett，Colн</p></a>
+				<a href="#00:13:27.29" id="00:13:27.29" class="lt" onclick="jumptoTime(807, this.id)"><p>conf acordo，precautions，Ting，Bob</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:27.03" id="00:13:27.03" class="lt" onclick="jumptoTime(807, this.id)"><p>downloads，DVD</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:28.21" id="00:13:28.21" class="lt" onclick="jumptoTime(808, this.id)"><p>기대，enger，…?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:18.17" id="00:13:18.17" class="lt" onclick="jumptoTime(798, this.id)"><p>ammonוד，statt，eln occas Mod gelen pione DLC methy distribute</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:27.33" id="00:13:27.33" class="lt" onclick="jumptoTime(807, this.id)"><p>seb difficulty，Vatic，的，Coke，RN，комна regarde</p></a>
+				<a href="#00:13:27.73" id="00:13:27.73" class="lt" onclick="jumptoTime(807, this.id)"><p>Shiny，Cruz，imate，building，ْ alles，슬，somm Matthew</p></a>
+				<a href="#00:13:20.59" id="00:13:20.59" class="lt" onclick="jumptoTime(800, this.id)"><p>Pom，nae，merak</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:25.81" id="00:13:25.81" class="lt" onclick="jumptoTime(805, this.id)"><p>Dogs，researchers</p></a>
+				<a href="#00:13:23.77" id="00:13:23.77" class="lt" onclick="jumptoTime(803, this.id)"><p>began decentralized，vu，Cra</p></a>
+				<a href="#00:13:23.81" id="00:13:23.81" class="lt" onclick="jumptoTime(803, this.id)"><p>simplicity，무엇，ус except찰，先一步，再切三分之一</p></a>
+				<a href="#00:13:52.03" id="00:13:52.03" class="lt" onclick="jumptoTime(832, this.id)"><p>字幕by索兰娅✿，再給大家看看，漂亮嗎?</p></a>
+				<a href="#00:14:23.42" id="00:14:23.42" class="lt" onclick="jumptoTime(863, this.id)"><p>最底層的氣泡沒有那麼明顯，但兩層就一定很明顯，再給大家看看，最底層的氣泡沒有那麼明顯，再給大家看看，最底層的氣泡沒有那麼明顯，再給大家看看，最底層的氣泡沒有那麼明顯，再給大家看看，這裡看得清楚一點，三件，吃之前可以，加少許糖霜，好了，我試味了，我先把麵包包放斜一點給大家看，試一下。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:54.46" id="00:15:54.46" class="lt" onclick="jumptoTime(954, this.id)"><p>好味道，好香蛋味，上面這裏就好像蛋糕，尤其是日式芝士蛋糕的質地，中間這裏就有點像上星期的custard，最底部就有點像pancake，厚厚的那種pancake的質地，好特別，新的一年有一個新開始，做了一個magic cake，希望接下來會再做多些，好味道的食譜和大家一起做和分享，這個食譜第一次做。</p></a>
+				<a href="#00:16:53.46" id="00:16:53.46" class="lt" onclick="jumptoTime(1013, this.id)"><p>對我來說已經很滿意，希望你們也喜歡，下次再見bye bye。</p></a>
+</div>
+	</body>
+</html>

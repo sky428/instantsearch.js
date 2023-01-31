@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黑糖薑餅人 (Gingerbread man)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'j18uRz_5BJ0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>黑糖薑餅人 (Gingerbread man)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，Italy，어요，Kund，Autob，zhou，ваш，стороны，ais，Energ，additions，Saudi，pouch，Yok Sai，famili omega，Jac SF，ja Ign，inches，Пока，ky embodied，noite。</p></a>
+				<a href="#00:00:7.12" id="00:00:7.12" class="lt" onclick="jumptoTime(7, this.id)"><p>끼，wears，Nazis，aired，apologise，nodigday，Character，та，น91 revision，reins，謝謝觀看，好，齊了，Hello，各位你們好，今天是12月的第一個星期日，一年之後的一年四個星期日，我們都會有一個主題，就是聖誕節這個主題，因為這個月已經是聖誕節的這個節期。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.93" id="00:00:45.93" class="lt" onclick="jumptoTime(45, this.id)"><p>就算你去購物中心都已經掛滿了聖誕節的圖案，所以我就希望可以做一個專輯，就是這四個星期都是關於聖誕節，或者是聖誕的小食，今天第一集，我們介紹就是做聖誕節經常會見到的薑餅人，我們不如現在開始吧，這裡集齊了這麼多東西，不如我一一介紹我們的材料，材料就是有牛油、黑糖，你可以用白砂糖或者黃糖，我今天選用黑糖。</p></a>
+				<a href="#00:01:33.93" id="00:01:33.93" class="lt" onclick="jumptoTime(93, this.id)"><p>有蜜糖、牛奶，低筋麵粉、梳打粉、薑粉、豆蔻粉、肉桂粉、鹽，今天的材料就是這麼多，當然還有曲奇模，我這裡有的，先把薑餅人拿出來，薑餅人在這裡，我們等一下就可以做了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:13.93" id="00:02:13.93" class="lt" onclick="jumptoTime(133, this.id)"><p>OK，我們開始吧，首先第一個步驟就是牛油，牛油要室溫放軟，我放軟了 但這麼大塊，放軟就很久了，所以我把它切小塊，這樣比較容易放軟，先拿走其他材料，牛油我們要不是很多，要35克的牛油，ไรanton majority，ry，minded，星</p></a>
+				<a href="#00:03:12.21" id="00:03:12.21" class="lt" onclick="jumptoTime(192, this.id)"><p>Optim convinced，Six bord RYAN，ritt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:10.65" id="00:03:10.65" class="lt" onclick="jumptoTime(190, this.id)"><p>Bash，Only，guy，Gente，Multıld</p></a>
+				<a href="#00:03:14.91" id="00:03:14.91" class="lt" onclick="jumptoTime(194, this.id)"><p>Undert ml，guiding</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:0.97" id="00:03:0.97" class="lt" onclick="jumptoTime(180, this.id)"><p>� Fac dit，夢，Оп</p></a>
+				<a href="#00:03:8.85" id="00:03:8.85" class="lt" onclick="jumptoTime(188, this.id)"><p>Mrs，ल，supportive，impairment，tutte</p></a>
+				<a href="#00:03:9.75" id="00:03:9.75" class="lt" onclick="jumptoTime(189, this.id)"><p>We Absol trivial，également，Anne，해주，ingen，到了，Lyn，군</p></a>
+				<a href="#00:03:8.81" id="00:03:8.81" class="lt" onclick="jumptoTime(188, this.id)"><p>American，OO，productive，goldcomings</p></a>
+				<a href="#00:03:8.35" id="00:03:8.35" class="lt" onclick="jumptoTime(188, this.id)"><p>indicating，prawassen，тому gam udah，Use duh，在這個時間，我開始量其他材料，黑糖90克，我可以放在上面，第二樣要量的東西就是牛奶和蜜糖，首先牛奶要30克，然後就是蜜糖，蜜糖要35克</p></a>
+				<a href="#00:04:27.91" id="00:04:27.91" class="lt" onclick="jumptoTime(267, this.id)"><p>然後就是蜜糖，蜜糖要35克，接著是量乾粉類，低筋麵粉250克，把麵粉和麵粉混合，然後過篩，接著加入梳打粉，1 1⁄4茶匙，1 1⁄4茶匙梳打粉，1 1⁄2茶匙薑粉，然後是玉桂粉，大約1茶匙，豆蔻粉，如果不喜歡豆蔻粉的味道可以不加，如果想的話可以加1分之1或1分之2，鹽，少許就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:49.76" id="00:06:49.76" class="lt" onclick="jumptoTime(409, this.id)"><p>材料已經準備好，可以開始了，把糖和黃糖放入攪拌器，慢慢把糖和黃糖攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:41.76" id="00:07:41.76" class="lt" onclick="jumptoTime(461, this.id)"><p>攪拌均勻，打至牛油和糖混合後，將蜜糖和牛奶都加入</p></a>
+				<a href="#00:08:10.77" id="00:08:10.77" class="lt" onclick="jumptoTime(490, this.id)"><p>將蛋液打入鍋中，將蛋液打入鍋中，將蛋液打入鍋中，將蛋液打入鍋中，將麵粉和麵粉混合後，就可以慢慢加入麵粉和麵粉，可以逐一加入麵粉和麵粉，讓麵粉和麵粉融合，VE</p></a>
+				<a href="#00:09:44.78" id="00:09:44.78" class="lt" onclick="jumptoTime(584, this.id)"><p>publicly，cents，teriómo，governo，$，administr，Benedict，bst，Suzanne，worden，tong�이，當，behav，lines，등</p></a>
+				<a href="#00:09:37.86" id="00:09:37.86" class="lt" onclick="jumptoTime(577, this.id)"><p>د，Jackie，treat，Set</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:46.58" id="00:09:46.58" class="lt" onclick="jumptoTime(586, this.id)"><p>這些，sava，captumed，ل，às，��，Prix</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:39.92" id="00:09:39.92" class="lt" onclick="jumptoTime(579, this.id)"><p>plast� alphabet，얘</p></a>
+				<a href="#00:09:32.32" id="00:09:32.32" class="lt" onclick="jumptoTime(572, this.id)"><p>Ed problems，kle，ani，flap，Osman，Mike，тоб entender，grading，Esto</p></a>
+				<a href="#00:09:48.40" id="00:09:48.40" class="lt" onclick="jumptoTime(588, this.id)"><p>�enary，cit，也請記得分享出去並按一個讚哦 並且記得訂閱我們的頻道 才能收到最新消息喔，將所有材料拌勻，攪拌至見不到發乾粉為止，攪拌至粉粒都沒有了，將麵團整合成一團，將麵團包起來，用保鮮膜包起來，放入冰箱冷藏約1小時，麵團已經冷藏了約1小時，麵團比較硬，將麵團壓平，壓平至大約半厘米厚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:13.15" id="00:12:13.15" class="lt" onclick="jumptoTime(733, this.id)"><p>慢慢地搓揉，不用怕，我這個份量其實不是很多，因為我減少了份量，如果想做多一點，就把它們照成就可以了，麵團太冷了，但不用怕，我這樣壓也可以，如果這樣的話，麵團不會太黏，如果在香港天氣比較熱，潮濕的話，麵團會黏住，如果黏的話，可以用麵粉在模具上吸收，這樣就可以先吸收，等我預熱焗爐，350度，可以用焗爐紙或矽膠墊。</p></a>
+				<a href="#00:13:37.29" id="00:13:37.29" class="lt" onclick="jumptoTime(817, this.id)"><p>然後就印模，最好一次過印好，如果一次過印不完，可以再堆一塊，再搓平，再印，但越黏越多，模具的質感就越來越不好，所以最好第一次用完，因為我焗不完，焗多少就多少，盡量找些位置可以用完，放一個在某個位置盡量貼，就是這樣，這樣就一直這樣貼，我找些位置可以貼多少就多少，用個腦想像好似砌圖咁。</p></a>
+				<a href="#00:15:37.79" id="00:15:37.79" class="lt" onclick="jumptoTime(937, this.id)"><p>因為我剛才太心急，打糖時打不均勻，所以有少少點點的糖，如果打勻一點，就會沒有了，除了用黑糖，你可以用白糖和黃糖，黃糖的曲奇會軟身一點，如果用白糖，曲奇就會脆一點，所以看你喜歡怎樣，其實是可以的，將它們黏在一起，然後再把它們壓扁，然後再吸，做到這樣就可以了，先拿開這個，你看看，十隻薑給人了，你可以做完之後，自己用糖霜或其他東西做出來。</p></a>
+				<a href="#00:17:17.79" id="00:17:17.79" class="lt" onclick="jumptoTime(1037, this.id)"><p>不做也可以的，像我這樣做也可以的，我可以做眼睛，你可以用圓形的筷子或其他東西，這樣戳眼睛就可以了，不知道烤好之後會變成怎樣呢?</p></a>
+				<a href="#00:17:52.60" id="00:17:52.60" class="lt" onclick="jumptoTime(1072, this.id)"><p>因為我平時多數是做糖漿的，但我今天就真的很忙，趕著有事做，所以這次就試試看，看看這樣行不行，比較像是蒙珠眼，哎呀，一說到蒙珠眼就大力了，現在拿去焗，大約焗15分鐘至它熟，我們焗好了，回來啦，薑餅仁已經焗好了，我給你們看，眼睛還在，但為何身上有些痘痘呢?</p></a>
+				<a href="#00:19:3.31" id="00:19:3.31" class="lt" onclick="jumptoTime(1143, this.id)"><p>因為我剛才搓糖的時候，因為它是黑糖，跟其他糖不同，比較難跟牛油混合，所以糖分不均勻，會一粒粒的黏在上面，變了像斑點的薑餅仁一樣，很好笑，但拿出來的時候，很香香的香料和薑味，你們可以試試做的，我自己會繼續加裝飾，希望你們喜歡，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提拉米蘇 (Tiramisu)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '66JIncWUaos',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>提拉米蘇 (Tiramisu)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.83" id="00:00:0.83" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天我介紹和大家一起做一個甜品，需要用到馬斯卡彭芝士，如果是意大利文就叫做Mascarpone，如果是英文就叫做Mascarpone，這個芝士最有名的甜品叫做Tiramisu，Tiramisu這個甜品我相信很多人都吃過，它的來源地當然就是意大利，它的名字其實很多人都有介紹過，它可以叫做Lift me up，即是提起我。</p></a>
+				<a href="#00:00:54.83" id="00:00:54.83" class="lt" onclick="jumptoTime(54, this.id)"><p>或者是Pick me up，帶我走，或者是Cheer me up，令我開心，所以吃了這個甜品都會令人有開心的感覺，首先我要介紹一些材料，我們先看看怎樣做咖啡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:3.04" id="00:02:3.04" class="lt" onclick="jumptoTime(123, this.id)"><p>drew，worwości，itos，hè，lung，glac diferencia，bly，Els，told，Scary，Tigers，SPEAKING propor，Autgasping，secogle，없어요，neces sleep，warm，estou，frequency� trumpet，slope。</p></a>
+				<a href="#00:02:13.70" id="00:02:13.70" class="lt" onclick="jumptoTime(133, this.id)"><p>mapped，Brothers，请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，回來了，如果不用這個芝士，可不可以用其他芝士?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:27.71" id="00:02:27.71" class="lt" onclick="jumptoTime(147, this.id)"><p>我可以回答你，這個甜品你一定要用這個芝士，我試過用奶油芝士代替，但質地和味道是完全不同的，它會有酸味，而且不會太creamy，所以一定要用這個芝士，另外介紹的是，其中一個甜品裡面，中間還有另一個靈魂，除了咖啡之外，還有酒，其實很多人家裡都會有酒，你可以用普通甜品的Rum酒，家裡有Brandy酒，可以。</p></a>
+				<a href="#00:03:29.71" id="00:03:29.71" class="lt" onclick="jumptoTime(209, this.id)"><p>而很多人在北美洲，多數會用Coke，咖啡味的甜酒，而在意大利就會用Masala酒，用這個酒來做甜品，你可以選擇自己喜歡的酒，我三樣都有，另外，再介紹另一樣東西，就是手指餅，你可以自己做手指餅也可以買，我買了一個包裝的手指餅，希望可以做得完，我買了一個包裝的手指餅，希望夠，還有什麼還沒介紹呢?</p></a>
+				<a href="#00:04:24.20" id="00:04:24.20" class="lt" onclick="jumptoTime(264, this.id)"><p>還有就是用具，再舉，你可以，我這個不是蛋糕，蛋糕的話，如果是Tiramisu蛋糕的話，你要加魚膠粉，我這個沒有加魚膠粉，是經典的，經典的Tiramisu不是一個蛋糕，它算是一個Custard類的甜品，意大利，因為我們中間會包含蛋黃和蛋白，這幾個元素，所以這個是一個Custard類的甜品，所以。</p></a>
+				<a href="#00:05:1.44" id="00:05:1.44" class="lt" onclick="jumptoTime(301, this.id)"><p>很多時候都會用玻璃的載具，我沒有一個比較大的很漂亮的玻璃架，我就用一個這樣的玻璃碗來做，甚至乎，如果你家裡有其他的，起士蛋糕模具也可以做，起士蛋糕模具，做也可以，圓形、方形的，適隨尊便，這樣，好，就介紹到了，今天我會用這個來裝起來，我們可以開始了，首先，我要把蛋黃和蛋白分開，Guill Ming �우�neo snailяли。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:25.75" id="00:06:25.75" class="lt" onclick="jumptoTime(385, this.id)"><p>uger，Ну，ificación，aton</p></a>
+				<a href="#00:06:33.75" id="00:06:33.75" class="lt" onclick="jumptoTime(393, this.id)"><p>el，quero，surviving，Pode，resposta，Getting</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:31.65" id="00:06:31.65" class="lt" onclick="jumptoTime(391, this.id)"><p>nên，malfunction arena，avour，compact，안� börjar，chin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.35" id="00:06:33.35" class="lt" onclick="jumptoTime(393, this.id)"><p>nen，alleged，accelerated，gry porte</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.87" id="00:06:27.87" class="lt" onclick="jumptoTime(387, this.id)"><p>Matte исслед，멋있，retract Sims，ные，facultvideo，Taco</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.89" id="00:06:33.89" class="lt" onclick="jumptoTime(393, this.id)"><p>альное，Recent，ot</p></a>
+				<a href="#00:06:26.21" id="00:06:26.21" class="lt" onclick="jumptoTime(386, this.id)"><p>Eve，보� récup，сы，watershed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:24.39" id="00:06:24.39" class="lt" onclick="jumptoTime(384, this.id)"><p>][，dispד</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.87" id="00:06:27.87" class="lt" onclick="jumptoTime(387, this.id)"><p>Audi，regulators，discussed，проблемы</p></a>
+				<a href="#00:06:29.53" id="00:06:29.53" class="lt" onclick="jumptoTime(389, this.id)"><p>eyelashes，tightween，fa JON</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:32.61" id="00:06:32.61" class="lt" onclick="jumptoTime(392, this.id)"><p>ichten，зна，tering，бат Expl barr</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.67" id="00:06:27.67" class="lt" onclick="jumptoTime(387, this.id)"><p>ām，elkaar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:23.53" id="00:06:23.53" class="lt" onclick="jumptoTime(383, this.id)"><p>� apps，不是，agen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:25.99" id="00:06:25.99" class="lt" onclick="jumptoTime(385, this.id)"><p>wolf，� Date，począt，ibt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.43" id="00:06:27.43" class="lt" onclick="jumptoTime(387, this.id)"><p>again，Adams</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:20.91" id="00:06:20.91" class="lt" onclick="jumptoTime(380, this.id)"><p>variety，He möglich，Alexander，particul universally，mic</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:23.59" id="00:06:23.59" class="lt" onclick="jumptoTime(383, this.id)"><p>roy police，ignorant，нит，這個甜品是用生雞蛋，所以要留意雞蛋是否生吃，首先要分糖，需要1 1 4杯，另外還要1 1 倍糖，分開，另外我還要少少另外的糖，然後放進咖啡和蛋黃中，三隻蛋黃，我放一匙砂糖，然後再用熱水打蛋黃，這個時間可以用熱水打蛋黃，好像消毒一樣，令蛋黃可以吃得安心一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:53.19" id="00:07:53.19" class="lt" onclick="jumptoTime(473, this.id)"><p>首先煮滾水，水滾的時候就可以打蛋白，蛋白開始起泡後，我將四分之一杯糖分幾次打入，將蛋白打起就可以了，小火一點，然後我們就可以將蛋黃放下去，打到它變成濃稠的淡淺黃色，這樣，打到它變成濃稠的淡淡黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:24.25" id="00:09:24.25" class="lt" onclick="jumptoTime(564, this.id)"><p>extras，op similar，Klebean，upbeat，introduce，号，eta，poz，пис，подум，constitu，inspection，Writing，soci stays，acces，таки，We，crazy，campus，robić，הס，size，​​。</p></a>
+				<a href="#00:09:28.07" id="00:09:28.07" class="lt" onclick="jumptoTime(568, this.id)"><p>instance，damit，veland，Mitarbeiter，isses，ление，Teacher，aja，mondo，lav Theo，Sans，Princeton，irgendwas，iage，iano，gimbal，cia，Vet，senior，devastating，od championship。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:53.35" id="00:09:53.35" class="lt" onclick="jumptoTime(593, this.id)"><p>attract STOP，mag killed，видел，spar，ughs，lived，Spaß，imentos，ιο，일이，i，JUDGE，crossing，linear，Schritt，tät，с，entender，später，pure，reviewing，Shelley，ления，course。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:47.35" id="00:09:47.35" class="lt" onclick="jumptoTime(587, this.id)"><p>max，super，risk，由剛才的黃色變成淡黃色，我今天會用這個咖啡豆來做，在這個時間，我可以加一點點的Vanilla進去，然後再加一點點的Vanilla進去，然後我就加一點點的咖啡酒，我大約加了一個湯匙的，繼續攪拌，如果家裡有Daily酒也可以用，不同的酒也可以用，現在要做什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:23.96" id="00:11:23.96" class="lt" onclick="jumptoTime(683, this.id)"><p>就是要將這個混合物完全放涼，因為我待會要將其他味道，例如奶油、蛋白和奶油混合在一起，所以這個就要放涼，待會回來見，蛋黃打好了之後，我們剛才就放了一些Vanilla和咖啡酒，現在就再放今天的主角，就是Mascarpone Cheese，我已經將它放置了十分鐘，接着再打匀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:40.68" id="00:12:40.68" class="lt" onclick="jumptoTime(760, this.id)"><p>接着再打匀，如果要做蛋糕，要加魚膠粉，在這個時候就可以加了，現在我們就把它放開，現在就打開忌廉，打一個忌廉，加入冰糖和奶油，加入冰糖和奶油的份量隨個人喜好，最少半杯或最多一杯，我加了四分之三杯</p></a>
+				<a href="#00:13:33.10" id="00:13:33.10" class="lt" onclick="jumptoTime(813, this.id)"><p>攪拌均勻，攪拌均勻後放入冰箱冷藏，完成了，軟軟的，像軟雪糕的質地，喜歡的話可以再打結一點，但我喜歡做甜品在裏面的，軟軟的，像軟雪糕的質地，現在可以組裝蛋糕了，首先將四分之一杯咖啡倒入咖啡中，我這杯咖啡大約有一杯，剛才打奶油的時候，剩下的糖也放進咖啡中，然後就可以倒出來，倒在碟子上。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:46.65" id="00:14:46.65" class="lt" onclick="jumptoTime(886, this.id)"><p>這個材料是要預多的，所以不用怕咖啡太多，然後就將三種材料拌勻，首先將蛋白拌勻，另外最傳統的方法就是三種混合，在北美洲有些餐廳是蛋白和蛋黃這個醬汁混合，最後鋪好之後才把忌廉放上面再灑上朱古力粉，我會把所有材料都混合在一起，將它們從底部拌勻，然後就可以把忌廉放進去，其實你喜歡的話，可以把咖啡酒放多一點進去。</p></a>
+				<a href="#00:16:42.07" id="00:16:42.07" class="lt" onclick="jumptoTime(1002, this.id)"><p>但我覺得因為這個Tiramisu的靈魂除了咖啡之外，就是馬斯卡彭芝士，所以我盡量放了很少，剛剛只放了一個茶匙調味，我想在這裡可以吃到馬斯卡彭芝士的味道，加上咖啡酒和咖啡在手指餅上，那裡又有一種味道，然後他們一起在我們口中混合，我覺得會比較好吃，我們已經做了一大盤，所以OK了，我恐怕一個這麼大的鍋子，容器裝不完。</p></a>
+				<a href="#00:17:35.07" id="00:17:35.07" class="lt" onclick="jumptoTime(1055, this.id)"><p>所以我先拿一個小的盤子在這裡，預防萬一，現在就可以開始做了，用手指餅的話，我建議要快一點，千萬不要放進去浸泡，因為手指餅的空氣成分很高，所以會很吸水，如果直接放進去，會整個縮小，所以我們就不要了，首先很簡單，將它沾一沾，然後就放上去，就是這樣，做好一層後，然後我們就將，Tiramisu。</p></a>
+				<a href="#00:18:48.27" id="00:18:48.27" class="lt" onclick="jumptoTime(1128, this.id)"><p>放下去，鋪一層，我們可以借助這種offset的spatula幫忙，之後我會搖一搖它，希望它下面黏緊，你看到旁邊，空氣可以吞出來，鮮實之後就可以再下一層鋪滿，我們繼續鋪滿</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:0.83" id="00:20:0.83" class="lt" onclick="jumptoTime(1200, this.id)"><p>感謝觀看，treasury totjin，题 aí，Raspberry，academ appearances，relat they，阿 Sorry，어� bibli，underwear，workshop，robust，tack Pode，CPU，부，Vera，Ton，Who，cruise。</p></a>
+				<a href="#00:20:12.43" id="00:20:12.43" class="lt" onclick="jumptoTime(1212, this.id)"><p>Tian，..?</p></a>
+				<a href="#00:20:15.89" id="00:20:15.89" class="lt" onclick="jumptoTime(1215, this.id)"><p>convers uniqu Third，explan，ribbon，drug，'...</p></a>
+				<a href="#00:20:9.29" id="00:20:9.29" class="lt" onclick="jumptoTime(1209, this.id)"><p>Зап，break，nag，tô，Lie 거는，whe DW，Lightματα，tener，victim，iy，SUV，tail，BB，wai�asha，chuck，Solo，speed，spielt，biomedical，PSTa figure，receptors，放入冰箱冷藏2小時就可以了，是不是很方便呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:53.39" id="00:20:53.39" class="lt" onclick="jumptoTime(1253, this.id)"><p>這個不是切，是像舀甜品一樣舀出來，冷藏2小時後，甜品就完成了，我們只要把可可粉撒在上面就可以了，因為想做得漂亮，所以做了一個四方形的甜品，如果喜歡的話，可以用墨畫的圖案，如果不喜歡的話，可以用普通的方法，把可可粉撒在上面，vodka sposób</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:28.27" id="00:22:28.27" class="lt" onclick="jumptoTime(1348, this.id)"><p>zitten，sole</p></a>
+				<a href="#00:22:35.75" id="00:22:35.75" class="lt" onclick="jumptoTime(1355, this.id)"><p>base，ž</p></a>
+				<a href="#00:22:31.11" id="00:22:31.11" class="lt" onclick="jumptoTime(1351, this.id)"><p>hè，換 dys，認為</p></a>
+				<a href="#00:22:28.43" id="00:22:28.43" class="lt" onclick="jumptoTime(1348, this.id)"><p>Venice，onter，Bristol，Measure�</p></a>
+				<a href="#00:22:28.21" id="00:22:28.21" class="lt" onclick="jumptoTime(1348, this.id)"><p>rock，ranging，circulating，capacitance，Shame sua，licensing，상</p></a>
+				<a href="#00:22:32.95" id="00:22:32.95" class="lt" onclick="jumptoTime(1352, this.id)"><p>أ，eg Zuk，poems</p></a>
+				<a href="#00:22:36.28" id="00:22:36.28" class="lt" onclick="jumptoTime(1356, this.id)"><p>然後就把他移出來，我這個是脫底模來的，類似芝士蛋糕模那些，邊的可以再多一點，這樣一會可以抹桌子，然後就可以把他移出來，你們看看旁邊是這樣的，這個只有一層，因為它很小，放多一點巧克力粉也不要緊，就是這樣，一盤這樣拿去朋友家吃飯，在家宴客，這樣多好看，你喜歡的話可以放不同的水果在上面。</p></a>
+</div>
+	</body>
+</html>

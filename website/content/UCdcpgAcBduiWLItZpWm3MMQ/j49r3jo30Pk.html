@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海棉蛋糕 - 關於燙麵法 (Sponge Cake)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'j49r3jo30Pk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>海棉蛋糕 - 關於燙麵法 (Sponge Cake)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 大家好，今日同大家一齊整一個好簡單嘅蛋糕，就係麵包蛋糕。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>我呢就係用而家成日好多人都提嗰個叫做燙麵法嚟整嘅。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>咁我哋不如介紹咗啲材料先啦，好唔好?</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>咁材料呢就係有雞蛋啦，雞蛋要三隻。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>分開佢蛋黃同埋蛋白啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>牛奶50克，油40克，糖40克，低筋麵粉50克。材料係咁多。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>好喇，返嚟啦，首先我哋就係要麵粉啦，我過篩啦，咁我過咗兩次篩，等到頭先好似好少咁，而家就已經篩開咗啲麵粉啦。</p></a>
+				<a href="#00:00:58.00" id="00:00:58.00" class="lt" onclick="jumptoTime(58, this.id)"><p>咁方便一陣間去做呢個燙麵法嘅時候煮個麵粉，用呢個油去煮麵粉。</p></a>
+				<a href="#00:01:5.00" id="00:01:5.00" class="lt" onclick="jumptoTime(65, this.id)"><p>咁呢一個油呢，你可以用植物油，咁我用呢個油呢就係提子核油。</p></a>
+				<a href="#00:01:11.00" id="00:01:11.00" class="lt" onclick="jumptoTime(71, this.id)"><p>好多人有唔同嘅油，上網面亦都有人用譬如玄米油呀，或者係芥花籽油呀，等等等等。</p></a>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>咁最好就唔好用一啲好濃味嘅油，好似花生油嗰啲就唔好用啦，就用啲好淡味嘅油，咁就會好啲囉。</p></a>
+				<a href="#00:01:32.00" id="00:01:32.00" class="lt" onclick="jumptoTime(92, this.id)"><p>太熱嘅話呢，就要拎開佢㗎啦。</p></a>
+				<a href="#00:01:44.95" id="00:01:44.95" class="lt" onclick="jumptoTime(104, this.id)"><p>將麵粉和油混合</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:14.95" id="00:02:14.95" class="lt" onclick="jumptoTime(134, this.id)"><p>將麵粉和油混合，將麵粉和油混合，我現在就講解一下為什麼會用這個方法來做，首先就是外面坊間真的很多人做這個湯麵飯，我一直都很想，真的去，做的時候你可以跟著做，但是我想知道為什麼要這樣做，到處去看很多書或者去看人家做的，為什麼會這樣，後來發覺這個方法有一點像，如果在鍋裡面做，就有一點像我們做泡芙，泡芙的時候都要煮麵粉的方法。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:26.55" id="00:03:26.55" class="lt" onclick="jumptoTime(206, this.id)"><p>可能他們其實是有類似關連的，我就去找一些書去看，接著我可以將牛奶逐少逐少地加進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:44.93" id="00:03:44.93" class="lt" onclick="jumptoTime(224, this.id)"><p>bung sport asteroid!」，Pocket euro</p></a>
+				<a href="#00:04:13.19" id="00:04:13.19" class="lt" onclick="jumptoTime(253, this.id)"><p>ugar，pee，eda，Ã</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:8.73" id="00:04:8.73" class="lt" onclick="jumptoTime(248, this.id)"><p>ى，stan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.35" id="00:03:59.35" class="lt" onclick="jumptoTime(239, this.id)"><p>ivering，halt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:9.51" id="00:04:9.51" class="lt" onclick="jumptoTime(249, this.id)"><p>dries，Ist，oof，consist，Wyatt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:13.93" id="00:04:13.93" class="lt" onclick="jumptoTime(253, this.id)"><p>�，Demokrat，ilk，Market</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.79" id="00:03:59.79" class="lt" onclick="jumptoTime(239, this.id)"><p>Tub，鐘，versatile，importantly</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:8.21" id="00:04:8.21" class="lt" onclick="jumptoTime(248, this.id)"><p>Sche diplom��，ール，kommen，singing，ubl，areth，flowing，HP</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:7.83" id="00:04:7.83" class="lt" onclick="jumptoTime(247, this.id)"><p>Catch，ável，rikt，ults，leaning，homemade</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:9.29" id="00:04:9.29" class="lt" onclick="jumptoTime(249, this.id)"><p>Mayo，Seiten，Solo，coupled</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:14.65" id="00:04:14.65" class="lt" onclick="jumptoTime(254, this.id)"><p>betsこう，kasih，harma，возв oversized，ender，Whe garde，estado，Federation，ái，smiled，ес，resigned，tylko，quien</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:8.95" id="00:04:8.95" class="lt" onclick="jumptoTime(248, this.id)"><p>Ama psych narr han，iful，rebound，epidemic，camping</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:12.09" id="00:04:12.09" class="lt" onclick="jumptoTime(252, this.id)"><p>cidos，160，sytu，��는，school，擊rible，asp Stein，üz，">，開始變稠了，終於找到，油和麵粉煮麵粉的方法，就是要令麵粉的筋性減低，同時油和麵粉混合後，吸水的吸力的吸度，保持濕度又增加，所以烤出來的蛋糕就會很鬆軟，同時會很濕，雞蛋，雞蛋逐隻放進去</p></a>
+				<a href="#00:04:39.83" id="00:04:39.83" class="lt" onclick="jumptoTime(279, this.id)"><p>再拌勻，這樣就變成一個麵糊了，這個時間我們就可以開始預熱焗爐，華氏是320度， 攝氏大約是160度，現在我開始按著焗爐，現在打蛋白，3尺蛋白，開始慢慢打，分幾次加糖，首先打開起泡，having Bull racist決 Lazar carbohydrate，ern puede</p></a>
+				<a href="#00:05:45.85" id="00:05:45.85" class="lt" onclick="jumptoTime(345, this.id)"><p>sonra，relyingasst，Cloud，ube，От，cannons，debated，results</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:57.81" id="00:05:57.81" class="lt" onclick="jumptoTime(357, this.id)"><p>neurons，replied，surrounding，pilot，Ultimate，муж，Türkiye，Minnesota</p></a>
+				<a href="#00:06:0.21" id="00:06:0.21" class="lt" onclick="jumptoTime(360, this.id)"><p>acceptable，Pic persons，官mooth，hell ihan，powers，adors，ως</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:2.91" id="00:06:2.91" class="lt" onclick="jumptoTime(362, this.id)"><p>탄，seine，dolphin，nerv licenses</p></a>
+				<a href="#00:06:8.27" id="00:06:8.27" class="lt" onclick="jumptoTime(368, this.id)"><p>Thomorry，koş إن，sinner，亮 Chemistry，isolating，eton，bubbling，gene，add，plusieurs，oire，пад，cellent</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:2.91" id="00:06:2.91" class="lt" onclick="jumptoTime(362, this.id)"><p>practically，män，Verf meillä，치가，Manufact� Whoa，Maine</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:59.79" id="00:05:59.79" class="lt" onclick="jumptoTime(359, this.id)"><p>predictive，waiter，sniffjiang，ELLолот，колonden，credit，ood alkal verder，ner Ph Des laughs，enfim，יש，Bravo，demands，Relax，pont panic，quadratic，editors。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:10.59" id="00:06:10.59" class="lt" onclick="jumptoTime(370, this.id)"><p>вдругaw，好 要切糖了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:44.13" id="00:06:44.13" class="lt" onclick="jumptoTime(404, this.id)"><p>倒入冰糖，泡沫由大變小，現在就比較小了，discarded</p></a>
+				<a href="#00:07:32.01" id="00:07:32.01" class="lt" onclick="jumptoTime(452, this.id)"><p>적 Liter regions，grupp cruc Ultimately，Gwen，tomato，defining，on，toes，cookie，mats，dengan，дости，Driver，udent，DC，Beij</p></a>
+				<a href="#00:07:40.07" id="00:07:40.07" class="lt" onclick="jumptoTime(460, this.id)"><p>внимание，57，Tony，paw，� harass，Mama，필요，fills，sneez cake，nutrit Shan，PRO，Nah，業 Forgive，onu，ici，ocur Familie，Nach，Worlds，canal，zaj，ligt，reso，pourquoi</p></a>
+				<a href="#00:07:34.71" id="00:07:34.71" class="lt" onclick="jumptoTime(454, this.id)"><p>curiosity，Every Oculus，polarized，스트，Saturn，Foreтом，motivational，저도aho，dig Entscheid，�，시면 Bhar真的ension，men � Ree，bunlar，agreeing，feld，피Your watershed，Alf Panda。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:27.07" id="00:07:27.07" class="lt" onclick="jumptoTime(447, this.id)"><p>sells coma，ämän advocates，FS list Depot，danach writers，在uela yokolлись divorce，nych，Lin Miami 사진，現在還要倒出來有一點流，還未可以的，倒到倒轉</p></a>
+				<a href="#00:08:15.54" id="00:08:15.54" class="lt" onclick="jumptoTime(495, this.id)"><p>realise，pinnedichten，용</p></a>
+				<a href="#00:08:31.78" id="00:08:31.78" class="lt" onclick="jumptoTime(511, this.id)"><p>Point，umen，Israel，eig label，vois，π，Qammad</p></a>
+				<a href="#00:08:24.76" id="00:08:24.76" class="lt" onclick="jumptoTime(504, this.id)"><p>Kap komt，ipples，película</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:34.66" id="00:08:34.66" class="lt" onclick="jumptoTime(514, this.id)"><p>итай，ministre，λ，�도</p></a>
+				<a href="#00:08:35.54" id="00:08:35.54" class="lt" onclick="jumptoTime(515, this.id)"><p>crec，스�stan，Seit，Depois</p></a>
+				<a href="#00:08:17.74" id="00:08:17.74" class="lt" onclick="jumptoTime(497, this.id)"><p>よろ，ept，にちは，augmented，residential</p></a>
+				<a href="#00:08:30.22" id="00:08:30.22" class="lt" onclick="jumptoTime(510, this.id)"><p>Hos，permet</p></a>
+				<a href="#00:08:23.58" id="00:08:23.58" class="lt" onclick="jumptoTime(503, this.id)"><p>Kern，tonight</p></a>
+				<a href="#00:08:25.86" id="00:08:25.86" class="lt" onclick="jumptoTime(505, this.id)"><p>funded，eyes，eden</p></a>
+				<a href="#00:08:19.74" id="00:08:19.74" class="lt" onclick="jumptoTime(499, this.id)"><p>sea，chill</p></a>
+				<a href="#00:08:28.82" id="00:08:28.82" class="lt" onclick="jumptoTime(508, this.id)"><p>doc match，под，особ，いただ，집에，deployed，geht，還有少許，現在它是向下的泡，反轉頭也不流就可以了，如果再打就變成乾性蛋白，我們只需要濕性，即是拿起來，泡尖是向下的，不是直的，看不看得到?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:25.12" id="00:09:25.12" class="lt" onclick="jumptoTime(565, this.id)"><p>我們就可以攪勻，這裡我有一個盤，這個就是7吋的盤，這個我剛才打開了，現在也要攪一攪，確保均勻，它的狀態就是這樣，然後我們就可以將蛋白放一點進去，攪拌完再放過來這邊，首先我拿1 3分的蛋白，或者少許放進去，攪勻，暫時也可以用這個攪勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:27.12" id="00:10:27.12" class="lt" onclick="jumptoTime(627, this.id)"><p>攪勻，然後就不用這個了，我就用膠刮，然後就把另一半放進去，然後就反過來，然後就把兩邊都攪拌均勻，攪拌均勻後就可以把最後一半蛋白放進去，然後再攪拌均勻，蛋白已經均勻地混合在蛋黃糊中，然後就可以倒入模具中，用高筒把模具倒入模具中，不要把模具放太大，否則蛋糕會有洞，在這個時間，我可以把它放涼，最後的泡沫都可以消除。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:54.46" id="00:12:54.46" class="lt" onclick="jumptoTime(774, this.id)"><p>之後就可以拿去烤了，趁烤蛋糕的時候，就跟大家一起去烤吧!</p></a>
+				<a href="#00:13:5.91" id="00:13:5.91" class="lt" onclick="jumptoTime(785, this.id)"><p>今天我做這個燙麵法的棉花蛋糕是怎樣做的呢?</p></a>
+				<a href="#00:13:14.91" id="00:13:14.91" class="lt" onclick="jumptoTime(794, this.id)"><p>坊間有很多方法去做海綿蛋糕，用燙麵法，海綿蛋糕，棉花蛋糕，諸如此類的，我自己看了很多食譜，我看到很多人不同的做法，雖然我知道這個燙麵法的名字，但我很想知道它是怎樣來的，然後我就去看書，去找，我也想知道怎樣來的，但我真的不知道，因為有很多人說是日式的方法，或者是台式的方法，我真的不清楚最原本是怎樣來的。</p></a>
+				<a href="#00:14:0.91" id="00:14:0.91" class="lt" onclick="jumptoTime(840, this.id)"><p>但它有一樣東西令我覺得很熟悉的就是，當油和麵粉煮麵粉的時候，然後再放牛奶，再放雞蛋，我的印象就會讓我看到做泡芙的方法，在鍋裡煮麵粉，這樣令我覺得，其實會不會是概念上差不多呢?</p></a>
+				<a href="#00:14:28.91" id="00:14:28.91" class="lt" onclick="jumptoTime(868, this.id)"><p>我就會去找，用熱的油煮麵粉，麵粉充分吸收油，這樣會令麵粉的筋不會那麼容易起筋，減少起筋的程度，如果起筋的程度減少了，麵粉的成品就會更鬆軟，因為一多筋就會向麵包的方向去，所以我們做蛋糕的時候，會用低筋麵粉，做麵包的話，會用高筋麵粉，其實意思差不多，但加了油之後，低筋麵粉再結合起筋的方便減弱了，另外，把水留在麵包的成品中，也會加強了。</p></a>
+				<a href="#00:15:34.91" id="00:15:34.91" class="lt" onclick="jumptoTime(934, this.id)"><p>另外，會令麵包更加鬆軟，在這些優勢之下，做雪方蛋糕或海綿蛋糕，加熱用燙麵法的方法，會比起以前沒有用燙麵法之前，只用麵粉打好，沒有煮過的麵糊，有些不同，現在很多人轉用燙麵法，但如果你不想做這個步驟，可以用麵粉打好，雪方蛋糕，戚風蛋糕，海綿蛋糕，都可以用傳統方法，不用用糖麵粉做，今天我們試了這個方法，希望成品會好。</p></a>
+				<a href="#00:16:36.03" id="00:16:36.03" class="lt" onclick="jumptoTime(996, this.id)"><p>焗好後，已經冷卻了一段時間，現在可以把它切開，焗了10分鐘後，我把刀切了三刀，現在就可以拿出來，isini morgen これ超 epis negotiation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:36.97" id="00:17:36.97" class="lt" onclick="jumptoTime(1056, this.id)"><p>cobra，ề，newsp，gloves</p></a>
+				<a href="#00:17:39.47" id="00:17:39.47" class="lt" onclick="jumptoTime(1059, this.id)"><p>ال cro 쓰� machinery，Avo，relationsag Mel gry，agtressing</p></a>
+				<a href="#00:17:36.17" id="00:17:36.17" class="lt" onclick="jumptoTime(1056, this.id)"><p>рад，translator，cords</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:39.39" id="00:17:39.39" class="lt" onclick="jumptoTime(1059, this.id)"><p>spaceship，OK</p></a>
+				<a href="#00:17:44.06" id="00:17:44.06" class="lt" onclick="jumptoTime(1064, this.id)"><p>弄好了，希望大家喜歡，下次有時間也試一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:56.06" id="00:17:56.06" class="lt" onclick="jumptoTime(1076, this.id)"><p>今天介紹的就是這樣，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

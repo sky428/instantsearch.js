@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>藍莓酥餅批   (Blueberry Galette)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'zMt15nNLhwQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>藍莓酥餅批   (Blueberry Galette)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，今天和大家做藍莓蛋糕，其實是一個塗層的蛋糕，或者是一個很多形容的，或者是一個無形的蛋糕，是一個藍莓批，不需要模具，不需要有個塔模或批模來做，徒手就可以做，材料亦都很簡單，不如我先介紹材料吧，材料有什麼呢?我們來看看吧，這些是杏仁碎，你可以不加，如果不想加的話，可以在這裡浸一杯麵粉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:5.33" id="00:01:5.33" class="lt" onclick="jumptoTime(65, this.id)"><p>這裡有兩茶匙糖，半茶匙鹽，還有一些牛油，我把牛油全部放在冰箱裡，切成小塊，然後放在冰箱裡，然後有一些藍莓，我先拿開藍莓，我們先處理這裡，材料就這麼多，稍後還有其他材料，就是做藍莓的時候，還有一些材料是做藍莓的，稍後再說吧，我們先處理這個蛋糕最重要的皮，需要的材料就是牛油，如果家裡有食物處理機，可以幫忙切碎，就可以放進去按幾下就可以了。</p></a>
+				<a href="#00:02:6.33" id="00:02:6.33" class="lt" onclick="jumptoTime(126, this.id)"><p>如果沒有的話，可以用手，但又怕手太熱的話，可以用一些工具幫忙，可以用刀，叉子，或者像我這樣用一些工具，把牛油再搓爛一點，然後把麵粉放進去，如果你想要一個很漂亮的蛋糕，可以用一些麵粉，然後把麵粉放進去，麵糰除了我放了這些nuts，你可以不放，或者放其他nuts，例如walnuts，什麼都可以，另外你可以再加一些香料，例如cinnamon，allspice，可以加一些這些，令麵糰更香，或者更濃味。</p></a>
+				<a href="#00:02:52.07" id="00:02:52.07" class="lt" onclick="jumptoTime(172, this.id)"><p>如果什麼都不放，只是麵粉，牛油，糖，鹽，是都可以的，不需要放其他東西都可以的，這樣，我先把麵粉全部放進去，然後我把它和牛油混合在一起，不需要全部混合在一起，而是慢慢把牛油和麵粉混合在一起，牛油和麵粉都很白，牛油都包住了，慢慢開始有黃色，然後一粒粒的一粒粒的這樣就可以了，我先把這些調味的都放進去，鹽，糖，還有這個，全部都混合在一起，然後就把它們搓在一起。</p></a>
+				<a href="#00:03:47.71" id="00:03:47.71" class="lt" onclick="jumptoTime(227, this.id)"><p>你可以用手這樣，不是很大力，用手這樣捏一下，即是一路拉它出來，一路這樣捏一下，都可以的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.83" id="00:03:59.83" class="lt" onclick="jumptoTime(239, this.id)"><p>screenshots Kash siguitudes，phin，警 Ouais，diyorsun，어요，idos，iscern，video，Anat Sant chuck，Wiki，уб Staat，leicht mac，seamlessly，zinho，level，spilled，Boost。</p></a>
+				<a href="#00:04:2.43" id="00:04:2.43" class="lt" onclick="jumptoTime(242, this.id)"><p>friend，ENN，Battlefield，형，Pand Orange，Hencegreen，mot，將麵粉和牛油拌勻後，牛油會變成一粒粒的，還有另一樣東西，忘記拿出來看，就是一些有冰的冰水，將冰水放入麵粉和牛油中，如果沒有麵粉的話，可以用叉子，麵粉開始變得很白，現在開始變得黃黃的，可能是因為燈光關係，在鏡頭上看不太清楚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:3.59" id="00:05:3.59" class="lt" onclick="jumptoTime(303, this.id)"><p>現在已經開始變得均勻，麵粉已經黏住牛油，現在可以把麵粉和牛油混合在一起，加四湯匙冰水，我可以逐個加，puckvisedmuffled</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:17.15" id="00:06:17.15" class="lt" onclick="jumptoTime(377, this.id)"><p>PUdit，liament，wam Episode，こちら，很多</p></a>
+				<a href="#00:06:13.77" id="00:06:13.77" class="lt" onclick="jumptoTime(373, this.id)"><p>Wheel，gaming，Intro，begins，평，machine，shining，Jason，crib，Sean，staan，oration，chlossen，yn，othe，START，differentiate，��</p></a>
+				<a href="#00:06:25.97" id="00:06:25.97" class="lt" onclick="jumptoTime(385, this.id)"><p>120，costume，BÜNDNIS，Nick，Sca問，riders，aze，Total，offline，börjar，кое</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:8.61" id="00:06:8.61" class="lt" onclick="jumptoTime(368, this.id)"><p>trous anticipation，recoil，parable，critical，cocon Cleveland，라，porta，wirtschaft，무� серьез，allocate，зат，18 Explain，여러분，biggest，rontingtu</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.45" id="00:06:22.45" class="lt" onclick="jumptoTime(382, this.id)"><p>ever Alg，tort，Exper kept，��，işte，Light behaving，momencie，Bism equivalent，ева，знает menstru Shanghai，� babysöl，corpses，dining</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:8.87" id="00:06:8.87" class="lt" onclick="jumptoTime(368, this.id)"><p>�y，bites，waving，DO Nuclear</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:11.65" id="00:06:11.65" class="lt" onclick="jumptoTime(371, this.id)"><p>將所有材料拌勻，將所有材料拌勻，現在可以這樣壓一壓， 看到可以黏合就可以了，現在麵團是乾乾的， 但因為有水加進去， 麵團就會慢慢收在一起</p></a>
+				<a href="#00:07:9.15" id="00:07:9.15" class="lt" onclick="jumptoTime(429, this.id)"><p>如果太乾的話， 可以繼續加水，麵團要保持冰涼的狀態，這樣就可以凝固成一塊麵團，不用太過緊張，這樣就可以了，因為我們做出來都想它鬆軟鬆脆，然後用保鮮紙把麵團壓成一團</p></a>
+				<a href="#00:08:6.06" id="00:08:6.06" class="lt" onclick="jumptoTime(486, this.id)"><p>把麵團放進去，謝謝觀看，慢慢地把麵團推成一團，將它們分成一塊，然後放在冰箱冷藏一會兒，冷藏過後，我們可以處理布布里了，做Galette的餡料，其實你可以用你自己喜歡的東西，你可以用藍莓、草莓、蘋果、桃子，什麼都可以，處理的方法大同小異，但如果處理像是桃子、蘋果那些，切開後放一會兒，會出水很多，你可能要用糖醃過後，避開水分再做下一個步驟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:26.23" id="00:09:26.23" class="lt" onclick="jumptoTime(566, this.id)"><p>布布里其實也有水，但現在包著，待會焗的時候才會出水，所以我們在這個時間做什麼呢?</p></a>
+				<a href="#00:09:36.23" id="00:09:36.23" class="lt" onclick="jumptoTime(576, this.id)"><p>給它一點味道，糖，這裡是四分之一般的糖，我們放進去攪拌，然後我們攪拌一些，這裡有大約一個湯匙的堅果粉，我們放進去，攪拌均勻，待會就可以放進去，然後我可以再加些檸檬汁，調味，我沒有檸檬，可以加少少青檸，少少香啲，有啲味，如果鍾意的話可以再放啲皮落去，唔落都得，即係純blueberry味你都可以，咁我再攞佢攞落去，我哋返返嚟，我哋呢個就雪咗佢，跟住我哋而家就可以將佢呢硬開佢，輕力，如果可以殺少少粉，即係驚佢有少少黐嘅話可以殺啲粉。</p></a>
+				<a href="#00:11:9.99" id="00:11:9.99" class="lt" onclick="jumptoTime(669, this.id)"><p>然後就慢慢硬開佢，我呢個都可以殺少少粉，硬開佢，可以用什麼尺寸去壓， 視乎你喜歡的尺寸，我這個可以壓到12吋直徑，可以慢慢壓， 最好是壓軟一點，雖然說是freeform， 但也可以壓開，壓到好一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:24.83" id="00:12:24.83" class="lt" onclick="jumptoTime(744, this.id)"><p>turn requ coinsiste，Maybe，cream，opian，ROS PRESID referred，ziehen，ihm，skate，jeden，chutz，ludzie，C dzieomething，perturb，mentorship，jungle，named，Stuart。</p></a>
+				<a href="#00:12:42.13" id="00:12:42.13" class="lt" onclick="jumptoTime(762, this.id)"><p>takich，wwwwcul，Yellow，되지，川，gallhero，lotsités，Yep，ati，estar，extracting，بة，jusобы，ric，area，which sis requiring，altijd，Young Paint，unscrew objective，atau。</p></a>
+				<a href="#00:12:31.91" id="00:12:31.91" class="lt" onclick="jumptoTime(751, this.id)"><p>kim，insec devot grâce，謝謝觀看，你會看到有些一粒粒的，那些就是我剛才的Almond的餡料</p></a>
+				<a href="#00:13:3.61" id="00:13:3.61" class="lt" onclick="jumptoTime(783, this.id)"><p>再硬一點，謝謝觀看，如果要圓一點就好了，但我剛才沒有特意把它搓圓一點</p></a>
+				<a href="#00:13:42.31" id="00:13:42.31" class="lt" onclick="jumptoTime(822, this.id)"><p>但也沒所謂的，因為這個Gelat就是Free Form的，或者叫做Rustic，這樣即是說你隨便做到怎樣都可以，做完之後，我們大約一個位置的時候，你就看一下，我放在焗盤上，焗爐我已經預熱了400度，然後這裡我就放了，你怎樣拿過去呢?有幾種方法的，第一種方法就可以這樣整個放上去，第二種方法就有些人就把它摺成四角放上去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:27.31" id="00:14:27.31" class="lt" onclick="jumptoTime(867, this.id)"><p>隨你喜歡，用你最方便的方法，就這樣放上去，放在中間，然後我就把剛才那些Blueberry，剩下的就放在中間，給free resonance stakeholders，shorten Bright милли Guardian，phải，��들，素，spiritual，chocolate。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:3.36" id="00:15:3.36" class="lt" onclick="jumptoTime(903, this.id)"><p>active，reduce，toddler</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:26.70" id="00:15:26.70" class="lt" onclick="jumptoTime(926, this.id)"><p>43，ин，pop，때문에，turb Europ，!]</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:32.48" id="00:15:32.48" class="lt" onclick="jumptoTime(932, this.id)"><p>orang，следующ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:30.04" id="00:15:30.04" class="lt" onclick="jumptoTime(930, this.id)"><p>nosso，vocês，often</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:33.14" id="00:15:33.14" class="lt" onclick="jumptoTime(933, this.id)"><p>assador，TH Europeans，ipper，refugees</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:28.64" id="00:15:28.64" class="lt" onclick="jumptoTime(928, this.id)"><p>resolGod，Rogue，ø，JUSTIN</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:14.94" id="00:15:14.94" class="lt" onclick="jumptoTime(914, this.id)"><p>ela，iyi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:27.98" id="00:15:27.98" class="lt" onclick="jumptoTime(927, this.id)"><p>dioxide，New word</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:26.22" id="00:15:26.22" class="lt" onclick="jumptoTime(926, this.id)"><p>ection，ground，liberté</p></a>
+				<a href="#00:15:28.36" id="00:15:28.36" class="lt" onclick="jumptoTime(928, this.id)"><p>pill props，tutorial，jà，thief</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:33.18" id="00:15:33.18" class="lt" onclick="jumptoTime(933, this.id)"><p>figur trend，syn，system</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:14.22" id="00:15:14.22" class="lt" onclick="jumptoTime(914, this.id)"><p>� Prepare，described，jangan，alors</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:30.56" id="00:15:30.56" class="lt" onclick="jumptoTime(930, this.id)"><p>Likewise，�를ふふ，управ，chopsticks，życie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:25.84" id="00:15:25.84" class="lt" onclick="jumptoTime(925, this.id)"><p>Danielle，tête</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:29.14" id="00:15:29.14" class="lt" onclick="jumptoTime(929, this.id)"><p>Screen?..，δεν</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:19.04" id="00:15:19.04" class="lt" onclick="jumptoTime(919, this.id)"><p>1950，succeeds，Nit attempted，iende，lake，agreement，contents</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:20.36" id="00:15:20.36" class="lt" onclick="jumptoTime(920, this.id)"><p>МУЗЫКА，auf，Hoş Silver，chaCommentary，forwards，可以幫它吸水，我把它堆到中間，每邊留一點邊，待會可以摺起來，大約留兩吋，堆中間一點，然後就可以摺起來，推上面，然後摺，推，摺，包起來，然後有一點點的麵團，捏一捏，有一點麵團，所以餅皮的厚度和外觀都不重要，最後我都是這樣包著。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:35.80" id="00:16:35.80" class="lt" onclick="jumptoTime(995, this.id)"><p>所以做Galette難做和容易做的地方就在這裡，你看看你怎樣包它，還有你怎樣整好它，你看看，這樣就已經可以包好整個Galette，捏一捏這些位置，讓它聚在一起，是不是很好，然後我做什麼呢?</p></a>
+				<a href="#00:17:14.80" id="00:17:14.80" class="lt" onclick="jumptoTime(1034, this.id)"><p>在表面這些位置，我可以掃一點水，你可以掃牛奶，如果沒有的話就掃水都可以，掃一點水在表面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:32.03" id="00:17:32.03" class="lt" onclick="jumptoTime(1052, this.id)"><p>放入冰箱冷藏30分鐘，sientoので Masters，Roger，Exercise，ERIC</p></a>
+				<a href="#00:17:56.37" id="00:17:56.37" class="lt" onclick="jumptoTime(1076, this.id)"><p>commerce，приход，ally</p></a>
+				<a href="#00:17:52.47" id="00:17:52.47" class="lt" onclick="jumptoTime(1072, this.id)"><p>orte，postal，początku，feeding</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:59.05" id="00:17:59.05" class="lt" onclick="jumptoTime(1079, this.id)"><p>retrouve，headed</p></a>
+				<a href="#00:17:53.33" id="00:17:53.33" class="lt" onclick="jumptoTime(1073, this.id)"><p>啦，Cole，생nu，хочу</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:57.29" id="00:17:57.29" class="lt" onclick="jumptoTime(1077, this.id)"><p>Inspector，theological，NOISE</p></a>
+				<a href="#00:17:48.23" id="00:17:48.23" class="lt" onclick="jumptoTime(1068, this.id)"><p>Ar surviving，성이</p></a>
+				<a href="#00:17:54.63" id="00:17:54.63" class="lt" onclick="jumptoTime(1074, this.id)"><p>evolved，montón</p></a>
+				<a href="#00:17:59.17" id="00:17:59.17" class="lt" onclick="jumptoTime(1079, this.id)"><p>Gel Heidi，知ffiti，Simpson</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:57.77" id="00:17:57.77" class="lt" onclick="jumptoTime(1077, this.id)"><p>Precis 보� literally，可以灑上一些比較硬的糖，或者像我這樣，我直接灑上砂糖也可以，或者一些粗粒的糖也可以，這樣我把它灑在橄欖皮上，它有水在上面，可以黏著糖，灑多少也是隨意的，你喜歡灑多少都可以，我可以把它放進焗爐裡，我近一點給你們看一下，現在可以放進焗爐裡，375-400度，我現在用了400度。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:47.19" id="00:18:47.19" class="lt" onclick="jumptoTime(1127, this.id)"><p>焗45-50分鐘，一會兒見，焗好了，給你們看一下，這邊比較薄，有些汁流出來，但不要緊，看看好不好看，金黃色的，我把它放回我預備好的碟子裡，看看能不能整個放進去，好害怕，還是不要，用碟子放進去比較好，這樣整個放進碟子裡，確保不黏著，這些是它的汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:55.79" id="00:19:55.79" class="lt" onclick="jumptoTime(1195, this.id)"><p>SHbeliev，hepat verl，fiber，Forum，рыв，aire，rit popular，activating，basis，get，σας，denly，中共，the，collegifice，Dis，travaill，стен，しょう，zyka，transit，好，完成了，這邊剛好捏薄一點，所以那邊可能有一點斜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:15.26" id="00:20:15.26" class="lt" onclick="jumptoTime(1215, this.id)"><p>整個都可以很漂亮的出來，希望大家喜歡，這個食譜你們可以跟著做，還可以配雪糕，配雪糕吃很好吃，你們試一下吧，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

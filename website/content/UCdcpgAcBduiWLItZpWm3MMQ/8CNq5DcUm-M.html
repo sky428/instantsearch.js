@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做滿滿核桃的核桃蛋糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8CNq5DcUm-M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做滿滿核桃的核桃蛋糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，今天做這個合桃蛋糕，我們先要準備好食材，薯末粉，低筋麵粉都量好了，記得要加這個粉末，還有少許鹽，過篩，其實薯末粉不用過篩的，我篩完剩下的麥粉倒回去，只要打鬆粉末，接著是黃砂糖或是二砂糖或是黃糖。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:57.34" id="00:00:57.34" class="lt" onclick="jumptoTime(57, this.id)"><p>我需要將它打成粉，將黃砂糖和黃糖混合，倒入已放入室溫的牛油，合桃分40克打成粉，另外60克切碎攪拌蛋糕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:36.56" id="00:01:36.56" class="lt" onclick="jumptoTime(96, this.id)"><p>然後放入冰箱冷凍，完成了，差不多完成了，還有雞蛋，雞蛋放涼後，兩隻攪拌均勻，開始，各位朋友你們好，今天和大家分享一個合桃蛋糕，為什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:10.21" id="00:02:10.21" class="lt" onclick="jumptoTime(130, this.id)"><p>因為我看到有一個食譜我很喜歡，我很想試試做出來是怎樣的，每逢八月都有朋友課金給我，想我做一個蛋糕，由今年開始我不接受課金點餸，以前我有一個環節叫課金點餸，只要你課金，然後你就可以點一種你想看的食譜，而我會盡我所能，當然是能力範圍，我會拍一個食譜來回應課金的金主，今年我就不收，但我覺得每逢八月我都做蛋糕。</p></a>
+				<a href="#00:02:49.81" id="00:02:49.81" class="lt" onclick="jumptoTime(169, this.id)"><p>今年八月我都想做蛋糕，不過這個蛋糕很簡單，我們介紹一下材料，材料是蛋糕要求的材料，當然有合桃，合桃我分開兩部分，這裡100克合桃，60克合桃切碎，另外40克合桃磨碎，這裡有100克牛油，已經放在收銀員，然後有90克糖粉，這個糖粉是黃砂糖，我把它打成粉，然後這裡有低筋麵粉，還有全麥粉。</p></a>
+				<a href="#00:03:32.81" id="00:03:32.81" class="lt" onclick="jumptoTime(212, this.id)"><p>加了烘焙粉，我們可以開始了。</p></a>
+				<a href="#00:03:39.81" id="00:03:39.81" class="lt" onclick="jumptoTime(219, this.id)"><p>牛油和糖粉，首先用軟的膠刮，把它完全拌勻，拌成一個像軟的漿，像糕狀一樣，第一次用黃砂糖做蛋糕。</p></a>
+				<a href="#00:04:21.04" id="00:04:21.04" class="lt" onclick="jumptoTime(261, this.id)"><p>用另一個工具打發蛋糕，打發至很鬆和顏色淺色，然後加入雞蛋漿，每次加少許蛋白和打發，打至有油水分離的狀態，繼續打至均勻為止。</p></a>
+				<a href="#00:05:58.01" id="00:05:58.01" class="lt" onclick="jumptoTime(358, this.id)"><p>不用擔心，最多慢慢補救，再打至有油水分離的狀態</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.01" id="00:06:18.01" class="lt" onclick="jumptoTime(378, this.id)"><p>再打至均勻為止，有時一個步驟差一點點，很多東西就要補救，現在就打入粉類的材料，粉類已經過篩，有些是全麥粉，全麥粉不用過篩。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:37.01" id="00:06:37.01" class="lt" onclick="jumptoTime(397, this.id)"><p>只要過篩低筋麵粉和烘焙粉，再打入麵粉。</p></a>
+				<a href="#00:06:55.93" id="00:06:55.93" class="lt" onclick="jumptoTime(415, this.id)"><p>分幾次攪拌，剛才我用機器打了粉，因為我加多半隻蛋，油水分離的狀態有少少多，所以我用機器和粉打一打，吸一吸，然後攪拌，現在變成一個類似補救的行動，不然就變成整個蛋糕，我試試看可不可以重新攪拌一次，就算我失敗了，成功了，我都會告訴大家，將粉打至沒有粉粉的狀態。</p></a>
+				<a href="#00:07:44.93" id="00:07:44.93" class="lt" onclick="jumptoTime(464, this.id)"><p>麵糊打好後，就要加入所有的合桃粉，然後攪拌，我覺得這個蛋糕有點像咖啡蛋糕的類型，不是很薄，有點像磅蛋糕，成份都很類同，因為磅蛋糕的要求大約是同等比例，最後加入合桃碎，這個蛋糕應該是滿滿的合桃，每吃一口都會有很多合桃。</p></a>
+				<a href="#00:08:51.93" id="00:08:51.93" class="lt" onclick="jumptoTime(531, this.id)"><p>我們可以攤開，這個就是一個7吋的模，然後就可以將蛋糕的麵糊放進去，麵糊是比較結實的，整個就放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:17.93" id="00:09:17.93" class="lt" onclick="jumptoTime(557, this.id)"><p>謝謝觀看，下次見，這個蛋糕做好了，我們看看要不要加些核桃在上面呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:28.70" id="00:09:28.70" class="lt" onclick="jumptoTime(568, this.id)"><p>加些核桃在上面會不會好看一點呢?</p></a>
+				<a href="#00:09:31.70" id="00:09:31.70" class="lt" onclick="jumptoTime(571, this.id)"><p>選一些圓的核桃，放在上面，我想放6粒吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:39.70" id="00:09:39.70" class="lt" onclick="jumptoTime(579, this.id)"><p>這樣呢，然後放入烤箱烤，170度攝氏335度華氏烤15分鐘，然後降低至160度攝氏大約320度華氏烤15至20分鐘，蛋糕已經烤好了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:18.39" id="00:10:18.39" class="lt" onclick="jumptoTime(618, this.id)"><p>Math décidé什么</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:22.11" id="00:10:22.11" class="lt" onclick="jumptoTime(622, this.id)"><p>lorsque propagation，schedul finer，َ，пар，sizz Turns，Pluto，CHUCK，Crunch</p></a>
+				<a href="#00:10:31.87" id="00:10:31.87" class="lt" onclick="jumptoTime(631, this.id)"><p>Liz，invade，deceived</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:30.51" id="00:10:30.51" class="lt" onclick="jumptoTime(630, this.id)"><p>Bu judging，cinemat Vera，iao，OO，73，leur</p></a>
+				<a href="#00:10:29.51" id="00:10:29.51" class="lt" onclick="jumptoTime(629, this.id)"><p>grandes，years，혼，享 doświad，spaghetti，שא�наруж，besonders</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:23.73" id="00:10:23.73" class="lt" onclick="jumptoTime(623, this.id)"><p>rier，Apache，cass，野 Wrestling，放入冰箱冷藏，放入冰箱冷藏。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:5.30" id="00:11:5.30" class="lt" onclick="jumptoTime(665, this.id)"><p>bomb look millenn occurring</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:27.38" id="00:11:27.38" class="lt" onclick="jumptoTime(687, this.id)"><p>нат microphone rolls，Drive，Wan回去，kaha，adı，vised，地方，encaps cott London，Amend</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:32.48" id="00:11:32.48" class="lt" onclick="jumptoTime(692, this.id)"><p>ológELLER，th</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:29.50" id="00:11:29.50" class="lt" onclick="jumptoTime(689, this.id)"><p>leich，fog，cuánt，Inhale，る，Told，checkpoint，izing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:28.28" id="00:11:28.28" class="lt" onclick="jumptoTime(688, this.id)"><p>país，Erst，regret，Miz，akin，uchs，Guess，intelligent，포，comet，drowned，��，testosterone</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:33.54" id="00:11:33.54" class="lt" onclick="jumptoTime(693, this.id)"><p>то，roman，thousand，cheap，ena</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:14.92" id="00:11:14.92" class="lt" onclick="jumptoTime(674, this.id)"><p>1919，ye，ugu，agent，Horn，anci Witch，Anne，caption Wah，ooh，� Leonard</p></a>
+				<a href="#00:11:29.66" id="00:11:29.66" class="lt" onclick="jumptoTime(689, this.id)"><p>astre，grind，따� Gü 믿，ே，Drake，uffled，planeta，Qing，ensor，сложно，añ，יודע，ashion，inacc каким，ierte，typ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:31.80" id="00:11:31.80" class="lt" onclick="jumptoTime(691, this.id)"><p>dedans，differential，ardeş，� Player，ró Lite我不 wy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:21.02" id="00:11:21.02" class="lt" onclick="jumptoTime(681, this.id)"><p>ンド，喔</p></a>
+				<a href="#00:11:18.52" id="00:11:18.52" class="lt" onclick="jumptoTime(678, this.id)"><p>diet，萬，Emma，проф，من</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:27.78" id="00:11:27.78" class="lt" onclick="jumptoTime(687, this.id)"><p>AJ，shirt，plant，climate，todos，Klim his，labor，Religion</p></a>
+				<a href="#00:11:24.94" id="00:11:24.94" class="lt" onclick="jumptoTime(684, this.id)"><p>southwest，icion，bourg，unsafe，ruce，psychologically，nem</p></a>
+				<a href="#00:11:26.38" id="00:11:26.38" class="lt" onclick="jumptoTime(686, this.id)"><p>了，아니라，ília，トミー</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:30.26" id="00:11:30.26" class="lt" onclick="jumptoTime(690, this.id)"><p>eco，Progress，explosion，Fil，emer</p></a>
+				<a href="#00:11:35.22" id="00:11:35.22" class="lt" onclick="jumptoTime(695, this.id)"><p>Letoot，абот，Chat</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:17.48" id="00:11:17.48" class="lt" onclick="jumptoTime(677, this.id)"><p>Shaktчит，any</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:35.58" id="00:11:35.58" class="lt" onclick="jumptoTime(695, this.id)"><p>CI，여러�boat</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:25.60" id="00:11:25.60" class="lt" onclick="jumptoTime(685, this.id)"><p>ohh，comigo，'t，ardon，formal，basin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:30.54" id="00:11:30.54" class="lt" onclick="jumptoTime(690, this.id)"><p>separation，dish</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:11.52" id="00:11:11.52" class="lt" onclick="jumptoTime(671, this.id)"><p>меньше，disagree，deutlich，아� пон</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:31.08" id="00:11:31.08" class="lt" onclick="jumptoTime(691, this.id)"><p>mun，transaction，division</p></a>
+				<a href="#00:11:18.42" id="00:11:18.42" class="lt" onclick="jumptoTime(678, this.id)"><p>dismantоне，Red</p></a>
+				<a href="#00:11:27.22" id="00:11:27.22" class="lt" onclick="jumptoTime(687, this.id)"><p>bedroom，THAT benefited mentors</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:35.68" id="00:11:35.68" class="lt" onclick="jumptoTime(695, this.id)"><p>raising，Muhammad</p></a>
+				<a href="#00:11:13.36" id="00:11:13.36" class="lt" onclick="jumptoTime(673, this.id)"><p>possessions，rapp Elliot，emarkCo，Solomon，ということで Ок，登 Management，01，2024，sealed，bras，slam，vert，everybody，ern reductions，blur，damned，alis crooked，eron。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:31.72" id="00:11:31.72" class="lt" onclick="jumptoTime(691, this.id)"><p>original，richt läh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:31.08" id="00:11:31.08" class="lt" onclick="jumptoTime(691, this.id)"><p>탕，—，� grammaromme querer amendments，поз，cholesterol</p></a>
+				<a href="#00:11:35.06" id="00:11:35.06" class="lt" onclick="jumptoTime(695, this.id)"><p>programs，ели，figuring 1500，un，dynamically，rejecting，therapeutic</p></a>
+				<a href="#00:11:35.78" id="00:11:35.78" class="lt" onclick="jumptoTime(695, this.id)"><p>ไ firmware，� начала</p></a>
+				<a href="#00:11:34.04" id="00:11:34.04" class="lt" onclick="jumptoTime(694, this.id)"><p>ان tendencies，吃蛋糕陪我茶啦，好，我們來切蛋糕，Russians，каб，air，Duncan</p></a>
+				<a href="#00:12:6.71" id="00:12:6.71" class="lt" onclick="jumptoTime(726, this.id)"><p>Kn ül，ate，KEVIN，Stock，League</p></a>
+				<a href="#00:12:3.41" id="00:12:3.41" class="lt" onclick="jumptoTime(723, this.id)"><p>Fach，California，овые，怎麼辦，sonst，Alexand幹，grabbed</p></a>
+				<a href="#00:12:0.69" id="00:12:0.69" class="lt" onclick="jumptoTime(720, this.id)"><p>물，gesund，expl supre pathetic，sibling，transaction，diret，tasked，hell But，welling，accessory，инки</p></a>
+				<a href="#00:11:58.61" id="00:11:58.61" class="lt" onclick="jumptoTime(718, this.id)"><p>nouveike，vocabulary，lando</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:6.97" id="00:12:6.97" class="lt" onclick="jumptoTime(726, this.id)"><p>세� 내려，invested，nodig，est，zzle，ech admiration，WOR çıkt，ž，arrogещ，reproduction，Doonton，放入冰箱冷藏，超多蜜桃和餡，謝謝收看，這款蛋糕很輕盈，不會太硬，很香，裡面有核桃粉，也沒有掉在底下，很均勻，給大家看看，很均勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:6.36" id="00:13:6.36" class="lt" onclick="jumptoTime(786, this.id)"><p>另外有，全麥粉，和普通低筋麵粉，加上去，也不會吃到很粗糙，也不是，但你會覺得，它是比平時，蒸製的蛋糕，感覺比較raw，但你會覺得，很豐富的口感，很香的核桃味，這種蛋糕，現在暖暖的吃，很美味，但如果放進密封袋，密封盒裏</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:42.36" id="00:13:42.36" class="lt" onclick="jumptoTime(822, this.id)"><p>放一日會更加美味，很開心，試試這個茶，嗯，這個核桃蛋糕配L Ray Tea，也很美味，今天和大家分享到這，希望你們喜歡這個食譜，下次再見。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:6.36" id="00:14:6.36" class="lt" onclick="jumptoTime(846, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

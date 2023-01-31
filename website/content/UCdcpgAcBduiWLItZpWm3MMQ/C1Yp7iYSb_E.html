@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做反轉蘋果批 ｜ Homemade Apple Tarte Tatin</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'C1Yp7iYSb_E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做反轉蘋果批 ｜ Homemade Apple Tarte Tatin</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.69" id="00:00:5.69" class="lt" onclick="jumptoTime(5, this.id)"><p>各位朋友你們好!</p></a>
+				<a href="#00:00:8.69" id="00:00:8.69" class="lt" onclick="jumptoTime(8, this.id)"><p>前陣子我和大家一起摘蘋果，我摘了很多不同種類的蘋果，大蘋果因為我摘的時候已經過了當造的時間。</p></a>
+				<a href="#00:00:20.69" id="00:00:20.69" class="lt" onclick="jumptoTime(20, this.id)"><p>已經開始容易爛了，所以我早就已經摘完汁喝完了，剩下的就是這些小小的蘋果，我覺得這個蘋果很漂亮，很想保持它完整的外貌來做一個甜品。</p></a>
+				<a href="#00:00:36.69" id="00:00:36.69" class="lt" onclick="jumptoTime(36, this.id)"><p>所以我這次想和大家一起做反轉蘋果批，反轉蘋果批英文叫做Tatin，和平時的蘋果批不同的就是它容易做很多，和很方便的，如果你沒有這些小蘋果，你可以用大蘋果切粒也可以，我今天兩樣都會做，反轉蘋果批的概念，平時的蘋果批就是批皮在底，蘋果餡在上面，反轉蘋果批的概念就是反轉，就是把餡在裡面。</p></a>
+				<a href="#00:01:13.69" id="00:01:13.69" class="lt" onclick="jumptoTime(73, this.id)"><p>批皮在上面，吃的時候反轉它出來，這樣就是反轉蘋果批了，我們來看看有什麼材料，材料很簡單，有蘋果、糖、水和我們這次買了一個市售的糕皮，Tapioca Pearls來做，我們開始吧，首先我們這些東西全部推開，就是說用的焗盤方面。</p></a>
+				<a href="#00:01:45.69" id="00:01:45.69" class="lt" onclick="jumptoTime(105, this.id)"><p>我先說說我這次用的焗盤，如果你在家裡也想一起做的話，你可以有不同的考慮，你可以用這種Muffin Pan，如果家裡有大焗爐可以用整個12個，小焗爐應該有些小的6個6個買的，我因為收藏了不知道在哪裡找不到，所以這次就不用這個大的了，因為我不想開大焗爐，如果沒有這種也可以用這些Ramekin焗盤，這個也很好。</p></a>
+				<a href="#00:02:24.69" id="00:02:24.69" class="lt" onclick="jumptoTime(144, this.id)"><p>為什麼呢?因為你宴客的時候，每個客人就一個，這樣就方便了，今天我除了會用這種Ramekin做外，我還想試試用這種Bunch Cake盤來做，我就試試用這個盤做出來是怎樣的。</p></a>
+				<a href="#00:02:50.27" id="00:02:50.27" class="lt" onclick="jumptoTime(170, this.id)"><p>首先第一件事就是，酥皮不能一邊做一邊放在室溫，一定要放在雪櫃裡，它對溫度的敏感度很高，它大多數都是在冰櫃裡拿，在超級市場冰櫃裡拿，用的時候，你之前一晚，就可以在冰櫃裡放在雪櫃裡下格，然後等到它解凍，然後到現在我們可以拿出來，我拿出來做什麼呢?</p></a>
+				<a href="#00:03:25.71" id="00:03:25.71" class="lt" onclick="jumptoTime(205, this.id)"><p>就是如果你是用這些Ramekin做的，我們都要蓋好位置，弄好一個個，然後放回雪櫃裡冷藏，要裁好位置，另外就是我的蛋糕盤也是裁好一個個，裁好一個對的位置，弄好，我這一隻就是市售酥皮，還要是pre-roll好的，有些是沒有roll過的，要自己拿個木棒來把它弄開，如果你覺得不方便，最好就是用這一種。</p></a>
+				<a href="#00:04:7.63" id="00:04:7.63" class="lt" onclick="jumptoTime(247, this.id)"><p>一早就已經包好了，已經弄好一片，這樣就最方便了，接著我們可以拿一個這樣的焗盅，我們就可以蓋一個人，你可以蓋一個人，如果沒有的話，就像我這樣，然後用刀來劃也可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:38.63" id="00:04:38.63" class="lt" onclick="jumptoTime(278, this.id)"><p>這樣就一個了，然後等一下就拿它出來，它在室溫一會兒就已經很軟了，接著我們就要把它放回雪櫃裡冷藏，最好是焗之前才拿它出來，現在放入冰箱，然後我們做蛋糕盤，先把它拆開，然後將盤子放進去</p></a>
+				<a href="#00:05:11.79" id="00:05:11.79" class="lt" onclick="jumptoTime(311, this.id)"><p>壓一壓它，將中間的圓圈切開，放入冰箱冷藏。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:29.47" id="00:05:29.47" class="lt" onclick="jumptoTime(329, this.id)"><p>加入一些水和柠檬汁，切好一些蘋果，因為這是切粒的蘋果，用柠檬汁浸泡蘋果，這樣就不會太容易氧化，另外我們就開始處理這種蘋果，很簡單的，因為我要保留它前面這個出來的時候有蘋果的樣子，所以我就要在這裡切一刀，切走它的頂部，然後就用這種刮刮板，Melon Blower，然後就刮走它的芯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.58" id="00:06:38.58" class="lt" onclick="jumptoTime(398, this.id)"><p>慢慢刮就可以了，Snapchat World</p></a>
+				<a href="#00:07:29.90" id="00:07:29.90" class="lt" onclick="jumptoTime(449, this.id)"><p>off，ẫn，zep，deg，quand，Fur</p></a>
+				<a href="#00:07:20.86" id="00:07:20.86" class="lt" onclick="jumptoTime(440, this.id)"><p>Dar，YE onwards，conhe，imated，Lu，interconnect，Mutоче，kilow nostro</p></a>
+				<a href="#00:07:24.20" id="00:07:24.20" class="lt" onclick="jumptoTime(444, this.id)"><p>requirement，Burn</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:16.00" id="00:07:16.00" class="lt" onclick="jumptoTime(436, this.id)"><p>rebound，blind，rest arri under lethal</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:26.32" id="00:07:26.32" class="lt" onclick="jumptoTime(446, this.id)"><p>や sweep，boug pam，picking，לה，gitti，pocz，serie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:22.06" id="00:07:22.06" class="lt" onclick="jumptoTime(442, this.id)"><p>коммент，Ellis，ash</p></a>
+				<a href="#00:07:33.08" id="00:07:33.08" class="lt" onclick="jumptoTime(453, this.id)"><p>�ugg，ίναι</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:4.16" id="00:07:4.16" class="lt" onclick="jumptoTime(424, this.id)"><p>relieve，cuatro，��</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:28.90" id="00:07:28.90" class="lt" onclick="jumptoTime(448, this.id)"><p>invari серь，até，ै，chia，iral</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:27.58" id="00:07:27.58" class="lt" onclick="jumptoTime(447, this.id)"><p>Southwest，pear，스，š，Zwe，shelves</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:31.32" id="00:07:31.32" class="lt" onclick="jumptoTime(451, this.id)"><p>proclaimed，swear，千，rik</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:22.38" id="00:07:22.38" class="lt" onclick="jumptoTime(442, this.id)"><p>ように，humbled</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:24.22" id="00:07:24.22" class="lt" onclick="jumptoTime(444, this.id)"><p>ENA，gi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:18.06" id="00:07:18.06" class="lt" onclick="jumptoTime(438, this.id)"><p>niet，Oops，implants，second</p></a>
+				<a href="#00:07:23.32" id="00:07:23.32" class="lt" onclick="jumptoTime(443, this.id)"><p>Tam，코� struggled，cean</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:25.62" id="00:07:25.62" class="lt" onclick="jumptoTime(445, this.id)"><p>Muk vents，잔</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:30.34" id="00:07:30.34" class="lt" onclick="jumptoTime(450, this.id)"><p>cabbage，itel，Flame，communauté，wier，complicated，ун</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:26.52" id="00:07:26.52" class="lt" onclick="jumptoTime(446, this.id)"><p>жить，zeros，password，pak</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:31.64" id="00:07:31.64" class="lt" onclick="jumptoTime(451, this.id)"><p>остан 가� 얘는，adas，FC，abyte</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:24.04" id="00:07:24.04" class="lt" onclick="jumptoTime(444, this.id)"><p>quantities，ð，xe</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:31.40" id="00:07:31.40" class="lt" onclick="jumptoTime(451, this.id)"><p>unwillingерв，cocaine</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:6.28" id="00:07:6.28" class="lt" onclick="jumptoTime(426, this.id)"><p>71，قط</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:15.18" id="00:07:15.18" class="lt" onclick="jumptoTime(435, this.id)"><p>Там，welcoming，delightful</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:33.34" id="00:07:33.34" class="lt" onclick="jumptoTime(453, this.id)"><p>recover，肉不用刮走，只要刮走芯，所以我用最小的那一隻，有大有小的，整個芯刮走就可以了，好了，完成了，這裡有七個蘋果放在這裡，這裡每樣一個，切好的蘋果，我們可以下一個步驟了，我現在用1.5份糖，1份水的比例，來做這個糖漿，現在它在煮，煮到差不多的時候，我們就可以把蘋果放進去，再煮一會，然後就可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:55.30" id="00:07:55.30" class="lt" onclick="jumptoTime(475, this.id)"><p>拿去焗吧。</p></a>
+				<a href="#00:08:3.77" id="00:08:3.77" class="lt" onclick="jumptoTime(483, this.id)"><p>現在我會加少許鹽，始終全都是糖的東西都會加糖。</p></a>
+				<a href="#00:08:25.05" id="00:08:25.05" class="lt" onclick="jumptoTime(505, this.id)"><p>糖漿開始有淺黃色，因為不能一次過放所有蘋果，所以我先將剩下兩個放入ramekin煮一煮，大約蘋果在糖漿煮3-5分鐘，將所有蘋果放入煮好的ramekin，將所有蘋果放入煮好的ramekin，將所有蘋果放入煮好的ramekin，將所有糖漿倒出，小心手，現在糖漿很熱很滾，預熱焗爐，400華氏200攝氏。</p></a>
+				<a href="#00:09:19.05" id="00:09:19.05" class="lt" onclick="jumptoTime(559, this.id)"><p>將所有蘋果放入焗爐，如果怕的話可以用鉗子去做，不要碰到糖漿就可以了，這個時候就可以將這個盤子放入牛油，蘋果放入盤子裡，將蛋漿蓋在上面，喜歡的話可以掃一些蛋漿，將蛋漿放入烤箱烤20-30分鐘，剩下的糖漿繼續煮。</p></a>
+				<a href="#00:10:34.79" id="00:10:34.79" class="lt" onclick="jumptoTime(634, this.id)"><p>因為我一向都是用這個做的，沒試過用蘋果做，喜歡的話可以調整成什麼顏色。</p></a>
+				<a href="#00:10:47.79" id="00:10:47.79" class="lt" onclick="jumptoTime(647, this.id)"><p>現在這個顏色很漂亮，可以將蘋果放入烤箱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:56.79" id="00:10:56.79" class="lt" onclick="jumptoTime(656, this.id)"><p>多謝您收睇時局新聞，再會!，這個蘋果有水份，大家小心一點，不要用力把糖倒進去，輕輕地舀進去，它會出很多煙，然後蘋果的刀會出很多水，就會令到它，稀釋了剛才的糖，就不會說糖很，很，很深，很硬，很濃稠，所以我平時就做這個方法，你看看，蘋果很漂亮，然後我們攪拌一下，攪拌一下，然後就不要動它，任由它煮，你看看顏色多漂亮。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:52.73" id="00:11:52.73" class="lt" onclick="jumptoTime(712, this.id)"><p>慢慢地，現在開始就可以攪拌它，現在我煮，大約煮它3至5分鐘，我現在，煮好了，它軟了，就可以了，因為它還要焗，所以就，ok，了，你看看，顏色多漂亮，然後我們就可以舀進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:22.73" id="00:12:22.73" class="lt" onclick="jumptoTime(742, this.id)"><p>舀進去，這個焗盤裏，這個焗杯，已經放了，anf de chanting</p></a>
+				<a href="#00:12:50.83" id="00:12:50.83" class="lt" onclick="jumptoTime(770, this.id)"><p>hypertsil 한 Industrial，belonged，hypoc athlet Hog synt sistem，para，Thanks，ców，Sp 독，acks，aplד，dak，simultaneously，Natalie，crise，波 Ugh</p></a>
+				<a href="#00:12:48.61" id="00:12:48.61" class="lt" onclick="jumptoTime(768, this.id)"><p>antibiotics，humour</p></a>
+				<a href="#00:12:51.47" id="00:12:51.47" class="lt" onclick="jumptoTime(771, this.id)"><p>Verantwortung，osis</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:49.73" id="00:12:49.73" class="lt" onclick="jumptoTime(769, this.id)"><p>yogtype，os</p></a>
+				<a href="#00:12:50.53" id="00:12:50.53" class="lt" onclick="jumptoTime(770, this.id)"><p>ppings，slider</p></a>
+				<a href="#00:12:51.95" id="00:12:51.95" class="lt" onclick="jumptoTime(771, this.id)"><p>vegetables，Price，wird，safety，剩下的蘋果中間放了黑莓，剛才那個沒有放，這個就試試放，中間也放些汁，已經焗了20分鐘，但因為要拿出來，你看看它太金黃了，為什麼呢?因為我用小焗爐，因為那個高盤很高，這樣就很貼著發熱線，所以它就很深色，但是都OK的，因為一會兒是底，我們現在就要趁熱。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:33.21" id="00:13:33.21" class="lt" onclick="jumptoTime(813, this.id)"><p>做什麼呢?</p></a>
+				<a href="#00:13:35.21" id="00:13:35.21" class="lt" onclick="jumptoTime(815, this.id)"><p>就是要做一個儀式，就是要把它反轉，看看出來的效果是不是我想要的，好害怕啊，現在開始一起玩，一起見證，看看行不行，1，2，我先想想怎樣反轉，1，2，3</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:2.21" id="00:14:2.21" class="lt" onclick="jumptoTime(842, this.id)"><p>再來一次，OK，焗出來就這樣，比我想像中，有趣但又不是很漂亮，給大家看看，還有一些糖，還沒完全融化，還沒完全融化，但酥皮已經熟了，我們可以拿一些在旁邊裝飾一下，這樣會不會好看一點，這樣比較好看</p></a>
+				<a href="#00:14:40.21" id="00:14:40.21" class="lt" onclick="jumptoTime(880, this.id)"><p>給大家看看，好，我們在這個時間，就馬上把酥皮放上去，焗好，有朋友來就可以把它切開，酥皮是熟的，還有一聲的，底就已經完全焦了，但因為我們剛才反轉了，所以汁會流一點，試一下味，蘋果已經軟了，一拆開就可以吃了，最好配雪糕，但我口袋有限，所以就這樣吃了，謝謝收看，下次見，拜拜，酥皮好香，蘋果反轉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:16.38" id="00:16:16.38" class="lt" onclick="jumptoTime(976, this.id)"><p>很軟，蘋果酥皮，因為浸了汁，很甜很美味，趁熱加雪糕就開心一點，雪糕放熱了就開始融化，混合一起吃就很棒，讓大家看看，還在泡，很漂亮，現在就把它翻出來，手這樣，對，應該這樣，然後蓋上它，開始，1，2，3，起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:37.37" id="00:17:37.37" class="lt" onclick="jumptoTime(1057, this.id)"><p>嘩，很漂亮了，看到嗎?還有黃金色的醬汁，蓋上它，然後就翻出來，1，2，3，很漂亮，你看，回來了，讓你們看看，每個都做得比較好，酥皮也鬆開很多，可以放在上面，是不是很棒呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:41.67" id="00:18:41.67" class="lt" onclick="jumptoTime(1121, this.id)"><p>我們試吃吧，酥皮很脆，一層酥皮，蘋果，雪糕，蘋果，酥皮，由天亮做到天黑，先試試，嗯，很熱，蘋果很熱，酥皮很香，我喜歡這個蘋果，是我一向喜歡的煮法，但我現在想試試這個蘋果做法，很香，很濃的蘋果和焦糖味，配上這個雪糕，很好吃，請訂閱，按讚，分享，打賞支持我們，用這個做，宴客都很漂亮，每人一個。</p></a>
+				<a href="#00:20:32.91" id="00:20:32.91" class="lt" onclick="jumptoTime(1232, this.id)"><p>看看酥皮，開到一層層起花，這樣都不錯的，但這個我要再改良，在我的食譜我會再寫一個改良版的方法，讓大家可以做到不要像我這樣手忙腳亂，如果是平時做的方法，一次過做，這是最簡單的，我會重新寫好食譜，然後和大家分享，今次我摘完蘋果之後，就用蘋果做了一個甜品，做了兩款，希望大家都喜歡，下次我們再見。</p></a>
+				<a href="#00:21:12.91" id="00:21:12.91" class="lt" onclick="jumptoTime(1272, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

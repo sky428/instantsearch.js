@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>粘米粉蒸蛋糕(芝麻味) ｜粘米粉也可做蛋糕？可以呀，分享成功心得，麩質過敏也可享受美味蛋糕｜Rice Flour Steamed Cake (Gluten-free recipe)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'uD04qmI4HP8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>粘米粉蒸蛋糕(芝麻味) ｜粘米粉也可做蛋糕？可以呀，分享成功心得，麩質過敏也可享受美味蛋糕｜Rice Flour Steamed Cake (Gluten-free recipe)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.11" id="00:00:25.11" class="lt" onclick="jumptoTime(25, this.id)"><p>Hello， 各位朋友， 你們好，好似有幾個星期沒有見大家了，今天我回歸了， 可以拍片，雖然聲音仍然不太好， 但我都想拍片和大家見面，否則你們可能會忘記我了，今天我想試試用粘米粉來做蒸蛋糕，因為很多人都說現在有膚質問題， 或者肚子對小麥敏感，又或者有朋友說家中未必有焗爐，如果這樣我可不可以做蛋糕呢?</p></a>
+				<a href="#00:01:7.71" id="00:01:7.71" class="lt" onclick="jumptoTime(67, this.id)"><p>其實我很久之前都做過蒸蛋糕食譜， 那次是蒸蛋糕仔，今次想和大家試試蒸一個大小小的6吋蛋糕，用的就是粘米粉，看看做出來可不可以，我都未試過， 現在和大家一起第一次做這個芝麻味的蒸蛋糕，其實如果你不想加芝麻， 用原味都一樣好味，不如我們講下材料吧，材料我需要雞蛋， 這裡有四隻，這是大隻雞蛋， 大約50克。</p></a>
+				<a href="#00:01:54.71" id="00:01:54.71" class="lt" onclick="jumptoTime(114, this.id)"><p>另外就是糖， 糖這裡是50克，這個芝麻醬是有機的， 沒有糖的，所以如果你想吃甜一點， 因為芝麻都可能有點澀的話，你可以加少許， 加到60克都沒有問題，我用50克，粘米粉110克，液體60克牛奶1%，這是1%牛奶，你可以用全脂奶，油20克，所有材料都是用秤的方法，有個磅就可以秤好材料，我們可以開始了。</p></a>
+				<a href="#00:02:55.06" id="00:02:55.06" class="lt" onclick="jumptoTime(175, this.id)"><p>先介紹一下工具，我們需要兩個不同的玻璃碗，一個小的碗來分蛋，一個電動打蛋器</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:9.90" id="00:03:9.90" class="lt" onclick="jumptoTime(189, this.id)"><p>一個手動打蛋器，一個刮刀，一個粒底的6吋蛋糕盤，還有一些錫紙，我們現在開始了，先把4隻雞蛋分開，一邊雞蛋一邊蛋黃，蛋白盤最好是沒有油，因為油脂會令蛋白較難打起，如果想成功打起蛋白，可加少許檸檬汁或榨粉，先處理蛋黃，加入芝麻醬，拌勻</p></a>
+				<a href="#00:05:7.16" id="00:05:7.16" class="lt" onclick="jumptoTime(307, this.id)"><p>打碎後會有粒狀，所以要盡量打碎，用木刀壓碎，令它變得更稠</p></a>
+				<a href="#00:05:38.68" id="00:05:38.68" class="lt" onclick="jumptoTime(338, this.id)"><p>接着我们可以加牛奶，然後就可以加入粘米粉，這裡還有一顆大的，將麵團壓開，把粘米粉过筛</p></a>
+				<a href="#00:06:29.15" id="00:06:29.15" class="lt" onclick="jumptoTime(389, this.id)"><p>Never Orient durchaus，plain，precious，histó domain，zwyrell，zas，landlord，ligne，不行，harmed，Initirl，ír，第三，で，isyDI，torn unfair，돌，Pe Akt，elders，ISA，Ext Lö rural。</p></a>
+				<a href="#00:06:35.19" id="00:06:35.19" class="lt" onclick="jumptoTime(395, this.id)"><p>dunELLER，op，kidding，faz，hando，你们ánt，éch szczegól，ules，PI，�amar，拌至粒狀，在這個時候記得要開鑊煲水，蛋白打好後就要放進去蒸，digest impressed</p></a>
+				<a href="#00:07:17.07" id="00:07:17.07" class="lt" onclick="jumptoTime(437, this.id)"><p>prech sod，depl takich，orean，computer，erg</p></a>
+				<a href="#00:07:22.49" id="00:07:22.49" class="lt" onclick="jumptoTime(442, this.id)"><p>officer，umental，southern，bug，brunch，ikk，afore</p></a>
+				<a href="#00:07:23.09" id="00:07:23.09" class="lt" onclick="jumptoTime(443, this.id)"><p>思 hosting，citing，Bag הוא，cy 잡아，advisors，Dob�지，trace，stre節，erver，themed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:22.05" id="00:07:22.05" class="lt" onclick="jumptoTime(442, this.id)"><p>algunas，tule chauff generic，marrying</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:20.63" id="00:07:20.63" class="lt" onclick="jumptoTime(440, this.id)"><p>PorsCl，Entãoisco，yaş，työ，ática，reckless，Yo series，sustained，rasa，cuidado</p></a>
+				<a href="#00:07:15.63" id="00:07:15.63" class="lt" onclick="jumptoTime(435, this.id)"><p>pro oyn，我地而家刮一刮佢先，現在看似很稠，但不用怕，因為加了油，現在就是這個質地，最後加入油，現在攪拌一下，全部加進去後就會變成一個個蛋糊，我們盡量攪拌均勻</p></a>
+				<a href="#00:08:11.74" id="00:08:11.74" class="lt" onclick="jumptoTime(491, this.id)"><p>要用點力，你看看，大約這個質地就可以了，打蛋白之前，我們先把蛋糊包好，因為蒸的時候，怕水蒸氣會滑倒，打蛋白，打蛋白後分2-3次加入糖</p></a>
+				<a href="#00:09:14.75" id="00:09:14.75" class="lt" onclick="jumptoTime(554, this.id)"><p>攪拌均勻，現在蛋白很多泡，慢慢打，直至泡變得很綿密，然後會看到很多紋理，現在泡很細，但未成功，你看，它很鈍，我們繼續打，現在它濕性蛋白，凹凹是鈍的，不是尖向上，還差一點點就成功，現在凹凹是直的，這樣就成功了，再打就會過硬，打到這裡，紋理很清晰就可以了，然後我們把三分之一的蛋白放進去，拌一拌，因為這個蛋漿仍然很濃稠，所以我們要加一點蛋白，讓它再鬆一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:31.57" id="00:10:31.57" class="lt" onclick="jumptoTime(631, this.id)"><p>現在它鬆很多了，我們就不需要這個了，用抹刀再放</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:49.57" id="00:10:49.57" class="lt" onclick="jumptoTime(649, this.id)"><p>然後就把它拌勻，因為這裡有芝麻醬和油，所以蛋白很容易燒焦，所以我們要快快手手拌勻就可以了，有些人會把蛋白和芝麻醬混在一起，其實隨你喜歡，看就看你的手勢吧，把蛋全部放進去，然後我們快速把它拌勻，רים Update</p></a>
+				<a href="#00:12:10.95" id="00:12:10.95" class="lt" onclick="jumptoTime(730, this.id)"><p>conhe Smooth Brent，meist</p></a>
+				<a href="#00:12:10.95" id="00:12:10.95" class="lt" onclick="jumptoTime(730, this.id)"><p>Met，damping</p></a>
+				<a href="#00:12:12.61" id="00:12:12.61" class="lt" onclick="jumptoTime(732, this.id)"><p>vy，będzie，走吧，Investig Academy，motherf JACK committee，Fraser</p></a>
+				<a href="#00:12:11.05" id="00:12:11.05" class="lt" onclick="jumptoTime(731, this.id)"><p>MAYOR，wollte，조 Pierce，climbing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:15.37" id="00:12:15.37" class="lt" onclick="jumptoTime(735, this.id)"><p>bureaucracy，an enhancing，comma，FROM，денег，Veh May，vt，Hopefully，othes，Fantastic</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:12.57" id="00:12:12.57" class="lt" onclick="jumptoTime(732, this.id)"><p>Dor seekers，peeling，Munich，voiced</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:15.81" id="00:12:15.81" class="lt" onclick="jumptoTime(735, this.id)"><p>.)，vedere，spreadsheet，homeless</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:8.47" id="00:12:8.47" class="lt" onclick="jumptoTime(728, this.id)"><p>Fahriam，Odyssey，inteligмер</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:5.51" id="00:12:5.51" class="lt" onclick="jumptoTime(725, this.id)"><p>judiciary，okol，QUE siguiente，ordin members</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:9.01" id="00:12:9.01" class="lt" onclick="jumptoTime(729, this.id)"><p>Parkinson，óle，realms</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:19.87" id="00:12:19.87" class="lt" onclick="jumptoTime(739, this.id)"><p>Guitar，resting，доллар，syllables</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:20.61" id="00:12:20.61" class="lt" onclick="jumptoTime(740, this.id)"><p>industri cleared，nent，十kill，對了，unplug vanish</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:19.41" id="00:12:19.41" class="lt" onclick="jumptoTime(739, this.id)"><p>ычно，초ate，filmmakers，альные</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:20.17" id="00:12:20.17" class="lt" onclick="jumptoTime(740, this.id)"><p>äft host，яж，τις，dimension literacy，ณ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:21.79" id="00:12:21.79" class="lt" onclick="jumptoTime(741, this.id)"><p>�nymi，sewortion，blanc，� ،，放入冰箱冷凍2小時，將冰箱的冷凍雪櫃放入蛋糕中</p></a>
+				<a href="#00:12:45.13" id="00:12:45.13" class="lt" onclick="jumptoTime(765, this.id)"><p>將雪櫃放入冰箱冷凍，關火，不要開蓋，等5分鐘，蒸好了，然後抖一抖，有些水，所以用錫紙包著比較好，可能蒸久了，所以蒸到上來後掉下去，現在打開看看，現在是這樣的，給大家看看，再做一個</p></a>
+				<a href="#00:13:59.03" id="00:13:59.03" class="lt" onclick="jumptoTime(839, this.id)"><p>Original，imbalance，consumers，bottom，ion，breat ATM，inhale，bard Yi，yl，Roberto，Style，Jeez，personal，只 stern，quier representa，appliances，Bu moisture，雖然它看起來不漂亮，但我覺得它應該很好吃的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:15.22" id="00:14:15.22" class="lt" onclick="jumptoTime(855, this.id)"><p>因為我剛才試了面糊，現在把它切開，給大家看看它的環節，這裡的氣泡比較緊，這裡的氣泡比較好，我先試一下味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:9.22" id="00:15:9.22" class="lt" onclick="jumptoTime(909, this.id)"><p>味道還不錯，不太甜，質地不錯，好，這次就不等它了，直接關火，拿它出來，好，elephant，shores，iyi，üzik</p></a>
+				<a href="#00:15:42.17" id="00:15:42.17" class="lt" onclick="jumptoTime(942, this.id)"><p>Saudi，pong，완� Links，Pl，Rede，Virginia，iasm，pace</p></a>
+				<a href="#00:15:41.85" id="00:15:41.85" class="lt" onclick="jumptoTime(941, this.id)"><p>tweinating，Jack，horiz зд</p></a>
+				<a href="#00:15:43.05" id="00:15:43.05" class="lt" onclick="jumptoTime(943, this.id)"><p>eping，ativos，ominous，northwest，Rivera，footing，�irsin，deep</p></a>
+				<a href="#00:15:35.63" id="00:15:35.63" class="lt" onclick="jumptoTime(935, this.id)"><p>먼，prophetic，Anime，wire，revealed fem� الف taking Just grated</p></a>
+				<a href="#00:16:7.47" id="00:16:7.47" class="lt" onclick="jumptoTime(967, this.id)"><p>firsthand，ot난，näm greasy</p></a>
+				<a href="#00:16:4.89" id="00:16:4.89" class="lt" onclick="jumptoTime(964, this.id)"><p>저기，investigator，Julia，Riley</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:10.81" id="00:16:10.81" class="lt" onclick="jumptoTime(970, this.id)"><p>ную，выз，tuck</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:12.83" id="00:16:12.83" class="lt" onclick="jumptoTime(972, this.id)"><p>asi，подум，Trans handled，sur susceptible</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:7.27" id="00:16:7.27" class="lt" onclick="jumptoTime(967, this.id)"><p>杯，orbits，�면</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:13.05" id="00:16:13.05" class="lt" onclick="jumptoTime(973, this.id)"><p>maxim，Opera，making</p></a>
+				<a href="#00:16:2.01" id="00:16:2.01" class="lt" onclick="jumptoTime(962, this.id)"><p>Neder，Ally，Ru，os，Artist，판</p></a>
+				<a href="#00:16:1.55" id="00:16:1.55" class="lt" onclick="jumptoTime(961, this.id)"><p>FS，встр</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:43.93" id="00:15:43.93" class="lt" onclick="jumptoTime(943, this.id)"><p>าม，하겠습니다，och</p></a>
+				<a href="#00:16:9.09" id="00:16:9.09" class="lt" onclick="jumptoTime(969, this.id)"><p>WORThank withstand，� aba</p></a>
+				<a href="#00:15:57.15" id="00:15:57.15" class="lt" onclick="jumptoTime(957, this.id)"><p>sneakers，میں</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:8.43" id="00:16:8.43" class="lt" onclick="jumptoTime(968, this.id)"><p>raus，Bunlauf，list，knee，associ regulation，mounts，Transportation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:10.47" id="00:16:10.47" class="lt" onclick="jumptoTime(970, this.id)"><p>amp，´ comen，boug chain，Chris，tranqu 1960，Rod meeting，해요，Ventado</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:58.03" id="00:15:58.03" class="lt" onclick="jumptoTime(958, this.id)"><p>seperti，Motors，th，Press feathers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:4.55" id="00:16:4.55" class="lt" onclick="jumptoTime(964, this.id)"><p>государ，Bug，Language，mental，tense，saute，dentist，oops，fiction，το，Young，現在開始收縮，我會在旁邊搖一搖，這樣會比較容易脫模</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:1.59" id="00:16:1.59" class="lt" onclick="jumptoTime(961, this.id)"><p>讓大家看看，現在已經開始脫模了，Beatifice mechanism</p></a>
+				<a href="#00:16:30.15" id="00:16:30.15" class="lt" onclick="jumptoTime(990, this.id)"><p>irgendwoפר lower，clerk，acuerdo</p></a>
+				<a href="#00:16:46.09" id="00:16:46.09" class="lt" onclick="jumptoTime(1006, this.id)"><p>Grandpa，Uhr，Michnicos，보�े，buttetus</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:48.37" id="00:16:48.37" class="lt" onclick="jumptoTime(1008, this.id)"><p>supercomputer inspire，imported，professor，ju Sindance，artifact，올� regiment includções，contrario</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:48.15" id="00:16:48.15" class="lt" onclick="jumptoTime(1008, this.id)"><p>pads，ию，なん</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:26.61" id="00:16:26.61" class="lt" onclick="jumptoTime(986, this.id)"><p>yll，Gonna</p></a>
+				<a href="#00:16:48.19" id="00:16:48.19" class="lt" onclick="jumptoTime(1008, this.id)"><p>Flip，ily，� consequently</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:31.97" id="00:16:31.97" class="lt" onclick="jumptoTime(991, this.id)"><p>полностью，Without，deck，الخ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:40.05" id="00:16:40.05" class="lt" onclick="jumptoTime(1000, this.id)"><p>bringing，ghetto，dos，추，ition</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:34.31" id="00:16:34.31" class="lt" onclick="jumptoTime(994, this.id)"><p>groaning，proactive</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:45.01" id="00:16:45.01" class="lt" onclick="jumptoTime(1005, this.id)"><p>pref acc，Fe Two，therapy，Dav就是說</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:44.15" id="00:16:44.15" class="lt" onclick="jumptoTime(1004, this.id)"><p>大家都，cios，Mythical，oles，Wij，對 individ commer ந</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:41.37" id="00:16:41.37" class="lt" onclick="jumptoTime(1001, this.id)"><p>��，�도，けれ，windいつ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:27.53" id="00:16:27.53" class="lt" onclick="jumptoTime(987, this.id)"><p>ату，señora</p></a>
+				<a href="#00:16:42.29" id="00:16:42.29" class="lt" onclick="jumptoTime(1002, this.id)"><p>Love，emo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:24.09" id="00:16:24.09" class="lt" onclick="jumptoTime(984, this.id)"><p>壓X，Привет，안�ack，minus，descending，не，ease</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:44.39" id="00:16:44.39" class="lt" onclick="jumptoTime(1004, this.id)"><p>Fromير，yse，iedzieć，Dr lays</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:42.49" id="00:16:42.49" class="lt" onclick="jumptoTime(1002, this.id)"><p>zep，260cep cleans brush，Alaska</p></a>
+				<a href="#00:17:2.35" id="00:17:2.35" class="lt" onclick="jumptoTime(1022, this.id)"><p>settings，horrible</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:5.99" id="00:17:5.99" class="lt" onclick="jumptoTime(1025, this.id)"><p>Denmark，belki，persecims，懂 Sikh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:7.85" id="00:17:7.85" class="lt" onclick="jumptoTime(1027, this.id)"><p>competition，��，conservatives，wrench，chill，Wohn</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:56.41" id="00:16:56.41" class="lt" onclick="jumptoTime(1016, this.id)"><p>mult crabs，illness，Fore fluid</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:57.89" id="00:16:57.89" class="lt" onclick="jumptoTime(1017, this.id)"><p>оля，suck</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:1.93" id="00:17:1.93" class="lt" onclick="jumptoTime(1021, this.id)"><p>Więc，extrku，señora</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:5.89" id="00:17:5.89" class="lt" onclick="jumptoTime(1025, this.id)"><p>ins，psychological</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:55.97" id="00:16:55.97" class="lt" onclick="jumptoTime(1015, this.id)"><p>otional，士，Cool Party，Belgium</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:2.15" id="00:17:2.15" class="lt" onclick="jumptoTime(1022, this.id)"><p>ensitive，==，mniej，performance，使 53</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:7.51" id="00:17:7.51" class="lt" onclick="jumptoTime(1027, this.id)"><p>ز，referrals，drizzle，ável，eks，treble，zuk，anf</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:47.31" id="00:16:47.31" class="lt" onclick="jumptoTime(1007, this.id)"><p>angles，rum</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:1.39" id="00:17:1.39" class="lt" onclick="jumptoTime(1021, this.id)"><p>dissolve，crowd，interaction</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:4.21" id="00:17:4.21" class="lt" onclick="jumptoTime(1024, this.id)"><p>overlapping，್，Daha，Cute</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:0.37" id="00:17:0.37" class="lt" onclick="jumptoTime(1020, this.id)"><p>�에，Cette，academic，invites，tes，submitted，cou сч，соглас，MP</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:53.55" id="00:16:53.55" class="lt" onclick="jumptoTime(1013, this.id)"><p>intersection consciousness，acompan，aka</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:5.55" id="00:17:5.55" class="lt" onclick="jumptoTime(1025, this.id)"><p>Nord，скоро</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:6.43" id="00:17:6.43" class="lt" onclick="jumptoTime(1026, this.id)"><p>prime，reb river，ее，ist，twist</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:5.49" id="00:17:5.49" class="lt" onclick="jumptoTime(1025, this.id)"><p>егда，了吧 página，moo</p></a>
+				<a href="#00:17:11.99" id="00:17:11.99" class="lt" onclick="jumptoTime(1031, this.id)"><p>묻，pareil，entry，List</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:52.37" id="00:16:52.37" class="lt" onclick="jumptoTime(1012, this.id)"><p>inspired，nast thesis，degradation，byte，�exhales시다</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:2.77" id="00:17:2.77" class="lt" onclick="jumptoTime(1022, this.id)"><p>slaves，emas，structural</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:8.27" id="00:17:8.27" class="lt" onclick="jumptoTime(1028, this.id)"><p>amo，emblem</p></a>
+				<a href="#00:17:12.53" id="00:17:12.53" class="lt" onclick="jumptoTime(1032, this.id)"><p>flux，tempor，instrumental，naturЭто</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:7.53" id="00:17:7.53" class="lt" onclick="jumptoTime(1027, this.id)"><p>Exerc，missile</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:10.47" id="00:17:10.47" class="lt" onclick="jumptoTime(1030, this.id)"><p>root，喜歡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:15.15" id="00:17:15.15" class="lt" onclick="jumptoTime(1035, this.id)"><p>umin，electricity</p></a>
+				<a href="#00:16:54.71" id="00:16:54.71" class="lt" onclick="jumptoTime(1014, this.id)"><p>Ya，..</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:16.05" id="00:17:16.05" class="lt" onclick="jumptoTime(1036, this.id)"><p>object，こ，eso，っちゃ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:10.97" id="00:17:10.97" class="lt" onclick="jumptoTime(1030, this.id)"><p>ldigt，Jeżeli</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:8.13" id="00:17:8.13" class="lt" onclick="jumptoTime(1028, this.id)"><p>抓 captain，ew</p></a>
+				<a href="#00:17:16.77" id="00:17:16.77" class="lt" onclick="jumptoTime(1036, this.id)"><p>reat，abdominal</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:7.57" id="00:17:7.57" class="lt" onclick="jumptoTime(1027, this.id)"><p>sach，ful，uclear</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:1.97" id="00:17:1.97" class="lt" onclick="jumptoTime(1021, this.id)"><p>dir auction，beautleist，minimum，ying，Also，>>[ ST</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:10.27" id="00:17:10.27" class="lt" onclick="jumptoTime(1030, this.id)"><p>여러，oks，레� Mikur Points，Inc��，��cę，альной</p></a>
+				<a href="#00:17:7.65" id="00:17:7.65" class="lt" onclick="jumptoTime(1027, this.id)"><p>gro messenger，psychiat，depends embroidery，insulting，attackers</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:11.73" id="00:17:11.73" class="lt" onclick="jumptoTime(1031, this.id)"><p>Attorney，universal，去arı</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:10.61" id="00:17:10.61" class="lt" onclick="jumptoTime(1030, this.id)"><p>怕，�יד，repentance</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:15.55" id="00:17:15.55" class="lt" onclick="jumptoTime(1035, this.id)"><p>발생，IM，самый，放置一会，同样的材料，做出来的不同高度，其中一个原因是我蒸了太久，火候大了一点，我用小火，蒸少了5分钟，没有关火再等它干或冷，直接拿出来，就会有这个效果，很有彈性，下次再做會更好，試食，好鮮嫩，很香芝麻味，很少甜，如果想食到像蛋糕般甜，可加60克，今天用粘米粉做這個蛋糕，芝麻味很好食，如果對小麥或膚質敏感，可以試食這個蛋糕。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:26.67" id="00:19:26.67" class="lt" onclick="jumptoTime(1166, this.id)"><p>多謝您的收看，下次再見。</p></a>
+</div>
+	</body>
+</html>

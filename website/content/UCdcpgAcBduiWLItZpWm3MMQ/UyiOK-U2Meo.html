@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>巴斯克燒芝士蛋糕 | Basque Burnt Cheesecake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UyiOK-U2Meo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>巴斯克燒芝士蛋糕 | Basque Burnt Cheesecake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.41" id="00:00:4.41" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友，你們好!</p></a>
+				<a href="#00:00:6.41" id="00:00:6.41" class="lt" onclick="jumptoTime(6, this.id)"><p>上一集我們做了一個焗豆腐芝士蛋糕，我看到，反正都做芝士蛋糕，不如再做多一個，近來我在想，我應該做什麼芝士蛋糕好?</p></a>
+				<a href="#00:00:20.41" id="00:00:20.41" class="lt" onclick="jumptoTime(20, this.id)"><p>我想做一個很簡單，但又很特別的，這次我們一起做一個叫做Basque Cheesecake，它是什麼呢?就是這個樣子的，給你們看，黑黑的，也不是，是燒焦的蛋糕，這個芝士蛋糕在今年年初，其實有很多外國媒體都說，這是今年應該會很流行的芝士蛋糕，不過我不是看到有很多貼文，不過我要找它的中文名字，真的蠻難的。</p></a>
+				<a href="#00:01:10.41" id="00:01:10.41" class="lt" onclick="jumptoTime(70, this.id)"><p>我看不到有人做，所以我就試試做，中文如果做這個Basque這個地方，這個名字，其實中文叫什麼?巴斯克?</p></a>
+				<a href="#00:01:24.41" id="00:01:24.41" class="lt" onclick="jumptoTime(84, this.id)"><p>它是法國其中一個地區的地方，我找過很多關於法國食譜的書，我都看不到這個蛋糕，但我上網搜尋，它真的有出現，中文就沒有，英文就有出現，很多時候都會加一個Burnt字，即是燒焦的蛋糕，我現在唯有將它的名字叫做法式燒蛋糕，我們今天就一起做法式燒蛋糕，前面就是所有材料，當然還有少少的Vanilla和鹽，這裡有什麼材料，不如我先講解材料。</p></a>
+				<a href="#00:02:8.41" id="00:02:8.41" class="lt" onclick="jumptoTime(128, this.id)"><p>我要有兩件250克，各自250克的忌廉芝士，已經放了室溫一個多小時，它已經很軟，然後有四隻雞蛋，150g 砂糖，15g 低筋麵粉，290ml 忌廉，事不宜遲 開始做吧，首先把忌廉芝士撕出來，可以用自己喜歡的牌子，開始做這個的時候，我已經開了一個焗爐，預熱一個焗爐，這個蛋糕需要的焗爐溫度都頗高的。</p></a>
+				<a href="#00:03:18.91" id="00:03:18.91" class="lt" onclick="jumptoTime(198, this.id)"><p>就是420度，428度，差不多吧，要高溫一點來做的，你看看，很鬆軟的，因為已經室溫了，先把它弄開一點，然後把糖放進去，很簡單，我們就打鑊它，刮刮它，拌一拌，然後打，conventional</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:42.59" id="00:04:42.59" class="lt" onclick="jumptoTime(282, this.id)"><p>Ok，ака，chte，!..</p></a>
+				<a href="#00:04:39.15" id="00:04:39.15" class="lt" onclick="jumptoTime(279, this.id)"><p>Soo，Oklahoma，NAS，Tommy，traditions，現在已經很滑了，這個時候就要加雞蛋了，雞蛋我會在這裡加一點點的低筋麵粉，加雞蛋的時候我都會加一點點的低筋麵粉，這個蛋糕是甜的，我會加少許鹽和蛋糕粉，然後攪拌均勻，蛋糕很簡單，將所有材料拌勻，然後將雞蛋逐一加入，不要一次過加太多，否則蛋糕會起粒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:57.60" id="00:05:57.60" class="lt" onclick="jumptoTime(357, this.id)"><p>這樣攪拌便會分離，我們用攪拌機攪拌一下，所以要慢慢加雞蛋，逐一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:54.60" id="00:06:54.60" class="lt" onclick="jumptoTime(414, this.id)"><p>字幕by索兰娅·，拌勻，不要太黏，mentortoiviamente</p></a>
+				<a href="#00:07:25.18" id="00:07:25.18" class="lt" onclick="jumptoTime(445, this.id)"><p>нес，comen="，Germany，monetary，continuum</p></a>
+				<a href="#00:07:33.34" id="00:07:33.34" class="lt" onclick="jumptoTime(453, this.id)"><p>infinity，plateau，adem，disturb</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:38.64" id="00:07:38.64" class="lt" onclick="jumptoTime(458, this.id)"><p>wond Table，bored，ignqui</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:23.04" id="00:07:23.04" class="lt" onclick="jumptoTime(443, this.id)"><p>Soft，Fourth，implic Tonight</p></a>
+				<a href="#00:07:35.64" id="00:07:35.64" class="lt" onclick="jumptoTime(455, this.id)"><p>Brettes，textile，aley，주</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:32.06" id="00:07:32.06" class="lt" onclick="jumptoTime(452, this.id)"><p>app fiery，tradition，lash，schlimm，Chart�이</p></a>
+				<a href="#00:07:25.18" id="00:07:25.18" class="lt" onclick="jumptoTime(445, this.id)"><p>tek括，towards，slogigans，Pods，공，imagine</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:29.26" id="00:07:29.26" class="lt" onclick="jumptoTime(449, this.id)"><p>ring，bit，dynamically，Blo Nichtashing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:23.58" id="00:07:23.58" class="lt" onclick="jumptoTime(443, this.id)"><p>있지만，comfort Tiny</p></a>
+				<a href="#00:07:32.94" id="00:07:32.94" class="lt" onclick="jumptoTime(452, this.id)"><p>inea，rieb，orsa，linked contain，所以要不時刮一下，令它可以混和均勻，然後我們就要塗上護膚霜，拌勻</p></a>
+				<a href="#00:08:20.01" id="00:08:20.01" class="lt" onclick="jumptoTime(500, this.id)"><p>攪拌均勻，urst Microsoft 있었</p></a>
+				<a href="#00:09:13.87" id="00:09:13.87" class="lt" onclick="jumptoTime(553, this.id)"><p>bula，GIR suddenly，聲，팀，Brother，posters，dzie，Voilà，imir，franc spinning，Zhou，usted，är，で，Ore，aven，Sami，diplomatic，unch hearts，slate，mate，eleowana，defeat，DX。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:49.75" id="00:08:49.75" class="lt" onclick="jumptoTime(529, this.id)"><p>Steven，rehabil company，слuster，möchten</p></a>
+				<a href="#00:08:58.61" id="00:08:58.61" class="lt" onclick="jumptoTime(538, this.id)"><p>gluc，技 nadzieję，duties，DS，by，youth，ided，search，// mornings，Ведь� Rud apart，ика，constant，관� rehabilitation，incr Gaussian，ville，below，muk escal storyline，rooms。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:44.87" id="00:08:44.87" class="lt" onclick="jumptoTime(524, this.id)"><p>abetes</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:56.43" id="00:08:56.43" class="lt" onclick="jumptoTime(536, this.id)"><p>bees，sneeze，subway，ookie，ики，slowly，� emperor，multiplied，ney，exem remaining，rel，малfriendly，Grace，litres，Sex，Hay，ogóle，Work，optimizo，現在要鋪上紙，因為高溫，所以需要兩張紙，這個蛋糕比較粗獷。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:28.03" id="00:09:28.03" class="lt" onclick="jumptoTime(568, this.id)"><p>比較豪邁，所以不需要鋪得很漂亮，紙壓下去就可以了，需要兩張紙，放在盤子中間，然後壓下去，中和一下就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:58.52" id="00:09:58.52" class="lt" onclick="jumptoTime(598, this.id)"><p>quandoSpe monarch は，imply，earthquakes，tram，française，get，kıriß，blem yapıyor，hoe，pound，гораз baker，bus digitally，為，vinyl，klich，ky verändert，커� rob Fourier。</p></a>
+				<a href="#00:10:8.64" id="00:10:8.64" class="lt" onclick="jumptoTime(608, this.id)"><p>utors，antas，eps，பட Separien，就是這樣， 做好蛋糕底，就是這樣， 做好焗蘿蔔糍，這個是7吋蛋糕模，本來打算做兩個小蛋糕，為什麼呢? 因為我想試試可否放進，一個放進氣炸鍋，看看可否用它來焗，但後來發覺放進去太近火，上面發熱的地方， 根本不可以這樣做，所以最後我把它分成兩個。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:52.75" id="00:10:52.75" class="lt" onclick="jumptoTime(652, this.id)"><p>一大一小放進傳統焗爐，這個蛋糕你喜歡的話可以過篩，如果懶的話， 可以直接倒進去，倒完一個又一個，不用倒滿，留些空間讓它焗，留些空位讓它焗 讓它脹起，現在我做了兩個，你也會問 你一個大一個小的，一會兒出來怎樣，這個就短些時間早些拿出來，這個就放下去焗久些，不是說這樣 一會兒出來看看怎樣，經過我自己和自己開會的決定。</p></a>
+				<a href="#00:11:59.24" id="00:11:59.24" class="lt" onclick="jumptoTime(719, this.id)"><p>我就想連小的也不賣，全部放下去用一個來焗，現在我用一個七吋的來焗，看看它出來是怎樣，有些泡沫 撩一下它，令它沒有那麼起泡，一會兒出來的時候 希望不會那麼噁心，這樣，這裡它高了出來不要緊，它一會兒也會升的，所以升它其實是沒有問題的，現在放下去焗 420度焗它，我在考慮焗它30分鐘起標計，一會兒回來。</p></a>
+				<a href="#00:12:47.24" id="00:12:47.24" class="lt" onclick="jumptoTime(767, this.id)"><p>焗好回來 蛋糕焗好了，我焗了它最後焗了它50分鐘，它現在最後的時候，我想它再好看些，我就再用上火令它再焦一點再起一點，現在我放涼，放涼後就放回雪櫃冷凍，幾個小時就可以吃了，我已經冷凍了它幾個小時，其實可以冷凍久些，但我想趁還有日光拍這條影片，所以現在拍，現在已經冷凍好了，它已經比較硬實。</p></a>
+				<a href="#00:13:21.24" id="00:13:21.24" class="lt" onclick="jumptoTime(801, this.id)"><p>因為剛才焗出來的時候，它比較像軟心，很軟心的感覺，現在可以，現在就硬一點，我開始鬆一鬆它，然後我就要升起它，然後就把它打開，然後我們就可以拆開它了，輕輕地鬆開第一張紙，然後再鬆開第二張紙，這樣你就會看到，我剛才告訴你們，它是很rustic的感覺，就是這樣，看到嗎，就是不規則的形狀，是一個燒蛋糕。</p></a>
+				<a href="#00:14:26.96" id="00:14:26.96" class="lt" onclick="jumptoTime(866, this.id)"><p>燒的芝士蛋糕，我已經把它放在桌上，給大家看一下，它旁邊也是有點焦，底部也是有點焦，金黃色的，唯獨是有一個遺憾，就是有一條裂痕，但是我自己覺得很滿意，因為始終是第一次做，我覺得這個也是一個很特別的芝士蛋糕，現在就開始切試味，很軟，一切就已經可以吃下去了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:10.56" id="00:15:10.56" class="lt" onclick="jumptoTime(910, this.id)"><p>大家看一下，給大家看一下，是不是很漂亮?很綿密的蛋糕，很滑的感覺，你見不見到?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:46.12" id="00:15:46.12" class="lt" onclick="jumptoTime(946, this.id)"><p>我就試吃了，給大家看看，放進去，很軟的，底部也是金黃色的，入口即溶，本來是一件芝士蛋糕，放進口裏就變成一口忌廉，很忌廉，這個食譜不是很甜，其實已經足夠了，外面燒得焦香了，很香，今天介紹到這裏，也很感謝課金給我的金主，祝你生日快樂，下次再見。</p></a>
+</div>
+	</body>
+</html>

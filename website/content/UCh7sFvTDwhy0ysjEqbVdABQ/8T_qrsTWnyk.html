@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>how to use notion 💻💡 notion setup tutorial + free template!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8T_qrsTWnyk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>how to use notion 💻💡 notion setup tutorial + free template!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello my sweet potatoes， it's Michelle.</p></a>
+				<a href="#00:00:1.60" id="00:00:1.60" class="lt" onclick="jumptoTime(1, this.id)"><p>And today I'm gonna show you how to take your notion from this to this.</p></a>
+				<a href="#00:00:7.20" id="00:00:7.20" class="lt" onclick="jumptoTime(7, this.id)"><p>And this.</p></a>
+				<a href="#00:00:9.00" id="00:00:9.00" class="lt" onclick="jumptoTime(9, this.id)"><p>And this.</p></a>
+				<a href="#00:00:10.50" id="00:00:10.50" class="lt" onclick="jumptoTime(10, this.id)"><p>This video is like a part 2.</p></a>
+				<a href="#00:00:11.80" id="00:00:11.80" class="lt" onclick="jumptoTime(11, this.id)"><p>I already filmed my notion tour video，which I will link up here or in the description box.</p></a>
+				<a href="#00:00:16.90" id="00:00:16.90" class="lt" onclick="jumptoTime(16, this.id)"><p>But I basically walked you through my entire notion workspace，showed you all of my pages and how I use all of them to stay organized.</p></a>
+				<a href="#00:00:23.80" id="00:00:23.80" class="lt" onclick="jumptoTime(23, this.id)"><p>But now I'm gonna show you how I actually set everything up.</p></a>
+				<a href="#00:00:26.10" id="00:00:26.10" class="lt" onclick="jumptoTime(26, this.id)"><p>I learned a lot of little tips and tricks along the way，that I wanted to share with you guys today.</p></a>
+				<a href="#00:00:30.40" id="00:00:30.40" class="lt" onclick="jumptoTime(30, this.id)"><p>I spent a few hours every day for about a week，setting up all the pages， using them，making little adjustments as I went along.</p></a>
+				<a href="#00:00:37.00" id="00:00:37.00" class="lt" onclick="jumptoTime(37, this.id)"><p>There's definitely a learning curve，but I wouldn't be too intimidated by it either，because it is pretty straightforward to learn.</p></a>
+				<a href="#00:00:42.80" id="00:00:42.80" class="lt" onclick="jumptoTime(42, this.id)"><p>So here are my top tips that I found to be super helpful，when I was setting up my notion，and trying to get it to look all aesthetic.</p></a>
+				<a href="#00:00:48.70" id="00:00:48.70" class="lt" onclick="jumptoTime(48, this.id)"><p>I think if something looks good，then I'm more likely to actually use it.</p></a>
+				<a href="#00:00:52.30" id="00:00:52.30" class="lt" onclick="jumptoTime(52, this.id)"><p>So let's start with the basics.</p></a>
+				<a href="#00:00:53.90" id="00:00:53.90" class="lt" onclick="jumptoTime(53, this.id)"><p>So when you create your notion，you can just sign up with a Google account.</p></a>
+				<a href="#00:00:57.70" id="00:00:57.70" class="lt" onclick="jumptoTime(57, this.id)"><p>And notion has a bunch of templates that are pre-made already，but I kind of wanted to start from scratch.</p></a>
+				<a href="#00:01:2.80" id="00:01:2.80" class="lt" onclick="jumptoTime(62, this.id)"><p>That way I could really learn the ropes，and customize everything to fit my needs.</p></a>
+				<a href="#00:01:6.60" id="00:01:6.60" class="lt" onclick="jumptoTime(66, this.id)"><p>I did spend a lot of time in the beginning，just gathering a lot of inspo like on Pinterest.</p></a>
+				<a href="#00:01:10.80" id="00:01:10.80" class="lt" onclick="jumptoTime(70, this.id)"><p>That's where I get most of my inspo.</p></a>
+				<a href="#00:01:12.70" id="00:01:12.70" class="lt" onclick="jumptoTime(72, this.id)"><p>And I made a list of all the different types of pages，that I wanted like an agenda，a content planner， a journal， a goals page.</p></a>
+				<a href="#00:01:19.80" id="00:01:19.80" class="lt" onclick="jumptoTime(79, this.id)"><p>So one of the first things that I always like to do，when I'm setting up my pages，is to change up the font，depending on the look and feel that I want for the pages.</p></a>
+				<a href="#00:01:27.70" id="00:01:27.70" class="lt" onclick="jumptoTime(87, this.id)"><p>And to do that，all you have to do is just click the three dots，in the top right corner，and choose between the default， serif or monofonts.</p></a>
+				<a href="#00:01:35.80" id="00:01:35.80" class="lt" onclick="jumptoTime(95, this.id)"><p>I usually use default and serif.</p></a>
+				<a href="#00:01:37.60" id="00:01:37.60" class="lt" onclick="jumptoTime(97, this.id)"><p>And while I'm here，I also usually like to toggle on small text and full width.</p></a>
+				<a href="#00:01:42.90" id="00:01:42.90" class="lt" onclick="jumptoTime(102, this.id)"><p>That way I can see more on one page.</p></a>
+				<a href="#00:01:45.90" id="00:01:45.90" class="lt" onclick="jumptoTime(105, this.id)"><p>And then something else that I always like to do，especially on my dashboard，is to add icons to my main pages.</p></a>
+				<a href="#00:01:52.20" id="00:01:52.20" class="lt" onclick="jumptoTime(112, this.id)"><p>And you can do that by opening up a page，click add icon at the top and choosing an emoji.</p></a>
+				<a href="#00:01:57.80" id="00:01:57.80" class="lt" onclick="jumptoTime(117, this.id)"><p>But I noticed that Notion doesn't actually have all the emojis.</p></a>
+				<a href="#00:02:1.00" id="00:02:1.00" class="lt" onclick="jumptoTime(121, this.id)"><p>For example， if I search Boba，the Boba emoji doesn't show up.</p></a>
+				<a href="#00:02:4.60" id="00:02:4.60" class="lt" onclick="jumptoTime(124, this.id)"><p>But if that happens， just go to link，open up the emoji shortcut by pressing command， control， space，find your emoji and hit submit.</p></a>
+				<a href="#00:02:13.23" id="00:02:13.23" class="lt" onclick="jumptoTime(133, this.id)"><p>还有这个网站 notion.vip 里面有很多清晰的黑白色的按钮，你可以在任何按钮的链接上複製，你也可以在你的电脑上下载任何按钮，按钮还可以用来做动画的贴文，我其实不太常用贴文，因为我很容易被它们的迷惑。</p></a>
+				<a href="#00:02:34.55" id="00:02:34.55" class="lt" onclick="jumptoTime(154, this.id)"><p>但是这个网站 iconz8 里面有很多免费的动画按钮，我用贴文下载和上传的方式是让它们有效的，而不是只用贴文，它也没有一个透明的背景，这种效果很糟糕，但至少看起来很适合你的桌面，这是一个很酷的方法让你的通知看起来更加有动力，我也想分享一些键盘短片，键盘短片比用手动键盘更快，我认为更多人应该使用键盘短片。</p></a>
+				<a href="#00:03:1.71" id="00:03:1.71" class="lt" onclick="jumptoTime(181, this.id)"><p>这边有整个键盘短片的名单，我会在描述区放上链接，但是我会分享我用的键盘短片，正好我用的就是MacBook，我的电脑现在正在热起来，我学会了所有基本的东西后，我记得我最想学的第一件事是。</p></a>
+				<a href="#00:03:16.73" id="00:03:16.73" class="lt" onclick="jumptoTime(196, this.id)"><p>如何在整个列表上加上背景色，我只是想在背景色上加上色彩，但这只涉及到色彩的色彩，我发现你可以在左边的六个点，选择色彩，选择你想要的背景色，然后这就涉及到整个列表，甚至你可以点击这六个点，然后开始打印，比如我想要把它变成红色，按下键盘，然后它会变成背景色，或者我认为最快的方法，就是把图标放在一块的开始或结尾。</p></a>
+				<a href="#00:03:46.89" id="00:03:46.89" class="lt" onclick="jumptoTime(226, this.id)"><p>然后点击后挂，选择你想要的色彩，然后点击选择，如果你只是在一块的背景色上加上色，然后你想要在同一块的背景色上，再加上另一块的色彩，就选择它，然后按下CMD-SHIFT-H，来複制，这也是我学会的方法。</p></a>
+				<a href="#00:04:4.37" id="00:04:4.37" class="lt" onclick="jumptoTime(244, this.id)"><p>当我们来说说複制的部分时，我以前只会点击这六个点，然后点击複制，但是我发现更容易的就是按下选项键，点击然后拉，我通常会这样做，通常是在我的日程上，比如如果我要复制一个任务，然后再去另一个日程上，或者这也会非常有帮助，如果你还在设置你的日程，因为它会有同样的多余的格子，或者这还可以。</p></a>
+				<a href="#00:04:27.09" id="00:04:27.09" class="lt" onclick="jumptoTime(267, this.id)"><p>如果你想要複制一个链接，到整个页面。</p></a>
+				<a href="#00:04:30.13" id="00:04:30.13" class="lt" onclick="jumptoTime(270, this.id)"><p>如果你想要快速地复制一个页面，不需要先打开它，然后等待它下载，就点击这六个点，来打亮整个页面，按下CMD-SHIFT-R，然后你就可以更快地复制一个名字。</p></a>
+				<a href="#00:04:42.87" id="00:04:42.87" class="lt" onclick="jumptoTime(282, this.id)"><p>我会创建很多的图表，但是不需要在这里，点击这个点击图表，你只需要点击这个击击键，然后它就会自动变成一个图表，这也是一个非常小的问题，但是对我来说非常有帮助，然后在某些页面，比如我的目标页，我做了一个方法，我把每个页面都做成了一个字体，我会选择字体，然后按下CMD-SHIFT-E，这是一个短语转成字体的方法。</p></a>
+				<a href="#00:05:12.07" id="00:05:12.07" class="lt" onclick="jumptoTime(312, this.id)"><p>但是它也会用到普通语言，让它看起来有点花样，唯一的问题是，如果你想用它来转成两个字，它不太会用，因为它会把字体的空间切掉，但是你可以选择每个字体，然后用短语转成字体，这样你会保留字体的空间，然后你可以加一个背景色，或者更换字体色。</p></a>
+				<a href="#00:05:32.63" id="00:05:32.63" class="lt" onclick="jumptoTime(332, this.id)"><p>下一步，我想要教大家如何创建页面，我喜欢创建页面，因为我觉得用字体的空间，会比较有效，所以创建一个页面，你需要创建一个图框，我喜欢加一些文字，这样让我更容易看到图框，不然的话它会看不见，所以我们的图框就在这里，我会拿一个图框，用六个点，拉到另一个图框的最后，直到那个蓝色的线条出现，然后释放。</p></a>
+				<a href="#00:06:0.23" id="00:06:0.23" class="lt" onclick="jumptoTime(360, this.id)"><p>现在你的图框就完成了，你可以加多少个图框，我还没有加超过五个图框，但是你可以试试看，让我知道你能做多少个图框，我不知道最多多少个，我做这个是在创建我的日程表，我创建了每个星期的头页，我把每个头页拉出来，然后创建了一个图框，我还用了我们之前学到的小技巧，把文字转成了那些蜂蜜色，然后加了一个背景色。</p></a>
+				<a href="#00:06:27.65" id="00:06:27.65" class="lt" onclick="jumptoTime(387, this.id)"><p>现在我要给大家看，我创建了一些图框，首先我们来看看我的天气图框，我去weatherwidget.io，设定了位置，选了theme，我选了藍色的theme，他们已经准备了很多theme，然后我选了一个我喜欢的文字，选了动画圈，然后点了get code，复制到我的图框，然后去到这个apption.co。</p></a>
+				<a href="#00:06:51.07" id="00:06:51.07" class="lt" onclick="jumptoTime(411, this.id)"><p>所以你需要在这个网站上创建一个帐号，它是免费的，你可以用你的Google帐号，但是在这里你需要创建一个embed，你可以把它名称，复制我们刚刚创建的文字，然后点击generate url，现在你会看到这个url，你可以在你的notion上复制，创建embed，现在你会看到一个weatherwidget，你可以在角落点一下。</p></a>
+				<a href="#00:07:9.29" id="00:07:9.29" class="lt" onclick="jumptoTime(429, this.id)"><p>来选择一个大小和看起来，但是要注意，我认为你只能创建一个embed，在apption上创建三个免费的用途，然后你需要付费，订阅才能创建更多。</p></a>
+				<a href="#00:07:21.93" id="00:07:21.93" class="lt" onclick="jumptoTime(441, this.id)"><p>在我的agenda上，我喜欢有一个小的日记，可以让我看到我们的月份，我之前也有介绍过，但是我用了indefy.co，它有很多好的widget 例如谷歌日记，算补，我用了谷歌日记的widget，你可以选择谷歌日记来展示，大部分人会用这个来展示日记和活动，但我只是想要一个简单的日记，没有任何东西。</p></a>
+				<a href="#00:07:50.33" id="00:07:50.33" class="lt" onclick="jumptoTime(470, this.id)"><p>所以在我的谷歌日记，我创建了一个新的日记，名称notion，完全空白，我甚至不使用，只是为了widget，在indefy我选择这个日记，你可以选择widget的样子，但我喜欢这个，我只是在下面复制了一个链接，然后发达了一个URL，现在已经在页面上了。</p></a>
+				<a href="#00:08:11.19" id="00:08:11.19" class="lt" onclick="jumptoTime(491, this.id)"><p>现在我想要给大家展示如何创建图案，图案很方便，如果需要迅速创建一个图标，重复创建，在我的agenda上，我创建了一个新的图标，我只需要用backslash，创建一个新的图标，这整个格子，刚刚出现的地方，就是你创建图标的地方，你可以重复创建，我创建了一个新的周期，然后图标的下方，是你按下图标时会看到的。</p></a>
+				<a href="#00:08:38.21" id="00:08:38.21" class="lt" onclick="jumptoTime(518, this.id)"><p>你可以在这里加上你想要的东西，我希望可以自动创建一个新的周期，当我按下这个图标，我想看到这些，而不是每周要重复创建图标，这会让图标消失，我之前的视频里提到过，这很烦，我现在要给大家看我创建图标的方法，现在有一个to do list，但我不想要这个，所以我刚刚删掉它，然后开始创建周期的日子。</p></a>
+				<a href="#00:09:3.07" id="00:09:3.07" class="lt" onclick="jumptoTime(543, this.id)"><p>唯一的问题是，你不能在图标里创建图标，如果我试着创建图标，它就不会让我创建，所以你需要创建图标在新的图标里，然后把图标放到图标里，然后把图标转为文字，我给大家看看，首先创建一个新的图标，我们就叫它一个新的周期，打开图标，转到全面，然后我现在要重新创建周期，选择所有的格子，然后加一个背景色，然后按下拉框来创建你的格子。</p></a>
+				<a href="#00:09:34.17" id="00:09:34.17" class="lt" onclick="jumptoTime(574, this.id)"><p>然后我会选择所有的文字，然后把它们转成一个方案来改变字符，我还会加入我的小日记，所以，把 Embed 和 Paste link 都填上，然后在周末之前按下拉框，现在我要完成日期的格子，所以我喜欢在每天都会有一个 to do list，还有一个分区，来分开我最重要的任务，这些都会在分区的顶端。</p></a>
+				<a href="#00:09:56.77" id="00:09:56.77" class="lt" onclick="jumptoTime(596, this.id)"><p>然后其他相同的任务都会在下面，然后我会选择和複製它们在每天之内，我不确定为什么上面会有一个空间，但是我们可以删除所有的，然后就这样，我们的周期设置就差不多完成了，所以现在我们回到主页，点击框框来再次设置按钮，然后把这个页面转入图案，现在就把它转成文字，然后，哗啦!</p></a>
+				<a href="#00:10:20.37" id="00:10:20.37" class="lt" onclick="jumptoTime(620, this.id)"><p>所有的格子都还在这里，你的按钮已经被创建好，你的周期创建也已经准备好了，所以我现在就要删除这个文字，因为我们不需要它了，而我会创建一个周期和日期的格子，所以我会把这个转为2，然后加入一个周期号，然后一个月号，一个月号，然后把这些转成在线的文字，这样我可以记得要改变它们，根据每个周期或日期。</p></a>
+				<a href="#00:10:47.57" id="00:10:47.57" class="lt" onclick="jumptoTime(647, this.id)"><p>然后，哗啦!</p></a>
+				<a href="#00:10:48.27" id="00:10:48.27" class="lt" onclick="jumptoTime(648, this.id)"><p>我的按钮已经完全设置好了，所以让我们来测试一下，我会把这个关闭，点击按钮，然后就完成了，我们的周期创建已经准备好了，只需要改变这个文字，就完成了。</p></a>
+				<a href="#00:10:58.97" id="00:10:58.97" class="lt" onclick="jumptoTime(658, this.id)"><p>然后有些人也问我我的图档，我有一个图档在几个页面，我有一张在我的日期列表下方，但它只是一个页面，我把它称为图档，所以Notion其实有免费的图案，而他们的日期列表也有一个图档，所以我从那里就有了这个想法，但是为了创建一个图档，我创建了一个页面，称为图档，改变了这个文字，然后每逢一个星期结束，我必须创建一个新的页面，为了下一个星期。</p></a>
+				<a href="#00:11:27.37" id="00:11:27.37" class="lt" onclick="jumptoTime(687, this.id)"><p>所以说，这个是上个星期，转变旧的星期的头页成为一个按钮，把所有东西都转进去，然后转进去文件处，如果我打开文件处，我可以看到我之前的所有星期，我喜欢这个按钮，因为我可以每个星期打开或关闭，而不是每个星期都列出来，因为这样会创建一个很长的页面，所以我喜欢可以把它们全部复制，唯一的问题是我的页面消失了。</p></a>
+				<a href="#00:11:54.77" id="00:11:54.77" class="lt" onclick="jumptoTime(714, this.id)"><p>所以当我们把星期转进去页面时，所有的页面都消失了，但是我其实不太在意，因为我自己不太会检查我的文件处，文件处在很少的情况下，我需要重新检查某个日期，或某个任务，我还没有必须要做到，但是我只是想让未来的Michelle，可以很简单地检查，但是我试过很多东西，试着保留文档，我谷歌了一下，但是我还没有找到解决方法。</p></a>
+				<a href="#00:12:24.57" id="00:12:24.57" class="lt" onclick="jumptoTime(744, this.id)"><p>所以我现在已经解决了，这件事情是不可能的，如果有人知道方法，请在下方留言告诉我。</p></a>
+				<a href="#00:12:32.07" id="00:12:32.07" class="lt" onclick="jumptoTime(752, this.id)"><p>在我的内容处，我想要处理文件处的文件处，文件处是什么样的，桌子，列表，桌子，任何你有的日期，你也可以在这些文件处里加上文件处，比如说我要加一个新的视频主题，我会点新的，可能是一个浪费时间，我会把它打开为一个新的页面，并添加一个新的项目图案，这个项目图案是我自己制作的，但是我还需要了很多的工夫。</p></a>
+				<a href="#00:12:58.77" id="00:12:58.77" class="lt" onclick="jumptoTime(778, this.id)"><p>由Thomas Frank，我会把他的视频链接在下方的描述栏，但是这就是我制作视频的计划，你可以在数据库里自己制作图案，就像我们制作图案按钮一样，你可以在这里创建一个新的图案，在你放上一个页面之前，或者你可以按下三个点在数据库的右上角，点击图案，并删除出现的图案或添加新的图案，在页面上，它会提醒你。</p></a>
+				<a href="#00:13:22.87" id="00:13:22.87" class="lt" onclick="jumptoTime(802, this.id)"><p>你正在删除一个图案在数据库里，现在你可以创建一个图案，如果我要创建我的项目图案，我会点击YouTube项目图案，加上我的目标，并把它转成一个召唤，你可以改变这个emoji，但我喜欢这个光波，创建一个图案，为我的名字、概念、研究和签名，创建一个图案，我会用它来创建我的文本、B-roll列表，我的剪辑标签。</p></a>
+				<a href="#00:13:45.47" id="00:13:45.47" class="lt" onclick="jumptoTime(825, this.id)"><p>和我的发行标签，然后我会回到页面，点击按钮带上我刚创建的图案，现在它就准备用了，我还会用它来创建新的文章，甚至我的食谱页，来创建食材和指示。</p></a>
+				<a href="#00:14:0.07" id="00:14:0.07" class="lt" onclick="jumptoTime(840, this.id)"><p>接下来，我们可以创建链接档，我之前在视频中有介绍过，但是为了更深入地解释，我有一个主要的档案，就是我的项目标签，这是一个桌子里的所有视频主题，这是我创建的第一个档案，然后我创建了一个内容档，是与第一个档案连接的，你应该知道它是连接的，因为前面有一个小档案，我创建这个档案，因为让我更容易看到。</p></a>
+				<a href="#00:14:28.37" id="00:14:28.37" class="lt" onclick="jumptoTime(868, this.id)"><p>当时的情况，所以我做的一切，在这个档案里，比如我添加新项目，它会在档案里显示，或者相反，创建一个连接档案，你只需要在这里写下，backslash linked linked database，然后找到你想连接的档案，你可以在搜索中，确认是正确的档案，创建一个日期，然后你可以删除其他档案，如果你不想要。</p></a>
+				<a href="#00:14:53.37" id="00:14:53.37" class="lt" onclick="jumptoTime(893, this.id)"><p>我喜欢在档案和位置上，点击选项，就这样，有时候有两种不同的档案，可以使用同一档案，连接档案是最好的方法，这就是我想分享的所有秘诀，这些是我用很多的时候，在我的页面上，想要分享的，最好用的，如果你有其他秘诀，我没有提到，请留言，让我们分享，如果你喜欢这个视频，请点赞，订阅，分享，打开通知铃，我会在下一个视频中。</p></a>
+				<a href="#00:15:26.37" id="00:15:26.37" class="lt" onclick="jumptoTime(926, this.id)"><p>见到你。</p></a>
+				<a href="#00:15:27.37" id="00:15:27.37" class="lt" onclick="jumptoTime(927, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

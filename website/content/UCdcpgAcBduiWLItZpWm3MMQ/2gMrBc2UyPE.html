@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>焦糖燉蛋 (簡短版) - Creme Brulee</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2gMrBc2UyPE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>焦糖燉蛋 (簡短版) - Creme Brulee</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>首先我而家整呢就係呢一個嘅Creme Brulee，但係簡易版嚟嘅咁我唔需要唔需要煮嗰啲奶或者成就係用個最簡單嘅方法等到大家屋企如果冇乜特別嘅材料呀冇乜特別嘅工具嘅時候呢你都係可以做到嘅材料係要乜嘢呢首先呢就要四隻雞蛋啦要蛋黃嘅咋喎咁另外呢就係要四分之一杯嘅糖啦我已經減咗糖㗎喇，其實你可以跟嘅跟住呢就係要牛奶同Creme嘅但係呢因為呢我就唔我我怕我怕肥呀所以呢我就全部都會轉曬牛奶係要幾多呢因為我轉如果係牛奶同Creme嘅比例呢就係一杯牛奶就一杯Creme咁樣啦咁但係我自己呢就想冇Creme呀嘛即係我冇用Creme呀嘛所以呢我就用少啲嘅牛奶等到佢可能會濃稠少少啦。</p></a>
+				<a href="#00:00:59.60" id="00:00:59.60" class="lt" onclick="jumptoTime(59, this.id)"><p>咁我就係要用一有四分之三杯嘅牛奶咁另外有Vanilla就係咁簡單材料就係咁多啦好依家我哋開始啦首先就分蛋啦，將啲蛋白呢就唔要咁我哋可以留低你哋留低可能攞嚟做其他嘢都得嘅或者你哋蒸蛋白呀整蛋白蛋糕呀或者整蛋白脆脆呀咁樣都可以嘅咁我就要蛋黃就咁樣分呀分呀咁佢就會ok㗎喇咁我蛋黃，拿開這個。</p></a>
+				<a href="#00:02:5.79" id="00:02:5.79" class="lt" onclick="jumptoTime(125, this.id)"><p>拿這個來，四個，四個蛋黃，接著我要四分之一的糖，接著呢，加一點點Vanilla，可以不加也可以加，加一點點有一點點香味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:25.79" id="00:02:25.79" class="lt" onclick="jumptoTime(145, this.id)"><p>接著我們就，其實就這樣攪拌均勻就可以了，攪拌均勻之後呢，接著呢，就將一些，香蕉奶就倒下去，基本上呢，基本上呢，如果是法式，自己本身有法式的燉蛋，焦糖燉蛋，他們可能會有，煲熱了的奶，慢慢去添和慢慢去攪拌，但我這個是簡易版，所以我這個簡易版，所以就沒有的，就這樣放下去就好了</p></a>
+				<a href="#00:03:15.79" id="00:03:15.79" class="lt" onclick="jumptoTime(195, this.id)"><p>接著呢，倒這個</p></a>
+				<a href="#00:03:21.79" id="00:03:21.79" class="lt" onclick="jumptoTime(201, this.id)"><p>OK，攪勻它，接著怎樣呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:34.79" id="00:03:34.79" class="lt" onclick="jumptoTime(214, this.id)"><p>接著它有很多泡，我們就不需要，我們不要泡，所以一會兒就用酒，隔一隔它，我又不，我現在懶了，就是直接隔進去那些杯子裡，那你自己家裡，你可以用這樣的瓷杯，或者有些人家裡沒有這些，特意買這些，又不知道在哪裡買的時候，你就可以用普通的錫紙杯，做杯仔蛋糕的錫紙杯，都可以做到同樣的效果，所以就不用擔心。</p></a>
+				<a href="#00:04:12.79" id="00:04:12.79" class="lt" onclick="jumptoTime(252, this.id)"><p>沒有材料的，就是沒有工具的，然後我現在就倒進去，如果有泡泡的話，可以用牙籤戳穿泡泡，謝謝您的觀看，再會，然後怎樣呢?</p></a>
+				<a href="#00:05:7.55" id="00:05:7.55" class="lt" onclick="jumptoTime(307, this.id)"><p>做這個之前，剛才也忘記了，就是要預熱焗爐，預熱到325度，我已經預熱了，然後用熱水蒸焗，平時如果你看食譜，叫做water bath，water bath的焗法就是這樣，熱水一直蒸一起焗，現在拿去焗，焗好了，蛋焗好了，我沒有看火，其實焗得不太好，熱食的話可以馬上吃，但凍食就更好吃，放涼後放雪櫃冷藏3小時。</p></a>
+				<a href="#00:06:4.55" id="00:06:4.55" class="lt" onclick="jumptoTime(364, this.id)"><p>之後就可以拿出來吃，吃的時候是怎樣呢?</p></a>
+				<a href="#00:06:8.55" id="00:06:8.55" class="lt" onclick="jumptoTime(368, this.id)"><p>燉蛋就是這樣吃，但法式焦糖燉蛋就不是這樣，我先放在碟子上，我示範一次給你們看，幸好它是法式焦糖燉蛋，即使它不漂亮，我都可以用糖來遮住，首先我把砂糖放在上面，混合一下，薄薄的，混合到整個表面都很搖晃，然後旁邊也一樣，視乎你吃得多甜，你會想那塊焦糖在表面是厚還是薄，然後就要出動這個東西，這個就是火槍。</p></a>
+				<a href="#00:07:12.55" id="00:07:12.55" class="lt" onclick="jumptoTime(432, this.id)"><p>要開它，看不看得到火，就要有氣槍，有火，現在就可以燒它，輕輕地燒，糖開始結晶，不要太近，wire</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:50.56" id="00:07:50.56" class="lt" onclick="jumptoTime(470, this.id)"><p>days，aven，orangwatch，Lynn，generations，2016</p></a>
+				<a href="#00:07:53.06" id="00:07:53.06" class="lt" onclick="jumptoTime(473, this.id)"><p>哇，cards</p></a>
+				<a href="#00:07:52.16" id="00:07:52.16" class="lt" onclick="jumptoTime(472, this.id)"><p>uciones，udge，permitted，COME Watson，obviamente</p></a>
+				<a href="#00:07:51.72" id="00:07:51.72" class="lt" onclick="jumptoTime(471, this.id)"><p>demand，해요，transplant splash，뜨 fears，ministaign括，çar，같아，週ôi，各位朋友，因為我這個用盒沒有Gas，入極也不行，但是我燒了一點點，如果真的燒好應該是整塊都像金黃色那樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:12.92" id="00:08:12.92" class="lt" onclick="jumptoTime(492, this.id)"><p>然後用匙羹剁碎就可以吃了。</p></a>
+</div>
+	</body>
+</html>

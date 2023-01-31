@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做雞蛋布丁 | Steam Egg Pudding in Egg Shells  | 免焗的蒸布丁</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'eE2fOjIZGTg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做雞蛋布丁 | Steam Egg Pudding in Egg Shells  | 免焗的蒸布丁</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:4.47" id="00:00:4.47" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好， 各位好!</p></a>
+				<a href="#00:00:7.47" id="00:00:7.47" class="lt" onclick="jumptoTime(7, this.id)"><p>桌上的這些是甚麼呢?</p></a>
+				<a href="#00:00:10.47" id="00:00:10.47" class="lt" onclick="jumptoTime(10, this.id)"><p>這些就是今天和你們一起做的雞蛋布丁!</p></a>
+				<a href="#00:00:20.47" id="00:00:20.47" class="lt" onclick="jumptoTime(20, this.id)"><p>這樣就不用烤了，如果家裡沒有烤箱也可以做的，我這次是用蒸的方法，把焦糖和雞蛋放在蛋殼裡面，然後就蒸它，我們一會兒看看怎樣做吧!</p></a>
+				<a href="#00:00:39.47" id="00:00:39.47" class="lt" onclick="jumptoTime(39, this.id)"><p>今天做的雞蛋布丁材料就是，桌上你們看到的那麼多東西，有雞蛋，我需要做出來的雞蛋是要六隻的，所以我有六隻雞蛋，但我不需要用完所有雞蛋，我先放在這裡，然後我要水和砂糖，砂糖和水的比例就是，兩個砂糖一個水，我這裡是40克砂糖和20克水，然後有牛奶，這裡是400ml牛奶，你可以在中間加一點忌廉，如果你想雞蛋布丁再濃稠一點。</p></a>
+				<a href="#00:01:32.47" id="00:01:32.47" class="lt" onclick="jumptoTime(92, this.id)"><p>可以加一點，我這裡是牛奶，另外就是砂糖，砂糖是放在蛋布丁裡面，我這裡就少一點，因為我之前會做一個焦糖底，所以這個糖就少一點，大約20克，然後就有香草，如果好玩一點容易買的，你可以用香草的一條的籽來做，我就用普通香草的香油來做，我們首先開始，這裡就看一下這個，因為我等一下這個雞蛋布丁，我不是焗的。</p></a>
+				<a href="#00:02:26.47" id="00:02:26.47" class="lt" onclick="jumptoTime(146, this.id)"><p>我是蒸的，我有東西拿著，所以我就用這個工具拿著，但如果你家裡沒有，其實你可以用蛋撻的模具，拿著雞蛋，小一點的應該都可以的，我就用這個，我們可以開始了，首先我們做一個最麻煩的方法，就是如何將雞蛋倒出來，但蛋殼不爛呢，我想在香港很容易找到那些，開蛋器，一敲一敲就可以整個開，我手上沒有，我們可以用最原始的方法。</p></a>
+				<a href="#00:03:21.50" id="00:03:21.50" class="lt" onclick="jumptoTime(201, this.id)"><p>就是在蛋上慢慢做一個洞，然後再剪開，我們現在試一下一起做，首先我，在上面，用個小刀，用個小刀，用個小刀就先鑽個洞，我用了一個小孔，然後用剪刀，當然你可以用一個大一點的，我家只有廚房剪刀，這樣就可以慢慢沿著邊剪蛋殼出來，先倒出來，要大小一點才可以，繼續剪接，要小心一點，因為蛋殼很脆弱，很容易碎，我會慢慢剪，剪到這樣。</p></a>
+				<a href="#00:05:5.53" id="00:05:5.53" class="lt" onclick="jumptoTime(305, this.id)"><p>然後把蛋倒出來，蛋殼出來了，我已經做了一個，我繼續剪，用刀尖的位置，剪開了一個洞，然後用剪刀，我再剪多一次，慢慢地剪，剪一個位置夠蛋倒出來，盡量剪一個個都差不多，慢慢收起來，收到一個個都差不多，開口位都差不多，這樣會好看一點，我繼續剪其他，做好蛋之後，要浸水，我之前已經洗了一次，現在浸水的意思是，我想連雞蛋內的衣都可以慢慢洗出來。</p></a>
+				<a href="#00:06:31.53" id="00:06:31.53" class="lt" onclick="jumptoTime(391, this.id)"><p>洗一洗，會看到裡面有個水泡，一打開，慢慢搓，這個步驟你可以做，可以不做，我看到網上有人不做，直接洗完蛋就放進去，我連衣都不要，所以我搓開它，但真的要小心一點，像我這樣可能只剩下一隻雞蛋，所以真的要很細力地慢慢地把衣拉出來，我們等一下再看看，做下一個步驟，做好這塊衣服後，我再沖一沖它。</p></a>
+				<a href="#00:07:23.66" id="00:07:23.66" class="lt" onclick="jumptoTime(443, this.id)"><p>然後我會放在我剛才，這個，這個，容器的上面，然後就晾乾它，其實做這個布丁，其實和平時我們做焦糖布丁，基本上沒什麼分別，不過近著現在是，播映的時候，應該是，近著復活節，我們可以應節，吃些雞蛋做的甜品，所以我就，所以我就，用這個，這樣的，和大家一起做這個甜品，我繼續做一會兒回來，現在進入到，我們做焦糖的部分。</p></a>
+				<a href="#00:08:15.66" id="00:08:15.66" class="lt" onclick="jumptoTime(495, this.id)"><p>首先，我先開了爐，首先我要砂糖40克加20克水，攪拌均勻，不要動，讓糖和水融化，然後就不動，讓糖和水融化，直到糖和水融化後，就變成焦糖，直到糖和水融化後，就變成金黃色，現在就慢慢煮，我怕煙霧探測器會噪音，現在已經很金黃，我剛才拿出來已經很深色，現在可以將它放入蛋殼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:26.19" id="00:10:26.19" class="lt" onclick="jumptoTime(626, this.id)"><p>現在已經很金黃，其實我不用太多糖，因為一隻蛋不需要太多糖，我大約半茶匙一隻就可以了，我家比較冷，所以糖一上來就很快變硬，我每一個都有，看看有多快，做這個步驟要最快，或者我剛才不要煮太焦，一到有點黃就慢慢倒下去，這樣就比較好，現在真的是一個焦糖，很甜的，一放上蛋，它們就變硬了，給你們看，在裡面變硬了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:29.23" id="00:11:29.23" class="lt" onclick="jumptoTime(689, this.id)"><p>我現在就可以把它放開了，剩下的蛋留在旁邊不要緊，一會蒸的時候它也會融化，所以不用擔心，我現在可以給你們看，蛋裡面也有的，我現在就把它放開，然後我們做下一個步驟，這裡有蛋，是不是四隻蛋呢?其實不是的，這裡是兩隻全蛋和兩隻蛋黃，是剛才在做蛋殼的時候出來的蛋，然後我加20克糖。</p></a>
+				<a href="#00:12:2.23" id="00:12:2.23" class="lt" onclick="jumptoTime(722, this.id)"><p>我現在就這樣攪拌均勻，最好將蛋和糖拌勻，但不需要打起泡，我們不是做蛋糕，不需要打起泡，總之攪勻就可以了，攪勻後加少許Vanilla，攪拌至糖和蛋混合後，就可以加入牛奶，我這邊的份量比我6隻蛋多，但不要緊，剩下的蛋可以用普通的雞蛋來做蛋糕或蒸蛋，蛋糕的蛋黃色就完成了，現在就把蛋糕過篩，把蛋黃蛋黃的部分去掉。</p></a>
+				<a href="#00:14:3.83" id="00:14:3.83" class="lt" onclick="jumptoTime(843, this.id)"><p>接下來就是下一個步驟，把蛋糕倒進去，然後就逐個逐個把蛋糕塞滿蛋糕，現在倒滿了，剩下的可以用來做蛋殼或是放在碗內蒸，變成一個燉蛋，這個可以拿走，現在我開始預備一個鍋，開大火，一會隔水蒸，在隔水蒸之前，用保鮮紙蓋著蛋殼，確保水蒸氣不會掉進蛋內，完成了!</p></a>
+				<a href="#00:15:35.07" id="00:15:35.07" class="lt" onclick="jumptoTime(935, this.id)"><p>水滾後將蛋放入去蒸，雞蛋布丁已經蒸好了，因為我剛才走開了，所以我用了大火蒸了大約7分鐘，出來是凝固的，不會動的，但不要太實，最好是有一點點，有點軟軟的感覺，冷卻後，就很好吃了，如果太實就會硬，現在是有點軟軟的，我給你們看看，整個已經蒸好了，建議冷卻後，會好吃很多，冷卻後就最好，這個星期就介紹這個雞蛋布丁。</p></a>
+				<a href="#00:16:45.58" id="00:16:45.58" class="lt" onclick="jumptoTime(1005, this.id)"><p>希望你們喜歡，還有復活節，有復活節假期，有時間可以來拍一下，復活節快樂，拜拜。</p></a>
+</div>
+	</body>
+</html>

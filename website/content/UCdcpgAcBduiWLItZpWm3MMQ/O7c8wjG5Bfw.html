@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>綠茶梳乎厘/舒芙蕾 (Green Tea Soufflé)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'O7c8wjG5Bfw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>綠茶梳乎厘/舒芙蕾 (Green Tea Soufflé)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.99" id="00:00:0.99" class="lt" onclick="jumptoTime(0, this.id)"><p>今天和大家一起做一個很簡單的甜品，你就可以在家吃完飯後馬上做馬上吃，這個甜品不可以留的，這個甜品叫做Sofle，梳乎厘，我這次不是做原味，是做一個綠茶的口味，我們現在來看看我們需要什麼材料，雞蛋我就需要有三隻雞蛋，這裡就分開兩杯不同的糖，一個糖大概有一個湯匙多一點，看你喜歡吃的甜度。</p></a>
+				<a href="#00:00:42.99" id="00:00:42.99" class="lt" onclick="jumptoTime(42, this.id)"><p>我這裡大概有一個湯匙的砂糖，就會和蛋白一起，然後這裡有兩至三個湯匙的糖，就是和蛋黃一起的，三隻蛋，這裡是十克的中筋麵粉，就是All Purpose Flour，另外這裡有150ml的Whole Milk，就是全脂奶，我還有Vanilla，就是這麼多，首先我要預備一個鍋，然後將奶放進去。</p></a>
+				<a href="#00:01:33.99" id="00:01:33.99" class="lt" onclick="jumptoTime(93, this.id)"><p>好了，然後拿去煮，不需要太大火，微微火煮一煮就可以了，不需要煮滾，現在開始吧，首先將蛋黃和蛋白分開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:22.68" id="00:02:22.68" class="lt" onclick="jumptoTime(142, this.id)"><p>將蛋黃和蛋白分開，打開蛋白，把3湯匙糖和蛋黃混合</p></a>
+				<a href="#00:03:6.84" id="00:03:6.84" class="lt" onclick="jumptoTime(186, this.id)"><p>攪拌均勻，我可以加少少啤梨落去啦，少許鹽，大約這樣就把麵粉篩入去，將奶慢慢加入蛋中，因為蛋液熱，不能一次加進去，否則蛋液會煮熟</p></a>
+				<a href="#00:04:41.20" id="00:04:41.20" class="lt" onclick="jumptoTime(281, this.id)"><p>加入蛋液，攪拌好後，將所有材料放入爐火，將所有材料放入爐火，用小火慢慢攪拌，一邊煮一邊煮，一邊煮一邊攪拌，一邊煮一邊攪拌，不然麵糊會黏底，做這個麵糊最基本的做法有很多不同的做法，有些人不加麵粉，可能加罌粟粉，或者他們全部都不分開攪拌，全部放入同一個鍋裏攪拌，其實各有不同的做法，但我剛才做的方法比較容易，如果全部一次過放入鍋裏攪拌，麵糊很容易會起粒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:11.82" id="00:06:11.82" class="lt" onclick="jumptoTime(371, this.id)"><p>現在煮到麵糊結實就可以了，我開始感覺到攪拌時有阻力，開始有結晶，最好你怕它黏底，可以像我這樣拿起，慢慢攪拌，攪拌至濕透後，再放入去，再泡少許熱量，然後再拿起，這樣會比較容易控制，不怕黏底或煮過濃，現在可以關火，讓你看看，這樣就做到這樣，這樣就可以了，然後我們拿碗盛起，然後用保鮮紙蓋住，放入雪櫃冷藏。</p></a>
+				<a href="#00:07:33.24" id="00:07:33.24" class="lt" onclick="jumptoTime(453, this.id)"><p>現在用保鮮紙蓋住，直接黏著，按下去，這樣冷藏後，不會起皮，口感不會太滑，然後放入雪櫃冷藏，在雪櫃冷藏時，我處理另一樣東西，就是Ramekin碗，碗全部都要掃牛油，然後放糖，這樣做可以方便蛋糊在焗爐上升，可以沿著Ramekin向上爬，幫助蛋糊升高，不放會怎樣呢?</p></a>
+				<a href="#00:08:42.24" id="00:08:42.24" class="lt" onclick="jumptoTime(522, this.id)"><p>有些人都會不放，蛋糊就不會升高，我們可以試試用這個方法，牛油已經放軟了，然後將它掃在每個玻璃上，你可以沿著碗掃它。</p></a>
+				<a href="#00:09:29.37" id="00:09:29.37" class="lt" onclick="jumptoTime(569, this.id)"><p>蛋糊可以加不同味道，例如綠茶粉，檸檬碎，檸檬汁，橙皮，橙酒，可以變化很多不同味道，可以加一些溶的朱古力，蛋糊冷藏後不可以馬上食用，可以放入冰箱最多三天，加入糖，攪拌均勻，整個口都充滿了糖，然後就可以倒出來，就是這樣做了，完成了，接著打蛋白，預熱焗爐，我預熱了350度，即是攝氏180度。</p></a>
+				<a href="#00:11:8.91" id="00:11:8.91" class="lt" onclick="jumptoTime(668, this.id)"><p>打蛋白，打蛋白時，盤要乾淨，沒有油脂成份，然後就可以打蛋白，首先慢慢打至有些膨脹，現在糖的泡沫已經起了，然後我們可以將糖全部放進去，大概一個湯匙左右，然後打發糖漿</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:28.06" id="00:12:28.06" class="lt" onclick="jumptoTime(748, this.id)"><p>打發到有泡泡的狀態，打發到有泡泡的狀態，打發到有泡泡的狀態，蛋白打好後， 用綠茶粉和蛋白混合，然後將蛋白和蛋黃混合，將蛋白打好後， 將蛋白和蛋黃混合，蛋白會比較結實，所以我們先用蛋白慢慢打開蛋白的底部，打開後就可以將蛋白放入鍋裡，就是這樣慢慢地打開蛋白的底部，蛋白打開後不會太硬，因為蛋白泡會很粗糙。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:38.41" id="00:14:38.41" class="lt" onclick="jumptoTime(878, this.id)"><p>打到蛋白好像很輕盈的狀態就可以了，然後用攪拌器將蛋白和蛋白混合，盡量不要走掉泡的意思，把底部的麵團刮出來，再把麵團混合在一起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:58.55" id="00:15:58.55" class="lt" onclick="jumptoTime(958, this.id)"><p>把麵團放入冰箱冷藏，kill Impf，ując，助，我的，기억，треб，10，este，mill взять，Mill，Eternal，明 언제，Finanz，czenia，只是，Effects，ð，peg，UC，conquer，adam，Vietnamese，och，vis，bee，онч，anced。</p></a>
+				<a href="#00:16:18.41" id="00:16:18.41" class="lt" onclick="jumptoTime(978, this.id)"><p>uminommen，carved，Gerald，Vik，radar，atti，unleash，arsa，から，propose，engagement，satisfied，самое，faculty，ocalyptic，ю，orc，bili，Vietnamese，Soo，Shaw，cially，nos。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:55.98" id="00:16:55.98" class="lt" onclick="jumptoTime(1015, this.id)"><p>字幕by索兰娅✿，杯子比較大，如果杯子小的話，可以把杯子弄平，用手指在旁邊搓一搓，讓它可以沿著邊上，但我這個杯子也不用，它一會兒升也不會升得很高，因為它這裡已經有一個高度在這裡，所以它一升應該不會升很高，如果它的杯子是平面的，它就可以升高一點，我現在就拿去焗350度焗12至16分鐘，焗好了出來，給你們看一下，它有一個高度在這裡，你知道剛才高度，現在高，其實高了很多出來。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:0.81" id="00:18:0.81" class="lt" onclick="jumptoTime(1080, this.id)"><p>接著我們灑一點抹茶粉進去，這樣就可以吃了，趁熱吃，因為它很快就會塌下去，所以要趁熱吃，希望你們喜歡，拜拜。</p></a>
+</div>
+	</body>
+</html>

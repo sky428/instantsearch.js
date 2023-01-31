@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聖誕節早餐live 和我一起煎pancake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KqPmOM3oeEY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>聖誕節早餐live 和我一起煎pancake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:9.66" id="00:00:9.66" class="lt" onclick="jumptoTime(9, this.id)"><p>早安，聖誕快樂!</p></a>
+				<a href="#00:00:29.56" id="00:00:29.56" class="lt" onclick="jumptoTime(29, this.id)"><p>聖誕快樂，哎呀，踢到，早安，快快脆脆，設置好東西，我們馬上開始</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:53.56" id="00:00:53.56" class="lt" onclick="jumptoTime(53, this.id)"><p>天天爬欄，我踢到，今天是聖誕節，早安，聖誕快樂，好嗎，今天我和大家一起做一個快快脆脆的煎班戟，需要的材料很簡單，需要兩種材料，一種是乾的材料，另一種是濕的材料，聖誕快樂各位，乾的材料是很簡單的，需要一杯麵粉，半茶匙的baking powder，再加上半茶匙的baking soda，乾粉的材料完成了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:36.61" id="00:02:36.61" class="lt" onclick="jumptoTime(156, this.id)"><p>撈起麵粉，完成了，濕粉的材料 Merry Christmas 大家好，大家好，濕粉的材料，濕材料就需要雞蛋一隻，還有乳酪，乳酪需要四分之三杯，如果沒有的話，可以先預熱，用小杯或小盒來量度份量，多一點點都不要緊，但起碼要差不多，這裡是半杯，再加四分之一杯，dürfen verf Laink inequγο</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:30.83" id="00:04:30.83" class="lt" onclick="jumptoTime(270, this.id)"><p>�etu，cunning，alion</p></a>
+				<a href="#00:04:31.69" id="00:04:31.69" class="lt" onclick="jumptoTime(271, this.id)"><p>яти，Everyday，후，Å，ании，wäre</p></a>
+				<a href="#00:04:31.49" id="00:04:31.49" class="lt" onclick="jumptoTime(271, this.id)"><p>hed，odo，flavour，��，일� Joel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:36.79" id="00:04:36.79" class="lt" onclick="jumptoTime(276, this.id)"><p>hell，손是的rob "' Anybody，然後就可以將它們攪拌在一起</p></a>
+				<a href="#00:05:1.34" id="00:05:1.34" class="lt" onclick="jumptoTime(301, this.id)"><p>拌勻，掉了，你可否幫我聽聽，好，然後我們將它們拌勻，好，今天是快閃，儘量快，歡迎大家來到看，我完全不知道我有沒有上網</p></a>
+				<a href="#00:05:54.87" id="00:05:54.87" class="lt" onclick="jumptoTime(354, this.id)"><p>好，聽到嗎，是呀是中筋麵粉，聽到嗎，是呀是，是聽到的，中筋麵粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:8.11" id="00:06:8.11" class="lt" onclick="jumptoTime(368, this.id)"><p>24 approaching，임 Kuобы</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:14.93" id="00:06:14.93" class="lt" onclick="jumptoTime(374, this.id)"><p>naj，LED，dw，Beethoven，abra</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:19.09" id="00:06:19.09" class="lt" onclick="jumptoTime(379, this.id)"><p>API，punya，elementos，Bib，Kanal，twins，lö，eti，erald</p></a>
+				<a href="#00:06:17.35" id="00:06:17.35" class="lt" onclick="jumptoTime(377, this.id)"><p>konse Weiter，�כול，harus，lecture，Mercedes，hust submitted，bears，striving attentيد，кор</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:21.09" id="00:06:21.09" class="lt" onclick="jumptoTime(381, this.id)"><p>應該 nos，ção，drowning，lık</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:23.91" id="00:06:23.91" class="lt" onclick="jumptoTime(383, this.id)"><p>décidé，Przy，これTA</p></a>
+				<a href="#00:06:23.31" id="00:06:23.31" class="lt" onclick="jumptoTime(383, this.id)"><p>完全д，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:25.24" id="00:06:25.24" class="lt" onclick="jumptoTime(385, this.id)"><p>對齊一點，還要加少許Vanilla，因為放在濕材料上，少許少許，少許糖，因為之後的班戟，是會加水，所以不用加太多，用匙羹調味就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:5.22" id="00:07:5.22" class="lt" onclick="jumptoTime(425, this.id)"><p>ios，내일</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:10.94" id="00:07:10.94" class="lt" onclick="jumptoTime(430, this.id)"><p>fool，Center</p></a>
+				<a href="#00:07:9.46" id="00:07:9.46" class="lt" onclick="jumptoTime(429, this.id)"><p>riment，votes，cheering，95</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:10.36" id="00:07:10.36" class="lt" onclick="jumptoTime(430, this.id)"><p>Fortunately，Warning，akra，calibration，SmackBLetics，나와</p></a>
+				<a href="#00:07:11.16" id="00:07:11.16" class="lt" onclick="jumptoTime(431, this.id)"><p>einzige，deceive，感谢观看，接著加少許奶，奶大約6至8湯匙，奶大約6至8湯匙，先加6湯匙</p></a>
+				<a href="#00:07:36.71" id="00:07:36.71" class="lt" onclick="jumptoTime(456, this.id)"><p>再加少許奶，完成，然後可以放你喜歡的水果，這個是先放的 因為是美式的，這裡有些Frozen Berry，所以平時有冰的食物就很好，拌勻，濕的材料拌勻，乾的材料可以倒進去，拌勻便可以，給大家看，如果做北美式早餐pancake，不需要篩，全部都是方便的，拌勻便可以，然後把材料倒進去，慢慢拌勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:6.46" id="00:09:6.46" class="lt" onclick="jumptoTime(546, this.id)"><p>全部倒進去拌勻，我們需要的技術不是太多，如果想食得好看又細小的，可以過篩，如果想食得快又容易，便可以這樣做，拌勻，6至8湯匙牛奶可以再多一點，因為現在很難煎，可以再多一點，先開鍋，加少許油，一定要平底，一定要平底，這樣便可以了，然後我們便可以繼續，加多兩匙牛奶，調整它的，各位 Merry Christmas，今天快閃。</p></a>
+				<a href="#00:10:44.47" id="00:10:44.47" class="lt" onclick="jumptoTime(644, this.id)"><p>做這個Pancake，聖誕節早上起床，或者你們第二天，Boxing Day 做早餐，很開心 都是很稠的，我們加到攪到順便便可以了，這個跟你們平時吃的薄餅不同，這個是pancake，即是平時在美式早餐時，一層層的圓圓的，像熱鬆餅，這樣的類型的pancake，即是熱鬆餅，現在就可以了。</p></a>
+				<a href="#00:11:53.52" id="00:11:53.52" class="lt" onclick="jumptoTime(713, this.id)"><p>你可以再稀一點，但我現在加了藍莓，這個是冰藍莓，這樣拌勻就可以了，完成了，我們可以開始煎了，是不是很快呢?</p></a>
+				<a href="#00:12:23.52" id="00:12:23.52" class="lt" onclick="jumptoTime(743, this.id)"><p>熱了的鍋就加些油，然後掃開它，中火，Hello Merry Christmas，我們煎pancake了，有沒有人喜歡吃熱香餅的pancake?</p></a>
+				<a href="#00:12:47.52" id="00:12:47.52" class="lt" onclick="jumptoTime(767, this.id)"><p>藍莓pancake，我們煎pancake，然後就可以煎了，看想要多大，如果想要小小的，也可以的，像我這樣，弄開它，不要太大，然後拿個匙羹，真的就這樣拿個匙羹，掃到它圓形，這樣撈它，撈到它是圓形，因為如果不是圓形，它是尖出來的，就是這樣的形狀，這個不漂亮，這兩個都不是很圓，我們再放</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:41.52" id="00:13:41.52" class="lt" onclick="jumptoTime(821, this.id)"><p>這樣就好了，完成了，如果不喜歡這樣的話，想更圓一點，我們可以，用雪糕殼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:57.42" id="00:13:57.42" class="lt" onclick="jumptoTime(837, this.id)"><p>indruck Mohammed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:9.24" id="00:14:9.24" class="lt" onclick="jumptoTime(849, this.id)"><p>thanking ber，Sail ondan，reminds</p></a>
+				<a href="#00:14:4.60" id="00:14:4.60" class="lt" onclick="jumptoTime(844, this.id)"><p>increasing，has，行entle고요，blind，Rash，Qual Coconut</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:3.08" id="00:14:3.08" class="lt" onclick="jumptoTime(843, this.id)"><p>registry，Acts，coins，kraft，Flat，st，row，impost，her，propriet audition，accusations，аньше，beams，trad Folks，Rhett，produk，這樣就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:11.71" id="00:14:11.71" class="lt" onclick="jumptoTime(851, this.id)"><p>我的班戟不是太大個，然後再按扁它，給點壓力按扁它，按扁它，不用太緊張，就是這樣，再放在另一邊，就是這樣，然後就慢慢煎，每邊煎一至兩分鐘就可以了，讓我看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:54.63" id="00:14:54.63" class="lt" onclick="jumptoTime(894, this.id)"><p>每邊煎兩分鐘就好了，最好有蓋子蓋著，等到上面都熟就可以了</p></a>
+				<a href="#00:15:6.63" id="00:15:6.63" class="lt" onclick="jumptoTime(906, this.id)"><p>我們開中火，然後就放在另一邊</p></a>
+				<a href="#00:15:18.63" id="00:15:18.63" class="lt" onclick="jumptoTime(918, this.id)"><p>開中火，Merry Christmas 聖誕快樂呀各位，中間面反，嘩 為甚麼會這樣，先關掉，好，聖誕快樂各位，然後慢慢煎，煎完就可以食，如果家中有不同的水果，就可以配食，份量我會放在人妻家衛煮煮看，做完live之後，在資訊欄會有完整份量，然後你們就可以跟著份量來做煎餅，可以叫做熱香餅，美式早餐的pancake。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:34.90" id="00:16:34.90" class="lt" onclick="jumptoTime(994, this.id)"><p>不是薄餅是厚的，或者班戟 看你喜歡用什麼字，聖誕節你們怎樣過?</p></a>
+				<a href="#00:16:48.02" id="00:16:48.02" class="lt" onclick="jumptoTime(1008, this.id)"><p>有沒有開派對?</p></a>
+				<a href="#00:16:50.58" id="00:16:50.58" class="lt" onclick="jumptoTime(1010, this.id)"><p>我昨晚有去開派對，現在做完早餐，一會兒是教會崇拜，我找一口水喝</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:8.14" id="00:17:8.14" class="lt" onclick="jumptoTime(1028, this.id)"><p>謝謝觀看，本來我打算崇拜完才做，但我怕崇拜完後會太晚，對於香港的朋友，我想早一點，始終這是早餐，我不想午餐時吃，好，差不多了，我們可以起一起它，聞到香味了，我們可以起一起它，好，先撥一撥，聽話，不要滑，好，第一個，我們可以起一起它，第二個，skills，laude</p></a>
+				<a href="#00:18:41.75" id="00:18:41.75" class="lt" onclick="jumptoTime(1121, this.id)"><p>bat � towel，61，tired</p></a>
+				<a href="#00:18:44.87" id="00:18:44.87" class="lt" onclick="jumptoTime(1124, this.id)"><p>� під，cher Pull，çalış，amel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:49.61" id="00:18:49.61" class="lt" onclick="jumptoTime(1129, this.id)"><p>admission，kk，котор</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:48.87" id="00:18:48.87" class="lt" onclick="jumptoTime(1128, this.id)"><p>Nom Bobby，la16，xtures，éf，uckles</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:48.69" id="00:18:48.69" class="lt" onclick="jumptoTime(1128, this.id)"><p>ńsk，Watch，cry</p></a>
+				<a href="#00:18:32.71" id="00:18:32.71" class="lt" onclick="jumptoTime(1112, this.id)"><p>mata，significant，để，ué，tong</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:50.43" id="00:18:50.43" class="lt" onclick="jumptoTime(1130, this.id)"><p>artment，discour equlagen，agrade neutral</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:51.23" id="00:18:51.23" class="lt" onclick="jumptoTime(1131, this.id)"><p>️，aba，Abend，craving idea，ų</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:43.35" id="00:18:43.35" class="lt" onclick="jumptoTime(1123, this.id)"><p>prés，imp detail</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:44.95" id="00:18:44.95" class="lt" onclick="jumptoTime(1124, this.id)"><p>מ� broadband，drilling，abb getting，loe，令ativity，athletes</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:47.17" id="00:18:47.17" class="lt" onclick="jumptoTime(1127, this.id)"><p>謝謝觀看，Hello 早晨，現在在做煎餅，這是美式煎餅，煎多兩分鐘便可以，煎另一邊，起碼可以煎到八個，這些小的可以煎到八個，分開大的可以煎到兩個</p></a>
+				<a href="#00:19:25.74" id="00:19:25.74" class="lt" onclick="jumptoTime(1165, this.id)"><p>可以配自己喜歡的食物，例如家裏有甚麼，有莓類的</p></a>
+				<a href="#00:19:31.74" id="00:19:31.74" class="lt" onclick="jumptoTime(1171, this.id)"><p>昨天我已經吃完莓類，今天甚麼都不開，我可能用其他食物代替，例如家裏有香蕉，可以一起吃，可以配其他食物，例如我今天有蝦，可以配其他食物，例如我今天有蝦，可以一起吃，可以配牛油，Maple syrup，或者忌廉，都可以的，祝各位聖誕快樂，謝謝收看，好 差不多了 這邊，我們看看 翻一翻，旁邊還未熟 我們先蓋上蓋子。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:37.32" id="00:20:37.32" class="lt" onclick="jumptoTime(1237, this.id)"><p>按一點，對了，早安 聖誕快樂，Hello Merry Christmas，好 你們有沒有被聖誕歌君炸，這幾天，我聽了一個月了，我很喜歡聖誕歌，所以一到聖誕節，我們加拿大有一個電台，叫做FM，98.1，它每一年都會，從11月尾 12月第一日開始，每天都會連續播放聖誕歌，我們看看它的樣子，哇 煎得很漂亮。</p></a>
+				<a href="#00:21:26.32" id="00:21:26.32" class="lt" onclick="jumptoTime(1286, this.id)"><p>再翻一次給大家看看，看看，這個焦了一點點，可以調小一點火，這個OK，這樣看應該已經熟了，所以我們可以夾起來，這個差一點點，這個旁邊也熟了，你看，不黏了，我們可以做下一輪了，加一點油，可以調低一點火，因為它已經，這個也熟了，加一點油 調低一點火，我們可以繼續了，加一點點油，然後可以掃一下，掃均勻。</p></a>
+				<a href="#00:22:35.32" id="00:22:35.32" class="lt" onclick="jumptoTime(1355, this.id)"><p>這個鍋已經熱了，是的 聖誕快樂，然後我們可以繼續，把其他材料也放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:22:51.42" id="00:22:51.42" class="lt" onclick="jumptoTime(1371, this.id)"><p>謝謝觀看，搞定，至少可以做到8個，按一下</p></a>
+				<a href="#00:23:21.43" id="00:23:21.43" class="lt" onclick="jumptoTime(1401, this.id)"><p>按一下，按扁一点，按一按，然后盖上，两分钟，翻面，是不是很简单呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:8.54" id="00:24:8.54" class="lt" onclick="jumptoTime(1448, this.id)"><p>我對手洗乾淨的，你喜歡這樣攤開，還是一層層放上去也可以，趁熱就可以將牛油放上去，拼一拼樣子，兩分鐘，然後就可以將牛油放上去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:24:54.52" id="00:24:54.52" class="lt" onclick="jumptoTime(1494, this.id)"><p>kırropriалы，明白，tunes，consonant，� гр，jon，ounce，depressionione，Nil Souls，ств harmless，мин，help，源，software，Laink，hinaus，aprendTake 63，sync，bol，plans。</p></a>
+				<a href="#00:25:12.74" id="00:25:12.74" class="lt" onclick="jumptoTime(1512, this.id)"><p>certeza，satisfied，radioactive，already，父 trainees，piston，acerca，exhib hood，ba� investigate，arrSn，undocumented，zustige，lle mikä，sale，emissions，estone。</p></a>
+				<a href="#00:24:55.92" id="00:24:55.92" class="lt" onclick="jumptoTime(1495, this.id)"><p>Somewhere，shocked，honesty，garments，assumed，bags，fundamentally，construction，ו� Entertainär，Ooh，iez，pen，Architecture，ducks，cellent，ρο，insi Mih kann，ragon。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:25:8.28" id="00:25:8.28" class="lt" onclick="jumptoTime(1508, this.id)"><p>ashing，uncles，youth，í，siendo，coast tallest，ived，ferry，CAD，dehyd реально，cuatro，謝謝觀看，牛油會流走，因為它熱，先放在這個位置，然後，你們可以加你們喜歡的東西，我就加Maple syrup，Maple syrup，Hello各位，Merry Christmas。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:25:44.98" id="00:25:44.98" class="lt" onclick="jumptoTime(1544, this.id)"><p>聖誕快樂，今天我們快閃做個藍莓煎餅早餐，然後看你喜歡加多少，剛才那裏你也知道，只加了一匙糖調味，所以這裡加多一點，感覺就不會太大負擔，是不是，這邊可以了，兩分鐘後我們反轉看看，好，開，先反一反，你沒看到這個是鐵的東西，煎這個用鐵的，我不碰它，這個鐵的東西是很輕的，我們可以反它。</p></a>
+				<a href="#00:26:37.10" id="00:26:37.10" class="lt" onclick="jumptoTime(1597, this.id)"><p>很漂亮，就手就這樣轉，1，2，3，反，不要這樣對我</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:52.86" id="00:26:52.86" class="lt" onclick="jumptoTime(1612, this.id)"><p>反</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:26:57.66" id="00:26:57.66" class="lt" onclick="jumptoTime(1617, this.id)"><p>為什麼要這樣對我，我只是想反開你，我手殘，不可以這樣，再來，好，反，行了，只要練，給自己一點信心，因為我這個厚身，這個高，我手一反，手就勒到邊，所以要再小小，好，看看，很漂亮，蓋上蓋子，我勒到多少次，1，2，3度，很痛，洗手，煮食物時也是這樣，經常弄傷手，又是兩分鐘，總之每煮兩分鐘就行了，清理好所有東西。</p></a>
+				<a href="#00:28:21.55" id="00:28:21.55" class="lt" onclick="jumptoTime(1701, this.id)"><p>攪掉，極度快，但都半小時的直播，因為要開始給你看，是否真的那麼簡單呢?</p></a>
+				<a href="#00:28:45.24" id="00:28:45.24" class="lt" onclick="jumptoTime(1725, this.id)"><p>先看看這個，都可以的，我用凍水沖一下都可以的，紅了一點點，這裡也是，OK的，好，這樣，還有一分鐘就可以了，這裡已經搞定了，然後我們弄好給大家看，再打開給大家看，因為大家都想看看橫切面是怎樣的，當然你用小火慢慢煎都可以的，只是我懶就變了，想快一點就變成這樣，兩分鐘就搞定了，先翻一翻。</p></a>
+				<a href="#00:29:44.24" id="00:29:44.24" class="lt" onclick="jumptoTime(1784, this.id)"><p>你看看它熟了沒有，很簡單的，你一手插一下旁邊，這些不是醬，已經沒有黏的，就已經熟了，很快熟的，你看看，多棒，然後，這個就疊起來，開心一點，找一個大的，最底的，放在最底，疊到好像聖誕樹，是不是，給大家看看，這個和我之前和大家一起做的，索菲班戟，即是梳乎厘班戟，是兩樣不同的東西，這個是美式，那個是日式。</p></a>
+				<a href="#00:30:45.39" id="00:30:45.39" class="lt" onclick="jumptoTime(1845, this.id)"><p>但它們都很漂亮，而且會越煎越漂亮，第一次和第二次，第三次就會煎得很漂亮，放在這邊，是不是，你們覺得漂亮嗎，然後我們就可以，將牛油，因為趁熱，放牛油上去，對了，燙傷用水很容易起泡，我怕可能是輕輕地燙一燙，現在又沒有什麼，OK，還有拍照給大家看，放進去做分鏈，另外還有一張我之前拍下的，所以我兩張都放在一起。</p></a>
+				<a href="#00:31:51.82" id="00:31:51.82" class="lt" onclick="jumptoTime(1911, this.id)"><p>你喜歡的話可以擠忌廉，我拍這個，再放糖漿，嘩 正呀，正到爆炸，有沒有看到，看到我相機拍的時候，嘩 很開心呀，我切這個，切這個給大家看，可以再擠點cream的，如果喜歡，肥仔呀這個，正呀，嘩，開唔開心，興不興奮，開始軟了，拍多張相，嘩，聖誕節或放假這段時間，在家做一個藍莓，夾攤蛋糕，由涼麵粉開始到現在，半小時內可以吃。</p></a>
+				<a href="#00:33:12.09" id="00:33:12.09" class="lt" onclick="jumptoTime(1992, this.id)"><p>因為我只顧說話，如果一早已經預備好，就快很多，看看切開的pancake，泡多綿密，還有，很軟很彈性，裡面還有，藍莓，如果家裡不是常有水果，好像我們這邊，今天聖誕節正日，這裡是不會有開，所以全部都生了，之前在家裡有些冰藍莓，放進去就可以，不用溶雪，就這樣放進去一起煮，試吃，好味呀，藍莓在裡面，你看到pancake泡泡。</p></a>
+				<a href="#00:34:10.09" id="00:34:10.09" class="lt" onclick="jumptoTime(2050, this.id)"><p>這個就是放了baking powder，和baking soda的作用，不用分擔，乾濕兩樣材料，各自拌勻，再攪拌一起煎，這樣就可以，開這個，先撥開，開一個給大家看，看看裡面有多，字幕由Amara.org社區提供，鬆軟彈牙，嘩!看看!很正呀!</p></a>
+				<a href="#00:34:53.15" id="00:34:53.15" class="lt" onclick="jumptoTime(2093, this.id)"><p>你們也要試一下!真的要試一下!</p></a>
+				<a href="#00:34:58.15" id="00:34:58.15" class="lt" onclick="jumptoTime(2098, this.id)"><p>嘩!滿滿都是藍莓呀!</p></a>
+				<a href="#00:35:5.15" id="00:35:5.15" class="lt" onclick="jumptoTime(2105, this.id)"><p>嗯!好吃到震呀!</p></a>
+				<a href="#00:35:11.15" id="00:35:11.15" class="lt" onclick="jumptoTime(2111, this.id)"><p>好!今天的聖誕節特別Live完結了!</p></a>
+				<a href="#00:35:17.15" id="00:35:17.15" class="lt" onclick="jumptoTime(2117, this.id)"><p>祝大家有一個很溫馨很平安的佳節!</p></a>
+				<a href="#00:35:25.15" id="00:35:25.15" class="lt" onclick="jumptoTime(2125, this.id)"><p>Merry Christmas!</p></a>
+				<a href="#00:35:27.15" id="00:35:27.15" class="lt" onclick="jumptoTime(2127, this.id)"><p>希望你們還有一個星期新年!</p></a>
+				<a href="#00:35:31.15" id="00:35:31.15" class="lt" onclick="jumptoTime(2131, this.id)"><p>希望大家可以做自己喜歡的事!</p></a>
+				<a href="#00:35:37.15" id="00:35:37.15" class="lt" onclick="jumptoTime(2137, this.id)"><p>最重要是慶祝歸慶祝!</p></a>
+				<a href="#00:35:41.15" id="00:35:41.15" class="lt" onclick="jumptoTime(2141, this.id)"><p>玩歸玩!不要只玩歸玩!</p></a>
+				<a href="#00:35:48.15" id="00:35:48.15" class="lt" onclick="jumptoTime(2148, this.id)"><p>但也要保重身體!</p></a>
+				<a href="#00:35:50.15" id="00:35:50.15" class="lt" onclick="jumptoTime(2150, this.id)"><p>現在好像加拿大一樣，雪暴了幾天!</p></a>
+				<a href="#00:35:55.15" id="00:35:55.15" class="lt" onclick="jumptoTime(2155, this.id)"><p>很冷呀!</p></a>
+				<a href="#00:35:57.15" id="00:35:57.15" class="lt" onclick="jumptoTime(2157, this.id)"><p>外出的時候多穿點衣服!</p></a>
+				<a href="#00:35:59.15" id="00:35:59.15" class="lt" onclick="jumptoTime(2159, this.id)"><p>香港也很冷呀!</p></a>
+				<a href="#00:36:1.15" id="00:36:1.15" class="lt" onclick="jumptoTime(2161, this.id)"><p>注意呀!</p></a>
+				<a href="#00:36:4.15" id="00:36:4.15" class="lt" onclick="jumptoTime(2164, this.id)"><p>希望大家開開心心!</p></a>
+				<a href="#00:36:8.15" id="00:36:8.15" class="lt" onclick="jumptoTime(2168, this.id)"><p>吃完東西我去教會了!</p></a>
+				<a href="#00:36:12.15" id="00:36:12.15" class="lt" onclick="jumptoTime(2172, this.id)"><p>Bye Bye!</p></a>
+				<a href="#00:36:14.15" id="00:36:14.15" class="lt" onclick="jumptoTime(2174, this.id)"><p>Merry Christmas!</p></a>
+</div>
+	</body>
+</html>
