@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[簡易晚餐] 在家做手打烏冬 - Homemade Udon</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'k8K3bGy_WFI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[簡易晚餐] 在家做手打烏冬 - Homemade Udon</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.83" id="00:00:4.83" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好，很久沒和大家見面了，前陣子我去旅行，買了一包類似這些湯底，這些湯底可以用來做烏冬，有昆布、魚、柴魚、乾，即是傳統的日式高湯的湯底，因為這包東西，引致我很想試做手打烏冬，試試自己做烏冬，用這個湯底，看看會不會好吃，大家一起見證我這次做出來會變成怎樣，不如我們說說材料。</p></a>
+				<a href="#00:01:4.83" id="00:01:4.83" class="lt" onclick="jumptoTime(64, this.id)"><p>材料很簡單，只需要三樣東西，這三樣東西是什麼呢?</p></a>
+				<a href="#00:01:10.83" id="00:01:10.83" class="lt" onclick="jumptoTime(70, this.id)"><p>我這裡有300克麵粉，我這個是中筋麵粉，即是最普通的麵粉，我看到網上有人用高筋麵粉和低筋麵粉，或者是專門在日本或亞洲區買的，專門做烏冬的麵粉，我現在沒有這個，所以我用了普通的麵粉，另外我這裡有比濕溫暖一點的水，不是熱水，只是暖水，這裡有140克，全部的用量都是用克計算的，有個秤就可以了。</p></a>
+				<a href="#00:01:56.83" id="00:01:56.83" class="lt" onclick="jumptoTime(116, this.id)"><p>這裡有些鹽，我這裡的鹽是15克的鹽，我們現在試一下怎樣做，因為需要時間，做手打烏冬需要很多時間，首先我們事不宜遲，先拿開這個麵粉，首先我們把鹽放進水裡，然後把它拌勻，令鹽完全融入水裡，為什麼我的鹽倒進水裡，水好像有一點點粉紅色呢?</p></a>
+				<a href="#00:02:33.83" id="00:02:33.83" class="lt" onclick="jumptoTime(153, this.id)"><p>因為我用了岩鹽，你可以用普通食鹽也可以，我家裡就只有一種鹽，另外那些可能有些灰鹽，或者全部都有色的鹽，那你看看你自己的家裡，如果你家裡用食鹽，普通餐桌鹽，你用餐桌鹽也沒問題，不過我看書就說，如果用好的鹽，當它混入麵粉裡發酵出來會更好，不知道是不是，我們試一下吧，不知道烏冬會不會有粉紅色呢?應該不會吧。</p></a>
+				<a href="#00:03:15.83" id="00:03:15.83" class="lt" onclick="jumptoTime(195, this.id)"><p>接著我們在麵粉中間開一個洞，然後將所有水份倒入，不要一次過倒入，逐一倒入，我先倒了一半，然後就可以用手，或者你喜歡的話可以用工具，例如木棍、木匙，或者那些做麵粉的刀，刮刀都可以，我喜歡用手，這個時間我們只要將麵粉、水、鹽，將它們黏在一起就可以了，你會看到它暫時都很乾燥，不會很濕，不要緊的，我們慢慢將它們倒進去。</p></a>
+				<a href="#00:04:22.53" id="00:04:22.53" class="lt" onclick="jumptoTime(262, this.id)"><p>然後我再倒多一點進去，到最後了，最後的全部加進去，之前我也有做過一個中式點心系列，這個系列我會做的，但要等我做好這些，我還有很多，剛剛去完旅行回來後，很多想法，很想試做，做完這些我會回去做懷舊點心，現在麵粉已經黏在一起了，表面上很粗糙，不乾滑，但沒問題的，因為我們還沒開始做，現在把它放進袋子裡。</p></a>
+				<a href="#00:05:43.28" id="00:05:43.28" class="lt" onclick="jumptoTime(343, this.id)"><p>然後鬆開一點，然後放開它，讓它休息發酵，大約30分鐘至半小時，我會休息它至少一個小時或以上，我們回來了，我現在已經休息了一個半小時，休息的時候要包好，你可以用保鮮紙或密實袋包好，這樣它不會乾，這樣它就會軟很多，雖然還是粗糙，但軟很多，接下來就是最好玩的部分，然後把它塞進去，然後我們要準備踩它。</p></a>
+				<a href="#00:06:49.28" id="00:06:49.28" class="lt" onclick="jumptoTime(409, this.id)"><p>我沒理由踩上桌子，先讓我預備一個地方，這裡有一塊墊，墊在地上，然後再放一塊墊，一個膠袋，然後墊在地上，然後我把這個放在地上，我會把它放在大袋子的中間，另外我不要把它鎖緊，因為我一踩開，空氣會滴出來，所以我不可以把它鎖緊，然後就對好密度，留空氣位置，然後就把腳踩進去，就是這樣，然後慢慢這樣踩著。</p></a>
+				<a href="#00:07:57.32" id="00:07:57.32" class="lt" onclick="jumptoTime(477, this.id)"><p>慢慢打平踩著，然後腳慢慢這樣踩著，不是說我自己有些位置是放著的，不是說死力地按它，是真的壓它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.11" id="00:08:31.11" class="lt" onclick="jumptoTime(511, this.id)"><p>我穿著一條裙子，就是這樣，平了 踩平了之後，然後我們怎樣做呢，打開它，然後把它摺起來，三摺，這裡再把它摺進去，看到嗎，然後反轉，放進去，然後再踩它，我再來一次，有些人就用打面機打，打完都不夠的，用意大利的壓麵那些，最後那個步驟的時候做都可以，但這個時間最好的，就是用身體的力量，用腳慢慢地踩它</p></a>
+				<a href="#00:10:1.88" id="00:10:1.88" class="lt" onclick="jumptoTime(601, this.id)"><p>因為我這雙是襪褲，所以很滑，但整個做打烏冬最開心的工序，工序應該是這個</p></a>
+				<a href="#00:10:42.88" id="00:10:42.88" class="lt" onclick="jumptoTime(642, this.id)"><p>謝謝觀看，我做了六次 因為實在太累了，其實我上網看到說可以做三次 五次 或者十次，我做了六次 做到這個形狀，做完之後 我又要休息了，休息也要兩個小時，我現在放下慢慢休息兩個小時，一會兒回來見，我們等待的時候可以準備烏冬的配料，這裡有個小鍋 我用熱水浸了一些冬菇，洗乾淨之後。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:42.39" id="00:11:42.39" class="lt" onclick="jumptoTime(702, this.id)"><p>因為我不是很多冬菇 只做了幾隻，然後就可以煮了，這裡有些我剛才浸了冬菇的水，然後這裡有同等份量的，一個茶匙的糖 酒 和味醂，我全部放進去，然後就可以煮冬菇了，很簡單的，就是放在爐裏慢慢慢火煮，煮到收汁就可以了，這個就超簡單，你根本就慢慢看火就行了，然後我們這裡有個麵團，已經休息了一段時間，這裡有些片粟粉，你可以用英式粉也可以。</p></a>
+				<a href="#00:12:48.87" id="00:12:48.87" class="lt" onclick="jumptoTime(768, this.id)"><p>這個就像馬鈴薯粉一樣的片粟粉，然後就可以將這個麵團壓開，然後切，現在我們在桌面先鋪一點片粟粉，不要黏著桌面，然後將麵團壓下去，然後用大一點的鋼棉棍壓過去，本來我自己有一些木的，很大的木的鋼棉棍，但是我找不到，收起來之後收得太近了，所以我現在就用這個做糖棉的鋼棉棒，其實就沒有那麼好，因為這個真的要自己慢慢壓。</p></a>
+				<a href="#00:13:50.87" id="00:13:50.87" class="lt" onclick="jumptoTime(830, this.id)"><p>那個因為重，它會自己推，這個會自己轉中間，它是可以動的，這個就不可以，要自己慢慢推，然後我們就把它壓薄，壓到多薄呢?就是壓到像我們平時吃烏冬的時候那個厚度，當然如果在自己家裡煮烏冬，是一個自己手製的烏冬，手打烏冬，就最好比平時你見到的烏冬還要幼一點會好一點，這樣煮也會方便一點。</p></a>
+				<a href="#00:14:49.34" id="00:14:49.34" class="lt" onclick="jumptoTime(889, this.id)"><p>慢慢推開，盡量要做薄一點，因為烏冬煮好後都會發脹，薄一點、幼一點，煮出來脹一點，要預留這些位置，現在大概是這個厚度，差不多了，但要感覺一下，是否全部都一樣厚度，如果有些厚一點的，就自己推一推，我做得不太規則，如果你厲害的話，比我厲害，很多人都比我厲害，做到正方形一點，等到切出來會好看一點，這樣就可以把它摺疊成這樣。</p></a>
+				<a href="#00:15:55.34" id="00:15:55.34" class="lt" onclick="jumptoTime(955, this.id)"><p>切出來會比較容易，找一個位置，量度一下位置來切，按一下，然後切，盡量一樣粗幼，希望吧，我不要做太粗，因為我的麵條本身粗，我再切幼一點，等到它們可以，看不看得到，等到它們可以，好看一點，弄好之後，將它們分開一條條，現在可以看到烏冬的樣子了，不是很漂亮，不過不要緊，第一次做，將它們分開，對。</p></a>
+				<a href="#00:17:22.38" id="00:17:22.38" class="lt" onclick="jumptoTime(1042, this.id)"><p>粗了一點，一會煮出來會爆到不知怎樣，好了我們現在就，煮烏冬了，煮烏冬的時候，有一個要記住的，就是水要多又要大一點的鍋，然後水滾了，然後我們就可以，把烏冬放進去，我先煮完，我不想留，一次過煮完，最後，我煮了差不多半小時，但不是完全，要大火，加一點凍水，再煮，再加一點凍水，因為如果我全力都用，大火的話。</p></a>
+				<a href="#00:18:6.38" id="00:18:6.38" class="lt" onclick="jumptoTime(1086, this.id)"><p>表面就化了，現在就煮完，再下去下一個步驟，煮好之後，我放進去，加一點凍水，讓它凍一條條，這樣就會很大，現在就下一個步驟，好了，我們到最後一個步驟，就是煮湯底，因為我剛才說過，我買了這種，湯底，它是一包包的，打開裡面就有一包包，每一包就對500毫升的水，這裡的水，我已經煮好了，好像茶包，然後。</p></a>
+				<a href="#00:18:50.38" id="00:18:50.38" class="lt" onclick="jumptoTime(1130, this.id)"><p>水是熱的，這裡有1000，這裡有，一公升的水，� treadmillurp</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:59.78" id="00:18:59.78" class="lt" onclick="jumptoTime(1139, this.id)"><p>amendment，Rend perceptions，narrator，Koh，放入熱水大約3-4分鐘，味道就會出來了，到時就可以拿起，然後把配料放進去煮熱，然後就可以上碟了，已經3分鐘了，湯的顏色已經出來了，我現在聞到很香的味道，這是即食湯底，做好之後，可以把烏冬再放進去煮熱，但如果這個湯夠熱的話，也可以的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:44.99" id="00:19:44.99" class="lt" onclick="jumptoTime(1184, this.id)"><p>然後我們把腐皮煮熟，本來是很大塊的，切開一半，然後就可以放魚板和剛才煮的冬菇，因為已經煮了很久，我這邊很簡單，等到魚板熱了就可以了，還有等到腐皮吸收了汁，好，烏冬就煮好了，最後就可以撒上蔥花，好，一碗手打烏冬就已經做好了，謝謝收看，下次見，給你們看看，OK，給你們看看，有腐皮、魚餅。</p></a>
+				<a href="#00:21:3.48" id="00:21:3.48" class="lt" onclick="jumptoTime(1263, this.id)"><p>有冬菇，還有烏冬，給你們看看烏冬，很粗，烏冬，現在我，試吃，裡面是半透明的，整個烏冬，不過因為拍的時候看不到，我搓了很久，現在是很大牙的，比我想像中好吃，我以為，會很難吃，但，是一定有改進的空間，吃個冬菇，很甜，還有腐皮，嗯，拍完這套，現在拍完，我吃的時候 其實我今天，由下班後開始拍到現在，11點半。</p></a>
+				<a href="#00:22:29.19" id="00:22:29.19" class="lt" onclick="jumptoTime(1349, this.id)"><p>就是我今晚的晚餐和宵夜，嗯 我今天介紹，就是這麼多，試做手打烏冬，嗯 不算成功，希望我將來可以再做得好一點，再試幾次，這樣會再好一點，希望你們喜歡，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

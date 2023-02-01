@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蕃茄羅勒焗雞 / 柚子茶漬合掌瓜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vRkWMyXXRws',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蕃茄羅勒焗雞 / 柚子茶漬合掌瓜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.03" id="00:00:3.03" class="lt" onclick="jumptoTime(3, this.id)"><p>Hello，各位朋友，你們好!</p></a>
+				<a href="#00:00:6.03" id="00:00:6.03" class="lt" onclick="jumptoTime(6, this.id)"><p>最近我發聲的聲音有點沙啞，希望你們不要介意，今天和大家做一個簡單的午餐，首先，先預備一個涼拌，這是之前一天拍攝的，就是用一個合掌瓜，用柚子茶來醃漬合掌瓜，看看效果如何，首先，合掌瓜洗淨後，去皮，去頭去尾，去芯，就可以切片，很多時候，合掌瓜可以用來煲湯，其實，合掌瓜可以生吃，雖然生吃時會有青草的味道。</p></a>
+				<a href="#00:00:57.03" id="00:00:57.03" class="lt" onclick="jumptoTime(57, this.id)"><p>但它還是甜爽脆的，在東南亞，很多人都會用合掌瓜做沙律或涼拌，切好的合掌瓜，放些鹽，這個動作除了可以將瓜裡面的水去除，還可以殺青，殺青的意思是將濃郁的青草味減低，拌勻後，放置10分鐘，然後就可以把水避開，你看，可以有很多水出來，然後就可以沖洗，去除鹽味，然後就可以調汁來醃，汁很簡單，我只需要柚子茶。</p></a>
+				<a href="#00:02:19.00" id="00:02:19.00" class="lt" onclick="jumptoTime(139, this.id)"><p>什麼牌子都可以，有些會加糖，但我不加，只用柚子茶和醋，這是日本米醋，柚子茶和醋是一份，醋是兩份，比例都差不多，拌好後可以試味，調自己口味，如果想再酸一點，可以加多一點醋，拌好後倒入合掌瓜，拌勻後可以醃兩小時或一夜，醃好的合掌瓜可以放雪櫃兩三日</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.80" id="00:03:17.80" class="lt" onclick="jumptoTime(197, this.id)"><p>是不是很簡單，除了用來醃合掌瓜，也可以用來醃白蘿蔔和青瓜，做法一樣，用鹽醃一下，醃出青味和水味後就可以拌好，然後就可以醃了，是不是很簡單，喜歡的可以試試，可以放雪櫃冷藏，我最后冷藏了超过一天，但还是很爽脆的，夏天做这些凉拌就最适合，这家是腌好的，你看看和之前刚腌的差不多，我们可以拿起器皿。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:31.06" id="00:04:31.06" class="lt" onclick="jumptoTime(271, this.id)"><p>就可以用来拌饭，兩個合掌瓜都很多，下次如果我們自己食，簡單的話，一個都已經夠了，但有些人很喜歡在家做涼拌菜，這個也是一個很好的選擇，感覺好清新好靚，好好味，講番起我之前都做過的涼拌，可以去節目重溫或者youtube找條片來睇，上次的涼拌我都有用合掌瓜，合掌瓜那次是用魚露、糖和醋來做的，配小番茄都好正。</p></a>
+				<a href="#00:05:43.13" id="00:05:43.13" class="lt" onclick="jumptoTime(343, this.id)"><p>另外今天我做的焗雞，我之前都有做過，但上次就沒有不同的方法，上次就全部放在焗盤上焗，今次的方法就多了一個手續，但更加好味，一樣是這麼簡單，我們開始吧，首先要預備一些Basil，好像是九層塔、金不換、羅勒，我這隻不是意大利那種，我這隻是唐人店買的東南亞那種金不換，然後有些蔥頭，你可以是洋蔥。</p></a>
+				<a href="#00:06:30.89" id="00:06:30.89" class="lt" onclick="jumptoTime(390, this.id)"><p>我有兩個蔥頭和一大個蒜頭，去皮，蔥頭就像我這樣切就可以了，然後有很多番茄，我用一半切開，將一半的番茄切開一半，另一半就留起，雞我都是用雞上腿，用鹽和胡椒醃一下，底面也放，差不多九點了，現在把油熱好後就可以慢慢煎，這是一個炭鍋，可能很多人都很怕現在這樣煎的話，很難處理的，會不會很容易黏底，其實油溫夠熱。</p></a>
+				<a href="#00:07:33.96" id="00:07:33.96" class="lt" onclick="jumptoTime(453, this.id)"><p>如果夠熱的話就不會黏底，另外一樣可以看一下，放下去後，煎一會兒，慢慢的去油，我這個火是中大火，等它煎香，煎到夠，煎到它不黏底，就可以轉去另一邊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:59.96" id="00:07:59.96" class="lt" onclick="jumptoTime(479, this.id)"><p>這樣就好了，這反刀完全沒有難度，煎至两边肉汁均匀， 煎至金黄色，煎至金黄色后， 将其轻轻散开，煎至金黄色后， 将其轻轻散开，加入香菜， 蒜头， 番茄和葱头，我還加了幾隻紅椒，我將它切開一半放下去，其實這樣就不會很辣，但是它又會令到味道掉起，有少少香香的味道，我亦都加些油，Salt and pepper 鹽和黑椒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:59.25" id="00:09:59.25" class="lt" onclick="jumptoTime(599, this.id)"><p>這樣就可以了，你見到我的蕃茄，有些是切開了 有些沒有切開，它一會兒切開了 汁就會在底部，雞就在這些食材的上面，擺好之後我們就可以放進焗爐，375度，焗它30分鐘至40分鐘，你聽聽你的焗爐的情況是怎樣，焗到熟就可以了，靜雞的鑊不要浪費油，我倒了少少油，因為牛肉用低的鍋其實會很香，所以我們將蔥頭切碎。</p></a>
+				<a href="#00:10:45.25" id="00:10:45.25" class="lt" onclick="jumptoTime(645, this.id)"><p>放下去炒一炒，夠 représще，labor</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:48.93" id="00:10:48.93" class="lt" onclick="jumptoTime(648, this.id)"><p>eta，Plaza，Thank Kop atau，炒紅菇，fat Vorte shirts，parchment Dellleicht</p></a>
+				<a href="#00:10:54.17" id="00:10:54.17" class="lt" onclick="jumptoTime(654, this.id)"><p>لي，내가，chính，neural，proportion，投 també，fees，introdu notice，physique，icles，將蠔菇放入鍋中，蠔菇或其他菇類都要乾身，用紙巾抹乾水份，不需要洗，不如有泥的蠔菇，洗乾水份，用水沖洗乾水份，平均放入鍋中，將蠔菇放入鍋中，煮一會。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:26.94" id="00:11:26.94" class="lt" onclick="jumptoTime(686, this.id)"><p>蠔菇不要動，將蠔菇放入鍋中，攪拌一會，蠔菇會吸收油份，因為蠔菇吸收油份，所以蠔菇的油份，只需要少許，蠔菇的油份，只需要少許，蠔菇的油份，只需要少許，將黑椒放入鍋中，用黑椒的方法，有什麼好處呢，我現在只是用大火，炒蠔菇，因為蠔菇的水份，不斷流出，最後蠔菇，會被水分吸收，蠔菇的水份，會被水分吸收，蠔菇的水份。</p></a>
+				<a href="#00:12:14.94" id="00:12:14.94" class="lt" onclick="jumptoTime(734, this.id)"><p>會被水分吸收，蠔菇的水份，Center ew</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:25.02" id="00:12:25.02" class="lt" onclick="jumptoTime(745, this.id)"><p>transported，Fehler，internship，ô，떨어�，правильно，Too，иж，muss</p></a>
+				<a href="#00:12:22.42" id="00:12:22.42" class="lt" onclick="jumptoTime(742, this.id)"><p>intest cobra，Partner，Eas bias，induction</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:21.48" id="00:12:21.48" class="lt" onclick="jumptoTime(741, this.id)"><p>wegen，大蒜，炒菇也是， 等水份滴下来， 就会炒到很香的菇，喜欢的话， 可加一点牛油， 但我今次没有， 因为待会还会加酒，加酒一收起就可以炒了，看上去是不是很香?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:55.43" id="00:12:55.43" class="lt" onclick="jumptoTime(775, this.id)"><p>嗯， 这样看着我也觉得很香，炒菇也很香，將雞肉和生薑一起炒，加入白醋後，嘩!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:18.81" id="00:13:18.81" class="lt" onclick="jumptoTime(798, this.id)"><p>好香啊!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:20.81" id="00:13:20.81" class="lt" onclick="jumptoTime(800, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，整個鍋都要煎一半，煎至金黃色，將雞蛋和牛油攪拌均勻，我亦準備了一些麵包，你可以用你自己喜歡的麵包，我在家中找到這條未切的方包，我打算切兩塊用鑊煎一煎，一會兒配雞的汁，煎多士的時候忘記了拍片，應該是忘記了按鍵，我把這兩塊厚切的多士在底面塗上牛油，然後在平底鑊煎香兩面。</p></a>
+				<a href="#00:15:3.59" id="00:15:3.59" class="lt" onclick="jumptoTime(903, this.id)"><p>煎的多士比普通的多士焗好，真的香很多，雞也焗好了，看看今天的午餐，雞皮是脆的，是不是很棒呢，比上次的更加好吃，可以印證到我的廚藝比上年進步了，看看，是不是很棒呢，近來我拍片比較隨性，希望你們不要介意，因為工作忙碌，所以有懶，時間做得不好，看看雞肉的汁，用多士吃也很棒，今天分享到此，希望你們喜歡。</p></a>
+				<a href="#00:16:34.59" id="00:16:34.59" class="lt" onclick="jumptoTime(994, this.id)"><p>下次再見，annot Capt downside。</p></a>
+</div>
+	</body>
+</html>

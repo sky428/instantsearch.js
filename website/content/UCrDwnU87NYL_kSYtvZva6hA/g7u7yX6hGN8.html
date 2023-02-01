@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple Support response on iPhone 12 Yellow Hue / Warm Color Issue</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'g7u7yX6hGN8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Apple Support response on iPhone 12 Yellow Hue / Warm Color Issue</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.58" id="00:00:0.58" class="lt" onclick="jumptoTime(0, this.id)"><p>歡迎來到 The Wong Reviewer 我的名字是Will，我做的都是科技開箱、科技評論、科技教學，今天我要做的影片是關於我發現的，iPhone 12 Pro Max的黃色色調問題的影片，我還在影片中提到，我的朋友因為黃色色調而將他的iPhone 12 Pro回購，我會在這裡留下卡。</p></a>
+				<a href="#00:00:19.30" id="00:00:19.30" class="lt" onclick="jumptoTime(19, this.id)"><p>如果還沒有看過影片的話，可以去看看，我聯絡了Apple Support，但要提醒大家，他們承認了有黃色色調問題，但同時也不是一個問題，當你看完影片後，我會解釋我意思，今天我還會在影片最後，評論一些我留下的評論，謝謝你們的回應，證明了iPhone 12 Pro的問題，特別是黃色色調。</p></a>
+				<a href="#00:00:45.52" id="00:00:45.52" class="lt" onclick="jumptoTime(45, this.id)"><p>有些人想要更換，有新的，他們回覆我，說更換的也跟同樣的問題一樣，所以這跟Apple的說法相符，在這段影片中。</p></a>
+				<a href="#00:00:58.28" id="00:00:58.28" class="lt" onclick="jumptoTime(58, this.id)"><p>我會給大家看我和Apple的討論，的翻譯，好，我們開始吧，評論者Darrel Owen Jay，寫道，兄弟，不，我的iPhone 12 Pro Max是黃色的，甚至是真色調，我可以看到顏色是正確的，但螢幕顯示的非常溫暖，我需要從顏色調調器中自行調整，才能像這段影片一樣，不是應該是這樣的。</p></a>
+				<a href="#00:01:23.66" id="00:01:23.66" class="lt" onclick="jumptoTime(83, this.id)"><p>兄弟Darrel Owen Jay 說，我的iPhone 12 Pro Max是黃色的，所以評論者Darrel Owen Jay 說，我的iPhone 12 Pro Max 發送到第一天，我馬上知道白色是黃色的，我已經回覆了。</p></a>
+				<a href="#00:01:36.20" id="00:01:36.20" class="lt" onclick="jumptoTime(96, this.id)"><p>我驚訝沒有大YouTuber在討論，我決定聯繫Apple的支持者，看看他們知道問題是什麼，或者是真的有問題，所以這是視頻的翻譯，感謝你們聯繫Apple的支持，我的名字是Michael，我可以幫你嗎，我寫了我的iPhone 12 Pro Max 真色調調了，但還是有一個不明顯的黃色，我不確定這是正常的。</p></a>
+				<a href="#00:01:59.20" id="00:01:59.20" class="lt" onclick="jumptoTime(119, this.id)"><p>相比我的XX Pro，OLED 和真色調調了，顏色的平衡度變得更冷，然後他回覆，我可以幫你嗎，請問我可以先說你的名字嗎，所以他在介紹後，他說只是確認，你的新手機有一個黃色的顏色，即使真色調調了，但還是有問題，然後他要我試試夜間調節，我應該調節溫度，看看能否平衡，然後他給我連結，請問我可以先說你的名字嗎。</p></a>
+				<a href="#00:02:32.11" id="00:02:32.11" class="lt" onclick="jumptoTime(152, this.id)"><p>接著我回答他，好吧，你不是只是在加一個濾鏡嗎?</p></a>
+				<a href="#00:02:35.55" id="00:02:35.55" class="lt" onclick="jumptoTime(155, this.id)"><p>所以我會試試看，那麼，Apple有報告說，他們知道的事情並沒有發生，這是他們的建議，他們並沒有修改顯示或更換它們等等，這並不是一件硬體問題，只是建議設定的調整，所以我回答他，好吧，我試試夜間轉換，仍然是黃色，我只是想再次查看，謝謝，所以他下一個要求的事情是，調整我的iPhone的亮度，他給我指示如何做到。</p></a>
+				<a href="#00:03:2.03" id="00:03:2.03" class="lt" onclick="jumptoTime(182, this.id)"><p>然後在最後他就說，好吧，對不起，我希望我可以為你提供更多，我還會在你的投訴中投訴，現在請你保重，晚安，這就是我們談話的程度，那麼，Apple的支持告訴我，它背後有關我收到的評論，是關於我所說的其他人，例如，PL Dave寫了，請到App Store進行智慧約會，與多個新智慧和顯示智慧相比，例如，12、12 Pro、Max和Mini。</p></a>
+				<a href="#00:03:30.75" id="00:03:30.75" class="lt" onclick="jumptoTime(210, this.id)"><p>都使用同樣的模糊色調，相比iPhone X更冷，有趣的是，10R的顯示更冷，比我現在的10更冷，不確定下一步會如何，要麼回到原地，要麼等待新的晶片更好，但會有嗎?</p></a>
+				<a href="#00:04:0.19" id="00:04:0.19" class="lt" onclick="jumptoTime(240, this.id)"><p>我會在Apple Store進行智慧約會，但是，這個人做了，他確認iPhone 12，所有4款手機都同樣有黃色和暖色調，所以，你只有兩個選擇，如果你不喜歡，只要回到iPhone，有些評論人做了，有些人留言說，我只回到iPhone 12，顯示很黃，甚至有真正的暖色調，Mr.Beats Go。</p></a>
+				<a href="#00:04:43.63" id="00:04:43.63" class="lt" onclick="jumptoTime(283, this.id)"><p>我的12 Pro Max的黃色調色太差，我把它送回來了，我還有7、10、11來比較，這些都完美，濾鏡技巧做得不錯，但是，我不應該在1200美元的手機上放濾鏡。</p></a>
+				<a href="#00:04:57.47" id="00:04:57.47" class="lt" onclick="jumptoTime(297, this.id)"><p>所以，第二個選擇是保留它，你無法做任何事，Apple已經確認了，它不是一個硬件問題，它不會修改顯示，它不會更換顯示，所以我懷疑他們將加入任何硬件或軟件更新，尤其是在四個模型之間，所以你必須活著，或者你可以在這裡加入濾鏡，就像有些評論家所說的，我今天收到更換電話，顏色和黃色的顏色相同，所以這應該只是他們的顏色，我只會使用濾鏡保留電話，因為至少我知道我的第一部電話沒有失敗，但仍然是很可惜他們做了這個。</p></a>
+				<a href="#00:05:37.24" id="00:05:37.24" class="lt" onclick="jumptoTime(337, this.id)"><p>所以Daniel Adrian留下了一個很長的評論，他有很好的評論，而且是很長的，所以我只會強調，他提到，他基本上說不要擔心，這是他的第一句評論，我同意，他說我們都習慣了過去的藍色，現在很難習慣黃色，但黃色的顯示屏比起其他顯示屏更正確，也有些顯示屏只是更黃色，這可能會影響顯示屏，但只是黃色的顯示屏，這是正確的顯示屏，你不會在任何iPhone系列的10或10s後面找到一個顯示屏。</p></a>
+				<a href="#00:06:13.24" id="00:06:13.24" class="lt" onclick="jumptoTime(373, this.id)"><p>看起來很藍，我已經在搜尋，我們找到了，但很多人都會發現有所不同，因為他們是從10或10s的系列升級，而11的系列升級，並沒有什麼大分別，在我使用11 Pro之後，我習慣了，現在我看到另一個藍色的顯示屏，我的眼睛開始紅了，我希望這能幫助你享受你的手機，這最後一個評論很有趣，他說，像我一樣，有iPhone X和之前的手機。</p></a>
+				<a href="#00:06:44.24" id="00:06:44.24" class="lt" onclick="jumptoTime(404, this.id)"><p>顯示屏是自然變藍，但並不是真正的顏色，他說，藍色的溫度其實是真正的顏色，我們的眼睛太習慣藍色，當我們轉到藍色的顯示屏，我們馬上看到，這是顏色記憶，我們習慣了長時間看到某些東西，我們認為這是正常的，當我們轉到新的東西，當顏色消失，我們馬上會注意到，這讓我們很煩躁，但他的評論是，藍色溫度其實是真正的顏色。</p></a>
+				<a href="#00:07:18.24" id="00:07:18.24" class="lt" onclick="jumptoTime(438, this.id)"><p>我不確定這是真的，我不確定藍色溫度其實是真正的顏色，或許是假的，Apple 已经改进了他们的计算机，这其实是True Tone 应该是的，而他们过去做的东西不正确，他还在反过来说，现在他已经习惯了iPhone 11，他现在的皮肤是黄色的，他看iPhone X，他不喜欢蓝色的。</p></a>
+				<a href="#00:07:43.30" id="00:07:43.30" class="lt" onclick="jumptoTime(463, this.id)"><p>这对他来说是一个明显的差异，这让我猜想，可能我们也需要习惯，所以我会把这些决定留给你们，看完你们的评论，用了两个星期的电话，和Apple的支持，我决定了什么?</p></a>
+				<a href="#00:07:59.30" id="00:07:59.30" class="lt" onclick="jumptoTime(479, this.id)"><p>我决定保留iPhone 12 Pro Max，我会解释为什么我会保留它，尽管它是黄色的，所以我把iPhone 12 Pro Max，改为了一个B-roll相机，可以拍摄视频和照片，黄色的颜色和色彩，并不影响视频和照片的效果，当我上传视频和照片，到我的剪辑软件，没有黄色的颜色，所以这并不是问题。</p></a>
+				<a href="#00:08:23.30" id="00:08:23.30" class="lt" onclick="jumptoTime(503, this.id)"><p>因为我完全把True Tone关掉，所以它变成了比较少的黄色，而当我看Netflix、YouTube，或者Amazon Prime的视频，我看这些视频时，我并没有看到黄色的颜色，我并没有注意到，它变成了黄色，所以这也是一个测试，我可能会在手机上，看更多视频，但这并不影响我，也并不影响我。</p></a>
+				<a href="#00:08:49.30" id="00:08:49.30" class="lt" onclick="jumptoTime(529, this.id)"><p>所以我可以活着，但我最担心的是，我的手机在黑色模式，当我看白色的文字时，它的字幕并不是，它应该是白色的，它有点黄色，所以有时会流到黑色，这也是我最担心的，对与错，这对我来说是很贵的手机，它价格接近1900美元，加上税金，以256GB iPhone 12 Pro Max为价，我应该承受这个价格。</p></a>
+				<a href="#00:09:19.30" id="00:09:19.30" class="lt" onclick="jumptoTime(559, this.id)"><p>或者我应该要更多的东西，我实际上并不确定，我并不确定，黄色的颜色，或者是暖色的，应该是对的，我并不在意，所以，我并不确定，我仍然在猜测，但我知道我可以活着，你可能不能活着，或者你会想回来，但我会保留手机，这就结束了，我的视频，关于黄色的计划，我应该就这样，再见，请继续关注iPhone 12 Pro Max的其他视频，我将对正常iPhone 12和XS10X进行相机对比。</p></a>
+				<a href="#00:10:5.00" id="00:10:5.00" class="lt" onclick="jumptoTime(605, this.id)"><p>还将与相机进行低光拍摄，谢谢大家观看，如果您觉得这段视频有帮助，请点赞，喜欢这段视频，并记得订阅我的频道，为相似内容。</p></a>
+				<a href="#00:10:17.88" id="00:10:17.88" class="lt" onclick="jumptoTime(617, this.id)"><p>下次见。</p></a>
+</div>
+	</body>
+</html>
