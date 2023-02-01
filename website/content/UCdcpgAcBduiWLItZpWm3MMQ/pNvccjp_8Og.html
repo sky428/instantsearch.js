@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>懷舊廣東甜點: 甜薄罉 - Cantonese Pancakes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pNvccjp_8Og',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>懷舊廣東甜點: 甜薄罉 - Cantonese Pancakes</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.25" id="00:00:4.25" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友，你們好!</p></a>
+				<a href="#00:00:6.25" id="00:00:6.25" class="lt" onclick="jumptoTime(6, this.id)"><p>今天和大家做一個古老的港式甜點，不知道在香港是否容易吃到，在多倫多，我最近和家人去飲茶，就見到有得吃，就是甜薄餐，這個廣東式甜點是很傳統的，是怎樣的呢?</p></a>
+				<a href="#00:00:35.25" id="00:00:35.25" class="lt" onclick="jumptoTime(35, this.id)"><p>和法式薄餅很相似，煎了一塊餅，然後包砂糖、椰絲、花生、芝麻，包著吃就行了，當然不同的地方是，我們用的不是麵粉，我們用的是糯米粉，所以它會有嚼勁，不如我們開始看看要什麼材料，材料一眼就在這裡，我需要糯米粉，但有時只用糯米粉的話，可能太黏，很容易難處理，當要煎的時候，所以我加了些粘米粉，有些人可能會加些燉麵。</p></a>
+				<a href="#00:01:27.25" id="00:01:27.25" class="lt" onclick="jumptoTime(87, this.id)"><p>看你方便可不容易找到這些粉類，糯米粉和粘米粉就比較容易找到，我這裡有糯米粉、粘米粉、少許鹽，當然要糖、油、水，份量在這邊，就是做薄餐的底部需要的材料，這邊就是餡料的材料，需要的材料就是芝麻、椰絲、花生和砂糖，不如我們先看看怎樣做吧，首先我們處理餡料的部分，你可以買一些生芝麻，然後回家炒香。</p></a>
+				<a href="#00:02:24.98" id="00:02:24.98" class="lt" onclick="jumptoTime(144, this.id)"><p>或者像我這樣，我剛剛看到有賣已經炒香的芝麻，我就可以跳這樣一步，不用自己去烘香，如果你有生芝麻的話，這個白芝麻就真的只需要放進白鑊，白鑊的意思就是鑊甚麼都不放，然後把芝麻放進去，開火慢慢烘到金黃色，看到金黃色就要拿走，因為芝麻本身有油份，如果到金黃色才拿走，油份仍然會令芝麻燒焦，所以如果買到已經做好的。</p></a>
+				<a href="#00:03:13.30" id="00:03:13.30" class="lt" onclick="jumptoTime(193, this.id)"><p>就可以跳過這個步驟，如果又可以買到已經做好的花生，就可以跳過下一個步驟，但我剛好買不到，這個是生花生，是未煮過的，我們需要的就是一樣，和剛才一樣，都是用白鑊慢慢炒香，然後是椰絲，這個椰絲我買的時候是細碎一點，如果你不喜歡吃椰絲的話，你可以放少一點，我這個份量是減少了，因為我自己對椰絲其實不太喜歡，但這個古老食譜是有椰絲的話。</p></a>
+				<a href="#00:03:52.06" id="00:03:52.06" class="lt" onclick="jumptoTime(232, this.id)"><p>我都是一樣跟著放，然後普通白砂糖，首先我們現在要做的，就是把花生，首先我們可以把花生開爐炒香，慢慢用白鑊烘香，如果不想用白鑊的話，可以省一點時間，可以放進焗爐或烤盤，慢慢烤香，先倒出來，先倒出來，放涼後就可以打碎，然後就可以拌入餡料，這方面很簡單，可以放入密實袋，用麵粉刷碎，如果想做這麼多。</p></a>
+				<a href="#00:05:23.56" id="00:05:23.56" class="lt" onclick="jumptoTime(323, this.id)"><p>可以用處理器處理，咁樣呢，依家呢就硬碎咗啦，咁你鍾意食粗粒啲嘅咁你咪可以硬少啲囉，如果你想食幼粒啲嘅你咪打耐啲囉，跟住呢就可以呢倒咗佢出嚟啦，花生呢搞掂咗之後呢我哋就可以將啲芝麻啦，椰絲啦，同埋呢砂糖呢，就擺曬落一個碗入面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:8.98" id="00:06:8.98" class="lt" onclick="jumptoTime(368, this.id)"><p>跟住呢，攪勻佢，咁就可以備用㗎啦，我整多咗呢啲，但係呢多啲呢啲係好食嘅，整低整唔曬食唔曬嘅話呢，咁攞個盒仔塞起佢都可以呢擺到一個星期，可以嘅但係唔好多過一個星期啦，如果唔係好容易呢會有嗰啲油液味呀，咁跟住呢你哋呢整譬如，糯米糍呀或者係湯圓嗰啲你就可以灑呢啲落去食都可以㗎，好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:48.98" id="00:06:48.98" class="lt" onclick="jumptoTime(408, this.id)"><p>我做法係點樣呢，首先呢我就將呢一個嘅糯米粉，同埋粘米粉，撈埋一齊先</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:0.98" id="00:07:0.98" class="lt" onclick="jumptoTime(420, this.id)"><p>撈好佢先啦，然後呢我可以呢將啲鹽落去啦，咁始終呢有整甜品呢落少少鹽呢就可以呢掉到個味啦，令到佢呢中和咗呢甜味呢淨係甜嗰個味道，咁跟住呢我哋呢就可以呢落埋啲糖落去，將佢全部撈埋一齊先，好多人呢有唔同嘅方法嘅可能呢將個糖同個水，溶咗佢先咁先至再落咁呢啲就你自己嘅啫我就用個直接啲，方便啲嘅方法去做啦。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:49.98" id="00:07:49.98" class="lt" onclick="jumptoTime(469, this.id)"><p>咁呢啲呢就係呢，方便啲嘅方法去做啦，全部撈好咗之後呢我就可以呢將個水呢慢慢呢係嗰個，喺嗰個倒落去呢就慢慢溝勻佢啦，佢呢就喺中間慢慢開開佢啦，打成粉漿，將所有材料放入鍋中，慢慢攪拌，如果怕有粉粒的話，可以過篩，如果太大粒的話，就不要了，如果可以過篩的話，就要放回去，現在就放在量杯裡。</p></a>
+				<a href="#00:09:25.48" id="00:09:25.48" class="lt" onclick="jumptoTime(565, this.id)"><p>接下來就是最後一個步驟，做這個粉漿，我們就要放油，我需要大火把油燒開，我需要大約兩湯匙油，大約兩湯匙多一點，看自己想放多少，放油的意思，我放多一點，大約兩湯匙多一點，為什麼要放油呢?</p></a>
+				<a href="#00:10:1.48" id="00:10:1.48" class="lt" onclick="jumptoTime(601, this.id)"><p>第一，平常吃糯米粉的時候，可能會有一種可口味，所以油可以去掉一點點，另外，雖然我煎的時候也會放油，但是如果粉漿裡面也有油的話，就更加好，這樣就不會黏鍋底，放油就比較容易，吃起來也會滑一點，剛才你看到油的痕跡，把油和粉漿攪拌均勻就可以了，現在就可以煎薄餐了，這個平底鍋，你可以直接放油，如果你想平均一點的話，可以像我這樣用紙巾。</p></a>
+				<a href="#00:11:6.48" id="00:11:6.48" class="lt" onclick="jumptoTime(666, this.id)"><p>把油沾在薄餐上，這個就看你自己想不想這樣，沒什麼所謂的，看你喜歡怎麼做也可以，我這樣放可能不需要很多油，而且，均勻一點也要確保整個鍋子都沾了油，這樣就不會黏鍋底了，我這個食譜可以做到大約兩杯的粉漿，但如果你想少一點，兩杯可能很多，如果我預當半杯為一塊，兩杯就可以做到四塊，但如果你想家中一個人兩個人，不需要做太多。</p></a>
+				<a href="#00:12:6.60" id="00:12:6.60" class="lt" onclick="jumptoTime(726, this.id)"><p>我會將食譜減半，落去之前我都要攪勻粉漿，跟住我開鑊，用最細最細嘅火，我大約放差不多半杯，我這裏四分之一杯即是兩勺的粉漿，跟住將佢攪勻，插回原形，跟住慢慢煎，我用細火，其實我本身對火不是太熟練，始終我家裏的爐不是明火煮食的，不過也可以試一下，我怕它燒不均勻，我可以把它移動一下，但如果你們習慣的話，不需要像我這樣。</p></a>
+				<a href="#00:13:26.18" id="00:13:26.18" class="lt" onclick="jumptoTime(806, this.id)"><p>慢慢煎，用慢火來煎，煎到它旁邊開始金黃邊就可以了，有些人會問，如果我煎完之後，我又要放些東西下去，我怕它不會散開，有什麼方法呢?</p></a>
+				<a href="#00:13:48.58" id="00:13:48.58" class="lt" onclick="jumptoTime(828, this.id)"><p>就是在煎的時候只煎一面，另一面，會，現在開始凝固，右邊夠熱了，我燒旁邊，令到它，裏面那邊比較濕，就可以黏到，邊邊，但如果兩邊都煎完，餡料，切的時候就會全部散開，現在慢慢煎，中間這裏，看上去就熟了，我試一下用這個鍋，如果方便的話用易潔鍋，這個是石鍋，其實它也是算易潔鍋的一種，我看看能不能做到，我有點怕它會黏在底部。</p></a>
+				<a href="#00:15:2.10" id="00:15:2.10" class="lt" onclick="jumptoTime(902, this.id)"><p>現在煎的時候，整塊是可以移動的，這個也OK，但剛剛我一直翻動就黏到一團，第一塊就這樣，之後的繼續慢慢煎，遲一點，怕它會起泡泡，它是在煮熟麵皮，tir什么 statt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:29.58" id="00:15:29.58" class="lt" onclick="jumptoTime(929, this.id)"><p>aru，habl，Kit，humano，g</p></a>
+				<a href="#00:15:29.04" id="00:15:29.04" class="lt" onclick="jumptoTime(929, this.id)"><p>магаз，ári，rels，ποι，謝謝觀看，煎至金黄色就可以了，可能由少油的关系，比较难煎，所以可以加多点油，想减油也不一定可以，传统食物都需要多一点油</p></a>
+				<a href="#00:15:53.79" id="00:15:53.79" class="lt" onclick="jumptoTime(953, this.id)"><p>哎呀，剛才都看到我整個掉到邊邊，因為太滑，我現在拿開它，我們就弄第二塊，整塊不要了，剛才的厚薄是OK的，所以我們一樣，我還是放這麼多下去，然後將它們拌勻，然後將麵皮放入鍋中，然後用小火慢慢煎，煎至表面變成金黃色，麵皮變成金黃色後就可以了，現在可以將麵皮放入鍋中，然後就放下一塊</p></a>
+				<a href="#00:17:22.33" id="00:17:22.33" class="lt" onclick="jumptoTime(1042, this.id)"><p>onn，cycles，Israelis，rain，sea，chambes，Geg，ätzen，做，illion，trata，operational，adjustment，otom Society，給 looks，Buenos provinces，surrounds，bowls，���fry Industrial。</p></a>
+				<a href="#00:17:24.71" id="00:17:24.71" class="lt" onclick="jumptoTime(1044, this.id)"><p>darff，reacts，suitable，analyzed，Hammer，spends，rehe polachine，vull，izz Occ vä，Illinois，millones，でした，如果喜歡的話，我會煎一塊兩邊都煎，看一看卷出來的效果有什麼不同，最後一塊，攪拌均勻，這張也快煎好了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:5.94" id="00:18:5.94" class="lt" onclick="jumptoTime(1085, this.id)"><p>永遠都是這樣，最後一張應該是最好看的，因為已經煎了很多次，已經熟透了，現在看，我自己也可以鬆開了，我們再煎久一點，現在旁邊已經有些半透明，有些亮身，我再煎一會兒，就可以起鍋了，大家看看，這個皮應該是最好的，淺黃色，這塊我已經整塊煎了，不煎底部了，只煎表面，然後放上去，全部都已經煎好了，介紹一下。</p></a>
+				<a href="#00:18:52.94" id="00:18:52.94" class="lt" onclick="jumptoTime(1132, this.id)"><p>這個就是第一塊，最頭那塊整個掉了出來，這個就是第二塊，第三塊，兩邊都煎了，第四塊，兩邊都煎了，不過有些焦，第五塊，最後那塊，這兩塊沒有煎底部，這兩塊底面都有煎，給你們看一下，看完之後，我們就可以疊起來，然後就可以切了，拿一盤東西出來，一盤餡料，然後就上碟的碟，也準備好，手也洗乾淨了，首先拿第一塊，煎了的放在底部。</p></a>
+				<a href="#00:19:58.94" id="00:19:58.94" class="lt" onclick="jumptoTime(1198, this.id)"><p>再整形，看哪邊好看，哪邊不好看，你們自己選吧，我想它長長的，耐吃一點，然後就可以把餡料鋪上去，放多少就真的隨你喜歡，多或少都可以，鋪平，多些當然好吃一點，鋪平它，大約三湯匙左右，我這裏三湯匙，都可以鋪平，或者一邊一邊一點，你大約三湯匙，差不多了，然後，你就捲起來，就好像捲壽司一樣，捲芝麻卷。</p></a>
+				<a href="#00:20:54.72" id="00:20:54.72" class="lt" onclick="jumptoTime(1254, this.id)"><p>捲起來，如果捲得太脆，就很難包，就像這裏，你都壓一下，好，捲好了，然後我們就可以，就位，切掉不要，其實是一個邊位，然後你可以，看著量，看你想切多少塊，我認為四塊太小，我剪它，就切三塊，切好後，我現在給大家看看，包住了在裡面，然後我可以三塊這樣放上碟，然後我把兩邊都煎了，然後我把其他材料放進去，如果我剛才說好像很厚，材料會全都擠出來。</p></a>
+				<a href="#00:22:33.43" id="00:22:33.43" class="lt" onclick="jumptoTime(1353, this.id)"><p>你可以怕的話，我就放少一點，不放三湯匙，我放兩湯匙，將它攤薄一點，你喜歡怎樣，你喜歡厚一點還是薄一點，薄一點的話，我們現在就試試看，不同的種類，看看做出來的成品是怎樣，然後我們在底部慢慢地攪拌，如果用慢火慢慢煎，讓它不要太容易變脆，這樣會更容易捲和黏住，好，攪拌好後，按一按它，然後把頭尾切掉。</p></a>
+				<a href="#00:23:37.43" id="00:23:37.43" class="lt" onclick="jumptoTime(1417, this.id)"><p>然後我可以分三件，因為天氣很黑，所以你們看的時候會比較難，現在給你們看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:50.43" id="00:23:50.43" class="lt" onclick="jumptoTime(1430, this.id)"><p>裡面就是這樣的，然後我們就可以把它放好，雖然做得不太好看，但我覺得應該好吃的，這樣我給大家看看，我試吃了，質感有嚼勁，好像糯米的東西，外皮脆脆的，餡料甜度剛剛好，如果可以減糖就不建議再加了，今天分享到這裡，下次再見。</p></a>
+</div>
+	</body>
+</html>

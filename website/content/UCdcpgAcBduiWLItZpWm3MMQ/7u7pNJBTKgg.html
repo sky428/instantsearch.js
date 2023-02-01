@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>香港懷舊點心: 馬仔</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '7u7pNJBTKgg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>香港懷舊點心: 馬仔</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多倫多美食，廣東話煮食節目，大家好，今天和大家分享做懷舊小食，馬仔薩奇瑪，不知道你們有沒有吃過呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:15.99" id="00:00:15.99" class="lt" onclick="jumptoTime(15, this.id)"><p>上一次的食譜我和大家分享做蛋散，我覺得麵團的份量和馬仔很相近，而我後來做了不同的資料搜集，他們的份量真的相近，不過很多時候做中式糕點或餅食，都會有食用的阿摩尼亞或臭粉，我今天沒有放，我之前用過上一次做蛋散的麵團試做一次，其實我已經拍了片，但後來發現做出來不合心意，所以我就沒有用那條片。</p></a>
+				<a href="#00:01:4.99" id="00:01:4.99" class="lt" onclick="jumptoTime(64, this.id)"><p>今次我又重新做過，之後我又再試過，但我還是覺得差一點點，所以今次又是一個實驗，希望今次經過幾次試驗後改良，希望可以做到，馬仔最需要留意的有兩部分，就是麵團本身的受水程度和發開程度，加入的膨脹劑是什麼，第二就是糖方面，糖方面就是糖的溫度和形態是否適合，可以把馬仔包好之餘，還可以成形，今天我們就試一下，先和大家介紹材料。</p></a>
+				<a href="#00:01:52.99" id="00:01:52.99" class="lt" onclick="jumptoTime(112, this.id)"><p>材料有120克中筋麵粉或普通麵粉，5克發粉或烘焙粉，這個麵團有蛋，蛋的份量不是兩隻蛋，是一隻雞蛋加一個蛋黃，可能會加多一點雞蛋，接下來是糖漿部分，糖漿部分是130克砂糖，100克蜜芽糖，70克水，接著我們可以開始了，第一件事就是做麵粉，現在我們先把麵團做出來，讓它休息，首先我把麵粉和發粉攪拌均勻。</p></a>
+				<a href="#00:02:43.81" id="00:02:43.81" class="lt" onclick="jumptoTime(163, this.id)"><p>不需要過篩，接著我們可以把雞蛋打發，首先放八成雞蛋，拌勻，還有一些粉，雖然這裡有一粒粒粒黏在一起，但是這裡還有粉，也就是說我們還需要蛋的，我們就把剩下的蛋也放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:45.43" id="00:03:45.43" class="lt" onclick="jumptoTime(225, this.id)"><p>然後就全部攪拌，現在看起來好像散了，其實不用怕，我們慢慢攪拌，蛋汁的水分就會慢慢被麵粉吸收，就會慢慢變稠，然後我們就可以，洗乾淨手，你喜歡的話可以戴手套，我就用自己的手，然後我們就把它搓勻，我們把它搓勻，搓到表面成型之餘，有一點光滑就可以了，現在還有一點黏手，搓到手不黏，表面光滑就可以了，現在麵糰軟熟了，而且不黏手，表面已經很光滑，我們就可以用保鮮膜包著它。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:14.53" id="00:05:14.53" class="lt" onclick="jumptoTime(314, this.id)"><p>然後就是，我現在先按扁一點，我們包住它，可以放在雪櫃，如果你家裡冷冷的，就可以在室溫，如果夏天的話就一定要放在雪櫃，這樣就是，冷藏它一會兒，靜止它 讓它放鬆，大概30分鐘，但你也可以，放久一點 30至1小時 看你的時間，最少就要30分鐘，最少就要30分鐘，記不記得我們之前的油呢，油炸過。</p></a>
+				<a href="#00:05:48.53" id="00:05:48.53" class="lt" onclick="jumptoTime(348, this.id)"><p>兩次粉之後呢，其實炸過幾次啦，這樣就有些粉留下，沉澱在底部，但你看看油的顏色仍然是很漂亮的，因為我們只是炸麵粉類的東西，沒有炸過肉，沒有炸過容易變壞的東西，或者海鮮，所以都可以繼續用的，但是呢，我們要將它過濾，你可以像我一樣，用一張廚房紙，沾一沾它，過濾油再重新用，你看到它倒出來，都是很漂亮的。</p></a>
+				<a href="#00:06:24.53" id="00:06:24.53" class="lt" onclick="jumptoTime(384, this.id)"><p>只是淋到最底的時候，那些油我就可能不要了，你就確保，你炸出來的油，是沒有特別的異味，還有呢，這裏底部你見不見到，這些很容易，會變成洞，會一粒粒，變成洞的東西，所以我們就不要了，大概這裏最後兩湯匙，的油呢，你見到有很多沉澱物，我就不要了，你看看，過濾好的油就可以再用，現在，麵團已經，發酵了大概三十分鐘。</p></a>
+				<a href="#00:07:12.53" id="00:07:12.53" class="lt" onclick="jumptoTime(432, this.id)"><p>很軟的，我們就可以將一些，我們拿一點點粟粉，在表面，灑一灑，我們放上去，在表面撈下一點點，然後我們就可以，將它，好像之前一樣，壓平它，將它壓薄，大概4毫米，比半厘米再薄一點，薄一點，其實可以再薄一點，你大概好像意大利粉一樣，現在有一點點方形就對了，這樣就很容易切，現在我把它切成2-3mm的薄片，然後就可以把它切開。</p></a>
+				<a href="#00:08:38.74" id="00:08:38.74" class="lt" onclick="jumptoTime(518, this.id)"><p>然後就可以把它切成2-3mm的薄片，粗幼最好一致，就是這樣，現在已經切好了，我有一些短的，一些長的，沒問題的，現在你可以再怕它，待會靜置了，等待炸的時候，它黏在一起，或者看到一些黏在一起的，我們就把它拉開，現在我們可以灑一點點，粉在表面，拌一拌，讓它們，不要黏在一起，然後我們就可以開爐炸了，首先我們把油放進去。</p></a>
+				<a href="#00:09:55.64" id="00:09:55.64" class="lt" onclick="jumptoTime(595, this.id)"><p>然後我們就，把油煮熱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:1.64" id="00:10:1.64" class="lt" onclick="jumptoTime(601, this.id)"><p>然後就炸了，我們也預備，有一個盤子，有些，廚房紙在那裏，我們預備，我們可以放一條進去試一下，它慢慢這樣浮起，這個狀態就對了，我們就把油關掉，因為它一來就好像，慢慢就上來了，我們就炸它，大概30秒至40秒，וך screamed ROI</p></a>
+				<a href="#00:10:43.16" id="00:10:43.16" class="lt" onclick="jumptoTime(643, this.id)"><p>Oracle，Menge，den，lease</p></a>
+				<a href="#00:10:46.46" id="00:10:46.46" class="lt" onclick="jumptoTime(646, this.id)"><p>проф，况，Мы，��，loe，urally，지원，zw</p></a>
+				<a href="#00:10:43.46" id="00:10:43.46" class="lt" onclick="jumptoTime(643, this.id)"><p>unpack introductions，� masks，Professor，voir</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:44.50" id="00:10:44.50" class="lt" onclick="jumptoTime(644, this.id)"><p>enn，des demonstrate</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:46.86" id="00:10:46.86" class="lt" onclick="jumptoTime(646, this.id)"><p>znaczy Morrison，communaut</p></a>
+				<a href="#00:10:45.62" id="00:10:45.62" class="lt" onclick="jumptoTime(645, this.id)"><p>voulais，ices，ifiable，괜찮아</p></a>
+				<a href="#00:10:41.88" id="00:10:41.88" class="lt" onclick="jumptoTime(641, this.id)"><p>wheels，ㅋㅋㅋㅋ，fallait，USE，Short，vidare</p></a>
+				<a href="#00:10:43.50" id="00:10:43.50" class="lt" onclick="jumptoTime(643, this.id)"><p>実 glut，� Hubble，immediate</p></a>
+				<a href="#00:10:40.94" id="00:10:40.94" class="lt" onclick="jumptoTime(640, this.id)"><p>»:rium，bul ко он situation，sofa</p></a>
+				<a href="#00:10:44.84" id="00:10:44.84" class="lt" onclick="jumptoTime(644, this.id)"><p>hommes Bella，arriving mau，油溫大約是170至180度，每次加少許油，將油份放入炸雞蛋，將雞蛋放入炸雞蛋，炸30至40秒，看到已經定型了，多士有少少轉色，除了不是白色，我們就可以全部拿出來，就是這樣，你看到它已經變亮了，這樣就對了，然後我們就如視者一路炸，盡量炸到全部都是這樣的顏色。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:52.20" id="00:11:52.20" class="lt" onclick="jumptoTime(712, this.id)"><p>你就不怕一出來就有些深色和淺色，留意一下油的溫度，如果溫度低了，就加少少，高了就減少火力，這樣就可以了，這樣就對了，大约30秒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:31.00" id="00:12:31.00" class="lt" onclick="jumptoTime(751, this.id)"><p>謝謝觀看，escalальную，viduks，� freedoms，chaud，fast，�，京 defin，Diese，es，anki，�，て，darn，mejorar，papCome，algorithm，exerc晚上，atk，は conver Agric，figura，utt，деле。</p></a>
+				<a href="#00:12:42.49" id="00:12:42.49" class="lt" onclick="jumptoTime(762, this.id)"><p>éo，也請別忘了分享出去並按一個讚哦 並且記得訂閱我們的頻道 才能收到最新消息哦，現在麵條已經炸好了，給大家看看，現在，用一缸油放在旁邊，另外預備一個盤，雖然我的盤是不粘的，但我還是放了一張烤箱紙，先包好它，然後就可以煮糖了，糖的溫度大約要，在115度至120度之間，慢慢煮。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:36.85" id="00:13:36.85" class="lt" onclick="jumptoTime(816, this.id)"><p>糖不用攪拌，慢慢煮溶，讓我近一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:43.09" id="00:13:43.09" class="lt" onclick="jumptoTime(823, this.id)"><p>調小火一點點，然後我們就看它了，剛才那個溫度計，剛才你見到炸東西的時候，它掉了，它突然間反了掉了出來，然後就爛了，幸好我還有一個，我大概就是要，115至120度，現在就已經100度了，不要太大火，讓它慢慢煮，我們看一下，它們是否已經開了，OK了啦，現在已經是115度以上了，在附近是119度，我們這個時間就對了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:48.50" id="00:14:48.50" class="lt" onclick="jumptoTime(888, this.id)"><p>我們關掉爐，然後我們可以先擺開一陣子，已經沿著漆黑做了，然後我們可以將糖漿分兩次淋上去，我先淋了一部分，在表面淋上去，因為很快就會結，現在已經有拉絲的效果，你見不見到拉絲的效果，糖漿就是這樣就可以了，我們先放一點，立刻就拌，很快就可以勾住了，反了底的就放這個，用低的，等一會再拌，盡量拌到所有的。</p></a>
+				<a href="#00:15:50.50" id="00:15:50.50" class="lt" onclick="jumptoTime(950, this.id)"><p>輕手一點不要太大力，不然就會斷，盡量拌到所有的都有拉絲的效果，見不見到，這個就是對的溫度了，現在已經開始，全部都已經黏到糖漿了，也開始硬了，我們現在事不宜遲，立刻就要將馬仔放進模具裡，已經拌勻了，倒進去，然後就可以將它全部放進模具裡，你喜歡的話可以看看，這個模具其實也相對大，我們先壓平它。</p></a>
+				<a href="#00:16:47.50" id="00:16:47.50" class="lt" onclick="jumptoTime(1007, this.id)"><p>壓緊它變成一個，因為如果你太鬆，就會變成很多洞，所以我們盡量壓到它，平均的一個形狀，兼且就是，現在還很熱的，我們就這樣壓一壓它，這裡也很熱，面首那裡也會熱的，然後面那裡我們一起這樣壓一壓它，看到它做完出來就是一個方形，一會兒就可以放涼一點切的時候就方便切了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:38.00" id="00:17:38.00" class="lt" onclick="jumptoTime(1058, this.id)"><p>也有一點燙手的，小心一點，現在做了半份的形狀，一團的壓一壓</p></a>
+				<a href="#00:17:48.00" id="00:17:48.00" class="lt" onclick="jumptoTime(1068, this.id)"><p>現在就把它裝起來，用這把刀，看看，很像呀，купats rápido Hulk，gro ankles，fruit</p></a>
+				<a href="#00:18:28.46" id="00:18:28.46" class="lt" onclick="jumptoTime(1108, this.id)"><p>correr，して</p></a>
+				<a href="#00:18:17.50" id="00:18:17.50" class="lt" onclick="jumptoTime(1097, this.id)"><p>lys，ώς</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:31.40" id="00:18:31.40" class="lt" onclick="jumptoTime(1111, this.id)"><p>Кстати，17，Artemocc</p></a>
+				<a href="#00:18:19.48" id="00:18:19.48" class="lt" onclick="jumptoTime(1099, this.id)"><p>と思います，accomp，Somebody</p></a>
+				<a href="#00:18:43.30" id="00:18:43.30" class="lt" onclick="jumptoTime(1123, this.id)"><p>ş，sur，gew</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:40.50" id="00:18:40.50" class="lt" onclick="jumptoTime(1120, this.id)"><p>rank，十 Jeg，dal，ucha，dri</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:43.22" id="00:18:43.22" class="lt" onclick="jumptoTime(1123, this.id)"><p>む，acron，carrot，Mỹ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:41.68" id="00:18:41.68" class="lt" onclick="jumptoTime(1121, this.id)"><p>ND，delegates，farm，surprises，DNA，que，�，oles，יא</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:43.42" id="00:18:43.42" class="lt" onclick="jumptoTime(1123, this.id)"><p>�a，Edwards，ready，accelerate，deep，emp，floods，yang</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:35.64" id="00:18:35.64" class="lt" onclick="jumptoTime(1115, this.id)"><p>apolog λ，Quebec，socio</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:39.50" id="00:18:39.50" class="lt" onclick="jumptoTime(1119, this.id)"><p>カ，� ro выб，bust，indistinct，aware，oscillator，об</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:39.02" id="00:18:39.02" class="lt" onclick="jumptoTime(1119, this.id)"><p>elo，源，orter，oppressed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:39.86" id="00:18:39.86" class="lt" onclick="jumptoTime(1119, this.id)"><p>speculate，adolescent</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:30.56" id="00:18:30.56" class="lt" onclick="jumptoTime(1110, this.id)"><p>jew powered，cotton</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:25.82" id="00:18:25.82" class="lt" onclick="jumptoTime(1105, this.id)"><p>Ariel，олод할</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:38.86" id="00:18:38.86" class="lt" onclick="jumptoTime(1118, this.id)"><p>pokemon，Whatever，rail universities，걸 amer我在 Seiten，support，은，用力一拉，拉絲紋都出來了，看不看得到，很正呀，給你們看看，看糖漿的份量，如果怕太多糖漿，可以加少少糖漿，拉絲紋的感覺，很正呀，試試看，好味呀，不是很脆，但是馬仔的味，如果要脆脆的。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:35.06" id="00:19:35.06" class="lt" onclick="jumptoTime(1175, this.id)"><p>可能要用臭粉，這個是發粉，效果我都很滿意，吃起來好像，我在糖餅店，有些專賣老婆餅的地方，吃的馬仔，不過可能拉絲紋很強，即是糖漿多了一點點，糖漿可以減少一點，停不下口，不過我做了這麼多次，我已經做了三次，這個馬仔，終於成功了，這是我覺得最滿意，最像，很開心和大家分享這個食譜，你們喜歡的話，你們也試試吧，說不定你們做完之後。</p></a>
+				<a href="#00:20:42.06" id="00:20:42.06" class="lt" onclick="jumptoTime(1242, this.id)"><p>你們也會有其他提議給我，讓我們大家一起做得更好，下次再見。</p></a>
+				<a href="#00:20:50.64" id="00:20:50.64" class="lt" onclick="jumptoTime(1250, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

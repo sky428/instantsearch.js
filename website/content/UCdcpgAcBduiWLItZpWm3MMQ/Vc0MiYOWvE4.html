@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次學人包糭 - My First Sticky Rice Dumpling</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Vc0MiYOWvE4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>第一次學人包糭 - My First Sticky Rice Dumpling</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.03" id="00:00:4.03" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，各位朋友你們好!</p></a>
+				<a href="#00:00:11.03" id="00:00:11.03" class="lt" onclick="jumptoTime(11, this.id)"><p>今天就試做，看看可不可以用一天的時間預備做一隻平民版，最簡單的粽子，因為端午節快到了，我們就試一下，我又去試一下，從未做過，從未做過粽子，今次就試一下，一手一腳做粽子出來看看，首先，我就有一些五花肉，那些五花肉我已經切了一粒粒，然後就已經放了鹽和五香粉去醃它，醃到顏色這樣包著就可以了。</p></a>
+				<a href="#00:00:58.03" id="00:00:58.03" class="lt" onclick="jumptoTime(58, this.id)"><p>不用再放其他味道，因為豬肉放了五香粉之後，它就會吸收了五香粉的味道，材料是很簡單的，豬肉、鹹蛋黃，綠豆和糯米，還有粽葉，粽葉我正在浸泡，稍後再展示給你們看，首先介紹一下這個綠豆仁，這是在超級市場買的綠豆，已經去了葉，最初泡的時候，泡出來的水是黃色的，很鮮黃色的，很多時候泡完之後，人們會用來做這個醬汁。</p></a>
+				<a href="#00:01:49.07" id="00:01:49.07" class="lt" onclick="jumptoTime(109, this.id)"><p>但其實最好是洗好幾次，我在家裡的時候，我自己洗好幾次，不斷沖水洗，洗到現在的水不是鮮黃色的，把所有的色素都洗掉，可能你買的時候，綠豆仁有很多人會加色素，令到它看起來比較鮮黃，但我們就全部洗掉，不要，另外就是糯米，糯米我也是在泡水的，我也是會把糯米洗乾淨，然後慢慢泡，泡完之後，我們等它們熱味。</p></a>
+				<a href="#00:02:38.07" id="00:02:38.07" class="lt" onclick="jumptoTime(158, this.id)"><p>泡這個綠豆仁，這個糯米，還有那個粽葉，這些就是前期預備功夫，等到一間店的味道都入味了，我們就開始做下一個步驟，好，現在糯米泡了差不多兩個小時，然後我們就把糯米過篩，把水隔掉，綠豆仁已經泡好了，同樣時間，現在我們就隔水，綠豆仁我已經隔水了，現在就把鹽加進去，把味道拌勻，加一點味道給它。</p></a>
+				<a href="#00:03:28.07" id="00:03:28.07" class="lt" onclick="jumptoTime(208, this.id)"><p>這裡的綠豆仁大約加兩茶匙，差不多了，加2茶匙鹽，拌勻，綠豆已經發起了一倍，然後我再加油，油可以再加多一點，我加4茶匙油，綠豆會有一點點的咸味，加一點油就會減少咸味，加五香粉，我們加一個匙羹就可以了，我加了，糯米我就不加，如果你在外面看到有些地方都會加糯米，你喜歡就加吧，我這個就不加，因為我想糯米吸收粽葉的味道。</p></a>
+				<a href="#00:04:44.40" id="00:04:44.40" class="lt" onclick="jumptoTime(284, this.id)"><p>其他食物也有味道，吃的時候也會吃到糯米的香味，所以我就不加，只加在綠豆仁上，粽葉已經泡了很久，泡完之後就不是這樣，泡完之後也要洗，最好就是我一塊一塊洗一洗，最少也要擦乾淨，然後我們，弄好這裡之後有些草送給我，買粽葉的時候可以用來包粽子，然後一塊一塊洗，洗完就可以下一個步驟了，粽葉洗完兩邊之後。</p></a>
+				<a href="#00:05:37.40" id="00:05:37.40" class="lt" onclick="jumptoTime(337, this.id)"><p>我們就剪尾部，這個硬的部分，我們就剪掉，你喜歡橫剪也可以，長長的也可以，我就這樣整個剪掉，上面的尖端也可以剪掉，這樣就方便整個包粽子了，這些鹹蛋你可以分成四份，或者我分成三份，每次都要高難度挑戰，你喜歡的整個，但是整個放進去太多了，我就把它切成三份，一隻三份，一共六隻，這樣就可以包18隻粽子了，我們開始包了。</p></a>
+				<a href="#00:06:29.40" id="00:06:29.40" class="lt" onclick="jumptoTime(389, this.id)"><p>首先給你們看一下，其實我和家人一起包的，我找他們在他們家裡弄，一開始就這樣，這個就是我第一隻粽子，扁扁的，包著包著就會越包越漂亮，有些會看這個多粽子，有些又大又小，始終不專業，在家裡玩，大家一起玩，不是很開心，你們看一下這裡，就有很多不同的粽子，現在又拍一次給你們看，剛才練習完之後，感覺好像好一點。</p></a>
+				<a href="#00:07:15.40" id="00:07:15.40" class="lt" onclick="jumptoTime(435, this.id)"><p>有一個整個粽子的感覺，這裡有兩塊葉，然後我疊著它，葉有分底面的，你看到這個就是葉的底，這個也是有一個硬的，放在下面，這個放在上面，有些人喜歡很尖的粽子，很尖很尖，有些人喜歡沒那麼尖，看你喜歡怎麼弄，然後我這裡有兩塊葉，疊著它，向著自己，然後就屈一屈它，這個位置就是屈到你的粽子有多大，如果你的十字開一點。</p></a>
+				<a href="#00:08:6.40" id="00:08:6.40" class="lt" onclick="jumptoTime(486, this.id)"><p>你的粽子就會深一點再大一點，如果你的十字近一點，不是那麼開，不是這樣十字，你的粽子就會扁一點，還有小一點，看你喜歡怎麼弄，大同小異，我不是教你們，我是分享給你們看，破了的就不要了，因為一會兒包包口會破，我分享給你們看，我第一次弄粽子的經驗，跟大家一起玩，然後用一塊葉子疊起來，然後摺起來。</p></a>
+				<a href="#00:08:50.77" id="00:08:50.77" class="lt" onclick="jumptoTime(530, this.id)"><p>摺到有一個小洞，有一個小洞，摺好這個洞之後，就要按緊它，之後就按緊它，用手指按緊它，這樣它就不怕一會兒會鬆了，按緊它之後，第一樣東西放進去，我們就放一匙羅米進去，放多一點，攤開一點點，我喜歡梅花間竹，然後就放一些綠豆仁進去，大約一匙，然後就預備我剛才做的肥豬肉，我這個沒有什麼餡料，是清貧版的。</p></a>
+				<a href="#00:09:56.77" id="00:09:56.77" class="lt" onclick="jumptoTime(596, this.id)"><p>除了有肥豬肉之外，我還放了一粒半粒栗子，還有一點點蛋黃，我的粽子就是這麼多，沒有其他東西，如果你想做豪華一點的版本，你可以做冬菇、瑤柱、花生、蝦米，隨你喜歡，但如果只做一個粽子，我覺得這樣就已經很夠了，然後我也是，把綠豆仁放上去，蓋上它，最後就看你喜歡吃不喜歡吃綠豆，如果你喜歡吃綠豆，像我這樣可以放多一點。</p></a>
+				<a href="#00:10:38.57" id="00:10:38.57" class="lt" onclick="jumptoTime(638, this.id)"><p>最後我們就再把這個羅米蓋上去，在底部薄薄的放多幾匙就行了，這個粽子很重手，按緊之後我們就開始包了，首先怎樣包呢，我就在旁邊這裡，加一塊葉在旁邊，拉著它，這一邊又加一塊，我現在按著，這一邊放一塊葉，然後我這裡就把它按在一邊，我用手指按著它，這一邊我又放一塊葉，然後呢，然後呢，然後我就可以。</p></a>
+				<a href="#00:11:39.38" id="00:11:39.38" class="lt" onclick="jumptoTime(699, this.id)"><p>另一邊這裡又是放一塊葉，繞著它又是這樣蓋著它，這樣兩塊葉就可以，不怕它一會兒會散開，然後你會感覺到，我兩邊有糯米，然後我就沿著剛剛糯米的位置，按一邊，這一邊又是按上去，我的粽子就已經成形了，看不看得到，我的粽子已經出現了，你可以包緊一點的糯米來做，其實鬆鬆的也可以，為什麼呢，因為一會兒蒸的時候糯米會發大。</p></a>
+				<a href="#00:12:29.38" id="00:12:29.38" class="lt" onclick="jumptoTime(749, this.id)"><p>這樣就不會令它那麼繃緊，然後你可以，之前我有些水醋，它跟著在葉上給我，但它給很少，所以我可以在家裡找些廚用的棉線來包它，到最後這個就很簡單，包緊它就可以了，但你也可以有方法的，我這裡就是這樣，有些人會咬著，你可以看看咬不咬，因為我要跟你們說話，我不咬著它，首先我這邊的另一邊就繞三下，繞完三下之後。</p></a>
+				<a href="#00:13:10.38" id="00:13:10.38" class="lt" onclick="jumptoTime(790, this.id)"><p>我就反這邊，這條線向這邊，斜斜的來這邊，然後我又是繞三下，三至兩三下，繞完之後反過來，看到它有個十字，然後我就把它綁緊，可以綁死結，或者綁緊就可以了，我就繫著它綁，綁死結，讓它不要散開，向上一點給你們看到我綁，綁完之後，一隻腫就已經做好了，給你們看看，是一隻有尖端的腫，長了的棉線剪掉就可以了。</p></a>
+				<a href="#00:14:20.69" id="00:14:20.69" class="lt" onclick="jumptoTime(860, this.id)"><p>跟家人一起玩，大家就做到不同的腫，看你大小吧，然後就繼續綁上去，好了 我終於都已經完成了，粽子已經綁好了，有些是高一點的，有些大一點 有些小一點 有些扁一點，這些就是我的，我不知道為什麼我包起來都像鹼水粽一樣，家人包起來就比較漂亮，真的像一個很有尖端的粽子，我這裡總共有18個粽子，我們不是包很多 因為始終不是吃得太多。</p></a>
+				<a href="#00:15:10.50" id="00:15:10.50" class="lt" onclick="jumptoTime(910, this.id)"><p>下一個步驟就是要煮粽子，要煮多久視乎，我這些粽子很小的，還有我在家裡試玩，我打算用熱水煮，大約煮個半小時 蓋上蓋子焗半小時，之後就把粽子吊乾 吃的時候再煮15-20分鐘就完成了，如果家裡有電子高速壓力鍋可以放進去，那些更方便，45分鐘至1小時就沒問題了，但如果說我在網上看到有人煮3-4小時，煮3-4小時 或者4-5小時。</p></a>
+				<a href="#00:15:56.42" id="00:15:56.42" class="lt" onclick="jumptoTime(956, this.id)"><p>其實就看你自己能做出來是怎樣，我也是試試看，煮個半小時再焗 看看成果是怎樣，我們回來了，終於粽子已經煮好了，這樣分開，這邊是用電子壓力鍋煮的，出來的效果是 煮的樣子很漂亮 形狀也很漂亮，已經把水弄乾了，壓力鍋煮的感覺是煮得很久，開始有一點點爆口，不如我開一開給你看看，兩個煮出來的樣子是怎樣的。</p></a>
+				<a href="#00:16:51.66" id="00:16:51.66" class="lt" onclick="jumptoTime(1011, this.id)"><p>很多時候人家說粽子要煮幾個小時，我現在開給你看看，我煮了一個小時 再焗，出來的效果跟別人煮幾個小時的有什麼不同，你看看 也是一樣很綿密的一個粽子，dx，strangers，해야</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:14.50" id="00:17:14.50" class="lt" onclick="jumptoTime(1034, this.id)"><p>stesso，database，hmm，catches，不一定要做這麼多小時，我也是這樣 也可以做到一個小時，只需要一個多小時，然後我開給你們看，放在碟子上，看，是熟的一種，很漂亮，煮出來的樣子也是一樣的，就好像平常見到的那種，我把它撕開，這個包得一般般，像剛剛開頭那些，它就很黏。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:44.55" id="00:18:44.55" class="lt" onclick="jumptoTime(1124, this.id)"><p>好了，給你們看看，煮出來，如果我用少一點的時間去做，你會看到還有米，你會看到一粒粒的米都在，但它已經熟透了，軟軟的，但你還會看到有些米粒，如果用壓力鍋煮了很久，你會看到米的形狀已經沒有了，整個黏住了，最後我就切開給你們看，因為我這個粽子其實沒有什麼餡，用最短的時間，最快的時間，大約一晚之內就可以做完。</p></a>
+				<a href="#00:19:28.55" id="00:19:28.55" class="lt" onclick="jumptoTime(1168, this.id)"><p>看看它出來的樣子是怎樣的，兩個都切開給你們看，給你們看中間的橫切面，我洗手了，另外這個橫切面，現在就可以吃了，看你是哪一派的人，有些人說要放豉油，有些人會放砂糖，我自己家裡是放砂糖的，看你喜歡放哪一種就可以吃了，試味時間了，我這個是煮的，現在就蘸些糖吃吃看，是我心目中的粽子的質地和味道，因為我煲的粽子沒有什麼菜。</p></a>
+				<a href="#00:20:50.86" id="00:20:50.86" class="lt" onclick="jumptoTime(1250, this.id)"><p>你喜歡的話可以加一些豪華的菜，試了味道，這個就是我正想要的味道，現在我試了這個鹹味的，就加豉油的，看你喜歡加什麼豉油，老抽，蒸魚豉油，甜豉油，生抽，我試一下，其實是一樣一起煮的，質地是有一點點分別的，這個粽子會再軟一點，今天介紹到這裡，希望你們可以在家試一下，我第一次做粽子的經驗很開心，下次再做一個。</p></a>
+				<a href="#00:21:39.06" id="00:21:39.06" class="lt" onclick="jumptoTime(1299, this.id)"><p>下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>
