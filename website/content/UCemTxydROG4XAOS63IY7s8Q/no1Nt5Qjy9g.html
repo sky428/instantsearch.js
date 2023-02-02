@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提子丹麥包</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'no1Nt5Qjy9g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>提子丹麥包</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日要分享嘅就係提子丹麥包。</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>其實呢個只係一個普通甜麵團，同平時大家做嘅甜麵團差不多。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>搓揉嘅手法我唔浪費時間拍片，因為我upload片都幾浪費時間。</p></a>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>首先將搓揉咗嘅麵團放入一個兜度發酵，發酵到一倍大，之後再攞出嚟。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>將麵團發酵到一倍大左右，之後再攞出嚟。</p></a>
+				<a href="#00:00:37.85" id="00:00:37.85" class="lt" onclick="jumptoTime(37, this.id)"><p>灑一點粉，用手拍一拍它，將它排一排氣，現在用保鮮紙封好麵團，放在冰箱冷藏一下，麵團冷藏了四小時後，拿出來，記得千萬不要冷藏太久，冷藏太久的話麵團很容易會爛，即是不夠好形狀，然後我們就，把它攤成一個長方形，然後準備一些溶了的牛油，不是溶了的牛油，應該是軟了的牛油，在麵團上掃一半，在一半面团的上面铺上提子干。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:9.53" id="00:02:9.53" class="lt" onclick="jumptoTime(129, this.id)"><p>materia logr commissioner，aún，dro，alta，ınt，ف，Eagles，legislation，龍，Me，然後對摺好，用支棍，謝謝觀看，hops invalid，etmek</p></a>
+				<a href="#00:02:40.79" id="00:02:40.79" class="lt" onclick="jumptoTime(160, this.id)"><p>flu acute，mise</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:41.51" id="00:02:41.51" class="lt" onclick="jumptoTime(161, this.id)"><p>worst，arson</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:39.23" id="00:02:39.23" class="lt" onclick="jumptoTime(159, this.id)"><p>whe polls，shelter，ética，ожет，巴çe，newspaper</p></a>
+				<a href="#00:02:40.99" id="00:02:40.99" class="lt" onclick="jumptoTime(160, this.id)"><p>rushed，再放在冰箱，冷藏一下，冷藏了幾個小時後，等牛油變硬一點，否則你塗完牛油馬上做形，手會黏到牛油，拿一塊麵團出來，如果你想它長一點，就這樣切，如果想它短一點就這樣切，想它漂亮一點就切掉邊緣，當然不切也沒所謂，然後將它分割至你需要的大小</p></a>
+				<a href="#00:04:12.01" id="00:04:12.01" class="lt" onclick="jumptoTime(252, this.id)"><p>把米飯放進去，開火，然後放在桌上，先擦乾手，不要太多粉，然後手這樣放在兩邊，手一隻前一隻後，這樣搓，搓完之後，靠雙手這樣搖一搖，就是這樣，再一次，手一隻向上一隻向下，搓平均，中間有些厚了的，推一推，然後靠叉手這樣搖，如果覺得這個動作有點難，可以不用搖的，可以就是這樣，搓完之後，放過來，慢慢用手這樣扭，前後扭都可以的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:35.83" id="00:05:35.83" class="lt" onclick="jumptoTime(335, this.id)"><p>發酵到兩倍大之後，輕輕地掃蛋液，以180度入爐，大概15到20分鐘左右，視乎爐的火力，最後出爐的時候，可以趁熱的時候塗一些黃莓果醬，又或者有些人喜歡塗糖水，也有些地方塗溶油的，沒所謂的，最主要是令到麵包身，有一點點光亮，今日教大家做的蛋麥條就做到這裏了。</p></a>
+				<a href="#00:06:17.83" id="00:06:17.83" class="lt" onclick="jumptoTime(377, this.id)"><p>有機會的話，就一齊試做吧!拜拜!</p></a>
+</div>
+	</body>
+</html>

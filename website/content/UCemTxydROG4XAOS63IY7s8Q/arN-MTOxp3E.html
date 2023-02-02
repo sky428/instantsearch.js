@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快靚正韮菜餅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'arN-MTOxp3E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>快靚正韮菜餅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.57" id="00:00:0.57" class="lt" onclick="jumptoTime(0, this.id)"><p>今日做的就是窮人恩物韭菜餅，材料很簡單，有中筋麵粉，鹽，豬油，滾水，水煮滾後便馬上倒入，倒入後用匙羹攪拌一下，因為熱，不用擔心粉粒太多，只要跟準份量便可，攪拌至差不多後便可開始忙手，搓一搓已經成團，所以剛開始看到粉粒狀態，就好心急加水係唔需要㗎，搓至粉底沒有了就可以放上桌搓揉，放上桌搓揉。</p></a>
+				<a href="#00:01:40.77" id="00:01:40.77" class="lt" onclick="jumptoTime(100, this.id)"><p>不用特別搓揉，只要搓揉粉底及粉碎就可以，過程很快，不用兩分鐘，搓成這樣就可以了，放回碗中，用保鮮紙鬆弛半小時，再拿出來做，餡料的部份都很隨意，我用了半韭菜，有些人喜歡炒蛋花再放，如果喜歡吃濕潤的可以不炒，可以這樣攪拌，有些人喜歡放蝦仁或蝦皮，有些人喜歡爆豬肉，你們自己喜歡怎樣攪拌，最基本當然有韭菜。</p></a>
+				<a href="#00:02:46.47" id="00:02:46.47" class="lt" onclick="jumptoTime(166, this.id)"><p>加少許麻油，像我這樣甚麼都沒有，當然要整色整碎，加些麻油，五香粉，不用多少茶匙，均勻地灑上去，鹽，雞粉，因為我甚麼都沒有，所以我用雞粉提味，攪拌均勻就可以包餡了，麵團鬆弛30分鐘後，可以切成小塊，獨立包裝也可以，像我這樣一開二，一大塊，一個pan大小都可以，推開它，如果想效果圓一點，可以用圓形的東西。</p></a>
+				<a href="#00:03:48.47" id="00:03:48.47" class="lt" onclick="jumptoTime(228, this.id)"><p>壓一壓形狀出來，然後收走邊緣，當然如果想節省食物可以不做這個步驟，把邊緣壓好後可以把餡料鋪上去，記得麵皮要有多薄就要有多薄，我大概也是這麼薄，留一條邊緣然後蓋上，邊緣收的時候盡量壓薄一點，否則煎完後會像粉團一樣不好吃，邊緣有多薄就要有多薄，收好後不用鬆弛，發酵後就可以直接燒紅脊鑊，放些油燒紅脊鑊去煎。</p></a>
+				<a href="#00:04:41.97" id="00:04:41.97" class="lt" onclick="jumptoTime(281, this.id)"><p>把紅皮壓走，現在拿去煎，燒熱油後轉中火煎，煎的程度視乎煎盤的厚度，每個煎盤都要用薄的，薄的就用中火，厚的就用大火，煎的過程要快，煎得太久反而會很乾，如果中間開始上色就翻一翻，煎到兩邊顏色均勻後，斬去8粒就可以上碟，成品就在這裏，最後一個小總結，煎的時間不要太長，大約4-5分鐘就可以，皮要薄的。</p></a>
+				<a href="#00:05:43.94" id="00:05:43.94" class="lt" onclick="jumptoTime(343, this.id)"><p>要薄才夠脆夠好食，剛煎完就比較脆，但放久了水蒸氣就揮發出來，放久了會變得軟，翌日翻吃時喜歡脆的，就翻一翻煎，如果喜歡軟軟的，入口的也沒所謂，喜歡怎樣蒸就怎樣蒸，餡料隨意，韭菜是單的，其餘喜歡加蝦仁、蝦皮、豬肉，就沒所謂，但皮的份量就不會太大，今次就講到這裏，有機會就一齊做做看吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:20.94" id="00:06:20.94" class="lt" onclick="jumptoTime(380, this.id)"><p>多謝收看。</p></a>
+</div>
+	</body>
+</html>

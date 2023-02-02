@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零失敗家常孜然雞翼(土匪雞翼)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yBJW-kBP0DQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>零失敗家常孜然雞翼(土匪雞翼)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello大家好我係朱sir，今日要同大家分享嘅菜式就係土匪雞翼，土匪雞翼可能好多人都試過，但亦都可能有啲人未試過，如果試過嘅不妨參考下，因為可能喺唔同人嘅身上都可能會參考到唔同嘅做法，未試過嘅你一定要試，真係好好食唔係講笑嘅，呢份，家常土匪雞翼係點樣整呢，我哋而家就去片，我哋用有機無激素嘅雞翼。</p></a>
+				<a href="#00:00:30.24" id="00:00:30.24" class="lt" onclick="jumptoTime(30, this.id)"><p>呢度，差唔多一磅雞翼，然後，落啲鹽，落多少少，加返啲水，呢啲即係叫開淡鹽水，開淡鹽水嘅作用就係將入面嗰啲雪味，入面嗰啲雪味逼返出嚟，咁就諗諗浸一浸佢，浸三個零時都可以㗎啦，都出，咁雞翼用淡鹽水攞咗之後，咁我哋咪洗一洗返啲雞翼佢囉，有時要捏一捏佢可能會有啲血水，捏咗出嚟㗎洗乾淨佢洗幾轉，加返乾水就可以㗎啦。</p></a>
+				<a href="#00:01:22.00" id="00:01:22.00" class="lt" onclick="jumptoTime(82, this.id)"><p>洗乾淨洗幾轉加返乾水就可以㗎啦，好洗乾淨瀝乾水先，咁呀醃料嗰度啦呢度啦，鹽啦，糖，蠔油啦，生抽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:47.16" id="00:01:47.16" class="lt" onclick="jumptoTime(107, this.id)"><p>咁呢度有少少黑椒碎啦，咁佢落咗佢個醃料度呢，比單純落呢個七味粉呀，個辣味更加複雜少少可以</p></a>
+				<a href="#00:01:58.16" id="00:01:58.16" class="lt" onclick="jumptoTime(118, this.id)"><p>鹽粉，當然唔少有我哋重頭需要嘅嘢啦，孜然粉，呢個秘密武器蒜蓉粉，佢比起就咁齋嘟蒜蓉呀，你就咁醃落去嗰啲雞翼度呀正好多呀，蒜蓉粉，少少生粉，攪一攪勻佢，正常嚟講呢，你畀我自己，你畀我自己整呢，我會搵個雞翼，雞翼攪勻佢架啦，不過你拍片嚟計，咁我搵啲匙羹攪啦，正常咁搵個雞翼攪一攪勻佢可以嘅，跟住。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:51.25" id="00:02:51.25" class="lt" onclick="jumptoTime(171, this.id)"><p>我哋倒埋啲雞翼落去，攪勻啲調味佢，少少老抽攪一攪色，攪勻盡啦，包返好佢，醃三四個鐘頭就走唔甩架啦，最好係醃一晚啦係咪先，我哋而家擺返入雪櫃，總長休一陣先，雞翼醃咗，我哋醃咗六個鐘啦，而家我哋倒啲油，燒熱隻pan，煎一煎佢啲雞翼先，煎完再焗，咁作用就係，煎完佢之後呢，咁佢可以即刻封鎖住成嚿肉，封鎖住佢封鎖住啲肉汁。</p></a>
+				<a href="#00:03:45.25" id="00:03:45.25" class="lt" onclick="jumptoTime(225, this.id)"><p>跟住再走去焗熟佢咁咪，出面夠香口入面夠嫩滑囉，雞皮香下啦，我哋煎咗啲雞翼佢先，煎到兩邊金黃，很快就可以翻面，很香很香，旁邊的朋友又來按鐘，煎的時候也知道這盤東西很邪惡，很快的過程，2分鐘就完成了，然後就夾在焗盤上，加入炒過的黑白芝麻，每人家中的温度都不同，我的焗炉是用200度焗了8分钟，我这个200度8分钟就刚刚好。</p></a>
+				<a href="#00:05:17.56" id="00:05:17.56" class="lt" onclick="jumptoTime(317, this.id)"><p>时间就自己拿捏吧，每人家中的温度都不同，我把芫茜放上去，裝模作樣，OK，便完成了，土匪雞翼，或孜然燒雞翼 名字而已，賣相很吸引，這碟東西外出吃便昂貴，自己在家裏做便可以，雞翼趁熱吃，為何要吃飯呢?</p></a>
+				<a href="#00:06:4.58" id="00:06:4.58" class="lt" onclick="jumptoTime(364, this.id)"><p>外皮很香，雞肉剛剛好時間，肉質夠嫩，不會太乾柴，所以難度不算高，最重要是醃料如何拌勻，最重要是煎好後，封好肉汁，時間也要自己留意，這就是成功的關鍵所在，今次分享到此，下次再教大家做其他家常小菜，Bye Bye，知不知道為何我吃東西時突然開鏡，因為我要告訴你，吃孜然雞翼，一定要買2-3杯回味酒，否則好像他這樣。</p></a>
+				<a href="#00:06:47.64" id="00:06:47.64" class="lt" onclick="jumptoTime(407, this.id)"><p>沒啤酒喝，現在我很乾，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

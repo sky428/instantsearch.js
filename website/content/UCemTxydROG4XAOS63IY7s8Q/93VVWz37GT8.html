@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何簡易製作迷彩戚風蛋糕/How to make Camouflage Chiffon Cake/Easy recipe</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '93VVWz37GT8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何簡易製作迷彩戚風蛋糕/How to make Camouflage Chiffon Cake/Easy recipe</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>三個不鏽鋼盤就完成了，又靚仔又唔騷擾，摸上去質地好軟熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>你看多靚，又濕潤</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>每次出嚟每一件都要當藝術品品上</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>大家好我係朱sir，今日我會教大家製作一個比較惡化少少的戚風蛋糕，戚風蛋糕的抹上非常非常之吸引，簡直是拿出來靚到不捨得食，只比原味戚風蛋糕麻煩多少少，只分多兩隻顏色，不同的人有不同做法，有些做法可能蛋白一碗蛋黃分三碗分三隻調色，我做法就簡單快靚正路，蛋白一次過蛋黃一次過再分三碗，做法要比較熟手。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>動作要比較快，因為我做法比較快，蛋白一次過蛋黃一次過再分三碗，慢慢調色，如果速度慢過頭，蛋白會慢慢消耗，如果未練習好戚風蛋糕，可以看這條片參考我之前的做法，等你練習好快手做才做這條片，又或者你細心一點，一早量定好材料，不要像我這樣做到哪一種材料，先量定好材料，如果做得慢 蛋糕效果會不夠好，事不宜遲。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>到底這個惡霸型戚風蛋糕如何做，馬上去看看，首先分開4隻蛋，把蛋白和蛋黃分開，把蛋白和蛋黃分開，蛋黃20克，蛋黃和砂糖初步混合均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:13.21" id="00:02:13.21" class="lt" onclick="jumptoTime(133, this.id)"><p>加入液體菜油，混合均勻，然後加入過篩低筋麵粉，和牛奶，先把麵糊混合，拌勻備用，蛋白可以加些醋或檸檬汁，有助蛋白打發，這裡，五花八槽</p></a>
+				<a href="#00:03:33.24" id="00:03:33.24" class="lt" onclick="jumptoTime(213, this.id)"><p>謝謝觀看，蛋白打至大約8-9成的狀態，然後小心地分幾次 把蛋白和蛋黃糊拌勻</p></a>
+				<a href="#00:04:26.54" id="00:04:26.54" class="lt" onclick="jumptoTime(266, this.id)"><p>記得訂閱、按讚及分享唷，谢谢观看 下集再见，混合完成後，不要浪費這個盤子，加入5克朱古力粉，12克水，然後倒入約 135克麵糊拌勻</p></a>
+				<a href="#00:05:39.24" id="00:05:39.24" class="lt" onclick="jumptoTime(339, this.id)"><p>然後把麵糊放進去，謝謝收看!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:43.00" id="00:05:43.00" class="lt" onclick="jumptoTime(343, this.id)"><p>同樣道理在另一個碗裡，加入約5克抹茶粉，先把抹茶漿打開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:8.89" id="00:06:8.89" class="lt" onclick="jumptoTime(368, this.id)"><p>再拌勻備用，把麵糊混合好幾種顏色後，把麵糊四處倒滿就可以了，倒好後 讓它稍等，這樣就可以入爐了，蛋糕出爐了 等一等</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:7.37" id="00:07:7.37" class="lt" onclick="jumptoTime(427, this.id)"><p>再把蛋糕倒轉 讓它冷卻，蛋糕冷卻後，us unbelievably</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:21.49" id="00:07:21.49" class="lt" onclick="jumptoTime(441, this.id)"><p>administensored</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:40.33" id="00:07:40.33" class="lt" onclick="jumptoTime(460, this.id)"><p>thinkers，verschied FPS，Surv Çünkü，ips</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:31.71" id="00:07:31.71" class="lt" onclick="jumptoTime(451, this.id)"><p>truthful，때도，Hert fig Thai，Arri 드�wand，theology，Boston</p></a>
+				<a href="#00:07:40.41" id="00:07:40.41" class="lt" onclick="jumptoTime(460, this.id)"><p>제� cad，超 compress，aw religious</p></a>
+				<a href="#00:07:35.45" id="00:07:35.45" class="lt" onclick="jumptoTime(455, this.id)"><p>opposition，adulthood</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:33.51" id="00:07:33.51" class="lt" onclick="jumptoTime(453, this.id)"><p>blocking，beeping，fatal，ними，igible，Johns Min，medium</p></a>
+				<a href="#00:07:25.29" id="00:07:25.29" class="lt" onclick="jumptoTime(445, this.id)"><p>ր，현</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:30.31" id="00:07:30.31" class="lt" onclick="jumptoTime(450, this.id)"><p>萬，pigment，summertime</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:41.13" id="00:07:41.13" class="lt" onclick="jumptoTime(461, this.id)"><p>she，Intell definite，découvrir</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:33.59" id="00:07:33.59" class="lt" onclick="jumptoTime(453, this.id)"><p>ый，rounds</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:38.47" id="00:07:38.47" class="lt" onclick="jumptoTime(458, this.id)"><p>adt，ования，nurses</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:38.75" id="00:07:38.75" class="lt" onclick="jumptoTime(458, this.id)"><p>하는，lovส</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:36.91" id="00:07:36.91" class="lt" onclick="jumptoTime(456, this.id)"><p>Wahl，ished，MELвин</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:35.25" id="00:07:35.25" class="lt" onclick="jumptoTime(455, this.id)"><p>BB，�ن Seriously，social zaten</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:39.61" id="00:07:39.61" class="lt" onclick="jumptoTime(459, this.id)"><p>monit Jude，Rece Downtown，Cel Melanie</p></a>
+				<a href="#00:07:40.29" id="00:07:40.29" class="lt" onclick="jumptoTime(460, this.id)"><p>ekt sued，ін，tavalla，fahren，télé Milk</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:36.85" id="00:07:36.85" class="lt" onclick="jumptoTime(456, this.id)"><p>grund，fick，security，ick« asta，米菜，是不是很漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:41.47" id="00:07:41.47" class="lt" onclick="jumptoTime(461, this.id)"><p>成功脫模</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:48.27" id="00:07:48.27" class="lt" onclick="jumptoTime(468, this.id)"><p>脫模後，是不是超級帥氣，360度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:54.87" id="00:07:54.87" class="lt" onclick="jumptoTime(474, this.id)"><p>擰4個，沒法不擰了，3個不鏽鋼盤就完成了，迷彩戚風蛋糕，又帥氣又不騷擾，質感很軟軟的，切開來看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:24.54" id="00:08:24.54" class="lt" onclick="jumptoTime(504, this.id)"><p>看 多漂亮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:28.54" id="00:08:28.54" class="lt" onclick="jumptoTime(508, this.id)"><p>又濕潤，每次做出來 都要當作藝術品品賞，看完影片後 是否想馬上去做一個很漂亮的戚風蛋糕呢，事不宜遲 馬上去你的廚房，準備你的打蛋器 雞蛋 麵粉 糖等等，去試做這個惡霸型戚風蛋糕，今次分享到此 喜歡看我的視頻，記得在影片下方按個訂閱，按一下小鈴鐺，歡迎大家在我的Facebook、IG、Facebook群組和YouTube留言，下次我會再分享其他東西給大家。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:1.54" id="00:09:1.54" class="lt" onclick="jumptoTime(541, this.id)"><p>Bye Bye。</p></a>
+</div>
+	</body>
+</html>

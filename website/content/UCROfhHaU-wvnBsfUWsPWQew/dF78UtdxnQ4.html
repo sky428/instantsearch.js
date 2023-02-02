@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 鹼水粽 | 不喜歡鹼水澀味的朋友請進來 [HK, TW, CN, Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dF78UtdxnQ4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 鹼水粽 | 不喜歡鹼水澀味的朋友請進來 [HK, TW, CN, Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.60" id="00:00:2.60" class="lt" onclick="jumptoTime(2, this.id)"><p>上個禮拜就教咗你包鹹肉粽啦，咁今次呢就會教埋你包鹼水粽，同樣呢都係包五角粽，但有幾個地方呢同鹹肉粽係唔同㗎喎，咁等我陣間一邊做一邊話你知，有邊啲位要留意啦，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先我會做定個餡先，因為都要啲時間㗎，呢度有半斤豆沙。</p></a>
+				<a href="#00:00:34.80" id="00:00:34.80" class="lt" onclick="jumptoTime(34, this.id)"><p>大概係300克，同埋一啲熟糯米粉，即係糕粉，係用白鑊炒熱啲糯米粉，炒到微微變黃就可以啦，將豆沙分成25粒，每一粒重12克，好似我咁幫啲餡造型</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:58.20" id="00:00:58.20" class="lt" onclick="jumptoTime(58, this.id)"><p>咁樣就完成啦，咁我哋就嚟到呢邊嘅片啦，我哋下集再見啦，MING PAO CANADA CANADA.COM，上一層糕粉，用風扇或冷氣吹硬表面，讓米在包的時候不能進入，這樣就不怕吃到生米了，我這次準備了2.5斤糯米，不用預先浸泡，洗淨，晾乾水，調味有，11克梳打粉，2湯匙半鹼水，賣粽葉的地方通常都有。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:58.56" id="00:01:58.56" class="lt" onclick="jumptoTime(118, this.id)"><p>每一斤糯米要用1湯匙鹼水，所以我用2湯匙半，96克生油，和38克絲麥吉時粉，可以遮掩鹼水味，還有令粽子色澤好看，這是香港的吉時粉，聞起來是奶黃味，不像做蛋糕，海外的朋友可能要網購一下，或者不加也沒問題，晾乾糯米才好攪拌，這樣就不會黏稠，順次序加入吉時粉，梳打粉，鹼水，鹼水和生油，這裡有種葉。</p></a>
+				<a href="#00:03:17.93" id="00:03:17.93" class="lt" onclick="jumptoTime(197, this.id)"><p>和幼身的鹹水草，我這次用中size的葉，每種4塊，建議你買上海油葉，浸味會香些，不需要預先浸定，因為會走味，用之前浸半小時凍水，讓它變回軟身，之後開火，水滾開始計時，煮20分鐘，煮滾時葉會浮起，可以用重身的碟子擲在表面，煮完後用白布擦乾淨，planting LinkedIn spinach seieth</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:3.79" id="00:04:3.79" class="lt" onclick="jumptoTime(243, this.id)"><p>TS，올� taperàng，Burà</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:1.39" id="00:04:1.39" class="lt" onclick="jumptoTime(241, this.id)"><p>Message，appro floss，이건，� arrangements，orgas</p></a>
+				<a href="#00:04:2.03" id="00:04:2.03" class="lt" onclick="jumptoTime(242, this.id)"><p>cco，conserve，TW</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.13" id="00:03:59.13" class="lt" onclick="jumptoTime(239, this.id)"><p>Click，china，Extreme，flu，sesleri，Gon</p></a>
+				<a href="#00:04:1.69" id="00:04:1.69" class="lt" onclick="jumptoTime(241, this.id)"><p>WisELIPE，Corner</p></a>
+				<a href="#00:04:1.87" id="00:04:1.87" class="lt" onclick="jumptoTime(241, this.id)"><p>Pharm playlist，다가，ername，astes，mogacity，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，用毛巾抹乾，鹹水草用凍水浸軟就可以了，所有材料都準備好，現在可以開始包粽了，在包粽之前要說一下，粽葉是怎樣分底面的，條框凸起那一面是底，摸上去是粗糙的，而葉面是光滑的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:31.25" id="00:04:31.25" class="lt" onclick="jumptoTime(271, this.id)"><p>用這一邊來包粽就不會黏著，拿起兩塊葉，面向著自己，頭對頭，尾對尾，要留意我這次是放個X字，跟用打十字不同，這種包出來會扁身些，和細隻些，在中間的地方打個折，整個兜出來，testified</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:2.33" id="00:05:2.33" class="lt" onclick="jumptoTime(302, this.id)"><p>espektr，oxaprès，ws，model，RW，совсем，Prag</p></a>
+				<a href="#00:05:1.97" id="00:05:1.97" class="lt" onclick="jumptoTime(301, this.id)"><p>andra，alsa，về，receptive，Ж38，россий birthdays，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，按實，放一兩匙糯米，攤開，放粒餡在中間，再蓋上糯米，剛剛好遮住就夠了，把下面垂直摺起來，上面不用理會，拿起另一塊葉，用滑的一面蓋在旁邊，這次不用迫實米，留一點空間讓它膨脹。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:57.39" id="00:05:57.39" class="lt" onclick="jumptoTime(357, this.id)"><p>這樣吃起來才會鬆軟，把下面摺起來成直角，把上面摺起來也是成直角，再看看三角形對不對稱，另一邊也是這樣做，不過這次不用填滿，直接封口，用兩條鹹水草放在中間，在旁邊繞兩個圈，不要綁太緊，去中間打個交叉，再在另一邊繞兩個圈，在邊位打個死結，包完之後，用力搖四隻角，讓米分佈得平均些，聽到沙沙聲才合格。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:7.22" id="00:07:7.22" class="lt" onclick="jumptoTime(427, this.id)"><p>跟鹹肉粽不同，這次要用滾水下粽，如果用高速煲</p></a>
+				<a href="#00:07:14.74" id="00:07:14.74" class="lt" onclick="jumptoTime(434, this.id)"><p>煮一小時就行了，如果用普通煲，就要煮三小時，要留意，煮完要立即拿出來</p></a>
+				<a href="#00:07:24.78" id="00:07:24.78" class="lt" onclick="jumptoTime(444, this.id)"><p>不要浸著，放涼後可以放雪櫃保存，鹼水粽冷吃熱吃都一樣好吃，如果用高速煲，煮一小時就行了，如果要翻熱，就滾水下粽，煮15分鐘就可以了</p></a>
+				<a href="#00:08:8.86" id="00:08:8.86" class="lt" onclick="jumptoTime(488, this.id)"><p>MING PAO CANADA CANADA.COM，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>
