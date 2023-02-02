@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做芝士火鍋 - Cheese Fondue (part 1)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'v20gAoTSVWc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做芝士火鍋 - Cheese Fondue (part 1)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.19" id="00:00:4.19" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好，Happy New Year，祝大家有一個開開心心的新年，也希望今年你們也順順利利，開開心心，看到了，前面這裡很豐富，這麼多東西吃，那我們今天要做什麼呢?</p></a>
+				<a href="#00:00:23.19" id="00:00:23.19" class="lt" onclick="jumptoTime(23, this.id)"><p>我今天想和大家一起做一個簡單的派對美食，展示出來會讓人感覺很眼前一亮，如果是在家裡做一個小型的派對，或者是二人世界，甚至下個月情人節的時候，做一個情人節晚餐，這個也是一個很好的選擇，那我們在做什麼呢?</p></a>
+				<a href="#00:00:48.19" id="00:00:48.19" class="lt" onclick="jumptoTime(48, this.id)"><p>我轉過去給你們看一下，有什麼呢?</p></a>
+				<a href="#00:00:53.19" id="00:00:53.19" class="lt" onclick="jumptoTime(53, this.id)"><p>對了，你們看到有一個東西在這裡，我們今天打算做芝士火鍋，我先介紹一下材料，芝士火鍋源自於瑞士，瑞士是一個盛產很多芝士的國家，他們也是很冷，所以芝士火鍋是他們其中一個很出名的美食，需要的芝士，你可以根據自己，家裡可以自己找到，或者在外面買到，但傳統來說，平時最需要的就是這兩種芝士，第一種就是這種叫做Grate的芝士。</p></a>
+				<a href="#00:01:44.19" id="00:01:44.19" class="lt" onclick="jumptoTime(104, this.id)"><p>我也不知道我讀得對不對，第二種芝士就是Mentho芝士，需要就是把這兩種芝士混合，芝士的汁底就是這兩種芝士，加一些白酒，白酒你可以選擇一些比較乾的，沒有那麼甜的白酒會比較好，另外我就要粟粉，如果是說調味的話，就是這幾樣東西，然後當然就是有，你可以放胡椒粉，甚至你可以，放Mustard。</p></a>
+				<a href="#00:02:28.45" id="00:02:28.45" class="lt" onclick="jumptoTime(148, this.id)"><p>即是芥辣，再加其中一樣，就是這個，這個就是肉豆蔻，這樣我們真的磨一點，不是整粒放進去，肉豆蔻多數都是一個，硬的 好像一個，這個香料，只要磨一點，放進去就可以了 但如果你，不喜歡那個味道 是可以不放的，時至今日，芝士火鍋已經轉了，有很多不同的，種類 你可以在家，隨便找到不同的，即是你去你自己所在的。</p></a>
+				<a href="#00:03:4.45" id="00:03:4.45" class="lt" onclick="jumptoTime(184, this.id)"><p>地方 買一些你自己喜歡的，芝士都可以，做一個芝士火鍋，的Cheese Fondue 然後，除了用，白酒之外 其實，如果你，不想用酒的 你可以，用牛奶 或者其他，如果有小朋友的話，再加上現在，可以放很多不同味，這個就是原本的，芝士火鍋原本需要的，材料 現在，有些人 我見過，有些用啤酒，或者用 最好淺色一點。</p></a>
+				<a href="#00:03:40.45" id="00:03:40.45" class="lt" onclick="jumptoTime(220, this.id)"><p>沒有那麼濃味的啤酒，或者用一些烈酒，這個食譜 亦都會，其實原食譜，如果你看最傳統那種，是會有一個櫻桃的，白蘭地 但我手上，沒有 我可以加烈酒，我最後才放，用一個湯匙 很少，我就無謂，為了一個湯匙就買一支酒，我可以放白蘭地，或者威士忌 你自己喜歡的，調味方便，不喜歡肉豆蔻的話，可以就這樣放黑胡椒。</p></a>
+				<a href="#00:04:14.45" id="00:04:14.45" class="lt" onclick="jumptoTime(254, this.id)"><p>甚至你喜歡，放一些辣辣的東西，譬如就是那些，紅椒粉，或者有些其他你喜歡的，你都可以，放進去，所以其實，如果是做一個，汁底，其實你可以有很多，不同的種類，可以自己配搭，接下來我們介紹，裡面還有另外一個，材料 除了汁外，就是要送的，火鍋 當然要點的，如果是，最原始的，其實芝士火鍋，只用一些法式的，硬的 大塊的。</p></a>
+				<a href="#00:05:2.45" id="00:05:2.45" class="lt" onclick="jumptoTime(302, this.id)"><p>硬的麵包 將它切成粒粒，放進去點的，我自己就喜歡，軟身一點的麵包，其實它都硬硬的，但沒有法式的麵包那麼硬，然後我選了兩種，這一種就是Dinner Roll，很普通的，另外這一種，就是洋蔥的麵包，是洋蔥的麵包，可以增加點的時候，增加它的香味，你自己可以買，做回很原始的，也可以用法式的，硬的。</p></a>
+				<a href="#00:05:38.45" id="00:05:38.45" class="lt" onclick="jumptoTime(338, this.id)"><p>Country Style的麵包，另外有很多蔬菜，和一些配菜，去點的，就介紹一下，我今天就用了，就是這個，西蘭花 有甘筍，這個是紅菜頭，青蘋果，這是車厘茄，中間點的時候，可以點肉，這個是我昨天，做了一個剩下的，中間的肉，我自己就將它冷藏了，將它切粒粒，就可以用來點芝士吃，其餘的，可以再廣闊一點，我們又可以買一些肉腸。</p></a>
+				<a href="#00:06:24.45" id="00:06:24.45" class="lt" onclick="jumptoTime(384, this.id)"><p>將它切粒粒，就可以點一些風乾火腿，也可以用來，做芝士火鍋，芝士火鍋裏面的材料，封建由人，只要你自己喜歡，就可以發揮自己的想像，另外就是一些，其他材料，最主要的材料就是檸檬，我們需要檸檬汁，和，白酒，混合一起做，酸酸的，提升芝士的香味，和解膩，沒有那麼膩口，另外還有一個，就是蒜頭，開始了，首先處理青蘋果。</p></a>
+				<a href="#00:07:10.45" id="00:07:10.45" class="lt" onclick="jumptoTime(430, this.id)"><p>這裡有些水，加了少許白醋，平時就這樣，將青蘋果切頭切尾，然後，你可以這樣，如果今天，做芝士火鍋，會好看一點，就可以不去皮，切開，切開後，就可以，切粒粒，切到，容易一點，不要太小，這樣就可以，讓他們可以吃，這樣，大家可以浸泡，這樣就不會容易變色，第二樣要處理的就是蔬菜，這些已經洗乾淨，這些就是紅蘿蔔，這個是幼身的。</p></a>
+				<a href="#00:08:2.45" id="00:08:2.45" class="lt" onclick="jumptoTime(482, this.id)"><p>整棵有葉的紅蘿蔔，我不去皮，我只去深色的地方，其實也可以不去皮，其實紅蘿蔔的皮，其實很有益，我隨便去皮，我不是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:18.45" id="00:08:18.45" class="lt" onclick="jumptoTime(498, this.id)"><p>不去皮，紅蘿蔔切成一塊可以刺到的大小，不要太小不要太大，最好一口的那種，切好後放開，最後才處理紅菜頭，因為我不想那把刀染到紅菜頭後很紅，另外我要檸檬，檸檬大約要一個湯匙的檸檬汁，搓一搓，然後我要一個湯匙的檸檬汁，一個湯匙的檸檬汁弄好了，到最後我暫時不需要切其他東西的時候，我就將紅菜頭切了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:18.01" id="00:09:18.01" class="lt" onclick="jumptoTime(558, this.id)"><p>紅菜頭你又可以弄，你想弄多少個，兩至三個其實都已經很足夠，因為都很飽，紅菜頭很有益，生吃都可以，很多人可能會燒烤，即是焗了，焗到很軟，或者煮，今天我們就這樣，你可以這樣吃，如果你忍受到那種生味的話，不然我們可以灼一灼，紅菜頭我就切一塊塊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:20.01" id="00:10:20.01" class="lt" onclick="jumptoTime(620, this.id)"><p>好，完成了，然後我會把紅蘿蔔和西蘭花放進去搓一搓，搓到金色，然後用水搓掉紅蘿蔔頭，搓一搓，等到紅蘿蔔熟了，不用搓到很軟，其實爽爽的口感會比較好，搓掉紅蘿蔔頭後，就可以把紅蘿蔔頭留起來，然後就可以把西蘭花和紅蘿蔔頭放進去，如果可以吃生的紅蘿蔔，可以不做，我可以吃，但我先生不喜歡吃生的，我就可以把紅蘿蔔頭放進去搓一搓，紅蘿蔔頭的顏色很強，一放進去就變成這樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:34.31" id="00:11:34.31" class="lt" onclick="jumptoTime(694, this.id)"><p>在煮的時候，我們來處理芝士，我買了200克的Gruelle Cheese，我買了兩個芝士，最好是一樣重量，一樣大約200克，這個芝士比較大，所以芝士味很濃，我會把它切成200克就可以一起用，我現在看看這個可以放多少，剛剛切掉，不要緊，我大約把它切成200克，看看，193克，很厲害，好，只差幾克，多加一點，完成200克。</p></a>
+				<a href="#00:12:34.30" id="00:12:34.30" class="lt" onclick="jumptoTime(754, this.id)"><p>另外這個芝士是很大塊的，很硬的芝士，邊上可能還有些膠紙，所以我們可以切掉不要，太硬的地方不要，這個芝士比較油份重，鹹一點，另外這個芝士的芯比較軟，我的手也是用了紅菜頭，所以顏色不太好，你可以用芝士刨或食用機磨掉，如果沒有的話，可以切成小塊就可以了，讓它容易用，這個芝士很簡單，你喜歡刨絲也可以，我比較懶，多切一點，然後就可以進入下一個步驟了。</p></a>
+				<a href="#00:13:43.30" id="00:13:43.30" class="lt" onclick="jumptoTime(823, this.id)"><p>到我們主要的芝士汁的做法了，這裡有個鍋，首先我們用蒜頭，然後就搓一下，這是傳統的做法，其實你不做這個也可以，我覺得你把蒜頭放進去煮也可以，如果我們玩企鵝，就跟著做吧，其實不知道有什麼分別，然後整個鍋子都把蒜頭搓掉，然後，這裡有些是用罐頭粉，有兩種做法，有些可以整個放進芝士裡。</p></a>
+				<a href="#00:14:42.17" id="00:14:42.17" class="lt" onclick="jumptoTime(882, this.id)"><p>然後就放酒或檸檬汁，另一個方法就是直接倒進酒裡，讓它煮稠，其實每個方法都沒有問題的，我就覺得先開火，不要太大火，小小的火，我先把酒放進去，檸檬汁放進去，煮的時候就需要一個Whisk，讓它待會可以什麼，現在你可以放這個進去或放進芝士裡，我覺得放進去會比較好，我需要一湯匙，這裡有多的，不用太多。</p></a>
+				<a href="#00:15:41.17" id="00:15:41.17" class="lt" onclick="jumptoTime(941, this.id)"><p>然後就攪拌均勻，用Whisk慢慢攪拌，然後就慢慢煮，如果想香一點，可以把蒜頭放進去一起煮，這樣就可以香一點，但如果你不喜歡，不吃太重蒜頭味，你可以不放進去，然後就可以等到它煮起，煮起後就可以把芝士慢慢放進去，最重要的方法都是洗洗切切，灑上去，最主要是做這個芝士汁，所以如果是派對小食，叫人來玩，這個比較簡單，方便，不需要怕煮不好。</p></a>
+				<a href="#00:17:0.20" id="00:17:0.20" class="lt" onclick="jumptoTime(1020, this.id)"><p>開始有煙出來的時候，我先開小火，關掉火，然後我可以慢慢將芝士放下去，然後開小火，芝士慢慢放下去煮濃，不要一次過放下去慢慢煮。</p></a>
+</div>
+	</body>
+</html>

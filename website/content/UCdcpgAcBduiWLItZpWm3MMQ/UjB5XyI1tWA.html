@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>芝心可樂餅 (Croquette)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UjB5XyI1tWA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>芝心可樂餅 (Croquette)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.88" id="00:00:21.88" class="lt" onclick="jumptoTime(21, this.id)"><p>大家好，今個星期我收到一個題目，就是要流心的，有些東西流出來的，要鹹的，今天我們做一個鹹的食物，這個是什麼呢?</p></a>
+				<a href="#00:00:38.88" id="00:00:38.88" class="lt" onclick="jumptoTime(38, this.id)"><p>就是芝心可樂餅，可樂餅是什麼呢?</p></a>
+				<a href="#00:00:44.88" id="00:00:44.88" class="lt" onclick="jumptoTime(44, this.id)"><p>可樂餅其實沒有可樂的，其實是一種日式的，或者是日式法式特色都可以，總之是像吉列一樣，前面有個炸的東西，然後就是薯餅，這個就是日式可樂餅，裡面的材料可以五花八門，我今天就是用吞拿魚，和這個一起做，我們現在開始吧，首先我要先煮一鍋水，是用來煮薯仔的，這個時間我要把薯仔去皮，然後切厚片來煮。</p></a>
+				<a href="#00:01:35.88" id="00:01:35.88" class="lt" onclick="jumptoTime(95, this.id)"><p>你可以整個煮的，但如果你省時間，可以去皮去煮，或者你想蒸都可以，這些牙齒都要去皮，把牙齒去皮，將所有材料拌勻，將所有材料拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:18.51" id="00:02:18.51" class="lt" onclick="jumptoTime(138, this.id)"><p>將所有材料拌勻，切件，solem</p></a>
+				<a href="#00:02:59.94" id="00:02:59.94" class="lt" onclick="jumptoTime(179, this.id)"><p>thatís，baptized，Leader，expressions，chemicals</p></a>
+				<a href="#00:03:1.62" id="00:03:1.62" class="lt" onclick="jumptoTime(181, this.id)"><p>ativa，pour，wertąda Aoziękuję</p></a>
+				<a href="#00:02:59.50" id="00:02:59.50" class="lt" onclick="jumptoTime(179, this.id)"><p> establishment，將雞肉和番薯放在一起，同時我準備另一個材料，就是洋蔥，在煮番薯的時候，就可以炒洋蔥，同一時間進行，我用半個洋蔥就足夠，然後就可以將洋蔥切碎，將它在芯前面切一條條，然後在芯頂打長切，切割另一條芯，promising</p></a>
+				<a href="#00:04:31.14" id="00:04:31.14" class="lt" onclick="jumptoTime(271, this.id)"><p>gü，Uni，Gre</p></a>
+				<a href="#00:04:30.14" id="00:04:30.14" class="lt" onclick="jumptoTime(270, this.id)"><p>іс，processing，molt，costly</p></a>
+				<a href="#00:04:33.30" id="00:04:33.30" class="lt" onclick="jumptoTime(273, this.id)"><p>дов，Cha</p></a>
+				<a href="#00:04:28.42" id="00:04:28.42" class="lt" onclick="jumptoTime(268, this.id)"><p>iance，�ready，increasingly，vra</p></a>
+				<a href="#00:04:23.94" id="00:04:23.94" class="lt" onclick="jumptoTime(263, this.id)"><p>рим，uß，Still，ラ，之</p></a>
+				<a href="#00:04:33.08" id="00:04:33.08" class="lt" onclick="jumptoTime(273, this.id)"><p>timeless，infinitely，�</p></a>
+				<a href="#00:04:25.66" id="00:04:25.66" class="lt" onclick="jumptoTime(265, this.id)"><p>arner，vantage，Nobel，망</p></a>
+				<a href="#00:04:31.20" id="00:04:31.20" class="lt" onclick="jumptoTime(271, this.id)"><p>收 których，красив Manufactinel，pesticides，字幕by索兰娅✿，我切了一粒粒，一會兒這個就要炒，炒到它是金黃色，即是焦糖化，然後再放入薯仔，另外還有甚麼要預備呢，就是椰菜絲，在這裏放的就不斷包住，其實我不需要這麼多，因為這個是半碟，哎 Flor hurtELI Jordan，fach bubb 1080。</p></a>
+				<a href="#00:05:22.20" id="00:05:22.20" class="lt" onclick="jumptoTime(322, this.id)"><p>Primary，Funfr，направ，zumindest</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:22.36" id="00:05:22.36" class="lt" onclick="jumptoTime(322, this.id)"><p>eg，Jazać，wrestling，transforming，gamer，jewelry，然後切細絲，如果家中有刨牌，可以刨幼，這是半碟，那邊的水好了，我拿去煮小船</p></a>
+				<a href="#00:06:22.05" id="00:06:22.05" class="lt" onclick="jumptoTime(382, this.id)"><p>謝謝觀看，gak，�� Rex，frequ sh，Ranch，북，determining，none，board，Picture，geographic，아니야，gli，Matte，politique，こんにちは，rollo，�isons，parrot，ienia，소，English，ISBN，Columbia。</p></a>
+				<a href="#00:06:30.46" id="00:06:30.46" class="lt" onclick="jumptoTime(390, this.id)"><p>eb，經sho，Everything，years，sono，relief，ethic，carta，Reese，viv，rus，Î，investors，raft，uations，� Court，해야，merchand44，développement，add hero，suppressAt böyle，wob 있잖아요。</p></a>
+				<a href="#00:06:48.24" id="00:06:48.24" class="lt" onclick="jumptoTime(408, this.id)"><p>permitir，えて sayin，URLs，Styles，間 treat ports，conscience，ättre neces Treasure，ingen，cano，그래서，Bliss bén，inga，choosing，J��� kh Dw，Sache，correlated，bait。</p></a>
+				<a href="#00:06:37.52" id="00:06:37.52" class="lt" onclick="jumptoTime(397, this.id)"><p>PH，available，Io，ช oyster，Republicans，featuring，Nic miracle，Mat Bhag，있게，тест，quelque，mobilize，undertaken，semble，REuks，iele，би，Viel，Matt，definitive，аств。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:46.76" id="00:06:46.76" class="lt" onclick="jumptoTime(406, this.id)"><p>sf，好吃，記得，jam，sole，士 Couple，ドン，accuse，ט，ương，JacAudience，jan，recommendation，ial，edited，大家都，allerdings，projection，Kenneth，차� grated，contro，creatively，フ。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:54.30" id="00:06:54.30" class="lt" onclick="jumptoTime(414, this.id)"><p>poorest，華，Great，gehen，hazardous，� pyt，ust，udo，gir，issue，ache，dot，외，benefit，astern，kl，waving，palace，west，Hye，Sn，nature，AcceptINTERPOSING，apanese，auto，Walmart。</p></a>
+				<a href="#00:06:40.08" id="00:06:40.08" class="lt" onclick="jumptoTime(400, this.id)"><p>stal，appearances，Bake，辛 negotiating，الك，station，pl Oklahoma，钟，Yep，White，буду，που，Kirby，bien，objectives，Liver，Combat，oss，rig induction，fl，great，aumentar。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.10" id="00:06:41.10" class="lt" onclick="jumptoTime(401, this.id)"><p>ftig，COMhib לח，negotiate，сразу，proteins，sprechen，reto，calculator，сторону，induce，smashing，Ever，kaar，ende，Kneasha，hairy，Phew，upbeat，buds，idor，improves，strony。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:35.74" id="00:06:35.74" class="lt" onclick="jumptoTime(395, this.id)"><p>코，activ Saud，kids，histó 1920，isol，cuma，喜歡 além，��，counts，unto，specs，encourage，fulness，estimate，мод，camerraft，statement，Fields，hook，Ir haunted，frå。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.54" id="00:06:40.54" class="lt" onclick="jumptoTime(400, this.id)"><p>hhh，meatballs，그러，war，***，位，osi，braucht，ate，wir，Yout Bart，Oculus，merciful，ge，Arg lud，Maori，inity，gent шир keys，gelernt，offers，1970 Oft tengo，dropping，исп Astra。</p></a>
+				<a href="#00:06:34.94" id="00:06:34.94" class="lt" onclick="jumptoTime(394, this.id)"><p>opening，idée$，很多時候吃炸的食物，例如吉列豬扒，會有椰菜絲在旁邊伴著，令它沒那麼熱氣，很多都是沒有醃的，全個生吃的，這個我洗完後，吃的時候可能會加少許調味，有些地方會加柚子汁來點，我會想想怎樣，但我都有沙律醬可以點，可以直接吃，我先拿去洗，弄好這兩樣後，可以轉移陣地，開火，放洋蔥下去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:50.03" id="00:07:50.03" class="lt" onclick="jumptoTime(470, this.id)"><p>加少許油，因為我慢慢炒它其實不需要說會不會爆，因為我慢慢炒，所以不用怕會爆，要不要加水，可以先拿來炒豬肉，這次我聰明了，把鏡頭拉得很遠，再高一點，讓我不用太大煙，弄到你們，你看到，薯仔和這個我都沒有調味，沒有鹽，我打算最後，弄薯蓉的時候，才一次過幫它調味，現在就變了，半透明，這樣看好一點，不知為何很爆。</p></a>
+				<a href="#00:09:5.80" id="00:09:5.80" class="lt" onclick="jumptoTime(545, this.id)"><p>我這樣看，它是半透明，有點黃黃的，就要繼續炒，洋蔥其實，你可以隨意放，這樣放會香一點，因為如果是配，吞拿魚，有些人怕吞拿魚腥，洋蔥的調味，就不會那麼腥，如果有些，很多時，用豬肉碎，或者牛肉碎，加薯蓉，洋蔥調味，也有人用，粟米，我一會兒會放粟米，或者不同的東西，其實當你掌握到，其實沒有什麼技巧，只要你肯開鑊油。</p></a>
+				<a href="#00:09:55.80" id="00:09:55.80" class="lt" onclick="jumptoTime(595, this.id)"><p>就可以，但網上也有人教，不用油也可以，這樣就焗，油炸就會香一點，所以當你自己，肯用一鑊油，炸東西的時候，這個食譜，其實你可以加你喜歡的東西，做你喜歡的可樂餅，這樣就很簡單，OK， 講解一下，薯仔已經煮好，避開水，避開水後，就把它壓碎，可以加洋蔥，如果吃素的，可以直接不加，就這樣已經可以，或者加粟米。</p></a>
+				<a href="#00:10:45.80" id="00:10:45.80" class="lt" onclick="jumptoTime(645, this.id)"><p>我這裡有些熟的粟米，我用熱水浸著</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:49.80" id="00:10:49.80" class="lt" onclick="jumptoTime(649, this.id)"><p>就這樣，我這個不是做薯蓉，不一定硬到整個都融化，為什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:4.50" id="00:11:4.50" class="lt" onclick="jumptoTime(664, this.id)"><p>其實都是隨你喜歡，但我認為有時吃太軟，就變成咬下去就變成薯蓉，但如果你還有些粒粒的硬粒，少少粒粒在，咬下去就會有點，我不是很喜歡說那個字，算了 有點口感，感覺上會好味一點，咬好之後，我可以硬了，我可以再放，第三樣東西就是這個，它是沒有油的，你可以買你自己喜歡的，我喜歡它是因為它小小罐，這樣一打開。</p></a>
+				<a href="#00:11:57.50" id="00:11:57.50" class="lt" onclick="jumptoTime(717, this.id)"><p>不是很腥，不過如果有些人怕腥，少少腥都不行，就可以不放，這個開派對都很好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:9.50" id="00:12:9.50" class="lt" onclick="jumptoTime(729, this.id)"><p>咬好之後，這個時候我們就調味，我剛才說過，所有東西都不要放味，現在我開始調味，放些鹽，你就可以自己確定，自己想放多少就可以放，黑胡椒，黑胡椒可以放多一點，因為怕會太鹹，如果怕吞拿魚腥，就可以放多一點，拌勻它，有些人說好像很乾，我怕不怕，其實它可以黏住，其實都不用，我們開始介紹另一樣東西，芝士。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:58.50" id="00:12:58.50" class="lt" onclick="jumptoTime(778, this.id)"><p>你可以買你家喜歡的芝士，我用一塊塊，我買了兩種，一種是普通黃色的，另一種是Mozzarella，即是拉薄薄的，可以放在Pizza上用，拌勻兩種味道，大小可以因個人喜好，用一個大的雪糕球做一個，這樣一個，我這裡不是很多個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:44.31" id="00:13:44.31" class="lt" onclick="jumptoTime(824, this.id)"><p>一個這麼大，我可以這樣做，有一個方法，就是</p></a>
+				<a href="#00:13:54.31" id="00:13:54.31" class="lt" onclick="jumptoTime(834, this.id)"><p>這樣，這樣，每個都差不多，不會又大又小，做好之後，做一個洞，我將芝士放進去，然後封緊它，封回圓形，然後按扁平，做到自己滿意的樣子，做到好像個月餅，Hello，你看，現在我做到一個小的，六個大的，我們下一個步驟，然後我見到這裡有三樣東西，炸東西就要三寶，哪三寶呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:58.96" id="00:14:58.96" class="lt" onclick="jumptoTime(898, this.id)"><p>加熱了，麵粉、雞蛋、麵包糠，將雞蛋打發，有人會在麵包糠加味，你也可以，我不會，因為我一會兒可能會蘸，譬如蘸茄汁或者沙律醬，有味道，我就不做了，很簡單，現在首先第一個步驟，由左至右，首先加麵粉，然後搖一搖，不要太多麵粉，好，做完之後就放入雞蛋，把雞蛋浸勻，之後就放入麵包糠，攪拌均勻，麵包糠可以用自己喜歡的手上牌子，有些人用日本的。</p></a>
+				<a href="#00:16:10.67" id="00:16:10.67" class="lt" onclick="jumptoTime(970, this.id)"><p>這個在加拿大普通超市買的，就是這樣繼續一個一個做，吉列可樂餅已經包好麵包糠，我有點後悔自己那隻不去買另一隻，因為覺得太碎，看起來好像沒那麼好看，現在開鑊炸，開鑊油加熱，我用小鍋來炸，省油，有些人用半煎炸，可以選擇半煎炸，已經倒入油，170度，可以放入麵包糠，就可以炸了，不用炸太久，炸到金黃色就可以。</p></a>
+				<a href="#00:17:27.67" id="00:17:27.67" class="lt" onclick="jumptoTime(1047, this.id)"><p>麵包糠炸好了，intrig트가</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:54.89" id="00:17:54.89" class="lt" onclick="jumptoTime(1074, this.id)"><p>Facebook colabor jej，sha Schul Someone，desen，​，Orig否，exfol telev Okay，Looking ocas，contr hyg，qualc</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:56.51" id="00:17:56.51" class="lt" onclick="jumptoTime(1076, this.id)"><p>歡迎，psy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:57.01" id="00:17:57.01" class="lt" onclick="jumptoTime(1077, this.id)"><p>ogg，built</p></a>
+				<a href="#00:18:5.13" id="00:18:5.13" class="lt" onclick="jumptoTime(1085, this.id)"><p>Ben，Though，лес，podía，comunidad，optimal，eland，иб uneasy，newcom��，saying，eous，usters，ращ specify，acio</p></a>
+				<a href="#00:18:2.55" id="00:18:2.55" class="lt" onclick="jumptoTime(1082, this.id)"><p>ständ afar，sven，hill</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:59.55" id="00:17:59.55" class="lt" onclick="jumptoTime(1079, this.id)"><p>Individual spl� Egypt，Major，bart repository</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:1.25" id="00:18:1.25" class="lt" onclick="jumptoTime(1081, this.id)"><p>Porsche，attend Tyl certain</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:57.21" id="00:17:57.21" class="lt" onclick="jumptoTime(1077, this.id)"><p>ließen，final，initiated，achsen，authorities，aho</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:7.21" id="00:18:7.21" class="lt" onclick="jumptoTime(1087, this.id)"><p>queens，Jab sincerity，وم，파� Audio naj</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:57.91" id="00:17:57.91" class="lt" onclick="jumptoTime(1077, this.id)"><p>getting，triple，plets</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:51.13" id="00:17:51.13" class="lt" onclick="jumptoTime(1071, this.id)"><p>era，úblic，marketplace，simple，dau，Init Student，atin，stabil，Damas，anth，Aub sleep</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:3.01" id="00:18:3.01" class="lt" onclick="jumptoTime(1083, this.id)"><p>zn，자가</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:8.01" id="00:18:8.01" class="lt" onclick="jumptoTime(1088, this.id)"><p>Sell России，chefs，projet，因為它小的關係，我轉一次，不夠油的關係，再轉一次，金黃色就可以拿起，然後就下一個，看一看油溫</p></a>
+				<a href="#00:18:24.58" id="00:18:24.58" class="lt" onclick="jumptoTime(1104, this.id)"><p>hine，Doarios，daíomination，wl，chama</p></a>
+				<a href="#00:19:11.05" id="00:19:11.05" class="lt" onclick="jumptoTime(1151, this.id)"><p>sighs，Playing，Hundred，matière，chsel，대，bound，miral</p></a>
+				<a href="#00:18:55.89" id="00:18:55.89" class="lt" onclick="jumptoTime(1135, this.id)"><p>uß，criteria，buat，Improve，deutschen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:6.63" id="00:19:6.63" class="lt" onclick="jumptoTime(1146, this.id)"><p>Guid，Boot，mixture，��럼，정을，bola，周 fee，processors，gates</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:16.45" id="00:19:16.45" class="lt" onclick="jumptoTime(1156, this.id)"><p>fore consequently，infections</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:12.69" id="00:19:12.69" class="lt" onclick="jumptoTime(1152, this.id)"><p>양，HYUN，ith，grund，變，artific packed</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:56.03" id="00:18:56.03" class="lt" onclick="jumptoTime(1136, this.id)"><p>á，aluminum</p></a>
+				<a href="#00:19:7.33" id="00:19:7.33" class="lt" onclick="jumptoTime(1147, this.id)"><p>� pul disproportionately，salv Francisco，exam，SQL，taco entscheiden，Rub Pred mieux，你是 freshwater，child，mình，ke，Anh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:51.73" id="00:18:51.73" class="lt" onclick="jumptoTime(1131, this.id)"><p>мор，Melt，tax，relevant，…"</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:2.41" id="00:19:2.41" class="lt" onclick="jumptoTime(1142, this.id)"><p>poo，Fra fav quitting，yen，implied，вокined，拿 Florida</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:6.97" id="00:19:6.97" class="lt" onclick="jumptoTime(1146, this.id)"><p>66，היה，εδώ coverage，ξ gerek</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:56.77" id="00:18:56.77" class="lt" onclick="jumptoTime(1136, this.id)"><p>七 Jill，�문Sean</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:14.87" id="00:19:14.87" class="lt" onclick="jumptoTime(1154, this.id)"><p>sailструкopia，fries，chính，翻一翻就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:22.11" id="00:19:22.11" class="lt" onclick="jumptoTime(1162, this.id)"><p>87，planner，இ，inator，getic，Oi，penetlik，boundaries，iceberg</p></a>
+				<a href="#00:19:29.66" id="00:19:29.66" class="lt" onclick="jumptoTime(1169, this.id)"><p>giants，reported，drummer</p></a>
+				<a href="#00:19:30.50" id="00:19:30.50" class="lt" onclick="jumptoTime(1170, this.id)"><p>작 Adrian，righteous</p></a>
+				<a href="#00:19:29.22" id="00:19:29.22" class="lt" onclick="jumptoTime(1169, this.id)"><p>siz Paty，ู，Gus</p></a>
+				<a href="#00:19:32.56" id="00:19:32.56" class="lt" onclick="jumptoTime(1172, this.id)"><p>optimistic，kilow усп，erreichen，technical，enteen</p></a>
+				<a href="#00:19:29.08" id="00:19:29.08" class="lt" onclick="jumptoTime(1169, this.id)"><p>país，detto confusing，ISS，fasten 되는，creaden，用碟子打橫平，看看炸得多漂亮，好 我們上碟了，好 我先把碟子放開，讓我們看看，這可能是可樂餅，炸好了，漂亮嗎，每個都金黃色，真的扣得住，你不是說扣得住嗎，突然間，你這樣亂，OK，我點醬，我喜歡用這個，BB醬。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:20:14.39" id="00:20:14.39" class="lt" onclick="jumptoTime(1214, this.id)"><p>打開，可以放在碟子上，我用椰菜絲，洗乾淨，可以醃或生吃，生吃時可以用來做沙律，首先我先放好碟子，放好，然後我要，放番茄，這個番茄也是很漂亮的，可以放好一個好位置給它們，可麗餅已經炸好了，我開一個給你們看，要留心支持的，好，等一下，開了，我先試味，好吃，但這頓飯更好吃，我會在下面自己切開一個來吃，真的很流心。</p></a>
+				<a href="#00:22:3.63" id="00:22:3.63" class="lt" onclick="jumptoTime(1323, this.id)"><p>現在就擺盤，我將荷李餅一個個這樣擺上去，擺好它了，OK 今日我的介紹就是這樣，還有一個在等著，在旁邊，先擠這個，好啦 給你們看看，今日我介紹的就是，芝心可麗餅，希望大家喜歡，拜拜。</p></a>
+</div>
+	</body>
+</html>

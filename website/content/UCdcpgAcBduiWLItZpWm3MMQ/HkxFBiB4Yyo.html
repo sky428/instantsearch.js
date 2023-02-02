@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做芝士司康餅 - Cheese Scones</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'HkxFBiB4Yyo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做芝士司康餅 - Cheese Scones</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.19" id="00:00:4.19" class="lt" onclick="jumptoTime(4, this.id)"><p>早幾日同朋友試食下午茶，錄了一段片，現在放留給大家看，來到一間茶館，這間茶館有早午餐和午餐，下午茶，早上也有，可以點自己喜歡的茶，然後配搭，謝謝收看，茶到了，我點了橘子茶，有些乾果在裡面，聞起來很香，我朋友點的那個是...</p></a>
+				<a href="#00:00:59.56" id="00:00:59.56" class="lt" onclick="jumptoTime(59, this.id)"><p>什麼油?</p></a>
+				<a href="#00:01:1.56" id="00:01:1.56" class="lt" onclick="jumptoTime(61, this.id)"><p>香檳，是一個白茶來的，但是，真的很香，茶很...</p></a>
+				<a href="#00:01:11.56" id="00:01:11.56" class="lt" onclick="jumptoTime(71, this.id)"><p>很油的那種，好像是花園的香味，我這杯橙汁的顏色，像什麼?</p></a>
+				<a href="#00:01:27.67" id="00:01:27.67" class="lt" onclick="jumptoTime(87, this.id)"><p>喝起來像融化的倫敦果汁橡皮糖，但不甜的味道，你們想像一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:39.25" id="00:01:39.25" class="lt" onclick="jumptoTime(99, this.id)"><p>liga，lax Cola，hoCT，alk arriba，hor civ，też，360，Size，short，条，ещ，diez，últ volt，ress，ока，ぐ，Ст，ε，д，non，Sched sitzen，oni，duda，designing，excav examined，chu，placed。</p></a>
+				<a href="#00:01:45.71" id="00:01:45.71" class="lt" onclick="jumptoTime(105, this.id)"><p>ه，首先到三文治的部分，我們點了兩份，一份是regular，這裡就是regular，這裡就是有巧克力的，這裡有巧克力的crips，有牛肉，這個就是咖哩雞，有牛肉三文治，有吞拿魚，我都忘記了這個是什麼，有Q-shirt，這個有cheese and cracker，有些東西是相同的，例如牛肉三文治。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:25.71" id="00:02:25.71" class="lt" onclick="jumptoTime(145, this.id)"><p>雞肉三文治，都一樣的，但多了一個就是beast的雞蛋三文治，加起來就是頭部的部分，我們不客氣了，我們試吧，甜品的部分到了，這個是巧克力杯，這個是檸檬撻，這裡有兩個綠茶的馬卡龍，這個是生日蛋糕，不知道生日蛋糕是什麼味道，就是不好吃，另外有兩種蜂蜜，還有一個水果杯，然後巧克力部分，我點了兩個鹹茶。</p></a>
+				<a href="#00:03:14.71" id="00:03:14.71" class="lt" onclick="jumptoTime(194, this.id)"><p>一個普通鹹茶，一個巧克力鹹茶，有一個布丁，有巧克力味的鬆餅，好了，不客氣了，回來了，因為試了鹹茶，所以我想自己做一個鹹味的鬆餅，可以拿來做早餐或晚飯，你吃麵包可以吃鬆餅，不如看看材料如何，材料有冰的牛油，這個很冷的，剛剛從冰箱拿出來的牛油，這裡牛油有100克，兩杯中筋麵粉，這裡有50克芝士，還有。</p></a>
+				<a href="#00:04:15.65" id="00:04:15.65" class="lt" onclick="jumptoTime(255, this.id)"><p>半杯奶油和牛奶，還有雞蛋，蔥，你可以用外國的小乾蔥或普通蔥，如果不吃蔥可以不加，還有辣椒，我加了一點，不吃辣也可以不加，只加芝士也可以，另外，你看看，我這裡放了一點，甜椒粉，我這裡是一茶匙甜椒粉，半茶匙鹽，這是一茶匙和半茶匙的烘焙粉，材料就是這麼多，我直接看看，這是哈洛班奴，其實是蠻辣的，我把它切開一半，然後把裡面的銀切掉。</p></a>
+				<a href="#00:05:21.65" id="00:05:21.65" class="lt" onclick="jumptoTime(321, this.id)"><p>我只要它的皮，如果只吃皮，它不是很辣，可以加香味，芝士可以用全套，或者你喜歡的巴馬臣芝士，這是在超級市場買的，一包包的，另外，我要說一說，紅椒粉，可以加，可以不加，調味可以發揮自己的創意，你可以加自己喜歡的香料，令這個蝦膏更好味，適合自己口味，我們現在開始，另外，我把焗爐預熱到400度。</p></a>
+				<a href="#00:06:16.65" id="00:06:16.65" class="lt" onclick="jumptoTime(376, this.id)"><p>400度華氏，差不多200度攝氏，把麵粉放進玻璃盤，然後把其他粉類都放進去，我忘記了加一點糖，因為所有食材都是鹹的，加一點糖調味，你可以加半茶匙就可以了，麵粉不用過篩了，這個比較簡單的容易版就什麼都不用了，只要有一個盤子 電動打發器什麼都不用了，拌好之後就把牛油放進去，不要用手碰它。</p></a>
+				<a href="#00:07:30.46" id="00:07:30.46" class="lt" onclick="jumptoTime(450, this.id)"><p>我用這個專門做牛油切碎的手動工具，然後就把麵粉和麵粉混合，如果家裡有食物處理器就很簡單，就把麵粉和牛油放進去，不要像做蛋糕那樣打發，把牛油和麵粉壓成一粒粒的麵粉和牛油，因為用手捏的話，牛油很容易溶化，所以要黏在一起，我們需要的是，他們黏在一起，一粒粒碎碎的就可以了，牛油的質感就會變得鬆脆，很鬆的感覺，就是靠牛油一層層的在麵團裏面。</p></a>
+				<a href="#00:09:12.34" id="00:09:12.34" class="lt" onclick="jumptoTime(552, this.id)"><p>將它們壓在一起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:21.34" id="00:09:21.34" class="lt" onclick="jumptoTime(561, this.id)"><p>將它們壓在一起，如果沒有這個工具，其實用叉子也可以的，這個工具就比較大範圍，容易一點，將它們壓成碎粒狀，這樣碎碎的就可以了，我們可以做這個製作了，將雞蛋放在奶油和牛奶裏</p></a>
+				<a href="#00:10:14.34" id="00:10:14.34" class="lt" onclick="jumptoTime(614, this.id)"><p>然後將它們打勻，將雞蛋和牛奶混合，將所有材料拌勻</p></a>
+				<a href="#00:10:56.11" id="00:10:56.11" class="lt" onclick="jumptoTime(656, this.id)"><p>然後將所有材料放入鍋中，在中間的位置， 將所有材料拌勻，將所有材料拌勻，將所有材料拌勻，然後將所有材料拌勻，在這個時候， 將所有材料拌勻，在這時間一半，我可以把其他材料放進去一起攪拌</p></a>
+				<a href="#00:11:48.03" id="00:11:48.03" class="lt" onclick="jumptoTime(708, this.id)"><p>全部放進去，這樣就簡易了，然後就攪拌</p></a>
+				<a href="#00:11:55.03" id="00:11:55.03" class="lt" onclick="jumptoTime(715, this.id)"><p>然後再蓋上鍋蓋，我喜歡聽到這些攪拌的聲音，ochnde</p></a>
+				<a href="#00:12:25.24" id="00:12:25.24" class="lt" onclick="jumptoTime(745, this.id)"><p>ardı，blocking，Mary，ad terrific</p></a>
+				<a href="#00:12:24.74" id="00:12:24.74" class="lt" onclick="jumptoTime(744, this.id)"><p>misunderstand，impacto，imb，rabbodle，Non，перев ark</p></a>
+				<a href="#00:12:31.10" id="00:12:31.10" class="lt" onclick="jumptoTime(751, this.id)"><p>Carib，отк</p></a>
+				<a href="#00:12:23.74" id="00:12:23.74" class="lt" onclick="jumptoTime(743, this.id)"><p>hooting，El，μου，madam，WOR repl你想，summertime，mi，你的，distant，commun Roberts，幕 safer</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:18.98" id="00:12:18.98" class="lt" onclick="jumptoTime(738, this.id)"><p>long，Williams，Liverpool，dal ordering，ف，hol Сер interesante，AL Beruf，or，過來 Kristin，melinstr dirig，拌至差不多，就可以出手了，手要洗乾淨，然後將它們全部黏在一起，不需要像麵包那樣搓揉，但當然要將麵粉、芝士、食物和其他材料全部混合。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:18.38" id="00:13:18.38" class="lt" onclick="jumptoTime(798, this.id)"><p>混合後放在冰箱冷藏一下再焗，趕時間的話就這樣焗就行了，已經做好了麵團，在工作位置放一點麵粉，將麵團放上去，麵團的表面也可以放一點麵粉，然後將它壓成這個大小，為什麼我剛才不搓揉它們，因為想它們鬆脆，如果壓得太緊就會變成麵包，所以它們應該鬆鬆軟軟的，可以切成三個形狀，或者用自己喜歡的模具，我做一個大小適合自己喜歡的。</p></a>
+				<a href="#00:14:38.38" id="00:14:38.38" class="lt" onclick="jumptoTime(878, this.id)"><p>我做一個小小的，然後沿著這些位置切出來就可以了，你看到它們的側面嗎?</p></a>
+				<a href="#00:14:57.38" id="00:14:57.38" class="lt" onclick="jumptoTime(897, this.id)"><p>一層一層的，就可以放進我們之前預備好的焗盤，我切開一點給你們看，如果怕麵團濕，可以用麵粉把麵團吸出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:26.24" id="00:15:26.24" class="lt" onclick="jumptoTime(926, this.id)"><p>這樣就可以吸出來，麵團上可以放雞蛋漿或忌廉，可以放一些芝士碎，這個步驟可以不做，隨個人喜好，喜歡的話可以放一些材料，焗爐已經預熱好，可以放入焗爐，大約焗14-18分鐘，要視乎焗爐火力大小和麵團的大小，現在拿去焗了，焗了15分鐘，已經可以拿出來，現在拿近一點給你們看，這個就是我自己做的鹹的蜂蜜蛋糕。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:31.93" id="00:17:31.93" class="lt" onclick="jumptoTime(1051, this.id)"><p>可以做自己喜歡的材料，令它更豐富。</p></a>
+				<a href="#00:17:38.93" id="00:17:38.93" class="lt" onclick="jumptoTime(1058, this.id)"><p>讓你們看看。</p></a>
+				<a href="#00:17:46.93" id="00:17:46.93" class="lt" onclick="jumptoTime(1066, this.id)"><p>你可以配你自己喜歡的茶。</p></a>
+				<a href="#00:17:49.93" id="00:17:49.93" class="lt" onclick="jumptoTime(1069, this.id)"><p>今天我做了一些顏色看起來很淡，但我看的是淺綠色的玫瑰花茶。</p></a>
+				<a href="#00:17:59.93" id="00:17:59.93" class="lt" onclick="jumptoTime(1079, this.id)"><p>這是粉紅玫瑰，不是平常的紅玫瑰，所以顏色會淺一點。</p></a>
+				<a href="#00:18:9.93" id="00:18:9.93" class="lt" onclick="jumptoTime(1089, this.id)"><p>簡單地做一個下午茶給自己。</p></a>
+				<a href="#00:18:14.93" id="00:18:14.93" class="lt" onclick="jumptoTime(1094, this.id)"><p>又到我獨食時間了，試吃了。</p></a>
+				<a href="#00:18:18.93" id="00:18:18.93" class="lt" onclick="jumptoTime(1098, this.id)"><p>你看看，芝士醬都浮起來了。</p></a>
+				<a href="#00:18:27.93" id="00:18:27.93" class="lt" onclick="jumptoTime(1107, this.id)"><p>我打開給你們看。</p></a>
+				<a href="#00:18:30.93" id="00:18:30.93" class="lt" onclick="jumptoTime(1110, this.id)"><p>很鬆軟。</p></a>
+				<a href="#00:18:34.93" id="00:18:34.93" class="lt" onclick="jumptoTime(1114, this.id)"><p>你看，有煙出來。</p></a>
+				<a href="#00:18:38.93" id="00:18:38.93" class="lt" onclick="jumptoTime(1118, this.id)"><p>你可以配牛油或果醬，我就直接吃了。</p></a>
+				<a href="#00:18:51.93" id="00:18:51.93" class="lt" onclick="jumptoTime(1131, this.id)"><p>好吃，外面酥脆，裡面很軟。</p></a>
+				<a href="#00:18:56.93" id="00:18:56.93" class="lt" onclick="jumptoTime(1136, this.id)"><p>可以再焗乾一點，但我自己就OK了。</p></a>
+				<a href="#00:19:8.93" id="00:19:8.93" class="lt" onclick="jumptoTime(1148, this.id)"><p>一層一層的。</p></a>
+				<a href="#00:19:12.93" id="00:19:12.93" class="lt" onclick="jumptoTime(1152, this.id)"><p>好吃，可以再鹹一點，可以再加一點鹽。</p></a>
+				<a href="#00:19:18.93" id="00:19:18.93" class="lt" onclick="jumptoTime(1158, this.id)"><p>雖然加了哈佬香腸，但不辣。</p></a>
+				<a href="#00:19:25.93" id="00:19:25.93" class="lt" onclick="jumptoTime(1165, this.id)"><p>今天就介紹到這裡，下次再見。</p></a>
+</div>
+	</body>
+</html>

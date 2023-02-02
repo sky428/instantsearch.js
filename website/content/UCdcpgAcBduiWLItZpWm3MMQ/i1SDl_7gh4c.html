@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>「多倫多生活」一齊行酒鋪/簡易燒烤晚餐</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'i1SDl_7gh4c',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>「多倫多生活」一齊行酒鋪/簡易燒烤晚餐</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.25" id="00:00:0.25" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello 各位朋友你們好，今日和大家一起逛酒店，和煮一個簡易的燒烤晚餐，LCBO就是我們酒店的簡稱，在多倫多買酒大部分都要來這類酒店買，今日這間酒店在北約克區，叫做新開的酒店，和大家看看，佔地很大，這個時間是買白蘭地區的，這個設計很有趣，另外這一瓶我也喝過，我覺得好喝的Grabber，不知道你們喜不喜歡呢。</p></a>
+				<a href="#00:00:41.25" id="00:00:41.25" class="lt" onclick="jumptoTime(41, this.id)"><p>還有就是，我看到有這個，香港應該也有賣，我們這裡也有，這裡有很多不同的分區，例如這裡就是Vodka區，我也喝過這一款，我也覺得不錯，這個暑假他們在推銷Rosé酒，不知道你們喜不喜歡呢，燒烤的話Rosé也很搭，除了啤酒之外，你們也可以試試用Rosé來搭燒烤食物，這一區是賣Tequila的，在多倫多買酒。</p></a>
+				<a href="#00:01:24.25" id="00:01:24.25" class="lt" onclick="jumptoTime(84, this.id)"><p>來到LCBO買酒，是政府管有的機構，因為怕我們會喝醉，這一區就是Liquorist區，可以有溫度橙酒，或者是Grand Marien，很多時候都是用來混酒，雞尾酒用的酒，這一款我喝過，很難喝的，千萬不要買，有很多不同種類的酒，這一款是Berry，我很喜歡淋在雪糕上，不知道你們喜歡什麼酒呢，你看看這一款六角形的Gin酒。</p></a>
+				<a href="#00:02:8.25" id="00:02:8.25" class="lt" onclick="jumptoTime(128, this.id)"><p>你們之前熱血時報的好人經濟也有賣，這裡也有賣，另外也有很多不同種類的酒，我自己和我老公也很喜歡逛酒店，因為看到很多不同的酒就很開心，有時候會買一些回家試，這一款我也買了橙味的，煎酒來試，很美味，接下來這一區就是威士忌區，現在的威士忌很喜歡用玩木桶，這一款是用Sherry的木桶來做的，挺美味的，甜口一點，適合女生。</p></a>
+				<a href="#00:02:50.12" id="00:02:50.12" class="lt" onclick="jumptoTime(170, this.id)"><p>鎖在櫃子裡的可能會貴一點，這兩款威士忌我家也有買過，我也去參加過Taliska這間酒廠，去旅行的時候，如果去蘇格蘭，我就很喜歡和我老公一起逛不同的酒廠，很開心的，這一款性價比比較好，因為價錢是幾十元，但也不錯的，真的有很多不同的酒，威士忌也有幾排不同的威士忌，除了蘇格蘭的，也有愛爾蘭的，還有加拿大的，美國的Bourbon。</p></a>
+				<a href="#00:03:46.20" id="00:03:46.20" class="lt" onclick="jumptoTime(226, this.id)"><p>加拿大的威士忌，我通常都是拿來煮菜的，喝起來就不太好，是不是看得很開心?</p></a>
+				<a href="#00:04:4.24" id="00:04:4.24" class="lt" onclick="jumptoTime(244, this.id)"><p>看到這麼多不同的酒，很開心，這一間我也有去過，澳班也有去過，這間酒廠很小的，也有日本的威士忌，剛才有Sentori的，這款是魚市的，這一瓶我也有買過，但已經喝光了，這是美國威士忌，威士忌除了名字外，也有很多不同的種類，有blend的whisky，也有single malt的whisky，這瓶應該是我第一次喝whisky，是喝這品牌的。</p></a>
+				<a href="#00:04:47.05" id="00:04:47.05" class="lt" onclick="jumptoTime(287, this.id)"><p>第一次喝的時候，之後就慢慢去發掘自己喜歡的，另外這邊也有一些雞尾酒，這瓶是檸檬味，還有很多不同的，這瓶是你一向喝雞尾酒一定會有的，還有很多不同種類的cherry，mint，vanilla味，其實買不完的，如果你家裡只有兩口子的話，買不完的，這裡真的很大，很容易會迷失方向，這裡有一個TASTE字，就是試酒的地方。</p></a>
+				<a href="#00:05:37.77" id="00:05:37.77" class="lt" onclick="jumptoTime(337, this.id)"><p>如果是一些大的LCBO，也會有一些這樣的角落，是開來讓你可以試酒的，不過今天這個session就close了，這個櫃子有不同的酒，你可以付錢試，試合適再買也可以，這個酒吧也很漂亮，不過不知道是不是因為新疫情和新開的關係，這個時間就沒有了，這些就是vintage的酒，就是一些比較貴的紅酒，它又加在一起，還有上鎖了。</p></a>
+				<a href="#00:06:11.69" id="00:06:11.69" class="lt" onclick="jumptoTime(371, this.id)"><p>你要的時候，它才會開鎖拿給你的，接下來就是一些冷的酒，放在冰箱裡喝的酒，有白酒、紅酒、香檳、香檳，很多很多的，有時候你想要一些酒，即時可以喝的話，可以來這裡拿，不用怕回家要等它冷，因為它已經是冷的，一回到家就可以喝了，而且這裡有啤酒的部分，因為我們酒店有兩種，一種是賣酒，一種是賣啤酒。</p></a>
+				<a href="#00:06:58.10" id="00:06:58.10" class="lt" onclick="jumptoTime(418, this.id)"><p>這間兩樣都有，加拿大這裡有很多本地的手工啤酒，也可以買到很多不同的國際品牌，好像這個在香港應該很流行，因為有明星賣廣告，這個啤酒我都可以的，不過現在我胃寒，喝啤酒都會胃痛，所以少了很多，除了平常常見的青島啤酒，這裡有青島啤酒，日式的Asahi，Samporo，這些全部都可以買，當然是大陸的牌子。</p></a>
+				<a href="#00:07:50.24" id="00:07:50.24" class="lt" onclick="jumptoTime(470, this.id)"><p>不會是很特別的牌子，這裡有Greyfood的啤酒，這些類似的手工啤酒，這間酒店也有很多不同的手工啤酒，我有時也會買的，我貪得意看他們的圖，看得很吸引，不過現在真的少了，因為一瓶啤酒，一罐啤酒，要三四元，香港一罐真的十八元，真的喝不下，出來這邊，有燒酒區，有韓國的燒酒，這裡也很流行，還有日式的清酒。</p></a>
+				<a href="#00:08:34.24" id="00:08:34.24" class="lt" onclick="jumptoTime(514, this.id)"><p>還有燒酌，這一款全是加拿大品牌，之前也有和大家介紹過，我喜歡喝的Apple Cider，我又再買一瓶，連中國的酒，二曲頭，我不知道，什麼頭曲酒也有，最後，還有，除了啤酒，烈酒，當然還有紅酒白酒，這一區，全都是Rose，夏天一定是這樣的，有分區的，例如智利酒，阿根廷的紅酒白酒，澳洲，美國，加拿大本土也有分兩區。</p></a>
+				<a href="#00:09:22.24" id="00:09:22.24" class="lt" onclick="jumptoTime(562, this.id)"><p>安省區，還有，溫哥華的BC省區，有兩個不同的，造酒地區，當然也有法國區，意大利區，南美區，真的有很多，新世界舊世界，看到眼花繚亂，進酒局，或者酒店，我真的可以逛一小時，逐瓶逐瓶，摸摸，澳洲，希臘的酒，西班牙，德國，你講的很多地方，葡萄牙，你講的很多都有，你看看這裡，連有機的都有，他說這個是一個Vegan的酒，我也想問。</p></a>
+				<a href="#00:10:16.03" id="00:10:16.03" class="lt" onclick="jumptoTime(616, this.id)"><p>什麼酒不是都是Vegan的嗎?</p></a>
+				<a href="#00:10:19.07" id="00:10:19.07" class="lt" onclick="jumptoTime(619, this.id)"><p>有酒不是Vegan的嗎?</p></a>
+				<a href="#00:10:20.83" id="00:10:20.83" class="lt" onclick="jumptoTime(620, this.id)"><p>我不知道，但這裡寫的就是這種酒是Vegan的酒，嗯，我很不明白，還有不便宜，你這樣賣，總之好像，你說你是有機的，好像什麼都會貴一點，總之我就不明白，哈哈哈，酒店都會出一些雜誌，大概每一季就出一本，今季推出的是Wolsey，除了不同的，當然你不是就這樣拿，他都建議你有光顧才好拿，還有一些旅遊指示。</p></a>
+				<a href="#00:11:4.67" id="00:11:4.67" class="lt" onclick="jumptoTime(664, this.id)"><p>你就可以不拿本，就可以去我們安省的不同酒莊，然後去走有很多資訊，我每年都會去看，但我未必會拿，因為我自己本身有一本，或者上網都可以查到，然後這裡其他就是他選出來的，酒在世界各地都有，放在這裡讓你慢慢看，法國的分區就再細一點，就分開不同的出名的產區，你會看到Burgundy這些出名的產區，可能因為始終紅酒很多人都會想起法國。</p></a>
+				<a href="#00:11:46.87" id="00:11:46.87" class="lt" onclick="jumptoTime(706, this.id)"><p>所以這裡的法國酒就分得細緻一點，而最後我們就買了三瓶酒，兩瓶是rose，一瓶是沒有汽的，一瓶有汽的，還有我很喜歡的那瓶Sake，好 我們回家燒烤吧，這次燒烤真的很簡單，首先我預備雞翼，之前已經洗乾淨 晾乾水，吸乾水之後就加一點點，我只是醃了半個小時，就是加一點鹽，加一點胡椒粉，加一點紅椒粉和辣椒粉。</p></a>
+				<a href="#00:12:30.87" id="00:12:30.87" class="lt" onclick="jumptoTime(750, this.id)"><p>一點點 隨意地加，然後就拌勻，拌勻後就放一旁醃一醃，其實如果你不是做薑蔥豉油那些，你喜歡醃久一點，我自己就覺得如果是燒雞翼，我很喜歡吃那個燒烤味，所以我醃的時候就不是加很多香料，最主要就是加多一點點鹽，這樣就可以了，你也可以試一下自己喜歡的調味，做出來的燒雞翼都可以很好吃的，接著就是牛扒。</p></a>
+				<a href="#00:13:17.87" id="00:13:17.87" class="lt" onclick="jumptoTime(797, this.id)"><p>這個牛扒是T-bone steak，我就是加了普通你去超級市場買的，專貨牛扒的香料粉，燒之前其實不是怎樣醃的，是燒之前我們就放滿在表面，然後就用手按壓它，讓它更貼服用，今次的示範我就用老公來示範，我就拍，然後我們就可以在表面加一點點油，兩邊都加，我們就可以拿去燒了，首先用燒烤爐開著火。</p></a>
+				<a href="#00:14:5.30" id="00:14:5.30" class="lt" onclick="jumptoTime(845, this.id)"><p>燒不是一開火就燒，我們要等一等時間，等到夠熱就可以了，這裡有彩椒放在旁邊，不是直接火，然後這邊可以燒牛扒，牛扒放在中間，上面可以放你喜歡的蔬菜，薯仔可以包好放在上面，不用直火燒，燒一燒，燒完一邊就可以反轉去燒另一邊，嗯，好香呀，看看燒烤標記多漂亮，燒一邊，另一邊就放另一邊，剛才燒過的就用叉子去除燒焦的碎。</p></a>
+				<a href="#00:15:8.30" id="00:15:8.30" class="lt" onclick="jumptoTime(908, this.id)"><p>然後放雞翼，在香港燒烤都會用叉子去除，在加拿大我都會用燒烤爐，風劍油印，我這個燒烤爐已經用了十年，雖然有些瘡疤，但仍然很好用，只要沒有氣的時候加氣就好了，烤完一會就已經很漂亮，最後就放牛油在上面，燒一燒，再放香草在上面，等一會就可以吃了，不要以為反轉之後再燒很久，其實真的不是很久，一會兒切出來你就知道。</p></a>
+				<a href="#00:16:9.30" id="00:16:9.30" class="lt" onclick="jumptoTime(969, this.id)"><p>出來的雞翼是Medium Rare，不是很老很熟的，一會兒切給你們看，雞翼夠時間都要反一反，險 Drewzlich，itas，уж，Fit，тя，скорее，uncles，不知道你們喜歡這種燒雞翼嗎?</p></a>
+				<a href="#00:16:30.78" id="00:16:30.78" class="lt" onclick="jumptoTime(990, this.id)"><p>我自己本身就很喜歡吃雞翼，什麼種類的，什麼做什麼用，用什麼方法做的雞翼，我都很喜歡，這些彩椒，真的燒到完全外面焦了才可以，現在還未可以，我們剛才蓋過一次蓋子，然後現在，現在就可以，差不多的，完全熔掉，就可以上碟了，這個牛扒，超香的，上碟或砧板後，都要休息一下，至少要休息10分鐘，等到肉汁回到雞翼。</p></a>
+				<a href="#00:17:22.78" id="00:17:22.78" class="lt" onclick="jumptoTime(1042, this.id)"><p>才可以，切開，彩椒都差不多了，等到再燒一會，軟一點，我們就可以，我教你們怎樣做，好好吃的，雞翼燒好後，就可以上碟了，來看看，今晚的晚餐，好味道嗎?</p></a>
+				<a href="#00:17:50.78" id="00:17:50.78" class="lt" onclick="jumptoTime(1070, this.id)"><p>雞翼燒得多好，我平時，很少會在燒烤爐，加蜜糖，因為火力很大，不想燒焦雞翼，所以燒好後，才加蜜糖，當然是趁熱，晚餐，當然要開一瓶酒，今天，我們試飲，因為有牛扒，這是自來的紅酒，不過我發現燒烤喝紅酒， 感覺還是有點重，燒烤喝啤酒或有氣的酒， 感覺比較開心，冷酒， 感覺比較舒服，平時喝完， 喝完就這樣喝就ok了， 但加上燒烤食物， 感覺真的有點膩，不知道你們燒烤喜歡配什麼酒呢?</p></a>
+				<a href="#00:19:3.22" id="00:19:3.22" class="lt" onclick="jumptoTime(1143, this.id)"><p>可以告訴我， 大家分享一下，純港酒來說， 這種酒便宜， 方便， 易買，你們家裡會不會有某幾種酒， 紅酒， 白酒， 當作家裡的家庭酒，這瓶不是我家的家庭酒，但不知道你們家裡會不會有自己喜歡的酒呢?</p></a>
+				<a href="#00:19:38.22" id="00:19:38.22" class="lt" onclick="jumptoTime(1178, this.id)"><p>好， 做好了， 和大家去看看，現在我們把荷包切開給大家看，我老公切給大家看，這個是T-bone steak，現在年紀大了，我真的吃不到一次吃一塊這麼大的牛扒，很多時候我們兩個人都會用一塊牛扒留作飯，其實這塊牛扒最後我們都吃不完，吃不完剩下的我都切粒用來炒飯，或者切薄，第二天之後可以切薄片用來蘸醋汁。</p></a>
+				<a href="#00:20:27.89" id="00:20:27.89" class="lt" onclick="jumptoTime(1227, this.id)"><p>也可以的，或者用來拌沙拉，你看看我們燒了這麼久，你看看你的牛扒，仍然是Medium Rare，很嫩滑，很正，最搞笑是這個牛扒很便宜，這個就是那個椒，那個彩椒燒到要這樣黑，但又不要燒乾，然後我用手套，你可以戴手套，把外皮撕掉，這個椒已經超好吃，就這樣吃已經很甜，很多時候我都很喜歡這樣做，不知道你們喜不喜歡呢。</p></a>
+				<a href="#00:21:11.89" id="00:21:11.89" class="lt" onclick="jumptoTime(1271, this.id)"><p>平時在外國人都會弄起之後，加橄欖油拌著，就可以夾麵包放在漢堡，我喜歡就這樣吃，只要加少少鹽，黑椒粉，漂亮少少的橄欖油，加少少意大利黑醋，拌在一起就已經很好吃，如果你未試過可以試下，你不喜歡加醋或怕肥的話，就這樣吃都很好吃，因為它是超甜的，是很難想像到這麼甜，就是這樣拌一拌，就有菜了。</p></a>
+				<a href="#00:21:56.89" id="00:21:56.89" class="lt" onclick="jumptoTime(1316, this.id)"><p>其實我沒有拍到，我有些薯仔和菜，不過我主力看這三種食物，方便可以寫食譜的時候，就可以看得到，顏色都很漂亮，今晚的簡單燒烤餐完結，乾杯!</p></a>
+				<a href="#00:22:26.24" id="00:22:26.24" class="lt" onclick="jumptoTime(1346, this.id)"><p>今日的分享到此，希望大家喜歡。</p></a>
+				<a href="#00:22:29.22" id="00:22:29.22" class="lt" onclick="jumptoTime(1349, this.id)"><p>下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

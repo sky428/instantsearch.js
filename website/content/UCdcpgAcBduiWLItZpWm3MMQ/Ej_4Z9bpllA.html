@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做蔥油餅 (中式燙麵法) - Homemade Scallion Pancakes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Ej_4Z9bpllA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做蔥油餅 (中式燙麵法) - Homemade Scallion Pancakes</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.44" id="00:00:4.44" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好， 各位朋友你們好，看到桌上有很多蔥， 麵粉， 油， 水，大家可能猜到今天會做一些很簡單的食物，的確是一個很簡單， 很容易做好的蔥油餅，當然簡單也有它自己的道理，我可以和大家一起做一個蔥油餅，可以在中間告訴你們， 裡面需要留意什麼，我以前做過幾次蔥油餅，每次做都覺得麵團很硬或很乾。</p></a>
+				<a href="#00:00:53.44" id="00:00:53.44" class="lt" onclick="jumptoTime(53, this.id)"><p>所以就上網找資料， 看看別人怎樣做，後來發現他們有說中式的燙麵，材料有中筋麵粉， 英文是all purpose flour，還有幾束蔥，然後我需要熱水和冷水，冷水用來收溫水就行， 熱水就用來煮水，這個已經放了一會， 待會要再熱，所以要用鹽， 胡椒粉和油調味，材料就這麼多， 我們開始吧。</p></a>
+				<a href="#00:01:45.44" id="00:01:45.44" class="lt" onclick="jumptoTime(105, this.id)"><p>做蔥油餅其實有一個很容易記的方法，麵粉需要做多少就做多少，麵粉的70%水， 麵粉的一半蔥，所以容易預計， 如果不做太多， 可能做很多，如果不做太多， 可用量減少，但做基數， 例如麵粉100克， 70%水， 即是70克水，70克水要分三分一是冷水， 三分二是熱水，100克麵粉和100克蔥。</p></a>
+				<a href="#00:02:40.78" id="00:02:40.78" class="lt" onclick="jumptoTime(160, this.id)"><p>鹽和油隨個人喜好，有些人喜歡鹹一點， 有些人喜歡普通一點，所以不需要量，中間的材料可以用這個方法去調味，我用的是300克中筋麵粉，我會切出150克或以上，我用的蔥就用180克，蔥的份量隨個人喜好，最好用一半蔥，我用蔥，300克麵粉是200克水，裡面有140克熱水，70克是冷水，鹽大概有10克。</p></a>
+				<a href="#00:03:34.78" id="00:03:34.78" class="lt" onclick="jumptoTime(214, this.id)"><p>先量10克，胡椒粉和油，我已經預備好，水已經煮開了，這個有95度熱水，用筷子攪拌就最好，不用燙手，然後就倒入麵團，用筷子攪拌，攪拌至一粒粒的狀態，這樣就對了，這個時候就把三分一的凍水倒進去，凍水的意思是這個只是一個室溫的水，不需要是冰水，然後就把麵團攪拌在一起，讓麵團吸收熱水和凍水，然後慢慢攪拌。</p></a>
+				<a href="#00:05:6.86" id="00:05:6.86" class="lt" onclick="jumptoTime(306, this.id)"><p>攪拌至麵團稍稍黏合，攪拌至麵團稍稍黏合，然後就可以搓揉麵團，因為加了熱水，我慢慢攪拌，攪拌完再加冷水，所以這個麵團是暖的，一點也不燙手，變成一個粉團，之後我們就可以攤一攤它，我將保鮮紙蓋著攤一攤它，然後我們一會就可以拿來做了，不需要攤很久，只需要十幾二十分鐘就可以了，我們就要把蔥洗乾淨和切蔥。</p></a>
+				<a href="#00:06:10.90" id="00:06:10.90" class="lt" onclick="jumptoTime(370, this.id)"><p>你看到這個粉團不是很黏手，然後我們就把它搓圓，然後我就把它放在這裡，用保鮮紙蓋著它，然後就讓它休息一會，我洗乾淨蔥之後就把水弄乾，然後慢慢切細切幼，切薑蓉切粗，稍後再看影片，多切兩下，切碎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:23.53" id="00:07:23.53" class="lt" onclick="jumptoTime(443, this.id)"><p>切洋蔥時，會感受到廚房的辛酸，那種辛酸是甚麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:39.53" id="00:07:39.53" class="lt" onclick="jumptoTime(459, this.id)"><p>再切一次，現在可以搓麵團，麵團已經搓了一段時間</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:55.53" id="00:07:55.53" class="lt" onclick="jumptoTime(475, this.id)"><p>現在可以搓麵團，搓滑一點，因為現在麵團看起來不太滑，看起來很硬，現在搓滑一點，喜歡的話可以加油或麵粉，我加一點點麵粉已經足夠了，推它反轉， 普通搓麵團的方法就可以了，現在麵團完全不黏手，這樣就已經可以了，然後就可以把它分開搓圓，搓到它變成圓條狀，然後就分開它， 看你想做多大個，這裡做到四個， 把它分開四塊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:19.80" id="00:09:19.80" class="lt" onclick="jumptoTime(559, this.id)"><p>這個小一點，大小不均勻，把它分開四塊就可以了，關機了， 沒拍，現在我這裡就硬駁了麵團之後，我把鹽在表面塗勻，然後我就放油，不怕多，然後就掃它， 掃勻它，讓它整個都有油，然後就可以放蔥，蔥多少份量就隨你了，你喜歡可以多一點蔥或少一點蔥，這樣就好了，喜歡的話可以加一點胡椒粉，不喜歡的話可以不加，然後就慢慢捲起來。</p></a>
+				<a href="#00:11:1.98" id="00:11:1.98" class="lt" onclick="jumptoTime(661, this.id)"><p>因為有些空隙，所以蔥可以慢慢捲到另一邊，完成，將兩邊的頭捏起來，將剩下的頭捏開，不要阻礙我了，這樣捏著麵團，捏緊它，它已經是一個長條形了，然後我將它慢慢拉長一點，捏緊它，拉長一點，然後就把它轉圈圈，像陀螺一樣，到尾部就收起來，然後按壓一下，做好一個，穿了也不要緊，黏上去，做下一個，將蔥油餅慢慢地壓薄。</p></a>
+				<a href="#00:13:2.84" id="00:13:2.84" class="lt" onclick="jumptoTime(782, this.id)"><p>我的蔥頭比較小，耶!</p></a>
+				<a href="#00:13:15.72" id="00:13:15.72" class="lt" onclick="jumptoTime(795, this.id)"><p>弄好了，好了，現在就把油放進平底鍋，這個是生鐵鑊，我先拿最大的煎，放進去黏著煎，拿蓋子，慢慢煎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:24.43" id="00:14:24.43" class="lt" onclick="jumptoTime(864, this.id)"><p>煎熟後放入冰箱冷藏，好了 這樣炒到上面有點透明就可以翻轉，很金黃香脆</p></a>
+				<a href="#00:14:37.14" id="00:14:37.14" class="lt" onclick="jumptoTime(877, this.id)"><p>начала müssenCONaye，פר텐 Raj畫，lifelong，commencé，pseudo，chrom consisting，someone，heir，patrol，involves，beacon，avORIA，minist tres，Giant，fires，victconscious。</p></a>
+				<a href="#00:14:40.16" id="00:14:40.16" class="lt" onclick="jumptoTime(880, this.id)"><p>buch，Us，ieval，째，‫athi，Porque，s static，chocolate，hd，approximation，bush，PDF，��요，Follow，Nut，mondo，��，bior，大的，connectors，following，21，kijken，mig，losses，mans。</p></a>
+				<a href="#00:14:58.64" id="00:14:58.64" class="lt" onclick="jumptoTime(898, this.id)"><p>zenia，deals，contar，AH，cultural，prepares，hug大家，很香葱油味，煎好曬啦，好，抹抹啲個鐵再煎下一個啦，抹抹佢先，再落油煎</p></a>
+				<a href="#00:15:23.63" id="00:15:23.63" class="lt" onclick="jumptoTime(923, this.id)"><p>好，字幕by索兰娅。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:37.98" id="00:15:37.98" class="lt" onclick="jumptoTime(937, this.id)"><p>再煎另一邊，eses</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:48.58" id="00:15:48.58" class="lt" onclick="jumptoTime(948, this.id)"><p>risen，baby，hale，promo，kn</p></a>
+				<a href="#00:15:46.36" id="00:15:46.36" class="lt" onclick="jumptoTime(946, this.id)"><p>ал，� housing，oking</p></a>
+				<a href="#00:15:48.14" id="00:15:48.14" class="lt" onclick="jumptoTime(948, this.id)"><p>accountable，Will Ku，greg hate，atta，Is substinda，тоящThe gas，этот 즐 erstmal，xico，蔥油餅已經煎好了，接著就可以洗乾淨手了，煎東西的時候要小心，手碰到鍋子，現在看不看到，嘩!整條都很厚，好熱，我們可以拍照，我還想切開。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:19.75" id="00:16:19.75" class="lt" onclick="jumptoTime(979, this.id)"><p>我把它們疊起來，好像切蛋糕一樣，懶呀，看可不可以這樣切，是可以的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:35.75" id="00:16:35.75" class="lt" onclick="jumptoTime(995, this.id)"><p>切開了，你可以切三角形，我開心一點就切三角形，touchshield marketed gravil</p></a>
+				<a href="#00:17:4.05" id="00:17:4.05" class="lt" onclick="jumptoTime(1024, this.id)"><p>וך，accessory，Instr lapse，reported</p></a>
+				<a href="#00:17:1.71" id="00:17:1.71" class="lt" onclick="jumptoTime(1021, this.id)"><p>Tian，llamado，Elle lnуğan</p></a>
+				<a href="#00:17:2.07" id="00:17:2.07" class="lt" onclick="jumptoTime(1022, this.id)"><p>н，blinking，好熱呀，切好了，我試食先，好美呀，外脆內嫩，其實很多東西都是供多為少，再做幾次就會很好味，就會很好吃，我今天介紹到這裡，希望你們也喜歡，近鏡給你們看，下星期再分享，拜拜再見。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>怎樣做芝士拼盤和芝士酥皮棒 (Cheese board and cheese twists)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LDiPGhXItsQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>怎樣做芝士拼盤和芝士酥皮棒 (Cheese board and cheese twists)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.99" id="00:00:3.99" class="lt" onclick="jumptoTime(3, this.id)"><p>大家好，大約聖誕節，我們都會開派對，開派對的時候可能都會帶食物或是招呼朋友來，今天我們就介紹去弄一個拼盤，拿出去給人家或是朋友一起吃的時候，可以漂亮一點，還有不同的種類。</p></a>
+				<a href="#00:00:29.99" id="00:00:29.99" class="lt" onclick="jumptoTime(29, this.id)"><p>我今天就出了外景，去了不同的超級市場找這些材料，我們不如去片吧!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:39.99" id="00:00:39.99" class="lt" onclick="jumptoTime(39, this.id)"><p>我們現在外面很冷，我今天就出了超級市場，現在正在走進去。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:52.99" id="00:00:52.99" class="lt" onclick="jumptoTime(52, this.id)"><p>平時我們想做一個芝士拼盤聖誕節，我們都會選擇幾種芝士，首先我們會選擇軟身的芝士，容易吃，好像這些，沒有什麼味道，像牛油一樣，有奶的香味，也可以加不同的材料，焗了之後再點，也很好吃。很多時候在芝士櫃，都會有其他配料在旁邊可以讓你選擇，例如你可以買一些crackers，買一些不同的jam，配在芝士上面可以一起吃，很多時候這些白色的白味芝士，中文叫做白味芝士，外面有一層白色的，這些芝士都是軟身的芝士，。</p></a>
+				<a href="#00:02:2.99" id="00:02:2.99" class="lt" onclick="jumptoTime(122, this.id)"><p>我們做芝士拼盤，第一樣東西，都會買軟身的芝士，現在我選擇一個小小的，也有些像這個，有味道的，已經有味道了，這種芝士都是軟身的，例如這裡有辣椒味，有黑椒味，有蒜頭味，這些可以直接塗在芝士上面。</p></a>
+				<a href="#00:02:34.47" id="00:02:34.47" class="lt" onclick="jumptoTime(154, this.id)"><p>我可以買一塊芝士，看看有什麼味道，我想試一下。</p></a>
+				<a href="#00:02:46.47" id="00:02:46.47" class="lt" onclick="jumptoTime(166, this.id)"><p>我覺得這個會好吃，我們買這個吧。</p></a>
+				<a href="#00:02:55.47" id="00:02:55.47" class="lt" onclick="jumptoTime(175, this.id)"><p>我買這個，再買一個軟身的芝士，Bee或者Carmel Brown，就是這個牌子，就是這個芝士的名字，或者是這種芝士的名字。</p></a>
+				<a href="#00:03:10.47" id="00:03:10.47" class="lt" onclick="jumptoTime(190, this.id)"><p>我們可以選擇一個來買，我可以買一個小的，因為我一個人有不同的芝士，我想試一下這個，這個也是白味芝士，可以試一下這個，它看起來很小。</p></a>
+				<a href="#00:03:32.47" id="00:03:32.47" class="lt" onclick="jumptoTime(212, this.id)"><p>就是這樣，對。</p></a>
+				<a href="#00:03:36.47" id="00:03:36.47" class="lt" onclick="jumptoTime(216, this.id)"><p>說完買白芝士，我們就可以從淡味開始慢慢濃味上去，你可以買一些深色一點的芝士，例如Cheddar Cheese，或者是Gouda，你可以去櫃面那裡買，如果不想的話可以在這裡選擇，你可以選擇不同的產地，想要牛的味道，牛奶味道，或者是羊奶味道，你也可以自己選擇。</p></a>
+				<a href="#00:04:11.47" id="00:04:11.47" class="lt" onclick="jumptoTime(251, this.id)"><p>那些也有軟的，然後我再跟你說一個硬一點的芝士，雖然我暫時還沒選擇想買什麼，但我想說第三樣東西，就是我會選擇一些硬一點的芝士，鹹一點的芝士，可以切成一片片乾一點的芝士，就好像這一種，是不是Giano，類似這些。</p></a>
+				<a href="#00:04:37.47" id="00:04:37.47" class="lt" onclick="jumptoTime(277, this.id)"><p>這樣它就會鹹一點，可以送其他東西，吃芝士冰盤的時候可以有偏甜，也有鹹一點的芝士，就可以吃了。</p></a>
+				<a href="#00:04:49.47" id="00:04:49.47" class="lt" onclick="jumptoTime(289, this.id)"><p>另外最後要選擇的就是，最濃味的就是藍芝士，它有很多種類的，像這裡有很多種類的，你都可以選擇喜歡自己吃到哪一種的，你就可以買了，講解一下，如果你做芝士拼盤的時候，都可以有其他配料一起吃的，我會選擇其中一樣就是橄欖，我們可以選擇少少，這裡的橄欖是一樣價錢的，只是計重量，我可以選擇我自己喜歡的。</p></a>
+				<a href="#00:05:32.33" id="00:05:32.33" class="lt" onclick="jumptoTime(332, this.id)"><p>不同的，有些是有餡的，我可以每人一些，都可以在芝士拼盤裡面，加一些，好像豐富一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:45.33" id="00:05:45.33" class="lt" onclick="jumptoTime(345, this.id)"><p>我喜歡吃紅橄欖</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:48.33" id="00:05:48.33" class="lt" onclick="jumptoTime(348, this.id)"><p>我可以買幾粒，放進去就會比較漂亮，我可以再選擇幾粒黑色，有些不同的顏色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:5.33" id="00:06:5.33" class="lt" onclick="jumptoTime(365, this.id)"><p>來到這個Session，這個Session就是賣Crackers的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:10.33" id="00:06:10.33" class="lt" onclick="jumptoTime(370, this.id)"><p>我們可以選擇一些Crackers去配芝士，可以塗在上面，這樣就會好吃，很多時候都會有這種，在芝士拼盤裡面看到，但這些我會親自做，我們買一些比較容易一點的，簡單一點的可以放上去，我可以選擇這個，我現在來到冰櫃的地方，我找Puff Pastry，即是酥皮，就可以買了，我看到了，在那邊，有很多種類。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:5.80" id="00:07:5.80" class="lt" onclick="jumptoTime(425, this.id)"><p>這是薄的，這就是Puff pastry，也有不同牌子，我隨便拿一個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:30.07" id="00:07:30.07" class="lt" onclick="jumptoTime(450, this.id)"><p>付款後再去第二間超級市場，到凍肉位，我會選擇一些沙拉和火腿，這樣芝士拼盤就會很完滿，我等他幫我切，這間超級市場的芝士和凍肉種類多很多，你看看全部都是，我選擇了這個硬的芝士，我之前買了白色的芝士，現在可以選擇黃色的芝士，還有一個環節，中間會有些餅配在拼盤上，現在開始做拼盤的餅，首先介紹一個芝士條。</p></a>
+				<a href="#00:08:46.05" id="00:08:46.05" class="lt" onclick="jumptoTime(526, this.id)"><p>用酥皮做的，平時可以在家中找到一些酥皮，我買了一個酥皮，這個是預先做好的，一攤開就可以用了，最方便的，如果真的沒時間去預備，或者怕做得不好吃的話，這個最方便，也是很簡單，首先預熱焗爐，375度華氏，或者190度攝氏，我現在去預熱焗爐，平時買了酥皮，通常都是在冰箱拿出來的，回家後當然要放在冰箱，用的時候放在冰箱的下方。</p></a>
+				<a href="#00:09:42.53" id="00:09:42.53" class="lt" onclick="jumptoTime(582, this.id)"><p>或者平時雪上的地方，慢慢等它融化，這樣就不會放在室溫融化，這樣比較方便，還有我們買了一些盒裝的東西，無論是公仔麵也好，無論是即食餅或豬兒，像這些酥皮，最好自己去看看，它是怎樣做的，怎樣用它，它會有教你怎樣去融雪，怎樣去包，還有大概焗多少分鐘，你先看一看，給自己一個底，就算你沒食譜，你想做的東西。</p></a>
+				<a href="#00:10:32.53" id="00:10:32.53" class="lt" onclick="jumptoTime(632, this.id)"><p>不用食譜也可以，看完之後就不會弄到一團粥，首先這個很簡單，你看到有些芝士，你喜歡買自己喜歡的芝士，然後像我這樣，慢慢磨碎，看到嗎?</p></a>
+				<a href="#00:10:56.65" id="00:10:56.65" class="lt" onclick="jumptoTime(656, this.id)"><p>大概這個份量就足夠了，你可以混合和配搭，我這個是麻布的芝士，你可以加一些巴馬臣芝士的粉，這樣會更濃味，這個多數會放在薄餅或意粉面上，做好之後就拌勻味道，芝士已經是鹹的了，不用混合其他，如果你想更香的話，你可以有幾個選擇，可以加少許辣椒粉，這個其實不是很辣，叫做Paprika，有少許煙燻味。</p></a>
+				<a href="#00:11:38.35" id="00:11:38.35" class="lt" onclick="jumptoTime(698, this.id)"><p>你可以加少許，少許的意思是，我一會兒給你們看，或者想更香的話，可以加一些蒜粉，也可以，但如果這些全部不加也可以，只加芝士也可以，還有如果你家裡有些香草，香草乾的，你也可以用，我覺得如果加玫瑰花，加進去也是很香的，你們也可以加少許，我一會兒給你們看，少許是多少，我把這些芝士放進去，大約。</p></a>
+				<a href="#00:12:19.35" id="00:12:19.35" class="lt" onclick="jumptoTime(739, this.id)"><p>這裡這樣，這裡大約是半碗，半碗芝士，加少許，一隻小匙子，這個是茶匙子，很小的，這樣加，我只加三分之一，加進去，讓它有一點味道，加進去，你可以加進去，到時灑進去也可以，蒜粉，加少許，就是這樣，把這裡拌勻，igkeiten lotion對對üp，束 знать，она</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:22.55" id="00:13:22.55" class="lt" onclick="jumptoTime(802, this.id)"><p>questioned，ład libre，execute，cilantro，taken，Maintenant，כund</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:29.59" id="00:13:29.59" class="lt" onclick="jumptoTime(809, this.id)"><p>RESAss，diamonds，�chsel</p></a>
+				<a href="#00:13:31.03" id="00:13:31.03" class="lt" onclick="jumptoTime(811, this.id)"><p>sür，inement，Buy，mission</p></a>
+				<a href="#00:13:30.93" id="00:13:30.93" class="lt" onclick="jumptoTime(810, this.id)"><p>bow cosmos，黨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:28.33" id="00:13:28.33" class="lt" onclick="jumptoTime(808, this.id)"><p>Careful，oike，bloody，있는</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:31.81" id="00:13:31.81" class="lt" onclick="jumptoTime(811, this.id)"><p>Luxcito，bicycle，бег，acknowled sliding</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:26.65" id="00:13:26.65" class="lt" onclick="jumptoTime(806, this.id)"><p>Julia，schwer</p></a>
+				<a href="#00:13:28.99" id="00:13:28.99" class="lt" onclick="jumptoTime(808, this.id)"><p>website，etz，deter πολύ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:23.97" id="00:13:23.97" class="lt" onclick="jumptoTime(803, this.id)"><p>autop jumped，metabolismo，ine Sakalez，рас，Jameza，분들이</p></a>
+				<a href="#00:13:28.83" id="00:13:28.83" class="lt" onclick="jumptoTime(808, this.id)"><p>Damon，sust Told，Vergleich</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:26.33" id="00:13:26.33" class="lt" onclick="jumptoTime(806, this.id)"><p>seventy Jun，líder，Tabii，없어，� Vernon，Barcelona，delight prevalence，ENTS，지�ocate，tast mañana</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:27.67" id="00:13:27.67" class="lt" onclick="jumptoTime(807, this.id)"><p>ket，ช头，onak，750</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:28.05" id="00:13:28.05" class="lt" onclick="jumptoTime(808, this.id)"><p>methyl，Amb Americas</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:31.07" id="00:13:31.07" class="lt" onclick="jumptoTime(811, this.id)"><p>call，doing，im，Baldwin，Formula</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:25.61" id="00:13:25.61" class="lt" onclick="jumptoTime(805, this.id)"><p>hour WARidän，consuming，investigate，第二樣東西已經預備好了，第三樣東西就是要一個碗，我們加一些雞蛋，那這個雞蛋用來做什麼呢，就是做一個Egg wash，等到它稍後，那些芝士可以，黏在那塊酥皮上，攪勻了，那就可以放在一邊了，好了，那我們就可以把酥皮打開了，攤開它。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:1.43" id="00:14:1.43" class="lt" onclick="jumptoTime(841, this.id)"><p>那焗盤呢，預備一個焗盤，放一張焗爐紙在上面，那這個就這樣攤開它，因為它已經，Roll好了，Pre-Roll了，所以根本就是，慢慢一推就可以推開它了，放開後，把雞蛋掃上去，我這個雞蛋是沒有加任何調味料的，只有雞蛋，把芝士撒在蛋上，用刀切開，分開一半，放入焗盤，用手捲起來，用手捲起來，這個就是一個非常簡單又方便又快捷的小食。</p></a>
+				<a href="#00:16:42.30" id="00:16:42.30" class="lt" onclick="jumptoTime(1002, this.id)"><p>焗大約15至20分鐘，完成了，可以拿出來，如果你捏得實一點，它就會幼一點，捏得粗一點，它就會粗一點，這樣真的很難有失敗的，希望你們可以試一下，我現在試吃，咬來吃，很脆的，我看它很深色，我看的真的沒那麼深色，這是芝士蛋糕，另外在等待第二盤，好了，我們回來了，去完超級市場買東西後，回來了。</p></a>
+				<a href="#00:17:52.26" id="00:17:52.26" class="lt" onclick="jumptoTime(1072, this.id)"><p>就可以想想怎樣擺盤，你可以選擇很大塊的木板，但我的木板不是很大塊，但你可以選擇像這些大塊一點的，多點人去吃，如果家裡只有兩個人，這些小塊的就可以了，你可以用玻璃盤，或者我今天就想用這個長盤，我也見過有些人用薄餅的圓盤也可以，我們就可以試一下怎樣擺盤，做芝士盤我們都有幾種東西需要留意，當然你要買一些你喜歡吃的芝士。</p></a>
+				<a href="#00:18:46.66" id="00:18:46.66" class="lt" onclick="jumptoTime(1126, this.id)"><p>由淡味開始，這種就好像白微芝士，它的皮是白色的，切開後質地就像牛油，其實可以吃的，如果喜歡的話可以把表面的皮切掉，在上面切掉，放在焗盤上，上面放一些乾果，放進焗爐焗熟，也可以的，我就買了一個，多數芝士你也是，選一種軟身的，像這些牛油質地的，一種芝士，中間可以選一些硬身的，或者重味一點的，像這些黃色的。</p></a>
+				<a href="#00:19:41.66" id="00:19:41.66" class="lt" onclick="jumptoTime(1181, this.id)"><p>那些車打芝士，也可以中間，然後我這裡又買了另一種，就是因為很多時候，做這個芝士盤，未必全部都是芝士，因為全部都是很膩的，所以多數會有不同的芝士，配不同的乾果，和一些風乾的肉，加上餅乾，做一個所謂的芝士盤，不只是芝士，其實有很多不同的東西，我這個是軟身的，也是軟身的，我選了一種黑椒味，方便大家塗在餅乾上。</p></a>
+				<a href="#00:20:30.66" id="00:20:30.66" class="lt" onclick="jumptoTime(1230, this.id)"><p>可以這樣打開，不要浪費底部，打開後揭開，這樣就可以了，不用特意拿盤子裝起來，我今天選了兩個白芝士，我自己本身會選，硬身的芝士和鹹的芝士，如果喜歡羊奶芝士，也可以選擇，我自己就不太喜歡，怕鬆，多數用途是放在意粉，或者薄餅上，或者切成片，就這樣吃也很好吃，然後多數會配搭，多一個藍芝士，這個是藍芝士。</p></a>
+				<a href="#00:21:21.66" id="00:21:21.66" class="lt" onclick="jumptoTime(1281, this.id)"><p>不是每個人都喜歡，怕鬆和怪味，但喜歡的話就會很喜歡，你可以再選擇不同的，譬如Gouda的芝士，或者其他不同種類的，煙燻味的芝士也可以，我現在暫時不要做這麼多種類，因為我的碟子不太大，另外，選了這些之後，可以配搭一些橄欖，我剛才去超級市場買了一些橄欖，可以放在碗裡，全部放在一起，還有不同的顏色。</p></a>
+				<a href="#00:22:1.66" id="00:22:1.66" class="lt" onclick="jumptoTime(1321, this.id)"><p>讓芝士盤有更多顏色，更漂亮，另外除了這些之外，還有一些Crackers可以選擇，我今天除了做芝士條之外，也買了一些Crackers，可以放進去，你可以選擇不同味道的，又可以軟硬的，各種都不重要，我都可以放一些進去，我稍後會開盤，或者喜歡的話，可以選擇類似這些麵包條，可以，亦都可以的。</p></a>
+				<a href="#00:22:39.66" id="00:22:39.66" class="lt" onclick="jumptoTime(1359, this.id)"><p>介紹了這些之後，我就可以介紹其他了，除了這些之後，就可以配水果的，我自己就選擇了用提子，你可以選擇不同的水果，但是我想說，因為這個芝士盤，全部都是乾的，所以如果你想選水果，都不要選擇很濕的水果，還有如果譬如，我建議如果在家裡吃，可能都可以配蘋果或者啤梨，但是麻煩在於，因為它們會變色，所以你就要加點檸檬汁。</p></a>
+				<a href="#00:23:16.66" id="00:23:16.66" class="lt" onclick="jumptoTime(1396, this.id)"><p>令它不會變色，所以就麻煩一點，帶出去給別人的話，帶出去開派對，我就覺得提子就最好了，另外你剛說，我今天預備的是小熊梅，如果你家裡有杏脯，用杏脯和小熊梅都可以配搭，接下來除了芝士之外，其實很多時候，芝士平盤有時候都會配一些凍肉的平盤，放在一起吃，基本上最主要的，多數都要選擇，好像巴馬火腿。</p></a>
+				<a href="#00:23:53.66" id="00:23:53.66" class="lt" onclick="jumptoTime(1433, this.id)"><p>這一種是意大利的，你可以買一些，另外就是沙拉，沙拉我自己怕它會肥，因為它有一粒粒小小的肥肉在裡面，你又可以買一些，另外還有很多不同種類的凍肉，你又可以選擇一些種類，這些全部都可以就這樣吃，所以就不用怕，不用怕是不是生的，全部都可以就這樣吃，開始我們可以選擇位置來放，把它放好就可以了，是不是很簡單。</p></a>
+				<a href="#00:24:37.66" id="00:24:37.66" class="lt" onclick="jumptoTime(1477, this.id)"><p>當然你自己看看哪些位置會好看，讓它的顏色好看一點，自己就放進去，不想弄斜的話，可以在不同的位置加一些芝士，這樣看上去就方便一點，不會弄斜，然後這個白色的芝士可以放在這裡，這個可以放在這裡，提子可以放在旁邊，令它更漂亮，然後我們可以將其他點的食物放在一起，例如這些點的食物，例如這個芝士是用來點的。</p></a>
+				<a href="#00:26:5.35" id="00:26:5.35" class="lt" onclick="jumptoTime(1565, this.id)"><p>我會將這些點的食物放在一起，另外就是這個藍芝士，嘩 好勁呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:33.16" id="00:26:33.16" class="lt" onclick="jumptoTime(1593, this.id)"><p>好勁嘅blue cheese味，咁我都可以呢，擺埋佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:26:41.16" id="00:26:41.16" class="lt" onclick="jumptoTime(1601, this.id)"><p>咁樣拔左佢嗰啲，咁我哋可以呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:26:52.49" id="00:26:52.49" class="lt" onclick="jumptoTime(1612, this.id)"><p>facets</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:27:5.63" id="00:27:5.63" class="lt" onclick="jumptoTime(1625, this.id)"><p>Sorry，haya，Host cließ</p></a>
+				<a href="#00:26:59.61" id="00:26:59.61" class="lt" onclick="jumptoTime(1619, this.id)"><p>zuge，comeback，những</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:59.79" id="00:26:59.79" class="lt" onclick="jumptoTime(1619, this.id)"><p>ノ，selling，toys</p></a>
+				<a href="#00:26:55.87" id="00:26:55.87" class="lt" onclick="jumptoTime(1615, this.id)"><p>Shaw，concentrations</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:26:52.41" id="00:26:52.41" class="lt" onclick="jumptoTime(1612, this.id)"><p>developer，smash</p></a>
+				<a href="#00:27:6.97" id="00:27:6.97" class="lt" onclick="jumptoTime(1626, this.id)"><p>��，piej，네요，在，Thompson，ilà</p></a>
+				<a href="#00:27:2.91" id="00:27:2.91" class="lt" onclick="jumptoTime(1622, this.id)"><p>質 몸，communauté，ocr raid，Protest illustrate，35</p></a>
+				<a href="#00:26:58.93" id="00:26:58.93" class="lt" onclick="jumptoTime(1618, this.id)"><p>Awakgn，lav Majesty，htt justified，analogy，yet，冷凍肉可以在旁邊加進去</p></a>
+				<a href="#00:27:40.76" id="00:27:40.76" class="lt" onclick="jumptoTime(1660, this.id)"><p>字幕by索兰娅✿，平時在家吃這個薯條，除了可以直接吃，很多時候都會有人包著一些瓜，即是蝦蜜瓜那些來吃，這樣都很好吃，因為它鹹，所以它配搭一些甜的東西，這樣就會很好吃，可以不同的慢慢地放，這樣它可以好看一點</p></a>
+				<a href="#00:28:39.90" id="00:28:39.90" class="lt" onclick="jumptoTime(1719, this.id)"><p>再放一種肉，再放一種肉，再放一種肉，тебя，ará，vs，skies，數 moved，germs，rust，GERQUE，혼 мод，роб，Brill� TV，omics，두 Under，infrastjo，werde，oooo，하게，pinch，zijn，acknowledhabry，ISSA。</p></a>
+				<a href="#00:29:30.31" id="00:29:30.31" class="lt" onclick="jumptoTime(1770, this.id)"><p>MICH Brussels，不，cuidado，공 velocidad，一條條的，我們在這些位置放著，這樣就好看一點了，甚至乎我們剛才做的芝士條，我們都可以放在旁邊，如果擰緊一點，它就會幼一點，擰鬆一點，它就會粗一點，它現在很脆，也可以做短一點，隨你喜歡，看看有什麼位置我放在這裡，它會好看一點，這樣就完成了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:30:17.31" id="00:30:17.31" class="lt" onclick="jumptoTime(1817, this.id)"><p>我們還欠什麼呢?</p></a>
+				<a href="#00:30:19.31" id="00:30:19.31" class="lt" onclick="jumptoTime(1819, this.id)"><p>有些芝士刀或是末刀，都可以放在上面，這個芝士刀，這個芝士刀最適合這種芝士，你可以在上面刨，它就會出一塊塊出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:30:46.31" id="00:30:46.31" class="lt" onclick="jumptoTime(1846, this.id)"><p>嗯!好吃!，這樣就差不多了，每一個芝士盤都可以用自己的方法，做好它，我呢，就簡單地用這個方法，去做，你可以用你們自己的想像力，做你們喜歡的芝士平盤，我再展示給大家看，OK!好!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:31:18.31" id="00:31:18.31" class="lt" onclick="jumptoTime(1878, this.id)"><p>我今天就這樣了，希望你們聖誕節可以開開心心地去招呼朋友，我們下個星期再見吧!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:31:30.31" id="00:31:30.31" class="lt" onclick="jumptoTime(1890, this.id)"><p>Bye Bye!</p></a>
+</div>
+	</body>
+</html>

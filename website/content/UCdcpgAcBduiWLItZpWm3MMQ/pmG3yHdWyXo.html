@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>感恩節南瓜鹹批/派  - Savory Pumpkin Pie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pmG3yHdWyXo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>感恩節南瓜鹹批/派  - Savory Pumpkin Pie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.09" id="00:00:4.09" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello各位朋友，你們好!很久不見了!</p></a>
+				<a href="#00:00:8.09" id="00:00:8.09" class="lt" onclick="jumptoTime(8, this.id)"><p>前陣子我受傷了，身體不方便蹲下來拍片，所以停了一個月。</p></a>
+				<a href="#00:00:16.09" id="00:00:16.09" class="lt" onclick="jumptoTime(16, this.id)"><p>現在重新出發，重新拍片，希望你們繼續支持我吧!</p></a>
+				<a href="#00:00:22.09" id="00:00:22.09" class="lt" onclick="jumptoTime(22, this.id)"><p>一個月沒有拍片了，中間錯過了兩個節日，就是10月2日星期一的感恩節和萬聖節。</p></a>
+				<a href="#00:00:36.09" id="00:00:36.09" class="lt" onclick="jumptoTime(36, this.id)"><p>這兩個節日，其實我心目中有很多不同的想法想拍片，但因為拍不到，自己不舒服，唯有趁接下來美國11月份有感恩節，所以我希望做一個感恩節食譜。</p></a>
+				<a href="#00:01:0.09" id="00:01:0.09" class="lt" onclick="jumptoTime(60, this.id)"><p>今天和大家做的是南瓜批。</p></a>
+				<a href="#00:01:4.09" id="00:01:4.09" class="lt" onclick="jumptoTime(64, this.id)"><p>很多時候感恩節，在美國的感恩節，或者是你想起感恩節，你會想起南瓜批，都是甜的。</p></a>
+				<a href="#00:01:14.09" id="00:01:14.09" class="lt" onclick="jumptoTime(74, this.id)"><p>今天我想做一個鹹的，和大家一起做。</p></a>
+				<a href="#00:01:19.09" id="00:01:19.09" class="lt" onclick="jumptoTime(79, this.id)"><p>不如我先介紹一下材料吧!</p></a>
+				<a href="#00:01:25.34" id="00:01:25.34" class="lt" onclick="jumptoTime(85, this.id)"><p>接下來處理這個派皮，這個派皮是在市售的，即是在超級市場買就可以了，如果你有時間的話，當然可以自己做派皮，我遲些有機會的話，就可以和大家做派皮，現在我方便的話，就自己買一個，焗爐已經預熱好，預熱好焗爐之後，我現在就在這個派皮上，就放這些洞洞進去，不用怕，放了之後，就令到它不會脹起，即是發起了。</p></a>
+				<a href="#00:02:5.34" id="00:02:5.34" class="lt" onclick="jumptoTime(125, this.id)"><p>一焗的時候就焗起了，所以我就放一些洞洞進去，焗起了，放好之後，我們就放進去一個400度的焗爐，華氏400度的焗爐，攝氏200度的焗爐，焗它10分鐘就可以了，接下來我們就處理南瓜，南瓜是很硬的，我們可以怎樣呢，就是用菜刀劈它，是這樣的，這樣很難劈，怎樣劈呢，你可以用這個位置去剁它，剁了那個位置之後。</p></a>
+				<a href="#00:02:52.34" id="00:02:52.34" class="lt" onclick="jumptoTime(172, this.id)"><p>進去之後，你就可以慢慢，慢慢在這個位置塞進去，因為這個位置可以借力，這樣就可以切下去了，不需要真的要撞它，慢慢用刀劈它，這樣就可以切到南瓜了，不需要用力去劈，只需要由菜刀的位置開始壓下去，然後慢慢就力就可以了，然後我們可以把籽挖掉，然後慢慢切，切成粒狀，切好後，切出來的步驟就會很簡單，因為我要切成粒狀，所以我先切好，再去皮再切粒狀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:27.50" id="00:04:27.50" class="lt" onclick="jumptoTime(267, this.id)"><p>切成粒狀，切好南瓜後就可以切意大利青瓜或脆肉瓜，我大約用了半個南瓜，大約400克，然後就可以切意大利瓜，如果想要切粒的話，可以這樣切，然後就可以切成我所需要的形狀，然後就可以切紅椒，可以這樣切，或者直接切，我只需要半個南瓜，這樣做的顏色就會比較豐富，這把刀不利，切的時候要小心一點，不利的話切的時候才不會太危險，你們自己小心一點選擇吧。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:21.67" id="00:06:21.67" class="lt" onclick="jumptoTime(381, this.id)"><p>我這把刀不太利，然後就可以將它切成小塊，接著就處理一些提升香味的材料，我這裏有洋蔥、乾蔥頭、蒜頭和白梨香，其實不一定要加很多蒜頭，我當然不是整個放進去，我只會放兩至三粒，洋蔥可以整個放進去，乾蔥也可以，白梨香可以加兩條，但不是整條放進去，這是新鮮的白梨香，要用的時候就將它折斷，繼續將白梨香折斷，不要掉下的枝，只要很小的葉子。</p></a>
+				<a href="#00:08:21.82" id="00:08:21.82" class="lt" onclick="jumptoTime(501, this.id)"><p>逆著方向，這樣塗上去，自然整條就會出來了，如果沒有的話，你可以不塗，甚至乎如果只有乾的，可以嗎?</p></a>
+				<a href="#00:08:41.02" id="00:08:41.02" class="lt" onclick="jumptoTime(521, this.id)"><p>也可以的，你塗乾的，都可以的，其實不用塗太多，除非你可以接受到那些味道，有些人怕太濃味的話，其實不用塗太多，像我這樣塗兩條，其實已經很足夠了，調味真的因人而異，你可以調一個你自己喜歡的味道就可以了，其他的我不用展示給你們看了，你們都知道的，就這樣切掉，我繼續在這裡切，接下來我們來處理切好的薯條和南瓜。</p></a>
+				<a href="#00:09:25.22" id="00:09:25.22" class="lt" onclick="jumptoTime(565, this.id)"><p>我們要怎樣做呢?</p></a>
+				<a href="#00:09:26.62" id="00:09:26.62" class="lt" onclick="jumptoTime(566, this.id)"><p>首先我們要把它們焗熟，焗到它很軟很軟，再放進焗爐再焗，但是你看一下，南瓜比較硬，水分也沒有那麼多，薯條是比較軟的，熟了之後水分會比較多，所以我會先焗這個，焗到半小時後，我就再放薯條進去，怎樣做呢?</p></a>
+				<a href="#00:09:55.62" id="00:09:55.62" class="lt" onclick="jumptoTime(595, this.id)"><p>首先我們每一個都放點油進去，讓它們可以浸到油分，然後我們就可以把它們拌勻，讓每一粒南瓜和薯條都能夠搓到油分，薯條也是一樣，搓一下，讓它們都有油分，接下來我們就可以調味了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:40.82" id="00:10:40.82" class="lt" onclick="jumptoTime(640, this.id)"><p>鹽，冰糖，胡椒</p></a>
+				<a href="#00:11:5.72" id="00:11:5.72" class="lt" onclick="jumptoTime(665, this.id)"><p>然後也拌勻，預熱焗爐，你可以用400度或375度，放在焗盤上，將南瓜攤平，讓它受熱均勻，至少要焗40分鐘，所以我會放進去，焗至一半後再放入薯片，在焗南瓜的時候，我會在這邊開個鍋，炒洋蔥，我想讓洋蔥焦糖化，香一點才放進去，一起焗南瓜批，現在我用的是生鐵鍋，我把油塗在上面，然後就可以將洋蔥，薑、薑、蔥全部放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:23.72" id="00:12:23.72" class="lt" onclick="jumptoTime(743, this.id)"><p>然後慢慢炒，這個動作需要耐性，用小火慢慢炒，炒到差不多的時候，我會放蒜蓉，因為我不想蒜蓉和南瓜一起焗，因為焗太久會焦，蒜蓉很容易焦，所以我炒到差不多的時候，我就放蒜頭，炒到這裡看起來沒有那麼金黃，我自己在鏡頭後看，已經金黃或透明，然後就放蒜頭進去慢慢炒，放完這個薯片之後，還有一樣東西。</p></a>
+				<a href="#00:13:22.72" id="00:13:22.72" class="lt" onclick="jumptoTime(802, this.id)"><p>紅椒放在一起，還有這個要拆開，拿去烤，現在把所有材料放在一起，烤箱要預熱350-375度，隨意要多少，因為所有材料都已經熟透，除了雞蛋和牛奶和香料之外，所有材料都熟透了，可以把所有材料放在一起烤到凝固就可以了，可以看到我把所有材料放在一起了，然後可以把洋蔥和其他材料放進去，可以把所有材料放在一起。</p></a>
+				<a href="#00:14:20.22" id="00:14:20.22" class="lt" onclick="jumptoTime(860, this.id)"><p>我剛才太快了，把所有材料放進去，還用力一點把洋蔥和香料放進去，大家不要像我那麼粗魯，把所有材料放進去就很難吃了，拌勻後可以看看顏色是否很漂亮，然後把雞蛋和牛奶放在一起，然後把所有材料拌勻，看下要放多少，因為我這裏的材料其實很多，你見到這兩個盤子都差不多滿了，現在我們打好之後，我都放少許鹽在雞蛋裏。</p></a>
+				<a href="#00:15:44.31" id="00:15:44.31" class="lt" onclick="jumptoTime(944, this.id)"><p>然後把百里香放進去，拌勻，然後把蛋漿慢慢倒進去，把蛋漿和蛋餅黏在一起，可以再加多一點芝士，然後把芝士鋪在表面，這樣鋪勻，多與少隨個人喜好，可以再放多一點，我覺得這樣已經很好，焗大約25分鐘，這樣就可以了，焗好了，感恩節的南瓜鹹批已經做好了，芝士在表面金黃色，很開心，吃的時候可以配湯，用剩下的南瓜來打湯也可以。</p></a>
+				<a href="#00:17:39.31" id="00:17:39.31" class="lt" onclick="jumptoTime(1059, this.id)"><p>配沙拉，可以吃成一個沒有肉的簡單晚餐，今天介紹到這裡，第一條影片做得不好請包涵，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>
