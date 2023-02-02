@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>又做旅行青蛙Focaccia - 意式麵包</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Uul2eFbeOXQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>又做旅行青蛙Focaccia - 意式麵包</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.15" id="00:00:4.15" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好，今天我和大家一起做Focaccia，是一個意大利式麵包，其實在歐洲或北美洲，都是一個很平常的快速麵包，因為不用發酵很久就可以做到，非常方便快捷，今天我就想用這些材料做多少個味道，一兩隻或三隻都可以，希望可以做到，另外一個原因我要做這個，因為上星期我做了旅行青蛙的餅。</p></a>
+				<a href="#00:00:53.15" id="00:00:53.15" class="lt" onclick="jumptoTime(53, this.id)"><p>然後很多網友發了訊息，說這個餅不是艾草餅，我給你們看看這個餅，其實是Focaccia，我聽到這個就想，就用Focaccia這個題目再做一次，不如我們開始，我先介紹材料，我這個麵粉有500克，鹽 需要鹽 麵粉 橄欖油 玫瑰花 橄欖，我一直以為自己家裡有玫瑰花，但原來我家裡只有白梨香，但其實都可以做。</p></a>
+				<a href="#00:01:46.15" id="00:01:46.15" class="lt" onclick="jumptoTime(106, this.id)"><p>玫瑰花我有乾的，我想乾的都可以做到，當然新鮮的會好吃很多，如果你們可以買到新鮮的，我都建議你們用新鮮的做，其他食材我自己加上去，你可以有番茄，如果有乾的就更加好，會好吃一點，我還有洋蔥，當然要發起它 麵包，我們就要有乳酪，有酵母粉，一些暖水，還有一些芝士粉，第一樣東西我們先開始做，首先我們這裡有500克。</p></a>
+				<a href="#00:02:29.15" id="00:02:29.15" class="lt" onclick="jumptoTime(149, this.id)"><p>這個是高筋麵粉，它的蛋白質含量比我們做蛋糕或中筋麵粉高，它容易起筋性，做麵包的時候質地更好，然後我這裡有一個量杯的暖水，我將15克或1湯匙的酵母粉放進去，然後加入橄欖油，橄欖油大約2湯匙，這裏是一樣的，喜歡的話，酵母粉可以放在麵粉上，然後加入鹽，大約1茶匙的鹽，稍後我會再加一點鹽，這個時候可以在麵團裏加味。</p></a>
+				<a href="#00:03:57.12" id="00:03:57.12" class="lt" onclick="jumptoTime(237, this.id)"><p>例如我會加一點黑椒，我這裏有些乾玫瑰，我會把玫瑰放多一點，我會把它壓碎一點，讓它容易入味，因為它會一條條粗條的，一壓開它，就會有很香的玫瑰味，然後我可以把它放進去，所有麵團都會有玫瑰的味道，然後我們可以攪拌它，攪拌好後，就可以把水和油倒進去，全部倒進去，份量基本上差不多，我們先把所有麵團放進去。</p></a>
+				<a href="#00:05:18.20" id="00:05:18.20" class="lt" onclick="jumptoTime(318, this.id)"><p>然後慢慢攪拌均勻，用手攪拌是最方便的，如果不想用手的話，可以用攪拌器來攪拌，但這個其實叫快速麵包，不用太多工序，用手就可以了，麵團開始形成一團，我差不多攪拌至一團就收手，不要加水，水的份量很難預計，怎麼辦呢?</p></a>
+				<a href="#00:06:2.20" id="00:06:2.20" class="lt" onclick="jumptoTime(362, this.id)"><p>我這裏有500克麵粉，我加了一杯水，之後再加半杯，但我沒有全部加進去，我逐量逐量加進去，其實只加了四分之一杯水，大約不要加多於一杯半水，自己可以控制到，大約黏著一團就可以收手，拿出來就去搓，在工作桌上，可以直接在桌上或像我這樣放一塊墊，放少許麵粉，然後就可以搓，怎樣搓呢?就是一塊麵粉向著自己，向前推，再轉，再推，再摺起來，慢慢推，直到變成一塊很滑很漂亮的麵團。</p></a>
+				<a href="#00:07:20.20" id="00:07:20.20" class="lt" onclick="jumptoTime(440, this.id)"><p>大概最少要推五分鐘，將麵團搓了五至七分鐘，搓到圓滾滾的時候，就可以將它放少許橄欖油，免得黏著，將少許橄欖油在表面，搓一搓，用保鮮紙蓋住，讓它發酵，然後我們可以準備其他材料，例如番茄，可以將它切開一半，如果喜歡的話，可以買大番茄，但我喜歡小番茄，因為它切開一半，中間會很漂亮，平時我做沙律，我都喜歡這樣做，看上去會很漂亮，效果會很好。</p></a>
+				<a href="#00:08:30.15" id="00:08:30.15" class="lt" onclick="jumptoTime(510, this.id)"><p>我已經將橄欖取出，如果喜歡的話，可以不用罐頭，用現成的也可以，另外，有些百里香，沒有玫瑰花也可以用百里香，百里香要怎樣處理呢?首先要洗乾淨，然後用水沖洗，然後把洋蔥切粒，切洋蔥，洋蔥切粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:15.20" id="00:10:15.20" class="lt" onclick="jumptoTime(615, this.id)"><p>洋蔥切粒，全部切薄片 然後就會一條條的出來，好 預備好東西之後 我們就炒洋蔥了，好了 然後我現在就開火，不用太大火 加少許油進去，接著我先炒洋蔥，其中一種味道就是洋蔥，你們不喜歡的話完全可以不做這個步驟，直接等麵團OK就放番茄、橄欖都可以，接著就可以放洋蔥了，慢慢炒至焦糖化，就可以放入麵團。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:31.19" id="00:11:31.19" class="lt" onclick="jumptoTime(691, this.id)"><p>我這個是不鏽鋼鍋，可以看到它滿面風霜，很好用的，很厚底的不鏽鋼鍋，炒到差不多的時候，我會灑一點點酒進去，但不做這個方法也可以的，加少少白酒會更香，你喜歡的話可以加什麼酒，我剛剛加了清酒，也可以，令到洋蔥會更香，有香味出來了，炒到它，其實你可以再炒軟一點，但我一會兒都要焗的，都要用高溫焗的。</p></a>
+				<a href="#00:12:34.46" id="00:12:34.46" class="lt" onclick="jumptoTime(754, this.id)"><p>所以我炒到它軟身變了少少金黃色，我就ok了，你喜歡的話，我想再軟身一點，再金黃色一點，再焦糖化一點都可以，我亦都見到有人，都可以有些撇步，即是快捷一點的方法，就是加少少糖，去炒，令到它更加快焦糖化，但我沒有做，但你如果喜歡的話，都可以試下，經過一個小時後，它大了一倍，很大個的時候，現在就可以拿出來。</p></a>
+				<a href="#00:13:13.66" id="00:13:13.66" class="lt" onclick="jumptoTime(793, this.id)"><p>它很軟熟，拿起，捏一捏，然後我們可以整，可以用刀切開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:23.66" id="00:13:23.66" class="lt" onclick="jumptoTime(803, this.id)"><p>三塊或者，看著，這樣，三塊，一塊</p></a>
+				<a href="#00:13:41.66" id="00:13:41.66" class="lt" onclick="jumptoTime(821, this.id)"><p>兩塊三塊，你喜歡的話，整塊拿一個厚盤就可以，放之前，我們這裡有個底，你當是一個碟，我現在用焗盤，在底那裡，灑些芝士粉上去，這樣可以令到底，又脆又軟，是不是，灑些芝士粉，在底那裡，然後就橄欖油，橄欖油亦都必須，因為食譜需要大量的油，就可以，灑些油上去，在底那裡，這個方法是我做的方法，不是一個正宗的方法，如果想找正宗的方法，你上網上也有很多。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:45.48" id="00:14:45.48" class="lt" onclick="jumptoTime(885, this.id)"><p>然後我們可以將麵團放上去，找一個地方，如果是圓形就像圓形那樣，圓形的，很多時候你會看到外面有很多手指洞，現在我們也可以將它戳幾個手指洞給它，麵的時候可以再放其他的，我現在可以放芫茜，因為這個是意大利芫茜，之前的芫茜我用來做醃料，現在我用它，不要浪費，在表面放橄欖油，鋪勻它，在表面。</p></a>
+				<a href="#00:15:50.48" id="00:15:50.48" class="lt" onclick="jumptoTime(950, this.id)"><p>好，做好一個了，另外一個，你可以是圓形，可以是方形，隨你喜歡，另外兩個可以是方形，插小洞，看不看得到，插小洞進去，然後我可以將我喜歡吃的洋蔥放進去，變成另一種味道，將洋蔥放滿在表面，然後也是，攤開它，變成這個小洞，然後我們可以放橄欖，番茄，為什麼要戳手指的洞呢?</p></a>
+				<a href="#00:17:23.80" id="00:17:23.80" class="lt" onclick="jumptoTime(1043, this.id)"><p>當然一定要戳，然後再加橄欖油，這樣就會令麵團和油更好味，現在最好放置15分鐘，現在要用焗爐，400度或450度，25-30分鐘，現在先放一放，拿出來給大家看看，很熱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:43.61" id="00:18:43.61" class="lt" onclick="jumptoTime(1123, this.id)"><p>好，跟住就，比你地睇下啦，呢一個呢，就係我攞去，當作旅行青蛙嗰個，比我嗰隻蛙子食嘅，帶去旅行用嘅，呢一個呢，哎呀，因為我窄得滯，我用個咁細嘅盤啦，所以呢佢就有少少扭曲咗，咁樣啦，呢個都好靚呀係咪呀，咁另外最後嗰個呢，就係洋蔥啦，係時候，試食啦，咁我切一啲，好熱呀，出嚟比大家睇下佢個麵包個樣係點，咁你鍾意呢可以多餡啲都得㗎。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:43.61" id="00:19:43.61" class="lt" onclick="jumptoTime(1183, this.id)"><p>咁依家呢佢呢就係，外面脆啦，裏面呢就軟啦，嘩好脆呀個底都，睇下啦，中間呢係軟淋淋嘅，外面呢同埋個底呢都係脆嘅，你睇下，你睇下，你睇下佢，嗯好脆呀，但外面是軟的，很好吃，今天我吃了三個，這個，也是給我的旅行青蛙，好熱，這個就是喜歡吃的，洋蔥味，還有，這個就是，橄欖和番茄，裡面底部也有玫瑰花，希望你們也可以回家試試。</p></a>
+				<a href="#00:20:54.95" id="00:20:54.95" class="lt" onclick="jumptoTime(1254, this.id)"><p>然後可以自己創作自己喜歡的味道，做下去，跟著分享給我也可以，希望你們喜歡，下次再見。</p></a>
+</div>
+	</body>
+</html>

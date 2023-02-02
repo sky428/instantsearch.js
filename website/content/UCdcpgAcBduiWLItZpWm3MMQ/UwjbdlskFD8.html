@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做日式醬油丸子 - Mitarashi Dango</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UwjbdlskFD8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做日式醬油丸子 - Mitarashi Dango</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.35" id="00:00:4.35" class="lt" onclick="jumptoTime(4, this.id)"><p>各位朋友大家好，我們又見面了!</p></a>
+				<a href="#00:00:9.35" id="00:00:9.35" class="lt" onclick="jumptoTime(9, this.id)"><p>在中秋的時分，我收到課金點餸，就是做月見團子，是用來供奉月亮的，在賞月的時候吃的食物，但是因為受傷的關係，所以沒辦法完成，但我希望在今年之內可以完成所有課金點餸的菜式。</p></a>
+				<a href="#00:00:41.35" id="00:00:41.35" class="lt" onclick="jumptoTime(41, this.id)"><p>我想來想去，不如我把月見團子，其實它延伸到很多不同的食物，其中一個就是御手洗團子，不如我給你看看它的樣子吧!</p></a>
+				<a href="#00:00:56.35" id="00:00:56.35" class="lt" onclick="jumptoTime(56, this.id)"><p>如果在網上看到，你應該會找到御手洗團子的樣子，它的味道應該是甜甜鹹鹹的，因為它是用醬油和糖來煮的，底部的丸子也是月見團子，其實是同一樣的東西，只是用不同的方法去呈現，我們先看一下材料吧!</p></a>
+				<a href="#00:01:30.35" id="00:01:30.35" class="lt" onclick="jumptoTime(90, this.id)"><p>前面可以看到材料真的很簡單，我首先要介紹一件事，我們今天會用白玉粉來做，但其實如果是月見團子，傳統的會用上身粉，上身粉和白玉粉有什麼分別呢?</p></a>
+				<a href="#00:01:55.35" id="00:01:55.35" class="lt" onclick="jumptoTime(115, this.id)"><p>上身粉是用粳米做的，而白玉粉是用糯米做的，或者是團子粉，有很多不同的，現代世代，很多時候，未必容易找到上身粉，很多時候會用白玉粉，糯米粉，或者團子粉來做甜品。</p></a>
+				<a href="#00:02:18.35" id="00:02:18.35" class="lt" onclick="jumptoTime(138, this.id)"><p>我們先介紹材料吧!</p></a>
+				<a href="#00:02:26.64" id="00:02:26.64" class="lt" onclick="jumptoTime(146, this.id)"><p>材料有白玉粉150克，水140ml，但我不一定需要用完，要視乎當天的天氣和家中的濕度，粉的吸收程度，可能要多一點或少一點，然後是醬汁，醬油1湯匙，味醂1湯匙，黃糖2湯匙，然後是鷹粟粉1湯匙，和水幾湯匙，調和一下，糖1湯匙，待會放入去和白玉粉一起攪拌，材料是不是很簡單呢?</p></a>
+				<a href="#00:03:24.92" id="00:03:24.92" class="lt" onclick="jumptoTime(204, this.id)"><p>方法也是很簡單的，我們不如開始做吧，我們開始吧，首先把白玉粉倒出來，加少許糖，然後可以逐少加水，先加少許水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:4.14" id="00:04:4.14" class="lt" onclick="jumptoTime(244, this.id)"><p>慢慢搓揉，粉末會一粒粒的，但很容易溶解，先全部加進去，不夠再加，然後慢慢搓揉，似乎我這邊比較乾燥，所以這邊的水不夠，我就要繼續加水，慢慢加，直到粉末完全黏合，白玉粉的操作跟平常買的水磨糯米粉的操作很相似，都是加水搓揉，讓它全部融合，變成一團，搓揉至一團後，還未完結，最好繼續搓揉，搓到整個黏合後，還要很柔軟，搓揉至柔軟程度，像是觸碰自己的耳珠，這樣搓揉，這個柔軟程度就是我們需要的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:59.80" id="00:05:59.80" class="lt" onclick="jumptoTime(359, this.id)"><p>所以水份的調整要看自己平常做湯圓的方法，慢慢去看，都是經驗，很多時候食譜寫到跟足一模一樣的食譜，你可能會問為什麼我跟著做，甚至我看了影片，有食譜跟著做都做不到，是因為要考慮現場環境，家裡的濕度，食材的味道有什麼不同，食材的特性，天氣，種種的東西都會影響到煮食，聽起來好像煮食很像與生俱來。</p></a>
+				<a href="#00:06:49.80" id="00:06:49.80" class="lt" onclick="jumptoTime(409, this.id)"><p>想煮食，進廚房煮，好像很簡單，但當要煮到一個好味，每次都可以做到同樣水準的食物，很大程度上都要靠經驗，我講得很好聽，但經驗又不是很多，始終我結婚後才真正進廚房，但我家裡的丈夫也喜歡煮食，所以我不是經常都可以在廚房裡，所以還是要慢慢儲存，每個都要搓成一個球狀，如果怕真的不行的話，可以搓成長條形。</p></a>
+				<a href="#00:07:46.04" id="00:07:46.04" class="lt" onclick="jumptoTime(466, this.id)"><p>然後再慢慢搓，搓成差不多的形狀，或者用一個棒慢慢搓，或者像我這樣，自己拿出來搓，但要確保不要搓到又大又小，另外一個方法，確保每個都差不多，就可以搓長，然後我把它切開一顆顆，一樣的一顆顆，然後我們就可以一直這樣做，出來的就會變成一顆顆，大小都差不多了，切好之後，然後我們就把它放在掌心上，就這樣搓。</p></a>
+				<a href="#00:08:35.00" id="00:08:35.00" class="lt" onclick="jumptoTime(515, this.id)"><p>好像平時你們做湯圓一樣，你這樣輕輕地在掌心搓，它就會變成一個圓形，煲滾後就可以煮熟，水滾後就可以將豚仔逐一放入，同時，把火調小一點，因為要煮滾水，所以要用大火，但煮的時候就不需要太大火，推一推，讓它不要黏著，然後慢慢煮，跟煮湯圓一樣，慢慢煮，煮到它再浮起來再煮一分鐘，這樣就可以了。</p></a>
+				<a href="#00:10:13.74" id="00:10:13.74" class="lt" onclick="jumptoTime(613, this.id)"><p>是不是很簡單呢?</p></a>
+				<a href="#00:10:26.59" id="00:10:26.59" class="lt" onclick="jumptoTime(626, this.id)"><p>開始浮上來，你見到嗎?</p></a>
+				<a href="#00:10:32.59" id="00:10:32.59" class="lt" onclick="jumptoTime(632, this.id)"><p>先開Pose，開始浮上來，等它浮到差不多全部浮上來，我們就開始計時，一分鐘，用白玉粉的好處是很白，你見到每個丸子都很雪白，比我們用的糯米粉還要白，所以每個都像白玉一樣漂亮，看看，我旁邊有一個冷水，我可以將丸子放進去，等到它可以凍一點，現在軟墊已經在流水，然後就可以用竹籤去固定，你可以用這種或這種。</p></a>
+				<a href="#00:12:9.08" id="00:12:9.08" class="lt" onclick="jumptoTime(729, this.id)"><p>看你家裡有那一種，那一種都沒所謂，我今天用這種，然後就可以拿起它，一個原子，然後就把它固定住，可能要用力一點，用力一點穿著它，穿4個一串，三或四個一吋都可以，移動一下，因為它很耐用，看看多白多漂亮，我用四個一吋，放好，現在開始做這個，首先將醬油和醬油加一點水，味醂，加入蔥花，黃糖，可以加砂糖。</p></a>
+				<a href="#00:14:38.43" id="00:14:38.43" class="lt" onclick="jumptoTime(878, this.id)"><p>想濃味可以加砂糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:47.67" id="00:14:47.67" class="lt" onclick="jumptoTime(887, this.id)"><p>接著就是，接著就是，加這些水進去，剩下的水就用來，對應這個，櫻粟粉，接著就煮它，煮滾它，接著待會就加這個櫻粟粉進去，這個就弄開了，現在開始煮的時候，我們就可以把生粟粉水放進去，讓它煮濃稠，不用全部放進去，要看樣子是否合適才好，煮熟後就凝固起來，顏色很漂亮，已經開始結身了，比剛才結身了很多。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:24.74" id="00:16:24.74" class="lt" onclick="jumptoTime(984, this.id)"><p>這樣就可以了，我們回來了，為什麼看到這個黑漆漆的是什麼呢?</p></a>
+				<a href="#00:16:30.74" id="00:16:30.74" class="lt" onclick="jumptoTime(990, this.id)"><p>原來這個就是一個煎鍋，這樣預手洗糰子，其中一個就是，你可以直接吃，但最好有碳爐可以燒一下，如果沒有就用平底鍋，不用放油，將它放下去，然後慢慢煎香幾面，因為他們說，燒過的煎過的糰子，可以去除壓運的能力，當然這些見仁見智，看你信不信，現在我照他們的方法，也是要照做，做出來的效果看看是怎樣，慢慢等它煎香幾面。</p></a>
+				<a href="#00:17:26.74" id="00:17:26.74" class="lt" onclick="jumptoTime(1046, this.id)"><p>如果家裡有小火爐，可以燒的，像碳燒或燒串燒的爐，那就最好了，燒了它可以燒到更香，因為煎也不是可以煎到很焦香的感覺，我先煎三四面，看你想吃的程度，其實不應該攪拌它，我先不要攪拌它，讓它慢慢煎，我已經轉了一面，它有點微黃色，我轉一轉它，看起來整個過程好像很簡單，但是加起來的手續，你也需要很多時間。</p></a>
+				<a href="#00:18:35.74" id="00:18:35.74" class="lt" onclick="jumptoTime(1115, this.id)"><p>煎到金黃色，先遮一點光，對了，它是有金黃色的，然後我就，把它放在碟子上，foreign</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:11.76" id="00:19:11.76" class="lt" onclick="jumptoTime(1151, this.id)"><p>видите，define，oufl，tles</p></a>
+				<a href="#00:19:25.62" id="00:19:25.62" class="lt" onclick="jumptoTime(1165, this.id)"><p>benchmark，investigation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:14.10" id="00:19:14.10" class="lt" onclick="jumptoTime(1154, this.id)"><p>xy，means</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:13.90" id="00:19:13.90" class="lt" onclick="jumptoTime(1153, this.id)"><p>thy，ks，campe</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:19.96" id="00:19:19.96" class="lt" onclick="jumptoTime(1159, this.id)"><p>negócio，yet，recruitment，кажд，mp</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:10.66" id="00:19:10.66" class="lt" onclick="jumptoTime(1150, this.id)"><p>au，Roll territ torture，productivity</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:22.82" id="00:19:22.82" class="lt" onclick="jumptoTime(1162, this.id)"><p>hood，��� cho，analys 있어요，personally</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:22.58" id="00:19:22.58" class="lt" onclick="jumptoTime(1162, this.id)"><p>auto，attract，vest� demasiado，Officer</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:27.00" id="00:19:27.00" class="lt" onclick="jumptoTime(1166, this.id)"><p>ategory，inging，받고，αι，g，사람，clicже，vehicles，给ilde，mint</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:18.50" id="00:19:18.50" class="lt" onclick="jumptoTime(1158, this.id)"><p>ücke，zym</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:26.98" id="00:19:26.98" class="lt" onclick="jumptoTime(1166, this.id)"><p>Orth Master，��라，mamm logistics，fireti，orig</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:11.26" id="00:19:11.26" class="lt" onclick="jumptoTime(1151, this.id)"><p>tin，mit，Driver，希望，引 ид，role，vamp vitamin，cumulative，renov terminar</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:19.40" id="00:19:19.40" class="lt" onclick="jumptoTime(1159, this.id)"><p>Stew suscri，Harbor，irl resize，folder</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:18.68" id="00:19:18.68" class="lt" onclick="jumptoTime(1158, this.id)"><p>п Hö，sell，Тем，ер 있다는</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:21.42" id="00:19:21.42" class="lt" onclick="jumptoTime(1161, this.id)"><p>IDs，في，{\ tacos，hence，auction，amente，就可以將醬汁淋上面，我這次有三串燒過的，有兩串沒有燒過的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:19.42" id="00:19:19.42" class="lt" onclick="jumptoTime(1159, this.id)"><p>armed，F nutzen，ter</p></a>
+				<a href="#00:19:22.66" id="00:19:22.66" class="lt" onclick="jumptoTime(1162, this.id)"><p>귀여 produces，educeremos</p></a>
+				<a href="#00:19:24.32" id="00:19:24.32" class="lt" onclick="jumptoTime(1164, this.id)"><p>辛苦，וא� gemeinsam，ertos，oportunidad，Sheng</p></a>
+				<a href="#00:19:22.88" id="00:19:22.88" class="lt" onclick="jumptoTime(1162, this.id)"><p>area，trump，солют help</p></a>
+				<a href="#00:19:26.48" id="00:19:26.48" class="lt" onclick="jumptoTime(1166, this.id)"><p>bringen，Anda，хотите</p></a>
+				<a href="#00:19:20.06" id="00:19:20.06" class="lt" onclick="jumptoTime(1160, this.id)"><p>Warrior，願 fridge</p></a>
+				<a href="#00:19:25.86" id="00:19:25.86" class="lt" onclick="jumptoTime(1165, this.id)"><p>removal，etes，這個醬汁很好吃的，想像一下甜豉油有多好吃，把醬汁放在丸子上，給你們看看，到現在就是我試吃的時間，我拿近一點給大家看看，這個是煎過來的，試一下</p></a>
+				<a href="#00:20:1.65" id="00:20:1.65" class="lt" onclick="jumptoTime(1201, this.id)"><p>嗯，好吃，它是煙煙韌韌，外面煎過的有點脆脆的，裡面很黏糯，最開心的是醬汁，是甜的，甜到鹹，有豉油味，有糖味，加上味醂，我自己覺得滿意，但如果想再甜一點，我看過有些食譜，用四匙糖，看你自己喜歡，我覺得，我用這個比例，我自己很喜歡，今天就這樣了，希望你們也喜歡，下次見，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旅行青蛙 (旅かえる) 艾草餅實體化 由零開始一起做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1cfy0FF90xU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>旅行青蛙 (旅かえる) 艾草餅實體化 由零開始一起做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.03" id="00:00:4.03" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello各位朋友你們好，兩個星期沒見了，我在這裡恭祝大家農曆新年新年快樂，身體健康和萬事大吉，今天我和大家做一個不一樣的食物，因為沒有吃過，是什麼呢?</p></a>
+				<a href="#00:00:24.03" id="00:00:24.03" class="lt" onclick="jumptoTime(24, this.id)"><p>就是因為我收到課金點餸，這個不一樣的食物，這個不一樣的食物就是現在在網上很紅的，手機遊戲旅行青蛙裡面其中一個食物，這裡就是它的食物名字，需要100塊葉，我自己也有玩旅行青蛙，我的青蛙叫做蛙之，今天我希望用我自己的想像，看資料，看別人是怎麼做，實體化這個食物，這個食物如果塗上去，就是一個艾草類的餅。</p></a>
+				<a href="#00:01:15.03" id="00:01:15.03" class="lt" onclick="jumptoTime(75, this.id)"><p>我上網看到很多人會做，它的樣子就是艾草餅，它的名字叫做Focaccia，Focaccia就是麵包類，但如果用艾草餅，它就不是麵包類，是甜的食物，我今天就試做，看我做的是什麼，大家可以去看看，說明艾草，我在加拿大很難找到艾草的東西，最後我找到沒有新鮮的，有些艾草的粉，如果沒有的話，好像我這裡。</p></a>
+				<a href="#00:02:5.03" id="00:02:5.03" class="lt" onclick="jumptoTime(125, this.id)"><p>我真的這麼幸運找到，如果沒有的話，我們可以用一些清汁粉，甚至乎可以買一些菠菜回來，打汁來做，我覺得應該也可以，我要介紹一下，我這個試驗性質的食物，我有什麼材料，我用一些艾草粉，有罐頭紅豆，方便，如果沒有艾草粉，可以用清汁粉，然後有糯米粉和粘米粉，上面有葉子，沒有新鮮的艾草葉，這是一種香草葉，但味道不像平時吃的芫茜。</p></a>
+				<a href="#00:03:2.79" id="00:03:2.79" class="lt" onclick="jumptoTime(182, this.id)"><p>葉子很漂亮，可以用來貼在上面，這是一個實驗性質的食物，我沒有食譜，現在試試用自己的想像去做，糯米粉和粘米粉，我用4比1的份量來做，如果我用80克的糯米粉，我會用20克粘米粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.79" id="00:03:59.79" class="lt" onclick="jumptoTime(239, this.id)"><p>我會用20克的粘米粉，攪拌好後，我將它們混合在一起，放在一邊，第二樣東西就是，這個，這個，艾草粉，聽說艾草粉，艾草本身，比較苦苦的，最好就是用一些，熱水沖一沖，才用，我現在</p></a>
+				<a href="#00:04:47.93" id="00:04:47.93" class="lt" onclick="jumptoTime(287, this.id)"><p>先打開，看一看是怎樣的，倒一些出來看看，一塊塊的，好像平時，吃草餅，的味道，聞一下，我要，自己試一下是甚麼味道，先放一點，放進嘴巴，好像茶葉的味道，但又不是很苦，我照樣放吧，這裡有五克的艾草粉，加入五克的艾草粉，攪拌均勻，如果艾草粉很苦的話，可以先用熱水浸泡，我剛才試吃的時候，又不是覺得很苦，所以我直接放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:27.13" id="00:06:27.13" class="lt" onclick="jumptoTime(387, this.id)"><p>然後就放水，水的量我自己在想，應該放麵團湯圓的量，我放進去，我這裏有一百多克，我慢慢加，試下加多少可以令到它變成團，現在慢慢攪拌，它已經變成綠色，然後將它變成怎樣呢?</p></a>
+				<a href="#00:07:21.55" id="00:07:21.55" class="lt" onclick="jumptoTime(441, this.id)"><p>我這裡加起來有40克的水，然後就拌勻，如果乾的就繼續放，打開它，搓勻它，如果乾的就繼續放，下去，我最好自己量著，我可以，確保，拍完之後，就可以方便一點，現在我已經加了60克水，不知道你們有沒有玩過旅行青蛙這個遊戲呢?</p></a>
+				<a href="#00:08:38.18" id="00:08:38.18" class="lt" onclick="jumptoTime(518, this.id)"><p>我自己本身就很喜歡玩，因為我覺得很開心，經常可以等青蛙仔回來，等牠回來看看牠送什麼手信給我，或者去了哪裡玩，我小時候去過日本一次之後就沒有去過了，當我來了加拿大之後，我沒有去過亞洲那邊，看到牠們的名信片那麼漂亮，我真的很開心，真的很想自己有機會也可以去，可能去日本對香港人或者亞洲人來說是很平常的事，一有Lorry N可能就會飛一飛去。</p></a>
+				<a href="#00:09:31.18" id="00:09:31.18" class="lt" onclick="jumptoTime(571, this.id)"><p>在於在我這邊我自己本身比較住得遠，很怕搭長途飛機的關係，很少去這些地方，牠不黏著我就繼續加水，加到黏著為止，揉至麵團和麵粉都黏合，揉至手也不黏手，搓揉至麵團狀，可以放置一旁，保鮮膜先蓋好，處理餡料，有時間可以用紅豆煮，我多數會買紅豆罐頭，麵團準備好，可以包起來，麵團拿出來，分成三份。</p></a>
+				<a href="#00:11:13.85" id="00:11:13.85" class="lt" onclick="jumptoTime(673, this.id)"><p>我大約分成三份，分成三等份，大約30克，我用一匙羹，包起來，收口後，搓圓，我再包過，麵團比較乾身，我現在再包過，很快乾，搓圓後，就像包湯圓一樣，完成了，跟住就黐埋佢，希望成功吧!現在很害怕!</p></a>
+				<a href="#00:13:2.85" id="00:13:2.85" class="lt" onclick="jumptoTime(782, this.id)"><p>再搓圓，輕手一點搓，壓扁，之前的也壓扁，雖然它沒那麼漂亮，第三個，這些我也是用保鮮紙蓋著</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:49.85" id="00:13:49.85" class="lt" onclick="jumptoTime(829, this.id)"><p>第三個也是這樣做，你看，然後我們也可以，弄一塊葉子上去，讓它黏著，我選幾塊漂亮的，這個，這個，這個，然後我拿去煎它，一會兒回來，好了，我窒山鐵鑊已經預熱了，已經燒紅了，也加了油進去，我現在看看可不可以多放一點油，我放一點油進去，放一點煙，煎它，我拿一個沒那麼漂亮的放進去先，試驗一下。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:54.85" id="00:14:54.85" class="lt" onclick="jumptoTime(894, this.id)"><p>我怕它黏底</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:8.39" id="00:15:8.39" class="lt" onclick="jumptoTime(908, this.id)"><p>힘� improved，era，Fi，India，거야，Bets，inv千，journey，Zukunft，뭐� respiratory，なんか，彠��ushpect，locally，Ö，陳 heure anten ciek，Teachse，keynote，cricket，ه jumper，propagation。</p></a>
+				<a href="#00:15:10.33" id="00:15:10.33" class="lt" onclick="jumptoTime(910, this.id)"><p>constraint，Phot implant Spain，naszym，족 Technical，fr今天 guilty，ERICсудname，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，然後慢慢煎到金黃色，綠色又怎樣金黃呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:36.48" id="00:15:36.48" class="lt" onclick="jumptoTime(936, this.id)"><p>我看看吧，現在煎高一點慢慢煎，小火一點慢慢煎，我煎的時候，偷偷地加了一點水，我不知道我會弄成什麼樣子的粥，一會兒大家看看，看到旁邊半透明，我把它反轉，希望葉子不要掉下來，好，我反轉了，看，後面也開始變金黃色了，這樣，我把這個也放進去，先焗一會兒，我用小火一點，其實裡面的紅豆是熟的，只要這個麵團變透明。</p></a>
+				<a href="#00:16:49.78" id="00:16:49.78" class="lt" onclick="jumptoTime(1009, this.id)"><p>然後煎到金黃色就可以了，我這個想法有點像煎餅，我不知道，因為其實收到過金的時候，我也覺得很驚訝，我應該怎麼做呢，因為指明點這個，我這個是最不會的，其實你做Skull我也做過，做鹹的批我也做過，這個我沒做過，也沒吃過，也不知道是什麼，希望出來不會那麼醜，然後我再反轉，葉子還在，幸好。</p></a>
+				<a href="#00:17:33.78" id="00:17:33.78" class="lt" onclick="jumptoTime(1053, this.id)"><p>現在就把它們上碟，三成好模，OK 煎，我先試吃爆了的，外面，熟透明，外面煎到金黃色，金黃色是脆的，裡面是有嚼勁的，好像糯米糍煎餅的味道，煎糯米軟餅的味道，還有草味，因為是用奶草做的，今天課金的點餸，做這個旅行青蛙奶草餅，完成了，雖然不漂亮，雖然不知適不適合，但，花了很多心思去做的，希望你們也喜歡吧。</p></a>
+				<a href="#00:19:14.01" id="00:19:14.01" class="lt" onclick="jumptoTime(1154, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

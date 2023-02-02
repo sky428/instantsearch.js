@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的早午餐 - 法蘭西多士 - My French toast brunch</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pczUBkzOVJc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>我的早午餐 - 法蘭西多士 - My French toast brunch</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.09" id="00:00:4.09" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好，今日我收到貨金點餸，想做法蘭西多士，即是要不是港式炸的，所以我們一起示範去做，西多士我們都食過很多，港式西多士是很厚的，兩個麵包夾住，可能裏面會有餡，然後會沾蛋漿，之後會炸到很香，然後再放在上面，然後再放在上面，然後再放在上面，蛋漿之後會炸到金黃色，然後再配糖漿和牛油。</p></a>
+				<a href="#00:00:36.09" id="00:00:36.09" class="lt" onclick="jumptoTime(36, this.id)"><p>然後再配糖漿和牛油，然後再配糖漿和牛油，而我今次做的這個，是法式西多士，或者是我們這邊，北美洲我們平時，可能在家裏做的西多士，很多時候西多士，你都可以當甜品或下午茶，吃的，但如果是我們北美洲的話，西多士很多時候，是早餐或午餐時吃的，如果是午餐的話，好像今天我想做一個早午餐的話，除了西多士。</p></a>
+				<a href="#00:01:8.09" id="00:01:8.09" class="lt" onclick="jumptoTime(68, this.id)"><p>這東西之外，可能會配一些，我準備了南莓和羅斯比利，另外我準備了一些早餐和午餐，我買了一些有機的培根和火箭菜，如果你想當作小食下午茶的話，可以加一些草莓，材料方面，我會介紹一下為什麼有兩種麵包，麵包最好是用隔夜麵包，在法國吃西多士，他們不會用這些方包，因為麵包的外殼很硬，用這個方法的話，麵包就會變得軟綿綿。</p></a>
+				<a href="#00:02:57.58" id="00:02:57.58" class="lt" onclick="jumptoTime(177, this.id)"><p>另外一個好處是，如果麵包比較乾，就可以吸收到其他材料，外面是金黃色，裡面是酥脆的，他們想要的就是外面脆，裡面是軟綿綿，但如果你不喜歡這個質感的話，就不要浸泡太久，首先我們要準備一張碟，最主要的材料就是牛奶和忌廉，我用了1 4 杯忌廉和半杯牛奶</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:1.98" id="00:04:1.98" class="lt" onclick="jumptoTime(241, this.id)"><p>entreg Seeing gown，crude，ändert，해서，treble，польз，Medical，näch stain，alguns，ским，famine，Week procure，�inkles，flavors，Shane，Rica，declare，ng，然後加入雞蛋，我這裏不是3隻雞蛋，而是2隻雞蛋和1隻蛋黃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:31.99" id="00:04:31.99" class="lt" onclick="jumptoTime(271, this.id)"><p>接著加入第三種材料，就是肉桂粉，如果不喜歡肉桂粉的味道，可以不加入，我加一點點，然後加少少糖，最後加少少海鹽，打勻，做西多士的步驟，加味可以不加香草，可以加自己喜歡的，例如加檸檬皮或橙皮，磨了溶後可以增加西多士的風味，這個就要自己選擇，我還欠一個材料，就是薄荷葉，yst sarobi。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:24.71" id="00:06:24.71" class="lt" onclick="jumptoTime(384, this.id)"><p>bir Meine，輕 Ramadan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.21" id="00:06:27.21" class="lt" onclick="jumptoTime(387, this.id)"><p>ход，火</p></a>
+				<a href="#00:06:30.31" id="00:06:30.31" class="lt" onclick="jumptoTime(390, this.id)"><p>Delicious錯，clarification</p></a>
+				<a href="#00:06:29.63" id="00:06:29.63" class="lt" onclick="jumptoTime(389, this.id)"><p>thigh，cial</p></a>
+				<a href="#00:06:22.19" id="00:06:22.19" class="lt" onclick="jumptoTime(382, this.id)"><p>ài，imagery</p></a>
+				<a href="#00:06:24.83" id="00:06:24.83" class="lt" onclick="jumptoTime(384, this.id)"><p>äll，Felix，ideia，بين</p></a>
+				<a href="#00:06:26.25" id="00:06:26.25" class="lt" onclick="jumptoTime(386, this.id)"><p>общ，strat</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:28.73" id="00:06:28.73" class="lt" onclick="jumptoTime(388, this.id)"><p>怖，jeder，reducing</p></a>
+				<a href="#00:06:24.71" id="00:06:24.71" class="lt" onclick="jumptoTime(384, this.id)"><p>Demokrat，21，geld，entra Schr</p></a>
+				<a href="#00:06:29.53" id="00:06:29.53" class="lt" onclick="jumptoTime(389, this.id)"><p>effort，sanctuary，accidental</p></a>
+				<a href="#00:06:27.83" id="00:06:27.83" class="lt" onclick="jumptoTime(387, this.id)"><p>abduct，hö grabs，aman，這個蛋漿的底部跟法式的蛋糕差不多，然後就可以把想要的麵包放進去，我預備了兩種，一種是有提子的麵包</p></a>
+				<a href="#00:06:53.94" id="00:06:53.94" class="lt" onclick="jumptoTime(413, this.id)"><p>一個是普通麵包，喜歡的話可以把麵包塞進去，讓它完全吸收蛋液，因為這個麵包已經放出了提子的味道，而且已經放了一晚，所以它比較硬，就可以很快地吸收蛋液，然後我們就預備了一個煎鍋，我已經開始暖了，然後我會放牛油，然後我會放牛油，牛油之後還要放普通的油，為什麼要這樣呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:53.94" id="00:07:53.94" class="lt" onclick="jumptoTime(473, this.id)"><p>因為牛油很容易燒焦，所以我們就加了熱點，熱點沒有那麼高的油，煎出來會有牛油的香味，加上普通油，令它不會燒焦，我們開中小火慢慢煎，你看看，多士吸收了蛋液，蛋液已經吸收了，開始收緊了，這樣就對了，如果是法式西多士就是這樣，就是需要它吸收到這樣，然後我們慢慢可以做了，你聽到好像有些聲音，是為什麼呢?</p></a>
+				<a href="#00:08:48.94" id="00:08:48.94" class="lt" onclick="jumptoTime(528, this.id)"><p>因為我另一邊就在煎培根，牛油溶化後， 把多士放上去，金黃色的牛油溶化後， 把多士放上去，開中小火慢慢煎，煎兩分鐘左右，煎至金黃色後就可以翻轉，現在我翻轉一個給你們看，煎至金黃色就可以了，煎好後就可以上碟，把鱼肉放入汤里</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:47.98" id="00:10:47.98" class="lt" onclick="jumptoTime(647, this.id)"><p>煮至汤沸腾，把鱼肉放入汤里，煮至汤沸腾，북한 disturbance，Ara²，zwei，將油均勻地炸，炒熟後，放入蔥</p></a>
+				<a href="#00:11:11.25" id="00:11:11.25" class="lt" onclick="jumptoTime(671, this.id)"><p>炒熟後，放入蔥，炒熟後，放入蔥，炒熟後，放入蔥，炒熟後，放入蔥，西多士已經煎好了，我們就可以上碟了!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:39.99" id="00:11:39.99" class="lt" onclick="jumptoTime(699, this.id)"><p>你喜歡哪個擺面，哪個擺底，都可以隨你喜歡，看你喜歡怎樣擺，這樣就有兩種不同的西多士了，回到這邊，我們已經做好了，然後我們就可以放好，有什麼菜陪著他做這個，這麼好吃的早午餐，我們有些菜，這些是火箭菜，然後我有些煙肉，已經做好了，백신</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:10.53" id="00:13:10.53" class="lt" onclick="jumptoTime(790, this.id)"><p>まだ，取 surroundings，Then��는，Tian，Vernon，aleg hypoc zehn，inel，siglo，yt，chopping，غ，ப</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:15.73" id="00:13:15.73" class="lt" onclick="jumptoTime(795, this.id)"><p>إن，Erfahrung，dias，vest pills，種，Roll insecurity，iance</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:13.19" id="00:13:13.19" class="lt" onclick="jumptoTime(793, this.id)"><p>revisit，position，اس，repaired</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:8.85" id="00:13:8.85" class="lt" onclick="jumptoTime(788, this.id)"><p>shifts，Penstyle，คะ，onomy，wen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:7.61" id="00:13:7.61" class="lt" onclick="jumptoTime(787, this.id)"><p>Почему，близ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:3.25" id="00:13:3.25" class="lt" onclick="jumptoTime(783, this.id)"><p>Ber vowel，última，appliances，RGB，сол</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:10.57" id="00:13:10.57" class="lt" onclick="jumptoTime(790, this.id)"><p>Möglichkeiten，JO，watershed，shin</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:17.15" id="00:13:17.15" class="lt" onclick="jumptoTime(797, this.id)"><p>PikDes Ort，Г，bus adolescents，הפác，moving，win Teachers，喜歡加什麼都可以，另外就是西多士的另一個主角，就是蜂蜜糖漿，我剛剛買了一瓶，就可以吃了，因為煎的時候已經加了牛油，所以不需要再加牛油，如果想好看一點可以加糖粉，但對我來說已經很漂亮了，今天和大家一起做的就是早午餐法式西多士。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:43.75" id="00:14:43.75" class="lt" onclick="jumptoTime(883, this.id)"><p>切開給你們看，試吃，嗯!</p></a>
+				<a href="#00:15:15.75" id="00:15:15.75" class="lt" onclick="jumptoTime(915, this.id)"><p>好吃，希望大家可以試試，除了做港式西多士之外，可以試試，做法式西多士，早午餐在家，星期六放假，做早午餐，吃完午餐，午餐也不用吃了，配一杯果汁，加一杯乳酪，已經很豐富了，下次再介紹其他東西，和你們一起做，多謝各位收看，拜拜!</p></a>
+</div>
+	</body>
+</html>

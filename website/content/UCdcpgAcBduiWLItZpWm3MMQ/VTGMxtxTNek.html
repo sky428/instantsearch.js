@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>夏日雜莓特飲 – Summer Beverages</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VTGMxtxTNek',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>夏日雜莓特飲 – Summer Beverages</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.12" id="00:00:4.12" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello， 大家好!今天我和大家一起做夏日特飲，我收到金主的課金，他想在這個時間做一些關於夏天的特飲，我們今天就一起做吧!</p></a>
+				<a href="#00:00:22.12" id="00:00:22.12" class="lt" onclick="jumptoTime(22, this.id)"><p>桌上我看到不是材料，而是一些紙，又可以看到我的memo紙，這裡是做什麼的呢?我只想介紹一下，如果你想做一些夏日特飲，最簡單的可能是開罐汽水，或者去外面買杯飲品，例如珍珠奶茶，或者果汁打果汁，但如果你想在家裏做，其實你家裏有些少材料就可以做到，基本上如果你想做飲品，其實不外乎有幾樣東西，首先是主要的材料，你可以選擇水果類，例如雜莓，蘋果，橙，莓類。</p></a>
+				<a href="#00:01:19.12" id="00:01:19.12" class="lt" onclick="jumptoTime(79, this.id)"><p>或者可以選擇香草類，例如檸檬草，薄荷，玫瑰，甚至乎可以選擇青瓜，青瓜其實是一個令人喝完後很舒服的東西，糖果方面，我們多數會選擇simple syrup，或者honey，我一會兒就會介紹如何做simple syrup，當然，做果汁的時候，我們會加檸檬，或者lime，青檸，兩種不同之處是，黃色和綠色的味道都不同，青檸有種特別的香味。</p></a>
+				<a href="#00:01:59.12" id="00:01:59.12" class="lt" onclick="jumptoTime(119, this.id)"><p>沒有那麼酸，但會有少許澀味，檸檬會比較酸，但會清新，加了這幾種東西後，我們就可以再混合自己喜歡的飲品，你可以加蘋果汁，橙汁，紅莓汁，或者再加一些薑汁汽水，雪碧，七喜，或者一些有汽的水，甚至乎你可以加綠茶，白茶，你自己喜歡的茶類都可以，還有最後一樣就是酒類，如果你想混合這些果汁類飲品後，想加一些覺得更開心的飲品，開派對的時候。</p></a>
+				<a href="#00:02:51.12" id="00:02:51.12" class="lt" onclick="jumptoTime(171, this.id)"><p>就可以加一些酒類進去，你可以加一些白酒，清酒，有汽的酒，甚至乎是伏特加都可以，今天我想做三種飲品，其中一種就是我需要的果汁，這樣就加一些berry在裏面，還有就是simple syrup，最後可能就會加一些有汽的水在裏面，這樣你自己砌的時候，你就會找到你想做的東西，先拿開。</p></a>
+				<a href="#00:03:42.41" id="00:03:42.41" class="lt" onclick="jumptoTime(222, this.id)"><p>我們首先看怎樣做simple syrup，做飲品其中一樣最主要的材料就是simple syrup，simple syrup怎樣做呢?</p></a>
+				<a href="#00:03:56.41" id="00:03:56.41" class="lt" onclick="jumptoTime(236, this.id)"><p>很簡單，首先就是一杯糖加一杯水，然後我們就將它放在爐裏，中火慢慢煮，令到糖融化就可以了，融化就可以了，不需要煮到很滾或者煮滾，不需要的，因為如果你太滾，糖會很容易結晶，所以只要將它們融化，放涼就變成simple syrup了，simple syrup 做好後就可以放涼，隨時可以放進調配的飲料中。</p></a>
+				<a href="#00:04:48.67" id="00:04:48.67" class="lt" onclick="jumptoTime(288, this.id)"><p>平時我會在家裏做一個飲料，這個飲料很簡單，首先將橙汁，我家裏沒有橙汁，所以我會用合作的橙汁，如果你喜歡的話可以用新鮮橙汁，將每類加橙汁的飲料放在冰箱裏冷藏兩小時，然後再加sparkling水或者spike，或者sevenup就已經很好喝了，這次我會做一個比我平時做的多一點，我家裏有些紅莓汁，想加進去看看會變成怎樣。</p></a>
+				<a href="#00:05:34.67" id="00:05:34.67" class="lt" onclick="jumptoTime(334, this.id)"><p>但我就不一次過冰凍，現在就可以馬上飲了，首先很簡單，將橙汁倒進冰箱，然後再加紅莓汁，你可以看顏色，看會不會變成紅色，如果你不喜歡黃色的話，可以不加紅莓汁，我大約加了四分之一杯，我的橙汁大約是200ml，加進去之後，就可以將自己喜歡的莓類放進去，我現在就加少許草莓和藍莓，然後就可以加一點點的simple zero。</p></a>
+				<a href="#00:07:1.23" id="00:07:1.23" class="lt" onclick="jumptoTime(421, this.id)"><p>我大概加兩湯匙左右，因為我一會兒都會加一點有汽的水進去，所以如果馬上喝的時候就馬上加，如果你不是馬上喝，想學我做的，就可以先把這瓶放進冰箱冷藏兩個小時，然後再加這個就更好了，當然冰的時候可以放冰，冰量多少隨你喜歡，然後就可以加有汽的水進去，拌勻就可以看到這個很美味的果汁，我現在先試味。</p></a>
+				<a href="#00:08:22.57" id="00:08:22.57" class="lt" onclick="jumptoTime(502, this.id)"><p>很好吃 酸酸甜甜的，因為紅莓汁比較酸，我這個是100%的 不是紅莓雞尾酒那種，完全沒有糖的，加上我的橙汁 其實是不甜的，所以不太甜就最好，如果是冷飲的話 冷的東西會令你喝起來沒那麼甜，所以如果室溫喝起來甜 冷的東西是沒那麼甜的，如果你試的時候 室溫喝起來甜一點，冷的時候甜度就會剛剛好。</p></a>
+				<a href="#00:09:8.57" id="00:09:8.57" class="lt" onclick="jumptoTime(548, this.id)"><p>這個就弄好了，我不需要什麼裝飾 喜歡的話就加個飲管就可以了，或者像我這樣放進冰箱再喝也可以，我們就來下一個了，接下來我們就做一個藍莓檸檬汁，平時喝的檸檬汁就是北美洲夏天的時候，如果我們去很多的節慶，它都會有賣的，其實說到最後，跟我們香港的凍檸水其實是很像的，但不同的就是用很多很多的檸檬汁，然後加很甜的糖水再加水。</p></a>
+				<a href="#00:09:55.45" id="00:09:55.45" class="lt" onclick="jumptoTime(595, this.id)"><p>令到它變成一個檸檬水，香港可能就加兩片檸檬加點糖水加點冰，它那個檸檬，我們北美洲的檸檬汁的含量就會高一點，今天我就轉一點，不如我們試一下，買了一些藍莓在這裡不要浪費，我真的就用藍莓來做這個檸檬水，首先藍莓這裡大約半杯藍莓，半杯藍莓你就可以加三分之一杯的糖，還有三分之一杯的水加進去，去做一個藍莓糖漿。</p></a>
+				<a href="#00:10:37.21" id="00:10:37.21" class="lt" onclick="jumptoTime(637, this.id)"><p>但我剛才做了一些，簡單的精華，我不想再將糖煮溶，我可以直接加這個簡單的精華，大約加半杯，我用一杯來量就容易一點，三分之一杯再加三分之一杯，其實多過半杯，我大約加這麼多，其實我都不需要加這麼多都可以，因為我不是做很多杯，甜度你自己去調，現在我就煮它，不需要特別大火，只要將它煮了，煮了藍莓的汁出來。</p></a>
+				<a href="#00:11:34.55" id="00:11:34.55" class="lt" onclick="jumptoTime(694, this.id)"><p>令到它變成藍莓的糖漿，做好了之後再攪拌下去，在這個同時我還要有東西加，我加了一些檸檬皮，令到糖漿香一點，大約半個檸檬皮就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:55.81" id="00:11:55.81" class="lt" onclick="jumptoTime(715, this.id)"><p>這個方法除了做藍莓糖漿之外，也可以用來做raspberry糖漿，或者草莓糖漿，都可以用這個方法來做，做好之後，放涼過濾，然後就可以，混合檸檬水或果汁，都可以的，開始煮滾後，藍莓開始有少少，軟軟的，開始有些少，泡泡，我們大約，用小火，大約煮，5分鐘左右，就可以了，藍莓果汁，醬汁就已經做好了，過篩。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:1.59" id="00:13:1.59" class="lt" onclick="jumptoTime(781, this.id)"><p>然後我們就做了一些藍莓糖漿出來，這些藍莓糖漿就可以拿來做飲料了，接下來我就做一些檸檬汁，大約需要三分之一杯檸檬汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:38.84" id="00:13:38.84" class="lt" onclick="jumptoTime(818, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，這裡是半杯，這裡是半杯，大約這裡一半多一點就差不多了，今天我特別準備了一些凍飲的杯，這個新買的，就是特意做這個飲料的，你們在家裡用一些長杯會比較好，這個就更簡單，所有材料都齊全，我們只需要冰塊，放多點冰塊</p></a>
+				<a href="#00:14:28.77" id="00:14:28.77" class="lt" onclick="jumptoTime(868, this.id)"><p>在杯子裡，冰塊放進冰箱，然後就把檸檬汁放進去</p></a>
+				<a href="#00:14:53.24" id="00:14:53.24" class="lt" onclick="jumptoTime(893, this.id)"><p>謝謝觀看，如果做檸檬梨，再加糖水就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:5.51" id="00:15:5.51" class="lt" onclick="jumptoTime(905, this.id)"><p>或者有些人會加漆或者雪碧。</p></a>
+				<a href="#00:15:11.51" id="00:15:11.51" class="lt" onclick="jumptoTime(911, this.id)"><p>我會加藍莓精華。</p></a>
+				<a href="#00:15:18.51" id="00:15:18.51" class="lt" onclick="jumptoTime(918, this.id)"><p>最好放涼，現在是錄影，所以放涼了。</p></a>
+				<a href="#00:15:26.51" id="00:15:26.51" class="lt" onclick="jumptoTime(926, this.id)"><p>我適量的放進去。</p></a>
+				<a href="#00:15:31.51" id="00:15:31.51" class="lt" onclick="jumptoTime(931, this.id)"><p>然後就可以將你喜歡的水放進去。</p></a>
+				<a href="#00:15:42.51" id="00:15:42.51" class="lt" onclick="jumptoTime(942, this.id)"><p>近一點就可以看到。</p></a>
+				<a href="#00:15:53.18" id="00:15:53.18" class="lt" onclick="jumptoTime(953, this.id)"><p>顏色很漂亮，然後就可以攪拌一下，裝飾的時候可以加幾粒藍莓、兩片檸檬，就可以做到一杯很美味的冰，如果想要多一點冰可以加多一點冰，第二杯藍莓檸檬水，我已經做好了，免得一買又買一袋，我先試喝，如果想要甜一點可以加多一點，我覺得自己剛剛好，有藍莓味和檸檬味的特飲，我們就下去下一個了，好 最後一個了。</p></a>
+				<a href="#00:17:8.33" id="00:17:8.33" class="lt" onclick="jumptoTime(1028, this.id)"><p>我想到這次這個系列叫做夏日雜莓特飲，因為三個飲品裡面都有莓的成分，第一個有草莓 第二個藍莓，這次這個就是Raspberry，我需要洛士啤梨或者叫薯莓，我們現在要怎麼做呢，很簡單的，這些是什麼呢，就是一些Raspberry，我把它拿走 隔了隔，因為Raspberry如果你全個放進去做，它有很多籽。</p></a>
+				<a href="#00:17:44.83" id="00:17:44.83" class="lt" onclick="jumptoTime(1064, this.id)"><p>會吃到你的口裡，你經常會覺得為什麼會一粒粒的，但當然你有一點點一粒粒是不要緊的，這次我做的是Raspberry的Mojito，我們平時喝Mojito都會喝很多，是酒來的，外面喝的是有酒的，有白的Rum酒，有青檸 砂糖和薄荷葉，這次我做的這個沒有酒的，首先我有幾粒薯莓放進去，Raspberry 薯莓也好 什麼都好放進去。</p></a>
+				<a href="#00:18:23.83" id="00:18:23.83" class="lt" onclick="jumptoTime(1103, this.id)"><p>然後我把幾塊薄荷葉放進去，然後我們就可以用這個來搗，我用了保鮮紙包著，包著那些木棒搗它，這個動作就是令Raspberry和薄荷葉混合，有一點香味就會出來了，然後我需要青檸，大約半個青檸的青檸汁，平時會加砂糖，今天就不加了，我先加了一些莓果汁，然後就加雪碧，馬上很漂亮，今天做的飲品都是偏紅色的。</p></a>
+				<a href="#00:20:9.42" id="00:20:9.42" class="lt" onclick="jumptoTime(1209, this.id)"><p>然後就可以加冰塊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:21.82" id="00:20:21.82" class="lt" onclick="jumptoTime(1221, this.id)"><p>多滴冰水，攪拌一下，如果不想加雪碧的話，可以加剛才的水或雪碧酒，放入冰箱冷藏，這杯冰飲就完成了，我又要試味了，如果喜歡薄荷味重一點，可以再切碎一點薄荷葉，再拌勻一點，這樣會更好，喜歡的話，可以加白酒，或者你喜歡的白色酒，都可以令到它更好味，今天介紹的就是這個草莓香草酒，藍莓檸檬水，藍莓檸檬汁，和這個莓果酸酸的草莓酒，今天介紹的就是這個夏日集會特飲系列完成，希望大家喜歡，如果你們也想課金點餸的話，可以課金完之後，你就可以message我，我收到message之後，我就會做你們想我和你們一起做的菜式。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:37.75" id="00:22:37.75" class="lt" onclick="jumptoTime(1357, this.id)"><p>下次再見，byebye。</p></a>
+</div>
+	</body>
+</html>
