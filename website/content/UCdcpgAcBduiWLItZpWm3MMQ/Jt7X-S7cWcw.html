@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做瑪德蓮 | Homemade Madeleine | 可愛小蛋糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Jt7X-S7cWcw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做瑪德蓮 | Homemade Madeleine | 可愛小蛋糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:10.30" id="00:00:10.30" class="lt" onclick="jumptoTime(10, this.id)"><p>今天我和大家一起做的就是一個蛋糕仔叫做Madeleine，中文叫做馬德蓮的蛋糕仔，你看到這裡有個盤，做出來就是一個貝殼形的蛋糕，頂部有個凸出來的樣子，我想大家在餅店都會見過這個蛋糕，如果沒有這個盤的話，其實用小一點的cupcake的盤也可以做，不一定要這個盤，剛好我有就可以用來做。</p></a>
+				<a href="#00:01:2.30" id="00:01:2.30" class="lt" onclick="jumptoTime(62, this.id)"><p>我先介紹材料，為什麼好像整個桌子都是東西，我告訴你需要的材料和用具都在這裡，雞蛋我需要兩隻，已經放在室溫，這是無鹽牛油，我需要100克無鹽牛油，然後我要一個檸檬，我只需要半個檸檬皮就可以了，已經洗乾淨了，可以浸泡一下，因為我這個不是有機檸檬，是普通檸檬，如果用它的皮的話，都會怕有農藥。</p></a>
+				<a href="#00:01:48.30" id="00:01:48.30" class="lt" onclick="jumptoTime(108, this.id)"><p>你可以用熱水浸泡一下，或者用鹽洗一下，都可以的，我已經洗乾淨了，蜜糖我需要大約一大匙，糖我需要100克，牛油和糖是一樣的100克，然後我需要麵粉，麵粉就要110克，這個是低筋麵粉，另外我還需要baking powder，我大約需要2 3 分，2 3分茶匙的baking powder，然後就浪費了。</p></a>
+				<a href="#00:02:37.30" id="00:02:37.30" class="lt" onclick="jumptoTime(157, this.id)"><p>我需要的就是這麼多，我們現在開始做吧，首先我需要做什麼呢，首先我想把牛油溶掉，之前我也有說過，有幾種方法，隔熱水浸泡，或者隔熱水再熱去溶，或者放進微波爐，我會放進微波爐，因為會省時間，先把牛油溶掉，我大概分了兩次15秒就溶了牛油，它還有一點點，我將余溫繼續慢慢溶，我不會令到牛油太熱，我一邊做的時候，我這麼快做了放在這裡。</p></a>
+				<a href="#00:03:28.33" id="00:03:28.33" class="lt" onclick="jumptoTime(208, this.id)"><p>是因為等到它一會兒會放涼，不要太熱放在麵糊上，另外還有一個工具，就是一個篩子，一會兒用來篩麵粉，這個我再攪拌一下就可以放開了，第二樣東西，我一會兒再做這個，第二樣東西我們就做麵糊，需要一個盤子，我們先將雞蛋打進去，雞蛋已經室溫，做這個麵糊其中一個要訣就是材料不要太熱，全部都要室溫，然後將雞蛋打散。</p></a>
+				<a href="#00:04:44.44" id="00:04:44.44" class="lt" onclick="jumptoTime(284, this.id)"><p>雖然這個叫做medley蛋糕，但我不需要像做海綿蛋糕那樣，要將蛋打散至起泡，打空氣進去，令到蛋糕體積大，我不需要的，只要將蛋糕打散就可以了，第二個步驟就是將糖和雞蛋混合，不需要打起，不需要打得很厲害，所以我不需要一個電動打蛋器，一個木匙也可以，將蛋糕混合，因為糖不易溶化，所以要將蛋糕混合至均勻，然後將檸檬皮磨碎，之前可以磨碎，但我不要多洗碗。</p></a>
+				<a href="#00:06:31.44" id="00:06:31.44" class="lt" onclick="jumptoTime(391, this.id)"><p>只磨碎黃色的部分，白色的部分不要磨，因為磨了白色的部分會苦，我只需要黃色的部分，我需要半個檸檬，視乎你喜歡吃多一點，但半個檸檬就足夠了，我都會問的，我不加檸檬，我加其他可以嗎?</p></a>
+				<a href="#00:07:7.92" id="00:07:7.92" class="lt" onclick="jumptoTime(427, this.id)"><p>是可以的，除了加檸檬之外，你還可以加橙和青檸，即是色隨便便，橙也挺好吃的，檸檬的皮會比較清新，感覺上會酸一點，青檸的皮會比較澀一點，所以你們自己看自己喜歡，橙會比較香甜一點，然後我就加蜜糖，蜜糖我只需要一個湯匙，當然視乎你家裡有什麼蜜糖，我這個蜜糖是很普通的蜜糖，有些人想要有機的蜜糖，就要視乎你喜歡的材料。</p></a>
+				<a href="#00:08:1.92" id="00:08:1.92" class="lt" onclick="jumptoTime(481, this.id)"><p>你自己選擇要加什麼材料，我只需要一個普通的蜜糖就足夠了，然後就把所有材料，把所有材料都放在蛋漿裡，然後就可以放在麵粉上，這裡有110克低筋麵粉，我再加半茶匙烘焙粉，就可以攪拌一下，攪拌完之後就把麵粉倒進蛋漿裡，先放著，然後就把這個放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:28.60" id="00:09:28.60" class="lt" onclick="jumptoTime(568, this.id)"><p>字幕by索兰娅╰╯╯╯，剩下的就壓下去，然後就可以攪拌一下，然後就慢慢攪拌均勻，所以這個馬德蓮蛋糕是一個很簡單的甜品，你需要做的就是將所有材料攪拌均勻，將白色的混合在一起就可以了，現在我們慢慢地去攪拌，將乾的粉全部都攪拌均勻就可以了，攪拌到這裡已經攪拌均勻了，我就要看一下我這裡的牛油了，牛油我放涼了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:48.19" id="00:10:48.19" class="lt" onclick="jumptoTime(648, this.id)"><p>我想說這個很重要，牛油千萬不要熱，因為裡面有烘焙粉，如果太熱的話，可能會令烘焙粉開始起作用，我不需要上去，只要在烘焙熱的時候起作用就可以了，然後就將牛油放進去，就可以逐少逐少地放進去拌勻，加牛油會稀一點，然後繼續攪拌，我已經聞到很香的牛油和檸檬味，現在可以放入雪櫃冷藏30分鐘，這個不是一般的焗盤。</p></a>
+				<a href="#00:12:45.59" id="00:12:45.59" class="lt" onclick="jumptoTime(765, this.id)"><p>因為我怕麥當勞會黏著，我會用一些牛油或普通的油，然後慢慢掃勻，同時預熱焗爐，預熱至蛋糊面糊差不多就可以，然後就可以焗了，現在等待時間，待會回來見，回來了，現在焗爐已經在熱中，麵糊已經冷藏了超過半小時，然後就可以把麵糊放到瑪德蓮的盤子上，最好是每一個都放得很平均，所以你可以選擇用匙羹放上去，或者用擠的擠袋。</p></a>
+				<a href="#00:14:43.38" id="00:14:43.38" class="lt" onclick="jumptoTime(883, this.id)"><p>逐個逐個擠上去，又或者像我這樣用雪糕的Scoop，放上去也可以，我可以試給你們看，開始把麵糊刮起一個Scoop，然後放進去，放在中間，逐個逐個放進去，我這個份量可以做到不止12個，是可以做多過12個的，你可以用其他杯或其他東西分開來做，我今天做12個，這個還有的 可能每個半個放進去，平均分配。</p></a>
+				<a href="#00:16:13.11" id="00:16:13.11" class="lt" onclick="jumptoTime(973, this.id)"><p>這個可能會寫出來，不過不要緊 試一下，我分完了，好像看起來很多，但其實不要緊，然後我把它們混合，然後我可以，可以將它放入焗爐，因為我的焗爐已經預熱好，我可以將它放入焗爐，我不知道，我希望，可能它真的會爆起，很厲害，不過不要緊，如果不行，失敗了就失敗了，你們看，這樣，放進去，然後我拿去焗了，嗯，大約焗。</p></a>
+				<a href="#00:17:6.26" id="00:17:6.26" class="lt" onclick="jumptoTime(1026, this.id)"><p>你要看你自己的焗爐的溫度的不同，大約預10-15分鐘在中間，你就開始慢慢看，我現在放進去焗，各位朋友，千萬不要笑，因為我剛才也說了，我太貪心，放了太多，你們看看焗出來會變成怎樣，很大個，很大塊的，馬德蓮有什麼特別，就是它會有個頂端高了出來，有一個小山丘，然後就是，這個，這個，貝殼形。</p></a>
+				<a href="#00:17:51.78" id="00:17:51.78" class="lt" onclick="jumptoTime(1071, this.id)"><p>它是在介乎蛋糕和曲奇中間的質感，我現在就，打開來看，當然我剛才也說了，我因為太過，出來這邊就很漂亮，因為太過貪心，一次過放了很多麵糊，所以它就脹成這樣，但其實做出來也很漂亮，現在我就，把它逐個逐個移出來，放暖，然後就可以吃了，不是放涼，然後就可以吃了，不過只是，真的很熱，現在變成，它有條邊。</p></a>
+				<a href="#00:18:46.02" id="00:18:46.02" class="lt" onclick="jumptoTime(1126, this.id)"><p>那，不要緊，也是這樣吃，我當然沒時間再錄一個影片，唯有先頂住了，不要包含，by bwd6，明天早上可以用來做早餐，瑪德蓮可以用來配什麼呢?</p></a>
+				<a href="#00:19:17.71" id="00:19:17.71" class="lt" onclick="jumptoTime(1157, this.id)"><p>你多數都會看到咖啡店，所以它可以配茶或咖啡都很好，給你們看看，今天我的介紹就這樣，希望下次有機會再和你們見面，拜拜!</p></a>
+</div>
+	</body>
+</html>

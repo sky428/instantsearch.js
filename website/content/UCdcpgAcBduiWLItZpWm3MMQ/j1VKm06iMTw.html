@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>芒果木槺布甸 (Mango Serradura)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'j1VKm06iMTw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>芒果木槺布甸 (Mango Serradura)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.68" id="00:00:6.68" class="lt" onclick="jumptoTime(6, this.id)"><p>大家好，今天我在超級市場看到芒果很漂亮，所以買了一盆芒果回來，今天我們來做一個芒果甜品，好不好?</p></a>
+				<a href="#00:00:20.68" id="00:00:20.68" class="lt" onclick="jumptoTime(20, this.id)"><p>我這次做一個簡單的甜品，就是芒果木糠布丁，木糠布丁吃得多，因為夏天，我又買芒果，不如加些芒果進去，那怎麼做呢?</p></a>
+				<a href="#00:00:34.68" id="00:00:34.68" class="lt" onclick="jumptoTime(34, this.id)"><p>首先有芒果，另外第二個材料就是木糠的部分，很多時候做木糠布丁都是用瑪利餅，如果買不到，好像我今天買不到，你可以買一些茶餅，甚至乎做芝士蛋糕經常用的消化餅都可以，這次我還會加多一點東西，就是我會加一點西米進去，因為夏天，我們先處理西米，西米在平常做甜品都需要用到，其實怎樣處理呢?其實很簡單，首先就是煮熱水，水量要很大，大約西米的十倍。</p></a>
+				<a href="#00:01:31.68" id="00:01:31.68" class="lt" onclick="jumptoTime(91, this.id)"><p>這次我不是用很多，只是很少的西米，我只是加進去，現在等水滾完後，我就放西米進去，當水滾的時候，你會看到泡泡升出來，滾的時候，我們就可以灑些西米進去，就這樣灑些西米進去，一定要跟著水滾的狀態，讓它煮，大約煮5-7分鐘，然後再焗7-10分鐘就好了，下一個步驟，這個甜品很隨意，視乎你生活中要做多少杯。</p></a>
+				<a href="#00:02:35.92" id="00:02:35.92" class="lt" onclick="jumptoTime(155, this.id)"><p>例如我有兩杯，就少一點，如果有四杯，就自己加上去，所以沒有一定份量，第二個步驟，就是做木糠，木糠的部分，你可以用食品處理器打碎，如果沒有的話，就用這個方法，做原始的方法，就是放入食物袋中，然後把它壓碎，然後就用木棍壓碎，或者用匙羹也行，視乎你家裡有什麼，很快就可以完成了，完成了。</p></a>
+				<a href="#00:04:3.31" id="00:04:3.31" class="lt" onclick="jumptoTime(243, this.id)"><p>看有多快，已經碎了，看要放多少，拿開，接下來，處理芒果，因為我做的，很少，我先要，煮兩個，然後我將它，切開一半，然後這裡，我一粒粒的果肉，不需要太多，因為我只是放在表面裝飾，其他我會，打汁，西米，我現在已經，半透明，然後，我可以，拿蓋，蓋著，裝飾用的，放在表面，下一個步驟將芒果打溶，將芒果打至溶化，將西米打至半透明。</p></a>
+				<a href="#00:05:57.17" id="00:05:57.17" class="lt" onclick="jumptoTime(357, this.id)"><p>將西米沖洗，將西米打至粒狀，將西米打至軟，將忌廉打至軟，將西米打至軟，將西米打至軟，將西米打至軟，現在這個還未完成，在這個時間打到一半左右，然後就加煉奶，煉奶是加進去的甜度，你可以自己試味，我這裡是250ml的忌廉，我可以加兩匙，如果你試味的時候，我提醒大家，因為現在做了之後，還未冷，但還是失溫，你試了味道甜度合適，冰出來就會沒那麼甜。</p></a>
+				<a href="#00:08:43.17" id="00:08:43.17" class="lt" onclick="jumptoTime(523, this.id)"><p>所以你要試的時候，要讓自己甜度合適再甜一點，冰出來就會合適，改做打，我自己先試味，我覺得不夠甜，所以要再加一點，打到它現在有少少紋 但又是軟的，這樣就可以了，有少少紋的形狀，但又是軟的，攪拌的時候還會動的，這樣就可以了，不要再打了，我可以再攪拌一下，看底部有沒有煉奶黏著，現在OK了。</p></a>
+				<a href="#00:09:59.87" id="00:09:59.87" class="lt" onclick="jumptoTime(599, this.id)"><p>它這個軟的程度就可以了，這裡有些忌廉，我把它分少少出來，我把它拌入西米裡，將芥末和西米拌勻，拿開後就可以放在一起了，拿杯子來，看有多少杯子，全杯小杯，然後我要一個紙花袋，如果沒有也不要緊，紙幼紙是方便一點的，üllt finer highlighted，elsius</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:23.67" id="00:11:23.67" class="lt" onclick="jumptoTime(683, this.id)"><p>овые，tai되，influence，modrite，analytcross，reli，ZZ，lac，glance，Medium，abilities，處ショ அத，maz，mad，tracing，uro，Same，elijk</p></a>
+				<a href="#00:11:31.47" id="00:11:31.47" class="lt" onclick="jumptoTime(691, this.id)"><p>athe هذه，Schmidt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:24.09" id="00:11:24.09" class="lt" onclick="jumptoTime(684, this.id)"><p>implement breakdown，статочно，של，テ Bach，mut，uit，Cem，bureauc，grocer</p></a>
+				<a href="#00:11:33.87" id="00:11:33.87" class="lt" onclick="jumptoTime(693, this.id)"><p>vey，謝謝觀看，然後把口收起來</p></a>
+				<a href="#00:11:43.87" id="00:11:43.87" class="lt" onclick="jumptoTime(703, this.id)"><p>放回箱子，然後擠花擠出來，因為現在很浮，我們可以讓你看看，擠了第一層，在邊緣拿開，搖一搖就看到第一層，然後就可以灑上木框，然後又是，看到旁邊有油，我可以加多一點，用匙羹印一印，讓它可以平平地黏在上面，看到有一層嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:6.56" id="00:13:6.56" class="lt" onclick="jumptoTime(786, this.id)"><p>然後加入芒果醬，然後慢慢推開，直到邊位看到芒果，第三層，然後再放下第四層，最後放入有西米的芒果，最後再擠多個南瓜波</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:4.78" id="00:15:4.78" class="lt" onclick="jumptoTime(904, this.id)"><p>下集待續，做好之後可以放上薄荷葉做裝飾，今日的介紹就這樣，這是芒果西米木糠布甸，給你們看看漂亮不漂亮，一層層的，很清晰，今日介紹就這樣，希望你們在家試試，拜拜下次見。</p></a>
+</div>
+	</body>
+</html>

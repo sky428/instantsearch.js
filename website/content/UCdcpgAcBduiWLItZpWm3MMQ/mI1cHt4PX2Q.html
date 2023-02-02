@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意式奶酪 (Panna Cotta)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'mI1cHt4PX2Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>意式奶酪 (Panna Cotta)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.18" id="00:00:1.18" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 各位你們好，這個星期我介紹做一個很簡單的甜品，雖然看起來材料好像很多，但其實不是的，這些只是裝飾和你想要的味道，就是一些水果，你喜歡什麼都可以，我這裡我買定的，到做的時候就看看怎樣去配搭，我有藍莓，莓果，還有草莓，先拿開，真正的材料就只有這五樣東西，給你們看看，用具就是匙羹。</p></a>
+				<a href="#00:00:47.18" id="00:00:47.18" class="lt" onclick="jumptoTime(47, this.id)"><p>刮刀，一個篩，一個刀，和一個溫度計，就是這麼多，好 介紹材料，材料就是Vanilla，你可以用Vanilla油或Vanilla醬，或者一些，如果你可以買到Vanilla籽，即是一條就更好，越靚就越好味，我就用Vanilla醬，另外呢，另外就是有Cream，新鮮的鮮忌廉，或者是Whipping Cream，鮮忌廉。</p></a>
+				<a href="#00:01:25.18" id="00:01:25.18" class="lt" onclick="jumptoTime(85, this.id)"><p>我這裡的鮮忌廉大約，我這裡的鮮忌廉大約，就是300ml，鮮忌廉，然後就有150ml的鮮奶，這裡就是，七克的魚膠粉，你可以的，你可以用魚膠片，當然用魚包片做法完全不同，魚膠粉就簡單一點，我這裡比較難買魚膠片，所以我多數用魚膠粉，然後就是砂糖40克，我這裡呢，今天我是做奶酪，Panna Cotta，異色奶酪。</p></a>
+				<a href="#00:02:10.18" id="00:02:10.18" class="lt" onclick="jumptoTime(130, this.id)"><p>我們現在開始吧，首先我在這裡，那些奶那裡，我放一點，放一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:20.18" id="00:02:20.18" class="lt" onclick="jumptoTime(140, this.id)"><p>放一點奶，放一點奶在魚膠粉上，將奶和魚膠粉攪拌， 作用是可以將水份吸收，吸收奶的水份後， 便可以倒入鍋中煮，另外， 將其餘的奶和魚膠粉攪拌，還有忌廉，全部放入鍋中，然後就可以將煲加熱，慢慢火加熱，不要煮滾，煮到大約90度左右，我現在拿去加熱，好了，我們回到這裡，我們已經將忌廉、牛奶放進煲裡，然後我連糖也放進去。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:54.70" id="00:03:54.70" class="lt" onclick="jumptoTime(234, this.id)"><p>然後我就開火加熱，我不用開太大火，慢慢加熱，這樣我煮到大約90度就可以了，趁著這個時間，我們講一下原理，就好像做啫喱、布甸一樣，做了底部，然後加魚膠粉就可以了，為什麼我要在這裡講呢?</p></a>
+				<a href="#00:04:18.70" id="00:04:18.70" class="lt" onclick="jumptoTime(258, this.id)"><p>就是你做奶酪的時候，它混合的兩樣東西就是忌廉和牛奶，忌廉和牛奶的比例其實你可以自己調整，像我這裡是兩份忌廉、一份牛奶，你可以隨你自己的喜好去調整，如果你怕太稠的話，可以一對一，我們這裡加起來就是300加150，一半是忌廉，一半是牛奶，甚至乎我想牛奶多一點，你就可以隨你自己喜好去加，但是忌廉就一對一，我覺得已經夠了。</p></a>
+				<a href="#00:05:5.70" id="00:05:5.70" class="lt" onclick="jumptoTime(305, this.id)"><p>你想再多一點，其實忌廉多一點就會滑一點，但是太多的話，又會膩，所以就要小心看，我現在放進去試一下，現在是多少度呢?</p></a>
+				<a href="#00:05:20.70" id="00:05:20.70" class="lt" onclick="jumptoTime(320, this.id)"><p>我們剛剛煮了，現在只是十多度，讓它煮一下，務求令到糖，我現在還有糖在這裡，糖可以完全溶掉，然後一到九十度，我可以關火，然後我就可以加魚餃粉進去，80度左右就要開始關火，不要煮到大滾，大滾的話奶的油和水份就會分離，效果就不好，dropdown，trzebacape дня，urities。</p></a>
+				<a href="#00:06:28.75" id="00:06:28.75" class="lt" onclick="jumptoTime(388, this.id)"><p>similarities</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.39" id="00:06:36.39" class="lt" onclick="jumptoTime(396, this.id)"><p>swoонд，rians</p></a>
+				<a href="#00:06:34.89" id="00:06:34.89" class="lt" onclick="jumptoTime(394, this.id)"><p>ивают，publi，Guo，aluminium，свою</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.49" id="00:06:40.49" class="lt" onclick="jumptoTime(400, this.id)"><p>tyr，Bible</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:31.59" id="00:06:31.59" class="lt" onclick="jumptoTime(391, this.id)"><p>referring Lift，ום，� Wię</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.57" id="00:06:40.57" class="lt" onclick="jumptoTime(400, this.id)"><p>Для，ש god，tteokbokki</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:33.51" id="00:06:33.51" class="lt" onclick="jumptoTime(393, this.id)"><p>нам，Beni，techn tteokbokki</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:21.91" id="00:06:21.91" class="lt" onclick="jumptoTime(381, this.id)"><p>얘，gard cler angry</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.55" id="00:06:36.55" class="lt" onclick="jumptoTime(396, this.id)"><p>noss，yan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:38.03" id="00:06:38.03" class="lt" onclick="jumptoTime(398, this.id)"><p>кар，Respect，alerts，overlapping，quota，Thema</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:32.33" id="00:06:32.33" class="lt" onclick="jumptoTime(392, this.id)"><p>signals，ед，adhere近</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:35.17" id="00:06:35.17" class="lt" onclick="jumptoTime(395, this.id)"><p>Recent，.，selves，alone</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.23" id="00:06:27.23" class="lt" onclick="jumptoTime(387, this.id)"><p>paid，�應該，+.</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:12.01" id="00:06:12.01" class="lt" onclick="jumptoTime(372, this.id)"><p>ip bay</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:31.67" id="00:06:31.67" class="lt" onclick="jumptoTime(391, this.id)"><p>reporter，basте</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:35.75" id="00:06:35.75" class="lt" onclick="jumptoTime(395, this.id)"><p>liberated，arist slowed pack</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:24.07" id="00:06:24.07" class="lt" onclick="jumptoTime(384, this.id)"><p>Black generated，semanas</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.29" id="00:06:40.29" class="lt" onclick="jumptoTime(400, this.id)"><p>seamlessly，japanese，treated，Hencerika</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:35.31" id="00:06:35.31" class="lt" onclick="jumptoTime(395, this.id)"><p>800，boun לכ，heav posible</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.43" id="00:06:36.43" class="lt" onclick="jumptoTime(396, this.id)"><p>inton，Chancellor，faction，tx</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:31.13" id="00:06:31.13" class="lt" onclick="jumptoTime(391, this.id)"><p>strange，Nine，balances，emit，brown</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:36.23" id="00:06:36.23" class="lt" onclick="jumptoTime(396, this.id)"><p>crabs，ender，現在已經有80度左右了，有煙已經差不多了，最高就不要超過90度，我大約有85度了，差不多了，我要拿開了，有煙出，就要拿開了，我拿開了，在這個時間，我要把魚膠粉，已經起了一個餅的魚膠粉，放進去，放進去之後，我慢慢攪拌，把魚膠粉在這個時間攪拌融化，在這個時間，我亦可以把Vanilla醬或香油都放進去。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:22.47" id="00:07:22.47" class="lt" onclick="jumptoTime(442, this.id)"><p>大約半茶匙，在這個時間，要不斷攪拌，務求把魚膠粉融化，如果只想要奶味的奶酪，可以不加香油，攪勻後可以做下一個步驟，就是過篩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.07" id="00:08:31.07" class="lt" onclick="jumptoTime(511, this.id)"><p>謝謝觀看，過篩後，可以將多餘的殘留物或魚膠粉溶掉的部分隔走，奶酪會更加滑，奶酪已經做好一大半，放涼後就可以打發奶酪，你可以選擇用玻璃杯，玫瑰花杯，紅色膠杯，或你喜歡的模式，可以選擇任何形狀，但我個人喜歡，每個奶酪倒入一半</p></a>
+				<a href="#00:10:2.19" id="00:10:2.19" class="lt" onclick="jumptoTime(602, this.id)"><p>奶酪已經做好一半，我現在就倒入這個杯子，這個份量可以做到八杯，如果有些麵糊粘住就可以抹走，有些人可以將整杯打斜放在模具上冷藏，麵糊出來的時候會斜了，但我個人就不斜放了，今天做這個甜品就非常簡單，雖然時間很少，有朋友來之前一晚做好，第二天早上就可以吃，現在可以全部放進去，已經有點凍了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:30.43" id="00:11:30.43" class="lt" onclick="jumptoTime(690, this.id)"><p>可以拿去冷藏，冷藏兩小時或以上，就可以再做一杯就可以吃了，等他冷藏好再吃吧，昨晚我已經把Panacotta這個異色的奶放進去，我已經做好了 也冷藏好了一杯一杯，很漂亮 你看看，一杯一杯在這裡，然後我們就可以做下一步，下一步就是加一些味道，這個就是奶味 你可以直接吃的，但如果你再加一些不同的味道就會開心一點和漂亮一點。</p></a>
+				<a href="#00:12:13.80" id="00:12:13.80" class="lt" onclick="jumptoTime(733, this.id)"><p>我現在就試一下，我們可以有很多的，有些人可能會買一些水果來做醬汁，然後再加一些糖煮了，然後就可以配搭來吃了，我今天打算用士多啤梨或者草莓類的東西，也是一樣的 打了汁 用糖煮一煮 再淋上去吃，現在先切一些粒粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:50.80" id="00:12:50.80" class="lt" onclick="jumptoTime(770, this.id)"><p>整齊一點，這樣一粒粒 漂亮一點，有些可以放上去做裝飾，有些可以打了溶 諸如此類，你可以打了溶後放士多啤梨在上面也可以，或者放其他你喜歡的莓也可以，甚至乎放芒果 芒果汁 或者是朱古力醬也可以，你可以整溶了朱古力，也可以淋上去，最重要是你自己喜歡 方便就可以了，我打算打士多啤梨汁，你看到我切一些 你打汁不用切得那麼漂亮。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:52.80" id="00:13:52.80" class="lt" onclick="jumptoTime(832, this.id)"><p>但有些我想放上去，可以盡量切一粒粒 先把它切好，然後再選出來打汁 就是這樣，Hello 我們回來了，現在我們來做醬汁，這裡有小朵啤梨切粒，我加了少許糖，這個時候你可以加少許檸檬汁，如果像我今天家裡沒有檸檬汁，你可以加少許水，這些就可以了，然後煮溶，然後打爛它變成醬汁，這樣就可以了。</p></a>
+				<a href="#00:14:33.52" id="00:14:33.52" class="lt" onclick="jumptoTime(873, this.id)"><p>我們現在等它水滾了，啊 還沒開爐，水我只是加了一兩個茶匙左右，不用太多，因為草莓本身也有水分，煮一煮它也會出水的，有些人怕醬汁不夠濃稠，會加少許的瑤柱粉，你可以這樣做，但我個人就不加，只要糖溶一下，就可以將草莓打溶</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:29.24" id="00:15:29.24" class="lt" onclick="jumptoTime(929, this.id)"><p>開機字幕由Amara.org社区提供，因為我不是煮果醬或者是煮一些很濃的汁，所以其實肉糖有點黏，我可以關火，打融就可以了，如果你想再濃稠一點味道，就真的好像煮果醬一樣，熬煮到它很稠，但我自己就不想太稠，就可以像我這樣打了，甚至像這樣打，輕輕一煮，冷卻後就可以淋下去吃了，當然如果你想的話可以過篩。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:26.43" id="00:16:26.43" class="lt" onclick="jumptoTime(986, this.id)"><p>我現在打算過篩，然後放涼就可以吃了，如果你不想太麻煩煮的話，可以用果醬也可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:1.43" id="00:17:1.43" class="lt" onclick="jumptoTime(1021, this.id)"><p>謝謝觀看，現在它變成一個很滑很無渣的一個汁，我們就可以坐冰冷凍它或者可以放進冰箱冷凍它，好了 現在我的草莓醬 草莓醬 我已經，不是醬 草莓汁已經冷凍了，然後我就可以舀下去做造型，我舀兩匙放進去，漂亮嗎，然後就可以放你自己喜歡的水果上去，我呢 就近一點，這樣我就可以把我自己喜歡的放下去，你自己喜歡怎樣的造型 你就可以用自己的想法。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:20.44" id="00:18:20.44" class="lt" onclick="jumptoTime(1100, this.id)"><p>慢慢的放下去 把它弄好，看看 漂亮嗎，就這樣慢慢弄 你自己喜歡的造型，我現在弄多一杯給你們看，你可以加士多啤梨，例如我放了兩粒士多啤梨在底部，又可以加兩三粒，你可以加一粒南梅，隨你喜歡，可以加少許水，遮蓋表面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:20:19.24" id="00:20:19.24" class="lt" onclick="jumptoTime(1219, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，可以加其他喜歡的水果，最重要是自己喜歡吃的，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

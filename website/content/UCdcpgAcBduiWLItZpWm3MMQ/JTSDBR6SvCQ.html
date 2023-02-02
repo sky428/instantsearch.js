@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>彩繪蒸雞蛋糕 (Deco Steam Cake)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'JTSDBR6SvCQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>彩繪蒸雞蛋糕 (Deco Steam Cake)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello 各位， 你地好呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日我就同大家一齊整一個蒸蛋糕。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>咁樣呢， 希望大家都鍾意啦!</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>材料就好簡單。</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>咁點解我整蒸蛋糕呢?</p></a>
+				<a href="#00:00:14.00" id="00:00:14.00" class="lt" onclick="jumptoTime(14, this.id)"><p>係因為我見到呢， 我supermarket呢一隻煎餅粉， pancake粉特價。</p></a>
+				<a href="#00:00:22.00" id="00:00:22.00" class="lt" onclick="jumptoTime(22, this.id)"><p>咁所以呢， 我買左嚟攞嚟整蛋糕啦， 所以。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>咁樣你可以用其他牌子嘅pancake粉都得嘅。</p></a>
+				<a href="#00:00:29.00" id="00:00:29.00" class="lt" onclick="jumptoTime(29, this.id)"><p>我鍾意佢嘅就係佢150g有4包。</p></a>
+				<a href="#00:00:35.00" id="00:00:35.00" class="lt" onclick="jumptoTime(35, this.id)"><p>咁我每一次呢做呢一個呢， 咁我只係需要150g呢， 咁就啱唔啱唔好啦。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>咁我就唔使特登去秤呀咁樣， 咁就變咗係一個就搞掂啦。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>咁不如我哋講下啲材料啦， 材料好簡單嘅。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>呢啲唔使你去煮， 呢啲呢就一陣間蒸蛋糕可能整完之後， 可能你想加啲色呀嗰啲嘢呢， 我哋先會用嘅。</p></a>
+				<a href="#00:00:57.00" id="00:00:57.00" class="lt" onclick="jumptoTime(57, this.id)"><p>有啲唔同嘅朱古力粉啦， 同埋有啲顏色啦。</p></a>
+				<a href="#00:01:0.00" id="00:01:0.00" class="lt" onclick="jumptoTime(60, this.id)"><p>咁我又係撥開佢先， 攞呢啲。</p></a>
+				<a href="#00:01:3.00" id="00:01:3.00" class="lt" onclick="jumptoTime(63, this.id)"><p>咁真係主要嘅材料呢， 其實呢， 就係呢度啦。</p></a>
+				<a href="#00:01:10.00" id="00:01:10.00" class="lt" onclick="jumptoTime(70, this.id)"><p>咁我落近啲畀大家睇啦。</p></a>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>主要嘅材料呢， 就係咁多啦。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>有呢， 就係油啦， 我呢個就咁普通嘅菜油啦。</p></a>
+				<a href="#00:01:21.00" id="00:01:21.00" class="lt" onclick="jumptoTime(81, this.id)"><p>菜油呢度呢就係一湯匙， 我需要一湯匙嘅菜油。</p></a>
+				<a href="#00:01:25.00" id="00:01:25.00" class="lt" onclick="jumptoTime(85, this.id)"><p>50克嘅Yogurt原味嘅乳酪。</p></a>
+				<a href="#00:01:31.00" id="00:01:31.00" class="lt" onclick="jumptoTime(91, this.id)"><p>50克牛奶。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>兩隻雞蛋。</p></a>
+				<a href="#00:01:35.00" id="00:01:35.00" class="lt" onclick="jumptoTime(95, this.id)"><p>5克或者1茶匙嘅Baking Powder， 即係發粉。</p></a>
+				<a href="#00:01:41.00" id="00:01:41.00" class="lt" onclick="jumptoTime(101, this.id)"><p>咁另外呢， 25克砂糖。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>同埋呢個150克嘅鬆餅粉。</p></a>
+				<a href="#00:01:49.00" id="00:01:49.00" class="lt" onclick="jumptoTime(109, this.id)"><p>材料就係咁簡單啦。</p></a>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>咁我又講一講啦。</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>如果你冇原味Yogurt嘅， 你可以全部用哂牛奶。</p></a>
+				<a href="#00:01:59.00" id="00:01:59.00" class="lt" onclick="jumptoTime(119, this.id)"><p>或者你冇牛奶嘅， 全部用哂Yogurt。</p></a>
+				<a href="#00:02:2.00" id="00:02:2.00" class="lt" onclick="jumptoTime(122, this.id)"><p>即係100克淨係Yogurt， 或者100克淨係牛奶都得。</p></a>
+				<a href="#00:02:8.00" id="00:02:8.00" class="lt" onclick="jumptoTime(128, this.id)"><p>我呢就想兩樣都有， 咁我就擺落去啦。</p></a>
+				<a href="#00:02:11.00" id="00:02:11.00" class="lt" onclick="jumptoTime(131, this.id)"><p>拎開。</p></a>
+				<a href="#00:02:15.00" id="00:02:15.00" class="lt" onclick="jumptoTime(135, this.id)"><p>首先呢，我需要嘅呢， 就係一個盤啦。</p></a>
+				<a href="#00:02:21.00" id="00:02:21.00" class="lt" onclick="jumptoTime(141, this.id)"><p>咁呢個份量呢， 大約整到6個。</p></a>
+				<a href="#00:02:26.40" id="00:02:26.40" class="lt" onclick="jumptoTime(146, this.id)"><p>首先，我需要兩隻雞蛋。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:56.40" id="00:02:56.40" class="lt" onclick="jumptoTime(176, this.id)"><p>將雞蛋和牛奶加在一起，攪拌均勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:59.96" id="00:02:59.96" class="lt" onclick="jumptoTime(179, this.id)"><p>這樣就可以慢慢打發了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:9.88" id="00:03:9.88" class="lt" onclick="jumptoTime(189, this.id)"><p>拌匀，girlfriends alike</p></a>
+				<a href="#00:03:22.40" id="00:03:22.40" class="lt" onclick="jumptoTime(202, this.id)"><p>^^ AmerBT，Syncakes，physiology，таким，soph appreh Jan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:25.56" id="00:03:25.56" class="lt" onclick="jumptoTime(205, this.id)"><p>executives，processors，ö</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:23.52" id="00:03:23.52" class="lt" onclick="jumptoTime(203, this.id)"><p>carbon，我覺得</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:28.18" id="00:03:28.18" class="lt" onclick="jumptoTime(208, this.id)"><p>eternal，general，informing，деньги，grow，ром，牛奶</p></a>
+				<a href="#00:03:31.74" id="00:03:31.74" class="lt" onclick="jumptoTime(211, this.id)"><p>pressured，먹는，而已</p></a>
+				<a href="#00:03:45.92" id="00:03:45.92" class="lt" onclick="jumptoTime(225, this.id)"><p>prod drag，그거</p></a>
+				<a href="#00:03:58.08" id="00:03:58.08" class="lt" onclick="jumptoTime(238, this.id)"><p>quito，feminism</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:47.18" id="00:03:47.18" class="lt" onclick="jumptoTime(227, this.id)"><p>pri case，하는데，혼자，around，multic55，ping</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:57.02" id="00:03:57.02" class="lt" onclick="jumptoTime(237, this.id)"><p>pleasure，product，maybe，tsun，Age，exempel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.16" id="00:03:59.16" class="lt" onclick="jumptoTime(239, this.id)"><p>dł，erin，анс，gost</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.00" id="00:03:59.00" class="lt" onclick="jumptoTime(239, this.id)"><p>Att，énormément，Меня</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:58.88" id="00:03:58.88" class="lt" onclick="jumptoTime(238, this.id)"><p>устрой，Xin，gender</p></a>
+				<a href="#00:04:0.74" id="00:04:0.74" class="lt" onclick="jumptoTime(240, this.id)"><p>Systems，這，lain</p></a>
+				<a href="#00:03:57.46" id="00:03:57.46" class="lt" onclick="jumptoTime(237, this.id)"><p>eighty，Serve，gebracht，ברים</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:51.82" id="00:03:51.82" class="lt" onclick="jumptoTime(231, this.id)"><p>paused，imp emitante，te，flat，nen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:45.62" id="00:03:45.62" class="lt" onclick="jumptoTime(225, this.id)"><p>به，scand ell</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:57.34" id="00:03:57.34" class="lt" onclick="jumptoTime(237, this.id)"><p>think，Sasha，này，conveniently，ahí，birlikte，Fitness，الك，July，immune，transgender</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.94" id="00:03:59.94" class="lt" onclick="jumptoTime(239, this.id)"><p>�� succeeded，谁 krijgen，Rolling，hero，Staat，וא�flu，크게，śnie Muslim</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:31.72" id="00:03:31.72" class="lt" onclick="jumptoTime(211, this.id)"><p>belieYAN，Disease，purchased，uce，dul cyniverse，yolks，primera，謝謝觀看，接著繼續攪拌，攪拌至均勻，這個時候我可以把西餡放上去，然後就是鬆餅粉，或者是煎餅粉，手 гораз retrou�ن soaked Jen</p></a>
+				<a href="#00:04:52.97" id="00:04:52.97" class="lt" onclick="jumptoTime(292, this.id)"><p>근데，supre，ford</p></a>
+				<a href="#00:04:49.83" id="00:04:49.83" class="lt" onclick="jumptoTime(289, this.id)"><p>이스，począt</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:53.07" id="00:04:53.07" class="lt" onclick="jumptoTime(293, this.id)"><p>얘，inconsistent，jer，нуж，世界，수를，きます，aped，Indo，Nov emailed，after，字幕by索兰娅✿，sonaro</p></a>
+				<a href="#00:05:10.78" id="00:05:10.78" class="lt" onclick="jumptoTime(310, this.id)"><p>bitcoin，��，algebra，UScej，уж，Kelsey，situated，ynthia，орошо，üll</p></a>
+				<a href="#00:05:22.74" id="00:05:22.74" class="lt" onclick="jumptoTime(322, this.id)"><p>strange，→，Represent，Hahaha，schwierig，Fi，twenty，ự，liner，related，hvis，раж，theoretically，olu，laws，وم，Reno，своей，assign</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:22.38" id="00:05:22.38" class="lt" onclick="jumptoTime(322, this.id)"><p>pilgrimage，sometimes，ipes，shine，campus，attered</p></a>
+				<a href="#00:05:10.66" id="00:05:10.66" class="lt" onclick="jumptoTime(310, this.id)"><p>拜송，cose，Spain，imagem，bars，字幕by索兰娅╰╯╯╰╯╰，然後加白粉，Baking powder 或者是粉粉，然後就篩下去，一次過篩下去也沒問題，所以這個食譜很簡單，將粉粒攪拌均勻，然後慢慢攪拌均勻，攪拌至沒有粉粒，跟平常做班戟差不多，看好它， 黏稠多好， 看見它沒有粒粒， 很滑就可以了，這個時間我大約要兩匙。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:44.22" id="00:07:44.22" class="lt" onclick="jumptoTime(464, this.id)"><p>用來做蒸蛋糕上面的花紋，想做花紋， 我會放兩種不同款的巧克力粉，這款是黑色的， 深色的，這款是橙色的，我會放少許，其實放少許就可以了，大約放半茶匙，攪勻它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:59.53" id="00:08:59.53" class="lt" onclick="jumptoTime(539, this.id)"><p>攪勻，這個好像差一點點，就加多一點點，這樣也是一樣，看上去沒那麼乾身，濕濕的，可以擠出來就可以了，不想用切花袋，可以用焗爐紙將它打破，剪成三角形，將花袋和紙包裹好，再將它們包起來，做成一個圓錐形，做一個圓錐形，摺一摺它，它就變成一個圓錐形，看你自己喜歡用哪隻顏色的紙，我這裡大約可以做到六個。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:39.96" id="00:10:39.96" class="lt" onclick="jumptoTime(639, this.id)"><p>兩隻匙羹，幫手舀它，大約一隻大約三匙，我先分成三個，慢慢分，分成六個，我只能分成六個，每一個蛋糕都要搖一搖，讓空氣出來，可以將這些放入袋子</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:21.00" id="00:12:21.00" class="lt" onclick="jumptoTime(741, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，先放入炸蛋，如果不懂用焗爐做的話，可以用擠花袋或蟋蟀袋，然後就可以擠它了，這個可以剪少少，剪少少剪個章，然後就可以擠它了，先擠一些泡泡</p></a>
+				<a href="#00:13:36.06" id="00:13:36.06" class="lt" onclick="jumptoTime(816, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，隨意的，你自己喜歡怎樣做都可以的，我這個可能比較乾身一點，一會要等一等它，等一等它掉下去，有些大顆，有些小顆，不要緊的，只是用你的創意來做，想怎樣做，怎樣的樣子都可以的，弄了一點之後，接著我就摺起它，用泡沫來弄，有些其他顏色的，我這個就闊身一點，黏一點，黏住它。</p></a>
+				<a href="#00:14:48.57" id="00:14:48.57" class="lt" onclick="jumptoTime(888, this.id)"><p>好，這樣就弄好了，接著我就可以拿去蒸爐中火或中小火蒸15分鐘就可以了，因為我家裡沒有蒸爐，蒸爐很小，所以我分開三個蒸，如果用鐵的，就用布包住蓋子蒸15分鐘就可以了，15分鐘就完成了，它們出爐了，給你們看看，很鬆軟的，很彈，很鬆軟的，我自己摺得不好，所以紋理沒有那麼均勻，但都很漂亮的，給你們看清楚一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:55.57" id="00:15:55.57" class="lt" onclick="jumptoTime(955, this.id)"><p>我今天就介紹到這裡，希望大家都試做吧，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>簡易公仔湯圓 - Easy Cartoon Glutinous Rice Balls</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'HvWgMYx7-C0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>簡易公仔湯圓 - Easy Cartoon Glutinous Rice Balls</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.31" id="00:00:5.31" class="lt" onclick="jumptoTime(5, this.id)"><p>今日想和大家一起做這個公仔湯圓，上網看到很多人都有做公仔湯圓，但亦有很多不同的失敗或成功的例子，所以我想挑戰一下，試試自己可否做到，但我的手工就一般般，希望不要太難看，首先我們看看材料，材料很簡單，餡料可以選擇自己喜歡的，例如可以放朱古力、紅豆餡、芝麻餡、花生餡等等，而我自己想吃這個糖心湯圓。</p></a>
+				<a href="#00:00:51.31" id="00:00:51.31" class="lt" onclick="jumptoTime(51, this.id)"><p>所以我放了一些片糖，切成粒狀放進去，可以選擇自己喜歡的餡料來做，湯圓的外皮很簡單，需要水磨糯米粉和清水，清水分兩部分，一部分是煮滾水，另一部分是凍水，為什麼要這樣做呢?</p></a>
+				<a href="#00:01:17.31" id="00:01:17.31" class="lt" onclick="jumptoTime(77, this.id)"><p>如果平時做一粒圓的湯圓，用清水也沒所謂，但如果是做公仔，需要搓揉和捏，可能有不同的造型的時候，粉團會比較容易裂開，所以如果是做有造型的公仔，最好分開兩種湯，分開兩種水，可以先加熱水，拌勻，然後再用凍水慢慢混合，混合至一個適合的麵團，又或者有一種更古老的方法，就是搓揉麵粉，拿一些出來，放進熱水煮熟，再放進去搓揉。</p></a>
+				<a href="#00:02:18.31" id="00:02:18.31" class="lt" onclick="jumptoTime(138, this.id)"><p>這些方法都是想令麵團更有彈性和輕盈，所以每種方法都無所謂，只要方便你自己，你自己喜歡做哪種就可以了，我這裏，好，我們現在開始了，首先我這裏煲了一些熱水，我大約是130克的麵粉，我今天做少許，大家試一下，讓你自己試一下，我大約是放四分之一杯熱水下去，然後我將熱水拌入麵粉，現在攪拌好，麵粉因為有熱水滲入，變得半熟，開始有黏度，攪拌均勻。</p></a>
+				<a href="#00:03:28.39" id="00:03:28.39" class="lt" onclick="jumptoTime(208, this.id)"><p>現在麵粉很燙手，先攪拌均勻，再加冷水慢慢搓揉，手洗乾淨，可以用大手套，現在麵粉很燙手，捏一捏麵粉，讓麵粉黏在手上</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:17.39" id="00:04:17.39" class="lt" onclick="jumptoTime(257, this.id)"><p>麵粉很燙手，手洗乾淨，可以用大手套，捏一捏麵粉，讓麵粉黏在手上，Lon conservative</p></a>
+				<a href="#00:04:35.46" id="00:04:35.46" class="lt" onclick="jumptoTime(275, this.id)"><p>zeg，fl 가능</p></a>
+				<a href="#00:04:38.36" id="00:04:38.36" class="lt" onclick="jumptoTime(278, this.id)"><p>olduğ，ர</p></a>
+				<a href="#00:04:36.36" id="00:04:36.36" class="lt" onclick="jumptoTime(276, this.id)"><p>ht Sail alligator，Agora，ges，vitesse，classes</p></a>
+				<a href="#00:04:41.08" id="00:04:41.08" class="lt" onclick="jumptoTime(281, this.id)"><p>greasy，adores，Ih</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:35.54" id="00:04:35.54" class="lt" onclick="jumptoTime(275, this.id)"><p>イ，exported，fashion</p></a>
+				<a href="#00:04:37.24" id="00:04:37.24" class="lt" onclick="jumptoTime(277, this.id)"><p>something，iving，сь，folder，不要加太多，因為麵團會黏住，不夠就要加些麵粉去中和，慢慢搓至麵團上的麵粉都黏住，搓久一點都可以，可以令麵團更加有嚼勁，麵團不要太軟，也不要太硬，用保鮮紙包起麵團，然後就預備其他材料，分開麵團的顏色，然後就把麵團的顏色分開，如果不想吃到其他顏色的話，可以選擇其他顏色。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:27.72" id="00:06:27.72" class="lt" onclick="jumptoTime(387, this.id)"><p>我這邊沒有其他顏色，所以就選擇其他顏色，在麵團上加上顏色，然後就可以攪拌，攪拌至一種適合自己的顏色，prints Mits combo USSR，還有etr combination</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:18.98" id="00:07:18.98" class="lt" onclick="jumptoTime(438, this.id)"><p>nam질，burnt，Quiz，grasp，essment</p></a>
+				<a href="#00:07:19.68" id="00:07:19.68" class="lt" onclick="jumptoTime(439, this.id)"><p>Mina，augład，용，ército，Empус，� medicinal</p></a>
+				<a href="#00:07:22.96" id="00:07:22.96" class="lt" onclick="jumptoTime(442, this.id)"><p>фот，trilogy，measurements，twctic</p></a>
+				<a href="#00:07:20.78" id="00:07:20.78" class="lt" onclick="jumptoTime(440, this.id)"><p>esti，subjects，проф，임</p></a>
+				<a href="#00:07:18.44" id="00:07:18.44" class="lt" onclick="jumptoTime(438, this.id)"><p>idiots，pizza，Benedict，critical，school，dei</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:18.32" id="00:07:18.32" class="lt" onclick="jumptoTime(438, this.id)"><p>ve，現在麵團很容易搓揉，因為已經加了熱水和冷水，現在搓揉至均勻，如果手感不舒服，可以戴上手套，但做手工或食物時，要感覺到自己的手感最好，這樣做，手套會感覺到麵團已經被麵團壓過，搓揉至麵團夠色，如果想再粉紅一點，可以再搓揉，我會盡量用最少顏色，桌上有很多紙，方便做好湯圓後，可以放上紙，不做也可以，視乎自己煮的時候控制得好不好。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:56.15" id="00:08:56.15" class="lt" onclick="jumptoTime(536, this.id)"><p>我平常不會用，但我覺得加上這個也不錯，放上去後，不怕湯圓沉底就黏著底部，如果有自己的手工，可以加上紙，這個也做好了，兩種顏色，接著就繼續做啡色和黃色，我就不錄了，你們待會兒看吧，我現在看到，幾種顏色的，麵團，都做好了，接著就開始做了，現在就，做一個湯圓，你可以，攤薄一點，接著，就可以放一粒糖。</p></a>
+				<a href="#00:10:8.70" id="00:10:8.70" class="lt" onclick="jumptoTime(608, this.id)"><p>接著就，收口，你可以這樣收，或者就這樣捏，一塊都可以，然後我們就，繞兩隻手，手掌對手掌，將麵團在中間這樣搓圓，我們玩泥膠，應該都會，做好之後，我們拿一張紙，沾一沾它，接著耳朵，這樣盡量，然後在公仔的面上，找一個位置放耳朵的位置，然後在公仔的面上，找一個位置放耳朵的位置，這邊也是，如果我想放這邊，我就放這邊，然後就把公仔做形，你想看它想貼在哪個位置，樣子是怎樣，耳朵是怎樣的形狀，現在可以在這個時間幫它再掃一掃形狀。</p></a>
+				<a href="#00:12:6.55" id="00:12:6.55" class="lt" onclick="jumptoTime(726, this.id)"><p>做了兩個樣子，公仔的耳朵圓一點，按一按它，讓它看起來圓一點，這樣有個公仔。</p></a>
+				<a href="#00:12:17.55" id="00:12:17.55" class="lt" onclick="jumptoTime(737, this.id)"><p>然後就可以把鼻子和眼睛放上去，用黑色，搓好了，跟剛才一樣，然後你想它放在哪個位置，就把黑色放上去。</p></a>
+				<a href="#00:12:45.55" id="00:12:45.55" class="lt" onclick="jumptoTime(765, this.id)"><p>放好之後，我們就把眼睛放上去，我們就加眼睛和鼻子，眼睛就近眼睛的位置，我先塗點水，然後我們就把眼睛貼上去，你剛才貼了水的地方。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:15.55" id="00:13:15.55" class="lt" onclick="jumptoTime(795, this.id)"><p>這樣就完成了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:20.57" id="00:13:20.57" class="lt" onclick="jumptoTime(800, this.id)"><p>太多水會滑，用牙籤輔助， 用骨頭的方向壓一壓， 令它回到你想的位置。</p></a>
+				<a href="#00:13:51.36" id="00:13:51.36" class="lt" onclick="jumptoTime(831, this.id)"><p>將尾部放上去， 用一條較粗或幼的骨頭輔助。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:18.11" id="00:14:18.11" class="lt" onclick="jumptoTime(858, this.id)"><p>sabem pane ting，급，ignite，alf，Kin，repeating，owy，obsessed，잡，cosmos，berg，嗯，我做了三個造型，因為太累了，手工很差，給你們看看，要包好，不然就像我現在這樣，不包緊，湯圓就有裂痕，希望一會兒就不會爆漿，現在我分開兩個步驟做，首先有個水煲滾，另外有個煲煲糖水，用薑和糖煮就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:11.66" id="00:16:11.66" class="lt" onclick="jumptoTime(971, this.id)"><p>隨你喜歡多甜就可以了，可以煲滾再放，或者我這樣慢慢煲，可以用剩的糖慢慢煲，另一邊煲糖水，這邊也是煲滾水，最緊要水滾，開始滾就可以放下去，之前說過沒有一個墊在下面，可以整個放下去，不然會黏底，又或者不想放紙煮，可以撕開放下去，推一推，讓它不要動，不然可以整張放下去，讓它煮，也可以全部放下去，現在火要調小，讓它慢慢煮。</p></a>
+				<a href="#00:17:32.44" id="00:17:32.44" class="lt" onclick="jumptoTime(1052, this.id)"><p>放或不放都可以，我現在不放紙就可以了，推一推，稍後煮好紙都會自己移出來，現在最重要的方法，如果煮湯圓，尤其是這些公仔湯圓，不想它爆開，唯一的方法就是，大火一開放下去，就調小火，讓它慢慢煮，這樣就會熟，而且不會爆開，或者完全化開，煮到什麼時候才可以呢，慢慢煮到浮起，然後關火，拿出來，有些人喜歡拿凍水去過冷河。</p></a>
+				<a href="#00:18:20.44" id="00:18:20.44" class="lt" onclick="jumptoTime(1100, this.id)"><p>也可以，或者我直接放進糖水，放進我做好的糖水，就可以關火，只要不要用很大火，現在全部都浮起，就已經可以了，煮好之後，就可以將它，每一個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:18:42.44" id="00:18:42.44" class="lt" onclick="jumptoTime(1122, this.id)"><p>這樣就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:53.72" id="00:18:53.72" class="lt" onclick="jumptoTime(1133, this.id)"><p>exclude</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:58.50" id="00:18:58.50" class="lt" onclick="jumptoTime(1138, this.id)"><p>Lo，fossil，или，рядом，scorp taper</p></a>
+				<a href="#00:18:56.46" id="00:18:56.46" class="lt" onclick="jumptoTime(1136, this.id)"><p>pars，purple，Sentinel，광，crest，Walt ether，symbolic，とう，bumpy，edit</p></a>
+				<a href="#00:19:29.17" id="00:19:29.17" class="lt" onclick="jumptoTime(1169, this.id)"><p>Prov�� Ot，одно，nuovo，anno，deutsVES，마음，allevi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:28.65" id="00:19:28.65" class="lt" onclick="jumptoTime(1168, this.id)"><p>misinformation，parece，wichtig，Part Holl evacuate，얼굴，ymm，colleges，INTERVIEWER，ெ，spiritually，forecasting，lower，немножко，imize，trave She Administration，else。</p></a>
+				<a href="#00:19:26.97" id="00:19:26.97" class="lt" onclick="jumptoTime(1166, this.id)"><p>來 abonn，flagship Christians，hod，하면서，commencé，지막，幹嘛，adequ models，Bab管，скорее，您 Çok，города，liquidity，Thema，거，Deck willingly，에서도，dependent，forwards，dri attent sane。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:28.11" id="00:19:28.11" class="lt" onclick="jumptoTime(1168, this.id)"><p>ável，einer，redes，delegation，hält athe Letter著，fleet，width，BUT，完成了，拿一張照片給你們看，看一看，是怎樣的，看看，涼拌湯圓，沒化，很香</p></a>
+				<a href="#00:19:45.31" id="00:19:45.31" class="lt" onclick="jumptoTime(1185, this.id)"><p>很香，很香，很香</p></a>
+				<a href="#00:19:51.31" id="00:19:51.31" class="lt" onclick="jumptoTime(1191, this.id)"><p>很香，很香</p></a>
+				<a href="#00:19:55.31" id="00:19:55.31" class="lt" onclick="jumptoTime(1195, this.id)"><p>很香，沒化，沒化，可以吃了，今天介紹到這裡，我不試吃了，因為我想配搭，現在還是很漂亮的照片，下次再見，拜拜，再給你們看，拜拜。</p></a>
+</div>
+	</body>
+</html>

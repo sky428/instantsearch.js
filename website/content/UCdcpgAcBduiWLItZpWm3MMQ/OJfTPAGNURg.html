@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆腐布甸(Tofu Pudding)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OJfTPAGNURg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>豆腐布甸(Tofu Pudding)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>豆腐布甸，大家好，今天我和大家一起做一個很簡單的甜品，叫豆腐布丁，有什麼材料呢?很簡單，首先要有豆腐，豆漿，啫喱粉，魚膠粉，糖，還有忌廉，材料就這麼多，我們開始做吧，首先要量豆腐，這是一隻滑豆腐，如果在你們的地方找，可以找一隻軟的，或者香港有隻叫Silk的，千萬不要用硬的豆腐，而是要用滑的，我這裡有300克，我只需要一半，150克。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:29.88" id="00:01:29.88" class="lt" onclick="jumptoTime(89, this.id)"><p>現在就打開豆腐，這個甜品很簡單，如果有朋友來，你趕著做，這個其實是一個很快捷的甜品，我需要150克，倒出來，我多一點也不要緊，因為我待會要再，我現在這樣還要避一避它的水，剩下的那個可以拿個盒子裝起，把豆腐切成小塊，放在隔的上面，因為我想把豆腐留一點水，所以我把豆腐放開，然後就要量豆漿。</p></a>
+				<a href="#00:03:2.75" id="00:03:2.75" class="lt" onclick="jumptoTime(182, this.id)"><p>豆漿需要225克，大約一杯的豆漿，我現在就將它放進去，這個豆漿是用無糖的豆漿來做的，我用無糖豆漿的意思是因為我想糖份可以自己控制，我大約會用40克糖，完成後，我會放10克魚膠粉，魚膠粉可以有兩個做法，浸泡後整容或是加熱，我用10克魚膠粉，應該是13克</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:33.11" id="00:05:33.11" class="lt" onclick="jumptoTime(333, this.id)"><p>魚膠粉，魚膠粉放入碗中後，要攪拌一下，因為魚膠粉，一碎就會吸收，所以要攪拌一下，以免魚膠粉起粒，同時，最簡單的方法，就是加熱</p></a>
+				<a href="#00:05:57.11" id="00:05:57.11" class="lt" onclick="jumptoTime(357, this.id)"><p>慢慢煮，這個方法最簡單，所有材料放在一個鍋裏面就完成了，如果家裏沒有手攪拌機，可以用攪拌機，可以一次過攪拌，我用這個方法，就是在一個鍋裏面做完，等一會兒糖溶化後，我把豆腐放進去，攪拌，過篩就可以了，這樣就可以了，是不是很快就完成呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:27.87" id="00:07:27.87" class="lt" onclick="jumptoTime(447, this.id)"><p>等待煮熟，煮至魚膠粉和糖溶化即可，檢查一下，已經煮沸了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:48.87" id="00:07:48.87" class="lt" onclick="jumptoTime(468, this.id)"><p>關掉機器，好 嘩 好濛好濛，先放回來，在這個時間，我將豆腐倒進去，然後打勻</p></a>
+				<a href="#00:08:55.10" id="00:08:55.10" class="lt" onclick="jumptoTime(535, this.id)"><p>然後放入冰箱冷藏，豆腐全部溶化，完成了，還未可以，剛才我提及過，我們有忌廉，忌廉在這個食譜中，忌廉很重要，如果你在外面，看別人做的豆腐布甸，只有豆腐和豆漿，而我的食譜為何會有忌廉，因為我發覺豆腐有豆青味，如果你想它去除那種味道，不想加任何香味，最好用牛奶，我加牛奶也不會加太多，我只加100克。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:9.67" id="00:10:9.67" class="lt" onclick="jumptoTime(609, this.id)"><p>加了牛奶，我以為是忌廉，可以去除草青味，也會creamy，感覺厚實，也會好吃，現在全部完成了，最後一個步驟，過篩，我選擇過篩在一個大玻璃壺，因為我可以倒進自己的容器，有些未打碎的可以用筷子搓碎，用筷子搓碎，再過多兩次，確保鋪好所有鋪面，最後一次</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:54.33" id="00:11:54.33" class="lt" onclick="jumptoTime(714, this.id)"><p>把剩下的糖粉放在桌子上，可以在桌子上試味，可以在桌子上試味，可以在桌子上試味</p></a>
+				<a href="#00:12:18.33" id="00:12:18.33" class="lt" onclick="jumptoTime(738, this.id)"><p>可以在桌子上試味，謝謝觀看，我覺得夠甜，然後就可以放在你喜歡的器皿上，我預備了一些，我可以放進雪櫃，可以用小杯或大碗</p></a>
+				<a href="#00:13:41.61" id="00:13:41.61" class="lt" onclick="jumptoTime(821, this.id)"><p>放入冰箱冷藏30分钟，准备1个鸡蛋，加入1个鸡蛋，加热到蛋黄融化，完成了!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:24.52" id="00:14:24.52" class="lt" onclick="jumptoTime(864, this.id)"><p>這樣就可以拿去冰箱冷藏，大約冷藏三至四小時，就可以再裝飾，然後就可以上碟了，現在先把它放進冰箱，另外你可以看到有些泡，你可以慢慢刮走泡，或者覺得泡沒有問題，可以放些泡在上面，另外有個方法就是，用火槍輕輕地燙一燙，我現在打算把泡弄走，在表面輕輕地吹一吹，氣泡就會全部消失，這樣就會很滑。</p></a>
+				<a href="#00:15:19.52" id="00:15:19.52" class="lt" onclick="jumptoTime(919, this.id)"><p>不會有一粒一粒的，豆皮就會這樣，OK!</p></a>
+				<a href="#00:15:27.52" id="00:15:27.52" class="lt" onclick="jumptoTime(927, this.id)"><p>完成了!</p></a>
+				<a href="#00:15:34.52" id="00:15:34.52" class="lt" onclick="jumptoTime(934, this.id)"><p>好!現在就把它放進冰箱，回到家了，這樣就從早上做到晚上了，這樣就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:48.52" id="00:15:48.52" class="lt" onclick="jumptoTime(948, this.id)"><p>冰好了，可以一碗一碗拿出來</p></a>
+				<a href="#00:15:53.52" id="00:15:53.52" class="lt" onclick="jumptoTime(953, this.id)"><p>給你看看，可以再加點奶油或水果裝飾，或者可以這樣，如果想再濃味一點，除了豆腐味之外，可以加點黑糖漿，我吃完味就這樣，今天就這樣了，希望你們喜歡，拜拜。</p></a>
+</div>
+	</body>
+</html>

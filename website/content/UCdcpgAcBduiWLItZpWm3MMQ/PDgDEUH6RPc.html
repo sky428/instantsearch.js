@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自家製雪糕(不用雪糕機) - Homemade Ice-Cream</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'PDgDEUH6RPc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自家製雪糕(不用雪糕機) - Homemade Ice-Cream</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.67" id="00:00:0.67" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天和大家一起做雪糕，自己在家製作雪糕，材料很簡單，是一個簡易版的雪糕，我需要的材料只有兩樣東西，首先製作雪糕底，需要兩樣東西，首先是煉奶，一罐，這罐煉奶我已經放在雪櫃冷藏，已經冷藏一晚，然後是忌廉，鮮忌廉，兩樣材料，就是這麼簡單，現在開始試吧，首先要做什麼呢?</p></a>
+				<a href="#00:00:40.39" id="00:00:40.39" class="lt" onclick="jumptoTime(40, this.id)"><p>就是打忌廉，我們要製作雪糕底，製作雪糕底後，就可以加入自己喜歡的材料，就變成自己喜歡吃的雪糕，現在天氣這麼熱，如果在家製作雪糕，製作自己喜歡的雪糕，你說多好呢?</p></a>
+				<a href="#00:01:3.39" id="00:01:3.39" class="lt" onclick="jumptoTime(63, this.id)"><p>首先，我要將忌廉打起，一罐煉奶，我需要三杯忌廉，忌廉比例高一點，打起後，可以鎖住空氣，用空氣打進去，如果空氣多一點，結冰後，水分會多一點，可能會冰一點，如果結新一點，就不會那麼冰，這是我猜的，不過，可以試試看，我先打起忌廉，煉奶已經有糖，所以我不會再加糖，開始看到有少許紋路出現，繼續打。</p></a>
+				<a href="#00:02:48.54" id="00:02:48.54" class="lt" onclick="jumptoTime(168, this.id)"><p>不要過度打發，因為打發過程中會變成牛油，現在還未可以，仍然很軟，像軟雪糕一樣，但這個時候要刮一下邊緣，讓它混合均勻一點，現在好像軟雪糕一樣，我們再打發它，讓它停一停</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:6.54" id="00:04:6.54" class="lt" onclick="jumptoTime(246, this.id)"><p>謝謝觀看，現在看到它停了之後，看到一些紋路開始清晰，我們又再檢查一下，打成怎樣，現在已經結成一個忌廉狀，讓你看看，如果再打到它太實，它就會變成牛油，所以我們要在這個步驟小心一點，去檢查它的狀態，旁邊還有少少散開，我可以再打多一會，看著這樣打吧，現在看到紋路很清楚，粒粒痕跡也很清楚，接著我們下一個步驟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:31.92" id="00:05:31.92" class="lt" onclick="jumptoTime(331, this.id)"><p>很簡單，把罐煉奶打開，然後把罐煉奶加進去打，接著我們開始打，剩下的也刮下去，如果拍片太甜的話，可以加多一點忌廉，接著打蛋，打至全部混合，要檢查底部，因為煉奶是重的，很容易會把奶油的底部都加進去，所以要攪拌均勻，現在已經變成很軟的雪糕狀，但一定要打底，確保奶油和奶油混合均勻，不然會沉底。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:5.35" id="00:08:5.35" class="lt" onclick="jumptoTime(485, this.id)"><p>bizarre，bridge，ρι</p></a>
+				<a href="#00:08:14.55" id="00:08:14.55" class="lt" onclick="jumptoTime(494, this.id)"><p>宮，Ka，tried，constant，��도</p></a>
+				<a href="#00:08:7.75" id="00:08:7.75" class="lt" onclick="jumptoTime(487, this.id)"><p>WAS�ись，worrying，acking，'!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.01" id="00:08:27.01" class="lt" onclick="jumptoTime(507, this.id)"><p>lambda，이� tractor，Não，min++，greet</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.03" id="00:08:27.03" class="lt" onclick="jumptoTime(507, this.id)"><p>ought side，Aqu thri5000，PDF</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:25.09" id="00:08:25.09" class="lt" onclick="jumptoTime(505, this.id)"><p>gg，auf，cris，conta hijo，owes，radiant，02，事情</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.17" id="00:08:31.17" class="lt" onclick="jumptoTime(511, this.id)"><p>�нул，Pul形</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.71" id="00:08:27.71" class="lt" onclick="jumptoTime(507, this.id)"><p>Getting，Jude，Water，Jeder，색，princess，closing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:8.09" id="00:08:8.09" class="lt" onclick="jumptoTime(488, this.id)"><p>OP，続，seulement，definitive，dere，� Crimea，BC，partial，ł，ructure，flower</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:30.95" id="00:08:30.95" class="lt" onclick="jumptoTime(510, this.id)"><p>Yin，Twist，dess，周 stick</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:11.25" id="00:08:11.25" class="lt" onclick="jumptoTime(491, this.id)"><p>баг，darum，Allies，lange，단，ży</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:33.13" id="00:08:33.13" class="lt" onclick="jumptoTime(513, this.id)"><p>�다는，Ny，lig Vou，tap Tomorrow，부분</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:33.53" id="00:08:33.53" class="lt" onclick="jumptoTime(513, this.id)"><p>spiral，vine，inha，Feed</p></a>
+				<a href="#00:08:8.69" id="00:08:8.69" class="lt" onclick="jumptoTime(488, this.id)"><p>our，這樣就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:26.87" id="00:08:26.87" class="lt" onclick="jumptoTime(506, this.id)"><p>拿出來給你們看看，多漂亮，先試味，現在是牛奶味，這個就是雪糕的底，撥開一點，很漂亮的雪糕，現在可以分開，這個雪糕很大，這個時間可以分開成幾盒，不同味的雪糕，我先拿鐵盤出來，分開幾盒，當然最好量度好，當食譜出的時候，大家就比較容易去量度，我先分開大約200克，這樣比較容易印，我多天量240克，大概220克。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:5.87" id="00:11:5.87" class="lt" onclick="jumptoTime(665, this.id)"><p>這樣就可以做到四種味道，怎樣做呢?</p></a>
+				<a href="#00:11:25.87" id="00:11:25.87" class="lt" onclick="jumptoTime(685, this.id)"><p>用自己的想像，家裡有什麼材料可以做雪糕，我打算做一種是乳酪味，另一種是綠茶味，如果想做水果，可以加芒果味，這樣就可以加進去，材料怎樣加呢?</p></a>
+				<a href="#00:12:17.87" id="00:12:17.87" class="lt" onclick="jumptoTime(737, this.id)"><p>打勻就可以了，大約1 4 杯，我用2大匙來比對，這樣比較容易，現在剩下的，因為我家裡很熱，我先收起來，我先收在雪櫃，剩下的我再舀一點，然後拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:20.87" id="00:13:20.87" class="lt" onclick="jumptoTime(800, this.id)"><p>放進去，然後打勻，打勻，做好一個</p></a>
+				<a href="#00:13:50.87" id="00:13:50.87" class="lt" onclick="jumptoTime(830, this.id)"><p>這樣就可以了，按照道理，我下一個就加味露，先放在旁邊，看你喜歡吃多濃味，我放4匙，當作喝杯味露，然後把味露放進去，打勻</p></a>
+				<a href="#00:14:25.87" id="00:14:25.87" class="lt" onclick="jumptoTime(865, this.id)"><p>打勻，攪勻就可以了，試味</p></a>
+				<a href="#00:14:48.87" id="00:14:48.87" class="lt" onclick="jumptoTime(888, this.id)"><p>味露味，正，然後一樣，放進盒子裡</p></a>
+				<a href="#00:15:2.87" id="00:15:2.87" class="lt" onclick="jumptoTime(902, this.id)"><p>好，第二種味，做好了</p></a>
+				<a href="#00:15:10.87" id="00:15:10.87" class="lt" onclick="jumptoTime(910, this.id)"><p>第三個，我打算做芒果，如果買到新鮮芒果，當然很好，如果買到新鮮芒果，但我這裡不是常買到新鮮芒果，我可以買一些冰的，放進去，你先看看，剛才那裡，其實也不需要很多，我放這麼多也夠，你家裡有灑汁也可以用，我放一點，你家裡有灑汁也可以用，然後把芒果打勻</p></a>
+				<a href="#00:15:56.87" id="00:15:56.87" class="lt" onclick="jumptoTime(956, this.id)"><p>打勻，看看，看你想打到多勻，還是要有芒果肉，你喜歡的，我想再勻一點，OK，我放一點忌廉打一打，讓它有水份打容易一點，再打，剛才的雪糕打勻，先放一點，再打</p></a>
+				<a href="#00:17:23.87" id="00:17:23.87" class="lt" onclick="jumptoTime(1043, this.id)"><p>好，這樣它就會更融化，然後我就可以將這個融化的部分放在雪糕底，很creamy，很棒，然後我們就可以打勻它，將所有芒果蓉和雪糕粉拌勻</p></a>
+				<a href="#00:18:25.09" id="00:18:25.09" class="lt" onclick="jumptoTime(1105, this.id)"><p>我們可以在這個機會再加芒果進去，讓它變黃，加少許這個進去</p></a>
+				<a href="#00:18:45.09" id="00:18:45.09" class="lt" onclick="jumptoTime(1125, this.id)"><p>再加芒果，攪拌至歪歪的，看你喜歡的芒果有多少，我覺得想加多些芒果，就加多些，這個就攪拌至沒有那麼融化，這樣混合進去，就變成看到芒果肉，真的發揮自己的小宇宙，自己去想想，加些什麼進去會好吃，自己喜歡什麼味道，因為你已經知道多底的味道，你已經試過了，再加什麼味道，你就自己慢慢試，很美麗。</p></a>
+				<a href="#00:19:38.09" id="00:19:38.09" class="lt" onclick="jumptoTime(1178, this.id)"><p>然後我們又一樣，放回碗裡</p></a>
+				<a href="#00:19:44.09" id="00:19:44.09" class="lt" onclick="jumptoTime(1184, this.id)"><p>這個就是芒果味，再放下一個，回到最後一種味道</p></a>
+				<a href="#00:19:54.09" id="00:19:54.09" class="lt" onclick="jumptoTime(1194, this.id)"><p>因為我可以做四種味道，剛才做了美綠味，做了Nutella的榛子巧克力醬味，做了芒果味，現在就做一個芒果味，我會用這個，做Nutella的榛子巧克力醬味，做了芒果味，現在我在想，做綠茶味還是做Raspberry味，我先想想，綠茶經常吃，很少吃Raspberry，不如自己做一個Raspberry味</p></a>
+				<a href="#00:20:27.09" id="00:20:27.09" class="lt" onclick="jumptoTime(1227, this.id)"><p>好了，你可以放士多啤梨，菠蘿，自己喜歡吃的水果，最好是放在冰箱，打下去不會溶化，因為冰箱也是這麼冷，試味</p></a>
+				<a href="#00:21:1.09" id="00:21:1.09" class="lt" onclick="jumptoTime(1261, this.id)"><p>咸咸甜甜的，然後就可以放進容器裡，好 做好了，四種味道放進冰箱，現在其實已經好吃了，可以吃了，是軟雪糕的質地，當然你放進冰箱冰幾個小時，就可以變成一個雪糕了，OK 雪糕已經冷藏了，我現在大概冷藏了兩小時，其實你在家可以冷藏久一點，我現在就開給你們看一下我做了什麼，我做了四種雪糕，芒果。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:23.66" id="00:22:23.66" class="lt" onclick="jumptoTime(1343, this.id)"><p>Nutella，Raspberry，還有就是美濃的，我們可以拿出來，現在還是有點軟，最好是冷藏過夜就最好了，這樣，我拿幾個出來給大家看一下，我拿一個小小的殼，如果冷藏過夜就會比較結實，比較軟一點，OK，做好了之後，我想說一下，我試了一點味道，它的煉奶味道會比較重，如果怕太甜的話，可以自己加一罐煉奶對三杯。</p></a>
+				<a href="#00:23:46.66" id="00:23:46.66" class="lt" onclick="jumptoTime(1426, this.id)"><p>三杯的忌廉，甚至四杯，看你自己喜歡的味道，總之打的時候自己試味，試到適合自己的味道就行了，今天解釋到這裡，希望大家也會試一下。</p></a>
+				<a href="#00:23:59.66" id="00:23:59.66" class="lt" onclick="jumptoTime(1439, this.id)"><p>拜拜。</p></a>
+</div>
+	</body>
+</html>

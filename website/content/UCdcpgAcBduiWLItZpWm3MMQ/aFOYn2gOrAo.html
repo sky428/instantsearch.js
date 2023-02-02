@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>軟朱古力粒曲奇 (Soft Chocolate Chips Cookies)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'aFOYn2gOrAo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>軟朱古力粒曲奇 (Soft Chocolate Chips Cookies)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.22" id="00:00:0.22" class="lt" onclick="jumptoTime(0, this.id)"><p>今天和大家一起做巧克力曲奇，這個曲奇是軟身和酥脆的，不是脆的，希望大家喜歡，我們來看看如何做吧，這裡有牛油，有220克，我可以給你們看看，牛油已經變軟了，已經是室溫了，這裡有100克白糖，200克黃糖，這裡有2隻雞蛋，我已經加了雞蛋黃酪，雞蛋黃酪大約是1至2茶匙，這裡有340克中筋麵粉，最普通的那種。</p></a>
+				<a href="#00:01:4.22" id="00:01:4.22" class="lt" onclick="jumptoTime(64, this.id)"><p>另外有朱古力粒，有兩種的，我給你們看看，這是普通的朱古力粒，我這個是不一樣的，因為你買的牌子是半甜朱古力，我這個是黑朱古力，隨你喜歡，我看到這個品牌有推出一款迷你版，所以我把份量分成一半一半，你可以用同一款，我只是想看看它推出的狀況，所以才分成一半一半，這裡加起來大約有170g，我這裡有少少烏鴉。</p></a>
+				<a href="#00:02:10.91" id="00:02:10.91" class="lt" onclick="jumptoTime(130, this.id)"><p>這個是選擇性的，你們可以完全不理會，做巧克力材料只有這麼多，其實這個可以不加，但我想待會做的時候，有一半有果仁，讓它香一點，所以我放了一些，它只是一個半的份量，這裡是90g，你可以不加，如果你想我全部都想加，這個食譜全部都想加這個烏鴉的話，你可以用到150g，甚至180g，或者和巧克力一樣。</p></a>
+				<a href="#00:02:47.91" id="00:02:47.91" class="lt" onclick="jumptoTime(167, this.id)"><p>170g的烏鴉，你們自己衡量吧，我這裡有90g的核桃肉，我們可以開始做了，我們開始第一個步驟，第一個步驟首先將牛油，我將它放到盤子上，它可能還有些硬，我再搖一搖它，因為我已經放了出來幾個小時，接著可以加入黃糖和白糖，因為我想做傳統的軟身曲奇，所以黃糖的份量會比較多，在加入黃糖之前，我先跟大家說說，黃糖會比較容易乾。</p></a>
+				<a href="#00:04:8.14" id="00:04:8.14" class="lt" onclick="jumptoTime(248, this.id)"><p>平常的黃糖和白砂糖不太相似，只是加了一個材料，就是馬拉松，令它更柔軟和鬆軟，和黃色，現在放在室內，它會比較乾，但不要緊，如果你在家中，你去裝黃糖的話，你拿一個容器裝起它之後，拿一個有特別的牙片，浸水後放進去，它就會一直保持濕潤，接著我會加入砂糖，這裡的比例是黃糖多於砂糖，這樣會令曲奇更鬆軟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:34.14" id="00:05:34.14" class="lt" onclick="jumptoTime(334, this.id)"><p>繼續攪拌，繼續攪拌，完成，打至差不多的程度後，就要刮一刮，糖和牛油可以再攪拌一會，打至材料鬆開，下一個階段就可以將雞蛋逐少放入鍋中</p></a>
+				<a href="#00:07:21.83" id="00:07:21.83" class="lt" onclick="jumptoTime(441, this.id)"><p>將雞蛋和雞蛋黃攪拌均勻，將雞蛋和雞蛋黃攪拌均勻，將雞蛋和雞蛋黃攪拌均勻，現在可以再攪拌一下，檢視一下有沒有大糖粒</p></a>
+				<a href="#00:08:14.57" id="00:08:14.57" class="lt" onclick="jumptoTime(494, this.id)"><p>如果有就再攪拌一下，接著這個步驟之後就不會再用這個電動打發器了，因為怕打發完麵粉之後就會起筋，就會變成麵包了，所以我們就盡量在這家店打勻麵粉，現在已經打好，可以近一點看著，打好的時候，就可以把麵粉放進去，這裡有麵粉，340克的麵粉，我用的是普通的麵粉，即是中筋麵粉，如果想要更輕身的曲奇，可以用低筋麵粉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:7.28" id="00:10:7.28" class="lt" onclick="jumptoTime(607, this.id)"><p>但中筋麵粉就已經足夠了，因為我想要一個鬆軟的曲奇，另外，我亦加了1茶匙的小蘇打粉，另外，我加了半茶匙的鹽，這樣就可以均勻甜度，因為我加了很多糖，現在就把麵粉倒進去，現在全程用這個磨刀來做，把麵粉和糖混合，不要太過分地混合，把所有材料都放進去，然後把所有材料都拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:50.28" id="00:11:50.28" class="lt" onclick="jumptoTime(710, this.id)"><p>完成了，慢慢攪拌至麵團狀，攪拌均勻，就可以了，這個時間可以預熱焗爐，325至350度，視乎自己家的焗爐，焗也不需要焗太久，因為我這個食譜是鬆軟曲奇，如果焗太久會變硬和脆，所以時間要因應，麵團已經搓成一團，已經變成麵團狀，看到白色粉沒有了，基本上已經可以了，我們就可以把巧克力chips全部放進去，但我和你剛才說過。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:10.80" id="00:13:10.80" class="lt" onclick="jumptoTime(790, this.id)"><p>我自己想要放果仁進去，所以我把它分一半，如果你不放的話，全部放進去就可以了，或者你想全部加果仁，就放兩倍果仁的份量，現在就有兩個了，我們就可以把巧克力chips，分一半一半放進去，這個就這樣放，不量了，然後就可以輕輕地攪拌，這個就放在合桃，就塞進去，那邊就不放合桃，就只放巧克力</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:17.80" id="00:14:17.80" class="lt" onclick="jumptoTime(857, this.id)"><p>攪拌完就把這個也攪拌，這個就是純巧克力chips，下一個步驟就很簡單了，你可以就這樣用兩隻匙羹，大約一匙羹一隻曲奇，你可以這樣用，或者你學我這樣，或者你可以像我這樣用一個小的，這個很小的，你看到嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:58.62" id="00:14:58.62" class="lt" onclick="jumptoTime(898, this.id)"><p>用一個小的雪糕筆，我們打開它也可以，這個比較方便，我做了一個，然後我就可以放開它，這樣大約一個雪糕筆就一個，這樣就隔開一點，這樣我隔開一點，因為你預計它可能會化開，可以用焗爐紙或我這樣用也可以，這樣把它們分開，這樣就完成了，這樣就可以拿去焗了，如果你想一次過做好之後，可以整個放進冰箱嗎?</p></a>
+				<a href="#00:16:26.89" id="00:16:26.89" class="lt" onclick="jumptoTime(986, this.id)"><p>我建議先把它們全部搗碎，然後放進冰箱，冷凍後，用密實袋或密實盒放進冰箱，用的時候才拿出來烤，好過冷凍後，很難拿出來烤，我每樣都烤了一半，烤了12個給你們看，ける，cleying ludzie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:59.81" id="00:16:59.81" class="lt" onclick="jumptoTime(1019, this.id)"><p>j，Brazilian</p></a>
+				<a href="#00:16:58.79" id="00:16:58.79" class="lt" onclick="jumptoTime(1018, this.id)"><p>워서，achter，achment</p></a>
+				<a href="#00:16:58.77" id="00:16:58.77" class="lt" onclick="jumptoTime(1018, this.id)"><p>94，Walשוב，咁樣呢我哋依家呢就可以攞去焗㗎啦，325至350度你焗呢就係由8分鐘至15分鐘不等咁就真係，睇下你嗰個曲奇，你想要嗰個程度啦，我呢就保險啲我由8分鐘開始就睇下佢個程度啱唔啱我心意如果想再硬啲，如果夠軟身都覺得夠㗎啦咁就停咗佢囉咁依家呢我就攞去焗啦，趁住焗緊嘅時候呢我呢就介紹一下點樣去整一個曲奇。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:17:33.63" id="00:17:33.63" class="lt" onclick="jumptoTime(1053, this.id)"><p>點樣去留心啲乜嘢嘅，今日呢我就做一個軟身曲奇，當係呢一個呢就係個中間位嘅材料啦，咁除咗譬如雞蛋呀麵粉嗰啲都係一樣之外呢最緊要個曲奇個質地，變成點樣好似好蛋糕嘅感覺，定係好脆身嘅感覺呢似乎就係兩樣嘢嘅呢就係，牛油同埋糖，比例啦，咁樣呢如果好似我今日個曲奇呢，牛油當係一份嘅時候呢如果你想整得比較，乾身啲。</p></a>
+				<a href="#00:18:12.29" id="00:18:12.29" class="lt" onclick="jumptoTime(1092, this.id)"><p>冇咁肥嘅，再軟身啲嘅曲奇呢，咁樣呢咁呢就係係我一份嘅牛油佢就會少啲啦就0.8份，如果係想食脆身嘅，我記得係香港人鍾意食嗰啲曲奇都係脆身啲嘅咁呢可能呢佢嘅牛油呢嘅成分就要高啲啦，可能係我呢度嘅1.5倍，咁另外呢就係我今日呢嗰個嗰個，食譜呢，我畀呢就係譬如當我個Brown Sugar同埋，白糖啦黃糖同白糖啦。</p></a>
+				<a href="#00:18:47.61" id="00:18:47.61" class="lt" onclick="jumptoTime(1127, this.id)"><p>咁黃糖咁我呢度呢就係我個，黃糖係多啲嘅但係我唔係咁我哋咁樣睇就唔好咁樣睇我而家係咁樣，相對嚟，介紹畀你哋睇嘅啫，咁如果你係黃糖嘅話呢如果我呢度一份黃糖，我想要脆身啲呢咁我嘅脆身啲嘅呢就要，少啲啦就0.75，份嘅黃糖啦，咁呢一邊呢就更加少啦如果你想，比較Kiki啲嘅呢咁呢就可能呢係，一個Quarter嘅份量嘅黃糖。</p></a>
+				<a href="#00:19:20.63" id="00:19:20.63" class="lt" onclick="jumptoTime(1160, this.id)"><p>跟住如果你係想要，你然後跟住白糖嗰部分如果我用呢一個咁嘅食譜嘅當嗰個白糖係一份嘅，時候呢，咁樣呢，如果要做得更脆的話 就要加多一次白糖分量，這個份量是多一點點的，這樣做的話 白糖分量會比平常用的少一點，基本上 如果牛油糖的份量少的話，曲奇會比較乾身 質地會比較像蛋糕類，如果黃糖和白糖的比例高一點的話。</p></a>
+				<a href="#00:20:22.38" id="00:20:22.38" class="lt" onclick="jumptoTime(1222, this.id)"><p>就會令曲奇的質地更脆，如果想要脆身一點的話，牛油糖的份量會比較多，高糖高油的份量才會令曲奇脆身，這個就是我今天的分享，如果想要同樣的食譜的話，可以自己加減食譜，就可以調節自己喜歡的份量，焗好了 我們出來看看，我現在焗了14分鐘，我用了335度的溫度，現在是很鬆軟的曲奇，後面已經焗碎了。</p></a>
+				<a href="#00:21:16.38" id="00:21:16.38" class="lt" onclick="jumptoTime(1276, this.id)"><p>現在要等它放在曲奇架上 讓它放涼，讓它慢慢放涼，待會撕開來看看，放涼後的曲奇 看看多漂亮，這個小的曲奇 裡面是有核桃的，我來一個給你們看看，裡面已經熟透了，我先試一下味，外面有點脆之餘，裡面又軟軟的，再吃一個，今日介紹到這裡，希望大家在家試試做吧!</p></a>
+				<a href="#00:22:23.08" id="00:22:23.08" class="lt" onclick="jumptoTime(1343, this.id)"><p>拜拜!</p></a>
+</div>
+	</body>
+</html>

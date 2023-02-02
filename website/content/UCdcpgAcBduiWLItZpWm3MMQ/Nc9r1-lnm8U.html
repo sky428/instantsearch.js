@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在家做果醬(簡短版) Homemade blueberry jam - Short Version</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Nc9r1-lnm8U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>在家做果醬(簡短版) Homemade blueberry jam - Short Version</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.57" id="00:00:4.57" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，今天我想介紹如何製作果醬，材料方面很簡單，首先，需要有三種材料，就是你需要的水果、檸檬和糖，份量是怎樣呢?其實有很多不同的準則，首先，如果你的水果不太甜，可以減少糖的份量，外面的果醬，很多時候都是一比一甜，如果我們想吃得健康一點，就建議一個份量，糖就是水果的重量，三至四成，而不同的水果製作果醬，最重要是有濃稠度。</p></a>
+				<a href="#00:01:10.57" id="00:01:10.57" class="lt" onclick="jumptoTime(70, this.id)"><p>而令它有濃稠度和糖膠的，就是檸檬或果實類的果，像這種醬果類，野生的藍草莓，比外面的藍草莓小很多，我們今天就試用這個來製作，現在可以開始製作了，首先，我們要把果醬拿去煮，然後，我們可以把檸檬切開一半，然後就榨汁，這個皮我會留用，可以用來做其他食材，或者用來沖檸檬水之類的，這個我會留用，這個就放在這裡。</p></a>
+				<a href="#00:02:12.99" id="00:02:12.99" class="lt" onclick="jumptoTime(132, this.id)"><p>這裡很簡單，首先將藍莓洗乾淨，把水沖乾，然後放進去，然後就拿糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:24.99" id="00:02:24.99" class="lt" onclick="jumptoTime(144, this.id)"><p>然後就打開蓋子，不用太大火，用小火慢慢煮，再加檸檬汁，這樣就不要讓水滲進去，再加檸檬汁，用小火慢慢煮，這樣就完成了，放進去煮，一會兒拿出來，這樣想豐富這個藍莓的味道，其實你可以加其他東西，有人就會加月桂葉，有人就會將這個檸檬的皮，都會刨到很幼放進去，我這次就只想加檸檬，我就是想藍莓的味道。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:46.70" id="00:03:46.70" class="lt" onclick="jumptoTime(226, this.id)"><p>現在的濃稠度，都未知可以了嗎?</p></a>
+				<a href="#00:03:51.70" id="00:03:51.70" class="lt" onclick="jumptoTime(231, this.id)"><p>我們想知什麼可以了嗎?</p></a>
+				<a href="#00:03:53.70" id="00:03:53.70" class="lt" onclick="jumptoTime(233, this.id)"><p>先關火，如果不行的話，我們可以再放進去煮，現在我怎樣試呢?</p></a>
+				<a href="#00:04:1.70" id="00:04:1.70" class="lt" onclick="jumptoTime(241, this.id)"><p>拿一隻放在冰箱10分鐘8分鐘的碟，然後就將它倒進去，其實它也不太膩，也可以，你可以再弄濃稠一點，我就OK了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.41" id="00:04:28.41" class="lt" onclick="jumptoTime(268, this.id)"><p>然後呢，看它樣子已經很濃稠，然後我們就要將，檸檬皮</p></a>
+				<a href="#00:04:35.41" id="00:04:35.41" class="lt" onclick="jumptoTime(275, this.id)"><p>把檸檬皮拿走，我的瓶子一直在煮，不過我剛才就關了火，然後我們可以將水煮熟，這個剩下的也會有水，有些水在裏面，但是它一出，它的熱氣已經將水蒸得較稀，這個時候我會放進微波爐，蒸一蒸它，等到裏面的水都蒸發了，我們就將</p></a>
+				<a href="#00:05:9.41" id="00:05:9.41" class="lt" onclick="jumptoTime(309, this.id)"><p>蓋子倒進去，OK，蓋上蓋子，我今天做得少，應該用個小一點的盅，不要緊啦，它冷了就可以放進雪櫃，今天我的介紹就是這樣，拜拜!</p></a>
+</div>
+	</body>
+</html>

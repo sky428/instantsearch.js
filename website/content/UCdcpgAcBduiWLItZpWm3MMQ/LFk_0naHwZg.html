@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玻璃曲奇 - Stained-glass Cookies</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LFk_0naHwZg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>玻璃曲奇 - Stained-glass Cookies</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.35" id="00:00:4.35" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友，你們好!聖誕節快到了!</p></a>
+				<a href="#00:00:9.35" id="00:00:9.35" class="lt" onclick="jumptoTime(9, this.id)"><p>接下來的三個星期，我會和大家一起做有關聖誕節的食譜，我亦在群組留下了投票，首三位是玻璃曲奇、紅絲絨蛋糕和聖誕節小食，今天我會和大家一起做玻璃曲奇，聽到就知道玻璃曲奇究竟是什麼?</p></a>
+				<a href="#00:00:41.35" id="00:00:41.35" class="lt" onclick="jumptoTime(41, this.id)"><p>其實就是在曲奇中間空心，預留空間，我們會把糖果放進去，當糖果受熱融化後，成品就會透明穿過曲奇，就像玻璃一樣，平時在教堂會看到彩色玻璃，我希望可以做到這個效果，不如我們先介紹材料吧!</p></a>
+				<a href="#00:01:21.35" id="00:01:21.35" class="lt" onclick="jumptoTime(81, this.id)"><p>首先有無鹽牛油，已經室溫了，150克，Icing sugar，糖粉70克，低筋麵粉200克，粟粉50克，Baking soda 1茶匙，鹽和香油，如果喜歡的話可以加橙皮或檸檬皮，我們先介紹牛油的處理方法，牛油方面，平時在加拿大買的牛油都是很大塊的，我會把牛油切成小塊，像豆腐一樣。</p></a>
+				<a href="#00:02:37.04" id="00:02:37.04" class="lt" onclick="jumptoTime(157, this.id)"><p>然後用盒子盛起，凍好後用的時候，烘焙、烤食、曲奇等等，很多時候都需要把牛油室溫，因為一大塊放出來幾個小時，都未必會溶，可以很軟，因為我這裡是北美洲，比較冷，就算在室溫也不容易，牛油放一兩個小時可以溶，切小塊後就容易一點，再不然，像我這樣，為什麼一堆東西是什麼呢?</p></a>
+				<a href="#00:03:18.60" id="00:03:18.60" class="lt" onclick="jumptoTime(198, this.id)"><p>就是一塊塊牛油拿出來後，我會用一個木棍，用硬麵粉的木棍，打它，打到它變扁，然後放在桌面上，室溫它，這樣會快很多，因為它已經攤平了，這樣會快很多，就可以拿來用了，不用特意等，早點拿出來，這樣就快捷一點，接下來我們介紹一下，中間空心裡面的內餡是什麼，中心空心曲奇裡面，我們會放不同各式各樣的糖果。</p></a>
+				<a href="#00:04:0.04" id="00:04:0.04" class="lt" onclick="jumptoTime(240, this.id)"><p>我們最好選一些硬糖，上網我看到很多食譜都介紹，有一種Fox的糖果很好吃，那種做出來的顏色都可以很漂亮，但如果像我這樣，未必隨時可以買到的話，我都可以去買其他牌子，只要是硬糖，晶瑩禿頭的硬糖，你看看，好像寶石的硬糖，什麼顏色什麼味道，你自己喜歡吧，如果連這些都找不到的話，也可以像我這樣。</p></a>
+				<a href="#00:04:36.24" id="00:04:36.24" class="lt" onclick="jumptoTime(276, this.id)"><p>因為這種硬糖我找不到黃色，我很想要黃色，這樣我就買了類似這些的糖，這款是像Lollipop那種，盒子裡的小球棒糖，這個在加拿大最容易找到，接下來我們要怎樣處理糖果呢，我們先移開它，怎樣處理呢?就是這樣，你可以用一個鐘 即是鐘spice那些，或者像我這樣蓋著它，然後就拿一個這樣的棉棒，就可以輕輕地。</p></a>
+				<a href="#00:05:13.06" id="00:05:13.06" class="lt" onclick="jumptoTime(313, this.id)"><p>打它兩下，它就已經可以碎掉了，看看，然後就放好它，你可以再打碎一點也可以的，我隨意，其他的都是這樣處理，都是一樣蓋著它之後，這樣打碎它，打碎它 這個比較難打碎，甚至你可以用錘子打它，我一會兒要處理一下，弄髒了自己的桌子，好 我要處理一下，看看怎樣弄碎它，如果家裡有平時做豬扒，需要打的時候都會有類似這些東西。</p></a>
+				<a href="#00:05:58.06" id="00:05:58.06" class="lt" onclick="jumptoTime(358, this.id)"><p>都可以打碎它，當然如果這張桌子像我這樣是木桌子，最好有東西剪一剪它，我就慢慢打碎它，要多少就悉隨尊便，看你自己要弄多少個曲奇，我現在弄多一點，放在這裡一會兒看看怎樣做，現在我就說曲奇，曲奇裡面的大小和形狀，不如我先介紹一下，我想弄到它是圓形的曲奇，然後中間有個圖案，我家裡有很多不同的，這些是切菜的模。</p></a>
+				<a href="#00:06:39.06" id="00:06:39.06" class="lt" onclick="jumptoTime(399, this.id)"><p>可以有櫻花樣，看不看得到，櫻花樣，或者普通的花樣，你可以切一個心形在這裡，星星，紅色的，我的構思就是，這裡還有買了新的，有大有小的，有大的或者小的，另外就是，鴨子，這個也是比較胖的紅色，或者是兔子的，所以你做的時候還有很多不同的，看你家裡有什麼就可以用，我怎樣選擇大小呢?</p></a>
+				<a href="#00:07:32.34" id="00:07:32.34" class="lt" onclick="jumptoTime(452, this.id)"><p>你可以選擇像這些有啞形的，我就想要圓形的，所以我會用這一邊，把圓形的曲奇吸出來，然後我就要在裡面放一個圖案，你就要遷就，像這些這麼小的，你放在這裡就不漂亮了，這麼大，所以你就會遷就，就做一個小一點的曲奇，在裡面大一點就會漂亮了，但是又不可以太大，不然曲奇外面的皮不夠厚，太薄。</p></a>
+				<a href="#00:08:8.34" id="00:08:8.34" class="lt" onclick="jumptoTime(488, this.id)"><p>待會糖就會噴出來或者會爛，所以你也要遷就一點，選擇你適合的圓周大小的曲奇模，像這些大一點的，我可以遇到大一點的，譬如像這個星星，旁邊也有位置可以放一個大星星，或者像這隻兔子，這樣放進去，吸完之後再吸，玻璃就在兔子的樣子那裡，接下來我們就開始做了，我們開始做的時候，首先就是，糖粉和牛油。</p></a>
+				<a href="#00:08:51.34" id="00:08:51.34" class="lt" onclick="jumptoTime(531, this.id)"><p>先把它打開，我可以將糖粉放在牛油裡，移開一點再看這裡，這裡就是其他的乾粉，這個就是低筋麵粉，粟粉，這個就是，梳打粉，這樣我全部，也將它放在乾粉那邊，攪拌一下，我們可以將乾粉過篩，將牛油和糖粉打勻，剛才是粉和糖，慢慢打就會變成一粒粒，糖就會和牛油混合溶化，我們可以繼續下一個步驟，開始用小轉數打發，糖粉和牛油混合後就可以用快速轉數打發，打到像羽毛狀，很鬆的狀態。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:36.95" id="00:10:36.95" class="lt" onclick="jumptoTime(636, this.id)"><p>這樣就完成了，在這個時候可以加少許Vanilla，接著繼續打發，用得著嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:59.67" id="00:10:59.67" class="lt" onclick="jumptoTime(659, this.id)"><p>可以將麵糊刮一下，將麵糊放入碗中，將其他糖粉也放入碗中，接著繼續打，這個時間就可以加味，如果你想加橙皮的話，也可以在這個時間加，這樣我就加少少，橙洗乾淨了，接著就用刮橙皮的這種磨，在橙皮表面上磨，不要太深，只磨這邊，不要磨旁邊，如果磨得太深，就會苦，香味只停留在表皮上，加多少就隨便，其實我這個橙是很小的。</p></a>
+				<a href="#00:12:12.09" id="00:12:12.09" class="lt" onclick="jumptoTime(732, this.id)"><p>我一手都拿到，我大約這樣加，你喜歡的話可以加檸檬，檸檬味，甚至你可以加香油，不同的杏仁味，橙味，不同的精油都可以，在這個時間就可以加味，我這個時候也加少少鹽，因為我喜歡在甜品上加鹽，去平衡甜味，接著就可以再打打，然後就可以將粉，逐一逐一加入攪拌，慢速，慢慢地，不然會打到到處都是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:13:13.09" id="00:13:13.09" class="lt" onclick="jumptoTime(793, this.id)"><p>加進去，拌勻，scaling，dinero，Ambassador，Ji planeta，Short，stär livre，ären，Weise，şekkür이고 cryptocurrencies，我這個食譜沒有雞蛋和其他材料，就是這樣，將它們混合在一起，等到它變成小沙狀，然後我們就不用打蛋器了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:59.85" id="00:13:59.85" class="lt" onclick="jumptoTime(839, this.id)"><p>我們就用手開始做，而Messi的話就可以用，抹刀或者刮刀，慢慢壓它，將它慢慢壓成一個麵團，或者用手搓揉， 隨你自己喜歡，壓緊它， 但不要太瘦， 要令它變成麵團黏在一起，將麵團放在一旁， 把剩下的麵團刮出來，然後黏在麵團上，麵團做好後， 將它們刮出來，這是一個很鬆化的麵團，將保鮮紙放在中間， 再將其他保鮮紙放在上面。</p></a>
+				<a href="#00:15:17.74" id="00:15:17.74" class="lt" onclick="jumptoTime(917, this.id)"><p>現在可以慢慢印好， 待會就容易點去硬，用保鮮紙擺在上面就容易點操作，因為不需要做太多的印章，可以一次過將它們硬化，首先要量度它們的厚度， 因為要保持著糖的厚度，大約像木筷子一樣厚度， 這樣就差不多了，之前做曲奇也教過， 將它們放在兩旁， 然後搓成圓形，這樣把它們擀開， 擀到跟木筷子一樣厚度，這樣就可以平均厚度了。</p></a>
+				<a href="#00:16:28.82" id="00:16:28.82" class="lt" onclick="jumptoTime(988, this.id)"><p>然後慢慢把麵團撈開，如果用橙皮的話，麵團會有橙皮的，其實不用也行，只要你喜歡，然後我這裡有麵粉，然後我們可以將我需要的曲奇模沾上麵粉，以防麵團黏在上面，所以沾上麵粉，然後把麵團吸出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:6.82" id="00:17:6.82" class="lt" onclick="jumptoTime(1026, this.id)"><p>把麵團的外表吸出來，然後我會繞著這邊繼續吸，貼緊一點就可以省一點位置，你想做多少個就要預計，我這裡起碼做到15個，吸完小的就可以撕開旁邊的，也可以拉一塊再做，不要浪費，做好就可以吸中間的，我現在做這個，然後就選中間的吸，選一個好看的，看你喜歡哪一個，像這個小的就吸大的，就可以將小的沾粉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:18:34.19" id="00:18:34.19" class="lt" onclick="jumptoTime(1114, this.id)"><p>中間一點點，就落一點點，中間這裡可以留個洞，看可不可以吊著，可以做到聖誕樹的裝飾，這樣就吸下去，不要搖它，吸下去就整個吐出來，這塊就可以拿出來，這個也可以照烤來吃，因為它已經有圖形，不要浪費，可以做個洞給它，你可以用牙籤或圓形的擠嘴，做一個洞給它，慢慢地將麵團移出來，掃開多餘的麵粉，放入焗盤。</p></a>
+				<a href="#00:20:3.47" id="00:20:3.47" class="lt" onclick="jumptoTime(1203, this.id)"><p>放入焗盤，然後慢慢地焗，焗好後就放入焗盤，焗糖的溶點是160度攝氏度，如果焗太高的話麵團會滾、會裂開、起泡，出來的玻璃效果就不太好，所以先將麵團焗一半，焗到一半熟的時候，最後幾分鐘，因為麵團很快熟，夠熱的話糖就會溶掉，再放糖上去焗，這樣出來的效果就會好一點，糖就不會起泡，就不會變得不清澈。</p></a>
+				<a href="#00:21:10.47" id="00:21:10.47" class="lt" onclick="jumptoTime(1270, this.id)"><p>當然也要看糖質的質地好不好，也是有影響的，我這個是很便宜的，所以我不知道出來的效果會怎樣，但可以試一下，大家一起做吧，焗爐已經預熱了，330度華氏，170度攝氏，將曲奇放進去，先焗大約8分鐘，然後拿出來，我烤了10分鐘，我用這個食譜的曲奇有一個缺點，就是因為放了baking powder 它會發，現在就可以放糖了。</p></a>
+				<a href="#00:22:18.15" id="00:22:18.15" class="lt" onclick="jumptoTime(1338, this.id)"><p>焗爐要調小一點，現在就可以放糖了，現在就可以放顏色，зя，��</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:22.39" id="00:23:22.39" class="lt" onclick="jumptoTime(1402, this.id)"><p>investments，зап，Avengers，способ，annie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:25.43" id="00:23:25.43" class="lt" onclick="jumptoTime(1405, this.id)"><p>날，arsi，quicker，infection</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:13.27" id="00:23:13.27" class="lt" onclick="jumptoTime(1393, this.id)"><p>Entwick brought，ONY，ipes，Bob 놀�</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:31.21" id="00:23:31.21" class="lt" onclick="jumptoTime(1411, this.id)"><p>flower，сделал</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:32.99" id="00:23:32.99" class="lt" onclick="jumptoTime(1412, this.id)"><p>Today，cious</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:18.73" id="00:23:18.73" class="lt" onclick="jumptoTime(1398, this.id)"><p>준�，�� vaya，championship，influen，países，cheek，鐘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:32.83" id="00:23:32.83" class="lt" onclick="jumptoTime(1412, this.id)"><p>laws，kuv，連，State，的是，r，人民</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:28.31" id="00:23:28.31" class="lt" onclick="jumptoTime(1408, this.id)"><p>surg，irst，desaf</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:32.47" id="00:23:32.47" class="lt" onclick="jumptoTime(1412, this.id)"><p>ues，speakers，>-，Per</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:13.71" id="00:23:13.71" class="lt" onclick="jumptoTime(1393, this.id)"><p>Rev，moeten，raft，té，きます，soll，c</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:21.77" id="00:23:21.77" class="lt" onclick="jumptoTime(1401, this.id)"><p>drug，Metall Global，shooters，authorization</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:28.05" id="00:23:28.05" class="lt" onclick="jumptoTime(1408, this.id)"><p>tech，Nie，baking Potter，doubled，斯 wages</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:22.93" id="00:23:22.93" class="lt" onclick="jumptoTime(1402, this.id)"><p>Cor，Within，Gabe，ให cont</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:30.35" id="00:23:30.35" class="lt" onclick="jumptoTime(1410, this.id)"><p>recruitment，kans</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:14.23" id="00:23:14.23" class="lt" onclick="jumptoTime(1394, this.id)"><p>dal，commits，upgrade</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:30.27" id="00:23:30.27" class="lt" onclick="jumptoTime(1410, this.id)"><p>Toughинов，descended，uneasy，rection enh</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:23:7.99" id="00:23:7.99" class="lt" onclick="jumptoTime(1387, this.id)"><p>sleepy，stacking，そうですね superst� Monaten，Power，coff imagined</p></a>
+				<a href="#00:23:42.75" id="00:23:42.75" class="lt" onclick="jumptoTime(1422, this.id)"><p>mah rotary，RNA，assemb Lif smarter</p></a>
+				<a href="#00:23:45.85" id="00:23:45.85" class="lt" onclick="jumptoTime(1425, this.id)"><p>étant，utilizz，pillow，eled，Inside</p></a>
+				<a href="#00:23:36.59" id="00:23:36.59" class="lt" onclick="jumptoTime(1416, this.id)"><p>parity，огром rational，Mer，Though，aggrav你就 pans� senators，HK，ㅎㅎfer</p></a>
+				<a href="#00:23:45.99" id="00:23:45.99" class="lt" onclick="jumptoTime(1425, this.id)"><p>じゃない，professionLaugh，kitten，playable</p></a>
+				<a href="#00:23:44.31" id="00:23:44.31" class="lt" onclick="jumptoTime(1424, this.id)"><p>しか Northept，我把曲奇糖填滿了，然後放進烤箱烤幾分鐘，等到糖完全溶掉就可以拿出來，烤好了給你們看看，烤好後要放在一旁等待凝固才拿出來，所以現在先不要動它，因為剛才放了進去 因為它不太有糖，我太貪心了 後來再放一點，我想它感覺滿一點 我再放一點進去，所以放久了 竟然有泡泡，泡出來了 有泡泡就沒那麼漂亮了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:24:30.50" id="00:24:30.50" class="lt" onclick="jumptoTime(1470, this.id)"><p>最好之前第一層放糖的時候放滿一點，不要太多 不能碰到餅乾，堆高一點 這樣插進去堆高一點，慢慢溶掉 看到它溶掉就拿出來，就不會有泡泡了，這個就是我的經驗了，下次就不用像我這樣，現在有泡泡在這裡 因為它過熱了，有些還可以的就是沒有泡泡，沒有泡泡會比較漂亮 而且滿一點會比較漂亮，如果你不夠滿 它有條邊在這裡。</p></a>
+				<a href="#00:25:7.50" id="00:25:7.50" class="lt" onclick="jumptoTime(1507, this.id)"><p>有條邊就沒那麼漂亮，如果夠糖放滿了 感覺到就會很漂亮，我覺得平的 整個玻璃，一塊玻璃在上面，好 一會兒等它放涼了之後，我們再拍成品是怎樣，我們回來了，這些糖 當它放到室溫之後，開始慢慢凍 它就會離開那個盤子，很容易會拿出來給你們看，真的透的，拿個大一點的 這麼傻，給你們看 真的透的，當然沒有玻璃那麼透。</p></a>
+				<a href="#00:25:55.50" id="00:25:55.50" class="lt" onclick="jumptoTime(1555, this.id)"><p>就好像教堂裡面那些塗了色的玻璃，就是那些彩色玻璃 很漂亮的，給你們看一下，謝謝觀看 下次見，這個顏色比較容易看得到，但因為真的過熱的關係，會有泡泡，如果不是太熱的話，就會好像Crisp，沒有泡泡會更加漂亮，給你們看看，紫色比較深色，比較難看得到，但你也會看到影子，再給你們看紅色的兔子，有泡泡就會比較濛一點。</p></a>
+				<a href="#00:26:44.86" id="00:26:44.86" class="lt" onclick="jumptoTime(1604, this.id)"><p>有些可能焗過後會變小一點，給你們看，穿過洞，這樣放進去，穿過之後，還未可以綁住，就好像掛在聖誕樹的吊飾，是不是很漂亮，當然最好就是這樣吃掉，不做也可以 不放進洞裡也可以，我這個試一下，好像這些曲奇，你也可以再用顏色的Icing，再畫它再漂亮一點也可以，這樣吃也可以，我試吃一個曲奇，很鬆脆。</p></a>
+				<a href="#00:27:46.94" id="00:27:46.94" class="lt" onclick="jumptoTime(1666, this.id)"><p>這個曲奇是很鬆脆的，入口即化，所以我這個食譜，在於做這個曲奇來說，其實是有風險的，因為它很鬆脆，很容易會爛，加了梳打粉，Baking Soda，它會發起，即是預熱的時候，它容易會脹起來，曲奇的形狀會收縮變形，你可以用我這個食譜不加梳打粉，你可以試試看，這次我用自己的食譜，加這個點子進去，看看變成怎樣。</p></a>
+				<a href="#00:28:33.48" id="00:28:33.48" class="lt" onclick="jumptoTime(1713, this.id)"><p>出來的效果其實不是很滿意，但我的經驗給了你，下次你做的時候會更加好，相關筆記我會在食譜上印出來給你們，我們下次再見，拜拜，拜拜。</p></a>
+</div>
+	</body>
+</html>

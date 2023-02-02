@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>櫻花奶凍 - Sakura (Cherry Blossom) Desserts (Pana Cotta)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'spw1_Z_KJac',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>櫻花奶凍 - Sakura (Cherry Blossom) Desserts (Pana Cotta)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:4.12" id="00:00:4.12" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好，今日就和大家做一個有關春天的甜品，因為春天快到了，尤其是我在加拿大，春天開始就開始，慢慢就步入夏天，是我們最開心的時間，春天我聯想到什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.12" id="00:00:25.12" class="lt" onclick="jumptoTime(25, this.id)"><p>櫻花，所以我剛好可以找到一些，鹽漬的櫻花，所以我就打算做一個，櫻花奶凍，我這裡就有一些鹽漬的櫻花，我買了一段日子，放在雪櫃，雪櫃比較乾硬，鹽漬的櫻花怎樣處理呢?</p></a>
+				<a href="#00:00:53.12" id="00:00:53.12" class="lt" onclick="jumptoTime(53, this.id)"><p>因為是鹹的，我們怎樣吃呢?</p></a>
+				<a href="#00:00:56.12" id="00:00:56.12" class="lt" onclick="jumptoTime(56, this.id)"><p>很多時候我們首先用水浸泡，你看看你需要多少櫻花，然後你可以將櫻花，選擇你要多少朵櫻花，然後就可以浸泡，我想我這裡大概做四杯，所以八至十朵櫻花就已經很足夠，如果你在亞洲地區就更加容易找到，我這裡就比較難一點，我看到在日式超市，就看到，就馬上買了放在雪櫃，等有用的時候就會用，然後我們處理櫻花。</p></a>
+				<a href="#00:01:47.12" id="00:01:47.12" class="lt" onclick="jumptoTime(107, this.id)"><p>首先用水浸泡，浸泡一小時，浸泡一小時，浸泡一小時，待櫻花鬆化後就可以了，我喜歡加自己喜歡的材料，我今天就加了乳酪，等待味道再不同一點，看看效果如何，我用了一種不太熟悉的味道，但味道仍然是有一點點酸味，所以我加乳酪也沒有衝突，如果你喜歡的話，可以選擇其他材料，可以選擇自己喜歡的材料，如果想要乳酪的話。</p></a>
+				<a href="#00:04:32.39" id="00:04:32.39" class="lt" onclick="jumptoTime(272, this.id)"><p>可以用乳酪粉，我現在就加了一層果凍，我亦都減少了糖，因為乳酪本身有甜味，所以我會加多一點糖，現在我減少了一半，現在我只要25克糖，現在我處理果凍，你可以用魚膠片或魚膠粉，我用了7克，接著我需要兩湯匙的水，然後攪拌均勻，這個步驟很重要，否則魚膠粉會變透明，剛才的魚膠粉是實色的，加水後，一吸水就會變透明，讓魚膠粉每一粒都吸收水份。</p></a>
+				<a href="#00:06:21.92" id="00:06:21.92" class="lt" onclick="jumptoTime(381, this.id)"><p>這是處理魚膠粉的重要步驟，不要煮沸後，魚膠粉就這樣灑上去，這樣會令魚膠粉變得不均勻，冰冷時就會變得很多魚膠粉，最好就是這樣放水，讓魚膠粉浸泡，讓魚膠粉吸收多些水份，我們可以放開，然後就處理煮牛奶和忌廉方面，我不需要煮沸牛奶或忌廉，我只是煮到夠熱去處理魚膠粉，去溶掉魚膠粉為止，我需要大約150ml的牛奶。</p></a>
+				<a href="#00:07:13.92" id="00:07:13.92" class="lt" onclick="jumptoTime(433, this.id)"><p>牛奶和忌廉的比例是很有趣的，你可以隨你喜歡的放，如果我想要濃一點，是一對一，牛奶多少忌廉多少，我這邊忌廉是少少少，我的忌廉是100ml，我加了忌廉，牛奶和100ml，其實喜歡的話，可以再少一點都可以，然後就加一半，總共是225ml，然後就可以倒進煲仔，牛舌就可以慢慢煮滾牛奶，順便把25克糖也放進去。</p></a>
+				<a href="#00:08:19.13" id="00:08:19.13" class="lt" onclick="jumptoTime(499, this.id)"><p>攪拌均勻，慢慢煮，煮到大約60度左右，60-70度就可以用到魚膠粉，看到旁邊有泡泡就代表60-70度就足夠了，然後就可以將魚膠粉，吸收水份後就像膠一樣，然後就可以將全部放進去，不等它溶化，將它攪拌開，慢慢等它溶化，還有餘力，我不需要再開火，不用煮滾，不用煮，這裏已經有60度左右，其實已經可以處理到魚膠粉。</p></a>
+				<a href="#00:09:38.52" id="00:09:38.52" class="lt" onclick="jumptoTime(578, this.id)"><p>它煮好之後，其實我們可以先放一放，這樣我們，如果擔心還有些魚膠粉未溶化的話，我們可以倒進去，你倒進去涼杯容易倒進杯子裏，所以可以再攪拌一下，然後這裏有些乳酪，我放了出來已經跟著，剛才一直滾的時候已經跟著，所以已經不是很冰凍，為什麼要這樣做呢，因為太冰凍的魚膠粉，撞進去有魚膠粉的混合物裏，很容易令這些魚膠粉立刻凝固。</p></a>
+				<a href="#00:10:34.52" id="00:10:34.52" class="lt" onclick="jumptoTime(634, this.id)"><p>很容易起粒粒，所以我這個放進去之前，我先放了些乳酪，溶液就放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:48.52" id="00:10:48.52" class="lt" onclick="jumptoTime(648, this.id)"><p>這樣隔過，沒有什麼的，然後我們就可以攪拌這個，攪拌均勻，因為要讓溶液變得少熱，優格也不是在冰箱拿出來放涼，溫度不太大，所以攪拌後就不會有魚膠粒，這個就是做奶酪，果凍，甚至乎做有關魚膠粉的其中一個比較容易失敗的地方，就是魚膠粉對溫度的反應，現在OK了，攪拌好了，我買了一些杯子，有闊口的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:5.55" id="00:12:5.55" class="lt" onclick="jumptoTime(725, this.id)"><p>我買了四隻，打算做四杯，但可能有兩層櫻花，看上去會很漂亮，所以我用了兩杯玻璃杯，可以看到中間的層面，看你自己想用什麼杯子，只要你喜歡用什麼都可以，然後就可以倒進杯子裡，預留空間放櫻花，所以不用放得太滿，倒好了，現在我做到5杯，如果用這種杯，我應該可以做到4杯，我把它分開了，然後放進冰箱冷藏。</p></a>
+				<a href="#00:12:57.91" id="00:12:57.91" class="lt" onclick="jumptoTime(777, this.id)"><p>大約冷藏2-3小時就應該可以了，然後我們就可以做櫻花那邊了，櫻花我已經泡了1小時，我們可以隔水沖一沖，隔乾水之後，放在這裡等我們做，這裡有200ml的清水，15克的糖，這裡有4克的糖，然後我們可以放進去，然後我們可以放進去，然後我們可以放進去，這裡有4克的果凍，然後我又像剛才那樣，首先在果凍加一些水。</p></a>
+				<a href="#00:13:53.91" id="00:13:53.91" class="lt" onclick="jumptoTime(833, this.id)"><p>等到它可以，混合，吸收所有水，然後放進去，剩下的水可以放進煲仔裡，然後把櫻花放進去，然後我們放糖進去，然後就可以開火煮了，攪拌一下，讓糖快點溶化，煮滾後，煮一煮，令櫻花散開，櫻花有少許粉紅色，看上去有點去水，如果想再粉紅一點，可以加少許食用色素，但我不會加，我用自然的顏色，然後將果凍放進去。</p></a>
+				<a href="#00:15:23.99" id="00:15:23.99" class="lt" onclick="jumptoTime(923, this.id)"><p>煮溶，如果想更多味道，可以加少許甜品，例如是Cherry Brandy，或者加少許檸檬汁，但現在可以不加，因為要全購櫻花本身的味道和糖水的味道，櫻花糖水肉液已經變成室溫，我們可以將奶凍取出來，奶凍已經可以食用，是乳酪味的奶凍，如果想更好看，可以將櫻花放上去，看自己想放多少，奶昔凍快。</p></a>
+				<a href="#00:17:16.09" id="00:17:16.09" class="lt" onclick="jumptoTime(1036, this.id)"><p>然後把煙花水倒入煙花，淡粉紅色，浸泡一會兒， 浸泡至有層薄薄的水分， 櫻花就會散開， 這樣就很漂亮了!</p></a>
+				<a href="#00:18:9.78" id="00:18:9.78" class="lt" onclick="jumptoTime(1089, this.id)"><p>這樣就可以了!</p></a>
+				<a href="#00:18:17.78" id="00:18:17.78" class="lt" onclick="jumptoTime(1097, this.id)"><p>這樣就可以了!</p></a>
+				<a href="#00:18:41.11" id="00:18:41.11" class="lt" onclick="jumptoTime(1121, this.id)"><p>再冷藏多一個多小時便可以了，Hello 回來了 已經冷藏好了 給你們看看，我現場看會比較粉紅 會比較漂亮，當然我還未調校到很漂亮的燈光，我近一點看 你也看到有些暗暗粉紅，但我現場看是很粉紅色的，側面給你們看 透明的，這裡是奶凍的樣子，我現在試吃，你們看看 舀下去，舀起。</p></a>
+				<a href="#00:19:28.11" id="00:19:28.11" class="lt" onclick="jumptoTime(1168, this.id)"><p>有啫喱和奶凍，上面的櫻花有花味和有一點點酸酸的，但因為我已經加了糖 中和了它，就OK了 有一陣吃櫻花甜品的味道，下面的奶凍，很香奶和乳酪味，我自己很滿意，奶凍可以再加少一點糖 再軟熟一點，但對我來說已經很滿意了，今天介紹到這裡 希望你們可以在家做，我相信你們每天都會做得比我漂亮，下次再見 拜拜。</p></a>
+</div>
+	</body>
+</html>

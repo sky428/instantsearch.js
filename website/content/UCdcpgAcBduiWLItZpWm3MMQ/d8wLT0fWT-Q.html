@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dalgona Coffee / 奶泡咖啡 / Frothy Cream Coffee | 電動2分鐘|手打400下的爆紅咖啡</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'd8wLT0fWT-Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Dalgona Coffee / 奶泡咖啡 / Frothy Cream Coffee | 電動2分鐘|手打400下的爆紅咖啡</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>韓國咖啡，Hello 各位朋友你們好，剛才我開了YouTube Live，做了一個奶泡咖啡，和很多人一起聊天交流，但是拍的時候比較混亂，所以現在再拍多一條，完整一點的，給大家看，也可以當作留念，這個咖啡現在很紅，你上YouTube打Dalgona Coffee，或者是奶泡咖啡，或者是Forthy Cream Coffee。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.20" id="00:00:48.20" class="lt" onclick="jumptoTime(48, this.id)"><p>你都會看到有很多影片可以看到，不如我們試試做吧，做的方法很簡單，首先要咖啡粉，即溶咖啡粉、糖和熱水，全部是一比一比例，一湯匙這個，一湯匙這個，一湯匙這個，我剛才打算做兩杯，但我每樣一湯匙就不夠，這次我自己做，我做兩湯匙，打也比較容易，首先我先倒咖啡出來，咖啡粉我用這個，但如果你有自己喜歡的咖啡粉，你都可以用。</p></a>
+				<a href="#00:01:35.20" id="00:01:35.20" class="lt" onclick="jumptoTime(95, this.id)"><p>所以不一定要用哪一款，兩湯匙糖，總之是一比一的比例，然後就放兩湯匙的水，我這個是熱水，剛剛在熱暖鍋裡，倒出來，我剛才是用這個打的，打了很久，如果不想用這個打，可以用電動攪拌器打，這次我用電動攪拌器打，如果用手打，他們聲稱打四百下就行，如果用電動攪拌器，就要看你打多久，打了2分鐘，如果想更結實可以再打。</p></a>
+				<a href="#00:02:48.62" id="00:02:48.62" class="lt" onclick="jumptoTime(168, this.id)"><p>現在已經變成忌廉狀，完成了，咖啡已經做好了，我家沒有很漂亮的玻璃杯，所以我用最簡單的玻璃杯，打好奶泡後可以放冰，然後把牛奶倒進去，將奶泡放入鑊中，mains，Trail，rains，Ο</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:18.05" id="00:04:18.05" class="lt" onclick="jumptoTime(258, this.id)"><p>reinstстран，29，whipping</p></a>
+				<a href="#00:04:25.63" id="00:04:25.63" class="lt" onclick="jumptoTime(265, this.id)"><p>freed，sno nodes，ınd</p></a>
+				<a href="#00:04:24.27" id="00:04:24.27" class="lt" onclick="jumptoTime(264, this.id)"><p>guru，exceptions，MIL tragedy</p></a>
+				<a href="#00:04:16.45" id="00:04:16.45" class="lt" onclick="jumptoTime(256, this.id)"><p>준비，bac fear，idan，PLE</p></a>
+				<a href="#00:04:19.13" id="00:04:19.13" class="lt" onclick="jumptoTime(259, this.id)"><p>Containб，congratấn，pytanie</p></a>
+				<a href="#00:04:17.37" id="00:04:17.37" class="lt" onclick="jumptoTime(257, this.id)"><p>RC，snail，sew，Mommy，CA</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:24.29" id="00:04:24.29" class="lt" onclick="jumptoTime(264, this.id)"><p>voice，też，Commission，MAX，ших</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:22.29" id="00:04:22.29" class="lt" onclick="jumptoTime(262, this.id)"><p>갈，annually，​​</p></a>
+				<a href="#00:04:25.25" id="00:04:25.25" class="lt" onclick="jumptoTime(265, this.id)"><p>еще，cease，ông，nuestras，� Stef� workforce，ador，� Missouriotted，�，打起的香味很香，讓你們看看，可以做兩杯，我這裡多一點，然後搖一搖，讓它平均一點，因為很甜的，不要放太多，我看到有些網上網友放了很多，我剛才試過，很甜的，兩三湯匙已經很足夠。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:6.57" id="00:05:6.57" class="lt" onclick="jumptoTime(306, this.id)"><p>然後你看到它慢慢流下去，邊流下去，拌勻就可以喝了，只要用一個即溶咖啡，加糖加水，打到一個很漂亮的奶泡，放進牛奶裡，就可以成為一個很好喝的咖啡，在家裡真的可以試試看，完成後就可以喝了，最好要攪拌一下，因為甜度全部都在上面，所以要和牛奶攪拌均勻，這個咖啡是很滑的，但上面很甜的，非常 shown。</p></a>
+				<a href="#00:06:11.02" id="00:06:11.02" class="lt" onclick="jumptoTime(371, this.id)"><p>conditioner，Veterans</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.26" id="00:06:18.26" class="lt" onclick="jumptoTime(378, this.id)"><p>oud，不要</p></a>
+				<a href="#00:06:16.72" id="00:06:16.72" class="lt" onclick="jumptoTime(376, this.id)"><p>小時，wegen，excluded</p></a>
+				<a href="#00:06:14.44" id="00:06:14.44" class="lt" onclick="jumptoTime(374, this.id)"><p>innocence，uma</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:16.66" id="00:06:16.66" class="lt" onclick="jumptoTime(376, this.id)"><p>improved，britอง，お RM，機，攪拌好後，喜歡的份量就可以試飲，好滑，好好味，喜歡的朋友可以試試，下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[懶人食譜] 一分鐘馬克杯蛋糕 - 三種口味-朱古力/綠茶/檸檬 - 1 Minute Mug Cake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'DTlMwWfRz1Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[懶人食譜] 一分鐘馬克杯蛋糕 - 三種口味-朱古力/綠茶/檸檬 - 1 Minute Mug Cake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:5.63" id="00:00:5.63" class="lt" onclick="jumptoTime(5, this.id)"><p>Hello 各位朋友，情人節有什麼慶祝活動呢?</p></a>
+				<a href="#00:00:11.01" id="00:00:11.01" class="lt" onclick="jumptoTime(11, this.id)"><p>可能有情侶會出去慶祝，不過都是出去吃套餐、飯，有人逼，如果在家可以簡單地做點東西吃，可以做個前菜、湯、煎塊扒，就可以開開心心地清清靜靜地吃一餐，不過很多時候今年的情人節是星期四，不是週末，很多時候都要上班，上班後又很累，吃完飯想吃甜品，當然出去買更好，買到好吃的甜品，但如果在家。</p></a>
+				<a href="#00:01:6.15" id="00:01:6.15" class="lt" onclick="jumptoTime(66, this.id)"><p>都可以試做這個，今天和大家做的蜜蛋糕，用微波爐叮出來的蛋糕，不一定要有情人才可以做，一個人在家突然很想吃甜品，都可以做的，不一定要一雙一對，單獨或一群朋友做都可以，今天和大家做有三種口味，看你喜歡什麼口味的蜜蛋糕，這個叫杯蛋糕，怎樣做的方法，材料已經在這裡，最基本的有麵粉，麵粉。</p></a>
+				<a href="#00:01:58.15" id="00:01:58.15" class="lt" onclick="jumptoTime(118, this.id)"><p>粉，烘焙粉，還有牛奶和油，還有糖，1，2，3，4，5，這五個白色的就是最基本的底，加味就看你想加什麼，我今天預備了朱古力味，綠茶白朱古力味，和檸檬味，不如我們試試怎樣做，很快很簡單，首先做朱古力蛋糕，我們需要的最主要是杯子，這個杯子大約有12oz，這樣起碼可以載250ml，起碼有一個這麼大的容量的杯子。</p></a>
+				<a href="#00:02:58.90" id="00:02:58.90" class="lt" onclick="jumptoTime(178, this.id)"><p>這個杯子一定要在微波爐內進入，需要這兩個條件就可以了，首先我們將麵粉3湯匙，うят Dreams</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:25.12" id="00:03:25.12" class="lt" onclick="jumptoTime(205, this.id)"><p>detection，아니면，Dit，ettle，Hollywood</p></a>
+				<a href="#00:03:23.76" id="00:03:23.76" class="lt" onclick="jumptoTime(203, this.id)"><p>そして，ический，빵</p></a>
+				<a href="#00:03:26.92" id="00:03:26.92" class="lt" onclick="jumptoTime(206, this.id)"><p>молaxis，국 Vision</p></a>
+				<a href="#00:03:22.28" id="00:03:22.28" class="lt" onclick="jumptoTime(202, this.id)"><p>Cav toch，stations Spy，eg，如果沒有湯匙的話 用一隻匙子量就可以了，鹽粉，然後兩茶匙的朱古力粉，可可粉，兩茶匙，1 4 茶匙的烘焙粉，然後再加入一茶匙的粉，再加入一茶匙的麵粉，然後再拌勻，然後加入3湯匙煉奶，如果沒有煉奶的話，可以用牛奶，因為煉奶會更滑，不需要加糖，因為我家有煉奶，所以我先用煉奶。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:55.55" id="00:04:55.55" class="lt" onclick="jumptoTime(295, this.id)"><p>如果沒有煉奶的話，可以加3湯匙砂糖，這樣就可以了，1湯匙油，4湯匙牛奶，我用不同的匙羹，但我用的匙羹都差不多，如果差一點點就加多一點，基本上就可以了，喜歡的話可以加一點Vanilla，現在就要攪拌，慢慢攪拌，攪拌到粉粒全部都沒有了，мо rootediern，Ba scrolling，hela。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.54" id="00:06:22.54" class="lt" onclick="jumptoTime(382, this.id)"><p>espresso，activist</p></a>
+				<a href="#00:06:18.26" id="00:06:18.26" class="lt" onclick="jumptoTime(378, this.id)"><p>flaw，剛剛，trif자는</p></a>
+				<a href="#00:06:21.60" id="00:06:21.60" class="lt" onclick="jumptoTime(381, this.id)"><p>crashed，Д football，fluctuations，rett coined，matching</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.60" id="00:06:18.60" class="lt" onclick="jumptoTime(378, this.id)"><p>provoke，Isn rue，molta，audioرو</p></a>
+				<a href="#00:06:21.66" id="00:06:21.66" class="lt" onclick="jumptoTime(381, this.id)"><p>SappYoung，joyful，Loshi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.26" id="00:06:18.26" class="lt" onclick="jumptoTime(378, this.id)"><p>qui，defects，popular</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:18.08" id="00:06:18.08" class="lt" onclick="jumptoTime(378, this.id)"><p>europe va，kalk pepper</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:14.66" id="00:06:14.66" class="lt" onclick="jumptoTime(374, this.id)"><p>Polski，ologia</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.08" id="00:06:22.08" class="lt" onclick="jumptoTime(382, this.id)"><p>ist，Wish hypothetical</p></a>
+				<a href="#00:06:14.64" id="00:06:14.64" class="lt" onclick="jumptoTime(374, this.id)"><p>lightning，ай，breakthrough</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:25.12" id="00:06:25.12" class="lt" onclick="jumptoTime(385, this.id)"><p>untuk，nightmares，overall，var，highest</p></a>
+				<a href="#00:06:21.48" id="00:06:21.48" class="lt" onclick="jumptoTime(381, this.id)"><p>priorit，有人會在杯子上噴上一層油 讓它不會黏，除非你會把它移出來吃 否則不用也行，因為懶人食譜 盡量在杯子內弄好就最好，盡量混合，把底部的混合糖都混合好，最後就可以放巧克力，你喜歡放多少就放多少，巧克力混合好 熱了之後就會融化，如果你想吃普通牛奶巧克力就可以放，我這個是黑巧克力。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:23.60" id="00:07:23.60" class="lt" onclick="jumptoTime(443, this.id)"><p>就沒有那麼甜，其實這裡不是很甜 只是3匙煉奶，跟平常做奶茶的味道差不多，所以這個食譜不是很甜，攪拌好之後就可以去冰，我的微波爐是1200W，只要冰30秒兩次 一分鐘就可以了，但也要視乎微波爐的溫度，如果是900W的 可能要再冰30秒，把巧克力放在微波爐的中心位置，30秒一次。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:29.60" id="00:08:29.60" class="lt" onclick="jumptoTime(509, this.id)"><p>再冰30秒，再蒸30秒，已經有少許焗起了，再蒸30秒，很熱嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:5.48" id="00:09:5.48" class="lt" onclick="jumptoTime(545, this.id)"><p>你看看，已經叮好了，我們就拿一支牙籤，戳進去，拿出來，乾淨就已經，叮好了，第一個蜜桃蛋糕就已經，做出來了，它就已經叮好了，如果你想做得好看一點，就在入爐前，抹一抹它，就會好看一點，好了，回來了，現在就做第二個，第二個食物就是，做這個，綠茶味的，和剛才的材料，大部分都好像一樣，除了，剛才那個有煉奶，這個沒有煉奶。</p></a>
+				<a href="#00:10:1.48" id="00:10:1.48" class="lt" onclick="jumptoTime(601, this.id)"><p>我特意想做兩個食譜，一個有煉奶，一個沒有煉奶，看看效果有什麼不同，這裡就是，這個麵粉，這裡就四個，一湯匙的麵粉，1茶匙綠茶，我加多一點點也不要緊，然後我加砂糖，大約3匙，1茶匙烘焙粉，拌勻，加濕物之前要先拌勻乾的，然後就可以把牛奶放進去，拌勻，淋到最尾，這個比較稠一點，最後加些油，比剛才用朱古力的濃稠很多。</p></a>
+				<a href="#00:12:13.87" id="00:12:13.87" class="lt" onclick="jumptoTime(733, this.id)"><p>感覺是黏著很多，但要確保裡面都拌勻就可以了，把粉末全部混合，最後就可以放入白朱古力，這個杯子很深，做出來的感覺好像少很多，然後就可以拿去冰了，頭部30秒，然後就可以試了，這樣就可以了，最後就是檸檬味，檸檬味都一樣照樣量，這樣就3TBSP的麵粉，1 1⁄4茶匙粉，3 湯匙糖，我這個是茶匙，我加多一點。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:15.95" id="00:14:15.95" class="lt" onclick="jumptoTime(855, this.id)"><p>拌勻，打一隻蛋，加檸檬汁，拌勻，要拌久一點，因為要把雞蛋和麵粉拌勻，要確保沒有粒粒，打幾下，打碎蛋，我用幾個不同款式的杯，讓你們看看做出來是怎樣，這個就更像我們平常做的蛋糕質感，全部都是蒸30秒30秒，一分鐘，如果看微波爐有多熱，一分鐘至分半鐘就可以了，現在是30秒，再30秒，看，OK的了，熟了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:57.03" id="00:15:57.03" class="lt" onclick="jumptoTime(957, this.id)"><p>三個都出來了，可以放一些裝飾，例如朱古力，綠茶，白朱古力，檸檬，令到更加漂亮，我們可以試吃了，這個是最早做的，已經凍了，但也可以給你們看看質感如何，看看裡面，OK的，即使凍了一點也好吃，真的像蛋糕一樣，再試試看文老，這兩個是剛剛烤好的，我先把綠茶刮出來給你們看，應該是熱的，看多鬆軟，試試看。</p></a>
+				<a href="#00:17:20.03" id="00:17:20.03" class="lt" onclick="jumptoTime(1040, this.id)"><p>很香綠茶味，裡面有白朱古力融化了，可以直接吃，也可以加一個雪糕球進去吃，第三個試這個味道，這個是有雞蛋的，我再試試看，就好像雞蛋糕一樣，因為我不是加了很多檸檬汁，但還是有檸檬的香味，酸酸甜甜的，剛剛我用不同的麥做了三個蛋糕，同樣的用馬克杯做的蛋糕，我就用了三個一樣的做給你們看，我打算一會兒也可以幫我的食譜拍照。</p></a>
+				<a href="#00:18:33.60" id="00:18:33.60" class="lt" onclick="jumptoTime(1113, this.id)"><p>所以要給你們看，很漂亮呢，朱古力，還有最後這個就是檸檬味的，今天就介紹到這裡，希望各位朋友們，無論有伴侶或沒有伴侶，都情人節快樂!</p></a>
+				<a href="#00:19:8.59" id="00:19:8.59" class="lt" onclick="jumptoTime(1148, this.id)"><p>也希望你們可以一起做這個…什麼蛋糕呢?</p></a>
+				<a href="#00:19:14.59" id="00:19:14.59" class="lt" onclick="jumptoTime(1154, this.id)"><p>馬克蛋糕!馬克杯蛋糕!</p></a>
+				<a href="#00:19:19.59" id="00:19:19.59" class="lt" onclick="jumptoTime(1159, this.id)"><p>下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

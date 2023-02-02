@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>榴槤冰皮月餅 - Snowy Durian Mooncake</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-vhsUqgAvRo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>榴槤冰皮月餅 - Snowy Durian Mooncake</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:4.12" id="00:00:4.12" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好， 各位朋友你們好!</p></a>
+				<a href="#00:00:8.12" id="00:00:8.12" class="lt" onclick="jumptoTime(8, this.id)"><p>中秋節快到了， 當然要做一些應節食品，之前我也做過奶黃月餅， 也做過冰皮月餅，今天我就偷懶一點做一個再簡單一點的冰皮月餅，也算是很多人極端地喜歡吃或不喜歡吃，今天我就和大家一起做榴槤冰皮月餅，先說說材料，材料是乾粉類， 即是乾貨這邊，首先有糯米粉， 我30g 糯米粉，粘米粉30g， 低筋麵粉15g。</p></a>
+				<a href="#00:00:48.12" id="00:00:48.12" class="lt" onclick="jumptoTime(48, this.id)"><p>然後有些糕粉， 先放開它， 後面才用，砂糖20g， 牛奶150ml， 煉奶3湯匙， 菜油3湯匙，榴槤肉大約270克，我這邊沒有新鮮的榴槤肉賣， 所以我就用冰的榴槤肉來做，之後會說怎樣做，首先我們先處理粉類的材料，先處理皮，三種粉的全部先過篩，過篩後， 待會用的時候會好一點，這樣就不會起太多粒。</p></a>
+				<a href="#00:02:9.12" id="00:02:9.12" class="lt" onclick="jumptoTime(129, this.id)"><p>濕度方面， 首先將砂糖， 牛奶，將兩種材料拌勻，砂糖和牛奶要拌勻，等到砂糖和牛奶混合至溶化，拌勻後， 將煉奶加入攪拌器</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:44.59" id="00:02:44.59" class="lt" onclick="jumptoTime(164, this.id)"><p>最後加入菜油，將濕度方面所有材料混合，將混合好的材料放入攪拌器，同一時間， 將鍋子打開，然後將材料放入鍋子，待材料混合後， 便可以開始蒸皮，可以用鍋子做， 或者家中有蒸焗爐，可以用蒸焗爐蒸皮，現在可以將材料逐少攪拌</p></a>
+				<a href="#00:03:57.31" id="00:03:57.31" class="lt" onclick="jumptoTime(237, this.id)"><p>把鸡蛋和酱汁搅拌均匀，慢慢攪拌至沒有粉粒，可以用打蛋器或筷子攪拌，這是簡易版冰皮月餅，所有材料混合便可，然後我預備一個碟子，放少許油在碟子上，然後掃一下，等到粉漿倒下去後不黏底，因為我要把粉漿過篩幾次，令到粉漿不粘底，粉漿已經有些粉粒，就可以將它過篩，ional Pictures</p></a>
+				<a href="#00:05:43.94" id="00:05:43.94" class="lt" onclick="jumptoTime(343, this.id)"><p>Jinping，vary，breathing，ophy，Fam魚，escaped，sticks</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:45.34" id="00:05:45.34" class="lt" onclick="jumptoTime(345, this.id)"><p>sheets，industrial Belarus，vidia，theatre，128，Arm Fruit</p></a>
+				<a href="#00:05:39.58" id="00:05:39.58" class="lt" onclick="jumptoTime(339, this.id)"><p>irler，âce，afin，verr型，Rabbi，Personấy，々，lo ab，likelihood，towels，블� LGBTQ，Bread，Akbar</p></a>
+				<a href="#00:05:45.00" id="00:05:45.00" class="lt" onclick="jumptoTime(344, this.id)"><p>status，veget</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:42.02" id="00:05:42.02" class="lt" onclick="jumptoTime(342, this.id)"><p>언제，cu，setzen，multic usual，овой</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:44.98" id="00:05:44.98" class="lt" onclick="jumptoTime(344, this.id)"><p>wichtig，monte，долж，terror XX Chill，squares，напр，Micro，креп clás Smells</p></a>
+				<a href="#00:05:37.38" id="00:05:37.38" class="lt" onclick="jumptoTime(337, this.id)"><p>מע，speaker</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:46.01" id="00:05:46.01" class="lt" onclick="jumptoTime(346, this.id)"><p>這樣就一定不會有粒粒了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:51.01" id="00:05:51.01" class="lt" onclick="jumptoTime(351, this.id)"><p>因為我要把這個粉漿過篩幾次，讓它不會有粉粒，這樣就會滑一點，你看到也有粉粒的，是不是?</p></a>
+				<a href="#00:06:6.01" id="00:06:6.01" class="lt" onclick="jumptoTime(366, this.id)"><p>就可以將它過篩，lied washed smell</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:34.99" id="00:06:34.99" class="lt" onclick="jumptoTime(394, this.id)"><p>воды，automat</p></a>
+				<a href="#00:06:26.01" id="00:06:26.01" class="lt" onclick="jumptoTime(386, this.id)"><p>Д line，ply，怎麼了</p></a>
+				<a href="#00:06:28.67" id="00:06:28.67" class="lt" onclick="jumptoTime(388, this.id)"><p>tyard，shutter，Invest charitable，reson públic，Foundation，Nestacious</p></a>
+				<a href="#00:06:27.81" id="00:06:27.81" class="lt" onclick="jumptoTime(387, this.id)"><p>purcharlo，cas</p></a>
+				<a href="#00:06:25.27" id="00:06:25.27" class="lt" onclick="jumptoTime(385, this.id)"><p>самой，安全，related，flight</p></a>
+				<a href="#00:06:32.77" id="00:06:32.77" class="lt" onclick="jumptoTime(392, this.id)"><p>she，logging，rick，ów，concur leave</p></a>
+				<a href="#00:06:29.67" id="00:06:29.67" class="lt" onclick="jumptoTime(389, this.id)"><p>��，covet פה，rankings，İş，365，object，grow，世�대</p></a>
+				<a href="#00:06:30.93" id="00:06:30.93" class="lt" onclick="jumptoTime(390, this.id)"><p>pocz，refr cin boot，debates，字幕by索兰娅✿，這樣就一定不會有顆粒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:43.91" id="00:06:43.91" class="lt" onclick="jumptoTime(403, this.id)"><p>做好後用保鮮膜包著，然後蒸大約20-30分鐘，蒸熟就可以了，預備榴槤餡，首先我這些是冰榴槤，因為在這裡很少有新鮮榴槤賣，然後我們就可以拆掉肉，然後弄溶，然後我們這裡有一塊保鮮紙，然後我們用冰淇淋的筆或者用匙羹也可以，這樣我就將大約23至25克的榴槤肉放進保鮮紙裡，然後搓圓，然後捏住，這樣就像一個圓球一樣，弄好之後，我們就將它放進冰箱裡冷凍一粒粒。</p></a>
+				<a href="#00:08:7.80" id="00:08:7.80" class="lt" onclick="jumptoTime(487, this.id)"><p>這樣做月餅的時候就會容易定型，而且容易包，我蒸了25分鐘，然後我們就可以拿出來，然後試一下它熟了沒有，就拿一隻筷子戳下去，出來沒有黏，這樣就可以了，然後我們就可以刮開它，然後我們可以拿一個密實袋，然後就把它放進密實袋裡，然後我們就可以戴著手套，然後就去搓它，隔著密實袋搓。</p></a>
+				<a href="#00:09:16.91" id="00:09:16.91" class="lt" onclick="jumptoTime(556, this.id)"><p>我這隻是比較厚的密實袋，這樣搓會比較容易，袋子也不會溶掉，我戴著手套也不怕它會燙，搓它幾分鐘，讓薄米粉變成糯米糰，冰皮可以比較硬，而且可以黏在一起，搓好一團之後</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:56.91" id="00:09:56.91" class="lt" onclick="jumptoTime(596, this.id)"><p>我把它搓成一團，黏好一團之後，弄平一點</p></a>
+				<a href="#00:10:5.91" id="00:10:5.91" class="lt" onclick="jumptoTime(605, this.id)"><p>弄平一點，因為我要放進冰箱冷藏，現在它還是熱的，放進冰箱冷藏，冷藏一下，這樣才可以包榴槤餡，薄一點會比較快冷，搓薄一點，搓好之後就可以包了，這裡的餡料已經冷藏好了，餅皮也冷藏好了，現在我們就做，首先我拿一點出來，我等一下會分好，大約拿30克的粉團出來，然後加一點顏色，我這個蛋黃色，為什麼要這樣做呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:16.53" id="00:11:16.53" class="lt" onclick="jumptoTime(676, this.id)"><p>因為我想月餅皮是白色的，餡料的黃色也不夠，所以我想在餅皮底部再加點顏色，但我不想整個餅皮都是黃色，我有個構思想試做，現在試做，首先將一部分的麵團搓成橙黃色，喜歡什麼顏色都可以，然後將它放在白色的麵皮底部，令到它白裡透，有點黃，我的想法就是這樣，做不做到就一會兒看看，現在先搓勻。</p></a>
+				<a href="#00:12:24.53" id="00:12:24.53" class="lt" onclick="jumptoTime(744, this.id)"><p>如果不想有色素，不想吃的，可以完全不放，我將它分成九份，每一份搓圓，變成一個小球，一個丸子，拿開它，然後我把剩下的餅皮又分成9份，每一個都搓圓，搓開一點，中間有個位置，我就可以將這個，放下去，然後搓開它，就好像圓形的太陽仔，搓開它，對了，見不見到，跟住我就可以將個餡，放下去，然後我拿上來給大家看，跟住可以用個。</p></a>
+				<a href="#00:13:50.12" id="00:13:50.12" class="lt" onclick="jumptoTime(830, this.id)"><p>虎位，我將它這樣，包住它，用這個手，然後慢慢，收口，如果你不懂這個，我覺得好難的話，就好像搓湯圓，將個餡搓入去，即是捏回去，捏埋咗，咁就得架啦，你會見到呢，暗暗地就有個，橙黃色的心在這個位，係個皮讀透出黎，你見唔見到，好簡單，首先呢度，就有個模，個模呢，我放低先，個模呢，我將佢裝啲糕粉落去，咁糕粉我之前。</p></a>
+				<a href="#00:14:44.12" id="00:14:44.12" class="lt" onclick="jumptoTime(884, this.id)"><p>之前嘅介紹都介紹過，好多次，咁其實呢就係熟糯米粉，將糯米粉呢，用白鑊呢，炒到佢呢，微黃色咁就得架啦，熟左少少粉啦，跟住將個月餅，又係咁樣，蝦少少粉，喺度啦，跟住將有顏色個部分，就擺落去，個底嗰度，然後慢慢咁退入去啦，到個底呢個位，我隻手呢就咁慢慢，撳一撳佢啦，係啦，跟住呢我地呢，再見，反轉，然後按壓一下。</p></a>
+				<a href="#00:15:41.27" id="00:15:41.27" class="lt" onclick="jumptoTime(941, this.id)"><p>先印一下樣子，不用太大力，輕輕按一下就可以了，然後放手，然後就可以將整個推出來，看到嗎?</p></a>
+				<a href="#00:16:2.27" id="00:16:2.27" class="lt" onclick="jumptoTime(962, this.id)"><p>真的有一點黃色，不是整個是白色，然後，還有的，就是用掃將多餘的粉掃走，掃開後，就會有顏色再出一點，看到嗎?</p></a>
+				<a href="#00:16:27.27" id="00:16:27.27" class="lt" onclick="jumptoTime(987, this.id)"><p>這樣一個榴槤冰披月餅就做好了，現在還沒吃的，放在冰箱冰一下，冰硬了之後，就可以吃之前放室溫拿出來，油顏色看著就會看到了，我先給你們看這個，之前製成的這幾個，如果餡料太小，還沒做出來就會比較矮，最好是量好，不會像我這樣高低，量好後，每個都一樣就會更好，今天我就不試吃了，因為試吃又要再等一天，等到冰掉，但我告訴你們，希望大家喜歡，也希望中秋節快樂。</p></a>
+				<a href="#00:17:35.27" id="00:17:35.27" class="lt" onclick="jumptoTime(1055, this.id)"><p>下次再見，拜拜。</p></a>
+</div>
+	</body>
+</html>

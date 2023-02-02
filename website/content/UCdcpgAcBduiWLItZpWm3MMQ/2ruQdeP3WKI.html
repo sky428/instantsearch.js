@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>紅絲絨蛋糕 - Red Velvet Cupcakes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2ruQdeP3WKI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>紅絲絨蛋糕 - Red Velvet Cupcakes</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.15" id="00:00:4.15" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello 各位朋友你們好! Merry Christmas!</p></a>
+				<a href="#00:00:8.15" id="00:00:8.15" class="lt" onclick="jumptoTime(8, this.id)"><p>今天播出的時候應該是12月26日， Boxing Day，遲了一點點，不過這次介紹的食譜不一定只可以在聖誕節用，新年、開派對、情人節都可以用，今天我們做什麼呢?</p></a>
+				<a href="#00:00:34.15" id="00:00:34.15" class="lt" onclick="jumptoTime(34, this.id)"><p>我們做紅絲絨蛋糕，什麼是紅絲絨蛋糕呢?</p></a>
+				<a href="#00:00:41.15" id="00:00:41.15" class="lt" onclick="jumptoTime(41, this.id)"><p>其實紅絲絨蛋糕在北美洲很受歡迎，究竟是什麼味道呢?</p></a>
+				<a href="#00:00:50.15" id="00:00:50.15" class="lt" onclick="jumptoTime(50, this.id)"><p>其實應該是朱古力味，但到現在很多在外面買的紅絲絨蛋糕已經沒有朱古力味，只有一個紅色的蛋糕，如果不想用色素的話，可以用紅菜頭，然後拿汁來做絲絨蛋糕，其他的可以選擇一些類似這些，這個就是聖誕紅色的油質色或食用色素，甚至乎我去購物中心買了一些專門放在食物上的紅色蛋糕，我之前在群組投票，投票了要做這個蛋糕。</p></a>
+				<a href="#00:01:59.15" id="00:01:59.15" class="lt" onclick="jumptoTime(119, this.id)"><p>所以我就開始了，這些材料除了是蛋糕本身，還有裝飾的部分，裝飾可以用各類的水果，因為是聖誕節，所以會選擇一些紅色的，有草莓和莓果，還有奶油芝士也是用來做裝飾，裏面需要的是這些東西，蛋糕的材料也有，我們有蛋糕的低筋麵粉，低筋麵粉，有冰糖，冰糖也是用來裝飾的，先把這些推開，然後做食物的地方就是這邊。</p></a>
+				<a href="#00:02:53.56" id="00:02:53.56" class="lt" onclick="jumptoTime(173, this.id)"><p>有糖、麵粉、牛油、香草精、香油，另外就是朱古力，這個是朱古力味的蛋糕，其實是紅絲肉，所以一定要有朱古力粉，有雞蛋，不少得了，這邊我會放一些，令蛋糕鬆開，有空氣的東西，就是焙醋，沙律粉和焙醋粉，還有牛奶，這個蛋糕有放牛奶的，沒有也可以不放，有什麼不同呢?</p></a>
+				<a href="#00:03:33.56" id="00:03:33.56" class="lt" onclick="jumptoTime(213, this.id)"><p>我們還會放一些醋，我又放了一些有機的蘋果醋，再加上一點點鹽，我做蛋糕多數都會放鹽，就是這麼多，我們現在開始，我們現在開始量食物，這邊就是，首先最簡單的方法，就是將所有的乾材料，放進一個鍋裡，一個碗裡，除了砂糖和牛油，牛油都是叫濕的，我都是當一會用砂糖打它，所以就是分開的，乾粉那裡，125克。</p></a>
+				<a href="#00:04:17.56" id="00:04:17.56" class="lt" onclick="jumptoTime(257, this.id)"><p>多數量的時候，順便放一個，篩子在上面，等到一會一次過量好，再一次過篩進去，就方便了，125克，水不是很多，我們不是做很多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:41.56" id="00:04:41.56" class="lt" onclick="jumptoTime(281, this.id)"><p>然後就是，Baking powder，這個Baking soda，我就需要，四分之一個茶匙，不是很多，四分之一個茶匙，我用的比基尼粉是一個茶匙</p></a>
+				<a href="#00:05:9.62" id="00:05:9.62" class="lt" onclick="jumptoTime(309, this.id)"><p>在這些地方，就是多功夫的地方，就是量一下，如果一次過量好全部倒進去就很快完成</p></a>
+				<a href="#00:05:30.62" id="00:05:30.62" class="lt" onclick="jumptoTime(330, this.id)"><p>鹽也放進去，還有朱古力粉，朱古力粉我用的是一個湯匙，如果用一個湯匙多一點點也沒問題，就這樣放進去</p></a>
+				<a href="#00:05:50.62" id="00:05:50.62" class="lt" onclick="jumptoTime(350, this.id)"><p>就可以過篩了，接下來就是濕的部分，牛油放了50克，然後就是砂糖，砂糖是120克，牛油已經室溫了一會兒，我不知道它一會兒會不會很順滑，試一下</p></a>
+				<a href="#00:06:23.62" id="00:06:23.62" class="lt" onclick="jumptoTime(383, this.id)"><p>牛油已經很硬了，慢慢打，打到底部，打到變成淺黃色</p></a>
+				<a href="#00:06:41.62" id="00:06:41.62" class="lt" onclick="jumptoTime(401, this.id)"><p>鬆開後就放一些紅色的顏色進去，這是新買的，等我開了，我不知道香港有沒有賣，還是只用色素，我這個就用了，紅色的，紅色的，用色素，這個大約，我不知道算貴還是便宜，這個就，差不多15元，我需要一個湯匙的，香味很香，半湯匙至一湯匙，視乎你想要多深色，我用了大半湯匙，接著打發，看起來很深色，稍後再加入粉末便可以了，這個時間我的焗爐已經預熱了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:1.95" id="00:08:1.95" class="lt" onclick="jumptoTime(481, this.id)"><p>我已經把這些cupcake的紙放上去，你可以放一張，我放兩張，因為我另一張有顏色，一張沒有顏色，現在我把乾粉和雞蛋一起逐一加入，雞蛋那邊我已經加了少許vanilla在裏面，稍後再逐一加入乾粉和雞蛋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:41.95" id="00:08:41.95" class="lt" onclick="jumptoTime(521, this.id)"><p>我先加少許乾粉，然後慢速攪拌，接著加少許雞蛋，然後加入雞蛋，直至乾粉開始消失，然後加入雞蛋</p></a>
+				<a href="#00:09:28.03" id="00:09:28.03" class="lt" onclick="jumptoTime(568, this.id)"><p>再加雞蛋，最後把Buttermilk和醋放在一起，然後就放進去，慢慢地， 逐少逐少地放進去</p></a>
+				<a href="#00:09:50.03" id="00:09:50.03" class="lt" onclick="jumptoTime(590, this.id)"><p>雖然我剛才買了這麼大盒， 但Buttermilk我需要用的真的很少，剩下的用來做什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:57.03" id="00:09:57.03" class="lt" onclick="jumptoTime(597, this.id)"><p>可以用來調味醬， 炸食材，這樣會很好吃，皮就會很鬆脆，我這次把蝦和蛋放在一起，然後就用這個醬汁來調味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:15.03" id="00:10:15.03" class="lt" onclick="jumptoTime(615, this.id)"><p>加一些醬汁，這些是叫什麼?</p></a>
+				<a href="#00:10:18.03" id="00:10:18.03" class="lt" onclick="jumptoTime(618, this.id)"><p>辣椒醬，辣椒醬，辣椒醬，這個是用來調味醬的，辣椒醬，辣椒醬，然後就加些醬汁，辣椒醬，然後再攪拌到底部，攪拌至顏色鮮紅</p></a>
+				<a href="#00:11:0.38" id="00:11:0.38" class="lt" onclick="jumptoTime(660, this.id)"><p>攪拌至光滑，完成了，就可以放進焗盤，firstly這個 insulin</p></a>
+				<a href="#00:11:18.61" id="00:11:18.61" class="lt" onclick="jumptoTime(678, this.id)"><p>blocks，Crunch�uvre，thanks，opacity</p></a>
+				<a href="#00:11:24.81" id="00:11:24.81" class="lt" onclick="jumptoTime(684, this.id)"><p>negativity，revers，Dire neo，univers，gymnastics，ston，Verfüg，Civ，encoun，didn歲，turtle，κ，dioxide，אנחנו，hait，Zach，t理hit</p></a>
+				<a href="#00:11:15.63" id="00:11:15.63" class="lt" onclick="jumptoTime(675, this.id)"><p>ellow，irritated</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:19.15" id="00:11:19.15" class="lt" onclick="jumptoTime(679, this.id)"><p>Sudan，allora</p></a>
+				<a href="#00:11:22.49" id="00:11:22.49" class="lt" onclick="jumptoTime(682, this.id)"><p>indest，inst incoming，哎!手也太抖了，太不太抖，哎!太抖了，deeply</p></a>
+				<a href="#00:11:58.00" id="00:11:58.00" class="lt" onclick="jumptoTime(718, this.id)"><p>ilah，fahren，rationale，国 Für，ción，certificates，науч</p></a>
+				<a href="#00:11:47.56" id="00:11:47.56" class="lt" onclick="jumptoTime(707, this.id)"><p>RPG，orrow，lijk，slate，крас，mez，ования，velope</p></a>
+				<a href="#00:12:3.44" id="00:12:3.44" class="lt" onclick="jumptoTime(723, this.id)"><p>obligations，competence，있습니다，lucky，power，步，Ener Sei，ig，Tab，burn，scariest</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:3.42" id="00:12:3.42" class="lt" onclick="jumptoTime(723, this.id)"><p>lied，efficacy，しか，heres，되�resident，bande，ז，paralysis，extra</p></a>
+				<a href="#00:11:46.74" id="00:11:46.74" class="lt" onclick="jumptoTime(706, this.id)"><p>must，atos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:53.80" id="00:11:53.80" class="lt" onclick="jumptoTime(713, this.id)"><p>biking，cases，асть，survivors，推，ced，крут，doct� Duo，rer，amplifier，잖，있을，suicide</p></a>
+				<a href="#00:11:41.96" id="00:11:41.96" class="lt" onclick="jumptoTime(701, this.id)"><p>political，VI，rural，extent，vert，OG，ready，agement，feito，discovery，Chry sme，Refer CR，reside pricing，datos</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:55.96" id="00:11:55.96" class="lt" onclick="jumptoTime(715, this.id)"><p>watched，makes Prozent，différents，decrease ignition</p></a>
+				<a href="#00:12:1.88" id="00:12:1.88" class="lt" onclick="jumptoTime(721, this.id)"><p>ppy，放入冰箱冷藏30分钟，份量應該可以製作12個，我這裏就製作11個，再製作12個，cribed</p></a>
+				<a href="#00:12:54.32" id="00:12:54.32" class="lt" onclick="jumptoTime(774, this.id)"><p>força，iem</p></a>
+				<a href="#00:12:50.44" id="00:12:50.44" class="lt" onclick="jumptoTime(770, this.id)"><p>arqu，пол，還是，itas，한데，ries</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:50.94" id="00:12:50.94" class="lt" onclick="jumptoTime(770, this.id)"><p>exca Eng，ecd，onde</p></a>
+				<a href="#00:12:45.64" id="00:12:45.64" class="lt" onclick="jumptoTime(765, this.id)"><p>追 Apr，ROI</p></a>
+				<a href="#00:12:50.38" id="00:12:50.38" class="lt" onclick="jumptoTime(770, this.id)"><p>государ，kas</p></a>
+				<a href="#00:12:48.24" id="00:12:48.24" class="lt" onclick="jumptoTime(768, this.id)"><p>elaborate，göre，当</p></a>
+				<a href="#00:12:53.48" id="00:12:53.48" class="lt" onclick="jumptoTime(773, this.id)"><p>willingly，recipients，pupils，obligation，Messi，Devil</p></a>
+				<a href="#00:12:54.26" id="00:12:54.26" class="lt" onclick="jumptoTime(774, this.id)"><p>怎麼樣，rain</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:49.24" id="00:12:49.24" class="lt" onclick="jumptoTime(769, this.id)"><p>Raz，將蛋糕放涼，然後用烤箱烤一會兒，將蛋糕放涼，然後用烤箱烤一會兒，你可以用忌廉打，加水果，或者用忌廉芝士做的芝士，忌廉芝士和糖粉，如果不想吃太多牛油，可以用忌廉芝士，糖粉和忌廉芝士的比例可以調整至你喜歡，忌廉芝士和糖粉的比例是170克，現在可以慢速攪拌，因為忌廉芝士是一塊的，如果太快攪拌，糖粉會濺出來。</p></a>
+				<a href="#00:15:24.36" id="00:15:24.36" class="lt" onclick="jumptoTime(924, this.id)"><p>現在可以慢速攪拌，現在可以慢速攪拌，奶油芝士已經室溫了一小時，因為我家的室內溫度比較冷，所以奶油芝士不會很軟，加上我用的奶油芝士不是混合了一半的室溫牛油，所以會比較難打，如果加上牛油就會比較容易鬆軟，現在加了幾滴忌廉，加了忌廉後， 它就會立刻混合在一起，始終這是全忌廉芝士，不是說糖霜會很雪白。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:45.91" id="00:16:45.91" class="lt" onclick="jumptoTime(1005, this.id)"><p>因為我忌廉芝士的比例其實多，如果想再雪白一點， 就要加很多糖，對我來說， 我覺得足夠了，再打鬆一點， 容易一點，可以再加一點忌廉，現在已經很滑了，給你們看看，很滑了，這樣就可以了，擠出來也不會很硬，因為我放了很多忌廉芝士，和忌廉芝士，令它變得很軟，等蛋糕冷卻後就可以做裝飾，現在可以準備將蛋糕黏在一起。</p></a>
+				<a href="#00:18:6.35" id="00:18:6.35" class="lt" onclick="jumptoTime(1086, this.id)"><p>我再墊一塊，可能會好看一點，但如果不喜歡的話，也可以這樣，然後準備士多啤梨或莓果，準備好後就可以慢慢將忌廉芝士搓出來，你可按個人喜好， 想要的形狀，我不想擠太多， 只想要一點點，然後再放一個，不， 再在頂部擠一個，一個波點，因為忌廉比較柔和，擠出來的效果就不會太好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:19:21.26" id="00:19:21.26" class="lt" onclick="jumptoTime(1161, this.id)"><p>因為我放了很多忌廉，看不看得到，可以吧?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:19:30.26" id="00:19:30.26" class="lt" onclick="jumptoTime(1170, this.id)"><p>我現在就放一點點，繼續慢慢擠，你可以不放忌廉，聖誕帽的話也可以，你喜歡的位置， 隨便擠也可以，然後放一顆莓果，看你喜歡擠成什麼樣子，如果是草莓， 就這樣擠，如果是莓果， 就這樣擠，如果是莓果， 就這樣擠，這樣就可以整齊樣子，放入Raspberry，喜歡的話可以加糖粉，令它更漂亮。</p></a>
+				<a href="#00:21:3.10" id="00:21:3.10" class="lt" onclick="jumptoTime(1263, this.id)"><p>因為我心急，要把奶油奶酪弄好後，沒有冰塊的話，我就馬上用了，所以弄好它，如果不夠好，可以加糖粉，這樣也可以很漂亮的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:21:30.27" id="00:21:30.27" class="lt" onclick="jumptoTime(1290, this.id)"><p>放在旁邊，給你們看</p></a>
+				<a href="#00:21:38.27" id="00:21:38.27" class="lt" onclick="jumptoTime(1298, this.id)"><p>是不是很漂亮呢，我試吃了，不如你們看看裡面是怎樣的，打開給你們看，紅絲絨蛋糕，全都是紅色的，我經常覺得，好像吃色素，我現在就開，很鬆軟，很鬆軟，你看看，聞起來，有少許像，除了朱古力味，還有少許像柯華田的味道，因為我先生說，整間屋都好像柯華田的味道，看看多鬆軟，很鬆軟，蛋糕很濕潤，如果急需，如果你想。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:22:40.27" id="00:22:40.27" class="lt" onclick="jumptoTime(1360, this.id)"><p>派對的時候，可以先做好蛋糕，先不要放入冰箱，先做好放涼後，放入冰箱，要用的時候拿出來，方便很多，不用每一天都立即做，吃的時候拿出來，室溫再放入冰箱，今天就介紹到這裡，希望你們喜歡，希望你們有個開心的聖誕，新年，下一次見你們就新年，新年快樂，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

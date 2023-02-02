@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伯爵松露朱古力 (Earl Grey Truffles)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'UY8Nyi31CTw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>伯爵松露朱古力 (Earl Grey Truffles)</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.86" id="00:00:4.86" class="lt" onclick="jumptoTime(4, this.id)"><p>大家好，今天和大家一起做一個巧克力，就是做什麼呢?就是八爵紅茶松露巧克力，可以不用紅茶，八爵松露巧克力，八爵就是八爵紅茶，你可以用你自己喜歡的牌子，我在超級市場看到有這個牌子就買了，這也算不上OVERTIME，開了一些，我先預備了，我需要的材料是八爪紅茶，我用茶包，你可以用茶葉也沒所謂，只是之後譬如你用茶葉。</p></a>
+				<a href="#00:00:54.83" id="00:00:54.83" class="lt" onclick="jumptoTime(54, this.id)"><p>你要再過篩的時候，就是做完過篩的時候，就要過多幾次而已，材料就是眼前這幾種，最主要的是什麼呢?</p></a>
+				<a href="#00:01:7.83" id="00:01:7.83" class="lt" onclick="jumptoTime(67, this.id)"><p>最主要就是巧克力，這個巧克力，想它好吃，就要靠你選擇哪一種巧克力，我這個是70%巧克力，你可以選擇你自己喜歡的份量，甚至乎我不想太苦，我想要甜一點的也可以，你喜歡選擇自己喜歡的巧克力，或者有些是沒有分的，譬如有些煮的巧克力，可能分是苦甜，你可以自己選擇自己喜歡的，而這個食譜我是沒有加糖的，沒有加糖的。</p></a>
+				<a href="#00:01:54.83" id="00:01:54.83" class="lt" onclick="jumptoTime(114, this.id)"><p>所以如果你想吃甜一點的話，你自己就要加糖了，我一會兒告訴你，如果你想加糖的話，你可以在哪一個步驟下，首先我告訴你，我們需要的材料，第一樣就是，有忌廉，這個就是35%忌廉，即是可以打得起的忌廉，然後就是，有牛油，這個忌廉，我需要的是，1 2%牛油，2湯匙，或者再少也可以，你喜歡的，我先說牛油。</p></a>
+				<a href="#00:02:41.83" id="00:02:41.83" class="lt" onclick="jumptoTime(161, this.id)"><p>可以加進去，令到巧克力的香味，增加它的香味，和它的滑的程度，可以幫助巧克力的口感更滑，不加油可以嗎，是可以的，另外如果想健康一點，不想加牛油的話，你可以加椰子油也可以，我用牛油，用一些比較傳統的食譜，另外牛油有牛油的香味，可以加進巧克力裡，有巧克力，紅茶，為什麼這裡有個橙，我不是放橙進去煮，而是。</p></a>
+				<a href="#00:03:35.83" id="00:03:35.83" class="lt" onclick="jumptoTime(215, this.id)"><p>我需要橙皮，因為我想將食譜，好像只有紅茶，好像有什麼可以改變，如果你在家不想放橙可以不放，我只是加多一個選擇給你們，我會放一塊橙皮進去煮，令到它提起紅茶的味道，橙或檸檬皮，和白醉紅茶很搭，你們可以試試，不喜歡可以不放，現在開始，第一時間，先去皮，把橙，慢慢地，盡量只要表面，我講的一塊是想大塊一點，我切得。</p></a>
+				<a href="#00:04:31.37" id="00:04:31.37" class="lt" onclick="jumptoTime(271, this.id)"><p>切得不太好，其實不需要太多，只需要少許就可以了，我這個橙已經洗乾淨了，給你們看看，我們開始做了，事不宜遲，首先我要Cream，Cream要三分之二杯，我倒三分之二杯出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:5.34" id="00:05:5.34" class="lt" onclick="jumptoTime(305, this.id)"><p>先放一邊，然後放入爐頭煮忌廉，不用太大火，用小火煮就可以了，煮忌廉的同時，我把朱古力切開，我把朱古力切碎，切碎會幫助朱古力溶化，needed mentioned</p></a>
+				<a href="#00:06:52.46" id="00:06:52.46" class="lt" onclick="jumptoTime(412, this.id)"><p>metals，nieuaudience，Nancy</p></a>
+				<a href="#00:06:59.92" id="00:06:59.92" class="lt" onclick="jumptoTime(419, this.id)"><p>ivers，verste，Enc았어，wood，le，alia，instructed</p></a>
+				<a href="#00:06:55.44" id="00:06:55.44" class="lt" onclick="jumptoTime(415, this.id)"><p>finds，talk89</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:2.24" id="00:07:2.24" class="lt" onclick="jumptoTime(422, this.id)"><p>остан，tså，oton，bakın，prospective，more，pairs</p></a>
+				<a href="#00:06:59.18" id="00:06:59.18" class="lt" onclick="jumptoTime(419, this.id)"><p>dorm인지，AWS，Ausw Souls，Saul，Niss immigration</p></a>
+				<a href="#00:06:59.72" id="00:06:59.72" class="lt" onclick="jumptoTime(419, this.id)"><p>unu，feet，conversions</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:1.62" id="00:07:1.62" class="lt" onclick="jumptoTime(421, this.id)"><p>ogens，ensation</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:54.84" id="00:06:54.84" class="lt" onclick="jumptoTime(414, this.id)"><p>émon，입，relates，trucs，discord</p></a>
+				<a href="#00:07:4.32" id="00:07:4.32" class="lt" onclick="jumptoTime(424, this.id)"><p>Tanner，ン 34</p></a>
+				<a href="#00:07:3.76" id="00:07:3.76" class="lt" onclick="jumptoTime(423, this.id)"><p>entreprises，巧eston，開始滾了，可以關掉火，然後可以將紅茶放入茶包，和橙皮放入茶包，讓茶包浸泡，浸泡至茶色出現就可以了，我開了小火，讓茶包慢慢浸泡，繼續切朱古力，切碎的巧克力放在盤子上，奶的奶油已經變成茶色，現在只需幾分鐘，如果想濃一點可以再浸一會，當茶色變成茶色就可以加熱再煮滾，然後就可以放入朱古力。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:51.36" id="00:08:51.36" class="lt" onclick="jumptoTime(531, this.id)"><p>牛油也可以放入朱古力，滾的時候就可以倒入朱古力，最好有個碟子，倒入朱古力，用磨刀或匙羹攪拌均勻，慢慢放低，然後慢慢和忌廉和朱古力攪拌，現在可以再等一等，讓它再有熱力，放入朱古力，然後再攪拌，然後慢慢攪拌，將朱古力攪拌均勻，今天我家比較冷，朱古力很快就溶化，如果你們也有同樣的情況，不要緊，我們可以隔水，讓朱古力完全溶化。</p></a>
+				<a href="#00:10:35.43" id="00:10:35.43" class="lt" onclick="jumptoTime(635, this.id)"><p>因為我家比較冷，忌廉不能一次過溶化，所以我隔水將朱古力放入熱水中，慢慢攪拌，我用匙羹或抹刀，但不要用打蛋器，我們不需要將朱古力打空氣，最好不要，松露朱古力軟硬度取決於朱古力的硬度，松露朱古力除了有朱古力的條件外，還有忌廉和朱古力的比例，忌廉越多，松露朱古力就會越軟，忌廉越少，松露朱古力就會越硬。</p></a>
+				<a href="#00:11:50.43" id="00:11:50.43" class="lt" onclick="jumptoTime(710, this.id)"><p>我現在加少許鹽，但不需要太多，因為我認為太甜的話，加少許鹽會令味道不均勻，所以我只加少許鹽，熱水不太熱，只需要少許微暖，因為朱古力對溫度很敏感，不需要太熱，現在很光滑，這樣就可以了，很光滑吧，可以放入氣泡中，然後就可以把朱古力倒入氣泡中，然後把朱古力推勻，現在就可以放入冰箱冷藏2小時，然後就可以做下一個步驟。</p></a>
+				<a href="#00:13:31.15" id="00:13:31.15" class="lt" onclick="jumptoTime(811, this.id)"><p>我們回來了，朱古力已經冷藏好了，我這裡有朱古力粉和可可粉，現在就可以把朱古力做形，你可以切成粒狀再搓，或者像我這樣用湯匙刮西瓜，可以用湯匙刮或切成粒狀再搓，然後就可以搓成圓形，搓成圓形再放入冰箱冷藏，做什麼?想吃東西嗎?</p></a>
+				<a href="#00:14:48.11" id="00:14:48.11" class="lt" onclick="jumptoTime(888, this.id)"><p>等一下吧，這樣就可以放進可可粉裡，然後就可以一粒粒地放出來了，我們可以繼續，然後就可以搓它，然後再放進去，然後就拿它出來，然後就一個個地去做，放一放就容易一點去刮出來，如果剛剛馬上從雪櫃拿出來，它還是有一點硬的，然後現在就是放一放之後再用刮刮，它就會軟一點，你可以用不同的其他的粉，譬如用糖粉或其他東西，用不同顏色的，或者如果你做綠茶味的，用綠茶粉那些都可以的。</p></a>
+				<a href="#00:16:15.26" id="00:16:15.26" class="lt" onclick="jumptoTime(975, this.id)"><p>那你們就可以試一下做，現在它很黏手，因為我放久了一點，那吃就可以馬上吃，或者可以再放回雪櫃冷藏，如果放在，做好之後放在雪櫃，那可以放一個星期，如果放在冰箱就可以放一個月，那你可以做，譬如開派對，或者想送給別人的時候，你又可以不用即日做，你可以之前做好，然後拿出來再送給別人，那我暫時做完這些。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:13.05" id="00:17:13.05" class="lt" onclick="jumptoTime(1033, this.id)"><p>先放在這裡，大小就視乎你喜歡的大小，我喜歡吃大顆一點或小顆一點，都可以的，然後就可以上碟了，我現在做上碟給你們看，這樣就可以一個個放在碟子上，大小就視乎你喜歡的大小，我喜歡吃大顆一點或小顆一點，都可以的</p></a>
+				<a href="#00:18:27.24" id="00:18:27.24" class="lt" onclick="jumptoTime(1107, this.id)"><p>mensen，dressed，такая</p></a>
+				<a href="#00:18:51.94" id="00:18:51.94" class="lt" onclick="jumptoTime(1131, this.id)"><p>unky，buff，ты</p></a>
+				<a href="#00:18:55.34" id="00:18:55.34" class="lt" onclick="jumptoTime(1135, this.id)"><p>inda，Naval，раз，appet்?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:55.44" id="00:18:55.44" class="lt" onclick="jumptoTime(1135, this.id)"><p>ह，pests</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:35.74" id="00:18:35.74" class="lt" onclick="jumptoTime(1115, this.id)"><p>zeg，brilliant，ioned，unft，42，посмотр�，obsess，Wood，Yout 03，bad</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:52.22" id="00:18:52.22" class="lt" onclick="jumptoTime(1132, this.id)"><p>is，Tr Şimdi，umb，Fridays，warum</p></a>
+				<a href="#00:18:54.08" id="00:18:54.08" class="lt" onclick="jumptoTime(1134, this.id)"><p>bisher，uest</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:52.56" id="00:18:52.56" class="lt" onclick="jumptoTime(1132, this.id)"><p>magician，Jake，around，salt，lingu ஆ，yr，v</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:54.68" id="00:18:54.68" class="lt" onclick="jumptoTime(1134, this.id)"><p>uphold，kunne</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:33.74" id="00:18:33.74" class="lt" onclick="jumptoTime(1113, this.id)"><p>осто，chat，BUR</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:55.70" id="00:18:55.70" class="lt" onclick="jumptoTime(1135, this.id)"><p>送，kra，�ė，Cena</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:32.44" id="00:18:32.44" class="lt" onclick="jumptoTime(1112, this.id)"><p>Jer JUD，easily</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:37.20" id="00:18:37.20" class="lt" onclick="jumptoTime(1117, this.id)"><p>Kungaleb，immedi，народ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:47.54" id="00:18:47.54" class="lt" onclick="jumptoTime(1127, this.id)"><p>erzäh，Beverly，gloves，Sally</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:54.10" id="00:18:54.10" class="lt" onclick="jumptoTime(1134, this.id)"><p>你就 Baek，rounded，souha，우 вопросы</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:46.40" id="00:18:46.40" class="lt" onclick="jumptoTime(1126, this.id)"><p>hands，atención，ię，Как，Oakland，sediment</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:41.54" id="00:18:41.54" class="lt" onclick="jumptoTime(1121, this.id)"><p>version，� dopamine</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:37.56" id="00:18:37.56" class="lt" onclick="jumptoTime(1117, this.id)"><p>MALE，场，deste</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:52.70" id="00:18:52.70" class="lt" onclick="jumptoTime(1132, this.id)"><p>pre，另外可以上色，我前面有些橙皮，可以撒上橙皮，讓它有少少裝飾，不過我只是用來，讓大家看看，因為這個是啡色，橙皮令它裝飾好看一點，今日介紹到此為止，希望大家喜歡這個八爪松露巧克力，希望大家試試做，再見。</p></a>
+</div>
+	</body>
+</html>
