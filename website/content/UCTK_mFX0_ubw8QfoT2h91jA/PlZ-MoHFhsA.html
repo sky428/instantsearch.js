@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日式金菇黑豚卷｜林淑敏｜許家傑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'PlZ-MoHFhsA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>日式金菇黑豚卷｜林淑敏｜許家傑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:2.71" id="00:00:2.71" class="lt" onclick="jumptoTime(2, this.id)"><p>你好，我是許家傑 你好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:7.51" id="00:00:7.51" class="lt" onclick="jumptoTime(7, this.id)"><p>我是林淑敏，原來一定要這樣介紹，很緊張，現在要做甚麼，我們今天做金菇豬腩肉卷，但這道菜式有國籍</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:23.15" id="00:00:23.15" class="lt" onclick="jumptoTime(23, this.id)"><p>甚麼國籍</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:23.91" id="00:00:23.91" class="lt" onclick="jumptoTime(23, this.id)"><p>它來自日本，因為我想做日式燒汁配搭它</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:27.79" id="00:00:27.79" class="lt" onclick="jumptoTime(27, this.id)"><p>不如叫日式金菇黑豚肉卷</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:36.91" id="00:00:36.91" class="lt" onclick="jumptoTime(36, this.id)"><p>首先我們做醬汁，我們有一份豉油，一份味醂和一份清酒，比例是一比一比一，我們先做三斤，好嗎，然後我們來做清酒，我們準備好醬汁備用，我自己很喜歡吃蔥，所以黑豚肉卷也加了蔥，處理蔥有一個竅門，凡是姜蔥蒜都要拍一下，尤其是蔥白的位置，會令它的味道更突出，打兩下，粗重事難道要我來做</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:14.87" id="00:01:14.87" class="lt" onclick="jumptoTime(74, this.id)"><p>好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:15.91" id="00:01:15.91" class="lt" onclick="jumptoTime(75, this.id)"><p>underestchn risky</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:18.47" id="00:01:18.47" class="lt" onclick="jumptoTime(78, this.id)"><p>Italian，� Open，�обод，Pitt，brand，detail，것으로 entertained，你不要拍爛它，你拍爛它，斯文一點，拍完之後我們把它切</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:26.42" id="00:01:26.42" class="lt" onclick="jumptoTime(86, this.id)"><p>不用 我覺得我拍的時候，它已經粉碎了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:29.18" id="00:01:29.18" class="lt" onclick="jumptoTime(89, this.id)"><p>完全不用你試，我們就留在這裡備用，我們先燒熱鍋，加少許油下去，夠油嗎，夠油，因為我們要首先</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:39.06" id="00:01:39.06" class="lt" onclick="jumptoTime(99, this.id)"><p>金字槌可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:41.02" id="00:01:41.02" class="lt" onclick="jumptoTime(101, this.id)"><p>我們，我都不明白你說什麼，有煩啊，我不想理他當然要結，處理芽菜一定要用慢火，全都放下去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:52.10" id="00:01:52.10" class="lt" onclick="jumptoTime(112, this.id)"><p>為什麼和我所想的不一樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:55.78" id="00:01:55.78" class="lt" onclick="jumptoTime(115, this.id)"><p>我們先炒芽菜和金菇，OK，要不要拋鑊，其實拋鑊並不是形那麼簡單，是令到事情均勻一點，開始脹起來，不要緊，我們加少許胡椒粉調味，最後才加少許鹽，因為加鹽會出水，炒一炒，差不多可以了，我們先找碟子盛起，家傑包東西厲害嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:27.62" id="00:02:27.62" class="lt" onclick="jumptoTime(147, this.id)"><p>我包東西可以的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:29.90" id="00:02:29.90" class="lt" onclick="jumptoTime(149, this.id)"><p>那你包吧，用豬腩肉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:32.90" id="00:02:32.90" class="lt" onclick="jumptoTime(152, this.id)"><p>是黑豚肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:33.70" id="00:02:33.70" class="lt" onclick="jumptoTime(153, this.id)"><p>黑豚肉，包了金菇和炒起的芽菜，加少許蔥，蔥剛才沒有炒，因為我想生一點蔥</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:47.22" id="00:02:47.22" class="lt" onclick="jumptoTime(167, this.id)"><p>你這樣做，我立即想起一會兒吃的時候，質感會很不一樣，加上芽菜會爽口</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:54.30" id="00:02:54.30" class="lt" onclick="jumptoTime(174, this.id)"><p>是，如果兩塊的話，我們攤平一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:59.58" id="00:02:59.58" class="lt" onclick="jumptoTime(179, this.id)"><p>即是盡量</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:0.42" id="00:03:0.42" class="lt" onclick="jumptoTime(180, this.id)"><p>薄一點口感會好吃，因為很多人做這個卷的時候，都會喜歡用牙籤鞏固，但我自己覺得不需要，你認清楚它的尾部，尾部才煎，煎得緊就可以了，我們可以開始煎了，溫柔一點，好，很開心，我怕會散開，你包了我有點怕，很緊，我們保持一下，不要反來反去，我們卷牛肉，可以用慢火，鎖住肉汁，但如果是黑豚肉，即是豬腩肉，就用中慢火。</p></a>
+				<a href="#00:03:42.02" id="00:03:42.02" class="lt" onclick="jumptoTime(222, this.id)"><p>可以令肉更均勻，很漂亮，我們在這個時候，我們就開始翻面</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:52.38" id="00:03:52.38" class="lt" onclick="jumptoTime(232, this.id)"><p>Yeah，但其實黑豚肉是否可以生吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:56.30" id="00:03:56.30" class="lt" onclick="jumptoTime(236, this.id)"><p>不可以生吃，七成可以生吃，死都不吃，如果你吃了生的話，你有甚麼事，別人會負責任</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:3.02" id="00:04:3.02" class="lt" onclick="jumptoTime(243, this.id)"><p>即是豬不會負責任</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:4.54" id="00:04:4.54" class="lt" onclick="jumptoTime(244, this.id)"><p>是，那就無謂了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:6.50" id="00:04:6.50" class="lt" onclick="jumptoTime(246, this.id)"><p>你吃了別人的豬，然後還要自己嘗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:9.50" id="00:04:9.50" class="lt" onclick="jumptoTime(249, this.id)"><p>我是很少吃別人的豬，這方面你的經驗就多一點，我們煎到差不多，在這個時候，我們加少許汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:21.34" id="00:04:21.34" class="lt" onclick="jumptoTime(261, this.id)"><p>夠嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:22.38" id="00:04:22.38" class="lt" onclick="jumptoTime(262, this.id)"><p>夠了，我們轉小火，留少許汁，我們待會打蜆</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:28.50" id="00:04:28.50" class="lt" onclick="jumptoTime(268, this.id)"><p>其實我喜歡味道，微焦，焦糖味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:32.10" id="00:04:32.10" class="lt" onclick="jumptoTime(272, this.id)"><p>對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:32.98" id="00:04:32.98" class="lt" onclick="jumptoTime(272, this.id)"><p>又是時候了，我上碟了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:35.38" id="00:04:35.38" class="lt" onclick="jumptoTime(275, this.id)"><p>好，我們加少許豆粉，這個鑊我們不需要洗，保持小火，我們慢慢煨，其實很快就煮沸</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:44.66" id="00:04:44.66" class="lt" onclick="jumptoTime(284, this.id)"><p>一加了味醂，那種日本味道就出來了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:50.30" id="00:04:50.30" class="lt" onclick="jumptoTime(290, this.id)"><p>但是因為有豉油在裡面，就比較容易燒焦，只是燒焦，有我在你是不會拿的，我不會拿，沒有我在，真的有點擔心你，家傑，這個菜式叫甚麼名字</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:4.62" id="00:05:4.62" class="lt" onclick="jumptoTime(304, this.id)"><p>送給大家，日式金菇黑豚卷。</p></a>
+</div>
+	</body>
+</html>

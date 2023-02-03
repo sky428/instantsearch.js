@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自家咕嚕肉 | 肥仔 | 馮嘉橋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'S4AZC_J_x2I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自家咕嚕肉 | 肥仔 | 馮嘉橋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，Big Big Chef的朋友大家好，我今天是助手肥仔師傅，我今天是大廚Yona，今天我們煮甚麼，今天煮咕嚕肉，今天我們做的是自家製咕嚕肉，首先，先做一碟豬腩肉，大約半斤左右，然後準備雞蛋、生粉，炒料頭有甚麼呢，洋蔥、青椒、最重要是菠蘿。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.11" id="00:00:42.11" class="lt" onclick="jumptoTime(42, this.id)"><p>煮這個醬汁就是果醋加茄汁，加泰式雞汁，人們經常說煮咕嚕肉很大工程，其實如果跟著你，瑤瑤煮，很大工程，炸一個廚房，其實也很少工程，很簡單，首先，你幫我把肉醃一醃一醃，鹽 大約一茶匙，然後拌勻，按摩，加完雞蛋後，等下拌蛋漿，將雞蛋拌勻，是，然後倒一半下來，放一半，對，先攪拌一下，生粉有甚麼用。</p></a>
+				<a href="#00:01:15.67" id="00:01:15.67" class="lt" onclick="jumptoTime(75, this.id)"><p>生粉呢，這是中菜裏最簡單的蛋漿，上完蛋漿後，待它炸起來，外殼會變硬，會脆一點，一個好咕嚕肉就是，將外面的汁酸甜，吃下去，肉會軟爽，外脆內軟，然後將生粉拌勻，拌到好像這樣，一粒粒，包住了，對，底面也齊全生粉，然後就可以放進來炸。</p></a>
+				<a href="#00:01:47.63" id="00:01:47.63" class="lt" onclick="jumptoTime(107, this.id)"><p>油溫一定要夠高，然後，放完後關火，浸泡一會，浮起就可以了，我要用甚麼火炸?</p></a>
+				<a href="#00:01:58.02" id="00:01:58.02" class="lt" onclick="jumptoTime(118, this.id)"><p>用大火 為甚麼?</p></a>
+				<a href="#00:01:59.66" id="00:01:59.66" class="lt" onclick="jumptoTime(119, this.id)"><p>就是等它放進去的時候就熄火，先浸泡一會兒，看到它差不多浮起了，然後用大火把油逼出來，把油逼出來後就咬下去的時候，咬下去的時候就沒有那麼多油逼出來，對，助手幫我切些青椒、洋蔥。</p></a>
+				<a href="#00:02:17.58" id="00:02:17.58" class="lt" onclick="jumptoTime(137, this.id)"><p>大約炸多久?，炸到肉開始浮起，外皮開始變成金黃色就可以了，洋蔥就這樣切，切成一塊塊就可以了嗎?</p></a>
+				<a href="#00:02:33.30" id="00:02:33.30" class="lt" onclick="jumptoTime(153, this.id)"><p>對，要一直用大火炸嗎?</p></a>
+				<a href="#00:02:36.30" id="00:02:36.30" class="lt" onclick="jumptoTime(156, this.id)"><p>現在要一直用大火炸，因為肉已經差不多熟了，開始逼出裡面的油了，再放菠蘿，我看大師傅炸得那麼辛苦的時候，我就趁這個時間來砌碟，砌碟，其實我很簡單的，把青椒切完後就拍下來，不錯，徒弟，下次教你… 黑木家，下次教你燒觀音就可以了，這個時候就準備把排骨起出來，徒弟教你了，這些就等徒弟來了，徒弟，當然了。</p></a>
+				<a href="#00:03:17.34" id="00:03:17.34" class="lt" onclick="jumptoTime(197, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:18.06" id="00:03:18.06" class="lt" onclick="jumptoTime(198, this.id)"><p>好，來，這個時候就把青椒、洋蔥、菠蘿。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:27.06" id="00:03:27.06" class="lt" onclick="jumptoTime(207, this.id)"><p>再炒一炒，用大火，先煎一煎，我要這樣拋一拋，這樣嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:35.26" id="00:03:35.26" class="lt" onclick="jumptoTime(215, this.id)"><p>會否太重?</p></a>
+				<a href="#00:03:36.50" id="00:03:36.50" class="lt" onclick="jumptoTime(216, this.id)"><p>很有型，其實知道為甚麼，這麼多廚房喜歡拋鑊嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:43.94" id="00:03:43.94" class="lt" onclick="jumptoTime(223, this.id)"><p>有型，因為很多時候鑊的熱力，由底到表面，是，很多時候我們煮食的時候，表層的食物，下面受熱，就拋一拋，就變成另一邊 互相反了，對，好，raf Hag uprising，íve，stadium，violent，rise，abulary，יותר，tightening，Gog，油可以停，醬汁可以開始了嗎?</p></a>
+				<a href="#00:04:7.15" id="00:04:7.15" class="lt" onclick="jumptoTime(247, this.id)"><p>對，我現在就放果醋，平時喝的果醋，不是，這是用來煮菜的果醋，一定要用來煮菜的，其實可以放米醋，但現在的米醋可以不去它的功味，如果用果醋，就用水果來做，因為它比較甜，放茄汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:28.15" id="00:04:28.15" class="lt" onclick="jumptoTime(268, this.id)"><p>現在炒勻，先調小火，現在就開始放糖，再甜一點，像你這樣甜，再放糖，夠了，夠了，這個時間，交給你了，就是醬汁的時機，對，對，現在關火</p></a>
+				<a href="#00:04:47.15" id="00:04:47.15" class="lt" onclick="jumptoTime(287, this.id)"><p>放少許的芡汁，要攪拌得很快，像摩打手，然後放少許的糖，加少許的糖</p></a>
+				<a href="#00:04:55.15" id="00:04:55.15" class="lt" onclick="jumptoTime(295, this.id)"><p>加少許的糖，然後放少許的薄芡，開始黏著了，開始黏著了，這個醬汁越緊就越重要，因為剛才我們炸排骨是脆的，如果我們的醬汁緊一點，等它掛在排骨上的時候，就沒那麼快變軟，如果我的醬汁太濕，掛在排骨上的時候，你的咕嚕肉，外皮的粉就吸收了醬汁的水分，肉就變軟了，好，把材料放進去，好，然後就…，拌勻 拌勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:29.15" id="00:05:29.15" class="lt" onclick="jumptoTime(329, this.id)"><p>關火，馬上上色，對 很漂亮，現在醬汁是否剛好掛在排骨上，沒錯，佐叔，交給你了，交給我了，我的老鼠仔真的練到一身好肌肉，看到醬汁嗎?全部一絲絲的，看到，現在好像拔絲咕嚕肉，好，來，完成，這就是自家製菠蘿咕嚕肉。</p></a>
+</div>
+	</body>
+</html>

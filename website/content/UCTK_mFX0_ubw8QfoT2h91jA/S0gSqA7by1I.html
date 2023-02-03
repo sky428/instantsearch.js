@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自家有營午餐肉｜Jacky Yu 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'S0gSqA7by1I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自家有營午餐肉｜Jacky Yu 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.16" id="00:00:3.16" class="lt" onclick="jumptoTime(3, this.id)"><p>大家好，我是JK Yu，我很喜歡烹飪，很喜歡將不同地方的食材、味道和烹飪方法融合在一起，成為我的特色和風格，午餐肉可以說是我們從小到大的經典食品之一，罐頭午餐肉大家吃得多，其實午餐肉在家也可以做到，有半肥瘦的豬肉，肥豬肉和瘦豬肉的比例最好是三比七，生粉、低筋麵粉、雞蛋，調味料方面有紹興酒、蒜粉、蠔油、砂糖、胡椒粉、生抽、少許油、五香粉。</p></a>
+				<a href="#00:00:44.75" id="00:00:44.75" class="lt" onclick="jumptoTime(44, this.id)"><p>還有一個是紅菊粉，紅菊粉令到午餐肉的顏色比較鮮艷，而且紅菊粉是天然的色素，所以是不怕的，首先將生粉、低筋麵粉和半隻份量的雞蛋打勻，加少許水，打成麵糊狀，然後將豬肉放入攪拌機，如果沒有攪拌機的話，用手也可以，不過攪拌機比較方便，我們先用慢速打開，然後將麵糊慢慢加進去，然後可以加一些乾蔥碎和薑米。</p></a>
+				<a href="#00:01:29.75" id="00:01:29.75" class="lt" onclick="jumptoTime(89, this.id)"><p>紹興酒、蒜粉、蠔油、胡椒粉、糖、生抽、油、五香粉、鹽和紅菊粉，攪拌均勻，將所有材料攪拌均勻後，就可以加高速打動，打到肉醬起膠為止，期間可以輕輕再打勻，確保所有調味料都可以均勻地打勻，然後我們可以在家居用品店買一個這樣的鐵飯盒，其實你儲存食物也可以的，我們用一些食油就塗在裡面，以免它蒸的時候黏著。</p></a>
+				<a href="#00:02:31.40" id="00:02:31.40" class="lt" onclick="jumptoTime(151, this.id)"><p>五彩肉醬就放進去，推平它，蓋好它，然後我們可以這樣，按壓它，確保裡面沒有空氣，蒸出來的五彩肉就不會有洞洞的，用大火蒸它大概45分鐘左右，放涼為止，放雪櫃冷藏定型就可以了。</p></a>
+</div>
+	</body>
+</html>

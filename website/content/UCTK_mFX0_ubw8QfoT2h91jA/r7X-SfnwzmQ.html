@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>梅菜扣肉｜衛志豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'r7X-SfnwzmQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>梅菜扣肉｜衛志豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，又到我Michael介紹菜式的時候了，今天我又挑選了一道實而不華的菜，這道菜就是梅菜扣肉，五花腩最好肥瘦適中，因為扣出來後豬肉不會膩，梅菜就要選一個甜的，我喜歡吃甜的和多葉的，油鹽糖、薑蔥蒜準備好了，還有八角和香葉來調味，首先豬肉一定要汆水。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:49.42" id="00:00:49.42" class="lt" onclick="jumptoTime(49, this.id)"><p>先煲水，放五花腩，慢慢等十分鐘，把雜質弄出來，梅菜買回來要浸水，先洗飛沙酒石，因為梅菜在醃製過程中有少少污糟，洗完後浸軟就可以，浸太久會令梅菜的味道出現，沒有味道就不太好，現在已經洗乾淨和浸軟了，有些人切大粒，有些人切細粒，個人喜好，割完冰水，現在可以拿上來，表面的豬皮都結實了，看到有些豬毛。</p></a>
+				<a href="#00:01:37.34" id="00:01:37.34" class="lt" onclick="jumptoTime(97, this.id)"><p>還有少少，我們來刮一下，刮完表面的污糟毛，我們要準備插豬毛的插，在豬皮上插一些洞，待會煎的時候會有虎皮的形狀，插入洞後，待會夾的時候會比較容易入味，如果家中沒有這個插，不要緊，用叉刀也可以，我們準備在豬皮表面上色，預備老抽，塗完色後，要等它乾一點，我們給它一點時間，表面風乾了。</p></a>
+				<a href="#00:02:21.26" id="00:02:21.26" class="lt" onclick="jumptoTime(141, this.id)"><p>雖然表面是乾的，但裡面也有水分，因為剛才我們有灼過，所以待會煎的時候要小心一點，現在很厲害，已經熱了一鍋，煎爆豬皮，變成虎皮，這樣就漂亮了，我們先看看它，看到表面已經脆了，然後我們浸一浸水，浸水的過程是讓我待會兒切一點，好了，它現在已經很冷靜了，我們準備切一切它，我想大概三、四分厚吧，最適中的。</p></a>
+				<a href="#00:03:2.61" id="00:03:2.61" class="lt" onclick="jumptoTime(182, this.id)"><p>醃一醃它，讓它慢慢醃，醃差不多十分鐘，我們現在先炒梅菜，放點油，熱了一鑊，放點薑，然後放點蒜，先炒香，然後放梅菜，梅菜很吸油的，看到了，怎樣令它黑黑的呢，就是拿回剛才醃肉的汁，然後放香葉，八哥，我們調小一點火，然後一定要放糖，調回味道，放一點水，記住不用太大火，太大火的話，你的醬汁就會乾了，就會焦了。</p></a>
+				<a href="#00:03:44.61" id="00:03:44.61" class="lt" onclick="jumptoTime(224, this.id)"><p>好，差不多了，就切成這樣的情況，記住剛才我們拿了一些八哥，香葉拿出來，放這個扣肉，記住有技巧的，記住豬皮向碗底，這樣放下去，蒸兩個小時，蒸到它的豬肉、肥豬肉，融化了就可以了，時間就不斷看它會不會乾水，看到我們倒出來的醬汁，我們要用回它，看見它稀得太多，我們要埋一個芡給它，加一點三文水，醬汁稠了。</p></a>
+				<a href="#00:04:21.61" id="00:04:21.61" class="lt" onclick="jumptoTime(261, this.id)"><p>就差不多了，我們要放碟子在這裡反轉，一反轉，豬皮就會向上，看起來就會漂亮，完美，完成，我們今天的梅菜扣肉。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>賀年菜｜屋潤年年｜Billy Yeung｜楊國基｜好意頭｜意頭菜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'D7rBZyaMsy0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>賀年菜｜屋潤年年｜Billy Yeung｜楊國基｜好意頭｜意頭菜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.16" id="00:00:3.16" class="lt" onclick="jumptoTime(3, this.id)"><p>各位Big Big Surf的老友記，我是Billy，在這裡和大家拜個年，祝各位身體健康，家肥屋潤，我今天做一個菜叫屋潤年，今天我的材料是半肥瘦的腌豬肉，我最特別的是，我會用納干醬去做豬肉的餡料，我們有切片的蓮藕，然後我還會用桂花蜜糖醬去做一個餡料，首先我們要把這些豬肉醃了，我們會放納干醬進去。</p></a>
+				<a href="#00:00:41.16" id="00:00:41.16" class="lt" onclick="jumptoTime(41, this.id)"><p>糖，少許鹽，再放一些麵粉，將它搓勻，這個過程我們一定要打到它起膠，我們盡量大力捏它，因為有納干醬的關係，它很容易黏到豬肉，會比較稠，打它的時候可以令到豬肉更加爽口，這個豬肉已經搓好了，我們就把它夾在一塊蓮藕片上，鋪到它薄薄的，煎的時候就比較容易快熟，然後再將另一塊蓮藕片夾上去，做到一個三文治的樣子。</p></a>
+				<a href="#00:01:33.16" id="00:01:33.16" class="lt" onclick="jumptoTime(93, this.id)"><p>捏一捏它，我們不用用麵粉黏它，因為豬肉已經打到起膠，捏一捏它，利用蓮藕的洞就可以吸收所有豬肉，因為豬肉比較厚，我們熱了一個鍋之後，我們盡量會用慢火去煎它，加少許油，我們煎了大約兩三分鐘之後，我們就翻一翻它，翻一翻它的時候，我們就可以用慢火，讓它慢慢將豬肉煮熟，我們可以加少許水，令它有一個蒸的效果，然後蓋上蓋子，焗大約兩三分鐘。</p></a>
+				<a href="#00:02:30.02" id="00:02:30.02" class="lt" onclick="jumptoTime(150, this.id)"><p>這樣就可以快點煮熟，保證豬肉一定熟，煎到豬肉開始熟的時候，我們來煎一下，開大火， 讓底部有些顏色，我們檢查豬肉是否熟， 就可以上碟，上碟後，我今天做一個很特別的汁，剛才說過，年年郁潤，我這個汁是特意做甜一點的，因為裡面有豬肉和鴨肝的時候，很多時候都會比較肥膩，我現在會用雞湯，然後加一點桂花蜜。</p></a>
+				<a href="#00:03:36.79" id="00:03:36.79" class="lt" onclick="jumptoTime(216, this.id)"><p>煮滾後，我們就加一點芡，一個很薄的流離芡就可以了，煮滾，我們把流離芡放在豬肉上，這個就是今天為大家做的年年郁潤年糕餅了。</p></a>
+</div>
+	</body>
+</html>

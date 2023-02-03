@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 韓式豬扒</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hmIyNEWKLCU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 韓式豬扒</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>韓式豬扒， 晴晴有冇食過呀?</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>我冇食過，冇食過， 咁不如睇下千平姐姐點做好嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>好，咁我地首先呢就切左個紅蘿蔔同埋青蔥先，咁我想問我唔用紅蘿蔔，我用其他材料得唔得㗎?</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>都可以呀， 其實你自己鍾意食咩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>你都可以落落去嘅，千平呀， 點解你會諗住用呢個方法</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>去處理呢個豬扒嘅?，因為你平時出街食嗰啲韓國餸呢，大多數都係辣㗎嘛，咁我就想整啲唔辣嘅韓國餸俾自己食囉，哦， OK，咁晴晴你怕唔怕辣㗎?</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>我怕，哦， 你怕辣呀，咁呢個啱晒你啦，因為千平姐姐又唔食辣嘅，咁你一陣試啱啲味道啦， 好嗎?</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>好，咁我地而家就可以切個京蔥啦，好，咁我想問我唔用京蔥可唔可以用洋蔥代替呀?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>可以呀，但京蔥呢就好多時呢，喺韓式嘅菜式呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>都有嘅， 同埋佢嘅味道呢就比較香濃啲，就好配合韓式嘅菜式㗎囉，咁我地而家呢就將啲配菜切好晒，我地就可以醃個豬扒啦，咁我地呢就可以落少少鹽先，咁我想問我唔用豬扒可唔可以用雞扒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>嚟做呢個菜式㗎?，其實都可以嘅， 都好百搭嘅，你自己想用咩就用咩啦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:15.00" id="00:01:15.00" class="lt" onclick="jumptoTime(75, this.id)"><p>或者呢係用牛柳呀，牛扒去做呢個菜嘅，甚至乎海鮮都得㗎喎，咁我地而家就可以落少少胡椒粉，即係少少鹽同胡椒粉醃一醃佢就得㗎啦?</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>係啦，要醃幾耐呢?</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>咁我地而家呢就醃返佢15分鐘就可以正式煮啦，咁我地而家就可以煎個豬扒啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>咁我想問點解唔使落油嘅?，因為我地就用返豬本身佢啲脂肪呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:40.00" id="00:01:40.00" class="lt" onclick="jumptoTime(100, this.id)"><p>佢煎煎下會出油嘅，咁我地就用返嗰啲油啦，同埋會香好多呀係咪呀?</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>要用咩火嚟煎呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:47.00" id="00:01:47.00" class="lt" onclick="jumptoTime(107, this.id)"><p>咁其實我地可以用返中火去煎啦，咁我地就可以確保佢裏面熟晒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>唔會出面窿晒咁，咁我想問要煎幾耐呀?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:55.00" id="00:01:55.00" class="lt" onclick="jumptoTime(115, this.id)"><p>咁我地呢每面都要煎返大約3至4分鐘啦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:58.00" id="00:01:58.00" class="lt" onclick="jumptoTime(118, this.id)"><p>咁要確保塊肉係全熟啦，咁我地而家可以煎一煎佢個脾膏位囉，等佢啲油出啲先嘅，如果你問我食煎豬扒呢，我就鍾意呢就真係用鹽胡椒粉醃完之後咁煎，咁通常嚟講呢我就唔會再加其他嘢啦，甚至乎有時我會用芥辣醬去食嘅，咁就會有少少唔同囉，嗱而家都聞到一陣好香嘅味啦，聞唔聞到呀晴晴?</p></a>
+				<a href="#00:02:23.00" id="00:02:23.00" class="lt" onclick="jumptoTime(143, this.id)"><p>聞到，除了韓式豬扒外，我也喜歡做炸豬扒，因為炸豬扒算是高難度的菜式，因為要炸至裡面熟透，但外面不能焦，所以我也挺喜歡做炸豬扒，現在豬扒煎好了，可以關火 好，然後可以夾起來，下一個步驟是甚麼，我們可以用原鑊，炒配菜和醬汁，好，麻煩千萍你了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:55.28" id="00:02:55.28" class="lt" onclick="jumptoTime(175, this.id)"><p>我剛才放了紅蘿蔔，我想問用甚麼火力炒，我們可以用大火炒，我想問炒至怎樣才算可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:5.84" id="00:03:5.84" class="lt" onclick="jumptoTime(185, this.id)"><p>炒至開始有些軟身就可以了，我們可以先放京蔥，千萍和晴晴，你們兩個不能吃辣，但如果是能吃辣的小朋友或是大人，來到這個步驟，可以加些新鮮辣椒，甚至可以在醬汁中選擇辣味的醬汁，千萍，下一個步驟是甚麼，現在可以加醬汁 好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:35.16" id="00:03:35.16" class="lt" onclick="jumptoTime(215, this.id)"><p>我想問醬汁是否在超市買得到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:38.56" id="00:03:38.56" class="lt" onclick="jumptoTime(218, this.id)"><p>對，在超市已經買得到，很方便，我想問千萍，這個醬汁煮至怎樣才算可以，最主要煮至稠身就可以了，因為醬汁本身會偏鹹，所以我們要加些糖，令它不會太鹹，調味也會更好，現在可以關火上碟了，好，麻煩千萍了，晴晴，我想問是否很香，對，我們放些蔥花在表面作裝飾就可以了，這是甚麼名堂，韓式豬扒。</p></a>
+				<a href="#00:04:9.60" id="00:04:9.60" class="lt" onclick="jumptoTime(249, this.id)"><p>orden，transformer</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:21.34" id="00:04:21.34" class="lt" onclick="jumptoTime(261, this.id)"><p>enfin，développement，Wet，melt，CH SAP，yapıl，ஆ，icho，Gravity，umph，omi，icularly，secretly</p></a>
+				<a href="#00:04:16.20" id="00:04:16.20" class="lt" onclick="jumptoTime(256, this.id)"><p>Laur亲，Hollow，ünk，않아，même，GOOD，packages，unser，jurisdictions，pry，rees。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自家製豬肉腸 | Candy Fong</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ZkaXtEBVEpY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自家製豬肉腸 | Candy Fong</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Candy，今天我會教大家自家製的豬肉腸，材料有豬腸衣，這是免治豬肉，這是水牛芝士，這是巴西里，這是叉燒醬，我們可以開始醃製免治豬肉，把芝士和叉燒醬拌勻，再把叉燒醬拌勻，拌勻就可以了，加了少許水，讓豬肉更黏，和其他醬和芝士黏在一起，你看到差不多均勻了，就可以放進袋子，然後放進袋子。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:4.49" id="00:01:4.49" class="lt" onclick="jumptoTime(64, this.id)"><p>慢慢把肉放進去，這個位置就可以自然燒焦，盡量把空氣弄走，因為我們想豬肉沒有空氣，現在把腸衣先把水弄乾，然後把頭和尾拿出來，然後把頭套在海綿袋上，我們可以慢慢把頭套折起來，一邊扭一邊把頭套放進去，大小大概是這個大小，如果是這個大小就可以把頭套放進去，在尾部打個裂，然後就可以剪掉，可能中間有少許空氣。</p></a>
+				<a href="#00:01:55.49" id="00:01:55.49" class="lt" onclick="jumptoTime(115, this.id)"><p>我們盡量把空氣弄走，這樣綁著就可以了，完成一條了，我們可以擠三條，可以當作親子活動，小朋友也會覺得很好玩，因為小朋友喜歡吃腸仔，謝謝收看，下次見!</p></a>
+				<a href="#00:02:17.42" id="00:02:17.42" class="lt" onclick="jumptoTime(137, this.id)"><p>現在把水煮到80至90度，調到最小火，看到冒煙了，但不可以有泡沫，因為有泡沫會太滾，還有機會把腸煮得太爛，20分鐘後就可以拿去煎，煎完就煙燻，這個豬肉腸已經煮了80至90分鐘，現在可以拿出來煎，不用放油，因為腸本身有油份，我們要用小火把它煎到上色，大家看到底部上色就可以反轉煎另一邊，煎完腸就會比較脆。</p></a>
+				<a href="#00:03:1.42" id="00:03:1.42" class="lt" onclick="jumptoTime(181, this.id)"><p>腸已經上色了，可以夾起來煙燻，平時直接吃已經可以，如果沒有煙燻機，因為已經熟了，現在做煙燻的動作，把木碎放進焗爐，用蓋子蓋住，用火槍燒，煙燻兩三分鐘就可以上碟了，謝謝收看。</p></a>
+</div>
+	</body>
+</html>

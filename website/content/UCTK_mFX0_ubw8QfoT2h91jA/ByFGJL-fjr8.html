@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 吉列芝士流心豬扒</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ByFGJL-fjr8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 吉列芝士流心豬扒</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.95" id="00:00:2.95" class="lt" onclick="jumptoTime(2, this.id)"><p>我今天會做吉列芝士流心豬扒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:6.59" id="00:00:6.59" class="lt" onclick="jumptoTime(6, this.id)"><p>名字很厲害，既吉列，又芝士流心豬扒，好，我看看你怎麼做，好嗎，第一個步驟是做甚麼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:14.03" id="00:00:14.03" class="lt" onclick="jumptoTime(14, this.id)"><p>第一個步驟是把豬扒切紋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:17.23" id="00:00:17.23" class="lt" onclick="jumptoTime(17, this.id)"><p>晴晴，我想問，為何你會在脂肪的部分要切紋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.47" id="00:00:21.47" class="lt" onclick="jumptoTime(21, this.id)"><p>因為待會油會更容易流出來，而且可以更鬆</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:26.19" id="00:00:26.19" class="lt" onclick="jumptoTime(26, this.id)"><p>好的，千平有吃過類似晴晴說的菜式嗎，有，我上次也是自己做的，我用一塊較厚的豬扒，中間切開兩層，兩層都有芝士</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.91" id="00:00:38.91" class="lt" onclick="jumptoTime(38, this.id)"><p>好的，豬扒已經切好紋，現在用刀背拍鬆它，為何要用刀背拍鬆它，因為可以令它更大，待會放芝士時會更方便</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:51.71" id="00:00:51.71" class="lt" onclick="jumptoTime(51, this.id)"><p>而且拍鬆的豬扒，出來的效果和質感會更好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:56.79" id="00:00:56.79" class="lt" onclick="jumptoTime(56, this.id)"><p>第一面已經拍好了，現在我們回到地面拍</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:0.31" id="00:01:0.31" class="lt" onclick="jumptoTime(60, this.id)"><p>小朋友要記住，用刀的時候要小心點，對吧，要拍到怎樣才可以用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:7.51" id="00:01:7.51" class="lt" onclick="jumptoTime(67, this.id)"><p>我們拍到它薄身就可以了，好的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:12.15" id="00:01:12.15" class="lt" onclick="jumptoTime(72, this.id)"><p>千平，我想問，上次你說做過了，是否有像晴晴的做法，我沒有拍到，就這樣塞進去，然後就這樣做，是的 好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:24.15" id="00:01:24.15" class="lt" onclick="jumptoTime(84, this.id)"><p>現在我們的豬扒已經拍鬆了，下個步驟我們就可以把它醃了，你會有甚麼醃料，鹽、糖、胡椒粉和粟粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:33.11" id="00:01:33.11" class="lt" onclick="jumptoTime(93, this.id)"><p>晴晴，你剛剛加了鹽，對吧，然後就加糖，千平，上次你醃豬扒用甚麼材料，我上次是用鹽和胡椒粉，好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:43.99" id="00:01:43.99" class="lt" onclick="jumptoTime(103, this.id)"><p>現在豬扒已經醃好了，我們就把它放在這裡醃15分鐘左右，現在豬扒已經醃好了，我們就可以把芝士放在豬扒上</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:54.59" id="00:01:54.59" class="lt" onclick="jumptoTime(114, this.id)"><p>是否自己喜歡吃甚麼芝士味都可以，是的 好的，千平，上次你用了甚麼芝士，我用了酥油芝士 好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:2.55" id="00:02:2.55" class="lt" onclick="jumptoTime(122, this.id)"><p>放好芝士後，我們就把粟粉塗在豬扒的旁邊，為甚麼你要這樣封住邊緣，因為待會把它蓋上時可以黏緊一點，讓它炸的時候不用流出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:13.39" id="00:02:13.39" class="lt" onclick="jumptoTime(133, this.id)"><p>好，現在下個步驟做甚麼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:15.43" id="00:02:15.43" class="lt" onclick="jumptoTime(135, this.id)"><p>下個步驟我們就可以，把第二塊豬扒蓋上去 好的，現在我們就可以把這塊豬扒，蘸麵粉、雞蛋、麵包糠，然後炸</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:28.39" id="00:02:28.39" class="lt" onclick="jumptoTime(148, this.id)"><p>麻煩你了，千萍，這是我們很基本的，炸豬扒要做的步驟，是，不填填粟粉或生粉的效果就不行，因為蛋液和麵包會容易脫落，如果我們不用麵包糠，有其他東西可以用來取代嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:52.14" id="00:02:52.14" class="lt" onclick="jumptoTime(172, this.id)"><p>可以用燕麥片來取代麵包糠</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:55.46" id="00:02:55.46" class="lt" onclick="jumptoTime(175, this.id)"><p>這樣會更健康，對吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:57.66" id="00:02:57.66" class="lt" onclick="jumptoTime(177, this.id)"><p>現在豬扒已經沾上麵包糠，我可以用中火把豬扒翻面</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:3.26" id="00:03:3.26" class="lt" onclick="jumptoTime(183, this.id)"><p>不過要小心點，始終是熱油，程程，我們要翻面到甚麼程度，才可以翻面，金黃色就可以翻面了，但記得不要太猛火，太猛火的話，外面會熟，裡面也未熟，而且很容易燒焦，千萍，你做過吉列豬扒，你是用甚麼方法?半煎炸還是炸，我是半煎炸完再拿去焗，出來的效果有點不同，程程，吉列豬扒全程，都是用半煎炸的方法嗎。</p></a>
+				<a href="#00:03:38.42" id="00:03:38.42" class="lt" onclick="jumptoTime(218, this.id)"><p>對 好的，程程，如果豬扒不用半煎炸，我們用其他方法處理可以嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:45.38" id="00:03:45.38" class="lt" onclick="jumptoTime(225, this.id)"><p>可以用焗爐預熱180度後，焗20分鐘，最重要是全熟和金黃色，現在我們可以把豬扒翻面，再用半煎炸</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:57.94" id="00:03:57.94" class="lt" onclick="jumptoTime(237, this.id)"><p>程程，我想問你的豬扒有醬汁嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:1.70" id="00:04:1.70" class="lt" onclick="jumptoTime(241, this.id)"><p>我會用茄汁和白汁來配豬扒，好的，我平時喜歡吃炸豬扒配沙醬，因為沙醬酸酸甜甜，所以我喜歡配炸豬扒來吃，現在豬扒半煎炸得差不多了，我們就可以把它放上碟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:25.66" id="00:04:25.66" class="lt" onclick="jumptoTime(265, this.id)"><p>好，麻煩程程了，小心，因為油很燙</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:32.10" id="00:04:32.10" class="lt" onclick="jumptoTime(272, this.id)"><p>我們要先把油鎖上隔油紙，剛才我的豬扒蓋得不太好，所以炸的時候芝士有點流出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:41.78" id="00:04:41.78" class="lt" onclick="jumptoTime(281, this.id)"><p>不要緊，下次做好一點就可以了，對嗎?千萍，我想問程程，這是甚麼名稱，吉列芝士流心豬扒，做好了，千萍，我們可以試味了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:0.83" id="00:05:0.83" class="lt" onclick="jumptoTime(300, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目。</p></a>
+</div>
+	</body>
+</html>

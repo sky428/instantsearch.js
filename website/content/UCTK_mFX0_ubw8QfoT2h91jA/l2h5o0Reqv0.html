@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>糖醋骨 │ 胡渭康</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'l2h5o0Reqv0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>糖醋骨 │ 胡渭康</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，各位Big Big Chef的觀眾，今天到我和大家一起煮飯，今天要介紹的食材，相信很多人都煮過，也很簡單，不過我今天有一點點不同，其實也是在介紹糖醋骨，不過我帶了一些私家的，三十多年的陳皮，來做一個陳皮糖醋骨，首先我們處理一下材料，冷盤大約切成廣東麻雀的大小。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:39.78" id="00:00:39.78" class="lt" onclick="jumptoTime(39, this.id)"><p>不要太大不要太小，太大的話炆的時候，會不夠入味，另外想和大家分享一下，汆水的過程，我相信很多人煮，大部分人都是用熱水，不過我就用冷水，冷水有什麼好處呢?</p></a>
+				<a href="#00:00:57.78" id="00:00:57.78" class="lt" onclick="jumptoTime(57, this.id)"><p>就是冷水放入肉類，汆水的時候，它不會一放入水，馬上就高溫，表面已經熟了，裡面的血水都封住了，結果我們想汆水的過程，就達不到，還有煮菜真的各思各法，沒有說對不對，好像如果備料，薑大家會做什麼?</p></a>
+				<a href="#00:01:22.78" id="00:01:22.78" class="lt" onclick="jumptoTime(82, this.id)"><p>用來削皮，我不削皮，薑連皮才香，另外說到乾蔥，在家中有些人會逐層去剝，但其實有一個方法很簡單，我們切了頭尾之後，一拍，整粒肉都出來了，其他材料都不用避開，已經可以了，你看看，是不是很方便，出水的冷排，我們會在這個時候稍為沖一沖，確保血水和污漬都洗乾淨，就可以開始煮了，加一點點油，記得用不鏽鋼鍋。</p></a>
+				<a href="#00:02:5.62" id="00:02:5.62" class="lt" onclick="jumptoTime(125, this.id)"><p>都是先預熱，食材就不會黏，第一時間爆香材料，薑，乾蔥，等材料香噴噴，這個時候，就可以將我們預備好的冷排，爆一爆，這個時候不用急，等待冷排稍微煎一下，等它烘一烘，一會兒出來會好食一點，當冷排稍微煎到微黃，我們首先要加的都是香味，紹興酒，馬上聞到很香的酒味，這個時候，我們的靈魂了，震江醋和老抽。</p></a>
+				<a href="#00:02:59.70" id="00:02:59.70" class="lt" onclick="jumptoTime(179, this.id)"><p>好味道，輕輕攪拌一下，我們就將冰糖放進去，份量就自己因，個人口味不同，這個時候我們輕輕攪拌，就可以蓋上蓋子，轉小火，大概炆十分鐘，然後看看什麼情況，嘩!時間飛逝這麼快，好像過了十五分鐘，我剛剛檢查過，開了大火，準備收緊這個汁，桌上還剩下一些陳皮碎，不要叫碎，叫玫瑰，我們留一點震江醋，一會兒告訴你怎樣處理。</p></a>
+				<a href="#00:03:46.78" id="00:03:46.78" class="lt" onclick="jumptoTime(226, this.id)"><p>汁已經抽乾了，這個時候我們有一個，很重要的步驟，就是將剛才的陳皮，現在可以放進去，不過放的時候，我會先關掉火，因為有時候火，放進去，就怕它，如果大家煮到汁很乾，就怕它會苦了，濃，還有，每次煮醋的食物，我有一個習慣，我會關火，最後再加少少醋，原因就是，當我們煮的時候，醋的香味會釋放了很久，如果我們吃東西的時候。</p></a>
+				<a href="#00:04:29.42" id="00:04:29.42" class="lt" onclick="jumptoTime(269, this.id)"><p>我們要關火，所以我會關火的時候先加少少醋，上桌的時候，大家連聞都會聞到醋味，這是我少少的習慣，來吧!開飯了!</p></a>
+</div>
+	</body>
+</html>
