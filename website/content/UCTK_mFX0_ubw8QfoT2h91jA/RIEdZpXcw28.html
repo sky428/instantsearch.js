@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冰鎮咕嚕肉 | 鍾皓晴 Shanice | 張文慈</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RIEdZpXcw28',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>冰鎮咕嚕肉 | 鍾皓晴 Shanice | 張文慈</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>咕嚕肉，大家好，我是Chanese，今天我請來美女嘉賓，張敏慈，大家好，我從你這裡跟大家搞事</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:13.55" id="00:00:13.55" class="lt" onclick="jumptoTime(13, this.id)"><p>搞什麼? 冰鎮咕嚕肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.34" id="00:00:25.34" class="lt" onclick="jumptoTime(25, this.id)"><p>咕嚕肉通常用梅頭，梅頭有點肥肥的， 又滑，這次不同了， 我用了柳梅，因為我不想要肥，為什麼呢?</p></a>
+				<a href="#00:00:39.78" id="00:00:39.78" class="lt" onclick="jumptoTime(39, this.id)"><p>因為熱的時候挺好吃，但冰鎮後， 冷的時候，我不太喜歡吃肥的感覺， 我覺得不好，所以我用柳梅，用鹽和胡椒醃柳梅，醬汁用了自發粉、生粉和麵粉，粉末、油和水做成醬汁，醬汁有白醋、茄汁、大紅節醋，冰糖、糖和少許麥芽糖，我們用了士多啤梨做成伴碟，現在有請美女，好， 首先第一個步驟 讓我醃，倒少許進去， 不用倒光 少許。</p></a>
+				<a href="#00:01:24.54" id="00:01:24.54" class="lt" onclick="jumptoTime(84, this.id)"><p>輕輕醃一下，拌勻 拌勻，醃好後， 放一旁，好， 接著等 接著等</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:34.98" id="00:01:34.98" class="lt" onclick="jumptoTime(94, this.id)"><p>等待醃好才聊天 聊聊天，其實上年拍了一部，古裝二心宮的續集，還有另一部叫《跳躍生命時》，那部是馬德宗的姐姐，你演馬德宗的姐姐?怎麼搞的，我演妹妹多一點，對， 怎麼搞的，我們是演員， 專業的，做什麼都可以 也是，我覺得角色跟以前的角色很不同，因為我覺得很有新鮮感，我沒演過這類型的角色，好的， 很好。</p></a>
+				<a href="#00:02:12.66" id="00:02:12.66" class="lt" onclick="jumptoTime(132, this.id)"><p>而且挺有趣，我覺得出來應該挺有驚喜，會讓人看到我另一面，期待…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:21.22" id="00:02:21.22" class="lt" onclick="jumptoTime(141, this.id)"><p>我們聊天時， 一邊做粉漿，這是自發粉， 接著是麵粉，這是生粉， 這是粉末，我們慢慢加水和油，這是普通橄欖油， 任何油都可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:40.90" id="00:02:40.90" class="lt" onclick="jumptoTime(160, this.id)"><p>有分次序嗎?先加後加?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:43.54" id="00:02:43.54" class="lt" onclick="jumptoTime(163, this.id)"><p>沒有分， 水和油是慢慢加，把粒狀的粉都弄走，差不多這個狀態就行了，拌至有點軟， 完全滑，很多人喜歡用蛋漿，如果用蛋漿， 大約用三個蛋白，一個蛋黃， 大約150克麵粉，差不多做成這個樣子，不過分別是什麼?</p></a>
+				<a href="#00:03:15.94" id="00:03:15.94" class="lt" onclick="jumptoTime(195, this.id)"><p>如果用蛋漿， 會更鬆化，用這個粉漿， 會更硬和脆，視乎你喜歡吃鬆化的口感，食隨尊便， 視乎你平時用什麼漿，這樣拌勻漿，我來拌勻了，現在有請Pinky幫我做咕嚕汁，這是醋， 對嗎?</p></a>
+				<a href="#00:03:42.26" id="00:03:42.26" class="lt" onclick="jumptoTime(222, this.id)"><p>對， 這是大紅節醋，這是白醋…，這是茄汁…，冰糖</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:53.74" id="00:03:53.74" class="lt" onclick="jumptoTime(233, this.id)"><p>這個加少許就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:55.18" id="00:03:55.18" class="lt" onclick="jumptoTime(235, this.id)"><p>加少許，一茶匙，好，這邊我來炸咕嚕肉，這個不要太小火，也不要太大火，這個油溫不可以太高，滴下去看看是否完成，差不多了，逐粒逐粒放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:12.38" id="00:04:12.38" class="lt" onclick="jumptoTime(252, this.id)"><p>我是吃東西不工作，工作時會打破東西的人，經常進廚房，家人會叫我出去，但我不懂得做，我小時候最喜歡做完菜，我永遠覺得偷第一塊的特別好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:25.42" id="00:04:25.42" class="lt" onclick="jumptoTime(265, this.id)"><p>很多泡沫，先關掉，倒進去，先隔一下，抹一下鑊…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:34.42" id="00:04:34.42" class="lt" onclick="jumptoTime(274, this.id)"><p>聞到味道很酸</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:36.02" id="00:04:36.02" class="lt" onclick="jumptoTime(276, this.id)"><p>要加多點嗎 你試試味道，其實這些是即食專業，有些喜歡吃甜的可以加甜的，不用太大火，再調小火，中小火，一直煮到它變稠，要加少許油，用油去推稠醬汁，逐一加進去，慢慢攪拌，直至變稠，現在開始有些成功，有些未成功，有些我已經可以撈出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:7.42" id="00:05:7.42" class="lt" onclick="jumptoTime(307, this.id)"><p>我最喜歡在這個時候偷吃，這麼快偷吃?</p></a>
+				<a href="#00:05:12.02" id="00:05:12.02" class="lt" onclick="jumptoTime(312, this.id)"><p>熟的 小心，熟的，雖然人家說很熱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:14.86" id="00:05:14.86" class="lt" onclick="jumptoTime(314, this.id)"><p>很大塊 你小心，夠脆嗎?你幫我試試，很熱 對，小心</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:20.98" id="00:05:20.98" class="lt" onclick="jumptoTime(320, this.id)"><p>hard shooters мам're，Essentially，dok，fahren</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:22.18" id="00:05:22.18" class="lt" onclick="jumptoTime(322, this.id)"><p>acquiring，夠不夠脆? 很夠脆，其實這個差不多了，顏色很漂亮，開始滴下來，不滴下來，開始滴下來，如果不滴下來已經太濃稠，會黏著，不好吃，其實現在差不多了，可以停火了，先關火，這些一顆一顆的差不多可以了，多數就開始拿起來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:53.57" id="00:05:53.57" class="lt" onclick="jumptoTime(353, this.id)"><p>挺好玩的，煮食物其實不太難，哪裡難? 學一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:58.57" id="00:05:58.57" class="lt" onclick="jumptoTime(358, this.id)"><p>誰說難?多看Big Big Chef就不難，然後就倒炸好的肉進去，試一下</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:9.57" id="00:06:9.57" class="lt" onclick="jumptoTime(369, this.id)"><p>很棒，很脆，口感很好，加上汁醬之後，果然不同，然後擺碟就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.55" id="00:06:27.55" class="lt" onclick="jumptoTime(387, this.id)"><p>每週固定3、4部影片 喜歡我的影片請訂閱或按讚。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蒜茸粉絲蒸蝦 周汶錡</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TFgqQbVa8JY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蒜茸粉絲蒸蝦 周汶錡</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.19" id="00:00:3.19" class="lt" onclick="jumptoTime(3, this.id)"><p>我煮食物跟我職業一樣，除了漂亮之外， 專業是最重要的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:8.39" id="00:00:8.39" class="lt" onclick="jumptoTime(8, this.id)"><p>不是鬧著玩的，字幕by索兰娅🐰，大家好， 今集我準備了一道，既健康又美味的菜式，就是粉絲蒜蓉蒸蝦，其實真的非常簡單，但我覺得食材最重要是新鮮之餘，煮法也需要一點技巧，首先我準備了一些中蝦，將蝦在中間切開，但不要切斷，將蝦背切開，目的是方便蒜蓉入味，時間關係我之前已經做好了一點，最重要是洗蝦的時候。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:41.87" id="00:01:41.87" class="lt" onclick="jumptoTime(101, this.id)"><p>腳部要剪掉， 中間的腸部要挑掉，粉絲我也有要求， 我用這款，泰國出品的粉絲，因為我吃過這麼多粉絲，這種粉絲的口感是最有嚼勁的，而且怎麼煮也不會變得很粗糙，我覺得這是非常好的粉絲，預先泡過， 蒸的時候預備一隻碟，把泡過的粉絲墊底，有一點水分也不要緊，我覺得蒸出來濕濕的， 粉絲才不會乾，好， 墊底。</p></a>
+				<a href="#00:02:29.11" id="00:02:29.11" class="lt" onclick="jumptoTime(149, this.id)"><p>把蝦直接鋪上去就可以了，今天的蝦比較大，想想怎麼組織鋪上去，有時候煮菜也很有趣，怎麼擺放， 怎麼裝飾都有技巧，好， 取一隻，務求每個人都能吃到蒜蓉，就是這麼簡單，通常人們會直接把蒜蓉和蔥蒸，我把蒜蓉爆一下，我覺得會更香，放點油，油燒開後， 把蒜蓉同時爆香，蒸蝦的時候也要加點豉油，把豉油均勻鋪在蝦和粉絲上。</p></a>
+				<a href="#00:03:25.11" id="00:03:25.11" class="lt" onclick="jumptoTime(205, this.id)"><p>有時候人們覺得蝦比蝦還要重要，我和我的朋友都很喜歡吃粉絲，所以粉絲也要吸收豉油的味道，就這樣， 行了，我覺得可以多加一點蝦，我覺得是好吃的，小火一點， 怕會燒焦，燒焦了就不好，爆香蒜蓉，切蒜蓉的技巧很重要，不能太粗粒，我覺得幼細一點， 細一點，會比較好吃，這是手工的問題，我們吃的要求。</p></a>
+				<a href="#00:04:11.25" id="00:04:11.25" class="lt" onclick="jumptoTime(251, this.id)"><p>差不多可以的時候，會加少許麻油，很少， 這樣更入味， 更香口，可以了， 關火，直接將蒜蓉淋在蝦肚，可以這樣說， 釀進蝦中間，有時我會問， 什麼時候灒油會好一點，通常外面吃的， 蒸完之後灒油，但我試過油都會彈起來， 我很怕，所以我要蒜蓉爆炒才蒸，最後要放蔥， 這樣揚上去，是不是很漂亮。</p></a>
+				<a href="#00:05:5.46" id="00:05:5.46" class="lt" onclick="jumptoTime(305, this.id)"><p>有時好不好吃呢?</p></a>
+				<a href="#00:05:6.82" id="00:05:6.82" class="lt" onclick="jumptoTime(306, this.id)"><p>可能賣相會搶了它，這是一個得分的絕招，放完蔥後， 個人口味，如果你喜歡吃少辣，可以像辣椒絲撒在蔥花上，蘸著， 辣味會更惹味，如果想濃味， 想吃鹹味，蒜蓉爆炒時加些鹽也可以，可以拿去蒸了，大約時間是6至8分鐘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:47.19" id="00:05:47.19" class="lt" onclick="jumptoTime(347, this.id)"><p>這道就是色香味俱全的蒜蓉粉絲蒸蝦，快點吃吧，很熱。</p></a>
+				<a href="#00:06:23.19" id="00:06:23.19" class="lt" onclick="jumptoTime(383, this.id)"><p>謝謝收看。</p></a>
+</div>
+	</body>
+</html>

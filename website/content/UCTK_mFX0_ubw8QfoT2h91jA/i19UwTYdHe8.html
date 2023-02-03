@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>食好D 食平D 2 | 櫻花蝦香辣醬煎白花 | 肥媽  陸浩明 | 第二十九集</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'i19UwTYdHe8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>食好D 食平D 2 | 櫻花蝦香辣醬煎白花 | 肥媽  陸浩明 | 第二十九集</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，食譜介紹，食譜介紹，食譜介紹，食譜介紹，就放進去，其實是半煎半燜的 半煮，這個醬汁一煮，就有很多香豆豉的香味，沒錯， 因為有豆豉、辣椒，有辣辣的感覺，蓋上蓋子， 試味， 混合生粉、芡，燜的火是用什麼火?</p></a>
+				<a href="#00:02:42.18" id="00:02:42.18" class="lt" onclick="jumptoTime(162, this.id)"><p>用小火， 汁不要太大 中火，就乾了， 開生粉，建議燜多久?</p></a>
+				<a href="#00:02:52.42" id="00:02:52.42" class="lt" onclick="jumptoTime(172, this.id)"><p>其實幾分鐘就可以了 是，淋在上面 對，淋在上面， 因為我不翻面，因為煎的時候會硬，再燜的時候會軟，翻面就爛了 翻面就散開了，醬汁開始濃稠了，現在還沒放芡， 還在汆水，對， 有時候煎魚或做菜，我經常會… 戳一下就行了，對， 然後…，很燙， 這樣就知道剛剛熟了，放點紅椒絲，我通常西煮是…。</p></a>
+				<a href="#00:03:26.54" id="00:03:26.54" class="lt" onclick="jumptoTime(206, this.id)"><p>插點溫度計放點油，對 你就用舌頭…，我用嘴巴， 不是舌頭，比較你… 裡面是暖的，對， 熱的， 你知道的，裡面冷的， 當然還沒熟，聽我們剛才開的生粉水，好， 收汁， 調大火，對， 它有汁， 但汁掛住了，好，這是過頭意識， 魚過頭就肥了。</p></a>
+</div>
+	</body>
+</html>

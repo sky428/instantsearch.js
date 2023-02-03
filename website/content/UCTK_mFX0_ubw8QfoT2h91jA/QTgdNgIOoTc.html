@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>食好D 食平D 2 | 豆瓣醬炒牛肉眼 | 肥媽 陸浩明 | 第六集</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QTgdNgIOoTc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>食好D 食平D 2 | 豆瓣醬炒牛肉眼 | 肥媽 陸浩明 | 第六集</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>你知我無慾不歡㗎嘛，即係無慾食嘅話呢，我見雲囉，係呢個啦，係呀係呀呢隻牛扒呢啲，即刻當我煎煎佢咁樣，煎乜鬼呀牛扒唔係一定要煎㗎嘛，好多煮法㗎嘛，係咪呀我冇聽錯㗎嘛，你用新煮法唔通你冰鎮牛扒，唔係新煮法，唔係一定牛扒就要煎㗎嘛，好啊我睇你表演先，呢個牛係咩牛呢，呢個係肉眼，呢度你可以咁樣。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>佢個牛肉本身就已經係好靚，咁有少少油呀咁樣，起咗呢條，呢啲就唔要啦啲肥膏啲筋嗰啲，唔係佢個筋嚟嘅，我個肥膏可以唔要嘅，一條條咁樣唔使太薄嘅，OK喎，係咪OK呀OK呀，個肥膏呢，落少少黎當做個底味個油咁樣都得喎，用黎做油囉，呢個係美國安格斯，我呢個牛肉呢，我就係完全唔醃，唔成嘅，因為佢本身嘅牛肉靚呀。</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>我用佢嘅，糕炒呢，佢香吖嘛，咪少食OK嘅，咁我今日呢就用新啲，我用呢個，豆瓣醬呀 係啦 咁得意用豆瓣醬黎炒，安格斯嘅牛 辣豆瓣醬，咁係咪未見過呀 真係未見過，咪要見下囉，除咗用豆瓣醬呢，我仲要用同牛扒好夾嘅，蒜片添，嗱你睇吓，炒啲油出黎囉，撚啲蒜片落去，呢個有冇話咩蘆筍黎架 普通蘆筍嘅啫，普通蘆筍架。</p></a>
+				<a href="#00:01:46.00" id="00:01:46.00" class="lt" onclick="jumptoTime(106, this.id)"><p>嗱，我個牛肉係好快熟架吓，不定一斤</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:52.00" id="00:01:52.00" class="lt" onclick="jumptoTime(112, this.id)"><p>哦，少少糖，好，我幫你呀 好呀，一落啲酒就好大煙呀，你而家攞一條黎食呀，好好，哦 好食呀，啱啱好呀呢個熟度，係咪呀 少加壁肉喎呢個真係，好迫食呀。</p></a>
+</div>
+	</body>
+</html>

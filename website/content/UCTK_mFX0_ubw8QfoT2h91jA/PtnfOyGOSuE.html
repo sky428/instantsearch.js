@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冰梅鎮江骨 | Rachel Yau 生活料理家</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'PtnfOyGOSuE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>冰梅鎮江骨 | Rachel Yau 生活料理家</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，我是Rachel，入廚已經超過30年，冰梅震干骨，是家中常做到的菜式，所謂冰梅，我們用了冰糖，我特別加了日本的南高梅，浸過梅汁的南高梅，拿出來炆排骨，讓排骨更有嚼勁，特別有果香的酸味</p></a>
+				<a href="#00:00:51.53" id="00:00:51.53" class="lt" onclick="jumptoTime(51, this.id)"><p>uci，squishy，survive，Until，Major，Entre，zost，increases，vote，物，bro，bargaining，line，mac，ugh，run，physicists，ranging，Gym，üzel，intelligible，긴，PU，··allas，Date。</p></a>
+				<a href="#00:01:11.97" id="00:01:11.97" class="lt" onclick="jumptoTime(71, this.id)"><p>infected，Aquí，shining，ke vul，blockchain，Gru browse，Bapt，動画，enser，variants furn wykor，ñana，Millenn RGB，Institute，declined，� pipe，체，Jennifer，謝謝。</p></a>
+				<a href="#00:01:13.43" id="00:01:13.43" class="lt" onclick="jumptoTime(73, this.id)"><p>放入一片香菜，煎至金黄色，倒入干辣椒，翻炒均匀，再放入包子，煎至金黄色，放入包子，煎至金黄色，翻炒均匀，倒入干辣椒，放入包子，煎至金黄色，倒入干辣椒，煎至金黄色，如果大家沒有浸梅的習慣，可以去醬料店買酸梅，一樣加進去也很好吃</p></a>
+				<a href="#00:02:38.57" id="00:02:38.57" class="lt" onclick="jumptoTime(158, this.id)"><p>字幕由Amara.org社区提供。</p></a>
+</div>
+	</body>
+</html>
