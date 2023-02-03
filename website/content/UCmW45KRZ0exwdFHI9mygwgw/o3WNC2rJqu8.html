@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱JnG芝士漢堡︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'o3WNC2rJqu8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱JnG芝士漢堡︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA MING PAO TORONTO，字幕提供者 劉胖胖，歡迎大家收看奇蹟奇處，今天我有一位新朋友，Ice</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:22.27" id="00:00:22.27" class="lt" onclick="jumptoTime(22, this.id)"><p>Hello，今天我來學做漢堡包，先說說我自己，我本身對廚藝，有十年的公仔麵經驗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.97" id="00:00:33.97" class="lt" onclick="jumptoTime(33, this.id)"><p>哦，不錯吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:36.55" id="00:00:36.55" class="lt" onclick="jumptoTime(36, this.id)"><p>真的，今天就靠你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:39.59" id="00:00:39.59" class="lt" onclick="jumptoTime(39, this.id)"><p>你今天想做漢堡包嗎，是的，打算做給兒子吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:43.71" id="00:00:43.71" class="lt" onclick="jumptoTime(43, this.id)"><p>不是我做給大家吃，是給大家看著</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:47.99" id="00:00:47.99" class="lt" onclick="jumptoTime(47, this.id)"><p>無論如何，我們做漢堡包，最主要是肉是主角，所以通常會用比較好的牛肉，這個我們用澳洲的安格斯做出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:1.99" id="00:01:1.99" class="lt" onclick="jumptoTime(61, this.id)"><p>哦，澳洲安格斯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:4.47" id="00:01:4.47" class="lt" onclick="jumptoTime(64, this.id)"><p>是的，有些是用和牛做的漢堡，但我私人上不太喜歡，因為和牛很油很肥，所以不想漢堡太油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:15.55" id="00:01:15.55" class="lt" onclick="jumptoTime(75, this.id)"><p>反而不夾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:16.55" id="00:01:16.55" class="lt" onclick="jumptoTime(76, this.id)"><p>不是這樣鋸，所以我喜歡用美式漢堡包，我們有一個包，我喜歡清一點，有少許番茄，我喜歡用瑞士芝士，即是川東芝士，哦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:31.23" id="00:01:31.23" class="lt" onclick="jumptoTime(91, this.id)"><p>即是有東西咬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:34.43" id="00:01:34.43" class="lt" onclick="jumptoTime(94, this.id)"><p>因為川東芝士不是很鹹，而且有少許creamy的味道，所以就變成一種要媽咪的漢堡包，如果其他芝士只有鹹味，就不太好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:47.43" id="00:01:47.43" class="lt" onclick="jumptoTime(107, this.id)"><p>但為什麼會穿洞，我想知道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:50.43" id="00:01:50.43" class="lt" onclick="jumptoTime(110, this.id)"><p>因為發酵時會有些氣泡</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:53.83" id="00:01:53.83" class="lt" onclick="jumptoTime(113, this.id)"><p>哦，原來是自己預先做的，不是特意做的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:57.67" id="00:01:57.67" class="lt" onclick="jumptoTime(117, this.id)"><p>不是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:58.67" id="00:01:58.67" class="lt" onclick="jumptoTime(118, this.id)"><p>哈哈，是的，配一些味道，讓它沒那麼膩，少許酸瓜，我們有少許芥辣和茄汁，和少許番茄片，我們未開火之前，就做了一些準備功夫，第一件事，準備幾塊番茄片</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:18.83" id="00:02:18.83" class="lt" onclick="jumptoTime(138, this.id)"><p>很緊張，是不是要開始顯出我的功架</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:22.31" id="00:02:22.31" class="lt" onclick="jumptoTime(142, this.id)"><p>不用，我做得到，你看得到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:24.51" id="00:02:24.51" class="lt" onclick="jumptoTime(144, this.id)"><p>哈哈，好了，我們有兩三塊薄的番茄片</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:34.68" id="00:02:34.68" class="lt" onclick="jumptoTime(154, this.id)"><p>這個要有工架才可以做到，因為如果讓我切呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:40.04" id="00:02:40.04" class="lt" onclick="jumptoTime(160, this.id)"><p>我們有三塊這些，其實OK了，我們都準備開火了，我們先煎一煎麵包，為什麼呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:52.68" id="00:02:52.68" class="lt" onclick="jumptoTime(172, this.id)"><p>剛剛才拿了個扒出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:55.92" id="00:02:55.92" class="lt" onclick="jumptoTime(175, this.id)"><p>我們是一步一步來的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:58.24" id="00:02:58.24" class="lt" onclick="jumptoTime(178, this.id)"><p>原來麵包是要處理的，我以為麵包是直接夾下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:1.92" id="00:03:1.92" class="lt" onclick="jumptoTime(181, this.id)"><p>因為煎完的扒會出汁，如果不煎的話，汁會進入麵包，就會濕掉，所以我們要封麵包</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:15.68" id="00:03:15.68" class="lt" onclick="jumptoTime(195, this.id)"><p>重點就是這個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:17.28" id="00:03:17.28" class="lt" onclick="jumptoTime(197, this.id)"><p>細節，好吃和不好吃就是在這個位置，要細心</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:24.36" id="00:03:24.36" class="lt" onclick="jumptoTime(204, this.id)"><p>因為大家有時吃快餐，麵包軟了是兩回事</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:29.84" id="00:03:29.84" class="lt" onclick="jumptoTime(209, this.id)"><p>沒錯，你可以用少許牛油，或者我們用少許橄欖油，封一封麵包就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:39.92" id="00:03:39.92" class="lt" onclick="jumptoTime(219, this.id)"><p>如果我沒有這些，我直接烘麵包可以嗎，烘麵包機都可以，可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:45.16" id="00:03:45.16" class="lt" onclick="jumptoTime(225, this.id)"><p>塗少許牛油上去，然後烘一烘</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:48.36" id="00:03:48.36" class="lt" onclick="jumptoTime(228, this.id)"><p>我先裝作有工作</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:49.96" id="00:03:49.96" class="lt" onclick="jumptoTime(229, this.id)"><p>好，這裏幾分鐘就可以了，你看到它開始有少許金色，就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:58.52" id="00:03:58.52" class="lt" onclick="jumptoTime(238, this.id)"><p>不用翻面，因為只有那邊碰到牛油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:2.12" id="00:04:2.12" class="lt" onclick="jumptoTime(242, this.id)"><p>其他我們就要保持軟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:4.32" id="00:04:4.32" class="lt" onclick="jumptoTime(244, this.id)"><p>如果跟朋友說做麵包，我只會說這個步驟，我已經立刻高了一個層次</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:10.96" id="00:04:10.96" class="lt" onclick="jumptoTime(250, this.id)"><p>你看到有少許洞，這樣就可以了，我們就可以拿走</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:18.28" id="00:04:18.28" class="lt" onclick="jumptoTime(258, this.id)"><p>這些有點像BBQ加蜜糖，做的感覺</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:24.48" id="00:04:24.48" class="lt" onclick="jumptoTime(264, this.id)"><p>OK，我們就可以放麵包了，這些是自然的西冷，我們改肉眼時，這些是做出來的，不是免治肉的垃圾部位，在打碎它，所以做漢堡，買免治肉不是太好，這些都是自己打的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:47.12" id="00:04:47.12" class="lt" onclick="jumptoTime(287, this.id)"><p>沒錯，只不過你包裝了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:48.96" id="00:04:48.96" class="lt" onclick="jumptoTime(288, this.id)"><p>沒錯，因為我們都做牛扒，我們都做不同的扒類，所以很多時候，這些我們就拿來做漢堡，小心</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:58.48" id="00:04:58.48" class="lt" onclick="jumptoTime(298, this.id)"><p>campusesustoруд heel，convince，HE anderer，eyeballs，glaze，bek，qualification，Hait，arte，Moss，headphone</p></a>
+				<a href="#00:05:0.44" id="00:05:0.44" class="lt" onclick="jumptoTime(300, this.id)"><p>Baek，� observation</p></a>
+				<a href="#00:05:0.14" id="00:05:0.14" class="lt" onclick="jumptoTime(300, this.id)"><p>，​ה，viktigt，cheat</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:3.80" id="00:05:3.80" class="lt" onclick="jumptoTime(303, this.id)"><p>ested，對 rides，嘩好新鮮 你睇下佢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:7.76" id="00:05:7.76" class="lt" onclick="jumptoTime(307, this.id)"><p>тон Answer driver，xy systems</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:15.20" id="00:05:15.20" class="lt" onclick="jumptoTime(315, this.id)"><p>maiden，agora，coat，énom，ép Con founding，суп bị，Grac suicide，อง versch Or Urs���metro</p></a>
+				<a href="#00:05:14.64" id="00:05:14.64" class="lt" onclick="jumptoTime(314, this.id)"><p>metabolism，metrics，студ Zone，peur 넘 böl，형ven，Ок Eleven</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:15.71" id="00:05:15.71" class="lt" onclick="jumptoTime(315, this.id)"><p>好了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:17.71" id="00:05:17.71" class="lt" onclick="jumptoTime(317, this.id)"><p>很方便 整塊拿出來，但這個肉是否已經醃了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:30.04" id="00:05:30.04" class="lt" onclick="jumptoTime(330, this.id)"><p>我不會醃的，為甚麼呢，因為漂亮的漢堡包，其實要吃到肉味，所以我們只有鹽和黑椒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:40.24" id="00:05:40.24" class="lt" onclick="jumptoTime(340, this.id)"><p>鹽和黑椒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:41.04" id="00:05:41.04" class="lt" onclick="jumptoTime(341, this.id)"><p>為甚麼我不預先加呢，因為如果我預先加了鹽，它會抽走水份和血份，到時漢堡包就沒那麼多汁，但你煎的時候就要加了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:53.04" id="00:05:53.04" class="lt" onclick="jumptoTime(353, this.id)"><p>是次序的問題</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:55.04" id="00:05:55.04" class="lt" onclick="jumptoTime(355, this.id)"><p>黑椒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:59.04" id="00:05:59.04" class="lt" onclick="jumptoTime(359, this.id)"><p>我已經聞到很香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:3.04" id="00:06:3.04" class="lt" onclick="jumptoTime(363, this.id)"><p>一個漢堡包最主要是肉，這個很厲害，偶爾都要按壓</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:14.04" id="00:06:14.04" class="lt" onclick="jumptoTime(374, this.id)"><p>但這個不是牛扒那些，要半生熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:20.04" id="00:06:20.04" class="lt" onclick="jumptoTime(380, this.id)"><p>有些人會想吃漢堡包，但我自己，我不知為甚麼，我覺得漢堡包應該是全熟的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:29.04" id="00:06:29.04" class="lt" onclick="jumptoTime(389, this.id)"><p>我也覺得感覺很美味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:31.04" id="00:06:31.04" class="lt" onclick="jumptoTime(391, this.id)"><p>我自己通常最少七成熟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:35.04" id="00:06:35.04" class="lt" onclick="jumptoTime(395, this.id)"><p>我平時外出吃貴價牛肉，我都是甚麼都不加，因為我覺得加了會遮掩牛肉的味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:45.04" id="00:06:45.04" class="lt" onclick="jumptoTime(405, this.id)"><p>最主要是加少許番茄和酸瓜，讓它沒那麼膩，有少許酸和甜的味道平衡</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:4.41" id="00:07:4.41" class="lt" onclick="jumptoTime(424, this.id)"><p>我們待會是否需要放芝士，否則它不融化</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:9.09" id="00:07:9.09" class="lt" onclick="jumptoTime(429, this.id)"><p>我們有一個竅門，你放上麵包後才放芝士，就太遲了，它沒有時間融化，這個我會教你一招，稍後</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:20.69" id="00:07:20.69" class="lt" onclick="jumptoTime(440, this.id)"><p>糟了，現在教你重點，記下來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:24.29" id="00:07:24.29" class="lt" onclick="jumptoTime(444, this.id)"><p>這個有些…，我沒有鏟子</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:28.29" id="00:07:28.29" class="lt" onclick="jumptoTime(448, this.id)"><p>可以嗎，你這個厲害</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:31.49" id="00:07:31.49" class="lt" onclick="jumptoTime(451, this.id)"><p>這個就差很多</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:41.97" id="00:07:41.97" class="lt" onclick="jumptoTime(461, this.id)"><p>我總覺得這塊扒有點焦，有點焦，有點焦才夠好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:47.57" id="00:07:47.57" class="lt" onclick="jumptoTime(467, this.id)"><p>還有有點軟，可以令它有點軟和裂開，這樣才是最好吃的，在美國也很流行這樣，壓軟它</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:58.57" id="00:07:58.57" class="lt" onclick="jumptoTime(478, this.id)"><p>我平時壓到肉上，我怕它不熟，不是，我想讓它好吃，我怕它不熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:5.97" id="00:08:5.97" class="lt" onclick="jumptoTime(485, this.id)"><p>現在香港也有一個，出名的美國連鎖漢堡包，它們的出名就是，這樣壓軟，這裡我們讓它小火慢慢煎，我們可以開始剃漢堡包了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:19.77" id="00:08:19.77" class="lt" onclick="jumptoTime(499, this.id)"><p>我們在上面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:22.37" id="00:08:22.37" class="lt" onclick="jumptoTime(502, this.id)"><p>對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:22.97" id="00:08:22.97" class="lt" onclick="jumptoTime(502, this.id)"><p>我終於可以…，可以出手了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:27.77" id="00:08:27.77" class="lt" onclick="jumptoTime(507, this.id)"><p>我們放少許…，三眼茄，先切一塊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:32.77" id="00:08:32.77" class="lt" onclick="jumptoTime(512, this.id)"><p>切一塊茄</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:39.17" id="00:08:39.17" class="lt" onclick="jumptoTime(519, this.id)"><p>對，每一個兩塊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:41.97" id="00:08:41.97" class="lt" onclick="jumptoTime(521, this.id)"><p>但我覺得要放少許，這樣拍照時會更厲害，因為好像看到…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:47.77" id="00:08:47.77" class="lt" onclick="jumptoTime(527, this.id)"><p>再鋪少許酸瓜，我覺得酸瓜是很重要的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:54.97" id="00:08:54.97" class="lt" onclick="jumptoTime(534, this.id)"><p>我也覺得酸瓜是，因為我之前吃漢堡包，有些人會挑走酸瓜，但是我會留在裡面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:2.17" id="00:09:2.17" class="lt" onclick="jumptoTime(542, this.id)"><p>你說墨基那個你可以挑走，因為那個不是那麼好吃，是嗎，但酸瓜是很重要的，我們可以加少許芥辣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:10.77" id="00:09:10.77" class="lt" onclick="jumptoTime(550, this.id)"><p>直接就可以加了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:12.17" id="00:09:12.17" class="lt" onclick="jumptoTime(552, this.id)"><p>對，茄汁我就直接倒下去，你幫我拿，茄汁就這樣倒上去，這樣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:23.77" id="00:09:23.77" class="lt" onclick="jumptoTime(563, this.id)"><p>會不會太多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:24.57" id="00:09:24.57" class="lt" onclick="jumptoTime(564, this.id)"><p>不會的，芥辣也很重要</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:28.98" id="00:09:28.98" class="lt" onclick="jumptoTime(568, this.id)"><p>很擔心，最主要我負責的步驟就是這樣做菜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:32.98" id="00:09:32.98" class="lt" onclick="jumptoTime(572, this.id)"><p>哈哈哈哈，你想芝士夠融，這個時候你的麵包，只差一兩分鐘就可以吃了，我們現在就放塊芝士上去，你有鍋的熱力，去融化芝士</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:46.98" id="00:09:46.98" class="lt" onclick="jumptoTime(586, this.id)"><p>哦，不用關火的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:50.98" id="00:09:50.98" class="lt" onclick="jumptoTime(590, this.id)"><p>都差不多了，我都看到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:54.98" id="00:09:54.98" class="lt" onclick="jumptoTime(594, this.id)"><p>開始融化了一點，但它的形狀還保持著，變相又好看，又有一點點融化的口感</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:2.98" id="00:10:2.98" class="lt" onclick="jumptoTime(602, this.id)"><p>現在都夠熟了，所以我現在就關火，等芝士融化，就可以上麵包了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:10.98" id="00:10:10.98" class="lt" onclick="jumptoTime(610, this.id)"><p>最主要的肉，讓我先塗上芥辣，是的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:16.98" id="00:10:16.98" class="lt" onclick="jumptoTime(616, this.id)"><p>有些人說要加菇，又加很多不同的醬汁，這個是你想，想要的肉，但肉好看，是主角</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:28.98" id="00:10:28.98" class="lt" onclick="jumptoTime(628, this.id)"><p>不用做太多，我也是這樣說，所以我才不下廚，因為我吃完覺得不好吃，就要提拔，不值得吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:40.98" id="00:10:40.98" class="lt" onclick="jumptoTime(640, this.id)"><p>現在我覺得麵包已經是中等的了，有一點點粉紅，但不會出血，現在就是那個時候</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:48.98" id="00:10:48.98" class="lt" onclick="jumptoTime(648, this.id)"><p>上碟，這一刻我要負責，做一個絕美的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:56.98" id="00:10:56.98" class="lt" onclick="jumptoTime(656, this.id)"><p>OK，把這個放上去，好，完成，我們可以來看看</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:6.98" id="00:11:6.98" class="lt" onclick="jumptoTime(666, this.id)"><p>我有一個漂亮的盤子，可以上碟，嘩 你看，鏡頭準備好了嗎，嘩，很多汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:20.98" id="00:11:20.98" class="lt" onclick="jumptoTime(680, this.id)"><p>熟的 但還有汁流出來，很多汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:24.98" id="00:11:24.98" class="lt" onclick="jumptoTime(684, this.id)"><p>剛剛好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:37.88" id="00:11:37.88" class="lt" onclick="jumptoTime(697, this.id)"><p>我們試味吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:39.88" id="00:11:39.88" class="lt" onclick="jumptoTime(699, this.id)"><p>事不宜遲，我們要開始試食了，好，這個給你，Thank you，我有份幫忙，做漢堡包，哈哈哈哈，前面，叫了他</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:53.88" id="00:11:53.88" class="lt" onclick="jumptoTime(713, this.id)"><p>哇</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:59.88" id="00:11:59.88" class="lt" onclick="jumptoTime(719, this.id)"><p>哇，牛肉汁流出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:1.88" id="00:12:1.88" class="lt" onclick="jumptoTime(721, this.id)"><p>嗯，這麼大，嗯，我要好好說，我剛才只吃了牛肉，所以我只知道牛肉好吃，我的嘴巴不夠大，哈哈</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:12:17.88" id="00:12:17.88" class="lt" onclick="jumptoTime(737, this.id)"><p>用安格斯做的漢堡，是真的不同一點，是那種香味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:23.88" id="00:12:23.88" class="lt" onclick="jumptoTime(743, this.id)"><p>這個牛肉很配合，我試了一個，番茄酸瓜芝士</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:12:29.88" id="00:12:29.88" class="lt" onclick="jumptoTime(749, this.id)"><p>嗯，嗯，這個馬上平衡了，剛才吃牛肉，就像去吃牛蝦，但加上，番茄，芝士，酸瓜，馬上變成漢堡包，味道變得很平衡，不只是肉汁味，嗯，這個份量，一個人一件</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:57.88" id="00:12:57.88" class="lt" onclick="jumptoTime(777, this.id)"><p>一個人一件</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:1.88" id="00:13:1.88" class="lt" onclick="jumptoTime(781, this.id)"><p>既然如此，跟大家說，這個好吃的牛扒，可以在Jacky的網店買，或者直接來到，將軍澳本店，找Jacky和你一起做，是不是女生歡迎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:13:17.88" id="00:13:17.88" class="lt" onclick="jumptoTime(797, this.id)"><p>男生不歡迎，喜歡吃好東西</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:21.88" id="00:13:21.88" class="lt" onclick="jumptoTime(801, this.id)"><p>的人就歡迎，試不到，大家記得下集回來，學習如何輕鬆地做高級食物，拜拜，拜拜，吃了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:13:35.88" id="00:13:35.88" class="lt" onclick="jumptoTime(815, this.id)"><p>謝謝。</p></a>
+</div>
+	</body>
+</html>

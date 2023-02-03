@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱ 煙三文魚Benedict ︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kzZi39TmQdc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱ 煙三文魚Benedict ︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，歡迎大家來到奇蹟奇處，今日有我這個嘉賓，你配合這個主持，來做這個菜式，Jacky我們今天會做什麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:26.51" id="00:00:26.51" class="lt" onclick="jumptoTime(26, this.id)"><p>第一件事我想說，Ice回來和我們一起拍，真是開心</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:30.51" id="00:00:30.51" class="lt" onclick="jumptoTime(30, this.id)"><p>我也期待了很久</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:32.51" id="00:00:32.51" class="lt" onclick="jumptoTime(32, this.id)"><p>今天我們就拿一些煙沙文魚，做我們的題目，因為這個都是我們一些重要的產品，今天我會做一個很美的早餐，譬如你星期六日，星期五都沒有空做，星期六就可以做早餐，或者午餐，可以做這個菜，我們做一個煙沙文魚的Benedict，Benedict?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:54.51" id="00:00:54.51" class="lt" onclick="jumptoTime(54, this.id)"><p>Benedict其實是，通常是配蛋的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:58.51" id="00:00:58.51" class="lt" onclick="jumptoTime(58, this.id)"><p>通常有蛋或者會配火腿，或者煙肉，但我們今天會用沙文魚來做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:6.51" id="00:01:6.51" class="lt" onclick="jumptoTime(66, this.id)"><p>很好啊，因為煙沙文魚其實都很方便，經常都可以聞到見到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:11.51" id="00:01:11.51" class="lt" onclick="jumptoTime(71, this.id)"><p>是嗎? 是啊，第一件事我們要做一個荷蘭汁，這個荷蘭汁，我們要溶一些牛油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:21.51" id="00:01:21.51" class="lt" onclick="jumptoTime(81, this.id)"><p>這個牛油的量都很多</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:23.51" id="00:01:23.51" class="lt" onclick="jumptoTime(83, this.id)"><p>是啊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:25.51" id="00:01:25.51" class="lt" onclick="jumptoTime(85, this.id)"><p>是用來煮蛋還是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:27.51" id="00:01:27.51" class="lt" onclick="jumptoTime(87, this.id)"><p>不是，我們會做一個汁，就叫荷蘭汁，這個學了其實都幾有用，等牛油溶的時候，我們就找一個鐵盤，這個鐵盤我們就可以裝一點香草，我們這裡有一點混合了的意大利香草，如果你喜歡的話，可以放一點碉草，因為碉草和沙文魚都很合，我們就放一點醋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:56.51" id="00:01:56.51" class="lt" onclick="jumptoTime(116, this.id)"><p>要攪拌嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:58.51" id="00:01:58.51" class="lt" onclick="jumptoTime(118, this.id)"><p>這個就是一點點的黑醋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:3.51" id="00:02:3.51" class="lt" onclick="jumptoTime(123, this.id)"><p>黑醋?，通常都是沙律吃的那種，是不是那種?</p></a>
+				<a href="#00:02:7.51" id="00:02:7.51" class="lt" onclick="jumptoTime(127, this.id)"><p>攪拌它</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:8.51" id="00:02:8.51" class="lt" onclick="jumptoTime(128, this.id)"><p>或者不用理它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:10.51" id="00:02:10.51" class="lt" onclick="jumptoTime(130, this.id)"><p>不用理它就行了，這麼方便</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:12.51" id="00:02:12.51" class="lt" onclick="jumptoTime(132, this.id)"><p>我們這裡都會加一個蛋黃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:20.89" id="00:02:20.89" class="lt" onclick="jumptoTime(140, this.id)"><p>這隻白色蛋，有甚麼蛋會較好?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:26.89" id="00:02:26.89" class="lt" onclick="jumptoTime(146, this.id)"><p>我通常買日本蛋，我也是，其實啡蛋或白蛋都無所謂，最重要是長大環境好不好，日本一定很執著這些東西</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:39.89" id="00:02:39.89" class="lt" onclick="jumptoTime(159, this.id)"><p>一定有些質素，即使最差的已經很好，是的，只有蛋黃，蛋白不要</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:49.89" id="00:02:49.89" class="lt" onclick="jumptoTime(169, this.id)"><p>我們就放進去，這樣，是的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:54.89" id="00:02:54.89" class="lt" onclick="jumptoTime(174, this.id)"><p>還要不用攪拌</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:56.89" id="00:02:56.89" class="lt" onclick="jumptoTime(176, this.id)"><p>我們現在可以攪拌</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:2.75" id="00:03:2.75" class="lt" onclick="jumptoTime(182, this.id)"><p>荷蘭汁除了可以在Benedict早餐做之外，還可以用在其他地方</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:10.03" id="00:03:10.03" class="lt" onclick="jumptoTime(190, this.id)"><p>很多，例如配蘆筍也很好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:13.83" id="00:03:13.83" class="lt" onclick="jumptoTime(193, this.id)"><p>蘆筍即是平時牛扒會放的那些</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:19.11" id="00:03:19.11" class="lt" onclick="jumptoTime(199, this.id)"><p>對，如果你喜歡吃蘆筍，你煮了蘆筍，當然有荷蘭汁，很棒的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:26.47" id="00:03:26.47" class="lt" onclick="jumptoTime(206, this.id)"><p>即是變成了醬汁，不是倒在意粉上，不是那種，是真的點來吃的，對，還有兩隻蛋呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:37.55" id="00:03:37.55" class="lt" onclick="jumptoTime(217, this.id)"><p>這個我們用來做Poached Egg</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:39.87" id="00:03:39.87" class="lt" onclick="jumptoTime(219, this.id)"><p>好的，讓我來吧，讓我做點事</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:44.51" id="00:03:44.51" class="lt" onclick="jumptoTime(224, this.id)"><p>好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:45.95" id="00:03:45.95" class="lt" onclick="jumptoTime(225, this.id)"><p>讓我裝模作樣，貢獻一下</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:49.51" id="00:03:49.51" class="lt" onclick="jumptoTime(229, this.id)"><p>你稍後幫我倒牛油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:53.55" id="00:03:53.55" class="lt" onclick="jumptoTime(233, this.id)"><p>倒下去還是倒下來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:55.83" id="00:03:55.83" class="lt" onclick="jumptoTime(235, this.id)"><p>你倒下來這裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:57.19" id="00:03:57.19" class="lt" onclick="jumptoTime(237, this.id)"><p>也要一邊攪拌嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:58.23" id="00:03:58.23" class="lt" onclick="jumptoTime(238, this.id)"><p>對，做醬汁比較麻煩，但做完這一部分，其他就很容易了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:5.47" id="00:04:5.47" class="lt" onclick="jumptoTime(245, this.id)"><p>好的，如果我有點懶惰，我可以先做醬汁，這樣也可以，可以，但如果星期六、日我休閒一點，輕鬆一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:16.79" id="00:04:16.79" class="lt" onclick="jumptoTime(256, this.id)"><p>對，因為有醬汁整件事會更滑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:21.35" id="00:04:21.35" class="lt" onclick="jumptoTime(261, this.id)"><p>慘了，我弄到有點起泡，有問題嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:23.31" id="00:04:23.31" class="lt" onclick="jumptoTime(263, this.id)"><p>很好，起泡就很好，因為如果蛋入了空氣，醬汁會更容易打出來，所以你這樣做是很好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:32.87" id="00:04:32.87" class="lt" onclick="jumptoTime(272, this.id)"><p>想不到我也有點天分，對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:35.87" id="00:04:35.87" class="lt" onclick="jumptoTime(275, this.id)"><p>好，牛油可以了，這個又要麻煩你了，稍後你幫我慢慢倒牛油，我先加點暖水，讓它煮熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:50.07" id="00:04:50.07" class="lt" onclick="jumptoTime(290, this.id)"><p>是嗎?因為它是蛋黃，煮熟而已</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:53.99" id="00:04:53.99" class="lt" onclick="jumptoTime(293, this.id)"><p>只是加一點點，偶爾加點熱水就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:57.35" id="00:04:57.35" class="lt" onclick="jumptoTime(297, this.id)"><p>所以為甚麼我說要用…，不是全放進去，是拌一拌，所以要用技術，讓它暖一暖就可以了，原來這個水是這樣用的，我起初以為要用來煮蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:7.51" id="00:05:7.51" class="lt" onclick="jumptoTime(307, this.id)"><p>稍後我們就用來煮蛋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:9.43" id="00:05:9.43" class="lt" onclick="jumptoTime(309, this.id)"><p>OK，但在醬汁就可以…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:12.11" id="00:05:12.11" class="lt" onclick="jumptoTime(312, this.id)"><p>好，你現在可以幫我慢慢倒牛油，少許，真的倒幾滴</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:20.39" id="00:05:20.39" class="lt" onclick="jumptoTime(320, this.id)"><p>幾滴，對</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:21.99" id="00:05:21.99" class="lt" onclick="jumptoTime(321, this.id)"><p>好，夠了，要分批放嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:30.99" id="00:05:30.99" class="lt" onclick="jumptoTime(330, this.id)"><p>對，慢慢放，一開始就慢慢放，你會看到它開始有點稠了，你就知道是安全了，就可以放鬆一點，就像之前一樣，沾一點熱水，再拿出來，沾一點熱水，再拿出來，因為我們想雞蛋熟，但又不想它變成炒蛋，你看到多稠了，再加一點牛油，好，夠了，要慢慢來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.24" id="00:06:0.24" class="lt" onclick="jumptoTime(360, this.id)"><p>對，因為最主要是要控制蛋，不可以一下子熟了，這個弄出來有點像南瓜汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:7.04" id="00:06:7.04" class="lt" onclick="jumptoTime(367, this.id)"><p>好了，可以多一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.04" id="00:06:10.04" class="lt" onclick="jumptoTime(370, this.id)"><p>還未倒完</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:11.64" id="00:06:11.64" class="lt" onclick="jumptoTime(371, this.id)"><p>對，倒夠了，這個很糊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:14.04" id="00:06:14.04" class="lt" onclick="jumptoTime(374, this.id)"><p>這次我幫得上忙</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:16.04" id="00:06:16.04" class="lt" onclick="jumptoTime(376, this.id)"><p>對，沒事就行，好了，又可以多一點，好，倒完它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:22.04" id="00:06:22.04" class="lt" onclick="jumptoTime(382, this.id)"><p>好，全部倒掉，好，謝謝，不要浪費</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:26.64" id="00:06:26.64" class="lt" onclick="jumptoTime(386, this.id)"><p>不會，牛油在煎鍋也有用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:30.04" id="00:06:30.04" class="lt" onclick="jumptoTime(390, this.id)"><p>很好，跟Jacky煮東西，不但不浪費食材，又快，而且不浪費</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:34.64" id="00:06:34.64" class="lt" onclick="jumptoTime(394, this.id)"><p>對，其實我們的目標是，大家在家中也做得到，是，沒有烹飪經驗也要煮得到，不過看有甚麼意思</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:44.24" id="00:06:44.24" class="lt" onclick="jumptoTime(404, this.id)"><p>對，你看我也可以幫忙，這個荷蘭汁這樣攪拌完，是完成了嗎，還是還需要經過</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:51.84" id="00:06:51.84" class="lt" onclick="jumptoTime(411, this.id)"><p>差不多了，我不想它太稠，你繼續攪拌，好，它就會越來越稠，但我不想它太稠，因為我想它流出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:3.84" id="00:07:3.84" class="lt" onclick="jumptoTime(423, this.id)"><p>我很少會自己用這個打蛋，我通常用那些做蛋糕的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:9.24" id="00:07:9.24" class="lt" onclick="jumptoTime(429, this.id)"><p>那當然更好，快很多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:12.04" id="00:07:12.04" class="lt" onclick="jumptoTime(432, this.id)"><p>但那些我不知道，可能是我控制時間問題，很容易我就過了，擋住它</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:19.84" id="00:07:19.84" class="lt" onclick="jumptoTime(439, this.id)"><p>因為你打得太多也不會</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:21.04" id="00:07:21.04" class="lt" onclick="jumptoTime(441, this.id)"><p>對，那個火候，即是我的手</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:25.44" id="00:07:25.44" class="lt" onclick="jumptoTime(445, this.id)"><p>因為我們今天做少許，只有一小碗的，我們就用手打，但如果你要做得多，我都會勸你用電子的，否則手也累了，好，我們的荷蘭汁就差不多完成了，到時再加少許檸檬汁調味就行了，好，現在我們先準備麵包，我們這裡有少許牛油剩下，所以我們就把牛油吸掉，煎一下麵包</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:55.84" id="00:07:55.84" class="lt" onclick="jumptoTime(475, this.id)"><p>它就可以有少許，表面有少許脆脆的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:59.64" id="00:07:59.64" class="lt" onclick="jumptoTime(479, this.id)"><p>對，這樣就差很遠了，現在這個沸水我們都會繼續用，我們就加少許醋，當然如果你有紅酒醋，或者白酒醋會好一點，但我剛剛用完，我只剩下黑醋，都可以用到，都可以用到，但顏色就沒那麼漂亮，好，我們做Poje，為什麼要加醋在水中，因為醋的效果會令蛋沒那麼容易散，所以它是很有用的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:30.44" id="00:08:30.44" class="lt" onclick="jumptoTime(510, this.id)"><p>這件事長知識了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:33.44" id="00:08:33.44" class="lt" onclick="jumptoTime(513, this.id)"><p>那Ace你麻煩你幫我打一隻蛋，放進這個盤子裡，好，相信你</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:38.44" id="00:08:38.44" class="lt" onclick="jumptoTime(518, this.id)"><p>不要弄壞蛋黃，好緊張，好緊張，幸好，OK嗎，安全安全安全</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:49.44" id="00:08:49.44" class="lt" onclick="jumptoTime(529, this.id)"><p>那你看到我們…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:50.44" id="00:08:50.44" class="lt" onclick="jumptoTime(530, this.id)"><p>為什麼會那麼香，你只是煎了包</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:53.44" id="00:08:53.44" class="lt" onclick="jumptoTime(533, this.id)"><p>你用牛油什麼都好吃，我們煎到它有上了少許顏色，我們就可以放進盤子裡，下一件事就是蛋，我又交換了，轉到這裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:8.44" id="00:09:8.44" class="lt" onclick="jumptoTime(548, this.id)"><p>不行，包很香</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:12.44" id="00:09:12.44" class="lt" onclick="jumptoTime(552, this.id)"><p>我們開大一點的水，都要有少許滾，不是大滾，輕微的滾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:19.44" id="00:09:19.44" class="lt" onclick="jumptoTime(559, this.id)"><p>是不是因為太大滾會令蛋散，難控制，用這個最好，這種鋒利的，大家注意，這些很危險</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:32.44" id="00:09:32.44" class="lt" onclick="jumptoTime(572, this.id)"><p>這些不要用錯，我們找些紙巾回來，這裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:35.44" id="00:09:35.44" class="lt" onclick="jumptoTime(575, this.id)"><p>看看這個蛋到底是怎樣煮，因為我們早餐都會吃到這個Benedict蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:41.44" id="00:09:41.44" class="lt" onclick="jumptoTime(581, this.id)"><p>永遠都受歡迎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:43.44" id="00:09:43.44" class="lt" onclick="jumptoTime(583, this.id)"><p>但真的不知道它是怎樣做出來，不知道有什麼特別，人家常說Benedict，Benedict，然後我又找Egg Benedict，總之就是這樣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:52.44" id="00:09:52.44" class="lt" onclick="jumptoTime(592, this.id)"><p>就是這樣，有多難，就是這樣容易</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:55.44" id="00:09:55.44" class="lt" onclick="jumptoTime(595, this.id)"><p>我都想像Jacky那樣，就是這樣，有多難</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:58.44" id="00:09:58.44" class="lt" onclick="jumptoTime(598, this.id)"><p>現在水開始有少許滾，趁空打兩下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:8.75" id="00:10:8.75" class="lt" onclick="jumptoTime(608, this.id)"><p>這個顏色很漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:10.75" id="00:10:10.75" class="lt" onclick="jumptoTime(610, this.id)"><p>越來越濃稠了，現在開始，好了 現在水終於開始沸騰了，我們要攪拌至水開始轉動，蛋最好用碗慢慢放進去，如果水轉動的話，就不會發開，你看到它都黏在中間，要小心 不要搗亂，讓蛋黃慢慢熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:49.75" id="00:10:49.75" class="lt" onclick="jumptoTime(649, this.id)"><p>這個很可愛，我們再做一個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:53.75" id="00:10:53.75" class="lt" onclick="jumptoTime(653, this.id)"><p>好 讓我先打零隻蛋，這隻蛋這麼結實</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:0.75" id="00:11:0.75" class="lt" onclick="jumptoTime(660, this.id)"><p>因為日本蛋的殼和蛋黃比較厚，我經常覺得日本蛋要打得比較大力</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:8.75" id="00:11:8.75" class="lt" onclick="jumptoTime(668, this.id)"><p>我剛才很怕打破蛋黃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:10.75" id="00:11:10.75" class="lt" onclick="jumptoTime(670, this.id)"><p>你現在看到開始形成了，這個蛋黃蛋糕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:16.75" id="00:11:16.75" class="lt" onclick="jumptoTime(676, this.id)"><p>好可愛</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:18.75" id="00:11:18.75" class="lt" onclick="jumptoTime(678, this.id)"><p>蛋黃應該都熱了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:20.75" id="00:11:20.75" class="lt" onclick="jumptoTime(680, this.id)"><p>變了它就會流心蛋黃，這個蛋糕又不像溫泉蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:28.75" id="00:11:28.75" class="lt" onclick="jumptoTime(688, this.id)"><p>溫泉蛋是用煉殼，是的，大概60多度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:36.75" id="00:11:36.75" class="lt" onclick="jumptoTime(696, this.id)"><p>越簡單的東西就越難煮得好，沒錯，只是拿起這個都很考功夫</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:47.75" id="00:11:47.75" class="lt" onclick="jumptoTime(707, this.id)"><p>沒事，再來一個</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:54.75" id="00:11:54.75" class="lt" onclick="jumptoTime(714, this.id)"><p>我想試試放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:56.75" id="00:11:56.75" class="lt" onclick="jumptoTime(716, this.id)"><p>不要太大力，放在中間 慢慢倒進去，對了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:4.75" id="00:12:4.75" class="lt" onclick="jumptoTime(724, this.id)"><p>放進去，不敢呼吸，有些撈金魚的感覺</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:18.59" id="00:12:18.59" class="lt" onclick="jumptoTime(738, this.id)"><p>這裡有麵包，我們可以慢慢鋪，第一鋪沙發魚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:28.19" id="00:12:28.19" class="lt" onclick="jumptoTime(748, this.id)"><p>今日的主菜 三文魚，你有沒有任何處理過，還是直接從包裝拿出來就可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:35.27" id="00:12:35.27" class="lt" onclick="jumptoTime(755, this.id)"><p>直接從包裝拿出來就可以，這些煙肉 沙發魚，其實我在香港自己創煙，所以是很新鮮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:44.51" id="00:12:44.51" class="lt" onclick="jumptoTime(764, this.id)"><p>一打開就可以吃到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:46.11" id="00:12:46.11" class="lt" onclick="jumptoTime(766, this.id)"><p>新鮮的三文魚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:48.07" id="00:12:48.07" class="lt" onclick="jumptoTime(768, this.id)"><p>我看見它的樣子和色澤，所以才問你是否處理過，有沒有做過事前的工夫，原來是直接拿出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:58.19" id="00:12:58.19" class="lt" onclick="jumptoTime(778, this.id)"><p>我們放少許雕草，這隻蛋也差不多了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:3.67" id="00:13:3.67" class="lt" onclick="jumptoTime(783, this.id)"><p>這是我親手下的蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:6.51" id="00:13:6.51" class="lt" onclick="jumptoTime(786, this.id)"><p>我們直接放上去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:9.87" id="00:13:9.87" class="lt" onclick="jumptoTime(789, this.id)"><p>它好像會滑走</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:11.91" id="00:13:11.91" class="lt" onclick="jumptoTime(791, this.id)"><p>要小心點 要看著，OK，好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:18.27" id="00:13:18.27" class="lt" onclick="jumptoTime(798, this.id)"><p>最後的工夫，好，這個荷蘭汁已經有點稠了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:25.27" id="00:13:25.27" class="lt" onclick="jumptoTime(805, this.id)"><p>稠了一點，我們再攪拌一下，讓它溫暖一下，稠一點，最後我們就，把荷蘭汁也放上去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:39.27" id="00:13:39.27" class="lt" onclick="jumptoTime(819, this.id)"><p>嘩，加了汁之後馬上，很豐富的感覺，嘩</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:50.27" id="00:13:50.27" class="lt" onclick="jumptoTime(830, this.id)"><p>再加一點汁，嘩，這樣就可以裝飾一點，少許巴西辣椒，讓它有色澤，雕草 因為很配合三文魚，最後如果你有的話，就用少許香草裝飾一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:10.27" id="00:14:10.27" class="lt" onclick="jumptoTime(850, this.id)"><p>哦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:13.27" id="00:14:13.27" class="lt" onclick="jumptoTime(853, this.id)"><p>表面就放在旁邊，哦，對了，好，嘩 好漂亮，做好這個三文魚的Benedict</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:26.32" id="00:14:26.32" class="lt" onclick="jumptoTime(866, this.id)"><p>好棒 好棒 好棒，但我現在不捨得弄蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:28.92" id="00:14:28.92" class="lt" onclick="jumptoTime(868, this.id)"><p>一定要捨得，要弄蛋才好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:32.12" id="00:14:32.12" class="lt" onclick="jumptoTime(872, this.id)"><p>我不捨得弄蛋，你試一下，這個煙三文魚Benedict，就這樣完成了，我有份的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:39.92" id="00:14:39.92" class="lt" onclick="jumptoTime(879, this.id)"><p>哎呀 沒有你都做不到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:42.52" id="00:14:42.52" class="lt" onclick="jumptoTime(882, this.id)"><p>那我們現在就試吃，好了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:14:44.72" id="00:14:44.72" class="lt" onclick="jumptoTime(884, this.id)"><p>你試一下，我不知道怎樣做，弄爛它，蛋黃要混合在一起才好吃，我不捨得弄蛋，有少許蛋 有少許麵包，有少許三文魚，有少許汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:0.72" id="00:15:0.72" class="lt" onclick="jumptoTime(900, this.id)"><p>我要弄爛它，弄吧，這個過程很殘忍，嘩</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:7.72" id="00:15:7.72" class="lt" onclick="jumptoTime(907, this.id)"><p>要弄到很深才好吃，好漂亮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:15:11.72" id="00:15:11.72" class="lt" onclick="jumptoTime(911, this.id)"><p>我來吧，好，通常吃都會這個狀態，我出去吃漢堡包都是這個狀態，是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:21.72" id="00:15:21.72" class="lt" onclick="jumptoTime(921, this.id)"><p>這個很難像漢堡包這樣拿起來，因為很濕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:25.72" id="00:15:25.72" class="lt" onclick="jumptoTime(925, this.id)"><p>是，我自己偷吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:28.72" id="00:15:28.72" class="lt" onclick="jumptoTime(928, this.id)"><p>好 你來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:32.72" id="00:15:32.72" class="lt" onclick="jumptoTime(932, this.id)"><p>嗯，嘩，很濃郁的蛋味，可能因為蛋黃剛新鮮爆出來，所以有很濃郁的蛋味，而且荷蘭汁…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:47.69" id="00:15:47.69" class="lt" onclick="jumptoTime(947, this.id)"><p>有點酸 對，吃下去時不會太膩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:52.21" id="00:15:52.21" class="lt" onclick="jumptoTime(952, this.id)"><p>是中和了那種感覺 對…，而且煙三文魚不是…，不是外面那種死鹹的煙三文魚</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:1.25" id="00:16:1.25" class="lt" onclick="jumptoTime(961, this.id)"><p>因為香港的三文魚通常是入口回來的，是從雪藏狀態運過來的，冷藏了那麼久，到時再吃，它會有很多時候…，有點焦和鹹，會鹹很多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:14.05" id="00:16:14.05" class="lt" onclick="jumptoTime(974, this.id)"><p>外面的煙三文魚是很鹹的，我一直以為煙三文魚要特意做鹹，原來不是 不是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:19.81" id="00:16:19.81" class="lt" onclick="jumptoTime(979, this.id)"><p>其實最好是不要太鹹，因為我們現在是香港煙，煙三文魚是新鮮得多，所以吃下去的肉質和鹹度會好很多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:31.45" id="00:16:31.45" class="lt" onclick="jumptoTime(991, this.id)"><p>對，三文魚味還是很濃郁，但它不是鹹的 對…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:35.77" id="00:16:35.77" class="lt" onclick="jumptoTime(995, this.id)"><p>而且肉質仍然有肉的感覺，不是完全焦掉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:41.77" id="00:16:41.77" class="lt" onclick="jumptoTime(1001, this.id)"><p>不單可以做早餐，其實就這樣煙三文魚，我也可以吃一餐了，好，今天我們介紹了煙三文魚Vanity，大家可以在家裡試試，還有最重要…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:16:53.93" id="00:16:53.93" class="lt" onclick="jumptoTime(1013, this.id)"><p>是CSL，對嗎 對，我聰明</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:16:57.69" id="00:16:57.69" class="lt" onclick="jumptoTime(1017, this.id)"><p>Comment，對，Like和Share，好，下次再見 再見。</p></a>
+</div>
+	</body>
+</html>

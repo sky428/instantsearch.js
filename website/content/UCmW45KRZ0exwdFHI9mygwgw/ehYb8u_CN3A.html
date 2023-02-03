@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱卡邦尼意粉 ︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ehYb8u_CN3A',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱卡邦尼意粉 ︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA MING PAO TORONTO，又到我們新一集的奇蹟奇廚，今天我們有Easter，和我們一起煮菜，今天我們繼續煙肉題目，我們今天做一個香港人很喜歡吃的意粉，我們Cabonara</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:32.11" id="00:00:32.11" class="lt" onclick="jumptoTime(32, this.id)"><p>Caboné</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.35" id="00:00:33.35" class="lt" onclick="jumptoTime(33, this.id)"><p>對呀，很多人都喜歡吃，我兒子也很喜歡吃Cabonara，我每次問他想吃什麼意粉，他十次有九次都說Cabonara</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:42.15" id="00:00:42.15" class="lt" onclick="jumptoTime(42, this.id)"><p>會不會很複雜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:44.03" id="00:00:44.03" class="lt" onclick="jumptoTime(44, this.id)"><p>Cabonara真的有一點理論在背後，因為有傳統的意大利人做法，如果煮給意大利人，他們會很挑剔這些烹飪規則，但很多時候你外出吃Cabonara，就不是跟著傳統的做法</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:1.91" id="00:01:1.91" class="lt" onclick="jumptoTime(61, this.id)"><p>他們用什麼做的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:3.07" id="00:01:3.07" class="lt" onclick="jumptoTime(63, this.id)"><p>餐廳或者香港的做法，他們會加忌廉，又會加蒜頭，又會加洋蔥，味道會比較豐富，為什麼他們會加忌廉，是會令到醬汁可以放久一點，我們這個意大利的做法，就要即煮即食，就不能放，但是材料就少很多，簡單很多，我們有什麼材料呢，意大利粉，Cabonara一定要用意粉，你不要用其他意粉，天使麵或者什麼的，意粉是最適合的。</p></a>
+				<a href="#00:01:39.67" id="00:01:39.67" class="lt" onclick="jumptoTime(99, this.id)"><p>每一個意粉都有它的用途，我們有一個Parmesan起司，真正的Parmesan起司，不是綠色一桶的，就是美國的那些，那些就不算是，那些是假的，調味很簡單，鹽胡椒，然後有蛋和煙肉，如果是傳統意大利人，他們不是用煙肉，他們用一個叫Guacare，Guacare就是煙了的豬的面豬蛋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:11.42" id="00:02:11.42" class="lt" onclick="jumptoTime(131, this.id)"><p>嘩!這麼講究</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:13.14" id="00:02:13.14" class="lt" onclick="jumptoTime(133, this.id)"><p>對，他們很講究這東西，但我們在香港不容易找到，所以不要緊，我們用煙肉也不會死人，我們先做準備功夫，最主要是打蛋，我會分開兩個碗，一個放蛋黃，一個放蛋白，有些意大利人，蛋黃和蛋白都會用完，我喜歡蛋黃多一點，蛋白少一點，所以我會分開，例如有六個蛋黃，我會加三隻蛋的蛋白</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:47.10" id="00:02:47.10" class="lt" onclick="jumptoTime(167, this.id)"><p>好的…，你會用神器來分蛋，你會覺得現在就這樣做會方便點，還是用神器， 用水瓶吸出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:11.00" id="00:03:11.00" class="lt" onclick="jumptoTime(191, this.id)"><p>我們真正廚師很少用這種…，這是師奶的做法，我們用最原始的做法就最舒服</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:21.40" id="00:03:21.40" class="lt" onclick="jumptoTime(201, this.id)"><p>然後直接打過去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:23.08" id="00:03:23.08" class="lt" onclick="jumptoTime(203, this.id)"><p>對， 現在有三隻，之後可以加蛋黃，好， 你會打蛋嗎，文差， 可以試試看 對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:33.04" id="00:03:33.04" class="lt" onclick="jumptoTime(213, this.id)"><p>你先幫我打蛋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:35.88" id="00:03:35.88" class="lt" onclick="jumptoTime(215, this.id)"><p>好， 我害怕，我會準備芝士粉， 讓你拌勻，唯一的材料我覺得要買好的，就是芝士，這是這道菜的其中一個重點，如果你買假的巴馬臣芝士，通常效果就不好，味道會不同，芝士很白</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:3.00" id="00:04:3.00" class="lt" onclick="jumptoTime(243, this.id)"><p>是嗎?還是要再白一點，這個也差不多了，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:7.84" id="00:04:7.84" class="lt" onclick="jumptoTime(247, this.id)"><p>這段時間真的辛苦一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:10.20" id="00:04:10.20" class="lt" onclick="jumptoTime(250, this.id)"><p>體力活</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:11.20" id="00:04:11.20" class="lt" onclick="jumptoTime(251, this.id)"><p>已經有點累了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:12.60" id="00:04:12.60" class="lt" onclick="jumptoTime(252, this.id)"><p>好， 繼續</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:13.92" id="00:04:13.92" class="lt" onclick="jumptoTime(253, this.id)"><p>因為也要用很多芝士，因為這道菜真的八分之八，靠兩、三個材料推動，所以都要用很多芝士，我想差不多夠了，這些其實也可以混合在一起，混合在蛋漿裡，對， 你就… 拌勻…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:35.48" id="00:04:35.48" class="lt" onclick="jumptoTime(275, this.id)"><p>繼續拌勻 對， 繼續拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:38.28" id="00:04:38.28" class="lt" onclick="jumptoTime(278, this.id)"><p>好 浮面</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:43.60" id="00:04:43.60" class="lt" onclick="jumptoTime(283, this.id)"><p>好…，這碟水…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:45.68" id="00:04:45.68" class="lt" onclick="jumptoTime(285, this.id)"><p>我們先換位置 好…，我們之前已經煮好芝士，現在就加鹽，通常加意粉要多加一點鹽，真的不怕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:1.62" id="00:05:1.62" class="lt" onclick="jumptoTime(301, this.id)"><p>鹽煎?，對，煮意粉一定要加鹽，如果不加鹽就煮不到嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:9.94" id="00:05:9.94" class="lt" onclick="jumptoTime(309, this.id)"><p>不，意粉沒有味道，因為意粉也要加少許味道，但意粉的麵粉本身很厚，所以不容易入味，所以水鹹一點也不是很大問題，好了，這一步完成了，我們可以順便切煙肉，稍後再炒一下，切些幼絲就可以了，我們有這些幼絲，稍後再炒，水滾了，其實很多意粉菜式，意粉水是很重要的，就像中菜要打芡一樣，我們很多時候用意粉水，加進醬汁。</p></a>
+				<a href="#00:05:54.06" id="00:05:54.06" class="lt" onclick="jumptoTime(354, this.id)"><p>令醬汁和意粉更好一起賣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:57.50" id="00:05:57.50" class="lt" onclick="jumptoTime(357, this.id)"><p>我還以為你隨便用水煮熟就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.58" id="00:06:0.58" class="lt" onclick="jumptoTime(360, this.id)"><p>不會的，意粉水是很多人都不知道的，原來煮意大利蔥，意粉水是這麼重要的因素，在味道上，很多時候我們吃意粉，會覺得醬汁很乾，因為你加了醬汁，馬上吸收了意粉，通常會令醬汁變濕，意粉水在這方面有很大幫助，可以令意粉更濕和打芡，我們放了意粉，意粉大約煮9分鐘，大部份都是，我們看看，現在是01分，所以答案就準備好了。</p></a>
+				<a href="#00:06:43.78" id="00:06:43.78" class="lt" onclick="jumptoTime(403, this.id)"><p>好了，其實意粉還差1分鐘，但因為只有一個鍋，沒辦法了，我們要拿走了，麻煩你幫我放煎鍋上來，這段時間我們要炒煙肉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:4.18" id="00:07:4.18" class="lt" onclick="jumptoTime(424, this.id)"><p>用什麼火去炒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:6.42" id="00:07:6.42" class="lt" onclick="jumptoTime(426, this.id)"><p>因為我們趕時間，所以要用大火，因為我不想意粉在太久，我們加少許橄欖油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:14.66" id="00:07:14.66" class="lt" onclick="jumptoTime(434, this.id)"><p>先炒香煙肉，橄欖油是否一定要加，加多少少會好一點，橄欖油算是健康的油，其實吃也沒問題，我們煮西餐也分得清清楚楚，地中海的菜通常都是菜多，沒什麼牛油，沒什麼忌廉芝士，是健康很多的，不定區，你去到德國、法國，就開始熟悉，開始很豐富，這個也是天氣的原因，越冷就要吃多點東西，去保暖，現在很簡單。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:5.35" id="00:08:5.35" class="lt" onclick="jumptoTime(485, this.id)"><p>我們只是想煙肉脆一點，吃過卡邦尼拉的時候，有意粉的軟再加上一點脆，就好吃很多</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:15.51" id="00:08:15.51" class="lt" onclick="jumptoTime(495, this.id)"><p>是不是要看顏色才知道煮好，還是這次有點不同</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:20.87" id="00:08:20.87" class="lt" onclick="jumptoTime(500, this.id)"><p>一樣的，都是等顏色開始越來越深色，你就知道它開始脆了，我看到煙肉已經差不多了，我覺得可以了，我們就可以轉意粉，你不用怕，如果有水也不怕，怕會炸開，我們就是要意粉水，或者你幫我關火，謝謝，因為現在我們都要降溫，還有我們會加一點，這個才是很重要，我們加一點意粉水</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:58.63" id="00:08:58.63" class="lt" onclick="jumptoTime(538, this.id)"><p>哦，大約加多少度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:2.47" id="00:09:2.47" class="lt" onclick="jumptoTime(542, this.id)"><p>現在到時再看看再加，現在我只加兩克，我們要確保溫度不是太高，我們就慢慢加蛋漿，因為太熱，蛋就會變炒蛋，我們就不想它這樣，所以我們這個時候就讓它放涼，少許，你加了意粉水，就不怕它黏在一起，OK，好了，我們慢慢加蛋漿，這個就真的要快，我們加蛋漿就要不停地攪拌，現在一直慢煮，現在可以開小火，很多人的錯在於。</p></a>
+				<a href="#00:10:3.47" id="00:10:3.47" class="lt" onclick="jumptoTime(603, this.id)"><p>Carbonara 太乾，乾的Carbonara 很難吃，其實在意大利吃Pasta，很多時候會濕濕的，好像半個湯麵</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:15.55" id="00:10:15.55" class="lt" onclick="jumptoTime(615, this.id)"><p>我都喜歡濕濕的，很怕乾，嘩!你真厲害</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:22.35" id="00:10:22.35" class="lt" onclick="jumptoTime(622, this.id)"><p>一直慢煮汁會慢慢變稠，麻煩你再磨多些芝士</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:29.55" id="00:10:29.55" class="lt" onclick="jumptoTime(629, this.id)"><p>是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:31.55" id="00:10:31.55" class="lt" onclick="jumptoTime(631, this.id)"><p>芝士不會太鹹，永遠都可以加少許，你幫我攪拌，我幫你磨 因為這樣磨很辛苦，你累了就說吧，我們交換，你留意我完全沒有加鹽和胡椒，為甚麼呢?</p></a>
+				<a href="#00:10:47.55" id="00:10:47.55" class="lt" onclick="jumptoTime(647, this.id)"><p>因為意粉有鹹，芝士也很鹹，所以我們等到最後一秒，我們真的吃，最後一秒試味，再調味，OK 我都覺得差不多了，加些黑椒，我們可以試味了，加少少鹽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:11:19.89" id="00:11:19.89" class="lt" onclick="jumptoTime(679, this.id)"><p>少少鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:20.89" id="00:11:20.89" class="lt" onclick="jumptoTime(680, this.id)"><p>對，可以了，好，夠了，慢慢熱，開始出煙，我們便知道夠熱，不停攪拌，不要讓它變炒蛋，對，現在汁一直熱，好了，現在開始煮意粉，好，關火，再多一點便變炒蛋，你看到現在很幼滑，但沒有一滴幼滑，我們用意粉水和蛋做忌廉，好了，我們可以上碟，味道是簡單一點，因為很多洋蔥、蒜頭和香草都沒有，我們再加少少煙肉和醬汁，最後再補少少黑椒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:14.89" id="00:12:14.89" class="lt" onclick="jumptoTime(734, this.id)"><p>再加多一層芝士，Carbonara便完成了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:29.31" id="00:12:29.31" class="lt" onclick="jumptoTime(749, this.id)"><p>又是我們最期待的試食時間</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:33.51" id="00:12:33.51" class="lt" onclick="jumptoTime(753, this.id)"><p>如果有朋友想試這個菜，其實只有一個地方有點棘手，或者有點技術，就是千萬不要煎鍋太熱，你放蛋漿的時候，因為這個很容易變炒蛋，整個菜就會破壞了，其實只有這個提示，除了這個其實你也看到很簡單</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:12:54.91" id="00:12:54.91" class="lt" onclick="jumptoTime(774, this.id)"><p>嗯，我看你煮就很簡單，我煮有些害怕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:57.95" id="00:12:57.95" class="lt" onclick="jumptoTime(777, this.id)"><p>一定可以的，我對你有信心</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:0.83" id="00:13:0.83" class="lt" onclick="jumptoTime(780, this.id)"><p>我覺得是完全不同味道，跟香港的很綿密的味道，還有蛋味很濃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:6.95" id="00:13:6.95" class="lt" onclick="jumptoTime(786, this.id)"><p>是的，嗯，芝士味很濃，嗯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:9.95" id="00:13:9.95" class="lt" onclick="jumptoTime(789, this.id)"><p>是嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:10.67" id="00:13:10.67" class="lt" onclick="jumptoTime(790, this.id)"><p>還有通常你也不用放很多煙肉，就是有一點調味就夠了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:17.31" id="00:13:17.31" class="lt" onclick="jumptoTime(797, this.id)"><p>但是會不會喜歡吃肉的放多一點煙肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:19.59" id="00:13:19.59" class="lt" onclick="jumptoTime(799, this.id)"><p>隨便，隨便，但是在意大利傳統來說，他們不是說放很多很多肉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:24.47" id="00:13:24.47" class="lt" onclick="jumptoTime(804, this.id)"><p>反而是主要放在麵上，是的，嗯 明白，好，我們今集的時間就這麼多了，如果想看更多的菜式，可以來我們的頻道，CL，LSS，Yeah，C是什麼，Comment</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:13:42.07" id="00:13:42.07" class="lt" onclick="jumptoTime(822, this.id)"><p>Like，Share，還有Subscribe</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:13:44.39" id="00:13:44.39" class="lt" onclick="jumptoTime(824, this.id)"><p>Yeah，好了，我們下集再見。</p></a>
+				<a href="#00:13:46.11" id="00:13:46.11" class="lt" onclick="jumptoTime(826, this.id)"><p>Bye Bye。</p></a>
+</div>
+	</body>
+</html>

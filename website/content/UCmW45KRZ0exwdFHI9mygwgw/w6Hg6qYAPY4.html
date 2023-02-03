@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱牛油果︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'w6Hg6qYAPY4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱牛油果︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:15.16" id="00:00:15.16" class="lt" onclick="jumptoTime(15, this.id)"><p>又到我們奇蹟奇處的時間了，今天有Ice陪我們一起聊聊天</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:23.16" id="00:00:23.16" class="lt" onclick="jumptoTime(23, this.id)"><p>我們今天做什麼?我已經看到好像很豐富</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:27.16" id="00:00:27.16" class="lt" onclick="jumptoTime(27, this.id)"><p>今天看到有粟米片，有牛油果，我們玩一點墨西哥的感覺</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.16" id="00:00:33.16" class="lt" onclick="jumptoTime(33, this.id)"><p>因為這個是…，Corn chips</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:37.16" id="00:00:37.16" class="lt" onclick="jumptoTime(37, this.id)"><p>是不是墨西哥的粟米片，很正的，不，做醬汁去蘸它更正</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.16" id="00:00:45.16" class="lt" onclick="jumptoTime(45, this.id)"><p>所以今天我們是專注做醬汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:48.16" id="00:00:48.16" class="lt" onclick="jumptoTime(48, this.id)"><p>沒錯，買回來的超級多防腐劑，一定好吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:53.16" id="00:00:53.16" class="lt" onclick="jumptoTime(53, this.id)"><p>原來食物也有分敏感和…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:56.16" id="00:00:56.16" class="lt" onclick="jumptoTime(56, this.id)"><p>當然，有些東西是很容易變顏色，譬如我們切了放在這裡，你夾幾個小時都會變色，是…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:5.16" id="00:01:5.16" class="lt" onclick="jumptoTime(65, this.id)"><p>但我留意到好像這四個都很熟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:9.16" id="00:01:9.16" class="lt" onclick="jumptoTime(69, this.id)"><p>做這個要用很熟的牛油果，其實差不多質地，軟的最好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:15.16" id="00:01:15.16" class="lt" onclick="jumptoTime(75, this.id)"><p>差不多軟的，當然不是軟的，是就力，我平時會丟掉它，因為吃牛油果會瘦，減肥，熟的就丟掉，現在可以用來做墨西哥粟米片的醬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:32.16" id="00:01:32.16" class="lt" onclick="jumptoTime(92, this.id)"><p>這個要你幫幫忙，你幫我壓，我就切材料，第一件事，我們先切牛油果，這樣就很簡單</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:45.16" id="00:01:45.16" class="lt" onclick="jumptoTime(105, this.id)"><p>在中間切開一半，這是很標準的切法</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:51.16" id="00:01:51.16" class="lt" onclick="jumptoTime(111, this.id)"><p>是Emoji的牛油果切法，我先拿湯匙，用湯匙畫一條毛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:59.16" id="00:01:59.16" class="lt" onclick="jumptoTime(119, this.id)"><p>我拿一盤東西舀進去，因為它夠熟，所以就可以這樣做，我嘗試學Jacky，先從天明角度學一遍，咦?</p></a>
+				<a href="#00:02:13.28" id="00:02:13.28" class="lt" onclick="jumptoTime(133, this.id)"><p>但我做不到凹凸不平的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:15.78" id="00:02:15.78" class="lt" onclick="jumptoTime(135, this.id)"><p>凹凸不平的通常是這樣的，這個就小小一點，轉一轉就凹凸不平了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:21.78" id="00:02:21.78" class="lt" onclick="jumptoTime(141, this.id)"><p>很有型啊Jay Yee，最重要是平手，你剛才那一刻突然之間，又很帥</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:32.78" id="00:02:32.78" class="lt" onclick="jumptoTime(152, this.id)"><p>你幫我，揮下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:34.78" id="00:02:34.78" class="lt" onclick="jumptoTime(154, this.id)"><p>OK</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:35.78" id="00:02:35.78" class="lt" onclick="jumptoTime(155, this.id)"><p>我開始切材料了，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:39.78" id="00:02:39.78" class="lt" onclick="jumptoTime(159, this.id)"><p>先換位置</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:41.78" id="00:02:41.78" class="lt" onclick="jumptoTime(161, this.id)"><p>你拿這個給我，你慢慢，弄爛它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:45.78" id="00:02:45.78" class="lt" onclick="jumptoTime(165, this.id)"><p>OK，融化了，是的，融化了，試另一個方法，就是把原隻牛油果，挖出來，這個步驟很容易，很容易，因為我平時自己，我想女生在家裡，減肥都是這樣，切了牛油果之後，就這樣把肉骨挖出來，所以這個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:6.78" id="00:03:6.78" class="lt" onclick="jumptoTime(186, this.id)"><p>有味道，所以我特意放這個菜，很適合女士吃，又適合小朋友吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:12.78" id="00:03:12.78" class="lt" onclick="jumptoTime(192, this.id)"><p>看到啦，切青檸檬會不會很酸</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:18.96" id="00:03:18.96" class="lt" onclick="jumptoTime(198, this.id)"><p>不會不會，它會剛剛平衡，當然不要放太多，但這個是很重要的材料，另外一個原因，牛油果一接觸空氣，它就會開始變黑，但我們用檸檬汁就可以保護它，切下去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:36.74" id="00:03:36.74" class="lt" onclick="jumptoTime(216, this.id)"><p>即是減慢它的氧化，沒錯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:42.74" id="00:03:42.74" class="lt" onclick="jumptoTime(222, this.id)"><p>加少少橄欖油就能夠保護它</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:46.94" id="00:03:46.94" class="lt" onclick="jumptoTime(226, this.id)"><p>油也是保護的東西，對</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:50.94" id="00:03:50.94" class="lt" onclick="jumptoTime(230, this.id)"><p>這樣就可以減少空氣，之後我們就放番茄醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:54.94" id="00:03:54.94" class="lt" onclick="jumptoTime(234, this.id)"><p>青檸檬味真的很清新，對，很健康，真的很健康，聞到很清新，我剛剛這個顏色已經好像外面買的醬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:6.54" id="00:04:6.54" class="lt" onclick="jumptoTime(246, this.id)"><p>那種顏色，對，放番茄醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:9.94" id="00:04:9.94" class="lt" onclick="jumptoTime(249, this.id)"><p>我知道這麼小，因為要這樣才</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:12.74" id="00:04:12.74" class="lt" onclick="jumptoTime(252, this.id)"><p>你壓下去也不怕，多汁不怕，拌在一起，最後我會放少少香菜，即是芫荽，盡力不要太多框，有少少不怕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:24.74" id="00:04:24.74" class="lt" onclick="jumptoTime(264, this.id)"><p>即是只放鹽不要那些</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:26.74" id="00:04:26.74" class="lt" onclick="jumptoTime(266, this.id)"><p>盡力要鹽不要太多框</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:29.74" id="00:04:29.74" class="lt" onclick="jumptoTime(269, this.id)"><p>你見到顏色已經立即，有些泰國的感覺</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:35.74" id="00:04:35.74" class="lt" onclick="jumptoTime(275, this.id)"><p>對，顏色很漂亮，見到都健康</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:38.74" id="00:04:38.74" class="lt" onclick="jumptoTime(278, this.id)"><p>有些泰國的感覺，但這個可不可以optional，因為我見有些人，有些人對芫荽不，爭好魚</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:49.74" id="00:04:49.74" class="lt" onclick="jumptoTime(289, this.id)"><p>可以不放的，但真的爭好魚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:51.74" id="00:04:51.74" class="lt" onclick="jumptoTime(291, this.id)"><p>有沒有機會我現在舀少少出來，可以，然後呢，這少少我們就不拌這個，慢一點，因為我們未調味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:0.74" id="00:05:0.74" class="lt" onclick="jumptoTime(300, this.id)"><p>我調味了我們才知道，我們想試下沒有和有的分別</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:4.74" id="00:05:4.74" class="lt" onclick="jumptoTime(304, this.id)"><p>對，有沒有機會可以這樣做，當然好，我們等一下就試下，我這個本身不吃芫荽的人，可以試下沒有和有芫荽的分別，大家可以，真的落手落腳做的時候，可以自己選擇</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:17.74" id="00:05:17.74" class="lt" onclick="jumptoTime(317, this.id)"><p>其實烹飪這東西，沒有說對沒有說錯，最重要是你可以配到自己口味，我覺得這樣就對了，我們就放少少這個，蕉米粉，這個正常是沒有的，但我自己就喜歡放的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:33.74" id="00:05:33.74" class="lt" onclick="jumptoTime(333, this.id)"><p>給大家看一下現在的樣子，ok啦，對吧</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:37.74" id="00:05:37.74" class="lt" onclick="jumptoTime(337, this.id)"><p>你不要放太多，你吃不到味道，你只是在後腦，在鼻子後面聞到少少味道，但吃下去就吃不到，因為是香味多些</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:49.74" id="00:05:49.74" class="lt" onclick="jumptoTime(349, this.id)"><p>對，少少黑椒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:53.74" id="00:05:53.74" class="lt" onclick="jumptoTime(353, this.id)"><p>字幕by索兰娅💕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:2.78" id="00:06:2.78" class="lt" onclick="jumptoTime(362, this.id)"><p>還有少許的辣椒，我喜歡辣的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:6.78" id="00:06:6.78" class="lt" onclick="jumptoTime(366, this.id)"><p>其實廚師也很忙，如果不是張子在旁邊，我一個人應該是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:12.78" id="00:06:12.78" class="lt" onclick="jumptoTime(372, this.id)"><p>會很忙，少許的辣椒，辣椒水，OK，不如試一下味，夠不夠酸，夠不夠鹹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:28.78" id="00:06:28.78" class="lt" onclick="jumptoTime(388, this.id)"><p>果然是，我覺得可以酸一點，我自己是喜歡，偏向吃酸的東西，鹹呢你覺得</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:42.78" id="00:06:42.78" class="lt" onclick="jumptoTime(402, this.id)"><p>鹹，又，試一下藍色，一直在，一個味道</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:52.78" id="00:06:52.78" class="lt" onclick="jumptoTime(412, this.id)"><p>你打得幾好，你聽到吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:0.78" id="00:07:0.78" class="lt" onclick="jumptoTime(420, this.id)"><p>我覺得OK，我覺得，是我喜歡的味道，因為它是偏酸的，但你要我說它是甜酸苦辣，我很難形容，因為它已經混合在一起，看看加了芫茜會不會不同，還要切碎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:20.78" id="00:07:20.78" class="lt" onclick="jumptoTime(440, this.id)"><p>粗粗地</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:22.78" id="00:07:22.78" class="lt" onclick="jumptoTime(442, this.id)"><p>原來這樣要粗粗地切，我平時吃的，三角形，粗粗地切，再低一個層次，芫茜，現在整件事，已經是更加泰式</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:38.78" id="00:07:38.78" class="lt" onclick="jumptoTime(458, this.id)"><p>其實墨西哥菜，都有很多芫茜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:42.78" id="00:07:42.78" class="lt" onclick="jumptoTime(462, this.id)"><p>都是香草</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:44.78" id="00:07:44.78" class="lt" onclick="jumptoTime(464, this.id)"><p>辣味菜都有很多，不只是泰國菜有芫茜，嗯，這樣可以嗎，可以了，大家看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:56.78" id="00:07:56.78" class="lt" onclick="jumptoTime(476, this.id)"><p>樣子</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:58.78" id="00:07:58.78" class="lt" onclick="jumptoTime(478, this.id)"><p>放進一個比較好的盤子，或者放一些番茄粒，芫茜，一定要等它閃亮亮就完成了，我們不再介紹了，馬上試味吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:23.74" id="00:08:23.74" class="lt" onclick="jumptoTime(503, this.id)"><p>很有成功感，因為大部份都是我做的，雖然…，不夠香，我先試有芫茜的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:35.14" id="00:08:35.14" class="lt" onclick="jumptoTime(515, this.id)"><p>去皮，加薯片，很棒，晚上和朋友喝酒，很完美</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:45.94" id="00:08:45.94" class="lt" onclick="jumptoTime(525, this.id)"><p>很…我先試一口，因為我剛才吃這個醬和加了薯片的醬，又差很多，因為加了薯片的鹹味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:0.54" id="00:09:0.54" class="lt" onclick="jumptoTime(540, this.id)"><p>還有薯片的脆，那種creamy口感</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:7.54" id="00:09:7.54" class="lt" onclick="jumptoTime(547, this.id)"><p>已經試完沒有芫茜和有芫茜的分別，就算你不吃芫茜也可以配這個，加了這個後，最主要是香了，我覺得香了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:18.54" id="00:09:18.54" class="lt" onclick="jumptoTime(558, this.id)"><p>不是很脆</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:19.54" id="00:09:19.54" class="lt" onclick="jumptoTime(559, this.id)"><p>不是芫茜味，整件事是香了，所以大家可以繼續保留這個芫茜，所有不喜歡吃芫茜的，我做的，你試，如果大家想知道更多新奇的菜式，又或者知道更多容易煮的西餐，記得繼續follow我們Jacky的頻道，記得CLSX是什麼嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:50.54" id="00:09:50.54" class="lt" onclick="jumptoTime(590, this.id)"><p>是Comment，Like，Subscribe和Share</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:54.54" id="00:09:54.54" class="lt" onclick="jumptoTime(594, this.id)"><p>好啊好啊，Jacky畢業了，開始看到了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:0.54" id="00:10:0.54" class="lt" onclick="jumptoTime(600, this.id)"><p>嘔了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:3.54" id="00:10:3.54" class="lt" onclick="jumptoTime(603, this.id)"><p>很夠油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:7.54" id="00:10:7.54" class="lt" onclick="jumptoTime(607, this.id)"><p>那…，下次見，再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

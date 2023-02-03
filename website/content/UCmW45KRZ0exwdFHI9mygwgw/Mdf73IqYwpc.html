@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱牛骨髓 ︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Mdf73IqYwpc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱牛骨髓 ︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>MING PAO CANADA CANADA IS MAO，MING PAO CANADA CANADA IS MING，Hello各位，歡迎大家收看奇蹟奇處，今天我們有Lista，Hello，今天我們會做一些很另類，很奇怪的產品，我們今天會做骨髓</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:28.67" id="00:00:28.67" class="lt" onclick="jumptoTime(28, this.id)"><p>我們是不是拿錯食材?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:30.99" id="00:00:30.99" class="lt" onclick="jumptoTime(30, this.id)"><p>都可以這樣說，因為這個一食兩用，我們先吃了，然後可以留給狗狗吃，因為狗不能任何骨頭都吃，例如豬骨或雞骨很容易碎，會有些尖，會刺到牠的腸胃，所以狗要很小心給牠甚麼骨頭吃，這些是最適合狗吃的，這些是牛骨，牛骨，我們叫Bone marrow</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:4.99" id="00:01:4.99" class="lt" onclick="jumptoTime(64, this.id)"><p>Bone marrow</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:6.39" id="00:01:6.39" class="lt" onclick="jumptoTime(66, this.id)"><p>即是骨髓，這個在歐洲以前是很高貴、很傳統、很好的食物，但今時今日，特別在香港，你真的很少會找到，如果你想吃骨髓，或者要來我們店舖，都要預訂，因為現在香港很少有，這些是另類菜，雖然它不健康，但很好吃，我們今天就示範一下，其實骨的質素是很重要的，你不可以隨便拿一些牛骨，我們通常會拿法國牛、Charolais beef。</p></a>
+				<a href="#00:01:44.15" id="00:01:44.15" class="lt" onclick="jumptoTime(104, this.id)"><p>或者意大利Piedmontese的牛，我們通常都會找一些吃草的牛，會比較適合</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:51.55" id="00:01:51.55" class="lt" onclick="jumptoTime(111, this.id)"><p>但骨會有甚麼不同?吃草的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:54.23" id="00:01:54.23" class="lt" onclick="jumptoTime(114, this.id)"><p>因為大部分，特別美國牛，平時牠們吃Corn，這個其實因為現在在美國種Corn，裡面有很多防腐劑，這些會入骨髓，反而我們現在選擇，譬如這些是法國牛，牠們是吃草的，所以骨髓自然會乾淨，沒有防腐劑、沒有化學物質在裡面</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:17.67" id="00:02:17.67" class="lt" onclick="jumptoTime(137, this.id)"><p>這樣都很講究，因為這條骨</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:20.19" id="00:02:20.19" class="lt" onclick="jumptoTime(140, this.id)"><p>對，要找一塊好骨，如果你想這樣吃，煮法很簡單，我們就這樣鹽胡椒就可以了，因為它本身已經很香，最後我們吃之前，會再放少許檸檬汁，讓它不會太油膩，不會太肥，這樣就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:38.79" id="00:02:38.79" class="lt" onclick="jumptoTime(158, this.id)"><p>這樣加在表面就可以了?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:40.55" id="00:02:40.55" class="lt" onclick="jumptoTime(160, this.id)"><p>對，就這樣加在表面就可以了，這個菜很簡單，如果你做給朋友吃的話，一定會說，嘩，很特別，我每次做這些，很多人都說，嘩，很棒，我們前陣子在電視台一個大節目，我們都有出食物給嘉賓，那些全部都是大明星、有錢人，他們一看到骨髓都很驚喜、很開心，這個菜不會失禮人的，OK，就是這麼簡單，已經完成了。</p></a>
+				<a href="#00:03:17.64" id="00:03:17.64" class="lt" onclick="jumptoTime(197, this.id)"><p>對，我們就焗吧，氣炸鍋要在200度，大約8分鐘就夠了，焗完之後，就留下骨頭，狗也不能吃太多鹽，對牠的身體不好，所以通常我們會用熱水灼一灼骨頭，這樣就可以給狗吃，他們很珍惜這些骨頭，我每次餵狗，牠們都會搶食，因為我想狗的DNA，牠們的祖先都是吃這類型的東西，喜歡吃骨頭，對，所以牠們一見到這些東西。</p></a>
+				<a href="#00:03:56.64" id="00:03:56.64" class="lt" onclick="jumptoTime(236, this.id)"><p>牠們的思想，即是instinct</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:59.64" id="00:03:59.64" class="lt" onclick="jumptoTime(239, this.id)"><p>很習慣，習性</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:2.64" id="00:04:2.64" class="lt" onclick="jumptoTime(242, this.id)"><p>我們要等大約8分鐘，我們就可以試味了，現在只剩下2分鐘，最後我們切檸檬，我們就可以上碟了，我想這個也夠了，我們可以拿出來看看，哇，好香，最後加上少許檸檬汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:41.98" id="00:04:41.98" class="lt" onclick="jumptoTime(281, this.id)"><p>這樣就很好吃了，很吸引，我們一起試試，我拿著它，你用這支，你用這支撕開，現在應該可以了，就是這樣，一塊塊，就是這樣吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:14.03" id="00:05:14.03" class="lt" onclick="jumptoTime(314, this.id)"><p>口感好像啫喱</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:16.03" id="00:05:16.03" class="lt" onclick="jumptoTime(316, this.id)"><p>對，有少許啫喱，很濃縮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:20.03" id="00:05:20.03" class="lt" onclick="jumptoTime(320, this.id)"><p>那種味道是甚麼呢?我猜不到，我以為沒有甚麼味道，原始味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:26.03" id="00:05:26.03" class="lt" onclick="jumptoTime(326, this.id)"><p>即是它有少許肥膏，但其實骨髓裏面，都有很多營養，譬如你煎牛扒，配一塊骨髓，一定立即好看很多</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:38.03" id="00:05:38.03" class="lt" onclick="jumptoTime(338, this.id)"><p>豪華很多，我覺得他可能搶了牛扒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:42.03" id="00:05:42.03" class="lt" onclick="jumptoTime(342, this.id)"><p>這個很多時候我都會做頭盤，反而做頭盤</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:46.03" id="00:05:46.03" class="lt" onclick="jumptoTime(346, this.id)"><p>我們今集的節目又是這麼多，如果想知更多的菜式，可以來我們的頻道，看我們的影片和，CLSS</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:56.03" id="00:05:56.03" class="lt" onclick="jumptoTime(356, this.id)"><p>今次我記得了，終於第一次，是甚麼意思呢?</p></a>
+				<a href="#00:06:2.03" id="00:06:2.03" class="lt" onclick="jumptoTime(362, this.id)"><p>Comment， Like， Share和Subscribe</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:4.03" id="00:06:4.03" class="lt" onclick="jumptoTime(364, this.id)"><p>好了，就這樣，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

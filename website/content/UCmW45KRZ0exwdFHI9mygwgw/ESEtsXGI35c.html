@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱龍蝦米多︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ESEtsXGI35c',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱龍蝦米多︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:15.77" id="00:00:15.77" class="lt" onclick="jumptoTime(15, this.id)"><p>歡迎大家嚟睇奇蹟奇廚，今日呢我就想介紹一個好靚同埋我好鍾意嘅產品，就係呢個加拿大嘅龍蝦，佢就已經幫你改好曬，已經放咗料呀，挑曬腸呀，同埋呢已經幫你起埋個，蜆出嚟嘅，咁你呢每一份呢就已經起咗邊咁樣㗎啦，就用一個好簡單嘅方法，一個簡化嘅方法呢，做一個米多龍蝦啦，呢個係一個好傳統嘅西餐嚟嘅，同埋亦都會好好食嘅。</p></a>
+				<a href="#00:00:48.33" id="00:00:48.33" class="lt" onclick="jumptoTime(48, this.id)"><p>咁呢我哋第一個步驟呢，係做咩呢，就刷肉啦，咁你見到呢個產品呢好好嘅，你見到佢嘅蜆呢，都已經係落埋去㗎啦，咁呢我哋刷埋條尾出嚟，但係就要小心啲盡力唔好整爛個殼，因為呢我哋個殼呢，係我哋留返呢，嚟做一個，罐去裝住佢嘅，咁你見到我哋有咁樣個殼呢，就留返佢嘅，咁你見到呢係好容易整嘅，如果你買一隻生嘅龍蝦返屋企。</p></a>
+				<a href="#00:01:16.89" id="00:01:16.89" class="lt" onclick="jumptoTime(76, this.id)"><p>好多手工呀又要自己刷咗佢呀，咁唔係個個都鍾意刷一個動物㗎嘛，我自己都唔係咁想囉，嗱咁我哋呢就有呢啲龍蝦殼啦，咁呢你都見到我已經，擺咗個氣炸鍋喺我隔離，咁呢我就求求其其呢，撳啲殼落去呢，去烘返乾佢嘅，大約，160度啦，4分鐘，咁就得㗎啦，我哋唔想整窿個殼，我哋係淨係想佢乾身返啫，咁呢我哋呢啲龍蝦肉呢。</p></a>
+				<a href="#00:01:48.69" id="00:01:48.69" class="lt" onclick="jumptoTime(108, this.id)"><p>我哋就可以改咗佢啦，咁我哋就改一啲，Bite Size，即係啱啱，可以放落個口嘅Size啦，咁你見到係淡淡肉嘅，咁呢我哋啲龍蝦肉呢，我哋就要醃一醃啦，我哋呢就會放少少嘅，青檸啦，或者檸檬汁，少少嘅胡椒，同埋少少鹽嘅，咁我哋撈一撈佢，我哋另一個材料呢就係呢個，Mushroom嘅，咁你買普通個啡菇亦都得啦。</p></a>
+				<a href="#00:02:23.33" id="00:02:23.33" class="lt" onclick="jumptoTime(143, this.id)"><p>但係我哋今日啱啱咁橋個，超市呢就冇，細啡菇我哋就用大啡菇啦，冇所謂嘅呢樣嘢，咁啲菇呢我哋都切到細細粒嘅，第一件事就慢慢煎咗啲菇啦，咁我哋嘅目標呢係想煮走曬啲水份，一個菇呢係超過八成係水份嘅，所以如果你唔放咗啲水唔煮咗啲水出嚟呢，個汁呢之後會變得好稀嘅，所以我哋而家呢就索返乾啲菇先，之後呢我哋呢就切埋啲乾蔥。</p></a>
+				<a href="#00:03:1.74" id="00:03:1.74" class="lt" onclick="jumptoTime(181, this.id)"><p>等啲蘑菇嘅水出咗嚟呢我哋就可以加埋落去，咁呢呢個我都話過呢係一個簡化版嘅，因為我哋做一個傳統嘅龍蝦米多呢，係要用好多好多唔同嘅equipment，即係譬如我哋又要炸爐呀我哋又要曬爐呀，咁好多屋企呢係冇呢樣嘢嘅，所以我哋就簡化件事嘅，咁你見到啲菇呢都開始慢慢出水啦，咁我哋自己炒到佢大約兩三分鐘就得㗎啦。</p></a>
+				<a href="#00:03:31.70" id="00:03:31.70" class="lt" onclick="jumptoTime(211, this.id)"><p>佢縮到大約一半嘅size呢，咁你就知道大約啲水都出曬㗎啦，咁呢我哋就可以放埋一邊啦，遲啲所以我再用返，咁而家呢我哋就要做一個，Béchamel 汁啦，咁呢個Béchamel汁呢係好多西餐同埋喺西餐嚟講，一個好重要嘅材料嚟嘅，Béchamel sauce 或者中文呢我哋叫做一個面撈嘅，咁呢個面撈呢係會有咩材料呢。</p></a>
+				<a href="#00:03:59.38" id="00:03:59.38" class="lt" onclick="jumptoTime(239, this.id)"><p>牛油 然之後呢就係麵粉，扣落啲牛油嗰度，如果佢慢慢開始上少少顏色呢，你就離火，然之後呢就加少少嘅牛奶啦，咁呢個呢就好似中式咁樣打芡咁樣嘅，呢個呢就令到個汁會比較濃稠啲啦，你見到攪勻呢就變咗好似一塊麵粉咁嘅，但係呢我哋就想佢係好似有個汁咁嘅，好了，你見到現在汁開始結了，很滑了。</p></a>
+				<a href="#00:04:45.66" id="00:04:45.66" class="lt" onclick="jumptoTime(285, this.id)"><p>麵粉都混合了，我們就有一個，很漂亮的汁底，我們有這個汁底，就加些蘑菇，加剛才切好的乾蔥，和龍蝦，都可以混合，用小火煮到一齊就可以了，因為我們完全未調味，所以我們利用這個機會調味，加少許鹽和胡椒，加少許芥辣，半茶匙都足夠，調出味道，拌勻後就可以放一旁，如果龍蝦未熟也不要緊，因為還有一個步驟就是要放入氣炸鍋，這塊東西就可以放一旁。</p></a>
+				<a href="#00:05:53.11" id="00:05:53.11" class="lt" onclick="jumptoTime(353, this.id)"><p>我們先看看龍蝦如何，龍蝦殼已經乾了，現在就把龍蝦匯入焗爐，所以要把龍蝦切成小塊才放入焗爐，否則很難放入焗爐，把龍蝦匯入焗爐，如果是派對的話，這些可以預先準備，預先做好這一部分，等朋友來的時候，只需要焗，不用整個時間都在廚房，沒有時間玩，我們匯了第一個，再匯第二個，最後的肉也放進去，不要浪費。</p></a>
+				<a href="#00:06:43.19" id="00:06:43.19" class="lt" onclick="jumptoTime(403, this.id)"><p>OK，最後一個步驟，我們再加少許芝士粉，或者芝士片，最好用一隻Parmesan，或者用一隻Padano的芝士，味道最配合，隨便鋪上少許芝士，然後就可以放入氣炸鍋，大約180度，大約五分鐘就完成了，我們現在等一等五分鐘，完成了 剛剛完成了，先打開來看看，如果你看到焗到芝士是黃金的，就已經知道完成了。</p></a>
+				<a href="#00:07:49.11" id="00:07:49.11" class="lt" onclick="jumptoTime(469, this.id)"><p>這個就是簡化版的龍蝦火鍋。</p></a>
+</div>
+	</body>
+</html>

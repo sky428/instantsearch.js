@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>祈積奇廚︱日本蛤蜊意大利麵︱簡易食譜︱品味輕食</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vrS4E5mtCpQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>祈積奇廚︱日本蛤蜊意大利麵︱簡易食譜︱品味輕食</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:14.81" id="00:00:14.81" class="lt" onclick="jumptoTime(14, this.id)"><p>又到我們奇蹟團主的時間，今天Ice又在這裏，跟我們一起聊天</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:00:23.77" id="00:00:23.77" class="lt" onclick="jumptoTime(23, this.id)"><p>這次我又來搗亂，但我剛剛看到這東西，我已經很想問</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:32.53" id="00:00:32.53" class="lt" onclick="jumptoTime(32, this.id)"><p>這個我們做廚師都覺得是一流的產品，日本的蜆，但最重要是加上蜆汁，Clam juice就是煮蜆的菜，Clam juice就是它的汁，才是最重要的精華，還有這些是去沙的，所以一開就可以即用，日本真的做到一些很方便的產品，又高質素，但很划算</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:00:59.41" id="00:00:59.41" class="lt" onclick="jumptoTime(59, this.id)"><p>大家看看裏面，看到水在流動嗎，但那些不是水，就是你剛才說的蜆汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:6.21" id="00:01:6.21" class="lt" onclick="jumptoTime(66, this.id)"><p>蜆汁，很淺的蜆汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:01:8.81" id="00:01:8.81" class="lt" onclick="jumptoTime(68, this.id)"><p>因為我平時自己刮，刮完蜆就放在水裏，讓它完全吐出來，這些已經完全吐出來，那些蜆汁是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:19.21" id="00:01:19.21" class="lt" onclick="jumptoTime(79, this.id)"><p>由蜆自己的肉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:01:21.61" id="00:01:21.61" class="lt" onclick="jumptoTime(81, this.id)"><p>擠出來的，沒錯，這個一會兒就試一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:27.21" id="00:01:27.21" class="lt" onclick="jumptoTime(87, this.id)"><p>我們有一個這麼漂亮的蜆，我就打算做一個，意大利的spaghetti，Vongole，即是蜆意大利粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:01:34.01" id="00:01:34.01" class="lt" onclick="jumptoTime(94, this.id)"><p>剛才那個是甚麼文</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:35.41" id="00:01:35.41" class="lt" onclick="jumptoTime(95, this.id)"><p>Vongole是意大利話，Vongole，是 這是其中一個我最喜歡的意大利粉，OK，用蜆，我們就用spaghetti，最好用spaghetti，每一個意大利粉都有最適合的汁，你說做一個蜆汁，我就覺得spaghetti是最適合的，我們有兩種鹽，我們有食鹽，落味的鹽，然後我們有意大利的海鹽，這些很粗粒的。</p></a>
+				<a href="#00:02:1.21" id="00:02:1.21" class="lt" onclick="jumptoTime(121, this.id)"><p>這些就是用來煲意大利粉的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:2.81" id="00:02:2.81" class="lt" onclick="jumptoTime(122, this.id)"><p>這些是意大利的海鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:3.81" id="00:02:3.81" class="lt" onclick="jumptoTime(123, this.id)"><p>對 意大利的海鹽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:5.01" id="00:02:5.01" class="lt" onclick="jumptoTime(125, this.id)"><p>和日本會不會，因為日本海鹽好像都很出名</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:8.61" id="00:02:8.61" class="lt" onclick="jumptoTime(128, this.id)"><p>都差不多，為甚麼用這種鹽來煲意大利粉，因為鹹味就不會那麼重</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:14.21" id="00:02:14.21" class="lt" onclick="jumptoTime(134, this.id)"><p>哦，為甚麼煲意大利粉要落鹽，因為我平時就不用這樣水煮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:18.61" id="00:02:18.61" class="lt" onclick="jumptoTime(138, this.id)"><p>啊 不行，意大利粉都有它自己的味道，啊，這個步驟很重要</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:25.81" id="00:02:25.81" class="lt" onclick="jumptoTime(145, this.id)"><p>對我來說就好像白飯，不同的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:30.21" id="00:02:30.21" class="lt" onclick="jumptoTime(150, this.id)"><p>我們味道就有蒜頭，我們有少許意大利花生，辣椒和胡椒，和少許白酒，如果選擇白酒的話，選擇一種比較乾的，就會最適合，嘩，白酒就會帶到那種甜味，落到意大利粉，你就不想有些很乾的，就好像這款意大利粉，很適合</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:02:51.01" id="00:02:51.01" class="lt" onclick="jumptoTime(171, this.id)"><p>他是說要乾一點，這裏簡直是乾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:55.01" id="00:02:55.01" class="lt" onclick="jumptoTime(175, this.id)"><p>因為意大利粉通常都是比較硬，所以就很適合，好，我們先做一些準備功夫，最重要是要切蒜頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:6.01" id="00:03:6.01" class="lt" onclick="jumptoTime(186, this.id)"><p>切蒜頭，蒜頭是用來爆香它的汁的味道，是的，但是要煎的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:14.46" id="00:03:14.46" class="lt" onclick="jumptoTime(194, this.id)"><p>還有要去除一些腥味，最後海鮮是有少許腥味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:03:20.86" id="00:03:20.86" class="lt" onclick="jumptoTime(200, this.id)"><p>即使怎樣處理也好，它也會有少許，少許，這個應該大家平時也做得到，包括我也做得到，這個蒜頭的程序</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:33.26" id="00:03:33.26" class="lt" onclick="jumptoTime(213, this.id)"><p>用刀，第一件事就是要切蒜頭，我們希望切得很薄</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:03:39.66" id="00:03:39.66" class="lt" onclick="jumptoTime(219, this.id)"><p>這把刀是調轉了拿還是怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:43.06" id="00:03:43.06" class="lt" onclick="jumptoTime(223, this.id)"><p>不是的，這是用來切東西的，所以它有少許弧度</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:47.66" id="00:03:47.66" class="lt" onclick="jumptoTime(227, this.id)"><p>哦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:49.06" id="00:03:49.06" class="lt" onclick="jumptoTime(229, this.id)"><p>但是無所謂的，用一把小刀就可以了，我們希望切得很均勻和薄，是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:03:56.86" id="00:03:56.86" class="lt" onclick="jumptoTime(236, this.id)"><p>我需要先把鍋子熱好嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:59.26" id="00:03:59.26" class="lt" onclick="jumptoTime(239, this.id)"><p>熱鍋也行，你幫我看看水滾了沒有</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:04:2.06" id="00:04:2.06" class="lt" onclick="jumptoTime(242, this.id)"><p>其實我們剛才已經開始煮水了，已經有泡泡在了，應該差不多滾了，已經在起水的泡泡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:13.66" id="00:04:13.66" class="lt" onclick="jumptoTime(253, this.id)"><p>好了，我們第一個步驟就是先爆香蒜頭，不要太大火，因為我們不想蒜頭焦，嗯，我們想它軟，當然隔離菜</p></a>
+				<a href="#00:04:28.06" id="00:04:28.06" class="lt" onclick="jumptoTime(268, this.id)"><p>就要放很多橄欖油，南方的菜，所以一定要放橄欖油，多一點也不怕</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:04:37.26" id="00:04:37.26" class="lt" onclick="jumptoTime(277, this.id)"><p>如果不是橄欖油，通常是，如果是北方的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:41.86" id="00:04:41.86" class="lt" onclick="jumptoTime(281, this.id)"><p>因為北方就近德國，近意大利，近瑞士，就多很多牛油，很多忌廉，就像傳統的西餐，譬如意大利飯，這些就是北方的菜，這些意大利飯就是南方的菜</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:04:55.06" id="00:04:55.06" class="lt" onclick="jumptoTime(295, this.id)"><p>我感覺意大利飯的菜式，經常都很膩，因為他們的菜式很膩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:0.86" id="00:05:0.86" class="lt" onclick="jumptoTime(300, this.id)"><p>所有東西都很膩，我年輕時就很喜歡吃，但現在不知道為甚麼老了，一看到這麼膩的東西，我看到都害怕</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:9.06" id="00:05:9.06" class="lt" onclick="jumptoTime(309, this.id)"><p>已經不開胃了，我純粹是單純女士，害怕的，因為太膩，一看就覺得很肥</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:18.46" id="00:05:18.46" class="lt" onclick="jumptoTime(318, this.id)"><p>我們就用小火，先爆香，還有煮軟它，對 煮軟它，但我們又不想它焦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:27.68" id="00:05:27.68" class="lt" onclick="jumptoTime(327, this.id)"><p>deutschen，modified，wenn，toutes，我們不想它變得太苦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:31.85" id="00:05:31.85" class="lt" onclick="jumptoTime(331, this.id)"><p>因為蜆本身有些很細膩的材料，所以我們要很小心，開始煮了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:40.49" id="00:05:40.49" class="lt" onclick="jumptoTime(340, this.id)"><p>這個火候要處理得很好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:45.73" id="00:05:45.73" class="lt" onclick="jumptoTime(345, this.id)"><p>不要太大火</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:05:47.73" id="00:05:47.73" class="lt" onclick="jumptoTime(347, this.id)"><p>我看到它開始變啡色，所以要開始控制多一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:05:58.61" id="00:05:58.61" class="lt" onclick="jumptoTime(358, this.id)"><p>現在可以關火了，讓它慢慢熬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:5.61" id="00:06:5.61" class="lt" onclick="jumptoTime(365, this.id)"><p>在同一時間我們有什麼可以準備嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:9.61" id="00:06:9.61" class="lt" onclick="jumptoTime(369, this.id)"><p>可以準備這個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:12.61" id="00:06:12.61" class="lt" onclick="jumptoTime(372, this.id)"><p>要打開它，要小心 因為重點在蜆汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:19.61" id="00:06:19.61" class="lt" onclick="jumptoTime(379, this.id)"><p>不要浪費，正常來說這些有很多沙，但因為這個已經處理了，所以很少就可以即用，準備好 等水滾，煮意粉的時候，同一時間開始煮蜆，因為時間要配合得很好，因為意粉水對意粉很重要</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:06:48.61" id="00:06:48.61" class="lt" onclick="jumptoTime(408, this.id)"><p>意粉水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:50.61" id="00:06:50.61" class="lt" onclick="jumptoTime(410, this.id)"><p>好像打蜆一樣，因為意粉有些澱粉保護，所以煮的時候會加些水，就好像中菜打蜆一樣，加少許海鹽</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:12.61" id="00:07:12.61" class="lt" onclick="jumptoTime(432, this.id)"><p>等它溶掉差不多，等水滾就可以，份量大約每一位</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:23.61" id="00:07:23.61" class="lt" onclick="jumptoTime(443, this.id)"><p>大約吃這麼多意粉，一個五毫子的尺寸，一個五毫子的磚，一個人的份量，就可以入手，可以多一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:38.81" id="00:07:38.81" class="lt" onclick="jumptoTime(458, this.id)"><p>我們可以做多少</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:39.81" id="00:07:39.81" class="lt" onclick="jumptoTime(459, this.id)"><p>這裡可以做兩位，我想豐富一點，這樣就大約一位，大約5毫米的大小，或者多兩條</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:49.81" id="00:07:49.81" class="lt" onclick="jumptoTime(469, this.id)"><p>這些是不能壓稱的，多兩三條</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:07:53.81" id="00:07:53.81" class="lt" onclick="jumptoTime(473, this.id)"><p>這樣就入位</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:07:55.81" id="00:07:55.81" class="lt" onclick="jumptoTime(475, this.id)"><p>好，這些簡單我可以做到，好 這是，女士的一位，我們就用這麼多，OK，還有少少</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:13.81" id="00:08:13.81" class="lt" onclick="jumptoTime(493, this.id)"><p>要等到水滾，才放水</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:08:17.81" id="00:08:17.81" class="lt" onclick="jumptoTime(497, this.id)"><p>因為現在是，有少少泡泡，在彈上來，要等多一會，它是熟了但未滾，我們要等到滾了才可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:29.81" id="00:08:29.81" class="lt" onclick="jumptoTime(509, this.id)"><p>等到滾了，我們可以慢慢準備醬汁，開小火</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:08:35.81" id="00:08:35.81" class="lt" onclick="jumptoTime(515, this.id)"><p>蜆不需要放嗎，我們用了蜆汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:39.81" id="00:08:39.81" class="lt" onclick="jumptoTime(519, this.id)"><p>但蜆不需要放，因為煮久了會變軟，我們差不多吃完才放，但我們第一件事，要先調味，現在蒜頭軟了，開始上色了，我們要放酒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:08:55.81" id="00:08:55.81" class="lt" onclick="jumptoTime(535, this.id)"><p>停止煮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:57.81" id="00:08:57.81" class="lt" onclick="jumptoTime(537, this.id)"><p>放酒會阻止它們，放低火，蒜頭會燶，原來酒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:5.81" id="00:09:5.81" class="lt" onclick="jumptoTime(545, this.id)"><p>還有功用，我以為只用蜆，清潔鍋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:11.81" id="00:09:11.81" class="lt" onclick="jumptoTime(551, this.id)"><p>因為把鍋子清潔好，第一件事，煮酒精，聞到很高秘的，酒精味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:21.81" id="00:09:21.81" class="lt" onclick="jumptoTime(561, this.id)"><p>嘩 出來了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:23.81" id="00:09:23.81" class="lt" onclick="jumptoTime(563, this.id)"><p>酒精出來了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:25.81" id="00:09:25.81" class="lt" onclick="jumptoTime(565, this.id)"><p>煮酒精</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:27.81" id="00:09:27.81" class="lt" onclick="jumptoTime(567, this.id)"><p>我們不要酒精味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:29.81" id="00:09:29.81" class="lt" onclick="jumptoTime(569, this.id)"><p>純粹用它清潔，和降溫，然後就可以，走</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:37.81" id="00:09:37.81" class="lt" onclick="jumptoTime(577, this.id)"><p>酒精味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:39.81" id="00:09:39.81" class="lt" onclick="jumptoTime(579, this.id)"><p>蒜頭也有</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:41.81" id="00:09:41.81" class="lt" onclick="jumptoTime(581, this.id)"><p>精華海洋，不要加鹽，因為這款精華本身都很有味，現在你看到很碎，我們要慢慢把它剪低，如果可以剪低大約20-30%，就最好了，那個稠度是嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:09:59.08" id="00:09:59.08" class="lt" onclick="jumptoTime(599, this.id)"><p>是的，如果不是的話，就像湯麵</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:7.08" id="00:10:7.08" class="lt" onclick="jumptoTime(607, this.id)"><p>像茶餐廳的通粉，我們就不想這樣，我們可以隨便加少許味，但是鹽就不要加，因為真的是試味，最後一刻才試味，胡椒就可以先加了，我試了一口，我試了一口，現在你全都很辣，所以我都會給通手，同時我都覺得好多中國人都鍾意食辣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:30.45" id="00:10:30.45" class="lt" onclick="jumptoTime(630, this.id)"><p>咁你係點樣可以令到佢濃稠啲?，就真係只可以加</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:34.45" id="00:10:34.45" class="lt" onclick="jumptoTime(634, this.id)"><p>意粉水就令到佢濃稠，打芡吖嘛，所以點解個時間點係好重要，好 咁我地可以落芡啦，咁通常意大利粉就係大約八分鐘落，加蛋白四十八分就有意大利粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:10:50.45" id="00:10:50.45" class="lt" onclick="jumptoTime(650, this.id)"><p>好 全部落去，有冇話要，意大利粉有冇啲特別嘅整法嘅?</p></a>
+				<a href="#00:10:55.45" id="00:10:55.45" class="lt" onclick="jumptoTime(655, this.id)"><p>定係真係我地就咁落就已經可以?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:10:58.45" id="00:10:58.45" class="lt" onclick="jumptoTime(658, this.id)"><p>多水，即係你要有啲空間，畀佢郁下嘅，水要滾，同埋啲鹽，重手啲</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:6.45" id="00:11:6.45" class="lt" onclick="jumptoTime(666, this.id)"><p>重手啲，我見呢有啲人係會落油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:9.45" id="00:11:9.45" class="lt" onclick="jumptoTime(669, this.id)"><p>佢地落油個意思係諗住，唔會有咁多泡，但其實唔係大作用嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:15.45" id="00:11:15.45" class="lt" onclick="jumptoTime(675, this.id)"><p>有泡係有唔好嘅咩?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:18.45" id="00:11:18.45" class="lt" onclick="jumptoTime(678, this.id)"><p>佢會流曬出嚟呀嗰啲泡，哦 明白明白，但係好少有呢個問題出現，落油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:25.45" id="00:11:25.45" class="lt" onclick="jumptoTime(685, this.id)"><p>原來落油純粹係唔想整污糟，我以為落油係令到佢唔知點樣入味呀，原來係，即係咁樣嘅，同埋呢啲意大利粉呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:36.45" id="00:11:36.45" class="lt" onclick="jumptoTime(696, this.id)"><p>通常意大利粉佢地好密嘅，所以都唔係咁容易入到味，所以點解啲水要重手啲，就因為呢個原因</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:44.45" id="00:11:44.45" class="lt" onclick="jumptoTime(704, this.id)"><p>你選擇嘅呢個意大利粉，係咪其實普通超市買嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:48.45" id="00:11:48.45" class="lt" onclick="jumptoTime(708, this.id)"><p>嗰樣都可以揀?，係呀係呀，Of course 買返呢隻意大利嘅牌子，哈哈哈哈</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:11:54.45" id="00:11:54.45" class="lt" onclick="jumptoTime(714, this.id)"><p>即係爭啲嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:56.45" id="00:11:56.45" class="lt" onclick="jumptoTime(716, this.id)"><p>即係個麵粉都好重要嘅，係 明白，通常你點睇啲Pasta好唔好呢，越白嘅呢就越好嘅，即係通常有啲好名貴，你去嗰啲靚嘅超市，直情係白色嘅，嗰啲就最靚係嗰啲，咁啲偏黃嘅呢就真係超級市場嘅，嗰隻已經</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:16.45" id="00:12:16.45" class="lt" onclick="jumptoTime(736, this.id)"><p>即係大佬嘅意粉啦，正常嘅意粉嗰隻就係再</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:12:20.45" id="00:12:20.45" class="lt" onclick="jumptoTime(740, this.id)"><p>越白嘅呢就越越名貴嘅，但係佢哋</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:24.45" id="00:12:24.45" class="lt" onclick="jumptoTime(744, this.id)"><p>係個麵粉用啲唔同嘅，其實係麵粉同水嘅啫</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:12:28.45" id="00:12:28.45" class="lt" onclick="jumptoTime(748, this.id)"><p>Semolina 麵粉同水，但係個質素個分別呢，係佢哋點樣烘乾，啲平啲嘅Pasta呢，即係超級市場牌子呢佢哋烘嘅速度，好快嘅，所以佢嘅牙齒係咁，白色嗰啲呢就用好長嘅時間，慢慢用自然嘅空氣去，去烘返乾佢嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:12:48.45" id="00:12:48.45" class="lt" onclick="jumptoTime(768, this.id)"><p>質素就靚啲，即係好似嗰啲風乾咁嘅鹹魚，講緊嗰樣嘢，好犀利喎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:12:56.45" id="00:12:56.45" class="lt" onclick="jumptoTime(776, this.id)"><p>咁而家呢我哋啲Pasta都煮緊，而家都煮咗幾分鐘啦仲差五分鐘，咁我哋可以落熱啦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:2.45" id="00:13:2.45" class="lt" onclick="jumptoTime(782, this.id)"><p>佢哋終於都，要落場啦，仲有少少蜆汁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:13:8.45" id="00:13:8.45" class="lt" onclick="jumptoTime(788, this.id)"><p>倒到出嚟，咁就出嚟啦好易就出嚟啦，炒一炒佢，呢個時候呢我就會順便，啄埋少少嘅意大利番茜落去啦，等佢有少少顏色狀</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:23.93" id="00:13:23.93" class="lt" onclick="jumptoTime(803, this.id)"><p>意大利番茜係香草嚟㗎嘛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:13:25.93" id="00:13:25.93" class="lt" onclick="jumptoTime(805, this.id)"><p>係呀係呀冇乜味嘅，其實都係點樣調顏色嘅啫，最主要都係，煮完間大約三分鐘嘅，咁喺呢個時候呢啲麵呢都可以出曬啲麵粉啦，咁我哋可以攞少少呢隻意粉水呢，再攞，咁呢啲水都應該有好多鹽㗎嘛，所以呢點解我哋唔攞呢就係呢個原因啦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:13:49.93" id="00:13:49.93" class="lt" onclick="jumptoTime(829, this.id)"><p>哦因為原來意粉水就係咁樣嚟㗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:13:52.93" id="00:13:52.93" class="lt" onclick="jumptoTime(832, this.id)"><p>我一路都諗緊意粉水，即係點解你去意大利食Pasta，或者你去啲靚嘅意大利餐廳，啲Pasta咁好食，就係呢個原因，個Pasta水，人哋唔明嘅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:14:3.93" id="00:14:3.93" class="lt" onclick="jumptoTime(843, this.id)"><p>你煲完個意粉水，倒呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:14:5.93" id="00:14:5.93" class="lt" onclick="jumptoTime(845, this.id)"><p>Sorry 呢啲係錯嘅，呢個係好重要嘅</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:14:9.93" id="00:14:9.93" class="lt" onclick="jumptoTime(849, this.id)"><p>倒咗啲精華去，原來就係呢啲位呀，細節呀記住呀，哦而家開始就收緊啦，即係等佢結啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:14:24.93" id="00:14:24.93" class="lt" onclick="jumptoTime(864, this.id)"><p>等佢結開始結，咁到時我哋攞埋啲Pasta落去再拋幾下呢，佢就會慢慢結㗎啦，呢個就可以放心</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:32.93" id="00:14:32.93" class="lt" onclick="jumptoTime(872, this.id)"><p>跟住攞埋少少呢啲意粉水，咁就睇下個顏色開始靚啦，咁如果你真係好鍾意食辣嘅，你可以放少少新鮮辣椒落去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:14:41.93" id="00:14:41.93" class="lt" onclick="jumptoTime(881, this.id)"><p>咁又可以加啲紅色落去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:14:45.93" id="00:14:45.93" class="lt" onclick="jumptoTime(885, this.id)"><p>好啦個Pasta都差唔多啦，我得番一兩分鐘啦，咁我都照攞出嚟啦，因為我會係呢個sauce入面煮，再煮，所以呢就咁直接咁呀，唔使話隔嘅，因為我要呢啲水，我唔要個Pasta好乾身</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:15:1.93" id="00:15:1.93" class="lt" onclick="jumptoTime(901, this.id)"><p>因為有人會話過冷河會令到佢彈牙</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:15:6.93" id="00:15:6.93" class="lt" onclick="jumptoTime(906, this.id)"><p>某一啲面係要嘅但係意大利粉就唔需要嘅，任何意大利面都唔會有呢樣嘢，你個意大利廚子都你咁做，趕你走</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:15:14.93" id="00:15:14.93" class="lt" onclick="jumptoTime(914, this.id)"><p>佢直接哭出嚟啲</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:15:20.93" id="00:15:20.93" class="lt" onclick="jumptoTime(920, this.id)"><p>咁而家就係要拋嘅時候啦，贏返啲位先，我地影佢，一路好見㗎啦，很稠的醬，其實很水的，容易消化和吞，不要太乾</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:15:58.38" id="00:15:58.38" class="lt" onclick="jumptoTime(958, this.id)"><p>這是香港人固有的想法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:3.74" id="00:16:3.74" class="lt" onclick="jumptoTime(963, this.id)"><p>我們不是吃炒麵，這個不是豉油王炒麵，另外一回事，有少許水和汁</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:16:11.26" id="00:16:11.26" class="lt" onclick="jumptoTime(971, this.id)"><p>其實是不正宗的香港方法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:14.42" id="00:16:14.42" class="lt" onclick="jumptoTime(974, this.id)"><p>我覺得有點乾，我再加少許水，我就是想它有少許水</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:16:20.66" id="00:16:20.66" class="lt" onclick="jumptoTime(980, this.id)"><p>火力其實也會有很大影響，不過我看你電磁爐也夠，大家在家裏做都應該可以</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:32.54" id="00:16:32.54" class="lt" onclick="jumptoTime(992, this.id)"><p>意粉我們預先做了一兩分鐘，煮了兩分鐘，OK，剛剛好，因為意大利菜的硬度很緊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:16:46.83" id="00:16:46.83" class="lt" onclick="jumptoTime(1006, this.id)"><p>嗯，煮得太稠的話，他們說是失敗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:16:56.11" id="00:16:56.11" class="lt" onclick="jumptoTime(1016, this.id)"><p>他們會把肉拿出來，他們是要咬硬的，就是要有一點點硬，我已經是走過中間位，我沒有意大利的那麼硬，但我不會煮到很硬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:9.31" id="00:17:9.31" class="lt" onclick="jumptoTime(1029, this.id)"><p>保留原有特色之餘，也可以遷就我們的口味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:17:13.99" id="00:17:13.99" class="lt" onclick="jumptoTime(1033, this.id)"><p>其實這樣就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:15.19" id="00:17:15.19" class="lt" onclick="jumptoTime(1035, this.id)"><p>因為我喜歡吃爽麵，我連煮公仔麵也是，我浸一下，直到它散開就可以拿上來，所以剛剛的質感是非常不錯的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:17:26.95" id="00:17:26.95" class="lt" onclick="jumptoTime(1046, this.id)"><p>完成，我們可以拿上碟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:17:30.23" id="00:17:30.23" class="lt" onclick="jumptoTime(1050, this.id)"><p>我們可不可以直接，這個也挺漂亮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:33.47" id="00:17:33.47" class="lt" onclick="jumptoTime(1053, this.id)"><p>嘿，大家看不看到那一下手勢，扭下去的手勢就是這些位置</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:17:54.80" id="00:17:54.80" class="lt" onclick="jumptoTime(1074, this.id)"><p>issimo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:10.56" id="00:18:10.56" class="lt" onclick="jumptoTime(1090, this.id)"><p>Loy cord Celebrostographics，mund sharply，Mail，Mär oppressed，Allen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:18:19.24" id="00:18:19.24" class="lt" onclick="jumptoTime(1099, this.id)"><p>aren tambى</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:17.56" id="00:18:17.56" class="lt" onclick="jumptoTime(1097, this.id)"><p>Ran，árias，соответ，medic NF，modification，Work130</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:15.22" id="00:18:15.22" class="lt" onclick="jumptoTime(1095, this.id)"><p>acting，igans，moderate，Fei，tocar，protocols，jeune</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:58.92" id="00:17:58.92" class="lt" onclick="jumptoTime(1078, this.id)"><p>bilateral，�� reel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:23.58" id="00:18:23.58" class="lt" onclick="jumptoTime(1103, this.id)"><p>dropping，geon，attitude，Kre ф</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:23.34" id="00:18:23.34" class="lt" onclick="jumptoTime(1103, this.id)"><p>iennent，tah块，new</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:17:58.84" id="00:17:58.84" class="lt" onclick="jumptoTime(1078, this.id)"><p>cone，Final Realm，ranks，KENN ich</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:21.72" id="00:18:21.72" class="lt" onclick="jumptoTime(1101, this.id)"><p>StaNET，byte</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:19.60" id="00:18:19.60" class="lt" onclick="jumptoTime(1099, this.id)"><p>Jelly，moins，floods，looks，CPA，ände，ㅋ</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:14.22" id="00:18:14.22" class="lt" onclick="jumptoTime(1094, this.id)"><p>失balls</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:17:59.38" id="00:17:59.38" class="lt" onclick="jumptoTime(1079, this.id)"><p>headache</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:23.24" id="00:18:23.24" class="lt" onclick="jumptoTime(1103, this.id)"><p>63，version，astic，iell，Eve shores</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:17.30" id="00:18:17.30" class="lt" onclick="jumptoTime(1097, this.id)"><p>emerge，Ha不了，εδώ，Snap Jie</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:58.60" id="00:17:58.60" class="lt" onclick="jumptoTime(1078, this.id)"><p>الله</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:18:7.42" id="00:18:7.42" class="lt" onclick="jumptoTime(1087, this.id)"><p>headed，виде</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:23.68" id="00:18:23.68" class="lt" onclick="jumptoTime(1103, this.id)"><p>賽，Treasure，waktu，dedi</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:18:15.72" id="00:18:15.72" class="lt" onclick="jumptoTime(1095, this.id)"><p>Lee</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:17:59.12" id="00:17:59.12" class="lt" onclick="jumptoTime(1079, this.id)"><p>asp III</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:18:6.48" id="00:18:6.48" class="lt" onclick="jumptoTime(1086, this.id)"><p>Delaware，расс，mod� Comms，encoding，因為是低級錯誤，通常海鮮的意粉，我們是不會加任何的芝士</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:35.70" id="00:18:35.70" class="lt" onclick="jumptoTime(1115, this.id)"><p>因為我們平常在香港，什麼都加芝士粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:18:38.70" id="00:18:38.70" class="lt" onclick="jumptoTime(1118, this.id)"><p>所以這是一個錯誤，這樣便是一個，Spaghetti Mongolia</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:47.06" id="00:18:47.06" class="lt" onclick="jumptoTime(1127, this.id)"><p>這些又可以加了，加少許辣椒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:18:51.10" id="00:18:51.10" class="lt" onclick="jumptoTime(1131, this.id)"><p>裝飾完成</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:18:52.10" id="00:18:52.10" class="lt" onclick="jumptoTime(1132, this.id)"><p>好耶，因為幕後工作人員要吃，我們馬上去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:19:4.30" id="00:19:4.30" class="lt" onclick="jumptoTime(1144, this.id)"><p>意粉不能等，大家一起吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:19:7.02" id="00:19:7.02" class="lt" onclick="jumptoTime(1147, this.id)"><p>大家有興趣知道，這麼多好食材在哪裏找到，可以煮什麼菜，留意Jacky的Channel，奇蹟期注，叫人來做什麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:19:19.26" id="00:19:19.26" class="lt" onclick="jumptoTime(1159, this.id)"><p>哎呀，C是Comment，L是Like，Subscribe和Share</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: maroon">SPEAKER_03</span><br>
+				<a href="#00:19:27.98" id="00:19:27.98" class="lt" onclick="jumptoTime(1167, this.id)"><p>沒錯，事不宜遲，我們要吃東西了，記得要看下一集。</p></a>
+				<a href="#00:19:34.54" id="00:19:34.54" class="lt" onclick="jumptoTime(1174, this.id)"><p>下集再見。</p></a>
+</div>
+	</body>
+</html>
