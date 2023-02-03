@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>好市芋頭糕｜Jacky Yu ｜余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_tVF2CBd30Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>好市芋頭糕｜Jacky Yu ｜余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，Jacky這個好事芋頭糕，加了很有意頭的蠔豉做材料，每隻色澤鮮明飽滿，加上野味的臘味，好像臘腸、臘肉，令芋頭糕增添一份甘香美味，首先要先蒸熟蠔豉，為甚麼要蒸熟它，因為蠔豉是比較容易變成的食材，加點水，為甚麼要加點水，因為加點水，薑蔥的味道才可以釋放出來，對…。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:28.35" id="00:00:28.35" class="lt" onclick="jumptoTime(28, this.id)"><p>一來可以去腥，二來可以令蠔豉更香，好，蒸至水沸騰後，大約蒸15分鐘，浸水會令它容易去腥，是嗎 故意去腥這麼有趣，對，因為浸在糕上會不好吃，把它切碎，臘肉是否整條用完，還是要用肥膏 肥肉，其實可以用肥肉，因為肥肉在糕上，令糕更滑和更香 對，花生亦要預先浸泡一小時，令它鬆軟一點，蒸的時候就不會太硬。</p></a>
+				<a href="#00:01:11.07" id="00:01:11.07" class="lt" onclick="jumptoTime(71, this.id)"><p>我先切粒，切成大約半吋，太小的話就咬不動，所以一定要切成你咬到的大小，這個要蒸15分鐘，要爛一點，待會要打蠔蓉，這個蒸10分鐘，時間短一點，因為我要它不要太爛，待會還要拌芋頭粒蒸芋頭糕，要咬到芋頭的口感，好，蒸芋頭蓉15分鐘，對 芋頭粒蒸10分鐘，紅色吃最好，加少許油，不用太多，因為臘腸和臘肉本身都有油。</p></a>
+				<a href="#00:01:48.07" id="00:01:48.07" class="lt" onclick="jumptoTime(108, this.id)"><p>把所有配料放進去，把它炒香，炒香，炒至聞到香味就可以了，做糕不可缺少的粘米粉，先放進去，加少許生粉，生粉會令糕身挺起來，比較硬，加些胡椒粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:15.95" id="00:02:15.95" class="lt" onclick="jumptoTime(135, this.id)"><p>五香粉，五香粉是想糕的味道更香，對…，加少許糖和鹽，在液體方面，很多人只用水，我會加少許雞湯，令麵糊做出來時更濃郁，更鮮味 更鮮美，開的時候慢慢逐少倒進去，加完雞湯後，可以加水，不要心急，因為我要令整個粉漿完全融化，不要令粉漿有顆粒，做出來的麵糊比較均勻，比較滑，分兩三次，攪拌均勻，然後把這個放進去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:9.70" id="00:03:9.70" class="lt" onclick="jumptoTime(189, this.id)"><p>然後攪拌均勻，攪拌至完全幼滑為止，在煮這個步驟時要小心點，因為這個很容易黏，因為芋頭本身的澱粉很重，所以一邊煮的時候要不停攪拌，照你所說，做好事芋頭糕，最要留意的就是這個步驟，千萬不要讓它燒焦和黏底 對，一邊煮一邊攪拌，令它不會黏，一邊煮的時候，它會一直變稠，因為裡面有澱粉、生粉和芋頭蓉，有兩個步驟。</p></a>
+				<a href="#00:03:47.38" id="00:03:47.38" class="lt" onclick="jumptoTime(227, this.id)"><p>開始煮的時候，就加這些配料，加完後，會再煮一點，它會再稠一點 對…，好，差不多了，你幫我把材料倒進去，可以嗎，好，沒問題，好，可以把芋頭倒進去，謝謝，一氣呵成，真的 對…，倒進去後，再煮一會，讓它再稠一點，除了稠，它還開始變黏，看到嗎，即是要煮到連一點水分、醬汁都沒有，全部都很黏 對。</p></a>
+				<a href="#00:04:23.30" id="00:04:23.30" class="lt" onclick="jumptoTime(263, this.id)"><p>煮到這樣就差不多了，像熱身一樣，然後就把糕底放進去，好，這個可以把油弄乾，因為很黏，所以我慢慢把它抹平，要讓人知道是蠔市負擔高，我們可以放上去，還有一個攤底膏才能放進去，如果是在家裡做的朋友，記得先拿出來放涼，對，因為如果裡面溫度高，始終有水蒸氣，也有倒汗水，你包著它，就避免倒汗水，對 好。</p></a>
+				<a href="#00:05:0.77" id="00:05:0.77" class="lt" onclick="jumptoTime(300, this.id)"><p>小心點，給我拿 最高難度給你，這個真的要交給你 要拿熱的，很重 放進底膏裡，大火蒸它一個小時 一個小時，好。</p></a>
+</div>
+	</body>
+</html>

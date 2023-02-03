@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金薯栗子糕｜麥桂培</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4jySBilRB-8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>金薯栗子糕｜麥桂培</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，培哥這款金薯栗子糕，金薯即是番薯，不單價廉物美，還營養豐富，而且煮法多多，加上被稱為千果之王的栗子，這對最佳拍檔合作，大家是否很期待呢，金薯栗子糕，培哥，第一步要怎樣做</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.15" id="00:00:25.15" class="lt" onclick="jumptoTime(25, this.id)"><p>當然要先處理栗子，因為有殼之類，處理好殼和葉後，還要先煮軟，否則到時混合在糕上，很難再蒸得軟身</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:39.15" id="00:00:39.15" class="lt" onclick="jumptoTime(39, this.id)"><p>買回來後第一件事要先處理，就是先刮掉殼，煮的時間有甚麼特別技巧嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.83" id="00:00:46.83" class="lt" onclick="jumptoTime(46, this.id)"><p>你計時也可以，正常來說一小時甚麼都可以，番薯切得不要太大，因為大又是剛才的問題，因為高軟硬度，質感 對，和番薯不合的時候，如果太大顆會脫落，切得小一點，軟硬度和番薯不合的話，糕在中間，問題不大，小顆就容易切 對，切好番薯後，炸一下，炸的目的是讓它更香</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:18.75" id="00:01:18.75" class="lt" onclick="jumptoTime(78, this.id)"><p>鎖住番薯的香味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:21.95" id="00:01:21.95" class="lt" onclick="jumptoTime(81, this.id)"><p>這個番薯差不多了，你看到有些浮沫，外表脆脆的 對，差不多了，稍微晾油，待會煮的時候倒進去，煮的過程中也要加點油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:34.59" id="00:01:34.59" class="lt" onclick="jumptoTime(94, this.id)"><p>讓它更滑，栗子已經處理好，殼也撕掉了，攤凍了，培哥，怎樣處理，切一切</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:43.39" id="00:01:43.39" class="lt" onclick="jumptoTime(103, this.id)"><p>也是切粒嗎 對，如果切得太碎，口感就不太好，吃起來不覺得有栗子</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:55.49" id="00:01:55.49" class="lt" onclick="jumptoTime(115, this.id)"><p>有些人喜歡吃栗子 因為可以咬，粉其實有兩種</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:0.89" id="00:02:0.89" class="lt" onclick="jumptoTime(120, this.id)"><p>這個是粘米粉，這個是燉麵，全部倒進去，燉麵也要放進去嗎，燉麵也要放進去 要讓它更大牙嗎，其實是讓它身體沒那麼軟，挺身一點 沒錯，但多過頭會變得很硬，所有調味料都倒進去 完成，鹽，雞粉，凡是開粉 要逐少少水放進去，但剛好我這次的粉，因為粘米粉和燉麵沒有筋，所以沒所謂，譬如我教你，教你好一點你就慢慢開。</p></a>
+				<a href="#00:02:37.17" id="00:02:37.17" class="lt" onclick="jumptoTime(157, this.id)"><p>如果譬如麵粉，那類的粉，有筋的粉就不可以一次過倒進去，它不是變成起粒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:45.57" id="00:02:45.57" class="lt" onclick="jumptoTime(165, this.id)"><p>放完粘米粉 燉麵之後，就剛才放了那些水，這是油嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:50.57" id="00:02:50.57" class="lt" onclick="jumptoTime(170, this.id)"><p>油的油可以放進去，放在一起就可以了，你跟我學 我教你一個鬼馬一點的方法，怎樣鬼馬一點，我們叫偷雞方法，其實我們做這個過程，譬如我們入廚幾十年，經常失手，怎樣失手呢，譬如煮個糕，我們將滾水倒進去，雖然份量我們是經過經驗去量出來的，冷水熱水，多少冷多少熱，撞出來就半生熟，因為我要求那個糕做半生熟，但熟過頭就沒得救。</p></a>
+				<a href="#00:03:21.97" id="00:03:21.97" class="lt" onclick="jumptoTime(201, this.id)"><p>除了說倒進糕精出來好像凹凸凸，怎樣做都做不平，第二點就是始終吃起來好像，好像黏牙黏性，好像糯米，這個炸了的番薯，倒進去，倒進去滾水裡面，倒番薯進去這裡有兩個道理，第一點就是等番薯炸乾之後，在這裡吸一吸，第二點就是等它，這裡的份量再大一大，溫度大一大，舀一勺，這樣就萬無一失了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:55.77" id="00:03:55.77" class="lt" onclick="jumptoTime(235, this.id)"><p>直接倒進去煮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:0.74" id="00:04:0.74" class="lt" onclick="jumptoTime(240, this.id)"><p>不夠就再繼續煮，煮的過程會看到它有點黏稠，這樣就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:7.74" id="00:04:7.74" class="lt" onclick="jumptoTime(247, this.id)"><p>正常是外面的傳統手法，就是用滾水撞到凍漿上，你就用凍漿反轉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:15.74" id="00:04:15.74" class="lt" onclick="jumptoTime(255, this.id)"><p>但又不是全放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:16.74" id="00:04:16.74" class="lt" onclick="jumptoTime(256, this.id)"><p>用凍漿來控制，這樣就容易控制</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:20.74" id="00:04:20.74" class="lt" onclick="jumptoTime(260, this.id)"><p>但你用水倒下去控制，過了濃就沒有了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:25.74" id="00:04:25.74" class="lt" onclick="jumptoTime(265, this.id)"><p>你多久才領悟出鬼馬之偷雞道理呢，壞得多就領悟了，以前也被師傅罵過</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:34.74" id="00:04:34.74" class="lt" onclick="jumptoTime(274, this.id)"><p>罵呀罵呀 為何這次又這樣，這個不要倒下去煮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:43.74" id="00:04:43.74" class="lt" onclick="jumptoTime(283, this.id)"><p>現在這個是半生熟的狀態，最正 現在這樣，觀眾看著 如果在家裏做的話，做到這個質感和效果就最好了，好像煲糖水的西米露 像是糊</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:55.74" id="00:04:55.74" class="lt" onclick="jumptoTime(295, this.id)"><p>現在可以倒進鍋裡，然後蒸，放這些剛才留起的東西上去，化妝</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:6.74" id="00:05:6.74" class="lt" onclick="jumptoTime(306, this.id)"><p>蒸也是用猛火煲水，最大的火</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:10.74" id="00:05:10.74" class="lt" onclick="jumptoTime(310, this.id)"><p>中間要不要調小，不用 由頭蒸到尾都是最大的火，燒滾了之後放進去，大約這麼大的底 蒸多久，一個小時多一點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:24.74" id="00:05:24.74" class="lt" onclick="jumptoTime(324, this.id)"><p>一個多小時，70分鐘就可以了，70分鐘就可以了，70分鐘 先調好時間，通常這個糕 你覺得哪個食法是最好呢，當然是煎，煎是最好吃的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:38.74" id="00:05:38.74" class="lt" onclick="jumptoTime(338, this.id)"><p>其實這個過程是煎香，本身底膏已經熟了，煎到有糕香就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:48.74" id="00:05:48.74" class="lt" onclick="jumptoTime(348, this.id)"><p>大功告成了，培哥在這一刻我覺得，在視覺上是欠缺一些東西，這些適合嗎，適合，適合吧，放些蔥 芫茜，當然了，青青綠綠很漂亮，那個金黃色撞上青綠色，簡直是大草原上有些威金香的樣子，好 搞定。</p></a>
+</div>
+	</body>
+</html>

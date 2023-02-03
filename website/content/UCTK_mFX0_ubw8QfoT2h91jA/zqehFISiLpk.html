@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奶皇富貴糕｜陳國強</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'zqehFISiLpk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>奶皇富貴糕｜陳國強</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，我們先拿椰奶，我們有兩盒椰奶，我們放三分之一，然後拿牛油，牛油也倒進去，牛油其實可以買…，這裡已經有很多牛油，煮出來的糕會更香和滑，然後我們把糖也倒進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:27.82" id="00:00:27.82" class="lt" onclick="jumptoTime(27, this.id)"><p>真的買一整塊牛油，放進去也可以嗎 沒錯，糖就一大碗 一大碗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:34.26" id="00:00:34.26" class="lt" onclick="jumptoTime(34, this.id)"><p>最主要是煮溶牛油和糖，千萬不要用大火，一大火就很黏 會燒焦，對，這個就是糯米粉，糯米粉 先倒進去，我們買一包裝大約600克，即一斤左右，全部倒進去，這是粘米粉，我們把粉逐一攪拌均勻，把麵放進去會更實體，吃起來會彈牙，這個就是奶粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:4.62" id="00:01:4.62" class="lt" onclick="jumptoTime(64, this.id)"><p>奶粉真的是小朋友喝的奶粉嗎，沒錯，為何要加奶粉這麼有趣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:8.94" id="00:01:8.94" class="lt" onclick="jumptoTime(68, this.id)"><p>奶粉加進去後，蒸這個糕的香味，就會帶出奶的味道，然後這個就是吉士粉，我們把所有粉都攪拌均勻後，然後可以把椰漿慢慢放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:27.18" id="00:01:27.18" class="lt" onclick="jumptoTime(87, this.id)"><p>這一下有技巧嗎，不能太粗枝過急嗎 沒錯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:30.42" id="00:01:30.42" class="lt" onclick="jumptoTime(90, this.id)"><p>先在中間慢慢倒進去，然後先把它搓勻，千萬不要到處倒，為何要到處倒呢，因為如果濕度不夠，很容易讓你搓到有很多粒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:46.58" id="00:01:46.58" class="lt" onclick="jumptoTime(106, this.id)"><p>即是一塊塊的，一定要由中間慢慢倒，然後一直搓 沒錯，中間呈現團狀，凝固在一起，我們要把所有粉都融為一團</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:3.70" id="00:02:3.70" class="lt" onclick="jumptoTime(123, this.id)"><p>到了這個階段，我們要慢慢倒進去，這個過程要做甚麼，這個就是把融化的糖，讓它慢慢吸收，不過先放一半 好，calm motiv tuning</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:22.46" id="00:02:22.46" class="lt" onclick="jumptoTime(142, this.id)"><p>談 clinician，chaud，muchís Vital，де，attendance，rupees</p></a>
+				<a href="#00:02:23.20" id="00:02:23.20" class="lt" onclick="jumptoTime(143, this.id)"><p>orf，heft，ые，donít，apter</p></a>
+				<a href="#00:02:21.56" id="00:02:21.56" class="lt" onclick="jumptoTime(141, this.id)"><p>JULㅠㅠ，être，先拿一半，因為受熱後，你會嗅到奶黃味更突出</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:29.08" id="00:02:29.08" class="lt" onclick="jumptoTime(149, this.id)"><p>其實現在已經有奶黃味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:32.96" id="00:02:32.96" class="lt" onclick="jumptoTime(152, this.id)"><p>我現在還看到它還在凹陷，我們要攪拌至完全沒有凹陷，我先加煉奶</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:40.68" id="00:02:40.68" class="lt" onclick="jumptoTime(160, this.id)"><p>煉奶?為何要用煉奶，剛才你已經加了很多糖，讓它更香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:45.20" id="00:02:45.20" class="lt" onclick="jumptoTime(165, this.id)"><p>我們加兩隻半，然後你慢慢加，我慢慢攪拌</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:50.00" id="00:02:50.00" class="lt" onclick="jumptoTime(170, this.id)"><p>即是像加椰漿的方法，在中間倒下去 沒錯，好，我看到師傅現在攪拌至…，整個漿底… 已經沒有凹陷，對，已經沒有凹陷，很滑</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:7.16" id="00:03:7.16" class="lt" onclick="jumptoTime(187, this.id)"><p>我們想看它如何滑，我們把它拿上來，用瀑布這樣滑下來，它蒸出來的效果，第一，我們可以看到它有沒有凹陷，第二，就知道它的滑度有多高，因為有時候我們發酵時，不是用機器，而是用人手，始終有些漏網之魚的漏洞，其實在瀑布上，我們可以看到漏洞，對，有很多漏洞</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:30.96" id="00:03:30.96" class="lt" onclick="jumptoTime(210, this.id)"><p>這些我們就不要了，好，通常這個過程要做多少次，是否一次過已經合格</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:37.16" id="00:03:37.16" class="lt" onclick="jumptoTime(217, this.id)"><p>一次過合格，最好做兩次，這次我們做甜糕，所以我們用牛油，即是不要加花生油 對，我們可以沿著它倒下去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:50.48" id="00:03:50.48" class="lt" onclick="jumptoTime(230, this.id)"><p>很漂亮，瀑布流下去，我已經想像到它蒸好的金黃色，是多富貴和多鮮艷 黃金，對，那個金黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:3.12" id="00:04:3.12" class="lt" onclick="jumptoTime(243, this.id)"><p>現在我們要怎樣做</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:10.16" id="00:04:10.16" class="lt" onclick="jumptoTime(250, this.id)"><p>其實用來搖擺它有甚麼用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:12.00" id="00:04:12.00" class="lt" onclick="jumptoTime(252, this.id)"><p>因為我們倒下去時，上面有紋路，我們拍一下它，而且它有氣孔，我一搖擺，氣孔就會流出來，我們放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:26.05" id="00:04:26.05" class="lt" onclick="jumptoTime(266, this.id)"><p>對，剛才師傅說蒸的膏要滑，要隔著倒汗水 對，有甚麼方法</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:32.77" id="00:04:32.77" class="lt" onclick="jumptoTime(272, this.id)"><p>一般來說，我們比較專業，在酒家會拿一些保鮮紙 對，因為我們會長期開著，家庭式會怎樣，如果我們不是用竹籠，我們就要… 做一隻碟，做一隻碟，然後稍微反轉，待水煮沸後，我們就要把火慢慢調小，大概一小時左右，一小時 對，我們可以放一些記事板，會漂亮點</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:59.85" id="00:04:59.85" class="lt" onclick="jumptoTime(299, this.id)"><p>整個意境都出來了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:1.97" id="00:05:1.97" class="lt" onclick="jumptoTime(301, this.id)"><p>感覺就比較中式了。</p></a>
+</div>
+	</body>
+</html>
