@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上海素薄餅 馬海倫</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'v4F59HbV_GM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>上海素薄餅 馬海倫</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.07" id="00:00:2.07" class="lt" onclick="jumptoTime(2, this.id)"><p>字幕by索兰娅🐰，大家好，我是Baby Channel的朋友，我今天教大家做的是春卷皮包薄餅，不是炸的，健康很多，但我今天用的材料全部都是素的，如果各位不喜歡，可以加肉絲、雞絲，材料方面有中國芹菜、豆腐乾、春卷皮，紅蘿蔔、芽菜和青椒，再好吃一點，可以加海鮮醬，海鮮醬可以用熟油去掉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.75" id="00:00:48.75" class="lt" onclick="jumptoTime(48, this.id)"><p>不過我喜歡吃辣的，就加辣椒絲，接著我教大家怎樣切絲，大家準備的材料長短差不多，炒起來容易炒，吃起來也好吃，大家可以試試看，現在準備炒， 不過也要放少許油，很少就可以了，首先炒青椒，然後放紅蘿蔔，然後放中國芹菜，放少許鹽，最後才放豆腐乾，芽菜要煮開水， 放少許鹽，先放進去， 然後攪拌，現在放芽菜， 水滾了， 加少許鹽。</p></a>
+				<a href="#00:02:21.31" id="00:02:21.31" class="lt" onclick="jumptoTime(141, this.id)"><p>芽菜一滾就可以了，現在要夾起它，然後混合在材料中就可以吃了，就這樣混合就可以了，混合， 混合，然後就看看春卷皮怎樣做了，水滾了， 就可以關火，關火之後， 將春卷皮放進去，放在這裡，過五分鐘就可以拿出來包來吃了，油熱了， 現在放一點油進海鮮醬裡，然後就爆香辣椒，現在可以吃了，喜歡的話可以塗少許海鮮醬。</p></a>
+				<a href="#00:03:48.28" id="00:03:48.28" class="lt" onclick="jumptoTime(228, this.id)"><p>各式其色，喜歡長方形包也可以，我喜歡這樣包，看看，可以吃了，嗯，好好吃。</p></a>
+</div>
+	</body>
+</html>

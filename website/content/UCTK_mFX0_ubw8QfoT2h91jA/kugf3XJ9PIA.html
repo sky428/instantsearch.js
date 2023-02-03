@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>粟米天婦羅 蔣怡 CoCo Chiang</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kugf3XJ9PIA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>粟米天婦羅 蔣怡 CoCo Chiang</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，我是Coco，蔣薏，今天我們要做粟米菜式，粟米通常都是蒸、烚或燒，今天我們要用另一種做法，就是做粟米天婦羅，天婦羅就是要炸的，把玉米買回來後， 把它洗乾淨，第一步是先煮熟它，我們用蒸的方式，整條放進去蒸大約10分鐘就行了，粟米蒸熟了， 待它放涼。</p></a>
+				<a href="#00:00:51.31" id="00:00:51.31" class="lt" onclick="jumptoTime(51, this.id)"><p>就很容易拿到手， 不然很難切，這時候最需要一把較鋒利的刀，因為要切四塊粟米扒，要切得很漂亮，你一定不知道粟米扒是甚麼樣子，我就切給你看，首先切走尖端，中間切開兩半，這裡會較難，通常都是切一個口，然後就…很簡單，然後很容易放在這裡，要貼著粟米芯，這是一塊很漂亮的粟米扒，這樣吃已經很美味，給小朋友吃就不會那麼困難。</p></a>
+				<a href="#00:01:35.11" id="00:01:35.11" class="lt" onclick="jumptoTime(95, this.id)"><p>接著我們要做天婦羅粉漿，當然你可以在家裡，自己用麵粉和冷水做粉漿，不過最簡單的方法，就是買市面上已經調校好的天婦羅粉，不同品牌的粉漿，會有不同的比例去調，你自己買完， 就看上面寫，例如這個粉漿是100克的粉，就要加160克的水，記得這個水一定要用冰水，我剛才放了一顆冰，現在還有一點。</p></a>
+				<a href="#00:02:10.67" id="00:02:10.67" class="lt" onclick="jumptoTime(130, this.id)"><p>所以它依然很冷，調校天婦羅粉也有點巧妙，你準備一對筷子，把冷水倒進去後，慢慢攪拌，不用攪拌得很均勻，你看到好像有一顆顆還沒融化，或者有些麵粉還在表面，這樣就可以了，接下來就是簡單的步驟，把粟米沾一點點乾粉，再沾天婦羅粉漿，通常炸蔬菜的時候，因為蔬菜的表面，都是比較濕潤和光滑的，如果只是沾粉漿。</p></a>
+				<a href="#00:02:56.67" id="00:02:56.67" class="lt" onclick="jumptoTime(176, this.id)"><p>就可能不會很黏，所以我們之前會把多餘的粉，放在一個碟子上，把蔬菜沾一點點乾粉，不用很多，攪拌一下就可以了，不要多餘的粉，天婦羅好吃與否，其實最大的因素就是，粉漿要薄才會脆，而且不會太油膩，我們沾一下粉漿，讓它滴走多餘的粉漿，放進去，180度的油溫，通常我們炸蔬菜，就會用比較低的油溫，讓蔬菜熟透。</p></a>
+				<a href="#00:03:38.19" id="00:03:38.19" class="lt" onclick="jumptoTime(218, this.id)"><p>但因為今天的玉米已經熟透了，所以我們只需要高的油溫，讓它外面夠脆就可以了，炸的時候要搖一下，讓它不要黏著，炸的時候，你看到它的泡泡變少了之後，不用等到它變成金黃色，應該就可以了，雖然我們做的是玉米天婦羅，但我個人覺得，因為它比較甜，其實配搭一些比較香的醬，會比較好吃，所以我有時候會用一些，比較甜的辣椒醬。</p></a>
+				<a href="#00:04:19.03" id="00:04:19.03" class="lt" onclick="jumptoTime(259, this.id)"><p>不過今天另外再做一種，比較不同的醬，是比較酸的，很清新的，我用了這個自然乳酪，即是越來越酸的乳酪，或者你用現在的Greek yogurt，因為它的質地會更稠更濃，我們會再加一點調味，首先加一些青檸，然後加一點鹽</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:48.39" id="00:04:48.39" class="lt" onclick="jumptoTime(288, this.id)"><p>maternal building，Laurie，provoke，Squid，Queens，芫荽， 芫荽我们之前切了，芫荽也是给它一些很香的味道，还有一些颜色，其实还可以刨些青柠皮下去，哇， 好香</p></a>
+				<a href="#00:05:10.03" id="00:05:10.03" class="lt" onclick="jumptoTime(310, this.id)"><p>再加多一点， 让它多一点绿色，我们可以试一下味</p></a>
+				<a href="#00:05:18.03" id="00:05:18.03" class="lt" onclick="jumptoTime(318, this.id)"><p>嗯， 多一点酸味，我们换一只匙羹，配合粟米的甜甜的味道，好了， 现在我们就可以上碟了，我今天放了一只黑色的碟子，配合粟米的颜色，好，這就是今天的粟米天婦羅，紅色和白色兩種醬汁。</p></a>
+</div>
+	</body>
+</html>

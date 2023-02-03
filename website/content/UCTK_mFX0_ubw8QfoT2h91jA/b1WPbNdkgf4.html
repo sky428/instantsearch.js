@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蜂蜜牛油薯片 蔣怡 CoCo Chiang</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'b1WPbNdkgf4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蜂蜜牛油薯片 蔣怡 CoCo Chiang</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是Coco，今天教大家一個很好吃的小食，叫蜂蜜牛油薯片，我介紹一下材料，薯仔，買一個好看一點的，然後這裡就是我們，做蜂蜜牛油汁的材料，有牛油，然後這裡有蜜糖，有少許蒜蓉，喜歡吃辣的朋友可以加少許辣椒粉，少許鹽就可以了，我們現在就開始切薯仔，這個叫做Medling。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.31" id="00:00:46.31" class="lt" onclick="jumptoTime(46, this.id)"><p>它是一個蔬菜的，刨絲、切片機，可能大家很多時候，在街市都會看到，有些叔叔在那裡切給你看，這個很好用的，不過大家用的時候，記得要注意安全，不要刨走自己的手指，我們用它之前，這個薯仔我們首先就切了一邊，我們就有一個平面，可以開始切薯片，就方便很多，放好，這個下面可以調節，厚薄的程度，我們就來切薯片。</p></a>
+				<a href="#00:01:25.22" id="00:01:25.22" class="lt" onclick="jumptoTime(85, this.id)"><p>我剛才已經調整好，薯片是有點透明的，這樣就可以看到薯片的厚度，大家不要切得太厚，再薄的話會很難控制，差不多這個厚度就可以了，一份薯片，這裡半個薯仔就夠了，通常我們炸香脆的東西，180度就可以了，但你可能會怕炸的時候會焦，因為我自己就發覺，因為我做過很多次，有時候炸出來很漂亮，金黃色，但有時候炸出來好像焦了。</p></a>
+				<a href="#00:02:10.70" id="00:02:10.70" class="lt" onclick="jumptoTime(130, this.id)"><p>其實就不關炸爐的油溫或是自己的事，可能薯仔不同品種或是季節不同，裡面有時候含有比較多糖分，很容易炸到焦，可能只是顏色比較深，但味道都一樣，所以我們就不用怕，我們放進去，最主要是放的時候一片一片放，不要整個放進去，因為這個炸爐比較小，如果一次過放太多東西，東西會黏在一起，油溫會降，炸出來的東西就不香脆了。</p></a>
+				<a href="#00:02:54.02" id="00:02:54.02" class="lt" onclick="jumptoTime(174, this.id)"><p>所以炸東西最重要是，慢慢一次過不要放太多，給充分的空間，讓食材在裡面炸，讓水分跑掉，食材才會脆，我剛才說了，因為我昨天在家試了一點薯片，我發覺現在的薯仔都很容易黑黑的，好像有點焦，所以我們要看著，當它整個都已經是，好像啡色就可以拿出來了，不要繼續再炸下去，再焦的話就會有一點苦味，但你也不要怕。</p></a>
+				<a href="#00:03:29.42" id="00:03:29.42" class="lt" onclick="jumptoTime(209, this.id)"><p>如果你當它還沒脆的時候拿出來，薯仔就不脆了，那怎麼看呢?</p></a>
+				<a href="#00:03:35.70" id="00:03:35.70" class="lt" onclick="jumptoTime(215, this.id)"><p>其實很簡單，有一個方法，就是看到它沒有泡泡出來了，沒有聲音了，沒有唱歌了，那應該就可以了，好了，我們大概炸了五六分鐘了，很香，這裡第一批放進來的薯仔，你看到它已經，金黃色和沒有泡泡再出來，那代表已經可以了，拿出來之後，我們會趁它還是，我先分開它，然後趁它還是熱騰騰的時候，我們就會灑一點鹽。</p></a>
+				<a href="#00:04:9.02" id="00:04:9.02" class="lt" onclick="jumptoTime(249, this.id)"><p>讓鹽可以黏著薯仔，待會我們的醬汁因為是甜的，甜的再加一點鹽在上面，吃的時候就會覺得很好吃，現在我們就用一個平底鍋來煮醬汁，這個鍋已經熱了，我現在首先就放一些牛油進去，其實牛油基本上煮溶就可以了，不需要太大火，它一直溶，我們同一時間就放一點蒜蓉，看你喜歡多少，我放大概一湯匙左右，我們煮牛油也好，煮蒜蓉也好。</p></a>
+				<a href="#00:04:51.10" id="00:04:51.10" class="lt" onclick="jumptoTime(291, this.id)"><p>最重要就是不要大火，因為牛油也會燒焦，蒜蓉也會很容易燒焦，這個蒜蓉我們不需要像中菜那樣，要爆到它很香，基本上有一點香味，我們就可以加蒜蓉，我們就可以加這個，這個時候就再小一點火，我們只不過要煮溶它，和要拌勻所有東西，大家選平底鍋的時候，也可以選一個大一點的，和深一點的方便你待會拌勻，我們將剛才的薯片全部放進去。</p></a>
+				<a href="#00:05:29.22" id="00:05:29.22" class="lt" onclick="jumptoTime(329, this.id)"><p>然後溫柔地拌勻，依然保持小火，不用擔心它會碎，這種香味和外面買一包包薯片，那些牛油和蜜糖的香味是不能比的，還有我們加了鹽和蒜蓉，那個味道是很多層次，基本上看到薯片每一塊都沾滿了醬汁，就可以上碟了，喜歡辣的朋友可以在上面灑上一點紅椒粉，好香呀，這個就是今天教大家做的，牛油蒜蓉蜜糖薯片。</p></a>
+				<a href="#00:06:26.21" id="00:06:26.21" class="lt" onclick="jumptoTime(386, this.id)"><p>好好吃的。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>番茄燉飯 張致恒</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'srxtW9PyT8w',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>番茄燉飯 張致恒</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.23" id="00:00:3.23" class="lt" onclick="jumptoTime(3, this.id)"><p>我肚子餓了，煮了這麼久，怎麼了，大家好，我是史提芬，張志恆，這次是我第一次正式入廚，在大家面前煮食給大家吃，希望大家多多支持，我覺得在家裡，既然你真的肚子餓，當然要用最少時間煮最好吃的食物，所以我選了一些，比較簡單、簡單的食物，教大家如何煮，這次我帶了番茄燉飯，為何會帶這個飯來分享給大家吃，因為我記得有一次。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.87" id="00:00:46.87" class="lt" onclick="jumptoTime(46, this.id)"><p>我有個法國朋友在我家，他說肚子餓了，煮飯給我吃，他煮了這個番茄燉飯，我記得他很喜歡吃，肚子餓了，煮飯給我吃，他煮了這個飯給我吃，很快就能做出一道飯，又可以有別國風味，第一道菜就是番茄，你想吃大的茄也可以，不過車厘茄會比較甜，我純粹劃半就可以了，切成六至七粒，然後偷吃，夠甜。</p></a>
+				<a href="#00:01:27.15" id="00:01:27.15" class="lt" onclick="jumptoTime(87, this.id)"><p>最好是用橄欖油，因為橄欖油比較有營養，我法國朋友教我的時候，他是用白酒，但如果家裡沒有白酒，怎麼辦，可以用玫瑰露加米酒，這樣做出來會有香甜的感覺，加少許油，我們要先炒米，炒米一來會更入味，二來會更快熟，讓每粒油都平均沾滿所有油就可以了，我個人建議用珍珠米，因為珍珠米口感比較好，比較肥，再放剛才煮過的番茄。</p></a>
+				<a href="#00:02:7.03" id="00:02:7.03" class="lt" onclick="jumptoTime(127, this.id)"><p>隨意拌一拌，加少許酒，玫瑰露少許就可以了，因為只是想要它的香味，米酒可以多一點，再煮多兩次，米都跳出來了，番茄好像開始熟了，就可以加水了，慢慢加米酒，然後再炒，大概遮蓋表面就可以了，加點雞粉，煮的時候要不停攪拌，否則米會跟普通的菜一樣，黏在鑊底，很容易燒焦，慢慢煮，半小時內就完成，我其實17歲時已經搬出來住。</p></a>
+				<a href="#00:02:53.69" id="00:02:53.69" class="lt" onclick="jumptoTime(173, this.id)"><p>因為當時組成了男生組合，很多時候都要照顧自己，所以當時跟Kenny一起住，因為Kenny不懂得煮飯，我們不想經常外出吃，於是我便說不如我煮吧，從那時開始對烹飪有更深的興趣，待水分收到七至八成，就可以加芝士，我個人比較喜歡濃味的芝士，然後加點油，炒至芝士完全融化，變稠了，這樣就可以吃了。</p></a>
+				<a href="#00:03:29.45" id="00:03:29.45" class="lt" onclick="jumptoTime(209, this.id)"><p>再放兩粒生的在上面，然後切一束蔥。</p></a>
+				<a href="#00:03:33.41" id="00:03:33.41" class="lt" onclick="jumptoTime(213, this.id)"><p>完成，可以吃了。</p></a>
+</div>
+	</body>
+</html>

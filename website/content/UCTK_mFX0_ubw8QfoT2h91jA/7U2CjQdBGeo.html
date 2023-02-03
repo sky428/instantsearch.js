@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 釀鮮菇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '7U2CjQdBGeo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 釀鮮菇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，我今天會和大家示範釀鮮菇，我今天會用碎豬肉，加上已經剁碎的蝦米，過時過節， 肯定會用臘腸，有些臘腸粒，如果想用潤腸也可以，或者加少許臘肉也可以，有調味料， 有麻油和少許鹽，這個粟粉，還有少許胡椒粉，然後我們就把它攪拌均勻，如果大家想做素釀鮮菇，有甚麼材料可以取代呢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.06" id="00:00:48.06" class="lt" onclick="jumptoTime(48, this.id)"><p>其實我們可以用硬豆腐，再加上甘筍粒、冬菇粒，還有木耳或雲耳，全部切碎，然後釀進鮮菇也可以，餡料已經拌勻了，下一個步驟就可以釀鮮菇了，記得千萬不要用水洗鮮冬菇，因為新鮮冬菇吸收了水分，煎出來或煮出來的效果就不好，我們就反轉它，將蒂去掉後，就將餡料釀進去，釀進去的時候，就用匙羹的部分，封住口。</p></a>
+				<a href="#00:01:29.42" id="00:01:29.42" class="lt" onclick="jumptoTime(89, this.id)"><p>有些朋友會問，我們釀鮮菇時是否需要加粟粉，在鮮菇表面，是不需要的，因為豬肉本身有水分，煎出來的時候，鮮菇吸收了豬肉的水分，就可以將餡料黏住，但如果你們是用乾冬菇，我們做法是怎樣呢，將乾冬菇浸軟後，然後去蒂，一定要撲少許粟粉上去才釀，確保餡料不會掉出來，現在我們可以將釀好的鮮菇，拿去煎。</p></a>
+				<a href="#00:02:7.62" id="00:02:7.62" class="lt" onclick="jumptoTime(127, this.id)"><p>我們先加油，用中火，將肉的部分向下，和沾少許油，為什麼呢，因為冬菇本身容易熟，如果煎了冬菇的部分，反而肉不熟就不行，煎到肉的一面是金黃色，然後反轉再煎鮮冬菇，冬菇就很快熟，這隻鮮冬菇已經煎得差不多了，我們可以反轉另一邊，再將它煎熟，大家如果不想用煎的方法，也可以用蒸的方法，蒸的方法是水滾後。</p></a>
+				<a href="#00:02:43.82" id="00:02:43.82" class="lt" onclick="jumptoTime(163, this.id)"><p>將冬菇放入蒸爐，蒸大概七分鐘就可以了，我們怎樣確保它為之熟呢，你看到冬菇已經煎到縮水了，和肉也煎熟了，現在我們可以關火，然後上碟，我個人認為年初二，吃得清淡點，對身體是好一點的，但如果你想配芡汁或醬汁也可以，這個煎釀鮮冬菇就做好了。</p></a>
+</div>
+	</body>
+</html>
