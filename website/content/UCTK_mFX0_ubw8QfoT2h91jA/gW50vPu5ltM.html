@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>紅酒燉牛面頰 | Candy Fong</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'gW50vPu5ltM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>紅酒燉牛面頰 | Candy Fong</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.08" id="00:00:4.08" class="lt" onclick="jumptoTime(4, this.id)"><p>nuance，handed обще evening，zit était，CAR</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(3, this.id)"><p>佐，дис，synth</p></a>
+				<a href="#00:00:10.54" id="00:00:10.54" class="lt" onclick="jumptoTime(10, this.id)"><p>vl，ibly，ice，195，tote</p></a>
+				<a href="#00:00:13.60" id="00:00:13.60" class="lt" onclick="jumptoTime(13, this.id)"><p>س GH，коforcement，test，asha</p></a>
+				<a href="#00:00:9.74" id="00:00:9.74" class="lt" onclick="jumptoTime(9, this.id)"><p>yani，основ eats，大家好，今天我會做紅酒豬燈的菜，另外會配薯蓉，這是牛肉豬燈，它有很多膠原，所以很多女士都喜歡吃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:27.67" id="00:00:27.67" class="lt" onclick="jumptoTime(27, this.id)"><p>昨天我用了紅酒、薯蓉和鹽。</p></a>
+				<a href="#00:00:32.67" id="00:00:32.67" class="lt" onclick="jumptoTime(32, this.id)"><p>醃了牛肉豬燈，先煎牛五臟，現在油已經熱了，我們可以放牛肉豬燈進去。</p></a>
+				<a href="#00:00:41.67" id="00:00:41.67" class="lt" onclick="jumptoTime(41, this.id)"><p>調小火，因為我們不是想煎熟它，我們只是想令豬燈顏色深一點，用切了牛肉的汁就可以煮菜。</p></a>
+				<a href="#00:00:58.67" id="00:00:58.67" class="lt" onclick="jumptoTime(58, this.id)"><p>首先煮蝦仁，炒一會，開始有少少變色，就可以加洋蔥，加洋蔥，這是芹菜，西芹，這是用來做煮豬燈時的醬汁，現在好像熟了，就可以加紅酒，加少少就可以了。</p></a>
+				<a href="#00:01:28.67" id="00:01:28.67" class="lt" onclick="jumptoTime(88, this.id)"><p>現在加了牛肉濃縮高湯，和蔬菜炒到融化，乾身就可以加水，醬汁已經煮好了，可以用這個放進焗爐，我們會加少少水，一定要過牛肉，否則它不會熟，水也一定要煮，一定要煮滾才放進焗爐。</p></a>
+				<a href="#00:01:55.67" id="00:01:55.67" class="lt" onclick="jumptoTime(115, this.id)"><p>我們的焗爐已經預熱了150度，真正焗的時間是135度4小時，這個炆牛，之前我在法國學的是炆牛腩，是不同位置的，炆出來的口感比較硬，但我回到香港後就試了牛面豬丼，口感比較軟身和膠質較重，比較適合我們的口味。</p></a>
+				<a href="#00:02:23.91" id="00:02:23.91" class="lt" onclick="jumptoTime(143, this.id)"><p>我們先放一塊雪仔，之後要切差不多大小，因為它們可以一起熟，一定要放在冷水裡。</p></a>
+				<a href="#00:02:33.91" id="00:02:33.91" class="lt" onclick="jumptoTime(153, this.id)"><p>要剛好過完雪仔，我們不蓋上蓋子，因為蓋上蓋子時間會短，而且質感可能跟我們做蒜蓉的質感不一樣，OK，現在剛好過了30分鐘，我們要倒掉多餘的水來壓碎，開始煎牛油，和蒜蓉一起，把它們拌勻，然後繼續壓，壓到變成薯蓉，有些人喜歡加蛋黃，會更香，已經有香味了，可以加一點進去，慢慢。</p></a>
+				<a href="#00:03:14.91" id="00:03:14.91" class="lt" onclick="jumptoTime(194, this.id)"><p>加一點鹽和胡椒粉，我喜歡加一點黑芝麻，因為可以令薯蓉更香，最後加上忌廉就完成了，怕肥的話可以用鮮奶代替，但我喜歡用忌廉，因為可以更滑，牛肉麵磚已經焗了4小時，已經熟透，而且有收汁，現在可以把汁拿出來，汁已經變成膠狀，因為牛肉麵磚有很多膠囊，之後就可以舀薯蓉了，牛肉麵磚可以放上去，最後灑上香草就完成了。</p></a>
+</div>
+	</body>
+</html>

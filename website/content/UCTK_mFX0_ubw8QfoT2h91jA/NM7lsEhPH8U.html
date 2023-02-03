@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意式番茄肉丸 張曦雯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NM7lsEhPH8U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>意式番茄肉丸 張曦雯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.27" id="00:00:2.27" class="lt" onclick="jumptoTime(2, this.id)"><p>我會教大家做一些，充滿美國特色的菜式，希望大家喜歡，今天我會教大家煮一個，在美國非常常見的菜式，就是肉丸配番茄醬，材料已經在這裡，今天我會用牛肉做肉丸，所以有牛肉，有薄餅，有巴馬臣芝士，記得不要買芝士粉，一定要用真正的芝士，還有一隻雞蛋，有巴西里，有蒜粉，有花椒，有番茄醬，還有洋蔥，還有蒜頭、糖。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:53.89" id="00:00:53.89" class="lt" onclick="jumptoTime(53, this.id)"><p>還有白芝麻，還有乾番茄，當然少不了鹽和黑胡椒，首先我會做番茄醬，我們需要半個洋蔥，第一件事要做，就是把洋蔥和蒜頭切粒，然後開爐，可以開到中火，然後加多點油，炒香蒜頭和洋蔥，讓洋蔥半透明，然後就可以放乾番茄，你看到我一邊煮，一邊壓碎番茄，這樣就可以快點煮成番茄醬，煮沸後就可以放白芝麻，加少許糖和鹽作調味。</p></a>
+				<a href="#00:01:38.33" id="00:01:38.33" class="lt" onclick="jumptoTime(98, this.id)"><p>蓋上蓋子，小火煮30分鐘，我在美國長大，所以很喜歡吃牛肉，所以我選擇用地面牛肉做這道肉球，但如果有其他人，像我媽媽一樣不吃牛肉，我做給媽媽吃的時候，就會選擇用土耳其牛肉，除了土耳其牛肉，也可以用雞肉代替，一樣好吃，現在我要做這道菜的主角，就是肉球，這裡有些絞碎的牛肉，然後放入麵包粉。</p></a>
+				<a href="#00:02:16.47" id="00:02:16.47" class="lt" onclick="jumptoTime(136, this.id)"><p>然後可以放入巴馬臣芝士，我喜歡多吃芝士，所以會多放一點，還有一些香草，就是巴馬臣芝士，還有少許蒜蓉粉，還有雞蛋，但要先打好，打好後待會備用，我現在先拌乾，用手搓勻就最均勻，現在可以放剛才打好的蛋，這樣肉球才不會散開，把所有材料拌勻後，捏好後就可以搓出球，這裡的份量可以搓出六個肉球，現在可以煎香肉球。</p></a>
+				<a href="#00:03:5.79" id="00:03:5.79" class="lt" onclick="jumptoTime(185, this.id)"><p>煎的時候不用煮太久，因為待會放進番茄醬裡煮熟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:12.41" id="00:03:12.41" class="lt" onclick="jumptoTime(192, this.id)"><p>Det equator，ombres，Hare，括第一個，irsin，tent，avec，ctive，podia，FY tablespoon，如 improved，nicos Niet，flights，Vict crackers，煎完肉球後，就可以看醬汁煮成怎樣，然後就可以加些番茄醬和香草，番茄醬是一個很重的番茄的精華。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:33.10" id="00:03:33.10" class="lt" onclick="jumptoTime(213, this.id)"><p>會令番茄的味道更重，令醬汁更稠，可以加些黑胡椒，然後就加剛才煎好的肉球，再加醬汁一起煮，現在把肉球放進去後，就可以蓋上蓋子，再焗一會，等肉球煮熟就可以上碟，美國有一個詞語叫Comfort Food，Comfort Food的意思是，當你吃了那樣東西後，它會給你一個很溫暖、很幸福的感覺，每個人的Comfort Food都不同。</p></a>
+				<a href="#00:04:18.10" id="00:04:18.10" class="lt" onclick="jumptoTime(258, this.id)"><p>對我來說，肉球配番茄醬是我的Comfort Food，因為會令我想起，我為家人煮這道菜的時候，所以就令我很開心和很溫暖。</p></a>
+</div>
+	</body>
+</html>

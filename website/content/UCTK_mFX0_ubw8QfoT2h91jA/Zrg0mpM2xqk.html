@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寶雲酥牛扒 張致恒</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Zrg0mpM2xqk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>寶雲酥牛扒 張致恒</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，又是我史提芬在廚房搞搞震的時候，這次我教大家…也不是教我，是分享，分享一個送給大家的叫做寶雲酥牛扒，牛扒其實你可以不選擇牛扒，或者選擇牛柳或其他部位都可以，還有蒜蓉，這個就是芥末，希望大家用一些濃稠的，因為如果它濃稠的話，才可以黏著…到時候塗上去黏著麵包糠。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.97" id="00:00:48.97" class="lt" onclick="jumptoTime(48, this.id)"><p>因為我這次要將麵包糠拌蒜蓉，再加一些百里香拌在一起，這樣就會有些味道，如果不想這麼煩，像我這樣拌的話，市面上有很多已經做好的麵包粒，那些已經是脆脆的，已經有味道，你丟進密實袋裡，把它弄碎，塗上去也是一樣，首先，醃牛扒，醃牛扒，大家可以用普通鹽、岩鹽或者海鹽，我個人會建議用岩鹽，要黑椒。</p></a>
+				<a href="#00:01:31.97" id="00:01:31.97" class="lt" onclick="jumptoTime(91, this.id)"><p>醃完後，就加入香料，很容易，加很多很多，大概醃15至20分鐘就可以煎它了，在醃東西的同時，就將麵包糠倒進去，然後就將百里香倒進去，再加蒜蓉，你可以切碎一點，也可以切大塊一點，視乎你想吃牛扒的時候的粗度，我覺得如果是這樣的話，大塊一點或者小塊一點都沒問題，將它攪拌均勻，醃完後，就要開火。</p></a>
+				<a href="#00:02:21.96" id="00:02:21.96" class="lt" onclick="jumptoTime(141, this.id)"><p>平時其實醃了隻鑊之後，醃到差不多才落油，這樣煎肉就會好些，可以比較上保留多些肉汁，最緊要用平底鑊，因為平底鑊你才可以煎得比較均勻，油其實橄欖油是最好，其他油我都覺得好像不太舒服，習慣都這樣，醃到差不多就落油，油其實落多少都無所謂，因為煎牛的時候，牛油會出來，將油平均弄勻後，就要開始燒牛扒。</p></a>
+				<a href="#00:03:4.96" id="00:03:4.96" class="lt" onclick="jumptoTime(184, this.id)"><p>燒牛扒的時候最緊要的是甚麼呢，你見到有很多肥膏在旁邊，你可以選擇切走它，你怕太肥膩的話，可以選擇切走它，或者先燒肥膏那一方面，因為很多時候肥膏比較硬，如果你不煮軟的話，它會不夠熟，牛扒出來的筋就咬不到，先煎邊，就這樣煎，煎牛扒的主要目的就是，將它上色，整體會好看一點，將它鎖了一些汁在裏面。</p></a>
+				<a href="#00:03:48.39" id="00:03:48.39" class="lt" onclick="jumptoTime(228, this.id)"><p>然後拿去焗，出來的時候你切開，汁就噴出來，如果你們不怕肥的話，其實可以用牛油來煎，因為牛油本身很香，煎完牛扒出來，你真的會肚餓一百倍，然後就，骨位我沒辦法，我現在這樣，前後其實，大概煎十多二十秒都可以，因為你本身要拿去焗爐焗，還有要看你喜歡它生一點還是熟一點，我個人來說就喜歡它生一點，所以其實差不多了。</p></a>
+				<a href="#00:04:29.39" id="00:04:29.39" class="lt" onclick="jumptoTime(269, this.id)"><p>就轉面，看到嗎，你看看顏色，是很好看的，好看就可以上碟，做下一步，煎完之後，最好就將它放一放幾分鐘，讓肉留一點汁在裏面，我們就可以做下一步，這一步就是將芥末，將它塗上表面，最好就是塗均勻整塊肉，一邊就可以了，如果你想味道辣一點，就可以塗多一點，然後就將剛才，拌好的麵包碎，麵包糠，就灑上去。</p></a>
+				<a href="#00:05:18.39" id="00:05:18.39" class="lt" onclick="jumptoTime(318, this.id)"><p>灑到最好滿了，因為它焗出來才會好看，塗完之後就可以放進焗爐，焗爐要預先15分鐘，預熱200度，就可以拿進去焗，焗的時候其實看你想生一點熟一點，我個人就怎樣用標準呢，你看到麵包糠，金黃色，就是剛剛好，所以就拿進去吧，這個寶雲酥牛扒就大功告成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:4.48" id="00:06:4.48" class="lt" onclick="jumptoTime(364, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目。</p></a>
+</div>
+	</body>
+</html>

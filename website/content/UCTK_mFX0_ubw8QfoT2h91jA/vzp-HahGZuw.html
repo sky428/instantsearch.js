@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 韓式牛仔骨粉絲湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vzp-HahGZuw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 韓式牛仔骨粉絲湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.67" id="00:00:3.67" class="lt" onclick="jumptoTime(3, this.id)"><p>這次會做韓式牛仔骨粉絲湯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:7.31" id="00:00:7.31" class="lt" onclick="jumptoTime(7, this.id)"><p>Kit，我想問Summer有甚麼可以幫忙</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:10.79" id="00:00:10.79" class="lt" onclick="jumptoTime(10, this.id)"><p>Summer可以幫我將洋蔥和大蔥切件</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:13.95" id="00:00:13.95" class="lt" onclick="jumptoTime(13, this.id)"><p>麻煩Summer，Kit，我想問大蒜和洋蔥切成這麼大塊，其實用來怎樣，用來做牛仔骨湯底，Summer幫你處理大蒜和洋蔥，你又做甚麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:29.11" id="00:00:29.11" class="lt" onclick="jumptoTime(29, this.id)"><p>我切獨子蒜和薑片</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:31.55" id="00:00:31.55" class="lt" onclick="jumptoTime(31, this.id)"><p>麻煩你了，Kit，我想問為何你的薑沒有去皮</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:37.27" id="00:00:37.27" class="lt" onclick="jumptoTime(37, this.id)"><p>因為我想原汁原味，當然我的薑已經洗乾淨了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:41.11" id="00:00:41.11" class="lt" onclick="jumptoTime(41, this.id)"><p>還是你懶惰?，也是，好了，Kit，所有材料都準備好了，下一個步驟是做甚麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:48.75" id="00:00:48.75" class="lt" onclick="jumptoTime(48, this.id)"><p>我們可以熬牛仔骨湯底，這次我會做韓式牛仔骨粉絲湯，這道菜的特色是很容易煮，只要將材料切件放進鍋裡煮，就很方便，我們現在開始做湯底，先加水，然後加牛仔骨，牛仔骨已經汆水了，是</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:17.19" id="00:01:17.19" class="lt" onclick="jumptoTime(77, this.id)"><p>然後加白蘿蔔，Summer，你喜歡吃韓式菜式嗎，其實也很喜歡，也很喜歡，牛仔骨和其他菜式你都喜歡吧，是，然後加洋蔥</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:30.27" id="00:01:30.27" class="lt" onclick="jumptoTime(90, this.id)"><p>好的，如果我們不用這些菜去熬湯底，其實也可以用白蘿蔔、西芹、蔥白，去熬這個湯底</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:39.39" id="00:01:39.39" class="lt" onclick="jumptoTime(99, this.id)"><p>現在加大蔥，Kit，為何你會想做這個菜式</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:43.75" id="00:01:43.75" class="lt" onclick="jumptoTime(103, this.id)"><p>因為之前在韓國餐廳吃過這個菜式，而師傅的題目是牛仔骨，所以就想起這個湯，而且天氣涼，喝這些會暖一點，是，沒錯，然後我們可以加薑片和獨子蒜，最後加一點胡椒去提味，Kit，我想問要用甚麼火，還有要煮多久，我們等水煮沸後就蓋上蓋子，用中火煮兩小時就行了，Kit，我想問我們可否用其他肉類</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:8.83" id="00:02:8.83" class="lt" onclick="jumptoTime(128, this.id)"><p>去代替牛仔骨，當然可以，我們可以用豬骨去代替</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:13.43" id="00:02:13.43" class="lt" onclick="jumptoTime(133, this.id)"><p>如果是素食者的話，就可以不加肉，而加豆腐，現在牛仔骨湯底已經煮沸了，我們可以蓋上蓋子，蓋上蓋子後，我們就用中火煮兩小時</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:30.10" id="00:02:30.10" class="lt" onclick="jumptoTime(150, this.id)"><p>很多朋友煮牛仔骨時，都會煮過濃、過腦，我會提議，如果用牛仔骨，將牛仔骨切碎後，用慢煮的方法，慢煮的方法可以令牛仔骨，煮出來的肉會軟身，不會過腦</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:50.66" id="00:02:50.66" class="lt" onclick="jumptoTime(170, this.id)"><p>我們已經煮了兩小時，我們打開來看看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:55.74" id="00:02:55.74" class="lt" onclick="jumptoTime(175, this.id)"><p>Summer，聞到很香的味道嗎，對，很香，Kit，我想問下一個步驟是怎樣，下一個步驟是加韓式粉絲，為何你的粉絲不用浸軟身</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:8.02" id="00:03:8.02" class="lt" onclick="jumptoTime(188, this.id)"><p>因為韓國人的麵豉湯或火鍋，都可以直接加進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:14.18" id="00:03:14.18" class="lt" onclick="jumptoTime(194, this.id)"><p>跟我們中式的有點不同 對，好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:18.02" id="00:03:18.02" class="lt" onclick="jumptoTime(198, this.id)"><p>Kit，如果我們不加韓式粉絲，可以加其他材料嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:22.74" id="00:03:22.74" class="lt" onclick="jumptoTime(202, this.id)"><p>可以，我們可以加普通的粉絲，或韓式年糕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:26.90" id="00:03:26.90" class="lt" onclick="jumptoTime(206, this.id)"><p>Summer，我們還未試味道，你只看和聞到味道，你覺得味道會是怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:33.86" id="00:03:33.86" class="lt" onclick="jumptoTime(213, this.id)"><p>我覺得應該會很清甜，因為有白蘿蔔</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:37.54" id="00:03:37.54" class="lt" onclick="jumptoTime(217, this.id)"><p>Kit，我想問，你加了韓式粉絲，煮得怎樣才可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:41.98" id="00:03:41.98" class="lt" onclick="jumptoTime(221, this.id)"><p>煮至軟身就可以再加調味，這是韓國的醬油，當然沒有的話，可以用普通的醬油，加少許就好，因為本身已經很濃味，我們再加少許魚露，還要加魚露嗎，調味 好的，現在所有材料都煮熟了，調味料也拌好，我們就可以關火上碟，好，麻煩你了，我們放粉絲、牛仔骨和蘿蔔，我們不放大蔥和洋蔥，最後加湯就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:13.02" id="00:04:13.02" class="lt" onclick="jumptoTime(253, this.id)"><p>Summer，你覺得這個湯的味道會是怎樣</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:16.38" id="00:04:16.38" class="lt" onclick="jumptoTime(256, this.id)"><p>我覺得應該會很清甜，因為有蘿蔔，而且牛仔骨的味道應該會很濃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:22.98" id="00:04:22.98" class="lt" onclick="jumptoTime(262, this.id)"><p>最後淋上湯，加少許蔥花作裝飾就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:26.70" id="00:04:26.70" class="lt" onclick="jumptoTime(266, this.id)"><p>有甚麼名堂呢，韓式牛仔骨粉絲湯，Summer，想吃嗎 很想吃。</p></a>
+</div>
+	</body>
+</html>

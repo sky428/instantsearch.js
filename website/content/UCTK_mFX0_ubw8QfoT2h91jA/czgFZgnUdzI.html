@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>窩蛋牛肉煲仔飯 | 玻璃朱 Bonnie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'czgFZgnUdzI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>窩蛋牛肉煲仔飯 | 玻璃朱 Bonnie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Bonnie，玻璃豬，今次為大家示範的菜式很多人喜歡吃，其實在家裡煮也很容易，就是鍋蛋牛肉煲仔飯，介紹一下材料，當然有免煎牛肉，另外有馬蹄切碎，有芫荽蔥，當然有米和蛋，米方面用普通家裡的鮮棉米就可以了，我事先已經洗了米和浸了在鍋裡，煮之前用水浸半小時會比較好吃，平時煮飯我們一比一份量。</p></a>
+				<a href="#00:00:47.95" id="00:00:47.95" class="lt" onclick="jumptoTime(47, this.id)"><p>一杯水一杯米，但煮這個煲仔飯我會用少一點水，0.9%左右，令它更乾身更粒粒分明，容易做到飯焦的效果，先醃牛肉，加少少豉油，鹽，加入切碎的馬蹄，少許雞汁，攪拌均勻，加少少水，要煲蛋牛肉好吃，水和牛肉的分量是很重要的，如果是一斤牛肉就加四兩水，半斤就加兩兩，想肉餅鬆軟，就要把空氣打掉，不斷用手捏就會容易起膠。</p></a>
+				<a href="#00:01:39.95" id="00:01:39.95" class="lt" onclick="jumptoTime(99, this.id)"><p>捏到差不多就用夾子，這樣會容易起膠和彈牙，加入生粉，拌勻，再加切好的芫荽蔥，現在開始煮煲仔飯，火候很重要，開始時用大火煮滾水，加入雞眼水後，再用小火煮5分鐘，飯開始吸收水份時，可以鋪上菜，再蓋上蓋子，再用最小火煮10分鐘。</p></a>
+</div>
+	</body>
+</html>

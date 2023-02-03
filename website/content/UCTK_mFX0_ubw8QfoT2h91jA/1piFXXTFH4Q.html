@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兩張牛肉飯 張致恒 張彥博</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1piFXXTFH4Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>兩張牛肉飯 張致恒 張彥博</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.78" id="00:00:3.78" class="lt" onclick="jumptoTime(3, this.id)"><p>難捱又無味，做得都好似曉飛，轉眼就會餓死，沒際遇淪落這境地，總算讀過聖賢道理，在世上人善人欺，要狠才能爬得起，要唱唱會更有轉機，我想他煮很多東西都很好吃，你想想吧 我想…，我也經常去他家吃，因為我也自己煮，最早的時候，有時候他會回家當大廚，煮湯喝東西，我會回去吃，不過說到最好吃的就是…，牛肉飯 牛肉飯，沒錯。</p></a>
+				<a href="#00:00:43.86" id="00:00:43.86" class="lt" onclick="jumptoTime(43, this.id)"><p>很瘋狂，因為牛肉飯…，我記得吃完第一次之後，我就想念他的牛肉飯，很多時候他不懂得下廚，我偶爾會像他媽媽那樣，煮東西給他吃，其實我懂得下廚，不過讓你發揮一下，好，認識你那麼久，我也不知道你懂得下廚，這次你煮，我不煮了，是嗎?很危險的，我不怕，不要切斷手指就行了，不要緊，這裡應該很安全，首先，我們這個牛肉飯。</p></a>
+				<a href="#00:01:16.71" id="00:01:16.71" class="lt" onclick="jumptoTime(76, this.id)"><p>最主要的是切洋蔥，只是切東西而已，你懂得切東西嗎，是否很用力，可以了，很漂亮，師兄，不用薄切，你薄切，我怎麼煮，煮完辣，待會就沒有了，好，這個交給你，可以打側一點，我個人來說，為何會用那麼多洋蔥，因為洋蔥對我們的免疫力很好，平時他經常說很喜歡吃牛肉，吃牛肉飯，為了一起吃牛肉，不，我去那裡一次吃了三頓飯。</p></a>
+				<a href="#00:01:51.47" id="00:01:51.47" class="lt" onclick="jumptoTime(111, this.id)"><p>我買了三頓份量的牛肉飯，我們吃了13、14頓，其實不是，其實我第一次認識你時，是你不認識我的，我們在一部電影裡…，他當我是林基，對，但沒想過我們會一起住，對，最後無緣無故一起住了幾年，因為在我們最窮的一段時間，我們兩人經常深夜去吃牛肉飯，對，沒錯，某牌子的牛肉飯，某牌子的牛肉飯，每晚都去吃，對。</p></a>
+				<a href="#00:02:23.95" id="00:02:23.95" class="lt" onclick="jumptoTime(143, this.id)"><p>喜歡小塊的朋友可以把它切粒，但我喜歡它很大條，一堆洋蔥在這裡，煮洋蔥，其實你可以用普通油，也可以用牛油，用牛油煎一下會更香，牛油不用放太多，因為用普通的話… 很香，就沒那麼香，用到差不多的時候，就可以把洋蔥放下去炒，我個人只用一個這樣的，因為這種膠不會溶，多數方便可以這樣夾，可以炒軟，我們曾經組成一個組合。</p></a>
+				<a href="#00:03:1.79" id="00:03:1.79" class="lt" onclick="jumptoTime(181, this.id)"><p>因為大家信了耶穌，信基督教，我們經常一起去唱歌，我們的組合名稱是…，靈感…，他在中了，我也有一點流眼水，他已經張開眼睛了，我們經常都有感動，我們因為有感動，所以組成了你們的組合，對，我們將來可以煮東西吃，來做一段旋律，你可以別拿起嗎 是，因為它沒有火 不好意思，這是電磁爐，我像大廚那樣。</p></a>
+				<a href="#00:03:33.51" id="00:03:33.51" class="lt" onclick="jumptoTime(213, this.id)"><p>其實平時我沒甚麼計算時間，不過很容易看到，它是白色的，你炒到現在好像這樣，有一點透明，然後黃黃的，就代表已經漸入佳境，然後放豉油，很多時候如果家裡沒有日本豉油，用普通生抽也可以，因為日本豉油會鹹一點，平時人們用的都是日本味醂，因為味醂本身是帶甜味的酒，很多時候他們用來煮的時候，味道會很甜。</p></a>
+				<a href="#00:04:6.95" id="00:04:6.95" class="lt" onclick="jumptoTime(246, this.id)"><p>但如果你家裡沒有，可以怎樣做呢，我個人的意見，就是用玫瑰露和冰糖，冰糖是一種比較健康的糖，玫瑰露其實…，隨便吧，我個人覺得… 加點動畫，酒味重的東西，煮溶冰糖後，就可以加牛肉一起煮，全都放進去，不要逐片放進去 是嗎，不要逐片放進去，你炒的時候也會把它炒散，Ravi說你自己來炒，好，來炒。</p></a>
+				<a href="#00:04:40.95" id="00:04:40.95" class="lt" onclick="jumptoTime(280, this.id)"><p>不要拿起鍋子，對，平時用便宜的肥牛，吃火鍋用的肥牛也可以，其實現在差不多了，可以加點水來中和，因為本身它很濃，你剛才加了這麼多東西，煮完後，飯也預備好了，對，我煮好了，好，先放洋蔥，多放點牛肉，是，好，好，完成 好，叫甚麼名字 叫甚麼名字，兩張牛肉飯，兩張牛肉飯，只有兩塊，乾杯…。</p></a>
+				<a href="#00:05:16.71" id="00:05:16.71" class="lt" onclick="jumptoTime(316, this.id)"><p>怎樣?有甚麼感受 超好吃…，不是，真的不太想說，張宇波平時很浮誇，你看他…，真的很好吃，為何有很多人，你有甚麼想說，有很多話想說，首先，這個傢伙是不收拾東西的，因為我本身比較少下廚，因為我家裡有很多鵝，所以還有很多東西要約法三章，要和他一起煮，要洗乾淨東西、收拾乾淨食物，我記得有一次在廁所。</p></a>
+				<a href="#00:05:50.67" id="00:05:50.67" class="lt" onclick="jumptoTime(350, this.id)"><p>他經常跑步，衣服不洗，有個桶在那裡，然後把衣服扔進去，三個月了，我做了第三個月，我叫了很多次，「洗吧…」，然後我一大早就打開，打開後，火也來了，一打開，我的眼睛是否有事，現在好像有些星星在那裡，不是，是整個天花板都是蟲，飛到滿地都是蟲，流汗水了 弄好它，你看，神經病，吐得滿頭大汗，我經常都忘記了。</p></a>
+				<a href="#00:06:21.55" id="00:06:21.55" class="lt" onclick="jumptoTime(381, this.id)"><p>我放在一旁就忘記了，有很多東西都忘記了，算了，隨它吧，吃完東西，工作了 對，我奉獻了飯，你奉獻甚麼給我，我奉獻我的結他給你，好，你拿來吧，很貴的結他，我們唱一首歌吧，這首歌叫做「靈感合唱」，希望大家喜歡，我買支凍水都要五蚊係乜嘢道理，就算灣仔過海巴士都要收我十皮，仲有點樣嘢水水濕濕都要緊記，我點樣都要捱到月尾。</p></a>
+				<a href="#00:07:6.03" id="00:07:6.03" class="lt" onclick="jumptoTime(426, this.id)"><p>我盡力做場大戲，我每月每份糧都變空氣，點慘都無人理，我只好仍然怕我自己，難捱又無味，做叻都好似曉飛，轉眼就會餓死，沒際遇淪落這境地，當見盡旁人卑鄙，說道義仍然嘥氣，知道我勢弱而美，中分力也差，企皮要假死做弄風氣，我不捨得去自欺，我哪樣再算是爭氣，總算讀過聖賢道理，在世上人善人欺，要很長能爬得起。</p></a>
+				<a href="#00:07:51.03" id="00:07:51.03" class="lt" onclick="jumptoTime(471, this.id)"><p>要唱場會更有轉機。</p></a>
+</div>
+	</body>
+</html>
