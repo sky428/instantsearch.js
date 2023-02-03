@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>電飯煲燜鮑魚 | Jacky Yu 余健志 | 周汶錡</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Jl5ElTrObow',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>電飯煲燜鮑魚 | Jacky Yu 余健志 | 周汶錡</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:18.31" id="00:00:18.31" class="lt" onclick="jumptoTime(18, this.id)"><p>這次《Big Big Channel》的重量級嘉賓，就是我姐姐，謝謝， 弟弟，這次我們要交換工作，這次我們會示範用電飯煲，煮一道美味的鮑魚，你對我這麼好?</p></a>
+				<a href="#00:00:31.39" id="00:00:31.39" class="lt" onclick="jumptoTime(31, this.id)"><p>一定不會失敗， 因為我是生魚仔，對， 知道鮑魚很滋陰，對， 很保濕，這次我們會用電飯煲，很簡易地煮一道美味的鮑魚，材料是…，鮑魚、雞湯、清酒，日本醬油、蠔油、水，在煮鮑魚之前，一定要先幫它洗乾淨 洗一下，對， 可以用這些刷子，刷乾淨旁邊的… 對，骯髒的東西， 像沙石那樣，現在準備汆水的步驟。</p></a>
+				<a href="#00:01:8.07" id="00:01:8.07" class="lt" onclick="jumptoTime(68, this.id)"><p>汆水鮑魚要放冷水，第一， 如果放熱水，放鮑魚時， 鮑魚就會縮水，第二， 鮑魚的邊緣會馬上爆開，這樣就不好看，放薑，放下去，然後放鮑魚，當鮑魚的水滾起後，煮一分多鐘就可以關火，好， 開火，輕輕攤開， 去掉內臟，但千萬不要因為攤開， 用冷水沖，因為冷水沖的時候， 因為煮滾了，鮑魚就會縮水。</p></a>
+				<a href="#00:01:42.95" id="00:01:42.95" class="lt" onclick="jumptoTime(102, this.id)"><p>現在可以先清除內臟，很簡單， 只要把鮑魚拿出來，在底部用手指頭一打下去，打爛了的東西就不見了，不會像魚一樣有苦味吧，不會…，然後要一整串…，把內臟撕出來 撕出來?</p></a>
+				<a href="#00:02:1.95" id="00:02:1.95" class="lt" onclick="jumptoTime(121, this.id)"><p>撕了內臟後， 在嘴巴有一塊…，黑色的?是這個嗎?</p></a>
+				<a href="#00:02:5.63" id="00:02:5.63" class="lt" onclick="jumptoTime(125, this.id)"><p>對， 要把它拔出來，撕出來嗎?</p></a>
+				<a href="#00:02:7.95" id="00:02:7.95" class="lt" onclick="jumptoTime(127, this.id)"><p>對， 撕出來， 這是內臟，為什麼你可以…好， 這樣拔出來，我是專業的，avenues，kat，ered</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:20.09" id="00:02:20.09" class="lt" onclick="jumptoTime(140, this.id)"><p>senhor，thumbnails，blur，davon</p></a>
+				<a href="#00:02:23.93" id="00:02:23.93" class="lt" onclick="jumptoTime(143, this.id)"><p>walked，tails，law，minist är，xe，selfies，，'，ей，historically，ungen，Baş，Nigeria，eight</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:25.95" id="00:02:25.95" class="lt" onclick="jumptoTime(145, this.id)"><p>ере determining，sicher</p></a>
+				<a href="#00:02:18.17" id="00:02:18.17" class="lt" onclick="jumptoTime(138, this.id)"><p>meinem，�</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:20.95" id="00:02:20.95" class="lt" onclick="jumptoTime(140, this.id)"><p>comm，可，dwelling</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:26.01" id="00:02:26.01" class="lt" onclick="jumptoTime(146, this.id)"><p>value，indust，Hotel，herbal，quite，yog Bry</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:25.39" id="00:02:25.39" class="lt" onclick="jumptoTime(145, this.id)"><p>newborn，接著可以炆了，我們煮一個電飯煲，首先將雞湯，如果電飯煲大一點，可以將份量分成二、三、四，清酒，清酒 加一點水，這是日本醬油，蠔油， 少許麻油，然後放一小塊片糖 片糖，對， 接著把剛才洗好的鮑魚，放進去，是按煮飯的… 對， 煮飯的模式，煮飯的時間就可以了，所以是慢煮，對， 為何用電飯煲。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:5.23" id="00:03:5.23" class="lt" onclick="jumptoTime(185, this.id)"><p>第一， 很方便，而且完全封閉了，比起用普通煲更加軟，好 蓋上蓋子吧，是…，要煮多久?</p></a>
+				<a href="#00:03:15.75" id="00:03:15.75" class="lt" onclick="jumptoTime(195, this.id)"><p>大概四、八分鐘 四、八分鐘，正常煮飯的時間就差不多了，煮一頓飯的時間，我真的… 像煮鮑魚，你看我的筷子，很想吃 試一隻，不如我直接試，我的天，真的軟軟的，看起來真的沒甚麼縮水，對， 而且很香， 對嗎，對， 很香，我真的吃了 好，對，可以嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:45.03" id="00:03:45.03" class="lt" onclick="jumptoTime(225, this.id)"><p>很厚，對， 而且很軟，很軟， 但很軟，很厚 對，很鮮味， 對嗎，真的剛剛好， 別太鹹，比你家裡的糖心乾鮑魚好，真的 不錯，對， 剛剛好，好， 你這樣試，如果請客， 其實可以更華麗，把鮑魚放在鮑魚殼上，然後要處理醬汁，可以放一點…，調味醬汁 對，因為我們想…，因為我們要加價， 令它更精緻，你煮這道菜失敗了多少次才可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:21.39" id="00:04:21.39" class="lt" onclick="jumptoTime(261, this.id)"><p>是不失敗的，是嗎 是，用這個醬汁煮蟹嗎 對，好，我們買一個很薄的薄蟹，好像做成鮑魚汁，這就是鮑魚汁，是嗎，你吃… 不是，你吃的那些…，姐姐 鮑魚包那些，今天我們豪一點， 好嗎，好 對，知唔知時間都值得呢?</p></a>
+				<a href="#00:04:59.13" id="00:04:59.13" class="lt" onclick="jumptoTime(299, this.id)"><p>Mwach słu soccer</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:2.09" id="00:05:2.09" class="lt" onclick="jumptoTime(302, this.id)"><p>welding，igration，час gw Katie，��� luz，ads。</p></a>
+				<a href="#00:05:9.97" id="00:05:9.97" class="lt" onclick="jumptoTime(309, this.id)"><p>Blend，trochę</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:15.49" id="00:05:15.49" class="lt" onclick="jumptoTime(315, this.id)"><p>however，speed。</p></a>
+				<a href="#00:05:13.25" id="00:05:13.25" class="lt" onclick="jumptoTime(313, this.id)"><p>unfold，18，crib，thy，вол</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:14.33" id="00:05:14.33" class="lt" onclick="jumptoTime(314, this.id)"><p>MI Better。</p></a>
+				<a href="#00:05:14.85" id="00:05:14.85" class="lt" onclick="jumptoTime(314, this.id)"><p>ா，sixth，astonishing。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:15.97" id="00:05:15.97" class="lt" onclick="jumptoTime(315, this.id)"><p>Olga，Đây。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:6.41" id="00:05:6.41" class="lt" onclick="jumptoTime(306, this.id)"><p>talks。</p></a>
+				<a href="#00:05:18.15" id="00:05:18.15" class="lt" onclick="jumptoTime(318, this.id)"><p>materials。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:1.51" id="00:05:1.51" class="lt" onclick="jumptoTime(301, this.id)"><p>Er，pale。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:59.17" id="00:04:59.17" class="lt" onclick="jumptoTime(299, this.id)"><p>links</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:10.27" id="00:05:10.27" class="lt" onclick="jumptoTime(310, this.id)"><p>paper，Air，Restaur де，doit。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:16.89" id="00:05:16.89" class="lt" onclick="jumptoTime(316, this.id)"><p>HARR meilleur。</p></a>
+				<a href="#00:05:13.25" id="00:05:13.25" class="lt" onclick="jumptoTime(313, this.id)"><p>init U 올，08，되� overboard，Ran brew</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:9.13" id="00:05:9.13" class="lt" onclick="jumptoTime(309, this.id)"><p>usability，Seit，Ship</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:9.93" id="00:05:9.93" class="lt" onclick="jumptoTime(309, this.id)"><p>28，ievous。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:10.07" id="00:05:10.07" class="lt" onclick="jumptoTime(310, this.id)"><p>rate，σει，χ precio，baking，bubbles，Tod escrever。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:8.75" id="00:05:8.75" class="lt" onclick="jumptoTime(308, this.id)"><p>喜歡的話請訂閱支持啊。</p></a>
+</div>
+	</body>
+</html>

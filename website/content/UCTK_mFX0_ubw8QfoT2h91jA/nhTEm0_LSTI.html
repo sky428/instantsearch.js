@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酥皮三文魚 | 鍾皓晴 Shanice | 洪欣</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nhTEm0_LSTI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>酥皮三文魚 | 鍾皓晴 Shanice | 洪欣</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.78" id="00:00:2.78" class="lt" onclick="jumptoTime(2, this.id)"><p>我叫Chanise，我大約九十歲就開始入廚，大家好， 又見到我Chanise了，我今天請了一位美女嘉賓，有請美女洪英小姐，你好， 嘉賓 你好…，在螢幕上很久沒見你了，沒錯， 但我們私下有見，私下有見，我記得你很喜歡吃酥皮三文魚，對， 我喜歡吃酥皮，所以我今天帶了一道，我喜歡吃酥皮 所以我今天告訴你。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:34.06" id="00:00:34.06" class="lt" onclick="jumptoTime(34, this.id)"><p>其實很簡單做的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:35.46" id="00:00:35.46" class="lt" onclick="jumptoTime(35, this.id)"><p>今天來的時候，你一直告訴我會否很簡單…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.14" id="00:00:38.14" class="lt" onclick="jumptoTime(38, this.id)"><p>很簡單 我不知道是否真的很簡單，我怕我連最簡單的也做不到，不會的…，我準備了一塊酥皮，在超級市場買得到，很容易買得到 很容易買得到，我準備了刺身級三文魚，我買了100克， 把它切成四份，你知道我們女生不吃太多，但如果喜歡， 切成兩份，兩個人吃， 撐腿也可以，這些是什麼香草，這是番茜和碉草 番茜， 碉草。</p></a>
+				<a href="#00:01:18.76" id="00:01:18.76" class="lt" onclick="jumptoTime(78, this.id)"><p>我覺得這兩個配三文魚很香，我現在已經聞到很香，這個在超級市場可以買得到，這是Whipping Cream，可以打發奶油，因為味道比較濃，還需要自己拌什麼嗎，拌鹽就可以了，鹽和黑椒，麵粉可以…因為怕它濕， 不好滾，看你喜歡吃有多厚的酥皮，這些買回來的， 這些很薄，有些買回來的， 酥皮是一卷卷的，那些比較厚 厚的。</p></a>
+				<a href="#00:01:58.72" id="00:01:58.72" class="lt" onclick="jumptoTime(118, this.id)"><p>那些真的不可以就這樣包，因為太厚的話，酥皮要焗的時間長一點，三文魚就會變老一點，為什麼買刺身級三文魚，就是想吃到軟軟的 半熟，對， 所以酥皮要薄一點，薄一點，太厚的話， 三文魚就會太熟，明白 要多撒一點粉，我靠你了， 我等會吃你的美食，我覺得很好玩，你現在基本上沒有拍攝了，對， 沒有拍攝了。</p></a>
+				<a href="#00:02:33.96" id="00:02:33.96" class="lt" onclick="jumptoTime(153, this.id)"><p>你要有空回來見我們的觀眾，我會回來多見你們，但在螢幕上就不會了，為什麼，我今天很開心，因為觀眾們今天有福了，就是因為我，當然， 當然是因為你，你們可以見到琼欣，接著第二個步驟，第二個步驟， 你要包，還要調味，首先教你用香草這樣拉，把香草… 反過來拉，我還以為是香…，這樣就能拉下來，正法。</p></a>
+				<a href="#00:03:6.04" id="00:03:6.04" class="lt" onclick="jumptoTime(186, this.id)"><p>如果你們家裡有的，專門種植， 現在有很多，專門種植草，像種中藥那樣 對…，可以硬硬的， 味道更突出，如果沒有， 用匙羹戳一下，讓它更突出，要放鹽和胡椒粉，因為海鹽比較粗粒，通常是這樣戳…，可以嗎?</p></a>
+				<a href="#00:03:37.55" id="00:03:37.55" class="lt" onclick="jumptoTime(217, this.id)"><p>可以， 現在這個味道可以了，這個味道可以了，就這樣拌勻，全部放進去 要裁角，不是， 因為要包著，譬如這樣， 要裁成這個大小，這樣， 切掉， 是不是?</p></a>
+				<a href="#00:03:52.79" id="00:03:52.79" class="lt" onclick="jumptoTime(232, this.id)"><p>對， 好像包角仔一樣，首先要捏緊這個，否則待會放忌廉時，就會漏掉，最重要是把邊緣緊緊鎖住，不要讓它漏掉，像包角仔一樣，對， 像包角仔一樣，然後放忌廉 放忌廉，我來吧 好，連香草一起放嗎?</p></a>
+				<a href="#00:04:19.39" id="00:04:19.39" class="lt" onclick="jumptoTime(259, this.id)"><p>對， 連香草一起放會香得多，如果以防滲防，怕自己焗得太老，可以多放點忌廉，然後包著，最重要是包得緊，不要漏掉汁 否則待會，汁都會漏出來， 不好吃，這個手勢像小時候包角仔一樣，怎麼吃?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:50.67" id="00:04:50.67" class="lt" onclick="jumptoTime(290, this.id)"><p>這樣，這樣， 一幅一幅捏，對， 一點點</p></a>
+				<a href="#00:04:57.23" id="00:04:57.23" class="lt" onclick="jumptoTime(297, this.id)"><p>這樣，也很好， 很有天分，這樣一個， 包起來，就可以放進焗爐焗，先預熱焗爐， 200度，焗好就可以放進焗爐 好。</p></a>
+</div>
+	</body>
+</html>

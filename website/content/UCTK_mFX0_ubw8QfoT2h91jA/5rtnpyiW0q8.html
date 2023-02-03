@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>番茄湯浸靚蜆 | 肥仔 | 馮嘉橋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '5rtnpyiW0q8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>番茄湯浸靚蜆 | 肥仔 | 馮嘉橋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，當男人寂寞的時候，都想有個女生在廚房陪我煮食，所以今天悶悶地，我就找了一個女嘉賓，過來，她叫做，我叫唐飛 拖肥，拖肥，拖肥你喜歡吃什麼，我喜歡吃蕃茄，你隨便說就能夠說出來，我知道你喜歡吃蕃茄，我為你煮，今天我就教你煮一個蕃茄湯煮花甲，煮法很簡單，首先將番茄的底部切成十字。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:47.95" id="00:00:47.95" class="lt" onclick="jumptoTime(47, this.id)"><p>為何要在番茄底部打十字呢，因為煮番茄湯時，番茄葉的味道會苦澀，如果把番茄皮撕掉，會令番茄湯更鮮甜，切成十字後，放入番茄，煮一煮，差不多了，拿起番茄，番茄皮已經脫落，這樣很容易撕掉，把番茄撕掉，這樣撕掉，番茄皮就脫落了，明白嗎? 明白，這樣沒有難度吧? 沒有，這樣切，先將番茄切好，好了，完成了。</p></a>
+				<a href="#00:01:36.35" id="00:01:36.35" class="lt" onclick="jumptoTime(96, this.id)"><p>現在就開始爆香肉和香料，燒紅了才放油，先爆香肉碎，讓湯有肉的味道，將蒜頭和薑炒香，為何要放這麼多油在鍋內呢，其實我煮食會用多一點油，但其實不用怕，這樣會很肥膩，我們可以準備一個筲箕，將油放進去，走油，對，其實油會停留在鍋內，然後再放油，但我又會再放油，對，因為我會再煮其他菜式，然後就爆香洋蔥。</p></a>
+				<a href="#00:02:28.35" id="00:02:28.35" class="lt" onclick="jumptoTime(148, this.id)"><p>因為洋蔥有一點金邊，有洋蔥味，就將番茄放進去，好，爆香後，肉碎、薑和蒜子，加茄汁，大約兩湯匙，為何要放這麼多茄汁呢?</p></a>
+				<a href="#00:02:50.35" id="00:02:50.35" class="lt" onclick="jumptoTime(170, this.id)"><p>其實我們中國人煮番茄，很多時候要帶甜，所以我們會用多一點番茄汁，然後加水，這裡的水分大約是450毫升左右，好，然後就不用炒了，就放在這裡，好，可以加大火，這個時間，煮的時候，就是爆香所有材料，然後再灒點水下去，令油分和番茄混合在一起，那時候的沙拉番茄味就會全都出來了，全都出來了?</p></a>
+				<a href="#00:03:30.46" id="00:03:30.46" class="lt" onclick="jumptoTime(210, this.id)"><p>是的，一煮開就加糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:33.02" id="00:03:33.02" class="lt" onclick="jumptoTime(213, this.id)"><p>好，就大約加兩茶匙，然後加完糖之後，就大約等它滾5至10分鐘左右，要蓋上蓋子嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:44.38" id="00:03:44.38" class="lt" onclick="jumptoTime(224, this.id)"><p>蓋上蓋子會好一點，蓋上蓋子，滾完之後，那些番茄開始有點爛，就那個番茄味就中和了，好，看一下蜆，很多時候蜆回來之後就怎樣處理呢?</p></a>
+				<a href="#00:03:58.22" id="00:03:58.22" class="lt" onclick="jumptoTime(238, this.id)"><p>就這樣放進冰箱，煮10分鐘後就拿出來放進水裡，然後你看到它會有些舌頭的東西，然後就浸泡，浸泡完之後，等它煮的時候就這樣拿，在表面拿上去，沙拉就會沉在底下，哦，我看到了，好，開蓋，嘩，漂亮嗎?</p></a>
+				<a href="#00:04:21.10" id="00:04:21.10" class="lt" onclick="jumptoTime(261, this.id)"><p>好，將蜆就這樣放下去，還要加其他材料嗎?</p></a>
+				<a href="#00:04:27.34" id="00:04:27.34" class="lt" onclick="jumptoTime(267, this.id)"><p>這個問題問得好，就是加了蜆之後就可以煮了，因為本身蜆裡面，一煮熟，它的肌肉一收縮之後，蜆本身會噴一口鹹水，那口鹹水本身帶有海水的鮮味，鮮味，哦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:44.94" id="00:04:44.94" class="lt" onclick="jumptoTime(284, this.id)"><p>好，你看到蜆一開蓋，就立刻放進碗裡，為什麼呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:51.82" id="00:04:51.82" class="lt" onclick="jumptoTime(291, this.id)"><p>盡量保持著蜆，不要讓它煮過熟，新鮮，是的，而且蜆煮久了，就變硬了，不好吃，明白嗎?</p></a>
+				<a href="#00:05:1.50" id="00:05:1.50" class="lt" onclick="jumptoTime(301, this.id)"><p>明白，再加些蔥，先放蔥，放些葉子。</p></a>
+</div>
+	</body>
+</html>

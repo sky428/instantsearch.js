@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酥皮焗三文魚 | Billy Yeung | 楊國基</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'pmN91s4EDYA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>酥皮焗三文魚 | Billy Yeung | 楊國基</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，我是Billy，今天做一個示範菜式，做一個酥皮三文魚，材料有三文魚和煮好的菠菜葉，菠菜葉一定要先把水吸乾，還有煙肉，首先處理三文魚的時候，要加少許鹽和黑胡椒碎，還有刁草，醃一會後就準備用烹飪器煎，煎魚的時候要先煎金黃邊邊，如果你想魚看起來更好看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.44" id="00:00:55.44" class="lt" onclick="jumptoTime(55, this.id)"><p>就要先煎金黃邊邊，現在先煎魚皮邊邊，因為魚皮要做到脆口，三文魚不需要煎太熟，剛剛好有少許金黃就拿出來，因為我們還要包酥皮，如果太熟三文魚會變得很粗糙，看到旁邊有少許白色，就可以翻轉，關火，準備包在菠菜葉上，準備煙肉，然後把三文魚放上去，包好，用菠菜葉因為比較健康，還有它有一個很好的作用，可以令到魚有層次的感覺。</p></a>
+				<a href="#00:01:55.44" id="00:01:55.44" class="lt" onclick="jumptoTime(115, this.id)"><p>有綠色的，包好後就放在已經放軟的酥皮上，一定要放軟的，因為買回來的酥皮在低溫下會比較硬，如果放軟的話就很難包好，然後就把酥皮包好，用叉子去按一下花邊，包好三文魚後，我們塗上蛋漿，最重要是塗得均勻一點，不要讓它黏著，塗蛋漿的原因是要塗得均勻，待會烤出來的時候就有金黃色，如果只有一塊酥皮，它就沒有顏色。</p></a>
+				<a href="#00:02:44.80" id="00:02:44.80" class="lt" onclick="jumptoTime(164, this.id)"><p>我們一定要用蛋漿塗得很漂亮，烤出來的效果就會很漂亮，包好和塗上蛋漿後，我們準備放入烤箱，大約180度，10分鐘就可以烤完酥皮，這個酥皮焗三文魚出爐了!</p></a>
+</div>
+	</body>
+</html>

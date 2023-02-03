@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鮮茄三文魚｜黃頌明 小明</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OhR_1pelFTc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>鮮茄三文魚｜黃頌明 小明</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，又是小明，今天和大家做一個鮮茄三文魚，很簡單的，為什麼要有刀呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:27.09" id="00:00:27.09" class="lt" onclick="jumptoTime(27, this.id)"><p>因為煎三文魚時， 它會開始縮小，防止它捲起來， 變得不漂亮，可以替它紋身，要宰多少?</p></a>
+				<a href="#00:00:36.69" id="00:00:36.69" class="lt" onclick="jumptoTime(36, this.id)"><p>宰多少也沒關係，視乎魚有多大，如果魚太厚， 刀要拖深一點，今天魚不算太厚，不用拖太深，然後要醃魚，很簡單， 用黑椒加少許鹽，然後沖涼，沖涼後， 擦拌均勻，旁邊也要擦拌，然後反轉， 做一件事，做一件事， 加些鹽，主要調味就是這兩樣，因為我覺得海鮮有本身的味道，所以不用加太多調味，我們放著醃一會兒。</p></a>
+				<a href="#00:01:28.89" id="00:01:28.89" class="lt" onclick="jumptoTime(88, this.id)"><p>首先煎三文魚，只是把食材放近一點，醃好後， 可以加油，洗完三文魚後， 記得印乾，不然一放進鑊， 水和油混合，就會彈起來，現在可以把三文魚放進去，我會先煎魚皮那邊，別問我為何媽媽教的，先沾油，可能你會問我怎知道它是否熟，三文魚熟不熟， 很容易看，它由橙色變成粉橙色， 熟了，我相信那邊應該差不多了。</p></a>
+				<a href="#00:02:16.01" id="00:02:16.01" class="lt" onclick="jumptoTime(136, this.id)"><p>慢慢， 小心一點， 幫它轉身，好了，煎魚要煎至全熟，因為我不會再回鑊，我們拿起魚， 它就算上碟了，待會做好醬汁， 就淋上去就可以了，然後我們做醬汁，做醬汁， 先加洋蔥，洋蔥切粒， 都沒有需要再加油，因為剛才三文魚的油，三文魚自己有出油，煎三文魚之前我都加了油，洋蔥炒到開始轉色就可以了，然後就加番茄。</p></a>
+				<a href="#00:03:7.64" id="00:03:7.64" class="lt" onclick="jumptoTime(187, this.id)"><p>其實已經差不多了，如果用番茄不是切粒而是切件的話，如果想番茄煮溶一點，可以在這個時候加水蓋上蓋子，然後加茄汁，大概兩湯匙，好了 補菜了，如果想洋蔥味更突出，可以煮久一點，煮久了，味道就會越甜，加少許糖，少許就可以了，輕輕地倒進去，然後再加，一樣，不用加太多，然後靈魂來了，丁丁醋。</p></a>
+				<a href="#00:04:1.53" id="00:04:1.53" class="lt" onclick="jumptoTime(241, this.id)"><p>白醋，蘋果醋也可以，看你家裡有甚麼，這裡大概一茶匙，完成，關火，然後把醬汁澆在魚的表面，完成，鮮茄三文魚，開飯了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三乾籠仔飯 | 肥仔 | 馮嘉橋</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ix0Qq0THrMk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>三乾籠仔飯 | 肥仔 | 馮嘉橋</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，Big Big Chef的朋友你們好，我是肥仔師傅，我今天介紹的菜式是三江焗飯，就是蝦乾、銀魚乾、土魷乾，很多時候家裡吃剩的飯，怎樣處理呢，就是用我這個大澳人的方法，我們今天的材料是。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:35.59" id="00:00:35.59" class="lt" onclick="jumptoTime(35, this.id)"><p>隔夜飯、大澳的蝦乾、銀魚乾，還有大澳的土魷乾，首先我們將蝦乾，銀魚乾，用熱水浸泡，很多時候食材用熱水會走味，其實是會的，但食材曬乾的過程中，有時候會比較髒，所以用熱水浸泡會比較好，我們這一邊廂就將隔夜飯，準備一張荷葉，一個籠子，將飯撥下來，隔夜飯就可以了，先將飯弄鬆，現在將鯛片放上來，中間有條骨。</p></a>
+				<a href="#00:01:22.59" id="00:01:22.59" class="lt" onclick="jumptoTime(82, this.id)"><p>撕開，切絲，魷魚鬚也切絲，然後把渣滓拿出來，將魷魚鬚放上來，渣一渣水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:41.59" id="00:01:41.59" class="lt" onclick="jumptoTime(101, this.id)"><p>好，爽快了，然後放在這裡，加少許鹽，讓它有味道，但又不用太多，有些鹽份蒸起來就爽身一點，拌勻，有一個小技巧，一定要加麻油，為什麼呢，因為加完油，蝦乾、魷魚乾，有油份，吃起來會香一點，一定要加油一起蒸，如果沒有油，只會有硬滑滑的蝦乾味，如果加上去，層次感就像靈魂一樣，拌勻後，就放在飯上，然後準備蒸爐。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:25.59" id="00:02:25.59" class="lt" onclick="jumptoTime(145, this.id)"><p>慢火，將荷葉翻過來，然後就這樣蒸，包好荷葉後，大約蒸十分鐘就完成了，雪時遲，那時快，還是雪時快，那時遲呢，飯又OK啦，現在給你看看，一拔開這塊荷葉之後，銀魚乾、蝦乾的味道就冒上來，放些蔥花，再加些醬油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:0.92" id="00:03:0.92" class="lt" onclick="jumptoTime(180, this.id)"><p>再放點芫荽，這個三江荷葉飯就完成了</p></a>
+				<a href="#00:03:16.12" id="00:03:16.12" class="lt" onclick="jumptoTime(196, this.id)"><p>MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

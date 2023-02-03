@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清酒煮青口 張惠雅 Regen</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'tVUNmfKRpk0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>清酒煮青口 張惠雅 Regen</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是Regine師，張慧雅，我很喜歡烹飪，但我最喜歡烹飪西餐，而且我最怕別人不敢試我的菜式，因為每次試都說吃完會放屁，但這幾年，我的廚藝已經進步了，首先我現在會介紹一些正常菜式，日後我會試一些很特別的菜式，希望大家會留意，今天我教大家煮清酒煮青口。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:39.89" id="00:00:39.89" class="lt" onclick="jumptoTime(39, this.id)"><p>材料就是清酒和青口，平日買回來的青口有些鬚，要拔掉，還要用刷子刷乾淨殼，然後有青椒、紅椒和洋蔥，其實我煮食也因應自己喜好，我個人很喜歡吃洋蔥，所以我會加蔥和大蒜，首先我會切碎青椒和紅椒，我是一個甚麼都吃的人，所以不會不喜歡吃青椒，因為我自己很喜歡吃洋蔥，所以我甚麼都加一堆，其實真的要看你個人喜好。</p></a>
+				<a href="#00:01:38.43" id="00:01:38.43" class="lt" onclick="jumptoTime(98, this.id)"><p>煮蜆也可以，煮青菜這些，我會很喜歡喝那個湯，其實煮這個菜式，就這樣煮是十分鐘左右，我姐姐特別喜歡吃這個菜，我平時在家吃飯，家人煮飯，我就會煮這個給她吃，所以也有點信心，我們就先放這些青椒，紅椒，然後放洋蔥，炒一會兒就可以放青口，這個時候我就會先放少許清酒，nett Bulgar stewardship</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:40.29" id="00:02:40.29" class="lt" onclick="jumptoTime(160, this.id)"><p>junior，เลย</p></a>
+				<a href="#00:02:40.43" id="00:02:40.43" class="lt" onclick="jumptoTime(160, this.id)"><p>се，wij，pró，ів，prize，boa，tal，łada</p></a>
+				<a href="#00:02:37.77" id="00:02:37.77" class="lt" onclick="jumptoTime(157, this.id)"><p>Tun，uncond，Kot，cou Dakota，alı，04，unacceptable</p></a>
+				<a href="#00:02:38.53" id="00:02:38.53" class="lt" onclick="jumptoTime(158, this.id)"><p>amily，种，muscle，Şey</p></a>
+				<a href="#00:02:38.61" id="00:02:38.61" class="lt" onclick="jumptoTime(158, this.id)"><p>hurricanes，★ Television，ِ，Glenn</p></a>
+				<a href="#00:02:36.85" id="00:02:36.85" class="lt" onclick="jumptoTime(156, this.id)"><p>言，else，Ferr，� сю，ABOUT</p></a>
+				<a href="#00:02:41.85" id="00:02:41.85" class="lt" onclick="jumptoTime(161, this.id)"><p>名 הח，년，rédu，verein，acet，因為個人喜好問題，我很喜歡喝酒，所以我會加一整瓶，看你怕不怕那股苦味，已經可以加魚湯，加魚湯是為了讓鮮味更突出，大概二十幾分鐘，讓它入味一點，這個時候，完成了，我們可以在上面加多一點裝飾，加少少蔥在上面，這個就是我煮的清酒煮青口，如果平時你不太喜歡喝清酒。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:33.56" id="00:03:33.56" class="lt" onclick="jumptoTime(213, this.id)"><p>你可以加白酒，味道其實都差不多，依你喜好。</p></a>
+</div>
+	</body>
+</html>

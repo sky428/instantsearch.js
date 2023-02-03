@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>西班牙紅蝦意粉 | 衛志豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'N4bxxCpcuek',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>西班牙紅蝦意粉 | 衛志豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.87" id="00:00:2.87" class="lt" onclick="jumptoTime(2, this.id)"><p>喂喂喂又來了，這次我Michael煮一些比較矜貴的東西給大家看，希望大家可以食貴一點，這次這個很棒，就是西班牙紅蝦闊條麵，主要的主角當然是西班牙紅蝦，這隻西班牙紅蝦不得了，你看它多大隻，而且它也挺貴的，這裡三隻，大概去一些大型高級的豬肉市場買，起碼也要五百多元，所以這次真的吃好一點，但是有價值的。</p></a>
+				<a href="#00:00:53.23" id="00:00:53.23" class="lt" onclick="jumptoTime(53, this.id)"><p>因為它實在太好吃了，好，接著是闊條麵，其實這個麵，只帶米粉，很容易煮，最重要是紅蝦夠新鮮，這樣就真的很好吃，首先加麵，這隻闊條麵比較薄和有機，所以它標明叫你煮三至四分鐘，我現在只是煮半熟，我只要分兩分鐘就要起它，豬麵就加點鹽，然後加點橄欖油，麵不要太軟，這邊要開火了，微溫放牛油，放了牛油就調小火。</p></a>
+				<a href="#00:01:37.51" id="00:01:37.51" class="lt" onclick="jumptoTime(97, this.id)"><p>因為大家都知道牛油容易燒焦，放了紅蝦，這隻蝦剪了身的殼，挑出腸就可以煎了，頭上有很多膏，所以我們要按一按它，盡量把膏撕出來，很多膏，記得不要開太大火，你看這些膏，這隻西班牙紅蝦的珍貴在於膏，然後小心火，因為我們要灑點班底，厲害了，煎蝦、紅蝦、龍蝦都要灑點班底，現在慢慢煮，加少許雞湯。</p></a>
+				<a href="#00:02:32.63" id="00:02:32.63" class="lt" onclick="jumptoTime(152, this.id)"><p>加班底，盡量把蝦頭的蝦膏擠出來，在汁裡，慢慢推這個汁，加少許茄汁，加少許乾蔥，加少許蒜頭，汁差不多了，然後可以加麵了，吸收汁，很少很少，現在汁都收了，如果剛才多汁的話，可以加些忌廉，現在也可以加少少，如果剛才多汁的話，可以加忌廉收一下，現在可以上碟了。</p></a>
+</div>
+	</body>
+</html>

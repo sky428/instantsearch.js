@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>味噌豆腐蝦湯 Suki Chui</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LGTigQIE7a0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>味噌豆腐蝦湯 Suki Chui</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.02" id="00:00:1.02" class="lt" onclick="jumptoTime(1, this.id)"><p>如果我們去吃和式料理，或者去高級壽司店吃壽司，他們有兩樣東西，你一定要吃的，代表那一餐就完成了，第一就是要有一個玉子蛋，第二就是要有一個麵豉湯，這個麵豉湯我這次會用蝦頭，和一些豆腐乾去做，豆腐乾吃的時候，就會有些口感，會比較有嚼勁，會比較有嚼勁，豆腐乾吃的時候就會有些口感，蝦其實你用哪一款蝦都可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:33.82" id="00:00:33.82" class="lt" onclick="jumptoTime(33, this.id)"><p>但是我有一個貼士，我不會浪費任何一個部分，我剝了蝦殼，我就會拿蝦殼和蝦頭，一起去熬湯底，這個味噌豆腐蝦湯，材料就有蝦、豆腐，和剛才做的木魚糕湯，首先我要去蝦殼和蝦頭</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:8.38" id="00:01:8.38" class="lt" onclick="jumptoTime(68, this.id)"><p>可以選擇滑豆腐，或者我喜歡質感有些煙韌效果，我就會選擇這種高野豆腐，就可以將高湯倒入高野豆腐，好像海綿一樣吸收湯汁</p></a>
+				<a href="#00:01:27.38" id="00:01:27.38" class="lt" onclick="jumptoTime(87, this.id)"><p>我們就可以將剛才的蝦頭，有些蝦膏在裏面也可以，這個時候我們已經煲了湯大概五分鐘，我們現在就要將赤面豉，加少少高湯，拌勻，我們不會直接將赤面豉倒入湯裏，因為它未必會溶得那麼好，我們先將高野豆腐，加少少高野豆腐，因為它未必會溶得那麼好，我們拿少少湯，在小罐裏稍為拌勻，味道會出很多，現在就差不多煲了十分鐘。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:15.38" id="00:02:15.38" class="lt" onclick="jumptoTime(135, this.id)"><p>你見到有少少泡泡在湯裏，我們就最好隔走它，一會兒湯會清很多，現在就可以將赤面豉，加入湯裏，湯已經差不多可以了，我們就將蝦頭拿起，一會兒再加入煲頸</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:53.79" id="00:02:53.79" class="lt" onclick="jumptoTime(173, this.id)"><p>再煲多5分鐘，再加些蔥花就完成了。</p></a>
+</div>
+	</body>
+</html>

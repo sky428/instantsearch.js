@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>吉列炸蠔配秘製他他醬｜祈積奇廚｜Jacques Kagi</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'B5IH_wSQKLI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>吉列炸蠔配秘製他他醬｜祈積奇廚｜Jacques Kagi</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.78" id="00:00:2.78" class="lt" onclick="jumptoTime(2, this.id)"><p>我會在電視做飲食評判和飲食節目嘉賓，終於有機會讓我親自做了，今天我們會做一個吉列蠔，配一個我自己秘製的榨汁，我們有什麼材料呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:26.78" id="00:00:26.78" class="lt" onclick="jumptoTime(26, this.id)"><p>第一件事，我們要準備一個大碗，我們有什麼材料呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.78" id="00:00:31.78" class="lt" onclick="jumptoTime(31, this.id)"><p>第一件事，我們要準備一個大碗，我們有蠔，麵粉，麵包糠和蛋，榨汁的材料，我們有西式鹹魚，我們有酸瓜，我們有這隻叫Capers，通常配三文魚，沙拉醬和芥辣，最後有少許檸檬和香草，我們做吉列蠔的第一個步驟，就是先醃蠔，我們用少許鹽和胡椒粉，最後加少許檸檬汁，讓它去除腥味，我們拌一拌就完成。</p></a>
+				<a href="#00:01:15.78" id="00:01:15.78" class="lt" onclick="jumptoTime(75, this.id)"><p>這裡看到我做了一個吉列的陣，我們通常有三隻碟，先放麵粉，然後放蛋，然後放麵包糠，我們就拿第一隻蠔，先拍一拍麵粉，多了的就拍走，放蛋，然後放麵包糠，很輕地，黏一點麵包糠，有些人很喜歡吃，很喜歡脆的感覺，很喜歡麵包糠的感覺，有些人可以鋪多一次蛋，再鋪多一次麵包糠，我比較喜歡輕一點，所以我通常一層就算了。</p></a>
+				<a href="#00:02:3.74" id="00:02:3.74" class="lt" onclick="jumptoTime(123, this.id)"><p>蠔已經放入雪櫃，我們就可以來做塔塔醬，第一件事就是先準備香草，不要全部拿走，因為最後還要留一些做裝飾品，第一個步驟就是先準備香草，我用這個技巧是用來剁碎食物，一隻手指放在刀頭，當作食力的位置，上下斬東西，放了香草之後，我們就可以三個材料混合切，第一有酸瓜，買酸瓜的時候一定要小心一點，因為酸瓜有分幾種。</p></a>
+				<a href="#00:02:48.86" id="00:02:48.86" class="lt" onclick="jumptoTime(168, this.id)"><p>如果買歐洲的牌子通常會偏酸，但如果買美式的就偏甜，這個菜譜酸的青瓜才適合，先把酸瓜切粒，扣一條鹹魚進去，再加一堆所謂的蝦米，你看到酸瓜和蝦米的比例，大約是50-50，是平均的，鹹魚就看你自己的興趣，這個也是慢慢剁碎，我們切的材料都放進碗裡，就可以混合其他醬料，現在我給一個Tarta Sauce的秘密，買酸瓜的時候。</p></a>
+				<a href="#00:03:38.18" id="00:03:38.18" class="lt" onclick="jumptoTime(218, this.id)"><p>通常會加一些水，這些水加一點進去，這個酸瓜水，會給Tarta Sauce更香的味道，加了酸瓜水，我們加一匙的發芥，然後我們就加胡椒粉和鹽調味，再加一點檸檬汁，最後就可以混合沙律醬，在這個時候，你混合的時候就會看到Tarta Sauce的稠度，如果你看到太稀或太稠，我們都有其他東西可以調整，加兩滴橄欖油。</p></a>
+				<a href="#00:04:21.55" id="00:04:21.55" class="lt" onclick="jumptoTime(261, this.id)"><p>你看到這個稠度，是大約這個稠度，你只要點一個炸蠔上去，它是會黏著醬汁的，就大約可以了，我們終於去到炸蠔這個步驟了，油的溫度大約是中至高，大約是180至200度的油，你怎樣可以看是對與錯呢，拿少許麵包糠放下去，你看到這樣炸，就差不多了，放蠔也有它的方式，我們是把蠔放下去，放了一半下去然後放手。</p></a>
+				<a href="#00:04:57.39" id="00:04:57.39" class="lt" onclick="jumptoTime(297, this.id)"><p>油就不會彈了，麵包糠一吃就準備好了，不需要太久，這個顏色其實剛剛好，我們就可以放在紙上，讓它繼續吸油，我們上碟就可以請朋友吃了，吃之前就加少許檸檬汁，今天這個吉列蠔配這個秘製的塔塔醬就完成了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白酒煮蜆配蒜茸包 張曦雯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'WB20dvk6yXE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>白酒煮蜆配蒜茸包 張曦雯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.63" id="00:00:1.63" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，我是Kelly，張希文，我會教大家煮一些充滿美國特色的菜式，希望大家喜歡吧，今天我要煮白酒煮蜆配Garlic Bread，當然材料有麵包，有蜆，放在這裡淘沙，還有很多牛油，Parmesan cheese，Garlic powder，Parsley，Red pepper flakes，Garlic，Basil，白酒煮蜆當然要有白酒。</p></a>
+				<a href="#00:00:39.63" id="00:00:39.63" class="lt" onclick="jumptoTime(39, this.id)"><p>還有Salt and pepper，現在我先煮Garlic Bread，首先開慢火，可以放牛油，讓它慢慢融化，融化後就可以放在碗裡，融化後就可以放Parsley和Garlic powder，拌勻，之後用Basting brush，把融化的牛油塗在麵包上，塗勻後就可以把麵包鋪在烘烤盤上，然後放進165度的烤箱裡烤10分鐘。</p></a>
+				<a href="#00:01:33.63" id="00:01:33.63" class="lt" onclick="jumptoTime(93, this.id)"><p>烤了10分鐘後就可以把麵包拿出來，灑上Parmesan cheese，再放進烤箱裡烤5分鐘，這樣就完成了，我自己很喜歡吃澱粉質，所以麵包就是我其中一樣很喜歡吃的東西，所以我自己很喜歡吃蒜頭麵，可以自己焗， 很簡單，蒜頭麵可以怎樣吃呢?</p></a>
+				<a href="#00:02:1.39" id="00:02:1.39" class="lt" onclick="jumptoTime(121, this.id)"><p>其實可以配襯很多不同的東西，其中一個做法就是做白酒煮蜆，吃完蜆後， 就可以用蒜頭麵蘸醬汁吃，蜆套齋後就可以把水隔出來，放在一旁備用，現在就放牛油進去，先等牛油融化，然後放蒜片，蒜頭放進牛油煮一會，再放其他香料，現在就放巴西里，然後放香草，視乎大家喜歡吃多辣，就可以放適量的紅辣椒，當然不能少我們的主角。</p></a>
+				<a href="#00:03:7.03" id="00:03:7.03" class="lt" onclick="jumptoTime(187, this.id)"><p>就是白酒，我建議煮白酒煮蜆的時候，選擇一些比較乾的白酒，例如Savignon Blanc或Pinot Gris，千萬不要選擇甜品酒，因為那些會太甜，我們想選擇一些酸一點的，不要用冰酒或甜品酒去煮，然後就可以加些鹽和黑胡椒，攪拌一下</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:2.35" id="00:04:2.35" class="lt" onclick="jumptoTime(242, this.id)"><p>就可以上碟了，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，今天視頻就拍到這，記得幫我訂閱、按讚及分享唷，完成!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:43.56" id="00:04:43.56" class="lt" onclick="jumptoTime(283, this.id)"><p>今天的白酒煮蜆配Garlic Bread就完成了!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>薑蔥蠔｜肥仔 馮嘉橋｜Toffee</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ehqvkgyimrY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>薑蔥蠔｜肥仔 馮嘉橋｜Toffee</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，哇，肥仔師傅不在，讓我先吃我最喜歡的蠔，你不可以這麼貪吃，這些蠔不能生吃，給我，這麼不聽話，為什麼不給你生吃呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:18.87" id="00:00:18.87" class="lt" onclick="jumptoTime(18, this.id)"><p>蠔本身是吃海裡的微生物，這個蠔是香港水域的蠔，所以不可以生吃，只不過可以煮來吃，外國的海比較乾淨，才可以生吃，明白嗎? 明白，這次就不可以了，但是今天我煮一個薑蔥生蠔給你吃，水滾了，先將蠔放入水中，飛一飛上去，不用煮太久，因為這些蠔很新鮮，因為一水滾就可以撈起，很棒。</p></a>
+				<a href="#00:01:2.40" id="00:01:2.40" class="lt" onclick="jumptoTime(62, this.id)"><p>好，差不多了，將每隻蠔夾上來，放在毛巾上，這邊雙手燒紅，拿紙巾上來，在表面慢慢按水，這裡就燒紅一點，是不是吸水後炸的時候不會彈到我，吸水後會彈少一點，現在炸，我們的意願不是炸熟，是將上了粉的金黃色皮，煎香，令外面的皮乾身一點，有一點脆，脆脆的，是的，然後反轉，反轉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:42.88" id="00:01:42.88" class="lt" onclick="jumptoTime(102, this.id)"><p>這樣，好，用手黏一點粉，吸一吸，這樣，然後油開始滾了，只放在表面炸不到你，啊，如果有時你拉油怕火控制不到，關火，再炸一會，這樣，大一點，放下去，我還未開火，聽到有噗噗聲嗎，我看到它彈了，然後反轉，慢慢看到上粉的邊緣，金黃色的，焦邊緣，差不多了，來，好，在這邊可以停一停，將薑、蒜子、乾蔥爆香，為甚麼不加蔥。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:44.88" id="00:02:44.88" class="lt" onclick="jumptoTime(164, this.id)"><p>生蔥熟蒜，蔥永遠是煮好最後才加，因為蔥的味道很有趣，通常是煮好最後才加，蔥味才會出來，明白嗎，反而薑、蒜要煮熟才有味道，看到薑、蒜開始金黃色，是的，香不香，香，差不多了，就加水，自家味道最重要是加蠔油，蠔油大約一湯匙，拌勻，然後加胡椒粉，白胡椒，讓它沒那麼腥，然後加少許鹽，大約半茶匙，如果味道太重。</p></a>
+				<a href="#00:03:37.88" id="00:03:37.88" class="lt" onclick="jumptoTime(217, this.id)"><p>蠔味就會蓋過，如果味道不夠，就不能引出蠔味，醬汁煮好後，蠔味就會全都出來，試味，看看薑、蔥味夠不夠，好，夠了，關火，然後加少許芡，加少許，拌勻，完成，這樣? 對，濃稠了，攪拌均勻後才開火，好，開始開大火，我們埋了芡，蔥，和紅椒放下去，炒一炒後，然後將蠔放下去，大師傅功架，準備即點味 準備，然後，加些酒。</p></a>
+				<a href="#00:04:36.06" id="00:04:36.06" class="lt" onclick="jumptoTime(276, this.id)"><p>是灒酒還是甚麼酒?</p></a>
+				<a href="#00:04:38.06" id="00:04:38.06" class="lt" onclick="jumptoTime(278, this.id)"><p>灒紹酒，灒完酒後香很多，香很多? 對，放些芫荽蔥，完成，我走了 你做甚麼?</p></a>
+				<a href="#00:04:54.06" id="00:04:54.06" class="lt" onclick="jumptoTime(294, this.id)"><p>熟了 說好吃，留些給我。</p></a>
+</div>
+	</body>
+</html>

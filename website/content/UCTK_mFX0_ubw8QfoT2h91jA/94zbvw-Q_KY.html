@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蝦子炆海參｜林淑敏｜許家傑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '94zbvw-Q_KY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蝦子炆海參｜林淑敏｜許家傑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.68" id="00:00:2.68" class="lt" onclick="jumptoTime(2, this.id)"><p>我們中國人飲食很有智慧，繼粥粉麵飯四大發明後，就有包心、刺肚，心就不是人心，是… 開心，今天我們找來的是急凍海參，我們看到一條海參裡面有抽腸，其實你很喜歡吃，而且你經常都會吃，你知道是什麼嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.27" id="00:00:42.27" class="lt" onclick="jumptoTime(42, this.id)"><p>山腸?</p></a>
+				<a href="#00:00:44.47" id="00:00:44.47" class="lt" onclick="jumptoTime(44, this.id)"><p>不是，有一個橙色，有一個肉色的，那個什麼花旁、櫻花旁、桂花旁，其實就是海參的來頭，其實煮海參可以有很多配料，我們今天準備了黑木耳、蘿蔔和西芹，為什麼用西芹呢?</p></a>
+				<a href="#00:01:0.27" id="00:01:0.27" class="lt" onclick="jumptoTime(60, this.id)"><p>因為用芹菜味道太濃，搶了蝦子的味道，所以我們選用西芹，而且很健康，沒錯，山東菜有一個特色，就是蔥燒海參，我們今天也準備了蔥，但是我們先用蝦子，是，我們現在首先要做什麼呢?</p></a>
+				<a href="#00:01:17.07" id="00:01:17.07" class="lt" onclick="jumptoTime(77, this.id)"><p>我們要把鍋子爆香，我們現在先放配料，好，我們放薑蒜，很多人用刀去削薑，但其實用匙羹去削會更省，真的可以，薑皮薄薄的就會掉，我自己吃薑，我會連薑皮一起吃，這麼多薑，所以我不會削，接下來我們把所有配料倒進去，但是有層次的，層次是怎樣的?</p></a>
+				<a href="#00:01:48.27" id="00:01:48.27" class="lt" onclick="jumptoTime(108, this.id)"><p>層次是比較難熟的東西才倒，難熟的，我經常覺得蘿蔔很難熟，剛剛說吃生的黑木耳會中毒，這個可以降血壓，這個菜式很好，我想說海參是零脂肪，而且全條都是含很高的蛋白質，所以是很有益的食物，健身適合，零蛋固醇，海參在名貴食材來說，也算是很健康的，它整條都是氧化鎮，整條氧化鎮?</p></a>
+				<a href="#00:02:20.03" id="00:02:20.03" class="lt" onclick="jumptoTime(140, this.id)"><p>說不出來了，其實在發的過程，我們可以加熱水去發，而且海參通常都是用來炆的，也不會擔心不熟的問題。</p></a>
+				<a href="#00:02:30.83" id="00:02:30.83" class="lt" onclick="jumptoTime(150, this.id)"><p>我們加一點鹽，加一點糖。</p></a>
+				<a href="#00:02:33.71" id="00:02:33.71" class="lt" onclick="jumptoTime(153, this.id)"><p>海鮮也難免會有一點海鮮的蕉味，我們加一點胡椒粉，我們加生抽、老抽，煮海參不知道為什麼，跟煮蠔一樣，一定要加蠔油，是，加一點蠔油。</p></a>
+				<a href="#00:02:49.07" id="00:02:49.07" class="lt" onclick="jumptoTime(169, this.id)"><p>最後我們加一點酒。</p></a>
+				<a href="#00:02:52.19" id="00:02:52.19" class="lt" onclick="jumptoTime(172, this.id)"><p>加一點上湯或水也可以，因為我們要炆它，最好用中碼碼，為何睡醒了?Jack，我在看房間，究竟要看多久，我想差不多可以了，我如何決定呢，嗯，樣子很漂亮，還有蘿蔔開始軟了，所以我堅持這個菜式會加蘿蔔，哦，即是蘿蔔是一個選擇，是的，蘿蔔都熟了，海參還未熟，我不相信，這個時候其實還未可以，我們加西芹。</p></a>
+				<a href="#00:03:30.47" id="00:03:30.47" class="lt" onclick="jumptoTime(210, this.id)"><p>開大火一點，沒錯，為何我們剛才不加西芹呢，我知道，為甚麼呢，因為西芹如果放太久，它會變黃，還有它會變色，是的，還有盡量不要讓西芹搶了，這個蝦子燒海參的味道，因為西芹都是濃味的東西，我們先焗一下就算了，我經常都覺得有西芹，海參就不會那麼腥。</p></a>
+				<a href="#00:03:55.99" id="00:03:55.99" class="lt" onclick="jumptoTime(235, this.id)"><p>整個味道會濃一點，這個時候我們，多了一個層次，沒錯，這個時候我們才加蔥，還有顏色也漂亮很多，沒錯，很適合做節，在這個時候，這一刻我們就加蝦子，為甚麼這個時候才加呢，不當時加呢，因為蝦子放得太久，它不會很美味，加多一點，嘩，蝦子立刻成了一個美味的料，原本打算加芡，但我覺得也夠了，好了，可以上碟了。</p></a>
+				<a href="#00:04:26.55" id="00:04:26.55" class="lt" onclick="jumptoTime(266, this.id)"><p>好，等一下，欠一個步驟，好，是甚麼，哈哈哈，好煩。</p></a>
+				<a href="#00:04:33.83" id="00:04:33.83" class="lt" onclick="jumptoTime(273, this.id)"><p>送給大家。</p></a>
+</div>
+	</body>
+</html>

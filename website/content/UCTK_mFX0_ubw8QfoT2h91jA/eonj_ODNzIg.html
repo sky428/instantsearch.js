@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>過橋響螺｜Jacky Chung｜鍾志強</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'eonj_ODNzIg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>過橋響螺｜Jacky Chung｜鍾志強</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.16" id="00:00:3.16" class="lt" onclick="jumptoTime(3, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，我是Jacky Chung， 東志強，以前 Ju skirt cay</p></a>
+				<a href="#00:00:28.69" id="00:00:28.69" class="lt" onclick="jumptoTime(28, this.id)"><p>uine，کرChristian，त � Micro那，ALISSA，shaft，relatives，smelling，refreshed，baptism，bunlar，rail，�i，再來 loaded，exhale，Your，adım，Dec taken，Duncan，след 해야，pee。</p></a>
+				<a href="#00:00:25.75" id="00:00:25.75" class="lt" onclick="jumptoTime(25, this.id)"><p>seeds，짜，Plaid，emphasis，scattered，dessus，induct 물어�價</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:38.65" id="00:00:38.65" class="lt" onclick="jumptoTime(38, this.id)"><p>beloved，zie，переж，Life，inverted，коман，doctoral，達iyet，…)，2009</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:31.69" id="00:00:31.69" class="lt" onclick="jumptoTime(31, this.id)"><p>who，е，saber，Environmental，씨，озможно，晚 recibir，stars，Poll feminine，Оп burned，fort，polarization，Zoompe，Sav vulnerability，Vide � Luis，allergies，atore。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:30.51" id="00:00:30.51" class="lt" onclick="jumptoTime(30, this.id)"><p>Cavevania，Why skill，Barbie，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，給大家一點提示，因為我們起螺的時候，一定要把螺的外圍切得很韌，要切到螺心才能拿來給客人吃，就會很脆、很鮮甜，至於湯底， 一定要用新鮮蝦，即時熬得很濃郁， 讓它鮮上加鮮，這就是我們的小小貼士。</p></a>
+				<a href="#00:02:28.86" id="00:02:28.86" class="lt" onclick="jumptoTime(148, this.id)"><p>字幕由Amara.org社区提供。</p></a>
+</div>
+	</body>
+</html>

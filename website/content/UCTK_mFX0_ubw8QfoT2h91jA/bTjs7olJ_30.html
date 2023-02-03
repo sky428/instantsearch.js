@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>馬頭魚伴荷蘭醬 | Candy Fong</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'bTjs7olJ_30',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>馬頭魚伴荷蘭醬 | Candy Fong</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.63" id="00:00:1.63" class="lt" onclick="jumptoTime(1, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，我會做馬頭配荷蘭醬</p></a>
+				<a href="#00:00:10.67" id="00:00:10.67" class="lt" onclick="jumptoTime(10, this.id)"><p>主要材料是馬頭，荷蘭醬需要蛋黃、牛油和檸檬，魚的做法跟平時做法有點不同，首先要把魚的水份吸乾，然後加少許鹽和胡椒粉，然後再加少許水。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.67" id="00:00:31.67" class="lt" onclick="jumptoTime(31, this.id)"><p>我會用鉗夾住魚皮，魚皮是不能碰到魚皮的。</p></a>
+				<a href="#00:00:43.67" id="00:00:43.67" class="lt" onclick="jumptoTime(43, this.id)"><p>魚皮是不能刮到魚鱗的，魚肉夾緊，不要碰到油，只要魚鱗和魚皮碰到油。</p></a>
+				<a href="#00:00:53.67" id="00:00:53.67" class="lt" onclick="jumptoTime(53, this.id)"><p>魚肉可以用油輕輕地流一點，現在只是魚皮炸，大家可以看到魚鱗已經變直了，魚肉之前已經淋過少許油，淋了10下。</p></a>
+				<a href="#00:01:10.67" id="00:01:10.67" class="lt" onclick="jumptoTime(70, this.id)"><p>我們想用蓋子蓋住魚肉焗熟，可以保留魚身滑一點，魚皮就會脆，做法對於魚的菜式比較複雜，我失敗了很多次，最後都成功了，很開心可以分享給大家，這段時間我們會做荷蘭汁，我們只需要蛋黃在熱水中，我們不會碰到水，只要在上面。</p></a>
+				<a href="#00:01:41.67" id="00:01:41.67" class="lt" onclick="jumptoTime(101, this.id)"><p>然後就開始，這是荷蘭醬的竅門，就是用蒸氣令蛋黃熟，但不可以太熟，太熟的話就不夠滑，蛋黃發好後就加牛油，在法國之前學過的做法，就是先煮牛油，然後只需要透明的油，就是Caramelized Butter，但我這個比較懶的做法，就是把整個牛油倒進去，看到醬汁變滑了，差不多可以了，加少許檸檬汁。</p></a>
+				<a href="#00:02:18.67" id="00:02:18.67" class="lt" onclick="jumptoTime(138, this.id)"><p>我們要加鹽和胡椒粉。</p></a>
+				<a href="#00:02:22.67" id="00:02:22.67" class="lt" onclick="jumptoTime(142, this.id)"><p>完成了，我會把醬汁放在半碟上。</p></a>
+				<a href="#00:02:30.67" id="00:02:30.67" class="lt" onclick="jumptoTime(150, this.id)"><p>魚也完成了，謝謝收看，加少少香菜，再灑少少，謝謝觀看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:46.84" id="00:02:46.84" class="lt" onclick="jumptoTime(166, this.id)"><p>MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 乾煎明蝦</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'JL9-sdaABmU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 乾煎明蝦</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.57" id="00:00:0.57" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕by索兰娅🐰，今日我會和大家示範乾煎明蝦，這道菜有很多不同的演繹方法，但今日我會用一些驚惚的做法，有少少辣 有少少酸酸的，你看到蝦已經處理過，將頭、尖部、鬚和腳用剪刀剪開，洗乾淨後用廚紙吸乾淨才半煎炸，油已經預熱了，現在可以將蝦半煎炸，我會先用中火，因為大蝦身形較大，而且殼較厚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:48.30" id="00:00:48.30" class="lt" onclick="jumptoTime(48, this.id)"><p>如果直接煮的時候，肉還未熟，反而殼已燒焦，這個方法可以確保回鑊時，蝦不會煮焦，半煎炸時也要留意，蝦頭要將它半煎炸至較實的橙色，因為蝦身很快熟，你會看到蝦身開始彎曲，即是蝦身開始熟，但我想確保蝦頭熟的時候，我會再將它炸一炸，蝦差不多熟了，可以關火，將蝦夾起放入隔油紙，先將它隔油，隔油時可以煮醬汁。</p></a>
+				<a href="#00:01:35.94" id="00:01:35.94" class="lt" onclick="jumptoTime(95, this.id)"><p>先加少許油到鑊，爆香蒜蓉和薑蓉，將薑蓉和蒜蓉爆香後，我們會加其他材料，我會加豆瓣醬和茄汁，如果有朋友不想吃太濃味，其實有些材料可以不加，豆瓣醬、醋可以不加，然後加少許海鮮湯，加完海鮮湯後，將它煮至微沸，然後將剛才半煎炸的蝦放入鑊中，煨一煨，要將它反轉，兩面都要有少許汁沾上去，酒釀可以加進去。</p></a>
+				<a href="#00:02:32.46" id="00:02:32.46" class="lt" onclick="jumptoTime(152, this.id)"><p>令它更加濃味，加少許糖，這個就是米醋、米酒，因為米酒可以去除腥味，還有紅醋加進去，還有少許胡椒粉，醬汁和所有材料都煮至均勻，醬汁也比較稠就可以了，差不多了，我們也要把蝦反轉，其實作用就是讓蝦可以吸收所有醬汁，現在可以撒上少許蔥粒，乾煎明蝦已經差不多煮好了，可以關火，然後上碟，再淋上醬汁。</p></a>
+				<a href="#00:03:24.97" id="00:03:24.97" class="lt" onclick="jumptoTime(204, this.id)"><p>再放少許蔥絲，好了，這個乾煎明蝦就做好了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>法式龍蝦湯 Candy Fong</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'glE0-x1Dw9g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>法式龍蝦湯 Candy Fong</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.55" id="00:00:3.55" class="lt" onclick="jumptoTime(3, this.id)"><p>完成，完成，今天我會教大家做法式龍蝦湯，首先我會去買一隻新鮮龍蝦，然後放入冰箱冷凍，之後再煮10分鐘，然後拆殼去肉，好，我們的龍蝦已經預先處理好了，我們現在切龍蝦肉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:30.27" id="00:00:30.27" class="lt" onclick="jumptoTime(30, this.id)"><p>這個龍蝦肉非常大塊，有10塊肉，另外做完這個龍蝦肉就可以去龍蝦殼</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:39.03" id="00:00:39.03" class="lt" onclick="jumptoTime(39, this.id)"><p>我先剪了竹鼠，腳也可以剪掉，剪完之後就會將龍蝦煎香，煎香之後就會放茄膏和白酒，然後煲湯，平時一般中式的煮法會拿走沙囊，但因為我之前在法國學，要原汁原味，全部都拿來煎，最後才隔渣，要湯汁，油不用放太多。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:13.43" id="00:01:13.43" class="lt" onclick="jumptoTime(73, this.id)"><p>我們煮開了油，就開始放龍蝦殼，之前已經煮了，所以它本身是橙色的，但我們想炒到它香，可以稍微煮一煮。</p></a>
+				<a href="#00:01:30.71" id="00:01:30.71" class="lt" onclick="jumptoTime(90, this.id)"><p>煎香後，其實聞到很香，就可以放茄膏，炒香它，OK，我們現在可以煮一會，我們現在加白酒，白酒是要蒸發到全部都沒有了，才加水，加一點濃的魚湯醬，等到滾了就蓋上，中小火，煲一小時，其實我之前在法國學，是連菜、紅蘿蔔、番茄、蒜蓉和洋蔥，和龍蝦殼一起炒，最後要加少許米粉，米粉讓它稠一點，但我自己回家後就轉了食譜。</p></a>
+				<a href="#00:02:22.55" id="00:02:22.55" class="lt" onclick="jumptoTime(142, this.id)"><p>分開菜和龍蝦湯煮，olo，entreambre，因為這樣小朋友就可以吃到菜的營養和纖維。</p></a>
+				<a href="#00:02:33.39" id="00:02:33.39" class="lt" onclick="jumptoTime(153, this.id)"><p>先放蒜蓉，洋蔥，其實你會看到顏色變深了，即是差不多了，就可以再放西芹，西芹之後就放紅蘿蔔，很多菜的，之後就放番茄，番茄不要去皮，因為番茄有苦味，所以我們就去皮，皮就可以了，蓋上蓋子，焗一會就完成了，番茄已經軟了，這個時候可以加少少粘米粉。</p></a>
+				<a href="#00:03:15.63" id="00:03:15.63" class="lt" onclick="jumptoTime(195, this.id)"><p>輕輕炒一下就可以了，放湯，這個湯已經熬了一個小時了。</p></a>
+				<a href="#00:03:25.83" id="00:03:25.83" class="lt" onclick="jumptoTime(205, this.id)"><p>這個方法就是，再煮多15分鐘菜和湯，菜就會吸收龍蝦味，話說我老公說自己對西芹敏感，但大家都知道，我這個龍蝦湯是有西芹這個成份的，他喝完之後說很好吃，但他什麼都沒有，現在湯已經熬了15分鐘。</p></a>
+				<a href="#00:03:54.23" id="00:03:54.23" class="lt" onclick="jumptoTime(234, this.id)"><p>可以攪拌一下，OK 完成了。</p></a>
+				<a href="#00:04:2.63" id="00:04:2.63" class="lt" onclick="jumptoTime(242, this.id)"><p>你看到它全部攪拌爛了，這個時候我就會加忌廉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:7.43" id="00:04:7.43" class="lt" onclick="jumptoTime(247, this.id)"><p>攪拌均勻，首先我會先放龍蝦肉，之後就可以放乾鴨，這個乾鴨很重要，因為它可以令龍蝦湯提升很多很多，但兒童不宜，小朋友就要避開這個，完成。</p></a>
+</div>
+	</body>
+</html>

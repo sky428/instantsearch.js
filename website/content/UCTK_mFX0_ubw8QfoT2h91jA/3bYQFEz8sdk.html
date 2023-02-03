@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰式魚餅 |玻璃朱Bonnie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3bYQFEz8sdk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰式魚餅 |玻璃朱Bonnie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.29" id="00:00:3.29" class="lt" onclick="jumptoTime(3, this.id)"><p>Hello，我是Bonnie，很多人都叫我做玻璃珠，今次為大家示範的是泰菜，是我很多年前在泰國學的，泰式魚餅，我首先介紹材料，魚今次用鯪魚，如果想它彈牙可以用膠魚，紅咖哩醬、檸檬葉、豆角切碎，還有芫荽莖，用泰國菜切根和框，還有切碎的蒜頭，首先切魚，魚在街市買都可以買絞碎的，但我個人比較喜歡用手剁。</p></a>
+				<a href="#00:01:4.21" id="00:01:4.21" class="lt" onclick="jumptoTime(64, this.id)"><p>因為用手剁會較好，鯪魚本身有骨，所以要切得很幼很薄，之後再切碎，這樣就可以將骨切斷，用手腕力切肉，不要用肩膀力，如果用肩膀力，手抽筋也切不完肉，加少少鹽， 令魚肉容易起膠，加了鹽後， 將魚肉打碎，快點起膠，然後用力打， 令魚肉容易起膠，魚肉彈起時， 會一團，魚肉不會散開， 即可調味，磨盅對泰國菜來說是很重要的煮食器具。</p></a>
+				<a href="#00:02:20.86" id="00:02:20.86" class="lt" onclick="jumptoTime(140, this.id)"><p>因為泰國人喜歡磨盅， 這樣才能發揮配料的香味，加芫荽和蒜頭，泰國人喜歡將沙律放進去， 將它們磨碎，這樣才能令味道更突出，粽子已煮好， 可將它們放入魚肉，將切好的豆角放入魚肉，切絲的檸檬葉，紅咖喱醬約兩湯匙，魚露約兩湯匙，胡椒粉、糖和豉油約半湯匙，調味料後， 先拌勻，如果喜歡用手， 可以用手或手套。</p></a>
+				<a href="#00:03:26.86" id="00:03:26.86" class="lt" onclick="jumptoTime(206, this.id)"><p>用手搓揉會較容易起膠和均勻，拌勻後， 再加少許雞蛋，雞蛋不用全放進去， 視乎魚肉的濕度，總之要加點黏力，拌勻後， 再打一打魚膠，打一打會較稠，將魚膠放入雪櫃冷藏約15分鐘，然後就可以做魚餅，雪櫃冷藏會較硬， 容易做魚餅，雪藏的魚膠可以搓成魚餅， 再煎，拿一塊出來， 在手上搓圓，先搓圓， 再按扁。</p></a>
+				<a href="#00:04:30.78" id="00:04:30.78" class="lt" onclick="jumptoTime(270, this.id)"><p>大小不一不要緊， 但厚度要接近，不要太厚太薄，油溫達到180度， 就可以開始炸了，炸東西通常是160至180度左右，萬一沒有油溫計，把筷子放到中間，看到有泡沫上來， 但還沒冒煙就行了，如果冒煙， 通常是200度就太熱了，開頭用大火炸， 之後用中大火，魚很快熟， 每邊煎1.5分鐘就行，大約3分鐘就熟了。</p></a>
+				<a href="#00:05:25.31" id="00:05:25.31" class="lt" onclick="jumptoTime(325, this.id)"><p>開頭和最後都要用大火把油逼出來，炸東西時， 千萬別關火才上碟，因為關火， 油溫一降，油就會倒吸到肉上，所以千萬別關火，再翻一翻，炸得很漂亮吧?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:14.47" id="00:06:14.47" class="lt" onclick="jumptoTime(374, this.id)"><p>字幕由Amara.org社匹配方提供。</p></a>
+</div>
+	</body>
+</html>

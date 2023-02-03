@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>芒果醬大蝦｜Jacky Yu 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'W2acAxEcAzo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>芒果醬大蝦｜Jacky Yu 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.07" id="00:00:4.07" class="lt" onclick="jumptoTime(4, this.id)"><p>Hello， 我是JK Yu，我很喜歡烹飪，很喜歡將不同地方的食材、味道和烹飪方法，融合在一起，成為我的特色和風格，開胃清新的菜式特別適合夏天，尤其是用水果煮的菜式，今天選了芒果做蝦煮的味道，芒果醬炒大蝦，材料很簡單，首先有芒果，芒果的部分我切粒用來做裝飾，部分我起肉，等等就打成芒果醬。</p></a>
+				<a href="#00:00:38.71" id="00:00:38.71" class="lt" onclick="jumptoTime(38, this.id)"><p>蝦可以買大一點的虎蝦，可以剪成鬚和腳，中間開了一半，最重要是把蝦的水吸乾，令它不會太濕，然後加少許鹽，令它有少許底味，然後我們可以做芒果醬，首先把芒果肉打成芒果醬，因為芒果本身有很多纖維，所以想它幼細一點，我們一定要將它切開，去掉纖維，這樣做出來的芒果醬就更幼滑，我們可以加少許甜味，我這次不選用砂糖。</p></a>
+				<a href="#00:01:18.43" id="00:01:18.43" class="lt" onclick="jumptoTime(78, this.id)"><p>選用少許煉奶，因為煉奶的甜味帶有creamy的感覺，適合做這個醬，加沙律醬和檸檬汁，令味道甜甜酸酸，有少許鹹味，全部攪拌均勻，剛剛好，做好醬汁後放一旁備用，然後可以煎蝦，將蝦煎至七八成熟，千萬不要太熟，太熟的話回鑊時，蝦很容易會老，老了就不好吃，然後可以煮了，燒完鑊，煮溶牛肉後，可以將芒果醬放進去。</p></a>
+				<a href="#00:02:2.75" id="00:02:2.75" class="lt" onclick="jumptoTime(122, this.id)"><p>煮到芒果醬起泡，很熱的時候，可以將蝦回鑊，然後攪拌均勻，令每一隻蝦粒都黏滿芒果醬，然後可以上碟了，又簡單又容易做，清新開胃，適合夏天食。</p></a>
+</div>
+	</body>
+</html>

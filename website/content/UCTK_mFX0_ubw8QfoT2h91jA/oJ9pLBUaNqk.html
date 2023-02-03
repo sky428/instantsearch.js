@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰式生蝦 | 玻璃朱Bonnie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'oJ9pLBUaNqk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>泰式生蝦 | 玻璃朱Bonnie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，Hello，我是Bonnie，很多人都叫我做玻璃珠，今次為大家示範的菜式我很喜歡吃，就是泰式生蝦，空氣冷飽了，我去泰國一定吃，去泰國餐廳一定點，在家做也很容易，找到最新鮮的蝦就行，介紹一下材料，生蝦，用九折蝦，九折蝦，有九折，泰式醬，青辣椒，蒜頭、芫茜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.93" id="00:00:55.93" class="lt" onclick="jumptoTime(55, this.id)"><p>魚露、青檸汁，糖，蝦仍有活動，回來後不用洗，切開，撕開頭，然後剝殼，為什麼不用洗蝦，用淡水洗很容易沒味，撕開最後一節，在蝦背，切開，這隻九折蝦，通常沒有腸，所以可以，如果有就不用洗，如果有就拿走，浸在冰水，把蝦都這樣處理，蝦都宰好，浸在冰水，一會，5至10分鐘就行，令蝦肉更爽身，放在碟上，用保鮮紙包住，放入冰箱冷凍。</p></a>
+				<a href="#00:01:53.93" id="00:01:53.93" class="lt" onclick="jumptoTime(113, this.id)"><p>現在開始調泰式醬，泰國人，當芫茜根是寶，我們中國人，切芫茜根丟掉，他們醃肉，都一定用芫茜根，千萬不要丟掉，最緊要洗乾淨，現在把所有材料，切碎，反而留下葉子，另外，放綠色泰國辣椒，如果吃辣就放三隻，不吃辣就放兩隻，適量，當然放蒜頭，然後放調味料，泰國人一定要放魚露，他們不放鹽，什麼都放魚露，調味。</p></a>
+				<a href="#00:02:41.93" id="00:02:41.93" class="lt" onclick="jumptoTime(161, this.id)"><p>青檸汁，青檸汁多過魚露，糖，煮辣一定要用糖，調味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:21.93" id="00:03:21.93" class="lt" onclick="jumptoTime(201, this.id)"><p>謝謝觀看。</p></a>
+</div>
+	</body>
+</html>

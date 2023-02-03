@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鮑魚花膠海參好市煲｜Shanice 鍾皓晴</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'T9qAL5er4ck',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>鮑魚花膠海參好市煲｜Shanice 鍾皓晴</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，又見到我，Chanice了，通常我們吃團年飯時，很喜歡吃花膠、海參、蠔豉等，今天就跟大家分享，花膠、海參、鮑魚蠔豉煲，現在介紹材料，蠔絲，這是金蠔，海參，可以先發酵，用滾水浸泡兩至三晚，發酵至厚身就可以了，還有花膠，也是先發酵，視乎花膠的厚度，不太厚的就蒸8至10分鐘，用滾水浸泡幾小時就可以了。</p></a>
+				<a href="#00:00:56.29" id="00:00:56.29" class="lt" onclick="jumptoTime(56, this.id)"><p>還有新鮮的鮑魚、花菇，也要浸泡一會，還有五花腩，用來爆香蒜頭，蠔油和雞湯，我喜歡自己做雞湯，因為自己做比較健康，沒有防腐劑，又特別香，我通常會買雞骨、雞肝、西施骨，煲一煲兩小時，煲一大鍋放進冰箱慢慢用，首先開火，熱一熱鍋，放少許油，爆香蒜頭，爆到有少許金黃色，然後放五花腩爆香，五花腩的火候不用太大。</p></a>
+				<a href="#00:01:46.29" id="00:01:46.29" class="lt" onclick="jumptoTime(106, this.id)"><p>用中火，可以用肥肉撈鑊邊，差不多有少許金黃色，撈起所有材料，放入金蠔，蠔豉、金蠔，我喜歡吃，過年我一定會吃這個菜，煎到金黃色，翻一翻，輕輕煎一煎，隔起，煎第二樣東西，金蠔這樣吃已經很好吃，煎鮑魚，煎到金黃色，將所有材料放入鍋中，炒香，煎完後就可以用大鍋慢慢炆，放海參、菇，火調小一點，放入香的雞湯。</p></a>
+				<a href="#00:03:21.84" id="00:03:21.84" class="lt" onclick="jumptoTime(201, this.id)"><p>你看有多少骨膠原，熱騰騰的，自己煮的雞湯是不同的，放入蠔油，蓋上蓋子，15分鐘後，放入花膠，蓋上蓋子，再炆45分鐘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:59.23" id="00:03:59.23" class="lt" onclick="jumptoTime(239, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>橙花斑球 | 黃亞保 | 保哥</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0Q2PLe1ZSKg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>橙花斑球 | 黃亞保 | 保哥</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，又來到Big Big Chef的暖巴廚房時間，今天透過這個菜式，可以令新人不經不覺地喝了新鮮的橙汁，我們有新鮮的橙，濃縮的橙汁，還有事先醃好的班球，還有雞蛋，當然少不了生粉，事不宜遲，我們先把橙汁榨出來，橙皮可以切去皮下面白色的部分，剩下的橙皮可以抹乾淨，切一些幼的橙皮。</p></a>
+				<a href="#00:00:52.81" id="00:00:52.81" class="lt" onclick="jumptoTime(52, this.id)"><p>整個菜式完成後，就很可口，又可以令新人流口水，橙汁榨完後，我們要處理班球，班球事先醃好，現在就加一些雞蛋，加雞蛋的好處是，蒜頭容易上粉，顏色更金黃，第三，更加香，蛋香味榨出來的班球非常可口，然後就繼續蘸生粉，蘸粉千萬不要太厚，太厚的生粉不好吃，蘸多厚都好，上碟前一定要搖一搖，再放上來。</p></a>
+				<a href="#00:01:43.47" id="00:01:43.47" class="lt" onclick="jumptoTime(103, this.id)"><p>粉減了，然後我們把班球拿去炸，炸東西千萬不要吝嗇火候，火候一定要有猛都有猛，當然不要燒到出白煙，如果出白煙就著火，為什麼要猛油呢?</p></a>
+				<a href="#00:01:59.47" id="00:01:59.47" class="lt" onclick="jumptoTime(119, this.id)"><p>因為我們放的粉，油不冷不熱就會滑出來，滑出來的不好處就是它會含油，即是會黏油，我們簡稱黏油，就不會那麼脆了，放完之後，休息10秒，我們先不要動它，讓它定型，我們再攪拌它，否則粉就會掉了，當班球上面的粉定型之後，我們就把它反過來，有時候我們不想生粉也沒問題，我們沾麵包糠，變成這個吉列的班球，我想小朋友更加喜歡吃。</p></a>
+				<a href="#00:02:38.19" id="00:02:38.19" class="lt" onclick="jumptoTime(158, this.id)"><p>我們炸這類型的班球或咕嚕肉也好，大同小異，我們一定要炸兩重，第一次，等它定型，六七成熟了，我們夾起它，讓鍋底的水揮發一點，第二次放進去的班球，這個時候就是拿顏色，再加上拿口感的重點，油溫也差不多了，將班球再倒進去，再翻炸</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.19" id="00:03:17.19" class="lt" onclick="jumptoTime(197, this.id)"><p>顏色變成金黃色了，要立刻撈起來，放在索油紙上吸油，這個時候我們要處理主角，主角是橙汁，橙汁當然要加進去，我們將新鮮榨出來的橙汁，先倒入鑊內，然後再把濃縮的橙汁放進去，不要一次倒完，分兩次，再加上橙，橙粒有口感，大家會有個問題，為何沒有糖，因為我剛才試過，新鮮的橙不是太酸，再加上濃縮的橙汁帶點甜。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:11.00" id="00:04:11.00" class="lt" onclick="jumptoTime(251, this.id)"><p>兩者混合，味道就剛剛好，然後把三粉水準備好，現在開始埋芡，埋芡一定要慢慢加，不要太心急，否則粉粒會起粒粒，就不漂亮，芡夠不夠深，加完三粉後，一定要把火調大，煮到三粉熟透，不夠稠才算準確，水柱狀的就不夠深，橙汁就準備好了，待會就澆在班球面上，暖巴推介橙花班球，希望你們喜歡。</p></a>
+</div>
+	</body>
+</html>
