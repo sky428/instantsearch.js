@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>四川麻辣雞煲 | 歐陽巧瑩</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'WkTSzf27VM0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>四川麻辣雞煲 | 歐陽巧瑩</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.01" id="00:00:2.01" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是BBCHef的各位朋友，你們好，今天我會煮麻辣雞煲，因為我喜歡吃辣，可惜我另一半不吃辣，平時很少可以外出吃雞煲，因為我一個人吃不完，所以也會約朋友來家中一起吃雞煲，再吃火鍋，所以覺得很棒，這次的雞煲材料好像很簡單，最主要是薑片、紅蔥頭、蒜頭，就這樣拍碎，因為如果切成蒜蓉。</p></a>
+				<a href="#00:00:45.27" id="00:00:45.27" class="lt" onclick="jumptoTime(45, this.id)"><p>吃的時候，香味太攻鼻，蒜頭味會搶走其他味道，所以就這樣拍碎，味道已經足夠，千萬不要切蒜蓉，還有紫洋蔥，之後就有雞腿，正常應該是全雞，自己一個人吃，或者兩三個人份量，就買隻小雞，我買雞腿是因為多點肉和容易吃，醃雞翅其實很簡單，就是用生抽、老抽、生粉、酒、糖和麻油醃過晚，醃一晚放在雪櫃下格。</p></a>
+				<a href="#00:01:22.83" id="00:01:22.83" class="lt" onclick="jumptoTime(82, this.id)"><p>翌日就可以拿出來煮，首先要先把鍋爆香，油不用放太多，因為放了雞腿之後，雞皮會出很多油，所以放大約五塊銀，現在就放薑片、紅蔥頭和蒜頭，下去炒香，炒到差不多，開始聞到有味道，就可以加雞腿肉，因為下面醃過晚會有些汁，汁多了就不要加，因為很鹹，就只放雞腿肉，放了雞腿之後，煎到兩邊有金黃色就可以加洋蔥和其他調味料，等它變色。</p></a>
+				<a href="#00:02:33.55" id="00:02:33.55" class="lt" onclick="jumptoTime(153, this.id)"><p>OK，完成了，加洋蔥，雞湯，communural success，jasein</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:46.45" id="00:02:46.45" class="lt" onclick="jumptoTime(166, this.id)"><p>largely，letters，Call，driver</p></a>
+				<a href="#00:02:48.23" id="00:02:48.23" class="lt" onclick="jumptoTime(168, this.id)"><p>настоящ，합니다</p></a>
+				<a href="#00:02:46.77" id="00:02:46.77" class="lt" onclick="jumptoTime(166, this.id)"><p>Egg，piles，rats</p></a>
+				<a href="#00:02:47.01" id="00:02:47.01" class="lt" onclick="jumptoTime(167, this.id)"><p>nelle，expectations，雞湯放到差不多蓋過表面就可以了，好了， 現在剛好煮沸了，其實一聽到它滾滾滾滾，就可以加蠔油，還有最棒的麻辣醬，加多一點…，其實多少辣醬是因人而異的，蠔油一湯匙，如果之後試味，因為每個人煮的雞湯和水的份量，都未必一樣，所以要自己試味，不夠的話就再加一點蠔油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:36.89" id="00:03:36.89" class="lt" onclick="jumptoTime(216, this.id)"><p>然後加最好的八角粒，還有椒麻粉，我喜歡加少許白胡椒粉，因為可以去除腥味，雖然已經有薑片，不過加少許會有白胡椒的香味，加少許糖，其實少到是雀亮，現在要等它煮沸，然後等它煮至收水，因為雞腿挺大隻，所以要煮一段時間，調味料都加進去了，現在轉小火，蓋上蓋子，等它煮10分鐘，回來看看它收水了沒有，煮至差不多看到汁開始變稠。</p></a>
+				<a href="#00:04:33.33" id="00:04:33.33" class="lt" onclick="jumptoTime(273, this.id)"><p>就可以再加其他配料，現在打開，雞已經煮熟了，把芡也加進去，大功告成，加芡前先加少許辣椒，然後加完辣椒，再加生粉水進去埋芡，加了生粉水之後，你會很快看到它收乾水分，就可以加芫荽和蔥，好，把蔥也加進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:8.69" id="00:05:8.69" class="lt" onclick="jumptoTime(308, this.id)"><p>再炒幾下，完成，上碟，好，讓我先弄得漂亮一點，甚麼，adore squirrel</p></a>
+				<a href="#00:05:27.47" id="00:05:27.47" class="lt" onclick="jumptoTime(327, this.id)"><p>approwa，вып，الأ nano</p></a>
+				<a href="#00:05:28.39" id="00:05:28.39" class="lt" onclick="jumptoTime(328, this.id)"><p>걸로，분�orious，räge</p></a>
+				<a href="#00:05:26.53" id="00:05:26.53" class="lt" onclick="jumptoTime(326, this.id)"><p>courageous，прис，уже mondo</p></a>
+				<a href="#00:05:27.47" id="00:05:27.47" class="lt" onclick="jumptoTime(327, this.id)"><p>甚麼，dishwasher，cured</p></a>
+				<a href="#00:05:27.73" id="00:05:27.73" class="lt" onclick="jumptoTime(327, this.id)"><p>ase，drummer，49，Mins，red，photos governing，用雞腿煮真的比較好，千萬不要浪費，倒入醬汁，訂閱鬼鬼，按讚鬼鬼</p></a>
+				<a href="#00:05:57.47" id="00:05:57.47" class="lt" onclick="jumptoTime(357, this.id)"><p>MING PAO CANADA // MING PAO TORONTO。</p></a>
+</div>
+	</body>
+</html>

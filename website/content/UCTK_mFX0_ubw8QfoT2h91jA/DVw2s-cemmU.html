@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>法式燉雞 | 黃長興</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'DVw2s-cemmU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>法式燉雞 | 黃長興</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.29" id="00:00:3.29" class="lt" onclick="jumptoTime(3, this.id)"><p>大家好，我是王焯興，為大家煮法國菜，今次為大家煮Blanquet de Bouillon，法式燉雞，材料方面有雞、煙肉，配菜方面有珍珠洋蔥、薯仔、甘筍，大蒜、西芹和少許芫茜，當然有蘑菇，醬汁方面需要白酒、忌廉、麵粉，蛋黃、牛油和檸檬汁，首先煮薯仔做配菜，然後切蘑菇，一開四就可以了。</p></a>
+				<a href="#00:01:2.53" id="00:01:2.53" class="lt" onclick="jumptoTime(62, this.id)"><p>然後煮滾雞湯，之後加珍珠洋蔥和甘筍，之後加西芹和大蒜，再加蘑菇，然後加蒜頭和芫茜，當然少不了白酒，現在馬上加白酒，還有雞腿，煮半小時就可以了，選擇用珍珠洋蔥，因為法國菜當然要精緻，賣相又好，一定要用珍珠洋蔥，出來的效果一定是好，煮了半小時，雞腿已經熟了，撈起備用，現在下油炒香煙肉，煎雞腿。</p></a>
+				<a href="#00:02:4.33" id="00:02:4.33" class="lt" onclick="jumptoTime(124, this.id)"><p>一面金黃色就可以反轉了，雞腿煎到上色之後，連同煙肉就可以放回鍋裡，全部放下去之後，慢火煮10分鐘，現在是時間處理醬汁，首先做白醬汁，不過之前先做麵糰，首先加牛油，然後加麵粉，煮到濕潤麵糰狀就可以了，但還未完，還要加湯，煮到像忌廉湯一樣就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:44.33" id="00:02:44.33" class="lt" onclick="jumptoTime(164, this.id)"><p>twisting思 erase，BR，promotional，balance，Sp taste，れた，ně，icing，把麵糊加入煲雞湯，到白汁，把蛋黃和忌廉拌勻，然後把檸檬汁擠入，拌勻，最後把白汁放入雞煲，拌勻，調味再煮10分鐘就完成了，這次法式燉雞，Blanc de Poulet是傳統做法，原材料是用牛肉，因為比較貴。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:28.48" id="00:03:28.48" class="lt" onclick="jumptoTime(208, this.id)"><p>這次選擇用雞，因為比較貴。</p></a>
+</div>
+	</body>
+</html>

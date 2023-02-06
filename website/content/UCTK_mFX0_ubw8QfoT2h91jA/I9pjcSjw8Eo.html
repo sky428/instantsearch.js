@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>零失敗電飯煲肉骨茶雞鍋 | Jacky Yu | 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'I9pjcSjw8Eo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>零失敗電飯煲肉骨茶雞鍋 | Jacky Yu | 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.03" id="00:00:3.03" class="lt" onclick="jumptoTime(3, this.id)"><p>大家好，又到了零失敗的電飯煲系列，如果大家去過新加坡的話，一定吃過當地的名菜肉骨茶，今天我用雞去代替排骨煮肉骨茶，材料非常簡單，全部都是肉骨茶的主要材料，有黨參、川芎、肉竹、當歸、熟地、杞子，最重要的是蒜頭和胡椒，胡椒的份量亦可以視乎你喜歡的濃度而增加或減少，用雞煲湯的話，我通常會剪掉雞尾。</p></a>
+				<a href="#00:00:40.79" id="00:00:40.79" class="lt" onclick="jumptoTime(40, this.id)"><p>因為雞尾比較多油和有股酥味，首先將胡椒切碎，當你將胡椒切碎時，胡椒的氣味就會散發出來，這樣煮出來的肉骨茶才會香，除了將它切碎，還要將胡椒炒香，令胡椒的氣味更突出，因為有熱力的關係，胡椒的氣味就會更突出，這亦是煮肉骨茶特別香的秘訣，接著將藥材洗一洗，然後將胡椒放入湯袋，將胡椒、蒜頭、藥材、雞和雞粉放入電飯煲。</p></a>
+				<a href="#00:01:25.79" id="00:01:25.79" class="lt" onclick="jumptoTime(85, this.id)"><p>然後蓋上蓋子，按煮飯的功能，大約40分鐘，煮好後，撇走油和加鹽調味，便完成了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三杯雞 衛志豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yiznphZdEgI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>三杯雞 衛志豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好，我是Michael，為甚麼我會在這裡和大家下廚，因為其實我也是一個廚男，煮三杯雞，預備的材料很簡單，不過最重要的是有三杯，哪三杯?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.88" id="00:00:25.88" class="lt" onclick="jumptoTime(25, this.id)"><p>酒、麻油、醬油，這次我用蠔油，然後預備一些辣椒，然後有蒜頭，還有紅蔥，少不了蔥，還有薑片，還有一種精髓，就是這個，它有三個名字，羅勒、金不換、九層塔，都是一樣東西，三杯雞，三杯是甚麼呢，一杯是酒，一杯是麻油，另外一杯就是醬油，平時其他人多數用醬油，但這次我就改了，我用蠔油，因為我覺得蠔油更加鮮味。</p></a>
+				<a href="#00:01:4.88" id="00:01:4.88" class="lt" onclick="jumptoTime(64, this.id)"><p>所以煮出來會有少少不同，首先當然要炮製主角，我們斬雞，首先我們當然要將雞洗一洗，洗完之後就將它斬件，斬雞方面，大小就適隨專見，但不要太小，像雞丁就不可以，因為出去吃三杯雞都不會太小，亦不要斬到像吃炸雞般大，斬完雞之後，我們首先要燒紅鍋，放些油，然後將雞全部放下去煎，大火，小火的話，主要是雞肉很韌。</p></a>
+				<a href="#00:01:50.88" id="00:01:50.88" class="lt" onclick="jumptoTime(110, this.id)"><p>最重要是辣，要煎到表皮燶了，這個步驟最重要不是煮熟雞肉，而是要煎香雞的雞皮，因為最重要是香口，三杯雞的主要特點就是香口，雞皮要焦糖化才好吃，然後就要攪拌這個，沙鍋最重要是先煮熱，三杯雞，先放一杯最香的麻油，記住是黑麻油，因為黑麻油比白芝麻做的麻油更加補，麻油開始煮熱了，然後我們放薑。</p></a>
+				<a href="#00:02:38.89" id="00:02:38.89" class="lt" onclick="jumptoTime(158, this.id)"><p>然後蒜，然後放紅椒，然後加紅蔥，然後放蔥頭，煮滾了，然後就放雞，然後放蠔油，我喜歡吃蠔油多一點，而且蠔油味道更鮮，放酒，第三杯了，酒多一點不要緊，因為酒香，煮一煮就揮發，然後就要焗了，好，起火，中小火，中小火慢慢燜，在鍋裡大概煮十分鐘，十分鐘後，打開來看看，九層塔，放完九層塔之後，蓋上鍋蓋，再放一點米酒。</p></a>
+				<a href="#00:03:30.89" id="00:03:30.89" class="lt" onclick="jumptoTime(210, this.id)"><p>關火就可以了，因為雅波有餘溫，大概焗幾十秒，九層塔的香味就會出來，大家可以準備上菜了，這次我教大家煮三杯雞，為什麼我教大家煮三杯雞呢?</p></a>
+				<a href="#00:03:49.89" id="00:03:49.89" class="lt" onclick="jumptoTime(229, this.id)"><p>因為三杯雞是台灣的名菜，我當初去的是有目的的，因為我想追求一個台灣女生，不過我學會了之後，還是追不到，所以這次就希望教了大家之後。</p></a>
+				<a href="#00:04:3.89" id="00:04:3.89" class="lt" onclick="jumptoTime(243, this.id)"><p>你們可以成功了。</p></a>
+</div>
+	</body>
+</html>

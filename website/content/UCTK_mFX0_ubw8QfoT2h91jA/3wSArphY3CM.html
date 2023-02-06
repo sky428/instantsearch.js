@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>麻油雞飯 衛志豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3wSArphY3CM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>麻油雞飯 衛志豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，各位Big Big Chef的朋友，今天我會教大家煮麻油雞飯，吃完這個麻油雞飯之後，身體就會輕盈盈盈，盡寶貴的東西，麻油雞飯，顧名思義，當然有雞，半隻雞，這裡先斬了，然後當然有米，薑片和薑絲，為了飯香一點，我要用一些冬菇和蘑菇。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.19" id="00:00:45.19" class="lt" onclick="jumptoTime(45, this.id)"><p>麻油雞最重要有黑麻油，然後有生抽和米酒，一定要有，首先處理雞，一定要加些鹽，醬油和麻油，先拌一拌，醃十多分鐘，這些菇可以切薄一點，太大塊的話口感就不太好，冬菇的味道會比較強，令飯更香，我們先開火，加些薑，多一點都不要緊，因為冬天吃多些薑會暖身，麻油差不多兩湯匙，煮麻油雞飯要留意油的份量，鍋熱後可以慢慢收細。</p></a>
+				<a href="#00:01:33.19" id="00:01:33.19" class="lt" onclick="jumptoTime(93, this.id)"><p>因為要慢慢把薑的味道逼出來，薑片剛開始有些彎就差不多了，加些薑絲，我覺得原隻雞有骨比較好吃，調大火，因為我們要煎香雞皮，盡量煎到雞皮有點焦糖化，這樣做法像中式意大利飯，雞差不多了，可以調小火，先處理米，米要用1比1的水，米酒要用1分之2，拌勻，拌勻，很大，大家看到有很多油，要控制雞油的份量，米要多一點。</p></a>
+				<a href="#00:02:22.19" id="00:02:22.19" class="lt" onclick="jumptoTime(142, this.id)"><p>應該可以吸收，然後就倒入米，慢慢攪拌，開大火，等它煮滾，煮滾後就調小火，讓它慢慢煮，煮滾後就調小火，看到泡沫了，這時候就放入菇，看到嗎?飯開始熟了，開始軟了，米水也開始收了，酒精也揮發了很多，這時候可以蓋上蓋子，慢火煮，記住不要用大火，大火會煮焦飯，麻油雞飯經過15分鐘煮好後，差不多可以了，我們開動了。</p></a>
+				<a href="#00:03:11.05" id="00:03:11.05" class="lt" onclick="jumptoTime(191, this.id)"><p>要配上聲音，香噴噴，加點顏色，比較好看，香噴噴，喜歡吃飯焦的有飯焦，我先試試雞，好看嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:29.09" id="00:03:29.09" class="lt" onclick="jumptoTime(209, this.id)"><p>如果你身邊的另一半，睡覺時腳很冷的話，記得煮麻油雞飯給他吃。</p></a>
+</div>
+	</body>
+</html>

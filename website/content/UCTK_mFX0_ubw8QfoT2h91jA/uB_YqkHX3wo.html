@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奇脆辣妹燒雞 | 余健志 Jacky Yu | 謝寧</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'uB_YqkHX3wo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>奇脆辣妹燒雞 | 余健志 Jacky Yu | 謝寧</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:4.07" id="00:00:4.07" class="lt" onclick="jumptoTime(4, this.id)"><p>今天很開心，今天Phoebe Channel一起煮飯，今天可以請到重量級嘉賓，Ling姐， 謝玲小姐，重量級， 肥薄的一個，不是… 怎麼回事?大廚，今天這道菜是特地為你而煮的，我知道 為甚麼，因為我們犯罪分子之中，有一個叫辣妹的群組，是…，我今天姓辣， 叫妹 是，除了漂亮， 還不得體一枝辣妹，是。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:31.07" id="00:00:31.07" class="lt" onclick="jumptoTime(31, this.id)"><p>妹， 別以為是遐想， 是肥辣妹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.14" id="00:00:42.14" class="lt" onclick="jumptoTime(42, this.id)"><p>辣妹燒雞最主要的材料，是在街市買現成的火鍋湯底麻辣醬，很容易? 很容易，開水煮， 煮麻辣火鍋湯底那種，好 有幾部分，醃料有麻辣火鍋湯底的材料，薑汁和辣椒粉，還有醃雞肉在雞肚裡的材料，有豬肉， 麻辣湯料，少許蠔油， 砂糖，薑蓉、乾蔥蓉、蒜蓉，好 這樣而已，好 首先把麻辣湯底的材料，先拌勻 對。</p></a>
+				<a href="#00:01:19.98" id="00:01:19.98" class="lt" onclick="jumptoTime(79, this.id)"><p>加上辣椒粉， 辣得嗎?</p></a>
+				<a href="#00:01:22.42" id="00:01:22.42" class="lt" onclick="jumptoTime(82, this.id)"><p>超辣 超辣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:23.62" id="00:01:23.62" class="lt" onclick="jumptoTime(83, this.id)"><p>對， 厲害</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:25.98" id="00:01:25.98" class="lt" onclick="jumptoTime(85, this.id)"><p>還有薑汁， 拌勻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:29.54" id="00:01:29.54" class="lt" onclick="jumptoTime(89, this.id)"><p>我是否要幫你做其他事? 對，請問這個要爆香之後，把肉和醬一起爆香熟透嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:36.66" id="00:01:36.66" class="lt" onclick="jumptoTime(96, this.id)"><p>對， 煮成麻辣肉醬，好， 釀進去， 對嗎? 對…，這個讓我來， 好嗎? 對，這個時候把剛才拌勻的材料，塗滿雞肚，選雞肉， 我盡量選肥一點的雞肉，好， 因為有油分出來 對，過幾個小時， 如果不夠肥，雞皮就會很容易乾</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:52.58" id="00:01:52.58" class="lt" onclick="jumptoTime(112, this.id)"><p>但是要加點油再醃嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:55.18" id="00:01:55.18" class="lt" onclick="jumptoTime(115, this.id)"><p>不用， 已經夠油了，好，手上這些材料也不要浪費，醃在雞皮上</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:2.78" id="00:02:2.78" class="lt" onclick="jumptoTime(122, this.id)"><p>對，我先爆香蒜蓉， 好嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:5.62" id="00:02:5.62" class="lt" onclick="jumptoTime(125, this.id)"><p>對，這個可以放在廚房醃一晚</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:8.70" id="00:02:8.70" class="lt" onclick="jumptoTime(128, this.id)"><p>醃一晚那麼久?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:9.66" id="00:02:9.66" class="lt" onclick="jumptoTime(129, this.id)"><p>對， 因為要入味 好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:11.54" id="00:02:11.54" class="lt" onclick="jumptoTime(131, this.id)"><p>好， 我現在爆香蒜蓉、薑蓉，和乾蔥蓉，讓它香脆入味，這個很容易做 對， 很容易，我喜歡你的食譜 簡單，我經常偷師</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:27.14" id="00:02:27.14" class="lt" onclick="jumptoTime(147, this.id)"><p>看你的… 我不說偷師</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:28.90" id="00:02:28.90" class="lt" onclick="jumptoTime(148, this.id)"><p>我經常在Big Big Channel偷看你煮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:30.78" id="00:02:30.78" class="lt" onclick="jumptoTime(150, this.id)"><p>是嗎?，是偷看的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:32.98" id="00:02:32.98" class="lt" onclick="jumptoTime(152, this.id)"><p>我想問這個肉要加點水嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:35.18" id="00:02:35.18" class="lt" onclick="jumptoTime(155, this.id)"><p>不用， 等一下我們有水 好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:37.50" id="00:02:37.50" class="lt" onclick="jumptoTime(157, this.id)"><p>這是麻辣醬嗎? 對</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:40.50" id="00:02:40.50" class="lt" onclick="jumptoTime(160, this.id)"><p>很油膩， 油在上面 對， 有點油，我覺得會更香 對， 沒錯，因為湯底的麻辣油不夠厚，就不好吃 沒錯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:49.70" id="00:02:49.70" class="lt" onclick="jumptoTime(169, this.id)"><p>這些是小貼士 對，好， 我可以加調味品 加糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:55.02" id="00:02:55.02" class="lt" onclick="jumptoTime(175, this.id)"><p>好， 糖，還有一點蠔油 蠔油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:57.34" id="00:02:57.34" class="lt" onclick="jumptoTime(177, this.id)"><p>大概一湯匙蠔油 蠔油，好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:4.14" id="00:03:4.14" class="lt" onclick="jumptoTime(184, this.id)"><p>加水，加這麼多水?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:9.14" id="00:03:9.14" class="lt" onclick="jumptoTime(189, this.id)"><p>因為你要加生粉芡，生粉芡不要一次過加進去，慢慢加，有耐性</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:19.14" id="00:03:19.14" class="lt" onclick="jumptoTime(199, this.id)"><p>差不多了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:21.14" id="00:03:21.14" class="lt" onclick="jumptoTime(201, this.id)"><p>我們很合拍，我們應該一起煮食</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:25.14" id="00:03:25.14" class="lt" onclick="jumptoTime(205, this.id)"><p>你經常吃我煮的食物，第一次合作煮食</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:28.14" id="00:03:28.14" class="lt" onclick="jumptoTime(208, this.id)"><p>不如我們一起煮私房菜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:30.14" id="00:03:30.14" class="lt" onclick="jumptoTime(210, this.id)"><p>夠了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:32.14" id="00:03:32.14" class="lt" onclick="jumptoTime(212, this.id)"><p>好了 關火，完成，很香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:37.14" id="00:03:37.14" class="lt" onclick="jumptoTime(217, this.id)"><p>麻辣醬煮好了，將煮好的醬，釀入雞肚</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:48.14" id="00:03:48.14" class="lt" onclick="jumptoTime(228, this.id)"><p>外面不用嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:49.14" id="00:03:49.14" class="lt" onclick="jumptoTime(229, this.id)"><p>外面不用，待會會做上肥水，用老抽和紹興酒，很香</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:58.14" id="00:03:58.14" class="lt" onclick="jumptoTime(238, this.id)"><p>這些都不留，好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:1.14" id="00:04:1.14" class="lt" onclick="jumptoTime(241, this.id)"><p>我們要找一支廚房用的，俄美金的物體，對 縫上去，像棉衫一樣，縫上去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:10.14" id="00:04:10.14" class="lt" onclick="jumptoTime(250, this.id)"><p>有時我用線練習</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:14.14" id="00:04:14.14" class="lt" onclick="jumptoTime(254, this.id)"><p>線也可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:16.14" id="00:04:16.14" class="lt" onclick="jumptoTime(256, this.id)"><p>縫上去，要肥一點的雞嗎?</p></a>
+				<a href="#00:04:19.14" id="00:04:19.14" class="lt" onclick="jumptoTime(259, this.id)"><p>對 肥一點的雞</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:20.14" id="00:04:20.14" class="lt" onclick="jumptoTime(260, this.id)"><p>因為不夠肥的話，燒完出來很乾</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:23.14" id="00:04:23.14" class="lt" onclick="jumptoTime(263, this.id)"><p>是不是買黃油雞?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:24.14" id="00:04:24.14" class="lt" onclick="jumptoTime(264, this.id)"><p>對 黃油雞，還有最後一個步驟，用老抽和紹興酒，混合，上色，老抽會有些顏色，燒出金黃色，如果不塗的話，燒出來白白的就不漂亮，紹興酒可以提鮮和提香，將紹興酒和老抽，塗在雞上，按摩一下，有色，燒出來金黃色，像食肉一樣</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:54.14" id="00:04:54.14" class="lt" onclick="jumptoTime(294, this.id)"><p>塗完可以燒，夠了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:58.14" id="00:04:58.14" class="lt" onclick="jumptoTime(298, this.id)"><p>差不多了，這是黃金比例，燒雞，一隻兩斤重的雞，用150度燒一小時，溫度不算高，等它慢慢熟，燒完一小時後，加到220至250度，燒15至20分鐘，燒脆皮，燒多久視乎你喜歡燒多焦，對，雞多大，對 沒錯，可以燒了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:23.14" id="00:05:23.14" class="lt" onclick="jumptoTime(323, this.id)"><p>好 來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:35.10" id="00:05:35.10" class="lt" onclick="jumptoTime(335, this.id)"><p>來了，你看， 已經來不及了，你看， 皮很薄，皮很脆 對…，先把皮撕出來 好，皮和肉一定要分開</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:47.14" id="00:05:47.14" class="lt" onclick="jumptoTime(347, this.id)"><p>皮燒得像紙一樣薄 對，很燙， 大家要知道 麻煩…，勞工手脈加上膠手套，一定要做好準備， 不然會燙到</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:58.54" id="00:05:58.54" class="lt" onclick="jumptoTime(358, this.id)"><p>對， 剛才釀了醬汁在肚子裡，對，現在可以把醬汁倒出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:4.78" id="00:06:4.78" class="lt" onclick="jumptoTime(364, this.id)"><p>對</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:5.62" id="00:06:5.62" class="lt" onclick="jumptoTime(365, this.id)"><p>把雞肉撕出來</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:7.86" id="00:06:7.86" class="lt" onclick="jumptoTime(367, this.id)"><p>然後拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.18" id="00:06:10.18" class="lt" onclick="jumptoTime(370, this.id)"><p>把雞肉撕成自己喜歡的大小 是，然後把剛才的麻辣醬拌勻，很軟，把辣椒油， 少許辣椒油倒進去，好，這個夠了…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:29.42" id="00:06:29.42" class="lt" onclick="jumptoTime(389, this.id)"><p>夠了嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:31.02" id="00:06:31.02" class="lt" onclick="jumptoTime(391, this.id)"><p>你再多一點， 再去喜歡的地方，不要了…我怕他們吃不到，對…少許花枝油，花枝油… 少許…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:39.10" id="00:06:39.10" class="lt" onclick="jumptoTime(399, this.id)"><p>花枝油真的不要太多</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:40.42" id="00:06:40.42" class="lt" onclick="jumptoTime(400, this.id)"><p>對， 少許…，多一點，好， 拌勻，我剛才放了很多，為什麼最後才放呢，因為太早放的話， 熱力會揮發，沒錯 會不香，對，我們可以把雞胸…，不， 雞翼， 對不起，雞翼，對， 放進去，好， 把皮放進去，對， 最後才把皮放進去，保證皮一定會脆，好 有頭有尾，好，今天我和謝寧一起煮的辣妹燒雞，完成了。</p></a>
+				<a href="#00:07:10.62" id="00:07:10.62" class="lt" onclick="jumptoTime(430, this.id)"><p>正</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:11.98" id="00:07:11.98" class="lt" onclick="jumptoTime(431, this.id)"><p>不要等了， 快吃…</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:13.94" id="00:07:13.94" class="lt" onclick="jumptoTime(433, this.id)"><p>快點吃 好…</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:15.22" id="00:07:15.22" class="lt" onclick="jumptoTime(435, this.id)"><p>我等不及了， 來…。</p></a>
+</div>
+	</body>
+</html>

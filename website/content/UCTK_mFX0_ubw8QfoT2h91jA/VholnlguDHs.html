@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>涼拌雞絲沙律｜Rachel 生活料理家</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VholnlguDHs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>涼拌雞絲沙律｜Rachel 生活料理家</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA.COM，大家好，我是Rachel，很久不見了，現在天氣開始慢慢變熱，我會教大家煮一些比較清爽的菜式，你看到有隻雞，我們把它分開兩餐，我會教大家煮兩個不同的菜式，開始的時候，我們會做一個涼拌雞絲沙律，我們看到有雞，食材有紅椒、黃椒、青瓜、芒果和黃藍蘋果，我們都是要來切絲的。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:39.40" id="00:00:39.40" class="lt" onclick="jumptoTime(39, this.id)"><p>為什麼我會選擇黃藍蘋果呢?</p></a>
+				<a href="#00:00:41.40" id="00:00:41.40" class="lt" onclick="jumptoTime(41, this.id)"><p>因為味道剛剛好，又不酸又不甜，如果有些人怕青蘋果太酸，黃藍蘋果是一個不錯的選擇，先把雞切開一半，雞頭雞頸我們不要了，半隻雞，最緊要清除裡面的肺，加少許鹽醃一醃，讓它有少許味，拍勻後就可以拿去蒸，蒸15分鐘，因為雞不算太大，準備其他材料，切蘋果，切絲，調較醬汁，沙律汁有青檸、魚露、蒜蓉和辣椒，有酸、甜和辣味。</p></a>
+				<a href="#00:02:4.57" id="00:02:4.57" class="lt" onclick="jumptoTime(124, this.id)"><p>切青檸，榨汁，選擇皮薄的青檸，汁會比較多，蒜蓉切碎，辣椒切碎，先拌沙律汁，魚露</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:41.57" id="00:02:41.57" class="lt" onclick="jumptoTime(161, this.id)"><p>糖，先拌勻糖，青檸汁，蒜蓉，紫天椒，如果吃辣可以多加一點，不吃辣的話不加也沒有所謂，拌勻，讓砂糖慢慢溶化，等雞蒸好後，放涼後可以切絲或手撕，拌勻就可以了，時間到了，雞蒸好了，放涼後可以切碎，先把鶯肉撕走，用手指把骨頭去除，如果不喜歡有皮的話，所有皮都不要了，把皮去除，將骨頭撕開，如果雞還未冷藏好，會比較難撕。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:5.12" id="00:04:5.12" class="lt" onclick="jumptoTime(245, this.id)"><p>因為肉會比較軟，可以把肉切碎，差不多了，肉都切碎了，現在可以準備將它們拌勻，所有材料都倒進去，拌一拌，將沙律汁加進去，聞到味道都很開胃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:38.91" id="00:04:38.91" class="lt" onclick="jumptoTime(278, this.id)"><p>放入香草就可以食了，是不是很簡單呢?</p></a>
+</div>
+	</body>
+</html>

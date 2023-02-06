@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鮮百合紫薯雞蓉粥 | 黃亞保 | 保哥</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '7ZYGQOgBduM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>鮮百合紫薯雞蓉粥 | 黃亞保 | 保哥</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.84" id="00:00:2.84" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Big Big Chef的暖巴王阿寶，今天為大家介紹的就是，鮮百合紫薯雞蓉粥，這個粥的材料很簡單，我用了珍珠米，珍珠米的好處是煮起來很容易起膠，而且快點軟，其次就是雞胸裏面的兩條雞柳，雞柳相對上非常健康，因為沒有太多脂肪，其次有百合，百合之中我用了新鮮百合，如果是乾百合它會比較硬。</p></a>
+				<a href="#00:00:41.11" id="00:00:41.11" class="lt" onclick="jumptoTime(41, this.id)"><p>其次就是紫薯，紫心番薯一來有營養，二來味道相對上甜一點，首先我們要將珍珠米倒入滾水裏煮，大家記住，如果我們煮粥，煮粥的米第一時間倒入去，不要馬上走開，要攪動至少一至兩分鐘，因為在這個時間之後，一倒入去它會不停地吸水，如果不攪動它，它就會很容易黏底，珍珠米在事前要洗，千萬不要洗太多次，兩次就好了。</p></a>
+				<a href="#00:01:22.11" id="00:01:22.11" class="lt" onclick="jumptoTime(82, this.id)"><p>如果洗得太多，裏面的外層的米膠就流失了，相對上的營養就流失了，一般來說，我們煮粥都要起碼九個字，我們就先讓它煮，千萬不要蓋上蓋子，一蓋上蓋子，轉個頭，看不到就會滾蛇，這個雞胸要將最大的筋起出來，整條雞柳只有一條筋，這條筋很簡單，我們將雞柳放在砧板上，將它扯出來，一扯出來，整條筋都很粗，然後我們就將它切粗粒。</p></a>
+				<a href="#00:02:2.11" id="00:02:2.11" class="lt" onclick="jumptoTime(122, this.id)"><p>稍後我們放入攪拌機打它，攪拌機就在我身邊，將三樣材料逐樣加進去，首先我們加紫薯，紫薯我們事前已經煮了，我建議大家煮好過蒸，煮好水分充足，到你撕皮的時候就好撕很多，我們將它放入攪拌機，其次就是雞柳，雞柳想它更加厚好滑，我們不要就這樣加水打，我們先加少許生粉，因為小朋友吃一定要將它做到很滑，如果我們先加生粉。</p></a>
+				<a href="#00:02:44.11" id="00:02:44.11" class="lt" onclick="jumptoTime(164, this.id)"><p>稍後再打，出來的效果比一般打法滑很多，我們攪拌生粉的時候，不需要加水，一加水生粉就會全都散出來，我們直接加乾粉就可以了，然後將它又是倒入攪拌機，最後我們倒入鮮花盒，鮮花盒買回來就將它切頭切尾，因為有泥的位置或者黃的位置，我們就不要的，鮮花蟹是很容易熟的材料，不需要事先去蒸熟或煮熟，加入水。</p></a>
+				<a href="#00:03:21.04" id="00:03:21.04" class="lt" onclick="jumptoTime(201, this.id)"><p>水剛浸過材料的表面就可以了，然後就馬上打融，這麼快，不用半分鐘就完成了，顏色非常漂亮，帶紫色的粥，待會放在粥上會更加色彩繽紛，轉眼間，米意成粥，這時候將剛才攪拌機的材料，百合、紫薯和雞蓉，倒進這鍋粥中，你看到我煲出來的粥不是太稀，因為太多水和液體，生粉仔會自行爆開，但其實很快會肚餓。</p></a>
+				<a href="#00:04:11.02" id="00:04:11.02" class="lt" onclick="jumptoTime(251, this.id)"><p>所以我們煲的粥會稠一點，現在將紫薯液倒進粥中，攪拌均勻，在這個動作，如果滾起，大約兩分鐘就可以吃了，千萬不要滾太久，否則雞蓉會變老，生粉仔又不喜歡吃，這個粥百合產生了鮮甜的味道，再加上雞肉的肉味，我覺得這個粥非常完美，給生粉仔吃，不一定要用紫薯，下次煲南瓜也可以，因為生粉仔要均衡飲食，希望你們喜歡。</p></a>
+</div>
+	</body>
+</html>

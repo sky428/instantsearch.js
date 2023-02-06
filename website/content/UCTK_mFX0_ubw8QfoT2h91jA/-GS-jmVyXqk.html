@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>香草燴雞 衛志豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-GS-jmVyXqk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>香草燴雞 衛志豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.95" id="00:00:1.95" class="lt" onclick="jumptoTime(1, this.id)"><p>Hello， Back To Channel的朋友又見面了，認識我的朋友都知道我比較喜歡吃雞，今次我就介紹一個外國朋友教我煮的雞，這個雞就叫做香草釀雞，香草釀雞最主要的當然有香草，今次我選用的是Rosemary，接著不少得的，我最喜歡的就是蒜頭，這兩樣東西今次來說都很重要，當然不少得就是雞。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:32.95" id="00:00:32.95" class="lt" onclick="jumptoTime(32, this.id)"><p>雞件你可以去買一些雞上髀，雞上髀都很好，但我今次就喜歡用雞全髀，其他的醬汁方面，我可以用洋蔥、車厘茄、蘑菇，還有一個乾蔥頭，這些是待會醬汁的打底，這個菜式的精髓就是一些香草，我們首先拿些香草，拿些葉出來，這些最好就買新鮮的，新鮮會比較好，這裡有Rosemary，接著我要放蒜頭，蒜頭可以多一點，這裡差不多一個蒜頭。</p></a>
+				<a href="#00:01:11.95" id="00:01:11.95" class="lt" onclick="jumptoTime(71, this.id)"><p>切碎它，切粒就可以了，我現在先切片，有些人說不喜歡吃蒜頭，或者不太喜歡的話，可以放少一點，但一定要放的，我們把Rosemary也放進去，一起切碎，這個步驟很重要，我們盡量把香草和蒜頭切碎，融合在一起，經過一輪狂切之後，我們就切到差不多這麼小粒，你可以再切小一點都可以，視乎你想吃的口感，硬一點，大粒一點，小粒一點。</p></a>
+				<a href="#00:01:53.95" id="00:01:53.95" class="lt" onclick="jumptoTime(113, this.id)"><p>在切的時候，我們也要放一點鹽進去，讓它入味，現在就可以處理雞了，其實表面上你可以塗一點鹽，讓表面上的皮有一點味道，雞肉盡量保持皮的狀態，千萬不要破壞它，因為皮很重要，因為要把預備好的香草釀入皮，如果是雞上腿、雞扒就不用斬，如果是雞腿就切開兩塊，在軟骨上，盡量這樣切，很簡單，斬開雞就知道了。</p></a>
+				<a href="#00:02:43.12" id="00:02:43.12" class="lt" onclick="jumptoTime(163, this.id)"><p>中間的軟骨也是，不用太用力，一切開就行了，香草準備好後，就準備釀入雞上，記得雞皮千萬不要破壞，我們先輕輕地扯起雞皮，用匙羹這樣，因為要把香草放在雞皮下面，待會煎的時候，雞皮的雞油會溶入香草中，但不要扯爛雞皮，就這樣，盡量不用厚，盡量平均一點，盡量塞入一點，就是這樣，包著它，皮下面有香草，這塊也是。</p></a>
+				<a href="#00:03:38.64" id="00:03:38.64" class="lt" onclick="jumptoTime(218, this.id)"><p>上腿也要小心一點，因為上腿的皮很容易變成一塊，盡量保持它，差不多一個蒜頭，和一個蒜頭的份量，整個差不多四件，可以放得完，這個份量差不多，這個釀入後，我們放十分鐘，等它入少少味，就可以煎和準備醬汁的材料，醃十至二十分鐘，先放油，我們先把油熱好，初頭就大火，煎香表面，反轉它，反轉它，不要動它太厲害。</p></a>
+				<a href="#00:04:30.00" id="00:04:30.00" class="lt" onclick="jumptoTime(270, this.id)"><p>因為裡面有些材料，不要讓它流出來，初時不要太大火，慢慢煎香，因為雞腿比較厚，所以要慢慢煎，如果太大火，很容易燒焦，現在等它慢慢煎的同時，我便開始準備待會煎底的醬汁材料，記得慢火，因為太大火的話表面燒焦，雞腿的厚度是不會熟的，所以記得慢火，慢慢給時間，因為我們需要時間去預備醬汁的材料，首先我們切一些車厘茄。</p></a>
+				<a href="#00:05:29.43" id="00:05:29.43" class="lt" onclick="jumptoTime(329, this.id)"><p>因為我今次主要用紅茄汁，所以買車厘茄是最好的，好了 切好了，切完番茄，接著我們切蘑菇，蘑菇不用切得太薄，有些口感，切起來好像很多，但其實一煮起來，一縮縮下去就剛剛好，所以你不要怕太多，因為這個醬汁的底部很重要，可以送很多飯，接著我們切一些紅蔥頭，紅蔥頭的味道比洋蔥更加強，都是一樣 不用切太小。</p></a>
+				<a href="#00:06:20.79" id="00:06:20.79" class="lt" onclick="jumptoTime(380, this.id)"><p>最後就切洋蔥，切蒜頭就差不多了，所有汁的材料都準備好了，看看雞肉，大家看看，已經煎了十多分鐘，表面的皮開始有少少硬的感覺，不要緊，因為待會的汁會融合，所以煎香一點點是不要緊的，最重要是看裡面的熟度，因為雞腿比較厚，如果是雞扒的話，平均一點就容易了，如果是雞腿的話，要用點心機慢慢翻，現在煎了十多分鐘。</p></a>
+				<a href="#00:07:20.47" id="00:07:20.47" class="lt" onclick="jumptoTime(440, this.id)"><p>應該有五六成熟了，還未全熟，我們可以起碟，隔去多餘的蒜蓉，可以煮汁了，先放番茄，因為番茄在這些配料中比較硬，所以要先放番茄，可以輕輕壓一壓，煮軟了的話，同時可以放洋蔥，洋蔥比較硬身，這些可以煮久一點也不要緊，接著紅蔥頭，因為菇很快就會軟和縮，所以可以慢一點，我們炒到洋蔥軟的時候就最好，然後加入蘑菇。</p></a>
+				<a href="#00:08:28.31" id="00:08:28.31" class="lt" onclick="jumptoTime(508, this.id)"><p>加水，因為要汁，所以要加水，加茄汁，加黑椒，黑椒多一點都不要緊，加少少鹽，加少少糖，煮到裡面的配菜都開始軟了，我們可以把雞放上去，我們放在中間，讓雞吸收茄汁的味道，然後我們拿少許牛油，放在中間，把雞放上去，讓雞吸收配菜的味道，然後我們蓋上蓋子，調小火，慢慢煨，大約十分鐘就可以了。</p></a>
+</div>
+	</body>
+</html>

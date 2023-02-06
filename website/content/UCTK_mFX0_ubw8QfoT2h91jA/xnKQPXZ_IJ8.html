@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宮保雞丁 姚兵</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xnKQPXZ_IJ8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>宮保雞丁 姚兵</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，字幕by索兰娅🐰，各位BB Channel的朋友，大家好，我是姚冰，今天教大家做這道菜是宮保雞丁，主要材料有雞胸，前面這四樣是醃料，有紹興酒、白胡椒、生粉、魷魚，這邊是待會爆香的大料，那是薑蔥、薑、花椒、蒜，乾辣椒、花生和生粉水，現在做的第一步。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.71" id="00:00:45.71" class="lt" onclick="jumptoTime(45, this.id)"><p>就是把雞胸切成丁狀，現在先把雞胸燒熱，現在倒入紹興酒、白胡椒、生粉、鹽，把醃料均勻一點，時間…待會放十分鐘，可以把不同材料的味道，加入雞胸裡，在烘烤菜式裡需要炸花生，如果你選擇炸花生，外面也可以買到，但如果你喜歡自己炸也可以，但也需要一點技巧，所以炸的時候，油溫差不多60度左右，就可以把新花生放進油鍋裡。</p></a>
+				<a href="#00:01:37.71" id="00:01:37.71" class="lt" onclick="jumptoTime(97, this.id)"><p>炸一會，把火調小，然後你看到花生有點黃，千萬不要炸得太黃，只要覺得有點熟就可以拿出來，現在先把雞胸炸一下，把油溫炸至七成熟，就可以先拿出來，之前的雞胸是紅色的，現在炒至整個雞胸變成白色，就差不多了，這個時候就要爆香大料了，蒜頭，花椒， 有些朋友不喜歡花椒，不放也可以，但我喜歡花椒味，薑。</p></a>
+				<a href="#00:02:46.75" id="00:02:46.75" class="lt" onclick="jumptoTime(166, this.id)"><p>辣椒是最好的，這是加飯的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:52.59" id="00:02:52.59" class="lt" onclick="jumptoTime(172, this.id)"><p>蔥，爆香後就可以加雞丁，好，現在可以加這些材料，有糖，少許糖，生抽，紹興酒，醋，胡椒粉少許，糖，好，現在差不多全部都熟了，就可以加生粉水</p></a>
+				<a href="#00:03:31.51" id="00:03:31.51" class="lt" onclick="jumptoTime(211, this.id)"><p>最後炸花生，放下去，好，現在公豹基頂完成了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>港式炸雞髀 |  錦鈿 Oreo Charm</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'fsjq79wDuf0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>港式炸雞髀 |  錦鈿 Oreo Charm</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.88" id="00:00:1.88" class="lt" onclick="jumptoTime(1, this.id)"><p>各位Big Big Chef的朋友大家好，我是Orio，今天介紹一個大人和小朋友都喜歡吃的港式炸雞腿，這個港式炸雞腿有什麼做法呢?</p></a>
+				<a href="#00:00:19.93" id="00:00:19.93" class="lt" onclick="jumptoTime(19, this.id)"><p>首先我們要做一個蔬菜汁，蔬菜汁的材料有，甘筍、西芹、薑、芫荽、生抽、鹽、胡椒粉和糖，我們現在可以開始做蔬菜汁了，首先我們先加芫荽，甘筍、西芹、薑，然後再加清水，攪拌至這個程度後，就可以加入生抽、鹽、胡椒粉、糖，攪拌至梳菜汁變得均勻後，就可以將它隔走，現在我們開始處理雞腿，開始沿著這個位置切去大腿內側。</p></a>
+				<a href="#00:01:35.08" id="00:01:35.08" class="lt" onclick="jumptoTime(95, this.id)"><p>做了這一刀的時候，就會令到雞腿比較容易醃，和炸起來就大塊一點，就是這樣，也不要太深，太深的話炸出來就不太好看，現在就可以醃一醃雞腿，我們將雞腿醃一小時，包好才放雪櫃，雞腿已經醃好一小時，這個時候可以預熱爐溫到180度，然後薄薄地上麵粉，薄薄地不要太厚，太厚炸出來就不好吃，這隻雞腿大概炸4至5分鐘。</p></a>
+				<a href="#00:02:38.81" id="00:02:38.81" class="lt" onclick="jumptoTime(158, this.id)"><p>這隻港式炸雞腿就完成了。</p></a>
+</div>
+	</body>
+</html>
