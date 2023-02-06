@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>木魚高湯 Suki Chui</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Qw7ULXxWpzY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>木魚高湯 Suki Chui</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.05" id="00:00:1.05" class="lt" onclick="jumptoTime(1, this.id)"><p>我教大家做的木魚糕湯有分首次和二次，有什麼分別呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.05" id="00:00:6.05" class="lt" onclick="jumptoTime(6, this.id)"><p>首次多數會用來做汁醬或清湯，二次會用來做味道比較濃的湯，好像麵豉湯，底部有些味道，再配上麵豉醬就不會搶了湯的味道，如果有些湯底有些味道，就不會搶了湯的味道，木魚高湯是和式料理的精髓，做法很簡單，只需要一點時間，首先將水倒入一個大鍋，用細緻度中火將它加熱，昆布買回來很大塊，可能是這麼大塊，最好將它剪開一半或三、四份。</p></a>
+				<a href="#00:01:5.68" id="00:01:5.68" class="lt" onclick="jumptoTime(65, this.id)"><p>讓它的味道更突出，你會看到表面有少許白色的粉末，已經抹乾了，用乾布抹乾，放入水中煮大約十分鐘，做昆布湯時最重要的一個貼士，千萬不要用大火煮到它煮沸，因為煮沸後會令湯變得混濁，喝起來會不夠好喝，如果有需要可以用溫度計幫忙，提醒自己不要過久，否則會不夠，現在差不多煮沸了十分鐘，現在可以試試昆布味是否出來了。</p></a>
+				<a href="#00:01:54.68" id="00:01:54.68" class="lt" onclick="jumptoTime(114, this.id)"><p>OK，非常好，將昆布夾起，但不要扔掉昆布，因為待會要用這些材料做第二次的木魚糕湯，現在可以加入木魚乾，再等30分鐘讓它的味道再出來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:24.68" id="00:02:24.68" class="lt" onclick="jumptoTime(144, this.id)"><p>這個步驟有些主婦可能會覺得，壓多一點不要浪費，但這個步驟是不可以壓的，因為壓下去會出苦味，也可能會令湯變得不夠清澈透明，剛才我們將昆布放在碗裡，再加入木魚乾，現在煲了一次昆布和木魚乾，要再煲第二次，這個二次木魚糕湯就完成了。</p></a>
+</div>
+	</body>
+</html>

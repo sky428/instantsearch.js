@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>香芋濃湯 黃致豪</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Qb-PEqwLClc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>香芋濃湯 黃致豪</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是今天的BigBit Chef王志浩，秋天快到了，最好就是喝暖暖的湯，今天就煮這個香芋濃湯，事不宜遲，介紹材料吧，開始吧，先煎香雞肉，首先不放油，因為雞皮也有些脂肪，因為湯這麼滑，當然選擇滑身的肉，煎至金黃色，然後翻轉一次，開始了，金黃色了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.65" id="00:00:45.65" class="lt" onclick="jumptoTime(45, this.id)"><p>再等一會，會更好看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:47.65" id="00:00:47.65" class="lt" onclick="jumptoTime(47, this.id)"><p>放少許味在雞皮上，這時候就把它拿出來，讓它放涼，因為之後會再煮，所以要煮熟。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:59.65" id="00:00:59.65" class="lt" onclick="jumptoTime(59, this.id)"><p>然後就處理芋頭，之前也有預先煮熟芋頭，用滾水煮20分鐘，芋頭去皮後，就處理洋蔥，洋蔥不用切太細，因為稍後也要攪碎，現在將芋頭切件，加少許油和牛油，然後將洋蔥炒香，將剛才煎好的雞已經休息一會。</p></a>
+				<a href="#00:01:51.23" id="00:01:51.23" class="lt" onclick="jumptoTime(111, this.id)"><p>將它切走。</p></a>
+				<a href="#00:01:53.23" id="00:01:53.23" class="lt" onclick="jumptoTime(113, this.id)"><p>當洋蔥炒得透明的時候，就是時候放雞，再加入味道，當雞差不多八成熟，就要加入芋頭，所有材料都差不多八至九成熟，現在就要加湯水慢慢煮，湯已經煮沸了，可以關火，還有一件事，喜歡雞皮的朋友就不用理會，不喜歡雞皮的朋友就要找找，因為通常都會浮在上面，然後就丟掉，這些不要了，開始攪拌，我們有一個手攪拌機。</p></a>
+				<a href="#00:03:0.23" id="00:03:0.23" class="lt" onclick="jumptoTime(180, this.id)"><p>大家可以將平常的攪拌機倒進去，這次我選擇用手攪拌機，這次需要一點時間，因為有些雞肉會比較硬，湯已經攪拌好了，可以上碟，如果不喜歡忌廉的朋友。</p></a>
+				<a href="#00:03:26.23" id="00:03:26.23" class="lt" onclick="jumptoTime(206, this.id)"><p>可以直接喝，如果喜歡忌廉的朋友，就可以加一點點，香芋龍湯，正式完成了。</p></a>
+</div>
+	</body>
+</html>

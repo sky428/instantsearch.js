@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>電飯煲養生海味燉椰菜 | Jacky Yu余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-44Tjk2jk3I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>電飯煲養生海味燉椰菜 | Jacky Yu余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，又到了零失敗電飯煲系列的時間，電飯煲除了可以煲飯之外，還可以拿來炆食物，焗麵包，焗蛋糕，做燉湯也很好吃，大家都以為做燉湯一定很大陣仗，很多工夫，接著我以下的步驟也可以做到很惹味的燉湯，材料方面，我們有椰菜，但這次我選了一些很惹味的海味，有瑤柱。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:34.25" id="00:00:34.25" class="lt" onclick="jumptoTime(34, this.id)"><p>蠔豉、蝦乾、冬菇和少許火腿調味，還有一些乾蔥，首先我們將乾蔥輕輕切成段，然後加少許油，爆香乾蔥，爆香至薑蔥微微焦黃和散出香氣後，就可以關火，然後將冬菇去掉，切片或切條也可以，火腿輕輕切成段，椰菜在中間劃個十字，令它更容易出味，接著可以煮了，首先將炒好的乾蔥和油放進電飯煲，然後放椰菜。</p></a>
+				<a href="#00:01:23.97" id="00:01:23.97" class="lt" onclick="jumptoTime(83, this.id)"><p>然後就可以將海味，例如蠔豉、瑤柱、蝦乾和冬菇，和少許火腿調味，最後加些水，用煲飯的程式，大約煮40分鐘左右，就可以煮好了。</p></a>
+				<a href="#00:01:36.53" id="00:01:36.53" class="lt" onclick="jumptoTime(96, this.id)"><p>最後加少許胡椒粉和鹽調味就可以食了。</p></a>
+</div>
+	</body>
+</html>

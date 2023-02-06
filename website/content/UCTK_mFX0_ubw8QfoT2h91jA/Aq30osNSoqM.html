@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 俄羅斯羅宋湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Aq30osNSoqM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 俄羅斯羅宋湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>我哋香港人就好鍾意飲湯嘅，無論係老火湯定係滾濺湯，一餐飯如果有碗湯飲下嘅呢，就會即刻令人哋好滿足㗎啦，咁其實西方人都一樣好鍾意飲湯㗎喎，要數一般香港人最熟悉嘅西湯，肯定就係羅宋湯啦，阿千平呀，你知唔知羅宋湯嘅起源喺邊度嚟呀，我唔知，係烏克蘭，點解你咁叻嘅，你唔使問我攞貼士㗎咩，唔使。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:29.48" id="00:00:29.48" class="lt" onclick="jumptoTime(29, this.id)"><p>你講得好啱喇</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:31.24" id="00:00:31.24" class="lt" onclick="jumptoTime(31, this.id)"><p>佢起源就係烏克蘭，不過就俾俄羅斯人發揚光大，咁你今日就好幸運喇，咁師傅就會介紹一位俄羅斯嘅廚師俾你，你可以跟佢學正宗俄羅斯羅宋湯，好唔好，好，呢位就係我嘅朋友Chef Alex，羅宋湯對於佢嚟講真係由細飲到大嘅，佢亦都好想將佢家鄉風味帶俾我哋，咁究竟一碗正宗嘅羅宋湯係點做嘅呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:5.44" id="00:01:5.44" class="lt" onclick="jumptoTime(65, this.id)"><p>我會用俄羅斯菠蘿，佢會幫我切一些蔬菜，好</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:13.00" id="00:01:13.00" class="lt" onclick="jumptoTime(73, this.id)"><p>Alex， 俄羅斯人為何喜歡這道湯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:16.32" id="00:01:16.32" class="lt" onclick="jumptoTime(76, this.id)"><p>俄羅斯人喜歡很豐富的湯，你可以見到有很多蔬菜，湯裡有很多肉，所以你不需要像普通的普通湯</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:25.72" id="00:01:25.72" class="lt" onclick="jumptoTime(85, this.id)"><p>所以很豐富，而且很溫暖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:29.40" id="00:01:29.40" class="lt" onclick="jumptoTime(89, this.id)"><p>對， 當然， 非常溫暖，特別是冬天</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:33.08" id="00:01:33.08" class="lt" onclick="jumptoTime(93, this.id)"><p>但不僅是為了溫暖身體，還要為你心臟保暖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:36.84" id="00:01:36.84" class="lt" onclick="jumptoTime(96, this.id)"><p>當然， 非常重要</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:39.84" id="00:01:39.84" class="lt" onclick="jumptoTime(99, this.id)"><p>為什麼所有蔬菜都要切成長方形</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:44.68" id="00:01:44.68" class="lt" onclick="jumptoTime(104, this.id)"><p>因為我們是一家人，所以我們要遵守這些規則</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:49.20" id="00:01:49.20" class="lt" onclick="jumptoTime(109, this.id)"><p>好， 這是正確的大小嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:51.48" id="00:01:51.48" class="lt" onclick="jumptoTime(111, this.id)"><p>對， 正確的大小</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:53.32" id="00:01:53.32" class="lt" onclick="jumptoTime(113, this.id)"><p>終於合格了，好， 我們所有材料都準備好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:57.60" id="00:01:57.60" class="lt" onclick="jumptoTime(117, this.id)"><p>我希望Leah幫我放入薯條，然後開始炒蔬菜，好，我加一些蔬菜油，ac's oceans celui Really organizing dachte，therapists</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:9.35" id="00:02:9.35" class="lt" onclick="jumptoTime(129, this.id)"><p>我希望令到湯更加香濃，Chef Alex將洋蔥和甘筍，落咗鑊去兜佢，爆香佢，So you can smell the aroma，It's very nice</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:21.35" id="00:02:21.35" class="lt" onclick="jumptoTime(141, this.id)"><p>剛剛見Chef Alex加咗啲鹽，同胡椒粉調味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:25.35" id="00:02:25.35" class="lt" onclick="jumptoTime(145, this.id)"><p>So what is the next ingredient，you need to add into the pan，The next ingredient，I need to put celery</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:33.35" id="00:02:33.35" class="lt" onclick="jumptoTime(153, this.id)"><p>And onion，And then I need to add，And bell pepper，This is beautiful color，好靚嘅顏色，So the next I am going to put the tomato，其他材料佢就需要呢個</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:47.35" id="00:02:47.35" class="lt" onclick="jumptoTime(167, this.id)"><p>蕃茄膏，This one all for the color and taste，Chef Alex就加埋呢個蕃茄蓉落去，So I am going to use only half</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:55.35" id="00:02:55.35" class="lt" onclick="jumptoTime(175, this.id)"><p>Because I want to give more red color，So when you fry，The color is gone，即係剩餘嘅部分呢就，煮好曬湯先</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:5.35" id="00:03:5.35" class="lt" onclick="jumptoTime(185, this.id)"><p>加落去，咁好啦材料炒好咗，而家可以落個湯底度，So look at that color already，嘩個顏色真係好靚，見到Alex加咗呢個椰菜絲，同埋有少少三色椒，落去個湯度，The rest ingredient is the</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:23.35" id="00:03:23.35" class="lt" onclick="jumptoTime(203, this.id)"><p>Beetroot and dill</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:25.35" id="00:03:25.35" class="lt" onclick="jumptoTime(205, this.id)"><p>但係落咗佢個顏色又唔同咗喇喎，特別鮮紅啲，咁要煮幾耐先至可以食得呢Alex，5 more minutes，但係有樣嘢我想問，畀你去煮嘅時候你會點做呢，我都會用返牛肉，嚟熬個湯底，但係我可能唔會落西芹，唔會落洋蔥</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:45.35" id="00:03:45.35" class="lt" onclick="jumptoTime(225, this.id)"><p>唔會落三色椒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:47.35" id="00:03:47.35" class="lt" onclick="jumptoTime(227, this.id)"><p>You must try，你知啦Chef Alex你唔好以為佢唔識聽，你講先啦，I put my heart into it，用個心嚟煮畀你食，Chef Alex嘅羅宋湯就煮好啦，轉頭返嚟我哋試下味道先。</p></a>
+</div>
+	</body>
+</html>

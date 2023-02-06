@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>粟米青豆帶子羹｜黃亞保 保哥</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'X912EyYYgnQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>粟米青豆帶子羹｜黃亞保 保哥</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.75" id="00:00:2.75" class="lt" onclick="jumptoTime(2, this.id)"><p>Hello大家好，又是Big Big Chef的暖巴廚房時間，今天教大家做粟米羹，粟米是用好的日本粟米，再加上日本刺身級的帶子，還有甜豆仁，大家會覺得奇怪，為什麼會有粟米葉呢，粟米葉不說大家不知道，我們洗乾淨後，連粟米芯也舀進水裡，用這些粟米水來打溶，將粟米芯打溶，非常鮮甜。</p></a>
+				<a href="#00:00:44.95" id="00:00:44.95" class="lt" onclick="jumptoTime(44, this.id)"><p>還有忌廉，因為我們做粟米羹一定要加少許忌廉才夠香滑，事不宜遲，我們先將粟米切出來，切的時候盡量貼一點也不要緊，盡量切，因為我們用攪拌機打，打完之後會有蟑螂，然後切帶子片，這個帶子一開始切，盡量切薄一點，讓它熟的時間快一點，剛才我們說過粟米芯和粟米葉要煮熟，目的是煮出粟米的鮮甜味和香味，令我們不需要只用清水打。</p></a>
+				<a href="#00:01:25.55" id="00:01:25.55" class="lt" onclick="jumptoTime(85, this.id)"><p>粟米粒也不單調，煮的過程也很快，十多分鐘就可以了，材料都放了，煮十五分鐘就可以了，十五分鐘過去了，現在我們要將滾了粟米芯和粟米葉的水，隔出來，留水備用，這鍋粟米水非常清甜和有香粟米味，我們將冷的粟米粒倒進去，倒進攪拌機杯裡就可以蓋上蓋子，然後就攪拌，打完後， 把粟米高纖維的東西取出來，只剩下粟米碎。</p></a>
+				<a href="#00:02:17.83" id="00:02:17.83" class="lt" onclick="jumptoTime(137, this.id)"><p>打好了， 攪拌了一大輪，終於可以煮湯了，湯剛好隔起了粟米碎，這個時候加少許鹽， 不用太多，煮粟米湯時一定要用湯攪拌鑊底，否則很容易黏底，因為粟米有澱粉質， 會沉澱，攪拌途中， 攪拌機浮在表面的泡泡，千萬不要撇走，這些泡泡吃下去會有一種滑口的感覺，所以不要浪費，差不多滾起了，把火候關掉。</p></a>
+				<a href="#00:03:0.83" id="00:03:0.83" class="lt" onclick="jumptoTime(180, this.id)"><p>把帶子片倒進去，然後把甜豆芯倒進去，準備少許生粉水，記得倒入水中時要一邊倒一邊攪拌，再開大火，整個粟米羹已經完成了，是複雜一點的，想吃到好東西， 一定要花點心機，粟米帶子青豆羹滑口快速完成了，希望大家喜歡。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 素翅雞湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Gs48Wfr_g_4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 素翅雞湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>千萍， 今天你會做一個特色菜式，你做什麼? 我要做素翅雞湯，Kit， 你吃過嗎? 吃過，待會你要看千萍的演繹，跟你吃的會否有相似，我想問， 第一步驟做什麼?千萍，我們可以先熬雞湯，好， 麻煩你了，我剛才將雞放進去滾，除去兩隻雞腿，等它滾起， 蓋上蓋子，熬一個小時就可以了，千萍， 為什麼不拿雞湯來煮?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:27.16" id="00:00:27.16" class="lt" onclick="jumptoTime(27, this.id)"><p>因為雞湯是用雞的骨頭，千萍， 為什麼不加雞腿?</p></a>
+				<a href="#00:00:30.92" id="00:00:30.92" class="lt" onclick="jumptoTime(30, this.id)"><p>因為雞腿待會用來蒸，再撕開再煮湯汁，我想問， 千萍， 你用什麼火?</p></a>
+				<a href="#00:00:38.60" id="00:00:38.60" class="lt" onclick="jumptoTime(38, this.id)"><p>我現在用大火等它滾起，等它滾起後，熬一個小時左右用中火就可以了，千萍， 等待的時候有什麼可以做?</p></a>
+				<a href="#00:00:49.28" id="00:00:49.28" class="lt" onclick="jumptoTime(49, this.id)"><p>可以先蒸雞腿，用大火蒸十分鐘左右， 蒸至全熟，我們可以先切材料 好，Kit幫我將瑤柱撕碎，還有切金華火腿，你自己呢?</p></a>
+				<a href="#00:01:3.72" id="00:01:3.72" class="lt" onclick="jumptoTime(63, this.id)"><p>我切冬菇和木耳，冬菇已經浸軟了，留起冬菇水用來做素翅，木耳已經浸軟了，千萍， 我不用金華火腿，可以用其他東西代替嗎?</p></a>
+				<a href="#00:01:16.56" id="00:01:16.56" class="lt" onclick="jumptoTime(76, this.id)"><p>其實也可以，因為現在煮素翅，如果加了金華火腿就不會加鹽，如果不想加金華火腿，可以加鹽來提味，瑤柱是否已經處理過?</p></a>
+				<a href="#00:01:26.24" id="00:01:26.24" class="lt" onclick="jumptoTime(86, this.id)"><p>瑤柱已經浸軟了，瑤柱水留起用來做素翅，材料已經準備好了，千萍， 下一個步驟要做什麼?</p></a>
+				<a href="#00:01:36.36" id="00:01:36.36" class="lt" onclick="jumptoTime(96, this.id)"><p>現在雞腿已經蒸熟了，湯溶了一點， 可以撕絲，千萍， 我看你沒有用雞皮， 為什麼?</p></a>
+				<a href="#00:01:43.44" id="00:01:43.44" class="lt" onclick="jumptoTime(103, this.id)"><p>因為如果將雞皮一起煮，湯就會變得很油，千萍， 我想問你，可否將雞腿切絲或切條一起煮?</p></a>
+				<a href="#00:01:55.88" id="00:01:55.88" class="lt" onclick="jumptoTime(115, this.id)"><p>也可以，現在可以正式煮素翅了，先加雞湯，這是熬了一個小時的雞湯?</p></a>
+				<a href="#00:02:4.60" id="00:02:4.60" class="lt" onclick="jumptoTime(124, this.id)"><p>是的，然後可以加冬菇水 好，很惹味，千萍，我想問，如果小朋友想方便，可否買現做的雞湯?</p></a>
+				<a href="#00:02:18.02" id="00:02:18.02" class="lt" onclick="jumptoTime(138, this.id)"><p>也可以，可以加瑤柱水 好，然後可以加瑤柱絲，再加蘇籤，Kit，你說吃過這道菜式 是，我想問材料是否跟你吃過的相似?</p></a>
+				<a href="#00:02:34.10" id="00:02:34.10" class="lt" onclick="jumptoTime(154, this.id)"><p>大致上相似，但沒有加金華火腿，好，待會你嘗嘗，加了金華火腿的素翅味道如何，好，我們可以加雞髀肉，然後加木耳絲，再加冬菇，然後可以加金華火腿，為何你不全加，千萍，因為怕太鹹，對了，金華火腿是醃製的火腿，味道也很濃郁，現在可以用大火等它大滾，千萍，我沒有看你調味，因為雞有它的鮮味，再加冬菇和瑤柱水，已經很鮮味。</p></a>
+				<a href="#00:03:16.42" id="00:03:16.42" class="lt" onclick="jumptoTime(196, this.id)"><p>再加金華火腿，其實不需要調味，好，視乎你個人喜好吧 對，素翅已經煮得差不多了，可以先加馬蹄粉水，最後加芡汁，令它更稠，普通的芡水可以嗎，也可以，但普通的芡水，拌勻後會變稀，但馬蹄粉可以保持不會變稀，好，但不加也可以嗎，其實不加也可以，只是個人喜好而已，好，我們可以加了，邊拌邊加。</p></a>
+				<a href="#00:03:45.86" id="00:03:45.86" class="lt" onclick="jumptoTime(225, this.id)"><p>千萍，馬蹄粉水要加到甚麼程度，我看到它變稠了就可以了，我覺得煮這個湯時，最要留意的是加馬蹄水，因為如果加太多馬蹄水，可能會變稠，像啫喱一樣，所以加馬蹄水時一定要拌勻，還有慢慢加，差不多了，可以試味了 好，你覺得需要調味嗎?</p></a>
+				<a href="#00:04:18.91" id="00:04:18.91" class="lt" onclick="jumptoTime(258, this.id)"><p>我覺得需要， 因為有鹽，馬蹄粉本身帶點甜味，雖然金華火腿有鹹味，但如果加了馬蹄粉水，可能會中和本身的味道，現在可以上碟了，麻煩你了，Kit， 你聞到很鮮甜的味道嗎?</p></a>
+				<a href="#00:04:41.43" id="00:04:41.43" class="lt" onclick="jumptoTime(281, this.id)"><p>我們還沒試味，但我想到已經很惹味，這個湯會很好吃 是，這是很豐富的素翅湯，這是什麼名堂?</p></a>
+				<a href="#00:04:53.47" id="00:04:53.47" class="lt" onclick="jumptoTime(293, this.id)"><p>素翅雞湯，Kit， 我們馬上試味 好。</p></a>
+</div>
+	</body>
+</html>

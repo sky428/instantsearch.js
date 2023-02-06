@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蘋果菠蘿凍湯配菠蘿莎莎 琦師傅 伍嘉琦</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CorKSsWm-AM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蘋果菠蘿凍湯配菠蘿莎莎 琦師傅 伍嘉琦</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.50" id="00:00:1.50" class="lt" onclick="jumptoTime(1, this.id)"><p>蘋果菠蘿凍湯，今天我會介紹蘋果菠蘿凍湯配菠蘿沙沙，菠蘿沙沙其實是一種沙律的食物，之前吃過番茄沙沙，其實裡面有甚麼，都是番茄粒、洋蔥、少許調味，我這個沒有用番茄代替，我用了本來菠蘿湯的菠蘿粒，去代替沙沙，因為除了喝湯外，可能你也想吃到少許，一粒粒的渣滓的口感，所以我就加了菠蘿，首先把牛油溶掉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:2.91" id="00:01:2.91" class="lt" onclick="jumptoTime(62, this.id)"><p>牛油溶化後，加入洋蔥、黃椒、蘋果，炒它一會兒，炒軟後就可以加水和糖，等水滾後就可以關火，黃椒、蘋果、洋蔥煮好後，就可以放入攪拌機，隔完渣後放一旁放涼，稍後再用，然後就切菠蘿，菠蘿先去頭去尾，去皮時去深一點，就可以免除去菠蘿丁的麻煩，然後就一開四，去中間的菠蘿芯，切細件，現在就放牛奶，打完後用隔篩去渣。</p></a>
+				<a href="#00:03:6.30" id="00:03:6.30" class="lt" onclick="jumptoTime(186, this.id)"><p>菠蘿隔好後，就倒入菠蘿湯，放入雪櫃冷藏4小時，放入雪櫃冷藏4小時後，就可以將菠蘿沙沙的材料拌勻，菠蘿、番茄、薄荷葉絲、少許橄欖油、蜜糖、白醋，拌勻，然後放在菠蘿湯的湯面上，完成了!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JacquesKagi | 瑞士洋薏米湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'J3XjlMGOcy8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>JacquesKagi | 瑞士洋薏米湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>我打算做一個溫暖的菜式，讓你聖誕可以享受這道湯，這就是瑞士薏米湯，我會把薏米放在湯裡，讓它更加濃郁，我會把薏米放在湯裡</p></a>
+				<a href="#00:00:27.61" id="00:00:27.61" class="lt" onclick="jumptoTime(27, this.id)"><p>讓它更加濃郁，我們特別的材料就是這隻瑞士風乾牛肉，這是牛肉的肥肉，在瑞士，他們會用它去散餅，自然的山風曬乾，我們有薏米，西芹，茄子，洋蔥，和一些切碎的花生，雞湯，然後是薏米，還有一些切碎的芹菜，雞湯，和少許忌廉，如果你覺得湯不夠濃郁，我們可以學中菜的做法，用少許豆粉和水，做濃郁的湯，首先，我們要把風乾牛切成小塊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:16.49" id="00:01:16.49" class="lt" onclick="jumptoTime(76, this.id)"><p>把薄片切成絲，切完絲再切粒，這隻風乾牛是我們瑞士Grabunden區的特別菜，那裡的雪山是很有名的，例如聖馬拉茲，都是在那裡附近的，這些牛肉，就是用牛柳的位置，然後用鹽醃製，然後他們會拿到山頂，在木屋裡自然曬乾，我們在瑞士很多時候會用這隻凍肉，不是用來煮，我們當作冷凍食物，配啤酒或白酒都很受歡迎。</p></a>
+				<a href="#00:02:0.57" id="00:02:0.57" class="lt" onclick="jumptoTime(120, this.id)"><p>鍋開始熱，我們就可以炒菜了，首先我們要用橄欖油或牛油，看你自己喜歡的，我們先爆一下洋蔥，爆一下甘筍，和西芹，當這些菜開始爆香，我們就可以加乾薏米，乾薏米要小心一點，不要加太多，因為它會發脹，起碼會變成四、五倍的份量，加入薏米後，就可以加雞湯，不要加太多水，因為如果覺得湯太濃稠的話，可以永遠加水，但如果湯太稀，就已經沒有材料可以再煲。</p></a>
+				<a href="#00:02:55.69" id="00:02:55.69" class="lt" onclick="jumptoTime(175, this.id)"><p>這個湯需要大約20至30分鐘，現在要煲到薏米變軟，我們才會加其他材料，例如忌廉、肉、香草，我們最後才會加，這個湯已經煲了20分鐘，薏米都開始變軟，現在就可以完成了，我們會做甚麼呢?</p></a>
+				<a href="#00:03:19.69" id="00:03:19.69" class="lt" onclick="jumptoTime(199, this.id)"><p>第一，我們會加忌廉，我們只是想調整顏色，加少許都可以，如果喝忌廉湯，通常這麼稀的，都不會那麼好喝，我們有甚麼辦法呢?</p></a>
+				<a href="#00:03:32.69" id="00:03:32.69" class="lt" onclick="jumptoTime(212, this.id)"><p>我們就加少許豆粉混水，慢慢加，因為你都不想湯太濃稠，現在我們加了豆粉，我們感覺到湯比較濃稠，黏著湯匙，我們就可以加最後的兩種材料，就是少許香草和風乾牛肉。</p></a>
+				<a href="#00:03:55.69" id="00:03:55.69" class="lt" onclick="jumptoTime(235, this.id)"><p>加這些材料，湯就完成了。</p></a>
+</div>
+	</body>
+</html>
