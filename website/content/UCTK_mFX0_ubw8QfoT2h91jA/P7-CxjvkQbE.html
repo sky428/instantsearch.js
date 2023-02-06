@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 豆腐魚滑麵包卷</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'P7-CxjvkQbE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 豆腐魚滑麵包卷</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>豆腐魚滑麵包卷，今日我會同大家示範豆腐魚滑麵包卷，聽落去個名好似怪怪地用麵包來煮餸，係冇錯今日我會教大家用麵包做麵包卷，首先我地係街買返嚟嘅板豆腐用廚子索乾淨曬水之後，就加魚滑落去一齊搞，因為魚滑我地係街市或者超市買，佢地已經調咗味，而家我地加少少胡椒粉同埋少少鹽，可以調一調返佢嘅味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:42.00" id="00:00:42.00" class="lt" onclick="jumptoTime(42, this.id)"><p>我地撈到勻純咗之後就將佢擺開咗先，咁然之後下個步驟就將麵包用個木棍壓到扁為止，豆腐餡料擺落去嘅時候就容易啲卷，下個步驟就加大概一至兩湯匙嘅餡料落去，我地就用隻叉將魚滑平均鋪勻佢，你見到我唔係鋪到個麵包頂部，淨係黎到呢個部分，點解呢?因為一陣間容易捲，下個步驟就將兩條四季豆擺中間，然之後將佢捲實佢。</p></a>
+				<a href="#00:01:23.00" id="00:01:23.00" class="lt" onclick="jumptoTime(83, this.id)"><p>麵包卷就捲好咗，而家我地可以沾啲蛋漿上去，記住個封口位向下先，跟住呢咁樣擼佢，有啲朋友會問，如果用麥包或者冇去皮嘅麵包得唔得?</p></a>
+				<a href="#00:01:40.00" id="00:01:40.00" class="lt" onclick="jumptoTime(100, this.id)"><p>係可以嘅，一樣得，麵包卷就已經沾晒蛋漿，而家我地可以用半煎炸嘅方法去煎佢，個鑊我已經預熱咗，而家就可以落油，落咗油之後將佢預熱先，而家啲油差唔多，然之後落麵包卷，最緊要落個時候係個封口位向下，跟住調慢火慢慢將佢用半煎炸嘅方法，煎到佢成條係金黃色，同埋成個麵包卷係熟咗，咁就得㗎啦。</p></a>
+				<a href="#00:02:18.00" id="00:02:18.00" class="lt" onclick="jumptoTime(138, this.id)"><p>其實我地可以用焗嘅方法，我地就將個焗爐預熱咗180度火，就將麵包卷擺入個焗爐度，焗佢大概15分鐘，你見到佢全部金黃色同埋漲卜卜嘅話，即係話麵包卷就焗好咗，我地今次就用咗呢一個魚鰭同埋呢一個四季豆，咁大家亦都可以試下用呢一個蝦膠，或者墨魚膠再配呢一個甘筍條，或者西芹條都得嘅，咁大家見到呢個魚鰭係變曬實色。</p></a>
+				<a href="#00:02:53.00" id="00:02:53.00" class="lt" onclick="jumptoTime(173, this.id)"><p>同埋你見到個麵包卷漲卜卜，再加埋外面金黃色，咁即係話煎好咗啦。</p></a>
+				<a href="#00:03:1.00" id="00:03:1.00" class="lt" onclick="jumptoTime(181, this.id)"><p>我地攤一攤切件就可以上碟㗎啦。</p></a>
+</div>
+	</body>
+</html>

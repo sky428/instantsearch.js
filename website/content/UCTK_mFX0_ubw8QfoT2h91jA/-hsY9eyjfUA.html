@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>長法包 KC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-hsY9eyjfUA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>長法包 KC</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.58" id="00:00:3.58" class="lt" onclick="jumptoTime(3, this.id)"><p>Bake with Chef的朋友大家好，我是KC，今天會教大家如何製作一個傳統的法國腸飯，18世紀開始盛行這種麵包，我們的定義是要求法包吃到小麥粉的原味，即早餐焗麥片，像粟米片的味道，就為之小麥粉的原味，而且要吃到皮像餅乾般脆，如果有我們今天這兩個要求的話，製作方法應該是最傳統的方法才可以做到。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:43.06" id="00:00:43.06" class="lt" onclick="jumptoTime(43, this.id)"><p>我們要預先準備好四款麵粽，還有這個速效乾烤模，這四款麵粽都要十五個小時前開始準備，第一款就是水合法，或者叫水粽，這個純粹是T65粉加水，加少少鹽，放在雪櫃過夜一晚，等它吸飽水，第二款就是一個很傳統的製法包用的玻璃收粽，T65粉，少少鹽，再加水，還有它會有少少紅衣，幫助它發酵有少少香味，第三款就是要自己養一個天然酵母。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:19.06" id="00:01:19.06" class="lt" onclick="jumptoTime(79, this.id)"><p>提高酸性，令到麵團脆身些，像餅乾般脆，第四款就是我們發明的鹽粽，就用鹽醃死天然酵母，它就會釋放一些還原劑出來，去抗氧化，麵團就算你不小心搓多幾下，或者溫度高少少，都沒有那麼容易令到香味氧化，我們現在就可以開始混合搓這個麵團，首先我們找40度的水，大約是紅衣的三倍份量，溶解一些速效乾酵母。</p></a>
+				<a href="#00:01:56.06" id="00:01:56.06" class="lt" onclick="jumptoTime(116, this.id)"><p>要注意，水溫非常緊要，水溫不正確的話</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:1.06" id="00:02:1.06" class="lt" onclick="jumptoTime(121, this.id)"><p>會令到發酵不良，之後的四款麵種的添加先後次序，就沒有所謂</p></a>
+				<a href="#00:02:27.64" id="00:02:27.64" class="lt" onclick="jumptoTime(147, this.id)"><p>喜歡的話請訂閱支持啊，按讚支持啊，還有分享出去哦，喜歡的話請訂閱支持啊，當所有材料混合均勻，面有少少粗糙時，我們就可以開始基本發酵，麵團發酵了約一小時，體積大約上升了四分一，現在我們進入分割的程序，首先灑少許麵粉，多一點也不怕，然後輕輕地把麵團輕輕地揉，不要太大力地揉，不要把它翻摺，覆來覆去，盡量完整地倒在桌面。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:23.31" id="00:03:23.31" class="lt" onclick="jumptoTime(203, this.id)"><p>今天這塊麵團可以做到六條發包，每條200克，你可以根據烤箱的尺寸來決定，分割的重量，然後輕輕地把麵團收成一個長條形，首先向前捲，捲一下，倒轉，收口向上，再收多一下，目的把表面拉緊，讓它像一個麵團，每一層一塊，方便一會兒做完的部分進行，然後我們完成了分割程序，要等它鬆弛約十至十五分鐘，現在麵團的體積應該是剛剛搓好時的1.5倍。</p></a>
+				<a href="#00:04:8.31" id="00:04:8.31" class="lt" onclick="jumptoTime(248, this.id)"><p>測試它鬆弛了沒有，可以摸摸它，看看是否有足夠氣體，還有拔一下它，看看它會否有很強的彈力，如果沒有很強的彈力，即是鬆弛完畢就可以造型，造型，首先在桌面中間灑少許粉，然後拿起麵團，盡量不要令它變形，光滑面剛才向上，現在將光滑面向下，灑在粉堆中，拿起自己造型的工作空間，不要有粉在這裡，首先向下灑上三分之一，然後向上灑下三分之一。</p></a>
+				<a href="#00:04:45.71" id="00:04:45.71" class="lt" onclick="jumptoTime(285, this.id)"><p>然後用左手拇指放在右邊，拿起麵團，然後右手用這個位置向下壓，令到麵團黏合，兩隻手交替去做，慢慢將麵團收緊麵團，之後應該是做到一個比較緊緻的圓筒形，如果你想它長一點，或者兩頭尖一點的時候，我們就要用手掌心向下壓去搓長它，但這個步驟就要注意了，做一次至兩次就好了，如果做得太多的話，有機會令到麵團的表面鬆弛。</p></a>
+				<a href="#00:05:24.71" id="00:05:24.71" class="lt" onclick="jumptoTime(324, this.id)"><p>那你剛才做完的部分就白費功夫了，那我示範一次吧，手掌心向下壓，麵團要滾動的，如果你覺得它不夠長，可以搓多一點，然後再向下壓，不是拉扯它，拉扯麵團，麵團就會鬆弛，然後收口向上，將麵團放在布上面，這塊布有兩個作用，第一個作用是可以幫麵團表面保持濕潤或乾燥，視乎你做麵包的季節是乾燥還是潮濕，那麵團的皮革或界紋就會穩定很多。</p></a>
+				<a href="#00:06:13.71" id="00:06:13.71" class="lt" onclick="jumptoTime(373, this.id)"><p>其次就是我們會將布拉高，因為我們做這些麵包麵團通常是比較濕和軟的，我們需要一些幫助去鞏固它的形狀，那進烤箱的時候就不會變成一塊薄餅，然後我們做完形就讓它鬆弛15至20分鐘，可以灑一點粉在底部，方便我們待會入烤箱，我們做麵包進烤箱之前是需要界紋的，目的是破壞表面張力，進烤箱會更好看，烤出來的麵團皮會更脆。</p></a>
+				<a href="#00:07:15.26" id="00:07:15.26" class="lt" onclick="jumptoTime(435, this.id)"><p>很多人都有興趣知道天然酵母是怎樣製作，想製作一些較好吃的麵包，我們今天示範一次如何逐樣地去養天然酵母，首先，你需要一個成熟的天然酵母種，可能是問朋友取取，又或者花一個星期的時間，將麵粉和水混合，讓它發酵，如果你有一個很成熟的天然酵母種，你要保持它生存，其實很簡單，首先，你需要一些沒有添加劑的麵粉。</p></a>
+				<a href="#00:07:44.26" id="00:07:44.26" class="lt" onclick="jumptoTime(464, this.id)"><p>最好是中筋麵粉，然後用普通的水喉水就可以了，你加進去，再加上次用剩的天然酵母種，大概一份天然酵母種，就要三份麵粉這個比例，然後攪拌，攪拌到沒有麵粉粒就可以停止，其實最關鍵是你保持發酵的溫度，必須介乎20至30度之間，發酵到何時成熟，你可以用來製作麵包呢?</p></a>
+				<a href="#00:08:24.26" id="00:08:24.26" class="lt" onclick="jumptoTime(504, this.id)"><p>就視乎你新加進去的麵粉和天然酵母的比例，如果照剛才的1比3比例，它大概需要12小時發酵至2至3倍辣，當它成熟的時候，你會聞到釀酒的果香，還有一點點的醋酸的香味，我們今天保留這個麵種會比較乾身，每100克麵粉，我會加60克水，所以你需要用一點點力去搓一搓，搓到它沒有麵粉粒就可以停止了，不需要搓到麵粉光滑。</p></a>
+				<a href="#00:09:4.26" id="00:09:4.26" class="lt" onclick="jumptoTime(544, this.id)"><p>這樣就可以了，用保鮮紙放在20至30度的地方發酵，發酵完成，成熟後兩三倍大，它就會變成像右邊這個漿糊的狀態，你一是用來製作麵包，一是重複這個步驟。</p></a>
+				<a href="#00:09:19.26" id="00:09:19.26" class="lt" onclick="jumptoTime(559, this.id)"><p>每天起碼要重複兩次。</p></a>
+</div>
+	</body>
+</html>

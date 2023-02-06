@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意大利水果包 KC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dy4UwoCLa6M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>意大利水果包 KC</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.78" id="00:00:2.78" class="lt" onclick="jumptoTime(2, this.id)"><p>我是KC，今天教大家用天然酵母，去做一個很傳統的意大利聖誕節水果麵包，材料有天然酵母的麵種，有天然酵母種，有T65粉、T45粉和高筋粉，再加上轉化糖和牛油和雞蛋，另一個是過夜被吸飽水的麵種，純粹有麵粉、T65粉、鹽和牛奶和雞蛋，這裡還有一些幼鹽、蠔鹽牛油、轉化糖漿和雲呢拿，最後還有一些用冧酒至少要浸三天的乾果。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:50.19" id="00:00:50.19" class="lt" onclick="jumptoTime(50, this.id)"><p>乾果裡面有提子乾、小紅莓乾、橙皮和檸檬皮，我們現在開始搓麵團，最主要用來發酵的天然酵母麵種，要留意發酵過夜後體積應該有三、四倍大，另一個是負責吸飽水的麵團，過夜吸飽水放雪櫃，吸飽水後應該可以拉到薄膜，然後加幼鹽，幼鹽的份量必須要很準確，一次過加進去，一開始我們輕輕地在枱面壓開，讓它均勻地吸收鹽分。</p></a>
+				<a href="#00:01:38.19" id="00:01:38.19" class="lt" onclick="jumptoTime(98, this.id)"><p>這一步也比較重要，加鹽後再搓幾下，必須要搓到比較光滑再加糖，如果麵種和過夜吸水的水種水合法麵團，處理得恰當的話，加鹽後你會發覺麵團的彈性很快就會出來，彈性就是你拔下去的時候，你會感覺到麵團拉回頭，在鹽平均分佈之前，或者在麵粉吸飽水之前，是不會有這種彈力的，是不會扯手回頭的，如果你是親手搓而不是用機器搓。</p></a>
+				<a href="#00:02:11.19" id="00:02:11.19" class="lt" onclick="jumptoTime(131, this.id)"><p>就很明顯地感覺到麵團的彈力變化，當你搓了大約十分鐘，你應該會發現麵團開始不那麼黏手，開始有彈性，你拉下去的時候，會有扯手回頭的拉力，而且你會看到麵團開始變得光滑，這樣就可以慢慢加轉化糖漿和雲呢拿，首先加三分一糖漿，然後用盡任何方法將它拌勻，包括捏、揉、攪拌，讓它盡快吸飽糖漿，這個要視乎你第一次搓揉有多好。</p></a>
+				<a href="#00:02:57.55" id="00:02:57.55" class="lt" onclick="jumptoTime(177, this.id)"><p>如果第一次搓揉好才加糖漿，很快就會起筋，如果搓不夠就要加糖漿就要加久一點，當糖加了三分之二，開始黏手，很難搓得光滑時，我們用這個停泊，一個技巧就是將麵團向前，向後拉扯，向前幅，如果你的手夠大，可以拿起它拉扯，當你發覺它開始有彈力，表面開始光滑的時候，我們就可以將剩下的三分之一糖漿都加進去，當你搓到它很勤力，表面開始光滑的時候。</p></a>
+				<a href="#00:03:54.17" id="00:03:54.17" class="lt" onclick="jumptoTime(234, this.id)"><p>甚至你可以切一塊出來，拉一下薄膜，切大塊一點，容易拉，就可以加牛油了，也是用盡一切的方法，將牛油盡快拌勻，可以捏一下，攪一下，當你搓到表面開始光滑，牛油都進去了，就可以最後加乾果了，因為乾果本身浸過冧酒的關係，有少許糖水在裏面，所以你混入去的時候，又要搓多兩下，讓它吸收糖水，一般橙皮，有些香味的化學物質。</p></a>
+				<a href="#00:04:36.17" id="00:04:36.17" class="lt" onclick="jumptoTime(276, this.id)"><p>是需要有些酒精才可以溶化出來，所以通常我們想乾果更香，都會用酒浸，不會用水浸，其次就是乾果，如果就這樣加進去，沒有任何水分的話，它會令到麵團很乾身，麵包就會很快老化，很快乾，所以我們要不浸水，比較常見就是浸酒，讓它吸收水分，然後才混入麵團，完成攪拌過程後，就放在一個25度左右的地方，我們發酵了兩小時後，它的大小會明顯膨脹了，大約50%。</p></a>
+				<a href="#00:05:18.17" id="00:05:18.17" class="lt" onclick="jumptoTime(318, this.id)"><p>之後我們就可以分割造型，放入一個Panettone專用的節目，我們是900克一隻，收完的時候，輕輕拍打它，不要太大力，輕輕一點，因為麵團很弱，麵團放入烤箱後發酵了三四個小時，現在差不多平面兩倍大了，鋼針我預先穿了進去，方便我待會出爐時倒掉Panettone，它就比較少機會下沉。</p></a>
+				<a href="#00:05:55.88" id="00:05:55.88" class="lt" onclick="jumptoTime(355, this.id)"><p>鬆軟一點，我待會就會掃蛋，這個是全蛋，打散了就可以了，掃一點在表面，增加它的色澤，然後用一個很鋒利的刮刀片，在上面畫一個十字，割破外皮，看到裡面麵包肉的水氣就可以了，不用割得太深，然後放一粒牛油，大概手指頭那麼大，在中間，我們面頭割十字，和放牛油的目的，都是令它的表面容易膨脹，不會太乾。</p></a>
+				<a href="#00:06:35.88" id="00:06:35.88" class="lt" onclick="jumptoTime(395, this.id)"><p>焗出來的麵包會比較鬆軟，之後就可以拿一部，在170度烤45分鐘左右</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:9.88" id="00:07:9.88" class="lt" onclick="jumptoTime(429, this.id)"><p>MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

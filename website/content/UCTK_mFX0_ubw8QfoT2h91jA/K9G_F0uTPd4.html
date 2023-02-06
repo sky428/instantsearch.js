@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>牛角酥 KC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'K9G_F0uTPd4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>牛角酥 KC</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA COMMENTARY，大家好，今天由我KC教大家如何做牛角酥，我們的定義是想做一個好的牛角酥，希望吃到牛油的香味和做到層次感，不單要酥脆，還要有一點硬脆，甚至乎有點像炒米餅的硬脆，今天我們用的材料有小麥粉，我們混合了三種小麥粉，有T65，T45和北美的高筋粉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:41.78" id="00:00:41.78" class="lt" onclick="jumptoTime(41, this.id)"><p>我們用T45做主打，還有一個轉八糖漿，有檸檬汁，牛油，幼鹽，雞蛋黃，全脂牛奶，速效乾酵母和無鹽牛油，不過這是用來做成一個方形，方便我們用麵團包著做層次感，首先我們用38度的暖水，溶化速效乾酵母，量大概是酵母的三倍重量，當它溶化後，變成糊狀就可以加入麵粉，然後加入其他液體，牛奶，蛋黃，鹽。</p></a>
+				<a href="#00:01:37.34" id="00:01:37.34" class="lt" onclick="jumptoTime(97, this.id)"><p>檸檬汁，檸檬汁加進去會令麵團有少少氧化，保護到麵筋，當你放入抹茶的時候，蛋液保存得比較好，轉化糖漿，牛油，水解完之後，轉化糖漿會容易被酵母消化，牛角酥會發得好看點，在抹茶不會死，然後將所有材料拌勻，如果不在家做的話，可以用蜜糖代替轉化糖漿，但牛角酥會有少少蜜糖的風味，當麵團黏合的時候，就可以放在桌面上搓揉。</p></a>
+				<a href="#00:02:17.34" id="00:02:17.34" class="lt" onclick="jumptoTime(137, this.id)"><p>用手掌心的位置，輕輕向下壓，然後捲起麵團，大概搓揉3至4分鐘左右，視乎你搓揉的酥皮有多大，搓好麵團後，放入一個-18度的冷凍機，麵團冷凍半小時後，麵團變得軟硬，我們就可以將牛油包裹進去，首先準備一支乾麵棍和一把刀，牛油在4度冰箱拿出來的時候，通常是偏硬的，我們要搓揉一下，讓它軟化，搓揉至麵團變成泥膠狀，可以彎曲。</p></a>
+				<a href="#00:03:5.34" id="00:03:5.34" class="lt" onclick="jumptoTime(185, this.id)"><p>這個就是合適的溫度，15度，牛油就是這個大小，我們就將麵團配合牛油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.34" id="00:03:17.34" class="lt" onclick="jumptoTime(197, this.id)"><p>如果麵團有黏棍的話，就要加少許麵粉，我們大概將麵團搓薄一點，到可以包裹牛油的程度，大概是牛油的兩倍面積，將麵團的角拉出來，包裹牛油的時候就會完整一點，平均一點，然後輕微拉扯一下麵團</p></a>
+				<a href="#00:03:50.34" id="00:03:50.34" class="lt" onclick="jumptoTime(230, this.id)"><p>盡量令麵團厚薄均勻，包裹牛油，輕輕敲打，讓牛油和麵團能夠扣緊，撒少許粉在桌面，不要太多，撒少許在麵團表面，然後由中間，手掌心壓在棍子上，用身體的重量，慢慢將麵團推開，將麵團擀薄後，用少許水，然後做一個三摺疊，有少許水份，麵團便會黏合得好些，輕輕敲打，讓牛油和麵團能夠扣緊，再做第二次擀薄。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:4.54" id="00:05:4.54" class="lt" onclick="jumptoTime(304, this.id)"><p>這個擀薄至三倍長度後，如果講究些，用刀切掉邊位，才做第二次摺疊工作，通常邊位會少些牛油，之後再撒少許水份在上面，做第二次三摺疊，現在總共有九層牛油，十層麵團，再做一次擀薄，切三角形便可以開始做形，麵團已冷藏半小時，鬆弛夠後，可以擀薄，擀至大約6mm，切三角形做形，首先灑少許麵粉。</p></a>
+				<a href="#00:05:46.54" id="00:05:46.54" class="lt" onclick="jumptoTime(346, this.id)"><p>然後再敲打麵團，當你打到它比較軟身的時候，你就可以開始輕輕力地，盡量均勻地，你可能家中要買把卡尺去量度它，我們工場做得多，有經驗，大概是6mm厚，首先我們把邊緣切一切，讓它整齊一點，然後切等腰三角形，捲起來的技巧很簡單，因為我們做的牛角酥，希望是非常平均的層次，所以就這樣捲起來就可以了，第一個圈盡量緊緊地貼著它來捲。</p></a>
+				<a href="#00:07:0.05" id="00:07:0.05" class="lt" onclick="jumptoTime(420, this.id)"><p>壓一壓它，讓底部壓緊，然後我們將它放在28至30度，近乎你用牛油的溶點的地方去發酵，牛角酥現在發了一個半小時，大概兩倍大，旁邊看見起蜂窩狀的層次，就可以掃蛋進去，爐已經預熱了230度，掃蛋的時候盡量不要掃到切紋，順著切紋掃下去，掃完蛋之後就放進預熱了230度的焗爐，焗18分鐘。</p></a>
+</div>
+	</body>
+</html>

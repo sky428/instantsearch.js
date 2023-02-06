@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>脆脆泡芙塔　Carole 六姑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '5xp7vQAF5jU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>脆脆泡芙塔　Carole 六姑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.07" id="00:00:2.07" class="lt" onclick="jumptoTime(2, this.id)"><p>今天我會教大家做泡芙塔，泡芙塔會分三部分去做，現在先做泡芙的表面，表面需要用牛油、紅糖和麵粉去做，如果你想有些顏色，可以加些色素，先將牛油和紅糖打勻，當它變成泡芙的時候，就可以開始做泡芙，先將牛油和紅糖打勻，當它們混合後，就可以加入麵粉，攪拌均勻後，就可以拿起保鮮紙包住，放在冰箱冷藏一小時。</p></a>
+				<a href="#00:00:44.63" id="00:00:44.63" class="lt" onclick="jumptoTime(44, this.id)"><p>等它變硬一點，就可以拿出來揉薄，冷藏好的麵團就可以拿出來，一般是用麵粉去揉，但因為我們需要揉到2mm厚度，比較薄，所以我們這次會用兩張牛油紙去揉，操作上會比較容易，揉薄後，我們就拿一個圓形的泡芙，就把一大塊圓形的泡芙放在一旁備用</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:16.63" id="00:01:16.63" class="lt" onclick="jumptoTime(76, this.id)"><p>現在我們就來做第二部分的餡料，餡料就是雲呢拿桔子醬，材料有奶、糖、雲呢拿籽、桔子粉和蛋黃，首先我們將雲呢拿條切開，拿出雲呢拿籽，再加牛奶和糖，放進鍋裡加熱，在另一個碗裡，我們先把糖和桔子粉打勻，然後再加蛋黃攪勻，當奶煮到微滾的時候，我們就將它倒進蛋黃醬裡攪勻，攪勻後，我們就可以把雲呢拿桔子醬倒進去，攪勻後，我們就可以過篩。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:10.63" id="00:02:10.63" class="lt" onclick="jumptoTime(130, this.id)"><p>將它倒進鍋裡，再煮到它變稠為止，現在我們來做泡芙，泡芙的材料是水、奶、糖、鹽、牛油、麵粉和雞蛋，首先將水、奶、糖、鹽和牛油放入鍋中煮溶，煮到大滾為止，大滾時便一次過將麵粉加進去，攪拌至成為麵團，然後將雞蛋逐一加入麵團中，將麵團混合，現在可以形成泡芙的漿，將麵團放入擠袋中，然後開始摺疊造型。</p></a>
+				<a href="#00:03:23.87" id="00:03:23.87" class="lt" onclick="jumptoTime(203, this.id)"><p>現在可以入焗爐了，預熱至220度，入爐後先將爐關火，放入Puff，入爐後關上爐門，用之前的餘溫先烤20分鐘，烤完20分鐘後調至160度，再焗15分鐘，放涼後將之前做好的吉士醬打勻，再加上忌廉，將質感變得輕身，之後可以放入袋子，放入Puff，Puff就完成了，我們可以放入塔。</p></a>
+</div>
+	</body>
+</html>

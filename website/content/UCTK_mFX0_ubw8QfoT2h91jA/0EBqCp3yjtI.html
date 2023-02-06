@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酸種裸麥包 KC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0EBqCp3yjtI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>酸種裸麥包 KC</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，今天會教大家做一個很傳統的德國麵包，是一個100%裸麥包，我們會用一個很傳統的，用三階段的天然酵母去發酵，我們希望做出來的麵包，是有裸麥粉發酵完之後獨特的果香，那種果香我會形容為，像紅酒發酵完之後的那種香味，還有伴隨著一定的醋酸味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.20" id="00:00:38.20" class="lt" onclick="jumptoTime(38, this.id)"><p>這次做的裸麥包，我們只用裸麥粉，或者叫黑麥粉，有少許幼鹽，為了增加麵團的濕度和補水程度，我們會預先煮裸麥粉，然後我們有天然酵母，比較大量裸麥發酵的天然酵母，我們會放在低溫的地方發酵，以醋酸和果香為主，如果不喜歡吃太酸的話，我們會配一些高溫發酵的裸麥種，以乳酸為主，我們今天要做的就是將這四款材料混合。</p></a>
+				<a href="#00:01:14.20" id="00:01:14.20" class="lt" onclick="jumptoTime(74, this.id)"><p>首先我們將湯種放進去，這是高溫發酵的裸麥種，會偏向乳酸，然後我將鹽和裸麥粉加進去，這是調節最後的乾濕度，由於裸麥粉沒有小麥那種彈性的膚質，在搓揉的過程中會發現它比較黏手，拌至這樣就OK了，拌勻後就可以開始做分割，首先在枱面灑少許粉，多一點都不要緊，最重要不要黏著枱面，然後要預先灑少許粉。</p></a>
+				<a href="#00:02:16.95" id="00:02:16.95" class="lt" onclick="jumptoTime(136, this.id)"><p>因為比較容易黏藤欖，每一個麵團大概是一公斤，將它一開二，然後做一步工作，輕輕地將它摺疊，注意不要黏著桌面，不要太多粉混入麵團，輕輕地慢慢摺疊，你會發覺麵團會慢慢收緊，如果少黏著桌面就要灑多少粉，它會慢慢變成球體，這個目的是除了將麵團收緊，令裡面有氣體或空隙排除，最後將收口向下，手像一個碗形。</p></a>
+				<a href="#00:02:59.95" id="00:02:59.95" class="lt" onclick="jumptoTime(179, this.id)"><p>收成一個圓球體，然後就可以放入藤欖，放入藤欖後，灑少許粉在表面，目的是將表面吸乾，它會自然歸裂，有一個特色的裂紋，當裂紋張開後就可以入烤箱，很快地我們發酵了一小時，開始看到表面有裂紋的時候，我們要將它轉移到烤箱，轉移過後要小心一點，盡量輕手，放入一個預熱250度的焗爐，再焗多7-8分鐘就完成了。</p></a>
+</div>
+	</body>
+</html>

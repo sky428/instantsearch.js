@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>和菓子｜Candy Li</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'm32ILHgDLvc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>和菓子｜Candy Li</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.71" id="00:00:2.71" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Candy，本身我喜歡到處吃東西，之後做了私人飛機空姐，對食物更有味感，更有要求，所以我決定辭職，追夢去了東京學做甜品，現在在下一個夢，我要開一個教室，跟大家分享，我今天教大家做和菓子，其實大家見到一些很有趣造型的和菓子，都心想一定很難做，其實不是的，其實是很簡單，和菓子最主要的成份是豆蓉。</p></a>
+				<a href="#00:00:44.49" id="00:00:44.49" class="lt" onclick="jumptoTime(44, this.id)"><p>為什麼用白豆蓉?</p></a>
+				<a href="#00:00:45.45" id="00:00:45.45" class="lt" onclick="jumptoTime(45, this.id)"><p>因為可以調色和整形，你見到是白肉粉，加入白豆蓉，吃的時候會吃到一種mochi，即是很煙韌的感覺，調色方面，我們用食用色粉，為什麼不用油性?</p></a>
+				<a href="#00:01:2.45" id="00:01:2.45" class="lt" onclick="jumptoTime(62, this.id)"><p>有些人問我，因為如果用油性，有可能會影響和菓子的質感，餡料是紅豆蓉，用了紅豆蓉粉，紅豆蓉粉用糖和水分開，首先把白肉粉和水混合，混合至成粉團，不黏的，放在這裡等一會，現在煮白豆蓉，把水、糖、白豆粉，全部倒入鍋中，先攪拌均勻，因為白豆蓉煮的時候會黏底，一定要用不黏底的鍋才可以煮，開爐。</p></a>
+				<a href="#00:01:45.05" id="00:01:45.05" class="lt" onclick="jumptoTime(105, this.id)"><p>不用用很慢的火，因為豆蓉用慢火煮，會黏底和容易燶，開始有泡泡的時候，要攪拌快一點，因為很快就會變成沙，會凝結，可以調慢一點火，慢慢由亮面變成啞面，白豆沙就差不多完成了，煮完的白豆沙可以拿起，把白豆蓉用保鮮紙包住，為什麼要包住呢?</p></a>
+				<a href="#00:02:17.05" id="00:02:17.05" class="lt" onclick="jumptoTime(137, this.id)"><p>因為保持濕度，放在室溫，煮完的白豆蓉就做白肉粉團，這樣弄開，放入滾水中兩三分鐘，一浮面就可以了，另一邊煮紅豆蓉，和剛才煮白豆蓉是一樣的，把所有材料都倒進去，有紅豆蓉粉、糖、水，開爐攪拌均勻，紅豆蓉和白豆蓉一樣，煮到它變啞色，現在就差不多了，也是要包住，因為要保持濕度，另一邊就看白肉粉團，煮完就好像中國的湯圓。</p></a>
+				<a href="#00:02:59.05" id="00:02:59.05" class="lt" onclick="jumptoTime(179, this.id)"><p>軟軟的，等它放涼一點，就攪拌在白豆蓉中，變成粉皮，現在就把白肉粉團，放入白豆蓉中，先把它搓揉，放在中間搓揉就可以了，最重要是豆蓉是暖的，不要冷卻才搓揉，因為冷卻了可能會起沙，搓完就會看到，它比剛才更有嚼勁，這個份量可以做到四粒，分成四份，搓成圓形，不過要手快一點，因為一冷卻，它又會起沙，一會兒就做不到形狀。</p></a>
+				<a href="#00:03:41.05" id="00:03:41.05" class="lt" onclick="jumptoTime(221, this.id)"><p>用剛才的保鮮紙封住，處理完白豆蓉，就處理紅豆蓉，分成四份，這是一個餡，所以比剛才的少，保鮮紙封住，一會兒用，首先拿一粒白豆蓉出來，我想做到粉紅色的花，就用粉紅色調色粉，調色，放少少色粉在中間，然後用這個，摺起來，推開的方法，將它染色，不夠顏色再放多少少色粉，顏色差不多了，我們就將調好色的白豆蓉粉，變成粉紅豆蓉。</p></a>
+				<a href="#00:04:23.05" id="00:04:23.05" class="lt" onclick="jumptoTime(263, this.id)"><p>放在手上，做一個握位，因為要放在，準備好的紅豆蓉在中間，我們已經把紅豆蓉包好，開始整形，我們做和菓子的工具就是三角棒，其實你看到它有很多不同的線，這條是印兩條線，這條是一條，我做一個有五個花瓣的花，搓完它，輕輕壓扁，你看到已經有紋路了，今天教大家做和菓子花的造型，和菓子有很多不同的造型，大家不如回家試試吧!</p></a>
+</div>
+	</body>
+</html>
