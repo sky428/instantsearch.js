@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>芒果布甸瑞士卷　Teresa Chiu　趙善恩</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Hmv7xRYkA2Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>芒果布甸瑞士卷　Teresa Chiu　趙善恩</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.75" id="00:00:2.75" class="lt" onclick="jumptoTime(2, this.id)"><p>我是趙倩欣，Teresa，我做蛋糕曲奇，有17年經驗</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:10.15" id="00:00:10.15" class="lt" onclick="jumptoTime(10, this.id)"><p>今天跟大家做一個，芒果布甸瑞士卷，我們會分成三部分，第一部分是做瑞士卷的卷底，第二部分是做芒果布甸，第三部分是做組合，第一部分有蛋黃和砂糖，接著是雲呢拿香油，另外有菜油和水，麵粉和泡打粉已經預先篩好，最後部分是蛋白和砂糖，這個蛋糕很特別，因為沒有牛油，首先把蛋黃和砂糖加入，用手拌的形式。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.25" id="00:00:55.25" class="lt" onclick="jumptoTime(55, this.id)"><p>拌勻後會是這個狀態，下一步會加入菜油和水，繼續拌勻，拌勻後就可以加入麵粉和泡打粉，已經篩好了，這部分不需要打機，加入雲呢拿香油，變成光滑的狀態後，就要打蛋白，蛋白要打至起泡，開快速，砂糖不能馬上加入蛋白，一定要打至中段有泡，分三次加入蛋白，蛋白就會變得幼滑，打至這個階段，已經變成泡沫狀況，就可以加入第一次糖。</p></a>
+				<a href="#00:01:44.25" id="00:01:44.25" class="lt" onclick="jumptoTime(104, this.id)"><p>繼續打，然後就可以加入第二次糖，打快一點，把第三次糖加入，蛋白會有一個蛋白的缸，即是這個狀態已經可以備用，如果打得過份，蛋糕相對不會太鬆軟，把打好的蛋白分三次加入蛋漿，每一次加入蛋白，一定要輕輕地打入蛋白，不可以太大力，也不需要打機，因為過份打蛋白，空氣會逃走，蛋糕相對不會太鬆軟，加蛋白的同時。</p></a>
+				<a href="#00:02:26.25" id="00:02:26.25" class="lt" onclick="jumptoTime(146, this.id)"><p>也要轉換工具，就是轉換這個攪拌槳，因為旁邊和底部，還未徹底地拌勻，顏色全部統一，變成一種顏色，代表已經均勻了，我們要預熱焗爐，焗爐要140度，大概焗25分鐘，就可以拿出來用了，到了芒果布甸這部分，其實也很簡單，我們買到的是，芒果味的啫喱粉，然後有魚膠粉，然後有熱水，拌勻後會有奶，和急凍芒果果蓉。</p></a>
+				<a href="#00:03:3.25" id="00:03:3.25" class="lt" onclick="jumptoTime(183, this.id)"><p>拌勻後，我們會用兩個容器去裝，第一個是花花模，第二個是普通裝著，因為我們會切粒，我們會將啫喱粉，和魚膠粉混合，這是熱水，這個時候，要徹底拌勻，然後將牛奶，加進去，普通拌勻，芒果味的果蓉，其實在烘焙店，也很方便買到，我們現在不要過分攪拌，因為會有很多泡，我們輕輕將它，放入兩個容器，剩下這個，我會封保鮮紙。</p></a>
+				<a href="#00:03:44.25" id="00:03:44.25" class="lt" onclick="jumptoTime(224, this.id)"><p>放進雪櫃，它自己就會凝固，雪的時間，真的需要幾個小時，這個就不可以心急了，來到這部分，我們將蛋糕組合，忌廉比平時打起一點，為什麼呢，因為我們要將它，變成芒果味，平時敏餅的忌廉，我們會比較打得起一點，如果賣餅，即我們做慕斯蛋糕，也會將它打得，五六成左右，這個狀態，我們要比較硬身一點，基本上是這樣混合。</p></a>
+				<a href="#00:04:17.25" id="00:04:17.25" class="lt" onclick="jumptoTime(257, this.id)"><p>我們將焗好的蛋糕，切走四邊多餘的位置，然後會裁成一個長方形，我們會將少許忌廉，放上去，前後前後，打橫，薄薄地浸溯在蛋糕上面，打橫，這個尾部，做了一個斜的切口位，這個就是蛋糕尾部的收口位，我們也放少許忌廉，兩邊收多一點，這個就是剛才我們做的，芒果布甸，將它切粒，這邊就是新鮮的芒果粒，整個芒果卷。</p></a>
+				<a href="#00:04:50.25" id="00:04:50.25" class="lt" onclick="jumptoTime(290, this.id)"><p>都想有芒果粒的出現，我們就將它平均，分佈在整個範圍裏，我們會加多一層忌廉，也是打橫，打橫輕輕掃上去，我們需要一個工具，就是一個幼身的鐵桶，連同桶和紙提起，按住頭，放下來，然後我們要將它再提一次，一邊放的時候，漸漸將蛋糕推過來，然後卷慢慢收，直至鐵桶碰到桌面，碰到了，然後將瑞士卷的桶推過來，碰到之後。</p></a>
+				<a href="#00:05:31.25" id="00:05:31.25" class="lt" onclick="jumptoTime(331, this.id)"><p>我們就放手，碰到桌面，收口之後，就將它卷起來，好像一粒糖一樣，捏起來，這個狀態，我們就將它放在雪櫃，放在零上雪櫃，大概20分鐘，椰丝是纯白色的，我们可以在烤箱里轻轻烤一烤，你会发现它有点颜色，这样会更好看。</p></a>
+</div>
+	</body>
+</html>

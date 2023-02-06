@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>懷舊砵仔糕 張致恒 享樂團</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3d8QXnJdUT4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>懷舊砵仔糕 張致恒 享樂團</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，三個月去找方法 三個月時是著眼，學生有輕微疑似 幾格 幾格 幾格</p></a>
+				<a href="#00:00:18.77" id="00:00:18.77" class="lt" onclick="jumptoTime(18, this.id)"><p>三個月我被取暱 三個月去諗點解咁慳，重新發記百年 傷心裡殘，今日我係彈樂團主音旨呈，成員包括結他手Eddy 鼓手Samuel</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:3.77" id="00:01:3.77" class="lt" onclick="jumptoTime(63, this.id)"><p>Hello，好開心見到你地，我突然想起Boys時候的情懷，我隨卡通經常唱，講呢啲，咁我地今日煮咩呢</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:15.77" id="00:01:15.77" class="lt" onclick="jumptoTime(75, this.id)"><p>食神好鍾意香港本土情懷特色的菜式，所以我攞返我地由細到大都食的菜式，叫做缽仔糕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:25.77" id="00:01:25.77" class="lt" onclick="jumptoTime(85, this.id)"><p>缽仔糕，喂 啲材料準備好哂，咁係時候教我囉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:35.77" id="00:01:35.77" class="lt" onclick="jumptoTime(95, this.id)"><p>呢啲係咩黎架，紅豆 燉麵 煎米粉 煎糖 層氣，呢個呢 紅豆 呢個水呢，差少少唔知架</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:46.77" id="00:01:46.77" class="lt" onclick="jumptoTime(106, this.id)"><p>好啦咁我地開始啦，要整咩先，煮紅豆 煮紅豆 係啦，要點煮 全部呀 全部呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:54.77" id="00:01:54.77" class="lt" onclick="jumptoTime(114, this.id)"><p>咁多 層氣 慢火，慢火 好 用唔用攪下佢咁樣，等得㗎啦 其實而家我地係可以吹水嘅呢個時間，咁要煲到佢點樣呢，我諗就呢度呀 煮佢一個鐘，煮了一小時，可以吃了嗎?</p></a>
+				<a href="#00:02:18.85" id="00:02:18.85" class="lt" onclick="jumptoTime(138, this.id)"><p>可以了…，第一步，要預熱砵仔，接著我們會煮砵仔糕的醬汁，首先用450克水煮110克片糖，這裡又要等它幾十分鐘，融化後就把燉麵和米粉撞進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:37.29" id="00:02:37.29" class="lt" onclick="jumptoTime(157, this.id)"><p>然後就倒進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:40.41" id="00:02:40.41" class="lt" onclick="jumptoTime(160, this.id)"><p>我們把它們攪至完全融化，會撞到像奶茶色，你已經攪拌好了，對，因為要拜手，其實你已經準備好了，等等，我先驗一下，驗一下有沒有澱粉質，很滑</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:54.77" id="00:02:54.77" class="lt" onclick="jumptoTime(174, this.id)"><p>當然，跟我嘴巴一樣，接著就倒進去嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:0.45" id="00:03:0.45" class="lt" onclick="jumptoTime(180, this.id)"><p>倒之前，你剛才問了我紅豆怎樣用，首先要先澆在砵子上，我們倒這個會倒滿，倒滿，即是直接平坦?</p></a>
+				<a href="#00:03:10.93" id="00:03:10.93" class="lt" onclick="jumptoTime(190, this.id)"><p>平，水平，沒錯，你已經完成了砵仔糕最基本的做法，原來砵仔糕這麼容易做，應該不做了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:25.29" id="00:03:25.29" class="lt" onclick="jumptoTime(205, this.id)"><p>是不是拿出來了，對，拿出來，開，開來見我，嘩</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:30.93" id="00:03:30.93" class="lt" onclick="jumptoTime(210, this.id)"><p>飄出來，你平時有吃過砵仔糕嗎，砵仔糕就是這樣夾一夾，夾一夾，然後繞一圈，繞完一圈，插住它，然後拿出來，看得到嗎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:42.61" id="00:03:42.61" class="lt" onclick="jumptoTime(222, this.id)"><p>我成功了。</p></a>
+</div>
+	</body>
+</html>

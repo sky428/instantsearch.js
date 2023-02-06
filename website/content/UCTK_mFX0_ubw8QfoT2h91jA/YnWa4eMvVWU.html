@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>椰糖斑蘭蛋糕 陳凱琳 玻璃朱</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'YnWa4eMvVWU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>椰糖斑蘭蛋糕 陳凱琳 玻璃朱</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.19" id="00:00:3.19" class="lt" onclick="jumptoTime(3, this.id)"><p>请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，這次玻璃磚有個大比拼，就是這個蛋糕，還請來近年被譽為最美的講者，陳凱琳小姐，馬上就姐姐化妝，我媽媽經常說你很美…，她沒見過我， 真討厭，她待會特地來見你，好，你上次說可以做班蘭蛋糕，我沒做過，但我們有神級導師Crystal，太好了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:40.03" id="00:00:40.03" class="lt" onclick="jumptoTime(40, this.id)"><p>這次全靠她教我們兩個，一起做出來， 看誰做得像樣，好吃點， 好嗎 好，馬上開始吧 來吧，Crystal， 可否告訴我們，第一步驟要做什麼，首先把玉米油用低溫煮， 煮至70度，煮好後倒進攪拌碗裡，再和中筋麵粉拌勻，拌勻後再加蛋黃、椰奶和班蘭汁，我早就預先準備了班蘭汁，將120毫升水。</p></a>
+				<a href="#00:01:15.63" id="00:01:15.63" class="lt" onclick="jumptoTime(75, this.id)"><p>加20塊班蘭葉攪碎，再用魚袋隔渣，隔渣就變成班蘭汁，對， 就變成班蘭汁，拌勻後就可以拿去焗了嗎，不是， 還有一個步驟，還有一個步驟就是把蛋白打起，打起後才慢慢倒進糖，打到它站起來就行了，倒轉， 掉在頭上，行了…，不錯，你這個人，你給我檢查一下， 我還沒檢查，你太大聲了，好害怕，打起蛋白和砂糖後。</p></a>
+				<a href="#00:02:2.75" id="00:02:2.75" class="lt" onclick="jumptoTime(122, this.id)"><p>分段放進班蘭蛋漿裡，然後倒進4吋蛋糕模，預熱焗爐， 用190度焗15分鐘，然後再轉焗爐的溫度，用145度焗40分鐘，我們進了爐， 現在要做甚麼，現在要做班蘭椰糖餡料，首先將班蘭葉打結，是否像綁鞋帶，沒錯， 你自己試試，真的嗎，沒有， 我當它包黑葉雞，然後將椰糖加水煮溶，連班蘭葉一起煮。</p></a>
+				<a href="#00:02:55.11" id="00:02:55.11" class="lt" onclick="jumptoTime(175, this.id)"><p>煮溶後再加進椰絲，還有一個步驟，就是用保鮮膜包著焗10分鐘，Crystal， 現在最後一步，我們要做忌廉嗎，對， 外面的忌廉，我們有忌廉和吉士粉，將它們混合一起打起就行了，倒轉不會掉下來，站起來 真的可以嗎，對， 別打過， 過會粗糙，然後可以放進雪櫃保持溫度，忌廉 麻煩你了，謝謝…。</p></a>
+				<a href="#00:03:35.83" id="00:03:35.83" class="lt" onclick="jumptoTime(215, this.id)"><p>你手在發抖， 像牙籤似的，我用手指也可以，不是吧?好， 來吧，將班蘭蛋糕切成兩層，其中一層會抹上薄薄的吉士忌廉，和椰糖餡，再抹上薄薄的吉士忌廉，再放上另一層班蘭蛋糕，我們再將整個蛋糕抹上吉士忌廉，然後以椰糖作裝飾就完成了，我們可以同時嘗嘗，同時嘗嘗…，好…，好吃，這次班蘭蛋糕…，那是誰的?</p></a>
+				<a href="#00:04:16.39" id="00:04:16.39" class="lt" onclick="jumptoTime(256, this.id)"><p>你快嘗嘗我的， 星妍，好吃，我覺得好吃，真的有點不同，真的有點不同?</p></a>
+				<a href="#00:04:23.03" id="00:04:23.03" class="lt" onclick="jumptoTime(263, this.id)"><p>我也有點…，好像不太好吃 為甚麼?</p></a>
+				<a href="#00:04:25.39" id="00:04:25.39" class="lt" onclick="jumptoTime(265, this.id)"><p>因為我們的醬汁，兩個都很好吃，我最喜歡打和，太好了， 成功，這次大挑戰成功了。</p></a>
+</div>
+	</body>
+</html>

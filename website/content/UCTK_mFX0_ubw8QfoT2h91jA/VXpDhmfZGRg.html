@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>茶碗蒸 Suki Chui</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VXpDhmfZGRg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>茶碗蒸 Suki Chui</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.78" id="00:00:2.78" class="lt" onclick="jumptoTime(2, this.id)"><p>字幕by索兰娅🐰，食譜很簡單，也非常好吃，第一個步驟，我們需要兩隻蛋，打蛋最好用筷子，打的時候不要離開蛋黃，否則會入太多空氣，蒸蛋的時候就會沒那麼滑，稍微混合蛋黃和蛋黃，然後就可以打蛋了，稍為混合好後，就可以加調味料，第一樣要加的就是醬油，然後就是味醂，味醂可以令味道清甜一點，鹽就一小撮，因為已經加了醬油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:6.50" id="00:01:6.50" class="lt" onclick="jumptoTime(66, this.id)"><p>稍微打一打，然後就可以加清雞湯或者昆布湯，兩隻蛋我用300毫升清雞湯，稍微再混合，確保蛋蒸出來很滑，所以蛋液要過篩，會看到打得不夠均勻的蛋液就在篩子上，準備兩至三個容器，準備了一些材料，首先把冬菇片放入，新鮮蝦已經去腸洗乾淨，然後再放一粒銀杏，之後就可以把蛋漿，小心地加入容器裡，盡量不要讓它有太多泡泡。</p></a>
+				<a href="#00:02:3.50" id="00:02:3.50" class="lt" onclick="jumptoTime(123, this.id)"><p>大概八九成滿，泡泡可以用竹籤或火槍燒掉，泡泡噴走後，就可以蒸之前蓋上蓋子，防止倒汗水滴花，如果沒有蓋子也沒問題，用碗蒸也可以用保鮮紙包住，蒸的時候也有些竅門，開大火，蓋上蓋子蒸3分鐘，之後用筷子放在蓋子和鍋子中間，中火蒸多10至12分鐘，用竹籤或筷子沾一下表面，表面已經凝固即是蒸蛋已經完成。</p></a>
+</div>
+	</body>
+</html>

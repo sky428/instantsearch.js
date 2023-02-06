@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蘋果花杯子蛋糕　Darling Chu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8LWOojEYlwQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蘋果花杯子蛋糕　Darling Chu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.75" id="00:00:2.75" class="lt" onclick="jumptoTime(2, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好，我是Darling，韓式植花的甜品師傅，大家好，今天我們教大家做cupcake底，cupcake的材料有韓國的白牛油，牛奶朱古力，白砂糖，雞蛋和低筋麵粉，還有泡打粉，首先把牛油隔水再溶化，連朱古力一起放進去，用韓國白牛油的原因是奶味比較重，無論蛋糕或擠花果忌廉都會比較重。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:7.48" id="00:01:7.48" class="lt" onclick="jumptoTime(67, this.id)"><p>吃起來會好味很多，溶化後把朱古力放進攪拌鍋，把砂糖分三次放進去，這個時候要攪拌一會，因為朱古力很熱，如果放雞蛋，雞蛋會熟，這個時候把雞蛋逐隻放進去，現在的狀態是很稠的，跟剛才稀稠稠的不同，把麵粉過篩，泡打粉也放進去，篩完後用刮刀攪拌均勻，記得麵粉放進去後不要用機器攪拌，因為用機器的話。</p></a>
+				<a href="#00:02:23.48" id="00:02:23.48" class="lt" onclick="jumptoTime(143, this.id)"><p>會把低筋麵粉的筋性打出來，蛋糕就不會太軟，打好蛋糕漿後，可以放入紙杯，通常我們會放2分之3，因為焗的時候，cupcake會發高，如果一開始已經放滿，它就會漏出來，漏出來的時候，你就可以不要cupcake了，做完後要搖一搖，將裡面的空氣搖出來，現在可以去焗了，將焗爐預熱170度焗25分鐘就OK了，現在開始做Butter Cream。</p></a>
+				<a href="#00:03:35.63" id="00:03:35.63" class="lt" onclick="jumptoTime(215, this.id)"><p>Butter Cream的材料有水、白砂糖和蛋白，還有我們的主角就是韓國的白牛油，現在開始打蛋白，將蛋白放進攪拌機，記住攪拌機內不能有一滴水或油，糖也要分3次加入，打到蛋白企立，反轉也不會掉下來，這個狀態就OK了，現在開始煮糖水，將水和糖一起煮滾，煮好糖水後就開機，記得慢速將糖水倒進去。</p></a>
+				<a href="#00:04:42.91" id="00:04:42.91" class="lt" onclick="jumptoTime(282, this.id)"><p>蛋白和糖水打好後，就可以加白牛油，這個就是韓國的爆油，加牛油後，打勻後便成為擠花忌廉，我們開始擠蘋果花，首先拿起花釘，然後擠少許，用烘焙紙黏著，蘋果花一定有5個花瓣，所以不會只有4個或6個，一定有5個花瓣，首先把擠花嘴挺起，中間位置是圓心的，然後轉，因為蘋果花的花形是圓圓的，所以要做出這些特徵。</p></a>
+				<a href="#00:05:41.26" id="00:05:41.26" class="lt" onclick="jumptoTime(341, this.id)"><p>最重要要點是這朵花有5個花瓣，每個花瓣都要一樣大，如果有些大有些小，做出來的花形便不會圓形，然後拿起，放進去，放進雪櫃冷凍後才可以做擠花動作，蛋糕已經烘好，把忌廉抹上去，做一個抹面的步驟，現在是最緊張的時間，把剛才擠得很漂亮的花，逐個放上去，把它們組合成一個cupcake，中間擠少許忌廉。</p></a>
+				<a href="#00:06:44.26" id="00:06:44.26" class="lt" onclick="jumptoTime(404, this.id)"><p>放好後就要擠樹葉，樹葉是用到352號擠的，在這些焦焦的位置補上樹葉，忌廉已經混合成綠色，現在要加入花蕊，花蕊是用到2號擠序，一個漂亮的蘋果花cupcake便完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:41.26" id="00:07:41.26" class="lt" onclick="jumptoTime(461, this.id)"><p>謝謝收看。</p></a>
+</div>
+	</body>
+</html>

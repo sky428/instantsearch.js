@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>胡椒焗藍蝦 | 松露女皇 Esther Au</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GpklHzsT6Fs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>胡椒焗藍蝦 | 松露女皇 Esther Au</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.91" id="00:00:2.91" class="lt" onclick="jumptoTime(2, this.id)"><p>我是松露女王Esther O，我最擅長煮歐陸式的家庭菜，今天我帶了一些很好的食材，做一個胡椒焗南蝦，南蝦是甚麼呢?</p></a>
+				<a href="#00:00:19.91" id="00:00:19.91" class="lt" onclick="jumptoTime(19, this.id)"><p>其實是法國釀的蝦，調味有點藍藍的，我喜歡它很乾淨，待會你會看到我挑的蝦腦，都會完整完整，很漂亮，而且一點也不髒，還有我喜歡吃辣的香味，我就用了白胡椒，還有指天椒，還有乾蔥，還有一些粗的鹽，我這個是紅酒鹽，但大家買不到不要緊，粗粒的海鹽也可以，我吃蝦喜歡整隻都選來吃，所以我會幫它清潔得特別乾淨，我現在幫它剪腳。</p></a>
+				<a href="#00:01:1.91" id="00:01:1.91" class="lt" onclick="jumptoTime(61, this.id)"><p>這裡也剪一下，這裡剪平一點，你會看到蝦的眼睛也是凸出來，即是它急凍技術做得很好，我現在剪閃電位，在閃電位的位置挑蝦腦，待會啜蝦頭的時候就特別滋味，就不怕吃到蝦腦有苦澀味，記得要挑腸，在中間第二節剪一下，不過這隻蝦腸比較乾淨，不會有很粗的黑色分泌，內臟在裡面，輕輕一拉就拔出來了，就這樣。</p></a>
+				<a href="#00:01:49.88" id="00:01:49.88" class="lt" onclick="jumptoTime(109, this.id)"><p>想白胡椒的香味更突出，我會用白鑊烘白胡椒，白鑊即是不放油，慢慢在平底鑊將白胡椒的香味散發出來，炒香它，大概炒3-5分鐘，現在已經聞到很香的白胡椒味，放在一旁，稍後會將它用來焗蝦，我會用一個比較全熱快的鍋去處理，我先炒紫天椒，然後就放一些乾蔥，一起炒香它，紫天椒和乾蔥炒香後，我們就可以放剛才用白鑊炒香的白胡椒。</p></a>
+				<a href="#00:02:35.88" id="00:02:35.88" class="lt" onclick="jumptoTime(155, this.id)"><p>我們也炒一炒它，讓它吸收乾蔥的香味，我們放一些海鹽，粗粒的海鹽，我們就放一些南蝦上去，這個時候我們可以開大一點的火，讓胡椒的熱力盡量蓋過蝦，我會灒一點白酒，蒸氣出來後我就馬上蓋上蓋子，就可以放入焗爐焗了，時間大概焗十至十二分鐘就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:16.92" id="00:03:16.92" class="lt" onclick="jumptoTime(196, this.id)"><p>MING PAO CANADA // MING PAO TORONTO。</p></a>
+</div>
+	</body>
+</html>

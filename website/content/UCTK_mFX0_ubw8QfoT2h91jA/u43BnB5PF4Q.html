@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 黃金煎蝦餅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'u43BnB5PF4Q',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 黃金煎蝦餅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.42" id="00:00:3.42" class="lt" onclick="jumptoTime(3, this.id)"><p>我會做黃金煎蝦餅，我想問千萍有甚麼可以幫忙，千萍幫我把豆角和青瓜切粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:11.98" id="00:00:11.98" class="lt" onclick="jumptoTime(11, this.id)"><p>Kit 我想問你為何會做這個菜式</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:15.78" id="00:00:15.78" class="lt" onclick="jumptoTime(15, this.id)"><p>蝦有笑蝦蝦，新年金黃色會好看點，那跟豆角有甚麼關係，因為豆角會令餅有口感爽脆點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:25.38" id="00:00:25.38" class="lt" onclick="jumptoTime(25, this.id)"><p>爽脆點，所以就打算用豆角來做這個菜式，當然可以用其他代替，那你會做甚麼，我會剁蝦膠，Kit 你做黃金蝦餅，主要材料當然要有蝦，但如果小朋友想加其他海鮮，例如墨魚或帶子可以嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:45.74" id="00:00:45.74" class="lt" onclick="jumptoTime(45, this.id)"><p>當然可以，甚至可以加鯪魚肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:48.58" id="00:00:48.58" class="lt" onclick="jumptoTime(48, this.id)"><p>鯪魚肉也可以，那就要把名字改了，黃金魚餅，黃金海鮮餅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:55.06" id="00:00:55.06" class="lt" onclick="jumptoTime(55, this.id)"><p>也可以的，Kit，我們剁到甚麼程度才可以?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:58.70" id="00:00:58.70" class="lt" onclick="jumptoTime(58, this.id)"><p>其實剁到起膠，變成蝦蓉就可以了，如果不想自己剁，買現成蝦膠也可以的，不過自己剁的話，口感會好一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:7.02" id="00:01:7.02" class="lt" onclick="jumptoTime(67, this.id)"><p>嗯，而且會好吃一點，是嗎?，好了，Kit，蝦膠剁好了，千萍幫你處理豆角和青瓜也處理好了，是，那下個步驟要做甚麼呢?</p></a>
+				<a href="#00:01:17.46" id="00:01:17.46" class="lt" onclick="jumptoTime(77, this.id)"><p>接著我們就可以放醃料了，好，麻煩你了，我現在放泰式紅咖喱膏了，嗯，為甚麼這麼有趣會加咖喱膏呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:25.50" id="00:01:25.50" class="lt" onclick="jumptoTime(85, this.id)"><p>因為紅咖喱會令整個蝦餅變紅色，煎完之後就會變成金黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:30.58" id="00:01:30.58" class="lt" onclick="jumptoTime(90, this.id)"><p>好的，那另外的材料還有甚麼呢?，我們加一點胡椒粉，胡椒粉可以去除腥味，是</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:37.86" id="00:01:37.86" class="lt" onclick="jumptoTime(97, this.id)"><p>再加一點糖，糖就可以調出咖喱膏的味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:41.26" id="00:01:41.26" class="lt" onclick="jumptoTime(101, this.id)"><p>但我看你沒有加鹽或醬油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:44.90" id="00:01:44.90" class="lt" onclick="jumptoTime(104, this.id)"><p>咖喱膏本身有鹹味，所以就不需要再調味了，然後我們再加豆角</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:50.86" id="00:01:50.86" class="lt" onclick="jumptoTime(110, this.id)"><p>千萍，我記得你做過蝦餅，你有吃過用豆角做的蝦餅嗎?</p></a>
+				<a href="#00:01:58.10" id="00:01:58.10" class="lt" onclick="jumptoTime(118, this.id)"><p>沒有，那我們待會試味的時候就要試清楚一點了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:1.74" id="00:02:1.74" class="lt" onclick="jumptoTime(121, this.id)"><p>好，Kit，我們要攪拌到甚麼樣子才可以呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:4.86" id="00:02:4.86" class="lt" onclick="jumptoTime(124, this.id)"><p>我們要攪拌到紅咖喱膏和蝦膠完全混合就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:8.26" id="00:02:8.26" class="lt" onclick="jumptoTime(128, this.id)"><p>嗯，Kit，如果我不想加咖喱膏，可以不加嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:12.50" id="00:02:12.50" class="lt" onclick="jumptoTime(132, this.id)"><p>當然可以，但如果你想要紅色的話，其實用甜椒粉也可以，不過就要加一點調味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:18.62" id="00:02:18.62" class="lt" onclick="jumptoTime(138, this.id)"><p>好的，如果我不想加豆角或粟米，還可以用其他材料代替嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:23.74" id="00:02:23.74" class="lt" onclick="jumptoTime(143, this.id)"><p>也可以，可以用甘筍或蘆筍粒，現在攪拌得差不多了，就可以加一點生粉，但是煎的時候不要散開，好的，加完生粉之後，現在攪拌均勻就可以下去煎了，好，我們先加一點油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:39.42" id="00:02:39.42" class="lt" onclick="jumptoTime(159, this.id)"><p>Kit，我們用甚麼火力煎呢?，我們用大火煎的，Kit，為甚麼我們不是用手去搓呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:45.70" id="00:02:45.70" class="lt" onclick="jumptoTime(165, this.id)"><p>因為用手去搓會散開，用兩隻匙羹來定型，煎之前就可以確保它不會散開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:51.78" id="00:02:51.78" class="lt" onclick="jumptoTime(171, this.id)"><p>如果我們不想煎的話，可以拿去炸嗎?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:54.10" id="00:02:54.10" class="lt" onclick="jumptoTime(174, this.id)"><p>當然可以，但是我們炸之前要先鋪上麵包糠才可以炸，嗯，我們看到蝦餅邊變成金黃色就可以翻轉另一面繼續煎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:4.02" id="00:03:4.02" class="lt" onclick="jumptoTime(184, this.id)"><p>Kit，為甚麼你要用鑊鏟壓它呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:6.86" id="00:03:6.86" class="lt" onclick="jumptoTime(186, this.id)"><p>我想把它壓成蝦餅的形狀，因為剛才用匙羹做了一個頭體，把它壓扁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:13.46" id="00:03:13.46" class="lt" onclick="jumptoTime(193, this.id)"><p>千萍，聞到沒有很香的咖喱味嗎?，嗯，而且聞起來比較有野味，那待會吃起來會有醬汁配搭嗎?</p></a>
+				<a href="#00:03:23.02" id="00:03:23.02" class="lt" onclick="jumptoTime(203, this.id)"><p>有，我們有泰式甜酸醬</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:25.14" id="00:03:25.14" class="lt" onclick="jumptoTime(205, this.id)"><p>嗯，我們再翻轉另一面，讓它煎得更金黃色</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:29.62" id="00:03:29.62" class="lt" onclick="jumptoTime(209, this.id)"><p>那Kit，我們煎到怎樣為止就可以了?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:31.74" id="00:03:31.74" class="lt" onclick="jumptoTime(211, this.id)"><p>煎到兩面都看到是金黃色就可以了，現在就差不多了，嗯，在做這個菜式的過程中，我覺得最困難的地方就是要用匙羹去定型，如果小朋友做不到，我建議小朋友用手搓成一個餅再拿去煎，我們現在就可以上碟了，嗯，首先鋪上剛才切好的青瓜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:54.94" id="00:03:54.94" class="lt" onclick="jumptoTime(234, this.id)"><p>Kit，如果我們不想用青瓜來做伴碟，可以用甚麼?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:58.30" id="00:03:58.30" class="lt" onclick="jumptoTime(238, this.id)"><p>我們可以用菠蘿或桃代替，現在就把蝦餅放上去，我們這次會用泰式甜辣醬來伴食，如果我們不用這個，可以用其他嗎?</p></a>
+				<a href="#00:04:7.78" id="00:04:7.78" class="lt" onclick="jumptoTime(247, this.id)"><p>我們可以用喼醬或其他代替，或者不用也可以，嗯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:11.74" id="00:04:11.74" class="lt" onclick="jumptoTime(251, this.id)"><p>那Kit，這個有甚麼名堂呢?，黃金煎蝦餅，做好了，我們可以試味了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:17.98" id="00:04:17.98" class="lt" onclick="jumptoTime(257, this.id)"><p>위 incrediblyårt，Powder，dapat，ドン，謝謝觀看，字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

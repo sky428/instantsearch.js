@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>果子乾果酒香磅蛋糕 Teresa Chiu 趙善恩</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-SbDMniUphc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>果子乾果酒香磅蛋糕 Teresa Chiu 趙善恩</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.58" id="00:00:3.58" class="lt" onclick="jumptoTime(3, this.id)"><p>我是趙倩欣，Theresa，我做蛋糕曲奇有17年經驗，做蛋糕和做其他美食一樣，一定要用心去做，用心去做的事，一定有人欣賞，很多人都懂得做牛油蛋糕，但如果牛油蛋糕加了酒香味，果子和葡萄乾，會是怎樣的呢?</p></a>
+				<a href="#00:00:30.68" id="00:00:30.68" class="lt" onclick="jumptoTime(30, this.id)"><p>第一件事，我們會有室溫的牛油，有砂糖、雞蛋、自發粉。</p></a>
+				<a href="#00:00:39.20" id="00:00:39.20" class="lt" onclick="jumptoTime(39, this.id)"><p>另外我們會準備密漸的果皮，其實就是乾果子。</p></a>
+				<a href="#00:00:44.80" id="00:00:44.80" class="lt" onclick="jumptoTime(44, this.id)"><p>另外亦有酒浸的黑提子乾，我用了Rum酒浸了一晚，最後有少許的雲呢拿香油，第一件事，我們先將砂糖和牛油，上機打了它。</p></a>
+				<a href="#00:00:56.84" id="00:00:56.84" class="lt" onclick="jumptoTime(56, this.id)"><p>一開機的時候用快速，徹底將牛油和砂糖打到淺黃色，即是更加將糖融合在一起，打了一會後，我們要將它關機，將邊刮下來，如是者重複，亦要將它繼續打，因為現在狀態是還未可以加蛋，打了一會後，我們也關機了，第二次將牛油、糖掃到中間，最後一步，我們先將機器開啟，然後我們慢慢將蛋，總共有四隻蛋。</p></a>
+				<a href="#00:01:36.24" id="00:01:36.24" class="lt" onclick="jumptoTime(96, this.id)"><p>逐隻逐隻加入，加蛋的時候，我們開啟中速，加了四隻蛋後，它充滿了很多水分，我們要將它關機，將它拌勻。</p></a>
+				<a href="#00:01:48.24" id="00:01:48.24" class="lt" onclick="jumptoTime(108, this.id)"><p>這時候雲呢拿香油可以加進去，我將果子加進去，還有酒浸的提子乾也加進去，最後我們將麵粉一次過加進去，將所有材料手拌勻，拌至這個狀態，差不多拌勻了，才上機，最後拌勻所有材料後，開啟中慢速，徹底將它再攪拌一次，這就形成了蛋糕的麵糊，這個狀態是濃稠的，將它拌勻後，我們要加入橙青，橙青有一隻橙，我們要半隻橙皮。</p></a>
+				<a href="#00:02:31.32" id="00:02:31.32" class="lt" onclick="jumptoTime(151, this.id)"><p>我們不要白色部分，我們直接將它刨入麵糊就可以了，拌勻後，我們將它放入兩個長方形，分別是3.5 x 7吋的模，放之前，我們會掃一些牛油，其實主要是方便它容易脫模。</p></a>
+				<a href="#00:02:51.48" id="00:02:51.48" class="lt" onclick="jumptoTime(171, this.id)"><p>將麵糊適量放入，將它平均分成兩個模，其實不需要刻意掃好，放在模中，推開四個角，都有，這樣就比較均勻，我們將它放入烤箱，我們要焗大約45分鐘至1小時，它會慢慢升起，如果太高的話，它會升得太高，有機會將漿流出來，現在這裡大約七至八成滿就可以了，果子蛋糕除了有果香味外，還要準備一個淋蛋糕用的糖水酒，這裡有清水。</p></a>
+				<a href="#00:03:32.00" id="00:03:32.00" class="lt" onclick="jumptoTime(212, this.id)"><p>有血橙果蓉，有丁香，這裡有10克，有砂糖，一條肉桂枝，這樣就可以了。</p></a>
+				<a href="#00:03:41.52" id="00:03:41.52" class="lt" onclick="jumptoTime(221, this.id)"><p>還有三塊橙皮，然後將它慢火煮20分鐘，煮完20分鐘，將渣滓全部取出來，隔開篩子，然後加入溫度酒。</p></a>
+				<a href="#00:03:59.96" id="00:03:59.96" class="lt" onclick="jumptoTime(239, this.id)"><p>再攪拌均勻，這個可以放在蛋糕面上，令蛋糕更濕潤，增加酒香味和橙香味，蛋糕焗好了，全凍後，模具脫模了。</p></a>
+				<a href="#00:04:16.32" id="00:04:16.32" class="lt" onclick="jumptoTime(256, this.id)"><p>然後準備剛才的糖水酒，要充分吸收，所以用掃子大力掃在蛋糕上，沿途可以一邊加一邊加，慢慢滲入，令蛋糕更濕潤，也增加酒香和橙香味，掃完糖水酒後，要令它吸收，所以要讓它休息約一小時，才會做裝飾。</p></a>
+				<a href="#00:04:45.92" id="00:04:45.92" class="lt" onclick="jumptoTime(285, this.id)"><p>我會準備無花果乾、杏桃肉，和橙皮條，整個蛋糕就完成了。</p></a>
+</div>
+	</body>
+</html>

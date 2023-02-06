@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>腰果咖啡曲奇條　Teresa Chiu　趙善恩</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'cYrGG1k7s20',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>腰果咖啡曲奇條　Teresa Chiu　趙善恩</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，我是趙善欣 Teresa，我做蛋糕曲奇有17年經驗，各位Big Big Chef的朋友大家好，今天我會示範做曲奇餅，主角是腰果和咖啡味，曲奇其實易學難精，基本上分四大類，有摺花、手搓形狀，麵團切件形狀和吸模，今天是屬於麵團和切件形狀。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.39" id="00:00:38.39" class="lt" onclick="jumptoTime(38, this.id)"><p>介紹材料，牛油，所有曲奇都必須，放在室溫攤軟，蛋漿、咖啡粉、咖啡香油、雲呢拿香油，糖霜和普通麵粉，焗過的腰果，所有果仁類加入曲奇，我會主張先烘烤十多分鐘，令腰果香味出來，第一步將牛油放入，同時將糖霜和蛋漿一起打，打曲奇最重要是，牛油和糖霜一定要打至淺黃色，曲奇才夠鬆脆，首先將兩種材料拌勻。</p></a>
+				<a href="#00:01:27.39" id="00:01:27.39" class="lt" onclick="jumptoTime(87, this.id)"><p>先開慢速，基本糖混合後，不會再氧開時，就可以開快速，糖粉不見了，其實已和牛油混合，不過這個狀態還未可以加蛋，因為顏色仍偏黃，我們做了些工夫，將它刮低，這時加雲呢拿香油，開機，保持快速，可以將它打至米黃色，現在顏色淺了很多，可以開始加蛋，加蛋時，邊放邊加，蛋放下後，將蛋和牛油糖拌勻，還有兩樣材料未加。</p></a>
+				<a href="#00:02:25.39" id="00:02:25.39" class="lt" onclick="jumptoTime(145, this.id)"><p>就是香油和咖啡粉，再拌勻，最後加入腰果和麵粉，其實麵粉比較多，我會提議將麵粉和牛油糖，輕輕拌勻大約五至六成，因為上機後麵粉不會氧出來，可以在最快的時間製作麵團，攪拌好麵粉後一定要慢速，慢慢加快速度，攪拌好麵粉後就要停止，不像剛才那樣不停攪拌就不用了，已經可以了，攪拌好麵團後就拿出來放桌上，硬度有多厚呢?</p></a>
+				<a href="#00:03:12.65" id="00:03:12.65" class="lt" onclick="jumptoTime(192, this.id)"><p>其實這個尺寸是自己決定的，但我今天選擇了一個像手指的形狀，所以我硬度會變成大約一吋，其實四邊都可以裁走，這個形狀就冷藏，麵團冷藏了數小時後，已經變硬了，現在就來做形狀，我會選擇做一個長條形，先切成兩半，然後切成條狀，放入砂糖中，排在焗盤上，切成條狀後，就可以放入焗爐，焗爐溫160度焗25分鐘就完成了。</p></a>
+</div>
+	</body>
+</html>

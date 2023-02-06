@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>椒鹽豆腐｜Oreo Charm 錦鈿</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lHUt2FRX_IU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>椒鹽豆腐｜Oreo Charm 錦鈿</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.20" id="00:00:2.20" class="lt" onclick="jumptoTime(2, this.id)"><p>各位Big Big Chef的朋友大家好，我是Orio，今天介紹一個超簡單又容易做的小食，椒鹽豆腐，平時在大排檔和街邊吃得多，這次在家裡也很簡單可以做，馬上做給大家看，首先介紹材料，材料有硬豆腐、粟粉、紅辣椒、椒鹽、蒜蓉、蔥花、芫茜和米酒，上碟時還會有生菜絲，首先第一步就開始印乾硬豆腐。</p></a>
+				<a href="#00:00:46.58" id="00:00:46.58" class="lt" onclick="jumptoTime(46, this.id)"><p>硬豆腐一定要用廚房紙或毛巾印乾，不然會不夠好，炸的時候會很容易出水，很危險，現在可以把豆腐上粉，撲出豆腐的秘訣，令到粉可以落到兜仔，粒粒都上了粉，上好的硬豆腐就放在一旁，豆腐都沾好了，現在就可以拿去炸，炸豆腐油溫要去到180度，怎樣才可以炸到180度呢，首先就可以將筷子放上去，你見到開始有少少泡。</p></a>
+				<a href="#00:01:41.80" id="00:01:41.80" class="lt" onclick="jumptoTime(101, this.id)"><p>代表可以開始炸，炸豆腐要炸一次，形成脆膜之後就撈起，放置一至兩分鐘，然後就可以回鑊炸第二次，炸第二次就可以逼出油份，這支椒鹽豆腐就特別脆口，豆腐開始有薄膜，脆膜，大約0.01mm，繼續保持爐溫炸，炸的時候已經開始脆了，撈起備用，將豆腐撈起後，等油溫再回高一點，就可以炸第二次，油溫又升高了，我們立即炸第二次。</p></a>
+				<a href="#00:02:54.57" id="00:02:54.57" class="lt" onclick="jumptoTime(174, this.id)"><p>炸第二次的時候，油開始逼出來，就會特別脆，現在豆腐開始變成金黃色，我們就可以撈起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.57" id="00:03:17.57" class="lt" onclick="jumptoTime(197, this.id)"><p>現在可以開始做椒鹽，首先加少許油，爆香蒜蓉，紅辣椒，蔥和芫茜，爆香蔬菜後，就可以加米酒，現在就可以加炸好的豆腐，ilian</p></a>
+				<a href="#00:04:7.18" id="00:04:7.18" class="lt" onclick="jumptoTime(247, this.id)"><p>impressed，seeing，arle purs��요，Cheryl，mal，launch，heir，気 circuits，icki，さん，ci deflect，好好突，Earn，dys，可以慢慢讓鹽味吸收，這樣就完成了今天這個椒鹽豆腐。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>巴黎圈 黃耀文 Tony Wong</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hbwkrx9WfxA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>巴黎圈 黃耀文 Tony Wong</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是黃耀文，歡迎收看</p></a>
+				<a href="#00:00:32.97" id="00:00:32.97" class="lt" onclick="jumptoTime(32, this.id)"><p>今天要做的就是這個，這是一個超級簡單的甜點，就是一種西瓜，我用了一個小洋蔥，然後和一些蔥，然後把蔥切成小段，然後就把它放到這個湯裡，然後就把它煮一煮，然後就把它煮一煮，然後就把它煮一煮，然後就把它煮一煮，然後就把它煮一煮，然後就把它煮一煮，然後就把它煮一煮，However參 también warten，ứng。</p></a>
+				<a href="#00:01:28.13" id="00:01:28.13" class="lt" onclick="jumptoTime(88, this.id)"><p>continental，rud，volume，оль，pumped，gaOSE，Polize，Muk，aba，크� companions，Что，sagt，hypothetical，promote，ens，These，지도，electricity，ährt，ting，menu，Peume，ちら。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:26.81" id="00:01:26.81" class="lt" onclick="jumptoTime(86, this.id)"><p>� Doing，subs，앞，×，designation，turn，орд，sequencing，sidré，females，台，visually，мик，карт，dad，Senate，Cinnamon，itaire，quis hyvä，Druck widow，valt，Tro spielt，oral。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:28.41" id="00:01:28.41" class="lt" onclick="jumptoTime(88, this.id)"><p>юсь，Os completion，incur naive，entren，� materials，fuckin，선� emphasizing，Rico，casting，Pione shipping，irteen，все，Dlatego，такие fidelity，Families，buildкими。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:17.23" id="00:01:17.23" class="lt" onclick="jumptoTime(77, this.id)"><p>allocate，lab masse，против，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，巴黎圈要注意的是，當你擠入泡芙圈入爐時，頭十分鐘千萬不要打開爐門，因為你疏了氣後，泡芙就不會太脹</p></a>
+				<a href="#00:02:26.64" id="00:02:26.64" class="lt" onclick="jumptoTime(146, this.id)"><p>請訂閱支持啊!，其次就是打牛油忌廉時要留意煮糖的溫度，要特別留意不要太高否則很難打得好，其次就是當你做好牛油忌廉後，如果你覺得甜度有問題的話，你或者可以選擇在淡牛油那裏，加入一部份用鹹牛油，令到甜度降低，這個也是一個不錯的辦法</p></a>
+				<a href="#00:03:30.75" id="00:03:30.75" class="lt" onclick="jumptoTime(210, this.id)"><p>用鹹牛油，將糖分攪拌均勻，用鹹牛油，將糖分攪拌均勻，用鹹牛油，將糖分攪拌均勻，用鹹牛油，將糖分攪拌均勻，用鹹牛油，MING PAO CANADA CANADA.COM。</p></a>
+</div>
+	</body>
+</html>

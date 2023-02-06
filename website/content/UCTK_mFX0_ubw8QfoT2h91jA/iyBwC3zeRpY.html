@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 蓮藕餅</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'iyBwC3zeRpY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 蓮藕餅</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.59" id="00:00:3.59" class="lt" onclick="jumptoTime(3, this.id)"><p>蓮藕餅，蓮藕餅有很多不同的演繹方法，師傅也做過，我想看你的演繹是怎樣做的，第一個步驟，我想問，Selena有甚麼可以幫忙，Selena可以先幫我醃豬肉，好，麻煩Selena了，你有甚麼醃料，我會用糖、生粉和生抽，這是比較基本的 是，因為師傅的做法，我會加其他材料，例如冬菇粒、蝦米，還有瑤柱令它更香口。</p></a>
+				<a href="#00:00:34.63" id="00:00:34.63" class="lt" onclick="jumptoTime(34, this.id)"><p>為何你會打算做蓮藕餅</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:37.27" id="00:00:37.27" class="lt" onclick="jumptoTime(37, this.id)"><p>因為我以往家人也經常做這道菜</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:40.51" id="00:00:40.51" class="lt" onclick="jumptoTime(40, this.id)"><p>所以這次就演繹給小朋友看，對吧，好，Selena在幫你處理豬肉時，你又會做甚麼，我現在會先切蓮藕，好，麻煩你了，Selena，你有做過這道菜式嗎，我沒有做過，但我吃過了，因為蓮藕餅有很多不同的演繹方法，最主要是材料一定要有蓮藕和豬肉，我看到…，Janice，你的蓮藕是否已經處理過，已經去皮了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:9.83" id="00:01:9.83" class="lt" onclick="jumptoTime(69, this.id)"><p>我已經拌勻了豬肉和醃料，究竟要醃多久，醃大約五分鐘就可以了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:15.59" id="00:01:15.59" class="lt" onclick="jumptoTime(75, this.id)"><p>好，蓮藕已經切成薄片，等豬肉醃五分鐘後，就可以把它釀進去，對吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:22.67" id="00:01:22.67" class="lt" onclick="jumptoTime(82, this.id)"><p>是，現在豬肉已經醃好了，就可以開始釀蓮藕了，好，麻煩你了，首先蘸一點生粉，我想問為何蓮藕要蘸生粉，因為如果不蘸生粉，豬肉可能黏不住，煎的過程可能會脫落，然後會加一點豬肉，然後可以把另一塊蓮藕放上去，然後輕輕壓一壓</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:45.51" id="00:01:45.51" class="lt" onclick="jumptoTime(105, this.id)"><p>好，這樣就做了蓮藕餅了，是 好，麻煩你繼續了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:49.91" id="00:01:49.91" class="lt" onclick="jumptoTime(109, this.id)"><p>我想問如果不用蓮藕，可以用其他材料代替嗎，其實你也可以用薯仔或番薯，切薄片來代替，不過因為現在農曆新年，我想好彩頭一點，所以就用了蓮藕</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:3.11" id="00:02:3.11" class="lt" onclick="jumptoTime(123, this.id)"><p>對，因為名字裡有很多蓮藕，所以很多時候我們過時過節，尤其是農曆新年，都會用蓮藕來做菜式，我想問除了可以切薄片之外</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:17.19" id="00:02:17.19" class="lt" onclick="jumptoTime(137, this.id)"><p>還有甚麼方法可以做蓮藕餅，其實除了切薄片之外，你也可以切碎，或者用磨刀磨成幼條，也可以做到</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:26.87" id="00:02:26.87" class="lt" onclick="jumptoTime(146, this.id)"><p>只不過賣相比較好看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:29.43" id="00:02:29.43" class="lt" onclick="jumptoTime(149, this.id)"><p>現在可以開始煎了，先加點油，你用甚麼火，現在用中火 是，現在油熱了，就可以放蓮藕餅，我想問煎得怎樣才算可以翻轉，其實煎至一面金黃色就可以翻轉，我想問這個蓮藕餅煎好後，需要蘸醬汁吃嗎，我沒有蘸醬汁，因為我煎完後會加雞湯調味</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:54.82" id="00:02:54.82" class="lt" onclick="jumptoTime(174, this.id)"><p>但師傅做的那些，通常因為餡料有多些配菜，有些是蝦米、冬菇，甚至我試過加臘腸粒，我不會用這個醬汁，因為整個蓮藕餅已經有味道，而Janice這個，因為最後要用雞湯調味，味道已經足夠了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:20.46" id="00:03:20.46" class="lt" onclick="jumptoTime(200, this.id)"><p>現在可以翻轉另一面了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:23.30" id="00:03:23.30" class="lt" onclick="jumptoTime(203, this.id)"><p>剛才Lina，你問了一個問題，為何要撲生粉或粟粉，你看到現在Janice，把蓮藕餅翻轉的時候，第一，它不會很容易散開，而且出來的效果，表面是很金黃色的，解答了你的問題</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:45.06" id="00:03:45.06" class="lt" onclick="jumptoTime(225, this.id)"><p>要煎至怎樣才可以，一定要煎至金黃色和全熟，但如果用海鮮做餡料，就不用煎太久，因為海鮮會比較容易熟</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:54.62" id="00:03:54.62" class="lt" onclick="jumptoTime(234, this.id)"><p>現在聞到很香的味道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:57.46" id="00:03:57.46" class="lt" onclick="jumptoTime(237, this.id)"><p>現在可以了嗎，對，現在可以加雞湯了，你加了雞湯後要煮多久，要煮至雞湯收乾水分，大約兩至三分鐘就可以了，現在差不多了 對，現在可以關火上碟了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:17.98" id="00:04:17.98" class="lt" onclick="jumptoTime(257, this.id)"><p>好，麻煩你了，很香，聞到香味嗎 聞到，Janice，是否有些裝飾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:25.02" id="00:04:25.02" class="lt" onclick="jumptoTime(265, this.id)"><p>對，我會放些蔥花，這是甚麼菜式</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:29.46" id="00:04:29.46" class="lt" onclick="jumptoTime(269, this.id)"><p>這就是蓮藕餅。</p></a>
+				<a href="#00:04:30.74" id="00:04:30.74" class="lt" onclick="jumptoTime(270, this.id)"><p>做好了，待會可以試味了。</p></a>
+</div>
+	</body>
+</html>

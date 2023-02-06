@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蒸三文魚伴莎莎 趙希洛</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Xe5vqCjLss8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>蒸三文魚伴莎莎 趙希洛</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，我喜歡煮食的原因很簡單，因為我喜歡吃，因為我小時候在外國長大，我們經常會去別人家吃飯，去別人家吃飯除了帶酒或水果、朱古力外，我們很多時候都會自己煮一碟菜帶過去，甚至乎我現在在香港去朋友家吃飯，我多數都會自己煮一碟菜拿過去，所以如果你請我去你家吃飯，我都會煮一碟菜帶過去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:32.64" id="00:00:32.64" class="lt" onclick="jumptoTime(32, this.id)"><p>我每次去你家吃飯我都會煮一碟菜送給你，今日和大家做一個很簡單的菜式，就是蒸三文魚配番茄的收花。</p></a>
+				<a href="#00:00:45.64" id="00:00:45.64" class="lt" onclick="jumptoTime(45, this.id)"><p>材料方面當然有三文魚，另外有番茄、紫洋蔥、檸檬、青檸和碉草，沒有新鮮碉草可以用乾的碉草。</p></a>
+				<a href="#00:00:56.64" id="00:00:56.64" class="lt" onclick="jumptoTime(56, this.id)"><p>當然有橄欖油、巴斯拉米醋、鹽和胡椒粉，現在切好檸檬放在底部，晾一晾三文魚，因為我將會放水在底部，水是用來蒸熟三文魚，因為我們不是這樣乾焗，你喜歡可以加味醂或日式清酒都可以。</p></a>
+				<a href="#00:01:23.64" id="00:01:23.64" class="lt" onclick="jumptoTime(83, this.id)"><p>現在加少少鹽和胡椒粉，摺成一團，頂部有位置讓蒸氣入侵，之後就可以封頂部，焗爐先預熱180度，因為三文魚不是太厚身，所以十分鐘就夠了，我做三文魚的靈感是來自日本用清酒煮蜆，因為我以前很喜歡這樣煮蜆，之後就嘗試做三文魚，由清酒慢慢轉為味醂，因為我喜歡那種甜味，後來想健康一點，就轉用水慢慢蒸。</p></a>
+				<a href="#00:02:6.64" id="00:02:6.64" class="lt" onclick="jumptoTime(126, this.id)"><p>怎樣可以蒸到三文魚不用浸在水裡，我就想過不如加些檸檬，去除腥味又可以浪高的三文魚，我這麼喜歡吃洋蔥，我只會加這麼多，否則洋蔥味道會太重，下一步是放碉草，碉草大部分人都知道，配三文魚是很好的，我很喜歡碉草這種味道，如果買不到新鮮的，可以買乾的，但乾的真的不太香，碉草加少許橄欖油，因為想它更滑。</p></a>
+				<a href="#00:02:51.85" id="00:02:51.85" class="lt" onclick="jumptoTime(171, this.id)"><p>不想太油，加醋，它很光滑，因為加了橄欖油，我們可以上碟了，好，我們就放一邊，打開少許，以免它繼續在裡面蒸，之後就放魚，這樣就完成一個美味的晚餐，是不是很快、很簡單?</p></a>
+				<a href="#00:03:27.50" id="00:03:27.50" class="lt" onclick="jumptoTime(207, this.id)"><p>記住回家做!</p></a>
+</div>
+	</body>
+</html>

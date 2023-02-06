@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>母親節呈獻 | 法式燉蛋梳乎厘 | CANDY FONG</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'd7vUM8ahigI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>母親節呈獻 | 法式燉蛋梳乎厘 | CANDY FONG</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，大家好，我是Candy，今天我會為大家做媽媽最愛吃的雲呢拿甜品，叫法式燉蛋Sauvignon</p></a>
+				<a href="#00:00:18.23" id="00:00:18.23" class="lt" onclick="jumptoTime(18, this.id)"><p>母親節快到了，這個甜品非常簡單，我介紹一下材料，有四個蛋黃、60克糖和375毫升奶油，其實平時可以用鮮奶代替，我們開始把蛋黃放進大鍋，加糖，可以攪拌至蛋黃和糖融合，這個有新鮮混合的蛋黃，這個有新鮮的雲呢拿子，我媽媽最喜歡，用一把小刀，在旁邊切開一半，可以把雲呢拿子撈出來，然後把雲呢拿子放進去，這樣會更香。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:59.23" id="00:00:59.23" class="lt" onclick="jumptoTime(59, this.id)"><p>然後可以加奶油一起煮，不用煮滾，煮至它變暖，有少許微泡就可以和蛋黃一起攪拌，要一直看著它，差不多了，大家看到有少許煙出來，就可以關火，加少許，好，OK，之後要攪拌一下，用剛才裝奶油的就可以了，可以倒入半杯，倒大約一半就可以了，看到表面有少許泡泡，可以用火槍燒一燒就沒有泡泡了，輕輕一碰就沒有了。</p></a>
+				<a href="#00:01:51.23" id="00:01:51.23" class="lt" onclick="jumptoTime(111, this.id)"><p>現在就放進焗爐焗，首先要預熱150度，我會大概焗30至35分鐘，還有我們會用蓋子蓋一蓋，如果沒有蓋子可以用錫紙取代，焗的時候要加少許滾水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:7.23" id="00:02:7.23" class="lt" onclick="jumptoTime(127, this.id)"><p>好，焗完之後，可以放涼在室溫，之後可以放進雪櫃兩小時，或者過夜也可以，我們做好底了，現在做表面的軟梨，首先加蛋黃，之後加少許糖，之後就可以加少許奶，還要加牛油，然後再加少許奶</p></a>
+				<a href="#00:02:35.23" id="00:02:35.23" class="lt" onclick="jumptoTime(155, this.id)"><p>再加少許奶，差不多用完了，好，出煙但沒有泡泡時就可以放進鑊裡，其實可以先加少許鹽，這個有些人不喜歡，但我覺得加了鹽可以更香，之後就加麵粉，之後大概是這樣的質感就可以了，我會加少許雲呢拿油，我媽媽最愛的，哈哈，這個是有雲呢拿油加雲呢拿籽在裡面，好 底部已經搞定了，可以放一邊，之後就打這個馬鈴薯。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:21.34" id="00:03:21.34" class="lt" onclick="jumptoTime(201, this.id)"><p>我們用這個打一打，大概那時候就開始慢慢加糖，大概這樣，大概這樣就可以了，我們首先將三分一的蛋白，放進蛋黃醬中，這個時候可以用搓揉器，OK，蛋白差不多混合了，就可以全部倒進去，因為已經混合了蛋白，很容易混合在一起，完成了，可以將搓揉器放在剛才的搓揉器上，多一點點，焗出來會好看一點，用刀背將多餘的蛋白刮走。</p></a>
+				<a href="#00:04:18.44" id="00:04:18.44" class="lt" onclick="jumptoTime(258, this.id)"><p>焗上來就會好看一點，我們放進焗爐，首先我們預熱焗爐200度，但真正焗的度數是190度，大概焗10至12分鐘。</p></a>
+</div>
+	</body>
+</html>

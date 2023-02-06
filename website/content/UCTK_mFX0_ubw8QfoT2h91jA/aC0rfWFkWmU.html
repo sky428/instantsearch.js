@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>栗子梳乎厘 | 六姑 Carole</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'aC0rfWFkWmU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>栗子梳乎厘 | 六姑 Carole</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>因為我的甜品店叫做LUGU，LUGU的意思是味道，為甚麼會有這個名字呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:8.81" id="00:00:8.81" class="lt" onclick="jumptoTime(8, this.id)"><p>因為我覺得在做甜品裏，最重要的環節是要注重味道，現在已經踏入秋天了，就是栗子當造的季節，所以我們今天會做一個栗子味的梳乎厘，材料有栗子蓉，瑩蘇粉、麵粉、雞蛋黃和冧酒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:33.81" id="00:00:33.81" class="lt" onclick="jumptoTime(33, this.id)"><p>還有蛋白和砂糖，我們做梳乎厘需要一個可以放進焗爐的容器，拿一個牛油，牛油可以用來做梳乎厘的蛋白和砂糖，然後用這個蛋白和砂糖，把蛋白和砂糖混合在一起，然後用一個牛油，牛油要攪拌至軟身，底部和旁邊都要攪拌均勻，牛油千萬不要溶掉，因為如果溶到變成水的質地，是很難上到容器的，攪拌好後。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:10.81" id="00:01:10.81" class="lt" onclick="jumptoTime(70, this.id)"><p>我們就把它放進冰箱，到凍好之前，我們才會在冰箱拿出來上糖，上糖會比較均勻容易，我們現在可以開始做栗子餃，把栗子蓉、蛋黃、冧酒、麵粉、瑩蘇粉，再把奶倒進去攪拌均勻，我們可以開始打蛋白，先加少許糖，開機打起，糖要慢慢加，大概分3至4次，蛋白開始起泡，就繼續慢慢加糖，打至起泡，起到一個勾勾。</p></a>
+				<a href="#00:02:5.81" id="00:02:5.81" class="lt" onclick="jumptoTime(125, this.id)"><p>不會掉下來就可以了，把栗子餃分批放進蛋白中，記得要分開放，不能用刮刀，攪拌均勻後就停手，梳乎厘的漿已經做好了，我們就在冰箱拿出剛才的模具，再上砂糖，現在可以將梳乎厘漿放入梳乎厘杯，倒入大約九成滿，現在入焗爐，剛才的焗爐已經預熱至180度，焗20分鐘左右。</p></a>
+</div>
+	</body>
+</html>

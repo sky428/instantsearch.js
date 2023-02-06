@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>薑汁棗皇千層糕 | 鍾皓晴 Shanice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hPt2Hgash9k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>薑汁棗皇千層糕 | 鍾皓晴 Shanice</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Chanise，今天和大家分享的是薑汁棗黃千層糕，我們先看看材料，有紅棗和藍棗，黑糖、木薯粉、粘米粉、薑汁、冰糖和水，現在把棗和水拿出來，開中慢火，把棗煮軟，把黑糖放進去，棗要煮大約15分鐘，一定要等它變軟，還有薑汁、水和冰糖，開中小火，等冰糖溶化就可以了，薑煲溶化後。</p></a>
+				<a href="#00:01:9.68" id="00:01:9.68" class="lt" onclick="jumptoTime(69, this.id)"><p>等它變冷，再放入木薯粉和粘米粉，攪拌溶後再用麥芽篩篩粉粒，放在一旁備用，看看棗泥煮好了沒有，好像可以了，關火，先去皮，一定要煲得夠軟，否則很難去除棗泥，如果不去除就不好吃，因為吃下去會有很多渣和皮，口感會很粗糙，做好了，最重要是要去除棗泥，最重要是要去除到170克，否則木薯粉和粘米粉的比例就不對，因為這個糕一定要有嚼勁的口感。</p></a>
+				<a href="#00:02:20.48" id="00:02:20.48" class="lt" onclick="jumptoTime(140, this.id)"><p>所以這個份量是非常重要的，如果不夠170克，就要加少許滾水，加到170克，如果太多怎麼辦呢，放進去煲少許，收少許水，等它放涼才可以放粉，開始放粉，一路攪拌，一定要攪拌均勻，將粒粒按壓，然後放第一層，大約放大半茶匙，我想多些層次，最起碼六層，好像比較好看，其實可以用大方形的梯盤，逐層逐層放進去蒸。</p></a>
+				<a href="#00:03:11.48" id="00:03:11.48" class="lt" onclick="jumptoTime(191, this.id)"><p>可能要五分鐘，這個小小一個，三分鐘就可以了，我們等一等，然後就放保鮮紙，大火蒸三分鐘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:25.48" id="00:03:25.48" class="lt" onclick="jumptoTime(205, this.id)"><p>好，我們關火，你看到顏色變黑了，變深了，然後我們做下層，要攪拌均勻，不然粉會沉底，放第二層，薑汁，蒸三分鐘，薑汁會深色很多，所以熟味要看顏色，放完後蓋上，開火，蒸三分鐘，等它變色就可以了，等它放涼一點，就可以脫模，新年記得試試，新年快樂!</p></a>
+				<a href="#00:04:14.45" id="00:04:14.45" class="lt" onclick="jumptoTime(254, this.id)"><p>新年快樂!</p></a>
+</div>
+	</body>
+</html>
