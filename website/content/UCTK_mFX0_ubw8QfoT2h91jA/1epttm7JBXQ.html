@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>羊羹｜Candy Li</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1epttm7JBXQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>羊羹｜Candy Li</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.71" id="00:00:2.71" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是Candy，我喜歡到處吃東西，之後做了私人飛機空姐，對食物更有味感，更有要求，所以我決定辭職，追夢去了東京學做甜品，接下來的夢，我要開一個教室，跟大家分享，大家平時吃的日本羊羹，通常都用紅豆做，今天教大家做一個有三層的羊羹，現在開始做彩色羊羹圖案，首先有白豆蓉，用白豆蓉粉、水和糖。</p></a>
+				<a href="#00:00:48.71" id="00:00:48.71" class="lt" onclick="jumptoTime(48, this.id)"><p>倒入鍋中，攪拌均勻，然後開爐煮，煮的時候一直攪拌，慢慢由亮面變成啞面，白豆沙就差不多完成了，現在要煮羊羹部分，用完這個鍋不用洗，因為稍後會把白豆沙放進鍋裡，現在把水和寒天粉倒入鍋裡，攪拌均勻，開火，水滾的時候，倒入糖，糖完全溶化後，加入白豆沙，把所有材料和白豆沙混合後，關火。</p></a>
+				<a href="#00:01:33.71" id="00:01:33.71" class="lt" onclick="jumptoTime(93, this.id)"><p>分別放在三個不同的鍋裡平均分配，有什麼用呢?</p></a>
+				<a href="#00:01:39.71" id="00:01:39.71" class="lt" onclick="jumptoTime(99, this.id)"><p>調色，再吸出一些彩色的羊羹圖案，現在加食用色粉，我選了三個顏色，分別有粉紅色、黃色和橙色，預先準備一個盤子，盤子上鋪上牛油紙，把剛才混合好的三種顏色羊羹倒入牛油紙，讓它凝固後就可以吸出彩色羊羹圖案，把它鎖在雪櫃大約10分鐘，稍後就可以拿出來吸圖案，彩色羊羹凍完後，就可以拿出來吸出你想吸的圖案。</p></a>
+				<a href="#00:02:14.71" id="00:02:14.71" class="lt" onclick="jumptoTime(134, this.id)"><p>我選擇了楓葉和金魚，現在我們來做錦玉羹，即是透明的羊羹，有甚麼材料呢?</p></a>
+				<a href="#00:02:31.55" id="00:02:31.55" class="lt" onclick="jumptoTime(151, this.id)"><p>有寒天粉、水和糖，輕輕拌勻，然後開火，跟剛才煮的彩色羊羹一樣，當水滾的同時，就把糖放進鍋裡一起煮溶，煮好錦玉羹，就倒進預先做好的冰盤，冰盤上有一個羊羹模，倒一半進去，等它凝結後，就把吸好的彩色羊羹放上去，再倒另一層錦玉羹進去，然後用冰水冷卻，最後就煮小倉羊羹，一樣，寒天粉、水，拌勻。</p></a>
+				<a href="#00:03:28.95" id="00:03:28.95" class="lt" onclick="jumptoTime(208, this.id)"><p>然後開火，先煮滾，煮滾後就加糖，再加麥芽糖，所有糖完全溶化，就加紅豆蓉，煮到旁邊有泡泡就可以關火，將它倒進模裡，最後放進雪櫃冷藏一小時就可以脫模，羊羹就這樣完成了!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.55" id="00:04:10.55" class="lt" onclick="jumptoTime(250, this.id)"><p>MING PAO CANADA MING PAO TORONTO。</p></a>
+</div>
+	</body>
+</html>

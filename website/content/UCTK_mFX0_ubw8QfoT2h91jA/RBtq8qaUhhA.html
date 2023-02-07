@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>星洲蛋黃魚皮 | Jacky Yu 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RBtq8qaUhhA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>星洲蛋黃魚皮 | Jacky Yu 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，如果大家近期去過新加坡，一定吃過這隻豐腸的蛋黃魚皮，不但很貴，一包要50多元，而且每人每人要五包，這隻蛋黃魚皮在家也可以自製，而且非常簡單，我保證做出來，比在新加坡買的更好吃，材料也非常簡單，我們可以去一些專門吃潮州粉麵的店舖，買一些現成的炸魚皮和鹹蛋黃，最重要的香料就是檸檬葉和咖喱粉就完成了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:45.96" id="00:00:45.96" class="lt" onclick="jumptoTime(45, this.id)"><p>首先我們將鹹蛋黃蒸熟。</p></a>
+				<a href="#00:00:47.96" id="00:00:47.96" class="lt" onclick="jumptoTime(47, this.id)"><p>大概蒸15分鐘就熟了，在蒸蛋黃期間我們可以先做檸檬葉，我們可以在泰國店舖買這些檸檬葉，我們可以把它摺一摺， 撕掉中間的框，撕掉框之後， 我們將檸檬葉切或者剪絲，買回來的魚皮也是整塊的，我們稍微撕一撕， 令它容易吃，和容易混合蛋黃，鹹蛋黃蒸熟後， 我們可以用叉子把它壓碎，但不需要壓得太碎。</p></a>
+				<a href="#00:01:29.96" id="00:01:29.96" class="lt" onclick="jumptoTime(89, this.id)"><p>因為煮的時候會將鹹蛋黃再煮得幼細一點，壓得太碎的話， 吃不到鹹蛋黃一粒粒的質感，如果有的話會好吃很多。</p></a>
+				<a href="#00:01:37.96" id="00:01:37.96" class="lt" onclick="jumptoTime(97, this.id)"><p>最後鹹蛋黃中間有一粒硬的東西，我們也將它剪出來，可以煮了，我們預備一塊室溫的牛油，室溫牛油可以容易溶化，而且不用煮太久，用慢火將牛油煮溶，然後將檸檬葉放進去，炒香它，記得用慢火， 不要用太大火，太大火的話牛油很容易燒焦，我們要煮到檸檬葉的味道出來，煮到它慢慢變乾身就可以了，煮到檸檬葉開始變乾身。</p></a>
+				<a href="#00:02:24.96" id="00:02:24.96" class="lt" onclick="jumptoTime(144, this.id)"><p>就可以將鹹蛋黃放進去，加少許咖喱粉，少許鹽調味，炒勻，炒到鹹蛋黃開始起泡，好像現在這樣，當然要試味， 看味道夠不夠，可以加少許鹽，想它更香， 加少許咖喱粉，炒勻，最後將魚皮倒進去，然後拌勻，令每一件魚皮都沾滿了鹹蛋黃，好了，最後就可以上碟了，好了，為了令它更加好吃，可以加少許韭菜粉。</p></a>
+				<a href="#00:03:21.04" id="00:03:21.04" class="lt" onclick="jumptoTime(201, this.id)"><p>和適量的七味粉，這碟自家製的蛋黃魚皮，保證比在新加坡買的好吃。</p></a>
+</div>
+	</body>
+</html>

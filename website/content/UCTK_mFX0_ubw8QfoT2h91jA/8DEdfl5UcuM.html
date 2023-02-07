@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自家製杏仁醬 | 黃頌明 | 小明</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8DEdfl5UcuM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>自家製杏仁醬 | 黃頌明 | 小明</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，Hello， BigBigChef的觀眾，你們好，我是小明，平時下午茶時間時，是否經常想吃甚麼好呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.78" id="00:00:13.78" class="lt" onclick="jumptoTime(13, this.id)"><p>又不想肥呢?</p></a>
+				<a href="#00:00:15.78" id="00:00:15.78" class="lt" onclick="jumptoTime(15, this.id)"><p>如果你家中的雪櫃有一罐杏仁醬，便可以幫你解決很多問題，因為它可以塗麵包，又可以加水打其他飲品，它亦非常健康，又不肥，所以我今天就為大家帶來杏仁醬，好，我們來吧，材料很簡單，就是杏仁，還有一部，Food processor，就可以幫你解決所有問題了。</p></a>
+				<a href="#00:00:53.27" id="00:00:53.27" class="lt" onclick="jumptoTime(53, this.id)"><p>簡單就是將杏仁倒進去，好，杏仁倒進去了，接著的工序就非常簡單，這部機就幫你做完，你就可以用雙手玩電話了，那你就，看到它會自己在打，它打的時候就會由，大粒變成粗粒，粗粒就變成粉。</p></a>
+				<a href="#00:01:13.27" id="00:01:13.27" class="lt" onclick="jumptoTime(73, this.id)"><p>粉，然後再自己打下去，它就會出油，就打成一個杏仁醬，就是這麼簡單</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:21.27" id="00:01:21.27" class="lt" onclick="jumptoTime(81, this.id)"><p>by bwd6，出煙了，你看到嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:31.22" id="00:01:31.22" class="lt" onclick="jumptoTime(91, this.id)"><p>好，讓大家看看成品的質感，濃稠的，糊狀的，這樣就完成杏仁醬了，好，接著我們可以放進瓶子裡，這樣確保瓶子變乾，當然要洗乾淨，否則會變乾，因為有水分會影響保存期，放進瓶子後，放在雪櫃，最少可以保存一個月，不過我覺得還沒一個月，你就會吃光了，只用杏仁醬又怎夠呢，我們儘管試試，從雪櫃取出的杏仁醬。</p></a>
+				<a href="#00:02:11.62" id="00:02:11.62" class="lt" onclick="jumptoTime(131, this.id)"><p>可以做到甚麼特飲，材料當然是自家製的杏仁醬，然後可以加甚麼蔬果，其實真的沒所謂，視乎你自己的口味，我今天選擇了牛油果，做這個特飲，口味真的隨你自己，濃稠度、濃稠度都是隨你自己，我今天就試試，用兩匙杏仁醬，加半隻牛油果，再加一杯半左右的水，好，你會發現有一部攪拌機在家裡，有很多事情可以做，接著我們可以將它放進攪拌機。</p></a>
+				<a href="#00:02:49.94" id="00:02:49.94" class="lt" onclick="jumptoTime(169, this.id)"><p>攪拌均勻就可以了，好了，攪拌均勻就可以了，ста roses，document</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:13.12" id="00:03:13.12" class="lt" onclick="jumptoTime(193, this.id)"><p>iks，dismiss，Never，RC，необходимо，agen，FRE，dealer，willkommen，個，oney，ほ diese</p></a>
+				<a href="#00:03:4.98" id="00:03:4.98" class="lt" onclick="jumptoTime(184, this.id)"><p>rael，kal，老師，Mur，ыш，rok</p></a>
+				<a href="#00:03:9.26" id="00:03:9.26" class="lt" onclick="jumptoTime(189, this.id)"><p>鬼，dumbbell，!!!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:15.72" id="00:03:15.72" class="lt" onclick="jumptoTime(195, this.id)"><p>comic，stat，presque，języ</p></a>
+				<a href="#00:03:7.88" id="00:03:7.88" class="lt" onclick="jumptoTime(187, this.id)"><p>です McCain，气 کے，событи，glauben，permanently</p></a>
+				<a href="#00:03:6.56" id="00:03:6.56" class="lt" onclick="jumptoTime(186, this.id)"><p>�，Woods</p></a>
+				<a href="#00:03:14.04" id="00:03:14.04" class="lt" onclick="jumptoTime(194, this.id)"><p>Fußball，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目。</p></a>
+</div>
+	</body>
+</html>
