@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>荔枝蘆薈慕絲餅｜蔡國威</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'cku7jsnknG8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>荔枝蘆薈慕絲餅｜蔡國威</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是蔡國威，希望可以和大家一起分享不同的食譜</p></a>
+				<a href="#00:00:15.94" id="00:00:15.94" class="lt" onclick="jumptoTime(15, this.id)"><p>很多朋友告訴我，他們想做蛋糕，但沒有焗爐，怎麼辦呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:21.02" id="00:00:21.02" class="lt" onclick="jumptoTime(21, this.id)"><p>做不到，而這個蛋糕就可以解決這個問題，因為只需要冷藏，就可以做出來，我選擇了一個我自己出身的蛋糕，就是荔枝蘆薈Oreos慕斯蛋糕，首先，第一步當然要做餅底，這次我們選擇做的份量，其實是做一個大約6吋慕斯蛋糕的模具，但它本身的慕斯蛋糕模具是穿孔的，所以你要有一塊卡紙，畫了圓周，放在底部。</p></a>
+				<a href="#00:00:50.34" id="00:00:50.34" class="lt" onclick="jumptoTime(50, this.id)"><p>然後我包了兩張錫紙，托住它，這樣是不是很穩固呢?</p></a>
+				<a href="#00:00:56.14" id="00:00:56.14" class="lt" onclick="jumptoTime(56, this.id)"><p>其實我覺得不夠穩固，所以最好有托盤托住它，因為可以方便脫模，或者放進雪櫃時就方便很多，首先，將這個星劃餅全部扔進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:14.14" id="00:01:14.14" class="lt" onclick="jumptoTime(74, this.id)"><p>差不多了，將溶化的溶液加進去，將溶液你覺得可以原本的溶液，將溶液你覺得可以完全黏合消化餅，這樣就已經可以了，基本上已經混合後，就可以將它全部倒進去，然後我這個步驟就會用匙羹，這樣就可以將它壓得更加平均，清理完後，餅底就完成了，你就可以放在一旁備用，接下來就輪到慕斯了，慕斯要怎樣做呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:54.14" id="00:01:54.14" class="lt" onclick="jumptoTime(114, this.id)"><p>首先我們要做蛋白霜，我們就將蛋白先倒進去。</p></a>
+				<a href="#00:02:3.14" id="00:02:3.14" class="lt" onclick="jumptoTime(123, this.id)"><p>其實你看到蛋白已經有少許泡的話。</p></a>
+				<a href="#00:02:8.14" id="00:02:8.14" class="lt" onclick="jumptoTime(128, this.id)"><p>這個時候就可以加砂糖了，然後就加第二次砂糖，其實打到這個程度，七成左右就已經可以了，記住不要打到太稀，因為如果打到太稀，慕絲就不夠滑，將荔枝蓉加熱，有適量的溫度就可以放魚膠片，先溶掉魚膠片，魚膠片要徹底地溶化，荔枝改用可以先倒進去，淡忌廉，剛才打好大概七成的淡忌廉，將乳酪也放進去，輕輕地攪拌。</p></a>
+				<a href="#00:03:0.79" id="00:03:0.79" class="lt" onclick="jumptoTime(180, this.id)"><p>然後就可以加蛋白霜，荔枝就撕掉，只要餅皮，中間的忌廉就不要，所以就要刮走它，大概這個份量，差不多都已經攪拌好水份，而蘆薈方面，需要將水份吸乾，萬事俱備之下，就可以開始放入慕絲，先倒少少，當你鋪完一層之後，就可以再放另一層，就可以將它放進冰箱冷藏，如果冰箱夠快，一個半至兩個小時，應該一定會完成。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:7.00" id="00:04:7.00" class="lt" onclick="jumptoTime(247, this.id)"><p>by bwd6。</p></a>
+				<a href="#00:04:18.49" id="00:04:18.49" class="lt" onclick="jumptoTime(258, this.id)"><p>字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

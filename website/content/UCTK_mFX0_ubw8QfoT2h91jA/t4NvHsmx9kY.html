@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>法式千層Oreo蛋糕 | Oreo Charm 錦鈿</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 't4NvHsmx9kY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>法式千層Oreo蛋糕 | Oreo Charm 錦鈿</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.69" id="00:00:1.69" class="lt" onclick="jumptoTime(1, this.id)"><p>请订阅点赞 留言 转发 打赏支持明镜与点点栏目，大家好，大家可以叫我Orio</p></a>
+				<a href="#00:00:23.55" id="00:00:23.55" class="lt" onclick="jumptoTime(23, this.id)"><p>這次我做這個甜品，因為在外國，看到很多人做這個甜品，都很漂亮，所以我試試在香港，可不可以做到這個千層蛋糕，我發覺原來在家做都很容易，所以這次就在這裡，教大家做這個蛋糕，提示有三點，做那個班戟漿，加的粉最重要是過篩，就不會一粒粒，和不夠濃稠，和容易煎</p></a>
+				<a href="#00:01:8.51" id="00:01:8.51" class="lt" onclick="jumptoTime(68, this.id)"><p>喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，打忌廉最緊要夠凍，打的時候就不會那麼容易化</p></a>
+				<a href="#00:03:0.86" id="00:03:0.86" class="lt" onclick="jumptoTime(180, this.id)"><p>第三個要點就是最重要的就是餅皮和忌廉，逐層逐層做的時候要快一點，不然的話忌廉就會很快地融化，做完就快點放進冰箱，這樣就成為最好吃的班戟了</p></a>
+				<a href="#00:03:32.38" id="00:03:32.38" class="lt" onclick="jumptoTime(212, this.id)"><p>喜歡的話請訂閱支持啊，喜歡的話請訂閱支持啊，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目。</p></a>
+</div>
+	</body>
+</html>

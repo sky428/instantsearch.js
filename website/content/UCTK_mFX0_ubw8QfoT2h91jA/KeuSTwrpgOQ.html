@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>彩虹千層蛋糕｜LINNA｜黃碧蓮</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KeuSTwrpgOQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>彩虹千層蛋糕｜LINNA｜黃碧蓮</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，大家好，我是Lina，黃碧蓮，今天我會教大家做一個彩虹的千層蛋糕，Rainbow Milk Crepe Cake，家長，如果你在家中有一個很挑剔的小朋友，你就可以秘密地混合多營養的材料，例如亞麻籽、契拿籽或蛋白質，我經常在家中和你們開Favorite Channel Live，不過今天和你們正式第一次在Favorite Chef一起Cook!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.52" id="00:00:38.52" class="lt" onclick="jumptoTime(38, this.id)"><p>我們先開始做蛋漿，材料包括麵粉、糖、蛋、奶和牛油，我們開始做吧，第一，我們會用麵粉和糖，然後有六隻蛋就倒進去，我們可以逐一加入，否則就會變成一團，很難攪拌，跟朋友一起煮，他們會很喜歡這個過程，因為這裡真的很好玩，牛油和奶已經溫暖了一點，我們會慢慢地加一點牛奶，然後加一點牛油，加了牛油和奶，質地應該要有一點厚。</p></a>
+				<a href="#00:01:34.52" id="00:01:34.52" class="lt" onclick="jumptoTime(94, this.id)"><p>麵粉不能太水，否則會加太多水，所以要加多一點麵粉去做脆球心，我們現在分開蛋漿倒進碗裡，然後把色素也混合進去，混合蛋漿後，就要把顏色混合進去，彩虹有七個顏色，不過今天只會做六個顏色，我們有四個顏色，黃色、綠色、藍色和紅色，先混合這四個顏色，然後再混合另外兩個顏色，混合顏色的時候要小心一點。</p></a>
+				<a href="#00:02:23.52" id="00:02:23.52" class="lt" onclick="jumptoTime(143, this.id)"><p>因為如果不小心，加太多顏色的話，顏色會很深，現在這個黃色，好像太陽一樣，你們喜歡嗎?</p></a>
+				<a href="#00:02:40.52" id="00:02:40.52" class="lt" onclick="jumptoTime(160, this.id)"><p>現在只剩下兩個顏色還沒混合，我們想做一個橙色，就要混合紅色和黃色的色素，這個就像太陽一樣，Gab Idea reciteaukee-arrive</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:0.36" id="00:03:0.36" class="lt" onclick="jumptoTime(180, this.id)"><p>please，月餅的蛋黃，不是，也不是，紅蘿蔔，Yeah，接著我們就會做紫色，就是紅色和藍色混在一起，好了 混合好六種顏色，現在就可以開始煎它了，拿一點牛油，拿一個紫色，大概，兩至三湯匙，但是要快的，接著就塗在整個煎餅上，如果它不圓滾滾</p></a>
+				<a href="#00:03:34.63" id="00:03:34.63" class="lt" onclick="jumptoTime(214, this.id)"><p>不要緊，你可以等一下再調整它的形狀，我們等它表面開始乾，然後有一點泡沫，一點點就可以了，然後上面濕濕的位置要乾一點，然後就可以翻轉它了，這些紫蘿蔔很脆，很容易裂開，我們要慢慢來 小心一點，好了 煎好所有煎餅了，因為我們想煎餅漂亮一點，我們就用蛋糕模來做一個漂亮的形狀，不一定是圓圈角。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:10.99" id="00:04:10.99" class="lt" onclick="jumptoTime(250, this.id)"><p>你可以選心形或星形都可以，我們現在切橙色的，對準位置就夾一夾，接著這些就可以拿走，接著出來的形狀就會很圓很漂亮，好了 現在我們可以開始鋪第一層，紫色在中間，接著每一層就要加一點Whipped Cream上去，這個Whipped Cream已經打了，而且它最好是冷的，managing orden。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:11.21" id="00:05:11.21" class="lt" onclick="jumptoTime(311, this.id)"><p>Porque，icar which，thermal，pert mod coffee，工作，palabra，윤，세계，gathered，justement，Trop exhausting，ans，ван，ole，pem</p></a>
+				<a href="#00:04:46.79" id="00:04:46.79" class="lt" onclick="jumptoTime(286, this.id)"><p>stanie，gewe，Ч，ingen，过，Blceğ，ELLI，ų，red，packet，trying，ba，obs，заключ</p></a>
+				<a href="#00:04:48.07" id="00:04:48.07" class="lt" onclick="jumptoTime(288, this.id)"><p>ṛṣ，Pathrelated，Recht，woman，vintage，awy</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:7.85" id="00:05:7.85" class="lt" onclick="jumptoTime(307, this.id)"><p>ent，Try Uns，weeks，�Í，К，Mul� Kra，Norweg Wissenschaft，при，каких，CRI，technique，recuper pon，Morgan，Για</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:2.49" id="00:05:2.49" class="lt" onclick="jumptoTime(302, this.id)"><p>Jacobs，Afterwards Daddy，enters，Flint，íst，多 boundaries，iere，slot，當然 Smart，erie，predator，Ros�</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:6.19" id="00:05:6.19" class="lt" onclick="jumptoTime(306, this.id)"><p>Transfer，robots，metros，Gy，Arkansas，Ku，MING PAO CANADA MING PAO TORONTO。</p></a>
+</div>
+	</body>
+</html>

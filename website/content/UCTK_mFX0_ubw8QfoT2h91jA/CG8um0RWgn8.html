@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢煮薑汁焦糖燉蛋 | Rachel Yau 生活料理家</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CG8um0RWgn8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>慢煮薑汁焦糖燉蛋 | Rachel Yau 生活料理家</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.71" id="00:00:2.71" class="lt" onclick="jumptoTime(2, this.id)"><p>我叫Rachel， 入廚已經超過30年了，negativity，увидеть� diminished，resembles，vere 맞아요，aç，Arm，Пр，seventeen，ase頻 ben</p></a>
+				<a href="#00:00:32.77" id="00:00:32.77" class="lt" onclick="jumptoTime(32, this.id)"><p>şeyi，爸爸，есс，tractuck，perpendので，Spanish</p></a>
+				<a href="#00:00:57.63" id="00:00:57.63" class="lt" onclick="jumptoTime(57, this.id)"><p>Search competence，pige，пиш，Rel�로，reminders</p></a>
+				<a href="#00:00:42.29" id="00:00:42.29" class="lt" onclick="jumptoTime(42, this.id)"><p>opath，better，Filter，уп，وب，somshi，repeatedly，drum，arise，quase，sant trail Со，Turtle，HH，orta，Iowa，Stack</p></a>
+				<a href="#00:00:57.23" id="00:00:57.23" class="lt" onclick="jumptoTime(57, this.id)"><p>hop倍，这个，��� metaphor，vu，Всем，class</p></a>
+				<a href="#00:00:39.11" id="00:00:39.11" class="lt" onclick="jumptoTime(39, this.id)"><p>monster，entries，afood，Minnie，AujourdEM，そうそう，Kai，Lang Kristin，服</p></a>
+				<a href="#00:00:51.39" id="00:00:51.39" class="lt" onclick="jumptoTime(51, this.id)"><p>presidente，请不吝点赞 订阅 转发 打赏支持明镜与点点栏目，字幕by索兰娅^^</p></a>
+				<a href="#00:01:22.30" id="00:01:22.30" class="lt" onclick="jumptoTime(82, this.id)"><p>字幕by索兰娅🐰，字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

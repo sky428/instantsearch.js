@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玫瑰花杯子蛋糕 Darling Chu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jd6Q6TrWV_4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>玫瑰花杯子蛋糕 Darling Chu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.91" id="00:00:1.91" class="lt" onclick="jumptoTime(1, this.id)"><p>字幕by索兰娅🐰，大家好，今天我們會教大家如何擠玫瑰花，玫瑰花的花嘴是104號，然後我們會用一些食用色素，紅色，將它加進之前做好的忌廉，然後我們開始擠玫瑰花，首先我們起一個座，然後上面我們做一個圈，做一個花心，做好花心之後我們做外面的花瓣，記得我們花釘一定要轉，做完每一層我們都要清理一下枝序，做完第一層我們做第二層。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:8.01" id="00:01:8.01" class="lt" onclick="jumptoTime(68, this.id)"><p>擠玫瑰花其實說容易不難，要做得好就需要練習，擠完之後我們用花剪將它拿下來，記得擠完之後要將花放入雪櫃冷凍，然後我們才可以放上蛋糕，擠完玫瑰花，將它冷凍後拿出來，我們就開始砌花，首先我們在上面每一層放上忌廉，然後將每朵花放上去，我們在底部擠上少許忌廉，否則它會很危險，會掉下來，所以忌廉要黏著它。</p></a>
+				<a href="#00:02:13.82" id="00:02:13.82" class="lt" onclick="jumptoTime(133, this.id)"><p>我們把花都砌好之後，就擠樹葉了，樹葉我們用到352號嘴，在這些空隙的位置，全部擠出樹葉，擠出一些不漂亮的位置和空隙，擠完樹葉之後，這個這麼華麗，這麼茂盛，這麼漂亮的紅玫瑰cupcake就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:51.19" id="00:02:51.19" class="lt" onclick="jumptoTime(171, this.id)"><p>字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

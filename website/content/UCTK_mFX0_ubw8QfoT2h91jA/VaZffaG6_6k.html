@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>低糖無牛油朱古力杏仁曲奇 | 岑杏賢</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VaZffaG6_6k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>低糖無牛油朱古力杏仁曲奇 | 岑杏賢</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.58" id="00:00:3.58" class="lt" onclick="jumptoTime(3, this.id)"><p>大大廚的觀眾大家好，我是Jennifer 陳芬妍，今天很開心，因為在大大廚第一次和大家見面，第一次見面，我打算煮低糖無牛油巧克力曲奇給大家，材料很簡單，材料是這樣的，我會用一隻很小的巧克力，然後加一些牛油，然後加一些低糖糖漿，我這個食譜是自己研究的，因為外面很多食譜都會用白砂糖或黑糖，但我選擇了用低糖糖漿。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.98" id="00:00:46.98" class="lt" onclick="jumptoTime(46, this.id)"><p>因為我喜歡吃甜的，所以我會用低糖糖漿，然後加一些低糖糖漿，然後加一些低糖糖漿，因為我喜歡吃甜的，所以我選擇了用低糖糖漿，這樣做起來就不會太甜，因為我始終有一點巧克力，然後再加提子油，提子油原來比其他油更健康，然後攪拌均勻，拌勻後就可以加兩隻雞蛋，然後加入幾滴香草油，然後拌勻，曲奇因人而異的配料。</p></a>
+				<a href="#00:01:35.70" id="00:01:35.70" class="lt" onclick="jumptoTime(95, this.id)"><p>因為我喜歡吃杏仁，所以我選擇了杏仁，配白朱古力和牛奶朱古力，賣相會更好看，但有時如果不想吃朱古力，也可以選擇乾果，例如乾的白玉米，或提子乾也可以配搭，拌勻後，全部白粉都會越來越少，拌勻後，同時可以加入其他配料，我先加入杏仁，一次過不用放太多，因為可以令麵糊混合朱古力，這樣會更好混合，不過有時很貪心。</p></a>
+				<a href="#00:02:24.58" id="00:02:24.58" class="lt" onclick="jumptoTime(144, this.id)"><p>如果放了很多，整個曲奇餅就會吃到朱古力和杏仁，好，拌勻後，混合後的質感大概是這樣的，其實很重手，而且拌勻後也挺結實，之後準備一個保鮮紙，因為要包起來，原來要冷藏，如何包呢?也有些技巧，首先把所有麵糊放在保鮮紙上，這個步驟包起來，就像捲熱狗一樣，捲起來，會有一點點大，不過不要緊，最重要是放在雪櫃冷藏。</p></a>
+				<a href="#00:03:11.86" id="00:03:11.86" class="lt" onclick="jumptoTime(191, this.id)"><p>待它冷藏後拿出來後，就不會那麼軟，因為現在還是有點軟，但待會就會變硬，焗起來就會比較好，包起來後，在後面做一個結，讓麵糊不會流下來，不用特別綁得太漂亮，不過圓形就可以了，就像一條很大的香腸，捲好後，冷藏一小時，一小時後就繼續了，麵糰一個小時後就從雪櫃取出，雪櫃冷凍後，麵糰變得結實、硬了很多，之後我們要準備切成一塊塊。</p></a>
+				<a href="#00:04:3.63" id="00:04:3.63" class="lt" onclick="jumptoTime(243, this.id)"><p>然後放進焗爐，切的時候要視乎你想要的曲奇餅有多大，我不想太大，可能要做到中大，所以切的時候可以再切得小一點，可能剛才太貪心，想用一個保鮮紙包好，但我建議可以分開兩條，這樣你們就可以掌握得更好，雖然現在的賣相不好看，但我會做得很漂亮，切好後，用手做一個圓圈，厚度差不多，這樣吃起來會有口感，不要太薄，否則會很容易燶。</p></a>
+				<a href="#00:04:50.51" id="00:04:50.51" class="lt" onclick="jumptoTime(290, this.id)"><p>大概的大小就是這樣，我已經準備好牛油紙，讓它不會黏底，但其實告訴大家一個小秘密，我做曲奇餅最厲害的時候，是在家裡做過100塊，就像工場一樣，出油了…，然後開了焗爐差不多七次，因為始終家裡的焗爐很小，不能放太多曲奇餅，一次可能放12件左右，但我那時候做了100塊，還要做給誰呢?那時候還要做千雪，讓我在這裡說她的小秘密。</p></a>
+				<a href="#00:05:34.99" id="00:05:34.99" class="lt" onclick="jumptoTime(334, this.id)"><p>因為那時候做法律的實習生，想找人做一些散水餅，他知道我喜歡做這些曲奇餅，是無糖的，想健康一點，然後他打電話給我問我，可否幫他做這些曲奇餅，所以我做的時候，差不多做了100塊，然後每一塊放在一個小袋子裡，他也很好，千雪知道我用心去做，然後他也給我錢去買材料，其實也挺開心，挺有滿足感的，那次做完之後。</p></a>
+				<a href="#00:06:12.51" id="00:06:12.51" class="lt" onclick="jumptoTime(372, this.id)"><p>所以我想這次在《Baby Chef》分享，我做的無糖散水餅，無糖曲奇散水餅，大家可以去參考一下，完成了，就可以準備入焗爐，要焗15至20分鐘，200度，時間要因應焗爐的作用，因為有時焗爐太熱，曲奇餅就會很快焦掉，就會變成炭燒曲奇，我們不想這樣，所以最好10分鐘後，看看客人是否有焦掉，大致上也是15至20分鐘，200度。</p></a>
+				<a href="#00:06:59.17" id="00:06:59.17" class="lt" onclick="jumptoTime(419, this.id)"><p>我現在先進入焗爐。</p></a>
+</div>
+	</body>
+</html>

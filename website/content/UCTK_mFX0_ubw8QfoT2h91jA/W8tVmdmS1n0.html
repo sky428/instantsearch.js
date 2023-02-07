@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微波爐藍莓蛋糕杯 Carole 六姑</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'W8tVmdmS1n0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>微波爐藍莓蛋糕杯 Carole 六姑</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，因為我的甜品店叫Loo Koo，Loo Koo的意思是味道，為何會有這個名字，因為我覺得在做甜品時，最重要的環節是要注重味道，Hello各位BigBigChef的朋友，今天我們會做一個很簡易的蛋糕，只需要兩分鐘，材料有牛油、砂糖、雞蛋、奶、烘焙粉和麵粉，看家裡有什麼可以加。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:50.60" id="00:00:50.60" class="lt" onclick="jumptoTime(50, this.id)"><p>藍莓餡也可以、朱古力也可以，先把溶化的牛油和砂糖放進碗裡拌勻，然後加入雞蛋和奶，拌勻後把麵粉和烘焙粉也放進去，拌勻後就形成了蛋糕漿，這是兩杯的份量，平均分到兩杯裡，倒到杯子裡倒到半滿為止，現在就放餡料，我今天準備了朱古力焗藍莓，做好後就用保鮮紙把餡料磨好，用牙籤把洞磨開，這個作用是可以讓餡料透氣和防止導汗水。</p></a>
+				<a href="#00:01:40.60" id="00:01:40.60" class="lt" onclick="jumptoTime(100, this.id)"><p>然後就用微波爐大火烤一分半至兩分鐘，這個蛋糕其實不是我創作的，只是我以前在澳洲生活的時候，在澳洲是一個很受歡迎的食譜，我想跟大家分享一下，因為這個蛋糕的製作很簡單和很快，為什麼會在澳洲受歡迎呢?</p></a>
+				<a href="#00:02:11.60" id="00:02:11.60" class="lt" onclick="jumptoTime(131, this.id)"><p>因為澳洲的店舖，我去的年代，店舖是4點就關門，所以有時候當你很渴望吃甜食的時候。</p></a>
+				<a href="#00:02:21.60" id="00:02:21.60" class="lt" onclick="jumptoTime(141, this.id)"><p>沒有辦法，唯有自己做。</p></a>
+</div>
+	</body>
+</html>

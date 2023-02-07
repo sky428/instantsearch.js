@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>紐約芝士餅 趙善恩  Teresa Chiu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'MIlBSgHUFxA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>紐約芝士餅 趙善恩  Teresa Chiu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，我做蛋糕曲奇有17年經驗，今天我們做一個紐約芝士餅，我做這個比較特別，做一個方形的五吋餅，餅身完全不會上色，是一個低溫的焗爐焗出來</p></a>
+				<a href="#00:00:24.35" id="00:00:24.35" class="lt" onclick="jumptoTime(24, this.id)"><p>最基本的忌廉芝士，然後有糖霜，然後是芝士，然後有糖霜，然後有酸忌廉，牛油溶液，然後有蛋，有了酸忌廉和牛油溶液，整個餅的質感就變得比較濕潤，如果是天氣冷的時候，我們會把忌廉芝士放進室溫，切成小粒，然後放進去打，這樣就比較容易打得更滑，糖霜，輕輕在手冷的時候把它拌勻。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:56.55" id="00:00:56.55" class="lt" onclick="jumptoTime(56, this.id)"><p>我們先慢速，打芝士和糖的時候就不可以心急，因為我們在這個期間，除了要中速之外，我們要不時把它拿下來，刮一刮乾邊的芝士，徹底把它完全拌勻，再加其他材料，現在這個狀態，剛剛開始兩樣東西，自己拌勻了，但當然還不夠滑，把它刮低，芝士，再打多一會兒，好了，再看看，現在這個狀態就好了很多，因為芝士糖完全混合了。</p></a>
+				<a href="#00:01:34.75" id="00:01:34.75" class="lt" onclick="jumptoTime(94, this.id)"><p>我提議把三隻蛋先打勻，它變成一個蛋形，現在再打的時候，我們再慢速打，蛋漿就慢慢加進來了，加一點的時候，留意一下狀態，好，打完蛋之後，我們一定要沿著乾邊的芝士，再刮低，看到這些嗎?</p></a>
+				<a href="#00:01:55.75" id="00:01:55.75" class="lt" onclick="jumptoTime(115, this.id)"><p>這些是還沒混合的，我們把它放下來，然後再上機打，因為打芝士餅太急，把所有材料都加進去，最後芝士漿已經很難打得滑，所以我們一定要逐樣打，放酸忌廉，將一半放進去，這裡可以分兩次放，酸忌廉不需要刻意打很久，將它打勻，將芝士油拌勻，然後就可以放牛油，放完後，快一點，讓它徹底拌勻，這個就是我們所要的芝士漿，所有材料都完全拌勻。</p></a>
+				<a href="#00:02:34.67" id="00:02:34.67" class="lt" onclick="jumptoTime(154, this.id)"><p>今天我會做一個方形的模，模裡面先塗上牛油，包一張底紙，後面會有一杯水，這杯水會跟著芝士餅入爐，目的是讓餅焗的時候有些濕氣，令它不會那麼容易爆裂，而且會上色，倒的時候我們要留意，大概模的八成會，它焗的時候會膨脹，有機會芝士會流出來，以100度的溫度焗60分鐘，令到芝士餅出爐的時候，依然保持一個圓形的狀態。</p></a>
+				<a href="#00:03:8.51" id="00:03:8.51" class="lt" onclick="jumptoTime(188, this.id)"><p>這樣就最漂亮了，來到芝士餅上面的餅面裝飾，就是一個沙拉忌廉的面。</p></a>
+				<a href="#00:03:14.51" id="00:03:14.51" class="lt" onclick="jumptoTime(194, this.id)"><p>把它改為一個點的形式，將酸忌廉放進去，然後糖霜。</p></a>
+				<a href="#00:03:21.15" id="00:03:21.15" class="lt" onclick="jumptoTime(201, this.id)"><p>兩樣東西混合，然後加上魚膠水，你看到它現在處於一個，慢慢凝固的狀態，我們就輕輕放在一旁，讓它稠一點才可以擠在餅面上，來到最後一步，我就做一個很簡單的拉絲糖的方法，我們有100克的砂糖，有一湯匙的清水，先將清水放進來，煮糖的時候要留意，最好不要走開，或者不要太大火，我們由中速開始煮，中途的時候。</p></a>
+				<a href="#00:03:55.39" id="00:03:55.39" class="lt" onclick="jumptoTime(235, this.id)"><p>也不要用任何的掌、叉去攪拌。</p></a>
+				<a href="#00:03:59.87" id="00:03:59.87" class="lt" onclick="jumptoTime(239, this.id)"><p>讓它自動融化後，就變成一個茶色，我們就可以推動鍋子，我拿著兩支叉，並排，你會發覺現在的狀態是非常流動的，我們要大概等它一會兒，這個狀態我們一定要耐心一點等它，因為它已經慢慢開始降溫，它開始有些很幼的絲出現，越來越稠了，越來越稠代表，它的溫度會降低，還有它擠出來的絲會越來越明顯，現在它還是一個比較軟身的狀態。</p></a>
+				<a href="#00:04:32.87" id="00:04:32.87" class="lt" onclick="jumptoTime(272, this.id)"><p>我們就可以將它，屈曲一個我們要的形狀，這個動作要快，因為它會在很短的時間內定型，所以我建議戴手套做。</p></a>
+</div>
+	</body>
+</html>

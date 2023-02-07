@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>能量球 趙希洛</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3FNnRfQbeRQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>能量球 趙希洛</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，我喜歡煮食的原因很簡單，因為我喜歡吃，因為我小時候不是在香港長大，我們那邊的廚房比較大，很多時候那邊是普遍自己煮飯的，我小時候就很喜歡母親節、父親節，就負責自己去煮早餐給媽媽和爸爸吃，今天我就會和大家做一件東西，叫Energy Ball，為什麼我會做這件事呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:41.96" id="00:00:41.96" class="lt" onclick="jumptoTime(41, this.id)"><p>因為我發覺其實現在普遍了，有很多人可以在街上買到，但是我都見價錢都偏貴，其實在家自己做都很簡單，還有健康，想和大家分享一下這件事，其實我這個Energy Ball，需要的材料真的很簡單，首先我們放椰棗，但我們今天就會放西梅，很天然的糖粉，所以就會帶起甜味，我自己喜歡放的份量，就是兩份椰棗和一份西梅。</p></a>
+				<a href="#00:01:13.96" id="00:01:13.96" class="lt" onclick="jumptoTime(73, this.id)"><p>今天在Candice的一口Energy Ball裏，是用了西梅和椰棗，沒有放任何糖，它本身這兩樣都有自己的甜味，所以不需要放糖，是不是健康很多呢?</p></a>
+				<a href="#00:01:27.96" id="00:01:27.96" class="lt" onclick="jumptoTime(87, this.id)"><p>現在放杏仁，還有Almond Butter，這些是會負責幫它們黏在一起的，大部份超市都可以買到，很普遍的，我們就放椰子油，椰子油在很多超市都可以買到，我們放這個就是Extra Virgin，平時買的可能已經有了一塊，所以要用暖水去阻止它變暖，放一匙左右，就可以攪拌了，沒有攪拌機的朋友都不要緊。</p></a>
+				<a href="#00:01:57.96" id="00:01:57.96" class="lt" onclick="jumptoTime(117, this.id)"><p>你自己可以用刀碎了每樣材料，攪拌在一起也做到，我喜歡這股可可粉的味道，我會放多一點點，OK 完成了，你聽到它的聲音，其實它已經開始不動了，因為它已經黏在一起了，這樣你就會看到它的質感，就是這樣很黏的一塊，好像一團東西，但你又會看到它裡面，是有一些碎碎的杏仁，不用杏仁可以用，夏威夷果、Pecans。</p></a>
+				<a href="#00:02:41.23" id="00:02:41.23" class="lt" onclick="jumptoTime(161, this.id)"><p>或者Cashews都可以，把椰子碎都沾上就完成了，趙希樂的一口Powerball，現在我每年聖誕和新年，都會在家裡和家人煮東西給他們吃，還有現在正在學中菜，最近正在嘗試跟丁一學這個蘿蔔糕。</p></a>
+</div>
+	</body>
+</html>

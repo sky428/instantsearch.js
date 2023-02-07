@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>英式鬆餅 KC</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-HV7HbD-BIk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>英式鬆餅 KC</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，想吃鬆餅，但家中沒有焗爐?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.17" id="00:00:6.17" class="lt" onclick="jumptoTime(6, this.id)"><p>讓我KC教你如何煎鬆餅吧!</p></a>
+				<a href="#00:00:16.86" id="00:00:16.86" class="lt" onclick="jumptoTime(16, this.id)"><p>煎鬆餅的材料有歐洲的T65粉，水，粟豹乾酵母，即是紅衣，還有鹽，今天還有兩款麵種，一款是天然酵母種，Rouen，另一款是做法包時比較常見的，玻璃收種，抄好麵團後最後會加橄欖油，讓它軟熟一點，首先要準備38度的暖水，要有一個電子溫度計探測得比較準確，然後用暖水溶解紅衣粟豹乾酵母，量大概是衣豉粉的三倍。</p></a>
+				<a href="#00:01:1.86" id="00:01:1.86" class="lt" onclick="jumptoTime(61, this.id)"><p>攪到變成糊狀，溶解酵母菌，這步將酵母菌激活，激活後就不會容易死掉，有時天氣冷或熱，水溫有變化的時候，如果直接將粟豹乾酵母加到麵團，會有很大一層衣豉脆，即是告訴你細菌死了，發酵的速度很不平均，很不穩定，所以這步是必須要的，當它充分溶解，看不到一粒粒的時候，一個糊狀的時候，就可以將所有材料加在一起，首先將酵母倒入麵粉中。</p></a>
+				<a href="#00:01:43.86" id="00:01:43.86" class="lt" onclick="jumptoTime(103, this.id)"><p>加水，加鹽，然後將天然酵母加進去，還有玻璃收種，也加進去，首先在不鏽鋼盤中拌幾下，讓它大致成團，不用攪到整個桌面都是，現在將麵團，倒出桌面，之後用力在桌面上搓搓，讓麵粉充分吸水，如果想麵團的氣孔比較粗大，要加多一點水，這樣麵團搓出來後會偏濕，大約搓了5分鐘，麵團有彈性，麵團開始光滑的時候，不用完全光滑，有一點粗糙也可以。</p></a>
+				<a href="#00:02:34.58" id="00:02:34.58" class="lt" onclick="jumptoTime(154, this.id)"><p>最主要是麵團有彈性，加上橄欖油，像按摩一樣，把氣孔插進去，讓麵團吸收油，大約再搓5分鐘，麵團已經吸收了油，拉下去覺得有彈性就可以停止，在氣泡上擠一點橄欖油，把麵團放進去發酵，然後用保鮮紙包著，避免它吹乾，然後放在一個27度的室溫地方發酵半小時，經過30分鐘的發酵後，我們的英式麵團就可以翻摺了，翻摺的時候。</p></a>
+				<a href="#00:03:18.92" id="00:03:18.92" class="lt" onclick="jumptoTime(198, this.id)"><p>用手指插在麵團底部，把它反過來，前後左右都做一次，目的是將發酵的溫度更平均，和將表面拉緊，收緊表面後，你會發覺麵團的彈力會改善很多，之後再發酵30分鐘，現在麵團發酵了半小時，是時候把它分割，首先在膠箱裏面灑少許玉米澱粉，讓它不會黏底，還有煎的時候會有香味，然後灑少許粉在桌上，然後將麵團倒在桌上。</p></a>
+				<a href="#00:03:58.92" id="00:03:58.92" class="lt" onclick="jumptoTime(238, this.id)"><p>之後60克一隻，然後將它稍微收圓，將光滑面包住中間，如果不是很熟悉的朋友，可以將它放在中間，將它放在麵團上輕輕按壓，如果做麵包比較久，有技巧的朋友，可以在手掌心上搓圓，這樣都可以，這樣快點，麵團鬆弛半小時後就可以拿去煎，記得要蓋住它，不要讓它吹乾，麵團鬆弛半小時後就可以拿去煎，首先預熱鍋。</p></a>
+				<a href="#00:04:36.92" id="00:04:36.92" class="lt" onclick="jumptoTime(276, this.id)"><p>不用太大火，小火就可以了，麵團表面灑少許玉米澱粉，因為麵團發酵了，要輕手一點，輕輕放在鍋上，不要一次放太多，太擠迫會黏在一起，每面大概煎6分鐘，其實不用放油，你會聞到很香的玉米粉甜香味，看到旁邊半透明，好像熟透的時候，就差不多了，現在6分鐘了，總共煎了12分鐘，看到底部夠色就可以出爐了，我們的English Muffin大功告成。</p></a>
+				<a href="#00:05:18.92" id="00:05:18.92" class="lt" onclick="jumptoTime(318, this.id)"><p>吃的時候可以撕開它，塗點果醬就很棒了。</p></a>
+</div>
+	</body>
+</html>

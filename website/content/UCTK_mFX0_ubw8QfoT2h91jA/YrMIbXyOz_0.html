@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>檸檬芒果朱古力 Jeffery Koo 阿古</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'YrMIbXyOz_0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>檸檬芒果朱古力 Jeffery Koo 阿古</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:13.47" id="00:00:13.47" class="lt" onclick="jumptoTime(13, this.id)"><p>Hello， 各位BigBig Chef，今天我為大家示範這款檸檬芒果軟心巧克力，現在你看到這款巧克力模具，現在看著如何噴出來，我現在先去噴盒，首先我加了糖色，糖粉是用酒精來開的，我將糖粉打在模具的角落位置，接著準備綠色可可油，因為巧克力模具是圓形的，所以我們在噴的時候會先噴某一邊，然後一直轉方向。</p></a>
+				<a href="#00:01:0.19" id="00:01:0.19" class="lt" onclick="jumptoTime(60, this.id)"><p>360度都要噴到同一種顏色，這就是技巧，綠色的部分完成了，接著就要噴白色，噴模的過程比較複雜，但同時我們在世界各地的比賽，甚至是自己也在用，都是用這個方法，代表這個方法是複雜得來，但大家都做得到，你看，噴好了，我們就要倒模，要將剛好合適的珠子倒進去，除了搖搖搖搖之外，要留意倒的過程也要比較快，黑巧克力是會很快地凝結的。</p></a>
+				<a href="#00:01:54.07" id="00:01:54.07" class="lt" onclick="jumptoTime(114, this.id)"><p>這次我選用的巧克力模具比較圓角，這些是比較合適初學者的，其次亦比較容易去離模，巧克力殼準備好了，你會看到已經夠薄了，現在裡面很光滑，現在我準備煮餡料，首先將水、糖、塑膠混合後就放進去，將這裡煮成微焦糖的顏色，接著芒果果蓉，檸檬果蓉、檸檬青</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:35.07" id="00:02:35.07" class="lt" onclick="jumptoTime(155, this.id)"><p>然後是黑巧克力，檸檬果蓉、檸檬青，我們也是煮至糖漿完全融化，煮至完全融化，接著就全部倒進去，攪拌均勻，剩下少少白巧克力，就可以加牛油，OK，又是沒有牛油粒，然後我們放涼，25度後就會放模，最重要放涼後，先做保鮮紙，貼著表面，不用擔心會風乾，水份就會掉落餡料，餡料就會放模中，接着就封底。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:52.01" id="00:03:52.01" class="lt" onclick="jumptoTime(232, this.id)"><p>當你做半圓形，其實是容易做的，因為你看到就算我倒朱古力在通底，都可以很快地，刮出來，讓它凝結，封好底部，記得將它反轉，放入冰箱，好，檸檬芒果朱古力，已經從冰箱取出，敲這些模的邊位，不是敲模內，因為敲這些就會爆開，好，做好了，有面有底的檸檬芒果朱古力。</p></a>
+</div>
+	</body>
+</html>

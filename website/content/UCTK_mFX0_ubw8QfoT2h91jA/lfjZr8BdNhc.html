@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>士多啤梨玫瑰撻 | 凌璣 Alex</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lfjZr8BdNhc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>士多啤梨玫瑰撻 | 凌璣 Alex</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，請訂閱魔人SAVI的頻道及按旁邊那個鈴鐺，我是Alex，入學經驗超過10年</p></a>
+				<a href="#00:00:18.65" id="00:00:18.65" class="lt" onclick="jumptoTime(18, this.id)"><p>字幕by索兰娅🐰，這個草莓玫瑰撻底用了一個很簡單的做法，就是用一個消化餅加牛油的餅底，大家都做得到，不用特意浪費時間去搓一個餅底，很方便，隨時都可以做到</p></a>
+				<a href="#00:01:13.16" id="00:01:13.16" class="lt" onclick="jumptoTime(73, this.id)"><p>謝謝收看，字幕by索兰娅💕，餅餡裏面加了杏仁粉的蛋糕仔，除了味道特別之外，最主要的作用是，一層蛋糕烤的時候，可以保持餅底黏合，切的時候不會容易散開，因為我們用消化餅底做的餅皮，很容易切的時候都會散開，所以我烤了一層蛋糕餡</p></a>
+				<a href="#00:02:57.42" id="00:02:57.42" class="lt" onclick="jumptoTime(177, this.id)"><p>請訂閱我的頻道，按讚我的視頻，分享出去，打開通知鈴，才能收到最新消息喔，再會，字幕by索兰娅🐰，我把这些鱼放在盆里，这样子就能够保存多一天，这个鱼的骨头是用鱼骨的骨头，去做鱼的骨头，所以我们可以用鱼骨，去做鱼的骨头，这些鱼的骨头，是用鱼骨的骨头，去做鱼的骨头，所以我们可以用鱼骨，去做鱼的骨头。</p></a>
+				<a href="#00:03:41.64" id="00:03:41.64" class="lt" onclick="jumptoTime(221, this.id)"><p>这些鱼的骨头，是用鱼骨的骨头，去做鱼的骨头，ashed，slash warfare，artık，vou Antwort，PRESID auto，Tell oversee，ukan，autres，timed，אומר，warm，bevor，bul웠，disturbed，containing，yond。</p></a>
+				<a href="#00:04:14.66" id="00:04:14.66" class="lt" onclick="jumptoTime(254, this.id)"><p>Solutions，ker，theoretical，глуб，題 Monet，welche，Astronzo，18，Burch，spoilers，AN mint，Nok，hang，causa，Tomato，fee，ahl，rib，yes，nouveaux，tough，comma，IKEA，calorie。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:56.66" id="00:03:56.66" class="lt" onclick="jumptoTime(236, this.id)"><p>Would Bike，ед，oblig finishing，pepper，constants，applauds，เอ Vamos，этому，TE kung，QUESTION follow，cooparg，diret，érêt，είναι automSay，qued，ograf，promised。</p></a>
+				<a href="#00:04:12.36" id="00:04:12.36" class="lt" onclick="jumptoTime(252, this.id)"><p>bevor，ców gems，��，ф，wei，managing，constructed，字幕by索兰娅🐰，字幕by索兰娅🐰。</p></a>
+</div>
+	</body>
+</html>

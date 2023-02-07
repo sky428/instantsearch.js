@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白朱古力瑪德蓮蛋糕 | Manci</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'hRnGZBQ4viI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>白朱古力瑪德蓮蛋糕 | Manci</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:3.96" id="00:00:3.96" class="lt" onclick="jumptoTime(3, this.id)"><p>bacon，ไม subscription，ixa país，rib scholarship，enthalpy，restaurant，220，sausages，ா，준，glorious，volunteering，word，moving，ían，ingers，BC，ath，충，bracht，cussions。</p></a>
+				<a href="#00:00:16.30" id="00:00:16.30" class="lt" onclick="jumptoTime(16, this.id)"><p>burPass specjal，ancbes，남，auf，péri，itations，blindfold chúng，semic，receber，Wellness，코�pas，ass，Gurreach，yer，resistor，closing，médico，έộc�ãos interpol，nước。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:13.10" id="00:00:13.10" class="lt" onclick="jumptoTime(13, this.id)"><p>murder，wholesale，j outdoors，vet wizard，Hello，各位Babychef的朋友大家好，我是Mancy，情人節快到了，除了朱古力之外，女生還可以做甚麼給男朋友呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.37" id="00:00:31.37" class="lt" onclick="jumptoTime(31, this.id)"><p>其實馬德蓮蛋糕仔會是一個很好的選擇，不太甜，容易做，三來就是沾朱古力做一些裝飾，就成為了一份很窩心的禮物，我們首先有全蛋，幼細的砂糖，低筋麵粉，鹽和發粉都在這裡，這次會用到少許蜜糖，這是普通純味蜜糖，我覺得用純味蜜糖會比較好，因為市面上有很多不同的蜜糖類，用天然純味蜜糖就可以了。</p></a>
+				<a href="#00:01:2.37" id="00:01:2.37" class="lt" onclick="jumptoTime(62, this.id)"><p>這次的無鹽牛油比較特別，因為我們的狀態要是液態化的，所以我們要放進微波爐冰10至15秒，就可以做到液態化，第一個步驟就是打蛋，打到起泡泡就可以了。</p></a>
+				<a href="#00:01:20.37" id="00:01:20.37" class="lt" onclick="jumptoTime(80, this.id)"><p>直接把粉篩進蛋裡，然後放入蜜糖，用蜜糖會令蛋糕香口一點，攪拌到沒有結粒，就可以放入液態牛油，盡量不要讓牛油沉底變成結晶，不然就會邊攪拌邊加，你看到現在的狀態，沒有結粒，流質。</p></a>
+				<a href="#00:01:50.37" id="00:01:50.37" class="lt" onclick="jumptoTime(110, this.id)"><p>就可以放入擠袋，準備放入蛋糕盤，這次的蛋糕比較流質，縫製流質的物體都會用擠袋，因為比較容易控制，我們放入擠袋後就可以開始幫蛋糕盤搽油，記得用不銹鋼管或硬鐵盤一定要搽油。</p></a>
+				<a href="#00:02:10.37" id="00:02:10.37" class="lt" onclick="jumptoTime(130, this.id)"><p>食用油、植物油、菜油都可以，我通常用植物油，因為不搽油的話，蛋糕會黏住，很容易會拉扯紋，所以這個步驟千萬不要懶惰。</p></a>
+				<a href="#00:02:25.37" id="00:02:25.37" class="lt" onclick="jumptoTime(145, this.id)"><p>模子放入七成滿就夠了，因為這個蛋糕會漲起來，搖一搖讓它均勻，焗方面165度15至20分鐘，記得每逢小蛋糕10分鐘後，看看顏色上的變化，如果很快變黃，可以縮短時間，如果不夠黃，可以直至20分鐘，出爐了，要在室溫攤30至45分鐘，一定要完全冷卻，因為一件情人節必要的，就是白朱古力，如果不夠冷。</p></a>
+				<a href="#00:03:6.91" id="00:03:6.91" class="lt" onclick="jumptoTime(186, this.id)"><p>朱古力會很快溶解，當中會用紅色色素，令白朱古力上一點紅色，色素不會加太多。</p></a>
+				<a href="#00:03:17.71" id="00:03:17.71" class="lt" onclick="jumptoTime(197, this.id)"><p>蘸法是斜角蘸，蘸完朱古力後，就開始加花，花有幾種玩法，第一是整朵放進去，第二是把花瓣撕下，黃色的叫青瓜花，形態很漂亮，而且很特別，因為是尖嘴形，所以我會整朵放進去，青瓜花這種食用花，真的能種出少許青瓜，所以它的味道很好吃，粉紅色的花瓣的花色，深淺不一樣，撕下來用會比較漂亮，始終情人節要有花，粉紅色。</p></a>
+				<a href="#00:04:8.15" id="00:04:8.15" class="lt" onclick="jumptoTime(248, this.id)"><p>情節就會比較浪漫，只要選擇漂亮的花，撕花瓣撕得漂亮，放進去，就立即變成大師級的作品，下一步就是放食用添粉，粉紅色的食用添粉，我主要放在花的位置，凸出粉紅色的花瓣，最後一樣，又是畫龍點睛的，就是食用金箔，筷子是一個很好的助手，千萬不要用手直接摸食用金箔，因為很容易黏著皮膚，根本不能放進甜品裡。</p></a>
+				<a href="#00:04:43.43" id="00:04:43.43" class="lt" onclick="jumptoTime(283, this.id)"><p>浪費食用金箔，現在放好，就完成情人節的瑪德蓮蛋糕了。</p></a>
+</div>
+	</body>
+</html>

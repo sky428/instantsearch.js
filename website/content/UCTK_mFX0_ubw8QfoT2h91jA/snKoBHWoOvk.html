@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>檸檬士多啤梨慕斯蛋糕 | Jeffery Koo | 阿古</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'snKoBHWoOvk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>檸檬士多啤梨慕斯蛋糕 | Jeffery Koo | 阿古</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:3.71" id="00:00:3.71" class="lt" onclick="jumptoTime(3, this.id)"><p>Hello!各位BigBigChef的朋友，今天我為你們示範的就是這款，草莓蛋糕，首先煮士多啤梨餡料，裏面有士多啤梨果蓉，檸檬果蓉，也有檸檬皮，有水，果膠粉，砂糖，也是混合在一起，混合在一起後，我們先攪拌均勻，然後開大火，煮到它大滾，然後倒入盤子，好，完成，然後用保鮮紙蓋住表面，然後放入雪櫃，雪涼後就可以拿出來用。</p></a>
+				<a href="#00:00:54.57" id="00:00:54.57" class="lt" onclick="jumptoTime(54, this.id)"><p>接著為大家示範士多啤梨慕絲，現在示範，首先將忌廉倒入鍋裡，接著牛奶，蛋黃，砂糖，重點是酸性的水果和果蓉，不要太早加入，像這個狀態，攪拌均勻後，煮到它真的大滾，然後將所有酸性的水果和果蓉再加入，這樣才不會變成乳酪狀態，即不會凝結，我們現在煮蛋漿那邊，一邊煮一邊攪拌，確保已經像現在這樣起泡泡。</p></a>
+				<a href="#00:01:41.57" id="00:01:41.57" class="lt" onclick="jumptoTime(101, this.id)"><p>滾起了，關火，第一件事，關火後就將魚膠片放進去，因為魚膠是最需要消毒的材料，接著就加急凍士多啤梨肉，士多啤梨果蓉，紅桑子果蓉，全部加進去後，要攪拌均勻，攪拌均勻後，將白朱古力放進去，放進去助水，助冰水那邊，將熱的材料都即時加入，這裡就攪拌均勻，攪拌均勻後，再助冰水，確保已經溶化。</p></a>
+				<a href="#00:02:23.57" id="00:02:23.57" class="lt" onclick="jumptoTime(143, this.id)"><p>見到白朱古力都差不多溶化了，我們輕輕助冰水，讓它有少許微暖，這邊我們就用手提攪拌機，將剛才的士多啤梨和其他朱古力都攪碎，攪碎了，你見到了，是嗎?</p></a>
+				<a href="#00:02:46.63" id="00:02:46.63" class="lt" onclick="jumptoTime(166, this.id)"><p>然後準備打起的忌廉，然後將打起的忌廉加入，攪拌方法除了可以用筷子，也可以用膠掌，轉動麵團，慢慢將外面的撥入去，這個草莓慕斯大功告成，我們就可以放模，草莓餡料我放在擠袋，慕斯準備了，這次用全球體矽膠模，我們也準備了黑巧克力蛋糕，首先將慕斯放進去，然後放蛋糕，然後將餡料放在正中間，然後放進冰櫃裡。</p></a>
+				<a href="#00:03:32.63" id="00:03:32.63" class="lt" onclick="jumptoTime(212, this.id)"><p>大概五分鐘，等這層已經很快地冷卻了一點，我們可以再加蛋糕和慕斯，冰櫃拿出來後，我們繼續組合，先將慕斯放進擠袋，這次在邊緣擠多一點，擠多一點後，我會再加多一點草莓餡，然後再放一片蛋糕，輕輕按壓，然後可以蓋上，一次過擠慕斯，由頂部擠下去，這款草莓慕斯已經做好了，然後放在冰櫃裡冷卻五小時，之後就可以脫模和做鏡面的效果。</p></a>
+				<a href="#00:04:21.63" id="00:04:21.63" class="lt" onclick="jumptoTime(261, this.id)"><p>我們脫了模，然後準備了紫色的鏡面，我之前也有教過如何做鏡面，我用了鏡面後，我會準備了手攪拌機，將它打發至沒有泡泡，打發至完全靜止狀態，沒有泡泡，溫度上要留意，鏡面軟化的時候，大概要保留在40度，蛋糕非常冷，我放一支膠簽進去，插上膠簽後，我會一次過這樣沾進去，大概會沾兩至三次，視乎顏色包著的時候的效果。</p></a>
+				<a href="#00:05:1.63" id="00:05:1.63" class="lt" onclick="jumptoTime(301, this.id)"><p>刮一刮，拖一拖底，確保底部沒有腳位，很漂亮，然後我們沾上牙籤，沾完牙籤後，然後就放在餅底紙上，放好後，我就可以慢慢把籤拿出來，只要蛋糕裏面開始有少許解凍，籤就可以轉出來，接著我也準備了一些朱古力的裝飾，例如有花仔、木紋、朱古力線，我把它放上去就可以完成了。</p></a>
+</div>
+	</body>
+</html>

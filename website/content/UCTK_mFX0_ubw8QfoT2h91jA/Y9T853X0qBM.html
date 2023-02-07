@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鮮雜果白酒果凍 TeresaChiu 趙善恩</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Y9T853X0qBM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>鮮雜果白酒果凍 TeresaChiu 趙善恩</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:2.68" id="00:00:2.68" class="lt" onclick="jumptoTime(2, this.id)"><p>我是趙倩欣 Teresa，我做蛋糕曲奇有17年經驗，今天我會做鮮果白酒果凍，如果不用白酒，可以選擇香檳，但紅酒的顏色太深，如果用太深色的水果，水份會被水果遮蓋，就不會那麼漂亮，看看今天的材料，這邊有加了砂糖的魚膠水，本身已經溶了，有魚膠、砂糖和水，然後有白酒，另外有奇異果、土魄梨、火龍果、藍莓、草莓、芒果，首先把溶掉的魚膠、砂糖和水放進去。</p></a>
+				<a href="#00:01:1.28" id="00:01:1.28" class="lt" onclick="jumptoTime(61, this.id)"><p>這個份量比較多，因為我們要它很硬朗地凝固，然後放白酒，不需要過份攪拌，因為它會有泡泡，我們不想它有泡泡，這個狀態已經可以了，排水果其實沒有什麼特別難度，不過如果你的器皿比較闊，可以把水果放得漂亮一點，可以放奇異果、草莓，可以間中放，旁邊放芒果，沒有刻意放的方法，隨你喜歡，我們隨意一點。</p></a>
+				<a href="#00:01:38.28" id="00:01:38.28" class="lt" onclick="jumptoTime(98, this.id)"><p>因為底部已經放了剛才的造型，注意某些水果不太主張放，例如榴槤，因為它的味道太濃，還有它切出來比較熟，盡量放到它將近平滿，就可以了，這邊是剛才的水份，我們要慢慢地倒進去，在不同的位置倒進去，為求將水份在水果之間的空隙上，裹滿水果，因為水果本身裹滿了水，所以水果互相緊扣，如果用很少水果，水果有機會慢慢浮上去。</p></a>
+				<a href="#00:02:27.28" id="00:02:27.28" class="lt" onclick="jumptoTime(147, this.id)"><p>就不太漂亮，現在的狀態就拿去雪櫃冷藏，家庭的雪櫃，最快要四、五個小時，但不要心急，我不建議放在雪櫃，因為放在雪櫃，水果和白酒凍出來就不漂亮，這個果凍已經冷藏了數小時，這個狀態比較硬身，如何取出呢?</p></a>
+				<a href="#00:02:53.80" id="00:02:53.80" class="lt" onclick="jumptoTime(173, this.id)"><p>第一件事就是可以輕輕地打底，有少許暖水，打了暖水後，可以將四邊用刀仔，幫它擰一擰模</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:5.80" id="00:03:5.80" class="lt" onclick="jumptoTime(185, this.id)"><p>這個鮮果白酒果凍就完成了。</p></a>
+</div>
+	</body>
+</html>

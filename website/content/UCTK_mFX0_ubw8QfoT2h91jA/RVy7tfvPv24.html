@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>元宵奇緣雨花石湯圓 Jacky Yu 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RVy7tfvPv24',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>元宵奇緣雨花石湯圓 Jacky Yu 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>MING PAO CANADA CANADA 字幕組，元宵是中國的情人節，傳統來說元宵都是吃湯圓，都是那句話， 港語頭， 團團圓圓，今天我們做的湯圓比較特別，就是乳花石湯圓，用不同顏色的糯米粉，產生乳花石的效果，先說說材料，傳統的湯圓多數是番薯薑湯底，今天我就特別一點，我用了圓肉和紅棗的天然甜味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:31.91" id="00:00:31.91" class="lt" onclick="jumptoTime(31, this.id)"><p>去做這個湯底，好， 到做色素了，我就用了綠茶的綠色，咖啡的啡色，紅菜頭的紅色，和原本糯米粉本身的白色來做，首先我就煲入糖水底，將圓肉和紅棗洗淨，然後放入煲裡，加大約兩公升水，煮滾後煲30分鐘， 等它出味，我剛才說了，紅色我是用紅菜頭的天然色素來做，怎樣才可以把紅菜頭的顏色拌勻呢，我將紅菜頭切粒放入容器裡。</p></a>
+				<a href="#00:01:4.11" id="00:01:4.11" class="lt" onclick="jumptoTime(64, this.id)"><p>然後加點水，用攪拌機或攪拌器，攪拌均勻，攪拌均勻後，就可以用隔篩將渣滓隔出來，好， 我們現在可以搓粉團了，我就加少少糯米粉，加少少紅菜頭的色，其實深淺程度也可以，因應你自己喜歡深淺些，自己可以調整也沒問題，搓湯圓的水最好用暖水，用暖水搓出來的湯圓會特別有嚼勁，好， 粉紅色的粉團就搓好了，現在搓啡色的。</p></a>
+				<a href="#00:01:42.51" id="00:01:42.51" class="lt" onclick="jumptoTime(102, this.id)"><p>我用了Espresso咖啡來做，加少少糯米粉，咖啡，好， 啡色的粉團也搓好了，接著到綠色的，加綠茶粉，綠色的粉團也搓好了，最後到白色的，白色的粉團甚麼都不用加，只需要加水，好， 白色的粉團也搓好了，接著可以搓湯圓了，我們可以用現成的雜貨店買到的紅豆餡、蓮蓉餡、芝麻餡，當然你可以加一些朱古力、黑糖餡也可以。</p></a>
+				<a href="#00:02:29.62" id="00:02:29.62" class="lt" onclick="jumptoTime(149, this.id)"><p>可以搓了，我們將不同顏色的粉團，每人撕一點， 混合在一起， 捏勻，然後搓成一個圓形的形狀，中間可以用手指按一個位置， 藏餡，用手指的虎口位慢慢地向上推，於是皮就會很均勻地包著餡料，然後我們會搓勻，就像一顆羽花石一樣，大家要留意的是，湯圓餡料搓到適當大小的時候，一定要放在冰格冷凍， 不然就包不到湯圓，搓好湯圓就可以煮了。</p></a>
+				<a href="#00:03:5.22" id="00:03:5.22" class="lt" onclick="jumptoTime(185, this.id)"><p>水滾後就放進去，當煮到湯圓浮起， 再讓它再脹一點就可以了，最後我們淋上桂圓紅棗茶，就可以吃了。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>停課不停煮 朱古力榛子醬Churros</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jQFi-7yxink',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>停課不停煮 朱古力榛子醬Churros</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，好，Selena，輪到你了，你會做哪一款中南美洲小吃呢</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:9.65" id="00:00:9.65" class="lt" onclick="jumptoTime(9, this.id)"><p>我會做朱古力榛子醬豬肉，但第一個步驟是甚麼，首先要煮沸水，然後加糖煮溶糖，再加油就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:19.85" id="00:00:19.85" class="lt" onclick="jumptoTime(19, this.id)"><p>你會用甚麼火</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:21.25" id="00:00:21.25" class="lt" onclick="jumptoTime(21, this.id)"><p>我會用大火煮沸水，現在可以加糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:27.09" id="00:00:27.09" class="lt" onclick="jumptoTime(27, this.id)"><p>煮完水後用來做甚麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:29.33" id="00:00:29.33" class="lt" onclick="jumptoTime(29, this.id)"><p>煮溶糖和油後，就可以加入麵粉做粉團，糖煮溶後就可以加入油，好，加了油後，要等它煮沸，然後關火，倒進碗裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:41.85" id="00:00:41.85" class="lt" onclick="jumptoTime(41, this.id)"><p>這個朱古力榛子，其實是西班牙很傳統的小吃，但因為它實在好吃，加上墨西哥曾經被西班牙統治過，所以你去墨西哥時，你會經常看到這個小吃</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:56.49" id="00:00:56.49" class="lt" onclick="jumptoTime(56, this.id)"><p>現在水煮沸了，可以關火，然後倒進碗裡，好，麻煩你了，下一個步驟就是把麵粉過篩，然後倒進沸水裡，我今天會預備朱古力榛子醬朱古力，它就像香港的油炸鬼，但配上肉桂糖和朱古力榛子醬，吃起來甜甜的，很好吃，現在可以把麵粉放進熱水裡，好，麻煩你了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:23.25" id="00:01:23.25" class="lt" onclick="jumptoTime(83, this.id)"><p>我想問你用甚麼麵粉</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:24.93" id="00:01:24.93" class="lt" onclick="jumptoTime(84, this.id)"><p>我用低筋麵粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:26.97" id="00:01:26.97" class="lt" onclick="jumptoTime(86, this.id)"><p>我想問為甚麼要把麵粉和熱糖水混合，我很少看到這個做法</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:32.33" id="00:01:32.33" class="lt" onclick="jumptoTime(92, this.id)"><p>因為這是做朱古力榛子的，一個很獨特的方法，待會炸出來的口感就會更好，現在要把麵粉和水混合，要混合到甚麼狀態，要混合到沒有粉粒，變成一個麵團就可以了，現在是否差不多了，對，現在差不多了，可以把雞蛋放進去，逐隻雞蛋放進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:52.29" id="00:01:52.29" class="lt" onclick="jumptoTime(112, this.id)"><p>我想問為甚麼要逐隻雞蛋放進去</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:54.97" id="00:01:54.97" class="lt" onclick="jumptoTime(114, this.id)"><p>因為這樣會混合得更均勻，我剛才加了第二隻雞蛋，加了第二隻雞蛋後，一定要快攪拌，一定要攪拌至全部都混合，否則出來的效果就不好，現在這個粉漿差不多了，可以把它放進擠花袋，然後擠出來，擠出來時有甚麼技巧，傳統的朱古力榛子是長條形的，但它的長度和闊度都是個人喜好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:17.89" id="00:02:17.89" class="lt" onclick="jumptoTime(137, this.id)"><p>如果小朋友沒有擠花袋的技巧，可以用擠花袋擠成長柱形，沒有花紋的，可以嗎，也可以，但會沒那麼漂亮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:26.17" id="00:02:26.17" class="lt" onclick="jumptoTime(146, this.id)"><p>擠完後是否可以馬上放進去炸</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:28.77" id="00:02:28.77" class="lt" onclick="jumptoTime(148, this.id)"><p>還未可以，擠完後要放入冰箱大約45分鐘，冷藏至硬身就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:34.05" id="00:02:34.05" class="lt" onclick="jumptoTime(154, this.id)"><p>師傅也做過這個甜品，我想分享一下我的技巧，傳統的做法是直接擠在滾油上炸，我不提議這樣做，因為始終是小朋友做，我會提議用Selina的方法冷藏</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:53.81" id="00:02:53.81" class="lt" onclick="jumptoTime(173, this.id)"><p>現在已經擠好了，可以放入冰箱冷藏大約45分鐘，冷藏至硬身就可以拿出來炸了，現在朱古力榛子已經冷藏好了，可以開始炸了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:3.69" id="00:03:3.69" class="lt" onclick="jumptoTime(183, this.id)"><p>你會用甚麼火力炸，還有炸至怎樣才可以</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:6.93" id="00:03:6.93" class="lt" onclick="jumptoTime(186, this.id)"><p>我們要用小火炸，炸至變成金黃色就可以了，因為朱古力榛子已經冷藏過了，所以炸的時候要特別小心，因為它有機會會油脂滲出，現在用筷子鬆開它，否則它會黏在一起</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:21.53" id="00:03:21.53" class="lt" onclick="jumptoTime(201, this.id)"><p>朱古力榛子會有甚麼叛色</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:24.05" id="00:03:24.05" class="lt" onclick="jumptoTime(204, this.id)"><p>會，炸好後會沾上肉桂糖，最後還會配朱古力榛子醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:29.25" id="00:03:29.25" class="lt" onclick="jumptoTime(209, this.id)"><p>Janice，你有吃過這個吐魯斯嗎，有，而且我也有做過，那你的叛籍是甚麼，我吃過果醬，果醬嗎，那你這次真的要試試Selina這個了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:40.57" id="00:03:40.57" class="lt" onclick="jumptoTime(220, this.id)"><p>現在已經炸好了，我們可以關火，然後拿起來加油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:44.93" id="00:03:44.93" class="lt" onclick="jumptoTime(224, this.id)"><p>Janice，你覺得Selina這個吐魯斯，炸得怎樣，我覺得很金黃色，有點像炸薯條，是嗎，好，下一個步驟是做甚麼</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:53.57" id="00:03:53.57" class="lt" onclick="jumptoTime(233, this.id)"><p>下一個步驟就可以沾上肉桂糖了，好，現在已經混合了肉桂糖，就可以倒在碟子上，待會沾的時候就會比較容易</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:2.61" id="00:04:2.61" class="lt" onclick="jumptoTime(242, this.id)"><p>如果我不喜歡吃肉桂糖，可以用朱古力粉代替嗎</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:6.13" id="00:04:6.13" class="lt" onclick="jumptoTime(246, this.id)"><p>也可以，但吃起來的感覺會不同，然後就可以把炸好的吐魯斯，放進去沾上肉桂糖，這個動作一定要快，否則油會乾掉，很難黏著糖，是，現在可以上碟了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:19.57" id="00:04:19.57" class="lt" onclick="jumptoTime(259, this.id)"><p>吐魯斯的特色就是肉桂糖，吃到糖和肉桂粉是特別美味的</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:27.85" id="00:04:27.85" class="lt" onclick="jumptoTime(267, this.id)"><p>我現在已經放好了，然後就會用朱古力榛子醬做裝飾，Selina，這是甚麼名堂，這個就是朱古力榛子醬吐魯斯</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:04:35.89" id="00:04:35.89" class="lt" onclick="jumptoTime(275, this.id)"><p>好，Janice，你覺得怎樣，很想吃。</p></a>
+				<a href="#00:04:38.53" id="00:04:38.53" class="lt" onclick="jumptoTime(278, this.id)"><p>我也是這麼說。</p></a>
+</div>
+	</body>
+</html>

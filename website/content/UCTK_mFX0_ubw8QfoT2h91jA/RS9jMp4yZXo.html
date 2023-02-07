@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>夢幻天使海綿蛋糕 | Manci</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RS9jMp4yZXo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>夢幻天使海綿蛋糕 | Manci</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:2.36" id="00:00:2.36" class="lt" onclick="jumptoTime(2, this.id)"><p>肥仔情人節快樂，我今天做一個，天使蛋糕給小朋友吃，我先介紹一下我剛剛在街上買了什麼，首先是多汀油的低筋麵粉，蛋因為海綿量高，所以我剛剛已經把蛋黃和蛋白分開了，還有菜油，還有為了你這個肥仔而設的小糖，我們現在開始吧，首先我要打蛋白，我現在先用一半糖，繼續加多一點糖，你記得我上次跟你說過糖要分三次加嗎，因為如果一次過加太快的話。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:1.87" id="00:01:1.87" class="lt" onclick="jumptoTime(61, this.id)"><p>就會比較難打起蛋白，記住，最後加最後一段糖，記得留一半糖，因為我們等一下會用蛋黃，之前跟你說過，記得記得記得記得記得，蛋白一定要拉直，這個就叫直角，直角是不會倒的，booth，nuevo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:31.51" id="00:01:31.51" class="lt" onclick="jumptoTime(91, this.id)"><p>palm，lens，肥仔 你不要整天做夢 特意做給你吃的，你是不是想我發脾氣，真的，記得現在做什麼嗎，篩粉 為什麼要篩粉，因為你上次做的蛋糕有結粒，還有每一次我幫你做的粉已經一早有發粉在裡面，所以這次也是有發粉的，因為所有乾的粉放在一起篩才會均勻，還有你最近胖了很多，所以今天沒有朱古力蛋糕吃了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:4.37" id="00:02:4.37" class="lt" onclick="jumptoTime(124, this.id)"><p>今天是原味低糖的天使蛋糕，記得我第一次教你，就是把所有濕的材料一次過放進一個盤子裡攪拌均勻，然後就放乾的粉，我們首先放蛋黃，然後水，然後是菜油，然後就是剛剛用剩的一半糖，然後就攪拌，記得攪拌均勻，看不到油和水分開，成為了蛋液之後，我們就會放乾的粉進去，我們把粉放進去之後就會變成蛋漿，我們現在千萬不要做到像上次那樣濃稠。</p></a>
+				<a href="#00:02:48.53" id="00:02:48.53" class="lt" onclick="jumptoTime(168, this.id)"><p>因為太濃稠的話蛋糕出來也不會夠海綿，等一下你又投訴，哎呀 你好悶，不要玩了 還給我好不好，好 先放回來，剛剛就攪拌好蛋黃漿，現在就要把忌廉放進蛋黃漿裡，記得跟上次一樣，千萬不要再攪拌太多次，我們就用風波動作把它們混在一起，因為海綿蛋糕就是每次都說喜歡吃的原因，就是因為它多空氣感，我們要保持它的空氣感。</p></a>
+				<a href="#00:03:22.53" id="00:03:22.53" class="lt" onclick="jumptoTime(202, this.id)"><p>我們就不能攪拌太多，好了 現在就可以放進模具裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:27.97" id="00:03:27.97" class="lt" onclick="jumptoTime(207, this.id)"><p>攪拌好 放入冰箱冷藏一晚，記得這次焗多久嗎?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:36.43" id="00:03:36.43" class="lt" onclick="jumptoTime(216, this.id)"><p>這次是焗165度30分鐘，然後就可以吃了，過來了，現在做忌廉了，今天會做粉紅色，因為這個是情人節蛋糕送給你的，我們現在就打圈了，忌廉也是一樣 要拉得起角，我們現在就是做粉紅色了，希望做到一個類似雲石紋，或者漸變色的效果，喜歡的話請訂閱支持啊，肥仔時間到了 快點，小心燙，跟之前說的一樣。</p></a>
+				<a href="#00:04:30.20" id="00:04:30.20" class="lt" onclick="jumptoTime(270, this.id)"><p>記得要反轉蛋糕，因為海綿蛋糕跟牛油蛋糕不一樣，因為裡面有空氣，很容易跟室溫有對比，有倒汗水 中間會凹下去，就不漂亮了 現在已經放涼了，用我最愛的這個，蛋糕掛就直接脫模，海綿蛋糕，你會看到 豐豐的，就是你最愛吃的質地，然後，就放白色的蛋白，塗奶油，有一個比較難的東西，通常，就像以前一樣，我會放很多。</p></a>
+				<a href="#00:05:16.20" id="00:05:16.20" class="lt" onclick="jumptoTime(316, this.id)"><p>然後慢慢割多了，這樣才會平滑，沒那麼容易割蛋糕，因為一割蛋糕，海綿蛋糕旁邊的蛋糕碎，就會飛出來，現在第一層還沒做好，因為還要加粉紅色，粉紅色就剛剛說過，因為我想多一點，漸變感，還有雲色，所以我會，這樣放，不會整個蛋糕都放粉紅色，旁邊就一如以往，不喜歡抹黑，因為我覺得這樣，比較像藝術，哈哈。</p></a>
+				<a href="#00:06:2.20" id="00:06:2.20" class="lt" onclick="jumptoTime(362, this.id)"><p>什麼都是，就是這樣，然後就開始放其他裝飾品，先放鮮粉絲，粉紅色的糖珠，這個花就代表我爹的愛，我最喜歡的，自己種的草綿，放上去做裝飾，肥仔，還沒好，還要冷藏，一個半小時至兩個小時再吃，乖，一會兒吃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:32.20" id="00:06:32.20" class="lt" onclick="jumptoTime(392, this.id)"><p>喜歡的請訂閱支持啊。</p></a>
+</div>
+	</body>
+</html>

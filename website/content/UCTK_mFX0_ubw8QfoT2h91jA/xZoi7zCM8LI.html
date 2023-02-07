@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>抹茶豆香蕨餅｜Tiff 陳蔚琦</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xZoi7zCM8LI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>抹茶豆香蕨餅｜Tiff 陳蔚琦</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:2.71" id="00:00:2.71" class="lt" onclick="jumptoTime(2, this.id)"><p>大家可能會在Big Big Voice見過我，因為我本身是一位歌手，兩年前開始，在Instagram有一個賣甜品的店，都是自己創作，好像我音樂一樣創作出來的成果，平時我電音廚房教大家多做一些，Fusion茶味甜品，今天我就教大家不用搶便宜機票，都會食到正宗的京都本決餅，首先我們有這個。</p></a>
+				<a href="#00:00:38.55" id="00:00:38.55" class="lt" onclick="jumptoTime(38, this.id)"><p>苯蕨粉、糖和水，苯蕨餅是用苯蕨粉做的，大家看到是啡色的，好像石灰的東西，其實它是由蕨植物的根部提煉出來的，動搖動搖的那個，就是這樣來的，若果是苯蕨粉，大家可能要在網站訂回來，我們做醬汁方面，就會有抹茶粉、水和粟糖漿，我們的黃豆抹茶粉，就會有糖霜、黃豆粉和抹茶粉，我們首先有一杯水，不要是熱水。</p></a>
+				<a href="#00:01:20.75" id="00:01:20.75" class="lt" onclick="jumptoTime(80, this.id)"><p>因為若果不是，蕨餅一倒進去就會馬上結成一團，之後我們就把糖也倒進去，有些人會直接拿去煮，但是我會先隔一隔，因為始終還有些粒粒在底部，我們就會開中火，要慢慢不停地攪拌底部，溫度一邊上，那些漿就會開始結成蕨餅的固體狀，這裡要有些耐性，因為我們不能開太大火，太大火它很快就會燒焦，這個時候我們看到。</p></a>
+				<a href="#00:01:59.55" id="00:01:59.55" class="lt" onclick="jumptoTime(119, this.id)"><p>這個固體狀已經出現了，我們要不停地攪拌它，發打它，直到它一來是透明了才是熟的，二來就是不停地攪拌它，就會有拉力，我們這裡已經完成了，現在我們會把蕨餅移動到一個鐵盤，鐵盤已經預先放了保鮮紙，現在我們會摺到大約一半，我們就會用手去按它，按到它去到一個適當的厚度，我們千萬不要把蕨餅放進冰箱，因為放進冰箱它的質感就會變了。</p></a>
+				<a href="#00:02:48.55" id="00:02:48.55" class="lt" onclick="jumptoTime(168, this.id)"><p>我們會放在室溫讓它放涼，我們就可以開始切了，等蕨餅放涼的時候，我就會教大家做這個配料，首先我們先做抹茶糖漿，首先我們把抹茶粉倒入水中，我們會攪拌均勻，為什麼不直接抹茶混糖漿呢?</p></a>
+				<a href="#00:03:11.95" id="00:03:11.95" class="lt" onclick="jumptoTime(191, this.id)"><p>因為抹茶是粉狀的，會令它越來越稠，如果直接把抹茶粉倒入糖漿，一定會一粒粒的，攪拌不均勻，之後我們會把抹茶漿倒入粟米糖漿，我們會把粟米糖漿和抹茶水慢慢攪拌均勻，這個抹茶糖漿的配料就完成了，因為我們的蕨餅本身沒有什麼味道，我準備了抹茶黃豆粉的粉去蘸蕨餅，我們先有糖霜，我們會把黃豆粉和抹茶粉倒入。</p></a>
+				<a href="#00:03:58.27" id="00:03:58.27" class="lt" onclick="jumptoTime(238, this.id)"><p>我今天會選擇用一個防潮的糖霜和抹茶粉，因為蕨餅本身吸水能力很高，所以如果用普通的糖霜和抹茶粉，很快蕨餅就會濕濕的，上碟也不漂亮，而且會黏在一起，輕輕地把三樣東西攪拌在一起就完成了，我們會先把抹茶粉和抹茶粉混合在一起，抹茶苯血饼完成了。</p></a>
+</div>
+	</body>
+</html>

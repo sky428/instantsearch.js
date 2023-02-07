@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黑芝麻芝士撻 阿古 Jeffery Koo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 's2CpWMIC_9g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>黑芝麻芝士撻 阿古 Jeffery Koo</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，大家好，我是Big Big Chef的朋友，今天我會為大家示範黑芝麻軟芝士撻，我們看到撻皮，黑芝麻餡料和軟芝士餡料在外面，吃撻最重要的是要暖吃，所以做好後放進烤箱就馬上吃就最好了，現在我開始示範撻皮。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:38.07" id="00:00:38.07" class="lt" onclick="jumptoTime(38, this.id)"><p>首先將牛油放進攪拌機，然後放糖粉，攪拌時間需要比較慢，因為牛油和糖粉不能攪拌太久和太幼滑，怎樣才算完成呢?</p></a>
+				<a href="#00:00:57.07" id="00:00:57.07" class="lt" onclick="jumptoTime(57, this.id)"><p>最重要是牛油和糖粉是否完全結合，但又不能攪拌到太軟太融，純粹攪拌均勻，現在牛油和糖粉已經黏合，就可以將雞蛋加進去，然後關掉攪拌機，加入麵粉，麵粉要篩過，黑芝麻、糕或醬放進去，我們都是用慢速攪拌均勻，為何經常強調用慢速，因為如果攪拌太久，撻皮就會像曲奇般散開，不能成型，變成很完整的撻殼，速度上會慢慢調高一點。</p></a>
+				<a href="#00:01:49.07" id="00:01:49.07" class="lt" onclick="jumptoTime(109, this.id)"><p>現在所有材料都已經混合，可以拿出來，我會把它壓扁，壓扁後需要準備兩張牛油紙，首先壓扁，另一張牛油紙，亦可以準備間尺、鐵尺，這個需要它的厚度，做撻皮不會太厚太薄，焗出來時每一隻的爐溫都會很平均，也不會太容易焦，這裡就要放入雪櫃，大概雪5-10分鐘，令塔皮已經雪硬了，就可以來模，接著我會為大家示範這款黑芝麻塔的餡。</p></a>
+				<a href="#00:02:45.49" id="00:02:45.49" class="lt" onclick="jumptoTime(165, this.id)"><p>首先將攤軟了的無鹽牛油和砂糖放進去，我們就要拌勻，然後加入雞蛋，拌勻，完成了，加入麵粉，杏仁粉，黑芝麻碎和黑芝麻糕，這層的餡料是一個口感，當我們吃的時候，這層的中心會有不同質地的口感，你會看到用這個餡料保持軟心去用，盡可能弄好後，就會立即放入擠袋，然後擠入塔殼，同時一起放進去，接著我為大家示範這款黑芝麻塔的第三步驟。</p></a>
+				<a href="#00:03:43.49" id="00:03:43.49" class="lt" onclick="jumptoTime(223, this.id)"><p>就是忌廉芝士的餡料，首先將蛋白和砂糖倒進去，這裡會用中速將它完全打起，蛋白已經打好了，接著就要煮餡料，現在就要煮一個忌廉芝士的餡料，首先用冰水浸泡魚膠片約十分鐘，預先將忌廉芝士拿出來攤軟，然後將蛋黃和砂糖攪拌均勻，接著就將蛋黃和砂糖攪拌均勻，暫時未開火，我們先攪拌均勻，加入牛奶。</p></a>
+				<a href="#00:04:28.52" id="00:04:28.52" class="lt" onclick="jumptoTime(268, this.id)"><p>然後就可以開火，大概用中火將它煮至沸騰，沸騰的意思是在泡沫中一直沸騰，現在沸騰了，沸騰後你會看到很快變成一個小壺的狀態，黏著法，然後我們要關火，將忌廉芝士放進去，魚膠片放進去，用少許力將忌廉芝士盡可能攪至少一點粒粒，好，這個我放在這裡，蛋包了，開始要用高速將它打起，時間大概打一至兩分鐘左右，視乎你的座台式攪拌機的速度。</p></a>
+				<a href="#00:05:14.76" id="00:05:14.76" class="lt" onclick="jumptoTime(314, this.id)"><p>你會看到它會黏著勾的，黏著法的蛋頭，這個就是我們需要的狀態，然後這邊還是熱的，冒煙了，我們就要將它轉到一個微波爐，留意溫度，芝士餡必須要熱，蛋白亦在冷的情況下，這個溫度是最好的，魚膠就不會容易凝結，將蛋白放進去，蛋白會分開兩次攪拌，第一次用膠杖來攪拌，純粹是攪拌均勻，第二次用法來攪拌，手勢來說轉著鍋，轉著法。</p></a>
+				<a href="#00:06:3.36" id="00:06:3.36" class="lt" onclick="jumptoTime(363, this.id)"><p>OK，完成</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:7.36" id="00:06:7.36" class="lt" onclick="jumptoTime(367, this.id)"><p>然後這個就可以放進擠袋裡，準備將它組合，接著為大家示範芝士撻的最後步驟，將所有東西組合，撻皮我們已經從冰箱取出，牛油紙，兩邊都要撕開，才可以將紙離開，然後將它放進冰箱，撕開它，才可以將紙離開，今天我用了一個錫紙殼，很簡單，一定可以買到，大小等同錫紙殼一樣大，很方便，最重要是平均，一開始，按進去手指的底部。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:10.10" id="00:07:10.10" class="lt" onclick="jumptoTime(430, this.id)"><p>然後由內至外，全程先用手指，這樣做已經做好了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:40.79" id="00:07:40.79" class="lt" onclick="jumptoTime(460, this.id)"><p>中文字幕 by 沛隊字幕組。</p></a>
+				<a href="#00:08:10.79" id="00:08:10.79" class="lt" onclick="jumptoTime(490, this.id)"><p>喜歡本影片的請訂閱魔人SAVI的頻道及按旁邊那個鈴鐺。</p></a>
+</div>
+	</body>
+</html>

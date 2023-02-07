@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>荔枝玫瑰慕斯蛋糕 | Jeffery Koo | 阿古</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CtnVk3fv1wc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>荔枝玫瑰慕斯蛋糕 | Jeffery Koo | 阿古</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.71" id="00:00:3.71" class="lt" onclick="jumptoTime(3, this.id)"><p>Hello!各位BigBigChef的朋友，今次我為大家示範這款荔枝玫瑰蛋糕，先將荔枝玫瑰果蓉倒入煲內，亦有急凍橙皮及檸檬皮，然後將果膠粉和砂糖拌勻，拌勻後放入煲內，未開火前將它們攪勻，開大火煲至大滾為止，煲至大滾後熄火，熄火後倒入預先準備的保鮮紙及梯盤，將另一張保鮮紙蓋在上面，確保這些氣泡都要消失。</p></a>
+				<a href="#00:01:0.17" id="00:01:0.17" class="lt" onclick="jumptoTime(60, this.id)"><p>然後放入雪櫃冷藏，接著為你示範的是雲呢拿玫瑰果慕斯，先將忌廉倒入煲內，牛奶亦放入煲內，然後將玫瑰花倒入煲內，煲至沸騰後將玫瑰花隔走，煲至沸騰後將玫瑰花隔走，將玫瑰花牛奶煮沸後倒入隔篩中，隔掉牛奶忌廉，精華都逼出來了，之後就將蛋黃、砂糖、奶粉，攪拌均勻，攪拌均勻後，我又開火煮，煮到大滾為止，不斷攪動。</p></a>
+				<a href="#00:02:0.75" id="00:02:0.75" class="lt" onclick="jumptoTime(120, this.id)"><p>有很多泡泡在表面，你會見到現在滾起了，有泡了，我們關火，將浸軟的魚膠片放入，攪拌均勻，確保魚膠片已經在熱的鍋裡融化，然後我會倒入正在冰水的不鏽鋼盆中，記住一定要確保魚膠片已經融化，如果我們還未融化，而倒入不鏽鋼盆的話，就不能回頭，而用的器皿，為什麼要用不鏽鋼盆呢?</p></a>
+				<a href="#00:02:31.75" id="00:02:31.75" class="lt" onclick="jumptoTime(151, this.id)"><p>因為容易一點，快點凍，可以很快地將玫瑰慕絲，打至35度的溫度，一直打的過程中，都要攪拌，準備好了，這塊，之後將玫瑰醬也倒入，然後攪拌均勻，攪拌完之後，亦將打起的忌廉，再放進去，手法來說，一隻手轉著不鏽鋼盆，一隻手扭著花，鍋邊要確保全部均勻，這個慕絲已經做好了，我可以放模，我準備了一個玫瑰花的矽膠模。</p></a>
+				<a href="#00:03:17.75" id="00:03:17.75" class="lt" onclick="jumptoTime(197, this.id)"><p>你會看到，我會將慕絲放進去，很多時候我們做慕絲都會比較流質，為什麼呢?因為最重要我們用的矽膠模，比較多線條，好像這次的玫瑰花模，我們放了慕絲之後，就要這樣搖一搖，確保模的四周都包住了第一層，好像這樣，之後我們把這個放進冰箱，大概冷藏兩至三分鐘左右，我們可以把餡料和蛋糕慢慢再組合進去，在冰櫃拿出來後。</p></a>
+				<a href="#00:03:55.95" id="00:03:55.95" class="lt" onclick="jumptoTime(235, this.id)"><p>扁頭已經凝結了，我把荔枝餡放進擠袋裡，我會擠一些荔枝餡在第一層裡面，之後我們就放小片的蛋糕進去，然後我們再擠多一層荔枝餡，確保這個在蛋糕的上面，然後就把荔枝慕絲也放進擠袋裡，我們就擠滿它，最後我們把蛋糕也放進去，不用到太高，我們把蛋糕也放上去，我們把這款荔枝玫瑰蛋糕，放進冰箱裡。</p></a>
+				<a href="#00:04:38.03" id="00:04:38.03" class="lt" onclick="jumptoTime(278, this.id)"><p>記住是負18度，大概冷藏五個小時，之後就可以脫模和噴色的效果，接著我準備了一張膠片，還有一些調校溫度的黑巧克力，把黑巧克力倒進膠片裡，然後把它找出來，先把它包住蛋糕，然後就把它放進噴箱裡，噴紅色的效果，最重要的是，趁它還冷，才可以噴到湧面的效果，現在我就會噴蛋糕了，我準備了紅色的可可油，還有噴槍。</p></a>
+				<a href="#00:05:20.55" id="00:05:20.55" class="lt" onclick="jumptoTime(320, this.id)"><p>冰凍的蛋糕，噴在表面，噴在表面的時候就會有湧面的效果，也會有很大的霧，一會兒大家就可以看到，現在開始了，這些是紅色的可可油，為什麼會噴到這麼鮮艷的顏色呢?</p></a>
+				<a href="#00:05:44.07" id="00:05:44.07" class="lt" onclick="jumptoTime(344, this.id)"><p>最重要的是蛋糕夠冷，只要蛋糕夠冷的話，就可以噴到這麼鮮艷的顏色，噴完紅色之後，我準備了一點點金色的效果，點綴，大功告成。</p></a>
+</div>
+	</body>
+</html>
