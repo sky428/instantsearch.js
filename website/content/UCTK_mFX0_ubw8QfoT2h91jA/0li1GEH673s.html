@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金玉滿堂魚柳 | 楊國基 Billy Yeung</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0li1GEH673s',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>金玉滿堂魚柳 | 楊國基 Billy Yeung</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>字幕由Amara.org社区提供，恭喜發財， 各位Big Big Surf的好友，我是Billy， 新年了，今天特意做一個炸魚薯條，預先換上金銀滿屋，一條一條炸出來， 像一條金條，材料有沙律醬、桂花蜜糖、芥末，用來做醬，醃料的部分有麵粉、雞蛋和麵包糠，我做的時候大家留意一下，因為麵包糠裏面我特意做了一些特別調味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:46.39" id="00:00:46.39" class="lt" onclick="jumptoTime(46, this.id)"><p>首先將沙律醬拌入去，然後用桂花蜜和芥末醬，很簡單地將醬拌勻，顏色會有淡黃色，因為是過年，顏色會很漂亮，拌勻後就可以放一旁，首先要處理魚，我會加少許糖和鹽，我們不需要加太多，因為待會在麵包糠裏面會加少許調味料，醃一會兒，然後我們要做一個麵包糠比較特別，我用麵包糠加一些七味粉，我會加少許辣椒粉。</p></a>
+				<a href="#00:01:35.39" id="00:01:35.39" class="lt" onclick="jumptoTime(95, this.id)"><p>整個魚吃的時候，又不怕有腥味和比較有趣，我們拌勻，為甚麼我會在麵包糠裏面做少許手腳，因為我加了辣椒粉和七味粉，醃魚的時候，在魚的表面會有一些香味和辣味，我會令整條魚炸出來的顏色和味道比較特別，我們拌勻後，我們要將麵粉放在魚條裏面，醃得均勻一點， 待會黏在麵包糠裏面會黏得好一點，然後我們就上蛋漿。</p></a>
+				<a href="#00:02:23.39" id="00:02:23.39" class="lt" onclick="jumptoTime(143, this.id)"><p>一定要上得均勻一點， 因為要吸收所有蛋漿，我們就將它上麵包糠，其實大家現在都可以看到，每一條麵包糠裏面，它有些調味料、七味粉和辣椒粉黏在上面，你吃的時候整個感覺就不同了，咁我哋呢揀好咗啲魚之後呢我哋可以開始炸啦，咁我通常呢我放落去嘅時候呢我會用中火油啦，當佢炸到差唔多有色嘅時候呢咁我就會開返大火，咁點解要開返大火呢。</p></a>
+				<a href="#00:03:1.36" id="00:03:1.36" class="lt" onclick="jumptoTime(181, this.id)"><p>最主要呢就係我哋要谷返啲油出嚟，如果你一路係慢火嘅話呢啲油會滲曬落個麵包糠同埋啲魚度呢，變咗食落去呢就唔好食㗎，好啦而家啲魚呢差唔多都有七八成熟啦，咁我哋要開始呢開返大個火谷返曬啲油出嚟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.90" id="00:03:17.90" class="lt" onclick="jumptoTime(197, this.id)"><p>слишком Hal Parte，השcesso，sweaty，Inst Guitar，IQ，mol，litres，Charles，LouITT，conducted，mí，Cinsusp，숨，fij memorable，ğ，金黃色的時候就可以拿起，可以上碟了，因為過年炸到金黃色，就好像一條條金條。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:43.31" id="00:03:43.31" class="lt" onclick="jumptoTime(223, this.id)"><p>再加上桂花蜜糖醬</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:13.31" id="00:04:13.31" class="lt" onclick="jumptoTime(253, this.id)"><p>香酥皮，炸到金黃色，就像一條條金條，再加上桂花蜜糖醬。</p></a>
+</div>
+	</body>
+</html>

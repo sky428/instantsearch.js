@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酸菜魚｜玻璃朱｜Bonnie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lM2m3bBi9mU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>酸菜魚｜玻璃朱｜Bonnie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:3.16" id="00:00:3.16" class="lt" onclick="jumptoTime(3, this.id)"><p>我平時去春吃四川菜麻辣魚一定要點，而且在家做是非常簡單，就是這個酸菜魚，我自己會用龍脷柳，因為它夠大件，肉又厚，其實你自己可以用桂花魚起片，或者石斑也可以，平時正宗有泡酸菜和泡薑，其實我們買些醃酸菜也可以，但我們就要放重一點的白醋，而泡薑如果找不到的話，我們可以用普通薑來代替，這個菜一定要有野生椒。</p></a>
+				<a href="#00:00:56.07" id="00:00:56.07" class="lt" onclick="jumptoTime(56, this.id)"><p>很多雜貨舖都有賣，它是一個罐，用來浸泡油，醃魚的調味料有，生粉、鹽、油、紹酒、糖，最重要是吃四川菜，很多時候無論醃牛肉、醃魚，我們都一定要放蛋白，蛋白會令它更滑和入味，做湯底的，我們有雞湯和水就可以了，如果用龍脷，我們先把它切塊，我們可以先把它切半，我們有些蛋白，首先要把它攪拌均勻，盡量要攪拌到起泡。</p></a>
+				<a href="#00:01:36.51" id="00:01:36.51" class="lt" onclick="jumptoTime(96, this.id)"><p>比較有形狀，這樣就會容易入到魚裡面，OK，我們把它拌入魚裡面，然後我們放少許紹酒、鹽、糖，糖其實放多一點也不要緊，因為辣的東西，甜和辣是很配合的，最後我們放油，其實正宗四川菜，是放很多很多油去醃的，因為油會令它很滑，無論牛肉、魚，如果你在家想吃得健康一點，不想放那麼多油，這樣也可以的。</p></a>
+				<a href="#00:02:9.75" id="00:02:9.75" class="lt" onclick="jumptoTime(129, this.id)"><p>悉隨尊便，醃了的魚我們先放一旁，其實最好可以醃15分鐘以上，在醃魚15分鐘的時候，我們首先把配料切掉，野生椒我們通常就，我通常煮一個菜就大約8粒，如果你真的吃得很辣，就10粒或者12粒，甚至更多也可以的，我們野生椒就把它斜切一開二，這樣就可以了，泡酸菜也是切成一塊塊，白胡椒粒最好先硬碎， 會更出味。</p></a>
+				<a href="#00:02:56.43" id="00:02:56.43" class="lt" onclick="jumptoTime(176, this.id)"><p>魚醃得差不多， 最後加生粉，生粉厚一點較好，因為可以醃入味道後， 封住肉汁，醃多一會後就可以開始煮，首先燒熱鍋和油，油熱後， 加入爆薑和蒜頭，炒香，然後加入野生椒，炒辣椒時會較辣， 會供鼻，所以大家小心點，對了， 咳嗽時可以加爆酸菜，再炒一炒，酸菜魚本身帶重酸味，萬一買的酸菜不夠酸，可以用白醋調節酸度。</p></a>
+				<a href="#00:03:55.43" id="00:03:55.43" class="lt" onclick="jumptoTime(235, this.id)"><p>開大火，燒熄雞肚，加水，大約1.2公升，加入剛才煮的白胡椒粒，我現在也加了醋，可能我現在先加1至2茶匙，如果不夠酸可以再加，蓋上蓋子， 大約中火煮10至15分鐘，煮至出味後， 加入魚，之前也有拌過魚，因為魚較厚， 要煮2分鐘才熟，表面有很多泡泡，不要緊， 稍後可以撇去，魚煮熟和撇去後， 關火。</p></a>
+				<a href="#00:04:53.43" id="00:04:53.43" class="lt" onclick="jumptoTime(293, this.id)"><p>最後加入蔥，就可以上菜了。</p></a>
+</div>
+	</body>
+</html>

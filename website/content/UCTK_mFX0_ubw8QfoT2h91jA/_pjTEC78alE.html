@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>醃馬友｜一夜魚情｜Jacky Yu 余健志</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_pjTEC78alE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>醃馬友｜一夜魚情｜Jacky Yu 余健志</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:2.81" id="00:00:2.81" class="lt" onclick="jumptoTime(2, this.id)"><p>大家好，我是JK Yu，我很喜歡烹飪，我很喜歡將不同地方的食材、味道和烹飪方法融合在一起，成為我的特色和風格，大家好，今天非常開心，可以找到我們的家族隊廚神，我們的開心女主人和表妹，真是表妹，Maggie，今天跟我們分享她的拿手菜，今天有什麼要跟大家分享呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:44.15" id="00:00:44.15" class="lt" onclick="jumptoTime(44, this.id)"><p>今天這個是一夜如情，我們通常用一條中尺寸的馬友</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:00:52.15" id="00:00:52.15" class="lt" onclick="jumptoTime(52, this.id)"><p>我看到這個菜在日本和台灣很盛行，用什麼魚有什麼選擇和講究呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:1.15" id="00:01:1.15" class="lt" onclick="jumptoTime(61, this.id)"><p>我為什麼選馬友呢?</p></a>
+				<a href="#00:01:3.35" id="00:01:3.35" class="lt" onclick="jumptoTime(63, this.id)"><p>因為它油分比較多，燒起來會比較香</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:9.15" id="00:01:9.15" class="lt" onclick="jumptoTime(69, this.id)"><p>除了馬友，我想做這個菜還有什麼魚可以選擇?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:12.55" id="00:01:12.55" class="lt" onclick="jumptoTime(72, this.id)"><p>還有青魚也可以，青魚也夠油分，青魚肉會比較結實，馬友肉會比較細，材料很簡單，一茶匙的清酒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:25.95" id="00:01:25.95" class="lt" onclick="jumptoTime(85, this.id)"><p>日本清酒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:28.35" id="00:01:28.35" class="lt" onclick="jumptoTime(88, this.id)"><p>還有一茶匙的味醂，今天帶了柚子味的七味粉，味道很配合，如果家裡沒有七味粉可以怎樣做呢?</p></a>
+				<a href="#00:01:40.55" id="00:01:40.55" class="lt" onclick="jumptoTime(100, this.id)"><p>胡椒粉也可以，首先把三種材料混合，再說一件事，就是魚，馬友油分比較高，但比較腥，清潔的時候</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:01:54.95" id="00:01:54.95" class="lt" onclick="jumptoTime(114, this.id)"><p>血污和血絲一定要清洗</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:57.75" id="00:01:57.75" class="lt" onclick="jumptoTime(117, this.id)"><p>醃完一小時後再翻炒，務求均勻入味，最後才把七味粉撒在上面，通常是醃一天一夜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:13.75" id="00:02:13.75" class="lt" onclick="jumptoTime(133, this.id)"><p>所以叫一夜情</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:16.35" id="00:02:16.35" class="lt" onclick="jumptoTime(136, this.id)"><p>要說一件事，就是不要空腹</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:19.75" id="00:02:19.75" class="lt" onclick="jumptoTime(139, this.id)"><p>要把魚吹乾</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:21.75" id="00:02:21.75" class="lt" onclick="jumptoTime(141, this.id)"><p>燒的時候會比較脆</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:02:25.55" id="00:02:25.55" class="lt" onclick="jumptoTime(145, this.id)"><p>經過一日一夜之後，就變成這個狀態</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:29.35" id="00:02:29.35" class="lt" onclick="jumptoTime(149, this.id)"><p>對，乾身了很多，不算快，然後我們就準備入爐，高溫度220度，10分鐘，再調180度，焗至金黃就可以了，我家裡沒有焗爐，我用發熱器，蒸也可以，不過要注意，煎會比較容易焦，焗爐是最好的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:8.47" id="00:03:8.47" class="lt" onclick="jumptoTime(188, this.id)"><p>哇，新鲜意大利麦芽，哇，先把鱼切出来</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:14.47" id="00:03:14.47" class="lt" onclick="jumptoTime(194, this.id)"><p>对，这个配酒是一流的</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:03:17.47" id="00:03:17.47" class="lt" onclick="jumptoTime(197, this.id)"><p>那今天这个一夜的旅程就完成了，真是色香味，不俱全</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:22.47" id="00:03:22.47" class="lt" onclick="jumptoTime(202, this.id)"><p>大家记得上来吃啊。</p></a>
+</div>
+	</body>
+</html>
