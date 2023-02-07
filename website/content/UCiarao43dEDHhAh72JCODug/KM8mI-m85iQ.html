@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[芋頭煎餅]簡單超易做，比傳統芋頭糕還好食…</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KM8mI-m85iQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[芋頭煎餅]簡單超易做，比傳統芋頭糕還好食…</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好呀，歡迎你哋嚟到我嘅youtube頻道，今日同大家分享一個，芋頭煎餅，好好味㗎，材料非常之簡單，而家睇下我哋嘅做法啦，糯米有250克，芋頭去咗皮都係250克，兩樣材料我係用咗同等量嘅，簡單單單，呢個大嘅芋頭就唔用啦，留喺下次用，先將糯米洗淨，用水浸泡半小時以上，芋頭切成小塊，糯米和芋頭準備好了。</p></a>
+				<a href="#00:01:12.89" id="00:01:12.89" class="lt" onclick="jumptoTime(72, this.id)"><p>取出電飯煲，用電飯煲煮飯的模式，將浸泡半小時的糯米和芋頭放入電飯煲，芋頭糯米飯我需要煮軟一點，水比平時煮飯多一點，將糯米和芋頭飯搓成粉團，現在放生油一湯匙，鹽一茶匙，就是兩樣東西開始煮飯了，很快就煮好飯了，開蓋就聞到很香的芋頭味，糯米芋頭飯煮得很黏很靚，用一個大隻的碗盛起來，方便一會用麵棍壓麵團。</p></a>
+				<a href="#00:02:22.89" id="00:02:22.89" class="lt" onclick="jumptoTime(142, this.id)"><p>喜歡吃到有芋頭的口感，用飯匙攪到它黏黏的就可以煎了，做的時候手要沾濕水就不黏手了，我喜歡吃到有軟糯的口感，所以用麵棍將它弄成米糊，好了現在差不多了，為怕黏手我用了一些乾的糯米粉，搓成粉團，很容易就搓成粉田了，我為了方便用剪刀，剪成細件，很簡單的，搓圓按扁就可以煎了，比傳統的芋頭糕好吃得多了，口感煙韌。</p></a>
+				<a href="#00:03:29.14" id="00:03:29.14" class="lt" onclick="jumptoTime(209, this.id)"><p>香菜，看看是不是很容易做呢，簡簡單單，和小朋友一起做，也很好玩的，我現在放上少許芝麻，煎好之後會吃到芝麻的香味，現在就開始煎了，熱鑼鑼叫，用小火慢慢煎，因為剛才加了少許生的乾粉，所以現在要加少許水，蓋上鍋蓋慢火煎，以熟透反轉另外一些煎，煎至兩邊金黃色即可，真係好香呀，而家煎好完成，我們可以上碟啦。</p></a>
+				<a href="#00:05:48.92" id="00:05:48.92" class="lt" onclick="jumptoTime(348, this.id)"><p>今次分享到此，喜歡我的視頻請點贊，訂閱及開啟小鈴鐺，多謝您的觀看，下次見，再見。</p></a>
+</div>
+	</body>
+</html>
