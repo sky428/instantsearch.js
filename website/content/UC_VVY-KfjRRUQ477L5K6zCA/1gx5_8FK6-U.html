@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【情人節系列】 煎肉眼扒伴蘆筍（配黑松露薯蓉）</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '1gx5_8FK6-U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【情人節系列】 煎肉眼扒伴蘆筍（配黑松露薯蓉）</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:19.74" id="00:00:19.74" class="lt" onclick="jumptoTime(19, this.id)"><p>接著會做美國CAB的肉眼，薯菜會用黑菌的薯蓉和白蘆筍做，首先因為薯蓉需要最多時間，可能要30分鐘，我現在先做薯蓉配菜，普通馬鈴薯去皮，切成小粒，但不需要很漂亮，因為也是整容，只不過不要切太大，否則受熱程度不一樣，會有些硬有些軟，準備一鍋水，加少許鹽和底味，然後把薯仔倒進去煮大約20分鐘，等它煮開後調中慢火。</p></a>
+				<a href="#00:01:12.74" id="00:01:12.74" class="lt" onclick="jumptoTime(72, this.id)"><p>慢慢煮就可以了，煮20分鐘後</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:15.74" id="00:01:15.74" class="lt" onclick="jumptoTime(75, this.id)"><p>用筷子或籤筋刺開，很輕易的刺過去，其實已經可以了，用刀割掉，再用水，用叉子削掉，做成薯蓉</p></a>
+				<a href="#00:01:33.74" id="00:01:33.74" class="lt" onclick="jumptoTime(93, this.id)"><p>煮到牛油溶化和牛奶混合就可以了，這個薯蓉調味料，我會加少許鹽</p></a>
+				<a href="#00:01:47.74" id="00:01:47.74" class="lt" onclick="jumptoTime(107, this.id)"><p>最後用意大利黑菌醬做薯蓉，試味吧，自己喜歡味道就加多少</p></a>
+				<a href="#00:02:0.74" id="00:02:0.74" class="lt" onclick="jumptoTime(120, this.id)"><p>我會加大約半匙，這樣就夠了，白露絲已經煮好了，現在可以開始煮了，煮到一半就夠了，買了白露絲，刨掉表面的皮，這樣就可以了，把最底部的少許筋切走，因為這些會比較硬，這個位置就不要了，這些全部放下去就可以了，預備一個鍋，加少許雞湯，大概加20克牛油，加少許鹽，煮白露筍，煮5分鐘左右，這樣就可以了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:57.51" id="00:02:57.51" class="lt" onclick="jumptoTime(177, this.id)"><p>現在煮美國CAB的肉眼，基本上什麼都不用，拆開袋子，用少許廚房紙，輕輕地吸乾血水就可以了，不需要洗它，什麼都不用做，輕輕調味，8安士，大概加一些海鹽，胡椒，將爐預熱，一直保持中大火，放牛扒，大概煎半小時，就差不多了，放少許蒜頭，再香一點就放少許牛油，如果它捲起的部分，只用湯匙或鑊鏟壓一下，都是色滾紋。</p></a>
+				<a href="#00:03:55.51" id="00:03:55.51" class="lt" onclick="jumptoTime(235, this.id)"><p>翻轉它，這邊也是煎半小時。</p></a>
+</div>
+	</body>
+</html>

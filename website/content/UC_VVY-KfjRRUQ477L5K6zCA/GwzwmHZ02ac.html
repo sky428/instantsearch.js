@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【OrioleCuisine系列🍽️】糖煮蘋果配黑毛豬扒🍎🐷</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'GwzwmHZ02ac',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【OrioleCuisine系列🍽️】糖煮蘋果配黑毛豬扒🍎🐷</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>【OrioleCuisine系列】，【OrioleCuisine系列】，現在會煮糖煮蘋果配黑毛豬扒，我首先…上面還有煙肉碎，我先煮煙肉碎，放牛油紙，然後放到盤子上，160度焗20分鐘，其實用甚麼蘋果都沒所謂，視乎你自己的甜度，這個蘋果味道比較重，如果你想吃甜一點，可能用日本富士蘋果都可以。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:6.27" id="00:01:6.27" class="lt" onclick="jumptoTime(66, this.id)"><p>用中小火，先放糖，先把糖煮到金黃色，這個時候要小心，因為糖很高溫，一彈到就會很痛，有少許金黃色，就放蘋果，然後再炒一炒，然後加入牛油，加少少鹽，因為始終都唔係甜品，我地將豬扒，同埋蝦椒碎，咁大概煮佢，中火煮佢五分鐘，等啲蘋果軟就ok，皮放涼，等油出油前煎豬皮，煎到皮金黃色，煎兩邊，每邊煎約3分鐘。</p></a>
+				<a href="#00:02:46.43" id="00:02:46.43" class="lt" onclick="jumptoTime(166, this.id)"><p>如果有焗爐就可以用焗爐，沒有焗爐就煎三分鐘左右，煮完之後會加多點蘋果醋，煮熱就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:27.95" id="00:03:27.95" class="lt" onclick="jumptoTime(207, this.id)"><p>由 Amara.org 社群提供的字幕。</p></a>
+</div>
+	</body>
+</html>
