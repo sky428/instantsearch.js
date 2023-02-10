@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮洋蔥豬扒 How To Cook Onion Pork Chop</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'a5cTeu9QSBU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮洋蔥豬扒 How To Cook Onion Pork Chop</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>洋蔥豬扒，今次同大家整一個辣辣地嘅蕃茄汁洋蔥豬扒，材料好簡單， 只要一條無骨豬扒和兩條洋蔥就得啦!</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>豬扒處理好簡單， 洗乾淨， 用抹手指抹乾， 就可以開始煮啦!</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>豬扒切成1cm厚， 用插肉針插入豬扒， 用叉子插入豬扒，醃豬扒用1隻雞蛋， 2匙豉油， 1匙蠔油， 1匙紅辣椒粉， 1匙糖，半匙梳打粉， 2湯匙麵粉， 1湯匙生粉，攪拌均勻， 如果太稠可以加少少水， 攪拌至很稀的漿糊狀，豬扒放入醃料， 攪拌至均勻， 豬扒汁都黏滿豬扒，放入2匙油， 拌勻。</p></a>
+				<a href="#00:02:22.22" id="00:02:22.22" class="lt" onclick="jumptoTime(142, this.id)"><p>放一旁， 醃15分鐘至半小時，洋蔥切片， 切條，分開醃料， 待炸時較方便，醬汁1匙辣椒醬， 3匙茄醬，醃料酸酸甜甜的， 加入1匙澱汁，1匙陳醋， 1匙糖，1匙紹興酒，拌勻，放入煮食油，豬扒放入煮食油，豬扒放入煮食油後， 豬扒不要動，煎至邊邊開始脆， 反轉，邊邊開始脆， 反轉，邊邊開始脆， 反轉。</p></a>
+				<a href="#00:03:40.22" id="00:03:40.22" class="lt" onclick="jumptoTime(220, this.id)"><p>煮食油熟透後， 用筷子戳穿，煮食油熟透後， 拿上來，煮食油熟透後， 拿上來，煮食油熟透後， 拿上來，煮食油熟透後， 拿上來，煎至金黃色，放少許油， 爆香洋蔥，洋蔥爆至五成熟， 半生熟後， 加入海鹽，放入海鹽後， 洋蔥會有香味，放入煮食油熟透的醬汁，完成了!</p></a>
+				<a href="#00:04:32.14" id="00:04:32.14" class="lt" onclick="jumptoTime(272, this.id)"><p>如果覺得太稠可以加一點水，這次我的豬扒比較多，如果這樣的醬汁，我約是4-5塊的豬扒，因為這次我10塊的豬扒，我多放一碗調味醬汁，這樣醬汁就會多一點，我們把豬扒放進去，拌勻就可以了，醬汁可以附在肉上面，看多漂亮，我們加一點芝麻，這個菜很香，用來配飯或啤酒，真的沒得彈，有興趣的大家都來煮一下吧，想知我下次煮什麼?</p></a>
+				<a href="#00:05:20.14" id="00:05:20.14" class="lt" onclick="jumptoTime(320, this.id)"><p>快點訂閱我的頻道吧，記得跟朋友分享喔!</p></a>
+</div>
+	</body>
+</html>

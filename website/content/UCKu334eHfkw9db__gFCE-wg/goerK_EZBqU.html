@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>芝士火鍋 Cheese Fondue - 你一定喜歡! You must like it!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'goerK_EZBqU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>芝士火鍋 Cheese Fondue - 你一定喜歡! You must like it!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>今日收到份禮物，係用嚟整芝士火鍋嘅，我哋開嚟睇下先。</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>開咗就有說明書，有一個蠻靚嘅蠟燭座，有一個木座，有一個雅的鍋，有一個雅的鍋，有一個雅的鍋，有一個雅的鍋，買了一些牛仔肉條，洗淨後切粒，這隻很軟，切粒，切粒，加入海鹽，拌勻，黑胡椒，拌勻，因為芝士火鍋，所以不想放生食物，先煎牛仔粒，先煎牛仔粒，先在鍋子燒紅，再放少許油，兩邊煎香，就這樣煎。</p></a>
+				<a href="#00:02:56.43" id="00:02:56.43" class="lt" onclick="jumptoTime(176, this.id)"><p>兩邊都要煎到金黃色，這樣就可以了，黑毛豬不用放油，因為黑毛豬比較肥，所以我們就這樣放，煎熟就可以了，煎熟就可以了，煎完之後，油就不要了，拿黑毛豬片上來，煮開水，放雞粉，把蝦洗乾淨，把蝦煮熟，把帶子也煮熟，帶子很厚，我把帶子切成兩片，煮開水，放雞粉，少許油，現在可以煮西蘭花，我之前用豆粉水和醋浸洗乾淨，然後煮熟。</p></a>
+				<a href="#00:04:28.43" id="00:04:28.43" class="lt" onclick="jumptoTime(268, this.id)"><p>開始煮芝士醬，check Kl 2023vious будем，toolbar，牛油溶化後 加入2匙麵粉，普通做蛋糕的麵粉，煮勻後 豆粉溶化後加入一杯奶，切粒後加入芝士，再加入奶，再加入白色芝士，用小火慢慢煮溶，煮好後 顏色很漂亮，兩種芝士加在一起的顏色就這樣漂亮，準備好所有材料了。</p></a>
+				<a href="#00:05:35.28" id="00:05:35.28" class="lt" onclick="jumptoTime(335, this.id)"><p>我們可以開餐了，先試牛柳粒，嘩 超正，我先吃，嘩 每個人都爭著吃牛柳粒，其實芝士火鍋選擇的材料很隨意，不過要記住 如果要吃肉的話，一定要預先煮熟，其實這個鍋除了做芝士外，還可以做巧克力，下次做巧克力給你們看吧，拜拜，想知我下次煮什麼，快點訂閱我的頻道吧，記得分享給朋友觀看哦。</p></a>
+</div>
+	</body>
+</html>
