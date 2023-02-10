@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何做流心朱古力多士 How to make Chocolate Molten Lava Toast - 心太軟</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'SCXAhtVZuPo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何做流心朱古力多士 How to make Chocolate Molten Lava Toast - 心太軟</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸，阿King同你諗掂佢!</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>流心朱古力多士，我哋嘅材料係有方包，四隻雞蛋，牛油同埋朱古力粒，首先將麵包切成片，然後塗牛油，再塗朱古力，再塗朱古力，麵包好邪惡，食完要做運動，再塗牛油，再塗朱古力，再塗朱古力，因為塗了少少朱古力，所以可以黏住朱古力粒，再塗朱古力，再塗朱古力，當然你鍾意可以放四粒都得嘅!</p></a>
+				<a href="#00:01:42.98" id="00:01:42.98" class="lt" onclick="jumptoTime(102, this.id)"><p>或者你喺超級市場買一排排嗰啲巧克力呢，然後撕兩粒或者撕四粒放落去都可以，跟住我哋呢，個麵包擺咗，落去之後我哋就用嗰個，撳撳咗佢先，撳咗四邊佢，咁呢佢於是呢佢就可以埋咗個口，跟住呢我哋揀咗四邊啲蛋漿封咗個口先，然後成塊麵包就拎落去浸，而家揀滿咗嗰個蛋漿啦，油滾啦，我哋揾啲啲蛋落去試試，見到佢油滾啦我哋可以放嗰多士落去煎㗎啦。</p></a>
+				<a href="#00:02:31.14" id="00:02:31.14" class="lt" onclick="jumptoTime(151, this.id)"><p>唔好心急慢慢煎，因為我哋慢慢煎呢先至可以呢溶咗佢中間嘅朱古力嘅，如果唔係呢好大火一放落去呢咁嗰個多士就會窿㗎啦，煎完兩邊之後呢我哋就要四邊呢都同佢煎一煎，煎一煎，封曬四邊啦，跟住我哋拎上嚟呢咁樣就可以吸啲油啦，咁就可以上碟㗎啦，如果你鍾意嘅話呢我哋仲可以呢就係，加啲糖霜係面嘅你望下幾靚。</p></a>
+				<a href="#00:03:32.56" id="00:03:32.56" class="lt" onclick="jumptoTime(212, this.id)"><p>一咬落去啲朱古力就流出嚟啦想知我下次煮啲咩。</p></a>
+				<a href="#00:03:38.20" id="00:03:38.20" class="lt" onclick="jumptoTime(218, this.id)"><p>快啲訂閱我嘅頻道啦記住同你嘅朋友分享呀。</p></a>
+</div>
+	</body>
+</html>

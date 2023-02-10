@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何做芝士火腿批(馅饼) How to make Cheese Ham Pie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'C7-pJHhR40E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何做芝士火腿批(馅饼) How to make Cheese Ham Pie</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>芝士火腿批，材料非常簡單，有酥皮，芝士，火腿，蒜蓉，牛油，一隻雞蛋黃，今日冇買早餐，想整定一啲早餐。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>買咗啲酥皮，唔使自己搓粉，啲酥皮好容易買，係超級市場有得買，都有幾隻牌子，你哋可以揀你自己鍾意，有啲加咗牛油，有啲冇牛油。</p></a>
+				<a href="#00:00:58.00" id="00:00:58.00" class="lt" onclick="jumptoTime(58, this.id)"><p>咁樣一塊，咁呢個酥皮冇味，我哋就加啲蒜蓉牛油落去。</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>你想知蒜蓉牛油點整，可以睇返我嘅頻道，我哋就將火腿鋪上去，呢一塊酥皮可以做四個，跟住我哋就鋪芝士上去，芝士一會兒溶埋火腿，一齊就好味嘅。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>咁我哋就鋪佢上去，咁就將另外一塊嘅酥皮放上去，好喇，撳下佢。</p></a>
+				<a href="#00:02:4.00" id="00:02:4.00" class="lt" onclick="jumptoTime(124, this.id)"><p>咁我哋反轉除埋佢後面嗰塊膠先，撳實啲。</p></a>
+				<a href="#00:02:20.00" id="00:02:20.00" class="lt" onclick="jumptoTime(140, this.id)"><p>跟住我哋就可以將佢切開四個，呢度係四份嚟嘅。</p></a>
+				<a href="#00:02:32.00" id="00:02:32.00" class="lt" onclick="jumptoTime(152, this.id)"><p>咁今次我用咗塊好大嘅火腿，咁你哋做嘅時候可以用返啲細啲嘅火腿，容易啲處理。</p></a>
+				<a href="#00:02:47.00" id="00:02:47.00" class="lt" onclick="jumptoTime(167, this.id)"><p>咁我喺上面切幾行，等佢一會兒熱力令到啲芝士溶得好靚啲。</p></a>
+				<a href="#00:02:57.00" id="00:02:57.00" class="lt" onclick="jumptoTime(177, this.id)"><p>邊邊驚佢一會兒焗嘅時候芝士會流出嚟，咁我哋要搵啲叉封咗邊佢，就係咁樣撳撳撳，四邊都封咗邊佢，咁一會兒啲芝士就唔會溶出嚟啦。</p></a>
+				<a href="#00:03:15.00" id="00:03:15.00" class="lt" onclick="jumptoTime(195, this.id)"><p>咁我哋就放上去，跟住就將蛋黃搽上去，你搽咗上去焗完之後啲顏色就會好靚嘅，你唔搽就白蒙蒙㗎啦。</p></a>
+				<a href="#00:03:34.00" id="00:03:34.00" class="lt" onclick="jumptoTime(214, this.id)"><p>咁你就放落去焗，200度焗佢十分鐘。</p></a>
+				<a href="#00:03:42.00" id="00:03:42.00" class="lt" onclick="jumptoTime(222, this.id)"><p>一路焗嘅時候就聞到佢個香味啦，好快就焗完啦。</p></a>
+				<a href="#00:03:52.00" id="00:03:52.00" class="lt" onclick="jumptoTime(232, this.id)"><p>啲芝士溶咗，黐住果啲火腿，上面搽咗啲蛋黃又好彈色又好靚，睇下幾靚!</p></a>
+				<a href="#00:04:1.00" id="00:04:1.00" class="lt" onclick="jumptoTime(241, this.id)"><p>想知我下次煮啲咩?快啲訂閱我嘅頻道啦!</p></a>
+				<a href="#00:04:6.00" id="00:04:6.00" class="lt" onclick="jumptoTime(246, this.id)"><p>記住同你嘅朋友分享喔!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:11.79" id="00:04:11.79" class="lt" onclick="jumptoTime(251, this.id)"><p>字幕由Amara.org社区提供。</p></a>
+</div>
+	</body>
+</html>

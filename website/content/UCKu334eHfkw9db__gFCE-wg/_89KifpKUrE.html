@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>怎樣做心心多士 (巧克力心形多 士) How to make Chocolate Heart-Shape Toast - 超心甜!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_89KifpKUrE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>怎樣做心心多士 (巧克力心形多 士) How to make Chocolate Heart-Shape Toast - 超心甜!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸?</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>阿 King 同你諗點睇!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:4.37" id="00:00:4.37" class="lt" onclick="jumptoTime(4, this.id)"><p>材料有麵包、雞蛋、巧克力醬、糖生，開始做吧!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:12.37" id="00:00:12.37" class="lt" onclick="jumptoTime(12, this.id)"><p>今次我會做一個小朋友喜歡的多士，先找一個心形模具，再把大小的模具放在模具上，然後再把模具放在模具上，再把模具放在模具上，再把麵包壓出來，一塊麵包可以壓出兩個心形，這個多士很適合母親節、情人節、父親節，或是男朋友做給女朋友，或是小朋友自己有空，沒事做一下也很好玩，把心形模具印出來，然後塗巧克力醬。</p></a>
+				<a href="#00:01:9.37" id="00:01:9.37" class="lt" onclick="jumptoTime(69, this.id)"><p>多塗一點，多塗一點才好吃，塗完後像普通麵包一樣夾起來，就這樣塗，塗滿所有心形，然後把雞蛋放進去，把雞蛋沾滿就可以煎了，多沾一點雞蛋，然後就可以放進去煎了，很快的，慢慢地煎</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:16.37" id="00:02:16.37" class="lt" onclick="jumptoTime(136, this.id)"><p>煎完一邊再煎另一邊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:26.37" id="00:02:26.37" class="lt" onclick="jumptoTime(146, this.id)"><p>就可以拿上來，看看多漂亮，一看到多士，生花的心思就會很有趣，待它放涼後，我們就把糖霜放在上面，嘩，很漂亮，現在很想吃，你看，嘩，裡面的巧克力流出來了，想知我下次煮什麼?快點訂閱我的頻道吧!</p></a>
+				<a href="#00:03:28.38" id="00:03:28.38" class="lt" onclick="jumptoTime(208, this.id)"><p>記得與你的朋友分享喔!</p></a>
+</div>
+	</body>
+</html>

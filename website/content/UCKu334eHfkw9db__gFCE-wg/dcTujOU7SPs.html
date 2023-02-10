@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何做開心果薑餅 How To Make Pistachio Gingerbread</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'dcTujOU7SPs',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何做開心果薑餅 How To Make Pistachio Gingerbread</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>開心果薑餅，材料幾多，大家一齊睇下材料先。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>室溫牛油220克，350克普通麵粉，1隻雞蛋，紅糖120克，糖漿80ml，鹽半茶匙，發粉1湯匙，梳打粉1湯匙，雲呢拿精1湯匙，丁香粉半茶匙，玉桂粉1茶匙，薑粉1茶匙。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>今次用個處理機做，好方便。</p></a>
+				<a href="#00:01:0.00" id="00:01:0.00" class="lt" onclick="jumptoTime(60, this.id)"><p>將室溫牛油放入，用中速打鬆牛油，然後將紅糖放入，攪拌至紅糖不見，將糖漿放入。</p></a>
+				<a href="#00:01:28.00" id="00:01:28.00" class="lt" onclick="jumptoTime(88, this.id)"><p>糖漿吸收後，將雞蛋放入，然後將雲呢拿精放入。</p></a>
+				<a href="#00:01:45.00" id="00:01:45.00" class="lt" onclick="jumptoTime(105, this.id)"><p>麵糊準備好，將篩好的麵粉，發粉，梳打粉，鹽，薑粉，玉桂粉，紅糖，丁香粉，香料，攪拌至均勻。</p></a>
+				<a href="#00:02:29.76" id="00:02:29.76" class="lt" onclick="jumptoTime(149, this.id)"><p>用攪拌機慢慢攪拌，直至麵糊和麵粉完全混合。</p></a>
+				<a href="#00:02:45.76" id="00:02:45.76" class="lt" onclick="jumptoTime(165, this.id)"><p>然後放入冰箱冷藏約3小時。</p></a>
+				<a href="#00:02:53.76" id="00:02:53.76" class="lt" onclick="jumptoTime(173, this.id)"><p>然後取出， 將麵糊放入焗盤中， 將其壓成圓形。</p></a>
+				<a href="#00:03:10.76" id="00:03:10.76" class="lt" onclick="jumptoTime(190, this.id)"><p>然後放上一顆開心果， 將其放入預熱的焗爐， 將其放入焗爐， 焗15至20分鐘。</p></a>
+				<a href="#00:03:29.76" id="00:03:29.76" class="lt" onclick="jumptoTime(209, this.id)"><p>然後將其放入冰箱冷藏約1小時。</p></a>
+				<a href="#00:03:43.76" id="00:03:43.76" class="lt" onclick="jumptoTime(223, this.id)"><p>喜歡本影片的朋友， 請訂閱我的頻道， 並且分享給你的朋友。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:13.76" id="00:04:13.76" class="lt" onclick="jumptoTime(253, this.id)"><p>謝謝觀看。</p></a>
+</div>
+	</body>
+</html>
