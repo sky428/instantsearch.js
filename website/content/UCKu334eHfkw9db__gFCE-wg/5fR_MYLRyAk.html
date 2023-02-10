@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮西炒飯 How to cook Western Fried Rice - 酸甜飯! Sweet and sour rice!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '5fR_MYLRyAk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮西炒飯 How to cook Western Fried Rice - 酸甜飯! Sweet and sour rice!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>西炒飯，呢個炒飯甜甜酸酸，小朋友好鍾意食。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>材料有腸仔、火腿、雞蛋、蕃茄、洋蔥、雜菜和番茄汁。</p></a>
+				<a href="#00:00:29.00" id="00:00:29.00" class="lt" onclick="jumptoTime(29, this.id)"><p>首先好簡單，將所有材料切碎，就可以開始煮。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>首先落油，爆香腸，將香腸切粒粒，炒到微黃，再放少少糖，香腸會更香脆，再落少少豉油，兩三滴就可以。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>香腸中和了糖味，非常好食。</p></a>
+				<a href="#00:01:28.86" id="00:01:28.86" class="lt" onclick="jumptoTime(88, this.id)"><p>洋葱切碎后加入一起炒，炒熟即可撻起，同同一隻鑊落油，兩隻雞蛋這樣拌勻，放落鑊煎雞蛋，將雞蛋撻起，將飯放入蛋中間，飯可以黏到蛋漿，炒勻，小朋友喜歡食多啲蛋，將雜菜放入，雜菜內有粟米，紅蘿蔔，青豆，炒勻，很香的蛋香味，將火腿，香腸，洋蔥放入，慢慢拌勻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:53.72" id="00:02:53.72" class="lt" onclick="jumptoTime(173, this.id)"><p>不停拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:1.72" id="00:03:1.72" class="lt" onclick="jumptoTime(181, this.id)"><p>番茄碎粒，想有營養，酸酸甜甜的，所以放多啲番茄肉，番茄汁，如果喜歡食酸味，可以放多啲番茄肉，不停拌勻，很快就完成，好味呀，多謝收看</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:43.16" id="00:03:43.16" class="lt" onclick="jumptoTime(223, this.id)"><p>也請別忘了分享出去並按一個讚哦 並且記得訂閱我們的頻道 才能收到最新消息喔，想知我下次煮啲咩?快啲訂閱我嘅頻道啦!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:53.67" id="00:03:53.67" class="lt" onclick="jumptoTime(233, this.id)"><p>記住同你嘅朋友分享呀!</p></a>
+</div>
+	</body>
+</html>

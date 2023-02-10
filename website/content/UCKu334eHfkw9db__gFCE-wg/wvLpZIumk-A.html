@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮牛肉生麵 How to cook Crispy Noodles With Beef</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wvLpZIumk-A',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮牛肉生麵 How to cook Crispy Noodles With Beef</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>牛肉生麵，材料有麵、牛肉、菜心、薑、蒜頭，材料好簡單，牛肉幾新鮮，牛肉要跟紋切，紋條條，要切橫紋，直切就韌，切完紋就像一粒粒的井字形，切完後用刀背剁鬆，這樣會更軟，牛肉切完後，牛肉有血水多，用水沖洗，牛肉血水出現，牛肉變白色，炒的時候會更軟，按水出來，醃牛肉，1匙雞粉、1匙豉油、胡椒粉，拌勻。</p></a>
+				<a href="#00:02:0.00" id="00:02:0.00" class="lt" onclick="jumptoTime(120, this.id)"><p>加少許生粉，油可以加多些，我現在是加麻油，如果不加麻油可以加橄欖油，攪拌均勻，然後我會加蛋白，慢慢攪拌，讓牛肉吸收蛋白</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:32.15" id="00:02:32.15" class="lt" onclick="jumptoTime(152, this.id)"><p>再攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:37.15" id="00:02:37.15" class="lt" onclick="jumptoTime(157, this.id)"><p>很香，很滑，菜已經洗淨，我喜歡把魚鰓去掉，吃的時候不會有魚鰓，菜也很新鮮，沒什麼意義，但我們還是要去掉，煮開水，然後煮麵，這樣煮熟，煮完就拿上來，不用過冷河，把水弄乾就可以了，然後我們放油煎麵，油溫約150-160度，插一隻筷子就可以看到起泡，就可以把炒麵放進去，慢慢放，放完之後鋪成圓形，放進去之後不用太心急，不用太急。</p></a>
+				<a href="#00:04:5.15" id="00:04:5.15" class="lt" onclick="jumptoTime(245, this.id)"><p>我們就這樣半煎炸，把麵捲起來，讓油分平均，這樣捲起來，炒這個麵真的要有耐性，邊邊的麵都脆了，可以檢查一下，拿一點上來看看，現在開始看到它脆了，還可以再煎一會，煎焦一點，我們繼續慢慢火煎，不停轉動，讓油分不要在底部，好了，我們要轉面煎另一面，我們這樣轉，是不是很漂亮，如果是酒家，會用很多油。</p></a>
+				<a href="#00:05:13.91" id="00:05:13.91" class="lt" onclick="jumptoTime(313, this.id)"><p>把整個面拿去炸，我們是家庭主婦，不用這麼多油，好了，我們煎完兩面，這樣避開油，面會很乾爽，看看多漂亮多乾爽，很薄脆，調味汁我們用什麼呢，我用鮑魚汁，用兩匙，蠔油，差不多一匙，放一點糖，這裡是兩半匙，差不多一匙，攪拌均勻，加一點豆粉，一匙豆粉，三匙水，首先我們炒菜，放薑，放一點蒜蓉，用剛才的鑊，先炒菜。</p></a>
+				<a href="#00:06:32.91" id="00:06:32.91" class="lt" onclick="jumptoTime(392, this.id)"><p>如果一個人吃，不用這樣炒，可以用薑和水，來搓兩條菜，這樣就可以了，放一點雞粉，放一點糖，很香啊，可以了 現在可以拿起來，在碗裡還有餘溫，菜就會很熟，鍋裡放油 現在炒牛肉，油滾了，放少許蒜頭，爆香蒜頭，蒜頭變黃，放牛肉，不用不停炒，用筷子輕輕撥開，牛肉很快就會煮好，炒到差不多七成熟，就可以放入醬汁，現在可以放入去炒。</p></a>
+				<a href="#00:07:53.82" id="00:07:53.82" class="lt" onclick="jumptoTime(473, this.id)"><p>炒完後，如果想醬汁稠一點，就這樣就可以了，如果不想稠的話，可以加少許水，調到適當濃度，就可以上碟了，很香，我們的牛肉生麵就煮好了，麵很脆，牛肉又夠軟，可以拿來煮一下，想知我下次煮什麼，快點訂閱我的頻道，記得分享給朋友。</p></a>
+</div>
+	</body>
+</html>

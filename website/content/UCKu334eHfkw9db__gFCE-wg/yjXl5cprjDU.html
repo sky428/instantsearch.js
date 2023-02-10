@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮香滑雞粥 How to cook Chicken Porridge - 超香滑!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yjXl5cprjDU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮香滑雞粥 How to cook Chicken Porridge - 超香滑!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸?</p></a>
+				<a href="#00:00:1.84" id="00:00:1.84" class="lt" onclick="jumptoTime(1, this.id)"><p>King 跟你想好，香滑雞粥，材料有雞一隻，薑片、蔥和米，首先加少許油，爆香薑片，雞肉和雞骨分開，首先將內殼剪出來，先用薑爆香，用來煲粥底，現在薑爆得差不多了，可以將雞骨和雞腔肉放下去爆香，爆香後可以放水，放兩碗滾水，煲得這麼熱加水就不太好，所以加滾水，米洗淨了，有一杯米，洗淨後放下去一起煲，煲雞粥雞骨後。</p></a>
+				<a href="#00:01:45.04" id="00:01:45.04" class="lt" onclick="jumptoTime(105, this.id)"><p>可以醃雞肉，雞肉用雞粉、豉油兩匙，加少許糖，因為加了雞粉和豉油，然後加兩匙紹興酒，拌勻就可以醃了，煲了約40分鐘，粥煲得很綿，可以放一粒雞精，因為現在粥沒有味道，現在放一粒雞精，你看看現在這樣，滾到粥很綿，現在放雞肉，這樣雞肉就會很滑，如果一起煲太久，雞肉就會很老，雞骨先煲了粥，然後再放醃好的雞肉。</p></a>
+				<a href="#00:02:59.24" id="00:02:59.24" class="lt" onclick="jumptoTime(179, this.id)"><p>現在再滾，滾到雞肉熟為止</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:4.24" id="00:03:4.24" class="lt" onclick="jumptoTime(184, this.id)"><p>你看看，滾到雞肉熟了，這個就是很綿的雞粥，現在加些薑絲和蔥，這樣就可以吃了，雞肉很滑，粥也很綿，大家試試煲吧</p></a>
+				<a href="#00:03:30.24" id="00:03:30.24" class="lt" onclick="jumptoTime(210, this.id)"><p>想知我下次煲什麼菜，快點訂閱我的頻道吧，記得和你的朋友分享吧。</p></a>
+</div>
+	</body>
+</html>

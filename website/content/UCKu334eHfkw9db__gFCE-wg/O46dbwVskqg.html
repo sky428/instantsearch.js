@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>怎樣做米飯披薩 How To Make Rice Pizza</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'O46dbwVskqg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>怎樣做米飯披薩 How To Make Rice Pizza</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸，阿King同你諗掂佢。</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>食譜介紹，我哋一齊嚟整啦。</p></a>
+				<a href="#00:00:34.00" id="00:00:34.00" class="lt" onclick="jumptoTime(34, this.id)"><p>一陣時後我哋食一食剩，讓讓少少，讓讓少少嘅時候呢，我哋就可以試下整呢一個米飯披薩啦。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>咁我哋想將呢，咁我哋首先呢，將啲冷飯囉，加啲橄欖油。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>咁呢，我哋攪勻佢先。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>咁我哋係加啲黑胡椒。</p></a>
+				<a href="#00:01:5.72" id="00:01:5.72" class="lt" onclick="jumptoTime(65, this.id)"><p>然後就可以加雞蛋，要加多一點雞蛋才可以更加好看，我們加了五隻蛋，攪拌均勻，是要蛋多過飯，然後加四匙燕麥，攪拌均勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:29.72" id="00:01:29.72" class="lt" onclick="jumptoTime(89, this.id)"><p>這個是薄荷葉，我們可以加些薄荷葉，這樣就有些清香的味道，如果你喜歡吃很多薄荷葉就可以加多一點，攪拌均勻，這個就是薄荷葉的焗盤</p></a>
+				<a href="#00:01:57.72" id="00:01:57.72" class="lt" onclick="jumptoTime(117, this.id)"><p>下面就塗少許橄欖油，然後就可以把飯放進去，焗出來就像飯焦一樣硬硬的很好吃，我們就這樣鋪平，然後就可以放進去，我們就這樣鋪平，這個就是米飯的pizza，很容易做的，和小朋友一起做也可以的，我們就這樣把它壓平，我們喜歡吃什麼菜就可以自己加，這次我選擇了洋蔥和三椒，這些菜全部切粒，然後就把它放進碗裡。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:54.47" id="00:02:54.47" class="lt" onclick="jumptoTime(174, this.id)"><p>還有紅蘿蔔，切得很小粒，然後我加一點橄欖油，拌一拌，然後我加鹽，這是海鹽，加一點海鹽，讓它提升味道，這個是紅辣椒粉，我們加約一茶匙，不要看我放這麼多，其實也是一茶匙，拌勻，我們就可以鋪在飯面上，如果喜歡吃蘑菇，可以加一點，家裡有剩的可以加進去，我選擇了蟹柳和金龍腸，我們先鋪好蟹柳，因為蟹柳烤完之後，吃起來很配飯。</p></a>
+				<a href="#00:04:14.47" id="00:04:14.47" class="lt" onclick="jumptoTime(254, this.id)"><p>金龍腸，鋪好，然後我們可以加芝士，你喜歡的話可以加很多很多芝士，我加在中間，旁邊也加一點，最後一隻蛋也加上去，焗好後會有一點金黃色，現在可以放入烤箱烤焗，200度烤了25分鐘，哇!好香噴噴，切給你看看，真的像一塊很足料的薄餅，真的很好吃，經常做薄餅，你們也可以試試用冷飯做米飯薄餅，想知我下次煮什麼?快點訂閱我的頻道吧!</p></a>
+				<a href="#00:05:34.32" id="00:05:34.32" class="lt" onclick="jumptoTime(334, this.id)"><p>記得分享給朋友觀看喔!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特色炒麵 Stir-fried Noodles</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 't5KQWl2MCmE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>特色炒麵 Stir-fried Noodles</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸?</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>阿King同你諗掂佢!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:4.32" id="00:00:4.32" class="lt" onclick="jumptoTime(4, this.id)"><p>字幕由Amara.org社区提供，蛋豆腐好食，好似魚蛋，洗淨蔥切成段，煲滾水，將炒麵滾開，兩人滾兩個，滾水放入炒麵，這樣搓鬆，將炒麵放入碗中，快水滾開後，將炒麵拿上碟，因為炒麵比較幼，沒有鹼水，所以不用過冷河，然後是豉油汁，我用的是蒸魚豉油，蒸魚豉油帶少少甘味和甜味，不太鹹，我可以放3-4匙。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:35.32" id="00:01:35.32" class="lt" onclick="jumptoTime(95, this.id)"><p>好像很多豉油，但其實不鹹，加少少糖，因為豉油帶甜味，所以加少少糖就夠了，加水拌勻，攪拌至糖溶化，開鍋，加少少油煎蛋皮，將蛋皮煎開，然後是魚豆腐，炒蔥和芽菜，加少少油，將蒜頭切粒，薑也切粒，爆香，將蔥段放入鍋中，加芽菜，加少少雞汁，將麵團放入碗中，將油份放入碗中，將麵團放入碗中，將油份放入碗中。</p></a>
+				<a href="#00:04:5.11" id="00:04:5.11" class="lt" onclick="jumptoTime(245, this.id)"><p>將麵團放入碗中，將麵團放入碗中，先煎一下，加少少醬油，煮麵最好用筷子，不要用鑊鏟鏟，否則麵會爛掉，一邊炒一邊用筷子，炒一炒，又炒一炒又加些豉油，再加蛋豆腐，最後加芽菜，看看是否很容易煮，炒麵很方便，平時在家放些麵，家中有什麼菜，加上去炒就完成了，熱騰騰的，很美味，加些蛋，很漂亮，想知我下次煮什麼?快點訂閱我的頻道。</p></a>
+				<a href="#00:05:36.55" id="00:05:36.55" class="lt" onclick="jumptoTime(336, this.id)"><p>記緊與朋友分享喔!</p></a>
+</div>
+	</body>
+</html>

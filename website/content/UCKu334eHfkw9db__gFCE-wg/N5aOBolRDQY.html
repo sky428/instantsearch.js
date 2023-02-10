@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮西班牙大鍋飯 How To Cook Paella</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'N5aOBolRDQY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮西班牙大鍋飯 How To Cook Paella</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>西班牙大鍋飯，今日同大家煮一個有中國特色嘅西班牙飯，材料有西班牙米，雞肉和香辣腸，海鮮青口 蝦 石斑塊，蔬菜洋蔥 青椒 紅椒 黃椒 蒜頭，開始煮，所有材料洗淨，雞肉切粒，用豆粉 糖 豉油 酒醃一醃，慢慢攪拌，等雞肉吸收水份，蝦剪咗前面和尾部的槍，將腸拔出，放少少酒，胡椒粉，豆粉。</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>攪拌，等雞肉吸收豆粉，肉會好彈，煮飯的湯底，蒜蓉，蝦頭，爆香蝦頭，蝦頭出黃色油，好香，蝦頭爆香，蝦頭吸收油，蝦頭吸收油，蝦頭不用煮太熟，吸收油的味道，蝦頭取出，加入白酒，蝦頭取出，加入洋蔥碎，加少少油，蝦頭汁加洋蔥碎好彈，加入西班牙米，炒3-4分鐘，放一湯匙茄膏，炒到很香，加少少紅椒粉，紅椒粉更香，米已經很香。</p></a>
+				<a href="#00:03:22.00" id="00:03:22.00" class="lt" onclick="jumptoTime(202, this.id)"><p>加入雞湯，如果沒有雞湯可以加水，蓋過米，煮5分鐘，關掉中火，慢慢煮，撞紅花，煮西班牙飯很流行撞紅花，撞紅花是西班牙飯的靈魂，加少少雞湯浸泡，放入飯中，雞湯很香很特別，將餘下的雞湯放入飯中，中小火慢慢煮，趁米飯煮好，可以處理菜，加少少蒜蓉，將雞肉輕輕爆炒，7成熟就夠了，現在飯的水開始收乾，可以將雞肉放入飯中。</p></a>
+				<a href="#00:04:45.00" id="00:04:45.00" class="lt" onclick="jumptoTime(285, this.id)"><p>飯一邊煮一邊香，放少少油，蒜蓉，將青口爆炒，青口封面，加些白酒，青口很香，放些橄欖油，煎一煎奶酪，煎一煎臘腸，不煎也可以，但煎好後再放在飯面，會香很多，煎到表面脆脆的就可以了，飯開始收水，可以放青椒紅椒和胡椒，放石斑，石斑很易熟，放蝦，水還未收乾，放青口</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:9.00" id="00:06:9.00" class="lt" onclick="jumptoTime(369, this.id)"><p>再煎一煎，再蓋上蓋子，再等飯收水，已經5-6分鐘了，水收得差不多了，將煎香的臘腸放上去，再焗一焗，石斑肉都熟了，可以吃到臘腸和海鮮味，最後加一隻蛋黃，吃魚和飯更滑</p></a>
+				<a href="#00:06:55.00" id="00:06:55.00" class="lt" onclick="jumptoTime(415, this.id)"><p>再加些香菜，就完成了，這個飯一上枱，大家一起吃吧，想知我下次煮什麼?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:14.00" id="00:07:14.00" class="lt" onclick="jumptoTime(434, this.id)"><p>快訂閱我的頻道吧，謝謝收看。</p></a>
+</div>
+	</body>
+</html>
