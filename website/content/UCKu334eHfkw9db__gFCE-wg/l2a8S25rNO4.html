@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮醬爆雞煲 How To Cook Chicken Hot Pot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'l2a8S25rNO4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮醬爆雞煲 How To Cook Chicken Hot Pot</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸，阿King同你諗掂佢。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>醬爆雞煲，今日同大家煮一個好家庭式嘅雞煲。</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>材料好簡單又好快手就煮好㗎啦。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>我哋今次就係揀咗雞腿肉三件嘅。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>青椒，紅椒，蔥頭，辣椒乾，薑片，蒜片，蔥段，三分之一杯紹興酒。</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>雞腿肉用豆粉水洗淨，然後印乾水。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>雞腿肉好多筋，用刀尖切斷筋。</p></a>
+				<a href="#00:00:40.00" id="00:00:40.00" class="lt" onclick="jumptoTime(40, this.id)"><p>用鬆肉鎚揼鬆，雞肉鬆軟容易入味。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>用鬆肉鎚揼鬆，雞肉鬆軟容易入味。</p></a>
+				<a href="#00:00:48.00" id="00:00:48.00" class="lt" onclick="jumptoTime(48, this.id)"><p>用鬆肉鎚揼鬆，雞肉鬆軟容易入味。</p></a>
+				<a href="#00:00:52.00" id="00:00:52.00" class="lt" onclick="jumptoTime(52, this.id)"><p>用鬆肉鎚揼鬆，雞肉鬆軟容易入味。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>用鬆肉鎚揼鬆，雞肉鬆軟容易入味。</p></a>
+				<a href="#00:01:0.00" id="00:01:0.00" class="lt" onclick="jumptoTime(60, this.id)"><p>將雞肉切成小粒，一口一粒就好。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>將雞肉切成小粒，一口一粒就好。</p></a>
+				<a href="#00:01:8.00" id="00:01:8.00" class="lt" onclick="jumptoTime(68, this.id)"><p>醬料1湯匙麵豉醬，1湯匙海鮮醬，1湯匙蠔油，1湯匙糖，攪拌均勻。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>醬料1湯匙麵豉醬，1湯匙海鮮醬，1湯匙蠔油，1湯匙糖，攪拌均勻。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>醬料1湯匙麵豉醬，1湯匙海鮮醬，1湯匙蠔油，1湯匙糖，攪拌均勻。</p></a>
+				<a href="#00:01:39.00" id="00:01:39.00" class="lt" onclick="jumptoTime(99, this.id)"><p>醬料1湯匙麻油，醃3-5分鐘，燒熱鍋，放油，爆香薑片，放蒜片，葱头，辣椒乾，好香好惹味，你爆到好香，就可以將醃好的雞腿肉放落去，煎完一邊就煎另一邊，煎到五成熟就夠，燒紅個煲仔，然後將所有材料倒入煲仔，然後將紅椒和青椒放入煲仔，加半杯紹興酒，蓋上蓋子，煮5-6分鐘，酒精就會完全揮發，雞肉好軟。</p></a>
+				<a href="#00:03:10.52" id="00:03:10.52" class="lt" onclick="jumptoTime(190, this.id)"><p>然後放蔥段，可以試味，如果覺得不合口味，可以加蠔油或糖，我覺得味道合口味，關火，蓋上蓋子，焗3-4分鐘，就可以上枱，這個菜真的很簡單，是最理想的家庭小菜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:4.52" id="00:04:4.52" class="lt" onclick="jumptoTime(244, this.id)"><p>喜歡的話請訂閱支持啊，謝謝觀看。</p></a>
+</div>
+	</body>
+</html>

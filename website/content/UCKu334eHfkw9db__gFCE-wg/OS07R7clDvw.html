@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何做紅雞蛋 How to make Chinese Red Dye Eggs</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'OS07R7clDvw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何做紅雞蛋 How to make Chinese Red Dye Eggs</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸，阿King同你諗掂佢。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>紅雞蛋，紅雞蛋通常都有嬰兒滿月，生日，喜慶事先會做。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>做嚟分俾朋友，親戚一齊食，取個意頭開開心心。</p></a>
+				<a href="#00:00:33.00" id="00:00:33.00" class="lt" onclick="jumptoTime(33, this.id)"><p>用料好簡單，雞蛋同埋食用紅色素，通常用嚟做蛋糕。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>雖然睇落簡單，但做得靚都唔容易。</p></a>
+				<a href="#00:00:51.00" id="00:00:51.00" class="lt" onclick="jumptoTime(51, this.id)"><p>首先洗淨雞蛋，加些豆粉，放入雞蛋洗淨。</p></a>
+				<a href="#00:01:2.00" id="00:01:2.00" class="lt" onclick="jumptoTime(62, this.id)"><p>通常買到雞蛋，唔好即刻洗淨，先放入雪櫃。</p></a>
+				<a href="#00:01:12.00" id="00:01:12.00" class="lt" onclick="jumptoTime(72, this.id)"><p>因為雞蛋外面有保護膜，防止細菌入侵。</p></a>
+				<a href="#00:01:20.00" id="00:01:20.00" class="lt" onclick="jumptoTime(80, this.id)"><p>洗完蛋放雪櫃，雞蛋唔耐放。</p></a>
+				<a href="#00:01:26.00" id="00:01:26.00" class="lt" onclick="jumptoTime(86, this.id)"><p>買雞蛋用抹手指抹一抹，就可以放落雪櫃，唔好用水洗。</p></a>
+				<a href="#00:01:33.00" id="00:01:33.00" class="lt" onclick="jumptoTime(93, this.id)"><p>但現在要染色，要煮蛋，要食，就可以洗淨。</p></a>
+				<a href="#00:01:42.00" id="00:01:42.00" class="lt" onclick="jumptoTime(102, this.id)"><p>洗淨雞蛋外層，染色時會好看，因為表面滑。</p></a>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>雞蛋外層有些字，可以抹乾淨。</p></a>
+				<a href="#00:02:5.98" id="00:02:5.98" class="lt" onclick="jumptoTime(125, this.id)"><p>蛋洗淨後用冷水把蛋放進去，然後加一匙醋，加醋的原因是防止蛋裂開，有時蛋裂開的時候蛋白也不會流出來，你看多漂亮，紅雞蛋要煮至全熟，如果半生熟的話就不合適了，用冷水，加一匙醋，就可以加染色料了，我們看看，加一點點看看顏色合不合適，不夠的話再加一點，加到我們覺得合適的顏色，我們放了蛋之後，仍然可以加顏色。</p></a>
+				<a href="#00:03:12.50" id="00:03:12.50" class="lt" onclick="jumptoTime(192, this.id)"><p>因為有時不同牌子的顏色，即是蛋外面的深淺，也會令蛋的顏色有些不同，我們把蛋放進去，浸泡5分鐘就夠了，所以我們很快的看看，如果顏色不夠深，我們現在還可以加顏色，這樣染色，每隻蛋染出來的顏色都一樣，但如果我們逐隻染，一來就浪費時間，有時我們殺蛋一殺就殺幾十隻，如果我們逐隻染，染到天亮都未染到六七十隻。</p></a>
+				<a href="#00:04:2.50" id="00:04:2.50" class="lt" onclick="jumptoTime(242, this.id)"><p>我們在這裡殺幾隻，浸泡4-5分鐘就夠了，你拿出來看看，顏色多漂亮，乾了之後顏色更漂亮，我們現在可以拿上來，拿上來慢慢瀝乾水，吹乾就可以了，這樣煮有一個好處，現在煮了15隻，如果今天要煮30-40隻，現在可以去煮蛋，煮了蛋之後，現在又可以放下去繼續浸，也是浸幾分鐘，很快就可以做完60-70隻蛋，蛋吹乾之後。</p></a>
+				<a href="#00:04:46.61" id="00:04:46.61" class="lt" onclick="jumptoTime(286, this.id)"><p>我們這樣抹乾水，如果有水就會有顏色，抹乾水之後，你會發覺不會有顏色，這些就是放了醋的好處，你看看，顏色又穩定又不掉色，好像金蛋一樣，多漂亮，送給親友真的沒得彈，你們也來試做吧</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:41.61" id="00:05:41.61" class="lt" onclick="jumptoTime(341, this.id)"><p>謝謝收看。</p></a>
+</div>
+	</body>
+</html>

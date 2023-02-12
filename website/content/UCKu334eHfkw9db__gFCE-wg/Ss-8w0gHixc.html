@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特式:香煎一口雞 How to fry Chicken Mid Wings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Ss-8w0gHixc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>特式:香煎一口雞 How to fry Chicken Mid Wings</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:4.37" id="00:00:4.37" class="lt" onclick="jumptoTime(4, this.id)"><p>香煎一口雞，我們的材料是雞翼</p></a>
+				<a href="#00:00:13.21" id="00:00:13.21" class="lt" onclick="jumptoTime(13, this.id)"><p>我還有一些調味料，首先我們要教大家如何將雞骨拆出來，雞翼有兩邊，我們在中間剪開，你會看到一條大骨一條小骨，我們現在用剪刀在那裡剪開黏著的根，剪少少，然後我們可以將骨輕易地搖一下，就能夾出來，一小骨一挖，看到嗎，就能夾出骨，你就可以將它切開，用剪刀剪去根，這樣就沒有一條骨了，然後我們就將黏著的根剪開。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:14.47" id="00:01:14.47" class="lt" onclick="jumptoTime(74, this.id)"><p>兩邊都剪開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:16.47" id="00:01:16.47" class="lt" onclick="jumptoTime(76, this.id)"><p>兩邊都剪開，只要剪開黏著的根，雞翼就很容易將肉反下去，這樣就反了下去，於是我們就將肉反了下去，皮就變成中間，我們就放些雞粉、米酒、豉油去調味，我們就這樣醃一醃它，然後我就放一隻雞蛋黃，只放一個黃，讓它可以上顏色，和更加好看，我放一些粟粉，將雞翼夾好之後，我們就放入粉裡醃，薄薄地醃。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:26.47" id="00:02:26.47" class="lt" onclick="jumptoTime(146, this.id)"><p>量多了的粉就放進去，每隻都是這樣，將肉反出來，皮在中間，我們就這樣醃</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:47.47" id="00:02:47.47" class="lt" onclick="jumptoTime(167, this.id)"><p>全部都是這樣，醃了一會，我們就可以開始炸了，燒熱油，將雞翼放入半煎炸，這個就要講耐性了，慢慢放，一隻一隻放進去，這種雞翼炸完出來，因為它炸熟了肉，但皮還在裡面，炸完出來之後，調味汁吃起來很滑，還未煮乾，真的要試一下，不要動它，煎完一邊就反轉，煎另一邊，兩邊都煎好之後，就拿上來，記得要用熱油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:39.47" id="00:03:39.47" class="lt" onclick="jumptoTime(219, this.id)"><p>拿上來，然後就將雞翼放進去，記得要用熱油，我們等一下就再翻炸第二次，油要繼續再煮滾，油再滾之後，我們就可以將雞翼放進去，再煎，這次再煎，你看到有很多水泡，它就是將水氣逼出來，於是雞翼就會脆一點，你看看，顏色也轉了，脆一點了，你看，是不是，我們就將它拿上來，這次我用蒜蓉汁，加BBQ Sauce，首先用少許油。</p></a>
+				<a href="#00:04:37.47" id="00:04:37.47" class="lt" onclick="jumptoTime(277, this.id)"><p>先煮熱鍋，然後我將蒜蓉牛油，放進去，爆香，想知道蒜蓉牛油怎樣做，可以看我另一個頻道，我們炒香蒜蓉之後，就將雞翼放進去，拌勻，雞翼就有了蒜香味，現在就加BBQ Sauce，即是燒烤汁，我們就炒勻，我們覺得不夠，炒到差不多，我們可以再加一點，逐一加，我們可以再炒勻，好了，都上色了，每隻雞翼都有BBQ Sauce，現在開始。</p></a>
+				<a href="#00:05:34.47" id="00:05:34.47" class="lt" onclick="jumptoTime(334, this.id)"><p>我們可以關火，加蜜糖，現在鍋子還是熱的，關火，加蜜糖，就不會燒焦，將蜜糖黏滿每隻雞翼，這樣就煮好了，真的很香，小朋友很喜歡吃，一口就一隻，一口又一隻，一會兒就吃完了，想知我下次煮什麼，快點訂閱我的頻道，和你的朋友分享吧。</p></a>
+</div>
+	</body>
+</html>

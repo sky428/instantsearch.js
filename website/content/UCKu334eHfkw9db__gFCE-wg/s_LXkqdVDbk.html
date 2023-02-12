@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮酸辣雞 How to cook Hot and Sour Chicken - 超好吃! Super delicious!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 's_LXkqdVDbk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮酸辣雞 How to cook Hot and Sour Chicken - 超好吃! Super delicious!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>酸辣雞，我哋嘅材料就係有雞髀肉，韓國BBQ辣椒醬，番茄醬，薑，蒜頭，少少芝麻，雞髀肉用豆粉水洗淨，再用水抹乾淨，再切斷筋，再切成小塊，將雞髀肉切成小塊，大小差不多就可以了，然後可以醃一醃，我哋落少少鹽，黑胡椒粉，紅辣椒粉，辣椒粉可以加多少，但我個人就唔怕，因為辣椒粉會香，然後加兩三匙魚露醃一小時。</p></a>
+				<a href="#00:01:40.00" id="00:01:40.00" class="lt" onclick="jumptoTime(100, this.id)"><p>魚露就會好腍，不過可以醃過夜都更加好，醃咗一個鐘頭，我哋就加一隻蛋黃，加個蛋黃落去，一陣間佢炸起上嚟啲顏色就靚好多，攪勻佢，跟住我哋加普通嘅粟米粉，加三匙，攪勻佢，攪勻佢等一陣，跟住我哋燒紅啲油，滾左油之後，我哋將啲雞一件件放落去，放左落去之後，你唔使係咁樣搞佢，咁樣就放左落去之後，等佢自己慢慢煎。</p></a>
+				<a href="#00:02:28.37" id="00:02:28.37" class="lt" onclick="jumptoTime(148, this.id)"><p>煎到熟左一邊，咁你就反轉佢，煎到兩邊都係金黃色，跟住我哋就可以拎起佢，拎起佢之後，等啲油再滾返，再滾返啲油之後，我哋就可以將啲雞油再放落去炸多一次，等佢將雞裏面頭先嗰啲油都再炸返出嚟，同埋炸返啲水氣出嚟，咁佢就會脆啲嘅，你望吓，而家炸多一次啲顏色靚好多，咁我拎上嚟就瀝一瀝油先，咁啲油我哋倒曬佢之後。</p></a>
+				<a href="#00:03:8.37" id="00:03:8.37" class="lt" onclick="jumptoTime(188, this.id)"><p>咁我哋用番同一個鑊，咁我哋就放啲蒜頭落去炒香佢，咁我哋有啲蒜頭同埋啲薑粒，炒香左之後，跟住我哋就可以放嗰個韓國嘅BBQ辣椒醬落去，咁你想辣啲嘅，你就可以放多啲，咁呢個就唔係好辣嘅辣椒醬嚟嘅，咁我就放咗兩匙羹，咁跟住呢我又放返兩匙羹嘅蕃茄醬，咁呢就係放一匙羹嘅糖啦半匙羹半匙羹咁落，好啦，咁跟住我哋就攪勻佢。</p></a>
+				<a href="#00:03:56.37" id="00:03:56.37" class="lt" onclick="jumptoTime(236, this.id)"><p>我哋跟住呢就放啲味醂，味醂呢就係帶甜嘅，咁我放啲味霖落去，咁佢就香好多，嘩，而家啲汁好香呀，好啦，咁跟住我哋就可以放埋啲雞落去撈勻佢啦，OK，就係咁樣撈勻佢，嘩，好香呀，好啦，將最後呢，我哋就將嗰啲芝麻呢，放埋落去，嗱，咁就可以上碟㗎啦，嘩，真係用嚟送飯我都彈，嗱，呢個餸真係好容易整㗎，你哋就嚟試下啦。</p></a>
+				<a href="#00:04:51.18" id="00:04:51.18" class="lt" onclick="jumptoTime(291, this.id)"><p>想知我下次煮啲咩?快啲訂閱我嘅頻道啦!</p></a>
+				<a href="#00:04:55.18" id="00:04:55.18" class="lt" onclick="jumptoTime(295, this.id)"><p>記住同你嘅朋友分享呀!</p></a>
+</div>
+	</body>
+</html>

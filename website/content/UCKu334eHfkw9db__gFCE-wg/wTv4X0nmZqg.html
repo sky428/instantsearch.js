@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮日本咖哩雞 How to cook Japanese curry chicken - 香辣咖哩! Spicy curry!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'wTv4X0nmZqg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮日本咖哩雞 How to cook Japanese curry chicken - 香辣咖哩! Spicy curry!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>日本咖哩雞，咁我哋嘅材料就有雞髀肉兩件啦，咁有薯仔啦，紅蘿蔔，洋蔥，同埋日本嘅咖哩磚嘅，咁我朋友呢佢就話佢唔識煮飯喎，咁呢而家呢要餐餐喺屋企煮，咁點算呢?</p></a>
+				<a href="#00:00:31.00" id="00:00:31.00" class="lt" onclick="jumptoTime(31, this.id)"><p>咁我意思我哋教同佢講，呢一個呢就係乜嘢都拎落去煮嘅，最簡單嘅咖哩雞啦，我哋將啲雞肉洗乾淨之後呢就咁樣切啦，大大嚿咁切得㗎啦，咁如果你唔食雞皮嘅，你就可以撕咗個雞皮佢啦，但係我食雞皮嘅咁我就可以㗎啦，咁我哋加一斤嘅雞粉落去醃一醃佢，加少少糖，加啲豉油去上下色，落一匙羹嘅蠔油啦，帶起佢嘅香味。</p></a>
+				<a href="#00:01:16.00" id="00:01:16.00" class="lt" onclick="jumptoTime(76, this.id)"><p>好，然後加一匙羹嘅麻油，最後落番一匙羹嘅紹興酒，咁就醃好啲雞㗎啦，洋蔥我哋將佢一開四咁樣大大件就得㗎啦，紅蘿蔔，又係咁樣切得可以大大粒咁，薯仔都係一樣可以大大件咁切㗎，我今次教整嘅呢個呢就簡易版嚟㗎，係方便一啲呢唔識唔鍾意煮飯又唔識煮飯，但係又要煮飯嘅人㗎，咁呢啦咁我哋首先落一匙羹嘅油，咁就係爆香嗰啲薑同埋蒜頭。</p></a>
+				<a href="#00:02:15.00" id="00:02:15.00" class="lt" onclick="jumptoTime(135, this.id)"><p>跟住就將啲洋蔥放埋落去爆，甩甩咁爆爆佢，再放入材料，薯仔和紅蘿蔔，輕輕地包一包，加水浸過薯仔面，然後煲湯，煲到材料都軟了，用筷子刺一下薯仔，刺穿了，即是熟了，雞放下去煮就好了，煮到這樣就熟了，這樣煮就不用油煙了，又簡單，蓋上鍋蓋，熟了，熟了之後就可以開咖哩磚，我這次用的是中辣咖哩磚，放進去煲。</p></a>
+				<a href="#00:03:29.56" id="00:03:29.56" class="lt" onclick="jumptoTime(209, this.id)"><p>為何我不用豆粉葉呢?</p></a>
+				<a href="#00:03:31.56" id="00:03:31.56" class="lt" onclick="jumptoTime(211, this.id)"><p>因為日本咖哩磚熔了之後很稠，你看看，很稠，如果想再稠一點，就不要放太多水，或者煲久一點，你看看，可以試味，如果覺得太鹹，可以加少許糖，這個咖哩雞很容易煮，可以用來拌麵和拌飯，平時沒有煮飯又不懂煮菜的朋友，也可以試試，想知我下次煮什麼?</p></a>
+				<a href="#00:04:10.56" id="00:04:10.56" class="lt" onclick="jumptoTime(250, this.id)"><p>快點訂閱我的頻道吧，記得和你的朋友分享哦。</p></a>
+</div>
+	</body>
+</html>
