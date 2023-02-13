@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮潮州蒸魚 How To Cook Teochew Steamed Fish</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'HdWNf4zkYAU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮潮州蒸魚 How To Cook Teochew Steamed Fish</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>潮州蒸魚，今日同大家煮一個好簡單但材料好多嘅餸喎!</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>有條蒼魚、軟豆腐、冬菇、鹹酸菜、蕃茄、薑、酸梅、蔥、糖筋，買咗條魚，用豆粉水洗淨佢，用刀刮去佢出面啲散，然後用水洗淨佢，多餘旗剪走佢。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>薑、蔥、米酒，將魚塗上去，去除魚腥味。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>蕃茄，煮滾水，去皮，放一邊備用。</p></a>
+				<a href="#00:01:19.00" id="00:01:19.00" class="lt" onclick="jumptoTime(79, this.id)"><p>薑，將魚抹乾淨，放上去。豆腐切片，放一邊。</p></a>
+				<a href="#00:01:34.00" id="00:01:34.00" class="lt" onclick="jumptoTime(94, this.id)"><p>鹹酸菜洗淨，切幼條。冬菇浸軟後切片，放上魚頂。</p></a>
+				<a href="#00:01:46.00" id="00:01:46.00" class="lt" onclick="jumptoTime(106, this.id)"><p>蕃茄切片，放豆腐上。酸梅搗碎，去除魚腥味。</p></a>
+				<a href="#00:01:54.00" id="00:01:54.00" class="lt" onclick="jumptoTime(114, this.id)"><p>加少少糖，拌勻，再加少少魚露，放上魚肉面。</p></a>
+				<a href="#00:02:4.00" id="00:02:4.00" class="lt" onclick="jumptoTime(124, this.id)"><p>再加薑絲，糖勾芡。</p></a>
+				<a href="#00:02:14.46" id="00:02:14.46" class="lt" onclick="jumptoTime(134, this.id)"><p>煲滾滾水，放魚進去蒸8-10分鐘，蒸好了，很香呀，放少許油，油滾後，將蔥和糖芹爆香，然後淋上魚面，大功告成，可以上桌啦，配料多，油鮮甜，鬆飯一流，想知我下次煮甚麼?快訂閱我的頻道啦，記得分享給朋友。</p></a>
+</div>
+	</body>
+</html>

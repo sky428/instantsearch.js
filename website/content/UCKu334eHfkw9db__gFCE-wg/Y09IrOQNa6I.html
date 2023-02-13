@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮鹽焗蝦 How to cook Salted Prawns - 簡單!好味! Simple! Great taste!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Y09IrOQNa6I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮鹽焗蝦 How to cook Salted Prawns - 簡單!好味! Simple! Great taste!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+				<a href="#00:00:1.82" id="00:00:1.82" class="lt" onclick="jumptoTime(1, this.id)"><p>King 幫你想好，鹽焗蝦，材料有粗海鹽，蝦，香料有花椒、八角、百里香和蒜頭，這個菜非常容易煮，首先處理蝦，蝦前面有尖角要剪掉，尾部也要剪掉，否則吃的時候很容易刺口，蝦鬚和蝦腳也要剪掉，否則煮熟後刨出來就不好看，然後可以把蝦腸拿出來，蝦頭可以拔出來，或者是蝦的第二節，放進去一撕就能拿出來，你看看蝦腸就能拿出來。</p></a>
+				<a href="#00:01:6.38" id="00:01:6.38" class="lt" onclick="jumptoTime(66, this.id)"><p>把蝦腸拔出來，然後用豆粉水洗乾淨蝦，過水抹乾淨，不用醃製，放鹽在鑊內，雖然放這麼多鹽，但不是炒熟蝦，而是用蒸氣蒸熟，所以蝦有鮮味，但一點也不鹹，放了鹽後就可以放香料，放花椒、八角和蔥，炒一炒，炒至聞到香味，再鋪平，然後就可以放蝦，記住不要放水，也不要放油，把蝦放進去，你們試試看，做出來又不鹹，可以帶出海鮮的鮮味。</p></a>
+				<a href="#00:02:24.62" id="00:02:24.62" class="lt" onclick="jumptoTime(144, this.id)"><p>很正，這樣鋪好，焗一焗，焗了一會，聞到香味，就把百里香放進去，再焗蝦會出水，香味會整個焗好香，你看蝦出水了，聞到很香，蝦很熟了，不用再翻動，就可以了，鹽是用來蒸的，不是用來做鹹蝦，在表面有牛油，嘩很漂亮，吃的時候還有牛油的香味，這樣就可以吃了，你說這個菜多簡單，過時過節，又快又簡單，又沒有油煙，這麼容易煮。</p></a>
+				<a href="#00:03:44.62" id="00:03:44.62" class="lt" onclick="jumptoTime(224, this.id)"><p>你也來試試吧，想知道我下次煮什麼，快點訂閱我的頻道，記得分享給朋友</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:10.83" id="00:04:10.83" class="lt" onclick="jumptoTime(250, this.id)"><p>以上言論不代表本台立場。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何蒸薑蔥黃花魚 How to steam Yellow Croaker with Ginger and Onion # Recipe # 菜谱</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'CtL7R_ZcGBY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何蒸薑蔥黃花魚 How to steam Yellow Croaker with Ginger and Onion # Recipe # 菜谱</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.22" id="00:00:0.22" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食咩餸?</p></a>
+				<a href="#00:00:2.22" id="00:00:2.22" class="lt" onclick="jumptoTime(2, this.id)"><p>阿King同你諗掂佢，今日同大家蒸條薑蔥黃花魚，買條魚返嚟洗乾淨，拎哂啲內臟，然後抹手指同佢抹乾淨，外面同佢抹得乾乾淨淨，因為魚如果有水黎蒸就會生，平時蒸魚我鍾意鋸兩刀，但黃花魚咁薄皮就唔洗，我又鍾意切一塊薑，放係魚底煎起，蒸起魚皮就唔會黐住隻碟，將薑絲鋪上魚面，我鍾意食薑，所以鋪多啲，用滾水蒸魚。</p></a>
+				<a href="#00:01:8.22" id="00:01:8.22" class="lt" onclick="jumptoTime(68, this.id)"><p>一條咁細嘅魚約蒸6分鐘，蒸魚嘅時候可以切薑絲同蔥，今次我用蔥粒，魚蒸起咗，要避開水，水唔要，用兩匙油，將薑同蔥爆香，薑同蔥都熟，魚就完成啦，幾靚，搞掂，再加蒸魚豉油，嘩，幾靚，香噴噴，食得啦，嘩，好靚喎，想知我下次會煮啲咩呢?</p></a>
+				<a href="#00:02:40.05" id="00:02:40.05" class="lt" onclick="jumptoTime(160, this.id)"><p>快啲訂閱我嘅頻道啦!</p></a>
+</div>
+	</body>
+</html>

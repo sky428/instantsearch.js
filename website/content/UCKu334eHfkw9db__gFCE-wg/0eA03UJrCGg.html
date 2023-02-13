@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮酸甜魚 How to cook Sweet and Sour Fish - 開胃餸菜! Appetizing food!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '0eA03UJrCGg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮酸甜魚 How to cook Sweet and Sour Fish - 開胃餸菜! Appetizing food!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>酸甜魚，我哋嘅材料就係今次我揀咗條羅非魚啦，咁呢我哋嘅配菜呢就係有酸薑，白蘿蔔一條紅蘿蔔咁有洋蔥呀同埋青椒紅椒咁嘅，咁呢首先呢我哋呢就整嗰啲配菜先，咁蘿蔔我哋半條就夠㗎啦，咁我哋呢就批咗皮之後呢我哋就將佢切條，洋蔥切條，今次的配菜是酸酸甜甜的，所以我們全部切條，紅蘿蔔切條。</p></a>
+				<a href="#00:01:8.50" id="00:01:8.50" class="lt" onclick="jumptoTime(68, this.id)"><p>紅椒切條，中間的白色的，拿走它，辣椒會鮮甜些，薑切條，魚洗淨後就可以切了，怎樣切呢?</p></a>
+				<a href="#00:01:35.50" id="00:01:35.50" class="lt" onclick="jumptoTime(95, this.id)"><p>按刀下去，然後切開，打動切開，然後把刀打橫切開，我們就這樣切，待會炸起來，油就可以炸到魚骨脆些，把刀切下去，然後斜斜切開，就是這樣，打動切開，把魚骨切開，現在準備好材料就可以開始煮了，醬汁是用3匙蘋果醬，2匙糖，魚露，2匙魚露，攪拌均勻，醬汁就這樣，醃魚，用粟米粉，豆粉，紅椒粉，豆粉不辣，加進去會更好看和香。</p></a>
+				<a href="#00:03:2.50" id="00:03:2.50" class="lt" onclick="jumptoTime(182, this.id)"><p>喜歡吃的可以加多些，攪拌均勻，魚骨清洗乾淨，抹乾淨後加些海鹽，先搖一搖，這樣抹海鹽，另一邊也是一樣，再搖一搖，可以幫魚上粉，粉可以放在魚頭上，魚肉可以拿起，剛才切法可以放粉，兩邊都一樣，把粉印好，然後再將多餘的粉放出來，燒滾後可以放魚，放魚上去就炸起，我們可以看看，不用心急，可以慢慢炸，炸完一邊就反轉炸另一邊。</p></a>
+				<a href="#00:04:24.57" id="00:04:24.57" class="lt" onclick="jumptoTime(264, this.id)"><p>記住不要用很猛的火，用中火就可以，否則會炸到外面很焦，你看，慢慢地炸，炸到兩邊都金黃色，炸熟就可以了，炸好了，現在開始做配料，放少許油，放入酸薑，爆香，放入紅蘿蔔，白蘿蔔，因為紅蘿蔔比較難熟，所以先放一些，炒一炒，炒一炒，加少許油，再放洋蔥，同樣爆香，洋蔥變軟了，可以再放青椒和紅椒，因為青椒和紅椒不用煮太熟，所以可以放最後。</p></a>
+				<a href="#00:05:50.51" id="00:05:50.51" class="lt" onclick="jumptoTime(350, this.id)"><p>記得剛才的白醋，糖和魚露嗎，攪拌均勻就可以放入，嘩!一聲炸就好香，再放少許水，煮至軟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:10.51" id="00:06:10.51" class="lt" onclick="jumptoTime(370, this.id)"><p>再放少許水</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:14.51" id="00:06:14.51" class="lt" onclick="jumptoTime(374, this.id)"><p>最後想顏色好，加少許番茄味，就放些茄汁，約一兩匙，這樣就完成了，可以鋪在魚上，最後把汁都倒入，魚很脆，配料很鮮甜，好開胃的菜，大家來試試吧，想知我下次煮啲咩?快啲訂閱我嘅頻道啦!</p></a>
+				<a href="#00:07:10.18" id="00:07:10.18" class="lt" onclick="jumptoTime(430, this.id)"><p>記住同你嘅朋友分享呀!</p></a>
+</div>
+	</body>
+</html>

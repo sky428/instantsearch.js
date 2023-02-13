@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何輕鬆煎三文魚 How to fry Salmon steak #超简单 Super easy !</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'N5ub9JTMhJ8',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何輕鬆煎三文魚 How to fry Salmon steak #超简单 Super easy !</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食咩餸?</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>阿King同你諗掂佢!</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>我哋嘅材料有，三文魚腩，洋蔥，韓國燒烤汁，黑胡椒，海鹽，仲有啲蒜頭，今日呢個餸呢就係非常之簡單嘅，就係煎咗條魚呀加啲調味呢咁就得㗎啦，首先呢我哋就係洗乾淨，個三文魚腩，然後呢就加啲海鹽醃一醃佢，等佢有啲味，咁我又會加啲黑椒，黑胡椒上去，用嚟pick下佢啲腥味囉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>咁煎魚呢，我就好鍾意上少少粉，等佢唔好咁彈油呀同埋封住嗰啲肉汁，但係呢就唔好落好多喎，即係係咁易同佢搽少少，少少上去就得㗎啦，兩邊都搽，見到嗎?搽好少㗎啫，得多呢就唔好食㗎啦，洋蔥</p></a>
+				<a href="#00:01:20.00" id="00:01:20.00" class="lt" onclick="jumptoTime(80, this.id)"><p>咁呢洋蔥呢，我就係切好細細片嘅，咁如果你哋好鍾意食其他嘅椒呢，又可以加啲青椒呀上去都得，咁我哋呢就係落油呢，跟住呢就可以煎條魚啦，咁呢容易結鑊呢就最好呢就係落咗油，先至慢慢煎到佢好脆，咁我哋呢就係落油啦，先至慢慢令到嗰個鑊滾啦，就唔好話燒到個鑊好興呢，然後先至落油嘅，將條魚放咗落去。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:58.00" id="00:01:58.00" class="lt" onclick="jumptoTime(118, this.id)"><p>放咗落去之後呢，你就唔好郁佢啦，等佢自己慢慢煎，若望煎到兩三分鐘，你見到側邊都黃啦，金黃色啦，你就可以反轉佢，又再煎另外嗰邊，煎佢兩分鐘咁啦，煎到熟啦，咁你就可以拎起佢，看，多脆，現在炒洋蔥，洋蔥開始有香味，可以加蒜蓉，再加蒜蓉，讓洋蔥更香，準備醬汁，2匙韓國燒烤汁，韓國燒烤汁本身帶甜，所以我沒有加太多糖。</p></a>
+				<a href="#00:03:17.23" id="00:03:17.23" class="lt" onclick="jumptoTime(197, this.id)"><p>我加了1匙粟粉，攪拌均勻後，放入醬汁，攪拌均勻後，醬汁變稠，可以加少許水，記得要加熱水，如果加冷水，醬汁就會有油彈，我加了2匙熱水，醬汁當糖，很漂亮，可以上碟，嘩，真的很好吃，想知我下次會煮什麼?</p></a>
+				<a href="#00:04:5.23" id="00:04:5.23" class="lt" onclick="jumptoTime(245, this.id)"><p>快點訂閱我的頻道，記得分享給朋友。</p></a>
+</div>
+	</body>
+</html>
