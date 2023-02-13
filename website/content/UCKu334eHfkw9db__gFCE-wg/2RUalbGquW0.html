@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煮大芥菜湯 How to cook Big mustard soup - 香甜好味!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '2RUalbGquW0',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煮大芥菜湯 How to cook Big mustard soup - 香甜好味!</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>今日食乜餸?阿King同你諗掂佢!</p></a>
+				<a href="#00:00:30.00" id="00:00:30.00" class="lt" onclick="jumptoTime(30, this.id)"><p>大芥菜浸水先，然後切成小塊，再浸水洗淨。</p></a>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>豬肩肉切成小塊，然後切成小塊，再浸水洗淨。</p></a>
+				<a href="#00:01:24.00" id="00:01:24.00" class="lt" onclick="jumptoTime(84, this.id)"><p>用兩大碗水，加龍眼、紅棗、杞子、薑煮滾。</p></a>
+				<a href="#00:01:37.00" id="00:01:37.00" class="lt" onclick="jumptoTime(97, this.id)"><p>開滾水煮豬肩肉，煮完煮得煙煙韌韌，再加少少豉油就可以食。</p></a>
+				<a href="#00:01:51.00" id="00:01:51.00" class="lt" onclick="jumptoTime(111, this.id)"><p>水滾後，豬肩肉放入大芥菜，煮滾大約一小時。</p></a>
+				<a href="#00:02:21.00" id="00:02:21.00" class="lt" onclick="jumptoTime(141, this.id)"><p>大芥菜開始變軟，放入雞精。</p></a>
+				<a href="#00:02:27.41" id="00:02:27.41" class="lt" onclick="jumptoTime(147, this.id)"><p>現在把油撇走，不放雞精也可以放鹽，但不要放太多鹽，因為湯有紅棗和龍眼，所以會帶點甜味，現在把豆腐放進去，切成大塊，煮滾，現在就很甜很好喝，真係好味呀，想知我下次煮什麼?快訂閱我的頻道吧，記得分享給朋友。</p></a>
+</div>
+	</body>
+</html>
