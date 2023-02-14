@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如何煎A5和牛 How To Fry A5 Wagyu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'WwX7fklBvQ4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>如何煎A5和牛 How To Fry A5 Wagyu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>今日食乜餸，阿King同你諗掂佢。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>A5和牛，平時出去食和牛好貴㗎嘛，今日我買咗一塊都幾靚嘅日本嘅A5和牛返嚟自己煎。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>呢塊和牛都幾靚㗎，佢個脂肪分泌都好均勻㗎，煎呢個和牛嘅材料好簡單㗎，就係兩粒蒜頭，蒜頭我哋就係中間呢度咁切開佢，佢個切出嚟之後佢個樣幾靚，中間有個心咁㗎，我哋若莫就係一分咁樣，就切一片，咁我哋就切兩粒，咁你就揀啲大粒啲嘅蒜頭嚟切啦。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>咁我哋今次嘅配菜呢，我就揀咗蘆筍同埋調椒，咁我就係煮一煮佢啦，和牛冰箱拎出嚟解凍10分鐘到15分鐘就可以煎㗎啦，只要紅隻鑊，就將個和牛就放上去，你唔使郁佢㗎啦，咁你就放上去等佢自己慢慢煎，咁我哋可以加少少嘅海鹽上個面度，咁陣間佢煎出嚟呢，就可以中和啲嗰個油，同埋令到嗰個面脆啲啦。</p></a>
+				<a href="#00:01:30.00" id="00:01:30.00" class="lt" onclick="jumptoTime(90, this.id)"><p>咁我哋望下，放咗落去呢，佢就開始出油㗎啦，側邊啲啲開始好多油出嚟，我俾你睇睇，煎咗呢，即係20零秒呢，佢個外面啲啲好靚啦，咁第一邊呢，因為呢塊呢都唔係好厚呀，我哋約莫煎佢分零鐘就夠㗎啦，我哋煎和牛要有啲耐性嘅，不過呢就係好難忍㗎，因為佢一路煎就一路好香㗎喎，真係好想快啲煎完佢快啲食，好啦，咁煎完一邊之後呢，。</p></a>
+				<a href="#00:02:9.00" id="00:02:9.00" class="lt" onclick="jumptoTime(129, this.id)"><p>咁就另外一邊反轉佢呢，又係咁煎，煎約莫一分鐘就夠㗎啦，咁我哋而家呢，好多油出咗嚟啦，咁我哋可以將啲蒜片呢，就放落去煎㗎啦，和牛油出嚟，再加埋蒜片味，真係香得好緊要，油爆完蒜片之後唔好嘥，可以用嚟炒飯，加隻雞蛋就已經好好味㗎啦，差唔多煎咗一分鐘㗎啦，你可以睇下，嘩幾香，咁我哋就要煎埋邊邊佢，邊邊都煎到佢脆脆咁。</p></a>
+				<a href="#00:02:59.55" id="00:02:59.55" class="lt" onclick="jumptoTime(179, this.id)"><p>煎完一邊就煎埋另外一邊啦，太好味太香了，煎完後壁咀很脆，外面脆，裏面很軟，黃牛煎完後不要馬上切來吃，要放涼約5分鐘，放涼一點，否則切出來全部都是油，放涼一會，5分鐘很快過去，現在可以切來吃了，再加上炸脆的蒜片，太好味了，我現在切給大家看看，刀子一碰就馬上切開，放入口即溶，食和牛不一定要外出食，在家煎也一樣好味。</p></a>
+				<a href="#00:04:32.49" id="00:04:32.49" class="lt" onclick="jumptoTime(272, this.id)"><p>想知我下次煮什麼?</p></a>
+				<a href="#00:04:35.49" id="00:04:35.49" class="lt" onclick="jumptoTime(275, this.id)"><p>快點訂閱我的頻道吧!</p></a>
+				<a href="#00:04:37.49" id="00:04:37.49" class="lt" onclick="jumptoTime(277, this.id)"><p>記得分享給朋友觀看喔!</p></a>
+</div>
+	</body>
+</html>
