@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 鵪鶉蛋燒賣 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TYw8y14y3Kc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 鵪鶉蛋燒賣 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.48" id="00:00:2.48" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整鵪鶉蛋燒賣，睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔。</p></a>
+				<a href="#00:00:10.52" id="00:00:10.52" class="lt" onclick="jumptoTime(10, this.id)"><p>咁你先唔會錯過我最新嘅資訊㗎!，首先處理豬肉，這裡有半斤，大約300克上肉，切走肥肉和筋，我們只需要200克瘦肉，切成小塊，用1克梳打粉，和20克水拌勻，之後拿去冷藏一小時，做點心用急凍蝦就可以了，這樣才像酒樓吃到的味道，我這裡有200克急凍白蝦，解凍後用12克砂糖，12克馬鈴薯澱粉，浸過面的水醃15分鐘。</p></a>
+				<a href="#00:02:2.87" id="00:02:2.87" class="lt" onclick="jumptoTime(122, this.id)"><p>因為會很快沉澱，所以要時不時攪拌一下，之後開大水喉， 煮15分鐘，如果想省水，可以較細，但要配合用手攪拌</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:40.44" id="00:02:40.44" class="lt" onclick="jumptoTime(160, this.id)"><p>用廚房紙吸乾，不需要蓋保鮮紙，放入冰箱抽乾，要一個小時，把冬菇浸軟，切成小粒，備用，冷水下鵪鶉蛋，水滾開始計時，煮兩分鐘，放入冰水降溫</p></a>
+				<a href="#00:03:37.97" id="00:03:37.97" class="lt" onclick="jumptoTime(217, this.id)"><p>每天中午12點 喜歡我的影片請訂閱或按讚，白色燒賣皮，你可以在這類型的粉麵店買到。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:7.96" id="00:04:7.96" class="lt" onclick="jumptoTime(247, this.id)"><p>在冰箱取出蝦，用廚房紙吸收蝦的瓦色，接著到調味，材料有，水40克，鹽4克，砂糖20克，豬油28克，馬鈴薯澱粉16克，雞粉10克，麻油少許，胡椒粉少許，將雞粉，糖，胡椒粉，水和麻油混合，放入廚師機，放鹽和馬鈴薯澱粉，用中速打至有黏性，打好後放豬肉，然後放豬油，逐少逐少加入調味汁，每一次都要等它吸收了才再加</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:59.41" id="00:05:59.41" class="lt" onclick="jumptoTime(359, this.id)"><p>每次都要等它吸收了才再加，最後加入冬菇，拌勻後用高速再打一兩分鐘，完成後放雪櫃至少3小時，最好是雪一晚，讓它更結實，會好包好多。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:0.38" id="00:07:0.38" class="lt" onclick="jumptoTime(420, this.id)"><p>放一顆鵪鶉蛋在燒賣皮中間，再鋪上餡料，一邊轉一邊收窄，餡料要高過外皮才好看，撥平表面就完成了，我這個份量總共包了18粒。</p></a>
+				<a href="#00:07:51.39" id="00:07:51.39" class="lt" onclick="jumptoTime(471, this.id)"><p>水滾落，用大火蒸8分鐘，鵪鶉蛋燒賣就完成了，希望你喜歡我今次的分享吧!</p></a>
+				<a href="#00:08:14.91" id="00:08:14.91" class="lt" onclick="jumptoTime(494, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

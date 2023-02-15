@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 菜肉生煎包 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Buz9LJYug70',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 菜肉生煎包 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日我會教你整生煎菜肉包。</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>材料有300克豬肉，呢個部位叫做上肉，或者叫做前赤肉，好適合用嚟做肉餡。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>水76克，鹽2克，雞粉13克，砂糖10克，馬鈴薯澱粉6克，麻油5克，胡椒粉1克，用水開咗啲雞粉，糖，胡椒粉，再落麻油，備用。</p></a>
+				<a href="#00:00:56.00" id="00:00:56.00" class="lt" onclick="jumptoTime(56, this.id)"><p>將豬肉剁碎，落鹽同埋生粉，攪到佢產生黏性。</p></a>
+				<a href="#00:01:29.56" id="00:01:29.56" class="lt" onclick="jumptoTime(89, this.id)"><p>分幾次加調味，每次都要等它吸收完才再加</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:1.26" id="00:02:1.26" class="lt" onclick="jumptoTime(121, this.id)"><p>每次都要等它吸收完才再加調味，如果想深色些可以加少許老抽，最後用力打多十幾下，完成了，我會放雪櫃醃一晚，讓它入味，菜選用椰菜，這裡有300克，切碎後放1茶匙鹽，醃半小時，準備薑米和蔥花，加了薑會好吃很多，菜已經醃了半小時，用豆漿袋抓乾水份，備用。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:41.56" id="00:03:41.56" class="lt" onclick="jumptoTime(221, this.id)"><p>接著到搓麵團，材料有，低筋麵粉152克，水74克，砂糖32克，泡打粉4克，速發酵母4克，豬油4克，將泡打粉和麵粉拌勻，放在桌面，中間開個窩，再在外面畫個圈，倒入90%的水，酵母，砂糖，豬油，先拌勻裡面的圈，再把外面的圈放進去，拌勻後就開始搓</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:8.88" id="00:05:8.88" class="lt" onclick="jumptoTime(308, this.id)"><p>MING PAO CANADA CANADA.COM</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:14.49" id="00:05:14.49" class="lt" onclick="jumptoTime(314, this.id)"><p>每天中午12點準時收看 喜歡我的影片請訂閱或按讚，如果覺得乾了，將剩下的水逐少逐少加進去，搓至表面光滑，黏手不黏桌子就可以了，將麵團分成12份，做轉體，將不平滑的地方收進去。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:37.87" id="00:06:37.87" class="lt" onclick="jumptoTime(397, this.id)"><p>包之前要先完成餡料，蔬菜之類這時候才好下，不怕放久了會出水，最後加少許芝麻油，麵皮要中間厚， 側邊薄，多撥些餡在中間，用手指擋著餡料，另一隻手不停地打摺，收口後用兩隻手搓高麵包，完成後發酵20分鐘。</p></a>
+				<a href="#00:08:58.27" id="00:08:58.27" class="lt" onclick="jumptoTime(538, this.id)"><p>在煎之前要準備麵粉水，有8克低筋麵粉，80克水，和1茶匙生油，放油，把麵包整齊排好，開火，慢慢煎至麵包底微微轉色，煎好後，在鍋邊加入大約三分之一高度的熱水，因為麵包底有煎過，會沒那麼吸水，就算浸著也不怕穿，收乾水再放多次，差不多沒水了，放些炒過的芝麻在表面，在旁邊加些麵粉水，薄薄的一層就夠了。</p></a>
+				<a href="#00:10:13.24" id="00:10:13.24" class="lt" onclick="jumptoTime(613, this.id)"><p>不要動它，下葱花，底部變成金黃色就可以夾起，菜肉生煎包就完成了，希望你喜歡我今次的分享。</p></a>
+				<a href="#00:10:58.81" id="00:10:58.81" class="lt" onclick="jumptoTime(658, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 壽桃包 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xeCzMb4L6OY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 壽桃包 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.76" id="00:00:2.76" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你做壽桃包，如果屋企有老人家生日，收到一定會好開心，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:21.46" id="00:00:21.46" class="lt" onclick="jumptoTime(21, this.id)"><p>首先做個餡，材料有，鹹蛋黃8個，蓮蓉240克，蛋黃最好買鹹蛋回來自己剝，油份比較足，洗乾淨表面蛋白，用140度去焗，焗到表面開始冒油，就可以拿出來，大約12至15分鐘，又或者用大火蒸15分鐘，不過就冇咁香，蓮蓉要搓軟，分成每粒重30克，8粒蛋黃在裏面，然後將蛋黃分開，8粒蛋黃在裏面，搓圓。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:27.22" id="00:01:27.22" class="lt" onclick="jumptoTime(87, this.id)"><p>咁樣就完成啦，放入雪櫃備用。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:36.55" id="00:01:36.55" class="lt" onclick="jumptoTime(96, this.id)"><p>麵團，材料有，低筋麵粉228克，砂糖46克，泡打粉6克，水134克，速發酵母6克，豬油6克，混合麵粉和泡打粉，在中間開一個窩，在外面畫一個圈，加入酵母，砂糖，豬油，倒入八成水，剩下的用來調節，搓至表面光滑，黏手不黏桌子就可以了，有時麵包蒸出來表面不平滑，原因是麵團內還有很多空氣，所以我會用棍子壓空氣出來，重覆3-4次。</p></a>
+				<a href="#00:04:31.55" id="00:04:31.55" class="lt" onclick="jumptoTime(271, this.id)"><p>之後將它平均分成8份，轉體，把不漂亮的地方收進去</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:2.54" id="00:06:2.54" class="lt" onclick="jumptoTime(362, this.id)"><p>每週固定3集 喜歡我的影片請訂閱或按讚，完成後不用等。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:16.88" id="00:06:16.88" class="lt" onclick="jumptoTime(376, this.id)"><p>可以馬上開始包，取麵團，用棍子推開，硬駁條邊，不用太大塊，大過手掌少少就夠</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:5.35" id="00:07:5.35" class="lt" onclick="jumptoTime(425, this.id)"><p>影片就到這，記得幫我訂閱、按讚及分享唷，收口後撕走多餘的麵團，收好麵包，用虎口夾出角，最後用兩隻手搓高麵包便完成了，排好蒸籠，蓋上發酵20至25分鐘，發酵完後，按下去的感覺像棉花糖，水滾了，用大火蒸7分鐘，蒸到一半的時候，用一支塗了油的餡條，或者是匙羹尾，在中間壓直線，蒸好後， 等一會才開蓋。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:46.65" id="00:08:46.65" class="lt" onclick="jumptoTime(526, this.id)"><p>等到熱氣走光就可以上色，顏色我會選用玫瑰粉紅色或桃紅色，如果是水製的，可以直接擠在廚房紙上，而粉製的，就用熱水先開溶，我們用牙刷沿著包中間的線上色，垂直擠牙刷，用餡挑或湯匙尾向上刮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:09:37.65" id="00:09:37.65" class="lt" onclick="jumptoTime(577, this.id)"><p>用手指尖刮出線條，用玫瑰粉色沾一點顏色，主要材料是燉麵和大滾水，比例是一份燉麵對半份大滾水，如果覺得乾就再加些滾水，加入綠色色素，一個包有兩塊葉， 分成16粒， 每粒重2克，壓成葉形狀， 再隨意畫上葉紋</p></a>
+				<a href="#00:12:13.90" id="00:12:13.90" class="lt" onclick="jumptoTime(733, this.id)"><p>感謝您收睇時局新聞，再會!，水滾落，用大火蒸3分鐘，等到熱氣走曬仲係暖暖地就可以黐喺包面，希望你鍾意我今次嘅分享啦!</p></a>
+				<a href="#00:12:56.35" id="00:12:56.35" class="lt" onclick="jumptoTime(776, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+	</body>
+</html>

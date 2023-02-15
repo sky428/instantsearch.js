@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 香甜的白糖糕就是這麼簡單 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'eq9QpJ3mYyA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 香甜的白糖糕就是這麼簡單 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.60" id="00:00:2.60" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整白糖糕，一啲都唔複雜。</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:15.20" id="00:00:15.20" class="lt" onclick="jumptoTime(15, this.id)"><p>STEP 1. 材料，首先睇下材料，有114克嘅砂糖，210克嘅粘米粉，416克嘅水，將粘米粉同埋砂糖慢慢咁用416克嘅水開咗佢。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:59.50" id="00:00:59.50" class="lt" onclick="jumptoTime(59, this.id)"><p>STEP 2. 製作奶油，將奶油放入鍋中，將砂糖加熱。</p></a>
+				<a href="#00:01:7.50" id="00:01:7.50" class="lt" onclick="jumptoTime(67, this.id)"><p>將砂糖加熱至溫度達到180度。</p></a>
+				<a href="#00:01:11.50" id="00:01:11.50" class="lt" onclick="jumptoTime(71, this.id)"><p>將奶油放入鍋中，將砂糖加熱至溫度達到180度。</p></a>
+				<a href="#00:01:17.50" id="00:01:17.50" class="lt" onclick="jumptoTime(77, this.id)"><p>將奶油加熱至180度。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:19.32" id="00:01:19.32" class="lt" onclick="jumptoTime(79, this.id)"><p>再熱水攪拌，直至有些一團團的黏著打蛋器，繼續攪至順滑，想好些就過篩一次，因為之後會放烤模，所以要放置30至35度。</p></a>
+				<a href="#00:02:6.89" id="00:02:6.89" class="lt" onclick="jumptoTime(126, this.id)"><p>首先看看材料，4克速發酵母，4克泡打粉，58克水，1湯匙生油，把酵母，泡打粉和58克水混合，倒入粉漿中拌勻，蓋上保鮮膜， 放在室溫發酵90分鐘，溫度會影響發酵時間，天氣冷會慢很多， 可能要2小時，天氣熱會快些， 大約80分鐘就應該可以了，已經發酵了90分鐘，見到有很多透明的泡泡在表面，最後放1湯匙生油， 拌勻就可以拿去蒸。</p></a>
+				<a href="#00:04:15.96" id="00:04:15.96" class="lt" onclick="jumptoTime(255, this.id)"><p>傳統方法是用扁身竹篩來蒸，鋪一塊浸濕了的腸粉布在表面，你可以用高身的梯碟來代替，在裡面塗上少許油，水滾了，用大火蒸25分鐘，放涼後就可以切件享用，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye!</p></a>
+</div>
+	</body>
+</html>

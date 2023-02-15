@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 珍珠雞 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'tFDRx-WnfoA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 珍珠雞 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.68" id="00:00:2.68" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整珍珠雞。</p></a>
+				<a href="#00:00:6.72" id="00:00:6.72" class="lt" onclick="jumptoTime(6, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔。</p></a>
+				<a href="#00:00:10.76" id="00:00:10.76" class="lt" onclick="jumptoTime(10, this.id)"><p>咁樣你先唔會錯過我最新嘅資訊㗎!，材料有1斤糯米， 2隻雞腿， 2條臘腸， 2個鹹蛋黃， 20克浸泡好的蝦米， 適量冬菇，荷葉可在街市雜貨舖買到， 一塊可以包2隻， 今次總共包到18隻，糯米前一晚浸泡， 洗淨， 要多預水， 因為糯米會發脹，天氣熱的話， 要放入雪櫃，荷葉用水浸軟。</p></a>
+				<a href="#00:00:59.33" id="00:00:59.33" class="lt" onclick="jumptoTime(59, this.id)"><p>底和面都要擦乾淨，把中間的部分剪走，一開二，deuxième maneuver</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.53" id="00:01:23.53" class="lt" onclick="jumptoTime(83, this.id)"><p>parag rue，verz 35</p></a>
+				<a href="#00:01:38.31" id="00:01:38.31" class="lt" onclick="jumptoTime(98, this.id)"><p>ixel，走了</p></a>
+				<a href="#00:01:38.15" id="00:01:38.15" class="lt" onclick="jumptoTime(98, this.id)"><p>yson，brauchen</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:46.41" id="00:01:46.41" class="lt" onclick="jumptoTime(106, this.id)"><p>kicking，отлич，Grace，slowly，Ned，Tap，Maßnahmen，�..</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:01:21.61" id="00:01:21.61" class="lt" onclick="jumptoTime(81, this.id)"><p>Dieses</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:44.73" id="00:01:44.73" class="lt" onclick="jumptoTime(104, this.id)"><p>Nebr，ając，abad，troop，♡，�，remot conducting，Ryan</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:18.27" id="00:01:18.27" class="lt" onclick="jumptoTime(78, this.id)"><p>ober</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:40.15" id="00:01:40.15" class="lt" onclick="jumptoTime(100, this.id)"><p>sentences，Gud，prisons，dilemma，compact，Imag grade</p></a>
+				<a href="#00:01:41.97" id="00:01:41.97" class="lt" onclick="jumptoTime(101, this.id)"><p>DON versatile，平ожалуйста，Això</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.31" id="00:01:23.31" class="lt" onclick="jumptoTime(83, this.id)"><p>którym，Init Dollar，fashionable，dialесть，ла，食べ member，falling，Principal，izquier은</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:41.89" id="00:01:41.89" class="lt" onclick="jumptoTime(101, this.id)"><p>riages，indu re탄，Never，part conveyed，Australian，вокpción</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:27.75" id="00:01:27.75" class="lt" onclick="jumptoTime(87, this.id)"><p>researched，ל，eties，unft，storm，illnesses，week，úcar，player</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:24.85" id="00:01:24.85" class="lt" onclick="jumptoTime(84, this.id)"><p>웃음，цен，raits，Master，Serge，そうですね，bolag，isso</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:46.05" id="00:01:46.05" class="lt" onclick="jumptoTime(106, this.id)"><p>rão，Move kleiner，拜拜，洗走鹹蛋黃表面的蛋白，加入少許玫瑰露，和臘腸一起蒸10分鐘，冬菇，臘腸，蝦米，雞腿肉，全部切碎，鹹蛋黃切碎。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:28.39" id="00:02:28.39" class="lt" onclick="jumptoTime(148, this.id)"><p>依次序汆水，雞肉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:30.89" id="00:02:30.89" class="lt" onclick="jumptoTime(150, this.id)"><p>冬菇，臘腸，蝦米，瀝乾水後量一下有多重，按重量來調味，每半斤大約300克，需要2克鹽，4克雞粉，6克糖，6克蠔油，少許胡椒粉，少許麻油，用200毫升水開水，之後準備少許老抽，少許紹興酒，1湯匙炸乾蔥，即是乾蔥油內的汁，和生粉水，最好用馬鈴薯澱粉來開，冷鑊下炸乾蔥，和其他材料，炒勻後開大火煮，炒至金黃色。</p></a>
+				<a href="#00:03:59.64" id="00:03:59.64" class="lt" onclick="jumptoTime(239, this.id)"><p>聽到滋滋聲就可以在鑊邊撒酒，然後加調味汁，調小火，煮大約3分鐘，用老抽來調色，這次餡料要稀一點，多一點汁，加生粉水之前要看一下，如果太少水的話，就要加一點，滾起後關火，逐少逐少埋芡</p></a>
+				<a href="#00:05:40.51" id="00:05:40.51" class="lt" onclick="jumptoTime(340, this.id)"><p>字幕by索兰娅😊，再開火，煮滾便完成了，攤凍備用。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:11.03" id="00:06:11.03" class="lt" onclick="jumptoTime(371, this.id)"><p>糯米晾乾水後用大火蒸1小時，中途開蓋炒鬆，如果覺得乾身的話，就要灑多些水下去，要煮到軟身，接著拿去磅重，按重量來調味，我這裡有兩斤，大約是1200克，需要6克鹽，16克雞粉，24克砂糖，24克豬油，少許芝麻油，少許胡椒粉，1湯匙炸乾蔥，少許熱水，將所有調味料混合，再混合糯米飯就完成了，所有材料都準備好。</p></a>
+				<a href="#00:07:17.67" id="00:07:17.67" class="lt" onclick="jumptoTime(437, this.id)"><p>現在可以開始包了，葉底向外，先鋪一層30克糯米飯。</p></a>
+				<a href="#00:07:24.75" id="00:07:24.75" class="lt" onclick="jumptoTime(444, this.id)"><p>再鋪一層餡料，再鋪上少許鹹蛋黃碎，最後再鋪多一層30克糯米飯，用力捲實就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:28.12" id="00:08:28.12" class="lt" onclick="jumptoTime(508, this.id)"><p>蠔葉翻蒸會失去香味，所以蒸多少就蒸多少，剩下的放冰箱，即是-18度那格，可以保存很久，剛剛包好的就用大火蒸10分鐘，如果放過冰箱的，就不用解凍，用大火蒸15分鐘，希望你喜歡我今次的分享</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:22.12" id="00:09:22.12" class="lt" onclick="jumptoTime(562, this.id)"><p>請訂閱我的頻道</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:44.38" id="00:09:44.38" class="lt" onclick="jumptoTime(584, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

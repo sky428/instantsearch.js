@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 空心煎堆 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'C4bZfA6kB5A',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 空心煎堆 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.80" id="00:00:2.80" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整軟身啲嘅煎堆，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔。</p></a>
+				<a href="#00:00:13.32" id="00:00:13.32" class="lt" onclick="jumptoTime(13, this.id)"><p>咁樣你先唔會錯過我最新嘅資訊㗎!，材料有152克糯米粉，67克砂糖，114克水，8克泡打粉，2克梳打粉，白芝麻，一定要用生芝麻，否則炸到燶，以上份量可以做到10個左右，將泡打粉， 梳打粉和糯米粉拌勻，倒在桌面， 開一個窩，再畫一個圈，加入糖和八成水，拌勻後， 再將外面改圈的麵粉撥入去，要拌到見不到乾粉為止。</p></a>
+				<a href="#00:01:13.24" id="00:01:13.24" class="lt" onclick="jumptoTime(73, this.id)"><p>製作麵粉的時間可以按照個人喜好</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.24" id="00:01:23.24" class="lt" onclick="jumptoTime(83, this.id)"><p>麵粉差不多完成了， 把麵粉放在一旁，如果不想， 可以用手拿去揉，麵粉可以用手揉，要用力推， 利用熱力整溶糖， 令所有材料融合更好，如果要加水，每次用手逐少拍下去，水份要控制好，太軟煎堆會扁，太硬又會漲不起，怎樣才算完成呢?</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:5.12" id="00:02:5.12" class="lt" onclick="jumptoTime(125, this.id)"><p>只要撕一粒出來，按下去沒有裂紋就行了，水不需要用完，包好， 鬆筋半小時。</p></a>
+				<a href="#00:02:26.52" id="00:02:26.52" class="lt" onclick="jumptoTime(146, this.id)"><p>加不加餡料隨你，豆沙餡料我用調味罐頭紅豆，正重190克，用篩隔走皮，開小火，放一湯匙油，慢慢把紅豆泥炒至乾身，放涼後分成10份，之後拿去冷藏，稍後會好包些。</p></a>
+				<a href="#00:03:26.38" id="00:03:26.38" class="lt" onclick="jumptoTime(206, this.id)"><p>將粉團分成10份，如果不需要放餡，搓圓便可以，表面一定要乾滑， 沒有裂紋，包裹一下， 可能會有裂紋，但不要緊， 照做便可以了，浸水，灑上芝麻，一來可以黏緊一點，二來不易燒焦，最後要搓緊。</p></a>
+				<a href="#00:04:54.71" id="00:04:54.71" class="lt" onclick="jumptoTime(294, this.id)"><p>раб Sophieное</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:57.33" id="00:04:57.33" class="lt" onclick="jumptoTime(297, this.id)"><p>Pode，produz，suscrisil，Energie，evangelAmericans，b，things，对混erek，niewує，amily，燒油至150度， 炸煎堆不可以太高溫，沒有溫度計， 可以撕一小粒粉團試試，可以立即浮上來， 即夠熱，然後關火，慢慢放煎堆， 千萬不要碰到它們，不要放太多， 留多些空間給它們膨脹。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:28.98" id="00:05:28.98" class="lt" onclick="jumptoTime(328, this.id)"><p>油一定要浸過煎堆面，想用少些油， 可以像我這樣用高身的小鍋，用鑊鏟輕輕地動動旁邊的油， 防止它們黏底，等它們全部浮起， 就可以開小火，一開始要輕輕地按， 一邊按一邊淋油，定型後可以慢慢加大力度，不時翻動， 令顏色均勻，醬汁起了， 就不用再壓， 繼續炸至夠色，起鑊前要調大火， 炸多十多秒， 把油逼出來， 定型。</p></a>
+				<a href="#00:06:50.62" id="00:06:50.62" class="lt" onclick="jumptoTime(410, this.id)"><p>撈起後先熄火， 再落第二批，希望你喜歡這次的分享。</p></a>
+				<a href="#00:07:2.04" id="00:07:2.04" class="lt" onclick="jumptoTime(422, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 小籠包 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jpdEQmcanQo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 小籠包 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.48" id="00:00:2.48" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你製作小籠包。</p></a>
+				<a href="#00:00:6.56" id="00:00:6.56" class="lt" onclick="jumptoTime(6, this.id)"><p>看片之前記得要訂閱，同埋撳埋旁邊既鐘仔，咁你先唔會錯過我最新既資訊㗎!</p></a>
+				<a href="#00:00:17.74" id="00:00:17.74" class="lt" onclick="jumptoTime(17, this.id)"><p>首先要做個皮，材料有，中筋麵粉67克，水42.5克，澱粉9.5克，豬油1克，將所有材料搓成團，包好， 冷藏至少3小時。</p></a>
+				<a href="#00:01:44.03" id="00:01:44.03" class="lt" onclick="jumptoTime(104, this.id)"><p>之後做皮凍，材料有，滾水172克，凍水28克，雞粉1.5克，魚膠粉7克，用凍水開了魚膠粉，等大約5分鐘，用滾水開啲雞粉， 整成雞湯，點解唔用現成嘅清雞湯呢?</p></a>
+				<a href="#00:02:16.68" id="00:02:16.68" class="lt" onclick="jumptoTime(136, this.id)"><p>因為我覺得清雞湯味太濃， 會蓋過啲肉味，將魚膠加落雞湯攪勻，湯的溫度至少要有60度才溶得到魚膠，過篩放涼後放入冰箱凝固</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:21.64" id="00:03:21.64" class="lt" onclick="jumptoTime(201, this.id)"><p>每天中午12點準時收看 喜歡我的影片請訂閱或按讚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:27.87" id="00:03:27.87" class="lt" onclick="jumptoTime(207, this.id)"><p>接著要準備少許薑蔥水，材料有，薑4克，蔥白8克，水40克，用攪拌機打成汁，輪到肉餡了，材料有，200克豬上肉，肥瘦比例是3比7，即是60克肥肉，和140克瘦肉，這個部位肥瘦分明，沒有筋，有黏性，很適合用來做肉餡，肥和瘦分開剁，如果將肥豬肉，事先冷藏至變冰，就會容易多些，調味材料有，砂糖10克，鹽4克。</p></a>
+				<a href="#00:04:32.51" id="00:04:32.51" class="lt" onclick="jumptoTime(272, this.id)"><p>雞蛋半隻，大約25克，胡椒粉半克，麻油4克，生抽4克，將瘦肉放入大碗內，先放鹽和生抽，攪拌至有黏性，逐少逐少加入蛋汁，每一次都要等它吸收完才再加</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:49.73" id="00:05:49.73" class="lt" onclick="jumptoTime(349, this.id)"><p>每次都要等它吸收完才再加蛋汁，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，再逐少逐少加入薑蔥水，每一次讓它吸收才加</p></a>
+				<a href="#00:07:9.43" id="00:07:9.43" class="lt" onclick="jumptoTime(429, this.id)"><p>每週固定3-4部影片 喜歡我的影片請訂閱或按讚，攪拌後加糖，和胡椒粉，然後放入肥豬肉，最後加上麻油，完成後放冰箱冷藏1小時，1小時後放入零至四度的一層備用，現在要等皮冷藏好再繼續。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:5.82" id="00:08:5.82" class="lt" onclick="jumptoTime(485, this.id)"><p>取出麵皮，放室溫30分鐘，把麵皮搓圓，分成每粒重6克，總共切到19粒，按扁，放一旁備用，切碎皮凍，拌入肉餡中，做好後盡快包，因為會融化，如果開始融化，就要放回冰箱，拿一粒麵團，用左手轉一塊皮，右手用力，在邊位向內推，接近中心點，再向內收撥，中間厚， 側邊薄，盡量多些餡料在中間，用左手的手指擋著餡料，同時用左手食指。</p></a>
+				<a href="#00:09:52.54" id="00:09:52.54" class="lt" onclick="jumptoTime(592, this.id)"><p>以順時針的方向一邊轉，一邊向前推摺出來，右手將摺疊按實，如果做到皮薄透餡就最好了。</p></a>
+				<a href="#00:10:34.36" id="00:10:34.36" class="lt" onclick="jumptoTime(634, this.id)"><p>水滾落， 用大火蒸5分鐘，千祈唔好蒸過濃，包多咗嘅唔好蒸，排開啲放入冰格，雪硬之後就可以改用袋裝起佢，要食嘅時候唔使解凍，用大火蒸6至7分鐘，不過口感就一定冇即做即蒸咁好食，而且個皮亦都會比較容易穿，希望你鍾意我今次嘅分享啦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:31.36" id="00:11:31.36" class="lt" onclick="jumptoTime(691, this.id)"><p>多謝您收睇時局新聞，再會!，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

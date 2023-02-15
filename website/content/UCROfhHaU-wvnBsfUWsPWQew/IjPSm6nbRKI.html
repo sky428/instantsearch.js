@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 黑芝麻湯圓 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'IjPSm6nbRKI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 黑芝麻湯圓 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.64" id="00:00:2.64" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整芝麻湯圓，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:17.44" id="00:00:17.44" class="lt" onclick="jumptoTime(17, this.id)"><p>首先做個餡，材料有，76克嘅純黑芝麻粉，38克嘅砂糖，56克嘅豬油，用慢火煮，煮到糖溶曬就可以舀起，放入冰格冷凍，約半小時，然後拿出來搓軟，再分成16粒，餡料就完成了，放入雪櫃備用。</p></a>
+				<a href="#00:01:11.61" id="00:01:11.61" class="lt" onclick="jumptoTime(71, this.id)"><p>湯圓皮的材料有，200克糯米粉，100克常溫水，60克大滾水，4克豬油，把糯米粉倒入大碗裡，放豬油，和大滾水拌勻，之後倒在桌上，開一個窩，然後再畫一個圈，倒入九成的常溫水，再倒入少許的水， 拌勻， 直至見不到乾粉，用力推，利用熱力融化糖，令所有材料融合更好，如果覺得乾，每次用手逐少拍下去，怎樣才算完成呢。</p></a>
+				<a href="#00:02:39.89" id="00:02:39.89" class="lt" onclick="jumptoTime(159, this.id)"><p>只要撕一粒出來，按下去沒有裂紋就可以了，水不需要用完，同樣分成16粒，然後就可以包湯圓了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.77" id="00:03:17.77" class="lt" onclick="jumptoTime(197, this.id)"><p>今天視頻就分享到這裡了，下次再見，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，再煮多10分鐘。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:47.80" id="00:03:47.80" class="lt" onclick="jumptoTime(227, this.id)"><p>另一邊要煮湯圓，水滾落，煮到浮起就可以了，再用糖水煮多2-3分鐘，就完成了，希望你喜歡我今次的分享。</p></a>
+				<a href="#00:04:28.22" id="00:04:28.22" class="lt" onclick="jumptoTime(268, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你亦可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

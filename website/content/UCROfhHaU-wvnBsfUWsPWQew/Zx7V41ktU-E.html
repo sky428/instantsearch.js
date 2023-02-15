@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蘿蔔絲黃金大餅 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Zx7V41ktU-E',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蘿蔔絲黃金大餅 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.94" id="00:00:2.94" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你做黃金大餅，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁你先唔會錯過我最新資訊㗎!</p></a>
+				<a href="#00:00:19.13" id="00:00:19.13" class="lt" onclick="jumptoTime(19, this.id)"><p>首先做餡料， 蘿蔔要選擇表面光滑， 沒有鬚根和聚首，刨深一點， 刨走表面白色那層，切幼條，切好後拿去汆水， 水滾後可以舀起， 盡量擒乾，擒乾後量一下重量， 根據重量按比例調味，每600克汆水的蘿蔔要4克鹽，32克砂糖，8克雞粉，20克豬油，少許麻油，少許胡椒粉，1湯匙榨乾蔥蓉，還有一些麻芡用的生粉， 凍鑊放乾蔥蓉和蘿蔔。</p></a>
+				<a href="#00:01:16.13" id="00:01:16.13" class="lt" onclick="jumptoTime(76, this.id)"><p>開中火， 翻炒均勻，然後加調味，煮一會兒， 讓它入味，埋芡前要開大火煮滾，滾起關火，逐少逐少加入生粉，加些蘿蔔掛在鑊上就夠了，最後開火，煮熟餡料，聽到滋滋聲就可以舀起，放一邊 放涼備用。</p></a>
+				<a href="#00:03:20.26" id="00:03:20.26" class="lt" onclick="jumptoTime(200, this.id)"><p>接下來做餅皮，材料有，114克低筋麵粉，23克砂糖，60克水，3克泡打粉，3克速發酵母，3克豬油，這個份量可以做到兩個，將泡打粉和麵粉攪拌均勻，倒在桌面，在中間開一個窩，在外面再畫一個圈，放砂糖，酵母，和豬油，加入八至九成的水，留下的用來調節，再混合裡面的麵團，再將外面的圈撥入去搓</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:15.03" id="00:05:15.03" class="lt" onclick="jumptoTime(315, this.id)"><p>每週固定3 部影片 喜歡我的影片請訂閱或按讚，搓至表面光滑， 黏手不黏桌子就可以了，蓋上鬆筋10分鐘，將麵團分成兩等份，抹走麵團內的空氣，然後轉體， 將不漂亮的位置收進去。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:21.88" id="00:06:21.88" class="lt" onclick="jumptoTime(381, this.id)"><p>硬成一塊中間厚，外面薄的皮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:53.70" id="00:06:53.70" class="lt" onclick="jumptoTime(413, this.id)"><p>MING PAO CANADA CANADA.COM，要大手掌一點，盡量多包些餡料，兩個餅只用了四分一的餡料，餘下的可以放在雪櫃保存2-3天，還有兩款點心會用到， 記住留意喔!</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:35.15" id="00:07:35.15" class="lt" onclick="jumptoTime(455, this.id)"><p>不用修得很漂亮，只要夾緊，沒有穿洞就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:7.49" id="00:08:7.49" class="lt" onclick="jumptoTime(487, this.id)"><p>每週固定3集 喜歡我的影片請訂閱或按讚，準備一盆水和生芝麻，用麵包浸水，浸一面就夠，水位要浸到半個麵包，然後上芝麻，輕輕按壓，讓麵包黏住，然後蓋上發酵 20-25 分鐘，麵包大了點， 按下去像棉花糖就可以了。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:09:6.14" id="00:09:6.14" class="lt" onclick="jumptoTime(546, this.id)"><p>水滾了，用大火蒸8分鐘，蒸了四分鐘後開蓋，然後再蒸四分鐘，時間到了，關火，但不要開蓋，再等5分鐘，才拿出來放涼。</p></a>
+				<a href="#00:09:50.07" id="00:09:50.07" class="lt" onclick="jumptoTime(590, this.id)"><p>燒熱油至140度，份量至少浸泡半個麵包</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:54.87" id="00:09:54.87" class="lt" onclick="jumptoTime(594, this.id)"><p>炸至底部金黃色才翻面</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:18.55" id="00:10:18.55" class="lt" onclick="jumptoTime(618, this.id)"><p>炸至兩邊都一樣色，按下去硬身就可以上碟了。</p></a>
+				<a href="#00:10:24.17" id="00:10:24.17" class="lt" onclick="jumptoTime(624, this.id)"><p>希望你喜歡我今次的分享</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:33.15" id="00:10:33.15" class="lt" onclick="jumptoTime(633, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+	</body>
+</html>

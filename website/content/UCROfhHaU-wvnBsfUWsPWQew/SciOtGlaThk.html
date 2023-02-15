@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 甜薄罉 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'SciOtGlaThk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 甜薄罉 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.68" id="00:00:2.68" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整甜薄罉，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:18.08" id="00:00:18.08" class="lt" onclick="jumptoTime(18, this.id)"><p>首先會教咗你點樣整個甜餡，呢個餡可以用喺其他唔同嘅地方，就例如有角仔呀糯米糍等等，材料有兩份嘅椰絲，我呢一度係120克，一份嘅豬豆花生60克，一份嘅白芝麻60克，同埋半份嘅砂糖30克，材料嘅份量冇硬性規定嘅，按比例就可以㗎啦，我哋用白鑊細火炒香啲白芝麻，炒至微微金黃色，看到它在鑊裡跳跳跳就可以了。</p></a>
+				<a href="#00:01:3.83" id="00:01:3.83" class="lt" onclick="jumptoTime(63, this.id)"><p>放涼備用，然後用白鑊小火，朝向地椰絲，炒至轉色就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:19.48" id="00:01:19.48" class="lt" onclick="jumptoTime(79, this.id)"><p>可以放涼備用，花生也是一樣， 用白鑊小火炒， 方便去衣，去除衣後，燒熱油至120度，放入花生試試，旁邊有小氣泡，炸至微微金黃色撈起，攤凍備用，放入保鮮袋， 將花生放涼後， 將其碎碎，不想自己炸的話，可以去烘焙店看看有沒有，將所有材料拌勻，再按個人口味調整甜度，甜餡就完成了。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:8.75" id="00:03:8.75" class="lt" onclick="jumptoTime(188, this.id)"><p>材料有，114克低筋麵粉，10克吉士粉，29克砂糖，76克糯米粉，半隻雞蛋，半湯匙無鹽牛油，和342克水，首先用水開麵粉，糯米粉，吉士粉和砂糖，然後放雞蛋和牛油，最後過一過篩就完成了。</p></a>
+				<a href="#00:05:8.95" id="00:05:8.95" class="lt" onclick="jumptoTime(308, this.id)"><p>開小火， 用廚房紙塗些油，倒入麵糊， 很快地把麵糊混合在一起，當表面開始轉深色，還有鋤邊可以反轉，煎好後， 要放置一會兒， 邊位會有點硬， 用剪刀修一下，最後鋪上甜餡，短實就完成了，希望你喜歡我今次的分享</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:54.23" id="00:06:54.23" class="lt" onclick="jumptoTime(414, this.id)"><p>記得訂閱、按讚及分享唷，如果喜歡我的影片，就記得給個讚和訂閱我的頻道啦!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:22.89" id="00:07:22.89" class="lt" onclick="jumptoTime(442, this.id)"><p>你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們的啦!</p></a>
+				<a href="#00:07:31.89" id="00:07:31.89" class="lt" onclick="jumptoTime(451, this.id)"><p>下次再見啦!拜拜!</p></a>
+</div>
+	</body>
+</html>

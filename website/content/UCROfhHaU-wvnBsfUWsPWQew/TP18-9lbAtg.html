@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 新鮮食材不一定最好，原來茶樓是用它來做燒賣的 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'TP18-9lbAtg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 新鮮食材不一定最好，原來茶樓是用它來做燒賣的 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.16" id="00:00:0.16" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.16" id="00:00:3.16" class="lt" onclick="jumptoTime(3, this.id)"><p>今日我會教你整燒賣，同出面酒樓食到嘅一樣咁好食㗎，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:18.60" id="00:00:18.60" class="lt" onclick="jumptoTime(18, this.id)"><p>首先處理啲豬肉，呢度有半斤嘅上肉，我呢度嘅份量可以整到三十粒左右，切走啲肥肉同埋筋，再切成小粒，用2克梳打粉，和30克水拌勻。</p></a>
+				<a href="#00:01:42.22" id="00:01:42.22" class="lt" onclick="jumptoTime(102, this.id)"><p>放雪櫃雪一小時，我這裏有340克急凍白蝦，做點心用急凍蝦就可以了，我自己也試過用新鮮蝦，反而沒那麼爽口，啤水解凍，大約5分鐘左右，然後準備19克馬鈴薯澱粉，和19克砂糖，把蝦放入大碗裡，放馬鈴薯澱粉，糖，和浸過面的水，浸15分鐘，時不時要攪拌一下，因為粉會沉澱，之後開大水喉，再煸水15分鐘。</p></a>
+				<a href="#00:02:48.96" id="00:02:48.96" class="lt" onclick="jumptoTime(168, this.id)"><p>這樣蝦就更爽口了，用毛巾吸乾，不用蓋保鮮紙，放入雪櫃抽乾1小時。</p></a>
+				<a href="#00:03:12.52" id="00:03:12.52" class="lt" onclick="jumptoTime(192, this.id)"><p>我個人喜歡放冬菇，浸軟後切薄片，不過放了冬菇就不能放太久，要盡快吃，如果想放瑤柱，浸好後， 撈少許生粉，在蒸之前放在表面，我今次用了紅蘿蔔碎做裝飾，如果講究些的話可以改放蟹籽，接下來看其他材料，有6克鹽，24克馬鈴薯澱粉，42克豬油，豬油的做法我已經介紹過了，你可以去下面資訊那裡看，58克水。</p></a>
+				<a href="#00:04:1.93" id="00:04:1.93" class="lt" onclick="jumptoTime(241, this.id)"><p>少許麻油，少許胡椒粉，30克砂糖，15克雞粉，和一些燒賣皮，燒賣皮你可以去街市看看粉麵檔有沒有，又或者去專賣點心材料的店舖，混合好調味料，雞粉</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:25.53" id="00:04:25.53" class="lt" onclick="jumptoTime(265, this.id)"><p>糖，胡椒粉</p></a>
+				<a href="#00:04:30.45" id="00:04:30.45" class="lt" onclick="jumptoTime(270, this.id)"><p>水，水，和麻油，豬肉和蝦已經冷藏了一小時，蝦在用之前再用廚房紙吸收一次，要表面是啞色，放入廚師機，放入鹽和馬鈴薯澱粉，用中速打至產生黏性，下豬肉，放豬油，逐少逐少加入調味料，每一次都要等它吸收了才放，最後用低速拌勻冬菇，我會將啲餡包保鮮紙放雪櫃一晚，因為實少少會易包啲，同埋包完之後會挺啲。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:24.88" id="00:07:24.88" class="lt" onclick="jumptoTime(444, this.id)"><p>啲餡已經雪咗一晚，可以開始包啦，將啲餡撥入燒賣皮嘅中間，稱下有幾重，一粒標準燒賣重26至28克，題外話，我用緊呢一支就叫做餡挑，你唔一定要買，用匙羹尾代替就得啦，用左手一邊轉一邊收窄，餡料要高過外皮才好看，撥平表面就大功告成了，排好蒸籠，在表面放些裝飾。</p></a>
+				<a href="#00:08:49.67" id="00:08:49.67" class="lt" onclick="jumptoTime(529, this.id)"><p>水滾落，用大火蒸8分鐘，燒賣就完成了。</p></a>
+				<a href="#00:09:12.83" id="00:09:12.83" class="lt" onclick="jumptoTime(552, this.id)"><p>最後都想教下點樣洗蒸籠。</p></a>
+				<a href="#00:09:15.75" id="00:09:15.75" class="lt" onclick="jumptoTime(555, this.id)"><p>千祈唔好諗住乾淨啲就用洗潔精去洗，用清水洗就已經足夠，洗完之後記得要用大火蒸佢五分鐘，之後吹乾就可以了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

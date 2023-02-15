@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 豆沙煎堆</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'w3A1BwP7f-U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 豆沙煎堆</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C，今日我會教你哋整，有餡嘅煎堆仔，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先介紹下整煎堆嘅材料先，準備58克嘅凍水，32克嘅糖，76克嘅糯米粉，38克嘅豬油，豬油可以喺烘焙舖，或者買點心材嘅舖買得到，仲要準備12克嘅燉麵，同埋24克嘅大滾水。</p></a>
+				<a href="#00:00:37.68" id="00:00:37.68" class="lt" onclick="jumptoTime(37, this.id)"><p>呢個份量可以做到12個煎堆仔，今次我係會包豆沙餡，呢度有啲生嘅白芝麻，同埋現成嘅紅豆蓉，秤12粒紅豆餡，每一粒重10克，將佢哋搓圓備用，材料就這麼多，現在可以開始做了，將大滾水和燉麵混合，做成熟燉麵</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:9.28" id="00:01:9.28" class="lt" onclick="jumptoTime(69, this.id)"><p>攪拌均勻後加入糖，豬油，還有糯米粉，加入2分之3的凍水，其餘的留作調整</p></a>
+				<a href="#00:02:46.97" id="00:02:46.97" class="lt" onclick="jumptoTime(166, this.id)"><p>加入1分之1的凍水，攪拌均勻，搓到沒有粉黏著碗和不黏手，拿出來再繼續搓，搓的時候要盡量把粉團推開，利用摩擦產生出來的熱力，把糖和豬油融合</p></a>
+				<a href="#00:03:36.69" id="00:03:36.69" class="lt" onclick="jumptoTime(216, this.id)"><p>MING PAO CANADA CANADA.COM，搓至粉團光滑，就可以撕一塊出來試試，按下去沒有裂紋就即是完成了，蓋上保鮮紙放雪櫃冷藏2小時，這裡已經冷藏了2小時，將粉團分成12份，每份重18克，包入紅豆餡，搓成圓形</p></a>
+				<a href="#00:04:59.64" id="00:04:59.64" class="lt" onclick="jumptoTime(299, this.id)"><p>再滾上芝麻，반 crumbs，Azure arrives，ape，advertisers，Carl，manip snack，piss，ій，forensic，thinner，가지고，mellan，Não，knosition，ghosts，tiny，nói，Liberal，emails，A Tol happily。</p></a>
+				<a href="#00:05:36.10" id="00:05:36.10" class="lt" onclick="jumptoTime(336, this.id)"><p>History，Pikachu，dreaming，嗯，연，outs，microphone，fuels，institute，Frank，bu dzisiaj，chez controll gast，Strawberry，grad，持 applied，落鑊前再拍一下芝麻，炸的時候就不會很容易脫落，準備160度油。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:0.89" id="00:06:0.89" class="lt" onclick="jumptoTime(360, this.id)"><p>關火，放入煎堆，不要動它，看他們好像想浮起，就可以用鍋子把油弄動，但不可以找到尖端</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:14.46" id="00:07:14.46" class="lt" onclick="jumptoTime(434, this.id)"><p>每週固定3-4部影片 喜歡我的影片請訂閱或按讚，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，以便接收更多遊戲資訊、攻略及新影片等通知</p></a>
+				<a href="#00:07:41.87" id="00:07:41.87" class="lt" onclick="jumptoTime(461, this.id)"><p>MING PAO CANADA // MING PAO TORONTO，煎堆浮在上面，開中火，炸的時候要不斷淋油，這樣顏色才會均勻，還要間中用鍋蓋壓一下，煎堆就會漲起來，ama Games</p></a>
+				<a href="#00:08:28.97" id="00:08:28.97" class="lt" onclick="jumptoTime(508, this.id)"><p>yağ，stripped，reopen，depuis</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:26.31" id="00:08:26.31" class="lt" onclick="jumptoTime(506, this.id)"><p>vide備kl Drink，imoto，natuur，的人</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:24.71" id="00:08:24.71" class="lt" onclick="jumptoTime(504, this.id)"><p>freightmon newer，觀眾 subjective，barr buns，Tel dump，Bali，strands，Life，ml，data，lively，撈起晾一晾油，就可以上碟了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:14.95" id="00:09:14.95" class="lt" onclick="jumptoTime(554, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

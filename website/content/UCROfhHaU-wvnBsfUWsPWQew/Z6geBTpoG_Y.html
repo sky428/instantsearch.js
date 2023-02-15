@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 用芝麻粉能否同樣變出爽滑彈牙的黑芝麻糕？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Z6geBTpoG_Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 用芝麻粉能否同樣變出爽滑彈牙的黑芝麻糕？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.50" id="00:00:3.50" class="lt" onclick="jumptoTime(3, this.id)"><p>今次呢條片係想回應返觀眾嘅留言。</p></a>
+				<a href="#00:00:7.30" id="00:00:7.30" class="lt" onclick="jumptoTime(7, this.id)"><p>喺上次整芝麻糕嗰條片，觀眾Synthia就問我可唔可以改用芝麻粉嚟到整。</p></a>
+				<a href="#00:00:14.30" id="00:00:14.30" class="lt" onclick="jumptoTime(14, this.id)"><p>我自己就未試過，不過都好有興趣想試下，咁就趁呢個機會做下實驗。</p></a>
+				<a href="#00:00:21.70" id="00:00:21.70" class="lt" onclick="jumptoTime(21, this.id)"><p>如果日後你哋有咩問題想問嘅話，歡迎喺下面留言，我都會盡量解答㗎。</p></a>
+				<a href="#00:00:27.30" id="00:00:27.30" class="lt" onclick="jumptoTime(27, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:35.80" id="00:00:35.80" class="lt" onclick="jumptoTime(35, this.id)"><p>而家就介紹整芝麻糕嘅材料啦。</p></a>
+				<a href="#00:00:38.80" id="00:00:38.80" class="lt" onclick="jumptoTime(38, this.id)"><p>250克冰糖，250克無糖純黑芝麻粉，100克馬蹄粉，20克粘米粉，20克燉麵，份量同上次一樣，只係將芝麻醬改咗到芝麻粉。</p></a>
+				<a href="#00:00:59.30" id="00:00:59.30" class="lt" onclick="jumptoTime(59, this.id)"><p>材料就咁多啦，而家可以開始整啦。</p></a>
+				<a href="#00:01:3.30" id="00:01:3.30" class="lt" onclick="jumptoTime(63, this.id)"><p>首先攞個兜，倒入馬蹄粉，粘米粉，同埋燉麵。</p></a>
+				<a href="#00:01:12.80" id="00:01:12.80" class="lt" onclick="jumptoTime(72, this.id)"><p>用250毫升嘅水將佢哋開成粉漿，攪勻之後靜止佢15分鐘，跟住用750毫升嘅水煮溶啲冰糖。</p></a>
+				<a href="#00:01:22.80" id="00:01:22.80" class="lt" onclick="jumptoTime(82, this.id)"><p>趁呢個時候我哋就準備定個糕盤，喺糕盤裏面掃一層薄薄嘅油，然後喺入面鋪一層保鮮紙，跟住再喺面掃多一層薄薄嘅油，咁就完成啦。</p></a>
+				<a href="#00:01:39.30" id="00:01:39.30" class="lt" onclick="jumptoTime(99, this.id)"><p>好啦，啲糖已經煮溶晒啦，將啲芝麻粉倒曬落去，煮到佢滾起出味就得啦。</p></a>
+				<a href="#00:01:46.30" id="00:01:46.30" class="lt" onclick="jumptoTime(106, this.id)"><p>MING PAO CANADA 及CANADA.COM，然後拿去隔渣，隔完渣就將糖水倒入煲煮滾，準備一個大一點的碗，因為一會兒要將所有材料倒在一起，將粉漿過篩，過篩之後還要繼續攪拌，不要讓它沉澱，然後將煮到大滾的芝麻糖水，一口氣撞下去，如果成功的話，等半分鐘左右表面就會凝固，之後攪到它順滑就可以了。</p></a>
+				<a href="#00:02:29.15" id="00:02:29.15" class="lt" onclick="jumptoTime(149, this.id)"><p>但我這次等了一段時間，都看不到有什麼變化，那怎麼辦呢?</p></a>
+				<a href="#00:02:36.15" id="00:02:36.15" class="lt" onclick="jumptoTime(156, this.id)"><p>於是我問老師，他說很大機會是熱力不夠，只要開小火，用熱水攪拌，讓它稍微結合就可以了，聽老師說，可以用相同的方法來做其他的糕點，好像我之前做過的蘿蔔糕和馬蹄糕，比起用傳統的方法去做，用這個撞粉漿的方法，會輕鬆幾倍，而且成功率高，初學者都會很容易上手，等我遲些學會了之後，就一定會和大家分享，當你看到它們開始結塊。</p></a>
+				<a href="#00:03:12.15" id="00:03:12.15" class="lt" onclick="jumptoTime(192, this.id)"><p>慢慢變結身，攪多一會就好拿出來，停止加熱，讓底層的糕熟了，這個時候你會看到有些一塊塊，然後我們用發蛋器，攪到它順滑就可以了，粉漿仍在流質時，倒入糕館內，用濕水的抹刀抹平糕面，抹平後， 用保鮮紙把底膏包緊，最好包兩層， 這樣才夠實淨， 可以擋到倒汗水，用大火蒸1小時，蒸好就拿枝針插底糕， 睇下熟未。</p></a>
+				<a href="#00:04:50.55" id="00:04:50.55" class="lt" onclick="jumptoTime(290, this.id)"><p>冇粉漿黐住就可以啦，之後放係架上面， 等佢攤凍，我呢底糕放咗喺室溫攤咗幾個鐘，冇放過落雪櫃，今次用芝麻粉做出嚟嘅芝麻糕比較實淨，食落冇咁爽口同滑溜，但勝在呢芝麻味比較濃，同樣都好彈牙，可以話係各有特色，說唔定你會鍾意呢個多啲㗎，如果喜歡我的影片， 請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺， 就會收到我的最新影片通知。</p></a>
+				<a href="#00:05:43.04" id="00:05:43.04" class="lt" onclick="jumptoTime(343, this.id)"><p>如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們，下次再見， Bye Bye。</p></a>
+</div>
+	</body>
+</html>
