@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 滋補暖胃的韓式人蔘雞湯</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'yTa8uUSMqzE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 滋補暖胃的韓式人蔘雞湯</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>最近開始轉涼喎，呢啲天氣就最啱煲返啲，滋補暖胃嘅湯水嚟飲㗎啦。</p></a>
+				<a href="#00:00:9.00" id="00:00:9.00" class="lt" onclick="jumptoTime(9, this.id)"><p>所以我今日就會教大家，韓式嘅人蔘雞湯。</p></a>
+				<a href="#00:00:22.43" id="00:00:22.43" class="lt" onclick="jumptoTime(22, this.id)"><p>現在看看做人參雞湯需要什麼材料，冰鮮雞一隻，我這隻大約重900克即是一斤半，要買薄皮和沒有黃油的雞，栗子適量，糯米要先用水浸泡三小時，蒜頭，買外皮有紫紅色那種會比較好，水參即是仙人參，紅棗去核，用水浸泡半小時，大蔥，如果沒有可以不用加，材料份量要視乎你買的大小而定，首先要說一下怎樣處理栗子。</p></a>
+				<a href="#00:01:14.43" id="00:01:14.43" class="lt" onclick="jumptoTime(74, this.id)"><p>栗子的部位最硬，而且是黏著栗子肉，只要用刀插入去，撬開它，殼就很容易脫落，剝完殼的栗子放入滾水裡煮一至兩分鐘，這樣皮就容易剝了，將仙人參洗淨，切除頭部，蒜頭去皮，大蔥切片，處理雞，清洗內部，然後用水沖洗乾淨，切開雞頭，將頸部切開</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:11.18" id="00:03:11.18" class="lt" onclick="jumptoTime(191, this.id)"><p>將頸部切開，將頸部切開，將頸部切開，將頸部切開，將整條頸部切走，只留一塊皮，稍後會用來蓋著開口位，切走雞尾，在雞腿旁邊位置開一個洞，完成後放入材料，放到八分滿便夠了</p></a>
+				<a href="#00:04:47.66" id="00:04:47.66" class="lt" onclick="jumptoTime(287, this.id)"><p>完成後放入材料，放到八分滿便夠了，放完後將雙腳打交叉，然後將左邊隻腳套入之前開過的洞裏面</p></a>
+				<a href="#00:05:20.43" id="00:05:20.43" class="lt" onclick="jumptoTime(320, this.id)"><p>再開一個洞，然後將左邊的雙腳打開，然後將左邊的雙腳套入之前開過的洞裏面，再用牙籤穿過雞皮，封好雞尾位置便完成，將雞放入煲內，然後倒入清水浸過雞面，將剩餘的材料放入煲內</p></a>
+				<a href="#00:06:8.51" id="00:06:8.51" class="lt" onclick="jumptoTime(368, this.id)"><p>用大火煮滾，滾了之後撇走表面的泡，然後蓋上蓋子用中火煮1.5小時，煮完之後加鹽調味，軟粒粒的韓式人參雞湯就完成了，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>
