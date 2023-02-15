@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 廣東鹹肉粽 | 包五角粽的新手教學 [HK, TW, CN, Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'SzhupRnVHkY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 廣東鹹肉粽 | 包五角粽的新手教學 [HK, TW, CN, Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.16" id="00:00:0.16" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.84" id="00:00:2.84" class="lt" onclick="jumptoTime(2, this.id)"><p>端午節就嚟到喇喎!</p></a>
+				<a href="#00:00:4.80" id="00:00:4.80" class="lt" onclick="jumptoTime(4, this.id)"><p>唔知你有冇試過包粽呢?</p></a>
+				<a href="#00:00:7.36" id="00:00:7.36" class="lt" onclick="jumptoTime(7, this.id)"><p>如果未試過就啱喇!</p></a>
+				<a href="#00:00:9.44" id="00:00:9.44" class="lt" onclick="jumptoTime(9, this.id)"><p>我會一步一步教你點樣包一隻粽，我會將重點擺喺包粽嗰度，因為覺得呢個部分係最難掌握嘅，今次我教你包嘅係五角粽，就算你對手唔係好大，都一樣可以包到好實淨㗎，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先介紹下包鹹肉粽嘅材料，有斤半嘅糯米，斤半嘅開邊綠豆。</p></a>
+				<a href="#00:00:43.80" id="00:00:43.80" class="lt" onclick="jumptoTime(43, this.id)"><p>鹹蛋黃，一斤醃好咗嘅五花腩，上海油葉，一隻粽會用四塊，同一扎鹹水草，呢個份量可以包到18隻粽，跟住落嚟我會逐一介紹下，點樣去處理啲材料，五花腩要肥肉多啲先至夠香，洗乾淨之後醃味，白黑嘅雞粉，白黑嘅五香粉，一磚南乳，同少少玫瑰露，撈勻放雪櫃醃佢至少一晚，開邊綠豆要做一晚浸定，綠豆好吸水。</p></a>
+				<a href="#00:01:26.12" id="00:01:26.12" class="lt" onclick="jumptoTime(86, this.id)"><p>浸完會漲大成倍，所以要用大啲嘅兜，多啲水去浸，瀝乾水之後調味，12克嘅沙薑粉，5克嘅鹽，6克嘅梳打粉，落咗會綿啲，和58克油，輕輕地拌勻，糯米不用預先浸泡，洗淨，晾乾水後調味，23克鹽，18克雞粉，和58克油，同樣輕力拌勻，蛋黃最好買鹹蛋回來自己剝，洗走外面的蛋白，加少許玫瑰露，去除腥味，種葉有大有小。</p></a>
+				<a href="#00:02:38.35" id="00:02:38.35" class="lt" onclick="jumptoTime(158, this.id)"><p>我買的是中尺寸，建議買上海油葉，味道會香一點，不需要預先浸泡，因為會走味，在包之前用凍水浸泡半小時，讓它變軟身，之後開火，水滾開始計時，煮20分鐘，滾的時候葉會浮起，可以用重一點的碟子壓在表面，鹹水草用凍水浸軟就可以了，用白潔布擦乾淨，收起兩邊，所有材料都準備好，現在可以開始包粽了，在包粽之前要說一下。</p></a>
+				<a href="#00:03:32.53" id="00:03:32.53" class="lt" onclick="jumptoTime(212, this.id)"><p>粽葉是怎樣分底面的，框凸起那一面是底，摸上去是粗糙的，而葉面是光滑的，用這邊來包粽就不會黏著，在包粽之前抹一抹葉子，拿起兩塊葉子，面向著自己，頭對頭，尾對尾，擺個十字，在中間的地方打個折，就可以做出一個碗盤，按緊，放一兩匙糯米，攤開它，再放一匙綠豆，如果喜歡吃綠豆的，可以放多一匙，接著放蛋黃。</p></a>
+				<a href="#00:04:43.49" id="00:04:43.49" class="lt" onclick="jumptoTime(283, this.id)"><p>和豬肉，鋪上兩斤綠豆遮蓋餡料，其實材料已經夠重，可以壓著粽葉，手可以改為托著粽子，這樣就不會阻礙了，最後蓋上多層糯米，把下面摺起來，上面不用理，拿起另一片葉，用滑的面蓋在側邊，盡量推近一點，利用條骨做邊會好看一點，把下面摺起來， 成直角，如果葉太長可以剪緊一點，再將上面的葉蓋上，同樣要成直角。</p></a>
+				<a href="#00:06:30.03" id="00:06:30.03" class="lt" onclick="jumptoTime(390, this.id)"><p>用手按緊，轉去另一邊，用匙羹壓緊材料，你會看到種子還有空間，加入綠豆和糯米填滿，取另一片葉，像剛才那樣包</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:28.54" id="00:07:28.54" class="lt" onclick="jumptoTime(448, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，用一條鹹水草放在中間，在側邊繞兩個圈，要綁緊一點，去中間打個交叉</p></a>
+				<a href="#00:07:49.49" id="00:07:49.49" class="lt" onclick="jumptoTime(469, this.id)"><p>再在另一邊繞兩個圈，在邊位打個死結，整理一下外形，這樣就完成了，冷水落粽，如果用高速煲，煮一個小時就可以了，如果用普通煲的話，就要煮三小時，煮完之後粽要繼續留在煲內，等到完全放涼，就可以放雪櫃保存，如果要翻熱的話，就滾水落粽，煮15分鐘就可以了</p></a>
+				<a href="#00:09:33.63" id="00:09:33.63" class="lt" onclick="jumptoTime(573, this.id)"><p>MING PAO CANADA CANADA.COM，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

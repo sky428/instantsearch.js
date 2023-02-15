@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 紅豆粽 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4YkqXdhuwQU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 紅豆粽 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>今日就會教你包紅豆粽，好簡單，而且材料唔多，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>咁樣你先唔會錯過我最新嘅資訊㗎!，114克紅豆浸過夜，180克現成紅豆蓉，和糕粉，糕粉即是用白鑊，小火炒過的糯米粉，炒大約3分鐘，如果紅豆蓉放過雪櫃的話，要搓軟才好用，分成每粒重15克，搓成籃核形，薄薄的上一層糕粉，放在通風的地方吹乾表面，紅豆加水蒸20分鐘，關火後繼續留在鍋內，直至涼透為止，隔水備用。</p></a>
+				<a href="#00:01:45.69" id="00:01:45.69" class="lt" onclick="jumptoTime(105, this.id)"><p>750克糯米，不用浸泡，直接洗淨晾乾水，調味有76克砂糖，和48克生油</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:02:23.69" id="00:02:23.69" class="lt" onclick="jumptoTime(143, this.id)"><p>每天中午12點準時收看 喜歡我的視頻請訂閱或按讚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:22.30" id="00:03:22.30" class="lt" onclick="jumptoTime(202, this.id)"><p>調味後加入紅豆， 輕輕拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:52.32" id="00:03:52.32" class="lt" onclick="jumptoTime(232, this.id)"><p>愛ibly。</p></a>
+				<a href="#00:03:52.38" id="00:03:52.38" class="lt" onclick="jumptoTime(232, this.id)"><p>� entirety，infantry，Gren truths，Roberto，grandma，likely，Islands，�로，sole Syn，一些 ин，eth historia，snatch，стро，� plain，gentleman，clock，darkest，我用的是中size上海柚葉， 每種要2塊。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:6.01" id="00:04:6.01" class="lt" onclick="jumptoTime(246, this.id)"><p>還有一束鹹水草，種葉和水草用凍水浸泡半小時，只需要灼種葉，用重的碟壓著，不要浮起，水滾開始計時，殺20分鐘，收齊兩邊，骨頭凸起的那一面是粗糙的，另一面是光滑的，用另一面包就不怕米粒黏著，用白潔布擦乾淨，再用毛巾擦乾，所有材料都準備好。</p></a>
+				<a href="#00:05:51.87" id="00:05:51.87" class="lt" onclick="jumptoTime(351, this.id)"><p>現在可以開始包粽了，拿兩塊葉，大小要差不多，光滑的那面要對著自己，在中間屈曲， 弄個兜出來，尖位大概去到骨頭那邊，放兩匙糯米下去， 攤開，確保尖位要填滿，放紅豆餡，蓋上糯米，遮蓋就夠了，因為我們事先，做硬了紅豆餡，所以就不會容易插米進去，蒸不熟生米了，摺起來，再蓋上兩邊，好像包飯糰一樣，用水草紮實。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:32.09" id="00:07:32.09" class="lt" onclick="jumptoTime(452, this.id)"><p>請不吝點贊訂閱轉發打賞支持明鏡與點點欄目</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:40.70" id="00:07:40.70" class="lt" onclick="jumptoTime(460, this.id)"><p>修飾四個角就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:26.49" id="00:08:26.49" class="lt" onclick="jumptoTime(506, this.id)"><p>每週固定3 部影片 喜歡我的影片請訂閱或按讚，每週固定3 部影片 喜歡我的影片請訂閱或按讚，先放粽， 再放凍水，水要高過粽面兩吋左右，如果用高速煲就要煮一小時。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:08:55.82" id="00:08:55.82" class="lt" onclick="jumptoTime(535, this.id)"><p>用普通煲就要煮三小時，煮完之後繼續留在煲內，直至水變凍，完成後可以放在雪櫃，零至四度保存，如果要翻熱就煮水，煮到水變凍，再放入冰箱，冷藏一晚，冰箱冷藏一晚，冰箱冷藏一晚，如果要翻熱就煮水，煮15分鐘，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+				<a href="#00:10:4.33" id="00:10:4.33" class="lt" onclick="jumptoTime(604, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>
