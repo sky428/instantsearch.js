@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 第一集 | 由零開始教你搓出鬆軟饅頭 | 由淺入深的中式包點教學 [HK, TW, CN, Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Nhm_omZNAqk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 第一集 | 由零開始教你搓出鬆軟饅頭 | 由淺入深的中式包點教學 [HK, TW, CN, Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.60" id="00:00:2.60" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你搓饅頭，好多中式包都會用到饅頭皮嚟到做，所以想整中式包點嘅你呢，就千祈唔好錯過今次嘅教學啦，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，整饅頭嘅材料有，228克嘅低筋麵粉，6克嘅泡打粉，6克嘅豬油，46克嘅糖，6克嘅酵母，同114克嘅水，把泡打粉和低筋面粉拌匀。</p></a>
+				<a href="#00:00:53.24" id="00:00:53.24" class="lt" onclick="jumptoTime(53, this.id)"><p>在中間開個洞，我會用一個平底的容器來幫忙，會工整一點，然後在外圍畫多一個圈，倒些酵母，砂糖，和豬油在中間，不停地搓勻，倒入90%的水，剩下的留待調節</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:23.12" id="00:01:23.12" class="lt" onclick="jumptoTime(83, this.id)"><p>拌勻麵粉，再用刮刀幫忙，把外面的一層也拌勻，直至桌面沒有麵粉，改用雙手搓，全程大約需要搓10分鐘，把手上的麵粉撕出來，不用太用力，因為不想起筋，如果麵團夠水份，就應該像我這樣，黏手不黏桌子，現在還未可以，要再搓多一會，搓到表面光滑為止，如果還要加水的話，就要逐少逐少地加，蓋上蓋子鬆筋10分鐘。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:43.71" id="00:03:43.71" class="lt" onclick="jumptoTime(223, this.id)"><p>鬆筋完了，在桌上掃多點手粉，把麵團反轉來放，用麵粉碌推開它，放在中間，向上推，不用推到盡，拿起放在中間，再向下推，也不用推到盡，不要來來回回地推，如果剛才沒有鬆筋，推開麵皮就會很快反轉，中間薄， 上下兩邊厚，是有原因的， 一會兒我會告訴你，長度差不多了，輪到闊度，要推成一個長方形，斜向四角推。</p></a>
+				<a href="#00:05:22.99" id="00:05:22.99" class="lt" onclick="jumptoTime(322, this.id)"><p>因為之前兩邊都留厚些，所以現在才有足夠的麵皮，可以推出四角，厚薄不平均的地方用手撥平，掃走表面的手粉，掃一層薄薄的水，由上面開始捲下來</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:32.36" id="00:06:32.36" class="lt" onclick="jumptoTime(392, this.id)"><p>аешь� countdown presumably，exiting</p></a>
+				<a href="#00:06:51.76" id="00:06:51.76" class="lt" onclick="jumptoTime(411, this.id)"><p>violated，Mighty，Mexico</p></a>
+				<a href="#00:06:53.14" id="00:06:53.14" class="lt" onclick="jumptoTime(413, this.id)"><p>anche，mute</p></a>
+				<a href="#00:06:50.44" id="00:06:50.44" class="lt" onclick="jumptoTime(410, this.id)"><p>Turbo，เด，터</p></a>
+				<a href="#00:06:35.68" id="00:06:35.68" class="lt" onclick="jumptoTime(395, this.id)"><p>對，oll，Combjang，�haul，af，办，asi</p></a>
+				<a href="#00:06:34.08" id="00:06:34.08" class="lt" onclick="jumptoTime(394, this.id)"><p>kend，Ohhh，aria，networking</p></a>
+				<a href="#00:06:49.18" id="00:06:49.18" class="lt" onclick="jumptoTime(409, this.id)"><p>Grind，� unconditional，números，distancing，conference</p></a>
+				<a href="#00:06:44.32" id="00:06:44.32" class="lt" onclick="jumptoTime(404, this.id)"><p>주는，discret，running</p></a>
+				<a href="#00:06:32.66" id="00:06:32.66" class="lt" onclick="jumptoTime(392, this.id)"><p>Luckily，лена，爷ARD pequeña，Endination，cathedral，동안 Shoutو，1972 batch，聯 arguments，Fortnite，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，將摺口向下</p></a>
+				<a href="#00:06:55.85" id="00:06:55.85" class="lt" onclick="jumptoTime(415, this.id)"><p>掃乾淨面頭的粉，用手向外掠，粗幼平均，切頭尾，量度兩個手指位，在包底墊一張牛油紙，排好在蒸籠，蓋上蓋子放室溫發酵20分鐘。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:52.41" id="00:07:52.41" class="lt" onclick="jumptoTime(472, this.id)"><p>麵團漲大了一點，按下去像棉花糖一樣軟綿綿，就可以拿去蒸，用大火蒸6分鐘，蒸了3分鐘後，打開蓋子吸一吸氣，然後再蒸餘下的3分鐘，蒸完可以立即開蓋</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:16.53" id="00:08:16.53" class="lt" onclick="jumptoTime(496, this.id)"><p>麵團也不會縮回去，蒸好的麵團還可以拿去炸，如果之前放過在冰箱，就要用微波爐加熱，或者放在室溫放涼，油溫要160度，如果沒有溫度計的話，可以放雙筷子，再放入麵團，再放入冰箱，放雙筷子，看到旁邊有氣泡，就是油溫夠熱了，全程用大火，要不停用筷子翻動麵團，炸至金黃色，表皮變硬就可以上碟，我之後會有其他包點教學。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:11.30" id="00:09:11.30" class="lt" onclick="jumptoTime(551, this.id)"><p>記得留意大師廚房，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你亦可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>
