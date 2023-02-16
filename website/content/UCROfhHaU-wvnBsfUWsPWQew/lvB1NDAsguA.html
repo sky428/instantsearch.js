@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 每日一杯令你更健康！洛神花蜜&蜜餞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lvB1NDAsguA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 每日一杯令你更健康！洛神花蜜&蜜餞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.26" id="00:00:2.26" class="lt" onclick="jumptoTime(2, this.id)"><p>最近喺街市開始見到有洛神花賣喇!</p></a>
+				<a href="#00:00:5.26" id="00:00:5.26" class="lt" onclick="jumptoTime(5, this.id)"><p>唔知大家知唔知洛神花真係好有益㗎?</p></a>
+				<a href="#00:00:8.90" id="00:00:8.90" class="lt" onclick="jumptoTime(8, this.id)"><p>不過大多數人只會攞佢嚟煲水飲，其實佢仲有好多其他食法㗎喎!</p></a>
+				<a href="#00:00:14.86" id="00:00:14.86" class="lt" onclick="jumptoTime(14, this.id)"><p>今日我就教大家用新鮮嘅洛神花嚟整洛神花蜜同埋蜜餞喇!</p></a>
+				<a href="#00:00:30.33" id="00:00:30.33" class="lt" onclick="jumptoTime(30, this.id)"><p>現在讓我們來看看，製作洛神花蜜需要什麼材料，新鮮的洛神花454克，即是一磅，水400克，冰糖600克，水和糖的比例是1比1.5，首先我們要製作浸洛神花的糖水，將水和冰糖放入鍋裡，煮到冰糖融化就可以關火，放涼備用，不過如果糖水已經達到飽和的話，鍋裡的冰糖會煮得不融化，你就可以加少許水下去，繼續煮它就可以了。</p></a>
+				<a href="#00:01:8.05" id="00:01:8.05" class="lt" onclick="jumptoTime(68, this.id)"><p>首先我們說說洛神花有什麼功效，經中草藥研究證實，洛神花除了可以抗高血壓，抗老化，治療肝病之外，對於抑制癌症腫瘤，保護心臟血管，幫助腸胃消化吸收，調整女性的生理週期，舒緩更年期綜合症狀，減少骨質疏鬆症發生，以及美容養顏都有一定功效，洛神花造成蜜餞有補血的效果，當你心煩氣躁，心神不寧。</p></a>
+				<a href="#00:01:41.69" id="00:01:41.69" class="lt" onclick="jumptoTime(101, this.id)"><p>體臭嚴重，食肉不振的時候，吃些洛神花的製品，可以順氣活血，延復心情，左邊的洛神花已經收水不新鮮，如果你們在街市看到這種洛神花，就千萬不要買，洛神花基本上很少放農藥，不過買回來後，我們也要用水浸泡，因為洛神花很多時候會有蟻，浸水就可以逼出蟻，浸完的洛神花，用刀切走它的底部，然後用筷子插入切口中間。</p></a>
+				<a href="#00:02:20.61" id="00:02:20.61" class="lt" onclick="jumptoTime(140, this.id)"><p>用力將粒種子推出來就可以了，用水沖洗一次， 之後就可以拿去蒸了，蒸的目的主要是殺菌，水滾後， 把洛神花放進去， 用中火蒸一分鐘，千萬不要蒸太久，蒸完後放在架子上， 等它吹乾，蒸過火的洛神花質地會變得太軟，做出來的蜜餞就不爽脆了，像這一朵， 算是蒸得過軟了，把洗乾淨的玻璃瓶放入凍水裡， 開始幫它消毒，放凍水是因為不想溫差太大， 令到瓶子爆裂。</p></a>
+				<a href="#00:03:11.43" id="00:03:11.43" class="lt" onclick="jumptoTime(191, this.id)"><p>水滾後， 煮它十分鐘，然後拿出來用廚房紙抹乾或晾乾，所有東西都準備好後， 就可以開始入瓶了，首先放入洛神花，中醫認為洛神花性涼、微酸、有免肺止咳、降壓、解酒等功效，臨床上可用於肺虛咳嗽、高血壓或醉酒等治療，洛神花的萃取物含有的抗氧化成分，可說是眾多蔬果中的佼佼者，它還可以營造細胞老化， 抗多種文明病變。</p></a>
+				<a href="#00:03:50.43" id="00:03:50.43" class="lt" onclick="jumptoTime(230, this.id)"><p>倒入糖水，雖然洛神花有很多益處， 但有以下幾點我們需要特別注意，洛神花不適宜空腹飲用， 也不適宜大量進食，它含有大量有機酸， 雖然可以幫助消化，但對於胃酸過多的人來說， 都是少食為佳，洛神花有降血壓功能， 血壓偏低的人不適宜吃太多，還有， 洛神花利尿腎功能欠佳的人應該根據情況適量食用，洛神花性涼對處於生理期或妊娠期的女性。</p></a>
+				<a href="#00:04:28.43" id="00:04:28.43" class="lt" onclick="jumptoTime(268, this.id)"><p>體質寒涼的人不適宜飲用，蓋上蓋子， 鎖緊，放入雪櫃冷藏2星期便完成，2星期後， 將落神花取出， 稍為吹乾，這就是落神花蜜餞，至於在瓶內的糖水就是落神花蜜，將它放入雪櫃， 隨時可拿出來沖水飲，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+				<a href="#00:05:43.27" id="00:05:43.27" class="lt" onclick="jumptoTime(343, this.id)"><p>下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

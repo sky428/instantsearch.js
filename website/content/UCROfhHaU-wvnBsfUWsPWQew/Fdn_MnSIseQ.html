@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蛋白杏仁茶 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Fdn_MnSIseQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蛋白杏仁茶 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C，秋天乾燥嘅天氣，好容易會令到皮膚同埋氣管唔舒服，喺呢個時候食番碗蛋白杏仁茶，滋潤一下就最適合不過啦，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，整蛋白杏仁茶嘅材料有，200克嘅大南杏，20克嘅北杏，24克嘅米，912克嘅水，4隻蛋嘅蛋白。</p></a>
+				<a href="#00:00:38.30" id="00:00:38.30" class="lt" onclick="jumptoTime(38, this.id)"><p>同埋適量嘅冰糖，將洗乾淨嘅杏仁同米，用912克嘅水浸一個鐘，之後加水一起打爛，南杏味道甜甜的，含有豐富的蛋白質，有潤肺的功效，北杏味道苦苦的，勝在香味比較濃，還有止咳的功效，北杏有少少毒性， 不可以食得多， 亦不可以生食，所以通常會混合南杏一起用，因為今次做的是甜品， 不想有明顯苦味，所以用10份南杏對1份北杏。</p></a>
+				<a href="#00:02:2.21" id="00:02:2.21" class="lt" onclick="jumptoTime(122, this.id)"><p>打爛後用豆漿袋隔渣，這次我會用鐵鑄煲，如果有瓦煲就更好，用慢火煮15分鐘，要不停攪拌，不要讓它黏底，慢慢煮到它變稠，放冰糖調味，如果是大顆的就早點下，煮沸後關火，將蛋白打勻，打圈倒入蛋液中，不要動它， 等20秒，之後慢慢推開蛋白，緊緊熟就夠了，蛋白杏仁茶就完成了，希望你喜歡我今次的分享，如果喜歡我的影片，就記得給個Like和訂閱我的頻道。</p></a>
+				<a href="#00:03:56.29" id="00:03:56.29" class="lt" onclick="jumptoTime(236, this.id)"><p>你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

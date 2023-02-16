@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蜂蜜檸檬你做對了嗎？別人不會告訴你的清洗檸檬方法大公開</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'NYN8igE0tqI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蜂蜜檸檬你做對了嗎？別人不會告訴你的清洗檸檬方法大公開</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀，今日我會教大家整一款超有益健康嘅飲品，蜜糖漬檸檬，材料很簡單，有檸檬、青檸、蜂蜜和食鹽，買回來的檸檬要打開袋口放在室溫3至5日，這樣可以令到部分殘留的農藥自然揮發，這裡的檸檬我已經放了5日，材料已經介紹完畢，現在就教大家怎樣做蜜糖漬檸檬，其實蜜糖漬檸檬的做法很簡單。</p></a>
+				<a href="#00:00:49.02" id="00:00:49.02" class="lt" onclick="jumptoTime(49, this.id)"><p>最重要是知道怎樣清洗檸檬，第一步用牙刷去除灰塵和污漬，第二步開小水，將檸檬倒入去，用筲箕壓著，讓檸檬完全浸在水中，然後打斜盤一點，讓水慢慢流出來，水中有氯氣可以去除檸檬表面的殘留農藥，如果沒有洗淨農藥，吃了會引致肚瀉或中毒，趁著我們浸檸檬時，我們幫玻璃瓶消毒，首先煮一鍋熱水，然後放入玻璃瓶。</p></a>
+				<a href="#00:01:37.02" id="00:01:37.02" class="lt" onclick="jumptoTime(97, this.id)"><p>煮10分鐘，時間到了，我們取出玻璃瓶，將玻璃瓶晾乾水，現在進行下一個步驟，沖洗完水的檸檬，我們要用40度C的熱水，浸15秒，因為熱水可以溶解表面的鈉質，但不要用太熱的水，因為會破壞檸檬表面的鋁黃酮，鋁黃酮的物質能夠抑制癌症的發生，浸過暖水的檸檬，我們取出來，再用鹽巴，搓揉一下， 把表面的蠟質搓走。</p></a>
+				<a href="#00:02:30.53" id="00:02:30.53" class="lt" onclick="jumptoTime(150, this.id)"><p>搓鹽檸檬的香味會更加明顯，搓好檸檬後， 用水沖洗乾淨， 然後把它吹乾，吹乾檸檬後， 我們現在開始切片，檸檬兩邊最多殘留農藥， 為了安全起見， 我們就切掉它不要，然後把切片， 不要切太薄，青檸檬也一樣， 頭尾不要，切好檸檬後， 要去除核， 因為核有苦味，先把之前消毒的樽子， 放一點蜜糖進去，然後放檸檬。</p></a>
+				<a href="#00:03:30.27" id="00:03:30.27" class="lt" onclick="jumptoTime(210, this.id)"><p>再加蜜糖，將檸檬放入保鮮紙內，將保鮮紙蓋上，將保鮮紙扭緊瓶蓋，完成了。</p></a>
+</div>
+	</body>
+</html>
