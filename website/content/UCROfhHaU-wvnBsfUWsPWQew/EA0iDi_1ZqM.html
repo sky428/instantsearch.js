@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 聖誕送甚麼？巧克力杏仁曲奇</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'EA0iDi_1ZqM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 聖誕送甚麼？巧克力杏仁曲奇</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.08" id="00:00:2.08" class="lt" onclick="jumptoTime(2, this.id)"><p>聖誕節快到啦!</p></a>
+				<a href="#00:00:3.72" id="00:00:3.72" class="lt" onclick="jumptoTime(3, this.id)"><p>做曲奇餅送禮俾親朋戚友就最啱架啦!</p></a>
+				<a href="#00:00:7.24" id="00:00:7.24" class="lt" onclick="jumptoTime(7, this.id)"><p>今日我會教大家做朱古力杏仁曲奇，大人細路都啱架，而且仲好易做架添!</p></a>
+				<a href="#00:00:14.32" id="00:00:14.32" class="lt" onclick="jumptoTime(14, this.id)"><p>鍾意朱古力嘅你就千祈唔好錯過啦!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:17.00" id="00:00:17.00" class="lt" onclick="jumptoTime(17, this.id)"><p>杏仁曲奇，而家就嚟睇下整曲奇嘅材料啦!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:29.84" id="00:00:29.84" class="lt" onclick="jumptoTime(29, this.id)"><p>雞筋麵粉260克，杏仁片150克，砂糖150克，雞蛋50克，大約係一隻中size雞蛋嘅份量，無糖可可粉或者叫做穀鼓粉40克，牛油150克，今次我用嘅係金桶牛油，用佢嚟整曲奇就最啱架啦!</p></a>
+				<a href="#00:01:0.36" id="00:01:0.36" class="lt" onclick="jumptoTime(60, this.id)"><p>整出嚟嘅曲奇會香啲同鬆脆啲架!</p></a>
+				<a href="#00:01:3.36" id="00:01:3.36" class="lt" onclick="jumptoTime(63, this.id)"><p>今次用到嘅材料都係喺烘焙舖嗰度買嘅，我去開嗰幾間烘焙舖嘅資料都寫到喺下面影片資訊嗰度，如果你地有興趣嘅話可以點開嚟睇下架!</p></a>
+				<a href="#00:01:13.36" id="00:01:13.36" class="lt" onclick="jumptoTime(73, this.id)"><p>事不宜遲啦!而家就開始製作朱古力杏仁曲奇啦!</p></a>
+				<a href="#00:01:18.36" id="00:01:18.36" class="lt" onclick="jumptoTime(78, this.id)"><p>將低筋麵粉、可可粉混合，過篩三次，要過三次先夠均勻架!</p></a>
+				<a href="#00:01:36.36" id="00:01:36.36" class="lt" onclick="jumptoTime(96, this.id)"><p>將牛油、糖用電動打蛋器打到好似忌廉狀咁</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:6.36" id="00:02:6.36" class="lt" onclick="jumptoTime(126, this.id)"><p>咁樣就成咗啦!，字幕由Amara.org社区提供，把蛋白和蛋黃混合，攪拌均勻，攪拌至光滑，攪拌至光滑，攪拌至光滑，攪拌至光滑，攪拌至光滑，攪拌至光滑，然後分幾次加入蛋汁</p></a>
+				<a href="#00:04:46.28" id="00:04:46.28" class="lt" onclick="jumptoTime(286, this.id)"><p>謝謝觀看，把剩下的肉包裹起来，把剩下的肉放在一边，把剩下的肉包裹起来，把剩下的肉包裹起来，把剩下的肉包裹起来，把剩下的肉包裹起来，谢谢观看 下集再见，把牛肉捏成蓬鬆的形狀，用手撕開，用筷子捏開，捏成蓬鬆的形狀，用手撕開，捏開，捏開，捏開，捏開，捏開，捏開，捏開，捏開，WordPressuzz，pun Edu。</p></a>
+				<a href="#00:06:15.29" id="00:06:15.29" class="lt" onclick="jumptoTime(375, this.id)"><p>beginning，fibre，• 될 mum，city，Dat，sc，Molasures，metall，reviews，바� düşün，wurde</p></a>
+				<a href="#00:06:23.61" id="00:06:23.61" class="lt" onclick="jumptoTime(383, this.id)"><p>porch，месте，gow，ion，sec，ced</p></a>
+				<a href="#00:06:24.59" id="00:06:24.59" class="lt" onclick="jumptoTime(384, this.id)"><p>lerini，proxim，doubt，ative，Harley，optimal，archy</p></a>
+				<a href="#00:06:24.69" id="00:06:24.69" class="lt" onclick="jumptoTime(384, this.id)"><p>rear，듯，turbulent</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:20.55" id="00:06:20.55" class="lt" onclick="jumptoTime(380, this.id)"><p>secular，estavam</p></a>
+				<a href="#00:06:23.17" id="00:06:23.17" class="lt" onclick="jumptoTime(383, this.id)"><p>qui，точки，abet，terra，loot，Scene</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:20.79" id="00:06:20.79" class="lt" onclick="jumptoTime(380, this.id)"><p>었어，między，valu，idor，bust，Steel，grate</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:10.69" id="00:06:10.69" class="lt" onclick="jumptoTime(370, this.id)"><p>메，mole 1946</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:21.47" id="00:06:21.47" class="lt" onclick="jumptoTime(381, this.id)"><p>öyle，vote，裝，concert，Late</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:7.95" id="00:06:7.95" class="lt" onclick="jumptoTime(367, this.id)"><p>abad，comfort，재，ibal</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.69" id="00:06:22.69" class="lt" onclick="jumptoTime(382, this.id)"><p>olmas，Pereee，dear，icious</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:5.49" id="00:06:5.49" class="lt" onclick="jumptoTime(365, this.id)"><p>Чcjon Block，pressing，compromised，�May</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:13.21" id="00:06:13.21" class="lt" onclick="jumptoTime(373, this.id)"><p>pens，varieties</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:22.53" id="00:06:22.53" class="lt" onclick="jumptoTime(382, this.id)"><p>회 Veron KL，怎么样，Plat probability，Provost，【1. 把包装纸和纸巾弄干净】，【2. 把包装纸和纸巾弄干净】</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:19.01" id="00:06:19.01" class="lt" onclick="jumptoTime(379, this.id)"><p>【3. 把包装纸和纸巾弄干净】，amplified，Mighty，plots</p></a>
+				<a href="#00:06:47.32" id="00:06:47.32" class="lt" onclick="jumptoTime(407, this.id)"><p>rid Україkur초，Comment，wn，напис，investing</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:27.38" id="00:06:27.38" class="lt" onclick="jumptoTime(387, this.id)"><p>existem，pause，вниз，άλ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:30.94" id="00:06:30.94" class="lt" onclick="jumptoTime(390, this.id)"><p>occ，cautious，統</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.08" id="00:06:41.08" class="lt" onclick="jumptoTime(401, this.id)"><p>不是，Derek，周 Ku，aroo，Ollie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:49.84" id="00:06:49.84" class="lt" onclick="jumptoTime(409, this.id)"><p>agers，Games</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:52.02" id="00:06:52.02" class="lt" onclick="jumptoTime(412, this.id)"><p>كر，testoster，ucci</p></a>
+				<a href="#00:06:48.16" id="00:06:48.16" class="lt" onclick="jumptoTime(408, this.id)"><p>regardez，о</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:53.36" id="00:06:53.36" class="lt" onclick="jumptoTime(413, this.id)"><p>mummy，Argu meas，ying，fullest，리，pueden</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:50.68" id="00:06:50.68" class="lt" onclick="jumptoTime(410, this.id)"><p>songs，Coach</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:52.08" id="00:06:52.08" class="lt" onclick="jumptoTime(412, this.id)"><p>connector，smoother，NFT</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:28.94" id="00:06:28.94" class="lt" onclick="jumptoTime(388, this.id)"><p>gels，buddies</p></a>
+				<a href="#00:06:37.18" id="00:06:37.18" class="lt" onclick="jumptoTime(397, this.id)"><p>skiing，Pad，dém progress，vere，곡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:37.00" id="00:06:37.00" class="lt" onclick="jumptoTime(397, this.id)"><p>underway，place</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:40.22" id="00:06:40.22" class="lt" onclick="jumptoTime(400, this.id)"><p>beliefs，nie</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:53.44" id="00:06:53.44" class="lt" onclick="jumptoTime(413, this.id)"><p>бывает，üllt，Embassy，iza</p></a>
+				<a href="#00:06:52.54" id="00:06:52.54" class="lt" onclick="jumptoTime(412, this.id)"><p>tutti，Bj someday，Ban pue OVER，quo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:48.94" id="00:06:48.94" class="lt" onclick="jumptoTime(408, this.id)"><p>disag，Alrighty，Midwest，Mustang，weh，spies，displayedم</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:34.12" id="00:06:34.12" class="lt" onclick="jumptoTime(394, this.id)"><p>ностью，daw receiver</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:41.98" id="00:06:41.98" class="lt" onclick="jumptoTime(401, this.id)"><p>severe，Coordinator，мас，Arsenal，揉匀，再倒入之前準備好的粉，再次用切和拌的方式將它們拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:08:0.89" id="00:08:0.89" class="lt" onclick="jumptoTime(480, this.id)"><p>完成了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:08:17.29" id="00:08:17.29" class="lt" onclick="jumptoTime(497, this.id)"><p>yang Auntie DougON</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:43.01" id="00:08:43.01" class="lt" onclick="jumptoTime(523, this.id)"><p>кр wasting，직，personality</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:31.91" id="00:08:31.91" class="lt" onclick="jumptoTime(511, this.id)"><p>это，pleasant，west，mak 눈，illes，� filtration，nym</p></a>
+				<a href="#00:08:39.81" id="00:08:39.81" class="lt" onclick="jumptoTime(519, this.id)"><p>alous，zeit，party，Rise</p></a>
+				<a href="#00:08:43.45" id="00:08:43.45" class="lt" onclick="jumptoTime(523, this.id)"><p>brace，ogle，broccoli，ipping，edits，urally，off</p></a>
+				<a href="#00:08:40.23" id="00:08:40.23" class="lt" onclick="jumptoTime(520, this.id)"><p>encourages，booty，возь，oston</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:35.65" id="00:08:35.65" class="lt" onclick="jumptoTime(515, this.id)"><p>causa，enne</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:39.03" id="00:08:39.03" class="lt" onclick="jumptoTime(519, this.id)"><p>feminist，course，açık，��들이，find</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:39.77" id="00:08:39.77" class="lt" onclick="jumptoTime(519, this.id)"><p>IRbi，mares，build vac，위해，thm，HER Hallo</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:43.85" id="00:08:43.85" class="lt" onclick="jumptoTime(523, this.id)"><p>foboy，170，Stunden，internships</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:40.07" id="00:08:40.07" class="lt" onclick="jumptoTime(520, this.id)"><p>23 collagen，portrait</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:39.55" id="00:08:39.55" class="lt" onclick="jumptoTime(519, this.id)"><p>peso，ங，식，inferesz，unsafe，COM，electrical，2022，Logic</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:42.71" id="00:08:42.71" class="lt" onclick="jumptoTime(522, this.id)"><p>formulas，По，dries，foundational，jemand，welcome сх vitamins，exatamente，ji</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:33.41" id="00:08:33.41" class="lt" onclick="jumptoTime(513, this.id)"><p>driven，powiedz，放入冰箱冷藏30分钟，冷藏过后可以拿出来，切成小块，放入冰箱冷藏30分钟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:32.83" id="00:08:32.83" class="lt" onclick="jumptoTime(512, this.id)"><p>冷藏过后可以拿出来，切成小块，放入冰箱冷藏30分钟，谢谢收看，再改用手輕力地搓成一塊深啡色的麵團，記得千萬不要搓太久，否則做出來的曲奇就不鬆脆了</p></a>
+				<a href="#00:09:23.85" id="00:09:23.85" class="lt" onclick="jumptoTime(563, this.id)"><p>用手輕輕地搓成一塊，搓成一團，用手輕輕地搓成一團，在烤盤上鋪一張牛油紙，將麵團放在牛油紙上，將它推成一條長方體</p></a>
+				<a href="#00:10:46.64" id="00:10:46.64" class="lt" onclick="jumptoTime(646, this.id)"><p>將它推成一條長方體，將它推成一條長方體，將它推成一條長方體</p></a>
+				<a href="#00:11:31.64" id="00:11:31.64" class="lt" onclick="jumptoTime(691, this.id)"><p>將它推成一條長方體，將它推成一條長方體，將它推成一條長方體，將它推成一條長方體，將它推成一條長方體</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:12:52.73" id="00:12:52.73" class="lt" onclick="jumptoTime(772, this.id)"><p>完成後最好將麵團放入冰箱冷藏一晚，因為如果冷藏不夠硬的話，切的時候就會很容易變形，先預熱焗爐至175度，然後在冰箱取出冷藏硬的麵團，用重身一點的刀稍為用力地向前向後壓，將麵團切成5毫米厚的薄片，然後放入焗爐用175度焗20分鐘，因為麵團比較深色要留意不要焗焦，出爐前要檢查焗盤底部是否已經上色。</p></a>
+				<a href="#00:13:46.73" id="00:13:46.73" class="lt" onclick="jumptoTime(826, this.id)"><p>確認沒有問題就拿出來放在架上，放涼又香又脆的朱古力杏仁曲奇就完成了，如果喜歡我的影片就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鐘就會收到我的最新影片通知，如果有問題想問的話歡迎在下面留言，我會盡快回覆你們的，下次再見吧，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

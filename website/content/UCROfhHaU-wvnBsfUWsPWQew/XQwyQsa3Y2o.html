@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 潮州冷糕 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'XQwyQsa3Y2o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 潮州冷糕 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.04" id="00:00:2.04" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整冷糕。</p></a>
+				<a href="#00:00:4.04" id="00:00:4.04" class="lt" onclick="jumptoTime(4, this.id)"><p>請訂閱及按鐘仔，才不會錯過我最新資訊。</p></a>
+				<a href="#00:00:20.28" id="00:00:20.28" class="lt" onclick="jumptoTime(20, this.id)"><p>餡料跟上次甜博餐一樣，都是兩份椰絲，我這份是120克，一份豬豆花生60克，一份白芝麻60克，半份砂糖30克，材料份量沒有硬性規定，按比例就可以了，用白鑊小火炒香白芝麻，炒至微微轉金黃色，跳跳跳跳就好了，放涼備用，用白鑊小火，朝向地也西，炒至轉色就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:13.36" id="00:01:13.36" class="lt" onclick="jumptoTime(73, this.id)"><p>可以放涼備用，花生也是一樣，用白鑊小火炒，方便我們去醫，去衣後，把油燒熱至120度，放一顆花生下去試試，旁邊會有小氣泡，渣到微微轉金黃色撈起，攤凍備用，放入保鮮袋壓碎，不想自己炸的話，可以去烘焙店看看有沒有，將所有材料拌勻，再按個人口味調整甜度。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:02:47.97" id="00:02:47.97" class="lt" onclick="jumptoTime(167, this.id)"><p>甜餡就完成了，粉漿材料有，2隻雞蛋，133克鮮奶，58克砂糖，4克速發酵母，4克泡打粉，133克低筋麵粉，把酵母和室溫鮮奶混合，靜置一會，順序加入泡打粉、砂糖及雞蛋入面粉中</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:4.81" id="00:04:4.81" class="lt" onclick="jumptoTime(244, this.id)"><p>大約一小時後，泡打粉會出現泡沫，將泡打粉倒入蛋液中，將蛋液倒入蛋液中，每週固定3-4部影片 喜歡我的影片請訂閱或按讚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:26.46" id="00:04:26.46" class="lt" onclick="jumptoTime(266, this.id)"><p>慢慢加入鮮奶，攪至順滑，沒有粉粒為止，最后过筛，蓋上保鮮膜放在室溫發酵20分鐘。</p></a>
+				<a href="#00:06:0.99" id="00:06:0.99" class="lt" onclick="jumptoTime(360, this.id)"><p>發酵完後 燒熱鑊，一定要燒到很熱，用廚房紙抹油在鑊面，邊位不需要，鑊面上放入麵糊，攪勻整隻鑊</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:48.54" id="00:06:48.54" class="lt" onclick="jumptoTime(408, this.id)"><p>MING PAO CANADA CANADA // MING PAO TORONTO</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:56.31" id="00:06:56.31" class="lt" onclick="jumptoTime(416, this.id)"><p>蓋上蓋子，慢慢用小火焗，鍋子有空要轉位置，顏色會均勻一點</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:9.08" id="00:07:9.08" class="lt" onclick="jumptoTime(429, this.id)"><p>開蓋看看，熟透就可以取出，馬上塗上牛油，煉奶和撒上甜餡，奶糕就完成了</p></a>
+				<a href="#00:08:39.07" id="00:08:39.07" class="lt" onclick="jumptoTime(519, this.id)"><p>MING PAO CANADA CANADA.COM，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

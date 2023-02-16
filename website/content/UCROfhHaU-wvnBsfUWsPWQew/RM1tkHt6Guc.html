@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 聖誕手工薑餅人製作</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RM1tkHt6Guc',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 聖誕手工薑餅人製作</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>聖誕節就快到啦!</p></a>
+				<a href="#00:00:5.00" id="00:00:5.00" class="lt" onclick="jumptoTime(5, this.id)"><p>我哋教大家整一款非常應節嘅食品﹐薑餅人。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:16.03" id="00:00:16.03" class="lt" onclick="jumptoTime(16, this.id)"><p>【姜饼人】，现在来看看做姜饼人的材料，中筋面粉210克，除了中筋面粉之外，我们还要准备一些高筋面粉，用来做手粉，软化的无盐牛油85克，姜粉1茶匙，肉桂粉半茶匙，丁香粉1%茶匙，黑糖蜜75克，红糖50克，盐半茶匙，鸡蛋半只，将蛋白和蛋黄分开，备用姜汁的三姜泥25克，梳打粉半茶匙，很多姜饼人的食谱都只会放姜粉。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:16.03" id="00:01:16.03" class="lt" onclick="jumptoTime(76, this.id)"><p>我自己也试过跟着做，不过就没什么姜味，这次我会加一些生姜泥，我觉得这样做出来会好吃一点，将肉桂粉，丁香粉，姜粉，盐，和梳打粉加入面粉里面，然后过筛，如果你们是用比较粗粒的盐，可以在过筛之后才放盐，不过记得要拌匀，拿一只大碗，放入牛油，用硬刀将牛油压软，然後加入紅糖，同樣用壓的方式將它們混合，將半隻蛋黃逐少逐少加入牛油中。</p></a>
+				<a href="#00:02:16.07" id="00:02:16.07" class="lt" onclick="jumptoTime(136, this.id)"><p>每次都要將佢哋徹底撈勻，呢個步驟好重要㗎，如果一次過加得太多嘅話呢，就會出現油水分離，之後點樣撈都撈唔勻㗎，所以千祈唔好貪快呀</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:54.27" id="00:02:54.27" class="lt" onclick="jumptoTime(174, this.id)"><p>兄 shoulders，СТómo，唉，Kirk，Kapı，Vik，인�freết，娘，ailandой，це，crackers，suggestion，Sur，choose，Appro mal，leri，abroad，play unanimously，feed，統 초，ligne，�ahlen，gas。</p></a>
+				<a href="#00:03:6.91" id="00:03:6.91" class="lt" onclick="jumptoTime(186, this.id)"><p>wäh，Lew，啊，Din，inflict �oshing，Raspberry，Liter，情況，aser，hasht，tang，elementary，andere，收ledge，RAW，égal，Branch，scanning，Brussels，seize，spéウ propagation，ott פ。</p></a>
+				<a href="#00:03:14.65" id="00:03:14.65" class="lt" onclick="jumptoTime(194, this.id)"><p>Americans，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥</p></a>
+				<a href="#00:03:47.27" id="00:03:47.27" class="lt" onclick="jumptoTime(227, this.id)"><p>再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，再次慢慢加入半隻蛋白、黑糖蜜和生薑泥，倒入麵粉</p></a>
+				<a href="#00:04:44.68" id="00:04:44.68" class="lt" onclick="jumptoTime(284, this.id)"><p>重複用切和拌的手法將麵粉拌勻，謝謝收看，換個面大啲嘅刮刀，用力將啲材料搽勻，用保鮮膜包住，放雪櫃下格，冷藏2小時</p></a>
+				<a href="#00:06:12.27" id="00:06:12.27" class="lt" onclick="jumptoTime(372, this.id)"><p>用保鮮膜包住，放雪櫃下格，冷藏2小時，將雪原麵團揉成小塊，然後揉成一團，麵團就會變得軟硬均勻，最好用膠手套來做，這樣就不會黏手</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:06:59.26" id="00:06:59.26" class="lt" onclick="jumptoTime(419, this.id)"><p>由 Amara.org 社群提供的字幕</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:1.59" id="00:07:1.59" class="lt" onclick="jumptoTime(421, this.id)"><p>剪開保鮮袋兩邊，放入麵團，將麵團壓成4mm厚度的麵皮</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:35.09" id="00:07:35.09" class="lt" onclick="jumptoTime(455, this.id)"><p>將麵團放入鍋中，煮至麵團變稠，然後冷藏15分鐘，趁這個時候， 預熱焗爐到180度，拿出來的麵皮， 在底面都要掃上一層薄薄的手粉</p></a>
+				<a href="#00:08:21.21" id="00:08:21.21" class="lt" onclick="jumptoTime(501, this.id)"><p>把麵皮放入焗爐中，把麵皮放入焗爐中，用手推動麵皮， 讓麵皮更均勻，Min República，metaphor，isol，bra Angela，toi，��，silent，ורה，すごい，gel showcase，Champ cheesy，đ��도록，cryptocurorde，Maar。</p></a>
+				<a href="#00:08:48.80" id="00:08:48.80" class="lt" onclick="jumptoTime(528, this.id)"><p>ười，μα，himself，있으면，相信，revived，его，ит，consort，asy，ici，ii，lum，producto，asan，подум，SA，vary，άλ，suggcia，fellow，eln，aina，Shank，Нав，saves，rounding，illing，crazy，มา。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:35.24" id="00:08:35.24" class="lt" onclick="jumptoTime(515, this.id)"><p>coincidence，lad，Metmod，porte，��，rian，diffé，earn Gen，predicting，بد，Pink doo，ünd，groans，awak，Можно，birth，tobacco，nécessaire，BS，mala，presume，Ü，undergraduate，�。</p></a>
+				<a href="#00:08:40.90" id="00:08:40.90" class="lt" onclick="jumptoTime(520, this.id)"><p>spaces Avatar，ność，醬料，鹽，糖，黑胡椒，鹽，胡椒粉，鹽，糖</p></a>
+				<a href="#00:09:13.98" id="00:09:13.98" class="lt" onclick="jumptoTime(553, this.id)"><p>黑胡椒，鹽，胡椒粉，鹽，用模刻出一個薑餅人的外形，印之前要在模上掃一點手粉，方便脫模</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:09:57.83" id="00:09:57.83" class="lt" onclick="jumptoTime(597, this.id)"><p>用手指輕輕地按住麵團，讓麵團均勻地包住麵團</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:10:5.83" id="00:10:5.83" class="lt" onclick="jumptoTime(605, this.id)"><p>這樣就不會有麵團粘住了，把麵團包好，用手指輕輕地按住麵團，讓麵團均勻地包住麵團，這樣就不會有麵團粘住了，用手指輕輕地按住麵團，這樣就不會有麵團粘住了</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:10:31.83" id="00:10:31.83" class="lt" onclick="jumptoTime(631, this.id)"><p>這樣就不會有麵團粘住了，太可愛了，字幕提供者 李宗盛</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:40.89" id="00:10:40.89" class="lt" onclick="jumptoTime(640, this.id)"><p>冷藏15分鐘，等硬身一點就可以印上眼耳口鼻，剩下的麵團就包好放雪櫃，等這批餅乾入模後取出來，再重複瓦麵皮後的步驟，直至用完為止</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkkhaki">SPEAKER_02</span><br>
+				<a href="#00:11:25.69" id="00:11:25.69" class="lt" onclick="jumptoTime(685, this.id)"><p>Cornell</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:11:29.27" id="00:11:29.27" class="lt" onclick="jumptoTime(689, this.id)"><p>� PUBG restraint，米，rece</p></a>
+				<a href="#00:11:28.11" id="00:11:28.11" class="lt" onclick="jumptoTime(688, this.id)"><p>fading，hätte，toim，情況reso，vont，ξ，dass，sẽ</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:29.72" id="00:11:29.72" class="lt" onclick="jumptoTime(689, this.id)"><p>印好後就可以入爐了，將焗爐調低至170度， 焗12分鐘，確認餅乾底已經上色， 就可以出爐了，將他們放在架上， 放涼，等完全放涼後， 就用糖霜筆幫他們裝飾，一個個充滿自然色彩的薑餅人就完成了，如果喜歡我的影片， 就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘， 就會收到我的最新影片通知，如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們。</p></a>
+				<a href="#00:12:9.72" id="00:12:9.72" class="lt" onclick="jumptoTime(729, this.id)"><p>下次再見吧， Bye Bye。</p></a>
+</div>
+	</body>
+</html>

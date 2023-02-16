@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 你也可以試著做的藍莓鄉村乳酪蛋糕</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'eB95WpMJeVM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 你也可以試著做的藍莓鄉村乳酪蛋糕</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C。今日我會教大家做一個藍莓鄉村乳酪蛋糕。</p></a>
+				<a href="#00:00:17.69" id="00:00:17.69" class="lt" onclick="jumptoTime(17, this.id)"><p>首先，我們要準備焗蛋糕的蛋糕模，因為這次的芝士蛋糕是用水焗的，所以我們要用錫紙來包，不可以像平時那樣用牛油紙來包，其實隨便就可以了，因為錫紙不會像牛油紙那樣容易鬆開，我用了三層錫紙，總之封住底部就可以了，如果太矮的話，小心這裡會入水，裡面要放一張牛油紙，塗了牛油紙後，它就不會這樣動來動去，待會會比較容易脫模。</p></a>
+				<a href="#00:01:4.69" id="00:01:4.69" class="lt" onclick="jumptoTime(64, this.id)"><p>然後放進一個有深度的焗盤，因為我們做完蛋糕糊之後，會倒滾水進去焗的，要有一個高度的，模已經做好了，現在來做餅底，餅底我們用了150克的消化餅，和62.5克的融化的牛油，我們拿一個密實袋，把消化餅放進去，首先，我們先做燒烤餅，不要打得太碎，因為我自己試過打得太碎，餅底會很軟</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:58.69" id="00:01:58.69" class="lt" onclick="jumptoTime(118, this.id)"><p>就這樣就可以了，有些粒粒就見到，然後把溶了的牛油倒進去，將它們拌勻，有些草大粒的就捏碎，我們就拿這個蛋糕模出來，然後將餅碎倒進去，用匙羹壓緊，放入冰箱，現在看看芝士糊需要什麼材料，有糖62.5克，軟化的牛油37.5克，檸檬皮一個，粟粉37.5克，過篩的芝士62.5克，忌廉芝士250克，酸忌廉50克。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:34.77" id="00:03:34.77" class="lt" onclick="jumptoTime(214, this.id)"><p>淡忌廉50克，砂糖62.5克，檸檬汁1 1 4分1茶匙，需要5隻雞蛋，將砂糖和軟化的牛油攪拌，牛油和糖已經融合，之後加入忌廉芝士，茅屋芝士，粟粉和檸檬皮，做芝士蛋糕一定要注意，因為要這樣混合，忌廉芝士要一早拿出來，要逐一融合才加其他材料，不要一次過加進去，除了忌廉芝士，還有茅屋芝士，茅屋芝士要過篩。</p></a>
+				<a href="#00:04:55.77" id="00:04:55.77" class="lt" onclick="jumptoTime(295, this.id)"><p>否則會有些粒粒，要這樣拌勻，茅屋芝士之後，加入粟粉和檸檬皮，加入白糖和雞蛋，攪拌均勻後加入檸檬皮，加入雞蛋，雞蛋要注意要加兩隻半，雞蛋不能一次過放進去，雞蛋一定要室溫，先打發一隻蛋，不要一次過放進去，現在加一點點白糖，完全混合， 看不到蛋了，再加少許，因為是兩隻半蛋， 後面也是用兩隻半蛋白，所以現在將蛋白和蛋黃分開。</p></a>
+				<a href="#00:07:4.35" id="00:07:4.35" class="lt" onclick="jumptoTime(424, this.id)"><p>分開，這樣半隻蛋白就可以留著， 不會浪費，這裡就加半隻蛋，這個大約，蛋白不要弄髒，待會打蛋白時， 不可以有蛋黃，這裡是兩隻半蛋，攪勻，然後再加入酸忌廉和淡忌廉，先攪勻，攪勻至完全看不到酸忌廉，再加上淡忌廉，因為淡忌廉有點凍，所以不敢一次過加進去，因為突然降溫，麵糊可能會起脂肪粒，不是粉粒，是脂肪粒。</p></a>
+				<a href="#00:08:24.13" id="00:08:24.13" class="lt" onclick="jumptoTime(504, this.id)"><p>麵糊慢慢加進去，這部分已經完成了，如果想更滑就可以過篩，加上檸檬皮，這個芝士糊已經完成了，現在輪到打蛋靶，現在開始打蛋靶，打蛋靶後，將糖分分開，打蛋後加些檸檬汁，加入1茶匙油，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，這是彎角，反轉是不會掉出來的，這樣就可以了，我們就將它們兩個混在一起，輕輕地，你見不到有白色，即是蛋白混合了。</p></a>
+				<a href="#00:11:11.24" id="00:11:11.24" class="lt" onclick="jumptoTime(671, this.id)"><p>然後將芝士糊倒入蛋白中，然後放藍莓粒，然後把其餘芝士糊倒進去，將蛋糕放入烤箱中，將蛋糕放入烤箱中，蛋糕烤好後，我將蛋糕放入烤箱中，烤了45分鐘，蛋糕變色後，我將蛋糕放入烤箱中，再烤45分鐘，蛋糕烤好後，我將蛋糕放入烤箱中，放入冰箱一晚，明天早上再和蛋糕裝飾，現在開始裝飾，首先，我將藍莓醬做好。</p></a>
+				<a href="#00:12:29.54" id="00:12:29.54" class="lt" onclick="jumptoTime(749, this.id)"><p>藍莓醬需要125克藍莓，25克砂糖，半湯匙粟粉，半個檸檬皮和檸檬汁，現在開始製作，將藍莓和砂糖，加入檸檬汁和粟粉，不要用太大火，因為藍莓沒有太多水份，只需這樣煮，煮的時候，藍莓會爆開，因為有粟粉，所以要攪拌一下，現在可以開始了，藍莓差不多煮爛了，現在試一下味，藍莓味道很酸，加多一點砂糖。</p></a>
+				<a href="#00:13:42.54" id="00:13:42.54" class="lt" onclick="jumptoTime(822, this.id)"><p>半湯匙，要視乎你自己的藍莓，我今天覺得藍莓味道很酸，所以加多一點砂糖，糖溶了就可以關火，因為我們會在餅皮上再加藍莓粒，所以不需要加砂糖</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:14:9.94" id="00:14:9.94" class="lt" onclick="jumptoTime(849, this.id)"><p>shadow，banco，Harper，buds，chemical，knee，所以ời，noi，transc cucumbers，легко，tuv，Ю，aware，fungi，twitter，rupees，знаком，BI，atus，authent单，mol probe，filmmaking，ない。</p></a>
+				<a href="#00:14:19.50" id="00:14:19.50" class="lt" onclick="jumptoTime(859, this.id)"><p>ти습니까，放置一會兒， 待會兒再裝飾餅面，剛才做的藍莓醬已經放涼了，將它放在擠花袋， 前面剪一個小洞，將它打圓圈， 擠在芝士蛋糕的表面，將洗淨的藍莓放上去， 這樣就完成了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:15:18.28" id="00:15:18.28" class="lt" onclick="jumptoTime(918, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

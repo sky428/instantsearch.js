@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 藍莓芝士餅 | 簡單易做 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'A4p1nICuRDg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 藍莓芝士餅 | 簡單易做 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.04" id="00:00:3.04" class="lt" onclick="jumptoTime(3, this.id)"><p>今日我會教你做一個簡單嘅焗藍莓芝士蛋糕。</p></a>
+				<a href="#00:00:7.76" id="00:00:7.76" class="lt" onclick="jumptoTime(7, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔。</p></a>
+				<a href="#00:00:11.84" id="00:00:11.84" class="lt" onclick="jumptoTime(11, this.id)"><p>咁你先唔會錯過我最新嘅資訊㗎!，做之前要先將淡忌廉，乳酪，雞蛋和忌廉芝士放回室溫回溫，要做到有軟滑的質感，這一步是很重要的。</p></a>
+				<a href="#00:00:35.67" id="00:00:35.67" class="lt" onclick="jumptoTime(35, this.id)"><p>首先做餅底，材料有，100克麥維他輕易消化餅，35克溶化的牛油，將餅乾放入保鮮袋硬碎，之後加入牛油，牛油，拌勻，這是8吋蛋糕模，在裡面灑上薄薄的牛油，底部鋪上牛油紙，將餅碎鋪滿底部，用匙羹壓實，然後放入雪櫃備用。</p></a>
+				<a href="#00:01:30.30" id="00:01:30.30" class="lt" onclick="jumptoTime(90, this.id)"><p>材料回溫後可以開始做芝士糊，材料有，忌廉芝士250克，雲呢拿香油1茶匙，原味乳酪125克，雞蛋125克，淡忌廉125克，砂糖87克，檸檬汁20克，低筋麵粉11克，把忌廉芝士攪至順滑無粒粒，加糖， 用打蛋器將麵團搓至順滑，依次序逐少逐少加入鮮忌廉，娛樂，打勻雞蛋，雲呢拿香油，還有檸檬汁。</p></a>
+				<a href="#00:03:40.79" id="00:03:40.79" class="lt" onclick="jumptoTime(220, this.id)"><p>篩入麵粉，然後將芝士糊直接過篩入蛋糕模內，放入預熱至170度的焗爐，焗50至60分鐘，焗完後讓它放涼，連帽子一起冷藏至少3小時。</p></a>
+				<a href="#00:04:29.65" id="00:04:29.65" class="lt" onclick="jumptoTime(269, this.id)"><p>這裡有400克藍莓，選大顆的用來鋪面做裝飾，小顆的用來做果醬，做果醬的材料有，藍莓125克，砂糖25克，半個檸檬汁，半湯匙玉米澱粉，半個檸檬皮磨融，用中小火將糖，藍莓，檸檬汁和檸檬皮融一起煮滾，之後夾渣，順便試一下味，逐少逐少加入粟粉水勾芡，不要煮得太稠，冷卻後會再濃稠一些。</p></a>
+				<a href="#00:05:59.39" id="00:05:59.39" class="lt" onclick="jumptoTime(359, this.id)"><p>把芝士餅脫模，之後做裝飾，冰過的芝士餅會更好味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:32.71" id="00:06:32.71" class="lt" onclick="jumptoTime(392, this.id)"><p>MING PAO CANADA CANADA.COM，切的時候如果想有一個整齊的切口，每下一刀之前最好先熱一熱刀，希望你喜歡我今次的分享吧!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:57.56" id="00:06:57.56" class="lt" onclick="jumptoTime(417, this.id)"><p>如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye!</p></a>
+</div>
+	</body>
+</html>

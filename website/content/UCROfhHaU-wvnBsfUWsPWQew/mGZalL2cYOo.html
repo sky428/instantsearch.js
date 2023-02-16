@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 3個製作美式軟曲奇必需知道的重點</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'mGZalL2cYOo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 3個製作美式軟曲奇必需知道的重點</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>唔知你有冇食過喺地鐵站嗰間美式曲奇呢?</p></a>
+				<a href="#00:00:7.08" id="00:00:7.08" class="lt" onclick="jumptoTime(7, this.id)"><p>如果有，而你又鍾意食嘅話，咁就千祈唔好錯過呢條片啦!</p></a>
+				<a href="#00:00:12.28" id="00:00:12.28" class="lt" onclick="jumptoTime(12, this.id)"><p>如果未食過嘅話，不妨試下整呀，話唔定你會一試愛上㗎!</p></a>
+				<a href="#00:00:17.28" id="00:00:17.28" class="lt" onclick="jumptoTime(17, this.id)"><p>事不宜遲，而家就等我教你整美式巧克力合桃軟曲奇啦!</p></a>
+				<a href="#00:00:33.28" id="00:00:33.28" class="lt" onclick="jumptoTime(33, this.id)"><p>首先介紹下整曲奇嘅材料先。</p></a>
+				<a href="#00:00:36.28" id="00:00:36.28" class="lt" onclick="jumptoTime(36, this.id)"><p>中筋麵粉400克，梳打粉8克，鹽10克，金桶牛油220克，白砂糖180克，紅糖200克，室溫雞蛋2隻，雲呢拿醬20克，入爐嘅牛奶朱古力粒220克，合桃肉100克，以上嘅份量大約可以整到24塊曲奇。</p></a>
+				<a href="#00:01:21.28" id="00:01:21.28" class="lt" onclick="jumptoTime(81, this.id)"><p>今次用到嘅材料都係喺烘焙部嗰度買嘅。</p></a>
+				<a href="#00:01:25.28" id="00:01:25.28" class="lt" onclick="jumptoTime(85, this.id)"><p>我去開嗰幾間烘焙部嘅資料都寫咗喺下面影片資訊嗰度。</p></a>
+				<a href="#00:01:30.28" id="00:01:30.28" class="lt" onclick="jumptoTime(90, this.id)"><p>你有興趣嘅話，可以點開嚟睇下㗎。</p></a>
+				<a href="#00:01:33.28" id="00:01:33.28" class="lt" onclick="jumptoTime(93, this.id)"><p>紅糖方面，我今次係用咗一種比較簡單嘅方法去做嘅。</p></a>
+				<a href="#00:01:37.28" id="00:01:37.28" class="lt" onclick="jumptoTime(97, this.id)"><p>紅糖方面，我今次係用太古嘅黃金幼砂糖。</p></a>
+				<a href="#00:01:42.28" id="00:01:42.28" class="lt" onclick="jumptoTime(102, this.id)"><p>佢比一般嘅砂糖濕潤。</p></a>
+				<a href="#00:01:45.28" id="00:01:45.28" class="lt" onclick="jumptoTime(105, this.id)"><p>整美式軟曲奇嘅第一個重點就係，要用到兩種唔同嘅糖。</p></a>
+				<a href="#00:01:50.28" id="00:01:50.28" class="lt" onclick="jumptoTime(110, this.id)"><p>利用佢哋溶點同埋含水量嘅差別，產生出軟曲奇特有嘅外脆內軟質地。</p></a>
+				<a href="#00:01:57.28" id="00:01:57.28" class="lt" onclick="jumptoTime(117, this.id)"><p>將中筋麵粉、梳打粉同鹽一起過篩。</p></a>
+				<a href="#00:02:19.39" id="00:02:19.39" class="lt" onclick="jumptoTime(139, this.id)"><p>將打蛋器調至高速，打鬆牛油，大約打一分鐘左右，加入紅糖和白砂糖，再打3-4分鐘</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:34.23" id="00:03:34.23" class="lt" onclick="jumptoTime(214, this.id)"><p>攪拌均勻，喜歡的請訂閱支持小鈴鐺，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，然後加雲呢拿醬，同一隻雞蛋</p></a>
+				<a href="#00:07:1.79" id="00:07:1.79" class="lt" onclick="jumptoTime(421, this.id)"><p>� Mental，ô shuts sold，raz，Chocolate，zost，dinosaur，ழ，� milliseconds，.' Luigi，разных，Strategic，intelligence，damaged，打勻後再放第二隻雞蛋</p></a>
+				<a href="#00:07:37.48" id="00:07:37.48" class="lt" onclick="jumptoTime(457, this.id)"><p>打勻後再放第二隻雞蛋，打勻後再放第二隻雞蛋，影片就到這，記得幫我訂閱、按讚及分享唷，打至麵糊順滑和光澤就可以停了，放入朱古力，和核桃，轉低速拌勻，加入麵粉，繼續用低速混合</p></a>
+				<a href="#00:10:9.35" id="00:10:9.35" class="lt" onclick="jumptoTime(609, this.id)"><p>加入少量牛奶，攪拌均勻，加入少量蛋白，攪拌均勻，加入少量蛋白，攪拌均勻，攪拌均勻，攪拌均勻，最後用橡皮刮刀，把麵團壓半數次，把麵團分成一個個重60克的球</p></a>
+				<a href="#00:11:42.67" id="00:11:42.67" class="lt" onclick="jumptoTime(702, this.id)"><p>把麵團放入冰箱冷藏30分鐘，完成後放冰箱冷藏30分鐘，製作美式軟曲奇的第二個重點是。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:11:51.91" id="00:11:51.91" class="lt" onclick="jumptoTime(711, this.id)"><p>在入爐前一定要冷藏，因為軟曲奇在烤的時候會融化，冷藏的作用是減輕它融化的程度，令曲奇保持足夠的厚度達至軟心的效果，預熱焗爐照180度，將冷藏好的麵團放在焗盤上，製作美式軟曲奇的第三個重點是。</p></a>
+				<a href="#00:12:14.91" id="00:12:14.91" class="lt" onclick="jumptoTime(734, this.id)"><p>不要一次過焗太多，曲奇之間要保持約兩倍的距離，等溶的時候有足夠的空間讓它們擴展，然後放入焗爐用180度焗14分鐘，出爐後趁熱將曲奇稍為壓平，要繼續留在焗盤上等它定型，大約10分鐘，之後就可以移到網架上放涼，這款軟曲奇含糖量高，將其密封可以保存7至10天，只要學懂基本做法，加入不同材料。</p></a>
+				<a href="#00:13:2.63" id="00:13:2.63" class="lt" onclick="jumptoTime(782, this.id)"><p>就可以做出不同口味，希望你喜歡今次的教學吧，如果喜歡我的影片，記得給個讚和訂閱我的頻道，你亦可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，再見!</p></a>
+</div>
+	</body>
+</html>
