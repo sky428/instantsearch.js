@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 繡球炸芋蝦，食完笑哈哈 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'rRhExyrfBPU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 繡球炸芋蝦，食完笑哈哈 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C，今日我會教你做一個好簡單嘅賀年小食，繡球芋蝦，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，芋蝦最主要嘅材料呢就係芋頭，一定要揀啲長身嘅，一個刨絲器，我哋揀差唔多好似扁意粉咁嘅size，兩個打邊爐嘅篩，一定要呢一個款，要深少少嘅，同埋一支竹籤。</p></a>
+				<a href="#00:00:39.66" id="00:00:39.66" class="lt" onclick="jumptoTime(39, this.id)"><p>每一斤嘅芋頭呢要用到嘅調味料有，4克嘅鹽，8克嘅砂糖，1克嘅五香粉，12克嘅粘米粉，12克嘅糯米粉，同埋一啲冇炒過嘅白芝麻，材料呢就係咁多啦，而家可以開始整啦，芋頭呢就唔使洗，唔好整濕佢，將佢去皮，之後呢就刨絲，由頭刨到落尾，越長呢就越好，咁個繡球呢先至會靚㗎，所以一定要揀個長嘅，刨好曬之後呢就落鹽。</p></a>
+				<a href="#00:01:19.36" id="00:01:19.36" class="lt" onclick="jumptoTime(79, this.id)"><p>糖，鹽 同埋五香粉，輕輕地把它翻鬆，加了鹽會令芋頭絲變軟，軟身時可以加芝麻，粘米粉，和糯米粉，輕力地翻炒，把適量的芋頭絲裝滿一邊，不要緊緊的固定，一定要鬆手，再蓋上另一個，輕輕地打幾個圈，不要前後後， 也不要上上下下， 這樣會弄緊，燒熱油至160度， 保持中火，如果沒有溫度計， 可以放一條芋頭絲測油溫，你見到它會立即浮起。</p></a>
+				<a href="#00:03:34.09" id="00:03:34.09" class="lt" onclick="jumptoTime(214, this.id)"><p>連帽子一起放油炸， 等它定型才脫模，想知道它定型了沒有， 可以輕輕打開一邊帽子看看，如果可以順勢脫模， 就代表成功了，MING PAO CANADA CANADA.COM，有時芋頭絲會卡著模，要用竹籤幫忙，我建議你一個一個炸，繼續炸至有少許金黃色便完成了，最後我想給你看看， 有打圈的和無打圈的分別，這隻是無打圈的， 結構不太好看。</p></a>
+				<a href="#00:05:6.53" id="00:05:6.53" class="lt" onclick="jumptoTime(306, this.id)"><p>而這隻是有打圈的， 是否漂亮很多呢?</p></a>
+</div>
+	</body>
+</html>

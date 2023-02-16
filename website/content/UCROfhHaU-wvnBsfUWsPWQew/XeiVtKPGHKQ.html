@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 超簡單的發糕製作方法</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'XeiVtKPGHKQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 超簡單的發糕製作方法</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.54" id="00:00:2.54" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家做一款好好意頭嘅糕點，黃糖發糕，祝大家新嘅一年都好似發糕一樣，大發突發，越發越有!</p></a>
+				<a href="#00:00:14.92" id="00:00:14.92" class="lt" onclick="jumptoTime(14, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先要介紹下整發糕嘅材料先，準備114克糖，我今次用片糖，如果你想改用其他糖來做都可以，228克水，248克低筋麵粉，20克泡打粉，同一湯匙生油，我仲準備咗3個3.75吋嘅碗仔用嚟蒸糕，所有嘅材料都準備好曬，而家可以開始整啦。</p></a>
+				<a href="#00:01:3.16" id="00:01:3.16" class="lt" onclick="jumptoTime(63, this.id)"><p>開中細火煮片糖，要不停咁攪住，啲糖溶曬就要即刻熄火，目的是唔想啲水份蒸發得太多，然後將佢攤凍備用，將低筋粉同泡打粉過篩，分幾次加入攤凍咗嘅糖水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:55.16" id="00:01:55.16" class="lt" onclick="jumptoTime(115, this.id)"><p>將佢攪拌均勻，將佢攪拌均勻</p></a>
+				<a href="#00:02:34.16" id="00:02:34.16" class="lt" onclick="jumptoTime(154, this.id)"><p>將佢攪拌均勻，加完後過篩一次，成幼滑的粉漿，最後加入1湯匙生油，拌勻，放一旁靜置15分鐘，等它發酵，趁這個時候幫碗仔掃一層薄薄的油，發酵完，將粉漿倒入碗仔，要倒到九成满，然後搖一搖排走多餘的空氣，用一支浸油的牙籤，在粉漿表面畫個Y字，這樣蒸出來的發糕就會呈現三反，如果畫個十字的話，就會呈現四反。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:44.86" id="00:04:44.86" class="lt" onclick="jumptoTime(284, this.id)"><p>用大火蒸25分鐘，這樣就完成了，如果你想在發糕的中間加紅點，可以用水稀釋一些紅色的食用色素，用筷子頭點上去就可以了，如果喜歡我的影片， 請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺， 就會收到我的最新影片通知，如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們，下次再見， Bye Bye!</p></a>
+</div>
+	</body>
+</html>

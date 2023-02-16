@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 炸油角 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Vl9r0GyENyQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 炸油角 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.32" id="00:00:2.32" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整角仔，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:15.32" id="00:00:15.32" class="lt" onclick="jumptoTime(15, this.id)"><p>首先會教咗你點樣整個甜餡，材料有300克嘅豬豆花生，50克嘅白芝麻，25克嘅椰絲，150克嘅砂糖，用白鑊細火炒香白芝麻，炒至微微金黃色，跳跳跳就可以了，放涼備用，用白鑊小火，炒香椰絲，炒至轉色就可以了，放涼備用，花生也是一樣，用白鑊小火炒，方便我們去醫，去熱後， 把油燒至120度，放一顆花生試試， 旁邊會有小氣泡。</p></a>
+				<a href="#00:01:32.44" id="00:01:32.44" class="lt" onclick="jumptoTime(92, this.id)"><p>炸至微微金黃色撈起，攤凍備用，放入保鮮袋壓碎，如果不想自己炸， 也可以去烘焙店看看有沒有，將所有材料拌勻，再按個人口味調整甜度，甜餡就完成了。</p></a>
+				<a href="#00:02:41.24" id="00:02:41.24" class="lt" onclick="jumptoTime(161, this.id)"><p>輪到做個角仔皮，材料有，86克低筋麵粉，26克水，半隻雞蛋，大約25克，10克砂糖，16克豬油，這個份量可以做到10至12隻，倒些麵粉在桌面，在中間開一個窩，拌勻糖和豬油，再慢慢加蛋汁，之後把麵粉倒入麵糊中，這個皮不需要加太多水，所以我會先加1 3分</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:29.35" id="00:04:29.35" class="lt" onclick="jumptoTime(269, this.id)"><p>每天中午12點 喜歡我的影片請訂閱或按讚，多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:55.96" id="00:04:55.96" class="lt" onclick="jumptoTime(295, this.id)"><p>給力向前推， 讓它產生足夠熱力， 令糖和豬油融合更好，如果像我這樣， 一推就斷開， 即是水不夠，用手逐少拍水加進去，擦到光滑， 黏手不黏桌子就可以了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:05:47.59" id="00:05:47.59" class="lt" onclick="jumptoTime(347, this.id)"><p>小編的字幕由 Amara.org 社群提供，包好保鮮紙， 鬆筋1小時，角仔皮要薄才脆才好吃，不要用太多手粉會比較難封口</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:06:38.92" id="00:06:38.92" class="lt" onclick="jumptoTime(398, this.id)"><p>請訂閱魔人SAVI的頻道及按旁邊那個鈴鐺，每週固定3-4部影片 喜歡我的影片請訂閱或按讚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:51.26" id="00:06:51.26" class="lt" onclick="jumptoTime(411, this.id)"><p>每週固定3-4部影片 喜歡我的影片請訂閱或按讚，每塊皮直徑3吋。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:28.44" id="00:07:28.44" class="lt" onclick="jumptoTime(448, this.id)"><p>盡量放多些餡在中間， 壓一壓，邊邊不要黏到椰絲花生糖，否則炸的時候有機會爆開，塗少許水在邊位，先壓緊一隻角，再用錫紙擋住餡料，動直角仔， 餡料掉落去，這樣就不怕黏不住口，收口後， 按一隻手指位的邊，由角開始， 摺上來，按下去， 推一個手指位，摺上來， 按下去， 推一個手指位，如此類推。</p></a>
+				<a href="#00:08:24.97" id="00:08:24.97" class="lt" onclick="jumptoTime(504, this.id)"><p>ierno</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:50.25" id="00:08:50.25" class="lt" onclick="jumptoTime(530, this.id)"><p>你有 wholes provinces，Pear場，Just</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:40.11" id="00:08:40.11" class="lt" onclick="jumptoTime(520, this.id)"><p>titt💜면 dunk，peril blossoms，나도，pancakes，hourly，teenager，sais，niin，gets，ędzie，ORE simpl</p></a>
+				<a href="#00:08:36.17" id="00:08:36.17" class="lt" onclick="jumptoTime(516, this.id)"><p>FR，一起，Antar，Chry luz，작업，그대로，辛 entender，naming，funktioniert，eviden dent，Shirley，Kons，эконом，וס，commencement，剛剛，prisons，raj，Nico garder，istiyorum</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:43.71" id="00:08:43.71" class="lt" onclick="jumptoTime(523, this.id)"><p>wyn，Jacoru，�να，ulse，kach，social Pablo，помощью，feasible，errandhyung，как，distortensemble，унд按 뭐�，площ，erad께서，earned，おい focal，assignments，Dos，igers。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:27.33" id="00:08:27.33" class="lt" onclick="jumptoTime(507, this.id)"><p>Curiosity，sailed，promotional，witjay，complained，buildings，Motor oversized，arius，Idea，safeg� asp，Got，great，【伦桑原创】Lun Sang 红尘旅行，【伦桑原创】Lun Sang 红尘旅行，每週固定3-4部影片 喜歡我的影片請訂閱或按讚。</p></a>
+				<a href="#00:09:23.96" id="00:09:23.96" class="lt" onclick="jumptoTime(563, this.id)"><p>每週固定3-4部影片 喜歡我的影片請訂閱或按讚，把油燒熱至150度，沒有溫度計的話， 用麵團試一下，如果很快浮起， 即是夠熱了，保持中火， 要不停反轉， 令顏色均勻，如果有角仔爆口， 爆得太厲害， 就要馬上舀走，因為餡料容易燒焦， 會弄髒鑊油， 影響其他角仔，炸多10秒左右。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:10:28.67" id="00:10:28.67" class="lt" onclick="jumptoTime(628, this.id)"><p>把油逼出來，轉中火就可以落第二批，放涼後就可以放入保鮮盒保存，希望你喜歡我今次的分享，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你亦可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見啦，Bye Bye。</p></a>
+</div>
+	</body>
+</html>
