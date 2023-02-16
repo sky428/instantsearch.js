@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 泰式清酒凍蝦 | 用其他海鮮來代替也可以 [HK, TW, CN, Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '7RsAW-lxysI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 泰式清酒凍蝦 | 用其他海鮮來代替也可以 [HK, TW, CN, Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.16" id="00:00:0.16" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.92" id="00:00:2.92" class="lt" onclick="jumptoTime(2, this.id)"><p>天氣開始熱喇，你係唔係都想整啲涼浸浸嘅嘢食下呢?</p></a>
+				<a href="#00:00:7.76" id="00:00:7.76" class="lt" onclick="jumptoTime(7, this.id)"><p>今日我就教你整一個泰式風味嘅冷盤，清酒浸蝦。</p></a>
+				<a href="#00:00:13.20" id="00:00:13.20" class="lt" onclick="jumptoTime(13, this.id)"><p>就算你好似我咁唔飲得酒都可以試下㗎。</p></a>
+				<a href="#00:00:17.36" id="00:00:17.36" class="lt" onclick="jumptoTime(17, this.id)"><p>我自己就好鍾意個汁喇，用嚟浸其他嘅海鮮都一樣咁好味。</p></a>
+				<a href="#00:00:23.20" id="00:00:23.20" class="lt" onclick="jumptoTime(23, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:31.20" id="00:00:31.20" class="lt" onclick="jumptoTime(31, this.id)"><p>首先睇下有啲咩材料先。</p></a>
+				<a href="#00:00:33.68" id="00:00:33.68" class="lt" onclick="jumptoTime(33, this.id)"><p>材料有半斤嘅新鮮蝦，半茶匙嘅鹽，250毫升嘅清酒，500毫升嘅清雞湯，兩隻大嘅紅辣椒，5至6塊嘅檸檬葉，3支香茅，3個芫茜頭，一個青檸，2粒蒜頭，同一塊藍薑，另外仲要準備一大盆冰水。</p></a>
+				<a href="#00:01:4.68" id="00:01:4.68" class="lt" onclick="jumptoTime(64, this.id)"><p>材料就係咁多，而家可以開始整喇。</p></a>
+				<a href="#00:01:8.28" id="00:01:8.28" class="lt" onclick="jumptoTime(68, this.id)"><p>首先將香茅切成一段段，把蒜頭，南薑，和紅辣椒切片，讓他們煮的時候容易出味，把檸檬葉中間的框撕走，然後搓爛葉子，青檸留待吃的時候才用，現在開始煮汁，煮滾清雞湯，香料和鹽，煮滾後煮多10分鐘，我個人喜歡煮酒，煮滾後關火，放涼，如果喜歡喝酒的話，可以等汁涼了再放，汁涼了再處理蝦，收蝦頭，剪走蝦腳。</p></a>
+				<a href="#00:02:47.27" id="00:02:47.27" class="lt" onclick="jumptoTime(167, this.id)"><p>賣相會好看一點，等水滾了就放蝦，蝦捲起來，按下去是硬身的，要立刻撈起，放入冰水中等蝦肉收縮，這樣吃起來就會爽口大牙，把蝦放入冷藏的汁裡，放在冰箱裡浸泡一天，吃的時候擠上青檸汁，一道酒香破鼻，充滿泰式風味的，清酒浸蝦就完成了，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知。</p></a>
+				<a href="#00:04:27.43" id="00:04:27.43" class="lt" onclick="jumptoTime(267, this.id)"><p>如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>
