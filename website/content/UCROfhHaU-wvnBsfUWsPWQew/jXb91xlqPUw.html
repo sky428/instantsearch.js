@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 外酥內嫩，家庭式吉列豬排做法大公開！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'jXb91xlqPUw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 外酥內嫩，家庭式吉列豬排做法大公開！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家做日式炸豬扒。</p></a>
+				<a href="#00:00:14.43" id="00:00:14.43" class="lt" onclick="jumptoTime(14, this.id)"><p>我們現在來看看炸豬扒的材料有什麼先，急凍的豬肉硬扒兩塊，味醂半湯匙，木魚素二分一茶匙，糖一茶匙，粟粉一茶匙，胡椒粉八分一茶匙</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:45.43" id="00:00:45.43" class="lt" onclick="jumptoTime(45, this.id)"><p>清酒半湯匙，醬油二分一茶匙，今次我沒有用倒啤水的方法來幫豬扒解凍，而是改用了解凍板</p></a>
+				<a href="#00:01:2.43" id="00:01:2.43" class="lt" onclick="jumptoTime(62, this.id)"><p>經過四十五分鐘之後，豬扒已經完全變回軟身了，看一看，解凍後的解凍板只有很少水，我們用廚房紙輕輕地把表面的水份吸走</p></a>
+				<a href="#00:01:20.43" id="00:01:20.43" class="lt" onclick="jumptoTime(80, this.id)"><p>我們用保鮮紙包著豬扒，把刀由內向外地拍</p></a>
+				<a href="#00:01:52.43" id="00:01:52.43" class="lt" onclick="jumptoTime(112, this.id)"><p>豬扒完成了，拍完之後再將圍住豬扒條根切斷，這樣就不會捲起來了</p></a>
+				<a href="#00:02:27.88" id="00:02:27.88" class="lt" onclick="jumptoTime(147, this.id)"><p>今天拍的視頻就拍到這裡了，感謝您的觀看，每週固定3部影片 喜歡我的影片請訂閱或按讚，этому，.....</p></a>
+				<a href="#00:03:1.00" id="00:03:1.00" class="lt" onclick="jumptoTime(181, this.id)"><p>Sales，settlement，ienen，Around，moderator，nin viewer，tornar，système，Bundesregierung，Chrome，Gimme，當然，center，ring，handy，len，ろ，weeds，likely，MR，arf，Theresa。</p></a>
+				<a href="#00:02:52.10" id="00:02:52.10" class="lt" onclick="jumptoTime(172, this.id)"><p>與 reporter，지가，leness，只heric，checked，ánd，phenomenolate，ST sick，style，leopard，rau，deste，banda，SUPER becomes，которые，іл，Nico，отивuan，TitME，anza，今天视频就拍到这里了，感谢收看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:1.43" id="00:03:1.43" class="lt" onclick="jumptoTime(181, this.id)"><p>處理好豬扒後就可以開始醃味，首先用味醂塗抹豬扒醃15分鐘，用一個大碗放入木魚素、糖、胡椒粉，粟粉，清酒和醬油，攪勻，將兩塊豬扒放入醃料中，醃半小時</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:47.05" id="00:04:47.05" class="lt" onclick="jumptoTime(287, this.id)"><p>將豬扒放入醃料中，醃半小時，醃好後就可以開始炸豬扒，炸豬扒需要粗身麵包糠、雞蛋和中筋麵粉，首先把一層薄薄的麵粉在豬扒表面，然後將豬扒入面蛋汁，用匙羹將麵包糠鋪上去， 這樣就不會弄髒對手了</p></a>
+				<a href="#00:06:16.39" id="00:06:16.39" class="lt" onclick="jumptoTime(376, this.id)"><p>用匙羹將麵包糠鋪上去， 這樣就不會弄髒對手了，用手稍為拍實麵包糠，這樣炸的時候就沒那麼容易脫落，準備一個鍋，開大火，燒熱油，放豬扒進去之前，要先測試油溫，拿少許麵粉炸油，如果麵粉很快浮起，就表示油已經夠熱，可以放豬扒進去，放進去之後，不要太快動，讓它炸一會兒，阿爺最好新舊油兩溝，如果全用新油，炸出來的豬扒會比較淺色。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:07:2.62" id="00:07:2.62" class="lt" onclick="jumptoTime(422, this.id)"><p>全部用舊油的話，豬扒就會很快變黑，見它開始有少許硬身，就反轉來看看，這個時候可以把火調小一點，炸至另一面也變成金黃色，按下去感覺到豬扒已經硬身，就可以拿上來，平底油，平底油然後上碟裝飾</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:08:14.64" id="00:08:14.64" class="lt" onclick="jumptoTime(494, this.id)"><p>謝謝觀看，如果喜歡我的影片， 請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺， 就會收到我的最新影片通知，如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們，下次再見， Bye Bye!</p></a>
+</div>
+	</body>
+</html>

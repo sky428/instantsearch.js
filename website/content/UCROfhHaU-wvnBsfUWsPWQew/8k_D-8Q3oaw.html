@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 日式大阪燒！超易上手，即學即做</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '8k_D-8Q3oaw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 日式大阪燒！超易上手，即學即做</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.26" id="00:00:2.26" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家整日式大阪燒，大阪燒係喺麵糊入面加入大量嘅椰菜同埋自己鍾意嘅食材，放喺鐵板上面煎熟嘅料理，今日我就揀咗用小朋友鍾意嘅材料，媽媽們，你哋可以喺放假嘅日子整佢嚟當做正餐，都係一個唔錯嘅選擇嚟㗎!</p></a>
+				<a href="#00:00:32.99" id="00:00:32.99" class="lt" onclick="jumptoTime(32, this.id)"><p>日式大饱烧的材料有，椰菜1 4分之1，鸡蛋半只，中筋面粉50g，水50g，盐少许，木鱼素少许，猪肉薄片，蟹柳，狮子狗卷，适量，大阪烧酱，日式沙拉酱，柴鱼片，紫菜碎，开水冲洗椰菜，至少10分钟去除农药，晾干水切成细丝，狮子狗卷，切成小块，用筷子將麵粉和水拌勻，用筷子可以防止麵糊起筋，因為起筋的麵糊煎出來的大阪燒就會變得很硬，拌勻的麵糊應該很稠就對了。</p></a>
+				<a href="#00:02:23.66" id="00:02:23.66" class="lt" onclick="jumptoTime(143, this.id)"><p>之後加入半隻雞蛋，攪到佢冇粉粒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:13.67" id="00:03:13.67" class="lt" onclick="jumptoTime(193, this.id)"><p>攪到佢冇粉粒，再加入椰菜絲、蟹柳、獅子狗卷，拌勻</p></a>
+				<a href="#00:04:6.92" id="00:04:6.92" class="lt" onclick="jumptoTime(246, this.id)"><p>加入椰菜絲、蟹柳、獅子狗卷，拌勻，放入木魚素、鹽調味，要留意，加了鹽就要馬上煎，因為鹽會令菜出水，在易潔鑊中間倒入少許油，開中火，燒熱，然後倒入麵糊，用鑊鏟將材料撥在中間，形成一個圓形的餅，煎至底部有少許金黃色，將豬肉片放上面，然後翻面，繼續用中火慢慢煎</p></a>
+				<a href="#00:06:38.20" id="00:06:38.20" class="lt" onclick="jumptoTime(398, this.id)"><p>完成了，直至豬肉片熟就可以改用細火，蓋上蓋子，焗5分鐘，讓它完全熟透，開蓋再煎一會便可以上碟，將完成的大阪燒塗上大阪燒醬，再擠出井字形沙律醬，放紫菜碎及柴魚片，日式大阪燒就完成了，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:1.10" id="00:09:1.10" class="lt" onclick="jumptoTime(541, this.id)"><p>下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

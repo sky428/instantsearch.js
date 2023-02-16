@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 圓形易潔鑊也能做出芝士玉子燒！？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'q7gO1uDQIoI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 圓形易潔鑊也能做出芝士玉子燒！？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C。</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家用圓形易潔鑊，來做流心芝士玉子燒。</p></a>
+				<a href="#00:00:8.14" id="00:00:8.14" class="lt" onclick="jumptoTime(8, this.id)"><p>為咗想佢造型靚啲，我哋需要利用捲脊嚟幫佢定型㗎。</p></a>
+				<a href="#00:00:12.70" id="00:00:12.70" class="lt" onclick="jumptoTime(12, this.id)"><p>至於材料方面，基本上都係跟返上一集，玉子燒嗰個食譜，不過我就加咗啲魚子落去，等佢有啲變化。</p></a>
+				<a href="#00:00:20.50" id="00:00:20.50" class="lt" onclick="jumptoTime(20, this.id)"><p>如果你哋想睇返之前嗰集，流心芝士玉子燒嘅話，可以撳返右上角嘅箭咀就可以㗎啦!</p></a>
+				<a href="#00:00:35.35" id="00:00:35.35" class="lt" onclick="jumptoTime(35, this.id)"><p>首先用一湯匙滾水， 用木魚素， 鹽和糖，然後放一旁， 將四隻雞蛋打散，然後加入木魚素水， 清酒和味醂，將所有泡沫過篩，開小火燒熱二結鑊，掃一層薄薄的油，倒入四分一份蛋漿，用矽膠刮或耐高溫的鑊鏟，將旁邊的蛋漿撥到中間，成為長條形，等到蛋漿稍微凝固時，加入一塊包了魚子的芝士，用左手握住二結鑊。</p></a>
+				<a href="#00:01:51.86" id="00:01:51.86" class="lt" onclick="jumptoTime(111, this.id)"><p>向後傾斜，右手快速將雞蛋放到前面，包住芝士片，全程要保持用小火，如果鑊太高溫，就需要先離一離火，因為半凝固狀態的雞蛋，點出來的玉子燒，層層之間才不會散開，請不吝點贊訂閱轉發打賞支持明鏡與點點欄目，完成第一層蛋漿後再掃上薄薄的油，將肉紙燒推到後面，再倒入第二層蛋漿，將二鍋繼續向後傾斜，稍微揭起肉紙燒底部。</p></a>
+				<a href="#00:03:22.25" id="00:03:22.25" class="lt" onclick="jumptoTime(202, this.id)"><p>讓蛋漿流入肉紙，重複捲雞蛋這個動作， 直至全部蛋漿都用完</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:42.04" id="00:04:42.04" class="lt" onclick="jumptoTime(282, this.id)"><p>每週固定3集 喜歡的請訂閱或按讚，完成後的肉仔燒繼續留在鑊內，稍微煎一下每一面，然後用捲髮繩定型，稍為放涼後就可以切件享用，每週固定3-4部影片 喜歡我的影片請訂閱或按讚，如果喜歡我的影片， 請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺， 就會收到我的最新影片通知，如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:06:13.13" id="00:06:13.13" class="lt" onclick="jumptoTime(373, this.id)"><p>下次再見， Bye Bye!</p></a>
+</div>
+	</body>
+</html>

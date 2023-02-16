@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 磯煮鮑魚 [HK, TW, CN, Eng Sub]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '9v5LPogMySY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 磯煮鮑魚 [HK, TW, CN, Eng Sub]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.52" id="00:00:2.52" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整一道好簡單嘅日式小食，磯煮鮑魚，睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，而家就嚟睇下整磯煮鮑魚嘅材料啦，一斤新鮮嘅大連鮑魚，3湯匙嘅生抽，2湯匙嘅黃糖，60毫升嘅君寶汁，即係用嚟配蕎麥麵食嗰種，3湯匙半嘅味醂，500克嘅白蘿蔔，4片嘅連皮薑。</p></a>
+				<a href="#00:00:42.40" id="00:00:42.40" class="lt" onclick="jumptoTime(42, this.id)"><p>同50克嘅蔥白，材料就咁多，而家可以開始整啦，首先用牙刷刷乾淨啲鮑魚，要盡量刷走黑色嗰啲污糟嘢，刷走黑色嗰啲污糟嘢，然後連殼一起蒸10分鐘，蒸熟後撕走內臟，洗淨，鮑魚處理好，然後把蘿蔔切成大塊，最後準備一張圓形烘焙紙， 把它摺成三角形，每邊剪3下，煮鮑魚時會用到，所有準備工作都做好了，現在開始煮鮑魚了。</p></a>
+				<a href="#00:02:38.76" id="00:02:38.76" class="lt" onclick="jumptoTime(158, this.id)"><p>將所有調味料用450毫升水煮滾，煮好後放入蘿蔔和鮑魚</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:47.22" id="00:02:47.22" class="lt" onclick="jumptoTime(167, this.id)"><p>放上烘焙紙，煮滾後調小火，煮多2小時，如果覺得不夠水，可以加少許滾水，好了， 已經煮好了，將鮑魚和蘿蔔分開，蘿蔔已經可以吃了，鮑魚要連汁一起放雪櫃，浸多一晚，讓它入味才好吃，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:59.11" id="00:03:59.11" class="lt" onclick="jumptoTime(239, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

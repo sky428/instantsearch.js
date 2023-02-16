@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 超簡單！試用炸雞粉製作日式炸雞</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'vczDQZoEE2I',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 超簡單！試用炸雞粉製作日式炸雞</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>平時約埋班朋友出嚟嘆杯啤酒，食番件炸雞，真係幾寫意㗎!</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>今日我就教你用超簡單嘅方法，做高質素嘅炸雞，可以用嚟招呼啲朋友。</p></a>
+				<a href="#00:00:24.51" id="00:00:24.51" class="lt" onclick="jumptoTime(24, this.id)"><p>買回來的雞肉，洗完後切件，用廚房紙吸乾水份，這樣會醃得更入味，我在日式超市買了兩個不同牌子的炸雞粉，後面有教你怎樣用，吉之島那種直接可以用來醃，而日清那種就要加水，我這次就用日清這種來示範，另外那種我會在片尾補充，這次我用了半包粉就夠了，所以就要準備50毫升的水，油方面我準備了新油和之前炸過的舊油。</p></a>
+				<a href="#00:01:2.51" id="00:01:2.51" class="lt" onclick="jumptoTime(62, this.id)"><p>新油和舊油的比例是2比1，如果沒有舊油的話可以用完新油，加舊油只是想炸出來的東西看起來會好看一點，所有材料都準備好了，現在可以開始做了，拌勻炸雞粉和水，之後放入雞肉，按摩30秒，再醃10分鐘，用大火燒熱油，記得不要倒太多油，大約是煲的三分之一高度就夠了，這樣炸的時候就不會滾石，炸東西一定要用大火和油溫一定要夠高。</p></a>
+				<a href="#00:01:43.51" id="00:01:43.51" class="lt" onclick="jumptoTime(103, this.id)"><p>炸之前可以放少許麵糊試油溫，如果很快浮上面就表示已經夠熱，否則炸出來的東西會吸收油和很快變軟，放雞肉到油裡炸，要分開一點，不要黏在一起，炸3至4分鐘左右，炸的時候千萬不要動它，一動油溫就會降低，雞肉就會吸收油，謝謝觀看，看到雞金黃色就可以撈起，炸一次後，雞口感鬆脆，如果想更香脆，就要再炸一次。</p></a>
+				<a href="#00:02:35.56" id="00:02:35.56" class="lt" onclick="jumptoTime(155, this.id)"><p>等油熱，聽不到啵啵聲時，就可以放雞進去翻炸，同樣不要動它，炸一分鐘左右便可以了，用日清炸雞粉炸出來的外皮是乾滑的，吃起來甜甜的和味精味比較重，而吉之島那種炸出來的表面會粗糙些，但吃起來沒那麼味精，淡味少少，如果你發現到有其他好吃的炸雞粉，不妨在下面留言告訴我吧，如果喜歡我的影片，請給我一個讚和訂閱我的頻道。</p></a>
+				<a href="#00:03:28.30" id="00:03:28.30" class="lt" onclick="jumptoTime(208, this.id)"><p>你亦可以按旁邊的小鈴鐺便會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言。</p></a>
+				<a href="#00:03:35.30" id="00:03:35.30" class="lt" onclick="jumptoTime(215, this.id)"><p>我會盡快回覆你們的，下次再見吧，拜拜!</p></a>
+</div>
+	</body>
+</html>

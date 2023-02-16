@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 日式梳乎厘班戟配蜂巢蜜牛油</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'a6PbYlpLIPE',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 日式梳乎厘班戟配蜂巢蜜牛油</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家做梳芙厘班戟，好多人都以為梳芙厘班戟係一個好高難度嘅甜品，其實只需要一隻易潔鑊就可以輕輕鬆鬆咁喺屋企整得到㗎啦，我仲會教大家做埋配班戟一齊食嘅名店版蜂巢蜜牛油添，蜂巢蜜牛油係需要提早做定㗎喎，因為佢係要放雪櫃雪佢至少兩個鐘頭㗎，做蜂巢蜜牛油的材料有，無鹽牛油125克。</p></a>
+				<a href="#00:00:39.89" id="00:00:39.89" class="lt" onclick="jumptoTime(39, this.id)"><p>預先放在室溫將它軟化，蜂巢50克，蜜糖1湯匙，首先用叉壓碎蜂巢，然後加入蜜糖將它拌勻，將軟化的牛油和蜂巢混合物，一起放在攪拌機裏面，攪到它順滑均勻，然後放入密實袋，用刮刀將牛油推到一邊，成為粗條狀，放入雪櫃冷藏至少2小時，吃不完的牛油可以放入冰箱，平時用來配多士都很好味，現在我們看看梳乎厘班戟是怎樣做的。</p></a>
+				<a href="#00:01:19.39" id="00:01:19.39" class="lt" onclick="jumptoTime(79, this.id)"><p>班戟的材料有，低筋麵粉40克要過篩，砂糖10克，蛋黃2個，白麻油1湯匙，可以改用其他淡味的油都可以，鮮奶1湯匙，蛋白2個，砂糖20克，用來打蛋白霜，香蕉1隻，糖霜和楓糖漿適量，首先將蛋白放入冰箱內，冷藏10分鐘，將蛋黃和砂糖放入大碗內，用打蛋器輕輕地攪拌，然後加入油，攪到完全混合之後，加入鮮奶攪拌。</p></a>
+				<a href="#00:02:19.39" id="00:02:19.39" class="lt" onclick="jumptoTime(139, this.id)"><p>然後篩入低筋麵粉，再用打蛋器攪拌至完全看不見粉粒，蛋黃糊這個部分就完成了，現在開始製作蛋白霜，把冷藏好的蛋白取出來，你會看到碗邊形成一層薄薄的霜，用電動打蛋器高速打至起泡，分三次加入砂糖，打至蛋白出現尖角就可以停止了，打完的蛋白霜表面會有光澤，就算倒轉盤子，蛋白霜也不會掉下來，在蛋黃糊中加入一些蛋白霜。</p></a>
+				<a href="#00:02:53.70" id="00:02:53.70" class="lt" onclick="jumptoTime(173, this.id)"><p>用打蛋器攪拌均勻後，將它倒入蛋白霜中，用直接的方式快速將它攪拌均勻，直至完全看不到白色為止，做好的麵糊放入一支花袋備用，開小火，燒熱易潔鑊，在表面掃一層薄薄的油，將一半份量的麵糊，擠出三塊圓形的餅，蓋上蓋子焗大約20秒，稍為成型後，再放另一半麵糊，盖上盖子慢火煎5-8分钟，直至底部金黄色。</p></a>
+				<a href="#00:03:33.99" id="00:03:33.99" class="lt" onclick="jumptoTime(213, this.id)"><p>反转另一面煎至金黄色，按下中间部分感觉有弹性，表示已经熟透，可以上碟进行装饰，将香蕉切一半放在碟底，然后放上煎好的班戟，撒上糖霜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:52.99" id="00:03:52.99" class="lt" onclick="jumptoTime(232, this.id)"><p>放上蜂茶蜜牛油，淋上蜂糖浆</p></a>
+				<a href="#00:04:1.99" id="00:04:1.99" class="lt" onclick="jumptoTime(241, this.id)"><p>用薄荷叶做装饰，松软的松梨班戟就完成了，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>
