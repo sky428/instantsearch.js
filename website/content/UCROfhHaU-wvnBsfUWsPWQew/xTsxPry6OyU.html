@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 氣炸豬肋骨 [字幕]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'xTsxPry6OyU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 氣炸豬肋骨 [字幕]</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C。</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你用氣炸鍋做一個又簡單又好味嘅豬肋骨菜式。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎。</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>材料有急凍嘅豬肋骨一條，呢度大約係一磅半，買薄薄地呢種就最啱㗎啦。</p></a>
+				<a href="#00:00:24.00" id="00:00:24.00" class="lt" onclick="jumptoTime(24, this.id)"><p>調味有砂糖四湯匙，叉燒醬兩湯匙，老抽一湯匙，生抽一湯匙，酸頭水一茶匙，鹽一湯匙，玫瑰露酒一湯匙，將佢哋全部撈勻。</p></a>
+				<a href="#00:00:44.00" id="00:00:44.00" class="lt" onclick="jumptoTime(44, this.id)"><p>豬肋骨解凍之後洗乾淨，再用廚房紙抹乾，我哋唔要後面呢一塊膜。</p></a>
+				<a href="#00:00:53.00" id="00:00:53.00" class="lt" onclick="jumptoTime(53, this.id)"><p>咁我哋就嚟嚟食啦，拜拜。</p></a>
+				<a href="#00:00:58.17" id="00:00:58.17" class="lt" onclick="jumptoTime(58, this.id)"><p>骨與骨之間切一刀， 容易入味，醃至少1小時， 最好是過夜</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:01:33.17" id="00:01:33.17" class="lt" onclick="jumptoTime(93, this.id)"><p>骨與骨之間切一刀， 容易入味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:01:33.50" id="00:01:33.50" class="lt" onclick="jumptoTime(93, this.id)"><p>之後要準備蜜汁，材料有，麥芽糖40克，用熱水浸泡一會更好，冰糖30克，清水1湯匙半，薑汁1茶匙，幼鹽半茶匙，將水，冰糖，薑汁鹽，隔水蒸，直至糖溶了，之後落麥芽糖，用慢火煮至結身就可以了。</p></a>
+				<a href="#00:02:9.50" id="00:02:9.50" class="lt" onclick="jumptoTime(129, this.id)"><p>氣炸鍋先用200度預熱5分鐘，豬肋骨要焗多久就視乎厚度，先焗10分鐘，反轉再焗多10分鐘，用叉子刺一下， 看看熟了沒有，差不多好就反轉， 塗蜜汁，調低至180度烤2分鐘，然後反轉另一面，塗上蜜汁，再焗2分鐘，最後再反多次，塗上蜜汁，再焗2分鐘就完成了。</p></a>
+				<a href="#00:03:33.82" id="00:03:33.82" class="lt" onclick="jumptoTime(213, this.id)"><p>焗完後放涼就可以切件享用，希望你喜歡我今次的分享。</p></a>
+</div>
+	</body>
+</html>

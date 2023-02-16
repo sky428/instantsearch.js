@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 免焗蒜香牛油雞翼</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Xkw_Lgo_MUI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 免焗蒜香牛油雞翼</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好又係我大C呀，今日我會教你整蒜香牛油雞翼，我會教你點樣去解凍同埋洗走雞翼裏面嘅乳血，等食嗰陣啲雞肉會好雪白，唔會有黑色一疊疊㗎，睇片之前記得要訂閱，仲要撳埋旁邊個鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先呢要講下點樣去處理啲急凍雞翼先，我今次係用浸水嘅方式將啲雞翼解凍，呢度浸咗一個鐘頭左右。</p></a>
+				<a href="#00:00:34.82" id="00:00:34.82" class="lt" onclick="jumptoTime(34, this.id)"><p>撳落去軟身就可以啦，你仲可以喺中途換一兩次水，咁樣會快啲，喺兩條骨嘅中間呢個位置，用少少力向上推，就可以好簡單咁撳曬雞翼入面嘅血水出嚟，如果想更好看，可以收齊雞翼兩邊，處理好後就拿去晾乾，輪到介紹醃雞翼的調味料，準備2茶匙鹽，2茶匙糖，2茶匙生粉，2茶匙雞粉，2茶匙味醂，和2茶匙清酒。</p></a>
+				<a href="#00:01:35.56" id="00:01:35.56" class="lt" onclick="jumptoTime(95, this.id)"><p>將所有的醃料拌勻</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:5.56" id="00:02:5.56" class="lt" onclick="jumptoTime(125, this.id)"><p>將醃料拌勻，將醃料拌勻，將醃料拌勻，將醃料拌勻</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:03:4.19" id="00:03:4.19" class="lt" onclick="jumptoTime(184, this.id)"><p>拌勻後就可以放雞翼，在醃之前要吸乾水份，醃至少半小時，我不建議用豉油去醃，因為豉油很搶色，煮的時候會很容易燶，介紹牛油汁的材料，準備一個蒜頭，切粒，牛油20克，因為我只有無鹽牛油，所以要加少許鹽調味，還要準備適量麵粉，任何一種麵粉都可以，薄薄包住雞翼，讓煎的時候不會爆油爆得太厲害，不要用生粉。</p></a>
+				<a href="#00:03:48.83" id="00:03:48.83" class="lt" onclick="jumptoTime(228, this.id)"><p>因為生粉會不夠力，所有材料都準備好了，現在開始煮，在下鑊之前先上薄薄一層麵粉，如果太早上的話，煎出來就會硬皮，用中火半煎炸雞翼，煎至四邊金黃色就可以夾出來，將雞翼放入油裡</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:46.10" id="00:04:46.10" class="lt" onclick="jumptoTime(286, this.id)"><p>翻炒均勻，三片茶葉，炒至香，大火炒至香，炒至金黃色，炒至碎，炒至金黃色，炒至金黃色，炒至金黃色，炒至金黃色，炒至金黃色，炒至金黃色，再翻炒，炒至金黃色，放入牛油和蒜粒</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:05:54.31" id="00:05:54.31" class="lt" onclick="jumptoTime(354, this.id)"><p>放油可以令牛油不易燒焦</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:06:8.31" id="00:06:8.31" class="lt" onclick="jumptoTime(368, this.id)"><p>放入蒜蓉，放入牛油，開中小火，慢慢爆香，炒至蒜頭變黃，就可以將雞翼倒入去一起煮，炒至蒜頭變成金黃色，黏著雞翼就可以上碟了，記得要夾起才熄火，這款充滿罪惡感的蒜香牛油雞翼就完成了，如果喜歡我的影片， 請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺， 就會收到我的最新影片通知，如果有問題想問的話， 歡迎在下面留言， 我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:07:36.33" id="00:07:36.33" class="lt" onclick="jumptoTime(456, this.id)"><p>下次再見， Bye Bye!</p></a>
+</div>
+	</body>
+</html>

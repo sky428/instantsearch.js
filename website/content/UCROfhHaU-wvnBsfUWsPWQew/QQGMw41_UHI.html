@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蒜蓉粉絲蒸勝瓜</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QQGMw41_UHI',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蒜蓉粉絲蒸勝瓜</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.32" id="00:00:0.32" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.96" id="00:00:2.96" class="lt" onclick="jumptoTime(2, this.id)"><p>夏天天氣熱，食瓜類蔬菜嚟到消暑就最適合不過啦!</p></a>
+				<a href="#00:00:8.40" id="00:00:8.40" class="lt" onclick="jumptoTime(8, this.id)"><p>而今次會用到嘅勝瓜，口感清爽，味道清甜，而且好處多多。</p></a>
+				<a href="#00:00:15.20" id="00:00:15.20" class="lt" onclick="jumptoTime(15, this.id)"><p>就等我教你用佢嚟到做一道野味嘅家常菜，蒜蓉粉絲蒸勝瓜啦!</p></a>
+				<a href="#00:00:21.00" id="00:00:21.00" class="lt" onclick="jumptoTime(21, this.id)"><p>睇片之前記得訂閱，同埋撳埋鐘仔，咁你先唔會錯過我最新嘅資訊㗎!</p></a>
+				<a href="#00:00:29.60" id="00:00:29.60" class="lt" onclick="jumptoTime(29, this.id)"><p>而家就嚟睇下啲材料先，勝瓜要揀啲軟身嘅，買嗰陣可以輕輕地咁拼吓佢。</p></a>
+				<a href="#00:00:37.60" id="00:00:37.60" class="lt" onclick="jumptoTime(37, this.id)"><p>80克蒜頭，1隻辣椒，2片薑，1隻粉絲，同20克浸軟咗嘅蝦米。</p></a>
+				<a href="#00:00:50.60" id="00:00:50.60" class="lt" onclick="jumptoTime(50, this.id)"><p>而調味料有1 1 3茶匙鹽，1 1 3茶匙糖，2湯匙油，1湯匙蠔油，1茶匙麻油，同1茶匙生抽。</p></a>
+				<a href="#00:01:9.60" id="00:01:9.60" class="lt" onclick="jumptoTime(69, this.id)"><p>將啲薑切幼粒。</p></a>
+				<a href="#00:01:20.73" id="00:01:20.73" class="lt" onclick="jumptoTime(80, this.id)"><p>刮走紅辣椒核，然後切粒，蒜頭剁成蒜蓉，然後浸軟粉絲，我今次會用有味的湯來浸，將半茶匙鹽，一茶匙蠔油，和400毫升水一起煮滾，等到攤凍後就可以浸粉絲，不可以用熱水來浸粉絲，因為這樣會令它過度發漲，蒸完就會太過軟，最後輪到處理聖瓜了，去頭，去尾，刨走硬邊，將聖瓜切成一段段，要盡量切到差不多大小，如果有囊的話就要切走一點。</p></a>
+				<a href="#00:02:29.84" id="00:02:29.84" class="lt" onclick="jumptoTime(149, this.id)"><p>主要是這個部分蒸出來會太軟，口感沒那麼好，所有材料都準備好，現在可以開始做了，倒入兩湯匙油，爆香蝦米，薑和蒜蓉，聞到有香味就加其他調味料，拌勻就可以了，把浸軟的粉絲剪短，平均地鋪在碟面，把一部分的蒜蓉撈在聖瓜上，然後整齊地排在粉絲上</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:21.90" id="00:03:21.90" class="lt" onclick="jumptoTime(201, this.id)"><p>再放其餘的蒜蓉，用大火蒸4分半鐘，蒸的時間取決於聖瓜的大小，中間還有少許白色，蒸到這樣就剛剛好了，如果是玻璃鍋蓋就最好了，可以看著蒸，差不多蒸好時， 加入辣椒，再蒸多半分鐘，蒜蓉粉絲蒸聖瓜就完成了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:36.01" id="00:04:36.01" class="lt" onclick="jumptoTime(276, this.id)"><p>下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

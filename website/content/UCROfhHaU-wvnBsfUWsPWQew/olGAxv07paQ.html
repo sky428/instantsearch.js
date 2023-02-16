@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蛋炒飯一定要用隔夜飯！？</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'olGAxv07paQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蛋炒飯一定要用隔夜飯！？</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀。</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教大家點樣可以炒出又少油又乾身嘅炒飯。</p></a>
+				<a href="#00:00:16.06" id="00:00:16.06" class="lt" onclick="jumptoTime(16, this.id)"><p>今次我用了剛剛煮好，攤凍的白飯來做示範，這裡是兩粒米的份量，切粒叉燒，會令炒飯更香的雞蛋，薑蓉，和蔥花，蝦仁，先把蝦殼剝走，把腸挑乾淨，洗乾淨，吸乾水，蟹柳，材料就這樣多，用些椒鹽醃蝦，讓它有些味，拿隻雞蛋，打入攤凍的白飯裡，攪拌均勻，開中火，燒熱鍋，放油，先爆香薑蓉，然後加入攪拌好的白飯，不停炒。</p></a>
+				<a href="#00:01:27.66" id="00:01:27.66" class="lt" onclick="jumptoTime(87, this.id)"><p>利用雞蛋快乾的特性，把飯粒炒至分開，炒飯時最好拿著鑊鏟，前面的部分，炒起來動作會比較靈活，如果拿太厚會變得不夠手，用鑊鏟壓一塊塊的飯，讓它散開，然後再炒鬆飯，這樣炒，飯才可以炒得粒粒分明，加些鹽調味，直至炒到飯粒在鍋邊，受熱跳跳跳，即是已經炒得夠乾身，炒飯底基本上已經完成，炒完的飯不會有雞蛋在裡面。</p></a>
+				<a href="#00:02:12.66" id="00:02:12.66" class="lt" onclick="jumptoTime(132, this.id)"><p>先舀起炒飯，然後再放少許油，爆香蝦仁，蝦燒，蟹柳，加入先前炒好的飯，再繼續炒，炒到差不多時，加入蛋汁，等蛋汁凝固後，繼續炒，這樣炒出來的炒飯就會有些蛋絲，炒到差不多完成，就在鑊邊灑些豉油，再繼續炒，最後加入蔥花，炒到蔥花有香味，看到飯在鑊邊跳跳跳，即是夠乾身，這個時候就可以試味，試完味之後，就可以關火，上碟。</p></a>
+				<a href="#00:03:27.65" id="00:03:27.65" class="lt" onclick="jumptoTime(207, this.id)"><p>炒飯就完成了</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:57.65" id="00:03:57.65" class="lt" onclick="jumptoTime(237, this.id)"><p>MING PAO CANADA CANADA.COM，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的小鐘，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 鮫魚鬆兩食 | 韭菜花炒魚鬆 | 蘿蔔炒魚鬆</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'U12jOtGs-7Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 鮫魚鬆兩食 | 韭菜花炒魚鬆 | 蘿蔔炒魚鬆</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.50" id="00:00:2.50" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你用鮫魚嚟做健康又好食嘅鮫魚鬆。</p></a>
+				<a href="#00:00:8.10" id="00:00:8.10" class="lt" onclick="jumptoTime(8, this.id)"><p>用鮫魚嚟做魚鬆一啲都唔會腥，唔會好似鯪魚咁有一陣泥味，好食好多㗎!</p></a>
+				<a href="#00:00:15.40" id="00:00:15.40" class="lt" onclick="jumptoTime(15, this.id)"><p>喺片尾我仲會示範用鮫魚鬆嚟做兩道好簡單嘅餸，大家千祈唔好錯過呀!</p></a>
+				<a href="#00:00:22.40" id="00:00:22.40" class="lt" onclick="jumptoTime(22, this.id)"><p>睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔，咁你先唔會錯過我最新嘅資訊㗎!</p></a>
+				<a href="#00:00:30.90" id="00:00:30.90" class="lt" onclick="jumptoTime(30, this.id)"><p>而家就嚟睇下整魚鬆嘅材料啦!</p></a>
+				<a href="#00:00:33.70" id="00:00:33.70" class="lt" onclick="jumptoTime(33, this.id)"><p>今次我買咗舊鮫魚尾，重12至13兩，大約可以起到220克左右嘅肉。</p></a>
+				<a href="#00:00:41.20" id="00:00:41.20" class="lt" onclick="jumptoTime(41, this.id)"><p>跟住準備少少鹽水，比例係50毫升水對1茶匙鹽，攪勻之後備用。</p></a>
+				<a href="#00:00:48.20" id="00:00:48.20" class="lt" onclick="jumptoTime(48, this.id)"><p>仲要準備大約40克嘅免治豬肉，重量係魚肉重量嘅五分之一。</p></a>
+				<a href="#00:00:55.20" id="00:00:55.20" class="lt" onclick="jumptoTime(55, this.id)"><p>適量嘅蝦米，兩隻冬菇，兩粒馬蹄，四分之一茶匙嘅雞粉，同八分之一茶匙嘅胡椒粉。</p></a>
+				<a href="#00:01:7.20" id="00:01:7.20" class="lt" onclick="jumptoTime(67, this.id)"><p>材料就咁多，而家可以開始整啦!</p></a>
+				<a href="#00:01:11.20" id="00:01:11.20" class="lt" onclick="jumptoTime(71, this.id)"><p>首先， 剁碎啲冬菇同蝦米，拍碎啲馬蹄，揸走啲汁，將舊魚尾起肉，簡單咁用匙羹，由下向上將啲肉刮曬出嚟，見到有血紅色啲肉就唔好要，因為會好腥。</p></a>
+				<a href="#00:01:39.20" id="00:01:39.20" class="lt" onclick="jumptoTime(99, this.id)"><p>有時魚檔都會有啲細條嘅鮫魚賣，價錢仲平好多，通常都係成條咁賣，用嗰種嚟整會比較化算。</p></a>
+				<a href="#00:01:53.20" id="00:01:53.20" class="lt" onclick="jumptoTime(113, this.id)"><p>之後攞把刀壓下啲魚肉，順便檢查一下有無魚骨黐喺度。</p></a>
+				<a href="#00:02:5.95" id="00:02:5.95" class="lt" onclick="jumptoTime(125, this.id)"><p>把魚肉灼至冰水，逐少逐少加入鹽水，每次大約加1茶匙左右，用兩對筷子順著同一個方向攪拌，加了鹽水之後魚肉就會散開，要攪拌至黏合，才可以再加入鹽水</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:15.80" id="00:03:15.80" class="lt" onclick="jumptoTime(195, this.id)"><p>每週固定3 部影片 喜歡我的影片請訂閱或按讚，提提大家， 鹽水不需要全部加進去，只要用筷子輕輕按壓魚肉， 感覺到有回彈便可以停止，然後加免治豬肉，雞粉和胡椒粉，最後加入其他配料，就可以拿去煎，剪開一個保鮮袋，將魚肉放入去，壓成一塊圓餅，在兩面都撲少少生粉，開中火燒熱油，將魚鬆煎到兩面金黃色就可以上碟。</p></a>
+</div>
+<div class="e" style="background-color: ivory">
+<span style="color: darkgreen">SPEAKER_01</span><br>
+				<a href="#00:04:36.66" id="00:04:36.66" class="lt" onclick="jumptoTime(276, this.id)"><p>今次做的膠魚鬆只用了鹽水，令它產生彈性，沒有加粉，質地會結實些，所以煮的時候會切條，讓它容易入味，接下來我會做兩款簡單的家常菜，給大家參考一下，第一道是韭菜花炒魚鬆，將魚鬆切粗條，韭菜花要買條，條一撕就斷，這樣才夠嫩，將它切成段，起鍋下油，爆香幾粒蒜頭，倒入魚鬆，下蠔油爆香，加水，蓋上蓋子煮一會兒。</p></a>
+				<a href="#00:05:54.59" id="00:05:54.59" class="lt" onclick="jumptoTime(354, this.id)"><p>魚鬆已經入味了，先放些橙子下去，煮一會兒就放花，放少許鹽和糖調味，拌勻就可以上碟，第二道菜是蘿蔔炒魚鬆，將魚鬆切成幼條，蘿蔔削皮切粗條，芹菜要有些機會，切成段，冷鑊下油，放薑片和蒜頭爆香，爆香後下蘿蔔，不用加水，蓋上蓋子煮到蘿蔔變透明，加入魚鬆，加蠔油蓋住一會兒，煮至差不多收水，勾一個薄薄的生粉芡。</p></a>
+				<a href="#00:07:37.02" id="00:07:37.02" class="lt" onclick="jumptoTime(457, this.id)"><p>落芹菜，蓋上蓋子再焗一會兒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:48.35" id="00:07:48.35" class="lt" onclick="jumptoTime(468, this.id)"><p>放蔥和少許鹽調味，關火後落麻油， 拌勻就可以上碟，如果喜歡我的影片，就記得給個讚和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>

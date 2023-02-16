@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 蒜片牛仔骨 | 教你炸出香脆又不會苦的黃金蒜片</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '3H0UgnBEZH4',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 蒜片牛仔骨 | 教你炸出香脆又不會苦的黃金蒜片</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.04" id="00:00:0.04" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.48" id="00:00:2.48" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整蒜片牛仔骨，呢個餸大人同細路都會鍾意食，平時唔鍾意食蒜頭嘅你一定要試下，我今次教你整嘅炸蒜片啦，炸過嘅蒜片會冇咗蒜頭嘅辣味，食落甜甜地一啲都唔苦，香味非常誘人，仲脆卜卜添，配埋牛仔骨簡直就係雙重滋味啦，睇片之前記得要訂閱，仲要撳埋旁邊嘅鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，好啦，而家就示範下點樣去炸蒜片啦。</p></a>
+				<a href="#00:00:40.64" id="00:00:40.64" class="lt" onclick="jumptoTime(40, this.id)"><p>將蒜頭切片，厚度盡量要一致，你哋整嘅話用兩三粒就夠啦，我因為拍片想個畫面豐富啲，所以先至整咁多，之後好快咁出一出水，十零秒就夠，作用係整走佢表面嗰層黏液，咁樣炸出嚟先至會脆，跟住用廚房紙索乾，就可以拎去炸啦，開中細火燒熱個鑊，落適量嘅油，加入蒜片慢慢咁半煎炸，蒜頭係好易燶㗎，千祈唔好貪快用大火。</p></a>
+				<a href="#00:01:21.88" id="00:01:21.88" class="lt" onclick="jumptoTime(81, this.id)"><p>要不停咁炒住，同埋時不時要郁下個鑊，等啲熱力平均啲，如果鑊太高溫的話就要離火，炸至金黃色就可以夾起，炸好的蒜片用廚房紙吸油備用，蒜片是軟的，但放涼後會變脆，蒜片放涼後，現在來做醬汁，將1湯匙醬油，2湯匙水，1湯匙味醂</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:23.12" id="00:02:23.12" class="lt" onclick="jumptoTime(143, this.id)"><p>1茶匙糖，半茶匙澱粉</p></a>
+				<a href="#00:02:30.32" id="00:02:30.32" class="lt" onclick="jumptoTime(150, this.id)"><p>拌勻就可以了，MING PAO CANADA CANADA.COM，將解凍好的牛仔骨用廚房紙吸乾，然後切件備用，等蒜片冷卻後，就可以開始煮牛仔骨了，在下鑊前才跟牛仔骨醃味，調味料有，半茶匙糖，1 3 茶匙鹽，和少許燕磨黑胡椒，開中大火燒熱少許油，放入牛仔骨，不要動它，煎好一面才反轉</p></a>
+				<a href="#00:05:16.04" id="00:05:16.04" class="lt" onclick="jumptoTime(316, this.id)"><p>煎好一面才反轉，煎熟後再加少許黑胡椒爆炒，令香味更突出，調小火，加入醬汁，煮至收汁，放少許蒜片兜勻，拌勻後上碟，撒些蒜片在表面，野味的蒜香牛仔骨就完成了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道，你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，Bye Bye。</p></a>
+</div>
+	</body>
+</html>

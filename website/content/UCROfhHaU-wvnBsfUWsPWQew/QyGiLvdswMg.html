@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 牛排就是要這樣做！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'QyGiLvdswMg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 牛排就是要這樣做！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.00" id="00:00:2.00" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會用急凍嘅牛扒嚟做示範，教大家點樣煎好味嘅牛扒。</p></a>
+				<a href="#00:00:19.00" id="00:00:19.00" class="lt" onclick="jumptoTime(19, this.id)"><p>首先我哋講下材料先。</p></a>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>有急凍嘅牛扒﹐燕磨嘅黑胡椒﹐喼汁﹐海鹽。</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>未整牛扒之前，我會講下肉眼扒同西冷扒有咩分別。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>肉眼扒價錢比西冷扒貴，但肉眼扒就比較受歡迎。</p></a>
+				<a href="#00:00:41.00" id="00:00:41.00" class="lt" onclick="jumptoTime(41, this.id)"><p>因為肉眼扒本身脂肪豐富，適合煎或燒烤。</p></a>
+				<a href="#00:00:49.00" id="00:00:49.00" class="lt" onclick="jumptoTime(49, this.id)"><p>煎出來嘅牛扒肉質軟腍，有肉汁，充滿肉香和油香。</p></a>
+				<a href="#00:00:55.00" id="00:00:55.00" class="lt" onclick="jumptoTime(55, this.id)"><p>而西冷扒肉味最濃，油花不算多，但分佈得平均，食落冇咁肥膩。</p></a>
+				<a href="#00:01:4.00" id="00:01:4.00" class="lt" onclick="jumptoTime(64, this.id)"><p>肉質有啲彈性，對於想食得健康嘅人嚟講，係一個唔錯嘅選擇。</p></a>
+				<a href="#00:01:9.00" id="00:01:9.00" class="lt" onclick="jumptoTime(69, this.id)"><p>仲有，如果你想煎牛扒好味同埋有肉汁，就記得要厚切。</p></a>
+				<a href="#00:01:17.00" id="00:01:17.00" class="lt" onclick="jumptoTime(77, this.id)"><p>材料講完，而家你睇下點樣處理啲牛扒先。</p></a>
+				<a href="#00:01:21.00" id="00:01:21.00" class="lt" onclick="jumptoTime(81, this.id)"><p>今次我都會用啤水嘅方法，不過啤水之前我會用個膠袋封住牛扒。</p></a>
+				<a href="#00:01:30.00" id="00:01:30.00" class="lt" onclick="jumptoTime(90, this.id)"><p>因為之前我哋做咗個實驗，發覺用呢個方法，牛扒最能夠保存佢嘅肉汁同埋佢嘅鮮味。</p></a>
+				<a href="#00:01:38.00" id="00:01:38.00" class="lt" onclick="jumptoTime(98, this.id)"><p>而呢一個做實驗嘅呢條片，我哋會放喺片尾，畀你哋作為參考。</p></a>
+				<a href="#00:01:43.00" id="00:01:43.00" class="lt" onclick="jumptoTime(103, this.id)"><p>今次我哋就示範整肉眼扒先，咁我哋而家就將肉眼扒拎落去解凍。</p></a>
+				<a href="#00:01:53.00" id="00:01:53.00" class="lt" onclick="jumptoTime(113, this.id)"><p>我哋放喺水裏面，開少少水就得㗎啦。</p></a>
+				<a href="#00:02:0.00" id="00:02:0.00" class="lt" onclick="jumptoTime(120, this.id)"><p>有個膠袋喺度，嗰舊肉眼扒係會浮起嘅。</p></a>
+				<a href="#00:02:4.00" id="00:02:4.00" class="lt" onclick="jumptoTime(124, this.id)"><p>咁我哋可以攞個包機紮住佢。</p></a>
+				<a href="#00:02:19.30" id="00:02:19.30" class="lt" onclick="jumptoTime(139, this.id)"><p>用流動的水大約半小時左右就解凍完，我們一會兒回來再看，現在我浸了35分鐘應該浸多了，我們看看肉已經變軟了，我們先把水弄濕，news</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:50.76" id="00:02:50.76" class="lt" onclick="jumptoTime(170, this.id)"><p>gelett embarrassed，displ vigor，faisINTER internship，וכижу，ο，sach，ние，leep，pell，geography，Evans，intervene，venue，сообщ，comfy，e，포，Works，echoes，baseball。</p></a>
+				<a href="#00:02:52.30" id="00:02:52.30" class="lt" onclick="jumptoTime(172, this.id)"><p>inä，360，planner，acaba，öd，ител，genters，requests，która，vantage，literary，196，ез，County，maravilblicoxide，肉已經解凍了，我們用廚房紙把水份吸乾，如果還未打算做的話，就用保鮮紙把肉放入冰箱，當你要做的時候。</p></a>
+				<a href="#00:03:16.42" id="00:03:16.42" class="lt" onclick="jumptoTime(196, this.id)"><p>就拿出來把肉放進冰箱，然後放入冰箱，再放入冰箱，再放入冰箱，再放入冰箱，拿出來把肉放進冰箱，再放入冰箱，然後才醃味，現在要開始做，所以我們現在就放入味道，放入少許喼汁，少許就好，因為太多會燒焦，我們塗勻兩邊，再放入味道，醃10分鐘，因為塗了喼汁可以當梳打粉用，會幫肉鬆弛，牛排醃了10分鐘，現在就要調味。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:13.48" id="00:04:13.48" class="lt" onclick="jumptoTime(253, this.id)"><p>調味後要馬上放煎，不可以等，因為放了鹽之後牛排就會出水，首先，要用黑胡椒，最好用燕磨，燕磨的黑胡椒會更香，加黑胡椒和鹽，用手把調味料拍入去，炒勻後就開始煎，現在開始煎，首先開火，放入油，不需要太多油，因為牛扒越煎越多油流出來，但火一定要燒紅，燒到有煙出，才放牛扒，現在鍋燒熱，看到嗎?有些白煙，火夠熱就放牛扒。</p></a>
+				<a href="#00:05:43.80" id="00:05:43.80" class="lt" onclick="jumptoTime(343, this.id)"><p>放完牛扒後不要動，先讓它煎，煎到那邊燒黃才反另一面，如果你的鑊不夠紅，放牛扒牛肉就會一直流水，代表你的鑊不夠熱，現在燒黃了才可以反，另一面也是，按一下這裡，如果軟軟的就熟了，另一面也一樣，牛扒不需要煎太久，牛扒煎到差不多熟，煎一煎旁邊，封住旁邊，每天中午12點準時收看 喜歡我的影片請訂閱或按讚，現在可以上碟了。</p></a>
+				<a href="#00:07:19.74" id="00:07:19.74" class="lt" onclick="jumptoTime(439, this.id)"><p>紅春煎或炸東西，要先拿起，才關火，不要關火才拿出來，牛扒煎好了，這樣還不行，要用錫紙蓋著，因為我們把四邊都封住了，所以用錫紙蓋著，肉汁就會回到肉裡面</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:07:55.66" id="00:07:55.66" class="lt" onclick="jumptoTime(475, this.id)"><p>我們要等一會，我們待會回來看吧，五分鐘後，我們來看看，牛扒沒有滲水出來，肉汁已經回到肉中，我們來切開看看，如果喜歡我的影片，請給我一個讚和訂閱我的頻道，你也可以按旁邊的小鈴鐺，便會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜，現在我們開始用兩種不同的方法試給大家看。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:09:16.14" id="00:09:16.14" class="lt" onclick="jumptoTime(556, this.id)"><p>我將一塊扒放在真空，而另一塊扒就沒有了，現在我們將兩塊扒放進水中，大家可以看到，這塊明顯是深色一點，這塊明顯是淺色一點，但如果看纖維來說，因為浸過水，所以纖維鬆一點，大家可以按摩一下，是不一樣的，這塊扒，仍然是比較結實一點，這個扒的味道會保持得比較好一點。</p></a>
+</div>
+	</body>
+</html>

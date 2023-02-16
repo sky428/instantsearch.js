@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[大C廚房] 五香滷水牛腱</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'i9mNyJVwP1Y',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>[大C廚房] 五香滷水牛腱</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，又係我大C呀!</p></a>
+				<a href="#00:00:2.50" id="00:00:2.50" class="lt" onclick="jumptoTime(2, this.id)"><p>今日我會教你整五香牛腱，之後我仲會用啲牛腱呢嚟到整台式卷餅，記得千祈唔好錯過呀!</p></a>
+				<a href="#00:00:12.50" id="00:00:12.50" class="lt" onclick="jumptoTime(12, this.id)"><p>睇片之前記得要訂閱仲要撳埋旁邊嘅鐘仔，咁樣你先唔會錯過我最新嘅資訊㗎，首先呢示範下點樣去處理啲牛腱先，我今次呢會用新鮮嘅牛腱，買咗返嚟之後要出一出水，凍水嗰陣落牛腱，全程都唔好冚蓋，水滾後煮多30分鐘，你會見到有很多泡浮在表面，撇走不要，煮好後撈起沖水，之後放涼，表面的筋膜稍為收一收，牛腱處理好了。</p></a>
+				<a href="#00:01:25.75" id="00:01:25.75" class="lt" onclick="jumptoTime(85, this.id)"><p>材料除了牛腱外，還要蒜頭，薑，蔥，和一隻辣椒，然後準備一個滷包，材料有，一粒草果，兩粒八角，五克桂皮，和一塊香葉，全部放入茶袋裡，還有準備滷汁的材料，有一湯匙豆瓣醬，三湯匙糖，一湯匙麻油，兩湯匙蠔油，三湯匙米酒，四湯匙豉油，還有用一湯匙糖，和一湯匙滾水炒出來的焦糖，再加一湯匙蠔油，所有材料都準備好了，現在可以開始做了。</p></a>
+				<a href="#00:02:28.64" id="00:02:28.64" class="lt" onclick="jumptoTime(148, this.id)"><p>倒入一杯油，大約200毫升，冷油的時候放入料頭，炸至金黃色撈起，倒油，留2湯匙油在鑊內，放豆瓣醬炒香，再放米酒，再放蠔油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:7.03" id="00:03:7.03" class="lt" onclick="jumptoTime(187, this.id)"><p>糖，豉油，煮滾後加入剛才炸過的材料，麻油，和焦糖，加入1500毫升水，加入香料包</p></a>
+				<a href="#00:03:33.03" id="00:03:33.03" class="lt" onclick="jumptoTime(213, this.id)"><p>聞到香味便關火，將煮好的滷汁倒入另一個大鍋，煮滾後加入牛腱</p></a>
+				<a href="#00:03:55.03" id="00:03:55.03" class="lt" onclick="jumptoTime(235, this.id)"><p>加入牛腱，滾起後調小火，炆煮90分鐘，時間到了，關火，牛腱留在鍋內直至水冷卻，冷卻後放入冰箱冷藏一晚，翌日切片享用，滷汁也不浪費，可以用來做醬汁，配牛腱，做法是，將一杯滷汁，加一湯匙麻油，用中火將它濃縮就可以了，接下來示範用牛腱做台式卷餅，材料有，一包糯餅，適量大蔥絲，一條青瓜，青瓜去核。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:53.82" id="00:04:53.82" class="lt" onclick="jumptoTime(293, this.id)"><p>再切成幼條，現在來做醬汁，材料有，1湯匙麻油，1湯匙豉油，1湯匙甜麵醬，2至3茶匙糖，2湯匙水，開小火， 放入麻油，放入甜麵醬爆香，放豉油，和糖，糖不用一次過放，等試味覺得不夠甜再放，倒水，煮至結實就可以了，用白鑊將糯餅兩邊烘至金黃色，塗上醬汁，放餡料，用少許力把它捲緊，牛肉丸餅完成了，如果喜歡我的影片，就記得給個Like和訂閱我的頻道。</p></a>
+				<a href="#00:06:48.74" id="00:06:48.74" class="lt" onclick="jumptoTime(408, this.id)"><p>你也可以按旁邊的鈴鐺，就會收到我的最新影片通知，如果有問題想問的話，歡迎在下面留言，我會盡快回覆你們，下次再見，拜拜!</p></a>
+</div>
+	</body>
+</html>
