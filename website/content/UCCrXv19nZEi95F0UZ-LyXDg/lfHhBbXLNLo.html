@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀瑤柱煎蝦餅|簡易升級版宴客菜|EngSub|Fried Shrimp Patties</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'lfHhBbXLNLo',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀瑤柱煎蝦餅|簡易升級版宴客菜|EngSub|Fried Shrimp Patties</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今日呢個係瑤柱煎蝦餅。點解係相裏面有兩封利是嘅?</p></a>
+				<a href="#00:00:7.00" id="00:00:7.00" class="lt" onclick="jumptoTime(7, this.id)"><p>係呀，係過年之前已經拍攝好，因為無時間剪片，所以依家先同大家分享。</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>呢個瑤柱煎蝦餅平時煎利是都得㗎，或者請朋友宴客都好有體面又容易做。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:20.00" id="00:00:20.00" class="lt" onclick="jumptoTime(20, this.id)"><p>呢度有1磅半蝦去殼去腸清洗乾淨。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>依家將啲蝦放喺廚房紙上面索水30分鐘，索走一部分嘅水份。</p></a>
+				<a href="#00:00:41.66" id="00:00:41.66" class="lt" onclick="jumptoTime(41, this.id)"><p>輕拍打，但不要太難，是想待會吃蝦時吃到一粒粒口感，再中環交錯地打，我不喜歡蝦餅太硬，所以我沒有打，如果喜歡蝦餅很結實，可以再打。</p></a>
+				<a href="#00:01:11.66" id="00:01:11.66" class="lt" onclick="jumptoTime(71, this.id)"><p>把調味料混合，用力攪拌一分鐘，這樣就會起膠，放入雪櫃2小時，去皮後切碎。</p></a>
+				<a href="#00:01:38.66" id="00:01:38.66" class="lt" onclick="jumptoTime(98, this.id)"><p>還有3粒干瑤柱，清洗乾淨後用水浸軟，把干瑤柱的枕挑出來，把干瑤柱的枕挑出來，加些油，燒熱鍋後用中火，將干瑤柱炒香約1分鐘。</p></a>
+				<a href="#00:02:6.19" id="00:02:6.19" class="lt" onclick="jumptoTime(126, this.id)"><p>將它推幾下，讓它略為降溫，不要熱辣辣倒入蝦，現在沒有那麼熱，就可以加入蝦，然後加入馬蹄，攪拌均勻，將蝦膠做成蝦丸，煎的時候不要太忙，要很快，手心掃水，我做了8粒蝦丸，因為是賀年菜，所以我做大粒，大粒一點就哈哈大笑，隨你喜歡，用剛才的鍋就可以了，加一點油，用中大火。</p></a>
+				<a href="#00:03:1.83" id="00:03:1.83" class="lt" onclick="jumptoTime(181, this.id)"><p>蝦丸很容易定型，放了蝦丸後就可以馬上反轉，要輕輕壓一壓，然後給點時間煎至金黃，可以翻轉另一面了，另一面加少許油，這樣才容易煎得香脆</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:35.03" id="00:03:35.03" class="lt" onclick="jumptoTime(215, this.id)"><p>兩面可以重覆轉動，直至全熟，這個干瑤柱煎蝦餅，干瑤柱用油爆一爆，會特別釋出香味</p></a>
+				<a href="#00:03:54.03" id="00:03:54.03" class="lt" onclick="jumptoTime(234, this.id)"><p>加上馬蹄，口感更加豐富，今天分享的時間又差不多了，下一集再見。</p></a>
+</div>
+	</body>
+</html>
