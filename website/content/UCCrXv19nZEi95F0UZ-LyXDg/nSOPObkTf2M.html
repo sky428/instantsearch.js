@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀手撕雞|秘製沙薑汁|用雞腿蒸嫩滑|Shredded Chicken w/ Sand Ginger Sauce|</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'nSOPObkTf2M',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀手撕雞|秘製沙薑汁|用雞腿蒸嫩滑|Shredded Chicken w/ Sand Ginger Sauce|</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，今日做沙薑手撕雞，用雞腿試，係用蒸嘅方法，成功蒸得好嫩滑，仲會調校一個雞味濃郁嘅沙薑汁，配合埋呢個手撕雞，好食到唔停得口。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>我今次買到嘅雞腿好大隻，一磅半有四隻，清洗乾淨之後用乾淨嘅廚房紙吸乾水份。</p></a>
+				<a href="#00:00:38.01" id="00:00:38.01" class="lt" onclick="jumptoTime(38, this.id)"><p>用沙薑粉、胡椒粉和鹽，每隻都徹底拌勻，雞腿要處理一下，用油加少許黃薑粉，塗在雞皮上，塗勻後蒸出來的雞皮才會嫩滑，顏色賣相也好看，放入雪櫃2小時，讓雞皮入味，煲滾水，2小時後取出蒸，蓋上蓋子，1.5磅4隻雞腿用中火蒸12分鐘，我都講過多次，蒸雞不要用大火蒸，蒸了12分鐘後不要開蓋，然後關火，關火後焗2分鐘至5分鐘。</p></a>
+				<a href="#00:01:53.09" id="00:01:53.09" class="lt" onclick="jumptoTime(113, this.id)"><p>焗2分鐘就緊緊熟，焗5分鐘就熟透點，我係焗咗2分鐘，蒸好後放置一會兒，不要太熱，就可以撕開它，我會用剪刀先剪開，不要在這麼高的位置下刀，上面有筋，避開的位置，要下少許剪，我會整片起出來後才撕開它，起出來後要蘸少許雞湯，有少許濕潤才會更加嫩滑，更加入味，全部都是這樣做，剩下的雞湯用篩子隔一隔，一會兒會有用，接着要先爆点蒜油。</p></a>
+				<a href="#00:03:5.91" id="00:03:5.91" class="lt" onclick="jumptoTime(185, this.id)"><p>放一旁備用，開始做沙薑汁，沙薑粉、糖、胡椒粉，放一旁的蒜油，拌勻，用少許油是不可的，將雞湯用完，要逐少逐少適量的放進去，以滿意的稀稠程度就可以了，差不多了，有沒有發現我沒有放鹽呢?</p></a>
+				<a href="#00:03:47.91" id="00:03:47.91" class="lt" onclick="jumptoTime(227, this.id)"><p>因為雞湯鹹，試一試味，自己調較一下，看看雞皮顏色都不錯吧?</p></a>
+				<a href="#00:03:55.91" id="00:03:55.91" class="lt" onclick="jumptoTime(235, this.id)"><p>如果不用黃薑粉是不太好看的，蒸好後雞皮會乳乳黑黑，黃薑粉你不喜歡可以不用，顏色就差一點，但是油最好就加，油可以令雞皮嫩滑，我這次一磅半四隻雞腿蒸了12分鐘，焗了2分鐘，是緊緊熟的，如果你想熟透一點，不要加蒸的時間，今天分享到此，下集再見。</p></a>
+</div>
+	</body>
+</html>

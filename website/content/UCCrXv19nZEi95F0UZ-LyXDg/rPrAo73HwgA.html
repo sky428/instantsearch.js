@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>✴️糖醋雞翼|EngSub|Sweet & Sour Chicken Wings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'rPrAo73HwgA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>✴️糖醋雞翼|EngSub|Sweet & Sour Chicken Wings</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，天氣熱但又想食雞翼，唔想整炸㗎啦，驚熱氣喉嚨痛，整個糖醋雞翼甜甜酸酸比較開胃。</p></a>
+				<a href="#00:00:21.50" id="00:00:21.50" class="lt" onclick="jumptoTime(21, this.id)"><p>這裡有些急凍雞翼，溶雪清洗乾淨後，根據影片中的做法，用廚房紙徹底吸乾水份，煎的時候可以避免彈油，用這裡所有調味料混合，拌勻後放入雪櫃2小時，接著準備蒜頭、陳皮和薑，陳皮浸軟去囊，現在準備一個糖醋汁，將所有調味料混合後要試味，你可以調整一下味道，每個人口味都不同，醋和糖的份量我不是給了很多，你要試一下看需不需要加一些。</p></a>
+				<a href="#00:01:17.24" id="00:01:17.24" class="lt" onclick="jumptoTime(77, this.id)"><p>準備好這裡所有食材就可以開始煎了，在熱鍋加一些油用中大火，放入雞翼後不要經常動它，給它一點時間，煎香一邊先，要煎到金黃，煎到金黃後就反轉另一邊，接著可以放蒜片、陳皮和薑，這些料頭不要太早放，容易煎焦就有苦澀味，另一邊也是，煎到直至金黃，煎至金黃色後可加紹興酒，我今次配糖醋汁，就加多一點份量。</p></a>
+				<a href="#00:02:17.88" id="00:02:17.88" class="lt" onclick="jumptoTime(137, this.id)"><p>加多少隨你喜歡，要留意薑片和蒜片不要煎到黑，黑了要夾起不要，攪勻糖醋汁就可以倒入，要注意雞翼煎至兩邊金黃已經七八成熟，要轉小火，蓋上蓋子再煮三分鐘就行，視乎你的雞翼有多大，不要煮太久過熟就會粗糙，煮好後就像現在一樣，汁剛剛好，現在可以試味，如果剛才開汁的時候沒有調味，現在可以補加。</p></a>
+				<a href="#00:03:27.84" id="00:03:27.84" class="lt" onclick="jumptoTime(207, this.id)"><p>我加了一些糖，如果想酸味濃郁一點可以加少許醋，還可以灑一點鹽，這樣就完成了，這幾天天氣很熱，煮糖醋雞翼不一定要配飯，煮一碗剩的粉麵加些菜，配糖醋雞翼來吃，就不會覺得沒胃口，想不到吃什麼菜可以試一下，好吃的給個贊分享出去，支持一下廣告，多謝收看。</p></a>
+</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>♨️🐔煙燻雞翼|簡單香料做法簡易|Smoked Chicken Wings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'WNwlMmMB5xg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>♨️🐔煙燻雞翼|簡單香料做法簡易|Smoked Chicken Wings</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，有冇試過煙燻雞翼呢?</p></a>
+				<a href="#00:00:4.00" id="00:00:4.00" class="lt" onclick="jumptoTime(4, this.id)"><p>冇試過?覺得好懶?</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>唔會㗎，煮熟啲雞翼，跟住用簡單嘅煙燻材料，好容易就做得到。</p></a>
+				<a href="#00:00:12.00" id="00:00:12.00" class="lt" onclick="jumptoTime(12, this.id)"><p>一齊睇下點樣做!</p></a>
+				<a href="#00:00:26.17" id="00:00:26.17" class="lt" onclick="jumptoTime(26, this.id)"><p>清洗乾淨後用廚房紙吸乾水份，醃雞翼， 首先磨1茶匙薑蓉，食材寫生抽， 但我用老抽， 因為煙燻， 想雞翼顏色好看，煎的時候容易焦， 第一次做， 用生抽試了，加入所有調味料， 拌勻後放入雪櫃2小時， 讓它入味，我用了紅茶包，你可以用你喜歡的茶葉，例如烏龍，普洱，肉桂粉，鹽，五香粉。</p></a>
+				<a href="#00:01:35.45" id="00:01:35.45" class="lt" onclick="jumptoTime(95, this.id)"><p>加些油，燒熱鑊後，用中火煎雞翼，不要太大火，因為我是用老抽來醃雞翼的，要給它一點時間煮熟，剛才不是說過，如果你是第一次煮雞翼的，用生抽試試，要兩邊均勻地反轉多次煎，覺得顏色差不多的時候，就可以加一點水，有沒有看到雞翼下面已經有水了，在拍攝的時候沒有留意到，加水的部分拍不到，所以要補拍加水的部分，這裡是補拍的。</p></a>
+				<a href="#00:02:17.45" id="00:02:17.45" class="lt" onclick="jumptoTime(137, this.id)"><p>因為有觀眾不懂得聽廣東話，只看字幕和步驟，水分不要加太多，足夠焗熟雞翼就可以了，煙燻雞翼是乾爽的，不要太多水濕濕的，現在應該全熟了，將它翻炒一下，收乾水分，用碟子盛起來備用，老抽煎出來的顏色就是這樣，生抽就淡色一點，煎完雞翼的鍋子要先洗乾淨，用少許油在鍋子上抹薄薄的油，不要太多，薄薄的一層就好了。</p></a>
+				<a href="#00:03:10.45" id="00:03:10.45" class="lt" onclick="jumptoTime(190, this.id)"><p>現在就可以加煙燻的香料了，加入所有材料後，用最小火，不要用大火，要慢慢烘乾香料，讓香味釋出，用小火慢慢烘乾，直至有輕微煙霧出，加入雞翼，不要加太久，要快一點，煙霧會越來越多，蓋上蓋子，不要有水份，蓋上蓋子，不要有水份，用最小火，讓香料在裡面煙燻2-3分鐘，要注意，每個爐頭小火都不一樣，如果有煙或有焦味，就要關火，關火後，不用心急，不用怕。</p></a>
+				<a href="#00:04:48.71" id="00:04:48.71" class="lt" onclick="jumptoTime(288, this.id)"><p>不要開蓋，讓雞翼在裡面煮3-4分鐘，煮3-4分鐘，雞翼就會吸收煙燻味道，1磅的雞翼，煮好以上步驟，已經充滿香濃的煙燻味道，顏色也不錯，我的鍋是舊的鐵鍋，專門做煙燻或粗用的，有些人喜歡在鍋底放一張錫紙，但我覺得炒香料時不太直接，香味未能盡量發揮，想煎也可以，簡單的食材，簡單的做法，有沒有興趣試試?</p></a>
+				<a href="#00:05:37.71" id="00:05:37.71" class="lt" onclick="jumptoTime(337, this.id)"><p>最後歡迎您的訂閱，點贊和分享，多謝收看。</p></a>
+</div>
+	</body>
+</html>
