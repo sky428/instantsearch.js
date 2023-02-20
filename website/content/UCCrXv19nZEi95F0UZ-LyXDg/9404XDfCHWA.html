@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀蝦仁炒粉絲|家常炒粉絲不會斷有竅門|Fried shrimp w/ vermicelli</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '9404XDfCHWA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀蝦仁炒粉絲|家常炒粉絲不會斷有竅門|Fried shrimp w/ vermicelli</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.06" id="00:00:0.06" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天炒一個清淡的家常菜，蝦仁炒粉絲，分享如何炒粉絲才不會黏在一起，還配搭了椰菜和蛋粒一起炒，半磅急凍蝦，買的時候已經去蝦腸蝦殼，用雪清洗，在背脊切一刀，不要切斷，炒的時候會爽口些，略為吸乾水份，不需要吸得太乾，加少許鹽，適量胡椒粉，再加粟粉，攪拌均勻，有時間放入雪櫃2小時，雪過後會爽口些。</p></a>
+				<a href="#00:00:49.76" id="00:00:49.76" class="lt" onclick="jumptoTime(49, this.id)"><p>這裡有3束粉絲，將粉絲用水浸軟，浸10分鐘，不要浸得太久，不想浸得太軟熟，撈起，吸乾水份，放置一會兒，它會軟熟些，我配搭了一些椰菜，已經清洗乾淨，椰菜要切絲，4片薑片，2片蒜頭，切片，混合醬汁，蠔油，生抽，胡椒粉，水，攪拌均勻備用，蝦在背部已切開，放入冰箱2小時，炒之前加些油拌勻，炒出來的蝦非常爽口。</p></a>
+				<a href="#00:01:56.63" id="00:01:56.63" class="lt" onclick="jumptoTime(116, this.id)"><p>這裡還有2隻蛋，加些鹽拌勻，稍後要炒蛋粒，首先要炒蛋粒，加些油在鍋中，把鍋燒熱後用中大火炒，加蛋漿後，推炒至全熟，用鑊鏟切碎蛋粒，同一鍋，加些油，中大火爆薑，再加蝦鋪平，辣香一邊大約五成熟就可以了，這樣差不多了，加一湯匙紹興酒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:6.87" id="00:03:6.87" class="lt" onclick="jumptoTime(186, this.id)"><p>escol，lac unified，туда，difficulties</p></a>
+				<a href="#00:03:20.53" id="00:03:20.53" class="lt" onclick="jumptoTime(200, this.id)"><p>dert，fixing，dingen，지�� själv，самого，iger，ח，ق，birds，uncontào，coupling，ysz，ât，vielen，ßerdem，Jude，controller，It，helicopters，baixo，grounded 2023，同一鍋，開中火，加些油，爆薑片和蒜片。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:33.35" id="00:03:33.35" class="lt" onclick="jumptoTime(213, this.id)"><p>加椰菜，加少許糖，去除椰菜苦澀味，然後將椰菜炒至略為軟爽，加少許熱水，不需要太多，煮至椰菜軟身就可以了，將水煮滾，然後轉中小火，將椰菜煮軟，夾少少試下夠腍就可以啦，煮好啲椰菜之後， 係鑊底會淨返少少水， 唔需要太多㗎，依家倒埋啲粉絲落去，將啲粉絲剪兩刀唔好咁長，我剪嘅時候有冇發覺啲粉絲唔係太軟熟㗎?</p></a>
+				<a href="#00:04:43.14" id="00:04:43.14" class="lt" onclick="jumptoTime(283, this.id)"><p>唔好浸得太腍喎， 俾啲時間空間煮下佢，啲粉絲先至唔會一坨坨浸得太腍，好容易就煮到爛曬㗎啦，炒到差唔多夠軟熟就可以加埋啲混合醬汁，再次徹底拌匀，加入一些水， 再炒一炒，如果您喜欢吃软一点的， 可以加一些水，不要一次加太多，炒至合适，我刚才试味， 觉得需要加一些盐，最后， 把虾和蛋回锅。</p></a>
+				<a href="#00:05:40.47" id="00:05:40.47" class="lt" onclick="jumptoTime(340, this.id)"><p>关火， 把所有食材拌匀，看，像我這樣把粉絲炒好，是一條條分明，沒有斷的，你平時炒粉絲的時候，會不會炒到一團團的呢?</p></a>
+				<a href="#00:06:0.46" id="00:06:0.46" class="lt" onclick="jumptoTime(360, this.id)"><p>不要浸到粉絲太軟，太軟煮的時候，受熱就會黏在一起，今日嘅分享就到呢一度，有時間請支持下廣告呀，歡迎訂閱我頻道，分享同埋點贊。</p></a>
+				<a href="#00:06:19.94" id="00:06:19.94" class="lt" onclick="jumptoTime(379, this.id)"><p>咁我哋下一集再見。</p></a>
+</div>
+	</body>
+</html>

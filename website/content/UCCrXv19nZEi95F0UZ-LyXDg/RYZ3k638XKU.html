@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🍤沙茶粉絲蝦煲|香味濃郁沙茶醬|簡單易煮一煲完成|Shrimp and vermicelli w/ shacha sauce pot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'RYZ3k638XKU',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🍤沙茶粉絲蝦煲|香味濃郁沙茶醬|簡單易煮一煲完成|Shrimp and vermicelli w/ shacha sauce pot</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.12" id="00:00:0.12" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，天氣漸漸冷了，今天煮一個沙茶粉絲蝦煲，蝦、粉絲、肉碎和洋蔥一鍋完成，簡單方便!</p></a>
+				<a href="#00:00:20.60" id="00:00:20.60" class="lt" onclick="jumptoTime(20, this.id)"><p>這些急凍蝦都很大隻， 溶雪後清洗乾淨， 去腸去殼，保留蝦味， 煮出來的蝦爽口些，用乾淨的廚房紙略為吸乾水份， 不要吸得太乾，加沙茶醬， 糖， 鹽， 胡椒粉， 粟粉， 攪拌均勻。</p></a>
+				<a href="#00:01:0.60" id="00:01:0.60" class="lt" onclick="jumptoTime(60, this.id)"><p>放入雪櫃冷藏2小時， 讓它入味，這裡有些碎的豬肉， 加些粟粉和水， 攪拌均勻備用，半磅洋蔥，切成絲，蒜頭切片，混合醬汁，沙茶醬、蠔油、老抽、糖、胡椒粉、水，攪拌均勻備用。</p></a>
+				<a href="#00:01:54.19" id="00:01:54.19" class="lt" onclick="jumptoTime(114, this.id)"><p>最後浸多2束粉絲，喜歡吃粉絲的可以浸多一束，用水浸1分鐘，不要浸得太軟，夾起，拿走水份，放一旁備用。</p></a>
+				<a href="#00:02:16.67" id="00:02:16.67" class="lt" onclick="jumptoTime(136, this.id)"><p>今日我會用瓦煲一次過煮曬所有食材，依家加啲油落個瓦煲嗰度，加埋兩片薑，然後先至開中火，慢慢燒熱個瓦煲，唔好心急呀，見到個薑片旁邊有氣泡呢，就表示瓦煲已經夠熱啦，跟手呢加埋啲蒜片落去啦，兜炒幾下，加入肉碎， 將肉碎鬆開， 炒至九成熟，現在差不多九成熟了，就可以加一湯匙紹興酒</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:03:17.11" id="00:03:17.11" class="lt" onclick="jumptoTime(197, this.id)"><p>翻炒均勻，混合醬汁加入，炒至肉碎全熟，加入洋蔥，炒勻，炒至洋蔥軟熟後，加入粉絲，加熱水，蓋過粉絲，不要太少水，將所有食材拌勻，之後就可以加入蝦，再將蝦蝦鋪在蝦上，現在蓋上蓋子，轉中大火，將食材煮滾，煮滾後，打開蓋子，攪拌均勻，不要讓食材黏底，蝦很容易熟透，看到它熟透就可以了，不要煮太久。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:04:52.72" id="00:04:52.72" class="lt" onclick="jumptoTime(292, this.id)"><p>現在可以試味，如果需要，可以加適量的鹽調味，這個粉絲蝦煲，吃粉絲也不用吃飯了，喜歡吃粉絲的可以多加一束，調味方面，要補加一些，煮粉絲要注意，粉絲不要浸得太軟，煮的時候，水分不能太少，要有足夠的水分讓粉絲吸收，煮出來就不會一坨坨爛掉了，好了，說到這裡，時間又差不多了，我們下一集再見吧!</p></a>
+</div>
+	</body>
+</html>

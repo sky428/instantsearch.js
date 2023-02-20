@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀電飯煲排骨芋頭飯|Pork Ribs & Taro Rice in rice cooker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '-ALmvujb19g',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀電飯煲排骨芋頭飯|Pork Ribs & Taro Rice in rice cooker</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.28" id="00:00:0.28" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，歡迎來到知美館，今天要煮一個我經常煮的午餐，排骨芋頭煲仔飯，下午只有1-2人吃飯，煮一鍋就完成了，排骨要軟腍一點，要用粟粉洗，以前都講過了，不再重複，想知道怎樣洗，右上角有連接，吸乾水份後，加入蠔油、生抽、糖、胡椒粉和粟粉，攪拌均勻後放入雪櫃1-2小時， 讓它入味和收乾水分，用鐵鑊煎的時候就沒那麼容易黏底。</p></a>
+				<a href="#00:01:9.35" id="00:01:9.35" class="lt" onclick="jumptoTime(69, this.id)"><p>這裡還有一些料頭，2個蒜頭剁碎，1個小甜椒切開， 可以用辣椒的，還有一片薑，這些豆豉， 一些圓粒， 一些剁碎，我還加了一條臘腸，半磅芋頭切碎，食材我打算先爆一爆，煮出來的飯會香一點，加些油落隻鑊之後，然後燒熱隻鑊，轉去中火，將排骨爆到兩邊微黃就可以了，然後加入芋頭，芋頭要辣香，芋頭煎一煎，煮出來的飯又香很多。</p></a>
+				<a href="#00:02:51.03" id="00:02:51.03" class="lt" onclick="jumptoTime(171, this.id)"><p>稍微爆好芋頭後，加入臘腸，炒勻，將食材推到一邊，再加些油，現在可以爆薑蒜豆豉，不要太早爆，太久太乾，爆香後將所有食材拌勻，再加一湯匙紹興酒增加酒香，排骨有底味，但芋頭沒有味道，加少許蠔油，再加少許糖，和胡椒粉，加少許甜椒，炒勻後，放一旁備用，電飯煲排骨飯，跟平常煮飯一樣，先煮飯，如果想食飯焦，爆好所有食材後，用瓦煲煮飯都可以。</p></a>
+				<a href="#00:04:33.91" id="00:04:33.91" class="lt" onclick="jumptoTime(273, this.id)"><p>就要改名，叫做排骨芋頭煲仔飯，要將飯煮到有七成收乾水份，現在可以加入排骨，盖上盖子继续煮，煮熟后不要开盖，焗15分钟，不是說笑，真是今天的午餐，和百椰公兩個人吃，唉，要加煲仔飯豉油喔!</p></a>
+				<a href="#00:05:44.18" id="00:05:44.18" class="lt" onclick="jumptoTime(344, this.id)"><p>不說了，吃飯啦!</p></a>
+				<a href="#00:05:46.18" id="00:05:46.18" class="lt" onclick="jumptoTime(346, this.id)"><p>歡迎訂閱和分享，有時間點讚，留個表情符號給我。</p></a>
+				<a href="#00:05:52.18" id="00:05:52.18" class="lt" onclick="jumptoTime(352, this.id)"><p>多謝支持，在下一集我們再見!</p></a>
+</div>
+	</body>
+</html>

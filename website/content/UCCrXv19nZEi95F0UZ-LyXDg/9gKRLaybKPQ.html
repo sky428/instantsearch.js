@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀廚房小貼士|開蓋全部都係蓋|Kitchen Tips Open Lid</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '9gKRLaybKPQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀廚房小貼士|開蓋全部都係蓋|Kitchen Tips Open Lid</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，歡迎嚟到芝美館，今日分享一啲廚房小貼士。</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>呢啲係沖咖啡奶茶嘅奶粉，細樽裝嘅。</p></a>
+				<a href="#00:00:10.00" id="00:00:10.00" class="lt" onclick="jumptoTime(10, this.id)"><p>如果用曬將大桶家庭裝加返落去，好容易就倒捨。</p></a>
+				<a href="#00:00:15.00" id="00:00:15.00" class="lt" onclick="jumptoTime(15, this.id)"><p>咁點先至唔會倒到周圍都係呢?</p></a>
+				<a href="#00:00:18.00" id="00:00:18.00" class="lt" onclick="jumptoTime(18, this.id)"><p>仲有，呢啲係朱古力奶粉，開咗好耐都飲唔曬喎，擺一段時間就會變硬。</p></a>
+				<a href="#00:00:25.00" id="00:00:25.00" class="lt" onclick="jumptoTime(25, this.id)"><p>咁有冇方法可以預防呢?</p></a>
+				<a href="#00:00:28.00" id="00:00:28.00" class="lt" onclick="jumptoTime(28, this.id)"><p>講到呢種豉油樽嘅蓋掩設計，一唔小心，好似倒水咁，好快就用曬一支㗎啦。</p></a>
+				<a href="#00:00:39.00" id="00:00:39.00" class="lt" onclick="jumptoTime(39, this.id)"><p>仲有就係，新買返嚟嘅醬料，玻璃樽加鐵蓋，拎極都拎唔開。</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>咁今日嘅話題係乜嘢?係講開蓋。</p></a>
+				<a href="#00:01:1.15" id="00:01:1.15" class="lt" onclick="jumptoTime(61, this.id)"><p>咖啡奶茶日日飲，買細樽裝嘅咖啡奶粉用嘅時候就方便啲，但係用曬之後又想慳錢，梗係買家庭裝啦，咁將大桶加落細樽，好多時都倒到周圍都係，個樽口咁細，由大嘅樽口倒入細嘅樽口，想唔倒石都幾難，唔好扯開蓋掩，喺蓋掩嗰度，切開一個三角形，呢一個三角形唔係亂咁開㗎喎，要注意，大樽口倒出嚟嘅位要就返個細樽口，唔可以太闊喎，頂嗰個三角尖位大約係去到細樽口嘅一半，又唔可以太高過咗籠。</p></a>
+				<a href="#00:02:5.15" id="00:02:5.15" class="lt" onclick="jumptoTime(125, this.id)"><p>加啲粉落去嘅時候你就會留意到，個三角形嘅大細唔可以超過個細樽口，係，知美館用匙羹筆咪得囉，使乜開三角形呀，最開心就有得揀㗎嘛，兩種方法任你選擇，呢度啲朱古力粉，蔥檸檬茶嘅粉都好大桶㗎，買一桶飲好耐都飲唔曬，擺太耐又會變硬塊喎，咁唔好成塊蓋掩扯開佢呀，都係用三角形嘅方法，開個細細地嘅三角形。</p></a>
+				<a href="#00:02:58.62" id="00:02:58.62" class="lt" onclick="jumptoTime(178, this.id)"><p>蓋子沒有整塊拉開，開個小小的三角形，用完之後，蓋上蓋子，放在乾爽的地方，就不會那麼容易結硬塊，說說吧，倒出來的位置闊，頂部尖，有時粉狀的調味料，都是用這種蓋子，用開三角形的方法，就不用用匙羹筆，因應需要，三角形開大一點或小一點，調味粉用多少就倒多少出來，很方便的，這裡就要稱讚一下設計這個瓶蓋的設計師了。</p></a>
+				<a href="#00:03:44.44" id="00:03:44.44" class="lt" onclick="jumptoTime(224, this.id)"><p>跟他一樣拉開蓋子，一時快手，醬油就像倒水一樣，很快就用完，又要賣過一瓶，他就好生意了，不想他奸計得逞，也有方法的，在拉開蓋子時，不要太大力，慢慢地拉開，可以用剪刀，頂著你想要開的位置，拉開一點點的洞，就可以剪斷它，你可以選擇扯開三分一或者一半，今次我選擇剪開三分一，看看它設計的開口位，和我選擇的開口位差多遠。</p></a>
+				<a href="#00:04:34.41" id="00:04:34.41" class="lt" onclick="jumptoTime(274, this.id)"><p>一不小心就會倒多了，除了很快用完一支之外，最重要還是不要浪費，用這麼多倒這麼多，你覺得它倒得慢，洞位就開一半，我今次是開三分一，各位觀眾是否覺得我熟口熟面呢，在平時的影片我都出現過，我這個樽口位是開三分一，覺得我倒得慢的話，用剪刀在三分一的位置，轉一個圈 撩一撩鬆，洞位就會大一點，不用開到一半。</p></a>
+				<a href="#00:05:15.41" id="00:05:15.41" class="lt" onclick="jumptoTime(315, this.id)"><p>對於家庭主婦來說，最難處理的就是玻璃瓶配鐵蓋的醬料，家裏沒有大男士，又買不到適合的開瓶器，有時我都會用這種洗碗的膠手套，選擇一些掌心有格紋，天氣冷用的皮手套都可以，有防滑物料的都可以試用，哈哈，我是試給你們看而已，通常玻璃瓶配鐵蓋，用膠手套，都是開不到的，汽肉來了，準備一條乾的毛巾，一隻兜兜的碟，碗都可以。</p></a>
+				<a href="#00:06:1.24" id="00:06:1.24" class="lt" onclick="jumptoTime(361, this.id)"><p>將你準備好開的醬料，倒轉，然後加一些熱的熱水，水的高度去到鐵蓋的邊位，等一分鐘，蓋就會有輕微的膨脹，爛縮熱脹，一分鐘後，玻璃瓶不要反轉，將乾的毛巾吸走瓶蓋的水份，小心一點，不要不小心拿開蓋子，順其自然， 擀一擀， 很容易就能打開了，解決第一個煩惱，下一次用的時候又有另一個煩惱，就是又開不到，有辦法，用一個乾淨的膠袋，我這種是普通三文治袋，最便宜那種一盒有百多個。</p></a>
+				<a href="#00:07:20.10" id="00:07:20.10" class="lt" onclick="jumptoTime(440, this.id)"><p>將一個乾淨的膠袋在中間分隔開，你下次用的時候就很容易拿得開，有時趕時間用匙羹舀出來用，中口碰到很多醬料，隨便拿起來醬料就會黏著，下次又開不到，用膠袋，是膠袋，雙浸，隔在中間就沒有這個麻煩了，不趕時間最好就保持瓶口乾淨，拿開一瓶新的醬料，在加膠袋之前要用一張乾的廚房紙抹走瓶蓋的醬料，瓶邊也要抹乾淨，不要用濕紙，有水氣可能會發霉。</p></a>
+				<a href="#00:08:18.11" id="00:08:18.11" class="lt" onclick="jumptoTime(498, this.id)"><p>跟手蓋上膠袋在中間，將蓋子扭開，在下次使用時，就很容易扭開了，最近有很多觀眾朋友將我的影片轉發出去，收視率大大提高，很感謝你們，煮了幾十年飯，都儲了一些廚房貼士，想起再拍片分享吧，我們下集再見。</p></a>
+</div>
+	</body>
+</html>

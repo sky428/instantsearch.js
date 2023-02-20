@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>✴️煲仔粥✴️生滾鮑魚雞絲粥|Abalone&Chicken Congee</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'epoPxFR375w',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>✴️煲仔粥✴️生滾鮑魚雞絲粥|Abalone&Chicken Congee</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>多謝您收睇時局新聞，再會!</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:6.62" id="00:00:6.62" class="lt" onclick="jumptoTime(6, this.id)"><p>最近天氣好凍，想煲粥來食，我哋睇下有咩材料</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:00:28.12" id="00:00:28.12" class="lt" onclick="jumptoTime(28, this.id)"><p>首先我們要將半杯米洗淨，然後放入一個膠盒裏面，放入冰格 冷藏一晚。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:43.51" id="00:00:43.51" class="lt" onclick="jumptoTime(43, this.id)"><p>即食鮑魚一罐，我們要三隻，留番嘅鮑魚汁俾用，水7杯，鲍鱼汤汁一杯，滾起後加入冷藏一晚結冰的米，其實你可以平時保存雪藏好的米在冰格，想食的時候拿出來煲又快又方便，再滾起後用中火煮25分鐘不需要蓋鍋蓋，熟的咸蛋半隻切粒備用，粥煲好了放入切粒的咸蛋，跟住熄火但係要保持粥熱，不要放涼。</p></a>
+				<a href="#00:02:19.71" id="00:02:19.71" class="lt" onclick="jumptoTime(139, this.id)"><p>乾蔥頭切粒，鲍鱼切片，雞腿肉切絲。</p></a>
+				<a href="#00:02:47.61" id="00:02:47.61" class="lt" onclick="jumptoTime(167, this.id)"><p>用生抽1茶匙，胡椒粉1茶匙，粟粉1茶匙，攪勻，醃好，備用，下油用中火爆香乾蔥粒，但不要爆得太焦，否则粥会变黄色，加入雞絲炒1分鐘，但不要炒熟， 因為一會兒還要加粥再煮，如果煮太久會過熟，倒入已煲好的粥，雞粉半茶匙，鹽1茶匙，但鹹蛋鹹，需要試味，如果夠鹹就不用放太多鹽，胡椒粉1茶匙，煮2分鐘就完成了。</p></a>
+				<a href="#00:04:38.80" id="00:04:38.80" class="lt" onclick="jumptoTime(278, this.id)"><p>最後放鮑魚在竹面，因為鮑魚是即食的，我就沒有煮，但你可以煮一煮，但不要煮太久，撒上蔥花，如果喜歡我這個生滾鮑魚雞絲粥，記得給我一個讚，和訂閱我的頻道吧。</p></a>
+</div>
+	</body>
+</html>

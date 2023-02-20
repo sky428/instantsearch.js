@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀南乳粉絲蝦米煲| 簡易煲仔菜|不需轉煲一煲完成|Vermicelli pot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'KvD2OkUjRpw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀南乳粉絲蝦米煲| 簡易煲仔菜|不需轉煲一煲完成|Vermicelli pot</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.19" id="00:00:0.19" class="lt" onclick="jumptoTime(0, this.id)"><p>大家好，今天做煲仔菜，是湯煲來的，有湯有菜，人少食飯，一煲就搞掂，這裡有幾隻香菇，薄薄的，用溫水清洗，熱水浸透，將它切開你喜歡的大小，冬菇水不要倒掉，留著。</p></a>
+				<a href="#00:00:25.19" id="00:00:25.19" class="lt" onclick="jumptoTime(25, this.id)"><p>還有一點蝦米，清洗乾淨後用熱水浸透，浸完蝦米的蝦米水要保留，還有一些瘦肉，切粗條。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>用調味器拌勻，攪拌均勻後放一旁，準備好其他食材就可以煮了。</p></a>
+				<a href="#00:00:58.04" id="00:00:58.04" class="lt" onclick="jumptoTime(58, this.id)"><p>用水浸軟粉絲，不要浸太軟，浸至五成軟就可以。</p></a>
+				<a href="#00:01:7.04" id="00:01:7.04" class="lt" onclick="jumptoTime(67, this.id)"><p>還有一些紹菜，用不完的，我用了一磅，清洗後切開你喜歡的大小，準備一些適量的薑和蒜片，調味和份量， 再混合醬汁，腐乳可用1至2磚， 視乎你喜歡濃味，將腐乳和南乳壓成蓉， 攪拌均勻備用，食材齊全， 可以開始煮了。</p></a>
+				<a href="#00:01:50.15" id="00:01:50.15" class="lt" onclick="jumptoTime(110, this.id)"><p>加些油， 開中火，加薑片和蒜片， 慢慢輕易壓鍋，薑片和蒜片爆炒後， 加入瘦肉，炒1分鐘。</p></a>
+				<a href="#00:02:16.51" id="00:02:16.51" class="lt" onclick="jumptoTime(136, this.id)"><p>接着，放在一旁，再爆香冬菇和虾米，然後再加一湯匙紹興酒，然後加入混合好的醬汁，攪拌均勻，加入冬菇和虾米水，盖上盖子，直至沸腾。</p></a>
+				<a href="#00:03:3.31" id="00:03:3.31" class="lt" onclick="jumptoTime(183, this.id)"><p>加入蔬菜，如果喜歡多些湯汁，可以加少許熱水，熱水份量視乎你喜歡多少湯汁，蓋上蓋子，煮1-2分鐘，如果想菜更軟就煮久一點。</p></a>
+				<a href="#00:03:41.66" id="00:03:41.66" class="lt" onclick="jumptoTime(221, this.id)"><p>可以試味，調整味道，我加了鹽，跟手可以加粉絲，沾湯汁，蓋上蓋子，一捆起就可以了，不需要再煮，如果覺得粉絲差一點點不夠軟，你浸一會兒就會軟了，讓我整理好，拍張照片，說到煮粉絲，有什麼地方要注意呢?</p></a>
+				<a href="#00:04:24.87" id="00:04:24.87" class="lt" onclick="jumptoTime(264, this.id)"><p>粉絲要浸到五成的軟熟，不要浸得太軟，放入鍋煮的時候，湯汁要足夠，不要煮太久，一煮開就要關火，你煮出來的粉絲就會像現在那樣，一條條分明爽滑，不會像一團醬一樣，說到這裡，時間又差不多了，下一集再見。</p></a>
+</div>
+	</body>
+</html>

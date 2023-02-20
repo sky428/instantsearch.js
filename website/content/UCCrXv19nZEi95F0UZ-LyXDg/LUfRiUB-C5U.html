@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀黃酒雞煲|酒能禦寒暖胃|Chicken wine pot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'LUfRiUB-C5U',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀黃酒雞煲|酒能禦寒暖胃|Chicken wine pot</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，歡迎來到芝美館。</p></a>
+				<a href="#00:00:3.00" id="00:00:3.00" class="lt" onclick="jumptoTime(3, this.id)"><p>落雪呀，冰點嘅溫度，最好就飲返杯酒嚟暖下身啦。</p></a>
+				<a href="#00:00:8.00" id="00:00:8.00" class="lt" onclick="jumptoTime(8, this.id)"><p>但係我唔鍾意就咁飲酒嘅，最好就用嚟煮雞煲啦。</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>有得食，又可以禦寒，暖身暖胃。</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>事不宜遲，開始煮啦，快啲煮，快啲有得食，快啲暖胃。</p></a>
+				<a href="#00:00:35.61" id="00:00:35.61" class="lt" onclick="jumptoTime(35, this.id)"><p>你可以用雞的任何部位，我用了3隻雞翼和1隻雞腿，貪去肉質夠滑，不粗糙，用廚房紙吸乾多餘的水份，雞腿的皮我不要了，太肥膩，如果你喜歡吃雞皮也可以保留，有肥膏也要剪掉，接着斩开你喜欢的大小，黄酒鸡煲，不想用黄酒，也可以用其他酒类代替，加一汤匙黄酒下去腌鸡，还有两汤匙生抽，适量胡椒粉。</p></a>
+				<a href="#00:01:36.87" id="00:01:36.87" class="lt" onclick="jumptoTime(96, this.id)"><p>加一些粟粉，搅拌均匀，搅拌均匀后，放入冰箱2小时，让它入味，和收干一些水分，在腌鸡的同时，我们准备一些云耳，云耳要用水浸软，有蒂要去蒂，浸开了就可以清洗了，这个鸡煲，还加了一些金针，剪走金针硬的顶部，然后打个结，吃起来会爽口一些，再準備10粒紅棗，紅棗有核要去核，紅棗去核後，還有5片薑，喜歡吃薑的可以多加一些，再加一些杞子，以上的配搭全部都適合煮雞酒，最適合補身。</p></a>
+				<a href="#00:02:54.14" id="00:02:54.14" class="lt" onclick="jumptoTime(174, this.id)"><p>加些油在鍋子上，然後把鍋子燒熱，用中大火，爆香薑片，將薑片推到一邊，現在可以加雞肉，將雞煎至兩面金黃，大約五成熟，雞剛才醃的時候加了2湯匙生抽做底味，不夠味道的，趁雞熱一點，2磅雞灑一點鹽就夠味了，不需要加蠔油或者雞汁那類，雞炒均勻之後就把它放一旁，可以加紅棗，金針</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:27.19" id="00:04:27.19" class="lt" onclick="jumptoTime(267, this.id)"><p>還有雲耳，炒一下，然後把所有食材都炒均勻，再加多一湯匙酒增加鑊氣，好了 到下一個步驟，在瓦煲加些油，開中火 慢慢燒熱瓦煲，現在可以將剛才爆香了的雞加入瓦煲裏面，將食材撿一撿，一起煮一些，有沒有記得， 杞子還沒加進去呢?</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:05:44.22" id="00:05:44.22" class="lt" onclick="jumptoTime(344, this.id)"><p>遲一點再加，在這個時候，再加一點黃酒到阿寶那裡，加到這樣了，在食材的一半，盖上盖子，用中大火把酒煮沸，鸡只煎到半熟，沸配后转中小火，煮多大约5分钟，煮至鸡熟透即可，5分钟后可以加入杞子，剛才加的酒煮過後已經揮發酒精，最後補加一些酒在湯汁上，令湯汁保持酒味香濃，最後蓋上蓋子，將雞煲煮滾就完成了。</p></a>
+				<a href="#00:07:18.07" id="00:07:18.07" class="lt" onclick="jumptoTime(438, this.id)"><p>再試味，味道不夠可以補加一點鹽，我喜歡這個味道，喜歡麻油的味道嗎?</p></a>
+				<a href="#00:07:28.79" id="00:07:28.79" class="lt" onclick="jumptoTime(448, this.id)"><p>可以加一點麻油，我這個黃酒雞煲配搭了雲耳、金針、紅棗、薑和杞子，是不是很耐吃呢?</p></a>
+				<a href="#00:07:43.89" id="00:07:43.89" class="lt" onclick="jumptoTime(463, this.id)"><p>這幾樣通常都是用來煮雞酒的食材，用瓦鍋煮，原鍋放上桌，在超寒冷的天氣，焚外暖胃，吃了不用穿這麼厚的衣服，這個黃酒雞煲，雞肉用鍋爆到半熟，除了夠鑊氣之外，加到瓦鍋煮幾分鐘，雞肉又香又滑，一定不會粗糙，好了，雞煲要趁熱吃，試過好吃請幫忙分享給你的朋友，不要忘記訂閱、點讚和留言。</p></a>
+				<a href="#00:08:20.41" id="00:08:20.41" class="lt" onclick="jumptoTime(500, this.id)"><p>在下一集我們再見。</p></a>
+</div>
+	</body>
+</html>
