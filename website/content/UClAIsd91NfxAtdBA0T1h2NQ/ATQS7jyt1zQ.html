@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ricky推介 係灣仔居然食到高質意大利菜  歐陸氛圍坐耐啲以為自己去咗意大利 ！！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'ATQS7jyt1zQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Ricky推介 係灣仔居然食到高質意大利菜  歐陸氛圍坐耐啲以為自己去咗意大利 ！！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.68" id="00:00:0.68" class="lt" onclick="jumptoTime(0, this.id)"><p>Mambo Sir Ricky Sir，我到咗羅馬廣場附近 唔見你，你行前少少見到個冷巷轉左手面就係，即刻到 好 轉頭見，喂 Mambo Sir，識嘢喎呢間，離唔開香港就搵間似係意大利嘅地方食下嘢，呢間其實我嚟過㗎 嚟過啱喇，係，理髮版 拆擺樣樣都好似好好食 都唔知嗌邊啲好，真係好鬼地道呢度 唔係講笑。</p></a>
+				<a href="#00:00:33.04" id="00:00:33.04" class="lt" onclick="jumptoTime(33, this.id)"><p>整杯嘢飲下先啦，飲杯先啦 飲杯先，這間店有感覺，不錯，這裡很舒服，拿下來，好像在意大利，不是那些，那些飲食館，很拘謹的，這裡就沒那麼拘謹，謝謝，這是甚麼好東西，Sir，這個厲害了，撥開一點就看到，金錢肚，炆得剛剛好，沒有牛的騷味，尤其是香港人很少在西餐吃牛肚，這間餐廳的大廚是羅馬人，很多很古老、地道的羅馬菜。</p></a>
+				<a href="#00:01:30.93" id="00:01:30.93" class="lt" onclick="jumptoTime(90, this.id)"><p>是他自小就吃到的，我肯定這應該是意大利菜，質感確實不同，沒那麼粗糙，硬是軟滑一點，軟滑很多，這個麵包也好吃，加上這個汁，真的要試試這個披薩，這個名字也不一樣，叫披薩，它不是披薩，它在羅馬現在很流行，整個披薩的口感是不同的，拿坡里式的披薩，旁邊有很大的鬆脆的坡，這個不是，它的皮是有點綿綿的，比較脆，沒那麼麵包。</p></a>
+				<a href="#00:02:12.85" id="00:02:12.85" class="lt" onclick="jumptoTime(132, this.id)"><p>吃完後，吃著肚子，這個披薩的底部，發酵足足要兩天，你知道我們披薩最多是過夜，它裡面可能還沒放多少衣食品，對，它的刀很厲害，很有力，所以要發酵很久，這個衣食品很香，通常他們用的，是Gianta的套籃，但它不是，它是用Quinceale，就是在豬的下巴，用那塊肉來做的，香到爆炸，它又脆。</p></a>
+				<a href="#00:02:42.17" id="00:02:42.17" class="lt" onclick="jumptoTime(162, this.id)"><p>你做的有點像我們做的豬油渣，那種香味</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:46.77" id="00:02:46.77" class="lt" onclick="jumptoTime(166, this.id)"><p>喜歡的話，請訂閱支持啊!，还有烟的，有热度才有态度，口感已经做得很好，这些就是食物，哇，这个好东西，牛仔肠，哇，粉嫩到爆浆，它洗到一点杂味都没有，肠衣又刚刚好，有点硬，但是粉才是精髓，这个粉肠没得顶，真的，这个粉肠，比我跟你更厉害，Porterhouse，我们这里有牛肉，牛肉，这个真的是意大利牛。</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:03:41.15" id="00:03:41.15" class="lt" onclick="jumptoTime(221, this.id)"><p>真的是意大利牛，是的，Kianina，Kianina牛肉，100%纯牛肉，意大利牛肉不太油腻，你不能煮得太…，煮得太好了，不然会很脆，好漂亮，不太有芥末味，辣筋，真正的法国菜，像在托斯卡尼，Manful Sir，来吧，哇，真棒，应该先吃牛柳，牛柳的味道没那么重，磨了新鮮的辣筋，整個香味都不同了，雖然沒有油分，但是它…。</p></a>
+				<a href="#00:04:33.50" id="00:04:33.50" class="lt" onclick="jumptoTime(273, this.id)"><p>真的軟滑，對，肉的甜味很厲害，它的成素控制得很好，我想試試西冷，這純牛的味道是…，通常我們吃的，無論是美國、澳洲、紐西蘭，都不會有這種肉味，煮碳燒，燒出來真的不同了，半生熟已經是太熟了，一定要是四成或以下才行，肉味很好，配紅酒就更加…，絕對棒，沒得比，有時候我們去餐廳，每個人都說是法國牛，但不是真正的意大利牛。</p></a>
+				<a href="#00:05:10.90" id="00:05:10.90" class="lt" onclick="jumptoTime(310, this.id)"><p>用真正的意大利牛做佛羅倫斯牛扒，我看這裡全香港都是，一隻手掌數得完的其中一間餐廳，很多人用，飽了嗎，飽了，經常…，這麼飽，不如先出去透透氣，出去吹吹風，喝一口東西吧，乾杯，其實我認識那個大廚，他在香港這麼多年，二十多年了，他又不會同化了，他一直都堅持著，那種意大利的材料和煮法，一直都沒有變。</p></a>
+				<a href="#00:05:48.50" id="00:05:48.50" class="lt" onclick="jumptoTime(348, this.id)"><p>好像我們今天吃的那些，哪裡在其他地方吃到這種味道，你好，這位就是主廚，Palo，很高興認識你，Mantle，很高興認識你，我是Grapha，Grapha，對，很好吃，乾杯，Palo，乾杯，今晚非常好吃，謝謝，這裡有很多地方，你可以享受，很真正的意大利菜，乾杯，歡迎來到阿馬，謝謝，我會再次回來。</p></a>
+</div>
+	</body>
+</html>

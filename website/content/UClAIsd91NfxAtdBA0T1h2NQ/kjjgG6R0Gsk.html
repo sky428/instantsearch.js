@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>號外：真係恭喜哂Ricky🥳🥳分別奪得YouTube香港2022年度十大熱門創作者第7位及YouTube香港2022年度十大人氣創作者第3位 #shorts</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'kjjgG6R0Gsk',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>號外：真係恭喜哂Ricky🥳🥳分別奪得YouTube香港2022年度十大熱門創作者第7位及YouTube香港2022年度十大人氣創作者第3位 #shorts</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>第7位 Ricky 講住講食，第3位 Ricky 講住講食，其實呢冇諗過開一個飲食嘅頻道嘅，遇啱有一班呢，不老都做開食嘅朋友呢，自己做咗間Production House，咁開始咗呢我哋亦都係，有啲計仔喎亦都幾多人鍾意睇喎，除咗我有陣時煮一飯仔之外呢，有陣時都會介紹下啲餐廳呀食店，曾經呢介紹咗一個。</p></a>
+				<a href="#00:00:27.00" id="00:00:27.00" class="lt" onclick="jumptoTime(27, this.id)"><p>粉麵店咁樣，咁呀到出咗片呀，咁我返返去嗰區嗰度，咁就喺個街口度呢就畀啲街坊接住啦，呢間呀我以前呀我住呢區㗎嘛，邊個識排隊㗎呀，咁呢啲亦都係可能係Youtube，佢嗰個傳播嘅威力啦，希望我哋都希望呢個行業呢，大家都會即係好似以前咁。</p></a>
+				<a href="#00:00:47.00" id="00:00:47.00" class="lt" onclick="jumptoTime(47, this.id)"><p>大家都排隊嘅。</p></a>
+</div>
+	</body>
+</html>
