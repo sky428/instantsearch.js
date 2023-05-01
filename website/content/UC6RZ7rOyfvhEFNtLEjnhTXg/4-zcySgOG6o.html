@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>'MEKO 100% 純椰青水 Cooking Challenge💚一齊用椰青水煮餸贏禮物！🎁 #whatieatinaday</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '4-zcySgOG6o',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>'MEKO 100% 純椰青水 Cooking Challenge💚一齊用椰青水煮餸贏禮物！🎁 #whatieatinaday</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello!上星期咪同大家分享咗椰青水嘅創意料理嘅，收到有啲網友留言都話好簡單易整，又話冇諗過椰青水除咗就咁飲之外，原來仲可以用嚟煮餸㗎喎，覺得幾得意都好想跟住試下煮，好啦!為咗鼓勵大家助言起行呢，不如我哋又嚟個Giveaway送禮物活動開心下啦，由今日起至到4月30號，大家只需要將你哋嘅椰青水作品照。</p></a>
+				<a href="#00:00:23.94" id="00:00:23.94" class="lt" onclick="jumptoTime(23, this.id)"><p>post喺你哋嘅Instagram account，tag埋我哋Milk Bread Era同埋Meko Hong Kong，再加埋個hashtag What I Eat In A Day With Meko，我會喺月尾挑選整得最有心思嘅椰青水作品照，送出小禮物。</p></a>
+				<a href="#00:00:36.40" id="00:00:36.40" class="lt" onclick="jumptoTime(36, this.id)"><p>獎品非常豐富，仲要唔止一個幸運兒，除咗有Meko純椰青水之外，仲有京都品牌Susu春日限定布袋，同埋大家一定會鍾意嘅超市現金券，大家快啲發揮創意，參加呢個Giveaway活動，我等住睇你哋嘅作品照㗎!</p></a>
+</div>
+	</body>
+</html>

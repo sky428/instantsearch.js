@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【Q彈煙韌芋圓】一個蕃薯竟可以做出一大袋芋圓！極簡芋圓DIY💜 冰櫃保存隨時煮隨時食，拼什麼糖水都好食！加入這個小步驟，口感秒殺糖水舖！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'iRSCNoFP9mQ',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【Q彈煙韌芋圓】一個蕃薯竟可以做出一大袋芋圓！極簡芋圓DIY💜 冰櫃保存隨時煮隨時食，拼什麼糖水都好食！加入這個小步驟，口感秒殺糖水舖！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello 好似好耐冇同大家一齊整甜品啦，今日要同大家分享一個...</p></a>
+				<a href="#00:00:6.00" id="00:00:6.00" class="lt" onclick="jumptoTime(6, this.id)"><p>其實嚴格嚟講佢唔算係一個甜品，因為佢嘅變化係超級超級多，就係芋圓啦，芋圓嘅變化同埋組合實在太多啦，熱食凍食嘅糖水啦，甜品啦，甚至係單食，姐係就咁食，都一樣係甜點地，燕燕銀銀，非常之好食，出去食糖水，次次加芋圓都要加成十蚊，但係只係得嗰幾粒，所以我決定自己整，整過之後我發現做法係超級無敵簡單，基本上將三樣材料撈埋一齊。</p></a>
+				<a href="#00:00:36.40" id="00:00:36.40" class="lt" onclick="jumptoTime(36, this.id)"><p>就已經整到一大袋嘅芋圓，而且仲可以放入佢個冰櫃度保存，隨時食開糖水就可以加幾粒落去，即刻放滿本身好平凡嘅糖水蒸呢，實在太正啦。</p></a>
+				<a href="#00:00:48.00" id="00:00:48.00" class="lt" onclick="jumptoTime(48, this.id)"><p>所以我都急不及待要同大家開心Share!</p></a>
+</div>
+	</body>
+</html>

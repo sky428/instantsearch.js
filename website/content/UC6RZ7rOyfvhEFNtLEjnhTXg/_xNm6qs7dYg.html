@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【煎墨魚滑釀豆卜】吱吱墨魚滑爽口彈牙，一吱即用不黏手，前所未有的方便！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: '_xNm6qs7dYg',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【煎墨魚滑釀豆卜】吱吱墨魚滑爽口彈牙，一吱即用不黏手，前所未有的方便！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello我收工啦，想同大家分享最近成日都整好易整香口又好好食嘅一味餸，就係墨魚滑釀豆卜啦，其實我之前已經分享過759阿信屋自己出嘅墨魚滑，我覺得佢呢一個吱吱裝嘅墨魚滑呢係專係for懶人而設㗎，首先呢佢墨魚滑入面已經有咗調味啦咁你就唔需要額外再準備調味料醃肉，另外佢呢個三角形嘅包裝設計就可以方便你吱啲墨魚滑出嚟。</p></a>
+				<a href="#00:00:27.90" id="00:00:27.90" class="lt" onclick="jumptoTime(27, this.id)"><p>唔需要再用匙羹去筆啲墨魚滑亦都唔怕會黐到成手都係，煎釀豆卜有好多唔同嘅做法，你可以用平底鍋啦，焗爐啦或者氣炸鍋將佢煮熟，我自己通常都係用平底鍋煎因為我覺得咁樣係最快手嘅，將墨魚滑煎到金黃色咁就搞掂啦，啊仲有啊，今次聽咗你哋嘅意見試下加個蜆汁落去。</p></a>
+				<a href="#00:00:50.70" id="00:00:50.70" class="lt" onclick="jumptoTime(50, this.id)"><p>咁個煎釀豆卜就會濕濕地，冇咁乾，又會再好味啲。</p></a>
+</div>
+	</body>
+</html>

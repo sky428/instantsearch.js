@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【快煮之選 - 梅菜剁豬肉】電飯煲蒸架分層，上層蒸肉餅，下層煲飯！做法簡單，準時開飯無難度！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'VAr5_LlFgIA',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【快煮之選 - 梅菜剁豬肉】電飯煲蒸架分層，上層蒸肉餅，下層煲飯！做法簡單，準時開飯無難度！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello， 問下你呀， 如果要你講一味家的味道嘅餸菜， 你會諗起啲咩呢?</p></a>
+				<a href="#00:00:5.50" id="00:00:5.50" class="lt" onclick="jumptoTime(5, this.id)"><p>我就會諗起梅菜剁豬肉啦。</p></a>
+				<a href="#00:00:7.80" id="00:00:7.80" class="lt" onclick="jumptoTime(7, this.id)"><p>我諗人人都食過呢味家常菜㗎啦。</p></a>
+				<a href="#00:00:10.10" id="00:00:10.10" class="lt" onclick="jumptoTime(10, this.id)"><p>梅菜嘅味道鹹中帶甜， 再加埋肉質軟腍嘅肉餅，真係好好味， 好餸飯， 大人小朋友都啱食。</p></a>
+				<a href="#00:00:17.80" id="00:00:17.80" class="lt" onclick="jumptoTime(17, this.id)"><p>重點係做法超級簡單， 所以好多時候我都會一早整定。</p></a>
+				<a href="#00:00:22.70" id="00:00:22.70" class="lt" onclick="jumptoTime(22, this.id)"><p>快手將切好咗嘅梅菜， 撈埋啲半肥瘦豬肉，再加埋啲調味料， 醃肉調味， 包起佢放入去個雪櫃度，等到收工返到屋企， 就用電飯煲一次過下層煲飯， 上層蒸肉餅，夠鐘就開飯食得。</p></a>
+				<a href="#00:00:37.70" id="00:00:37.70" class="lt" onclick="jumptoTime(37, this.id)"><p>如果你都係搵緊一啲收工快手煮嘅食譜。</p></a>
+				<a href="#00:00:40.30" id="00:00:40.30" class="lt" onclick="jumptoTime(40, this.id)"><p>咁我就將簡單易整， 餸飯一流嘅梅菜剁豬肉推介俾你啦!</p></a>
+</div>
+	</body>
+</html>

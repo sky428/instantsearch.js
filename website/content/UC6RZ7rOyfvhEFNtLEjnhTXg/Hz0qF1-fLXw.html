@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【萬能雞肉醬料包】超市買到的雞髀肉＋平價百搭配料！Mix＆Match分袋推滿雪櫃，半個月天天不用煮飯！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'Hz0qF1-fLXw',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【萬能雞肉醬料包】超市買到的雞髀肉＋平價百搭配料！Mix＆Match分袋推滿雪櫃，半個月天天不用煮飯！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.26" id="00:00:0.26" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello 今日不得之料呀，今日我哋大製作呀，一次過整唔同款式嘅雞肉醬汁，嗱 我哋今次係好有準備㗎，餐單同埋煮法呢 我哋一早已經諗好曬㗎啦，咁為咗秉承懶人料理呢個concept呢，我哋就決定用返最基本嘅材料同埋調味料，用最短嘅時間，整五款唔同味道嘅雞肉醬料包，你見我哋好似煮咗好多嘢。</p></a>
+				<a href="#00:00:23.72" id="00:00:23.72" class="lt" onclick="jumptoTime(23, this.id)"><p>但係其實呢我哋由備料到煮好五個雞肉醬汁，都只係大概三個鐘頭到啦，聽落去好似好耐，但係計返每款醬汁只係需要用到半個鐘去煮㗎咋，加上烹煮嘅步驟都係重複又再重複，將啲材料mix and match，可以話係冇難度嘅，好似今次咁一次過煮多啲，咁就有多幾餐唔使煮飯喇，各位親愛嘅懶人，呢集懶人料理呢係我誠意推薦嘅。</p></a>
+				<a href="#00:00:50.52" id="00:00:50.52" class="lt" onclick="jumptoTime(50, this.id)"><p>希望呢啲咁百搭萬用嘅醬料包，可以幫到你哋偷偷懶。</p></a>
+				<a href="#00:00:54.76" id="00:00:54.76" class="lt" onclick="jumptoTime(54, this.id)"><p>煩少幾餐今晚要煮咩餸啦。</p></a>
+</div>
+	</body>
+</html>

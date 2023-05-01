@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【榨菜蒸豬肉】兩口子快煮兩餸晚餐，首選一定是蒸餸！</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'y2oqPoAM7qY',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>【榨菜蒸豬肉】兩口子快煮兩餸晚餐，首選一定是蒸餸！</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:0.00" id="00:00:0.00" class="lt" onclick="jumptoTime(0, this.id)"><p>Hello，之前就同大家分享過用電飯煲下層煲飯上層蒸餸呢一個懶人煮飯方法。</p></a>
+				<a href="#00:00:6.20" id="00:00:6.20" class="lt" onclick="jumptoTime(6, this.id)"><p>大家都好鍾意，所以今日又多一樣餸飯一流嘅好餸推介比大家啦。</p></a>
+				<a href="#00:00:11.00" id="00:00:11.00" class="lt" onclick="jumptoTime(11, this.id)"><p>就係榨菜蒸豬肉片。</p></a>
+				<a href="#00:00:13.00" id="00:00:13.00" class="lt" onclick="jumptoTime(13, this.id)"><p>收工發煮就梗係要有咁簡單得咁簡單啦。</p></a>
+				<a href="#00:00:16.00" id="00:00:16.00" class="lt" onclick="jumptoTime(16, this.id)"><p>就咁係街市買舊榨菜，係超市買盒豬肉，再加啲屋企一定有嘅調味料醃肉咁就ok架啦。</p></a>
+				<a href="#00:00:23.00" id="00:00:23.00" class="lt" onclick="jumptoTime(23, this.id)"><p>呢一個榨菜蒸豬肉嘅做法真係真係very easy。</p></a>
+				<a href="#00:00:26.00" id="00:00:26.00" class="lt" onclick="jumptoTime(26, this.id)"><p>榨菜清洗乾淨之後，我會將佢切片。</p></a>
+				<a href="#00:00:28.60" id="00:00:28.60" class="lt" onclick="jumptoTime(28, this.id)"><p>切完嘅榨菜我會將佢浸一浸水，洗走多餘嘅鹽味。</p></a>
+				<a href="#00:00:32.00" id="00:00:32.00" class="lt" onclick="jumptoTime(32, this.id)"><p>至於豬肉呢，都係將佢切片，然後加調味料醃肉。</p></a>
+				<a href="#00:00:36.00" id="00:00:36.00" class="lt" onclick="jumptoTime(36, this.id)"><p>一匙羹糖，一匙羹油，一匙羹生抽，同埋一匙羹嘅粟粉，撈埋一齊，醃肉大概15分鐘。</p></a>
+				<a href="#00:00:43.00" id="00:00:43.00" class="lt" onclick="jumptoTime(43, this.id)"><p>通常我都係返工之前準備好哂呢碟蒸餸嘅材料。</p></a>
+				<a href="#00:00:46.00" id="00:00:46.00" class="lt" onclick="jumptoTime(46, this.id)"><p>收工返到屋企呢，其實就咁係個雪櫃度攞碟蒸餸出嚟。</p></a>
+				<a href="#00:00:50.00" id="00:00:50.00" class="lt" onclick="jumptoTime(50, this.id)"><p>電飯煲放咗米之後呢，就放個蒸架，再放埋碟蒸餸落去。</p></a>
+				<a href="#00:00:54.00" id="00:00:54.00" class="lt" onclick="jumptoTime(54, this.id)"><p>撳返平時嘅煮飯模式煲飯，飯好呢就食得㗎喇，真係超級超級方便。</p></a>
+</div>
+	</body>
+</html>
