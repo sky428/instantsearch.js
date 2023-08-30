@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀豆腐蒸肉餅|營養豐富|食材經濟|清清哋簡單咁蒸|Steamed Pork w/ Tofu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'EzZDBieSv3k',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀豆腐蒸肉餅|營養豐富|食材經濟|清清哋簡單咁蒸|Steamed Pork w/ Tofu</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.08" id="00:00:1.08" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好，歡迎來到知美館，今天蒸一個簡單又有營養的豆腐蒸肉餅，清清的蒸，入口不會滯又不會漏口，我用硬豆腐，將豆腐壓碎，然後倒入杯子，稍後再講解，用同樣大小的杯，碎豬肉的份量是12安士，即豆腐和碎豬肉的比例是1比1，將碎肉和豆腐放入碟子，接着就可以加调味了，有点蚝油，一些盐。</p></a>
+				<a href="#00:01:28.75" id="00:01:28.75" class="lt" onclick="jumptoTime(88, this.id)"><p>少许胡椒粉，加些老抽，再要加一只蛋，現在將所有食材攪拌均勻，攪拌均勻後，還要做多一個步驟，要用筷子密密麻麻地篤一些洞，洞位可以藏湯汁，蒸出來的肉餅會鬆軟一些，容易熟透，沒那麼硬，接著就可以立刻拿去蒸了，不要放太久</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:02:11.97" id="00:02:11.97" class="lt" onclick="jumptoTime(131, this.id)"><p>煮滾一些滾水，然後加肉餅下去，用中火蒸大約10至12分鐘，小貼士，蒸肉餅用硬豆腐，即是煎釀豆腐，比較適合一些，水份較少，不喜歡吃太多紅肉，用雞腿肉攪碎蒸也可以，蒸出來更嫩滑，今日分享到此，又要麻煩大家點個讚，有時間請留個表情符號給我，感謝收看，下次再見!</p></a>
+</div>
+	</body>
+</html>

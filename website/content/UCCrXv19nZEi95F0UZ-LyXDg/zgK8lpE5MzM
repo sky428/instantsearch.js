@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🎀咖哩薯餅|香濃咖哩味入口軟糯|Curry potato cakes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #111;
+            padding: 0 0 1em 0;
+	        background-color: #efe7dd;
+        }
+        table {
+             border-spacing: 10px;
+        }
+        th { text-align: left;}
+        .lt {
+          color: inherit;
+          text-decoration: inherit;
+        }
+        .l {
+          color: #050;
+        }
+        .s {
+            display: inline-block;
+        }
+        .c {
+            display: inline-block;
+        }
+        .e {
+            /*background-color: white; Changing background color */
+            border-radius: 20px; /* Making border radius */
+            width: fit-content; /* Making auto-sizable width */
+            height: fit-content; /* Making auto-sizable height */
+            padding: 5px 30px 5px 30px; /* Making space around letters */
+            font-size: 18px; /* Changing font size */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            max-width: 50%;
+            /* white-space: nowrap; */
+        }
+
+        .t {
+            display: inline-block;
+        }
+        #player {
+            position: sticky;
+            top: 1px;
+            float: right;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player; var org_w; var org_h;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          //height: '210',
+          //width: '340',
+          videoId: 'zgK8lpE5MzM',
+          events: { 'onReady': onPlayerReady }
+        });
+      }
+      $(window).resize(function() {
+          playerResize();
+      });
+      function onPlayerReady(event) {
+        var size = player.getSize();
+        org_w = size.width;
+        org_h = size.height;
+        playerResize();
+      }
+      function playerResize() {
+        var w = $(window).width();
+        var ratio;
+        if (org_w > w) {
+            ratio = w / org_w * .97;
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "90%");
+        }
+        else {
+            ratio = w / (org_w * 2.5);
+            player.setSize(org_w * ratio, org_h * ratio);
+            $(".e").css("max-width", "50%");
+        }
+      }
+      function jumptoTime(timepoint, id) {
+        event.preventDefault();
+        history.pushState(null, null, "#"+id);
+        player.seekTo(timepoint);
+        player.playVideo();
+      }
+      $(document).ready(function(){
+        var speakers = {};
+        $("span").html(function(i, text) {
+          for (var key in speakers) {
+            if (text === key) {
+              return text.replace(key, speakers[key]);
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>🎀咖哩薯餅|香濃咖哩味入口軟糯|Curry potato cakes</h2>
+  <i>Click on a part of the transcription, to jump to its video, and get an anchor to it in the address bar<br><br></i>
+<div  id="player"></div>
+<div class="e" style="background-color: white">
+<span style="color: darkorange">SPEAKER_00</span><br>
+				<a href="#00:00:1.00" id="00:00:1.00" class="lt" onclick="jumptoTime(1, this.id)"><p>大家好 今日整咖哩薯餅 一滴水都唔需要加㗎喎，入口軟糯 充滿濃濃咖哩同埋薯蓉嘅香味。</p></a>
+				<a href="#00:00:25.50" id="00:00:25.50" class="lt" onclick="jumptoTime(25, this.id)"><p>咖喱粉1茶匙，加1茶匙， 視乎你喜歡咖喱味有多濃，中筋麵粉，蠔油，鹽，1茶匙，1茶匙雜菜豆，1茶匙薯仔，切成粒狀，然後將佢蒸熟，蓋上蓋子，用中火蒸，但唔好蒸得太腍，蒸到佢緊緊可以壓得碎就得啦，用少許力壓開，不要太軟，將薯仔壓成蓉。</p></a>
+				<a href="#00:01:42.14" id="00:01:42.14" class="lt" onclick="jumptoTime(102, this.id)"><p>加咖哩粉，蠔油和鹽，加入麵粉，分開2次加入，麵粉略為攪拌均勻，如果覺得黏手可以塗些油或麵粉在手上，然後搓勻，搓至差不多就可以加入餘下的麵粉，最後撒少許鹽，提升咖哩味道。</p></a>
+				<a href="#00:02:38.01" id="00:02:38.01" class="lt" onclick="jumptoTime(158, this.id)"><p>加入杂菜豆拌匀即可，在碟底加少許麵粉，手掃油，跟影片中的方法做薯餅，將薯蓉搓成球形，有走出的雜菜豆用匙羹尾放入，略為壓扁，做其餘的薯片也一樣，我做了8個薯仔，你做10個或12個也行。</p></a>
+				<a href="#00:03:27.87" id="00:03:27.87" class="lt" onclick="jumptoTime(207, this.id)"><p>加些油到平底鍋，用中大火燒熱鍋子，轉小火，加入薯片。</p></a>
+				<a href="#00:03:42.36" id="00:03:42.36" class="lt" onclick="jumptoTime(222, this.id)"><p>盖上盖子，用小火焗，焗至怎样呢，反转金黄色就可以了，还不够金黄再煎一下，反转后要加些油</p></a>
+</div>
+<div class="e" style="background-color: white">
+<span style="color: orange">None</span><br>
+				<a href="#00:04:13.88" id="00:04:13.88" class="lt" onclick="jumptoTime(253, this.id)"><p>另外一边也要盖上盖子，仍然是用小火，煎至金黄色，煎至金黃色就可以了，薯餅煎得金黃黃，裏面還有雜菜豆，我現在就試一塊給你們看看，充满咖喱的香味，入口软糯，有时间都试一下吧，好了，说到这里，时间又差不多了，下一集再见!</p></a>
+</div>
+	</body>
+</html>
